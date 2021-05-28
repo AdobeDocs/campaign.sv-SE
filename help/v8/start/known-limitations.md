@@ -7,7 +7,7 @@ feature: Översikt
 role: Data Engineer
 level: Beginner
 hidefromtoc: true
-source-git-commit: 583a8f6a03b00e1eafa6d408c9949e60a6f8158d
+source-git-commit: 15cd7228a4920702cae182c68e7a329345946e31
 workflow-type: tm+mt
 source-wordcount: '158'
 ht-degree: 1%
@@ -20,7 +20,7 @@ Kända begränsningar identifierar funktioner, arkitektur eller processer som in
 
 För Adobe Campaign v8 gäller följande begränsningar:
 
-* Adobe Campaign v8 är inte tillgängligt för anläggningsdistributioner/hybriddistributioner - endast som en Adobe-hanterad Cloud Service
+* Adobe Campaign v8 är inte tillgängligt för anläggningsdistributioner/hybriddistributioner - endast släppt som en Adobe-hanterad Cloud Service.
 * Befintliga kunder kan inte migrera från en befintlig Adobe Campaign-miljö till Adobe Campaign v8
 * Ingen dubbelriktad datareplikering: replikering sker endast från den lokala Campaign-databasen till molndatabasen
 * Funktioner som anges [i det här avsnittet](capability-matrix.md#gs-unavailable-features) är inte tillgängliga i den aktuella versionen av Campaign v8
@@ -29,5 +29,3 @@ För Adobe Campaign v8 gäller följande begränsningar:
 * ID-hantering - dubbletter - för att bekräfta +-information
 * RAD - för att bekräfta + detaljer
 * Latens - för att bekräfta +-information
-
-
