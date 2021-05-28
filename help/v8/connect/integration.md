@@ -7,10 +7,10 @@ feature: Översikt
 role: Data Engineer
 level: Beginner
 exl-id: d1d57aa8-b811-470f-a8a6-18da3a700f1a
-source-git-commit: 4ae0c968bd68d76d7ceffb91023d5426d6a810ea
+source-git-commit: eaad05675d2f875af2db5f71781afdad3a9ff004
 workflow-type: tm+mt
-source-wordcount: '340'
-ht-degree: 11%
+source-wordcount: '342'
+ht-degree: 12%
 
 ---
 
@@ -29,13 +29,10 @@ Modernisera implementeringen och utnyttja alla Adobe Experience Cloud-funktioner
 Campaign v8 kan kommunicera med:
 
 * [Adobe Journey Orchestration](https://experienceleague.adobe.com/docs/journeys/using/action-journeys/acc-action.html?lang=en)
-
 * [CDP i realtid](../connect/ac-rtcdp.md)
-
-* [Adobe Analytics dataanslutning](../connect/ac-aa.md)
-
+* [Adobe Analytics](../connect/ac-aa.md)
 * [Adobe Experience Manager](../connect/ac-aem.md)
-
+* [Adobe Experience Cloud-utlösare](../connect/ac-triggers.md)
 * [Adobe Target](../connect/ac-at.md)
 
 Du kan också kombinera dina **målgrupper** och **resurser** mellan olika Experience Cloud-lösningar med funktioner för resursdelning och målgruppsdelning.
