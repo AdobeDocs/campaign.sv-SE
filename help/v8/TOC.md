@@ -7,10 +7,10 @@ description: Kampanjdokumentation v8
 breadcrumb-title: Campaign v8
 title: Kampanjdokument v8
 hide: true
-source-git-commit: 6e098ffa538c4348889a35eb454da747c80d6262
+source-git-commit: eaad05675d2f875af2db5f71781afdad3a9ff004
 workflow-type: tm+mt
-source-wordcount: '193'
-ht-degree: 31%
+source-wordcount: '197'
+ht-degree: 30%
 
 ---
 
@@ -73,6 +73,7 @@ ht-degree: 31%
    + [Campaign + Analytics](connect/ac-aa.md)
    + [Campaign + Experience Manager](connect/ac-aem.md)
    + [Campaign + Target](connect/ac-at.md)
+   + [Kampanj + utlösare för Experience Cloud](connect/ac-triggers.md)
    + [Campaign + RTCDP](connect/ac-rtcdp.md)
    + [Campaign + Twitter](connect/ac-tw.md)
    + [Kampanj + extern databas](connect/fda.md)
