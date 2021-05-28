@@ -7,21 +7,26 @@ feature: Översikt
 role: Data Engineer
 level: Beginner
 hidefromtoc: true
-source-git-commit: 6e098ffa538c4348889a35eb454da747c80d6262
+source-git-commit: 583a8f6a03b00e1eafa6d408c9949e60a6f8158d
 workflow-type: tm+mt
-source-wordcount: '96'
+source-wordcount: '158'
 ht-degree: 1%
 
 ---
 
 # Kända begränsningar
 
-* Campaign v8 är ännu inte tillgängligt för anläggningsdistributioner/hybriddistributioner - endast som en Adobe-hanterad Cloud Service
+Kända begränsningar identifierar funktioner, arkitektur eller processer som inte stöds i den här versionen av produkten, eller som inte fungerar som de ska. Granska dessa begränsningar noggrant.
+
+För Adobe Campaign v8 gäller följande begränsningar:
+
+* Adobe Campaign v8 är inte tillgängligt för anläggningsdistributioner/hybriddistributioner - endast som en Adobe-hanterad Cloud Service
 * Befintliga kunder kan inte migrera från en befintlig Adobe Campaign-miljö till Adobe Campaign v8
-* Ingen dubbelriktad datareplikering, endast från den lokala Campaign-databasen till molndatabasen
-* Funktioner som anges [i det här avsnittet](capability-matrix.md#gs-unavailable-features) är ännu inte tillgängliga i Campaign v8
-* Vissa temporära funktioner som inte är tillgängliga eller har tagits bort visas fortfarande i användargränssnittet
-* Det går inte att installera inbyggda paket - även med administratörsbehörighet
+* Ingen dubbelriktad datareplikering: replikering sker endast från den lokala Campaign-databasen till molndatabasen
+* Funktioner som anges [i det här avsnittet](capability-matrix.md#gs-unavailable-features) är inte tillgängliga i den aktuella versionen av Campaign v8
+* Vissa funktioner som inte är tillgängliga eller har tagits bort visas fortfarande i användargränssnittet
+* Prenumerations- (opt-in) och avanmälnings- (opt-out) och mobilregistrering är asynkrona processer. Begäranden behandlas varje timme i ett specifikt tekniskt arbetsflöde. [Läs mer](../config/replication.md#tech-wf)
+* ID-hantering - dubbletter - för att bekräfta +-information
 * RAD - för att bekräfta + detaljer
 * Latens - för att bekräfta +-information
 
