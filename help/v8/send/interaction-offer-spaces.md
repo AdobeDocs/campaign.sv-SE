@@ -6,7 +6,7 @@ description: Lär dig hur du skapar erbjudandemellanslag
 feature: Översikt
 role: Data Engineer
 level: Beginner
-source-git-commit: a50a6cc28d9312910668205e528888fae5d0b1aa
+source-git-commit: 583a8f6a03b00e1eafa6d408c9949e60a6f8158d
 workflow-type: tm+mt
 source-wordcount: '606'
 ht-degree: 3%
@@ -70,7 +70,7 @@ Status för erbjudandeförslag varierar beroende på interaktionen med målpopul
 
 >[!NOTE]
 >
->Statusuppdatering är en asynkron process. Den utförs av spårningsarbetsflödet som aktiveras varje timme.
+>Statusuppdateringen är en **asynkron**-process. Den utförs av spårningsarbetsflödet som aktiveras varje timme.
 
 ### Statuslista för erbjudande {#status-list}
 
