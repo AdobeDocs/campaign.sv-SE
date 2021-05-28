@@ -3,9 +3,9 @@ solution: Campaign v8
 product: Adobe Campaign
 title: Bästa praxis för datamodell
 description: Lär dig mer om de bästa sätten att använda Campaign-datamodelltillägg
-source-git-commit: 4ae0c968bd68d76d7ceffb91023d5426d6a810ea
+source-git-commit: 583a8f6a03b00e1eafa6d408c9949e60a6f8158d
 workflow-type: tm+mt
-source-wordcount: '2679'
+source-wordcount: '2681'
 ht-degree: 4%
 
 ---
@@ -71,7 +71,7 @@ Ett fält måste lagras i en tabell om det har ett syfte att målinrikta eller p
 
 ### Val av nycklar {#choice-of-keys}
 
-Utöver det **autouid** som är definierat som standard i de flesta tabeller bör du överväga att lägga till några logiska nycklar eller affärsnycklar (kontonummer, klientnummer osv.). Den kan användas senare för import/avstämning eller datapaket. Mer information finns i [Identifierare](#identifiers).
+Förutom **autouid** och **autopk** som är definierad som standard i de flesta tabeller bör du överväga att lägga till några logiska nycklar eller affärsnycklar (kontonummer, klientnummer osv.). Den kan användas senare för import/avstämning eller datapaket. Mer information finns i [Identifierare](#identifiers).
 
 Effektiva nycklar är viktiga för prestanda. Med Snowflake kan du infoga numeriska eller strängbaserade datatyper som nycklar för tabeller.
 
@@ -110,7 +110,7 @@ Denna anpassade nyckel är den faktiska primärnyckeln för posten i det externa
 
 När du skapar en anpassad tabell finns det två alternativ:
 * En kombination av autogenererad nyckel (id) och intern nyckel (anpassad). Det här alternativet är intressant om systemnyckeln är en sammansatt nyckel eller inte ett heltal. Med Snowflake får heltal och strängbaserade nycklar högre prestanda i stora tabeller och med andra tabeller.
-* Använda primärnyckeln som extern systemprimärnyckel. Den här lösningen är vanligtvis att föredra eftersom den förenklar import och export av data, med en konsekvent nyckel mellan olika system. AutoUid ska inaktiveras om nyckeln heter&quot;id&quot; och förväntas fyllas med externa värden (inte autogenererade).
+* Använda primärnyckeln som extern systemprimärnyckel. Den här lösningen är vanligtvis att föredra eftersom den förenklar import och export av data, med en konsekvent nyckel mellan olika system. **Automatisk** redigering bör inaktiveras om nyckeln heter&quot;id&quot; och förväntas fyllas med externa värden (inte autogenererade).
 
 >[!CAUTION]
 >
@@ -123,7 +123,7 @@ När du skapar en anpassad tabell finns det två alternativ:
 
 Se upp för den&quot;egna&quot; integriteten i stora tabeller. Om du tar bort poster som har stora tabeller med &quot;egen&quot; integritet kan instansen eventuellt stoppas. Tabellen är låst och borttagningarna görs en i taget. Därför är det bäst att använda&quot;neutral&quot; integritet i underordnade tabeller som har stora volymer.
 
-Att deklarera en länk som en extern koppling är inte bra för prestandan. Posten med noll-id emulerar den externa kopplingsfunktionen. Du behöver inte deklarera externa kopplingar om autouid används för länken.
+Att deklarera en länk som en extern koppling är inte bra för prestandan. Posten med noll-id emulerar den externa kopplingsfunktionen. Det är inte nödvändigt att deklarera externa kopplingar om länken använder **autouid**.
 
 Även om det är möjligt att ansluta en tabell i ett arbetsflöde rekommenderar Adobe att du definierar gemensamma länkar mellan resurser direkt i datastrukturdefinitionen.
 
