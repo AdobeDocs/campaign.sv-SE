@@ -7,7 +7,7 @@ feature: Översikt
 role: Data Engineer
 level: Beginner
 exl-id: 00ba1c43-9558-4adb-83a1-6597c2bbca62,7105477f-d29e-4af8-8789-82b4459761b0
-source-git-commit: 93004d69f33fce39f8f2abb18eec2562177a7adf
+source-git-commit: 15cd7228a4920702cae182c68e7a329345946e31
 workflow-type: tm+mt
 source-wordcount: '623'
 ht-degree: 2%
@@ -61,7 +61,7 @@ Ett specifikt tekniskt arbetsflöde hanterar replikering av tabeller som måste 
 
 ### ID-hantering
 
-Kampanjv8-objekt använder nu ett **UID (Universally Unique ID)**, som tillåter ett obegränsat antal unika värden för att identifiera data
+Kampanjv8-objekt använder nu ett **UID (Universally Unique ID)**, som tillåter ett obegränsat antal unika värden för att identifiera data.
 
 Observera att detta ID är strängbaserat och inte sekventiellt.
 
