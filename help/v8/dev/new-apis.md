@@ -6,16 +6,16 @@ description: Nya Campaign v8-API:er
 feature: Översikt
 role: Data Engineer
 level: Beginner
-source-git-commit: d872702fe8933a1ef200b690f21efcbd8e5ab3bc
+source-git-commit: 0d6902e8c0bd68a081f7a5ef3ab9fc7a89367d5c
 workflow-type: tm+mt
-source-wordcount: '444'
-ht-degree: 5%
+source-wordcount: '432'
+ht-degree: 4%
 
 ---
 
 # Nya kampanj-API:er{#gs-new-api}
 
-Campaign v8 innehåller tre nya API:er för att hantera data mellan Campaigns lokala databas och molndatabasen. Förutsättningar för att använda dem är att aktivera mellanlagringsmekanismen i schemat. [Läs mer](staging.md).
+Campaign v8 innehåller två nya API:er för att hantera data mellan Campaign-databasen och molndatabasen. Förutsättningar för att använda dem är att aktivera mellanlagringsmekanismen i schemat. [Läs mer](staging.md).
 
 * Ing-API: **xtk.session.ingest**
 
@@ -24,10 +24,6 @@ Campaign v8 innehåller tre nya API:er för att hantera data mellan Campaigns lo
 * API för datauppdatering/borttagning: **xtk.session.ingestExt**
 
    Detta API används för att uppdatera eller ta bort data. [Läs mer](#data-update-api)
-
-* Fråga-API: **xtk.session.lookup**.
-
-   Detta API hämtar data från en fråga. [Läs mer](#lookup-api)
 
 Ett dedikerat inbyggt arbetsflöde synkroniserar data i molndatabasen.
 
