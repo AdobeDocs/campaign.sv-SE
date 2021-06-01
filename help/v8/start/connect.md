@@ -1,5 +1,4 @@
 ---
-solution: Campaign v8
 product: Adobe Campaign
 title: Lär dig hur du ansluter till Campaign v8
 description: Anslut till Campaign v8
@@ -7,7 +6,7 @@ feature: Målgrupper
 role: Data Engineer
 level: Beginner
 exl-id: 176cc4f0-8827-4127-9f03-7d75ac8cf917
-source-git-commit: 4ae0c968bd68d76d7ceffb91023d5426d6a810ea
+source-git-commit: 5363950db5092bc7e0a72a0823db1132a17dda33
 workflow-type: tm+mt
 source-wordcount: '752'
 ht-degree: 4%
