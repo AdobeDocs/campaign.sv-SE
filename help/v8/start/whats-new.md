@@ -1,5 +1,4 @@
 ---
-solution: Campaign v8
 product: Adobe Campaign
 title: Nyheter i Campaign v8
 description: Läs mer om de viktigaste funktionerna
@@ -7,7 +6,7 @@ feature: Översikt
 role: Data Engineer
 level: Beginner
 exl-id: 7771a02c-ebd4-48b6-b25e-6b6e420ad493
-source-git-commit: a48e69a3f34c48ed4828bf29b8a02a3dc07bfa7e
+source-git-commit: 5363950db5092bc7e0a72a0823db1132a17dda33
 workflow-type: tm+mt
 source-wordcount: '453'
 ht-degree: 0%
