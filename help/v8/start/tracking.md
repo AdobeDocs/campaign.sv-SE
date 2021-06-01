@@ -1,5 +1,4 @@
 ---
-solution: Campaign v8
 product: Adobe Campaign
 title: Kom igång med funktioner för spårning och övervakning
 description: Kom igång med funktioner för spårning och övervakning
@@ -7,7 +6,7 @@ feature: Översikt
 role: Data Engineer
 level: Beginner
 exl-id: 95ed0369-7215-496b-8e11-fe264c436488,e7931de5-83ce-431d-ae81-83793d257550
-source-git-commit: ab7e458db5ad5696d144c17f6e89e4437a476d11
+source-git-commit: 5363950db5092bc7e0a72a0823db1132a17dda33
 workflow-type: tm+mt
 source-wordcount: '870'
 ht-degree: 3%
