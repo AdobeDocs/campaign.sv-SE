@@ -1,12 +1,11 @@
 ---
-solution: Campaign v8
 product: Adobe Campaign
 title: Nya Campaign v8-API:er
 description: Nya Campaign v8-API:er
 feature: Översikt
 role: Data Engineer
 level: Beginner
-source-git-commit: 0d6902e8c0bd68a081f7a5ef3ab9fc7a89367d5c
+source-git-commit: 5363950db5092bc7e0a72a0823db1132a17dda33
 workflow-type: tm+mt
 source-wordcount: '432'
 ht-degree: 4%
