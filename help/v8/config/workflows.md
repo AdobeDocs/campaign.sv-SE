@@ -1,5 +1,4 @@
 ---
-solution: Campaign v8
 product: Adobe Campaign
 title: Kom igång med kampanjautomatisering
 description: Kom igång med kampanjautomatisering
@@ -7,7 +6,7 @@ feature: Översikt
 role: Data Engineer
 level: Beginner
 exl-id: 0be1c5f5-f07d-46dc-bebc-5eb50f466547
-source-git-commit: 8ede6bc1bc08a27e74dde6a427561c33f154a883
+source-git-commit: 5363950db5092bc7e0a72a0823db1132a17dda33
 workflow-type: tm+mt
 source-wordcount: '1187'
 ht-degree: 7%
