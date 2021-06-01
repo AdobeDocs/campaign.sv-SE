@@ -1,10 +1,9 @@
 ---
-solution: Campaign v8
 product: Adobe Campaign
 title: Allmän arkitektur
 description: Kampanj v8, allmän arkitektur
 exl-id: 1d9ff6c5-974d-4a8a-a0d7-641685bbe26e
-source-git-commit: 69d69c909e6b17ca3f5fb18d6680aa51d0d701cf
+source-git-commit: 5363950db5092bc7e0a72a0823db1132a17dda33
 workflow-type: tm+mt
 source-wordcount: '1214'
 ht-degree: 0%
