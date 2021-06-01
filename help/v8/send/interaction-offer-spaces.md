@@ -1,12 +1,11 @@
 ---
-solution: Campaign v8
 product: Adobe Campaign
 title: Kampanjinteraktion - erbjudandemellanslag
 description: Lär dig hur du skapar erbjudandemellanslag
 feature: Översikt
 role: Data Engineer
 level: Beginner
-source-git-commit: 583a8f6a03b00e1eafa6d408c9949e60a6f8158d
+source-git-commit: 5363950db5092bc7e0a72a0823db1132a17dda33
 workflow-type: tm+mt
 source-wordcount: '606'
 ht-degree: 3%
