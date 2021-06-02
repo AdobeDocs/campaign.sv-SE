@@ -5,9 +5,9 @@ description: Kom igång med e-post i Campaign
 feature: Översikt
 role: Data Engineer
 level: Beginner
-source-git-commit: d1e96b1311d9de24ceb918230186cd3cad609ab2
+source-git-commit: 5762e58aafb11932d0e28d87df84704974c09564
 workflow-type: tm+mt
-source-wordcount: '801'
+source-wordcount: '790'
 ht-degree: 1%
 
 ---
@@ -77,7 +77,7 @@ I följande exempel får du lära dig hur du utformar en e-postleverans i Adobe 
 
    * Integrera en länk till ett webbprogram
 
-      Med Digital Content Editor kan du integrera länkar till webbprogram från Adobe Campaign-konsolen, till exempel en landningssida eller en formulärsida. Mer information finns i [Länka till ett webbprogram](../../web/using/editing-content.md#link-to-a-web-application).
+      Med Digital Content Editor kan du integrera länkar till webbprogram från Adobe Campaign-konsolen, till exempel en landningssida eller en formulärsida.
 
       Markera ett textfält för länken till ett webbprogram och klicka sedan på den första ikonen. Välj **[!UICONTROL Link to a Web application]** och välj sedan önskat program genom att klicka på ikonen i slutet av fältet **Webbprogram**.
 
