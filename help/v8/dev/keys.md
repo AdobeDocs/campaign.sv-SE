@@ -2,9 +2,9 @@
 product: Adobe Campaign
 title: 'Nyckelhantering i Campaign '
 description: Kom igång med nyckelhantering
-source-git-commit: 08c1f2fbe79845fe54670e25ac4a63ab65517513
+source-git-commit: 9a1c44f74f6558f0397617353f3e78186fb15717
 workflow-type: tm+mt
-source-wordcount: '689'
+source-wordcount: '656'
 ht-degree: 0%
 
 ---
@@ -17,7 +17,7 @@ Adobe kampanj v8 levereras med Snowflake som kärndatabas. Den distribuerade ark
 
 För att relationsdatabasens enhetlighet ska bevaras är det obligatoriskt att undvika dubbletter av nycklar, särskilt på primärnycklar. Dubbletter på primärnycklar leder till problem med datahanteringsarbetsflödesaktiviteter som **Fråga**, **Avstämning**, **Uppdatera data** och mycket annat.
 
-Adobe Campaign föreslår kraftfulla datahanteringsverktyg för att stämma av data, se till att infoga eller uppdatera data beroende på dess närvaro i databasen (**Avstämning**) och ta bort dubbletter innan data importeras (**Deduplicering**). Som en god praxis rekommenderar Adobe att du antar en [Detect](#detect-duplicates)- och [Correct](#correct-duplicates)-strategi som en del av den övergripande datahanteringsprocessen om dubblerade nycklar har lästs in i databasen.
+Som en god praxis rekommenderar Adobe att du antar en [Detect](#detect-duplicates)- och [Correct](#correct-duplicates)-strategi som en del av den övergripande datahanteringsprocessen om dubblerade nycklar har lästs in i databasen.
 
 ## Identifiera dubbletter{#detect-duplicates}
 
