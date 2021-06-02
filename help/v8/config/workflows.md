@@ -6,7 +6,7 @@ feature: Översikt
 role: Data Engineer
 level: Beginner
 exl-id: 0be1c5f5-f07d-46dc-bebc-5eb50f466547
-source-git-commit: 5363950db5092bc7e0a72a0823db1132a17dda33
+source-git-commit: 40b38168a3704f171f1f389e2d232e6a2c6f1d85
 workflow-type: tm+mt
 source-wordcount: '1187'
 ht-degree: 7%
@@ -30,16 +30,16 @@ Du kan konfigurera:
 
 Använd Adobe Campaign arbetsflöden för att förbättra hastigheten och skalan på alla delar av era marknadsföringskampanjer, från att skapa segment och förbereda meddelanden till leverans.
 
-Lär dig hur du utformar arbetsflöden i dessa[kompletta användningsfall](#end-to-end-uc).
+Lär dig hur du utformar arbetsflöden i dessa [kompletta användningsfall](#end-to-end-uc).
 
 Läs mer om arbetsflöden, användargränssnitt och körning i dokumentationen för Campaign Classic v7:
 
 [!DNL :arrow_upper_right:]  [Kom igång med arbetsflöden](https://experienceleague.adobe.com/docs/campaign-classic/using/automating-with-workflows/introduction/about-workflows.html?lang=en#automating-with-workflows)
 * Arbetsflödesaktiviteter:
-   * [Målgrupper](https://experienceleague.adobe.com/docs/campaign-classic/using/automating-with-workflows/targeting-activities/about-targeting-activities.html): fråga, läslista, anrikning, union med mera
-   * [Flödeskontrollaktiviteter](https://experienceleague.adobe.com/docs/campaign-classic/using/automating-with-workflows/flow-control-activities/about-flow-control-activities.html): schemaläggare, gaffel, avisering, extern signal med mera
-   * [Verksamheter](https://experienceleague.adobe.com/docs/campaign-classic/using/automating-with-workflows/action-activities/about-action-activities.html): flerkanalsleveranser, Javascript-kod, CRM-aktiviteter, uppdatering av sammanställning med mera
-   * [Händelseaktiviteter](https://experienceleague.adobe.com/docs/campaign-classic/using/automating-with-workflows/action-activities/about-action-activities.html): filöverföring, webbnedladdning med mera
+   * [Målgrupper](https://experienceleague.adobe.com/docs/campaign-classic/using/automating-with-workflows/targeting-activities/about-targeting-activities.html): Fråga, läslista, berikning, union med mera
+   * [Flödeskontrollaktiviteter](https://experienceleague.adobe.com/docs/campaign-classic/using/automating-with-workflows/flow-control-activities/about-flow-control-activities.html): Schemaläggare, gaffel, avisering, extern signal med mera
+   * [Verksamheter](https://experienceleague.adobe.com/docs/campaign-classic/using/automating-with-workflows/action-activities/about-action-activities.html): Flerkanalsleveranser, JavaScript-kod, CRM-aktiviteter, Uppdatera sammanställning med mera
+   * [Händelseaktiviteter](https://experienceleague.adobe.com/docs/campaign-classic/using/automating-with-workflows/action-activities/about-action-activities.html): Filöverföring, webbnedladdning med mera
       [!DNL :arrow_upper_right:]  [Bygg en målgrupp i ett arbetsflöde för marknadsföringskampanjer](https://experienceleague.adobe.com/docs/campaign-classic/using/orchestrating-campaigns/orchestrate-campaigns/marketing-campaign-target.html?lang=en#building-the-main-target-in-a-workflow)
 
       [!DNL :arrow_upper_right:]  [Bästa praxis för arbetsflöden](https://experienceleague.adobe.com/docs/campaign-classic/using/automating-with-workflows/introduction/workflow-best-practices.html)
