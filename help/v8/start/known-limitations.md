@@ -6,10 +6,10 @@ feature: Översikt
 role: Data Engineer
 level: Beginner
 hidefromtoc: true
-source-git-commit: 5363950db5092bc7e0a72a0823db1132a17dda33
+source-git-commit: 08c1f2fbe79845fe54670e25ac4a63ab65517513
 workflow-type: tm+mt
-source-wordcount: '158'
-ht-degree: 1%
+source-wordcount: '162'
+ht-degree: 3%
 
 ---
 
@@ -25,6 +25,6 @@ För Adobe Campaign v8 gäller följande begränsningar:
 * Funktioner som anges [i det här avsnittet](capability-matrix.md#gs-unavailable-features) är inte tillgängliga i den aktuella versionen av Campaign v8
 * Vissa funktioner som inte är tillgängliga eller har tagits bort visas fortfarande i användargränssnittet
 * Prenumerations- (opt-in) och avanmälnings- (opt-out) och mobilregistrering är asynkrona processer. Begäranden behandlas varje timme i ett specifikt tekniskt arbetsflöde. [Läs mer](../config/replication.md#tech-wf)
-* ID-hantering - dubbletter - för att bekräfta +-information
+* Dubbletter måste hanteras manuellt av slutanvändarna. [Läs mer](../dev/keys.md)
 * RAD - för att bekräfta + detaljer
 * Latens - för att bekräfta +-information
