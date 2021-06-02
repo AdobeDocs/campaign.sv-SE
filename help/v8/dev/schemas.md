@@ -2,9 +2,9 @@
 product: Adobe Campaign
 title: Arbeta med Campaign-scheman
 description: Kom igång med scheman
-source-git-commit: 5363950db5092bc7e0a72a0823db1132a17dda33
+source-git-commit: 40b38168a3704f171f1f389e2d232e6a2c6f1d85
 workflow-type: tm+mt
-source-wordcount: '1246'
+source-wordcount: '1247'
 ht-degree: 4%
 
 ---
@@ -135,7 +135,7 @@ type="string" enum="exTransactionTypeEnum"/>
 
 ## Tangenter {#keys}
 
-Alla tabeller måste ha minst en nyckel och upprättas ofta automatiskt i schemats huvudelement med attributet **@autouid=true** inställt på &quot;true&quot;.
+Alla tabeller måste ha minst en nyckel och upprättas ofta automatiskt i schemats huvudelement med attributen **@autouid** och **autopk** inställda på **true**.
 
 Primärnyckeln kan också definieras med attributet **internal**.
 
