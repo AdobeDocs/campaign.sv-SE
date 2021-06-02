@@ -6,9 +6,9 @@ feature: Översikt
 role: Data Engineer
 level: Beginner
 exl-id: 6cf8a929-637e-4e51-9160-5980ca727efb
-source-git-commit: 5363950db5092bc7e0a72a0823db1132a17dda33
+source-git-commit: 41ea85bc3c616ed7cdd0718ff3368aab971a5352
 workflow-type: tm+mt
-source-wordcount: '625'
+source-wordcount: '601'
 ht-degree: 4%
 
 ---
@@ -41,11 +41,11 @@ När meddelandet har skapats och dess innehåll har utformats och testats kan du
 
 * Skicka meddelanden manuellt till huvudmålet
    [!DNL :arrow_upper_right:] [Lär dig hur du skickar meddelanden](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/sending-emails/sending-an-email/sending-messages.html)
-* Skicka meddelanden som är kopplade till en [marknadsföringskampanj](https://experienceleague.adobe.com/docs/campaign-classic/using/orchestrating-campaigns/orchestrate-campaigns/setting-up-marketing-campaigns.html)
+* Skicka meddelanden som är kopplade till en [marknadsföringskampanj](campaigns.md)
    [!DNL :arrow_upper_right:] [Lär dig hur du skickar meddelanden i samband med en kampanj](https://experienceleague.adobe.com/docs/campaign-classic/using/orchestrating-campaigns/orchestrate-campaigns/marketing-campaign-deliveries.html).
-* Skicka meddelanden via ett [arbetsflöde](https://experienceleague.adobe.com/docs/campaign-classic/using/automating-with-workflows/introduction/about-workflows.html)
+* Skicka meddelanden via ett [arbetsflöde](../config/workflows.md)
    [!DNL :arrow_upper_right:] [Lär dig automatisera e-postleveranser](https://experienceleague.adobe.com/docs/campaign-classic/using/automating-with-workflows/action-activities/delivery.html)
-* [Utlös ](https://experienceleague.adobe.com/docs/campaign-classic/using/transactional-messaging/introduction/about-transactional-messaging.html) meddelanden från en händelse
+* [Utlös ](../send/transactional.md) meddelanden från en händelse
    [!DNL :arrow_upper_right:] [Användningsfall: lära dig hur du skickar ett transaktionsmejl med en bifogad fil](https://experienceleague.adobe.com/docs/campaign-classic/using/transactional-messaging/use-case/transactional-email-with-attachments.html)
 * Schemalägg meddelanden
    [!DNL :arrow_upper_right:] [Användningsfall: läs om schemat och skicka födelsedag via e-post](https://experienceleague.adobe.com/docs/campaign-classic/using/automating-with-workflows/use-cases/deliveries/sending-a-birthday-email.html?)
