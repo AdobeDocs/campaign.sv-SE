@@ -2,9 +2,9 @@
 product: Adobe Campaign
 title: 'Nyckelhantering i Campaign '
 description: Kom igång med nyckelhantering
-source-git-commit: 40b38168a3704f171f1f389e2d232e6a2c6f1d85
+source-git-commit: 08c1f2fbe79845fe54670e25ac4a63ab65517513
 workflow-type: tm+mt
-source-wordcount: '688'
+source-wordcount: '689'
 ht-degree: 0%
 
 ---
@@ -15,9 +15,9 @@ I Campaign v8 är primärnyckeln en UUID (Universally Unique IDentifier), som ä
 
 Adobe kampanj v8 levereras med Snowflake som kärndatabas. Den distribuerade arkitekturen i Snowflake-databasen innehåller inga mekanismer för att hantera en nyckels unicitet i en tabell: slutanvändarna ansvarar för att säkerställa att nycklarna i Adobe Campaign-databasen är konsekventa.
 
-För att relationsdatabasens enhetlighet ska bevaras är det obligatoriskt att undvika dubbletter av nycklar, särskilt på primärnycklar. Dubbletter av primärnycklar leder till problem med datahanteringsarbetsflödesaktiviteter som Fråga, Avstämning, Uppdatera med mera.
+För att relationsdatabasens enhetlighet ska bevaras är det obligatoriskt att undvika dubbletter av nycklar, särskilt på primärnycklar. Dubbletter på primärnycklar leder till problem med datahanteringsarbetsflödesaktiviteter som **Fråga**, **Avstämning**, **Uppdatera data** och mycket annat.
 
-Adobe Campaign föreslår kraftfulla datahanteringsverktyg för att stämma av data, se till att data infogas eller uppdateras beroende på dess närvaro i databasen (avstämning) och ta bort dubbletter innan data hämtas (borttagning av dubbletter). Som en god praxis rekommenderar Adobe att du antar en [Detect](#detect-duplicates)- och [Correct](#correct-duplicates)-strategi som en del av den övergripande datahanteringsprocessen om dubblerade nycklar har lästs in i databasen.
+Adobe Campaign föreslår kraftfulla datahanteringsverktyg för att stämma av data, se till att infoga eller uppdatera data beroende på dess närvaro i databasen (**Avstämning**) och ta bort dubbletter innan data importeras (**Deduplicering**). Som en god praxis rekommenderar Adobe att du antar en [Detect](#detect-duplicates)- och [Correct](#correct-duplicates)-strategi som en del av den övergripande datahanteringsprocessen om dubblerade nycklar har lästs in i databasen.
 
 ## Identifiera dubbletter{#detect-duplicates}
 
@@ -81,4 +81,4 @@ and urecipientid = 'c04d93f2-6012-4668-b523-88db1262cd46';
 
 ![](assets/sql-data-management.png)
 
-När den markerade raden har uppdaterats med ett nytt UUID kan du kontrollera den uppdaterade raden från gränssnittet och se att UUID har uppdaterats som förväntat. Du kan också identifiera dubbletter i databasen genom att köra arbetsflödet &quot;Identifiera dubbletter&quot; [enligt beskrivningen här](#detect-duplicates).
+När den markerade raden har uppdaterats med ett nytt UUID kan du kontrollera den uppdaterade raden från gränssnittet och se att UUID har uppdaterats som förväntat. Du kan också identifiera dubbletter i databasen genom att köra **Identifiera dubbletter**-arbetsflödet [enligt beskrivningen här](#detect-duplicates).
