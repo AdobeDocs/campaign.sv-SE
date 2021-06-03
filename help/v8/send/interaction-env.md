@@ -5,7 +5,7 @@ description: Skapa operatorer för erbjudandehantering
 feature: Översikt
 role: Data Engineer
 level: Beginner
-source-git-commit: 5363950db5092bc7e0a72a0823db1132a17dda33
+source-git-commit: b11b42220dae7d0a878ba102523ee2825d6fb2e2
 workflow-type: tm+mt
 source-wordcount: '259'
 ht-degree: 1%
@@ -31,7 +31,7 @@ Som standard har Campaign en **[!UICONTROL Design]**-miljö och en **[!UICONTROL
 
 ![](assets/offer_environments_overview_002.png)
 
-Leveransansvariga kan bara visa **[!UICONTROL Live]**-miljön och utnyttja erbjudanden för att leverera dem. Erbjudandehanterare kan visa och använda **[!UICONTROL Design]**-miljön och visa **[!UICONTROL Live]**-miljön. [Läs mer](interaction-operators.md).
+Leveransansvariga kan bara visa **[!UICONTROL Live]**-miljön och utnyttja erbjudanden för att leverera dem. Erbjudandehanterare kan visa och använda **[!UICONTROL Design]**-miljön och visa **[!UICONTROL Live]**-miljön. [Läs mer](interaction-operators.md)
 
 ## Skapa en erbjudandemiljö {#creating-an-offer-environment}
 
