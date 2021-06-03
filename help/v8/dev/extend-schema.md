@@ -2,7 +2,7 @@
 product: Adobe Campaign
 title: Utöka kampanjscheman
 description: Lär dig hur du utökar Campaign-scheman
-source-git-commit: 99a1381a0d5cef38eb708dbe6e3e8029e6ff3953
+source-git-commit: b11b42220dae7d0a878ba102523ee2825d6fb2e2
 workflow-type: tm+mt
 source-wordcount: '254'
 ht-degree: 2%
@@ -35,7 +35,7 @@ Följ stegen nedan för att utöka ett schema:
 
    ![](assets/extend-schema-select.png)
 
-   Ange som konvention samma namn för tilläggsschemat som det inbyggda schemat och använd ett anpassat namnutrymme.  Observera att vissa namnutrymmen bara är interna. [Läs mer](schemas.md#reserved-namespaces).
+   Ange som konvention samma namn för tilläggsschemat som det inbyggda schemat och använd ett anpassat namnutrymme.  Observera att vissa namnutrymmen bara är interna. [Läs mer](schemas.md#reserved-namespaces)
 
    ![](assets/extend-schema-validate.png)
 
