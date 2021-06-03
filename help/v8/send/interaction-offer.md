@@ -5,7 +5,7 @@ description: Lär dig hur du skapar ett erbjudande
 feature: Översikt
 role: Data Engineer
 level: Beginner
-source-git-commit: 5363950db5092bc7e0a72a0823db1132a17dda33
+source-git-commit: b11b42220dae7d0a878ba102523ee2825d6fb2e2
 workflow-type: tm+mt
 source-wordcount: '919'
 ht-degree: 3%
@@ -50,7 +50,7 @@ Det gör du genom att klicka på länken **[!UICONTROL Edit query]** och välja 
 
 ![](assets/offer_eligibility_create_003.png)
 
-Om fördefinierade filter redan har skapats kan du välja dem i listan med användarfilter. [Läs mer](interaction-predefined-filters.md).
+Om fördefinierade filter redan har skapats kan du välja dem i listan med användarfilter. [Läs mer](interaction-predefined-filters.md)
 
 ![](assets/offer_eligibility_create_004.png)
 
@@ -64,7 +64,7 @@ Ett erbjudande kan till exempel ha vikten A för kontakter mellan 18 och 25 år 
 
 >[!NOTE]
 >
->Den tilldelade vikten kan ändras tillfälligt enligt parametrarna för den kategori som erbjudandet tillhör. [Läs mer](interaction-offer-catalog.md#creating-offer-categories).
+>Den tilldelade vikten kan ändras tillfälligt enligt parametrarna för den kategori som erbjudandet tillhör. [Läs mer](interaction-offer-catalog.md#creating-offer-categories)
 
 Så här skapar du en vikt i ett erbjudande:
 
@@ -140,7 +140,7 @@ Använd fliken **[!UICONTROL Content]** för att definiera erbjudandeinnehållet
 
    ![](assets/offer_content_create_002.png)
 
-   Om du vill hitta de obligatoriska fälten så som de definierades under konfigurationen av erbjudandeutrymmet klickar du på länken **[!UICONTROL Content definitions]** för att visa listan. [Läs mer](interaction-offer-spaces.md).
+   Om du vill hitta de obligatoriska fälten så som de definierades under konfigurationen av erbjudandeutrymmet klickar du på länken **[!UICONTROL Content definitions]** för att visa listan. [Läs mer](interaction-offer-spaces.md)
 
    ![](assets/offer_content_create_003.png)
 
