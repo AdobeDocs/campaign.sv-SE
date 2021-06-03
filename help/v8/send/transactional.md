@@ -5,10 +5,10 @@ description: Kom igång med Transactional Messaging
 feature: Översikt
 role: Data Engineer
 level: Beginner
-source-git-commit: 726e8d3ba00481237af2765e2f339d755f4e6a01
+source-git-commit: 973e04eb25887f63564b416515c6e229ed5233a4
 workflow-type: tm+mt
-source-wordcount: '1477'
-ht-degree: 1%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
@@ -36,7 +36,7 @@ Transaktionsmeddelanden används för att skicka:
 
 Varje händelse kan utlösa ett personligt meddelande. För att detta ska ske måste du skapa en meddelandemall som matchar varje händelsetyp. Mallar innehåller den information som behövs för att anpassa transaktionsmeddelandet. Du kan också använda mallar för att testa förhandsvisningen av meddelanden och skicka korrektur med dirigerade adresser innan du levererar till det slutliga målet.
 
-## Skapa mallen
+### Skapa mallen
 
 Följ stegen nedan för att skapa en meddelandemall:
 
@@ -54,7 +54,7 @@ Följ stegen nedan för att skapa en meddelandemall:
 
    ![](assets/messagecenter_create_model_003.png)
 
-   Händelsetyper som ska bearbetas av Adobe Campaign måste skapas i kontrollinstansen av Adobe.
+   Händelsetyper som ska bearbetas av Adobe Campaign måste skapas på kontrollinstansen av Adobe.
 
    >[!NOTE]
    >
@@ -62,7 +62,7 @@ Följ stegen nedan för att skapa en meddelandemall:
 
 1. Ange en typ och en beskrivning och klicka sedan på **[!UICONTROL Continue]** för att skapa meddelandetexten. Se [Skapa meddelandeinnehållet](#create-message-content).
 
-## Skapa innehållet{#create-message-content}
+### Skapa innehållet{#create-message-content}
 
 Definitionen av transaktionens meddelandeinnehåll är densamma som för alla leveranser i Adobe Campaign. För e-postleveranser kan du till exempel skapa innehåll i HTML- eller textformat, lägga till bilagor eller anpassa leveransobjektet. Mer information om detta finns i [det här avsnittet](../start/create-message.md).
 
@@ -92,7 +92,7 @@ Gör så här om du vill infoga personaliseringstaggar i brödtexten i ett e-pos
 
    ![](assets/messagecenter_create_custo_2.png)
 
-## Lägg till dirigerade adresser{#add-seeds}
+### Lägg till dirigerade adresser{#add-seeds}
 
 Med en dirigerad adress kan du visa en förhandsgranskning av meddelandet, skicka ett korrektur och testa meddelandets personalisering innan du skickar meddelandet. Seed-adresserna är kopplade till leveransen och kan inte användas för andra leveranser.
 
@@ -118,7 +118,7 @@ Med en dirigerad adress kan du visa en förhandsgranskning av meddelandet, skick
 
 När adresserna har skapats har du tillgång till deras förhandsgranskning och personalisering.
 
-## Lägg till personaliseringsdata{#personalization-data}
+### Lägg till personaliseringsdata{#personalization-data}
 
 Du kan lägga till data i meddelandemallen för att testa anpassning av transaktionsmeddelanden. Då kan du generera en förhandsgranskning eller skicka ett korrektur. Om du installerar modulen **Deliverability** kan du med den här informationen visa en återgivning av meddelandena för olika dator-, webb- eller mobilklienter.
 
@@ -133,7 +133,7 @@ Med den här informationen kan du anpassa meddelandeinnehåll med personaliserin
 
    ![](assets/messagecenter_create_custo_3.png)
 
-## Förhandsgranska ditt transaktionsmeddelande{#transactional-message-preview}
+### Förhandsgranska ditt transaktionsmeddelande{#transactional-message-preview}
 
 När du har skapat en eller flera dirigerade adresser och meddelandetexten kan du förhandsgranska meddelandet och kontrollera dess personalisering.
 
@@ -145,7 +145,7 @@ När du har skapat en eller flera dirigerade adresser och meddelandetexten kan d
 
    ![](assets/messagecenter_create_seed_7.png)
 
-## Skicka ett bevis
+### Skicka ett bevis
 
 Du kan testa meddelandeleveransen genom att skicka ett korrektur till en startadress som skapats tidigare.
 
