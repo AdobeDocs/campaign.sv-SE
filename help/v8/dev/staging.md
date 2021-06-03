@@ -5,21 +5,21 @@ description: Mellanlagringsmekanism för kampanj-API
 feature: Översikt
 role: Data Engineer
 level: Beginner
-source-git-commit: 5363950db5092bc7e0a72a0823db1132a17dda33
+source-git-commit: 99a1381a0d5cef38eb708dbe6e3e8029e6ff3953
 workflow-type: tm+mt
-source-wordcount: '271'
-ht-degree: 3%
+source-wordcount: '312'
+ht-degree: 2%
 
 ---
 
 # Mellanlagringsmekanism för kampanj-API
 
-Med Campaign Cloud-databasen rekommenderas inte snabba enhetsanrop på grund av prestanda (fördröjning och samtidighet). Gruppåtgärd är alltid att föredra. För att garantera optimala prestanda för API:er fortsätter Campaign att hantera API-anrop på lokal databasnivå.
+I Campaign Cloud-databasen rekommenderas inte att enhetsanrop görs med avseende på prestanda (fördröjning och samtidighet). Grupperingsåtgärd är alltid att föredra. För att förbättra prestandan omdirigeras API:er för inmatning till den lokala databasen.
 
-Kampanjmellanlagringsmekanismen är tillgänglig för både inbyggd och anpassad tabell och ger följande fördelar:
+Kampanjmellanlagring är aktiverat som standard för vissa inbyggda scheman. Vi kan även aktivera det i alla anpassade scheman. Mellanlagringsmekanism i ett nötskal:
 
-* Dataschemastrukturen replikeras i den lokala mellanlagringstabellen
-* Nya API:er för inmatningsflöde direkt in i mellanlagringstabellen. [Läs mer](new-apis.md)
+* Dataschemastrukturen dupliceras till den lokala mellanlagringstabellen
+* Nya API:er som är dedikerade för dataöverföring flödar direkt in i den lokala mellanlagringstabellen. [Läs mer](new-apis.md)
 * Ett schemalagt arbetsflöde utlöses varje timme och data synkroniseras tillbaka till molndatabasen. [Läs mer](../config/replication.md).
 
 Vissa inbyggda scheman är som standard mellanlagrade, till exempel nmsSubscriptionRcp, nmsAppSubscriptionRcp och nmsRecipient.
@@ -28,7 +28,13 @@ API:er för Campaign Classic v7 är fortfarande tillgängliga men kan inte utnyt
 
 >[!CAUTION]
 >
->Med den här nya mekanismen är datasynkronisering för prenumerationer, avbeställningar eller mobilregistrering nu **asynkron**.
+>* Med den här nya mekanismen är datasynkronisering för kanalalternativ, prenumerationer, avregistreringar eller mobilregistrering nu **asynkron**.
+   >
+   >
+* Mellanlagring gäller endast för scheman som lagras i molndatabasen. Aktivera inte mellanlagring för replikerade scheman. Aktivera inte Mellanlagring för lokala scheman. Aktivera inte mellanlagring på ett mellanlagrat schema
+
+>
+
 
 
 ## Implementeringssteg{#implement-staging}
