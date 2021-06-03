@@ -2,9 +2,9 @@
 product: Adobe Campaign
 title: Bästa praxis för datamodell
 description: Lär dig mer om de bästa sätten att använda Campaign-datamodelltillägg
-source-git-commit: 726e8d3ba00481237af2765e2f339d755f4e6a01
+source-git-commit: 99a1381a0d5cef38eb708dbe6e3e8029e6ff3953
 workflow-type: tm+mt
-source-wordcount: '2681'
+source-wordcount: '2683'
 ht-degree: 4%
 
 ---
@@ -93,7 +93,7 @@ I följande tabell beskrivs dessa identifierare och deras syfte.
 | Namn (eller internt namn) | <ul><li>Den här informationen är en unik identifierare för en post i en tabell. Värdet kan uppdateras manuellt, vanligtvis med ett genererat namn.</li><li>Den här identifieraren behåller sitt värde när den distribueras i en annan instans av Adobe Campaign och får inte vara tom.</li></ul> | <ul><li>Byt namn på den post som genererats av Adobe Campaign om objektet ska distribueras från en miljö till en annan.</li><li>När ett objekt har ett namnutrymmesattribut (*schema* till exempel), kommer detta gemensamma namnutrymme att utnyttjas för alla anpassade objekt som skapas. Vissa reserverade namnutrymmen bör inte användas: *nms*, *xtk* osv.  Observera att vissa namnutrymmen bara är interna. [Läs mer](schemas.md#reserved-namespaces).</li><li>När ett objekt inte har något namnutrymme (*arbetsflöde* eller *leverans* till exempel) läggs det här namnutrymmesbegreppet till som ett prefix för ett internt namnobjekt: *namespaceMyObjectName*.</li><li>Använd inte specialtecken som blanksteg&quot;, halvkolumn &quot;:&quot; eller bindestreck &quot;-&quot;. Alla dessa tecken ersätts med understrecket&quot;_&quot; (tillåtet tecken). &quot;abc-def&quot; och &quot;abc:def&quot; skulle till exempel lagras som &quot;abc_def&quot; och skrivas över varandra.</li></ul> |
 | Etikett | <ul><li>Etiketten är affärsidentifieraren för ett objekt eller en post i Adobe Campaign.</li><li>Det här objektet tillåter mellanslag och specialtecken.</li><li>Det garanterar inte att ett register är unikt.</li></ul> | <ul><li>Vi rekommenderar att du bestämmer en struktur för objektetiketterna.</li><li>Detta är den mest användarvänliga lösningen för att identifiera en post eller ett objekt för en Adobe Campaign-användare.</li></ul> |
 
-Adobe Campaign primärnyckel är ett automatiskt genererat UUID för alla inbyggda tabeller. Ett UUID kan också användas för anpassade tabeller.
+Adobe Campaign primärnyckel är ett automatiskt genererat UUID för alla inbyggda tabeller. Ett UUID kan också användas för anpassade tabeller. [Läs mer](keys.md)
 
 Även om antalet ID:n är oändligt bör du ta hand om databasens storlek för att säkerställa optimala prestanda. Om du vill förhindra problem måste du justera inställningarna för instansrensning. Mer information finns i [det här avsnittet](#data-retention).
 
