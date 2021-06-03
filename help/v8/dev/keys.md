@@ -2,9 +2,9 @@
 product: Adobe Campaign
 title: 'Nyckelhantering i Campaign '
 description: Kom igång med nyckelhantering
-source-git-commit: 9a1c44f74f6558f0397617353f3e78186fb15717
+source-git-commit: 99a1381a0d5cef38eb708dbe6e3e8029e6ff3953
 workflow-type: tm+mt
-source-wordcount: '656'
+source-wordcount: '676'
 ht-degree: 0%
 
 ---
@@ -22,6 +22,10 @@ Som en god praxis rekommenderar Adobe att du antar en [Detect](#detect-duplicate
 ## Identifiera dubbletter{#detect-duplicates}
 
 Campaign har ett nytt skyddssystem som automatiskt tar bort dubbletter av UUID från en målgrupp när leveransen förbereds. Den här nya mekanismen förhindrar att fel inträffar när en leverans förbereds.
+
+>[!CAUTION]
+>
+>Duplicerade nycklar är inte begränsade till UUID. Det kan hända med ID:n, inklusive anpassade nycklar som skapats i anpassade tabeller.
 
 Som slutanvändare kan du kontrollera den här informationen i leveransloggarna: vissa mottagare kan uteslutas från huvudmålet på grund av en duplicerad nyckel. I så fall visas följande varning: `Exclusion of duplicates (based on the primary key or targeted records)`.
 
