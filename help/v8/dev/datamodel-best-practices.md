@@ -2,7 +2,7 @@
 product: Adobe Campaign
 title: Bästa praxis för datamodell
 description: Lär dig mer om de bästa sätten att använda Campaign-datamodelltillägg
-source-git-commit: 5363950db5092bc7e0a72a0823db1132a17dda33
+source-git-commit: 726e8d3ba00481237af2765e2f339d755f4e6a01
 workflow-type: tm+mt
 source-wordcount: '2681'
 ht-degree: 4%
@@ -66,7 +66,6 @@ Följ de bästa metoderna nedan för att konfigurera data i Adobe Campaign för 
 ### Val av fält {#choice-of-fields}
 
 Ett fält måste lagras i en tabell om det har ett syfte att målinrikta eller personalisera. Det innebär att om ett fält inte används för att skicka ett anpassat e-postmeddelande eller används som ett kriterium i en fråga, tar det upp diskutrymme i onödan.
-
 
 ### Val av nycklar {#choice-of-keys}
 
