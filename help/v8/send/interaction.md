@@ -5,7 +5,7 @@ description: Kom igång med erbjudandehantering
 feature: Översikt
 role: Data Engineer
 level: Beginner
-source-git-commit: 5363950db5092bc7e0a72a0823db1132a17dda33
+source-git-commit: b11b42220dae7d0a878ba102523ee2825d6fb2e2
 workflow-type: tm+mt
 source-wordcount: '1214'
 ht-degree: 1%
@@ -28,19 +28,19 @@ Viktiga steg att starta visas nedan.
 
 Innan du startar som Campaign **administratör** bör du kontrollera att du har utfört följande uppgifter i designmiljöer:
 
-1. Skapa användarprofiler. [Läs mer](interaction-operators.md).
+1. Skapa användarprofiler. [Läs mer](interaction-operators.md)
 1. (valfritt) Skapa en erbjudandemiljö för varje målgruppsdimension. [Läs mer](interaction-env.md)
-1. Skapa typologiregler för varje miljö. [Läs mer](interaction-offer.md#offer-presentation).
-1. Skapa utrymme för varje miljö och konfigurera återgivningsfunktioner. [Läs mer](interaction-offer-spaces.md).
-Om utrymmet definieras av en enhetskanal i identifierat läge måste du ange de avancerade parametrarna för det här utrymmet.
+1. Skapa typologiregler för varje miljö. [Läs mer](interaction-offer.md#offer-presentation)
+1. Skapa utrymme för varje miljö och konfigurera återgivningsfunktioner. [Läs ](interaction-offer-spaces.md)
+merOm utrymmet definieras av en enhetskanal i identifierat läge måste du ange de avancerade parametrarna för det här utrymmet.
 
 ### Skapa och publicera erbjudandekatalogen {#managing-the-offer-catalog-}
 
 Som **erbjudandehanterare** måste du utföra följande uppgifter:
 
-1. Skapa erbjudandekategorier i designmiljöer. [Läs mer](interaction-offer-catalog.md#creating-offer-categories).
-1. Skapa erbjudanden i designmiljöer. [Läs mer](interaction-offer.md).
-1. Godkänn och publicera erbjudanden på ett eller flera platser för att göra dem tillgängliga för leveranshanteraren. [Läs mer](interaction-offer.md#approve-offers).
+1. Skapa erbjudandekategorier i designmiljöer. [Läs mer](interaction-offer-catalog.md#creating-offer-categories)
+1. Skapa erbjudanden i designmiljöer. [Läs mer](interaction-offer.md)
+1. Godkänn och publicera erbjudanden på ett eller flera platser för att göra dem tillgängliga för leveranshanteraren. [Läs mer](interaction-offer.md#approve-offers)
 
 ### Utnyttja erbjudandekatalogen {#using-the-offer-catalog-}
 
