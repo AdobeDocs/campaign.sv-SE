@@ -2,9 +2,9 @@
 product: Adobe Campaign
 title: Skapa ett nytt schema i Campaign
 description: Lär dig hur du skapar ett nytt schema i Campaign
-source-git-commit: 5363950db5092bc7e0a72a0823db1132a17dda33
+source-git-commit: 99a1381a0d5cef38eb708dbe6e3e8029e6ff3953
 workflow-type: tm+mt
-source-wordcount: '383'
+source-wordcount: '408'
 ht-degree: 2%
 
 ---
@@ -15,7 +15,7 @@ Om du vill redigera, skapa och konfigurera scheman klickar du på noden **[!UICO
 
 >[!NOTE]
 >
->Inbyggda datascheman kan bara tas bort av en administratör för din Adobe Campaign Classic-konsol.
+>Inbyggda datascheman kan bara tas bort av en administratör för din Adobe Campaign-konsol.
 
 ![](assets/schema_navtree.png)
 
@@ -60,7 +60,9 @@ För att göra detta måste du skapa tabellschemat och uppdatera databasstruktur
 
    ![](assets/create_new_content.png)
 
-1. Definiera inställningarna för kontraktstabellen:
+1. Definiera inställningarna för kontraktstabellen.
+
+   Det bästa sättet är att skapa tabellen i molndatabasen genom att lägga till attributet `dataSource="nms:extAccount:ffda"`. Det här attributet läggs till som standard när en ny tabell skapas.
 
    ```
    <srcSchema created="YYYY-MM-DD HH:MM:SS.TZ" desc="Active contracts" img="crm:crm/mscrm/mscrm_account_16x16.png"
