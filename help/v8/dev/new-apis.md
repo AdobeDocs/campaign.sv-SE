@@ -5,7 +5,7 @@ description: Nya Campaign v8-API:er
 feature: Översikt
 role: Data Engineer
 level: Beginner
-source-git-commit: 5363950db5092bc7e0a72a0823db1132a17dda33
+source-git-commit: b11b42220dae7d0a878ba102523ee2825d6fb2e2
 workflow-type: tm+mt
 source-wordcount: '432'
 ht-degree: 4%
@@ -14,7 +14,7 @@ ht-degree: 4%
 
 # Nya kampanj-API:er{#gs-new-api}
 
-Campaign v8 innehåller två nya API:er för att hantera data mellan Campaign-databasen och molndatabasen. Förutsättningar för att använda dem är att aktivera mellanlagringsmekanismen i schemat. [Läs mer](staging.md).
+Campaign v8 innehåller två nya API:er för att hantera data mellan Campaign-databasen och molndatabasen. Förutsättningar för att använda dem är att aktivera mellanlagringsmekanismen i schemat. [Läs mer](staging.md)
 
 * Ing-API: **xtk.session.ingest**
 
