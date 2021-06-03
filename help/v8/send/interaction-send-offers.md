@@ -5,7 +5,7 @@ description: Lär dig hur du skapar en erbjudandekatalog
 feature: Översikt
 role: Data Engineer
 level: Beginner
-source-git-commit: 5363950db5092bc7e0a72a0823db1132a17dda33
+source-git-commit: b11b42220dae7d0a878ba102523ee2825d6fb2e2
 workflow-type: tm+mt
 source-wordcount: '1276'
 ht-degree: 2%
@@ -40,11 +40,11 @@ Följ stegen nedan för att infoga offertförslag i en leverans:
 
    ![](assets/offer_delivery_005.png)
 
-1. Välj alternativet **[!UICONTROL Exclude non-eligible recipients]** om det behövs. [Läs mer](#parameters-for-calling-offer-engine).
+1. Välj alternativet **[!UICONTROL Exclude non-eligible recipients]** om det behövs. [Läs mer](#parameters-for-calling-offer-engine)
 
    ![](assets/offer_delivery_006.png)
 
-1. Välj alternativet **[!UICONTROL Do not display anything if no offers are selected]** om det behövs. [Läs mer](#parameters-for-calling-offer-engine).
+1. Välj alternativet **[!UICONTROL Do not display anything if no offers are selected]** om det behövs. [Läs mer](#parameters-for-calling-offer-engine)
 
    ![](assets/offer_delivery_007.png)
 
@@ -110,7 +110,7 @@ När du har konfigurerat din **Query**-aktivitet:
 
       ![](assets/int_enrichment_offer4.png)
 
-1. Konfigurera sedan en leveransaktivitet som motsvarar den valda kanalen. [Läs mer](#offer-into-a-delivery).
+1. Konfigurera sedan en leveransaktivitet som motsvarar den valda kanalen. [Läs mer](#offer-into-a-delivery)
 
    >[!NOTE]
    >
@@ -132,7 +132,7 @@ Följ stegen nedan för att göra detta:
 
    ![](assets/int_enrichment_link2.png)
 
-1. Konfigurera sedan en leveransaktivitet som motsvarar den valda kanalen. [Läs mer](#offer-into-a-delivery).
+1. Konfigurera sedan en leveransaktivitet som motsvarar den valda kanalen. [Läs mer](#offer-into-a-delivery)
 
    >[!NOTE]
    >
@@ -148,7 +148,7 @@ När en **Enrichment**-aktivitet används för att leverera erbjudanden lagras d
 
 Du kan dock lagra den här informationen på följande sätt:
 
-1. Skapa ett anrop till erbjudandemotorn i en anrikningsaktivitet som placerats efter en fråga och före en leveransaktivitet. [Läs mer](#specifying-an-offer-or-a-call-to-the-offer-engine).
+1. Skapa ett anrop till erbjudandemotorn i en anrikningsaktivitet som placerats efter en fråga och före en leveransaktivitet. [Läs mer](#specifying-an-offer-or-a-call-to-the-offer-engine)
 1. Välj **[!UICONTROL Edit additional data...]** i aktivitetens huvudfönster.
 
    ![](assets/ita_enrichment_rankweight_1.png)
@@ -182,7 +182,7 @@ När du har konfigurerat din **Query**-aktivitet:
 
    ![](assets/int_offerengine_activity1.png)
 
-1. Konfigurera sedan en leveransaktivitet som motsvarar den valda kanalen. [Läs mer](#inserting-an-offer-proposition-into-a-delivery).
+1. Konfigurera sedan en leveransaktivitet som motsvarar den valda kanalen. [Läs mer](#inserting-an-offer-proposition-into-a-delivery)
 
 ### Erbjudanden per cell {#offers-by-cell}
 
