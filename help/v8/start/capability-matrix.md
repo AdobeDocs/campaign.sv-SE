@@ -6,9 +6,9 @@ feature: Översikt
 role: Data Engineer
 level: Beginner
 exl-id: 00ba1c43-9558-4adb-83a1-6597c2bbca62,7105477f-d29e-4af8-8789-82b4459761b0
-source-git-commit: 38ea3e82fca6299b067d6843424d4ccb92213d00
+source-git-commit: b11b42220dae7d0a878ba102523ee2825d6fb2e2
 workflow-type: tm+mt
-source-wordcount: '802'
+source-wordcount: '805'
 ht-degree: 2%
 
 ---
@@ -35,7 +35,7 @@ Som [!DNL Campaign Classic]-användare bör du tänka på att de flesta [!DNL Ca
 
 Detta är en grundläggande förändring i programvaruarkitekturen. Data är nu fjärrdata och Campaign federerar hela data, inklusive profiler. [!DNL Campaign] -processer kan nu skalas från början till slut, från målinriktning till meddelandekörning: datainmatning, segmentering, målgruppsanpassning, frågor och leveranser kommer nu att köras på några minuter. Den nya versionen löser hela skalförändringsproblemet samtidigt som den behåller samma nivå av flexibilitet och utbyggbarhet. Antalet profiler är nästan obegränsat och datalagringen kan utökas.
 
-Molnlagring utförs i **[!DNL Snowflake]**: ett nytt inbyggt **externt konto** säkerställer anslutningen till molndatabasen. Den är konfigurerad av Adobe och får inte ändras. [Läs mer](../config/external-accounts.md).
+Molnlagring utförs i **[!DNL Snowflake]**: ett nytt inbyggt **externt konto** säkerställer anslutningen till molndatabasen. Den är konfigurerad av Adobe och får inte ändras. [Läs mer](../config/external-accounts.md)
 
 Alla inbyggda scheman/tabeller som behöver flyttas eller replikeras i molndatabasen har ett inbyggt schematillägg under namnområdet **xxl**. Dessa tillägg innehåller eventuella ändringar som krävs för att flytta inbyggda scheman från den lokala [!DNL Campaign]-databasen till molndatabasen [!DNL Snowflake] och för att anpassa strukturen därefter: nytt UUID, uppdaterade länkar osv.
 
@@ -66,8 +66,7 @@ Observera att detta ID är strängbaserat och inte sekventiellt. Primärnyckeln 
 
 I Campaign Classic v7 och tidigare versioner hanteras uniciteten för en nyckel i ett schema (dvs. tabell) på databasmotornivå. Vanligtvis innehåller klassiska databasmotorer som PostgreSQL, Oracle eller SQL Server en inbyggd mekanism som förhindrar att duplicerade rader infogas baserat på en kolumn eller en uppsättning kolumner via primärnycklar och/eller unika index. Det finns inget duplicerat ID i dessa versioner när korrekt index och primärnycklar har angetts på databasnivå.
 
-Adobe kampanj v8 levereras med Snowflake som kärndatabas. Eftersom sökningen dramatiskt ökar antalet frågor, har den distribuerade arkitekturen i Snowflake-databasen inte sådana mekanismer för att hantera och sedan genomdriva enkelheten hos en nyckel i en tabell. I Adobe Campaign v8 förhindrar därför ingenting att duplicerade nycklar används i en tabell. Slutanvändare ansvarar nu för att säkerställa att nyckelord är konsekventa i Adobe Campaign-databasen. [Läs mer](../dev/keys.md).
-
+Adobe kampanj v8 levereras med Snowflake som kärndatabas. Eftersom sökningen dramatiskt ökar antalet frågor, har den distribuerade arkitekturen i Snowflake-databasen inte sådana mekanismer för att hantera och sedan genomdriva enkelheten hos en nyckel i en tabell. I Adobe Campaign v8 förhindrar därför ingenting att duplicerade nycklar används i en tabell. Slutanvändare ansvarar nu för att säkerställa att nyckelord är konsekventa i Adobe Campaign-databasen. [Läs mer](../dev/keys.md)
 
 ### Förenklat underhåll
 
@@ -84,6 +83,7 @@ Observera att vissa funktioner inte är tillgängliga i den första versionen, s
 * Responshanteraren
 * Hybrid/lokala distributionsmodeller
 * LINE-meddelanden
+* Kontrollpanelen i Campaign
 
 >[!CAUTION]
 >
