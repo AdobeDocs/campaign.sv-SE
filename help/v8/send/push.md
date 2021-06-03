@@ -5,7 +5,7 @@ description: Kom igång med push-meddelanden i Campaign
 feature: Översikt
 role: Data Engineer
 level: Beginner
-source-git-commit: 5363950db5092bc7e0a72a0823db1132a17dda33
+source-git-commit: b11b42220dae7d0a878ba102523ee2825d6fb2e2
 workflow-type: tm+mt
 source-wordcount: '277'
 ht-degree: 1%
@@ -54,4 +54,4 @@ Du måste definiera dina inställningar för iOS- och Android-appar i Adobe Camp
 
 >[!CAUTION]
 >
->Med Campaign v8-mobilregistrering är nu **asynkron**. [Läs mer](../dev/staging.md).
+>Med Campaign v8-mobilregistrering är nu **asynkron**. [Läs mer](../dev/staging.md)
