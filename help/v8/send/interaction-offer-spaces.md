@@ -5,9 +5,9 @@ description: Lär dig hur du skapar erbjudandemellanslag
 feature: Översikt
 role: Data Engineer
 level: Beginner
-source-git-commit: 5363950db5092bc7e0a72a0823db1132a17dda33
+source-git-commit: b11b42220dae7d0a878ba102523ee2825d6fb2e2
 workflow-type: tm+mt
-source-wordcount: '606'
+source-wordcount: '611'
 ht-degree: 3%
 
 ---
@@ -54,7 +54,7 @@ Följ stegen nedan för att skapa ett nytt erbjudandeutrymme:
 
    Dessa funktioner används för att generera offertrepresentationer på ett visst utrymme. Det finns flera möjliga format: HTML eller text.
 
-   **Obs** ! XML-formatet är begränsat till inkommande interaktioner som är tillfälligt otillgängliga. [Läs mer](../start/capability-matrix.md#gs-unavailable-features)
+   **Obs** ! XML-formatet är begränsat till inkommande interaktioner som inte är tillgängliga i den här versionen av produkten. [Läs mer](../start/capability-matrix.md#gs-unavailable-features)
 
    ![](assets/offer_space_create_006.png)_
 
