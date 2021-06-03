@@ -5,7 +5,7 @@ description: Mellanlagringsmekanism för kampanj-API
 feature: Översikt
 role: Data Engineer
 level: Beginner
-source-git-commit: 99a1381a0d5cef38eb708dbe6e3e8029e6ff3953
+source-git-commit: b11b42220dae7d0a878ba102523ee2825d6fb2e2
 workflow-type: tm+mt
 source-wordcount: '312'
 ht-degree: 2%
@@ -20,7 +20,7 @@ Kampanjmellanlagring är aktiverat som standard för vissa inbyggda scheman. Vi 
 
 * Dataschemastrukturen dupliceras till den lokala mellanlagringstabellen
 * Nya API:er som är dedikerade för dataöverföring flödar direkt in i den lokala mellanlagringstabellen. [Läs mer](new-apis.md)
-* Ett schemalagt arbetsflöde utlöses varje timme och data synkroniseras tillbaka till molndatabasen. [Läs mer](../config/replication.md).
+* Ett schemalagt arbetsflöde utlöses varje timme och data synkroniseras tillbaka till molndatabasen. [Läs mer](../config/replication.md)
 
 Vissa inbyggda scheman är som standard mellanlagrade, till exempel nmsSubscriptionRcp, nmsAppSubscriptionRcp och nmsRecipient.
 
