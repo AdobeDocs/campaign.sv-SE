@@ -2,7 +2,7 @@
 product: Adobe Campaign
 title: Skapa ett nytt schema i Campaign
 description: Lär dig hur du skapar ett nytt schema i Campaign
-source-git-commit: 99a1381a0d5cef38eb708dbe6e3e8029e6ff3953
+source-git-commit: b11b42220dae7d0a878ba102523ee2825d6fb2e2
 workflow-type: tm+mt
 source-wordcount: '408'
 ht-degree: 2%
@@ -25,7 +25,7 @@ På fliken **[!UICONTROL Edit]** visas XML-innehållet i ett schema:
 
 >[!NOTE]
 >
->Med redigeringskontrollen &quot;Namn&quot; kan du ange schemanyckeln som består av namnet och namnutrymmet. Attributen name och namespace för schemats rotelement uppdateras automatiskt i schemats XML-redigeringszon. Observera att vissa namnutrymmen bara är interna. [Läs mer](schemas.md#reserved-namespaces).
+>Med redigeringskontrollen &quot;Namn&quot; kan du ange schemanyckeln som består av namnet och namnutrymmet. Attributen name och namespace för schemats rotelement uppdateras automatiskt i schemats XML-redigeringszon. Observera att vissa namnutrymmen bara är interna. [Läs mer](schemas.md#reserved-namespaces)
 
 Fliken **[!UICONTROL Preview]** genererar automatiskt det utökade schemat:
 
