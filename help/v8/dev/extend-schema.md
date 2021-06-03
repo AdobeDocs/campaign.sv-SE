@@ -2,9 +2,9 @@
 product: Adobe Campaign
 title: Utöka kampanjscheman
 description: Lär dig hur du utökar Campaign-scheman
-source-git-commit: 5363950db5092bc7e0a72a0823db1132a17dda33
+source-git-commit: 99a1381a0d5cef38eb708dbe6e3e8029e6ff3953
 workflow-type: tm+mt
-source-wordcount: '243'
+source-wordcount: '254'
 ht-degree: 2%
 
 ---
@@ -22,7 +22,7 @@ De viktigaste stegen för att anpassa Campaign-datamodellen är:
 >[!CAUTION]
 >Inbyggt schema får inte ändras direkt. Om du behöver anpassa ett inbyggt schema måste du utöka det.
 
-[!DNL :bulb:] Om du vill ha en bättre förståelse för de inbyggda tabellerna i Campaign och deras interaktion kan du läsa på  [den här sidan](datamodel.md).
+[!DNL :bulb:] Om du vill ha en bättre förståelse för de inbyggda tabellerna i Campaign och deras interaktion kan du läsa på  [den här sidan](datamodel.md). Se även rekommendationer när du skapar ett nytt schema i [den här sidan](create-schema.md).
 
 Följ stegen nedan för att utöka ett schema:
 
@@ -43,7 +43,7 @@ Följ stegen nedan för att utöka ett schema:
 
    ![](assets/extend-schema-edit.png)
 
-   I exemplet nedan lägger vi till attributet MembershipYear, anger en längdgräns för efternamn (den här gränsen skriver över standardvärdet) och tar bort födelsedatumet från det inbyggda schemat.
+   I exemplet nedan lägger vi till attributet **MembershipYear**, anger en längdgräns för efternamn (den här gränsen skriver över standardvärdet) och tar bort födelsedatumet från det inbyggda schemat.
 
    ![](assets/extend-schema-sample.png)
 
