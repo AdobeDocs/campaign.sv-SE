@@ -5,9 +5,9 @@ description: Kom igång med push-meddelanden i Campaign
 feature: Översikt
 role: Data Engineer
 level: Beginner
-source-git-commit: b0fcdefb638a2424e9464cf520724cc492fabc55
+source-git-commit: 09979331284757527fc9a24479a53d2d488f4649
 workflow-type: tm+mt
-source-wordcount: '594'
+source-wordcount: '781'
 ht-degree: 0%
 
 ---
@@ -51,7 +51,7 @@ Du måste definiera dina inställningar för iOS- och Android-appar i Adobe Camp
 
 I det här avsnittet beskrivs de element som är specifika för leveransen av iOS- och Android-meddelanden.
 
-[!DNL :arrow_upper_right:] Alla steg för att skapa push-meddelanden finns i dokumentationen för  [Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/sending-push-notifications/creating-notifications.html?lang=en#sending-notifications-on-ios)
+[!DNL :arrow_upper_right:] Alla steg för att skapa push-meddelanden finns i dokumentationen för  [Campaign Classic v7](https://experienceleague.corp.adobe.com/docs/campaign-classic/using/sending-messages/sending-push-notifications/creating-notifications.html?lang=en)
 
 >[!CAUTION]
 >
@@ -61,7 +61,9 @@ Om du vill skapa en ny leverans går du till fliken **[!UICONTROL Campaigns]**, 
 
 ![](assets/delivery_step_1.png)
 
-### Skicka meddelanden på iOS {#sending-notifications-on-ios}
+[!DNL :arrow_upper_right:] Global information om hur du skapar en leverans finns i  [Campaign Classic v7-dokumentationen](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/key-steps-when-creating-a-delivery/steps-about-delivery-creation-steps.html?lang=en#sending-messages).
+
+### Skicka meddelanden på iOS {#send-notifications-on-ios}
 
 1. Välj leveransmallen **[!UICONTROL Deliver on iOS]** och klicka på **[!UICONTROL Continue]**.
 
@@ -83,33 +85,37 @@ Om du vill skapa en ny leverans går du till fliken **[!UICONTROL Campaigns]**, 
 
 1. Ange **[!UICONTROL Message]** och **[!UICONTROL Value of the badge]** baserat på den valda meddelandetypen.
 
-1. Med **[!UICONTROL Action button]** kan du definiera en etikett för åtgärdsknappen som visas i varningsmeddelanden (**action_loc_key** fält för nyttolasten).
+1. Du kan också definiera följande element:
 
-1. I fältet **[!UICONTROL Play a sound]** väljer du det ljud som ska spelas upp av mobilterminalen när meddelandet tas emot.
+   * Med **[!UICONTROL Action button]** kan du definiera en etikett för åtgärdsknappen som visas i varningsmeddelanden (**action_loc_key** fält för nyttolasten).
 
-1. I fältet **[!UICONTROL Application variables]** anger du värdet för varje variabel. Du kan till exempel konfigurera en specifik programskärm som ska visas när användaren aktiverar meddelandet.
+   * I fältet **[!UICONTROL Play a sound]** väljer du det ljud som ska spelas upp av mobilterminalen när meddelandet tas emot.
+
+   * I fältet **[!UICONTROL Application variables]** anger du värdet för varje variabel. Du kan till exempel konfigurera en specifik programskärm som ska visas när användaren aktiverar meddelandet.
 
 1. När meddelandet har konfigurerats klickar du på fliken **[!UICONTROL Preview]** för att förhandsgranska meddelandet.
 
    ![](assets/push-ios-preview.png)
 
-### Skicka meddelanden på Android {#sending-notifications-on-android}
+[!DNL :arrow_upper_right:] Alla detaljerade steg för att skapa och skicka push-meddelanden på iOS finns i dokumentationen för  [Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/sending-push-notifications/creating-notifications.html?lang=en#sending-notifications-on-ios)
+
+### Skicka meddelanden på Android {#send-notifications-on-android}
 
 1. Välj leveransmallen **[!UICONTROL Deliver on Android (android)]**.
 
-   <!--![](assets/push-template-android.png)-->
+   ![](assets/push-template-android.png)
 
 1. Om du vill definiera målet för meddelandet klickar du på länken **[!UICONTROL To]** och sedan på **[!UICONTROL Add]**.
 
-   <!--![](assets/nmac_delivery_android_2.png)-->
+   ![](assets/push-android-select-target.png)
 
 1. Välj **[!UICONTROL Subscribers of an Android mobile application]**, välj den tjänst som är relevant för ditt mobilprogram (Neotrips, i det här fallet) och välj sedan Android-versionen av programmet.
 
-   <!--![](assets/push-android-select-target.png)-->
+   ![](assets/push-ios-subscribers.png)
 
 1. Ange sedan innehållet för meddelandet.
 
-   <!--![](assets/push-android-content.png)-->
+   ![](assets/push-android-content.png)
 
 1. Klicka på ikonen **[!UICONTROL Insert emoticon]** för att infoga uttryckssymboler i push-meddelandet.
 
@@ -119,8 +125,22 @@ Om du vill skapa en ny leverans går du till fliken **[!UICONTROL Campaigns]**, 
 
    <!--![](assets/push-android-preview.png)-->
 
+[!DNL :arrow_upper_right:] Alla detaljerade steg för att skapa och skicka push-meddelanden på Android finns i dokumentationen för  [Campaign Classic v7](https://experienceleague.corp.adobe.com/docs/campaign-classic/using/sending-messages/sending-push-notifications/creating-notifications.html?lang=en#sending-notifications-on-android)
+
 ## Testa, skicka och övervaka dina push-meddelanden
 
-Använd samma process som för e-postleveranser om du vill skicka ett korrektur och den slutliga leveransen.
+Använd samma process som för e-postleveranser om du vill skicka ett korrektur och den slutliga leveransen. Läs mer i Campaign Classic v7-dokumentationen:
 
-När du har skickat meddelanden kan du övervaka och spåra dina leveranser.
+* Validera en leverans och skicka korrektur
+   [!DNL :arrow_upper_right:] [Lär dig viktiga steg för att validera en leverans](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/key-steps-when-creating-a-delivery/steps-validating-the-delivery.html)
+
+* Bekräfta och skicka leveransen
+   [!DNL :arrow_upper_right:] [Lär dig viktiga steg för att skicka en leverans](https://experienceleague.corp.adobe.com/docs/campaign-classic/using/sending-messages/key-steps-when-creating-a-delivery/steps-sending-the-delivery.html?lang=en)
+
+När du har skickat meddelanden kan du övervaka och spåra dina leveranser. Läs mer i Campaign Classic v7-dokumentationen:
+
+* Kantlinjer för push-meddelanden
+   [!DNL :arrow_upper_right:] [Läs mer om karantän för push-meddelanden](https://experienceleague.corp.adobe.com/docs/campaign-classic/using/sending-messages/monitoring-deliveries/understanding-quarantine-management.html?lang=en#push-notification-quarantines)
+
+* Felsökning
+   [!DNL :arrow_upper_right:] [Lär dig hur du felsöker push-meddelanden](https://experienceleague.corp.adobe.com/docs/campaign-classic/using/sending-messages/sending-push-notifications/troubleshooting.html?lang=en)
