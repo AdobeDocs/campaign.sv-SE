@@ -5,7 +5,7 @@ description: Lär dig hur du hanterar prenumerationer och avbeställningar i Cam
 feature: Översikt
 role: Data Engineer
 level: Beginner
-source-git-commit: 5363950db5092bc7e0a72a0823db1132a17dda33
+source-git-commit: f69d318b4ea767c44f8c19bf0cf45fb1b7001b11
 workflow-type: tm+mt
 source-wordcount: '503'
 ht-degree: 0%
@@ -21,6 +21,8 @@ Använd Adobe Campaign för att skapa och övervaka informationstjänster som ny
 Så här prenumererar du (anmäler dig) en profil för en tjänst:
 
 * Lägg till tjänsten manuellt i mottagarprofilen: Om du vill göra det går du till fliken **[!UICONTROL Subscriptions]** i profilen och klickar på **[!UICONTROL Add]** och väljer den aktuella informationstjänsten.
+
+   ![](assets/subscribe-to-a-service.png)
 
    [!DNL :arrow_upper_right:] Läs mer i dokumentationen för  [Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/getting-started/profile-management/editing-a-profile.html?lang=en#deliveries-tab)
 
