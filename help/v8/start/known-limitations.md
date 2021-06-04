@@ -6,10 +6,10 @@ feature: Översikt
 role: Data Engineer
 level: Beginner
 hidefromtoc: true
-source-git-commit: b11b42220dae7d0a878ba102523ee2825d6fb2e2
+source-git-commit: cf00895f988514fc029d0060d7404bdef0c8b30e
 workflow-type: tm+mt
-source-wordcount: '154'
-ht-degree: 3%
+source-wordcount: '177'
+ht-degree: 2%
 
 ---
 
@@ -26,3 +26,6 @@ För Adobe Campaign v8 gäller följande begränsningar:
 * Vissa funktioner som inte är tillgängliga eller har tagits bort visas fortfarande i användargränssnittet
 * Prenumerations- (opt-in) och avanmälnings- (opt-out) och mobilregistrering är asynkrona processer. Begäranden behandlas varje timme i ett specifikt tekniskt arbetsflöde. [Läs mer](../config/replication.md#tech-wf)
 * Dubbletter måste hanteras manuellt av slutanvändarna. [Läs mer](../dev/keys.md)
+* Adobe Campaign v8 stöder inte utökad genomströmning i API och webbprogram. Om det finns särskilda behov kan du kontakta Adobe för att få hjälp.
+
+
