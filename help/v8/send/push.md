@@ -5,10 +5,10 @@ description: Kom igång med push-meddelanden i Campaign
 feature: Översikt
 role: Data Engineer
 level: Beginner
-source-git-commit: b11b42220dae7d0a878ba102523ee2825d6fb2e2
+source-git-commit: c6f1cfdec3d05a81f8885cc73b370723024f858f
 workflow-type: tm+mt
-source-wordcount: '277'
-ht-degree: 1%
+source-wordcount: '594'
+ht-degree: 0%
 
 ---
 
@@ -49,9 +49,78 @@ Du måste definiera dina inställningar för iOS- och Android-appar i Adobe Camp
 
 ## Skapa ditt första push-meddelande
 
-[!DNL :arrow_upper_right:] Lär dig hur du skapar dina första push-meddelanden i  [Campaign Classic v7-dokumentationen](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/sending-push-notifications/creating-notifications.html?lang=en#sending-notifications-on-ios)
+I det här avsnittet beskrivs de element som är specifika för leveransen av iOS- och Android-meddelanden.
 
+[!DNL :arrow_upper_right:] Alla steg för att skapa push-meddelanden finns i dokumentationen för  [Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/sending-push-notifications/creating-notifications.html?lang=en#sending-notifications-on-ios)
 
 >[!CAUTION]
 >
->Med Campaign v8-mobilregistrering är nu **asynkron**. [Läs mer](../dev/staging.md)
+>Med Campaign v8 är mobilregistreringen nu **asynkron**. [Läs mer](../dev/staging.md)
+
+Om du vill skapa en ny leverans går du till fliken **[!UICONTROL Campaigns]**, klickar på **[!UICONTROL Deliveries]** och klickar på **[!UICONTROL Create]** ovanför listan över befintliga leveranser.
+
+![](assets/delivery_step_1.png)
+
+### Skicka meddelanden på iOS {#sending-notifications-on-ios}
+
+1. Välj leveransmallen **[!UICONTROL Deliver on iOS]** och klicka på **[!UICONTROL Continue]**.
+
+   ![](assets/push-template-ios.png)
+
+1. Om du vill definiera målet för meddelandet klickar du på länken **[!UICONTROL To]** och sedan på **[!UICONTROL Add]**.
+
+   ![](assets/push-ios-select-target.png)
+
+1. Välj **[!UICONTROL Subscribers of an iOS mobile application (iPhone, iPad)]**, välj den tjänst som är relevant för ditt mobilprogram och välj sedan iOS-versionen av programmet.
+
+   ![](assets/push-ios-subscribers.png)
+
+1. Välj meddelandetyp: **[!UICONTROL Alert]**, **[!UICONTROL Badge]**, **[!UICONTROL Alert and badge]** eller **[!UICONTROL Silent Push]**.
+
+   ![](assets/push-ios-alert.png)
+
+1. I fältet **[!UICONTROL Title]** anger du etiketten för titeln som du vill ska visas i meddelandet.
+
+1. Ange **[!UICONTROL Message]** och **[!UICONTROL Value of the badge]** baserat på den valda meddelandetypen.
+
+1. Med **[!UICONTROL Action button]** kan du definiera en etikett för åtgärdsknappen som visas i varningsmeddelanden (**action_loc_key** fält för nyttolasten).
+
+1. I fältet **[!UICONTROL Play a sound]** väljer du det ljud som ska spelas upp av mobilterminalen när meddelandet tas emot.
+
+1. I fältet **[!UICONTROL Application variables]** anger du värdet för varje variabel. Du kan till exempel konfigurera en specifik programskärm som ska visas när användaren aktiverar meddelandet.
+
+1. När meddelandet har konfigurerats klickar du på fliken **[!UICONTROL Preview]** för att förhandsgranska meddelandet.
+
+   ![](assets/push-ios-preview.png)
+
+### Skicka meddelanden på Android {#sending-notifications-on-android}
+
+1. Välj leveransmallen **[!UICONTROL Deliver on Android (android)]**.
+
+   ![](assets/push-template-android.png)
+
+1. Om du vill definiera målet för meddelandet klickar du på länken **[!UICONTROL To]** och sedan på **[!UICONTROL Add]**.
+
+   ![](assets/nmac_delivery_android_2.png)
+
+1. Välj **[!UICONTROL Subscribers of an Android mobile application]**, välj den tjänst som är relevant för ditt mobilprogram (Neotrips, i det här fallet) och välj sedan Android-versionen av programmet.
+
+   ![](assets/push-android-select-target.png)
+
+1. Ange sedan innehållet för meddelandet.
+
+   ![](assets/push-android-content.png)
+
+1. Klicka på ikonen **[!UICONTROL Insert emoticon]** för att infoga uttryckssymboler i push-meddelandet.
+
+1. I fältet **[!UICONTROL Application variables]** anger du värdet för varje variabel. Du kan till exempel konfigurera en specifik programskärm som ska visas när användaren aktiverar meddelandet.
+
+1. När meddelandet har konfigurerats klickar du på fliken **[!UICONTROL Preview]** för att förhandsgranska meddelandet.
+
+   ![](assets/push-android-preview.png)
+
+## Testa, skicka och övervaka dina push-meddelanden
+
+Använd samma process som för e-postleveranser om du vill skicka ett korrektur och den slutliga leveransen.
+
+När du har skickat meddelanden kan du övervaka och spåra dina leveranser.
