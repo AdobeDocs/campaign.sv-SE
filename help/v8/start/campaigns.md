@@ -6,7 +6,7 @@ feature: Målgrupper
 role: Data Engineer
 level: Beginner
 exl-id: b5a6c845-13a7-4746-b856-a08a3cf80b66,c4798c8f-619e-4a60-80d7-29b9e4c61168
-source-git-commit: 5363950db5092bc7e0a72a0823db1132a17dda33
+source-git-commit: 032bee3b58948b558efe50796efa789a046ff5e4
 workflow-type: tm+mt
 source-wordcount: '730'
 ht-degree: 7%
@@ -22,6 +22,8 @@ Kampanjerna omfattar åtgärder (leveranser) och processer (import eller extrahe
 ## Orkestrera kampanjer över flera kanaler
 
 Med Adobe Campaign kan du utforma och orkestrera målinriktade och personaliserade kampanjer över flera kanaler: e-post, direktutskick, SMS och push-meddelanden. Ett enda gränssnitt erbjuder alla funktioner du behöver för att schemalägga, orkestrera, konfigurera, personalisera, automatisera, genomföra och mäta alla kampanjer och all kommunikation.
+
+![](assets/campaign-tab.png)
 
 ### Kärnkoncept
 
@@ -42,6 +44,8 @@ Innan ni börjar implementera marknadsföringskampanjer måste ni känna till f�
 ## Arbetsyta för marknadsföringskampanjer
 
 Med Adobe Campaign kan ni skapa, konfigurera, köra och analysera alla marknadsföringskampanjer från ett enhetligt kontrollcenter.
+
+![](assets/calendar.png)
 
 [!DNL :arrow_upper_right:] Upptäck hur ni får tillgång till och implementerar marknadsföringskampanjer i dokumentationen för  [Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/orchestrating-campaigns/about-marketing-campaigns/accessing-marketing-campaigns.html?lang=en#orchestrating-campaigns)
 
