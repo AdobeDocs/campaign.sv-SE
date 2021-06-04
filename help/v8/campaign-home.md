@@ -3,10 +3,10 @@ keywords: Campaign Classic;hem;populära ämnen
 description: Campaign v8 - hjälpcenter
 title: Adobe Campaign v8 - produktdokumentation
 exl-id: 6010b0f7-baf0-43ba-af9a-b8864f3897ea,9ff16fb1-d3d3-44fe-9016-15abffdbc74e
-source-git-commit: f266172e6b0e14aedd0029025260c42977cf467f
+source-git-commit: efb236fe47653ddd45f8a5a08e0595b9f6287b7d
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '95'
+ht-degree: 15%
 
 ---
 
@@ -22,7 +22,7 @@ ht-degree: 0%
 
 * **[Implementeringsriktlinjer](start/implement.md)**   - Lär dig hur du börjar implementeringen
 
-* **[Från v7 till v8](start/capability-matrix.md)**  - Övergår från Campaign Classic v7 till Campaign v8? Lär dig viktiga skillnader
+* **[Från v7 till v8](start/capability-matrix.md)**  - Övergår från Campaign Classic v7 till v8? Lär dig viktiga skillnader
 
 ## Kom igång
 
@@ -65,4 +65,4 @@ ht-degree: 0%
 * [Mät och spåra](start/reporting.md)
 * [Kommunicera med andra lösningar](connect/integration.md)
 * [Vanliga frågor om Campaign v8](start/campaign-faq.md)
-* [Adobe Campaign v8 - produktbeskrivning](https://helpx.adobe.com/legal/product-descriptions/adobe-campaign-managed-cloud-services.html).
+* [Adobe Campaign v8 - produktbeskrivning](https://helpx.adobe.com/legal/product-descriptions/adobe-campaign-managed-cloud-services.html)
