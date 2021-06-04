@@ -6,7 +6,7 @@ feature: Översikt
 role: Data Engineer
 level: Beginner
 exl-id: 7771a02c-ebd4-48b6-b25e-6b6e420ad493
-source-git-commit: 5363950db5092bc7e0a72a0823db1132a17dda33
+source-git-commit: 36e29801bcc95565c32e51742a23d4d74d4e3049
 workflow-type: tm+mt
 source-wordcount: '453'
 ht-degree: 0%
@@ -44,7 +44,7 @@ Campaign v8 ger en heltäckande skala i alla steg av processen, från målinrikt
 
 ## Förenkling och prestandaökning
 
-Campaign v8 innehåller konceptet **Fullständig federerad dataåtkomst** (FDA): alla data är nu fjärranslutna till molndatabasen.
+Campaign v8 innehåller konceptet **Fullständig federerad dataåtkomst** (FFDA): alla data är nu fjärranslutna till molndatabasen.
 
 Med den här nya arkitekturen förenklar Campaign v8 datahanteringen: inget index krävs för molndatabasen. Du behöver bara skapa tabellerna, kopiera data så kan du börja.
 
@@ -54,7 +54,7 @@ Cloud-databastekniken kräver inget specifikt underhåll för att garantera pres
 
 ## Integrerat ekosystem
 
-Ni kan integrera Campaign med en uppsättning kraftfulla Adobe-lösningar, som: Adobe Analytics, Workfront, Journey Orchestration, Real-Time CDP med flera.
+Ni kan integrera Campaign med en uppsättning kraftfulla Adobe-lösningar, som: Adobe Analytics, Adobe Journey Orchestration, CDP i realtid med mera.
 
 Ni kan också konfigurera prediktiv optimering av sändningstiden och prediktiv poängsättning med Journey AI samt öka antalet öppna samtal, antalet klick och intäkterna.
 
