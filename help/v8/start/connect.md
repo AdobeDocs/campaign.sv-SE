@@ -6,9 +6,9 @@ feature: Målgrupper
 role: Data Engineer
 level: Beginner
 exl-id: 176cc4f0-8827-4127-9f03-7d75ac8cf917
-source-git-commit: 5363950db5092bc7e0a72a0823db1132a17dda33
+source-git-commit: 03585f0c1514a80b0b0cba5a2d05fa3f44398405
 workflow-type: tm+mt
-source-wordcount: '752'
+source-wordcount: '799'
 ht-degree: 4%
 
 ---
@@ -117,6 +117,16 @@ Adobe Campaign kan konfigureras så att användaren kommer åt plattformen via s
 Vissa delar av programmet kan nås via en enkel webbläsare via ett HTML-användargränssnitt: Kampanjpanel, kubrapportering, instansövervakning med mera.
 
 [!DNL :arrow_upper_right:] Läs mer om webbåtkomst i dokumentationen för  [Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/getting-started/starting-with-adobe-campaign/campaign-workspace/adobe-campaign-workspace.html?lang=en#console-and-web-access)
+
+Webbåtkomsten har ett gränssnitt som liknar konsolen, men med en reducerad uppsättning funktioner.
+
+För en viss operator visas till exempel en kampanj med följande alternativ i konsolen:
+
+![](assets/campaign-from-console.png)
+
+Med tillgång till webben kommer man främst att kunna se
+
+![](assets/campaign-from-web.png)
 
 Webbåtkomst används också i valideringsprocessen: -operatorer kan klicka på e-postmeddelandet med godkännandebegäran och ansluta till Campaign via webbläsaren för att validera eller avvisa ett leveransinnehåll eller en budget.
 
