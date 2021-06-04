@@ -5,9 +5,9 @@ description: Lär dig hur du hanterar prenumerationer och avbeställningar i Cam
 feature: Översikt
 role: Data Engineer
 level: Beginner
-source-git-commit: f69d318b4ea767c44f8c19bf0cf45fb1b7001b11
+source-git-commit: 4cdf1b30584088d1c5de301d89c6d09bf5429ca1
 workflow-type: tm+mt
-source-wordcount: '503'
+source-wordcount: '522'
 ht-degree: 0%
 
 ---
@@ -26,7 +26,13 @@ Så här prenumererar du (anmäler dig) en profil för en tjänst:
 
    [!DNL :arrow_upper_right:] Läs mer i dokumentationen för  [Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/getting-started/profile-management/editing-a-profile.html?lang=en#deliveries-tab)
 
-* Prenumerera automatiskt på en uppsättning mottagare till tjänsten. Listan med mottagare kan komma från en filtreringsåtgärd, en grupp, en mapp, en import eller ett manuellt val. Om du vill prenumerera på dessa mottagare markerar du profilerna och högerklickar. Välj **[!UICONTROL Actions > Subscribe selection to a service...]**, markera den aktuella tjänsten och starta åtgärden.
+* Prenumerera automatiskt på en uppsättning mottagare till tjänsten. Listan med mottagare kan komma från en filtreringsåtgärd, en grupp, en mapp, en import eller ett manuellt val. Om du vill prenumerera på dessa mottagare markerar du profilerna och högerklickar. Välj **[!UICONTROL Actions > Subscribe selection to a service...]**.
+
+   ![](assets/subscribe-selection.png)
+
+   Välj den berörda tjänsten och starta åtgärden.
+
+   ![](assets/subscribe-confirm.png)
 
    [!DNL :arrow_upper_right:] Läs mer i dokumentationen för  [Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/getting-started/profile-management/editing-a-profile.html?lang=en#deliveries-tab)
 
@@ -37,13 +43,20 @@ Så här prenumererar du (anmäler dig) en profil för en tjänst:
 
 * Använd ett webbformulär så att mottagarna kan prenumerera på en tjänst.
 
+   ![](assets/opt-in-webapp.png)
+
+   Campaign innehåller ett standardwebbformulär som hanterar anmälan. Du kan anpassa den och mappa profildata.
+
+   ![](assets/web-app.png)
+
    [!DNL :arrow_upper_right:] Läs mer i dokumentationen för  [Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/designing-content/web-forms/use-cases--web-forms.html?lang=en#create-a-subscription--form-with-double-opt-in)
 
 
 * Skapa ett målarbetsflöde och använda en **[!UICONTROL Subscription service]**-aktivitet.
 
-   [!DNL :arrow_upper_right:] Läs mer i dokumentationen för  [Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/automating-with-workflows/targeting-activities/subscription-services.html?lang=en#example--subscribe-a-list-of-recipients-to-a-newsletter)
+   ![](assets/wf-subscription.png)
 
+   [!DNL :arrow_upper_right:] Läs mer i dokumentationen för  [Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/automating-with-workflows/targeting-activities/subscription-services.html?lang=en#example--subscribe-a-list-of-recipients-to-a-newsletter)
 
 Så här avanmäler du en profil från en tjänst:
 
@@ -56,7 +69,7 @@ Så här avanmäler du en profil från en tjänst:
 **Automatisk avprenumeration**
 
 * Ange en tidsgräns för informationstjänsten: när giltighetsperioden har löpt ut kommer mottagarna att avbeställa prenumerationen automatiskt. Den här perioden anges på fliken Redigera i tjänstens egenskaper. Den uttrycks i dagar.
-* Ställ in ett avabonnemangsarbetsflöde för en population
+* Ställ in ett avabonnemangsarbetsflöde för en population.
 
 [!DNL :arrow_upper_right:] Läs mer i dokumentationen för  [Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/subscriptions-and-referrals/managing-subscriptions.html?lang=en#unsubscribing-a-recipient-from-a-service)
 
