@@ -5,9 +5,9 @@ description: Kom igång med e-post i Campaign
 feature: Översikt
 role: Data Engineer
 level: Beginner
-source-git-commit: dc99c00f68e53a308f8c869f07aa93baed3a5129
+source-git-commit: e65750c4e9ebd0367f0430455cac2cc6502ade7e
 workflow-type: tm+mt
-source-wordcount: '604'
+source-wordcount: '605'
 ht-degree: 1%
 
 ---
@@ -107,7 +107,7 @@ Du kan:
 
 ## Övervaka dina e-postmeddelanden
 
-När du har skickat den kontrollerar du leveransstatus på kontrollpanelen och får åtkomst till leveransloggar och rapporter som bekräftar att meddelanden har skickats korrekt.
+När du har skickat den kontrollerar du leveransstatus på kontrollpanelen och öppnar leveransloggar och rapporter för att bekräfta att meddelandena har skickats korrekt.
 
 [!DNL :arrow_upper_right:] [Läs mer i dokumentationen för Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/key-steps-when-creating-a-delivery/delivery-bestpractices/track-and-monitor.html)
 
