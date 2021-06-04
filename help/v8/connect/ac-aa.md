@@ -6,9 +6,9 @@ feature: Översikt
 role: Data Engineer
 level: Beginner
 exl-id: d1d57aa8-b811-470f-a8a6-18da3a700f1a
-source-git-commit: 36e29801bcc95565c32e51742a23d4d74d4e3049
+source-git-commit: 6a22bdd563bb0be26df12ce8d2b6da266d16f2e3
 workflow-type: tm+mt
-source-wordcount: '1096'
+source-wordcount: '1097'
 ht-degree: 0%
 
 ---
@@ -157,9 +157,9 @@ Mer information finns på sidan [Produktprofiler för Adobe Analytics](https://e
 
    ![](assets/analytics_connnector_12.png)
 
-1. Om det behövs kan du lägga till eller ta bort segment från fliken **[!UICONTROL Update Segments]**.
-
-   ![](assets/analytics_connnector_12a.png)
+   >[!NOTE]
+   >
+   > Du kan inte lägga till eller ta bort segment i den här versionen av Campaign v8.
 
 1. Klicka på länken **[!UICONTROL Enrich the formula...]** i **[!UICONTROL External account]** för att ändra URL-beräkningsformeln och ange integreringsinformation för verktyget Webbanalys (kampanj-ID) och domänerna för de webbplatser vars aktivitet måste spåras.
 
