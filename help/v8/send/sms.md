@@ -5,7 +5,7 @@ description: Kom igång med SMS i Campaign
 feature: Översikt
 role: Data Engineer
 level: Beginner
-source-git-commit: 04f9d80e26fab372a1819590f8e79298c7a69ab5
+source-git-commit: 35814053bff993d0b130bf598c8601c3f5adc407
 workflow-type: tm+mt
 source-wordcount: '583'
 ht-degree: 1%
@@ -51,9 +51,9 @@ Dessutom måste du känna till SMS-protokollet och inställningarna. Gå igenom 
 
    ![](assets/sms-template-list.png)
 
-   [!DNL :arrow_upper_right:] Lär dig hur du skapar ett SMPP-externt konto i dokumentationen för  [Campaign Classic v7](https://experienceleague.corp.adobe.com/docs/campaign-classic/using/sending-messages/sending-messages-on-mobiles/sms-set-up.html?lang=en#creating-an-smpp-external-account)
+   [!DNL :arrow_upper_right:] Lär dig hur du skapar ett SMPP-externt konto i dokumentationen för  [Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/sending-messages-on-mobiles/sms-set-up.html?lang=en#creating-an-smpp-external-account)
 
-   [!DNL :arrow_upper_right:] Lär dig hur du skapar en leveransmall som kan skickas till mobiler i dokumentationen för  [Campaign Classic v7](https://experienceleague.corp.adobe.com/docs/campaign-classic/using/sending-messages/sending-messages-on-mobiles/sms-set-up.html?lang=en#changing-the-delivery-template)
+   [!DNL :arrow_upper_right:] Lär dig hur du skapar en leveransmall som kan skickas till mobiler i dokumentationen för  [Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/sending-messages-on-mobiles/sms-set-up.html?lang=en#changing-the-delivery-template)
 
 1. Identifiera leveransen med en etikett, kod och beskrivning.
 
