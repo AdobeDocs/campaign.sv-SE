@@ -6,7 +6,7 @@ feature: Målgrupper
 role: Data Engineer
 level: Beginner
 exl-id: b5a6c845-13a7-4746-b856-a08a3cf80b66,c4798c8f-619e-4a60-80d7-29b9e4c61168
-source-git-commit: 032bee3b58948b558efe50796efa789a046ff5e4
+source-git-commit: efb236fe47653ddd45f8a5a08e0595b9f6287b7d
 workflow-type: tm+mt
 source-wordcount: '730'
 ht-degree: 7%
@@ -70,11 +70,15 @@ De viktigaste stegen för att skapa en flerkanalskampanj för marknadsföring ä
 
    Du kan skapa målgrupper i ett arbetsflöde eller välja en befintlig grupp, till exempel en mottagarlista, prenumeranter på ett nyhetsbrev, mottagare av en tidigare leverans eller något annat filtreringsvillkor.
 
+   ![](assets/campaign-wf.png)
+
    [!DNL :arrow_upper_right:] Lär dig hur du definierar målgruppen för dina meddelanden i dokumentationen för  [Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/orchestrating-campaigns/orchestrate-campaigns/marketing-campaign-target.html?lang=en#orchestrating-campaigns)
 
 1. **Skapa leveranser**
 
    Välj kanal(er), definiera meddelandeinnehållet och starta leveranser.
+
+   ![](assets/campaign-dashboard.png)
 
    [!DNL :arrow_upper_right:] Läs om hur du skapar och startar leveranser av marknadsföringskampanjer i dokumentationen för  [Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/orchestrating-campaigns/orchestrate-campaigns/marketing-campaign-deliveries.html?lang=en#creating-deliveries)
 
