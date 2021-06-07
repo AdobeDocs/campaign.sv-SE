@@ -6,7 +6,7 @@ feature: Översikt
 role: Data Engineer
 level: Beginner
 exl-id: 95ed0369-7215-496b-8e11-fe264c436488,e7931de5-83ce-431d-ae81-83793d257550
-source-git-commit: 46f013dc18e504d490084a6d911b4772ce0fac2e
+source-git-commit: 983b3cfc2f1569cd071848805e6b6b3411b4d6c6
 workflow-type: tm+mt
 source-wordcount: '366'
 ht-degree: 0%
@@ -47,7 +47,7 @@ Adobe Campaign tillhandahåller en uppsättning rapporteringsverktyg som listas 
 
 * **Kuber**
 
-   Analysera och mäta data, beräkna statistik, förenkla och optimera framtagning och beräkning av rapporter med kuber.  Du kan utöka databasens undersöknings- och analyskapacitet samtidigt som det blir enklare för slutanvändarna att konfigurera rapporter och tabeller: Allt de behöver göra är att välja en befintlig (helt konfigurerad) kub när de skapar sin rapport eller tabell för att bearbeta beräkningar, mått och statistik.
+   Analysera och mäta data, beräkna statistik, förenkla och optimera framtagning och beräkning av rapporter med kuber.  Du kan utöka databasens undersöknings- och analyskapacitet och göra det enklare för slutanvändarna att konfigurera rapporter och tabeller. Allt de behöver göra är att välja en befintlig (helt konfigurerad) kub när de skapar sin rapport eller tabell för att bearbeta beräkningar, mått och statistik.
 
    ![](assets/create-a-report.png)
 
