@@ -6,9 +6,9 @@ feature: Översikt
 role: Data Engineer
 level: Beginner
 exl-id: 00ba1c43-9558-4adb-83a1-6597c2bbca62,7105477f-d29e-4af8-8789-82b4459761b0
-source-git-commit: b11b42220dae7d0a878ba102523ee2825d6fb2e2
+source-git-commit: 93b690d815f73d11de7de90b92ae188082a3e9e4
 workflow-type: tm+mt
-source-wordcount: '805'
+source-wordcount: '829'
 ht-degree: 2%
 
 ---
@@ -71,6 +71,10 @@ Adobe kampanj v8 levereras med Snowflake som kärndatabas. Eftersom sökningen d
 ### Förenklat underhåll
 
 Kampanjanvändare behöver inte vara databasexperter: det inte längre finns något behov av komplexa databasunderhållsåtgärder eller komplex tabellindexering.
+
+## Rapportering
+
+Observera att Adobe Campaign rapporter är optimerade och har bättre skalbarhet än Campaign Classic v7. Befintliga begränsningar för kuber gäller inte.
 
 ## Otillgängliga funktioner{#gs-unavailable-features}
 
