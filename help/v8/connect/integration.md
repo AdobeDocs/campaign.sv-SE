@@ -1,15 +1,15 @@
 ---
 product: Adobe Campaign
-title: Kom igång med marknadsföringskampanjer
-description: Kom igång med marknadsföringskampanjer
+title: Koppla samman Campaign med era lösningar
+description: Lär dig hur ni kan koppla Campaign till era lösningar
 feature: Översikt
 role: Data Engineer
 level: Beginner
 exl-id: d1d57aa8-b811-470f-a8a6-18da3a700f1a
-source-git-commit: 03cc90222cc8f64e820856382a00c92bf3f92c41
+source-git-commit: 8b31e24e0b6cfb699179e62366bc6706e9019382
 workflow-type: tm+mt
-source-wordcount: '358'
-ht-degree: 11%
+source-wordcount: '361'
+ht-degree: 8%
 
 ---
 
