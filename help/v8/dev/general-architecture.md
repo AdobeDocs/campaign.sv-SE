@@ -1,11 +1,11 @@
 ---
 product: Adobe Campaign
 title: Allmän arkitektur
-description: Kampanj v8, allmän arkitektur
+description: Läs mer om Campaign-arkitekturen och komponenter
 exl-id: 1d9ff6c5-974d-4a8a-a0d7-641685bbe26e
-source-git-commit: 5363950db5092bc7e0a72a0823db1132a17dda33
+source-git-commit: 8b31e24e0b6cfb699179e62366bc6706e9019382
 workflow-type: tm+mt
-source-wordcount: '1214'
+source-wordcount: '1217'
 ht-degree: 0%
 
 ---
