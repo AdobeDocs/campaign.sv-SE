@@ -8,7 +8,7 @@ role: Developer
 level: Experienced
 hide: true
 hidefromtoc: true
-source-git-commit: d45913ac1da7dc3a447fd27294256522b399f1d0
+source-git-commit: f1a854c6aa91755add4dfe422879ffd12e8d297b
 workflow-type: tm+mt
 source-wordcount: '1283'
 ht-degree: 1%
@@ -19,7 +19,7 @@ ht-degree: 1%
 
 Använd Campaign SDK för iOS och Android för att underlätta integreringen av mobilapplikationen i Adobe Campaign.
 
-Versioner som stöds av Android och iOS, samt kompatibla versioner av Campaign SDK för Campaign v8, listas i [kompatibilitetsmatrisen](../../rn/using/compatibility-matrix.md#MobileSDK).
+Versioner som stöds av Android och iOS, samt kompatibla versioner av Campaign SDK för Campaign v8, listas i [kompatibilitetsmatrisen](../start/compatibility-matrix.md#MobileSDK).
 
 >[!NOTE]
 >
@@ -422,6 +422,7 @@ Lär dig hur du implementerar FCM i ditt program i [Google Documentation](https:
 >
 > Liknande hantering måste utföras om användaren använder alternativet `click_action` i målaktiviteten.
 
+
 1. **Ta emot spårning för datameddelanden**
 
    För datameddelanden tas spårningen emot på anropsnivå `onMessageReceived`. Funktionen notifyReceive måste anropas.
@@ -552,8 +553,6 @@ Lär dig hur du implementerar FCM i ditt program i [Google Documentation](https:
        }
    }
    ```
-
-
 
 
 ## Integrera iOS SDK
