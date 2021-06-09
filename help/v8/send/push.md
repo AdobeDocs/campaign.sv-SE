@@ -5,9 +5,9 @@ description: Kom igång med push-meddelanden i Campaign
 feature: Översikt
 role: Data Engineer
 level: Beginner
-source-git-commit: f75b2ddc073d05548740cb3e9371063cf0d83ca5
+source-git-commit: 42a83fefb9c4ae3cea906c5dce8ecf725909b4eb
 workflow-type: tm+mt
-source-wordcount: '781'
+source-wordcount: '790'
 ht-degree: 0%
 
 ---
@@ -30,6 +30,8 @@ Om du vill skicka push-meddelanden i Adobe Campaign måste du:
 ### Integrera Campaign SDK
 
 Campaign SDK underlättar integreringen av mobilapplikationer i Adobe Campaign.
+
+Kompatibla SDK-versioner visas i [kampanjkompatibilitetsmatrisen](../start/compatibility-matrix.md#MobileSDK).
 
 [!DNL :arrow_upper_right:] Lär dig hur du integrerar Campaign SDK med din app i dokumentationen för  [Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/sending-push-notifications/integrating-campaign-sdk-into-the-mobile-application.html?lang=en#loading-campaign-sdk)
 
