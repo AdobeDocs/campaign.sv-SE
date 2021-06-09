@@ -8,9 +8,9 @@ role: Developer
 level: Experienced
 hide: true
 hidefromtoc: true
-source-git-commit: f1a854c6aa91755add4dfe422879ffd12e8d297b
+source-git-commit: afc624ffdcc3c537bdfa23989c1ed95271edabdb
 workflow-type: tm+mt
-source-wordcount: '1283'
+source-wordcount: '1284'
 ht-degree: 1%
 
 ---
@@ -103,7 +103,7 @@ Lär dig hur du implementerar FCM i ditt program i [Google Documentation](https:
 
    `IntegrationKey` måste matcha med IntegrationKey-uppsättningen i det Adobe Campaign Mobile-program som är länkat till det här Android-programmet.
 
-2. **Registrera den mobila enheten på Adobe Campaign-servern**
+1. **Registrera den mobila enheten på Adobe Campaign-servern**
 
    Registreringsfunktionen gör att du kan:
 
@@ -425,7 +425,7 @@ Lär dig hur du implementerar FCM i ditt program i [Google Documentation](https:
 
 1. **Ta emot spårning för datameddelanden**
 
-   För datameddelanden tas spårningen emot på anropsnivå `onMessageReceived`. Funktionen notifyReceive måste anropas.
+   För datameddelanden tas spårningen emot på anropsnivån `onMessageReceived`. Funktionen notifyReceive måste anropas.
 
    YourApplicationMessagingService.java
 
