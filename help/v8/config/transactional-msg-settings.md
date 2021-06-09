@@ -5,9 +5,9 @@ description: Inställningar för kampanjtransaktionsmeddelanden
 feature: Översikt
 role: Data Engineer
 level: Beginner
-source-git-commit: 5363950db5092bc7e0a72a0823db1132a17dda33
+source-git-commit: 9cb1b38456601bce21d458fea42a5c112d9fafb4
 workflow-type: tm+mt
-source-wordcount: '329'
+source-wordcount: '327'
 ht-degree: 0%
 
 ---
@@ -28,7 +28,7 @@ Om du vill skapa nya användare för instanser av körning i Message Center på 
 
 Alla schematillägg som görs för scheman som används av **Message Center tekniska arbetsflöden** för antingen kontroll- eller körningsinstanser måste dupliceras på de andra instanser som används av Adobe Campaign transaktionsmeddelandemodul.
 
-[!DNL :arrow_upper_right:] Läs mer om de tekniska arbetsflödena i Message Center i dokumentationen för  [Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/transactional-messaging/instance-configuration/technical-workflows.html?lang=en#control-instance-workflows)
+[!DNL :arrow_upper_right:] Läs mer om de tekniska arbetsflödena i Message Center i dokumentationen för  [Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/transactional-messaging/configure-transactional-messaging/additional-configurations.html#technical-workflows)
 
 ## Skicka push-meddelanden för transaktioner
 
