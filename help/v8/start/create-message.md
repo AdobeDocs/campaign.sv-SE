@@ -6,9 +6,9 @@ feature: Översikt
 role: Data Engineer
 level: Beginner
 exl-id: 6cf8a929-637e-4e51-9160-5980ca727efb
-source-git-commit: 9ecd0af7a6e8e173a89106c84a78de8b2311fef7
+source-git-commit: 9cb1b38456601bce21d458fea42a5c112d9fafb4
 workflow-type: tm+mt
-source-wordcount: '601'
+source-wordcount: '600'
 ht-degree: 4%
 
 ---
@@ -55,7 +55,7 @@ När meddelandet har skapats och dess innehåll har utformats och testats kan du
 
    [!DNL :arrow_upper_right:] [Lär dig automatisera e-postleveranser](https://experienceleague.adobe.com/docs/campaign-classic/using/automating-with-workflows/action-activities/delivery.html)
 * [Utlös ](../send/transactional.md) meddelanden från en händelse
-   [!DNL :arrow_upper_right:] [Användningsfall: lära dig hur du skickar ett transaktionsmejl med en bifogad fil](https://experienceleague.adobe.com/docs/campaign-classic/using/transactional-messaging/use-case/transactional-email-with-attachments.html)
+   [!DNL :arrow_upper_right:] [Användningsfall: lära dig hur du skickar ett transaktionsmejl med en bifogad fil](https://experienceleague.adobe.com/docs/campaign-classic/using/transactional-messaging/transactional-email-with-attachments.html?lang=en)
 * Schemalägg meddelanden
 
    ![](assets/schedule-send.png)
@@ -84,7 +84,7 @@ Transactional messaging (Message Center) är den Campaign-modul som är avsedd f
 
 [!DNL :bulb:] Steg för att konfigurera och skicka transaktionsmeddelanden finns på  [den här sidan](../send/transactional.md)
 
-[!DNL :arrow_upper_right:] Upptäck den här funktionen i ett heltäckande användningsfall i dokumentationen för  [Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/transactional-messaging/use-case/transactional-email-with-attachments.html?lang=en#transactional-messaging)
+[!DNL :arrow_upper_right:] Upptäck den här funktionen i ett heltäckande användningsfall i dokumentationen för  [Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/transactional-messaging/transactional-email-with-attachments.html?lang=en)
 
 ## Loggar för leverans och spårning
 
