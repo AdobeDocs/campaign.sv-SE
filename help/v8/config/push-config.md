@@ -8,9 +8,9 @@ role: Developer
 level: Experienced
 hide: true
 hidefromtoc: true
-source-git-commit: e5d321b9fb5fe81476197e1913eb815fb2ed758d
+source-git-commit: eec769a09d59034dde59983bd0a53a4ac4fddde5
 workflow-type: tm+mt
-source-wordcount: '1287'
+source-wordcount: '1567'
 ht-degree: 1%
 
 ---
@@ -644,156 +644,155 @@ Lär dig hur du implementerar FCM i ditt program i [Google Documentation](https:
 
    * **** ErrorReasonger dig mer information om de fel som uppstod. Mer information om tillgängliga fel och deras beskrivningar finns i tabellen nedan.
 
-   | Status | Beskrivning | ErrorReason |
-   | ---------------------------------------------------------- | ------------------------------------------------------ | ----------------------------------------- |
-   | ACCRegisterDeviceStatusSuccess | Registreringen lyckades | TOM |
-   | ACCRegisterDeviceStatusFailureMarketingServerHostnameEmpty | Värdnamnet för ACC-marknadsföringsservern är tomt eller har inte angetts. | TOM |
-   | ACCRegisterDeviceStatusFailureIntegrationKeyEmpty | Integreringsnyckeln är tom eller inte inställd. | TOM |
-   | ACCRegisterDeviceStatusFailureConnectionIssue | Anslutningsproblem med ACC | Mer information (på operativsystemets aktuella språk) |
-   | ACCRegisterDeviceStatusFailureUnknownUUID | Angivet UUID (integrationsnyckel) är okänt. | TOM |
-   | ACCRegisterDeviceStatusFailureUnexpectedError | Ett oväntat fel returnerades till ACC-servern. | Felmeddelandet returnerades till ACC. |
+
+| Status | Beskrivning | ErrorReason |
+| ---------------------------------------------------------- | ------------------------------------------------------ | ----------------------------------------- |
+| ACCRegisterDeviceStatusSuccess | Registreringen lyckades | TOM |
+| ACCRegisterDeviceStatusFailureMarketingServerHostnameEmpty | Värdnamnet för ACC-marknadsföringsservern är tomt eller har inte angetts. | TOM |
+| ACCRegisterDeviceStatusFailureIntegrationKeyEmpty | Integreringsnyckeln är tom eller inte inställd. | TOM |
+| ACCRegisterDeviceStatusFailureConnectionIssue | Anslutningsproblem med ACC | Mer information (på operativsystemets aktuella språk) |
+| ACCRegisterDeviceStatusFailureUnknownUUID | Angivet UUID (integrationsnyckel) är okänt. | TOM |
+| ACCRegisterDeviceStatusFailureUnexpectedError | Ett oväntat fel returnerades till ACC-servern. | Felmeddelandet returnerades till ACC. |
 
 
-   {style=&quot;table-layout:auto&quot;}
+{style=&quot;table-layout:auto&quot;}
 
-   **Definitionen av Neolane_** SDKDelegateprotocol och  **** registerDeviceStatusdelegate är följande:
+    **Neolane_SDKDelegate**-protokollet och **registerDeviceStatus** delegatdefinitionen är följande:
+    
+    &quot;sql
+    // Neolane_SDK.h
+    // Campaign SDK
+    ..
+    ..
+    // Registrera enhetsstatus 
+    Enumtypedef NS_ENUM(NSUInteger, ACCRegisterDeviceStatus) {
+    ACCRegisterDeviceStatusSuccess, // Resistation 
+    SucceedACCRegisterDeviceStatusFailureMarketingServerHostnameEmpty, // Värdservern för kampanjmarknadsföring namnet är tomt eller inte 
+    setACCRegisterDeviceStatusFailureIntegrationKeyEmpty, // Integreringsnyckeln är tom eller 
+    inte inställd på ACCRegisterDeviceStatusFailureConnectionIssue, // Anslutningsproblem med Campaign, mer information i 
+    errorReasonACCRegisterDeviceStatusFailureUnknownUID, // Angivet UUID (integreringsnyckel) är 
+    unknownACCRegisterDeviceStatusFailureUnexpectedError // Oväntat fel returnerat av Campaign-servern, mer information i errorReason
+    };
+    // Definiera protokollet för registerDeviceStatus delegate
+      &lt;nsobject>
+     
+    @protocol Neolane_SDKDelegate@optional- (void) registerDeviceStatus: (ACCRegisterDeviceStatus) status :(NSString *) errorReason;
+    @end
+    @interface Neolane_SDK: NSObject {
+    }
+    ..
+    ...
+    // registerDeviceStatus delegate
+    @property (nonatomic, svag) id  &lt;neolane_sdkdelegate> delegate;
+    ..
+    ...
+    @end
+    &quot;
+    
+    Så här implementerar du **registerDeviceStatus**-delegaten: 
+    
+    1. Implementera **setDelegate** under SDK-initieringen.
+    
+    &quot;sql
+    // AppDelegate.m
+    ...
+    ...
+    - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
+    {
+    ..
+    ...
+    // Hämta de lagrade 
+    
+    inställningarna NSUserDefaults *defaults = [NSUserDefaults standardUserDefaults];
+    NSString *strMktHost = [defaults objectForKey:@&quot;mktHost&quot;];
+    NSString *strTckHost = [defaults objectForKey:@&quot;tckHost&quot;];
+    NSString *strIntegrationKey = [defaults objectForKey:@&quot;integrationKey&quot;];
+    userKey = [defaults objectForKey:@&quot;userKey&quot;];
+    
+    / Konfigurera Campaign SDK vid första 
+    startenNeolane_SDK *nl = [Neolane_SDK DK getInstance];
+    [nl setMarketingHost:strMktHost];
+    [nl setTrackingHost:strTckHost];
+     
+    [nl setIntegrationKey:strIntegrationKey];¥[nl setDelegate:self]; // HÄR
+    ..
+    ...
+    }
+    &quot;
+    
+    1. Lägg till protokollet i **@interface** i klassen.
+    
+    &quot;sql
+    // AppDelegate.h
+    
+    #import  &lt;uikit>
+    # &lt;corelocation>
+    #import &quot;Neolane_SDK.h&quot;
+    
+    @class LandingPageViewController;
+    
+    @interface AppDelegate : UIResponder  &lt;uiapplicationdelegate> {
+    CLLocationManager *locationManager;
+    NSString *userKey;
+    NSString *mktServerUrl;
+    NSString *tckServerUrl;
+    NSString *homeURL;
+    NSString *strLandingPageUrl;
+    NSS timer *timer;
+    }
+     
+    
+    ¥1. Implementera delegaten i **AppDelegate**.
+    
+    &quot;sql
+    // AppDelegate.m
+    
+    #import &quot;AppDelegate.h&quot;
+    #import &quot;Neolane_SDK.h&quot;
+    #import &quot;LandingPageViewController.h&quot;
+    #import &quot;RootViewController.h&quot;
+    ..
+    ...
+    - (void) registerDeviceStatus: (ACCRegisterDeviceStatus) status :(NSString *) errorReason
+    {
+    NSLog(@&quot;registerStatus: %lu&quot;,status);
+    
+    if ( errorReason != nil )
+    NSLog(@&quot;errorReason: %@&quot;,felorsak);
+    
+    if( status == ACCRegisterDeviceStatusSuccess )
+    {
+    // Registreringen lyckades
+    ..
+    ..
+    }
+    else { // Ett fel inträffade
+    NSString *message;
+    switch ( status){
+    case ACCRegisterDeviceStatusFailureUnknownUUID:
+    message = @&quot;Unk IntegrationKey (UID)&quot;;&lt;a1 2/>break;
+    case ACCRegisterDeviceStatusFailureMarketingServerHostnameEmpty:
+    message = @&quot;Markerings-URL inte inställd eller tom&quot;;
+    break;
+    case ACCRegisterDeviceStatusFailureIntegrationKeyEmpty:&lt;a 17/>message = @&quot;Integreringsnyckeln är inte inställd eller tom&quot;;
+    break;
+    case ACCRegisterDeviceStatusFailureConnectionIssue:
+    message = [NSString stringWithFormat:@&quot;%@&quot;,@&quot;Anslutningsproblem:&quot;,errorReason];&lt;a 21/>break;
+    case ACCRegisterDeviceStatusFailureUnexpectedError:
+    default:
+    message = [NSString stringWithFormat:@&quot;%@ %@&quot;,@&quot;Oväntat fel&quot;,felorsak];
+    break;&lt;a {26/>}
+    ..
+    ..
+    }
+    }
+    @end
+    &quot;
 
-   ```sql
-   //  Neolane_SDK.h
-   //  Campaign SDK
-   ..
-   .. 
-   // Register Device Status Enum
-   typedef NS_ENUM(NSUInteger, ACCRegisterDeviceStatus) {
-   ACCRegisterDeviceStatusSuccess,                               // Resistration Succeed
-   ACCRegisterDeviceStatusFailureMarketingServerHostnameEmpty,   // The Campaign marketing server hostname is Empty or not set
-   ACCRegisterDeviceStatusFailureIntegrationKeyEmpty,            // The integration key is empty or not set
-   ACCRegisterDeviceStatusFailureConnectionIssue,                // Connection issue with Campaign, more information in errorReason
-   ACCRegisterDeviceStatusFailureUnknownUUID,                    // The provided UUID (integration key) is unknown
-   ACCRegisterDeviceStatusFailureUnexpectedError                 // Unexpected error returned by Campaign server, more information in errorReason
-   };
-   // define the protocol for the registerDeviceStatus delegate
-   @protocol Neolane_SDKDelegate <NSObject>
-   @optional
-   - (void) registerDeviceStatus: (ACCRegisterDeviceStatus) status :(NSString *) errorReason;
-   @end
-   @interface Neolane_SDK: NSObject {
-   } 
-   ...
-   ...
-   // registerDeviceStatus delegate
-   @property (nonatomic, weak) id <Neolane_SDKDelegate> delegate;
-   ...
-   ...
-   @end
-   ```
-
-   Så här implementerar du **registerDeviceStatus**-delegaten:
-
-   1. Implementera **setDelegate** under SDK-initieringen.
-
-      ```sql
-      // AppDelegate.m
-      ...
-      ... 
-      - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
-      {
-      ...
-      ...
-          // Get the stored settings
-      
-          NSUserDefaults *defaults = [NSUserDefaults standardUserDefaults];
-          NSString *strMktHost = [defaults objectForKey:@"mktHost"];
-          NSString *strTckHost = [defaults objectForKey:@"tckHost"];
-          NSString *strIntegrationKey = [defaults objectForKey:@"integrationKey"];
-          userKey = [defaults objectForKey:@"userKey"];
-      
-          // Configure Campaign SDK on first launch
-          Neolane_SDK *nl = [Neolane_SDK getInstance];
-          [nl setMarketingHost:strMktHost];
-          [nl setTrackingHost:strTckHost];
-          [nl setIntegrationKey:strIntegrationKey];
-          [nl setDelegate:self];    // HERE
-      ...
-      ...
-      }
-      ```
-
-   1. Lägg till protokollet i **@interface** för klassen.
-
-      ```sql
-      //  AppDelegate.h
-      
-      #import <UIKit/UIKit.h>
-      #import <CoreLocation/CoreLocation.h>
-      #import "Neolane_SDK.h"
-      
-      @class LandingPageViewController;
-      
-      @interface AppDelegate : UIResponder <UIApplicationDelegate, CLLocationManagerDelegate, Neolane_SDKDelegate> {
-          CLLocationManager *locationManager;
-          NSString *userKey;
-          NSString *mktServerUrl;
-          NSString *tckServerUrl;
-          NSString *homeURL;
-          NSString *strLandingPageUrl;
-          NSTimer *timer;
-      }
-      ```
-
-   1. Implementera delegaten i **AppDelegate**.
-
-      ```sql
-      //  AppDelegate.m
-      
-      #import "AppDelegate.h"
-      #import "Neolane_SDK.h"
-      #import "LandingPageViewController.h"
-      #import "RootViewController.h"
-      ...
-      ...
-      - (void) registerDeviceStatus: (ACCRegisterDeviceStatus) status :(NSString *) errorReason
-      {
-          NSLog(@"registerStatus: %lu",status);
-      
-          if ( errorReason != nil )
-              NSLog(@"errorReason: %@",errorReason);
-      
-          if( status == ACCRegisterDeviceStatusSuccess )
-          {
-              // Registration successful
-              ...
-              ...
-          }
-          else { // An error occurred
-              NSString *message;
-              switch ( status ){
-                  case ACCRegisterDeviceStatusFailureUnknownUUID:
-                      message = @"Unkown IntegrationKey (UUID)";
-                      break;
-                  case ACCRegisterDeviceStatusFailureMarketingServerHostnameEmpty:
-                      message = @"Marketing URL not set or Empty";
-                      break;
-                  case ACCRegisterDeviceStatusFailureIntegrationKeyEmpty:
-                      message = @"Integration Key not set or empty";
-                      break;
-                  case ACCRegisterDeviceStatusFailureConnectionIssue:
-                      message = [NSString stringWithFormat:@"%@ %@",@"Connection issue:",errorReason];
-                      break;
-                  case ACCRegisterDeviceStatusFailureUnexpectedError:
-                  default:
-                      message = [NSString stringWithFormat:@"%@ %@",@"Unexpected Error",errorReason];
-                      break;
-              }
-          ...
-          ...
-          }
-      }
-      @end
-      ```
-
-
-
+    
+    
+    
+    
 ## Variabler {#variables}
 
 Med variablerna kan du definiera mobilprogrammets beteende efter att ha tagit emot ett meddelande. Dessa variabler måste definieras i mobilprogramkoden och i Adobe Campaign-konsolen på fliken **[!UICONTROL Variables]** i den dedikerade mobilprogramtjänsten.
