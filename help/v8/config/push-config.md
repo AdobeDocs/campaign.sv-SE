@@ -8,9 +8,9 @@ role: Developer
 level: Experienced
 hide: true
 hidefromtoc: true
-source-git-commit: 673d2d3ace355a9552ecf54a3cab0104943e6a99
+source-git-commit: 619edce939b39430832fd950ece734f817f9dce3
 workflow-type: tm+mt
-source-wordcount: '1287'
+source-wordcount: '1285'
 ht-degree: 1%
 
 ---
@@ -19,7 +19,7 @@ ht-degree: 1%
 
 Använd Campaign SDK för iOS och Android för att underlätta integreringen av mobilapplikationen i Adobe Campaign.
 
-Versioner som stöds av Android och iOS, samt kompatibla versioner av Campaign SDK för Campaign v8, listas i [kompatibilitetsmatrisen](../start/compatibility-matrix.md#MobileSDK).
+Versioner som stöds av Android och iOS, och Campaign SDK-kompatibla versioner för Campaign v8, listas i [kompatibilitetsmatrisen](../start/compatibility-matrix.md#MobileSDK).
 
 >[!NOTE]
 >
@@ -61,6 +61,10 @@ För att integrera Campaign SDK i mobilappen måste den funktionella administrat
 Android SDK är ett jar-bibliotek skrivet i JAVA. Med den kan Android-utvecklare integrera med Adobe Campaign: registrera en ny enhet, länka enheten till en användare, spåra beteende och mycket annat.
 
 I det här avsnittet får du lära dig hur du använder Android SDK i ett Android-program som implementerar [Google Firebase Cloud Messaging (FCM)](https://firebase.google.com/docs/cloud-messaging/).
+
+>[!CAUTION]
+>
+> För Campaign v8 använder du Campaign Android SDK v1.1.1.
 
 ### Konfigurera FCM
 
@@ -268,7 +272,6 @@ Lär dig hur du implementerar FCM i ditt program i [Google Documentation](https:
        }   
    ```
 
-   För Campaign Android SDK v1.1.1
 
    ```sql
    public static void handleNotification(Context context, String message, String title, String url, String messageId, String deliveryId, Bundle extras)
@@ -327,8 +330,6 @@ Lär dig hur du implementerar FCM i ditt program i [Google Documentation](https:
 1. **Spåra öppningar av datameddelanden**
 
    För datameddelanden kan du spåra när en användare klickar på ett meddelande för att öppna det med funktionen `notifyOpening`. Meddelandeaktiviteten skapas när användaren klickar på meddelandet (skapas under `onMessageReceived`funktionsanropet)
-
-   För Campaign Android SDK v1.1.1
 
    ```sql
    public class NotificationActivity extends Activity {
@@ -403,7 +404,7 @@ Lär dig hur du implementerar FCM i ditt program i [Google Documentation](https:
                toastMessage( "error", getString(R.string.open_track_ok));
            }
            });
-           nas.notifyReceive(Integer.valueOf(messageId), deliveryId, new NeolaneAsyncRunner.RequestListener() {
+           nas.notifyReceive(messageId, deliveryId, new NeolaneAsyncRunner.RequestListener() {
            public void onNeolaneException(NeolaneException arg0, Object arg1) {
                toastMessage( "error", getString(R.string.rec_track_sdk_error) + arg0.getErrorCode());
            }
@@ -484,7 +485,7 @@ Lär dig hur du implementerar FCM i ditt program i [Google Documentation](https:
            Neolane.getInstance().setTrackingHost(settings.getString(NeoTripActivity.TRACKRT_NAME, NeoTripActivity.DFT_TRACKRT));
    
            NeolaneAsyncRunner nas = new NeolaneAsyncRunner(Neolane.getInstance());
-           nas.notifyReceive(Integer.valueOf(messageId), deliveryId, new NeolaneAsyncRunner.RequestListener() {
+           nas.notifyReceive(messageId, deliveryId, new NeolaneAsyncRunner.RequestListener() {
                public void onNeolaneException(NeolaneException arg0, Object arg1) {}
                public void onIOException(IOException arg0, Object arg1) {}
                public void onComplete(String arg0, Object arg1){}
@@ -539,7 +540,7 @@ Lär dig hur du implementerar FCM i ditt program i [Google Documentation](https:
                toastMessage( "error", getString(R.string.open_track_ok));
            }
            });
-           nas.notifyReceive(Integer.valueOf(messageId), deliveryId, new NeolaneAsyncRunner.RequestListener() {
+           nas.notifyReceive(messageId, deliveryId, new NeolaneAsyncRunner.RequestListener() {
            public void onNeolaneException(NeolaneException arg0, Object arg1) {
                toastMessage( "error", getString(R.string.rec_track_sdk_error) + arg0.getErrorCode());
            }
