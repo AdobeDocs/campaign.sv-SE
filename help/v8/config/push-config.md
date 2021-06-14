@@ -8,9 +8,9 @@ role: Developer
 level: Experienced
 hide: true
 hidefromtoc: true
-source-git-commit: 35fcedd8e4d44bb6c5a97b2a48ff55aa2632947d
+source-git-commit: 68cd7d5a20dafeea3c19f35f5c9547b623319ba2
 workflow-type: tm+mt
-source-wordcount: '1284'
+source-wordcount: '1287'
 ht-degree: 1%
 
 ---
@@ -652,6 +652,9 @@ Lär dig hur du implementerar FCM i ditt program i [Google Documentation](https:
    | ACCRegisterDeviceStatusFailureConnectionIssue | Anslutningsproblem med ACC | Mer information (på operativsystemets aktuella språk) |
    | ACCRegisterDeviceStatusFailureUnknownUUID | Angivet UUID (integrationsnyckel) är okänt. | TOM |
    | ACCRegisterDeviceStatusFailureUnexpectedError | Ett oväntat fel returnerades till ACC-servern. | Felmeddelandet returnerades till ACC. |
+
+
+   {style=&quot;table-layout:auto&quot;}
 
 
    **Definitionen av Neolane_** SDKDelegateprotocol och  **** registerDeviceStatusdelegate är följande:
