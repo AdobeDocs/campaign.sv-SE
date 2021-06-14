@@ -8,7 +8,7 @@ role: Developer
 level: Experienced
 hide: true
 hidefromtoc: true
-source-git-commit: eec769a09d59034dde59983bd0a53a4ac4fddde5
+source-git-commit: 9f05209e47f35c91720f68d56593812115726817
 workflow-type: tm+mt
 source-wordcount: '1567'
 ht-degree: 1%
@@ -644,7 +644,6 @@ Lär dig hur du implementerar FCM i ditt program i [Google Documentation](https:
 
    * **** ErrorReasonger dig mer information om de fel som uppstod. Mer information om tillgängliga fel och deras beskrivningar finns i tabellen nedan.
 
-
 | Status | Beskrivning | ErrorReason |
 | ---------------------------------------------------------- | ------------------------------------------------------ | ----------------------------------------- |
 | ACCRegisterDeviceStatusSuccess | Registreringen lyckades | TOM |
@@ -653,7 +652,6 @@ Lär dig hur du implementerar FCM i ditt program i [Google Documentation](https:
 | ACCRegisterDeviceStatusFailureConnectionIssue | Anslutningsproblem med ACC | Mer information (på operativsystemets aktuella språk) |
 | ACCRegisterDeviceStatusFailureUnknownUUID | Angivet UUID (integrationsnyckel) är okänt. | TOM |
 | ACCRegisterDeviceStatusFailureUnexpectedError | Ett oväntat fel returnerades till ACC-servern. | Felmeddelandet returnerades till ACC. |
-
 
 {style=&quot;table-layout:auto&quot;}
 
