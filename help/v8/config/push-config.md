@@ -8,9 +8,9 @@ role: Developer
 level: Experienced
 hide: true
 hidefromtoc: true
-source-git-commit: 170a80942aff9951859646942657938e206959fe
+source-git-commit: 29d6a1545722afa3a07c98de1ab453cdb0a618d2
 workflow-type: tm+mt
-source-wordcount: '1284'
+source-wordcount: '1346'
 ht-degree: 1%
 
 ---
@@ -419,9 +419,9 @@ Lär dig hur du implementerar FCM i ditt program i [Google Documentation](https:
    }
    ```
 
->[!NOTE]
->
-> Liknande hantering måste utföras om användaren använder alternativet `click_action` i målaktiviteten.
+   >[!NOTE]
+   >
+   > Liknande hantering måste utföras om användaren använder alternativet `click_action` i målaktiviteten.
 
 
 1. **Ta emot spårning för datameddelanden**
@@ -644,6 +644,15 @@ Lär dig hur du implementerar FCM i ditt program i [Google Documentation](https:
 
    * **** ErrorReasonger dig mer information om de fel som uppstod. Mer information om tillgängliga fel och deras beskrivningar finns i tabellen nedan.
 
+
+      | Status | Beskrivning | ErrorReason |
+      | ---------------------------------------------------------- | ------------------------------------------------------ | ----------------------------------------- |
+      | ACCRegisterDeviceStatusSuccess | Registreringen lyckades | TOM |
+      | ACCRegisterDeviceStatusFailureMarketingServerHostnameEmpty | Värdnamnet för ACC-marknadsföringsservern är tomt eller har inte angetts. | TOM |
+      | ACCRegisterDeviceStatusFailureIntegrationKeyEmpty | Integreringsnyckeln är tom eller inte inställd. | TOM |
+      | ACCRegisterDeviceStatusFailureConnectionIssue | Anslutningsproblem med ACC | Mer information (på operativsystemets aktuella språk) |
+      | ACCRegisterDeviceStatusFailureUnknownUUID | Angivet UUID (integrationsnyckel) är okänt. | TOM |
+      | ACCRegisterDeviceStatusFailureUnexpectedError | Ett oväntat fel returnerades till ACC-servern. | Felmeddelandet returnerades till ACC. |
    <table> 
     <thead>
     <tr>
