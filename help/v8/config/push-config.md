@@ -8,9 +8,9 @@ role: Developer
 level: Experienced
 hide: true
 hidefromtoc: true
-source-git-commit: 29d6a1545722afa3a07c98de1ab453cdb0a618d2
+source-git-commit: 35fcedd8e4d44bb6c5a97b2a48ff55aa2632947d
 workflow-type: tm+mt
-source-wordcount: '1346'
+source-wordcount: '1284'
 ht-degree: 1%
 
 ---
@@ -644,56 +644,15 @@ Lär dig hur du implementerar FCM i ditt program i [Google Documentation](https:
 
    * **** ErrorReasonger dig mer information om de fel som uppstod. Mer information om tillgängliga fel och deras beskrivningar finns i tabellen nedan.
 
+   | Status | Beskrivning | ErrorReason |
+   | ---------------------------------------------------------- | ------------------------------------------------------ | ----------------------------------------- |
+   | ACCRegisterDeviceStatusSuccess | Registreringen lyckades | TOM |
+   | ACCRegisterDeviceStatusFailureMarketingServerHostnameEmpty | Värdnamnet för ACC-marknadsföringsservern är tomt eller har inte angetts. | TOM |
+   | ACCRegisterDeviceStatusFailureIntegrationKeyEmpty | Integreringsnyckeln är tom eller inte inställd. | TOM |
+   | ACCRegisterDeviceStatusFailureConnectionIssue | Anslutningsproblem med ACC | Mer information (på operativsystemets aktuella språk) |
+   | ACCRegisterDeviceStatusFailureUnknownUUID | Angivet UUID (integrationsnyckel) är okänt. | TOM |
+   | ACCRegisterDeviceStatusFailureUnexpectedError | Ett oväntat fel returnerades till ACC-servern. | Felmeddelandet returnerades till ACC. |
 
-      | Status | Beskrivning | ErrorReason |
-      | ---------------------------------------------------------- | ------------------------------------------------------ | ----------------------------------------- |
-      | ACCRegisterDeviceStatusSuccess | Registreringen lyckades | TOM |
-      | ACCRegisterDeviceStatusFailureMarketingServerHostnameEmpty | Värdnamnet för ACC-marknadsföringsservern är tomt eller har inte angetts. | TOM |
-      | ACCRegisterDeviceStatusFailureIntegrationKeyEmpty | Integreringsnyckeln är tom eller inte inställd. | TOM |
-      | ACCRegisterDeviceStatusFailureConnectionIssue | Anslutningsproblem med ACC | Mer information (på operativsystemets aktuella språk) |
-      | ACCRegisterDeviceStatusFailureUnknownUUID | Angivet UUID (integrationsnyckel) är okänt. | TOM |
-      | ACCRegisterDeviceStatusFailureUnexpectedError | Ett oväntat fel returnerades till ACC-servern. | Felmeddelandet returnerades till ACC. |
-   <table> 
-    <thead>
-    <tr>
-    <th> Status<br /> </th>
-    <th> Beskrivning<br /> </th>
-    <th> ErrorReason<br /> </th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr>
-    <td> ACCRegisterDeviceStatusSuccess <br /> </td>
-    <td> Registreringen lyckades<br /> </td>
-    <td> TOM<br /> </td>
-    </tr>
-    <tr> 
-    <td> ACCRegisterDeviceStatusFailureMarketingServerHostnameEmpty <br /> </td>
-    <td> Värdnamnet för ACC-marknadsföringsservern är tomt eller inte inställt.<br /> </td>
-    <td> TOM<br /> </td>
-    </tr>
-    <tr> 
-    <td> ACCRegisterDeviceStatusFailureIntegrationKeyEmpty <br /> </td>
-    <td> Integreringsnyckeln är tom eller inte inställd.<br /> </td>
-    <td> TOM<br /> </td>
-    </tr>
-    <tr> 
-    <td> ACCRegisterDeviceStatusFailureConnectionIssue<br /> </td>
-    <td> Anslutningsproblem med ACC<br /> </td>
-    <td> Mer information (på operativsystemets aktuella språk)<br /> </td>
-    </tr>
-    <tr> 
-    <td> ACCRegisterDeviceStatusFailureUnknownUUID<br /> </td>
-    <td> Angivet UUID (integrationsnyckel) är okänt.<br /> </td>
-    <td> TOM<br /> </td>
-    </tr>
-    <tr> 
-    <td> ACCRegisterDeviceStatusFailureUnexpectedError<br /> </td>
-    <td> Ett oväntat fel returnerades till ACC-servern.<br /> </td>
-    <td> Felmeddelandet returnerades till ACC.<br /> </td>
-    </tr>
-    </tbody>
-    </table>
 
    **Definitionen av Neolane_** SDKDelegateprotocol och  **** registerDeviceStatusdelegate är följande:
 
@@ -830,6 +789,7 @@ Lär dig hur du implementerar FCM i ditt program i [Google Documentation](https:
       }
       @end
       ```
+
 
 
 ## Variabler {#variables}
