@@ -5,9 +5,9 @@ description: Kom igång med push-meddelanden i Campaign
 feature: Översikt
 role: Data Engineer
 level: Beginner
-source-git-commit: d45913ac1da7dc3a447fd27294256522b399f1d0
+source-git-commit: aa3f2f17981ad10221771b3a22c76f7a445b94c9
 workflow-type: tm+mt
-source-wordcount: '780'
+source-wordcount: '765'
 ht-degree: 1%
 
 ---
@@ -33,7 +33,10 @@ Campaign SDK underlättar integreringen av mobilapplikationer i Adobe Campaign.
 
 Kompatibla SDK-versioner visas i [kampanjkompatibilitetsmatrisen](../start/compatibility-matrix.md#MobileSDK).
 
-[!DNL :arrow_upper_right:] Lär dig hur du integrerar Campaign Android och iOS SDK med din app i  [det här avsnittet](../config/push-config.md)
+<!--
+[!DNL :arrow_upper_right:] Learn how to integrate Campaign Android and iOS SDKs with your app in [this section](../config/push-config.md)
+-->
+
 
 ### Konfigurera Campaign Extension i Launch
 
@@ -144,5 +147,5 @@ När du har skickat meddelanden kan du övervaka och spåra dina leveranser. Lä
 * Kantlinjer för push-meddelanden
    [!DNL :arrow_upper_right:] [Läs mer om karantän för push-meddelanden](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/monitoring-deliveries/understanding-quarantine-management.html?lang=en#push-notification-quarantines)
 
-* Felsökning
+* Felsöka
    [!DNL :arrow_upper_right:] [Lär dig hur du felsöker push-meddelanden](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/sending-push-notifications/troubleshooting.html?lang=en)
