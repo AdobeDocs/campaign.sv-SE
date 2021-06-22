@@ -5,9 +5,9 @@ description: Kom igång med push-meddelanden i Campaign
 feature: Översikt
 role: Data Engineer
 level: Beginner
-source-git-commit: aa3f2f17981ad10221771b3a22c76f7a445b94c9
+source-git-commit: 3aed82c4c054b45b7e1d90082dee6af7ba02ea69
 workflow-type: tm+mt
-source-wordcount: '765'
+source-wordcount: '714'
 ht-degree: 1%
 
 ---
@@ -23,7 +23,7 @@ Om du vill skicka push-meddelanden i Adobe Campaign måste du:
 1. Lägg till iOS- och Android-versionerna av programmet i den här tjänsten.
 1. Skapa en leverans för både iOS och Android.
 
-[!DNL :arrow_upper_right:] Läs om hur du kommer igång med mobilappar i dokumentationen för  [Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/sending-push-notifications/about-mobile-app-channel.html)
+[!DNL :arrow_upper_right:] Lär dig hur du kommer igång med mobilappen i  [Campaign Classic v7-dokumentationen](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/sending-push-notifications/about-mobile-app-channel.html){target=&quot;_blank&quot;}
 
 ## Integrera med Adobe SDK
 
@@ -33,30 +33,25 @@ Campaign SDK underlättar integreringen av mobilapplikationer i Adobe Campaign.
 
 Kompatibla SDK-versioner visas i [kampanjkompatibilitetsmatrisen](../start/compatibility-matrix.md#MobileSDK).
 
-<!--
-[!DNL :arrow_upper_right:] Learn how to integrate Campaign Android and iOS SDKs with your app in [this section](../config/push-config.md)
--->
-
+[!DNL :bulb:] Lär dig hur du integrerar Campaign Android och iOS SDK med din app i  [det här avsnittet](../config/push-config.md)
 
 ### Konfigurera Campaign Extension i Launch
 
 Ni kan integrera Adobe Experience Platform Launch SDK med Campaign genom att utnyttja tillägget Campaign Classic.
 
-[!DNL :arrow_upper_right:] Läs mer i dokumentationen för  [Adobe Mobile SDK](https://aep-sdks.gitbook.io/docs/using-mobile-extensions/adobe-campaignclassic)
+[!DNL :arrow_upper_right:] Läs mer i  [Adobe Mobile SDK-dokumentationen](https://aep-sdks.gitbook.io/docs/using-mobile-extensions/adobe-campaignclassic){target=&quot;_blank&quot;}
 
 ## Konfigurera appinställningarna i Campaign
 
 Du måste definiera dina inställningar för iOS- och Android-appar i Adobe Campaign.
 
-[!DNL :arrow_upper_right:] Riktlinjer för konfiguration av iOS finns i dokumentationen för  [Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/sending-push-notifications/configure-the-mobile-app/configuring-the-mobile-application.html?lang=en#sending-messages)
+[!DNL :arrow_upper_right:] Riktlinjer för konfiguration av iOS finns i dokumentationen [ för ](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/sending-push-notifications/configure-the-mobile-app/configuring-the-mobile-application.html?lang=en#sending-messages)Campaign Classic v7 {target=&quot;_blank&quot;}
 
-[!DNL :arrow_upper_right:] Riktlinjer för konfiguration av Android finns i dokumentationen för  [Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/sending-push-notifications/configure-the-mobile-app/configuring-the-mobile-application-android.html?lang=en#sending-messages)
+[!DNL :arrow_upper_right:] Riktlinjer för konfiguration av Android finns i dokumentationen [ för ](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/sending-push-notifications/configure-the-mobile-app/configuring-the-mobile-application-android.html?lang=en#sending-messages)Campaign Classic v7 {target=&quot;_blank&quot;}
 
 ## Skapa ditt första push-meddelande
 
 I det här avsnittet beskrivs de element som är specifika för leveransen av iOS- och Android-meddelanden.
-
-[!DNL :arrow_upper_right:] Alla steg för att skapa push-meddelanden finns i dokumentationen för  [Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/sending-push-notifications/creating-notifications.html?lang=en)
 
 >[!CAUTION]
 >
@@ -66,7 +61,7 @@ Om du vill skapa en ny leverans går du till fliken **[!UICONTROL Campaigns]**, 
 
 ![](assets/delivery_step_1.png)
 
-[!DNL :arrow_upper_right:] Global information om hur du skapar en leverans finns i  [Campaign Classic v7-dokumentationen](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/key-steps-when-creating-a-delivery/steps-about-delivery-creation-steps.html?lang=en#sending-messages).
+[!DNL :arrow_upper_right:] Global information om hur du skapar en leverans finns i dokumentationen [ för ](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/key-steps-when-creating-a-delivery/steps-about-delivery-creation-steps.html?lang=en#sending-messages)Campaign Classic v7 {target=&quot;_blank&quot;}
 
 ### Skicka meddelanden på iOS {#send-notifications-on-ios}
 
@@ -102,7 +97,6 @@ Om du vill skapa en ny leverans går du till fliken **[!UICONTROL Campaigns]**, 
 
    ![](assets/push-ios-preview.png)
 
-[!DNL :arrow_upper_right:] Alla detaljerade steg för att skapa och skicka push-meddelanden på iOS finns i dokumentationen för  [Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/sending-push-notifications/creating-notifications.html?lang=en#sending-notifications-on-ios)
 
 ### Skicka meddelanden på Android {#send-notifications-on-android}
 
@@ -130,22 +124,20 @@ Om du vill skapa en ny leverans går du till fliken **[!UICONTROL Campaigns]**, 
 
    <!--![](assets/push-android-preview.png)-->
 
-[!DNL :arrow_upper_right:] Alla detaljerade steg för att skapa och skicka push-meddelanden på Android finns i dokumentationen för  [Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/sending-push-notifications/creating-notifications.html?lang=en#sending-notifications-on-android)
-
 ## Testa, skicka och övervaka dina push-meddelanden
 
 Använd samma process som för e-postleveranser om du vill skicka ett korrektur och den slutliga leveransen. Läs mer i Campaign Classic v7-dokumentationen:
 
 * Validera en leverans och skicka korrektur
-   [!DNL :arrow_upper_right:] [Lär dig viktiga steg för att validera en leverans](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/key-steps-when-creating-a-delivery/steps-validating-the-delivery.html)
+   [!DNL :arrow_upper_right:] [Lär dig viktiga steg för att validera en leverans](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/key-steps-when-creating-a-delivery/steps-validating-the-delivery.html){target=&quot;_blank&quot;}
 
 * Bekräfta och skicka leveransen
-   [!DNL :arrow_upper_right:] [Lär dig viktiga steg för att skicka en leverans](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/key-steps-when-creating-a-delivery/steps-sending-the-delivery.html?lang=en)
+   [!DNL :arrow_upper_right:] [Lär dig viktiga steg för att skicka en leverans](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/key-steps-when-creating-a-delivery/steps-sending-the-delivery.html?lang=en){target=&quot;_blank&quot;}
 
 När du har skickat meddelanden kan du övervaka och spåra dina leveranser. Läs mer i Campaign Classic v7-dokumentationen:
 
 * Kantlinjer för push-meddelanden
-   [!DNL :arrow_upper_right:] [Läs mer om karantän för push-meddelanden](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/monitoring-deliveries/understanding-quarantine-management.html?lang=en#push-notification-quarantines)
+   [!DNL :arrow_upper_right:] [Läs mer om karantän för push-meddelanden](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/monitoring-deliveries/understanding-quarantine-management.html?lang=en#push-notification-quarantines){target=&quot;_blank&quot;}
 
 * Felsöka
-   [!DNL :arrow_upper_right:] [Lär dig hur du felsöker push-meddelanden](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/sending-push-notifications/troubleshooting.html?lang=en)
+   [!DNL :arrow_upper_right:] [Lär dig hur du felsöker push-meddelanden](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/sending-push-notifications/troubleshooting.html?lang=en){target=&quot;_blank&quot;}
