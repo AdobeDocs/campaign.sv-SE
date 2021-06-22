@@ -5,9 +5,9 @@ description: Kom igång med Transactional Messaging
 feature: Översikt
 role: Data Engineer
 level: Beginner
-source-git-commit: 973e04eb25887f63564b416515c6e229ed5233a4
+source-git-commit: 0566d40370a3e14d5205861509f7c1ae8cb4b22d
 workflow-type: tm+mt
-source-wordcount: '1477'
+source-wordcount: '1487'
 ht-degree: 1%
 
 ---
@@ -151,7 +151,7 @@ Du kan testa meddelandeleveransen genom att skicka ett korrektur till en startad
 
 När du skickar ett korrektur utförs samma process som för alla leveranser.
 
-[!DNL :arrow_upper_right:] Läs mer om korrektur i dokumentationen för  [Campaign Classic v7]((https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/key-steps-when-creating-a-delivery/steps-validating-the-delivery.html))
+[!DNL :arrow_upper_right:] Läs mer om korrektur i dokumentationen [ för ](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/key-steps-when-creating-a-delivery/steps-validating-the-delivery.html)Campaign Classic v7 {target=&quot;_blank&quot;}
 
 Om du vill skicka ett bevis på ett transaktionsmeddelande måste du utföra följande åtgärder:
 
