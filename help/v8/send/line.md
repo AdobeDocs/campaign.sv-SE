@@ -7,9 +7,9 @@ role: Data Engineer
 level: Beginner
 hidefromtoc: true
 hide: true
-source-git-commit: 5363950db5092bc7e0a72a0823db1132a17dda33
+source-git-commit: 0566d40370a3e14d5205861509f7c1ae8cb4b22d
 workflow-type: tm+mt
-source-wordcount: '61'
+source-wordcount: '63'
 ht-degree: 1%
 
 ---
@@ -22,5 +22,5 @@ ht-degree: 1%
 
 LINE är ett program för kostnadsfria snabbmeddelanden, röst- och videosamtal som finns på alla mobila enheter och på datorn. Med Adobe Campaign kan du skicka LINE-meddelanden.
 
-[!DNL :arrow_upper_right:] Läs mer i dokumentationen för  [Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/line-channel.html)
+[!DNL :arrow_upper_right:] Läs mer i dokumentationen [ för ](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/line-channel.html)Campaign Classic v7 {target=&quot;_blank&quot;}
 
