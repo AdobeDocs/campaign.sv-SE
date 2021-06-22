@@ -2,9 +2,9 @@
 product: Adobe Campaign
 title: Bästa praxis för kampanjsäkerhet
 description: Kom igång med de effektivaste strategierna för kampanjsäkerhet
-source-git-commit: 5363950db5092bc7e0a72a0823db1132a17dda33
+source-git-commit: 0566d40370a3e14d5205861509f7c1ae8cb4b22d
 workflow-type: tm+mt
-source-wordcount: '499'
+source-wordcount: '503'
 ht-degree: 0%
 
 ---
@@ -107,7 +107,7 @@ Med den här begränsningen kan du ta bort lösenordsfält, men låta det extern
 * Kontrollera att alla operatorer har rätt åtkomsträttigheter
 * Undvik att använda admin-operatorn och undvik att ha för många operatorer i admin-gruppen
 
-[!DNL :arrow_upper_right:] Läs mer i dokumentationen för  [Adobe Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/installing-campaign-classic/security-privacy/access-management.html?lang=en#webapp-operator)
+[!DNL :arrow_upper_right:] Läs mer i  [Adobe Campaign Classic v7-dokumentationen](https://experienceleague.adobe.com/docs/campaign-classic/using/installing-campaign-classic/security-privacy/access-management.html?lang=en#webapp-operator){target=&quot;_blank&quot;}
 
 ## Riktlinjer för kodning
 
@@ -119,4 +119,4 @@ När du utvecklar i Adobe Campaign (arbetsflöden, Javascript, JSSP osv.) ska du
 
 * **Lägg till bildtexter i webbprogram**: lägga till bilder på era offentliga landningssidor och prenumerationssidor.
 
-[!DNL :arrow_upper_right:] Läs mer i dokumentationen för  [Adobe Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/installing-campaign-classic/security-privacy/scripting-coding-guidelines.html?lang=en#installing-campaign-classic)
+[!DNL :arrow_upper_right:] Läs mer i  [Adobe Campaign Classic v7-dokumentationen](https://experienceleague.adobe.com/docs/campaign-classic/using/installing-campaign-classic/security-privacy/scripting-coding-guidelines.html?lang=en#installing-campaign-classic){target=&quot;_blank&quot;}
