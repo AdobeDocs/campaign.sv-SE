@@ -6,10 +6,10 @@ feature: Översikt
 role: Data Engineer
 level: Beginner
 exl-id: 027f5478-d86b-42be-b63d-ec8f5e1dd83d,f5688357-db90-4f88-9596-91e9d0a20d75
-source-git-commit: 1f3af0a9ea29506296710024791511ceafddc824
+source-git-commit: 0566d40370a3e14d5205861509f7c1ae8cb4b22d
 workflow-type: tm+mt
-source-wordcount: '640'
-ht-degree: 45%
+source-wordcount: '658'
+ht-degree: 40%
 
 ---
 
@@ -39,19 +39,19 @@ Behöver du hjälp eftersom du arbetar med Campaign? Läs de viktigaste frågorn
 
    E-postleveransen, som är en viktig del i varje avsändares marknadsföringsprogram, kännetecknas av ständigt föränderliga kriterier och regler. För effektiv navigering i den digitala världen krävs regelbunden anpassning av er e-poststrategi, med hänsyn till viktiga leveranstrender, för att ni ska nå era målgrupper på bästa sätt.
 
-   [!DNL :arrow_upper_right:] Läs den här guiden om du vill veta mer om  [bästa praxis](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/introduction.html?lang=sv) för distribution.
+   [!DNL :arrow_upper_right:] Läs den här vägledningen när du vill lära dig mer om  [Bästa praxis](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/introduction.html?lang=sv) för distribution {target=&quot;_blank&quot;}
 
-   [!DNL :arrow_upper_right:] Lär dig hur ni kan implementera levererbarhet i Campaign  [i den här guiden](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/additional-resources/general-resources.html)
+   [!DNL :arrow_upper_right:] Lär dig hur du implementerar levererbarhet i Campaign  [i den här guiden](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/additional-resources/general-resources.html){target=&quot;_blank&quot;}
 
 1. **Hur kan jag vara säker på att min leverans skickas utan fel?**
 
    Adobe Campaign har en uppsättning instrumentpaneler och verktyg för att övervaka e-postleveranser.
 
-   [Läs igenom dokumentationen för Campaign Classic v7 och ](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/monitoring-deliveries/about-delivery-monitoring.html) lär dig hur du ser till att dina meddelanden skickas, övervakar körningen och utför en åtgärd om ett fel inträffar.
+   [Läs igenom dokumentationen för Campaign Classic v7 och lär dig](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/monitoring-deliveries/about-delivery-monitoring.html){target=&quot;_blank&quot;} hur du ser till att dina meddelanden skickas, övervakar körningen och utför en åtgärd om ett fel inträffar.
 
 1. **Kan jag övervaka körningen av arbetsflödet?**
 
-   [!DNL :arrow_upper_right:] Lär dig hur du övervakar körningen av Campaign-arbetsflödet  [i dokumentationen](https://experienceleague.adobe.com/docs/campaign-classic/using/automating-with-workflows/executing-a-workflow/starting-a-workflow.html) för Campaign Classic v7.
+   [!DNL :arrow_upper_right:] Förstå hur du övervakar körningen av Campaign-arbetsflödet  [i dokumentationen](https://experienceleague.adobe.com/docs/campaign-classic/using/automating-with-workflows/executing-a-workflow/starting-a-workflow.html) för Campaign Classic v7 {target=&quot;_blank&quot;}
 
 1. **Vilka system och komponenter är Campaign v8 kompatibelt med?**
 
@@ -71,19 +71,19 @@ Behöver du hjälp eftersom du arbetar med Campaign? Läs de viktigaste frågorn
 
    Du kan hämta installationsprogrammet och klientkonsolen från Adobe Download Center.
 
-   [Klicka ](https://experience.adobe.com/#/downloads/content/software-distributicampaign.html) här för att få åtkomst till Experience Cloud Software Distribution.
+   [Klicka här](https://experience.adobe.com/#/downloads/content/software-distributicampaign.html){target=&quot;_blank&quot;} för att komma åt Experience Cloud Software Distribution.
 
-   Läs mer om Distribution Center [på den här sidan](https://experienceleague.adobe.com/docs/experience-cloud/software-distribution/home.html).
+   Läs mer om Distribution Center [på den här sidan](https://experienceleague.adobe.com/docs/experience-cloud/software-distribution/home.html){target=&quot;_blank&quot;}.
 
 1. **Kan jag få kontakt med Campaign-experter?**
 
-   Gå med i Campaign Community: söka efter svar i befintliga frågor eller fråga experterna. [Delta i konversationen](https://experienceleaguecommunities.adobe.com/t5/adobe-campaign-classic/ct-p/adobe-campaign-classic-community)
+   Gå med i Campaign Community: söka efter svar i befintliga frågor eller fråga experterna. [Delta i konversationen](https://experienceleaguecommunities.adobe.com/t5/adobe-campaign-classic/ct-p/adobe-campaign-classic-community){target=&quot;_blank&quot;}
 
 
 1. **Hur loggar jag ett problem?**
 
    Om du skapar ett ärende kan du kontakta Adobe kundsupportteam om problem som du har med dina Adobe-produkter. Adobe Admin Console hjälper dig att lösa eller felsöka problemen genom att chatta med Adobe kundsupport.
 
-   Anslut till [Adobe Admin Console](https://adminConsole.adobe.com/overview) för att logga ett problem eller starta en chattsession i det nya systemet.
+   Om du vill logga ett problem eller starta en chattsession i det nya systemet ansluter du till [Adobe Admin Console](https://adminConsole.adobe.com/overview){target=&quot;_blank&quot;}.
 
-   Det här systemet kräver enskilda konton för varje användare, med rätt behörigheter. Begär åtkomst via Experience League om du inte kan logga in med ditt Adobe ID, så registrerar kundtjänstteamet dig så snart som möjligt. [Läs mer](https://helpx.adobe.com/sv/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html)
+   Det här systemet kräver enskilda konton för varje användare, med rätt behörigheter. Begär åtkomst via Experience League om du inte kan logga in med ditt Adobe ID, så registrerar kundtjänstteamet dig så snart som möjligt. [Läs mer](https://helpx.adobe.com/sv/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html){target=&quot;_blank&quot;}
