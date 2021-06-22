@@ -5,9 +5,9 @@ description: Kampanjens externa konton
 feature: Översikt
 role: Data Engineer
 level: Beginner
-source-git-commit: ff2c49a2b4f22cde7ebb798d9f565e133c0268fc
+source-git-commit: 0566d40370a3e14d5205861509f7c1ae8cb4b22d
 workflow-type: tm+mt
-source-wordcount: '1009'
+source-wordcount: '1013'
 ht-degree: 4%
 
 ---
@@ -41,7 +41,7 @@ Följande tekniska konton används av Adobe Campaign för att aktivera och köra
 
    Det externa kontot **studs-e-post** anger det externa POP3-kontot som ska användas för att ansluta till e-posttjänsten. Alla servrar som konfigurerats för POP3-åtkomst kan användas för att ta emot returmeddelanden.
 
-   [!DNL :arrow_upper_right:] Läs mer om inkommande e-post i dokumentationen för  [Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/automating-with-workflows/event-activities/inbound-emails.html)
+   [!DNL :arrow_upper_right:] Läs mer om inkommande e-post i dokumentationen [ för ](https://experienceleague.adobe.com/docs/campaign-classic/using/automating-with-workflows/event-activities/inbound-emails.html)Campaign Classic v7 {target=&quot;_blank&quot;}
 
 * **Dirigering**
 
@@ -145,7 +145,7 @@ Följande tekniska konton används av Adobe Campaign för att aktivera och köra
 
 Dessa externa konton kan användas för att importera eller exportera data till Adobe Campaign med en **[!UICONTROL Transfer file]**-arbetsflödesaktivitet.
 
-[!DNL :arrow_upper_right:] Läs mer om filöverföring i arbetsflöden i dokumentationen för  [Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/automating-with-workflows/event-activities/file-transfer.html)
+[!DNL :arrow_upper_right:] Läs mer om filöverföring i arbetsflöden i  [Campaign Classic v7-dokumentationen](https://experienceleague.adobe.com/docs/campaign-classic/using/automating-with-workflows/event-activities/file-transfer.html){target=&quot;_blank&quot;}
 
 * **FTP och SFTP**
 
