@@ -6,9 +6,9 @@ feature: Målgrupper
 role: Data Engineer
 level: Beginner
 exl-id: b5a6c845-13a7-4746-b856-a08a3cf80b66,c4798c8f-619e-4a60-80d7-29b9e4c61168
-source-git-commit: efb236fe47653ddd45f8a5a08e0595b9f6287b7d
+source-git-commit: 0566d40370a3e14d5205861509f7c1ae8cb4b22d
 workflow-type: tm+mt
-source-wordcount: '730'
+source-wordcount: '746'
 ht-degree: 7%
 
 ---
@@ -47,7 +47,7 @@ Med Adobe Campaign kan ni skapa, konfigurera, köra och analysera alla marknadsf
 
 ![](assets/calendar.png)
 
-[!DNL :arrow_upper_right:] Upptäck hur ni får tillgång till och implementerar marknadsföringskampanjer i dokumentationen för  [Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/orchestrating-campaigns/about-marketing-campaigns/accessing-marketing-campaigns.html?lang=en#orchestrating-campaigns)
+[!DNL :arrow_upper_right:] Upptäck hur ni får tillgång till och implementerar marknadsföringskampanjer i dokumentationen [ för ](https://experienceleague.adobe.com/docs/campaign-classic/using/orchestrating-campaigns/about-marketing-campaigns/accessing-marketing-campaigns.html?lang=en#orchestrating-campaigns)Campaign Classic v7 {target=&quot;_blank&quot;}
 
 
 ## Viktiga steg att starta
@@ -58,13 +58,13 @@ De viktigaste stegen för att skapa en flerkanalskampanj för marknadsföring ä
 
    Definiera hierarki och schema, ange budget, lägga till resurser och välj operatorer.
 
-   [!DNL :arrow_upper_right:] Lär dig hur du skapar en marknadsföringsplan och konfigurerar kampanjer i dokumentationen för  [Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/orchestrating-campaigns/orchestrate-campaigns/setting-up-marketing-campaigns.html?lang=en#creating-plan-and-program-hierarchy)
+   [!DNL :arrow_upper_right:] Lär dig hur du skapar en marknadsföringsplan och konfigurerar kampanjer i  [Campaign Classic v7-dokumentationen](https://experienceleague.adobe.com/docs/campaign-classic/using/orchestrating-campaigns/orchestrate-campaigns/setting-up-marketing-campaigns.html?lang=en#creating-plan-and-program-hierarchy){target=&quot;_blank&quot;}
 
    Alla marknadsföringskampanjer är baserade på en mall som lagrar de viktigaste inställningarna och funktionerna. En inbyggd mall tillhandahålls för att skapa en kampanj för vilken ingen specifik konfiguration har definierats. Du kan skapa och konfigurera kampanjmallar och sedan skapa kampanjer utifrån dessa mallar.
 
-   [!DNL :arrow_upper_right:] Lär dig hur du arbetar med kampanjmallar i dokumentationen för  [Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/orchestrating-campaigns/orchestrate-campaigns/marketing-campaign-templates.html?lang=en#orchestrating-campaigns)
+   [!DNL :arrow_upper_right:] Lär dig hur du arbetar med kampanjmallar i  [Campaign Classic v7-dokumentationen](https://experienceleague.adobe.com/docs/campaign-classic/using/orchestrating-campaigns/orchestrate-campaigns/marketing-campaign-templates.html?lang=en#orchestrating-campaigns){target=&quot;_blank&quot;}
 
-   [!DNL :arrow_upper_right:] Upptäck återkommande kampanjer och hur du konfigurerar dem i dokumentationen för  [Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/orchestrating-campaigns/orchestrate-campaigns/setting-up-marketing-campaigns.html?lang=en#recurring-and-periodic-campaigns)
+   [!DNL :arrow_upper_right:] Upptäck återkommande kampanjer och hur du konfigurerar dem i dokumentationen [ för ](https://experienceleague.adobe.com/docs/campaign-classic/using/orchestrating-campaigns/orchestrate-campaigns/setting-up-marketing-campaigns.html?lang=en#recurring-and-periodic-campaigns)Campaign Classic v7 {target=&quot;_blank&quot;}
 
 1. **Definiera målgrupper**
 
@@ -72,7 +72,7 @@ De viktigaste stegen för att skapa en flerkanalskampanj för marknadsföring ä
 
    ![](assets/campaign-wf.png)
 
-   [!DNL :arrow_upper_right:] Lär dig hur du definierar målgruppen för dina meddelanden i dokumentationen för  [Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/orchestrating-campaigns/orchestrate-campaigns/marketing-campaign-target.html?lang=en#orchestrating-campaigns)
+   [!DNL :arrow_upper_right:] Lär dig hur du definierar målgruppen för dina meddelanden i dokumentationen [ för ](https://experienceleague.adobe.com/docs/campaign-classic/using/orchestrating-campaigns/orchestrate-campaigns/marketing-campaign-target.html?lang=en#orchestrating-campaigns)Campaign Classic v7 {target=&quot;_blank&quot;}
 
 1. **Skapa leveranser**
 
@@ -80,15 +80,15 @@ De viktigaste stegen för att skapa en flerkanalskampanj för marknadsföring ä
 
    ![](assets/campaign-dashboard.png)
 
-   [!DNL :arrow_upper_right:] Läs om hur du skapar och startar leveranser av marknadsföringskampanjer i dokumentationen för  [Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/orchestrating-campaigns/orchestrate-campaigns/marketing-campaign-deliveries.html?lang=en#creating-deliveries)
+   [!DNL :arrow_upper_right:] Lär dig hur du skapar och startar leveranser av marknadsföringskampanjer i dokumentationen [ för ](https://experienceleague.adobe.com/docs/campaign-classic/using/orchestrating-campaigns/orchestrate-campaigns/marketing-campaign-deliveries.html?lang=en#creating-deliveries)Campaign Classic v7 {target=&quot;_blank&quot;}
 
    Du kan koppla olika dokument till en kampanj: rapport, foto, webbsida, diagram osv.
 
-   [!DNL :arrow_upper_right:] Läs mer om associerade dokument i dokumentationen för  [Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/orchestrating-campaigns/orchestrate-campaigns/marketing-campaign-assets.html?lang=en#adding-documents)
+   [!DNL :arrow_upper_right:] Läs mer om associerade dokument i  [Campaign Classic v7-dokumentationen](https://experienceleague.adobe.com/docs/campaign-classic/using/orchestrating-campaigns/orchestrate-campaigns/marketing-campaign-assets.html?lang=en#adding-documents){target=&quot;_blank&quot;}
 
 1. **Ställ in godkännandeprocessen**
 
    Med Adobe Campaign kan ni skapa samverkansbaserade godkännandeprocesser för de viktigaste stegen i marknadsföringskampanjen. För varje kampanj kan ni godkänna leveransmålet, innehållet och kostnaderna. Adobe Campaign-operatörer som ansvarar för godkännande kan meddelas via e-post och kan acceptera eller avvisa godkännande från konsolen eller via en webbanslutning.
 
-   [!DNL :arrow_upper_right:] Läs om hur du konfigurerar och hanterar godkännanden i dokumentationen för  [Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/orchestrating-campaigns/orchestrate-campaigns/marketing-campaign-approval.html?lang=en#orchestrating-campaigns)
+   [!DNL :arrow_upper_right:] Lär dig hur du ställer in och hanterar godkännanden i  [Campaign Classic v7-dokumentationen](https://experienceleague.adobe.com/docs/campaign-classic/using/orchestrating-campaigns/orchestrate-campaigns/marketing-campaign-approval.html?lang=en#orchestrating-campaigns){target=&quot;_blank&quot;}
 
