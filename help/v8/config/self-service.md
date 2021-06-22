@@ -7,10 +7,10 @@ role: Data Engineer
 level: Beginner
 hidefromtoc: true
 hide: true
-source-git-commit: 5363950db5092bc7e0a72a0823db1132a17dda33
+source-git-commit: 0566d40370a3e14d5205861509f7c1ae8cb4b22d
 workflow-type: tm+mt
-source-wordcount: '358'
-ht-degree: 58%
+source-wordcount: '374'
+ht-degree: 54%
 
 ---
 
@@ -43,16 +43,16 @@ På Kontrollpanelen kan du interagera med alla SFTP-servrar som är anslutna til
 ## Underdomäner och certifikat
 
 Du kan övervaka dina underdomäner och deras certifikat. Läs mer:
-* [Märkning av underdomäner](https://experienceleague.adobe.com/docs/control-panel/using/subdomains-and-certificates/subdomains-branding.html)
-* [Konfigurera en ny underdomän](https://experienceleague.adobe.com/docs/control-panel/using/subdomains-and-certificates/setting-up-new-subdomain.html)
-* [Övervaka SSL-certifikat](https://experienceleague.adobe.com/docs/control-panel/using/subdomains-and-certificates/monitoring-ssl-certificates.html)
+* [Märkning av underdomäner](https://experienceleague.adobe.com/docs/control-panel/using/subdomains-and-certificates/subdomains-branding.html?lang=sv){target=&quot;_blank&quot;}
+* [Konfigurera en ny underdomän](https://experienceleague.adobe.com/docs/control-panel/using/subdomains-and-certificates/setting-up-new-subdomain.html){target=&quot;_blank&quot;}
+* [Övervaka SSL-certifikat](https://experienceleague.adobe.com/docs/control-panel/using/subdomains-and-certificates/monitoring-ssl-certificates.html){target=&quot;_blank&quot;}
 
 ## Instansinställningar
 
 Lär dig hur du hanterar inställningarna för Campaign-instanser på Kontrollpanelen.
-* [IP på tillåtelselista](https://experienceleague.adobe.com/docs/control-panel/using/instances-settings/ip-allow-listing-instance-access.html)
-* [URL-behörigheter](https://experienceleague.adobe.com/docs/control-panel/using/instances-settings/url-permissions.html)
-* [Instansinformation](https://experienceleague.adobe.com/docs/control-panel/using/instances-settings/instance-details.html)
-* [Hantera GPG-nycklar](https://experienceleague.adobe.com/docs/control-panel/using/instances-settings/gpg-keys-management.html)
+* [IP på tillåtelselista](https://experienceleague.adobe.com/docs/control-panel/using/instances-settings/ip-allow-listing-instance-access.html){target=&quot;_blank&quot;}
+* [URL-behörigheter](https://experienceleague.adobe.com/docs/control-panel/using/instances-settings/url-permissions.html){target=&quot;_blank&quot;}
+* [Instansinformation](https://experienceleague.adobe.com/docs/control-panel/using/instances-settings/instance-details.html){target=&quot;_blank&quot;}
+* [Hantering](https://experienceleague.adobe.com/docs/control-panel/using/instances-settings/gpg-keys-management.html) av GPG-nycklar {target=&quot;_blank&quot;}
 
-[!DNL :arrow_upper_right:] Upptäck alla funktioner på Kontrollpanelen i  [den här dokumentationen](https://experienceleague.adobe.com/docs/control-panel/using/control-panel-home.html?lang=sv)
+[!DNL :arrow_upper_right:] Upptäck alla funktioner på Kontrollpanelen i  [den här dokumentationen](https://experienceleague.adobe.com/docs/control-panel/using/control-panel-home.html?lang=sv){target=&quot;_blank&quot;}
