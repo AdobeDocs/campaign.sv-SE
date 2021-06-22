@@ -6,9 +6,9 @@ feature: Översikt
 role: Data Engineer
 level: Beginner
 exl-id: 04b12907-3cb1-40f1-90b8-1524d84edf2d,e3e9b514-a69d-4650-b1b1-1b76b4f3d63f
-source-git-commit: 8b31e24e0b6cfb699179e62366bc6706e9019382
+source-git-commit: 0566d40370a3e14d5205861509f7c1ae8cb4b22d
 workflow-type: tm+mt
-source-wordcount: '894'
+source-wordcount: '900'
 ht-degree: 41%
 
 ---
@@ -92,9 +92,9 @@ Kampanjarbetsytan är tillgänglig via [klientkonsolen](../dev/general-architect
 
 Kampanjarbetsytan kan anpassas efter dina behov.
 
-[!DNL :arrow_upper_right:]  Lär dig hur du använder arbetsytan för Campaign i dokumentationen för  [Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/getting-started/starting-with-adobe-campaign/campaign-workspace/adobe-campaign-workspace.html)
+[!DNL :arrow_upper_right:]  Lär dig hur du använder arbetsytan för Campaign i  [Campaign Classic v7-dokumentationen](https://experienceleague.adobe.com/docs/campaign-classic/using/getting-started/starting-with-adobe-campaign/campaign-workspace/adobe-campaign-workspace.html){target=&quot;_blank&quot;}
 
-[!DNL :arrow_upper_right:]  Lär dig hur du anpassar listor i dokumentationen för  [Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/getting-started/starting-with-adobe-campaign/campaign-workspace/adobe-campaign-ui-lists.html)
+[!DNL :arrow_upper_right:]  Lär dig hur du anpassar listor i  [Campaign Classic v7-dokumentationen](https://experienceleague.adobe.com/docs/campaign-classic/using/getting-started/starting-with-adobe-campaign/campaign-workspace/adobe-campaign-ui-lists.html){target=&quot;_blank&quot;}
 
 Du kan även komma åt vissa funktioner via webben.
 
@@ -117,7 +117,7 @@ Språket väljs under installationen.
 >
 >Språket kan inte ändras efter att instansen har skapats.
 
-Språk som påverkas av datum- och tidsformat. Mer information finns i [Campaign Classic v7-dokumentationen](https://experienceleague.adobe.com/docs/campaign-classic/using/getting-started/starting-with-adobe-campaign/campaign-workspace/adobe-campaign-workspace.html?lang=en#date-and-time).
+Språk som påverkas av datum- och tidsformat. Mer information finns i [Campaign Classic v7-dokumentationen](https://experienceleague.adobe.com/docs/campaign-classic/using/getting-started/starting-with-adobe-campaign/campaign-workspace/adobe-campaign-workspace.html?lang=en#date-and-time){target=&quot;_blank&quot;}.
 
 **Se även**
 
