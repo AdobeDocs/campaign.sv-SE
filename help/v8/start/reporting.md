@@ -6,9 +6,9 @@ feature: Översikt
 role: Data Engineer
 level: Beginner
 exl-id: 95ed0369-7215-496b-8e11-fe264c436488,e7931de5-83ce-431d-ae81-83793d257550
-source-git-commit: 983b3cfc2f1569cd071848805e6b6b3411b4d6c6
+source-git-commit: 0566d40370a3e14d5205861509f7c1ae8cb4b22d
 workflow-type: tm+mt
-source-wordcount: '366'
+source-wordcount: '374'
 ht-degree: 0%
 
 ---
@@ -27,7 +27,7 @@ Adobe Campaign tillhandahåller en uppsättning rapporteringsverktyg som listas 
 
    ![](assets/built-in-reports.png)
 
-   [!DNL :arrow_upper_right:] Inbyggda kampanjrapporter finns i dokumentationen för  [Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/reporting/accessing-built-in-reports/about-campaign-built-in-reports.html)
+   [!DNL :arrow_upper_right:] Inbyggda kampanjrapporter finns i dokumentationen [ för ](https://experienceleague.adobe.com/docs/campaign-classic/using/reporting/accessing-built-in-reports/about-campaign-built-in-reports.html)Campaign Classic v7 {target=&quot;_blank&quot;}
 
 * **Beskrivande dataanalys**
 
@@ -37,13 +37,13 @@ Adobe Campaign tillhandahåller en uppsättning rapporteringsverktyg som listas 
 
    ![](assets/desc-analysis-report.png)
 
-   [!DNL :arrow_upper_right:] Rapportering om kampanjbeskrivande analyser presenteras i dokumentationen för  [Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/reporting/analyzing-populations/about-descriptive-analysis.html)
+   [!DNL :arrow_upper_right:] Rapportering om kampanjbeskrivande analyser presenteras i dokumentationen [ för ](https://experienceleague.adobe.com/docs/campaign-classic/using/reporting/analyzing-populations/about-descriptive-analysis.html)Campaign Classic v7 {target=&quot;_blank&quot;}
 
 * **Personaliserade rapporter**
 
    Använd Adobe Campaign för att skapa rapporter om data i databasen. När du har skapat dem kan du göra dem tillgängliga i rätt sammanhang.
 
-   [!DNL :arrow_upper_right:] Steg för att skapa en rapport finns i dokumentationen [ för ](https://experienceleague.adobe.com/docs/campaign-classic/using/reporting/creating-new-reports/about-reports-creation-in-campaign.html)Campaign Classic v7. Skapa anpassade rapporter är reserverat för avancerade användare.
+   [!DNL :arrow_upper_right:] Steg för att skapa en rapport finns i dokumentationen [ för ](https://experienceleague.adobe.com/docs/campaign-classic/using/reporting/creating-new-reports/about-reports-creation-in-campaign.html)Campaign Classic v7 {target=&quot;_blank&quot;}. Skapa anpassade rapporter är reserverat för avancerade användare.
 
 * **Kuber**
 
@@ -53,7 +53,7 @@ Adobe Campaign tillhandahåller en uppsättning rapporteringsverktyg som listas 
 
    Beroende på hur komplexa frågorna, beräkningarna och volymerna är kan de data som analyseras i dessa rapporter samlas in via en fråga och sedan aggregeras i en lista (datahanteringstyp) eller i en kub (med hjälp av Marketing Analytics). Den visas i form av en pivottabell eller grupplista.
 
-   [!DNL :arrow_upper_right:] Lär dig hur du skapar kuber i dokumentationen för  [Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/reporting/designing-reports-with-cubes/about-cubes.html)
+   [!DNL :arrow_upper_right:] Lär dig hur du skapar kuber i  [Campaign Classic v7-dokumentationen](https://experienceleague.adobe.com/docs/campaign-classic/using/reporting/designing-reports-with-cubes/about-cubes.html){target=&quot;_blank&quot;}
 
 
 Observera att Adobe Campaign rapporter är optimerade och har bättre skalbarhet än Campaign Classic v7. Befintliga begränsningar för kuber gäller inte.
