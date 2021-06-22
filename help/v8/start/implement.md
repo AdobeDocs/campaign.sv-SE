@@ -6,9 +6,9 @@ feature: Översikt
 role: Data Engineer
 level: Beginner
 exl-id: 09562b6c-3d3d-4808-a70b-202172867f46
-source-git-commit: 5363950db5092bc7e0a72a0823db1132a17dda33
+source-git-commit: 0566d40370a3e14d5205861509f7c1ae8cb4b22d
 workflow-type: tm+mt
-source-wordcount: '1193'
+source-wordcount: '1214'
 ht-degree: 2%
 
 ---
@@ -40,7 +40,7 @@ Adobe Campaign innehåller processer och inställningar som gör att ni kan anv�
 
 * **Användarens samtycke och datalagring**: Lär dig hur du får användarens samtycke, konfigurerar prenumerationssystem med dubbel anmälan, underlättar avanmälan och konfigurerar datalagring i  [Campaign Classic sekretessdokumentation](https://experienceleague.adobe.com/docs/campaign-classic/using/getting-started/privacy/privacy-and-recommendations.html?lang=en#consent)
 
-* **Sekretess- och dataskyddsbestämmelser**: Läs  [Campaign Classic:s ](https://experienceleague.adobe.com/docs/campaign-classic/using/getting-started/privacy/privacy-and-recommendations.html) integritetshandling för information om EU:s allmänna dataskyddsförordning (GDPR), Kaliforniens konsumentintegritetslag (CCPA) och andra internationella integritetskrav, och hur dessa bestämmelser påverkar din organisation och Adobe Campaign.
+* **Sekretess- och dataskyddsbestämmelser**: Läs  [Campaign Classic integritetsdokumentation](https://experienceleague.adobe.com/docs/campaign-classic/using/getting-started/privacy/privacy-and-recommendations.html){target=&quot;_blank&quot;} för information om EU:s allmänna dataskyddsförordning (GDPR), Kaliforniens konsumentintegritetslag (CCPA) och andra internationella integritetskrav, och hur dessa bestämmelser påverkar din organisation och Adobe Campaign.
 
 ### Säkerhet
 
@@ -52,7 +52,7 @@ Läs säkerhetsriktlinjer och principer med Adobe Campaign i [checklistan för k
 
 Du kan lägga till användare manuellt i kampanjen och associera dem med grupper, justerade mot din rollhierarki. Användarna kan sedan logga in och komma åt de data och behörigheter som passar dem.
 
-[!DNL :arrow_upper_right:] Lär dig hur du lägger till användare i Adobe Campaign i  [det här avsnittet](https://experienceleague.adobe.com/docs/campaign-classic/using/getting-started/permissions/access-management.html?lang=en#getting-started).
+[!DNL :arrow_upper_right:] Lär dig hur du lägger till användare i Adobe Campaign i  [det här avsnittet](https://experienceleague.adobe.com/docs/campaign-classic/using/getting-started/permissions/access-management.html?lang=en#getting-started){target=&quot;_blank&quot;}.
 
 ### Installera Campaign Client Console
 
@@ -78,17 +78,17 @@ Innan du börjar skicka meddelanden och skapa marknadsföringskampanjer måste d
 
    Kampanjer, leveranser, jobb eller arbetsflöden är alla baserade på en mall som lagrar viktiga inställningar och funktioner. En inbyggd mall tillhandahålls för varje komponent som ingen specifik konfiguration har definierats för. Du måste konfigurera och anpassa mallar efter dina behov och göra dem tillgängliga för slutanvändarna.
 
-   [!DNL :arrow_upper_right:] [Läs mer om e-postmallar](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/using-delivery-templates/about-templates.html)
+   [!DNL :arrow_upper_right:] [Läs mer om e-postmallar](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/using-delivery-templates/about-templates.html){target=&quot;_blank&quot;}
 
-   [!DNL :arrow_upper_right:] Lär dig hur du arbetar med kampanjmallar på  [den här sidan](https://experienceleague.adobe.com/docs/campaign-classic/using/orchestrating-campaigns/orchestrate-campaigns/marketing-campaign-templates.html?lang=en#orchestrating-campaigns)
+   [!DNL :arrow_upper_right:] Lär dig hur du arbetar med kampanjmallar i  [Campaign Classic v7-dokumentationen](https://experienceleague.adobe.com/docs/campaign-classic/using/orchestrating-campaigns/orchestrate-campaigns/marketing-campaign-templates.html?lang=en#orchestrating-campaigns){target=&quot;_blank&quot;}
 
-   [!DNL :arrow_upper_right:] Lär dig hur du konfigurerar en arbetsflödesmall på  [den här sidan](https://experienceleague.adobe.com/docs/campaign-classic/using/automating-with-workflows/introduction/building-a-workflow.html?lang=en#workflow-templates)
+   [!DNL :arrow_upper_right:] Lär dig hur du konfigurerar en arbetsflödesmall i dokumentationen [ för ](https://experienceleague.adobe.com/docs/campaign-classic/using/automating-with-workflows/introduction/building-a-workflow.html?lang=en#workflow-templates)Campaign Classic v7 {target=&quot;_blank&quot;}
 
 1. Konfigurera typologiregler
 
    Använd regler för kampanjtypologier för att filtrera, styra och övervaka leveransen. Trötthetsreglerna styr till exempel frekvens och kvantitet för meddelanden för att undvika att mottagarna blir för många. När typologireglerna är implementerade refereras de i leveranser.
 
-   [!DNL :arrow_upper_right:] [Läs mer om typologier och trötthetshantering](https://experienceleague.adobe.com/docs/campaign-classic/using/orchestrating-campaigns/campaign-optimization/about-campaign-typologies.html?lang=en#orchestrating-campaigns)
+   [!DNL :arrow_upper_right:] Läs mer om typologier och trötthetshantering i dokumentationen [ för ](https://experienceleague.adobe.com/docs/campaign-classic/using/orchestrating-campaigns/campaign-optimization/about-campaign-typologies.html?lang=en#orchestrating-campaigns)Campaign Classic v7 {target=&quot;_blank&quot;}
 
 1. Bekanta dig med Campaigns inbyggda datamodell
 
