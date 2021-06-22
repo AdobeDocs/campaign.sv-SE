@@ -6,10 +6,10 @@ feature: Målgrupper
 role: Data Engineer
 level: Beginner
 exl-id: 176cc4f0-8827-4127-9f03-7d75ac8cf917
-source-git-commit: 8b31e24e0b6cfb699179e62366bc6706e9019382
+source-git-commit: 0566d40370a3e14d5205861509f7c1ae8cb4b22d
 workflow-type: tm+mt
-source-wordcount: '799'
-ht-degree: 4%
+source-wordcount: '803'
+ht-degree: 3%
 
 ---
 
@@ -116,7 +116,7 @@ Adobe Campaign kan konfigureras så att användaren kommer åt plattformen via s
 
 Vissa delar av programmet kan nås via en enkel webbläsare via ett HTML-användargränssnitt: Kampanjpanel, kubrapportering, instansövervakning med mera.
 
-[!DNL :arrow_upper_right:] Läs mer om webbåtkomst i dokumentationen för  [Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/getting-started/starting-with-adobe-campaign/campaign-workspace/adobe-campaign-workspace.html?lang=en#console-and-web-access)
+[!DNL :arrow_upper_right:] Läs mer om webbåtkomst i dokumentationen [ för ](https://experienceleague.adobe.com/docs/campaign-classic/using/getting-started/starting-with-adobe-campaign/campaign-workspace/adobe-campaign-workspace.html?lang=en#console-and-web-access)Campaign Classic v7 {target=&quot;_blank&quot;}
 
 Webbåtkomsten har ett gränssnitt som liknar konsolen, men med en reducerad uppsättning funktioner.
 
@@ -130,4 +130,4 @@ Med tillgång till webben kommer man främst att kunna se
 
 Webbåtkomst används också i valideringsprocessen: -operatorer kan klicka på e-postmeddelandet med godkännandebegäran och ansluta till Campaign via webbläsaren för att validera eller avvisa ett leveransinnehåll eller en budget.
 
-[!DNL :arrow_upper_right:] Läs om hur du konfigurerar och hanterar godkännanden i dokumentationen för  [Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/orchestrating-campaigns/orchestrate-campaigns/marketing-campaign-approval.html?lang=en#orchestrating-campaigns)
+[!DNL :arrow_upper_right:] Lär dig hur du ställer in och hanterar godkännanden i  [Campaign Classic v7-dokumentationen](https://experienceleague.adobe.com/docs/campaign-classic/using/orchestrating-campaigns/orchestrate-campaigns/marketing-campaign-approval.html?lang=en#orchestrating-campaigns){target=&quot;_blank&quot;}
