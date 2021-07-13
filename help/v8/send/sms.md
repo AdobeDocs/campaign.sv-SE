@@ -5,7 +5,7 @@ description: Kom igång med SMS i Campaign
 feature: Översikt
 role: Data Engineer
 level: Beginner
-source-git-commit: 0566d40370a3e14d5205861509f7c1ae8cb4b22d
+source-git-commit: c61d8aa8e0a68ccc81a6141782f860daf061bc61
 workflow-type: tm+mt
 source-wordcount: '611'
 ht-degree: 1%
@@ -16,7 +16,7 @@ ht-degree: 1%
 
 Använd Adobe Campaign för att skicka personaliserade SMS-meddelanden.
 
-[!DNL :arrow_upper_right:] Lär dig hur du kommer igång med SMS-kanal i dokumentationen [ för ](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/sending-messages-on-mobiles/sms-channel.html)Campaign Classic v7 {target=&quot;_blank&quot;}
+↗️ Lär dig hur du kommer igång med SMS-kanal i [Campaign Classic v7-dokumentation](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/sending-messages-on-mobiles/sms-channel.html){target=&quot;_blank&quot;}
 
 >[!NOTE]
 >
@@ -30,7 +30,7 @@ Om du vill skicka till en mobiltelefon behöver du:
 
 * En leveransmall där det här externa kontot refereras.
 
-[!DNL :arrow_upper_right:]  Lär dig hur du konfigurerar en SMS-kanal i dokumentationen [ för ](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/sending-messages-on-mobiles/sms-set-up.html?lang=en#sending-messages)Campaign Classic v7 {target=&quot;_blank&quot;}
+↗️ Lär dig konfigurera en SMS-kanal i [Campaign Classic v7-dokumentation](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/sending-messages-on-mobiles/sms-set-up.html?lang=en#sending-messages){target=&quot;_blank&quot;}
 
 Innan du börjar skicka SMS:
 
@@ -45,15 +45,15 @@ Dessutom måste du känna till SMS-protokollet och inställningarna. Gå igenom 
 
    ![](assets/delivery_step_1.png)
 
-   [!DNL :arrow_upper_right:] Global information om hur du skapar en leverans finns i  [Campaign Classic v7-dokumentationen](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/key-steps-when-creating-a-delivery/steps-about-delivery-creation-steps.html?lang=en#sending-messages){target=&quot;_blank&quot;}.
+   ↗️ Global information om hur du skapar en leverans finns i [Campaign Classic v7-dokumentationen](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/key-steps-when-creating-a-delivery/steps-about-delivery-creation-steps.html?lang=en#sending-messages){target=&quot;_blank&quot;}.
 
 1. Välj en leveransmall som refererar till det relevanta externa kontot för att skicka SMS-leveranser.
 
    ![](assets/sms-template-list.png)
 
-   [!DNL :arrow_upper_right:] Lär dig hur du skapar ett externt SMPP-konto i dokumentationen [ för ](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/sending-messages-on-mobiles/sms-set-up.html?lang=en#creating-an-smpp-external-account)Campaign Classic v7 {target=&quot;_blank&quot;}
+   ↗️ Lär dig hur du skapar ett externt SMPP-konto i [Campaign Classic v7-dokumentation](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/sending-messages-on-mobiles/sms-set-up.html?lang=en#creating-an-smpp-external-account){target=&quot;_blank&quot;}
 
-   [!DNL :arrow_upper_right:] Lär dig hur du skapar en leveransmall som ska skickas till mobiler i  [Campaign Classic v7-dokumentationen](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/sending-messages-on-mobiles/sms-set-up.html?lang=en#changing-the-delivery-template){target=&quot;_blank&quot;}
+   ↗️ Lär dig hur du skapar en leveransmall som ska skickas till mobiler i [Campaign Classic v7-dokumentation](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/sending-messages-on-mobiles/sms-set-up.html?lang=en#changing-the-delivery-template){target=&quot;_blank&quot;}
 
 1. Identifiera leveransen med en etikett, kod och beskrivning.
 
@@ -69,17 +69,17 @@ De viktigaste stegen för att skapa och utforma ett SMS finns i Campaign Classic
 
 * Skapa ett SMS
 
-   [!DNL :arrow_upper_right:] [Lär dig hur du skapar en SMS-leverans](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/sending-messages-on-mobiles/sms-create.html?lang=en#sending-messages){target=&quot;_blank&quot;}
+   ↗️ [Lär dig hur du skapar en SMS-leverans](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/sending-messages-on-mobiles/sms-create.html?lang=en#sending-messages){target=&quot;_blank&quot;}
 
 * Designa SMS-innehåll
 
-   [!DNL :arrow_upper_right:] [Lär dig definiera SMS-innehållet](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/sending-messages-on-mobiles/sms-create.html?lang=en#defining-the-sms-content){target=&quot;_blank&quot;}
+   ↗️ [Lär dig hur du definierar SMS-innehållet](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/sending-messages-on-mobiles/sms-create.html?lang=en#defining-the-sms-content){target=&quot;_blank&quot;}
 
 * Välj publik för ditt e-postmeddelande
 
-   [!DNL :arrow_upper_right:] [Lär dig definiera målpopulationen](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/key-steps-when-creating-a-delivery/steps-defining-the-target-population.html){target=&quot;_blank&quot;}
+   ↗️ [Lär dig definiera målpopulationen](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/key-steps-when-creating-a-delivery/steps-defining-the-target-population.html){target=&quot;_blank&quot;}
 
-[!DNL :bulb:] Stegen för att definiera en målgrupp finns på  [den här sidan](../start/audiences.md).
+? Stegen för att definiera en målgrupp finns på [den här sidan](../start/audiences.md).
 
 ## Testa ditt SMS
 
@@ -90,9 +90,9 @@ Om du vill visa återgivningen av meddelandet med dess anpassning klickar du på
 Mer information om hur du skickar ett korrektur finns i följande avsnitt i dokumentationen för Campaign Classic v7:
 
 * Validera en leverans och skicka korrektur
-   [!DNL :arrow_upper_right:] [Lär dig viktiga steg för att validera en leverans](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/key-steps-when-creating-a-delivery/steps-validating-the-delivery.html){target=&quot;_blank&quot;}
+↗️ [Lär dig viktiga steg för att validera en leverans](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/key-steps-when-creating-a-delivery/steps-validating-the-delivery.html){target=&quot;_blank&quot;}
 * Lägg till dirigerade adresser
-   [!DNL :arrow_upper_right:] [Lär dig mer om dirigerade adresser](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/using-seed-addresses/about-seed-addresses.html){target=&quot;_blank&quot;}
+↗️ [Lär dig mer om dirigerade adresser](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/using-seed-addresses/about-seed-addresses.html){target=&quot;_blank&quot;}
 
 ## Skicka och övervaka SMS-leveranser
 
@@ -100,8 +100,8 @@ De viktigaste stegen för att skicka och övervaka ett SMS finns i dokumentation
 
 * Skicka, övervaka och spåra SMS-leveranser
 
-   [!DNL :arrow_upper_right:] [Lär dig mer om verktygen för att skicka, övervaka och spåra SMS](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/sending-messages-on-mobiles/sms-send.html?lang=en#sending-messages){target=&quot;_blank&quot;}
+   ↗️ [Lär dig mer om verktygen för att skicka, övervaka och spåra SMS](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/sending-messages-on-mobiles/sms-send.html?lang=en#sending-messages){target=&quot;_blank&quot;}
 
 * Felsöka SMS-leveranser
 
-   [!DNL :arrow_upper_right:] [Läs mer om felsökning](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/sending-messages-on-mobiles/troubleshooting-sms.html?lang=en#sending-messages) av SMS {target=&quot;_blank&quot;}
+   ↗️ [Lär dig mer om SMS-felsökning](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/sending-messages-on-mobiles/troubleshooting-sms.html?lang=en#sending-messages){target=&quot;_blank&quot;}
