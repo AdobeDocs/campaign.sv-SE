@@ -6,7 +6,7 @@ feature: Översikt
 role: Data Engineer
 level: Beginner
 exl-id: 04b12907-3cb1-40f1-90b8-1524d84edf2d,e3e9b514-a69d-4650-b1b1-1b76b4f3d63f
-source-git-commit: 0566d40370a3e14d5205861509f7c1ae8cb4b22d
+source-git-commit: c61d8aa8e0a68ccc81a6141782f860daf061bc61
 workflow-type: tm+mt
 source-wordcount: '900'
 ht-degree: 41%
@@ -25,15 +25,15 @@ Använd Campaign för att:
 
 ![](assets/ac-capabilities.png)
 
-## Integrerad kundprofil {#integrated-customer-profile}
+## Integrated Customer Profile {#integrated-customer-profile}
 
 Profilerna är centraliserade i en kraftfull molndatabas. Det finns många sätt att förvärva profiler och bygga upp databasen: insamling online via webbformulär, manuell eller automatisk import av textfiler, replikering med företagsdatabaser eller andra informationssystem. Med Adobe Campaign kan du integrera marknadsföringshistorik, inköpsinformation, preferenser, CRM-data och alla relevanta PII-data i en enda samlad vy för att analysera och vidta åtgärder.
 
 I Adobe Campaign är mottagarna de standardprofiler som väljs för att skicka leveranser till (e-post, SMS etc.). Tack vare mottagardata som lagras i databasen kan du filtrera det mål som ska ta emot en viss leverans och lägga till personaliseringsdata i leveransinnehållet. Det finns andra typer av profiler i databasen. De är utformade för olika användningsfall. Exempelvis görs fröprofiler för att testa dina leveranser innan de skickas till det slutliga målet.
 
-[!DNL :bulb:] Grunderna för profilhantering beskrivs i  [det här avsnittet](audiences.md).
+? Grunderna för profilhantering beskrivs i [det här avsnittet](audiences.md).
 
-[!DNL :bulb:] Lär dig hur du lägger till profiler i Campaign i  [det här avsnittet](import.md).
+? Lär dig hur du lägger till profiler i Campaign i [det här avsnittet](import.md).
 
 ## Målinriktad segmentering {#targeted-segmentation}
 
@@ -41,13 +41,13 @@ Adobe Campaign har kraftfulla och användarvänliga funktioner för segmentering
 
 Funktionen med avancerad datahantering utökar möjligheterna för databearbetning. Den förenklar och optimerar målinriktningsprocessen genom att inkludera data som inte är modellerade i datakartläggningen.
 
-[!DNL :bulb:] Läs mer om segmentering, målgruppsframtagning och personalisering i  [det här avsnittet](audiences.md).
+? Läs mer om segmentering, målgruppsgenerering och personalisering i [det här avsnittet](audiences.md).
 
 ## Orkestrera kampanjer över flera kanaler {#cross-channel-campaign-orchestration}
 
 Med Adobe Campaign kan du utforma och orkestrera målinriktade och personaliserade kampanjer över flera kanaler: e-post, direktutskick, SMS och push-meddelanden. Ett enda gränssnitt erbjuder alla funktioner du behöver för att schemalägga, orkestrera, konfigurera, personalisera, automatisera, genomföra och mäta alla kampanjer och all kommunikation.
 
-[!DNL :bulb:] Lär dig hur du utformar, schemalägger och kör en kampanj i  [det här avsnittet](campaigns.md).
+? Lär dig hur du utformar, schemalägger och kör en kampanj i [det här avsnittet](campaigns.md).
 
 ## Arbetsflöden
 
@@ -62,25 +62,25 @@ Arbetsflöden kan användas i olika sammanhang, till exempel:
 * Importera data till Campaign-databasen.
 * Tekniska processer som rensning av databaser, återställning av spårningsinformation osv.
 
-[!DNL :bulb:] Lär dig hur du utformar och kör arbetsflöden i  [det här avsnittet](../config/workflows.md).
+? Lär dig hur du utformar och kör arbetsflöden i [det här avsnittet](../config/workflows.md).
 
 ## Rapportering och analys {#analysis-and-reporting}
 
 Med Adobe Campaign kan du övervaka och tolka kundernas beteende genom att gradvis berika deras data och profiler. Med rapporterings- och analysverktygen kan du ta vara på varje ny kampanj, målinrikta marknadsföringsinitiativen bättre och optimera deras effekt och med detta avkastningen på investeringen.
 
-[!DNL :bulb:] Läs mer om rapport- och spårningsfunktioner i  [det här avsnittet](reporting.md).
+? Läs mer om rapport- och spårningsfunktioner i [det här avsnittet](reporting.md).
 
 ## Integreringar med Adobe Experience Cloud {#adobe-experience-cloud-integrations}
 
 Du kan kombinera leveransfunktionerna och de avancerade funktionerna för kampanjhantering i Adobe Campaign med en uppsättning lösningar som hjälper till att personalisera användarnas upplevelse. Till exempel kan du använda Adobe Experience Manager, Adobe Analytics, Adobe Target eller utlösare i Adobe Experience Cloud.
 
-[!DNL :bulb:] Lär dig hur du kan integrera med Adobe-tjänster och -lösningar i  [det här avsnittet](../connect/integration.md).
+? Lär dig hur du integrerar med Adobe-tjänster och -lösningar i [det här avsnittet](../connect/integration.md).
 
 ## Mer om Campaign-funktioner {#core-capabilities-and-add-ons}
 
 Adobe Campaign har en uppsättning funktioner som hjälper er att implementera och optimera marknadsföringsfunktionerna beroende på era behov och er arkitektur. Vissa av dem är kärnfunktioner och andra är beroende av att ett paket installeras på din konfiguration. En detaljerad produktbeskrivning finns här: [Adobe Campaign v8 Produktbeskrivning](https://helpx.adobe.com/legal/product-descriptions/adobe-campaign-managed-cloud-services.html).
 
-[!DNL :bulb:] Känner du redan till Campaign Classic? Lär dig viktiga skillnader mellan Campaign Classic och Campaign v8 i [den här sidan](capability-matrix.md).
+? Känner du redan till Campaign Classic? Lär dig viktiga skillnader mellan Campaign Classic och Campaign v8 i [den här sidan](capability-matrix.md).
 
 ## Arbetsyta och anpassning
 
@@ -88,17 +88,17 @@ Kampanjarbetsytan är tillgänglig via [klientkonsolen](../dev/general-architect
 
 ![](assets/home-page.png)
 
-[!DNL :bulb:] [Läs mer om Campaign Client Console](../start/connect.md).
+? [Läs mer om Campaign Client Console](../start/connect.md).
 
 Kampanjarbetsytan kan anpassas efter dina behov.
 
-[!DNL :arrow_upper_right:]  Lär dig hur du använder arbetsytan för Campaign i  [Campaign Classic v7-dokumentationen](https://experienceleague.adobe.com/docs/campaign-classic/using/getting-started/starting-with-adobe-campaign/campaign-workspace/adobe-campaign-workspace.html){target=&quot;_blank&quot;}
+↗️ Lär dig hur du använder arbetsytan Campaign i [Campaign Classic v7-dokumentationen](https://experienceleague.adobe.com/docs/campaign-classic/using/getting-started/starting-with-adobe-campaign/campaign-workspace/adobe-campaign-workspace.html){target=&quot;_blank&quot;}
 
-[!DNL :arrow_upper_right:]  Lär dig hur du anpassar listor i  [Campaign Classic v7-dokumentationen](https://experienceleague.adobe.com/docs/campaign-classic/using/getting-started/starting-with-adobe-campaign/campaign-workspace/adobe-campaign-ui-lists.html){target=&quot;_blank&quot;}
+↗️ Lär dig hur du anpassar listor i [Campaign Classic v7-dokumentation](https://experienceleague.adobe.com/docs/campaign-classic/using/getting-started/starting-with-adobe-campaign/campaign-workspace/adobe-campaign-ui-lists.html){target=&quot;_blank&quot;}
 
 Du kan även komma åt vissa funktioner via webben.
 
-[!DNL :bulb:] [Läs mer om Campaign Web Access](../start/connect.md#web-access).
+? [Läs mer om Campaign Web Access](../start/connect.md#web-access).
 
 
 ## Språk
