@@ -5,14 +5,14 @@ description: Kom igång med direktreklam i Campaign
 feature: Översikt
 role: Data Engineer
 level: Beginner
-source-git-commit: 67657fa19f3ff4594f7901f30d0d49ac75dcfbe0
+source-git-commit: c61d8aa8e0a68ccc81a6141782f860daf061bc61
 workflow-type: tm+mt
 source-wordcount: '408'
-ht-degree: 1%
+ht-degree: 2%
 
 ---
 
-# Skapa direktreklam
+# Skapa direktutskicksleveranser
 
 Med direktutskick kan du generera en extraheringsfil som innehåller data om målpopulationen. Du kan sedan dela den här filen med leverantören som levererar meddelanden till målpopulationerna.
 
@@ -22,7 +22,7 @@ Steg för att generera filen är:
 
    Skapa en direktutskick baserat på mallen. Du kan duplicera och konfigurera den inbyggda **[!UICONTROL Deliver by direct mail (paper)]**-mallen.
 
-   [!DNL :arrow_upper_right:] Läs mer i dokumentationen för  [Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/sending-direct-mail/creating-a-direct-mail-delivery.html)
+   ↗️ Läs mer i [Campaign Classic v7-dokumentationen](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/sending-direct-mail/creating-a-direct-mail-delivery.html)
 
 1. Definiera målgruppen
 
@@ -32,23 +32,23 @@ Steg för att generera filen är:
 
    En adress anses vara fullständig om fälten för namn, postnummer och ort inte är tomma.
 
-   [!DNL :arrow_upper_right:] Läs mer i dokumentationen för  [Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/key-steps-when-creating-a-delivery/steps-defining-the-target-population.html)
+   ↗️ Läs mer i [Campaign Classic v7-dokumentationen](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/key-steps-when-creating-a-delivery/steps-defining-the-target-population.html)
 
 1. Definiera filens innehåll
 
    Använd extraheringsguiden för att definiera informationen (kolumnerna) som ska exporteras till utdatafilen.
 
-   [!DNL :arrow_upper_right:] Läs mer i dokumentationen för  [Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/sending-direct-mail/defining-the-direct-mail-content.html)
+   ↗️ Läs mer i [Campaign Classic v7-dokumentationen](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/sending-direct-mail/defining-the-direct-mail-content.html)
 
 1. Validera leveransen
 
    Kontrollera resultatet av analysen och innehållet i utdatafilen.
 
-   [!DNL :arrow_upper_right:] Läs mer i dokumentationen för  [Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/sending-direct-mail/validating.html)
+   ↗️ Läs mer i [Campaign Classic v7-dokumentationen](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/sending-direct-mail/validating.html)
 
    Extraheringsfilen skapas i samband med en marknadsföringskampanj på extraheringsdatumet. Du kan visa innehållet i den extraherade filen, godkänna den eller ändra formatet och starta extraheringen igen om det behövs. När filen har godkänts kan du skicka e-postmeddelandet till routern.
 
-   [!DNL :arrow_upper_right:] Läs mer i dokumentationen för  [Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/orchestrating-campaigns/orchestrate-campaigns/marketing-campaign-approval.html#approving-an-extraction-file)
+   ↗️ Läs mer i [Campaign Classic v7-dokumentationen](https://experienceleague.adobe.com/docs/campaign-classic/using/orchestrating-campaigns/orchestrate-campaigns/marketing-campaign-approval.html#approving-an-extraction-file)
 
 1. Starta leveransen
 
@@ -58,4 +58,4 @@ Steg för att generera filen är:
 
    När alla godkännanden har beviljats inom ramen för en marknadsföringskampanj skapas extraheringsfilerna via ett särskilt arbetsflöde som, i en standardkonfiguration, startar automatiskt när en direktleverans väntar på extrahering.
 
-   [!DNL :arrow_upper_right:] Läs mer i dokumentationen för  [Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/orchestrating-campaigns/orchestrate-campaigns/marketing-campaign-deliveries.html#starting-an-offline-delivery)
+   ↗️ Läs mer i [Campaign Classic v7-dokumentationen](https://experienceleague.adobe.com/docs/campaign-classic/using/orchestrating-campaigns/orchestrate-campaigns/marketing-campaign-deliveries.html#starting-an-offline-delivery)
