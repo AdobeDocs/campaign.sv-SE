@@ -6,7 +6,7 @@ feature: Översikt
 role: Data Engineer
 level: Beginner
 exl-id: 562b24c3-6bea-447f-b74c-187ab77ae78f
-source-git-commit: 8b31e24e0b6cfb699179e62366bc6706e9019382
+source-git-commit: c61d8aa8e0a68ccc81a6141782f860daf061bc61
 workflow-type: tm+mt
 source-wordcount: '608'
 ht-degree: 0%
@@ -29,7 +29,7 @@ Tre typer av miljöer tillgängliga med Campaign Cloud Service:
 
 Du kan exportera och importera paket från en miljö till en annan.
 
-[!DNL :arrow_upper_right:] Läs mer om paket i dokumentationen för  [Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/getting-started/administration-basics/working-with-data-packages.html)
+↗️ Läs mer om paket i [Campaign Classic v7-dokumentation](https://experienceleague.adobe.com/docs/campaign-classic/using/getting-started/administration-basics/working-with-data-packages.html)
 
 ## Driftsättning via mid-sourcing{#mid-sourcing-deployment}
 
@@ -39,18 +39,18 @@ Allmän kommunikation mellan servrar och processer sker enligt följande schema:
 
 * Modulerna för exekvering och studshantering är inaktiverade på instansen.
 
-* Programmet är konfigurerat att utföra meddelandekörning på en fjärrserver med &quot;mellanlagring&quot; som drivs med SOAP-anrop (via HTTP eller HTTPS).
+* Programmet är konfigurerat för att utföra meddelandekörning på en fjärrserver med &quot;mellanlagring&quot; som drivs med SOAP-anrop (via HTTP eller HTTPS).
 
 >[!NOTE]
 >
 > Campaign v8 bygger på en hybridarkitektur. Om du går över från Campaign Classic v7 bör du tänka på att alla leveranser går via servern för mellanlagring.
 > Därför är intern routning **inte möjlig** i Campaign v8, och det externa kontot har inaktiverats i enlighet med detta.
 
-## Meddelandecentrets arkitektur{#transac-msg-archi}
+## Meddelandecenterarkitektur{#transac-msg-archi}
 
 Transactional messaging (Message Center) är den Campaign-modul som är avsedd för hantering av utlösarmeddelanden.
 
-[!DNL :bulb:] Lär dig hur du skickar transaktionsmeddelanden i  [det här avsnittet](../send/transactional.md).
+? Lär dig hur du skickar transaktionsmeddelanden i [det här avsnittet](../send/transactional.md).
 
 Som svar på en åtgärd från en kund på en webbplats skickas en händelse till Campaign via ett REST API, och meddelandemallen fylls i med informationen eller data som tillhandahålls via API-anropet och ett transaktionsmeddelande skickas i realtid till kunden. Dessa meddelanden kan skickas individuellt eller gruppvis via e-post, SMS eller push-meddelanden.
 
@@ -58,7 +58,7 @@ I den här specifika arkitekturen separeras körningscellen från kontrollinstan
 
 * **Kontrollinstansen** (eller marknadsföringsinstansen) används av marknadsförare och IT-team för att skapa, konfigurera och publicera meddelandemallar. Den här instansen centraliserar också händelseövervakning och historik.
 
-   [!DNL :bulb:] Lär dig hur du skapar och publicerar meddelandemallar i  [det här avsnittet](../send/transactional.md).
+   ? Lär dig hur du skapar och publicerar meddelandemallar i [det här avsnittet](../send/transactional.md).
 
 * **Körningsinstansen** hämtar inkommande händelser (lösenordsåterställning eller order från en webbplats till exempel) och skickar personliga meddelanden. Det kan finnas mer än en körningsinstans för att bearbeta meddelanden via belastningsutjämnaren och skala antalet händelser som ska bearbetas för maximal tillgänglighet.
 
@@ -79,4 +79,4 @@ Med den sessionToken som tillhandahålls av körningsinstansen som svar på ovan
 * Flera körningsinstanser
 I en arkitektur för körning av flera celler med flera körningsinstanser bakom en belastningsutjämnare, går den inloggningsmetod som anropas av det externa programmet igenom belastningsutjämnaren: Därför kan ingen tokenbaserad autentisering användas. En användar-/lösenordsbaserad autentisering krävs.
 
-[!DNL :arrow_upper_right:] Läs mer om Transactional Messaging-händelser i dokumentationen för  [Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/transactional-messaging/processing/event-description.html#about-transactional-messaging-datamodel)
+↗️ Läs mer om Transactional Messaging-händelser i [Campaign Classic v7-dokumentation](https://experienceleague.adobe.com/docs/campaign-classic/using/transactional-messaging/processing/event-description.html#about-transactional-messaging-datamodel)
