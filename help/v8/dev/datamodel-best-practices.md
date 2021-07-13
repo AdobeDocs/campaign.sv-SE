@@ -1,15 +1,15 @@
 ---
 product: Adobe Campaign
-title: Bästa praxis för datamodell
+title: God praxis för datamodell
 description: Lär dig mer om de bästa sätten att använda Campaign-datamodelltillägg
-source-git-commit: 99a1381a0d5cef38eb708dbe6e3e8029e6ff3953
+source-git-commit: c61d8aa8e0a68ccc81a6141782f860daf061bc61
 workflow-type: tm+mt
 source-wordcount: '2683'
 ht-degree: 4%
 
 ---
 
-# Bästa praxis för datamodell{#data-model-best-practices}
+# God praxis för datamodell{#data-model-best-practices}
 
 I det här dokumentet beskrivs viktiga rekommendationer när du utformar din Adobe Campaign-datamodell.
 
@@ -17,15 +17,15 @@ Adobe Campaign-systemet är mycket flexibelt och kan byggas ut utöver den urspr
 
 Om du vill ha en bättre förståelse för de inbyggda tabellerna i Campaign och hur de relaterar till varandra kan du läsa [det här avsnittet](datamodel.md).
 
-[!DNL :bulb:] Läs  [det här ](schemas.md) avsnittet för att komma igång med Campaign-scheman.
+? Läs [det här avsnittet](schemas.md) för att komma igång med Campaign-scheman.
 
-[!DNL :bulb:] Lär dig hur du konfigurerar tilläggsscheman för att utöka Adobe Campaign-databasens konceptuella datamodell på  [den här sidan](extend-schema.md).
+? Lär dig hur du konfigurerar tilläggsscheman för att utöka Adobe Campaign-databasens konceptuella datamodell i [den här sidan](extend-schema.md).
 
 ## Datamodellarkitektur {#data-model-architecture}
 
 Adobe Campaign är ett kraftfullt kanalövergripande kampanjhanteringssystem som kan hjälpa er att anpassa era online- och offlinestrategier för att skapa personaliserade kundupplevelser.
 
-### Kundfokuserad metod {#customer-centric-approach}
+### Kundfokuserat tillvägagångssätt {#customer-centric-approach}
 
 De flesta e-postleverantörer kommunicerar med kunderna via en listcentrerad strategi, men Adobe Campaign förlitar sig på en relationsdatabas för att få en bredare bild av kunderna och deras attribut.
 
@@ -175,7 +175,7 @@ Det finns några lösningar som minimerar behovet av arkivering i Adobe Campaign
 
 Du kan deklarera attributet &quot;deleteStatus&quot; i ett schema. Det är effektivare att markera posten som borttagen och sedan skjuta upp borttagningen i rensningsaktiviteten.
 
-[!DNL :speech_balloon:] Som användare av hanterade Cloud Services kan du kontakta Adobe konsulter eller tekniska administratörer för att få veta mer om bevarande eller om du behöver ange bevarande för anpassade tabeller.
+? Som användare av hanterade Cloud Services kan du kontakta Adobe konsulter eller tekniska administratörer för att få veta mer om bevarande eller om du behöver ange bevarande för anpassade tabeller.
 
 ## Prestanda {#performance}
 
@@ -209,7 +209,7 @@ Nedan följer några vanliga metodtips som bör följas när du utformar din dat
 * För hörnnycklar kan du använda numeriska värden eller strängbaserade värden.
 * Minska så mycket du kan av djupet för loggbevarande. Om du behöver mer detaljerad historik kan du sammanställa beräkningar och/eller hantera anpassade loggtabeller för att lagra större historik.
 
-### Storlek på tabeller {#size-of-tables}
+### Tabellstorlek {#size-of-tables}
 
 Tabellstorleken är en kombination av antalet poster och antalet kolumner per post. Båda kan påverka prestanda för frågor.
 
