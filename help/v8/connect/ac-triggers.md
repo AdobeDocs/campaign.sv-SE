@@ -6,7 +6,7 @@ feature: Översikt
 role: Data Engineer
 level: Beginner
 exl-id: d1d57aa8-b811-470f-a8a6-18da3a700f1a
-source-git-commit: 5363950db5092bc7e0a72a0823db1132a17dda33
+source-git-commit: c61d8aa8e0a68ccc81a6141782f860daf061bc61
 workflow-type: tm+mt
 source-wordcount: '113'
 ht-degree: 0%
@@ -19,4 +19,4 @@ Du kan använda Experience Cloud Triggers för att koppla data mellan Adobe Camp
 
 Läs mer om utlösare för Adobe Campaign och Experience Cloud på [den här sidan](https://experienceleague.adobe.com/docs/campaign-classic/using/integrating-with-adobe-experience-cloud/experience-triggers/about-triggers.html?lang=en).
 
-[!DNL :speech_balloon:]  Som användare av hanterade Cloud Services  [kontaktar du ](../start/campaign-faq.md#support) Adobe implementera utlösare för Experience Cloud med Campaign.
+?  Som användare av hanterade Cloud Services ska du [kontakta Adobe](../start/campaign-faq.md#support) för att implementera utlösare för Experience Cloud med Campaign.
