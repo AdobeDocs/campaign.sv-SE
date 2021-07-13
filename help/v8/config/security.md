@@ -2,7 +2,7 @@
 product: Adobe Campaign
 title: Bästa praxis för kampanjsäkerhet
 description: Kom igång med de effektivaste strategierna för kampanjsäkerhet
-source-git-commit: 0566d40370a3e14d5205861509f7c1ae8cb4b22d
+source-git-commit: c61d8aa8e0a68ccc81a6141782f860daf061bc61
 workflow-type: tm+mt
 source-wordcount: '503'
 ht-degree: 0%
@@ -24,7 +24,7 @@ Konfiguration och skärpning av sekretess är en viktig del av säkerhetsoptimer
 * Kontrollera att krypterade lösenord är begränsade
 * Protect de sidor som kan innehålla personlig information, t.ex. spegelsidor, webbtillämpningar osv.
 
-[!DNL :speech_balloon:] Som användare av hanterade Cloud Services arbetar Adobe tillsammans med dig för att implementera dessa konfigurationer i din miljö.
+? Som användare av hanterade Cloud Services arbetar Adobe tillsammans med dig för att implementera dessa konfigurationer i din miljö.
 
 ## Personalisering
 
@@ -107,7 +107,7 @@ Med den här begränsningen kan du ta bort lösenordsfält, men låta det extern
 * Kontrollera att alla operatorer har rätt åtkomsträttigheter
 * Undvik att använda admin-operatorn och undvik att ha för många operatorer i admin-gruppen
 
-[!DNL :arrow_upper_right:] Läs mer i  [Adobe Campaign Classic v7-dokumentationen](https://experienceleague.adobe.com/docs/campaign-classic/using/installing-campaign-classic/security-privacy/access-management.html?lang=en#webapp-operator){target=&quot;_blank&quot;}
+↗️ Läs mer i [Adobe Campaign Classic v7-dokumentation](https://experienceleague.adobe.com/docs/campaign-classic/using/installing-campaign-classic/security-privacy/access-management.html?lang=en#webapp-operator){target=&quot;_blank&quot;}
 
 ## Riktlinjer för kodning
 
@@ -119,4 +119,4 @@ När du utvecklar i Adobe Campaign (arbetsflöden, Javascript, JSSP osv.) ska du
 
 * **Lägg till bildtexter i webbprogram**: lägga till bilder på era offentliga landningssidor och prenumerationssidor.
 
-[!DNL :arrow_upper_right:] Läs mer i  [Adobe Campaign Classic v7-dokumentationen](https://experienceleague.adobe.com/docs/campaign-classic/using/installing-campaign-classic/security-privacy/scripting-coding-guidelines.html?lang=en#installing-campaign-classic){target=&quot;_blank&quot;}
+↗️ Läs mer i [Adobe Campaign Classic v7-dokumentation](https://experienceleague.adobe.com/docs/campaign-classic/using/installing-campaign-classic/security-privacy/scripting-coding-guidelines.html?lang=en#installing-campaign-classic){target=&quot;_blank&quot;}
