@@ -6,9 +6,9 @@ feature: Målgrupper
 role: Data Engineer
 level: Beginner
 exl-id: 176cc4f0-8827-4127-9f03-7d75ac8cf917
-source-git-commit: c61d8aa8e0a68ccc81a6141782f860daf061bc61
+source-git-commit: 13f3122a830c723fa940290689c8e3a1baa0443a
 workflow-type: tm+mt
-source-wordcount: '731'
+source-wordcount: '691'
 ht-degree: 0%
 
 ---
@@ -99,11 +99,9 @@ Läs mer om Adobe IMS i [den här sidan](https://helpx.adobe.com/enterprise/usin
 
 ## Webbåtkomst{#web-access}
 
-Vissa delar av programmet kan nås via en enkel webbläsare via ett HTML-användargränssnitt: Kampanjpanel, kubrapportering, instansövervakning med mera.
+Vissa delar av programmet kan nås via en webbläsare via ett HTML-användargränssnitt: rapporter, leveransgodkännande, instansövervakning med mera.
 
-↗️ Läs mer om webbåtkomst i [Campaign Classic v7-dokumentation](https://experienceleague.adobe.com/docs/campaign-classic/using/getting-started/starting-with-adobe-campaign/campaign-workspace/adobe-campaign-workspace.html?lang=en#console-and-web-access){target=&quot;_blank&quot;}
-
-Webbåtkomsten har ett gränssnitt som liknar konsolen, men med en reducerad uppsättning funktioner.
+Webbåtkomsten har ett gränssnitt som liknar konsolen men med en reducerad uppsättning funktioner.
 
 För en viss operator visas till exempel en kampanj med följande alternativ i konsolen:
 
@@ -115,4 +113,4 @@ Med tillgång till webben kommer man främst att kunna se
 
 Webbåtkomst används också i valideringsprocessen: -operatorer kan klicka på e-postmeddelandet med godkännandebegäran och ansluta till Campaign via webbläsaren för att validera eller avvisa ett leveransinnehåll eller en budget.
 
-↗️ Lär dig hur du ställer in och hanterar godkännanden i [Campaign Classic v7-dokumentation](https://experienceleague.adobe.com/docs/campaign-classic/using/orchestrating-campaigns/orchestrate-campaigns/marketing-campaign-approval.html?lang=en#orchestrating-campaigns){target=&quot;_blank&quot;}
+Om du vill komma åt Campaign-instansen från webben är URL:en:  `https://<your adobe campaign server>:<port number>/view/home`.
