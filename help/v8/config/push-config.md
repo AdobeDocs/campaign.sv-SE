@@ -8,7 +8,7 @@ role: Developer
 level: Experienced
 hide: true
 hidefromtoc: true
-source-git-commit: 0566d40370a3e14d5205861509f7c1ae8cb4b22d
+source-git-commit: c61d8aa8e0a68ccc81a6141782f860daf061bc61
 workflow-type: tm+mt
 source-wordcount: '1289'
 ht-degree: 1%
@@ -23,7 +23,7 @@ Versioner som stöds av Android och iOS, och Campaign SDK-kompatibla versioner f
 
 >[!NOTE]
 >
->Som Campaign-administratör kan du hämta SDK:er för kampanjer från [Experience Cloud Software Distribution](https://experience.adobe.com/#/downloads/content/software-distributicampaign.html). Mer information får du om du kontaktar [Adobe kundtjänst](https://helpx.adobe.com/sv/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html).
+>Som Campaign-administratör kan du hämta SDK:er för kampanjer från [Experience Cloud Software Distribution](https://experience.adobe.com/#/downloads/content/software-distributicampaign.html). Mer information får du om du kontaktar [Adobe kundtjänst](https://helpx.adobe.com/se/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html).
 
 
 ## Deklarera integreringsinställningar {#declaring-integration-settings}
@@ -797,7 +797,7 @@ Lär dig hur du implementerar FCM i ditt program i [Google Documentation](https:
 
 Med variablerna kan du definiera mobilprogrammets beteende efter att ha tagit emot ett meddelande. Dessa variabler måste definieras i mobilprogramkoden och i Adobe Campaign-konsolen på fliken **[!UICONTROL Variables]** i den dedikerade mobilprogramtjänsten.
 
-[!DNL :arrow_upper_right:] Läs mer i  **Campaign Classic v7-** dokumentationen om mobilappen:  [Konfigurationssteg för iOS](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/sending-push-notifications/configure-the-mobile-app/configuring-the-mobile-application.html){target=&quot;_blank&quot;} och  [konfigurationssteg för Andoid](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/sending-push-notifications/configure-the-mobile-app/configuring-the-mobile-application-android.html){target=&quot;_blank&quot;}.
+↗️ Läs mer i **Campaign Classic v7-dokumentationen** för mobilappen: [Konfigurationssteg för iOS](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/sending-push-notifications/configure-the-mobile-app/configuring-the-mobile-application.html){target=&quot;_blank&quot;} och [Konfigurationssteg för Andoid](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/sending-push-notifications/configure-the-mobile-app/configuring-the-mobile-application-android.html){target=&quot;_blank&quot;}.
 
 Nedan visas ett exempel på en kod som gör att ett mobilprogram kan samla in tillagda variabler i ett meddelande. I vårt exempel använder vi variabeln&quot;VAR&quot;.
 
@@ -879,7 +879,7 @@ Mediet måste hämtas på meddelanditjänstens tilläggsnivå.
     // Perform the download to local storage
 ```
 
-## Meddelandeinnehållstillägg {#notification-content-extension}
+## Tillägg för meddelandeinnehåll {#notification-content-extension}
 
 **För iOS**
 
