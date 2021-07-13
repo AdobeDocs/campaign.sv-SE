@@ -3,7 +3,7 @@ product: Adobe Campaign
 title: Allmän arkitektur
 description: Läs mer om Campaign-arkitekturen och komponenter
 exl-id: 1d9ff6c5-974d-4a8a-a0d7-641685bbe26e
-source-git-commit: 8b31e24e0b6cfb699179e62366bc6706e9019382
+source-git-commit: c61d8aa8e0a68ccc81a6141782f860daf061bc61
 workflow-type: tm+mt
 source-wordcount: '1217'
 ht-degree: 0%
@@ -32,15 +32,15 @@ Programmet kan nås på olika sätt: Rich Client, Thin Client eller API Integrat
 
 * **Klientkonsol**: Huvudanvändargränssnittet i programmet är ett inbyggt program (i Windows) som kommunicerar med Adobe Campaign-programservern med standardInternetprotokoll (SOAP, HTTP osv.). Adobe Campaign Client Console är mycket användarvänligt för ökad produktivitet och använder mycket liten bandbredd (genom att använda ett lokalt cacheminne) och är utformat för enkel driftsättning. Konsolen kan distribueras från en webbläsare, kan uppdateras automatiskt och kräver ingen specifik nätverkskonfiguration eftersom den bara genererar HTTP(S)-trafik.
 
-   [!DNL :bulb:] [Läs mer om Campaign Client Console](../start/connect.md).
+   ? [Läs mer om Campaign Client Console](../start/connect.md).
 
 * **Webbåtkomst**: delar av programmet kan nås via en enkel webbläsare med hjälp av ett HTML-användargränssnitt, inklusive rapportmodulen, godkännandesteg, instansövervakning osv.
 
-   [!DNL :bulb:] [Läs mer om Campaign Web Access](../start/connect.md).
+   ? [Läs mer om Campaign Web Access](../start/connect.md).
 
 * **Kampanj-API:er**: I vissa fall kan systemet anropas från ett externt program med hjälp av de API:er för webbtjänster som exponeras via SOAP-protokollet.
 
-   [!DNL :bulb:] [Läs mer om Campaign-API:er](../dev/api.md).
+   ? [Läs mer om Campaign-API:er](../dev/api.md).
 
 ## Utvecklingsmiljö {#dev-env}
 
