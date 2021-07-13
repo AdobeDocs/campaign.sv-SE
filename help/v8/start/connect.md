@@ -6,10 +6,10 @@ feature: Målgrupper
 role: Data Engineer
 level: Beginner
 exl-id: 176cc4f0-8827-4127-9f03-7d75ac8cf917
-source-git-commit: 0566d40370a3e14d5205861509f7c1ae8cb4b22d
+source-git-commit: c61d8aa8e0a68ccc81a6141782f860daf061bc61
 workflow-type: tm+mt
-source-wordcount: '803'
-ht-degree: 3%
+source-wordcount: '731'
+ht-degree: 0%
 
 ---
 
@@ -21,7 +21,7 @@ Innan du börjar måste du:
 
 * Kontrollera system- och verktygskompatibiliteten med Adobe Campaign i [kompatibilitetsmatrisen](compatibility-matrix.md)
 * Hämta webbadressen till Campaign-servern
-* Hämta inloggningsuppgifter
+* Skapa din Adobe ID eller hämta dina användaruppgifter från ditt företag
 
 ## Hämta och installera klientkonsolen
 
@@ -69,18 +69,15 @@ Så här loggar du in på en befintlig instans:
 
 1. Klicka på länken i det övre högra hörnet av inloggningsfälten för att komma åt fönstret för anslutningskonfiguration.
 
+   ![](assets/connectToCampaign.png)
+
 1. Välj den Campaign-instans som du måste logga in på.
 
 1. Klicka på **[!UICONTROL Ok]**.
 
-1. Ange dina inloggningsuppgifter och klicka på **[!UICONTROL LOG IN]**.
+1. Sedan kan du logga in på Campaign.
 
-   ![](assets/sign-in-v8.png)
-
-Beroende på din konfiguration kan dina autentiseringsuppgifter vara:
-
-* tillhandahålls av er Campaign-administratör som beviljade er åtkomst
-* din Adobe ID
+   ![](assets/adobeID.png)
 
 ## Bevilja åtkomst för användare
 
@@ -96,27 +93,15 @@ Som kampanjadministratör ansvarar du för att skapa operatorerna och dela deras
 
 ## Anslut till Campaign med din Adobe ID{#connect-ims}
 
-Kampanjanvändare kan ansluta till Adobe Campaign-konsolen med sin Adobe ID via Adobe Identity Management System (IMS). Implementeringen har följande fördelar:
+Kampanjanvändare ansluter till Adobe Campaign-konsolen via sina Adobe ID via Adobe Identity Management System (IMS). De kan använda samma ID för alla Adobe-lösningar. Anslutningen sparas när du använder Adobe Campaign med andra lösningar.
 
-* Samma ID kan användas för alla Experience Cloud-lösningar.
-* Anslutningen sparas när Adobe Campaign används med olika integreringar.
-* Starkare lösenordshanteringsprincip.
-* Använda Federated ID-konton (extern ID-leverantör).
-
-[!DNL :speech_balloon:] Som användare av Managed Cloud Services  [kontaktar du ](campaign-faq.md#support) Adobe implementera Adobe IMS med Campaign.
-
-## Anslut till Campaign med din LDAP-inloggning
-
-Adobe Campaign kan konfigureras så att användaren kommer åt plattformen via sin LDAP-autentisering.
-
-[!DNL :speech_balloon:] Som användare av hanterade Cloud Services  [kontaktar du ](campaign-faq.md#support) Adobe för att konfigurera LDAP-integrering med Campaign.
-
+Läs mer om Adobe IMS i [den här sidan](https://helpx.adobe.com/enterprise/using/identity.html).
 
 ## Webbåtkomst{#web-access}
 
 Vissa delar av programmet kan nås via en enkel webbläsare via ett HTML-användargränssnitt: Kampanjpanel, kubrapportering, instansövervakning med mera.
 
-[!DNL :arrow_upper_right:] Läs mer om webbåtkomst i dokumentationen [ för ](https://experienceleague.adobe.com/docs/campaign-classic/using/getting-started/starting-with-adobe-campaign/campaign-workspace/adobe-campaign-workspace.html?lang=en#console-and-web-access)Campaign Classic v7 {target=&quot;_blank&quot;}
+↗️ Läs mer om webbåtkomst i [Campaign Classic v7-dokumentation](https://experienceleague.adobe.com/docs/campaign-classic/using/getting-started/starting-with-adobe-campaign/campaign-workspace/adobe-campaign-workspace.html?lang=en#console-and-web-access){target=&quot;_blank&quot;}
 
 Webbåtkomsten har ett gränssnitt som liknar konsolen, men med en reducerad uppsättning funktioner.
 
@@ -130,4 +115,4 @@ Med tillgång till webben kommer man främst att kunna se
 
 Webbåtkomst används också i valideringsprocessen: -operatorer kan klicka på e-postmeddelandet med godkännandebegäran och ansluta till Campaign via webbläsaren för att validera eller avvisa ett leveransinnehåll eller en budget.
 
-[!DNL :arrow_upper_right:] Lär dig hur du ställer in och hanterar godkännanden i  [Campaign Classic v7-dokumentationen](https://experienceleague.adobe.com/docs/campaign-classic/using/orchestrating-campaigns/orchestrate-campaigns/marketing-campaign-approval.html?lang=en#orchestrating-campaigns){target=&quot;_blank&quot;}
+↗️ Lär dig hur du ställer in och hanterar godkännanden i [Campaign Classic v7-dokumentation](https://experienceleague.adobe.com/docs/campaign-classic/using/orchestrating-campaigns/orchestrate-campaigns/marketing-campaign-approval.html?lang=en#orchestrating-campaigns){target=&quot;_blank&quot;}
