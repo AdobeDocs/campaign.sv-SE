@@ -6,10 +6,10 @@ feature: Översikt
 role: Data Engineer
 level: Beginner
 exl-id: 7771a02c-ebd4-48b6-b25e-6b6e420ad493
-source-git-commit: 8b31e24e0b6cfb699179e62366bc6706e9019382
+source-git-commit: c61d8aa8e0a68ccc81a6141782f860daf061bc61
 workflow-type: tm+mt
 source-wordcount: '455'
-ht-degree: 0%
+ht-degree: 2%
 
 ---
 
@@ -59,5 +59,5 @@ Ni kan integrera Campaign med en uppsättning kraftfulla Adobe-lösningar, som: 
 
 Ni kan också konfigurera prediktiv optimering av sändningstiden och prediktiv poängsättning med Journey AI samt öka antalet öppna samtal, antalet klick och intäkterna.
 
-[!DNL :bulb:] [Läs mer om Campaign-integreringar](../connect/integration.md)
+? [Läs mer om Campaign-integreringar](../connect/integration.md)
 
