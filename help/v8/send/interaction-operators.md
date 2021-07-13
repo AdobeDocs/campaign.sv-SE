@@ -5,7 +5,7 @@ description: Skapa operatorer för erbjudandehantering
 feature: Översikt
 role: Data Engineer
 level: Beginner
-source-git-commit: 5363950db5092bc7e0a72a0823db1132a17dda33
+source-git-commit: c61d8aa8e0a68ccc81a6141782f860daf061bc61
 workflow-type: tm+mt
 source-wordcount: '384'
 ht-degree: 1%
@@ -24,7 +24,7 @@ Två typer av operatorer kan använda Campaign Interaction: **Erbjudandehanterar
 
 1. Skapa en ny operator.
 
-   [!DNL :arrow_upper_right:] Steg för att skapa en operator i Campaign finns i dokumentationen för  [Campaign Classic v7.](https://experienceleague.adobe.com/docs/campaign-classic/using/getting-started/permissions/access-management-operators.html)
+   ↗️ steg för att skapa en operator i Campaign beskrivs i [Campaign Classic v7-dokumentation](https://experienceleague.adobe.com/docs/campaign-classic/using/getting-started/permissions/access-management-operators.html)
 
 1. Gå till fönstret **[!UICONTROL Groups and named rights]**, klicka på **[!UICONTROL Add]** och välj gruppen **[!UICONTROL Offer manager]**.
 
@@ -48,7 +48,7 @@ Observera att om erbjudanden används i ett arbetsflöde måste operatorn lägga
 
 1. Skapa en ny operator.
 
-   [!DNL :arrow_upper_right:] Steg för att skapa en operator i Campaign finns i dokumentationen för  [Campaign Classic v7.](https://experienceleague.adobe.com/docs/campaign-classic/using/getting-started/permissions/access-management-operators.html)
+   ↗️ steg för att skapa en operator i Campaign beskrivs i [Campaign Classic v7-dokumentation](https://experienceleague.adobe.com/docs/campaign-classic/using/getting-started/permissions/access-management-operators.html)
 
 1. Gå till fönstret **[!UICONTROL Groups and named rights]**, klicka på **[!UICONTROL Add]** och välj gruppen **[!UICONTROL Delivery manager]**.
 
