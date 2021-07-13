@@ -5,9 +5,9 @@ description: Kampanjens externa konton
 feature: Översikt
 role: Data Engineer
 level: Beginner
-source-git-commit: 0566d40370a3e14d5205861509f7c1ae8cb4b22d
+source-git-commit: c61d8aa8e0a68ccc81a6141782f860daf061bc61
 workflow-type: tm+mt
-source-wordcount: '1013'
+source-wordcount: '1001'
 ht-degree: 4%
 
 ---
@@ -35,13 +35,13 @@ Du kan komma åt externa konton från Adobe Campaign **[!UICONTROL Explorer]**: 
 
 Följande tekniska konton används av Adobe Campaign för att aktivera och köra specifika processer.
 
-[!DNL :speech_balloon:] Som användare av hanterade Cloud Services konfigurerar Adobe alla kampanjspecifika externa konton åt dig.
+? Som användare av hanterade Cloud Services konfigurerar Adobe alla kampanjspecifika externa konton åt dig.
 
 * **Studsa e-post (POP3)**
 
    Det externa kontot **studs-e-post** anger det externa POP3-kontot som ska användas för att ansluta till e-posttjänsten. Alla servrar som konfigurerats för POP3-åtkomst kan användas för att ta emot returmeddelanden.
 
-   [!DNL :arrow_upper_right:] Läs mer om inkommande e-post i dokumentationen [ för ](https://experienceleague.adobe.com/docs/campaign-classic/using/automating-with-workflows/event-activities/inbound-emails.html)Campaign Classic v7 {target=&quot;_blank&quot;}
+   ↗️ Läs mer om inkommande e-post i [Campaign Classic v7-dokumentation](https://experienceleague.adobe.com/docs/campaign-classic/using/automating-with-workflows/event-activities/inbound-emails.html){target=&quot;_blank&quot;}
 
 * **Dirigering**
 
@@ -55,7 +55,7 @@ Följande tekniska konton används av Adobe Campaign för att aktivera och köra
 
    När det gäller transaktionsmeddelanden är körningsinstanserna länkade till kontrollinstansen och kopplar dem. Transaktionsmeddelandemallar distribueras till körningsinstansen.
 
-   [!DNL :bulb:] Läs mer om arkitekturen i Message Center på  [den här sidan](../dev/architecture.md#transac-msg-archi).
+   ? Läs mer om arkitekturen i Message Center i [den här sidan](../dev/architecture.md#transac-msg-archi).
 
 ## Tillgång till externa systemkonton
 
@@ -65,32 +65,30 @@ Följande tekniska konton används av Adobe Campaign för att aktivera och köra
 
    Externa databaser som är kompatibla med Adobe Campaign v8 visas i [kompatibilitetsmatrisen](../start/compatibility-matrix.md)
 
-   [!DNL :bulb:] Läs mer om FDA-alternativet (Federated Data Access) i  [det här avsnittet](../connect/fda.md).
+   ? Läs mer om FDA-alternativet (Federated Data Access) i [det här avsnittet](../connect/fda.md).
 
 ## Externa konton för Adobe Solution Integration
 
 * **Adobe Experience Cloud**
 
-   Om du vill ansluta till Adobe Campaign-konsolen med en Adobe ID måste du konfigurera det externa kontot **[!UICONTROL Adobe Experience Cloud]**.
+   Det externa **[!UICONTROL Adobe Experience Cloud]**-kontot används för att implementera Adobe IMS för att ansluta till Adobe Campaign-konsolen med en Adobe ID.
 
-   [!DNL :bulb:] Läs mer om Adobe Identity Management-tjänsten (IMS) i  [det här avsnittet](../start/connect.md#connect-ims).
-
-   [!DNL :speech_balloon:] Som användare av Managed Cloud Services  [kontaktar du ](../start/campaign-faq.md#support) Adobe implementera Adobe IMS med Campaign.
+   ? Läs mer om Adobe Identity Management-tjänsten (IMS) i [det här avsnittet](../start/connect.md#connect-ims).
 
 * **Webbanalys**
 
    Använd det externa **[!UICONTROL Web Analytics (Adobe Analytics)]**-kontot för att konfigurera dataöverföring från Adobe Analytics till Adobe Campaign.
 
-   [!DNL :bulb:] Läs mer om Adobe Campaign - Adobe Analytics-integrering på  [den här sidan](../connect/ac-aa.md).
+   ? Läs mer om Adobe Campaign - Adobe Analytics-integrering i [den här sidan](../connect/ac-aa.md).
 
-   [!DNL :speech_balloon:] Som användare av hanterade Cloud Services  [kontaktar du ](../start/campaign-faq.md#support) Adobe och integrerar Adobe Analytics med Campaign.
+   ? Som användare av hanterade Cloud Services ska du [kontakta Adobe](../start/campaign-faq.md#support) för att integrera Adobe Analytics med Campaign.
 
    * **Adobe Experience Manager**
    Med det externa **[!UICONTROL AEM]**-kontot kan du hantera innehållet i e-postleveranser och formulär direkt i Adobe Experience Manager.
 
-   [!DNL :bulb:] Läs mer om Adobe Campaign - Adobe Analytics-integrering på  [den här sidan](../connect/ac-aem.md).
+   ? Läs mer om Adobe Campaign - Adobe Analytics-integrering i [den här sidan](../connect/ac-aem.md).
 
-   [!DNL :speech_balloon:] Som användare av hanterade Cloud Services  [kontaktar du ](../start/campaign-faq.md#support) Adobe för att integrera Adobe Experience Manager med Adobe Campaign.
+   ? Som användare av hanterade Cloud Services ska du [kontakta Adobe](../start/campaign-faq.md#support) för att integrera Adobe Experience Manager med Adobe Campaign.
 
 
 ## Externa konton för CRM Connector
@@ -99,7 +97,7 @@ Följande tekniska konton används av Adobe Campaign för att aktivera och köra
 
    Med det externa **[!UICONTROL Microsoft Dynamics CRM]**-kontot kan du importera och exportera Microsoft Dynamics-data till Adobe Campaign.
 
-   [!DNL :bulb:] Läs mer om Adobe Campaign - Microsoft Dynamics CRM-integrering på  [den här sidan](../connect/crm.md).
+   ? Läs mer om integrering mellan Adobe Campaign och Microsoft Dynamics CRM i [den här sidan](../connect/crm.md).
 
    Med distributionstypen **[!UICONTROL Web API]** och verifieringen **[!UICONTROL Password credentials]** måste du ange följande information:
 
@@ -145,7 +143,7 @@ Följande tekniska konton används av Adobe Campaign för att aktivera och köra
 
 Dessa externa konton kan användas för att importera eller exportera data till Adobe Campaign med en **[!UICONTROL Transfer file]**-arbetsflödesaktivitet.
 
-[!DNL :arrow_upper_right:] Läs mer om filöverföring i arbetsflöden i  [Campaign Classic v7-dokumentationen](https://experienceleague.adobe.com/docs/campaign-classic/using/automating-with-workflows/event-activities/file-transfer.html){target=&quot;_blank&quot;}
+↗️ Läs mer om filöverföring i arbetsflöden i [Campaign Classic v7-dokumentation](https://experienceleague.adobe.com/docs/campaign-classic/using/automating-with-workflows/event-activities/file-transfer.html){target=&quot;_blank&quot;}
 
 * **FTP och SFTP**
 
