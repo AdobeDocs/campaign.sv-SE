@@ -6,9 +6,9 @@ feature: Målgrupper
 role: Data Engineer
 level: Beginner
 exl-id: 176cc4f0-8827-4127-9f03-7d75ac8cf917
-source-git-commit: 136209f05cf302a1e73a2aa18c051260edeb0762
+source-git-commit: a468597714e3974c85e4ada3b6c2ee405717106a
 workflow-type: tm+mt
-source-wordcount: '695'
+source-wordcount: '684'
 ht-degree: 0%
 
 ---
@@ -51,7 +51,7 @@ När klientkonsolen har installerats nyligen följer du stegen nedan för att sk
 
    Du kan till exempel använda URL-adressen [`https://<machine>.<domain>.com`](https://myserver.adobe.com).
 
-1. Om Adobe Identity Management System (IMS) är konfigurerat för din organisation kontrollerar du alternativet **[!UICONTROL Connect with an Adobe ID]**.
+1. Markera alternativet **[!UICONTROL Connect with an Adobe ID]**.
 
 1. Klicka på **[!UICONTROL Ok]** för att spara inställningarna.
 
