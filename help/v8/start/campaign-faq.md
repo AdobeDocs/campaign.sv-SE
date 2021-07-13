@@ -6,7 +6,7 @@ feature: Översikt
 role: Data Engineer
 level: Beginner
 exl-id: 027f5478-d86b-42be-b63d-ec8f5e1dd83d,f5688357-db90-4f88-9596-91e9d0a20d75
-source-git-commit: 0566d40370a3e14d5205861509f7c1ae8cb4b22d
+source-git-commit: c61d8aa8e0a68ccc81a6141782f860daf061bc61
 workflow-type: tm+mt
 source-wordcount: '658'
 ht-degree: 40%
@@ -23,13 +23,13 @@ Behöver du hjälp eftersom du arbetar med Campaign? Läs de viktigaste frågorn
 
    Denna regelbundna uppdateringsfrekvens syftar till att ge dig den senaste och bästa informationen, hålla miljön säker och förbättra din upplevelse med produkten. Därför anser vi att det är viktigt att du kör den senaste versionen av Adobe Campaign.
 
-   [!DNL :speech_balloon:] Som användare av hanterade Cloud Services uppgraderas din instans av Adobe i varje ny version.
+   ? Som användare av hanterade Cloud Services uppgraderas din instans av Adobe i varje ny version.
 
 1. **Hur ansluter jag till Campaign v8?**
 
    Du måste hämta och installera Campaign Client Console för att kunna ansluta till Adobe Campaign.
 
-   [!DNL :bulb:] [Klicka här för att läsa mer](connect.md).
+   ?? [Klicka här för att läsa mer](connect.md).
 
 1. **Kan Campaign v8 installeras på en lokal eller blandad miljö?**
 
@@ -39,9 +39,9 @@ Behöver du hjälp eftersom du arbetar med Campaign? Läs de viktigaste frågorn
 
    E-postleveransen, som är en viktig del i varje avsändares marknadsföringsprogram, kännetecknas av ständigt föränderliga kriterier och regler. För effektiv navigering i den digitala världen krävs regelbunden anpassning av er e-poststrategi, med hänsyn till viktiga leveranstrender, för att ni ska nå era målgrupper på bästa sätt.
 
-   [!DNL :arrow_upper_right:] Läs den här vägledningen när du vill lära dig mer om  [Bästa praxis](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/introduction.html?lang=sv) för distribution {target=&quot;_blank&quot;}
+   ↗️ Läs den här guiden för att lära dig [Bästa praxis för leverans](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/introduction.html?lang=sv){target=&quot;_blank&quot;}
 
-   [!DNL :arrow_upper_right:] Lär dig hur du implementerar levererbarhet i Campaign  [i den här guiden](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/additional-resources/general-resources.html){target=&quot;_blank&quot;}
+   ↗️ Lär dig hur du implementerar levererbarhet i Campaign [i den här guiden](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/additional-resources/general-resources.html){target=&quot;_blank&quot;}
 
 1. **Hur kan jag vara säker på att min leverans skickas utan fel?**
 
@@ -51,7 +51,7 @@ Behöver du hjälp eftersom du arbetar med Campaign? Läs de viktigaste frågorn
 
 1. **Kan jag övervaka körningen av arbetsflödet?**
 
-   [!DNL :arrow_upper_right:] Förstå hur du övervakar körningen av Campaign-arbetsflödet  [i dokumentationen](https://experienceleague.adobe.com/docs/campaign-classic/using/automating-with-workflows/executing-a-workflow/starting-a-workflow.html) för Campaign Classic v7 {target=&quot;_blank&quot;}
+   ↗️ Lär dig övervaka körningen av Campaign-arbetsflödet [i Campaign Classic v7-dokumentationen](https://experienceleague.adobe.com/docs/campaign-classic/using/automating-with-workflows/executing-a-workflow/starting-a-workflow.html){target=&quot;_blank&quot;}
 
 1. **Vilka system och komponenter är Campaign v8 kompatibelt med?**
 
@@ -61,7 +61,7 @@ Behöver du hjälp eftersom du arbetar med Campaign? Läs de viktigaste frågorn
 
    En underdomän är en division av domänen som kan användas för att isolera varumärken eller olika typer av trafik (transaktionsmeddelanden, marknadsföringsinformation osv.).
 
-   [!DNL :speech_balloon:] Som användare med hanterade Cloud Services  [kontaktar du ](../start/campaign-faq.md#support) AdobeStudio och delegerar dina underdomäner till Adobe.
+   ? Som användare av hanterade Cloud Services ska du [kontakta Adobe](../start/campaign-faq.md#support) för att delegera dina underdomäner till Adobe.
 
 1. **Kan jag som Campaign Classic v7-användare migrera till Campaign v8?**
 
@@ -86,4 +86,4 @@ Behöver du hjälp eftersom du arbetar med Campaign? Läs de viktigaste frågorn
 
    Om du vill logga ett problem eller starta en chattsession i det nya systemet ansluter du till [Adobe Admin Console](https://adminConsole.adobe.com/overview){target=&quot;_blank&quot;}.
 
-   Det här systemet kräver enskilda konton för varje användare, med rätt behörigheter. Begär åtkomst via Experience League om du inte kan logga in med ditt Adobe ID, så registrerar kundtjänstteamet dig så snart som möjligt. [Läs mer](https://helpx.adobe.com/sv/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html){target=&quot;_blank&quot;}
+   Det här systemet kräver enskilda konton för varje användare, med rätt behörigheter. Begär åtkomst via Experience League om du inte kan logga in med ditt Adobe ID, så registrerar kundtjänstteamet dig så snart som möjligt. [Läs mer](https://helpx.adobe.com/se/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html){target=&quot;_blank&quot;}
