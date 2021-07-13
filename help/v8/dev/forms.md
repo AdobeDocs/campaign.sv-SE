@@ -2,7 +2,7 @@
 product: Adobe Campaign
 title: Formulär för kampanjindata
 description: Lär dig hur du anpassar indataformulär
-source-git-commit: 5363950db5092bc7e0a72a0823db1132a17dda33
+source-git-commit: c61d8aa8e0a68ccc81a6141782f860daf061bc61
 workflow-type: tm+mt
 source-wordcount: '2555'
 ht-degree: 0%
@@ -43,7 +43,7 @@ XML-dokumentet i indataformuläret måste innehålla rotelementet `<form>` med a
 </form>
 ```
 
-Som standard är ett formulär kopplat till dataschemat med samma namn och namnutrymme. Om du vill associera ett formulär med ett annat namn anger du **entity-schema**-attributet för `<form>`-elementet till schemanyckelns namn. Om du vill visa strukturen för ett inmatningsformulär kan du beskriva ett gränssnitt med exempelschemat&quot;cus:mottagare&quot;:
+Som standard är ett formulär kopplat till dataschemat med samma namn och namnutrymme. Om du vill associera ett formulär med ett annat namn anger du **entity-schema**-attributet för `<form>`-elementet till schemanyckelns namn. Om du vill visa strukturen för ett inmatningsformulär kan du beskriva ett gränssnitt med exempelschemat &quot;cus:mottagare&quot;:
 
 ```
 <srcSchema name="recipient" namespace="cus">
@@ -84,7 +84,7 @@ Redigeringskontrollen anpassas automatiskt till motsvarande datatyp och använde
 
 Som standard visas varje fält på en rad och tar upp allt tillgängligt utrymme beroende på datatypen.
 
-[!DNL :arrow_upper_right:] Alla formulärattribut visas i dokumentationen [ för ](https://docs.adobe.com/content/help/en/campaign-classic/technicalresources/api/control-Button.html)Campaign Classic v7.
+↗️ Alla formulärattribut visas i [Campaign Classic v7-dokumentationen](https://docs.adobe.com/content/help/en/campaign-classic/technicalresources/api/control-Button.html).
 
 ## Formatering {#formatting}
 
@@ -205,7 +205,7 @@ Lägg till attributet **style=&quot;down&quot;** för att tvinga fram den lodrä
 
 `<container style="down" type="notebook">  ... </container>`
 
-### Lägg till ikoner (ikon) {#icon-list}
+### Lägg till ikoner (ikonruta) {#icon-list}
 
 Använd den här behållaren för att visa ett lodrätt ikonfält där du kan välja vilka sidor som ska visas.
 
@@ -417,13 +417,13 @@ Med attributet **xpathChoiceTarget** kan du starta ett urvalsformulär från den
 * **xpathEditTarget**: anger redigering för den angivna länken
 * **xpathChoiceTarget**: dessutom startar urvalsformuläret på den angivna länken
 
-## Lägg till en minneslistkontroll {#memory-list-controls}
+## Lägga till minneslistkontroller {#memory-list-controls}
 
 Med minneslistor kan du redigera samlingselementen med förinläsning av listdata. Listan kan inte filtreras eller konfigureras.
 
 De här listorna används för XML-mappade samlingselement eller på länkar med låg volym.
 
-## Lägg till en kolumnlista {#column-list}
+## Lägga till en kolumnlista {#column-list}
 
 Den här kontrollen visar en redigerbar kolumnlista med ett verktygsfält som innehåller knapparna Lägg till och Ta bort.
 
@@ -524,7 +524,7 @@ En kryssruta återspeglar ett booleskt läge (markerat eller inte). Som standard
 
 ![](assets/do-not-localize/form_exemple20.png)
 
-## Redigera navigeringshierarkin {#navigation-hierarchy-edit}
+## Redigera navigeringshierarki {#navigation-hierarchy-edit}
 
 Den här kontrollen skapar ett träd i en uppsättning fält som ska redigeras.
 
@@ -545,7 +545,7 @@ Kontrollerna som ska redigeras grupperas i en **`<container>`** som anges under 
 
 ![](assets/do-not-localize/form_exemple18.png)
 
-## Lägg till ett uttrycksfält {#expression-field}
+## Lägga till ett uttrycksfält {#expression-field}
 
 Ett uttrycksfält uppdaterar ett fält dynamiskt från ett uttryck; taggen **`<input>`** används med attributet **xpath** för att ange sökvägen till fältet som ska uppdateras och ett **expr**-attribut som innehåller uppdateringsuttrycket.
 
@@ -555,7 +555,7 @@ Ett uttrycksfält uppdaterar ett fält dynamiskt från ett uttryck; taggen **`<i
 <input expr="[/ignored/@action] == 'FCP'" type="expr" xpath="@launchFCP"/>
 ```
 
-## Kontext för formulär {#context-of-forms}
+## Formulärsammanhang {#context-of-forms}
 
 Körningen av ett inmatningsformulär initierar ett XML-dokument som innehåller data för enheten som redigeras. Det här dokumentet representerar formulärets kontext och kan användas som en arbetsyta.
 
