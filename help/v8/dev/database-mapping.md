@@ -2,7 +2,7 @@
 product: Adobe Campaign
 title: Mappning av kampanjdatabas
 description: Mappning av kampanjdatabas
-source-git-commit: 5363950db5092bc7e0a72a0823db1132a17dda33
+source-git-commit: c61d8aa8e0a68ccc81a6141782f860daf061bc61
 workflow-type: tm+mt
 source-wordcount: '1463'
 ht-degree: 0%
@@ -256,7 +256,7 @@ För anslutningsrelationer med Federated Database Access:
 * ![](assets/do-not-localize/join_fda_11.png) : Kardinalitet 1-1
 * ![](assets/do-not-localize/join_fda_1m.png) : Kardinalitet 1-N
 
-[!DNL :bulb:] Mer information om FDA-tabeller finns i  [Federated Data Access](../connect/fda.md).
+? Mer information om FDA-tabeller finns i [Federated Data Access](../connect/fda.md).
 
 En länk måste deklareras i schemat som innehåller sekundärnyckeln för tabellen som är länkad via huvudelementet:
 
