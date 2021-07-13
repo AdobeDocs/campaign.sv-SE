@@ -6,9 +6,9 @@ feature: Målgrupper
 role: Data Engineer
 level: Beginner
 exl-id: 176cc4f0-8827-4127-9f03-7d75ac8cf917
-source-git-commit: 13f3122a830c723fa940290689c8e3a1baa0443a
+source-git-commit: 136209f05cf302a1e73a2aa18c051260edeb0762
 workflow-type: tm+mt
-source-wordcount: '691'
+source-wordcount: '695'
 ht-degree: 0%
 
 ---
@@ -75,7 +75,7 @@ Så här loggar du in på en befintlig instans:
 
 1. Klicka på **[!UICONTROL Ok]**.
 
-1. Sedan kan du logga in på Campaign.
+1. Du kan sedan logga in på Campaign med [din Adobe ID](#connect-ims).
 
    ![](assets/adobeID.png)
 
