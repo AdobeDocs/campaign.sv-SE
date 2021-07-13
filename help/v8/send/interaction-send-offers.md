@@ -5,7 +5,7 @@ description: Lär dig hur du skapar en erbjudandekatalog
 feature: Översikt
 role: Data Engineer
 level: Beginner
-source-git-commit: b11b42220dae7d0a878ba102523ee2825d6fb2e2
+source-git-commit: c61d8aa8e0a68ccc81a6141782f860daf061bc61
 workflow-type: tm+mt
 source-wordcount: '1276'
 ht-degree: 2%
@@ -78,7 +78,7 @@ Med flera arbetsflödesaktiviteter kan du definiera hur erbjudanden presenteras:
 
 Med aktiviteten **Enrichment** kan du lägga till erbjudanden eller länkar till erbjudanden för mottagare.
 
-[!DNL :arrow_upper_right:] Mer information om anrikningsaktiviteten finns i dokumentationen för  [Campaign Classic v7.](https://experienceleague.adobe.com/docs/campaign-classic/using/automating-with-workflows/targeting-activities/enrichment.html)
+↗️ Mer information om anrikningsaktiviteten finns i [Campaign Classic v7-dokumentationen](https://experienceleague.adobe.com/docs/campaign-classic/using/automating-with-workflows/targeting-activities/enrichment.html)
 
 Du kan till exempel förbättra data för en mottagarfråga före en leverans.
 
@@ -165,7 +165,7 @@ Leveransen lagrar automatiskt rangordningen och vikten av erbjudandena. Den här
 
 Med aktiviteten **[!UICONTROL Offer engine]** kan du även ange ett anrop till erbjudandemotorn före leveransen.
 
-[!DNL :arrow_upper_right:] Mer information om  **erbjudandets** tekniska aktivitet finns i dokumentationen för  [Campaign Classic v7.](https://experienceleague.adobe.com/docs/campaign-classic/using/automating-with-workflows/targeting-activities/offer-engine.html)
+↗️ Mer information om **Erbjudandemotorn**-aktiviteten finns i [Campaign Classic v7-dokumentationen](https://experienceleague.adobe.com/docs/campaign-classic/using/automating-with-workflows/targeting-activities/offer-engine.html)
 
 Denna aktivitet fungerar enligt samma princip som aktiviteten **Anrikning** med ett motoranrop genom att berika inkommande populationsdata med ett erbjudande som beräknas av motorn, före leverans.
 
@@ -188,7 +188,7 @@ När du har konfigurerat din **Query**-aktivitet:
 
 Med aktiviteten **[!UICONTROL Offers by cell]** kan du distribuera den inkommande populationen (från en fråga till exempel) till flera segment och ange ett erbjudande som ska visas för vart och ett av dessa segment.
 
-[!DNL :arrow_upper_right:] Mer information om  **erbjudandet per** cellaktivitet finns i dokumentationen för  [Campaign Classic v7.](https://experienceleague.adobe.com/docs/campaign-classic/using/automating-with-workflows/targeting-activities/offers-by-cell.html)
+↗️ Mer information om aktiviteten **Erbjudande per cell** finns i [dokumentationen för Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/automating-with-workflows/targeting-activities/offers-by-cell.html)
 
 Gör så här:
 
