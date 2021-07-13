@@ -1,15 +1,15 @@
 ---
 product: Adobe Campaign
-title: Kom igång med Campaign-API:er
-description: Kom igång med Campaign-API:er
+title: 'Kom igång med API:er i Campaign '
+description: 'Kom igång med API:er i Campaign '
 feature: Översikt
 role: Data Engineer
 level: Beginner
 exl-id: 0b71c76b-03d9-4023-84fc-3ecc0df9261b
-source-git-commit: 5363950db5092bc7e0a72a0823db1132a17dda33
+source-git-commit: c61d8aa8e0a68ccc81a6141782f860daf061bc61
 workflow-type: tm+mt
 source-wordcount: '331'
-ht-degree: 2%
+ht-degree: 5%
 
 ---
 
@@ -49,14 +49,14 @@ Om du vill använda API:er och interagera med [!DNL Adobe Campaign] måste du oc
 
 Med [!DNL Campaign] Cloud-databasen rekommenderas inte snabba enhetsanrop på grund av prestanda (fördröjning och samtidighet). Gruppåtgärd är alltid att föredra. För att garantera optimala prestanda för API:er fortsätter Campaign att hantera API-anrop på lokal databasnivå.
 
-[!DNL :bulb:] [API-mellanlagringsmekanismen beskrivs på den här sidan](staging.md)
+? [API-mellanlagringsmekanismen beskrivs på den här sidan](staging.md)
 
 ## Nya API:er
 
 Det finns nya API:er tillgängliga för att hantera datasynkronisering mellan den lokala databasen [!DNL Campaign] och molndatabasen. En ny mekanism har också introducerats för att hantera API-anrop på lokal databasnivå för att undvika fördröjning och öka den övergripande prestandan.
 
-[!DNL :bulb:] [Nya API:er finns på den här sidan](new-apis.md)
+? [Nya API:er finns på den här sidan](new-apis.md)
 
 **Relaterade ämnen**
 
-* [Bästa praxis för datamodell](datamodel-best-practices.md)
+* [God praxis för datamodell](datamodel-best-practices.md)
