@@ -6,7 +6,7 @@ feature: Översikt
 role: Data Engineer
 level: Beginner
 exl-id: d1d57aa8-b811-470f-a8a6-18da3a700f1a
-source-git-commit: 5363950db5092bc7e0a72a0823db1132a17dda33
+source-git-commit: c61d8aa8e0a68ccc81a6141782f860daf061bc61
 workflow-type: tm+mt
 source-wordcount: '989'
 ht-degree: 1%
@@ -22,7 +22,7 @@ Den här integreringen hjälper dig att implementera användningsexempel enligt 
 >[!NOTE]
 >Integreringen stöder bara statiska bilder. De andra typerna av innehåll kan inte personaliseras.
 
-[!DNL :speech_balloon:] Som användare av hanterade Cloud Services  [kontaktar du ](../start/campaign-faq.md#support) Adobe implementera utlösare för Experience Cloud med Campaign.
+? Som användare av hanterade Cloud Services ska du [kontakta Adobe](../start/campaign-faq.md#support) för att implementera utlösare för Experience Cloud med Campaign.
 
 Adobe Target kan använda följande datatyper:
 
@@ -113,7 +113,7 @@ I Adobe Target måste ni skapa de två målgrupper som de personer som besöker 
 
 1. Följ samma procedur för de återstående målgrupperna.
 
-### Skapa en upplevelsemålinriktad aktivitet {#creating-targeting-activity}
+### Skapa en upplevelseinriktad aktivitet {#creating-targeting-activity}
 
 I Adobe Target måste vi skapa en Experience Targeting-aktivitet, definiera olika upplevelser och koppla dem till motsvarande erbjudanden.
 
