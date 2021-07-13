@@ -5,7 +5,7 @@ description: Kom igång med webbprogram och webbformulär
 feature: Översikt
 role: Data Engineer
 level: Beginner
-source-git-commit: 5363950db5092bc7e0a72a0823db1132a17dda33
+source-git-commit: c61d8aa8e0a68ccc81a6141782f860daf061bc61
 workflow-type: tm+mt
 source-wordcount: '187'
 ht-degree: 0%
@@ -16,7 +16,7 @@ ht-degree: 0%
 
 Adobe Campaign integrerar en grafisk modul för att definiera och publicera **webbformulär** för att skapa sidor som innehåller indata- och urvalsfält, och som kan innehålla data i databasen. På så sätt kan du utforma och publicera webbsidor som användare kan komma åt för att visa eller ange information.
 
-[!DNL :arrow_upper_right:] Lär dig hur du skapar och publicerar webbformulär i dokumentationen för  [Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/designing-content/web-forms/about-web-forms.html?lang=en#designing-content)
+↗️ Lär dig hur du skapar och publicerar webbformulär i [Campaign Classic v7-dokumentation](https://experienceleague.adobe.com/docs/campaign-classic/using/designing-content/web-forms/about-web-forms.html?lang=en#designing-content)
 
 ![](assets/sample.png)
 
@@ -24,4 +24,4 @@ Med Adobe Campaign kan du också skapa och publicera dynamiska och interaktiva *
 
 Du kan skapa sidor, t.ex. ett redigeringsformulär på ett extranät, eller meddelandeformulär som innehåller data från databasen med tabeller, diagram, indataformulär osv. Med den här funktionen kan du utforma och publicera webbsidor där användarna kan leta upp eller ange information.
 
-[!DNL :arrow_upper_right:] Lär dig hur du skapar och publicerar webbprogram i dokumentationen för  [Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/designing-content/web-applications/about-web-applications.html?lang=en#designing-content)
+↗️ Lär dig hur du skapar och publicerar webbprogram i [Campaign Classic v7-dokumentation](https://experienceleague.adobe.com/docs/campaign-classic/using/designing-content/web-applications/about-web-applications.html?lang=en#designing-content)
