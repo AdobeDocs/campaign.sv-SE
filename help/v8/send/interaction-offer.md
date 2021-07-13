@@ -5,7 +5,7 @@ description: Lär dig hur du skapar ett erbjudande
 feature: Översikt
 role: Data Engineer
 level: Beginner
-source-git-commit: 9cb1b38456601bce21d458fea42a5c112d9fafb4
+source-git-commit: c61d8aa8e0a68ccc81a6141782f860daf061bc61
 workflow-type: tm+mt
 source-wordcount: '921'
 ht-degree: 3%
@@ -34,7 +34,7 @@ Du kan nu använda fliken **[!UICONTROL Eligibility]** för att definiera:
 * Filter för målpopulationen för erbjudandet. [Läs mer](#filters-on-the-target)
 * Erbjudandets vikt. [Läs mer](#offer-weight)
 
-### Erbjudandeperiod{#eligibility-period}
+### Giltighetsperiod för erbjudandet{#eligibility-period}
 
 Ange behörighetsperioden för erbjudandet på fliken **[!UICONTROL Eligibility]**. Använd listrutorna för att välja ett start- och ett slutdatum i kalendern.
 
@@ -54,7 +54,7 @@ Om fördefinierade filter redan har skapats kan du välja dem i listan med anvä
 
 ![](assets/offer_eligibility_create_004.png)
 
-### Ange erbjudandevikt {#offer-weight}
+### Ange offertvikt {#offer-weight}
 
 Om du vill att motorn ska kunna välja mellan flera erbjudanden som målet är kvalificerat för, måste du tilldela ett eller flera vikter till erbjudandet. Du kan också tillämpa filter på målet om det behövs eller begränsa det erbjudandeutrymme som vikten gäller för. Ett erbjudande med större vikt är att föredra framför ett erbjudande med mindre vikt.
 
@@ -100,7 +100,7 @@ Så här skapar du en vikt i ett erbjudande:
    >
    >Om ett mål kan få flera vikter för ett valt erbjudande behåller motorn den bästa (högsta) vikten. Vid anrop till erbjudandemotorn väljs ett erbjudande högst en gång per kontakt.
 
-### Sammanfattning av regler för att välja erbjudande {#a-summary-of-offer-eligibility-rules}
+### Sammanfattning av regler för erbjudandekvalificering {#a-summary-of-offer-eligibility-rules}
 
 När konfigurationen är klar finns en sammanfattning av berättigandereglerna på instrumentpanelen för erbjudanden.
 
@@ -182,13 +182,13 @@ Creating hypotheses is detailed in [this page](../../campaign/using/about-respon
 
 Du kan nu godkänna och aktivera erbjudandet så att det blir tillgängligt i **Live**-miljön.
 
-[!DNL :arrow_upper_right:] Mer information finns i dokumentationen för  [Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/managing-offers/managing-an-offer-catalog/approving-and-activating-an-offer.html?lang=en#approving-offer-content)
+↗️ Mer information finns i [dokumentationen för Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/managing-offers/managing-an-offer-catalog/approving-and-activating-an-offer.html?lang=en#approving-offer-content)
 
 ## Hantera presentation av erbjudanden{#offer-presentation}
 
 Med Campaign kan ni styra flödet av erbjudandeförslag med hjälp av presentationsregler. Dessa regler, som är specifika för Campaign Interaction, är **typologiregler**. Med dem kan du utesluta erbjudanden baserat på historiken för de förslag som redan har lämnats till en mottagare. De refereras i miljön.
 
-[!DNL :arrow_upper_right:] Mer information finns i dokumentationen för  [Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/managing-offers/managing-an-offer-catalog/managing-offer-presentation.html?lang=en#managing-offers)
+↗️ Mer information finns i [dokumentationen för Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/managing-offers/managing-an-offer-catalog/managing-offer-presentation.html?lang=en#managing-offers)
 
 ## Simulera erbjudanden
 
@@ -196,4 +196,4 @@ Med simuleringsmodulen kan du testa distributionen av erbjudanden som tillhör e
 
 Simuleringen tar hänsyn till de kontexter och regler för behörighet som tidigare tillämpats på erbjudanden och deras presentationsregler. Detta gör att ni kan testa och förfina olika versioner av ert erbjudande utan att faktiskt använda ett erbjudande eller över/under beställning av ett mål, eftersom simuleringen inte har någon effekt på de avsedda mottagarna.
 
-[!DNL :arrow_upper_right:] Mer information om erbjudandesimulering finns i dokumentationen för  [Campaign Classic v7.](https://experienceleague.adobe.com/docs/campaign-classic/using/managing-offers/simulating-offers/about-offers-simulation.html?lang=en)
+↗️ Mer information om erbjudandesimulering finns i [Campaign Classic v7-dokumentationen](https://experienceleague.adobe.com/docs/campaign-classic/using/managing-offers/simulating-offers/about-offers-simulation.html?lang=en)
