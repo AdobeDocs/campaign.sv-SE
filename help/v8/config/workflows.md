@@ -6,7 +6,7 @@ feature: Översikt
 role: Data Engineer
 level: Beginner
 exl-id: 0be1c5f5-f07d-46dc-bebc-5eb50f466547
-source-git-commit: 0566d40370a3e14d5205861509f7c1ae8cb4b22d
+source-git-commit: c61d8aa8e0a68ccc81a6141782f860daf061bc61
 workflow-type: tm+mt
 source-wordcount: '1249'
 ht-degree: 0%
@@ -26,7 +26,7 @@ Du kan konfigurera:
 * Automatisk rapportsändning
 * Utlösta händelser
 
-## Designa och använda arbetsflöden{#gs-ac-wf}
+## Arbetsflöden för design och användning{#gs-ac-wf}
 
 Använd Adobe Campaign arbetsflöden för att förbättra hastigheten och skalan på alla delar av era marknadsföringskampanjer, från att skapa segment och förbereda meddelanden till leverans.
 
@@ -34,34 +34,30 @@ Lär dig hur du utformar arbetsflöden i dessa [kompletta användningsfall](#end
 
 Läs mer om arbetsflöden, användargränssnitt och körning i dokumentationen för Campaign Classic v7:
 
-[!DNL :arrow_upper_right:]  [Kom igång med arbetsflöden](https://experienceleague.adobe.com/docs/campaign-classic/using/automating-with-workflows/introduction/about-workflows.html?lang=en#automating-with-workflows){target=&quot;_blank&quot;}
+↗️ [Kom igång med arbetsflöden](https://experienceleague.adobe.com/docs/campaign-classic/using/automating-with-workflows/introduction/about-workflows.html?lang=en#automating-with-workflows){target=&quot;_blank&quot;}
 * Arbetsflödesaktiviteter:
    * [Målaktiviteter](https://experienceleague.adobe.com/docs/campaign-classic/using/automating-with-workflows/targeting-activities/about-targeting-activities.html){target=&quot;_blank&quot;}: Fråga, läslista, berikning, union med mera
    * [Flödeskontrollaktiviteter](https://experienceleague.adobe.com/docs/campaign-classic/using/automating-with-workflows/flow-control-activities/about-flow-control-activities.html){target=&quot;_blank&quot;}: Schemaläggare, gaffel, avisering, extern signal med mera
    * [Åtgärdsaktiviteter](https://experienceleague.adobe.com/docs/campaign-classic/using/automating-with-workflows/action-activities/about-action-activities.html){target=&quot;_blank&quot;}: Flerkanalsleveranser, JavaScript-kod, CRM-aktiviteter, Uppdatera sammanställning med mera
-   * [Händelseaktiviteter](https://experienceleague.adobe.com/docs/campaign-classic/using/automating-with-workflows/action-activities/about-action-activities.html){target=&quot;_blank&quot;}: Filöverföring, webbnedladdning med mera
-      [!DNL :arrow_upper_right:]  [Bygg en målgrupp i ett marknadsföringskampanjarbetsflöde](https://experienceleague.adobe.com/docs/campaign-classic/using/orchestrating-campaigns/orchestrate-campaigns/marketing-campaign-target.html?lang=en#building-the-main-target-in-a-workflow){target=&quot;_blank&quot;}
-      [!DNL :arrow_upper_right:]  [Bästa praxis](https://experienceleague.adobe.com/docs/campaign-classic/using/automating-with-workflows/introduction/workflow-best-practices.html) för arbetsflöden{target=&quot;_blank&quot;}
-      [!DNL :arrow_upper_right:] [Inbyggda tekniska arbetsflöden](https://experienceleague.adobe.com/docs/campaign-classic/using/automating-with-workflows/advanced-management/about-technical-workflows.html) {target=&quot;_blank&quot;}
-      [!DNL :arrow_upper_right:] [Körning](https://experienceleague.adobe.com/docs/campaign-classic/using/automating-with-workflows/monitoring-workflows/monitoring-workflow-execution.html) av övervakararbetsflöden{target=&quot;_blank&quot;}
+   * [Händelseaktiviteter](https://experienceleague.adobe.com/docs/campaign-classic/using/automating-with-workflows/action-activities/about-action-activities.html){target=&quot;_blank&quot;}: Filöverföring, webbnedladdning med mera ↗️   [Bygg en målgrupp i ett marknadsföringskampanjarbetsflöde](https://experienceleague.adobe.com/docs/campaign-classic/using/orchestrating-campaigns/orchestrate-campaigns/marketing-campaign-target.html?lang=en#building-the-main-target-in-a-workflow){target=&quot;_blank&quot;} ↗️   [Workflow best practices](https://experienceleague.adobe.com/docs/campaign-classic/using/automating-with-workflows/introduction/workflow-best-practices.html){target=&quot;_blank&quot;} ↗️  [inbyggda tekniska arbetsflöden](https://experienceleague.adobe.com/docs/campaign-classic/using/automating-with-workflows/advanced-management/about-technical-workflows.html){target=&quot;_blank&quot;} ↗️ körning [ av ](https://experienceleague.adobe.com/docs/campaign-classic/using/automating-with-workflows/monitoring-workflows/monitoring-workflow-execution.html)Monitor-arbetsflöden{target=&quot;_blank&quot;}
 
 
 ## Ställ in återkommande kampanjer
 
 Designa återkommande arbetsflöde och skapa en ny leveransinstans varje gång arbetsflödet körs. Om ditt arbetsflöde till exempel är utformat för att köras en gång i veckan resulterar det i 52 leveranser efter ett år. Detta innebär också att loggarna separeras av varje leveransinstans.
 
-[!DNL :arrow_upper_right:] Lär dig hur du skapar en återkommande kampanj i dokumentationen [ för ](https://experienceleague.adobe.com/docs/campaign-classic/using/orchestrating-campaigns/orchestrate-campaigns/setting-up-marketing-campaigns.html?lang=en#recurring-and-periodic-campaigns)Campaign Classic v7 {target=&quot;_blank&quot;}
+↗️ Lär dig hur du skapar en återkommande kampanj i [Campaign Classic v7-dokumentation](https://experienceleague.adobe.com/docs/campaign-classic/using/orchestrating-campaigns/orchestrate-campaigns/setting-up-marketing-campaigns.html?lang=en#recurring-and-periodic-campaigns){target=&quot;_blank&quot;}
 
 
 ## Utnyttja utlösarhändelser
 
 Använd Campaign Transactional Messaging för att automatisera meddelanden som genereras från händelser som triggas av informationssystem. Dessa transaktionsmeddelanden kan t.ex. vara faktura, orderbekräftelse, leveransbekräftelse, lösenordsändring, meddelande om att produkten inte är tillgänglig, kontoutdrag eller skapande av webbkonto. Dessa meddelanden kan skickas individuellt eller i grupp via e-post, SMS eller push-meddelanden.
 
-[!DNL :bulb:] Läs mer om funktioner för transaktionsmeddelanden i  [det här avsnittet](../send/transactional.md).
+? Läs mer om funktioner för transaktionsmeddelanden i [det här avsnittet](../send/transactional.md).
 
 Koppla upp Adobe Campaign och Adobe Analytics för att ta fram användaråtgärder och skicka i stort sett personaliserade meddelanden i realtid.
 
-[!DNL :bulb:] Lär dig hur du integrerar Campaign med andra lösningar i  [det här avsnittet](../start/connect.md)
+? Lär dig hur du integrerar Campaign med andra lösningar i [det här avsnittet](../start/connect.md)
 
 
 ## Användningsexempel för hela arbetsflödet{#end-to-end-uc}
