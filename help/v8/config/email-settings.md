@@ -5,7 +5,7 @@ description: Inställningar för e-postkanal för kampanj
 feature: Översikt
 role: Data Engineer
 level: Beginner
-source-git-commit: 0566d40370a3e14d5205861509f7c1ae8cb4b22d
+source-git-commit: c61d8aa8e0a68ccc81a6141782f860daf061bc61
 workflow-type: tm+mt
 source-wordcount: '290'
 ht-degree: 2%
@@ -31,7 +31,7 @@ Observera att:
 
 * Det är bara skickad e-post som räknas, studenterna gör det inte.
 
-[!DNL :speech_balloon:] Som användare av hanterade Cloud Services  [kontaktar du ](../start/campaign-faq.md#support) Adobe för att aktivera e-postkopia i Campaign. Du måste ange valfri e-postadress till BCC för det Adobe-team som konfigurerar den åt dig.
+? Som användare av hanterade Cloud Services ska du [kontakta Adobe](../start/campaign-faq.md#support) för att aktivera e-postkopia i Campaign. Du måste ange valfri e-postadress till BCC för det Adobe-team som konfigurerar den åt dig.
 
 När du har konfigurerat BCC för e-post kontrollerar du att funktionen är aktiverad i leveransmallen eller i leveransen via alternativet **BCC för e-post**.
 
@@ -41,14 +41,14 @@ När du har konfigurerat BCC för e-post kontrollerar du att funktionen är akti
 **Dokumentation** för närliggande ämnen i Campaign Classic v7:
 
 
-[!DNL :arrow_upper_right:] [Generera spegelsidan](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/sending-emails/sending-an-email/email-parameters.html#generating-mirror-page){target=&quot;_blank&quot;}
+↗️ [Generera spegelsidan](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/sending-emails/sending-an-email/email-parameters.html#generating-mirror-page){target=&quot;_blank&quot;}
 
-[!DNL :arrow_upper_right:] [Välj e-postformat](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/sending-emails/sending-an-email/email-parameters.html#selecting-message-formats){target=&quot;_blank&quot;}
+↗️ [Välj e-postformat](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/sending-emails/sending-an-email/email-parameters.html#selecting-message-formats){target=&quot;_blank&quot;}
 
-[!DNL :arrow_upper_right:] [Välj teckenkodning](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/sending-emails/sending-an-email/email-parameters.html#character-encoding){target=&quot;_blank&quot;}
+↗️ [Välj teckenkodning](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/sending-emails/sending-an-email/email-parameters.html#character-encoding){target=&quot;_blank&quot;}
 
-[!DNL :arrow_upper_right:] [Ange studsens e-postadress](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/sending-emails/sending-an-email/email-parameters.html#managing-bounce-emails){target=&quot;_blank&quot;}
+↗️ [Ange studsens e-postadress](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/sending-emails/sending-an-email/email-parameters.html#managing-bounce-emails){target=&quot;_blank&quot;}
 
-[!DNL :arrow_upper_right:] [Använd mallar](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/using-delivery-templates/about-templates.html) för e-postleverans {target=&quot;_blank&quot;}
+↗️ [Använd mallar för e-postleverans](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/using-delivery-templates/about-templates.html){target=&quot;_blank&quot;}
 
-[!DNL :arrow_upper_right:] [Förstå leveransfel](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/monitoring-deliveries/understanding-delivery-failures.html){target=&quot;_blank&quot;}
+↗️ [Förstå leveransfel](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/monitoring-deliveries/understanding-delivery-failures.html){target=&quot;_blank&quot;}
