@@ -5,18 +5,18 @@ description: Kom igång med Transactional Messaging
 feature: Översikt
 role: Data Engineer
 level: Beginner
-source-git-commit: 0566d40370a3e14d5205861509f7c1ae8cb4b22d
+source-git-commit: c61d8aa8e0a68ccc81a6141782f860daf061bc61
 workflow-type: tm+mt
 source-wordcount: '1487'
 ht-degree: 1%
 
 ---
 
-# Kom igång med transaktionsmeddelanden{#send-transactional-messages}
+# Kom igång med Transactional Messaging{#send-transactional-messages}
 
 Transactional Messaging (Message Center) är en Campaign-modul som är utformad för att hantera utlösarmeddelanden. Dessa meddelanden genereras från händelser som utlöses från informationssystem och kan vara: Faktura, orderbekräftelse, leveransbekräftelse, lösenordsändring, meddelande om att produkten inte är tillgänglig, kontoutdrag eller skapande av webbkonto till exempel.
 
-[!DNL :speech_balloon:] Som användare av hanterade Cloud Services  [kontaktar du ](../start/campaign-faq.md#support) Adobe för att installera och konfigurera Campaign Transactional messaging i din miljö.
+? Som användare av hanterade Cloud Services ska du [kontakta Adobe](../start/campaign-faq.md#support) för att installera och konfigurera Campaign Transactional Messaging i din miljö.
 
 Transaktionsmeddelanden används för att skicka:
 
@@ -24,9 +24,9 @@ Transaktionsmeddelanden används för att skicka:
 * ett individuellt svar i realtid på en kunds handling
 * icke-marknadsföringsmaterial
 
-[!DNL :bulb:] Inställningar för transaktionsmeddelanden beskrivs i  [det här avsnittet](../config/transactional-msg-settings.md).
+? Inställningar för transaktionsmeddelanden beskrivs i [det här avsnittet](../config/transactional-msg-settings.md).
 
-[!DNL :bulb:] Förstå arkitekturen för transaktionsmeddelanden på  [den här sidan](../dev/architecture.md).
+? Förstå arkitekturen för transaktionsmeddelanden i [den här sidan](../dev/architecture.md).
 
 >[!CAUTION]
 >
@@ -151,7 +151,7 @@ Du kan testa meddelandeleveransen genom att skicka ett korrektur till en startad
 
 När du skickar ett korrektur utförs samma process som för alla leveranser.
 
-[!DNL :arrow_upper_right:] Läs mer om korrektur i dokumentationen [ för ](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/key-steps-when-creating-a-delivery/steps-validating-the-delivery.html)Campaign Classic v7 {target=&quot;_blank&quot;}
+↗️ Läs mer om korrektur i [Campaign Classic v7-dokumentation](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/key-steps-when-creating-a-delivery/steps-validating-the-delivery.html){target=&quot;_blank&quot;}
 
 Om du vill skicka ett bevis på ett transaktionsmeddelande måste du utföra följande åtgärder:
 
