@@ -6,10 +6,10 @@ feature: Målgrupper
 role: Data Engineer
 level: Beginner
 exl-id: 176cc4f0-8827-4127-9f03-7d75ac8cf917
-source-git-commit: a468597714e3974c85e4ada3b6c2ee405717106a
+source-git-commit: 44ddce019de74be96a955eefbc940e41e060a6d3
 workflow-type: tm+mt
-source-wordcount: '684'
-ht-degree: 0%
+source-wordcount: '685'
+ht-degree: 1%
 
 ---
 
@@ -29,7 +29,7 @@ När du använder Campaign för första gången, eller om du behöver uppgradera
 
 Det finns två alternativ:
 
-1. Som kampanjadministratör ansluter du till Adobe [Software Distribution](https://experience.adobe.com/#/downloads/content/software-distribution/encampaign.html) och hämtar installationsprogrammet för klientkonsolen. Sedan kan du installera den på den lokala datorn.
+1. Som kampanjadministratör ansluter du till Adobe [Software Distribution](https://experience.adobe.com/#/downloads/content/software-distribution/en/campaign.html) och hämtar installationsprogrammet för klientkonsolen. Sedan kan du installera den på den lokala datorn.
 
 1. Som slutanvändare kan Adobe distribuera konsolen åt dig: När konsolen har uppdaterats uppmanas du att hämta den senaste versionen av klientkonsolen i ett popup-fönster.
 
