@@ -5,7 +5,7 @@ description: Interaktionsfall
 feature: Översikt
 role: Data Engineer
 level: Beginner
-source-git-commit: 5363950db5092bc7e0a72a0823db1132a17dda33
+source-git-commit: c61d8aa8e0a68ccc81a6141782f860daf061bc61
 workflow-type: tm+mt
 source-wordcount: '64'
 ht-degree: 4%
@@ -16,8 +16,8 @@ ht-degree: 4%
 
 Utnyttja Campaign Interaction-funktionerna genom de här stegvisa användningsexemplen som finns i Campaign Classic v7-dokumentationen.
 
-[!DNL :arrow_upper_right:] [Skapa och använda en presentationsregel](https://experienceleague.adobe.com/docs/campaign-classic/using/managing-offers/case-study/presentation-rules.html)
+↗️ [Skapa och tillämpa en presentationsregel](https://experienceleague.adobe.com/docs/campaign-classic/using/managing-offers/case-study/presentation-rules.html)
 
-[!DNL :arrow_upper_right:] [Skicka e-posterbjudanden](https://experienceleague.adobe.com/docs/campaign-classic/using/managing-offers/case-study/offers-on-an-outbound-channel.html)
+↗️ [Skicka ett e-posterbjudande ](https://experienceleague.adobe.com/docs/campaign-classic/using/managing-offers/case-study/offers-on-an-outbound-channel.html)
 
-[!DNL :arrow_upper_right:] [Simulera erbjudanden](https://experienceleague.adobe.com/docs/campaign-classic/using/managing-offers/case-study/offers-on-an-outbound-channel.html)
+↗️ [Utför en erbjudandesimulering](https://experienceleague.adobe.com/docs/campaign-classic/using/managing-offers/case-study/offers-on-an-outbound-channel.html)
