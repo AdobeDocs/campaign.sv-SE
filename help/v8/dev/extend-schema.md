@@ -2,7 +2,7 @@
 product: Adobe Campaign
 title: Utöka kampanjscheman
 description: Lär dig hur du utökar Campaign-scheman
-source-git-commit: b11b42220dae7d0a878ba102523ee2825d6fb2e2
+source-git-commit: c61d8aa8e0a68ccc81a6141782f860daf061bc61
 workflow-type: tm+mt
 source-wordcount: '254'
 ht-degree: 2%
@@ -22,7 +22,7 @@ De viktigaste stegen för att anpassa Campaign-datamodellen är:
 >[!CAUTION]
 >Inbyggt schema får inte ändras direkt. Om du behöver anpassa ett inbyggt schema måste du utöka det.
 
-[!DNL :bulb:] Om du vill ha en bättre förståelse för de inbyggda tabellerna i Campaign och deras interaktion kan du läsa på  [den här sidan](datamodel.md). Se även rekommendationer när du skapar ett nytt schema i [den här sidan](create-schema.md).
+? Om du vill ha en bättre förståelse för de inbyggda tabellerna i Campaign och deras interaktion kan du läsa [den här sidan](datamodel.md). Se även rekommendationer när du skapar ett nytt schema i [den här sidan](create-schema.md).
 
 Följ stegen nedan för att utöka ett schema:
 
