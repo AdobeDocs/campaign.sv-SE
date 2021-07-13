@@ -5,7 +5,7 @@ description: Mellanlagringsmekanism för kampanj-API
 feature: Översikt
 role: Data Engineer
 level: Beginner
-source-git-commit: b11b42220dae7d0a878ba102523ee2825d6fb2e2
+source-git-commit: c61d8aa8e0a68ccc81a6141782f860daf061bc61
 workflow-type: tm+mt
 source-wordcount: '312'
 ht-degree: 2%
@@ -56,7 +56,7 @@ Följ stegen nedan för att implementera Campaign-mellanlagringsmekanismen för 
    </srcSchema>
    ```
 
-   [!DNL :bulb:] Läs mer om hur du skapar anpassade scheman på  [den här sidan](create-schema.md).
+   ? Läs mer om att skapa anpassade scheman i [den här sidan](create-schema.md).
 
 1. Spara och uppdatera databasstrukturen.  [Läs mer](update-database-structure.md)
 
