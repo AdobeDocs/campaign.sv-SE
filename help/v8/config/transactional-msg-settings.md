@@ -5,7 +5,7 @@ description: Inställningar för kampanjtransaktionsmeddelanden
 feature: Översikt
 role: Data Engineer
 level: Beginner
-source-git-commit: 9cb1b38456601bce21d458fea42a5c112d9fafb4
+source-git-commit: c61d8aa8e0a68ccc81a6141782f860daf061bc61
 workflow-type: tm+mt
 source-wordcount: '327'
 ht-degree: 0%
@@ -14,11 +14,11 @@ ht-degree: 0%
 
 # Inställningar för transaktionsmeddelanden
 
-[!DNL :speech_balloon:] Som användare av hanterade Cloud Services  [kontaktar du ](../start/campaign-faq.md#support) Adobe för att installera och konfigurera Campaign Transactional messaging i din miljö.
+? Som användare av hanterade Cloud Services ska du [kontakta Adobe](../start/campaign-faq.md#support) för att installera och konfigurera Campaign Transactional Messaging i din miljö.
 
-[!DNL :bulb:] Funktionerna för transaktionsmeddelanden beskrivs i  [det här avsnittet](../send/transactional.md).
+? Funktionerna för transaktionsmeddelanden beskrivs i [det här avsnittet](../send/transactional.md).
 
-[!DNL :bulb:] Förstå arkitekturen för transaktionsmeddelanden på  [den här sidan](../dev/architecture.md).
+? Förstå arkitekturen för transaktionsmeddelanden i [den här sidan](../dev/architecture.md).
 
 ## Definiera behörigheter
 
@@ -28,13 +28,13 @@ Om du vill skapa nya användare för instanser av körning i Message Center på 
 
 Alla schematillägg som görs för scheman som används av **Message Center tekniska arbetsflöden** för antingen kontroll- eller körningsinstanser måste dupliceras på de andra instanser som används av Adobe Campaign transaktionsmeddelandemodul.
 
-[!DNL :arrow_upper_right:] Läs mer om de tekniska arbetsflödena i Message Center i dokumentationen för  [Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/transactional-messaging/configure-transactional-messaging/additional-configurations.html#technical-workflows)
+↗️ Läs mer om de tekniska arbetsflödena i Message Center i [Campaign Classic v7-dokumentationen](https://experienceleague.adobe.com/docs/campaign-classic/using/transactional-messaging/configure-transactional-messaging/additional-configurations.html#technical-workflows)
 
 ## Skicka push-meddelanden för transaktioner
 
 I kombination med mobilappskanalmodulen kan du med transaktionsmeddelanden skicka transaktionsmeddelanden via meddelanden på mobila enheter.
 
-[!DNL :arrow_upper_right:] Mobilappskanalen finns i dokumentationen [ till ](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/sending-push-notifications/about-mobile-app-channel.html?lang=en#sending-messages)Campaign Classic v7.
+↗️ Mobilappskanalen finns i [Campaign Classic v7-dokumentationen](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/sending-push-notifications/about-mobile-app-channel.html?lang=en#sending-messages).
 
 Om du vill skicka push-meddelanden för transaktioner måste du utföra följande konfigurationer:
 
