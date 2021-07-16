@@ -6,10 +6,10 @@ description: Lär dig hur du tilldelar behörigheter till Campaign v8
 feature: Målgrupper
 role: Data Engineer
 level: Beginner
-source-git-commit: a57855556751e85e7a1f7751a103ca157f434a8a
+source-git-commit: 22f47bed75d78684c85471330aca7dadafb9ed65
 workflow-type: tm+mt
-source-wordcount: '374'
-ht-degree: 1%
+source-wordcount: '383'
+ht-degree: 3%
 
 ---
 
@@ -37,7 +37,7 @@ Varje operator måste länkas till en zon för att kunna logga in på en instans
 
 Operatorer är länkade till en säkerhetszon från sin profil i konsolen och tillgängliga i noden **[!UICONTROL Administration > Access management > Operators]**.
 
-? Som användare med hanterade Cloud Services anger Adobe säkerhetszonerna åt dig. Om du vill ha mer information kan du [kontakta Adobe](support.md#support).
+? Som användare med hanterade Cloud Services anger Adobe säkerhetszonerna åt dig. Om du vill ha mer information kan du [kontakta Adobe](https://helpx.adobe.com/se/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html){target=&quot;_blank&quot;}.
 
 **Läs mer i dokumentationen för Campaign Classic v7**
 
