@@ -6,9 +6,9 @@ feature: Översikt
 role: Data Engineer
 level: Beginner
 exl-id: 4be3a6dc-0c61-4534-b9dd-6c99c8a037a9,870a336f-94ac-4171-891b-67614feef6ef,bebdd930-c7f6-4629-a489-3c704b33f058,d493e613-eb61-43b1-9c6d-1bd881af0734
-source-git-commit: 619edce939b39430832fd950ece734f817f9dce3
+source-git-commit: 610a818c1f5d8a43ea55659a3c5b46676405415d
 workflow-type: tm+mt
-source-wordcount: '278'
+source-wordcount: '275'
 ht-degree: 29%
 
 ---
@@ -23,39 +23,39 @@ I det här dokumentet visas alla system och komponenter som stöds för den sena
 >* Eftersom vissa versioner av dessa system och verktyg från tredje part når slutet av livscykeln, kommer Adobe Campaign inte längre att vara kompatibelt med dessa versioner och kommer att tas bort från den här kompatibilitetsmatrisen. Se till att du använder versioner av system som stöds i kompatibilitetsmatrisen för att undvika problem.
 
 
-## Kompatibla system
+## Klientkonsol{#ClientConsoleoperatingsystems}
 
-### Client Console{#ClientConsoleoperatingsystems}
+>[!CAUTION]
+>
+> Följande operativsystem och webbläsare krävs för att använda klientkonsolen i Campaign.
 
-:varning: Följande operativsystem och webbläsare krävs för att använda Campaign Client Console.
-
-**Operativsystem**
+### Operativsystem
 
 * **Microsoft Windows Server**  2016, 2012
 * **Microsoft Windows** 8, 10 (rekommenderas för japanska förekomster)
 
-**Webbläsare**
+### Webbläsare
 
 **Microsoft Internet Explorer** 11
 
-### CRM-kopplingar{#CRMconnectors}
+## CRM-kopplingar{#CRMconnectors}
 
 * **** Salesforceconnector API version 49
 * **Microsoft** DynamicConnector, webb-API: Dynamics 365 On-Local and Online
 
-### Federerad dataåtkomst (FDA){#FederatedDataAccessFDA}
+## Federerad dataåtkomst (FDA){#FederatedDataAccessFDA}
 
 * **Amazon Redshift**
 * **[!DNL Google Big Query]**
 * **[!DNL Snowflake]**
 * **[!DNL Vertica]**
 
-### Mobilt SDK{#MobileSDK}
+## Mobilt SDK{#MobileSDK}
 
 * **Android** 7.x, 8.x, 9.0 med Campaign Android SDK build 1.1.1.
 * **Apple iOS** 9 - 14 med Campaign iOS SDK build 1.0.26, kompatibelt med 32- och 64-bitarsversioner.
 
-### Webbläsare som stöds {#Browsers}
+## Webbåtkomst
 
 Följande webbläsare är kompatibla med Campaign for Web Access.
 
@@ -65,7 +65,7 @@ Följande webbläsare är kompatibla med Campaign for Web Access.
 
 ## Så här kontrollerar du Campaign-versionen och bygget
 
-Använd menyn **Hjälp > Om...** för att kontrollera versionen.
+Gå till **Hjälp > Om..**-menyn för att kontrollera din version.
 
 ![](assets/ac-version.png)
 
