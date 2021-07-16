@@ -6,7 +6,7 @@ feature: Översikt
 role: Data Engineer
 level: Beginner
 exl-id: 4be3a6dc-0c61-4534-b9dd-6c99c8a037a9,870a336f-94ac-4171-891b-67614feef6ef,bebdd930-c7f6-4629-a489-3c704b33f058,d493e613-eb61-43b1-9c6d-1bd881af0734
-source-git-commit: 610a818c1f5d8a43ea55659a3c5b46676405415d
+source-git-commit: f51c36ed426d200a4636290eb4fa1be6b077f976
 workflow-type: tm+mt
 source-wordcount: '275'
 ht-degree: 29%
@@ -15,13 +15,9 @@ ht-degree: 29%
 
 # Kompatibilitetsmatris för Campaign v8
 
-I det här dokumentet visas alla system och komponenter som stöds för den senaste versionen av **Adobe Campaign v8**. Produkter och versioner som inte ingår i den här listan är inte kompatibla med Adobe Campaign.
+I det här dokumentet visas alla system och komponenter som stöds för den senaste versionen av **Adobe Campaign v8**. Om inget annat anges stöds alla mindre versioner. Produkter och versioner som inte ingår i den här listan är inte kompatibla med Adobe Campaign.
 
->[!CAUTION]
->
->* Om inget annat anges stöds alla mindre versioner.
->* Eftersom vissa versioner av dessa system och verktyg från tredje part når slutet av livscykeln, kommer Adobe Campaign inte längre att vara kompatibelt med dessa versioner och kommer att tas bort från den här kompatibilitetsmatrisen. Se till att du använder versioner av system som stöds i kompatibilitetsmatrisen för att undvika problem.
-
+Eftersom vissa versioner av dessa system och verktyg från tredje part når slutet av livscykeln, kommer Adobe Campaign inte längre att vara kompatibelt med dessa versioner och kommer att tas bort från den här kompatibilitetsmatrisen. Se till att du använder versioner av system som stöds i kompatibilitetsmatrisen för att undvika problem.
 
 ## Klientkonsol{#ClientConsoleoperatingsystems}
 
