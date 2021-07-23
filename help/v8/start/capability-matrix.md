@@ -6,10 +6,10 @@ feature: Översikt
 role: Data Engineer
 level: Beginner
 exl-id: 00ba1c43-9558-4adb-83a1-6597c2bbca62,7105477f-d29e-4af8-8789-82b4459761b0
-source-git-commit: c61d8aa8e0a68ccc81a6141782f860daf061bc61
+source-git-commit: bfd2df90e5e6bee89bdfc7c5da82c755ac5726df
 workflow-type: tm+mt
-source-wordcount: '873'
-ht-degree: 3%
+source-wordcount: '916'
+ht-degree: 4%
 
 ---
 
@@ -82,11 +82,19 @@ Kampanjanvändare ansluter via sina Adobe ID. Samma Adobe ID används för att b
 
 Observera att Adobe Campaign rapporter är optimerade och har bättre skalbarhet än Campaign Classic v7. Befintliga begränsningar för kuber gäller inte.
 
+## Arbetsflöde {#workflow}
+
+Campaign v8 erbjuder en ytterligare arbetsflödesaktivitet för målinriktning: **[!UICONTROL Change data source]**.
+
+Med aktiviteten **[!UICONTROL Change data source]** kan du ändra datakällan för ett arbetsflöde **[!UICONTROL Working table]** för att hantera data över olika datakällor som FDA, FFDA och den lokala databasen.
+
+? Läs mer om aktiviteten **[!UICONTROL Change data source]** i [den här sidan](../config/workflows.md#change-data-source-activity).
+
 ## Otillgängliga funktioner{#gs-unavailable-features}
 
 Observera att vissa funktioner inte är tillgängliga i den första versionen, som:
 
-* Hantering av marknadsföringsresurser
+* Hantera marknadsföringsresurser
 * Distribuerad marknadsföring
 * Inkommande erbjudandehantering (interaktionsmodul)
 * Kampanjoptimering
