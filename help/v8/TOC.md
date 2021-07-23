@@ -5,10 +5,10 @@ user-guide-title: Campaign v8
 description: Dokumentation om Campaign v8
 breadcrumb-title: Campaign v8
 title: Kampanjdokument v8
-source-git-commit: e41f5b37d8f13c2a17f27a27bf1803081945a8ed
+source-git-commit: 5d266b22661be2817e06ea71c1b0bec7f44a152d
 workflow-type: tm+mt
-source-wordcount: '202'
-ht-degree: 33%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
@@ -16,11 +16,12 @@ ht-degree: 33%
 # Adobe Campaign v8-dokumentation {#campaign-v8}
 
 + [Dokumentation om Campaign v8](campaign-home.md)
-+ Starta {#start}
++ Nyheter? {#start}
    + [Viktiga möjligheter](start/whats-new.md)
    + [Versionsinformation](start/release-notes.md)
    + [Kända begränsningar](start/known-limitations.md)
    + [Klassisk v7 till v8](start/capability-matrix.md)
++ Starta {#start}
    + [Kom igång](start/get-started.md)
    + [Profiler och målgrupper](start/audiences.md)
    + [Importera data](start/import.md)
