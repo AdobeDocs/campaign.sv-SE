@@ -5,9 +5,9 @@ user-guide-title: Campaign v8
 description: Dokumentation om Campaign v8
 breadcrumb-title: Campaign v8
 title: Kampanjdokument v8
-source-git-commit: c626776351cafa55acbeb9a898bb2c44e00d02d3
+source-git-commit: e41f5b37d8f13c2a17f27a27bf1803081945a8ed
 workflow-type: tm+mt
-source-wordcount: '192'
+source-wordcount: '202'
 ht-degree: 33%
 
 ---
@@ -17,6 +17,10 @@ ht-degree: 33%
 
 + [Dokumentation om Campaign v8](campaign-home.md)
 + Starta {#start}
+   + [Viktiga möjligheter](start/whats-new.md)
+   + [Versionsinformation](start/release-notes.md)
+   + [Kända begränsningar](start/known-limitations.md)
+   + [Klassisk v7 till v8](start/capability-matrix.md)
    + [Kom igång](start/get-started.md)
    + [Profiler och målgrupper](start/audiences.md)
    + [Importera data](start/import.md)
