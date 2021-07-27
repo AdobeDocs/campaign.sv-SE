@@ -7,10 +7,10 @@ role: Data Engineer
 level: Beginner
 hidefromtoc: false
 exl-id: 7cf8111d-9f3a-46a4-813a-d4e43a1d1471,a9d18e75-18e7-491e-bfc4-671c3600396e
-source-git-commit: 5d266b22661be2817e06ea71c1b0bec7f44a152d
+source-git-commit: 328f1bca11f8554def6ad4ccb741a86695481e98
 workflow-type: tm+mt
-source-wordcount: '322'
-ht-degree: 4%
+source-wordcount: '312'
+ht-degree: 5%
 
 ---
 
@@ -50,14 +50,13 @@ _23 juli 2021_
 </thead> 
 <tbody> 
 <tr> 
-<td> <p>LINE-kanalen är nu tillgänglig med Campaign v8. Följande förbättringar har gjorts när du använder LINE med Message Center:
-</p>
+<td> <p><a href="../send/line.md">LINE-kanalen</a> är nu tillgänglig med Campaign v8, inklusive följande förbättringar i kombination med <a href="../send/transactional.md">transaktionsmeddelandemodulen</a>:
 <ul> 
 <li><p>Korrigerade ett problem som kunde förhindra besökare från att riktas mot en radleverans. 
 </p></li>
 <li><p>Korrigerade ett problem som kunde orsaka fel när besökare hämtades från körningsinstansen till marknadsinstansen.
 </p></li>
-<li><p>Korrigerade problem vid bearbetning av realtidshändelser i samband med radleveranser med Message Center.</p></li>
+<li><p>Korrigerade problem under bearbetning av realtidshändelser.</p></li>
 </ul>
 </td> 
 </tr> 
