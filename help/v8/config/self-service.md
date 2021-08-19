@@ -5,10 +5,10 @@ description: Kom igång med Campaign Control Panel
 feature: Översikt
 role: Data Engineer
 level: Beginner
-source-git-commit: d61888a4536d6f37f5956c8fd5404bdcd893ae6c
+source-git-commit: 8415bfce30948104840a92d1be0d72e07c8e29ee
 workflow-type: tm+mt
-source-wordcount: '336'
-ht-degree: 50%
+source-wordcount: '337'
+ht-degree: 52%
 
 ---
 
@@ -24,7 +24,7 @@ Viktiga fördelar:
 
 Du kan också använda Campaign-kontrollpanelen för att konfigurera instansinställningar som IP-tillåt-listor, URL-behörigheter och hämta information om instansen.
 
-↗️ Läs mer i [Kampanjkontrollpanelens dokumentation](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/line-channel.html){target=&quot;_blank&quot;}.
+↗️ Läs mer i [Kampanjkontrollpanelens dokumentation](https://experienceleague.adobe.com/docs/control-panel/using/control-panel-home.html?lang=sv){target=&quot;_blank&quot;}.
 
 >[!CAUTION]
 > Följande funktioner stöds ännu inte i Campaign v8:
