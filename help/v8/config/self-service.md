@@ -5,10 +5,10 @@ description: Kom igång med Campaign Control Panel
 feature: Översikt
 role: Data Engineer
 level: Beginner
-source-git-commit: 8415bfce30948104840a92d1be0d72e07c8e29ee
+source-git-commit: f35122d5e5f5812d9a3fda9b21f2f7fd88aaaa0f
 workflow-type: tm+mt
-source-wordcount: '337'
-ht-degree: 52%
+source-wordcount: '345'
+ht-degree: 46%
 
 ---
 
@@ -38,15 +38,15 @@ Du kan också använda Campaign-kontrollpanelen för att konfigurera instansinst
 
 ## Hur kommer jag åt Kontrollpanelen?
 
-Kontrollpanelen är tillgänglig direkt från Adobe Experience Cloud. Den är endast tillgänglig för administratörsanvändare. [Klicka här](https://experienceleague.adobe.com/docs/control-panel/using/discover-control-panel/accessing-control-panel.html) för mer information.
+Kontrollpanelen är tillgänglig direkt från Adobe Experience Cloud. Den är endast tillgänglig för administratörsanvändare. [Klicka här](https://experienceleague.adobe.com/docs/control-panel/using/discover-control-panel/accessing-control-panel.html){target=&quot;_blank&quot;} om du vill ha mer information.
 
 ## Vanliga frågor och svar om Kontrollpanelen
 
-[Klicka här](https://experienceleague.adobe.com/docs/control-panel/using/discover-control-panel/key-features.html) för att läsa vanliga frågor och svar om Kontrollpanelen i Campaign.
+[Klicka här](https://experienceleague.adobe.com/docs/control-panel/using/faq.html?lang=en#control-panel){target=&quot;_blank&quot;} för att få tillgång till Vanliga frågor och svar om Campaign Control Panel.
 
 ## SFTP-hantering
 
-På Kontrollpanelen kan du interagera med alla SFTP-servrar som är anslutna till Campaign-instanser som du har tillgång till. Du kan övervaka deras lagringskapacitet och hantera IP-adresser på tillåtelselistan och offentliga SSH-nycklar. [Klicka här](https://experienceleague.adobe.com/docs/control-panel/using/sftp-management/about-sftp-management.html?lang=sv#sftp-management) för mer information.
+På Kontrollpanelen kan du interagera med alla SFTP-servrar som är anslutna till Campaign-instanser som du har tillgång till. Du kan övervaka deras lagringskapacitet och hantera IP-adresser på tillåtelselistan och offentliga SSH-nycklar. [Klicka här](https://experienceleague.adobe.com/docs/control-panel/using/sftp-management/about-sftp-management.html?lang=sv#sftp-management){target=&quot;_blank&quot;} om du vill ha mer information.
 
 ## Instansinställningar
 
