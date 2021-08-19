@@ -6,10 +6,10 @@ feature: Översikt
 role: Data Engineer
 level: Beginner
 exl-id: 00ba1c43-9558-4adb-83a1-6597c2bbca62,7105477f-d29e-4af8-8789-82b4459761b0
-source-git-commit: bfd2df90e5e6bee89bdfc7c5da82c755ac5726df
+source-git-commit: d61888a4536d6f37f5956c8fd5404bdcd893ae6c
 workflow-type: tm+mt
-source-wordcount: '916'
-ht-degree: 4%
+source-wordcount: '910'
+ht-degree: 3%
 
 ---
 
@@ -80,7 +80,7 @@ Kampanjanvändare ansluter via sina Adobe ID. Samma Adobe ID används för att b
 
 ## Rapportering
 
-Observera att Adobe Campaign rapporter är optimerade och har bättre skalbarhet än Campaign Classic v7. Befintliga begränsningar för kuber gäller inte.
+Observera att Adobe Campaign rapporter är optimerade och har bättre skalbarhet än Campaign Classic v7. Begränsningar för kuber gäller inte.
 
 ## Arbetsflöde {#workflow}
 
@@ -100,8 +100,6 @@ Observera att vissa funktioner inte är tillgängliga i den första versionen, s
 * Kampanjoptimering
 * Responshanteraren
 * Hybrid/lokala distributionsmodeller
-* LINE-meddelanden
-* Kontrollpanelen i Campaign
 
 >[!CAUTION]
 >
