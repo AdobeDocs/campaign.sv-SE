@@ -6,10 +6,10 @@ feature: Översikt
 role: Data Engineer
 level: Beginner
 exl-id: 7b145193-d4ae-47d0-b694-398c1e35eee4,df76e7ff-3b97-41be-abc2-640748680ff3
-source-git-commit: c61d8aa8e0a68ccc81a6141782f860daf061bc61
+source-git-commit: 6334178f6e5d0ad0a33975838be6cf663862d892
 workflow-type: tm+mt
-source-wordcount: '366'
-ht-degree: 1%
+source-wordcount: '392'
+ht-degree: 2%
 
 ---
 
@@ -43,6 +43,13 @@ Vid behov kan du starta datasynkronisering manuellt. Om du vill utföra detta h�
 
 Vissa inbyggda tabeller replikeras från den lokala databasen i Campaign till [!DNL Snowflake] Cloud-databasen via dedikerade arbetsflöden som beskrivs ovan.
 
+Förstå vilka databaser Adobe Campaign v8 använder, varför data replikeras, vilka data som replikeras och hur replikeringsprocessen fungerar.
+
+>[!VIDEO](https://video.tv.adobe.com/v/334460?quality=12)
+
+
+### Principer för datareplikering
+
 Replikeringsprinciperna baseras på tabellstorleken. Vissa tabeller kommer att replikeras i realtid, andra kommer att replikeras varje timme. Vissa tabeller kommer att få stegvisa uppdateringar när andra kommer att ersättas.
 
 Förutom det inbyggda arbetsflödet **Replikera referenstabeller** kan du framtvinga datareplikering i dina arbetsflöden.
@@ -65,6 +72,8 @@ nlserver ffdaReplicateStaging -stagingSchema -instance:acc1
 ```
 
 ![](assets/nlmodule.png)
+
+
 
 **Relaterade ämnen**
 
