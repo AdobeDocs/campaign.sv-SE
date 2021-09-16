@@ -1,14 +1,13 @@
 ---
-product: Adobe Campaign
 title: Frågor och svar om Campaign v8
 description: Upptäck vanliga frågor och svar om Campaign
-feature: Översikt
+feature: Overview
 role: Data Engineer
 level: Beginner
 exl-id: 027f5478-d86b-42be-b63d-ec8f5e1dd83d,f5688357-db90-4f88-9596-91e9d0a20d75
-source-git-commit: 22f47bed75d78684c85471330aca7dadafb9ed65
+source-git-commit: f071fc227dac6d72873744ba56eb0b4b676de5dd
 workflow-type: tm+mt
-source-wordcount: '663'
+source-wordcount: '662'
 ht-degree: 41%
 
 ---

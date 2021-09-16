@@ -1,13 +1,13 @@
 ---
-product: Adobe Campaign
 title: Mellanlagringsmekanism för kampanj-API
 description: Mellanlagringsmekanism för kampanj-API
-feature: Översikt
+feature: Overview
 role: Data Engineer
 level: Beginner
-source-git-commit: c61d8aa8e0a68ccc81a6141782f860daf061bc61
+exl-id: 96693af9-50db-4298-ae02-c238d35e52b4
+source-git-commit: f071fc227dac6d72873744ba56eb0b4b676de5dd
 workflow-type: tm+mt
-source-wordcount: '312'
+source-wordcount: '311'
 ht-degree: 2%
 
 ---
@@ -29,12 +29,10 @@ API:er för Campaign Classic v7 är fortfarande tillgängliga men kan inte utnyt
 >[!CAUTION]
 >
 >* Med den här nya mekanismen är datasynkronisering för kanalalternativ, prenumerationer, avregistreringar eller mobilregistrering nu **asynkron**.
-   >
-   >
-* Mellanlagring gäller endast för scheman som lagras i molndatabasen. Aktivera inte mellanlagring för replikerade scheman. Aktivera inte Mellanlagring för lokala scheman. Aktivera inte mellanlagring på ett mellanlagrat schema
+>
+>* Mellanlagring gäller endast för scheman som lagras i molndatabasen. Aktivera inte mellanlagring för replikerade scheman. Aktivera inte Mellanlagring för lokala scheman. Aktivera inte mellanlagring på ett mellanlagrat schema
 
 >
-
 
 
 ## Implementeringssteg{#implement-staging}

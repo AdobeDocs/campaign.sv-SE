@@ -1,14 +1,13 @@
 ---
-product: Adobe Campaign
 title: 'Kom igång med API:er i Campaign '
 description: 'Kom igång med API:er i Campaign '
-feature: Översikt
+feature: Overview
 role: Data Engineer
 level: Beginner
 exl-id: 0b71c76b-03d9-4023-84fc-3ecc0df9261b
-source-git-commit: c61d8aa8e0a68ccc81a6141782f860daf061bc61
+source-git-commit: f071fc227dac6d72873744ba56eb0b4b676de5dd
 workflow-type: tm+mt
-source-wordcount: '331'
+source-wordcount: '330'
 ht-degree: 5%
 
 ---
@@ -30,7 +29,6 @@ Campaign v8 fungerar med två databaser: en lokal databas för användargränssn
 >[!CAUTION]
 >
 >[!DNL Adobe Campaign] v8 har en begränsning av genomströmningen (TPS) för vårt API-lager. Om gränsen överskrids uppstår ett vanligt HTTP-fel (429). Som användare av hanterade Cloud Services kan du kontakta Adobe för att anpassa begränsningen för varje API.
-
 
 ## Förhandskrav
 

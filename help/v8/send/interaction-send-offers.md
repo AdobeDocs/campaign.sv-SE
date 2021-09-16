@@ -1,13 +1,13 @@
 ---
-product: Adobe Campaign
 title: Katalog för kampanjinteraktionserbjudande
 description: Lär dig hur du skapar en erbjudandekatalog
-feature: Översikt
+feature: Overview
 role: Data Engineer
 level: Beginner
-source-git-commit: c61d8aa8e0a68ccc81a6141782f860daf061bc61
+exl-id: d39b1768-4c39-4d64-b9b6-d9c9424a2b0d
+source-git-commit: f071fc227dac6d72873744ba56eb0b4b676de5dd
 workflow-type: tm+mt
-source-wordcount: '1276'
+source-wordcount: '1275'
 ht-degree: 2%
 
 ---

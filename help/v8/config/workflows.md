@@ -1,14 +1,13 @@
 ---
-product: Adobe Campaign
 title: Hantera och automatisera processer med Adobe Campaign arbetsflöden
 description: Kom igång med arbetsflöden
-feature: Översikt
+feature: Overview
 role: Data Engineer
 level: Beginner
 exl-id: 0be1c5f5-f07d-46dc-bebc-5eb50f466547
-source-git-commit: cc8707c7765a47fc00d46283eb6588e63a98499d
+source-git-commit: f071fc227dac6d72873744ba56eb0b4b676de5dd
 workflow-type: tm+mt
-source-wordcount: '1546'
+source-wordcount: '1545'
 ht-degree: 0%
 
 ---

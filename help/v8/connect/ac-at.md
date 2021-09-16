@@ -1,14 +1,13 @@
 ---
-product: Adobe Campaign
 title: Arbeta med Campaign och Adobe Target
 description: Lär dig hur du arbetar med Campaign och Adobe Target
-feature: Översikt
+feature: Overview
 role: Data Engineer
 level: Beginner
 exl-id: d1d57aa8-b811-470f-a8a6-18da3a700f1a
-source-git-commit: c61d8aa8e0a68ccc81a6141782f860daf061bc61
+source-git-commit: f071fc227dac6d72873744ba56eb0b4b676de5dd
 workflow-type: tm+mt
-source-wordcount: '989'
+source-wordcount: '988'
 ht-degree: 1%
 
 ---

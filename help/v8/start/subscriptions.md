@@ -1,13 +1,13 @@
 ---
-product: Adobe Campaign
 title: Hantera prenumerationer och avbeställningar i Campaign
 description: Lär dig hur du hanterar prenumerationer och avbeställningar i Campaign v8
-feature: Översikt
+feature: Overview
 role: Data Engineer
 level: Beginner
-source-git-commit: c61d8aa8e0a68ccc81a6141782f860daf061bc61
+exl-id: d5933b12-8664-49b8-953c-ea98eb428cc2
+source-git-commit: f071fc227dac6d72873744ba56eb0b4b676de5dd
 workflow-type: tm+mt
-source-wordcount: '538'
+source-wordcount: '537'
 ht-degree: 0%
 
 ---

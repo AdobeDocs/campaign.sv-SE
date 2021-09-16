@@ -1,13 +1,13 @@
 ---
-product: Adobe Campaign
 title: Skicka e-post med Adobe Campaign
 description: Kom igång med e-post i Campaign
-feature: Översikt
+feature: Overview
 role: Data Engineer
 level: Beginner
-source-git-commit: c61d8aa8e0a68ccc81a6141782f860daf061bc61
+exl-id: 97dcd0e0-db5b-45a4-96af-817e49f6cb64
+source-git-commit: f071fc227dac6d72873744ba56eb0b4b676de5dd
 workflow-type: tm+mt
-source-wordcount: '605'
+source-wordcount: '604'
 ht-degree: 2%
 
 ---
@@ -100,7 +100,7 @@ Du kan:
 * Kontrollera leveransanalysloggar
 * Skicka korrektur
 * Lägg till dirigerade adresser
-* Använd kontrollgrupper
+* Använda kontrollgrupper
 * Kontrollera e-poståtergivning
 
 ↗️ [Läs mer i dokumentationen för Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/key-steps-when-creating-a-delivery/steps-validating-the-delivery.html)
@@ -110,4 +110,3 @@ Du kan:
 När du har skickat den kontrollerar du leveransstatus på kontrollpanelen och öppnar leveransloggar och rapporter för att bekräfta att meddelandena har skickats korrekt.
 
 ↗️ [Läs mer i dokumentationen för Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/key-steps-when-creating-a-delivery/delivery-bestpractices/track-and-monitor.html)
-

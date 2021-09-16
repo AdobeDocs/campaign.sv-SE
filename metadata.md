@@ -2,16 +2,16 @@
 cloud: Experience Cloud
 version: v8
 solution: Campaign, Campaign v8
-product: Adobe Campaign
+product: adobe campaign
 feature-set: Campaign
 type: Documentation
 mini-toc-levels: 2
 git-repo: https://git.corp.adobe.com/AdobeDocs/campaign.sv-SE
 index: true
-source-git-commit: 4280e2cadbe9204b7de06b76740724e3e21ef6c1
+source-git-commit: f071fc227dac6d72873744ba56eb0b4b676de5dd
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '65'
+ht-degree: 93%
 
 ---
 

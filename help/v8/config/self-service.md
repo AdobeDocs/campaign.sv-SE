@@ -1,14 +1,14 @@
 ---
-product: Adobe Campaign
 title: Kontrollpanelen i Campaign
 description: Kom igång med Campaign Control Panel
-feature: Översikt
+feature: Overview
 role: Data Engineer
 level: Beginner
-source-git-commit: f35122d5e5f5812d9a3fda9b21f2f7fd88aaaa0f
+exl-id: b8aa89ac-19f4-4df3-9f36-860aca61bea3
+source-git-commit: f071fc227dac6d72873744ba56eb0b4b676de5dd
 workflow-type: tm+mt
-source-wordcount: '345'
-ht-degree: 46%
+source-wordcount: '344'
+ht-degree: 50%
 
 ---
 
@@ -35,7 +35,6 @@ Du kan också använda Campaign-kontrollpanelen för att konfigurera instansinst
 >
 
 
-
 ## Hur kommer jag åt Kontrollpanelen?
 
 Kontrollpanelen är tillgänglig direkt från Adobe Experience Cloud. Den är endast tillgänglig för administratörsanvändare. [Klicka här](https://experienceleague.adobe.com/docs/control-panel/using/discover-control-panel/accessing-control-panel.html){target=&quot;_blank&quot;} om du vill ha mer information.
@@ -55,4 +54,3 @@ Lär dig hur du hanterar inställningarna för Campaign-instanser på Kontrollpa
 * [URL-behörigheter](https://experienceleague.adobe.com/docs/control-panel/using/instances-settings/url-permissions.html){target=&quot;_blank&quot;}
 * [Instansinformation](https://experienceleague.adobe.com/docs/control-panel/using/instances-settings/instance-details.html){target=&quot;_blank&quot;}
 * [Hantering](https://experienceleague.adobe.com/docs/control-panel/using/instances-settings/gpg-keys-management.html) av GPG-nycklar {target=&quot;_blank&quot;}
-

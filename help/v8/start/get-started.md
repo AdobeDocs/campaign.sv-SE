@@ -1,14 +1,13 @@
 ---
-product: Adobe Campaign
 title: Kom igång med Campaign v8
 description: Har ni inte använt Campaign tidigare? Kom igång
-feature: Översikt
+feature: Overview
 role: Data Engineer
 level: Beginner
 exl-id: 04b12907-3cb1-40f1-90b8-1524d84edf2d,e3e9b514-a69d-4650-b1b1-1b76b4f3d63f
-source-git-commit: c61d8aa8e0a68ccc81a6141782f860daf061bc61
+source-git-commit: f071fc227dac6d72873744ba56eb0b4b676de5dd
 workflow-type: tm+mt
-source-wordcount: '900'
+source-wordcount: '899'
 ht-degree: 41%
 
 ---
@@ -74,7 +73,7 @@ Med Adobe Campaign kan du övervaka och tolka kundernas beteende genom att gradv
 
 Du kan kombinera leveransfunktionerna och de avancerade funktionerna för kampanjhantering i Adobe Campaign med en uppsättning lösningar som hjälper till att personalisera användarnas upplevelse. Till exempel kan du använda Adobe Experience Manager, Adobe Analytics, Adobe Target eller utlösare i Adobe Experience Cloud.
 
-? Lär dig hur du integrerar med Adobe-tjänster och -lösningar i [det här avsnittet](../connect/integration.md).
+? Lär dig hur du integrerar med Adobes tjänster och lösningar i [det här avsnittet](../connect/integration.md).
 
 ## Mer om Campaign-funktioner {#core-capabilities-and-add-ons}
 

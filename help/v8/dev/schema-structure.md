@@ -1,8 +1,8 @@
 ---
-product: Adobe Campaign
 title: Struktur för kampanjschema
 description: Struktur för kampanjschema
-source-git-commit: 5363950db5092bc7e0a72a0823db1132a17dda33
+exl-id: 9c4a9e71-3fc8-4b4e-8782-0742bbeaf426
+source-git-commit: f071fc227dac6d72873744ba56eb0b4b676de5dd
 workflow-type: tm+mt
 source-wordcount: '1397'
 ht-degree: 1%
@@ -270,7 +270,7 @@ Uppräkningsvärdena deklareras i **`<value>`**-elementet med följande attribut
 * **namn**: Namnet på det internt lagrade värdet.
 * **label**: etikett som visas via det grafiska gränssnittet.
 
-#### dbenum enumeration {#dbenum-enumeration}
+#### dbenum-uppräkning {#dbenum-enumeration}
 
 * Med egenskapen **dbenum** kan du definiera en uppräkning vars egenskaper liknar egenskaperna för egenskapen **enum**.
 
@@ -350,7 +350,6 @@ Elementen anges med sitt namn och attributen anges med namnet före tecknet&quot
 >* **`[@email]`** och  **@** emailare-motsvarighet
 
 >
-
 
 
 Det går också att definiera komplexa uttryck, till exempel följande aritmetiska operationer:

@@ -1,8 +1,8 @@
 ---
-product: Adobe Campaign
 title: God praxis för datamodell
 description: Lär dig mer om de bästa sätten att använda Campaign-datamodelltillägg
-source-git-commit: c61d8aa8e0a68ccc81a6141782f860daf061bc61
+exl-id: bdd5e993-0ce9-49a8-a618-ab0ff3796d49
+source-git-commit: f071fc227dac6d72873744ba56eb0b4b676de5dd
 workflow-type: tm+mt
 source-wordcount: '2683'
 ht-degree: 4%

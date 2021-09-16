@@ -1,17 +1,16 @@
 ---
-product: Adobe Campaign
 title: Kampanjinteraktionsoperatorer
 description: Skapa operatorer för erbjudandehantering
-feature: Översikt
+feature: Overview
 role: Data Engineer
 level: Beginner
-source-git-commit: c61d8aa8e0a68ccc81a6141782f860daf061bc61
+exl-id: 865ddb84-3373-45e0-849d-9d3c92455d22
+source-git-commit: f071fc227dac6d72873744ba56eb0b4b676de5dd
 workflow-type: tm+mt
-source-wordcount: '384'
+source-wordcount: '383'
 ht-degree: 1%
 
 ---
-
 
 # Operatorprofiler {#operator-profiles}
 
@@ -107,7 +106,7 @@ De rättigheter som tilldelats leveransansvarig är/gör det möjligt för dem a
    <td> Läs<br /> </td> 
   </tr> 
   <tr> 
-   <td> Regler för typologi<br /> </td> 
+   <td> Typologiregler<br /> </td> 
    <td> Läs/skriv<br /> </td> 
    <td> Läs<br /> </td> 
   </tr> 
@@ -167,7 +166,7 @@ De rättigheter som tilldelats leveransansvarig är/gör det möjligt för dem a
    <td> Läs<br /> </td> 
   </tr> 
   <tr> 
-   <td> Regler för typologi<br /> </td> 
+   <td> Typologiregler<br /> </td> 
    <td> </td> 
    <td> Läs<br /> </td> 
   </tr> 

@@ -1,8 +1,8 @@
 ---
-product: Adobe Campaign
 title: Arbeta med Campaign-scheman
 description: Kom igång med scheman
-source-git-commit: c61d8aa8e0a68ccc81a6141782f860daf061bc61
+exl-id: 87af72fe-6c84-4d9a-afed-015900890cce
+source-git-commit: f071fc227dac6d72873744ba56eb0b4b676de5dd
 workflow-type: tm+mt
 source-wordcount: '1247'
 ht-degree: 4%
@@ -250,4 +250,3 @@ Mer information om detta finns i [det här avsnittet](update-database-structure.
 >[!NOTE]
 >
 >Om ändringarna inte påverkar databasstrukturen behöver du bara generera om scheman. Det gör du genom att markera de scheman som ska uppdateras, högerklicka och välja **[!UICONTROL Actions > Regenerate selected schemas...]**.
-

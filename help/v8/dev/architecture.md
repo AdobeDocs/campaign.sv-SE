@@ -1,14 +1,13 @@
 ---
-product: Adobe Campaign
 title: Kom igång med Campaign-arkitekturen
 description: Upptäck miljöer och grunderna om driftsättning
-feature: Översikt
+feature: Overview
 role: Data Engineer
 level: Beginner
 exl-id: 562b24c3-6bea-447f-b74c-187ab77ae78f
-source-git-commit: c61d8aa8e0a68ccc81a6141782f860daf061bc61
+source-git-commit: f071fc227dac6d72873744ba56eb0b4b676de5dd
 workflow-type: tm+mt
-source-wordcount: '608'
+source-wordcount: '607'
 ht-degree: 0%
 
 ---

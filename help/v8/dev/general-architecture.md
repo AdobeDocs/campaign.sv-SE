@@ -1,9 +1,8 @@
 ---
-product: Adobe Campaign
 title: Allmän arkitektur
 description: Läs mer om Campaign-arkitekturen och komponenter
 exl-id: 1d9ff6c5-974d-4a8a-a0d7-641685bbe26e
-source-git-commit: c61d8aa8e0a68ccc81a6141782f860daf061bc61
+source-git-commit: f071fc227dac6d72873744ba56eb0b4b676de5dd
 workflow-type: tm+mt
 source-wordcount: '1217'
 ht-degree: 0%

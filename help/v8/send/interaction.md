@@ -1,13 +1,13 @@
 ---
-product: Adobe Campaign
 title: Kampanjinteraktion - Erbjudandehantering
 description: Kom igång med erbjudandehantering
-feature: Översikt
+feature: Overview
 role: Data Engineer
 level: Beginner
-source-git-commit: b11b42220dae7d0a878ba102523ee2825d6fb2e2
+exl-id: 4da3e69a-6230-4c94-a6f1-4e8c01e854ba
+source-git-commit: f071fc227dac6d72873744ba56eb0b4b676de5dd
 workflow-type: tm+mt
-source-wordcount: '1214'
+source-wordcount: '1213'
 ht-degree: 1%
 
 ---
@@ -85,4 +85,3 @@ Det finns två typer av miljöer:
 * **Förhandsgranskningen** av erbjudandet visar erbjudandet så som det visas i sin mapp. Den är tillgänglig från inställningsfönstret för erbjudandet eller kontaktprofilen.
 * **Fördefinierade** filterfiltreringsregler kan ta hänsyn till erbjudandeparametrar (till exempel en erbjudandekod). De kan återanvändas efter att erbjudandena har skapats.
 * En **Erbjudanderepresentation** är en information som används av kanalen för att visa erbjudandet. Erbjudanderepresentationen kan skapas med hjälp av återgivningsfunktionen i det utrymme där erbjudandet finns representerat eller anges direkt i gränssnittet (t.ex. i HTML-blocket). Ett erbjudande kan representeras av space.
-

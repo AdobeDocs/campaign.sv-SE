@@ -1,17 +1,16 @@
 ---
-product: Adobe Campaign
 title: Kampanjens externa konton
 description: Kampanjens externa konton
-feature: Översikt
+feature: Overview
 role: Data Engineer
 level: Beginner
-source-git-commit: c61d8aa8e0a68ccc81a6141782f860daf061bc61
+exl-id: 9634b576-2854-4ea9-ba0d-8efaab2c4aee
+source-git-commit: f071fc227dac6d72873744ba56eb0b4b676de5dd
 workflow-type: tm+mt
-source-wordcount: '1001'
+source-wordcount: '1000'
 ht-degree: 4%
 
 ---
-
 
 # Konfigurera dina externa konton
 
@@ -173,4 +172,3 @@ Om du vill göra det anger du den adress och de autentiseringsuppgifter som ska 
    * **[!UICONTROL Encryption]**: Typ av kryptering mellan  **[!UICONTROL None]** eller  **[!UICONTROL SSL]**.
 
    * **[!UICONTROL Access key]**: Lär dig hur du hittar dina foton  **[!UICONTROL Access key]** i  [Microsoft-dokumentationen](https://docs.microsoft.com/en-us/azure/storage/common/storage-account-keys-manage?tabs=azure-portal).
-

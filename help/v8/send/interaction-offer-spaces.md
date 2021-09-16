@@ -1,13 +1,13 @@
 ---
-product: Adobe Campaign
 title: Kampanjinteraktion - erbjudandemellanslag
 description: Lär dig hur du skapar erbjudandemellanslag
-feature: Översikt
+feature: Overview
 role: Data Engineer
 level: Beginner
-source-git-commit: b11b42220dae7d0a878ba102523ee2825d6fb2e2
+exl-id: c116d86a-d3e2-47e3-a641-e2d7c8cc575c
+source-git-commit: f071fc227dac6d72873744ba56eb0b4b676de5dd
 workflow-type: tm+mt
-source-wordcount: '611'
+source-wordcount: '610'
 ht-degree: 3%
 
 ---
@@ -144,7 +144,7 @@ Du kan automatiskt tillämpa **[!UICONTROL Interested]**-statusen på ett erbjud
 <a _urlType="11" href="<DEST_URL>">Link inserted into the delivery</a>
 ```
 
-## Förhandsgranska per blanksteg {#offer-preview-per-space}
+## Förhandsgranska per utrymme {#offer-preview-per-space}
 
 På fliken **[!UICONTROL Preview]** kan du visa de erbjudanden som mottagaren är berättigad till via en vald metod. I exemplet nedan är mottagaren berättigad till tre offerter via post.
 

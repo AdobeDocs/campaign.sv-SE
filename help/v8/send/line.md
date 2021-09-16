@@ -1,14 +1,14 @@
 ---
-product: Adobe Campaign
 title: Skicka direktsända LINE-meddelanden med Adobe Campaign
 description: Kom igång med LINE-meddelanden
-feature: Översikt
+feature: Overview
 role: Data Engineer
 level: Beginner
-source-git-commit: 03d2ad12fabd332df36dcb5257b992f350905c5b
+exl-id: 4de3b2c2-7eb7-4fd9-9350-64a6e9e2b7f8
+source-git-commit: f071fc227dac6d72873744ba56eb0b4b676de5dd
 workflow-type: tm+mt
-source-wordcount: '86'
-ht-degree: 1%
+source-wordcount: '85'
+ht-degree: 0%
 
 ---
 

@@ -1,14 +1,13 @@
 ---
-product: Adobe Campaign
 title: Koppla samman Campaign med era lösningar
 description: Lär dig hur ni kan koppla Campaign till era lösningar
-feature: Översikt
+feature: Overview
 role: Data Engineer
 level: Beginner
 exl-id: d1d57aa8-b811-470f-a8a6-18da3a700f1a
-source-git-commit: c61d8aa8e0a68ccc81a6141782f860daf061bc61
+source-git-commit: f071fc227dac6d72873744ba56eb0b4b676de5dd
 workflow-type: tm+mt
-source-wordcount: '350'
+source-wordcount: '349'
 ht-degree: 10%
 
 ---

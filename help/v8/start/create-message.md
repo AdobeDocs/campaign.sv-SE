@@ -1,14 +1,13 @@
 ---
-product: Adobe Campaign
 title: Kom igång med meddelanden
 description: Kom igång med meddelanden
-feature: Översikt
+feature: Overview
 role: Data Engineer
 level: Beginner
 exl-id: 6cf8a929-637e-4e51-9160-5980ca727efb
-source-git-commit: c61d8aa8e0a68ccc81a6141782f860daf061bc61
+source-git-commit: f071fc227dac6d72873744ba56eb0b4b676de5dd
 workflow-type: tm+mt
-source-wordcount: '644'
+source-wordcount: '643'
 ht-degree: 3%
 
 ---

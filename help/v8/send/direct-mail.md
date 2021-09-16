@@ -1,13 +1,13 @@
 ---
-product: Adobe Campaign
 title: Skicka direktreklam med Adobe Campaign
 description: Kom igång med direktreklam i Campaign
-feature: Översikt
+feature: Overview
 role: Data Engineer
 level: Beginner
-source-git-commit: c61d8aa8e0a68ccc81a6141782f860daf061bc61
+exl-id: ff2be012-72f3-428d-a973-196fea7ec4ab
+source-git-commit: f071fc227dac6d72873744ba56eb0b4b676de5dd
 workflow-type: tm+mt
-source-wordcount: '408'
+source-wordcount: '407'
 ht-degree: 2%
 
 ---

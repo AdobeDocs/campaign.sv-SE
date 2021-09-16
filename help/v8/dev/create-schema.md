@@ -1,8 +1,8 @@
 ---
-product: Adobe Campaign
 title: Skapa ett nytt schema i Campaign
 description: Lär dig hur du skapar ett nytt schema i Campaign
-source-git-commit: b11b42220dae7d0a878ba102523ee2825d6fb2e2
+exl-id: 796af848-b537-4b8d-a601-fe0628a1fc83
+source-git-commit: f071fc227dac6d72873744ba56eb0b4b676de5dd
 workflow-type: tm+mt
 source-wordcount: '408'
 ht-degree: 2%
@@ -111,4 +111,3 @@ För att göra detta måste du skapa tabellschemat och uppdatera databasstruktur
    ![](assets/configuration_structure.png)
 
 1. Uppdatera databasstrukturen för att skapa tabellen som schemat ska länkas till. Mer information om detta finns i [det här avsnittet](update-database-structure.md).
-

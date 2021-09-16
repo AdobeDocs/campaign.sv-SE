@@ -1,14 +1,14 @@
 ---
-product: Adobe Campaign
 title: Kända begränsningar för Campaign v8
 description: Kända begränsningar
-feature: Översikt
+feature: Overview
 role: Data Engineer
 level: Beginner
 hidefromtoc: true
-source-git-commit: cf00895f988514fc029d0060d7404bdef0c8b30e
+exl-id: 50c254ba-cc33-49b2-b7d5-12aa69883c07
+source-git-commit: f071fc227dac6d72873744ba56eb0b4b676de5dd
 workflow-type: tm+mt
-source-wordcount: '177'
+source-wordcount: '176'
 ht-degree: 2%
 
 ---
@@ -27,5 +27,3 @@ För Adobe Campaign v8 gäller följande begränsningar:
 * Prenumerations- (opt-in) och avanmälnings- (opt-out) och mobilregistrering är asynkrona processer. Begäranden behandlas varje timme i ett specifikt tekniskt arbetsflöde. [Läs mer](../config/replication.md#tech-wf)
 * Dubbletter måste hanteras manuellt av slutanvändarna. [Läs mer](../dev/keys.md)
 * Adobe Campaign v8 stöder inte utökad genomströmning i API och webbprogram. Om det finns särskilda behov kan du kontakta Adobe för att få hjälp.
-
-

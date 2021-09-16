@@ -1,14 +1,13 @@
 ---
-product: Adobe Campaign
 title: Campaign Classic v7 - Funktionsmatris för kampanj v8
 description: Förstå skillnaderna mellan Campaign Classic v7 och Campaign v8
-feature: Översikt
+feature: Overview
 role: Data Engineer
 level: Beginner
 exl-id: 00ba1c43-9558-4adb-83a1-6597c2bbca62,7105477f-d29e-4af8-8789-82b4459761b0
-source-git-commit: d61888a4536d6f37f5956c8fd5404bdcd893ae6c
+source-git-commit: f071fc227dac6d72873744ba56eb0b4b676de5dd
 workflow-type: tm+mt
-source-wordcount: '910'
+source-wordcount: '909'
 ht-degree: 3%
 
 ---
@@ -43,7 +42,6 @@ Alla inbyggda scheman/tabeller som behöver flyttas eller replikeras i molndatab
 >
 > Kunddata lagras inte i den lokala [!DNL Campaign]-databasen. Därför måste alla anpassade tabeller skapas i molndatabasen.
 
-
 Det finns specifika API:er för att hantera data mellan den lokala databasen och molndatabasen. Lär dig hur dessa nya API:er fungerar och hur du använder dem i [den här sidan](../dev/new-apis.md).
 
 ### Datareplikering
@@ -54,7 +52,6 @@ Ett specifikt tekniskt arbetsflöde hanterar replikering av tabeller som måste 
 >
 > Flera replikeringsprinciper har skapats, baserat på tabellens storlek (XS, XL osv.).
 > Vissa tabeller replikeras i realtid, andra replikeras per timme. Vissa tabeller kommer att innehålla stegvisa uppdateringar, andra kommer att genomgå en fullständig uppdatering.
-
 
 [Läs mer om datareplikering](../config/replication.md)
 

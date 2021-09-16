@@ -1,14 +1,13 @@
 ---
-product: Adobe Campaign
 audience: end-user
 user-guide-title: Campaign v8
 description: Dokumentation om Campaign v8
 breadcrumb-title: Campaign v8
 title: Kampanjdokument v8
-source-git-commit: 5d266b22661be2817e06ea71c1b0bec7f44a152d
+source-git-commit: f071fc227dac6d72873744ba56eb0b4b676de5dd
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '204'
+ht-degree: 36%
 
 ---
 
@@ -41,7 +40,7 @@ ht-degree: 0%
    + [Kompatibilitetsmatris](start/compatibility-matrix.md)
    + [Anslut till Campaign](start/connect.md)
    + [Behörigheter](start/permissions.md)
-   + [Kontrollpanelen  ](config/self-service.md)
+   + [Kontrollpanelen](config/self-service.md)
 + Skicka {#send}
    + [E-post](send/email.md)
    + [SMS](send/sms.md)

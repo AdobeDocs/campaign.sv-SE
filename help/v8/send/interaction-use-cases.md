@@ -1,14 +1,14 @@
 ---
-product: Adobe Campaign
 title: Användningsexempel för kampanjinteraktion
 description: Interaktionsfall
-feature: Översikt
+feature: Overview
 role: Data Engineer
 level: Beginner
-source-git-commit: c61d8aa8e0a68ccc81a6141782f860daf061bc61
+exl-id: 4ea77a39-f505-4657-be43-a0e2b79ddcdd
+source-git-commit: f071fc227dac6d72873744ba56eb0b4b676de5dd
 workflow-type: tm+mt
-source-wordcount: '64'
-ht-degree: 4%
+source-wordcount: '63'
+ht-degree: 3%
 
 ---
 

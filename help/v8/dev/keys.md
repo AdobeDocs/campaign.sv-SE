@@ -1,8 +1,8 @@
 ---
-product: Adobe Campaign
-title: 'Nyckelhantering i Campaign '
+title: Nyckelhantering i Campaign
 description: Kom igång med nyckelhantering
-source-git-commit: 99a1381a0d5cef38eb708dbe6e3e8029e6ff3953
+exl-id: ef06cb6b-1b25-4dbe-8fd0-f880ec9d645b
+source-git-commit: f071fc227dac6d72873744ba56eb0b4b676de5dd
 workflow-type: tm+mt
 source-wordcount: '676'
 ht-degree: 0%

@@ -1,8 +1,8 @@
 ---
-product: Adobe Campaign
 title: Formulär för kampanjindata
 description: Lär dig hur du anpassar indataformulär
-source-git-commit: c61d8aa8e0a68ccc81a6141782f860daf061bc61
+exl-id: 62908bba-9cfa-42b6-b463-b601496d535b
+source-git-commit: f071fc227dac6d72873744ba56eb0b4b676de5dd
 workflow-type: tm+mt
 source-wordcount: '2555'
 ht-degree: 0%
@@ -674,4 +674,3 @@ Attributet **exprIn** innehåller platsen för de data som ska skickas som en pa
   </soapCall>
 </leave>
 ```
-

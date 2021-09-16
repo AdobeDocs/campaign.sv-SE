@@ -1,13 +1,13 @@
 ---
-product: Adobe Campaign
 title: Katalog för kampanjinteraktionserbjudande
 description: Lär dig hur du skapar en erbjudandekatalog
-feature: Översikt
+feature: Overview
 role: Data Engineer
 level: Beginner
-source-git-commit: 5363950db5092bc7e0a72a0823db1132a17dda33
+exl-id: 911096e2-0307-46a8-873c-ee2248b8e3e8
+source-git-commit: f071fc227dac6d72873744ba56eb0b4b676de5dd
 workflow-type: tm+mt
-source-wordcount: '381'
+source-wordcount: '380'
 ht-degree: 1%
 
 ---
@@ -69,4 +69,3 @@ Följ stegen nedan om du vill inkludera en reservkategori i rekommendationerna:
 1. Klicka på **[!UICONTROL Save]**.
 
    ![](assets/offer_cat_default_001.png)
-

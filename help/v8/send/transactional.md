@@ -1,13 +1,13 @@
 ---
-product: Adobe Campaign
 title: Kampanjtransaktionsmeddelanden
 description: Kom igång med Transactional Messaging
-feature: Översikt
+feature: Overview
 role: Data Engineer
 level: Beginner
-source-git-commit: c61d8aa8e0a68ccc81a6141782f860daf061bc61
+exl-id: 06fdb279-3776-433f-8d27-33d016473dee
+source-git-commit: f071fc227dac6d72873744ba56eb0b4b676de5dd
 workflow-type: tm+mt
-source-wordcount: '1487'
+source-wordcount: '1486'
 ht-degree: 1%
 
 ---

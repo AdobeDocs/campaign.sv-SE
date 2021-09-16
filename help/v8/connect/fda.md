@@ -1,13 +1,13 @@
 ---
-product: Adobe Campaign
 title: Arbeta med Campaign och externa databaser (FDA)
 description: Lär dig hur du arbetar med Campaign och externa databaser
-feature: Översikt
+feature: Overview
 role: Data Engineer
 level: Beginner
-source-git-commit: b11b42220dae7d0a878ba102523ee2825d6fb2e2
+exl-id: 0259b3bd-9dc2-44f9-a426-c4af46b00a4e
+source-git-commit: f071fc227dac6d72873744ba56eb0b4b676de5dd
 workflow-type: tm+mt
-source-wordcount: '1844'
+source-wordcount: '1843'
 ht-degree: 3%
 
 ---
@@ -24,7 +24,7 @@ Med Campaign FDA-alternativet kan ni utöka er datamodell i en tredjepartsdataba
 
 Specifika **behörigheter** krävs på [!DNL Adobe Campaign] och på den externa databasen för att interagera med varandra. Läs mer i [det här avsnittet](#fda-permissions).
 
-## Bästa praxis och begränsningar
+## God praxis och begränsningar
 
 * **Optimera e-postpersonalisering med externa data**
 
@@ -58,7 +58,7 @@ Så här ställer du in åtkomst till en extern databas med FDA:
 1. Skapa schemat för den externa databasen i Adobe Campaign. På så sätt kan du identifiera den externa databasens datastruktur. [Läs mer](#create-data-schema)
 1. Skapa vid behov en ny målmappning från det schema som skapades tidigare. Detta är nödvändigt om mottagarna av leveranserna kommer från den externa databasen. Den här implementeringen har begränsningar som rör meddelandepersonalisering. [Läs mer](#define-data-mapping)
 
-## Externt externt databaskonto{#fda-external-account}
+## Externt konto för extern databas{#fda-external-account}
 
 Du måste skapa ett specifikt externt konto för att ansluta Campaign-instansen till din externa databas.
 
@@ -100,9 +100,9 @@ För [!DNL Snowflake] stöder kopplingen följande alternativ:
 |---|---|
 | arbetsschema | Databasschema som ska användas för arbetsregister |
 | lagerställe | Namnet på standardlagerstället som ska användas. Det åsidosätter användarens standardvärde. |
-| TimeZoneName | Som standard är den tom, vilket innebär att systemtidszonen för programservern i Campaign Classic används. Alternativet kan användas för att framtvinga TIMEZONE-sessionsparametern. <br>Se denna [sida](https://docs.snowflake.net/manuals/sql-reference/parameters.html#timezone) för mer information om detta. |
-| WeekStart | WEEK_START-sessionsparameter. Standardinställningen är 0. <br>Se denna [sida](https://docs.snowflake.com/en/sql-reference/parameters.html#week-start) för mer information om detta. |
-| AnvändCachedResult | USE_CACHED_RESULTS sessionsparameter. Standardinställningen är TRUE. Det här alternativet kan användas för att inaktivera cachelagrade resultat i Snowflake. <br>Se denna [sida](https://docs.snowflake.net/manuals/user-guide/querying-persisted-results.html) för mer information om detta. |
+| TimeZoneName | Som standard är den tom, vilket innebär att systemtidszonen för programservern i Campaign Classic används. Alternativet kan användas för att framtvinga TIMEZONE-sessionsparametern. <br>Mer information finns på [den här sidan](https://docs.snowflake.net/manuals/sql-reference/parameters.html#timezone). |
+| WeekStart | WEEK_START-sessionsparameter. Standardinställningen är 0. <br>Mer information finns på [den här sidan](https://docs.snowflake.com/en/sql-reference/parameters.html#week-start). |
+| AnvändCachedResult | USE_CACHED_RESULTS sessionsparameter. Standardinställningen är TRUE. Det här alternativet kan användas för att inaktivera cachelagrade resultat i Snowflake. <br>Mer information finns på [den här sidan](https://docs.snowflake.net/manuals/user-guide/querying-persisted-results.html). |
 
 
 ## Skapa dataschemat{#create-data-schema}
