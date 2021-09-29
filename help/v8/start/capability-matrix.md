@@ -5,9 +5,9 @@ feature: Overview
 role: Data Engineer
 level: Beginner
 exl-id: 00ba1c43-9558-4adb-83a1-6597c2bbca62,7105477f-d29e-4af8-8789-82b4459761b0
-source-git-commit: f071fc227dac6d72873744ba56eb0b4b676de5dd
+source-git-commit: 873e7df79d60e5c897d09312939bbb1d91f194b2
 workflow-type: tm+mt
-source-wordcount: '909'
+source-wordcount: '929'
 ht-degree: 3%
 
 ---
@@ -89,7 +89,7 @@ Med aktiviteten **[!UICONTROL Change data source]** kan du ändra datakällan f�
 
 ## Otillgängliga funktioner{#gs-unavailable-features}
 
-Observera att vissa funktioner inte är tillgängliga i den första versionen, som:
+Observera att vissa funktioner inte är tillgängliga i den här versionen av Campaign, till exempel:
 
 * Hantera marknadsföringsresurser
 * Distribuerad marknadsföring
@@ -97,6 +97,7 @@ Observera att vissa funktioner inte är tillgängliga i den första versionen, s
 * Kampanjoptimering
 * Responshanteraren
 * Hybrid/lokala distributionsmodeller
+* Twitter
 
 >[!CAUTION]
 >
@@ -106,14 +107,18 @@ Observera att vissa funktioner inte är tillgängliga i den första versionen, s
 >
 >Om du är osäker på din distributionsmodell eller har frågor kontaktar du ditt kontoteam.
 
-## Borttagna funktioner{#gs-removed}
+## Funktioner som inte stöds{#gs-removed}
 
-För att den nya arkitekturen och distributionsmodellen i Campaign v8 ska överensstämma med Campaign v8 är vissa tidigare Campaign Classic v7-funktioner inte längre tillgängliga i Campaign v8.
+För att passa den nya arkitekturen och distributionsmodellen i Campaign v8 stöds inte längre vissa tidigare Campaign Classic v7-funktioner i Campaign v8, som:
 
 * Kuponger
 * Webbspårning
 * Undersökningar
-* Social marknadsföring
+* Social marknadsföring med Facebook
 * ACS Connector (Prime offer)
 * Integrering med LDAP
 * Logga in med användare/lösenord
+
+>[!NOTE]
+>
+>Vissa funktioner som inte är tillgängliga eller som inte stöds kan fortfarande visas i användargränssnittet.
