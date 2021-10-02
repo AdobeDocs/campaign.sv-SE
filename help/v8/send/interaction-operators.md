@@ -5,9 +5,9 @@ feature: Overview
 role: Data Engineer
 level: Beginner
 exl-id: 865ddb84-3373-45e0-849d-9d3c92455d22
-source-git-commit: f071fc227dac6d72873744ba56eb0b4b676de5dd
+source-git-commit: bda1fc37181396d295ee23a7161053d839d9cfc7
 workflow-type: tm+mt
-source-wordcount: '383'
+source-wordcount: '363'
 ht-degree: 1%
 
 ---
@@ -41,7 +41,7 @@ Observera att om erbjudanden används i ett arbetsflöde måste operatorn lägga
 
 >[!NOTE]
 >
->En **erbjudandehanterare** kan bara godkänna ett erbjudande om ingen granskare har angetts, eller om han/hon har deklarerats som granskare i erbjudandemallen som erbjudandet baserades på.
+>**Erbjudandeansvariga** kan endast godkänna ett erbjudande om ingen granskare har angetts, eller om de har deklarerats som granskare i erbjudandemallen.
 
 ## Skapa en leveranshanteraroperator {#delivery-manager}
 
@@ -51,15 +51,15 @@ Observera att om erbjudanden används i ett arbetsflöde måste operatorn lägga
 
 1. Gå till fönstret **[!UICONTROL Groups and named rights]**, klicka på **[!UICONTROL Add]** och välj gruppen **[!UICONTROL Delivery manager]**.
 
-De rättigheter som tilldelats leveransansvarig är/gör det möjligt för dem att utföra följande uppgifter:
+De rättigheter som tilldelats leveransansvariga gör att de kan utföra följande uppgifter:
 
 * Visa **[!UICONTROL Live]**-miljöer.
 * Visa och ändra erbjudandekategorier.
-* Godkänn erbjudanden om han/hon har angetts som en av dess granskare.
+* Godkänn erbjudanden om de är deras granskare.
 
    >[!NOTE]
    >
-   >En **leveranshanterare** kan bara godkänna ett erbjudande om han/hon har deklarerats som granskare under konfigurationen av erbjudandet.
+   >**Leveranshanteraren** kan bara godkänna ett erbjudande om han eller hon har deklarerats som granskare i konfigurationen för erbjudandet.
 
 ## Behörighetsmatris per interaktionsoperator {#recap-of-rights-according-to-operator}
 
