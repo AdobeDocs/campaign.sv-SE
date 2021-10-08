@@ -5,7 +5,7 @@ feature: Overview
 role: Data Engineer
 level: Beginner
 exl-id: 96693af9-50db-4298-ae02-c238d35e52b4
-source-git-commit: f071fc227dac6d72873744ba56eb0b4b676de5dd
+source-git-commit: 9e07353859e63b71abb61526f40675f18837bc59
 workflow-type: tm+mt
 source-wordcount: '311'
 ht-degree: 2%
@@ -54,7 +54,7 @@ Följ stegen nedan för att implementera Campaign-mellanlagringsmekanismen för 
    </srcSchema>
    ```
 
-   ? Läs mer om att skapa anpassade scheman i [den här sidan](create-schema.md).
+   ![](../assets/do-not-localize/glass.png) Läs mer om hur du skapar anpassade scheman på  [den här sidan](create-schema.md).
 
 1. Spara och uppdatera databasstrukturen.  [Läs mer](update-database-structure.md)
 

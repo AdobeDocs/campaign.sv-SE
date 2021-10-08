@@ -6,7 +6,7 @@ feature: Push
 role: Developer
 level: Experienced
 exl-id: 31c13d7e-55d1-4fbb-82e0-5779a17d65ac
-source-git-commit: ea7d540af082782114f4a3e32c9d880b0d14df43
+source-git-commit: 9e07353859e63b71abb61526f40675f18837bc59
 workflow-type: tm+mt
 source-wordcount: '1288'
 ht-degree: 1%
@@ -15,9 +15,9 @@ ht-degree: 1%
 
 # Integrera Campaign SDK:er med er app {#integrate-campaign-sdk}
 
-Använd Campaign SDK för iOS och Android för att underlätta integreringen av mobilapplikationen i Adobe Campaign.
+Använd Campaign SDK:er för iOS och Android för att underlätta integreringen av mobilapplikationerna i Adobe Campaign.
 
-Versioner som stöds av Android och iOS, och Campaign SDK-kompatibla versioner för Campaign v8, listas i [kompatibilitetsmatrisen](../start/compatibility-matrix.md#MobileSDK).
+Versioner som stöds av Android och iOS samt Campaign SDK-kompatibla versioner för Campaign v8 listas i [kompatibilitetsmatrisen](../start/compatibility-matrix.md#MobileSDK).
 
 >[!NOTE]
 >
@@ -638,7 +638,7 @@ Lär dig hur du implementerar FCM i ditt program i [Google Documentation](https:
    - (void) registerDeviceStatus: (ACCRegisterDeviceStatus) status:(NSString *) errorReason;
    ```
 
-   * **Med** Status kan du veta om en registrering lyckades eller om ett fel uppstod.
+   * **** Med status kan du veta om en registrering lyckades eller om ett fel uppstod.
 
    * **** ErrorReasonger dig mer information om de fel som uppstod. Mer information om tillgängliga fel och deras beskrivningar finns i tabellen nedan.
 
@@ -794,7 +794,7 @@ Lär dig hur du implementerar FCM i ditt program i [Google Documentation](https:
 
 Med variablerna kan du definiera mobilprogrammets beteende efter att ha tagit emot ett meddelande. Dessa variabler måste definieras i mobilprogramkoden och i Adobe Campaign-konsolen på fliken **[!UICONTROL Variables]** i den dedikerade mobilprogramtjänsten.
 
-↗️ Läs mer i **Campaign Classic v7-dokumentationen** för mobilappen: [Konfigurationssteg för iOS](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/sending-push-notifications/configure-the-mobile-app/configuring-the-mobile-application.html){target=&quot;_blank&quot;} och [Konfigurationssteg för Andoid](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/sending-push-notifications/configure-the-mobile-app/configuring-the-mobile-application-android.html){target=&quot;_blank&quot;}.
+![](../assets/do-not-localize/book.png) Läs mer i  **Campaign Classic v7-** dokumentationen om mobilappen:  [Konfigurationssteg för iOS](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/sending-push-notifications/configure-the-mobile-app/configuring-the-mobile-application.html){target=&quot;_blank&quot;} och  [konfigurationssteg för Andoid](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/sending-push-notifications/configure-the-mobile-app/configuring-the-mobile-application-android.html){target=&quot;_blank&quot;}.
 
 Nedan visas ett exempel på en kod som gör att ett mobilprogram kan samla in tillagda variabler i ett meddelande. I vårt exempel använder vi variabeln&quot;VAR&quot;.
 

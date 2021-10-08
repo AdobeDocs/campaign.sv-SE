@@ -2,9 +2,9 @@
 title: Formulär för kampanjindata
 description: Lär dig hur du anpassar indataformulär
 exl-id: 62908bba-9cfa-42b6-b463-b601496d535b
-source-git-commit: f071fc227dac6d72873744ba56eb0b4b676de5dd
+source-git-commit: 391eac2f5e4d4c8c5d4dadd3394798361640e1d8
 workflow-type: tm+mt
-source-wordcount: '2555'
+source-wordcount: '2552'
 ht-degree: 0%
 
 ---
@@ -84,11 +84,11 @@ Redigeringskontrollen anpassas automatiskt till motsvarande datatyp och använde
 
 Som standard visas varje fält på en rad och tar upp allt tillgängligt utrymme beroende på datatypen.
 
-↗️ Alla formulärattribut visas i [Campaign Classic v7-dokumentationen](https://docs.adobe.com/content/help/en/campaign-classic/technicalresources/api/control-Button.html).
+![](../assets/do-not-localize/book.png) Alla formulärattribut visas i dokumentationen [ för ](https://experienceleague.adobe.com/developer/campaign-api/api/control-Button.html)Campaign Classic v7.
 
 ## Formatering {#formatting}
 
-Layouten för kontrollerna ser ut som den layout som används i HTML-tabeller, där en kontroll kan delas upp i flera kolumner, element som sammanflätas eller där det tillgängliga utrymmet kan anges. Tänk dock på att du bara kan dela upp området efter proportioner med formateringen. Du kan inte ange fasta dimensioner för ett objekt.
+Layouten på kontrollerna ser ut som den layout som används i tabeller i HTML, med möjlighet att dela upp en kontroll i flera kolumner, sammanflätade element eller ange hur mycket utrymme som finns tillgängligt. Tänk dock på att du bara kan dela upp området efter proportioner med formateringen. Du kan inte ange fasta dimensioner för ett objekt.
 
 Så här visar du kontrollerna i exemplet ovan i två kolumner:
 

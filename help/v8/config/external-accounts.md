@@ -5,7 +5,7 @@ feature: Overview
 role: Data Engineer
 level: Beginner
 exl-id: 9634b576-2854-4ea9-ba0d-8efaab2c4aee
-source-git-commit: f071fc227dac6d72873744ba56eb0b4b676de5dd
+source-git-commit: 9e07353859e63b71abb61526f40675f18837bc59
 workflow-type: tm+mt
 source-wordcount: '1000'
 ht-degree: 4%
@@ -40,7 +40,7 @@ Följande tekniska konton används av Adobe Campaign för att aktivera och köra
 
    Det externa kontot **studs-e-post** anger det externa POP3-kontot som ska användas för att ansluta till e-posttjänsten. Alla servrar som konfigurerats för POP3-åtkomst kan användas för att ta emot returmeddelanden.
 
-   ↗️ Läs mer om inkommande e-post i [Campaign Classic v7-dokumentation](https://experienceleague.adobe.com/docs/campaign-classic/using/automating-with-workflows/event-activities/inbound-emails.html){target=&quot;_blank&quot;}
+   ![](../assets/do-not-localize/book.png) Läs mer om inkommande e-post i dokumentationen [ för ](https://experienceleague.adobe.com/docs/campaign-classic/using/automating-with-workflows/event-activities/inbound-emails.html)Campaign Classic v7 {target=&quot;_blank&quot;}
 
 * **Dirigering**
 
@@ -54,7 +54,7 @@ Följande tekniska konton används av Adobe Campaign för att aktivera och köra
 
    När det gäller transaktionsmeddelanden är körningsinstanserna länkade till kontrollinstansen och kopplar dem. Transaktionsmeddelandemallar distribueras till körningsinstansen.
 
-   ? Läs mer om arkitekturen i Message Center i [den här sidan](../dev/architecture.md#transac-msg-archi).
+   ![](../assets/do-not-localize/glass.png) Läs mer om arkitekturen i Message Center på  [den här sidan](../dev/architecture.md#transac-msg-archi).
 
 ## Tillgång till externa systemkonton
 
@@ -64,7 +64,7 @@ Följande tekniska konton används av Adobe Campaign för att aktivera och köra
 
    Externa databaser som är kompatibla med Adobe Campaign v8 visas i [kompatibilitetsmatrisen](../start/compatibility-matrix.md)
 
-   ? Läs mer om FDA-alternativet (Federated Data Access) i [det här avsnittet](../connect/fda.md).
+   ![](../assets/do-not-localize/glass.png) Läs mer om FDA-alternativet (Federated Data Access) i  [det här avsnittet](../connect/fda.md).
 
 ## Externa konton för Adobe Solution Integration
 
@@ -72,20 +72,20 @@ Följande tekniska konton används av Adobe Campaign för att aktivera och köra
 
    Det externa **[!UICONTROL Adobe Experience Cloud]**-kontot används för att implementera Adobe IMS för att ansluta till Adobe Campaign-konsolen med en Adobe ID.
 
-   ? Läs mer om Adobe Identity Management-tjänsten (IMS) i [det här avsnittet](../start/connect.md#connect-ims).
+   ![](../assets/do-not-localize/glass.png) Läs mer om Adobe Identity Management-tjänsten (IMS) i  [det här avsnittet](../start/connect.md#connect-ims).
 
 * **Webbanalys**
 
    Använd det externa **[!UICONTROL Web Analytics (Adobe Analytics)]**-kontot för att konfigurera dataöverföring från Adobe Analytics till Adobe Campaign.
 
-   ? Läs mer om Adobe Campaign - Adobe Analytics-integrering i [den här sidan](../connect/ac-aa.md).
+   ![](../assets/do-not-localize/glass.png) Läs mer om Adobe Campaign - Adobe Analytics-integrering på  [den här sidan](../connect/ac-aa.md).
 
    ? Som användare av hanterade Cloud Services ska du [kontakta Adobe](../start/campaign-faq.md#support) för att integrera Adobe Analytics med Campaign.
 
    * **Adobe Experience Manager**
    Med det externa **[!UICONTROL AEM]**-kontot kan du hantera innehållet i e-postleveranser och formulär direkt i Adobe Experience Manager.
 
-   ? Läs mer om Adobe Campaign - Adobe Analytics-integrering i [den här sidan](../connect/ac-aem.md).
+   ![](../assets/do-not-localize/glass.png) Läs mer om Adobe Campaign - Adobe Analytics-integrering på  [den här sidan](../connect/ac-aem.md).
 
    ? Som användare av hanterade Cloud Services ska du [kontakta Adobe](../start/campaign-faq.md#support) för att integrera Adobe Experience Manager med Adobe Campaign.
 
@@ -96,11 +96,11 @@ Följande tekniska konton används av Adobe Campaign för att aktivera och köra
 
    Med det externa **[!UICONTROL Microsoft Dynamics CRM]**-kontot kan du importera och exportera Microsoft Dynamics-data till Adobe Campaign.
 
-   ? Läs mer om integrering mellan Adobe Campaign och Microsoft Dynamics CRM i [den här sidan](../connect/crm.md).
+   ![](../assets/do-not-localize/glass.png) Läs mer om Adobe Campaign - Microsoft Dynamics CRM-integrering på  [den här sidan](../connect/crm.md).
 
    Med distributionstypen **[!UICONTROL Web API]** och verifieringen **[!UICONTROL Password credentials]** måste du ange följande information:
 
-   * **[!UICONTROL Account]**: Konto som används för att logga in i Microsoft CRM.
+   * **[!UICONTROL Account]**: Det konto som används för att logga in på Microsoft CRM.
 
    * **[!UICONTROL Server]**: URL till din Microsoft CRM-server.
 
@@ -142,7 +142,7 @@ Följande tekniska konton används av Adobe Campaign för att aktivera och köra
 
 Dessa externa konton kan användas för att importera eller exportera data till Adobe Campaign med en **[!UICONTROL Transfer file]**-arbetsflödesaktivitet.
 
-↗️ Läs mer om filöverföring i arbetsflöden i [Campaign Classic v7-dokumentation](https://experienceleague.adobe.com/docs/campaign-classic/using/automating-with-workflows/event-activities/file-transfer.html){target=&quot;_blank&quot;}
+![](../assets/do-not-localize/book.png) Läs mer om filöverföring i arbetsflöden i  [Campaign Classic v7-dokumentationen](https://experienceleague.adobe.com/docs/campaign-classic/using/automating-with-workflows/event-activities/file-transfer.html){target=&quot;_blank&quot;}
 
 * **FTP och SFTP**
 
@@ -155,11 +155,11 @@ Om du vill göra det anger du den adress och de autentiseringsuppgifter som ska 
 
    * **[!UICONTROL AWS S3 Account Server]**: URL-adressen till servern, ifylld så här:    ```<S3bucket name>.s3.amazonaws.com/<s3object path>```
 
-   * **[!UICONTROL AWS access key ID]**: Lär dig hur du hittar ditt ID för AWS-åtkomstnyckel i  [Amazon-dokumentationen](https://docs.aws.amazon.com/general/latest/gr/aws-sec-cred-types.html#access-keys-and-secret-access-keys) .
+   * **[!UICONTROL AWS access key ID]**: Läs om hur du hittar ditt ID för AWS-åtkomstnyckel i  [Amazon-dokumentationen](https://docs.aws.amazon.com/general/latest/gr/aws-sec-cred-types.html#access-keys-and-secret-access-keys) .
 
-   * **[!UICONTROL Secret access key to AWS]**: Lär dig hur du hittar din hemliga åtkomstnyckel till AWS i  [Amazon-dokumentationen](https://aws.amazon.com/fr/blogs/security/wheres-my-secret-access-key/).
+   * **[!UICONTROL Secret access key to AWS]**: Läs om hur du hittar din hemliga åtkomstnyckel till AWS i  [Amazon-dokumentationen](https://aws.amazon.com/fr/blogs/security/wheres-my-secret-access-key/).
 
-   * **[!UICONTROL AWS Region]**: Läs mer om AWS-regioner i  [Amazon-dokumentationen](https://aws.amazon.com/about-aws/global-infrastructure/regions_az/).
+   * **[!UICONTROL AWS Region]**: Läs mer om AWS i  [Amazon dokumentation](https://aws.amazon.com/about-aws/global-infrastructure/regions_az/).
 
    * Med kryssrutan **[!UICONTROL Use server side encryption]** kan du lagra filen i S3-krypterat läge. Lär dig hur du hittar åtkomstnyckel-ID och hemlig åtkomstnyckel i [Amazon-dokumentation](https://docs.aws.amazon.com/general/latest/gr/aws-sec-cred-types.html#access-keys-and-secret-access-keys).
 

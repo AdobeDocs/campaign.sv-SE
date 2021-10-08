@@ -2,7 +2,7 @@
 title: Utöka kampanjscheman
 description: Lär dig hur du utökar Campaign-scheman
 exl-id: e4dcb228-0683-437a-88cd-bd7ed33da921
-source-git-commit: f071fc227dac6d72873744ba56eb0b4b676de5dd
+source-git-commit: 9e07353859e63b71abb61526f40675f18837bc59
 workflow-type: tm+mt
 source-wordcount: '254'
 ht-degree: 2%
@@ -22,7 +22,7 @@ De viktigaste stegen för att anpassa Campaign-datamodellen är:
 >[!CAUTION]
 >Inbyggt schema får inte ändras direkt. Om du behöver anpassa ett inbyggt schema måste du utöka det.
 
-? Om du vill ha en bättre förståelse för de inbyggda tabellerna i Campaign och deras interaktion kan du läsa [den här sidan](datamodel.md). Se även rekommendationer när du skapar ett nytt schema i [den här sidan](create-schema.md).
+![](../assets/do-not-localize/glass.png) Om du vill ha en bättre förståelse för de inbyggda tabellerna i Campaign och deras interaktion kan du läsa på  [den här sidan](datamodel.md). Se även rekommendationer när du skapar ett nytt schema i [den här sidan](create-schema.md).
 
 Följ stegen nedan för att utöka ett schema:
 

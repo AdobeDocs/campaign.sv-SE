@@ -5,7 +5,7 @@ feature: Overview
 role: Data Engineer
 level: Beginner
 exl-id: 4dc2008d-681c-4a79-8fc8-c270c9224ab9
-source-git-commit: f071fc227dac6d72873744ba56eb0b4b676de5dd
+source-git-commit: 9e07353859e63b71abb61526f40675f18837bc59
 workflow-type: tm+mt
 source-wordcount: '920'
 ht-degree: 3%
@@ -119,7 +119,7 @@ Använd fliken **[!UICONTROL Content]** för att definiera erbjudandeinnehållet
    * **[!UICONTROL Title]** : Ange den titel som du vill ska visas i erbjudandet. Varning: detta avser inte erbjudandets etikett, som definieras på fliken **[!UICONTROL General]**.
    * **[!UICONTROL Destination URL]** : ange erbjudandets URL. Det måste börja med&quot;http://&quot; eller&quot;https://&quot;.
    * **[!UICONTROL Image URL]** : Ange en URL eller en åtkomstsökväg till bilden av erbjudandet.
-   * **[!UICONTROL HTML content]** /  **[!UICONTROL Text content]** : Ange innehållet i erbjudandet på fliken som du vill ha. Om du vill generera spårning måste **[!UICONTROL HTML content]** bestå av HTML-element som kan omslutas av ett `<div>`-tytelement. Resultatet av ett `<table>`-element på HTML-sidan blir till exempel följande:
+   * **[!UICONTROL HTML content]** /  **[!UICONTROL Text content]** : Ange innehållet i erbjudandet på fliken som du vill ha. Om du vill generera spårning måste **[!UICONTROL HTML content]** bestå av HTML-element som kan omslutas av ett `<div>`-tytelement. Resultatet av ett `<table>`-element på HTML-sidan blir följande:
 
    ```
       <div> 
@@ -144,7 +144,7 @@ Använd fliken **[!UICONTROL Content]** för att definiera erbjudandeinnehållet
 
    ![](assets/offer_content_create_003.png)
 
-   I det här exemplet måste erbjudandet innehålla en titel, en bild, HTML-innehåll och en mål-URL.
+   I det här exemplet måste erbjudandet innehålla en titel, en bild, HTML och en mål-URL.
 
 ## Förhandsgranska erbjudandet {#previewing-the-offer}
 
@@ -182,13 +182,13 @@ Creating hypotheses is detailed in [this page](../../campaign/using/about-respon
 
 Du kan nu godkänna och aktivera erbjudandet så att det blir tillgängligt i **Live**-miljön.
 
-↗️ Mer information finns i [dokumentationen för Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/managing-offers/managing-an-offer-catalog/approving-and-activating-an-offer.html?lang=en#approving-offer-content)
+![](../assets/do-not-localize/book.png) Mer information finns i dokumentationen för  [Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/managing-offers/managing-an-offer-catalog/approving-and-activating-an-offer.html?lang=en#approving-offer-content)
 
 ## Hantera presentation av erbjudanden{#offer-presentation}
 
 Med Campaign kan ni styra flödet av erbjudandeförslag med hjälp av presentationsregler. Dessa regler, som är specifika för Campaign Interaction, är **typologiregler**. Med dem kan du utesluta erbjudanden baserat på historiken för de förslag som redan har lämnats till en mottagare. De refereras i miljön.
 
-↗️ Mer information finns i [dokumentationen för Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/managing-offers/managing-an-offer-catalog/managing-offer-presentation.html?lang=en#managing-offers)
+![](../assets/do-not-localize/book.png) Mer information finns i dokumentationen för  [Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/managing-offers/managing-an-offer-catalog/managing-offer-presentation.html?lang=en#managing-offers)
 
 ## Simulera erbjudanden
 
@@ -196,4 +196,4 @@ Med simuleringsmodulen kan du testa distributionen av erbjudanden som tillhör e
 
 Simuleringen tar hänsyn till de kontexter och regler för behörighet som tidigare tillämpats på erbjudanden och deras presentationsregler. Detta gör att ni kan testa och förfina olika versioner av ert erbjudande utan att faktiskt använda ett erbjudande eller över/under beställning av ett mål, eftersom simuleringen inte har någon effekt på de avsedda mottagarna.
 
-↗️ Mer information om erbjudandesimulering finns i [Campaign Classic v7-dokumentationen](https://experienceleague.adobe.com/docs/campaign-classic/using/managing-offers/simulating-offers/about-offers-simulation.html?lang=en)
+![](../assets/do-not-localize/book.png) Mer information om erbjudandesimulering finns i dokumentationen för  [Campaign Classic v7.](https://experienceleague.adobe.com/docs/campaign-classic/using/managing-offers/simulating-offers/about-offers-simulation.html?lang=en)

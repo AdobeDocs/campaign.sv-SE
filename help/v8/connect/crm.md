@@ -4,8 +4,7 @@ description: Lär dig hur du arbetar med Campaign och CRM
 feature: Overview
 role: Data Engineer
 level: Beginner
-exl-id: c2d34ee9-4427-48e7-a8cf-0ae02a801d50
-source-git-commit: f071fc227dac6d72873744ba56eb0b4b676de5dd
+source-git-commit: 391eac2f5e4d4c8c5d4dadd3394798361640e1d8
 workflow-type: tm+mt
 source-wordcount: '266'
 ht-degree: 22%
@@ -30,11 +29,11 @@ CRM och versioner som stöds finns detaljerade i Campaign [Kompatibilitetsmatris
 
 ## Implementeringssteg {#crm-implementation-steps}
 
-↗️ Lär dig steg för steg hur du ansluter Campaign och Microsoft Dynamics i [Campaign Classic v7-dokumentation](https://experienceleague.adobe.com/docs/campaign-classic/using/getting-started/connectors/crm-connectors/crm-ms-dynamics.html?lang=en#microsoft-dynamics-implementation-steps)
+![](../assets/do-not-localize/book.png) Lär dig steg för steg hur du ansluter Campaign och Microsoft Dynamics i dokumentationen för  [Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/getting-started/connectors/crm-connectors/crm-ms-dynamics.html?lang=en#microsoft-dynamics-implementation-steps)
 
-↗️ Lär dig steg för steg hur du ansluter Campaign och Salesforce i [Campaign Classic v7-dokumentation](https://experienceleague.adobe.com/docs/campaign-classic/using/getting-started/connectors/crm-connectors/crm-sfdc.html?lang=en#getting-started)
+![](../assets/do-not-localize/book.png) Lär dig steg för steg hur du ansluter Campaign och Salesforce i dokumentationen för  [Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/getting-started/connectors/crm-connectors/crm-sfdc.html?lang=en#getting-started)
 
 
 Datasynkronisering mellan Adobe Campaign och CRM utförs via en dedikerad arbetsflödesaktivitet. Bygg era arbetsflöden för att automatisera synkroniseringen mellan Campaign och CRM. Du kan skapa ett arbetsflöde som importerar kontakter via Microsoft Dynamics, synkroniserar dem med befintliga Adobe Campaign-data, tar bort dubblettkontakter och sedan uppdaterar Adobe Campaign-databasen.
 
-↗️ Läs mer i [Campaign Classic v7-dokumentationen](https://experienceleague.adobe.com/docs/campaign-classic/using/getting-started/connectors/crm-connectors/crm-data-sync.html?lang=en#getting-started)
+![](../assets/do-not-localize/book.png) Läs mer i dokumentationen för  [Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/getting-started/connectors/crm-connectors/crm-data-sync.html?lang=en#getting-started)

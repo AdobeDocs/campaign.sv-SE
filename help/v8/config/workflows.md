@@ -5,7 +5,7 @@ feature: Overview
 role: Data Engineer
 level: Beginner
 exl-id: 0be1c5f5-f07d-46dc-bebc-5eb50f466547
-source-git-commit: f071fc227dac6d72873744ba56eb0b4b676de5dd
+source-git-commit: 780a29dab99ad2bda554134ca95c435b9e76b494
 workflow-type: tm+mt
 source-wordcount: '1545'
 ht-degree: 0%
@@ -33,19 +33,19 @@ Lär dig hur du utformar arbetsflöden i dessa [kompletta användningsfall](#end
 
 Läs mer om arbetsflöden, användargränssnitt och körning i dokumentationen för Campaign Classic v7:
 
-↗️ [Kom igång med arbetsflöden](https://experienceleague.adobe.com/docs/campaign-classic/using/automating-with-workflows/introduction/about-workflows.html?lang=en#automating-with-workflows){target=&quot;_blank&quot;}
+* [Kom igång med arbetsflöden](https://experienceleague.adobe.com/docs/campaign-classic/using/automating-with-workflows/introduction/about-workflows.html?lang=en#automating-with-workflows){target=&quot;_blank&quot;}
 
-↗️ [Bästa arbetsflöden](https://experienceleague.adobe.com/docs/campaign-classic/using/automating-with-workflows/introduction/workflow-best-practices.html){target=&quot;_blank&quot;}
+* [Bästa praxis](https://experienceleague.adobe.com/docs/campaign-classic/using/automating-with-workflows/introduction/workflow-best-practices.html) för arbetsflöden{target=&quot;_blank&quot;}
 
-↗️ [Inbyggda tekniska arbetsflöden](https://experienceleague.adobe.com/docs/campaign-classic/using/automating-with-workflows/advanced-management/about-technical-workflows.html){target=&quot;_blank&quot;}
+* [Inbyggda tekniska arbetsflöden](https://experienceleague.adobe.com/docs/campaign-classic/using/automating-with-workflows/advanced-management/about-technical-workflows.html) {target=&quot;_blank&quot;}
 
-↗️ [Kör arbetsflöden för övervakning](https://experienceleague.adobe.com/docs/campaign-classic/using/automating-with-workflows/monitoring-workflows/monitoring-workflow-execution.html){target=&quot;_blank&quot;}
+* [Körning](https://experienceleague.adobe.com/docs/campaign-classic/using/automating-with-workflows/monitoring-workflows/monitoring-workflow-execution.html) av övervakararbetsflöden{target=&quot;_blank&quot;}
 
-↗️ [Bygg en målgrupp i ett marknadsföringskampanjarbetsflöde](https://experienceleague.adobe.com/docs/campaign-classic/using/orchestrating-campaigns/orchestrate-campaigns/marketing-campaign-target.html?lang=en#building-the-main-target-in-a-workflow){target=&quot;_blank&quot;}
+* [Bygg en målgrupp i ett marknadsföringskampanjarbetsflöde](https://experienceleague.adobe.com/docs/campaign-classic/using/orchestrating-campaigns/orchestrate-campaigns/marketing-campaign-target.html?lang=en#building-the-main-target-in-a-workflow){target=&quot;_blank&quot;}
 
 ## Arbetsflödesaktiviteter {#wf-activities}
 
-↗️ Läs mer om tillgängliga arbetsflödesaktiviteter [Campaign Classic v7-dokumentation](https://experienceleague.adobe.com/docs/campaign-classic/using/automating-with-workflows/introduction/about-activities.html){target=&quot;_blank&quot;}
+![](../assets/do-not-localize/book.png) Läs mer om de tillgängliga arbetsflödesaktiviteterna  [Campaign Classic v7-dokumentationen](https://experienceleague.adobe.com/docs/campaign-classic/using/automating-with-workflows/introduction/about-activities.html){target=&quot;_blank&quot;}
 
 Arbetsflödesaktiviteter grupperas efter kategori. De fyra aktivitetskategorierna är tillgängliga:
 
@@ -92,18 +92,18 @@ Så här använder du aktiviteten **[!UICONTROL Change Data Source]**:
 
 Designa återkommande arbetsflöde och skapa en ny leveransinstans varje gång arbetsflödet körs. Om ditt arbetsflöde till exempel är utformat för att köras en gång i veckan resulterar det i 52 leveranser efter ett år. Detta innebär också att loggarna separeras av varje leveransinstans.
 
-↗️ Lär dig hur du skapar en återkommande kampanj i [Campaign Classic v7-dokumentation](https://experienceleague.adobe.com/docs/campaign-classic/using/orchestrating-campaigns/orchestrate-campaigns/setting-up-marketing-campaigns.html?lang=en#recurring-and-periodic-campaigns){target=&quot;_blank&quot;}
+![](../assets/do-not-localize/book.png) Lär dig hur du skapar en återkommande kampanj i dokumentationen [ för ](https://experienceleague.adobe.com/docs/campaign-classic/using/orchestrating-campaigns/orchestrate-campaigns/setting-up-marketing-campaigns.html?lang=en#recurring-and-periodic-campaigns)Campaign Classic v7 {target=&quot;_blank&quot;}
 
 
 ## Utnyttja utlösarhändelser
 
 Använd Campaign Transactional Messaging för att automatisera meddelanden som genereras från händelser som triggas av informationssystem. Dessa transaktionsmeddelanden kan t.ex. vara faktura, orderbekräftelse, leveransbekräftelse, lösenordsändring, meddelande om att produkten inte är tillgänglig, kontoutdrag eller skapande av webbkonto. Dessa meddelanden kan skickas individuellt eller i grupp via e-post, SMS eller push-meddelanden.
 
-? Läs mer om funktioner för transaktionsmeddelanden i [det här avsnittet](../send/transactional.md).
+![](../assets/do-not-localize/glass.png) Läs mer om funktioner för transaktionsmeddelanden i  [det här avsnittet](../send/transactional.md).
 
 Koppla upp Adobe Campaign och Adobe Analytics för att ta fram användaråtgärder och skicka i stort sett personaliserade meddelanden i realtid.
 
-? Lär dig hur du integrerar Campaign med andra lösningar i [det här avsnittet](../start/connect.md)
+![](../assets/do-not-localize/glass.png) Lär dig hur du integrerar Campaign med andra lösningar i  [det här avsnittet](../start/connect.md)
 
 
 ## Användningsexempel för hela arbetsflödet{#end-to-end-uc}
@@ -122,7 +122,7 @@ I det här avsnittet hittar du olika användningsexempel som utnyttjar funktione
 
    I det här användningsexemplet visas hur du planerar att skicka ett återkommande e-postmeddelande till en lista över mottagare på dagen för deras födelsedag.
 
-* [Inläsning av leveransinnehåll](https://experienceleague.adobe.com/docs/campaign-classic/using/automating-with-workflows/use-cases/deliveries/loading-delivery-content.html){target=&quot;_blank&quot;} När leveransinnehållet är tillgängligt i en HTML-fil på en fjärrserver kan du enkelt läsa in innehållet i Adobe Campaign-leveranser.
+* [Inläsning av leveransinnehåll](https://experienceleague.adobe.com/docs/campaign-classic/using/automating-with-workflows/use-cases/deliveries/loading-delivery-content.html){target=&quot;_blank&quot;} När leveransinnehållet är tillgängligt i en HTML-fil på en fjärrserver kan du enkelt läsa in det här innehållet i Adobe Campaign-leveranser.
 
 * [Arbetsflöde](https://experienceleague.adobe.com/docs/campaign-classic/using/automating-with-workflows/use-cases/deliveries/cross-channel-delivery-workflow.html) för flerkanalsleverans{target=&quot;_blank&quot;}
 
@@ -143,7 +143,7 @@ I det här avsnittet hittar du olika användningsexempel som utnyttjar funktione
 
 * [Skicka en rapport till en lista](https://experienceleague.adobe.com/docs/campaign-classic/using/automating-with-workflows/use-cases/monitoring/sending-a-report-to-a-list.html){target=&quot;_blank&quot;}
 
-   Lär dig hur du skapar en månadsinbyggd rapport för spårningsindikatorer i PDF-format och skickar den till en lista över kampanjoperatörer.
+   Lär dig hur du skapar en månadsinbyggd rapport för spårningsindikatorer i PDF-format och skickar den till en lista över kampanjoperatorer.
 
 * [Övervaka dina arbetsflöden](https://experienceleague.adobe.com/docs/campaign-classic/using/automating-with-workflows/use-cases/monitoring/supervising-workflows.html){target=&quot;_blank&quot;}
 

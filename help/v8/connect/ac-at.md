@@ -4,7 +4,7 @@ description: Lär dig hur du arbetar med Campaign och Adobe Target
 feature: Overview
 role: Data Engineer
 level: Beginner
-source-git-commit: 2dc5f54065d9dad6e007a2f70f1ccf1696121628
+source-git-commit: 391eac2f5e4d4c8c5d4dadd3394798361640e1d8
 workflow-type: tm+mt
 source-wordcount: '988'
 ht-degree: 1%

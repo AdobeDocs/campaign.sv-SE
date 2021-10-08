@@ -5,7 +5,7 @@ feature: Overview
 role: Data Engineer
 level: Beginner
 exl-id: 7b145193-d4ae-47d0-b694-398c1e35eee4,df76e7ff-3b97-41be-abc2-640748680ff3
-source-git-commit: f071fc227dac6d72873744ba56eb0b4b676de5dd
+source-git-commit: eb8ad88ffd9dbaaf1f9ace2e88ba4486711bc72d
 workflow-type: tm+mt
 source-wordcount: '391'
 ht-degree: 2%
@@ -20,7 +20,7 @@ Adobe Campaign innehåller en uppsättning inbyggda tekniska arbetsflöden. Tekn
 
 Dessa arbetsflöden utför underhållsåtgärder på databasen, utnyttjar spårningsinformationen i leveransloggarna, skapar återkommande kampanjer med mera.
 
-↗️ Den fullständiga listan över tekniska arbetsflöden finns i [Campaign Classic v7-dokumentationen](https://experienceleague.adobe.com/docs/campaign-classic/using/automating-with-workflows/advanced-management/about-technical-workflows.html){target=&quot;_blank&quot;}
+![](../assets/do-not-localize/book.png) En fullständig lista över tekniska arbetsflöden finns i dokumentationen [ för ](https://experienceleague.adobe.com/docs/campaign-classic/using/automating-with-workflows/advanced-management/about-technical-workflows.html)Campaign Classic v7 {target=&quot;_blank&quot;}
 
 
 Utöver dessa tekniska arbetsflöden förlitar sig Campaign v8 på specifika tekniska arbetsflöden för att hantera [datareplikering](#data-replication).
@@ -76,6 +76,6 @@ nlserver ffdaReplicateStaging -stagingSchema -instance:acc1
 
 **Relaterade ämnen**
 
-↗️ Lär dig hur du kommer igång med arbetsflöden i [Campaign Classic v7-dokumentation](https://experienceleague.adobe.com/docs/campaign-classic/using/automating-with-workflows/introduction/about-workflows.html?lang=en#automating-with-workflows){target=&quot;_blank&quot;}
+![](../assets/do-not-localize/book.png) Lär dig hur du kommer igång med arbetsflöden i  [Campaign Classic v7-dokumentationen](https://experienceleague.adobe.com/docs/campaign-classic/using/automating-with-workflows/introduction/about-workflows.html?lang=en#automating-with-workflows){target=&quot;_blank&quot;}
 
-? Få åtkomst till kvarhållningsperioder i [det här avsnittet](../dev/datamodel-best-practices.md#data-retention)
+![](../assets/do-not-localize/glass.png) Få åtkomst till kvarhållningsperioder för data i  [det här avsnittet](../dev/datamodel-best-practices.md#data-retention)

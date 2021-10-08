@@ -5,7 +5,7 @@ feature: Overview
 role: Data Engineer
 level: Beginner
 exl-id: 7771a02c-ebd4-48b6-b25e-6b6e420ad493
-source-git-commit: f071fc227dac6d72873744ba56eb0b4b676de5dd
+source-git-commit: 9e07353859e63b71abb61526f40675f18837bc59
 workflow-type: tm+mt
 source-wordcount: '454'
 ht-degree: 2%
@@ -54,9 +54,9 @@ Cloud-databastekniken kräver inget specifikt underhåll för att garantera pres
 
 ## Integrerat ekosystem
 
-Ni kan integrera Campaign med en uppsättning kraftfulla Adobe-lösningar, som: Adobe Analytics, Adobe Journey Orchestration, CDP i realtid med mera.
+Ni kan integrera Campaign med en uppsättning kraftfulla Adobe-lösningar, som: Adobe Analytics, Adobe Journey Orchestration, Real-Time CDP med flera.
 
 Ni kan också konfigurera prediktiv optimering av sändningstiden och prediktiv poängsättning med Journey AI samt öka antalet öppna samtal, antalet klick och intäkterna.
 
-? [Läs mer om Campaign-integreringar](../connect/integration.md)
+![](../assets/do-not-localize/glass.png) [Läs mer om Campaign-integreringar](../connect/integration.md)
 

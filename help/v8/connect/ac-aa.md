@@ -4,7 +4,7 @@ description: Lär dig integrera Campaign och Analytics
 feature: Overview
 role: Data Engineer
 level: Beginner
-source-git-commit: 2dc5f54065d9dad6e007a2f70f1ccf1696121628
+source-git-commit: 391eac2f5e4d4c8c5d4dadd3394798361640e1d8
 workflow-type: tm+mt
 source-wordcount: '1083'
 ht-degree: 76%
@@ -86,7 +86,7 @@ När du har skapat din **[!UICONTROL Report suite]** måste du konfigurera **[!U
 
    ![](assets/analytics_connnector_6.png)
 
-1. Klicka på  **[!UICONTROL Save]** när du är klar.
+1. Klicka på **[!UICONTROL Save]** när du är klar.
 
 1. Skapa sedan **[!UICONTROL Success events]** genom att välja **[!UICONTROL Conversion]** > **[!UICONTROL Success events]** från knappen **[!UICONTROL Edit settings]**.
 
@@ -109,7 +109,7 @@ När du har skapat din **[!UICONTROL Report suite]** måste du konfigurera **[!U
 
    ![](assets/analytics_connnector_8.png)
 
-1. Klicka på  **[!UICONTROL Save]** när du är klar med.
+1. Klicka på **[!UICONTROL Save]** när du är klar med.
 
 När rapportsviten har konfigurerats måste du konfigurera **[!UICONTROL External accounts]** i Adobe Campaign.
 

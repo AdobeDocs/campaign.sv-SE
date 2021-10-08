@@ -5,10 +5,10 @@ feature: Overview
 role: Data Engineer
 level: Beginner
 exl-id: 09562b6c-3d3d-4808-a70b-202172867f46
-source-git-commit: f071fc227dac6d72873744ba56eb0b4b676de5dd
+source-git-commit: eb8ad88ffd9dbaaf1f9ace2e88ba4486711bc72d
 workflow-type: tm+mt
 source-wordcount: '1213'
-ht-degree: 2%
+ht-degree: 3%
 
 ---
 
@@ -49,15 +49,15 @@ Läs säkerhetsriktlinjer och principer med Adobe Campaign i [checklistan för k
 
 ### Lägga till användare och bevilja behörigheter
 
-Du kan lägga till användare manuellt i kampanjen och associera dem med grupper, justerade mot din rollhierarki. Användarna kan sedan logga in och komma åt de data och behörigheter som passar dem.
+Du kan lägga till användare manuellt i Campaign och associera dem med grupper, justerade mot din rollhierarki. Användarna kan sedan logga in och komma åt de data och behörigheter som passar dem.
 
-↗️ Lär dig hur du lägger till användare i Adobe Campaign i [det här avsnittet](https://experienceleague.adobe.com/docs/campaign-classic/using/getting-started/permissions/access-management.html?lang=en#getting-started){target=&quot;_blank&quot;}.
+![](../assets/do-not-localize/book.png) Lär dig hur du lägger till användare i Adobe Campaign i  [det här avsnittet](https://experienceleague.adobe.com/docs/campaign-classic/using/getting-started/permissions/access-management.html?lang=en#getting-started){target=&quot;_blank&quot;}.
 
 ### Installera Campaign Client Console
 
 Programmets huvudanvändargränssnitt är en avancerad klient, d.v.s. ett inbyggt program (Windows) som kommunicerar med Adobe Campaign programserver enbart med standardInternetprotokoll (SOAP, HTTP osv.). Adobe Campaign Client Console är mycket användarvänligt för ökad produktivitet och använder mycket liten bandbredd (genom att använda ett lokalt cacheminne) och är utformat för enkel driftsättning. Konsolen kan distribueras från en webbläsare, kan uppdateras automatiskt och kräver ingen specifik nätverkskonfiguration eftersom den bara genererar HTTP(S)-trafik.
 
-? [Läs mer om Campaign Client Console](connect.md).
+![](../assets/do-not-localize/glass.png) [Läs mer om Campaign Client Console](connect.md).
 
 ## Förbered din miljö
 
@@ -67,33 +67,33 @@ Innan du börjar skicka meddelanden och skapa marknadsföringskampanjer måste d
 
    Med Campaign kan du lägga till kontakter i molndatabasen. Du kan läsa in en fil, schemalägga och automatisera flera kontaktuppdateringar, samla in data på webben eller ange profilinformation direkt i mottagartabellen.
 
-   ? [Lär dig hur du importerar profiler](import.md).
+   ![](../assets/do-not-localize/glass.png) [Lär dig hur du importerar profiler](import.md).
 
    Målgrupper grupperas i listor och kan skapas med arbetsflöden. De kan sedan användas för flerkanalsleveranser.
 
-   ? [Lär dig definiera målgrupper](audiences.md).
+   ![](../assets/do-not-localize/glass.png) [Lär dig definiera målgrupper](audiences.md).
 
 1. Skapa mallar
 
    Kampanjer, leveranser, jobb eller arbetsflöden är alla baserade på en mall som lagrar viktiga inställningar och funktioner. En inbyggd mall tillhandahålls för varje komponent som ingen specifik konfiguration har definierats för. Du måste konfigurera och anpassa mallar efter dina behov och göra dem tillgängliga för slutanvändarna.
 
-   ↗️ [Läs mer om e-postmallar](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/using-delivery-templates/about-templates.html){target=&quot;_blank&quot;}
+   ![](../assets/do-not-localize/book.png) [Läs mer om e-postmallar](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/using-delivery-templates/about-templates.html){target=&quot;_blank&quot;}
 
-   ↗️ Lär dig hur du arbetar med kampanjmallar i [Campaign Classic v7-dokumentation](https://experienceleague.adobe.com/docs/campaign-classic/using/orchestrating-campaigns/orchestrate-campaigns/marketing-campaign-templates.html?lang=en#orchestrating-campaigns){target=&quot;_blank&quot;}
+   ![](../assets/do-not-localize/book.png) Lär dig hur du arbetar med kampanjmallar i  [Campaign Classic v7-dokumentationen](https://experienceleague.adobe.com/docs/campaign-classic/using/orchestrating-campaigns/orchestrate-campaigns/marketing-campaign-templates.html?lang=en#orchestrating-campaigns){target=&quot;_blank&quot;}
 
-   ↗️ Lär dig hur du konfigurerar en arbetsflödesmall i [Campaign Classic v7-dokumentation](https://experienceleague.adobe.com/docs/campaign-classic/using/automating-with-workflows/introduction/building-a-workflow.html?lang=en#workflow-templates){target=&quot;_blank&quot;}
+   ![](../assets/do-not-localize/book.png) Lär dig hur du konfigurerar en arbetsflödesmall i dokumentationen [ för ](https://experienceleague.adobe.com/docs/campaign-classic/using/automating-with-workflows/introduction/building-a-workflow.html?lang=en#workflow-templates)Campaign Classic v7 {target=&quot;_blank&quot;}
 
 1. Konfigurera typologiregler
 
    Använd regler för kampanjtypologier för att filtrera, styra och övervaka leveransen. Trötthetsreglerna styr till exempel frekvens och kvantitet för meddelanden för att undvika att mottagarna blir för många. När typologireglerna är implementerade refereras de i leveranser.
 
-   ↗️ Läs mer om typologier och trötthetshantering i [Campaign Classic v7-dokumentation](https://experienceleague.adobe.com/docs/campaign-classic/using/orchestrating-campaigns/campaign-optimization/about-campaign-typologies.html?lang=en#orchestrating-campaigns){target=&quot;_blank&quot;}
+   ![](../assets/do-not-localize/book.png) Läs mer om typologier och trötthetshantering i dokumentationen [ för ](https://experienceleague.adobe.com/docs/campaign-classic/using/orchestrating-campaigns/campaign-optimization/about-campaign-typologies.html?lang=en#orchestrating-campaigns)Campaign Classic v7 {target=&quot;_blank&quot;}
 
 1. Bekanta dig med Campaigns inbyggda datamodell
 
    Adobe Campaign innehåller en fördefinierad datamodell. För att implementera och anpassa din miljö måste du känna till de inbyggda tabellerna i Adobe Campaign datamodell och hur de relaterar till varandra.
 
-   ? [Läs mer om Campaign-datamodellen](../dev/datamodel.md).
+   ![](../assets/do-not-localize/glass.png) [Läs mer om Campaign-datamodellen](../dev/datamodel.md).
 
 ## Anpassa instansen
 
@@ -103,19 +103,19 @@ Ni kan anpassa många olika Campaign-områden och -funktioner. De flesta av vår
 
    Adobe Campaign innehåller vanliga scheman för att identifiera data som: mottagare, leveransloggar, prenumerationer med mera.
 
-   ? Mer information om [Kampanjens inbyggda datamodell](../dev/datamodel.md) finns i det här avsnittet.
+   ![](../assets/do-not-localize/glass.png) Läs det här avsnittet om du vill veta mer om den inbyggda  [datamodellen](../dev/datamodel.md) för Campaign.
 
-   ? Du kan utöka befintliga scheman eller skapa nya scheman från grunden. Läs mer i [den här sidan](../dev/customize.md).
+   ![](../assets/do-not-localize/glass.png) Du kan utöka befintliga scheman eller skapa nya scheman från grunden. Läs mer i [den här sidan](../dev/customize.md).
 
 1. **Kontrollpaneler och listor**
 
    Du kan enkelt konfigurera listor, lägga till och ta bort fält och anpassa kolumner.
 
-   ? Lär dig hur du hanterar filter och listor i Campaign i [den här sidan](../dev/customize.md#gs-lists-and-filters).
+   ![](../assets/do-not-localize/glass.png) Lär dig hur du hanterar filter och listor i Campaign på  [den här sidan](../dev/customize.md#gs-lists-and-filters).
 
    Du kan också skapa nya instrumentpaneler för att visa Campaign-data beroende på dina behov.
 
-   ? Läs mer i [den här sidan](../dev/customize.md#gs-custom-dashboards).
+   ![](../assets/do-not-localize/glass.png)[ Läs mer på den här sidan](../dev/customize.md#gs-custom-dashboards).
 
 1. **Rapporter**
 
@@ -123,7 +123,7 @@ Ni kan anpassa många olika Campaign-områden och -funktioner. De flesta av vår
 
    Förutom inbyggda rapporter kan du med Adobe Campaign generera rapporter i olika sammanhang och för att tillgodose olika behov. Principer för användning och implementeringslägen beskrivs i detta dokument.
 
-   ? Läs mer om rapportfunktioner i Campaign på [den här sidan](reporting.md).
+   ![](../assets/do-not-localize/glass.png) Läs mer om rapportfunktioner i Campaign på  [den här sidan](reporting.md).
 
 
 ## Ställ in kampanjautomatisering
@@ -154,22 +154,22 @@ Om ni använder andra Adobe-lösningar kan ni koppla dem till er Campaign-miljö
 
 Du kan också använda enkel inloggning (SSO) för att ansluta till Campaign. Läs mer i [den här sidan](connect.md).
 
-? Upptäck hela listan över Adobe som kan integreras med Adobe Campaign [på den här sidan](../connect/integration.md).
+![](../assets/do-not-localize/glass.png) Se hela listan över Adobe som kan integreras med Adobe Campaign  [på den här sidan](../connect/integration.md).
 
 ### Kopplingar
 
 Koppla samman Campaign med tredjepartssystem för att kombinera ett stort antal funktioner och automatisera processer.
 
-? Läs mer om tillgängliga anslutningar i [det här avsnittet](../connect/integration.md).
+![](../assets/do-not-localize/glass.png) Läs mer om tillgängliga anslutningar i  [det här avsnittet](../connect/integration.md).
 
 **Koppla CRM till Campaign**
 
 Du kan ansluta din Adobe Campaign-plattform till dina CRM-system från tredje part och synkronisera data: kontakter, konton, inköp osv.
 
-? Lär dig hur du ansluter CRM-systemet till Campaign i [det här avsnittet](../connect/integration.md#gs-crm-connectors)
+![](../assets/do-not-localize/glass.png) Lär dig hur du ansluter ditt CRM-system till Campaign i  [det här avsnittet](../connect/integration.md#gs-crm-connectors)
 
 **Ansluta till en extern databas**
 
 Du kan ansluta Campaign Cloud-databasen till externa system via FDA-modulen (Federated Data Access).
 
-? Lär dig hur du konfigurerar Campaign FDA-modulen för att definiera åtkomstparametrar i [det här avsnittet](../connect/integration.md#gs-fda)
+![](../assets/do-not-localize/glass.png) Lär dig hur du konfigurerar Campaign FDA-modulen för att definiera åtkomstparametrar i  [det här avsnittet](../connect/integration.md#gs-fda)

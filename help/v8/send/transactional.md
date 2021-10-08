@@ -5,7 +5,7 @@ feature: Overview
 role: Data Engineer
 level: Beginner
 exl-id: 06fdb279-3776-433f-8d27-33d016473dee
-source-git-commit: f071fc227dac6d72873744ba56eb0b4b676de5dd
+source-git-commit: eb8ad88ffd9dbaaf1f9ace2e88ba4486711bc72d
 workflow-type: tm+mt
 source-wordcount: '1486'
 ht-degree: 1%
@@ -24,9 +24,9 @@ Transaktionsmeddelanden används för att skicka:
 * ett individuellt svar i realtid på en kunds handling
 * icke-marknadsföringsmaterial
 
-? Inställningar för transaktionsmeddelanden beskrivs i [det här avsnittet](../config/transactional-msg-settings.md).
+![](../assets/do-not-localize/glass.png) Inställningar för transaktionsmeddelanden beskrivs i  [det här avsnittet](../config/transactional-msg-settings.md).
 
-? Förstå arkitekturen för transaktionsmeddelanden i [den här sidan](../dev/architecture.md).
+![](../assets/do-not-localize/glass.png) Förstå arkitekturen för transaktionsmeddelanden på  [den här sidan](../dev/architecture.md).
 
 >[!CAUTION]
 >
@@ -64,14 +64,14 @@ Följ stegen nedan för att skapa en meddelandemall:
 
 ### Skapa innehållet{#create-message-content}
 
-Definitionen av transaktionens meddelandeinnehåll är densamma som för alla leveranser i Adobe Campaign. För e-postleveranser kan du till exempel skapa innehåll i HTML- eller textformat, lägga till bilagor eller anpassa leveransobjektet. Mer information om detta finns i [det här avsnittet](../start/create-message.md).
+Definitionen av transaktionens meddelandeinnehåll är densamma som för alla leveranser i Adobe Campaign. För e-postleveranser kan du till exempel skapa innehåll i HTML eller textformat, lägga till bilagor eller anpassa leveransobjektet. Mer information om detta finns i [det här avsnittet](../start/create-message.md).
 
 >[!CAUTION]
 >
 >Bilderna i meddelandet måste vara tillgängliga för alla. Adobe Campaign har ingen mekanism för överföring av bilder för transaktionsmeddelanden.\
 >Till skillnad från i JSSP och webApp har `<%=` ingen standardflytning.
 >
->Du måste undvika alla data som kommer från händelsen på rätt sätt. Detta beror på hur det här fältet används. Använd till exempel encodeURIComponent i en URL. Om du vill visas i HTML-koden kan du använda escapeXMLString.
+>Du måste undvika alla data som kommer från händelsen på rätt sätt. Detta beror på hur det här fältet används. Använd till exempel encodeURIComponent i en URL. Om du vill visas i HTML kan du använda escapeXMLString.
 
 När du har definierat meddelandeinnehållet kan du integrera händelseinformation i meddelandetexten och anpassa den. Händelseinformation infogas i texten tack vare personaliseringstaggar.
 
@@ -151,7 +151,7 @@ Du kan testa meddelandeleveransen genom att skicka ett korrektur till en startad
 
 När du skickar ett korrektur utförs samma process som för alla leveranser.
 
-↗️ Läs mer om korrektur i [Campaign Classic v7-dokumentation](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/key-steps-when-creating-a-delivery/steps-validating-the-delivery.html){target=&quot;_blank&quot;}
+![](../assets/do-not-localize/book.png) Läs mer om korrektur i dokumentationen [ för ](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/key-steps-when-creating-a-delivery/steps-validating-the-delivery.html)Campaign Classic v7 {target=&quot;_blank&quot;}
 
 Om du vill skicka ett bevis på ett transaktionsmeddelande måste du utföra följande åtgärder:
 

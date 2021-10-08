@@ -5,7 +5,7 @@ feature: Audiences
 role: Data Engineer
 level: Beginner
 exl-id: 07baa759-fb0b-4eba-bf8b-ec6cf21df7f8
-source-git-commit: f071fc227dac6d72873744ba56eb0b4b676de5dd
+source-git-commit: 780a29dab99ad2bda554134ca95c435b9e76b494
 workflow-type: tm+mt
 source-wordcount: '764'
 ht-degree: 19%
@@ -35,52 +35,52 @@ Om du vill fylla i Campaign med profildata kan du:
 ![](assets/create-profile.png)
 
 
-↗️ Lär dig hantera profiler i [Adobe Campaign Classic v7-dokumentation](https://experienceleague.adobe.com/docs/campaign-classic/using/getting-started/profile-management/about-profiles.html){target=&quot;_blank&quot;}.
+![](../assets/do-not-localize/book.png) Lär dig hur du hanterar profiler i  [Adobe Campaign Classic v7-dokumentationen](https://experienceleague.adobe.com/docs/campaign-classic/using/getting-started/profile-management/about-profiles.html){target=&quot;_blank&quot;}.
 
 
 ## Sekretess och medgivande
 
 Adobe Campaign är ett kraftfullt verktyg för att samla in och behandla stora datavolymer, inklusive personuppgifter och känsliga data. Med Adobe Campaign kan ni samla in data, inklusive personuppgifter och känslig information. Det är därför viktigt att du erhåller och övervakar medgivande från dina mottagare.
 
-↗️ Lär dig hur du hanterar sekretess och samtycke i [Adobe Campaign Classic v7-dokumentation](https://experienceleague.adobe.com/docs/campaign-classic/using/getting-started/privacy/privacy-and-recommendations.html){target=&quot;_blank&quot;}.
+![](../assets/do-not-localize/book.png) Lär dig hur du hanterar sekretess och samtycke i  [Adobe Campaign Classic v7-dokumentationen](https://experienceleague.adobe.com/docs/campaign-classic/using/getting-started/privacy/privacy-and-recommendations.html){target=&quot;_blank&quot;}.
 
 ## Skapa listor
 
 En lista är en statisk uppsättning profiler som kan användas för leveransåtgärder eller uppdateras under importåtgärder eller under arbetsflödeskörning. En grupp som har extraherats från databasen via en fråga kan till exempel innehålla en lista.
 
-↗️ Lär dig hur du skapar och hanterar listor i [Adobe Campaign Classic v7-dokumentation](https://experienceleague.adobe.com/docs/campaign-classic/using/getting-started/profile-management/creating-and-managing-lists.html){target=&quot;_blank&quot;}.
+![](../assets/do-not-localize/book.png) Lär dig hur du skapar och hanterar listor i  [Adobe Campaign Classic v7-dokumentationen](https://experienceleague.adobe.com/docs/campaign-classic/using/getting-started/profile-management/creating-and-managing-lists.html){target=&quot;_blank&quot;}.
 
 ## Fråga databasen
 
 Använd aktiviteten **Fråga** i ett arbetsflöde för att fråga databasen, segmentera data och skapa komplexa målgrupper.
 
-↗️ Läs mer om Campaign-frågor i [Adobe Campaign Classic v7-dokumentation](https://experienceleague.adobe.com/docs/campaign-classic/using/automating-with-workflows/introduction/targeting-data.html){target=&quot;_blank&quot;}.
+![](../assets/do-not-localize/book.png) Läs mer om Campaign-frågor i  [Adobe Campaign Classic v7-dokumentationen](https://experienceleague.adobe.com/docs/campaign-classic/using/automating-with-workflows/introduction/targeting-data.html){target=&quot;_blank&quot;}.
 
-↗️ Alla riktade aktiviteter listas i [Adobe Campaign Classic v7-dokumentationen](https://experienceleague.adobe.com/docs/campaign-classic/using/automating-with-workflows/targeting-activities/about-targeting-activities.html){target=&quot;_blank&quot;}.
+![](../assets/do-not-localize/book.png) Alla målinriktningsaktiviteter listas i  [Adobe Campaign Classic v7-dokumentationen](https://experienceleague.adobe.com/docs/campaign-classic/using/automating-with-workflows/targeting-activities/about-targeting-activities.html){target=&quot;_blank&quot;}.
 
 ## Skapa en målgrupp i ett arbetsflöde
 
 Målinriktning kan skapas med en kombination av frågor i en grafisk sekvens i ett arbetsflöde. Ni kan skapa målgrupper som anpassas efter era behov. Om du vill visa arbetsflödesredigeraren klickar du på fliken **[!UICONTROL Targeting and workflows]** på kontrollpanelen för kampanjer.
 
-↗️ Lär dig hur du skapar en målgrupp i ett kampanjarbetsflöde i [Adobe Campaign Classic v7-dokumentationen](https://experienceleague.adobe.com/docs/campaign-classic/using/orchestrating-campaigns/orchestrate-campaigns/marketing-campaign-target.html?lang=en#building-the-main-target-in-a-workflow){target=&quot;_blank&quot;}.
+![](../assets/do-not-localize/book.png) Lär dig hur du skapar en målgrupp i ett kampanjarbetsflöde i  [Adobe Campaign Classic v7-dokumentationen](https://experienceleague.adobe.com/docs/campaign-classic/using/orchestrating-campaigns/orchestrate-campaigns/marketing-campaign-target.html?lang=en#building-the-main-target-in-a-workflow){target=&quot;_blank&quot;}.
 
 
 ## Aktiva profiler{#active-profiles}
 
 Enligt avtalet har var och en av instanserna i Campaign ett visst antal aktiva profiler som räknas för faktureringsändamål. Se ditt senaste avtal som referens om antalet köpta aktiva profiler.
 
-**En** informationspost (t.ex.: en post i  [mottagartabellen ](../dev/datamodel.md) eller en extern tabell som innehåller ett cookie-ID, Kund-ID, mobilidentifierare eller annan information som är relevant för en viss kanal) som representerar en slutkund, potentiell kund eller lead. Profiler anses vara aktiva om de har riktats eller kommunicerats via någon kanal under de senaste tolv månaderna.
+**** Profilementär ett informationsregister (t.ex.: en post i  [mottagartabellen ](../dev/datamodel.md) eller en extern tabell som innehåller ett cookie-ID, Kund-ID, mobilidentifierare eller annan information som är relevant för en viss kanal) som representerar en slutkund, potentiell kund eller lead. Profiler anses vara aktiva om de har riktats eller kommunicerats via någon kanal under de senaste tolv månaderna.
 
 <!--
 You can monitor the number of active profiles used on your instances directly from Campaign Control Panel. 
 
-↗️ For more on this, refer to the [Control Panel documentation](https://docs.adobe.com/content/help/en/control-panel/using/performance-monitoring/active-profiles-monitoring.html).
+![](../assets/do-not-localize/book.png) For more on this, refer to the [Control Panel documentation](https://docs.adobe.com/content/help/en/control-panel/using/performance-monitoring/active-profiles-monitoring.html).
 -->
 
 **Dokumentation** för närliggande ämnen i Campaign Classic v7:
 
-↗️ [Utforma och kör ett kampanjspecifikt arbetsflöde](https://experienceleague.adobe.com/docs/campaign-classic/using/automating-with-workflows/introduction/building-a-workflow.html){target=&quot;_blank&quot;}
+* [Utforma och kör ett kampanjspecifikt arbetsflöde](https://experienceleague.adobe.com/docs/campaign-classic/using/automating-with-workflows/introduction/building-a-workflow.html){target=&quot;_blank&quot;}
 
-↗️ [Lär dig hur du väljer publik för en kampanj](https://experienceleague.adobe.com/docs/campaign-classic/using/orchestrating-campaigns/orchestrate-campaigns/marketing-campaign-target.html){target=&quot;_blank&quot;}
+* [Lär dig hur du väljer publik för en kampanj](https://experienceleague.adobe.com/docs/campaign-classic/using/orchestrating-campaigns/orchestrate-campaigns/marketing-campaign-target.html){target=&quot;_blank&quot;}
 
-↗️ [Kom igång med arbetsflöden](https://experienceleague.adobe.com/docs/campaign-classic/using/automating-with-workflows/introduction/about-workflows.html){target=&quot;_blank&quot;}
+* [Kom igång med arbetsflöden](https://experienceleague.adobe.com/docs/campaign-classic/using/automating-with-workflows/introduction/about-workflows.html){target=&quot;_blank&quot;}

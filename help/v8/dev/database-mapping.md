@@ -2,7 +2,7 @@
 title: Mappning av kampanjdatabas
 description: Mappning av kampanjdatabas
 exl-id: a804d164-58bf-4b15-a48e-8cf75d793668
-source-git-commit: f071fc227dac6d72873744ba56eb0b4b676de5dd
+source-git-commit: 9e07353859e63b71abb61526f40675f18837bc59
 workflow-type: tm+mt
 source-wordcount: '1463'
 ht-degree: 0%
@@ -91,13 +91,13 @@ Om du vill fylla i ett fält i XML måste du lägga till attributet **xml** med 
    <element name="comment" xml="true" type="memo" label="Comment"/>
    ```
 
-* Beskrivning av data i HTML-format:
+* Databeskrivning i HTML-format:
 
    ```
    <element name="description" xml="true" type="html" label="Description"/>
    ```
 
-   Med typen html kan du lagra HTML-innehållet i en CDATA-tagg och visa en speciell HTML-redigeringskontroll i Adobe Campaign klientgränssnitt.
+   Med typen html kan du lagra HTML-innehåll i en CDATA-tagg och visa en speciell HTML edit check i Adobe Campaign klientgränssnitt.
 
 Med hjälp av XML-fält kan du lägga till fält utan att behöva ändra databasens fysiska struktur. En annan fördel är att du använder mindre resurser (storlek som tilldelas SQL-fält, gräns för antalet fält per tabell osv.).
 
@@ -256,7 +256,7 @@ För anslutningsrelationer med Federated Database Access:
 * ![](assets/do-not-localize/join_fda_11.png) : Kardinalitet 1-1
 * ![](assets/do-not-localize/join_fda_1m.png) : Kardinalitet 1-N
 
-? Mer information om FDA-tabeller finns i [Federated Data Access](../connect/fda.md).
+![](../assets/do-not-localize/glass.png) Mer information om FDA-tabeller finns i  [Federated Data Access](../connect/fda.md).
 
 En länk måste deklareras i schemat som innehåller sekundärnyckeln för tabellen som är länkad via huvudelementet:
 

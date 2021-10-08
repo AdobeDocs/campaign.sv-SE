@@ -4,8 +4,7 @@ description: Lär dig hur du arbetar med Campaign och externa databaser
 feature: Overview
 role: Data Engineer
 level: Beginner
-exl-id: 0259b3bd-9dc2-44f9-a426-c4af46b00a4e
-source-git-commit: f071fc227dac6d72873744ba56eb0b4b676de5dd
+source-git-commit: 391eac2f5e4d4c8c5d4dadd3394798361640e1d8
 workflow-type: tm+mt
 source-wordcount: '1843'
 ht-degree: 3%
@@ -96,7 +95,7 @@ Du kan definiera särskilda arbetskatalogutrymmen för tabellerna och för index
 
 För [!DNL Snowflake] stöder kopplingen följande alternativ:
 
-| Alternativ | Beskrivning |
+| Option | Beskrivning |
 |---|---|
 | arbetsschema | Databasschema som ska användas för arbetsregister |
 | lagerställe | Namnet på standardlagerstället som ska användas. Det åsidosätter användarens standardvärde. |
@@ -165,9 +164,9 @@ För att användaren ska kunna utföra åtgärder på en extern databas via FDA 
 1. Skapa en ny rättighet genom att ange den valda etiketten.
 1. Ange namnet på den namngivna rättigheten i följande format **användare:base@server**, där :
 
-   * **användare** är namnet på användaren i den externa databasen
-   * **baslinje är** namnet på den externa databasen
-   * **servernamn** är namnet på den externa databasservern
+   * **** användare är namnet på användaren i den externa databasen
+   * **** basär namnet på den externa databasen
+   * **** server är namnet på den externa databasservern
 
 1. Spara den namngivna rättigheten och länka den till den valda operatorn från noden **[!UICONTROL Administration > Access Management > Operators]** i Adobe Campaign Explorer.
 

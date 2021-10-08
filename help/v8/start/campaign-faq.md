@@ -5,7 +5,7 @@ feature: Overview
 role: Data Engineer
 level: Beginner
 exl-id: 027f5478-d86b-42be-b63d-ec8f5e1dd83d,f5688357-db90-4f88-9596-91e9d0a20d75
-source-git-commit: f071fc227dac6d72873744ba56eb0b4b676de5dd
+source-git-commit: 9e07353859e63b71abb61526f40675f18837bc59
 workflow-type: tm+mt
 source-wordcount: '662'
 ht-degree: 41%
@@ -28,7 +28,7 @@ Behöver du hjälp eftersom du arbetar med Campaign? Läs de viktigaste frågorn
 
    Du måste hämta och installera Campaign Client Console för att kunna ansluta till Adobe Campaign.
 
-   ?? [Klicka här för att läsa mer](connect.md).
+   ![](../assets/do-not-localize/glass.png) [Klicka här för att läsa mer](connect.md).
 
 1. **Kan Campaign v8 installeras på en lokal eller blandad miljö?**
 
@@ -38,9 +38,9 @@ Behöver du hjälp eftersom du arbetar med Campaign? Läs de viktigaste frågorn
 
    E-postleveransen, som är en viktig del i varje avsändares marknadsföringsprogram, kännetecknas av ständigt föränderliga kriterier och regler. För effektiv navigering i den digitala världen krävs regelbunden anpassning av er e-poststrategi, med hänsyn till viktiga leveranstrender, för att ni ska nå era målgrupper på bästa sätt.
 
-   ↗️ Läs den här guiden för att lära dig [Bästa praxis för leverans](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/introduction.html?lang=sv){target=&quot;_blank&quot;}
+   ![](../assets/do-not-localize/book.png) Läs den här vägledningen när du vill lära dig mer om  [Bästa praxis](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/introduction.html?lang=sv) för distribution {target=&quot;_blank&quot;}
 
-   ↗️ Lär dig hur du implementerar levererbarhet i Campaign [i den här guiden](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/additional-resources/general-resources.html){target=&quot;_blank&quot;}
+   ![](../assets/do-not-localize/book.png) Lär dig hur du implementerar levererbarhet i Campaign  [i den här guiden](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/additional-resources/general-resources.html){target=&quot;_blank&quot;}
 
 1. **Hur kan jag vara säker på att min leverans skickas utan fel?**
 
@@ -50,7 +50,7 @@ Behöver du hjälp eftersom du arbetar med Campaign? Läs de viktigaste frågorn
 
 1. **Kan jag övervaka körningen av arbetsflödet?**
 
-   ↗️ Lär dig övervaka körningen av Campaign-arbetsflödet [i Campaign Classic v7-dokumentationen](https://experienceleague.adobe.com/docs/campaign-classic/using/automating-with-workflows/executing-a-workflow/starting-a-workflow.html){target=&quot;_blank&quot;}
+   ![](../assets/do-not-localize/book.png) Förstå hur du övervakar körningen av Campaign-arbetsflödet  [i dokumentationen](https://experienceleague.adobe.com/docs/campaign-classic/using/automating-with-workflows/executing-a-workflow/starting-a-workflow.html) för Campaign Classic v7 {target=&quot;_blank&quot;}
 
 1. **Vilka system och komponenter är Campaign v8 kompatibelt med?**
 

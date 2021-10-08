@@ -2,7 +2,7 @@
 title: God praxis för datamodell
 description: Lär dig mer om de bästa sätten att använda Campaign-datamodelltillägg
 exl-id: bdd5e993-0ce9-49a8-a618-ab0ff3796d49
-source-git-commit: f071fc227dac6d72873744ba56eb0b4b676de5dd
+source-git-commit: 9e07353859e63b71abb61526f40675f18837bc59
 workflow-type: tm+mt
 source-wordcount: '2683'
 ht-degree: 4%
@@ -17,9 +17,9 @@ Adobe Campaign-systemet är mycket flexibelt och kan byggas ut utöver den urspr
 
 Om du vill ha en bättre förståelse för de inbyggda tabellerna i Campaign och hur de relaterar till varandra kan du läsa [det här avsnittet](datamodel.md).
 
-? Läs [det här avsnittet](schemas.md) för att komma igång med Campaign-scheman.
+![](../assets/do-not-localize/glass.png) Läs  [det här ](schemas.md) avsnittet för att komma igång med Campaign-scheman.
 
-? Lär dig hur du konfigurerar tilläggsscheman för att utöka Adobe Campaign-databasens konceptuella datamodell i [den här sidan](extend-schema.md).
+![](../assets/do-not-localize/glass.png) Lär dig hur du konfigurerar tilläggsscheman för att utöka Adobe Campaign-databasens konceptuella datamodell på  [den här sidan](extend-schema.md).
 
 ## Datamodellarkitektur {#data-model-architecture}
 
@@ -108,7 +108,7 @@ Denna anpassade nyckel är den faktiska primärnyckeln för posten i det externa
 
 När du skapar en anpassad tabell finns det två alternativ:
 * En kombination av autogenererad nyckel (id) och intern nyckel (anpassad). Det här alternativet är intressant om systemnyckeln är en sammansatt nyckel eller inte ett heltal. Med Snowflake får heltal och strängbaserade nycklar högre prestanda i stora tabeller och med andra tabeller.
-* Använda primärnyckeln som extern systemprimärnyckel. Den här lösningen är vanligtvis att föredra eftersom den förenklar import och export av data, med en konsekvent nyckel mellan olika system. **Automatisk** redigering bör inaktiveras om nyckeln heter&quot;id&quot; och förväntas fyllas med externa värden (inte autogenererade).
+* Använda primärnyckeln som extern systemprimärnyckel. Den här lösningen är vanligtvis att föredra eftersom den förenklar import och export av data, med en konsekvent nyckel mellan olika system. **** AutoUid bör inaktiveras om nyckeln heter&quot;id&quot; och förväntas vara ifylld med externa värden (inte autogenererade).
 
 >[!CAUTION]
 >
