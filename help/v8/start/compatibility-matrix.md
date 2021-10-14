@@ -5,24 +5,22 @@ feature: Overview
 role: Data Engineer
 level: Beginner
 exl-id: 4be3a6dc-0c61-4534-b9dd-6c99c8a037a9,870a336f-94ac-4171-891b-67614feef6ef,bebdd930-c7f6-4629-a489-3c704b33f058,d493e613-eb61-43b1-9c6d-1bd881af0734
-source-git-commit: f071fc227dac6d72873744ba56eb0b4b676de5dd
+source-git-commit: 83874f4d124d7892f99e973684b1e8ee571f31e0
 workflow-type: tm+mt
-source-wordcount: '274'
-ht-degree: 29%
+source-wordcount: '343'
+ht-degree: 27%
 
 ---
 
 # Kompatibilitetsmatris för Campaign v8
 
-I det här dokumentet visas alla system och komponenter som stöds för den senaste versionen av **Adobe Campaign v8**. Om inget annat anges stöds alla mindre versioner. Produkter och versioner som inte ingår i den här listan är inte kompatibla med Adobe Campaign.
+Det här dokumentet listar alla system och komponenter som stöds för den senaste builden av **Adobe Campaign v8**. Om inget annat anges stöds alla mindre versioner. Produkter och versioner som inte ingår i den här listan är inte kompatibla med Adobe Campaign.
 
 Eftersom vissa versioner av dessa system och verktyg från tredje part når slutet av livscykeln, kommer Adobe Campaign inte längre att vara kompatibelt med dessa versioner och kommer att tas bort från den här kompatibilitetsmatrisen. Se till att du använder versioner av system som stöds i kompatibilitetsmatrisen för att undvika problem.
 
 ## Klientkonsol{#ClientConsoleoperatingsystems}
 
->[!CAUTION]
->
-> Följande operativsystem och webbläsare krävs för att använda klientkonsolen i Campaign.
+Följande operativsystem och webbläsare krävs för att använda klientkonsolen i Campaign. [Läs mer](connect.md).
 
 ### Operativsystem
 
@@ -33,12 +31,20 @@ Eftersom vissa versioner av dessa system och verktyg från tredje part når slut
 
 **Microsoft Internet Explorer** 11
 
+>[!NOTE]
+>
+>Adobe Campaign Server och Client Console måste finnas i samma version. [Lär dig hur du kontrollerar versionen](#version).
+
 ## CRM-kopplingar{#CRMconnectors}
+
+CRM-system som är kompatibla med Adobe Campaign listas nedan. [Läs mer](../connect/crm.md).
 
 * **** Salesforceconnector API version 49
 * **Microsoft** DynamicConnector, webb-API: Dynamics 365 On-Local and Online
 
 ## Federerad dataåtkomst (FDA){#FederatedDataAccessFDA}
+
+Externa databaser som är kompatibla med Adobe Campaign FDA-modulen (Federated Data Access) listas nedan. [Läs mer](../connect/fda.md).
 
 * **Amazon Redshift**
 * **[!DNL Google Big Query]**
@@ -47,18 +53,20 @@ Eftersom vissa versioner av dessa system och verktyg från tredje part når slut
 
 ## Mobilt SDK{#MobileSDK}
 
+Du kan använda Campaign för att skicka [push-meddelanden](../send/push.md) till de operativsystem som listas nedan med tillhörande mobil-SDK.
+
 * **Android** 7.x, 8.x, 9.0 med Campaign Android SDK build 1.1.1.
 * **Apple iOS** 9 - 14 med Campaign iOS SDK build 1.0.26, kompatibelt med 32- och 64-bitarsversioner.
 
 ## Webbåtkomst
 
-Följande webbläsare är kompatibla med Campaign for Web Access.
+Följande webbläsare är kompatibla med Campaign för [webbåtkomst](connect.md#web-access).
 
 * **Microsoft Edge**,  **Mozilla Firefox**,  **Google Chrome**,  **Safari**  (senaste versionerna)
 
 * **Internet Explorer** 11
 
-## Så här kontrollerar du Campaign-versionen och bygget
+## Så här kontrollerar du Campaign-versionen och bygget{#version}
 
 Gå till **Hjälp > Om..**-menyn för att kontrollera din version.
 
