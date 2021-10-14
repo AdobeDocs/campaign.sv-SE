@@ -4,7 +4,8 @@ description: Lär dig hur du arbetar med Campaign och Adobe Experience Manager
 feature: Overview
 role: Data Engineer
 level: Beginner
-source-git-commit: 391eac2f5e4d4c8c5d4dadd3394798361640e1d8
+exl-id: e83893f7-a8be-48a3-a7a6-aced7b4d4f69
+source-git-commit: 63b53fb6a7c6ecbfc981c93a723b6758b5736acf
 workflow-type: tm+mt
 source-wordcount: '162'
 ht-degree: 0%
@@ -23,4 +24,4 @@ Det innebär att du får ut det mesta av både Adobe Experience Manager innehål
 
 ![](../assets/do-not-localize/book.png) [Upptäck den här integreringen i det här kompletta exemplet](https://experienceleague.adobe.com/docs/campaign-classic/using/integrating-with-adobe-experience-cloud/adobe-experience-manager/creating-an-experience-manager-newsletter.html?lang=en#integrating-with-adobe-experience-cloud)
 
-? Som användare av hanterade Cloud Services ska du [kontakta Adobe](../start/campaign-faq.md#support) för att integrera Adobe Experience Manager med Campaign.
+![](../assets/do-not-localize/speech.png)  Som användare av hanterade Cloud Services  [kontaktar du ](../start/campaign-faq.md#support) Adobe och integrerar Adobe Experience Manager med Campaign.

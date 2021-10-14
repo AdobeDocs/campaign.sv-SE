@@ -5,7 +5,7 @@ feature: Overview
 role: Data Engineer
 level: Beginner
 exl-id: 9634b576-2854-4ea9-ba0d-8efaab2c4aee
-source-git-commit: 9e07353859e63b71abb61526f40675f18837bc59
+source-git-commit: 63b53fb6a7c6ecbfc981c93a723b6758b5736acf
 workflow-type: tm+mt
 source-wordcount: '1000'
 ht-degree: 4%
@@ -34,7 +34,7 @@ Du kan komma åt externa konton från Adobe Campaign **[!UICONTROL Explorer]**: 
 
 Följande tekniska konton används av Adobe Campaign för att aktivera och köra specifika processer.
 
-? Som användare av hanterade Cloud Services konfigurerar Adobe alla kampanjspecifika externa konton åt dig.
+![](../assets/do-not-localize/speech.png)  Som användare av hanterade Cloud Services konfigurerar Adobe alla kampanjspecifika externa konton åt dig.
 
 * **Studsa e-post (POP3)**
 
@@ -80,14 +80,14 @@ Följande tekniska konton används av Adobe Campaign för att aktivera och köra
 
    ![](../assets/do-not-localize/glass.png) Läs mer om Adobe Campaign - Adobe Analytics-integrering på  [den här sidan](../connect/ac-aa.md).
 
-   ? Som användare av hanterade Cloud Services ska du [kontakta Adobe](../start/campaign-faq.md#support) för att integrera Adobe Analytics med Campaign.
+   ![](../assets/do-not-localize/speech.png)  Som användare av hanterade Cloud Services  [kontaktar du ](../start/campaign-faq.md#support) Adobe och integrerar Adobe Analytics med Campaign.
 
    * **Adobe Experience Manager**
    Med det externa **[!UICONTROL AEM]**-kontot kan du hantera innehållet i e-postleveranser och formulär direkt i Adobe Experience Manager.
 
    ![](../assets/do-not-localize/glass.png) Läs mer om Adobe Campaign - Adobe Analytics-integrering på  [den här sidan](../connect/ac-aem.md).
 
-   ? Som användare av hanterade Cloud Services ska du [kontakta Adobe](../start/campaign-faq.md#support) för att integrera Adobe Experience Manager med Adobe Campaign.
+   ![](../assets/do-not-localize/speech.png)  Som användare av hanterade Cloud Services  [kontaktar du ](../start/campaign-faq.md#support) Adobe för att integrera Adobe Experience Manager med Adobe Campaign.
 
 
 ## Externa konton för CRM Connector

@@ -5,7 +5,7 @@ feature: Overview
 role: Data Engineer
 level: Beginner
 exl-id: d1d57aa8-b811-470f-a8a6-18da3a700f1a
-source-git-commit: 9e07353859e63b71abb61526f40675f18837bc59
+source-git-commit: 63b53fb6a7c6ecbfc981c93a723b6758b5736acf
 workflow-type: tm+mt
 source-wordcount: '349'
 ht-degree: 11%
@@ -22,7 +22,7 @@ Adobe Campaign har flera kopplingar som gör att du kan kommunicera med externa 
 
 Modernisera implementeringen och utnyttja alla Adobe Experience Cloud-funktioner.
 
-? Som användare av hanterade Cloud Services ska du [kontakta Adobe](../start/campaign-faq.md#support) för att ansluta Campaign till Adobe Experience Cloud tjänster och lösningar.
+![](../assets/do-not-localize/speech.png)  Som användare av hanterade Cloud Services  [kontaktar du ](../start/campaign-faq.md#support) Adobe Campaign för att få kontakt med Adobe Experience Cloud tjänster och lösningar.
 
 Campaign v8 kan kommunicera med:
 

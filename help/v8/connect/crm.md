@@ -4,7 +4,8 @@ description: Lär dig hur du arbetar med Campaign och CRM
 feature: Overview
 role: Data Engineer
 level: Beginner
-source-git-commit: 391eac2f5e4d4c8c5d4dadd3394798361640e1d8
+exl-id: c2d34ee9-4427-48e7-a8cf-0ae02a801d50
+source-git-commit: 63b53fb6a7c6ecbfc981c93a723b6758b5736acf
 workflow-type: tm+mt
 source-wordcount: '266'
 ht-degree: 22%
@@ -25,7 +26,7 @@ Dessa kopplingar möjliggör snabb och enkel dataintegrering: Adobe Campaign til
 
 CRM och versioner som stöds finns detaljerade i Campaign [Kompatibilitetsmatrisen](../start/compatibility-matrix.md).
 
-? CRM-anslutningarna fungerar bara med en säker URL (https).
+![](../assets/do-not-localize/speech.png)  CRM-anslutningarna fungerar bara med en säker URL (https).
 
 ## Implementeringssteg {#crm-implementation-steps}
 

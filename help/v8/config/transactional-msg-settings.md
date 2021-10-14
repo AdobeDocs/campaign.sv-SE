@@ -5,7 +5,7 @@ feature: Overview
 role: Data Engineer
 level: Beginner
 exl-id: 2899f627-696d-422c-ae49-c1e293b283af
-source-git-commit: eb8ad88ffd9dbaaf1f9ace2e88ba4486711bc72d
+source-git-commit: 63b53fb6a7c6ecbfc981c93a723b6758b5736acf
 workflow-type: tm+mt
 source-wordcount: '326'
 ht-degree: 0%
@@ -14,7 +14,7 @@ ht-degree: 0%
 
 # Inställningar för transaktionsmeddelanden
 
-? Som användare av hanterade Cloud Services ska du [kontakta Adobe](../start/campaign-faq.md#support) för att installera och konfigurera Campaign Transactional Messaging i din miljö.
+![](../assets/do-not-localize/speech.png)  Som användare av hanterade Cloud Services  [kontaktar du ](../start/campaign-faq.md#support) Adobe för att installera och konfigurera Campaign Transactional messaging i din miljö.
 
 ![](../assets/do-not-localize/glass.png) Funktionerna för transaktionsmeddelanden beskrivs i  [det här avsnittet](../send/transactional.md).
 

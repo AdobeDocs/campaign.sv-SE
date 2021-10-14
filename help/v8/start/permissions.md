@@ -5,10 +5,10 @@ feature: Audiences
 role: Data Engineer
 level: Beginner
 exl-id: 3d61abac-03df-42d3-a950-37e41a5a7756
-source-git-commit: c3ed24e16d5a8bc67b8a8c959bbf485ea0fd919c
+source-git-commit: 63b53fb6a7c6ecbfc981c93a723b6758b5736acf
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '382'
+ht-degree: 2%
 
 ---
 
@@ -36,7 +36,7 @@ Varje operator måste länkas till en zon för att kunna logga in på en instans
 
 Operatorer är länkade till en säkerhetszon från sin profil i konsolen och tillgängliga i noden **[!UICONTROL Administration > Access management > Operators]**.
 
-? Som användare med hanterade Cloud Services anger Adobe säkerhetszonerna åt dig. Om du vill ha mer information kan du [kontakta Adobe](https://helpx.adobe.com/se/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html){target=&quot;_blank&quot;}.
+![](../assets/do-not-localize/speech.png)  Som användare med hanterade Cloud Services anger Adobe säkerhetszonerna åt dig. Om du vill ha mer information kan du [kontakta Adobe](https://helpx.adobe.com/se/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html){target=&quot;_blank&quot;}.
 
 **Läs mer i dokumentationen för Campaign Classic v7**
 

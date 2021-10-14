@@ -4,7 +4,8 @@ description: Lär dig hur du arbetar med Campaign och Adobe Target
 feature: Overview
 role: Data Engineer
 level: Beginner
-source-git-commit: 391eac2f5e4d4c8c5d4dadd3394798361640e1d8
+exl-id: 891a9a87-f3a4-405a-87ed-a7703be90a67
+source-git-commit: 63b53fb6a7c6ecbfc981c93a723b6758b5736acf
 workflow-type: tm+mt
 source-wordcount: '988'
 ht-degree: 1%
@@ -20,7 +21,7 @@ Den här integreringen hjälper dig att implementera användningsexempel enligt 
 >[!NOTE]
 >Integreringen stöder bara statiska bilder. De andra typerna av innehåll kan inte personaliseras.
 
-? Som användare av hanterade Cloud Services ska du [kontakta Adobe](../start/campaign-faq.md#support) för att implementera utlösare för Experience Cloud med Campaign.
+![](../assets/do-not-localize/speech.png)  Som användare av hanterade Cloud Services  [kontaktar du ](../start/campaign-faq.md#support) Adobe implementera utlösare för Experience Cloud med Campaign.
 
 Adobe Target kan använda följande datatyper:
 

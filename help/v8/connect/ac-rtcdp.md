@@ -4,7 +4,8 @@ description: Lär dig hur du arbetar med Campaign och Real-time Customer Data Pl
 feature: Overview
 role: Data Engineer
 level: Beginner
-source-git-commit: 391eac2f5e4d4c8c5d4dadd3394798361640e1d8
+exl-id: d1e09eae-339e-4d14-9071-097dfcc635aa
+source-git-commit: 63b53fb6a7c6ecbfc981c93a723b6758b5736acf
 workflow-type: tm+mt
 source-wordcount: '129'
 ht-degree: 0%
@@ -19,4 +20,4 @@ Med **Adobe Experience Platform** kan du dela data mellan Campaign och Adobe Rea
 
 ![](../assets/do-not-localize/book.png) Lär dig hur du implementerar och använder RTCDP med Campaign i dokumentationen för  [Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/integrating-with-adobe-experience-cloud/aep-sources-destinations/get-started-sources-destinations.html?lang=en#integrating-with-adobe-experience-cloud)
 
-? Som användare av hanterade Cloud Services ska du [kontakta Adobe](../start/campaign-faq.md#support) för att ansluta RTCDP och Campaign.
+![](../assets/do-not-localize/speech.png)  Som användare av hanterade Cloud Services  [kontaktar du ](../start/campaign-faq.md#support) Adobe för att ansluta RTCDP och Campaign.

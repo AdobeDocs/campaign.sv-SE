@@ -4,7 +4,8 @@ description: Lär dig integrera Campaign och Analytics
 feature: Overview
 role: Data Engineer
 level: Beginner
-source-git-commit: 391eac2f5e4d4c8c5d4dadd3394798361640e1d8
+exl-id: 11370fb6-e192-4626-944e-b80a7496e50d
+source-git-commit: 63b53fb6a7c6ecbfc981c93a723b6758b5736acf
 workflow-type: tm+mt
 source-wordcount: '1083'
 ht-degree: 76%
@@ -17,7 +18,7 @@ Ni kan konfigurera Adobe Analytics för att integrera Campaign och Analytics.
 
 Tack vare den här integreringen kan Adobe Campaign och Adobe Analytics interagera via **Web Analytics-anslutningarna**. Den här integreringen skickar indikatorer och attribut för e-postkampanjer som levereras av Adobe Campaign till Adobe Analytics.
 
-? Som användare av hanterade Cloud Services ska du [kontakta Adobe](../start/campaign-faq.md#support) för att ansluta Campaign till Adobe Experience Cloud tjänster och lösningar. Tillägget för Web Analytics-anslutningen måste installeras i din miljö via det dedikerade paketet.
+![](../assets/do-not-localize/speech.png)  Som användare av hanterade Cloud Services  [kontaktar du ](../start/campaign-faq.md#support) Adobe Campaign för att få kontakt med Adobe Experience Cloud tjänster och lösningar. Tillägget för Web Analytics-anslutningen måste installeras i din miljö via det dedikerade paketet.
 
 Med Adobe Analytics Connector kan Adobe Campaign mäta internetpublik (Web Analytics). Med webbanalysverktygen kan Adobe Campaign vidarebefordra indikatorer och kampanjattribut till Analytics.
 

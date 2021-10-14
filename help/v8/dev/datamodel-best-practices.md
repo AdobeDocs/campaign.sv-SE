@@ -2,7 +2,7 @@
 title: God praxis för datamodell
 description: Lär dig mer om de bästa sätten att använda Campaign-datamodelltillägg
 exl-id: bdd5e993-0ce9-49a8-a618-ab0ff3796d49
-source-git-commit: 9e07353859e63b71abb61526f40675f18837bc59
+source-git-commit: 63b53fb6a7c6ecbfc981c93a723b6758b5736acf
 workflow-type: tm+mt
 source-wordcount: '2683'
 ht-degree: 4%
@@ -175,7 +175,7 @@ Det finns några lösningar som minimerar behovet av arkivering i Adobe Campaign
 
 Du kan deklarera attributet &quot;deleteStatus&quot; i ett schema. Det är effektivare att markera posten som borttagen och sedan skjuta upp borttagningen i rensningsaktiviteten.
 
-? Som användare av hanterade Cloud Services kan du kontakta Adobe konsulter eller tekniska administratörer för att få veta mer om bevarande eller om du behöver ange bevarande för anpassade tabeller.
+![](../assets/do-not-localize/speech.png)  Som användare av hanterade Cloud Services kan du kontakta Adobe konsulter eller tekniska administratörer för att få veta mer om bevarande eller om du behöver ange bevarande för anpassade tabeller.
 
 ## Prestanda {#performance}
 

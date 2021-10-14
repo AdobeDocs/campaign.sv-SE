@@ -5,7 +5,7 @@ feature: Overview
 role: Data Engineer
 level: Beginner
 exl-id: 027f5478-d86b-42be-b63d-ec8f5e1dd83d,f5688357-db90-4f88-9596-91e9d0a20d75
-source-git-commit: 9e07353859e63b71abb61526f40675f18837bc59
+source-git-commit: 63b53fb6a7c6ecbfc981c93a723b6758b5736acf
 workflow-type: tm+mt
 source-wordcount: '662'
 ht-degree: 41%
@@ -22,7 +22,7 @@ Behöver du hjälp eftersom du arbetar med Campaign? Läs de viktigaste frågorn
 
    Denna regelbundna uppdateringsfrekvens syftar till att ge dig den senaste och bästa informationen, hålla miljön säker och förbättra din upplevelse med produkten. Därför anser vi att det är viktigt att du kör den senaste versionen av Adobe Campaign.
 
-   ? Som användare av hanterade Cloud Services uppgraderas din instans av Adobe i varje ny version.
+   ![](../assets/do-not-localize/speech.png)  Som användare av hanterade Cloud Services uppgraderas din instans av Adobe i varje ny version.
 
 1. **Hur ansluter jag till Campaign v8?**
 
@@ -60,7 +60,7 @@ Behöver du hjälp eftersom du arbetar med Campaign? Läs de viktigaste frågorn
 
    En underdomän är en division av domänen som kan användas för att isolera varumärken eller olika typer av trafik (transaktionsmeddelanden, marknadsföringsinformation osv.).
 
-   ? Som användare med hanterade Cloud Services kan du kontakta Adobe för att delegera dina underdomäner till Adobe.
+   ![](../assets/do-not-localize/speech.png)  Som användare med hanterade Cloud Services kan du kontakta Adobe för att delegera dina underdomäner till Adobe.
 
 1. **Kan jag som Campaign Classic v7-användare migrera till Campaign v8?**
 

@@ -5,7 +5,7 @@ feature: Overview
 role: Data Engineer
 level: Beginner
 exl-id: e4e3fb49-9942-4e2d-a020-557d1ac5dcdc
-source-git-commit: 780a29dab99ad2bda554134ca95c435b9e76b494
+source-git-commit: 63b53fb6a7c6ecbfc981c93a723b6758b5736acf
 workflow-type: tm+mt
 source-wordcount: '289'
 ht-degree: 1%
@@ -31,7 +31,7 @@ Observera att:
 
 * Det är bara skickad e-post som räknas, studenterna gör det inte.
 
-? Som användare av hanterade Cloud Services ska du [kontakta Adobe](../start/campaign-faq.md#support) för att aktivera e-postkopia i Campaign. Du måste ange valfri e-postadress till BCC för det Adobe-team som konfigurerar den åt dig.
+![](../assets/do-not-localize/speech.png)  Som användare av hanterade Cloud Services  [kontaktar du ](../start/campaign-faq.md#support) Adobe för att aktivera e-postkopia i Campaign. Du måste ange valfri e-postadress till BCC för det Adobe-team som konfigurerar den åt dig.
 
 När du har konfigurerat BCC för e-post kontrollerar du att funktionen är aktiverad i leveransmallen eller i leveransen via alternativet **BCC för e-post**.
 

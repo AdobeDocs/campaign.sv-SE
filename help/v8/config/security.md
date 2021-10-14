@@ -2,7 +2,7 @@
 title: Bästa praxis för kampanjsäkerhet
 description: Kom igång med de effektivaste strategierna för kampanjsäkerhet
 exl-id: 1d593c8e-4b32-4902-93a7-7b18cef27cac
-source-git-commit: 9e07353859e63b71abb61526f40675f18837bc59
+source-git-commit: 63b53fb6a7c6ecbfc981c93a723b6758b5736acf
 workflow-type: tm+mt
 source-wordcount: '503'
 ht-degree: 0%
@@ -24,7 +24,7 @@ Konfiguration och skärpning av sekretess är en viktig del av säkerhetsoptimer
 * Kontrollera att krypterade lösenord är begränsade
 * Protect de sidor som kan innehålla personlig information, t.ex. spegelsidor, webbtillämpningar osv.
 
-? Som användare av hanterade Cloud Services arbetar Adobe tillsammans med dig för att implementera dessa konfigurationer i din miljö.
+![](../assets/do-not-localize/speech.png)  Som användare av hanterade Cloud Services arbetar Adobe tillsammans med dig för att implementera dessa konfigurationer i din miljö.
 
 ## Personalisering
 
