@@ -4,9 +4,9 @@ user-guide-title: Campaign v8
 description: Dokumentation om Campaign v8
 breadcrumb-title: Campaign v8
 title: Kampanjdokument v8
-source-git-commit: 9e07353859e63b71abb61526f40675f18837bc59
+source-git-commit: e0faeda87d5b84309524a72d9f021c381ac4619e
 workflow-type: tm+mt
-source-wordcount: '206'
+source-wordcount: '208'
 ht-degree: 35%
 
 ---
@@ -85,6 +85,7 @@ ht-degree: 35%
       + [Nyckelhantering och unicitet](dev/keys.md)
       + [Skapa scheman](dev/create-schema.md)
       + [Utöka scheman](dev/extend-schema.md)
+      + [Filterscheman](dev/filter-schema.md)
       + [Schemastruktur](dev/schema-structure.md)
       + [Databasmappning](dev/database-mapping.md)
       + [Begränsa PI-vy](dev/restrict-pi-view.md)
