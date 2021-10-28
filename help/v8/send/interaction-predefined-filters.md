@@ -5,20 +5,20 @@ feature: Overview
 role: Data Engineer
 level: Beginner
 exl-id: 092262c7-768c-4e86-9b2b-c52516f6a030
-source-git-commit: f071fc227dac6d72873744ba56eb0b4b676de5dd
+source-git-commit: 7234ca65f785b005b11851a5cd88add8cddeff4f
 workflow-type: tm+mt
 source-wordcount: '102'
-ht-degree: 3%
+ht-degree: 0%
 
 ---
 
-# Skapa fördefinierade filter{#creating-predefined-filters}
+# Skapa fördefinierade filter{#creating-pre-defined-filters}
 
 Skapa fördefinierade filter för att definiera berättiganderegler för målpopulationen som enkelt kan återanvändas när erbjudanden skapas. De är specifika för varje miljö och tar hänsyn till erbjudandeparametrarna.
 
 Så här skapar du ett fördefinierat filter:
 
-1. Bläddra till mappen **[!UICONTROL Administration]** och välj **[!UICONTROL Pre-defined offer filters]**.
+1. Bläddra till **[!UICONTROL Administration]** mapp och markera **[!UICONTROL Pre-defined offer filters]**.
 
    ![](assets/offer_filter_create_005.png)
 
@@ -38,6 +38,6 @@ Så här skapar du ett fördefinierat filter:
 
    ![](assets/offer_filter_create_004.png)
 
-1. Klicka på **[!UICONTROL Preview]** för att visa resultatet av filtret.
+1. Klicka **[!UICONTROL Preview]** om du vill visa resultatet av filtret.
 
    ![](assets/offer_filter_create_006.png)

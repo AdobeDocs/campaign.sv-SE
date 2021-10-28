@@ -4,10 +4,10 @@ user-guide-title: Campaign v8
 description: Dokumentation om Campaign v8
 breadcrumb-title: Campaign v8
 title: Kampanjdokument v8
-source-git-commit: e0faeda87d5b84309524a72d9f021c381ac4619e
+source-git-commit: 889400a238f32968464f1425bb7d6c2dc3ff3cd0
 workflow-type: tm+mt
-source-wordcount: '208'
-ht-degree: 35%
+source-wordcount: '236'
+ht-degree: 32%
 
 ---
 
@@ -48,8 +48,10 @@ ht-degree: 35%
    + [LINE-meddelanden](send/line.md)
    + [Direktmeddelande](send/direct-mail.md)
    + [Transaktionsmeddelanden](send/transactional.md)
-   + Lägg till erbjudanden{#interaction}
-      + [Kom igång med interaktion](send/interaction.md)
+   + Hantera erbjudanden med Campaign Interaction{#interaction}
+      + [Kom igång med interaktion i realtid](send/interaction.md)
+      + [Miljö och arkitektur](send/interaction-architecture.md)
+      + [Bästa praxis](send/interaction-best-practices.md)
       + Definiera inställningar{#interaction}
          + [Skapa operatorer](send/interaction-operators.md)
          + [Skapa miljöer](send/interaction-env.md)
@@ -57,7 +59,12 @@ ht-degree: 35%
          + [Skapa erbjudandeplatser](send/interaction-offer-spaces.md)
       + [Skapa en erbjudandekatalog](send/interaction-offer-catalog.md)
       + [Skapa ett erbjudande](send/interaction-offer.md)
-      + [Skicka ett erbjudande](send/interaction-send-offers.md)
+      + [Skicka ett erbjudande (utgående)](send/interaction-send-offers.md)
+      + Presentera ett erbjudande (inkommande){#inbound}
+         + [Kontext](send/interaction-present-offers.md)
+         + [Ring ett erbjudande på en webbsida](send/interaction-integration.md)
+         + [Hantera anonyma interaktioner](send/anonymous-interactions.md)
+      + [Rapporter och historik](send/interaction-tracking.md)
       + [Användningsfall](send/interaction-use-cases.md)
 + Konfigurera {#config}
    + [Automatisera med arbetsflöden](config/workflows.md)

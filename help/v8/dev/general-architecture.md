@@ -2,7 +2,7 @@
 title: Allmän arkitektur
 description: Läs mer om Campaign-arkitekturen och komponenter
 exl-id: 1d9ff6c5-974d-4a8a-a0d7-641685bbe26e
-source-git-commit: eb8ad88ffd9dbaaf1f9ace2e88ba4486711bc72d
+source-git-commit: 7234ca65f785b005b11851a5cd88add8cddeff4f
 workflow-type: tm+mt
 source-wordcount: '1217'
 ht-degree: 0%
@@ -49,17 +49,17 @@ Vissa Campaign-moduler fungerar kontinuerligt medan andra startas ibland för at
 
 Det finns tre typer av Adobe Campaign-moduler:
 
-* **Moduler** med flera instanser: en enda process körs för alla instanser. Detta gäller följande moduler: webb, syslogd, trackinglog och watchdog.
+* **Moduler med flera instanser**: en enda process körs för alla instanser. Detta gäller följande moduler: webb, syslogd, trackinglog och watchdog.
 * **Eninstansmoduler**: en process körs per instans. Detta gäller följande moduler: mta, wfserver, inMail, sms och stat.
 * **Verktygsmoduler**: Detta är moduler som körs ibland för att utföra tillfälliga eller återkommande åtgärder (rensning, konfiguration, hämtning av spårningsloggar osv.).
 
 De viktigaste processerna är:
 
-**Programserver**  (nlserver web)
+**Programserver** (nlserver web)
 
 Den här processen visar alla Adobe Campaign-funktioner via Web Services API:er (SOAP / HTTP + XML). Dessutom kan man dynamiskt generera webbsidor för åtkomst via HTML (rapporter, webbformulär etc.). För att uppnå detta innehåller den här processen en Apache Tomcat JSP-server. Detta är den process som konsolen ansluter till.
 
-**Arbetsflödesmotor**  (nlserver wfserver)
+**Arbetsflödesmotor** (nlserver wfserver)
 
 Den kör de arbetsflödesprocesser som definierats i programmet.
 
@@ -75,7 +75,7 @@ Adobe Campaign har inbyggd e-postsändningsfunktion. Den här processen fungerar
 
 Den här processen kan hantera anpassning och automatisk sändning till en tredjepartsrouter för SMS, fax och direktreklam.
 
-**Omdirigeringsserver**  (nlserver webmdl)
+**Omdirigeringsserver** (nlserver webmdl)
 
 För e-post hanterar Adobe Campaign automatiskt öppnings- och klickspårning (transaktionsspårning på webbplatsnivå är en ytterligare möjlighet). För att uppnå detta skrivs de URL:er som ingår i e-postmeddelandena om så att de pekar på den här modulen, som registrerar den överförda Internet-användaren innan de dirigeras om till den önskade URL:en.
 
@@ -83,47 +83,47 @@ För att garantera högsta tillgänglighet är denna process helt oberoende av d
 
 Det finns även andra tekniska processer:
 
-**Hantera studsmeddelanden**  (nlserver inMail)
+**Hantera studsmeddelanden** (nlserver inMail)
 
 Med den här processen kan du automatiskt hämta e-post från postlådor som konfigurerats för att ta emot studsade meddelanden som returneras om leveransen misslyckas. Dessa meddelanden genomgår sedan regelbaserad bearbetning för att fastställa orsaken till utebliven leverans (okänd mottagare, kvoten har överskridits osv.) och för att uppdatera leveransstatus i databasen.
 
 Alla dessa åtgärder är helt automatiska och förkonfigurerade.
 
-**SMS-leveransstatus**  (nlserver sms)
+**SMS-leveransstatus** (nlserver sms)
 
 Den här processen avsöker SMS-routern för att samla in förloppsstatus och uppdatera databasen.
 
-**Skriver loggmeddelanden**  (nlserver syslogd)
+**Skriver loggmeddelanden** (nlserver syslogd)
 
 Den här tekniska processen hämtar loggmeddelanden och spårningar som genererats av andra processer och skriver dem till hårddisken. Detta gör att det finns gott om information som kan användas för diagnostik i händelse av problem.
 
-**Skriver spårningsloggar**  (nlserver trackinglogd)
+**Skrivspårningsloggar** (nlserver trackinglogd)
 
 Den här processen sparar spårningsloggarna som genereras av omdirigeringsprocessen.
 
-**Skriver inkommande händelser**  (nlserver interactiond)
+**Skriver inkommande händelser** (nlserver interactiond)
 
 Denna process gör att inkommande händelser spelas in på disken inom ramen för Interaction.
 
-**Kontrollmoduler**  (nlserver watchdog)
+**Tillsynsmoduler** (nlserver watchdog)
 
 Denna tekniska process fungerar som en huvudprocess som sporrar de andra. Den övervakar dem också och startar om dem automatiskt i händelse av incidenter, vilket ger maximal aktiv systemtid.
 
-**Statistikserver**  (nlserver-status)
+**Statistikserver** (nlserver-status)
 
 Den här processen innehåller statistik om antalet anslutningar, de meddelanden som skickas för varje e-postserver som meddelanden skickas till samt deras begränsningar (högsta antal samtidiga anslutningar, meddelanden per timme och/eller anslutning). Du kan också federera flera instanser eller datorer om de delar samma offentliga IP-adresser.
 
 ## Databasbehållare {#db-containers}
 
-Adobe Campaign Cloud-databasen använder [!DNL Snowflake] som innehåller funktionell information (profiler, prenumerationer, innehåll osv.), tekniska data (leveransjobb och loggar, spårningsloggar osv.) och arbetsdata (inköp, leads) för lösningen och alla Adobe Campaign-komponenter kommunicerar med databasen för att utföra sina specifika uppgifter.
+Adobe Campaign Cloud-databasen bygger på [!DNL Snowflake] som innehåller funktionsuppgifter (profiler, prenumerationer, innehåll osv.), tekniska data (leveransjobb och loggar, spårningsloggar osv.) och arbetsdata (inköp, leads) för lösningen och alla Adobe Campaign-komponenter kommunicerar med databasen för att utföra sina specifika uppgifter.
 
-Kunder kan driftsätta Adobe Campaign med hjälp av fördefinierade databaser och scheman, och vid behov kan den fördefinierade miljön utökas. Alla data i datafilen nås av Adobe Campaign via SQL-anrop. Adobe Campaign har också en komplett uppsättning ETL-verktyg (Extract Transform and Load) för import och export av data till och från systemet.
+Kunderna kan driftsätta Adobe Campaign med hjälp av fördefinierade databaser och scheman, och vid behov kan den fördefinierade miljön utökas. Alla data i datafilen nås av Adobe Campaign via SQL-anrop. Adobe Campaign har också en komplett uppsättning ETL-verktyg (Extract Transform and Load) för import och export av data till och från systemet.
 
 ![](assets/data-flow-diagram.png)
 
 
 >[!CAUTION]
 >
->Med **kampanjhanterade Cloud Services** har din miljö och den ursprungliga konfigurationen ställts in av Adobe enligt villkoren i licensavtalet. Du får inte ändra installerade inbyggda paket, inbyggda scheman eller rapporter.
+>Med **Kampanjhanterade Cloud Services**, din miljö och den ursprungliga konfigurationen har angetts av Adobe enligt villkoren i licensavtalet. Du får inte ändra installerade inbyggda paket, inbyggda scheman eller rapporter.
 >
->Om du behöver använda ett Campaign-tillägg eller en viss funktion som inte har tillhandahållits för dig måste du kontakta **Adobe kundtjänst**.
+>Om du behöver använda ett Campaign-tillägg eller en specifik funktion som inte har etablerats för dig måste du kontakta **Adobe kundtjänst**.

@@ -5,16 +5,16 @@ feature: Overview
 role: Data Engineer
 level: Beginner
 exl-id: 00ba1c43-9558-4adb-83a1-6597c2bbca62,7105477f-d29e-4af8-8789-82b4459761b0
-source-git-commit: 9e07353859e63b71abb61526f40675f18837bc59
+source-git-commit: 95e1aff491257faeda8e12bf29aa95045901c8b2
 workflow-type: tm+mt
-source-wordcount: '929'
+source-wordcount: '922'
 ht-degree: 3%
 
 ---
 
-# [!DNL Campaign Classic] Funktioner för v7- [!DNL Campaign] v8{#gs-matrix}
+# [!DNL Campaign Classic] v7 - [!DNL Campaign] v8-funktioner{#gs-matrix}
 
-Som befintlig [!DNL Campaign Classic] v7-användare bör du inte förvänta dig några större avbrott i det sätt som du vanligtvis interagerar med [!DNL Adobe Campaign]. De flesta ändringar i v8 är inte synliga, med undantag för små ändringar som uppstår i gränssnittet och konfigurationsstegen.
+Som en befintlig [!DNL Campaign Classic] v7-användare, du bör inte förvänta dig några större störningar i ditt sätt att interagera med [!DNL Adobe Campaign]. De flesta ändringar i v8 är inte synliga, med undantag för små ändringar som uppstår i gränssnittet och konfigurationsstegen.
 
 Viktiga ändringar:
 
@@ -22,25 +22,25 @@ Viktiga ändringar:
 * Snabbare leverans
 * Realtidsrapportering med kuber
 
-Som [!DNL Campaign Classic]-användare bör du tänka på att de flesta [!DNL Campaign Classic] v7-funktionerna är tillgängliga med [!DNL Campaign] v8, förutom en liten uppsättning av dem, som listas i [det här avsnittet](#gs-removed). Andra kommer i framtida versioner. [Läs mer i det här avsnittet](#gs-unavailable-features)
+Som [!DNL Campaign Classic] användare, observera att de flesta av [!DNL Campaign Classic] v7-funktioner är tillgängliga med [!DNL Campaign] v8, förutom en liten uppsättning, som listas i [det här avsnittet](#gs-removed). Andra kommer i framtida versioner. [Läs mer i det här avsnittet](#gs-unavailable-features)
 
-![](../assets/do-not-localize/glass.png) Läs mer om  [!DNL Campaign] v8-arkitekturen på  [den här sidan](../dev/architecture.md).
+![](../assets/do-not-localize/glass.png) Läs mer om [!DNL Campaign] v8-arkitektur i [den här sidan](../dev/architecture.md).
 
 ## Produktkonfigurationsändringar
 
-### [!DNL Campaign] och  [!DNL Snowflake] {#ac-gs-snowflake}
+### [!DNL Campaign] och [!DNL Snowflake] {#ac-gs-snowflake}
 
 [!DNL Adobe Campaign] v8 fungerar med två databaser: en lokal databas för användargränssnittet för meddelanden i realtid och enhetliga frågor och skrivningar via API:er samt en molndatabas för kampanjkörning, gruppfrågor och arbetsflödeskörning.
 
 Detta är en grundläggande förändring i programvaruarkitekturen. Data är nu fjärrdata och Campaign federerar hela data, inklusive profiler. [!DNL Campaign] -processer kan nu skalas från början till slut, från målinriktning till meddelandekörning: datainmatning, segmentering, målgruppsanpassning, frågor och leveranser kommer nu att köras på några minuter. Den nya versionen löser hela skalförändringsproblemet samtidigt som den behåller samma nivå av flexibilitet och utbyggbarhet. Antalet profiler är nästan obegränsat och datalagringen kan utökas.
 
-Molnlagring utförs i **[!DNL Snowflake]**: ett nytt inbyggt **externt konto** säkerställer anslutningen till molndatabasen. Den är konfigurerad av Adobe och får inte ändras. [Läs mer](../config/external-accounts.md)
+Molnlagring utförs i **[!DNL Snowflake]**: en ny inbyggd **externt konto** säkerställer anslutningen till molndatabasen. Den är konfigurerad av Adobe och får inte ändras. [Läs mer](../config/external-accounts.md)
 
-Alla inbyggda scheman/tabeller som behöver flyttas eller replikeras i molndatabasen har ett inbyggt schematillägg under namnområdet **xxl**. Dessa tillägg innehåller eventuella ändringar som krävs för att flytta inbyggda scheman från den lokala [!DNL Campaign]-databasen till molndatabasen [!DNL Snowflake] och för att anpassa strukturen därefter: nytt UUID, uppdaterade länkar osv.
+Alla inbyggda scheman/tabeller som behöver flyttas eller replikeras i Cloud Database levereras med ett inbyggt schematillägg under **xxl** namnutrymme. Dessa tillägg innehåller alla ändringar som krävs för att flytta inbyggda scheman från [!DNL Campaign] lokal databas till [!DNL Snowflake] Cloud-databas och anpassa deras struktur efter detta: nytt UUID, uppdaterade länkar osv.
 
 >[!CAUTION]
 >
-> Kunddata lagras inte i den lokala [!DNL Campaign]-databasen. Därför måste alla anpassade tabeller skapas i molndatabasen.
+> Kunddata lagras inte lokalt [!DNL Campaign] databas. Därför måste alla anpassade tabeller skapas i molndatabasen.
 
 Det finns specifika API:er för att hantera data mellan den lokala databasen och molndatabasen. Lär dig hur dessa nya API:er fungerar och hur du använder dem i [den här sidan](../dev/new-apis.md).
 
@@ -57,9 +57,9 @@ Ett specifikt tekniskt arbetsflöde hanterar replikering av tabeller som måste 
 
 ### ID-hantering
 
-Kampanjv8-objekt använder nu ett **UID (Universally Unique ID)**, som tillåter ett obegränsat antal unika värden för att identifiera data.
+Kampanjv8-objekt använder nu en **Universally Unique ID (UUID)**, vilket möjliggör ett obegränsat antal unika värden för att identifiera data.
 
-Observera att detta ID är strängbaserat och inte sekventiellt. Primärnyckeln är inte ett numeriskt värde i Campaign v8, och du måste använda attributen **autouid** och **autopk** i dina scheman.
+Observera att detta ID är strängbaserat och inte sekventiellt. Primärnyckeln är inte ett numeriskt värde i Campaign v8, och du måste använda **autouuid** och **autopk** attribut i dina scheman.
 
 I Campaign Classic v7 och tidigare versioner hanteras uniciteten för en nyckel i ett schema (dvs. tabell) på databasmotornivå. Vanligtvis innehåller klassiska databasmotorer som PostgreSQL, Oracle eller SQL Server en inbyggd mekanism som förhindrar att duplicerade rader infogas baserat på en kolumn eller en uppsättning kolumner via primärnycklar och/eller unika index. Det finns inget duplicerat ID i dessa versioner när korrekt index och primärnycklar har angetts på databasnivå.
 
@@ -73,7 +73,7 @@ Kampanjanvändare behöver inte vara databasexperter: det inte längre finns nå
 
 Kampanjanvändare ansluter via sina Adobe ID. Samma Adobe ID används för att behålla alla planer och produkter för Adobe som är kopplade till ett enda konto.
 
-![](../assets/do-not-localize/glass.png) Lär dig hur du ansluter till  [!DNL Campaign] på  [den här sidan](connect.md).
+![](../assets/do-not-localize/glass.png) Lär dig hur du ansluter till [!DNL Campaign] in [den här sidan](connect.md).
 
 ## Rapportering
 
@@ -83,9 +83,9 @@ Observera att Adobe Campaign rapporter är optimerade och har bättre skalbarhet
 
 Campaign v8 erbjuder en ytterligare arbetsflödesaktivitet för målinriktning: **[!UICONTROL Change data source]**.
 
-Med aktiviteten **[!UICONTROL Change data source]** kan du ändra datakällan för ett arbetsflöde **[!UICONTROL Working table]** för att hantera data över olika datakällor som FDA, FFDA och den lokala databasen.
+The **[!UICONTROL Change data source]** kan du ändra datakällan för ett arbetsflöde **[!UICONTROL Working table]** för att hantera data över olika datakällor, som FDA, FFDA och lokala databaser.
 
-![](../assets/do-not-localize/glass.png) Läs mer om  **[!UICONTROL Change data source]** aktiviteten på  [den här sidan](../config/workflows.md#change-data-source-activity).
+![](../assets/do-not-localize/glass.png) Läs mer på **[!UICONTROL Change data source]** aktivitet i [den här sidan](../config/workflows.md#change-data-source-activity).
 
 ## Otillgängliga funktioner{#gs-unavailable-features}
 
@@ -93,15 +93,13 @@ Observera att vissa funktioner inte är tillgängliga i den här versionen av Ca
 
 * Hantera marknadsföringsresurser
 * Distribuerad marknadsföring
-* Inkommande erbjudandehantering (interaktionsmodul)
-* Kampanjoptimering
 * Responshanteraren
 * Hybrid/lokala distributionsmodeller
 * Twitter
 
 >[!CAUTION]
 >
->* För närvarande är Campaign v8 **endast** tillgängligt som hanterad Cloud Service och kan inte distribueras på en lokal eller hybridmiljö.
+>* För tillfället är Campaign v8 **endast** finns som hanterad Cloud Service och kan inte distribueras på plats eller i hybridmiljöer.
 >
 >* Migrering från en befintlig Campaign Classic v7-miljö är inte tillgänglig än.
 >

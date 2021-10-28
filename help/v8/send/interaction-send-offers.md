@@ -5,7 +5,7 @@ feature: Overview
 role: Data Engineer
 level: Beginner
 exl-id: d39b1768-4c39-4d64-b9b6-d9c9424a2b0d
-source-git-commit: 9e07353859e63b71abb61526f40675f18837bc59
+source-git-commit: 7234ca65f785b005b11851a5cd88add8cddeff4f
 workflow-type: tm+mt
 source-wordcount: '1275'
 ht-degree: 2%
@@ -14,7 +14,7 @@ ht-degree: 2%
 
 # Skicka ett erbjudande
 
-För att ett erbjudande ska kunna väljas ut av erbjudandemotorn måste det godkännas och vara tillgängligt i en **Live**-miljö. [Läs mer](interaction-offer.md#approve-offers)
+För att ett erbjudande ska kunna väljas ut av erbjudandemotorn måste det godkännas och vara tillgängligt i en **Live** miljö. [Läs mer](interaction-offer.md#approve-offers)
 
 Erbjudandet presenteras via en utgående kommunikationskanal via direktreklam, e-post eller mobila leveranser. Du kan också använda enhetsläge med Transactional Messaging (Message Center).
 
@@ -22,7 +22,7 @@ Erbjudandet presenteras via en utgående kommunikationskanal via direktreklam, e
 
 Följ stegen nedan för att infoga offertförslag i en leverans:
 
-1. Klicka på ikonen **Erbjudanden** i leveransfönstret.
+1. I leveransfönstret klickar du på **Erbjudanden** ikon.
 
    ![](assets/offer_delivery_001.png)
 
@@ -40,11 +40,11 @@ Följ stegen nedan för att infoga offertförslag i en leverans:
 
    ![](assets/offer_delivery_005.png)
 
-1. Välj alternativet **[!UICONTROL Exclude non-eligible recipients]** om det behövs. [Läs mer](#parameters-for-calling-offer-engine)
+1. Välj **[!UICONTROL Exclude non-eligible recipients]** vid behov. [Läs mer](#parameters-for-calling-offer-engine)
 
    ![](assets/offer_delivery_006.png)
 
-1. Välj alternativet **[!UICONTROL Do not display anything if no offers are selected]** om det behövs. [Läs mer](#parameters-for-calling-offer-engine)
+1. Välj **[!UICONTROL Do not display anything if no offers are selected]** alternativ. [Läs mer](#parameters-for-calling-offer-engine)
 
    ![](assets/offer_delivery_007.png)
 
@@ -66,7 +66,7 @@ Följ stegen nedan för att infoga offertförslag i en leverans:
 * **[!UICONTROL Exclude non-eligible recipients]** : Med det här alternativet kan du aktivera eller inaktivera exkluderingen av mottagare för vilka det inte finns tillräckligt med giltiga erbjudanden. Antalet giltiga förslag kan vara lägre än det begärda antalet. Om den här rutan är markerad kommer mottagare som inte har tillräckligt med erbjudanden att uteslutas från leveransen. Om du inte markerar det här alternativet kommer dessa mottagare inte att uteslutas, men de kommer inte att ha det begärda antalet förslag.
 * **[!UICONTROL Do not display anything if no offer is selected]** : Med det här alternativet kan du välja hur meddelandet ska behandlas om något av förslagen inte finns. När den här rutan är markerad visas inte representationen av det saknade förslaget och inget innehåll visas i meddelandet för det här förslaget. Om rutan inte är markerad avbryts själva meddelandet när det skickas och mottagarna får inte längre några meddelanden.
 
-## Skicka erbjudanden i arbetsflöden
+## Skicka erbjudanden i arbetsflöden{#offer-via-wf}
 
 Med flera arbetsflödesaktiviteter kan du definiera hur erbjudanden presenteras:
 
@@ -76,9 +76,9 @@ Med flera arbetsflödesaktiviteter kan du definiera hur erbjudanden presenteras:
 
 ### Berikning {#enrichment}
 
-Med aktiviteten **Enrichment** kan du lägga till erbjudanden eller länkar till erbjudanden för mottagare.
+The **Berikning** Med -aktivitet kan du lägga till erbjudanden eller länkar till erbjudanden för mottagare.
 
-![](../assets/do-not-localize/book.png) Mer information om anrikningsaktiviteten finns i dokumentationen för  [Campaign Classic v7.](https://experienceleague.adobe.com/docs/campaign-classic/using/automating-with-workflows/targeting-activities/enrichment.html)
+![](../assets/do-not-localize/book.png) Mer information om anrikningsaktiviteten finns i [Campaign Classic v7-dokumentation](https://experienceleague.adobe.com/docs/campaign-classic/using/automating-with-workflows/targeting-activities/enrichment.html)
 
 Du kan till exempel förbättra data för en mottagarfråga före en leverans.
 
@@ -86,27 +86,27 @@ Du kan till exempel förbättra data för en mottagarfråga före en leverans.
 
 Det finns två metoder för att ange erbjudandeförslag.
 
-* Ange ett erbjudande eller ett erbjudande.
+* Ange ett erbjudande eller ett offertmotorsamtal.
 * Referera till en länk till ett erbjudande.
 
 #### Ange ett erbjudande eller ett samtal till erbjudandemotorn {#specifying-an-offer-or-a-call-to-the-offer-engine}
 
-När du har konfigurerat din **Query**-aktivitet:
+När du har konfigurerat **Fråga** aktivitet:
 
-1. Lägg till och öppna en **Enrichment**-aktivitet.
+1. Lägg till och öppna en **Berikning** aktivitet.
 1. Välj **[!UICONTROL Enrichment]** **[!UICONTROL Add data]** i flik .
-1. Välj **[!UICONTROL An offer proposition]** i de datatyper som ska läggas till.
+1. Välj **[!UICONTROL An offer proposition]** i de typer av data som ska läggas till.
 
    ![](assets/int_enrichment_offer2.png)
 
 1. Ange en identifierare och en etikett för det förslag som ska läggas till.
 1. Ange erbjudandevalet. Det finns två möjliga alternativ:
 
-   * **[!UICONTROL Search for the best offer in a category]** : Markera det här alternativet och ange parametrarna för att ringa in erbjudanden (erbjudandeplats, kategori eller tema, kontaktdatum, antal erbjudanden som ska behållas). Motorn beräknar automatiskt erbjudandena som ska läggas till enligt dessa parametrar. Vi rekommenderar att du fyller i antingen **[!UICONTROL Category]**- eller **[!UICONTROL Theme]**-fältet i stället för båda samtidigt.
+   * **[!UICONTROL Search for the best offer in a category]** : Markera det här alternativet och ange parametrarna för att ringa upp erbjudandemotorn (erbjudandeutrymme, kategori eller tema, kontaktdatum, antal erbjudanden som ska behållas). Motorn beräknar automatiskt erbjudandena som ska läggas till enligt dessa parametrar. Vi rekommenderar att du fyller i **[!UICONTROL Category]** eller **[!UICONTROL Theme]** i stället för båda samtidigt.
 
       ![](assets/int_enrichment_offer3.png)
 
-   * **[!UICONTROL A predefined offer]** : markera det här alternativet och ange ett erbjudandeutrymme, ett specifikt erbjudande och ett kontaktdatum för att direkt konfigurera det erbjudande du vill lägga till, utan att anropa erbjudandemotorn.
+   * **[!UICONTROL A pre-defined offer]** : markera det här alternativet och ange ett erbjudandeutrymme, ett specifikt erbjudande och ett kontaktdatum för att direkt konfigurera det erbjudande du vill lägga till, utan att anropa erbjudandemotorn.
 
       ![](assets/int_enrichment_offer4.png)
 
@@ -118,11 +118,11 @@ När du har konfigurerat din **Query**-aktivitet:
 
 #### Referera till en länk till ett erbjudande {#referencing-a-link-to-an-offer}
 
-Du kan även referera till en länk till ett erbjudande i en **Enrichment**-aktivitet.
+Du kan även referera till en länk till ett erbjudande i en **Berikning** aktivitet.
 
 Följ stegen nedan för att göra detta:
 
-1. Välj **[!UICONTROL Add data]** på aktivitetens **[!UICONTROL Enrichment]**-flik.
+1. Välj **[!UICONTROL Add data]** i aktivitetens **[!UICONTROL Enrichment]** -fliken.
 1. I fönstret där du väljer vilken typ av data som ska läggas till väljer du **[!UICONTROL A link]**.
 1. Välj den typ av länk som du vill etablera samt dess mål. I det här fallet är målet erbjudandeschemat.
 
@@ -140,41 +140,41 @@ Följ stegen nedan för att göra detta:
 
 #### Rankningar och vikter för butikserbjudanden {#storing-offer-rankings-and-weights}
 
-När en **Enrichment**-aktivitet används för att leverera erbjudanden lagras deras rankningar och deras vikter inte i förslagstabellen.
+Som standard när **Berikning** aktiviteten används för att leverera erbjudanden, deras rankningar och deras vikter lagras inte i förslagstabellen.
 
 >[!NOTE]
 >
->Aktiviteten **[!UICONTROL Offer engine]** lagrar den här informationen som standard.
+>The **[!UICONTROL Offer engine]** den här informationen lagras som standard i aktiviteten.
 
 Du kan dock lagra den här informationen på följande sätt:
 
 1. Skapa ett anrop till erbjudandemotorn i en anrikningsaktivitet som placerats efter en fråga och före en leveransaktivitet. [Läs mer](#specifying-an-offer-or-a-call-to-the-offer-engine)
-1. Välj **[!UICONTROL Edit additional data...]** i aktivitetens huvudfönster.
+1. I aktivitetens huvudfönster väljer du **[!UICONTROL Edit additional data...]**.
 
    ![](assets/ita_enrichment_rankweight_1.png)
 
-1. Lägg till **[!UICONTROL @rank]**-kolumnerna för rankningen och **[!UICONTROL @weight]** för erbjudandevikten.
+1. Lägg till **[!UICONTROL @rank]** kolumner för rankningen och **[!UICONTROL @weight]** för erbjudandevikten.
 
    ![](assets/ita_enrichment_rankweight_2.png)
 
 1. Bekräfta tillägget och spara arbetsflödet.
 
-Leveransen lagrar automatiskt rangordningen och vikten av erbjudandena. Den här informationen visas på leveransfliken **[!UICONTROL Offers]**.
+Leveransen lagrar automatiskt rangordningen och vikten av erbjudandena. Den här informationen visas i leveransens **[!UICONTROL Offers]** -fliken.
 
 ### Erbjudandemotor {#offer-engine}
 
-Med aktiviteten **[!UICONTROL Offer engine]** kan du även ange ett anrop till erbjudandemotorn före leveransen.
+The **[!UICONTROL Offer engine]** Med -aktiviteten kan du även ange ett anrop till erbjudandemotorn före leveransen.
 
-![](../assets/do-not-localize/book.png) Mer information om  **erbjudandets** tekniska aktivitet finns i dokumentationen för  [Campaign Classic v7.](https://experienceleague.adobe.com/docs/campaign-classic/using/automating-with-workflows/targeting-activities/offer-engine.html)
+![](../assets/do-not-localize/book.png) Mer information finns på **Erbjudandemotor** aktivitet, se [Campaign Classic v7-dokumentation](https://experienceleague.adobe.com/docs/campaign-classic/using/automating-with-workflows/targeting-activities/offer-engine.html)
 
-Denna aktivitet fungerar enligt samma princip som aktiviteten **Anrikning** med ett motoranrop genom att berika inkommande populationsdata med ett erbjudande som beräknas av motorn, före leverans.
+Denna verksamhet följer samma princip som **Berikning** Aktivitet med ett motoranrop genom att berika de inkommande populationsdata med ett erbjudande som beräknas av motorn före leverans.
 
 ![](assets/int_offerengine_activity2.png)
 
-När du har konfigurerat din **Query**-aktivitet:
+När du har konfigurerat **Fråga** aktivitet:
 
-1. Lägg till och öppna en **[!UICONTROL Offer engine]**-aktivitet.
-1. Fyll i de olika tillgängliga fälten för att ange anrop till motoriska parametrar (erbjudandeutrymme, kategori eller tema, kontaktdatum, antal erbjudanden som ska behållas). Motorn beräknar automatiskt erbjudandena som ska läggas till enligt dessa parametrar.
+1. Lägg till och öppna en **[!UICONTROL Offer engine]** aktivitet.
+1. Fyll i de olika tillgängliga fälten för att ange parametrar för att anropa erbjudandemotorn (erbjudandeutrymme, kategori eller tema, kontaktdatum, antal erbjudanden som ska behållas). Motorn beräknar automatiskt erbjudandena som ska läggas till enligt dessa parametrar.
 
    >[!CAUTION]
    >
@@ -186,15 +186,15 @@ När du har konfigurerat din **Query**-aktivitet:
 
 ### Erbjudanden per cell {#offers-by-cell}
 
-Med aktiviteten **[!UICONTROL Offers by cell]** kan du distribuera den inkommande populationen (från en fråga till exempel) till flera segment och ange ett erbjudande som ska visas för vart och ett av dessa segment.
+The **[!UICONTROL Offers by cell]** Med -aktiviteten kan du distribuera den inkommande populationen (från en fråga till exempel) till flera segment och ange ett erbjudande som ska visas för vart och ett av dessa segment.
 
-![](../assets/do-not-localize/book.png) Mer information om  **erbjudandet per** cellaktivitet finns i dokumentationen för  [Campaign Classic v7.](https://experienceleague.adobe.com/docs/campaign-classic/using/automating-with-workflows/targeting-activities/offers-by-cell.html)
+![](../assets/do-not-localize/book.png) Mer information finns på **Erbjudande per cell** aktivitet, se [Campaign Classic v7-dokumentation](https://experienceleague.adobe.com/docs/campaign-classic/using/automating-with-workflows/targeting-activities/offers-by-cell.html)
 
 Gör så här:
 
-1. Lägg till aktiviteten **[!UICONTROL Offers by cell]** när du har angett målpopulationen och öppna den sedan.
-1. På fliken **[!UICONTROL General]** väljer du det erbjudandeutrymme som du vill visa erbjudandena på.
-1. På fliken **[!UICONTROL Cells]** anger du de olika deluppsättningarna med knappen **[!UICONTROL Add]**:
+1. Lägg till **[!UICONTROL Offers by cell]** när du har angett målpopulationen och sedan öppnar du den.
+1. I **[!UICONTROL General]** väljer du det erbjudandeutrymme som du vill visa erbjudandena på.
+1. I **[!UICONTROL Cells]** anger du de olika delmängderna med **[!UICONTROL Add]** knapp:
 
    * Ange delmängdsfyllningen med de tillgängliga filtrerings- och begränsningsreglerna.
    * Välj sedan det erbjudande som du vill presentera för undergruppen. De erbjudanden som är tillgängliga är sådana som är berättigade i den erbjudandemiljö som valdes i föregående steg.

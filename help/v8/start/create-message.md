@@ -5,10 +5,10 @@ feature: Overview
 role: Data Engineer
 level: Beginner
 exl-id: 6cf8a929-637e-4e51-9160-5980ca727efb
-source-git-commit: 780a29dab99ad2bda554134ca95c435b9e76b494
+source-git-commit: 7234ca65f785b005b11851a5cd88add8cddeff4f
 workflow-type: tm+mt
 source-wordcount: '643'
-ht-degree: 3%
+ht-degree: 2%
 
 ---
 
@@ -18,7 +18,7 @@ Med Adobe Campaign kan ni skicka flerkanalskampanjer, inklusive e-post, SMS, pus
 
 De viktigaste funktionerna är målinriktning, definition och personalisering av meddelanden, genomförande av kommunikation och tillhörande verksamhetsrapporter. Den huvudsakliga funktionella åtkomstpunkten är leveransassistenten. Den här åtkomstpunkten leder till flera funktioner som täcks av Adobe Campaign.
 
-Lär dig hur du skapar en leverans i [Campaign Classic v7-dokumentationen](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/key-steps-when-creating-a-delivery/steps-about-delivery-creation-steps.html).
+Lär dig viktiga steg för att skapa en leverans i [Campaign Classic v7-dokumentation](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/key-steps-when-creating-a-delivery/steps-about-delivery-creation-steps.html).
 
 Adobe Campaign v8 har följande leveranskanaler:
 
@@ -42,21 +42,21 @@ När meddelandet har skapats och dess innehåll har utformats och testats kan du
 
    ![](assets/send-email.png)
 
-   ![](../assets/do-not-localize/book.png) Lär dig hur du skickar meddelanden i  [Campaign Classic v7-dokumentationen](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/sending-emails/sending-an-email/sending-messages.html){target=&quot;_blank&quot;}
+   ![](../assets/do-not-localize/book.png) Lär dig hur du skickar meddelanden i [Campaign Classic v7-dokumentation](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/sending-emails/sending-an-email/sending-messages.html){target=&quot;_blank&quot;}
 
 * Skicka meddelanden som är kopplade till en [marknadsföringskampanj](campaigns.md)
 
    ![](assets/deliveries-in-a-campaign.png)
 
-   ![](../assets/do-not-localize/book.png) Lär dig hur du skickar meddelanden i samband med en kampanj i  [Campaign Classic v7-dokumentationen](https://experienceleague.adobe.com/docs/campaign-classic/using/orchestrating-campaigns/orchestrate-campaigns/marketing-campaign-deliveries.html){target=&quot;_blank&quot;}
+   ![](../assets/do-not-localize/book.png) Lär dig hur du skickar meddelanden i samband med en kampanj i [Campaign Classic v7-dokumentation](https://experienceleague.adobe.com/docs/campaign-classic/using/orchestrating-campaigns/orchestrate-campaigns/marketing-campaign-deliveries.html){target=&quot;_blank&quot;}
 
-* Skicka meddelanden via ett [arbetsflöde](../config/workflows.md)
+* Skicka meddelanden via [arbetsflöde](../config/workflows.md)
 
    ![](assets/send-in-a-wf.png)
 
-   ![](../assets/do-not-localize/book.png) Lär dig hur du automatiserar e-postleveranser i dokumentationen [ för ](https://experienceleague.adobe.com/docs/campaign-classic/using/automating-with-workflows/action-activities/delivery.html)Campaign Classic v7 {target=&quot;_blank&quot;}
+   ![](../assets/do-not-localize/book.png) Lär dig automatisera e-postleveranser i [Campaign Classic v7-dokumentation](https://experienceleague.adobe.com/docs/campaign-classic/using/automating-with-workflows/action-activities/delivery.html){target=&quot;_blank&quot;}
 
-* [Utlös ](../send/transactional.md) meddelanden från en händelse
+* [Utlösarmeddelanden](../send/transactional.md) från en händelse
    ![](../assets/do-not-localize/book.png) [Användningsfall: lära dig hur du skickar ett transaktionsmejl med en bifogad fil](https://experienceleague.adobe.com/docs/campaign-classic/using/transactional-messaging/transactional-email-with-attachments.html?lang=en){target=&quot;_blank&quot;}
 
 * Schemalägg meddelanden
@@ -73,32 +73,32 @@ Meddelanden från Adobe Campaign kan personaliseras på olika sätt.
 Du kan:
 
 * Infoga dynamiska personaliseringsfält.
-   ![](../assets/do-not-localize/book.png) Lär dig hur du använder anpassningsfält i dokumentationen [ för ](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/personalizing-deliveries/personalization-fields.html)Campaign Classic v7 {target=&quot;_blank&quot;}
+   ![](../assets/do-not-localize/book.png) Lär dig hur du använder personaliseringsfält i [Campaign Classic v7-dokumentation](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/personalizing-deliveries/personalization-fields.html){target=&quot;_blank&quot;}
 * Infoga fördefinierade personaliseringsblock.
-   ![](../assets/do-not-localize/book.png) Lär dig vad som är ett personaliseringsblock och hur du använder det i  [Campaign Classic v7-dokumentationen](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/personalizing-deliveries/personalization-blocks.html){target=&quot;_blank&quot;}
+   ![](../assets/do-not-localize/book.png) Lär dig vad som är ett personaliseringsblock och hur du använder det i [Campaign Classic v7-dokumentation](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/personalizing-deliveries/personalization-blocks.html){target=&quot;_blank&quot;}
 * Skapa villkorsstyrt innehåll.
-   ![](../assets/do-not-localize/book.png) Lär dig hur du infogar villkorsstyrt innehåll i  [Campaign Classic v7-dokumentationen](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/personalizing-deliveries/conditional-content.html){target=&quot;_blank&quot;}
+   ![](../assets/do-not-localize/book.png) Lär dig hur du infogar villkorsstyrt innehåll i [Campaign Classic v7-dokumentation](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/personalizing-deliveries/conditional-content.html){target=&quot;_blank&quot;}
 
 ## Skicka transaktionsmeddelanden
 
 Transactional messaging (Message Center) är den Campaign-modul som är avsedd för hantering av utlösarmeddelanden.
 
-![](../assets/do-not-localize/glass.png) Läs mer om funktioner för transaktionsmeddelanden i  [det här avsnittet](../dev/architecture.md#transac-msg-archi)
+![](../assets/do-not-localize/glass.png) Läs mer om funktioner för transaktionsmeddelanden i [det här avsnittet](../dev/architecture.md#transac-msg-archi)
 
-![](../assets/do-not-localize/glass.png) Steg för att konfigurera och skicka transaktionsmeddelanden finns på  [den här sidan](../send/transactional.md)
+![](../assets/do-not-localize/glass.png) Steg för att konfigurera och skicka transaktionsmeddelanden beskrivs i [den här sidan](../send/transactional.md)
 
-![](../assets/do-not-localize/book.png) Upptäck den här funktionen i ett slutanvändarfall i dokumentationen [ för ](https://experienceleague.adobe.com/docs/campaign-classic/using/transactional-messaging/transactional-email-with-attachments.html)Campaign Classic v7 {target=&quot;_blank&quot;}
+![](../assets/do-not-localize/book.png) Upptäck den här funktionen i ett heltäckande användningsfall i [Campaign Classic v7-dokumentation](https://experienceleague.adobe.com/docs/campaign-classic/using/transactional-messaging/transactional-email-with-attachments.html){target=&quot;_blank&quot;}
 
 ## Loggar för leverans och spårning
 
 Att övervaka era leveranser efter att de har skickats är ett viktigt steg för att se till att era marknadsföringskampanjer är effektiva och når ut till era kunder. Du kan övervaka efter att du har skickat en leverans samt förstå hur leveransfel och karantäner hanteras.
 
-![](../assets/do-not-localize/book.png) Lär dig hur du övervakar leveranser i  [Campaign Classic v7-dokumentationen](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/monitoring-deliveries/about-delivery-monitoring.html#sending-messages){target=&quot;_blank&quot;}
+![](../assets/do-not-localize/book.png) Lär dig hur du övervakar leveranser i [Campaign Classic v7-dokumentation](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/monitoring-deliveries/about-delivery-monitoring.html#sending-messages){target=&quot;_blank&quot;}
 
 
-**Dokumentation** för närliggande ämnen i Campaign Classic v7:
+**Relaterade ämnen** Campaign Classic v7-dokumentation:
 
-* [Bästa praxis](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/key-steps-when-creating-a-delivery/delivery-bestpractices/delivery-best-practices.html) för leverans {target=&quot;_blank&quot;}
+* [Bästa praxis för leverans](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/key-steps-when-creating-a-delivery/delivery-bestpractices/delivery-best-practices.html){target=&quot;_blank&quot;}
 
 * [Testa och skicka ett e-postmeddelande](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/sending-emails/sending-an-email/sending-messages.html){target=&quot;_blank&quot;}
 

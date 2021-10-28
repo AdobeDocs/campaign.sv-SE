@@ -5,9 +5,9 @@ feature: Overview
 role: Data Engineer
 level: Beginner
 exl-id: c116d86a-d3e2-47e3-a641-e2d7c8cc575c
-source-git-commit: f071fc227dac6d72873744ba56eb0b4b676de5dd
+source-git-commit: 889400a238f32968464f1425bb7d6c2dc3ff3cd0
 workflow-type: tm+mt
-source-wordcount: '610'
+source-wordcount: '840'
 ht-degree: 3%
 
 ---
@@ -16,15 +16,15 @@ ht-degree: 3%
 
 Innehållet i erbjudandekatalogen är konfigurerat i erbjudandemellanslag. Som standard kan innehållet innehålla följande fält: **[!UICONTROL Title]**, **[!UICONTROL Destination URL]**, **[!UICONTROL Image URL]**, **[!UICONTROL HTML content]** och **[!UICONTROL Text content]**. Fältsekvensen är konfigurerad i erbjudandeutrymmet.
 
-Som **teknisk administratör** kan du skapa erbjudandemellanslag i designmiljön. Du måste ha tillgång till undermappen för erbjudandeutrymmet. När erbjudandet har skapats dupliceras dessa erbjudanden automatiskt till Live-miljön när erbjudandet godkänns.
+Som **teknisk administratör** kan du skapa blanksteg i designmiljön. Du måste ha tillgång till undermappen för erbjudandeutrymmet. När erbjudandet har skapats dupliceras dessa erbjudanden automatiskt till Live-miljön när erbjudandet godkänns.
 
-HTML-återgivningen skapas via en återgivningsfunktion. Sekvensen för fälten som definieras i återgivningsfunktionen måste vara identisk med sekvensen som konfigurerats i innehållet.
+Återgivningen i HTML skapas via en återgivningsfunktion. Sekvensen för fälten som definieras i återgivningsfunktionen måste vara identisk med sekvensen som konfigurerats i innehållet.
 
 ![](assets/offer_space_create_009.png)
 
 Följ stegen nedan för att skapa ett nytt erbjudandeutrymme:
 
-1. Klicka på **[!UICONTROL New]** i listan med erbjudanden.
+1. Klicka på i listan med erbjudanden **[!UICONTROL New]**.
 
    ![](assets/offer_space_create_001.png)
 
@@ -32,17 +32,17 @@ Följ stegen nedan för att skapa ett nytt erbjudandeutrymme:
 
    ![](assets/offer_space_create_002.png)
 
-1. Markera alternativet **[!UICONTROL Enable unitary mode]**
+1. Kontrollera **[!UICONTROL Enable unitary mode]** option
 
-1. Gå till fönstret **[!UICONTROL Content field]** och klicka på **[!UICONTROL Add]**.
+1. Gå till **[!UICONTROL Content field]** fönster och klicka **[!UICONTROL Add]**.
 
    ![](assets/offer_space_create_003.png)
 
-1. Gå till noden **[!UICONTROL Content]** och markera fälten i följande ordning: **[!UICONTROL Title]**, **[!UICONTROL Image URL]**, **[!UICONTROL HTML content]** och sedan **[!UICONTROL Destination URL]**.
+1. Gå till **[!UICONTROL Content]** och markera fälten i följande ordning: **[!UICONTROL Title]** sedan **[!UICONTROL Image URL]** sedan **[!UICONTROL HTML content]** sedan **[!UICONTROL Destination URL]**.
 
    ![](assets/offer_space_create_004.png)
 
-1. Markera alternativet **[!UICONTROL Required]** för att göra varje fält obligatoriskt.
+1. Kontrollera **[!UICONTROL Required]** möjlighet att göra varje fält obligatoriskt.
 
    >[!NOTE]
    >
@@ -50,15 +50,15 @@ Följ stegen nedan för att skapa ett nytt erbjudandeutrymme:
 
    ![](assets/offer_space_create_005.png)
 
-1. Klicka på **[!UICONTROL Edit functions]** för att skapa en återgivningsfunktion.
+1. Klicka **[!UICONTROL Edit functions]** för att skapa en återgivningsfunktion.
 
    Dessa funktioner används för att generera offertrepresentationer på ett visst utrymme. Det finns flera möjliga format: HTML eller text.
 
-   **Obs** ! XML-formatet är begränsat till inkommande interaktioner som inte är tillgängliga i den här versionen av produkten. [Läs mer](../start/capability-matrix.md#gs-unavailable-features)
+   **Anteckning** - XML-formatet är begränsat till inkommande interaktioner som inte är tillgängliga i den här versionen av produkten. [Läs mer](../start/capability-matrix.md#gs-unavailable-features)
 
    ![](assets/offer_space_create_006.png)_
 
-1. Gå till fliken **[!UICONTROL HTML rendering]** och välj **[!UICONTROL Overload the HTML rendering function]**.
+1. Gå till **[!UICONTROL HTML rendering]** och markera **[!UICONTROL Overload the HTML rendering function]**.
 1. Infoga återgivningsfunktionen.
 
    ![](assets/offer_space_create_007.png)
@@ -69,7 +69,7 @@ Status för erbjudandeförslag varierar beroende på interaktionen med målpopul
 
 >[!NOTE]
 >
->Statusuppdateringen är en **asynkron**-process. Den utförs av spårningsarbetsflödet som aktiveras varje timme.
+>Statusuppdateringen är en **asynkron** -processen. Den utförs av spårningsarbetsflödet som aktiveras varje timme.
 
 ### Statuslista för erbjudande {#status-list}
 
@@ -90,55 +90,54 @@ Dessa värden används inte som standard: måste konfigureras.
 
 ### Erbjudandestatus när erbjudandet skapas {#configuring-the-status-when-the-proposition-is-created}
 
-När ett erbjudande är **skapat** uppdateras dess status.
+När ett erbjudande är **skapad**, uppdateras dess status.
 
-I **[!UICONTROL Design]**-miljön, för varje erbjudandeutrymme, konfigurerar du den status som ska gälla när ett förslag skapas, beroende på vilken information du vill visa i erbjudanderapporten.
+I **[!UICONTROL Design]** för varje erbjudande konfigurerar du statusen som ska gälla när ett erbjudande skapas, beroende på vilken information du vill visa i erbjudanderapporten.
 
 Följ stegen nedan för att göra detta:
 
-1. Gå till fliken **[!UICONTROL Storage]** för det önskade utrymmet.
+1. Gå till **[!UICONTROL Storage]** -fliken för det önskade utrymmet.
 1. Välj den status som ska användas för förslaget när det skapas.
 
    ![](assets/offer_update_status_001.png)
 
 ### Erbjudandestatus när erbjudandet godkänns {#configuring-the-status-when-the-proposition-is-accepted}
 
-När ett offertförslag har **accepterats** ska du använda ett av de värden som anges som standard för att konfigurera förslagets nya status. Uppdateringen tillämpas när en mottagare klickar på en länk i erbjudandet.
+När ett erbjudande har lagts fram **accepterad** använder du ett av de värden som anges som standard för att konfigurera förslagets nya status. Uppdateringen tillämpas när en mottagare klickar på en länk i erbjudandet.
 
 Följ stegen nedan för att göra detta:
 
-1. Gå till fliken **[!UICONTROL Storage]** för det önskade utrymmet.
+1. Gå till **[!UICONTROL Storage]** -fliken för det önskade utrymmet.
 1. Välj den status som du vill tillämpa på förslaget när det godkänns.
 
    ![](assets/offer_update_status_002.png)
 
-<!--
-**Inbound interaction**
 
-The **[!UICONTROL Storage]** tab lets you define statuses for **proposed** and **accepted** offer propositions only. For inbound interaction, the status of offer propositions should be specified directly in the URL for calling the offer engine, rather than through the interface. This way, you will be able to specify which status to apply in other cases, for example if an offer proposition is rejected.
+**Inkommande interaktion**
+
+The **[!UICONTROL Storage]** kan du definiera status för **föreslaget** och **accepterad** endast erbjudanden. För inkommande interaktion ska status för erbjudandeförslag anges direkt i URL:en för anrop av erbjudandemotorn, i stället för via gränssnittet. På så sätt kan du ange vilken status som ska gälla i andra fall, t.ex. om ett erbjudande avvisas.
 
 ```
 <BASE_URL>?a=UpdateStatus&p=<PRIMARY_KEY_OF_THE_PROPOSITION>&st=<NEW_STATUS_OF_THE_PROPOSITION>&r=<REDIRECT_URL>
 ```
 
-For instance, the proposition (identifier **40004**) that matches the **Home insurance** offer displayed on the **Neobank** site contains the following URL:
+Exempel: dispositionen (identifieraren) **40004**) som matchar **Hemförsäkring** erbjudandet visas på **Neobank** -platsen innehåller följande URL:
 
 ```
 <BASE_URL>?a=UpdateStatus&p=<40004>&st=<3>&r=<"http://www.neobank.com/insurance/subscribe.html">
 ```
 
-As soon as a visitor clicks the offer, and therefore the URL, the **[!UICONTROL Accepted]** status (value **3**) is applied to the proposition and the visitor is redirected to a new page of the **Neobank** site to take out the insurance contract.
+Så snart en besökare klickar på erbjudandet, och därmed webbadressen, **[!UICONTROL Accepted]** status (värde) **3**) används i förslaget och besökaren omdirigeras till en ny sida i **Neobank** Anläggning för teckning av försäkringsavtalet.
 
 >[!NOTE]
 >
->If you want to specify another status in the url (for example if an offer proposition is rejected), use the value corresponding to the desired status. Example: **[!UICONTROL Rejected]** = "5", **[!UICONTROL Presented]** = "1" and so on.
+>Om du vill ange en annan status på URL:en (till exempel om ett erbjudande avvisas) använder du värdet som motsvarar önskad status. Exempel: **[!UICONTROL Rejected]** = &quot;5&quot;, **[!UICONTROL Presented]** = &quot;1&quot; och så vidare.
 >
->Statuses and their values can be retrieved in the **[!UICONTROL Offer propositions (nms)]** data schema. For more on this, refer to [this page](../../configuration/using/data-schemas.md).
+>Status och deras värden kan hämtas i **[!UICONTROL Offer propositions (nms)]** dataschema. Mer information finns på [den här sidan](../dev/create-schema.md).
 
-**Outbound interaction**
--->
+**Utgående interaktion**
 
-Du kan automatiskt tillämpa **[!UICONTROL Interested]**-statusen på ett erbjudande när leveransen innehåller en länk. Lägg bara till **_urlType=&quot;11&quot;**-värdet till länken:
+Du kan använda **[!UICONTROL Interested]** status till ett erbjudande när leveransen innehåller en länk. Lägg bara till **_urlType=&quot;11&quot;** värde för länken:
 
 ```
 <a _urlType="11" href="<DEST_URL>">Link inserted into the delivery</a>
@@ -146,7 +145,7 @@ Du kan automatiskt tillämpa **[!UICONTROL Interested]**-statusen på ett erbjud
 
 ## Förhandsgranska per utrymme {#offer-preview-per-space}
 
-På fliken **[!UICONTROL Preview]** kan du visa de erbjudanden som mottagaren är berättigad till via en vald metod. I exemplet nedan är mottagaren berättigad till tre offerter via post.
+I **[!UICONTROL Preview]** kan du visa de erbjudanden som mottagaren är berättigad till via en vald metod. I exemplet nedan är mottagaren berättigad till tre offerter via post.
 
 ![](assets/offer_space_overview_002.png)
 
@@ -154,6 +153,7 @@ Om en mottagare inte är berättigad till något erbjudande visas detta i förha
 
 ![](assets/offer_space_overview_001.png)
 
-<!--
-The preview can ignore contexts when they are restricted to a space. This is the case when the interaction schema has been extended to add fields referenced in a space using an inbound channel (for more on this, refer to Extension example.
--->
+
+Förhandsvisningen kan ignorera kontexter när de är begränsade till ett mellanslag. Detta är fallet när interaktionsschemat har utökats för att lägga till fält som refereras i ett utrymme med en inkommande kanal.
+
+![](../assets/do-not-localize/book.png)  Mer information om detta finns i exemplet i [Campaign Classic v7-dokumentation](https://experienceleague.adobe.com/docs/campaign-classic/using/managing-offers/advanced-parameters/extension-example.html){target=&quot;_blank&quot;}.
