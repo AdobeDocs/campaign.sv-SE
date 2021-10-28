@@ -6,9 +6,9 @@ role: Data Engineer
 level: Beginner
 hidefromtoc: false
 exl-id: 7cf8111d-9f3a-46a4-813a-d4e43a1d1471,a9d18e75-18e7-491e-bfc4-671c3600396e
-source-git-commit: 0061c536ff309d86061548b98d2c6e1124e01a0e
+source-git-commit: 4ce21dda9516a881cce39c94454d5ac7b43142a9
 workflow-type: tm+mt
-source-wordcount: '1597'
+source-wordcount: '1574'
 ht-degree: 29%
 
 ---
@@ -17,7 +17,7 @@ ht-degree: 29%
 
 På den här sidan visas nya funktioner, förbättringar och korrigeringar som ingår i **senaste Campaign v8-utgåvan**.
 
-## Version 8.2.1 {#release-8-2-1}
+## Version 8.2.8 {#release-8-2-8}
 
 _28 oktober 2021_
 
@@ -68,7 +68,6 @@ _28 oktober 2021_
 **Förbättringar**
 
 * Snowflake-kontakten har förbättrats i fråga om prestanda.
-* I serverkonfigurationsfilen (serverConf.xml) kan du nu ange en väntetid, per schema, mellan uppdateringar och genomföra replikeringar direkt.
 * För övervaknings- och testningsändamål ska granskningsloggarna för **[!UICONTROL Replicate Staging data]** arbetsflödet innehåller nu antalet poster som har skickats till FDA-databasen (Full Federated Data Access).
 * Med SQL-kodsaktiviteten kan du nu välja i vilken databas SQL-skriptet ska lagras: standarddatakällan eller ett valt externt FDA-konto.
 * En uppsättning fördefinierade lagerställen finns nu tillgängliga och kan användas för att köra olika frågor parallellt, som segmentering, ETL eller toppar. [Läs mer](../config/workflows.md)
