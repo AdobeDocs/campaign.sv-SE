@@ -11,7 +11,7 @@ ht-degree: 0%
 
 # Uppdatera databasstrukturen{#updating-the-database-structure}
 
-Om du vill använda ändringarna i scheman startar du guiden Databasuppdatering. Den här assistenten är tillgänglig via **[!UICONTROL Tools > Advanced > Update database structure]**. Den kontrollerar om databasens fysiska struktur matchar dess logiska beskrivning och kör SQL-uppdateringsskripten.
+Om du vill använda ändringarna i scheman startar du guiden Databasuppdatering. Den här assistenten är tillgänglig via **[!UICONTROL Tools > Advanced > Update database structure]** . Den kontrollerar om databasens fysiska struktur matchar dess logiska beskrivning och kör SQL-uppdateringsskripten.
 
 ![](assets/schema_update.png)
 

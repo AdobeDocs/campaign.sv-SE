@@ -2,7 +2,8 @@
 product: campaign
 title: Presentera erbjudanden för anonyma profiler (inkommande interaktion)
 description: Lär dig presentera erbjudanden för anonyma profiler
-source-git-commit: c19336c84114a0c81563c4d5ae760330d3b284cb
+exl-id: b7a04360-f8c6-4c69-9594-2b44d3f819b7
+source-git-commit: 00a88cf9217faf32070a3cd34a2c1ae5243d9a6e
 workflow-type: tm+mt
 source-wordcount: '397'
 ht-degree: 0%
@@ -39,7 +40,7 @@ Anonyma besökare kan bli föremål för en process för identifiering av cookie
 
 Under det här steget görs en jämförelse mellan de data som har återställts av cookies och de i din databas. I vissa fall identifieras besökare (de identifieras sedan implicit), i andra fall identifieras de inte (och förblir därför anonyma).
 
-Om du vill köra den här analysen kan du kontrollera erbjudandeutrymmet i **[!UICONTROL Implicitly identify the individual based on their browser history]** alternativ.
+Om du vill köra den här analysen kontrollerar du **[!UICONTROL Implicitly identify the individual based on their browser history]** alternativ.
 
 ![](assets/identification_anonymous_visitors.png)
 

@@ -28,7 +28,7 @@ API:er för Campaign Classic v7 är fortfarande tillgängliga men kan inte utnyt
 
 >[!CAUTION]
 >
->* Med den här nya mekanismen är datasynkronisering för kanalalternativ, prenumerationer, avregistreringar eller mobilregistrering nu **asynkron**.
+>* Med den här nya mekanismen är datasynkronisering för kanalalternativ, prenumerationer, avbeställningar eller mobilregistrering nu aktiverat **asynkron**.
 >
 >* Mellanlagring gäller endast för scheman som lagras i molndatabasen. Aktivera inte mellanlagring för replikerade scheman. Aktivera inte Mellanlagring för lokala scheman. Aktivera inte mellanlagring på ett mellanlagrat schema
 
@@ -54,11 +54,11 @@ Följ stegen nedan för att implementera Campaign-mellanlagringsmekanismen för 
    </srcSchema>
    ```
 
-   ![](../assets/do-not-localize/glass.png) Läs mer om hur du skapar anpassade scheman på  [den här sidan](create-schema.md).
+   ![](../assets/do-not-localize/glass.png) Läs mer om att skapa anpassade scheman i [den här sidan](create-schema.md).
 
 1. Spara och uppdatera databasstrukturen.  [Läs mer](update-database-structure.md)
 
-1. Aktivera mellanlagringsmekanismen i schemadefinitionen genom att lägga till parametern **autoStg=&quot;true&quot;**.
+1. Aktivera mellanlagringsmekanismen i schemadefinitionen genom att lägga till **autoStg=&quot;true&quot;** parameter.
 
    ```
    <srcSchema _cs="Sample Table (dem)" "YYYY-DD-MM"

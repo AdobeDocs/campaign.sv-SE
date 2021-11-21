@@ -2,7 +2,8 @@
 product: campaign
 title: Adobe Campaign Interaction best practices
 description: Metodtips för att hantera interaktionsmodulen i Adobe Campaign
-source-git-commit: 7234ca65f785b005b11851a5cd88add8cddeff4f
+exl-id: 28f3a5bc-67f5-413e-b2ba-35c341f9ec5f
+source-git-commit: 00a88cf9217faf32070a3cd34a2c1ae5243d9a6e
 workflow-type: tm+mt
 source-wordcount: '1160'
 ht-degree: 0%
@@ -50,7 +51,7 @@ I det här avsnittet finns mer detaljerad information om hur du hanterar erbjuda
 
 ### Flera erbjudanden i ett e-postmeddelande {#multiple-offer-spaces}
 
-När du inkluderar erbjudanden i leveranser väljs erbjudandena i allmänhet upp i kampanjen via ett **Berikning** arbetsflödesaktivitet (eller annan liknande aktivitet).
+När erbjudanden inkluderas i leveranser väljs de vanligtvis upp i kampanjen via ett **Berikning** arbetsflödesaktivitet (eller annan liknande aktivitet).
 
 När du väljer erbjudanden i en **Berikning** väljer du vilket utrymme som ska användas. Oberoende av vilket utrymme som har valts beror menyn för leveransanpassning på hur mycket utrymme som finns i leveransformuläret.
 

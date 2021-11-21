@@ -16,6 +16,6 @@ ht-degree: 0%
 
 Du kan använda Experience Cloud Triggers för att koppla data mellan Adobe Campaign och Adobe Analytics med hjälp av pipeline. Pipelinen hämtar användarens åtgärder eller utlösare från din webbplats. En kundvagnsöverläggning är ett exempel på utlösare. Utlösare bearbetas i Adobe Campaign för att skicka e-post i nära realtid.
 
-Läs mer om utlösare för Adobe Campaign och Experience Cloud på [den här sidan](https://experienceleague.adobe.com/docs/campaign-classic/using/integrating-with-adobe-experience-cloud/experience-triggers/about-triggers.html?lang=en).
+Läs mer om Adobe Campaign och Experience Cloud Triggers på [den här sidan](https://experienceleague.adobe.com/docs/campaign-classic/using/integrating-with-adobe-experience-cloud/experience-triggers/about-triggers.html?lang=en).
 
-![](../assets/do-not-localize/speech.png)   Som användare av hanterade Cloud Services  [kontaktar du ](../start/campaign-faq.md#support) Adobe implementera utlösare för Experience Cloud med Campaign.
+![](../assets/do-not-localize/speech.png)   Som användare av hanterade Cloud Services [kontakta Adobe](../start/campaign-faq.md#support) implementera utlösare för Experience Cloud med Campaign.

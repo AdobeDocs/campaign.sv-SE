@@ -34,7 +34,7 @@ SQL-mappningen i vårt exempelschema ger följande XML-dokument:
 
 ## Beskrivning {#description}
 
-Schemats rotelement är inte längre **`<srcschema>`**, utan **`<schema>`**.
+Schemats rotelement är inte längre **`<srcschema>`**, men **`<schema>`**.
 
 Detta tar oss till en annan typ av dokument, som genereras automatiskt från källschemat, som helt enkelt kallas schema. Det här schemat kommer att användas av Adobe Campaign-programmet.
 
@@ -44,7 +44,7 @@ Namnreglerna för SQL är följande:
 
 * tabell: sammanfogning av schemanamnrymden och namnet
 
-   I vårt exempel anges namnet på tabellen via huvudelementet i schemat i attributet **sqltable**:
+   I det här exemplet anges namnet på tabellen via huvudelementet i schemat i **sqltable** attribute:
 
    ```
    <element name="recipient" sqltable="CusRecipient">
@@ -52,7 +52,7 @@ Namnreglerna för SQL är följande:
 
 * fält: namnet på elementet föregås av ett prefix som definierats enligt typ (&#39;i&#39; för heltal, &#39;d&#39; för double, &#39;s&#39; för sträng, &#39;ts&#39; för datum, osv.)
 
-   Fältnamnet anges via attributet **sqlname** för varje typ **`<attribute>`** och **`<element>`**:
+   Fältnamnet anges via **sqlname** attribut för varje typ **`<attribute>`** och **`<element>`**:
 
    ```
    <attribute desc="E-mail address of recipient" label="Email" length="80" name="email" sqlname="sEmail" type="string"/> 
@@ -79,9 +79,9 @@ SQL-fältbegränsningarna är följande:
 
 ## XML-fält {#xml-fields}
 
-Som standard mappas alla typer av **`<attribute>`**- och **`<element>`**-element till ett SQL-fält i databchematabellen. Du kan emellertid referera till det här fältet i XML i stället för SQL, vilket betyder att data lagras i ett PM-fält (&quot;mData&quot;) i tabellen som innehåller värdena för alla XML-fält. Lagringen av dessa data är ett XML-dokument som observerar schemastrukturen.
+Som standard används alla typer **`<attribute>`** och **`<element>`** -elementet mappas till ett SQL-fält i databchematabellen. Du kan emellertid referera till det här fältet i XML i stället för SQL, vilket betyder att data lagras i ett PM-fält (&quot;mData&quot;) i tabellen som innehåller värdena för alla XML-fält. Lagringen av dessa data är ett XML-dokument som observerar schemastrukturen.
 
-Om du vill fylla i ett fält i XML måste du lägga till attributet **xml** med värdet &quot;true&quot; till det aktuella elementet.
+Om du vill fylla i ett fält i XML måste du lägga till **xml** ett attribut med värdet &quot;true&quot; för det berörda elementet.
 
 **Exempel**: Här är två exempel på hur XML-fält används.
 
@@ -118,7 +118,7 @@ En nyckel deklareras från huvudelementet i dataschemat.
 Tangenter följer följande regler:
 
 * En nyckel kan referera till ett eller flera fält i tabellen.
-* En nyckel kallas&quot;primär&quot; (eller&quot;prioritet&quot;) när den är den första i schemat som ska fyllas i eller om den innehåller attributet **internal** med värdet &quot;true&quot;.
+* En nyckel kallas för primär (eller prioritet) när den är den första i schemat som ska fyllas i eller om den innehåller **internal** -attribut med värdet &quot;true&quot;.
 
 **Exempel**:
 
@@ -198,7 +198,7 @@ Tangenter följer följande regler:
 
 ### Primär nyckel - identifierare
 
-Primärnyckeln för Adobe Campaign-tabeller är ett **UID (Universally Unique ID)** som genereras automatiskt av databasmotorn. Nyckelvärdet är unikt i hela databasen. Innehållet i nyckeln genereras automatiskt när posten infogas.
+Huvudnyckeln i Adobe Campaign tabeller är en **Universally Unique ID (UUID)** autogenereras av databasmotorn. Nyckelvärdet är unikt i hela databasen. Innehållet i nyckeln genereras automatiskt när posten infogas.
 
 **Exempel**
 
@@ -256,7 +256,7 @@ För anslutningsrelationer med Federated Database Access:
 * ![](assets/do-not-localize/join_fda_11.png) : Kardinalitet 1-1
 * ![](assets/do-not-localize/join_fda_1m.png) : Kardinalitet 1-N
 
-![](../assets/do-not-localize/glass.png) Mer information om FDA-tabeller finns i  [Federated Data Access](../connect/fda.md).
+![](../assets/do-not-localize/glass.png) Mer information om FDA-tabeller finns i [Åtkomst till federerade data](../connect/fda.md).
 
 En länk måste deklareras i schemat som innehåller sekundärnyckeln för tabellen som är länkad via huvudelementet:
 
@@ -270,28 +270,28 @@ En länk måste deklareras i schemat som innehåller sekundärnyckeln för tabel
 
 Länkarna följer följande regler:
 
-* Definitionen av en länk anges på en **länk**-typ **`<element>`** med följande attribut:
+* Definitionen av en länk anges på en **link**-type **`<element>`** med följande attribut:
 
-   * **namn**: Namnet på länken från källtabellen.
-   * **mål**: målschemats namn,
+   * **name**: Namnet på länken från källtabellen.
+   * **target**: målschemats namn,
    * **label**: länketikett,
-   * **revLink**  (valfritt): Namn på omvänd länk från målschemat (dras automatiskt som standard).
-   * **integritet**  (valfritt): referensintegritet för källtabellens förekomst till måltabellens förekomst. Möjliga värden är följande:
+   * **revLink** (valfritt): Namn på omvänd länk från målschemat (dras automatiskt som standard).
+   * **integritet** (valfritt): referensintegritet för källtabellens förekomst till måltabellens förekomst. Möjliga värden är följande:
 
-      * **definiera**: det är möjligt att ta bort källförekomsten om den inte längre refereras av en målförekomst,
+      * **define**: det är möjligt att ta bort källförekomsten om den inte längre refereras av en målförekomst,
       * **normal**: Om du tar bort källförekomsten initieras nycklarna för länken till målförekomsten (standardläge), initierar den här typen av integritet alla sekundärnycklar.
       * **egen**: Om du tar bort källförekomsten tas målförekomsten bort.
-      * **owncopy**: samma som  **eget**  (vid borttagning) eller dubblerar förekomsterna (vid duplicering),
+      * **owncopy**: samma som **egen** (vid radering) eller dubblerar förekomsterna (vid dubblering),
       * **neutral**: gör ingenting.
-   * **revIntegrity**  (valfritt): integritet i målschemat (valfritt, &quot;normal&quot; som standard),
-   * **revCardinality**  (valfritt): med värdet &quot;single&quot; fylls kardinaliteten med typ 1-1 (1-N som standard).
-   * **externalJoin**  (valfritt): tvingar det yttre hörnet
-   * **revExternalJoin**  (valfritt): tvingar det yttre hörnet på den omvända länken
+   * **revIntegrity** (valfritt): integritet i målschemat (valfritt, &quot;normal&quot; som standard),
+   * **revCardinality** (valfritt): med värdet &quot;single&quot; fylls kardinaliteten med typ 1-1 (1-N som standard).
+   * **externalJoin** (valfritt): tvingar det yttre hörnet
+   * **revExternalJoin** (valfritt): tvingar det yttre hörnet på den omvända länken
 
 
-* En länk refererar till ett eller flera fält från källtabellen till måltabellen. Fälten som ingår i join-elementet ( `<join>`) behöver inte fyllas i eftersom de automatiskt dras av som standard med målschemats interna nyckel.
+* En länk refererar till ett eller flera fält från källtabellen till måltabellen. Fälten som utgör kopplingen ( `<join>`  -element) behöver inte fyllas i eftersom de automatiskt dras av som standard med målschemats interna nyckel.
 * En länk består av två halvlänkar, där den första deklareras från källschemat och den andra skapas automatiskt i målschemats utökade schema.
-* En join kan vara en yttre join om attributet **externalJoin** har lagts till, med värdet &quot;true&quot; (stöds i PostgreSQL).
+* Ett hörn kan vara ett yttre hörn om **externalJoin** -attributet läggs till med värdet &quot;true&quot; (stöds i PostgreSQL).
 
 >[!NOTE]
 >
@@ -348,9 +348,9 @@ Utökat schema för målet (&quot;cus:company&quot;):
 
 En omvänd länk till tabellen&quot;cus:mottagare&quot; lades till med följande parametrar:
 
-* **namn**: dras automatiskt från källschemats namn (kan framtvingas med attributet &quot;revLink&quot; i länkdefinitionen i källschemat)
+* **name**: dras automatiskt från källschemats namn (kan framtvingas med attributet &quot;revLink&quot; i länkdefinitionen i källschemat)
 * **revLink**: namn på omvänd länk
-* **mål**: nyckel för länkat schema (&quot;cus:mottagare&quot;-schema)
+* **target**: nyckel för länkat schema (&quot;cus:mottagare&quot;-schema)
 * **obunden**: länken deklareras som ett samlingselement för en 1-N-kardinalitet (som standard)
 * **integritet**: &quot;define&quot; som standard (kan framtvingas med attributet &quot;revIntegrity&quot; i länkdefinitionen i källschemat).
 
@@ -389,7 +389,7 @@ Standardvärdet returnerar identifieraren för den första giltiga parametertypf
 
 ### Exempel 5 {#example-5}
 
-I det här exemplet vill vi skapa en nyckel för en länk (&quot;företag&quot; till&quot;cus:company&quot;-schema) med attributet **xlink** och ett fält i tabellen (&quot;email&quot;):
+I det här exemplet vill vi skapa en nyckel på en länk (&quot;företag&quot; till&quot;cus:company&quot;-schema) med **xlink** och ett fält i tabellen (&quot;email&quot;):
 
 ```
 <srcSchema name="recipient" namespace="cus">

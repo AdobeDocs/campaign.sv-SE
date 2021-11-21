@@ -18,7 +18,7 @@ Campaign Client Console är en avancerad klient som gör att du kan ansluta till
 
 Innan du börjar måste du:
 
-* Kontrollera system- och verktygskompatibiliteten med Adobe Campaign i [kompatibilitetsmatrisen](compatibility-matrix.md)
+* Kontrollera system- och verktygskompatibiliteten med Adobe Campaign i [Kompatibilitetsmatris](compatibility-matrix.md)
 * Hämta webbadressen till Campaign-servern
 * Skapa din Adobe ID eller hämta dina användaruppgifter från ditt företag
 
@@ -28,43 +28,43 @@ När du använder Campaign för första gången, eller om du behöver uppgradera
 
 Det finns två alternativ:
 
-1. Som kampanjadministratör ansluter du till Adobe [Software Distribution](https://experience.adobe.com/#/downloads/content/software-distribution/en/campaign.html) och hämtar installationsprogrammet för klientkonsolen. Sedan kan du installera den på den lokala datorn.
+1. Som kampanjadministratör ansluter du till Adobe [Programvarudistribution](https://experience.adobe.com/#/downloads/content/software-distribution/en/campaign.html) och hämta installationsprogrammet för Client Console. Sedan kan du installera den på den lokala datorn.
 
 1. Som slutanvändare kan Adobe distribuera konsolen åt dig: När konsolen har uppdaterats uppmanas du att hämta den senaste versionen av klientkonsolen i ett popup-fönster.
 
 >[!CAUTION]
 >
->Adobe rekommenderar att du låter alternativet **[!UICONTROL No longer ask this question]** vara avmarkerat för att se till att alla användare får meddelanden när en ny version av konsolen är tillgänglig.  Om det här alternativet väljs informeras användaren inte om nya tillgängliga versioner.
+>Adobe rekommenderar att du låter alternativet vara kvar **[!UICONTROL No longer ask this question]** avmarkerat för att se till att alla användare får en varning när en ny version av konsolen är tillgänglig.  Om det här alternativet väljs informeras användaren inte om nya tillgängliga versioner.
 
 ## Skapa din anslutning
 
 När klientkonsolen har installerats nyligen följer du stegen nedan för att skapa anslutningen till programservern:
 
-1. Starta konsolen från Windows **[!UICONTROL Start]**-menyn i **Adobe Campaign**-programgruppen.
+1. Starta konsolen från Windows **[!UICONTROL Start]** -menyn på **Adobe Campaign** programgrupp.
 
 1. Klicka på länken i det övre högra hörnet av inloggningsfälten för att komma åt fönstret för anslutningskonfiguration.
 
-1. Klicka på **[!UICONTROL Add > Connection]** och ange etiketten och URL:en för Adobe Campaign-programservern.
+1. Klicka **[!UICONTROL Add > Connection]** och ange etiketten och URL:en för Adobe Campaign-programservern.
 
 1. Ange en anslutning till Adobe Campaign-programservern via en URL. Använd antingen en DNS eller ett alias för datorn eller din IP-adress.
 
-   Du kan till exempel använda URL-adressen [`https://<machine>.<domain>.com`](https://myserver.adobe.com).
+   Du kan till exempel använda [`https://<machine>.<domain>.com`](https://myserver.adobe.com) skriv URL.
 
 1. Markera alternativet **[!UICONTROL Connect with an Adobe ID]**.
 
-1. Klicka på **[!UICONTROL Ok]** för att spara inställningarna.
+1. Klicka **[!UICONTROL Ok]** för att spara inställningarna.
 
 Du kan lägga till så många anslutningar som behövs för att ansluta till test-, scen- och produktionsmiljöer, till exempel.
 
 >[!NOTE]
 >
->Med knappen **[!UICONTROL Add]** kan du skapa **[!UICONTROL folders]** för att ordna alla dina anslutningar. Bara dra och släpp varje anslutning till en mapp.
+>The **[!UICONTROL Add]** knappen kan du skapa **[!UICONTROL folders]** för att ordna alla dina kontakter. Bara dra och släpp varje anslutning till en mapp.
 
 ## Logga in på Adobe Campaign
 
 Så här loggar du in på en befintlig instans:
 
-1. Starta konsolen från Windows **[!UICONTROL Start]**-menyn i **Adobe Campaign**-programgruppen.
+1. Starta konsolen från Windows **[!UICONTROL Start]** -menyn på **Adobe Campaign** programgrupp.
 
 1. Klicka på länken i det övre högra hörnet av inloggningsfälten för att komma åt fönstret för anslutningskonfiguration.
 
@@ -102,7 +102,7 @@ Vissa delar av programmet kan nås via en webbläsare via ett HTML-användargrä
 
 Webbåtkomsten har ett gränssnitt som liknar konsolen men med en reducerad uppsättning funktioner.
 
-För en viss operator visas till exempel en kampanj med följande alternativ i konsolen:
+För en viss operator visas en kampanj med följande alternativ i konsolen:
 
 ![](assets/campaign-from-console.png)
 

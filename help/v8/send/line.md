@@ -17,6 +17,6 @@ ht-degree: 0%
 LINE är ett program för kostnadsfria snabbmeddelanden, röst- och videosamtal som finns på alla mobila enheter och på datorn. Med Adobe Campaign kan du skicka LINE-meddelanden.
 
 
-![](../assets/do-not-localize/book.png) Läs mer i  [Campaign Classic v7-dokumentationen](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/line-channel.html){target=&quot;_blank&quot;}.
+![](../assets/do-not-localize/book.png) Läs mer i [Campaign Classic v7-dokumentation](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/line-channel.html){target=&quot;_blank&quot;}.
 
-![](../assets/do-not-localize/book.png) Se det här  [kompletta ](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/line-channel.html#example--create-and-send-a-personalized-line-message) exemplet i Campaign Classic v7-dokumentationen för att skapa och skicka din första LINE-leverans.
+![](../assets/do-not-localize/book.png) Se detta [prov från början till slut](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/line-channel.html#example--create-and-send-a-personalized-line-message) i Campaign Classic v7-dokumentationen för att skapa och skicka din första LINE-leverans.

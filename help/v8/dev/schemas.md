@@ -35,17 +35,17 @@ Adobe Campaign använder datascheman för att
 * Definiera länkar mellan olika dataobjekt i programmet Campaign.
 * Definiera och beskriva de enskilda fälten som ingår i varje objekt.
 
-Mer information om inbyggda tabeller i Campaign och hur de fungerar finns i [det här avsnittet](datamodel.md).
+Om du vill få en bättre förståelse för de inbyggda tabellerna i Campaign och deras interaktion kan du läsa [det här avsnittet](datamodel.md).
 
 >[!CAUTION]
 >
->Vissa inbyggda Campaign-scheman har ett associerat schema i molndatabasen. Dessa scheman identifieras av namnutrymmet **Xxl** och får inte ändras eller utökas.
+>Vissa inbyggda Campaign-scheman har ett associerat schema i molndatabasen. Dessa scheman identifieras av **Xxl** och får inte ändras eller utökas.
 
 ## Syntax för scheman {#syntax-of-schemas}
 
-Schemats rotelement är **`<srcschema>`**. Den innehåller underelementen **`<element>`** och **`<attribute>`**.
+Schemats rotelement är **`<srcschema>`**. Den innehåller **`<element>`** och **`<attribute>`** delelement.
 
-Det första **`<element>`**-underelementet sammanfaller med entitetens rot.
+Den första **`<element>`** delelement sammanfaller med entitetens rot.
 
 ```
 <srcSchema name="recipient" namespace="cus">
@@ -65,13 +65,13 @@ Det första **`<element>`**-underelementet sammanfaller med entitetens rot.
 
 ![](assets/schema_and_entity.png)
 
-**`<element>`**-taggarna definierar namnen på entitetselementen. **`<attribute>`** -taggar i schemat definierar namnen på attributen i de  **`<element>`** taggar som de har länkats till.
+The **`<element>`** -taggar definierar namnen på enhetselement. **`<attribute>`** -taggar i schemat definierar namnen på attributen i **`<element>`** -taggar som de har länkats till.
 
 ## Identifiering av ett schema {#identification-of-a-schema}
 
 Ett dataschema identifieras med sitt namn och namnutrymme.
 
-Med ett namnutrymme kan du gruppera en uppsättning scheman efter intresseområde. Namnutrymmet **cus** används till exempel för kundspecifik konfiguration (**kunder**).
+Med ett namnutrymme kan du gruppera en uppsättning scheman efter intresseområde. Till exempel **kus** namnutrymme används för kundspecifik konfiguration (**kunder**).
 
 >[!CAUTION]
 >
@@ -81,7 +81,7 @@ Med ett namnutrymme kan du gruppera en uppsättning scheman efter intresseområd
 
 ## Reserverade namnutrymmen {#reserved-namespaces}
 
-Vissa namnutrymmen är reserverade för beskrivningar av de systemenheter som krävs för att Adobe Campaign-programmet ska fungera. Följande namnutrymme **får inte användas** för att identifiera ett nytt schema, i en kombination av versaler och gemener:
+Vissa namnutrymmen är reserverade för beskrivningar av de systemenheter som krävs för att Adobe Campaign-programmet ska fungera. Följande namnutrymme **får inte användas** för att identifiera ett nytt schema, i valfri kombination av versaler och gemener:
 
 * **xxl**: reserverat för Cloud-databasscheman
 * **xtk**: reserverad för plattformssystemdata
@@ -91,17 +91,17 @@ Vissa namnutrymmen är reserverade för beskrivningar av de systemenheter som kr
 * **temp**: reserverat för temporära scheman
 * **crm**: reserverad för integrering av CRM-anslutningar
 
-Identifieringsnyckeln för ett schema är en sträng som byggts med namnutrymmet och namnet avgränsat med ett kolon. till exempel: **nms:receive**.
+Identifieringsnyckeln för ett schema är en sträng som byggts med namnutrymmet och namnet avgränsat med ett kolon. till exempel: **nms:mottagare**.
 
 ## Skapa eller utöka kampanjscheman {#create-or-extend-schemas}
 
 Om du vill lägga till ett fält eller något annat element i ett av de centrala dataroderna i Campaign, t.ex. mottagartabellen (nms:mottagare), måste du utöka det schemat.
 
-![](../assets/do-not-localize/glass.png) Mer information finns i  [Utöka ett schema](extend-schema.md).
+![](../assets/do-not-localize/glass.png) Mer information finns i [Utöka ett schema](extend-schema.md).
 
 Om du vill lägga till en helt ny typ av data som inte finns i Adobe Campaign (till exempel en kontraktstabell) kan du skapa ett anpassat schema direkt.
 
-![](../assets/do-not-localize/glass.png) Mer information finns i  [Skapa ett nytt schema](create-schema.md).
+![](../assets/do-not-localize/glass.png) Mer information finns i [Skapa ett nytt schema](create-schema.md).
 
 ![](assets/schemaextension_1.png)
 
@@ -131,13 +131,13 @@ type="string" enum="exTransactionTypeEnum"/>
 
 >[!NOTE]
 >
->Du kan också använda användarhanterade uppräkningar (vanligtvis under **[!UICONTROL Administration]** > **[!UICONTROL Platform]**) för att ange värden för ett visst fält. Detta är effektivt globala uppräkningar och ett bättre alternativ om uppräkningen kan användas utanför det specifika schema som du arbetar i.
+>Du kan också använda användarhanterade uppräkningar (vanligtvis under **[!UICONTROL Administration]** > **[!UICONTROL Platform]** ) för att ange värden för ett visst fält. Detta är effektivt globala uppräkningar och ett bättre alternativ om uppräkningen kan användas utanför det specifika schema som du arbetar i.
 
 ## Tangenter {#keys}
 
-Alla tabeller måste ha minst en nyckel och upprättas ofta automatiskt i schemats huvudelement med attributen **@autouid** och **autopk** inställda på **true**.
+Alla tabeller måste ha minst en nyckel och ofta etableras de automatiskt i schemats huvudelement med hjälp av **@autouuid** och **autopk** attribut inställda på **true**.
 
-Primärnyckeln kan också definieras med attributet **internal**.
+Primärnyckeln kan också definieras med **internal** -attribut.
 
 Exempel:
 
@@ -147,23 +147,23 @@ Exempel:
 </key>
 ```
 
-I det här exemplet, i stället för att låta attributet **@autouid** skapa en standardprimärnyckel med namnet&quot;id&quot;, anger vi en egen primärnyckel för&quot;houseId&quot;.
+I det här exemplet ska du i stället för att låta **@autouuid** för att skapa en standardprimärnyckel med namnet&quot;id&quot; anger vi vår egen primärnyckel för&quot;houseid&quot;.
 
 >[!CAUTION]
 >
 >När du skapar ett nytt schema eller under ett schematillägg måste du behålla samma sekvensvärde för primärnyckeln (@pkSequence) för hela schemat.
 
-![](../assets/do-not-localize/glass.png) Läs mer om tangenter i  [det här avsnittet](database-mapping.md#management-of-keys).
+![](../assets/do-not-localize/glass.png) Läs mer om tangenter i [det här avsnittet](database-mapping.md#management-of-keys).
 
 ## Attribut (fält) {#attributes--fields-}
 
-Med attribut kan du definiera fälten som utgör dataobjektet. Du kan använda knappen **[!UICONTROL Insert]** i verktygsfältet för schemaversionen för att släppa tomma attributmallar i XML-filen där markören finns. Läs mer i [det här avsnittet](create-schema.md).
+Med attribut kan du definiera fälten som utgör dataobjektet. Du kan använda **[!UICONTROL Insert]** i verktygsfältet för schemautgåvor om du vill släppa tomma attributmallar i XML-filen där markören finns. Läs mer i [det här avsnittet](create-schema.md).
 
 ![](assets/schemaextension_2.png)
 
-Den fullständiga listan med attribut finns i elementavsnittet `<attribute>` i [dokumentationen för Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/configuring-campaign-classic/schema-reference/elements-attributes/attribute.html?lang=en#content-model). Här är några av de vanligaste attributen: **@advanced**, **@dataPolicy**, **@default**, **@desc**, **@enum**, **@expr**, **@label a13/>,**@length **,**@name **,**@notNull **,**@required **,**@ref&lt;a 23/>, **@xml**, **@type**.****
+Den fullständiga listan med attribut finns i `<attribute>` elementavsnitt i [Campaign Classic v7-dokumentation](https://experienceleague.adobe.com/docs/campaign-classic/using/configuring-campaign-classic/schema-reference/elements-attributes/attribute.html?lang=en#content-model). Här är några av de vanligaste attributen: **@advanced**, **@dataPolicy**, **@default**, **@desc**, **@enum**, **@expr**, **@label**, **@length**, **@name**, **@notNull**, **@required**, **@ref**, **@xml**, **@type**.
 
-![](../assets/do-not-localize/book.png) Mer information om de olika attributen finns i attributbeskrivningen i  [Campaign Classic v7-dokumentationen](https://experienceleague.adobe.com/docs/campaign-classic/using/configuring-campaign-classic/schema-reference/elements-attributes/schema-introduction.html?lang=en#configuring-campaign-classic).
+![](../assets/do-not-localize/book.png) Mer information om respektive attribut finns i attributbeskrivningen i [Campaign Classic v7-dokumentation](https://experienceleague.adobe.com/docs/campaign-classic/using/configuring-campaign-classic/schema-reference/elements-attributes/schema-introduction.html?lang=en#configuring-campaign-classic).
 
 ### Exempel {#examples}
 
@@ -179,13 +179,13 @@ Exempel på hur du använder ett gemensamt attribut som mall för ett fält som 
 <attribute name="mobile" label="Mobile" template="nms:common:phone" required="true" />
 ```
 
-Exempel på ett beräknat fält som är dolt med attributet **@advanced**:
+Exempel på ett beräknat fält som är dolt med **@advanced** attribute:
 
 ```
 <attribute name="domain" label="Email domain" desc="Domain of recipient email address" expr="GetEmailDomain([@email])" advanced="true" />
 ```
 
-Exempel på ett XML-fält som också lagras i ett SQL-fält och som har ett **@dataPolicy**-attribut.
+Exempel på ett XML-fält som också lagras i ett SQL-fält och som har ett **@dataPolicy** -attribut.
 
 ```
 <attribute name="secondaryEmail" label="Secondary email address" length="100" xml="true" sql="true" dataPolicy="email" />
@@ -201,7 +201,7 @@ Exempel på ett XML-fält som också lagras i ett SQL-fält och som har ett **@d
 
 Länkar är några av de sista elementen i huvudelementet i schemat. De definierar hur alla olika scheman i din instans relaterar till varandra.
 
-Länkar deklareras i schemat som innehåller **sekundärnyckeln** för tabellen som den är länkad till.
+Länkarna deklareras i schemat som innehåller **sekundärnyckel** för den tabell som den är länkad till.
 
 Det finns tre typer av kardinalitet: 1-1, 1-N och N-N. Det är typen 1-N som används som standard.
 
@@ -249,4 +249,4 @@ Mer information om detta finns i [det här avsnittet](update-database-structure.
 
 >[!NOTE]
 >
->Om ändringarna inte påverkar databasstrukturen behöver du bara generera om scheman. Det gör du genom att markera de scheman som ska uppdateras, högerklicka och välja **[!UICONTROL Actions > Regenerate selected schemas...]**.
+>Om ändringarna inte påverkar databasstrukturen behöver du bara generera om scheman. Det gör du genom att markera de scheman som ska uppdateras, högerklicka och välja **[!UICONTROL Actions > Regenerate selected schemas...]** .

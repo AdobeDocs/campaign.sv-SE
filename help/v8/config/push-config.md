@@ -17,11 +17,11 @@ ht-degree: 1%
 
 Använd Campaign SDK:er för iOS och Android för att underlätta integreringen av mobilapplikationerna i Adobe Campaign.
 
-Versioner som stöds av Android och iOS samt Campaign SDK-kompatibla versioner för Campaign v8 listas i [kompatibilitetsmatrisen](../start/compatibility-matrix.md#MobileSDK).
+Versioner som stöds av Android och iOS samt Campaign SDK-kompatibla versioner för Campaign v8 listas i [Kompatibilitetsmatris](../start/compatibility-matrix.md#MobileSDK) .
 
 >[!NOTE]
 >
->Som Campaign-administratör kan du hämta SDK:er för kampanjer från [Experience Cloud Software Distribution](https://experience.adobe.com/#/downloads/content/software-distributicampaign.html). Mer information får du om du kontaktar [Adobe kundtjänst](https://helpx.adobe.com/se/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html).
+>Som Campaign-administratör kan du hämta Kampanj-SDK:er från [Experience Cloud Software Distribution](https://experience.adobe.com/#/downloads/content/software-distributicampaign.html). Mer information får du av [Adobe kundtjänst](https://helpx.adobe.com/se/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html).
 
 
 ## Deklarera integreringsinställningar {#declaring-integration-settings}
@@ -32,7 +32,7 @@ För att integrera Campaign SDK i mobilappen måste den funktionella administrat
 
    >[!NOTE]
    >
-   >Integreringsnyckeln anges i Adobe Campaign-konsolen på fliken **[!UICONTROL Information]** för tjänsten som är avsedd för mobilprogrammet. Mer information finns i [dokumentationen för Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/sending-push-notifications/configure-the-mobile-app/configuring-the-mobile-application.html?lang=en#creating-ios-app).
+   >Integreringsnyckeln anges i Adobe Campaign-konsolen i **[!UICONTROL Information]** fliken med tjänster som är dedikerade till mobilprogrammet. Se [Campaign Classic v7-dokumentation](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/sending-push-notifications/configure-the-mobile-app/configuring-the-mobile-application.html?lang=en#creating-ios-app).
 
 * **En spårnings-URL**: som matchar adressen för Adobe Campaign-spårningsservern.
 * **En marknadsförings-URL**: för att aktivera insamling av prenumerationer.
@@ -68,7 +68,7 @@ I det här avsnittet får du lära dig hur du använder Android SDK i ett Androi
 
 Om du vill använda push-meddelandet på Android måste du ha ett FCM-konto, konfigurera ditt Android-program så att du får meddelandet och länka programmet till FCM-kontot. Läs mer i [Google Documentation](https://firebase.google.com/docs/cloud-messaging/).
 
-Läs [Google Documentation](https://firebase.google.com/docs/android/setup) om du vill lägga till Firebase i ditt Android-projekt.
+Se [Google Documentation](https://firebase.google.com/docs/android/setup) för att lägga till Firebase i ditt Android-projekt.
 
 Lär dig hur du implementerar FCM i ditt program i [Google Documentation](https://firebase.google.com/docs/android/setup).
 
@@ -76,14 +76,14 @@ Lär dig hur du implementerar FCM i ditt program i [Google Documentation](https:
 >
 > * Glöm inte att hämta och lägga till google-services.json i ditt projekt.
 >
-> * `apiKey` måste matcha uppsättningen `projectKey` i det Adobe Campaign-mobilprogram som är länkat till det här Android-programmet.
+> * The `apiKey` måste matcha `projectKey` anges i det Adobe Campaign Mobile-program som är länkat till det här Android-programmet.
 
 
 ### Konfigurera Android SDK
 
 1. **Initiera SDK**
 
-   Innan du använder Android SDK måste du initiera det. SDK-initieringen kan göras i funktionen `onCreate` för en aktivitet.
+   Innan du använder Android SDK måste du initiera det. SDK-initieringen kan göras i `onCreate` en aktivitets funktion.
 
    ```sql
    /** Called when the activity is first created. */
@@ -102,7 +102,7 @@ Lär dig hur du implementerar FCM i ditt program i [Google Documentation](https:
    }
    ```
 
-   `IntegrationKey` måste matcha med IntegrationKey-uppsättningen i det Adobe Campaign Mobile-program som är länkat till det här Android-programmet.
+   The `IntegrationKey` måste matcha med inställningen &#39;IntegrationKey&#39; i det Adobe Campaign Mobile-program som är länkat till det här Android-programmet.
 
 1. **Registrera den mobila enheten på Adobe Campaign-servern**
 
@@ -111,7 +111,7 @@ Lär dig hur du implementerar FCM i ditt program i [Google Documentation](https:
    * skicka meddelande-ID eller push-ID (deviceToken för iOS och registrationID för Android) till Adobe Campaign.
    * återskapa avstämningsnyckeln eller userKey (till exempel e-post eller kontonummer)
 
-   Du måste registrera enheten hos Adobe Campaign, vid programinitieringen eller vid en användaråtgärd. Det kan du enkelt göra med metoden `registerDevice`.
+   Du måste registrera enheten hos Adobe Campaign, vid programinitieringen eller vid en användaråtgärd. Det är enkelt att göra med `registerDevice` -metod.
 
    ```sql
    public void onClick(View v)
@@ -183,7 +183,7 @@ Lär dig hur du implementerar FCM i ditt program i [Google Documentation](https:
 
 1. **Meddela Campaign när användarens mobilenhetstoken ändras**
 
-   Vi rekommenderar att du använder funktionen `registerDevice` när du anropar funktionen `onTokenRefresh` för att meddela Adobe Campaign om ändringen i användarens mobilenhetstoken.
+   Vi rekommenderar att du använder `registerDevice` funktionen vid anrop av `onTokenRefresh` för att meddela Adobe Campaign om ändringen i användarens mobilenhetstoken.
 
    Exempel:
 
@@ -222,7 +222,7 @@ Lär dig hur du implementerar FCM i ditt program i [Google Documentation](https:
 
 1. **Konfigurera Firebase Messaging Service**
 
-   Utöka `FirebaseMessagingService` i `onMessageReceived`-återanropet för att ta emot meddelanden. Vi rekommenderar att du anropar funktionen `notifyReceive` när återanropet `onMessageReceived` anropas för att aktivera spårning av meddelandemottagningen på den mobila enheten. I Adobe Campaign heter detta **print**-meddelande: den här funktionen ska anropas precis innan operativsystemet begär att meddelandet ska visas.
+   Utöka `FirebaseMessagingService` i `onMessageReceived` motringning för att ta emot meddelanden. Vi rekommenderar att du ringer `notifyReceive` funktionen när `onMessageReceived` callback anropas för att aktivera spårning av meddelandemottagningen på den mobila enheten. I Adobe Campaign heter den här **print** meddelande: den här funktionen ska anropas precis innan operativsystemet begär att meddelandet ska visas.
 
    YourApplicationMessagingService.java
 
@@ -326,7 +326,7 @@ Lär dig hur du implementerar FCM i ditt program i [Google Documentation](https:
 
 1. **Spåra öppningar av datameddelanden**
 
-   För datameddelanden kan du spåra när en användare klickar på ett meddelande för att öppna det med funktionen `notifyOpening`. Meddelandeaktiviteten skapas när användaren klickar på meddelandet (skapas under `onMessageReceived`funktionsanropet)
+   För datameddelanden kan du spåra när en användare klickar på ett meddelande för att öppna det med hjälp av `notifyOpening` funktion. Meddelandeaktiviteten skapas när användaren klickar på meddelandet (skapas under `onMessageReceived`funktionsanrop)
 
    ```sql
    public class NotificationActivity extends Activity {
@@ -361,7 +361,7 @@ Lär dig hur du implementerar FCM i ditt program i [Google Documentation](https:
 
 1. **Spåra öppningar och klicka på meddelandemeddelanden**
 
-   För meddelandena måste spårning av öppnings-/klickningar utföras med funktionen `notifyOpening` i programstartaktiviteten enligt nedan:
+   För meddelandena måste du spåra öppnings-/klickningar med `notifyOpening` -funktionen i programstartaktiviteten enligt nedan:
 
    ```sql
    /** Called when the activity is first created. */
@@ -419,12 +419,12 @@ Lär dig hur du implementerar FCM i ditt program i [Google Documentation](https:
 
    >[!NOTE]
    >
-   > Liknande hantering måste utföras om användaren använder alternativet `click_action` i målaktiviteten.
+   > Liknande hantering måste utföras om användaren använder `click_action` i målaktiviteten.
 
 
 1. **Ta emot spårning för datameddelanden**
 
-   För datameddelanden tas spårningen emot på anropsnivån `onMessageReceived`. Funktionen notifyReceive måste anropas.
+   För datameddelanden tas spårningen emot på `onMessageReceived` samtalsnivå. Funktionen notifyReceive måste anropas.
 
    YourApplicationMessagingService.java
 
@@ -495,7 +495,7 @@ Lär dig hur du implementerar FCM i ditt program i [Google Documentation](https:
    För meddelanden måste spårningsmottagningen konfigureras på två nivåer:
 
    * `onMessageReceived` (program som inte finns i bakgrunden): implementeringen har gjorts i föregående avsnitt
-   * `onCreate` för startaktiviteten (eller målaktiviteten om  `click_action`funktionen används). (Programmet är inte i bakgrunden).
+   * `onCreate` startaktiviteten (eller den riktade aktiviteten om `click_action`används.) (Programmet är inte i bakgrunden).
 
    Det måste göras samtidigt som du spårar genom att öppna/klicka.
 
@@ -630,17 +630,17 @@ Lär dig hur du implementerar FCM i ditt program i [Google Documentation](https:
 
 1. **Konfigurera registreringsstatus**
 
-   Delegatprotokollet gör att du kan få resultatet av anropet **registerDevice** och kan användas för att ta reda på om ett fel uppstod under registreringen.
+   Med delegatprotokollet kan du hämta resultatet av **registerDevice** anrop och kan användas för att ta reda på om ett fel uppstod under registreringen.
 
-   Prototypen **registerDeviceStatus** är:
+   The **registerDeviceStatus** prototypen är:
 
    ```sql
    - (void) registerDeviceStatus: (ACCRegisterDeviceStatus) status:(NSString *) errorReason;
    ```
 
-   * **** Med status kan du veta om en registrering lyckades eller om ett fel uppstod.
+   * **Status** gör att du kan veta om en registrering lyckades eller om ett fel uppstod.
 
-   * **** ErrorReasonger dig mer information om de fel som uppstod. Mer information om tillgängliga fel och deras beskrivningar finns i tabellen nedan.
+   * **ErrorReason** innehåller mer information om felen. Mer information om tillgängliga fel och deras beskrivningar finns i tabellen nedan.
 
    | Status | Beskrivning | ErrorReason |
    | ---------------------------------------------------------- | ------------------------------------------------------ | ----------------------------------------- |
@@ -653,7 +653,7 @@ Lär dig hur du implementerar FCM i ditt program i [Google Documentation](https:
 
    {style=&quot;table-layout:auto&quot;}
 
-   **Definitionen av Neolane_** SDKDelegateprotocol och  **** registerDeviceStatusdelegate är följande:
+   **Neolane_SDKDelegate** protokoll och **registerDeviceStatus** Delegatdefinitionen är följande:
 
    ```sql
    //  Neolane_SDK.h
@@ -685,7 +685,7 @@ Lär dig hur du implementerar FCM i ditt program i [Google Documentation](https:
    @end
    ```
 
-   Så här implementerar du **registerDeviceStatus**-delegaten:
+   Att implementera **registerDeviceStatus** delegat, följ dessa steg:
 
    1. Implementera **setDelegate** under SDK-initieringen.
 
@@ -716,7 +716,7 @@ Lär dig hur du implementerar FCM i ditt program i [Google Documentation](https:
       }
       ```
 
-   1. Lägg till protokollet i **@interface** för klassen.
+   1. Lägg till protokollet i **@interface** av din klass.
 
       ```sql
       //  AppDelegate.h
@@ -792,9 +792,9 @@ Lär dig hur du implementerar FCM i ditt program i [Google Documentation](https:
 
 ## Variabler {#variables}
 
-Med variablerna kan du definiera mobilprogrammets beteende efter att ha tagit emot ett meddelande. Dessa variabler måste definieras i mobilprogramkoden och i Adobe Campaign-konsolen på fliken **[!UICONTROL Variables]** i den dedikerade mobilprogramtjänsten.
+Med variablerna kan du definiera mobilprogrammets beteende efter att ha tagit emot ett meddelande. Dessa variabler måste definieras i mobilprogramkoden och i Adobe Campaign-konsolen i **[!UICONTROL Variables]** i den dedikerade mobilprogramtjänsten.
 
-![](../assets/do-not-localize/book.png) Läs mer i  **Campaign Classic v7-** dokumentationen om mobilappen:  [Konfigurationssteg för iOS](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/sending-push-notifications/configure-the-mobile-app/configuring-the-mobile-application.html){target=&quot;_blank&quot;} och  [konfigurationssteg för Andoid](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/sending-push-notifications/configure-the-mobile-app/configuring-the-mobile-application-android.html){target=&quot;_blank&quot;}.
+![](../assets/do-not-localize/book.png) Läs mer i **Campaign Classic v7-dokumentation** i mobilapp: [Konfigurationssteg för iOS](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/sending-push-notifications/configure-the-mobile-app/configuring-the-mobile-application.html){target=&quot;_blank&quot;} och [Konfigurationssteg för Andoid](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/sending-push-notifications/configure-the-mobile-app/configuring-the-mobile-application-android.html){target=&quot;_blank&quot;}.
 
 Nedan visas ett exempel på en kod som gör att ett mobilprogram kan samla in tillagda variabler i ett meddelande. I vårt exempel använder vi variabeln&quot;VAR&quot;.
 
@@ -884,11 +884,11 @@ På den här nivån måste du:
 
 * Koppla ditt innehållstillägg till kategorin som skickats av Adobe Campaign:
 
-   Om du vill att mobilprogrammet ska visa en bild kan du ange kategorivärdet som &quot;image&quot; i Adobe Campaign och i mobilprogrammet skapar du ett meddelandetillägg med parametern **UNNotificationExtensionCategory** inställd på &quot;image&quot;. När push-meddelandet tas emot på enheten anropas tillägget enligt det definierade kategorivärdet.
+   Om du vill att mobilprogrammet ska visa en bild kan du ange kategorivärdet som &quot;image&quot; i Adobe Campaign och i mobilprogrammet skapar du ett meddelandetillägg med **UNNotificationExtensionCategory** parametern inställd på &quot;image&quot;. När push-meddelandet tas emot på enheten anropas tillägget enligt det definierade kategorivärdet.
 
 * Definiera meddelandelayouten
 
-   Du måste definiera en layout med relevanta widgetar. För en bild heter widgeten **UImageView**.
+   Du måste definiera en layout med relevanta widgetar. Widgeten namnges för en bild **UImageView**.
 
 * Visa dina mediefiler
 

@@ -16,13 +16,13 @@ ht-degree: 20%
 
 ## Nyheter
 
-* **[Vad är [!DNL Adobe Campaign]](start/get-started.md)**  - Nyckelfunktioner och användningsexempel
+* **[Vad är [!DNL Adobe Campaign]](start/get-started.md)** - Nyckelfunktioner och användningsfall
 
-* **[Nyheter i v8](start/whats-new.md)**  - Upptäck Campaign v8-funktioner
+* **[Nyheter i v8](start/whats-new.md)** - Upptäck Campaign v8-funktioner
 
-* **[Implementeringsriktlinjer](start/implement.md)**   - Lär dig hur du börjar implementeringen
+* **[Genomförande av riktlinjer](start/implement.md)**  - Lär dig hur du startar implementeringen
 
-* **[Från v7 till v8](start/capability-matrix.md)**  - Övergår från Campaign Classic v7 till v8? Lär dig viktiga skillnader
+* **[Från v7 till v8](start/capability-matrix.md)** - Övergår från Campaign Classic v7 till v8? Lär dig viktiga skillnader
 
 ## Kom igång
 

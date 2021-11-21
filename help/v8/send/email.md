@@ -16,7 +16,7 @@ ht-degree: 2%
 
 Med e-postleveranser kan du skicka personaliserade e-postmeddelanden till målpopulationen.
 
-![](../assets/do-not-localize/book.png) Läs mer i dokumentationen [ till ](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/sending-emails/about-email-channel.html)Campaign Classic v7.
+![](../assets/do-not-localize/book.png) Läs mer i [Campaign Classic v7-dokumentation](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/sending-emails/about-email-channel.html).
 
 ## Skapa din första e-postleverans
 
@@ -29,7 +29,7 @@ I följande exempel får du lära dig hur du utformar en e-postleverans i Adobe 
 
 1. **Skapa leveransen**
 
-   Om du vill skapa en ny leverans går du till fliken **Kampanjer**, klickar på **Leveranser** och klickar på knappen **Skapa** ovanför listan över befintliga leveranser.
+   Bläddra till **Kampanjer** flik, klicka **Leveranser** och klicka på **Skapa** ovanför listan över befintliga leveranser.
 
    ![](assets/delivery_step_1.png)
 
@@ -41,7 +41,7 @@ I följande exempel får du lära dig hur du utformar en e-postleverans i Adobe 
 
 1. **Importera innehåll**
 
-   Klicka på fliken **Källa** för att klistra in HTML-innehåll.
+   Klicka på **Källa** för att klistra in HTML-innehåll.
 
    ![](assets/paste-content.png)
 
@@ -51,7 +51,7 @@ I följande exempel får du lära dig hur du utformar en e-postleverans i Adobe 
 
    * Lägg till förnamn och efternamn för mottagarna
 
-      Om du vill infoga för- och efternamnen på målprofilerna i innehållet i meddelandet placerar du markören där du vill infoga dem och klickar på den sista ikonen i verktygsfältet, klickar sedan på **[!UICONTROL Include]** och väljer **[!UICONTROL Greetings]**.
+      Om du vill infoga för- och efternamnen på målprofilerna i innehållet i meddelandet placerar du markören där du vill infoga dem och klickar på den sista ikonen i verktygsfältet. Klicka sedan på **[!UICONTROL Include]** och markera **[!UICONTROL Greetings]**.
 
       ![](assets/include-greetings.png)
 
@@ -61,9 +61,9 @@ I följande exempel får du lära dig hur du utformar en e-postleverans i Adobe 
 
    * Infoga en spårad länk
 
-      Om du vill dirigera mottagare till en extern adress via en bild eller text markerar du den och klickar på ikonen **[!UICONTROL Add a link]** i verktygsfältet.
+      Om du vill dirigera leveransmottagare till en extern adress via en bild eller text markerar du den och klickar på knappen **[!UICONTROL Add a link]** i verktygsfältet.
 
-      Ange länkens URL i fältet **URL** med följande format **https://www.myURL.com** och bekräfta sedan.
+      Ange länkens URL i dialogrutan **URL** fält med följande format **https://www.myURL.com**, och bekräfta sedan.
 
       ![](assets/add-a-link.png)
 
@@ -71,8 +71,8 @@ I följande exempel får du lära dig hur du utformar en e-postleverans i Adobe 
 
       Om du vill att mottagarna ska kunna se ditt leveransinnehåll i en webbläsare lägger du till en länk på meddelandets spegelsida.
 
-      Placera markören där du vill infoga länken och klicka på den sista ikonen i verktygsfältet, klicka sedan på **[!UICONTROL Include]** och välj **[!UICONTROL link to mirror page]**.
-   När innehållet är klart klickar du på **Spara**: den kommer nu att visas i din lista över leveranser på fliken **[!UICONTROL Campaigns > Deliveries]**. Din första e-postleverans är klar. Nu måste ni definiera målgruppen, validera leveransen och skicka den.
+      Placera markören där du vill infoga länken, klicka på den sista ikonen i verktygsfältet och klicka sedan på **[!UICONTROL Include]** och markera **[!UICONTROL link to mirror page]**.
+   När innehållet är klart klickar du på **Spara**: den visas nu i din lista över leveranser i **[!UICONTROL Campaigns > Deliveries]** -fliken. Din första e-postleverans är klar. Nu måste ni definiera målgruppen, validera leveransen och skicka den.
 
 
 Läs mer i följande avsnitt av dokumentationen för Campaign Classic v7:
@@ -87,7 +87,7 @@ Läs mer i följande avsnitt av dokumentationen för Campaign Classic v7:
    ![](../assets/do-not-localize/book.png) [Lär dig definiera målpopulationen](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/key-steps-when-creating-a-delivery/steps-defining-the-target-population.html)
 * Validera en leverans och skicka korrektur
    ![](../assets/do-not-localize/book.png) [Lär dig viktiga steg för att validera en leverans](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/key-steps-when-creating-a-delivery/steps-validating-the-delivery.html)
-* Lägg till [dirigerade adresser](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/using-seed-addresses/about-seed-addresses.html)
+* Lägg till [dirigeringsadresser](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/using-seed-addresses/about-seed-addresses.html)
 
 ## Testa och validera dina e-postmeddelanden
 

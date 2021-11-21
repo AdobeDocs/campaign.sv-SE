@@ -20,7 +20,7 @@ Dessutom hjälper vårt samarbete med partners, ledande forskare, säkerhetsfors
 Konfiguration och skärpning av sekretess är en viktig del av säkerhetsoptimeringen. Här följer några tips om sekretess:
 
 * Protect dina kunders personuppgifter (PI) genom att använda HTTPS i stället för HTTP
-* Använd [PI-visningsbegränsning](../dev/restrict-pi-view.md) för att skydda sekretessen och förhindra att data missbrukas
+* Använd [Begränsning av PI-vy](../dev/restrict-pi-view.md) skydda integriteten och förhindra att data används på fel sätt
 * Kontrollera att krypterade lösenord är begränsade
 * Protect de sidor som kan innehålla personlig information, t.ex. spegelsidor, webbtillämpningar osv.
 
@@ -28,7 +28,7 @@ Konfiguration och skärpning av sekretess är en viktig del av säkerhetsoptimer
 
 ## Personalisering
 
-När du lägger till anpassade länkar till ditt innehåll bör du alltid undvika att ha en personalisering i värdnamnsdelen av webbadressen för att undvika eventuella säkerhetsbrister. Följande exempel ska aldrig användas i alla URL-attribut &lt;`a href="">` eller `<img src="">`:
+När du lägger till anpassade länkar till ditt innehåll bör du alltid undvika att ha en personalisering i värdnamnsdelen av webbadressen för att undvika eventuella säkerhetsbrister. Följande exempel får aldrig användas i alla URL-attribut &lt;`a href="">` eller `<img src="">`:
 
 * `<%= url >`
 * `https://<%= url >`
@@ -44,13 +44,13 @@ Med den här begränsningen kan du ta bort lösenordsfält, men låta det extern
 
 1. Gå in **[!UICONTROL Administration]** > **[!UICONTROL Configuration]** > **[!UICONTROL Data schemas]**.
 
-1. Skapa en ny **[!UICONTROL Extension of a schema]**.
+1. Skapa ett nytt **[!UICONTROL Extension of a schema]**.
 
 1. Välj **[!UICONTROL External Account]** (extAccount).
 
 1. På den sista skärmen kan du redigera ditt nya srcSchema för att begränsa åtkomsten till alla lösenordsfält:
 
-   Du kan ersätta huvudelementet (`<element name="extAccount" ... >`) med:
+   Du kan ersätta huvudelementet (`<element name="extAccount" ... >`) av:
 
    ```
    <element name="extAccount">
@@ -96,7 +96,7 @@ Med den här begränsningen kan du ta bort lösenordsfält, men låta det extern
 
    >[!NOTE]
    >
-   >Du kan ersätta `$(loginId) = 0 or $(login) = 'admin'` med `hasNamedRight('admin')` om du vill att alla användare med administratörsbehörighet ska kunna se lösenorden.
+   >Du kan ersätta `$(loginId) = 0 or $(login) = 'admin'` av `hasNamedRight('admin')` om du vill att alla användare med administratörsbehörighet ska kunna se dessa lösenord.
 
 
 ## Åtkomsthantering
@@ -107,7 +107,7 @@ Med den här begränsningen kan du ta bort lösenordsfält, men låta det extern
 * Kontrollera att alla operatorer har rätt åtkomsträttigheter
 * Undvik att använda admin-operatorn och undvik att ha för många operatorer i admin-gruppen
 
-![](../assets/do-not-localize/book.png) Läs mer i  [Adobe Campaign Classic v7-dokumentationen](https://experienceleague.adobe.com/docs/campaign-classic/using/installing-campaign-classic/security-privacy/access-management.html?lang=en#webapp-operator){target=&quot;_blank&quot;}
+![](../assets/do-not-localize/book.png) Läs mer i [Adobe Campaign Classic v7-dokumentation](https://experienceleague.adobe.com/docs/campaign-classic/using/installing-campaign-classic/security-privacy/access-management.html?lang=en#webapp-operator){target=&quot;_blank&quot;}
 
 ## Riktlinjer för kodning
 
@@ -117,6 +117,6 @@ När du utvecklar i Adobe Campaign (arbetsflöden, Javascript, JSSP osv.) ska du
 
 * **Skydda datamodellen**: använda namngivna rättigheter för att begränsa operatoråtgärder, lägga till systemfilter (sysFilter)
 
-* **Lägg till bildtexter i webbprogram**: lägga till bilder på era offentliga landningssidor och prenumerationssidor.
+* **Lägga till bildtexter i webbprogram**: lägga till bilder på era offentliga landningssidor och prenumerationssidor.
 
-![](../assets/do-not-localize/book.png) Läs mer i  [Adobe Campaign Classic v7-dokumentationen](https://experienceleague.adobe.com/docs/campaign-classic/using/installing-campaign-classic/security-privacy/scripting-coding-guidelines.html?lang=en#installing-campaign-classic){target=&quot;_blank&quot;}
+![](../assets/do-not-localize/book.png) Läs mer i [Adobe Campaign Classic v7-dokumentation](https://experienceleague.adobe.com/docs/campaign-classic/using/installing-campaign-classic/security-privacy/scripting-coding-guidelines.html?lang=en#installing-campaign-classic){target=&quot;_blank&quot;}

@@ -21,7 +21,7 @@ Den här integreringen hjälper dig att implementera användningsexempel enligt 
 >[!NOTE]
 >Integreringen stöder bara statiska bilder. De andra typerna av innehåll kan inte personaliseras.
 
-![](../assets/do-not-localize/speech.png)  Som användare av hanterade Cloud Services  [kontaktar du ](../start/campaign-faq.md#support) Adobe implementera utlösare för Experience Cloud med Campaign.
+![](../assets/do-not-localize/speech.png)  Som användare av hanterade Cloud Services [kontakta Adobe](../start/campaign-faq.md#support) implementera utlösare för Experience Cloud med Campaign.
 
 Adobe Target kan använda följande datatyper:
 
@@ -31,7 +31,7 @@ Adobe Target kan använda följande datatyper:
 
 ## Infoga ett dynamiskt innehåll
 
-I exemplet nedan får du lära dig att integrera **ett dynamiskt erbjudande** från Adobe Target i ett Adobe Campaign-e-postmeddelande.
+I exemplet nedan får du lära dig att integrera **ett dynamiskt erbjudande** från Adobe Target till ett Adobe Campaign-mejl.
 
 Vi vill skapa ett meddelande med en bild som ändras dynamiskt beroende på mottagarens land. Data skickas med varje mbox-begäran och beror på besökarens IP-adress.
 
@@ -63,18 +63,18 @@ I Adobe Campaign finns det två sätt att infoga en dynamisk bild från Target i
 
    ![](assets/target_5.png)
 
-* Om du använder standardredigeraren placerar du markören där du vill infoga bilden och väljer **[!UICONTROL Include]** > **[!UICONTROL Dynamic image served by Adobe Target...]** i listrutan för anpassning.
+* Om du använder standardredigeraren placerar du markören där du vill infoga bilden och väljer **[!UICONTROL Include]** > **[!UICONTROL Dynamic image served by Adobe Target...]** från personaliseringsmenyn.
 
    ![](assets/target_12.png)
 
 Du kan sedan definiera bildparametrarna:
 
-* URL:en för **[!UICONTROL Default image]** är den bild som visas när inget av villkoren är uppfyllt. Du kan också välja en bild från ditt resursbibliotek.
-* **[!UICONTROL Target location]** är namnet på platsen för ditt dynamiska erbjudande. Du måste välja den här platsen i din Adobe Target-aktivitet.
-* Med **[!UICONTROL Landing Page]** kan du dirigera om standardbilden till en standardstartsida. Den här URL:en används bara när standardbilden visas i det slutliga e-postmeddelandet. Det är valfritt.
-* **[!UICONTROL Additional decision parameters]** definierar mappningen mellan fälten som definieras i Adobe Target-segmenten och Adobe Campaign-fälten. De Adobe Campaign-fält som används måste ha angetts i rutan. I vårt exempel har vi lagt till fältet Land.
+* The **[!UICONTROL Default image]**&#39;s URL är den bild som visas när inget av villkoren är uppfyllt. Du kan också välja en bild från ditt resursbibliotek.
+* The **[!UICONTROL Target location]** är namnet på platsen för ditt dynamiska erbjudande. Du måste välja den här platsen i din Adobe Target-aktivitet.
+* The **[!UICONTROL Landing Page]** gör att du kan dirigera om standardbilden till en standardstartsida. Den här URL:en används bara när standardbilden visas i det slutliga e-postmeddelandet. Det är valfritt.
+* The **[!UICONTROL Additional decision parameters]**  definierar mappningen mellan de fält som definieras i Adobe Target-segmenten och Adobe Campaign-fälten. De Adobe Campaign-fält som används måste ha angetts i rutan. I vårt exempel har vi lagt till fältet Land.
 
-Om du använder Enterprise-behörigheter i inställningarna för Adobe Target lägger du till motsvarande egenskap i det här fältet. Läs mer om behörigheter för målföretag i [den här sidan](https://experienceleague.adobe.com/docs/target/using/administer/manage-users/enterprise/properties-overview.html?lang=en#administer).
+Om du använder Enterprise-behörigheter i inställningarna för Adobe Target lägger du till motsvarande egenskap i det här fältet. Läs mer om behörigheter för Target Enterprise i [den här sidan](https://experienceleague.adobe.com/docs/target/using/administer/manage-users/enterprise/properties-overview.html?lang=en#administer).
 
 ![](assets/target_13.png)
 
@@ -84,7 +84,7 @@ I Adobe Target kan du skapa olika versioner av ditt erbjudande. Beroende på anv
 
 I vårt fall behöver vi två omdirigeringserbjudanden, det tredje (standarderbjudandet) ska definieras i Adobe Campaign.
 
-1. Om du vill skapa ett nytt omdirigeringserbjudande i Target Standard går du till fliken **[!UICONTROL Content]** och klickar på **[!UICONTROL Code offers]**.
+1. Skapa ett nytt omdirigeringserbjudande i Target Standard från **[!UICONTROL Content]** flik, klicka **[!UICONTROL Code offers]**.
 
 1. Klicka **[!UICONTROL Create]** och sen **[!UICONTROL Redirect Offer]**.
 
@@ -100,15 +100,15 @@ I vårt fall behöver vi två omdirigeringserbjudanden, det tredje (standarderbj
 
 I Adobe Target måste ni skapa de två målgrupper som de personer som besöker ert erbjudande kategoriseras efter det innehåll som ska levereras. För varje målgrupp lägger du till en regel som definierar vilka som ska kunna se erbjudandet.
 
-1. Om du vill skapa en ny målgrupp i Target går du till fliken **[!UICONTROL Audiences]** och klickar på **[!UICONTROL Create Audience]**.
+1. Skapa en ny målgrupp i Target med **[!UICONTROL Audiences]** flik, klicka **[!UICONTROL Create Audience]**.
 
    ![](assets/audiences_1.png)
 
-1. Ge era målgrupper ett namn.
+1. Ge er målgrupp ett namn.
 
    ![](assets/audiences_2.png)
 
-1. Klicka på **[!UICONTROL Add a rule]** och välj en kategori. Regeln använder särskilda kriterier för att rikta in sig på besökarna. Du kan förfina reglerna genom att lägga till villkor eller genom att skapa nya regler i andra kategorier.
+1. Klicka **[!UICONTROL Add a rule]** och välj en kategori. Regeln använder särskilda kriterier för att rikta in sig på besökarna. Du kan förfina reglerna genom att lägga till villkor eller genom att skapa nya regler i andra kategorier.
 
 1. Följ samma procedur för de återstående målgrupperna.
 
@@ -118,13 +118,13 @@ I Adobe Target måste vi skapa en Experience Targeting-aktivitet, definiera olik
 
 Först måste ni definiera målgruppen:
 
-1. Om du vill skapa en Experience Targeting-aktivitet går du till fliken **[!UICONTROL Activities]** och klickar på **[!UICONTROL Create Activity]** och sedan på **[!UICONTROL Experience Targeting]**.
+1. Skapa en Experience Targeting-aktivitet från **[!UICONTROL Activities]** flik, klicka **[!UICONTROL Create Activity]** sedan **[!UICONTROL Experience Targeting]**.
 
    ![](assets/target_10.png)
 
-1. Välj **[!UICONTROL Form]** som **[!UICONTROL Experience Composer]**.
+1. Välj **[!UICONTROL Form]** as **[!UICONTROL Experience Composer]**.
 
-1. Välj en målgrupp genom att klicka på knappen **[!UICONTROL Change audience]**.
+1. Välj en målgrupp genom att klicka på **[!UICONTROL Change audience]** -knappen.
 
    ![](assets/target_10_2.png)
 
@@ -132,7 +132,7 @@ Först måste ni definiera målgruppen:
 
    ![](assets/target_10_3.png)
 
-1. Skapa en ny upplevelse genom att klicka på **[!UICONTROL Add Experience Targeting]**.
+1. Skapa en ny upplevelse genom att klicka **[!UICONTROL Add Experience Targeting]**.
 
 Lägg sedan till innehåll för varje målgrupp:
 
@@ -150,13 +150,13 @@ Lägg sedan till innehåll för varje målgrupp:
 
 1. Följ samma steg för den andra upplevelsen.
 
-Fönstret **[!UICONTROL Target]** sammanfattar din aktivitet. Om det behövs kan ni lägga till andra upplevelser.
+The **[!UICONTROL Target]** fönstret sammanfattar din aktivitet. Om det behövs kan ni lägga till andra upplevelser.
 
 ![](assets/target_experience.png)
 
-I fönstret **[!UICONTROL Goal & Settings]** kan du anpassa din aktivitet genom att ange en prioritet, ett mål eller en varaktighet.
+The **[!UICONTROL Goal & Settings]** kan du anpassa din aktivitet genom att ange en prioritet, ett mål eller en varaktighet.
 
-I **[!UICONTROL Reporting Settings]**-avsnittet kan du välja en åtgärd och redigera parametrarna som avgör när målet uppnås.
+The **[!UICONTROL Reporting Settings]** kan du välja en åtgärd och redigera parametrarna som avgör när ditt mål uppnås.
 
 ![](assets/target_experience_2.png)
 

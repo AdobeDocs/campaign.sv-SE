@@ -87,7 +87,7 @@ _28 oktober 2021_
 * Ett problem som kunde förhindra e-postleveranser med dirigerade adresser har korrigerats.
 * Korrigerade ett problem som kunde förhindra att offerter sparades i offerttabellen.
 * Korrigerade ett problem som orsakade att problem med nätverkstimeout inte loggades korrekt som problem med skriptavbrott i stället för nätverksfel. Detta problem uppstod vid HTTP-begäranden som inkluderades i JavaScript-aktiviteter.
-* Korrigerade ett problem som förhindrade att erbjudandena replikerades till realtidsmiljön på Snowflake.
+* Korrigerade ett problem som förhindrade att erbjudanden replikerades till realtidsmiljön på Snowflake.
 * Korrigerade ett problem som ignorerade attributet autoStg för icke-utökade inbyggda scheman.
 * Ett problem som hindrade användare från att välja **[!UICONTROL Country/Region]** när du förhandsgranskar en profil.
 * Korrigerade ett problem som gjorde att datumväljaren i anpassade rapporter resulterade i ett skriptfel. (NEO-36345)

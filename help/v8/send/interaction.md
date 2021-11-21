@@ -130,7 +130,7 @@ Upptäck erbjudandespecifika villkor och tillhörande vägledning innan du börj
    * **[!UICONTROL anonymous]** : kontakten inte kan identifieras.
 
 * **Berättigat erbjudande**: erbjudandet uppfyller de krav som definieras uppströms och som konsekvent kan erbjudas ett mål.
-* **Presentationsregler**: typologiregler som refereras i erbjudandemiljön, som gör att du kan exkludera vissa erbjudanden genom att ta hänsyn till förslagshistoriken.
+* **Presentationsregler**: typologiregler som refereras i erbjudandemiljön, som gör att du kan exkludera vissa erbjudanden genom att ta hänsyn till offerthistoriken.
 * **Bredd**: formler som gör det möjligt att exakt beräkna hur relevant ett erbjudande är för att välja det mest relevanta erbjudandet. Vikten definieras i erbjudandena. Berättigade erbjudanden beaktas i minskande viktordning.
 * **Återgivningsfunktion**: funktionen som definieras i erbjudandeutrymmet för att konstruera sin offertrepresentation utifrån de attribut som definieras i erbjudandet. Det finns tre olika återgivningsfunktionslägen: HTML, XML och text.
 * **Erbjudandeförslag**: resultatet av åtgärden som består av att presentera ett eller flera erbjudanden för en kontakt i ett visst utrymme (banderoll på en webbplats, ett e-postmeddelande eller ett SMS-meddelande). Det här resultatet lagras i tabellen för erbjudandeförslag. Det är dock inte obligatoriskt att spara förslagen.

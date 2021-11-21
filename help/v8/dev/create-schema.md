@@ -11,7 +11,7 @@ ht-degree: 2%
 
 # Skapa ett nytt schema{#create-new-schema}
 
-Om du vill redigera, skapa och konfigurera scheman klickar du på noden **[!UICONTROL Administration > Configuration > Data schemas]** i Adobe Campaign klientkonsol.
+Om du vill redigera, skapa och konfigurera scheman klickar du på knappen **[!UICONTROL Administration > Configuration > Data schemas]** noden i Adobe Campaign klientkonsol.
 
 >[!NOTE]
 >
@@ -19,7 +19,7 @@ Om du vill redigera, skapa och konfigurera scheman klickar du på noden **[!UICO
 
 ![](assets/schema_navtree.png)
 
-På fliken **[!UICONTROL Edit]** visas XML-innehållet i ett schema:
+The **[!UICONTROL Edit]** -fliken visar XML-innehållet i ett schema:
 
 ![](assets/schema_edition.png)
 
@@ -27,7 +27,7 @@ På fliken **[!UICONTROL Edit]** visas XML-innehållet i ett schema:
 >
 >Med redigeringskontrollen &quot;Namn&quot; kan du ange schemanyckeln som består av namnet och namnutrymmet. Attributen name och namespace för schemats rotelement uppdateras automatiskt i schemats XML-redigeringszon. Observera att vissa namnutrymmen bara är interna. [Läs mer](schemas.md#reserved-namespaces)
 
-Fliken **[!UICONTROL Preview]** genererar automatiskt det utökade schemat:
+The **[!UICONTROL Preview]** genererar automatiskt det utökade schemat:
 
 ![](assets/schema_edition2.png)
 
@@ -35,7 +35,7 @@ Fliken **[!UICONTROL Preview]** genererar automatiskt det utökade schemat:
 >
 >När källschemat sparas startas genereringen av det utökade schemat automatiskt.
 
-Om du behöver kontrollera den fullständiga strukturen för ett schema kan du använda fliken **[!UICONTROL Preview]**. Om schemat har utökats kan du visa alla dess tillägg. Som komplement visar fliken **[!UICONTROL Documentation]** alla schemaattribut och -element och deras egenskaper (SQL-fält, typ/längd, etikett, beskrivning). Fliken **[!UICONTROL Documentation]** gäller bara för genererade scheman.
+Om du behöver kontrollera hela strukturen för ett schema kan du använda **[!UICONTROL Preview]** -fliken. Om schemat har utökats kan du visa alla dess tillägg. Som komplement **[!UICONTROL Documentation]** På -fliken visas alla schemaattribut och -element och deras egenskaper (SQL-fält, typ/längd, etikett, beskrivning). The **[!UICONTROL Documentation]** gäller endast för genererade scheman.
 
 ## Användningsfall: skapa en kontraktstabell {#example--creating-a-contract-table}
 
@@ -43,8 +43,8 @@ I följande exempel skapar du en ny tabell för **kontrakt** i databasen. I den 
 
 För att göra detta måste du skapa tabellschemat och uppdatera databasstrukturen för att generera motsvarande tabell. Detaljerade steg visas nedan.
 
-1. Redigera noden **[!UICONTROL Administration > Configuration > Data schemas]** i Adobe Campaign-trädet och klicka på **[!UICONTROL New]**.
-1. Välj alternativet **[!UICONTROL Create a new table in the data template]** och klicka på **[!UICONTROL Next]** .
+1. Redigera **[!UICONTROL Administration > Configuration > Data schemas]** noden i Adobe Campaign-trädet och klicka **[!UICONTROL New]**.
+1. Välj **[!UICONTROL Create a new table in the data template]** och klicka **[!UICONTROL Next]** .
 
    ![](assets/create_new_schema.png)
 
@@ -56,13 +56,13 @@ För att göra detta måste du skapa tabellschemat och uppdatera databasstruktur
    >
    >Som standard lagras scheman som skapas av användare i &#39;cus&#39;-namnutrymmet. Mer information finns i [Identifiering av ett schema](extend-schema.md#identification-of-a-schema).
 
-1. Skapa tabellens innehåll. Vi rekommenderar att du använder den dedikerade assistenten för att kontrollera att inga inställningar saknas. Det gör du genom att klicka på knappen **[!UICONTROL Insert]** och välja vilken typ av inställning som ska läggas till.
+1. Skapa tabellens innehåll. Vi rekommenderar att du använder den dedikerade assistenten för att kontrollera att inga inställningar saknas. Om du vill göra det klickar du på **[!UICONTROL Insert]** och väljer vilken typ av inställning som ska läggas till.
 
    ![](assets/create_new_content.png)
 
 1. Definiera inställningarna för kontraktstabellen.
 
-   Det bästa sättet är att skapa tabellen i molndatabasen genom att lägga till attributet `dataSource="nms:extAccount:ffda"`. Det här attributet läggs till som standard när en ny tabell skapas.
+   Ett tips är att skapa tabellen i molndatabasen genom att lägga till `dataSource="nms:extAccount:ffda"` -attribut. Det här attributet läggs till som standard när en ny tabell skapas.
 
    ```
    <srcSchema created="YYYY-MM-DD HH:MM:SS.TZ" desc="Active contracts" img="crm:crm/mscrm/mscrm_account_16x16.png"
@@ -106,7 +106,7 @@ För att göra detta måste du skapa tabellschemat och uppdatera databasstruktur
    </srcSchema>
    ```
 
-1. Spara schemat och klicka på fliken **[!UICONTROL Structure]** för att generera strukturen:
+1. Spara schemat och klicka på **[!UICONTROL Structure]** för att generera strukturen:
 
    ![](assets/configuration_structure.png)
 

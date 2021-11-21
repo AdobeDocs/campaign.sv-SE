@@ -8,7 +8,7 @@ exl-id: 4be3a6dc-0c61-4534-b9dd-6c99c8a037a9,870a336f-94ac-4171-891b-67614feef6e
 source-git-commit: 83874f4d124d7892f99e973684b1e8ee571f31e0
 workflow-type: tm+mt
 source-wordcount: '343'
-ht-degree: 27%
+ht-degree: 33%
 
 ---
 
@@ -24,7 +24,7 @@ Följande operativsystem och webbläsare krävs för att använda klientkonsolen
 
 ### Operativsystem
 
-* **Microsoft Windows Server**  2016, 2012
+* **Microsoft Windows Server** 2016, 2012
 * **Microsoft Windows** 8, 10 (rekommenderas för japanska förekomster)
 
 ### Webbläsare
@@ -33,14 +33,14 @@ Följande operativsystem och webbläsare krävs för att använda klientkonsolen
 
 >[!NOTE]
 >
->Adobe Campaign Server och Client Console måste finnas i samma version. [Lär dig hur du kontrollerar versionen](#version).
+>Adobe Campaign Server och Client Console måste finnas i samma version. [Lär dig hur du kontrollerar din version](#version).
 
 ## CRM-kopplingar{#CRMconnectors}
 
-CRM-system som är kompatibla med Adobe Campaign listas nedan. [Läs mer](../connect/crm.md).
+CRM (Customer Relationship Management)-system som är kompatibla med Adobe Campaign listas nedan. [Läs mer](../connect/crm.md).
 
-* **** Salesforceconnector API version 49
-* **Microsoft** DynamicConnector, webb-API: Dynamics 365 On-Local and Online
+* **Salesforce** API för anslutning version 49
+* **Microsoft Dynamics** koppling, webb-API: Dynamics 365 On-Local and Online
 
 ## Federerad dataåtkomst (FDA){#FederatedDataAccessFDA}
 
@@ -53,28 +53,28 @@ Externa databaser som är kompatibla med Adobe Campaign FDA-modulen (Federated D
 
 ## Mobilt SDK{#MobileSDK}
 
-Du kan använda Campaign för att skicka [push-meddelanden](../send/push.md) till de operativsystem som listas nedan med tillhörande mobil-SDK.
+Du kan använda Campaign för att skicka [push-meddelanden](../send/push.md) i de operativsystem som anges nedan med tillhörande mobil-SDK.
 
 * **Android** 7.x, 8.x, 9.0 med Campaign Android SDK build 1.1.1.
 * **Apple iOS** 9 - 14 med Campaign iOS SDK build 1.0.26, kompatibelt med 32- och 64-bitarsversioner.
 
 ## Webbåtkomst
 
-Följande webbläsare är kompatibla med Campaign för [webbåtkomst](connect.md#web-access).
+Följande webbläsare är kompatibla med Campaign för [Web Access](connect.md#web-access).
 
-* **Microsoft Edge**,  **Mozilla Firefox**,  **Google Chrome**,  **Safari**  (senaste versionerna)
+* **Microsoft Edge**, **Mozilla Firefox**, **Google Chrome**, **Safari** (senaste versionerna)
 
 * **Internet Explorer** 11
 
 ## Så här kontrollerar du Campaign-versionen och bygget{#version}
 
-Gå till **Hjälp > Om..**-menyn för att kontrollera din version.
+Öppna **Hjälp > Om...** -menyn för att kontrollera versionen.
 
 ![](assets/ac-version.png)
 
 Du kommer åt följande information:
 
-* **version**-numret för klientkonsolen och programservern. I exemplet ovan är versionen 8.1.5 för både klientkonsolen och programservern.
+* The **version** numret på klientkonsolen och programservern. I exemplet ovan är versionen 8.1.5 för både klientkonsolen och programservern.
 * SHA-talet mellan parenteser.
 * Länk till Adobe kundtjänst.
 * Länkar till Adobe sekretesspolicy, användarvillkor och cookies-policy.

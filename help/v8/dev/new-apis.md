@@ -28,13 +28,13 @@ Ett dedikerat inbyggt arbetsflöde synkroniserar data i molndatabasen.
 
 ## Infoga data{#data-insert-api}
 
-API:t **xtk.session.ingest** är endast dedikerat till Datainmatning. Ingen uppdatering/borttagning.
+The **xtk.session.ingest** API är endast dedikerat till datainmatning. Ingen uppdatering/borttagning.
 
 ### Infoga utan avstämning
 
 **I ett arbetsflöde**
 
-Använd följande kod i en **JavaScript-kod**-aktivitet för att infoga data i molndatabasen utan avstämning:
+Använd följande kod i en **Javascript-kod** aktivitet för att infoga data i molndatabasen utan avstämning:
 
 ```
 var xmlStagingSampleTable = <sampleTableStg
@@ -91,7 +91,7 @@ Därför matas mellanlagringstabellen som förväntat.
 
 **I ett arbetsflöde**
 
-Använd följande kod i en **JavaScript-kod**-aktivitet för att infoga data i molndatabasen med avstämning:
+Använd följande kod i en **Javascript-kod** aktivitet som infogar data i molndatabasen med avstämning:
 
 ```
 var xmlStagingSampleTable = <sampleTableStg  _key="@id" id="ABC12345"
@@ -147,13 +147,13 @@ Därför matas mellanlagringstabellen som förväntat.
 
 ## Uppdatera eller ta bort data{#data-update-api}
 
-API:t **xtk.session.IngestExt** är optimerat för uppdatering/borttagning av data. Använd **xtk.session.ingest** om du bara vill infoga. Infoga fungerar oavsett om postnyckeln finns i mellanlagringstabellen.
+The **xtk.session.IngestExt** API är optimerat för uppdatering/borttagning av data. Använd endast Infoga **xtk.session.ingest**. Infoga fungerar oavsett om postnyckeln finns i mellanlagringstabellen.
 
 ### Infoga/uppdatera
 
 **I ett arbetsflöde**
 
-Använd följande kod i en **JavaScript-kod**-aktivitet för att uppdatera data i molndatabasen:
+Använd följande kod i en **Javascript-kod** aktivitet för att uppdatera data i molndatabasen:
 
 ```
 var xmlStagingRecipient = <sampleTableStg  _key="@id" id="ABC12345"
@@ -208,7 +208,7 @@ Därför uppdateras mellanlagringstabellen som förväntat.
 
 Prenumerationshantering i Campaign beskrivs i [den här sidan](../start/subscriptions.md).
 
-Inläggning av prenumerations- och avprenumerationsdata är beroende av [mellanlagringsmekanismen](staging.md) i den lokala Campaign-databasen. Prenumerationsinformation lagras tillfälligt i mellanlagringstabeller i den lokala databasen och synkroniseringsarbetsflödet skickar dessa data från den lokala databasen till molndatabasen. Som en följd av detta är prenumerations- och avprenumerationsprocesserna **asynkrona**. Begäranden om anmälan och avanmälan behandlas varje timme via ett specifikt tekniskt arbetsflöde. [Läs mer](../config/replication.md#tech-wf)
+Inläggning av prenumerations- och avprenumerationsdata bygger på [Mellanlagringsmekanism](staging.md) i Campaign-databasen. Prenumerationsinformation lagras tillfälligt i mellanlagringstabeller i den lokala databasen och synkroniseringsarbetsflödet skickar dessa data från den lokala databasen till molndatabasen. Som en följd av detta är prenumerations- och avabonnemangsprocesserna **asynkron**. Begäranden om anmälan och avanmälan behandlas varje timme via ett specifikt tekniskt arbetsflöde. [Läs mer](../config/replication.md#tech-wf)
 
 
 **Relaterade ämnen**

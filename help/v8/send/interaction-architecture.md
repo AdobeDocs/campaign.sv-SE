@@ -4,7 +4,8 @@ description: Grundläggande om arkitektur för kampanjinteraktion
 feature: Overview
 role: Data Engineer
 level: Beginner
-source-git-commit: 7234ca65f785b005b11851a5cd88add8cddeff4f
+exl-id: 7a710960-7e41-4462-bd5e-18e874aa46f8
+source-git-commit: 00a88cf9217faf32070a3cd34a2c1ae5243d9a6e
 workflow-type: tm+mt
 source-wordcount: '1314'
 ht-degree: 0%
@@ -49,7 +50,7 @@ För att kunna stödja skalbarhet och tillhandahålla service dygnet runt på de
 
 ![](assets/interaction_powerbooster_schema.png)
 
-Kontrollinstanser är dedikerade till den inkommande kanalen och innehåller katalogversionen online. Alla instanser av exekvering är oberoende och dedikerade till ett kontaktsegment (till exempel en exekveringsinstans per land). Anrop till erbjudandemotorn måste utföras direkt på körningen (en specifik URL per körningsinstans). Eftersom synkroniseringen mellan instanser inte är automatisk måste interaktioner från samma kontakt skickas via samma instans.
+Kontrollinstanser är dedikerade till den inkommande kanalen och innehåller katalogversionen online. Varje instans för körning är oberoende och dedikerad till ett kontaktsegment (till exempel en exekveringsinstans per land). Anrop till erbjudandemotorn måste utföras direkt på körningen (en specifik URL per körningsinstans). Eftersom synkroniseringen mellan instanser inte är automatisk måste interaktioner från samma kontakt skickas via samma instans.
 
 ### Synkronisering {#synchronization}
 
@@ -83,7 +84,7 @@ The **Interaktion** paketet installeras på alla instanser (kontroll och körnin
 
 >[!NOTE]
 >
->När du installerar paketet **long** typfält i **nms:förslag** tabell som t.ex. förslags-ID, blir **int64** textfält. Den här typen av data beskrivs i [Campaign Classic v7-dokumentation](https://experienceleague.adobe.com/docs/campaign-classic/using/configuring-campaign-classic/schema-reference/schema-structure.html?lang=en#mapping-the-types-of-adobe-campaign-dbms-data){target=&quot;_blank&quot;}.
+>När du installerar paketet **long** typfält för **nms:förslag** tabell som t.ex. förslags-ID, blir **int64** textfält. Den här typen av data beskrivs i [Campaign Classic v7-dokumentation](https://experienceleague.adobe.com/docs/campaign-classic/using/configuring-campaign-classic/schema-reference/schema-structure.html?lang=en#mapping-the-types-of-adobe-campaign-dbms-data){target=&quot;_blank&quot;}.
 
 Varaktigheten för datalagring konfigureras för varje instans (via **[!UICONTROL Data purge]** i distributionsguiden). För körningsinstanser måste denna period motsvara det historiska djup som krävs för att typologiregler (glidande period) och regler för stödberättigande ska kunna beräknas.
 

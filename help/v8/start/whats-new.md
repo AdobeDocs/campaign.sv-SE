@@ -14,11 +14,11 @@ ht-degree: 2%
 
 # Nyheter i Adobe Campaign v8? {#ac-gs-what-is-new}
 
-Adobe Campaign v8 har avsevärda förbättringar vad gäller infrastruktur, säkerhet, leveransbarhet och övervakning. Genom att utnyttja [[!DNL Snowflake]](https://www.snowflake.com/), en molndatabasteknik, förbättrar Adobe Campaign dramatiskt sin skala och hastighet, med möjlighet att hantera ett större antal kundprofiler samt mycket högre leveransfrekvenser och transaktioner per timme.
+Adobe Campaign v8 har avsevärda förbättringar vad gäller infrastruktur, säkerhet, leveransbarhet och övervakning. Genom att utnyttja [[!DNL Snowflake]](https://www.snowflake.com/), som är en teknik för molndatabaser, förbättrar Adobe Campaign dramatiskt sin skala och hastighet, med möjlighet att hantera ett större antal kundprofiler samt mycket högre leveransfrekvenser och transaktioner per timme.
 
 Viktiga funktioner:
 
-* **Snabbhet och skala**. Adobe Campaign v8 utnyttjar Cloud Database Manager, vilket leder till frågor som går upp till 200 gånger snabbare, skalning av flera petabyte, ökat antal meddelanden per timme, med upp till 20 MB/timme eller 1 MB/timme för transaktionsmeddelanden, och hanterar upp till 200 miljoner aktiva profiler med potential att nå 1B.
+* **Hastighet och skala**. Adobe Campaign v8 utnyttjar Cloud Database Manager, vilket leder till frågor som går upp till 200 gånger snabbare, skalning av flera petabyte, ökat antal meddelanden per timme, med upp till 20 MB/timme eller 1 MB/timme för transaktionsmeddelanden, och hanterar upp till 200 miljoner aktiva profiler med potential att nå 1B.
 
 * **Anslutningar till Adobe Experience Platform**. Adobe Campaign v8 har stöd för dataanslutningar med Adobe Experience Platform/RT-CDP, enhetlig kundprofil och inbyggd integrering med Journey Orchestration. Dessa investeringar kommer att optimera Adobe Campaign kundupplevelse och frigöra nya användningsfall som möjligheten att lägga till individuella kundresor i realtid till kampanjer.
 
@@ -26,7 +26,7 @@ Viktiga funktioner:
 
 >[!CAUTION]
 >
->För närvarande är Campaign v8 **endast** tillgängligt som hanterad Cloud Service och kan inte distribueras på en lokal eller hybridmiljö.
+>För tillfället är Campaign v8 **endast** finns som hanterad Cloud Service och kan inte distribueras på plats eller i hybridmiljöer.
 >
 >Migrering från en befintlig Campaign Classic v7-miljö är inte tillgänglig än.
 >

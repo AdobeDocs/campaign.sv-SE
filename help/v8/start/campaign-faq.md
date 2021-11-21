@@ -38,19 +38,19 @@ Behöver du hjälp eftersom du arbetar med Campaign? Läs de viktigaste frågorn
 
    E-postleveransen, som är en viktig del i varje avsändares marknadsföringsprogram, kännetecknas av ständigt föränderliga kriterier och regler. För effektiv navigering i den digitala världen krävs regelbunden anpassning av er e-poststrategi, med hänsyn till viktiga leveranstrender, för att ni ska nå era målgrupper på bästa sätt.
 
-   ![](../assets/do-not-localize/book.png) Läs den här vägledningen när du vill lära dig mer om  [Bästa praxis](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/introduction.html?lang=sv) för distribution {target=&quot;_blank&quot;}
+   ![](../assets/do-not-localize/book.png) Läs den här guiden om du vill veta mer [Bästa praxis för leverans](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/introduction.html?lang=sv){target=&quot;_blank&quot;}
 
-   ![](../assets/do-not-localize/book.png) Lär dig hur du implementerar levererbarhet i Campaign  [i den här guiden](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/additional-resources/general-resources.html){target=&quot;_blank&quot;}
+   ![](../assets/do-not-localize/book.png) Lär dig hur ni implementerar leveransbarhet i Campaign [i den här guiden](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/additional-resources/general-resources.html){target=&quot;_blank&quot;}
 
 1. **Hur kan jag vara säker på att min leverans skickas utan fel?**
 
    Adobe Campaign har en uppsättning instrumentpaneler och verktyg för att övervaka e-postleveranser.
 
-   [Läs igenom dokumentationen för Campaign Classic v7 och lär dig](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/monitoring-deliveries/about-delivery-monitoring.html){target=&quot;_blank&quot;} hur du ser till att dina meddelanden skickas, övervakar körningen och utför en åtgärd om ett fel inträffar.
+   [Läs om Campaign Classic v7 och läs mer](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/monitoring-deliveries/about-delivery-monitoring.html){target=&quot;_blank&quot;} kontrollera att dina meddelanden skickas, övervaka körningen och aktivera åtgärden om ett fel inträffar.
 
 1. **Kan jag övervaka körningen av arbetsflödet?**
 
-   ![](../assets/do-not-localize/book.png) Förstå hur du övervakar körningen av Campaign-arbetsflödet  [i dokumentationen](https://experienceleague.adobe.com/docs/campaign-classic/using/automating-with-workflows/executing-a-workflow/starting-a-workflow.html) för Campaign Classic v7 {target=&quot;_blank&quot;}
+   ![](../assets/do-not-localize/book.png) Lär dig övervaka körningen av Campaign-arbetsflödet [i Campaign Classic v7-dokumentation](https://experienceleague.adobe.com/docs/campaign-classic/using/automating-with-workflows/executing-a-workflow/starting-a-workflow.html){target=&quot;_blank&quot;}
 
 1. **Vilka system och komponenter är Campaign v8 kompatibelt med?**
 
@@ -70,7 +70,7 @@ Behöver du hjälp eftersom du arbetar med Campaign? Läs de viktigaste frågorn
 
    Du kan hämta installationsprogrammet och klientkonsolen från Adobe Download Center.
 
-   Som administratör kan du ladda ned Adobe Campaign via Adobe [Software Distribution](https://experience.adobe.com/#/downloads/content/software-distribution/en/campaign.html) {target=&quot;_blank&quot;}.
+   Som administratör kan du gå till Adobe [Programvarudistribution](https://experience.adobe.com/#/downloads/content/software-distribution/en/campaign.html) {target=&quot;_blank&quot;} för att hämta Adobe Campaign.
 
    Läs mer om Distribution Center [på den här sidan](https://experienceleague.adobe.com/docs/experience-cloud/software-distribution/home.html){target=&quot;_blank&quot;}.
 

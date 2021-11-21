@@ -6,7 +6,8 @@ role: Data Engineer
 level: Beginner
 hidefromtoc: true
 hide: true
-source-git-commit: 391eac2f5e4d4c8c5d4dadd3394798361640e1d8
+exl-id: 5523217a-b95f-4639-b941-52eb7d5a0203
+source-git-commit: 94fc2739c538f3aa8b11e0ea69d08f1bfffb5d32
 workflow-type: tm+mt
 source-wordcount: '172'
 ht-degree: 3%
@@ -17,7 +18,7 @@ ht-degree: 3%
 
 **INTE TILLGÄNGLIGT ÄNNU**
 
-Använd alternativet **Hantera sociala nätverk (social marknadsföring)** för att interagera med kunder och potentiella kunder via Twitter.
+Använd **Hantera sociala nätverk (social marknadsföring)** möjlighet att interagera med kunder och presumtiva kunder via Twitter.
 
 * Skicka meddelanden - Använd Adobe Campaign Social Marketing för att skicka meddelanden till Twitter. Med Adobe Campaign kan du skicka meddelanden direkt till ditt twitter-konto. Du kan också skicka direktmeddelanden till alla dina följare.
 

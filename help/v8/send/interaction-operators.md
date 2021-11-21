@@ -51,7 +51,7 @@ Om erbjudanden används i ett arbetsflöde måste operatorn läggas till i **[!U
 
 1. Gå till **[!UICONTROL Groups and named rights]** fönster, klicka **[!UICONTROL Add]** och väljer **[!UICONTROL Delivery manager]** grupp.
 
-De rättigheter som tilldelats leveransansvariga gör att de kan utföra följande uppgifter:
+De rättigheter som tilldelats leveransansvariga gör det möjligt för dem att utföra följande uppgifter:
 
 * Visa **[!UICONTROL Live]** miljöer.
 * Visa och ändra erbjudandekategorier.

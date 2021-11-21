@@ -14,7 +14,7 @@ ht-degree: 3%
 
 # Riktlinjer för kampanjgenomförande
 
-I det här avsnittet får du lära dig hur du anpassar Adobe Campaign efter ditt företags behov. Använd följande riktlinjer för att strukturera och organisera implementeringen.
+I det här avsnittet får du lära dig hur du anpassar Adobe Campaign efter företagets behov. Använd följande riktlinjer för att strukturera och organisera implementeringen.
 
 1. **Definiera inställningar**: ge åtkomst, dela klientkonsolen, konfigurera kanaler (e-post, push, sms)
 1. **Förbered din miljö**: importera profiler, skapa målgrupper, utforma arbetsflöden och kampanjmallar, skapa typologiregler
@@ -23,9 +23,9 @@ I det här avsnittet får du lära dig hur du anpassar Adobe Campaign efter ditt
 
 >[!CAUTION]
 >
->Med **kampanjhanterade Cloud Services** har din miljö och den ursprungliga konfigurationen ställts in av Adobe enligt villkoren i licensavtalet. Du får inte ändra installerade inbyggda paket, inbyggda scheman eller rapporter.
+>Med **Kampanjhanterade Cloud Services**, din miljö och den ursprungliga konfigurationen har angetts av Adobe enligt villkoren i licensavtalet. Du får inte ändra installerade inbyggda paket, inbyggda scheman eller rapporter.
 >
->Om du behöver använda ett Campaign-tillägg eller en viss funktion som inte har tillhandahållits för dig måste du kontakta **Adobe kundtjänst**.
+>Om du behöver använda ett Campaign-tillägg eller en specifik funktion som inte har etablerats för dig måste du kontakta **Adobe kundtjänst**.
 
 ## Före start
 
@@ -35,15 +35,15 @@ Det här avsnittet innehåller viktig information om sekretess och säkerhet som
 
 Adobe Campaign innehåller processer och inställningar som gör att ni kan använda Campaign i enlighet med gällande datasekretesslagstiftning och mottagarens önskemål. Du kan hantera:
 
-* **Datainhämtning**: Med Adobe Campaign kan ni samla in data, inklusive personuppgifter och känslig information. Det är därför viktigt att du får och hanterar samtycke från dina mottagare. Läs mer i [dokumentationen för Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/getting-started/privacy/privacy-and-recommendations.html?lang=en#data-acquisition)
+* **Datainsamling**: Med Adobe Campaign kan ni samla in data, inklusive personuppgifter och känslig information. Det är därför viktigt att du får och hanterar samtycke från dina mottagare. Läs mer i [Campaign Classic v7-dokumentation](https://experienceleague.adobe.com/docs/campaign-classic/using/getting-started/privacy/privacy-and-recommendations.html?lang=en#data-acquisition)
 
-* **Användarens samtycke och datalagring**: Lär dig hur du får användarens samtycke, konfigurerar prenumerationssystem med dubbel anmälan, underlättar avanmälan och konfigurerar datalagring i  [Campaign Classic sekretessdokumentation](https://experienceleague.adobe.com/docs/campaign-classic/using/getting-started/privacy/privacy-and-recommendations.html?lang=en#consent)
+* **Användarens samtycke och datalagring**: Lär dig hur du får användarens samtycke, konfigurerar prenumerationsmekanismer för dubbel anmälan, underlättar avanmälan och konfigurerar datalagring i [Sekretessdokumentation för Campaign Classic](https://experienceleague.adobe.com/docs/campaign-classic/using/getting-started/privacy/privacy-and-recommendations.html?lang=en#consent)
 
-* **Sekretess- och dataskyddsbestämmelser**: Läs  [Campaign Classic integritetsdokumentation](https://experienceleague.adobe.com/docs/campaign-classic/using/getting-started/privacy/privacy-and-recommendations.html){target=&quot;_blank&quot;} för information om EU:s allmänna dataskyddsförordning (GDPR), Kaliforniens konsumentintegritetslag (CCPA) och andra internationella integritetskrav, och hur dessa bestämmelser påverkar din organisation och Adobe Campaign.
+* **Sekretess- och dataskyddsbestämmelser**: referera till [Sekretessdokumentation för Campaign Classic](https://experienceleague.adobe.com/docs/campaign-classic/using/getting-started/privacy/privacy-and-recommendations.html){target=&quot;_blank&quot;} för information om EU:s allmänna dataskyddsförordning (GDPR), California Consumer Privacy Act (CCPA) och andra internationella integritetskrav, och hur dessa bestämmelser påverkar din organisation och Adobe Campaign.
 
 ### Säkerhet
 
-Läs säkerhetsriktlinjer och principer med Adobe Campaign i [checklistan för kampanjsäkerhet](../config/security.md).
+Läs säkerhetsriktlinjer och principer med Adobe Campaign i [Checklista för kampanjsäkerhet](../config/security.md).
 
 ## Definiera kampanjinställningar
 
@@ -51,7 +51,7 @@ Läs säkerhetsriktlinjer och principer med Adobe Campaign i [checklistan för k
 
 Du kan lägga till användare manuellt i Campaign och associera dem med grupper, justerade mot din rollhierarki. Användarna kan sedan logga in och komma åt de data och behörigheter som passar dem.
 
-![](../assets/do-not-localize/book.png) Lär dig hur du lägger till användare i Adobe Campaign i  [det här avsnittet](https://experienceleague.adobe.com/docs/campaign-classic/using/getting-started/permissions/access-management.html?lang=en#getting-started){target=&quot;_blank&quot;}.
+![](../assets/do-not-localize/book.png) Lär dig hur du lägger till användare i Adobe Campaign i [det här avsnittet](https://experienceleague.adobe.com/docs/campaign-classic/using/getting-started/permissions/access-management.html?lang=en#getting-started){target=&quot;_blank&quot;}.
 
 ### Installera Campaign Client Console
 
@@ -67,7 +67,7 @@ Innan du börjar skicka meddelanden och skapa marknadsföringskampanjer måste d
 
    Med Campaign kan du lägga till kontakter i molndatabasen. Du kan läsa in en fil, schemalägga och automatisera flera kontaktuppdateringar, samla in data på webben eller ange profilinformation direkt i mottagartabellen.
 
-   ![](../assets/do-not-localize/glass.png) [Lär dig hur du importerar profiler](import.md).
+   ![](../assets/do-not-localize/glass.png) [Så här importerar du profiler](import.md).
 
    Målgrupper grupperas i listor och kan skapas med arbetsflöden. De kan sedan användas för flerkanalsleveranser.
 
@@ -79,15 +79,15 @@ Innan du börjar skicka meddelanden och skapa marknadsföringskampanjer måste d
 
    ![](../assets/do-not-localize/book.png) [Läs mer om e-postmallar](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/using-delivery-templates/about-templates.html){target=&quot;_blank&quot;}
 
-   ![](../assets/do-not-localize/book.png) Lär dig hur du arbetar med kampanjmallar i  [Campaign Classic v7-dokumentationen](https://experienceleague.adobe.com/docs/campaign-classic/using/orchestrating-campaigns/orchestrate-campaigns/marketing-campaign-templates.html?lang=en#orchestrating-campaigns){target=&quot;_blank&quot;}
+   ![](../assets/do-not-localize/book.png) Lär dig hur du arbetar med kampanjmallar i [Campaign Classic v7-dokumentation](https://experienceleague.adobe.com/docs/campaign-classic/using/orchestrating-campaigns/orchestrate-campaigns/marketing-campaign-templates.html?lang=en#orchestrating-campaigns){target=&quot;_blank&quot;}
 
-   ![](../assets/do-not-localize/book.png) Lär dig hur du konfigurerar en arbetsflödesmall i dokumentationen [ för ](https://experienceleague.adobe.com/docs/campaign-classic/using/automating-with-workflows/introduction/building-a-workflow.html?lang=en#workflow-templates)Campaign Classic v7 {target=&quot;_blank&quot;}
+   ![](../assets/do-not-localize/book.png) Lär dig hur du konfigurerar en arbetsflödesmall i [Campaign Classic v7-dokumentation](https://experienceleague.adobe.com/docs/campaign-classic/using/automating-with-workflows/introduction/building-a-workflow.html?lang=en#workflow-templates){target=&quot;_blank&quot;}
 
 1. Konfigurera typologiregler
 
    Använd regler för kampanjtypologier för att filtrera, styra och övervaka leveransen. Trötthetsreglerna styr till exempel frekvens och kvantitet för meddelanden för att undvika att mottagarna blir för många. När typologireglerna är implementerade refereras de i leveranser.
 
-   ![](../assets/do-not-localize/book.png) Läs mer om typologier och trötthetshantering i dokumentationen [ för ](https://experienceleague.adobe.com/docs/campaign-classic/using/orchestrating-campaigns/campaign-optimization/about-campaign-typologies.html?lang=en#orchestrating-campaigns)Campaign Classic v7 {target=&quot;_blank&quot;}
+   ![](../assets/do-not-localize/book.png) Läs mer om typologier och trötthetshantering i [Campaign Classic v7-dokumentation](https://experienceleague.adobe.com/docs/campaign-classic/using/orchestrating-campaigns/campaign-optimization/about-campaign-typologies.html?lang=en#orchestrating-campaigns){target=&quot;_blank&quot;}
 
 1. Bekanta dig med Campaigns inbyggda datamodell
 
@@ -103,7 +103,7 @@ Ni kan anpassa många olika Campaign-områden och -funktioner. De flesta av vår
 
    Adobe Campaign innehåller vanliga scheman för att identifiera data som: mottagare, leveransloggar, prenumerationer med mera.
 
-   ![](../assets/do-not-localize/glass.png) Läs det här avsnittet om du vill veta mer om den inbyggda  [datamodellen](../dev/datamodel.md) för Campaign.
+   ![](../assets/do-not-localize/glass.png) Mer information om [Inbyggd kampanjdatamodell](../dev/datamodel.md).
 
    ![](../assets/do-not-localize/glass.png) Du kan utöka befintliga scheman eller skapa nya scheman från grunden. Läs mer i [den här sidan](../dev/customize.md).
 
@@ -111,7 +111,7 @@ Ni kan anpassa många olika Campaign-områden och -funktioner. De flesta av vår
 
    Du kan enkelt konfigurera listor, lägga till och ta bort fält och anpassa kolumner.
 
-   ![](../assets/do-not-localize/glass.png) Lär dig hur du hanterar filter och listor i Campaign på  [den här sidan](../dev/customize.md#gs-lists-and-filters).
+   ![](../assets/do-not-localize/glass.png) Lär dig hur du hanterar filter och listor i Campaign i [den här sidan](../dev/customize.md#gs-lists-and-filters).
 
    Du kan också skapa nya instrumentpaneler för att visa Campaign-data beroende på dina behov.
 
@@ -123,7 +123,7 @@ Ni kan anpassa många olika Campaign-områden och -funktioner. De flesta av vår
 
    Förutom inbyggda rapporter kan du med Adobe Campaign generera rapporter i olika sammanhang och för att tillgodose olika behov. Principer för användning och implementeringslägen beskrivs i detta dokument.
 
-   ![](../assets/do-not-localize/glass.png) Läs mer om rapportfunktioner i Campaign på  [den här sidan](reporting.md).
+   ![](../assets/do-not-localize/glass.png) Läs mer om rapportfunktioner i Campaign i [den här sidan](reporting.md).
 
 
 ## Ställ in kampanjautomatisering
@@ -144,7 +144,7 @@ Om ni använder andra Adobe-lösningar kan ni koppla dem till er Campaign-miljö
 
 * Campaign - Journey Orchestration
 * Campaign - CDP i realtid
-* Campaign - Experience Cloud-utlösare
+* Campaign - utlösare för Experience Cloud
 * Campaign - Experience Manager
 * Campaign - Target
 * Campaign - Audience Manager / People core service
@@ -154,22 +154,22 @@ Om ni använder andra Adobe-lösningar kan ni koppla dem till er Campaign-miljö
 
 Du kan också använda enkel inloggning (SSO) för att ansluta till Campaign. Läs mer i [den här sidan](connect.md).
 
-![](../assets/do-not-localize/glass.png) Se hela listan över Adobe som kan integreras med Adobe Campaign  [på den här sidan](../connect/integration.md).
+![](../assets/do-not-localize/glass.png) Upptäck hela listan över Adobe som kan integreras med Adobe Campaign [på den här sidan](../connect/integration.md).
 
 ### Kopplingar
 
 Koppla samman Campaign med tredjepartssystem för att kombinera ett stort antal funktioner och automatisera processer.
 
-![](../assets/do-not-localize/glass.png) Läs mer om tillgängliga anslutningar i  [det här avsnittet](../connect/integration.md).
+![](../assets/do-not-localize/glass.png) Läs mer om tillgängliga anslutningar i [det här avsnittet](../connect/integration.md).
 
 **Koppla CRM till Campaign**
 
 Du kan ansluta din Adobe Campaign-plattform till dina CRM-system från tredje part och synkronisera data: kontakter, konton, inköp osv.
 
-![](../assets/do-not-localize/glass.png) Lär dig hur du ansluter ditt CRM-system till Campaign i  [det här avsnittet](../connect/integration.md#gs-crm-connectors)
+![](../assets/do-not-localize/glass.png) Lär dig hur du ansluter ditt CRM-system till Campaign i [det här avsnittet](../connect/integration.md#gs-crm-connectors)
 
 **Ansluta till en extern databas**
 
 Du kan ansluta Campaign Cloud-databasen till externa system via FDA-modulen (Federated Data Access).
 
-![](../assets/do-not-localize/glass.png) Lär dig hur du konfigurerar Campaign FDA-modulen för att definiera åtkomstparametrar i  [det här avsnittet](../connect/integration.md#gs-fda)
+![](../assets/do-not-localize/glass.png) Lär dig hur du konfigurerar Campaign FDA-modulen för att definiera åtkomstparametrar i [det här avsnittet](../connect/integration.md#gs-fda)

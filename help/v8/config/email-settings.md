@@ -27,18 +27,18 @@ För att göra detta överförs e-postfiler som motsvarar skickade e-postmeddela
 
 Observera att:
 
-* Du kan bara använda **en** e-postadress för hemlig kopia.
+* Du kan bara använda **en** E-postadress för hemlig kopia.
 
 * Det är bara skickad e-post som räknas, studenterna gör det inte.
 
-![](../assets/do-not-localize/speech.png)  Som användare av hanterade Cloud Services  [kontaktar du ](../start/campaign-faq.md#support) Adobe för att aktivera e-postkopia i Campaign. Du måste ange valfri e-postadress till BCC för det Adobe-team som konfigurerar den åt dig.
+![](../assets/do-not-localize/speech.png)  Som användare av hanterade Cloud Services [kontakta Adobe](../start/campaign-faq.md#support) för att aktivera e-postkopia i Campaign. Du måste ange valfri e-postadress till BCC för det Adobe-team som konfigurerar den åt dig.
 
-När du har konfigurerat BCC för e-post kontrollerar du att funktionen är aktiverad i leveransmallen eller i leveransen via alternativet **BCC för e-post**.
+Kontrollera att funktionen är aktiverad i leveransmallen eller i leveransen via **BCC för e-post** alternativ.
 
 ![](assets/email-bcc.png)
 
 
-**Dokumentation** för närliggande ämnen i Campaign Classic v7:
+**Relaterade ämnen** Campaign Classic v7-dokumentation:
 
 
 * [Generera spegelsidan](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/sending-emails/sending-an-email/email-parameters.html#generating-mirror-page){target=&quot;_blank&quot;}
@@ -49,6 +49,6 @@ När du har konfigurerat BCC för e-post kontrollerar du att funktionen är akti
 
 * [Ange studsens e-postadress](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/sending-emails/sending-an-email/email-parameters.html#managing-bounce-emails){target=&quot;_blank&quot;}
 
-* [Använd mallar](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/using-delivery-templates/about-templates.html) för e-postleverans {target=&quot;_blank&quot;}
+* [Använd mallar för e-postleverans](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/using-delivery-templates/about-templates.html){target=&quot;_blank&quot;}
 
 * [Förstå leveransfel](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/monitoring-deliveries/understanding-delivery-failures.html){target=&quot;_blank&quot;}

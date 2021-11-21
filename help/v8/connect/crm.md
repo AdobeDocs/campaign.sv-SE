@@ -20,21 +20,21 @@ Dessa kopplingar möjliggör snabb och enkel dataintegrering: Adobe Campaign til
 
 >[!NOTE]
 >
->Den här funktionen är tillgänglig i Adobe Campaign via **CRM-anslutningarna** dedikerade paket.
+>Den här funktionen är tillgänglig i Adobe Campaign via **CRM-anslutningar** dedikerat paket.
 
 ## Kompatibla system {#compatible-crm-systems-and-limitations}
 
-CRM och versioner som stöds finns detaljerade i Campaign [Kompatibilitetsmatrisen](../start/compatibility-matrix.md).
+CRM och versioner som stöds finns detaljerade i Campaign [Kompatibilitetsmatris](../start/compatibility-matrix.md).
 
 ![](../assets/do-not-localize/speech.png)  CRM-anslutningarna fungerar bara med en säker URL (https).
 
 ## Implementeringssteg {#crm-implementation-steps}
 
-![](../assets/do-not-localize/book.png) Lär dig steg för steg hur du ansluter Campaign och Microsoft Dynamics i dokumentationen för  [Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/getting-started/connectors/crm-connectors/crm-ms-dynamics.html?lang=en#microsoft-dynamics-implementation-steps)
+![](../assets/do-not-localize/book.png) Lär dig steg för steg hur du ansluter Campaign och Microsoft Dynamics i [Campaign Classic v7-dokumentation](https://experienceleague.adobe.com/docs/campaign-classic/using/getting-started/connectors/crm-connectors/crm-ms-dynamics.html?lang=en#microsoft-dynamics-implementation-steps)
 
-![](../assets/do-not-localize/book.png) Lär dig steg för steg hur du ansluter Campaign och Salesforce i dokumentationen för  [Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/getting-started/connectors/crm-connectors/crm-sfdc.html?lang=en#getting-started)
+![](../assets/do-not-localize/book.png) Lär dig steg för steg hur du kopplar ihop Campaign och Salesforce i [Campaign Classic v7-dokumentation](https://experienceleague.adobe.com/docs/campaign-classic/using/getting-started/connectors/crm-connectors/crm-sfdc.html?lang=en#getting-started)
 
 
 Datasynkronisering mellan Adobe Campaign och CRM utförs via en dedikerad arbetsflödesaktivitet. Bygg era arbetsflöden för att automatisera synkroniseringen mellan Campaign och CRM. Du kan skapa ett arbetsflöde som importerar kontakter via Microsoft Dynamics, synkroniserar dem med befintliga Adobe Campaign-data, tar bort dubblettkontakter och sedan uppdaterar Adobe Campaign-databasen.
 
-![](../assets/do-not-localize/book.png) Läs mer i dokumentationen för  [Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/getting-started/connectors/crm-connectors/crm-data-sync.html?lang=en#getting-started)
+![](../assets/do-not-localize/book.png) Läs mer i [Campaign Classic v7-dokumentation](https://experienceleague.adobe.com/docs/campaign-classic/using/getting-started/connectors/crm-connectors/crm-data-sync.html?lang=en#getting-started)

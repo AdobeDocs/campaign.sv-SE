@@ -16,17 +16,17 @@ ht-degree: 76%
 
 Ni kan konfigurera Adobe Analytics för att integrera Campaign och Analytics.
 
-Tack vare den här integreringen kan Adobe Campaign och Adobe Analytics interagera via **Web Analytics-anslutningarna**. Den här integreringen skickar indikatorer och attribut för e-postkampanjer som levereras av Adobe Campaign till Adobe Analytics.
+Tack vare integreringen kan Adobe Campaign och Adobe Analytics interagera via **Web Analytics-anslutningar** tillägg. Den här integreringen skickar indikatorer och attribut för e-postkampanjer som levereras av Adobe Campaign till Adobe Analytics.
 
-![](../assets/do-not-localize/speech.png)  Som användare av hanterade Cloud Services  [kontaktar du ](../start/campaign-faq.md#support) Adobe Campaign för att få kontakt med Adobe Experience Cloud tjänster och lösningar. Tillägget för Web Analytics-anslutningen måste installeras i din miljö via det dedikerade paketet.
+![](../assets/do-not-localize/speech.png)  Som användare av hanterade Cloud Services [kontakta Adobe](../start/campaign-faq.md#support) för att koppla Campaign till Adobe Experience Cloud tjänster och lösningar. Tillägget för Web Analytics-anslutningen måste installeras i din miljö via det dedikerade paketet.
 
 Med Adobe Analytics Connector kan Adobe Campaign mäta internetpublik (Web Analytics). Med webbanalysverktygen kan Adobe Campaign vidarebefordra indikatorer och kampanjattribut till Analytics.
 
 Åtgärdsgränserna för varje verktyg är följande:
 
-* **Adobe** Analytics markerar de e-postkampanjer som har startats med Adobe Campaign
+* **Adobe Analytics** markerar de e-postkampanjer som lanserats med Adobe Campaign
 
-* **Adobe** Campaign skickar indikatorerna och kampanjattributen till kopplingen, som i sin tur vidarebefordrar dem till webbanalysverktyget
+* **Adobe Campaign** skickar indikatorerna och kampanjattributen till kopplingen, som i sin tur vidarebefordrar dem till webbanalysverktyget
 
 
 >[!CAUTION]
@@ -41,7 +41,7 @@ Om du vill konfigurera en anslutning för Campaign-Analytics måste du utföra f
 
 ## Skapa en analysrapportsserie {#report-suite-analytics}
 
-Följ stegen nedan för att skapa din **[!UICONTROL Report suite]** i [!DNL Adobe Analytics]:
+Skapa **[!UICONTROL Report suite]** in [!DNL Adobe Analytics]följer du stegen nedan:
 
 1. I [!DNL Adobe Analytics] väljer du **[!UICONTROL Admin tab]** och klickar sedan på **[!UICONTROL All admin]**.
 
@@ -191,11 +191,11 @@ Mer information finns på sidan [Produktprofiler för Adobe Analytics](https://e
 
 Datautbyte mellan Adobe Campaign och Adobe Analytics hanteras av ett tekniskt arbetsflöde som körs som en bakgrundsuppgift.
 
-Det här arbetsflödet är tillgängligt från Campaign Explorer-trädet, under mappen **[!UICONTROL Administration]** > **[!UICONTROL Production]** > **[!UICONTROL Technical workflows]** > **[!UICONTROL Web analytics process]**.
+Det här arbetsflödet är tillgängligt från Campaign Explorer-trädet, under **[!UICONTROL Administration]** > **[!UICONTROL Production]** > **[!UICONTROL Technical workflows]** > **[!UICONTROL Web analytics process]** mapp.
 
 ![](assets/webanalytics_workflows.png)
 
-Med arbetsflödet **[!UICONTROL Sending of indicators and campaign attributes]** kan du skicka kampanjindikatorer via Adobe Campaign till Adobe Experience Cloud med Adobe Analytics Connector. Arbetsflödet utlöses kl. 4.00 varje dag och det kan ta 24 timmar innan data skickas till Analytics.
+The **[!UICONTROL Sending of indicators and campaign attributes]** arbetsflödet gör att du kan skicka kampanjindikatorer via Adobe Campaign till Adobe Experience Cloud med Adobe Analytics Connector. Arbetsflödet utlöses kl. 4.00 varje dag och det kan ta 24 timmar innan data skickas till Analytics.
 
 Observera att det här arbetsflödet inte ska startas om, annars skickas alla tidigare data på nytt, vilket kan förvränga analysresultaten.
 

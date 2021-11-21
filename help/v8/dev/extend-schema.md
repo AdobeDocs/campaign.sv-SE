@@ -22,12 +22,12 @@ De viktigaste stegen för att anpassa Campaign-datamodellen är:
 >[!CAUTION]
 >Inbyggt schema får inte ändras direkt. Om du behöver anpassa ett inbyggt schema måste du utöka det.
 
-![](../assets/do-not-localize/glass.png) Om du vill ha en bättre förståelse för de inbyggda tabellerna i Campaign och deras interaktion kan du läsa på  [den här sidan](datamodel.md). Se även rekommendationer när du skapar ett nytt schema i [den här sidan](create-schema.md).
+![](../assets/do-not-localize/glass.png) Om du vill få en bättre förståelse för de inbyggda tabellerna i Campaign och deras interaktion kan du läsa [den här sidan](datamodel.md). Se även rekommendationer när du skapar ett nytt schema i [den här sidan](create-schema.md).
 
 Följ stegen nedan för att utöka ett schema:
 
-1. Navigera till mappen **[!UICONTROL Administration > Configuration > Data schemas]** i Utforskaren.
-1. Klicka på knappen **Nytt** och välj **[!UICONTROL Extend the data in a table using an extension schema]**.
+1. Navigera till **[!UICONTROL Administration > Configuration > Data schemas]** i Utforskaren.
+1. Klicka på **Nytt** och markera **[!UICONTROL Extend the data in a table using an extension schema]**.
 
    ![](assets/extend-schema-option.png)
 
@@ -43,7 +43,7 @@ Följ stegen nedan för att utöka ett schema:
 
    ![](assets/extend-schema-edit.png)
 
-   I exemplet nedan lägger vi till attributet **MembershipYear**, anger en längdgräns för efternamn (den här gränsen skriver över standardvärdet) och tar bort födelsedatumet från det inbyggda schemat.
+   I exemplet nedan lägger vi till **MembershipYear** anger du en längdgräns för efternamn (den här gränsen skriver över standardvärdet) och tar bort födelsedatumet från det inbyggda schemat.
 
    ![](assets/extend-schema-sample.png)
 
@@ -59,7 +59,7 @@ Följ stegen nedan för att utöka ett schema:
    </srcSchema>
    ```
 
-1. Koppla från och återanslut till Campaign för att kontrollera schemastrukturuppdateringen på fliken **[!UICONTROL Structure]**.
+1. Koppla från och återanslut till Campaign för att kontrollera schemastrukturuppdateringen i **[!UICONTROL Structure]** -fliken.
 
    ![](assets/extend-schema-structure.png)
 

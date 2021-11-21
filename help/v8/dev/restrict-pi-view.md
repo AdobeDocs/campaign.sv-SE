@@ -13,11 +13,11 @@ ht-degree: 0%
 
 ## Översikt {#overview}
 
-Om ni vill att marknadsföringsanvändare ska kunna komma åt dataposter men inte vill att de ska kunna se mottagarens personliga information, till exempel förnamn, efternamn eller e-postadress, ska ni följa riktlinjerna nedan för att skydda integriteten och förhindra att data missbrukas av vanliga kampanjoperatörer.
+Om ni vill att marknadsföringsanvändare ska kunna få tillgång till dataposter men inte vill att de ska kunna se mottagarens personliga information, till exempel förnamn, efternamn eller e-postadress, ska ni följa riktlinjerna nedan för att skydda integriteten och förhindra att data missbrukas av vanliga kampanjoperatörer.
 
 ## Implementering {#implementation}
 
-Ett specifikt attribut som kan tillämpas på ett element eller attribut har lagts till i scheman, det kompletterar det befintliga attributet **[!UICONTROL visibleIf]**. Attributet är: **[!UICONTROL accessibleIf]** . När det innehåller ett XTK-uttryck som är relaterat till den aktuella användarkontexten kan det till exempel återge **[!UICONTROL HasNamedRight]** eller **[!UICONTROL $(login)]**.
+Ett specifikt attribut som kan tillämpas på ett element eller attribut har lagts till i scheman, det kompletterar det befintliga attributet **[!UICONTROL visibleIf]** . Attributet är: **[!UICONTROL accessibleIf]** . När det innehåller ett XTK-uttryck som är relaterat till den aktuella användarkontexten kan det utnyttja **[!UICONTROL HasNamedRight]** eller **[!UICONTROL $(login)]** , till exempel.
 
 Du kan hitta ett exempel på ett mottagarschematillägg som visar den här användningen nedan:
 
@@ -37,7 +37,7 @@ Du kan hitta ett exempel på ett mottagarschematillägg som visar den här anvä
 Huvudegenskaperna är:
 
 * **[!UICONTROL visibleIf]** : Döljer fälten från metadata, vilket innebär att de inte kan nås i en schemavy, kolumnmarkering eller ett uttrycksbyggare. Men detta döljer inga data. Om fältnamnet anges manuellt i ett uttryck visas värdet.
-* **[!UICONTROL accessibleIf]** : Döljer data (ersätter dem med tomma värden) från den resulterande frågan. Om visibleIf är tomt får det samma uttryck som **[!UICONTROL accessibleIf]**.
+* **[!UICONTROL accessibleIf]** : Döljer data (ersätter dem med tomma värden) från den resulterande frågan. Om visibleIf är tomt får det samma uttryck som **[!UICONTROL accessibleIf]** .
 
 Här följer konsekvenserna av att använda det här attributet i Campaign:
 
@@ -52,7 +52,7 @@ Här följer konsekvenserna av att använda det här attributet i Campaign:
 
 ## Rekommendationer {#recommendations}
 
-I varje leverans kopieras e-postadresser till tabellerna **[!UICONTROL broadLog]** och **[!UICONTROL forecastLog]**: Därför måste även dessa fält skyddas.
+I varje leverans kopieras e-postadresser till **[!UICONTROL broadLog]** och **[!UICONTROL forecastLog]** tabeller: Därför måste även dessa fält skyddas.
 
 Nedan visas ett exempel på ett loggtabellstillägg som implementerar detta:
 
