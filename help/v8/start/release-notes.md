@@ -6,10 +6,10 @@ role: Data Engineer
 level: Beginner
 hidefromtoc: false
 exl-id: 7cf8111d-9f3a-46a4-813a-d4e43a1d1471,a9d18e75-18e7-491e-bfc4-671c3600396e
-source-git-commit: acb3b60c8b390bf91acdfd568a57899594659c7e
+source-git-commit: 89d3ffc7928e1416744f3c54a306b3d39008f2af
 workflow-type: tm+mt
-source-wordcount: '1717'
-ht-degree: 36%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
@@ -23,11 +23,11 @@ _2 februari 2021_
 
 **Felkorrigeringar**
 
-* Korrigerade ett problem som gjorde att leveransförberedelsen misslyckades om det maximala antalet meddelanden, som definieras i typologiregeln, uppnåddes. (NEO-40062)
-* Ett problem som uppstod när Adobe Analytics-anslutningen konfigurerades när e-postadressen innehöll ett s-tecken har åtgärdats. (NEO-39082)
-* Ett problem har korrigerats under efteruppgraderingen, vilket kan leda till att tabellen deliveryMapping förlorar data från en anpassad leveransmappning. (NEO-40133)
+* Korrigerade ett problem som gjorde att leveransförberedelsen misslyckades om det maximala antalet meddelanden som definierats i typologiregeln uppnåddes.
+* Ett problem som uppstod när Adobe Analytics-anslutningen konfigurerades när e-postadressen innehöll ett s-tecken har åtgärdats.
+* Ett fel som kan göra att tabellen deliveryMapping förlorar data från en anpassad leveransmappning har korrigerats under efteruppgraderingen.
 * Korrigerade ett problem som kunde leda till att mottagare fick samma meddelande flera gånger för samma leverans när e-postadressen innehöll ett enkelt citattecken (&#39;). Den här figuren har rymts. (NEO-41198)
-* Ett problem med ID-generering när korrektur med frön eller ersättningsadresser skickades har åtgärdats. (NEO-42670)
+* Ett problem med ID-generering när korrektur med frön eller ersättningsadresser skickades har åtgärdats. (NEO-42637)
 * Korrigerade ett problem som kunde förhindra dig från att skicka korrektur med adressmetoden. (NEO-40417)
 * Ett problem som hindrade dig från att installera LINE-paketet har korrigerats. (NEO-42503)
 
