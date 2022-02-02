@@ -6,16 +6,30 @@ role: Data Engineer
 level: Beginner
 hidefromtoc: false
 exl-id: 7cf8111d-9f3a-46a4-813a-d4e43a1d1471,a9d18e75-18e7-491e-bfc4-671c3600396e
-source-git-commit: 4ce21dda9516a881cce39c94454d5ac7b43142a9
+source-git-commit: acb3b60c8b390bf91acdfd568a57899594659c7e
 workflow-type: tm+mt
-source-wordcount: '1574'
-ht-degree: 29%
+source-wordcount: '1717'
+ht-degree: 36%
 
 ---
 
 # Senaste versionen{#latest-release}
 
-På den här sidan visas nya funktioner, förbättringar och korrigeringar som ingår i **senaste Campaign v8-utgåvan**.
+Den här sidan listar nya funktioner, förbättringar och korrigeringar som kommer med den **senaste versionen av Campaign v8**.
+
+## Version 8.2.10 {#release-8-2-10}
+
+_2 februari 2021_
+
+**Felkorrigeringar**
+
+* Korrigerade ett problem som gjorde att leveransförberedelsen misslyckades om det maximala antalet meddelanden, som definieras i typologiregeln, uppnåddes. (NEO-40062)
+* Ett problem som uppstod när Adobe Analytics-anslutningen konfigurerades när e-postadressen innehöll ett s-tecken har åtgärdats. (NEO-39082)
+* Ett problem har korrigerats under efteruppgraderingen, vilket kan leda till att tabellen deliveryMapping förlorar data från en anpassad leveransmappning. (NEO-40133)
+* Korrigerade ett problem som kunde leda till att mottagare fick samma meddelande flera gånger för samma leverans när e-postadressen innehöll ett enkelt citattecken (&#39;). Den här figuren har rymts. (NEO-41198)
+* Ett problem med ID-generering när korrektur med frön eller ersättningsadresser skickades har åtgärdats. (NEO-42670)
+* Korrigerade ett problem som kunde förhindra dig från att skicka korrektur med adressmetoden. (NEO-40417)
+* Ett problem som hindrade dig från att installera LINE-paketet har korrigerats. (NEO-42503)
 
 ## Version 8.2.8 {#release-8-2-8}
 
@@ -98,9 +112,9 @@ _28 oktober 2021_
 * Korrigerade ett problem som kunde leda till att tillfälliga scheman för arbetsflöden förlorades när två dedupliceringsaktiviteter redigerades den ena efter den andra. (NEO-34063)
 * Korrigerade ett problem som returnerade felaktiga resultat när funktionerna Amazon Redshift HoursDiff och MinutesDiff kördes när tidskomponenten skulle extraheras.(NEO-31673)
 * Ett problem som kunde förhindra användare från att logga in på konsolen på grund av ett proxykonfigurationsproblem har åtgärdats. (NEO-38388)
-* Ett regressionsproblem som förhindrade **Rensa mapp** funktionen inte fungerar som den ska. (NEO-37459)
-* Ett problem som kunde förhindra dig från att förhandsgranska mobila leveranser som var kopplade till ett arbetsflöde har åtgärdats.
-* Ett problem som kunde förhindra **Läslista** arbetsflödesaktivitet från att fungera när listan identifierades i databasen med ett negativt ID. (NEO-39607)
+* Korrigerade ett regressionsproblem som förhindrade funktionen **Rensa mappen** från att fungera som den ska. (NEO-37459)
+* Korrigerade ett problem som kunde förhindra dig från att förhandsgranska mobila leveranser som var kopplade till ett arbetsflöde.
+* Korrigerade ett problem som kunde förhindra arbetsflödesaktiviteten **Läslista** från att fungera när listan identifierades i databasen med ett negativt ID. (NEO-39607)
 
 ## Version 8.1.20 {#release-8-1-20}
 
