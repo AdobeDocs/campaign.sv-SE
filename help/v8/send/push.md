@@ -5,10 +5,10 @@ feature: Overview
 role: Data Engineer
 level: Beginner
 exl-id: f04c6e0c-f2b9-496a-9697-04ef4c3411ee
-source-git-commit: 9e07353859e63b71abb61526f40675f18837bc59
+source-git-commit: 6fc085d59c75399b08be44cc1647083677ed337e
 workflow-type: tm+mt
-source-wordcount: '713'
-ht-degree: 1%
+source-wordcount: '679'
+ht-degree: 0%
 
 ---
 
@@ -35,11 +35,14 @@ Kompatibla SDK-versioner visas i [Matris för kampanjkompatibilitet](../start/co
 
 ![](../assets/do-not-localize/glass.png) Lär dig hur du integrerar Campaign Android och iOS SDK med appen i [det här avsnittet](../config/push-config.md)
 
-### Konfigurera Campaign Extension i Launch
+<!--
+### Configure Campaign Extension in Launch
 
-Ni kan integrera Adobe Experience Platform Launch SDK med Campaign genom att utnyttja tillägget Campaign Classic.
+You can integrate Adobe Experience Platorm Launch SDK with Campaign, by leveraging Campaign Classic extension.
 
-![](../assets/do-not-localize/book.png) Läs mer i [Adobe Mobile SDK-dokumentation](https://aep-sdks.gitbook.io/docs/using-mobile-extensions/adobe-campaignclassic){target=&quot;_blank&quot;}
+![](../assets/do-not-localize/book.png) Learn more in [Adobe Mobile SDK documentation](https://aep-sdks.gitbook.io/docs/using-mobile-extensions/adobe-campaignclassic){target="_blank"}
+
+-->
 
 ## Konfigurera appinställningarna i Campaign
 
