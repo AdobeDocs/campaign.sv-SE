@@ -5,8 +5,8 @@ feature: Overview
 role: Data Engineer
 level: Beginner
 hidefromtoc: false
-exl-id: 7cf8111d-9f3a-46a4-813a-d4e43a1d1471,a9d18e75-18e7-491e-bfc4-671c3600396e
-source-git-commit: b7db9597aa6b4ca4fb2e1e13f8b7b718f4840031
+exl-id: 7cf8111d-9f3a-46a4-813a-d4e43a1d1471
+source-git-commit: 9283f1e857706455c169eb1da93cd0d04df80da0
 workflow-type: tm+mt
 source-wordcount: '1714'
 ht-degree: 36%
@@ -45,7 +45,7 @@ _28 oktober 2021_
 <tr>
 <td>
 <p>Interaktionshantering i realtid är nu tillgänglig för inkommande kanaler. Använd modulen för inkommande kampanjinteraktion för att presentera det bästa erbjudandet för era kunder när de besöker er webbplats eller kontaktar ert callcenter. Den här funktionen har Campaign v8 som ett alternativ och kräver specifik konfiguration för din instans. Kontakta Adobe och få tillgång till modulen Inkommande interaktion.</p>
-<p>Mer information finns i den <a href="../send/interaction-architecture.md">detaljerade dokumentationen</a>.</p>
+<p>Mer information finns i den <a href="../interaction/interaction-architecture.md">detaljerade dokumentationen</a>.</p>
 </td>
 </tr>
 </tbody>

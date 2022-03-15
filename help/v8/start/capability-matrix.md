@@ -4,8 +4,8 @@ description: Förstå skillnaderna mellan Campaign Classic v7 och Campaign v8
 feature: Overview
 role: Data Engineer
 level: Beginner
-exl-id: 00ba1c43-9558-4adb-83a1-6597c2bbca62,7105477f-d29e-4af8-8789-82b4459761b0
-source-git-commit: 95e1aff491257faeda8e12bf29aa95045901c8b2
+exl-id: 00ba1c43-9558-4adb-83a1-6597c2bbca62
+source-git-commit: 9283f1e857706455c169eb1da93cd0d04df80da0
 workflow-type: tm+mt
 source-wordcount: '922'
 ht-degree: 3%
