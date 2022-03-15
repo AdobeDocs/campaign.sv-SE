@@ -5,10 +5,10 @@ feature: Overview
 role: Data Engineer
 level: Beginner
 exl-id: 0be1c5f5-f07d-46dc-bebc-5eb50f466547
-source-git-commit: d21dc1adc46121e5c015deed7ddb84ec6a4ec76f
+source-git-commit: 8417b1b4b7370e2a2eed76e9f1ac395eccf0ac66
 workflow-type: tm+mt
 source-wordcount: '1680'
-ht-degree: 1%
+ht-degree: 2%
 
 ---
 
@@ -92,7 +92,7 @@ Så här använder du **[!UICONTROL Change Data Source]** aktivitet:
 
 När du har skapat arbetsflödet kan du få tillgång till ytterligare alternativ med **[!UICONTROL Properties]** för ytterligare konfiguration.
 
-![](../assets/do-not-localize/book.png) Läs mer om **Egenskaper för arbetsflöde** in [Campaign Classic v7-dokumentation](https://experienceleague.adobe.com/docs/campaign-classic/using/automating-with-workflows/advanced-management/workflow-properties.html?lang=en){target=&quot;_blank&quot;}
+![](../assets/do-not-localize/book.png) Läs mer om **Egenskaper för arbetsflöde** in [Campaign Classic v7-dokumentation](https://experienceleague.adobe.com/docs/campaign-classic/using/automating-with-workflows/advanced-management/workflow-properties.html?lang=sv){target=&quot;_blank&quot;}
 
 Från **[!UICONTROL Execution]** -fliken i arbetsflödets **[!UICONTROL Properties]** kan du länka arbetsflödet till olika lagerställen och optimera hanteringen av arbetsbelastningen. Mer information om **Lagerställen**, se [Snowflake dokumentation](https://docs.snowflake.com/en/user-guide/warehouses-overview.html).
 

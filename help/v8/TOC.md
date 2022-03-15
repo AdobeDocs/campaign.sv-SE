@@ -4,10 +4,10 @@ user-guide-title: Campaign v8
 description: Dokumentation om Campaign v8
 breadcrumb-title: Campaign v8
 title: Kampanjdokument v8
-source-git-commit: 889400a238f32968464f1425bb7d6c2dc3ff3cd0
+source-git-commit: a6182d37e6b839c8b67c25364b4c35aa7fdde7dc
 workflow-type: tm+mt
-source-wordcount: '236'
-ht-degree: 32%
+source-wordcount: '235'
+ht-degree: 34%
 
 ---
 
@@ -15,7 +15,7 @@ ht-degree: 32%
 # Adobe Campaign v8-dokumentation {#campaign-v8}
 
 + [Dokumentation om Campaign v8](campaign-home.md)
-+ Nyheter? {#start}
++ Nyheter? {#new}
    + [Viktiga möjligheter](start/whats-new.md)
    + [Versionsinformation](start/release-notes.md)
    + [Kända begränsningar](start/known-limitations.md)
@@ -47,25 +47,26 @@ ht-degree: 32%
    + [Push-meddelanden](send/push.md)
    + [LINE-meddelanden](send/line.md)
    + [Direktmeddelande](send/direct-mail.md)
+   + [Social marknadsföring](send/twitter.md)
    + [Transaktionsmeddelanden](send/transactional.md)
-   + Hantera erbjudanden med Campaign Interaction{#interaction}
-      + [Kom igång med interaktion i realtid](send/interaction.md)
-      + [Miljö och arkitektur](send/interaction-architecture.md)
-      + [Bästa praxis](send/interaction-best-practices.md)
-      + Definiera inställningar{#interaction}
-         + [Skapa operatorer](send/interaction-operators.md)
-         + [Skapa miljöer](send/interaction-env.md)
-         + [Skapa fördefinierade filter](send/interaction-predefined-filters.md)
-         + [Skapa erbjudandeplatser](send/interaction-offer-spaces.md)
-      + [Skapa en erbjudandekatalog](send/interaction-offer-catalog.md)
-      + [Skapa ett erbjudande](send/interaction-offer.md)
-      + [Skicka ett erbjudande (utgående)](send/interaction-send-offers.md)
-      + Presentera ett erbjudande (inkommande){#inbound}
-         + [Kontext](send/interaction-present-offers.md)
-         + [Ring ett erbjudande på en webbsida](send/interaction-integration.md)
-         + [Hantera anonyma interaktioner](send/anonymous-interactions.md)
-      + [Rapporter och historik](send/interaction-tracking.md)
-      + [Användningsfall](send/interaction-use-cases.md)
++ Interaktion i realtid{#interaction}
+   + [Kom igång med interaktion i realtid](interaction/interaction.md)
+   + [Miljö och arkitektur](interaction/interaction-architecture.md)
+   + [Bästa praxis](interaction/interaction-best-practices.md)
+   + Definiera inställningar{#interaction-settings}
+      + [Skapa operatorer](interaction/interaction-operators.md)
+      + [Skapa miljöer](interaction/interaction-env.md)
+      + [Skapa fördefinierade filter](interaction/interaction-predefined-filters.md)
+      + [Skapa erbjudandeplatser](interaction/interaction-offer-spaces.md)
+   + [Skapa en erbjudandekatalog](interaction/interaction-offer-catalog.md)
+   + [Skapa ett erbjudande](interaction/interaction-offer.md)
+   + [Skicka ett erbjudande (utgående)](interaction/interaction-send-offers.md)
+   + Presentera ett erbjudande (inkommande){#inbound}
+      + [Kontext](interaction/interaction-present-offers.md)
+      + [Ring ett erbjudande på en webbsida](interaction/interaction-integration.md)
+      + [Hantera anonyma interaktioner](interaction/anonymous-interactions.md)
+   + [Rapporter och historik](interaction/interaction-tracking.md)
+   + [Användningsfall](interaction/interaction-use-cases.md)
 + Konfigurera {#config}
    + [Automatisera med arbetsflöden](config/workflows.md)
    + [Hantera data](config/replication.md)
