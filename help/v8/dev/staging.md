@@ -31,7 +31,6 @@ API:er för Campaign Classic v7 är fortfarande tillgängliga men kan inte utnyt
 >* Med den här nya mekanismen är datasynkronisering för kanalalternativ, prenumerationer, avbeställningar eller mobilregistrering nu aktiverat **asynkron**.
 >
 >* Mellanlagring gäller endast för scheman som lagras i molndatabasen. Aktivera inte mellanlagring för replikerade scheman. Aktivera inte Mellanlagring för lokala scheman. Aktivera inte mellanlagring på ett mellanlagrat schema
-
 >
 
 

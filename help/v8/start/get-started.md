@@ -5,10 +5,10 @@ feature: Overview
 role: Data Engineer
 level: Beginner
 exl-id: 04b12907-3cb1-40f1-90b8-1524d84edf2d,e3e9b514-a69d-4650-b1b1-1b76b4f3d63f
-source-git-commit: 889400a238f32968464f1425bb7d6c2dc3ff3cd0
+source-git-commit: c3beb735f54606537bcc977f2f0539767d15b2d9
 workflow-type: tm+mt
-source-wordcount: '898'
-ht-degree: 41%
+source-wordcount: '853'
+ht-degree: 39%
 
 ---
 
@@ -26,7 +26,7 @@ Använd Campaign för att:
 
 ## Integrated Customer Profile {#integrated-customer-profile}
 
-Profilerna är centraliserade i en kraftfull molndatabas. Det finns många sätt att förvärva profiler och bygga upp databasen: insamling online via webbformulär, manuell eller automatisk import av textfiler, replikering med företagsdatabaser eller andra informationssystem. Med Adobe Campaign kan du integrera marknadsföringshistorik, inköpsinformation, preferenser, CRM-data och alla relevanta PII-data i en enda samlad vy för att analysera och vidta åtgärder.
+Profilerna är centraliserade i en kraftfull molndatabas. Det finns många sätt att skaffa profiler och bygga upp databasen: onlinesamling via webbformulär, manuell eller automatisk import av textfiler, replikering med företagsdatabaser eller andra informationssystem. Med Adobe Campaign kan du integrera marknadsföringshistorik, inköpsinformation, preferenser, CRM-data och alla relevanta PII-data i en enda samlad vy för att analysera och vidta åtgärder.
 
 I Adobe Campaign är mottagarna de standardprofiler som väljs för att skicka leveranser till (e-post, SMS etc.). Tack vare mottagardata som lagras i databasen kan du filtrera det mål som ska ta emot en viss leverans och lägga till personaliseringsdata i leveransinnehållet. Det finns andra typer av profiler i databasen. De är utformade för olika användningsfall. Exempelvis görs fröprofiler för att testa dina leveranser innan de skickas till det slutliga målet.
 
@@ -67,6 +67,11 @@ Arbetsflöden kan användas i olika sammanhang, till exempel:
 
 Med Adobe Campaign kan du övervaka och tolka kundernas beteende genom att gradvis berika deras data och profiler. Med rapporterings- och analysverktygen kan du ta vara på varje ny kampanj, målinrikta marknadsföringsinitiativen bättre och optimera deras effekt och med detta avkastningen på investeringen.
 
+Förutom kraftfulla och färdiga rapportmallar kan du med Adobe Campaign skapa anpassade rapporter för leverans-, kampanj-, användar- eller segmentnivå. Gör beskrivande analyser, sammanfatta avkastningen eller exportera data till Adobe Analytics och andra lösningar för ytterligare datavisualisering och analys.
+
+Kampanjrapporteringsfunktionen gör det lättare att skapa dynamiska rapporter. Ni kan använda dra-och-släpp-variabler för att anpassa era rapporter och för att analysera hur framgångsrika era kampanjer är. Beroende på hur komplexa dina frågor och beräkningar är kan data samlas i en listvy eller nås i ett format som gör det enkelt att generera marknadsanalysrapporter.
+
+
 ![](../assets/do-not-localize/glass.png) Läs mer om funktionerna för rapportering och spårning i [det här avsnittet](reporting.md).
 
 ## Integreringar med Adobe Experience Cloud {#adobe-experience-cloud-integrations}
@@ -81,45 +86,9 @@ Adobe Campaign har en uppsättning funktioner som hjälper er att implementera o
 
 ![](../assets/do-not-localize/glass.png) Känner du redan till Campaign Classic? Läs om viktiga skillnader mellan Campaign Classic och Campaign v8 i [den här sidan](capability-matrix.md).
 
-## Arbetsyta och anpassning
-
-Kampanjarbetsytan är tillgänglig via [Klientkonsol](../dev/general-architecture.md).
-
-![](assets/home-page.png)
-
-![](../assets/do-not-localize/glass.png) [Läs mer om Campaign Client Console](../start/connect.md).
-
-Kampanjarbetsytan kan anpassas efter dina behov.
-
-![](../assets/do-not-localize/book.png)  Lär dig hur du använder arbetsytan Campaign i [Campaign Classic v7-dokumentation](https://experienceleague.adobe.com/docs/campaign-classic/using/getting-started/starting-with-adobe-campaign/campaign-workspace/adobe-campaign-workspace.html){target=&quot;_blank&quot;}
-
-![](../assets/do-not-localize/book.png)  Lär dig hur du anpassar listor i [Campaign Classic v7-dokumentation](https://experienceleague.adobe.com/docs/campaign-classic/using/getting-started/starting-with-adobe-campaign/campaign-workspace/adobe-campaign-ui-lists.html){target=&quot;_blank&quot;}
-
-Du kan även komma åt vissa funktioner via webben.
-
-![](../assets/do-not-localize/glass.png) [Läs mer om Campaign Web Access](../start/connect.md#web-access).
-
-
-## Språk
-
-Användargränssnittet för Campaign v8 finns på följande språk:
-
-* Engelska (UK)
-* Engelska (USA)
-* Franska
-* Tyska
-* Japanska
-
-Språket väljs under installationen.
-
->[!CAUTION]
->
->Språket kan inte ändras efter att instansen har skapats.
-
-Språk som påverkas av datum- och tidsformat. Mer information finns i [Campaign Classic v7-dokumentation](https://experienceleague.adobe.com/docs/campaign-classic/using/getting-started/starting-with-adobe-campaign/campaign-workspace/adobe-campaign-workspace.html?lang=en#date-and-time){target=&quot;_blank&quot;}.
-
 **Se även**
 
+* [Kampanjarbetsyta](campaign-ui.md)
 * [Kompatibilitetsmatris för kampanj v8](compatibility-matrix.md)
 * [Anslut till Campaign](connect.md)
 * [Vanliga frågor och svar](campaign-faq.md)

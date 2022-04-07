@@ -20,7 +20,7 @@ Behöver du hjälp eftersom du arbetar med Campaign? Läs de viktigaste frågorn
 
    Adobe Campaign uppdateras regelbundet. Mindre versioner släpps varje år med nya funktioner, förbättringar och korrigeringar. Dessutom släpper vi regelbundet mindre builder med kumulativa korrigeringar.
 
-   Denna regelbundna uppdateringsfrekvens syftar till att ge dig den senaste och bästa informationen, hålla miljön säker och förbättra din upplevelse med produkten. Därför anser vi att det är viktigt att du kör den senaste versionen av Adobe Campaign.
+   Denna regelbundna uppdateringsfrekvens syftar till att ge dig den senaste och bästa produkten, hålla din miljö säker och förbättra din upplevelse med produkten. Därför anser vi att det är viktigt att du kör den senaste versionen av Adobe Campaign.
 
    ![](../assets/do-not-localize/speech.png)  Som användare av hanterade Cloud Services uppgraderas din instans av Adobe i varje ny version.
 

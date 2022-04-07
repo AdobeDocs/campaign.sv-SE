@@ -101,7 +101,7 @@ Om du vill fylla i ett fält i XML måste du lägga till **xml** ett attribut me
 
 Med hjälp av XML-fält kan du lägga till fält utan att behöva ändra databasens fysiska struktur. En annan fördel är att du använder mindre resurser (storlek som tilldelas SQL-fält, gräns för antalet fält per tabell osv.).
 
-## Hantera nycklar {#management-of-keys}
+## Nyckelhantering {#management-of-keys}
 
 En tabell måste ha minst en nyckel för att identifiera en post i tabellen.
 

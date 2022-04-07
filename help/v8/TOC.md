@@ -4,10 +4,10 @@ user-guide-title: Campaign v8
 description: Dokumentation om Campaign v8
 breadcrumb-title: Campaign v8
 title: Kampanjdokument v8
-source-git-commit: a6182d37e6b839c8b67c25364b4c35aa7fdde7dc
+source-git-commit: c3beb735f54606537bcc977f2f0539767d15b2d9
 workflow-type: tm+mt
-source-wordcount: '235'
-ht-degree: 34%
+source-wordcount: '307'
+ht-degree: 31%
 
 ---
 
@@ -22,7 +22,11 @@ ht-degree: 34%
    + [Klassisk v7 till v8](start/capability-matrix.md)
 + Starta {#start}
    + [Kom igång](start/get-started.md)
-   + [Profiler och målgrupper](start/audiences.md)
+   + [Komponenter och processer](start/ac-components.md)
+   + Kampanjgränssnitt {#ac-ui}
+      + [Upptäck gränssnittet Campaign](start/campaign-ui.md)
+      + [Anpassa Campaign-gränssnittet](start/customize-ui.md)
+   + [Arbeta med målgrupper](start/audiences.md)
    + [Importera data](start/import.md)
    + [Skapa kampanjer](start/campaigns.md)
    + [Skicka meddelanden](start/create-message.md)
@@ -41,7 +45,20 @@ ht-degree: 34%
    + [Anslut till Campaign](start/connect.md)
    + [Behörigheter](start/permissions.md)
    + [Kontrollpanelen](config/self-service.md)
-+ Skicka {#send}
++ Profiler och målgrupper {#profiles-and-audiences}
+   + [Kom igång](audiences/gs-audiences.md)
+   + [Åtkomstprofiler](audiences/view-profiles.md)
+   + Lägg till profiler {#add-profiles}
+      + [Skapa profiler manuellt](audiences/create-profiles.md)
+      + [Importera profiler från en fil](audiences/import-profiles.md)
+      + [Arbeta med externa profiler](audiences/external-profiles.md)
+      + [Samla in profildata i webbformulär](audiences/collect-profiles.md)
+   + Skapa målgrupper {#create-audiences}
+      + [Skapa en lista med kontakter](audiences/create-audiences.md)
+      + [Skapa och hantera filter](audiences/create-filters.md)
+   + [Hantera mappar och vyer](audiences/folders-and-views.md)
+   + [Bästa praxis](audiences/audiences-best-practices.md)
++ Skicka meddelanden{#send}
    + [E-post](send/email.md)
    + [SMS](send/sms.md)
    + [Push-meddelanden](send/push.md)
@@ -49,6 +66,9 @@ ht-degree: 34%
    + [Direktmeddelande](send/direct-mail.md)
    + [Social marknadsföring](send/twitter.md)
    + [Transaktionsmeddelanden](send/transactional.md)
+   + Fel, studsar och karantän{#failures}
+      + [Karantän](send/quarantines.md)
+      + [Leveransfel](send/delivery-failures.md)
 + Interaktion i realtid{#interaction}
    + [Kom igång med interaktion i realtid](interaction/interaction.md)
    + [Miljö och arkitektur](interaction/interaction-architecture.md)
@@ -104,3 +124,4 @@ ht-degree: 34%
       + [Kom igång](dev/api.md)
       + [Nya API:er](dev/new-apis.md)
       + [API-mellanlagringsmekanism](dev/staging.md)
++ [Kontrollpanelen i Campaign](https://experienceleague.adobe.com/docs/control-panel/using/control-panel-home.html?lang=sv)

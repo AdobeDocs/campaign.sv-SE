@@ -3,10 +3,10 @@ title: Posta meddelanden på Twitter med Adobe Campaign
 description: Lär dig hur du använder Adobe Campaign Social Marketing Module för att publicera meddelanden på Twitter och samla in kontaktdata
 role: Data Engineer
 level: Beginner
-hidefromtoc: true
 hide: true
+hidefromtoc: true
 exl-id: 0783e289-ae8e-4bb7-80f1-f90937a528c1
-source-git-commit: da6e585a789749ae0302f048940d104a36e2b477
+source-git-commit: 0f15112f0eec1d7cba26523adc1e88fc5d26997c
 workflow-type: tm+mt
 source-wordcount: '898'
 ht-degree: 1%
@@ -22,7 +22,6 @@ När integreringen är konfigurerad kan du:
 
 * Skicka meddelanden på Twitter: Med Adobe Campaign kan du skicka meddelanden direkt till ditt twitter-konto. Du kan också skicka direktmeddelanden till alla dina följare.
 * Samla in nya kontakter: Adobe Campaign kan automatiskt återställa profildata, vilket gör att ni kan genomföra riktade kampanjer och, när det är möjligt, implementera flerkanalsstrategier. Den här åtgärden kräver användarens samtycke.
-
 
 Konfigurationssteg för att integrera ditt Twitter-konto med Adobe Campaign beskrivs i [den här sidan](../connect/ac-tw.md).
 

@@ -5,7 +5,7 @@ feature: Audiences
 role: Data Engineer
 level: Beginner
 exl-id: 176cc4f0-8827-4127-9f03-7d75ac8cf917
-source-git-commit: f071fc227dac6d72873744ba56eb0b4b676de5dd
+source-git-commit: c3beb735f54606537bcc977f2f0539767d15b2d9
 workflow-type: tm+mt
 source-wordcount: '684'
 ht-degree: 1%
@@ -22,7 +22,7 @@ Innan du börjar måste du:
 * Hämta webbadressen till Campaign-servern
 * Skapa din Adobe ID eller hämta dina användaruppgifter från ditt företag
 
-## Hämta och installera klientkonsolen
+## Hämta och installera klientkonsolen{#download-ac-console}
 
 När du använder Campaign för första gången, eller om du behöver uppgradera till en nyare version, måste du hämta klientkonsolen och installera den.
 
@@ -36,7 +36,7 @@ Det finns två alternativ:
 >
 >Adobe rekommenderar att du låter alternativet vara kvar **[!UICONTROL No longer ask this question]** avmarkerat för att se till att alla användare får en varning när en ny version av konsolen är tillgänglig.  Om det här alternativet väljs informeras användaren inte om nya tillgängliga versioner.
 
-## Skapa din anslutning
+## Skapa din anslutning{#create-your-connection}
 
 När klientkonsolen har installerats nyligen följer du stegen nedan för att skapa anslutningen till programservern:
 
@@ -60,7 +60,7 @@ Du kan lägga till så många anslutningar som behövs för att ansluta till tes
 >
 >The **[!UICONTROL Add]** knappen kan du skapa **[!UICONTROL folders]** för att ordna alla dina kontakter. Bara dra och släpp varje anslutning till en mapp.
 
-## Logga in på Adobe Campaign
+## Logga in på Adobe Campaign {#logon-to-ac}
 
 Så här loggar du in på en befintlig instans:
 
@@ -78,7 +78,7 @@ Så här loggar du in på en befintlig instans:
 
    ![](assets/adobeID.png)
 
-## Bevilja åtkomst för användare
+## Bevilja åtkomst för användare{#grant-access}
 
 Med Adobe Campaign kan du definiera och hantera de rättigheter som tilldelats de olika operatorerna. Detta är en uppsättning rättigheter och begränsningar som tillåter eller nekar:
 

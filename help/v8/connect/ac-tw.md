@@ -4,10 +4,10 @@ description: Lär dig hur ni kan integrera er Campaign-miljö med Twitter
 feature: Overview
 role: Data Engineer
 level: Beginner
-hidefromtoc: true
 hide: true
+hidefromtoc: true
 exl-id: 5523217a-b95f-4639-b941-52eb7d5a0203
-source-git-commit: 137dba3461a82621af7d2e5f54442bf87422ad47
+source-git-commit: 0f15112f0eec1d7cba26523adc1e88fc5d26997c
 workflow-type: tm+mt
 source-wordcount: '898'
 ht-degree: 3%
@@ -83,7 +83,9 @@ Om du vill ange inställningar måste du ha tillgång till både Adobe Campaign-
 
    >[!CAUTION]
    >
-   >The **[!UICONTROL Internal name]** måste ha exakt samma namn som ditt Twitter-konto. Om du vill kontrollera inställningarna kan du:
+   >The **[!UICONTROL Internal name]** måste ha exakt samma namn som ditt Twitter-konto.
+
+   Om du vill kontrollera inställningarna kan du:
 
    * Klicka på knappen **[!UICONTROL Save]**.
    * I översikten över tjänster väljer du **Twitter** som du just har skapat.

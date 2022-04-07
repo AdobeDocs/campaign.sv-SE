@@ -32,19 +32,19 @@ Alla schematillägg som gjorts för scheman som används av **Tekniska arbetsfl�
 
 ## Skicka push-meddelanden för transaktioner
 
-I kombination med mobilappskanalmodulen kan du med transaktionsmeddelanden skicka transaktionsmeddelanden via meddelanden på mobila enheter.
+När de kombineras med Mobile app channel-modul kan du med transaktionsmeddelanden skicka transaktionsmeddelanden via meddelanden på mobila enheter.
 
-![](../assets/do-not-localize/book.png) Mobilappskanalen finns i [Campaign Classic v7-dokumentation](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/sending-push-notifications/about-mobile-app-channel.html?lang=en#sending-messages).
+![](../assets/do-not-localize/book.png) Mobile appkanal beskrivs i [Campaign Classic v7-dokumentation](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/sending-push-notifications/about-mobile-app-channel.html?lang=en#sending-messages).
 
 Om du vill skicka push-meddelanden för transaktioner måste du utföra följande konfigurationer:
 
-1. Installera **Mobilappskanal** till kontroll- och körningsinstanserna.
+1. Installera **Mobile App Channel** till kontroll- och körningsinstanserna.
 
    >[!CAUTION]
    >
    >Kontrollera licensavtalet innan du installerar ett nytt inbyggt Campaign-paket.
 
-1. Replikera **Mobilapplikation** och tillhörande mobilprogram på körningsinstanserna.
+1. Replikera **Mobile** och tillhörande mobilprogram på körningsinstanserna.
 
 För att Campaign ska kunna skicka transaktionspush-meddelanden måste händelsen innehålla följande element:
 

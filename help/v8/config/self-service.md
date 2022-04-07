@@ -46,7 +46,7 @@ Läs om hur man övervakar underdomäner och deras certifikat.
 * [Konfigurera en ny underdomän](https://experienceleague.adobe.com/docs/control-panel/using/subdomains-and-certificates/setting-up-new-subdomain.html){target=&quot;_blank&quot;}
 * [Övervaka dina underdomäners SSL-certifikat](https://experienceleague.adobe.com/docs/control-panel/using/subdomains-and-certificates/monitoring-ssl-certificates.html){target=&quot;_blank&quot;}
 
-## Övervaka prestanda
+## Prestandaövervakning
 
 Kontrollpanelen har flera funktioner som hjälper dig att övervaka dina instanser och säkerställa optimala prestanda. [Klicka här](https://experienceleague.adobe.com/docs/control-panel/using/performance-monitoring/about-performance-monitoring.html?lang=sv){target=&quot;_blank&quot;}
 

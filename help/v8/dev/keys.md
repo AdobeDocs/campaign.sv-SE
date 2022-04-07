@@ -2,7 +2,7 @@
 title: Nyckelhantering i Campaign
 description: Kom igång med nyckelhantering
 exl-id: ef06cb6b-1b25-4dbe-8fd0-f880ec9d645b
-source-git-commit: f071fc227dac6d72873744ba56eb0b4b676de5dd
+source-git-commit: 2d0b40e49afdfd71e8bb5c3f0b1d569a715420b2
 workflow-type: tm+mt
 source-wordcount: '676'
 ht-degree: 0%
@@ -13,7 +13,7 @@ ht-degree: 0%
 
 I Campaign v8 är primärnyckeln en UUID (Universally Unique IDentifier), som är en teckensträng. För att skapa detta UUID måste schemats huvudelement innehålla **autouuid** och **autopk** attribut inställda på **true**.
 
-Adobe kampanj v8 levereras med Snowflake som kärndatabas. Den distribuerade arkitekturen i Snowflake-databasen innehåller inga mekanismer för att hantera en nyckels unicitet i en tabell: slutanvändarna ansvarar för att säkerställa att nycklarna i Adobe Campaign-databasen är konsekventa.
+Adobe Campaign v8 levereras med Snowflake som kärndatabas. Den distribuerade arkitekturen i Snowflake-databasen innehåller inga mekanismer för att hantera en nyckels unicitet i en tabell: slutanvändarna ansvarar för att säkerställa att nycklarna i Adobe Campaign-databasen är konsekventa.
 
 För att relationsdatabasens enhetlighet ska bevaras är det obligatoriskt att undvika dubbletter av nycklar, särskilt på primärnycklar. Dubbletter av primärnycklar leder till problem med arbetsflödesaktiviteter för datahantering, som **Fråga**, **Avstämning**, **Uppdatera data**, med mera.
 

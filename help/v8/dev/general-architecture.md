@@ -2,9 +2,9 @@
 title: Allmän arkitektur
 description: Läs mer om Campaign-arkitekturen och komponenter
 exl-id: 1d9ff6c5-974d-4a8a-a0d7-641685bbe26e
-source-git-commit: 7234ca65f785b005b11851a5cd88add8cddeff4f
+source-git-commit: 9f375f8349140885cd4b6bcc206669a264cdbc9d
 workflow-type: tm+mt
-source-wordcount: '1217'
+source-wordcount: '1066'
 ht-degree: 0%
 
 ---
@@ -23,23 +23,13 @@ Den typiska driftsättningen av Adobe Campaign-lösningar består av följande k
 
 * **Databasbehållare**
 
-   Adobe Campaign Cloud Database lagrar all kundinformation, kampanjkomponenter, erbjudanden och arbetsflöden samt kampanjresultat i kunddatabasbehållare, baserat på relationsdatabasteknik.
+   Adobe Campaign Cloud Database lagrar all information, alla kampanjkomponenter, erbjudanden, arbetsflöden och kampanjresultat i databasbehållare, baserat på relationsdatabasteknik.
 
 ## Anpassad klientmiljö {#client-env}
 
 Programmet kan nås på olika sätt: Rich Client, Thin Client eller API Integration.
 
-* **Klientkonsol**: Huvudanvändargränssnittet i programmet är ett inbyggt program (i Windows) som kommunicerar med Adobe Campaign-programservern med standardInternetprotokoll (SOAP, HTTP osv.). Adobe Campaign Client Console är mycket användarvänligt för ökad produktivitet och använder mycket liten bandbredd (genom att använda ett lokalt cacheminne) och är utformat för enkel driftsättning. Konsolen kan distribueras från en webbläsare, kan uppdateras automatiskt och kräver ingen specifik nätverkskonfiguration eftersom den bara genererar HTTP(S)-trafik.
-
-   ![](../assets/do-not-localize/glass.png) [Läs mer om Campaign Client Console](../start/connect.md).
-
-* **Webbåtkomst**: delar av programmet kan nås via en enkel webbläsare via ett användargränssnitt i HTML, inklusive rapporteringsmodulen, godkännandefaser, instansövervakning osv.
-
-   ![](../assets/do-not-localize/glass.png) [Läs mer om Campaign Web Access](../start/connect.md).
-
-* **Kampanj-API:er**: I vissa fall kan systemet anropas från ett externt program med hjälp av de API:er för webbtjänster som exponeras via SOAP-protokollet.
-
-   ![](../assets/do-not-localize/glass.png) [Läs mer om Campaign-API:er](../dev/api.md).
+![](../assets/do-not-localize/glass.png) [Läs mer om Campaign-presentationslagret](../start/ac-components.md).
 
 ## Utvecklingsmiljö {#dev-env}
 
@@ -65,9 +55,9 @@ Den kör de arbetsflödesprocesser som definierats i programmet.
 
 Den hanterar också regelbundet genomförda tekniska arbetsflöden, inklusive:
 
-* **Spårning**: Återställer och konsoliderar spårningsloggar. Det gör att du kan hämta loggarna från omdirigeringsservern och skapa de aggregerade indikatorer som används av rapportmodulen.
-* **Rensa**: Databasrengöring. Används för att rensa gamla poster och undvika att databasen växer exponentiellt.
-* **Fakturering**: Automatisk sändning av en aktivitetsrapport för plattformen (databasstorlek, antal marknadsföringsåtgärder osv.).
+* **Spårning**: Återställer och konsoliderar spårningsloggar, så att du kan hämta loggarna från omdirigeringsservern och skapa de aggregerade indikatorer som används av rapportmodulen.
+* **Rensa**: Rensar databasen och tömmer gamla poster så att databasen inte växer exponentiellt.
+* **Fakturering**: Skickar en aktivitetsrapport för plattformen (databasens storlek, antal marknadsföringsåtgärder osv.).
 
 **Delivery Server** (nlserver mta)
 
@@ -117,7 +107,7 @@ Den här processen innehåller statistik om antalet anslutningar, de meddelanden
 
 Adobe Campaign Cloud-databasen bygger på [!DNL Snowflake] som innehåller funktionsuppgifter (profiler, prenumerationer, innehåll osv.), tekniska data (leveransjobb och loggar, spårningsloggar osv.) och arbetsdata (inköp, leads) för lösningen och alla Adobe Campaign-komponenter kommunicerar med databasen för att utföra sina specifika uppgifter.
 
-Kunderna kan driftsätta Adobe Campaign med hjälp av fördefinierade databaser och scheman, och vid behov kan den fördefinierade miljön utökas. Alla data i datafilen nås av Adobe Campaign via SQL-anrop. Adobe Campaign har också en komplett uppsättning ETL-verktyg (Extract Transform and Load) för import och export av data till och från systemet.
+Du kan distribuera Adobe Campaign med hjälp av fördefinierade databaser och scheman, och om det behövs kan den fördefinierade miljön utökas. Alla data i datafilen nås av Adobe Campaign via SQL-anrop. Adobe Campaign har också en komplett uppsättning ETL-verktyg (Extract Transform and Load) för import och export av data till och från systemet.
 
 ![](assets/data-flow-diagram.png)
 

@@ -5,16 +5,18 @@ feature: Overview
 role: Data Engineer
 level: Beginner
 exl-id: 7771a02c-ebd4-48b6-b25e-6b6e420ad493
-source-git-commit: 9e07353859e63b71abb61526f40675f18837bc59
+source-git-commit: def9714448ef5fdde39cee070088615e8f50e522
 workflow-type: tm+mt
-source-wordcount: '454'
-ht-degree: 2%
+source-wordcount: '568'
+ht-degree: 6%
 
 ---
 
 # Nyheter i Adobe Campaign v8? {#ac-gs-what-is-new}
 
 Adobe Campaign v8 har avsevärda förbättringar vad gäller infrastruktur, säkerhet, leveransbarhet och övervakning. Genom att utnyttja [[!DNL Snowflake]](https://www.snowflake.com/), som är en teknik för molndatabaser, förbättrar Adobe Campaign dramatiskt sin skala och hastighet, med möjlighet att hantera ett större antal kundprofiler samt mycket högre leveransfrekvenser och transaktioner per timme.
+
+## Viktiga möjligheter{#key-capabilities}
 
 Viktiga funktioner:
 
@@ -34,7 +36,7 @@ Viktiga funktioner:
 
 ![](assets/home-page.png)
 
-## Skala
+## Skala{#scale}
 
 Campaign v8 ger en heltäckande skala i alla steg av processen, från målinriktning till slutrapportering:
 
@@ -42,7 +44,23 @@ Campaign v8 ger en heltäckande skala i alla steg av processen, från målinrikt
 * Skala upp prestanda för frågor för segmentering och målinriktning men även för datainhämtning och urkunder
 * Skala leveransberedningen (från timmar till minuter)
 
-## Förenkling och prestandaökning
+## Självbetjäningsadministratörsgränssnitt{#self-service-admin}
+
+Som produktadministratör kan du hantera inställningar och spåra användningen av var och en av era Campaign v8-instanser med **Kontrollpanelen för kampanj**.
+
+Via ett intuitivt användargränssnitt kan administratörer övervaka användningen av nyckelresurser, utföra avancerade uppgifter som IP-adresser som tillåter listning, SFTP-lagringsövervakning, nyckelhantering med mera. Det här självbetjäningsgränssnittet ger dig större flexibilitet och hjälper dig att:
+
+* Gör ändringar av inställningarna själv utan att kontakta Adobe Support
+* Konfigurera inställningar baserat på olika affärsbehov vid olika tidpunkter
+* kontrollera åtkomstinställningarna efter behov för att förbättra säkerheten
+
+![](assets/subdomain1.png)
+
+![](../assets/do-not-localize/glass.png) [Läs mer om Campaign Control Panel](https://experienceleague.adobe.com/docs/control-panel/using/discover-control-panel/key-features.html){target=&quot;_blank&quot;}
+
+
+
+## Förenkling och prestandaökning{#simplification-and-perf-increase}
 
 Campaign v8 innehåller konceptet **Fullständig federerad dataåtkomst** (FFDA): alla data är nu fjärranslutna till molndatabasen.
 

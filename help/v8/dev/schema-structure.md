@@ -348,7 +348,6 @@ Elementen anges med sitt namn och attributen anges med namnet före tecknet&quot
 >
 >* **location/@city** är ogiltig, använd **`[location/@city]`**
 >* **`[@email]`** och **@email** är likvärdiga
-
 >
 
 
