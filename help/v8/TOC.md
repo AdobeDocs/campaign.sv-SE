@@ -4,10 +4,10 @@ user-guide-title: Campaign v8
 description: Dokumentation om Campaign v8
 breadcrumb-title: Campaign v8
 title: Kampanjdokument v8
-source-git-commit: c3beb735f54606537bcc977f2f0539767d15b2d9
+source-git-commit: 79a9d60175b06a11cf27b44275a8ba3fe11e4d3e
 workflow-type: tm+mt
-source-wordcount: '307'
-ht-degree: 31%
+source-wordcount: '325'
+ht-degree: 29%
 
 ---
 
@@ -103,7 +103,11 @@ ht-degree: 31%
    + [Campaign + RTCDP](connect/ac-rtcdp.md)
    + [Campaign + Twitter](connect/ac-tw.md)
    + [Kampanj + extern databas](connect/fda.md)
-   + [Campaign + din CRM](connect/crm.md)
+   + Campaign + din CRM {#ac-crm}
+      + [Kom igång med CRM-anslutningar](connect/crm.md)
+      + [Arbeta med Campaign och SFDC](connect/ac-sfdc.md)
+      + [Arbeta med Campaign och Microsoft Dynamics](connect/ac-ms-dyn.md)
+      + [Synkronisera data](connect/crm-data-sync.md)
 + Resurser för utvecklare {#architecture}
    + [Globala principer](dev/general-architecture.md)
    + [Arkitektur](dev/architecture.md)

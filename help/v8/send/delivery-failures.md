@@ -197,7 +197,7 @@ För e-postkanalen anges möjliga orsaker till leveransfel nedan.
    <td> Ej definierad </td> 
    <td> Ej definierad </td> 
    <td> 0 </td> 
-   <td> Adressen kvalificerar sig eftersom felet ännu inte har ökats. Den här typen av fel inträffar när ett nytt felmeddelande skickas av servern: Det kan vara ett isolerat fel, men om det inträffar igen ökar felräknaren, som varnar de tekniska teamen. De kan sedan göra en meddelandeanalys och kvalificera felet via <span class="uicontrol">Administration</span> / <span class="uicontrol">Campaign Management</span> / <span class="uicontrol">Hantering av ej slutprodukter</span> i trädstrukturen.<br /> </td> 
+   <td> Adressen kvalificerar sig eftersom felet ännu inte har ökats. Den här typen av fel inträffar när ett nytt felmeddelande skickas av servern: Det kan vara ett isolerat fel, men om det inträffar igen ökar felräknaren, som varnar de tekniska teamen. De kan sedan göra en meddelandeanalys och kvalificera felet via <span class="uicontrol">Administration</span> / <span class="uicontrol">Kampanjhantering</span> / <span class="uicontrol">Hantering av ej slutprodukter</span> i trädstrukturen.<br /> </td> 
   </tr> 
   <tr> 
    <td> Ej berättigade till erbjudandena </td> 
