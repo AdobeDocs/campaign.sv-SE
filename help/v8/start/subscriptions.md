@@ -5,9 +5,9 @@ feature: Overview
 role: Data Engineer
 level: Beginner
 exl-id: d5933b12-8664-49b8-953c-ea98eb428cc2
-source-git-commit: 9e07353859e63b71abb61526f40675f18837bc59
+source-git-commit: fbec41a722f71ad91260f1571f6a48383e99b782
 workflow-type: tm+mt
-source-wordcount: '537'
+source-wordcount: '545'
 ht-degree: 0%
 
 ---
@@ -76,7 +76,7 @@ Så här avanmäler du en profil från en tjänst:
 
 >[!CAUTION]
 >
->Prenumerationer och avbeställningar är **asynkron** -processer. Begäranden om anmälan och avanmälan behandlas varje timme. [Läs mer](../dev/new-apis.md#sub-apis)
+>När det gäller [Företagsdistribution (FFDA)](../architecture/enterprise-deployment.md), prenumerationer och avbeställningar är **asynkron** -processer. Begäranden om anmälan och avanmälan behandlas varje timme. [Läs mer](../architecture/new-apis.md#sub-apis)
 
 Du kan också göra det möjligt för leveransmottagarna att vidarebefordra meddelanden till en vän. Om du vill göra det infogar du länkarna i leveransen. Du kan sedan följa upp denna delningsprocess samt antalet besök på de berörda sidorna.
 

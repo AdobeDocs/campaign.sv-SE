@@ -2,9 +2,9 @@
 title: God praxis för datamodell
 description: Lär dig mer om de bästa sätten att använda Campaign-datamodelltillägg
 exl-id: bdd5e993-0ce9-49a8-a618-ab0ff3796d49
-source-git-commit: 63b53fb6a7c6ecbfc981c93a723b6758b5736acf
+source-git-commit: fbec41a722f71ad91260f1571f6a48383e99b782
 workflow-type: tm+mt
-source-wordcount: '2683'
+source-wordcount: '2717'
 ht-degree: 4%
 
 ---
@@ -73,13 +73,9 @@ Förutom **autouuid** och **autopk** som definieras som standard i de flesta tab
 
 Effektiva nycklar är viktiga för prestanda. Med Snowflake kan du infoga numeriska eller strängbaserade datatyper som nycklar för tabeller.
 
-<!-- ### Dedicated tablespaces {#dedicated-tablespaces}
-
-The tablespace attribute in the schema allows you to specify a dedicated tablespace for a table.
-
-The installation wizard allows you to store objects by type (data, temporary).
-
-Dedicated tablespaces are better for partitioning, security rules, and allow fluid and flexible administration, better optimization, and performance. -->
+>[!NOTE]
+>
+>The **autouuid** attributet gäller endast för [Företagsdistributioner (FFDA)](../architecture/enterprise-deployment.md).
 
 ## Identifierare {#identifiers}
 
@@ -93,7 +89,7 @@ I följande tabell beskrivs dessa identifierare och deras syfte.
 | Namn (eller internt namn) | <ul><li>Den här informationen är en unik identifierare för en post i en tabell. Värdet kan uppdateras manuellt, vanligtvis med ett genererat namn.</li><li>Den här identifieraren behåller sitt värde när den distribueras i en annan instans av Adobe Campaign och får inte vara tom.</li></ul> | <ul><li>Byt namn på den post som genererats av Adobe Campaign om objektet ska distribueras från en miljö till en annan.</li><li>När ett objekt har ett namnutrymmesattribut (*schema* till exempel) kommer det här gemensamma namnutrymmet att utnyttjas för alla anpassade objekt som skapas. Vissa reserverade namnutrymmen bör inte användas: *nms*, *xtk*, osv.  Observera att vissa namnutrymmen bara är interna. [Läs mer](schemas.md#reserved-namespaces).</li><li>När ett objekt inte har något namnutrymme (*arbetsflöde* eller *leverans* till exempel) skulle det här namnutrymmesbegreppet läggas till som ett prefix för ett internt namnobjekt: *namespaceMyObjectName*.</li><li>Använd inte specialtecken som blanksteg&quot;, halvkolumn &quot;:&quot; eller bindestreck &quot;-&quot;. Alla dessa tecken ersätts med understrecket&quot;_&quot; (tillåtet tecken). &quot;abc-def&quot; och &quot;abc:def&quot; skulle till exempel lagras som &quot;abc_def&quot; och skrivas över varandra.</li></ul> |
 | Etikett | <ul><li>Etiketten är affärsidentifieraren för ett objekt eller en post i Adobe Campaign.</li><li>Det här objektet tillåter mellanslag och specialtecken.</li><li>Det garanterar inte att ett register är unikt.</li></ul> | <ul><li>Vi rekommenderar att du bestämmer en struktur för objektetiketterna.</li><li>Detta är den mest användarvänliga lösningen för att identifiera en post eller ett objekt för en Adobe Campaign-användare.</li></ul> |
 
-Adobe Campaign primärnyckel är ett automatiskt genererat UUID för alla inbyggda tabeller. Ett UUID kan också användas för anpassade tabeller. [Läs mer](keys.md)
+När det gäller [Företagsdistribution (FFDA)](../architecture/enterprise-deployment.md)är Adobe Campaign primärnyckel ett automatiskt genererat UUID för alla inbyggda tabeller. Ett UUID kan också användas för anpassade tabeller. [Läs mer](../architecture/keys.md)
 
 Även om antalet ID:n är oändligt bör du ta hand om databasens storlek för att säkerställa optimala prestanda. Om du vill förhindra problem måste du justera inställningarna för instansrensning. Mer information finns i [det här avsnittet](#data-retention).
 
@@ -112,7 +108,9 @@ När du skapar en anpassad tabell finns det två alternativ:
 
 >[!CAUTION]
 >
->Ett autouid ska inte användas som referens i arbetsflöden.
+>* Ett autouid ska inte användas som referens i arbetsflöden.
+> * The **autouuid** attributet gäller endast för [Företagsdistributioner (FFDA)](../architecture/enterprise-deployment.md).
+>
 
 
 ## Länkar och kardinalitet {#links-and-cardinality}
@@ -121,7 +119,7 @@ När du skapar en anpassad tabell finns det två alternativ:
 
 Se upp för den&quot;egna&quot; integriteten i stora tabeller. Om du tar bort poster som har stora tabeller med &quot;egen&quot; integritet kan instansen eventuellt stoppas. Tabellen är låst och borttagningarna görs en i taget. Därför är det bäst att använda&quot;neutral&quot; integritet i underordnade tabeller som har stora volymer.
 
-Att deklarera en länk som en extern koppling är inte bra för prestandan. Posten med noll-id emulerar den externa kopplingsfunktionen. Du behöver inte deklarera externa kopplingar om länken använder **autouuid**.
+Att deklarera en länk som en extern koppling är inte bra för prestandan. Posten med noll-id emulerar den externa kopplingsfunktionen. När det gäller [Företagsdistribution (FFDA)](../architecture/enterprise-deployment.md)behöver du inte deklarera externa kopplingar om länken använder **autouuid**.
 
 Även om det är möjligt att ansluta en tabell i ett arbetsflöde rekommenderar Adobe att du definierar gemensamma länkar mellan resurser direkt i datastrukturdefinitionen.
 

@@ -4,9 +4,9 @@ user-guide-title: Campaign v8
 description: Dokumentation om Campaign v8
 breadcrumb-title: Campaign v8
 title: Kampanjdokument v8
-source-git-commit: 79a9d60175b06a11cf27b44275a8ba3fe11e4d3e
+source-git-commit: d7e0635c6fccd70ed012a5b8148258383a1f6766
 workflow-type: tm+mt
-source-wordcount: '325'
+source-wordcount: '352'
 ht-degree: 29%
 
 ---
@@ -27,6 +27,7 @@ ht-degree: 29%
       + [Upptäck gränssnittet Campaign](start/campaign-ui.md)
       + [Anpassa Campaign-gränssnittet](start/customize-ui.md)
    + [Arbeta med målgrupper](start/audiences.md)
+   + [Hantera förfrågningar om användarens information](start/privacy.md)
    + [Importera data](start/import.md)
    + [Skapa kampanjer](start/campaigns.md)
    + [Skicka meddelanden](start/create-message.md)
@@ -34,6 +35,18 @@ ht-degree: 29%
    + [Spåra och övervaka](start/tracking.md)
    + [Mätvärden och rapporter](start/reporting.md)
    + [Vanliga frågor och svar ](start/campaign-faq.md)
++ Arkitektur {#architecture}
+   + [Globala principer](architecture/general-architecture.md)
+   + [Arkitektur](architecture/architecture.md)
+   + Driftsättning av FDA Snowflake {#fda}
+      + [Vad är FDA-Snowflake?](architecture/fda-deployment.md)
+   + Företagsdistribution (FFDA) {#ffda}
+      + [Vad är Campaign FFDA?](architecture/enterprise-deployment.md)
+      + Egenskaper {#ffda-characteristics}
+         + [Nyckelhantering och unicitet](architecture/keys.md)
+         + [Nya API:er](architecture/new-apis.md)
+         + [API-mellanlagringsmekanism](architecture/staging.md)
+         + [Replikeringsmekanism](architecture/replication.md)
 + Implementera {#implement}
    + [Implementeringssteg](start/implement.md)
    + [Anpassa instansen](dev/customize.md)
@@ -59,7 +72,9 @@ ht-degree: 29%
    + [Hantera mappar och vyer](audiences/folders-and-views.md)
    + [Bästa praxis](audiences/audiences-best-practices.md)
 + Skicka meddelanden{#send}
-   + [E-post](send/email.md)
+   + E-post {#emails}
+      + [Designa och skicka e-post](send/email.md)
+      + [Skicka med förbättrad MTA](send/enhanced-mta.md)
    + [SMS](send/sms.md)
    + [Push-meddelanden](send/push.md)
    + [LINE-meddelanden](send/line.md)
@@ -89,7 +104,6 @@ ht-degree: 29%
    + [Användningsfall](interaction/interaction-use-cases.md)
 + Konfigurera {#config}
    + [Automatisera med arbetsflöden](config/workflows.md)
-   + [Hantera data](config/replication.md)
    + [E-postinställningar](config/email-settings.md)
    + [Inställningar för transaktionsmeddelanden](config/transactional-msg-settings.md)
    + [Integrera Campaign SDK:er med er app](config/push-config.md)
@@ -108,13 +122,10 @@ ht-degree: 29%
       + [Arbeta med Campaign och SFDC](connect/ac-sfdc.md)
       + [Arbeta med Campaign och Microsoft Dynamics](connect/ac-ms-dyn.md)
       + [Synkronisera data](connect/crm-data-sync.md)
-+ Resurser för utvecklare {#architecture}
-   + [Globala principer](dev/general-architecture.md)
-   + [Arkitektur](dev/architecture.md)
-   + [Datamodell](dev/datamodel.md)
++ Resurser för utvecklare {#developer}
+   + [Kampanjdatamodell](dev/datamodel.md)
    + Scheman och formulär {#shemas-forms}
       + [Arbeta med scheman](dev/schemas.md)
-      + [Nyckelhantering och unicitet](dev/keys.md)
       + [Skapa scheman](dev/create-schema.md)
       + [Utöka scheman](dev/extend-schema.md)
       + [Filterscheman](dev/filter-schema.md)
@@ -124,8 +135,6 @@ ht-degree: 29%
       + [Använd en anpassad mottagartabell](dev/custom-recipient.md)
       + [Uppdatera databasen](dev/update-database-structure.md)
       + [Inmatningsformulär](dev/forms.md)
-   + API:er {#api}
-      + [Kom igång](dev/api.md)
-      + [Nya API:er](dev/new-apis.md)
-      + [API-mellanlagringsmekanism](dev/staging.md)
+   + [Kampanj-API:er](dev/api.md)
 + [Kontrollpanelen i Campaign](https://experienceleague.adobe.com/docs/control-panel/using/control-panel-home.html?lang=sv)
+

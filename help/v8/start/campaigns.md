@@ -5,10 +5,10 @@ feature: Audiences
 role: Data Engineer
 level: Beginner
 exl-id: b5a6c845-13a7-4746-b856-a08a3cf80b66,c4798c8f-619e-4a60-80d7-29b9e4c61168
-source-git-commit: 9e07353859e63b71abb61526f40675f18837bc59
+source-git-commit: 36b7a7be766febca4448c6114f5acac35e30873a
 workflow-type: tm+mt
-source-wordcount: '745'
-ht-degree: 7%
+source-wordcount: '905'
+ht-degree: 6%
 
 ---
 
@@ -18,13 +18,13 @@ Adobe Campaign erbjuder en uppsättning lösningar som hjälper er att personali
 
 Kampanjerna omfattar åtgärder (leveranser) och processer (import eller extrahering av filer) samt resurser (marknadsföringsdokument, leveransdispositioner). De används i marknadsföringskampanjer. Kampanjer ingår i ett program och program ingår i en kampanjplan.
 
-## Orkestrera kampanjer över flera kanaler
+## Orkestrera kampanjer över flera kanaler{#cross-channel-orchestration}
 
 Med Adobe Campaign kan du utforma och orkestrera målinriktade och personaliserade kampanjer över flera kanaler: e-post, direktutskick, SMS och push-meddelanden. Ett enda gränssnitt erbjuder alla funktioner du behöver för att schemalägga, orkestrera, konfigurera, personalisera, automatisera, genomföra och mäta alla kampanjer och all kommunikation.
 
 ![](assets/campaign-tab.png)
 
-### Kärnkoncept
+### Kärnkoncept{#ac-core-concepts}
 
 Innan ni börjar implementera marknadsföringskampanjer måste ni känna till följande koncept:
 
@@ -40,7 +40,7 @@ Innan ni börjar implementera marknadsföringskampanjer måste ni känna till f�
 
 * **Periodiska kampanjer**: en periodisk kampanj är en kampanj som skapas automatiskt i enlighet med körningsschemat i sin mall.
 
-## Arbetsyta för marknadsföringskampanjer
+## Arbetsyta för marknadsföringskampanjer{#ac-workspace}
 
 Med Adobe Campaign kan ni skapa, konfigurera, köra och analysera alla marknadsföringskampanjer från ett enhetligt kontrollcenter.
 
@@ -49,7 +49,7 @@ Med Adobe Campaign kan ni skapa, konfigurera, köra och analysera alla marknadsf
 ![](../assets/do-not-localize/book.png) Upptäck hur ni får tillgång till och implementerar marknadsföringskampanjer i [Campaign Classic v7-dokumentation](https://experienceleague.adobe.com/docs/campaign-classic/using/orchestrating-campaigns/about-marketing-campaigns/accessing-marketing-campaigns.html?lang=en#orchestrating-campaigns){target=&quot;_blank&quot;}
 
 
-## Viktiga steg att starta
+## Viktiga steg att starta{#gs-ac-start}
 
 De viktigaste stegen för att skapa en flerkanalskampanj för marknadsföring är:
 
@@ -90,4 +90,25 @@ De viktigaste stegen för att skapa en flerkanalskampanj för marknadsföring ä
    Med Adobe Campaign kan ni skapa samverkansbaserade godkännandeprocesser för de viktigaste stegen i marknadsföringskampanjen. För varje kampanj kan ni godkänna leveransmålet, innehållet och kostnaderna. Adobe Campaign-operatörer som ansvarar för godkännande kan meddelas via e-post och kan acceptera eller avvisa godkännande från konsolen eller via en webbanslutning.
 
    ![](../assets/do-not-localize/book.png) Lär dig hur du ställer in och hanterar godkännanden i [Campaign Classic v7-dokumentation](https://experienceleague.adobe.com/docs/campaign-classic/using/orchestrating-campaigns/orchestrate-campaigns/marketing-campaign-approval.html?lang=en#orchestrating-campaigns){target=&quot;_blank&quot;}
+
+
+## Tillägg för distribuerad marknadsföring{#distributed-marketing-add-on}
+
+Adobe Campaign erbjuder **Distribuerad marknadsföring** tillägg för genomförande av samverkanskampanjer mellan centrala enheter (huvudkontor, marknadsavdelningar osv.) och lokala enheter (butiker, regionala organ osv.). Detta samarbete bygger på en delad arbetsyta som kallas **[!UICONTROL List of campaign packages]**, där kampanjmallar som utformats av centrala enheter erbjuds lokala enheter.
+
+>[!NOTE]
+>
+>Den här funktionen är tillgänglig från och med Campaign v8.3. Om du vill kontrollera din version kan du läsa [det här avsnittet](compatibility-matrix.md#how-to-check-your-campaign-version-and-buildversion)
+
+[](../assets/do-not-localize/book.png) Lär dig hur du konfigurerar och använder Campaign Distributed Marketing-funktioner i [Campaign Classic v7-dokumentation](https://experienceleague.adobe.com/docs/campaign-classic/using/distributed-marketing/about-distributed-marketing.html){target=&quot;_blank&quot;}
+
+## Tillägg för distribuerad marknadsföring{#response-manager-add-on}
+
+Adobe Campaign erbjuder **Svarshantering** tillägg som gör att ni kan mäta framgången och lönsamheten för marknadsföringskampanjer eller erbjudandeförslag över olika kommunikationskanaler: e-post, mobil, direktreklam osv.
+
+>[!NOTE]
+>
+>Den här funktionen är tillgänglig från och med Campaign v8.3. Om du vill kontrollera din version kan du läsa [det här avsnittet](compatibility-matrix.md#how-to-check-your-campaign-version-and-buildversion)
+
+[](../assets/do-not-localize/book.png) Lär dig hur du konfigurerar och använder svarshanteraren för Campaign i [Campaign Classic v7-dokumentation](https://experienceleague.adobe.com/docs/campaign-classic/using/response-manager/about-response-manager.html){target=&quot;_blank&quot;}
 

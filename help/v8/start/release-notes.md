@@ -6,16 +6,108 @@ role: Data Engineer
 level: Beginner
 hidefromtoc: false
 exl-id: 7cf8111d-9f3a-46a4-813a-d4e43a1d1471
-source-git-commit: 0f15112f0eec1d7cba26523adc1e88fc5d26997c
+source-git-commit: d3137e75bfc4986e1d6badf32f21fda4c4353c8b
 workflow-type: tm+mt
-source-wordcount: '1714'
-ht-degree: 36%
+source-wordcount: '2240'
+ht-degree: 32%
 
 ---
 
 # Senaste versionen{#latest-release}
 
 Den här sidan listar nya funktioner, förbättringar och korrigeringar som kommer med den **senaste versionen av Campaign v8**.
+
+## Version 8.3.7 {#release-8-3-7}
+
+_16 maj 2022_
+
+**Nyheter**
+
+<table>
+<thead>
+<tr>
+<th><strong>Responshanteraren</strong><br/></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>
+<p>Med Hantering av kampanjsvar kan ni mäta framgångarna och avkastningen på era marknadsföringskampanjer eller erbjuda erbjudanden i alla kanaler: e-post, mobil, direktreklam osv.</p>
+<p>Mer information finns i den <a href="../start/campaigns.md#response-manager-add-on">detaljerade dokumentationen</a>.</p>
+</td>
+</tr>
+</tbody>
+</table>
+
+<table> 
+<thead>
+<tr> 
+<th> <strong>Distribuerad marknadsföring</strong><br /> </th> 
+</tr> 
+</thead> 
+<tbody> 
+<tr> 
+<td> <p>Med Campaign Distributed Marketing kan ni implementera samarbetskampanjer mellan centrala enheter (huvudkontor, marknadsföringsavdelningar osv.) och lokala enheter (säljställen, regionala organ osv.). Genom en delad arbetsyta (kampanjpaket) kan du skapa kampanjmallar och föreslå dem för lokala enheter.</p>
+<p>Mer information finns i den <a href="../start/campaigns.md#distributed-marketing-add-on">detaljerade dokumentationen</a>.</p>
+</td> 
+</tr> 
+</tbody> 
+</table>
+
+<table> 
+<thead>
+<tr> 
+<th> <strong>Tidskänsliga meddelanden</strong><br /> </th> 
+</tr> 
+</thead> 
+<tbody> 
+<tr> 
+<td> <p>Med iOS 15 har Apple lagt till en funktion för känsligt meddelande som ger programutvecklaren kontroll över att kringgå fokusläget när ett meddelande anses vara känsligt och sedan måste nå användaren i realtid.</p>
+<p>Mer information finns i den <a href="../send/push.md#send-notifications-on-ios">detaljerade dokumentationen</a>.</p>
+</td> 
+</tr> 
+</tbody> 
+</table>
+
+<table> 
+<thead>
+<tr> 
+<th> <strong>Integrering av Privacy Service</strong><br /> </th> 
+</tr> 
+</thead> 
+<tbody> 
+<tr> 
+<td> <p>Campaign v8 kan nu integreras med Adobe Privacy Core Service. Förfrågningar om användarens information som skickas från Privacy Core Service till alla lösningar i Experience Cloud hanteras automatiskt av Campaign via ett dedikerat arbetsflöde.</p>
+<p>Mer information finns i den <a href="privacy.md">detaljerade dokumentationen</a>.</p>
+</td> 
+</tr> 
+</tbody> 
+</table>
+
+**Kompatibilitetsuppdateringar**
+
+* Campaign v8 SDK har nu stöd för Android 12 och iOS 15 för push-meddelanden.
+* Campaign v8 är nu kompatibelt med Windows 11.
+
+Se [kompatibilitetsmatrisen för Campaign](capability-matrix.md).
+
+**Förbättringar**
+
+* Microsoft Exchange Online OAuth 2.0-autentisering för POP3 stöds nu i Campaign. [Läs mer](../config/external-accounts.md#bounce-mails-external-account)
+* Kritiska korrigeringar har tillämpats för webb-API:et Microsoft Dynamics Connector.
+* Den nya rättigheten Operator och group schema write (operatorWrite) har lagts till så att användare kan infoga, uppdatera och ta bort operatorer (xtk:operator) och Operator-grupper (xtk:group).
+* Nu kan du aktivera funktionen för hemlig kopia via e-post (blind kopia) för att lagra e-postmeddelanden som skickats av Campaign på leveransnivå, via det dedikerade alternativet i leveransegenskaperna. [Läs mer](../config/email-settings.md#email-bcc)
+* För att få bättre prestanda är nu ett nytt delningsalternativ aktiverat som standard i det externa routningskontot. Med det här alternativet kan meddelanden delas upp automatiskt mellan olika instanser av mellanprodukter så att de kan levereras snabbare till mottagarna. LÄNK
+* För LINE-leveranser i mellanbaserade inställningar kan nu flera aktiva konton av samma typ finnas i en mellaninstans.
+* Antalet standardanslutningar för webbprocessen har ökat från 50 till 150.
+* Campaign innehåller en uppsättning nya skyddsritningar för att förhindra att dubblettnycklar infogas i Snowflake-databasen. [Läs mer](../architecture/keys.md)
+
+**Felkorrigeringar**
+
+* Korrigerade ett problem som uppstod när frön och kontrollgrupper användes i samma återkommande leverans. (NEO-41197)
+* Korrigerade ett fel i FFDA som ledde till att e-postsändning blockerades för alla mottagare som tillhör samma deliveryPart under sändningsprocessen (upp till 256) när personaliseringsblocken innehöll ett av följande tecken: `' & < > "`. Dessa tecken stöds nu i anpassningsblock (exempel: first name=&quot;Brian O&#39;Neil&quot;). (NEO-43184)
+* Korrigerade ett problem som kunde leda till att spårningsarbetsflödet misslyckades när ett anpassat schema användes som målmappning. Vi ser nu till att typen för den externa länken till ett anpassat målschema är korrekt när du genererar ett wideLog-schema via målmappningsguiden. (NEO-43506)
+* Korrigerade ett problem som kunde leda till att arbetsflödena för FFDA-distribution misslyckades för andra språk än engelska. (NEO-44561)
 
 ## Version 8.2.10 {#release-8-2-10}
 
@@ -76,7 +168,9 @@ _28 oktober 2021_
 <tr> 
 <td> <p>Unicity Service är en ny komponent i Cloud Database Manager. Det hjälper användarna att bevara och övervaka integriteten för unika nyckelbegränsningar i molndatabastabeller. På så sätt kan du minska risken att infoga dubblettnycklar.
 <p>Eftersom molndatabasen inte tillämpar begränsningar för användargrupper, introducerar Unicity Service på programnivå, <b>en uppsättning nya skyddsräcken</b> minska risken att infoga dubbletter när data hanteras med Adobe Campaign.</p> 
-<p>Unicity Service initierar ett nytt inbyggt arbetsflöde som kallas <b>ffdaUnicity</b> för att övervaka begränsningar för unicitet och varningar när dubbletter upptäcks.</p></td> </tr> 
+<p>Unicity Service initierar ett nytt inbyggt arbetsflöde som kallas <b>ffdaUnicity</b> för att övervaka begränsningar för unicitet och varningar när dubbletter upptäcks.</p>
+<p>Mer information finns i den <a href="../architecture/keys.md">detaljerade dokumentationen</a>.</p>
+</td> </tr> 
 </tbody> 
 </table>
 

@@ -4,9 +4,10 @@ description: Lär dig hur du arbetar med Campaign och Microsoft Dynamics
 feature: Overview
 role: Data Engineer
 level: Beginner
-source-git-commit: 59ccee717d857545ed2b3ba6fb850ef8a9d0907b
+exl-id: 4f9e8f74-27dc-482c-a83c-25623b53560f
+source-git-commit: fbec41a722f71ad91260f1571f6a48383e99b782
 workflow-type: tm+mt
-source-wordcount: '1365'
+source-wordcount: '1366'
 ht-degree: 1%
 
 ---
@@ -48,7 +49,7 @@ Om du vill hämta program-ID:t (klient) måste du registrera ett program i Azure
 
 När du har sparat tilldelas en unik **Program-ID (klient)** till appen. Du behöver detta ID senare när du konfigurerar Dynamics 365 i Adobe Campaign.
 
-Läs mer i [Microsoft Dynamics 365-dokumentation](https://docs.microsoft.com/powerapps/developer/common-data-service/walkthrough-register-app-azure-active-directory).
+Läs mer i [Microsoft Dynamics 365-dokumentation](https://docs.microsoft.com/powerapps/developer/common-data-service/walkthrough-register-app-azure-active-directory){target=&quot;_blank&quot;}.
 
 ### Generera nyckelidentifierare och nyckel-ID för Microsoft Dynamics-certifikat {#config-certificate-key-id}
 
