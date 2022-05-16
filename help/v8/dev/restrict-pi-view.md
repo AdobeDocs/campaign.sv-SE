@@ -2,7 +2,7 @@
 title: Begränsa PI-vy
 description: Lär dig hur du begränsar PI-vyn
 exl-id: 1b833745-71d7-430d-ac7d-c830c78ea232
-source-git-commit: f071fc227dac6d72873744ba56eb0b4b676de5dd
+source-git-commit: d2f4e54b0c37cc019061dd3a7b7048cd80876ac0
 workflow-type: tm+mt
 source-wordcount: '386'
 ht-degree: 0%

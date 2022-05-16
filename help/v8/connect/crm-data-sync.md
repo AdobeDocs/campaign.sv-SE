@@ -2,7 +2,7 @@
 title: CRM Connectors-datasynkronisering
 description: Hantera data mellan Campaign och CRM
 feature: Salesforce Integration, Microsoft CRM Integration
-source-git-commit: 59ccee717d857545ed2b3ba6fb850ef8a9d0907b
+source-git-commit: d2f4e54b0c37cc019061dd3a7b7048cd80876ac0
 workflow-type: tm+mt
 source-wordcount: '1322'
 ht-degree: 0%

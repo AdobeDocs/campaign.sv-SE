@@ -5,7 +5,7 @@ feature: Overview
 role: Data Engineer
 level: Beginner
 exl-id: a7846b95-7570-4dce-b3f4-d3cc23eefcac
-source-git-commit: fbec41a722f71ad91260f1571f6a48383e99b782
+source-git-commit: d2f4e54b0c37cc019061dd3a7b7048cd80876ac0
 workflow-type: tm+mt
 source-wordcount: '513'
 ht-degree: 0%
@@ -16,7 +16,7 @@ ht-degree: 0%
 
 ## Åtkomst till Campaign-gränssnittet
 
-Kampanjarbetsytan är tillgänglig via [Klientkonsol](../architecture/general-architecture.md).
+Kampanjarbetsytan är tillgänglig via [Klientkonsol](../dev/general-architecture.md).
 
 Lär dig hur du installerar och konfigurerar Campaign Client Console i [det här avsnittet](../start/connect.md).
 

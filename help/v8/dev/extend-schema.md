@@ -2,7 +2,7 @@
 title: Utöka kampanjscheman
 description: Lär dig hur du utökar Campaign-scheman
 exl-id: e4dcb228-0683-437a-88cd-bd7ed33da921
-source-git-commit: 9e07353859e63b71abb61526f40675f18837bc59
+source-git-commit: d2f4e54b0c37cc019061dd3a7b7048cd80876ac0
 workflow-type: tm+mt
 source-wordcount: '254'
 ht-degree: 2%

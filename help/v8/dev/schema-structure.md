@@ -2,7 +2,7 @@
 title: Struktur för kampanjschema
 description: Struktur för kampanjschema
 exl-id: 9c4a9e71-3fc8-4b4e-8782-0742bbeaf426
-source-git-commit: f071fc227dac6d72873744ba56eb0b4b676de5dd
+source-git-commit: d2f4e54b0c37cc019061dd3a7b7048cd80876ac0
 workflow-type: tm+mt
 source-wordcount: '1397'
 ht-degree: 1%

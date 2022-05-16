@@ -2,7 +2,7 @@
 title: Uppdatera databasstrukturen
 description: Uppdatera databasstrukturen
 exl-id: fc64f3ca-67f1-47b7-b154-9c9dd044192c
-source-git-commit: f071fc227dac6d72873744ba56eb0b4b676de5dd
+source-git-commit: d2f4e54b0c37cc019061dd3a7b7048cd80876ac0
 workflow-type: tm+mt
 source-wordcount: '92'
 ht-degree: 0%

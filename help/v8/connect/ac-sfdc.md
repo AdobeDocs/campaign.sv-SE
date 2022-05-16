@@ -4,7 +4,7 @@ description: Lär dig hur du arbetar med Campaign och Salesforce.com
 feature: Overview
 role: Data Engineer
 level: Beginner
-source-git-commit: 59ccee717d857545ed2b3ba6fb850ef8a9d0907b
+source-git-commit: d2f4e54b0c37cc019061dd3a7b7048cd80876ac0
 workflow-type: tm+mt
 source-wordcount: '341'
 ht-degree: 0%

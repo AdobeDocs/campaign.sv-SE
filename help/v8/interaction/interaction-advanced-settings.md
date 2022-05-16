@@ -4,7 +4,7 @@ description: Avancerade inställningar för kampanjinteraktion
 feature: Overview
 role: Data Engineer
 level: Beginner
-source-git-commit: c19ac91fe7b4b825f75ec096320efabc3e78328c
+source-git-commit: d2f4e54b0c37cc019061dd3a7b7048cd80876ac0
 workflow-type: tm+mt
 source-wordcount: '122'
 ht-degree: 0%

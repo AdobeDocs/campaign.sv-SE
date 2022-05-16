@@ -5,9 +5,9 @@ feature: Audiences, Profiles
 role: Data Engineer
 level: Beginner
 exl-id: 220b7a88-bd42-494b-b55b-b827b4971c9e
-source-git-commit: 1ff06c69a4118afa228522d580dd5caa36a69275
+source-git-commit: d2f4e54b0c37cc019061dd3a7b7048cd80876ac0
 workflow-type: tm+mt
-source-wordcount: '1093'
+source-wordcount: '1120'
 ht-degree: 5%
 
 ---
@@ -16,19 +16,19 @@ ht-degree: 5%
 
 Adobe Campaign hanterar en lista med adresser i karantän för onlinekanaler (e-post, SMS, push-meddelanden). Vissa leverantörer av internetåtkomst betraktar automatiskt e-post som skräppost om frekvensen av ogiltiga adresser är för hög. Med karantän kan du därför undvika att läggas till i blockeringslista av dessa leverantörer. Dessutom bidrar karantäner till att minska SMS-kostnaderna genom att utesluta felaktiga telefonnummer från leveranser.
 
-När adressaten eller telefonnumret sätts i karantän utesluts mottagarna från målet vid leveransanalysen: kommer du inte att kunna skicka marknadsföringsmeddelanden, inklusive e-post för automatiserade arbetsflöden, till dessa kontakter. Om dessa adresser i karantän också finns med i listor, kommer de att uteslutas när de skickas till dessa listor. En e-postadress kan sättas i karantän, till exempel när postlådan är full, om adressen inte finns eller om e-postservern inte är tillgänglig.
+När adressaten eller telefonnumret sätts i karantän utesluts mottagarna från målet vid leveransanalysen: kommer du inte att kunna skicka marknadsföringsmeddelanden, inklusive e-post för automatiserade arbetsflöden, till dessa kontakter. Om dessa adresser i karantän också finns med i listor, kommer de att uteslutas när de skickas till dessa listor. En e-postadress kan sättas i karantän, till exempel när postlådan är full, om adressen inte finns eller om e-postservern till exempel inte är tillgänglig.
 
 <!--For more on best practices to secure and optimize your deliveries, refer to [this page](delivery-best-practices.md).-->
 
 **Karantän** gäller endast för **adress**, a **telefonnummer**, eller en **enhetstoken**, men inte själva profilen. En profil vars e-postadress är placerad i karantän kan till exempel uppdatera sin profil och ange en ny adress. Därefter kan den användas av leveransåtgärder igen. Om två profiler råkar ha samma telefonnummer, påverkas båda om numret sätts i karantän. Adresserna eller telefonnumren i karantän visas i [exkluderingsloggar](#delivery-quarantines) (för leverans) eller i [karantänlista](#non-deliverable-bounces) (för hela plattformen).
 
-Å andra sidan kan profiler vara **blockeringslista** efter en avanmälan (avanmälan), för en viss kanal: detta innebär att de inte längre är målinriktade. Om en profil på blockeringslista för e-postkanalen har två e-postadresser, kommer därför båda adresserna att exkluderas från leveransen. Du kan kontrollera om det finns en profil på blockeringslista för en eller flera kanaler i dialogrutan **[!UICONTROL No longer contact]** i profilens **[!UICONTROL General]** -fliken. [Läs mer](../audiences/view-profiles.md)
+Å andra sidan kan profiler vara **blockeringslista** efter en avanmälan (avanmälan), för en viss kanal: detta innebär att de inte längre är målinriktade. Om en profil på blockeringslista för e-postkanalen har två e-postadresser, kommer därför båda adresserna att exkluderas från leveransen. Du kan kontrollera om det finns en profil på blockeringslista för en eller flera kanaler i dialogrutan **[!UICONTROL No longer contact]** i profilens **[!UICONTROL General]** -fliken. [Läs mer](../audiences/view-profiles.md).
 
 >[!NOTE]
 >
 >När mottagarna rapporterar ditt meddelande som skräppost eller svarar på ett SMS-meddelande med ett nyckelord som &quot;STOP&quot;, sätts deras adress eller telefonnummer i karantän som **[!UICONTROL Denylisted]**. Deras profil uppdateras därefter.
-
-<!--For the email channel, email addresses are quarantined. For the mobile app channel, device tokens are quarantined. For the SMS channel, phone numbers are quarantined.?-->
+>
+> E-postadresser sätts i karantän för e-postkanalen. För mobilappskanalen sätts enhetstoken i karantän. Telefonnummer sätts i karantän för SMS-kanalen.
 
 ## Varför skickas ett e-postmeddelande, en telefon eller en enhet till karantän {#quarantine-reason}
 
@@ -37,7 +37,8 @@ Adobe Campaign hanterar karantän beroende på typ av leveransfel och orsaken ti
 Det finns två typer eller fel:
 
 * **Hårt fel**: e-postadressen, telefonnumret eller enheten skickas omedelbart till karantänen.
-* **Mjukt fel**: mjuka fel ökar en felräknare och kan sätta i karantän för e-post, telefonnummer eller enhetstoken. Kampanjresultat [återförsök](delivery-failures.md#retries): När felräknaren når gränsvärdet sätts adressen, telefonnumret eller enhetstoken i karantän. [Läs mer](delivery-failures.md#retries).
+* **Mjukt fel**: mjuka fel ökar en felräknare och kan sätta i karantän för e-post, telefonnummer eller enhetstoken. Kampanjresultat [återförsök](delivery-failures.md#retries).: När felräknaren når gränsvärdet sätts adressen, telefonnumret eller enhetstoken i karantän. [Läs mer](delivery-failures.md#retries).
+
 
 I listan över adresser i karantän visas **[!UICONTROL Error reason]** anger varför den valda adressen placerades i karantän. [Läs mer](#identifying-quarantined-addresses-for-the-entire-platform).
 

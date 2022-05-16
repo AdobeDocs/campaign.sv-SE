@@ -5,9 +5,9 @@ feature: Overview
 role: Data Engineer
 level: Beginner
 exl-id: 0259b3bd-9dc2-44f9-a426-c4af46b00a4e
-source-git-commit: 355b9219ffd9d481d15d2d0982d49923842cc27b
+source-git-commit: d2f4e54b0c37cc019061dd3a7b7048cd80876ac0
 workflow-type: tm+mt
-source-wordcount: '1699'
+source-wordcount: '1841'
 ht-degree: 3%
 
 ---
@@ -18,11 +18,7 @@ Använd FDA Connector (Federated Data Access) för att ansluta Campaign till en 
 
 >[!NOTE]
 >
->* Kompatibla databaser för FDA listas i [Kompatibilitetsmatris](../start/compatibility-matrix.md).
->
->* När det gäller [Företagsdistribution (FFDA)](../architecture/enterprise-deployment.md), finns det ett specifikt externt konto för att hantera kommunikationen mellan den lokala databasen i Campaign och molndatabasen i Snowflake. Det här externa kontot har konfigurerats för dig av Adobe och får inte ändras.
->
-
+>Kompatibla databaser för FDA listas i [Kompatibilitetsmatris](../start/compatibility-matrix.md).
 
 Med Campaign FDA-alternativet kan ni utöka er datamodell i en tredjepartsdatabas. Det identifierar automatiskt strukturen för måltabellerna och använder data från SQL-källorna.
 
@@ -60,12 +56,7 @@ Så här ställer du in åtkomst till en extern databas med FDA:
 1. Som användare av Adobes hanterade tjänster kan du kontakta Adobe för att installera drivrutinerna i Campaign-instansen.
 1. När drivrutinerna har installerats konfigurerar du det externa konto som motsvarar din databas på Adobe Campaign-servern och testar det externa kontot. [Läs mer](#fda-external-account)
 1. Skapa schemat för den externa databasen i Adobe Campaign. På så sätt kan du identifiera den externa databasens datastruktur. [Läs mer](#create-data-schema)
-
-<!--
-1. If needed, create a new target mapping from the previously created schema. This is required if the recipients of your deliveries come from the external database. This implementation comes with limitations related to message personalization. [Learn more](#define-data-mapping)
--->
-
-Observera det med Campaign [Företagsdistribution (FFDA)](../architecture/enterprise-deployment.md)kan du inte skapa en målmappning från ett schema som lagras i en extern databas som FDA har åtkomst till. Därför kan mottagarna av dina leveranser inte komma från den externa databasen.
+1. Skapa vid behov en ny målmappning från det schema som skapades tidigare. Detta är nödvändigt om mottagarna av leveranserna kommer från den externa databasen. Den här implementeringen har begränsningar som rör meddelandepersonalisering. [Läs mer](#define-data-mapping)
 
 ## Externt konto för extern databas{#fda-external-account}
 
@@ -130,40 +121,39 @@ Följ stegen nedan för att skapa schemat för den externa databasen i Adobe Cam
 
 1. Klicka **[!UICONTROL Save]** för att bekräfta skapandet.
 
-<!-- 
-## Define the target mapping{#define-data-mapping}
+## Definiera målmappningen{#define-data-mapping}
 
-You can define a mapping on the data in an external table.
+Du kan definiera en mappning för data i en extern tabell.
 
-To do this, once the schema of the external table has been created, you need to create a new delivery mapping to use the data in this table as a delivery target.
+För att göra detta måste du skapa en ny leveransmappning för att kunna använda data i den här tabellen som leveransmål när schemat för den externa tabellen har skapats.
 
-To do this, follow these steps:
+Följ dessa steg för att göra detta:
 
-1. Browse to **[!UICONTROL Administration]** `>` **[!UICONTROL Campaign Management]** `>` **[!UICONTROL Target mappings]** from Adobe Campaign explorer.
+1. Bläddra till **[!UICONTROL Administration]** `>` **[!UICONTROL Campaign Management]** `>` **[!UICONTROL Target mappings]** från Adobe Campaign Explorer.
 
-1. Create a new target mapping and select the schema you just created as the targeting dimension.
+1. Skapa en ny målmappning och välj det schema som du nyss skapade som måldimension.
 
    ![](assets/new-target-mapping.png)
 
 
-1. Indicate the fields where the delivery information is stored (last name, first name, email, address, etc.).
+1. Ange fälten där leveransinformationen lagras (efternamn, förnamn, e-postadress, adress osv.).
 
    ![](assets/wf_new_mapping_define_join.png)
 
-1. Specify the parameters for information storage, including the suffix of the extension schemas for them to be easily identifiable.
+1. Ange parametrarna för informationslagring, inklusive suffixet för tilläggsscheman för att de ska vara enkla att identifiera.
 
    ![](assets/wf_new_mapping_define_names.png)
 
-   You can choose whether to store exclusions (**excludelog**), with messages (**broadlog**) or in a separate table.
+   Du kan välja om du vill lagra undantag (**excludelog**), med meddelanden (**broadlog**) eller i en separat tabell.
 
-   You can also choose whether to manage tracking for this delivery mapping (**trackinglog**).
+   Du kan också välja om du vill hantera spårning för den här leveransmappningen (**trackinglog**).
 
-1. Then select the extensions to be taken into account. The extension type depends on your platform's parameters and options (view your license contract).
+1. Välj sedan de tillägg som ska beaktas. Tilläggstypen beror på plattformens parametrar och alternativ (se licensavtalet).
 
    ![](assets/wf_new_mapping_define_extensions.png)
 
-   Click the **[!UICONTROL Save]** button to launch delivery mapping creation: all linked tables are created automatically based on the selected parameters.
--->
+   Klicka på **[!UICONTROL Save]** knapp för att starta framtagning av leveransmappning: alla länkade tabeller skapas automatiskt baserat på de valda parametrarna.
+
 
 ## Behörigheter{#fda-permissions}
 

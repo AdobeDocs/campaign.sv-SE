@@ -5,7 +5,7 @@ feature: Overview
 role: Data Engineer
 level: Beginner
 exl-id: 2899f627-696d-422c-ae49-c1e293b283af
-source-git-commit: fbec41a722f71ad91260f1571f6a48383e99b782
+source-git-commit: d2f4e54b0c37cc019061dd3a7b7048cd80876ac0
 workflow-type: tm+mt
 source-wordcount: '326'
 ht-degree: 0%
@@ -18,7 +18,7 @@ ht-degree: 0%
 
 ![](../assets/do-not-localize/glass.png) Funktionerna för transaktionsmeddelanden beskrivs i [det här avsnittet](../send/transactional.md).
 
-![](../assets/do-not-localize/glass.png) Förstå arkitekturen för transaktionsmeddelanden i [den här sidan](../architecture/architecture.md).
+![](../assets/do-not-localize/glass.png) Förstå arkitekturen för transaktionsmeddelanden i [den här sidan](../dev/architecture.md).
 
 ## Definiera behörigheter
 
@@ -34,7 +34,7 @@ Alla schematillägg som gjorts för scheman som används av **Tekniska arbetsfl�
 
 I kombination med mobilappskanalmodulen kan du med transaktionsmeddelanden skicka transaktionsmeddelanden via meddelanden på mobila enheter.
 
-![](../assets/do-not-localize/book.png) Mobile appkanal beskrivs i [Campaign Classic v7-dokumentation](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/sending-push-notifications/about-mobile-app-channel.html?lang=en#sending-messages).
+![](../assets/do-not-localize/book.png) Mobilappskanalen finns i [Campaign Classic v7-dokumentation](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/sending-push-notifications/about-mobile-app-channel.html?lang=en#sending-messages).
 
 Om du vill skicka push-meddelanden för transaktioner måste du utföra följande konfigurationer:
 
@@ -44,7 +44,7 @@ Om du vill skicka push-meddelanden för transaktioner måste du utföra följand
    >
    >Kontrollera licensavtalet innan du installerar ett nytt inbyggt Campaign-paket.
 
-1. Replikera **Mobile** och tillhörande mobilprogram på körningsinstanserna.
+1. Replikera **Mobilapplikation** och tillhörande mobilprogram på körningsinstanserna.
 
 För att Campaign ska kunna skicka transaktionspush-meddelanden måste händelsen innehålla följande element:
 

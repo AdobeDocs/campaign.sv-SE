@@ -5,10 +5,10 @@ feature: Overview
 role: Data Engineer
 level: Beginner
 exl-id: 50e21acd-d23d-4fdd-a8aa-23c3f209bda3
-source-git-commit: fbec41a722f71ad91260f1571f6a48383e99b782
+source-git-commit: d2f4e54b0c37cc019061dd3a7b7048cd80876ac0
 workflow-type: tm+mt
-source-wordcount: '235'
-ht-degree: 7%
+source-wordcount: '330'
+ht-degree: 6%
 
 ---
 
@@ -43,6 +43,17 @@ För att kunna använda API:er och interagera med [!DNL Adobe Campaign]måste du
 >[!NOTE]
 >Du kan generera en fullständig beskrivning av din datamodell. Läs mer i [den här sidan](datamodel.md).
 
+## [!DNL Campaign] API-mellanlagringsmekanism
+
+Med [!DNL Campaign] Molndatabas rekommenderas inte snabba enhetsanrop på grund av prestanda (fördröjning och samtidighet). Gruppåtgärd är alltid att föredra. För att garantera optimala prestanda för API:er fortsätter Campaign att hantera API-anrop på lokal databasnivå.
+
+![](../assets/do-not-localize/glass.png) [API-mellanlagringsmekanismen beskrivs på den här sidan](staging.md)
+
+## Nya API:er
+
+Det finns nya API:er för att hantera datasynkronisering mellan [!DNL Campaign] lokal databas och molndatabas. En ny mekanism har också introducerats för att hantera API-anrop på lokal databasnivå för att undvika fördröjning och öka den övergripande prestandan.
+
+![](../assets/do-not-localize/glass.png) [Nya API:er finns på den här sidan](new-apis.md)
 
 **Relaterade ämnen**
 

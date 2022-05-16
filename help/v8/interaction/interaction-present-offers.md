@@ -3,7 +3,7 @@ product: campaign
 title: Presentera ett erbjudande (inkommande interaktion)
 description: Lär dig presentera det bästa erbjudandet med Campaign Interaction-modulen
 exl-id: d0137fa7-3d04-4205-b49c-46973e45a5b8
-source-git-commit: c19ac91fe7b4b825f75ec096320efabc3e78328c
+source-git-commit: d2f4e54b0c37cc019061dd3a7b7048cd80876ac0
 workflow-type: tm+mt
 source-wordcount: '200'
 ht-degree: 4%

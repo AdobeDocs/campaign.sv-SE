@@ -5,9 +5,9 @@ feature: Overview
 role: Data Engineer
 level: Beginner
 exl-id: 200b60f1-04ae-4c3e-892f-3dd2bd22b896
-source-git-commit: fbec41a722f71ad91260f1571f6a48383e99b782
+source-git-commit: d2f4e54b0c37cc019061dd3a7b7048cd80876ac0
 workflow-type: tm+mt
-source-wordcount: '655'
+source-wordcount: '647'
 ht-degree: 4%
 
 ---
@@ -66,9 +66,9 @@ Du kan också använda en annan mottagartabell för att bättre passa ditt före
 
 ## Kampanjtabeller och molndatabas
 
-För att få en bättre förståelse för tabellhantering i Campaign v8 bör du tänka på att i ett sammanhang där [Företagsdistribution (FFDA)](../architecture/enterprise-deployment.md), replikeras tabeller mellan Campaign och dess Snowflake Cloud-databas.
+Om du vill ha en bättre förståelse för tabellhantering i Campaign v8 kan du observera att tabeller replikeras mellan Campaign och dess Snowflake Cloud-databas.
 
-![](../assets/do-not-localize/glass.png) Läs mer om replikeringsstrategi och -mekanismer i [det här avsnittet](../architecture/replication.md).
+![](../assets/do-not-localize/glass.png) Läs mer om replikeringsstrategi och -mekanismer i [det här avsnittet](../config/replication.md).
 
 **Relaterade ämnen**
 

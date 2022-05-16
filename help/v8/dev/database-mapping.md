@@ -2,9 +2,9 @@
 title: Mappning av kampanjdatabas
 description: Mappning av kampanjdatabas
 exl-id: a804d164-58bf-4b15-a48e-8cf75d793668
-source-git-commit: fbec41a722f71ad91260f1571f6a48383e99b782
+source-git-commit: d2f4e54b0c37cc019061dd3a7b7048cd80876ac0
 workflow-type: tm+mt
-source-wordcount: '1485'
+source-wordcount: '1463'
 ht-degree: 0%
 
 ---
@@ -196,9 +196,9 @@ Tangenter följer följande regler:
    </schema>
    ```
 
-### Primär nyckel - identifierare{#primary-key}
+### Primär nyckel - identifierare
 
-När det gäller [Företagsdistribution (FFDA)](../architecture/enterprise-deployment.md)är huvudnyckeln i Adobe Campaign tabeller en **Universally Unique ID (UUID)** autogenereras av databasmotorn. Nyckelvärdet är unikt i hela databasen. Innehållet i nyckeln genereras automatiskt när posten infogas.
+Huvudnyckeln i Adobe Campaign tabeller är en **Universally Unique ID (UUID)** autogenereras av databasmotorn. Nyckelvärdet är unikt i hela databasen. Innehållet i nyckeln genereras automatiskt när posten infogas.
 
 **Exempel**
 
@@ -353,8 +353,6 @@ En omvänd länk till tabellen&quot;cus:mottagare&quot; lades till med följande
 * **target**: nyckel för länkat schema (&quot;cus:mottagare&quot;-schema)
 * **obunden**: länken deklareras som ett samlingselement för en 1-N-kardinalitet (som standard)
 * **integritet**: &quot;define&quot; som standard (kan framtvingas med attributet &quot;revIntegrity&quot; i länkdefinitionen i källschemat).
-
-Observera att `autouuid="true"`parametern tillämpas i kontexten för en [Företagsdistribution (FFDA)](../architecture/enterprise-deployment.md) endast.
 
 ### Exempel 2 {#example-2}
 

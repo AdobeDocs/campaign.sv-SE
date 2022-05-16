@@ -5,7 +5,7 @@ feature: Audiences, Profiles, Application Settings
 role: Data Engineer
 level: Beginner
 exl-id: 762dcacc-4aeb-4990-af01-7f793bd69170
-source-git-commit: 67d08660431f02d2a18f39b3270cc7c7b62ed40e
+source-git-commit: d2f4e54b0c37cc019061dd3a7b7048cd80876ac0
 workflow-type: tm+mt
 source-wordcount: '873'
 ht-degree: 0%

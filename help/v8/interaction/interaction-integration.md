@@ -3,7 +3,7 @@ product: campaign
 title: Lägg till ett erbjudande på en webbsida
 description: Lär dig hur du lägger till ett erbjudande på en webbsida
 exl-id: 1eb0775a-5da9-4a27-aa7b-339372748f9c
-source-git-commit: 213a10fea36b3b08c1dd8525084d212e191b2fc7
+source-git-commit: d2f4e54b0c37cc019061dd3a7b7048cd80876ac0
 workflow-type: tm+mt
 source-wordcount: '1455'
 ht-degree: 0%

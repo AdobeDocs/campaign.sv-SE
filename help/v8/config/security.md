@@ -2,7 +2,7 @@
 title: Bästa praxis för kampanjsäkerhet
 description: Kom igång med de effektivaste strategierna för kampanjsäkerhet
 exl-id: 1d593c8e-4b32-4902-93a7-7b18cef27cac
-source-git-commit: 63b53fb6a7c6ecbfc981c93a723b6758b5736acf
+source-git-commit: d2f4e54b0c37cc019061dd3a7b7048cd80876ac0
 workflow-type: tm+mt
 source-wordcount: '503'
 ht-degree: 0%
