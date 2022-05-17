@@ -4,7 +4,8 @@ description: Lär dig hur du arbetar med Campaign och Microsoft Dynamics
 feature: Overview
 role: Data Engineer
 level: Beginner
-source-git-commit: d2f4e54b0c37cc019061dd3a7b7048cd80876ac0
+exl-id: 4f9e8f74-27dc-482c-a83c-25623b53560f
+source-git-commit: e55a60ae1628e534e32e86d347457b6c208db75b
 workflow-type: tm+mt
 source-wordcount: '1365'
 ht-degree: 1%

@@ -14,12 +14,12 @@ ht-degree: 0%
 
 # Skapa och skicka push-meddelanden
 
-Med mobilappsleveranser kan du skicka meddelanden till iOS- och Android-system.
+Med Mobile programleveranser kan du skicka meddelanden till iOS och Android-system.
 
 Om du vill skicka push-meddelanden i Adobe Campaign måste du:
 
 1. Konfigurera kampanjmiljön
-1. Skapa en informationstjänst av mobiltyp för ditt mobilprogram.
+1. Skapa en Mobile-informationstjänst av programtyp för ditt mobilprogram.
 1. Lägg till iOS- och Android-versionerna av programmet i den här tjänsten.
 1. Skapa en leverans för både iOS och Android.
 
