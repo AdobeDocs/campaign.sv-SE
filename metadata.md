@@ -6,7 +6,7 @@ product: adobe campaign
 feature-set: Campaign
 type: Documentation
 mini-toc-levels: 2
-git-repo: https://git.corp.adobe.com/AdobeDocs/campaign.sv-SE
+git-repo: https://github.com/AdobeDocs/campaign.sv-SE
 index: true
 source-git-commit: f071fc227dac6d72873744ba56eb0b4b676de5dd
 workflow-type: tm+mt
