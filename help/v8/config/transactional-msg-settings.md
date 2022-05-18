@@ -5,7 +5,7 @@ feature: Overview
 role: Data Engineer
 level: Beginner
 exl-id: 2899f627-696d-422c-ae49-c1e293b283af
-source-git-commit: d2f4e54b0c37cc019061dd3a7b7048cd80876ac0
+source-git-commit: 6de5c93453ffa7761cf185dcbb9f1210abd26a0c
 workflow-type: tm+mt
 source-wordcount: '326'
 ht-degree: 0%
@@ -18,7 +18,7 @@ ht-degree: 0%
 
 ![](../assets/do-not-localize/glass.png) Funktionerna för transaktionsmeddelanden beskrivs i [det här avsnittet](../send/transactional.md).
 
-![](../assets/do-not-localize/glass.png) Förstå arkitekturen för transaktionsmeddelanden i [den här sidan](../dev/architecture.md).
+![](../assets/do-not-localize/glass.png) Förstå arkitekturen för transaktionsmeddelanden i [den här sidan](../architecture/architecture.md).
 
 ## Definiera behörigheter
 
@@ -32,7 +32,7 @@ Alla schematillägg som gjorts för scheman som används av **Tekniska arbetsfl�
 
 ## Skicka push-meddelanden för transaktioner
 
-I kombination med mobilappskanalmodulen kan du med transaktionsmeddelanden skicka transaktionsmeddelanden via meddelanden på mobila enheter.
+När de kombineras med Mobile app channel-modul kan du med transaktionsmeddelanden skicka transaktionsmeddelanden via meddelanden på mobila enheter.
 
 ![](../assets/do-not-localize/book.png) Mobilappskanalen finns i [Campaign Classic v7-dokumentation](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/sending-push-notifications/about-mobile-app-channel.html?lang=en#sending-messages).
 

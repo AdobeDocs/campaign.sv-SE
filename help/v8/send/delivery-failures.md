@@ -5,16 +5,18 @@ feature: Audiences, Profiles
 role: Data Engineer
 level: Beginner
 exl-id: 9c83ebeb-e923-4d09-9d95-0e86e0b80dcc
-source-git-commit: d2f4e54b0c37cc019061dd3a7b7048cd80876ac0
+source-git-commit: 6de5c93453ffa7761cf185dcbb9f1210abd26a0c
 workflow-type: tm+mt
-source-wordcount: '3106'
+source-wordcount: '2849'
 ht-degree: 5%
 
 ---
 
-# Förstå leveransfel{#delivery-failures}
+# Förstå leveransfel {#delivery-failures}
 
-Satser är resultatet av ett leveransförsök och fel där Internet-leverantören tillhandahåller meddelanden om misslyckanden. Hantering av studsar är en viktig del av listhygienen. När ett visst e-postmeddelande har studsat flera gånger i rad flaggas det för undertryckning i den här processen. Den här processen förhindrar att system fortsätter att skicka ogiltiga e-postadresser. Satser är en av de viktigaste data som internetleverantörer använder för att fastställa IP-anseendet. Det är viktigt att hålla ett öga på denna mätmetod. &quot;Levererat&quot; jämfört med &quot;studsat&quot; är förmodligen det vanligaste sättet att mäta leveransen av marknadsföringsmeddelanden: Ju högre procenttal som levereras, desto bättre.
+Satser är resultatet av ett leveransförsök och fel där Internet-leverantören tillhandahåller meddelanden om misslyckanden. Hantering av studsar är en viktig del av listhygienen. När ett visst e-postmeddelande har studsat flera gånger i rad flaggas det för undertryckning i den här processen.
+
+Den här processen förhindrar att system fortsätter att skicka ogiltiga e-postadresser. Satser är en av de viktigaste data som internetleverantörer använder för att fastställa IP-anseendet. Det är viktigt att hålla ett öga på denna mätmetod. &quot;Levererat&quot; jämfört med &quot;studsat&quot; är förmodligen det vanligaste sättet att mäta leveransen av marknadsföringsmeddelanden: Ju högre procenttal som levereras, desto bättre.
 
 Om ett meddelande inte kan skickas till en profil skickar fjärrservern automatiskt ett felmeddelande till Adobe Campaign. Det här felet är kvalificerat för att avgöra om e-postadressen, telefonnumret eller enheten ska sättas i karantän. Se [E-posthantering](#bounce-mail-qualification).
 
@@ -24,66 +26,21 @@ När en e-postadress sätts i karantän, eller om en profil finns på blockering
 
 ## Varför misslyckades meddelandeleveransen {#delivery-failure-reasons}
 
-Det finns två typer av fel när ett meddelande misslyckas. Varje feltyp avgör om en adress skickas till [karantän](quarantines.md#quarantine-reason) eller inte.
-
+Det finns två typer av fel när ett meddelande misslyckas. Varje typ av leveransfel avgör om en adress skickas till [karantän](quarantines.md#quarantine-reason) eller inte.
 
 * **Hårda studsar**
-Hårda studsar är permanenta fel som genereras efter att en Internet-leverantör har fastställt att ett postförsök till en prenumerantadress inte kan levereras. Inom Adobe Campaign läggs hårda studsar som kategoriseras som olevererbara till i karantänen, vilket betyder att de inte kommer att försökas igen. Det finns vissa fall där ett hårt studsande skulle ignoreras om orsaken till felet är okänd.
+Hårda studsar är permanenta fel som genereras efter att en Internet-leverantör har fastställt att ett postförsök till en prenumerantadress inte kan levereras. Inom Adobe Campaign läggs hårda gränser som kategoriseras som olevererbara till i karantänlistan, vilket innebär att de inte kommer att försökas igen. Det finns vissa fall där ett hårt studsande skulle ignoreras om orsaken till felet är okänd.
 
    Här är några vanliga exempel på hårda studsar: Adressen finns inte, kontot är inaktiverat, Felaktig syntax, Felaktig domän
 
-
 * **Mjuka studsar**
-Mjuka studsar är tillfälliga fel som internetleverantörer genererar när de har svårt att leverera e-post. Mjuka fel kommer att upprepas flera gånger (med olika variationer beroende på hur anpassade leveransinställningar eller leveransinställningar som är klara att användas) för att försöka leverera korrekt. Adresser som kontinuerligt mjuka studsar kommer inte att läggas till i karantän förrän det maximala antalet försök har gjorts (som återigen varierar beroende på inställningarna).
+Mjuka studsar är tillfälliga fel som internetleverantörer genererar när de har svårt att leverera e-post. Mjuka fel [försök igen](#retries) flera gånger (med olika variationer beroende på hur anpassade leveransinställningar eller leveransinställningar som är klara) för att försöka leverera korrekt. Adresser som kontinuerligt mjuka studsar kommer inte att läggas till i karantän förrän det maximala antalet försök har gjorts (som återigen varierar beroende på inställningarna).
 
    Några vanliga orsaker till mjuka studsar är: Postlådan är full, e-postservern tas emot, avsändaren får anseende
 
-
 The  **Ignorerad** typen av fel är temporär, t.ex.&quot;Frånvarande&quot;, eller ett tekniskt fel, t.ex. om avsändartypen är&quot;postmaster&quot;.
 
-
-
-### Kvalifikation av studsmeddelanden {#bounce-mail-qualification}
-
-Regler som används av Campaign för att kvalificera leveransfel finns i **[!UICONTROL Administration > Campaign Management > Non deliverables Management > Delivery log qualification]** nod. Den är inte uttömmande och uppdateras regelbundet av Adobe Campaign och kan även hanteras av användaren.
-
-![](assets/delivery-log-qualification.png)
-
-Studentkvalifikationer i **[!UICONTROL Delivery log qualification]** tabellen används inte för **synkron** felmeddelanden vid leveransfel. Momentum bestämmer studstyp och kvalifikationer och skickar tillbaka informationen till Campaign.
-
-**Asynkron** studenterna kvalificeras av inMail-processen via **[!UICONTROL Inbound email]** regler.
-
-Meddelandet som returnerades av fjärrservern vid den första förekomsten av den här feltypen visas i **[!UICONTROL First text]** kolumn i **[!UICONTROL Audit]** -fliken.
-
-![](assets/delivery-log-first-txt.png)
-
-Adobe Campaign filtrerar det här meddelandet för att ta bort variabelinnehållet (t.ex. ID:n, datum, e-postadresser, telefonnummer osv.) och visar det filtrerade resultatet i **[!UICONTROL Text]** kolumn. Variablerna ersätts med **`#xxx#`**, förutom adresser som ersätts med **`*`**.
-
-Med den här processen kan du sammanföra alla fel av samma typ och undvika flera poster för liknande fel i tabellen för leveransloggskvalificering.
-
->[!NOTE]
->
->The **[!UICONTROL Number of occurrences]** visas antalet förekomster av meddelandet i listan. Den är begränsad till 100 000 förekomster. Du kan redigera fältet om du till exempel vill återställa det.
-
-Studsade e-postmeddelanden kan ha följande kvalificeringsstatus:
-
-* **[!UICONTROL To qualify]** : studsposten inte kunde kvalificeras. Kvalificering måste tilldelas slutkundsteamet för att garantera effektiv plattformsleverans. Så länge den inte är kvalificerad används studsmeddelandet inte för att utöka listan över regler för e-posthantering.
-* **[!UICONTROL Keep]** : studsmeddelandet är kvalificerat och kommer att användas av **Uppdatera för leverans** arbetsflöde som ska jämföras med befintliga regler för e-posthantering och berika listan.
-* **[!UICONTROL Ignore]** : studsmeddelandet ignoreras, vilket innebär att den här studsen aldrig kommer att leda till att mottagarens adress sätts i karantän. Den används inte av **Uppdatera för leverans** arbetsflödet och det skickas inte till klientinstanser.
-
-![](assets/delivery-log-status.png)
-
-
->[!NOTE]
->
->Om en Internet-leverantör skulle råka ut för ett avbrott markeras e-post som skickas via Campaign felaktigt som studsar. För att korrigera detta måste du uppdatera studskompetens.
-
-
-## Återförsökshantering {#retries}
-
-Om meddelandeleveransen misslyckas efter ett tillfälligt fel (**Mjuk** eller **Ignorerad**), försöker CA Campaign skicka igen. Dessa återförsök kan utföras till slutet av leveransens varaktighet. Antalet och frekvensen för återförsök anges av Momentum, baserat på typ och allvarlighetsgrad för de studssvar som kommer tillbaka från meddelandets Internet-leverantör.
-
-Standardkonfigurationen definierar fem försök med en timmes intervall, följt av ett nytt försök per dag i fyra dagar. Antalet försök kan ändras globalt eller för varje leverans- eller leveransmall. Om du behöver anpassa leveransens varaktighet och göra nya försök kontaktar du Adobe Support.
+Feedback-slingan fungerar som studsmeddelanden: När en användare kvalificerar ett e-postmeddelande som skräppost kan du konfigurera e-postregler i Adobe Campaign så att alla leveranser till den här användaren blockeras. Adresserna till dessa användare är blocklist trots att de inte klickade på länken för att ta bort prenumerationen. Adresser läggs till i (**NmsAddress**) karantänregister och inte till (**NmsRecipient**) mottagartabell med **[!UICONTROL Denylisted]** status. Läs mer om feedbackloopmekanismen i [Guide för bästa praxis för Adobe-leverans](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/transition-process/infrastructure.html#feedback-loops).
 
 ## Synkrona och asynkrona fel {#synchronous-and-asynchronous-errors}
 
@@ -91,17 +48,58 @@ En meddelandeleverans kan misslyckas omedelbart, i så fall kvalificerar vi det 
 
 Följande typer av fel hanteras:
 
-* **Synkront fel**: Om fjärrservern som kontaktas av Adobe Campaign-leveransservern omedelbart returnerar ett felmeddelande, får leveransen inte skickas till profilens server. Adobe Campaign kvalificerar varje fel för att avgöra om de aktuella e-postadresserna ska placeras i karantän. Se [Kvalifikation av studsmeddelanden](#bounce-mail-qualification).
+* **Synkront fel**: fjärrservern som kontaktas av Adobe Campaign leveransserver returnerar omedelbart ett felmeddelande. Leveransen får inte skickas till profilens server. Den förbättrade MTA-metoden avgör studstypen och kvalificerar felet, och skickar tillbaka informationen till Campaign för att avgöra om e-postadresserna i fråga ska sättas i karantän. Se [Kvalifikation av studsmeddelanden](#bounce-mail-qualification).
 
 * **Asynkront fel**: ett studsmeddelande eller en SR skickas senare av den mottagande servern. Det här felet är kvalificerat med en etikett som är relaterad till felet. Asynkrona fel kan uppstå upp till en vecka efter att en leverans har skickats.
 
-   >[!NOTE]
-   >
-   >Som Managed Services-användare konfigureras studspostlådan av Adobe.
+>[!NOTE]
+>
+>Som Managed Services-användare konfigureras studspostlådan av Adobe.
 
-   Feedback-slingan fungerar som studsmeddelanden: När en användare kvalificerar ett e-postmeddelande som skräppost kan du konfigurera e-postregler i Adobe Campaign så att alla leveranser till den här användaren blockeras. Dessa användares adresser är till blockeringslista, även om de inte klickade på länken för att ta bort prenumerationen. Adresserna finns i blockeringslista i (**NmsAddress**) karantänregister och inte i (**NmsRecipient**) mottagartabell. Läs mer om feedbackloopmekanismen i [Guide för bästa praxis för Adobe-leverans](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/transition-process/infrastructure.html#feedback-loops).
+## Kvalifikation av studsmeddelanden {#bounce-mail-qualification}
+
+<!--NO LONGER WITH MOMENTUM - Rules used by Campaign to qualify delivery failures are listed in the **[!UICONTROL Administration > Campaign Management > Non deliverables Management > Delivery log qualification]** node. It is non-exhaustive, and is regularly updated by Adobe Campaign and can also be managed by the user.
+
+![](assets/delivery-log-qualification.png)-->
+
+Hur studseffekter hanteras i Adobe Campaign beror för närvarande på feltypen:
+
+* **Synkrona fel**: Den förbättrade MTA-metoden avgör studstyp och kvalifikationer och skickar tillbaka informationen till Campaign. Studentkvalifikationer i **[!UICONTROL Delivery log qualification]** tabellen används inte för **synkron** felmeddelanden vid leveransfel.
+
+* **Asynkrona fel**: Regler som används av Campaign för att kvalificera asynkrona leveransfel visas i **[!UICONTROL Administration > Campaign Management > Non deliverables Management > Delivery log qualification]** nod. Asynkrona studsar kvalificeras av inMail-processen via **[!UICONTROL Inbound email]** regler. Mer information finns i [Adobe Campaign Classic v7-dokumentation](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/monitoring-deliveries/understanding-delivery-failures.html#bounce-mail-qualification){target=&quot;_blank&quot;}.
+
+<!--NO LONGER WITH MOMENTUM - The message returned by the remote server on the first occurrence of this error type is displayed in the **[!UICONTROL First text]** column of the **[!UICONTROL Audit]** tab.
+
+![](assets/delivery-log-first-txt.png)
+
+Adobe Campaign filters this message to delete the variable content (such as IDs, dates, email addresses, phone numbers, etc.) and displays the filtered result in the **[!UICONTROL Text]** column. The variables are replaced with **`#xxx#`**, except addresses that are replaced with **`*`**.
+
+This process allows to bring together all failures of the same type and avoid multiple entries for similar errors in the Delivery log qualification table.
+  
+>[!NOTE]
+>
+>The **[!UICONTROL Number of occurrences]** field displays the number of occurrences of the message in the list. It is limited to 100 000 occurrences. You can edit the field, if you want, for example, to reset it.
+
+Bounce mails can have the following qualification status:
+
+* **[!UICONTROL To qualify]** : the bounce mail could not be qualified. Qualification must be assigned to the Deliverability team to guarantee efficient platform deliverability. As long as it is not qualified, the bounce mail is not used to enrich the list of email management rules.
+* **[!UICONTROL Keep]** : the bounce mail was qualified and will be used by the **Refresh for deliverability** workflow to be compared to existing email management rules and enrich the list.
+* **[!UICONTROL Ignore]** : the bounce mail is ignored, meaning that this bounce will never cause the recipient's address to be quarantined. It will not be used by the **Refresh for deliverability** workflow and it will not be sent to client instances.
+
+![](assets/delivery-log-status.png)
+
+>[!NOTE]
+>
+>In case of an outage of an ISP, emails sent through Campaign will be wrongly marked as bounces. To correct this, you need to update bounce qualification.-->
 
 
+## Återförsökshantering {#retries}
+
+Om meddelandeleveransen misslyckas efter ett tillfälligt fel (**Mjuk** eller **Ignorerad**) skickas kampanjåterförsök. Dessa återförsök kan utföras till slutet av leveransens varaktighet.
+
+Antalet och frekvensen för återförsök anges av den förbättrade MTA, baserat på typ och allvarlighetsgrad för de studssvar som kommer tillbaka från meddelandets Internet-leverantör.
+
+<!--NO LONGER WITH MOMENTUM - The default configuration defines five retries at one-hour intervals, followed by one retry per day for four days. The number of retries can be changed globally or for each delivery or delivery template. If you need to adapt delivery duration and retries, contact Adobe Support.-->
 
 ## E-postfeltyper {#email-error-types}
 

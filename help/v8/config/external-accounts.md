@@ -5,10 +5,10 @@ feature: Overview
 role: Data Engineer
 level: Beginner
 exl-id: 9634b576-2854-4ea9-ba0d-8efaab2c4aee
-source-git-commit: d2f4e54b0c37cc019061dd3a7b7048cd80876ac0
+source-git-commit: 6de5c93453ffa7761cf185dcbb9f1210abd26a0c
 workflow-type: tm+mt
-source-wordcount: '1000'
-ht-degree: 4%
+source-wordcount: '1086'
+ht-degree: 5%
 
 ---
 
@@ -25,10 +25,8 @@ Du kan få åtkomst till externa konton från Adobe Campaign **[!UICONTROL Explo
 
 >[!CAUTION]
 >
->En specifik **[!UICONTROL Full FDA]** (ffda) externt konto hanterar anslutningen mellan den lokala databasen i Campaign och molndatabasen ([!DNL Snowflake]).
->
->Som användare av hanterade Cloud Services konfigureras det här externa kontot för din instans av Adobe. Den får inte ändras.
-
+>När det gäller [Företagsdistribution (FFDA)](../architecture/enterprise-deployment.md), en specifik **[!UICONTROL Full FDA]** (ffda) externt konto hanterar anslutningen mellan den lokala databasen i Campaign och molndatabasen ([!DNL Snowflake]).
+></br>Som användare av hanterade Cloud Services konfigureras det här externa kontot för din instans av Adobe. Den får inte ändras.
 
 ## Kampanjspecifika externa konton
 
@@ -36,25 +34,84 @@ Följande tekniska konton används av Adobe Campaign för att aktivera och köra
 
 ![](../assets/do-not-localize/speech.png)  Som användare av hanterade Cloud Services konfigurerar Adobe alla kampanjspecifika externa konton åt dig.
 
-* **Studsa e-post (POP3)**
+### Studsmeddelanden {#bounce-mails-external-account}
 
-   The **Studsa meddelanden** externt konto anger det externa POP3-konto som ska användas för att ansluta till e-posttjänsten. Alla servrar som konfigurerats för POP3-åtkomst kan användas för att ta emot returmeddelanden.
+>[!NOTE]
+>
+>Microsoft Exchange Online OAuth 2.0-autentisering för POP3-kapacitet är tillgänglig från och med Campaign v8.3. Om du vill kontrollera din version kan du läsa [det här avsnittet](../start/compatibility-matrix.md#how-to-check-your-campaign-version-and-buildversion)
 
-   ![](../assets/do-not-localize/book.png) Läs mer om inkommande e-post i [Campaign Classic v7-dokumentation](https://experienceleague.adobe.com/docs/campaign-classic/using/automating-with-workflows/event-activities/inbound-emails.html){target=&quot;_blank&quot;}
+The **Studsa meddelanden** externt konto anger det externa POP3-konto som ska användas för att ansluta till e-posttjänsten. Alla servrar som konfigurerats för POP3-åtkomst kan användas för att ta emot returmeddelanden.
 
-* **Dirigering**
+![](../assets/do-not-localize/book.png) Läs mer om inkommande e-post i [Campaign Classic v7-dokumentation](https://experienceleague.adobe.com/docs/campaign-classic/using/automating-with-workflows/event-activities/inbound-emails.html){target=&quot;_blank&quot;}
 
-   The **[!UICONTROL Routing]** Med ett externt konto kan du konfigurera varje kanal som är tillgänglig i Adobe Campaign beroende på vilka paket som är installerade.
+![](assets/bounce_external_1.png)
 
-   >[!CAUTION]
-   >
-   >The **[!UICONTROL Internal email delivery routing]** (defaultEmailBulk) externt konto **får inte** aktiveras i Adobe Campaign v8.
+Så här konfigurerar du **[!UICONTROL Bounce mails (defaultPopAccount)]** externt konto:
 
-* **Körningsinstans**
+* **[!UICONTROL Server]**
 
-   När det gäller transaktionsmeddelanden är körningsinstanserna länkade till kontrollinstansen och kopplar dem. Transaktionsmeddelandemallar distribueras till körningsinstansen.
+   URL för POP3-servern.
 
-   ![](../assets/do-not-localize/glass.png) Läs mer om arkitekturen i Message Center i [den här sidan](../dev/architecture.md#transac-msg-archi).
+* **[!UICONTROL Port]**
+
+   Portnummer för POP3-anslutning. Standardporten är 110.
+
+* **[!UICONTROL Account]**
+
+   Användarens namn.
+
+* **[!UICONTROL Password]**
+
+   Lösenord för användarkonto.
+
+* **[!UICONTROL Encryption]**
+
+   Typ av vald kryptering mellan **[!UICONTROL By default]**, **[!UICONTROL POP3 + STARTTLS]**, **[!UICONTROL POP3]** eller **[!UICONTROL POP3S]**.
+The **Studsa meddelanden** externt konto anger det externa POP3-konto som ska användas för att ansluta till e-posttjänsten. Alla servrar som konfigurerats för POP3-åtkomst kan användas för att ta emot returmeddelanden.
+
+* **[!UICONTROL Function]**
+
+   Inkommande e-post eller SOAP-router
+
+![](assets/bounce_external_2.png)
+
+>[!IMPORTANT]
+>
+>Innan du konfigurerar ditt POP3-externa konto med Microsoft OAuth 2.0 måste du först registrera programmet i Azure-portalen. Se denna [sida](https://docs.microsoft.com/en-us/azure/active-directory/develop/quickstart-register-app) för mer information om detta.
+
+Om du vill konfigurera en POP3-extern med Microsoft OAuth 2.0 ska du kontrollera **[!UICONTROL Microsoft OAuth 2.0]** och fylla i följande fält:
+
+* **[!UICONTROL Azure tenant]**
+
+   Azure ID (eller katalog (klientorganisations-ID) finns i **Grundläggande** listruta med programöversikt i Azure-portalen.
+
+* **[!UICONTROL Azure Client ID]**
+
+   Klient-ID (eller program-ID (klient)) finns i **Grundläggande** listruta med programöversikt i Azure-portalen.
+
+* **[!UICONTROL Azure Client secret]**:
+
+   Klienthemligt ID finns i **Klienthemligheter** kolumn från **Certifikat och hemligheter** menyn för ditt program i Azure-portalen.
+
+* **[!UICONTROL Azure Redirect URL]**:
+
+   Omdirigerings-URL:en finns i **Autentisering** menyn för ditt program i Azure-portalen. Det ska sluta med följande syntax `nl/jsp/oauth.jsp`, t.ex. `https://redirect.adobe.net/nl/jsp/oauth.jsp`.
+
+När du har angett de olika inloggningsuppgifterna kan du klicka på **[!UICONTROL Setup the connection]** för att slutföra konfigurationen av ditt externa konto.
+
+### Dirigering {#routing}
+
+The **[!UICONTROL Routing]** Med ett externt konto kan du konfigurera varje kanal som är tillgänglig i Adobe Campaign beroende på vilka paket som är installerade.
+
+>[!CAUTION]
+>
+>The **[!UICONTROL Internal email delivery routing]** (defaultEmailBulk) externt konto **får inte** aktiveras i Adobe Campaign v8.
+
+### Körningsinstans {#execution-instance}
+
+När det gäller transaktionsmeddelanden är körningsinstanserna länkade till kontrollinstansen och kopplar dem. Transaktionsmeddelandemallar distribueras till körningsinstansen.
+
+![](../assets/do-not-localize/glass.png) Läs mer om arkitekturen i Message Center i [den här sidan](../architecture/architecture.md#transac-msg-archi).
 
 ## Tillgång till externa systemkonton
 
@@ -96,47 +153,13 @@ Följande tekniska konton används av Adobe Campaign för att aktivera och köra
 
    The **[!UICONTROL Microsoft Dynamics CRM]** Med ett externt konto kan du importera och exportera Microsoft Dynamics-data till Adobe Campaign.
 
-   ![](../assets/do-not-localize/glass.png) Läs mer om Adobe Campaign - Microsoft Dynamics CRM-integrering i [den här sidan](../connect/crm.md).
-
-   Med **[!UICONTROL Web API]** distributionstyp och **[!UICONTROL Password credentials]** autentisering måste du ange följande information:
-
-   * **[!UICONTROL Account]**: Det konto som används för att logga in på Microsoft CRM.
-
-   * **[!UICONTROL Server]**: URL till din Microsoft CRM-server.
-
-   * **[!UICONTROL Client identifier]**: Klient-ID som kan hittas från Microsoft Azure-hanteringsportalen i **[!UICONTROL Update your code]** kategori, **[!UICONTROL Client ID]** fält.
-
-   * **[!UICONTROL CRM version]**: CRM-version mellan **[!UICONTROL Dynamics CRM 2007]**, **[!UICONTROL Dynamics CRM 2015]** eller **[!UICONTROL Dynamics CRM 2016]**.
-   Med **[!UICONTROL Web API]** distributionstyp och **[!UICONTROL Certificate]** autentisering måste du ange följande information:
-
-   * **[!UICONTROL Server]**: URL till din Microsoft CRM-server.
-
-   * **[!UICONTROL Private Key (Base64 encoded)]**: Privat nyckel kodad till Base64
-
-   * **[!UICONTROL Custom Key identifier]**
-
-   * **[!UICONTROL Key ID]**
-
-   * **[!UICONTROL Client identifier]**: Klient-ID som kan hittas från Microsoft Azure-hanteringsportalen i **[!UICONTROL Update your code]** kategori, **[!UICONTROL Client ID]** fält.
-
-   * **[!UICONTROL CRM version]**: CRM-version mellan **[!UICONTROL Dynamics CRM 2007]**, **[!UICONTROL Dynamics CRM 2015]** eller **[!UICONTROL Dynamics CRM 2016]**.
-
+   ![](../assets/do-not-localize/glass.png) Läs mer om Adobe Campaign - Microsoft Dynamics CRM-integrering i [den här sidan](../connect/ac-ms-dyn.md).
 
 * **Salesforce.com**
 
    The **[!UICONTROL Salesforce CRM]** Med ett externt konto kan du importera och exportera Salesforce-data till Adobe Campaign.
 
-   Om du vill konfigurera det externa Salesforce CRM-kontot så att det fungerar med Adobe Campaign måste du ange följande information:
-
-   * **[!UICONTROL Account]**: Det konto som används för att logga in i Salesforce CRM.
-
-   * **[!UICONTROL Password]**: Lösenord som används för att logga in i Salesforce CRM.
-
-   * **[!UICONTROL Client identifier]**: Lär dig hur du hittar din klientidentifierare i [den här sidan](https://help.salesforce.com/articleView?id=000205876&amp;type=1).
-
-   * **[!UICONTROL Security token]**: Lär dig hur du hittar din säkerhetstoken i [den här sidan](https://help.salesforce.com/articleView?id=000205876&amp;type=1).
-
-   * **[!UICONTROL API version]**: Välj version av API:t. För det här externa kontot måste du konfigurera Salesforce CRM med konfigurationsguiden.
+   ![](../assets/do-not-localize/glass.png) Läs mer om Adobe Campaign - Salesforce.com CRM-integrering i [den här sidan](../connect/ac-sfdc.md).
 
 ## Externa konton för överföringsdata
 

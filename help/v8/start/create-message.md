@@ -5,7 +5,7 @@ feature: Overview
 role: Data Engineer
 level: Beginner
 exl-id: 6cf8a929-637e-4e51-9160-5980ca727efb
-source-git-commit: d2f4e54b0c37cc019061dd3a7b7048cd80876ac0
+source-git-commit: 6de5c93453ffa7761cf185dcbb9f1210abd26a0c
 workflow-type: tm+mt
 source-wordcount: '643'
 ht-degree: 2%
@@ -34,7 +34,7 @@ Adobe Campaign v8 har följande leveranskanaler:
 * **LINE channel**: LINE deliveries let you send messages on LINE, an instant messaging application available on all smartphones. Learn more in [this page](../send/line.md)
 -->
 
-## Välj hur du vill skicka meddelanden
+## Välj hur du vill skicka meddelanden{#gs-send-msg}
 
 När meddelandet har skapats och dess innehåll har utformats och testats kan du välja hur du vill skicka det. Campaign erbjuder en uppsättning funktioner för att:
 
@@ -66,7 +66,7 @@ När meddelandet har skapats och dess innehåll har utformats och testats kan du
    ![](../assets/do-not-localize/book.png) [Användningsfall: läs om schemat och skicka födelsedag via e-post](https://experienceleague.adobe.com/docs/campaign-classic/using/automating-with-workflows/use-cases/deliveries/sending-a-birthday-email.html?){target=&quot;_blank&quot;}
 
 
-## Lägg till personalisering
+## Lägg till personalisering{#personalization}
 
 Meddelanden från Adobe Campaign kan personaliseras på olika sätt.
 
@@ -79,17 +79,17 @@ Du kan:
 * Skapa villkorsstyrt innehåll.
    ![](../assets/do-not-localize/book.png) Lär dig hur du infogar villkorsstyrt innehåll i [Campaign Classic v7-dokumentation](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/personalizing-deliveries/conditional-content.html){target=&quot;_blank&quot;}
 
-## Skicka transaktionsmeddelanden
+## Skicka transaktionsmeddelanden{#gs-transac-messages}
 
 Transactional messaging (Message Center) är den Campaign-modul som är avsedd för hantering av utlösarmeddelanden.
 
-![](../assets/do-not-localize/glass.png) Läs mer om funktioner för transaktionsmeddelanden i [det här avsnittet](../dev/architecture.md#transac-msg-archi)
+![](../assets/do-not-localize/glass.png) Läs mer om funktioner för transaktionsmeddelanden i [det här avsnittet](../architecture/architecture.md#transac-msg-archi)
 
 ![](../assets/do-not-localize/glass.png) Steg för att konfigurera och skicka transaktionsmeddelanden beskrivs i [den här sidan](../send/transactional.md)
 
 ![](../assets/do-not-localize/book.png) Upptäck den här funktionen i ett heltäckande användningsfall i [Campaign Classic v7-dokumentation](https://experienceleague.adobe.com/docs/campaign-classic/using/transactional-messaging/transactional-email-with-attachments.html){target=&quot;_blank&quot;}
 
-## Loggar för leverans och spårning
+## Loggar för leverans och spårning{#gs-tracking-logs}
 
 Att övervaka era leveranser efter att de har skickats är ett viktigt steg för att se till att era marknadsföringskampanjer är effektiva och når ut till era kunder. Du kan övervaka efter att du har skickat en leverans samt förstå hur leveransfel och karantäner hanteras.
 

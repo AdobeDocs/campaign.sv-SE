@@ -5,41 +5,68 @@ feature: Overview
 role: Data Engineer
 level: Beginner
 exl-id: e4e3fb49-9942-4e2d-a020-557d1ac5dcdc
-source-git-commit: d2f4e54b0c37cc019061dd3a7b7048cd80876ac0
+source-git-commit: 6de5c93453ffa7761cf185dcbb9f1210abd26a0c
 workflow-type: tm+mt
-source-wordcount: '289'
-ht-degree: 1%
+source-wordcount: '451'
+ht-degree: 3%
 
 ---
 
 # Inställningar för e-postkanal för kampanj
 
-## BCC för e-post
+## BCC för e-post {#email-bcc}
+
+<!--
+>[!NOTE]
+>
+>This capability is available starting Campaign v8.3. To check your version, refer to [this section](../start/compatibility-matrix.md#how-to-check-your-campaign-version-and-buildversion)-->
 
 Du kan konfigurera Adobe Campaign att behålla en kopia av e-postmeddelanden som skickas från din plattform.
 
->[!NOTE]
->Funktionen för e-postkopia är valfri. Kontrollera licensavtalet.
+Adobe Campaign hanterar inte själva arkiverade filer. Det gör att du kan skicka de meddelanden du vill till en dedikerad e-postadress för hemlig kopia (BCC), varifrån de kan bearbetas och arkiveras i ett externt system. De e-postfiler som motsvarar skickade e-postmeddelanden kan sedan överföras till en fjärrserver, till exempel en SMTP-e-postserver.
 
-Adobe Campaign hanterar inte själva arkiverade filer. Det gör att du kan skicka meddelanden till en dedikerad adress, varifrån de kan bearbetas och arkiveras i ett externt system.
+>[!CAUTION]
+>
+>Av sekretesskäl måste e-post från innehållsförteckningen behandlas av ett arkiveringssystem som kan lagra säkert personligt identifierbar information (PII).
 
-För att göra detta överförs e-postfiler som motsvarar skickade e-postmeddelanden till en fjärrserver, till exempel en SMTP-e-postserver. Arkiveringsmålet är en e-postadress (osynlig för leveransmottagarna) som du måste ange.
+Arkiveringsmålet är valfri e-postadress som är osynlig för leveransmottagarna.
 
-Observera att:
+![](../assets/do-not-localize/speech.png)  Som användare av hanterade Cloud Services [kontakta Adobe](../start/campaign-faq.md#support){target=&quot;_blank&quot;} för att kommunicera e-postadressen för den kontroll av webbläsarkompatibilitet som ska användas för arkivering.
 
-* Du kan bara använda **en** E-postadress för hemlig kopia.
+När BCC-e-postadressen har definierats måste du aktivera det dedikerade alternativet på leveransnivån.
 
-* Det är bara skickad e-post som räknas, studenterna gör det inte.
-
-![](../assets/do-not-localize/speech.png)  Som användare av hanterade Cloud Services [kontakta Adobe](../start/campaign-faq.md#support) för att aktivera e-postkopia i Campaign. Du måste ange valfri e-postadress till BCC för det Adobe-team som konfigurerar den åt dig.
-
-Kontrollera att funktionen är aktiverad i leveransmallen eller i leveransen via **BCC för e-post** alternativ.
-
-![](assets/email-bcc.png)
+>[!CAUTION]
+>
+>När du skapar en ny leverans- eller leveransmall **[!UICONTROL Email BCC]** är inte aktiverat som standard. Du måste aktivera det manuellt i mallen för e-postleverans eller leverans.
 
 
-**Relaterade ämnen** Campaign Classic v7-dokumentation:
+Följ stegen nedan för att göra detta:
 
+1. Gå till **[!UICONTROL Campaign Management]** > **[!UICONTROL Deliveries]**, eller **[!UICONTROL Resources]** > **[!UICONTROL Templates]** > **[!UICONTROL Delivery templates]**.
+1. Välj leverans eller duplicera den färdiga produkten **[!UICONTROL Email delivery]** väljer du sedan den duplicerade mallen.
+1. Klicka på knappen **[!UICONTROL Properties]**.
+1. Klicka på fliken **[!UICONTROL Delivery]**.  
+1. Markera alternativet **[!UICONTROL Email BCC]**.
+
+   ![](assets/email-bcc.png)
+
+1. Välj **[!UICONTROL Ok]**.
+
+En kopia av alla skickade meddelanden för varje leverans som baseras på den här mallen skickas till den konfigurerade e-postadressen för hemlig kopia.
+
+Observera följande särdrag och rekommendationer:
+
+* Du kan bara använda en e-postadress för hemlig kopia.
+
+* Se till att BCC-adressen har tillräcklig mottagningskapacitet för att arkivera alla e-postmeddelanden som skickas.
+
+* BCC för e-post <!--with Enhanced MTA--> skickar till e-postadressen till BCC innan den skickas till mottagarna, vilket kan leda till att BCC-meddelanden skickas trots att de ursprungliga leveranserna kan ha studsat. Mer information om studsar finns i [Förstå leveransfel](../send/delivery-failures.md).
+
+* Om e-postmeddelanden som skickas till BCC-adressen öppnas och klickas igenom, kommer detta att beaktas i **[!UICONTROL Total opens]** och **[!UICONTROL Clicks]** från sändningsanalysen, vilket kan orsaka några felberäkningar.
+
+<!--Only successfully sent emails are taken in account, bounces are not.-->
+
+**Läs mer i dokumentationen för Campaign Classic v7**
 
 * [Generera spegelsidan](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/sending-emails/sending-an-email/email-parameters.html#generating-mirror-page){target=&quot;_blank&quot;}
 

@@ -3,7 +3,7 @@ product: campaign
 title: Adobe Campaign Interaction best practices
 description: Metodtips för att hantera interaktionsmodulen i Adobe Campaign
 exl-id: 28f3a5bc-67f5-413e-b2ba-35c341f9ec5f
-source-git-commit: d2f4e54b0c37cc019061dd3a7b7048cd80876ac0
+source-git-commit: 6de5c93453ffa7761cf185dcbb9f1210abd26a0c
 workflow-type: tm+mt
 source-wordcount: '1160'
 ht-degree: 0%

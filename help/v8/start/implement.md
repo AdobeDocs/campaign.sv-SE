@@ -5,9 +5,9 @@ feature: Overview
 role: Data Engineer
 level: Beginner
 exl-id: 09562b6c-3d3d-4808-a70b-202172867f46
-source-git-commit: d2f4e54b0c37cc019061dd3a7b7048cd80876ac0
+source-git-commit: 6de5c93453ffa7761cf185dcbb9f1210abd26a0c
 workflow-type: tm+mt
-source-wordcount: '1213'
+source-wordcount: '1188'
 ht-degree: 3%
 
 ---
@@ -35,11 +35,11 @@ Det här avsnittet innehåller viktig information om sekretess och säkerhet som
 
 Adobe Campaign innehåller processer och inställningar som gör att ni kan använda Campaign i enlighet med gällande datasekretesslagstiftning och mottagarens önskemål. Du kan hantera:
 
-* **Datainsamling**: Med Adobe Campaign kan ni samla in data, inklusive personuppgifter och känslig information. Det är därför viktigt att du får och hanterar samtycke från dina mottagare. Läs mer i [Campaign Classic v7-dokumentation](https://experienceleague.adobe.com/docs/campaign-classic/using/getting-started/privacy/privacy-and-recommendations.html?lang=en#data-acquisition)
+* **Datainsamling**: Med Adobe Campaign kan ni samla in data, inklusive personuppgifter och känslig information. Det är därför viktigt att du får och hanterar samtycke från dina mottagare. Läs mer i [Campaign Classic v7-dokumentation](https://experienceleague.adobe.com/docs/campaign-classic/using/getting-started/privacy/privacy-and-recommendations.html?lang=en#data-acquisition){target=&quot;_blank&quot;}
 
-* **Användarens samtycke och datalagring**: Lär dig hur du får användarens samtycke, konfigurerar prenumerationsmekanismer för dubbel anmälan, underlättar avanmälan och konfigurerar datalagring i [Sekretessdokumentation för Campaign Classic](https://experienceleague.adobe.com/docs/campaign-classic/using/getting-started/privacy/privacy-and-recommendations.html?lang=en#consent)
+* **Användarens samtycke och datalagring**: Lär dig hur du får användarens samtycke, konfigurerar prenumerationsmekanismer för dubbel anmälan, underlättar avanmälan och konfigurerar datalagring i [Sekretessdokumentation för Campaign Classic](https://experienceleague.adobe.com/docs/campaign-classic/using/getting-started/privacy/privacy-and-recommendations.html?lang=en#consent){target=&quot;_blank&quot;}
 
-* **Sekretess- och dataskyddsbestämmelser**: referera till [Sekretessdokumentation för Campaign Classic](https://experienceleague.adobe.com/docs/campaign-classic/using/getting-started/privacy/privacy-and-recommendations.html){target=&quot;_blank&quot;} för information om EU:s allmänna dataskyddsförordning (GDPR), California Consumer Privacy Act (CCPA) och andra internationella integritetskrav, och hur dessa bestämmelser påverkar din organisation och Adobe Campaign.
+* **Sekretess- och dataskyddsbestämmelser**: referera till [det här avsnittet](privacy.md) om du vill ha information om sekretesskrav och hur dessa bestämmelser påverkar din organisation och Adobe Campaign.
 
 ### Säkerhet
 
