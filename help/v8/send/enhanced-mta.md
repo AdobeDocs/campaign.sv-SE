@@ -84,7 +84,7 @@ Läs mer om DKIM i [Adobe Deliverability Best Practice Guide](https://experience
 
 Med funktionen för tjänsten för e-postfeedback (EFS) rapporteras status för varje e-postmeddelande korrekt, eftersom feedback hämtas direkt från den förbättrade MTA-agenten (Message Transfer Agent).
 
-När leveransen har startat sker ingen förändring i **[!UICONTROL Success]** procent när meddelandet har skickats från Campaign till det förbättrade MTA-avtalet.
+När leveransen har startat sker ingen förändring i **[!UICONTROL Success]** procent när meddelandet har skickats från Campaign till det förbättrade MTA-meddelandet.
 
 Leveransloggarna visar **[!UICONTROL Taken into account by the service provider]** status för varje måladress.
 
