@@ -4,8 +4,8 @@ description: Tekniska arbetsflöden och datareplikering
 feature: Overview
 role: Data Engineer
 level: Beginner
-exl-id: 7b145193-d4ae-47d0-b694-398c1e35eee4,df76e7ff-3b97-41be-abc2-640748680ff3
-source-git-commit: 6de5c93453ffa7761cf185dcbb9f1210abd26a0c
+exl-id: 7b145193-d4ae-47d0-b694-398c1e35eee4
+source-git-commit: 0fa0db62f45097755bebcbf434614c4c835d886a
 workflow-type: tm+mt
 source-wordcount: '399'
 ht-degree: 2%

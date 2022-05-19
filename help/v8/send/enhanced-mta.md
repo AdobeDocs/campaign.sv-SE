@@ -4,7 +4,8 @@ description: Läs mer om omfattningen av och egenskaperna hos utskick av e-post 
 feature: Email
 role: Data Engineer
 level: Beginner
-source-git-commit: 6de5c93453ffa7761cf185dcbb9f1210abd26a0c
+exl-id: f2c26351-8ed7-498a-ac83-d4c583fb98f3
+source-git-commit: 0fa0db62f45097755bebcbf434614c4c835d886a
 workflow-type: tm+mt
 source-wordcount: '972'
 ht-degree: 3%
@@ -83,7 +84,7 @@ Läs mer om DKIM i [Adobe Deliverability Best Practice Guide](https://experience
 
 Med funktionen för tjänsten för e-postfeedback (EFS) rapporteras status för varje e-postmeddelande korrekt, eftersom feedback hämtas direkt från den förbättrade MTA-agenten (Message Transfer Agent).
 
-När leveransen har startat sker ingen förändring i **[!UICONTROL Success]** procent när meddelandet har skickats från Campaign till det förbättrade MTA-meddelandet.
+När leveransen har startat sker ingen förändring i **[!UICONTROL Success]** procent när meddelandet har skickats från Campaign till det förbättrade MTA-avtalet.
 
 Leveransloggarna visar **[!UICONTROL Taken into account by the service provider]** status för varje måladress.
 
@@ -112,4 +113,3 @@ Tabellen nedan visar hur nyckeltal och sändande loggstatus uppdateras vid varje
 | Mjuka studsmeddelanden rapporteras tillbaka från Förbättrat MTA | Ingen ändring i **[!UICONTROL Success]** procent | Tjänsteleverantören har tagit hänsyn till |
 | Mjuka studsmeddelanden - återförsök har slutförts | **[!UICONTROL Success]** procentandelen ökas därefter | Skickat |
 | Mjukt studsande meddelanden återförsök misslyckas | Ingen ändring i **[!UICONTROL Success]** procent | Misslyckades |
-
