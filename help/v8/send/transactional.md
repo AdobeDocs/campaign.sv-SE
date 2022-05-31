@@ -5,7 +5,7 @@ feature: Overview
 role: Data Engineer
 level: Beginner
 exl-id: 06fdb279-3776-433f-8d27-33d016473dee
-source-git-commit: 6de5c93453ffa7761cf185dcbb9f1210abd26a0c
+source-git-commit: 21d4f7a4b02104572dbd3a5469dc479b5b0ba8de
 workflow-type: tm+mt
 source-wordcount: '1527'
 ht-degree: 1%
@@ -199,7 +199,7 @@ Du kan testa meddelandeleveransen genom att skicka ett korrektur till en startad
 
 När du skickar ett korrektur utförs samma process som för alla leveranser.
 
-![](../assets/do-not-localize/book.png) Läs mer om korrektur i [Campaign Classic v7-dokumentation](https://experienceleague-review.corp.adobe.com/docs/campaign-classic/using/sending-messages/key-steps-when-creating-a-delivery/steps-validating-the-delivery.html#sending-a-proof){target=&quot;_blank&quot;}
+![](../assets/do-not-localize/book.png) Läs mer om korrektur i [Campaign Classic v7-dokumentation](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/key-steps-when-creating-a-delivery/steps-validating-the-delivery.html#sending-a-proof){target=&quot;_blank&quot;}
 
 Om du vill skicka ett bevis på ett transaktionsmeddelande måste du utföra följande åtgärder:
 
