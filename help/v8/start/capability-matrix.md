@@ -5,9 +5,9 @@ feature: Overview
 role: Data Engineer
 level: Beginner
 exl-id: 00ba1c43-9558-4adb-83a1-6597c2bbca62
-source-git-commit: 6de5c93453ffa7761cf185dcbb9f1210abd26a0c
+source-git-commit: 0c01b0a597e54ae93dd581ccba6f19b2ff13f956
 workflow-type: tm+mt
-source-wordcount: '556'
+source-wordcount: '550'
 ht-degree: 4%
 
 ---
@@ -63,8 +63,6 @@ The **[!UICONTROL Change data source]** kan du ändra datakällan för ett arbet
 Observera att vissa funktioner inte är tillgängliga i den här versionen av Campaign, till exempel:
 
 * Hantera marknadsföringsresurser
-* Distribuerad marknadsföring
-* Responshanteraren
 * Hybrid/lokala distributionsmodeller
 
 >[!CAUTION]
@@ -83,7 +81,7 @@ För att passa den nya arkitekturen och distributionsmodellen i Campaign v8 stö
 * Kuponger
 * Webbspårning
 * Undersökningar
-* Social marknadsföring med Facebook
+* Social marknadsföring
 * ACS Connector (Prime offer)
 * Integrering med LDAP
 * Logga in med användare/lösenord
