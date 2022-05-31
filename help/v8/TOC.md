@@ -4,7 +4,7 @@ user-guide-title: Campaign v8
 description: Dokumentation om Campaign v8
 breadcrumb-title: Campaign v8
 title: Kampanjdokument v8
-source-git-commit: 6de5c93453ffa7761cf185dcbb9f1210abd26a0c
+source-git-commit: 9fa6666532a6943c438268d7ea832f0908588208
 workflow-type: tm+mt
 source-wordcount: '351'
 ht-degree: 28%
@@ -73,8 +73,8 @@ ht-degree: 28%
    + [Bästa praxis](audiences/audiences-best-practices.md)
 + Skicka meddelanden{#send}
    + E-post {#emails}
-      + [Designa och skicka e-post](send/email.md)
-      + [Om den förbättrade MTA-metoden](send/enhanced-mta.md)
+      + [Designa och validera e-postmeddelanden](send/email.md)
+      + [Skicka och övervaka e-post](send/send.md)
    + [SMS](send/sms.md)
    + [Push-meddelanden](send/push.md)
    + [LINE-meddelanden](send/line.md)

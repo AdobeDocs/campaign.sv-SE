@@ -5,10 +5,10 @@ feature: Audiences, Profiles
 role: Data Engineer
 level: Beginner
 exl-id: 9c83ebeb-e923-4d09-9d95-0e86e0b80dcc
-source-git-commit: 6de5c93453ffa7761cf185dcbb9f1210abd26a0c
+source-git-commit: 9fa6666532a6943c438268d7ea832f0908588208
 workflow-type: tm+mt
-source-wordcount: '2849'
-ht-degree: 5%
+source-wordcount: '3009'
+ht-degree: 6%
 
 ---
 
@@ -48,7 +48,7 @@ En meddelandeleverans kan misslyckas omedelbart, i så fall kvalificerar vi det 
 
 Följande typer av fel hanteras:
 
-* **Synkront fel**: fjärrservern som kontaktas av Adobe Campaign leveransserver returnerar omedelbart ett felmeddelande. Leveransen får inte skickas till profilens server. Den förbättrade MTA-metoden avgör studstypen och kvalificerar felet, och skickar tillbaka informationen till Campaign för att avgöra om e-postadresserna i fråga ska sättas i karantän. Se [Kvalifikation av studsmeddelanden](#bounce-mail-qualification).
+* **Synkront fel**: fjärrservern som kontaktas av Adobe Campaign leveransserver returnerar omedelbart ett felmeddelande. Leveransen får inte skickas till profilens server. MTA (Mail Transfer Agent) bestämmer studstypen och kvalificerar felet och skickar tillbaka informationen till Campaign för att avgöra om e-postadresserna ska placeras i karantän. Se [Kvalifikation av studsmeddelanden](#bounce-mail-qualification).
 
 * **Asynkront fel**: ett studsmeddelande eller en SR skickas senare av den mottagande servern. Det här felet är kvalificerat med en etikett som är relaterad till felet. Asynkrona fel kan uppstå upp till en vecka efter att en leverans har skickats.
 
@@ -64,7 +64,7 @@ Följande typer av fel hanteras:
 
 Hur studseffekter hanteras i Adobe Campaign beror för närvarande på feltypen:
 
-* **Synkrona fel**: Den förbättrade MTA-metoden avgör studstyp och kvalifikationer och skickar tillbaka informationen till Campaign. Studentkvalifikationer i **[!UICONTROL Delivery log qualification]** tabellen används inte för **synkron** felmeddelanden vid leveransfel.
+* **Synkrona fel**: MTA avgör studstyp och kvalifikationer och skickar tillbaka informationen till Campaign. Studentkvalifikationer i **[!UICONTROL Delivery log qualification]** tabellen används inte för **synkron** felmeddelanden vid leveransfel.
 
 * **Asynkrona fel**: Regler som används av Campaign för att kvalificera asynkrona leveransfel visas i **[!UICONTROL Administration > Campaign Management > Non deliverables Management > Delivery log qualification]** nod. Asynkrona studsar kvalificeras av inMail-processen via **[!UICONTROL Inbound email]** regler. Mer information finns i [Adobe Campaign Classic v7-dokumentation](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/monitoring-deliveries/understanding-delivery-failures.html#bounce-mail-qualification){target=&quot;_blank&quot;}.
 
@@ -97,9 +97,22 @@ Bounce mails can have the following qualification status:
 
 Om meddelandeleveransen misslyckas efter ett tillfälligt fel (**Mjuk** eller **Ignorerad**) skickas kampanjåterförsök. Dessa återförsök kan utföras till slutet av leveransens varaktighet.
 
-Antalet och frekvensen för återförsök anges av den förbättrade MTA, baserat på typ och allvarlighetsgrad för de studssvar som kommer tillbaka från meddelandets Internet-leverantör.
+MTA avgör vilken typ av avhoppssvar som skickas tillbaka från meddelandets e-postdomän och hur lång tid det tar mellan dem.
 
-<!--NO LONGER WITH MOMENTUM - The default configuration defines five retries at one-hour intervals, followed by one retry per day for four days. The number of retries can be changed globally or for each delivery or delivery template. If you need to adapt delivery duration and retries, contact Adobe Support.-->
+>[!NOTE]
+>
+>Inställningarna för nya försök i leveransegenskaperna används inte av Campaign.
+
+## Giltighetsperiod
+
+Giltighetsperioden i kampanjleveranserna är begränsad till **3,5 dagar eller mindre**. Om du definierar ett värde som är högre än 3,5 dagar för en leverans i Campaign beaktas det inte.
+
+Om giltighetsperioden till exempel är inställd på standardvärdet 5 dagar i Campaign, kommer meddelanden med mjuk studsning att hamna i MTA-återförsökskön och provas igen i upp till 3,5 dagar från den dag då meddelandet nådde MTA. I så fall används inte det värde som angetts i Campaign.
+
+När ett meddelande har varit i MTA-kön i 3,5 dagar och inte kunnat levereras, kommer det att löpa ut och status uppdateras från **[!UICONTROL Sent]** till **[!UICONTROL Failed]** i leveransloggarna.
+
+Mer information om giltighetsperioden finns i [Adobe Campaign Classic v7-dokumentation](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/key-steps-when-creating-a-delivery/steps-sending-the-delivery.html#defining-validity-period){target=&quot;_blank&quot;}.
+
 
 ## E-postfeltyper {#email-error-types}
 
