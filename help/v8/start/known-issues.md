@@ -6,9 +6,9 @@ role: Data Engineer
 level: Beginner
 hide: true
 hidefromtoc: true
-source-git-commit: fe425f9309af31a13b52695b103d530a6b89e3b1
+source-git-commit: 0d1d20f9692ffa7b7ea7a8fb1161ebd19f533bab
 workflow-type: tm+mt
-source-wordcount: '433'
+source-wordcount: '449'
 ht-degree: 0%
 
 ---
@@ -113,7 +113,7 @@ Processen tar aldrig slut.
 
 ### Tillfällig lösning{#issue-3-workaround}
 
-Ingen
+Du bör använda en äldre klientkonsol för att kunna överföra filen till servern.
 
 ### Intern referens{#issue-3-ref}
 
