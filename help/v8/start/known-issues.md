@@ -6,9 +6,9 @@ role: Data Engineer
 level: Beginner
 hide: true
 hidefromtoc: true
-source-git-commit: 2705e9b23f9f8a61f799381434f7e94a226de1b9
+source-git-commit: fe425f9309af31a13b52695b103d530a6b89e3b1
 workflow-type: tm+mt
-source-wordcount: '421'
+source-wordcount: '433'
 ht-degree: 0%
 
 ---
@@ -22,7 +22,7 @@ På den här sidan visas kända fel som identifierats i **senaste Campaign v8-ut
 >
 >Adobe publicerar den här listan över kända problem efter eget gottfinnande. Det baseras på antalet kundrapporter, allvarlighetsgraden och möjligheten att komma runt problemet. Om ett problem som du stöter på inte visas kanske det inte uppfyller villkoren för publicering på den här sidan.
 
-## Ändra aktivitetsproblem för datakälla {#issue-1}
+## Ändra aktivitetsproblem för datakälla nr 1 {#issue-1}
 
 ### Beskrivning{#issue-1-desc}
 
@@ -57,11 +57,11 @@ Referens: NEO-45549
 
 
 
-## Det gick inte att läsa in data (fil) på grund av ett omvänt snedstreck {#issue-2}
+## Ändra aktivitetsproblem för datakälla nr 2 {#issue-2}
 
 ### Beskrivning{#issue-2-desc}
 
-När du matar in data i molndatabasen med en kampanjinläsningsaktivitet misslyckas processen när det finns ett omvänt snedstreck i källfilen. Strängen escape-konverteras inte och data bearbetas inte korrekt på Snowflake.
+När du matar in data i molndatabasen med en Campaign **Fråga** och **Ändra datakälla** -aktiviteten misslyckas processen när det finns ett omvänt snedstreck i data. Källsträngen escape-konverteras inte och data bearbetas inte korrekt på Snowflake.
 
 Det här problemet uppstår bara om det omvända snedstrecket finns i slutet av strängen, till exempel: `Barker\`.
 
@@ -69,8 +69,9 @@ Det här problemet uppstår bara om det omvända snedstrecket finns i slutet av 
 ### Återgivningssteg{#issue-2-repro}
 
 1. Anslut till klientkonsolen och skapa ett arbetsflöde.
-1. Lägg till en **Inläsning av data (fil)** och konfigurera den.
-1. Välj en lokal fil med de egenskaper som beskrivs ovan.
+1. Lägg till en **Fråga** och konfigurera den.
+1. Välj data med de egenskaper som beskrivs ovan.
+1. Lägg till en **Ändra datakälla** och konfigurera den för att välja molndatabasen i Snowflake.
 1. Kör arbetsflödet och kontrollera arbetsflödesloggarna för att se felet.
 
 
