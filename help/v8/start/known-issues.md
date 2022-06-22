@@ -6,9 +6,9 @@ role: Data Engineer
 level: Beginner
 hide: true
 hidefromtoc: true
-source-git-commit: e82ae1158926fb6335380626158089c6394377a1
+source-git-commit: 2705e9b23f9f8a61f799381434f7e94a226de1b9
 workflow-type: tm+mt
-source-wordcount: '428'
+source-wordcount: '421'
 ht-degree: 0%
 
 ---
@@ -38,7 +38,7 @@ The **Ändra datakälla** aktiviteten misslyckas när data överförs från Camp
 
 ### Felmeddelande{#issue-1-error}
 
-```
+```sql
 04/13/2022 10:00:18 AM              Executing change data source 'Ok' (step 'Change Data Source')
 04/13/2022 10:00:18 AM              Starting 1 connection(s) on pool 'nms:extAccount:ffda tractorsupply_mkt_stage8' (Snowflake, server='adobe-acc_tractorsupply_us_west_2_aws.snowflakecomputing.com', login='tractorsupply_stage8_MKT:tractorsupply_stage8')
 04/13/2022 10:00:26 AM              ODB-240000 ODBC error: {*}Numeric value '{*}******{*}{{*}}' is not recognized\{*}   File 'wkf1285541_13_1_0_47504750#458318uploadPart0.chunk.gz', line 1, character 10140   Row 279, column "WKF1285541_13_1_0"["BICUST_ID":1]   If you would like to continue loading when a
@@ -61,9 +61,9 @@ Referens: NEO-45549
 
 ### Beskrivning{#issue-2-desc}
 
-När du matar in data i molndatabasen med en kampanjinläsningsaktivitet kan processen misslyckas på grund av ett omvänt snedstreck i källfilen. Strängen escape-konverteras inte och data bearbetas inte korrekt på Snowflake.
+När du matar in data i molndatabasen med en kampanjinläsningsaktivitet misslyckas processen när det finns ett omvänt snedstreck i källfilen. Strängen escape-konverteras inte och data bearbetas inte korrekt på Snowflake.
 
-Det här problemet uppstår bara om det omvända snedstrecket finns i slutet av strängen, till exempel: &quot;Barker\&quot;.
+Det här problemet uppstår bara om det omvända snedstrecket finns i slutet av strängen, till exempel: `Barker\`.
 
 
 ### Återgivningssteg{#issue-2-repro}
@@ -76,7 +76,7 @@ Det här problemet uppstår bara om det omvända snedstrecket finns i slutet av 
 
 ### Felmeddelande{#issue-2-error}
 
-```
+```sql
 Error:
 04/21/2022 4:01:58 PM     loading when an error is encountered, use other values such as 'SKIP_FILE' or 'CONTINUE' for the ON_ERROR option. For more information on loading options, please run 'info loading_data' in a SQL client. SQLState: 22000
 04/21/2022 4:01:58 PM    ODB-240000 ODBC error: String '100110668547' is too long and would be truncated   File 'wkf1656797_21_1_3057430574#458516uploadPart0.chunk.gz', line 1, character 0   Row 90058, column "WKF1656797_21_1"["SCARRIER_ROUTE":13]   If you would like to continue
@@ -84,7 +84,7 @@ Error:
 
 ### Tillfällig lösning{#issue-2-workaround}
 
-Som en tillfällig lösning exporterar du filerna med dubbla citattecken runt värden som &quot;Barker\&quot; och inkluderar filformatsalternativet FIELD_OPTIONALLY_ENCLOSED_BY = &#39;&#39;&#39;
+Som en tillfällig lösning kan du exportera filerna med dubbla citattecken runt de problematiska värdena (som `Barker\`) och inkludera ett alternativ för filformat `FIELD_OPTIONALLY_ENCLOSED_BY = '"'`.
 
 ### Intern referens{#issue-2-ref}
 
