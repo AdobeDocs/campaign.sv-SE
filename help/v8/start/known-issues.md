@@ -6,9 +6,9 @@ role: Data Engineer
 level: Beginner
 hide: true
 hidefromtoc: true
-source-git-commit: 0d1d20f9692ffa7b7ea7a8fb1161ebd19f533bab
+source-git-commit: 2c9455a09d6b557d525b1af5da9374a1d59201d7
 workflow-type: tm+mt
-source-wordcount: '449'
+source-wordcount: '368'
 ht-degree: 0%
 
 ---
@@ -22,21 +22,22 @@ På den här sidan visas kända fel som identifierats i **senaste Campaign v8-ut
 >
 >Adobe publicerar den här listan över kända problem efter eget gottfinnande. Det baseras på antalet kundrapporter, allvarlighetsgraden och möjligheten att komma runt problemet. Om ett problem som du stöter på inte visas kanske det inte uppfyller villkoren för publicering på den här sidan.
 
-## Ändra aktivitetsproblem för datakälla nr 1 {#issue-1}
+<!--
+## Change Data Source activity issue #1 {#issue-1}
 
-### Beskrivning{#issue-1-desc}
+### Description{#issue-1-desc}
 
-The **Ändra datakälla** aktiviteten misslyckas när data överförs från Campaign-databasen till molndatabasen i Snowflake. När du byter riktning kan aktiviteten ge upphov till problem.
+The **Change Data Source** activity is failing when transfering data from Campaign local database to Snowflake cloud database. When switching directions, the activity can generate issues.
 
-### Återgivningssteg{#issue-1-repro}
+### Reproduction steps{#issue-1-repro}
 
-1. Anslut till klientkonsolen och skapa ett arbetsflöde.
-1. Lägg till en **Fråga** aktivitet och **Ändra datakälla** aktivitet.
-1. Definiera en fråga på **e-post**, som är en sträng.
-1. Kör arbetsflödet och högerklicka på övergången för att visa populationen: e-postposterna visas ersatta med `****`.
-1. Kontrollera arbetsflödesloggarna: den **Ändra datakälla** -aktiviteten tolkar dessa poster som numeriska värden.
+1. Connect to the client console and create a workflow.
+1. Add a **Query** activity and a **Change Data Source** activity.
+1. Define a query on the **email**, which is a string.
+1. Run the workflow and right-click the transition to view the population: the email records are displayed replaced by `****`.
+1. Check the workflow logs: the **Change Data Source** activity interprets these records as numeric values.
 
-### Felmeddelande{#issue-1-error}
+### Error message{#issue-1-error}
 
 ```sql
 04/13/2022 10:00:18 AM              Executing change data source 'Ok' (step 'Change Data Source')
@@ -47,17 +48,17 @@ The **Ändra datakälla** aktiviteten misslyckas när data överförs från Camp
 04/13/2022 10:00:26 AM              D_OPTIONALLY_ENCLOSED_BY = 'NONE') ON_ERROR = ABORT_STATEMENT PURGE = TRUE' could not be executed.
 ```
 
-### Tillfällig lösning{#issue-1-workaround}
+### Workaround{#issue-1-workaround}
 
-Om du vill att data ska överföras från molndatabasen i Snowflake till den lokala Campaign-databasen och tillbaka till Snowflake måste du använda två olika **Ändra datakälla** verksamhet.
+To have the data transfered from Snowflake cloud database to Campaign local database and back to Snowflake, you must use two different **Change Data Source** activities.
 
-### Intern referens{#issue-1-ref}
+### Internal reference{#issue-1-ref}
 
-Referens: NEO-45549
+Reference: NEO-45549 
+-->
 
 
-
-## Ändra aktivitetsproblem för datakälla nr 2 {#issue-2}
+## Ändra aktivitetsproblem för datakälla {#issue-2}
 
 ### Beskrivning{#issue-2-desc}
 
@@ -85,7 +86,11 @@ Error:
 
 ### Tillfällig lösning{#issue-2-workaround}
 
-Som en tillfällig lösning kan du exportera filerna med dubbla citattecken runt de problematiska värdena (som `Barker\`) och inkludera ett alternativ för filformat `FIELD_OPTIONALLY_ENCLOSED_BY = '"'`.
+Tillfällig lösning är att exkludera data som innehåller omvänt snedstreck i slutet av strängen eller att ta bort dem från källfilen.
+
+<!--
+As a workaround, export the files with double quotes around the problematic values (like `Barker\`) and include a file format option `FIELD_OPTIONALLY_ENCLOSED_BY = '"'`.
+-->
 
 ### Intern referens{#issue-2-ref}
 
@@ -113,7 +118,13 @@ Processen tar aldrig slut.
 
 ### Tillfällig lösning{#issue-3-workaround}
 
-Du bör använda en äldre klientkonsol för att kunna överföra filen till servern.
+Du kan lösa problemet genom att använda en äldre klientkonsol. Sedan kan du överföra filen till servern.
+
+Som administratör kan du hämta klientkonsolen Campaign v8.3.1 i [Adobe Distribution Service](https://experience.adobe.com/downloads).
+
+Lär dig hur du får åtkomst till Adobe Distribution Service [på den här sidan](https://experienceleague.adobe.com/docs/experience-cloud/software-distribution/home.html)
+
+Lär dig hur du uppgraderar din klientkonsol [på den här sidan](connect.md)
 
 ### Intern referens{#issue-3-ref}
 
