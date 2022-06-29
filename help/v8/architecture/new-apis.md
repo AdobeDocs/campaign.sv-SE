@@ -1,20 +1,20 @@
 ---
-title: Nya Campaign v8-API:er
-description: Nya Campaign v8-API:er
+title: API:er för FFDA-distribution
+description: FFDA-specifika API:er
 feature: Overview
 role: Data Engineer
 level: Beginner
 exl-id: dd822f88-b27d-4944-879c-087f68e79825
-source-git-commit: 6de5c93453ffa7761cf185dcbb9f1210abd26a0c
+source-git-commit: 5c1ced7972295e79418ac7ff14a6f0888e5ed39a
 workflow-type: tm+mt
-source-wordcount: '436'
+source-wordcount: '437'
 ht-degree: 2%
 
 ---
 
-# Nya kampanj-API:er{#gs-new-api}
+# Specifika FFDA Campaign-API:er{#gs-new-api}
 
-När det gäller [Företagsdistribution (FFDA)](enterprise-deployment.md)innehåller Campaign v8 två nya API:er för att hantera data mellan Campaigns lokala databas och molndatabasen. Förutsättningar för att använda dem är att aktivera mellanlagringsmekanismen i schemat. [Läs mer](staging.md)
+När det gäller [Företagsdistribution (FFDA)](enterprise-deployment.md), Campaign v8 har två specifika API:er för att hantera data mellan Campaign-databasen och molndatabasen. Förutsättningar för att använda dem är att aktivera mellanlagringsmekanismen i schemat. [Läs mer](staging.md)
 
 * Ing-API: **xtk.session.ingest**
 
@@ -30,7 +30,7 @@ Ett dedikerat inbyggt arbetsflöde synkroniserar data i molndatabasen.
 
 The **xtk.session.ingest** API är endast dedikerat till datainmatning. Ingen uppdatering/borttagning.
 
-### Infoga utan avstämning
+### Infoga utan avstämning{#insert-no-reconciliation}
 
 **I ett arbetsflöde**
 
@@ -170,7 +170,6 @@ När arbetsflödet har körts uppdateras mellanlagringstabellen som förväntat.
 
 **Från ett SOAP-anrop**
 
-
 1. Hämta autentiseringstoken.
 1. Utlös API:t. Nyttolasten är:
 
@@ -213,4 +212,4 @@ Inläggning av prenumerations- och avprenumerationsdata bygger på [Mellanlagrin
 
 **Relaterade ämnen**
 
-* [Campaign Classic v7 JSAPI](https://experienceleague.adobe.com/developer/campaign-api/api/p-1.html)
+* [Campaign Classic v7 JSAPI](https://experienceleague.adobe.com/developer/campaign-api/api/p-1.html){target=&quot;_blank&quot;}
