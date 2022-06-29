@@ -1,11 +1,11 @@
 ---
 title: Arbeta med Campaign och Real-time Customer Data Platform
 description: Lär dig hur du arbetar med Campaign och Real-time Customer Data Platform
-feature: Overview
+feature: Platform Integration
 role: Data Engineer
 level: Beginner
 exl-id: d1e09eae-339e-4d14-9071-097dfcc635aa
-source-git-commit: 6de5c93453ffa7761cf185dcbb9f1210abd26a0c
+source-git-commit: 8eb92dd1cacc321fc79ac4480a791690fc18511c
 workflow-type: tm+mt
 source-wordcount: '135'
 ht-degree: 0%

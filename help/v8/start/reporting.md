@@ -1,13 +1,13 @@
 ---
 title: Kom igång med Campaign-rapporter
 description: Kom igång med rapportfunktionerna i Campaign
-feature: Overview
+feature: Reporting
 role: Data Engineer
 level: Beginner
 exl-id: 95ed0369-7215-496b-8e11-fe264c436488
-source-git-commit: 6de5c93453ffa7761cf185dcbb9f1210abd26a0c
+source-git-commit: c6a234f6c43531be032354d134e4745ad77cbcc7
 workflow-type: tm+mt
-source-wordcount: '373'
+source-wordcount: '0'
 ht-degree: 0%
 
 ---

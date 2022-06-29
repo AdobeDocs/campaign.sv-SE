@@ -1,11 +1,11 @@
 ---
 title: Kontrollpanelen i Campaign
 description: Kom igång med Campaign Control Panel
-feature: Overview
+feature: Control Panel
 role: Data Engineer
 level: Beginner
 exl-id: b8aa89ac-19f4-4df3-9f36-860aca61bea3
-source-git-commit: 6de5c93453ffa7761cf185dcbb9f1210abd26a0c
+source-git-commit: 8eb92dd1cacc321fc79ac4480a791690fc18511c
 workflow-type: tm+mt
 source-wordcount: '410'
 ht-degree: 52%

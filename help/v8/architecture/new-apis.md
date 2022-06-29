@@ -1,13 +1,13 @@
 ---
-title: API:er för FFDA-distribution
-description: FFDA-specifika API:er
-feature: Overview
+title: Nya Campaign v8-API:er
+description: Nya Campaign v8-API:er
+feature: API
 role: Data Engineer
 level: Beginner
 exl-id: dd822f88-b27d-4944-879c-087f68e79825
-source-git-commit: 5c1ced7972295e79418ac7ff14a6f0888e5ed39a
+source-git-commit: c44fb2de4ed0e1661801313ae0430ba9d19542f0
 workflow-type: tm+mt
-source-wordcount: '437'
+source-wordcount: '439'
 ht-degree: 2%
 
 ---

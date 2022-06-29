@@ -1,14 +1,14 @@
 ---
 title: Användningsexempel för kampanjinteraktion
 description: Interaktionsfall
-feature: Overview
+feature: Interaction, Offers
 role: Data Engineer
 level: Beginner
 exl-id: 4ea77a39-f505-4657-be43-a0e2b79ddcdd
-source-git-commit: 6de5c93453ffa7761cf185dcbb9f1210abd26a0c
+source-git-commit: 8eb92dd1cacc321fc79ac4480a791690fc18511c
 workflow-type: tm+mt
-source-wordcount: '86'
-ht-degree: 2%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 

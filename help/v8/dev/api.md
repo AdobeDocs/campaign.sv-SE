@@ -1,14 +1,14 @@
 ---
 title: 'Kom igång med API:er i Campaign '
 description: 'Kom igång med API:er i Campaign '
-feature: Overview
+feature: API
 role: Data Engineer
 level: Beginner
 exl-id: 50e21acd-d23d-4fdd-a8aa-23c3f209bda3
-source-git-commit: 5c1ced7972295e79418ac7ff14a6f0888e5ed39a
+source-git-commit: c44fb2de4ed0e1661801313ae0430ba9d19542f0
 workflow-type: tm+mt
-source-wordcount: '245'
-ht-degree: 6%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 

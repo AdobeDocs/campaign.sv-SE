@@ -1,14 +1,14 @@
 ---
 title: Ändra standardmottagartabellen
 description: Lär dig hur du använder en anpassad mottagartabell
-feature: Overview
+feature: Custom Resources, Profiles
 role: Data Engineer
 level: Beginner
 exl-id: 0b71c76b-03d9-4023-84fc-3ecc0df9261b
-source-git-commit: 6de5c93453ffa7761cf185dcbb9f1210abd26a0c
+source-git-commit: 8eb92dd1cacc321fc79ac4480a791690fc18511c
 workflow-type: tm+mt
-source-wordcount: '136'
-ht-degree: 3%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 

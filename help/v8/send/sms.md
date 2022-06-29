@@ -1,14 +1,14 @@
 ---
 title: Skicka SMS med Adobe Campaign
 description: Kom igång med SMS i Campaign
-feature: Overview
+feature: SMS
 role: Data Engineer
 level: Beginner
 exl-id: e2e2922a-2058-4588-b1b5-6997f29ee663
-source-git-commit: 6de5c93453ffa7761cf185dcbb9f1210abd26a0c
+source-git-commit: 8eb92dd1cacc321fc79ac4480a791690fc18511c
 workflow-type: tm+mt
-source-wordcount: '610'
-ht-degree: 1%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 

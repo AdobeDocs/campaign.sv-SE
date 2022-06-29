@@ -1,11 +1,11 @@
 ---
 title: Katalog för kampanjinteraktionserbjudande
 description: Lär dig hur du skapar en erbjudandekatalog
-feature: Overview
+feature: Interaction, Offers
 role: Data Engineer
 level: Beginner
 exl-id: 911096e2-0307-46a8-873c-ee2248b8e3e8
-source-git-commit: 6de5c93453ffa7761cf185dcbb9f1210abd26a0c
+source-git-commit: 8eb92dd1cacc321fc79ac4480a791690fc18511c
 workflow-type: tm+mt
 source-wordcount: '380'
 ht-degree: 1%
