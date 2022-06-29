@@ -2,9 +2,9 @@
 title: Formulär för kampanjindata
 description: Lär dig hur du anpassar indataformulär
 exl-id: 62908bba-9cfa-42b6-b463-b601496d535b
-source-git-commit: 6de5c93453ffa7761cf185dcbb9f1210abd26a0c
+source-git-commit: 5c1ced7972295e79418ac7ff14a6f0888e5ed39a
 workflow-type: tm+mt
-source-wordcount: '2552'
+source-wordcount: '2554'
 ht-degree: 0%
 
 ---
@@ -84,7 +84,7 @@ Redigeringskontrollen anpassas automatiskt till motsvarande datatyp och använde
 
 Som standard visas varje fält på en rad och tar upp allt tillgängligt utrymme beroende på datatypen.
 
-![](../assets/do-not-localize/book.png) Alla formulärattribut visas i [Campaign Classic v7-dokumentation](https://experienceleague.adobe.com/developer/campaign-api/api/control-Button.html).
+![](../assets/do-not-localize/book.png) Alla formulärattribut visas i [Campaign Classic v7-dokumentation](https://experienceleague.adobe.com/developer/campaign-api/api/control-Button.html){target=&quot;_blank&quot;}.
 
 ## Formatering {#formatting}
 
