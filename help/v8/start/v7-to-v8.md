@@ -5,9 +5,9 @@ feature: Overview
 role: Data Engineer
 level: Beginner
 exl-id: 00ba1c43-9558-4adb-83a1-6597c2bbca62
-source-git-commit: 63e109f31706880a1723dfd0c611835842e39083
+source-git-commit: 70ad2603d299c3a848382503eb31571acae0ae48
 workflow-type: tm+mt
-source-wordcount: '646'
+source-wordcount: '635'
 ht-degree: 3%
 
 ---
@@ -36,7 +36,7 @@ Det nya erbjudandet kombinerar förstklassiga tjänster med proaktiv tillsyn och
 * **Tjänsteupplevelse** — proaktiv tillgänglighet, kapacitet, prestandaövervakning och åtgärder för att förhindra avbrott, åtgärda incidenter snabbare och regelbundet granska tjänsten för kontinuerlig förbättring.
 * **Djupgående kampanjexpertis** — service med hög affinitet från expertgrupper för kundkonstruktion för att tillgodose behov av funktionalitet, teknik eller leveransförmåga, minska driftsättningsriskerna och förbättra ändringshanteringen.
 
-Som tidigare [!DNL Campaign Classic] användare, observera att de flesta av [!DNL Campaign Classic] v7-funktioner är tillgängliga med [!DNL Campaign] v8, förutom en liten uppsättning, som listas i [det här avsnittet](#gs-removed). Andra kommer i framtida versioner. [Läs mer i det här avsnittet](#gs-unavailable-features)
+Som tidigare [!DNL Campaign Classic] användare, observera att de flesta av [!DNL Campaign Classic] v7-funktioner är tillgängliga med [!DNL Campaign] v8, förutom en liten uppsättning, som listas i [det här avsnittet](#gs-removed).
 
 >[!NOTE]
 >
