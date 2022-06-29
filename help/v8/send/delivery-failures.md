@@ -5,9 +5,9 @@ feature: Audiences, Profiles
 role: Data Engineer
 level: Beginner
 exl-id: 9c83ebeb-e923-4d09-9d95-0e86e0b80dcc
-source-git-commit: 9fa6666532a6943c438268d7ea832f0908588208
+source-git-commit: 5c1ced7972295e79418ac7ff14a6f0888e5ed39a
 workflow-type: tm+mt
-source-wordcount: '3009'
+source-wordcount: '3008'
 ht-degree: 6%
 
 ---
@@ -62,7 +62,7 @@ Följande typer av fel hanteras:
 
 ![](assets/delivery-log-qualification.png)-->
 
-Hur studseffekter hanteras i Adobe Campaign beror för närvarande på feltypen:
+Hur studseffekter hanteras i Adobe Campaign beror på feltypen:
 
 * **Synkrona fel**: MTA avgör studstyp och kvalifikationer och skickar tillbaka informationen till Campaign. Studentkvalifikationer i **[!UICONTROL Delivery log qualification]** tabellen används inte för **synkron** felmeddelanden vid leveransfel.
 
