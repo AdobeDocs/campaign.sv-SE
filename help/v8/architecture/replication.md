@@ -5,7 +5,7 @@ feature: Overview
 role: Data Engineer
 level: Beginner
 exl-id: 7b145193-d4ae-47d0-b694-398c1e35eee4
-source-git-commit: 0fa0db62f45097755bebcbf434614c4c835d886a
+source-git-commit: 5c1ced7972295e79418ac7ff14a6f0888e5ed39a
 workflow-type: tm+mt
 source-wordcount: '399'
 ht-degree: 2%
@@ -46,7 +46,7 @@ Förstå vilka databaser Adobe Campaign v8 använder, varför data replikeras, v
 >[!VIDEO](https://video.tv.adobe.com/v/334460?quality=12)
 
 
-### Principer för datareplikering
+### Principer för datareplikering{#data-replication-policies}
 
 Replikeringsprinciperna baseras på tabellstorleken. Vissa tabeller kommer att replikeras i realtid, andra kommer att replikeras varje timme. Vissa tabeller kommer att få stegvisa uppdateringar när andra kommer att ersättas.
 
