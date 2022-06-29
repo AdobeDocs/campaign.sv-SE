@@ -5,9 +5,9 @@ feature: Overview
 role: Data Engineer
 level: Beginner
 exl-id: 18000763-5923-48bd-b62d-cccd3c11016d
-source-git-commit: 6de5c93453ffa7761cf185dcbb9f1210abd26a0c
+source-git-commit: 5c1ced7972295e79418ac7ff14a6f0888e5ed39a
 workflow-type: tm+mt
-source-wordcount: '545'
+source-wordcount: '559'
 ht-degree: 6%
 
 ---
@@ -34,7 +34,7 @@ Två tabelltilläggslägen är tillgängliga:
 
 * Genom gränssnittet med **Nytt fält** assistent
 
-   ![](../assets/do-not-localize/book.png) Lär dig hur du snabbt lägger till ett nytt fält i Campaign i [Campaign Classic v7-dokumentation](https://experienceleague.adobe.com/docs/campaign-classic/using/configuring-campaign-classic/editing-schemas/new-field-wizard.html?lang=en#configuring-campaign-classic)
+   ![](../assets/do-not-localize/book.png) Lär dig hur du snabbt lägger till ett nytt fält i Campaign i [Campaign Classic v7-dokumentation](https://experienceleague.adobe.com/docs/campaign-classic/using/configuring-campaign-classic/editing-schemas/new-field-wizard.html?lang=en#configuring-campaign-classic){target=&quot;_blank&quot;}
 
 * Programmerat genom att utöka schemat
 
@@ -47,9 +47,9 @@ Om du vill lägga till en helt ny typ av data som inte finns i körklart läge i
 
 **Relaterade ämnen**
 
-![](../assets/do-not-localize/book.png) Exempel på schemautgåva i [Campaign Classic v7-dokumentation](https://experienceleague.adobe.com/docs/campaign-classic/using/configuring-campaign-classic/editing-schemas/examples-of-schemas-edition.html?lang=en#configuring-campaign-classic)
+![](../assets/do-not-localize/book.png) Exempel på schemautgåva i [Campaign Classic v7-dokumentation](https://experienceleague.adobe.com/docs/campaign-classic/using/configuring-campaign-classic/editing-schemas/examples-of-schemas-edition.html?lang=en#configuring-campaign-classic){target=&quot;_blank&quot;}
 
-![](../assets/do-not-localize/book.png) Användningsfall: länka ett fält till en befintlig referenstabell i [Campaign Classic v7-dokumentation](https://experienceleague.adobe.com/docs/campaign-classic/using/configuring-campaign-classic/editing-schemas/examples-of-schemas-edition.html?lang=en#uc-link)
+![](../assets/do-not-localize/book.png) Användningsfall: länka ett fält till en befintlig referenstabell i [Campaign Classic v7-dokumentation](https://experienceleague.adobe.com/docs/campaign-classic/using/configuring-campaign-classic/editing-schemas/examples-of-schemas-edition.html?lang=en#uc-link){target=&quot;_blank&quot;}
 
 
 ## Ändra indataformulären
@@ -64,7 +64,7 @@ Adobe Campaign gränssnitt använder många webbprogram för att få åtkomst ti
 
 De färdiga webbprogrammen lagras i noden Administration > Konfiguration > Webbprogram.
 
-![](../assets/do-not-localize/book.png) Lär dig hur du skapar en översiktssida i Campaign i [Campaign Classic v7-dokumentation](https://experienceleague.adobe.com/docs/campaign-classic/using/designing-content/web-applications/use-cases--creating-overviews.html?lang=en#creating-a-single-page-web-application)
+![](../assets/do-not-localize/book.png) Lär dig hur du skapar en översiktssida i Campaign i [Campaign Classic v7-dokumentation](https://experienceleague.adobe.com/docs/campaign-classic/using/designing-content/web-applications/use-cases--creating-overviews.html?lang=en#creating-a-single-page-web-application){target=&quot;_blank&quot;}
 
 
 ## Anpassa listor och skapa filter {#gs-lists-and-filters}
@@ -73,16 +73,16 @@ De färdiga webbprogrammen lagras i noden Administration > Konfiguration > Webbp
 
 Kampanjlistor innehåller fördefinierade filter som underlättar navigering och datavisning.
 
-![](../assets/do-not-localize/book.png) Läs mer om filtreringsalternativ i [Campaign Classic v7-dokumentation](https://experienceleague.adobe.com/docs/campaign-classic/using/getting-started/filtering-data/filtering-options.html?lang=en#about-filtering)
+![](../assets/do-not-localize/book.png) Läs mer om filtreringsalternativ i [Campaign Classic v7-dokumentation](https://experienceleague.adobe.com/docs/campaign-classic/using/getting-started/filtering-data/filtering-options.html?lang=en#about-filtering){target=&quot;_blank&quot;}
 
 
 ### Få åtkomst till data från Utforskaren
 
 När du navigerar i Adobe Campaign Utforskaren-trädet visas data i databasen i listor. Du kan filtrera dessa listor, köra sökningar, lägga till information, filtrera och sortera data.
 
-![](../assets/do-not-localize/book.png) Lär dig hur du konfigurerar listor och sparar en listkonfiguration i [Campaign Classic v7-dokumentation](https://experienceleague.adobe.com/docs/campaign-classic/using/getting-started/starting-with-adobe-campaign/campaign-workspace/adobe-campaign-ui-lists.html?lang=en#getting-started)
+![](../assets/do-not-localize/book.png) Lär dig hur du konfigurerar listor och sparar en listkonfiguration i [Campaign Classic v7-dokumentation](https://experienceleague.adobe.com/docs/campaign-classic/using/getting-started/starting-with-adobe-campaign/campaign-workspace/adobe-campaign-ui-lists.html?lang=en#getting-started){target=&quot;_blank&quot;}
 
 
 Du kan använda filter på de här listorna för att bara visa de data som operatorn behöver. Sedan kan åtgärder utföras på filtrerade data. Med filterkonfigurationen kan du välja data från en lista dynamiskt. Om data ändras uppdateras de filtrerade data.
 
-![](../assets/do-not-localize/book.png) Lär dig filtrera data i [Campaign Classic v7-dokumentation](https://experienceleague.adobe.com/docs/campaign-classic/using/getting-started/filtering-data/creating-filters.html?lang=en#typology-of-available-filters)
+![](../assets/do-not-localize/book.png) Lär dig filtrera data i [Campaign Classic v7-dokumentation](https://experienceleague.adobe.com/docs/campaign-classic/using/getting-started/filtering-data/creating-filters.html?lang=en#typology-of-available-filters){target=&quot;_blank&quot;}
