@@ -1,0 +1,143 @@
+---
+title: Använd arbetsflödesdata
+description: Lär dig hur du använder arbetsflödesdata
+feature: Workflows, Data Management
+source-git-commit: 72467caf94e652ede70c00f1ea413012fc4c7e1f
+workflow-type: tm+mt
+source-wordcount: '709'
+ht-degree: 2%
+
+---
+
+# Använd arbetsflödesdata{#how-to-use-workflow-data}
+
+Du kan använda arbetsflödesaktiviteter för att utföra flera uppgifter. Nedan finns exempel på användning för att uppdatera databasen genom att skapa listor, hantera prenumerationer, skicka meddelanden via ett arbetsflöde eller berika leveranser och deras målgrupper.
+
+En uppsättning användningsfall för arbetsflöden är tillgängliga i [det här avsnittet](workflow-use-cases.md).
+
+## Datas livscykel {#data-life-cycle}
+
+### Tillfälligt arbetsflödestabell {#work-table}
+
+I arbetsflöden lagras data som transporteras från en aktivitet till en annan i en temporär arbetstabell.
+
+Dessa data kan visas och analyseras genom att högerklicka på lämplig övergång.
+
+![](assets/wf-right-click-analyze.png)
+
+Välj den relevanta menyn för att göra detta:
+
+* **[!UICONTROL Display the target...]**
+
+   Den här menyn visar tillgängliga data för målpopulationen.
+
+   ![](assets/wf-right-click-display.png)
+
+   Du kan komma åt arbetstabellens struktur i **[!UICONTROL Schema]** -fliken.
+
+   ![](assets/wf-right-click-schema.png)
+
+   Mer information om detta finns i [det här avsnittet](monitor-workflow-execution.md#worktables-and-workflow-schema).
+
+* **[!UICONTROL Analyze target...]**
+
+   På den här menyn kan du komma åt guiden för beskrivande analys där du kan ta fram statistik och rapporter om övergångsdata.
+
+   Mer information finns i [Campaign Classic v7-dokumentation](https://experienceleague.adobe.com/docs/campaign-classic/using/reporting/analyzing-populations/about-descriptive-analysis.html){target=&quot;_blank&quot;}.
+
+Måldata rensas när arbetsflödet körs. Endast den sista arbetstabellen är tillgänglig. Du kan konfigurera arbetsflödet så att alla arbetsregister förblir tillgängliga: kontrollera **[!UICONTROL Keep the result of interim populations between two executions]** i arbetsflödesegenskaperna.
+
+![](assets/wf-purge-data-option.png)
+
+>[!CAUTION]
+>
+>Det här alternativet måste **aldrig** checkas in i **produktion** arbetsflöde. Det här alternativet används för att analysera resultaten och är utformat endast för teständamål och ska därför endast användas i utvecklings- eller stagingmiljöer.
+
+
+### Utnyttja måldata {#target-data}
+
+De data som lagras i arbetsflödets temporära arbetsregister är tillgängliga för personaliseringsåtgärder. Data kan användas i personaliseringsfälten.
+
+Detta gör att du till exempel kan använda data som samlats in via en lista i en leverans. Använd följande syntax:
+
+```
+%= targetData.FIELD %
+```
+
+**[!UICONTROL Target extension]** (targetData)-typografiska element är inte tillgängliga för riktade arbetsflöden. Leveransmålet måste byggas in i arbetsflödet och anges i leveransens ingående övergång.
+
+I följande exempel samlar du in en lista med information om kunder som ska användas i ett personligt e-postmeddelande. Använd följande steg:
+
+1. Skapa ett arbetsflöde för att samla in information, stämma av den med data som redan finns i databasen och starta sedan en leverans.
+
+   ![](assets/wf-targetdata-sample-1.png)
+
+1. I vårt exempel är filinnehållet följande:
+
+   ```
+   Music,First name,Last name,Account,CD/DVD,Card
+   Pop,David,BLAIR,4323,CD,0
+   Rock,Daniel,ARCARI,3222,DVD,1
+   Disco,Uma,ALTON,0488,DVD,0
+   Jazz,Paul,BOLES,6475,CD,1
+   Jazz,David,BOUKHARI,0841,DVD,1
+   [...]
+   ```
+
+   Konfigurera **[!UICONTROL Data loading (file)]** aktivitet enligt nedan:
+
+   ![](assets/wf-targetdata-sample-2.png)
+
+1. Konfigurera **[!UICONTROL Enrichment]** för att stämma av insamlade data med data som redan finns i Adobe Campaign-databasen. Här är avstämningsnyckeln kontonumret:
+
+   ![](assets/wf-targetdata-sample-3.png)
+
+1. Konfigurera sedan **[!UICONTROL Delivery]**: skapas baserat på en mall och mottagarna anges av den inkommande övergången.
+
+   ![](assets/wf-targetdata-sample-4.png)
+
+   >[!CAUTION]
+   >
+   >Endast data i övergången får användas för att anpassa leveransen. **targetData** typanpassningsfält är bara tillgängliga för den inkommande populationen i **[!UICONTROL Delivery]** aktivitet.
+
+1. Använd de fält som samlats in i arbetsflödet i leveransmallen.
+
+   Om du vill göra det infogar du **[!UICONTROL Target extension]** typanpassningsfält.
+
+   ![](assets/wf-targetdata-sample-5.png)
+
+   Här vill vi infoga kundens favoritmusikgenre och medietyp (CD eller DVD) enligt den fil som samlas in i arbetsflödet.
+
+   Dessutom kommer vi att lägga till en kupong för förmånskortinnehavare, dvs. mottagare för vilka &#39;kortet&#39; är lika med 1.
+
+   ![](assets/wf-targetdata-sample-6.png)
+
+   **[!UICONTROL Target extension]** Data av typen targetData infogas i leveranser med samma egenskaper som alla personaliseringsfält. De kan också användas i ämnet, länketiketterna eller själva länkarna.
+
+
+## Uppdatera databasen {#update-the-database}
+
+Alla insamlade data kan användas för att uppdatera databasen eller i leveranser. Du kan till exempel utöka möjligheterna att personalisera innehåll i meddelanden (ange antalet kontrakt i meddelandet, ange den genomsnittliga kundvagnen under det senaste året, osv.) eller målgruppsanpassning (skicka ett meddelande till kontraktsparter, rikta in de 1 000 bästa abonnenterna på onlinetjänster osv.). Dessa data kan också exporteras eller arkiveras i en lista.
+
+### Uppdatera listor  {#list-updates}
+
+Data från Adobe Campaign-databasen och de befintliga listorna kan uppdateras med hjälp av två dedikerade aktiviteter:
+
+* The **[!UICONTROL List update]** kan du lagra arbetsdokument i en datalist.
+
+   Du kan välja en befintlig lista eller skapa den. I det här fallet beräknas namnet och eventuellt postmappen.
+
+   ![](assets/s_user_create_list.png)
+
+   Se [Listuppdatering](list-update.md).
+
+* The **[!UICONTROL Update data]** aktiviteten utför en massuppdatering av fälten i databasen.
+
+   Mer information finns i [Uppdatera data](update-data.md).
+
+### Hantera prenumerationer {#subscription-management}
+
+Om du vill veta mer om att prenumerera på och avsluta prenumerationer på en informationstjänst via ett arbetsflöde kan du läsa [Prenumerationstjänster](subscription-services.md).
+
+
+

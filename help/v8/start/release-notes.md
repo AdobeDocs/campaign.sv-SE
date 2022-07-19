@@ -6,10 +6,10 @@ role: Data Engineer
 level: Beginner
 hidefromtoc: false
 exl-id: 7cf8111d-9f3a-46a4-813a-d4e43a1d1471
-source-git-commit: 39edd6c60c220118f34cd476b887194e1e7763e4
+source-git-commit: 0a55d947a7646aab64ab2f9d0d09a6f930db576e
 workflow-type: tm+mt
-source-wordcount: '2161'
-ht-degree: 32%
+source-wordcount: '2160'
+ht-degree: 36%
 
 ---
 
@@ -32,7 +32,7 @@ _18 maj 2022_
 </thead> 
 <tbody> 
 <tr> 
-<td> <p>Med iOS 15 har Apple lagt till en funktion för känsligt meddelande som ger programutvecklaren kontroll över att kringgå fokusläget när ett meddelande anses vara känsligt och sedan måste nå användaren i realtid.</p>
+<td> <p>I iOS 15 har Apple lagt till en funktion för känsliga meddelanden som ger programutvecklaren kontroll över att kringgå fokusläget när ett meddelande anses vara känsligt och sedan måste nå användaren i realtid.</p>
 <p>Mer information finns i den <a href="../send/push.md#send-notifications-on-ios">detaljerade dokumentationen</a>.</p>
 </td> 
 </tr> 
@@ -105,7 +105,7 @@ Se [kompatibilitetsmatrisen för Campaign](compatibility-matrix.md).
 * Antalet standardanslutningar för webbprocessen har ökat från 50 till 150.
 * Campaign innehåller en uppsättning nya skyddsritningar för att förhindra att dubblettnycklar infogas i Snowflake-databasen. [Läs mer](../architecture/keys.md)
 
-**Felkorrigeringar**
+**Korrigeringar**
 
 * Korrigerade ett problem som uppstod när frön och kontrollgrupper användes i samma återkommande leverans. (NEO-41197)
 * Korrigerade ett fel i FFDA som ledde till att e-postsändning blockerades för alla mottagare som tillhör samma deliveryPart under sändningsprocessen (upp till 256) när personaliseringsblocken innehöll ett av följande tecken: `' & < > "`. Dessa tecken stöds nu i anpassningsblock (exempel: first name=&quot;Brian O&#39;Neil&quot;). (NEO-43184)
@@ -116,7 +116,7 @@ Se [kompatibilitetsmatrisen för Campaign](compatibility-matrix.md).
 
 _2 februari 2022_
 
-**Felkorrigeringar**
+**Korrigeringar**
 
 * Korrigerade ett problem som gjorde att leveransförberedelsen misslyckades om det maximala antalet meddelanden som definierats i typologiregeln uppnåddes.
 * Ett problem som uppstod när Adobe Analytics-anslutningen konfigurerades när e-postadressen innehöll ett s-tecken har åtgärdats.
@@ -155,7 +155,7 @@ _28 oktober 2021_
 <tbody> 
 <tr> 
 <td> <p>Modulen Kampanjoptimering är nu tillgänglig. Med den här modulen kan du styra, filtrera och övervaka leveransen. För att undvika konflikter mellan kampanjer kan Adobe Campaign testa olika kombinationer genom att tillämpa särskilda begränsningsregler. Detta garanterar att de skickade meddelandena uppfyller kundernas behov och förväntningar och företagets kommunikationspolicy.</p>
-<p>Mer information finns i <a href="https://experienceleague.adobe.com/docs/campaign-classic/using/orchestrating-campaigns/campaign-optimization/about-campaign-typologies.html">Campaign Classic v7-dokumentation</a>.</p>
+<p>Mer information finns i den <a href="https://experienceleague.adobe.com/docs/campaign/automation/campaign-optimization/campaign-typologies.html?lang=en#campaign-optimization">detaljerade dokumentationen</a>.</p>
 </td> 
 </tr> 
 </tbody> 
@@ -214,7 +214,7 @@ _28 oktober 2021_
 * Korrigerade ett problem som gjorde att leveransanalysen misslyckades när vissa IP-tillhörigheter fanns i vissa mellanleverantörsbehållare men inte i alla. Nu lagras alla IP-tillhörigheter i databasen så att alla behållare kan komma åt tillhörigheterna som finns i alla andra behållare. (NEO-37564)
 * Nu kan du importera ett paket med flera scheman och navigeringsträdsnoder.
 
-**Felkorrigeringar**
+**Korrigeringar**
 
 * När en användare har tagits bort, i ett dataschema, `<autoStg>` attribut från ett tabelldefinitionselement eller ändrat dess värde från `true` till `false`, har den relaterade mellanlagringstabellen inte tagits bort. Problemet har åtgärdats.
 * Korrigerade ett problem som orsakade ett fel när poster med ett dedikerat formulär skapades på grund av Id-hantering med en FFDA-datakälla.
@@ -227,7 +227,7 @@ _28 oktober 2021_
 * Korrigerade ett problem som ignorerade attributet autoStg för icke-utökade inbyggda scheman.
 * Ett problem som hindrade användare från att välja **[!UICONTROL Country/Region]** när du förhandsgranskar en profil.
 * Korrigerade ett problem som gjorde att datumväljaren i anpassade rapporter resulterade i ett skriptfel. (NEO-36345)
-* Korrigerade ett problem som gjorde att systemet kraschade när konfigurationen skulle återskapas om konfigurationsfilerna var felaktiga.
+* Ett problem som gjorde att systemet kraschade när konfigurationen skulle återskapas om konfigurationsfilerna var felaktiga har åtgärdats.
 * Korrigerade ett problem som hindrade marknadsförings- och kontrollinstanserna från att uppgraderas.
 * Korrigerade ett problem som kunde få faktureringsarbetsflödet att krascha på marknadsinstanser.
 * Korrigerade ett problem som kunde leda till dubblettnycklar i tabeller som inte är installerade i FFDA Snowflake. (NEO-38583)

@@ -3,10 +3,10 @@ keywords: Campaign Classic;hem;populära ämnen
 description: Campaign v8 - hjälpcenter
 title: Adobe Campaign v8 - produktdokumentation
 exl-id: 6010b0f7-baf0-43ba-af9a-b8864f3897ea,9ff16fb1-d3d3-44fe-9016-15abffdbc74e
-source-git-commit: cda523168525c24ec1c976850bc336f273276ac9
+source-git-commit: 07c73a6ab22962472bde431948386d0142d6732d
 workflow-type: tm+mt
-source-wordcount: '130'
-ht-degree: 14%
+source-wordcount: '147'
+ht-degree: 12%
 
 ---
 
@@ -15,6 +15,8 @@ ht-degree: 14%
 ![](assets/banner-documentationv8.png)
 
 ## Nyheter
+
+* **[[!DNL Adobe Campaign] automatiseringsguide](https://experienceleague.adobe.com/docs/campaign/automation/home.html){target=&quot;_blank&quot;}** - Lär dig hur du bygger arbetsflöden och kampanjer
 
 * **[Vad är [!DNL Adobe Campaign]](start/get-started.md)** - Nyckelfunktioner och användningsfall
 

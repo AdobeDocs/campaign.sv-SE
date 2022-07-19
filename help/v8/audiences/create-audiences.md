@@ -5,9 +5,9 @@ feature: Audiences, Profiles
 role: Data Engineer
 level: Beginner
 exl-id: 6fbe5616-7b8b-4504-988b-2bbbfd062548
-source-git-commit: 6de5c93453ffa7761cf185dcbb9f1210abd26a0c
+source-git-commit: 59046a11c3e057cf41c322f190a9d8aef310c356
 workflow-type: tm+mt
-source-wordcount: '795'
+source-wordcount: '785'
 ht-degree: 1%
 
 ---
@@ -103,7 +103,7 @@ I exemplet nedan skapar du en lista med alla mottagare mellan 25 och 40.
 
    ![](assets/targeting-wf-age-filter.png)
 
-   Lär dig hur du skapar en fråga i ett arbetsflöde i [Campaign Classic v7-dokumentation](https://experienceleague.adobe.com/docs/campaign-classic/using/automating-with-workflows/targeting-activities/query.html#creating-a-query){target=&quot;_blank&quot;}
+   Lär dig hur du skapar en fråga i ett arbetsflöde i [det här avsnittet](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/targeting-activities/query.html).
 
 1. Lägg till en etikett för frågan och spara ändringarna.
 1. Lägg till en **[!UICONTROL List update]** och redigera.
@@ -124,7 +124,7 @@ I exemplet nedan skapar du en lista med alla mottagare mellan 25 och 40.
 
    ![](assets/access-new-list.png)
 
-   Du kan göra det här arbetsflödet återkommande genom att lägga till en schemaläggare i arbetsflödet. Läs mer i [Campaign Classic v7-dokumentation](https://experienceleague.adobe.com/docs/campaign-classic/using/automating-with-workflows/flow-control-activities/scheduler.html){target=&quot;_blank&quot;}.
+   Du kan göra det här arbetsflödet återkommande genom att lägga till en schemaläggare i arbetsflödet. [Läs mer](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/flow-control-activities/scheduler.html).
 
 ## Ta bort en profil från en lista {#remove-a-profile-from-a-list}
 

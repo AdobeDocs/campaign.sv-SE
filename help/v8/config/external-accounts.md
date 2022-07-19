@@ -5,10 +5,10 @@ feature: Application Settings
 role: Data Engineer
 level: Beginner
 exl-id: 9634b576-2854-4ea9-ba0d-8efaab2c4aee
-source-git-commit: 8eb92dd1cacc321fc79ac4480a791690fc18511c
+source-git-commit: 59046a11c3e057cf41c322f190a9d8aef310c356
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '1090'
+ht-degree: 5%
 
 ---
 
@@ -42,7 +42,7 @@ Följande tekniska konton används av Adobe Campaign för att aktivera och köra
 
 The **Studsa meddelanden** externt konto anger det externa POP3-konto som ska användas för att ansluta till e-posttjänsten. Alla servrar som konfigurerats för POP3-åtkomst kan användas för att ta emot returmeddelanden.
 
-![](../assets/do-not-localize/book.png) Läs mer om inkommande e-post i [Campaign Classic v7-dokumentation](https://experienceleague.adobe.com/docs/campaign-classic/using/automating-with-workflows/event-activities/inbound-emails.html){target=&quot;_blank&quot;}
+Läs mer om inkommande e-post i [den här sidan](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/event-activities/inbound-emails.html)
 
 ![](assets/bounce_external_1.png)
 
@@ -165,7 +165,7 @@ När det gäller transaktionsmeddelanden är körningsinstanserna länkade till 
 
 Dessa externa konton kan användas för att importera eller exportera data till Adobe Campaign med en **[!UICONTROL Transfer file]** arbetsflödesaktivitet.
 
-![](../assets/do-not-localize/book.png) Läs mer om filöverföring i arbetsflöden i [Campaign Classic v7-dokumentation](https://experienceleague.adobe.com/docs/campaign-classic/using/automating-with-workflows/event-activities/file-transfer.html){target=&quot;_blank&quot;}
+Läs mer om filöverföring i arbetsflöden i [den här sidan](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/event-activities/file-transfer.html)
 
 * **FTP och SFTP**
 
@@ -178,13 +178,13 @@ Om du vill göra det anger du den adress och de autentiseringsuppgifter som ska 
 
    * **[!UICONTROL AWS S3 Account Server]**: URL-adressen till servern, ifylld så här:   ```<S3bucket name>.s3.amazonaws.com/<s3object path>```
 
-   * **[!UICONTROL AWS access key ID]**: Lär dig hur du hittar ditt ID för AWS-åtkomstnyckel i [Amazon-dokumentation](https://docs.aws.amazon.com/general/latest/gr/aws-sec-cred-types.html#access-keys-and-secret-access-keys) .
+   * **[!UICONTROL AWS access key ID]**: Lär dig hur du hittar ditt ID för AWS-åtkomstnyckel i [Amazon-dokumentation](https://docs.aws.amazon.com/general/latest/gr/aws-sec-cred-types.html#access-keys-and-secret-access-keys){target=&quot;_blank&quot;}.
 
-   * **[!UICONTROL Secret access key to AWS]**: Lär dig hur du hittar din hemliga åtkomstnyckel till AWS i [Amazon-dokumentation](https://aws.amazon.com/fr/blogs/security/wheres-my-secret-access-key/).
+   * **[!UICONTROL Secret access key to AWS]**: Lär dig hur du hittar din hemliga åtkomstnyckel till AWS i [Amazon-dokumentation](https://aws.amazon.com/fr/blogs/security/wheres-my-secret-access-key/){target=&quot;_blank&quot;}.
 
-   * **[!UICONTROL AWS Region]**: Läs mer om AWS regioner i [Amazon-dokumentation](https://aws.amazon.com/about-aws/global-infrastructure/regions_az/).
+   * **[!UICONTROL AWS Region]**: Läs mer om AWS regioner i [Amazon-dokumentation](https://aws.amazon.com/about-aws/global-infrastructure/regions_az/){target=&quot;_blank&quot;}.
 
-   * The **[!UICONTROL Use server side encryption]** kan du lagra filen i S3-krypterat läge. Lär dig hur du hittar åtkomstnyckel-ID och hemlig åtkomstnyckel i [Amazon-dokumentation](https://docs.aws.amazon.com/general/latest/gr/aws-sec-cred-types.html#access-keys-and-secret-access-keys).
+   * The **[!UICONTROL Use server side encryption]** kan du lagra filen i S3-krypterat läge. Lär dig hur du hittar åtkomstnyckel-ID och hemlig åtkomstnyckel i [Amazon-dokumentation](https://docs.aws.amazon.com/general/latest/gr/aws-sec-cred-types.html#access-keys-and-secret-access-keys){target=&quot;_blank&quot;}.
 
 * **Azure Blob Storage**
 
@@ -194,4 +194,4 @@ Om du vill göra det anger du den adress och de autentiseringsuppgifter som ska 
 
    * **[!UICONTROL Encryption]**: Typ av kryptering mellan **[!UICONTROL None]** eller **[!UICONTROL SSL]**.
 
-   * **[!UICONTROL Access key]**: Lär dig hur du hittar **[!UICONTROL Access key]** in [Microsoft-dokumentation](https://docs.microsoft.com/en-us/azure/storage/common/storage-account-keys-manage?tabs=azure-portal).
+   * **[!UICONTROL Access key]**: Lär dig hur du hittar **[!UICONTROL Access key]** in [Microsoft-dokumentation](https://docs.microsoft.com/en-us/azure/storage/common/storage-account-keys-manage?tabs=azure-portal){target=&quot;_blank&quot;}.

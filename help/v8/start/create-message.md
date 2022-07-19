@@ -5,10 +5,10 @@ feature: Email, Push, SMS, Direct Mail, Cross Channel Orchestration
 role: Data Engineer
 level: Beginner
 exl-id: 6cf8a929-637e-4e51-9160-5980ca727efb
-source-git-commit: 8eb92dd1cacc321fc79ac4480a791690fc18511c
+source-git-commit: 0a55d947a7646aab64ab2f9d0d09a6f930db576e
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '633'
+ht-degree: 2%
 
 ---
 
@@ -48,13 +48,13 @@ När meddelandet har skapats och dess innehåll har utformats och testats kan du
 
    ![](assets/deliveries-in-a-campaign.png)
 
-   ![](../assets/do-not-localize/book.png) Lär dig hur du skickar meddelanden i samband med en kampanj i [Campaign Classic v7-dokumentation](https://experienceleague.adobe.com/docs/campaign-classic/using/orchestrating-campaigns/orchestrate-campaigns/marketing-campaign-deliveries.html){target=&quot;_blank&quot;}
+   Lär dig hur du skickar meddelanden i samband med en kampanj i [det här avsnittet](https://experienceleague.adobe.com/docs/campaign/automation/campaign-orchestration/marketing-campaign-deliveries.html)
 
 * Skicka meddelanden via [arbetsflöde](../config/workflows.md)
 
    ![](assets/send-in-a-wf.png)
 
-   ![](../assets/do-not-localize/book.png) Lär dig automatisera e-postleveranser i [Campaign Classic v7-dokumentation](https://experienceleague.adobe.com/docs/campaign-classic/using/automating-with-workflows/action-activities/delivery.html){target=&quot;_blank&quot;}
+   ![](../assets/do-not-localize/glass.png) Lär dig automatisera e-postleveranser i [den här sidan](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/action-activities/delivery.html)
 
 * [Utlösarmeddelanden](../send/transactional.md) från en händelse
    ![](../assets/do-not-localize/book.png) [Användningsfall: lära dig hur du skickar ett transaktionsmejl med en bifogad fil](https://experienceleague.adobe.com/docs/campaign-classic/using/transactional-messaging/transactional-email-with-attachments.html?lang=en){target=&quot;_blank&quot;}
@@ -63,7 +63,7 @@ När meddelandet har skapats och dess innehåll har utformats och testats kan du
 
    ![](assets/schedule-send.png)
 
-   ![](../assets/do-not-localize/book.png) [Användningsfall: läs om schemat och skicka födelsedag via e-post](https://experienceleague.adobe.com/docs/campaign-classic/using/automating-with-workflows/use-cases/deliveries/sending-a-birthday-email.html?){target=&quot;_blank&quot;}
+   ![](../assets/do-not-localize/glass.png) [Användningsfall: läs om schemat och skicka födelsedag via e-post](https://experienceleague.adobe.com/docs/campaign/automation/workflows/use-cases/deliveries/send-a-birthday-email.html)
 
 
 ## Lägg till personalisering{#personalization}

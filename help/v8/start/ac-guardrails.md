@@ -5,9 +5,9 @@ feature: Overview
 role: Data Engineer
 level: Beginner
 exl-id: 50c254ba-cc33-49b2-b7d5-12aa69883c07
-source-git-commit: cda523168525c24ec1c976850bc336f273276ac9
+source-git-commit: 0a55d947a7646aab64ab2f9d0d09a6f930db576e
 workflow-type: tm+mt
-source-wordcount: '257'
+source-wordcount: '249'
 ht-degree: 1%
 
 ---
@@ -28,4 +28,4 @@ Garantier och begränsningar identifierar funktioner, arkitektur eller processer
 * När det gäller [Företagsdistribution (FFDA)](../architecture/enterprise-deployment.md), prenumerationer (deltagande) och avanmälan (avanmälan) och mobilregistrering är asynkrona processer. Begäranden behandlas varje timme i ett specifikt tekniskt arbetsflöde. [Läs mer](../architecture/replication.md#tech-wf)
 * Dubbletter måste hanteras manuellt av slutanvändarna. [Läs mer](../architecture/keys.md)
 * Adobe Campaign v8 stöder inte utökad genomströmning i API och webbprogram - om det finns särskilda behov kan du kontakta Adobe för att få hjälp
-* Adobe Campaign Campaign Optimization Module tar inte hänsyn till schemalagda leveranser i regler för trycktypologi. Läs mer i [Campaign Classic v7-dokumentation](https://experienceleague.adobe.com/docs/campaign-classic/using/orchestrating-campaigns/campaign-optimization/pressure-rules.html?lang=en#setting-the-period){target=&quot;_blank&quot;}
+* Adobe Campaign Campaign Optimization Module tar inte hänsyn till schemalagda leveranser i regler för trycktypologi. Läs mer i [den här sidan](https://experienceleague.adobe.com/docs/campaign/automation/campaign-optimization/pressure-rules.html).

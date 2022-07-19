@@ -5,10 +5,10 @@ feature: Email
 role: Data Engineer
 level: Beginner
 exl-id: 97dcd0e0-db5b-45a4-96af-817e49f6cb64
-source-git-commit: 8eb92dd1cacc321fc79ac4480a791690fc18511c
+source-git-commit: 0a55d947a7646aab64ab2f9d0d09a6f930db576e
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '576'
+ht-degree: 2%
 
 ---
 
@@ -75,12 +75,12 @@ I följande exempel får du lära dig hur du utformar en e-postleverans i Adobe 
    När innehållet är klart klickar du på **Spara**: den visas nu i din lista över leveranser i **[!UICONTROL Campaigns > Deliveries]** -fliken. Din första e-postleverans är klar. Nu måste ni definiera målgruppen, validera leveransen och skicka den.
 
 
-Läs mer i följande avsnitt av dokumentationen för Campaign Classic v7:
+Lär dig hur du importerar ett e-postinnehåll i det här [användningsfall](https://experienceleague.adobe.com/docs/campaign/automation/workflows/use-cases/deliveries/load-delivery-content.html).
+
+Läs mer i dessa avsnitt av **Campaign Classic v7-dokumentation**:
 
 * Designa ett e-postmeddelande i Campaign
    ![](../assets/do-not-localize/book.png) [Lär dig hur du utformar ett e-postmeddelande](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/sending-emails/defining-the-email-content.html){target=&quot;_blank&quot;}
-* Importera ett e-postinnehåll
-   ![](../assets/do-not-localize/book.png) [Användningsfall: Skapa ett arbetsflöde för att läsa in ett leveransinnehåll](https://experienceleague.adobe.com/docs/campaign-classic/using/automating-with-workflows/use-cases/deliveries/loading-delivery-content.html){target=&quot;_blank&quot;}
 * Skapa och använda en e-postmall
    ![](../assets/do-not-localize/book.png) [Läs mer om e-postmallar](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/using-delivery-templates/about-templates.html){target=&quot;_blank&quot;}
 * Välj publik för ditt e-postmeddelande

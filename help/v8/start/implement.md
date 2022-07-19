@@ -5,10 +5,10 @@ feature: Overview
 role: Data Engineer
 level: Beginner
 exl-id: 09562b6c-3d3d-4808-a70b-202172867f46
-source-git-commit: 6de5c93453ffa7761cf185dcbb9f1210abd26a0c
+source-git-commit: 0a55d947a7646aab64ab2f9d0d09a6f930db576e
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '1170'
+ht-degree: 3%
 
 ---
 
@@ -77,17 +77,19 @@ Innan du börjar skicka meddelanden och skapa marknadsföringskampanjer måste d
 
    Kampanjer, leveranser, jobb eller arbetsflöden är alla baserade på en mall som lagrar viktiga inställningar och funktioner. En inbyggd mall tillhandahålls för varje komponent som ingen specifik konfiguration har definierats för. Du måste konfigurera och anpassa mallar efter dina behov och göra dem tillgängliga för slutanvändarna.
 
-   ![](../assets/do-not-localize/book.png) [Läs mer om e-postmallar](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/using-delivery-templates/about-templates.html){target=&quot;_blank&quot;}
 
-   ![](../assets/do-not-localize/book.png) Lär dig hur du arbetar med kampanjmallar i [Campaign Classic v7-dokumentation](https://experienceleague.adobe.com/docs/campaign-classic/using/orchestrating-campaigns/orchestrate-campaigns/marketing-campaign-templates.html?lang=en#orchestrating-campaigns){target=&quot;_blank&quot;}
+   ![](../assets/do-not-localize/glass.png) Lär dig hur du arbetar med kampanjmallar i [den här sidan](https://experienceleague.adobe.com/docs/campaign/automation/campaign-orchestration/marketing-campaign-templates.html)
 
-   ![](../assets/do-not-localize/book.png) Lär dig hur du konfigurerar en arbetsflödesmall i [Campaign Classic v7-dokumentation](https://experienceleague.adobe.com/docs/campaign-classic/using/automating-with-workflows/introduction/building-a-workflow.html?lang=en#workflow-templates){target=&quot;_blank&quot;}
+   ![](../assets/do-not-localize/glass.png) Lär dig hur du konfigurerar en arbetsflödesmall i [den här sidan](https://experienceleague.adobe.com/docs/campaign/automation/workflows/introduction/build-a-workflow.html)
+
+   ![](../assets/do-not-localize/book.png) Läs mer om e-postmallar i [Campaign Classic v7-dokumentation](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/using-delivery-templates/about-templates.html){target=&quot;_blank&quot;}
+
 
 1. Konfigurera typologiregler
 
    Använd regler för kampanjtypologier för att filtrera, styra och övervaka leveransen. Trötthetsreglerna styr till exempel frekvens och kvantitet för meddelanden för att undvika att mottagarna blir för många. När typologireglerna är implementerade refereras de i leveranser.
 
-   ![](../assets/do-not-localize/book.png) Läs mer om typologier och trötthetshantering i [Campaign Classic v7-dokumentation](https://experienceleague.adobe.com/docs/campaign-classic/using/orchestrating-campaigns/campaign-optimization/about-campaign-typologies.html?lang=en#orchestrating-campaigns){target=&quot;_blank&quot;}
+   Läs mer om typologier och trötthetshantering i [det här avsnittet](https://experienceleague.adobe.com/docs/campaign/automation/campaign-optimization/campaign-typologies.html).
 
 1. Bekanta dig med Campaigns inbyggda datamodell
 

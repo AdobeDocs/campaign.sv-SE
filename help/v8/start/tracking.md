@@ -5,9 +5,9 @@ feature: Monitoring
 role: Data Engineer
 level: Beginner
 exl-id: f3de901f-519f-42ae-846c-f20c7cb560df
-source-git-commit: c6a234f6c43531be032354d134e4745ad77cbcc7
+source-git-commit: 0a55d947a7646aab64ab2f9d0d09a6f930db576e
 workflow-type: tm+mt
-source-wordcount: '905'
+source-wordcount: '898'
 ht-degree: 2%
 
 ---
@@ -123,7 +123,7 @@ Läs mer om den information du kan övervaka när du har skickat en leverans, f�
 
 ### Övervaka dina arbetsflöden
 
-Lär dig övervaka arbetsflödeskörning i  [Campaign Classic v7-dokumentation](https://experienceleague.adobe.com/docs/campaign-classic/using/automating-with-workflows/monitoring-workflows/monitoring-workflow-execution.html?lang=en#automating-with-workflows){target=&quot;_blank&quot;}
+Lär dig övervaka arbetsflödeskörning i [den här sidan](https://experienceleague.adobe.com/docs/campaign/automation/workflows/monitoring-workflows/monitor-workflow-execution.html)
 
 ### Övervaka instansen
 

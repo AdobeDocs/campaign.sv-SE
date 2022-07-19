@@ -5,10 +5,10 @@ feature: Workflows
 role: Data Engineer
 level: Beginner
 exl-id: 7b145193-d4ae-47d0-b694-398c1e35eee4
-source-git-commit: c44fb2de4ed0e1661801313ae0430ba9d19542f0
+source-git-commit: 59046a11c3e057cf41c322f190a9d8aef310c356
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '382'
+ht-degree: 2%
 
 ---
 
@@ -20,7 +20,7 @@ När det gäller [Företagsdistribution (FFDA)](enterprise-deployment.md)Adobe C
 
 Dessa arbetsflöden utför underhållsåtgärder på databasen, utnyttjar spårningsinformationen i leveransloggarna, skapar återkommande kampanjer med mera.
 
-![](../assets/do-not-localize/book.png) En fullständig lista över tekniska arbetsflöden finns i [Campaign Classic v7-dokumentation](https://experienceleague.adobe.com/docs/campaign-classic/using/automating-with-workflows/advanced-management/about-technical-workflows.html){target=&quot;_blank&quot;}
+![](../assets/do-not-localize/glass.png) En fullständig lista över tekniska arbetsflöden finns i [den här sidan](https://experienceleague.adobe.com/docs/campaign/automation/workflows/introduction/wf-type/technical-workflows.html).
 
 Utöver dessa tekniska arbetsflöden förlitar sig Campaign v8 på specifika tekniska arbetsflöden för att hantera [datareplikering](#data-replication).
 
@@ -74,6 +74,6 @@ nlserver ffdaReplicateStaging -stagingSchema -instance:acc1
 
 **Relaterade ämnen**
 
-![](../assets/do-not-localize/book.png) Lär dig hur du kommer igång med arbetsflöden i [Campaign Classic v7-dokumentation](https://experienceleague.adobe.com/docs/campaign-classic/using/automating-with-workflows/introduction/about-workflows.html?lang=en#automating-with-workflows){target=&quot;_blank&quot;}
+* [Lär dig hur du kommer igång med arbetsflöden](https://experienceleague.adobe.com/docs/campaign/automation/workflows/introduction/about-workflows.html)
 
-![](../assets/do-not-localize/glass.png) Få datalagringsperioder i [det här avsnittet](../dev/datamodel-best-practices.md#data-retention)
+* [Datalagringsperioder](../dev/datamodel-best-practices.md#data-retention)

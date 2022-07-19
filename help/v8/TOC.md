@@ -2,12 +2,12 @@
 audience: end-user
 user-guide-title: Campaign v8
 description: Dokumentation om Campaign v8
-breadcrumb-title: Campaign v8
+breadcrumb-title: Kampanjöversikt
 title: Kampanjdokument v8
-source-git-commit: cda523168525c24ec1c976850bc336f273276ac9
+source-git-commit: ca52da16933f57181a0c4228bda9a2d33ebcedef
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '361'
+ht-degree: 27%
 
 ---
 
@@ -138,4 +138,4 @@ ht-degree: 0%
       + [Inmatningsformulär](dev/forms.md)
    + [Kampanj-API:er](dev/api.md)
 + [Kontrollpanelen i Campaign](https://experienceleague.adobe.com/docs/control-panel/using/control-panel-home.html?lang=sv)
-
++ [Guide för kampanjautomatisering](https://experienceleague.adobe.com/docs/campaign/automation/home.html)

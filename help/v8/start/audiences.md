@@ -5,10 +5,10 @@ feature: Audiences
 role: Data Engineer
 level: Beginner
 exl-id: 07baa759-fb0b-4eba-bf8b-ec6cf21df7f8
-source-git-commit: 6de5c93453ffa7761cf185dcbb9f1210abd26a0c
+source-git-commit: 0a55d947a7646aab64ab2f9d0d09a6f930db576e
 workflow-type: tm+mt
-source-wordcount: '509'
-ht-degree: 14%
+source-wordcount: '489'
+ht-degree: 16%
 
 ---
 
@@ -36,7 +36,7 @@ Med filterkonfigurationen kan du välja data från en lista **[!UICONTROL dynami
 
 Målinriktning kan skapas med en kombination av frågor i en grafisk sekvens i ett arbetsflöde. Ni kan skapa målgrupper som anpassas efter era behov. Om du vill visa arbetsflödesredigeraren klickar du på **[!UICONTROL Targeting and workflows]** på kampanjkontrollpanelen.
 
-![](../assets/do-not-localize/book.png) Lär dig hur du skapar en målgrupp i ett kampanjarbetsflöde i [Adobe Campaign Classic v7-dokumentation](https://experienceleague.adobe.com/docs/campaign-classic/using/orchestrating-campaigns/orchestrate-campaigns/marketing-campaign-target.html?lang=en#building-the-main-target-in-a-workflow){target=&quot;_blank&quot;}.
+Lär dig hur du skapar en målgrupp i ett kampanjarbetsflöde i [den här sidan](https://experienceleague.adobe.com/docs/campaign/automation/campaign-orchestration/marketing-campaign-target.html)
 
 
 ## Aktiva profiler{#active-profiles}
@@ -57,10 +57,10 @@ Adobe Campaign är ett kraftfullt verktyg för att samla in och behandla stora d
 
 ![](../assets/do-not-localize/book.png) Lär dig hantera sekretess och samtycke i [Adobe Campaign Classic v7-dokumentation](https://experienceleague.adobe.com/docs/campaign-classic/using/getting-started/privacy/privacy-and-recommendations.html){target=&quot;_blank&quot;}.
 
-**Relaterade ämnen** Campaign Classic v7-dokumentation:
+**Relaterade ämnen**
 
-* [Utforma och genomför ett kampanjspecifikt arbetsflöde](https://experienceleague.adobe.com/docs/campaign-classic/using/automating-with-workflows/introduction/building-a-workflow.html){target=&quot;_blank&quot;}
+* [Utforma och genomför ett kampanjspecifikt arbetsflöde](https://experienceleague.adobe.com/docs/campaign/automation/workflows/introduction/wf-type/campaign-workflows.html)
 
-* [Lär dig hur du väljer målgrupp för en kampanj](https://experienceleague.adobe.com/docs/campaign-classic/using/orchestrating-campaigns/orchestrate-campaigns/marketing-campaign-target.html){target=&quot;_blank&quot;}
+* [Lär dig hur du väljer målgrupp för en kampanj](https://experienceleague.adobe.com/docs/campaign/automation/campaign-orchestration/marketing-campaign-target.html)
 
-* [Kom igång med arbetsflöden](https://experienceleague.adobe.com/docs/campaign-classic/using/automating-with-workflows/introduction/about-workflows.html){target=&quot;_blank&quot;}
+* [Kom igång med arbetsflöden](https://experienceleague.adobe.com/docs/campaign/automation/workflows/introduction/about-workflows.html)
