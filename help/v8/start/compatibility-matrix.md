@@ -5,16 +5,16 @@ feature: Overview
 role: Data Engineer
 level: Beginner
 exl-id: 4be3a6dc-0c61-4534-b9dd-6c99c8a037a9,870a336f-94ac-4171-891b-67614feef6ef,bebdd930-c7f6-4629-a489-3c704b33f058,d493e613-eb61-43b1-9c6d-1bd881af0734
-source-git-commit: 39edd6c60c220118f34cd476b887194e1e7763e4
+source-git-commit: 50b6c9c8f55bb870e95c91bd1de22e3392e732dd
 workflow-type: tm+mt
-source-wordcount: '356'
-ht-degree: 32%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
 # Kompatibilitetsmatris för Campaign v8
 
-Det här dokumentet listar alla system och komponenter som stöds för den senaste builden av **Adobe Campaign v8**. Om inget annat anges stöds alla mindre versioner. Produkter och versioner som inte ingår i den här listan är inte kompatibla med Adobe Campaign.
+Det här dokumentet innehåller en lista över alla system och komponenter som stöds för **senaste versionen av Adobe Campaign v8**. Om inget annat anges stöds alla mindre versioner. Produkter och versioner som inte ingår i den här listan är inte kompatibla med Adobe Campaign.
 
 Eftersom vissa versioner av dessa system och verktyg från tredje part når slutet av livscykeln, kommer Adobe Campaign inte längre att vara kompatibelt med dessa versioner och kommer att tas bort från den här kompatibilitetsmatrisen. Se till att du använder versioner av system som stöds i kompatibilitetsmatrisen för att undvika problem.
 
@@ -24,20 +24,14 @@ Eftersom vissa versioner av dessa system och verktyg från tredje part når slut
 
 ## Klientkonsol{#ClientConsoleoperatingsystems}
 
-Följande operativsystem och webbläsare krävs för att använda klientkonsolen i Campaign. [Läs mer](connect.md).
-
-### Operativsystem
+Ett av följande operativsystem krävs för att använda Campaign Client Console. [Läs mer](connect.md).
 
 * **Microsoft Windows Server** 2019, 2016, 2012
-* **Microsoft Windows** 11 (med början Campaign v8.3), 10, 8,
+* **Microsoft Windows** 11 (med början Campaign v8.3), 10, 8
 
 >[!NOTE]
 >
 >Microsoft Windows 10 rekommenderas för japanska förekomster.
-
-### Webbläsare
-
-**Microsoft Internet Explorer** 11
 
 ## CRM-kopplingar{#CRMconnectors}
 
@@ -55,7 +49,7 @@ Externa databaser som är kompatibla med Adobe Campaign FDA-modulen (Federated D
 * **[!DNL Snowflake]**
 * **[!DNL Vertica]**
 
-## Mobilt SDK{#MobileSDK}
+## Mobil-SDK{#MobileSDK}
 
 Du kan använda Campaign för att skicka [push-meddelanden](../send/push.md) i de operativsystem som anges nedan med tillhörande mobil-SDK.
 
