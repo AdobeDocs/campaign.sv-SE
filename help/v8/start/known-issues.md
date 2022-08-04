@@ -4,10 +4,8 @@ description: Kända fel i den senaste Campaign-versionen
 feature: Overview
 role: Data Engineer
 level: Beginner
-hide: true
-hidefromtoc: true
 exl-id: 89a4ab6c-de8e-4408-97d2-8b8e574227f9
-source-git-commit: cda523168525c24ec1c976850bc336f273276ac9
+source-git-commit: 75472fd428ec218de0c48f02caf859f8ff40bdc6
 workflow-type: tm+mt
 source-wordcount: '401'
 ht-degree: 0%
