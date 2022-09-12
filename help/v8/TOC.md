@@ -4,10 +4,10 @@ user-guide-title: Campaign v8
 description: Dokumentation om Campaign v8
 breadcrumb-title: Kampanjöversikt
 title: Kampanjdokument v8
-source-git-commit: ca52da16933f57181a0c4228bda9a2d33ebcedef
+source-git-commit: a41bebfeb352b2f81f81b46c39b5f9b64431455b
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '363'
+ht-degree: 26%
 
 ---
 
@@ -67,6 +67,7 @@ ht-degree: 0%
       + [Importera profiler från en fil](audiences/import-profiles.md)
       + [Arbeta med externa profiler](audiences/external-profiles.md)
       + [Samla in profildata i webbformulär](audiences/collect-profiles.md)
+      + [Målmappningar](audiences/target-mappings.md)
    + Skapa målgrupper {#create-audiences}
       + [Skapa en lista med kontakter](audiences/create-audiences.md)
       + [Skapa och hantera filter](audiences/create-filters.md)
