@@ -2,11 +2,13 @@
 keywords: Campaign Automation;home;populära topics
 product: campaign
 title: Adobe Campaign Automation Home
-description: Overview
-source-git-commit: 2b1dec4b9c456df4dfcebfe10d18e0ab01599275
+feature: Overview
+description: Översikt
+exl-id: 9ed73e65-3626-46c6-bfeb-a9fe9c2d7f72
+source-git-commit: 190707b8b1ea5f90dc6385c13832fbb01378ca1d
 workflow-type: tm+mt
-source-wordcount: '186'
-ht-degree: 5%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
@@ -77,4 +79,3 @@ Gå till guiderna nedan och lär dig hur du bygger automatisering med Adobe Camp
   </td>
 </tr>
 </table>
-
