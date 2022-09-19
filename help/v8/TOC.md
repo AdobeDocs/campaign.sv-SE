@@ -4,9 +4,9 @@ user-guide-title: Campaign v8
 description: Dokumentation om Campaign v8
 breadcrumb-title: Kampanjöversikt
 title: Kampanjdokument v8
-source-git-commit: 2c79ee6ae79355fba2a5f269076cf90a683a6070
+source-git-commit: fdaf107fd22f439a728f32ceb8cfc13a8c5bc1ad
 workflow-type: tm+mt
-source-wordcount: '365'
+source-wordcount: '368'
 ht-degree: 26%
 
 ---
@@ -83,6 +83,7 @@ ht-degree: 26%
    + [Direktmeddelande](send/direct-mail.md)
    + [Social marknadsföring](send/twitter.md)
    + [Transaktionsmeddelanden](send/transactional.md)
+   + [Tidsoptimering för sändning](send/predictive.md)
    + Fel, studsar och karantän{#failures}
       + [Karantän](send/quarantines.md)
       + [Leveransfel](send/delivery-failures.md)
