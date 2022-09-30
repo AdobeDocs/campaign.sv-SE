@@ -6,10 +6,10 @@ role: Admin, Developer, User
 level: Beginner, Intermediate, Experienced
 hidefromtoc: false
 exl-id: 7cf8111d-9f3a-46a4-813a-d4e43a1d1471
-source-git-commit: d0cabf4d5b8d177f1ff0a1be6163e9abe65c57d6
+source-git-commit: c1a5dd3fcad5d377acb2f9df3a090897ed3b533e
 workflow-type: tm+mt
-source-wordcount: '2758'
-ht-degree: 30%
+source-wordcount: '2754'
+ht-degree: 29%
 
 ---
 
@@ -65,9 +65,9 @@ _30 september 2022_
 
 **Förbättringar**
 
-* Efter Microsoft Internet Explorer 11 är återgivningsmotorn för HTML i konsolen nu igång **Microsoft Edge Chromium**. Dessutom installeras **Microsoft Edge WebView 2** Körning krävs nu för alla installationer av klientkonsolen. Läs mer
+* Efter Microsoft Internet Explorer 11 är återgivningsmotorn för HTML i konsolen nu igång **Microsoft Edge Chromium**. Dessutom installeras **Microsoft Edge WebView 2** Körning krävs nu för alla installationer av klientkonsolen.
 * Förbättrad arbetsflödeskörning med hög tillgänglighet för arbetsflöde, som gör att du kan köra samtidiga arbetsflöden i olika behållare för att förhindra att tjänsten för arbetsflöde går förlorad och undvika relaterade körningsfel. **Anteckning**: Den nya funktionen lanseras endast i begränsad tillgänglighet för en uppsättning kunder.
-* Sekretessförfrågningar utförs nu i batch för ett givet sekretessnamnområde. Den här förbättringen ökar körningstiden för begäranden om GDPR/sekretess-borttagning. Läs mer
+* Sekretessförfrågningar utförs nu i batch för ett givet sekretessnamnområde. Den här förbättringen ökar körningstiden för begäranden om GDPR/sekretess-borttagning.
 
 **Kompatibilitetsuppdateringar**
 
