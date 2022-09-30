@@ -2,13 +2,13 @@
 title: Skicka e-post med Adobe Campaign
 description: Kom igång med e-post i Campaign
 feature: Email
-role: Data Engineer
+role: User
 level: Beginner
 exl-id: 97dcd0e0-db5b-45a4-96af-817e49f6cb64
-source-git-commit: 0a55d947a7646aab64ab2f9d0d09a6f930db576e
+source-git-commit: 2ce1ef1e935080a66452c31442f745891b9ab9b3
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '576'
+ht-degree: 2%
 
 ---
 

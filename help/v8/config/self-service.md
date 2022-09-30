@@ -2,10 +2,10 @@
 title: Kontrollpanelen i Campaign
 description: Kom igång med Campaign Control Panel
 feature: Control Panel
-role: Data Engineer
-level: Beginner
+role: User, Admin
+level: Beginner, Intermediate
 exl-id: b8aa89ac-19f4-4df3-9f36-860aca61bea3
-source-git-commit: 8eb92dd1cacc321fc79ac4480a791690fc18511c
+source-git-commit: 2ce1ef1e935080a66452c31442f745891b9ab9b3
 workflow-type: tm+mt
 source-wordcount: '410'
 ht-degree: 52%
@@ -44,7 +44,7 @@ Läs om hur man övervakar underdomäner och deras certifikat.
 
 * [Övervaka dina underdomäner](https://experienceleague.adobe.com/docs/control-panel/using/subdomains-and-certificates/monitoring-subdomains.html){target=&quot;_blank&quot;}
 * [Konfigurera en ny underdomän](https://experienceleague.adobe.com/docs/control-panel/using/subdomains-and-certificates/setting-up-new-subdomain.html){target=&quot;_blank&quot;}
-* [Övervaka dina underdomäners SSL-certifikat](https://experienceleague.adobe.com/docs/control-panel/using/subdomains-and-certificates/monitoring-ssl-certificates.html){target=&quot;_blank&quot;}
+* [Övervaka dina underdomäners SSL-certifikat](https://experienceleague.adobe.com/docs/control-panel/using/subdomains-and-certificates/monitoring-ssl-certificates.html?lang=sv){target=&quot;_blank&quot;}
 
 ## Prestandaövervakning
 

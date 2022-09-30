@@ -1,14 +1,14 @@
 ---
 title: Anslut till Campaign v8
 description: Lär dig hur du ansluter till Campaign v8
-feature: Audiences
-role: Data Engineer
+feature: Client Console
+role: User
 level: Beginner
 exl-id: 176cc4f0-8827-4127-9f03-7d75ac8cf917
-source-git-commit: 6de5c93453ffa7761cf185dcbb9f1210abd26a0c
+source-git-commit: 2ce1ef1e935080a66452c31442f745891b9ab9b3
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '832'
+ht-degree: 1%
 
 ---
 
@@ -21,6 +21,13 @@ Innan du börjar måste du:
 * Kontrollera system- och verktygskompatibiliteten med Adobe Campaign i [Kompatibilitetsmatris](compatibility-matrix.md)
 * Hämta webbadressen till Campaign-servern
 * Skapa din Adobe ID eller hämta dina användaruppgifter från ditt företag
+* Installera Microsoft Edge Webview2-miljön på datorn (från version Campaign Classic 8.4). [Läs mer](#webview)
+
+## Installation av Microsoft Edge Webview2 {#webview}
+
+Från version 8.4 av Campaign Classic krävs installation av Microsoft Edge Webview 2 för alla konsolinstallationer.
+
+Webbvyn installeras som standard som en del av operativsystemet Windows 11. Om det inte redan finns på datorn uppmanas du att hämta det från Campaign Console Installer [Microsoft Developer website](http://www.adobe.com/go/acc-ms-webview2-runtime-download). Observera att nedladdningslänken inte fungerar i webbläsaren Internet Explorer 11 eftersom Microsoft inte längre stöder det. Kontrollera att du använder en annan webbläsare för att komma åt länken.
 
 ## Hämta och installera klientkonsolen{#download-ac-console}
 
@@ -77,6 +84,10 @@ Så här loggar du in på en befintlig instans:
 1. Du kan sedan logga in på Campaign med [din Adobe ID](#connect-ims).
 
    ![](assets/adobeID.png)
+
+>[!NOTE]
+>
+>För kampanjversioner med klassisk version 8.4 kan Adobe Campaign-klientkonsolen begära proxyautentiseringsuppgifter två gånger under proxyautentiseringen. Detta beror på att Microsoft Edge Webview2 inte sparar proxyautentiseringsuppgifter i cache-/lösenordsarkivet, till skillnad från Internet Explorer.
 
 ## Bevilja åtkomst för användare{#grant-access}
 

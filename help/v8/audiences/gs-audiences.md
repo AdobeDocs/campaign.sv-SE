@@ -2,10 +2,10 @@
 title: Kom igång med profiler och målgrupper i Campaign
 description: Lär dig hur du skapar och hanterar profiler och målgrupper i Campaign
 feature: Audiences, Profiles
-role: Data Engineer
+role: User
 level: Beginner
 exl-id: 43483085-8aa6-47e6-89e7-9211e37beaa4
-source-git-commit: 6de5c93453ffa7761cf185dcbb9f1210abd26a0c
+source-git-commit: 2ce1ef1e935080a66452c31442f745891b9ab9b3
 workflow-type: tm+mt
 source-wordcount: '323'
 ht-degree: 9%

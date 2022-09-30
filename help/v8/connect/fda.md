@@ -2,10 +2,10 @@
 title: Arbeta med Campaign och externa databaser (FDA)
 description: Lär dig hur du arbetar med Campaign och externa databaser
 feature: Federated Data Access
-role: Data Engineer
-level: Beginner
+role: Admin
+level: Beginner, Intermediate
 exl-id: 0259b3bd-9dc2-44f9-a426-c4af46b00a4e
-source-git-commit: ca9275017e36dae2f0152e0ff365541d7cab96de
+source-git-commit: 2ce1ef1e935080a66452c31442f745891b9ab9b3
 workflow-type: tm+mt
 source-wordcount: '727'
 ht-degree: 1%

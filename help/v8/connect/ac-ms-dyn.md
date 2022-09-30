@@ -2,13 +2,13 @@
 title: Arbeta med Campaign och Microsoft Dynamics
 description: Lär dig hur du arbetar med Campaign och Microsoft Dynamics
 feature: Microsoft CRM Integration
-role: Data Engineer
-level: Beginner
+role: Admin, User
+level: Beginner, Intermediate, Experienced
 exl-id: 4f9e8f74-27dc-482c-a83c-25623b53560f
-source-git-commit: 8eb92dd1cacc321fc79ac4480a791690fc18511c
+source-git-commit: 2ce1ef1e935080a66452c31442f745891b9ab9b3
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '1366'
+ht-degree: 1%
 
 ---
 

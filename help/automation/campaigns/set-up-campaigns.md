@@ -1,16 +1,17 @@
 ---
 product: campaign
-title: Kom igång med marknadsföringskampanjer
+title: Skapa din första kampanjkampanj
 description: Lär dig hur ni börjar med marknadsföringskampanjer
 feature: Campaigns, Cross Channel Orchestration, Programs
-source-git-commit: 72467caf94e652ede70c00f1ea413012fc4c7e1f
+exl-id: eb1a0e52-14d9-4ad2-8bf2-ea955c6fd0f5
+source-git-commit: 2ce1ef1e935080a66452c31442f745891b9ab9b3
 workflow-type: tm+mt
 source-wordcount: '443'
-ht-degree: 3%
+ht-degree: 1%
 
 ---
 
-# Kom igång med marknadsföringskampanjer{#gs-marketing-campaigns}
+# Skapa din första kampanjkampanj{#gs-marketing-campaigns}
 
 Med Adobe Campaign kan ni definiera, optimera, genomföra och analysera kommunikation och marknadsföringskampanjer. Adobe Campaign fungerar som ett enhetligt center för order och genomförande av marknadsföringsstrategier. Hantera flera datakällor, definiera era målgruppssegment samt planera och genomföra flerstegskampanjer i flera kanaler via ett dra-och-släpp-gränssnitt för visuellt arbetsflöde.
 

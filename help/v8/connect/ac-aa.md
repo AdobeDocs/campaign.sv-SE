@@ -1,11 +1,11 @@
 ---
 title: Arbeta med Campaign och Adobe Analytics
 description: Lär dig integrera Campaign och Analytics
-feature: Analytics Integration
-role: Data Engineer
-level: Beginner
+feature: Analytics Integration, Reporting
+role: Admin, User
+level: Beginner, Intermediate
 exl-id: 11370fb6-e192-4626-944e-b80a7496e50d
-source-git-commit: 8eb92dd1cacc321fc79ac4480a791690fc18511c
+source-git-commit: 2ce1ef1e935080a66452c31442f745891b9ab9b3
 workflow-type: tm+mt
 source-wordcount: '1083'
 ht-degree: 76%

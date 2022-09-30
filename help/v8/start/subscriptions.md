@@ -2,12 +2,12 @@
 title: Hantera prenumerationer och avbeställningar i Campaign
 description: Lär dig hur du hanterar prenumerationer och avbeställningar i Campaign v8
 feature: Subscriptions
-role: Data Engineer
+role: User
 level: Beginner
 exl-id: d5933b12-8664-49b8-953c-ea98eb428cc2
-source-git-commit: 0a55d947a7646aab64ab2f9d0d09a6f930db576e
+source-git-commit: 2ce1ef1e935080a66452c31442f745891b9ab9b3
 workflow-type: tm+mt
-source-wordcount: '0'
+source-wordcount: '539'
 ht-degree: 0%
 
 ---

@@ -1,14 +1,13 @@
 ---
 title: Anpassa instansen
 description: Lär dig hur du anpassar instansen
-feature: Application Settings
-role: Data Engineer
-level: Beginner
+role: Developer
+level: Beginner, Intermediate, Experienced
 exl-id: 18000763-5923-48bd-b62d-cccd3c11016d
-source-git-commit: c44fb2de4ed0e1661801313ae0430ba9d19542f0
+source-git-commit: 2ce1ef1e935080a66452c31442f745891b9ab9b3
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '559'
+ht-degree: 6%
 
 ---
 

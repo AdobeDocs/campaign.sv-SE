@@ -2,13 +2,13 @@
 title: Koppla samman Campaign med era lösningar
 description: Lär dig hur ni kan koppla Campaign till era lösningar
 feature: Overview
-role: Data Engineer
-level: Beginner
+role: Admin, User
+level: Beginner, Intermediate
 exl-id: d1d57aa8-b811-470f-a8a6-18da3a700f1a
-source-git-commit: 8eb92dd1cacc321fc79ac4480a791690fc18511c
+source-git-commit: 2ce1ef1e935080a66452c31442f745891b9ab9b3
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '347'
+ht-degree: 12%
 
 ---
 
@@ -26,7 +26,7 @@ Modernisera implementeringen och utnyttja alla Adobe Experience Cloud-funktioner
 
 Campaign v8 kan kommunicera med:
 
-* [Adobe Experience Cloud Real-Time CDP](../connect/ac-rtcdp.md)
+* [Adobe Experience Platform](../connect/ac-aep.md)
 * [Adobe Journey Optimizer](https://experienceleague.adobe.com/docs/journeys/using/action-journeys/acc-action.html?lang=en).
 
    Se användningsfallet från början till slut [här](https://experienceleague.adobe.com/docs/journeys/using/use-cases-journeys/campaign-classic-use-case.html?lang=sv).

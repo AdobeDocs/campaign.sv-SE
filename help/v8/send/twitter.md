@@ -1,14 +1,12 @@
 ---
 title: Posta meddelanden på Twitter med Adobe Campaign
-description: Lär dig hur du använder Adobe Campaign Social Marketing Module för att publicera meddelanden på Twitter och samla in kontaktdata
-role: Data Engineer
-level: Beginner
-hide: true
-hidefromtoc: true
+description: Lär dig hur du använder Adobe Campaign Social Marketing Module för att publicera meddelanden på Twitter och skicka direktmeddelanden till dina följare
+role: User
+level: Beginner, Intermediate
 exl-id: 0783e289-ae8e-4bb7-80f1-f90937a528c1
-source-git-commit: 6de5c93453ffa7761cf185dcbb9f1210abd26a0c
+source-git-commit: 2ce1ef1e935080a66452c31442f745891b9ab9b3
 workflow-type: tm+mt
-source-wordcount: '898'
+source-wordcount: '829'
 ht-degree: 1%
 
 ---
@@ -20,7 +18,8 @@ Adobe Campaign har en **Social marknadsföring** så att ni kan interagera med k
 
 När integreringen är konfigurerad kan du:
 
-* Skicka meddelanden på Twitter: Med Adobe Campaign kan du skicka meddelanden direkt till ditt twitter-konto. Du kan också skicka direktmeddelanden till alla dina följare.
+* Skicka meddelanden på Twitter: Med Adobe Campaign kan du skicka direktmeddelanden till dina följare.
+* Posta tweets: använda Adobe Campaign för att posta tweets på ditt Twitter-konto.
 * Samla in nya kontakter: Adobe Campaign kan automatiskt återställa profildata, vilket gör att ni kan genomföra riktade kampanjer och, när det är möjligt, implementera flerkanalsstrategier. Den här åtgärden kräver användarens samtycke.
 
 Konfigurationssteg för att integrera ditt Twitter-konto med Adobe Campaign beskrivs i [den här sidan](../connect/ac-tw.md).
@@ -33,9 +32,13 @@ Följ stegen nedan för att skicka ett meddelande till ditt Twitter-konto:
 
    Skapa en ny leverans baserad på **[!UICONTROL Tweet (twitter)]** leveransmall.
 
+   ![](assets/tw-new-delivery.png)
+
 1. Välj huvudmålet
 
    Markera det eller de konton som du vill skicka tweets till.
+
+   ![](assets/tw-define-target.png)
 
    1. Klicka på länken **[!UICONTROL To]**.
    1. Klicka på knappen **[!UICONTROL Add]**.
@@ -46,7 +49,7 @@ Följ stegen nedan för att skicka ett meddelande till ditt Twitter-konto:
 
    The **[!UICONTROL Target of the proofs]** kan du definiera det Twitter-konto som ska användas för testleveranser före den slutliga leveransen.
 
-   Enligt informationen i [konfigurationssteg](../connect/ac-tw.md#tw-test-account)måste du skapa ett privat Twitter-konto för att skicka korrektur.
+   Enligt informationen i [konfigurationssteg](../connect/ac-tw.md#tw-test-account)måste du skapa ett privat test-Twitter-konto för att skicka korrektur.
 
    >[!NOTE]
    >
@@ -55,6 +58,8 @@ Följ stegen nedan för att skicka ett meddelande till ditt Twitter-konto:
 1. Definiera innehållet i ditt inlägg
 
    Ange innehållet i ditt inlägg i **[!UICONTROL Content]** -fliken.
+
+   ![](assets/tw-delivery-content.png)
 
    >[!CAUTION]
    >
@@ -68,18 +73,15 @@ Följ stegen nedan för att skicka ett meddelande till ditt Twitter-konto:
 
    Bläddra i **[!UICONTROL Preview]** för att kontrollera återgivningen av inlägget.
 
+   ![](assets/tw-delivery-preview.png)
+
    1. Klicka på **[!UICONTROL Preview]** -fliken.
    1. Klicka på **[!UICONTROL Test personalization]** nedrullningsbar meny och välj **[!UICONTROL Service]**.
    1. I **[!UICONTROL Folder]** markerar du den tjänstmapp som innehåller ditt Twitter-konto.
-   1. Välj det Twitter-konto som du vill testa förhandsgranskningen med.
 
 1. Skicka ett bevis
 
    Innan du publicerar din tweet kontrollerar du att den är godkänd genom att skicka ett korrektur av din publikation: Du kan sedan få en exakt återgivning av publikationen på en privat testsida i Twitter.
-
-   Mer information om hur du skapar ett privat Twitter-konto finns i [det här avsnittet](../connect/ac-tw.md#tw-test-account).
-
-   ![](../assets/do-not-localize/book.png) [Lär dig viktiga steg för att validera en leverans](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/key-steps-when-creating-a-delivery/steps-validating-the-delivery.html){target=&quot;_blank&quot;}
 
 1. Lägg upp meddelandet
 
@@ -87,7 +89,6 @@ Följ stegen nedan för att skicka ett meddelande till ditt Twitter-konto:
    1. Välj **[!UICONTROL Deliver as soon as possible]** och klicka på **[!UICONTROL Analyze]** -knappen.
    1. Kontrollera resultatet när analysen är klar.
    1. Klicka **[!UICONTROL Confirm delivery]** och sedan klicka **[!UICONTROL Yes]**.
-
 
 ## Skicka direktmeddelanden till följare {#direct-tw-messages}
 
@@ -99,38 +100,44 @@ Följ stegen nedan för att skicka direktmeddelanden till dina följare:
 
 1. Välj huvudmålet
 
-1. Välj **[!UICONTROL To]** länk och **[!UICONTROL Add]** -knappen.
+   ![](assets/tw-dm-define-target.png)
 
-1. Välj en typ av mål
+   1. Välj **[!UICONTROL To]** länk och **[!UICONTROL Add]** -knappen.
 
-   * Välj **[!UICONTROL Twitter subscribers]** för att skicka ett direktmeddelande till alla dina följare.
+   1. Välj en typ av målinriktning
 
-   * Välj **[!UICONTROL Filter conditions]** för att definiera en fråga och visa resultatet. Det här alternativet är detsamma som för e-postleveranser. Läs mer i [Campaign Classic v7-dokumentation](https://experienceleague.adobe.com/docs/campaign-classic/using/getting-started/creating-queries/defining-filter-conditions.html){target=&quot;_blank&quot;}.
+      * Välj **[!UICONTROL Twitter subscribers]** för att skicka ett direktmeddelande till alla dina följare.
 
-1. Från **[!UICONTROL Target of the proofs]** väljer du den följare som ska få korrekturet för ditt direktmeddelande.
+      * Välj **[!UICONTROL Filter conditions]** för att definiera en fråga och visa resultatet. Lär dig hur du skapar ett filter i [det här avsnittet](../audiences/create-filters.md#advanced-filters).
+
+1. Välj korrekturmålet på menyn **[!UICONTROL Target of the proofs]** tab: det här kontot kommer att få ett bevis på ditt direktmeddelande.
+
+   Enligt informationen i [konfigurationssteg](../connect/ac-tw.md#tw-test-account)måste du skapa ett privat test-Twitter-konto för att skicka korrektur.
+
 
    >[!NOTE]
    >
-   >Om du vill skicka alla dina korrektur för direktmeddelanden till samma Twitter-följare kan du spara korrekturmålet i dialogrutan **[!UICONTROL Tweet (Direct Message)]** leveransmall, via **[!UICONTROL Resources > Templates > Delivery templates]** nod.
+   >Om du vill skicka alla dina korrektur för direktmeddelanden till samma Twitter-konto kan du spara korrekturmålet i dialogrutan **[!UICONTROL Tweet (Direct Message)]** leveransmall, via **[!UICONTROL Resources > Templates > Delivery templates]** nod.
 
 1. Ange innehållet i meddelandet i **[!UICONTROL Content]** -fliken.
 
-   Anpassningsfält kan användas på samma sätt som för e-postleveranser, t.ex. för att lägga till följarens namn i meddelandets brödtext. Läs mer i [Campaign Classic v7-dokumentation](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/personalizing-deliveries/about-personalization.html){target=&quot;_blank&quot;}.
+   ![](assets/tw-dm-content.png)
+
+   Anpassningsfält kan användas på samma sätt som för e-postleveranser, t.ex. för att lägga till följarens namn i meddelandets brödtext. Läs mer i [det här avsnittet](../start/create-message.md#personalization).
 
 1. Förhandsgranska meddelandet
 
    Bläddra i **[!UICONTROL Preview]** för att kontrollera återgivningen av inlägget.
 
+   ![](assets/tw-dm-preview.png)
+
    1. Klicka på **[!UICONTROL Preview]** -fliken.
-   1. Klicka på **[!UICONTROL Test personalization]** nedrullningsbar meny och välj **[!UICONTROL Service]**.
-   1. I **[!UICONTROL Folder]** markerar du den tjänstmapp som innehåller ditt Twitter-konto.
-   1. Välj det Twitter-konto som du vill testa förhandsgranskningen med.
+   1. Klicka på **[!UICONTROL Test personalization]** nedrullningsbar meny och välj **[!UICONTROL Visitor Subscription]**.
+   1. Välj ett Twitter-konto som du vill testa förhandsgranskningen med.
 
 1. Skicka ett bevis
 
    Innan du skickar meddelandet kontrollerar du att det är verifierat genom att skicka ett bevis till ett testkonto: kan du sedan få en exakt återgivning av meddelandet på ett privat Twitter-konto och kontrollera innehåll och personalisering.
-
-   Mer information om hur du skapar ett privat Twitter-konto finns i [det här avsnittet](../connect/ac-tw.md#tw-test-account).
 
    ![](../assets/do-not-localize/book.png) [Lär dig viktiga steg för att validera en leverans](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/key-steps-when-creating-a-delivery/steps-validating-the-delivery.html){target=&quot;_blank&quot;}
 

@@ -1,18 +1,18 @@
 ---
-title: Kom igång med marknadsföringskampanjer
-description: Kom igång med marknadsföringskampanjer
+title: Kom igång med kampanjer
+description: Kom igång med kampanjer
 feature: Audiences
-role: Data Engineer
+role: User
 level: Beginner
 exl-id: b5a6c845-13a7-4746-b856-a08a3cf80b66,c4798c8f-619e-4a60-80d7-29b9e4c61168
-source-git-commit: 0a55d947a7646aab64ab2f9d0d09a6f930db576e
+source-git-commit: 2ce1ef1e935080a66452c31442f745891b9ab9b3
 workflow-type: tm+mt
-source-wordcount: '840'
-ht-degree: 6%
+source-wordcount: '837'
+ht-degree: 5%
 
 ---
 
-# Kom igång med marknadsföringskampanjer{#gs-ac-campaigns}
+# Kom igång med kampanjer{#gs-ac-campaigns}
 
 Adobe Campaign erbjuder en uppsättning lösningar som hjälper er att personalisera och leverera kampanjer i alla kanaler, både online och offline. Ni kan skapa, konfigurera, köra och analysera marknadsföringskampanjer. Alla marknadsföringskampanjer kan hanteras från ett enhetligt kontrollcenter. Lär dig hur du bläddrar bland och skapar marknadsföringskampanjer i det här avsnittet.
 

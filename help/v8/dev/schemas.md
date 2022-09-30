@@ -1,8 +1,11 @@
 ---
 title: Arbeta med Campaign-scheman
 description: Kom igång med scheman
+feature: Schema Extension
+role: Developer
+level: Intermediate, Experienced
 exl-id: 87af72fe-6c84-4d9a-afed-015900890cce
-source-git-commit: 6de5c93453ffa7761cf185dcbb9f1210abd26a0c
+source-git-commit: 2ce1ef1e935080a66452c31442f745891b9ab9b3
 workflow-type: tm+mt
 source-wordcount: '1266'
 ht-degree: 4%

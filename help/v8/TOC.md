@@ -4,9 +4,9 @@ user-guide-title: Campaign v8
 description: Dokumentation om Campaign v8
 breadcrumb-title: Kampanjöversikt
 title: Kampanjdokument v8
-source-git-commit: fdaf107fd22f439a728f32ceb8cfc13a8c5bc1ad
+source-git-commit: 2ce1ef1e935080a66452c31442f745891b9ab9b3
 workflow-type: tm+mt
-source-wordcount: '368'
+source-wordcount: '369'
 ht-degree: 26%
 
 ---
@@ -81,7 +81,7 @@ ht-degree: 26%
    + [Push-meddelanden](send/push.md)
    + [LINE-meddelanden](send/line.md)
    + [Direktmeddelande](send/direct-mail.md)
-   + [Social marknadsföring](send/twitter.md)
+   + [Twitter](send/twitter.md)
    + [Transaktionsmeddelanden](send/transactional.md)
    + [Tidsoptimering för sändning](send/predictive.md)
    + Fel, studsar och karantän{#failures}
@@ -113,11 +113,11 @@ ht-degree: 26%
    + [Externa konton](config/external-accounts.md)
 + Anslut {#connect}
    + [Anslut till andra lösningar](connect/integration.md)
+   + [Campaign + Adobe Experience Platform](connect/ac-aep.md)
    + [Campaign + Analytics](connect/ac-aa.md)
    + [Campaign + Experience Manager](connect/ac-aem.md)
    + [Campaign + Target](connect/ac-at.md)
    + [Kampanj + utlösare för Experience Cloud](connect/ac-triggers.md)
-   + [Campaign + RTCDP](connect/ac-rtcdp.md)
    + [Campaign + Twitter](connect/ac-tw.md)
    + [Kampanj + extern databas](connect/fda.md)
    + Campaign + din CRM {#ac-crm}

@@ -2,10 +2,10 @@
 title: Visa befintliga profiler i Campaign
 description: Lär dig hur du får åtkomst till kontaktdata i Campaign
 feature: Audiences, Profiles
-role: Data Engineer
+role: User
 level: Beginner
 exl-id: 03f7a736-e0b9-4216-9550-507f10e6fcf6
-source-git-commit: 6de5c93453ffa7761cf185dcbb9f1210abd26a0c
+source-git-commit: 2ce1ef1e935080a66452c31442f745891b9ab9b3
 workflow-type: tm+mt
 source-wordcount: '567'
 ht-degree: 2%

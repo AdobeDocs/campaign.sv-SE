@@ -2,10 +2,10 @@
 title: Kom igång med funktioner för spårning och övervakning
 description: Kom igång med funktioner för spårning och övervakning
 feature: Monitoring
-role: Data Engineer
-level: Beginner
+role: User
+level: Beginner, Intermediate
 exl-id: f3de901f-519f-42ae-846c-f20c7cb560df
-source-git-commit: 0a55d947a7646aab64ab2f9d0d09a6f930db576e
+source-git-commit: 2ce1ef1e935080a66452c31442f745891b9ab9b3
 workflow-type: tm+mt
 source-wordcount: '898'
 ht-degree: 2%

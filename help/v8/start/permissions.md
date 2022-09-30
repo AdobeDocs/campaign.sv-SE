@@ -1,11 +1,11 @@
 ---
 title: Bevilja behörigheter för Campaign v8
 description: Lär dig hur du tilldelar behörigheter till Campaign v8
-feature: Audiences
-role: Data Engineer
+feature: Permissions
+role: User, Admin
 level: Beginner
 exl-id: 3d61abac-03df-42d3-a950-37e41a5a7756
-source-git-commit: 6de5c93453ffa7761cf185dcbb9f1210abd26a0c
+source-git-commit: 2ce1ef1e935080a66452c31442f745891b9ab9b3
 workflow-type: tm+mt
 source-wordcount: '382'
 ht-degree: 2%

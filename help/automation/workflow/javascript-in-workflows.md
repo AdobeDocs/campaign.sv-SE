@@ -3,7 +3,8 @@ product: campaign
 title: Exempel på JavaScript-kod i arbetsflöden
 description: De här exemplen visar hur du kan använda JavaScript-kod i ett arbetsflöde
 feature: Workflows
-source-git-commit: 2b1dec4b9c456df4dfcebfe10d18e0ab01599275
+exl-id: 3412e3de-1c88-496e-8fda-ca9fc9b18e69
+source-git-commit: 2ce1ef1e935080a66452c31442f745891b9ab9b3
 workflow-type: tm+mt
 source-wordcount: '1756'
 ht-degree: 2%
@@ -11,8 +12,6 @@ ht-degree: 2%
 ---
 
 # Exempel på JavaScript-kod i arbetsflöden{#javascript-in-workflows}
-
-
 
 I följande exempel visas hur du kan använda JavaScript-kod i ett arbetsflöde:
 
