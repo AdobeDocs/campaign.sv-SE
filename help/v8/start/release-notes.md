@@ -6,9 +6,9 @@ role: Admin, Developer, User
 level: Beginner, Intermediate, Experienced
 hidefromtoc: false
 exl-id: 7cf8111d-9f3a-46a4-813a-d4e43a1d1471
-source-git-commit: c1a5dd3fcad5d377acb2f9df3a090897ed3b533e
+source-git-commit: dfe675ca0f15050a9159172be3d8d8de7e8bf848
 workflow-type: tm+mt
-source-wordcount: '2754'
+source-wordcount: '2833'
 ht-degree: 29%
 
 ---
@@ -62,6 +62,18 @@ _30 september 2022_
 </tr> 
 </tbody> 
 </table>
+
+**Säkerhetsförbättring**
+
+För att optimera säkerheten har säkerhetstoken tagits bort från URL:er som genererats av Campaign:
+
+* Den här ändringen gäller endast GET-URL:er. Andra typer, inklusive POSTS-URL:er, påverkas inte.
+* Om du använder anpassad kod hämtas inte säkerhetstoken längre från GET URL-säkerhetstokenparametern. Du måste generera en ny säkerhetstoken med följande JSSP-kod:
+
+   ```getNewSecurityToken(jsspContext.getSessionToken(), jsspContext.getSecurityToken(), true);```
+
+   Du kan också använda inloggnings-API:t för att hämta säkerhetstoken.
+* Det finns ingen förändring i hanteringen av sessionstoken.
 
 **Förbättringar**
 
