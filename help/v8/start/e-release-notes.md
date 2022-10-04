@@ -6,22 +6,22 @@ role: Admin, Developer, User
 level: Beginner, Intermediate, Experienced
 hide: true
 hidefromtoc: true
-source-git-commit: acb3223a9a70179ea1cb3a126ef17cf5e234b4ba
+source-git-commit: e873e945f7101c5c54b4b18a128951e08d329b87
 workflow-type: tm+mt
-source-wordcount: '457'
+source-wordcount: '472'
 ht-degree: 5%
 
 ---
 
 # Tidig versionsinformation {#e-new-release}
 
-Den här sidan beskriver de förbättringar och korrigeringar som ingår i nästa Campaign v8-version.
+Den här sidan beskriver de förbättringar och korrigeringar som ingår i nästa Campaign v8-version. Innehållet kan ändras utan föregående meddelande fram till releasedatum. Den officiella versionsinformationen finns här [page](../start/release-notes.md).
+
+## Version 8.3.9 {#release-8-3-9}
 
 >[!CAUTION]
 >
-> Innehållet kan ändras utan föregående meddelande fram till releasedatum. Den officiella versionsinformationen finns här [page](../start/release-notes.md).
-
-## Version 8.3.9 {#release-8-3-9}
+> Uppgradering av klientkonsolen är obligatoriskt. Lär dig hur du uppgraderar din klientkonsol i den här [page](../start/connect.md#download-ac-console).
 
 _7 oktober 2022_
 
