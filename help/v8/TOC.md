@@ -4,10 +4,10 @@ user-guide-title: Campaign v8
 description: Dokumentation om Campaign v8
 breadcrumb-title: Kampanjöversikt
 title: Kampanjdokument v8
-source-git-commit: 2ce1ef1e935080a66452c31442f745891b9ab9b3
+source-git-commit: e7772364ab46673695f498911e2246056a04790e
 workflow-type: tm+mt
-source-wordcount: '369'
-ht-degree: 26%
+source-wordcount: '372'
+ht-degree: 27%
 
 ---
 
@@ -17,6 +17,7 @@ ht-degree: 26%
 + [Dokumentation om Campaign v8](campaign-home.md)
 + Nyheter? {#new}
    + [Viktiga möjligheter](start/whats-new.md)
+   + [Tidig versionsinformation](start/e-release-notes.md)
    + [Versionsinformation](start/release-notes.md)
    + [Guardrails](start/ac-guardrails.md)
    + [Kända fel](start/known-issues.md)
