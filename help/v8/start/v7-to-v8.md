@@ -5,9 +5,9 @@ feature: Overview
 role: Admin, Developer, User
 level: Beginner, Intermediate, Experienced
 exl-id: 00ba1c43-9558-4adb-83a1-6597c2bbca62
-source-git-commit: 46be0379610a6a4a3491d49ce096c64270ed8016
+source-git-commit: 1e84fdd61bb2591bf69f5efaf8f8fc01a0d3d93f
 workflow-type: tm+mt
-source-wordcount: '637'
+source-wordcount: '638'
 ht-degree: 3%
 
 ---
@@ -66,27 +66,28 @@ Kampanjanvändare ansluter bara via sina Adobe ID. Samma Adobe ID används för 
 
 Använd modulen Marketing Analytics för att analysera och mäta data, beräkna statistik, förenkla och optimera framtagning och beräkning av rapporter. Skapa dessutom rapporter och bygg målpopulationer: när de har identifierats lagras de i listor som kan användas i Adobe Campaign (målinriktning, segmentering osv.).
 
-Adobe Campaign kubrapporter är optimerade och har bättre skalbarhet än Campaign Classic v7. Tidigare begränsningar för kuber gäller inte i Campaign v8.
+Med [Företagsdistribution (FFDA)](../architecture/enterprise-deployment.md), är Adobe Campaign kubrapporter optimerade och ger bättre skalbarhet än Campaign Classic v7. I den specifika distributionsmodellen gäller inte tidigare begränsningar för kuber i Campaign v8.
 
 ## Otillgängliga funktioner{#gs-unavailable-features}
 
 Observera att vissa funktioner inte är tillgängliga i den här versionen av Campaign, till exempel:
 
 * Hantera marknadsföringsresurser
-* Hybrid/lokala distributionsmodeller
+* Kuponger
+* Webbspårning
+* Undersökningar
 
 
 ## Funktioner som inte stöds{#gs-removed}
 
-För att passa den nya arkitekturen och distributionsmodellen i Campaign v8 stöds inte längre vissa tidigare Campaign Classic v7-funktioner i Campaign v8, som:
+Vissa historiska Campaign Classic v7-funktioner stöds inte längre i Campaign v8, till exempel:
 
-* Kuponger
-* Webbspårning
-* Undersökningar
-* Social marknadsföring
+* Social marknadsföring med Facebook
 * ACS Connector (Prime offer)
 * Integrering med LDAP
 * Logga in med användare/lösenord
+* Hybrid/lokala distributionsmodeller
+
 
 >[!NOTE]
 >
