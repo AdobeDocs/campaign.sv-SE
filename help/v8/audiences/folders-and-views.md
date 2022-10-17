@@ -5,7 +5,7 @@ feature: Audiences, Profiles, Application Settings
 role: User
 level: Beginner, Intermediate
 exl-id: 762dcacc-4aeb-4990-af01-7f793bd69170
-source-git-commit: 2ce1ef1e935080a66452c31442f745891b9ab9b3
+source-git-commit: ec46a6f41d640b11306a88d6a966f81f8c2e43e0
 workflow-type: tm+mt
 source-wordcount: '873'
 ht-degree: 0%
@@ -24,7 +24,7 @@ En vy är en specifik mapp som inte innehåller några data, men som visar data 
 
 Observera att du kan tilldela behörigheter till mappar för att begränsa åtkomsten till vissa data. [Läs mer](#restrict-access-to-a-folder)
 
-## Bästa tillvägagångssätt vid arbete med mappar
+## Bästa tillvägagångssätt vid arbete med mappar{#best-practices-folders}
 
 * **Använd inbyggda mappar** för att göra det enklare för alla som arbetar med projektet att använda, underhålla och felsöka programmet. Undvik att skapa anpassade mappstrukturer för mottagare, listor, leveranser osv., men använd standardmappar som **Administration**, **Profiler och mål**, **Kampanjhantering**.
 

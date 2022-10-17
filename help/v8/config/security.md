@@ -5,9 +5,9 @@ feature: Privacy, PI
 role: Developer
 level: Beginner, Intermediate, Experienced
 exl-id: 1d593c8e-4b32-4902-93a7-7b18cef27cac
-source-git-commit: 2ce1ef1e935080a66452c31442f745891b9ab9b3
+source-git-commit: 864f2179384d3e3cfcf310fcd04fe02240bfbefa
 workflow-type: tm+mt
-source-wordcount: '503'
+source-wordcount: '664'
 ht-degree: 0%
 
 ---
@@ -28,6 +28,30 @@ Konfiguration och skärpning av sekretess är en viktig del av säkerhetsoptimer
 * Protect de sidor som kan innehålla personlig information, t.ex. spegelsidor, webbtillämpningar osv.
 
 ![](../assets/do-not-localize/speech.png)  Som användare av hanterade Cloud Services arbetar Adobe tillsammans med dig för att implementera dessa konfigurationer i din miljö.
+
+
+## Åtkomsthantering
+
+Åtkomshantering är en viktig del av säkerhetsbehärskningen. Här är några av de bästa sätten:
+
+* Skapa tillräckligt många säkerhetsgrupper
+* Kontrollera att alla operatorer har rätt åtkomsträttigheter
+* Undvik att använda admin-operatorn och undvik att ha för många operatorer i admin-gruppen
+
+![](../assets/do-not-localize/book.png) Läs mer i [Adobe Campaign Classic v7-dokumentation](https://experienceleague.adobe.com/docs/campaign-classic/using/installing-campaign-classic/security-privacy/access-management.html?lang=en#webapp-operator){target=&quot;_blank&quot;}
+
+## Riktlinjer för kodning
+
+När du utvecklar i Adobe Campaign (arbetsflöden, Javascript, JSSP osv.) ska du alltid följa dessa riktlinjer:
+
+* **Skript**: försök att undvika SQL-satser, använd parametriserade funktioner i stället för strängsammanfogning, undvik SQL-injektion genom att lägga till de SQL-funktioner som ska användas i tillåtelselista.
+
+* **Skydda datamodellen**: använda namngivna rättigheter för att begränsa operatoråtgärder, lägga till systemfilter (sysFilter)
+
+* **Lägga till bildtexter i webbprogram**: lägga till bilder på era offentliga landningssidor och prenumerationssidor.
+
+![](../assets/do-not-localize/book.png) Läs mer i [Adobe Campaign Classic v7-dokumentation](https://experienceleague.adobe.com/docs/campaign-classic/using/installing-campaign-classic/security-privacy/scripting-coding-guidelines.html?lang=en#installing-campaign-classic){target=&quot;_blank&quot;}
+
 
 ## Personalisering
 

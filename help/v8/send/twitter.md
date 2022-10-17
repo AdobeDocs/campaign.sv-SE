@@ -4,10 +4,10 @@ description: Lär dig hur du använder Adobe Campaign Social Marketing Module f�
 role: User
 level: Beginner, Intermediate
 exl-id: 0783e289-ae8e-4bb7-80f1-f90937a528c1
-source-git-commit: 9f74e3bbff5bcbebf4f5a0ecf4ed7e458b9e38ed
+source-git-commit: 9ae93ce4e2b0424bb3b3862b2c7d016309bd630e
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '812'
+ht-degree: 1%
 
 ---
 
@@ -21,6 +21,7 @@ När integreringen är konfigurerad kan du:
 * Skicka direktmeddelanden till dina följare
 * Posta tweets på ditt Twitter-konto
 * Samla in nya kontakter genom att återställa profildata, vilket gör att ni kan genomföra riktade kampanjer och, när det är möjligt, implementera flerkanalsstrategier. Den här åtgärden kräver användarens samtycke.
+
 
 Konfigurationssteg för att integrera ditt Twitter-konto med Adobe Campaign beskrivs i [den här sidan](../connect/ac-tw.md).
 

@@ -5,10 +5,10 @@ feature: Overview
 role: Admin, Developer, User
 level: Beginner, Intermediate, Experienced
 exl-id: 00ba1c43-9558-4adb-83a1-6597c2bbca62
-source-git-commit: 2ce1ef1e935080a66452c31442f745891b9ab9b3
+source-git-commit: 46be0379610a6a4a3491d49ce096c64270ed8016
 workflow-type: tm+mt
-source-wordcount: '636'
-ht-degree: 1%
+source-wordcount: '637'
+ht-degree: 3%
 
 ---
 
@@ -20,7 +20,7 @@ Som tidigare [!DNL Campaign Classic] v7-användare, du bör inte förvänta dig 
 >
 >* För tillfället är Campaign v8 **endast** finns som hanterad Cloud Service och kan inte distribueras på plats eller i hybridmiljöer. [Läs mer](#cloud-services)
 >
->* Automatisk migrering från en befintlig Campaign Classic v7-miljö är inte tillgängligt än.
+>* Automatisk migrering från en befintlig Campaign Classic v7-miljö är inte tillgänglig än.
 
 
 
@@ -28,7 +28,7 @@ Som tidigare [!DNL Campaign Classic] v7-användare, du bör inte förvänta dig 
 
 Adobe Campaign v8 finns som **Hanterad Cloud Service**.
 
-Adobe Campaign Managed Cloud Services är en Managed Services-plattform för design av kundupplevelser i olika kanaler och utgör en miljö för visuell kampanjsamordning, interaktionshantering i realtid och kanalövergripande körning. Läs mer om Campaign Managed-Cloud Services i [produktbeskrivningssida](https://helpx.adobe.com/legal/product-descriptions/adobe-campaign-managed-cloud-services.html){target=&quot;_blank&quot;}.
+Adobe Campaign Managed Cloud Services har en plattform för hanterade Cloud Services för att utforma kundupplevelser i flera kanaler och erbjuder en miljö för visuell kampanjsamordning, interaktionshantering i realtid och kanalövergripande körning. Läs mer om Campaign Managed-Cloud Services i [produktbeskrivningssida](https://helpx.adobe.com/legal/product-descriptions/adobe-campaign-managed-cloud-services.html){target=&quot;_blank&quot;}.
 
 Det nya erbjudandet kombinerar förstklassiga tjänster med proaktiv tillsyn och snabb varning, med fokus på tre områden:
 

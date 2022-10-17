@@ -5,9 +5,9 @@ feature: Subscriptions
 role: User
 level: Beginner
 exl-id: d5933b12-8664-49b8-953c-ea98eb428cc2
-source-git-commit: 2ce1ef1e935080a66452c31442f745891b9ab9b3
+source-git-commit: b323dbf9504e39cca78f7082089b864544ee1633
 workflow-type: tm+mt
-source-wordcount: '539'
+source-wordcount: '474'
 ht-degree: 0%
 
 ---
@@ -78,6 +78,8 @@ Så här avanmäler du en profil från en tjänst:
 >
 >När det gäller [Företagsdistribution (FFDA)](../architecture/enterprise-deployment.md), prenumerationer och avbeställningar är **asynkron** -processer. Begäranden om anmälan och avanmälan behandlas varje timme. [Läs mer](../architecture/new-apis.md#sub-apis)
 
-Du kan också göra det möjligt för leveransmottagarna att vidarebefordra meddelanden till en vän. Om du vill göra det infogar du länkarna i leveransen. Du kan sedan följa upp denna delningsprocess samt antalet besök på de berörda sidorna.
+<!--
+You can also enable your delivery recipients to forward messages to a friend. To do this, insert the relevant links into your delivery. You may then track this sharing process as well as the number of visits to the concerned pages. 
 
-![](../assets/do-not-localize/book.png) Mer information om den här funktionen finns i [Campaign Classic v7-dokumentation](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/subscriptions-and-referrals/viral-and-social-marketing.html?lang=en#viral-marketing--forward-to-a-friend){target=&quot;_blank&quot;}
+![](../assets/do-not-localize/book.png) For more on this capability, refer to [Campaign Classic v7 documentation](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/subscriptions-and-referrals/viral-and-social-marketing.html?lang=en#viral-marketing--forward-to-a-friend){target="_blank"}
+-->

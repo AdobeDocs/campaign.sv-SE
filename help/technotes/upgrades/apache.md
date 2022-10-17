@@ -2,9 +2,9 @@
 product: campaign
 title: Technote - Adobe Campaign - säkerhetsuppdatering av Apache-version
 description: Adobe Campaign - säkerhetsuppdatering av Apache-version
-source-git-commit: d7386669133aaeaed46a5df6d90c8106569d2fcc
+source-git-commit: 46be0379610a6a4a3491d49ce096c64270ed8016
 workflow-type: tm+mt
-source-wordcount: '476'
+source-wordcount: '478'
 ht-degree: 0%
 
 ---
@@ -12,13 +12,13 @@ ht-degree: 0%
 # Adobe Campaign - säkerhetsuppdatering av Apache-version {#apache-update}
 
 >[!CAUTION]
->Den här artikeln gäller för: Campaign Classic v7 Managed Services-kunder, Campaign v8-kunder och Campaign Standarder.
+>Den här artikeln gäller för: Kunder med hanterade Cloud Services i Campaign Classic v7, kunder med Campaign v8 och Campaign Standarder.
 
 Adobe Campaign fungerar med verktyg från tredje part och kompatibiliteten uppdateras regelbundet, så att endast de versioner som stöds kan implementeras och de senaste korrigeringarna och förbättringarna kan utnyttjas.
 
 Adobe Campaign innehåller Apache Tomcat som fungerar som startpunkt i programservern via HTTP och är integrerat med Apache Web Server. Apache Software Foundation har släppt Apache HTTP Server 2.4.53. Denna version åtgärdar sårbarheter som kan utnyttjas av en angripare för att ta kontroll över den drabbade datorn. Läs mer i [Apache 2.4.53-meddelande](https://downloads.apache.org/httpd/Announcement2.4.html){target=&quot;_blank&quot;}.
 
-Adobe Campaign-teamet kommer att genomföra säkerhetsuppgraderingen av Apache-versionen av **15 juni 2022** för att minska denna Apache-sårbarhet och göra instansmiljön säkrare. Uppgraderingen gäller alla Managed Services-kunder med Campaign Classic v7, Campaign v8 och Campaign Standarder som använder en sårbar version av Apache HTTP Server. Om du påverkas kontaktade Adobe dig redan för att informera dig om uppgraderingen.
+Adobe Campaign-teamet kommer att genomföra säkerhetsuppgraderingen av Apache-versionen av **15 juni 2022** för att minska denna Apache-sårbarhet och göra instansmiljön säkrare. Uppgraderingen gäller alla Cloud Services som hanterar Campaign Classic v7, kunder som har Campaign v8 och Campaign Standarder och som kör en sårbar version av Apache HTTP Server. Om du påverkas kontaktade Adobe dig redan för att informera dig om uppgraderingen.
 
 Uppgraderingen förväntas att köras automatiskt utanför kontorstid så att du kan fortsätta använda Campaign-tjänsten utan avbrott.
 

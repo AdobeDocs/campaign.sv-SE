@@ -5,7 +5,7 @@ feature: Web Apps
 role: User, Developer
 level: Beginner
 exl-id: a460c1b4-4266-46ff-8cca-748050afd579
-source-git-commit: 2ce1ef1e935080a66452c31442f745891b9ab9b3
+source-git-commit: 64bdd8332d0cf76b3e15db58f8abf09fdf163bba
 workflow-type: tm+mt
 source-wordcount: '190'
 ht-degree: 0%
@@ -14,7 +14,7 @@ ht-degree: 0%
 
 # Kom igång med webbprogram och webbformulär{#gs-ac-web}
 
-Adobe Campaign integrerar en grafisk modul för definition och publicering **Webbformulär** för att skapa sidor som innehåller indata- och urvalsfält och som kan innehålla data i databasen. På så sätt kan du utforma och publicera webbsidor som användare kan komma åt för att visa eller ange information.
+Adobe Campaign integrerar en grafisk modul för definition och publicering **Webbformulär** för att skapa sidor med inmatnings- och urvalsfält som kan innehålla data från databasen. På så sätt kan du utforma och publicera webbsidor som användare kan komma åt för att visa eller ange information.
 
 ![](../assets/do-not-localize/book.png) Lär dig hur du skapar och publicerar webbformulär i [Campaign Classic v7-dokumentation](https://experienceleague.adobe.com/docs/campaign-classic/using/designing-content/web-forms/about-web-forms.html?lang=en#designing-content){target=&quot;_blank&quot;}
 
