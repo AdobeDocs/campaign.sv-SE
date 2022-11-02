@@ -5,10 +5,10 @@ feature: Overview
 role: Admin, Developer, User
 level: Beginner, Intermediate, Experienced
 exl-id: 7771a02c-ebd4-48b6-b25e-6b6e420ad493
-source-git-commit: 2ce1ef1e935080a66452c31442f745891b9ab9b3
+source-git-commit: 0d9acc431efddc500701996996f846132eeafcdb
 workflow-type: tm+mt
-source-wordcount: '876'
-ht-degree: 3%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
@@ -73,7 +73,7 @@ Viktiga funktioner:
 >
 >* Campaign v8 är **endast** finns som hanterad Cloud Service och kan inte distribueras på plats eller i hybridmiljöer.
 >
->* Migrering från en befintlig Campaign Classic v7-miljö är inte tillgänglig än.
+>* Automatisk migrering från en befintlig Campaign Classic v7-miljö är inte tillgänglig än.
 
 
 
