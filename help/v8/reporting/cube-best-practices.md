@@ -1,16 +1,16 @@
 ---
 product: campaign
-title: Implementering och bästa praxis med kuber
+title: Anpassa kuber
 description: Lär dig de bästa sätten att implementera kuber i Adobe Campaign
 feature: Reporting
-source-git-commit: 80e5efc5998c67ce576e9f8208fab9543fc70d29
+source-git-commit: b9928cc3bda0c0a1a0d5a43b2604615d7472b419
 workflow-type: tm+mt
-source-wordcount: '1459'
+source-wordcount: '1453'
 ht-degree: 1%
 
 ---
 
-# Implementering och bästa praxis med kuber{#cube-best-practices}
+# Anpassa kuber{#cube-custom}
 
 ## Databindning {#data-binning}
 

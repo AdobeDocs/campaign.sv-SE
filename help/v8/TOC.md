@@ -4,10 +4,10 @@ user-guide-title: Campaign v8
 description: Dokumentation om Campaign v8
 breadcrumb-title: Kampanjöversikt
 title: Kampanjdokument v8
-source-git-commit: 863793e11b29f8f522e47d5158b64eacc0d2acb5
+source-git-commit: b9928cc3bda0c0a1a0d5a43b2604615d7472b419
 workflow-type: tm+mt
-source-wordcount: '471'
-ht-degree: 25%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
@@ -97,7 +97,7 @@ ht-degree: 25%
          + [Kom igång med kuber](reporting/gs-cubes.md)
          + [Skapa en kub](reporting/cube-indicators.md)
          + [Skapa rapporter med kuber](reporting/cube-tables.md)
-         + [Bästa tillvägagångssätt med kuber](reporting/cube-best-practices.md)
+         + [Anpassa kuber](reporting/cube-best-practices.md)
       + Inbyggda rapporter{#ac-reports}
          + [Lista med inbyggda rapporter](reporting/built-in-reports.md)
          + [Globala rapporter](reporting/global-reports.md)
