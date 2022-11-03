@@ -4,9 +4,9 @@ user-guide-title: Campaign v8
 description: Dokumentation om Campaign v8
 breadcrumb-title: Kampanjöversikt
 title: Kampanjdokument v8
-source-git-commit: f3090d1da1aaec1a50452bcfbf89e65e2669fc5c
+source-git-commit: 863793e11b29f8f522e47d5158b64eacc0d2acb5
 workflow-type: tm+mt
-source-wordcount: '433'
+source-wordcount: '471'
 ht-degree: 25%
 
 ---
@@ -91,7 +91,19 @@ ht-degree: 25%
    + [Användningsfall](interaction/interaction-use-cases.md)
 + Rapportering och analys {#analytics}
    + [Spåra och övervaka](start/tracking.md)
-   + [Mätvärden och rapporter](start/reporting.md)
+   + Arbeta med rapporter{#reports}
+      + [Kom igång med rapporter](reporting/gs-reporting.md)
+      + Skapa kuber{#cubes}
+         + [Kom igång med kuber](reporting/gs-cubes.md)
+         + [Skapa en kub](reporting/cube-indicators.md)
+         + [Skapa rapporter med kuber](reporting/cube-tables.md)
+         + [Bästa tillvägagångssätt med kuber](reporting/cube-best-practices.md)
+      + Inbyggda rapporter{#ac-reports}
+         + [Lista med inbyggda rapporter](reporting/built-in-reports.md)
+         + [Globala rapporter](reporting/global-reports.md)
+         + [Leveransrapporter](reporting/delivery-reports.md)
+         + [Inbyggd måttberäkning](reporting/metrics-calculation.md)
+      + [Anpassade rapporter](reporting/custom-reports.md)
 + Datahantering {#data}
    + [Kom igång med arbetsflöden](config/workflows.md)
    + [Importera data](start/import.md)

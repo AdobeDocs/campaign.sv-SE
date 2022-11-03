@@ -5,7 +5,7 @@ feature: Overview
 role: Admin, Developer, User
 level: Beginner
 exl-id: 04b12907-3cb1-40f1-90b8-1524d84edf2d,e3e9b514-a69d-4650-b1b1-1b76b4f3d63f
-source-git-commit: 2ce1ef1e935080a66452c31442f745891b9ab9b3
+source-git-commit: 9bea7904ea4507083d2cf45193877e7a2539d0c7
 workflow-type: tm+mt
 source-wordcount: '853'
 ht-degree: 39%
@@ -72,7 +72,7 @@ Förutom kraftfulla och färdiga rapportmallar kan du med Adobe Campaign skapa a
 Kampanjrapporteringsfunktionen gör det lättare att skapa dynamiska rapporter. Ni kan använda dra-och-släpp-variabler för att anpassa era rapporter och för att analysera hur framgångsrika era kampanjer är. Beroende på hur komplexa dina frågor och beräkningar är kan data samlas i en listvy eller nås i ett format som gör det enkelt att generera marknadsanalysrapporter.
 
 
-![](../assets/do-not-localize/glass.png) Läs mer om funktionerna för rapportering och spårning i [det här avsnittet](reporting.md).
+![](../assets/do-not-localize/glass.png) Läs mer om funktionerna för rapportering och spårning i [det här avsnittet](../reporting/gs-reporting.md).
 
 ## Integreringar med Adobe Experience Cloud {#adobe-experience-cloud-integrations}
 

@@ -3,7 +3,7 @@ keywords: Campaign Classic;hem;populära ämnen
 description: Campaign v8 - hjälpcenter
 title: Adobe Campaign v8 - produktdokumentation
 exl-id: 6010b0f7-baf0-43ba-af9a-b8864f3897ea,9ff16fb1-d3d3-44fe-9016-15abffdbc74e
-source-git-commit: 07c73a6ab22962472bde431948386d0142d6732d
+source-git-commit: 9bea7904ea4507083d2cf45193877e7a2539d0c7
 workflow-type: tm+mt
 source-wordcount: '147'
 ht-degree: 12%
@@ -69,7 +69,7 @@ ht-degree: 12%
 
 * [Skyddsritningar och begränsningar](start/ac-guardrails.md)
 * [Arkitektur](architecture/architecture.md)
-* [Mät och spåra](start/reporting.md)
+* [Mät och spåra](reporting/gs-reporting.md)
 * [Anslut till andra lösningar](connect/integration.md)
 * [Vanliga frågor om Campaign v8](start/campaign-faq.md)
 * [Adobe Campaign v8 - produktbeskrivning](https://helpx.adobe.com/legal/product-descriptions/adobe-campaign-managed-cloud-services.html){target=&quot;_blank&quot;}
