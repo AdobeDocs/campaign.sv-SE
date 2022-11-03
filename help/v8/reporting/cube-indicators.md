@@ -4,7 +4,7 @@ description: Lär dig hur du skapar kuber
 feature: Reporting
 role: Data Engineer
 level: Beginner
-source-git-commit: 60db4c2e8cd280845ddd0176bd10dc1b7edbb767
+source-git-commit: 7fc3e5b9f12ca48ef0921e27844ef9fef71ac06b
 workflow-type: tm+mt
 source-wordcount: '755'
 ht-degree: 2%
@@ -58,7 +58,7 @@ Så här skapar du en kub:
 1. Markera arbetsregistret. [Läs mer](#select-the-work-table).
 1. Definiera dimensioner. [Läs mer](#define-dimensions).
 1. Definiera mått. [Läs mer](#build-indicators).
-1. Skapa aggregat (valfritt). [Läs mer](cube-best-practices.md#calculate-and-use-aggregates).
+1. Skapa aggregat (valfritt). [Läs mer](customize-cubes.md#calculate-and-use-aggregates).
 
 I exemplet nedan lär du dig hur du snabbt skapar en enkel kub i en rapport för att exportera måtten.
 
@@ -90,7 +90,7 @@ Följ stegen nedan för att skapa dimensioner:
 
 1. I det här exemplet väljer vi mottagaren **Ålder**. I det här fältet kan du definiera bindning till gruppsidor och göra det enklare att läsa information. Vi rekommenderar att du använder bindning när det är möjligt att använda flera olika värden.
 
-Om du vill göra det går du till **[!UICONTROL Enable binning]** alternativ. [Läs mer](cube-best-practices.md#data-binning).
+Om du vill göra det går du till **[!UICONTROL Enable binning]** alternativ. [Läs mer](customize-cubes.md#data-binning).
 
 1. Lägg till en **Datum** typdimension. Här vill vi visa datum då mottagarprofilen skapades. Det gör du genom att klicka **[!UICONTROL Add]** och väljer **[!UICONTROL Creation date]** i mottagartabellen.
 Du kan anpassa datumvisningsläget. Om du vill göra det väljer du den hierarki som ska användas och de nivåer som ska genereras:
@@ -109,7 +109,7 @@ Välj uppräkningen i listrutan. Observera att den här uppräkningen måste def
 
 Endast värdena i uppräkningen visas. De andra grupperas under den etikett som definieras i **[!UICONTROL Label of the other values]** fält.
 
-Mer information om detta finns i [det här avsnittet](cube-best-practices.md#dynamically-manage-bins).
+Mer information om detta finns i [det här avsnittet](customize-cubes.md#dynamically-manage-bins).
 
 ### Byggindikatorer {#build-indicators}
 
@@ -124,7 +124,7 @@ Följ stegen nedan för att skapa indikatorer:
 
    ![](assets/cube-new-measure.png)
 
-   Använd **[!UICONTROL Filter the measure data...]** länk till endast utvalda kvinnor. [Läs mer](cube-best-practices.md#define-measures).
+   Använd **[!UICONTROL Filter the measure data...]** länk till endast utvalda kvinnor. [Läs mer](customize-cubes.md#define-measures).
 
    ![](assets/cube-filter-measure-data.png)
 

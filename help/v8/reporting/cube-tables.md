@@ -3,7 +3,7 @@ product: campaign
 title: Använd kuber för att skapa rapporter om data
 description: Lär dig hur du använder kuber för att skapa rapporter
 feature: Reporting
-source-git-commit: 60db4c2e8cd280845ddd0176bd10dc1b7edbb767
+source-git-commit: 7fc3e5b9f12ca48ef0921e27844ef9fef71ac06b
 workflow-type: tm+mt
 source-wordcount: '941'
 ht-degree: 1%
@@ -60,7 +60,7 @@ The **[!UICONTROL Add]** Med knapparna på varje axel kan du lägga till dimensi
 
    Dessa parametrar beror på datatypen för den valda dimensionen.
 
-   För datum kan till exempel flera nivåer vara tillgängliga. Mer information finns i [Visningsmått](cube-best-practices.md#display-measures).
+   För datum kan till exempel flera nivåer vara tillgängliga. Mer information finns i [Visningsmått](customize-cubes.md#display-measures).
 
    I så fall är följande alternativ tillgängliga:
 
@@ -102,7 +102,7 @@ Följ stegen nedan för att lägga till och konfigurera mått:
 
    ![](assets/cube-pivot-table-config.png)
 
-   Du kan sedan välja om måttetiketter ska visas eller inte. [Läs mer](cube-best-practices.md#configure-the-display).
+   Du kan sedan välja om måttetiketter ska visas eller inte. [Läs mer](customize-cubes.md#configure-the-display).
 
 1. Du kan bygga nya mått baserat på befintliga. Det gör du genom att klicka **[!UICONTROL Create a measure]** och konfigurera det.
 
