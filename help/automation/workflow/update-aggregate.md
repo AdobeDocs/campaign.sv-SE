@@ -3,26 +3,29 @@ product: campaign
 title: Uppdatera aggregat
 description: Läs mer om aktiviteten Uppdatera aggregerat arbetsflöde
 feature: Workflows
-source-git-commit: 2b1dec4b9c456df4dfcebfe10d18e0ab01599275
+role: Data Engineer
+level: Beginner
+source-git-commit: 8d9b8d3e31362c2d69ec0fc6f16ab375538d7f10
 workflow-type: tm+mt
-source-wordcount: '120'
+source-wordcount: '108'
 ht-degree: 3%
 
 ---
 
 # Uppdatera aggregat{#update-aggregate}
 
-Aggregat definieras på kubnivå för rapportering. A **[!UICONTROL Workflow]** -fliken är tillgänglig när du konfigurerar en mängd.
+Aggregat definierade i [kuber](../../v8/reporting/gs-cubes.md) för rapportering kan uppdateras med en viss aktivitet. A **[!UICONTROL Workflow]** -fliken är tillgänglig när du konfigurerar sammanställningen.
 
-Mer information om kuber och hur du använder aggregat i Adobe Campaign finns i [Campaign Classic v7-dokumentation](https://experienceleague.adobe.com/docs/campaign-classic/using/reporting/designing-reports-with-cubes/about-cubes.html){target=&quot;_blank&quot;}.
+Läs mer om kuber och aggregat i [det här avsnittet](../../v8/reporting/customize-cubes.md#calculate-and-use-aggregates).
 
+Om du vill uppdatera en mängd redigerar du **[!UICONTROL Update aggregate]** och välj den kub och den mängd som ska uppdateras.
 
-Om du vill uppdatera en mängd redigerar du **[!UICONTROL Update aggregate]** och välj den kub och mängd som ska uppdateras.
+Du kan konfigurera en **Fullständig uppdatering** eller en **Delvis uppdatering**.
 
-Du kan göra en **Fullständig uppdatering** eller en **Delvis uppdatering**.
+![](assets/update-aggregate-details.png)
 
-Som standard utförs en fullständig uppdatering under varje beräkning. Om du vill aktivera en partiell uppdatering väljer du det relevanta alternativet och definierar uppdateringsvillkoren.
+Som standard utförs en fullständig uppdatering under varje beräkning. Om du vill aktivera en partiell uppdatering markerar du alternativet och definierar uppdateringsvillkoren.
 
-**God praxis**: a **[!UICONTROL Scheduler]** kan användas för att ange frekvensen för uppdateringar av beräkningar.
+![](assets/update-aggregate-partial.png)
 
-![](assets/scheduler-and-cube-aggregate.png)
+Ett bra tillvägagångssätt är att lägga till en **[!UICONTROL Scheduler]** aktivitet för att ange frekvensen för uppdateringar av beräkningar.

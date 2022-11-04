@@ -3,9 +3,9 @@ product: campaign
 title: Meddelandecenter (köra)
 description: Meddelandecenter (köra)
 feature: Workflows
-source-git-commit: 72467caf94e652ede70c00f1ea413012fc4c7e1f
+source-git-commit: 8d9b8d3e31362c2d69ec0fc6f16ab375538d7f10
 workflow-type: tm+mt
-source-wordcount: '226'
+source-wordcount: '203'
 ht-degree: 7%
 
 ---
@@ -13,15 +13,7 @@ ht-degree: 7%
 
 # Meddelandecenter (köra){#message-center-execution}
 
-
-
 Arbetsflödena nedan installeras tillsammans med **Meddelandecenter - körning** tillägg som standard.
-
-Beroende på vilken Campaign-version du har finns mer information i följande avsnitt:
-
-!
-
-![](assets/do-not-localize/v8.png)[  Dokumentation om Campaign v8](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/transactional.html)
 
 <table> 
  <tbody> 

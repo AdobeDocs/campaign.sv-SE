@@ -3,9 +3,9 @@ product: campaign
 title: Fråga
 description: Läs mer om arbetsflödesaktiviteten Fråga
 feature: Workflows, Targeting Activity, Query Editor
-source-git-commit: 2b1dec4b9c456df4dfcebfe10d18e0ab01599275
+source-git-commit: 8d9b8d3e31362c2d69ec0fc6f16ab375538d7f10
 workflow-type: tm+mt
-source-wordcount: '1592'
+source-wordcount: '1568'
 ht-degree: 0%
 
 ---
@@ -176,12 +176,6 @@ I avsnittet nedan beskrivs de effektivaste strategierna för att optimera frågo
    Ett vanligt misstag är: `iBlacklist='3'` där `iBlacklist` är ett numeriskt fält, och `3` anger ett textvärde.
 
    Kontrollera att du vet vilken körningsplan din fråga kommer att ha. Undvik fullständiga tabellsökningar, särskilt för realtidsfrågor eller nästan realtidsfrågor som körs varje minut.
-
-   Beroende på vilken Campaign-version du har finns mer information i följande avsnitt:
-
-   !
-
-   ![](assets/do-not-localize/v8.png)[  Dokumentation om Campaign v8](https://experienceleague.adobe.com/docs/campaign/campaign-v8/architecture/shemas-forms/database-mapping.html)
 
 ### Funktioner {#functions}
 

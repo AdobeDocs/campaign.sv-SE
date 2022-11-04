@@ -5,9 +5,9 @@ feature: Overview
 role: Admin, Developer, User
 level: Beginner, Intermediate, Experienced
 exl-id: 00ba1c43-9558-4adb-83a1-6597c2bbca62
-source-git-commit: 1e84fdd61bb2591bf69f5efaf8f8fc01a0d3d93f
+source-git-commit: 8d9b8d3e31362c2d69ec0fc6f16ab375538d7f10
 workflow-type: tm+mt
-source-wordcount: '638'
+source-wordcount: '643'
 ht-degree: 3%
 
 ---
@@ -66,7 +66,7 @@ Kampanjanvändare ansluter bara via sina Adobe ID. Samma Adobe ID används för 
 
 Använd modulen Marketing Analytics för att analysera och mäta data, beräkna statistik, förenkla och optimera framtagning och beräkning av rapporter. Skapa dessutom rapporter och bygg målpopulationer: när de har identifierats lagras de i listor som kan användas i Adobe Campaign (målinriktning, segmentering osv.).
 
-Med [Företagsdistribution (FFDA)](../architecture/enterprise-deployment.md), är Adobe Campaign kubrapporter optimerade och ger bättre skalbarhet än Campaign Classic v7. I den specifika distributionsmodellen gäller inte tidigare begränsningar för kuber i Campaign v8.
+Med Adobe Campaign v8 är kubrapporterna optimerade och ger bättre skalbarhet än Campaign Classic v7. I den specifika distributionsmodellen gäller inte tidigare begränsningar för kuber i Campaign v8. Läs mer om kuber i [det här avsnittet](../../v8/reporting/gs-cubes.md).
 
 ## Otillgängliga funktioner{#gs-unavailable-features}
 

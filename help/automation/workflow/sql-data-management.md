@@ -3,16 +3,14 @@ product: campaign
 title: SQL-datahantering
 description: Läs mer om arbetsflödesaktiviteten för SQL Data Management
 feature: Workflows
-source-git-commit: 2b1dec4b9c456df4dfcebfe10d18e0ab01599275
+source-git-commit: 8d9b8d3e31362c2d69ec0fc6f16ab375538d7f10
 workflow-type: tm+mt
-source-wordcount: '398'
-ht-degree: 2%
+source-wordcount: '366'
+ht-degree: 1%
 
 ---
 
 # SQL-datahantering{#sql-data-management}
-
-
 
 The **SQL Data Management** kan du skriva egna SQL-skript för att skapa och fylla i arbetstabeller.
 
@@ -20,16 +18,9 @@ The **SQL Data Management** kan du skriva egna SQL-skript för att skapa och fyl
 
 Innan du konfigurerar aktiviteten bör du kontrollera att följande krav är uppfyllda:
 
-* Aktiviteten är endast tillgänglig för fjärrdatakällor. The ** .
-
-   Beroende på vilken Campaign-version du har finns mer information i följande avsnitt:
-
-   !
-
-   ![](assets/do-not-localize/v8.png)[  Dokumentation om Campaign v8](https://experienceleague.adobe.com/docs/campaign/campaign-v8/connect/fda.html)
-
+* Aktiviteten är endast tillgänglig för fjärrdatakällor.
 * Det utgående schemat måste finnas i databasen och vara länkat till en FDA-databas.
-* Operatorn som kör arbetsflödet måste ha ** .
+
 
 ## Konfigurera SQL Data Management-aktiviteten {#configuring-the-sql-data-management-activity}
 
