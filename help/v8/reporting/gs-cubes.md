@@ -4,10 +4,10 @@ description: Lär dig hur du skapar kuber
 feature: Reporting
 role: Data Engineer
 level: Beginner
-source-git-commit: cc7195e90c38489f8e3946d6abd190effd41941a
+source-git-commit: bd39a18178edec2730707f0323a19c9d1c80cd76
 workflow-type: tm+mt
-source-wordcount: '509'
-ht-degree: 14%
+source-wordcount: '545'
+ht-degree: 13%
 
 ---
 
@@ -18,6 +18,13 @@ Adobe Campaign har ett intuitivt dataundersökningsverktyg för att skapa dynami
 Använd funktioner för marknadsanalys för att analysera och mäta data, beräkna statistik, förenkla och optimera framtagning och beräkning av rapporter. Du kan skapa rapporter och skapa målpopulationer och lagra dem i listor som kan användas i Adobe Campaign för målinriktning eller segmentering.
 
 Du kan utöka databasens undersöknings- och analyskapacitet samtidigt som det blir enklare för slutanvändarna att konfigurera rapporter och tabeller. Allt de behöver göra är att välja en befintlig (helt konfigurerad) kub när de skapar sin rapport eller tabell för att bearbeta beräkningar, mått och statistik.
+
+Kuber används för att generera vissa inbyggda rapporter, inklusive [leveransrapporter](delivery-reports.md) (leveransspårning, klickningar, öppningar osv.).
+
+>[!CAUTION]
+>
+>I en [[!DNL Snowflake] FDA-distribution (standard)](../architecture/fda-deployment.md), får rapporter baserade på kuber endast användas för datavolymer på mindre än 5 miljoner faktarader.
+
 
 När de har skapats och konfigurerats används kuber i frågeformulär för rapportering och webbapplikationer. De kan användas och ändras i pivottabeller.
 
