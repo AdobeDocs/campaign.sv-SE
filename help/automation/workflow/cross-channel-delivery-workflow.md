@@ -3,16 +3,15 @@ product: campaign
 title: Arbetsflöde för leveranser över flera kanaler
 description: Läs mer om arbetsflöden för flerkanalsleverans
 feature: Workflows, Channels Activity
-source-git-commit: 2b1dec4b9c456df4dfcebfe10d18e0ab01599275
+exl-id: fb498233-4df8-4c9e-a082-3e657c6756c9
+source-git-commit: 5b4d569a6e96c93828f63fb8376eb81301829854
 workflow-type: tm+mt
-source-wordcount: '624'
-ht-degree: 3%
+source-wordcount: '626'
+ht-degree: 4%
 
 ---
 
 # Arbetsflöde för leveranser över flera kanaler{#cross-channel-delivery-workflow}
-
-
 
 I det här användningsexemplet visas ett exempel med ett arbetsflöde för flerkanalsleverans. Det allmänna konceptet med flerkanalsleveranser presenteras i [det här avsnittet](cross-channel-deliveries.md).
 
@@ -30,7 +29,7 @@ De huvudsakliga implementeringsstegen för det här fallet är följande:
 
 ![](assets/wkf_cross-channel_7.png)
 
-## Steg 1: Målgruppsanpassning {#step-1--targeting-the-audience}
+## Steg 1: Bygg publiken {#step-1--build-the-audience}
 
 Om du vill definiera målet skapar du en fråga som identifierar mottagarna.
 
@@ -43,9 +42,9 @@ Om du vill definiera målet skapar du en fråga som identifierar mottagarna.
 
 1. Spara ändringarna.
 
-## Steg 2: Skapa ett e-postmeddelande med ett erbjudande {#step-2--creating-an-email-including-an-offer}
+## Steg 2: Skapa ett e-postmeddelande med ett erbjudande {#step-2--create-an-email-including-an-offer}
 
-1. Skapa en ** .
+1. Skapa en e-postleverans.
 1. Designa meddelandet och infoga en länk med ett erbjudande i innehållet.
 
    ![](assets/wkf_cross-channel_1.png)
@@ -64,7 +63,7 @@ Om du vill definiera målet skapar du en fråga som identifierar mottagarna.
 
    ![](assets/wkf_cross-channel_4.png)
 
-## Steg 3: Segmentera målgruppen {#step-3--segmenting-the-resulting-audience}
+## Steg 3: Segmentera målgruppen {#step-3--segment-the-resulting-audience}
 
 När målet har identifierats och första leveransen har skapats måste du segmentera målet i olika populationer med filtervillkoren.
 
@@ -100,7 +99,7 @@ När målet har identifierats och första leveransen har skapats måste du segme
 
 1. Klicka **[!UICONTROL Finish]** för att spara ändringarna.
 
-## Steg 4: Slutför arbetsflödet {#step-4--finalizing-the-workflow}
+## Steg 4: Slutför arbetsflödet {#step-4--finalize-the-workflow}
 
 1. Lägg till relevanta aktiviteter i arbetsflödet efter de tre deluppsättningarna som är resultatet av **[!UICONTROL Split]** aktivitet:
 

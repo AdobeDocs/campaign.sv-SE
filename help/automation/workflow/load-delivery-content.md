@@ -3,16 +3,15 @@ product: campaign
 title: Läs in leveransinnehåll
 description: Läsa in leveransinnehåll
 feature: Workflows
-source-git-commit: 2b1dec4b9c456df4dfcebfe10d18e0ab01599275
+exl-id: 08febcbc-1703-4d36-89e1-32c903618084
+source-git-commit: 9dfb1acd97e529a8b60119154b3728c883dd9c97
 workflow-type: tm+mt
-source-wordcount: '314'
+source-wordcount: '304'
 ht-degree: 3%
 
 ---
 
 # Läs in leveransinnehåll{#loading-delivery-content}
-
-
 
 Om ditt leveransinnehåll är tillgängligt i en HTML-fil som finns på Amazon S3-, FTP- eller SFTP-servrar kan du enkelt läsa in det här innehållet i Adobe Campaign-leveranser.
 
@@ -51,6 +50,3 @@ Så här gör du:
 
 1. Spara och kör arbetsflödet. En ny leverans med det inlästa innehållet skapas under **[!UICONTROL Campaign management]** > **[!UICONTROL Deliveries]**.
 
->[!NOTE]
->
->De bästa sätten och felsökningarna för användning av SFTP-servrar finns i detalj.
