@@ -5,14 +5,14 @@ description: Lär dig hur du skapar och använder leveransmallar i Campaign
 feature: Email, Push, SMS, Direct Mail, Cross Channel Orchestration
 role: User
 level: Beginner
-source-git-commit: 822d1bee472330b6195ad9527a7e23e90c7650b4
+source-git-commit: 1c0015a02ff950d9bf9d33aacebf899db9e580fa
 workflow-type: tm+mt
-source-wordcount: '694'
-ht-degree: 7%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
-# Arbeta med leveransmall{#creating-a-delivery-template}
+# Arbeta med leveransmall{#work-with-delivery-template}
 
 Använd leveransmallar för att standardisera det kreativa utseendet och känslan, så att ni kan genomföra och lansera kampanjer snabbare.
 
@@ -27,9 +27,12 @@ En mall kan systematiskt innehålla:
 
 ![](assets/do-not-localize/how-to-video.png) [Upptäck den här funktionen i en video](#delivery-template-video)
 
+
+## Skapa en mall{#create-a-delivery-template}
+
 Om du vill skapa en leveransmall kan du duplicera en inbyggd mall, konvertera en befintlig leverans till en mall eller skapa en leveransmall från början.
 
-## Kopiera en befintlig mall{#copy-an-existing-template}
+### Duplicera en befintlig mall{#copy-an-existing-template}
 
 Campaign innehåller en uppsättning inbyggda mallar för varje kanal: e-post, push, SMS, direktreklam med mera.
 
@@ -51,7 +54,7 @@ Mallen läggs till i listan med leveransmallar. Du kan nu välja den när du ska
 
 ![](assets/select-the-new-template.png)
 
-## Konvertera en befintlig leverans till en mall {#convert-an-existing-delivery}
+### Konvertera en befintlig leverans till en mall {#convert-an-existing-delivery}
 
 En leverans kan konverteras till en mall för nya upprepade leveransåtgärder.
 
@@ -67,7 +70,7 @@ Så här konverterar du en leverans till en mall:
 
    ![](assets/template-select-folders.png)
 
-## Skapa en ny mall {#create-a-new-template}
+### Skapa en ny mall {#create-a-new-template}
 
 >[!NOTE]
 >
@@ -87,7 +90,9 @@ Så här konfigurerar du en leveransmall från grunden:
 1. Klicka **Spara**. Mallen kan nu användas i en leverans.
 
 
-## Skapa en leverans från en mall{#create-a-delivery-from-a-template}
+## Använd mallar{#use-a-delivery-template}
+
+### Skapa en leverans från en mall{#create-a-delivery-from-a-template}
 
 Om du vill skapa en leverans baserad på en befintlig mall väljer du mallen i listan med tillgängliga leveransmallar.
 
