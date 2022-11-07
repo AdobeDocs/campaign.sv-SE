@@ -3,7 +3,7 @@ product: campaign
 title: Skicka en rapport till en lista
 description: Lär dig hur du skickar en rapport till en lista med ett arbetsflöde
 feature: Workflows
-source-git-commit: e211c0f01a4813ad29f47652fffac2b44bc0f867
+source-git-commit: 4c3caa8e31c2076d32a03a8778a28edce50cde63
 workflow-type: tm+mt
 source-wordcount: '632'
 ht-degree: 3%
@@ -67,7 +67,7 @@ Följ stegen nedan för att skapa leveransmallen:
 
    * Välj **[!UICONTROL Advanced]** tabb och kontrollera **[!UICONTROL Script the name of the file name displayed in the mails sent]**. Ange namnet på den bifogade filen i den slutliga leveransen i textzonen.
 
-      ![](assets/use_case_report_6bis.png)
+      ![](assets/use_case_report_6b.png)
 
 ## Steg 3: Skapa arbetsflödet {#step-3--creating-the-workflow}
 
