@@ -3,16 +3,15 @@ product: campaign
 title: Skicka en rapport till en lista
 description: Lär dig hur du skickar en rapport till en lista med ett arbetsflöde
 feature: Workflows
-source-git-commit: 2b1dec4b9c456df4dfcebfe10d18e0ab01599275
+source-git-commit: e211c0f01a4813ad29f47652fffac2b44bc0f867
 workflow-type: tm+mt
-source-wordcount: '620'
-ht-degree: 1%
+source-wordcount: '632'
+ht-degree: 3%
 
 ---
 
-# Skicka en rapport till en lista{#sending-a-report-to-a-list}
 
-
+# Skicka en rapport till en lista{#send-a-report-to-a-list}
 
 Här finns information om hur du skapar en månadsklar **[!UICONTROL Tracking indicators]** rapportera i PDF-format och skicka det till en lista med mottagare.
 
@@ -20,67 +19,72 @@ Här finns information om hur du skapar en månadsklar **[!UICONTROL Tracking in
 
 De viktigaste implementeringsstegen för det här användningsexemplet är:
 
-* Skapa en lista över mottagare som ska ta emot leveransen (se: [Steg 1: Skapa mottagarlistan](#step-1--creating-the-recipient-list)).
-* Skapa en leveransmall som gör att du kan generera en ny leverans varje gång arbetsflödet körs (se: [Steg 2: Skapa leveransmallen](#step-2--creating-the-delivery-template)).
-* Skapa ett arbetsflöde som gör att du kan generera rapporten i PDF-format och skicka den till mottagarlistan (se: [Steg 3: Skapa arbetsflödet](#step-3--creating-the-workflow)).
+* Skapa en lista med mottagare för den här rapporten. [Läs mer](#step-1--create-the-recipient-list).
+* Skapa en leveransmall som skapar en ny leverans varje gång arbetsflödet körs. [Läs mer](#step-2--create-the-delivery-template).
+* Skapa ett arbetsflöde som genererar rapporten i PDF-format och skickar den till mottagarlistan. [Läs mer](#step-3--create-the-workflow)).
 
-## Steg 1: Skapa mottagarlistan {#step-1--creating-the-recipient-list}
+## Steg 1: Skapa mottagarlistan {#step-1--create-the-recipient-list}
 
-Gå till **[!UICONTROL Profiles and targets]** klickar du på **[!UICONTROL Lists]** länk, sedan **[!UICONTROL Create]** -knappen. Välj **[!UICONTROL New list]** och skapa en ny mottagarlista för rapporten som ska skickas till.
+Följ stegen nedan om du vill skapa en lista med mottagare som mål:
 
-![](assets/use_case_report_1.png)
+1. Bläddra till **[!UICONTROL Profiles and targets]** klickar du på **[!UICONTROL Lists]** länk.
+1. Klicka på knappen **[!UICONTROL Create]**.
+1. Välj **[!UICONTROL New list]** och skapa en ny mottagarlista för rapporten som ska skickas till.
 
-Mer information om hur du skapar listor finns i den här .
+Mer information om hur du skapar listor finns i [det här avsnittet](../../v8/audiences/create-audiences.md).
 
-## Steg 2: Skapa leveransmallen {#step-2--creating-the-delivery-template}
+## Steg 2: Skapa leveransmallen {#step-2--create-the-delivery-template}
 
-1. Gå till **[!UICONTROL Resources > Templates > Delivery templates]** noden i Adobe Campaign Explorer och duplicera **[!UICONTROL Email delivery]** färdiga mallar.
+Följ stegen nedan för att skapa leveransmallen:
 
-   ![](assets/use_case_report_2.png)
+1. Bläddra till **[!UICONTROL Resources > Templates > Delivery templates]** noden i Adobe Campaign Explorer och duplicera **[!UICONTROL Email delivery]** inbyggd mall.
 
-   Mer information om hur du skapar en leveransmall finns i den här .
+   Mer information om hur du skapar en leveransmall finns i [det här avsnittet](../../v8/send/create-templates.md).
 
-1. Ange de olika mallparametrarna: label, target (the list of earlier eived), subject and content.
+1. Ange mallparametrar: label, target (the list of earlier eived), subject and content.
 
-   ![](assets/use_case_report_3.png)
+   Varje gång arbetsflödet körs **[!UICONTROL Tracking indicators]** rapporten uppdateras enligt anvisningarna i [Steg 3: Skapa arbetsflödet](#step-3--creating-the-workflow)).
 
-1. Varje gång arbetsflödet körs **[!UICONTROL Tracking indicators]** rapporten uppdateras (se [Steg 3: Skapa arbetsflödet](#step-3--creating-the-workflow)). Om du vill inkludera den senaste versionen av rapporten i leveransen måste du lägga till en **[!UICONTROL Calculated attachment]**:
+1. Om du vill inkludera den senaste versionen av rapporten i leveransen måste du lägga till en **[!UICONTROL Calculated attachment]**:
 
-   Mer information om hur du skapar en beräknad bilaga finns i det här .
-
-   * Klicka på **[!UICONTROL Attachments]** länk och klicka **[!UICONTROL Add]** väljer **[!UICONTROL Calculated attachment]**.
+   * Klicka på **[!UICONTROL Attachments]** och klicka på pilen bredvid **[!UICONTROL Add]** -knappen. Välj **[!UICONTROL Calculated attachment...]**.
 
       ![](assets/use_case_report_4.png)
 
-   * Gå till **[!UICONTROL Type]** och välj det fjärde alternativet: **[!UICONTROL File name is computed during delivery of each message (it may then depend on the recipient profile)]**.
+   * I **[!UICONTROL Type]** väljer du det senaste alternativet: **[!UICONTROL File name is computed during delivery of each message (it may then depend on the recipient profile)]**.
 
       ![](assets/use_case_report_5.png)
 
       Värdet som anges i **[!UICONTROL Label]** fältet visas inte i den slutliga leveransen.
 
-   * Gå till redigeringszonen och ange filens åtkomstsökväg och namn.
+   * Ange filens åtkomstsökväg och namn i textzonen.
 
       ![](assets/use_case_report_6.png)
 
       >[!CAUTION]
       >
-      >Filen måste finnas på servern. Sökvägen och namnet måste vara identiska med de som anges i **[!UICONTROL JavaScript code]** typ av aktivitet i arbetsflödet (se: [Steg 3: Skapa arbetsflödet](#step-3--creating-the-workflow)).
+      >Sökvägen och namnet måste vara identiska med de som anges i **[!UICONTROL JavaScript code]** typ av aktivitet i arbetsflödet, vilket förklaras i [Steg 3: Skapa arbetsflödet](#step-3--creating-the-workflow).
 
-   * Välj **[!UICONTROL Advanced]** tabb och kontrollera **[!UICONTROL Script the name of the file name displayed in the mails sent]**. Gå till redigeringszonen och ange det namn du vill ge den bifogade filen i den slutliga leveransen.
+   * Välj **[!UICONTROL Advanced]** tabb och kontrollera **[!UICONTROL Script the name of the file name displayed in the mails sent]**. Ange namnet på den bifogade filen i den slutliga leveransen i textzonen.
 
       ![](assets/use_case_report_6bis.png)
 
 ## Steg 3: Skapa arbetsflödet {#step-3--creating-the-workflow}
 
-Följande arbetsflöde skapades för det här användningsfallet. Den har tre verksamheter:
-
-* Ett **[!UICONTROL Scheduler]** typaktivitet som gör att du kan köra arbetsflödet en gång i månaden,
-* Ett **[!UICONTROL JavaScript code]** typaktivitet som gör att du kan generera rapporten i PDF-format,
-* en **[!UICONTROL Delivery]** typaktivitet som använder den leveransmall som skapades tidigare.
+Skapa följande arbetsflöde för det här användningsfallet.
 
 ![](assets/use_case_report_8.png)
 
-1. Gå till **[!UICONTROL Administration > Production > Technical workflows]** och skapa ett nytt arbetsflöde.
+Den använder tre verksamheter:
+
+* A **[!UICONTROL Scheduler]** aktivitet som utför arbetsflödet en gång i månaden,
+* A **[!UICONTROL JavaScript code]** verksamhet som genererar rapporten i PDF-format,
+* A **[!UICONTROL Delivery]** aktivitet som refererar till den tidigare skapade leveransmallen.
+
+Följ stegen nedan för att skapa arbetsflödet:
+
+1. Bläddra till **[!UICONTROL Administration > Production > Technical workflows]** noden Campaign utforskar och skapar en ny mapp för att lagra dina arbetsflöden.
+1. Skapa ett nytt arbetsflöde.
 
    ![](assets/use_case_report_7.png)
 
@@ -96,9 +100,9 @@ Följande arbetsflöde skapades för det här användningsfallet. Den har tre ve
 
    Ange följande kod i redigeringszonen:
 
-   ```
-   var reportName = "deliveryFeedback";
-   var path = "/tmp/deliveryFeedback.pdf";
+   ```sql
+   var reportName = "indicators";
+   var path = "/tmp/indicators.pdf";
    var exportFormat = "PDF";
    var reportURL = "<PUT THE URL OF THE REPORT HERE>";
    var _ctx = <ctx _context="global" _reportContext="deliveryFeedback" />
@@ -107,22 +111,26 @@ Följande arbetsflöde skapades för det här användningsfallet. Den har tre ve
    xtk.report.export(reportName, _ctx, exportFormat, path, isAdhoc);
    ```
 
-   Följande variabler används:
+
+   med följande variabler:
 
    * **var reportName**: Ange rapportens interna namn med citattecken. I det här fallet är det interna namnet på **Spårningsindikator** rapporten är&quot;deliveryFeedback&quot;.
-   * **var path**: Ange filens sparningssökväg (&quot;tmp/files/&quot;), det namn du vill ge filen (&quot;deliveryFeedback&quot;) och filnamnstillägget (&quot;.pdf&quot;). I det här fallet har vi använt det interna namnet som filnamn. Värdena måste vara mellan dubbla citattecken och avgränsade med plustecknet (+).
+   * **var path**: Ange filens sparningssökväg (&quot;tmp&quot;), namnet som du vill ge filen (&quot;deliveryFeedback&quot;) och filnamnstillägget (&quot;.pdf&quot;). I det här fallet har vi använt det interna namnet som filnamn. Värdena måste vara mellan dubbla citattecken och avgränsade med plustecknet (+).
 
       >[!CAUTION]
       >
-      >Filen måste sparas på servern. Du måste ange samma sökväg och samma namn i **[!UICONTROL General]** fliken i redigeringsfönstret för den beräknade bilagan (se: [Steg 2: Skapa leveransmallen](#step-2--creating-the-delivery-template)).
+      >Filen måste sparas på servern. Du måste ange samma sökväg och samma namn som i **[!UICONTROL General]** -fliken i redigeringsfönstret för den beräknade bilagan, som [här](#step-2--create-the-delivery-template)).
 
    * **var exportFormat**: Ange exportformatet för filen (&quot;PDF&quot;).
    * **var _ctx** (kontext): i det här fallet använder vi **[!UICONTROL Tracking indicators]** rapportera i sitt globala sammanhang.
 
-1. Slutför genom att lägga till en **[!UICONTROL Delivery]** typaktivitet med följande alternativ:
+1. Slutför genom att lägga till en **[!UICONTROL Delivery]** aktivitet med följande alternativ:
+
+   ![](assets/use_case_report_11.png)
 
    * **[!UICONTROL Delivery]**: välj **[!UICONTROL New, created from a template]** och välj den leveransmall som skapades tidigare.
    * För **[!UICONTROL Recipients]** och **[!UICONTROL Content]** fält, markera **[!UICONTROL Specified in the delivery]**.
-   * **[!UICONTROL Action to execute]**: välj **[!UICONTROL Prepare and start]**.
-   * Avmarkera **[!UICONTROL Generate an outbound transition]** och **[!UICONTROL Process errors]**.
-   ![](assets/use_case_report_11.png)
+   * **[!UICONTROL Action to perform]**: välj **[!UICONTROL Prepare and start]**.
+   * Avmarkera **[!UICONTROL Generate an outbound transition]** och **[!UICONTROL Process errors]** alternativ.
+
+1. Spara ändringarna och starta arbetsflödet. Meddelandet skickas till listan över mottagare varje månad med den bifogade rapporten.

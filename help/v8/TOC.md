@@ -4,9 +4,9 @@ user-guide-title: Campaign v8
 description: Dokumentation om Campaign v8
 breadcrumb-title: Kampanjöversikt
 title: Kampanjdokument v8
-source-git-commit: 7fc3e5b9f12ca48ef0921e27844ef9fef71ac06b
+source-git-commit: 43e515339a2483e82910603daf6009cad63eeeae
 workflow-type: tm+mt
-source-wordcount: '470'
+source-wordcount: '474'
 ht-degree: 25%
 
 ---
@@ -37,6 +37,7 @@ ht-degree: 25%
    + [Kampanjsamordning - dokumentation](https://experienceleague.adobe.com/docs/campaign/automation/campaign-orchestration/set-up-campaigns.html)
    + Skicka meddelanden{#send}
       + [Kom igång med meddelanden](start/create-message.md)
+      + [Arbeta med leveransmallar](send/create-templates.md)
       + E-post {#emails}
          + [Designa och validera e-postmeddelanden](send/email.md)
          + [Skicka och övervaka e-post](send/send.md)
