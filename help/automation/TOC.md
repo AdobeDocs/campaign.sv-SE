@@ -2,7 +2,7 @@
 audience: user
 user-guide-title: Guide för kampanjautomatisering
 user-guide-description: Guide för kampanjautomatisering
-source-git-commit: 2b1dec4b9c456df4dfcebfe10d18e0ab01599275
+source-git-commit: 7fe079c5473fa164405753c2be6cc8be16329f58
 workflow-type: tm+mt
 source-wordcount: '424'
 ht-degree: 83%
@@ -145,10 +145,10 @@ ht-degree: 83%
    + [Leverantörer, lager och budgetar](campaigns/providers--stocks-and-budgets.md)
 + Kampanjoptimering (tillägg){#campaign-optimization}
    + [Kom igång med olika kampanjtyper](campaign-opt/campaign-typologies.md)
+   + [Filtreringsregler](campaign-opt/filtering-rules.md)
+   + [Kontrollregler](campaign-opt/control-rules.md)
    + [Tryckregler](campaign-opt/pressure-rules.md)
    + [Konsekvensregler](campaign-opt/consistency-rules.md)
-   + [Kontrollregler](campaign-opt/control-rules.md)
-   + [Filtreringsregler](campaign-opt/filtering-rules.md)
    + [Tillämpa regler](campaign-opt/apply-rules.md)
    + [Simuleringar i Campaign](campaign-opt/campaign-simulations.md)
 + Distribuerad marknadsföring (tillägg) {#distributed-marketing}

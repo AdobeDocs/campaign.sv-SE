@@ -3,16 +3,17 @@ product: campaign
 title: Konfigurera filtreringsregler
 description: Lär dig hur du konfigurerar filtreringsregler
 feature: Typology Rules
-source-git-commit: 72467caf94e652ede70c00f1ea413012fc4c7e1f
+exl-id: 17507cdf-211f-4fa2-abb9-33d4f6dc47bb
+source-git-commit: 7fe079c5473fa164405753c2be6cc8be16329f58
 workflow-type: tm+mt
-source-wordcount: '492'
+source-wordcount: '523'
 ht-degree: 1%
 
 ---
 
 # Filtreringsregler{#filtering-rules}
 
-Med filtreringsregler kan du definiera meddelanden som ska uteslutas baserat på kriterier som definierats i en fråga. Dessa regler är kopplade till en målinriktningsdimension.
+Använd filtreringsregler för att välja meddelanden som ska exkluderas baserat på kriterier som definierats i en fråga. Dessa regler är kopplade till en målinriktningsdimension.
 
 Filtreringsregler kan länkas till andra typer av regler (kontroll, tryck osv.) i typologier, eller grupperade i en dedikerad **Filtrering** typologi. [Läs mer](#create-and-use-a-filtering-typology).
 
@@ -22,11 +23,12 @@ Du kan t.ex. filtrera nyhetsbrevets prenumeranter för att förhindra att kommun
 
 Så här definierar du filtret:
 
-1. Skapa en **[!UICONTROL Filtering]** Typologiregel som gäller för alla kommunikationskanaler.
+1. Bläddra till **[!UICONTROL Administration > Campaign management > Typology management > Typology rules]** mapp för Campaign-exporteraren och klicka på **Nytt** om du vill skapa en typologiregel.
+1. Skapa en **[!UICONTROL Filtering]** typologiregel som gäller för alla kanaler.
 
    ![](assets/campaign_opt_create_filter_01.png)
 
-1. Ändra standarddimensionen för målinriktning och välj prenumerationer (**nms:prenumeration**).
+1. Från **Filter** tabbändra standarddimensionen för målinriktning till **Prenumerationer** (**nms:prenumeration**).
 
    ![](assets/campaign_opt_create_filter_02.png)
 
@@ -34,11 +36,15 @@ Så här definierar du filtret:
 
    ![](assets/campaign_opt_create_filter_03.png)
 
-1. Länka den här regeln till en kampanjtypologi och spara den.
+1. Filtrera på mottagarsidan och spara filtreringsvillkoret.
+
+   ![](assets/campaign_opt_create_filter_03b.png)
+
+1. Från **Typologier** länka den här regeln till en kampanjtypologi och spara den.
 
    ![](assets/campaign_opt_create_filter_04.png)
 
-När den här regeln används i en leverans, exkluderas undertidsprenumeranter automatiskt. Ett specifikt meddelande indikerar regelprogram:
+När den här regeln används i en leverans, exkluderas undertidsprenumeranter automatiskt. Ett specifikt meddelande indikerar när regeln tillämpas:
 
 ![](assets/campaign_opt_create_filter_05.png)
 
@@ -46,9 +52,11 @@ När den här regeln används i en leverans, exkluderas undertidsprenumeranter a
 
 Du kan begränsa programfältet för filtreringsregeln baserat på den länkade leverans- eller leveransdispositionen.
 
-För att göra det går du till **[!UICONTROL General]** väljer du vilken typ av begränsning som ska användas och skapar filtret enligt nedan:
-
+För att göra det går du till **[!UICONTROL General]** väljer du den typ av begränsning som ska användas och skapar filtret.
+<!--
 ![](assets/campaign_opt_create_filter_06.png)
+-->
+
 
 I det här fallet gäller att även om regeln är länkad till alla leveranser, kommer den endast att tillämpas på dem som matchar kriterierna för det definierade filtret.
 
