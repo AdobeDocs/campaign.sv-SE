@@ -2,8 +2,8 @@
 product: campaign
 title: Skapa ett filter
 description: Lär dig hur du skapar ett filter när du utför frågor
-feature: Workflows
-source-git-commit: 2b1dec4b9c456df4dfcebfe10d18e0ab01599275
+feature: Query Editor, Workflows
+source-git-commit: 5cd75f18ac2f4e02f656fa016f61ba0c7c72670a
 workflow-type: tm+mt
 source-wordcount: '208'
 ht-degree: 2%
