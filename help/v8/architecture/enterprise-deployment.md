@@ -5,10 +5,10 @@ feature: Architecture, FFDA
 role: Admin, Developer, User
 level: Beginner, Intermediate, Experienced
 exl-id: 0a6f6701-b137-4320-9732-31946509ee03
-source-git-commit: 2ce1ef1e935080a66452c31442f745891b9ab9b3
+source-git-commit: 51bba0a2b4be03577f508d352fc7c2b514ba28e5
 workflow-type: tm+mt
-source-wordcount: '1019'
-ht-degree: 1%
+source-wordcount: '1045'
+ht-degree: 2%
 
 ---
 
@@ -112,6 +112,16 @@ Observera att detta ID är strängbaserat och inte sekventiellt. Primärnyckeln 
 I Campaign Classic v7 och tidigare versioner hanteras uniciteten för en nyckel i ett schema (dvs. tabell) på databasmotornivå. Vanligtvis innehåller klassiska databasmotorer som PostgreSQL, Oracle eller SQL Server en inbyggd mekanism som förhindrar att duplicerade rader infogas baserat på en kolumn eller en uppsättning kolumner via primärnycklar och/eller unika index. Det finns inget duplicerat ID i dessa versioner när korrekt index och primärnycklar har angetts på databasnivå.
 
 Adobe Campaign v8 levereras med Snowflake som kärndatabas. Eftersom sökningen dramatiskt ökar antalet frågor, har den distribuerade arkitekturen i Snowflake-databasen inte sådana mekanismer för att hantera och sedan genomdriva enkelheten hos en nyckel i en tabell. I Adobe Campaign v8 förhindrar därför ingenting att duplicerade nycklar används i en tabell. Slutanvändare ansvarar nu för att säkerställa att nyckelord är konsekventa i Adobe Campaign-databasen. [Läs mer](keys.md)
+
+### Tillgänglighet {#feature-availability}
+
+Vissa funktioner är inte tillgängliga i samband med en Enterprise-distribution (FFDA) av Campaign, till exempel:
+
+* Hantera marknadsföringsresurser
+* Kuponger
+* Webbspårning
+* Undersökningar
+
 
 **Relaterade ämnen**
 

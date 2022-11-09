@@ -5,9 +5,9 @@ feature: Overview
 role: Admin, Developer, User
 level: Beginner, Intermediate, Experienced
 exl-id: 00ba1c43-9558-4adb-83a1-6597c2bbca62
-source-git-commit: 8d9b8d3e31362c2d69ec0fc6f16ab375538d7f10
+source-git-commit: c267bf2db7dfd524bf2b56c9ae48b42da37c0376
 workflow-type: tm+mt
-source-wordcount: '643'
+source-wordcount: '648'
 ht-degree: 3%
 
 ---
@@ -70,13 +70,12 @@ Med Adobe Campaign v8 är kubrapporterna optimerade och ger bättre skalbarhet �
 
 ## Otillgängliga funktioner{#gs-unavailable-features}
 
-Observera att vissa funktioner inte är tillgängliga i den här versionen av Campaign, till exempel:
+Observera att vissa funktioner inte är tillgängliga i samband med en [Företagsdistribution (FFDA)](../architecture/enterprise-deployment.md) för Campaign, till exempel:
 
 * Hantera marknadsföringsresurser
 * Kuponger
 * Webbspårning
 * Undersökningar
-
 
 ## Funktioner som inte stöds{#gs-removed}
 
