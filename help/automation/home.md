@@ -5,10 +5,10 @@ title: Adobe Campaign Automation Home
 feature: Overview
 description: Översikt
 exl-id: 9ed73e65-3626-46c6-bfeb-a9fe9c2d7f72
-source-git-commit: 190707b8b1ea5f90dc6385c13832fbb01378ca1d
+source-git-commit: 612b3a4287a5ab880b7fd251cc2727586977fbde
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '191'
+ht-degree: 6%
 
 ---
 
@@ -74,6 +74,11 @@ Gå till guiderna nedan och lär dig hur du bygger automatisering med Adobe Camp
     <br>
     <div>
     <a href="campaign-opt/campaign-typologies.md">Kampanjoptimering</a>
+    </div>
+    <br>
+    <br>
+    <div>
+    <a href="mrm/about-marketing-resource-management.md">Marknadsföringsresurshantering (MRM)</a>
     </div>
     <br>
   </td>

@@ -2,10 +2,10 @@
 audience: user
 user-guide-title: Guide för kampanjautomatisering
 user-guide-description: Guide för kampanjautomatisering
-source-git-commit: 7fe079c5473fa164405753c2be6cc8be16329f58
+source-git-commit: c835a96b315d2c68b64869082fc626243dd006e9
 workflow-type: tm+mt
-source-wordcount: '424'
-ht-degree: 83%
+source-wordcount: '447'
+ht-degree: 81%
 
 ---
 
@@ -151,8 +151,14 @@ ht-degree: 83%
    + [Konsekvensregler](campaign-opt/consistency-rules.md)
    + [Tillämpa regler](campaign-opt/apply-rules.md)
    + [Simuleringar i Campaign](campaign-opt/campaign-simulations.md)
++ Hantera marknadsföringsresurser {#mrm}
+   + [Kom igång med resurshantering för marknadsföring (MRM)](mrm/about-marketing-resource-management.md)
+   + [Skapa och hantera uppgifter](mrm/creating-and-managing-tasks.md)
+   + [Kontrollera kostnader](mrm/controlling-costs.md)
+   + [Hantera marknadsföringsresurser](mrm/managing-marketing-resources.md)
+   + [Diskussionsforum](mrm/discussion-forums.md)
 + Distribuerad marknadsföring (tillägg) {#distributed-marketing}
-   + [Om distribuerad marknadsföring](distributed-marketing/about-distributed-marketing.md)
+   + [Kom igång med distribuerad marknadsföring](distributed-marketing/about-distributed-marketing.md)
    + [Skapa en lokal kampanj](distributed-marketing/creating-a-local-campaign.md)
    + [Skapa en samverkanskampanj](distributed-marketing/creating-a-collaborative-campaign.md)
    + [Publicera kampanjpaketet](distributed-marketing/publishing-the-campaign-package.md)

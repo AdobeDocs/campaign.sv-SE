@@ -3,7 +3,8 @@ product: campaign
 title: Kom igång med distribuerad marknadsföring
 description: Kom igång med distribuerad marknadsföring
 feature: Distributed Marketing
-source-git-commit: 2b1dec4b9c456df4dfcebfe10d18e0ab01599275
+exl-id: c9f5b277-3ad8-4316-94b9-789d37813b8b
+source-git-commit: c835a96b315d2c68b64869082fc626243dd006e9
 workflow-type: tm+mt
 source-wordcount: '1134'
 ht-degree: 0%
@@ -11,8 +12,6 @@ ht-degree: 0%
 ---
 
 # Kom igång med distribuerad marknadsföring{#about-distributed-marketing}
-
-
 
 Adobe Campaign erbjuder **Distribuerad marknadsföring** ansökan om genomförande av samverkanskampanjer mellan centrala enheter (huvudkontor, marknadsavdelningar osv.) och lokala enheter (säljställen, regionala organ osv.). Detta samarbete bygger på en delad arbetsyta som kallas **[!UICONTROL list of campaign packages]**, där centralt skapade kampanjmallar och instanser erbjuds lokala enheter.
 
