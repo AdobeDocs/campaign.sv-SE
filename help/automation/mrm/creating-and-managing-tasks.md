@@ -2,9 +2,10 @@
 product: campaign
 title: Skapa och hantera uppgifter
 description: Skapa och hantera uppgifter
-source-git-commit: c835a96b315d2c68b64869082fc626243dd006e9
+exl-id: 730d1712-53a6-4bf7-9aac-523b06bd0d0a
+source-git-commit: 399c81276d29622a2161c8c90395df1a38954763
 workflow-type: tm+mt
-source-wordcount: '3703'
+source-wordcount: '3740'
 ht-degree: 0%
 
 ---
@@ -21,7 +22,7 @@ Alla uppgifter grupperas i en lista som är tillgänglig via **Kampanjer** -flik
 
 De kan visas i schemat för det program de tillhör.
 
-![](assets/d_ncs_user_tasks_in_planning.png)
+![](assets/campaign-calendar.png)
 
 ## Åtkomstuppgifter {#accessing-tasks}
 
@@ -29,113 +30,123 @@ De kan visas i schemat för det program de tillhör.
 
 Uppgifterna visas i uppgiftslistan som du kommer åt via **[!UICONTROL Campaigns]** -fliken.
 
-![](assets/s_ncs_user_task_edit_view.png)
+![](assets/campaign-task-dashboard.png)
 
-Där kan du visa alla uppgifter för den anslutna operatorn.
+Du kan visa alla uppgifter för den aktuella operatorn.
 
 Mer information finns i [Körningsstatus för en uppgift](#execution-status-of-a-task) och [Status för en uppgift](#progress-status-of-a-task).
 
 ### Filtrera uppgifter {#filtering-tasks}
 
-När du visar den här vyn filtreras den automatiskt så att den endast visas **[!UICONTROL operator tasks]**. Du kan även filtrera uppgifterna med hjälp av fälten i fönstrets övre del.
-
-![](assets/s_ncs_user_task_filter_from_view.png)
+När du visar den här vyn filtreras den automatiskt så att endast **aktuella operatoruppgifter**. Du kan även filtrera uppgifterna med hjälp av fälten i fönstrets övre del.
 
 ### Redigera uppgifter {#editing-tasks}
 
 Klicka på en uppgift för att redigera den.
 
-![](assets/s_ncs_user_task_edit_from_view.png)
+![](assets/edit-a-task.png)
 
 ## Skapa en ny uppgift {#creating-a-new-task}
 
-Om du vill skapa en uppgift klickar du på **[!UICONTROL Tasks]** i **[!UICONTROL Campaigns]** och markera **[!UICONTROL Create]**.
+Så här skapar du en uppgift:
 
-![](assets/s_ncs_user_task_create_new.png)
+1. Bläddra till **[!UICONTROL Tasks]** i **[!UICONTROL Campaigns]** och klicka **[!UICONTROL Create]**.
 
-Ange åtminstone namnet på aktiviteten och välj den kampanj som den är länkad till. Du måste också ange start- och slutdatum. Dessa tre uppgifter är obligatoriska.
+   ![](assets/create-a-task-from-dashboard.png)
 
-Klicka **[!UICONTROL Save]** för att skapa uppgiften.
+1. Ange namnet på aktiviteten och välj den kampanj som den är länkad till.
+1. Ange start- och slutdatum.
+1. Klicka **[!UICONTROL Save]** för att skapa uppgiften.
 
-![](assets/s_ncs_user_task_create_simple.png)
+   ![](assets/new-task-edit.png)
 
 Du kan även skapa en uppgift via kontrollpanelen för en kampanj: i det här fallet länkas den automatiskt till kampanjen som den skapades från.
 
-![](assets/s_ncs_user_task_create_new_from_op.png)
+![](assets/add-a-task-in-a-campaign.png)
 
-När en uppgift har skapats läggs den till i kampanjschemat och i listan över aktiviteter. Om du vill redigera en uppgift markerar du den i schemat eller klickar på namnet i uppgiftsöversikten och klickar på knappen **[!UICONTROL Open]** länk.
+När en uppgift har skapats läggs den till i kampanjschemat, kampanjinstrumentpanelen och listan med uppgifter. Om du vill redigera en uppgift klickar du på dess namn i listan med uppgifter eller väljer den i schemat eller på kampanjkontrollpanelen och klickar på **[!UICONTROL Open]**.
 
-![](assets/s_ncs_user_task_edit_simple.png)
+När du har skapat uppgiften kan du konfigurera den genom att definiera:
 
-För att konfigurera den måste du ange:
+* Chefen och deltagarna. [Läs mer](#manager-and-participants)
+* Skapandeschemat. [Läs mer](#execution-schedule)
+* Utfästa kostnader. [Läs mer](#expenses-and-revenues)
 
-* Chefen och deltagarna: referera till [Chef och deltagare](#manager-and-participants).
-* Skapandeschema: referera till [Körningsschema](#execution-schedule).
-* Utfästa kostnader: referera till [Utgifter och intäkter](#expenses-and-revenues).
+Du kan också lägga till [granskare](#reviewers) och [referensdokument](#documents-referenced).
 
-Det går också att annonsera granskare (se [Granskare](#reviewers)) och refererade dokument (se [Refererade dokument](#documents-referenced)).
-
-Aktivitetens livscykel visas i [Livscykel](#life-cycle).
+Aktivitetens livscykel visas i [det här avsnittet](#life-cycle).
 
 ### Chef och deltagare {#manager-and-participants}
 
-Det är bara operatorn som ansvarar för en uppgift som har behörighet att stänga den.
+Som standard tilldelas uppgiften den operator som skapade den. Den här operatorn meddelas när en åtgärd krävs för den uppgiften.
 
-När en Adobe Campaign-operator skapar en uppgift tilldelas den som standard automatiskt. Om du vill välja en annan operator använder du **[!UICONTROL Assigned to]** fält.
+Du kan välja en annan operator i **[!UICONTROL Assigned to]** nedrullningsbar lista.
 
-![](assets/s_ncs_user_task_edit_simple_general_tab.png)
+![](assets/task-assigned-to.png)
 
 >[!NOTE]
 >
 >Operatörshantering beskrivs i [det här avsnittet](../../v8/start/permissions.md).
+>
+>Det är bara operatorn som ansvarar för en uppgift som kan stänga den.
 
-Du kan ange vilka operatorer som ska utföra uppgiften. De här operatorerna har inte behörighet att stänga aktiviteten. De kan bara godkänna den uppgift som de tilldelats.
+Du kan ange fler operatorer som ska utföra uppgiften. Dessa operatorer får inte stänga uppgiften: kan de endast godkänna den uppgift som de tilldelats.
 
-De markeras med **[!UICONTROL Resources]** i verktygsfältet. Klicka **[!UICONTROL Add]** och välja ut de berörda aktörerna.
+Följ stegen nedan för att lägga till aktivitetsoperatorer:
 
-![](assets/s_ncs_user_task_add_resources.png)
+1. Klicka på **[!UICONTROL Resources]** i verktygsfältet.
 
-Klicka **[!UICONTROL Ok]** och ange sedan användarfrekvensen: detta representerar den belastning som tilldelats operatorn för uppgiftskörningens varaktighet. Denna procentsats är endast en indikation och uttrycks som en procentandel.
+   ![](assets/add-task-resources.png)
 
-För en aktivitet vars körningsschema är inställt på 10 dagar, kommer till exempel en operator vars användarfrekvens är 50 % att aktiveras för den här aktiviteten för halva arbetstiden i 10 dagar.
+1. Klicka **[!UICONTROL Add]** och välja ut de berörda aktörerna.
+1. Ange användningsfrekvens: detta representerar arbetsbelastningen som tilldelats operatorn för uppgiftskörningens varaktighet. Denna procentsats är endast en indikation och uttrycks som en procentandel.
 
-För varje operator kan du ange en schemalagd arbetsbelastning och en faktisk arbetsbelastning. Dessa varaktigheter är också avsedda endast som information.
+   ![](assets/define-operator-task-workload.png)
 
-Det går att konfigurera en påminnelse som automatiskt skickas till alla operatorer som arbetar med aktiviteten före slutdatumet.
+   För en aktivitet vars körningsschema är inställt på 10 dagar, kommer till exempel en operator vars användarfrekvens är 50 % att aktiveras för den här aktiviteten för halva arbetstiden i 10 dagar.
 
-Du kan visa operatorprofilen för Adobe Campaign via **[!UICONTROL Edit link]** ikon.
+   För varje operator kan du ange en schemalagd arbetsbelastning och en faktisk arbetsbelastning. Dessa varaktigheter är också avsedda endast som information.
 
-![](assets/s_ncs_user_task_edit_resource_profile.png)
+1. Du kan konfigurera en påminnelse från **[!UICONTROL Add a reminder...]** länk. Ett e-postmeddelande skickas till alla operatorer som deltar i aktiviteten före slutdatumet.
+
+   ![](assets/task-op-add-a-reminder.png)
+
+1. Du kan också skicka ett meddelande innan uppgiften startar. För att ställa in detta väljer du datumet i **[!UICONTROL Initial notification]** fält.
+1. När slutdatumet har nåtts och uppgiften inte har stängts kan ett meddelande skickas till den tilldelande eller den grupp av tilldelningar som har valts i **[!UICONTROL Assignee]** nedrullningsbar lista.
+
 
 På kontrollpanelen för operatorer kan du kontrollera deras arbetsbelastning (andra pågående uppgifter).
 
-![](assets/s_ncs_user_task_edit_resource_planning.png)
+![](assets/operator-dashboard.png)
 
-### Granskare {#reviewers}
+### Godkännande av uppgift {#reviewers}
 
-Förutom deltagarna kan du definiera operatorer som ska granska uppgiften när den har stängts av den ansvarige personen. Om du vill göra det klickar du på **[!UICONTROL Enable task approval]** i nedre vänstra delen av **[!UICONTROL Resources]** -fönstret. Det kan vara en enskild operator, en grupp operatorer eller en lista med operatorer.
+Förutom deltagarna kan du definiera operatorer som ska granska uppgiften när den har stängts.
 
-![](assets/s_ncs_user_task_edit_resource_validation.png)
+Om du vill göra det klickar du på **[!UICONTROL Enable task approval]** i nedre delen av **[!UICONTROL Resources]** -fönstret. Det kan vara en enskild operator, en grupp operatorer eller en lista med operatorer.
 
 Om du vill ange en lista med operatorer klickar du på **[!UICONTROL Edit...]** länk till höger om den första granskaren och lägg till så många operatorer som behövs, som visas nedan:
 
-![](assets/s_ncs_user_task_edit_resource_operators.png)
+![](assets/enable-task-approval.png)
 
-Du kan definiera ett godkännandeschema för uppgiften i det nedre avsnittet av granskningsfönstret. Som standard har granskarna tre dagar på sig att godkänna uppgiften från och med överföringsdatumet. Det går att konfigurera en påminnelse som skickas till de berörda operatörerna automatiskt innan tidsgränsen för godkännande.
-
-![](assets/s_ncs_user_edit_op_valid_calendar.png)
+Du kan definiera ett godkännandeschema för uppgiften i det nedre avsnittet av konfigurationsfönstret. Som standard har granskarna tre dagar på sig att godkänna uppgiften från och med överföringsdatumet. Du kan också lägga till en påminnelse som automatiskt skickas till de berörda operatörerna före godkännandedeadline.
 
 Den person som ansvarar för uppgiften kan tilldela sig själv uppgiften att godkänna den, även om andra operatorer redan har tilldelats uppgiften att göra detta. Om ingen granskare har definierats skickas meddelandena till den person som ansvarar för uppgiften. Alla andra Adobe Campaign-operatorer med **[!UICONTROL Administrator]** behörigheter kan också godkänna uppgiften. De får dock inga meddelanden.
 
 ### Refererade dokument {#documents-referenced}
 
-Du kan lägga till [dokument och marknadsföringsresurser](managing-marketing-resources.md) till en uppgift. Om du vill göra det öppnar du uppgiften och klickar på knappen **[!UICONTROL Documents]** i verktygsfältet.
+Du kan lägga till [dokument och marknadsföringsresurser](managing-marketing-resources.md) till en uppgift.
 
-Klicka **[!UICONTROL Add]** och väljer det dokument som ska läggas till i uppgiften. Använd samma process för marknadsföringsresurser.
+Så här gör du:
 
-![](assets/s_ncs_user_task_edit_documents.png)
+1. Öppna uppgiften och klicka på **[!UICONTROL Documents]** i verktygsfältet.
 
-Refererade dokument visas i meddelanden som skickas till de operatorer som deltar i uppgiften samt på kontrollpanelen för uppgifter.
+   ![](assets/add-documents-to-a-task.png)
+
+1. Klicka **[!UICONTROL Add]** och väljer det dokument som ska läggas till i uppgiften. Använd samma process för marknadsföringsresurser.
+
+
+Refererade dokument läggs till i de meddelanden som skickas till de operatorer som deltar i uppgiften. De läggs också till på kontrollpanelen för uppgifter.
 
 ![](assets/s_ncs_user_task_notification_documents.png)
 
