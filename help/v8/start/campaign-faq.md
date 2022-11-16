@@ -1,14 +1,14 @@
 ---
 title: Frågor och svar om Campaign v8
-description: Upptäck vanliga frågor och svar om Campaign
+description: Få svar på vanliga Adobe Campaign-frågor.
 feature: Overview
 role: Admin, Developer, User
 level: Beginner
 exl-id: 027f5478-d86b-42be-b63d-ec8f5e1dd83d,f5688357-db90-4f88-9596-91e9d0a20d75
-source-git-commit: 2ce1ef1e935080a66452c31442f745891b9ab9b3
+source-git-commit: 507f30d16eecf5400ee88a4d29913e4cdaca9cba
 workflow-type: tm+mt
-source-wordcount: '657'
-ht-degree: 42%
+source-wordcount: '659'
+ht-degree: 37%
 
 ---
 
@@ -85,4 +85,4 @@ Behöver du hjälp eftersom du arbetar med Campaign? Läs de viktigaste frågorn
 
    Om du vill logga ett problem eller starta en chattsession i det nya systemet ansluter du till [Adobe Admin Console](https://adminConsole.adobe.com/overview){target=&quot;_blank&quot;}.
 
-   Det här systemet kräver enskilda konton för varje användare, med rätt behörigheter. Begär åtkomst via Experience League om du inte kan logga in med ditt Adobe ID, så registrerar kundtjänstteamet dig så snart som möjligt. [Läs mer](https://helpx.adobe.com/se/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html){target=&quot;_blank&quot;}
+   Det här systemet kräver enskilda konton för varje användare, med rätt behörigheter. Om du inte kan logga in med din Adobe ID begär du åtkomst via Experience League, så kommer kundtjänstteamet att få dig konfigurerad så snart som möjligt. [Läs mer](https://helpx.adobe.com/se/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html){target=&quot;_blank&quot;}

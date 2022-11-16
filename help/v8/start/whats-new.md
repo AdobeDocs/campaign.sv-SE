@@ -1,14 +1,14 @@
 ---
 title: Nyheter i Campaign v8
-description: Upptäck nyckelfunktionerna i Campaign v8
+description: Upptäck nyckelfunktionerna i Adobe Campaign v8, nyheter och vad du kan förvänta dig av den senaste versionen.
 feature: Overview
 role: Admin, Developer, User
 level: Beginner, Intermediate, Experienced
 exl-id: 7771a02c-ebd4-48b6-b25e-6b6e420ad493
-source-git-commit: 0d9acc431efddc500701996996f846132eeafcdb
+source-git-commit: 507f30d16eecf5400ee88a4d29913e4cdaca9cba
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '889'
+ht-degree: 4%
 
 ---
 

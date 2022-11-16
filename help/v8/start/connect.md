@@ -1,13 +1,13 @@
 ---
 title: Anslut till Campaign v8
-description: Lär dig hur du ansluter till Campaign v8
+description: Lär dig hur du ansluter till Adobe Campaign v8 och installerar konsolen på datorn för enklare åtkomst.
 feature: Client Console
 role: User
 level: Beginner
 exl-id: 176cc4f0-8827-4127-9f03-7d75ac8cf917
-source-git-commit: 46be0379610a6a4a3491d49ce096c64270ed8016
+source-git-commit: 507f30d16eecf5400ee88a4d29913e4cdaca9cba
 workflow-type: tm+mt
-source-wordcount: '841'
+source-wordcount: '852'
 ht-degree: 1%
 
 ---
