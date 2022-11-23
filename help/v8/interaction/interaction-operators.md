@@ -5,51 +5,31 @@ feature: Interaction, Offers
 role: Data Engineer
 level: Beginner
 exl-id: 865ddb84-3373-45e0-849d-9d3c92455d22
-source-git-commit: 8eb92dd1cacc321fc79ac4480a791690fc18511c
+source-git-commit: eed3396584940f99a865eef2358887b6bf5c4936
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '243'
+ht-degree: 4%
 
 ---
 
 # Operatorprofiler {#operator-profiles}
 
-Två typer av operatorer kan använda Campaign Interaction: **Erbjudandeansvariga** och **Leveransansvariga**. Var och en av dem har specifika behörigheter och begränsningar. Läs mer om Campaign-operatorer och behörigheter i [den här sidan](../start/permissions.md).
+Två typer av operatorer kan använda Campaign Interaction: **Erbjudandeansvariga** och **Leveransansvariga**. Var och en av dem har specifika behörigheter och begränsningar. Läs mer om Campaign-operatorer och behörigheter i [den här sidan](../start/gs-permissions.md).
 
 * The **[!UICONTROL Offer manager]** skapar och underhåller erbjudanden.
 * The **[!UICONTROL Delivery manager]** godkänner och använder erbjudanden
 
 ## Skapa en Offer Manager-operator{#offer-manager}
 
-1. Skapa en operator.
+1. Skapa en operator. [Läs mer](../start/manage-permissions.md#add-users)
+1. Bläddra till **[!UICONTROL Groups and named rights]** fönster, klicka **[!UICONTROL Add]** och väljer **[!UICONTROL Offer manager]** grupp.
 
-   ![](../assets/do-not-localize/book.png) Steg för att skapa en operator i Campaign beskrivs i [Campaign Classic v7-dokumentation](https://experienceleague.adobe.com/docs/campaign-classic/using/getting-started/permissions/access-management-operators.html)
-
-1. Gå till **[!UICONTROL Groups and named rights]** fönster, klicka **[!UICONTROL Add]** och väljer **[!UICONTROL Offer manager]** grupp.
-
-Med de rättigheter som tilldelats till erbjudandehanteraren kan de utföra följande uppgifter:
-
-* Ändra **[!UICONTROL Design]** miljöer.
-* Visa **[!UICONTROL Live]** miljöer.
-* Konfigurera administrationsfunktioner (fördefinierade blanksteg och filter).
-* Skapa och ändra kategorier.
-* Skapa erbjudanden.
-* Konfigurera berättigande för erbjudanden.
-* Godkänn erbjudanden.
-
-Om erbjudanden används i ett arbetsflöde måste operatorn läggas till i **[!UICONTROL Administrator]** eller **[!UICONTROL Offer managers]** operatörsgrupp för att köra arbetsflödet.
-
->[!NOTE]
->
->**Erbjudandeansvariga** kan bara godkänna ett erbjudande om ingen granskare har angetts, eller om de har deklarerats som granskare i erbjudandemallen.
+Behörigheter som är kopplade till erbjudandehanterare beskrivs [här](../start/manage-permissions.md#ootb-productprofiles)
 
 ## Skapa en leveranshanteraroperator {#delivery-manager}
 
-1. Skapa en operator.
-
-   ![](../assets/do-not-localize/book.png) Steg för att skapa en operator i Campaign beskrivs i [Campaign Classic v7-dokumentation](https://experienceleague.adobe.com/docs/campaign-classic/using/getting-started/permissions/access-management-operators.html)
-
-1. Gå till **[!UICONTROL Groups and named rights]** fönster, klicka **[!UICONTROL Add]** och väljer **[!UICONTROL Delivery manager]** grupp.
+1. Skapa en operator. [Läs mer](../start/manage-permissions.md#add-users)
+1. Bläddra till **[!UICONTROL Groups and named rights]** flik, klicka **[!UICONTROL Add]** och väljer **[!UICONTROL Delivery manager]** grupp.
 
 De rättigheter som tilldelats leveransansvariga gör det möjligt för dem att utföra följande uppgifter:
 

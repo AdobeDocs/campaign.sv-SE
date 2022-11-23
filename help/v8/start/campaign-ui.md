@@ -5,7 +5,7 @@ feature: Overview
 role: Admin, Developer, User
 level: Beginner
 exl-id: a7846b95-7570-4dce-b3f4-d3cc23eefcac
-source-git-commit: 2ce1ef1e935080a66452c31442f745891b9ab9b3
+source-git-commit: eed3396584940f99a865eef2358887b6bf5c4936
 workflow-type: tm+mt
 source-wordcount: '513'
 ht-degree: 0%
@@ -14,7 +14,7 @@ ht-degree: 0%
 
 # Upptäck gränssnittet för Campaign
 
-## Åtkomst till Campaign-gränssnittet
+## Åtkomst till Campaign-gränssnittet{#ui-access}
 
 Kampanjarbetsytan är tillgänglig via [Klientkonsol](../architecture/general-architecture.md).
 
@@ -24,7 +24,7 @@ Lär dig hur du installerar och konfigurerar Campaign Client Console i [det här
 
 Du kan också använda en webbläsare för att få tillgång till Campaign. I det här sammanhanget är bara en deluppsättning av Campaign-funktionerna tillgängliga. [Läs mer](#web-browser)
 
-## Bläddra i användargränssnittet
+## Bläddra i användargränssnittet{#ui-browse}
 
 När du är ansluten till Campaign kommer du åt startsidan. Bläddra bland länkarna för att komma åt funktioner. Vilka funktioner som är tillgängliga i användargränssnittet beror på vilka alternativ och behörigheter du har.
 
@@ -79,7 +79,7 @@ I det övre avsnittet visas en lista med poster i den aktuella mappen. Dessa lis
 I det nedre avsnittet visas information om den valda posten.
 
 
-## Språk
+## Språk{#languages}
 
 Användargränssnittet för Campaign v8 finns på följande språk:
 

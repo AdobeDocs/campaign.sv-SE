@@ -5,9 +5,9 @@ feature: Application Settings
 role: Admin
 level: Beginner, Intermediate, Experienced
 exl-id: 9634b576-2854-4ea9-ba0d-8efaab2c4aee
-source-git-commit: 2ce1ef1e935080a66452c31442f745891b9ab9b3
+source-git-commit: 6dee08f0f8673e5264f3cb111fe14493980a62fc
 workflow-type: tm+mt
-source-wordcount: '1090'
+source-wordcount: '1091'
 ht-degree: 5%
 
 ---
@@ -26,7 +26,8 @@ Du kan få åtkomst till externa konton från Adobe Campaign **[!UICONTROL Explo
 >[!CAUTION]
 >
 >När det gäller [Företagsdistribution (FFDA)](../architecture/enterprise-deployment.md), en specifik **[!UICONTROL Full FDA]** (ffda) externt konto hanterar anslutningen mellan den lokala databasen i Campaign och molndatabasen ([!DNL Snowflake]).
-></br>Som användare av hanterade Cloud Services konfigureras det här externa kontot för din instans av Adobe. Den får inte ändras.
+>
+>Som användare av hanterade Cloud Services konfigureras externa konton för din instans av Adobe och får inte ändras.
 
 ## Kampanjspecifika externa konton
 
@@ -117,34 +118,37 @@ När det gäller transaktionsmeddelanden är körningsinstanserna länkade till 
 
 * **Extern databas (FDA)**
 
-   Använd **Extern databas** skriv ett externt konto för att ansluta till en extern databas via FDA.
+   The **Extern databas** externt typkonto används för att ansluta till en extern databas via FDA (Federated Data Access).
 
    Externa databaser som är kompatibla med Adobe Campaign v8 listas i [Kompatibilitetsmatris](../start/compatibility-matrix.md)
 
    ![](../assets/do-not-localize/glass.png) Läs mer om FDA-alternativet (Federated Data Access) i [det här avsnittet](../connect/fda.md).
 
+* **Twitter**
+
+   The **Twitter** Skriv ett externt konto som används för att ansluta Campaign till ditt twitter-konto och för att skicka meddelanden åt dig.
+
+   ![](../assets/do-not-localize/glass.png) Läs mer om Twitter integrering i [det här avsnittet](../connect/ac-tw.md).
+
 ## Externa konton för Adobe Solution Integration
 
 * **Adobe Experience Cloud**
 
-   The **[!UICONTROL Adobe Experience Cloud]** externt konto används för att implementera Adobe IMS för att ansluta till Adobe Campaign-konsolen med en Adobe ID.
+   The **[!UICONTROL Adobe Experience Cloud]** externt konto används för att implementera Adobe Identity Management-tjänsten (IMS) för att ansluta till Adobe Campaign.
 
    ![](../assets/do-not-localize/glass.png) Läs mer om Adobe Identity Management-tjänsten (IMS) i [det här avsnittet](../start/connect.md#connect-ims).
 
 * **Webbanalys**
 
-   Använd **[!UICONTROL Web Analytics (Adobe Analytics)]** externt konto för att konfigurera dataöverföring från Adobe Analytics till Adobe Campaign.
+   The **[!UICONTROL Web Analytics (Adobe Analytics)]** externt konto används för att konfigurera dataöverföring från Adobe Analytics till Adobe Campaign.
 
    ![](../assets/do-not-localize/glass.png) Läs mer om Adobe Campaign - Adobe Analytics-integrering i [den här sidan](../connect/ac-aa.md).
 
-   ![](../assets/do-not-localize/speech.png)  Som användare av hanterade Cloud Services [kontakta Adobe](../start/campaign-faq.md#support) för att integrera Adobe Analytics med Campaign.
+* **Adobe Experience Manager**
 
-   * **Adobe Experience Manager**
    The **[!UICONTROL AEM]** Med ett externt konto kan ni hantera innehållet i era e-postleveranser samt formulären direkt i Adobe Experience Manager.
 
    ![](../assets/do-not-localize/glass.png) Läs mer om Adobe Campaign - Adobe Analytics-integrering i [den här sidan](../connect/ac-aem.md).
-
-   ![](../assets/do-not-localize/speech.png)  Som användare av hanterade Cloud Services [kontakta Adobe](../start/campaign-faq.md#support) för att integrera Adobe Experience Manager med Adobe Campaign.
 
 
 ## Externa konton för CRM Connector

@@ -4,9 +4,9 @@ user-guide-title: Campaign v8
 description: Dokumentation om Campaign v8
 breadcrumb-title: Kampanjöversikt
 title: Kampanjdokument v8
-source-git-commit: 43e515339a2483e82910603daf6009cad63eeeae
+source-git-commit: a9f7bf9a976a7f3b5415c090c042f83a1bb64c24
 workflow-type: tm+mt
-source-wordcount: '474'
+source-wordcount: '487'
 ht-degree: 25%
 
 ---
@@ -125,7 +125,10 @@ ht-degree: 25%
       + [Arbeta med Campaign och Microsoft Dynamics](connect/ac-ms-dyn.md)
       + [Synkronisera data](connect/crm-data-sync.md)
 + Administration {#admin}
-   + [Behörigheter](start/permissions.md)
+   + Användare och behörigheter {#permissions}
+      + [Kom igång med behörigheter](start/gs-permissions.md)
+      + [Hantera användarbehörigheter](start/manage-permissions.md)
+      + [Lägg till behörigheter i mappar](start/folder-permissions.md)
    + [Kontrollpanelen](config/self-service.md)
 + Arkitektur och konfiguration {#config}
    + Arkitektur {#architecture}

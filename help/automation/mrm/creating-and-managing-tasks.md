@@ -3,7 +3,7 @@ product: campaign
 title: Skapa och hantera uppgifter
 description: Skapa och hantera uppgifter
 exl-id: 730d1712-53a6-4bf7-9aac-523b06bd0d0a
-source-git-commit: 399c81276d29622a2161c8c90395df1a38954763
+source-git-commit: 094743fef69e137f80b670f0bf31dce56c282c34
 workflow-type: tm+mt
 source-wordcount: '3740'
 ht-degree: 0%
@@ -86,7 +86,7 @@ Du kan välja en annan operator i **[!UICONTROL Assigned to]** nedrullningsbar l
 
 >[!NOTE]
 >
->Operatörshantering beskrivs i [det här avsnittet](../../v8/start/permissions.md).
+>Operatörshantering beskrivs i [det här avsnittet](../../v8/start/gs-permissions.md).
 >
 >Det är bara operatorn som ansvarar för en uppgift som kan stänga den.
 
