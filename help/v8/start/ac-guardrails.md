@@ -5,9 +5,9 @@ feature: Overview
 role: User
 level: Beginner, Intermediate, Experienced
 exl-id: 50c254ba-cc33-49b2-b7d5-12aa69883c07
-source-git-commit: 2ce1ef1e935080a66452c31442f745891b9ab9b3
+source-git-commit: 58fff46ba12f5c6221bbcd88a40fa0806a6c98b9
 workflow-type: tm+mt
-source-wordcount: '249'
+source-wordcount: '247'
 ht-degree: 1%
 
 ---
@@ -21,11 +21,11 @@ Nedan finns ytterligare skyddsutkast och begränsningar när du använder [!DNL 
 Garantier och begränsningar identifierar funktioner, arkitektur eller processer som inte stöds i den här versionen av produkten, eller som inte fungerar som de ska. Granska dessa begränsningar noggrant.
 
 * Adobe Campaign v8 är inte tillgängligt för anläggningsdistributioner/hybriddistributioner - endast som en Adobe-hanterad Cloud Service
-* Befintliga kunder kan inte migrera från en befintlig Adobe Campaign-miljö till Adobe Campaign v8
+* Ingen automatisk migrering till Adobe Campaign v8 är tillgänglig för befintliga kunder
 * När det gäller [Företagsdistribution (FFDA)](../architecture/enterprise-deployment.md), ingen dubbelriktad datareplikering tillhandahålls: replikering sker endast från den lokala Campaign-databasen till molndatabasen
 * Angivna funktioner [i det här avsnittet](v7-to-v8.md#gs-unavailable-features) är inte tillgängliga i den aktuella versionen av Campaign v8
 * Vissa funktioner som inte är tillgängliga eller har tagits bort visas fortfarande i användargränssnittet
 * När det gäller [Företagsdistribution (FFDA)](../architecture/enterprise-deployment.md), prenumerationer (deltagande) och avanmälan (avanmälan) och mobilregistrering är asynkrona processer. Begäranden behandlas varje timme i ett specifikt tekniskt arbetsflöde. [Läs mer](../architecture/replication.md#tech-wf)
 * Dubbletter måste hanteras manuellt av slutanvändarna. [Läs mer](../architecture/keys.md)
 * Adobe Campaign v8 stöder inte utökad genomströmning i API och webbprogram - om det finns särskilda behov kan du kontakta Adobe för att få hjälp
-* Adobe Campaign Campaign Optimization Module tar inte hänsyn till schemalagda leveranser i regler för trycktypologi. Läs mer i [den här sidan](https://experienceleague.adobe.com/docs/campaign/automation/campaign-optimization/pressure-rules.html).
+* Adobe Campaign Campaign Optimization Module tar inte hänsyn till schemalagda leveranser i regler för trycktypologi. Läs mer i [den här sidan](https://experienceleague.adobe.com/docs/campaign/automation/campaign-optimization/pressure-rules.html)
