@@ -3,9 +3,10 @@ product: campaign
 title: Konfigurera tryckregler
 description: Lär dig hur du konfigurerar tryckregler
 feature: Fatigue Management, Typology Rules
-source-git-commit: 86c37772eca9e3fffbeaa0e1d4d7de5590d8d277
+exl-id: d234db0e-936a-48db-b697-11c6b40bc3ab
+source-git-commit: 6a1e2e0a872ce5886e7374d266c71975941e87b8
 workflow-type: tm+mt
-source-wordcount: '3040'
+source-wordcount: '3027'
 ht-degree: 5%
 
 ---
@@ -106,7 +107,7 @@ Du kan indexera antalet auktoriserade meddelanden beroende på vilket segment mo
 
 ![](assets/campaign_opt_pressure_sample.png)
 
-Om du vill definiera tröskelvärdet kan du använda en dimension som är länkad till måldimensionen: om du till exempel vill inkludera meddelanden som levereras till mottagarprofiler som lagras i besökstabellen (mer information om besökstabellen finns i (detta avsnitt)(enkäter/using/use-case—creating-a-reference-a-vän-form.md) eller för att undvika att skicka mer än ett meddelande per vecka till samma hushåll (som kan referera till flera e-postadresser) som identifieras i en dimension länkad till mottagarnas.
+Om du vill definiera tröskelvärdet kan du använda en dimension som är länkad till måldimensionen: om du till exempel vill inkludera meddelanden som skickas till mottagarprofilerna som lagras i [besökstabell](../../v8/audiences/target-mappings.md) eller för att undvika att skicka mer än ett meddelande per vecka till samma hushåll (som kan hänvisa till flera e-postadresser) som identifieras i en dimension som är länkad till mottagarnas.
 
 Om du vill göra det väljer du **[!UICONTROL Count messages on a linked dimension]** väljer du sedan besökaren eller kontakttabellen.
 
@@ -366,9 +367,9 @@ Med tanke på att ett e-postmeddelande redan har skickats till de berörda motta
    <td> Leverans 1<br /> </td> 
    <td> Handikappade<br /> </td> 
    <td> 5<br /> </td> 
-   <td> 13:00<br /> </td> 
+   <td> 3pm<br /> </td> 
    <td> 08:00 (nästa dag)<br /> </td> 
-   <td> 2:a<br /> </td> 
+   <td> 2pm<br /> </td> 
    <td> Nightly<br /> </td> 
    <td> Exkluderad<br /> </td> 
    <td> Exkluderad<br /> </td> 
@@ -377,9 +378,9 @@ Med tanke på att ett e-postmeddelande redan har skickats till de berörda motta
    <td> Leverans 2<br /> </td> 
    <td> Handikappade<br /> </td> 
    <td> 10<br /> </td> 
-   <td> 16:00<br /> </td> 
+   <td> 4pm<br /> </td> 
    <td> 09:00 (nästa dag)<br /> </td> 
-   <td> 2:a<br /> </td> 
+   <td> 2pm<br /> </td> 
    <td> Nightly<br /> </td> 
    <td> Skickat<br /> </td> 
    <td> 09:00 (nästa dag)<br /> </td> 
