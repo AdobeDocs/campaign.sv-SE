@@ -3,7 +3,8 @@ product: campaign
 title: Skapa marknadsföringskampanjer
 description: Lär dig hur du skapar och genomför marknadsföringskampanjer
 feature: Campaigns, Cross Channel Orchestration, Programs
-source-git-commit: 72467caf94e652ede70c00f1ea413012fc4c7e1f
+exl-id: 90dd2dad-1380-490e-b958-4a28a7d930ed
+source-git-commit: 38c300555b847c9d1fd210d2fe60e4ffa1e314d2
 workflow-type: tm+mt
 source-wordcount: '1297'
 ht-degree: 2%
@@ -102,7 +103,7 @@ För varje kampanj finns följande funktioner:
 * Referensdokument och resurser: du kan associera dokument med kampanjen (i korthet, rapport, bilder osv.). Alla dokumentformat stöds. [Läs mer](marketing-campaign-deliveries.md#manage-associated-documents).
 * Definiera kostnader: För varje kampanj kan Adobe Campaign definiera kostnadsposter och kostnadsberäkningsstrukturer som kan användas när marknadsföringskampanjen skapas. Till exempel: tryckkostnader, användning av en extern byrå, hyra av rum osv. [Läs mer](providers--stocks-and-budgets.md#defining-cost-categories).
 * Definiera mål: kan ni definiera kvantifierbara mål för en kampanj, t.ex. antal prenumeranter, affärsvolym osv. Den här informationen används senare i kampanjrapporter.
-* Hantera dirigerade adresser och kontrollgrupper. [Läs mer](marketing-campaign-deliveries.md#defining-a-control-group)).
+* Hantera dirigerade adresser och kontrollgrupper. [Läs mer](marketing-campaign-deliveries.md#defining-a-control-group).
 * Hantera godkännanden: Du kan välja vilka behandlingar som ska godkännas och vid behov välja granskningsoperatorer eller grupper av operatorer. [Läs mer](marketing-campaign-approval.md#checking-and-approving-deliveries).
 
 >[!NOTE]
@@ -206,4 +207,3 @@ Du kan också använda länken i meddelandena. Mer information om detta finns i 
 Den här videon visar hur du skapar en marknadsföringsplan, ett program och en kampanj.
 
 >[!VIDEO](https://video.tv.adobe.com/v/333810?quality=12)
-
