@@ -4,7 +4,7 @@ title: Skapa marknadsföringskampanjer
 description: Lär dig hur du skapar och genomför marknadsföringskampanjer
 feature: Campaigns, Cross Channel Orchestration, Programs
 exl-id: 90dd2dad-1380-490e-b958-4a28a7d930ed
-source-git-commit: 38c300555b847c9d1fd210d2fe60e4ffa1e314d2
+source-git-commit: ad286059a9f4b63d7de4fa5130760f36d0976431
 workflow-type: tm+mt
 source-wordcount: '1297'
 ht-degree: 2%
