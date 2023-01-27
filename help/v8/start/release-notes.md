@@ -6,10 +6,10 @@ role: Admin, Developer, User
 level: Beginner, Intermediate, Experienced
 hidefromtoc: false
 exl-id: 7cf8111d-9f3a-46a4-813a-d4e43a1d1471
-source-git-commit: ad5444284a3886f02c97e94952898e1836c6b7c3
+source-git-commit: 1f323f4b3cca3c9ff398ad5168b2817a917ef124
 workflow-type: tm+mt
-source-wordcount: '3391'
-ht-degree: 25%
+source-wordcount: '3820'
+ht-degree: 26%
 
 ---
 
@@ -17,13 +17,47 @@ ht-degree: 25%
 
 Den här sidan listar nya funktioner, förbättringar och korrigeringar som kommer med den **senaste versionen av Campaign v8**.
 
+## Version 8.4.3 {#release-8-4-3}
+
+>[!CAUTION]
+>
+> Uppgradering av klientkonsolen är obligatorisk. Lär dig hur du uppgraderar din klientkonsol på den här [sidan](../start/connect.md#download-ac-console).
+
+_27 januari 2023_
+
+**Förbättringar**
+
+* Ett problem med synkronisering av leveransindikator mellan marknadsföringsservern och mellanleverantörsservern har korrigerats. (NEO-50724) <!--OKKKK-->
+* Korrigerade ett problem som kunde leda till ett fel vid export av ett arbetsflöde. (NEO-50555) <!--OKKKK-->
+* Ett problem som uppstod när ett tidigare utökat schema skulle utökas har åtgärdats. (NEO-49118) <!--OKKKK-->
+* Ett problem har korrigerats vid användning av två anrikningsaktiviteter med samma identifierare i länkdefinitionen. (NEO-48851)
+* Åtgärdade två fel vid leveransförberedelse. Förberedelsen kan misslyckas om antalet potentiella erbjudanden som manipuleras är för högt. Det andra problemet uppstod när bild-URL:erna definierades som URL:er att spåra i en textformatsleverans. (NEO-48807) <!--OKKKK-->
+* Korrigerade ett problem som kunde leda till ett arbetsflödesfel där ett arbetsflöde skulle skriva över det lagerställenamn som definierats i det externa kontot för andra konton än FFDA. (NEO-43209) <!--OKKKK-->
+* Förbättrad säkerhet för webbprogram för att förhindra DDoS-attacker. (NEO-50757) <!--OKKKK-->
+* Hanteringen av konsoliderade spårningsdata har förbättrats i **[!UICONTROL Consolidated tracking]** (nms:trackingStats) FFDA-tabell för att undvika dubbletter. (NEO-46409)
+* Ett problem med en logisk operator i arbetsflödesfrågor när en användare användes har korrigerats `enableIf` i ett logiskt operatorvillkor. Det föregående logiska villkoret skrevs över. (NEO-45815)  <!--OKKKK-->
+* Genereringen av aktiva profiler har optimerats i faktureringsarbetsflödet för att förbättra prestandan. (NEO-47658) <!--OKKKK-->
+* Korrigerade ett problem med import av HTML-fil när bildnoder (img) innehöll URL:er med personaliseringsfält. (NEO-48396)
+* Ett problem med Snowflake (alla distributioner) när sorteringsparametern i en **Dela** arbetsflödesaktivitet. (NEO-45899) <!--OKKKK-->
+* Korrigerade ett problem som orsakade ett fel när en användare med läsbehörighet i mappen nmsDeliveryMapping försökte köra en kampanj eller ett arbetsflöde. (NEO-48230)
+* Korrigerade ett prestandaproblem på fliken HTML för en leverans som kan uppstå för stor HTML-kod. (NEO-47440)
+<!-- * Fixed an issue which could lead to a "Character set mismatch" error when using certain functions such as `to_nclob` with an Oracle unicode database where NChar was not enabled. (NEO-49361)
+* Fixed an issue which prevented users from inserting a Time datatype in a **Data Update** workflow activity on MSSQL. (NEO-47763)-->
+* Ett problem som hindrade användare från att använda **Sammanfoga markerade rader** arbetsflödesalternativ. (NEO-48488)
+* Korrigerade ett fel på Snowflake FDA-anslutningen som ledde till att poster utelämnades när alternativet &quot;0 eller 1 enkel kardinalitetsanslutning&quot; användes under anrikningen. (NEO-48737)
+* Återstående referenser till log4j-biblioteket har tagits bort från Campaign-installationen i Windows. (NEO-44851)
+* Korrigerade ett problem som kan leda till ett fel när indikatorn **Mottagare som har öppnat** (estimatedRecipientOpen) lades till i ytterligare data för arbetsflödesaktiviteten **Fråga**. (NEO-46665)
+* Hanteringen av spårnings-URL:er har förbättrats i arbetsflöden med flera leveranser för att förbättra prestandan. (NEO-50894) <!--OKKKK-->
+* Korrigerade ett problem som kunde göra så att replikering av scheman som använder Xtkfolder misslyckades. (NEO-46787) <!--OKKKK-->
+* Korrigerat en felorsak som kan göra att den anpassade kolumnen&quot;lastModified&quot; tas bort i NmsSubscription-tabellen. (NEO-48402)
+
 ## Version 8.4.2 {#release-8-4-2}
 
 _28 oktober 2022_
 
 **Förbättringar**
 
-* Korrigerade ett problem som förhindrade att leveransindikatorn för lyckade åtgärder uppdaterades korrekt när Adobe Campaign Enhanced MTA användes. (NEO-50462)
+* Korrigerade ett problem som förhindrade leveransindikatorn Lyckades från att uppdateras korrekt när du använder Adobe Campaign Enhanced MTA. (NEO-50462)
 
 ## Version 8.4.1 {#release-8-4-1}
 
@@ -122,7 +156,7 @@ Se [kompatibilitetsmatrisen för Campaign](compatibility-matrix.md).
 
 >[!CAUTION]
 >
-> Uppgradering av klientkonsolen är obligatoriskt. Lär dig hur du uppgraderar din klientkonsol i den här [page](../start/connect.md#download-ac-console).
+> Uppgradering av klientkonsolen är obligatorisk. Lär dig hur du uppgraderar din klientkonsol på den här [sidan](../start/connect.md#download-ac-console).
 
 _7 oktober 2022_
 
