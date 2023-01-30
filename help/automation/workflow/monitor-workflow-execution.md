@@ -3,24 +3,21 @@ product: campaign
 title: Övervaka arbetsflödeskörning
 description: Övervaka arbetsflödeskörning
 feature: Workflows
-source-git-commit: 2b1dec4b9c456df4dfcebfe10d18e0ab01599275
+exl-id: bc13d706-7888-42eb-9116-5538e68cd515
+source-git-commit: 6464e1121b907f44db9c0c3add28b54486ecf834
 workflow-type: tm+mt
-source-wordcount: '1947'
-ht-degree: 1%
+source-wordcount: '1936'
+ht-degree: 0%
 
 ---
 
 # Övervaka arbetsflödeskörning {#monitoring-workflow-execution}
 
-
-
 I det här avsnittet finns information om hur du övervakar arbetsflödenas körning.
 
 Ett användningsexempel om hur du skapar ett arbetsflöde där du kan övervaka statusen för en uppsättning arbetsflöden som är&quot;pausade&quot;,&quot;stoppade&quot; eller&quot;med fel&quot; finns också i [det här avsnittet](workflow-supervision.md#supervising-workflows).
 
-Administratörer för instansen kan dessutom använda **Granskningsspår** för att kontrollera aktiviteter och senaste ändringar av arbetsflöden, arbetsflödenas status. Se  för mer information om detta.
-
-Ytterligare sätt att övervaka de olika Campaign-processerna presenteras i .
+Administratörer för instansen kan dessutom använda **Granskningsspår** för att kontrollera aktiviteter och senaste ändringar av arbetsflöden, arbetsflödenas status. Läs mer om granskningsspår i  [Campaign Classic v7-dokumentation](https://experienceleague.adobe.com/docs/campaign-classic/using/monitoring-campaign-classic/production-procedures/audit-trail.html?lang=en#accessing-audit-trail){target="_blank"}.
 
 ## Visa förlopp {#displaying-progress}
 
@@ -138,8 +135,6 @@ I det här fallet avbryts felaktiviteten. Det här läget passar särskilt bra f
 >
 >Du kan använda den här konfigurationen separat för varje aktivitet. Om du vill göra det redigerar du aktivitetsegenskaperna och väljer felhanteringsläget i dialogrutan **[!UICONTROL Advanced]** -fliken.
 
-Mer information om felsökning av arbetsflödenas körning finns i .
-
 ## Bearbetningsfel {#processing-errors}
 
 När det gäller verksamheter **[!UICONTROL Process errors]** I visas en viss övergång som aktiveras om ett fel genereras. I det här fallet försätts arbetsflödet inte i felläge och körningen fortsätter.
@@ -229,9 +224,9 @@ Ett användningsexempel presenteras i detta avsnitt: [Samordna datauppdateringar
 
 ## Databasunderhåll {#database-maintenance}
 
-I arbetsflöden används många arbetstabeller som förbrukar utrymme och gör att hela plattformen blir långsammare om den inte underhålls. Mer information om databasunderhåll finns i den här .
+I arbetsflöden används många arbetstabeller som förbrukar utrymme och gör att hela plattformen blir långsammare om den inte underhålls.
 
-The **Databasrensning** arbetsflöde tillgängligt via **Administration > Produktion > Tekniska arbetsflöden** kan du ta bort föråldrade data för att undvika exponentiell tillväxt i databasen. Arbetsflödet utlöses automatiskt utan att användaren behöver göra något. Se  .
+The **Databasrensning** arbetsflöde tillgängligt via **Administration > Produktion > Tekniska arbetsflöden** kan du ta bort föråldrade data för att undvika exponentiell tillväxt i databasen. Arbetsflödet utlöses automatiskt utan att användaren behöver göra något.
 
 Du kan också skapa specifika tekniska arbetsflöden för att rensa bort onödiga datamängder. Läs mer i [section](#purging-the-logs).
 
@@ -266,7 +261,7 @@ Så här gör du:
 
 1. Högerklicka på den mapp där du vill lägga till vyn.
 1. I **[!UICONTROL Add new folder]** / **[!UICONTROL Administration]** markerar du den vy som du vill lägga till.
-1. När mappen har lagts till i trädet måste du konfigurera den som en vy, så att alla arbetsflöden visas oavsett ursprungsmapp.Mer information om hur du konfigurerar vyer finns i .
+1. När mappen har lagts till i trädet måste du konfigurera den som en vy, så att alla arbetsflöden visas oavsett ursprungsmapp. Mer information om hur du konfigurerar vyer finns i [den här sidan](../../v8/audiences/folders-and-views.md#turn-a-folder-to-a-view).
 
 Utöver dessa vyer kan du skapa filtermappar så att du kan filtrera listan med arbetsflöden utifrån deras körningsstatus. Så här gör du:
 
