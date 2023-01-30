@@ -3,9 +3,10 @@ product: campaign
 title: Fråga
 description: Läs mer om arbetsflödesaktiviteten Fråga
 feature: Workflows, Targeting Activity, Query Editor
-source-git-commit: 8d9b8d3e31362c2d69ec0fc6f16ab375538d7f10
+exl-id: 717e4f7c-3a8e-4930-9a06-b7412d6e1675
+source-git-commit: 6464e1121b907f44db9c0c3add28b54486ecf834
 workflow-type: tm+mt
-source-wordcount: '1568'
+source-wordcount: '1545'
 ht-degree: 0%
 
 ---
@@ -41,15 +42,13 @@ The **[!UICONTROL Edit query...]** -länken kan du definiera måltypen, begräns
 
 1. Definiera populationerna med guiden. Fälten som ska anges kan variera beroende på måltyp. Du kan förhandsgranska målpopulationen med de aktuella villkoren med hjälp av **[!UICONTROL Preview]** -fliken.
 
-   Mer information om hur du skapar och använder filter och frågor finns i den här .
-
    ![](assets/query-sample.png)
 
 1. Om du har valt **[!UICONTROL Filtering conditions]** i steg 1 eller med **[!UICONTROL Filters]** > **[!UICONTROL Advanced filter...]** måste du lägga till filtervillkor manuellt senare.
 
    Du kan också lägga till villkor för datagruppering genom att markera motsvarande ruta. För att göra detta måste filtreringsdimensionen skilja sig från frågemålets dimension. Mer information om gruppering finns i [section](query-grouping-management.md).
 
-   Du kan också lägga till fler villkor genom att använda uttrycksverktyget och kombinera det med de logiska alternativen AND, OR och EXCEPT. Du kan sedan förhandsgranska ** .
+   Du kan också lägga till fler villkor genom att använda uttrycksverktyget och kombinera det med de logiska alternativen AND, OR och EXCEPT.
 
    Spara filtret om du vill återanvända det senare.
 
@@ -181,8 +180,6 @@ I avsnittet nedan beskrivs de effektivaste strategierna för att optimera frågo
 
 * Se upp för funktioner som `Lower(...)`. När funktionen Nedre används används inte indexvärdet.
 * Kontrollera frågor med &quot;gilla&quot;-instruktionen eller &quot;övre&quot; eller &quot;nedre&quot; instruktionerna noggrant. Använd &quot;Upper&quot; på användarindata, inte i databasfältet.
-
-   Mer information om funktioner finns i .
 
 ### Filtrera dimensioner {#filtering-dimensions}
 
