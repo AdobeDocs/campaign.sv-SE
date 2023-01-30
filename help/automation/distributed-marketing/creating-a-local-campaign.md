@@ -3,9 +3,10 @@ product: campaign
 title: Skapa en lokal kampanj
 description: Skapa en lokal kampanj
 feature: Distributed Marketing
-source-git-commit: 2b1dec4b9c456df4dfcebfe10d18e0ab01599275
+exl-id: b46530b5-cb81-40d7-b596-c7685359782a
+source-git-commit: 7e5ffbec959785971280c394c416cebe83590897
 workflow-type: tm+mt
-source-wordcount: '1559'
+source-wordcount: '1554'
 ht-degree: 1%
 
 ---
@@ -68,7 +69,7 @@ Det finns fyra typer av webbgränssnitt:
 
    >[!NOTE]
    >
-   >Webbprogrammet som används i det här exemplet är ett exempel. Du måste skapa ett specifikt webbprogram för att kunna använda ett formulär. Se  .
+   >Webbprogrammet som används i det här exemplet är ett exempel. Du måste skapa ett specifikt webbprogram för att kunna använda ett formulär.
 
    ![](assets/mkt_distr_7.png)
 
@@ -155,7 +156,7 @@ Spara kampanjmallen. Du kan nu använda den från **[!UICONTROL Campaign package
 
 >[!NOTE]
 >
->Kampanjmallar och deras allmänna konfiguration finns i .
+>Kampanjmallar och deras allmänna konfiguration finns i [den här sidan](../campaigns/marketing-campaign-templates.md).
 
 ## Skapa kampanjpaketet {#creating-the-campaign-package}
 
@@ -235,10 +236,6 @@ Så här beställer du en kampanj:
 1. Klicka **[!UICONTROL Order campaign]** i meddelandet eller motsvarande knapp i Adobe Campaign.
 
    Ange ditt ID och lösenord för att beställa kampanjen. Gränssnittet består av en uppsättning sidor som definieras i ett webbprogram.
-
-   >[!NOTE]
-   >
-   >Webbprogrammen beskrivs i .
 
 1. Ange nödvändig information på den första sidan (ordningsetikett och kommentar) och klicka på **[!UICONTROL Next]**.
 
