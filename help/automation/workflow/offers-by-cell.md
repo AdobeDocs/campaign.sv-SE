@@ -3,10 +3,11 @@ product: campaign
 title: Erbjudanden per cell
 description: Erbjudanden per cell
 feature: Workflows, Targeting Activity, Interaction
-source-git-commit: 2b1dec4b9c456df4dfcebfe10d18e0ab01599275
+exl-id: e2216dfd-1ef8-4747-b716-576fd6498fa6
+source-git-commit: 6464e1121b907f44db9c0c3add28b54486ecf834
 workflow-type: tm+mt
-source-wordcount: '149'
-ht-degree: 8%
+source-wordcount: '151'
+ht-degree: 7%
 
 ---
 
@@ -16,7 +17,7 @@ ht-degree: 8%
 
 The **[!UICONTROL Offers by cell]** Med -aktiviteten kan du distribuera den inkommande populationen (från en fråga till exempel) till flera segment och ange ett erbjudande som ska visas för vart och ett av dessa segment.
 
-Den här aktiviteten kan bara användas med **Interaktion**. Mer information finns i den här .
+Den här aktiviteten kan bara användas med **Interaktion**. Läs mer om erbjudandehantering i [det här avsnittet](../../v8/interaction/interaction.md).
 
 Så här gör du:
 
