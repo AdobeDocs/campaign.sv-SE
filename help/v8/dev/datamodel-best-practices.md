@@ -5,7 +5,7 @@ feature: Data Model
 role: User, Developer
 level: Beginner, Intermediate
 exl-id: bdd5e993-0ce9-49a8-a618-ab0ff3796d49
-source-git-commit: 2ce1ef1e935080a66452c31442f745891b9ab9b3
+source-git-commit: 6464e1121b907f44db9c0c3add28b54486ecf834
 workflow-type: tm+mt
 source-wordcount: '2717'
 ht-degree: 4%
@@ -18,7 +18,7 @@ I det här dokumentet beskrivs viktiga rekommendationer när du utformar din Ado
 
 Adobe Campaign-systemet är mycket flexibelt och kan byggas ut utöver den ursprungliga implementeringen. Men även om möjligheterna är oändliga är det viktigt att fatta kloka beslut och bygga starka grunder för att börja utforma din datamodell.
 
-Om du vill få en bättre förståelse för de inbyggda tabellerna i Campaign och hur de hänger ihop kan du läsa [det här avsnittet](datamodel.md) .
+Om du vill få en bättre förståelse för de inbyggda tabellerna i Campaign och hur de hänger ihop kan du läsa [det här avsnittet](datamodel.md).
 
 ![](../assets/do-not-localize/glass.png) Läs [det här avsnittet](schemas.md) för att komma igång med Campaign-scheman.
 
