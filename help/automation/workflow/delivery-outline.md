@@ -3,20 +3,17 @@ product: campaign
 title: Leveransbeskrivning
 description: Läs mer om arbetsflödesaktiviteten i leveransutkast
 feature: Workflows, Targeting Activity
-source-git-commit: 2b1dec4b9c456df4dfcebfe10d18e0ab01599275
+exl-id: 3c06b329-b2d8-4ac8-ab9b-3ab3e525d109
+source-git-commit: 6464e1121b907f44db9c0c3add28b54486ecf834
 workflow-type: tm+mt
-source-wordcount: '265'
+source-wordcount: '243'
 ht-degree: 1%
 
 ---
 
 # Leveransbeskrivning{#delivery-outline}
 
-
-
 The **leveransdisposition** I kan du använda en disposition i ett kampanjarbetsflöde. Dispositionen måste ha skapats i kampanjen i förväg.
-
-Mer information om leveransdispositioner i Adobe Campaign finns i den här .
 
 Om du vill konfigurera aktiviteten behöver du bara markera den disposition du vill ha samt det planerade kontaktdatumet. Du kan lägga till filtreringsregler genom att lägga till typologier eller typologiregler.
 
@@ -30,9 +27,6 @@ The **leveransdisposition** -aktivitet, som finns i kampanjarbetsflödena, gör 
 
 1. Lägg till en dispositionsaktivitet för leverans i ett arbetsflöde innan du lägger till en leveransaktivitet.
 1. I dispositionsaktiviteten för leverans anger du den disposition du vill använda.
-
-   Mer information om hur du anger leveransdispositioner finns i den här .
-
 1. Fyll i de tillgängliga fälten efter leverans.
 1. Det finns två möjliga fall:
 
