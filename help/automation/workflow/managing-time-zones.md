@@ -3,20 +3,17 @@ product: campaign
 title: Hantera tidszoner
 description: Hantera tidszoner
 feature: Workflows
-source-git-commit: 2b1dec4b9c456df4dfcebfe10d18e0ab01599275
+exl-id: 04b7638d-55dd-4317-b605-5d618ef014ba
+source-git-commit: 6464e1121b907f44db9c0c3add28b54486ecf834
 workflow-type: tm+mt
-source-wordcount: '277'
+source-wordcount: '266'
 ht-degree: 3%
 
 ---
 
 # Hantera tidszoner{#managing-time-zones}
 
-
-
 Med Adobe Campaign kan du hantera tidsförskjutningar mellan olika länder som berörs av samma instans. Den använda konfigurationen konfigureras när instansen skapas.
-
-Mer information om hur du konfigurerar tidszoner i Adobe Campaign finns i .
 
 I ett arbetsflöde kan du anpassa scheman för aktivitetskörning och länka en specifik tidszon till en aktivitet eller till hela arbetsflödet. Den här konfigurationen kan vara användbar vid import av filen eller inom ramen för leveransplanering.
 
