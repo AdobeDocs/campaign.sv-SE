@@ -3,9 +3,10 @@ product: campaign
 title: Distribuerade marknadsexempel
 description: Distribuerade marknadsexempel
 feature: Distributed Marketing
-source-git-commit: 2b1dec4b9c456df4dfcebfe10d18e0ab01599275
+exl-id: 7825426b-c9e4-49e9-840c-dc6d6d836fbe
+source-git-commit: 6464e1121b907f44db9c0c3add28b54486ecf834
 workflow-type: tm+mt
-source-wordcount: '1291'
+source-wordcount: '1284'
 ht-degree: 0%
 
 ---
@@ -13,14 +14,11 @@ ht-degree: 0%
 # Distribuerade marknadsexempel{#distributed-marketing-samples}
 
 
-
 ## Skapa en lokal kampanj (per formulär) {#creating-a-local-campaign--by-form-}
 
 The **Per formulär** webbgränssnitt av typen använder **webbprogram**. Beroende på hur det är konfigurerat kan det här webbprogrammet innehålla alla typer av definierade anpassade element. Du kan till exempel föreslå länkar för att utvärdera målet, budgeten, innehållet osv. via dedikerade API:er.
 
 >[!NOTE]
->
->API:er beskrivs i ett dedikerat dokument. .
 >
 >Webbprogrammet som används i det här exemplet är inte ett webbprogram som levereras med Adobe Campaign. Om du vill använda ett formulär i en kampanj måste du skapa det dedikerade webbprogrammet.
 
