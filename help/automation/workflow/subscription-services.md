@@ -3,10 +3,11 @@ product: campaign
 title: Prenumerationstjänster
 description: Läs mer om arbetsflödesaktiviteten för prenumerationstjänster
 feature: Workflows, Targeting Activity, Subscription Services Activity
-source-git-commit: 2b1dec4b9c456df4dfcebfe10d18e0ab01599275
+exl-id: 919630ed-b39f-40e5-b893-f3a203713b15
+source-git-commit: 6464e1121b907f44db9c0c3add28b54486ecf834
 workflow-type: tm+mt
-source-wordcount: '406'
-ht-degree: 0%
+source-wordcount: '399'
+ht-degree: 1%
 
 ---
 
@@ -28,7 +29,7 @@ Om du vill konfigurera den redigerar du aktiviteten och anger dess etikett och v
 1. Klicka **[!UICONTROL Subscription]** eller **[!UICONTROL Unsubscription]** om du vill prenumerera eller avbryta prenumerationen på den angivna populationen till eller från den valda informationstjänsten.
 1. Välj **[!UICONTROL Send a confirmation message]** för att meddela mottagarna att de prenumererar på eller avbeställer en tjänst.
 
-   Innehållet i det här meddelandet anges i en leveransmall som är relaterad till informationstjänsten. Mer information finns i detta .
+   Innehållet i det här meddelandet anges i en leveransmall som är relaterad till informationstjänsten.
 
 ## Exempel: Prenumerera på en lista över mottagare i ett nyhetsbrev {#example--subscribe-a-list-of-recipients-to-a-newsletter}
 
