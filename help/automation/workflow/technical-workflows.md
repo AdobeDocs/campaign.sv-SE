@@ -4,9 +4,9 @@ title: Tekniska arbetsflöden
 description: Läs mer om de tekniska arbetsflödena i Campaign
 feature: Workflows
 exl-id: 2693856c-80b2-4e35-be8e-2a9760f8311f
-source-git-commit: 8d9b8d3e31362c2d69ec0fc6f16ab375538d7f10
+source-git-commit: 6464e1121b907f44db9c0c3add28b54486ecf834
 workflow-type: tm+mt
-source-wordcount: '1654'
+source-wordcount: '1639'
 ht-degree: 2%
 
 ---
@@ -32,7 +32,7 @@ Du kan skapa andra tekniska arbetsflöden i **[!UICONTROL Administration > Produ
 
 De aktiviteter som erbjuds är desamma som för arbetsflöden med målinriktning. [Läs mer](targeting-workflows.md)
 
-De arbetsflöden som beskrivs i det här avsnittet installeras med olika inbyggda Adobe Campaign-paket. Dessa paket och tillhörande tekniska arbetsflöden beror på licensavtalet. Inbyggda paket finns i .
+De arbetsflöden som beskrivs i det här avsnittet installeras med olika inbyggda Adobe Campaign-paket. Dessa paket och tillhörande tekniska arbetsflöden beror på licensavtalet.
 
 Som standard är tekniska arbetsflöden tillgängliga i en undermapp till följande nod: **[!UICONTROL Administration]** > **[!UICONTROL Production]** > **[!UICONTROL Technical workflows]**.
 
@@ -55,7 +55,7 @@ Lär dig övervaka tekniska arbetsflöden i det här [dedikerad sektion](monitor
 | **Samla in data för tjänsten HeatMap** (collectDataHeatMapService) | Installerad som standard | Det här arbetsflödet hämtar data som krävs av HeatMap-tjänsten. |
 | **Samla in sekretessförfrågningar** (collectPrivacyRequests) | Sekretessdataskyddsförordningen | Det här arbetsflödet genererar mottagarens data som lagras i Adobe Campaign och gör dem tillgängliga för hämtning på skärmen för sekretesspolicy. |
 | **Kostnadsberäkning** (budgetMgt) | Installerad som standard | Det här arbetsflödet startar beräkningen av utgifts- och kostnadsrader för budgetar, planer, program, kampanjer, leveranser och uppgifter. |
-| **Databasrensning** (rensa) | Installerad som standard | Det här arbetsflödet är arbetsflödet för databasunderhåll: utför olika beräkningar från statistiken och processerna och tar bort föråldrade data från databasen enligt den definierade konfigurationen i distributionsassistenten. Den aktiveras varje dag klockan fyra som standard. Mer information finns i . |
+| **Databasrensning** (rensa) | Installerad som standard | Det här arbetsflödet är arbetsflödet för databasunderhåll: utför olika beräkningar från statistiken och processerna och tar bort föråldrade data från databasen enligt den definierade konfigurationen i distributionsassistenten. Den aktiveras varje dag klockan fyra som standard. |
 | **Ta bort blockerade LINE-användare** (deleteBlockedLineUsersV2) | LINE-kanal | Det här arbetsflödet säkerställer att LINE V2-användarnas data tas bort efter att de har blockerat LINE-kontot i 180 dagar. |
 | **Ta bort data för sekretessförfrågningar** (deletePrivacyRequestsData) | Sekretessdataskyddsförordningen | Det här arbetsflödet tar bort mottagarens data som lagras i Adobe Campaign. |
 | **Leveransindikatorer** (deliveryIndicators) | Plattform för mid-sourcing | Det här arbetsflödet uppdaterar leveransspårningsindikatorer för en leverans. Det här arbetsflödet aktiveras som standard varje timme. |
@@ -73,7 +73,7 @@ Lär dig övervaka tekniska arbetsflöden i det här [dedikerad sektion](monitor
 | **Fullständig mängdberäkning för MessageCenter** (agg_messageCenter_full) | Kontroll av transaktionsmeddelanden (Message Center - Control) | Det här arbetsflödet uppdaterar den fullständiga sammanställningen för Message Center-kuben. Den aktiveras varje dag klockan tre som standard. Den här sammanställningen fångar följande dimensioner: Typ av kanal, datum, status och händelse. Meddelandecenterkuben används sedan för att generera rapporter baserade på händelser. Du kan lära dig mer om kuber i  |
 | **Mid-sourcing (leveransräknare)** (defaultMidSourcingDlv) | Överföring till mid-sourcing | Det här arbetsflödet samlar in räkningsinformation för leveranser på servern för mellanlagring. Räkningsinformation omfattar allmänna leveransindikatorer, t.ex. antalet skickade leveranser. Spårningsinformation som öppningar inkluderas inte. Den aktiveras var tionde minut som standard. |
 | **Mid-sourcing (leveransloggar)** (defaultMidSourcingLog) | Överföring till mid-sourcing | Det här arbetsflödet samlar in leveransloggar på servern med mellanleverantörer. Den aktiveras som standard varje timme. |
-| **Hantering av NMAC-avanmälan** (mobileAppOptOutMgt) | Mobilappskanal (push) | Det här arbetsflödet uppdaterar meddelanden om att prenumerationen har avbrutits på mobila enheter. Den utlöses var 6: e timme mellan 1:00 och 24:00. Mer information finns i . |
+| **Hantering av NMAC-avanmälan** (mobileAppOptOutMgt) | Mobilappskanal (push) | Det här arbetsflödet uppdaterar meddelanden om att prenumerationen har avbrutits på mobila enheter. Den utlöses var 6: e timme mellan 1:00 och 24:00. |
 | **Meddelande om erbjudande** (offerMgt) | Installerad som standard | Det här arbetsflödet distribuerar godkända erbjudanden i onlinemiljön samt i alla kategorier i erbjudandekatalogen. |
 | **Rensa pausade arbetsflöden** (cleanupPausedWorkflows) | Installerad som standard | Det här arbetsflödet analyserar pausade arbetsflöden som har allvarlighetsgraden inställd på normal och utlöser varningar och meddelanden när de har pausats för länge. Efter en månad stoppas de pausade tekniska arbetsflödena ovillkorligt. Som standard utlöses den varje måndag kl. 5. Mer information finns i [Hantering av pausade arbetsflöden](monitor-workflow-execution.md#handling-of-paused-workflows). |
 | **Rensa sekretessbegäran** (cleanupPrivacyRequests) | Sekretessdataskyddsförordningen | Det här arbetsflödet raderar filer för åtkomstbegäran som är äldre än 90 dagar. |
