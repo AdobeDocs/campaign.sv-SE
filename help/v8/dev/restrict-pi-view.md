@@ -5,7 +5,7 @@ feature: PI, Privacy
 role: Developer
 level: Intermediate, Experienced
 exl-id: 1b833745-71d7-430d-ac7d-c830c78ea232
-source-git-commit: 2ce1ef1e935080a66452c31442f745891b9ab9b3
+source-git-commit: 6464e1121b907f44db9c0c3add28b54486ecf834
 workflow-type: tm+mt
 source-wordcount: '386'
 ht-degree: 0%
@@ -20,7 +20,7 @@ Om ni vill att marknadsföringsanvändare ska kunna få tillgång till dataposte
 
 ## Implementering {#implementation}
 
-Ett specifikt attribut som kan tillämpas på ett element eller attribut har lagts till i scheman, det kompletterar det befintliga attributet **[!UICONTROL visibleIf]** . Attributet är: **[!UICONTROL accessibleIf]** . När det innehåller ett XTK-uttryck som är relaterat till den aktuella användarkontexten kan det utnyttja **[!UICONTROL HasNamedRight]** eller **[!UICONTROL $(login)]** , till exempel.
+Ett specifikt attribut som kan tillämpas på ett element eller attribut har lagts till i scheman, det kompletterar det befintliga attributet **[!UICONTROL visibleIf]**. Attributet är: **[!UICONTROL accessibleIf]**. När det innehåller ett XTK-uttryck som är relaterat till den aktuella användarkontexten kan det utnyttja **[!UICONTROL HasNamedRight]** eller **[!UICONTROL $(login)]**, till exempel.
 
 Du kan hitta ett exempel på ett mottagarschematillägg som visar den här användningen nedan:
 
@@ -40,7 +40,7 @@ Du kan hitta ett exempel på ett mottagarschematillägg som visar den här anvä
 Huvudegenskaperna är:
 
 * **[!UICONTROL visibleIf]** : Döljer fälten från metadata, vilket innebär att de inte kan nås i en schemavy, kolumnmarkering eller ett uttrycksbyggare. Men detta döljer inga data. Om fältnamnet anges manuellt i ett uttryck visas värdet.
-* **[!UICONTROL accessibleIf]** : Döljer data (ersätter dem med tomma värden) från den resulterande frågan. Om visibleIf är tomt får det samma uttryck som **[!UICONTROL accessibleIf]** .
+* **[!UICONTROL accessibleIf]** : Döljer data (ersätter dem med tomma värden) från den resulterande frågan. Om visibleIf är tomt får det samma uttryck som **[!UICONTROL accessibleIf]**.
 
 Här följer konsekvenserna av att använda det här attributet i Campaign:
 
