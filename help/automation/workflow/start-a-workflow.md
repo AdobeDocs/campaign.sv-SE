@@ -3,9 +3,10 @@ product: campaign
 title: Starta ett arbetsflöde
 description: Lär dig hur du startar ett arbetsflöde och identifierar arbetsflöden, verktygsfältet och högerklicksmenyn
 feature: Workflows
-source-git-commit: 2b1dec4b9c456df4dfcebfe10d18e0ab01599275
+exl-id: 6d9789e3-d721-4ffd-b3fb-a0c522ab1c0a
+source-git-commit: 6464e1121b907f44db9c0c3add28b54486ecf834
 workflow-type: tm+mt
-source-wordcount: '758'
+source-wordcount: '742'
 ht-degree: 0%
 
 ---
@@ -26,7 +27,7 @@ Listan med tillgängliga alternativ i **[!UICONTROL Actions]** och högerklicksm
 
 ## Verktygsfältet Åtgärder {#actions-toolbar}
 
-Verktygsfältsknapparna finns här. The **[!UICONTROL Actions]** ger dig tillgång till ytterligare körningsalternativ för att agera på valda arbetsflöden. Du kan också använda **[!UICONTROL File > Actions]** eller högerklicka på ett arbetsflöde och välj **[!UICONTROL Actions]**.
+The **[!UICONTROL Actions]** i verktygsfältet kan du använda ytterligare körningsalternativ för valda arbetsflöden. Du kan också använda **[!UICONTROL File > Actions]** eller högerklicka på ett arbetsflöde och välj **[!UICONTROL Actions]**.
 
 ![](assets/purge_historique.png)
 
@@ -52,8 +53,6 @@ Verktygsfältsknapparna finns här. The **[!UICONTROL Actions]** ger dig tillgå
 
    Den här åtgärden avbryter och startar sedan om arbetsflödet. I de flesta fall går det att starta om snabbare. Det är också användbart att automatisera omstarten när stoppet tar en viss tid: Detta beror på att &quot;Stoppa&quot;-kommandot inte är tillgängligt när arbetsflödet stoppas.
 
-   The ** .
-
 * **[!UICONTROL Purge history]**
 
    Med den här åtgärden kan du rensa arbetsflödeshistoriken. Mer information finns i [Rensar loggarna](monitor-workflow-execution.md#purging-the-logs).
@@ -77,8 +76,6 @@ Verktygsfältsknapparna finns här. The **[!UICONTROL Actions]** ger dig tillgå
 * **[!UICONTROL Save as template]**
 
    Den här åtgärden skapar en ny arbetsflödesmall baserad på det valda arbetsflödet. Du måste ange mappen där den ska sparas (i **[!UICONTROL Folder]** fält).
-
-   The ** .
 
 ## Högerklicka på menyn {#right-click-menu}
 
@@ -108,4 +105,3 @@ Följande alternativ är tillgängliga på högerklicksmenyn:
 >
 >Du kan markera en grupp aktiviteter och använda något av dessa kommandon på dem.
 
-Högerklicksmenyn finns också i den här .
