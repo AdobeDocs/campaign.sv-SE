@@ -3,9 +3,9 @@ product: campaign
 title: LINE-kanal
 description: LINE-kanal
 feature: Workflows
-source-git-commit: 72467caf94e652ede70c00f1ea413012fc4c7e1f
+source-git-commit: 6464e1121b907f44db9c0c3add28b54486ecf834
 workflow-type: tm+mt
-source-wordcount: '94'
+source-wordcount: '95'
 ht-degree: 11%
 
 ---
@@ -13,7 +13,7 @@ ht-degree: 11%
 
 # LINE-kanal{#line-channel}
 
-Arbetsflödena nedan installeras tillsammans med **LINE-kanal** som standard. Mer information om den här modulen finns i .
+Arbetsflödena nedan installeras tillsammans med **LINE-kanal** som standard. Mer information om den här modulen finns i [den här sidan](../../v8/send/line.md).
 
 <table> 
  <tbody> 
