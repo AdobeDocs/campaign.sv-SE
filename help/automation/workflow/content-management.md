@@ -3,16 +3,15 @@ product: campaign
 title: Innehållshantering
 description: Innehållshantering
 feature: Workflows, Data Management
-source-git-commit: 2b1dec4b9c456df4dfcebfe10d18e0ab01599275
+exl-id: 9b225f78-1959-4e4f-aa4e-ff8a63051154
+source-git-commit: 6464e1121b907f44db9c0c3add28b54486ecf834
 workflow-type: tm+mt
-source-wordcount: '415'
+source-wordcount: '395'
 ht-degree: 2%
 
 ---
 
 # Innehållshantering{#content-management}
-
-
 
 A **Innehållshantering** Med kan du skapa och ändra ett innehåll och generera filer baserat på det här innehållet. Innehållet kan sedan levereras via en &#39;Delivery&#39;-aktivitet.
 
@@ -27,8 +26,6 @@ Aktivitetens egenskaper är uppdelade i tre steg:
 * **Åtgärd**: det slutliga innehållet kan sparas eller genereras.
 
    ![](assets/content_mgmt_edit.png)
-
-   Mer information om hur du konfigurerar och använder innehållshantering i Adobe Campaign finns i den här .
 
 1. **Innehåll**
 
@@ -97,7 +94,3 @@ Identifierare för det innehåll som ska användas om **[!UICONTROL Specified in
 * filnamn
 
    Fullständigt namn på den genererade filen om den valda åtgärden är **[!UICONTROL Generate]**.
-
-## Exempel {#examples}
-
-Här finns exempel.
