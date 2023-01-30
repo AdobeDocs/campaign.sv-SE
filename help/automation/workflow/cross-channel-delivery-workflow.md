@@ -4,10 +4,10 @@ title: Arbetsflöde för leveranser över flera kanaler
 description: Läs mer om arbetsflöden för flerkanalsleverans
 feature: Workflows, Channels Activity
 exl-id: fb498233-4df8-4c9e-a082-3e657c6756c9
-source-git-commit: 5b4d569a6e96c93828f63fb8376eb81301829854
+source-git-commit: 6464e1121b907f44db9c0c3add28b54486ecf834
 workflow-type: tm+mt
-source-wordcount: '626'
-ht-degree: 4%
+source-wordcount: '588'
+ht-degree: 3%
 
 ---
 
@@ -33,7 +33,7 @@ De huvudsakliga implementeringsstegen för det här fallet är följande:
 
 Om du vill definiera målet skapar du en fråga som identifierar mottagarna.
 
-1. Skapa en kampanj. Se  för mer information om detta.
+1. Skapa en kampanj. Läs mer i [den här sidan](../campaigns/marketing-campaign-create.md).
 1. I **[!UICONTROL Targeting and workflows]** fliken med kampanjen, lägg till en **Fråga** till arbetsflödet. Mer information om hur du använder den här aktiviteten finns i [det här avsnittet](query.md).
 1. Definiera de mottagare som ska ta emot leveranserna. Välj till exempel Guldmedlemmar som måldimension.
 1. Lägg till filtervillkor i frågan. I det här exemplet väljer du mottagare som har en e-postadress och ett mobilnummer.
@@ -49,7 +49,7 @@ Om du vill definiera målet skapar du en fråga som identifierar mottagarna.
 
    ![](assets/wkf_cross-channel_1.png)
 
-   Mer information om hur du integrerar ett erbjudande i brödtexten för ett meddelande finns i .
+   Mer information om hur du integrerar ett erbjudande i ett meddelande finns i [den här sidan](../../v8/send/email.md).
 
 1. Spara ändringarna.
 1. Högerklicka på **[!UICONTROL Email delivery]** för att öppna den.
@@ -107,11 +107,8 @@ När målet har identifierats och första leveransen har skapats måste du segme
    * Lägg till en **[!UICONTROL Mobile delivery]** aktivitet för att skicka ett SMS-meddelande till den andra delmängden.
    * Lägg till en **[!UICONTROL List update]** för att lägga till motsvarande mottagare i databasen.
 
-1. Dubbelklicka på leveransaktiviteterna i arbetsflödet för att redigera dem. Mer information om hur du skapar ett e-postmeddelande och ett SMS finns i .
+1. Dubbelklicka på leveransaktiviteterna i arbetsflödet för att redigera dem.
 1. Dubbelklicka på **[!UICONTROL List update]** aktivitet och välj **[!UICONTROL Generate an outbound transition]** alternativ.
-
-   Du kan sedan exportera de resulterande mottagarna från Adobe Campaign till Adobe Experience Cloud. Du kan till exempel använda målgruppen i Adobe Target genom att lägga till en ** .
-
 1. Klicka på **Starta** i åtgärdsfältet för att köra arbetsflödet.
 
 Den befolkning som **Fråga** aktiviteten segmenteras för att ta emot ett e-postmeddelande eller ett SMS-meddelande enligt mottagarnas beteenden. Den återstående populationen läggs till i databasen med **[!UICONTROL List update]** aktivitet.
