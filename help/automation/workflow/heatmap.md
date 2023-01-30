@@ -3,20 +3,17 @@ product: campaign
 title: Värmekarta för kampanjarbetsflöde
 description: Övervaka arbetsflödena med Workflow HeatMap
 feature: Workflows, Heatmap
-source-git-commit: 2b1dec4b9c456df4dfcebfe10d18e0ab01599275
+exl-id: aeb35076-2f0d-456d-8562-be69e7e902eb
+source-git-commit: 6464e1121b907f44db9c0c3add28b54486ecf834
 workflow-type: tm+mt
-source-wordcount: '1112'
+source-wordcount: '1094'
 ht-degree: 3%
 
 ---
 
 # Värmekarta för arbetsflöde {#workflow-heatmap}
 
-
-
 Värdkarta för kampanjarbetsflöde består av en färgkodad grafisk representation av alla arbetsflöden som körs för närvarande. Det är bara tillgängligt för **Kampanjadministratörer**.
-
-Upptäck fler sätt att övervaka Campaign-processer i .
 
 ## Kom igång med Workflow HeatMap {#about-the-workflow-heatmap}
 
@@ -52,8 +49,7 @@ Om du använder Workflow HeatMap måste du ha god förståelse för följande ko
    Som standard visas arbetsflödesaktiviteten för den aktuella dagen på sidan. Du kan ändra den och välja vilken dag som helst i det förflutna.
 
    >[!NOTE]
-   >
-   >Endast de arbetsflöden som inte har tagits bort av ** .\
+   > 
    >Som standard är tidszonen för Workflow HeatMap den som är definierad för den aktuella administratörsanvändaren. Du kan till exempel vilja ändra den om du inte befinner dig inom samma område som de marknadsföringsanvändare du arbetar med.
 
 1. Klicka på knappen **[!UICONTROL Filters]**.
@@ -152,7 +148,7 @@ I det här fallet klagar många användare över arbetsflödets prestanda. Du m�
 
 1. Gå till **[!UICONTROL Monitoring]** och klicka på **[!UICONTROL Workflows]** länk för att visa **[!UICONTROL Campaign Workflow HeatMap]** sida.
 1. Ange **[!UICONTROL Min duration]** filtrera till 5 minuter.
-1. Ange **[!UICONTROL Workflow type]** filtrera till **[!UICONTROL Marketing]** .
+1. Ange **[!UICONTROL Workflow type]** filtrera till **[!UICONTROL Marketing]**.
 1. I HeatMap-rutnätet bör du tänka på följande:
 
    ![](assets/wkf_monitoring_without.png)
