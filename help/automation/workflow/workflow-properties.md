@@ -3,9 +3,10 @@ product: campaign
 title: Egenskaper för arbetsflöde
 description: Läs mer om egenskaper för kampanjarbetsflöde
 feature: Workflows
-source-git-commit: 2b1dec4b9c456df4dfcebfe10d18e0ab01599275
+exl-id: 7fef434e-f6bd-46a4-9ec2-0182f081c928
+source-git-commit: 6464e1121b907f44db9c0c3add28b54486ecf834
 workflow-type: tm+mt
-source-wordcount: '546'
+source-wordcount: '543'
 ht-degree: 1%
 
 ---
@@ -37,8 +38,6 @@ Det här avsnittet visas bara i kampanjarbetsflöden.
 * **[!UICONTROL Default affinity]**
 
    Om installationen innehåller flera arbetsflödesservrar använder du det här fältet för att välja vilken dator arbetsflödet ska köras på. Om värdet som definieras i det här fältet inte finns på någon server, kommer arbetsflödet att förbli väntande.
-
-   Se detta.
 
 * **[!UICONTROL History in days]**
 
