@@ -3,9 +3,10 @@ product: campaign
 title: Celler
 description: Celler
 feature: Workflows, Targeting Activity
-source-git-commit: 2b1dec4b9c456df4dfcebfe10d18e0ab01599275
+exl-id: d85645a6-fc15-4c3a-9d67-d4230224e1f7
+source-git-commit: 6464e1121b907f44db9c0c3add28b54486ecf834
 workflow-type: tm+mt
-source-wordcount: '123'
+source-wordcount: '116'
 ht-degree: 2%
 
 ---
@@ -49,4 +50,4 @@ Följande information har lagts till i arbetsflödesformuläret i **[!UICONTROL 
                 </container>
 ```
 
-Anpassning av inmatningsformulär i Adobe Campaign är reserverat för expertanvändare. Mer information finns i detta .
+Anpassning av inmatningsformulär i Adobe Campaign är reserverat för expertanvändare.
