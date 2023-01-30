@@ -3,9 +3,10 @@ product: campaign
 title: Läsa in (SOAP)
 description: Läsa in (SOAP)
 feature: Workflows
-source-git-commit: 2b1dec4b9c456df4dfcebfe10d18e0ab01599275
+exl-id: 21c42a36-9a50-49b8-8a07-b041ba8b2026
+source-git-commit: 6464e1121b907f44db9c0c3add28b54486ecf834
 workflow-type: tm+mt
-source-wordcount: '240'
+source-wordcount: '229'
 ht-degree: 4%
 
 ---
@@ -39,8 +40,6 @@ The **Läser in (SOAP)** -aktiviteten används utöver **datainläsning (RDBMS)*
    ![](assets/soap_load_001.png)
 
    Om du vill uppdatera exemplet väljer du **[!UICONTROL Re-analyze the example]**.
-
-   Du kan också anpassa formatet för kolumndata via ** .
 
 1. Du kan använda radnumret som en identifierare och/eller ange att SOAP-anropet returnerar flera element.
 1. Ange följande tabbskript efter funktion:
