@@ -3,9 +3,10 @@ product: campaign
 title: Avancerade parametrar
 description: Avancerade parametrar
 feature: Workflows, Data Management
-source-git-commit: 2b1dec4b9c456df4dfcebfe10d18e0ab01599275
+exl-id: aafd977e-c8af-426b-904c-8388c9d8e595
+source-git-commit: 6464e1121b907f44db9c0c3add28b54486ecf834
 workflow-type: tm+mt
-source-wordcount: '500'
+source-wordcount: '492'
 ht-degree: 2%
 
 ---
@@ -47,8 +48,6 @@ De här alternativen är vanligtvis markerade i kundvagnen genom att högerklick
 ## Tillhörighet {#affinity}
 
 Du kan välja att framtvinga körningen av ett arbetsflöde eller en arbetsflödesaktivitet på en viss dator. För att kunna göra detta måste du definiera en eller flera egenskaper på arbetsflödesnivå eller för den aktuella aktiviteten.
-
-Arbetsflödeskonfigurationen för hög tillgänglighet beskrivs här.
 
 
 ## Max. körningsperiod {#max--execution-period}
