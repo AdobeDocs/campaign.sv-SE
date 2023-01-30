@@ -3,22 +3,17 @@ product: campaign
 title: Skapa ett filter
 description: Lär dig hur du skapar ett filter när du utför frågor
 feature: Query Editor, Workflows
-source-git-commit: 5cd75f18ac2f4e02f656fa016f61ba0c7c72670a
+exl-id: 8e6fd9b4-77c4-4af8-921b-c3fe104fa5bc
+source-git-commit: 6464e1121b907f44db9c0c3add28b54486ecf834
 workflow-type: tm+mt
-source-wordcount: '208'
+source-wordcount: '201'
 ht-degree: 2%
 
 ---
 
 # Skapa ett filter {#creating-a-filter}
 
-
-
 De filter som är tillgängliga i Adobe Campaign definieras via filtervillkor som skapas i samma operativsystem som frågor.
-
->[!NOTE]
->
->Mer information om hur du skapar filter finns i .
 
 The **[!UICONTROL Administration > Configuration > Predefined filters]** noden innehåller alla filter som används i listorna och översikterna.
 
