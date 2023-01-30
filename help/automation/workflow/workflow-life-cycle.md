@@ -3,9 +3,10 @@ product: campaign
 title: Arbetsflödets livscykel
 description: Läs mer om arbetsflödets livscykel
 feature: Workflows
-source-git-commit: 2b1dec4b9c456df4dfcebfe10d18e0ab01599275
+exl-id: 4356b90c-9d7c-49ef-88cd-716b2ccdb7f0
+source-git-commit: 6464e1121b907f44db9c0c3add28b54486ecf834
 workflow-type: tm+mt
-source-wordcount: '266'
+source-wordcount: '260'
 ht-degree: 2%
 
 ---
@@ -37,7 +38,5 @@ Detta innebär att de två första aktiviteterna har slutförts och att godkänn
 Tecknen **574 -OK** visas ovanför övergången efter **Leverans** aktiviteten innebär att leveransförberedelsen har 574 mottagare som mål och att åtgärden har slutförts utan fel. Den här informationen, som läggs till i övergångarna när de körs, beräknas av aktiviteterna som bearbetar data.
 
 Arbetsflödet startas och väntar på en operator som tillhör gruppen som anges i **Godkännande** att fatta ett beslut. Operatörer som tillhör gruppen och som har en e-postadress eller ett mobiltelefonnummer meddelas.
-
-Operatorhantering beskrivs i detta .
 
 Mer information om hur du övervakar arbetsflöden finns i [det här avsnittet](monitor-workflow-execution.md).
