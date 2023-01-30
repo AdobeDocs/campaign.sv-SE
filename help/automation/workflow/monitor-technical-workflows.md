@@ -3,20 +3,17 @@ product: campaign
 title: Övervaka tekniska arbetsflöden
 description: Övervaka tekniska arbetsflöden
 feature: Workflows
-source-git-commit: 2b1dec4b9c456df4dfcebfe10d18e0ab01599275
+exl-id: 8524d916-8af7-4641-b047-9c348f1017fd
+source-git-commit: 6464e1121b907f44db9c0c3add28b54486ecf834
 workflow-type: tm+mt
-source-wordcount: '487'
+source-wordcount: '472'
 ht-degree: 5%
 
 ---
 
 # Övervaka tekniska arbetsflöden {#monitoring-technical-workflows}
 
-
-
 Tekniska arbetsflöden måste övervakas, och åtgärder måste vidtas när de misslyckas.
-
-Ytterligare sätt att övervaka de olika Campaign-processerna presenteras i .
 
 ## Instansövervakningsinstrumentpanel {#instance-monitoring-dashboard}
 
@@ -40,8 +37,7 @@ Mer information om vad varje tekniskt arbetsflöde ska göra finns i [section](t
 
 För **[!UICONTROL Database Cleanup workflow (‘cleanup’)]**:
 
-1. Kontrollera att ** ..
-1. Titta i journalen för att kontrollera att förfluten tid är relativt konstant över tid och inte stör andra arbetsflöden.
+Kontrollera journalen för att verifiera att förfluten tid är relativt konstant över tid och inte stör andra arbetsflöden.
 
 För **[!UICONTROL Tracking workflow (‘tracking’)]**:
 
