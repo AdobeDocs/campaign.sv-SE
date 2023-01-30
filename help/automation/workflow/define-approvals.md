@@ -3,9 +3,10 @@ product: campaign
 title: Definiera godkännanden
 description: Godkännanden gör det möjligt för operatörer att fatta beslut som styr ett arbetsflöde eller att bekräfta att det fortsätter att köras
 feature: Approvals
-source-git-commit: 2b1dec4b9c456df4dfcebfe10d18e0ab01599275
+exl-id: 8ac159c1-fd2e-4fb9-8275-18154f6f210c
+source-git-commit: 6464e1121b907f44db9c0c3add28b54486ecf834
 workflow-type: tm+mt
-source-wordcount: '838'
+source-wordcount: '826'
 ht-degree: 4%
 
 ---
@@ -26,8 +27,6 @@ I operationer baseras alla faser som kräver godkännande på samma princip.
 
 ![](assets/validation-1-in-op.png)
 
-Godkännandeexempel finns i .
-
 En operator kan svara på ett av två sätt: validera med webbsidan som är länkad i e-postmeddelandet eller via konsolen.
 
 >[!NOTE]
@@ -36,9 +35,7 @@ En operator kan svara på ett av två sätt: validera med webbsidan som är län
 
 ## Godkännanden via e-post {#sending-emails}
 
-Det går att få ett meddelande om godkännande som innehåller en länk till en webbsida där det går att svara. Om måloperatorn ska få ett e-postmeddelande om godkännande måste operatörens e-postadress vara fullständig. Om så inte är fallet måste operatören använda konsolen för att svara
-
-Operatorhantering beskrivs i detta .
+Det går att få ett meddelande om godkännande som innehåller en länk till en webbsida där det går att svara. Om måloperatorn ska få ett e-postmeddelande om godkännande måste operatörens e-postadress vara fullständig. Om så inte är fallet måste operatören använda konsolen för att svara.
 
 E-postmeddelanden om godkännande skickas kontinuerligt. Standardleveransmallen är **[!UICONTROL notifyAssignee]**: Den sparas i **[!UICONTROL Administration > Campaign management > Technical delivery templates]** mapp. Scenariot kan anpassas och vi rekommenderar att du skapar en kopia och ändrar mallar för varje aktivitet.
 
