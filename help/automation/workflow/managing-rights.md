@@ -3,9 +3,10 @@ product: campaign
 title: Hantera arbetsflödesbehörigheter
 description: Lär dig hur du hanterar arbetsflödesbehörigheter
 feature: Workflows
-source-git-commit: 2b1dec4b9c456df4dfcebfe10d18e0ab01599275
+exl-id: 3cb8aeec-e758-4b71-adef-67942cf9ded7
+source-git-commit: bff7d1d51b9847c515670e5594eed513fefbe816
 workflow-type: tm+mt
-source-wordcount: '320'
+source-wordcount: '321'
 ht-degree: 0%
 
 ---
@@ -20,7 +21,7 @@ I allmänhet behöver operatorer som arbetar med arbetsflöden komma åt de file
 
 De måste också mappas till namngivna rättigheter som sammanfaller med de åtgärder som utförs av arbetsflöden som de påverkar (mottagarimport, filåtkomst, fusion, SQL-skriptkörning osv.).
 
-Mer information om hur du hanterar operatorer och behörigheter finns i den här .
+Mer information om hur du hanterar operatorer och behörigheter finns i [det här avsnittet](../../v8/start/gs-permissions.md).
 
 ## Operatörsgrupper {#operator-groups-wf}
 
