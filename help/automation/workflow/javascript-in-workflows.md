@@ -4,9 +4,9 @@ title: Exempel på JavaScript-kod i arbetsflöden
 description: De här exemplen visar hur du kan använda JavaScript-kod i ett arbetsflöde
 feature: Workflows
 exl-id: 3412e3de-1c88-496e-8fda-ca9fc9b18e69
-source-git-commit: 2ce1ef1e935080a66452c31442f745891b9ab9b3
+source-git-commit: 6464e1121b907f44db9c0c3add28b54486ecf834
 workflow-type: tm+mt
-source-wordcount: '1756'
+source-wordcount: '1752'
 ht-degree: 2%
 
 ---
@@ -50,7 +50,7 @@ Om du vill skriva till databasen kan du använda den statiska `Write` på `xtk:s
    1. Ring `Write` på `xtk:session` schema.
 
       >[!IMPORTANT]
-      > Om du använder Adobe Campaign v8 rekommenderar vi att du använder mellanlagringsmekanismen med **Inmatning** och **Datauppdatering/borttagning** API:er för `Write` i en Snowflake-tabell. [Läs mer](https://experienceleague.adobe.com/docs/campaign/campaign-v8/architecture/api/new-apis.html){target=&quot;_blank&quot;}.
+      > Om du använder Adobe Campaign v8 rekommenderar vi att du använder mellanlagringsmekanismen med **Inmatning** och **Datauppdatering/borttagning** API:er för `Write` i en Snowflake-tabell. [Läs mer](https://experienceleague.adobe.com/docs/campaign/campaign-v8/architecture/api/new-apis.html){target="_blank"}.
 
    1. Skicka XML-koden som ett argument för skrivbegäran.
 
@@ -78,7 +78,7 @@ var myXML = <recipient xtkschema="nms:recipient"
 
 #### Uppdatera en post
 
-Använd `_update` operation. .
+Använd `_update` operation.
 
 Ange den här informationen som XML-attribut:
 
@@ -560,7 +560,7 @@ Du kan infoga, uppdatera och ta bort poster. Du kan använda `Write` på alla sc
 * The `delete` operation
 
 >[!IMPORTANT]
-> Om du använder Adobe Campaign v8 rekommenderar vi att du använder mellanlagringsmekanismen med **Inmatning** och **Datauppdatering/borttagning** API:er för `Write` i en Snowflake-tabell. [Läs mer](https://experienceleague.adobe.com/docs/campaign/campaign-v8/architecture/api/new-apis.html){target=&quot;_blank&quot;}.
+> Om du använder Adobe Campaign v8 rekommenderar vi att du använder mellanlagringsmekanismen med **Inmatning** och **Datauppdatering/borttagning** API:er för `Write` i en Snowflake-tabell. [Läs mer](https://experienceleague.adobe.com/docs/campaign/campaign-v8/architecture/api/new-apis.html){target="_blank"}.
 
 #### Exempel 1: infoga eller uppdatera en post
 
