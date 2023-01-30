@@ -3,9 +3,10 @@ product: campaign
 title: Fråga med grupperingshantering
 description: Lär dig hur du utför frågor med hjälp av grupperingshantering
 feature: Query Editor
-source-git-commit: 2b1dec4b9c456df4dfcebfe10d18e0ab01599275
+exl-id: 6fc4ef67-5d75-4c8c-8bcc-41e3ed155ca2
+source-git-commit: 6464e1121b907f44db9c0c3add28b54486ecf834
 workflow-type: tm+mt
-source-wordcount: '249'
+source-wordcount: '241'
 ht-degree: 4%
 
 ---
@@ -26,7 +27,7 @@ I det här exemplet vill vi köra en fråga för att hitta alla e-postdomäner s
 
 * Datagruppering?
 
-   Baserat på e-postdomän med ett antal primärnycklar över 30. Denna operation genomförs med **[!UICONTROL Group by + Having]** alternativ. **[!UICONTROL Group by + Having]** I kan du gruppera data (&quot;gruppera efter&quot;) och göra en markering av grupperade data (&quot;ha&quot;).
+   Baserat på en e-postdomän med ett antal primärnycklar över 30. Denna operation genomförs med **[!UICONTROL Group by + Having]** alternativ. **[!UICONTROL Group by + Having]** I kan du gruppera data (&quot;gruppera efter&quot;) och göra en markering av grupperade data (&quot;ha&quot;).
 
 Så här skapar du det här exemplet:
 
@@ -35,8 +36,6 @@ Så här skapar du det här exemplet:
    ![](assets/query_editor_02.png)
 
 1. I **[!UICONTROL Data to extract]** väljer du **[!UICONTROL Email domain]** och **[!UICONTROL Primary key]** fält. Räkna med **[!UICONTROL Primary key]** fält.
-
-   Mer information om antalet primärnycklar finns i .
 
 1. Kontrollera **[!UICONTROL Handle groupings (GROUP BY + HAVING)]** box.
 
