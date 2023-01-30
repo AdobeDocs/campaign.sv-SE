@@ -3,9 +3,9 @@ product: campaign
 title: Integrering med arbetsflöden för Adobe Experience Cloud-lösningar
 description: Läs mer om integreringar med arbetsflöden för Adobe Experience Cloud-lösningar
 topic-tags: technical-workflows
-source-git-commit: 72467caf94e652ede70c00f1ea413012fc4c7e1f
+source-git-commit: 6464e1121b907f44db9c0c3add28b54486ecf834
 workflow-type: tm+mt
-source-wordcount: '108'
+source-wordcount: '109'
 ht-degree: 8%
 
 ---
@@ -13,9 +13,7 @@ ht-degree: 8%
 
 # Integrering med lösningar i Adobe Experience Cloud{#integrations-with-adobe-experience-cloud-solutions}
 
-
-
-Arbetsflödena nedan installeras tillsammans med **Integrering med Adobe Experience Cloud** som standard. Mer information om den här modulen finns i .
+Arbetsflödena nedan installeras tillsammans med **Integrering med Adobe Experience Cloud** som standard. Mer information om den här modulen finns i [den här sidan](../../v8/connect/integration.md).
 
 <table> 
  <tbody> 
