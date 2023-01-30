@@ -3,23 +3,18 @@ product: campaign
 title: Filöverföring
 description: Läs mer om arbetsflödesaktiviteten Filöverföring
 feature: Workflows, Data Management
-source-git-commit: 2b1dec4b9c456df4dfcebfe10d18e0ab01599275
+exl-id: 794de398-f35d-4c2b-af29-d6fd38eb9394
+source-git-commit: 6464e1121b907f44db9c0c3add28b54486ecf834
 workflow-type: tm+mt
-source-wordcount: '567'
+source-wordcount: '557'
 ht-degree: 1%
 
 ---
 
 # Filöverföring{#file-transfer}
 
-
-
 The **Filöverföring** kan du ta emot eller skicka filer, testa om det finns filer eller lista med filer på en server. Det protokoll som används är antingen Azure Blob Storage, Amazon Simple Storage Service (S3), FTP eller SFTP.
 Med S3, Azure Blob Storage eller SFTP-anslutning kan du även importera segmentdata till Adobe Campaign med Adobe kunddataplattform i realtid. Mer information finns i [dokumentation](https://experienceleague.adobe.com/docs/experience-platform/destinations/catalog/email-marketing/adobe-campaign.html).
-
->[!NOTE]
->
->De bästa sätten och felsökningarna för användning av SFTP-servrar finns i detalj.
 
 ## Egenskaper {#properties}
 
