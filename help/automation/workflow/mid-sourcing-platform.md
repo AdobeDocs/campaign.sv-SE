@@ -3,10 +3,10 @@ product: campaign
 title: Plattform för mid-sourcing
 description: Plattform för mid-sourcing
 feature: Workflows
-source-git-commit: 72467caf94e652ede70c00f1ea413012fc4c7e1f
+source-git-commit: 6464e1121b907f44db9c0c3add28b54486ecf834
 workflow-type: tm+mt
-source-wordcount: '51'
-ht-degree: 15%
+source-wordcount: '43'
+ht-degree: 18%
 
 ---
 
@@ -15,7 +15,7 @@ ht-degree: 15%
 
 
 
-Arbetsflödet som beskrivs nedan installeras med **Plattform för medelhög källkod** som standard. Mer information om den här modulen finns i .
+Arbetsflödet som beskrivs nedan installeras med **Plattform för medelhög källkod** som standard.
 
 <table> 
  <tbody> 
