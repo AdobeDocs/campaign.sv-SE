@@ -3,10 +3,11 @@ product: campaign
 title: Läsa in data (fil)
 description: Läs mer om arbetsflödesaktiviteten Datainläsning (fil)
 feature: Workflows, Data Management Activity
-source-git-commit: 2b1dec4b9c456df4dfcebfe10d18e0ab01599275
+exl-id: 10351620-115c-4bd8-b216-e5ad6f205ef3
+source-git-commit: 6464e1121b907f44db9c0c3add28b54486ecf834
 workflow-type: tm+mt
-source-wordcount: '1044'
-ht-degree: 15%
+source-wordcount: '1029'
+ht-degree: 14%
 
 ---
 
@@ -31,8 +32,6 @@ I det övre avsnittet av konfigurationsfönstret för den här aktiviteten kan d
 Du kan definiera en förprocess som ska utföras under filimport, t.ex. för att inte behöva packa upp filen på servern (och därför spara utrymme för den uppzippade filen) utan för att inkludera uppzippning i filbearbetningen. Välj **[!UICONTROL Pre-process the file]** och välj något av tre alternativ: **[!UICONTROL None]**, **[!UICONTROL Decompression]** (zcat) eller **[!UICONTROL Decrypt]** (gpg).
 
 ![](assets/preprocessing-dataloading.png)
-
-Mer information om detta finns i det här avsnittet:  .
 
 ## Definiera filformatet {#defining-the-file-format}
 
@@ -110,7 +109,7 @@ I följande exempel kan du samla in en fil på servern varje dag, läsa in dess 
    * den första kolumnen innehåller en kod som sammanfaller med händelsen: inköp (mer eller mindre än 3 000 euro), inget inköp eller någon återbetalning för ett eller flera inköp.
    * De fyra följande kolumnerna innehåller klientens förnamn, efternamn, e-postadress och kontonummer.
 
-   Formatkonfigurationen för filen som ska läsas in sammanfaller med den som definieras vid dataimport i Adobe Campaign. Mer information finns i detta .
+   Formatkonfigurationen för filen som ska läsas in sammanfaller med den som definieras vid dataimport i Adobe Campaign.
 
 1. I den delade aktiviteten anger du de delmängder som ska skapas enligt **Händelse** kolumnvärde.
 
