@@ -3,10 +3,10 @@ product: campaign
 title: Leveranser
 description: Läs mer om standardarbetsflöden för leveranser
 feature: Workflows
-source-git-commit: 72467caf94e652ede70c00f1ea413012fc4c7e1f
+source-git-commit: 6464e1121b907f44db9c0c3add28b54486ecf834
 workflow-type: tm+mt
-source-wordcount: '322'
-ht-degree: 5%
+source-wordcount: '316'
+ht-degree: 6%
 
 ---
 
@@ -47,7 +47,7 @@ Arbetsflödena nedan installeras tillsammans med **Leveranser** som standard.
   <tr> 
    <td> <span class="uicontrol">Databasrensning</span> <br /> </td> 
    <td> <span class="uicontrol">cleanup</span> <br /> </td> 
-   <td> <p>Det här arbetsflödet är arbetsflödet för databasunderhåll: utför olika beräkningar från statistiken och processerna och tar bort föråldrade data från databasen enligt den definierade konfigurationen i distributionsassistenten. Den aktiveras varje dag klockan fyra som standard.</p> <p>Mer information finns i den här .</p> </td> 
+   <td> <p>Det här arbetsflödet är arbetsflödet för databasunderhåll: utför olika beräkningar från statistiken och processerna och tar bort föråldrade data från databasen enligt den definierade konfigurationen i distributionsassistenten. Den aktiveras varje dag klockan fyra som standard.</p></td> 
   </tr> 
   <tr> 
    <td> <span class="uicontrol">Rensa pausade arbetsflöden</span> <br /> </td> 
