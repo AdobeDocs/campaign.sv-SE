@@ -3,10 +3,11 @@ product: campaign
 title: Återkommande leverans
 description: Läs mer om arbetsflödesaktiviteten Återkommande leverans
 feature: Workflows
-source-git-commit: 2b1dec4b9c456df4dfcebfe10d18e0ab01599275
+exl-id: 27308b0d-cbfc-4bc6-9061-d771ceac95fd
+source-git-commit: 6464e1121b907f44db9c0c3add28b54486ecf834
 workflow-type: tm+mt
-source-wordcount: '270'
-ht-degree: 14%
+source-wordcount: '263'
+ht-degree: 15%
 
 ---
 
@@ -28,7 +29,7 @@ Så här gör du:
 
 1. Konfigurera leveransmallen.
 
-Konfigurationsprocessen för den här aktiviteten liknar den för att skapa en leveransmall utifrån tillgängliga alternativ. Mer information finns i detta .
+Konfigurationsprocessen för den här aktiviteten liknar den för att skapa en leveransmall utifrån tillgängliga alternativ.
 
 Ett exempel på den här aktiviteten som används finns i [section](send-a-birthday-email.md#creating-a-recurring-delivery-in-a-targeting-workflow).
 
