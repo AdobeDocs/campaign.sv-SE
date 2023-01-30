@@ -3,19 +3,17 @@ product: campaign
 title: Mobilappskanalen
 description: Mobilappskanalen
 feature: Workflows
-source-git-commit: 72467caf94e652ede70c00f1ea413012fc4c7e1f
+source-git-commit: 6464e1121b907f44db9c0c3add28b54486ecf834
 workflow-type: tm+mt
-source-wordcount: '63'
-ht-degree: 19%
+source-wordcount: '64'
+ht-degree: 18%
 
 ---
 
 
 # Mobilappskanalen{#mobile-app-channel}
 
-
-
-Arbetsflödet som beskrivs nedan installeras med **Mobilappskanal** som standard. Mer information om den här modulen finns i .
+Arbetsflödet som beskrivs nedan installeras med **Mobilappskanal** som standard. Mer information om den här modulen finns i [det här avsnittet](../../v8/send/push.md).
 
 <table> 
  <tbody> 
