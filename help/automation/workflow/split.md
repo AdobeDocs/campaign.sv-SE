@@ -3,7 +3,8 @@ product: campaign
 title: Dela
 description: Läs mer om aktiviteten Dela arbetsflöde
 feature: Workflows, Targeting Activity
-source-git-commit: 2b1dec4b9c456df4dfcebfe10d18e0ab01599275
+exl-id: bf4935dd-87dc-4c5c-becf-8c4df61805fd
+source-git-commit: 6464e1121b907f44db9c0c3add28b54486ecf834
 workflow-type: tm+mt
 source-wordcount: '1796'
 ht-degree: 0%
@@ -145,7 +146,6 @@ Med mallen för datadistribution kan du begränsa antalet poster med hjälp av e
    * **[!UICONTROL Targeting dimension]**: Ange den måldimension som datafördelningen ska tillämpas på. **[!UICONTROL Recipient]** till exempel. Det här schemat måste alltid vara kompatibelt med de data som används i målarbetsflödet.
    * **[!UICONTROL Distribution field]**: markera ett fält via måldimensionen. Om du till exempel väljer **[!UICONTROL Email domain]** -fältet kommer listan över mottagare att delas upp efter domän.
    * **[!UICONTROL Distribution type]**: välj hur målets begränsningsvärde ska delas upp i **[!UICONTROL Distribution]** tab: **[!UICONTROL Percentage]** eller **[!UICONTROL Set]**.
-   * ** .
    * **[!UICONTROL Approval storage]**: om du använder [Lokalt godkännande](local-approval.md) i målarbetsflödet anger du det schema som godkännanderesultaten ska lagras i. Du måste ange ett lagringsschema per målschema. Om du använder **[!UICONTROL Recipients]** målschema, ange standard **[!UICONTROL Local approval of recipients]** lagringsschema.
 
       Om en enkel begränsning är per datagrupp utan lokalt godkännande behöver du inte ange **[!UICONTROL Approvals storage]** fält.
