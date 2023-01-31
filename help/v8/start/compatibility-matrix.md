@@ -5,10 +5,10 @@ feature: Overview
 role: Admin
 level: Beginner, Intermediate, Experienced
 exl-id: 4be3a6dc-0c61-4534-b9dd-6c99c8a037a9,870a336f-94ac-4171-891b-67614feef6ef,bebdd930-c7f6-4629-a489-3c704b33f058,d493e613-eb61-43b1-9c6d-1bd881af0734
-source-git-commit: 00d95425ca9438cd03b27bbec171aa7c57d25d6f
+source-git-commit: 90dde8bb3bde4893971a2f364aa636ade6fff10f
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '367'
+ht-degree: 32%
 
 ---
 
@@ -37,9 +37,9 @@ Följande operativsystem och webbläsare krävs för att använda klientkonsolen
 
 ### Webbläsare{#web-browsers}
 
-* Microsoft Edge
+* **Microsoft Edge**
 
-* Microsoft Edge WebView2 runtime, den senaste versionen. Hämta den från [Microsoft Developer Site](http://www.adobe.com/go/acc-ms-webview2-runtime-download){target="_blank"}.
+* **Microsoft Edge WebView2**, senaste versionen. Hämta den från [Microsoft Developer Site](http://www.adobe.com/go/acc-ms-webview2-runtime-download){target="_blank"}.
 
 ## CRM-kopplingar{#CRMconnectors}
 
@@ -61,8 +61,8 @@ Externa databaser som är kompatibla med Adobe Campaign FDA-modulen (Federated D
 
 Du kan använda Campaign för att skicka [push-meddelanden](../send/push.md) i de operativsystem som anges nedan med tillhörande mobil-SDK.
 
-* **Android** 12 (med början Campaign v8.3), 9.0, 8.x, 7.x, med Campaign Android SDK build 1.1.1.
-* **Apple iOS** 9 - 16 med Campaign iOS SDK build 1.0.26, kompatibelt med 32- och 64-bitarsversioner. iOS 16 stöds från och med Campaign v8.4.
+* **Android** 12, 9.0, 8.x, 7.x, med Campaign Android SDK build 1.1.1.
+* **Apple iOS** 9 - 16 med Campaign iOS SDK build 1.0.26, kompatibelt med 32- och 64-bitarsversioner. Apple iOS 16 stöds från och med Campaign v8.4.
 
 
 ## Webbåtkomst{#web-access}
