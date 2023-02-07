@@ -5,10 +5,10 @@ title: Adobe Campaign Automation Home
 feature: Overview
 description: Översikt
 exl-id: 9ed73e65-3626-46c6-bfeb-a9fe9c2d7f72
-source-git-commit: d8a009b1d6ea4f6921cef203d61c78032951f3ee
+source-git-commit: 143e90ef63fac4058008bc6864daf950c11ab2d1
 workflow-type: tm+mt
 source-wordcount: '191'
-ht-degree: 6%
+ht-degree: 7%
 
 ---
 
@@ -47,7 +47,7 @@ Gå till guiderna nedan och lär dig hur du bygger automatisering med Adobe Camp
   </td>
   <td valign="top">
     <div><img src="assets/do-not-localize/campaign.jpeg">
-    <b>Kampanjautomatisering</b>
+    <b>Kampanjorkestrering</b>
     </div>
     <br>
     <div>
