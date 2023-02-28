@@ -2,12 +2,12 @@
 audience: end-user
 user-guide-title: Campaign v8
 description: Dokumentation om Campaign v8
-breadcrumb-title: Kampanjöversikt
-title: Kampanjdokument v8
+breadcrumb-title: Översikt över Campaign
+title: Campaign v8 dokument
 source-git-commit: 366cf800a81ea9ab10fe5e3063f44e5214bda927
 workflow-type: tm+mt
 source-wordcount: '491'
-ht-degree: 25%
+ht-degree: 26%
 
 ---
 

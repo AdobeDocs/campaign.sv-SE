@@ -1,6 +1,6 @@
 ---
 title: Koppla samman Campaign med era lösningar
-description: Lär dig koppla din Adobe Campaign-instans till Experience Cloud-lösningar.
+description: Lär dig koppla Adobe Campaign-instansen till Experience Cloud-lösningar.
 feature: Overview
 role: Admin, User
 level: Beginner, Intermediate
@@ -8,7 +8,7 @@ exl-id: d1d57aa8-b811-470f-a8a6-18da3a700f1a
 source-git-commit: 507f30d16eecf5400ee88a4d29913e4cdaca9cba
 workflow-type: tm+mt
 source-wordcount: '394'
-ht-degree: 8%
+ht-degree: 11%
 
 ---
 

@@ -7,8 +7,8 @@ level: Beginner, Intermediate, Experienced
 exl-id: 7771a02c-ebd4-48b6-b25e-6b6e420ad493
 source-git-commit: 507f30d16eecf5400ee88a4d29913e4cdaca9cba
 workflow-type: tm+mt
-source-wordcount: '889'
-ht-degree: 4%
+source-wordcount: '887'
+ht-degree: 6%
 
 ---
 
@@ -90,6 +90,6 @@ Via ett intuitivt användargränssnitt kan administratörer övervaka användnin
 
 ![](assets/subdomain1.png)
 
-![](../assets/do-not-localize/glass.png) [Läs mer om Campaign Control Panel](https://experienceleague.adobe.com/docs/control-panel/using/discover-control-panel/key-features.html){target=&quot;_blank&quot;}
+![](../assets/do-not-localize/glass.png) [Läs mer om Campaign Control Panel](https://experienceleague.adobe.com/docs/control-panel/using/discover-control-panel/key-features.html){target="_blank"}
 
 

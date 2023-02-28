@@ -7,8 +7,8 @@ level: Beginner
 exl-id: 176cc4f0-8827-4127-9f03-7d75ac8cf917
 source-git-commit: f381a2ec91b7179a51d91f9b7414ea39db03cd71
 workflow-type: tm+mt
-source-wordcount: '823'
-ht-degree: 1%
+source-wordcount: '817'
+ht-degree: 4%
 
 ---
 
@@ -27,7 +27,7 @@ Innan du börjar måste du:
 
 Från version 8.4 av Campaign Classic krävs installation av Microsoft Edge Webview 2 för alla konsolinstallationer.
 
-Webbvyn installeras som standard som en del av operativsystemet Windows 11. Om det inte redan finns på datorn uppmanas du att hämta det från Campaign Console Installer [Microsoft Developer website](http://www.adobe.com/go/acc-ms-webview2-runtime-download){target=&quot;_blank&quot;}. Observera att nedladdningslänken inte fungerar i webbläsaren Internet Explorer 11 eftersom Microsoft inte längre stöder det. Kontrollera att du använder en annan webbläsare för att komma åt länken.
+Webbvyn installeras som standard som en del av operativsystemet Windows 11. Om det inte redan finns på datorn uppmanas du att hämta det från Campaign Console Installer [Microsoft Developer website](http://www.adobe.com/go/acc-ms-webview2-runtime-download){target="_blank"}. Observera att nedladdningslänken inte fungerar i webbläsaren Internet Explorer 11 eftersom Microsoft inte längre stöder det. Kontrollera att du använder en annan webbläsare för att komma åt länken.
 
 ## Hämta och installera klientkonsolen{#download-ac-console}
 
@@ -35,7 +35,7 @@ När du använder Campaign för första gången, eller om du behöver uppgradera
 
 Det finns två alternativ:
 
-1. Som kampanjadministratör ansluter du till Adobe [Programvarudistribution](https://experience.adobe.com/#/downloads/content/software-distribution/en/campaign.html){target=&quot;_blank&quot;} och hämta installationsprogrammet för klientkonsolen. Sedan kan du installera den på den lokala datorn.
+1. Som kampanjadministratör ansluter du till Adobe [Programvarudistribution](https://experience.adobe.com/#/downloads/content/software-distribution/en/campaign.html){target="_blank"} och hämta installationsprogrammet för Client Console. Sedan kan du installera den på den lokala datorn.
 
 1. Som slutanvändare kan Adobe distribuera konsolen åt dig: När konsolen har uppdaterats uppmanas du att hämta den senaste versionen av klientkonsolen i ett popup-fönster.
 
@@ -102,7 +102,7 @@ Läs mer om användare och hur du definierar deras behörigheter i [det här avs
 
 Kampanjanvändare ansluter till Adobe Campaign-konsolen via sina Adobe ID via Adobe Identity Management System (IMS). De kan använda samma ID för alla Adobe-lösningar. Anslutningen sparas när du använder Adobe Campaign med andra lösningar.
 
-Läs mer om Adobe IMS i [den här sidan](https://helpx.adobe.com/enterprise/using/identity.html){target=&quot;_blank&quot;}.
+Läs mer om Adobe IMS i [den här sidan](https://helpx.adobe.com/enterprise/using/identity.html){target="_blank"}.
 
 ## Webbåtkomst{#web-access}
 

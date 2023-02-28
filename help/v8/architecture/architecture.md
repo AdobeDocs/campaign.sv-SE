@@ -1,14 +1,14 @@
 ---
 title: Kom igång med Campaign-arkitekturen
-description: Identifiera miljöer och grundläggande driftsättningsmöjligheter, inklusive hur man rapporterar om en kampanjmiljö.
+description: Identifiera miljöer och grundläggande distributionsmöjligheter, inklusive hur du rapporterar om en kampanjmiljö.
 feature: Overview
 role: Data Engineer
 level: Beginner
 exl-id: 562b24c3-6bea-447f-b74c-187ab77ae78f
 source-git-commit: 507f30d16eecf5400ee88a4d29913e4cdaca9cba
 workflow-type: tm+mt
-source-wordcount: '706'
-ht-degree: 0%
+source-wordcount: '702'
+ht-degree: 1%
 
 ---
 
@@ -26,7 +26,7 @@ Det finns två typer av miljöer:
 
 Du kan exportera och importera paket från en miljö till en annan.
 
-![](../assets/do-not-localize/book.png) Läs mer om paket i [Campaign Classic v7-dokumentation](https://experienceleague.adobe.com/docs/campaign-classic/using/getting-started/administration-basics/working-with-data-packages.html){target=&quot;_blank&quot;}
+![](../assets/do-not-localize/book.png) Läs mer om paket i [Campaign Classic v7-dokumentation](https://experienceleague.adobe.com/docs/campaign-classic/using/getting-started/administration-basics/working-with-data-packages.html){target="_blank"}
 
 ## Distributionsmodeller{#ac-deployment}
 
@@ -74,4 +74,4 @@ Med den sessionToken som tillhandahålls av körningsinstansen som svar på ovan
 
 * Flera körningsinstanser I en arkitektur med flera celler och flera körningsinstanser bakom en belastningsutjämnare, går den inloggningsmetod som anropas av det externa programmet igenom belastningsutjämnaren: Därför kan ingen tokenbaserad autentisering användas. En användar-/lösenordsbaserad autentisering krävs.
 
-![](../assets/do-not-localize/book.png) Läs mer om Transactional messaging-händelser i [Campaign Classic v7-dokumentation](https://experienceleague.adobe.com/docs/campaign-classic/using/transactional-messaging/processing/event-description.html#about-transactional-messaging-datamodel){target=&quot;_blank&quot;}
+![](../assets/do-not-localize/book.png) Läs mer om Transactional messaging-händelser i [Campaign Classic v7-dokumentation](https://experienceleague.adobe.com/docs/campaign-classic/using/transactional-messaging/processing/event-description.html#about-transactional-messaging-datamodel){target="_blank"}

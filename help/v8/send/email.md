@@ -1,6 +1,6 @@
 ---
 title: Skicka e-post med Adobe Campaign
-description: Kom igång med e-post i Adobe Campaign. Skicka personaliserade e-postmeddelanden till en målgrupp.
+description: Kom igång med e-post i Adobe Campaign. Skicka personanpassade e-postmeddelanden till en målgrupp.
 feature: Email
 role: User
 level: Beginner
@@ -8,7 +8,7 @@ exl-id: 97dcd0e0-db5b-45a4-96af-817e49f6cb64
 source-git-commit: 6464e1121b907f44db9c0c3add28b54486ecf834
 workflow-type: tm+mt
 source-wordcount: '568'
-ht-degree: 2%
+ht-degree: 5%
 
 ---
 

@@ -7,7 +7,7 @@ level: Beginner, Intermediate
 exl-id: 09562b6c-3d3d-4808-a70b-202172867f46
 source-git-commit: a2c30979be786ce8374857eb270ba71ec0e1b2a3
 workflow-type: tm+mt
-source-wordcount: '1197'
+source-wordcount: '1191'
 ht-degree: 4%
 
 ---
@@ -38,11 +38,11 @@ Adobe Campaign innehåller processer och inställningar som gör att ni kan anv�
 
 * **Datainsamling**: Med Adobe Campaign kan ni samla in data, inklusive personuppgifter och känslig information. Det är därför viktigt att du får och hanterar samtycke från dina mottagare.
 
-   Läs mer i [Campaign Classic v7-dokumentation](https://experienceleague.adobe.com/docs/campaign-classic/using/getting-started/privacy/privacy-and-recommendations.html?lang=en#data-acquisition){target=&quot;_blank&quot;}
+   Läs mer i [Campaign Classic v7-dokumentation](https://experienceleague.adobe.com/docs/campaign-classic/using/getting-started/privacy/privacy-and-recommendations.html?lang=en#data-acquisition){target="_blank"}
 
 * **Användarens samtycke och datalagring**: måste du få användarens samtycke, skapa prenumerationsmekanismer för dubbel anmälan, underlätta avanmälan och konfigurera datalagring.
 
-   Läs mer i [Sekretessdokumentation för Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/getting-started/privacy/privacy-and-recommendations.html?lang=en#consent){target=&quot;_blank&quot;}
+   Läs mer i [Sekretessdokumentation för Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/getting-started/privacy/privacy-and-recommendations.html?lang=en#consent){target="_blank"}
 
 * **Sekretess- och dataskyddsbestämmelser**: referera till [det här avsnittet](privacy.md) om du vill ha information om sekretesskrav och hur dessa bestämmelser påverkar din organisation och Adobe Campaign.
 
@@ -87,7 +87,7 @@ Innan du börjar skicka meddelanden och skapa marknadsföringskampanjer måste d
 
    ![](../assets/do-not-localize/glass.png) Lär dig hur du konfigurerar en arbetsflödesmall i [den här sidan](https://experienceleague.adobe.com/docs/campaign/automation/workflows/introduction/build-a-workflow.html)
 
-   ![](../assets/do-not-localize/book.png) Läs mer om e-postmallar i [Campaign Classic v7-dokumentation](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/using-delivery-templates/about-templates.html){target=&quot;_blank&quot;}
+   ![](../assets/do-not-localize/book.png) Läs mer om e-postmallar i [Campaign Classic v7-dokumentation](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/using-delivery-templates/about-templates.html){target="_blank"}
 
 
 1. **Konfigurera typologiregler**

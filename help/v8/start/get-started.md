@@ -1,6 +1,6 @@
 ---
 title: Kom igång med Campaign v8
-description: Har du inte använt Adobe Campaign tidigare? Dokumentation om hur du får igång programmet och var du ska börja med gränssnittet.
+description: Ny på Adobe Campaign? Hitta dokumentation om hur du får igång din programvara och var du ska börja med gränssnittet.
 feature: Overview
 role: Admin, Developer, User
 level: Beginner
@@ -8,7 +8,7 @@ exl-id: 04b12907-3cb1-40f1-90b8-1524d84edf2d,e3e9b514-a69d-4650-b1b1-1b76b4f3d63
 source-git-commit: 507f30d16eecf5400ee88a4d29913e4cdaca9cba
 workflow-type: tm+mt
 source-wordcount: '867'
-ht-degree: 39%
+ht-degree: 41%
 
 ---
 
