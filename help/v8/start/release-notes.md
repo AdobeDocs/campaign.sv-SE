@@ -6,9 +6,9 @@ role: Admin, Developer, User
 level: Beginner, Intermediate, Experienced
 hidefromtoc: false
 exl-id: 7cf8111d-9f3a-46a4-813a-d4e43a1d1471
-source-git-commit: e7f4982a9b13fe5413b6cce0a1cc58e2b3a6afa4
+source-git-commit: 55711ea42b9cc0be70e875e1544780b6983af98b
 workflow-type: tm+mt
-source-wordcount: '454'
+source-wordcount: '519'
 ht-degree: 32%
 
 ---
@@ -16,6 +16,23 @@ ht-degree: 32%
 # Senaste versionen{#latest-release}
 
 Den här sidan listar nya funktioner, förbättringar och korrigeringar som kommer med den **senaste versionen av Campaign v8**.
+
+## Version 8.4.4 {#release-8-4-4}
+
+>[!CAUTION]
+>
+> Uppgradering av klientkonsolen är obligatorisk. Lär dig hur du uppgraderar din klientkonsol på den här [sidan](../start/connect.md#download-ac-console).
+
+_8 mars 2023_
+
+**Säkerhetsförbättring**
+
+* För att förbättra säkerheten har Tomcat uppdaterats från version 8.5.81 till 8.5.85. (NEO-50530)
+
+**Korrigeringar**
+
+* Ett problem som kunde förhindra dig från att rulla i dialogrutan har korrigerats **Redigera** -fliken i Digital Content Editor (DCE). (NEO-54474)
+* Ett fel som kan leda till att webbservern kraschar har åtgärdats under replikeringen. (NEO-53670)
 
 ## Version 8.4.3 {#release-8-4-3}
 
