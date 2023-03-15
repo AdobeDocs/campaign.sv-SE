@@ -5,16 +5,16 @@ feature: Client Console
 role: User
 level: Beginner
 exl-id: 176cc4f0-8827-4127-9f03-7d75ac8cf917
-source-git-commit: 2ec240b139394ce8f54a5835a4fa7bd377d226eb
+source-git-commit: 445e62c290466003886f2dc49386d0c1edb80eeb
 workflow-type: tm+mt
-source-wordcount: '954'
-ht-degree: 3%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
 # Anslut till Adobe Campaign v8{#gs-ac-connect}
 
-Du måste installera Campaign Client Console för att kunna ansluta till dina Campaign-programservrar.
+Om du vill börja arbeta med Campaign måste du installera och konfigurera klientkonsolen.
 
 Klientkonsolen är ett inbyggt program som kommunicerar med Adobe Campaign-programservern via standardInternetprotokoll, till exempel SOAP och HTTP. Campaign Client-konsolen centraliserar alla funktioner och inställningar och kräver minimal bandbredd eftersom den är beroende av ett lokalt cacheminne. Kampanjklientkonsolen är utformad för enkel driftsättning och kan distribueras från en webbläsare, uppdateras automatiskt och kräver ingen specifik nätverkskonfiguration eftersom den bara genererar HTTP(S)-trafik.
 
@@ -22,7 +22,7 @@ Innan du börjar måste du:
 
 * Kontrollera system- och verktygskompatibiliteten med Adobe Campaign i [Kompatibilitetsmatris](compatibility-matrix.md)
 * Hämta webbadressen till Campaign-servern
-* Skapa din Adobe ID eller hämta dina användaruppgifter från ditt företag
+* Skapa din Adobe ID eller hämta inloggningsuppgifter från ditt företag
 * Installera Microsoft Edge Webview2-miljön på datorn. [Läs mer](#webview)
 
 ## Installera klientkonsolen{#download-ac-console}
@@ -31,7 +31,7 @@ Innan du börjar måste du:
 
 Från version 8.4 av Campaign Classic krävs installation av Microsoft Edge Webview 2 för alla installationer av klientkonsolen.
 
-Webbvyn installeras som standard som en del av operativsystemet Windows 11. Om det inte redan finns på datorn uppmanas du att hämta det från Campaign Console Installer [Microsoft Developer website](http://www.adobe.com/go/acc-ms-webview2-runtime-download){target="_blank"}. Observera att nedladdningslänken inte fungerar i webbläsaren Internet Explorer 11 eftersom Microsoft inte längre stöder det. Kontrollera att du använder en annan webbläsare för att komma åt länken.
+Webbvyn installeras som standard som en del av operativsystemet Windows 11. Om det inte redan finns på datorn uppmanas du att hämta det från installationsprogrammet för Campaign Client Console [Microsoft Developer website](http://www.adobe.com/go/acc-ms-webview2-runtime-download){target="_blank"}. Observera att nedladdningslänken inte fungerar i webbläsaren Internet Explorer 11 eftersom Microsoft inte längre stöder det. Kontrollera att du använder en annan webbläsare för att komma åt länken.
 
 ### Ladda ned konsolen{#install-ac-console}
 
@@ -49,11 +49,9 @@ Observera att du inte kan ändra klientkonsolens språk när den har installerat
 
 ## Skapa din anslutning{#create-your-connection}
 
-När klientkonsolen har installerats nyligen följer du stegen nedan för att skapa anslutningen till programservern:
+När klientkonsolen har installerats följer du stegen nedan för att skapa anslutningen till programservern:
 
-1. Starta konsolen från Windows **[!UICONTROL Start]** -menyn på **Adobe Campaign** programgrupp.
-
-1. Klicka på länken i det övre högra hörnet av inloggningsfälten för att komma åt fönstret för anslutningskonfiguration.
+1. Starta konsolen och bläddra genom länken i det högra hörnet för att komma åt skärmen för anslutningskonfiguration.
 
 1. Klicka **[!UICONTROL Add > Connection]** och ange etiketten och URL:en för Adobe Campaign-programservern.
 
@@ -77,9 +75,7 @@ Kampanjanvändare ansluter till Adobe Campaign-konsolen via sina Adobe ID via Ad
 
 Så här loggar du in på en instans:
 
-1. Starta konsolen från Windows **[!UICONTROL Start]** -menyn på **Adobe Campaign** programgrupp.
-
-1. Klicka på länken i det övre högra hörnet av inloggningsfälten för att komma åt fönstret för anslutningskonfiguration.
+1. Starta konsolen och bläddra genom länken i det högra hörnet för att komma åt skärmen för anslutningskonfiguration.
 
    ![](assets/connectToCampaign.png)
 
@@ -87,13 +83,13 @@ Så här loggar du in på en instans:
 
 1. Klicka på **[!UICONTROL Ok]**.
 
-1. Du kan sedan logga in på Campaign med [din Adobe ID](#connect-ims).
+Du kan sedan logga in på Campaign med [din Adobe ID](#connect-ims).
 
-   ![](assets/adobeID.png)
+![](assets/adobeID.png)
 
 >[!NOTE]
 >
->För kampanjversioner med klassisk version 8.4 kan Adobe Campaign-klientkonsolen begära proxyautentiseringsuppgifter två gånger under proxyautentiseringen. Detta beror på att Microsoft Edge Webview2 inte sparar proxyautentiseringsuppgifter i cache-/lösenordsarkivet, till skillnad från Internet Explorer.
+>Eftersom Microsoft Edge Webview2 inte sparar proxyautentiseringsuppgifter kan konsolen be dig autentisera två gånger vid den första anslutningen.
 
 ## Uppgradera din klientkonsol{#upgrade-ac-console}
 
@@ -103,7 +99,7 @@ Som användare av hanterade Cloud Services distribuerar Adobe klientkonsolen åt
 
 >[!CAUTION]
 >
->Adobe rekommenderar att du låter alternativet vara kvar **[!UICONTROL No longer ask this question]** avmarkerat för att se till att alla användare får en varning när en ny version av konsolen är tillgänglig. Om det här alternativet väljs informeras användaren inte om nya tillgängliga versioner.
+>Adobe rekommenderar att du låter alternativet vara kvar **[!UICONTROL No longer ask this question]** avmarkerat för att säkerställa att du får en varning när en ny version av konsolen är tillgänglig. Om det här alternativet väljs informeras användaren inte om att en Console-uppgradering krävs.
 
 
 ## Bevilja åtkomst för användare{#grant-access}
