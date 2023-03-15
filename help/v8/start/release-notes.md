@@ -6,10 +6,10 @@ role: Admin, Developer, User
 level: Beginner, Intermediate, Experienced
 hidefromtoc: false
 exl-id: 7cf8111d-9f3a-46a4-813a-d4e43a1d1471
-source-git-commit: 55711ea42b9cc0be70e875e1544780b6983af98b
+source-git-commit: 2ec240b139394ce8f54a5835a4fa7bd377d226eb
 workflow-type: tm+mt
-source-wordcount: '519'
-ht-degree: 32%
+source-wordcount: '522'
+ht-degree: 29%
 
 ---
 
@@ -18,10 +18,6 @@ ht-degree: 32%
 Den här sidan listar nya funktioner, förbättringar och korrigeringar som kommer med den **senaste versionen av Campaign v8**.
 
 ## Version 8.4.4 {#release-8-4-4}
-
->[!CAUTION]
->
-> Uppgradering av klientkonsolen är obligatorisk. Lär dig hur du uppgraderar din klientkonsol på den här [sidan](../start/connect.md#download-ac-console).
 
 _8 mars 2023_
 
@@ -34,11 +30,14 @@ _8 mars 2023_
 * Ett problem som kunde förhindra dig från att rulla i dialogrutan har korrigerats **Redigera** -fliken i Digital Content Editor (DCE). (NEO-54474)
 * Ett fel som kan leda till att webbservern kraschar har åtgärdats under replikeringen. (NEO-53670)
 
-## Version 8.4.3 {#release-8-4-3}
 
 >[!CAUTION]
 >
-> Uppgradering av klientkonsolen är obligatorisk. Lär dig hur du uppgraderar din klientkonsol på den här [sidan](../start/connect.md#download-ac-console).
+> Uppgradering av klientkonsolen är obligatorisk. Lär dig hur du uppgraderar din klientkonsol på den här [sidan](../start/connect.md#upgrade-ac-console).
+
+
+## Version 8.4.3 {#release-8-4-3}
+
 
 _27 januari 2023_
 
@@ -67,3 +66,6 @@ _27 januari 2023_
 * Hanteringen av spårnings-URL:er har förbättrats i arbetsflöden med flera leveranser för att förbättra prestandan. (NEO-50894) <!--OKKKK-->
 * Korrigerade ett problem som kunde göra så att replikering av scheman som använder Xtkfolder misslyckades. (NEO-46787) <!--OKKKK-->
 * Korrigerat en felorsak som kan göra att den anpassade kolumnen&quot;lastModified&quot; tas bort i NmsSubscription-tabellen. (NEO-48402)
+
+
+**Uppgradering av klientkonsolen är obligatoriskt för den här versionen** - Lär dig hur du uppgraderar din klientkonsol i det här [page](../start/connect.md#upgrade-ac-console).

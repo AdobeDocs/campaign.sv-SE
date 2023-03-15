@@ -5,9 +5,9 @@ feature: Overview
 role: Admin, Developer, User
 level: Beginner, Intermediate, Experienced
 exl-id: 7db32bd8-a088-405f-9633-2968c28b13b0
-source-git-commit: 46be0379610a6a4a3491d49ce096c64270ed8016
+source-git-commit: 2ec240b139394ce8f54a5835a4fa7bd377d226eb
 workflow-type: tm+mt
-source-wordcount: '710'
+source-wordcount: '660'
 ht-degree: 0%
 
 ---
@@ -30,23 +30,15 @@ Du kan få åtkomst till Adobe Campaign via en Rich-klient, en Thin-klient eller
 
 * Rich Client
 
-   Campaign Rich Client är ett program som kan kommunicera med Adobe Campaign-programservern via standardprotokoll för Internet, till exempel SOAP och HTTP.
-
-   Campaign Client-konsolen centraliserar alla funktioner och inställningar och kräver minimal bandbredd eftersom den är beroende av ett lokalt cacheminne. Kampanjklientkonsolen är utformad för enkel driftsättning och kan distribueras från en webbläsare, uppdateras automatiskt och kräver ingen specifik nätverkskonfiguration eftersom den bara genererar HTTP(S)-trafik.
-
-   ![](../assets/do-not-localize/glass.png) [Läs mer om Campaign Client Console](../start/connect.md).
+   Campaign Rich Client är ett program som kan kommunicera med Adobe Campaign-programservern via standardprotokoll för Internet, till exempel SOAP och HTTP. [Läs mer om Campaign Client Console](../start/connect.md).
 
 * Tunn klient
 
-   Med Adobe Campaign webbåtkomstfunktioner får du tillgång till en delmängd av Campaign-funktionerna via en webbläsare och ett HTML-användargränssnitt. Använd det här webbgränssnittet för att få åtkomst till rapporter, kontrollera och validera meddelanden, få åtkomst till kontrollpaneler med mera.
-
-   ![](../assets/do-not-localize/glass.png) [Läs mer om Campaign Web Access](../start/connect.md).
+   Med Adobe Campaign webbåtkomstfunktioner får du tillgång till en delmängd av Campaign-funktionerna via en webbläsare och ett HTML-användargränssnitt. Använd det här webbgränssnittet för att få åtkomst till rapporter, kontrollera och validera meddelanden, få åtkomst till kontrollpaneler med mera.  [Läs mer om Campaign Web Access](../start/connect.md).
 
 * Externa program med API:er
 
-   I vissa fall kan systemet anropas från externa program med hjälp av webbtjänsternas API:er som exponeras via SOAP-protokollet.
-
-   ![](../assets/do-not-localize/glass.png) [Läs mer om Campaign-API:er](../dev/api.md).
+   I vissa fall kan systemet anropas från externa program med hjälp av webbtjänsternas API:er som exponeras via SOAP-protokollet. [Läs mer om Campaign-API:er](../dev/api.md).
 
 ### Beständigt lager{#persistance-layer}
 
