@@ -6,10 +6,10 @@ role: Admin, Developer, User
 level: Beginner, Intermediate, Experienced
 hidefromtoc: false
 exl-id: 7cf8111d-9f3a-46a4-813a-d4e43a1d1471
-source-git-commit: 2ec240b139394ce8f54a5835a4fa7bd377d226eb
+source-git-commit: 814f7c81aa4f154fdf289effc82b8d02bdd9b4c6
 workflow-type: tm+mt
-source-wordcount: '522'
-ht-degree: 29%
+source-wordcount: '519'
+ht-degree: 32%
 
 ---
 
@@ -68,4 +68,6 @@ _27 januari 2023_
 * Korrigerat en felorsak som kan göra att den anpassade kolumnen&quot;lastModified&quot; tas bort i NmsSubscription-tabellen. (NEO-48402)
 
 
-**Uppgradering av klientkonsolen är obligatoriskt för den här versionen** - Lär dig hur du uppgraderar din klientkonsol i det här [page](../start/connect.md#upgrade-ac-console).
+>[!CAUTION]
+>
+> Uppgradering av klientkonsolen är obligatorisk. Lär dig hur du uppgraderar din klientkonsol på den här [sidan](../start/connect.md#upgrade-ac-console).
