@@ -4,7 +4,7 @@ description: Lär dig hur du skapar en länk till spegelsidan
 feature: Email
 role: User
 level: Beginner
-source-git-commit: edb099b3e882d857752af76798012ccd1c5a99be
+source-git-commit: 58cf4739c27dfed63cfbb0ca6c85121fe5336e8d
 workflow-type: tm+mt
 source-wordcount: '365'
 ht-degree: 0%
@@ -18,6 +18,11 @@ Spegelsidan är en onlineversion av ditt e-postmeddelande.
 De flesta e-postklienter återger bilder utan problem, men vissa förinställningar kan undvika att visa bilder av säkerhetsskäl. Användare kan bläddra till den spegelsida som finns i ett e-postmeddelande, t.ex. om de får problem med återgivningen eller om det finns skadade bilder när de försöker visa dem i sin inkorg. Vi rekommenderar även att du tillhandahåller en onlineversion av tillgänglighetsskäl eller för att uppmuntra social delning.
 
 Spegelsidan som genererats av Adobe Campaign innehåller alla personaliseringsdata.
+
+
+![](assets/mirror-page-link.png)
+
+
 
 ## Lägg till en länk till spegelsidan{#link-to-mirror-page}
 
