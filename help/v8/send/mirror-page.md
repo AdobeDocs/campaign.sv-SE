@@ -4,9 +4,9 @@ description: Lär dig hur du skapar en länk till spegelsidan
 feature: Email
 role: User
 level: Beginner
-source-git-commit: 58cf4739c27dfed63cfbb0ca6c85121fe5336e8d
+source-git-commit: 2c35b169725b5300940260124a4b559eb44ffe43
 workflow-type: tm+mt
-source-wordcount: '365'
+source-wordcount: '381'
 ht-degree: 0%
 
 ---
@@ -19,9 +19,7 @@ De flesta e-postklienter återger bilder utan problem, men vissa förinställnin
 
 Spegelsidan som genererats av Adobe Campaign innehåller alla personaliseringsdata.
 
-
 ![](assets/mirror-page-link.png)
-
 
 
 ## Lägg till en länk till spegelsidan{#link-to-mirror-page}
@@ -29,6 +27,8 @@ Spegelsidan som genererats av Adobe Campaign innehåller alla personaliseringsda
 Det är bra att infoga en länk till spegelsidan. Den här länken kan till exempel vara Visa det här e-postmeddelandet i webbläsaren och finns ofta i sidhuvudet eller sidfoten i ett e-postmeddelande.
 
 I Adobe Campaign kan du infoga en länk till spegelsidan i e-postinnehållet med den dedikerade **personaliseringsblock**. Spegelsidan genereras som standard bara om länken infogas i innehållet i meddelandet.
+
+Den inbyggda **Länk till spegelsida** anpassningsblocket infogar följande kod i ditt e-postinnehåll: `<%@ include view='MirrorPage' %>`.
 
 <!--For more on personalization blocks insertion, refer to [Personalization blocks](personalization-blocks.md).-->
 
