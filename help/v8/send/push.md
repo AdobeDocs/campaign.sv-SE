@@ -5,14 +5,14 @@ feature: Push
 role: Data Engineer
 level: Beginner
 exl-id: f04c6e0c-f2b9-496a-9697-04ef4c3411ee
-source-git-commit: c44fb2de4ed0e1661801313ae0430ba9d19542f0
+source-git-commit: d8ceefe1dd56aecb810878d99395ac900f889c2e
 workflow-type: tm+mt
-source-wordcount: '1093'
-ht-degree: 2%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
-# Skapa och skicka push-meddelanden
+# Skapa och skicka push-meddelanden{#push-notifications-create}
 
 Med mobilappsleveranser kan du skicka meddelanden till iOS- och Android-system.
 
@@ -23,34 +23,27 @@ Om du vill skicka push-meddelanden i Adobe Campaign måste du:
 1. Lägg till iOS- och Android-versionerna av programmet i den här tjänsten.
 1. Skapa en leverans för både iOS och Android.
 
-![](../assets/do-not-localize/book.png) Lär dig hur du kommer igång med mobilappen i [Campaign Classic v7-dokumentation](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/sending-push-notifications/about-mobile-app-channel.html){target=&quot;_blank&quot;}
+![](../assets/do-not-localize/book.png) Lär dig hur du kommer igång med mobilappen i [Campaign Classic v7-dokumentation](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/sending-push-notifications/about-mobile-app-channel.html){target="_blank"}
 
-## Integrera Campaign SDK
+## Integrera SDK {#push-sdk}
 
-Campaign SDK underlättar integreringen av mobilapplikationer i Adobe Campaign.
+Du kan använda Adobe Experience Platform Mobile SDK genom att konfigurera Adobe Campaign-tillägget i användargränssnittet för datainsamling. Adobe Experience Platform Mobile SDK hjälper er att driva lösningar och tjänster från Adobe Experience Cloud i era mobilappar. SDK-konfigurationen hanteras via användargränssnittet för datainsamling för flexibel konfiguration och utbyggbara, regelbaserade integreringar. [Läs mer i Adobe Developer-dokumentationen](https://developer.adobe.com/client-sdks/documentation/adobe-campaign-classic){target="_blank"}.
 
-Kompatibla SDK-versioner visas i [Matris för kampanjkompatibilitet](../start/compatibility-matrix.md#MobileSDK).
+Lär dig konfigurera och installera Adobe Experience Platform Mobile SDK [i den här videon](https://experienceleague.adobe.com/docs/campaign-classic-learn/tutorials/sending-messages/push-channel/configure-push-using-aep-mobile-sdk.html?lang=en){target="_blank"}.
 
-![](../assets/do-not-localize/glass.png) Lär dig hur du integrerar Campaign Android och iOS SDK med appen i [det här avsnittet](../config/push-config.md)
+Ni kan också integrera Campaign SDK för att underlätta integreringen av era mobilapplikationer i Adobe Campaign-plattformen. Kompatibla SDK-versioner visas i [Matris för kampanjkompatibilitet](../start/compatibility-matrix.md#MobileSDK).
 
-<!--
-### Configure Campaign Extension in Launch
+Lär dig hur du integrerar Campaign Android och iOS SDK med appen i [den här sidan](../config/push-config.md)
 
-You can integrate Adobe Experience Platorm Launch SDK with Campaign, by leveraging Campaign Classic extension.
-
-![](../assets/do-not-localize/book.png) Learn more in [Adobe Mobile SDK documentation](https://aep-sdks.gitbook.io/docs/using-mobile-extensions/adobe-campaignclassic){target="_blank"}
-
--->
-
-## Konfigurera appinställningarna i Campaign
+## Konfigurera appinställningarna i Campaign{#push-config}
 
 Du måste definiera inställningarna för dina iOS- och Android-appar i Adobe Campaign.
 
-![](../assets/do-not-localize/book.png) Riktlinjer för konfiguration av iOS finns i [Campaign Classic v7-dokumentation](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/sending-push-notifications/configure-the-mobile-app/configuring-the-mobile-application.html?lang=en#sending-messages){target=&quot;_blank&quot;}
+![](../assets/do-not-localize/book.png) Riktlinjer för konfiguration av iOS finns i [Campaign Classic v7-dokumentation](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/sending-push-notifications/configure-the-mobile-app/configuring-the-mobile-application.html?lang=en#sending-messages){target="_blank"}
 
-![](../assets/do-not-localize/book.png) Riktlinjer för konfiguration av Android finns i [Campaign Classic v7-dokumentation](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/sending-push-notifications/configure-the-mobile-app/configuring-the-mobile-application-android.html?lang=en#sending-messages){target=&quot;_blank&quot;}
+![](../assets/do-not-localize/book.png) Riktlinjer för konfiguration av Android finns i [Campaign Classic v7-dokumentation](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/sending-push-notifications/configure-the-mobile-app/configuring-the-mobile-application-android.html?lang=en#sending-messages){target="_blank"}
 
-## Skapa ditt första push-meddelande
+## Skapa ditt första push-meddelande{#push-create}
 
 I det här avsnittet beskrivs de element som är specifika för leveransen av iOS- och Android-meddelanden.
 
@@ -62,7 +55,7 @@ Bläddra till **[!UICONTROL Campaigns]** flik, klicka **[!UICONTROL Deliveries]*
 
 ![](assets/delivery_step_1.png)
 
-![](../assets/do-not-localize/book.png) Global information om hur du skapar en leverans finns i [Campaign Classic v7-dokumentation](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/key-steps-when-creating-a-delivery/steps-about-delivery-creation-steps.html?lang=en#sending-messages){target=&quot;_blank&quot;}
+![](../assets/do-not-localize/book.png) Global information om hur du skapar en leverans finns i [Campaign Classic v7-dokumentation](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/key-steps-when-creating-a-delivery/steps-about-delivery-creation-steps.html?lang=en#sending-messages){target="_blank"}
 
 ### Skicka meddelanden på iOS {#send-notifications-on-ios}
 
@@ -114,12 +107,12 @@ Bläddra till **[!UICONTROL Campaigns]** flik, klicka **[!UICONTROL Deliveries]*
       > 
       >Ljud måste inkluderas i programmet och definieras när tjänsten skapas.
       >
-      >Riktlinjer för konfiguration av iOS finns i [Campaign Classic v7-dokumentation](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/sending-push-notifications/configure-the-mobile-app/configuring-the-mobile-application.html){target=&quot;_blank&quot;}.
+      >Riktlinjer för konfiguration av iOS finns i [Campaign Classic v7-dokumentation](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/sending-push-notifications/configure-the-mobile-app/configuring-the-mobile-application.html){target="_blank"}.
    ![](assets/push_ios_5.png)
 
 1. Från **[!UICONTROL Application variables]** -fliken, **[!UICONTROL Application variables]** läggs till automatiskt. De gör att du kan definiera meddelandebeteende, till exempel kan du konfigurera en specifik programskärm som ska visas när användaren aktiverar meddelandet.
 
-   Mer information finns i [Campaign Classic v7-dokumentation](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/sending-push-notifications/configure-the-mobile-app/configuring-the-mobile-application.html){target=&quot;_blank&quot;}.
+   Mer information finns i [Campaign Classic v7-dokumentation](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/sending-push-notifications/configure-the-mobile-app/configuring-the-mobile-application.html){target="_blank"}.
 
 1. Från **[!UICONTROL Advanced]** kan du redigera följande allmänna alternativ:
 
@@ -185,15 +178,15 @@ Bläddra till **[!UICONTROL Campaigns]** flik, klicka **[!UICONTROL Deliveries]*
 Använd samma process som för e-postleveranser om du vill skicka ett korrektur och den slutliga leveransen. Läs mer i Campaign Classic v7-dokumentationen:
 
 * Validera en leverans och skicka korrektur
-   ![](../assets/do-not-localize/book.png) [Lär dig viktiga steg för att validera en leverans](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/key-steps-when-creating-a-delivery/steps-validating-the-delivery.html){target=&quot;_blank&quot;}
+   ![](../assets/do-not-localize/book.png) [Lär dig viktiga steg för att validera en leverans](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/key-steps-when-creating-a-delivery/steps-validating-the-delivery.html){target="_blank"}
 
 * Bekräfta och skicka leveransen
-   ![](../assets/do-not-localize/book.png) [Lär dig viktiga steg för att skicka en leverans](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/key-steps-when-creating-a-delivery/steps-sending-the-delivery.html){target=&quot;_blank&quot;}
+   ![](../assets/do-not-localize/book.png) [Lär dig viktiga steg för att skicka en leverans](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/key-steps-when-creating-a-delivery/steps-sending-the-delivery.html){target="_blank"}
 
 När du har skickat meddelanden kan du övervaka och spåra dina leveranser. Läs mer i Campaign Classic v7-dokumentationen:
 
 * Kantlinjer för push-meddelanden
-   ![](../assets/do-not-localize/book.png) [Läs mer om karantän för push-meddelanden](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/monitoring-deliveries/understanding-quarantine-management.html#push-notification-quarantines){target=&quot;_blank&quot;}
+   ![](../assets/do-not-localize/book.png) [Läs mer om karantän för push-meddelanden](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/monitoring-deliveries/understanding-quarantine-management.html#push-notification-quarantines){target="_blank"}
 
 * Felsökning
-   ![](../assets/do-not-localize/book.png) [Lär dig hur du felsöker push-meddelanden](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/sending-push-notifications/troubleshooting.html){target=&quot;_blank&quot;}
+   ![](../assets/do-not-localize/book.png) [Lär dig hur du felsöker push-meddelanden](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/sending-push-notifications/troubleshooting.html){target="_blank"}

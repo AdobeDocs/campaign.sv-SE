@@ -1,17 +1,19 @@
 ---
 title: Lägg till en länk till spegelsidan
-description: Lär dig hur du skapar en länk till spegelsidan
+description: Lär dig hur du lägger till och hanterar länken till spegelsidan
 feature: Email
 role: User
 level: Beginner
-source-git-commit: 2c35b169725b5300940260124a4b559eb44ffe43
+source-git-commit: d8ceefe1dd56aecb810878d99395ac900f889c2e
 workflow-type: tm+mt
-source-wordcount: '381'
+source-wordcount: '373'
 ht-degree: 0%
 
 ---
 
-# Om sidan för e-postspegling{#mirror-page}
+# Länka till spegelsidan{#mirror-page}
+
+## Om spegelsidan{#about-mirror-page}
 
 Spegelsidan är en onlineversion av ditt e-postmeddelande.
 
@@ -24,11 +26,9 @@ Spegelsidan som genererats av Adobe Campaign innehåller alla personaliseringsda
 
 ## Lägg till en länk till spegelsidan{#link-to-mirror-page}
 
-Det är bra att infoga en länk till spegelsidan. Den här länken kan till exempel vara Visa det här e-postmeddelandet i webbläsaren och finns ofta i sidhuvudet eller sidfoten i ett e-postmeddelande.
+Det är bra att infoga en länk till spegelsidan. Den här länken kan till exempel vara Visa det här e-postmeddelandet i webbläsaren eller Läs det här online. Den finns ofta i e-postmeddelandets sidhuvud eller sidfot.
 
-I Adobe Campaign kan du infoga en länk till spegelsidan i e-postinnehållet med den dedikerade **personaliseringsblock**. Spegelsidan genereras som standard bara om länken infogas i innehållet i meddelandet.
-
-Den inbyggda **Länk till spegelsida** anpassningsblocket infogar följande kod i ditt e-postinnehåll: `<%@ include view='MirrorPage' %>`.
+I Adobe Campaign kan du infoga en länk till spegelsidan i e-postinnehållet med den dedikerade **personaliseringsblock**. Den inbyggda **Länk till spegelsida** anpassningsblocket infogar följande kod i ditt e-postinnehåll: `<%@ include view='MirrorPage' %>`.
 
 <!--For more on personalization blocks insertion, refer to [Personalization blocks](personalization-blocks.md).-->
 
