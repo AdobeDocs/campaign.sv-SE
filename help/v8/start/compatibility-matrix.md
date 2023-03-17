@@ -5,10 +5,10 @@ feature: Overview
 role: Admin
 level: Beginner, Intermediate, Experienced
 exl-id: 4be3a6dc-0c61-4534-b9dd-6c99c8a037a9,870a336f-94ac-4171-891b-67614feef6ef,bebdd930-c7f6-4629-a489-3c704b33f058,d493e613-eb61-43b1-9c6d-1bd881af0734
-source-git-commit: 2ec240b139394ce8f54a5835a4fa7bd377d226eb
+source-git-commit: c68218951f721dc31e70619c97b90452b72f9563
 workflow-type: tm+mt
-source-wordcount: '360'
-ht-degree: 33%
+source-wordcount: '389'
+ht-degree: 31%
 
 ---
 
@@ -56,6 +56,10 @@ Externa databaser som är kompatibla med Adobe Campaign FDA-modulen (Federated D
 ## Mobil-SDK{#MobileSDK}
 
 Du kan använda Campaign för att skicka [push-meddelanden](../send/push.md) i de operativsystem som anges nedan med tillhörande mobil-SDK.
+
+Du kan också använda Adobe Experience Platform Mobile SDK genom att konfigurera Adobe Campaign-tillägget i användargränssnittet för datainsamling.
+
+Du kan också använda Campaign SDK:er som listas nedan:
 
 * **Android** 12, 9.0, 8.x, 7.x, med Campaign Android SDK build 1.1.1.
 * **Apple iOS** 9 - 16 med Campaign iOS SDK build 1.0.26, kompatibelt med 32- och 64-bitarsversioner. Apple iOS 16 stöds från och med Campaign v8.4.
