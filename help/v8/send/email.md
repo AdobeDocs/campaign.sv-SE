@@ -5,7 +5,7 @@ feature: Email
 role: User
 level: Beginner
 exl-id: 97dcd0e0-db5b-45a4-96af-817e49f6cb64
-source-git-commit: 6464e1121b907f44db9c0c3add28b54486ecf834
+source-git-commit: bd109f9d320b3009ab0d9414291d397b331373de
 workflow-type: tm+mt
 source-wordcount: '568'
 ht-degree: 5%
@@ -69,7 +69,7 @@ I följande exempel får du lära dig hur du utformar en e-postleverans i Adobe 
 
    * Lägga till en spegelsida
 
-      Om du vill att mottagarna ska kunna se ditt leveransinnehåll i en webbläsare lägger du till en länk på meddelandets spegelsida.
+      Lägg till en länk till [spegelsida](../send/mirror-page.md) av ditt meddelande.
 
       Placera markören där du vill infoga länken, klicka på den sista ikonen i verktygsfältet och klicka sedan på **[!UICONTROL Include]** och markera **[!UICONTROL link to mirror page]**.
    När innehållet är klart klickar du på **Spara**: den visas nu i din lista över leveranser i **[!UICONTROL Campaigns > Deliveries]** -fliken. Din första e-postleverans är klar. Nu måste ni definiera målgruppen, validera leveransen och skicka den.
