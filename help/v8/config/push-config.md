@@ -6,23 +6,25 @@ feature: Push
 role: Admin, Developer
 level: Intermediate, Experienced
 exl-id: 31c13d7e-55d1-4fbb-82e0-5779a17d65ac
-source-git-commit: 6464e1121b907f44db9c0c3add28b54486ecf834
+source-git-commit: 4a017eabf1330b04939aa4bd0602c371a0ee3208
 workflow-type: tm+mt
-source-wordcount: '1281'
+source-wordcount: '1311'
 ht-degree: 1%
 
 ---
 
 # Integrera Campaign SDK:er med er app {#integrate-campaign-sdk}
 
-Använd Campaign SDK:er för iOS och Android för att underlätta integreringen av mobilapplikationerna i Adobe Campaign.
+Ni kan använda Campaign SDK:er för iOS och Android för att underlätta integreringen av era mobilapplikationer i Adobe Campaign.
 
 Versioner som stöds av Android och iOS samt Campaign SDK-kompatibla versioner för Campaign v8 listas i [Kompatibilitetsmatris](../start/compatibility-matrix.md#MobileSDK).
 
+Som Campaign-administratör kan du hämta Kampanj-SDK:er från [Experience Cloud Software Distribution](https://experience.adobe.com/#/downloads/content/software-distribution/en/campaign.html). Mer information får du av [Adobe kundtjänst](https://helpx.adobe.com/se/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html).
+
+
 >[!NOTE]
 >
->Som Campaign-administratör kan du hämta Kampanj-SDK:er från [Experience Cloud Software Distribution](https://experience.adobe.com/#/downloads/content/software-distribution/en/campaign.html). Mer information får du av [Adobe kundtjänst](https://helpx.adobe.com/se/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html).
-
+>Du kan också använda Adobe Experience Platform Mobile SDK genom att konfigurera Adobe Campaign-tillägget i användargränssnittet för datainsamling. [Läs mer i dokumentationen för utvecklare](https://developer.adobe.com/client-sdks/documentation/adobe-campaign-classic){target="_blank"}.
 
 ## Deklarera integreringsinställningar {#declaring-integration-settings}
 
@@ -651,7 +653,7 @@ Lär dig hur du implementerar FCM i ditt program i [Google Documentation](https:
    | ACCRegisterDeviceStatusFailureUnknownUUID | Angivet UUID (integrationsnyckel) är okänt. | TOM |
    | ACCRegisterDeviceStatusFailureUnexpectedError | Ett oväntat fel returnerades till ACC-servern. | Felmeddelandet returnerades till ACC. |
 
-   {style=&quot;table-layout:auto&quot;}
+   {style="table-layout:auto"}
 
    **Neolane_SDKDelegate** protokoll och **registerDeviceStatus** Delegatdefinitionen är följande:
 
