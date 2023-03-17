@@ -4,9 +4,9 @@ user-guide-title: Campaign v8
 description: Dokumentation om Campaign v8
 breadcrumb-title: Översikt över Campaign
 title: Campaign v8 dokument
-source-git-commit: 366cf800a81ea9ab10fe5e3063f44e5214bda927
+source-git-commit: edb099b3e882d857752af76798012ccd1c5a99be
 workflow-type: tm+mt
-source-wordcount: '491'
+source-wordcount: '496'
 ht-degree: 26%
 
 ---
@@ -43,6 +43,7 @@ ht-degree: 26%
       + [Arbeta med leveransmallar](send/create-templates.md)
       + E-post {#emails}
          + [Designa och validera e-postmeddelanden](send/email.md)
+         + [Länka till spegelsidan](send/mirror-page.md)
          + [Skicka och övervaka e-post](send/send.md)
       + [SMS](send/sms.md)
       + [Push-meddelanden](send/push.md)

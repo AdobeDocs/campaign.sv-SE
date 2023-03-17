@@ -5,10 +5,11 @@ description: Lär dig hur du skapar och använder leveransmallar i Campaign
 feature: Email, Push, SMS, Direct Mail, Cross Channel Orchestration
 role: User
 level: Beginner
-source-git-commit: 1c0015a02ff950d9bf9d33aacebf899db9e580fa
+exl-id: 3a4de36e-ba24-49ec-8113-f32f12c8ecdd
+source-git-commit: edb099b3e882d857752af76798012ccd1c5a99be
 workflow-type: tm+mt
 source-wordcount: '699'
-ht-degree: 7%
+ht-degree: 6%
 
 ---
 
@@ -21,7 +22,7 @@ En mall kan systematiskt innehålla:
 * Typologier
 * Avsändare och svarsadresser
 * Grundläggande personaliseringsblock
-* Länkar till spegelsidor och för att ta bort prenumeration länkar
+* Länkar till [spegelsidor](../send/mirror-page.md) och prenumerationslänkar
 * Innehåll, företagslogotyp eller signatur
 * Andra leveransegenskaper, som resursgiltighet, återförsöksparametrar eller karantäninställningar.
 
@@ -85,7 +86,7 @@ Så här konfigurerar du en leveransmall från grunden:
 1. Från **Egenskaper** anpassar inställningarna.
 1. I **Allmänt** kan du bekräfta eller ändra de platser som du har valt på fliken **Körningsmapp**, **Mapp** och **Routning** nedrullningsbara menyer.
 1. Slutför **E-postparametrar** -kategori med ditt e-postämne och din målgrupp.
-1. Lägg till **HTML content** om du vill anpassa mallen kan du visa en länk för spegelsida och en länk för att avbryta prenumerationen.
+1. Lägg till **HTML content** om du vill anpassa mallen kan du visa en [länk för spegelsida](../send/mirror-page.md) och en länk för att avsluta prenumerationen.
 1. Välj **Förhandsgranska** -fliken. I **Testa personalisering** nedrullningsbar meny, välja **Mottagare** om du vill förhandsgranska mallen som den valda profilen.
 1. Klicka **Spara**. Mallen kan nu användas i en leverans.
 
@@ -141,4 +142,4 @@ I den här videon förklaras hur du distribuerar en mall för ad hoc-e-postlever
 
 >[!VIDEO](https://video.tv.adobe.com/v/338965?quality=12)
 
-Det finns fler instruktionsvideor för Campaign Classic [här](https://experienceleague.adobe.com/docs/campaign-classic-learn/tutorials/overview.html?lang=sv).
+Det finns ytterligare utbildningsvideor för Campaign [här](https://experienceleague.adobe.com/docs/campaign-learn/tutorials/getting-started/introduction-to-adobe-campaign.html){target="_blank"}.

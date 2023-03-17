@@ -3,10 +3,11 @@ product: campaign
 title: Målgrupper för marknadsföringskampanjer
 description: Lär dig definiera målgruppen för era marknadsföringskampanjer
 feature: Campaigns, Audiences
-source-git-commit: 72467caf94e652ede70c00f1ea413012fc4c7e1f
+exl-id: 70a63632-f66d-40f2-806d-bde89303936a
+source-git-commit: edb099b3e882d857752af76798012ccd1c5a99be
 workflow-type: tm+mt
-source-wordcount: '1458'
-ht-degree: 2%
+source-wordcount: '1459'
+ht-degree: 1%
 
 ---
 
@@ -241,4 +242,4 @@ I den här videon förklaras hur du skapar en kampanj och ett e-postmeddelande i
 
 >[!VIDEO](https://video.tv.adobe.com/v/25604?quality=12)
 
-Det finns ytterligare utbildningsvideor för Campaign [här](https://experienceleague.adobe.com/docs/campaign-classic-learn/tutorials/overview.html?lang=sv).
+Det finns ytterligare utbildningsvideor för Campaign [här](https://experienceleague.adobe.com/docs/campaign-learn/tutorials/getting-started/introduction-to-adobe-campaign.html){target="_blank"}.

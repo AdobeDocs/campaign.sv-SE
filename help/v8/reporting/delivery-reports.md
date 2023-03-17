@@ -2,13 +2,13 @@
 title: Inbyggda leveransrapporter från Adobe Campaign
 description: Inbyggda leveransrapporter från Adobe Campaign
 feature: Reporting
-source-git-commit: 60db4c2e8cd280845ddd0176bd10dc1b7edbb767
+exl-id: e9031d65-6e0e-49da-9990-7687d2a77591
+source-git-commit: edb099b3e882d857752af76798012ccd1c5a99be
 workflow-type: tm+mt
-source-wordcount: '1033'
+source-wordcount: '1031'
 ht-degree: 1%
 
 ---
-
 
 # Leveransrapporter {#delivery-reports}
 
@@ -62,7 +62,7 @@ I den här rapporten kombineras de viktigaste indikatorerna för att spåra mott
 * **[!UICONTROL Distinct opens for the population reached]** : Uppskattning av antalet målmottagare som har öppnat ett meddelande minst en gång. Klickningar på spårade URL:er beaktas eftersom e-postmeddelanden måste öppnas för att du ska kunna klicka på en länk.
 * **[!UICONTROL Sum of opens for the population reached]** : Uppskattning av det totala antalet öppningar av målmottagare.
 * **[!UICONTROL Clicks on opt-out link]** : Antal klick på länken för att avbryta prenumerationen.
-* **[!UICONTROL Clicks on the mirror page link]** : Antal klick på länken till spegelsidan. För att länken ska kunna beaktas måste den definieras som sådan i leveransguiden (spårade URL:er). <!--Refer to this [page](../../delivery/using/about-delivery-monitoring.md).-->
+* **[!UICONTROL Clicks on the mirror page link]** : Antal klick på länken till [spegelsida](../send/mirror-page.md). För att länken ska kunna beaktas måste den definieras som sådan i leveransguiden (spårade URL:er).
 * **[!UICONTROL Estimation of forwards]** : Uppskattning av antalet e-postmeddelanden som vidarebefordrats av målmottagarna. Det här värdet beräknas genom att subtrahera antalet distinkta personer och antalet distinkta mottagare som klickade i e-postmeddelandet.
 
    >[!NOTE]
@@ -83,7 +83,7 @@ Den här värdetabellen visar hur leveranser, öppningar, klickningar och rårea
 >
 >Domännamnen som visas i den här rapporten definieras i den specificerade lista som används på kubnivå. Om du vill ändra, lägga till eller ta bort standarddomäner redigerar du **[!UICONTROL Domains]** specificera lista och ändra värden och alias. The **[!UICONTROL Others]** -kategorin innehåller domännamn som inte tillhör något värde i den specificerade listan.
 >
->Lär dig hur du får åtkomst till och konfigurerar dina uppräkningar i [Campaign Classic v7-dokumentation](https://experienceleague.adobe.com/docs/campaign-classic/using/getting-started/administration-basics/managing-enumerations.html){target=&quot;_blank&quot;}.
+>Lär dig hur du får åtkomst till och konfigurerar dina uppräkningar i [Campaign Classic v7-dokumentation](https://experienceleague.adobe.com/docs/campaign-classic/using/getting-started/administration-basics/managing-enumerations.html){target="_blank"}.
 
 
 **[!UICONTROL 4. Generated click streams]**
@@ -203,5 +203,3 @@ Du kan visa kumulerade rapporter om leveranser. Välj de leveranser som ska jäm
 Om du vill välja icke-närliggande leveranser från listan håller du ned CTRL medan du gör ditt val.
 
 Om du vill välja leveranser som har sparats i en annan mapp klickar du på **[!UICONTROL Display sub-levels]** -ikonen i verktygsfältet. De visas sedan i samma lista.
-
-
