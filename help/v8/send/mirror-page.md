@@ -4,7 +4,7 @@ description: Lär dig hur du lägger till och hanterar länken till spegelsidan
 feature: Email
 role: User
 level: Beginner
-source-git-commit: 903224da4ab15bf4221d8769bfb19933f4cbf2b0
+source-git-commit: 124d46f1a4bec1bfd5c07210c931d7fa37db08a7
 workflow-type: tm+mt
 source-wordcount: '421'
 ht-degree: 0%
@@ -21,7 +21,7 @@ De flesta e-postklienter återger bilder utan problem, men vissa förinställnin
 
 Spegelsidan som genererats av Adobe Campaign innehåller alla personaliseringsdata.
 
-![exempel på spegellänk](assets/mirror-page-link.png){width="300" align="center"}
+![exempel på spegellänk](assets/mirror-page-link.png){width="500" align="center"}
 
 ## Lägg till en länk till spegelsidan{#link-to-mirror-page}
 
