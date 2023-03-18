@@ -4,9 +4,9 @@ description: Lär dig hur du lägger till och hanterar länken till spegelsidan
 feature: Email
 role: User
 level: Beginner
-source-git-commit: 124d46f1a4bec1bfd5c07210c931d7fa37db08a7
+source-git-commit: 2a2887fcd476566d2105edd9824feba4c1caca8a
 workflow-type: tm+mt
-source-wordcount: '421'
+source-wordcount: '0'
 ht-degree: 0%
 
 ---
@@ -21,7 +21,7 @@ De flesta e-postklienter återger bilder utan problem, men vissa förinställnin
 
 Spegelsidan som genererats av Adobe Campaign innehåller alla personaliseringsdata.
 
-![exempel på spegellänk](assets/mirror-page-link.png){width="500" align="center"}
+![exempel på spegellänk](assets/mirror-page-link.png){width="600" align="left"}
 
 ## Lägg till en länk till spegelsidan{#link-to-mirror-page}
 
@@ -29,7 +29,7 @@ Det är bra att infoga en länk till spegelsidan. Den här länken kan till exem
 
 I Adobe Campaign kan du infoga en länk till spegelsidan i e-postinnehållet med den dedikerade **personaliseringsblock**. Den inbyggda **Länk till spegelsida** anpassningsblocket infogar följande kod i ditt e-postinnehåll: `<%@ include view='MirrorPage' %>`.
 
-![](assets/mirror-page-insert.png)
+![](assets/mirror-page-insert.png){width="800" align="left"}
 
 
 <!--For more on personalization blocks insertion, refer to [Personalization blocks](personalization-blocks.md).-->
@@ -43,7 +43,7 @@ Du kan styra genereringsläget för e-postspeglingssidan. Alternativ finns i lev
 1. Bläddra till **[!UICONTROL Validity]** -fliken i e-postegenskaperna.
 1. I **Hantering av spegelsidor** -avsnittet, kontrollera **[!UICONTROL Mode]** nedrullningsbar lista.
 
-![](assets/mirror-page-generation.png)
+![](assets/mirror-page-generation.png){width="800" align="left"}
 
 Förutom standardläget finns följande alternativ:
 
@@ -61,7 +61,7 @@ Så här kommer du åt den här spegelsidan:
 
 1. Välj en mottagare och klicka på **[!UICONTROL Display the mirror page for this message...]** länk.
 
-   ![](assets/mirror-page-display.png)
+   ![](assets/mirror-page-display.png){width="800" align="left"}
 
    Spegelsidan visas på en dedikerad skärm med personaliseringsdata för den valda mottagaren.
 
