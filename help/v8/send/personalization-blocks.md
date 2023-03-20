@@ -1,18 +1,18 @@
 ---
-title: Block för personalisering
+title: Använd personaliseringsblock
 description: Lär dig hur du använder inbyggda personaliseringsblock i ditt meddelandeinnehåll
 feature: Personalization
 role: User
 level: Beginner
-source-git-commit: 50688c051b9d8de2b642384963ac1c685c0c33ee
+source-git-commit: badcbb83c4bd0cf509c156557f5ea6f7cf7ae771
 workflow-type: tm+mt
-source-wordcount: '552'
+source-wordcount: '554'
 ht-degree: 1%
 
 ---
 
 
-# Block för personalisering{#personalization-blocks}
+# Använd personaliseringsblock{#personalization-blocks}
 
 Personaliseringsblock är dynamiskt innehåll som innehåller en specifik återgivning som du kan infoga i dina leveranser. Du kan till exempel lägga till en logotyp, ett gratulationsmeddelande eller en länk till en spegelsida.
 
