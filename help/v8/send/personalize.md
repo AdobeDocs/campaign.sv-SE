@@ -1,17 +1,17 @@
 ---
-title: Anpassa innehåll
+title: Kom igång med personalisering
 description: Lär dig anpassa meddelandeinnehåll
 feature: Personalization
 role: User
 level: Beginner
-source-git-commit: 4885f15c71d2be27dc32a239fb22abc3a96503c7
+source-git-commit: a8568e0c1e9af11b533b7d435691dc12cc0a2485
 workflow-type: tm+mt
-source-wordcount: '467'
+source-wordcount: '471'
 ht-degree: 5%
 
 ---
 
-# Anpassa innehåll {#personalize-content}
+# Kom igång med personalisering {#personalize-content}
 
 För att få ut så mycket som möjligt av alla marknadsföringskampanjer ger Adobe Campaign er ett sätt att leverera anpassat innehåll som talar till kunderna på deras nivå. Utifrån profildata kan personalisering skapa en anpassad upplevelse för olika grupper och individer: kan ni anpassa era meddelanden till varje specifik mottagare genom att utnyttja de data och den information ni har om dem. Det kan vara deras förnamn, intressen, var de bor, vad de har köpt och mycket annat.
 

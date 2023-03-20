@@ -4,10 +4,10 @@ title: Använd typologiregler
 description: Lär dig hur du använder typologiregler
 feature: Typology Rules
 exl-id: 4ec3bbe1-fc4c-4b1e-989c-f4dcf8ee8d5e
-source-git-commit: 50688c051b9d8de2b642384963ac1c685c0c33ee
+source-git-commit: a8568e0c1e9af11b533b7d435691dc12cc0a2485
 workflow-type: tm+mt
-source-wordcount: '956'
-ht-degree: 8%
+source-wordcount: '951'
+ht-degree: 9%
 
 ---
 
@@ -15,7 +15,9 @@ ht-degree: 8%
 
 ## Använd typologi på en leverans {#apply-a-typology-to-a-delivery}
 
-Om du vill tillämpa de typologiregler du har skapat måste du koppla den till en typologi och sedan referera till den här typologin i leveransen. Så här gör du:
+Om du vill tillämpa de typologiregler du har skapat kopplar du den till en typologi och refererar sedan till den här typologin i leveransen.
+
+Följ stegen nedan för att göra detta:
 
 1. Skapa en kampanjtypologi.
 
@@ -27,7 +29,7 @@ Om du vill tillämpa de typologiregler du har skapat måste du koppla den till e
 
 1. Spara typologin: läggs det till i listan över befintliga typologier.
 1. Öppna den leverans som du vill tillämpa reglerna på.
-1. Öppna leveransegenskaperna och öppna **[!UICONTROL Typology]** -fliken.
+1. Bläddra till leveransegenskaperna och öppna **[!UICONTROL Typology]** -fliken.
 1. Välj typologi i listrutan.
 
    ![](assets/campaign_opt_pressure_sample_1_7.png)
@@ -82,7 +84,7 @@ I standarddriftsläget används reglerna i följande sekvens:
 1. Tryckregler.
 1. Kapacitetsregler.
 1. Kontrollregler, om de tillämpas när målinriktningen är slut.
-1. Kontrollregler, om de tillämpas i början av anpassningen. Om användarreglerna (filtrering/tryck/aktivering) har upphört att gälla och behöver beräknas om, kommer de att tillämpas under det här steget.
+1. Kontrollregler, om de tillämpas i början av anpassningen. Om användarregler (filtrering/tryck/aktivering) har upphört att gälla och behöver beräknas om, tillämpas de under det här steget.
 1. Styr reglerna, om de gäller när personaliseringen är klar.
 
 >[!NOTE]
@@ -95,7 +97,7 @@ En tryckregel med körningsordningen 20 körs till exempel före en tryckregel m
 
 ### Kontrollregler {#control-rules}
 
-För **[!UICONTROL Control]** kan ni bestämma vid vilken tidpunkt i leveranscykeln regeln ska tillämpas (före eller efter målinriktning, i början av personaliseringen, i slutet av analysen). Välj det värde som ska användas i listrutan i **[!UICONTROL Phase]** fält, i **[!UICONTROL General]** för typologiregeln.
+För **[!UICONTROL Control]** kan du bestämma vid vilken tidpunkt i leveranscykeln regeln ska tillämpas: före eller efter målinriktning, i början av personaliseringen, i slutet av analysen. Välj det värde som ska användas i listrutan i **[!UICONTROL Phase]** fält, i **[!UICONTROL General]** för typologiregeln.
 
 ![](assets/campaign_opt_define_control_phase.png)
 
