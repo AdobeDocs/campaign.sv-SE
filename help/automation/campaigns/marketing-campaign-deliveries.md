@@ -3,9 +3,10 @@ product: campaign
 title: Leveranser av marknadsföringskampanjer
 description: Läs mer om kampanjleveranser
 feature: Campaigns, Resource Management, Cross Channel Orchestration
-source-git-commit: 72467caf94e652ede70c00f1ea413012fc4c7e1f
+exl-id: 1d9638cb-0fc9-4d04-a9c5-bcab8f4ebe95
+source-git-commit: 50688c051b9d8de2b642384963ac1c685c0c33ee
 workflow-type: tm+mt
-source-wordcount: '708'
+source-wordcount: '706'
 ht-degree: 1%
 
 ---
@@ -56,7 +57,7 @@ Bekräftelsen av leveransen är begränsad till administratörer och till den op
 
 ![](assets/select-delivery-reviewers.png)
 
-Du kan även tillåta kampanjägaren att bekräfta sändningen, även om specifika granskare har definierats i leverans- eller kampanjegenskaperna. Om du vill göra det som administratör skapar du **NmsCampaign_Activate_OwnerConfirmation** och ange **1**. Alternativen hanteras från **[!UICONTROL Administration]** > **[!UICONTROL Platform]** > **[!UICONTROL Options]** i Adobe Campaign Explorer.
+Du kan även tillåta kampanjägaren att bekräfta sändningen, även om specifika granskare har definierats i leverans- eller kampanjegenskaperna. Om du vill göra det som administratör skapar du **NmsCampaign_Activate_OwnerConfirmation** och ange **1**. Alternativen hanteras från **[!UICONTROL Administration]** > **[!UICONTROL Platform]** > **[!UICONTROL Options]** mapp för Campaign Explorer.
 
 
 ### Starta direktleverans av e-post {#start-an-offline-delivery}

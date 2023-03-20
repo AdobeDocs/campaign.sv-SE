@@ -3,9 +3,10 @@ product: campaign
 title: Berika data
 description: Läs mer om arbetsflödesaktiviteten för anrikning
 feature: Workflows, Enrichment Activity
-source-git-commit: 2b1dec4b9c456df4dfcebfe10d18e0ab01599275
+exl-id: 3b3fa15f-b16e-42c8-a2e6-03350aee1903
+source-git-commit: 34af97ae01f7dba418fd0a8c950fc549dfbbd98b
 workflow-type: tm+mt
-source-wordcount: '747'
+source-wordcount: '744'
 ht-degree: 1%
 
 ---
@@ -41,17 +42,17 @@ Vi har skapat följande arbetsflöde för målinriktning för att konfigurera de
 Så här skapar du arbetsflödet:
 
 1. Två **[!UICONTROL Query]** aktiviteter och en **[!UICONTROL Intersection]** Verksamheten läggs till för att inrikta sig på nya prenumeranter som gick in i tävlingen sist.
-1. The **[!UICONTROL Enrichment]** gör att vi kan lägga till data som lagras i **[!UICONTROL Competition results]** tabell. The **[!UICONTROL Score]** det fält där vår leveranspersonalisering ska äga rum läggs till i arbetsflödets arbetsregister.
-1. The **[!UICONTROL Split]** typaktivitet gör att vi kan skapa delmängder av mottagare baserat på poängvärden.
-1. För varje delmängd av **[!UICONTROL Delivery]** typaktivitet läggs till.
+1. The **[!UICONTROL Enrichment]** används för att lägga till data som lagras i **[!UICONTROL Competition results]** tabell. The **[!UICONTROL Score]** det fält där vår leveranspersonalisering ska ske läggs till i arbetsflödets arbetsregister.
+1. The **[!UICONTROL Split]** typaktivitet används för att skapa delmängder av mottagare baserat på poängvärden.
+1. För varje delmängd av **[!UICONTROL Delivery]** aktiviteten läggs till.
 
 ## Steg 1: Målinriktning {#step-1--targeting}
 
-Den första frågan gör att vi kan rikta in oss på mottagare som lagts till i databasen under de senaste sex månaderna.
+Den första frågan används för målmottagare som lagts till i databasen under de senaste sex månaderna.
 
 ![](assets/uc1_enrich_4.png)
 
-Den andra frågan gör att vi kan rikta in oss på de mottagare som deltog i den senaste tävlingen.
+Den andra frågan används för att rikta sig till de mottagare som deltog i den senaste tävlingen.
 
 ![](assets/uc1_enrich_5.png)
 
@@ -59,7 +60,7 @@ An **[!UICONTROL Intersection]** Typaktivitet läggs sedan till för att rikta s
 
 ## Steg 2: Berikning {#step-2--enrichment}
 
-I det här exemplet vill vi personalisera leveranser enligt **[!UICONTROL Score]** fält som lagras i **[!UICONTROL Competition results]** tabell. Den här tabellen har en 1:n-typrelation med mottagartabellen. The **[!UICONTROL Enrichment]** Med hjälp av aktivitet kan vi lägga till data från en tabell som är länkad till filtreringsdimensionen i arbetsflödets arbetsregister.
+I det här exemplet får du lära dig hur du anpassar leveranser enligt **[!UICONTROL Score]** fält som lagras i **[!UICONTROL Competition results]** tabell. Den här tabellen har en 1:n-typrelation med mottagartabellen. The **[!UICONTROL Enrichment]** används för att lägga till data från en tabell som är länkad till filtreringsdimensionen i arbetsflödets arbetsregister.
 
 1. På redigeringsskärmen för anrikningsaktiviteten väljer du **[!UICONTROL Add data]** sedan **[!UICONTROL Data linked to the filtering dimension]** och klicka **[!UICONTROL Next]**.
 

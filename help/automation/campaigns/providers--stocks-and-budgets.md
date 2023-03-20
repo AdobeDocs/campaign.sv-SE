@@ -3,7 +3,8 @@ product: campaign
 title: Leverantörer, lager och budgetar
 description: Leverantörer, lager och budgetar
 feature: Budget Management, Campaigns
-source-git-commit: 72467caf94e652ede70c00f1ea413012fc4c7e1f
+exl-id: 1d4a98e6-af11-4645-864e-29aa5766d9d8
+source-git-commit: 50688c051b9d8de2b642384963ac1c685c0c33ee
 workflow-type: tm+mt
 source-wordcount: '1816'
 ht-degree: 1%
@@ -18,7 +19,7 @@ Med Adobe Campaign kan ni definiera tjänsteleverantörer som ska delta i de job
 
 Varje tjänsteleverantör sparas i en fil med kontaktinformation, tjänstmallar och relaterade jobb.
 
-Tjänsteleverantörer är konfigurerade i **[!UICONTROL Administration > Campaign management]** trädnod.
+Tjänsteleverantörer är konfigurerade i **[!UICONTROL Administration > Campaign management]** mapp för Campaign Explorer.
 
 De jobb som utförs under leveranser utförs av tjänsteleverantörer, särskilt för direktreklam och mobila kanaler. Dessa tjänsteleverantörer kan till exempel vara inblandade i utskrift eller distribution av meddelanden. Dessa jobb omfattar konfigurationer och kostnader som är specifika för varje tjänsteleverantör. Tjänsteleverantörernas konfiguration omfattar fyra steg:
 
@@ -128,7 +129,7 @@ Du kan associera information om processerna som är kopplade till tjänstelevera
 
 * The **[!UICONTROL Notification email]** kan du ange en mall som ska meddela tjänsteleverantörer när filerna har skickats. Välj den mall som används för att skapa varningsmeddelandet och gruppen med mottagare.
 
-   Leveransmallar för meddelanden sparas som standard i **[!UICONTROL Administration > Campaign management > Technical delivery templates]** som är tillgänglig från den allmänna vyn.
+   Leveransmallar för meddelanden sparas som standard i **[!UICONTROL Administration > Campaign management > Technical delivery templates]** som du kommer åt från den allmänna vyn.
 
 * The **[!UICONTROL Post-processing]** kan du välja vilket arbetsflöde som ska startas när leveransen har godkänts. Om en arbetsflödesmall anges skapas en arbetsflödesinstans automatiskt och startas så snart godkännandet börjar gälla. Det här arbetsflödet kan till exempel skicka extraheringsfilen till en extern tjänsteleverantör för bearbetning.
 

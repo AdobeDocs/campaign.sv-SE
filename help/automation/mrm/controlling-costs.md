@@ -2,7 +2,8 @@
 product: campaign
 title: Kontrollera kostnader
 description: Lär dig hur du styr kostnaderna
-source-git-commit: c835a96b315d2c68b64869082fc626243dd006e9
+exl-id: 51f3add9-a083-4db1-84a6-3aaaeec0465c
+source-git-commit: 50688c051b9d8de2b642384963ac1c685c0c33ee
 workflow-type: tm+mt
 source-wordcount: '2409'
 ht-degree: 1%
@@ -33,7 +34,7 @@ Följande steg måste tillämpas för att implementera budgethantering med MRM:
 
 Så här skapar du en budget:
 
-1. Bläddra till **[!UICONTROL Campaign management > Budgets]** nod i Campaign Explorer.
+1. Bläddra till **[!UICONTROL Campaign management > Budgets]** mapp för Campaign Explorer.
 1. Klicka på **[!UICONTROL New]** -ikonen, namnge och spara budgeten.
 1. Ange startbeloppet: Ange det tilldelade beloppet i det relevanta fältet. Övriga belopp anges automatiskt. [Läs mer](#calculating-amounts).
 1. Definiera giltighetsperioden genom att ange start- och slutdatum. Denna information är endast vägledande.

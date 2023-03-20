@@ -4,9 +4,9 @@ description: Lär dig hur du använder Adobe Campaign Social Marketing Module f�
 role: User
 level: Beginner, Intermediate
 exl-id: 0783e289-ae8e-4bb7-80f1-f90937a528c1
-source-git-commit: 9ae93ce4e2b0424bb3b3862b2c7d016309bd630e
+source-git-commit: 34af97ae01f7dba418fd0a8c950fc549dfbbd98b
 workflow-type: tm+mt
-source-wordcount: '812'
+source-wordcount: '806'
 ht-degree: 1%
 
 ---
@@ -124,7 +124,7 @@ Följ stegen nedan för att skicka direktmeddelanden till dina följare:
 
    ![](assets/tw-dm-content.png)
 
-   Anpassningsfält kan användas på samma sätt som för e-postleveranser, t.ex. för att lägga till följarens namn i meddelandets brödtext. Läs mer i [det här avsnittet](../start/create-message.md#personalization).
+   Anpassningsfält kan användas på samma sätt som för e-postleveranser, t.ex. för att lägga till följarens namn i meddelandets brödtext. Läs mer i [det här avsnittet](../send/personalize.md).
 
 1. Förhandsgranska meddelandet
 
@@ -140,7 +140,7 @@ Följ stegen nedan för att skicka direktmeddelanden till dina följare:
 
    Innan du skickar meddelandet kontrollerar du att det är verifierat genom att skicka ett bevis till ett testkonto: kan du sedan få en exakt återgivning av meddelandet på ett privat Twitter-konto och kontrollera innehåll och personalisering.
 
-   ![](../assets/do-not-localize/book.png) [Lär dig viktiga steg för att validera en leverans](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/key-steps-when-creating-a-delivery/steps-validating-the-delivery.html){target=&quot;_blank&quot;}
+   ![](../assets/do-not-localize/book.png) [Lär dig viktiga steg för att validera en leverans](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/key-steps-when-creating-a-delivery/steps-validating-the-delivery.html){target="_blank"}
 
 1. Skicka direktmeddelandet
 
@@ -151,7 +151,7 @@ Följ stegen nedan för att skicka direktmeddelanden till dina följare:
 
 >[!CAUTION]
 >
->Du kan inte skicka mer än 250 direktmeddelanden per dag. För att undvika att detta tröskelvärde överskrids kan du leverera i vågor. Mer information finns i [Campaign Classic v7-dokumentation](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/key-steps-when-creating-a-delivery/steps-sending-the-delivery.html?lang=en#sending-using-multiple-waves){target=&quot;_blank&quot;}.
+>Du kan inte skicka mer än 250 direktmeddelanden per dag. För att undvika att detta tröskelvärde överskrids kan du leverera i vågor. Mer information finns i [Campaign Classic v7-dokumentation](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/key-steps-when-creating-a-delivery/steps-sending-the-delivery.html?lang=en#sending-using-multiple-waves){target="_blank"}.
 
 
 ## Åtkomstspårningsdata {#tw-tracking}
@@ -160,5 +160,5 @@ I den inbyggda **[!UICONTROL Tweet]** leveransmall, spårning är aktiverat som 
 
 Spåra data kan visas i leveransrapporterna och i **[!UICONTROL Edit > Tracking]** fliken för leveransen och tjänsten.
 
-Spårningskonfigurationen är densamma som för en e-postleverans. Läs mer i [Campaign Classic v7-dokumentation](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/monitoring-deliveries/about-delivery-monitoring.html){target=&quot;_blank&quot;}.
+Spårningskonfigurationen är densamma som för en e-postleverans. Läs mer i [Campaign Classic v7-dokumentation](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/monitoring-deliveries/about-delivery-monitoring.html){target="_blank"}.
 

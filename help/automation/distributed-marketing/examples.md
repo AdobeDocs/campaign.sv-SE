@@ -4,9 +4,9 @@ title: Distribuerade marknadsexempel
 description: Distribuerade marknadsexempel
 feature: Distributed Marketing
 exl-id: 7825426b-c9e4-49e9-840c-dc6d6d836fbe
-source-git-commit: 6464e1121b907f44db9c0c3add28b54486ecf834
+source-git-commit: 50688c051b9d8de2b642384963ac1c685c0c33ee
 workflow-type: tm+mt
-source-wordcount: '1284'
+source-wordcount: '1290'
 ht-degree: 0%
 
 ---
@@ -115,7 +115,7 @@ När kontrollerna har godkänts kan kampanjen starta automatiskt.
 
 #### Skapa en datadistributionsaktivitet {#creating-a-data-distribution-activity}
 
-1. Om du vill konfigurera en samarbetskampanj (efter målgodkännande) måste du först skapa en **[!UICONTROL Data distribution activity]**. Klicka på **[!UICONTROL New]** ikonen i **[!UICONTROL Resources > Campaign management > Data distribution]** nod.
+1. Om du vill konfigurera en samarbetskampanj (efter målgodkännande) måste du först skapa en **[!UICONTROL Data distribution activity]**. Klicka på **[!UICONTROL New]** ikonen i **[!UICONTROL Resources > Campaign management > Data distribution]** mapp för Campaign Explorer.
 
    ![](assets/mkg_dist_use_case_target_valid3.png)
 
@@ -139,7 +139,7 @@ När kontrollerna har godkänts kan kampanjen starta automatiskt.
 
 #### Skapa en samverkanskampanj {#creating-a-collaborative-campaign}
 
-1. Från **[!UICONTROL Campaign management > Campaign]** nod, skapa en ny **[!UICONTROL collaborative campaign (by target approval)]**.
+1. Från **[!UICONTROL Campaign management > Campaign]** mapp för Campaign Explorer, skapa en ny **[!UICONTROL collaborative campaign (by target approval)]**.
 1. I **[!UICONTROL Targeting and workflows]** skapar du ett arbetsflöde för kampanjen. Detta måste innehålla en **Dela** verksamhet där **[!UICONTROL Record count limitation]** definieras av **[!UICONTROL Data distribution]** aktivitet.
 
    ![](assets/mkg_dist_use_case_target_valid5.png)

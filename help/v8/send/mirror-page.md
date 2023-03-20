@@ -4,9 +4,9 @@ description: Lär dig hur du lägger till och hanterar länken till spegelsidan
 feature: Email
 role: User
 level: Beginner
-source-git-commit: 2a2887fcd476566d2105edd9824feba4c1caca8a
+source-git-commit: 34af97ae01f7dba418fd0a8c950fc549dfbbd98b
 workflow-type: tm+mt
-source-wordcount: '0'
+source-wordcount: '432'
 ht-degree: 0%
 
 ---
@@ -32,7 +32,7 @@ I Adobe Campaign kan du infoga en länk till spegelsidan i e-postinnehållet med
 ![](assets/mirror-page-insert.png){width="800" align="left"}
 
 
-<!--For more on personalization blocks insertion, refer to [Personalization blocks](personalization-blocks.md).-->
+Mer information om infogning av anpassade innehållsblock finns i [Personaliseringsblock](personalization-blocks.md).
 
 ## Generering av spegelsida{#mirror-page-generation}
 

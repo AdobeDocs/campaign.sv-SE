@@ -2,9 +2,10 @@
 title: Använd arbetsflödesdata
 description: Lär dig hur du använder arbetsflödesdata
 feature: Workflows, Data Management
-source-git-commit: 72467caf94e652ede70c00f1ea413012fc4c7e1f
+exl-id: 5014c2ed-2a74-4122-b7b9-d3703db7ab12
+source-git-commit: 34af97ae01f7dba418fd0a8c950fc549dfbbd98b
 workflow-type: tm+mt
-source-wordcount: '709'
+source-wordcount: '707'
 ht-degree: 2%
 
 ---
@@ -43,7 +44,7 @@ Välj den relevanta menyn för att göra detta:
 
    På den här menyn kan du komma åt guiden för beskrivande analys där du kan ta fram statistik och rapporter om övergångsdata.
 
-   Mer information finns i [Campaign Classic v7-dokumentation](https://experienceleague.adobe.com/docs/campaign-classic/using/reporting/analyzing-populations/about-descriptive-analysis.html){target=&quot;_blank&quot;}.
+   Mer information finns i [Campaign Classic v7-dokumentation](https://experienceleague.adobe.com/docs/campaign-classic/using/reporting/analyzing-populations/about-descriptive-analysis.html){target="_blank"}.
 
 Måldata rensas när arbetsflödet körs. Endast den sista arbetstabellen är tillgänglig. Du kan konfigurera arbetsflödet så att alla arbetsregister förblir tillgängliga: kontrollera **[!UICONTROL Keep the result of interim populations between two executions]** i arbetsflödesegenskaperna.
 
@@ -56,7 +57,7 @@ Måldata rensas när arbetsflödet körs. Endast den sista arbetstabellen är ti
 
 ### Utnyttja måldata {#target-data}
 
-De data som lagras i arbetsflödets temporära arbetsregister är tillgängliga för personaliseringsåtgärder. Data kan användas i personaliseringsfälten.
+De data som lagras i arbetsflödets temporära arbetsregister är tillgängliga för personaliseringsåtgärder. Data kan användas i [personaliseringsfält](../../v8/send/personalization-fields.md).
 
 Detta gör att du till exempel kan använda data som samlats in via en lista i en leverans. Använd följande syntax:
 
@@ -138,6 +139,3 @@ Data från Adobe Campaign-databasen och de befintliga listorna kan uppdateras me
 ### Hantera prenumerationer {#subscription-management}
 
 Om du vill veta mer om att prenumerera på och avsluta prenumerationer på en informationstjänst via ett arbetsflöde kan du läsa [Prenumerationstjänster](subscription-services.md).
-
-
-

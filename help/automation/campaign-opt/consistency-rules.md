@@ -3,7 +3,8 @@ product: campaign
 title: Konsekvensregler
 description: Konsekvensregler
 feature: Typology Rules
-source-git-commit: 72467caf94e652ede70c00f1ea413012fc4c7e1f
+exl-id: dcb4ffcf-71e5-48a2-b0f7-42915a599652
+source-git-commit: 50688c051b9d8de2b642384963ac1c685c0c33ee
 workflow-type: tm+mt
 source-wordcount: '734'
 ht-degree: 4%
@@ -26,7 +27,7 @@ I följande exempel skapar vi en typologiregel för en lojalitetskampanj för en
 
 Så här utformar du en ny kapacitetsregel:
 
-1. Under **[!UICONTROL Administration > Campaign management > Typology management > Typology rules]** nod, klicka **[!UICONTROL New]**.
+1. Under **[!UICONTROL Administration > Campaign management > Typology management > Typology rules]** mapp, klicka på **[!UICONTROL New]**.
 1. Välj en **[!UICONTROL Capacity]** regeltyp.
 
    ![](assets/campaign_opt_create_capacity_01.png)

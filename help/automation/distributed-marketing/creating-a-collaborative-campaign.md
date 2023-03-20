@@ -3,7 +3,8 @@ product: campaign
 title: Skapa en samverkanskampanj
 description: Lär dig hur du skapar en samverkanskampanj
 feature: Distributed Marketing
-source-git-commit: 2b1dec4b9c456df4dfcebfe10d18e0ab01599275
+exl-id: edf887fb-c391-405c-b3cf-dc34aed69c53
+source-git-commit: 50688c051b9d8de2b642384963ac1c685c0c33ee
 workflow-type: tm+mt
 source-wordcount: '910'
 ht-degree: 3%
@@ -18,7 +19,7 @@ Den centrala enheten skapar samverkanskampanjer från **Distribuerad marknadsfö
 
 ## Skapa en samverkanskampanj {#creating-a-collaborative-campaign}
 
-Om du vill konfigurera en samarbetskampanj klickar du på **[!UICONTROL Campaign management > Campaigns]** -nod, sedan **[!UICONTROL New]** ikon.
+Om du vill konfigurera en samarbetskampanj klickar du på **[!UICONTROL Campaign management > Campaigns]** mappen, sedan **[!UICONTROL New]** ikon.
 
 >[!NOTE]
 >

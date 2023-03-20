@@ -5,9 +5,9 @@ feature: Email
 role: User
 level: Beginner
 exl-id: 97dcd0e0-db5b-45a4-96af-817e49f6cb64
-source-git-commit: bd109f9d320b3009ab0d9414291d397b331373de
+source-git-commit: 34af97ae01f7dba418fd0a8c950fc549dfbbd98b
 workflow-type: tm+mt
-source-wordcount: '568'
+source-wordcount: '576'
 ht-degree: 5%
 
 ---
@@ -48,7 +48,6 @@ I följande exempel får du lära dig hur du utformar en e-postleverans i Adobe 
 
 1. **Anpassa meddelandet**
 
-
    * Lägg till förnamn och efternamn för mottagarna
 
       Om du vill infoga för- och efternamnen på målprofilerna i innehållet i meddelandet placerar du markören där du vill infoga dem och klickar på den sista ikonen i verktygsfältet. Klicka sedan på **[!UICONTROL Include]** och markera **[!UICONTROL Greetings]**.
@@ -58,6 +57,8 @@ I följande exempel får du lära dig hur du utformar en e-postleverans i Adobe 
       Bläddra till fliken Förhandsgranska om du vill kontrollera personaliseringen genom att välja en mottagare.
 
       ![](assets/perso-check.png)
+
+      Läs mer om personaliseringsalternativ i [det här avsnittet](personalize.md).
 
    * Infoga en spårad länk
 

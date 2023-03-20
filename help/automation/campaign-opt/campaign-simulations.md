@@ -3,9 +3,10 @@ product: campaign
 title: Kom igång med kampanjsimuleringar
 description: Lär dig konfigurera kampanjsimuleringar
 feature: Campaigns
-source-git-commit: 72467caf94e652ede70c00f1ea413012fc4c7e1f
+exl-id: 2b2b668f-87d9-4265-adbc-9098b85c5aab
+source-git-commit: 50688c051b9d8de2b642384963ac1c685c0c33ee
 workflow-type: tm+mt
-source-wordcount: '1212'
+source-wordcount: '1210'
 ht-degree: 0%
 
 ---
@@ -196,7 +197,7 @@ The **[!UICONTROL Calculations]** kan du definiera rapportaxlar på målet. De h
 >[!NOTE]
 >
 >Vi rekommenderar att du definierar beräkningsaxlar i simuleringsmallarna i stället för individuellt för varje simulering.\
->Simuleringsmallar sparas i **[!UICONTROL Resources > Templates > Simulation templates]** noden i Adobe Campaign-trädet.
+>Simuleringsmallar sparas i **[!UICONTROL Resources > Templates > Simulation templates]** mapp för Campaign Explorer.
 
 **Exempel:**
 

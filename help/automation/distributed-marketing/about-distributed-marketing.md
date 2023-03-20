@@ -4,7 +4,7 @@ title: Kom igång med distribuerad marknadsföring
 description: Kom igång med distribuerad marknadsföring
 feature: Distributed Marketing
 exl-id: c9f5b277-3ad8-4316-94b9-789d37813b8b
-source-git-commit: c835a96b315d2c68b64869082fc626243dd006e9
+source-git-commit: 50688c051b9d8de2b642384963ac1c685c0c33ee
 workflow-type: tm+mt
 source-wordcount: '1134'
 ht-degree: 0%
@@ -103,7 +103,7 @@ Lokala operatorer måste tillhöra **[!UICONTROL Local management]** operatorgru
 
 ### Organisationsenheter {#organizational-entities}
 
-Om du vill skapa en organisationsenhet klickar du på **[!UICONTROL Administration > Access management > Organizational entities]** och klicka på **[!UICONTROL New]** -ikonen ovanför listan med enheter.
+Om du vill skapa en organisationsenhet klickar du på **[!UICONTROL Administration > Access management > Organizational entities]** och klickar på **[!UICONTROL New]** -ikonen ovanför listan med enheter.
 
 ![](assets/s_advuser_mkg_dist_local_list.png)
 

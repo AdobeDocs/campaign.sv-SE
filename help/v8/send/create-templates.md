@@ -6,10 +6,10 @@ feature: Email, Push, SMS, Direct Mail, Cross Channel Orchestration
 role: User
 level: Beginner
 exl-id: 3a4de36e-ba24-49ec-8113-f32f12c8ecdd
-source-git-commit: edb099b3e882d857752af76798012ccd1c5a99be
+source-git-commit: 34af97ae01f7dba418fd0a8c950fc549dfbbd98b
 workflow-type: tm+mt
-source-wordcount: '699'
-ht-degree: 6%
+source-wordcount: '698'
+ht-degree: 5%
 
 ---
 
@@ -17,11 +17,11 @@ ht-degree: 6%
 
 Använd leveransmallar för att standardisera det kreativa utseendet och känslan, så att ni kan genomföra och lansera kampanjer snabbare.
 
-En mall kan systematiskt innehålla:
+En mall kan innehålla:
 
 * Typologier
 * Avsändare och svarsadresser
-* Grundläggande personaliseringsblock
+* Grundläggande [personaliseringsblock](../send/personalization-blocks.md)
 * Länkar till [spegelsidor](../send/mirror-page.md) och prenumerationslänkar
 * Innehåll, företagslogotyp eller signatur
 * Andra leveransegenskaper, som resursgiltighet, återförsöksparametrar eller karantäninställningar.
