@@ -4,7 +4,7 @@ description: Lär dig förbereda och kontrollera leveransen
 feature: Personalization
 role: User
 level: Beginner
-source-git-commit: 8f04981e38da79e69afc890311c559f9ffa136f4
+source-git-commit: 51b333492ad50849751208c7549dc00f66140b82
 workflow-type: tm+mt
 source-wordcount: '690'
 ht-degree: 0%
@@ -47,11 +47,11 @@ För att förbereda leveransen kontrollerar du att leveransinnehållet och lever
    >
    >Vid körning fryser analysen leveransen (eller korrekturet). Alla ändringar av leveransen (eller beviset) måste följas av en annan analys innan de blir tillämpliga.
 
-När analysen är klar anger fönstrets övre del om leveransförberedelserna är slutförda eller om några fel har inträffat. Alla valideringssteg, varningar och fel visas. Färgade ikoner visar meddelandetypen:
+   När analysen är klar anger fönstrets övre del om leveransförberedelserna är slutförda eller om några fel har inträffat. Alla valideringssteg, varningar och fel visas. Färgade ikoner visar meddelandetypen:
 
-* En blå ikon visar ett informativt meddelande.
-* En gul ikon anger ett icke-kritiskt bearbetningsfel.
-* En röd ikon anger ett kritiskt fel som gör att leveransen inte kan skickas.
+   * En blå ikon visar ett informativt meddelande.
+   * En gul ikon anger ett icke-kritiskt bearbetningsfel.
+   * En röd ikon anger ett kritiskt fel som gör att leveransen inte kan skickas.
 
    ![](assets/delivery-analysis-results.png){width="800" align="left"}
 
