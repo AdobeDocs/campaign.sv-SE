@@ -5,10 +5,10 @@ feature: Permissions
 role: User, Admin
 level: Beginner
 exl-id: 3d61abac-03df-42d3-a950-37e41a5a7756
-source-git-commit: ac4d0d0c16f429ca0948a3c3257558c46700baeb
+source-git-commit: 1baeb8827a0eab4f9487bb5e5afe4d779e00efe4
 workflow-type: tm+mt
-source-wordcount: '382'
-ht-degree: 2%
+source-wordcount: '308'
+ht-degree: 4%
 
 ---
 
@@ -18,7 +18,7 @@ I Adobe Campaign är **operatorer** och **operatorgrupper** representerar använ
 
 En operator är en Adobe Campaign-användare som har behörighet att logga in och utföra åtgärder. Som standard lagras operatorer i **[!UICONTROL Administration > Access management > Operators]** nod.
 
-Adobe Campaign har inbyggda operatörsgrupper som Campaign Managers och Workflow Supervisors. Alla inbyggda grupper listas i [Campaign Classic v7-dokumentation](https://experienceleague.adobe.com/docs/campaign-classic/using/getting-started/permissions/access-management-groups.html?lang=en#default-groups){target=&quot;_blank&quot;}.
+Adobe Campaign har inbyggda operatörsgrupper som Campaign Managers och Workflow Supervisors. Läs mer om behörigheter i [det här avsnittet](../start/gs-permissions.md)
 
 Som medlem i en operatorgrupp har en användare behörighet att utföra åtgärder som kallas namngivna rättigheter och har tillgång till data, som finns i mappar i **Utforskaren** vy. En operator kan vara medlem i flera operatorgrupper: behörigheter och åtkomstbehörigheter är additiva.
 
@@ -26,7 +26,7 @@ Namngivna rättigheter ger behörigheter till:
 
 * Utför t.ex. **Analysera** knappen i leveransredigeraren är aktiverad för medlemmar i **Leveransoperatör** grupp som har **Förbered leverans** Namngiven höger
 
-* Åtkomst till mappar Medlemskap i Operator Groups kan ge eller begränsa åtkomsträttigheter till mappar genom att ändra säkerhetsinställningarna för mappar. [Läs mer i dokumentationen för Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/getting-started/permissions/access-management-folders.html?lang=en#permissions-on-a-folder){target=&quot;_blank&quot;}. Den kan till exempel påverka: **Skrivåtkomst** skapa nya enheter (såsom leveranser, profiler osv.), **Läsbehörighet** att använda enheter, **Ta bort åtkomst** för att ta bort enheter.
+* Åtkomst till mappar Medlemskap i Operator Groups kan ge eller begränsa åtkomsträttigheter till mappar genom att ändra säkerhetsinställningarna för mappar. Läs mer i [den här sidan](../start/folder-permissions.md). Den kan till exempel påverka: **Skrivåtkomst** skapa nya enheter (såsom leveranser, profiler osv.), **Läsbehörighet** att använda enheter, **Ta bort åtkomst** för att ta bort enheter.
 
 ## Säkerhetszoner
 
@@ -34,12 +34,10 @@ Varje operator måste länkas till en zon för att kunna logga in på en instans
 
 Operatorer är länkade till en säkerhetszon från sin profil i konsolen, som är tillgänglig i **[!UICONTROL Administration > Access management > Operators]** nod.
 
-![](../assets/do-not-localize/speech.png)  Som användare med hanterade Cloud Services anger Adobe säkerhetszonerna åt dig. Mer information finns i [kontakta Adobe](https://helpx.adobe.com/se/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html){target=&quot;_blank&quot;}.
+![](../assets/do-not-localize/speech.png)  Som användare med hanterade Cloud Services anger Adobe säkerhetszonerna åt dig. Mer information finns i [kontakta Adobe](https://helpx.adobe.com/se/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html){target="_blank"}.
 
-**Läs mer i dokumentationen för Campaign Classic v7**
+**Läs mer**
 
-* [Inbyggda namngivna rättigheter](https://experienceleague.adobe.com/docs/campaign-classic/using/getting-started/permissions/access-management-named-rights.html){target=&quot;_blank&quot;}
+* [Inbyggda namngivna rättigheter](../start/gs-permissions.md)
 
-* [Inbyggda operatörsgrupper](https://experienceleague.adobe.com/docs/campaign-classic/using/getting-started/permissions/access-management-groups.html?lang=en#default-groups){target=&quot;_blank&quot;}
-
-* [Steg för att konfigurera behörigheter](https://experienceleague.adobe.com/docs/campaign-classic/using/getting-started/permissions/access-management.html){target=&quot;_blank&quot;}
+* [Steg för att konfigurera behörigheter](../start/manage-permissions.md)

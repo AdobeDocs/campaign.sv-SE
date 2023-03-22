@@ -5,18 +5,16 @@ feature: Email
 role: User
 level: Beginner
 exl-id: 97dcd0e0-db5b-45a4-96af-817e49f6cb64
-source-git-commit: 4c79078e32c77499f15906fc81f31ce2b26559d7
+source-git-commit: 1baeb8827a0eab4f9487bb5e5afe4d779e00efe4
 workflow-type: tm+mt
-source-wordcount: '567'
+source-wordcount: '466'
 ht-degree: 5%
 
 ---
 
 # Designa och skicka e-post
 
-Med e-postleveranser kan du skicka personaliserade e-postmeddelanden till målpopulationen.
-
-![](../assets/do-not-localize/book.png) Läs mer i [Campaign Classic v7-dokumentation](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/sending-emails/about-email-channel.html){target="_blank"}
+Med e-postleveranser kan du skicka personaliserade e-postmeddelanden till målpopulationen. [Läs mer](../send/send.md).
 
 ## Skapa din första e-postleverans
 
@@ -78,17 +76,12 @@ I följande exempel får du lära dig hur du utformar en e-postleverans i Adobe 
 
 Lär dig hur du importerar ett e-postinnehåll i det här [användningsfall](https://experienceleague.adobe.com/docs/campaign/automation/workflows/use-cases/deliveries/load-delivery-content.html).
 
-Läs mer i dessa avsnitt av **Campaign Classic v7-dokumentation**:
+Läs mer i följande avsnitt:
 
-* Designa ett e-postmeddelande i Campaign
-   ![](../assets/do-not-localize/book.png) [Lär dig hur du utformar ett e-postmeddelande](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/sending-emails/defining-the-email-content.html?lang=sv){target="_blank"}
-* Skapa och använda en e-postmall
-   ![](../assets/do-not-localize/book.png) [Läs mer om e-postmallar](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/using-delivery-templates/about-templates.html){target="_blank"}
-* Välj publik för ditt e-postmeddelande
-   ![](../assets/do-not-localize/book.png) [Lär dig definiera målpopulationen](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/key-steps-when-creating-a-delivery/steps-defining-the-target-population.html){target="_blank"}
-* Validera en leverans och skicka korrektur
-   ![](../assets/do-not-localize/book.png) [Lär dig viktiga steg för att validera en leverans](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/key-steps-when-creating-a-delivery/steps-validating-the-delivery.html){target="_blank"}
-* Lägg till [dirigeringsadresser](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/using-seed-addresses/about-seed-addresses.html){target="_blank"}
+* [Designa ett e-postmeddelande i Campaign](../send/email.md)
+* [Skapa och använda en e-postmall](../send/create-templates.md)
+* [Välj publik för ditt e-postmeddelande](../audiences/gs-audiences.md)
+* [Validera en leverans och skicka korrektur](../send/preview-and-proof.md)
 
 ## Testa och validera dina e-postmeddelanden
 
@@ -99,6 +92,5 @@ Du kan:
 * Kontrollera leveransanalysloggar
 * Skicka korrektur
 * Lägg till dirigerade adresser
-* Använd kontrollgrupper
 
-![](../assets/do-not-localize/book.png) [Läs mer i dokumentationen för Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/key-steps-when-creating-a-delivery/steps-validating-the-delivery.html){target="_blank"}
+[Läs mer](../send/delivery-analysis.md)

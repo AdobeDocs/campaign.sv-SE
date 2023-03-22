@@ -4,9 +4,9 @@ user-guide-title: Campaign v8
 description: Dokumentation om Campaign v8
 breadcrumb-title: Översikt över Campaign
 title: Campaign v8 dokument
-source-git-commit: 23f30dee861250532490da8598e6e0e18f72c1b0
+source-git-commit: 464898df7a362c137d20ebaf2b96bfef71131ae6
 workflow-type: tm+mt
-source-wordcount: '521'
+source-wordcount: '520'
 ht-degree: 25%
 
 ---
@@ -63,7 +63,7 @@ ht-degree: 25%
          + [Använd personaliseringsblock](send/personalization-blocks.md)
          + [Skapa villkor](send/conditions.md)
       + Validera leveransen {#validate}
-         + [Förhandsgranska och mejla korrektur](send/preview-and-proof.md)
+         + [Förhandsgranska och korrektur](send/preview-and-proof.md)
          + [Leveransanalys](send/delivery-analysis.md)
 + Profil- och målgruppshantering {#audience}
    + [Kom igång med profiler och målgrupper](audiences/gs-audiences.md)

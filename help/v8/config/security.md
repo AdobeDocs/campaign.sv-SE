@@ -5,9 +5,9 @@ feature: Privacy, PI
 role: Developer
 level: Beginner, Intermediate, Experienced
 exl-id: 1d593c8e-4b32-4902-93a7-7b18cef27cac
-source-git-commit: 864f2179384d3e3cfcf310fcd04fe02240bfbefa
+source-git-commit: cfe559b83a7db36ab8d9223d04d348f3afd74730
 workflow-type: tm+mt
-source-wordcount: '664'
+source-wordcount: '603'
 ht-degree: 0%
 
 ---
@@ -36,9 +36,8 @@ Konfiguration och skärpning av sekretess är en viktig del av säkerhetsoptimer
 
 * Skapa tillräckligt många säkerhetsgrupper
 * Kontrollera att alla operatorer har rätt åtkomsträttigheter
-* Undvik att använda admin-operatorn och undvik att ha för många operatorer i admin-gruppen
 
-![](../assets/do-not-localize/book.png) Läs mer i [Adobe Campaign Classic v7-dokumentation](https://experienceleague.adobe.com/docs/campaign-classic/using/installing-campaign-classic/security-privacy/access-management.html?lang=en#webapp-operator){target=&quot;_blank&quot;}
+Läs mer om behörigheter i [det här avsnittet](../start/gs-permissions.md)
 
 ## Riktlinjer för kodning
 
@@ -50,7 +49,7 @@ När du utvecklar i Adobe Campaign (arbetsflöden, Javascript, JSSP osv.) ska du
 
 * **Lägga till bildtexter i webbprogram**: lägga till bilder på era offentliga landningssidor och prenumerationssidor.
 
-![](../assets/do-not-localize/book.png) Läs mer i [Adobe Campaign Classic v7-dokumentation](https://experienceleague.adobe.com/docs/campaign-classic/using/installing-campaign-classic/security-privacy/scripting-coding-guidelines.html?lang=en#installing-campaign-classic){target=&quot;_blank&quot;}
+![](../assets/do-not-localize/book.png) Läs mer i [Adobe Campaign Classic v7-dokumentation](https://experienceleague.adobe.com/docs/campaign-classic/using/installing-campaign-classic/security-privacy/scripting-coding-guidelines.html?lang=en#installing-campaign-classic){target="_blank"}
 
 
 ## Personalisering
@@ -132,9 +131,8 @@ Med den här begränsningen kan du ta bort lösenordsfält, men låta det extern
 
 * Skapa tillräckligt många säkerhetsgrupper
 * Kontrollera att alla operatorer har rätt åtkomsträttigheter
-* Undvik att använda admin-operatorn och undvik att ha för många operatorer i admin-gruppen
 
-![](../assets/do-not-localize/book.png) Läs mer i [Adobe Campaign Classic v7-dokumentation](https://experienceleague.adobe.com/docs/campaign-classic/using/installing-campaign-classic/security-privacy/access-management.html?lang=en#webapp-operator){target=&quot;_blank&quot;}
+Läs mer om behörigheter i [i det här avsnittet](../start/gs-permissions.md).
 
 ## Riktlinjer för kodning
 
@@ -146,4 +144,4 @@ När du utvecklar i Adobe Campaign (arbetsflöden, Javascript, JSSP osv.) ska du
 
 * **Lägga till bildtexter i webbprogram**: lägga till bilder på era offentliga landningssidor och prenumerationssidor.
 
-![](../assets/do-not-localize/book.png) Läs mer i [Adobe Campaign Classic v7-dokumentation](https://experienceleague.adobe.com/docs/campaign-classic/using/installing-campaign-classic/security-privacy/scripting-coding-guidelines.html?lang=en#installing-campaign-classic){target=&quot;_blank&quot;}
+![](../assets/do-not-localize/book.png) Läs mer i [Adobe Campaign Classic v7-dokumentation](https://experienceleague.adobe.com/docs/campaign-classic/using/installing-campaign-classic/security-privacy/scripting-coding-guidelines.html?lang=en#installing-campaign-classic){target="_blank"}

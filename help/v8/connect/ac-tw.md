@@ -4,10 +4,10 @@ description: Lär dig hur ni kan integrera er Campaign-miljö med Twitter
 role: User, Admin
 level: Beginner, Intermediate
 exl-id: 5523217a-b95f-4639-b941-52eb7d5a0203
-source-git-commit: 2ce1ef1e935080a66452c31442f745891b9ab9b3
+source-git-commit: 1baeb8827a0eab4f9487bb5e5afe4d779e00efe4
 workflow-type: tm+mt
-source-wordcount: '1077'
-ht-degree: 2%
+source-wordcount: '1061'
+ht-degree: 3%
 
 ---
 
@@ -32,9 +32,9 @@ Om du vill konfigurera Adobe Campaign att publicera tweets på dina Twitter-kont
 
 ## Twitter utvecklarkonto {#dev-account}
 
-För att börja med den här integreringen måste du registrera dig för en [Twitter utvecklarkonto](https://developer.twitter.com){target=&quot;_blank&quot;}.
+För att börja med den här integreringen måste du registrera dig för en [Twitter utvecklarkonto](https://developer.twitter.com){target="_blank"}.
 
-Campaign använder version 1.1 av Twitter API. Om du vill använda den måste du ansöka om utökad åtkomst via Developer Portal. Läs mer om Twitter Elevated Access [på den här sidan](https://developer.twitter.com/en/portal/products/elevated){target=&quot;_blank&quot;}.
+Campaign använder version 1.1 av Twitter API. Om du vill använda den måste du ansöka om utökad åtkomst via Developer Portal. Läs mer om Twitter Elevated Access [på den här sidan](https://developer.twitter.com/en/portal/products/elevated){target="_blank"}.
 
 ## Skapa ett program i Twitter {#create-an-app-on-twitter}
 
@@ -111,7 +111,7 @@ De stoppas som standard: du måste starta dem manuellt när du börjar använda 
 
 The **[!UICONTROL Synchronization of Twitter accounts]** tekniskt arbetsflöde synkroniserar Twitter-konton i Adobe Campaign. Det här arbetsflödet återställer listan med Twitter-följare så att du kan skicka direktmeddelanden till dem. [Läs mer](../send/twitter.md#direct-tw-messages)
 
-Som standard aktiveras arbetsflödet varje torsdag kl. 7.30. Du kan använda **[!UICONTROL Execute pending task(s) now]** möjlighet att starta arbetsflödet när som helst när du implementerar den här integreringen.  Du kan också redigera schemaläggaren för att ändra arbetsflödets utlösande frekvens. Läs mer i [Campaign Classic v7-dokumentation](https://experienceleague.adobe.com/docs/campaign-classic/using/automating-with-workflows/flow-control-activities/scheduler.html){target=&quot;_blank&quot;}.
+Som standard aktiveras arbetsflödet varje torsdag kl. 7.30. Du kan använda **[!UICONTROL Execute pending task(s) now]** möjlighet att starta arbetsflödet när som helst när du implementerar den här integreringen.  Du kan också redigera schemaläggaren för att ändra arbetsflödets utlösande frekvens. Läs mer i [den här sidan](../../automation/workflow/scheduler.md).
 
 >[!CAUTION]
 >

@@ -5,10 +5,10 @@ feature: Email
 role: User
 level: Intermediate, Experienced
 exl-id: e4e3fb49-9942-4e2d-a020-557d1ac5dcdc
-source-git-commit: edb099b3e882d857752af76798012ccd1c5a99be
+source-git-commit: 1baeb8827a0eab4f9487bb5e5afe4d779e00efe4
 workflow-type: tm+mt
-source-wordcount: '423'
-ht-degree: 4%
+source-wordcount: '411'
+ht-degree: 5%
 
 ---
 
@@ -66,7 +66,16 @@ Observera följande särdrag och rekommendationer:
 
 <!--Only successfully sent emails are taken in account, bounces are not.-->
 
-**Läs mer i dokumentationen för Campaign Classic v7**
+**Läs mer**
+
+I dessa avsnitt:
+
+* [Använd mallar för e-postleverans](../send/create-templates.md)
+
+* [Förstå leveransfel](../send/delivery-failures.md)
+
+
+Och i Campaign Classic v7-dokumentationen:
 
 * [Välj e-postformat](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/sending-emails/sending-an-email/email-parameters.html#selecting-message-formats){target="_blank"}
 
@@ -74,6 +83,3 @@ Observera följande särdrag och rekommendationer:
 
 * [Ange studsens e-postadress](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/sending-emails/sending-an-email/email-parameters.html#managing-bounce-emails){target="_blank"}
 
-* [Använd mallar för e-postleverans](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/using-delivery-templates/about-templates.html){target="_blank"}
-
-* [Förstå leveransfel](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/monitoring-deliveries/understanding-delivery-failures.html){target="_blank"}

@@ -5,9 +5,9 @@ feature: Profiles
 role: User
 level: Beginner
 exl-id: b0f8c057-dd4e-4284-b5a4-157986a1d95a
-source-git-commit: 2ce1ef1e935080a66452c31442f745891b9ab9b3
+source-git-commit: 1baeb8827a0eab4f9487bb5e5afe4d779e00efe4
 workflow-type: tm+mt
-source-wordcount: '317'
+source-wordcount: '228'
 ht-degree: 0%
 
 ---
@@ -22,17 +22,10 @@ Med Campaign kan du lägga till kontakter i molndatabasen. Du kan läsa in en fi
 
 ## Importera profiler i ett arbetsflöde
 
-Profilimport konfigureras i dedikerade mallar som körs via arbetsflöden via **Importera** aktivitet. De kan upprepas automatiskt enligt ett schema, t.ex. för att automatisera datautbyte mellan olika informationssystem. Läs mer i [Campaign Classic v7-dokumentation](https://experienceleague.adobe.com/docs/campaign-classic/using/getting-started/importing-and-exporting-data/import-export-workflows.html){target=&quot;_blank&quot;}.
+Profilimport konfigureras i dedikerade mallar som körs via arbetsflöden via **Importera** aktivitet. De kan upprepas automatiskt enligt ett schema, t.ex. för att automatisera datautbyte mellan olika informationssystem. Läs mer i [det här avsnittet](../../automation/workflow/recurring-import-workflow.md).
 
 ![](assets/import-wf.png)
 
-Läs mer i Campaign Classic v7-dokumentationen:
-
-* [Kom igång med import och export](https://experienceleague.adobe.com/docs/campaign-classic/using/getting-started/importing-and-exporting-data/get-started-data-import-export.html){target=&quot;_blank&quot;}
-
-* [Importera och exportera metodtips](https://experienceleague.adobe.com/docs/campaign-classic/using/getting-started/importing-and-exporting-data/best-practices/import-export-best-practices.html){target=&quot;_blank&quot;}
-
-* [Konfigurera och köra en import](https://experienceleague.adobe.com/docs/campaign-classic/using/getting-started/importing-and-exporting-data/generic-imports-exports/executing-import-jobs.html){target=&quot;_blank&quot;}
 
 ## Kör enhetsimporter
 
@@ -40,7 +33,7 @@ Skapa och kör ett allmänt dataimportjobb för att läsa in kontakter i molndat
 
 ![](assets/new-import.png)
 
-![](../assets/do-not-localize/book.png) Lär dig hur du kör enhetsimportjobb för att mata in databasen i [Campaign Classic v7-dokumentation](https://experienceleague.adobe.com/docs/campaign-classic/using/getting-started/importing-and-exporting-data/generic-imports-exports/about-generic-imports-exports.html){target=&quot;_blank&quot;}.
+![](../assets/do-not-localize/book.png) Lär dig hur du kör enhetsimportjobb för att mata in databasen i [Campaign Classic v7-dokumentation](https://experienceleague.adobe.com/docs/campaign-classic/using/getting-started/importing-and-exporting-data/generic-imports-exports/about-generic-imports-exports.html){target="_blank"}.
 
 ## Samla in profiler via webbprogram
 
@@ -48,10 +41,10 @@ Använd Campaign för att skapa webbformulär och samla in och hantera profilinf
 
 ![](assets/web-form-page.png)
 
-![](../assets/do-not-localize/book.png) Lär dig hur du skapar webbformulär i [Campaign Classic v7-dokumentation](https://experienceleague.adobe.com/docs/campaign-classic/using/designing-content/web-forms/about-web-forms.html){target=&quot;_blank&quot;}.
+![](../assets/do-not-localize/book.png) Lär dig hur du skapar webbformulär i [Campaign Classic v7-dokumentation](https://experienceleague.adobe.com/docs/campaign-classic/using/designing-content/web-forms/about-web-forms.html){target="_blank"}.
 
 **Relaterade ämnen**
 
 * [Skapa målgrupper](audiences.md)
-* [Deduplicera profiler](https://experienceleague.adobe.com/docs/campaign/automation/workflows/use-cases/data-management/deduplication-merge.html)
-* [Förbättra profildata](https://experienceleague.adobe.com/docs/campaign/automation/workflows/use-cases/data-management/enrich-data.html)
+* [Deduplicera profiler](../../automation/workflow/deduplication-merge.md)
+* [Förbättra profildata](../../automation/workflow/enrich-data.md)
