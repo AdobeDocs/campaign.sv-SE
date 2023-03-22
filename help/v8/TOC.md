@@ -4,9 +4,9 @@ user-guide-title: Campaign v8
 description: Dokumentation om Campaign v8
 breadcrumb-title: Översikt över Campaign
 title: Campaign v8 dokument
-source-git-commit: 4c79078e32c77499f15906fc81f31ce2b26559d7
+source-git-commit: 23f30dee861250532490da8598e6e0e18f72c1b0
 workflow-type: tm+mt
-source-wordcount: '520'
+source-wordcount: '521'
 ht-degree: 25%
 
 ---
@@ -56,15 +56,15 @@ ht-degree: 25%
          + [Leveransfel](send/delivery-failures.md)
       + [Tidsoptimering för sändning](send/predictive.md)
       + [Hantera prenumerationer](start/subscriptions.md)
-   + Anpassa innehåll {#personalize}
-      + [Kom igång med personalisering](send/personalize.md)
-      + [Personaliseringsdata](send/personalization-data.md)
-      + [Lägg till anpassningsfält](send/personalization-fields.md)
-      + [Använd personaliseringsblock](send/personalization-blocks.md)
-      + [Skapa villkor](send/conditions.md)
-   + Validera leveransen {#validate}
-      + [Förhandsgranska och korrektur](send/preview-and-proof.md)
-      + [Leveransanalys](send/delivery-analysis.md)
+      + Anpassa innehåll {#personalize}
+         + [Kom igång med personalisering](send/personalize.md)
+         + [Personaliseringsdata](send/personalization-data.md)
+         + [Lägg till anpassningsfält](send/personalization-fields.md)
+         + [Använd personaliseringsblock](send/personalization-blocks.md)
+         + [Skapa villkor](send/conditions.md)
+      + Validera leveransen {#validate}
+         + [Förhandsgranska och mejla korrektur](send/preview-and-proof.md)
+         + [Leveransanalys](send/delivery-analysis.md)
 + Profil- och målgruppshantering {#audience}
    + [Kom igång med profiler och målgrupper](audiences/gs-audiences.md)
    + [Arbeta med målgrupper](start/audiences.md)
