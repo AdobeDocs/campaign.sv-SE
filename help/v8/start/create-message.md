@@ -5,10 +5,10 @@ feature: Email, Push, SMS, Direct Mail, Cross Channel Orchestration
 role: User
 level: Beginner
 exl-id: 6cf8a929-637e-4e51-9160-5980ca727efb
-source-git-commit: 2ce1ef1e935080a66452c31442f745891b9ab9b3
+source-git-commit: 4c79078e32c77499f15906fc81f31ce2b26559d7
 workflow-type: tm+mt
-source-wordcount: '633'
-ht-degree: 2%
+source-wordcount: '469'
+ht-degree: 4%
 
 ---
 
@@ -42,7 +42,7 @@ När meddelandet har skapats och dess innehåll har utformats och testats kan du
 
    ![](assets/send-email.png)
 
-   ![](../assets/do-not-localize/book.png) Lär dig hur du skickar meddelanden i [Campaign Classic v7-dokumentation](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/sending-emails/sending-an-email/sending-messages.html){target=&quot;_blank&quot;}
+   Lär dig hur du skickar meddelanden i [det här avsnittet](../send/send.md)
 
 * Skicka meddelanden som är kopplade till en [marknadsföringskampanj](campaigns.md)
 
@@ -54,30 +54,26 @@ När meddelandet har skapats och dess innehåll har utformats och testats kan du
 
    ![](assets/send-in-a-wf.png)
 
-   ![](../assets/do-not-localize/glass.png) Lär dig automatisera e-postleveranser i [den här sidan](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/action-activities/delivery.html)
+   Lär dig automatisera e-postleveranser i [den här sidan](../../automation/workflow/delivery.md)
 
 * [Utlösarmeddelanden](../send/transactional.md) från en händelse
-   ![](../assets/do-not-localize/book.png) [Användningsfall: lära dig hur du skickar ett transaktionsmejl med en bifogad fil](https://experienceleague.adobe.com/docs/campaign-classic/using/transactional-messaging/transactional-email-with-attachments.html?lang=en){target=&quot;_blank&quot;}
 
 * Schemalägg meddelanden
 
    ![](assets/schedule-send.png)
 
-   ![](../assets/do-not-localize/glass.png) [Användningsfall: läs om schemat och skicka födelsedag via e-post](https://experienceleague.adobe.com/docs/campaign/automation/workflows/use-cases/deliveries/send-a-birthday-email.html)
+[Användningsfall: läs om schemat och skicka födelsedag via e-post](../../automation/workflow/send-a-birthday-email.md)
 
 
 ## Lägg till personalisering{#personalization}
 
-Meddelanden från Adobe Campaign kan personaliseras på olika sätt.
+Meddelanden från Adobe Campaign kan personaliseras på olika sätt. [Läs mer om personaliseringsfunktioner](../send/personalize.md)
 
 Du kan:
 
-* Infoga dynamiska personaliseringsfält.
-   ![](../assets/do-not-localize/book.png) Lär dig hur du använder personaliseringsfält i [Campaign Classic v7-dokumentation](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/personalizing-deliveries/personalization-fields.html){target=&quot;_blank&quot;}
-* Infoga fördefinierade personaliseringsblock.
-   ![](../assets/do-not-localize/book.png) Lär dig vad som är ett personaliseringsblock och hur du använder det i [Campaign Classic v7-dokumentation](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/personalizing-deliveries/personalization-blocks.html){target=&quot;_blank&quot;}
-* Skapa villkorsstyrt innehåll.
-   ![](../assets/do-not-localize/book.png) Lär dig hur du infogar villkorsstyrt innehåll i [Campaign Classic v7-dokumentation](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/personalizing-deliveries/conditional-content.html){target=&quot;_blank&quot;}
+* Infoga dynamiska personaliseringsfält. [Läs mer](../send/personalization-fields.md)
+* Infoga fördefinierade personaliseringsblock. [Läs mer](../send/personalization-blocks.md)
+* Skapa villkorsstyrt innehåll. [Läs mer](../send/conditions.md)
 
 ## Skicka transaktionsmeddelanden{#gs-transac-messages}
 
@@ -87,19 +83,11 @@ Transactional messaging (Message Center) är den Campaign-modul som är avsedd f
 
 ![](../assets/do-not-localize/glass.png) Steg för att konfigurera och skicka transaktionsmeddelanden beskrivs i [den här sidan](../send/transactional.md)
 
-![](../assets/do-not-localize/book.png) Upptäck den här funktionen i ett heltäckande användningsfall i [Campaign Classic v7-dokumentation](https://experienceleague.adobe.com/docs/campaign-classic/using/transactional-messaging/transactional-email-with-attachments.html){target=&quot;_blank&quot;}
+![](../assets/do-not-localize/book.png) Upptäck den här funktionen i ett heltäckande användningsfall i [Campaign Classic v7-dokumentation](https://experienceleague.adobe.com/docs/campaign-classic/using/transactional-messaging/transactional-email-with-attachments.html){target="_blank"}
 
 ## Loggar för leverans och spårning{#gs-tracking-logs}
 
 Att övervaka era leveranser efter att de har skickats är ett viktigt steg för att se till att era marknadsföringskampanjer är effektiva och når ut till era kunder. Du kan övervaka efter att du har skickat en leverans samt förstå hur leveransfel och karantäner hanteras.
 
-![](../assets/do-not-localize/book.png) Lär dig hur du övervakar leveranser i [Campaign Classic v7-dokumentation](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/monitoring-deliveries/about-delivery-monitoring.html#sending-messages){target=&quot;_blank&quot;}
+![](../assets/do-not-localize/book.png) Lär dig hur du övervakar leveranser i [Campaign Classic v7-dokumentation](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/monitoring-deliveries/about-delivery-monitoring.html#sending-messages){target="_blank"}
 
-
-**Relaterade ämnen** Campaign Classic v7-dokumentation:
-
-* [Bästa praxis](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/key-steps-when-creating-a-delivery/delivery-bestpractices/delivery-best-practices.html){target=&quot;_blank&quot;}
-
-* [Testa och skicka ett e-postmeddelande](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/sending-emails/sending-an-email/sending-messages.html){target=&quot;_blank&quot;}
-
-* [Skicka korrektur](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/key-steps-when-creating-a-delivery/steps-validating-the-delivery.html){target=&quot;_blank&quot;}

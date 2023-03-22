@@ -5,9 +5,9 @@ feature: Email
 role: User
 level: Beginner
 exl-id: 97dcd0e0-db5b-45a4-96af-817e49f6cb64
-source-git-commit: 34af97ae01f7dba418fd0a8c950fc549dfbbd98b
+source-git-commit: 4c79078e32c77499f15906fc81f31ce2b26559d7
 workflow-type: tm+mt
-source-wordcount: '576'
+source-wordcount: '567'
 ht-degree: 5%
 
 ---
@@ -92,9 +92,7 @@ Läs mer i dessa avsnitt av **Campaign Classic v7-dokumentation**:
 
 ## Testa och validera dina e-postmeddelanden
 
-Campaign erbjuder flera sätt att testa och validera dina e-postmeddelanden innan de skickas till era målgrupper.
-
-![](../assets/do-not-localize/book.png) [Tillämpa bästa praxis som anges i dokumentationen för Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/key-steps-when-creating-a-delivery/delivery-bestpractices/check-before-sending.html){target="_blank"}
+Campaign erbjuder flera sätt att testa och validera dina e-postmeddelanden innan de skickas till era målgrupper. Lär dig hur du förhandsgranskar och testar e-postinnehåll i [den här sidan](../send/preview-and-proof.md).
 
 Du kan:
 
@@ -102,6 +100,5 @@ Du kan:
 * Skicka korrektur
 * Lägg till dirigerade adresser
 * Använd kontrollgrupper
-* Kontrollera e-poståtergivning
 
 ![](../assets/do-not-localize/book.png) [Läs mer i dokumentationen för Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/key-steps-when-creating-a-delivery/steps-validating-the-delivery.html){target="_blank"}

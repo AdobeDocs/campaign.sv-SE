@@ -5,9 +5,9 @@ feature: Email
 role: Data Engineer
 level: Beginner
 exl-id: f2c26351-8ed7-498a-ac83-d4c583fb98f3
-source-git-commit: 9fa6666532a6943c438268d7ea832f0908588208
+source-git-commit: 4c79078e32c77499f15906fc81f31ce2b26559d7
 workflow-type: tm+mt
-source-wordcount: '883'
+source-wordcount: '795'
 ht-degree: 0%
 
 ---
@@ -15,16 +15,9 @@ ht-degree: 0%
 
 # Skicka och övervaka e-postmeddelanden
 
-Kontrollera att du har kört leveransanalysen när leveransen är konfigurerad och klar att skickas.
-
-![](../assets/do-not-localize/book.png) [Läs mer i dokumentationen för Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/key-steps-when-creating-a-delivery/steps-sending-the-delivery.html#confirming-delivery){target=&quot;_blank&quot;}
+Kontrollera att du har kört leveransanalysen när leveransen är konfigurerad och klar att skickas. [Läs mer](delivery-analysis.md)
 
 Bekräfta leveransen när du är klar för att starta meddelandeleveransen.
-
-Du kan även:
-
-* schemalägg leveransen till senare genom att använda [senarelägga leverans](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/key-steps-when-creating-a-delivery/steps-sending-the-delivery.html#scheduling-the-delivery-sending){target=&quot;_blank&quot;},
-* skicka till flera grupper med [flera vågor](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/key-steps-when-creating-a-delivery/steps-sending-the-delivery.html#sending-using-multiple-waves){target=&quot;_blank&quot;}.
 
 Spåra leveransen från **Leverans** -fliken, tillgänglig via detaljer om leveransen eller via listan över leveranser.
 
@@ -32,7 +25,7 @@ Spåra leveransen från **Leverans** -fliken, tillgänglig via detaljer om lever
 
 När du har skickat den kontrollerar du leveransstatus på kontrollpanelen och öppnar leveransloggar och rapporter för att bekräfta att meddelandena har skickats korrekt.
 
-![](../assets/do-not-localize/book.png) [Läs mer i dokumentationen för Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/key-steps-when-creating-a-delivery/delivery-bestpractices/track-and-monitor.html){target=&quot;_blank&quot;}
+![](../assets/do-not-localize/book.png) [Läs mer i dokumentationen för Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/key-steps-when-creating-a-delivery/delivery-bestpractices/track-and-monitor.html){target="_blank"}
 
 
 ## Kampanj-MTA {#mta}
@@ -59,7 +52,7 @@ MTA kvalificerar SMTP-studsen och skickar tillbaka kvalificeringen till Campaign
 
 >[!NOTE]
 >
->För närvarande **asynkron** studenterna kvalificeras av inMail-processen via **[!UICONTROL Inbound email]** regler. Mer information finns i [Adobe Campaign Classic v7-dokumentation](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/monitoring-deliveries/understanding-delivery-failures.html#bounce-mail-qualification){target=&quot;_blank&quot;}. <!--Refer to [bounce mail qualification](delivery-failures.md#bounce-mail-qualification)-->
+>För närvarande **asynkron** studenterna kvalificeras av inMail-processen via **[!UICONTROL Inbound email]** regler.
 
 Läs mer om leveransfel i [det här avsnittet](delivery-failures.md).
 
@@ -76,7 +69,7 @@ DKIM (Domain Keys Identified Mail) är en autentiseringsmetod som används för 
 
 I Adobe Campaign utförs DKIM-autentisering via e-post av MTA.
 
-Läs mer om DKIM i [Adobe Deliverability Best Practice Guide](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/transition-process/infrastructure.html#authentication){target=&quot;_blank&quot;}.
+Läs mer om DKIM i [Adobe Deliverability Best Practice Guide](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/transition-process/infrastructure.html#authentication){target="_blank"}.
 
 ## Tjänsten Email Feedback {#email-feedback-service}
 
@@ -90,7 +83,7 @@ När meddelandet faktiskt levereras till målprofilerna och när informationen h
 
 När hårda studsmeddelanden rapporteras tillbaka från MTA ändras deras loggstatus från **[!UICONTROL Taken into account by the service provider]** till **[!UICONTROL Failed]**<!-- and the **[!UICONTROL Bounces + errors]** percentage is increased accordingly-->.
 
-När meddelanden med mjuk studsning rapporteras tillbaka från MTA ändras inte loggstatusen (**[!UICONTROL Taken into account by the service provider]**): endast [felorsak](delivery-failures.md#delivery-failure-reasons) uppdateras<!-- and the **[!UICONTROL Bounces + errors]** percentage is increased accordingly-->. The **[!UICONTROL Success]** procentandelen förblir oförändrad. Mjuka studsmeddelanden provas sedan igen under hela leveransen [giltighetsperiod](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/key-steps-when-creating-a-delivery/steps-sending-the-delivery.html#defining-validity-period){target=&quot;_blank&quot;}:
+När meddelanden med mjuk studsning rapporteras tillbaka från MTA ändras inte loggstatusen (**[!UICONTROL Taken into account by the service provider]**): endast [felorsak](delivery-failures.md#delivery-failure-reasons) uppdateras<!-- and the **[!UICONTROL Bounces + errors]** percentage is increased accordingly-->. The **[!UICONTROL Success]** procentandelen förblir oförändrad. Mjuka studsmeddelanden provas sedan igen under hela leveransen [giltighetsperiod](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/key-steps-when-creating-a-delivery/steps-sending-the-delivery.html#defining-validity-period){target="_blank"}:
 
 * Om ett nytt försök lyckas före giltighetsperiodens slut ändras meddelandets status till **[!UICONTROL Sent]** och **[!UICONTROL Success]** procentandelen ökas därefter.
 
