@@ -6,7 +6,7 @@ role: Admin, Developer, User
 level: Beginner, Intermediate, Experienced
 hidefromtoc: false
 exl-id: 7cf8111d-9f3a-46a4-813a-d4e43a1d1471
-source-git-commit: 814f7c81aa4f154fdf289effc82b8d02bdd9b4c6
+source-git-commit: 44743e585119e8cd81a8fcc9b4d667c25c0d438e
 workflow-type: tm+mt
 source-wordcount: '0'
 ht-degree: 0%
@@ -16,6 +16,23 @@ ht-degree: 0%
 # Senaste versionen{#latest-release}
 
 Den här sidan listar nya funktioner, förbättringar och korrigeringar som kommer med den **senaste versionen av Campaign v8**.
+
+## Version 8.4.5 {#release-8-4-5}
+
+_3 april 2023_
+
+**Korrigeringar**
+
+* Korrigerade ett problem som kunde leda till ett duplicerat nyckelbegränsningsfel om flera godkännandearbetsflöden hade angetts till samma schema. (NEO-48968)
+* Korrigerade ett regressionsfel som introducerades av NEO-54474 (8.4.4) som ledde till att formategenskapen för body-taggen ändrades när en bild överfördes till Digital Content Editor (DCE). (NEO-57697)
+* Korrigerade ett problem som kunde leda till ett fel när data exporterades med en CRM-koppling om den tillfälliga tabellen hade en primärnyckel definierad som lång i stället för uuid. (NEO-54153)
+* Korrigerade ett regressionsproblem som introducerades i 8.4.1 som kunde leda till fel vid paketexport, FDA över HTTP och rapportering. (NEO-57731)
+* Ett regressionsproblem som introducerades i 8.3.8 som kunde förhindra att leveransstatusen uppdateras korrekt för leveranser med negativa ID:n har åtgärdats. (NEO-54675)
+* Ett problem med booleska fält vid import av data med Big Query-kopplingen (NEO-49181) har korrigerats
+
+>[!CAUTION]
+>
+> Uppgradering av klientkonsolen är obligatorisk. Lär dig hur du uppgraderar din klientkonsol på den här [sidan](../start/connect.md#upgrade-ac-console).
 
 ## Version 8.4.4 {#release-8-4-4}
 
@@ -27,7 +44,7 @@ _8 mars 2023_
 
 **Korrigeringar**
 
-* Ett problem som kunde förhindra dig från att rulla i dialogrutan har korrigerats **Redigera** -fliken i Digital Content Editor (DCE). (NEO-54474)
+* Korrigerade ett problem som kunde förhindra dig från att skrolla i fliken **Redigera** i Redigeraren för digitalt innehåll (DCE). (NEO-54474)
 * Ett fel som kan leda till att webbservern kraschar har åtgärdats under replikeringen. (NEO-53670)
 
 
