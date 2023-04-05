@@ -4,10 +4,10 @@ description: Lär dig hur du validerar leveransen innan du skickar
 feature: Personalization
 role: User
 level: Beginner
-source-git-commit: e0129524a051827a52de478c3fdc45b963d6c4bb
+source-git-commit: a6d2cb72968fe489a73f92f00f6a50be8ed3e997
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '713'
+ht-degree: 2%
 
 ---
 
@@ -63,7 +63,7 @@ Som standard utförs ersättningen slumpmässigt, men du kan välja en viss mott
    >
    >Seed-adresser tillhör inte standardmottagartabellen (nms:mottagare), de skapas i en separat tabell. Om du utökar mottagartabellen med nya data måste du utöka både dirigerade adresstabellen och samma data.
 
-   Läs mer om dirigerade adresser i [Campaign Classic v7-dokumentation](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/using-seed-addresses/about-seed-addresses.htmll){target="_blank"}.
+   Läs mer om dirigerade adresser i [Campaign Classic v7-dokumentation](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/using-seed-addresses/about-seed-addresses.html){target="_blank"}.
 
 * Använd **[!UICONTROL Specific target and Seed addresses]** om du vill kombinera dirigerade adresser och specifika e-postadresser. De relaterade konfigurationerna definieras sedan i två separata underflikar.
 
