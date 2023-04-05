@@ -4,10 +4,10 @@ description: Lär dig hur du validerar leveransen innan du skickar
 feature: Personalization
 role: User
 level: Beginner
-source-git-commit: 4c79078e32c77499f15906fc81f31ce2b26559d7
+source-git-commit: e0129524a051827a52de478c3fdc45b963d6c4bb
 workflow-type: tm+mt
-source-wordcount: '701'
-ht-degree: 2%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
@@ -34,7 +34,7 @@ Följ stegen nedan om du vill förhandsgranska meddelandeinnehållet:
 
 ## Skicka korrektur {#send-proofs}
 
-Genom att skicka korrektur kan du kontrollera länken för avanmälan, spegelsidan och alla andra länkar, validera meddelandet, verifiera att bilder visas, upptäcka eventuella fel osv. Du kanske också vill kontrollera din design och återgivning på olika enheter.
+För e-postleveranser kan du skicka korrektur för att validera meddelandeinnehållet. Genom att skicka korrektur kan du kontrollera länken för avanmälan, spegelsidan och alla andra länkar, validera meddelandet, verifiera att bilder visas, upptäcka eventuella fel osv. Du kanske också vill kontrollera din design och återgivning på olika enheter.
 
 Ett korrektur är ett specifikt meddelande som gör att du kan testa ett meddelande innan det skickas till huvudmålgruppen. Mottagarna av beviset ansvarar för att godkänna meddelandet: återgivning, innehåll, personaliseringsinställningar, konfiguration.
 
