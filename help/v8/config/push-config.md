@@ -5,11 +5,13 @@ version: v8
 feature: Push
 role: Admin, Developer
 level: Intermediate, Experienced
+hide: true
+hidefromtoc: true
 exl-id: 31c13d7e-55d1-4fbb-82e0-5779a17d65ac
-source-git-commit: 4a017eabf1330b04939aa4bd0602c371a0ee3208
+source-git-commit: e7c255d30e38c4e17779ef820e8984668ac5d48b
 workflow-type: tm+mt
 source-wordcount: '1311'
-ht-degree: 1%
+ht-degree: 3%
 
 ---
 
@@ -24,7 +26,7 @@ Som Campaign-administratör kan du hämta Kampanj-SDK:er från [Experience Cloud
 
 >[!NOTE]
 >
->Du kan också använda Adobe Experience Platform Mobile SDK genom att konfigurera Adobe Campaign-tillägget i användargränssnittet för datainsamling. [Läs mer i dokumentationen för utvecklare](https://developer.adobe.com/client-sdks/documentation/adobe-campaign-classic){target="_blank"}.
+>Du kan också använda den mobila SDK:n i Adobe Experience Platform genom att konfigurera Adobe Campaign-tillägget i användargränssnittet för datainsamling. [Läs mer i dokumentationen för utvecklare](https://developer.adobe.com/client-sdks/documentation/adobe-campaign-classic){target="_blank"}.
 
 ## Deklarera integreringsinställningar {#declaring-integration-settings}
 

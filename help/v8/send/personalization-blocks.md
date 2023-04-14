@@ -4,13 +4,13 @@ description: Lär dig hur du använder inbyggda personaliseringsblock i ditt med
 feature: Personalization
 role: User
 level: Beginner
-source-git-commit: badcbb83c4bd0cf509c156557f5ea6f7cf7ae771
+exl-id: 214ad693-d456-47ec-a9c8-199ba23c3d9c
+source-git-commit: c248dd899ea704e43873652545c6b945c2915b57
 workflow-type: tm+mt
 source-wordcount: '554'
 ht-degree: 1%
 
 ---
-
 
 # Använd personaliseringsblock{#personalization-blocks}
 
@@ -80,5 +80,3 @@ När du har sparat det nya personaliseringsblocket är det tillgängligt i lever
 Lär dig hur du skapar dynamiska innehållsblock och hur du använder dem för att anpassa innehållet i din e-postleverans i följande video.
 
 >[!VIDEO](https://video.tv.adobe.com/v/342088?quality=12)
-
-

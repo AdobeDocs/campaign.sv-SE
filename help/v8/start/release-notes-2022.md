@@ -4,7 +4,8 @@ description: Lista över funktioner och förbättringar i 2022 års Campaign v8-
 feature: Overview
 role: Admin, Developer, User
 level: Beginner, Intermediate, Experienced
-source-git-commit: e7f4982a9b13fe5413b6cce0a1cc58e2b3a6afa4
+exl-id: 76473fa5-48ba-42cf-8664-0dd197833a86
+source-git-commit: c248dd899ea704e43873652545c6b945c2915b57
 workflow-type: tm+mt
 source-wordcount: '1839'
 ht-degree: 13%
@@ -225,9 +226,9 @@ Se [kompatibilitetsmatrisen för Campaign](compatibility-matrix.md).
 * Microsoft Exchange Online OAuth 2.0-autentisering för POP3 stöds nu i Campaign. [Läs mer](../config/external-accounts.md#bounce-mails-external-account)
 * Kritiska korrigeringar har tillämpats för webb-API:et Microsoft Dynamics Connector.
 * Den nya rättigheten Operator och group schema write (operatorWrite) har lagts till så att användare kan infoga, uppdatera och ta bort operatorer (xtk:operator) och Operator-grupper (xtk:group).
+   <!--* You can now enable the Email BCC (blind carbon copy) capability to store emails sent by Campaign at the delivery level, through the dedicated option in the delivery properties. [Read more](../config/email-settings.md#email-bcc)-->
 
-<!--* You can now enable the Email BCC (blind carbon copy) capability to store emails sent by Campaign at the delivery level, through the dedicated option in the delivery properties. [Read more](../config/email-settings.md#email-bcc)-->
-<!--* To ensure better performances, a new "Split" option is now activated by default in the Routing external account. This option allows messages to be automatically split across your mid-sourcing instances in order to be delivered faster to the recipients.-->
+   <!--* To ensure better performances, a new "Split" option is now activated by default in the Routing external account. This option allows messages to be automatically split across your mid-sourcing instances in order to be delivered faster to the recipients.-->
 * Flera LINE-aktiva konton kan nu konfigureras på en enda mellanleverantör.
 * Antalet standardanslutningar för webbprocessen har ökat från 50 till 150.
 * Campaign innehåller en uppsättning nya skyddsritningar för att förhindra att dubblettnycklar infogas i Snowflake-databasen. [Läs mer](../architecture/keys.md)

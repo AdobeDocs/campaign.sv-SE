@@ -4,7 +4,8 @@ description: Lär dig hur du validerar leveransen innan du skickar
 feature: Personalization
 role: User
 level: Beginner
-source-git-commit: a6d2cb72968fe489a73f92f00f6a50be8ed3e997
+exl-id: 5b9fa90c-c23e-47a7-b2ca-de75da4da2ab
+source-git-commit: c248dd899ea704e43873652545c6b945c2915b57
 workflow-type: tm+mt
 source-wordcount: '713'
 ht-degree: 2%

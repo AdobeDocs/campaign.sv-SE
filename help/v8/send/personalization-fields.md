@@ -4,13 +4,13 @@ description: Lär dig hur du infogar personaliseringsdata i ditt meddelandeinneh
 feature: Personalization
 role: User
 level: Beginner
-source-git-commit: badcbb83c4bd0cf509c156557f5ea6f7cf7ae771
+exl-id: 14a741dd-794e-4760-bfa3-bafbe993a3f7
+source-git-commit: c248dd899ea704e43873652545c6b945c2915b57
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '325'
+ht-degree: 2%
 
 ---
-
 
 # Lägg till anpassningsfält{#personalization-fields}
 
@@ -65,4 +65,3 @@ Läs om hur du anpassar ett e-postämne och en brödtext med mottagardata i exem
 Lär dig hur du lägger till ett anpassningsfält på ämnesraden och innehållet i en e-postleverans i följande video.
 
 >[!VIDEO](https://video.tv.adobe.com/v/24925?quality=12)
-

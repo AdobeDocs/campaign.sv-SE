@@ -5,9 +5,9 @@ feature: Push
 role: Data Engineer
 level: Beginner
 exl-id: f04c6e0c-f2b9-496a-9697-04ef4c3411ee
-source-git-commit: 1bcb1b3d1e6062a8b5c0368725248edfc7e3d1b4
+source-git-commit: e7c255d30e38c4e17779ef820e8984668ac5d48b
 workflow-type: tm+mt
-source-wordcount: '1748'
+source-wordcount: '1671'
 ht-degree: 3%
 
 ---
@@ -24,11 +24,12 @@ Om du vill skicka push-meddelanden i Adobe Campaign måste du:
 
 ## Integrera SDK {#push-sdk}
 
-Du kan använda Adobe Experience Platform Mobile SDK genom att konfigurera Adobe Campaign-tillägget i användargränssnittet för datainsamling. Adobe Experience Platform Mobile SDK hjälper er att driva lösningar och tjänster från Adobe Experience Cloud i era mobilappar. SDK-konfigurationen hanteras via användargränssnittet för datainsamling för flexibel konfiguration och utbyggbara, regelbaserade integreringar. [Läs mer i Adobe Developer-dokumentationen](https://developer.adobe.com/client-sdks/documentation/adobe-campaign-classic){target="_blank"}.
+Om du vill skicka push-meddelanden med Adobe Campaign måste du konfigurera Adobe Campaign-tillägget i användargränssnittet för datainsamling i Adobe Experience Platform Mobile SDK.
 
-Ni kan också integrera Campaign SDK för att underlätta integreringen av era mobilapplikationer i Adobe Campaign-plattformen. Kompatibla SDK-versioner visas i [Matris för kampanjkompatibilitet](../start/compatibility-matrix.md#MobileSDK).
+Adobe Experience Platform Mobile SDK hjälper er att driva lösningar och tjänster från Adobe Experience Cloud i era mobilappar. SDK-konfigurationen hanteras via användargränssnittet för datainsamling för flexibel konfiguration och utbyggbara, regelbaserade integreringar.
 
-Lär dig hur du integrerar Campaign Android och iOS SDK med appen i [den här sidan](../config/push-config.md)
+[Läs mer i Adobe Developer-dokumentationen](https://developer.adobe.com/client-sdks/documentation/adobe-campaign-classic){target="_blank"}.
+
 
 ## Konfigurera appinställningarna i Campaign{#push-config}
 
@@ -77,10 +78,7 @@ Så här skapar du en app för iOS-enheter:
 
    Se till att samma **[!UICONTROL Integration key]** definieras i Adobe Campaign och i programkoden via SDK.
 
-   Om du använder Campaign SDK kan du läsa mer i[den här sidan](../config/push-config.md).
-
-
-   Om du använder Adobe Experience Platform SDK (Data Collection), läs mer i [den här sidan](https://developer.adobe.com/client-sdks/documentation/adobe-campaign-classic/#configuration-keys){target="_blank"}
+   Läs mer i [dokumentation för utvecklare](https://developer.adobe.com/client-sdks/documentation/adobe-campaign-classic/#configuration-keys){target="_blank"}
 
 
    >[!NOTE]
@@ -119,9 +117,7 @@ Så här skapar du en app för Android-enheter:
 
    Se till att samma **[!UICONTROL Integration key]** definieras i Adobe Campaign och i programkoden via SDK.
 
-   Om du använder Campaign SDK kan du läsa mer i [den här sidan](../config/push-config.md).
-
-   Om du använder Adobe Experience Platform SDK (Data Collection), läs mer i [den här sidan](https://developer.adobe.com/client-sdks/documentation/adobe-campaign-classic/#configuration-keys){target="_blank"}
+   Läs mer i [dokumentation för utvecklare](https://developer.adobe.com/client-sdks/documentation/adobe-campaign-classic/#configuration-keys){target="_blank"}
 
 
    >[!NOTE]

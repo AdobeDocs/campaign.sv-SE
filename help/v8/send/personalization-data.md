@@ -4,13 +4,13 @@ description: Lär dig vilka källor som kan användas för personalisering
 feature: Personalization
 role: User
 level: Beginner
-source-git-commit: 50688c051b9d8de2b642384963ac1c685c0c33ee
+exl-id: 711256e2-ab77-404a-b052-6793a85da193
+source-git-commit: c248dd899ea704e43873652545c6b945c2915b57
 workflow-type: tm+mt
 source-wordcount: '625'
 ht-degree: 2%
 
 ---
-
 
 # Datakällor för personalisering{#personalization-data}
 
@@ -71,7 +71,3 @@ När analysen är klar går du till arbetsflödet **[!UICONTROL Properties]** oc
 När en leverans skapas i ett arbetsflödes sammanhang kan du använda data från den tillfälliga arbetsflödestabellen. De data som lagras i arbetsflödets temporära arbetsregister är tillgängliga för personaliseringsåtgärder. Data kan användas i personaliseringsfälten.
 
 Dessa data grupperas i **[!UICONTROL Target extension]** -menyn. Mer information om detta finns i [det här avsnittet](../../automation/workflow/use-workflow-data.md#target-data).
-
-
-
-
