@@ -5,20 +5,20 @@ feature: Transactional Messaging
 role: Admin, Developer
 level: Intermediate, Experienced
 exl-id: 2899f627-696d-422c-ae49-c1e293b283af
-source-git-commit: 2ce1ef1e935080a66452c31442f745891b9ab9b3
+source-git-commit: c61f03252c7cae72ba0426d6edcb839950267c0a
 workflow-type: tm+mt
-source-wordcount: '326'
+source-wordcount: '0'
 ht-degree: 0%
 
 ---
 
 # Inställningar för transaktionsmeddelanden
 
-![](../assets/do-not-localize/speech.png)  Som användare av hanterade Cloud Services [kontakta Adobe](../start/campaign-faq.md#support) för att installera och konfigurera Campaign Transactional Messaging i er miljö.
+![](../assets/do-not-localize/speech.png) Som användare av hanterade Cloud Services [kontakta Adobe](../start/campaign-faq.md#support) för att installera och konfigurera Campaign Transactional Messaging i er miljö.
 
 ![](../assets/do-not-localize/glass.png) Funktionerna för transaktionsmeddelanden beskrivs i [det här avsnittet](../send/transactional.md).
 
-![](../assets/do-not-localize/glass.png) Förstå arkitekturen för transaktionsmeddelanden i [den här sidan](../architecture/architecture.md).
+![](../assets/do-not-localize/glass.png) Förstå arkitekturen för transaktionsmeddelanden i [den här sidan](../architecture/architecture.md#transac-msg-archi).
 
 ## Definiera behörigheter
 
@@ -34,7 +34,7 @@ Alla schematillägg som gjorts för scheman som används av **Tekniska arbetsfl�
 
 I kombination med mobilappskanalmodulen kan du med transaktionsmeddelanden skicka transaktionsmeddelanden via meddelanden på mobila enheter.
 
-![](../assets/do-not-localize/book.png) Mobilappskanalen finns i [Campaign Classic v7-dokumentation](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/sending-push-notifications/about-mobile-app-channel.html?lang=en#sending-messages).
+![](../assets/do-not-localize/book.png) Mobilappskanalen finns i [det här avsnittet](../send/push.md).
 
 Om du vill skicka push-meddelanden för transaktioner måste du utföra följande konfigurationer:
 
@@ -75,3 +75,49 @@ Här är ett exempel på en händelse som innehåller den här informationen:
    </SOAP-ENV:Body>
 </SOAP-ENV:Envelope>
 ```
+
+## Övervaka gränsvärden {#monitor-thresholds}
+
+Du kan konfigurera varningströskeln (orange) och varningströskeln (röd) för de indikatorer som visas i **Tjänstnivå för meddelandecenter** och **Bearbetningstid för meddelandecenter** rapporter.
+
+Följ stegen nedan för att göra detta:
+
+1. Öppna distributionsguiden på **körningsinstans** och bläddra till **[!UICONTROL Message Center]** sida.
+1. Använd pilarna för att ändra tröskelvärdena.
+
+
+## Rensa händelser {#purge-events}
+
+Du kan anpassa inställningarna för distributionsguiden för att konfigurera hur länge data ska lagras i databasen.
+
+Rensa händelser utförs automatiskt av **Databasrensning** tekniskt arbetsflöde. Det här arbetsflödet tömmer händelser som tagits emot och lagrats på körningsinstanser och händelser som arkiverats på en kontrollinstans.
+
+Använd pilarna för att ändra inställningarna för tömning av **Händelser** (på en körningsinstans) och **Arkiverade händelser** (på en kontrollinstans).
+
+
+## Tekniska arbetsflöden {#technical-workflows}
+
+Du måste se till att de tekniska arbetsflödena för dina kontroll- och körningsinstanser har startats innan du distribuerar några transaktionsmeddelandemallar.
+
+Du kommer sedan åt dessa arbetsflöden via **Administration > Produktion > Meddelandecenter** mapp.
+
+### Styra instansarbetsflöden {#control-instance-workflows}
+
+I kontrollinstansen måste du skapa ett arkiveringsarbetsflöde för varje **[!UICONTROL Message Center execution instance]** externt konto. Klicka på **[!UICONTROL Create the archiving workflow]** för att skapa och starta arbetsflödet.
+
+### Arbetsflöden för körningsinstanser {#execution-instance-workflows}
+
+På körningsinstansen/instanserna måste du starta följande tekniska arbetsflöden:
+
+* **[!UICONTROL Processing batch events]** (internt namn: **[!UICONTROL batchEventsProcessing]** ): Med det här arbetsflödet kan du dela upp grupphändelser i en kö innan de länkas till en meddelandemall.
+* **[!UICONTROL Processing real time events]** (internt namn: **[!UICONTROL rtEventsProcessing]** ): Med det här arbetsflödet kan du bryta ned realtidshändelser i en kö innan de länkas till en meddelandemall.
+* **[!UICONTROL Update event status]** (internt namn: **[!UICONTROL updateEventStatus]** ): det här arbetsflödet gör att du kan tilldela en status till händelsen.
+
+   Möjliga händelselägen är:
+
+   * **[!UICONTROL Pending]**: händelsen finns i kön. Ingen meddelandemall har ännu tilldelats den.
+   * **[!UICONTROL Pending delivery]**: Om händelsen finns i kön har en meddelandemall tilldelats den och bearbetas av leveransen.
+   * **[!UICONTROL Sent]**: den här statusen kopieras från leveransloggarna. Det betyder att leveransen har skickats.
+   * **[!UICONTROL Ignored by the delivery]**: den här statusen kopieras från leveransloggarna. Det betyder att leveransen ignorerats.
+   * **[!UICONTROL Delivery failed]**: den här statusen kopieras från leveransloggarna. Det betyder att leveransen misslyckats.
+   * **[!UICONTROL Event not taken into account]**: händelsen kunde inte länkas till en meddelandemall. Händelsen kommer inte att bearbetas.

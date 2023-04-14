@@ -4,10 +4,10 @@ user-guide-title: Campaign v8
 description: Dokumentation om Campaign v8
 breadcrumb-title: Översikt över Campaign
 title: Campaign v8 dokument
-source-git-commit: 464898df7a362c137d20ebaf2b96bfef71131ae6
+source-git-commit: c61f03252c7cae72ba0426d6edcb839950267c0a
 workflow-type: tm+mt
-source-wordcount: '520'
-ht-degree: 25%
+source-wordcount: '541'
+ht-degree: 24%
 
 ---
 
@@ -50,7 +50,13 @@ ht-degree: 25%
       + [LINE-meddelanden](send/line.md)
       + [Direktmeddelande](send/direct-mail.md)
       + [Twitter](send/twitter.md)
-      + [Transaktionsmeddelanden](send/transactional.md)
+      + Transaktionsmeddelanden {#real-time}
+         + [Kom igång med transaktionsmeddelanden](send/transactional.md)
+         + [Skapa och publicera en mall](send/transactional-template.md)
+         + Händelsehantering {#event}
+         + [Samla in och bearbeta händelser](send/event-processing.md)
+         + [Förstå händelsebeskrivning](send/event-description.md)
+         + [Skicka meddelanden](send/delivery-execution.md)
       + Fel, studsar och karantän{#failures}
          + [Karantän](send/quarantines.md)
          + [Leveransfel](send/delivery-failures.md)
