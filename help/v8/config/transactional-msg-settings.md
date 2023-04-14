@@ -5,7 +5,7 @@ feature: Transactional Messaging
 role: Admin, Developer
 level: Intermediate, Experienced
 exl-id: 2899f627-696d-422c-ae49-c1e293b283af
-source-git-commit: c61f03252c7cae72ba0426d6edcb839950267c0a
+source-git-commit: 2d10a8f4349b9e2405847fc6a3db1ed568c60387
 workflow-type: tm+mt
 source-wordcount: '0'
 ht-degree: 0%
@@ -14,11 +14,11 @@ ht-degree: 0%
 
 # Inställningar för transaktionsmeddelanden
 
+Transactional Messaging (Message Center) är en Campaign-modul som är avsedd för hantering av utlösta meddelanden. Läs mer om Transactional Messaging i [det här avsnittet](../send/transactional.md).
+
+Förstå arkitekturen för transaktionsmeddelanden i [den här sidan](../architecture/architecture.md#transac-msg-archi).
+
 ![](../assets/do-not-localize/speech.png) Som användare av hanterade Cloud Services [kontakta Adobe](../start/campaign-faq.md#support) för att installera och konfigurera Campaign Transactional Messaging i er miljö.
-
-![](../assets/do-not-localize/glass.png) Funktionerna för transaktionsmeddelanden beskrivs i [det här avsnittet](../send/transactional.md).
-
-![](../assets/do-not-localize/glass.png) Förstå arkitekturen för transaktionsmeddelanden i [den här sidan](../architecture/architecture.md#transac-msg-archi).
 
 ## Definiera behörigheter
 
@@ -26,15 +26,11 @@ Om du vill skapa nya användare för instanser av körning i Message Center på 
 
 ## Schematillägg
 
-Alla schematillägg som gjorts för scheman som används av **Tekniska arbetsflöden för meddelandecenter** på antingen kontroll- eller körningsinstanser måste dupliceras på de andra instanser som används av Adobe Campaign transaktionsmeddelandemodul.
-
-![](../assets/do-not-localize/book.png) Läs mer om Tekniska arbetsflöden i Message Center i [Campaign Classic v7-dokumentation](https://experienceleague.adobe.com/docs/campaign-classic/using/transactional-messaging/configure-transactional-messaging/additional-configurations.html#technical-workflows)
+Alla schematillägg som gjorts för scheman som används av [Tekniska arbetsflöden för meddelandecenter](#technical-workflows) på antingen kontroll- eller körningsinstanser måste dupliceras på de andra instanser som används av Adobe Campaign transaktionsmeddelandemodul.
 
 ## Skicka push-meddelanden för transaktioner
 
-I kombination med mobilappskanalmodulen kan du med transaktionsmeddelanden skicka transaktionsmeddelanden via meddelanden på mobila enheter.
-
-![](../assets/do-not-localize/book.png) Mobilappskanalen finns i [det här avsnittet](../send/push.md).
+Vid kombination med [Modulen Mobilappskanal](../send/push.md)kan du med transaktionsmeddelanden skicka transaktionsmeddelanden via meddelanden på mobila enheter.
 
 Om du vill skicka push-meddelanden för transaktioner måste du utföra följande konfigurationer:
 
@@ -46,14 +42,14 @@ Om du vill skicka push-meddelanden för transaktioner måste du utföra följand
 
 1. Replikera **Mobilapplikation** och tillhörande mobilprogram på körningsinstanserna.
 
-För att Campaign ska kunna skicka transaktionspush-meddelanden måste händelsen innehålla följande element:
+Dessutom måste händelsen innehålla följande element:
 
-* ID för den mobila enheten: **registrationId** för Android och **deviceToken** för iOS. Detta ID representerar den adress som meddelandet ska skickas till.
+* ID för den mobila enheten: **registrationId** för Android och **deviceToken** för iOS. Detta ID representerar den adress som meddelandet skickas till.
 * Länken till mobilprogrammet eller integreringsnyckeln (**uuid**) som gör att du kan hämta anslutningsinformation som är specifik för programmet.
 * Den kanal som meddelandet skickas till (**requestedChannel**): 41 för iOS och 42 för Android.
-* Andra data som kan användas för personalisering.
+* Andra personaliseringsdata.
 
-Här är ett exempel på en händelse som innehåller den här informationen:
+Nedan visas ett exempel på en händelsekonfiguration som skickar push-meddelanden för transaktioner:
 
 ```
 <SOAP-ENV:Envelope xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:SOAP-ENV="http://schemas.xmlsoap.org/soap/envelope/">
@@ -76,14 +72,7 @@ Här är ett exempel på en händelse som innehåller den här informationen:
 </SOAP-ENV:Envelope>
 ```
 
-## Övervaka gränsvärden {#monitor-thresholds}
 
-Du kan konfigurera varningströskeln (orange) och varningströskeln (röd) för de indikatorer som visas i **Tjänstnivå för meddelandecenter** och **Bearbetningstid för meddelandecenter** rapporter.
-
-Följ stegen nedan för att göra detta:
-
-1. Öppna distributionsguiden på **körningsinstans** och bläddra till **[!UICONTROL Message Center]** sida.
-1. Använd pilarna för att ändra tröskelvärdena.
 
 
 ## Rensa händelser {#purge-events}

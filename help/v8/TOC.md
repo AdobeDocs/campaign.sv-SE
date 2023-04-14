@@ -4,9 +4,9 @@ user-guide-title: Campaign v8
 description: Dokumentation om Campaign v8
 breadcrumb-title: Översikt över Campaign
 title: Campaign v8 dokument
-source-git-commit: c61f03252c7cae72ba0426d6edcb839950267c0a
+source-git-commit: 2d10a8f4349b9e2405847fc6a3db1ed568c60387
 workflow-type: tm+mt
-source-wordcount: '541'
+source-wordcount: '543'
 ht-degree: 24%
 
 ---
@@ -56,7 +56,7 @@ ht-degree: 24%
          + Händelsehantering {#event}
          + [Samla in och bearbeta händelser](send/event-processing.md)
          + [Förstå händelsebeskrivning](send/event-description.md)
-         + [Skicka meddelanden](send/delivery-execution.md)
+         + [Skicka och övervaka meddelanden](send/delivery-execution.md)
       + Fel, studsar och karantän{#failures}
          + [Karantän](send/quarantines.md)
          + [Leveransfel](send/delivery-failures.md)
