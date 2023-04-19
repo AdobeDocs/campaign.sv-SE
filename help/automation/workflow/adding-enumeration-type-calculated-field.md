@@ -6,7 +6,8 @@ audience: workflow
 content-type: reference
 topic-tags: use-cases
 feature: Workflows, Data Management
-source-git-commit: 2b1dec4b9c456df4dfcebfe10d18e0ab01599275
+exl-id: 4fe2ae81-faa6-4777-a332-70c451bca75b
+source-git-commit: 1c879c7803c346d4b602089a22c2639eb83e82be
 workflow-type: tm+mt
 source-wordcount: '412'
 ht-degree: 0%
@@ -14,8 +15,6 @@ ht-degree: 0%
 ---
 
 # Lägg till ett beräkningsfält av uppräkningstyp {#adding-an-enumeration-type-calculated-field}
-
-
 
 Här vill vi skapa en fråga med en **[!UICONTROL Enumerations]** skriv beräkningsfält. Det här fältet genererar ytterligare en kolumn i förhandsgranskningsfönstret för data. Den här kolumnen anger de numeriska värden som returneras som resultat för varje mottagare (0, 1 och 2). Varje värde i den nya kolumnen tilldelas ett kön: &quot;Man&quot; för &quot;1&quot;, &quot;kvinna&quot; för &quot;2&quot; eller &quot;Inte angivet&quot; om värdet är lika med &quot;0&quot;.
 
