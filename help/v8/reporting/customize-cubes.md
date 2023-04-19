@@ -5,9 +5,10 @@ description: Lär dig de bästa sätten att implementera kuber i Adobe Campaign
 feature: Reporting
 role: Data Engineer
 level: Beginner
-source-git-commit: 8d9b8d3e31362c2d69ec0fc6f16ab375538d7f10
+exl-id: 300aedd0-6b5d-4264-bd63-e26a41ab64db
+source-git-commit: 1c879c7803c346d4b602089a22c2639eb83e82be
 workflow-type: tm+mt
-source-wordcount: '1417'
+source-wordcount: '1431'
 ht-degree: 1%
 
 ---
@@ -63,6 +64,8 @@ Så här skapar du den här typen av värdebindning:
 
    När uppräkningsvärdena uppdateras anpassas de matchande binderna automatiskt.
 
+Läs mer om uppräkningar i [den här sidan](../../v8/config/ui-settings.md#enumerations).
+
 ### Skapa värdeintervall {#create-value-ranges}
 
 Du kan gruppera värdena i intervall baserat på önskat intervall.
@@ -110,6 +113,8 @@ Du behöver bara ändra uppräkningen för att uppdatera den relaterade rapporte
 The **[!UICONTROL Domains]** uppräkningen används för att generera inbyggda rapporter som visar listan över domäner. Om du vill anpassa innehållet i dessa rapporter kan du redigera den här listan.
 
 Du kan skapa andra uppräkningar som är reserverade för bindning och använda dem i andra kuber: alla aliasvärden grupperas om i de biner som anges på den första uppräkningsfliken.
+
+Läs mer om uppräkningar i [den här sidan](../../v8/config/ui-settings.md#enumerations).
 
 ## Sammansättningar i kuber {#calculate-and-use-aggregates}
 
