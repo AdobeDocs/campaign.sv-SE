@@ -5,7 +5,7 @@ version: v8
 feature: Application Settings
 role: Admin, Developer
 level: Beginner, Intermediate, Experienced
-source-git-commit: 1c879c7803c346d4b602089a22c2639eb83e82be
+source-git-commit: 0b4483e0f16f14582a1a4bc28b0e1ff719823ef3
 workflow-type: tm+mt
 source-wordcount: '851'
 ht-degree: 1%
@@ -89,7 +89,7 @@ Du kan också konvertera ett befintligt uppräkningsvärde till ett alias. Så h
    ![Skapa ett nytt alias](assets/define-new-alias.png)
 
 
->[!CAUTION]
+>[!NOTE]
 >
 >Du kan spåra förekomster av ett alias i dialogrutan **[!UICONTROL Hits]** kolumn i **[!UICONTROL Alias]** underflik. Den kan visa hur många gånger det här värdet har angetts.  [Läs mer](#calculate-entry-occurrences).
 
