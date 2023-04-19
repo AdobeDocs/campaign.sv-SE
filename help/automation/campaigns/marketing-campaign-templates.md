@@ -4,9 +4,9 @@ title: Mallar för marknadsföringskampanjer
 description: Mallar för marknadsföringskampanjer
 feature: Campaigns, Templates
 exl-id: 1bd8d3e7-aaa9-4e00-96bb-0d30614ab380
-source-git-commit: 60db4c2e8cd280845ddd0176bd10dc1b7edbb767
+source-git-commit: 1c879c7803c346d4b602089a22c2639eb83e82be
 workflow-type: tm+mt
-source-wordcount: '999'
+source-wordcount: '0'
 ht-degree: 0%
 
 ---
@@ -167,7 +167,7 @@ När du skapar en kampanjmall måste du ange följande information:
 * Ange **label** av mallen: etiketten är obligatorisk och är standardetikett för alla kampanjer som baseras på den här mallen.
 * Välj kampanj **natur** i listrutan. De värden som är tillgängliga i den här listan är de som har sparats i **[!UICONTROL natureOp]** uppräkning.
 
-Lär dig hur du får åtkomst till och konfigurerar dina uppräkningar i [Campaign Classic v7-dokumentation](https://experienceleague.adobe.com/docs/campaign-classic/using/getting-started/administration-basics/managing-enumerations.html){target=&quot;_blank&quot;}.
+Lär dig hur du får åtkomst till och konfigurerar dina uppräkningar i [den här sidan](../../v8/config/ui-settings.md#enumerations).
 
 
 * Välj **kampanjtyp**: unika, återkommande eller periodiska. Som standard används kampanjmallar för unika kampanjer. Återkommande och periodiska kampanjer beskrivs i [det här avsnittet](recurring-periodic-campaigns.md).
