@@ -3,10 +3,10 @@ title: Inbyggda leveransrapporter från Adobe Campaign
 description: Inbyggda leveransrapporter från Adobe Campaign
 feature: Reporting
 exl-id: e9031d65-6e0e-49da-9990-7687d2a77591
-source-git-commit: edb099b3e882d857752af76798012ccd1c5a99be
+source-git-commit: 1c879c7803c346d4b602089a22c2639eb83e82be
 workflow-type: tm+mt
-source-wordcount: '1031'
-ht-degree: 1%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
@@ -83,7 +83,7 @@ Den här värdetabellen visar hur leveranser, öppningar, klickningar och rårea
 >
 >Domännamnen som visas i den här rapporten definieras i den specificerade lista som används på kubnivå. Om du vill ändra, lägga till eller ta bort standarddomäner redigerar du **[!UICONTROL Domains]** specificera lista och ändra värden och alias. The **[!UICONTROL Others]** -kategorin innehåller domännamn som inte tillhör något värde i den specificerade listan.
 >
->Lär dig hur du får åtkomst till och konfigurerar dina uppräkningar i [Campaign Classic v7-dokumentation](https://experienceleague.adobe.com/docs/campaign-classic/using/getting-started/administration-basics/managing-enumerations.html){target="_blank"}.
+>Lär dig hur du får åtkomst till och konfigurerar dina uppräkningar i [den här sidan](../config/ui-settings.md).
 
 
 **[!UICONTROL 4. Generated click streams]**
