@@ -5,10 +5,10 @@ feature: Transactional Messaging
 role: User
 level: Beginner, Intermediate
 exl-id: 06fdb279-3776-433f-8d27-33d016473dee
-source-git-commit: 2a85ffc2fe3a839c14a5c844deaa7a09687743eb
+source-git-commit: 1c879c7803c346d4b602089a22c2639eb83e82be
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '1510'
+ht-degree: 1%
 
 ---
 
@@ -57,10 +57,8 @@ När [skapa en meddelandemall](#create-message-template)väljer du den typ av h�
 
 Följ stegen nedan för att skapa händelsetyper som ska bearbetas av Adobe Campaign:
 
-1. Gå till **[!UICONTROL Administration > Platform > Enumerations]** mapp i trädet.
-
-1. Välj **[!UICONTROL Event type]** från listan.
-
+1. Bläddra till **[!UICONTROL Administration > Platform > Enumerations]** mapp för Campaign Explorer.
+1. Välj **[!UICONTROL Event type]** uppräkning från listan.
 1. Klicka **[!UICONTROL Add]** för att skapa ett uppräkningsvärde. Detta kan vara en orderbekräftelse, lösenordsändring, orderleveransändring osv.
 
    ![](assets/messagecenter_eventtype_enum_001.png)
@@ -73,7 +71,8 @@ Följ stegen nedan för att skapa händelsetyper som ska bearbetas av Adobe Camp
 
 >[!NOTE]
 >
->Läs mer om specificerade listor i [Campaign Classic v7-dokumentation](https://experienceleague.adobe.com/docs/campaign-classic/using/getting-started/administration-basics/managing-enumerations.html){target="_blank"}.
+>Läs mer om uppräkningar i [den här sidan](../../v8/config/ui-settings.md#enumerations).
+
 
 ## Definiera en mall för transaktionsmeddelanden {#create-message-template}
 
