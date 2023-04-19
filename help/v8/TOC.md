@@ -4,9 +4,9 @@ user-guide-title: Campaign v8
 description: Dokumentation om Campaign v8
 breadcrumb-title: Översikt över Campaign
 title: Campaign v8 dokument
-source-git-commit: 2d10a8f4349b9e2405847fc6a3db1ed568c60387
+source-git-commit: 1c879c7803c346d4b602089a22c2639eb83e82be
 workflow-type: tm+mt
-source-wordcount: '543'
+source-wordcount: '550'
 ht-degree: 24%
 
 ---
@@ -166,10 +166,11 @@ ht-degree: 24%
       + [Implementeringssteg](start/implement.md)
       + [Anpassa instansen](dev/customize.md)
       + [Bästa praxis för datamodell](dev/datamodel-best-practices.md)
-   + Konfiguration {#configuration}
+   + Inställningar och konfiguration {#configuration}
+      + [Användargränssnittsinställningar](config/ui-settings.md)
       + [E-postinställningar](config/email-settings.md)
       + [Inställningar för transaktionsmeddelanden](config/transactional-msg-settings.md)
-      + [Integrera Campaign SDK:er med er app](config/push-config.md)
+      + [Integrera kampanjens SDK med appen - DEPRECATED PAGE](config/push-config.md)
       + [Externa konton](config/external-accounts.md)
 + Resurser för utvecklare {#developer}
    + [Kampanjdatamodell](dev/datamodel.md)
