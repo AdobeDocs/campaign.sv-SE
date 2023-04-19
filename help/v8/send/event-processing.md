@@ -4,13 +4,13 @@ description: Läs om hur Campaign Transactional Messaging samlar in och bearbeta
 feature: Transactional Messaging
 role: User
 level: Beginner, Intermediate
-source-git-commit: c61f03252c7cae72ba0426d6edcb839950267c0a
+exl-id: c1deb0a1-aeba-4813-b674-a6a164b98b02
+source-git-commit: c044b391c900e8ff82147f2682e2e4f91845780c
 workflow-type: tm+mt
-source-wordcount: '677'
-ht-degree: 1%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
-
 
 # Händelsebearbetning {#event-processing}
 
@@ -102,6 +102,3 @@ För att göra detta måste du konfigurera ett arbetsflöde som återskapar alla
 >[!CAUTION]
 >
 >Det här steget kan bara utföras med ett arbetsflöde och är därför reserverat för expertanvändare. Kontakta er kontoansvarige på Adobe för mer information.
-
-
-
