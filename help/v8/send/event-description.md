@@ -4,13 +4,13 @@ description: Läs om hur transaktionsmeddelandehändelser hanteras i Adobe Campa
 feature: Transactional Messaging
 role: User
 level: Beginner, Intermediate
-source-git-commit: c61f03252c7cae72ba0426d6edcb839950267c0a
+exl-id: 2f679d1c-4eb6-4b3c-bdc5-02d3dea6b7d3
+source-git-commit: c044b391c900e8ff82147f2682e2e4f91845780c
 workflow-type: tm+mt
-source-wordcount: '753'
+source-wordcount: '0'
 ht-degree: 0%
 
 ---
-
 
 # Förstå händelsebeskrivning {#about-event-desc}
 
@@ -225,4 +225,3 @@ Om händelsen inte kan bearbetas returnerar metoden ett felmeddelande eller ett 
       </SOAP-ENV:Body>
    </SOAP-ENV:Envelope>
    ```
-
