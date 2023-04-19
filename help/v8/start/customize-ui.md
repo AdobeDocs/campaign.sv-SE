@@ -5,9 +5,9 @@ feature: Application Settings
 role: Admin, Developer, User
 level: Beginner, Intermediate, Experienced
 exl-id: a11d3895-00f1-43d0-b0f7-330fce9fd56b
-source-git-commit: 2ce1ef1e935080a66452c31442f745891b9ab9b3
+source-git-commit: 1c879c7803c346d4b602089a22c2639eb83e82be
 workflow-type: tm+mt
-source-wordcount: '218'
+source-wordcount: '200'
 ht-degree: 0%
 
 ---
@@ -16,7 +16,7 @@ ht-degree: 0%
 
 ## Anpassa listor{#customize-lists}
 
-Lär dig hur du lägger till kolumner, räknar poster, konfigurerar listor och delar dina listinställningar i [Campaign Classic v7-dokumentation](https://experienceleague.adobe.com/docs/campaign-classic/using/getting-started/starting-with-adobe-campaign/campaign-workspace/adobe-campaign-ui-lists.html?lang=en){target=&quot;_blank&quot;}.
+Lär dig hur du lägger till kolumner, räknar poster, konfigurerar listor och delar dina listinställningar i [Campaign Classic v7-dokumentation](https://experienceleague.adobe.com/docs/campaign-classic/using/getting-started/starting-with-adobe-campaign/campaign-workspace/adobe-campaign-ui-lists.html?lang=en){target="_blank"}.
 
 Lär dig hur du skapar filter i [den här sidan](../audiences/create-filters.md).
 
@@ -37,8 +37,7 @@ För varje uppräkning visas värden i en nedrullningsbar lista där användaren
 
 För **Öppna** uppräkningar kan användaren också ange de första tecknen i värdet och möjliga värden visas.
 
-Lär dig hur du får åtkomst till och konfigurerar dina uppräkningar i [Campaign Classic v7-dokumentation](https://experienceleague.adobe.com/docs/campaign-classic/using/getting-started/administration-basics/managing-enumerations.html){target=&quot;_blank&quot;}.
-
+Läs mer om uppräkningar i [den här sidan](../../v8/config/ui-settings.md#enumerations).
 
 ## Standardenheter {#default-units}
 
