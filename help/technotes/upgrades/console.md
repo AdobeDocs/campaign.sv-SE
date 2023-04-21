@@ -4,9 +4,9 @@ title: 32-bitars borttagning av klientkonsol
 description: 32-bitars borttagning av klientkonsol
 hide: true
 hidefromtoc: true
-source-git-commit: dd3490f43016cb7f6e0ccc5c171d78b8ee3ca234
+source-git-commit: 87e8ef65a2fea2f0d019babc69ed8a8a74017aa6
 workflow-type: tm+mt
-source-wordcount: '363'
+source-wordcount: '359'
 ht-degree: 1%
 
 ---
@@ -53,11 +53,11 @@ Kontrollera att datorprocessorn har stöd för installation av ett 64-bitars ope
 
 **WINDOWS 10 OCH WINDOWS 8.1**
 
-1. Välj knappen Start och sedan **Inställningar** > **System** > **Om**.
-1. Till höger, under **Enhetsspecifikationer**, se **Systemtyp**.
+1. Klicka på **Starta** knapp, markera **Inställningar** > **System** > **Om**.
+1. Under **Enhetsspecifikationer**, se **Systemtyp**.
 
 **WINDOWS 7**
-1. Välj **Starta** knapp, högerklicka **Dator** och sedan markera **Egenskaper**.
+1. Välj **Starta** knapp, högerklicka **Dator** och markera **Egenskaper**.
 1. Under **System**, se systemtypen.
 
 Mer information finns i [32- och 64-bitars Windows: Frågor och svar](https://support.microsoft.com/en-us/windows/32-bit-and-64-bit-windows-frequently-asked-questions-c6ca9541-8dce-4d48-0415-94a3faa2e13d).
