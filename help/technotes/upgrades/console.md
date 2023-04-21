@@ -4,20 +4,16 @@ title: 32-bitars borttagning av klientkonsol
 description: 32-bitars borttagning av klientkonsol
 hide: true
 hidefromtoc: true
-source-git-commit: dcb12339d891c61f308cf7b7e518784f3ba1ff31
+source-git-commit: 52fd89d9b8b19e096173e1660982382215dad5dc
 workflow-type: tm+mt
-source-wordcount: '352'
+source-wordcount: '364'
 ht-degree: 1%
 
 ---
 
 # Stöd för 32-bitars operativsystem upphör | Adobe Campaign v8 {#console-eol}
 
-<!--
-The 32-bit version of Campaign v8 Client Console will be deprecated in 8.5 release. Starting 8.6, the Client Console will only be available in 64-bits.
--->
-
-Från och med version 8.5 stöder Campaign v8 inte längre 32-bitars operativsystem, inklusive produkt- och säkerhetsuppdateringar. Adobe rekommenderar att du håller säkerhetsuppdateringarna aktuella.
+32-bitarsversionen av klientkonsolen kommer att bli inaktuell i version 8.5. Från och med version 8.6 stöder Campaign v8 inte längre 32-bitars operativsystem, inklusive produkt- och säkerhetsuppdateringar. Adobe rekommenderar att du håller säkerhetsuppdateringarna aktuella.
 
 ## Supporten upphör
 
