@@ -4,9 +4,9 @@ title: 32-bitars borttagning av klientkonsol
 description: 32-bitars borttagning av klientkonsol
 hide: true
 hidefromtoc: true
-source-git-commit: 52fd89d9b8b19e096173e1660982382215dad5dc
+source-git-commit: dd3490f43016cb7f6e0ccc5c171d78b8ee3ca234
 workflow-type: tm+mt
-source-wordcount: '364'
+source-wordcount: '363'
 ht-degree: 1%
 
 ---
@@ -27,7 +27,7 @@ För att kunna utnyttja de senaste funktionerna och den förbättrade säkerhete
 
 +++Är 64-bitarsversionen av Campaign v8 Client Console kompatibel med 32-bitarsdatorer?
 
-Nej. 64-bitarsversionen av Campaign v8 Client Console stöder endast 64-bitarsdatorer.
+Nej. 64-bitarsversionen av Campaign v8 Client Console har endast stöd för 64-bitarsdatorer.
 
 +++
 
@@ -39,13 +39,15 @@ Ja. Från och med version 8.6 är Campaign v8-klientkonsolen inte längre tillg�
 
 +++Vilka versioner av Campaign v8 stöder inte längre 32-bitars operativsystem?
 
-Från och med 8.5 stöder inte längre alla Campaign v8-versioner 32-bitars operativsystem.
+Från och med 8.6 stöder inte längre alla Campaign v8-versioner 32-bitars operativsystem.
 
 +++
 
 +++Hur uppgraderar jag från Windows (32-bitars) till Windows (64-bitars)?
 
 Kontrollera att datorprocessorn har stöd för installation av ett 64-bitars operativsystem. Om du uppgraderar från 32-bitarsversionen till 64-bitarsversionen av Windows måste du formatera om hårddisken, installera 64-bitarsversionen av Windows och sedan installera om allt annat som finns på enheten. Mer information finns i [32- och 64-bitars Windows: Frågor och svar](https://support.microsoft.com/en-us/windows/32-bit-and-64-bit-windows-frequently-asked-questions-c6ca9541-8dce-4d48-0415-94a3faa2e13d).
+
++++
 
 +++ Hur kontrollerar jag om jag är på en 32-bitars dator eller 64-bitars?
 
