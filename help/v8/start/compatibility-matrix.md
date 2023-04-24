@@ -5,7 +5,7 @@ feature: Overview
 role: Admin
 level: Beginner, Intermediate, Experienced
 exl-id: 4be3a6dc-0c61-4534-b9dd-6c99c8a037a9,870a336f-94ac-4171-891b-67614feef6ef,bebdd930-c7f6-4629-a489-3c704b33f058,d493e613-eb61-43b1-9c6d-1bd881af0734
-source-git-commit: dcb12339d891c61f308cf7b7e518784f3ba1ff31
+source-git-commit: 61222c2b05f1346bd2560ff17b225153edf9e91e
 workflow-type: tm+mt
 source-wordcount: '385'
 ht-degree: 31%
@@ -28,7 +28,7 @@ Följande operativsystem och webbläsare krävs för att använda klientkonsolen
 
 >[!NOTE]
 >
->Observera att 32-bitarsversionen av klientkonsolen kommer att bli inaktuell i version 8.5. Från och med 8.6 är klientkonsolen endast tillgänglig i 64 bitar. Mer information om hur du uppgraderar ditt operativsystem finns i [technote](https://experienceleague.corp.adobe.com/docs/campaign/technotes-ac/tn-new/console.html).
+>Observera att 32-bitarsversionen av klientkonsolen kommer att bli inaktuell i version 8.5. Från och med 8.6 är klientkonsolen endast tillgänglig i 64 bitar. Mer information om hur du uppgraderar ditt operativsystem finns i [technote](https://experienceleague.adobe.com/docs/campaign/technotes-ac/tn-new/console.html).
 
 ### Operativsystem{#op-systems}
 
