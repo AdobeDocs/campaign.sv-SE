@@ -5,10 +5,10 @@ feature: Application Settings
 role: Admin
 level: Beginner, Intermediate, Experienced
 exl-id: 9634b576-2854-4ea9-ba0d-8efaab2c4aee
-source-git-commit: 7b8a9a323afc3154e250b4c70c4339d6c6c265c0
+source-git-commit: 7f27dbdd0ff53cd7437f956ccfef3d792020893b
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '1067'
+ht-degree: 4%
 
 ---
 
@@ -101,7 +101,7 @@ När det gäller transaktionsmeddelanden är körningsinstanserna länkade till 
 
 ## Externa konton för Adobe Solution Integration
 
-* **Adobe Experience Cloud** - **[!UICONTROL Adobe Experience Cloud]** externt konto används för att implementera Adobe Identity Management-tjänsten (IMS) för att ansluta till Adobe Campaign. Läs mer om Adobe Identity Management-tjänsten (IMS) i [det här avsnittet](../start/connect.md#connect-ims).
+* **Adobe Experience Cloud** - **[!UICONTROL Adobe Experience Cloud]** externt konto används för att implementera Adobe Identity Management-tjänsten (IMS) för att ansluta till Adobe Campaign. Läs mer om Adobe Identity Management-tjänsten (IMS) i [det här avsnittet](../start/connect.md#logon-to-ac).
 
 * **Web Analytics** - **[!UICONTROL Web Analytics (Adobe Analytics)]** externt konto används för att konfigurera dataöverföring från Adobe Analytics till Adobe Campaign. Läs mer om Adobe Campaign - Adobe Analytics-integrering i [den här sidan](../connect/ac-aa.md).
 
