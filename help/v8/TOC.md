@@ -4,9 +4,9 @@ user-guide-title: Campaign v8
 description: Dokumentation om Campaign v8
 breadcrumb-title: Översikt över Campaign
 title: Campaign v8 dokument
-source-git-commit: 1c879c7803c346d4b602089a22c2639eb83e82be
+source-git-commit: 2aa5dd736b93990317f842bcbe1f87374279f538
 workflow-type: tm+mt
-source-wordcount: '550'
+source-wordcount: '547'
 ht-degree: 24%
 
 ---
@@ -31,7 +31,6 @@ ht-degree: 24%
    + [Anslut till Campaign](start/connect.md)
    + Kampanjgränssnitt {#ac-ui}
       + [Upptäck gränssnittet Campaign](start/campaign-ui.md)
-      + [Anpassa Campaign-gränssnittet](start/customize-ui.md)
       + [Hantera mappar och vyer](audiences/folders-and-views.md)
    + [Från Classic v7 till v8](start/v7-to-v8.md)
    + [Vanliga frågor och svar ](start/campaign-faq.md)

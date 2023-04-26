@@ -5,7 +5,7 @@ feature: Overview
 role: Admin, Developer, User
 level: Beginner
 exl-id: a7846b95-7570-4dce-b3f4-d3cc23eefcac
-source-git-commit: eed3396584940f99a865eef2358887b6bf5c4936
+source-git-commit: 2aa5dd736b93990317f842bcbe1f87374279f538
 workflow-type: tm+mt
 source-wordcount: '513'
 ht-degree: 0%
@@ -74,10 +74,9 @@ På den här arbetsytan kan du komma åt Utforskarträdet och bläddra bland all
 
 I det vänstra avsnittet visas Campaign Explorer-trädet där du kan bläddra bland alla komponenter och inställningar för instansen, baserat på dina behörigheter.
 
-I det övre avsnittet visas en lista med poster i den aktuella mappen. Dessa listor är helt anpassningsbara. [Läs mer](customize-ui.md)
+I det övre avsnittet visas en lista med poster i den aktuella mappen. Dessa listor är helt anpassningsbara. [Läs mer](../config/ui-settings.md)
 
 I det nedre avsnittet visas information om den valda posten.
-
 
 ## Språk{#languages}
 
@@ -96,7 +95,6 @@ Språket väljs under installationen.
 >Språket kan inte ändras efter att instansen har skapats.
 
 Språk påverkar datum- och tidsformat.
-
 
 De största skillnaderna mellan amerikansk engelska och brittisk engelska är:
 

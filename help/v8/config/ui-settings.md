@@ -5,16 +5,159 @@ version: v8
 feature: Application Settings
 role: Admin, Developer
 level: Beginner, Intermediate, Experienced
-source-git-commit: 0b4483e0f16f14582a1a4bc28b0e1ff719823ef3
+source-git-commit: 5251885f0493eb41f93d07f0e22dcf77926e69dd
 workflow-type: tm+mt
-source-wordcount: '851'
+source-wordcount: '1845'
 ht-degree: 1%
 
 ---
 
 # Inställningar för gränssnittet i kampanjen {#ui-settings}
 
-## Uppräkningar {#enumerations}
+## Standardenheter {#default-units}
+
+I Adobe Campaign, för fält som uttrycker en varaktighet (t.ex. resursernas giltighetsperiod, tidsgräns för godkännande av en uppgift osv.), kan värdena uttryckas i följande **enheter**:
+
+* **[!UICONTROL s]** i sekunder
+* **[!UICONTROL mn]** i minuter
+* **[!UICONTROL h]** i timmar
+* **[!UICONTROL d]** i dagar
+
+## Anpassa Campaign Explorer{#customize-explorer}
+
+Du kan lägga till mappar i Campaign Explorer, skapa vyer och tilldela behörigheter.
+
+Lär dig hur du hanterar mappar och vyer i [den här sidan](../audiences/folders-and-views.md)
+
+## Hantera och anpassa listor{#customize-lists}
+
+I Campaign-klientkonsolen visas data i listor. Du kan anpassa dessa listor efter dina behov. Du kan till exempel lägga till kolumner, filtrera data, räkna poster, spara och dela inställningarna.
+
+Dessutom kan du skapa och spara filter.  Läs mer om filter i [den här sidan](../audiences/create-filters.md).
+
+### Antal poster {#number-of-records}
+
+Som standard läser Adobe Campaign in de första 200 posterna i en lista. Det innebär att visningen inte nödvändigtvis visar alla poster i tabellen som du visar. Du kan räkna antalet poster i listan och läsa in fler poster.
+
+I den nedre högra delen av listskärmen visas en **räknare** visar hur många poster som har lästs in och det totala antalet poster i databasen (efter att eventuella filter har använts):
+
+![Visa totalt antal poster i en lista](assets/number-of-records.png)
+
+Om ett frågetecken visas i stället för numret till höger, till exempel `240/?`klickar du på räknaren för att starta beräkningen.
+
+Om du vill läsa in och visa fler poster klickar du **[!UICONTROL Continue loading]**. Som standard läses 200 poster in. Om du vill ändra standardantalet poster som ska läsas in använder du **[!UICONTROL Configure list]** ikonen längst ned till höger i listan. Klicka på **[!UICONTROL Advanced parameters]** (längst ned till vänster) och ändra antalet rader som ska hämtas.
+
+Om du vill läsa in alla poster högerklickar du på listan och väljer **[!UICONTROL Load all]**.
+
+>[!CAUTION]
+>
+>När en lista innehåller många poster kan det ta en stund att läsa in hela filen.
+
+### Lägga till och ta bort kolumner {#add-columns}
+
+För varje lista kan den inbyggda kolumnkonfigurationen anpassas för att visa mer information eller dölja oanvända kolumner.
+
+Högerklicka på fältet och markera data när de visas i detaljerna för en post **[!UICONTROL Add in the list]**.
+
+![Lägg till ett fält i listan](assets/add-in-the-list.png)
+
+Kolumnen läggs till till höger om de befintliga kolumnerna.
+
+![Lägga till en fältkolumn](assets/add-a-column.png)
+
+Du kan också använda skärmen för listkonfiguration för att lägga till och ta bort kolumner:
+
+1. Klicka på i en lista över poster **[!UICONTROL Configure list]** ikonen längst ned till höger.
+1. Dubbelklicka på de fält som ska läggas till i dialogrutan **[!UICONTROL Available fields]** lista: läggs de till i **[!UICONTROL Output columns]** lista.
+
+   ![Skärm för listkonfiguration](assets/list-config-screen.png)
+
+
+   >[!NOTE]
+   >
+   >Som standard visas inte avancerade fält. Om du vill visa dem klickar du på **Visa avancerade fält** ikonen längst ned till höger i listan med tillgängliga fält.
+   >
+   >Fält identifieras av specifika ikoner: SQL-fält, länkade tabeller, beräknade fält osv. För varje markerat fält visas beskrivningen under listan med tillgängliga fält.
+
+1. Använd upp-/nedpilarna för att ändra **visningsordning**.
+
+1. Klicka **[!UICONTROL OK]** för att bekräfta konfigurationen och visa resultatet.
+
+Om du behöver ta bort en kolumn markerar du den och klickar på **Papperskorgen** ikon.
+
+Du kan använda **[!UICONTROL Distribution of values]** om du vill visa ompartitionen av värden för det valda fältet i den aktuella mappen.
+
+![](assets/value-distribution.png)
+
+
+### Skapa en ny kolumn {#create-a-new-column}
+
+Du kan skapa nya kolumner för att visa ytterligare fält i listan.
+
+Så här skapar du en kolumn:
+
+1. Klicka på i en lista över poster **[!UICONTROL Configure list]** ikonen längst ned till höger.
+1. Klicka på **[!UICONTROL Add]** om du vill visa ett nytt fält i listan.
+1. Konfigurera fältet som ska läggas till i kolumnen.
+
+
+### Visa data i undermappar {#display-sub-folders-records}
+
+Listor kan visa:
+
+* Alla poster i den valda mappen (standard)
+* Alla poster i den markerade mappen och dess undermappar
+
+Om du vill växla från ett visningsläge till ett annat klickar du på **[!UICONTROL Display sub-levels]** i verktygsfältet Campaign.
+
+### Spara en listkonfiguration {#saving-a-list-configuration}
+
+Listkonfigurationerna definieras lokalt för varje användare. När den lokala cachen rensas inaktiveras lokala konfigurationer.
+
+Som standard gäller inställningsparametrar för alla listor med motsvarande mapptyp. När du ändrar hur listan med mottagare visas från en mapp, tillämpas den här konfigurationen på alla andra mottagarmappar.
+
+Du kan spara mer än en konfiguration som ska användas för olika mappar av samma typ. Konfigurationen sparas med egenskaperna för den mapp som innehåller data och kan tillämpas igen.
+
+Så här sparar du en listkonfiguration så att den kan återanvändas:
+
+1. I Utforskaren högerklickar du på mappen som innehåller de data som visas.
+1. Välj **[!UICONTROL Properties]**.
+1. Klicka **[!UICONTROL Advanced settings]** och ange sedan ett namn i **[!UICONTROL Configuration]** fält.
+1. Klicka **[!UICONTROL OK]** och sedan klicka **[!UICONTROL Save]**.
+
+Du kan sedan använda den här konfigurationen i en annan mapp av samma typ. Läs mer om mappar i [den här sidan](../audiences/folders-and-views.md).
+
+### Exportera en lista {#exporting-a-list}
+
+Om du vill exportera data från en lista måste du använda en exportguide. Du kommer åt den genom att markera elementen som ska exporteras i listan, högerklicka och välja **[!UICONTROL Export...]**.
+
+<!--The use of the import and export functions is explained in [Generic imports and exports](../../platform/using/about-generic-imports-exports.md).-->
+
+>[!CAUTION]
+>
+>Element från en lista får inte exporteras med funktionen Kopiera/Klistra in.
+
+### Sortera en lista {#sorting-a-list}
+
+Listor kan innehålla en stor mängd data. Du kan sortera dessa data eller använda enkla eller avancerade filter. Med sortering kan du visa data i stigande eller fallande ordning. Med filter kan du definiera och kombinera villkor så att endast markerade data visas.
+
+Klicka på kolumnrubriken om du vill använda en stigande eller fallande sortering eller om du vill avbryta sorteringen. Aktiv sorteringsstatus och sorteringsordning anges med en blå pil före kolumnetiketten. Ett rött streck före kolumnetiketten betyder att sorteringen tillämpas på data som indexeras från databasen. Den här sorteringsmetoden används för att optimera sorteringsjobb.
+
+Du kan också konfigurera sortering eller kombinera sorteringsvillkor. Följ stegen nedan för att göra detta:
+
+1. **[!UICONTROL Configure list]** nedan och till höger om listan.
+1. Klicka på knappen **[!UICONTROL Sorting]** -fliken.
+1. Markera de fält som ska sorteras och sorteringsriktningen (stigande eller fallande).
+1. Sorteringsprioriteten definieras av sorteringskolumnernas ordning. Om du vill ändra prioriteten använder du lämpliga ikoner för att ändra ordningen på kolumnerna.
+
+   Sorteringsprioriteten påverkar inte visningen av kolumnerna i listan.
+
+1. Klicka **[!UICONTROL Ok]** för att bekräfta konfigurationen och visa resultatet i listan.
+
+
+
+
+## Arbeta med uppräkningar {#enumerations}
 
 En uppräkning (kallas även&quot;lista med specificerade värden&quot;) är en lista med värden som föreslås av systemet för att fylla i fält. Använd uppräkningar för att standardisera värdena för dessa fält, hjälp med inmatning av data eller användning inom frågor.
 
