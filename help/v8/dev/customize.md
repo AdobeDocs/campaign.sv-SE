@@ -4,10 +4,10 @@ description: Lär dig hur du anpassar instansen
 role: Developer
 level: Beginner, Intermediate, Experienced
 exl-id: 18000763-5923-48bd-b62d-cccd3c11016d
-source-git-commit: 2ce1ef1e935080a66452c31442f745891b9ab9b3
+source-git-commit: 3c7455f348468a8f00fb853a3269a1d63b81e7b8
 workflow-type: tm+mt
-source-wordcount: '559'
-ht-degree: 6%
+source-wordcount: '491'
+ht-degree: 7%
 
 ---
 
@@ -33,12 +33,9 @@ Två tabelltilläggslägen är tillgängliga:
 
 * Genom gränssnittet med **Nytt fält** assistent
 
-   ![](../assets/do-not-localize/book.png) Lär dig hur du snabbt lägger till ett nytt fält i Campaign i [Campaign Classic v7-dokumentation](https://experienceleague.adobe.com/docs/campaign-classic/using/configuring-campaign-classic/editing-schemas/new-field-wizard.html?lang=en#configuring-campaign-classic){target=&quot;_blank&quot;}
+   Lär dig hur du snabbt lägger till ett nytt fält i Campaign i [Campaign Classic v7-dokumentation](https://experienceleague.adobe.com/docs/campaign-classic/using/configuring-campaign-classic/editing-schemas/new-field-wizard.html?lang=en#configuring-campaign-classic){target="_blank"}
 
-* Programmerat genom att utöka schemat
-
-   ![](../assets/do-not-localize/glass.png) Lär dig hur du utökar ett befintligt schema i [det här avsnittet](../dev/extend-schema.md).
-
+* Programmatiskt genom att utöka schemat. Lär dig hur du utökar ett befintligt schema i [det här avsnittet](../dev/extend-schema.md).
 
 Du kan också skapa nya tabeller i Campaign-databasen och utöka den inbyggda datamodellen.
 
@@ -46,42 +43,34 @@ Om du vill lägga till en helt ny typ av data som inte finns i körklart läge i
 
 **Relaterade ämnen**
 
-![](../assets/do-not-localize/book.png) Exempel på schemautgåva i [Campaign Classic v7-dokumentation](https://experienceleague.adobe.com/docs/campaign-classic/using/configuring-campaign-classic/editing-schemas/examples-of-schemas-edition.html?lang=en#configuring-campaign-classic){target=&quot;_blank&quot;}
+![](../assets/do-not-localize/book.png) Exempel på schemautgåva i [Campaign Classic v7-dokumentation](https://experienceleague.adobe.com/docs/campaign-classic/using/configuring-campaign-classic/editing-schemas/examples-of-schemas-edition.html?lang=en#configuring-campaign-classic){target="_blank"}
 
-![](../assets/do-not-localize/book.png) Användningsfall: länka ett fält till en befintlig referenstabell i [Campaign Classic v7-dokumentation](https://experienceleague.adobe.com/docs/campaign-classic/using/configuring-campaign-classic/editing-schemas/examples-of-schemas-edition.html?lang=en#uc-link){target=&quot;_blank&quot;}
+![](../assets/do-not-localize/book.png) Användningsfall: länka ett fält till en befintlig referenstabell i [Campaign Classic v7-dokumentation](https://experienceleague.adobe.com/docs/campaign-classic/using/configuring-campaign-classic/editing-schemas/examples-of-schemas-edition.html?lang=en#uc-link){target="_blank"}
 
 
 ## Ändra indataformulären
 
 Kampanjens indataformulär kan anpassas efter er implementering. Du kan lägga till eller ta bort formulärfält genom att ändra XML-innehållet.
 
-![](../assets/do-not-localize/glass.png) Lär dig hur du ändrar ett befintligt inmatningsformulär eller skapar ett nytt formulär i [det här avsnittet](../dev/forms.md).
+Lär dig hur du ändrar ett befintligt inmatningsformulär eller skapar ett nytt formulär i [det här avsnittet](../dev/forms.md).
 
 ## Anpassa kontrollpaneler{#gs-custom-dashboards}
 
 Adobe Campaign gränssnitt använder många webbprogram för att få åtkomst till, hantera och interagera med mottagare, leveranser, kampanjer, lager med mera. De visas i gränssnittet i form av kontrollpaneler med bara en sida.
 
-De färdiga webbprogrammen lagras i noden Administration > Konfiguration > Webbprogram.
+De inbyggda webbprogrammen lagras i **Administration > Konfiguration > Webbprogram** i Utforskaren.
 
-![](../assets/do-not-localize/book.png) Lär dig hur du skapar en översiktssida i Campaign i [Campaign Classic v7-dokumentation](https://experienceleague.adobe.com/docs/campaign-classic/using/designing-content/web-applications/use-cases--creating-overviews.html?lang=en#creating-a-single-page-web-application){target=&quot;_blank&quot;}
+Lär dig hur du skapar en översiktssida i Campaign i [Campaign Classic v7-dokumentation](https://experienceleague.adobe.com/docs/campaign-classic/using/designing-content/web-applications/use-cases--creating-overviews.html?lang=en#creating-a-single-page-web-application){target="_blank"}
 
 
 ## Anpassa listor och skapa filter {#gs-lists-and-filters}
 
-### Åtkomst till data från kontrollpaneler
-
 Kampanjlistor innehåller fördefinierade filter som underlättar navigering och datavisning.
-
-![](../assets/do-not-localize/book.png) Läs mer om filtreringsalternativ i [Campaign Classic v7-dokumentation](https://experienceleague.adobe.com/docs/campaign-classic/using/getting-started/filtering-data/filtering-options.html?lang=en#about-filtering){target=&quot;_blank&quot;}
-
-
-### Få åtkomst till data från Utforskaren
 
 När du navigerar i Adobe Campaign Utforskaren-trädet visas data i databasen i listor. Du kan filtrera dessa listor, köra sökningar, lägga till information, filtrera och sortera data.
 
-![](../assets/do-not-localize/book.png) Lär dig hur du konfigurerar listor och sparar en listkonfiguration i [Campaign Classic v7-dokumentation](https://experienceleague.adobe.com/docs/campaign-classic/using/getting-started/starting-with-adobe-campaign/campaign-workspace/adobe-campaign-ui-lists.html?lang=en#getting-started){target=&quot;_blank&quot;}
-
+Lär dig hur du konfigurerar listor och sparar en listkonfiguration i [den här sidan](../start/campaign-ui.md).
 
 Du kan använda filter på de här listorna för att bara visa de data som operatorn behöver. Sedan kan åtgärder utföras på filtrerade data. Med filterkonfigurationen kan du välja data från en lista dynamiskt. Om data ändras uppdateras de filtrerade data.
 
-![](../assets/do-not-localize/book.png) Lär dig filtrera data i [Campaign Classic v7-dokumentation](https://experienceleague.adobe.com/docs/campaign-classic/using/getting-started/filtering-data/creating-filters.html?lang=en#typology-of-available-filters){target=&quot;_blank&quot;}
+Läs mer om filtreringsalternativ i [den här sidan](../audiences/create-filters.md).

@@ -4,9 +4,9 @@ description: Lär dig hur du använder Adobe Campaign Social Marketing Module f�
 role: User
 level: Beginner, Intermediate
 exl-id: 0783e289-ae8e-4bb7-80f1-f90937a528c1
-source-git-commit: 34af97ae01f7dba418fd0a8c950fc549dfbbd98b
+source-git-commit: 3c7455f348468a8f00fb853a3269a1d63b81e7b8
 workflow-type: tm+mt
-source-wordcount: '806'
+source-wordcount: '791'
 ht-degree: 1%
 
 ---
@@ -80,7 +80,7 @@ Följ stegen nedan för att skicka ett meddelande till ditt Twitter-konto:
    1. Klicka på **[!UICONTROL Test personalization]** nedrullningsbar meny och välj **[!UICONTROL Service]**.
    1. I **[!UICONTROL Folder]** markerar du den tjänstmapp som innehåller ditt Twitter-konto.
 
-1. Skicka ett bevis
+1. Skicka en korrektur
 
    Innan du publicerar din tweet kontrollerar du att den är godkänd genom att skicka ett korrektur av din publikation: Du kan sedan få en exakt återgivning av publikationen på en privat testsida i Twitter.
 
@@ -136,11 +136,9 @@ Följ stegen nedan för att skicka direktmeddelanden till dina följare:
    1. Klicka på **[!UICONTROL Test personalization]** nedrullningsbar meny och välj **[!UICONTROL Visitor Subscription]**.
    1. Välj ett Twitter-konto som du vill testa förhandsgranskningen med.
 
-1. Skicka ett bevis
+1. Skicka en korrektur
 
-   Innan du skickar meddelandet kontrollerar du att det är verifierat genom att skicka ett bevis till ett testkonto: kan du sedan få en exakt återgivning av meddelandet på ett privat Twitter-konto och kontrollera innehåll och personalisering.
-
-   ![](../assets/do-not-localize/book.png) [Lär dig viktiga steg för att validera en leverans](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/key-steps-when-creating-a-delivery/steps-validating-the-delivery.html){target="_blank"}
+   Innan du skickar meddelandet måste du verifiera det av [skicka ett bevis till ett testkonto](../send/preview-and-proof.md): kan du sedan få en exakt återgivning av meddelandet på ett privat Twitter-konto och kontrollera innehåll och personalisering.
 
 1. Skicka direktmeddelandet
 

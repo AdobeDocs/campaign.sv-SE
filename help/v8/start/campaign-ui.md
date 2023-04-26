@@ -5,9 +5,9 @@ feature: Overview
 role: Admin, Developer, User
 level: Beginner
 exl-id: a7846b95-7570-4dce-b3f4-d3cc23eefcac
-source-git-commit: 2aa5dd736b93990317f842bcbe1f87374279f538
+source-git-commit: 3c7455f348468a8f00fb853a3269a1d63b81e7b8
 workflow-type: tm+mt
-source-wordcount: '513'
+source-wordcount: '524'
 ht-degree: 0%
 
 ---
@@ -72,11 +72,11 @@ Bläddra i Campaign Explorer för att få tillgång till alla funktioner och ins
 
 På den här arbetsytan kan du komma åt Utforskarträdet och bläddra bland alla funktioner och alternativ.
 
-I det vänstra avsnittet visas Campaign Explorer-trädet där du kan bläddra bland alla komponenter och inställningar för instansen, baserat på dina behörigheter.
+* I det vänstra avsnittet visas Campaign Explorer-trädet där du kan bläddra bland alla komponenter och inställningar för instansen, baserat på dina behörigheter. Du kan lägga till och anpassa mappar enligt anvisningarna i [den här sidan](../audiences/folders-and-views.md).
 
-I det övre avsnittet visas en lista med poster i den aktuella mappen. Dessa listor är helt anpassningsbara. [Läs mer](../config/ui-settings.md)
+* I det övre avsnittet visas en lista med poster i den aktuella mappen. Dessa listor är helt anpassningsbara. [Läs mer](../config/ui-settings.md)
 
-I det nedre avsnittet visas information om den valda posten.
+* I det nedre avsnittet visas information om den valda posten.
 
 ## Språk{#languages}
 

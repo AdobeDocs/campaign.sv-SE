@@ -5,9 +5,9 @@ feature: Transactional Messaging
 role: User
 level: Beginner, Intermediate
 exl-id: 06fdb279-3776-433f-8d27-33d016473dee
-source-git-commit: 1c879c7803c346d4b602089a22c2639eb83e82be
+source-git-commit: 3c7455f348468a8f00fb853a3269a1d63b81e7b8
 workflow-type: tm+mt
-source-wordcount: '1510'
+source-wordcount: '1491'
 ht-degree: 1%
 
 ---
@@ -43,7 +43,7 @@ De viktigaste stegen för att införa detta är följande:
 1. [Testa meddelandet](#test-message-template).
 1. [Publicera meddelandemallen](#publish-message-template).
 
-När du har utformat och publicerat transaktionsmeddelandemallen skickas relevanta data till Campaign via PushEvent och PushEvents, om en motsvarande händelse utlöses. [SOAP-metoder](https://experienceleague.adobe.com/docs/campaign-classic/using/transactional-messaging/processing/event-description.html){target="_blank"}och leveransen skickas till mottagarna.
+När du har utformat och publicerat transaktionsmeddelandemallen skickas relevanta data till Campaign via PushEvent och PushEvents, om en motsvarande händelse utlöses. [SOAP-metoder](../send/event-description.md)och leveransen skickas till mottagarna.
 
 ## Skapa händelsetyper {#create-event-types}
 
@@ -196,9 +196,7 @@ När du har skapat en eller flera dirigerade adresser och meddelandetexten kan d
 
 Du kan testa meddelandeleveransen genom att skicka ett korrektur till en startadress som skapats tidigare.
 
-När du skickar ett korrektur utförs samma process som för alla leveranser.
-
-![](../assets/do-not-localize/book.png) Läs mer om korrektur i [Campaign Classic v7-dokumentation](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/key-steps-when-creating-a-delivery/steps-validating-the-delivery.html#sending-a-proof){target="_blank"}
+När du skickar ett korrektur utförs samma process som för alla leveranser. Läs mer om korrektur i [det här avsnittet](../send/preview-and-proof.md).
 
 Om du vill skicka ett bevis på ett transaktionsmeddelande måste du utföra följande åtgärder:
 

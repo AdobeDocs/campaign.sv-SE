@@ -5,9 +5,9 @@ feature: Overview
 role: Data Engineer
 level: Beginner
 exl-id: 562b24c3-6bea-447f-b74c-187ab77ae78f
-source-git-commit: 618e45b6948070c6b791d2bcefa8296b297bf25e
+source-git-commit: 3c7455f348468a8f00fb853a3269a1d63b81e7b8
 workflow-type: tm+mt
-source-wordcount: '1015'
+source-wordcount: '1004'
 ht-degree: 2%
 
 ---
@@ -116,4 +116,4 @@ Med den sessionToken som tillhandahålls av körningsinstansen som svar på ovan
 
 * Flera körningsinstanser I en arkitektur med flera celler och flera körningsinstanser bakom en belastningsutjämnare, går den inloggningsmetod som anropas av det externa programmet igenom belastningsutjämnaren: Därför kan ingen tokenbaserad autentisering användas. En användar-/lösenordsbaserad autentisering krävs.
 
-![](../assets/do-not-localize/book.png) Läs mer om Transactional messaging-händelser i [Campaign Classic v7-dokumentation](https://experienceleague.adobe.com/docs/campaign-classic/using/transactional-messaging/processing/event-description.html#about-transactional-messaging-datamodel){target="_blank"}
+Läs mer om Transactional messaging-händelser i [den här sidan](../send/event-processing.md).

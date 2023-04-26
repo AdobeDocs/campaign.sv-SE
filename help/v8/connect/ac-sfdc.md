@@ -5,9 +5,9 @@ feature: Salesforce Integration
 role: Admin, User
 level: Beginner, Intermediate, Experienced
 exl-id: 1e20f3b9-d1fc-411c-810b-6271360286f9
-source-git-commit: 2ce1ef1e935080a66452c31442f745891b9ab9b3
+source-git-commit: 3c7455f348468a8f00fb853a3269a1d63b81e7b8
 workflow-type: tm+mt
-source-wordcount: '341'
+source-wordcount: '348'
 ht-degree: 0%
 
 ---
@@ -21,7 +21,6 @@ När konfigurationen är klar utförs datasynkronisering mellan system via en de
 >[!NOTE]
 >
 >SFDC-versioner som stöds finns detaljerade i Campaign [Kompatibilitetsmatris](../start/compatibility-matrix.md).
-
 
 Följ stegen nedan för att konfigurera ett dedikerat externt konto för att importera och exportera Salesforce-data till Adobe Campaign.
 
@@ -73,8 +72,7 @@ Du kan ersätta alla värden i en Adobe Campaign-uppräkning med dem i CRM: för
 
 1. Klicka **[!UICONTROL Next]** och sedan **[!UICONTROL Start]** för att börja importera uppräkningarna.
 
-1. Bläddra i **[!UICONTROL Administration > Platform > Enumerations]** nod för att kontrollera importerade värden.
-
+1. Bläddra i **[!UICONTROL Administration > Platform > Enumerations]** nod för att kontrollera importerade värden. Läs mer om uppräkningar i [den här sidan](../config/ui-settings.md#enumerations).
 
 Adobe Campaign och Salesforce.com är nu anslutna. Du kan konfigurera datasynkronisering mellan de två systemen.
 

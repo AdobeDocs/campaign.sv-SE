@@ -4,9 +4,9 @@ user-guide-title: Campaign v8
 description: Dokumentation om Campaign v8
 breadcrumb-title: Översikt över Campaign
 title: Campaign v8 dokument
-source-git-commit: 2aa5dd736b93990317f842bcbe1f87374279f538
+source-git-commit: 58b2f850284b68c6d65773166b895f9520718385
 workflow-type: tm+mt
-source-wordcount: '547'
+source-wordcount: '544'
 ht-degree: 24%
 
 ---
@@ -29,9 +29,7 @@ ht-degree: 24%
    + [Viktiga möjligheter](start/whats-new.md)
    + [Komponenter och processer](start/ac-components.md)
    + [Anslut till Campaign](start/connect.md)
-   + Kampanjgränssnitt {#ac-ui}
-      + [Upptäck gränssnittet Campaign](start/campaign-ui.md)
-      + [Hantera mappar och vyer](audiences/folders-and-views.md)
+   + [Kampanjgränssnitt](start/campaign-ui.md)
    + [Från Classic v7 till v8](start/v7-to-v8.md)
    + [Vanliga frågor och svar ](start/campaign-faq.md)
 + Campaign Management {#campaigns}
@@ -167,6 +165,7 @@ ht-degree: 24%
       + [Bästa praxis för datamodell](dev/datamodel-best-practices.md)
    + Inställningar och konfiguration {#configuration}
       + [Användargränssnittsinställningar](config/ui-settings.md)
+      + [Hantera mappar och vyer](audiences/folders-and-views.md)
       + [E-postinställningar](config/email-settings.md)
       + [Inställningar för transaktionsmeddelanden](config/transactional-msg-settings.md)
       + [Integrera kampanjens SDK med appen - DEPRECATED PAGE](config/push-config.md)

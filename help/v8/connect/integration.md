@@ -5,7 +5,7 @@ feature: Overview
 role: Admin, User
 level: Beginner, Intermediate
 exl-id: d1d57aa8-b811-470f-a8a6-18da3a700f1a
-source-git-commit: 507f30d16eecf5400ee88a4d29913e4cdaca9cba
+source-git-commit: 3c7455f348468a8f00fb853a3269a1d63b81e7b8
 workflow-type: tm+mt
 source-wordcount: '394'
 ht-degree: 11%
@@ -46,7 +46,7 @@ Du kan ansluta din Adobe Campaign-plattform till **CRM-system från tredje part*
 Aktivera dina CRM-data för kommunikation över flera kanaler: Lär dig hur du skickar kontakter från CRM-systemet till Adobe Campaign och delar kampanjdata från Adobe Campaign till CRM-systemet.
 CRM-anslutningar möjliggör snabb och enkel dataintegrering: Adobe Campaign tillhandahåller en dedikerad assistent för att samla in och välja bland tabellerna i CRM. Detta garanterar dubbelriktad synkronisering för att säkerställa att data alltid är aktuella i alla system.
 
-![](../assets/do-not-localize/glass.png) Lär dig hur du integrerar Campaign med Microsoft Dynamics 365 och Salesforce.com i [den här sidan](crm.md)
+Lär dig hur du integrerar Campaign med Microsoft Dynamics 365 och Salesforce.com i [den här sidan](crm.md)
 
 ## Koppla samman tredje part med Federated Data Access{#gs-fda}
 
@@ -64,6 +64,6 @@ Du kan:
 * Posta tweets på ditt Twitter-konto
 * Samla in nya kontakter
 
-![](../assets/do-not-localize/glass.png) Läs om hur du konfigurerar och använder Twitter-integrering i [den här sidan](../connect/ac-tw.md).
+Läs om hur du konfigurerar och använder Twitter-integrering i [den här sidan](../connect/ac-tw.md).
 
-![](../assets/do-not-localize/glass.png) Lär dig hur du skapar Twitter-inlägg och skickar direktmeddelanden till dina följare i [den här sidan](../send/twitter.md).
+Lär dig hur du skapar Twitter-inlägg och skickar direktmeddelanden till dina följare i [den här sidan](../send/twitter.md).

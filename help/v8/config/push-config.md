@@ -8,9 +8,9 @@ level: Intermediate, Experienced
 hide: true
 hidefromtoc: true
 exl-id: 31c13d7e-55d1-4fbb-82e0-5779a17d65ac
-source-git-commit: e7c255d30e38c4e17779ef820e8984668ac5d48b
+source-git-commit: 3c7455f348468a8f00fb853a3269a1d63b81e7b8
 workflow-type: tm+mt
-source-wordcount: '1311'
+source-wordcount: '1261'
 ht-degree: 3%
 
 ---
@@ -36,7 +36,7 @@ För att integrera Campaign SDK i mobilappen måste den funktionella administrat
 
    >[!NOTE]
    >
-   >Integreringsnyckeln anges i Adobe Campaign-konsolen i **[!UICONTROL Information]** fliken med tjänster som är dedikerade till mobilprogrammet. Se [Campaign Classic v7-dokumentation](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/sending-push-notifications/configure-the-mobile-app/configuring-the-mobile-application.html?lang=en#creating-ios-app).
+   >Integreringsnyckeln anges i Adobe Campaign-konsolen i **[!UICONTROL Information]** fliken med tjänster som är dedikerade till mobilprogrammet.
 
 * **En spårnings-URL**: som matchar adressen för Adobe Campaign-spårningsservern.
 * **En marknadsförings-URL**: för att aktivera insamling av prenumerationer.
@@ -798,7 +798,6 @@ Lär dig hur du implementerar FCM i ditt program i [Google Documentation](https:
 
 Med variablerna kan du definiera mobilprogrammets beteende efter att ha tagit emot ett meddelande. Dessa variabler måste definieras i mobilprogramkoden och i Adobe Campaign-konsolen i **[!UICONTROL Variables]** i den dedikerade mobilprogramtjänsten.
 
-![](../assets/do-not-localize/book.png) Läs mer i **Campaign Classic v7-dokumentation** i mobilapp: [Konfigurationssteg för iOS](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/sending-push-notifications/configure-the-mobile-app/configuring-the-mobile-application.html){target="_blank"} and [Configuration steps for Andoid](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/sending-push-notifications/configure-the-mobile-app/configuring-the-mobile-application-android.html){target="_blank"}.
 
 Nedan visas ett exempel på en kod som gör att ett mobilprogram kan samla in tillagda variabler i ett meddelande. I vårt exempel använder vi variabeln&quot;VAR&quot;.
 
