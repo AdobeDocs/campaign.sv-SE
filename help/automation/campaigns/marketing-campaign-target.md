@@ -4,10 +4,10 @@ title: Målgrupper för marknadsföringskampanjer
 description: Lär dig definiera målgruppen för era marknadsföringskampanjer
 feature: Campaigns, Audiences
 exl-id: 70a63632-f66d-40f2-806d-bde89303936a
-source-git-commit: edb099b3e882d857752af76798012ccd1c5a99be
+source-git-commit: a2518ea0c0ab23f50b3132b750a14e98b4ffad7d
 workflow-type: tm+mt
-source-wordcount: '1459'
-ht-degree: 1%
+source-wordcount: '1457'
+ht-degree: 0%
 
 ---
 
@@ -236,10 +236,10 @@ Klicka **[!UICONTROL Next]** om du vill definiera sorteringsordningen (om det be
 Den här konfigurationen motsvarar en **[!UICONTROL Split]** i arbetsflödet, vilket gör att du kan dela upp målet i delmängder. Kontrollgruppen är en av dessa deluppsättningar.
 
 
-#### Videokurs {#create-email-video}
+### Videokurs {#create-email-video}
 
-I den här videon förklaras hur du skapar en kampanj och ett e-postmeddelande i Adobe Campaign.
+I den här videon förklaras hur du lägger till en kontrollgrupp i en kampanj.
 
->[!VIDEO](https://video.tv.adobe.com/v/25604?quality=12)
+>[!VIDEO](https://video.tv.adobe.com/v/335606?quality=12)
 
 Det finns ytterligare utbildningsvideor för Campaign [här](https://experienceleague.adobe.com/docs/campaign-learn/tutorials/getting-started/introduction-to-adobe-campaign.html){target="_blank"}.
