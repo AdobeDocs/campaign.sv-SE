@@ -2,13 +2,13 @@
 audience: end-user
 user-guide-title: Kampanjanteckningar
 type: Event
+title: Adobe Campaign Technotes
 description: Kampanjanteckningar
 breadcrumb-title: Kampanjteknologier
-title: Kampanjanteckningar
-source-git-commit: dcb12339d891c61f308cf7b7e518784f3ba1ff31
+source-git-commit: 67368286cb04d97cbf4564846eab91d64b8f90f1
 workflow-type: tm+mt
-source-wordcount: '37'
-ht-degree: 29%
+source-wordcount: '35'
+ht-degree: 31%
 
 ---
 
