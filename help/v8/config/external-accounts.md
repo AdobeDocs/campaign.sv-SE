@@ -5,7 +5,7 @@ feature: Application Settings
 role: Admin
 level: Beginner, Intermediate, Experienced
 exl-id: 9634b576-2854-4ea9-ba0d-8efaab2c4aee
-source-git-commit: 7f27dbdd0ff53cd7437f956ccfef3d792020893b
+source-git-commit: c46eaa73deed643a4e92928b6ce2b1beb1596d73
 workflow-type: tm+mt
 source-wordcount: '1067'
 ht-degree: 4%
@@ -25,10 +25,10 @@ Du kan få åtkomst till externa konton från Adobe Campaign **[!UICONTROL Explo
 
 
 >[!CAUTION]
->* Som användare av hanterade Cloud Services konfigureras externa konton för din instans av Adobe och får inte ändras.
-
 >
->* >När det gäller [Företagsdistribution (FFDA)](../architecture/enterprise-deployment.md), en specifik **[!UICONTROL Full FDA]** (ffda) externt konto hanterar anslutningen mellan den lokala databasen i Campaign och molndatabasen ([!DNL Snowflake]).
+>* Som användare av hanterade Cloud Services konfigureras externa konton för din instans av Adobe och får inte ändras.
+>
+>* När det gäller [Företagsdistribution (FFDA)](../architecture/enterprise-deployment.md), en specifik **[!UICONTROL Full FDA]** (ffda) externt konto hanterar anslutningen mellan den lokala databasen i Campaign och molndatabasen ([!DNL Snowflake]).
 >
 
 
@@ -39,7 +39,8 @@ Följande tekniska konton används av Adobe Campaign för att aktivera och köra
 ### Studsmeddelanden {#bounce-mails-external-account}
 
 >[!NOTE]
-Microsoft Exchange Online OAuth 2.0-autentisering för POP3-kapacitet är tillgänglig från och med Campaign v8.3. Om du vill kontrollera din version kan du läsa [det här avsnittet](../start/compatibility-matrix.md#how-to-check-your-campaign-version-and-buildversion).
+>
+>Microsoft Exchange Online OAuth 2.0-autentisering för POP3-kapacitet är tillgänglig från och med Campaign v8.3. Om du vill kontrollera din version kan du läsa [det här avsnittet](../start/compatibility-matrix.md#how-to-check-your-campaign-version-and-buildversion).
 
 The **Studsa meddelanden** externt konto anger det externa POP3-konto som ska användas för att ansluta till e-posttjänsten. Alla servrar som konfigurerats för POP3-åtkomst kan användas för att ta emot returmeddelanden.
 
@@ -66,7 +67,8 @@ Så här konfigurerar du **[!UICONTROL Bounce mails (defaultPopAccount)]** exter
 ![](assets/bounce_external_2.png)
 
 >[!CAUTION]
-Innan du konfigurerar ditt POP3-externa konto med Microsoft OAuth 2.0 måste du först registrera programmet i Azure-portalen. Mer information om detta hittar du på den här [sidan](https://docs.microsoft.com/en-us/azure/active-directory/develop/quickstart-register-app){target="_blank"}.
+>
+>Innan du konfigurerar ditt POP3-externa konto med Microsoft OAuth 2.0 måste du först registrera programmet i Azure-portalen. Mer information om detta hittar du på den här [sidan](https://docs.microsoft.com/en-us/azure/active-directory/develop/quickstart-register-app){target="_blank"}.
 
 Om du vill konfigurera en POP3-extern med Microsoft OAuth 2.0 ska du kontrollera **[!UICONTROL Microsoft OAuth 2.0]** och fylla i följande fält:
 
@@ -85,7 +87,8 @@ Om du vill konfigurera en POP3-extern med Microsoft OAuth 2.0 ska du kontrollera
 The **[!UICONTROL Routing]** Med ett externt konto kan du konfigurera varje kanal som är tillgänglig i Adobe Campaign beroende på vilka paket som är installerade.
 
 >[!CAUTION]
-The **[!UICONTROL Internal email delivery routing]** (defaultEmailBulk) externt konto **får inte** aktiveras i Adobe Campaign v8.
+>
+>The **[!UICONTROL Internal email delivery routing]** (defaultEmailBulk) externt konto **får inte** aktiveras i Adobe Campaign v8.
 
 ### Körningsinstans {#execution-instance}
 
