@@ -4,10 +4,10 @@ user-guide-title: Campaign v8
 title: Adobe Campaign v8-dokumentation
 description: Dokumentation om Campaign v8
 breadcrumb-title: Översikt över Campaign
-source-git-commit: 67368286cb04d97cbf4564846eab91d64b8f90f1
+source-git-commit: e3ea361cc486096fe6c19ac469e8a71b636371ac
 workflow-type: tm+mt
-source-wordcount: '541'
-ht-degree: 24%
+source-wordcount: '543'
+ht-degree: 23%
 
 ---
 
@@ -167,6 +167,7 @@ ht-degree: 24%
       + [Användargränssnittsinställningar](config/ui-settings.md)
       + [Hantera mappar och vyer](audiences/folders-and-views.md)
       + [E-postinställningar](config/email-settings.md)
+      + [Push-inställningar](config/push-settings.md)
       + [Inställningar för transaktionsmeddelanden](config/transactional-msg-settings.md)
       + [Integrera kampanjens SDK med appen - DEPRECATED PAGE](config/push-config.md)
       + [Externa konton](config/external-accounts.md)
