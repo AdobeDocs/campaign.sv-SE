@@ -7,9 +7,9 @@ role: Admin, Developer
 level: Intermediate, Experienced
 hide: true
 hidefromtoc: true
-source-git-commit: 251ce05310f158b0f9ebccc94b42686f892338b1
+source-git-commit: 093204ca69cc0925bc1be5581e518995b50b3fc1
 workflow-type: tm+mt
-source-wordcount: '1027'
+source-wordcount: '958'
 ht-degree: 2%
 
 ---
@@ -23,16 +23,15 @@ Adobe Experience Platform Mobile SDK innehåller API:er för integrering på kli
 
 Så här konfigurerar du appen med Adobe Experience Platform Mobile SDK:
 
-1. Kontrollera [krav](#before-starting)
-1. Konfigurera en [mobil tagg, egenskap](#launch-property) i Adobe Experience Platform Data Collection
-1. Få en mer detaljerad beskrivning av Adobe Experience Platform Mobile SDK [på den här sidan](https://developer.adobe.com/client-sdks/documentation/getting-started/get-the-sdk/){target="_blank"}
-1. (valfritt) Aktivera loggnings- och livscykelstatistik, som detaljerad [på den här sidan](https://developer.adobe.com/client-sdks/documentation/getting-started/enable-debug-logging/){target="_blank"}
-1. (valfritt) Lägg till [Adobe Experience Platform Assurance för din app](https://developer.adobe.com/client-sdks/documentation/getting-started/validate/){target="_blank"} för att validera implementeringen
+1. Kontrollera [krav](#before-starting).
+1. Konfigurera en [mobil tagg, egenskap](#launch-property) i Adobe Experience Platform Data Collection.
+1. Få en mer detaljerad beskrivning av Adobe Experience Platform Mobile SDK [på den här sidan](https://developer.adobe.com/client-sdks/documentation/getting-started/get-the-sdk/){target="_blank"}.
+1. (valfritt) Aktivera loggnings- och livscykelstatistik, som detaljerad [på den här sidan](https://developer.adobe.com/client-sdks/documentation/getting-started/enable-debug-logging/){target="_blank"}.
+1. (valfritt) Lägg till [Adobe Experience Platform Assurance för din app](https://developer.adobe.com/client-sdks/documentation/getting-started/validate/){target="_blank"} för att validera implementeringen.
 1. Följ [Dokumentation för Adobe Experience Platform Mobile SDK](https://developer.adobe.com/client-sdks/documentation/getting-started/){target="_blank"} om du vill konfigurera med Adobe Experience Platform Mobile SDK i appen.
-1. Installera och konfigurera [Adobe Campaign Extension](#configure-extension) i din mobila egendom
+1. Installera och konfigurera [Adobe Campaign Extension](#configure-extension) i er mobilegendom.
 1. Konfigurera dina iOS- och Android-mobiltjänster i Adobe Campaign enligt [på den här sidan](../send/push.md#push-config).
 
-När allt är klart bör du också ha skapat och konfigurerat en mobil egenskap i [!DNL Adobe Experience Platform Data Collection]. Du skapar vanligtvis en mobil egenskap för varje mobilprogram som du vill hantera. Lär dig hur du skapar och konfigurerar en mobil egenskap i [Dokumentation för Adobe Experience Platform Mobile SDK](https://developer.adobe.com/client-sdks/documentation/getting-started/create-a-mobile-property/){target="_blank"}.
 
 ## Förhandskrav {#before-starting}
 
@@ -132,9 +131,7 @@ The mobile app push credential registration is required to authorize Adobe to se
 
 ## Konfigurera en mobil taggegenskap i Adobe Experience Platform Data Collection {#launch-property}
 
-Genom att konfigurera en mobil egenskap kan mobilappsutvecklaren eller -marknadsföraren konfigurera SDK-attribut för mobilen, till exempel timeout för session, [!DNL Adobe Experience Platform] sandlåda som ska användas som mål och **[!UICONTROL Adobe Experience Platform Datasets]** som ska användas för mobil-SDK för att skicka data till.
-
-Mer information och procedurer om hur du skapar en **mobil egenskap** , se de steg som beskrivs i [Dokumentation för Adobe Experience Platform Mobile SDK](https://developer.adobe.com/client-sdks/documentation/getting-started/create-a-mobile-property/){target="_blank"}.
+Genom att konfigurera en mobil egenskap kan utvecklaren eller marknadsföraren av mobilappen konfigurera SDK:n för mobilappen. Du skapar vanligtvis en mobil egenskap för varje mobilprogram som du vill hantera. Lär dig hur du skapar och konfigurerar en mobil egenskap i [Dokumentation för Adobe Experience Platform Mobile SDK](https://developer.adobe.com/client-sdks/documentation/getting-started/create-a-mobile-property/){target="_blank"}.
 
 För att de SDK:er som behövs för att push-meddelanden ska fungera behöver du följande SDK-tillägg för både Android och iOS:
 
