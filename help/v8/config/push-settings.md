@@ -7,9 +7,9 @@ role: Admin, Developer
 level: Intermediate, Experienced
 hide: true
 hidefromtoc: true
-source-git-commit: e3ea361cc486096fe6c19ac469e8a71b636371ac
+source-git-commit: 251ce05310f158b0f9ebccc94b42686f892338b1
 workflow-type: tm+mt
-source-wordcount: '1176'
+source-wordcount: '1027'
 ht-degree: 2%
 
 ---
@@ -17,10 +17,24 @@ ht-degree: 2%
 
 # AEP SDK + Campaign: konfigurera push-meddelandekanal {#push-notification-configuration}
 
-Innan du börjar skicka push-meddelanden med Adobe Campaign måste du se till att det finns konfigurationer och integreringar på mobilappen och för taggar i Adobe Experience Platform.... .... ....
+Innan du börjar skicka push-meddelanden med Adobe Campaign måste du se till att det finns konfigurationer och integreringar på mobilappen och för taggar i Adobe Experience Platform.
 
+Adobe Experience Platform Mobile SDK innehåller API:er för integrering på klientsidan för mobiler via Android och iOS-kompatibla SDK:er.
 
-## Före start {#before-starting}
+Så här konfigurerar du appen med Adobe Experience Platform Mobile SDK:
+
+1. Kontrollera [krav](#before-starting)
+1. Konfigurera en [mobil tagg, egenskap](#launch-property) i Adobe Experience Platform Data Collection
+1. Få en mer detaljerad beskrivning av Adobe Experience Platform Mobile SDK [på den här sidan](https://developer.adobe.com/client-sdks/documentation/getting-started/get-the-sdk/){target="_blank"}
+1. (valfritt) Aktivera loggnings- och livscykelstatistik, som detaljerad [på den här sidan](https://developer.adobe.com/client-sdks/documentation/getting-started/enable-debug-logging/){target="_blank"}
+1. (valfritt) Lägg till [Adobe Experience Platform Assurance för din app](https://developer.adobe.com/client-sdks/documentation/getting-started/validate/){target="_blank"} för att validera implementeringen
+1. Följ [Dokumentation för Adobe Experience Platform Mobile SDK](https://developer.adobe.com/client-sdks/documentation/getting-started/){target="_blank"} om du vill konfigurera med Adobe Experience Platform Mobile SDK i appen.
+1. Installera och konfigurera [Adobe Campaign Extension](#configure-extension) i din mobila egendom
+1. Konfigurera dina iOS- och Android-mobiltjänster i Adobe Campaign enligt [på den här sidan](../send/push.md#push-config).
+
+När allt är klart bör du också ha skapat och konfigurerat en mobil egenskap i [!DNL Adobe Experience Platform Data Collection]. Du skapar vanligtvis en mobil egenskap för varje mobilprogram som du vill hantera. Lär dig hur du skapar och konfigurerar en mobil egenskap i [Dokumentation för Adobe Experience Platform Mobile SDK](https://developer.adobe.com/client-sdks/documentation/getting-started/create-a-mobile-property/){target="_blank"}.
+
+## Förhandskrav {#before-starting}
 
 ### Konfigurera behörigheter {#setup-permissions}
 
@@ -77,52 +91,46 @@ Följ implementeringsstegen som beskrivs i länkarna nedan:
 * För **Apple iOS**: Lär dig hur du registrerar din app med APN:er i [Apple Documentation](https://developer.apple.com/documentation/usernotifications/registering_your_app_with_apns){target="_blank"}
 * För **Google Android**: Lär dig hur du konfigurerar en Firebase Cloud Messaging-klientapp på Android i [Google Documentation](https://firebase.google.com/docs/cloud-messaging/android/client){target="_blank"}
 
-### Integrera mobilappen med Adobe Experience Platform SDK {#integrate-mobile-app}
+<!--
+## Add your app push credentials in Adobe Experience Platform Data Collection {#push-credentials}
 
-Adobe Experience Platform Mobile SDK innehåller API:er för integrering på klientsidan för mobiler via Android och iOS-kompatibla SDK:er. Följ [Dokumentation för Adobe Experience Platform Mobile SDK](https://developer.adobe.com/client-sdks/documentation/getting-started/){target="_blank"} om du vill konfigurera med Adobe Experience Platform Mobile SDK i appen.
+After granting the correct user permissions, you now need to add your mobile application push credentials in Adobe Experience Platform Data Collection. 
 
-När allt är klart bör du också ha skapat och konfigurerat en mobil egenskap i [!DNL Adobe Experience Platform Data Collection]. Du skapar vanligtvis en mobil egenskap för varje mobilprogram som du vill hantera. Lär dig hur du skapar och konfigurerar en mobil egenskap i [Dokumentation för Adobe Experience Platform Mobile SDK](https://developer.adobe.com/client-sdks/documentation/getting-started/create-a-mobile-property/){target="_blank"}.
+The mobile app push credential registration is required to authorize Adobe to send push notifications on your behalf. Refer to the steps detailed below:
 
+1. From [!DNL Adobe Experience Platform Data Collection], browse to **[!UICONTROL App Surfaces]** in the left rail.
 
-## Steg 1: Lägg till push-autentiseringsuppgifter för appar i Adobe Experience Platform Data Collection {#push-credentials}
+1. Click **[!UICONTROL Create App Surface]** to create a new configuration.
 
-När du har gett rätt användarbehörigheter måste du nu lägga till dina push-autentiseringsuppgifter för mobilprogrammet i Adobe Experience Platform Data Collection.
+1. Enter a **[!UICONTROL Name]** for the configuration.
 
-Registrering av push-autentiseringsuppgifter krävs för mobilappen för att godkänna att Adobe skickar push-meddelanden åt dig. Se stegen nedan:
+1. From **[!UICONTROL Mobile Application Configuration]**, select the system and enter settings.
 
-1. Från [!DNL Adobe Experience Platform Data Collection], bläddra till **[!UICONTROL App Surfaces]** till vänster.
+    * **For iOS**
 
-1. Klicka **[!UICONTROL Create App Surface]** för att skapa en ny konfiguration.
+        1. Enter the mobile app **Bundle Id** in the **[!UICONTROL App ID (iOS Bundle ID)]** field. The app Bundle ID can be found in the **General** tab of the primary target in **XCode**.
+        
+        1. Switched on the **[!UICONTROL Push Credentials]** button to add your credentials.
+        
+        1. Drag and drop your .p8 Apple Push Notification Authentication Key file. This key can be acquired from the **Certificates**, **Identifiers** and **Profiles** page.
 
-1. Ange **[!UICONTROL Name]** för konfigurationen.
+        1. Provide the **Key ID**. This is a 10 character string assigned during the creation of p8 auth key. It can be found under **Keys** tab in **Certificates**, **Identifiers** and **Profiles** page.
+        
+        1. Provide the **Team ID**. This is a string value which can be found under the Membership tab.
 
-1. Från **[!UICONTROL Mobile Application Configuration]** väljer du operativsystem:
+    * **For Android**
 
-   * **För iOS**
+        1. Provide the **[!UICONTROL App ID (Android package name)]**: usually the package name is the app id in your `build.gradle` file.
 
-      1. Ange mobilappen **Paket-ID** i **[!UICONTROL App ID (iOS Bundle ID)]** fält. Program-ID:t finns i **Allmänt** fliken för det primära målet i **XCode**.
+        1. Switched on the **[!UICONTROL Push Credentials]** button to add your credentials.
 
-      1. På **[!UICONTROL Push Credentials]** för att lägga till dina inloggningsuppgifter.
+        1. Drag and drop the FCM push credentials. For more details on how to get the push credentials refer to [Google Documentation](https://firebase.google.com/docs/admin/setup#initialize-sdk){target="_blank"}.
+    
 
-      1. Dra och släpp .p8-filen Apple Push Notification Authentication Key. Den här nyckeln kan hämtas från **Certifikat**, **Identifierare** och **Profiler** sida.
+1. Click **[!UICONTROL Save]** to create your app configuration.
+-->
 
-      1. Ange **Nyckel-ID**. Detta är en 10-teckensträng som tilldelas när en p8-autentiseringsnyckel skapas. Den finns under **Tangenter** tabba in **Certifikat**, **Identifierare** och **Profiler** sida.
-
-      1. Ange **Team-ID**. Detta är ett strängvärde som finns under fliken Medlemskap.
-   * **För Android**
-
-      1. Ange **[!UICONTROL App ID (Android package name)]**: oftast är paketnamnet program-id:t i din `build.gradle` -fil.
-
-      1. På **[!UICONTROL Push Credentials]** för att lägga till dina inloggningsuppgifter.
-
-      1. Dra och släpp FCM-push-inloggningsuppgifterna. Mer information om hur du hämtar push-autentiseringsuppgifter finns i [Google Documentation](https://firebase.google.com/docs/admin/setup#initialize-sdk){target="_blank"}.
-
-
-
-1. Klicka **[!UICONTROL Save]** för att skapa din appkonfiguration.
-
-
-## Steg 2: Konfigurera en mobil taggegenskap i Adobe Experience Platform Data Collection {#launch-property}
+## Konfigurera en mobil taggegenskap i Adobe Experience Platform Data Collection {#launch-property}
 
 Genom att konfigurera en mobil egenskap kan mobilappsutvecklaren eller -marknadsföraren konfigurera SDK-attribut för mobilen, till exempel timeout för session, [!DNL Adobe Experience Platform] sandlåda som ska användas som mål och **[!UICONTROL Adobe Experience Platform Datasets]** som ska användas för mobil-SDK för att skicka data till.
 
@@ -145,7 +153,7 @@ Läs mer om [!DNL Adobe Experience Platform Data Collection] taggar i [Adobe Exp
 1. Äntligen anger du det här biblioteket som ditt arbetsbibliotek från **Välj ett arbetsbibliotek** -knappen.
 
 
-## Steg 3: Konfigurera Adobe Campaign Extension i din mobila egenskap {#configure-extension}
+## Konfigurera Adobe Campaign Extension i din mobila egenskap {#configure-extension}
 
 The **Adobe Campaign Classic-tillägg** för Adobe Experience Platform Mobile SDK:er driver push-meddelanden för dina mobilappar och hjälper dig att samla in push-tokens och hantera interaktionsmätning med Adobe Experience Platform tjänster.
 
@@ -158,7 +166,7 @@ Tillägget är förinstallerat i din miljö och måste konfigureras. Så här ko
 
 Nu kan du lägga till Campaign i din app, vilket beskrivs i  [Dokumentation för Adobe Experience Platform Mobile SDK](https://developer.adobe.com/client-sdks/documentation/adobe-campaign-classic/#add-campaign-classic-to-your-app){target="_blank"}.
 
-## Steg 4: Konfigurera dina mobiltjänster i Campaign{#push-service}
+## Konfigurera dina mobiltjänster i Campaign{#push-service}
 
 När mobilappen har konfigurerats i [!DNL Adobe Experience Platform Data Collection]måste du skapa två tjänster (en för iOS-enheter, en för Android-enheter) för att kunna skicka push-meddelanden från **[!DNL Adobe Campaign]**.
 
