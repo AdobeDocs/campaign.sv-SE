@@ -7,9 +7,9 @@ role: Admin, Developer
 level: Intermediate, Experienced
 hide: true
 hidefromtoc: true
-source-git-commit: 3bef6d2544a86bf1d5efa4868b82ec59c7e36484
+source-git-commit: ff6990f3db1122670bff4919f417b9f9f04d3183
 workflow-type: tm+mt
-source-wordcount: '959'
+source-wordcount: '935'
 ht-degree: 2%
 
 ---
@@ -132,13 +132,14 @@ The mobile app push credential registration is required to authorize Adobe to se
 ## Konfigurera en mobil taggegenskap i Adobe Experience Platform Data Collection {#launch-property}
 
 Genom att konfigurera en mobil egenskap kan utvecklaren eller marknadsföraren av mobilappen konfigurera SDK:n för mobilappen. Du skapar vanligtvis en mobil egenskap för varje mobilprogram som du vill hantera. Lär dig hur du skapar och konfigurerar en mobil egenskap i [Dokumentation för Adobe Experience Platform Mobile SDK](https://developer.adobe.com/client-sdks/documentation/getting-started/create-a-mobile-property/){target="_blank"}.
+<!--
+To get the SDKs needed for push notification to work you will need the following SDK extensions, for both Android and iOS:
 
-För att de SDK:er som behövs för att push-meddelanden ska fungera behöver du följande SDK-tillägg för både Android och iOS:
-
-* **[!UICONTROL Mobile Core]** (installeras automatiskt)
-* **[!UICONTROL Profile]** (installeras automatiskt)
+* **[!UICONTROL Mobile Core]** (installed automatically)
+* **[!UICONTROL Profile]** (installed automatically)
 * **[!UICONTROL Adobe Experience Platform Edge]**
-* **[!UICONTROL Adobe Experience Platform Assurance]**, valfritt men rekommenderas för felsökning av mobilimplementeringen.
+* **[!UICONTROL Adobe Experience Platform Assurance]**, optional but recommended to debug the mobile implementation.
+-->
 
 Läs mer om [!DNL Adobe Experience Platform Data Collection] taggar i [Adobe Experience Platform-dokumentation](https://experienceleague.adobe.com/docs/platform-learn/implement-mobile-sdk/initial-configuration/configure-tags.html){target="_blank"}.
 
@@ -154,7 +155,7 @@ Läs mer om [!DNL Adobe Experience Platform Data Collection] taggar i [Adobe Exp
 
 The **Adobe Campaign Classic-tillägg** för Adobe Experience Platform Mobile SDK:er driver push-meddelanden för dina mobilappar och hjälper dig att samla in push-tokens och hantera interaktionsmätning med Adobe Experience Platform tjänster.
 
-Tillägget är förinstallerat i din miljö och måste konfigureras. Så här konfigurerar du tillägget för din mobila taggegenskap:
+Det här tillägget, som gäller både Campaign Classic v7 och Campaign v8, är förinstallerat i din miljö och måste konfigureras. Så här konfigurerar du tillägget för din mobila taggegenskap:
 
 1. Öppna taggegenskapen som du skapade tidigare.
 1. I den vänstra navigeringen bläddrar du till **Tillägg** och öppna **Katalog** -fliken. Använd sökfältet för att hitta **Adobe Campaign Classic** tillägg.
