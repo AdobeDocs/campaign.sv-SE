@@ -4,9 +4,9 @@ description: Lär dig hur du anpassar instansen
 role: Developer
 level: Beginner, Intermediate, Experienced
 exl-id: 18000763-5923-48bd-b62d-cccd3c11016d
-source-git-commit: 3c7455f348468a8f00fb853a3269a1d63b81e7b8
+source-git-commit: 65f4da979f0c5884797af0c3a835d948672b4a7c
 workflow-type: tm+mt
-source-wordcount: '491'
+source-wordcount: '483'
 ht-degree: 7%
 
 ---
@@ -33,7 +33,7 @@ Två tabelltilläggslägen är tillgängliga:
 
 * Genom gränssnittet med **Nytt fält** assistent
 
-   Lär dig hur du snabbt lägger till ett nytt fält i Campaign i [Campaign Classic v7-dokumentation](https://experienceleague.adobe.com/docs/campaign-classic/using/configuring-campaign-classic/editing-schemas/new-field-wizard.html?lang=en#configuring-campaign-classic){target="_blank"}
+   Lär dig hur du snabbt lägger till ett nytt fält i Campaign i [Campaign Classic v7-dokumentation](https://experienceleague.adobe.com/docs/campaign-classic/using/configuring-campaign-classic/editing-schemas/new-field-wizard.html#configuring-campaign-classic){target="_blank"}
 
 * Programmatiskt genom att utöka schemat. Lär dig hur du utökar ett befintligt schema i [det här avsnittet](../dev/extend-schema.md).
 
@@ -43,9 +43,9 @@ Om du vill lägga till en helt ny typ av data som inte finns i körklart läge i
 
 **Relaterade ämnen**
 
-![](../assets/do-not-localize/book.png) Exempel på schemautgåva i [Campaign Classic v7-dokumentation](https://experienceleague.adobe.com/docs/campaign-classic/using/configuring-campaign-classic/editing-schemas/examples-of-schemas-edition.html?lang=en#configuring-campaign-classic){target="_blank"}
+![](../assets/do-not-localize/book.png) Exempel på schemautgåva i [Campaign Classic v7-dokumentation](https://experienceleague.adobe.com/docs/campaign-classic/using/configuring-campaign-classic/editing-schemas/examples-of-schemas-edition.html#configuring-campaign-classic){target="_blank"}
 
-![](../assets/do-not-localize/book.png) Användningsfall: länka ett fält till en befintlig referenstabell i [Campaign Classic v7-dokumentation](https://experienceleague.adobe.com/docs/campaign-classic/using/configuring-campaign-classic/editing-schemas/examples-of-schemas-edition.html?lang=en#uc-link){target="_blank"}
+![](../assets/do-not-localize/book.png) Användningsfall: länka ett fält till en befintlig referenstabell i [Campaign Classic v7-dokumentation](https://experienceleague.adobe.com/docs/campaign-classic/using/configuring-campaign-classic/editing-schemas/examples-of-schemas-edition.html#uc-link){target="_blank"}
 
 
 ## Ändra indataformulären
@@ -60,7 +60,7 @@ Adobe Campaign gränssnitt använder många webbprogram för att få åtkomst ti
 
 De inbyggda webbprogrammen lagras i **Administration > Konfiguration > Webbprogram** i Utforskaren.
 
-Lär dig hur du skapar en översiktssida i Campaign i [Campaign Classic v7-dokumentation](https://experienceleague.adobe.com/docs/campaign-classic/using/designing-content/web-applications/use-cases--creating-overviews.html?lang=en#creating-a-single-page-web-application){target="_blank"}
+Lär dig hur du skapar en översiktssida i Campaign i [Campaign Classic v7-dokumentation](https://experienceleague.adobe.com/docs/campaign-classic/using/designing-content/web-applications/use-cases--creating-overviews.html#creating-a-single-page-web-application){target="_blank"}
 
 
 ## Anpassa listor och skapa filter {#gs-lists-and-filters}

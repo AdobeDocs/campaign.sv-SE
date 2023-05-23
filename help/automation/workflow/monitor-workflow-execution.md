@@ -4,9 +4,9 @@ title: Övervaka arbetsflödeskörning
 description: Övervaka arbetsflödeskörning
 feature: Workflows
 exl-id: bc13d706-7888-42eb-9116-5538e68cd515
-source-git-commit: 6464e1121b907f44db9c0c3add28b54486ecf834
+source-git-commit: 65f4da979f0c5884797af0c3a835d948672b4a7c
 workflow-type: tm+mt
-source-wordcount: '1936'
+source-wordcount: '1934'
 ht-degree: 0%
 
 ---
@@ -17,7 +17,7 @@ I det här avsnittet finns information om hur du övervakar arbetsflödenas kör
 
 Ett användningsexempel om hur du skapar ett arbetsflöde där du kan övervaka statusen för en uppsättning arbetsflöden som är&quot;pausade&quot;,&quot;stoppade&quot; eller&quot;med fel&quot; finns också i [det här avsnittet](workflow-supervision.md#supervising-workflows).
 
-Administratörer för instansen kan dessutom använda **Granskningsspår** för att kontrollera aktiviteter och senaste ändringar av arbetsflöden, arbetsflödenas status. Läs mer om granskningsspår i  [Campaign Classic v7-dokumentation](https://experienceleague.adobe.com/docs/campaign-classic/using/monitoring-campaign-classic/production-procedures/audit-trail.html?lang=en#accessing-audit-trail){target="_blank"}.
+Administratörer för instansen kan dessutom använda **Granskningsspår** för att kontrollera aktiviteter och senaste ändringar av arbetsflöden, arbetsflödenas status. Läs mer om granskningsspår i  [Campaign Classic v7-dokumentation](https://experienceleague.adobe.com/docs/campaign-classic/using/monitoring-campaign-classic/production-procedures/audit-trail.html#accessing-audit-trail){target="_blank"}.
 
 ## Visa förlopp {#displaying-progress}
 

@@ -6,9 +6,10 @@ role: User
 level: Beginner
 hide: true
 hidefromtoc: true
-source-git-commit: ec46a6f41d640b11306a88d6a966f81f8c2e43e0
+exl-id: c4d30771-db5e-40be-8af6-50f0fab9f9af
+source-git-commit: 65f4da979f0c5884797af0c3a835d948672b4a7c
 workflow-type: tm+mt
-source-wordcount: '272'
+source-wordcount: '264'
 ht-degree: 5%
 
 ---
@@ -39,6 +40,6 @@ Den här integreringen stöder två typer av Adobe Experience Cloud ID:
 
 Se:
 
-[https://experienceleague.adobe.com/docs/experience-cloud-kcs/kbarticles/KA-16471.html?lang=en](https://experienceleague.adobe.com/docs/experience-cloud-kcs/kbarticles/KA-16471.html?lang=en)
+[https://experienceleague.adobe.com/docs/experience-cloud-kcs/kbarticles/KA-16471.html](https://experienceleague.adobe.com/docs/experience-cloud-kcs/kbarticles/KA-16471.html)
 
-[https://experienceleague.adobe.com/docs/core-services/interface/services/audiences/audience-library.html?lang=en](https://experienceleague.adobe.com/docs/core-services/interface/services/audiences/audience-library.html?lang=en)
+[https://experienceleague.adobe.com/docs/core-services/interface/services/audiences/audience-library.html](https://experienceleague.adobe.com/docs/core-services/interface/services/audiences/audience-library.html)

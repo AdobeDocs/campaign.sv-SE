@@ -5,9 +5,9 @@ feature: Target Integration
 role: Admin, User
 level: Beginner, Intermediate
 exl-id: 891a9a87-f3a4-405a-87ed-a7703be90a67
-source-git-commit: 2ce1ef1e935080a66452c31442f745891b9ab9b3
+source-git-commit: 65f4da979f0c5884797af0c3a835d948672b4a7c
 workflow-type: tm+mt
-source-wordcount: '988'
+source-wordcount: '984'
 ht-degree: 1%
 
 ---
@@ -74,7 +74,7 @@ Du kan sedan definiera bildparametrarna:
 * The **[!UICONTROL Landing Page]** gör att du kan dirigera om standardbilden till en standardstartsida. Den här URL:en används bara när standardbilden visas i det slutliga e-postmeddelandet. Det är valfritt.
 * The **[!UICONTROL Additional decision parameters]**  definierar mappningen mellan de fält som definieras i Adobe Target-segmenten och Adobe Campaign-fälten. De Adobe Campaign-fält som används måste ha angetts i rutan. I vårt exempel har vi lagt till fältet Land.
 
-Om du använder Enterprise-behörigheter i inställningarna för Adobe Target lägger du till motsvarande egenskap i det här fältet. Läs mer om behörigheter för Target Enterprise i [den här sidan](https://experienceleague.adobe.com/docs/target/using/administer/manage-users/enterprise/properties-overview.html?lang=en#administer).
+Om du använder Enterprise-behörigheter i inställningarna för Adobe Target lägger du till motsvarande egenskap i det här fältet. Läs mer om behörigheter för Target Enterprise i [den här sidan](https://experienceleague.adobe.com/docs/target/using/administer/manage-users/enterprise/properties-overview.html#administer).
 
 ![](assets/target_13.png)
 
@@ -94,7 +94,7 @@ I vårt fall behöver vi två omdirigeringserbjudanden, det tredje (standarderbj
 
    ![](assets/target_6.png)
 
-1. Följ samma procedur för det återstående omdirigeringserbjudandet. Se denna [sida](https://experienceleague.adobe.com/docs/target/using/experiences/offers/offer-redirect.html?lang=en#experiences) för mer information om detta.
+1. Följ samma procedur för det återstående omdirigeringserbjudandet. Se denna [sida](https://experienceleague.adobe.com/docs/target/using/experiences/offers/offer-redirect.html#experiences) för mer information om detta.
 
 ### Skapa målgrupper {#audiences-target}
 
