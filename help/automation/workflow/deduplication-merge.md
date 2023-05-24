@@ -2,7 +2,8 @@
 title: Använda sammanfogningsfunktionen för aktiviteten Deduplicering
 description: Lär dig hur du använder funktionen för sammanfogning av dedupliceringsaktiviteter
 feature: Workflows, Data Management
-source-git-commit: 2b1dec4b9c456df4dfcebfe10d18e0ab01599275
+exl-id: ee201cfd-a351-41d8-a5ad-2f2e538dc643
+source-git-commit: 190707b8b1ea5f90dc6385c13832fbb01378ca1d
 workflow-type: tm+mt
 source-wordcount: '550'
 ht-degree: 5%

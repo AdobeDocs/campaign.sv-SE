@@ -3,7 +3,8 @@ product: campaign
 title: Händelseaktiviteter i arbetsflöden
 description: Lista över händelseaktiviteter i arbetsflöden
 feature: Workflows, Data Management
-source-git-commit: 2b1dec4b9c456df4dfcebfe10d18e0ab01599275
+exl-id: 0e8ab370-06bc-431e-a685-310ac54a1246
+source-git-commit: 77ec01aaba1e50676bed57f503a9e4e8bb1fe54c
 workflow-type: tm+mt
 source-wordcount: '101'
 ht-degree: 0%
@@ -22,5 +23,3 @@ Dessa aktiviteter är inte tillgängliga i [kampanjspecifika arbetsflöden](camp
 * **[Inkommande e-postmeddelanden](inbound-emails.md)**: återställer och bearbetar e-post.
 * **[Inkommande SMS](inbound-sms.md)**: återställer och bearbetar SMS.
 * **[Webbnedladdning](web-download.md)**: hämtar en fil från webben.
-
-

@@ -7,7 +7,7 @@ level: Beginner, Intermediate, Experienced
 exl-id: 62908bba-9cfa-42b6-b463-b601496d535b
 source-git-commit: 2ce1ef1e935080a66452c31442f745891b9ab9b3
 workflow-type: tm+mt
-source-wordcount: '2554'
+source-wordcount: '2552'
 ht-degree: 0%
 
 ---
@@ -87,7 +87,7 @@ Redigeringskontrollen anpassas automatiskt till motsvarande datatyp och använde
 
 Som standard visas varje fält på en rad och tar upp allt tillgängligt utrymme beroende på datatypen.
 
-![](../assets/do-not-localize/book.png) Alla formulärattribut visas i [Campaign Classic v7-dokumentation](https://experienceleague.adobe.com/developer/campaign-api/api/control-Button.html){target=&quot;_blank&quot;}.
+![](../assets/do-not-localize/book.png) Alla formulärattribut visas i [Campaign Classic v7-dokumentation](https://experienceleague.adobe.com/developer/campaign-api/api/control-Button.html){target="_blank"}.
 
 ## Formatering {#formatting}
 

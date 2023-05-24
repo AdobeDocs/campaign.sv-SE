@@ -3,13 +3,13 @@ product: campaign
 title: Skapa återkommande och periodiska kampanjer
 description: Lär dig hur du skapar och kör återkommande och periodiska kampanjer
 feature: Campaigns, Cross Channel Orchestration, Programs
-source-git-commit: 72467caf94e652ede70c00f1ea413012fc4c7e1f
+exl-id: 68c5b903-5043-4e74-b3f6-90a7f2fb3b9a
+source-git-commit: 190707b8b1ea5f90dc6385c13832fbb01378ca1d
 workflow-type: tm+mt
 source-wordcount: '803'
 ht-degree: 0%
 
 ---
-
 
 # Återkommande och periodiska kampanjer {#recurring-and-periodic-campaigns}
 

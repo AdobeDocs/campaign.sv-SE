@@ -2,7 +2,8 @@
 title: Inbyggda rapporter från Adobe Campaign
 description: Inbyggda rapporter
 feature: Reporting
-source-git-commit: 9bea7904ea4507083d2cf45193877e7a2539d0c7
+exl-id: b63e6905-3bd4-4de4-9e7e-7638e5fc1192
+source-git-commit: 77ec01aaba1e50676bed57f503a9e4e8bb1fe54c
 workflow-type: tm+mt
 source-wordcount: '1111'
 ht-degree: 1%

@@ -4,13 +4,13 @@ description: Mät hur framgångsrika era kampanjer är och analysera användarbe
 feature: Reporting
 role: Data Engineer
 level: Beginner
-source-git-commit: 8fb1f57b82ce3b99dabf584a6434d9111dc8b5af
+exl-id: f931fc0d-12c1-4bff-a4f2-153e8d91c339
+source-git-commit: 77ec01aaba1e50676bed57f503a9e4e8bb1fe54c
 workflow-type: tm+mt
-source-wordcount: '326'
+source-wordcount: '322'
 ht-degree: 4%
 
 ---
-
 
 # Kom igång med rapporter{#gs-ac-reports}
 
@@ -46,10 +46,10 @@ Adobe Campaign tillhandahåller en uppsättning rapporteringsverktyg som listas 
 
    ![](assets/desc-analysis-report.png)
 
-   ![](../assets/do-not-localize/book.png) Rapporter om beskrivande kampanjanalyser presenteras i [Campaign Classic v7-dokumentation](https://experienceleague.adobe.com/docs/campaign-classic/using/reporting/analyzing-populations/about-descriptive-analysis.html){target=&quot;_blank&quot;}
+   ![](../assets/do-not-localize/book.png) Rapporter om beskrivande kampanjanalyser presenteras i [Campaign Classic v7-dokumentation](https://experienceleague.adobe.com/docs/campaign-classic/using/reporting/analyzing-populations/about-descriptive-analysis.html){target="_blank"}
 
 * **Anpassade rapporter**
 
    Använd Adobe Campaign för att skapa rapporter om data i databasen. När du har skapat dem kan du göra dem tillgängliga i rätt sammanhang.
 
-   ![](../assets/do-not-localize/book.png) Steg för att skapa en rapport beskrivs i [Campaign Classic v7-dokumentation](https://experienceleague.adobe.com/docs/campaign-classic/using/reporting/creating-new-reports/about-reports-creation-in-campaign.html){target=&quot;_blank&quot;}. Skapa anpassade rapporter är reserverat för avancerade användare.
+   ![](../assets/do-not-localize/book.png) Steg för att skapa en rapport beskrivs i [Campaign Classic v7-dokumentation](https://experienceleague.adobe.com/docs/campaign-classic/using/reporting/creating-new-reports/about-reports-creation-in-campaign.html){target="_blank"}. Skapa anpassade rapporter är reserverat för avancerade användare.

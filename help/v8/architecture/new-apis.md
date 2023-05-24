@@ -7,7 +7,7 @@ level: Beginner, Intermediate, Experienced
 exl-id: dd822f88-b27d-4944-879c-087f68e79825
 source-git-commit: 2ce1ef1e935080a66452c31442f745891b9ab9b3
 workflow-type: tm+mt
-source-wordcount: '437'
+source-wordcount: '435'
 ht-degree: 2%
 
 ---
@@ -212,4 +212,4 @@ Inläggning av prenumerations- och avprenumerationsdata bygger på [Mellanlagrin
 
 **Relaterade ämnen**
 
-* [Kampanj-JSAPI](https://experienceleague.adobe.com/developer/campaign-api/api/p-1.html){target=&quot;_blank&quot;}
+* [JSAPI i Campaign](https://experienceleague.adobe.com/developer/campaign-api/api/p-1.html){target="_blank"}

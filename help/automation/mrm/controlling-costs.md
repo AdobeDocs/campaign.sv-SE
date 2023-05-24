@@ -178,7 +178,7 @@ Kostnaderna delas in i tre kategorier:
 
 1. Verklig kostnad
 
-   Den verkliga kostnaden anges manuellt och delas vid behov upp i olika utgiftskategorier.
+   Den verkliga kostnaden anges manuellt och om det behövs delas den upp i olika utgiftskategorier.
 
 ### Beräkning och debitering {#calculation-and-charging}
 

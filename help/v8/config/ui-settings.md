@@ -5,7 +5,8 @@ version: v8
 feature: Application Settings
 role: Admin, Developer
 level: Beginner, Intermediate, Experienced
-source-git-commit: 5251885f0493eb41f93d07f0e22dcf77926e69dd
+exl-id: fefb6d80-c3d1-448b-82ab-648da58a0ba4
+source-git-commit: 666dbdac8330cae17693142cf45cc3d3d2d187a9
 workflow-type: tm+mt
 source-wordcount: '1845'
 ht-degree: 1%
@@ -187,7 +188,7 @@ För **Öppna** och **Stängd** uppräkningar, specifika alternativ är tillgän
 
 ### Rensa alias {#alias-cleansing}
 
-I uppräkningsfälten kan du välja ett värde eller ange ett anpassat värde som inte är tillgängligt i listrutan. Anpassade värden kan läggas till i de befintliga uppräkningsvärdena som ett nytt - i det här fallet **[!UICONTROL Open]** måste vara markerat. Dessa anpassade värden kan rensas med hjälp av aliasrensningsfunktioner. Om en användare till exempel anger `Adob` i stället för `Adobe`, kan aliasrensningsprocessen automatiskt ersätta den med rätt term.
+I uppräkningsfälten kan du välja ett värde eller ange ett anpassat värde som inte är tillgängligt i listrutan. Anpassade värden kan läggas till i de befintliga uppräkningsvärdena som ett nytt - i det här fallet **[!UICONTROL Open]** måste vara markerat. Dessa anpassade värden kan rensas med hjälp av aliasrensningsfunktioner. Exempel: en användare anger `Adob` i stället för `Adobe`, kan aliasrensningsprocessen automatiskt ersätta den med rätt term.
 
 >[!CAUTION]
 >

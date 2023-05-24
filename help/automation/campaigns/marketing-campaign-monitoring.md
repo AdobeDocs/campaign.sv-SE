@@ -3,7 +3,8 @@ product: campaign
 title: Övervaka marknadsföringskampanjer
 description: Övervaka marknadsföringskampanjer
 feature: Campaigns, Monitoring
-source-git-commit: 72467caf94e652ede70c00f1ea413012fc4c7e1f
+exl-id: 13a7432e-6216-4a5c-84fc-bc374b5af5ee
+source-git-commit: 190707b8b1ea5f90dc6385c13832fbb01378ca1d
 workflow-type: tm+mt
 source-wordcount: '217'
 ht-degree: 2%

@@ -3,7 +3,8 @@ product: campaign
 title: Flödeskontrollaktiviteter i arbetsflöden
 description: Förteckning över flödeskontrollverksamhet
 feature: Workflows
-source-git-commit: 2b1dec4b9c456df4dfcebfe10d18e0ab01599275
+exl-id: 904f2d94-bd3e-4c46-aeab-2ef77a7bdeee
+source-git-commit: 77ec01aaba1e50676bed57f503a9e4e8bb1fe54c
 workflow-type: tm+mt
 source-wordcount: '174'
 ht-degree: 0%
@@ -26,4 +27,4 @@ Följande aktiviteter är databasaktiviteter: används för att samordna arbetsf
 * **[Testa](test.md)**: möjliggör en övergång baserat på ett testresultat.
 * **[Tidsbegränsning](time-constraint.md)**: gör att du kan pausa en uppgift under en angiven period.
 * **[Vänta](wait.md)**: aktiverar utgående övergång efter en viss tidsgräns.
-<!--* **Task**: lets you configure task execution. Refer to the [Task](task.md) section.-->
+   <!--* **Task**: lets you configure task execution. Refer to the [Task](task.md) section.-->

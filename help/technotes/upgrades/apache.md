@@ -2,9 +2,10 @@
 product: campaign
 title: Technote - Adobe Campaign - säkerhetsuppdatering av Apache-version
 description: Adobe Campaign - säkerhetsuppdatering av Apache-version
-source-git-commit: 46be0379610a6a4a3491d49ce096c64270ed8016
+exl-id: 68e42fe4-7fb6-4b53-9f39-e77374e3753d
+source-git-commit: 77ec01aaba1e50676bed57f503a9e4e8bb1fe54c
 workflow-type: tm+mt
-source-wordcount: '478'
+source-wordcount: '476'
 ht-degree: 0%
 
 ---
@@ -16,7 +17,7 @@ ht-degree: 0%
 
 Adobe Campaign fungerar med verktyg från tredje part och kompatibiliteten uppdateras regelbundet, så att endast de versioner som stöds kan implementeras och de senaste korrigeringarna och förbättringarna kan utnyttjas.
 
-Adobe Campaign innehåller Apache Tomcat som fungerar som startpunkt i programservern via HTTP och är integrerat med Apache Web Server. Apache Software Foundation har släppt Apache HTTP Server 2.4.53. Denna version åtgärdar sårbarheter som kan utnyttjas av en angripare för att ta kontroll över den drabbade datorn. Läs mer i [Apache 2.4.53-meddelande](https://downloads.apache.org/httpd/Announcement2.4.html){target=&quot;_blank&quot;}.
+Adobe Campaign innehåller Apache Tomcat som fungerar som startpunkt i programservern via HTTP och är integrerat med Apache Web Server. Apache Software Foundation har släppt Apache HTTP Server 2.4.53. Denna version åtgärdar sårbarheter som kan utnyttjas av en angripare för att ta kontroll över den drabbade datorn. Läs mer i [Apache 2.4.53-meddelande](https://downloads.apache.org/httpd/Announcement2.4.html){target="_blank"}.
 
 Adobe Campaign-teamet kommer att genomföra säkerhetsuppgraderingen av Apache-versionen av **15 juni 2022** för att minska denna Apache-sårbarhet och göra instansmiljön säkrare. Uppgraderingen gäller alla Cloud Services som hanterar Campaign Classic v7, kunder som har Campaign v8 och Campaign Standarder och som kör en sårbar version av Apache HTTP Server. Om du påverkas kontaktade Adobe dig redan för att informera dig om uppgraderingen.
 

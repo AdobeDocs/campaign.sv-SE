@@ -2,9 +2,10 @@
 keywords: Campaign Classic;hem;populära ämnen
 description: Kampanjteknologier
 title: Adobe Campaign tekniska artiklar
-source-git-commit: 6dceac03868db1aa43f02f4807569d9c16801ec7
+exl-id: ae1ef010-24d5-4be4-a30c-899e2b0040a4
+source-git-commit: 77ec01aaba1e50676bed57f503a9e4e8bb1fe54c
 workflow-type: tm+mt
-source-wordcount: '27'
+source-wordcount: '25'
 ht-degree: 0%
 
 ---
@@ -13,4 +14,4 @@ ht-degree: 0%
 
 ![](assets/banner-documentationv8.png)
 
-* [Adobe Campaign v8 - produktbeskrivning](https://helpx.adobe.com/legal/product-descriptions/adobe-campaign-managed-cloud-services.html){target=&quot;_blank&quot;}
+* [Adobe Campaign v8 - produktbeskrivning](https://helpx.adobe.com/legal/product-descriptions/adobe-campaign-managed-cloud-services.html){target="_blank"}

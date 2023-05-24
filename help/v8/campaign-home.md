@@ -5,8 +5,8 @@ title: Adobe Campaign v8 - produktdokumentation
 exl-id: 6010b0f7-baf0-43ba-af9a-b8864f3897ea,9ff16fb1-d3d3-44fe-9016-15abffdbc74e
 source-git-commit: 9bea7904ea4507083d2cf45193877e7a2539d0c7
 workflow-type: tm+mt
-source-wordcount: '147'
-ht-degree: 12%
+source-wordcount: '141'
+ht-degree: 13%
 
 ---
 
@@ -16,7 +16,7 @@ ht-degree: 12%
 
 ## Nyheter
 
-* **[[!DNL Adobe Campaign] automatiseringsguide](https://experienceleague.adobe.com/docs/campaign/automation/home.html){target=&quot;_blank&quot;}** - Lär dig hur du bygger arbetsflöden och kampanjer
+* **[[!DNL Adobe Campaign] automatiseringsguide](https://experienceleague.adobe.com/docs/campaign/automation/home.html){target="_blank"}** - Lär dig hur du bygger arbetsflöden och kampanjer
 
 * **[Vad är [!DNL Adobe Campaign]](start/get-started.md)** - Nyckelfunktioner och användningsfall
 
@@ -26,7 +26,7 @@ ht-degree: 12%
 
 * **[Från v7 till v8](start/v7-to-v8.md)** - Övergår från Campaign Classic v7 till v8? Lär dig viktiga skillnader
 
-* **[Kontrollpanelen för Campaign v8](https://experienceleague.adobe.com/docs/control-panel/using/discover-control-panel/key-features.html){target=&quot;_blank&quot;}** - Utför viktiga administratörsuppgifter på egen hand med Campaign Control Panel
+* **[Kontrollpanelen för Campaign v8](https://experienceleague.adobe.com/docs/control-panel/using/discover-control-panel/key-features.html){target="_blank"}** - Utför viktiga administratörsuppgifter på egen hand med Campaign Control Panel
 
 * **[Versionsinformation](start/release-notes.md)** - Upptäck de senaste funktionerna och förbättringarna
 
@@ -72,4 +72,4 @@ ht-degree: 12%
 * [Mät och spåra](reporting/gs-reporting.md)
 * [Anslut till andra lösningar](connect/integration.md)
 * [Vanliga frågor om Campaign v8](start/campaign-faq.md)
-* [Adobe Campaign v8 - produktbeskrivning](https://helpx.adobe.com/legal/product-descriptions/adobe-campaign-managed-cloud-services.html){target=&quot;_blank&quot;}
+* [Adobe Campaign v8 - produktbeskrivning](https://helpx.adobe.com/legal/product-descriptions/adobe-campaign-managed-cloud-services.html){target="_blank"}

@@ -2,7 +2,8 @@
 title: Inbyggd beräkning av rapportvärden
 description: Inbyggd beräkning av rapportvärden
 feature: Reporting
-source-git-commit: 80e5efc5998c67ce576e9f8208fab9543fc70d29
+exl-id: ad8e9f9c-df24-4a11-b8df-4b31dd54911f
+source-git-commit: 77ec01aaba1e50676bed57f503a9e4e8bb1fe54c
 workflow-type: tm+mt
 source-wordcount: '2978'
 ht-degree: 2%
@@ -588,7 +589,7 @@ Den här rapporten baseras på **[!UICONTROL Delivery and tracking statistics]**
   </tr> 
   <tr> 
    <td> Mottagarklickningar<br /> </td> 
-   <td> @receiveClick<br /> </td> 
+   <td> @recipientClick<br /> </td> 
    <td> Distinkt antal av @broadLog-ids med en URL-typ som är lika med"Email click".<br /> </td> 
    <td> Countdistans(Iif([url/@type]=1, @broadLog-id, 0))<br /> </td> 
   </tr> 
@@ -866,13 +867,13 @@ Den här rapporten baseras på **[!UICONTROL Delivery and tracking statistics]**
   </tr> 
   <tr> 
    <td> Öppnar<br /> </td> 
-   <td> @receiveOpen<br /> </td> 
+   <td> @recipientOpen<br /> </td> 
    <td> Totalt antal @broadLog-id i spårningsloggarna.<br /> </td> 
    <td> Motskild ([@broadLog-id])<br /> </td> 
   </tr> 
   <tr> 
    <td> Klickningar<br /> </td> 
-   <td> @personKlicka<br /> </td> 
+   <td> @personClick<br /> </td> 
    <td> Totalt antal @source-ids som URL-kategorin är lika med"Email click". <br /> </td> 
    <td> Countdistans(Iif([url/@type]=1, @source-id, 0)) <br /> </td> 
   </tr> 

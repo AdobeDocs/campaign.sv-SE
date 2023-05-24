@@ -3,7 +3,8 @@ product: campaign
 title: Fråga med många-till-många-relation
 description: Lär dig hur du utför frågor med hjälp av en många-till-många-relation
 feature: Query Editor
-source-git-commit: 2b1dec4b9c456df4dfcebfe10d18e0ab01599275
+exl-id: c320054d-7f67-4b12-aaa7-785945bf0c18
+source-git-commit: 77ec01aaba1e50676bed57f503a9e4e8bb1fe54c
 workflow-type: tm+mt
 source-wordcount: '385'
 ht-degree: 0%

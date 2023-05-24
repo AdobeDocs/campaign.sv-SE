@@ -7,8 +7,8 @@ level: Beginner
 exl-id: c116d86a-d3e2-47e3-a641-e2d7c8cc575c
 source-git-commit: 8eb92dd1cacc321fc79ac4480a791690fc18511c
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '838'
+ht-degree: 3%
 
 ---
 
@@ -156,4 +156,4 @@ Om en mottagare inte är berättigad till något erbjudande visas detta i förha
 
 Förhandsvisningen kan ignorera kontexter när de är begränsade till ett mellanslag. Detta är fallet när interaktionsschemat har utökats för att lägga till fält som refereras i ett utrymme med en inkommande kanal.
 
-![](../assets/do-not-localize/book.png)  Mer information om detta finns i exemplet i [Campaign Classic v7-dokumentation](https://experienceleague.adobe.com/docs/campaign-classic/using/managing-offers/advanced-parameters/extension-example.html){target=&quot;_blank&quot;}.
+![](../assets/do-not-localize/book.png)  Mer information om detta finns i exemplet i [Campaign Classic v7-dokumentation](https://experienceleague.adobe.com/docs/campaign-classic/using/managing-offers/advanced-parameters/extension-example.html){target="_blank"}.

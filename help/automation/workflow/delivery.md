@@ -3,7 +3,8 @@ product: campaign
 title: Leverans
 description: Läs mer om arbetsflödesaktiviteten av typen Delivery
 feature: Workflows, Channels Activity
-source-git-commit: 2b1dec4b9c456df4dfcebfe10d18e0ab01599275
+exl-id: 58574983-86c7-46f5-b41b-bae90171048d
+source-git-commit: 77ec01aaba1e50676bed57f503a9e4e8bb1fe54c
 workflow-type: tm+mt
 source-wordcount: '917'
 ht-degree: 1%

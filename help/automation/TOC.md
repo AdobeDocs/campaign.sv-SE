@@ -4,8 +4,8 @@ user-guide-title: Guide för kampanjautomatisering
 user-guide-description: Guide för kampanjautomatisering
 source-git-commit: 75b65efce6b37e3d948f6af4a89ea3b0a5ac1a86
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '447'
+ht-degree: 81%
 
 ---
 

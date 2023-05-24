@@ -7,7 +7,7 @@ level: Beginner, Intermediate
 exl-id: 9c83ebeb-e923-4d09-9d95-0e86e0b80dcc
 source-git-commit: 46be0379610a6a4a3491d49ce096c64270ed8016
 workflow-type: tm+mt
-source-wordcount: '3009'
+source-wordcount: '3005'
 ht-degree: 6%
 
 ---
@@ -66,7 +66,7 @@ Hur studseffekter hanteras i Adobe Campaign beror på feltypen:
 
 * **Synkrona fel**: MTA avgör studstyp och kvalifikationer och skickar tillbaka informationen till Campaign. Studentkvalifikationer i **[!UICONTROL Delivery log qualification]** tabellen används inte för **synkron** felmeddelanden vid leveransfel.
 
-* **Asynkrona fel**: Regler som används av Campaign för att kvalificera asynkrona leveransfel visas i **[!UICONTROL Administration > Campaign Management > Non deliverables Management > Delivery log qualification]** nod. Asynkrona studsar kvalificeras av inMail-processen via **[!UICONTROL Inbound email]** regler. Mer information finns i [Adobe Campaign Classic v7-dokumentation](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/monitoring-deliveries/understanding-delivery-failures.html#bounce-mail-qualification){target=&quot;_blank&quot;}.
+* **Asynkrona fel**: Regler som används av Campaign för att kvalificera asynkrona leveransfel visas i **[!UICONTROL Administration > Campaign Management > Non deliverables Management > Delivery log qualification]** nod. Asynkrona studsar kvalificeras av inMail-processen via **[!UICONTROL Inbound email]** regler. Mer information finns i [Adobe Campaign Classic v7-dokumentation](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/monitoring-deliveries/understanding-delivery-failures.html#bounce-mail-qualification){target="_blank"}.
 
 <!--NO LONGER WITH MOMENTUM - The message returned by the remote server on the first occurrence of this error type is displayed in the **[!UICONTROL First text]** column of the **[!UICONTROL Audit]** tab.
 
@@ -111,7 +111,7 @@ Om giltighetsperioden till exempel är inställd på standardvärdet 5 dagar i C
 
 När ett meddelande har varit i MTA-kön i 3,5 dagar och inte kunnat levereras, kommer det att löpa ut och status uppdateras från **[!UICONTROL Sent]** till **[!UICONTROL Failed]** i leveransloggarna.
 
-Mer information om giltighetsperioden finns i [Adobe Campaign Classic v7-dokumentation](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/key-steps-when-creating-a-delivery/steps-sending-the-delivery.html#defining-validity-period){target=&quot;_blank&quot;}.
+Mer information om giltighetsperioden finns i [Adobe Campaign Classic v7-dokumentation](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/key-steps-when-creating-a-delivery/steps-sending-the-delivery.html#defining-validity-period){target="_blank"}.
 
 
 ## E-postfeltyper {#email-error-types}

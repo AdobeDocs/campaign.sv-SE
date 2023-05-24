@@ -4,7 +4,8 @@ description: Lär dig hur du använder och skapar målmappningar
 feature: Audiences, Profiles
 role: User, Developer
 level: Beginner, Intermediate
-source-git-commit: 2ce1ef1e935080a66452c31442f745891b9ab9b3
+exl-id: 5256fc15-1878-4064-9c75-7876a3826b83
+source-git-commit: 77ec01aaba1e50676bed57f503a9e4e8bb1fe54c
 workflow-type: tm+mt
 source-wordcount: '344'
 ht-degree: 0%
@@ -65,4 +66,3 @@ Guiden Skapa målmappning för Adobe Campaign hjälper dig att skapa alla schema
    ![](assets/wf_new_mapping_define_extensions.png)
 
    Klicka på **[!UICONTROL Save]** knapp för att starta framtagning av leveransmappning: alla länkade tabeller skapas automatiskt baserat på de valda parametrarna.
-

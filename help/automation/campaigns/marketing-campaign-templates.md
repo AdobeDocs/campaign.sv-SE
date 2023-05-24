@@ -6,7 +6,7 @@ feature: Campaigns, Templates
 exl-id: 1bd8d3e7-aaa9-4e00-96bb-0d30614ab380
 source-git-commit: 1c879c7803c346d4b602089a22c2639eb83e82be
 workflow-type: tm+mt
-source-wordcount: '0'
+source-wordcount: '987'
 ht-degree: 0%
 
 ---

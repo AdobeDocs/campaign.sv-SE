@@ -6,10 +6,11 @@ role: Admin, Developer, User
 level: Beginner, Intermediate, Experienced
 hide: true
 hidefromtoc: true
-source-git-commit: e873e945f7101c5c54b4b18a128951e08d329b87
+exl-id: a45f7b22-44c7-4dad-af0a-ae8f683ae3d9
+source-git-commit: 77ec01aaba1e50676bed57f503a9e4e8bb1fe54c
 workflow-type: tm+mt
 source-wordcount: '472'
-ht-degree: 5%
+ht-degree: 8%
 
 ---
 
@@ -21,7 +22,7 @@ Den här sidan beskriver de förbättringar och korrigeringar som ingår i näst
 
 >[!CAUTION]
 >
-> Uppgradering av klientkonsolen är obligatoriskt. Lär dig hur du uppgraderar din klientkonsol i den här [page](../start/connect.md#download-ac-console).
+> Uppgradering av klientkonsolen är obligatorisk. Lär dig hur du uppgraderar din klientkonsol på den här [sidan](../start/connect.md#download-ac-console).
 
 _7 oktober 2022_
 

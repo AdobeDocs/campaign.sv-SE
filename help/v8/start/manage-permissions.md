@@ -4,9 +4,10 @@ description: Lär dig hur du tilldelar behörigheter till Campaign v8-användare
 feature: Permissions
 role: User, Admin
 level: Beginner
-source-git-commit: b63dc1616bc7ce1387a7bd0590c289b59f11b33f
+exl-id: 90154f84-b6a7-407c-93b7-9731dc94d9de
+source-git-commit: b96ac3bd2365c548d071e626721d606dd33200b5
 workflow-type: tm+mt
-source-wordcount: '1640'
+source-wordcount: '1632'
 ht-degree: 0%
 
 ---
@@ -19,7 +20,7 @@ Som produktadministratör kan du lägga till användare och bevilja åtkomst til
 
 Följ stegen nedan för att lägga till en användare:
 
-1. I [Admin Console](https://adminconsole.adobe.com/enterprise){target=&quot;_blank&quot;} startsida, välj **Lägg till användare**.
+1. I [Admin Console](https://adminconsole.adobe.com/enterprise){target="_blank"} startsida, välja **Lägg till användare**.
 
    ![](assets/add-a-user.png)
 
@@ -34,7 +35,7 @@ Följ stegen nedan för att lägga till en användare:
 
 1. Klicka **Spara**. Användaren läggs till och visas i listan Användare. Om du tilldelar användare en administratörsroll eller en produktprofil får de ett e-postmeddelande. Användarna måste följa länken för att slutföra sin profil.
 
-Läs mer om hur du skapar användare i Admin Console i [den här sidan](https://helpx.adobe.com/ie/enterprise/using/manage-users-individually.html){target=&quot;_blank&quot;}.
+Läs mer om hur du skapar användare i Admin Console i [den här sidan](https://helpx.adobe.com/ie/enterprise/using/manage-users-individually.html){target="_blank"}.
 
 När nya användare [logga in på Campaign](connect.md) med deras Adobe ID läggs de till i listan över kampanjoperatörer i klientkonsolen. Kampanjoperatorer lagras i **[!UICONTROL Administration > Access management > Operators]** mapp för Campaign Explorer.
 
@@ -74,7 +75,7 @@ Om du till exempel vill skapa en produktprofil för &#39;granskare&#39; följer 
 
 #### Skapa produktprofilen i Admin Console{#create-profile-in-admin-console}
 
-1. Anslut till [Admin Console](https://adminconsole.adobe.com/enterprise){target=&quot;_blank&quot;}.
+1. Anslut till [Admin Console](https://adminconsole.adobe.com/enterprise){target="_blank"}.
 1. Från **Produkter och tjänster** på startsidan, öppna Campaign-produkten.
 1. Klicka **Ny profil** och ange namnet på produktprofilen som ska skapas, med exakt rätt syntax enligt beskrivningen [här](#product-profiles). Vi skriver till exempel: kampanj - `<your-instance-name>` - granskare
 
@@ -174,7 +175,7 @@ De här produktprofilerna matchar Campaign **operatorgrupper**. Standardoperator
 
 Du kan använda Admin Console för att skapa användargrupper och tilldela användare till dem.
 
-En användargrupp är en samling olika användare som måste få en delad uppsättning behörigheter. Lär dig hur du skapar användargrupper i [det här avsnittet](https://helpx.adobe.com/ie/enterprise/using/user-groups.html){target=&quot;_blank&quot;}.
+En användargrupp är en samling olika användare som måste få en delad uppsättning behörigheter. Lär dig hur du skapar användargrupper i [det här avsnittet](https://helpx.adobe.com/ie/enterprise/using/user-groups.html){target="_blank"}.
 
 Du kan tilldela produktprofiler till användargrupper. Alla användare i gruppen får alltså samma produktbehörigheter.
 

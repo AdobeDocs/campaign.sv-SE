@@ -3,7 +3,8 @@ product: campaign
 title: Vänta
 description: Läs mer om aktiviteten Vänta i arbetsflödet
 feature: Workflows
-source-git-commit: 2b1dec4b9c456df4dfcebfe10d18e0ab01599275
+exl-id: a9bcb214-5c87-4b26-804a-22b868905022
+source-git-commit: 77ec01aaba1e50676bed57f503a9e4e8bb1fe54c
 workflow-type: tm+mt
 source-wordcount: '192'
 ht-degree: 1%

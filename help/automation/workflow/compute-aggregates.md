@@ -3,7 +3,8 @@ product: campaign
 title: Utför sammanställd beräkning
 description: Lär dig hur du utför sammanställd datoranvändning i frågor
 feature: Workflows
-source-git-commit: 2b1dec4b9c456df4dfcebfe10d18e0ab01599275
+exl-id: 00e564b5-3c8e-45d4-b240-c872a8b8ccb6
+source-git-commit: 190707b8b1ea5f90dc6385c13832fbb01378ca1d
 workflow-type: tm+mt
 source-wordcount: '225'
 ht-degree: 0%

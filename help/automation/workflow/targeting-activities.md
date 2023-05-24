@@ -3,7 +3,8 @@ product: campaign
 title: Om målinriktade aktiviteter
 description: Om målinriktade aktiviteter
 feature: Workflows, Audiences, Targeting Activity
-source-git-commit: 72467caf94e652ede70c00f1ea413012fc4c7e1f
+exl-id: e89c9f20-fc10-421f-9c14-2e33be562a8d
+source-git-commit: 77ec01aaba1e50676bed57f503a9e4e8bb1fe54c
 workflow-type: tm+mt
 source-wordcount: '303'
 ht-degree: 1%
@@ -34,4 +35,3 @@ Med de här aktiviteterna kan du skapa ett eller flera mål genom att definiera 
 * **[Prenumerationstjänster](subscription-services.md)**: I kan du hantera målprenumerationer och avbryta prenumerationer på en informationstjänst.
 * **[Union](union.md)**: Med kan du gruppera resultatet av flera aktiviteter till ett enda mål.
 * **[Uppdatera data](update-data.md)**: gör att du kan uppdatera data i databasen avsevärt.
-

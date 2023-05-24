@@ -3,13 +3,13 @@ product: campaign
 title: Skicka en rapport till en lista
 description: Lär dig hur du skickar en rapport till en lista med ett arbetsflöde
 feature: Workflows
-source-git-commit: 4c3caa8e31c2076d32a03a8778a28edce50cde63
+exl-id: 5bc576d0-cab7-4d26-a3a5-91982a00e356
+source-git-commit: 77ec01aaba1e50676bed57f503a9e4e8bb1fe54c
 workflow-type: tm+mt
 source-wordcount: '632'
 ht-degree: 3%
 
 ---
-
 
 # Skicka en rapport till en lista{#send-a-report-to-a-list}
 

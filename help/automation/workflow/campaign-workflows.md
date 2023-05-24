@@ -3,13 +3,13 @@ product: campaign
 title: Typ av arbetsflöden
 description: Upptäck olika typer av arbetsflöden i Campaign
 feature: Workflows
-source-git-commit: 72467caf94e652ede70c00f1ea413012fc4c7e1f
+exl-id: f511332c-1fcc-444f-851b-e8b470b719b4
+source-git-commit: 190707b8b1ea5f90dc6385c13832fbb01378ca1d
 workflow-type: tm+mt
 source-wordcount: '96'
 ht-degree: 2%
 
 ---
-
 
 # Kampanjarbetsflöden {#campaign-workflows}
 

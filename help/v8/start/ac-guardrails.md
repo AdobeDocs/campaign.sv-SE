@@ -7,14 +7,14 @@ level: Beginner, Intermediate, Experienced
 exl-id: 50c254ba-cc33-49b2-b7d5-12aa69883c07
 source-git-commit: 58fff46ba12f5c6221bbcd88a40fa0806a6c98b9
 workflow-type: tm+mt
-source-wordcount: '247'
+source-wordcount: '245'
 ht-degree: 1%
 
 ---
 
 # Produktskyddsräcken{#guardrails}
 
-Tillstånd, produktbegränsningar och prestandaskydd finns i [Adobe Campaign Managed Cloud Services produktbeskrivningssida](https://helpx.adobe.com/legal/product-descriptions/adobe-campaign-managed-cloud-services.html){target=&quot;_blank&quot;}.
+Tillstånd, produktbegränsningar och prestandaskydd finns i [Adobe Campaign Managed Cloud Services produktbeskrivningssida](https://helpx.adobe.com/legal/product-descriptions/adobe-campaign-managed-cloud-services.html){target="_blank"}.
 
 Nedan finns ytterligare skyddsutkast och begränsningar när du använder [!DNL Adobe Campaign].
 

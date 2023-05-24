@@ -7,7 +7,7 @@ level: Beginner
 exl-id: 0be1c5f5-f07d-46dc-bebc-5eb50f466547
 source-git-commit: b323dbf9504e39cca78f7082089b864544ee1633
 workflow-type: tm+mt
-source-wordcount: '1574'
+source-wordcount: '1570'
 ht-degree: 1%
 
 ---
@@ -152,9 +152,11 @@ Lär dig hur du skickar ett e-postmeddelande med anpassade datafält till profil
 
 Och dessa sidor finns i dokumentationen för Campaign v7:
 
-* [Automatisera framtagning, utgåva och publicering av innehåll](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/content-management/automating-via-workflows.html){target=&quot;_blank&quot;} Lär dig hur du automatiserar skapandet och leveransen av ett innehållsblock med tillägget Kampanjinnehållshantering.
+* [Automatisera framtagning, utgåva och publicering av innehåll](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/content-management/automating-via-workflows.html){target="_blank"}
+Lär dig hur du automatiserar skapandet och leveransen av ett innehållsblock med tillägget för hantering av kampanjinnehåll.
 
-* [A/B-tester](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/a-b-testing/use-case/a-b-testing-use-case.html){target=&quot;_blank&quot;} Lär dig hur du jämför två e-postleveransinnehåll via ett målarbetsflöde. Meddelandet och texten är identiska i båda leveranserna: bara layouten ändras. Målgruppen är uppdelad i tre delar: två testgrupper och den återstående populationen. En annan version av leveransen skickas till varje testgrupp.
+* [A/B-tester](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/a-b-testing/use-case/a-b-testing-use-case.html){target="_blank"}
+Lär dig hur du jämför två e-postleveranser via ett arbetsflöde för målinriktning. Meddelandet och texten är identiska i båda leveranserna: bara layouten ändras. Målgruppen är uppdelad i tre delar: två testgrupper och den återstående populationen. En annan version av leveransen skickas till varje testgrupp.
 
 ### Övervakning {#monitoring}
 
