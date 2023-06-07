@@ -3,7 +3,7 @@ title: Migrering av tekniska användare till tekniskt konto på Developer Consol
 description: Migrering av tekniska användare till tekniskt konto på Developer Console
 hide: true
 hidefromtoc: true
-source-git-commit: a598c37dac999c93fa50c9a243e7b9cbfbed3cda
+source-git-commit: 8842404511bd6166d920ebdeee942007b33a1bab
 workflow-type: tm+mt
 source-wordcount: '808'
 ht-degree: 0%
@@ -74,7 +74,7 @@ Så här uppdaterar du autentiseringsläget för den tekniska operatorn till IMS
 
 1. Bläddra från Campaign Client console Explorer till **Administration > Åtkomsthantering > Operatorer**.
 1. Redigera den befintliga tekniska operator som används för API:er.
-1. Ersätt **Namn (inloggning)** av den här tekniska operatören via det tekniska kontots e-postadress som hämtats tidigare.
+1. Ersätt **Namn (inloggning)** av den här tekniska operatören via det e-postmeddelande för tekniska konton som hämtats tidigare.
 1. Bläddra till **Redigera** överst till vänster bredvid **Fil** och markera **Redigera XML-källan**.
 1. Uppdatera autentiseringsläget till `ims`, enligt följande:
 
@@ -175,7 +175,7 @@ När migreringsprocessen har uppnåtts och validerats uppdateras Soap-anropen en
            <urn:sessiontoken>SESSION_TOKEN</urn:sessiontoken>
            <urn:domEvent>
                <!--You may enter ANY elements at this point-->
-               <rtEvent type="melon" email="dchavan@adobe.com"/>
+               <rtEvent type="type" email="name@domain.com"/>
            </urn:domEvent>
        </urn:PushEvent>
    </soapenv:Body>
@@ -184,7 +184,7 @@ När migreringsprocessen har uppnåtts och validerats uppdateras Soap-anropen en
 
 * Efter migreringen
 
-   ```
+   ```sql
    POST /nl/jsp/soaprouter.jsp HTTP/1.1
    Host: localhost:8080
    Content-Type: application/soap+xml;
@@ -199,7 +199,7 @@ När migreringsprocessen har uppnåtts och validerats uppdateras Soap-anropen en
            <urn:sessiontoken></urn:sessiontoken>
            <urn:domEvent>
                <!--You may enter ANY elements at this point-->
-               <rtEvent type="melon" email="dchavan@adobe.com"/>
+               <rtEvent type="type" email="name@domain.com"/>
            </urn:domEvent>
        </urn:PushEvent>
    </soapenv:Body>
