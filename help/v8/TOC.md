@@ -4,9 +4,9 @@ user-guide-title: Campaign v8
 title: Adobe Campaign v8-dokumentation
 description: Dokumentation om Campaign v8
 breadcrumb-title: Översikt över Campaign
-source-git-commit: e3ea361cc486096fe6c19ac469e8a71b636371ac
+source-git-commit: eadd204088bc9ca6cf526a2ef4af3e8a61e48a25
 workflow-type: tm+mt
-source-wordcount: '543'
+source-wordcount: '550'
 ht-degree: 23%
 
 ---
@@ -24,6 +24,8 @@ ht-degree: 23%
    + [Guardrails](start/ac-guardrails.md)
    + [Kända fel](start/known-issues.md)
    + [Kompatibilitetsmatris](start/compatibility-matrix.md)
+   + Tekniska anmärkningar{#technotes}
+      + [Migrera teknisk operator till Developer Console](start/ims-migration.md)
 + Kom igång {#new}
    + [Kom igång med Adobe Campaign](start/get-started.md)
    + [Viktiga möjligheter](start/whats-new.md)
