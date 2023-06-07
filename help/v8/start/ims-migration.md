@@ -3,9 +3,9 @@ title: Migrering av tekniska användare till tekniskt konto på Developer Consol
 description: Migrering av tekniska användare till tekniskt konto på Developer Console
 hide: true
 hidefromtoc: true
-source-git-commit: 8842404511bd6166d920ebdeee942007b33a1bab
+source-git-commit: 1f9efc0744792c1173e77965ff81eaee0ed2c618
 workflow-type: tm+mt
-source-wordcount: '808'
+source-wordcount: '807'
 ht-degree: 0%
 
 ---
@@ -18,7 +18,7 @@ Från och med Campaign v8.5 förbättras autentiseringsprocessen till Campaign v
 
 Kampanjens reguljära användare ansluter redan till Adobe Campaign-konsolen via sin Adobe ID via Adobe Identity Management System (IMS). Som en del av arbetet med att förstärka säkerhets- och autentiseringsprocessen anropar nu Adobe Campaign Client-programmet Campaign-API:er direkt med IMS-kontotoken.
 
-Läs mer om autentiseringsprocessen mellan servrar för den nya servern [i Adobe Developer Console-dokumentationen](https://developer.adobe.com/developer-console/docs/guides/authentication/ServerToServerAuthentication/){target="_blank"}.
+Läs mer om autentiseringsprocessen från den nya servern till servern i [Adobe Developer Console-dokumentation](https://developer.adobe.com/developer-console/docs/guides/authentication/ServerToServerAuthentication/){target="_blank"}.
 
 Den här ändringen gäller från och med Campaign v8.5 och kommer att **obligatoriskt** starta Campaign v8.6.
 
@@ -46,7 +46,7 @@ När du har tillgång till ditt Campaign-projekt kan du lägga till tjänster so
 
 ### Steg 2 - Lägg till ett API i ditt projekt med Server to Server-autentisering{#ims-migration-step-2}
 
-När projektet har skapats i Adobe Developer Console lägger du till ett API som använder autentisering från server till server. Lär dig hur du ställer in autentiseringsuppgifter för OAuth Server-till-Server i [i Adobe Developer Console-dokumentationen](https://developer.adobe.com/developer-console/docs/guides/authentication/ServerToServerAuthentication/implementation/){target="_blank"}.
+När projektet har skapats i Adobe Developer Console lägger du till ett API som använder autentisering från server till server. Lär dig hur du ställer in autentiseringsuppgifter för OAuth Server-till-Server i [Adobe Developer Console-dokumentation](https://developer.adobe.com/developer-console/docs/guides/authentication/ServerToServerAuthentication/implementation/){target="_blank"}.
 
 När API:t har anslutits kan du komma åt de nyligen genererade autentiseringsuppgifterna, inklusive klient-ID och klienthemlighet, samt generera en åtkomsttoken.
 
