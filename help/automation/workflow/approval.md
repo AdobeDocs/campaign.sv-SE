@@ -4,9 +4,9 @@ title: Godkännande
 description: Godkännande
 feature: Workflows, Approvals
 exl-id: 9e57d21c-ce16-448d-97f1-8c6844acb37b
-source-git-commit: 77ec01aaba1e50676bed57f503a9e4e8bb1fe54c
+source-git-commit: 290f4e9a0d13ef49caacb7a128ccc266bafd5e69
 workflow-type: tm+mt
-source-wordcount: '546'
+source-wordcount: '547'
 ht-degree: 0%
 
 ---
@@ -41,7 +41,7 @@ Vid flera godkännanden aktiveras övergångar som motsvarar valet av operatorer
 
 Den här aktiviteten blockerar inte bearbetning och arbetsflödet kan utföra andra åtgärder medan det väntar på ett svar.
 
-En operator kan godkänna uppgifterna som tilldelats den operatorn från konsolen. En operator med administratörsbehörighet kan visa och ta bort uppgifter som tilldelats en operator, men kan inte svara på dem.
+En operator kan godkänna de uppgifter som tilldelats den operatorn från klientkonsolen. En operator med administratörsbehörighet kan visa och ta bort uppgifter som tilldelats en operator, men kan inte svara på dem.
 
 Om du ändrar aktivitetens titel eller meddelandetext påverkas inte de aktuella uppgifterna, men om du å andra sidan ändrar de möjliga alternativen påverkas de aktuella uppgifterna direkt, vilket automatiskt ärver den nya listan med alternativ.
 

@@ -3,7 +3,7 @@ title: Migrering av tekniska användare till tekniskt konto på Developer Consol
 description: Migrering av tekniska användare till tekniskt konto på Developer Console
 hide: true
 hidefromtoc: true
-source-git-commit: 1f9efc0744792c1173e77965ff81eaee0ed2c618
+source-git-commit: 290f4e9a0d13ef49caacb7a128ccc266bafd5e69
 workflow-type: tm+mt
 source-wordcount: '807'
 ht-degree: 0%
@@ -64,7 +64,7 @@ Nu kan du lägga till din Campaign-produktprofil i projektet, enligt beskrivning
 
 ### Steg 4 - Uppdatera den tekniska operatorn i klientkonsolen {#ims-migration-step-4}
 
-Det sista steget är att uppdatera den tekniska operatören i Adobe Campaign Client Console.
+Det sista steget är att uppdatera den tekniska operatorn i Adobe Campaign Client Console.
 
 >[!CAUTION]
 >
@@ -72,7 +72,7 @@ Det sista steget är att uppdatera den tekniska operatören i Adobe Campaign Cli
 
 Så här uppdaterar du autentiseringsläget för den tekniska operatorn till IMS:
 
-1. Bläddra från Campaign Client console Explorer till **Administration > Åtkomsthantering > Operatorer**.
+1. Bläddra från Campaign Client Console Explorer till **Administration > Åtkomsthantering > Operatorer**.
 1. Redigera den befintliga tekniska operator som används för API:er.
 1. Ersätt **Namn (inloggning)** av den här tekniska operatören via det e-postmeddelande för tekniska konton som hämtats tidigare.
 1. Bläddra till **Redigera** överst till vänster bredvid **Fil** och markera **Redigera XML-källan**.

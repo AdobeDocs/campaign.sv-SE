@@ -4,9 +4,9 @@ title: Lokalt godkännande
 description: Lokalt godkännande
 feature: Workflows
 exl-id: 172b6827-ddfc-4c6e-87c9-eb49e73ab3ab
-source-git-commit: 77ec01aaba1e50676bed57f503a9e4e8bb1fe54c
+source-git-commit: 290f4e9a0d13ef49caacb7a128ccc266bafd5e69
 workflow-type: tm+mt
-source-wordcount: '642'
+source-wordcount: '645'
 ht-degree: 1%
 
 ---
@@ -81,13 +81,13 @@ Följande fält måste anges om det finns en leveransfeedback-rapport:
 
 I det här exemplet visas hur du ställer in en godkännandeprocess för en arbetsflödesleverans. Mer information om hur du skapar leveransarbetsflöden finns i [Exempel: arbetsflöde för leverans](delivery.md#example--delivery-workflow) -avsnitt.
 
-En operator kan godkänna en leverans på ett av två sätt: med webbsidan som är länkad i e-postmeddelandet eller via konsolen.
+En operator kan godkänna en leverans på ett av två sätt: via webbsidan som är länkad i e-postmeddelandet eller via klientkonsolen.
 
 * Webbgodkännande
 
    Med e-postmeddelandet som skickas till operatorer i gruppen Administratör kan du godkänna leveransmålet. Meddelandet använder den definierade texten och JavaScript-uttrycket ersätts med det beräknade värdet (i det här fallet &quot;574&quot;)
 
-   Klicka på länken och logga in på Adobe Campaign-konsolen för att godkänna leveransen.
+   Klicka på länken och logga in på Adobe Campaign Client Console för att godkänna leveransen.
 
    ![](assets/new-workflow-valid-webaccess.png)
 
@@ -95,7 +95,7 @@ En operator kan godkänna en leverans på ett av två sätt: med webbsidan som �
 
    ![](assets/new-workflow-valid-webaccess-confirm.png)
 
-* Godkännande via konsolen
+* Godkännande via klientkonsolen
 
    I trädstrukturen är **[!UICONTROL Administration > Production > Objects created automatically > Approvals pending]** -noden innehåller en lista med uppgifter som ska godkännas av den operatör som är ansluten just nu. Listan ska innehålla en rad. Dubbelklicka på raden för att svara. Följande fönster visas:
 

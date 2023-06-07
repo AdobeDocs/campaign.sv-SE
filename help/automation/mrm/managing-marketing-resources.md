@@ -3,9 +3,9 @@ product: campaign
 title: Hantera marknadsföringsresurser
 description: Lär dig hantera marknadsföringsresurser
 exl-id: 4d91fb7d-f846-4644-b83d-5a6a988ae297
-source-git-commit: 399c81276d29622a2161c8c90395df1a38954763
+source-git-commit: 290f4e9a0d13ef49caacb7a128ccc266bafd5e69
 workflow-type: tm+mt
-source-wordcount: '1110'
+source-wordcount: '1111'
 ht-degree: 1%
 
 ---
@@ -99,7 +99,7 @@ Om du vill godkänna en resurs klickar du på **[!UICONTROL Approve the resource
 
 ![](assets/mkt-resouce-approve.png)
 
-Auktoriserade operatorer kan sedan godkänna eller avvisa godkännande. Den här åtgärden är möjlig: via e-postmeddelandet som skickas (genom att klicka på länken i meddelandet) eller via konsolen (genom att klicka på **[!UICONTROL Approve]** ).
+Auktoriserade operatorer kan sedan godkänna eller avvisa godkännande. Den här åtgärden är möjlig: via e-postmeddelandet som skickas (genom att klicka på länken i meddelandet) eller via klientkonsolen (genom att klicka på **[!UICONTROL Approve]** ).
 
 I godkännandefönstret kan du ange en kommentar.
 

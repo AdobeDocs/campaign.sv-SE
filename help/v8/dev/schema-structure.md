@@ -5,7 +5,7 @@ feature: Schema Extension
 role: Developer
 level: Intermediate, Experienced
 exl-id: 9c4a9e71-3fc8-4b4e-8782-0742bbeaf426
-source-git-commit: 65f4da979f0c5884797af0c3a835d948672b4a7c
+source-git-commit: 290f4e9a0d13ef49caacb7a128ccc266bafd5e69
 workflow-type: tm+mt
 source-wordcount: '1395'
 ht-degree: 1%
@@ -180,13 +180,13 @@ The **`<elements>`** och **`<attributes>`** element i dataschemat kan berikas me
    <attribute name="email" type="string" length="80" label="Email"/>
    ```
 
-   Etiketten visas i indataformuläret för Adobe Campaign klientkonsol:
+   Etiketten visas i indataformuläret för Adobe Campaign Client Console:
 
    ![](assets/schema_label.png)
 
 * The **desc** kan du ange en lång beskrivning.
 
-   Beskrivningen visas från indataformuläret i statusfältet i huvudfönstret i Adobe Campaign klientkonsol.
+   Beskrivningen visas från indataformuläret i statusfältet i huvudfönstret i Adobe Campaign Client Console.
 
    >[!NOTE]
    >
@@ -213,7 +213,7 @@ Värdet måste vara ett uttryck som är kompatibelt med XPath-språket. Mer info
 
    >[!NOTE]
    >
-   >I Adobe Campaign klientkonsol **[!UICONTROL Administration>Counters]** noden används för att hantera räknare.
+   >I Adobe Campaign Client Console **[!UICONTROL Administration>Counters]** noden används för att hantera räknare.
 
 Om du vill länka ett standardvärde till ett fält kan du använda `<default>  or  <sqldefault>   field.  </sqldefault> </default>`
 
@@ -237,7 +237,7 @@ Dessa värden visas i en nedrullningsbar lista från indataformuläret:
 
 >[!NOTE]
 >
->I Adobe Campaign klientkonsol **[!UICONTROL Administration > Enumerations]** noden används för att hantera uppräkningar.
+>I Adobe Campaign Client Console **[!UICONTROL Administration > Enumerations]** noden används för att hantera uppräkningar.
 
 #### Ange uppräkning {#set-enumeration}
 
@@ -361,7 +361,7 @@ Det går också att definiera komplexa uttryck, till exempel följande aritmetis
 
 Funktioner på hög nivå har lagts till i uttrycken för att berika detta språks potential.
 
-Du kommer åt listan över tillgängliga funktioner via en uttrycksredigerare i Adobe Campaign klientkonsol:
+Du kommer åt listan över tillgängliga funktioner via en uttrycksredigerare i Adobe Campaign Client Console:
 
 ![](assets/schema_function.png)
 

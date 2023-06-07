@@ -5,7 +5,7 @@ feature: Overview
 role: Admin, Developer, User
 level: Beginner, Intermediate, Experienced
 exl-id: 76473fa5-48ba-42cf-8664-0dd197833a86
-source-git-commit: c248dd899ea704e43873652545c6b945c2915b57
+source-git-commit: 290f4e9a0d13ef49caacb7a128ccc266bafd5e69
 workflow-type: tm+mt
 source-wordcount: '1839'
 ht-degree: 13%
@@ -84,7 +84,7 @@ För att optimera säkerheten har säkerhetstoken tagits bort från URL:er som g
 
 **Förbättringar**
 
-* Efter Microsoft Internet Explorer 11 är återgivningsmotorn för HTML i konsolen nu igång **Microsoft Edge Chromium**. Dessutom installeras **Microsoft Edge WebView 2** Körning krävs nu för alla installationer av klientkonsolen.
+* Efter Microsoft Internet Explorer 11 är återgivningsmotorn för HTML i konsolen nu igång **Microsoft Edge Chromium**. Dessutom installeras **Microsoft Edge WebView 2** Nu krävs runtime-modulen för alla installationer av klientkonsolen.
 * Förbättrad arbetsflödeskörning med hög tillgänglighet för arbetsflöde, som gör att du kan köra samtidiga arbetsflöden i olika behållare för att förhindra att tjänsten för arbetsflöde går förlorad och undvika relaterade körningsfel. **Anteckning**: Den nya funktionen lanseras endast i begränsad tillgänglighet för en uppsättning kunder.
 * Sekretessförfrågningar utförs nu i batch för ett givet sekretessnamnområde. Den här förbättringen ökar körningstiden för begäranden om GDPR/sekretess-borttagning.
 
@@ -100,7 +100,7 @@ Se [kompatibilitetsmatrisen för Campaign](compatibility-matrix.md).
 * Korrigerat ett problem som kan leda till att leveranser stannar kvar i **Väntande** status även om kontaktdatum har nåtts. (NEO-48079)
 * Ett problem i arbetsflöden som kunde förhindra att filer uppdaterades på servern när **Inläsning av data (fil)** aktivitet. Processen stoppades till 100 % men tog aldrig slut. (NEO-47269)
 * Korrigerade ett problem under efteruppgraderingen i japanska miljöer. (NEO-46640)
-* Korrigerade ett problem som kunde inträffa om en leverans nådde en exakt storlek under MTA-processen. (NEO-46097)
+* Korrigerade ett problem som kunde uppstå om en leverans nådde en exakt storlek under MTA-processen. (NEO-46097)
 * Ett problem som gjorde att spårningsloggar inte kunde returnera data som var relaterade till mottagarens webbläsare har korrigerats. (NEO-46612)
 * Korrigerade ett problem som ledde till personaliseringsproblem när SMS-meddelanden skickades med ett externt leveransläge. (NEO-46415)
 * Ett problem som kunde generera dubbletter i spårningsloggar har korrigerats. (NEO-46409)

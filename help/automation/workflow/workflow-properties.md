@@ -4,9 +4,9 @@ title: Egenskaper för arbetsflöde
 description: Läs mer om egenskaper för kampanjarbetsflöde
 feature: Workflows
 exl-id: 7fef434e-f6bd-46a4-9ec2-0182f081c928
-source-git-commit: 6464e1121b907f44db9c0c3add28b54486ecf834
+source-git-commit: 290f4e9a0d13ef49caacb7a128ccc266bafd5e69
 workflow-type: tm+mt
-source-wordcount: '543'
+source-wordcount: '544'
 ht-degree: 1%
 
 ---
@@ -76,6 +76,6 @@ Det här avsnittet visas bara i kampanjarbetsflöden.
 
    ![](assets/wf-properties_select-supervisors.png)
 
-   The **[!UICONTROL Notification to a workflow supervisor]** Standardmallen innehåller en länk för åtkomst till Adobe Campaign-konsolen via webben, så att mottagaren kan arbeta med problemet när han eller hon är inloggad.
+   The **[!UICONTROL Notification to a workflow supervisor]** Standardmallen innehåller en länk för åtkomst till Adobe Campaign Client Console via webben, så att mottagaren kan arbeta med problemet när de är inloggade.
 
    Om du vill skapa en personlig mall går du till **[!UICONTROL Administration>Campaign management>Technical deliveries and templates]**.

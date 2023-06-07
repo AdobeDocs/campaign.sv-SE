@@ -5,7 +5,7 @@ feature: Permissions
 role: User, Admin
 level: Beginner
 exl-id: 90154f84-b6a7-407c-93b7-9731dc94d9de
-source-git-commit: b96ac3bd2365c548d071e626721d606dd33200b5
+source-git-commit: 290f4e9a0d13ef49caacb7a128ccc266bafd5e69
 workflow-type: tm+mt
 source-wordcount: '1632'
 ht-degree: 0%
@@ -61,7 +61,7 @@ Du kan använda standardproduktprofiler eller skapa nya.
 
 ### Skapa en produktprofil{#create-product-profile}
 
-Om du vill lägga till en ny produktprofil i Adobe måste du först skapa den i Campaign-klientkonsolen och sedan lägga till den i Admin Console.
+Om du vill lägga till en ny produktprofil i Adobe måste du först skapa den i Campaign Client Console och sedan lägga till den i Admin Console.
 
 Om du till exempel vill skapa en produktprofil för &#39;granskare&#39; följer du stegen nedan.
 

@@ -4,9 +4,9 @@ title: Skapa marknadsföringskampanjer
 description: Lär dig hur du skapar och genomför marknadsföringskampanjer
 feature: Campaigns, Cross Channel Orchestration, Programs
 exl-id: 90dd2dad-1380-490e-b958-4a28a7d930ed
-source-git-commit: ad286059a9f4b63d7de4fa5130760f36d0976431
+source-git-commit: 290f4e9a0d13ef49caacb7a128ccc266bafd5e69
 workflow-type: tm+mt
-source-wordcount: '1297'
+source-wordcount: '1298'
 ht-degree: 2%
 
 ---
@@ -159,7 +159,7 @@ När du skapar en kampanj via **[!UICONTROL Schedule]** under ett program koppla
 
 ## Använda webbgränssnittet {#use-the-web-interface-}
 
-Du kan öppna Adobe Campaign konsolskärmar via en webbläsare och visa alla kampanjer och leveranser samt rapporter och information om profilerna i din databas. Det går inte att skapa poster med den här åtkomsten. Beroende på användarrättigheterna kan du visa och/eller agera på data i databasen. Du kan till exempel godkänna kampanjinnehåll och målinriktning, starta om eller stoppa en leverans osv.
+Du kan öppna Adobe Campaign Client Console-skärmarna via en webbläsare och visa alla kampanjer och leveranser samt rapporter och information om profilerna i din databas. Det går inte att skapa poster med den här åtkomsten. Beroende på användarrättigheterna kan du visa och/eller agera på data i databasen. Du kan till exempel godkänna kampanjinnehåll och målinriktning, starta om eller stoppa en leverans osv.
 
 1. Logga in som vanligt via https://`<your instance>:<port>/view/home`.
 1. Använd menyerna för att komma åt översikterna.

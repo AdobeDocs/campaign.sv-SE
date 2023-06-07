@@ -5,7 +5,7 @@ feature: Audiences, Profiles
 role: User
 level: Beginner
 exl-id: 873578f6-6af9-4d0c-8df3-cce320fc6a4e
-source-git-commit: 2ce1ef1e935080a66452c31442f745891b9ab9b3
+source-git-commit: 290f4e9a0d13ef49caacb7a128ccc266bafd5e69
 workflow-type: tm+mt
 source-wordcount: '1638'
 ht-degree: 0%
@@ -193,7 +193,7 @@ Använd och kombinera **Snabbfilter** för att definiera filter för specifika f
 
 När du har lagt till snabbfilterfält visas de ovanför datalistan, den ena efter den andra. De kan tas bort oberoende av varandra.
 
-Snabbfilter är specifika för varje operator och initieras om varje gång operatorn rensar cachen för sin klientkonsol.
+Snabbfilter är specifika för varje operator och initieras om varje gång som operatorn rensar cachen för sin klientkonsol.
 
 Om du behöver återanvända ett filter skapar du en **avancerat filter** och spara. [Läs mer](#advanced-filters).
 

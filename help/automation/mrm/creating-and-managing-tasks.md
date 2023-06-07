@@ -3,9 +3,9 @@ product: campaign
 title: Skapa och hantera uppgifter
 description: Skapa och hantera uppgifter
 exl-id: 730d1712-53a6-4bf7-9aac-523b06bd0d0a
-source-git-commit: 094743fef69e137f80b670f0bf31dce56c282c34
+source-git-commit: 290f4e9a0d13ef49caacb7a128ccc266bafd5e69
 workflow-type: tm+mt
-source-wordcount: '3740'
+source-wordcount: '3743'
 ht-degree: 0%
 
 ---
@@ -466,7 +466,7 @@ Nedan visas de steg i en komplett uppgiftslivscykel för vilka den ansvariga per
 1. När du är klar med avsnittet som tilldelats dem kan deltagarna godkänna uppgiften, antingen:
 
    * via e-postmeddelandet.
-   * via konsolen eller webbgränssnittet i kontrollpanelen för uppgifter.
+   * via klientkonsolen eller webbgränssnittet i kontrollpanelen för uppgifter.
 
       ![](assets/s_ncs_user_task_start_rea.png)
 
@@ -480,7 +480,7 @@ Nedan visas de steg i en komplett uppgiftslivscykel för vilka den ansvariga per
 
    ![](assets/s_ncs_user_task_follow_from_dashboard.png)
 
-1. När den person som ansvarar för uppgiften har fastställt att den är slutförd kan han eller hon stänga den med hjälp av länken i e-postmeddelandet som skickades när aktiviteten startades, konsolen eller gränssnittet.
+1. När den person som ansvarar för uppgiften har fastställt att den är slutförd kan han eller hon stänga den med hjälp av länken i e-postmeddelandet som skickades när aktiviteten startades, via klientkonsolen eller gränssnittet.
 
    ![](assets/s_ncs_user_task_console_ressource_validation.png)
 
@@ -490,7 +490,7 @@ Nedan visas de steg i en komplett uppgiftslivscykel för vilka den ansvariga per
 
 1. Aktivitetsstatusen ändras till **[!UICONTROL To approve]** och ett meddelande skickas till granskaren.
 
-   De godkänner uppgiften via e-postmeddelandet, konsolen eller webbgränssnittet.
+   De godkänner uppgiften via e-postmeddelandet, klientkonsolen eller webbgränssnittet.
 
    De kan agera via kampanjkontrollpanelen:
 

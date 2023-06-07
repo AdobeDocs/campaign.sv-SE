@@ -6,9 +6,9 @@ feature: Application Settings
 role: Admin, Developer
 level: Beginner, Intermediate, Experienced
 exl-id: fefb6d80-c3d1-448b-82ab-648da58a0ba4
-source-git-commit: 666dbdac8330cae17693142cf45cc3d3d2d187a9
+source-git-commit: 290f4e9a0d13ef49caacb7a128ccc266bafd5e69
 workflow-type: tm+mt
-source-wordcount: '1845'
+source-wordcount: '1846'
 ht-degree: 1%
 
 ---
@@ -32,7 +32,7 @@ Lär dig hur du hanterar mappar och vyer i [den här sidan](../audiences/folders
 
 ## Hantera och anpassa listor{#customize-lists}
 
-I Campaign-klientkonsolen visas data i listor. Du kan anpassa dessa listor efter dina behov. Du kan till exempel lägga till kolumner, filtrera data, räkna poster, spara och dela inställningarna.
+I Campaign Client Console visas data i listor. Du kan anpassa dessa listor efter dina behov. Du kan till exempel lägga till kolumner, filtrera data, räkna poster, spara och dela inställningarna.
 
 Dessutom kan du skapa och spara filter.  Läs mer om filter i [den här sidan](../audiences/create-filters.md).
 
@@ -211,7 +211,7 @@ Så här skapar du ett alias:
 
 1. Spara ändringarna. Ersättningen av värden utförs av **Rensa alias** arbetsflöde som körs varje kväll. Se [Kör datarensning](#running-data-cleansing).
 
-För alla fält som baseras på den här uppräkningen, när en användare anger värdet **Adobe** i ett&quot;företag&quot;-fält (i Adobe Campaign-konsolen, i ett webbformulär) ersätts det automatiskt med värdet **Adobe**.
+För alla fält som baseras på den här uppräkningen, när en användare anger värdet **Adobe** i ett&quot;företag&quot;-fält (i Adobe Campaign Client Console, i ett webbformulär) ersätts det automatiskt av värdet **Adobe**.
 
 #### Konvertera fel värde till alias{#convert-to-alias}
 

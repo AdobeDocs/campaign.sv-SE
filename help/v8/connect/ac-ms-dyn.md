@@ -5,9 +5,9 @@ feature: Microsoft CRM Integration
 role: Admin, User
 level: Beginner, Intermediate, Experienced
 exl-id: 4f9e8f74-27dc-482c-a83c-25623b53560f
-source-git-commit: 2ce1ef1e935080a66452c31442f745891b9ab9b3
+source-git-commit: 290f4e9a0d13ef49caacb7a128ccc266bafd5e69
 workflow-type: tm+mt
-source-wordcount: '1364'
+source-wordcount: '1365'
 ht-degree: 1%
 
 ---
@@ -165,7 +165,7 @@ Först måste du skapa det externa kontot för Microsoft Dynamics 365.
 
 >[!NOTE]
 >
->Logga ut och sedan in på Adobe Campaign-konsolen igen för att godkänna installationen.
+>Logga ut och sedan in på Adobe Campaign Client Console igen för att godkänna installationen.
 
 ### Markera tabeller som ska synkroniseras{#ms-dyn-create-tables}
 

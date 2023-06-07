@@ -5,7 +5,7 @@ feature: Web Forms
 role: Developer
 level: Beginner, Intermediate, Experienced
 exl-id: 62908bba-9cfa-42b6-b463-b601496d535b
-source-git-commit: 2ce1ef1e935080a66452c31442f745891b9ab9b3
+source-git-commit: 290f4e9a0d13ef49caacb7a128ccc266bafd5e69
 workflow-type: tm+mt
 source-wordcount: '2552'
 ht-degree: 0%
@@ -16,13 +16,13 @@ ht-degree: 0%
 
 När du skapar eller utökar ett schema måste du skapa eller ändra de associerade indataformulären för att göra ändringarna synliga för slutanvändarna.
 
-Med ett inmatningsformulär kan du redigera en instans som är associerad med ett dataschema från Adobe Campaign klientkonsol. Formuläret identifieras av dess namn och namnutrymme.
+Med ett inmatningsformulär kan du redigera en instans som är associerad med ett dataschema från Adobe Campaign Client Console. Formuläret identifieras av dess namn och namnutrymme.
 
 Identifieringsnyckeln för ett formulär är en sträng som består av namnutrymmet och namnet avgränsat med ett kolon, till exempel: &quot;cus:contact&quot;.
 
 ## Redigera inmatningsformulär
 
-Skapa och konfigurera indataformulär från **[!UICONTROL Administration]> [!UICONTROL Configuration] >[!UICONTROL Input forms]** klientkonsolens mapp:
+Skapa och konfigurera indataformulär från **[!UICONTROL Administration]> [!UICONTROL Configuration] >[!UICONTROL Input forms]** mapp på klientkonsolen:
 
 ![](assets/form_arbo.png)
 

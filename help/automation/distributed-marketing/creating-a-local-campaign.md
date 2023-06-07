@@ -4,9 +4,9 @@ title: Skapa en lokal kampanj
 description: Skapa en lokal kampanj
 feature: Distributed Marketing
 exl-id: b46530b5-cb81-40d7-b596-c7685359782a
-source-git-commit: 7e5ffbec959785971280c394c416cebe83590897
+source-git-commit: 290f4e9a0d13ef49caacb7a128ccc266bafd5e69
 workflow-type: tm+mt
-source-wordcount: '1554'
+source-wordcount: '1555'
 ht-degree: 1%
 
 ---
@@ -295,9 +295,9 @@ När en kampanj beställs av en lokal enhet meddelas dess granskare via e-post, 
 
 ![](assets/mkg_dist_command_valid_web.png)
 
-#### Godkännande via Adobe Campaign Console {#approving-via-the-adobe-campaign-console}
+#### Godkänn via klientkonsolen {#approving-via-the-adobe-campaign-console}
 
-Beställningen kan också godkännas via konsolen i kampanjorderöversikten. Om du vill godkänna en beställning markerar du den och klickar på **[!UICONTROL Approve the order]**.
+Beställningen kan också godkännas via Client Console i kampanjorderöversikten. Om du vill godkänna en beställning markerar du den och klickar på **[!UICONTROL Approve the order]**.
 
 ![](assets/mkg_dist_local_order_valid.png)
 
@@ -321,7 +321,7 @@ Operatören som ansvarar för godkännandet kan avvisa en order eller ett kampan
 
 Om granskaren avvisar en order skickas den relevanta underrättelsen automatiskt till de berörda lokala enheterna: den visar kommentaren som angetts av den operator som avvisade godkännandet.
 
-Information visas på sidan med kampanjpaket eller på sidan med kampanjorder. Om de har åtkomst till Adobe Campaign-konsolen informeras lokala enheter om detta refusering.
+Information visas på sidan med kampanjpaket eller på sidan med kampanjorder. Om de har åtkomst till Adobe Campaign Client Console informeras lokala enheter om detta refusering.
 
 ![](assets/mkg_dist_do_not_valid_view.png)
 

@@ -4,9 +4,9 @@ description: Lär dig hur ni kan integrera er Campaign-miljö med Twitter
 role: User, Admin
 level: Beginner, Intermediate
 exl-id: 5523217a-b95f-4639-b941-52eb7d5a0203
-source-git-commit: 1baeb8827a0eab4f9487bb5e5afe4d779e00efe4
+source-git-commit: 290f4e9a0d13ef49caacb7a128ccc266bafd5e69
 workflow-type: tm+mt
-source-wordcount: '1061'
+source-wordcount: '1062'
 ht-degree: 3%
 
 ---
@@ -71,7 +71,7 @@ Om du vill länka din Campaign-instans till ditt Twitter-konto skapar du en **Tw
 >
 >Varje **Twitter** måste också skapas av Adobe på MID-instansen. Kontakta din Adobe-representant för att konfigurera din miljö.
 
-Om du vill ange inställningar måste du ha tillgång till både din Adobe Campaign-konsol och dina behörigheter i Twitter-appen.
+Om du vill ange inställningar måste du ha tillgång till både Adobe Campaign Client Console och programbehörigheterna för Twitter.
 
 1. I **Adobe Campaign**, bläddra till **[!UICONTROL Profiles and targets]** och väljer **[!UICONTROL Services and Subscriptions]** link
 1. Skapa en ny tjänst.
@@ -94,7 +94,7 @@ Om du vill ange inställningar måste du ha tillgång till både din Adobe Campa
 
 1. Kopiera innehållet i Twitter **Åtkomsttoken** och **Åtkomsttokenhemlighet** fält och klistra in dem i **[!UICONTROL Access token]** och **[!UICONTROL Access token secret]** fält i din kampanj **Twitter** service.
 
-1. Klicka på i Campaign-klientkonsolen **[!UICONTROL Save]**. Du har nu delegerat skrivbehörighet till Adobe Campaign.
+1. I Campaign Client Console klickar du på **[!UICONTROL Save]**. Du har nu delegerat skrivbehörighet till Adobe Campaign.
 
 Om du vill kontrollera inställningarna kan du:
 
