@@ -4,9 +4,9 @@ user-guide-title: Campaign v8
 title: Adobe Campaign v8-dokumentation
 description: Dokumentation om Campaign v8
 breadcrumb-title: Översikt över Campaign
-source-git-commit: eadd204088bc9ca6cf526a2ef4af3e8a61e48a25
+source-git-commit: 19c42bcd2a96173f3d33e3e259192107b5e64c6c
 workflow-type: tm+mt
-source-wordcount: '550'
+source-wordcount: '553'
 ht-degree: 23%
 
 ---
@@ -80,6 +80,7 @@ ht-degree: 23%
       + [Arbeta med externa profiler](audiences/external-profiles.md)
       + [Samla in profildata i webbformulär](audiences/collect-profiles.md)
       + [Arbeta med målmappningar](audiences/target-mappings.md)
+      + [Skapa testprofiler](audiences/test-profiles.md)
    + Skapa målgrupper {#create-audiences}
       + [Skapa en lista med kontakter](audiences/create-audiences.md)
       + [Skapa och hantera filter](audiences/create-filters.md)

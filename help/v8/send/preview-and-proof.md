@@ -5,9 +5,9 @@ feature: Personalization
 role: User
 level: Beginner
 exl-id: 5b9fa90c-c23e-47a7-b2ca-de75da4da2ab
-source-git-commit: c248dd899ea704e43873652545c6b945c2915b57
+source-git-commit: 19c42bcd2a96173f3d33e3e259192107b5e64c6c
 workflow-type: tm+mt
-source-wordcount: '713'
+source-wordcount: '703'
 ht-degree: 2%
 
 ---
@@ -51,20 +51,20 @@ Typen av korrekturmål har valts i **[!UICONTROL Targeting mode]** nedrullningsb
 * Använd **[!UICONTROL Substitution of the address]** om du vill ange e-postadresser och använda målmottagardata för att validera innehållet. Ersättningsadresserna kan anges manuellt eller väljas i listrutan. Den associerade uppräkningen är Ersättningsadress (rcpAddress).
 Som standard utförs ersättningen slumpmässigt, men du kan välja en viss mottagare från huvudmålet via  **[!UICONTROL Detail]** ikon.
 
-   ![](assets/target-of-proofs-substitution-details.png){width="800" align="left"}
+  ![](assets/target-of-proofs-substitution-details.png){width="800" align="left"}
 
-   Välj **[!UICONTROL Select a profile (must be included in the target)]** och välj en mottagare.
+  Välj **[!UICONTROL Select a profile (must be included in the target)]** och välj en mottagare.
 
-   ![](assets/target-of-proofs-substitution.png){width="800" align="left"}
+  ![](assets/target-of-proofs-substitution.png){width="800" align="left"}
 
 
 * Använd **[!UICONTROL Seed addresses]**  om du vill använda dirigerade adresser som korrekturmål. Dessa adresser kan importeras från en fil eller anges manuellt.
 
-   >[!NOTE]
-   >
-   >Seed-adresser tillhör inte standardmottagartabellen (nms:mottagare), de skapas i en separat tabell. Om du utökar mottagartabellen med nya data måste du utöka både dirigerade adresstabellen och samma data.
+  >[!NOTE]
+  >
+  >Seed-adresser tillhör inte standardmottagartabellen (nms:mottagare), de skapas i en separat tabell. Om du utökar mottagartabellen med nya data måste du utöka både dirigerade adresstabellen och samma data.
 
-   Läs mer om dirigerade adresser i [Campaign Classic v7-dokumentation](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/using-seed-addresses/about-seed-addresses.html){target="_blank"}.
+  Läs mer om dirigerade adresser i [det här avsnittet](../audiences/test-profiles.md).
 
 * Använd **[!UICONTROL Specific target and Seed addresses]** om du vill kombinera dirigerade adresser och specifika e-postadresser. De relaterade konfigurationerna definieras sedan i två separata underflikar.
 

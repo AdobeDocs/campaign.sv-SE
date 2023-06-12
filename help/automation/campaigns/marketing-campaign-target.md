@@ -4,9 +4,9 @@ title: Målgrupper för marknadsföringskampanjer
 description: Lär dig definiera målgruppen för era marknadsföringskampanjer
 feature: Campaigns, Audiences
 exl-id: 70a63632-f66d-40f2-806d-bde89303936a
-source-git-commit: a2518ea0c0ab23f50b3132b750a14e98b4ffad7d
+source-git-commit: 19c42bcd2a96173f3d33e3e259192107b5e64c6c
 workflow-type: tm+mt
-source-wordcount: '1457'
+source-wordcount: '1464'
 ht-degree: 0%
 
 ---
@@ -17,8 +17,7 @@ I en marknadsföringskampanj kan ni för varje leverans definiera:
 
 * Målgruppen. Du kan skicka meddelanden till en [lista över mottagare](#send-to-a-group) eller skapa [målgrupp i ett arbetsflöde](#build-the-main-target-in-a-workflow)
 * En kontrollgrupp. Du kan [lägga till en kontrollgrupp](#add-a-control-group) övervaka mottagarnas beteende efter meddelandeleverans
-<!--
-* Seed addresses - Learn more in [this section](../../delivery/using/about-seed-addresses.md).-->
+* dirigerade adresser - Läs mer i [det här avsnittet](../../v8/audiences/test-profiles.md).—>
 
 En del av den här informationen kan ärvas från [kampanjmall](marketing-campaign-templates.md#campaign-templates).
 
@@ -109,9 +108,9 @@ Med verktygsfältsikonerna kan du utföra åtgärder för arbetsflödet.
 
    * The **[!UICONTROL Start]** Med -ikonen kan du starta målarbetsflödet. När du klickar på den här ikonen aktiveras alla aktiviteter utan en indataövergång (förutom slutpunktshopp).
 
-      ![](assets/start.png)
+     ![](assets/start.png)
 
-      Servern tar hänsyn till begäran, vilket framgår av dess status: **[!UICONTROL Start as soon as possible]**.
+     Servern tar hänsyn till begäran, vilket framgår av dess status: **[!UICONTROL Start as soon as possible]**.
 
    * Du kan starta om arbetsflödet för målanpassning via motsvarande verktygsfältsikon. Det här kommandot kan vara användbart om **[!UICONTROL Start]** -ikonen är inte tillgänglig, till exempel när målarbetsflödet stoppas. I det här fallet klickar du på **[!UICONTROL Restart]** -ikonen för att förutse omstarten. Servern tar hänsyn till begäran, vilket framgår av dess status: **[!UICONTROL Restart requested]**.
 
@@ -119,51 +118,52 @@ Med verktygsfältsikonerna kan du utföra åtgärder för arbetsflödet.
 
    * Med verktygsfältsikonerna kan du stoppa eller pausa ett pågående målarbetsflöde.
 
-      När du klickar **[!UICONTROL Pause]**, pågående åtgärder **[!UICONTROL are not]** pausad, men ingen annan aktivitet startas förrän nästa omstart.
+     När du klickar **[!UICONTROL Pause]**, pågående åtgärder **[!UICONTROL are not]** pausad, men ingen annan aktivitet startas förrän nästa omstart.
 
-      ![](assets/pause.png)
+     ![](assets/pause.png)
 
-      Servern tar hänsyn till kommandot, vilket visas i dess status: **[!UICONTROL Pause requested]**.
+     Servern tar hänsyn till kommandot, vilket visas i dess status: **[!UICONTROL Pause requested]**.
 
-      Du kan också pausa ett arbetsflöde för målinriktning automatiskt när körningen når en viss aktivitet. Om du vill göra det högerklickar du på den aktivitet som målarbetsflödet ska pausas från och väljer **[!UICONTROL Enable but do not execute]**.
+     Du kan också pausa ett arbetsflöde för målinriktning automatiskt när körningen når en viss aktivitet. Om du vill göra det högerklickar du på den aktivitet som målarbetsflödet ska pausas från och väljer **[!UICONTROL Enable but do not execute]**.
 
-      ![](assets/donotexecute.png)
+     ![](assets/donotexecute.png)
 
-      Den här konfigurationen visas med en särskild ikon.
+     Den här konfigurationen visas med en särskild ikon.
 
-      ![](assets/pause_activity.png)
+     ![](assets/pause_activity.png)
 
-      >[!NOTE]
-      >
-      >Det här alternativet är användbart under design- och testfaser av avancerade riktade kampanjer.
+     >[!NOTE]
+     >
+     >Det här alternativet är användbart under design- och testfaser av avancerade riktade kampanjer.
 
-      Klicka **[!UICONTROL Start]** för att återuppta körningen.
+     Klicka **[!UICONTROL Start]** för att återuppta körningen.
 
    * Klicka på **[!UICONTROL Stop]** om du vill stoppa körningen.
 
-      ![](assets/stop.png)
+     ![](assets/stop.png)
 
-      Servern tar hänsyn till kommandot, vilket visas i dess status: **[!UICONTROL Stop requested]**.
-   Du kan också stoppa ett målarbetsflöde automatiskt när körningen når en aktivitet. Om du vill göra det högerklickar du på aktiviteten som målarbetsflödet ska stoppas från och väljer **[!UICONTROL Do not activate]**.
+     Servern tar hänsyn till kommandot, vilket visas i dess status: **[!UICONTROL Stop requested]**.
 
-   ![](assets/donotactivate.png)
+  Du kan också stoppa ett målarbetsflöde automatiskt när körningen når en aktivitet. Om du vill göra det högerklickar du på aktiviteten som målarbetsflödet ska stoppas från och väljer **[!UICONTROL Do not activate]**.
 
-   Den här konfigurationen visas med en särskild ikon.
+  ![](assets/donotactivate.png)
 
-   ![](assets/unactivation.png)
+  Den här konfigurationen visas med en särskild ikon.
+
+  ![](assets/unactivation.png)
 
 
-   >[!NOTE]
-   >
-   >Det här alternativet är användbart under design- och testfaser av avancerade riktade kampanjer.
+  >[!NOTE]
+  >
+  >Det här alternativet är användbart under design- och testfaser av avancerade riktade kampanjer.
 
 * Ovillkorligt stopp
 
-   I Utforskaren väljer du **[!UICONTROL Administration > Production > Object created automatically > Campaign workflows]** för att få tillgång till och agera utifrån alla kampanjarbetsflöden.
+  I Utforskaren väljer du **[!UICONTROL Administration > Production > Object created automatically > Campaign workflows]** för att få tillgång till och agera utifrån alla kampanjarbetsflöden.
 
-   Du kan avbryta ditt arbetsflöde genom att klicka på **[!UICONTROL Actions]** ikon och markera **[!UICONTROL Unconditional]** sluta. Den här åtgärden avbryter kampanjarbetsflödet.
+  Du kan avbryta ditt arbetsflöde genom att klicka på **[!UICONTROL Actions]** ikon och markera **[!UICONTROL Unconditional]** sluta. Den här åtgärden avbryter kampanjarbetsflödet.
 
-   ![](assets/stop_unconditional.png)
+  ![](assets/stop_unconditional.png)
 
 ## Lägga till en kontrollgrupp {#add-a-control-group}
 
