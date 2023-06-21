@@ -5,9 +5,9 @@ feature: Platform Integration
 role: Data Engineer
 level: Beginner
 exl-id: 21cf5611-ccaa-4e83-8891-a1a2353515aa
-source-git-commit: 3c7455f348468a8f00fb853a3269a1d63b81e7b8
+source-git-commit: f8c4e05ba2fc97d981fb31f9b11c5de1dcc1ff6e
 workflow-type: tm+mt
-source-wordcount: '220'
+source-wordcount: '215'
 ht-degree: 0%
 
 ---
@@ -16,24 +16,14 @@ ht-degree: 0%
 
 Adobe Campaign Managed Cloud Service Destination och Source-anslutningarna möjliggör smidig integrering mellan Adobe Campaign och Adobe Experience Platform.
 
-* Använd **Adobe Campaign Managed Cloud Services Destination** anslutning för att skicka Experience Platform segment till Adobe Campaign för aktivering
+* Använda en Adobe Campaign Managed Cloud Services **Målanslutning** för att skicka Experience Platform segment till Adobe Campaign för aktivering:
 
-   ![](assets/aep-destination.png)
+  Konfigurera en ny Adobe Campaign Managed Cloud Services **Målanslutning** för att aktivera ett segment/en målgrupp och skicka data till Adobe Campaign. Ange information om Campaign-instansen som ska användas, markera segment som ska aktiveras för målet och konfigurera sedan de attribut som du vill exportera till Campaign. [Lär dig hur du skapar en Adobe Campaign Managed Cloud Services-målanslutning](https://www.adobe.com/go/destinations-adobe-campaign-managed-cloud-services-en)
 
-* Använd **Adobe Campaign Managed Cloud Services Source** anslutning för att skicka Adobe Campaign leverans- och spårningsloggar till Adobe Experience Platform
+  ![](assets/aep-destination.png){width="800" align="center"}
 
-   ![](assets/aep-logs.png)
+* Använda en Adobe Campaign Managed Cloud Services **Källanslutning** för att skicka leverans- och spårningsloggar till Adobe Experience Platform:
 
-Så här konfigurerar du integreringen i Adobe Experience Platform:
+  Konfigurera en ny Adobe Campaign Managed Cloud Services **Källanslutning** att importera Campaign-event till Adobe Experience Platform. Ange information om Campaign-instansen och det schema som ska användas, välj en datauppsättning där data ska hämtas och konfigurera sedan fälten som ska hämtas. [Lär dig hur du skapar en källanslutning till Adobe Campaign Managed Cloud Services](https://www.adobe.com/go/sources-campaign-ui-en)
 
-1. Konfigurera en ny Adobe Campaign Managed Cloud Services Destination-anslutning för att aktivera ett segment/en målgrupp och skicka data till Adobe Campaign.
-
-   Ange information om Campaign-instansen som ska användas, markera segment som ska aktiveras för målet och konfigurera sedan de attribut som du vill exportera till Campaign.
-
-   [Lär dig hur du skapar en Adobe Campaign Managed Cloud Services-målanslutning](https://www.adobe.com/go/destinations-adobe-campaign-managed-cloud-services-en)
-
-1. Konfigurera en ny Adobe Campaign Managed Cloud Services Source-anslutning för att importera Campaign-händelser till Adobe Experience Platform.
-
-   Ange information om Campaign-instansen och det schema som ska användas, välj en datauppsättning där data ska hämtas och konfigurera sedan fälten som ska hämtas.
-
-   [Lär dig hur du skapar en källanslutning till Adobe Campaign Managed Cloud Services](https://www.adobe.com/go/sources-campaign-ui-en)
+  ![](assets/aep-logs.png){width="800" align="center"}
