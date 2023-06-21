@@ -5,9 +5,9 @@ feature: Data Model
 role: User, Developer
 level: Beginner, Intermediate
 exl-id: bdd5e993-0ce9-49a8-a618-ab0ff3796d49
-source-git-commit: 6464e1121b907f44db9c0c3add28b54486ecf834
+source-git-commit: df08cdb90271f4d18fd37b8ae528ebd872d0ea63
 workflow-type: tm+mt
-source-wordcount: '2717'
+source-wordcount: '2718'
 ht-degree: 4%
 
 ---
@@ -115,7 +115,6 @@ När du skapar en anpassad tabell finns det två alternativ:
 > * The **autouuid** attributet gäller endast för [Företagsdistributioner (FFDA)](../architecture/enterprise-deployment.md).
 >
 
-
 ## Länkar och kardinalitet {#links-and-cardinality}
 
 ### Länkar {#links}
@@ -138,7 +137,7 @@ Som standard skapar Adobe Campaign en länk med den externa tabellens primärnyc
 
 När du utformar en länk måste du se till att målposten är unik när en 1-1-relation har deklarerats. Annars kan join returnera flera poster när bara en förväntas. Detta resulterar i fel under leveransförberedelsen när frågan returnerar fler rader än förväntat. Ange länknamnet till samma namn som målschemat.
 
-Definiera en länk med en kardinalitet (1-N) i schemat på (1) sidan. Relationen mottagare (1) - (N)-transaktion ska till exempel definieras i transaktionsschemat.
+Definiera en länk med en kardinalitet (1-N) i schemat på (N) sidan. Relationen mottagare (1) - (N)-transaktion ska till exempel definieras i transaktionsschemat.
 
 Observera att en länks omvända kardinalitet är (N) som standard. Det går att definiera en länk (1-1) genom att lägga till attributet revCardinality=&#39;single&#39; till länkdefinitionen.
 
