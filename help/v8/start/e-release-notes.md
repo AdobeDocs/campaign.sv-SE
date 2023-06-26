@@ -7,10 +7,10 @@ level: Beginner, Intermediate, Experienced
 hide: true
 hidefromtoc: true
 exl-id: a45f7b22-44c7-4dad-af0a-ae8f683ae3d9
-source-git-commit: 77ec01aaba1e50676bed57f503a9e4e8bb1fe54c
+source-git-commit: ac356acdbbc8072ce8263b1c62804a4703781ca9
 workflow-type: tm+mt
-source-wordcount: '472'
-ht-degree: 8%
+source-wordcount: '586'
+ht-degree: 7%
 
 ---
 
@@ -18,32 +18,55 @@ ht-degree: 8%
 
 Den här sidan beskriver de förbättringar och korrigeringar som ingår i nästa Campaign v8-version. Innehållet kan ändras utan föregående meddelande fram till releasedatum. Den officiella versionsinformationen finns här [page](../start/release-notes.md).
 
-## Version 8.3.9 {#release-8-3-9}
+## Version 8.5 {#release-8-5}
 
->[!CAUTION]
->
-> Uppgradering av klientkonsolen är obligatorisk. Lär dig hur du uppgraderar din klientkonsol på den här [sidan](../start/connect.md#download-ac-console).
+_30 juni 2023_
 
-_7 oktober 2022_
+**Nyheter**
+
+<table> 
+<thead>
+<tr> 
+<th> <strong>Förbättrad push-meddelandetjänst</strong><br /> </th> 
+</tr> 
+</thead> 
+<tbody> 
+<tr> 
+<td><p>Campaign 8.5 introducerar vår senaste tjänst för push-meddelanden på v8, som bygger på ett robust ramverk som bygger på modern spetsteknik. Den här tjänsten är utformad för att låsa upp nya nivåer av skalbarhet, så att dina meddelanden kan nå en större publik med smidig effektivitet. Med vår förbättrade infrastruktur och våra optimerade processer kan ni förvänta er större skalbarhet och tillförlitlighet, så att ni kan engagera och kommunicera med era mobilappsanvändare som aldrig förr. Den här funktionen är bara tillgänglig för en viss kundgrupp (begränsad tillgänglighet).</p>
+</td> 
+</tr> 
+</tbody> 
+</table>
+
+**Kompatibilitetsuppdateringar**
+
+* 32-bitarsversionen av klientkonsolen är nu inaktuell. Från och med 8.6 är klientkonsolen endast tillgänglig i 64 bitar. Uppgraderingen till 64-bitarsversionen av klientkonsolen är smidig. Mer information om hur du uppgraderar ditt operativsystem finns i [technote](https://experienceleague.adobe.com/docs/campaign/technotes-ac/tn-new/console.html).
+* Nu kan du ansluta Campaign v8-instansen till din externa Azure synapse-databas. Den här anslutningen hanteras via ett nytt externt konto.
 
 **Förbättringar**
 
-* Ett problem som påverkade statusuppdateringarna för leveransloggen på MID-instansen när alternativet FeatureFlag_GZIP_Compression aktiverades har åtgärdats. (NEO-49183)
-* The **Databasrensning** tekniskt arbetsflöde hanterar nu även anpassade staging-scheman. (NEO-48974)
-* Korrigerat ett problem som kan leda till att leveranser stannar kvar i **Väntande** status även om kontaktdatumet har nåtts. (NEO-48079, NEO-48251)
-* Förbättrad stabilitet vid hantering av ogiltiga XML-strängar under SOAP-anrop. (NEO-48027)
-* Korrigerade ett problem som kunde göra leveransanalysen långsammare, med undantag för steget med blocklist mottagare, när stora volymer mottagare användes. (NEO-48019)
-* För att undvika långsamhet när du skickar ett korrektur till dirigerade adresser grupperas nu alla efterföljande replikeringar av dirigerade medlemmar i en replikeringsbegäran. (NEO-44844)
-* Korrigerade ett problem som ledde till personaliseringsproblem när SMS-meddelanden skickades med ett externt leveransläge. (NEO-46415)
-* Korrigerade ett problem som visade ett fel när en leverans skulle förhandsgranskas i en arkiverad händelse i Message Center. (NEO-43620)
-* Ett problem i arbetsflöden som kunde förhindra att filer uppdaterades på servern när **Inläsning av data (fil)** aktivitet. Processen stoppades till 100 % men tog aldrig slut. (NEO-47269)
-* Korrigerade ett problem som ledde till att onödiga DeliveryParts skapades när leveransen använde kalender- och delningslägen. (NEO-48634)
-* Ett prestandaproblem har korrigerats vid användning av kalenderbaserade påfyllnader. (NEO-48451)
-* Korrigerade ett problem som kunde leda till ett felmeddelande på skärmen för leveranslistan efter att en ny målmappning skapades för ett anpassat schema. (NEO-49237)
-* Korrigerade ett problem som kunde inträffa om en leverans nådde en viss storlek under MTA-processen. (NEO-46097)
-* Ett problem som gjorde att spårningsloggar inte kunde returnera data som var relaterade till mottagarens webbläsare har korrigerats. (NEO-46612)
-* Korrigerade ett problem under efteruppgraderingen i japanska miljöer. (NEO-46640)
-* Ett problem som uppstod när **Fråga** och filtrera en tabell. När ett kolumnnamn innehöll ordet &quot;Uppdatera&quot; uppstod ett kompileringsfel med en ogiltig identifierare och följande meddelande: &quot;antal uppdaterade rader&quot;. (NEO-46485)
-* Ett problem som förhindrade **[!UICONTROL Replicate Staging data]** (ffdaReplicateStagingData) tekniska arbetsflöden kan inte stoppas även om ett fel inträffar under körningen. (NEO-46280)
-* Korrigerade ett problem som kunde orsaka dataförlust om mellanlagringsarbetsflödet var felaktigt och kvarhållningsperioden gick ut. (NEO-48975)
-* Ett problem har korrigerats vid inmatning av data i molndatabasen i Snowflake med en kampanj **Fråga** aktivitet och **Ändra datakälla** aktivitet: processen misslyckades när det finns ett omvänt snedstreck i data. Källsträngen kunde inte escape-konverteras och data bearbetades inte korrekt på Snowflake. (NEO-45549)
+* SMS-genomströmningen har förbättrats avsevärt genom att man implementerar en rad optimeringar, vilket ger snabbare och effektivare SMS-kommunikation.
+* Från och med Campaign v8.5 har autentiseringsprocessen till Campaign v8 förbättrats. Tekniska operatörer måste använda Adobe Identity Management System (IMS) för att ansluta till Campaign.
+* Nu kan du använda anslutningarna Mål och Källa för att synkronisera profilattribut som avanmälningsdata mellan Adobe Experience Platform- och Campaign v8-databasen
+* Förberedelsen av leveransen har optimerats.
+* Ett nytt nyckelbaserat autentiseringsalternativ har lagts till för det externa SFTP-kontot, tillsammans med den befintliga autentiseringsmetoden för användare/lösenord. Användarna kan nu autentisera säkert med en privat nyckel, förbättra säkerheten och tillhandahålla en alternativ autentiseringsmekanism för SFTP-åtkomst.
+
+**Säkerhetsförbättringar**
+
+* Du kan inte längre skapa operatorer från klientkonsolen. Nu måste du använda Admin Console. [Läs mer](../start/gs-permissions.md).
+* Flera tredjepartsverktyg har uppdaterats för att optimera säkerheten.
+
+**Korrigeringar**
+
+* Korrigerade ett problem som kunde leda till att specialtecken i HTML-innehållet i en leverans kodades felaktigt i flera webbläsare. (NEO-60081)
+* Korrigerade ett problem som kunde hindra dig från att spara en rapport för en Campaign v8 Enterprise-distribution (FFDA). (NEO-56836)
+* Ett problem har korrigerats när data infogades eller uppdaterades i ett anpassat FFDA-schema via en aktivitet i arbetsflödet Uppdatera data. (NEO-54708)
+* Ett problem som gjorde att det inte gick att ta bort adresser i tabellen nms:address i FFDA i databasrensningsarbetsflödet har åtgärdats. (NEO-54460)
+* Ett problem med faktureringsarbetsflödet som kunde misslyckas med felet &quot;Kompileringsminnet är slut&quot; har åtgärdats. (NEO-51137)
+* Ett problem som kunde förhindra GPG-dekrypteringen från att fungera korrekt i arbetsflödesaktiviteten för datainläsning (fil) har åtgärdats. (NEO-50257)
+* Korrigerade ett problem som förhindrade funktionen `JSPContext.sqlExecWithOneParam` från att arbeta. (NEO-50066)
+* Korrigerade ett problem som ledde till leveransfel när icke-utskrivbara tecken användes i anpassningsfält. (NEO-48588)
+* Ett problem som kunde orsaka leveransfel vid infogning av dynamiska Adobe Target-bilder har åtgärdats. (NEO-62689)
+* Ett problem har korrigerats som förhindrar att webbläsare lägger till extra mellanslag när villkorsstyrt innehåll används i en leverans. (NEO-62132)
+* Ett problem som gjorde att ett popup-fönster öppnades när du klickade på en bild i e-postredigeraren har åtgärdats. (NEO-60752)
+* Korrigerade ett problem som kan leda till ett fel och förhindra att du rullar när du redigerar innehållet i en leverans. (NEO-61364)

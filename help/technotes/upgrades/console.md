@@ -5,9 +5,9 @@ description: 32-bitars borttagning av klientkonsolen
 hide: true
 hidefromtoc: true
 exl-id: eaa20b88-4ba2-4146-b6bd-1eada34ecc53
-source-git-commit: 290f4e9a0d13ef49caacb7a128ccc266bafd5e69
+source-git-commit: ac356acdbbc8072ce8263b1c62804a4703781ca9
 workflow-type: tm+mt
-source-wordcount: '359'
+source-wordcount: '390'
 ht-degree: 1%
 
 ---
@@ -25,6 +25,12 @@ När supporten upphör innebär det att Adobe inte längre tillhandahåller tekn
 För att kunna utnyttja de senaste funktionerna och den förbättrade säkerheten rekommenderar Adobe att du uppgraderar datorn till ett 64-bitars operativsystem.
 
 ## Vanliga frågor och svar
+
++++Hur uppgraderar jag från Campaign v8 med 32 bitar till Campaign v8 med 64 bitar?
+
+Uppgraderingen är smidig. Du behöver bara installera den nya versionen via installationsprogrammet som en vanlig uppgradering.
+
++++
 
 +++Är 64-bitarsversionen av Campaign v8 Client Console kompatibel med 32-bitarsdatorer?
 
