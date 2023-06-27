@@ -7,7 +7,7 @@ level: Beginner, Intermediate, Experienced
 hide: true
 hidefromtoc: true
 exl-id: a45f7b22-44c7-4dad-af0a-ae8f683ae3d9
-source-git-commit: ac356acdbbc8072ce8263b1c62804a4703781ca9
+source-git-commit: 9736ebb3d2a60bfe23b135318b899acb657a580c
 workflow-type: tm+mt
 source-wordcount: '586'
 ht-degree: 7%
@@ -59,7 +59,7 @@ _30 juni 2023_
 **Korrigeringar**
 
 * Korrigerade ett problem som kunde leda till att specialtecken i HTML-innehållet i en leverans kodades felaktigt i flera webbläsare. (NEO-60081)
-* Korrigerade ett problem som kunde hindra dig från att spara en rapport för en Campaign v8 Enterprise-distribution (FFDA). (NEO-56836)
+* Ett problem som kunde förhindra dig från att spara en rapport för en Campaign v8 Enterprise-distribution (FFDA) har åtgärdats. (NEO-56836)
 * Ett problem har korrigerats när data infogades eller uppdaterades i ett anpassat FFDA-schema via en aktivitet i arbetsflödet Uppdatera data. (NEO-54708)
 * Ett problem som gjorde att det inte gick att ta bort adresser i tabellen nms:address i FFDA i databasrensningsarbetsflödet har åtgärdats. (NEO-54460)
 * Ett problem med faktureringsarbetsflödet som kunde misslyckas med felet &quot;Kompileringsminnet är slut&quot; har åtgärdats. (NEO-51137)
