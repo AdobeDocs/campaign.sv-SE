@@ -4,7 +4,7 @@ user-guide-title: Campaign v8
 title: Adobe Campaign v8-dokumentation
 description: Dokumentation om Campaign v8
 breadcrumb-title: Översikt över Campaign
-source-git-commit: d941d9a364ffb2df77ba6726e655ca2916448f89
+source-git-commit: cd8ce8e16622010c1498bfaa244dda7095d9adc1
 workflow-type: tm+mt
 source-wordcount: '560'
 ht-degree: 23%
@@ -47,7 +47,7 @@ ht-degree: 23%
       + [SMS](send/sms.md)
       + Push-meddelanden {#push}
          + [Skapa och skicka push-meddelanden](send/push.md)
-         + [Konfigurera kanal för push-meddelanden](config/push-settings.md)
+         + [Konfigurera kanal för push-meddelanden](send/push-settings.md)
       + [LINE-meddelanden](send/line.md)
       + [Direktmeddelande](send/direct-mail.md)
       + [Twitter](send/twitter.md)
