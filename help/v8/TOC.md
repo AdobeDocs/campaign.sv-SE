@@ -4,9 +4,9 @@ user-guide-title: Campaign v8
 title: Adobe Campaign v8-dokumentation
 description: Dokumentation om Campaign v8
 breadcrumb-title: Översikt över Campaign
-source-git-commit: 19c42bcd2a96173f3d33e3e259192107b5e64c6c
+source-git-commit: d941d9a364ffb2df77ba6726e655ca2916448f89
 workflow-type: tm+mt
-source-wordcount: '553'
+source-wordcount: '560'
 ht-degree: 23%
 
 ---
@@ -45,7 +45,9 @@ ht-degree: 23%
          + [Länka till spegelsidan](send/mirror-page.md)
          + [Skicka och övervaka e-post](send/send.md)
       + [SMS](send/sms.md)
-      + [Push-meddelanden](send/push.md)
+      + Push-meddelanden {#push}
+         + [Skapa och skicka push-meddelanden](send/push.md)
+         + [Konfigurera kanal för push-meddelanden](config/push-settings.md)
       + [LINE-meddelanden](send/line.md)
       + [Direktmeddelande](send/direct-mail.md)
       + [Twitter](send/twitter.md)
@@ -170,7 +172,6 @@ ht-degree: 23%
       + [Användargränssnittsinställningar](config/ui-settings.md)
       + [Hantera mappar och vyer](audiences/folders-and-views.md)
       + [E-postinställningar](config/email-settings.md)
-      + [Push-inställningar](config/push-settings.md)
       + [Inställningar för transaktionsmeddelanden](config/transactional-msg-settings.md)
       + [Integrera kampanjens SDK med appen - DEPRECATED PAGE](config/push-config.md)
       + [Externa konton](config/external-accounts.md)
