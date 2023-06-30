@@ -4,7 +4,7 @@ user-guide-title: Campaign v8
 title: Adobe Campaign v8-dokumentation
 description: Dokumentation om Campaign v8
 breadcrumb-title: Översikt över Campaign
-source-git-commit: cd8ce8e16622010c1498bfaa244dda7095d9adc1
+source-git-commit: b71197027d9521fd648a0c2657b6b76a1aa7fc9a
 workflow-type: tm+mt
 source-wordcount: '560'
 ht-degree: 23%
@@ -24,8 +24,6 @@ ht-degree: 23%
    + [Guardrails](start/ac-guardrails.md)
    + [Kända fel](start/known-issues.md)
    + [Kompatibilitetsmatris](start/compatibility-matrix.md)
-   + Tekniska anmärkningar{#technotes}
-      + [Migrera teknisk operator till Developer Console](start/ims-migration.md)
 + Kom igång {#new}
    + [Kom igång med Adobe Campaign](start/get-started.md)
    + [Viktiga möjligheter](start/whats-new.md)
@@ -48,6 +46,7 @@ ht-degree: 23%
       + Push-meddelanden {#push}
          + [Skapa och skicka push-meddelanden](send/push.md)
          + [Konfigurera kanal för push-meddelanden](send/push-settings.md)
+         + [Konfigurera push-meddelanden med datainsamling](send/push-data-collection.md)
       + [LINE-meddelanden](send/line.md)
       + [Direktmeddelande](send/direct-mail.md)
       + [Twitter](send/twitter.md)

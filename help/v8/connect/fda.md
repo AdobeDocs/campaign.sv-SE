@@ -5,7 +5,7 @@ feature: Federated Data Access
 role: Admin
 level: Beginner, Intermediate
 exl-id: 0259b3bd-9dc2-44f9-a426-c4af46b00a4e
-source-git-commit: 2ce1ef1e935080a66452c31442f745891b9ab9b3
+source-git-commit: b71197027d9521fd648a0c2657b6b76a1aa7fc9a
 workflow-type: tm+mt
 source-wordcount: '727'
 ht-degree: 1%
@@ -16,7 +16,7 @@ ht-degree: 1%
 
 Använd FDA Connector (Federated Data Access) för att ansluta Campaign till en eller flera **externa databaser** och bearbeta information som lagras i dem utan att påverka data i Campaign Cloud-databasen. Sedan kan du komma åt externa data utan att ändra strukturen på Adobe Campaign-data.
 
-![](../assets/do-not-localize/speech.png)   Som användare av hanterade Cloud Services [kontakta Adobe](../start/campaign-faq.md#support) för att ansluta externa databaser till Campaign.
+![](../assets/do-not-localize/speech.png) Som användare av hanterade Cloud Services [kontakta Adobe](../start/campaign-faq.md#support) för att ansluta externa databaser till Campaign.
 
 
 >[!NOTE]
@@ -25,7 +25,6 @@ Använd FDA Connector (Federated Data Access) för att ansluta Campaign till en 
 >
 >* När det gäller [Företagsdistribution (FFDA)](../architecture/enterprise-deployment.md), finns det ett specifikt externt konto för att hantera kommunikationen mellan den lokala databasen i Campaign och molndatabasen i Snowflake. Det här externa kontot har konfigurerats för dig av Adobe och **får inte** ändras.
 >
-
 
 
 ## God praxis och begränsningar
@@ -41,11 +40,12 @@ Tänk dessutom på följande begränsningar och bästa metoder:
    * Exportera Adobe Campaign-databasen till den externa databasen och kör åtgärderna endast från den externa databasen innan du importerar resultaten till Adobe Campaign igen.
 
    * Samla in data från den externa Adobe Campaign-databasen och kör åtgärderna lokalt.
-   Om du vill utföra personalisering i leveranser med data från den externa databasen, samlar du in data som ska användas i ett arbetsflöde för att göra dem tillgängliga i en tillfällig tabell. Använd sedan data från den tillfälliga tabellen för att anpassa leveransen. Om du vill utföra detta förbearbetar du meddelandepersonalisering i ett dedikerat arbetsflöde med **[!UICONTROL Prepare the personalization data with a workflow]** alternativ, finns i **[!UICONTROL Analysis]** -fliken för leveransegenskaperna. Under leveransanalysen skapar och kör det här alternativet automatiskt ett arbetsflöde som lagrar alla data som är länkade till målet i en tillfällig tabell, inklusive data från tabeller som är länkade i en extern databas.
 
-   >[!CAUTION]
-   >
-   >Det här alternativet förbättrar prestanda avsevärt när personaliseringssteget körs.
+  Om du vill utföra personalisering i leveranser med data från den externa databasen, samlar du in data som ska användas i ett arbetsflöde för att göra dem tillgängliga i en tillfällig tabell. Använd sedan data från den tillfälliga tabellen för att anpassa leveransen. Om du vill utföra detta förbearbetar du meddelandepersonalisering i ett dedikerat arbetsflöde med **[!UICONTROL Prepare the personalization data with a workflow]** alternativ, finns i **[!UICONTROL Analysis]** -fliken för leveransegenskaperna. Under leveransanalysen skapar och kör det här alternativet automatiskt ett arbetsflöde som lagrar alla data som är länkade till målet i en tillfällig tabell, inklusive data från tabeller som är länkade i en extern databas.
+
+  >[!CAUTION]
+  >
+  >Det här alternativet förbättrar prestanda avsevärt när personaliseringssteget körs.
 
 
 ## Använd externa data i ett arbetsflöde

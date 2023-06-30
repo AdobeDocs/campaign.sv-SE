@@ -5,7 +5,7 @@ feature: Permissions
 role: User, Admin
 level: Beginner
 exl-id: 3d61abac-03df-42d3-a950-37e41a5a7756
-source-git-commit: 290f4e9a0d13ef49caacb7a128ccc266bafd5e69
+source-git-commit: b71197027d9521fd648a0c2657b6b76a1aa7fc9a
 workflow-type: tm+mt
 source-wordcount: '511'
 ht-degree: 2%
@@ -35,9 +35,9 @@ Viktiga steg är:
 
 * **Steg 1**: Definiera operatörsgrupper och tilldela dem behörigheter i Campaign Client Console. [Läs mer](manage-permissions.md#create-product-profile).
 Observera att du även kan använda inbyggda operatorgrupper som utgångspunkt. Dessa standardgrupper, och deras behörigheter, listas i [det här avsnittet](manage-permissions.md#ootb-productprofiles).
-* **Steg 2**: Skapa produktprofiler i Admin Console som matchar de grupperna. [Läs mer](manage-permissions.md#create-product-profile).
+* **Steg 2**: Skapa produktprofiler i Adobe Admin Console som matchar dessa grupper. [Läs mer](manage-permissions.md#create-product-profile).
 Du kan börja med de inbyggda produktprofilerna. [Läs mer](manage-permissions.md#ootb-productprofiles).
-* **Steg 3**: Skapa användare i Admin Console och tilldela dem till en produktprofil. [Läs mer](manage-permissions.md#add-users).
+* **Steg 3**: Skapa användare i Adobe Admin Console och tilldela dem till en produktprofil. [Läs mer](manage-permissions.md#add-users).
 * **Steg 4** (valfritt): Tilldela behörigheter för mappar. [Läs mer](manage-permissions.md#ootb-productprofiles).
 
 ## Om Admin Console{#gs-admin-console}

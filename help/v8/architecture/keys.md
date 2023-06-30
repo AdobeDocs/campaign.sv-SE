@@ -5,9 +5,9 @@ feature: FFDA
 role: Developer
 level: Beginner, Intermediate, Experienced
 exl-id: ef06cb6b-1b25-4dbe-8fd0-f880ec9d645b
-source-git-commit: 2ce1ef1e935080a66452c31442f745891b9ab9b3
+source-git-commit: b71197027d9521fd648a0c2657b6b76a1aa7fc9a
 workflow-type: tm+mt
-source-wordcount: '587'
+source-wordcount: '549'
 ht-degree: 0%
 
 ---
@@ -74,19 +74,6 @@ Adobe Campaign tar automatiskt bort alla dubbletter av UUID från en målgrupp n
 När det gäller [Företagsdistribution (FFDA)](enterprise-deployment.md)kan du inte välja en intern nyckel (UUID) som fält för att uppdatera data i ett arbetsflöde.
 
 ![](assets/update-data-no-internal-key.png)
-
-När explicit avstämningsnyckel används **Uppdatera data** aktiviteten automatiskt säkerställer att målschemat är unikt baserat på den här nyckeln genom att:
-
-1. Deduplicera inkommande data (från övergång)
-1. Deduplicera data med måltabell (sammanfoga)
-
-
-![](assets/update-data-deduplicate.png)
-
->[!CAUTION]
->
->Skyddsplanen gäller endast med alternativet **[!UICONTROL Using reconciliation keys]**.
-
 
 ### Fråga ett schema med dubbletter{#query-with-duplicates}
 
