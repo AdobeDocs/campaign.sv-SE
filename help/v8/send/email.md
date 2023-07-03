@@ -5,16 +5,16 @@ feature: Email
 role: User
 level: Beginner
 exl-id: 97dcd0e0-db5b-45a4-96af-817e49f6cb64
-source-git-commit: 1baeb8827a0eab4f9487bb5e5afe4d779e00efe4
+source-git-commit: 500de76853772313b1aac655da2f1b3562de2c55
 workflow-type: tm+mt
-source-wordcount: '466'
-ht-degree: 5%
+source-wordcount: '508'
+ht-degree: 4%
 
 ---
 
 # Designa och skicka e-post
 
-Med e-postleveranser kan du skicka personaliserade e-postmeddelanden till målpopulationen. [Läs mer](../send/send.md).
+Med e-postleveranser kan du skicka personaliserade e-postmeddelanden till målpopulationen. [Läs mer](../send/send.md)
 
 ## Skapa din första e-postleverans
 
@@ -48,49 +48,55 @@ I följande exempel får du lära dig hur du utformar en e-postleverans i Adobe 
 
    * Lägg till förnamn och efternamn för mottagarna
 
-      Om du vill infoga för- och efternamnen på målprofilerna i innehållet i meddelandet placerar du markören där du vill infoga dem och klickar på den sista ikonen i verktygsfältet. Klicka sedan på **[!UICONTROL Include]** och markera **[!UICONTROL Greetings]**.
+     Om du vill infoga för- och efternamnen på målprofilerna i innehållet i meddelandet placerar du markören där du vill infoga dem och klickar på den sista ikonen i verktygsfältet. Klicka sedan på **[!UICONTROL Include]** och markera **[!UICONTROL Greetings]**.
 
-      ![](assets/include-greetings.png)
+     ![](assets/include-greetings.png)
 
-      Bläddra till fliken Förhandsgranska om du vill kontrollera personaliseringen genom att välja en mottagare.
+     Bläddra till fliken Förhandsgranska för att kontrollera personaliseringen genom att välja en mottagare.
 
-      ![](assets/perso-check.png)
+     ![](assets/perso-check.png)
 
-      Läs mer om personaliseringsalternativ i [det här avsnittet](personalize.md).
+     Läs mer om personaliseringsalternativ i [det här avsnittet](personalize.md).
 
    * Infoga en spårad länk
 
-      Om du vill dirigera leveransmottagare till en extern adress via en bild eller text markerar du den och klickar på knappen **[!UICONTROL Add a link]** i verktygsfältet.
+     Om du vill dirigera leveransmottagare till en extern adress via en bild eller text markerar du den och klickar på knappen **[!UICONTROL Add a link]** i verktygsfältet.
 
-      Ange länkens URL i dialogrutan **URL** fält med följande format **https://www.myURL.com**, och bekräfta sedan.
+     Ange länkens URL i dialogrutan **URL** fält med följande format **https://www.myURL.com**, och bekräfta sedan.
 
-      ![](assets/add-a-link.png)
+     ![](assets/add-a-link.png)
 
    * Lägga till en spegelsida
 
-      Lägg till en länk till [spegelsida](../send/mirror-page.md) av ditt meddelande.
+     Lägg till en länk till [spegelsida](mirror-page.md) av ditt meddelande.
 
-      Placera markören där du vill infoga länken, klicka på den sista ikonen i verktygsfältet och klicka sedan på **[!UICONTROL Include]** och markera **[!UICONTROL link to mirror page]**.
-   När innehållet är klart klickar du på **Spara**: den visas nu i din lista över leveranser i **[!UICONTROL Campaigns > Deliveries]** -fliken. Din första e-postleverans är klar. Nu måste ni definiera målgruppen, validera leveransen och skicka den.
+     Placera markören där du vill infoga länken, klicka på den sista ikonen i verktygsfältet och klicka sedan på **[!UICONTROL Include]** och markera **[!UICONTROL link to mirror page]**.
 
+     Läs mer om hur du hanterar spegelsidan i [det här avsnittet](mirror-page.md#link-to-mirror-page).
+
+1. Du kan definiera ytterligare parametrar för e-postmeddelandet, till exempel skicka en kopia av meddelandena till en BBC-adress, ändra meddelandeformatet, ange en viss kodning osv. Läs mer i [det här avsnittet](email-parameters.md).
+
+1. När innehållet är klart klickar du på **Spara**: den visas nu i din lista över leveranser i **[!UICONTROL Campaigns > Deliveries]** -fliken.
+
+Din första e-postleverans är klar. Nu måste ni definiera målgruppen, validera leveransen och skicka den.
 
 Lär dig hur du importerar ett e-postinnehåll i det här [användningsfall](https://experienceleague.adobe.com/docs/campaign/automation/workflows/use-cases/deliveries/load-delivery-content.html).
 
 Läs mer i följande avsnitt:
 
-* [Designa ett e-postmeddelande i Campaign](../send/email.md)
+<!--[Design an email in Campaign]-->
 * [Skapa och använda en e-postmall](../send/create-templates.md)
 * [Välj publik för ditt e-postmeddelande](../audiences/gs-audiences.md)
-* [Validera en leverans och skicka korrektur](../send/preview-and-proof.md)
+* [Validera en leverans och skicka korrektur](preview-and-proof.md)
+* [Konfigurera och skicka leveransen](configure-and-send.md)
 
 ## Testa och validera dina e-postmeddelanden
 
-Campaign erbjuder flera sätt att testa och validera dina e-postmeddelanden innan de skickas till era målgrupper. Lär dig hur du förhandsgranskar och testar e-postinnehåll i [den här sidan](../send/preview-and-proof.md).
+Campaign erbjuder flera sätt att testa och validera dina e-postmeddelanden innan de skickas till era målgrupper. Lär dig hur du förhandsgranskar och testar e-postinnehåll i [det här avsnittet](../send/preview-and-proof.md).
 
 Du kan:
 
-* Kontrollera leveransanalysloggar
-* Skicka korrektur
-* Lägg till dirigerade adresser
+* [Skicka korrektur](preview-and-proof.md)
+* [Lägg till dirigerade adresser](../audiences/test-profiles.md)
+* [Kontrollera leveransanalysloggar](delivery-analysis.md)
 
-[Läs mer](../send/delivery-analysis.md)

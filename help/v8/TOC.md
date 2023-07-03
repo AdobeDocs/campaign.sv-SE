@@ -4,10 +4,10 @@ user-guide-title: Campaign v8
 title: Adobe Campaign v8-dokumentation
 description: Dokumentation om Campaign v8
 breadcrumb-title: Översikt över Campaign
-source-git-commit: b71197027d9521fd648a0c2657b6b76a1aa7fc9a
+source-git-commit: 4f3e6227193fc607a968f9170484017e551fa560
 workflow-type: tm+mt
-source-wordcount: '560'
-ht-degree: 23%
+source-wordcount: '569'
+ht-degree: 22%
 
 ---
 
@@ -41,6 +41,7 @@ ht-degree: 23%
       + E-post {#emails}
          + [Designa och validera e-postmeddelanden](send/email.md)
          + [Länka till spegelsidan](send/mirror-page.md)
+         + [Definiera ytterligare e-postparametrar](send/email-parameters.md)
          + [Skicka och övervaka e-post](send/send.md)
       + [SMS](send/sms.md)
       + Push-meddelanden {#push}
@@ -71,6 +72,7 @@ ht-degree: 23%
       + Validera leveransen {#validate}
          + [Förhandsgranska och korrektur](send/preview-and-proof.md)
          + [Leveransanalys](send/delivery-analysis.md)
+      + [Konfigurera och skicka leveransen](send/configure-and-send.md)
 + Profil- och målgruppshantering {#audience}
    + [Kom igång med profiler och målgrupper](audiences/gs-audiences.md)
    + [Arbeta med målgrupper](start/audiences.md)

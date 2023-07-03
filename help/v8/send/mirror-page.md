@@ -5,16 +5,16 @@ feature: Email
 role: User
 level: Beginner
 exl-id: 7bf3937c-484d-4404-8a9b-de7a10f5455a
-source-git-commit: c248dd899ea704e43873652545c6b945c2915b57
+source-git-commit: b333db04dd10cc28956959a446f6567e2a89b2d4
 workflow-type: tm+mt
-source-wordcount: '432'
+source-wordcount: '434'
 ht-degree: 0%
 
 ---
 
-# Länka till spegelsidan{#mirror-page}
+# Länka till spegelsidan {#mirror-page}
 
-## Om spegelsidan{#about-mirror-page}
+## Om spegelsidan {#about-mirror-page}
 
 Spegelsidan är en onlineversion av ditt e-postmeddelande.
 
@@ -24,7 +24,7 @@ Spegelsidan som genererats av Adobe Campaign innehåller alla personaliseringsda
 
 ![exempel på spegellänk](assets/mirror-page-link.png){width="600" align="left"}
 
-## Lägg till en länk till spegelsidan{#link-to-mirror-page}
+## Lägg till en länk till spegelsidan {#link-to-mirror-page}
 
 Det är bra att infoga en länk till spegelsidan. Den här länken kan till exempel vara Visa det här e-postmeddelandet i webbläsaren eller Läs det här online. Den finns ofta i e-postmeddelandets sidhuvud eller sidfot.
 
@@ -33,9 +33,9 @@ I Adobe Campaign kan du infoga en länk till spegelsidan i e-postinnehållet med
 ![](assets/mirror-page-insert.png){width="800" align="left"}
 
 
-Mer information om infogning av anpassade innehållsblock finns i [Personaliseringsblock](personalization-blocks.md).
+Mer information om hur du infogar innehållsblock för personalisering finns i [Personaliseringsblock](personalization-blocks.md).
 
-## Generering av spegelsida{#mirror-page-generation}
+## Hantera generering av spegelsidor {#mirror-page-generation}
 
 Som standard genereras spegelsidan automatiskt av Adobe Campaign om e-postinnehållet inte är tomt, och om det innehåller en länk till spegelsidan (även Spegellänk).
 
@@ -52,7 +52,7 @@ Förutom standardläget finns följande alternativ:
 * **[!UICONTROL Do not generate the mirror page]**: Använd det här läget för att undvika att en spegelsida genereras, även om länken finns i leveransen.
 * **[!UICONTROL Generates a mirror page accessible using only the message identifier]**: När spegelsidans länk inte finns i e-postinnehållet, använder du det här alternativet för att aktivera åtkomst till spegelsidans innehåll i leveransloggfönstret, enligt beskrivningen nedan.
 
-## Kontrollera spegelsidan för en mottagare{#mirror-page-access}
+## Kontrollera spegelsidan för en mottagare {#mirror-page-access}
 
 Du kan komma åt innehållet på spegelsidan för en viss mottagare av en leverans, med personaliseringsdata.
 
