@@ -4,9 +4,9 @@ description: Lär dig hur du konfigurerar e-postmeddelanden i Adobe Campaign.
 feature: Email
 role: User
 level: Beginner
-source-git-commit: 21e251acd76f2bbb751f8e295934d597af336559
+source-git-commit: 263ec61c3717c054cc135f1c4fb1f7e287e4a154
 workflow-type: tm+mt
-source-wordcount: '1129'
+source-wordcount: '1128'
 ht-degree: 4%
 
 ---
@@ -113,7 +113,7 @@ Följ stegen nedan för att göra detta.
    * Om du vill skicka leveransen direkt väljer du [**Leverera så snart som möjligt**].
    * Om du vill schemalägga sändningen till ett senare datum väljer du **[!UICONTROL Postpone the delivery]**. [Läs mer](#schedule-delivery-sending)
 
-1. Klicka på **[!UICONTROL Analyze]**. Mer information finns i [Starta analysen](../../delivery/using/steps-validating-the-delivery.md#analyzing-the-delivery).
+1. Klicka på **[!UICONTROL Analyze]**. Mer information finns i [det här avsnittet](delivery-analysis.md).
 
    ![](assets/delivery-send-analyze.png)
 
