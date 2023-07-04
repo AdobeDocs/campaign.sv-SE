@@ -5,20 +5,22 @@ feature: Push
 role: Data Engineer
 level: Beginner
 badge: label="Limited availability" type="Informative"
-source-git-commit: b71197027d9521fd648a0c2657b6b76a1aa7fc9a
+source-git-commit: 441310dc1cdcb96296c0cbe5bf3fb7cd1502709f
 workflow-type: tm+mt
-source-wordcount: '1306'
+source-wordcount: '1392'
 ht-degree: 1%
 
 ---
 
 # Ändrad konfiguration för push-meddelanden {#push-notifications-config}
 
+Campaign v8.5 introducerar vår senaste tjänst för push-meddelanden, som bygger på ett robust ramverk som bygger på modern spetsteknik. Den här tjänsten är utformad för att låsa upp nya nivåer av skalbarhet, så att dina meddelanden kan nå en större publik med smidig effektivitet. Med vår förbättrade infrastruktur och våra optimerade processer kan ni förvänta er större skalbarhet och tillförlitlighet, så att ni kan engagera och kommunicera med era mobilappsanvändare som aldrig förr.
+
 >[!AVAILABILITY]
 >
-> Den här funktionen är exklusivt tillgänglig för nya kunder från och med version 8.5 och introduceras progressivt för en uppsättning utvalda kunder. Om din miljö etablerades före juni 2023 måste du följa de detaljerade procedurerna [på den här sidan](push-settings.md).
+> Den här funktionen är exklusivt tillgänglig för nya kunder från och med Campaign v8.5 och progressivt introducerad till en uppsättning utvalda kunder. Om din miljö etablerades före juni 2023 gäller den här sidan inte dig och du måste följa de detaljerade procedurerna [på den här sidan](push-settings.md).
 
-Om du vill skicka push-meddelanden i Adobe Campaign måste du:
+I samband med den här uppdaterade implementeringen kan du skicka push-meddelanden i Adobe Campaign på följande sätt:
 
 1. [Skapa en appyta i Adobe Experience Platform Data Collection](#create-app-surface)
 
