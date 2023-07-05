@@ -7,7 +7,7 @@ level: Beginner, Intermediate, Experienced
 hide: true
 hidefromtoc: true
 exl-id: a45f7b22-44c7-4dad-af0a-ae8f683ae3d9
-source-git-commit: 9736ebb3d2a60bfe23b135318b899acb657a580c
+source-git-commit: 958d2e8acdb9edee74f55bc3ea808f5072bf8f4d
 workflow-type: tm+mt
 source-wordcount: '586'
 ht-degree: 7%
@@ -18,7 +18,7 @@ ht-degree: 7%
 
 Den här sidan beskriver de förbättringar och korrigeringar som ingår i nästa Campaign v8-version. Innehållet kan ändras utan föregående meddelande fram till releasedatum. Den officiella versionsinformationen finns här [page](../start/release-notes.md).
 
-## Version 8.5 {#release-8-5}
+## Version 8.5.1 {#release-8-5}
 
 _30 juni 2023_
 
@@ -32,7 +32,7 @@ _30 juni 2023_
 </thead> 
 <tbody> 
 <tr> 
-<td><p>Campaign 8.5 introducerar vår senaste tjänst för push-meddelanden på v8, som bygger på ett robust ramverk som bygger på modern spetsteknik. Den här tjänsten är utformad för att låsa upp nya nivåer av skalbarhet, så att dina meddelanden kan nå en större publik med smidig effektivitet. Med vår förbättrade infrastruktur och våra optimerade processer kan ni förvänta er större skalbarhet och tillförlitlighet, så att ni kan engagera och kommunicera med era mobilappsanvändare som aldrig förr. Den här funktionen är bara tillgänglig för en viss kundgrupp (begränsad tillgänglighet).</p>
+<td><p>Campaign 8.5.1 introducerar vår senaste tjänst för push-meddelanden på v8, som bygger på ett robust ramverk som bygger på modern spetsteknik. Den här tjänsten är utformad för att låsa upp nya nivåer av skalbarhet, så att dina meddelanden kan nå en större publik med smidig effektivitet. Med vår förbättrade infrastruktur och våra optimerade processer kan ni förvänta er större skalbarhet och tillförlitlighet, så att ni kan engagera och kommunicera med era mobilappsanvändare som aldrig förr. Den här funktionen är bara tillgänglig för en viss kundgrupp (begränsad tillgänglighet).</p>
 </td> 
 </tr> 
 </tbody> 
@@ -46,7 +46,7 @@ _30 juni 2023_
 **Förbättringar**
 
 * SMS-genomströmningen har förbättrats avsevärt genom att man implementerar en rad optimeringar, vilket ger snabbare och effektivare SMS-kommunikation.
-* Från och med Campaign v8.5 har autentiseringsprocessen till Campaign v8 förbättrats. Tekniska operatörer måste använda Adobe Identity Management System (IMS) för att ansluta till Campaign.
+* Från och med Campaign v8.5.1 har autentiseringsprocessen till Campaign v8 förbättrats. Tekniska operatörer måste använda Adobe Identity Management System (IMS) för att ansluta till Campaign.
 * Nu kan du använda anslutningarna Mål och Källa för att synkronisera profilattribut som avanmälningsdata mellan Adobe Experience Platform- och Campaign v8-databasen
 * Förberedelsen av leveransen har optimerats.
 * Ett nytt nyckelbaserat autentiseringsalternativ har lagts till för det externa SFTP-kontot, tillsammans med den befintliga autentiseringsmetoden för användare/lösenord. Användarna kan nu autentisera säkert med en privat nyckel, förbättra säkerheten och tillhandahålla en alternativ autentiseringsmekanism för SFTP-åtkomst.
