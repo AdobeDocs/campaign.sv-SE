@@ -3,10 +3,10 @@ keywords: Campaign Classic;hem;populära ämnen
 description: Campaign v8 - hjälpcenter
 title: Adobe Campaign v8 - produktdokumentation
 exl-id: 6010b0f7-baf0-43ba-af9a-b8864f3897ea,9ff16fb1-d3d3-44fe-9016-15abffdbc74e
-source-git-commit: 9bea7904ea4507083d2cf45193877e7a2539d0c7
+source-git-commit: dc2ccd7092fd31f043b338868762440ae0394991
 workflow-type: tm+mt
-source-wordcount: '141'
-ht-degree: 13%
+source-wordcount: '157'
+ht-degree: 17%
 
 ---
 
@@ -33,37 +33,53 @@ ht-degree: 13%
 
 ## Kom igång
 
-<table>
-<tr>
-  <td valign="bottom">
-    <a href="start/connect.md">
-      <img alt="Anslut" src="start/assets/do-not-localize/login.jpeg"/>
-    </a>
-    <div>
-    <a href="start/connect.md">Anslut till Campaign</a>
-    </div>
-    <br>
-  </td>
 
-<td valign="bottom">
-      <a href="start/import.md">
-       <img alt="Import" src="start/assets/do-not-localize/profiles.jpeg" />
-       </a>
-    <div><a href="start/import.md">Importera profiler</a>
-    </div>
-    <br>
-  </td>
-  <td valign="bottom">
-    <a href="start/create-message.md">
-      <img alt="E-post" src="start/assets/do-not-localize/email-design.jpeg" />
-    </a>
-    <div>
-    <a href="start/create-message.md">Skapa ett e-postmeddelande</a>
-    </div>
-    <br>
-  </td>
-</tr>
-</table>
+<table style="table-layout:fixed"><tr style="border: 0;">
+<td>
+<a href="start/connect.md">
+<img alt="Anslut till Campaign v8" src="start/assets/do-not-localize/login.jpeg">
+</a>
+<div><a href="start/connect.md"><strong>Anslut till Campaign</strong>
+</div>
+<p>
+</td>
+<td>
+<a href="start/import.md">
+<img alt="Importera profiler" src="start/assets/do-not-localize/profiles.jpeg">
+</a>
+<div>
+<a href="start/import.md"><strong>Importera profiler</strong></a>
+</div>
+<p>
+</td>
+<td>
+<a href="start/create-message.md">
+<img alt="Skapa ett e-postmeddelande" src="start/assets/do-not-localize/email-design.jpeg">
+</a>
+<div>
+<a href="start/create-message.md"><strong>Skapa ett e-postmeddelande</strong></a>
+</div>
+<p></td>
+<td>
+<a href="send/push.md">
+<img alt="Skicka push-meddelanden" src="start/assets/do-not-localize/push-send.jpeg">
+</a>
+<div>
+<a href="send/push.md"><strong>Skicka push-meddelanden</strong></a>
+</div>
+<p>
+</td>
+<td>
+<a href="../automation/workflow/about-workflows.md">
+<img alt="Skapa kampanjer" src="start/assets/do-not-localize/workflow.jpeg">
+</a>
+<div>
+<a href="../automation/workflow/about-workflows.md"><strong>Skapa arbetsflöden</strong></a>
+</div>
+<p>
+</td>
+</tr></table>
+
 
 ## Fler resurser
 

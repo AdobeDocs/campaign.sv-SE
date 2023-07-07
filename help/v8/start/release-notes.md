@@ -5,7 +5,7 @@ feature: Overview
 role: Admin, Developer, User
 level: Beginner, Intermediate, Experienced
 exl-id: 7cf8111d-9f3a-46a4-813a-d4e43a1d1471
-source-git-commit: d5bd383dca524e15a098fc63661236b50144cb3d
+source-git-commit: dc2ccd7092fd31f043b338868762440ae0394991
 workflow-type: tm+mt
 source-wordcount: '1319'
 ht-degree: 18%
@@ -42,12 +42,10 @@ _30 juni 2023_
 </tbody> 
 </table>
 
-**Kompatibilitetsuppdateringar**
-
-* 32-bitarsversionen av klientkonsolen är nu inaktuell. Från och med 8.6 är klientkonsolen endast tillgänglig i 64 bitar. Uppgraderingen till 64-bitarsversionen av klientkonsolen är smidig. Mer information om hur du uppgraderar ditt operativsystem finns i [technote](../../technotes/upgrades/console.md).
-* Nu kan du ansluta Campaign v8-instansen till din externa Azure synapse-databas. Den här anslutningen hanteras via ett nytt externt konto. Läs mer i [Kompatibilitetsmatris för kampanj](../start/compatibility-matrix.md#federated-data-access-fdafederateddataaccessfda).
-
 **Förbättringar**
+
+
+
 
 * SMS-genomströmningen har förbättrats avsevärt genom att man implementerar en rad optimeringar, vilket ger snabbare och effektivare SMS-kommunikation.
 * Nu kan du använda Adobe Experience Platform Destination-anslutningen för att synkronisera profilattribut, som avanmälningsdata mellan Adobe Experience Platform- och Campaign v8-databasen.
@@ -59,6 +57,13 @@ _30 juni 2023_
 * Från och med Campaign v8.5.1 har autentiseringsprocessen till Campaign v8 förbättrats. Tekniska operatörer måste använda Adobe Identity Management System (IMS) för att ansluta till Campaign. Lär dig hur du migrerar dina befintliga tekniska konton i [den här tekniken](../../technotes/upgrades/ims-migration.md).
 * Du kan inte längre skapa operatorer från Campaign Client Console. Användargränssnittet har uppdaterats i enlighet med detta. Nu måste du använda Adobe Admin Console. [Läs mer](../start/gs-permissions.md).
 * Flera tredjepartsverktyg har uppdaterats för att optimera säkerheten.
+
+**Kompatibilitetsuppdateringar**
+
+* 32-bitarsversionen av klientkonsolen är nu inaktuell. Från och med 8.6 är klientkonsolen endast tillgänglig i 64 bitar. Uppgraderingen till 64-bitarsversionen av klientkonsolen är smidig. Mer information om hur du uppgraderar ditt operativsystem finns i [technote](../../technotes/upgrades/console.md).
+* Nu kan du ansluta Campaign v8-instansen till din externa Azure synapse-databas. Den här anslutningen hanteras via ett nytt externt konto. Läs mer i [Kompatibilitetsmatris för kampanj](../start/compatibility-matrix.md#federated-data-access-fdafederateddataaccessfda).
+
+
 
 **Korrigeringar**
 
