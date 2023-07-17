@@ -4,7 +4,7 @@ title: Läs in leveransinnehåll
 description: Läsa in leveransinnehåll
 feature: Workflows
 exl-id: 08febcbc-1703-4d36-89e1-32c903618084
-source-git-commit: 9dfb1acd97e529a8b60119154b3728c883dd9c97
+source-git-commit: 23026cf93c89c1f6a410337b17bfa2553e41c987
 workflow-type: tm+mt
 source-wordcount: '304'
 ht-degree: 3%
@@ -43,7 +43,7 @@ Så här gör du:
 1. I **[!UICONTROL Script]** -fliken i **[!UICONTROL Delivery]** lägger du till följande kommando för att läsa in innehållet i den importerade filen i leveransen:
 
    ```
-   delivery.content.md.source=loadFile(vars.filename)
+   delivery.content.html.source=loadFile(vars.filename)
    ```
 
    ![](assets/delivery_loadcontent_script.png)
