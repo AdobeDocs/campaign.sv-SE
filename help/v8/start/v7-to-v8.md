@@ -5,9 +5,9 @@ feature: Overview
 role: Admin, Developer, User
 level: Beginner, Intermediate, Experienced
 exl-id: 00ba1c43-9558-4adb-83a1-6597c2bbca62
-source-git-commit: 507f30d16eecf5400ee88a4d29913e4cdaca9cba
+source-git-commit: 5d307e0fcafdc4d25402c62c6869ecc07c1a47e4
 workflow-type: tm+mt
-source-wordcount: '648'
+source-wordcount: '682'
 ht-degree: 5%
 
 ---
@@ -21,7 +21,6 @@ Som tidigare [!DNL Campaign Classic] v7-användare, du bör inte förvänta dig 
 >* För tillfället är Campaign v8 **endast** finns som hanterad Cloud Service och kan inte distribueras på plats eller i hybridmiljöer. [Läs mer](#cloud-services)
 >
 >* Automatisk migrering från en befintlig Campaign Classic v7-miljö är inte tillgänglig än.
-
 
 
 ## Hanterade Cloud Services{#cloud-services}
@@ -44,6 +43,7 @@ Som tidigare [!DNL Campaign Classic] användare, observera att de flesta av [!DN
 >
 > Följaktligen är intern routning **inte möjligt** i Campaign v8 och det externa kontot har inaktiverats i enlighet med detta.
 
+Den nya molnarkitekturen gör att Campaign kan effektivisera processer, minska kostnaderna, hantera risker och förbättra datasäkerheten. Din Campaign v8-miljö har ett dedikerat VPC (Virtual Private Cloud) som är förkonfigurerat för dig.
 
 ## [!DNL Campaign] och [!DNL Snowflake] {#ac-gs-snowflake}
 
@@ -51,7 +51,7 @@ Campaign v8 fungerar med [!DNL Snowflake].
 
 I [Företagsdistribution (FFDA)](../architecture/enterprise-deployment.md), [!DNL Adobe Campaign] v8 fungerar med två databaser: en lokal [!DNL Campaign] databas för användargränssnittet för meddelanden i realtid och enhetliga frågor samt skriva via API:er och ett molnbaserat [!DNL Snowflake] databas för kampanjkörning, batchfrågor och arbetsflödeskörning.
 
-Campaign v8 Enterprise innehåller konceptet **Fullständig federerad dataåtkomst** (FFDA): alla data är nu fjärranslutna till molndatabasen. Med den nya arkitekturen förenklar driftsättningen av Campaign v8 Enterprise (FFDA) datahanteringen: inget index krävs för molndatabasen. Du behöver bara skapa tabellerna, kopiera data så kan du börja. Cloud-databastekniken kräver inget specifikt underhåll för att garantera prestandanivån.
+Campaign v8 Enterprise innehåller konceptet **Fullständig federerad dataåtkomst** (FFDA): alla data är nu fjärranslutna till molndatabasen. Med den här nya arkitekturen förenklar driftsättningen av Campaign v8 Enterprise (FFDA) datahanteringen: inget index krävs för molndatabasen. Du behöver bara skapa tabellerna, kopiera data så kan du börja. Cloud-databastekniken kräver inget specifikt underhåll för att garantera prestandanivån.
 
 ![](../assets/do-not-localize/glass.png) Läs mer om [!DNL Campaign] v8-arkitektur i [den här sidan](../architecture/architecture.md).
 
@@ -64,7 +64,7 @@ Kampanjanvändare ansluter bara via sina Adobe ID. Samma Adobe ID används för 
 
 ## Analysera data med kuber{#adobe-reporting}
 
-Använd modulen Marketing Analytics för att analysera och mäta data, beräkna statistik, förenkla och optimera framtagning och beräkning av rapporter. Skapa dessutom rapporter och bygg målpopulationer: när de har identifierats lagras de i listor som kan användas i Adobe Campaign (målinriktning, segmentering osv.).
+Använd modulen Marketing Analytics för att analysera och mäta data, beräkna statistik, förenkla och optimera framtagning och beräkning av rapporter. Skapa dessutom rapporter och bygg upp målpopulationer: när de har identifierats lagras de i listor som kan användas i Adobe Campaign (målinriktning, segmentering osv.).
 
 Med Adobe Campaign v8 är kubrapporterna optimerade och ger bättre skalbarhet än Campaign Classic v7. I den specifika distributionsmodellen gäller inte tidigare begränsningar för kuber i Campaign v8. Läs mer om kuber i [det här avsnittet](../../v8/reporting/gs-cubes.md).
 

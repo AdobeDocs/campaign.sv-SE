@@ -5,10 +5,10 @@ feature: Overview
 role: Admin, Developer, User
 level: Beginner, Intermediate, Experienced
 exl-id: 7771a02c-ebd4-48b6-b25e-6b6e420ad493
-source-git-commit: 507f30d16eecf5400ee88a4d29913e4cdaca9cba
+source-git-commit: 5d307e0fcafdc4d25402c62c6869ecc07c1a47e4
 workflow-type: tm+mt
-source-wordcount: '887'
-ht-degree: 6%
+source-wordcount: '921'
+ht-degree: 5%
 
 ---
 
@@ -26,47 +26,49 @@ Viktiga funktioner:
 
 * **Central arbetsflödeshantering**. Förbättra hastighet och skala för alla delar av era marknadsföringskampanjer, från att skapa segment och förbereda meddelanden till leverans.
 
-   Adobe Campaign gör det enkelt för er att synkronisera era era kanaler med ett enda lättanvänt gränssnitt för kampanjsamordning. Så era onlinekanaler - som e-post, webben, mobiler och sociala kanaler - matchar era offlinekanaler, inklusive direktreklam, callcenter, butiker och så vidare. Det ger er möjlighet att ge era kunder en enhetlig och sammanhangsberoende upplevelse i både digitala och traditionella kanaler. Adobe Campaign gör det enkelt att leverera innehåll till alla vägar kunderna kan ta - i alla kanaler.
+  Adobe Campaign gör det enkelt för er att synkronisera era era kanaler med ett enda lättanvänt gränssnitt för kampanjsamordning. Så era onlinekanaler - som e-post, webben, mobiler och sociala kanaler - matchar era offlinekanaler, inklusive direktreklam, callcenter, butiker och så vidare. Det ger er möjlighet att ge era kunder en enhetlig och sammanhangsberoende upplevelse i både digitala och traditionella kanaler. Adobe Campaign gör det enkelt att leverera innehåll till alla vägar kunderna kan ta - i alla kanaler.
 
-   ![](../assets/do-not-localize/glass.png) [Läs mer om Campaign-arbetsflöden](../config/workflows.md)
+  ![](../assets/do-not-localize/glass.png) [Läs mer om Campaign-arbetsflöden](../config/workflows.md)
 
 * **Personlig e-postmarknadsföring**. Skapa personaliserade och sammanhangsberoende e-postmeddelanden som överensstämmer med resten av kundupplevelsen.
 
-   Med Adobe Campaign kan ni göra era e-postmeddelanden bättre, mer personaliserade och mer lönsamma. E-postmeddelanden är enkla att skapa och enkla att leverera. Campaign v8 ger er flexibilitet att utforma, personalisera, testa, förfina och förbättra alla meddelanden ni skickar.
+  Med Adobe Campaign kan ni göra era e-postmeddelanden bättre, mer personaliserade och mer lönsamma. E-postmeddelanden är enkla att skapa och enkla att leverera. Campaign v8 ger er flexibilitet att utforma, personalisera, testa, förfina och förbättra alla meddelanden ni skickar.
 
-   ![](../assets/do-not-localize/glass.png) [Läs mer om personaliseringsfunktioner](create-message.md)
+  ![](../assets/do-not-localize/glass.png) [Läs mer om personaliseringsfunktioner](create-message.md)
 
 * **Kunddatahantering**. Se hela bilden av era kunder så att ni snabbt kan skapa personaliserade kampanjer i storföretagsskala.
 
-   Adobe Campaign hjälper er att skapa kundprofiler utifrån data som samlats in i alla era kanaler. Med den här profilen kan ni samordna kampanjer i alla kanaler. Genom att koppla samman alla era marknadsföringskanaler kan ni anpassa den resa varje kund ska ta på det sätt som passar dem bäst.
+  Adobe Campaign hjälper er att skapa kundprofiler utifrån data som samlats in i alla era kanaler. Med den här profilen kan ni samordna kampanjer i alla kanaler. Genom att koppla samman alla era marknadsföringskanaler kan ni anpassa den resa varje kund ska ta på det sätt som passar dem bäst.
 
-   ![](../assets/do-not-localize/glass.png) [Läs mer om hantering av kunddata](audiences.md)
+  ![](../assets/do-not-localize/glass.png) [Läs mer om hantering av kunddata](audiences.md)
 
 * **Kampanjhantering i toppklass**. Adobe Campaign v8 ger marknadsförarna förstklassiga funktioner för att planera, lansera och mäta kampanjer i olika kanaler.
 
-   Funktionerna inkluderar en integrerad profil som ger en samlad bild av kunden. Datahantering och segmentering för att bygga upp målgrupper i stor skala. Hantering av flerkanaliga arbetsflöden för automatisering av kampanjer i flera kanaler och flervågor. Integrerad e-post, vilket minskar beroendet av kostsamma ESP:er. Rapportering och analys för att förstå kundbeteende och kampanjresultat.
+  Funktionerna inkluderar en integrerad profil som ger en samlad bild av kunden. Datahantering och segmentering för att bygga upp målgrupper i stor skala. Hantering av flerkanaliga arbetsflöden för automatisering av kampanjer i flera kanaler och flervågor. Integrerad e-post som minskar beroendet av kostsamma ESP. Rapportering och analys för att förstå kundbeteende och kampanjresultat.
 
-   ![](../assets/do-not-localize/glass.png) [Läs mer om kampanjhantering](campaigns.md)
+  ![](../assets/do-not-localize/glass.png) [Läs mer om kampanjhantering](campaigns.md)
 
 
 * **Anslutningar till Adobe Experience Platform**. Adobe Campaign v8 stöder dataanslutningar med Real-Time CDP och Adobe Experience Platform, så att man kan utnyttja den enhetliga kundprofilen i realtid.
 
-   Dessutom är Adobe Campaign v8 integrerat med realtidsfunktionerna för resesamordning så att marknadsförarna kan återanvända samma mallar och leveransfunktioner i Adobe Campaign för att engagera kunderna i realtid. Dessa investeringar kommer att optimera Adobe Campaign kundupplevelse och frigöra nya användningsfall som möjligheten att lägga till individuella kundresor i realtid till kampanjer.
+  Dessutom är Adobe Campaign v8 integrerat med realtidsfunktionerna för resesamordning så att marknadsförarna kan återanvända samma mallar och leveransfunktioner i Adobe Campaign för att engagera kunderna i realtid. Dessa investeringar kommer att optimera Adobe Campaign kundupplevelse och frigöra nya användningsfall som möjligheten att lägga till individuella kundresor i realtid till kampanjer.
 
-   Ni kan också konfigurera prediktiv optimering av sändningstiden och prediktiv poängsättning med Journey AI samt öka antalet öppna samtal, antalet klick och intäkterna.
+  Ni kan också konfigurera prediktiv optimering av sändningstiden och prediktiv poängsättning med Journey AI samt öka antalet öppna samtal, antalet klick och intäkterna.
 
-   ![](../assets/do-not-localize/glass.png) [Läs mer om Campaign-integreringar](../connect/integration.md)
+  ![](../assets/do-not-localize/glass.png) [Läs mer om Campaign-integreringar](../connect/integration.md)
 
 
-* **Hanterade Cloud Services**. Adobe Campaign v8 är tillgänglig som en hanterad Cloud Service som ger proaktiv tillsyn, varningar i rätt tid och servicestyrning.
+* **Hanterade Cloud Services**. Adobe Campaign v8 är tillgänglig som en hanterad Cloud Service som ger proaktiv tillsyn, snabb varning och servicestyrning.
 
-   Adobe Managed Cloud Service ger marknadsförarna en smidigare, säkrare och skalbar lösning för kanalövergripande kampanjhantering med en låg total ägandekostnad. Det nya erbjudandet kombinerar tjänster med proaktiv tillsyn och snabb varning.
+  Adobe Managed Cloud Service ger marknadsförarna en smidigare, säkrare och skalbar lösning för kanalövergripande kampanjhantering med en låg total ägandekostnad. Det nya erbjudandet kombinerar tjänster med proaktiv tillsyn och snabb varning.
+
+  Den nya molnarkitekturen gör att Campaign kan effektivisera processer, minska kostnaderna, hantera risker och förbättra datasäkerheten. Din Campaign v8-miljö har ett dedikerat VPC (Virtual Private Cloud) som är förkonfigurerat för dig.
 
 * **Hastighet och skala**. Adobe Campaign kan nu utnyttja molnbaserade databastekniker för att dramatiskt förbättra sin skala och hastighet.
 
-   [Campaign v8 Enterprise](../architecture/enterprise-deployment.md) ger begreppet **Fullständig federerad dataåtkomst** (FFDA): alla data är nu fjärranslutna till molndatabasen. Med det här nya erbjudandet förenklar Campaign v8 datahanteringen: inget index krävs för molndatabasen. Du behöver bara skapa tabellerna, kopiera data så kan du börja. [!DNL Snowflake] är Campaign Cloud-databasen, vilket ger er snabbhet och uthållighet: ingen överbelastning av systemaktivitetens toppar. Cloud-databastekniken kräver inget specifikt underhåll för att garantera prestandanivån.
+  [Campaign v8 Enterprise](../architecture/enterprise-deployment.md) ger begreppet **Fullständig federerad dataåtkomst** (FFDA): alla data är nu fjärranslutna till molndatabasen. Med det här nya erbjudandet förenklar Campaign v8 datahanteringen: inget index krävs i molndatabasen. Du behöver bara skapa tabellerna, kopiera data så kan du börja. [!DNL Snowflake] är Campaign Cloud-databasen, vilket ger er snabbhet och uthållighet: ingen överbelastning av systemaktivitetens toppar. Cloud-databastekniken kräver inget specifikt underhåll för att garantera prestandanivån.
 
-   ![](../assets/do-not-localize/glass.png) [Läs mer om företagsdistribution (FFDA)](../architecture/enterprise-deployment.md)
+  ![](../assets/do-not-localize/glass.png) [Läs mer om företagsdistribution (FFDA)](../architecture/enterprise-deployment.md)
 
 
 >[!CAUTION]
@@ -77,10 +79,9 @@ Viktiga funktioner:
 
 
 
-
 ## Självbetjäningsadministratörsgränssnitt{#self-service-admin}
 
-Som produktadministratör kan du hantera inställningar och spåra användningen av var och en av era Campaign v8-instanser med **Kontrollpanelen för kampanj**.
+Som produktadministratör kan du hantera inställningar och spåra användningen av var och en av era Campaign v8-instanser med **Kampanjkontrollpanelen**.
 
 Via ett intuitivt användargränssnitt kan administratörer övervaka användningen av nyckelresurser, utföra avancerade uppgifter som IP-adresser som tillåter listning, SFTP-lagringsövervakning, nyckelhantering med mera. Det här självbetjäningsgränssnittet ger dig större flexibilitet och hjälper dig att:
 
