@@ -5,7 +5,7 @@ feature: Overview
 role: Admin, Developer, User
 level: Beginner, Intermediate, Experienced
 exl-id: 7771a02c-ebd4-48b6-b25e-6b6e420ad493
-source-git-commit: 1297d5a602d125cb80ca6efb490b12174bcea8d6
+source-git-commit: f16fe79b8417a3fa146baf432f829c73fb839953
 workflow-type: tm+mt
 source-wordcount: '923'
 ht-degree: 5%
@@ -32,7 +32,7 @@ Adobe Campaign gör det enkelt för er att synkronisera era era kanaler med ett 
 
 ![](../assets/do-not-localize/glass.png) [Läs mer om Campaign-arbetsflöden](../config/workflows.md)
 
-## Personlig e-postmarknadsföring {#perso-email-mkt}
+### Personlig e-postmarknadsföring {#perso-email-mkt}
 
 Skapa personaliserade och sammanhangsberoende e-postmeddelanden som överensstämmer med resten av kundupplevelsen.
 
