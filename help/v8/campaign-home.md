@@ -3,10 +3,10 @@ keywords: Campaign Classic;hem;populära ämnen
 description: Campaign v8 - hjälpcenter
 title: Adobe Campaign v8 - produktdokumentation
 exl-id: 6010b0f7-baf0-43ba-af9a-b8864f3897ea,9ff16fb1-d3d3-44fe-9016-15abffdbc74e
-source-git-commit: dc2ccd7092fd31f043b338868762440ae0394991
+source-git-commit: c42dfe96f1f18f1d9eab0a8761c1ea65479962b2
 workflow-type: tm+mt
-source-wordcount: '157'
-ht-degree: 17%
+source-wordcount: '153'
+ht-degree: 18%
 
 ---
 
@@ -16,7 +16,7 @@ ht-degree: 17%
 
 ## Nyheter
 
-* **[[!DNL Adobe Campaign] automatiseringsguide](https://experienceleague.adobe.com/docs/campaign/automation/home.html){target="_blank"}** - Lär dig hur du bygger arbetsflöden och kampanjer
+* **[[!DNL Adobe Campaign] automatiseringsguide](https://experienceleague.adobe.com/docs/campaign/automation/home.html){target="_blank"}** - Lär dig skapa arbetsflöden och kampanjer
 
 * **[Vad är [!DNL Adobe Campaign]](start/get-started.md)** - Nyckelfunktioner och användningsfall
 
@@ -66,15 +66,6 @@ ht-degree: 17%
 </a>
 <div>
 <a href="send/push.md"><strong>Skicka push-meddelanden</strong></a>
-</div>
-<p>
-</td>
-<td>
-<a href="../automation/workflow/about-workflows.md">
-<img alt="Skapa kampanjer" src="start/assets/do-not-localize/workflow.jpeg">
-</a>
-<div>
-<a href="../automation/workflow/about-workflows.md"><strong>Skapa arbetsflöden</strong></a>
 </div>
 <p>
 </td>
