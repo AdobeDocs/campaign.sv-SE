@@ -5,9 +5,9 @@ feature: Email
 role: User
 level: Beginner
 exl-id: 97dcd0e0-db5b-45a4-96af-817e49f6cb64
-source-git-commit: 500de76853772313b1aac655da2f1b3562de2c55
+source-git-commit: a08dd72a2be703e5e9cd3cdc20dbb3064b06b35d
 workflow-type: tm+mt
-source-wordcount: '508'
+source-wordcount: '519'
 ht-degree: 4%
 
 ---
@@ -27,7 +27,7 @@ I följande exempel får du lära dig hur du utformar en e-postleverans i Adobe 
 
 1. **Skapa leveransen**
 
-   Bläddra till **Kampanjer** flik, klicka **Leveranser** och klicka på **Skapa** ovanför listan över befintliga leveranser.
+   Om du vill skapa en ny leverans går du till **Kampanjer** flik, klicka **Leveranser** och klicka på **Skapa** ovanför listan över befintliga leveranser.
 
    ![](assets/delivery_step_1.png)
 
@@ -43,6 +43,9 @@ I följande exempel får du lära dig hur du utformar en e-postleverans i Adobe 
 
    ![](assets/paste-content.png)
 
+   >[!NOTE]
+   >
+   >För att undvika prestandaproblem får bilderna i e-postmeddelanden inte överstiga 100 kB.
 
 1. **Anpassa meddelandet**
 
@@ -68,7 +71,7 @@ I följande exempel får du lära dig hur du utformar en e-postleverans i Adobe 
 
    * Lägga till en spegelsida
 
-     Lägg till en länk till [spegelsida](mirror-page.md) av ditt meddelande.
+     Om du vill att mottagarna ska kunna se ditt leveransinnehåll i en webbläsare lägger du till en länk i [spegelsida](mirror-page.md) av ditt meddelande.
 
      Placera markören där du vill infoga länken, klicka på den sista ikonen i verktygsfältet och klicka sedan på **[!UICONTROL Include]** och markera **[!UICONTROL link to mirror page]**.
 
@@ -76,7 +79,7 @@ I följande exempel får du lära dig hur du utformar en e-postleverans i Adobe 
 
 1. Du kan definiera ytterligare parametrar för e-postmeddelandet, till exempel skicka en kopia av meddelandena till en BBC-adress, ändra meddelandeformatet, ange en viss kodning osv. Läs mer i [det här avsnittet](email-parameters.md).
 
-1. När innehållet är klart klickar du på **Spara**: den visas nu i din lista över leveranser i **[!UICONTROL Campaigns > Deliveries]** -fliken.
+1. När innehållet är klart klickar du **Spara**: den kommer nu att visas i din lista över leveranser i **[!UICONTROL Campaigns > Deliveries]** -fliken.
 
 Din första e-postleverans är klar. Nu måste ni definiera målgruppen, validera leveransen och skicka den.
 
