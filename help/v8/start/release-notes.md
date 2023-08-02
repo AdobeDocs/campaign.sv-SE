@@ -5,9 +5,9 @@ feature: Overview
 role: Admin, Developer, User
 level: Beginner, Intermediate, Experienced
 exl-id: 7cf8111d-9f3a-46a4-813a-d4e43a1d1471
-source-git-commit: e5aa245afb6954e7b1be795c42362da5754fb2a4
+source-git-commit: 758d542b353a2d784407954089586e761825d740
 workflow-type: tm+mt
-source-wordcount: '1453'
+source-wordcount: '1466'
 ht-degree: 16%
 
 ---
@@ -19,6 +19,12 @@ Adobe Campaign uppdateras regelbundet. Denna regelbundna uppdateringsfrekvens sy
 Som användare av hanterade Cloud Services uppgraderas din instans av Adobe i varje ny version. Adobe kommer att kontakta dig och uppgradera dina miljöer. Campaign Client Console **måste uppgraderas till samma version** som kampanjservrar. Lär dig hur du uppgraderar din klientkonsol på den här [sidan](../start/connect.md#upgrade-ac-console).
 
 Som kund bör du dessutom se till att du använder de senaste versionerna av de system som stöds i [Kompatibilitetsmatris](compatibility-matrix.md).
+
+## Version 8.5.2 {#release-8-5-2}
+
+_2 aug 2023_
+
+Ett säkerhetsproblem som kan uppstå vid uppgradering till 8.5.1 har åtgärdats. (NEO-64767)
 
 ## Version 8.5.1 {#release-8-5}
 
