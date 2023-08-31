@@ -5,58 +5,58 @@ feature: Subscriptions
 role: User
 level: Beginner
 exl-id: d5933b12-8664-49b8-953c-ea98eb428cc2
-source-git-commit: 65f4da979f0c5884797af0c3a835d948672b4a7c
+source-git-commit: b0150b38b50b04c08b10ed73b3be3064a09d7b88
 workflow-type: tm+mt
-source-wordcount: '452'
+source-wordcount: '448'
 ht-degree: 2%
 
 ---
 
 # Hantera prenumerationer och avbeställningar{#optin-optout}
 
-Använd Adobe Campaign för att skapa och övervaka informationstjänster som nyhetsbrev och för att hantera prenumerationer/avbeställningar av dessa tjänster. Flera tjänster kan definieras parallellt, till exempel: särskilda nyhetsbrev för vissa produktkategorier, teman eller områden på en webbplats, prenumerationer på olika typer av varningsmeddelanden och meddelanden i realtid. Se Hantera prenumerationer.
+Använd Adobe Campaign för att skapa och övervaka informationstjänster som nyhetsbrev och för att hantera prenumerationer/avbeställningar av dessa tjänster. Flera tjänster kan definieras parallellt, till exempel: nyhetsbrev till specialister för vissa produktkategorier, teman eller områden på en webbplats, prenumerationer på olika typer av varningsmeddelanden och meddelanden i realtid.
 
-![](../assets/do-not-localize/book.png) Lär dig hur du skapar en informationstjänst, skickar nyhetsbrev och hanterar anmälan och avanmälan [Campaign Classic v7-dokumentation](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/subscriptions-and-referrals/managing-subscriptions.html){target="_blank"}
+![](../assets/do-not-localize/book.png) Lär dig hur du skapar en informationstjänst, skickar nyhetsbrev och hanterar anmälan och avanmälan [Campaign Classic v7 - dokumentation](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/subscriptions-and-referrals/managing-subscriptions.html){target="_blank"}
 
 Så här prenumererar du (anmäler dig) en profil för en tjänst:
 
-* Lägg till tjänsten manuellt i mottagarprofilen: för att göra detta, från **[!UICONTROL Subscriptions]** flik i deras profil, klicka på **[!UICONTROL Add]** och välja ut den berörda informationstjänsten.
+* Lägg till tjänsten manuellt i mottagarprofilen: om du vill göra det går du till **[!UICONTROL Subscriptions]** flik i profilen, klicka på **[!UICONTROL Add]** och välja ut informationstjänsten.
 
-   ![](assets/subscribe-to-a-service.png)
+  ![](assets/subscribe-to-a-service.png)
 
-   ![](../assets/do-not-localize/book.png) Läs mer i [Campaign Classic v7-dokumentation](https://experienceleague.adobe.com/docs/campaign-classic/using/getting-started/profile-management/editing-a-profile.html#deliveries-tab){target="_blank"}
+  ![](../assets/do-not-localize/book.png) Läs mer i [Campaign Classic v7 - dokumentation](https://experienceleague.adobe.com/docs/campaign-classic/using/getting-started/profile-management/editing-a-profile.html#deliveries-tab){target="_blank"}
 
 * Prenumerera automatiskt på en uppsättning mottagare till tjänsten. Listan med mottagare kan komma från en filtreringsåtgärd, en grupp, en mapp, en import eller ett manuellt val. Om du vill prenumerera på dessa mottagare markerar du profilerna och högerklickar. Välj **[!UICONTROL Actions > Subscribe selection to a service...]**.
 
-   ![](assets/subscribe-selection.png)
+  ![](assets/subscribe-selection.png)
 
-   Välj den berörda tjänsten och starta åtgärden.
+  Välj den berörda tjänsten och starta åtgärden.
 
-   ![](assets/subscribe-confirm.png)
+  ![](assets/subscribe-confirm.png)
 
-   ![](../assets/do-not-localize/book.png) Läs mer i [Campaign Classic v7-dokumentation](https://experienceleague.adobe.com/docs/campaign-classic/using/getting-started/profile-management/editing-a-profile.html#deliveries-tab){target="_blank"}
+  ![](../assets/do-not-localize/book.png) Läs mer i [Campaign Classic v7 - dokumentation](https://experienceleague.adobe.com/docs/campaign-classic/using/getting-started/profile-management/editing-a-profile.html#deliveries-tab){target="_blank"}
 
 
 * Importera mottagare och prenumerera automatiskt på en informationstjänst. Det gör du genom att välja den berörda tjänsten i det sista steget i importguiden.
 
-   ![](../assets/do-not-localize/book.png) Läs mer i [Campaign Classic v7-dokumentation](https://experienceleague.adobe.com/docs/campaign-classic/using/getting-started/importing-and-exporting-data/generic-imports-exports/executing-import-jobs.html#step-5---additional-step-when-importing-recipients){target="_blank"}
+  ![](../assets/do-not-localize/book.png) Läs mer i [Campaign Classic v7 - dokumentation](https://experienceleague.adobe.com/docs/campaign-classic/using/getting-started/importing-and-exporting-data/generic-imports-exports/executing-import-jobs.html#step-5---additional-step-when-importing-recipients){target="_blank"}
 
 * Använd ett webbformulär så att mottagarna kan prenumerera på en tjänst.
 
-   ![](assets/opt-in-webapp.png)
+  ![](assets/opt-in-webapp.png)
 
-   Campaign innehåller ett standardwebbformulär som hanterar anmälan. Du kan anpassa den och mappa profildata.
+  Campaign innehåller ett standardwebbformulär som hanterar anmälan. Du kan anpassa den och mappa profildata.
 
-   ![](assets/web-app.png)
+  ![](assets/web-app.png)
 
-   ![](../assets/do-not-localize/book.png) Läs mer i [Campaign Classic v7-dokumentation](https://experienceleague.adobe.com/docs/campaign-classic/using/designing-content/web-forms/use-cases--web-forms.html#create-a-subscription--form-with-double-opt-in){target="_blank"}
+  ![](../assets/do-not-localize/book.png) Läs mer i [Campaign Classic v7 - dokumentation](https://experienceleague.adobe.com/docs/campaign-classic/using/designing-content/web-forms/use-cases--web-forms.html#create-a-subscription--form-with-double-opt-in){target="_blank"}
 
 
 * Skapa ett målarbetsflöde och använda en **[!UICONTROL Subscription service]** aktivitet.
 
-   ![](assets/wf-subscription.png)
+  ![](assets/wf-subscription.png)
 
-   Läs mer i [den här sidan](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/targeting-activities/subscription-services.html).
+  Läs mer i [den här sidan](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/targeting-activities/subscription-services.html).
 
 Så här avanmäler du en profil från en tjänst:
 
@@ -68,15 +68,15 @@ Så här avanmäler du en profil från en tjänst:
 
 **Automatisk avprenumeration**
 
-* Ange en tidsgräns för informationstjänsten: när giltighetsperioden har löpt ut kommer mottagarna att avbeställa prenumerationen automatiskt. Den här perioden anges på fliken Redigera i tjänstens egenskaper. Den uttrycks i dagar.
+* Ange en tidsgräns för informationstjänsten: mottagarna kommer att sluta prenumerera automatiskt när giltighetsperioden har gått ut. Den här perioden anges på fliken Redigera i tjänstens egenskaper. Den uttrycks i dagar.
 * Ställ in ett avabonnemangsarbetsflöde för en population.
 
-![](../assets/do-not-localize/book.png) Läs mer i [Campaign Classic v7-dokumentation](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/subscriptions-and-referrals/managing-subscriptions.html#unsubscribing-a-recipient-from-a-service){target="_blank"}
+![](../assets/do-not-localize/book.png) Läs mer i [Campaign Classic v7 - dokumentation](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/subscriptions-and-referrals/managing-subscriptions.html#unsubscribing-a-recipient-from-a-service){target="_blank"}
 
 
 >[!CAUTION]
 >
->När det gäller [Företagsdistribution (FFDA)](../architecture/enterprise-deployment.md), prenumerationer och avbeställningar är **asynkron** -processer. Begäranden om anmälan och avanmälan behandlas varje timme. [Läs mer](../architecture/new-apis.md#sub-apis)
+>När det gäller en [Företagsdistribution (FFDA)](../architecture/enterprise-deployment.md), prenumerationer och avbeställningar är **asynkron** -processer. Begäranden om anmälan och avanmälan behandlas varje timme. [Läs mer](../architecture/new-apis.md#sub-apis)
 
 <!--
 You can also enable your delivery recipients to forward messages to a friend. To do this, insert the relevant links into your delivery. You may then track this sharing process as well as the number of visits to the concerned pages. 
