@@ -1,17 +1,17 @@
 ---
 product: campaign
-title: Skapa din första kampanjkampanj
-description: Lär dig hur ni börjar med marknadsföringskampanjer
+title: Kom igång med marknadsföringskampanjer
+description: Lär er hur ni börjar med marknadsföringskampanjer
 feature: Campaigns, Cross Channel Orchestration, Programs
 exl-id: eb1a0e52-14d9-4ad2-8bf2-ea955c6fd0f5
-source-git-commit: 2ce1ef1e935080a66452c31442f745891b9ab9b3
+source-git-commit: ac4473625697d0fd545586a01868e3229bccc672
 workflow-type: tm+mt
-source-wordcount: '443'
-ht-degree: 1%
+source-wordcount: '444'
+ht-degree: 3%
 
 ---
 
-# Skapa din första kampanjkampanj{#gs-marketing-campaigns}
+# Kom igång med marknadsföringskampanjer {#gs-marketing-campaigns}
 
 Med Adobe Campaign kan ni definiera, optimera, genomföra och analysera kommunikation och marknadsföringskampanjer. Adobe Campaign fungerar som ett enhetligt center för order och genomförande av marknadsföringsstrategier. Hantera flera datakällor, definiera era målgruppssegment samt planera och genomföra flerstegskampanjer i flera kanaler via ett dra-och-släpp-gränssnitt för visuellt arbetsflöde.
 
@@ -23,16 +23,16 @@ Med Adobe Campaign kan ni definiera, optimera, genomföra och analysera kommunik
 >Capabilities related to population targeting, message personalization and message delivery on the various channels are detailed in [this section](../../delivery/using/steps-about-delivery-creation-steps.md).-->
 
 
-## Viktiga steg för att utforma kampanjer {#key-steps-campaign}
+## Viktiga steg för att utforma era kampanjer {#key-steps-campaign}
 
 Kampanjerna omfattar åtgärder (leveranser) och processer (import eller extrahering av filer) samt resurser (marknadsföringsdokument, leveransdispositioner). De används i marknadsföringskampanjer. Kampanjer ingår i ett program och program ingår i en kampanjplan.
 
 De viktigaste stegen för att skapa och genomföra en marknadsföringskampanj i Adobe Campaign är följande:
 
-1. **Konfigurera planer och program** lägg in logik för att samordna era kampanjer. Ett program är en uppsättning marknadsföringsaktiviteter som definierats för en period. Varje program innehåller kampanjer som är länkade till en kalender, som ger en övergripande bild. Marknadsföringsplanen kan innehålla flera program. Det definierar strategiska mål för en tidsperiod med en tilldelad budget, mätbara mål och tillhörande dokument. Lär dig hur du skapar planer och program [i det här avsnittet](marketing-campaign-create.md#create-plan-and-program).
+1. **Konfigurera planer och program** lägg in logik för att samordna era kampanjer. Ett program är en uppsättning marknadsföringsaktiviteter som definierats för en period. Varje program innehåller kampanjer som är länkade till en kalender, som ger en övergripande bild. Marknadsföringsplanen kan innehålla flera program. Det definierar strategiska mål för en tidsperiod, med en tilldelad budget, mätbara mål och tillhörande dokument. Lär dig skapa planer och program [i det här avsnittet](marketing-campaign-create.md#create-plan-and-program).
 
 1. **Skapa din första kampanj**
-En kampanj centraliserar alla element som hör till en marknadsföringskampanj: leveranser, regler för målinriktning, kostnader, exportfiler, relaterade dokument osv. Varje kampanj är kopplad till ett program. Lär dig hur du skapar en kampanj [i det här avsnittet](marketing-campaign-create.md#create-a-campaign).
+En kampanj centraliserar alla element som hör till en marknadsföringskampanj: leveranser, målinriktningsregler, kostnader, exportfiler, relaterade dokument osv. Varje kampanj är kopplad till ett program. Lär dig skapa en kampanj [i det här avsnittet](marketing-campaign-create.md#create-a-campaign).
 
 1. **Välj målgrupp**
 Publiker kan importeras från en lista eller byggas in i ett kampanjarbetsflöde med hjälp av frågor. Lär dig definiera målgruppen för en kampanj [i det här avsnittet](marketing-campaign-target.md#select-the-target-population).
@@ -54,6 +54,6 @@ När de här stegen har slutförts kan du [starta leveranser](marketing-campaign
 
 ## Viktiga begrepp i video {#key-concepts-video}
 
-I den här videon presenteras de viktigaste begreppen för marknadsföringskampanjer.
+I den här videon presenteras viktiga begrepp för marknadsföringskampanjer.
 
 >[!VIDEO](https://video.tv.adobe.com/v/35131?quality=12)
