@@ -4,9 +4,9 @@ user-guide-title: Campaign v8
 title: Adobe Campaign v8-dokumentation
 description: Dokumentation om Campaign v8
 breadcrumb-title: Översikt över Campaign
-source-git-commit: 4f3e6227193fc607a968f9170484017e551fa560
+source-git-commit: 4ff6e8134c887da6c207afc7f9532a60ff9ef31e
 workflow-type: tm+mt
-source-wordcount: '569'
+source-wordcount: '570'
 ht-degree: 22%
 
 ---
@@ -35,44 +35,43 @@ ht-degree: 22%
 + Campaign Management {#campaigns}
    + [Kom igång med kampanjer](start/campaigns.md)
    + [Kampanjorkestrering >](https://experienceleague.adobe.com/docs/campaign/automation/campaign-orchestration/set-up-campaigns.html)
-   + Skicka meddelanden{#send}
-      + [Kom igång med meddelanden](start/create-message.md)
-      + [Arbeta med leveransmallar](send/create-templates.md)
-      + E-post {#emails}
-         + [Designa och validera e-postmeddelanden](send/email.md)
-         + [Länka till spegelsidan](send/mirror-page.md)
-         + [Definiera ytterligare e-postparametrar](send/email-parameters.md)
-         + [Skicka och övervaka e-post](send/send.md)
-      + [SMS](send/sms.md)
-      + Push-meddelanden {#push}
-         + [Skapa och skicka push-meddelanden](send/push.md)
-         + [Konfigurera kanal för push-meddelanden](send/push-settings.md)
-         + [Konfigurera push-meddelanden med datainsamling](send/push-data-collection.md)
-      + [LINE-meddelanden](send/line.md)
-      + [Direktmeddelande](send/direct-mail.md)
-      + [Twitter](send/twitter.md)
-      + Transaktionsmeddelanden {#real-time}
-         + [Kom igång med transaktionsmeddelanden](send/transactional.md)
-         + [Skapa och publicera en mall](send/transactional-template.md)
-         + Händelsehantering {#event}
++ Skicka meddelanden{#send}
+   + [Kom igång med meddelanden](start/create-message.md)
+   + E-post {#emails}
+      + [Designa och validera e-postmeddelanden](send/email.md)
+      + [Länka till spegelsidan](send/mirror-page.md)
+      + [Definiera ytterligare e-postparametrar](send/email-parameters.md)
+      + [Skicka och övervaka e-postmeddelanden](send/send.md)
+   + [SMS](send/sms.md)
+   + Push-meddelanden {#push}
+      + [Skapa och skicka push-meddelanden](send/push.md)
+      + [Konfigurera kanal för push-meddelanden](send/push-settings.md)
+      + [Konfigurera push-meddelanden med datainsamling](send/push-data-collection.md)
+   + [LINE-meddelanden](send/line.md)
+   + [Direktmeddelande](send/direct-mail.md)
+   + [Twitter](send/twitter.md)
+   + Anpassa innehåll {#personalize}
+      + [Kom igång med personalisering](send/personalize.md)
+      + [Personaliseringsdata](send/personalization-data.md)
+      + [Lägg till anpassningsfält](send/personalization-fields.md)
+      + [Använd personaliseringsblock](send/personalization-blocks.md)
+      + [Skapa villkor](send/conditions.md)
+   + Validera och skicka leveransen {#validate}
+   + [Förhandsgranska och korrektur](send/preview-and-proof.md)
+   + [Leveransanalys](send/delivery-analysis.md)
+   + [Konfigurera och skicka leveransen](send/configure-and-send.md)
+   + [Tidsoptimering för sändning](send/predictive.md)
+   + Fel, studsar och karantän{#failures}
+      + [Karantän](send/quarantines.md)
+      + [Leveransfel](send/delivery-failures.md)
+   + [Arbeta med leveransmallar](send/create-templates.md)
+   + Transaktionsmeddelanden {#real-time}
+      + [Kom igång med transaktionsmeddelanden](send/transactional.md)
+      + [Skapa och publicera en mall](send/transactional-template.md)
+      + Händelsehantering {#event}
          + [Samla in och bearbeta händelser](send/event-processing.md)
          + [Förstå händelsebeskrivning](send/event-description.md)
          + [Skicka och övervaka meddelanden](send/delivery-execution.md)
-      + Fel, studsar och karantän{#failures}
-         + [Karantän](send/quarantines.md)
-         + [Leveransfel](send/delivery-failures.md)
-      + [Tidsoptimering för sändning](send/predictive.md)
-      + [Hantera prenumerationer](start/subscriptions.md)
-      + Anpassa innehåll {#personalize}
-         + [Kom igång med personalisering](send/personalize.md)
-         + [Personaliseringsdata](send/personalization-data.md)
-         + [Lägg till anpassningsfält](send/personalization-fields.md)
-         + [Använd personaliseringsblock](send/personalization-blocks.md)
-         + [Skapa villkor](send/conditions.md)
-      + Validera leveransen {#validate}
-         + [Förhandsgranska och korrektur](send/preview-and-proof.md)
-         + [Leveransanalys](send/delivery-analysis.md)
-      + [Konfigurera och skicka leveransen](send/configure-and-send.md)
 + Profil- och målgruppshantering {#audience}
    + [Kom igång med profiler och målgrupper](audiences/gs-audiences.md)
    + [Arbeta med målgrupper](start/audiences.md)
@@ -87,13 +86,14 @@ ht-degree: 22%
    + Skapa målgrupper {#create-audiences}
       + [Skapa en lista med kontakter](audiences/create-audiences.md)
       + [Skapa och hantera filter](audiences/create-filters.md)
-   + [Dela målgrupper med Adobes lösningar](start/shared-audiences.md)
+      + [Dela målgrupper med Adobe-lösningar](start/shared-audiences.md)
    + [Bästa praxis](audiences/audiences-best-practices.md)
+   + [Hantera prenumerationer](start/subscriptions.md)
 + Innehållshantering {#content}
    + [Designa webbprogram och formulär](dev/webapps.md)
 + Integritet och säkerhetshantering {#privacy}
    + [Hantera förfrågningar om användarens information](start/privacy.md)
-   + [Riktlinjer för säkerhet](config/security.md)
+   + [Säkerhetsanvisningar](config/security.md)
 + Beslutshantering {#offers}
    + [Kom igång med interaktion i realtid](interaction/interaction.md)
    + [Miljö och arkitektur](interaction/interaction-architecture.md)
