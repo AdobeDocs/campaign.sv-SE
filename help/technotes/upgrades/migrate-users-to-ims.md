@@ -3,9 +3,9 @@ title: Migrera kampanjoperatorer till Adobe Identity Management System (IMS)
 description: Lär dig hur du migrerar kampanjoperatorer till Adobe Identity Management System (IMS)
 hide: true
 hidefromtoc: true
-source-git-commit: 74d97c4c61a305aff1d2f108a8a24cb6943dea07
+source-git-commit: 53412ab167721c8a8f9d84e07112b0f410d4785d
 workflow-type: tm+mt
-source-wordcount: '1036'
+source-wordcount: '1094'
 ht-degree: 1%
 
 ---
@@ -25,7 +25,6 @@ Med Campaign v8 bör alla vanliga användare redan ansluta till Adobe Campaign k
 Som en del av arbetet med att förstärka säkerhets- och autentiseringsprocessen anropar nu Adobe Campaign klientprogram Campaign-API:er direkt med IMS-token för tekniskt konto. Migrering för tekniska operatörer beskrivs i en särskild artikel på [den här sidan](ims-migration.md).
 
 Den här ändringen gäller från och med Campaign v8.5.2 och kommer att **obligatoriskt** starta Campaign v8.6.
-
 
 ## Påverkas du?{#migrate-ims-impacts}
 
@@ -49,8 +48,9 @@ Viktiga steg för migreringen visas nedan:
 1. Arbeta med Adobe för att säkra ett datum för när Adobe ska köra automatiserad migrering för icke-tekniska användare (operatörer) och produktprofiler. Det här steget kräver ett timmars fönster utan driftstopp för någon av dina förekomster.
 1. Din interna Campaign-administratör validerar dessa ändringar och godkänner dem. Efter den här migreringen får du inte längre skapa någon ytterligare operator som autentiseras med användarens inloggning och lösenord.
 
-Nu kan du planera migrering av tekniska användare till IMS enligt [den här teknologin](ims-migration.md)och bekräfta för Adobe Transition Manager när du är klar.
-Adobe markerar sedan migreringen som slutförd och aktiverar flaggorna för att blockera skapandet av nya inbyggda användare och inloggningen för inbyggda användare.
+Nu kan du migrera tekniska operatorer till Adobe Developer Console enligt informationen i [den här teknologin](ims-migration.md). Det här steget är obligatoriskt om du använder Campaign-API:er.
+
+När migreringen är klar bekräftar du till din Adobe Transition Manager: Adobe markerar sedan migreringen som slutförd och blockerar skapande av nya inbyggda användare och inloggning. Miljön är sedan säker och standardiserad.
 
 ## Vanliga frågor och svar {#ims-migration-faq}
 
@@ -105,10 +105,19 @@ Under den här tidsramen måste alla Campaign-användare logga ut och logga in i
 
 Adobe rekommenderar starkt att alla användare loggas ut under migreringsfönstret.
 
-### Användare i min organisation använder redan IMS, behöver jag ändå utföra IMS-migrering?
+### Användare i min organisation använder redan IMS, behöver jag ändå utföra IMS-migrering?{#ims-migration-needed}
 
 Det finns två aspekter av migreringen: migrering av slutanvändare och migrering av tekniska användare (används i API:er i din anpassade kod).
 
 Om alla användare (Campaign-operatorer) använder IMS behöver du inte utföra den här migreringen. Du måste dock fortfarande migrera tekniska användare som du kan ha använt i anpassad kod. Läs mer i [den här sidan](ims-migration.md).
 
 När migreringen är klar måste du kontakta Adobe Transition Manager så att Adobe kan slutföra migreringen.
+
+## Användbara länkar {#ims-useful-links}
+
+* [Migrering av tekniska användare till Adobe Developer Console](ims-migration.md)
+* [Ansluta till Adobe Campaign v8](../../v8/start/connect.md)
+* [Åtkomst och behörigheter i Adobe Campaign v8](../../v8/start/gs-permissions.md)
+* [Versionsinformation för Adobe Campaign v8](../../v8/start/release-notes.md)
+* [Vad är Adobe Identity Management System (IMS)](https://helpx.adobe.com/enterprise/using/identity.html){target="_blank"}
+
