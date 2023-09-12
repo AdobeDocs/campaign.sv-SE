@@ -5,10 +5,10 @@ feature: Architecture
 role: Admin, Developer, User
 level: Beginner, Intermediate, Experienced
 exl-id: 1d9ff6c5-974d-4a8a-a0d7-641685bbe26e
-source-git-commit: 507f30d16eecf5400ee88a4d29913e4cdaca9cba
+source-git-commit: d791cb9afc51457e799ee62f8bb845fd888fecf2
 workflow-type: tm+mt
-source-wordcount: '1078'
-ht-degree: 2%
+source-wordcount: '1129'
+ht-degree: 1%
 
 ---
 
@@ -18,15 +18,15 @@ Den typiska driftsättningen av Adobe Campaign-lösningar består av följande k
 
 * **Anpassad klientmiljö**
 
-   Intuitivt grafiskt gränssnitt där användare kan kommunicera och spåra marknadsföringserbjudanden, skapa kampanjer, granska och hantera alla marknadsföringsaktiviteter, program och planer - inklusive e-post, arbetsflöden och landningssidor -, skapa och hantera kundprofiler och skapa målgrupper.
+  Intuitivt grafiskt gränssnitt där användare kan kommunicera och spåra marknadsföringserbjudanden, skapa kampanjer, granska och hantera alla marknadsföringsaktiviteter, program och planer - inklusive e-post, arbetsflöden och landningssidor -, skapa och hantera kundprofiler och skapa målgrupper.
 
 * **Utvecklingsmiljö**
 
-   Program på serversidan som kör marknadsföringskampanjer via valda kommunikationskanaler, inklusive e-post, SMS, push-meddelanden, direktreklam, webb eller sociala, baserat på de regler och arbetsflöden som definieras i användargränssnittet.
+  Program på serversidan som kör marknadsföringskampanjer via valda kommunikationskanaler, inklusive e-post, SMS, push-meddelanden, direktreklam, webb eller sociala, baserat på de regler och arbetsflöden som definieras i användargränssnittet.
 
 * **Databasbehållare**
 
-   Adobe Campaign Cloud Database lagrar all information, alla kampanjkomponenter, erbjudanden, arbetsflöden och kampanjresultat i databasbehållare, baserat på relationsdatabasteknik.
+  Adobe Campaign Cloud Database lagrar all information, alla kampanjkomponenter, erbjudanden, arbetsflöden och kampanjresultat i databasbehållare, baserat på relationsdatabasteknik.
 
 ## Anpassad klientmiljö {#client-env}
 
@@ -42,9 +42,9 @@ Vissa Campaign-moduler fungerar kontinuerligt medan andra startas ibland för at
 
 Det finns tre typer av Adobe Campaign-moduler:
 
-* **Moduler med flera instanser**: en enda process körs för alla instanser. Detta gäller följande moduler: webb, syslogd, trackinglog och watchdog.
+* **Moduler med flera instanser**: en enda process körs för alla instanser. Detta gäller följande moduler: web, syslogd, trackinglogd och watchdog.
 * **Eninstansmoduler**: en process körs per instans. Detta gäller följande moduler: mta, wfserver, inMail, sms och stat.
-* **Verktygsmoduler**: Detta är moduler som körs ibland för att utföra tillfälliga eller återkommande åtgärder (rensning, konfiguration, hämtning av spårningsloggar osv.).
+* **Verktygsmoduler**: dessa är moduler som körs ibland för att utföra tillfälliga eller återkommande åtgärder (rensning, konfiguration, hämtning av spårningsloggar osv.).
 
 De viktigaste processerna är:
 
@@ -60,7 +60,7 @@ De viktigaste processerna är:
 
 * **Omdirigeringsserver** (nlserver webmdl) - För e-post hanterar Adobe Campaign automatiskt öppnings- och klickspårning (transaktionsspårning på webbplatsnivå är en ytterligare möjlighet). För att uppnå detta skrivs de URL:er som ingår i e-postmeddelandena om så att de pekar på den här modulen, som registrerar den överförda Internet-användaren innan de dirigeras om till den önskade URL:en.
 
-   För att garantera högsta tillgänglighet är denna process helt oberoende av databasen: de andra serverprocesserna kommunicerar med den endast med SOAP-anrop (HTTP, HTTP(S) och XML). Tekniskt sett implementeras den här funktionen i en tilläggsmodul för en HTTP-server (ISAPI-tillägg i IIS eller en DSO Apache-modul osv.) och finns endast i Windows.
+  För att garantera högsta tillgänglighet är den här processen helt oberoende av databasen: de andra serverprocesserna kommunicerar med den endast med SOAP-anrop (HTTP, HTTP(S) och XML). Tekniskt sett implementeras den här funktionen i en tilläggsmodul för en HTTP-server (ISAPI-tillägg i IIS eller en DSO Apache-modul osv.) och finns endast i Windows.
 
 Det finns även andra tekniska processer:
 
@@ -78,6 +78,7 @@ Det finns även andra tekniska processer:
 
 * **Statistikserver** (nlserver stat) - Den här processen underhåller statistik om antalet anslutningar, meddelanden som skickas för varje e-postserver som meddelanden skickas till samt deras begränsningar (högsta antal samtidiga anslutningar, meddelanden per timme/och/eller anslutning). Du kan också federera flera instanser eller datorer om de delar samma offentliga IP-adresser.
 
+
 ## Databasbehållare {#db-containers}
 
 Adobe Campaign Cloud-databasen bygger på [!DNL Snowflake] som innehåller funktionsuppgifter (profiler, prenumerationer, innehåll osv.), tekniska data (leveransjobb och loggar, spårningsloggar osv.) och arbetsdata (inköp, leads) för lösningen och alla Adobe Campaign-komponenter kommunicerar med databasen för att utföra sina specifika uppgifter.
@@ -89,6 +90,12 @@ Du kan distribuera Adobe Campaign med hjälp av fördefinierade databaser och sc
 
 >[!CAUTION]
 >
->Med **Kampanjhanterade Cloud Services**, din miljö och den ursprungliga konfigurationen har angetts av Adobe enligt villkoren i licensavtalet. Du får inte ändra installerade inbyggda paket, inbyggda scheman eller rapporter.
+>Med **Kampanjhanterade Cloud Service**, din miljö och den ursprungliga konfigurationen har angetts av Adobe enligt villkoren i licensavtalet. Du får inte ändra installerade inbyggda paket, inbyggda scheman eller rapporter.
 >
 >Om du behöver använda ett Campaign-tillägg eller en specifik funktion som inte har etablerats för dig måste du kontakta **Adobe kundtjänst**.
+
+## Databaslagring {#db-storage}
+
+Totalt lagringsutrymme delas mellan huvuddatabasen och lagerstället i Snowflake. Var data lagras bör fastställas vid implementering eller uppgradering, beroende på kundspecifika användningsfall.
+
+Lär dig hur du övervakar databasanvändningen i [Dokumentation för Campaign Control Panel](https://experienceleague.adobe.com/docs/control-panel/using/performance-monitoring/database-monitoring/database-monitoring.html){target="_blank"}.
