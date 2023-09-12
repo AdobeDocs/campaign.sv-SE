@@ -5,7 +5,7 @@ feature: Overview
 role: Admin
 level: Beginner, Intermediate, Experienced
 exl-id: 4be3a6dc-0c61-4534-b9dd-6c99c8a037a9
-source-git-commit: b71197027d9521fd648a0c2657b6b76a1aa7fc9a
+source-git-commit: bf846b4120885b56ef00c836922e22c7629f5510
 workflow-type: tm+mt
 source-wordcount: '378'
 ht-degree: 32%
@@ -20,7 +20,7 @@ Eftersom vissa versioner av dessa system och verktyg från tredje part når slut
 
 >[!NOTE]
 >
->Adobe Campaign Server och Client Console måste finnas i samma version. [Lär dig hur du kontrollerar din version](#version).
+>Adobe Campaign Server och Client Console måste finnas i samma version. [Lär dig kontrollera din version](#version).
 
 ## Klientkonsol{#ClientConsoleoperatingsystems}
 
@@ -28,8 +28,8 @@ Följande operativsystem och webbläsare krävs för att använda klientkonsolen
 
 ### Operativsystem{#op-systems}
 
-* **Microsoft Windows Server** 2019, 2016, 2012
-* **Microsoft Windows** 11, 10, 8
+* **Microsoft Windows Server** 2019, 2016
+* **Microsoft Windows** 11, 10
 
 >[!NOTE]
 >
@@ -45,7 +45,7 @@ Följande operativsystem och webbläsare krävs för att använda klientkonsolen
 
 CRM (Customer Relationship Management)-system som är kompatibla med Adobe Campaign listas nedan. [Läs mer](../connect/crm.md).
 
-* **Salesforce** API för anslutning version 49
+* **Salesforce** API-version 49 för anslutning
 * **Microsoft Dynamics** koppling, webb-API: Dynamics 365 lokalt och online
 
 ## Federerad dataåtkomst (FDA){#FederatedDataAccessFDA}
