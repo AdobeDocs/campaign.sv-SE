@@ -5,10 +5,10 @@ feature: Overview
 role: Admin, Developer, User
 level: Beginner, Intermediate, Experienced
 exl-id: 7cf8111d-9f3a-46a4-813a-d4e43a1d1471
-source-git-commit: 758d542b353a2d784407954089586e761825d740
+source-git-commit: c4a1539f140e85e1e8c97f743f9c6c0bba52e4de
 workflow-type: tm+mt
-source-wordcount: '1466'
-ht-degree: 16%
+source-wordcount: '1489'
+ht-degree: 21%
 
 ---
 
@@ -16,7 +16,7 @@ ht-degree: 16%
 
 Adobe Campaign uppdateras regelbundet. Denna regelbundna uppdateringsfrekvens syftar till att ge dig den senaste och bästa produkten, hålla din miljö säker och förbättra din upplevelse med produkten. Adobe rekommenderar varmt alla kunder att uppgradera till den senaste versionen.
 
-Som användare av hanterade Cloud Services uppgraderas din instans av Adobe i varje ny version. Adobe kommer att kontakta dig och uppgradera dina miljöer. Campaign Client Console **måste uppgraderas till samma version** som kampanjservrar. Lär dig hur du uppgraderar din klientkonsol på den här [sidan](../start/connect.md#upgrade-ac-console).
+Som användare av hanterade Cloud Service uppgraderas din instans av Adobe i varje ny version. Adobe kommer att kontakta dig och uppgradera dina miljöer. Campaign Client Console **måste uppgraderas till samma version** som kampanjservrar. Lär dig hur du uppgraderar din klientkonsol på den här [sidan](../start/connect.md#upgrade-ac-console).
 
 Som kund bör du dessutom se till att du använder de senaste versionerna av de system som stöds i [Kompatibilitetsmatris](compatibility-matrix.md).
 
@@ -38,7 +38,6 @@ Campaign v8.5.1 introducerar vår senaste tjänst för push-meddelanden, som byg
 Mer information finns i den [detaljerade dokumentationen](../send/push-data-collection.md).
 
 
-**Förbättrade genomströmningar för mobilkanaler**
 
 <!--
 The newly introduced Push notification service showcases significant improvements in throughput for both Push Android and Push iOS compared to our previous version (v8.4). Users will experience notably enhanced performance with the upgraded service in the latest version (v8.5).
@@ -60,7 +59,7 @@ These max throughput performances have been measured by Adobe testing teams, in 
 </td>
 <td>
 <div>
-
+<p><strong>Förbättrade genomströmningar för mobilkanaler</strong></p>
 <p>Den nyligen introducerade tjänsten Push Notification visar betydande förbättringar av genomströmningen för både Push Android och Push iOS jämfört med vår tidigare version (v8.4). Användarna kommer att uppleva avsevärt bättre prestanda med den uppgraderade tjänsten i den senaste versionen (v8.5). </p>
 <ul>
 <li>Push-meddelanden (Android): upp till <strong>5x</strong> snabbare </li>
@@ -85,8 +84,8 @@ These max throughput performances have been measured by Adobe testing teams, in 
 
 **Säkerhetsförbättringar**
 
-* Från och med Campaign v8.5.1 har autentiseringsprocessen till Campaign v8 förbättrats. Tekniska operatörer måste använda Adobe Identity Management System (IMS) för att ansluta till Campaign. Lär dig hur du migrerar dina befintliga tekniska konton i [den här teknologin](../../technotes/upgrades/ims-migration.md).
-* Du kan inte längre skapa operatorer från Campaign Client Console. Användargränssnittet har uppdaterats i enlighet med detta. Nu måste du använda Adobe Admin Console. [Läs mer](../start/gs-permissions.md).
+* Med Campaign v8.5.1 har autentiseringsprocessen till Campaign v8 förbättrats och säkrats. Tekniska operatörer måste nu använda Adobe Identity Management System (IMS) för att ansluta till Campaign. Lär dig hur du migrerar dina befintliga tekniska konton i [den här teknologin](../../technotes/upgrades/ims-migration.md).
+* Med början från kommande v8.6 får du inte längre skapa operatorer från Campaign Client Console. Om du använder inbyggd autentisering för inloggning/lösenord måste du migrera dina operatorer till Adobe Identity Management System (IMS). Lär dig hur du migrerar dina operatorer i [den här teknologin](../../technotes/upgrades/migrate-users-to-ims.md).
 * Flera tredjepartsverktyg har uppdaterats för att optimera säkerheten.
 
 **Kompatibilitetsuppdateringar**
@@ -106,9 +105,9 @@ These max throughput performances have been measured by Adobe testing teams, in 
 * Korrigerade ett problem som förhindrade funktionen `JSPContext.sqlExecWithOneParam` från att arbeta. (NEO-50066)
 * Korrigerade ett problem som ledde till leveransfel när icke-utskrivbara tecken användes i anpassningsfält. (NEO-48588)
 * Ett problem som kunde orsaka leveransfel vid infogning av dynamiska Adobe Target-bilder har åtgärdats. (NEO-62689)
-* Ett problem har korrigerats som förhindrar att webbläsare lägger till extra mellanslag när villkorsstyrt innehåll används i en leverans. (NEO-62132)
-* Ett problem som gjorde att ett popup-fönster öppnades när du klickade på en bild i e-postredigeraren har åtgärdats. (NEO-60752)
-* Korrigerade ett problem som kan leda till ett fel och förhindra att du rullar när du redigerar innehållet i en leverans. (NEO-61364)
+* Korrigerade ett problem som förhindrar att webbläsare lägger till extra mellanslag när villkorsstyrt innehåll används i en leverans. (NEO-62132)
+* Korrigerade ett problem som gjorde att ett popup-fönster öppnades när du klickade på en bild i e-postredigeraren. (NEO-60752)
+* Korrigerade ett problem som kan leda till ett fel och förhindra att du skrollar när du redigerar innehållet i en leverans. (NEO-61364)
 * Adobe Analytics Connector exporterar nu mätvärden med rätt kanaltyp. Den har tidigare alltid angetts som en e-postkanal. (NEO-26340)
 * Korrigerade ett problem som kunde leda till fel när Big Query-kopplingen användes med datetime-fält. (NEO-49768)
 
