@@ -5,10 +5,10 @@ type: Event
 title: Adobe Campaign Technotes
 description: Kampanjanteckningar
 breadcrumb-title: Kampanjtekniker
-source-git-commit: 7430387df278644a1bc3b82ba193b37a76fa99a2
+source-git-commit: d0935df57d8a25fa023dd93e7923c2728d889577
 workflow-type: tm+mt
-source-wordcount: '45'
-ht-degree: 24%
+source-wordcount: '51'
+ht-degree: 21%
 
 ---
 
@@ -19,6 +19,7 @@ ht-degree: 24%
 + Uppgraderingar{#tn-new}
    + [Migrera användare till IMS](upgrades/migrate-users-to-ims.md)
    + [Migrera teknisk operator till Developer Console](upgrades/ims-migration.md)
+   + [Campaign som skickar infrastrukturmigrering till AWS](upgrades/migrate-to-aws.md)
    + [Uppgradera Apache-version](upgrades/apache.md)
    + [Webbläsare](upgrades/browsers.md)
    + [2023-systemuppgraderingar](upgrades/tech-stack-upgrade.md)
