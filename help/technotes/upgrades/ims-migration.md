@@ -1,9 +1,9 @@
 ---
 title: Migrering av tekniska användare till Adobe Developer Console
 description: Lär dig hur du migrerar tekniska kampanjoperatörer till ett tekniskt konto på Adobe Developer Console
-source-git-commit: b71197027d9521fd648a0c2657b6b76a1aa7fc9a
+source-git-commit: 825e8147f6080e1d943184c97c4b64ac681f9411
 workflow-type: tm+mt
-source-wordcount: '779'
+source-wordcount: '919'
 ht-degree: 0%
 
 ---
@@ -26,6 +26,16 @@ Den här ändringen gäller från och med Campaign v8.5 och kommer att **obligat
 Om du använder Campaign-API:er måste du migrera dina tekniska operatörer till Adobe Developer Console enligt beskrivningen nedan.
 
 ## Hur migrerar jag?{#ims-migration-procedure}
+
+Varje teknisk aktör bör ha minst ett tekniskt konto.
+
+Viktiga steg är:
+
+1. Skapa först det tekniska konto som motsvarar den tekniska operatören. Anta t.ex. den nya tekniska redovisningen (TA1) för den tekniska operatören (TO1).
+1. Utför stegen nedan på den tekniska redovisningen TA1
+   [Steg 4](#ims-migration-step-4) är valfritt och endast obligatoriskt om den tekniska operatorn har särskilda mappbehörigheter.
+1. Migrera all implementering av Campaign API-integrering till det nya tekniska kontot TA1.
+1. När alla kundcentrerade API:er/integrationslösningar börjar fungera fullt ut på TA1 ersätter du den tekniska operatören TO1 med det tekniska kontot TA1.
 
 ### Förhandskrav{#ims-migration-prerequisites}
 
@@ -58,10 +68,9 @@ Nu kan du lägga till din Campaign-produktprofil i projektet, enligt beskrivning
    ![](assets/do-not-localize/ims-edit-api.png)
 
 1. Tilldela alla relevanta produktprofiler till API:t, till exempel &#39;messagecenter&#39;, och spara ändringarna.
-1. Bläddra till **Information om autentiseringsuppgifter** -fliken i projektet och kopiera **E-post för tekniskt konto** värde.
+1. Gå till **Information om autentiseringsuppgifter** -fliken i projektet och kopiera **E-post för tekniskt konto** värde.
 
 ### Steg 4 - Uppdatera den tekniska operatorn i klientkonsolen {#ims-migration-step-4}
-
 
 Det här steget är bara obligatoriskt om specifika mappbehörigheter eller namngivna rättigheter har definierats för den här operatorn (inte via operatorns grupp).
 
@@ -70,7 +79,7 @@ Så här uppdaterar du operatorn:
 
 1. Bläddra från Campaign Client Console Explorer till **Administration > Åtkomsthantering > Operatorer**.
 1. Få åtkomst till den befintliga tekniska operatorn som används för API:er.
-1. Bläddra till mappbehörigheter och kontrollera rättigheter.
+1. Bläddra till mappbehörigheterna och kontrollera rättigheterna.
 1. Använd samma behörigheter för den nyskapade tekniska operatorn. Operatörens e-postadress är **E-post för tekniskt konto** värdet kopierades tidigare.
 1. Spara ändringarna.
 
@@ -181,7 +190,7 @@ Efter migreringen av all API/anpassad kodintegrering med den tekniska kontoanvä
 
 När migreringsprocessen har uppnåtts och validerats uppdateras Soap-anropen enligt nedan:
 
-* Före migreringen
+* Före migreringen: det fanns inget stöd för åtkomsttoken för tekniskt konto.
 
   ```sql
   POST /nl/jsp/soaprouter.jsp HTTP/1.1
@@ -204,7 +213,7 @@ När migreringsprocessen har uppnåtts och validerats uppdateras Soap-anropen en
   </soapenv:Envelope>
   ```
 
-* Efter migreringen
+* Efter migreringen: det finns stöd för token för åtkomst till tekniska konton. Åtkomsttoken förväntas anges i `Authorization` sidhuvud som Bearer-token. Användning av sessionstoken bör ignoreras här, vilket visas i exemplet nedan för SOAP-anrop.
 
   ```sql
   POST /nl/jsp/soaprouter.jsp HTTP/1.1
