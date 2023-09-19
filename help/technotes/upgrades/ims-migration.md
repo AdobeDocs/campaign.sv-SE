@@ -1,7 +1,7 @@
 ---
 title: Migrering av tekniska användare till Adobe Developer Console
 description: Lär dig hur du migrerar tekniska kampanjoperatörer till ett tekniskt konto på Adobe Developer Console
-source-git-commit: 825e8147f6080e1d943184c97c4b64ac681f9411
+source-git-commit: 43a124dd64532ffe84ca2b300113cacc545a811a
 workflow-type: tm+mt
 source-wordcount: '919'
 ht-degree: 0%
@@ -190,7 +190,7 @@ Efter migreringen av all API/anpassad kodintegrering med den tekniska kontoanvä
 
 När migreringsprocessen har uppnåtts och validerats uppdateras Soap-anropen enligt nedan:
 
-* Före migreringen: det fanns inget stöd för åtkomsttoken för tekniskt konto.
+* Före migreringen: det fanns inget stöd för token för åtkomst till tekniska konton.
 
   ```sql
   POST /nl/jsp/soaprouter.jsp HTTP/1.1
