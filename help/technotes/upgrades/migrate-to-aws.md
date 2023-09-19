@@ -3,7 +3,7 @@ title: Migrera Campaign-sändningsinfrastruktur till Amazon Web Services (AWS)
 description: Migrera Campaign-sändningsinfrastruktur till Amazon Web Services (AWS)
 hide: true
 hidefromtoc: true
-source-git-commit: 557d61e0e015fa955b70858d614e476febd467cb
+source-git-commit: f1b4002063c8b94eb7251a9bcde9fe11791d0be3
 workflow-type: tm+mt
 source-wordcount: '401'
 ht-degree: 2%
@@ -60,11 +60,11 @@ Detta kommer att vara transparent för kunderna:
 
 * **Behöver kunden vidta några åtgärder för migreringen?**
 
-  Inga åtgärder krävs eftersom migreringen kommer att köras automatiskt av Adobe.
+  Inga åtgärder krävs eftersom migreringen automatiskt kommer att köras av Adobe.
 
 * **Vilka valideringar behöver kunderna köra?**
 
-  Ingen specifik testning krävs för denna säkerhetsuppgradering. Om något problem uppstår, kontakta [Adobe kundtjänst](https://experienceleague.adobe.com/?support-solution=Campaign#support)
+  Det behövs ingen specifik testning för den här migreringen. Om något problem uppstår, kontakta [Adobe kundtjänst](https://experienceleague.adobe.com/?support-solution=Campaign#support)
 
 
 * **Kan jag begära en ändring av datum/tid för den schemalagda säkerhetsuppgraderingsplatsen?**
