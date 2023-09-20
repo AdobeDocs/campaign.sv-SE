@@ -3,9 +3,9 @@ title: Migrera Campaign-sändningsinfrastruktur till Amazon Web Services (AWS)
 description: Migrera Campaign-sändningsinfrastruktur till Amazon Web Services (AWS)
 hide: true
 hidefromtoc: true
-source-git-commit: f1b4002063c8b94eb7251a9bcde9fe11791d0be3
+source-git-commit: 15beb6e4aae7a00b245277bcb4c6c60c13b22884
 workflow-type: tm+mt
-source-wordcount: '401'
+source-wordcount: '430'
 ht-degree: 2%
 
 ---
@@ -26,6 +26,7 @@ Detta kommer att säkerställa hög tillgänglighet, optimal genomströmning och
 * Campaign Classic v7 som värd och hybridkunder
 * Kunder med Managed Services Campaign
 * Alla kunder med Campaign v8
+* Campaign Standarder
 
 ## När kommer migreringen att ske?{#aws-timeline}
 
@@ -48,11 +49,13 @@ Detta kommer att vara transparent för kunderna:
 
 * **Varför är detta en obligatorisk uppgradering?**
 
-  Den nya Campaign-sändningsinfrastrukturen som tillhandahålls av Adobe Web Services (AWS) ger bättre kvalitet och tillförlitlighet för våra kunder. Den erbjuder också en stark och modern infrastruktur för att säkerställa bättre tillgänglighet och optimalt dataflöde.
+  Adobe planerar att avveckla det gamla datacentret. Adobe Campaign-instanser som körs där måste överföras till det nya referensdatacentret, Amazon Web Services (AWS).
+
+  Molnet för Adobe Managed Services ligger på Amazon Web Services (AWS), en modern, säker och optimerad miljö. [Läs mer om Amazon Web Services](https://aws.amazon.com/application-hosting/benefits/){target="_blank"}.
 
 * **Vilka kunder är inriktade på migreringen?**
 
-  Miljöerna migreras för alla Campaign v8-kunder och Campaign Classic v7-hybriden, värdservern och Campaign Managed Services.
+  Miljöerna migreras för alla Campaign v8-kunder och Campaign Classic v7-hybriden, värdservern och Campaign Managed Services. Campaign Standarden påverkas också.
 
 * **Vilka är de förväntade driftsavbrotten?**
 
@@ -64,7 +67,7 @@ Detta kommer att vara transparent för kunderna:
 
 * **Vilka valideringar behöver kunderna köra?**
 
-  Det behövs ingen specifik testning för den här migreringen. Om något problem uppstår, kontakta [Adobe kundtjänst](https://experienceleague.adobe.com/?support-solution=Campaign#support)
+  Det behövs ingen specifik testning för den här migreringen. Om något problem uppstår, kontakta [Adobe kundtjänst](https://experienceleague.adobe.com/?support-solution=Campaign#support){target="_blank"}.
 
 
 * **Kan jag begära en ändring av datum/tid för den schemalagda säkerhetsuppgraderingsplatsen?**
@@ -72,4 +75,4 @@ Detta kommer att vara transparent för kunderna:
   Eftersom detta är en obligatorisk migrering rekommenderar vi dig att anpassa dig till det befintliga schemat.
 
 
-För alla andra frågor kan du kontakta [Adobe kundtjänst](https://experienceleague.adobe.com/?support-solution=Campaign#support).
+För alla andra frågor kan du kontakta [Adobe kundtjänst](https://experienceleague.adobe.com/?support-solution=Campaign#support){target="_blank"}.
