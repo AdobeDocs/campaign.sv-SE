@@ -3,9 +3,9 @@ title: Migrera Campaign-sändningsinfrastruktur till Amazon Web Services (AWS)
 description: Migrera Campaign-sändningsinfrastruktur till Amazon Web Services (AWS)
 hide: true
 hidefromtoc: true
-source-git-commit: 15beb6e4aae7a00b245277bcb4c6c60c13b22884
+source-git-commit: 9401e3564b53b920dd6a640ca6d00531992a2f21
 workflow-type: tm+mt
-source-wordcount: '430'
+source-wordcount: '481'
 ht-degree: 2%
 
 ---
@@ -40,7 +40,7 @@ Som Campaign-kund får du ytterligare meddelanden när migreringsvågorna är sc
 
 Detta kommer att vara transparent för kunderna:
 
-* Migreringen förväntas ta mellan 30 min och 60 min
+* Längden på varje migreringsvåg kan variera beroende på antalet påverkade Campaign-instanser. När en migreringsvåg är schemalagd kommer meddelandet att innehålla den förväntade längden.
 
 * Kampanjinstanser kan inte skicka e-post under migreringsfönstret. Ingen annan Campaign-funktion påverkas.
 
@@ -59,7 +59,7 @@ Detta kommer att vara transparent för kunderna:
 
 * **Vilka är de förväntade driftsavbrotten?**
 
-  Förväntat driftstopp är mellan 30 och 60 minuter.
+  Migreringen förväntas ta mellan 30 min och 60 min, men längden på varje migreringsvåg kan variera beroende på antalet påverkade Campaign-instanser. När en migreringsvåg är schemalagd kommer meddelandet att innehålla den förväntade längden.
 
 * **Behöver kunden vidta några åtgärder för migreringen?**
 
@@ -72,7 +72,6 @@ Detta kommer att vara transparent för kunderna:
 
 * **Kan jag begära en ändring av datum/tid för den schemalagda säkerhetsuppgraderingsplatsen?**
 
-  Eftersom detta är en obligatorisk migrering rekommenderar vi dig att anpassa dig till det befintliga schemat.
-
+  Eftersom detta är en obligatorisk migrering kan vi inte hantera ändringar av det befintliga schemat.
 
 För alla andra frågor kan du kontakta [Adobe kundtjänst](https://experienceleague.adobe.com/?support-solution=Campaign#support){target="_blank"}.
