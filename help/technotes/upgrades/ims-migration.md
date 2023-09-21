@@ -1,9 +1,9 @@
 ---
 title: Migrering av tekniska användare till Adobe Developer Console
 description: Lär dig hur du migrerar tekniska kampanjoperatörer till ett tekniskt konto på Adobe Developer Console
-source-git-commit: 43a124dd64532ffe84ca2b300113cacc545a811a
+source-git-commit: 35263dc042642a6ba2f162461364b9399c30ad18
 workflow-type: tm+mt
-source-wordcount: '919'
+source-wordcount: '0'
 ht-degree: 0%
 
 ---
@@ -39,15 +39,15 @@ Viktiga steg är:
 
 ### Förhandskrav{#ims-migration-prerequisites}
 
-Innan du startar migreringsprocessen måste du kontakta din Adobe-representant så att Adobe tekniska team kan migrera dina befintliga Operator-grupper och namngivna rättigheter till Adobe Identity Management System (IMS).
+Innan du startar migreringsprocessen måste du kontakta din Adobe Transition Manager så att Adobe tekniska team kan migrera dina befintliga Operator-grupper och namngivna rättigheter till Adobe Identity Management System (IMS).
 
 ### Steg 1 - Skapa/uppdatera ditt Campaign-projekt i Adobe Developer Console{#ims-migration-step-1}
 
 Integrationer skapas som en del av en **Projekt** i Adobe Developer Console. Läs mer om projekt i [Adobe Developer Console-dokumentation](https://developer.adobe.com/developer-console/docs/guides/projects/){target="_blank"}.
 
-Som Campaign v8-användare bör du redan ha ett projekt i Adobe Developer Console. Annars måste du skapa ett projekt. Steg för att skapa ett projekt är detaljerade [i Adobe Developer Console-dokumentationen](https://developer.adobe.com/developer-console/docs/guides/getting-started/){target="_blank"}.
+Du kan använda vilket projekt som helst som du har skapat tidigare eller skapa ett nytt projekt. Stegen för att skapa ett projekt beskrivs i [Adobe Developer Console-dokumentation](https://developer.adobe.com/developer-console/docs/guides/getting-started/){target="_blank"}.
 
-När du har tillgång till ditt Campaign-projekt kan du lägga till tjänster som API:er, Adobe Campaign och I/O Management API. För den här migreringen måste du lägga till API:er nedan i ditt projekt: **API för I/O-hantering** och **Adobe Campaign**.
+För den här migreringen måste du lägga till API:er nedan i ditt projekt: **API för I/O-hantering** och **Adobe Campaign**.
 
 ![](assets/do-not-localize/ims-products-and-services.png)
 
