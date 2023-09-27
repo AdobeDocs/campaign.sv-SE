@@ -3,9 +3,9 @@ title: Uppgradering av infrastruktur för e-postutskick av kampanj
 description: Uppgradering av infrastruktur för e-postutskick av kampanj
 hide: true
 hidefromtoc: true
-source-git-commit: 45ef2b46f2612bdb814270d8ef9e257fcaf98e5b
+source-git-commit: aa3ec8e96d3bda80d5cbd4b4d98cad07b4560b14
 workflow-type: tm+mt
-source-wordcount: '372'
+source-wordcount: '366'
 ht-degree: 1%
 
 ---
@@ -24,7 +24,6 @@ Som en del av vårt pågående arbete med att tillhandahålla en användarupplev
 * Adobe Campaign Classic Managed Services
 * Adobe Campaign Managed Cloud Services-kunder
 * Adobe Campaign Standard On-demand-kunder
-* Adobe Campaign Cloud Messaging On-demand-kunder
 
 ## När kommer migreringen att ske?{#aws-timeline}
 
