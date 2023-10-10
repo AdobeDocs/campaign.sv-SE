@@ -3,8 +3,9 @@ product: campaign
 title: Fråga
 description: Läs mer om arbetsflödesaktiviteten Fråga
 feature: Workflows, Targeting Activity, Query Editor
+role: User, Data Engineer
 exl-id: 717e4f7c-3a8e-4930-9a06-b7412d6e1675
-source-git-commit: 6464e1121b907f44db9c0c3add28b54486ecf834
+source-git-commit: 28742db06b9ca78a4e952fcb0e066aa5ec344416
 workflow-type: tm+mt
 source-wordcount: '1545'
 ht-degree: 0%
@@ -24,7 +25,7 @@ Mer information om frågeexempel finns i [det här avsnittet](querying-recipient
 
 Mer information om hur du använder och hanterar ytterligare data finns i [Lägg till data](#adding-data).
 
-The **[!UICONTROL Edit query...]** -länken kan du definiera måltypen, begränsningarna och urvalskriterierna för populationen på följande sätt:
+The **[!UICONTROL Edit query...]** Med -länken kan du definiera måltypen, begränsningarna och urvalskriterierna för populationen på följande sätt:
 
 1. Välj målinriktning och filtreringsdimension. Som standard är målet markerat bland mottagarna. Listan med begränsningsfilter är densamma som de som används för leveransmål.
 
@@ -36,11 +37,11 @@ The **[!UICONTROL Edit query...]** -länken kan du definiera måltypen, begräns
 
    ![](assets/targeting-filtering-dimensions.png)
 
-   En fråga kan vid behov baseras på data från den inkommande övergången genom att välja **[!UICONTROL Temporary schema]** när du väljer målinriktning och filtreringsdimensioner.
+   En fråga kan vid behov baseras på data från den inkommande övergången genom att välja **[!UICONTROL Temporary schema]** när du väljer mål och filtreringsdimensioner.
 
    ![](assets/query_temporary_table.png)
 
-1. Definiera populationerna med guiden. Fälten som ska anges kan variera beroende på måltyp. Du kan förhandsgranska målpopulationen med de aktuella villkoren med hjälp av **[!UICONTROL Preview]** -fliken.
+1. Definiera populationerna med guiden. De fält som ska anges kan vara olika beroende på måltyp. Du kan förhandsgranska målpopulationen med de aktuella villkoren med hjälp av **[!UICONTROL Preview]** -fliken.
 
    ![](assets/query-sample.png)
 
@@ -85,7 +86,7 @@ Så här lägger du till data från Adobe Campaign-databasen:
    * Ett fält som beräknas baserat på data från målpopulationen eller ett aggregat (antal väntande inköp under den senaste månaden, genomsnittligt belopp för ett kvitto osv.). Till exempel, gå till [Markera data](targeting-workflows.md#selecting-data).
    * Ett nytt fält som skapats med **[!UICONTROL Add]** till höger om listan med utdatakolumner.
 
-      Du kan också lägga till en samling information, till exempel en lista över kontrakt, de fem senaste leveranserna osv. Samlingar sammanfaller med fält som kan ha flera värden för samma profil (1-N-relation). Mer information finns i [Redigera ytterligare data](targeting-workflows.md#editing-additional-data).
+     Du kan också lägga till en samling information, till exempel en lista över kontrakt, de fem senaste leveranserna osv. Samlingar sammanfaller med fält som kan ha flera värden för samma profil (1-N-relation). Mer information finns i [Redigera ytterligare data](targeting-workflows.md#editing-additional-data).
 
 Så här lägger du till en samling information som är länkad till en målpopulation:
 
@@ -98,11 +99,11 @@ Så här lägger du till en samling information som är länkad till en målpopu
 
    * Om ett enskilt element i samlingen sammanfaller med filtervillkoren för den här samlingen väljer du **[!UICONTROL Single row]** i **[!UICONTROL Data collected]** fält.
 
-      >[!IMPORTANT]
-      >
-      >I det här läget optimeras SQL-frågan som genereras tack vare en direkt koppling till samlingselementen.
-      >
-      >Om det ursprungliga villkoret inte uppfylls kan resultatet bli bristfälligt (saknade eller överlappande linjer).
+     >[!IMPORTANT]
+     >
+     >I det här läget optimeras den SQL-fråga som genereras tack vare en direkt överlappning av samlingselementen.
+     >
+     >Om det ursprungliga villkoret inte uppfylls kan resultatet bli bristfälligt (saknade eller överlappande linjer).
 
    * Om du väljer att återställa flera rader (**[!UICONTROL Limit the line count]**) kan du ange hur många rader som ska samlas in.
    * Om de insamlade kolumnerna innehåller aggregat, t.ex. antalet fel som deklarerats, genomsnittliga utgifter på en webbplats, osv. du kan använda **[!UICONTROL Aggregates]** värde.
@@ -117,7 +118,7 @@ Så här lägger du till en samling information som är länkad till en målpopu
 
 ## Exempel: Riktning på enkla mottagarattribut {#example--targeting-on-simple-recipient-attributes}
 
-I följande exempel syftar frågan till att identifiera män mellan 18 och 30 år och som bor i Frankrike. Den här frågan kommer att användas i ett arbetsflöde som t.ex. syftar till att göra dem till ett exklusivt erbjudande.
+I följande exempel syftar frågan till att identifiera män mellan 18 och 30 år och som bor i Frankrike. Den här frågan används i ett arbetsflöde som t.ex. syftar till att göra dem till ett exklusivt erbjudande.
 
 >[!NOTE]
 >
@@ -170,11 +171,11 @@ I avsnittet nedan beskrivs de effektivaste strategierna för att optimera frågo
 * Undvik yttre kopplingar. Använd posten med noll-ID när det är möjligt för att få en yttre kopplingsfunktion.
 * Använd rätt datatyp för kopplingar.
 
-   Se till att `where` -satsen är av samma typ som fältet.
+  Se till att `where` -satsen är av samma typ som fältet.
 
-   Ett vanligt misstag är: `iBlacklist='3'` där `iBlacklist` är ett numeriskt fält, och `3` anger ett textvärde.
+  Ett vanligt misstag är: `iBlacklist='3'` där `iBlacklist` är ett numeriskt fält, och `3` anger ett textvärde.
 
-   Kontrollera att du vet vilken körningsplan din fråga kommer att ha. Undvik fullständiga tabellsökningar, särskilt för realtidsfrågor eller nästan realtidsfrågor som körs varje minut.
+  Kontrollera att du vet vilken körningsplan din fråga kommer att ha. Undvik fullständiga tabellsökningar, särskilt för realtidsfrågor eller nästan realtidsfrågor som körs varje minut.
 
 ### Funktioner {#functions}
 
@@ -212,10 +213,10 @@ Mer information om filtreringsdimensioner finns i [det här avsnittet](build-a-w
    * Program,
    * Volymer.
 
-   >[!NOTE]
-   >
-   >En funktion som fungerar i en utvecklingsmiljö kanske inte fungerar i en produktionsmiljö där data kan vara annorlunda. Försök att identifiera de viktigaste skillnaderna för att förutse risker och förbereda lösningar.
+  >[!NOTE]
+  >
+  >En funktion som fungerar i en utvecklingsmiljö kanske inte fungerar i en produktionsmiljö där data kan vara annorlunda. Försök att identifiera de viktigaste skillnaderna för att förutse risker och förbereda lösningar.
 
 * Gör konfigurationer som matchar målvolymerna. Stora volymer kräver särskilda konfigurationer. En konfiguration som fungerade för 100 000 mottagare kanske inte fungerar för 10 000 000 mottagare.
 
-   Tänk på hur systemet skalförändras när det publiceras. Bara för att något fungerar i liten skala innebär det inte att det är lämpligt med större volymer. Testerna bör utföras med liknande volymer som produktionsvolymen. Du bör också utvärdera effekten av volymförändringar (antal anrop, databasens storlek) vid högsta antal timmar, högsta antal dagar och under projektets hela livstid.
+  Tänk på hur systemet skalförändras när det publiceras. Bara för att något fungerar i liten skala innebär det inte att det är lämpligt med större volymer. Testerna bör utföras med liknande volymer som produktionsvolymen. Du bör också utvärdera effekten av volymförändringar (antal anrop, databasens storlek) vid högsta antal timmar, högsta antal dagar och under projektets hela livstid.

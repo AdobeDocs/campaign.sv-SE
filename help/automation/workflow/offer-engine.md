@@ -3,8 +3,9 @@ product: campaign
 title: Erbjudandemotor
 description: Erbjudandemotor
 feature: Workflows, Interaction
+role: User, Admin
 exl-id: d77858e1-3cd5-4372-b1bc-ea4b518c958d
-source-git-commit: 77ec01aaba1e50676bed57f503a9e4e8bb1fe54c
+source-git-commit: 28742db06b9ca78a4e952fcb0e066aa5ec344416
 workflow-type: tm+mt
 source-wordcount: '136'
 ht-degree: 4%
@@ -13,7 +14,7 @@ ht-degree: 4%
 
 # Erbjudandemotor{#offer-engine}
 
-The **[!UICONTROL Offer engine]** Med -aktivitet kan du definiera ett anrop till erbjudandemotorn före en leverans.
+The **[!UICONTROL Offer engine]** kan du definiera ett anrop till erbjudandemotorn före leverans.
 
 Denna aktivitet fungerar enligt samma princip som anrikningsaktiviteten med ett motoranrop genom att anrika den inkommande populationsinformationen med ett erbjudande som beräknas av motorn, före leverans.
 

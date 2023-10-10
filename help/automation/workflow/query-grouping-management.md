@@ -1,10 +1,11 @@
 ---
 product: campaign
 title: Fråga med grupperingshantering
-description: Lär dig hur du utför frågor med hjälp av grupperingshantering
+description: Lär dig hur du utför frågor med grupperingshantering
 feature: Query Editor
+role: User, Data Engineer
 exl-id: 6fc4ef67-5d75-4c8c-8bcc-41e3ed155ca2
-source-git-commit: 6464e1121b907f44db9c0c3add28b54486ecf834
+source-git-commit: 28742db06b9ca78a4e952fcb0e066aa5ec344416
 workflow-type: tm+mt
 source-wordcount: '241'
 ht-degree: 4%
@@ -19,15 +20,15 @@ I det här exemplet vill vi köra en fråga för att hitta alla e-postdomäner s
 
 * Vilken tabell måste markeras?
 
-   mottagartabellen (nms:mottagare)
+  mottagartabellen (nms:mottagare)
 
 * Fält som ska markeras i utdatakolumner?
 
-   E-postdomän och primärnyckel (med antal)
+  E-postdomän och primärnyckel (med antal)
 
 * Datagruppering?
 
-   Baserat på en e-postdomän med ett antal primärnycklar över 30. Denna operation genomförs med **[!UICONTROL Group by + Having]** alternativ. **[!UICONTROL Group by + Having]** I kan du gruppera data (&quot;gruppera efter&quot;) och göra en markering av grupperade data (&quot;ha&quot;).
+  Baserat på en e-postdomän med ett antal primärnycklar över 30. Denna operation genomförs med **[!UICONTROL Group by + Having]** alternativ. **[!UICONTROL Group by + Having]** I kan du gruppera data (&quot;gruppera efter&quot;) och göra en markering av grupperade data (&quot;ha&quot;).
 
 Så här skapar du det här exemplet:
 
@@ -54,11 +55,11 @@ Så här skapar du det här exemplet:
 
 1. I **[!UICONTROL Grouping condition]** anger du ett primärnyckelantal som är större än 30 eftersom vi bara vill att e-postdomäner som är avsedda mer än 30 gånger ska returneras som resultat.
 
-   Det här fönstret visas när **[!UICONTROL Manage groupings (GROUP BY + HAVING)]** kryssrutan har markerats: Det är här grupperingsresultatet filtreras (HAVING).
+   Det här fönstret visas när **[!UICONTROL Manage groupings (GROUP BY + HAVING)]** -rutan har markerats: det är här grupperingsresultatet filtreras (HAVING).
 
    ![](assets/query_editor_blocklist_05.png)
 
 1. I **[!UICONTROL Data formatting]** fönster, klicka **[!UICONTROL Next]**: ingen formatering behövs här.
-1. Klicka på **[!UICONTROL Launch data preview]**: Här returneras tre olika e-postdomäner som är riktade över 30 gånger.
+1. Klicka på **[!UICONTROL Launch data preview]**: här returneras tre olika e-postdomäner som är riktade över 30 gånger.
 
    ![](assets/query_editor_blocklist_06.png)
