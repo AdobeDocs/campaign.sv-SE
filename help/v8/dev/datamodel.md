@@ -5,10 +5,10 @@ feature: Data Model
 role: Data Engineer
 level: Beginner
 exl-id: 200b60f1-04ae-4c3e-892f-3dd2bd22b896
-source-git-commit: 65f4da979f0c5884797af0c3a835d948672b4a7c
+source-git-commit: 87e56e7c296884458a0c8fd704b82611f56e695d
 workflow-type: tm+mt
-source-wordcount: '665'
-ht-degree: 6%
+source-wordcount: '713'
+ht-degree: 5%
 
 ---
 
@@ -18,19 +18,19 @@ Adobe Campaign innehåller en fördefinierad datamodell. I det här avsnittet fi
 
 Den grundläggande strukturen i Adobe Campaign datamodell beskrivs på följande sätt:
 
-* **Mottagarregister**: Datamodellen bygger på en huvudtabell som som standard är mottagartabellen (nmsRecipient). I det här registret lagras alla marknadsföringsprofiler.
+* **Mottagarregister**: Datamodellen bygger på en huvudtabell som som standard är mottagartabellen (**nmsRecipient**). I det här registret lagras alla marknadsföringsprofiler. Läs mer om mottagartabellen i [det här avsnittet](#ootb-profiles).
 
-   ![](../assets/do-not-localize/glass.png) Mer information om mottagartabellen finns i [det här avsnittet](#ootb-profiles).
+* **Leveransregister**: Den här tabellen lagrar en post per leveransåtgärd. Vanligtvis är det leveransregistret (**NmsDelivery**). i den här tabellen representerar en leveransåtgärd eller en leveransmall. Den innehåller alla parametrar som krävs för att utföra leveranser som mål, innehåll osv. Varje post uppdateras flera gånger för att återspegla leveransförloppet
 
-* **Leveransregister**: Datamodellen innehåller också en del som är avsedd för lagring av alla marknadsföringsaktiviteter. Vanligtvis är det Delivery Table (NmsDelivery). Varje post i den här tabellen representerar en leveransåtgärd eller en leveransmall. Den innehåller alla parametrar som krävs för att utföra leveranser som mål, innehåll osv.
+* **Loggtabeller**: I de här tabellerna lagras alla loggar som är associerade med kampanjkörningen.
 
-* **Loggtabeller**: I dessa tabeller lagras alla loggar som är associerade med kampanjkörningen.
+   * Leveransloggar är alla meddelanden som skickas till mottagare eller enheter i alla kanaler. Huvudtabellen för leveransloggar (**NmsBroadLogRcp**) innehåller leveransloggarna för alla mottagare.
+   * The **nmsBroadlog** tabellen är den största tabellen i systemet. Den lagrar en post per skickat meddelande och dessa poster infogas, uppdateras för att spåra leveransstatus och tas bort när historiken rensas.
+   * Huvudtabellen för spårningsloggar (**NmsTrackingLogRcp**) lagrar spårningsloggarna för alla mottagare. Spårningsloggarna refererar till mottagarnas reaktioner, t.ex. öppningar och klickningar via e-post. Varje reaktion motsvarar en spårningslogg.
 
-   Leveransloggar är alla meddelanden som skickas till mottagare eller enheter i alla kanaler. Huvudtabellen för leveransloggar (NmsBroadLogRcp) innehåller leveransloggarna för alla mottagare.
-Registret för huvudspårningsloggar (NmsTrackingLogRcp) lagrar spårningsloggarna för alla mottagare. Spårningsloggarna refererar till mottagarnas reaktioner, t.ex. öppningar och klickningar via e-post. Varje reaktion motsvarar en spårningslogg.
-Leveransloggar och spårningsloggar tas bort efter en viss period, som anges i Adobe Campaign och kan ändras. Vi rekommenderar därför att du exporterar loggarna regelbundet.
+  Leveransloggar och spårningsloggar tas bort efter en viss period, som anges i Adobe Campaign och kan ändras. Vi rekommenderar därför att du exporterar loggarna regelbundet.
 
-* **Tekniska tabeller**: Samla in tekniska data som används för ansökningsprocessen, inklusive operatorer och användarrättigheter (xtkGroup), mappar (XtkFolder).
+* **Tekniska tabeller**: Samla in tekniska uppgifter som används i ansökningsprocessen, inklusive operatörer och användarrättigheter (**xtkGroup**), användarsessioner (**xtkSessionInfo**), mappar i Utforskarträdet (**XtkFolder**), arbetsflöden (**xtkWorkflow**) med mera.
 
 >[!NOTE]
 >
@@ -60,7 +60,7 @@ Det går att utöka mottagartabellen, men inte att minska antalet fält eller l�
 
 ![](../assets/do-not-localize/glass.png) Lär dig hur du utökar ett befintligt schema i [det här avsnittet](extend-schema.md).
 
-![](../assets/do-not-localize/book.png) Upptäck exempel på inbyggda mottagartabelltillägg i [Campaign Classic v7-dokumentation](https://experienceleague.adobe.com/docs/campaign-classic/using/configuring-campaign-classic/editing-schemas/examples-of-schemas-edition.html#extending-a-table){target="_blank"}
+![](../assets/do-not-localize/book.png) Upptäck exempel på inbyggda mottagartabelltillägg i [Campaign Classic v7 - dokumentation](https://experienceleague.adobe.com/docs/campaign-classic/using/configuring-campaign-classic/editing-schemas/examples-of-schemas-edition.html#extending-a-table){target="_blank"}
 
 Du kan också använda en annan mottagartabell för att bättre passa ditt företags eller dina funktionskrav. Den här metoden har begränsningar och beskrivs i [det här avsnittet](custom-recipient.md).
 
