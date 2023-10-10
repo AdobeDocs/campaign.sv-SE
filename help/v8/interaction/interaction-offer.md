@@ -2,10 +2,10 @@
 title: Kampanjinteraktionserbjudande
 description: Lär dig hur du skapar ett erbjudande
 feature: Interaction, Offers
-role: Data Engineer
+role: User, Admin
 level: Beginner
 exl-id: 4dc2008d-681c-4a79-8fc8-c270c9224ab9
-source-git-commit: 65f4da979f0c5884797af0c3a835d948672b4a7c
+source-git-commit: 567c2e84433caab708ddb9026dda6f9cb717d032
 workflow-type: tm+mt
 source-wordcount: '914'
 ht-degree: 3%
@@ -16,7 +16,7 @@ ht-degree: 3%
 
 Följ stegen nedan för att skapa ett erbjudande:
 
-1. Bläddra till **[!UICONTROL Campaigns]** och klicka på **[!UICONTROL Offers]** länk.
+1. Gå till **[!UICONTROL Campaigns]** och klicka på **[!UICONTROL Offers]** länk.
 
 1. Klicka på knappen **[!UICONTROL Create]**.
 
@@ -34,7 +34,7 @@ Nu kan du använda **[!UICONTROL Eligibility]** -flik för att definiera:
 * Filter för målpopulationen för erbjudandet. [Läs mer](#filters-on-the-target)
 * Erbjudandets vikt. [Läs mer](#offer-weight)
 
-### Giltighetsperiod för erbjudandet{#eligibility-period}
+### Giltighetsperiod för erbjudande{#eligibility-period}
 
 I **[!UICONTROL Eligibility]** under erbjudandet, definiera den period som erbjudandet gäller. Använd listrutorna för att välja ett start- och ett slutdatum i kalendern.
 
@@ -46,7 +46,7 @@ Utanför denna period kommer erbjudandet inte att väljas. Om du även har konfi
 
 I **[!UICONTROL Eligibility]** Lägg på filter på erbjudandemålet.
 
-Om du vill göra det klickar du på **[!UICONTROL Edit query]** och välj det filter som du vill använda.
+Klicka på **[!UICONTROL Edit query]** och välj det filter som du vill använda.
 
 ![](assets/offer_eligibility_create_003.png)
 
@@ -66,7 +66,7 @@ Ett erbjudande kan till exempel ha vikten A för kontakter mellan 18 och 25 år 
 >
 >Den tilldelade vikten kan ändras tillfälligt enligt parametrarna för den kategori som erbjudandet tillhör. [Läs mer](interaction-offer-catalog.md#creating-offer-categories)
 
-Så här skapar du en vikt i ett erbjudande:
+Gör så här för att skapa en vikt i ett erbjudande:
 
 1. I **[!UICONTROL Eligibility]** klicka på **[!UICONTROL Add]**.
 
@@ -118,8 +118,8 @@ Använd **[!UICONTROL Content]** för att definiera innehållet i erbjudandet.
 
    * **[!UICONTROL Title]** : Ange den titel som du vill ska visas i erbjudandet. Varning: detta avser inte erbjudandets etikett, som definieras i **[!UICONTROL General]** -fliken.
    * **[!UICONTROL Destination URL]** : ange erbjudandets URL. Det måste börja med&quot;http://&quot; eller&quot;https://&quot;.
-   * **[!UICONTROL Image URL]** : Ange en URL eller en åtkomstsökväg till bilden av erbjudandet.
-   * **[!UICONTROL HTML content]** / **[!UICONTROL Text content]** : Ange innehållet i erbjudandet på fliken som du vill ha. Om du vill generera spårning visas **[!UICONTROL HTML content]** måste bestå av HTML-element som kan omslutas av en `<div>` type-element. Resultatet av en `<table>` -elementet på HTML-sidan kommer att följas:
+   * **[!UICONTROL Image URL]** : ange en URL eller en åtkomstsökväg till bilden av ditt erbjudande.
+   * **[!UICONTROL HTML content]** / **[!UICONTROL Text content]** : Ange innehållet i erbjudandet på den flik du vill ha. Om du vill generera spårning visas **[!UICONTROL HTML content]** måste bestå av HTML-element som kan omslutas av en `<div>` type-element. Resultatet av en `<table>` -elementet på HTML-sidan kommer att följas:
 
    ```
       <div> 
@@ -136,11 +136,11 @@ Använd **[!UICONTROL Content]** för att definiera innehållet i erbjudandet.
       </div>
    ```
 
-   Lär dig hur du definierar accepterings-URL i [det här avsnittet](interaction-offer-spaces.md#configuring-the-status-when-the-proposition-is-accepted).
+   Lär dig hur du definierar accepterings-URL:en i [det här avsnittet](interaction-offer-spaces.md#configuring-the-status-when-the-proposition-is-accepted).
 
    ![](assets/offer_content_create_002.png)
 
-   Om du vill hitta de obligatoriska fälten som de definierades under konfigurationen av erbjudandeutrymmet klickar du på knappen **[!UICONTROL Content definitions]** för att visa listan. [Läs mer](interaction-offer-spaces.md)
+   Om du vill hitta de obligatoriska fälten som de definierades under konfigurationen av erbjudandeutrymmet klickar du på knappen **[!UICONTROL Content definitions]** länk för att visa listan. [Läs mer](interaction-offer-spaces.md)
 
    ![](assets/offer_content_create_003.png)
 
@@ -182,18 +182,18 @@ Creating hypotheses is detailed in [this page](../../campaign/using/about-respon
 
 Nu kan du godkänna och aktivera erbjudandet och göra det tillgängligt i **Live** miljö.
 
-![](../assets/do-not-localize/book.png) Mer information finns i [Campaign Classic v7-dokumentation](https://experienceleague.adobe.com/docs/campaign-classic/using/managing-offers/managing-an-offer-catalog/approving-and-activating-an-offer.html#approving-offer-content)
+![](../assets/do-not-localize/book.png) Mer information finns i [Campaign Classic v7 - dokumentation](https://experienceleague.adobe.com/docs/campaign-classic/using/managing-offers/managing-an-offer-catalog/approving-and-activating-an-offer.html#approving-offer-content)
 
 ## Hantera presentation av erbjudanden{#offer-presentation}
 
 Med Campaign kan ni styra flödet av erbjudandeförslag med hjälp av presentationsregler. Dessa regler, som är specifika för Campaign Interaction, är **typologiregler**. Med dem kan du utesluta erbjudanden baserat på historiken för de förslag som redan har lämnats till en mottagare. De refereras i miljön.
 
-![](../assets/do-not-localize/book.png) Mer information finns i [Campaign Classic v7-dokumentation](https://experienceleague.adobe.com/docs/campaign-classic/using/managing-offers/managing-an-offer-catalog/managing-offer-presentation.html#managing-offers)
+![](../assets/do-not-localize/book.png) Mer information finns i [Campaign Classic v7 - dokumentation](https://experienceleague.adobe.com/docs/campaign-classic/using/managing-offers/managing-an-offer-catalog/managing-offer-presentation.html#managing-offers)
 
-## Simulera erbjudanden
+## Simulering av erbjudanden
 
 The **Simulering** Med -modulen kan du testa fördelningen av erbjudanden som tillhör en kategori eller miljö innan du skickar ditt förslag till mottagarna.
 
 Simuleringen tar hänsyn till de kontexter och regler för behörighet som tidigare tillämpats på erbjudanden och deras presentationsregler. Detta gör att ni kan testa och förfina olika versioner av ert erbjudande utan att faktiskt använda ett erbjudande eller över/under beställning av ett mål, eftersom simuleringen inte har någon effekt på de avsedda mottagarna.
 
-![](../assets/do-not-localize/book.png) Mer information om erbjudandesimulering finns i [Campaign Classic v7-dokumentation](https://experienceleague.adobe.com/docs/campaign-classic/using/managing-offers/simulating-offers/about-offers-simulation.html)
+![](../assets/do-not-localize/book.png) Mer information om erbjudandesimulering finns i [Campaign Classic v7 - dokumentation](https://experienceleague.adobe.com/docs/campaign-classic/using/managing-offers/simulating-offers/about-offers-simulation.html)

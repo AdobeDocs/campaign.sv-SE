@@ -1,10 +1,11 @@
 ---
 product: campaign
 title: Skapa marknadsföringskampanjer
-description: Lär dig hur du skapar och genomför marknadsföringskampanjer
+description: Lär dig skapa och genomföra marknadsföringskampanjer
 feature: Campaigns, Cross Channel Orchestration, Programs
+role: User
 exl-id: 90dd2dad-1380-490e-b958-4a28a7d930ed
-source-git-commit: 290f4e9a0d13ef49caacb7a128ccc266bafd5e69
+source-git-commit: 567c2e84433caab708ddb9026dda6f9cb717d032
 workflow-type: tm+mt
 source-wordcount: '1298'
 ht-degree: 2%
@@ -13,7 +14,7 @@ ht-degree: 2%
 
 # Skapa program och kampanjer{#create-programs-and-campaigns}
 
-Kampanjsamordning finns i **[!UICONTROL Campaigns]** tab: här kan du se en översikt över marknadsföringsprogram och -kampanjer och deras associerade element.
+Kampanjkoordinatkomponenter finns i **[!UICONTROL Campaigns]** här kan du se en översikt över marknadsföringsprogram och -kampanjer och deras associerade element.
 
 Ett marknadsföringsprogram består av kampanjer, som består av leveranser, resurser osv. All information om leveranser, budgetar, granskare och länkade dokument grupperas i kampanjen.
 
@@ -29,7 +30,7 @@ Varje kampanj tillhör ett program som tillhör en plan. Alla planer, program oc
 
 Konfigurera mapphierarkin för marknadsföringsplaner och program innan du börjar bygga kampanjer och leveranser.
 
-1. Klicka på **Utforskaren** på startsidan.
+1. Klicka på **Explorer** på startsidan.
 1. Högerklicka på den mapp där du vill skapa din plan.
 1. Välj **Lägg till ny mapp > Campaign Management > Plan**.
 
@@ -55,9 +56,9 @@ När du redigerar ett program använder du flikarna nedan för att bläddra och 
 
 * The **Schema** -fliken visar kalendern för program för en månad, vecka eller dag beroende på vilken flik du klickar på i kalenderrubriken. Du kan skapa en kampanj, ett program eller en uppgift från den här sidan. [Läs mer](#campaign-calendar)
 
-* The **Redigera** -fliken gör att du kan anpassa programmet: namn, start- och slutdatum, budget, länkade dokument osv.
+* The **Redigera** kan du anpassa programmet: namn, start- och slutdatum, budget, länkade dokument osv.
 
-   ![](assets/new-program-edit-tab.png)
+  ![](assets/new-program-edit-tab.png)
 
 ## Arbeta med kampanjer{#work-with-campaigns}
 
@@ -73,12 +74,12 @@ Kampanjer kan också skapas via kampanj- eller programkalendern. [Läs mer](#cam
 
 Välj kampanjmallen och lägg till ett namn och en beskrivning av kampanjen i fönstret där kampanjen skapades. Du kan också ange kampanjens start- och slutdatum.
 
-Klicka **[!UICONTROL OK]** för att skapa kampanjen. Den läggs till i programschemat och i listan över kampanjer.
+Klicka **[!UICONTROL OK]** för att skapa kampanjen. Det läggs till i programschemat och i listan över kampanjer.
 
-Sedan kan du redigera kampanjen som du just har skapat och definiera dess parametrar. Så här öppnar och konfigurerar du kampanjen:
+Sedan kan du redigera kampanjen som du just har skapat och definiera dess parametrar. Om du vill öppna och konfigurera kampanjen kan du:
 
 1. Bläddra i kampanjkalendern och välj den kampanj som du vill visa. Klicka sedan på **[!UICONTROL Open]** länk.
-1. Bläddra i **[!UICONTROL Schedule]** väljer du kampanjen och öppnar den.
+1. Sök i **[!UICONTROL Schedule]** väljer du kampanjen och öppnar den.
 1. Bläddra i listan över kampanjer och klicka på namnet på kampanjen som ska redigeras.
 
 Alla dessa åtgärder tar dig till kontrollpanelen för kampanjer.
@@ -101,10 +102,10 @@ Kampanjer skapas via kampanjmallar. Du kan konfigurera återanvändbara mallar f
 För varje kampanj finns följande funktioner:
 
 * Referensdokument och resurser: du kan associera dokument med kampanjen (i korthet, rapport, bilder osv.). Alla dokumentformat stöds. [Läs mer](marketing-campaign-deliveries.md#manage-associated-documents).
-* Definiera kostnader: För varje kampanj kan Adobe Campaign definiera kostnadsposter och kostnadsberäkningsstrukturer som kan användas när marknadsföringskampanjen skapas. Till exempel: tryckkostnader, användning av en extern byrå, hyra av rum osv. [Läs mer](providers--stocks-and-budgets.md#defining-cost-categories).
-* Definiera mål: kan ni definiera kvantifierbara mål för en kampanj, t.ex. antal prenumeranter, affärsvolym osv. Den här informationen används senare i kampanjrapporter.
+* Definiera kostnader: För varje kampanj kan Adobe Campaign definiera kostnadsposter och kostnadsberäkningsstrukturer som kan användas när marknadsföringskampanjen skapas. Exempel: tryckkostnader, användning av en extern byrå, rumshyrning osv. [Läs mer](providers--stocks-and-budgets.md#defining-cost-categories).
+* Definiera mål: du kan definiera kvantifierbara mål för en kampanj, t.ex. antal prenumeranter, affärsvolym osv. Den här informationen används senare i kampanjrapporter.
 * Hantera dirigerade adresser och kontrollgrupper. [Läs mer](marketing-campaign-deliveries.md#defining-a-control-group).
-* Hantera godkännanden: Du kan välja vilka behandlingar som ska godkännas och vid behov välja granskningsoperatorer eller grupper av operatorer. [Läs mer](marketing-campaign-approval.md#checking-and-approving-deliveries).
+* Hantera godkännanden: du kan välja de behandlingar som ska godkännas och, om det behövs, välja granskningsoperatorer eller grupper av operatorer. [Läs mer](marketing-campaign-approval.md#checking-and-approving-deliveries).
 
 >[!NOTE]
 >
@@ -114,13 +115,13 @@ För varje kampanj finns följande funktioner:
 
 För varje kampanj finns jobb, resurser och leveranser centralt på kontrollpanelen. Med det här gränssnittet kan ni hantera och samordna marknadsföringsåtgärder.
 
-Med Adobe Campaign kan ni skapa samarbetsprocesser för framtagning och godkännande av de olika stegen i era kampanjer: godkännande av budget, mål, innehåll osv. Den här orkestrationen beskrivs i [det här avsnittet](marketing-campaign-approval.md).
+Med Adobe Campaign kan ni skapa samarbetsprocesser för att skapa och godkänna de olika stegen i era kampanjer: godkännande av budget, mål, innehåll osv. Den här orkestrationen beskrivs i [det här avsnittet](marketing-campaign-approval.md).
 
 ![](assets/campaigns-dashboard-approval-tab.png)
 
 >[!NOTE]
 >
->Vilka komponenter som är tillgängliga i en kampanj beror på dess mall. Konfigurationen av kampanjmallen presenteras i [det här avsnittet](marketing-campaign-templates.md#campaign-templates).
+>Vilka komponenter som är tillgängliga i en kampanj beror på dess mall. Kampanjmallskonfigurationen presenteras i [det här avsnittet](marketing-campaign-templates.md#campaign-templates).
 
 När kampanjen är klar använder du **[!UICONTROL Reports]** länk för att komma åt kampanjrapporterna.
 
@@ -134,7 +135,7 @@ Om du vill redigera en plan, ett program, en kampanj eller en leverans bläddrar
 
 ![](assets/campaign-calendar.png)
 
-Du kan filtrera den information som visas i kampanjkalendern. Om du vill göra det klickar du på **[!UICONTROL Filter]** och välj filtervillkor.
+Du kan filtrera den information som visas i kampanjkalendern. Klicka på **[!UICONTROL Filter]** och välj filtreringsvillkor.
 
 ![](assets/campaign_planning_filter.png)
 
@@ -144,7 +145,7 @@ Du kan filtrera den information som visas i kampanjkalendern. Om du vill göra d
 
 Du kan också använda **[!UICONTROL Search]** för att filtrera de visade objekten.
 
-Med ikonerna som är länkade till varje objekt kan du visa objektets status: klart, pågående, redigeras osv.
+Med ikonerna som är länkade till varje objekt kan du visa objektets status: färdig, pågående, redigerad osv.
 
 Om du vill filtrera kampanjer som ska visas klickar du på **[!UICONTROL Filter]** och välj status för de kampanjer som ska visas.
 
@@ -188,7 +189,7 @@ I tabellen sammanfattas de åtgärder du kan vidta i kampanjer från en webbläs
 | Kampanjpaket | Skicka ett paket för godkännande<br/>Godkänn eller avvisa ett paket<br/>Avbryt ett paket |
 | Kampanjorder | Skapa en order<br/>Acceptera eller avvisa en order |
 | Stock | Ta bort en aktierad |
-| Simulera erbjudanden | Starta och stoppa en simulering |
+| Simulering av erbjudanden | Starta och stoppa en simulering |
 | Målarbetsflöde | Starta, pausa och stoppa ett arbetsflöde |
 | Rapportera | Spara aktuella data i rapporthistoriken |
 | Forum | Lägg till en diskussion<br/>Svara på ett meddelande i en diskussion<br/>Följ en diskussion och avsluta prenumerationen på den |
@@ -202,7 +203,7 @@ Godkännanden av ett mål eller ett leveransinnehåll kan göras via webbåtkoms
 Du kan också använda länken i meddelandena. Mer information om detta finns i [det här avsnittet](marketing-campaign-approval.md#checking-and-approving-deliveries).
 
 
-## Videokurs {#video}
+## Självstudievideo {#video}
 
 Den här videon visar hur du skapar en marknadsföringsplan, ett program och en kampanj.
 

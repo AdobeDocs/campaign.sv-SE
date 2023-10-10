@@ -1,9 +1,10 @@
 ---
 product: campaign
 title: Presentera ett erbjudande (inkommande interaktion)
-description: Lär dig presentera det bästa erbjudandet med Campaign Interaction-modulen
+description: Lär dig presentera det bästa erbjudandet med Campaign Interaction Module
+role: User, Admin
 exl-id: d0137fa7-3d04-4205-b49c-46973e45a5b8
-source-git-commit: 65f4da979f0c5884797af0c3a835d948672b4a7c
+source-git-commit: 567c2e84433caab708ddb9026dda6f9cb717d032
 workflow-type: tm+mt
 source-wordcount: '198'
 ht-degree: 4%
@@ -18,7 +19,7 @@ Erbjudandena kan presenteras på olika platser med [en inkommande eller utgåend
 
 För att ett erbjudande ska kunna väljas ut av erbjudandemotorn måste det godkännas och vara tillgängligt i en live-miljö.
 
-![](../assets/do-not-localize/book.png) Mer information finns i [Campaign Classic v7-dokumentation](https://experienceleague.adobe.com/docs/campaign-classic/using/managing-offers/managing-an-offer-catalog/approving-and-activating-an-offer.html#approving-offer-content)
+![](../assets/do-not-localize/book.png) Mer information finns i [Campaign Classic v7 - dokumentation](https://experienceleague.adobe.com/docs/campaign-classic/using/managing-offers/managing-an-offer-catalog/approving-and-activating-an-offer.html#approving-offer-content)
 
 I kontexten för en inkommande kontakt kan användaren som bläddrar på sidan identifieras av webbplatsen eller inte. Erbjudandemotorn erbjuder olika erbjudanden för identifierade profiler och för anonyma profiler.
 

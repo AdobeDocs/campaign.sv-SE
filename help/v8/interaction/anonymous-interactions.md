@@ -2,8 +2,9 @@
 product: campaign
 title: Presentera erbjudanden för anonyma profiler (inkommande interaktion)
 description: Lär dig presentera erbjudanden för anonyma profiler
+role: User, Admin
 exl-id: b7a04360-f8c6-4c69-9594-2b44d3f819b7
-source-git-commit: 6de5c93453ffa7761cf185dcbb9f1210abd26a0c
+source-git-commit: 567c2e84433caab708ddb9026dda6f9cb717d032
 workflow-type: tm+mt
 source-wordcount: '397'
 ht-degree: 0%
@@ -20,7 +21,7 @@ När du skapar en anonym miljö via guiden för att skapa mappningar **[!UICONTR
 
 The **[!UICONTROL Targeting dimension]** slutförs automatiskt. Som standard länkas den till besökstabellen.
 
-The **[!UICONTROL Visitor folder]** visas. Det fylls automatiskt i för att länka till **[!UICONTROL Visitors]** mapp. I det här fältet kan du välja var besökarprofiler ska sparas.
+The **[!UICONTROL Visitor folder]** visas. Det görs automatiskt för att länka till **[!UICONTROL Visitors]** mapp. I det här fältet kan du välja var besökarprofiler ska sparas.
 
 ![](assets/anonymous_environment_option.png)
 
@@ -40,7 +41,7 @@ Anonyma besökare kan bli föremål för en process för identifiering av cookie
 
 Under det här steget görs en jämförelse mellan de data som har återställts av cookies och de i din databas. I vissa fall identifieras besökare (de identifieras sedan implicit), i andra fall identifieras de inte (och förblir därför anonyma).
 
-Om du vill köra den här analysen kontrollerar du **[!UICONTROL Implicitly identify the individual based on their browser history]** alternativ.
+Om du vill köra den här analysen kan du kontrollera erbjudandeutrymmet i **[!UICONTROL Implicitly identify the individual based on their browser history]** alternativ.
 
 ![](assets/identification_anonymous_visitors.png)
 

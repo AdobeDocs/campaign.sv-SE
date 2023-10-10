@@ -1,11 +1,11 @@
 ---
 title: Kampanjinteraktion - Erbjudandehantering
-description: Kom igång med erbjudandehantering
+description: Kom igång med Erbjudandehantering
 feature: Interaction, Offers
-role: Data Engineer
+role: User, Admin
 level: Beginner
 exl-id: 4da3e69a-6230-4c94-a6f1-4e8c01e854ba
-source-git-commit: 8eb92dd1cacc321fc79ac4480a791690fc18511c
+source-git-commit: 567c2e84433caab708ddb9026dda6f9cb717d032
 workflow-type: tm+mt
 source-wordcount: '1608'
 ht-degree: 1%
@@ -28,7 +28,7 @@ Den här kontakten leder till ett anrop till erbjudandemotorn. (1)
 
 När anropet till erbjudandemotorn sker väljs ett eller flera erbjudanden från erbjudandekatalogen beroende på antalet erbjudandeinställningar i erbjudandet. (2)
 
-Därefter tillämpas reglerna för behörighet: de bästa erbjudandena väljs ut baserat på berättiganderegler, start- och slutdatum för erbjudanden, profildata och kundens realtidsbeteende. (3)
+Därefter tillämpas regler för behörighet: de bästa erbjudandena väljs ut baserat på berättigandereglerna, start- och slutdatumen för erbjudanden, profildata och kundens realtidsbeteende. (3)
 
 Profilens förslagshistorik uppdateras när valet är gjort för att undvika dubbletter av erbjudandena som presenteras. (4)
 
@@ -59,6 +59,7 @@ Om utrymmet definieras av en enhetskanal i identifierat läge måste du ange de 
    >[!NOTE]
    >
    >När ett erbjudandeutrymme skapas på den inkommande webbkanalen måste du konfigurera webbplatsen så att erbjudandet visas.
+   >
 
 ### Skapa och publicera erbjudandekatalogen {#managing-the-offer-catalog-}
 
@@ -70,7 +71,7 @@ Som en **Erbjudandehanterare** du måste:
 
 ### Använd erbjudandekatalogen {#using-the-offer-catalog-}
 
-Som **Delivery manager**  du måste:
+Som en **Delivery manager**  du måste:
 
 1. Skapa en kampanj.
 1. Referera ett erbjudande i kampanjen eller leveransen. [Läs mer](interaction-send-offers.md).
@@ -79,68 +80,68 @@ Som **Delivery manager**  du måste:
 
 Upptäck erbjudandespecifika villkor och tillhörande vägledning innan du börjar.
 
-* **Miljö**: som innehåller en erbjudandekatalog och krokar (erbjudandeplatser). Skapa en miljö genom att rikta in er på olika aspekter. Det finns två typer av miljöer:
+* **Miljö**: set som innehåller en erbjudandekatalog och kopplingar (erbjudandemellanslag). Skapa en miljö genom att rikta in er på olika aspekter. Det finns två typer av miljöer:
 
-   * **Designmiljö**: miljö där erbjudanden skapas och/eller typologiregler definieras (regler som avgör vilka erbjudanden som ska presenteras eller inte visas för en målperson). Tabellen över de individer som ska omfattas av erbjudandena och tabellen för lagring av alla erbjudandeförslag definieras också här. The **[!UICONTROL Design environment]** noden innehåller utrymmesundermappar, fördefinierade filter och kategorier för erbjudanden. För varje **[!UICONTROL Design environment]** det finns en motsvarande skrivskyddad **[!UICONTROL Live environment]** som genereras från samma **[!UICONTROL Design environment]**.
+   * **Designmiljö**: miljö där erbjudanden skapas och/eller typologiregler definieras (regler som avgör vilka erbjudanden som ska presenteras eller inte presenteras för en målperson). Tabellen över de individer som ska omfattas av erbjudandena och tabellen för lagring av alla erbjudandeförslag definieras också här. The **[!UICONTROL Design environment]** noden innehåller utrymmesundermappar, fördefinierade filter och kategorier för erbjudanden. För varje **[!UICONTROL Design environment]** det finns en motsvarande skrivskyddad **[!UICONTROL Live environment]** som genereras från samma **[!UICONTROL Design environment]**.
    * **Live-miljö**: miljö länkad till en **[!UICONTROL Design environment]**. Den innehåller skrivskyddade erbjudanden vars innehåll och behörighet har godkänts via **[!UICONTROL Design environment]**. De kan visas på en webbplats eller infogas i ett meddelande.
 
 * **Utrymme**: mapp som definierar platsen där erbjudandet visas. När du definierar ett mellanrum kan du:
    * markera kanalen
-   * välj att den kan användas i enskärmsläge (som standard: endast i gruppläge)
+   * välja att den kan användas i enställningsläge (som standard: endast i gruppläge)
    * bygga innehållet i erbjudandet med hjälp av återgivningsfunktioner
    * ange vilka erbjudanden som ska visas
 
-   Ett blanksteg är ett gränssnitt mellan kanalen och erbjudandemotorn.
+  Ett blanksteg är ett gränssnitt mellan kanalen och erbjudandemotorn.
 
-   >[!CAUTION]
-   >
-   >Ett erbjudandeutrymme är inte en kommunikationskanal, det sammanfaller med en specifik exponeringsplats i kanalen. Erbjudanden som visas på en webbplats kan till exempel innehålla två mellanslag på samma sida. I det här fallet har du två mellanslag för samma kanal.
-   >
-   >Blanksteg måste definieras i specifikationerna och får inte ändras under projektet.
+  >[!CAUTION]
+  >
+  >Ett erbjudandeutrymme är inte en kommunikationskanal, det sammanfaller med en specifik exponeringsplats i kanalen. Erbjudanden som visas på en webbplats kan till exempel innehålla två mellanslag på samma sida. I det här fallet har du två mellanslag för samma kanal.
+  >
+  >Blanksteg måste definieras i specifikationerna och får inte ändras under projektet.
 
 * **Erbjudandekatalog**: en uppsättning erbjudanden som definieras i Adobe Campaign och som kan väljas under en interaktion. Katalogen ordnas hierarkiskt med varje nod som motsvarar en kategori.
-* **Kategori**: en mapp som är länkad till erbjudandekatalogen i en miljö, där erbjudandena ordnas baserat på typ, datum för behörighet och programtema. En kategori kan innehålla underkategorier, som ärver alla egenskaper i den överordnade kategorin. Kvalifikationsregler kan definieras för en kategori så att de kan delas för flera erbjudanden.
+* **Kategori**: en mapp som är länkad till erbjudandekatalogen i en miljö, där erbjudandena ordnas baserat på typ, berättigandedatum och programtema. En kategori kan innehålla underkategorier, som ärver alla egenskaper i den överordnade kategorin. Kvalifikationsregler kan definieras för en kategori så att de kan delas för flera erbjudanden.
 * **Programteman**: nyckelord som definieras i kategorin, vilket gör att du kan filtrera erbjudanden när de presenteras för en inkommande eller utgående kanal genom att begränsa urvalet av erbjudanden till en eller två kategorier.
 
-   >[!NOTE]
-   >
-   >Underordnade kategorier ärver de teman som identifieras i den överordnade kategorin.
+  >[!NOTE]
+  >
+  >Underordnade kategorier ärver de teman som identifieras i den överordnade kategorin.
 
-* **Villkor**: Begränsningar som tillämpas på en miljö, kategori eller erbjudande som avser giltighetsperiod, mål och vikt. Med dem kan ni se till att ett erbjudande är i linje med den avsedda kontakten.
+* **Villkor för deltagande**: Begränsningar som gäller för en miljö, kategori eller erbjudande som avser giltighetsperiod, mål och vikt. De gör att ni kan försäkra er om att ett erbjudande är i linje med den avsedda kontakten.
 
-   I miljöerna omfattar reglerna för rätt till uppgradering presentationsregler som tillämpas på erbjudandena och vilka personer som ska målgruppsanpassas.
+  I miljöerna omfattar reglerna för rätt till uppgradering presentationsregler som gäller för erbjudandena och de personer som ska väljas ut.
 
-   I kategorierna kan du göra följande: begränsa kategoriens giltighet i tid, definiera programteman och avgöra vilka personer som ska målgruppsanpassas. De kan också få en multiplikatvikt för en viss tid. På så sätt kan du dela reglerna för erbjudanden i andra kategorier och på så sätt förenkla hanteringen av dem.
+  I kategorierna kan du med reglerna för behörighet: begränsa kategoriens giltighet i tid, definiera programteman och bestämma vilka personer som ska målgruppsanpassas. De kan också få en multiplikatvikt för en viss tid. På så sätt kan du dela reglerna för erbjudanden i andra kategorier och på så sätt förenkla hanteringen av dem.
 
-   I erbjudandena kan ni begränsa giltigheten för erbjudanden i tid och avgöra vilka personer som ska målgruppsanpassas.
+  I erbjudandena kan ni begränsa giltigheten för erbjudanden i tid och avgöra vilka personer som ska väljas ut.
 
-* **Godtycke**: välja erbjudanden att visa i en miljö (berättigade erbjudanden). Principen om arbitrage rangordnar erbjudanden efter prioritet enligt de kriterier som definieras i kategorierna, erbjudandena och sammanhangserbjudandena.
+* **Godtycke**: välja erbjudanden som ska visas i en miljö (berättigade erbjudanden). Principen om arbitrage rangordnar erbjudanden efter prioritet enligt de kriterier som definieras i kategorierna, erbjudandena och sammanhangserbjudandena.
 * **Kontakt**: en kontakt från en inkommande interaktion. Under motorsamtalsbearbetningen är kontakten kopplad till en måldimension. Det finns två typer av kontakter:
 
    * **[!UICONTROL Identified contact]** : en kontakt som frivilligt har identifierats i kanalen. Vid utgående interaktioner identifieras kontakten automatiskt.
    * **[!UICONTROL Anonymous contact]** : en kontakt som inte frivilligt har prenumererat via kanalen men som kan identifieras implicit via en cookie. Den här terminologin används bara för inkommande interaktioner.
 
-      >[!NOTE]
-      >
-      >Ej identifierade anonyma kontakter tillskrivs besökarens målgruppsdimension.
+     >[!NOTE]
+     >
+     >Ej identifierade anonyma kontakter tillskrivs besökarens målgruppsdimension.
 
-* **Utgående interaktion**: ringa till erbjudandemotorn från en kontaktlista (används för att leverera e-post, direktreklam osv.). Samma regler och processer tillämpas för varje kontakt. Den här typen av interaktion bearbetas vanligtvis i gruppläge.
+* **Utgående interaktion**: anrop till erbjudandemotorn från en kontaktlista (används för att leverera e-post, direktreklam osv.). Samma regler och processer tillämpas för varje kontakt. Den här typen av interaktion bearbetas vanligtvis i gruppläge.
 * **Inkommande interaktion**: interaktion efter ett inkommande samtal som genererats av åtgärden för en kontakt i kanalen. Den här typen av interaktion bearbetas vanligtvis i enskärmsläge.
-* **Batchläge**: I gruppläge kan du välja det bästa erbjudandet för en uppsättning kontakter. Reglerna för behörighet/prioritering tillämpas på alla kontakter i uppsättningen. Det här läget används vanligtvis för utgående interaktioner.
-* **Enhetsläge**: en enda kontakt bearbetas åt gången. Det här läget används vanligtvis för inkommande interaktioner och transaktionsmeddelanden.
-* **Identifieringsläge**: avser en kontakts status:
+* **Batchläge**: i gruppläge kan du välja det bästa erbjudandet för en uppsättning kontakter. Reglerna för behörighet/prioritering tillämpas på alla kontakter i uppsättningen. Det här läget används vanligtvis för utgående interaktioner.
+* **Enhetsläge**: en enskild kontakt bearbetas i taget. Det här läget används vanligtvis för inkommande interaktioner och transaktionsmeddelanden.
+* **Identifieringsläge**: hänvisar till en kontakts status:
 
-   * **[!UICONTROL explicit]** : Kontakterna identifieras genom deras inloggning i kanalgränssnittet.
-   * **[!UICONTROL implicit]** : Kontakten identifieras av en cookie (permanent eller session). Den kan behandlas som en anonym eller identifierad kontakt.
+   * **[!UICONTROL explicit]** : kontakter identifieras genom deras inloggning i kanalgränssnittet.
+   * **[!UICONTROL implicit]** : kontakten identifieras av en cookie (permanent eller session). Den kan behandlas som en anonym eller identifierad kontakt.
    * **[!UICONTROL anonymous]** : kontakter kan inte identifieras.
 
-* **Berättigat erbjudande**: erbjudandet uppfyller de krav som definieras uppströms och som konsekvent kan erbjudas ett mål.
-* **Presentationsregler**: typologiregler som refereras i erbjudandemiljön, som gör att du kan exkludera vissa erbjudanden genom att ta hänsyn till offerthistoriken.
-* **Bredd**: formler som gör det möjligt att exakt beräkna hur relevant ett erbjudande är för att välja det mest relevanta erbjudandet. Vikten definieras i erbjudandena. Berättigade erbjudanden beaktas i minskande viktordning.
-* **Återgivningsfunktion**: funktionen som definieras i erbjudandeutrymmet för att konstruera sin offertrepresentation utifrån de attribut som definieras i erbjudandet. Det finns tre olika återgivningsfunktionslägen: HTML, XML och text.
-* **Erbjudandeförslag**: resultatet av åtgärden som består av att presentera ett eller flera erbjudanden för en kontakt i ett visst utrymme (banderoll på en webbplats, ett e-postmeddelande eller ett SMS-meddelande). Det här resultatet lagras i tabellen för erbjudandeförslag. Det är dock inte obligatoriskt att spara förslagen.
-* **Simulering**: som gör att du kan testa hur erbjudandet visas för målmottagarna innan du skickar erbjudandena.
-* **Förhandsgranska**: förhandsgranskning av erbjudandet så som det visas i dess mapp. Den är tillgänglig från inställningsfönstret för erbjudandet eller kontaktprofilen.
+* **Berättigat erbjudande**: erbjudandet uppfyller de definierade begränsningarna uppströms som konsekvent kan erbjudas ett mål.
+* **Presentationsregler**: typologiregler som refereras i erbjudandemiljön, som gör att du kan exkludera vissa erbjudanden genom att ta hänsyn till förslagshistoriken.
+* **Bredd**: formler som gör det möjligt att exakt beräkna relevansen för ett erbjudande och välja det mest relevanta erbjudandet. Vikten definieras i erbjudandena. Berättigade erbjudanden beaktas i minskande viktordning.
+* **Återgivningsfunktion**: funktion som definieras i erbjudandeutrymmet för att konstruera sin offertrepresentation utifrån de attribut som definieras i erbjudandet. Det finns tre olika återgivningsfunktionslägen: HTML, XML och text.
+* **Erbjudandeförslag**: resultatet av åtgärden som består av att presentera ett eller flera erbjudanden för en kontakt i ett visst utrymme (banderoll på en webbplats, ett e-postmeddelande eller ett SMS-meddelande till exempel). Det här resultatet lagras i tabellen för erbjudandeförslag. Det är dock inte obligatoriskt att spara förslagen.
+* **Simulering**: , vilket gör att du kan testa hur erbjudandet visas för målmottagarna innan du skickar erbjudandena.
+* **Förhandsgranska**: förhandsgranskning av erbjudandet så som det visas i sin mapp. Den är tillgänglig från inställningsfönstret för erbjudandet eller kontaktprofilen.
 * **fördefinierade filter**: fördefinierade filtreringsregler kan ta hänsyn till erbjudandeparametrar (till exempel en erbjudandekod). De kan återanvändas efter att erbjudandena har skapats.
 * **Erbjudanderepresentation**: information som används av kanalen för att visa erbjudandet. Erbjudanderepresentationen kan utformas med hjälp av återgivningsfunktionen i det utrymme som erbjudandet avser eller anges direkt i gränssnittet (t.ex. i blocket HTML). Ett erbjudande kan representeras av space.
-* **Övergångsprocess**: en aktiverad process i en identifierad miljö som ansvarar för att dirigera anropet till en anonym miljö om kontakten inte uttryckligen och/eller implicit har identifierats.
+* **Övergångsprocess**: en aktiverad process i en identifierad miljö, som ansvarar för att dirigera anropet till en anonym miljö om kontakten inte uttryckligen och/eller implicit har identifierats.

@@ -3,8 +3,9 @@ product: campaign
 title: Skärningspunkt
 description: Skärningspunkt
 feature: Workflows, Targeting Activity
+role: User
 exl-id: 12777107-5ccc-4f19-9dcd-8f6cade3ee98
-source-git-commit: 77ec01aaba1e50676bed57f503a9e4e8bb1fe54c
+source-git-commit: 567c2e84433caab708ddb9026dda6f9cb717d032
 workflow-type: tm+mt
 source-wordcount: '398'
 ht-degree: 0%
@@ -17,7 +18,7 @@ ht-degree: 0%
 
 An **Skärningspunkt** Aktivitet av typen -typ skapar ett mål från skärningspunkten för de mottagna målen.
 
-Med en skärningspunkt kan du bara extrahera den population som är gemensam för alla inkommande aktivitetsresultat. Målet skapas med alla mottagna resultat: Alla tidigare aktiviteter måste därför avslutas innan skärningen kan utföras. Om du vill konfigurera den här aktiviteten måste du ange en etikett för den samt alternativ för resultatet.
+Med en skärningspunkt kan du bara extrahera den population som är gemensam för alla inkommande aktivitetsresultat. Målet skapas med alla mottagna resultat: alla tidigare aktiviteter måste därför avslutas innan skärningspunkten kan utföras. Om du vill konfigurera den här aktiviteten måste du ange en etikett för den samt alternativ för resultatet.
 
 ![](assets/s_user_segmentation_inter.png)
 
@@ -33,7 +34,7 @@ I följande exempel är syftet med skärningen att beräkna mottagarna som är g
 
 1. Efter tre enkla frågor infogar du en **[!UICONTROL Intersection]** -type-aktivitet.
 
-   I detta exempel sökningarna avser män, mottagare i Paris och mottagare mellan 18 och 30 år.
+   I det här exemplet är frågorna avsedda för män, mottagare i Paris och mottagare mellan 18 och 30 år.
 
 1. Konfigurera skärningspunkten. Om du vill göra det väljer du **[!UICONTROL Keys only]** avstämningsmetod eftersom populationerna som är ett resultat av frågorna innehåller konsekventa data.
 1. Om du har angett ytterligare data för frågorna kan du välja att behålla endast de som är delade av mottagarna genom att markera den relevanta rutan.

@@ -3,8 +3,9 @@ product: campaign
 title: Campaign
 description: Campaign
 feature: Workflows
+role: User, Admin
 topic-tags: technical-workflows
-source-git-commit: 6464e1121b907f44db9c0c3add28b54486ecf834
+source-git-commit: 567c2e84433caab708ddb9026dda6f9cb717d032
 workflow-type: tm+mt
 source-wordcount: '155'
 ht-degree: 3%
@@ -33,7 +34,7 @@ Arbetsflödena nedan installeras tillsammans med **Campaign** som standard.
    <td> Det här arbetsflödet startar beräkningen av utgifts- och kostnadsrader för budgetar, planer, program, kampanjer, leveranser och uppgifter.<br /> </td> 
   </tr> 
   <tr> 
-   <td> <span class="uicontrol">Stock: Beställningar och varningar</span> <br /> </td> 
+   <td> <span class="uicontrol">Stock: Beställningar och larm</span> <br /> </td> 
    <td> <span class="uicontrol">stockMgt</span> <br /> </td> 
    <td> Det här arbetsflödet startar lagerberäkning på orderraderna och hanterar varningsaviseringströsklar.<br /> </td> 
   </tr> 

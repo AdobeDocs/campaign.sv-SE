@@ -3,8 +3,9 @@ product: campaign
 title: Leverantörer, lager och budgetar
 description: Leverantörer, lager och budgetar
 feature: Budget Management, Campaigns
+role: User
 exl-id: 1d4a98e6-af11-4645-864e-29aa5766d9d8
-source-git-commit: 50688c051b9d8de2b642384963ac1c685c0c33ee
+source-git-commit: 567c2e84433caab708ddb9026dda6f9cb717d032
 workflow-type: tm+mt
 source-wordcount: '1816'
 ht-degree: 1%
@@ -23,7 +24,7 @@ Tjänsteleverantörer är konfigurerade i **[!UICONTROL Administration > Campaig
 
 De jobb som utförs under leveranser utförs av tjänsteleverantörer, särskilt för direktreklam och mobila kanaler. Dessa tjänsteleverantörer kan till exempel vara inblandade i utskrift eller distribution av meddelanden. Dessa jobb omfattar konfigurationer och kostnader som är specifika för varje tjänsteleverantör. Tjänsteleverantörernas konfiguration omfattar fyra steg:
 
-1. Skapande av en tjänsteleverantör i Adobe Campaign. [Läs mer](#add-a-service-provider)
+1. Skapa en tjänsteleverantör i Adobe Campaign. [Läs mer](#add-a-service-provider)
 
 1. Definiera kostnadskategorier och strukturer för tillhörande tjänstmallar. [Läs mer](#define-cost-categories)
 
@@ -50,13 +51,13 @@ Du kan nu associera tjänstmallar med varje tjänsteleverantör. I dessa mallar 
 
 En kostnadskategori är en enhet som innehåller en uppsättning kostnader som berättigar till en viss typ av leverans (e-post, direktreklam, SMS osv.). Kostnadskategorierna grupperas i mallar för tjänster som är kopplade till tjänsteleverantörerna. Varje tjänsteleverantör kan referera till en eller flera tjänstmallar.
 
-Så här skapar du en tjänstmall och definierar dess innehåll:
+Följ stegen nedan för att skapa en tjänstmall och definiera dess innehåll:
 
 1. I **[!UICONTROL Services]** klickar du på **[!UICONTROL Add]** och ange namnet på tjänstmallen.
 
    ![](assets/supplier-new-template.png)
 
-1. Skapa kostnadskategorier för varje typ av process (direktreklam/e-post/etc.). eller uppgift). Om du vill göra det klickar du på **[!UICONTROL Cost categories]** och sedan **[!UICONTROL Add]** och ange parametrarna för varje kostnadskategori.
+1. Skapa kostnadskategorier för varje typ av process (direktreklam/e-post/etc.). eller uppgift). Klicka på **[!UICONTROL Cost categories]** -fliken och sedan **[!UICONTROL Add]** och ange parametrarna för varje kostnadskategori.
 
    ![](assets/add-cost-categories.png)
 
@@ -64,9 +65,9 @@ Så här skapar du en tjänstmall och definierar dess innehåll:
    * Klicka på **[!UICONTROL Add]** för att definiera de typer av kostnader som är kopplade till den här kategorin.
    * Vid behov skall en lagerlinje kopplas till varje typ av kostnad så att de använda kvantiteterna automatiskt kopplas till de befintliga lagren.
 
-      >[!NOTE]
-      >
-      >Lagerraderna definieras i **[!UICONTROL Stock management]** nod. [Läs mer](#stock-and-order-management).
+     >[!NOTE]
+     >
+     >Lagerraderna definieras i **[!UICONTROL Stock management]** nod. [Läs mer](#stock-and-order-management).
 
 1. Du kan förvälja ett värde för den här kostnadskategorin, som är standard i tjänsteleverantörens kostnadskategorier (i stället för ett tomt värde). Aktivera **Ja** i **[!UICONTROL Selected]** Kolumn för den berörda kategorin:
 
@@ -84,15 +85,15 @@ Klicka på **[!UICONTROL Cost structure]** för att konfigurera kostnadsberäkni
 
 * Om du vill skapa kostnadsstrukturen väljer du typ av meddelande och den berörda kostnadskategorin i listrutorna samt den typ av kostnad som beräkningsregeln ska gälla för. Innehållet i listrutorna kommer från den information som anges via **[!UICONTROL Cost categories]** -fliken.
 
-   Du måste tilldela en etikett till kostnadsstrukturen. Som standard har den följande leveransdisposition: **Kostnadskategori - typ av kostnad**.
+  Du måste tilldela en etikett till kostnadsstrukturen. Som standard har den följande leveransdisposition: **Kostnadskategori - typ av kostnad**.
 
-   Du kan dock byta namn på den: ange det önskade värdet direkt i dialogrutan **[!UICONTROL Label]** fält.
+  Du kan ändra namnet: ange det önskade värdet direkt i dialogrutan **[!UICONTROL Label]** fält.
 
 * Kostnadsberäkningsformeln definieras i fönstrets nedre del.
 
-   Den här formeln kan vara fast (för valfritt antal meddelanden) eller beräknas utifrån antalet meddelanden.
+  Den här formeln kan vara fast (för valfritt antal meddelanden) eller beräknas utifrån antalet meddelanden.
 
-   När det beror på antalet meddelanden kan kostnadsberäkningsstrukturen vara **[!UICONTROL Linear]**, **[!UICONTROL Linear by threshold]**, eller **[!UICONTROL Constant by threshold]**.
+  När det beror på antalet meddelanden kan kostnadsberäkningsstrukturen vara **[!UICONTROL Linear]**, **[!UICONTROL Linear by threshold]**, eller **[!UICONTROL Constant by threshold]**.
 
 #### Linjär struktur {#linear-structure}
 
@@ -115,7 +116,7 @@ Om du vill lägga till ett tröskelvärde klickar du på **[!UICONTROL Add]** ti
 
 #### Konstant struktur efter tröskelvärde {#constant-structure-by-threshold}
 
-Slutligen kan du konfigurera en kostnadsberäkning utifrån det totala antalet meddelanden. Välj en **[!UICONTROL Constant by threshold]** beräkningsstruktur. Kostnaden sätts till exempel till ett fast belopp på 12,00 för 1 till 100 meddelanden och till 100,00 för leverans av 101 till 1000 meddelanden och till 500,00 för alla leveranser av över 1000 meddelanden, oavsett totalt antal.
+Slutligen kan du konfigurera en kostnadsberäkning baserat på det totala antalet meddelanden. Välj en **[!UICONTROL Constant by threshold]** beräkningsstruktur. Kostnaden sätts till exempel till ett fast belopp på 12,00 för 1 till 100 meddelanden och till 100,00 för leverans av 101 till 1000 meddelanden och till 500,00 för alla leveranser av över 1000 meddelanden, oavsett totalt antal.
 
 ![](assets/supplier-cost-structure-constant.png)
 
@@ -129,7 +130,7 @@ Du kan associera information om processerna som är kopplade till tjänstelevera
 
 * The **[!UICONTROL Notification email]** kan du ange en mall som ska meddela tjänsteleverantörer när filerna har skickats. Välj den mall som används för att skapa varningsmeddelandet och gruppen med mottagare.
 
-   Leveransmallar för meddelanden sparas som standard i **[!UICONTROL Administration > Campaign management > Technical delivery templates]** som du kommer åt från den allmänna vyn.
+  Leveransmallar för meddelanden sparas som standard i **[!UICONTROL Administration > Campaign management > Technical delivery templates]** som du kommer åt från den allmänna vyn.
 
 * The **[!UICONTROL Post-processing]** kan du välja vilket arbetsflöde som ska startas när leveransen har godkänts. Om en arbetsflödesmall anges skapas en arbetsflödesinstans automatiskt och startas så snart godkännandet börjar gälla. Det här arbetsflödet kan till exempel skicka extraheringsfilen till en extern tjänsteleverantör för bearbetning.
 
@@ -145,16 +146,16 @@ När en tjänst har valts, de kostnadskategorier som motsvarar leveranstypen (di
 
 * Om du vill få direktreklam kan du välja tjänsten i konfigurationsfönstret.
 
-   ![](assets/supplier-mail-delivery-select.png)
+  ![](assets/supplier-mail-delivery-select.png)
 
 * För leverans i mobilkanaler eller via telefon gäller samma urvalsmodell.
 * För en e-postleverans väljs tjänsten från **[!UICONTROL Advanced]** -fliken i leveransegenskaperna, som i följande exempel:
 
-   ![](assets/supplier-email-delivery-select.png)
+  ![](assets/supplier-email-delivery-select.png)
 
 The **[!UICONTROL Amount to surcharge]** kan du lägga till en kostnad för den här kategorin i samband med den aktuella leveransen eller uppgiften.
 
-Du kan definiera ett obligatoriskt urval av en kostnadstyp under definitionen av kostnadskategorier för en leverans. Välj **[!UICONTROL A cost type must be selected]**.
+Du kan definiera ett obligatoriskt urval av en kostnadstyp under definitionen av kostnadskategorier för en leverans. Gör detta genom att välja **[!UICONTROL A cost type must be selected]**.
 
 ![](assets/cost-type-must-be-selected.png)
 
@@ -189,7 +190,7 @@ Så här skapar du en ny aktie:
 
 En aktie består av olika stocklinjer. En lagerrad innehåller en ursprunglig kvantitet resurser som förbrukas av leveranser. Varje lagerrad anger förbrukad kvantitet, lagerkvantitet och beställd kvantitet.
 
-När du skapar en aktie klickar du på **[!UICONTROL Stock lines]** för att lägga till nya rader.
+När du skapar en resurs klickar du på **[!UICONTROL Stock lines]** för att lägga till nya rader.
 
 ![](assets/stock-new-lines.png)
 
@@ -201,7 +202,7 @@ Klicka på **[!UICONTROL Create]** om du vill lägga till nya aktierader.
 
 * Ange den ursprungliga lagerkvantiteten i **[!UICONTROL Initial stock]** fält. The **[!UICONTROL Consumed]** och **[!UICONTROL In stock]** fälten beräknas automatiskt och uppdateras allt eftersom kampanjer pågår.
 
-   ![](assets/create-new-stock-line.png)
+  ![](assets/create-new-stock-line.png)
 
 * Ange det tröskelvärde från vilket operatorer ska larmas för att beställa lager i **[!UICONTROL Alert level]** fält. När varningsnivån nås visas ett varningsmeddelande i godkännandefönstret för leveranser som använder detta lager.
 
@@ -221,7 +222,7 @@ En varning visas när ett lager som refereras i en leverans inte räcker till. F
 
 #### Beställningar {#orders}
 
-The **[!UICONTROL Orders]** Med underfliken kan du visa aktuella order och spara nya order.
+The **[!UICONTROL Orders]** kan du visa aktuella order och spara nya order.
 
 Om du vill spara en beställning redigerar du den avsedda lagerraden och klickar på **[!UICONTROL Add]** och ange leveransdatum och beställd kvantitet.
 

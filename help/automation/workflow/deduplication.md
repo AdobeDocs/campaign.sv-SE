@@ -3,8 +3,9 @@ product: campaign
 title: Deduplicering
 description: Läs mer om arbetsflödesaktiviteten Deduplicering
 feature: Workflows, Targeting Activity
+role: User
 exl-id: f79a979d-bd1d-4a86-8844-563886692941
-source-git-commit: 77ec01aaba1e50676bed57f503a9e4e8bb1fe54c
+source-git-commit: 567c2e84433caab708ddb9026dda6f9cb717d032
 workflow-type: tm+mt
 source-wordcount: '1089'
 ht-degree: 10%
@@ -47,7 +48,7 @@ Vid borttagning av dubbletter behandlas inkommande flöden separat. Om till exem
 Denna fråga måste åtgärdas på följande sätt:
 
 * Skapa en **Union** för att sammanföra varje inkommande flöde.
-* Skapa en **Deduplicering** efter **Union** aktivitet.
+* Skapa en **Deduplicering** aktivitet efter **Union** aktivitet.
 
 ![](assets/dedup-best-practice.png)
 
@@ -82,15 +83,16 @@ Om du vill konfigurera en borttagning av dubbletter anger du dess etikett, metod
    * **[!UICONTROL Choose for me]**: Markerar slumpmässigt den post som ska hållas utanför dubbletterna.
    * **[!UICONTROL Following a list of values]**: Låter dig definiera en värdeprioritet för ett eller flera fält. Om du vill definiera värdena markerar du ett fält eller skapar ett uttryck och lägger sedan till värdena i rätt tabell. Om du vill definiera ett nytt fält klickar du på knappen **[!UICONTROL Add]** ovanför listan med värden.
 
-      ![](assets/s_user_segmentation_dedup_param5.png)
+     ![](assets/s_user_segmentation_dedup_param5.png)
 
    * **[!UICONTROL Non-empty value]**: Låter dig behålla poster där värdet för det valda uttrycket inte är tomt som prioritet.
 
-      ![](assets/s_user_segmentation_dedup_param6.png)
+     ![](assets/s_user_segmentation_dedup_param6.png)
 
-   * **[!UICONTROL Using an expression]**: I kan du behålla poster med det lägsta (eller högsta) värdet för det angivna uttrycket.
+   * **[!UICONTROL Using an expression]**: gör att du kan behålla poster med det lägsta (eller högsta) värdet för det angivna uttrycket.
 
-      ![](assets/s_user_segmentation_dedup_param7.png)
+     ![](assets/s_user_segmentation_dedup_param7.png)
+
    >[!NOTE]
    >
    >The **[!UICONTROL Merge]** funktionalitet, tillgänglig via **[!UICONTROL Advanced parameters]** kan du konfigurera en uppsättning regler för att sammanfoga ett fält eller en grupp med fält till en enda resulterande datapost. Mer information finns i [Sammanfoga fält till en enda post](#merging-fields-into-single-record).
@@ -99,7 +101,7 @@ Om du vill konfigurera en borttagning av dubbletter anger du dess etikett, metod
 
    I fönstrets mellersta del sammanfattas den definierade konfigurationen.
 
-   I det nedre avsnittet av aktivitetsredigeringsfönstret kan du ändra etiketten för den utgående övergången för det grafiska objektet och ange en segmentkod som ska associeras med aktivitetens resultat. Den här koden kan senare användas som riktningskriterium.
+   I det nedre avsnittet av aktivitetsredigeringsfönstret kan du ändra etiketten för den utgående övergången för det grafiska objektet och ange en segmentkod som ska associeras med aktivitetens resultat. Den här koden kan senare användas som målinriktningskriterium.
 
    ![](assets/s_user_segmentation_dedup_param8.png)
 
@@ -123,7 +125,7 @@ De identifierade dubbletterna kommer också att integreras i en dedikerad dubble
 
 1. Öppna dedupliceringsaktiviteten och klicka sedan på **[!UICONTROL Edit configuration...]** för att definiera dedupliceringsläget.
 1. I det nya fönstret väljer du **[!UICONTROL Database schema]**.
-1. Välj **Mottagare** som målgruppsanpassning och filtreringsdimensioner.
+1. Välj **Mottagare** som målgruppsanpassning och filtrering.
 1. Välj ID-fält för **[!UICONTROL Email]** dubbletter, om du bara vill skicka leveransen en gång till varje e-postadress och sedan klicka på **[!UICONTROL Next]**.
 
    Om du vill basera de duplicerade ID:n på ett visst fält väljer du **[!UICONTROL Other]** för att komma åt listan med tillgängliga fält.
@@ -149,7 +151,7 @@ Följ dessa steg för att göra detta:
 
 1. Välj **[!UICONTROL Merge records]** för att aktivera funktionen.
 
-   Om du vill gruppera flera datafält i varje kopplingsvillkor aktiverar du **[!UICONTROL Use several record merging criteria]** alternativ.
+   Aktivera alternativet **[!UICONTROL Use several record merging criteria]** alternativ.
 
    ![](assets/dedup2.png)
 

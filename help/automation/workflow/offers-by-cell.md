@@ -3,8 +3,9 @@ product: campaign
 title: Erbjudanden per cell
 description: Erbjudanden per cell
 feature: Workflows, Targeting Activity, Interaction
+role: User
 exl-id: e2216dfd-1ef8-4747-b716-576fd6498fa6
-source-git-commit: 6464e1121b907f44db9c0c3add28b54486ecf834
+source-git-commit: 567c2e84433caab708ddb9026dda6f9cb717d032
 workflow-type: tm+mt
 source-wordcount: '151'
 ht-degree: 7%
@@ -28,6 +29,6 @@ Så här gör du:
    * Ange delmängdsfyllningen med de tillgängliga filtrerings- och begränsningsreglerna.
    * Välj sedan det erbjudande som du vill presentera för undergruppen. De erbjudanden som är tillgängliga är sådana som är berättigade till det erbjudandeutrymme som valdes i föregående steg.
 
-      ![](assets/int_offer_per_cell1.png)
+     ![](assets/int_offer_per_cell1.png)
 
 1. Konfigurera sedan en leveransaktivitet som motsvarar den valda kanalen. Se [Flerkanalsleveranser](cross-channel-deliveries.md).

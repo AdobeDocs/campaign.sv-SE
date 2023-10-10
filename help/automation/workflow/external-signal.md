@@ -3,8 +3,9 @@ product: campaign
 title: Extern signal
 description: Läs mer om arbetsflödesaktiviteten för externa signaturer
 feature: Workflows
+role: User
 exl-id: 45cb95ec-77bf-4bab-895f-b94f6ce660fd
-source-git-commit: 77ec01aaba1e50676bed57f503a9e4e8bb1fe54c
+source-git-commit: 567c2e84433caab708ddb9026dda6f9cb717d032
 workflow-type: tm+mt
 source-wordcount: '168'
 ht-degree: 2%
@@ -21,7 +22,7 @@ När en aktivitet av typen &quot;Extern signal&quot; aktiveras pausas den oavbru
 
 Mer information om funktionen PostEvent finns i onlinedokumentationen för SOAP-anrop.
 
-Du kan konfigurera den här aktiviteten för att definiera händelser om ingen signal tas emot. Om du vill göra det redigerar du aktiviteten och klickar på knappen **[!UICONTROL Expiration]** -fliken. Klicka på **[!UICONTROL Insert]** för att skapa och konfigurera en händelse.
+Du kan konfigurera aktiviteten för att definiera händelser om ingen signal tas emot. Det gör du genom att redigera aktiviteten och klicka på **[!UICONTROL Expiration]** -fliken. Klicka på **[!UICONTROL Insert]** för att skapa och konfigurera en händelse.
 
 ![](assets/edit_signal.png)
 

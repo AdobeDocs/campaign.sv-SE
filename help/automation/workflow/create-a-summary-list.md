@@ -3,8 +3,9 @@ product: campaign
 title: Skapa en sammanfattningslista
 description: Skapa en sammanfattningslista
 feature: Workflows, Data Management
+role: User
 exl-id: 86dee66a-357a-4927-916e-51cde6c006d5
-source-git-commit: 6464e1121b907f44db9c0c3add28b54486ecf834
+source-git-commit: 567c2e84433caab708ddb9026dda6f9cb717d032
 workflow-type: tm+mt
 source-wordcount: '971'
 ht-degree: 2%
@@ -67,7 +68,7 @@ Dessa data finns i textfilen&quot;Purchases.txt&quot;.
 
    ![](assets/uc2_enrich_chargement1.png)
 
-   Klicka på **[!UICONTROL Click here to change the file format...]** om du vill byta namn på kolumnerna med hjälp av de interna namnen och etiketterna i tabellen&quot;Inköp&quot;.
+   Klicka på **[!UICONTROL Click here to change the file format...]** om du vill byta namn på kolumnerna med hjälp av interna namn och etiketter i tabellen&quot;Inköp&quot;.
 
    ![](assets/uc2_enrich_chargement2.png)
 
@@ -94,7 +95,7 @@ I följande fönster måste du skapa ett kopplingsvillkor genom att välja käll
 
 ![](assets/uc2_enrich_enrich4.png)
 
-Nu när länken har skapats ska vi lägga till en kolumn i arbetsflödets arbetstabell från schemat &quot;Stores&quot;: fältet&quot;ZipCode Reference&quot;.
+Nu när länken skapas ska vi lägga till en kolumn i arbetsflödets arbetsregister från schemat&quot;Stores&quot;: fältet&quot;ZipCode Reference&quot;.
 
 1. Öppna anrikningsaktiviteten.
 1. Klicka på **[!UICONTROL Edit additional data]**.
@@ -106,7 +107,7 @@ Informationen i arbetsflödets arbetsregister efter denna berikning är följand
 
 ![](assets/uc2_enrich_population1.png)
 
-## Steg 2: Skriv data i registret &#39;Inköp&#39; {#step-2--writing-enriched-data-to-the--purchases--table}
+## Steg 2: Skriv inhämtade data i tabellen&quot;Inköp&quot; {#step-2--writing-enriched-data-to-the--purchases--table}
 
 I det här steget beskrivs hur du skriver importerade och berikade data till tabellen&quot;Inköp&quot;. För att göra detta måste vi använda en **Uppdatera data** aktivitet.
 
@@ -120,7 +121,7 @@ En avstämning mellan data i arbetsflödets arbetsregister och **Inköp** målin
 
 ![](assets/uc2_enrich_reconciliation.png)
 
-I **Uppdatera data** aktivitet, följande konfiguration krävs:
+I **Uppdatera data** -aktivitet, följande konfiguration krävs:
 
 1. Välj **[!UICONTROL Insert or update]** i **[!UICONTROL Operation type]** för att undvika att skapa nya poster varje gång filen samlas in.
 1. Välj **[!UICONTROL By directly using the targeting dimension]** värdet för **[!UICONTROL Record identification]** alternativ.
@@ -140,7 +141,7 @@ Syftet med den andra anrikningen är att skapa en sammanställning av inköpssch
 1. Klicka på Lägg till **[!UICONTROL Data]**.
 1. Klicka på **[!UICONTROL Data linked to the targeting dimension]** alternativ.
 1. Klicka på **[!UICONTROL Data linked to the filtering dimension]** i **[!UICONTROL Select fields to add]** -fönstret.
-1. Välj **[!UICONTROL Purchases]** nod och klicka sedan på **[!UICONTROL Next]**.
+1. Välj **[!UICONTROL Purchases]** sedan klicka på noden **[!UICONTROL Next]**.
 
    ![](assets/uc2_enrich_enrich9.png)
 
@@ -153,7 +154,7 @@ Syftet med den andra anrikningen är att skapa en sammanställning av inköpssch
 
    ![](assets/uc2_enrich_enrich6.png)
 
-Om du vill förbereda sammanfattningslistan måste du lägga till fält från fälten&quot;Inköp&quot; och från den första berikningen: fältet&quot;ZipCode Reference&quot;.
+Om du vill förbereda sammanfattningslistan måste du lägga till fält från fälten&quot;Inköp&quot; och från den första anrikningen: fältet&quot;ZipCode Reference&quot;.
 
 1. Klicka på **[!UICONTROL Edit additional data...]** länk till anrikningsverksamheten.
 1. Lägg till fälten&quot;Butiksnamn&quot; och&quot;Inköp/Postnummerreferens&quot;.
@@ -163,13 +164,13 @@ Om du vill förbereda sammanfattningslistan måste du lägga till fält från f�
 1. Klicka på **[!UICONTROL Properties]** -fliken.
 1. Ändra den andra länken så att bara en rad skapas.
 
-## Steg 4: Skapa och lägga till i en sammanfattningslista {#step-4--creating-and-adding-to-a-summary-list}
+## Steg 4: Skapa och lägg till i en sammanfattningslista {#step-4--creating-and-adding-to-a-summary-list}
 
 Det sista steget är att skriva alla data som berikats till en lista.
 
 1. Lägg till en **Listuppdatering** till arbetsflödet. Denna verksamhet måste vara kopplad till den utgående övergången för den andra anrikningsaktiviteten.
 1. Välj **[!UICONTROL Create the list if necessary (Calculated name)]** alternativ.
-1. Välj ett värde för det beräknade namnet. Etiketten som väljs för listan är dagens datum: &lt;%= formatDate(new Date(), &quot;%2D/%2M/%2Y&quot;) %>.
+1. Välj ett värde för det beräknade namnet. Etiketten som valts för listan är aktuellt datum: &lt;%= formatDate(new Date(), &quot;%2D/%2M/%2Y&quot;) %>.
 
 När arbetsflödet är klart kommer listan att innehålla:
 

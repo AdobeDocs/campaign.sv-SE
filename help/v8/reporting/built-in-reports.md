@@ -2,8 +2,9 @@
 title: Inbyggda rapporter från Adobe Campaign
 description: Inbyggda rapporter
 feature: Reporting
+role: User
 exl-id: b63e6905-3bd4-4de4-9e7e-7638e5fc1192
-source-git-commit: 290f4e9a0d13ef49caacb7a128ccc266bafd5e69
+source-git-commit: 567c2e84433caab708ddb9026dda6f9cb717d032
 workflow-type: tm+mt
 source-wordcount: '1111'
 ht-degree: 1%
@@ -23,7 +24,7 @@ Du kommer åt inbyggda rapporter från Campaigns hemsida, den dedikerade rapport
 
 En lista med viktiga rapporter finns på startsidan, så att du snabbt kan komma åt leveransdata. Listan kan ändras efter dina behov. Du kan även lära dig hur du lägger till egna rapporter i **[!UICONTROL Reports]** -fliken.
 
-Mer information om dessa anpassade konfigurationer finns i [Campaign Classic v7-dokumentation](https://experienceleague.adobe.com/docs/campaign-classic/using/reporting/creating-new-reports/configuring-access-to-the-report.html).
+Mer information om dessa anpassade konfigurationer finns i [Campaign Classic v7 - dokumentation](https://experienceleague.adobe.com/docs/campaign-classic/using/reporting/creating-new-reports/configuring-access-to-the-report.html).
 
 
 ## Åtkomst till inbyggda rapporter {#access-ootb-reports}
@@ -36,7 +37,7 @@ Få tillgång till inbyggda rapporter för Campaign:
 
 1. Använd sökfälten för att filtrera de visade rapporterna.
 
-1. Klicka sedan på rapporten som du vill visa.
+1. Klicka sedan på den rapport som du vill visa.
 
    ![](assets/edit-a-report.png)
 
@@ -44,7 +45,7 @@ Få tillgång till inbyggda rapporter för Campaign:
 
    ![](assets/back-button.png)
 
-Rapporter som är specifika för en kampanj eller leverans är tillgängliga via deras respektive kontrollpaneler.
+Rapporter som är specifika för en kampanj eller leverans är tillgängliga via respektive instrumentpanel.
 
 ![](assets/reporting-on-delivery.png)
 
@@ -73,7 +74,7 @@ Mer information om innehållet i dessa rapporter finns i [det här avsnittet](de
   </tr> 
   <tr> 
    <td> Leveransflöde (dataflöde)<br /> </td> 
-   <td> Leverera diagram för dataflöde, i meddelanden/timme och Mbit/s.<br /> </td> 
+   <td> Leverera dataflödesdiagram i meddelanden/timme och Mbit/s.<br /> </td> 
    <td> nms:leverans<br /> </td> 
   </tr> 
   <tr> 
@@ -108,7 +109,7 @@ Mer information om innehållet i dessa rapporter finns i [det här avsnittet](de
   </tr> 
   <tr> 
    <td> Hypotesrapport (deliveryHypothesis)<br /> </td> 
-   <td> Visar en sammanfattning av mått för leveranshypoteser.<br /> </td> 
+   <td> Visar en sammanfattning av mått för leveranssätt.<br /> </td> 
    <td> nms:leverans<br /> </td> 
   </tr> 
   <tr> 
@@ -186,7 +187,7 @@ Rapporter om kampanjer rör data i **nms:operation** tabell.
   </tr> 
   <tr> 
    <td> Spårningsindikatorer (operationFeedback)<br /> </td> 
-   <td> Översikt över nyckelspårningsindikatorer: Öppnar, klickar och utför transaktioner, beror på Campaign.<br /> </td> 
+   <td> Översikt över nyckelspårningsindikatorer: Öppningar, klick och transaktioner beror på Campaign.<br /> </td> 
   </tr> 
   <tr> 
    <td> Delning till sociala nätverk (operationForward)<br /> </td> 
@@ -202,7 +203,7 @@ Rapporter om kampanjer rör data i **nms:operation** tabell.
   </tr> 
   <tr> 
    <td> Leveranssammanfattning (operationStatistics)<br /> </td> 
-   <td> Sammanfattningsdiagram över kampanjleveranser: Mål, undantag och skickade meddelanden.<br /> </td> 
+   <td> Översiktstabell över kampanjleveranser: Mål, undantag och skickade meddelanden.<br /> </td> 
   </tr> 
   <tr> 
    <td> URL:er och klickdataflöde (operationTopUrlDelivery)<br /> </td> 
@@ -223,7 +224,7 @@ Rapporterna om tjänster rör uppgifterna i **nms:service** tabell.
   </tr> 
   <tr> 
    <td> Fläktförvärv (socialAcquisitionsByWebapp)<br /> </td> 
-   <td> Vilka webbprogram aktiverade köp av potentiella kunder? Tillägget för social marknadsföring är beroende av.<br /> </td> 
+   <td> Vilka webbprogram aktiverade köp av potentiella kunder? Tillägget för social marknadsföring används.<br /> </td> 
   </tr> 
   <tr> 
    <td> Uppdelning av prenumerationer (mobileAppDistribution)<br /> </td> 
@@ -235,7 +236,7 @@ Rapporterna om tjänster rör uppgifterna i **nms:service** tabell.
   </tr> 
   <tr> 
    <td> Reaktivitetsfrekvens (socialReactionRate)<br /> </td> 
-   <td> Vilka är reaktivitetsfrekvenserna för de senaste leveranserna? Tillägget för social marknadsföring är beroende av.<br /> </td> 
+   <td> Vilka är reaktivitetsfrekvenserna för de senaste leveranserna? Tillägget för social marknadsföring används.<br /> </td> 
   </tr> 
   <tr> 
    <td> Reaktivitetsfrekvens (mobileAppReactivityRate)<br /> </td> 
@@ -379,7 +380,7 @@ Följande rapporter finns också inbyggda. Mer information finns i dokumentet om
   </tr> 
   <tr> 
    <td> Historik över förvärv av sociala potentiella kunder (socialVisitorStatistics)<br /> </td> 
-   <td> Historiken över köp av potentiella kunder från Twitter och Facebook beror på tillägget för social marknadsföring.<br /> </td> 
+   <td> Historiken över Twitter och Facebook kundvärvningar beror på tillägget för social marknadsföring.<br /> </td> 
    <td> nms:besökare<br /> </td> 
   </tr> 
   <tr> 

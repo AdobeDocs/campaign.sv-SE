@@ -3,8 +3,9 @@ product: campaign
 title: Skapa ett filter
 description: Lär dig hur du skapar ett filter när du utför frågor
 feature: Query Editor, Workflows
+role: User
 exl-id: 8e6fd9b4-77c4-4af8-921b-c3fe104fa5bc
-source-git-commit: 6464e1121b907f44db9c0c3add28b54486ecf834
+source-git-commit: 567c2e84433caab708ddb9026dda6f9cb717d032
 workflow-type: tm+mt
 source-wordcount: '201'
 ht-degree: 2%
@@ -29,7 +30,7 @@ För samma lista **[!UICONTROL By login or label]** Med -filter kan du filtrera 
 
 ![](assets/query_editor_filter_sample_3.png)
 
-Den är byggd på följande sätt:
+Den är uppbyggd på följande sätt:
 
 ![](assets/query_editor_filter_sample_4.png)
 
@@ -43,7 +44,7 @@ Om du vill matcha filtreringsvillkoren måste operatörskontot kontrollera någo
 >
 >The **[!UICONTROL Upper]** kan du inaktivera skiftlägeskänslig funktion.
 
-The **[!UICONTROL Taken into account if]** Med -kolumnen kan du definiera programvillkoren för dessa filtervillkor. Här är **$(/tmp/@text)** tecken representerar innehållet i det inmatningsfält som är länkat till filtret:
+The **[!UICONTROL Taken into account if]** kan du definiera programvillkoren för dessa filtervillkor. Här är **$(/tmp/@text)** tecken representerar innehållet i det inmatningsfält som är länkat till filtret:
 
 ![](assets/query_editor_filter_sample_5.png)
 

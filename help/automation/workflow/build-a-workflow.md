@@ -1,10 +1,11 @@
 ---
 product: campaign
 title: Bygg ett arbetsflöde
-description: Lär dig hur du skapar ett arbetsflöde
+description: Lär dig skapa ett arbetsflöde
 feature: Workflows
+role: User
 exl-id: a6003fdb-1035-4b80-8831-73f30a0b4fb2
-source-git-commit: 190707b8b1ea5f90dc6385c13832fbb01378ca1d
+source-git-commit: 567c2e84433caab708ddb9026dda6f9cb717d032
 workflow-type: tm+mt
 source-wordcount: '969'
 ht-degree: 4%
@@ -17,9 +18,9 @@ ht-degree: 4%
 
 Arbetsflödets arbetsflöde beror på typen av arbetsflöden. Du kan:
 
-* Skapa [Målarbetsflöden](#targeting-workflows) från **[!UICONTROL Profiles and Targets]** > **[!UICONTROL Jobs]** > **[!UICONTROL Targeting workflows]** Utforskarens nod eller från **[!UICONTROL Profiles and Targets]** hemsidans flik via **[!UICONTROL Targeting workflows]** underflik.
+* Skapa [Målarbetsflöden](#targeting-workflows) från **[!UICONTROL Profiles and Targets]** > **[!UICONTROL Jobs]** > **[!UICONTROL Targeting workflows]** Utforskarens nod eller **[!UICONTROL Profiles and Targets]** hemsidans flik via **[!UICONTROL Targeting workflows]** underflik.
 
-   ![](assets/create-targeting-wf.png)
+  ![](assets/create-targeting-wf.png)
 
 * Skapa [Kampanjarbetsflöden](#campaign-workflows) från **[!UICONTROL Targeting and workflows]** flik i en kampanj
 
@@ -50,7 +51,7 @@ Aktiviteter grupperas efter kategori på palettens olika flikar. Tillgängliga f
 
 Så här skapar du diagrammet
 
-1. Lägg till en aktivitet genom att markera den på paletten och flytta den till diagrammet med dra-och-släpp.
+1. Lägg till en aktivitet genom att markera den på paletten och flytta den till diagrammet med dra-och-släpp-funktionen.
 
    Lägg till en **Starta** aktivitet och sedan en **Leverans** aktivitet i diagrammet.
 
@@ -74,28 +75,28 @@ Du kan ändra visning och layout för diagrammet med följande element:
 
 * **Använda verktygsfältet**
 
-   Verktygsfältet för diagramredigering ger dig tillgång till arbetsflödets layout- och körningsfunktioner.
+  Verktygsfältet för diagramredigering ger dig tillgång till arbetsflödets layout- och körningsfunktioner.
 
-   ![](assets/wf-toolbar.png)
+  ![](assets/wf-toolbar.png)
 
-   På så sätt kan du anpassa layouten för redigeringsverktyget: visning av paletten och översikt, storlek och justering av grafiska objekt.
+  På så sätt kan du anpassa layouten för redigeringsverktyget: hur paletten visas och översikten, storleken och justeringen av grafiska objekt.
 
-   ![](assets/s_user_segmentation_toolbar.png)
+  ![](assets/s_user_segmentation_toolbar.png)
 
-   Ikoner för förlopp och visning av loggar beskrivs i följande avsnitt:
+  Ikoner för förlopp och visning av loggar beskrivs i följande avsnitt:
 
    * [Visningsförlopp](monitor-workflow-execution.md#displaying-progress)
    * [Visningsloggar](monitor-workflow-execution.md#displaying-logs)
 
 * **Objektjustering**
 
-   Om du vill justera ikoner markerar du dem och klickar på **[!UICONTROL Align vertically]** eller **[!UICONTROL Align horizontally]** ikon.
+  Om du vill justera ikoner markerar du dem och klickar på **[!UICONTROL Align vertically]** eller **[!UICONTROL Align horizontally]** -ikon.
 
-   Använd **CTRL** för att markera flera utspridda aktiviteter eller för att avmarkera en eller flera aktiviteter. Klicka på diagrambakgrunden för att avmarkera allt.
+  Använd **CTRL** för att markera flera utspridda aktiviteter eller för att avmarkera en eller flera aktiviteter. Klicka på diagrambakgrunden för att avmarkera allt.
 
 * **Bildhantering**
 
-   Du kan anpassa bakgrundsbilden för diagrammet samt de som hör till de olika aktiviteterna. Se [Ändra aktivitetsbilder](change-activity-images.md).
+  Du kan anpassa bakgrundsbilden för diagrammet samt de som hör till de olika aktiviteterna. Se [Ändra aktivitetsbilder](change-activity-images.md).
 
 ## Konfigurera aktiviteter {#configure-activities}
 
@@ -150,7 +151,7 @@ Men du kan skapa en vy som visar alla arbetsflöden i instansen. I den här vyn 
 
 **Skapa en vy**
 
-1. I **Utforskaren** går du till den mapp du behöver för att skapa vyn i.
+1. I **Explorer** går du till den mapp du behöver för att skapa vyn i.
 1. Högerklicka och gå till **Lägg till en ny mapp** > **Process**, markera **Arbetsflöden**.
 
    ![](assets/add-new-folder-workflows.png)

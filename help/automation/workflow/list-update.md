@@ -3,8 +3,9 @@ product: campaign
 title: Listuppdatering
 description: Listuppdatering
 feature: Workflows, Targeting Activity
+role: User
 exl-id: abb7f777-0b4a-4bf2-bcb6-32264f340a58
-source-git-commit: edb099b3e882d857752af76798012ccd1c5a99be
+source-git-commit: 567c2e84433caab708ddb9026dda6f9cb717d032
 workflow-type: tm+mt
 source-wordcount: '465'
 ht-degree: 1%
@@ -21,7 +22,7 @@ A **Listuppdatering** -aktiviteten lagrar populationen som anges i övergången 
 
 Listan kan väljas från listan med befintliga grupper.
 
-Den kan också skapas med **[!UICONTROL Create the list if necessary (Computed name)]** och **[!UICONTROL Create the list if necessary (Computed Folder and Name)]** alternativ. Med de här alternativen kan du välja vilken etikett du vill använda för att skapa en lista, och senare den mapp som listan ska sparas i. Etiketten kan också genereras automatiskt genom att du infogar dynamiska fält eller ett skript. De olika dynamiska fälten är tillgängliga på snabbmenyn till höger om etiketten.
+Den kan också skapas med **[!UICONTROL Create the list if necessary (Computed name)]** och **[!UICONTROL Create the list if necessary (Computed Folder and Name)]** alternativ. Med de här alternativen kan du välja vilken etikett du vill använda för att skapa en lista, och senare den mapp som listan ska sparas i. Etiketten kan också genereras automatiskt genom att dynamiska fält eller skript infogas. De olika dynamiska fälten är tillgängliga på snabbmenyn till höger om etiketten.
 
 ![](assets/s_user_segmentation_update_list_calc.png)
 
@@ -31,7 +32,7 @@ Om du vill att den skapade eller uppdaterade listan ska använda en annan tabell
 
 Om du vill använda alternativet måste de specifika tabellerna i fråga ha konfigurerats i din Adobe Campaign-instans.
 
-Om du sparar ett mål i en lista markeras i allmänhet slutet av ett arbetsflöde. Som standard är **[!UICONTROL List update]** aktiviteten inte har någon utgående övergång. Kontrollera **[!UICONTROL Generate an outbound transition]** för att lägga till ett.
+Om du sparar ett mål i en lista markeras i allmänhet slutet av ett arbetsflöde. Som standard är **[!UICONTROL List update]** aktiviteten därför inte har någon utgående övergång. Kontrollera **[!UICONTROL Generate an outbound transition]** för att lägga till ett.
 
 ![](assets/do-not-localize/how-to-video.png) [Upptäck hur du skapar en lista med mottagare från Utforskaren i en video](#video)
 
@@ -67,7 +68,7 @@ Identifierar populationen som ska sparas i gruppen.
 
 * groupId: Gruppidentifierare.
 
-## Videokurs {#video}
+## Självstudievideo {#video}
 
 I den här videon visas hur du skapar en lista med mottagare från Utforskaren.
 

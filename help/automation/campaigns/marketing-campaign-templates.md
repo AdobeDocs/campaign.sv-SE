@@ -3,8 +3,9 @@ product: campaign
 title: Mallar för marknadsföringskampanjer
 description: Mallar för marknadsföringskampanjer
 feature: Campaigns, Templates
+role: User
 exl-id: 1bd8d3e7-aaa9-4e00-96bb-0d30614ab380
-source-git-commit: 1c879c7803c346d4b602089a22c2639eb83e82be
+source-git-commit: 567c2e84433caab708ddb9026dda6f9cb717d032
 workflow-type: tm+mt
 source-wordcount: '987'
 ht-degree: 0%
@@ -13,7 +14,7 @@ ht-degree: 0%
 
 # Skapa och konfigurera kampanjmallar {#campaign-templates}
 
-Alla marknadsföringskampanjer bygger på en mall som lagrar de viktigaste egenskaperna och funktionerna. Campaign innehåller en inbyggd mall för att skapa kampanjer. Den här mallen har alla funktioner aktiverade: Dokument, dirigeringsadresser, godkännanden, leveransdispositioner osv.
+Alla marknadsföringskampanjer bygger på en mall som lagrar de viktigaste egenskaperna och funktionerna. Campaign innehåller en inbyggd mall för att skapa kampanjer. Den här mallen har alla funktioner aktiverade: Dokument, dirigeringsadresser, Godkännanden, Leveranskonturer osv.
 
 Vilka funktioner som är tillgängliga beror på dina behörigheter, tillägg och konfigurationen för din Adobe Campaign-plattform.
 
@@ -28,7 +29,7 @@ En inbyggd mall tillhandahålls för att skapa en kampanj för vilken ingen spec
 
 Så här skapar du en kampanjmall:
 
-1. Öppna kampanj **Utforskaren** och bläddra till **Resurser > Mallar > Campaign-mallar**.
+1. Öppna kampanj **Explorer** och bläddra till **Resurser > Mallar > Campaign-mallar**.
 1. Klicka **Nytt** i verktygsfältet ovanför listan med mallar.
 
 ![](assets/campaign-template-node.png)
@@ -58,7 +59,7 @@ The **[!UICONTROL Advanced campaign parameters...]** kan du aktivera och inaktiv
 
 ![](assets/campaign-template-select-modules.png)
 
-Om ingen funktion är markerad, de element som rör processen (menyer, ikoner, alternativ, flikar, underflikar osv.) visas inte i mallens gränssnitt eller i kampanjer som är baserade på den här mallen. Flikarna till vänster om kampanjinformationen och de tillgängliga flikarna sammanfaller med de funktioner som valts i mallen. Till exempel **Utgifter och mål** är inte aktiverad, **[!UICONTROL Budget]** visas inte i kampanjer som är baserade på den här mallen.
+Om ingen funktion är markerad, de element som rör processen (menyer, ikoner, alternativ, flikar, underflikar osv.) visas inte i mallens gränssnitt eller i kampanjer som är baserade på den här mallen. Flikarna till vänster om kampanjinformationen och de tillgängliga flikarna sammanfaller med de funktioner som valts i mallen. Till exempel **Utgifter och mål** ingen funktion är aktiverad, **[!UICONTROL Budget]** visas inte i kampanjer som är baserade på den här mallen.
 
 Dessutom läggs genvägar till konfigurationsfönstren till på kontrollpanelen för kampanjer. När en funktion är aktiverad får en direktlänk åtkomst till den från kontrollpanelen för kampanjer.
 
@@ -66,96 +67,96 @@ Dessutom läggs genvägar till konfigurationsfönstren till på kontrollpanelen 
 
 * Med följande inställningar:
 
-   ![](assets/campaign-template-select-functionalities.png)
+  ![](assets/campaign-template-select-functionalities.png)
 
-   Kampanjpanelen visar:
+  Kampanjpanelen visar:
 
-   ![](assets/campaign-template-dashboard-sample-1.png)
+  ![](assets/campaign-template-dashboard-sample-1.png)
 
-   Observera att **[!UICONTROL Targeting and workflows]** -fliken saknas.
+  Observera att **[!UICONTROL Targeting and workflows]** -fliken saknas.
 
-   Följande funktioner är tillgängliga:
+  Följande funktioner är tillgängliga:
 
-   ![](assets/campaign-template-edit-sample-1.png)
+  ![](assets/campaign-template-edit-sample-1.png)
 
-   Observera att **[!UICONTROL Budget]** -fliken saknas.
+  Observera att **[!UICONTROL Budget]** -fliken saknas.
 
-   De avancerade inställningarna för kampanjen återspeglar även den här konfigurationen.
+  De avancerade inställningarna för kampanjen återspeglar även den här konfigurationen.
 
-   ![](assets/campaign-template-parameters-sample-1.png)
+  ![](assets/campaign-template-parameters-sample-1.png)
 
-   Observera att **[!UICONTROL Approvals]** -fliken är inte tillgänglig.
+  Observera att **[!UICONTROL Approvals]** är inte tillgänglig.
 
 * Med den här konfigurationen:
-   ![](assets/campaign-template-dashboard-sample-2.png)
+  ![](assets/campaign-template-dashboard-sample-2.png)
 
-   Kampanjpanelen visar:
+  Kampanjpanelen visar:
 
-   ![](assets/campaign-template-select-functionalities-2.png)
+  ![](assets/campaign-template-select-functionalities-2.png)
 
-   Observera att **[!UICONTROL Targeting and workflows]** -fliken är tillgänglig men **Lägga till ett dokument** länk saknas.
+  Observera att **[!UICONTROL Targeting and workflows]** -fliken är tillgänglig men **Lägga till ett dokument** länk saknas.
 
-   Följande funktioner är tillgängliga:
+  Följande funktioner är tillgängliga:
 
-   ![](assets/campaign-template-edit-sample-2.png)
+  ![](assets/campaign-template-edit-sample-2.png)
 
-   Observera att **[!UICONTROL Budget]** -fliken är tillgänglig.
+  Observera att **[!UICONTROL Budget]** -fliken är tillgänglig.
 
-   De avancerade inställningarna för kampanjen återspeglar även den här konfigurationen.
+  De avancerade inställningarna för kampanjen återspeglar även den här konfigurationen.
 
-   ![](assets/campaign-template-parameters-sample-2.png)
+  ![](assets/campaign-template-parameters-sample-2.png)
 
-   Observera att **[!UICONTROL Approvals]** -fliken är tillgänglig men **[!UICONTROL Control population]** och **[!UICONTROL Seed addresses]** -flikar är inte aktiverade.
+  Observera att **[!UICONTROL Approvals]** -fliken är tillgänglig men **[!UICONTROL Control population]** och **[!UICONTROL Seed addresses]** -flikar är inte aktiverade.
 
 
 ## Modultyper {#typology-of-enabled-modules}
 
 * **Kontrollgrupp**
 
-   När den här modulen är markerad läggs en extra flik till i de avancerade inställningarna för mallen och kampanjerna som är baserade på den här mallen. Konfigurationen kan definieras via mallen eller individuellt för varje kampanj. Läs mer om kontrollgrupper i [det här avsnittet](marketing-campaign-deliveries.md#defining-a-control-group).
+  När den här modulen är markerad läggs en extra flik till i de avancerade inställningarna för mallen och kampanjerna som är baserade på den här mallen. Konfigurationen kan definieras via mallen eller individuellt för varje kampanj. Läs mer om kontrollgrupper i [det här avsnittet](marketing-campaign-deliveries.md#defining-a-control-group).
 
-   ![](assets/template-activate-1.png)
+  ![](assets/template-activate-1.png)
 
 
 * **Fröadresser**
 
-   När den här modulen är markerad läggs en extra flik till i de avancerade inställningarna för mallen och kampanjerna som är baserade på den här mallen. Konfigurationen kan definieras via mallen eller individuellt för varje kampanj.
+  När den här modulen är markerad läggs en extra flik till i de avancerade inställningarna för mallen och kampanjerna som är baserade på den här mallen. Konfigurationen kan definieras via mallen eller individuellt för varje kampanj.
 
-   ![](assets/template-activate-2.png)
+  ![](assets/template-activate-2.png)
 
 * **Dokument**
 
-   När den här modulen är markerad läggs en extra flik till i **[!UICONTROL Edit]** -fliken i mallen och de kampanjer som är baserade på den här mallen. Bifogade dokument kan läggas till från mallen eller individuellt för varje kampanj. Läs mer om dokument i [det här avsnittet](marketing-campaign-deliveries.md#manage-associated-documents).
+  När den här modulen är markerad läggs en extra flik till i **[!UICONTROL Edit]** -fliken i mallen och de kampanjer som är baserade på den här mallen. Bifogade dokument kan läggas till från mallen eller individuellt för varje kampanj. Läs mer om dokument i [det här avsnittet](marketing-campaign-deliveries.md#manage-associated-documents).
 
-   ![](assets/template-activate-3.png)
+  ![](assets/template-activate-3.png)
 
 * **Leveransbeskrivning**
 
-   När den här modulen är markerad **[!UICONTROL Delivery outlines]** underfliken läggs till i **[!UICONTROL Documents]** för att definiera leveransdispositioner för kampanjen. Läs mer om leveransdispositioner i [det här avsnittet](marketing-campaign-assets.md#delivery-outlines).
+  När den här modulen är markerad **[!UICONTROL Delivery outlines]** underfliken läggs till i **[!UICONTROL Documents]** för att definiera leveransdispositioner för kampanjen. Läs mer om leveransdispositioner i [det här avsnittet](marketing-campaign-assets.md#delivery-outlines).
 
-   ![](assets/template-activate-4.png)
+  ![](assets/template-activate-4.png)
 
 * **Målgruppsanpassning och arbetsflöden**
 
-   När du väljer **[!UICONTROL Targeting and workflows]** -modulen läggs en flik till så att du kan skapa ett eller flera arbetsflöden för kampanjer baserat på den här mallen. Arbetsflöden kan också konfigureras individuellt för varje kampanj baserat på den här mallen.Läs mer om kampanjarbetsflöden i [det här avsnittet](marketing-campaign-deliveries.md#build-the-main-target-in-a-workflow).
+  När du väljer **[!UICONTROL Targeting and workflows]** -modulen läggs en flik till så att du kan skapa ett eller flera arbetsflöden för kampanjer baserat på den här mallen. Arbetsflöden kan också konfigureras individuellt för varje kampanj baserat på den här mallen.Läs mer om kampanjarbetsflöden i [det här avsnittet](marketing-campaign-deliveries.md#build-the-main-target-in-a-workflow).
 
-   ![](assets/template-activate-5.png)
+  ![](assets/template-activate-5.png)
 
-   När den här modulen är aktiverad visas en **[!UICONTROL Jobs]** -fliken läggs till i de avancerade inställningarna för kampanjen för att definiera processens körningssekvens.
+  När den här modulen är aktiverad visas **[!UICONTROL Jobs]** -fliken läggs till i de avancerade inställningarna för kampanjen för att definiera processens körningssekvens.
 
 * **Godkännanden**
 
-   Om du aktiverar **[!UICONTROL Approvals]** kan du välja vilka processer som ska godkännas och vilka operatörer som ansvarar för godkännandena. Läs mer om godkännanden i [det här avsnittet](marketing-campaign-approval.md#select-reviewers).
+  Om du aktiverar **[!UICONTROL Approvals]** kan du välja vilka processer som ska godkännas och vilka operatörer som ansvarar för godkännandena. Läs mer om godkännanden i [det här avsnittet](marketing-campaign-approval.md#select-reviewers).
 
-   ![](assets/template-activate-6.png)
+  ![](assets/template-activate-6.png)
 
-   Du kan välja om du vill aktivera processgodkännande via **[!UICONTROL Approvals]** -fliken i avsnittet för mallar med avancerade inställningar.
+  Du kan välja om du vill aktivera processgodkännande via **[!UICONTROL Approvals]** -fliken i avsnittet för mallar med avancerade inställningar.
 
 * **Utgifter och mål**
 
-   När den här modulen är markerad **[!UICONTROL Budget]** -fliken läggs till i informationen om mallen och kampanjer som baseras på den här mallen, så att den associerade budgeten kan väljas.
+  När den här modulen är markerad **[!UICONTROL Budget]** -fliken läggs till i informationen om mallen och kampanjer som baseras på den här mallen, så att den associerade budgeten kan väljas.
 
-   ![](assets/template-activate-7.png)
+  ![](assets/template-activate-7.png)
 
 
 ## Mallegenskaper {#template-properties}
@@ -164,16 +165,16 @@ Dessutom läggs genvägar till konfigurationsfönstren till på kontrollpanelen 
 
 När du skapar en kampanjmall måste du ange följande information:
 
-* Ange **label** av mallen: etiketten är obligatorisk och är standardetikett för alla kampanjer som baseras på den här mallen.
+* Ange **label** för mallen: etiketten är obligatorisk och är standardetikett för alla kampanjer som baseras på den här mallen.
 * Välj kampanj **natur** i listrutan. De värden som är tillgängliga i den här listan är de som har sparats i **[!UICONTROL natureOp]** uppräkning.
 
 Lär dig hur du får åtkomst till och konfigurerar dina uppräkningar i [den här sidan](../../v8/config/ui-settings.md#enumerations).
 
 
-* Välj **kampanjtyp**: unika, återkommande eller periodiska. Som standard används kampanjmallar för unika kampanjer. Återkommande och periodiska kampanjer beskrivs i [det här avsnittet](recurring-periodic-campaigns.md).
+* Välj **kampanjtyp**: unik, återkommande eller periodisk. Som standard används kampanjmallar för unika kampanjer. Återkommande och periodiska kampanjer beskrivs i [det här avsnittet](recurring-periodic-campaigns.md).
 * Ange kampanjens varaktighet, dvs. antalet dagar som kampanjen ska äga rum. När du skapar en kampanj som baseras på den här mallen fylls start- och slutdatumet för kampanjen i automatiskt.
 
-   Om kampanjen är återkommande måste du ange kampanjens start- och slutdatum direkt i mallen.
+  Om kampanjen är återkommande måste du ange kampanjens start- och slutdatum direkt i mallen.
 
 * Ange **relaterat program** av mallen: kampanjer som är baserade på den här mallen är länkade till det valda programmet.
 

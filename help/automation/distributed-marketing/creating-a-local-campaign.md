@@ -3,8 +3,9 @@ product: campaign
 title: Skapa en lokal kampanj
 description: Skapa en lokal kampanj
 feature: Distributed Marketing
+role: User
 exl-id: b46530b5-cb81-40d7-b596-c7685359782a
-source-git-commit: 290f4e9a0d13ef49caacb7a128ccc266bafd5e69
+source-git-commit: 567c2e84433caab708ddb9026dda6f9cb717d032
 workflow-type: tm+mt
 source-wordcount: '1555'
 ht-degree: 1%
@@ -57,26 +58,26 @@ Välj vilken typ av webbgränssnitt som ska användas för kampanjer som skapas 
 
 Det finns fyra typer av webbgränssnitt:
 
-* **[!UICONTROL By brief]** : lokal enhet måste ange en beskrivning som beskriver kampanjkonfigurationerna. När ordern har godkänts konfigurerar och kör den centrala enheten kampanjen som helhet.
+* **[!UICONTROL By brief]** : lokal entitet måste tillhandahålla en beskrivning som beskriver kampanjkonfigurationerna. När ordern har godkänts konfigurerar och kör den centrala enheten kampanjen som helhet.
 
-   ![](assets/mkt_distr_6.png)
+  ![](assets/mkt_distr_6.png)
 
-* **[!UICONTROL By form]** : lokal enhet har åtkomst till ett webbformulär där de, beroende på vilken mall som används, kan redigera innehållet, målet, dess maximala storlek samt datum för skapande och extrahering med hjälp av anpassningsfält. Lokal enhet kan utvärdera mål- och förhandsgranskningsinnehållet från det här webbformuläret.
+* **[!UICONTROL By form]** : lokal enhet har åtkomst till ett webbformulär där den, beroende på vilken mall som används, kan redigera innehållet, målet, dess maximala storlek samt datum för skapande och extrahering med hjälp av anpassningsfält. Lokal enhet kan utvärdera mål- och förhandsgranskningsinnehållet från det här webbformuläret.
 
-   ![](assets/mkt_distr_8.png)
+  ![](assets/mkt_distr_8.png)
 
-   Formuläret som erbjuds anges i ett webbprogram som måste väljas i en nedrullningsbar lista på menyn **[!UICONTROL web Interface]** i mallens **[!UICONTROL Advanced campaign parameters...]** länk. Se [Skapa en lokal kampanj (per formulär)](examples.md#creating-a-local-campaign--by-form-).
+  Formuläret som erbjuds anges i ett webbprogram som måste väljas i en nedrullningsbar lista på menyn **[!UICONTROL web Interface]** i mallens **[!UICONTROL Advanced campaign parameters...]** länk. Se [Skapa en lokal kampanj (per formulär)](examples.md#creating-a-local-campaign--by-form-).
 
-   >[!NOTE]
-   >
-   >Webbprogrammet som används i det här exemplet är ett exempel. Du måste skapa ett specifikt webbprogram för att kunna använda ett formulär.
+  >[!NOTE]
+  >
+  >Webbprogrammet som används i det här exemplet är ett exempel. Du måste skapa ett specifikt webbprogram för att kunna använda ett formulär.
 
-   ![](assets/mkt_distr_7.png)
+  ![](assets/mkt_distr_7.png)
 
-* **[!UICONTROL By external form]** : lokal enhet har åtkomst till kampanjparametrar i extranätet (inte Adobe Campaign). De här parametrarna är identiska med parametrarna i en **lokal kampanj (per formulär)**.
+* **[!UICONTROL By external form]** : lokal entitet har åtkomst till kampanjparametrar i extranätet (inte Adobe Campaign). De här parametrarna är identiska med parametrarna i en **lokal kampanj (per formulär)**.
 * **[!UICONTROL Pre-set]** : lokal enhet beställer kampanj med standardformuläret, utan att lokalisera den.
 
-   ![](assets/mkt_distr_5.png)
+  ![](assets/mkt_distr_5.png)
 
 ### Standardvärden {#default-values}
 
@@ -124,7 +125,7 @@ Om du inte vill visa ett dokumentöverföringsfält anger du **[!UICONTROL 0]** 
 
 ### Arbetsflöde {#workflow}
 
-I **[!UICONTROL Targeting and workflows]** skapar du ett kampanjarbetsflöde som samlar in **[!UICONTROL Default values]** anges i **[!UICONTROL Advanced campaign parameters...]** och skapar leveranserna.
+I **[!UICONTROL Targeting and workflows]** skapar du ett kampanjarbetsflöde som samlar in **[!UICONTROL Default values]** som anges i **[!UICONTROL Advanced campaign parameters...]** och skapar leveranserna.
 
 ![](assets/mkg_dist_local_op_creation4b.png)
 
@@ -134,7 +135,7 @@ Dubbelklicka på **[!UICONTROL Query]** aktivitet som konfigurerar den enligt an
 
 ### Leverans {#delivery}
 
-I **[!UICONTROL Audit]** klickar du på **[!UICONTROL Detail...]** -ikonen för att visa **[!UICONTROL Scheduling]** för den valda leveransen.
+I **[!UICONTROL Audit]** klickar du på **[!UICONTROL Detail...]** -ikonen för att visa **[!UICONTROL Scheduling]** för vald leverans.
 
 ![](assets/mkg_dist_local_op_creation4c.png)
 
@@ -146,7 +147,7 @@ Konfigurera vid behov maxstorleken för leveransen:
 
 ![](assets/mkg_dist_local_op_creation4e.png)
 
-Hitta HTML. I **[!UICONTROL Delivery > Current order > Additional fields]**, använder du **[!UICONTROL Age segment]** för att hitta leveransen enligt målets ålder.
+Hitta HTML. Till exempel i **[!UICONTROL Delivery > Current order > Additional fields]**, använder du **[!UICONTROL Age segment]** för att hitta leveransen enligt målets ålder.
 
 ![](assets/mkt_dist_local_campaign_localize_html.png)
 
@@ -265,7 +266,7 @@ Så här beställer du en kampanj:
 
    Mer information finns i [Godkännandeprocess](#approval-process) -avsnitt.
 
-1. Den lokala operatorn meddelas sedan om att kampanjen är tillgänglig: kampanjtillgänglighet finns i listan över kampanjpaket i **Kampanjer** -fliken. Kampanjen kan sedan användas. Mer information finns i [Åtkomst till kampanjer](accessing-campaigns.md).
+1. Den lokala operatorn meddelas sedan om att kampanjen är tillgänglig: kampanjtillgängligheten finns i listan över kampanjpaket i **Kampanjer** -fliken. Kampanjen kan sedan användas. Mer information finns i [Åtkomst till kampanjer](accessing-campaigns.md).
 
    The **[!UICONTROL Start targeting with order approval]** gör att den lokala enheten kan köra kampanjen så snart ordern har godkänts.
 
@@ -319,7 +320,7 @@ Operatören som ansvarar för godkännandet kan avvisa en order eller ett kampan
 
 ![](assets/mkg_dist_do_not_valid.png)
 
-Om granskaren avvisar en order skickas den relevanta underrättelsen automatiskt till de berörda lokala enheterna: den visar kommentaren som angetts av den operator som avvisade godkännandet.
+Om granskaren avvisar en order skickas det relevanta meddelandet automatiskt till de berörda lokala enheterna, där kommentaren från den aktör som avvisade godkännandet visas.
 
 Information visas på sidan med kampanjpaket eller på sidan med kampanjorder. Om de har åtkomst till Adobe Campaign Client Console informeras lokala enheter om detta refusering.
 

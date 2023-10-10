@@ -2,10 +2,10 @@
 title: Kampanjinteraktion - erbjudandemellanslag
 description: Lär dig hur du skapar erbjudandemellanslag
 feature: Interaction, Offers
-role: Data Engineer
+role: User, Admin
 level: Beginner
 exl-id: c116d86a-d3e2-47e3-a641-e2d7c8cc575c
-source-git-commit: 8eb92dd1cacc321fc79ac4480a791690fc18511c
+source-git-commit: 567c2e84433caab708ddb9026dda6f9cb717d032
 workflow-type: tm+mt
 source-wordcount: '838'
 ht-degree: 3%
@@ -16,7 +16,7 @@ ht-degree: 3%
 
 Innehållet i erbjudandekatalogen är konfigurerat i erbjudandemellanslag. Som standard kan innehållet innehålla följande fält: **[!UICONTROL Title]**, **[!UICONTROL Destination URL]**, **[!UICONTROL Image URL]**, **[!UICONTROL HTML content]** och **[!UICONTROL Text content]**. Fältsekvensen är konfigurerad i erbjudandeutrymmet.
 
-Som **teknisk administratör** kan du skapa blanksteg i designmiljön. Du måste ha tillgång till undermappen för erbjudandeutrymmet. När erbjudandet har skapats dupliceras dessa erbjudanden automatiskt till Live-miljön när erbjudandet godkänns.
+Som en **teknisk administratör** kan du skapa blanksteg i designmiljön. Du måste ha tillgång till undermappen för erbjudandeutrymmet. När erbjudandet har skapats dupliceras dessa erbjudanden automatiskt till Live-miljön när erbjudandet godkänns.
 
 Återgivningen i HTML skapas via en återgivningsfunktion. Sekvensen för fälten som definieras i återgivningsfunktionen måste vara identisk med sekvensen som konfigurerats i innehållet.
 
@@ -46,13 +46,13 @@ Följ stegen nedan för att skapa ett nytt erbjudandeutrymme:
 
    >[!NOTE]
    >
-   >Det här alternativet används vid förhandsgranskningen och gör att erbjudandemellanslag blir ogiltiga vid publicering om ett av de obligatoriska fälten saknas i erbjudandet. Om ett erbjudande redan finns på en plats där erbjudandet ska erbjudas beaktas dock inte dessa kriterier.
+   >Det här alternativet används vid förhandsgranskningen och gör att erbjudandemellanslag blir ogiltiga vid publicering om ett av de obligatoriska fälten saknas i erbjudandet. Om ett erbjudande redan finns på en plats i ett erbjudande beaktas dock inte dessa kriterier.
 
    ![](assets/offer_space_create_005.png)
 
 1. Klicka **[!UICONTROL Edit functions]** för att skapa en återgivningsfunktion.
 
-   Dessa funktioner används för att generera offertrepresentationer på ett visst utrymme. Det finns flera möjliga format: HTML eller text.
+   Dessa funktioner används för att generera offertrepresentationer på ett visst erbjudandeutrymme. Det finns flera möjliga format: HTML eller text.
 
    **Anteckning** - XML-formatet är begränsat till inkommande interaktioner som inte är tillgängliga i den här versionen av produkten. [Läs mer](../start/v7-to-v8.md#gs-unavailable-features)
 
@@ -73,7 +73,7 @@ Status för erbjudandeförslag varierar beroende på interaktionen med målpopul
 
 ### Statuslista för erbjudande {#status-list}
 
-Erbjudandestatus:
+Erbjudandestatus är:
 
 * **[!UICONTROL Accepted]**
 * **[!UICONTROL Scheduled]**
@@ -82,7 +82,7 @@ Erbjudandestatus:
 * **[!UICONTROL Presented]**
 * **[!UICONTROL Rejected]**
 
-Dessa värden används inte som standard: måste konfigureras.
+Dessa värden används inte som standard, utan måste konfigureras.
 
 >[!NOTE]
 >
@@ -103,7 +103,7 @@ Följ stegen nedan för att göra detta:
 
 ### Erbjudandestatus när erbjudandet godkänns {#configuring-the-status-when-the-proposition-is-accepted}
 
-När ett erbjudande har lagts fram **accepterad** använder du ett av de värden som anges som standard för att konfigurera förslagets nya status. Uppdateringen tillämpas när en mottagare klickar på en länk i erbjudandet.
+När ett erbjudande har skickats **accepterad** använder du ett av de värden som anges som standard för att konfigurera förslagets nya status. Uppdateringen tillämpas när en mottagare klickar på en länk i erbjudandet.
 
 Följ stegen nedan för att göra detta:
 
@@ -145,7 +145,7 @@ Du kan använda **[!UICONTROL Interested]** status till ett erbjudande när leve
 
 ## Förhandsgranska per utrymme {#offer-preview-per-space}
 
-I **[!UICONTROL Preview]** kan du visa de erbjudanden som mottagaren är berättigad till via en vald metod. I exemplet nedan är mottagaren berättigad till tre offerter via post.
+I **[!UICONTROL Preview]** kan du visa de erbjudanden som mottagaren är berättigad till via en vald metod. I exemplet nedan är mottagaren berättigad till tre offertförslag via post.
 
 ![](assets/offer_space_overview_002.png)
 
@@ -156,4 +156,4 @@ Om en mottagare inte är berättigad till något erbjudande visas detta i förha
 
 Förhandsvisningen kan ignorera kontexter när de är begränsade till ett mellanslag. Detta är fallet när interaktionsschemat har utökats för att lägga till fält som refereras i ett utrymme med en inkommande kanal.
 
-![](../assets/do-not-localize/book.png)  Mer information om detta finns i exemplet i [Campaign Classic v7-dokumentation](https://experienceleague.adobe.com/docs/campaign-classic/using/managing-offers/advanced-parameters/extension-example.html){target="_blank"}.
+![](../assets/do-not-localize/book.png)  Mer information om detta finns i exemplet i [Campaign Classic v7 - dokumentation](https://experienceleague.adobe.com/docs/campaign-classic/using/managing-offers/advanced-parameters/extension-example.html){target="_blank"}.

@@ -3,8 +3,9 @@ product: campaign
 title: Skapa en samverkanskampanj
 description: Lär dig hur du skapar en samverkanskampanj
 feature: Distributed Marketing
+role: User
 exl-id: edf887fb-c391-405c-b3cf-dc34aed69c53
-source-git-commit: 50688c051b9d8de2b642384963ac1c685c0c33ee
+source-git-commit: 567c2e84433caab708ddb9026dda6f9cb717d032
 workflow-type: tm+mt
 source-wordcount: '910'
 ht-degree: 3%
@@ -19,7 +20,7 @@ Den centrala enheten skapar samverkanskampanjer från **Distribuerad marknadsfö
 
 ## Skapa en samverkanskampanj {#creating-a-collaborative-campaign}
 
-Om du vill konfigurera en samarbetskampanj klickar du på **[!UICONTROL Campaign management > Campaigns]** mappen, sedan **[!UICONTROL New]** ikon.
+Om du vill konfigurera en samarbetskampanj klickar du på **[!UICONTROL Campaign management > Campaigns]** mappen, sedan **[!UICONTROL New]** -ikon.
 
 >[!NOTE]
 >
@@ -29,7 +30,7 @@ Konfigurationsprocessen för en databas för en samarbetskampanj liknar den för
 
 ### Per formulär {#by-form}
 
-Om du vill skapa en kampanj för samarbete (per formulär) **[!UICONTROL Collaborative campaign (by form)]** -mallen måste vara markerad.
+Om du vill skapa en kampanj för samarbete (per formulär) **[!UICONTROL Collaborative campaign (by form)]** mall måste väljas.
 
 ![](assets/mkg_dist_mutual_op_form2.png)
 
@@ -45,7 +46,7 @@ The **[!UICONTROL Campaign Package]** kan ni använda lokala kampanjmallar (fär
 
 ### Per kampanj {#by-campaign}
 
-Om du vill skapa en samarbetskampanj (per kampanj) **[!UICONTROL Collaborative campaign (by campaign) (opCollaborativeByCampaign)]** -mallen måste vara markerad.
+Om du vill skapa en samarbetskampanj (per kampanj) **[!UICONTROL Collaborative campaign (by campaign) (opCollaborativeByCampaign)]** mall måste väljas.
 
 ![](assets/mkg_dist_mutual_op_by_op2.png)
 
@@ -65,7 +66,7 @@ Den centrala enheten kan visa alla underordnade kampanjer som är länkade till 
 
 ### Efter målgodkännande {#by-target-approval}
 
-Om du vill skapa en samarbetskampanj (genom målgodkännande) använder du **[!UICONTROL Collaborative campaign (by target approval)]** -mallen måste vara markerad.
+Om du vill skapa en samarbetskampanj (genom målgodkännande) använder du **[!UICONTROL Collaborative campaign (by target approval)]** mall måste väljas.
 
 ![](assets/mkg_dist_mutual_op_by_valid.png)
 
@@ -75,11 +76,11 @@ Om du vill skapa en samarbetskampanj (genom målgodkännande) använder du **[!U
 
 Kampanjarbetsflödet måste integreras **Lokalt godkännande** typaktivitet. Aktivitetsparametrarna är följande:
 
-* **[!UICONTROL Action to perform]** : Målmeddelande för godkännande.
+* **[!UICONTROL Action to perform]** : Meddelande om målgodkännande.
 * **[!UICONTROL Distribution context]** : Explicit.
 * **[!UICONTROL Data distribution]** : Lokal entitetsdistribution.
 
-**Lokal entitetsdistribution** typdatafördelningen måste skapas. Med mallen för datadistribution kan du begränsa antalet poster från en lista med grupperingsvärden. I **[!UICONTROL Resources > Campaign management > Data distribution]** klickar du på **[!UICONTROL New]** ikon för att skapa en ny **[!UICONTROL Data distribution]**. Mer information om datadistribution
+**Lokal entitetsdistribution** typdatafördelningen måste skapas. Med mallen för datadistribution kan du begränsa antalet poster från en lista med grupperingsvärden. I **[!UICONTROL Resources > Campaign management > Data distribution]** klickar du på **[!UICONTROL New]** ikon för att skapa en ny **[!UICONTROL Data distribution]**. Mer information om datadistribution finns i
 
 ![](assets/mkg_dist_data_distribution.png)
 
@@ -101,7 +102,7 @@ Den lokala enheten kan ta bort vissa kontakter baserat på kampanjinnehållet.
 
 ### Enkel {#simple}
 
-Om du vill skapa en enkel samarbetskampanj **[!UICONTROL Collaborative campaign (simple)]** -mallen måste vara markerad.
+Om du vill skapa en enkel samarbetskampanj **[!UICONTROL Collaborative campaign (simple)]** mall måste väljas.
 
 ## Skapa ett kampanjpaket för samarbete {#creating-a-collaborative-campaign-package}
 
@@ -135,7 +136,7 @@ Den centrala enheten måste specificera de lokala enheter som är inblandade per
 
 >[!CAUTION]
 >
->**[!UICONTROL Simple, by form and by campaign collaborative campaign kits]** kan inte godkännas om inte de relevanta lokala enheterna har specificerats.
+>**[!UICONTROL Simple, by form and by campaign collaborative campaign kits]** kan inte godkännas om inte relevanta lokala enheter har angetts.
 
 ### Godkännandelägen {#approval-modes}
 

@@ -3,8 +3,9 @@ product: campaign
 title: Leveranser över flera kanaler
 description: Läs mer om flerkanalsleveranser
 feature: Workflows, Channels Activity
+role: User
 exl-id: fedcffcd-cf9b-4c3d-bd25-cb87dda30192
-source-git-commit: 6464e1121b907f44db9c0c3add28b54486ecf834
+source-git-commit: 567c2e84433caab708ddb9026dda6f9cb717d032
 workflow-type: tm+mt
 source-wordcount: '249'
 ht-degree: 4%
@@ -15,7 +16,7 @@ ht-degree: 4%
 
 Flerkanalsleveranser är tillgängliga i **[!UICONTROL Deliveries]** flik för [kampanjarbetsflöde](campaign-workflows.md) verksamhet.
 
-Välj den mall som du vill basera leveransen på och definiera innehållet i mallen.
+Välj den mall som du vill basera leveransen på och definiera dess innehåll.
 
 Du kan ange ett mål för leveransen uppströms arbetsflödet med hjälp av olika målinriktningsaktiviteter.
 
@@ -23,7 +24,7 @@ I exemplet nedan kan du lära dig hur du skapar ett arbetsflöde för att skicka
 
 1. Skapa en kampanj.
 1. I **[!UICONTROL Targeting and workflows]** fliken med kampanjen, lägg till en **[!UICONTROL Query]** aktivitet.
-1. Konfigurera frågan: Välj de mottagare som prenumererar på push-meddelanden som måldimension.
+1. Konfigurera frågan: välj de mottagare som prenumererar på push-meddelanden som måldimension.
 
    >[!NOTE]
    >

@@ -3,8 +3,9 @@ product: campaign
 title: Datainläsning (RDBMS)
 description: Läs mer om arbetsflödesaktivitet för datainläsning (RDBMS)
 feature: Workflows, Data Management Activity
+role: User
 exl-id: 2d650573-f630-4aba-bd40-2db88ef1c346
-source-git-commit: 77ec01aaba1e50676bed57f503a9e4e8bb1fe54c
+source-git-commit: 567c2e84433caab708ddb9026dda6f9cb717d032
 workflow-type: tm+mt
 source-wordcount: '187'
 ht-degree: 3%
@@ -33,6 +34,6 @@ För att förbättra prestandan rekommenderar vi att du använder frågeaktivite
 
    ![](assets/s_advuser_wf_sgbd_sample_2.png)
 
-1. Du kan definiera ett filter för dessa data. Om du vill göra det klickar du på **[!UICONTROL Edit query....]** länk.
+1. Du kan definiera ett filter för dessa data. Klicka på **[!UICONTROL Edit query....]** länk.
 
    De data som samlas in på det här sättet kan användas under hela arbetsflödets livscykel.

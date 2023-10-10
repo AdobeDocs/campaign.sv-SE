@@ -2,8 +2,9 @@
 title: Inbyggd beräkning av rapportvärden
 description: Inbyggd beräkning av rapportvärden
 feature: Reporting
+role: Data Engineer
 exl-id: ad8e9f9c-df24-4a11-b8df-4b31dd54911f
-source-git-commit: 77ec01aaba1e50676bed57f503a9e4e8bb1fe54c
+source-git-commit: 567c2e84433caab708ddb9026dda6f9cb717d032
 workflow-type: tm+mt
 source-wordcount: '2978'
 ht-degree: 2%
@@ -128,7 +129,7 @@ Den här rapporten baseras på **[!UICONTROL Delivery and tracking statistics]**
 
 **Uppdelning efter domän**
 
-I den andra delen av rapporten finns detaljerad information om hur misslyckade meddelanden per Internetdomän är fördelade i motsats till feltypen. Formeln som är länkad till **Fel** Indikatorn (@value) i det här fallet är: Count(@status=2 och @domain=&quot;Värde för domännamnet&quot;), d.v.s. antal alla meddelanden med felstatus för den här domänen.
+I den andra delen av rapporten finns detaljerad information om hur misslyckade meddelanden per Internetdomän är fördelade i motsats till feltypen. Formeln som är länkad till **Fel** Indikatorn (@value) i det här fallet är: Count(@status=2 och @domain=&quot;Värde för domännamnet&quot;), d.v.s. ett antal meddelanden med en misslyckad status för den här domänen.
 
 ## Webbläsare {#browsers-1}
 
@@ -155,7 +156,7 @@ Den här rapporten baseras på **[!UICONTROL Internet Browser Statistics]** tabe
   <tr> 
    <td> Sidvyer<br /> </td> 
    <td> @totalPages<br /> </td> 
-   <td> Totalt antal klick på leveranslänkar som använder den här webbläsaren för alla leveranser.<br /> </td> 
+   <td> Totalt antal klick på leveranslänkar som använder den här webbläsaren, för alla leveranser.<br /> </td> 
    <td> Sum(@pages) <br /> </td> 
   </tr> 
   <tr> 
@@ -241,7 +242,7 @@ Den här rapporten baseras på **[!UICONTROL Delivery]** (nms:delivery), **[!UIC
   <tr> 
    <td> Twitter<br /> </td> 
    <td> @twitter<br /> </td> 
-   <td> Summan av alla @totalClicks som URL-kategorin är lika med"twitter".<br /> </td> 
+   <td> Summan av alla @totalClicks för vilka URL-kategorin är lika med "twitter".<br /> </td> 
    <td> Sum(iIf([url/@category]='twitter',@totalClicks,0))<br /> </td> 
   </tr> 
   <tr> 
@@ -354,7 +355,7 @@ Den här rapporten baseras på **[!UICONTROL Delivery]** (nms:delivery), **[!UIC
   <tr> 
    <td> Nya kontakter<br /> </td> 
    <td> @newContacts<br /> </td> 
-   <td> Antal besökare som är länkade till en mottagare.<br /> </td> 
+   <td> Antal besökare länkade till en mottagare.<br /> </td> 
    <td> Formel: count(@id)<br /> Filter: @receive-id != 0<br /> </td> 
   </tr> 
   <tr> 
@@ -366,7 +367,7 @@ Den här rapporten baseras på **[!UICONTROL Delivery]** (nms:delivery), **[!UIC
   <tr> 
    <td> Aktier<br /> </td> 
    <td> @shared<br /> </td> 
-   <td> URL-kategori som ingår i"email","facebook","twitter","delicious","digg","google","linkedin"<br /> Räkna med alla @totalClicks med en URL-kategori som är lika med"email","facebook","twitter","delicious","digg","google" eller"linkedin".<br /> </td> 
+   <td> URL-kategori som ingår i"email","facebook","twitter","delicious","digg","google","linkedin"<br /> Antal alla @totalClicks med en URL-kategori som är lika med"email","facebook","twitter","delicious","digg","google" eller"linkedin".<br /> </td> 
    <td> count (Iif([url/@category] IN (email', 'facebook', 'twitter', 'delicious', 'digg', 'google', 'linkedin'), @totalClicks, 0))<br /> </td> 
   </tr> 
  </tbody> 
@@ -430,13 +431,13 @@ Den här rapporten baseras på **[!UICONTROL Internet Browser Statistics]** tabe
   <tr> 
    <td> Global ränta<br /> </td> 
    <td> -<br /> </td> 
-   <td> Procent besökare per version jämfört med totalt antal besökare i alla operativsystem.<br /> </td> 
+   <td> Procentandel besökare per version jämfört med totalt antal besökare i alla operativsystem.<br /> </td> 
    <td> percent(@totalVisitors, @globalVisitors)<br /> </td> 
   </tr> 
   <tr> 
    <td> Relativ ränta<br /> </td> 
    <td> -<br /> </td> 
-   <td> Procentandel besökare per version jämfört med det totala antalet besökare som använder det här operativsystemet.<br /> </td> 
+   <td> Procentandel besökare per version jämfört med det totala antalet besökare som använder operativsystemet.<br /> </td> 
    <td> percent(@totalVisitors, sum(@totalVisitors))<br /> </td> 
   </tr> 
  </tbody> 
@@ -464,13 +465,13 @@ Den här rapporten baseras på **[!UICONTROL Services]** tabell (nms:service).
   </tr> 
   <tr> 
    <td> Prenumerationer<br /> </td> 
-   <td> @_prenumeration<br /> </td> 
+   <td> @_subscription<br /> </td> 
    <td> antal prenumerationer (@action = 1) föregående dag.<br /> </td> 
    <td> sum(Iif(@action = 1 och @date &gt; addDays(getDate(), (-1)), 1, 0))<br /> </td> 
   </tr> 
   <tr> 
    <td> Avprenumerationer<br /> </td> 
-   <td> @_unprenumeration<br /> </td> 
+   <td> @_unsubscription<br /> </td> 
    <td> antal avbeställningar (åtgärd = 0) föregående dag.<br /> </td> 
    <td> sum(Iif(@action = 0 och @date &gt; addDays(getDate(), (-1)), 1, 0))<br /> </td> 
   </tr> 
@@ -478,7 +479,7 @@ Den här rapporten baseras på **[!UICONTROL Services]** tabell (nms:service).
    <td> Utveckling<br /> </td> 
    <td> -<br /> </td> 
    <td> Antal prenumerationer minus antalet prenumerationer som har avbrutits. Kursen beräknas i relation till det totala antalet abonnenter.<br /> </td> 
-   <td> Iif(number(@_subscription) &gt; number(@_unsubscription), '+', '')+format(@_subscription - @_unsubscription, 'number', '##0')+ Iif(@_subscriber&gt;0,' (' + format(100*percent(@_subscription - @_unsubscription, @_subscriber), 'number', '#,##0.0 (')+ '%)','')<br /> </td> 
+   <td> Iif(number(@_subscription) &gt; number(@_unsubscription), '+', '')+format(@_subscription - @_unsubscription, 'number', '##0')+ Iif(@_subscriber&gt;0,' (' + format(100*percent(@_subscription - @_unsubscription, @_subscriber), 'number', '#,##0.0 (')+ '%)',')<br /> </td> 
   </tr> 
   <tr> 
    <td> Lojalitet<br /> </td> 
@@ -570,7 +571,7 @@ Den här rapporten baseras på **[!UICONTROL Delivery and tracking statistics]**
    <td> Countdistans(Iif([url/@type]=1, @broadLog-id, 0))<br /> </td> 
   </tr> 
   <tr> 
-   <td> Råreaktivitet<br /> </td> 
+   <td> Raw-reaktivitet<br /> </td> 
    <td> -<br /> </td> 
    <td> Procentandel av antalet mottagare som klickade på en leverans minst en gång jämfört med antalet mottagare som öppnade en leverans minst en gång.<br /> </td> 
    <td> percent(@mottagareKlicka,@mottagareÖppna)<br /> </td> 
@@ -644,7 +645,7 @@ Den här rapporten baseras på **[!UICONTROL Delivery and tracking statistics]**
   <tr> 
    <td> E-post<br /> </td> 
    <td> @email<br /> </td> 
-   <td> Summan av alla @totalClicks med en URL-kategori som är lika med"e-post".<br /> </td> 
+   <td> Summan av alla @totalClicks med en URL-kategori som är lika med "email".<br /> </td> 
    <td> Sum(iIf([url/@category]='email',@totalClicks,0))<br /> </td> 
   </tr> 
   <tr> 
@@ -656,7 +657,7 @@ Den här rapporten baseras på **[!UICONTROL Delivery and tracking statistics]**
   <tr> 
    <td> Twitter<br /> </td> 
    <td> @twitter<br /> </td> 
-   <td> Summan av alla @totalClicks med en URL-kategori som är lika med"twitter".<br /> </td> 
+   <td> Summan av alla @totalClicks med en URL-kategori som är lika med "twitter".<br /> </td> 
    <td> Sum(iIf([url/@category]='twitter',@totalClicks,0))<br /> </td> 
   </tr> 
   <tr> 
@@ -755,8 +756,8 @@ Den här rapporten baseras på **[!UICONTROL Delivery]** tabell (nms:delivery).
   </tr> 
   <tr> 
    <td> Meddelanden som avvisats av regeln<br /> </td> 
-   <td> @visa<br /> </td> 
-   <td> Antal adresser som ignoreras under analysen enligt typologireglerna: ingen angiven adress, i karantän, på blockeringslista, osv.<br /> </td> 
+   <td> @avvisande<br /> </td> 
+   <td> Antal adresser som ignoreras under analysen enligt typologireglerna: ingen adress har angetts, i karantän, på blockeringslista osv.<br /> </td> 
    <td> sum([properties/@reject])<br /> </td> 
   </tr> 
   <tr> 
@@ -911,7 +912,7 @@ Den här rapporten baseras på **Leveranser** (nms:delivery) och **Spårningslog
 
 ## Andra indikatorer {#other-indicators}
 
-The **Skickat** indikator (@sent), som du kommer åt via **Leveranser (nms:delivery) > Indikatorer** noden motsvarar det totala antalet SMS som skickas till tjänstleverantören. Den här indikatorn används endast för SMS-leveranser och får inte användas för andra typer av leveranser (ska inte förväxlas med **@success** och **@bearbetad** indikatorer).
+The **Skickat** -indikator (@sent), som du kommer åt via **Leveranser (nms:delivery) > Indikatorer** noden motsvarar det totala antalet SMS som skickas till tjänstleverantören. Den här indikatorn används endast för SMS-leveranser och får inte användas för andra typer av leveranser (ska inte förväxlas med **@success** och **@bearbetad** indikatorer).
 
 ## Synkronisering av indikator {#indicator-synchronization}
 

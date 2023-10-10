@@ -3,8 +3,9 @@ product: campaign
 title: Distribuerade marknadsexempel
 description: Distribuerade marknadsexempel
 feature: Distributed Marketing
+role: User
 exl-id: 7825426b-c9e4-49e9-840c-dc6d6d836fbe
-source-git-commit: 50688c051b9d8de2b642384963ac1c685c0c33ee
+source-git-commit: 567c2e84433caab708ddb9026dda6f9cb717d032
 workflow-type: tm+mt
 source-wordcount: '1290'
 ht-degree: 0%
@@ -38,43 +39,43 @@ I det här exemplet **Kampanjorder** aktiviteten innefattar:
 
 * fält som ska anges av den lokala enheten under ordern,
 
-   ![](assets/mkg_dist_web_app2.png)
+  ![](assets/mkg_dist_web_app2.png)
 
 * länkar som gör det möjligt för den lokala enheten att utvärdera kampanjen (t.ex. mål, budget, innehåll),
 
-   ![](assets/mkg_dist_web_app3.png)
+  ![](assets/mkg_dist_web_app3.png)
 
 * skript som gör att du kan beräkna och visa resultatet av dessa utvärderingar.
 
-   ![](assets/mkg_dist_web_app4.png)
+  ![](assets/mkg_dist_web_app4.png)
 
 I det här exemplet används följande API:er:
 
 * För målutvärderingen
 
-   ```
-   var res = nms.localOrder.EvaluateTarget(ctx.localOrder);
-   ```
+  ```
+  var res = nms.localOrder.EvaluateTarget(ctx.localOrder);
+  ```
 
 * För utvärderingen av budgeten
 
-   ```
-   var res = nms.localOrder.EvaluateDeliveryBudget(ctx.@deliveryId, NL.XTK.parseNumber(ctx.@compt));
-   ```
+  ```
+  var res = nms.localOrder.EvaluateDeliveryBudget(ctx.@deliveryId, NL.XTK.parseNumber(ctx.@compt));
+  ```
 
 * För utvärdering av innehåll
 
-   ```
-   var res = nms.localOrder.EvaluateContent(ctx.localOrder, ctx.@deliveryId, "html", resSeed.@id);
-   ```
+  ```
+  var res = nms.localOrder.EvaluateContent(ctx.localOrder, ctx.@deliveryId, "html", resSeed.@id);
+  ```
 
 ## Skapa en samarbetskampanj (genom målgodkännande) {#creating-a-collaborative-campaign--by-target-approval-}
 
 ### Introduktion {#introduction}
 
-Du är marknadschef för ett stort varumärke för kläder som har en webbutik och flera företag över hela USA. Nu när våren är inne bestämmer du dig för att skapa ett specialerbjudande som ger dina bästa kunder 50 % rabatt på alla klänningar i din katalog.
+Du är marknadschef för ett stort varumärke för kläder som har en webbutik och flera företag över hela USA. Nu när våren är inne väljer du att skapa ett specialerbjudande som ger dina bästa kunder 50 % rabatt på alla klänningar i din katalog.
 
-Erbjudandet riktar sig till de bästa kunderna i era amerikanska butiker, dvs. de som har spenderat mer än 300 dollar sedan början av året.
+Erbjudandet riktar sig till de bästa kunderna i era amerikanska butiker, det vill säga de som har spenderat mer än 300 dollar sedan början av året.
 
 Du bestämmer dig därför för att använda Distributed Marketing för att skapa en samverkanskampanj (efter målgodkännande) som gör att du kan välja de bästa kunderna (grupperade efter region) som får den e-postleverans som innehåller specialerbjudandet.
 
@@ -101,7 +102,7 @@ Stegen är följande:
 
    ![](assets/mkg_dist_use_case_target_valid8.png)
 
-1. Genom att klicka på **[!UICONTROL Access your contact list and approve targeting]** den lokala enheten ges åtkomst (via webbläsare) till listan över klienter som valts för kampanjen.
+1. Klicka på **[!UICONTROL Access your contact list and approve targeting]** den lokala enheten ges åtkomst (via webbläsare) till listan över klienter som valts för kampanjen.
 
    ![](assets/mkg_dist_use_case_target_valid9.png)
 
@@ -158,10 +159,10 @@ När kontrollerna har godkänts kan kampanjen starta automatiskt.
 
 Nu kan du lägga till en **kampanjpaket** från **[!UICONTROL Campaigns]** -fliken.
 
-1. Välj **[!UICONTROL Reference campaign]**. I **[!UICONTROL Edit]** kan du välja **[!UICONTROL Approval mode]** som kan användas för er kampanj:
+1. Välj **[!UICONTROL Reference campaign]**. I **[!UICONTROL Edit]** -fliken i paketet kan du välja **[!UICONTROL Approval mode]** som kan användas för er kampanj:
 
    * in **Manuell** om de lokala enheterna accepterar inbjudan från den centrala enheten. De kan ta bort de redan valda kontakterna om de vill och om de behöver ett godkännande från chefen för att bekräfta att de deltar i kampanjen.
-   * in **Automatisk** måste de lokala enheterna delta i kampanjen, såvida de inte avregistrerar sig från den. De kan ta bort kontakter utan att behöva godkänna dem.
+   * in **Automatisk** måste de lokala enheterna delta i kampanjen, såvida de inte avregistrerar sig från den. De kan ta bort kontakter utan godkännande.
 
    ![](assets/mkg_dist_use_case_target_valid.png)
 
@@ -177,7 +178,7 @@ Nu kan du lägga till en **kampanjpaket** från **[!UICONTROL Campaigns]** -flik
 
 ### Introduktion {#introduction-1}
 
-Du är marknadschef för ett stort makeup-varumärke som har en webbutik och flera företag över hela USA. Om du vill ta bort ditt vinterlager och ge plats för ditt nya lager skapar du ett specialerbjudande som riktar sig till två kundkategorier: över 30-talet, till vilka du kommer att erbjuda ålderskänsliga hudvårdsprodukter, och de under 30-talet, till vilka du kommer att erbjuda de mer grundläggande hudvårdsprodukterna.
+Du är marknadschef för ett stort makeup-varumärke som har en webbutik och flera företag över hela USA. Om du vill ta bort vintern från lagret och ge plats för det nya lagret skapar du ett specialerbjudande som riktar sig till två kundkategorier: över 30-talet, som du ska erbjuda ålderskänsliga hudvårdsprodukter till och under 30-talet, till vilka du ska erbjuda de mer grundläggande hudvårdsprodukterna.
 
 Du bestämmer dig därför för att använda Distributed Marketing för att skapa en samverkanskampanj (per formulär) som gör att du kan välja kunder från olika butiker utifrån åldersintervall. Dessa kunder får ett mejl med ett specialerbjudande som anpassats efter deras ålder.
 
@@ -209,13 +210,13 @@ Stegen är följande:
 
    ![](assets/mkg_dist_use_case_form_7.png)
 
-1. De lokala enheterna fyller i det personliga formuläret och sedan i
+1. De lokala enheterna fyller i det personliga formuläret och sedan i:
 
    * utvärdera målet och budgeten,
    * förhandsgranska leveransinnehållet,
    * godkänna deras deltagande.
 
-      ![](assets/mkg_dist_use_case_form_8.png)
+     ![](assets/mkg_dist_use_case_form_8.png)
 
 1. Operatören som ansvarar för validering av order godkänner deltagandet.
 

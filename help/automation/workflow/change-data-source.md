@@ -2,8 +2,9 @@
 title: Ändra datakälla
 description: Läs mer om Ändra datakällaktivitet
 feature: Workflows, Data Management, Federated Data Access
+role: User
 exl-id: ca7eca9d-9112-4ea1-9a0c-a24cf6a978e6
-source-git-commit: 77ec01aaba1e50676bed57f503a9e4e8bb1fe54c
+source-git-commit: 567c2e84433caab708ddb9026dda6f9cb717d032
 workflow-type: tm+mt
 source-wordcount: '238'
 ht-degree: 3%
@@ -12,7 +13,7 @@ ht-degree: 3%
 
 # Ändra datakälla {#change-data-source}
 
-Använd **[!UICONTROL Change data source]** aktivitet för att ändra datakällan för en [arbetsflödestabell](use-workflow-data.md#workflow-temporary-work-table). Den här aktiviteten ger större flexibilitet när det gäller att hantera data över olika datakällor, till exempel FDA (Federated Data Access), FDA (Campaign Cloud database) och Campaign Local-databaser.
+Använd **[!UICONTROL Change data source]** aktivitet för att ändra datakällan för en [arbetsflödesregister](use-workflow-data.md#workflow-temporary-work-table). Den här aktiviteten ger större flexibilitet när det gäller att hantera data över olika datakällor, till exempel FDA (Federated Data Access), FDA (Campaign Cloud database) och Campaign Local-databaser.
 
 Arbetsflödet **[!UICONTROL Working table]** används för att hantera och dela data med arbetsflödesaktiviteter.
 
@@ -23,7 +24,7 @@ Använd en **[!UICONTROL Change Data Source]** aktivitet som använder en annan 
 
 Observera att när du använder **[!UICONTROL Change Data Source]** måste du växla tillbaka till Cloud-databasen för att fortsätta med arbetsflödeskörningen.
 
-Så här använder du **[!UICONTROL Change Data Source]** måste du
+Använd **[!UICONTROL Change Data Source]** måste du
 
 1. Skapa ett arbetsflöde.
 
@@ -35,7 +36,7 @@ Så här använder du **[!UICONTROL Change Data Source]** måste du
 
    ![](assets/change-data-source.png)
 
-1. Redigera **[!UICONTROL Change data source]** aktivitet att välja **[!UICONTROL Default data source]**.
+1. Redigera dina **[!UICONTROL Change data source]** aktivitet att välja **[!UICONTROL Default data source]**.
 
    Arbetstabellen, som innehåller resultatet av din fråga, flyttas sedan till den lokala standarddatabasen för Campaign.
 

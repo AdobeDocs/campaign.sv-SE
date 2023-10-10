@@ -1,10 +1,11 @@
 ---
 product: campaign
 title: Leveransbeskrivning
-description: Läs mer om arbetsflödesaktiviteten i leveransutkast
+description: Läs mer om arbetsflödesaktiviteten Disposition
 feature: Workflows, Targeting Activity
+role: User
 exl-id: 3c06b329-b2d8-4ac8-ab9b-3ab3e525d109
-source-git-commit: 6464e1121b907f44db9c0c3add28b54486ecf834
+source-git-commit: 567c2e84433caab708ddb9026dda6f9cb717d032
 workflow-type: tm+mt
 source-wordcount: '243'
 ht-degree: 1%
@@ -32,7 +33,7 @@ The **leveransdisposition** -aktivitet, som finns i kampanjarbetsflödena, gör 
 
    * Om du vill ringa erbjudandemotorn kan du kontrollera **[!UICONTROL Restrict the number of propositions selected]** box. Ange erbjudandeutrymme och antalet offerter som ska presenteras i leveransen.
 
-      Anbudsvikterna och reglerna för rätt till uppgradering kommer att beaktas av erbjudandemotorn.
+     Anbudsvikterna och reglerna för rätt till uppgradering kommer att beaktas av erbjudandemotorn.
 
    * Om du inte markerar kryssrutan visas alla erbjudanden i leveransdispositionen utan att du behöver ringa till erbjudandemotorn.
 

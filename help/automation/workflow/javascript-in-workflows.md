@@ -3,8 +3,9 @@ product: campaign
 title: Exempel på JavaScript-kod i arbetsflöden
 description: De här exemplen visar hur du kan använda JavaScript-kod i ett arbetsflöde
 feature: Workflows
+role: Developer
 exl-id: 3412e3de-1c88-496e-8fda-ca9fc9b18e69
-source-git-commit: 6464e1121b907f44db9c0c3add28b54486ecf834
+source-git-commit: 567c2e84433caab708ddb9026dda6f9cb717d032
 workflow-type: tm+mt
 source-wordcount: '1752'
 ht-degree: 2%
@@ -20,9 +21,9 @@ I följande exempel visas hur du kan använda JavaScript-kod i ett arbetsflöde:
 * [Utlösa ett arbetsflöde med en statisk SOAP-metod](#trigger-example)
 * [Interagera med databasen med en icke-statisk SOAP-metod](#interact-example)
 
-[Läs mer](https://experienceleague.adobe.com/developer/campaign-api/api/p-14.html) om statiska och icke-statiska SOAP-metoder.
+[Läs mer](https://experienceleague.adobe.com/developer/campaign-api/api/p-14.html) om statiska och statiska SOAP-metoder.
 
-I de här exemplen används tillägget ECMAScript för XML (E4X). Med det här tillägget kan du kombinera JavaScript-anrop och XML-mallar i samma skript.
+I dessa exempel används tillägget ECMAScript för XML (E4X). Med det här tillägget kan du kombinera JavaScript-anrop och XML-mallar i samma skript.
 
 Följ de här stegen för att testa de här exemplen:
 
@@ -31,7 +32,7 @@ Följ de här stegen för att testa de här exemplen:
    1. JavaScript-kodaktivitet
    1. Avsluta aktivitet
 
-   [Läs mer](build-a-workflow.md) om att bygga arbetsflöden.
+   [Läs mer](build-a-workflow.md) om arbetsflöden.
 
 1. Lägg till JavaScript-koden i en aktivitet. [Läs mer](advanced-parameters.md).
 1. Spara arbetsflödet.
@@ -39,15 +40,15 @@ Följ de här stegen för att testa de här exemplen:
    1. Starta arbetsflödet. [Läs mer](start-a-workflow.md).
    1. Öppna journalen. [Läs mer](monitor-workflow-execution.md#displaying-logs).
 
-## Exempel 1: skriva till databasen{#write-example}
+## Exempel 1: skriv till databasen{#write-example}
 
-Om du vill skriva till databasen kan du använda den statiska `Write` på `xtk:session` schema:
+Om du vill skriva till databasen kan du använda den statiska `Write` metoden på `xtk:session` schema:
 
 1. Skapa en skrivbegäran i XML.
 
 1. Skriv posten:
 
-   1. Ring `Write` på `xtk:session` schema.
+   1. Ring `Write` metoden på `xtk:session` schema.
 
       >[!IMPORTANT]
       > Om du använder Adobe Campaign v8 rekommenderar vi att du använder mellanlagringsmekanismen med **Inmatning** och **Datauppdatering/borttagning** API:er för `Write` i en Snowflake-tabell. [Läs mer](https://experienceleague.adobe.com/docs/campaign/campaign-v8/architecture/api/new-apis.html){target="_blank"}.
@@ -117,15 +118,15 @@ xtk.session.DeleteCollection(
     )
 ```
 
-### Steg 2: skriva posten
+### Steg 2: skriv posten
 
-Anropa den icke-statiska `Write` på `xtk:session` schema:
+Anropa den icke-statiska `Write` metoden på `xtk:session` schema:
 
 ```javascript
 xtk.session.Write(myXML)
 ```
 
-Inget värde returneras för den här metoden.
+Inget värde returneras för metoden.
 
 Lägg till den fullständiga koden i en JavaScript-kodsaktivitet i arbetsflödet:
 
@@ -167,7 +168,7 @@ Ange den här informationen:
 * Åtgärden
 * De kolumner som ska returneras, i en `select` sats
 * Villkoren i `where` sats
-* filtreringsvillkoren i en `orderBy` sats
+* filtreringsvillkoren, i en `orderBy` sats
 
 Du kan använda följande åtgärder:
 
@@ -178,51 +179,51 @@ Du kan använda följande åtgärder:
 | `get` | Ett element returneras. Om det inte finns något matchande element returneras ett fel. |
 | `count` | Antalet matchande poster returneras i form av ett element med en `count` -attribut. |
 
-Skriv `select`, `where`och `orderBy` satser som XML-element:
+Skriv `select`, `where`och `orderBy` -satser som XML-element:
 
 * `select` sats
 
-   Ange de kolumner som ska returneras. Om du till exempel vill markera personens förnamn och efternamn skriver du följande kod:
+  Ange de kolumner som ska returneras. Om du till exempel vill markera personens förnamn och efternamn skriver du följande kod:
 
-   ```xml
-   <select>
-       <node expr="@firstName"/>
-       <node expr="@lastName"/>
-   </select>
-   ```
+  ```xml
+  <select>
+      <node expr="@firstName"/>
+      <node expr="@lastName"/>
+  </select>
+  ```
 
-   Med `nms:recipient` schema, element returneras i det här formuläret:
+  Med `nms:recipient` schema, element returneras i det här formuläret:
 
-   ```xml
-   <recipient firstName="Bo" lastName="Didley"/>
-   ```
+  ```xml
+  <recipient firstName="Bo" lastName="Didley"/>
+  ```
 
 * `where` sats
 
-   Om du vill ange villkor använder du en `where` -sats. Du kan till exempel välja de poster som finns i **Utbildning** kan du skriva den här koden:
+  Om du vill ange villkor använder du `where` -sats. Du kan till exempel välja de poster som finns i **Utbildning** kan du skriva den här koden:
 
-   ```xml
-   <where>
-       <condition expr="[folder/@label]='Training'"/>
-   </where>
-   ```
+  ```xml
+  <where>
+      <condition expr="[folder/@label]='Training'"/>
+  </where>
+  ```
 
-   När du kombinerar flera uttryck ska du använda den booleska operatorn i det första uttrycket. Om du till exempel vill markera alla personer som heter Isabel Garcia kan du skriva följande kod:
+  När du kombinerar flera uttryck ska du använda den booleska operatorn i det första uttrycket. Om du till exempel vill markera alla personer som heter Isabel Garcia kan du skriva följande kod:
 
-   ```xml
-   <condition boolOperator="AND" expr="@firstName='Isabel'"/>
-   <condition expr="@lastName='Garcia'"/>
-   ```
+  ```xml
+  <condition boolOperator="AND" expr="@firstName='Isabel'"/>
+  <condition expr="@lastName='Garcia'"/>
+  ```
 
 * `orderBy` sats
 
-   Om du vill sortera resultatmängden anger du `orderBy` -sats som ett XML-element med `sortDesc` -attribut. Om du till exempel vill sortera efternamnen i stigande ordning kan du skriva följande kod:
+  Om du vill sortera resultatmängden anger du `orderBy` -sats som ett XML-element med `sortDesc` -attribut. Om du till exempel vill sortera efternamnen i stigande ordning kan du skriva följande kod:
 
-   ```xml
-   <orderBy>
-       <node expr="@lastName> sortDesc="false"/>
-   </orderBy>
-   ```
+  ```xml
+  <orderBy>
+      <node expr="@lastName> sortDesc="false"/>
+  </orderBy>
+  ```
 
 ### Steg 2: skapa ett frågeobjekt
 
@@ -239,11 +240,11 @@ Prefix the `create(`*`content`*`)` med schemat för den entitet som ska skapas.
 
 The *`content`* argument är ett strängargument och är valfritt. Det här argumentet innehåller XML-koden som beskriver entiteten.
 
-### Steg 3: köra frågan
+### Steg 3: kör frågan
 
 Följ de här stegen:
 
-1. Ring `ExecuteQuery` på `queryDef` enhet:
+1. Ring `ExecuteQuery` metoden på `queryDef` enhet:
 
    ```javascript
    var res = query.ExecuteQuery()
@@ -359,7 +360,7 @@ Du kan starta arbetsflöden programmatiskt, till exempel i tekniska arbetsflöde
 Arbetsflöde som utlöser arbete genom användning av händelser. Du kan använda dessa funktioner för händelser:
 
 * Om du vill publicera en händelse kan du använda den statiska `PostEvent` -metod. [Läs mer](https://experienceleague.adobe.com/developer/campaign-api/api/sm-workflow-PostEvent.html).
-* Om du vill ta emot en händelse kan du använda **[!UICONTROL External signal]** aktivitet. [Läs mer](external-signal.md).
+* Om du vill ta emot en händelse använder du **[!UICONTROL External signal]** aktivitet. [Läs mer](external-signal.md).
 
 Du kan utlösa arbetsflöden på olika sätt:
 
@@ -368,11 +369,11 @@ Du kan utlösa arbetsflöden på olika sätt:
    * Lägg till ett initieringsskript i **[!UICONTROL End]** det inledande arbetsflödets aktivitet.
    * Lägg till **[!UICONTROL External signal]** aktiviteten i början av målarbetsflödet.
 
-      När det inledande arbetsflödet är klart bokförs en händelse. Den utgående övergången aktiveras och händelsevariablerna fylls i. Händelsen tas sedan emot av målarbetsflödet.
+     När det inledande arbetsflödet är klart bokförs en händelse. Den utgående övergången aktiveras och händelsevariablerna fylls i. Händelsen tas sedan emot av målarbetsflödet.
 
-      >[!TIP]
-      >
-      >Ett tips är att när du lägger till ett skript i en aktivitet måste du omsluta aktivitetsnamnet med t.ex. två bindestreck `-- end --`. [Läs mer](workflow-best-practices.md) om arbetsflöden.
+     >[!TIP]
+     >
+     >Ett tips är att när du lägger till ett skript i en aktivitet måste du omsluta aktivitetsnamnet med exempelvis två bindestreck `-- end --`. [Läs mer](workflow-best-practices.md) om arbetsflöden.
 
 Syntax för `PostEvent` metod:
 
@@ -386,7 +387,7 @@ PostEvent(
 )
 ```
 
-I det här exemplet skickas en kort text till **signal** verksamhet **wkfExampleReceiver** arbetsflöde:
+I det här exemplet skickas en kort text till **signal** verksamhet som **wkfExampleReceiver** arbetsflöde:
 
 ```javascript
 var strLabel = "Adobe Campaign, Marketing that delivers"
@@ -400,10 +401,10 @@ xtk.workflow.PostEvent(
 
 Eftersom den sista parametern är inställd på `false`, **wkfExampleReceiver** arbetsflödet aktiveras varje gång det inledande arbetsflödet slutförs.
 
-När du startar arbetsflöden bör du tänka på följande principer:
+Tänk på följande när du utlöser arbetsflöden:
 
 * The `PostEvent` kommandot körs asynkront. Kommandot placeras i serverkön. Metoden returneras efter att händelsen har bokförts.
-* Målarbetsflödet måste startas. Annars skrivs ett fel till loggfilen.
+* Målarbetsflödet måste startas. I annat fall skrivs ett fel till loggfilen.
 * Om målarbetsflödet är pausat visas `PostEvent` kommandot står i kö tills arbetsflödet återupptas.
 * Den utlösta aktiviteten kräver inte att en aktivitet pågår.
 
@@ -461,7 +462,7 @@ Följ de här stegen:
 
 ### `Create` method
 
-#### Exempel 1: markera poster och skriva till journalen
+#### Exempel 1: välj poster och skriv till journalen
 
 De interna namnen på de arbetsflöden som finns i **wfExamples** -mappen är markerad. Resultaten sorteras efter internt namn, i stigande ordning och skrivs till journalen.
 
@@ -521,9 +522,9 @@ for each (var rec in res.recipient)
     }
 ```
 
-#### Exempel 3: markera poster och skriva till journalen
+#### Exempel 3: välj poster och skriv till journalen
 
-I det här exemplet används en icke-statisk metod. E-postadressen och födelseåret för alla mottagare vars information lagras i **1234** och vars e-postdomännamn börjar med adobe markeras. Resultaten sorteras efter födelsedatum i fallande ordning. Mottagarens e-post skrivs till journalen.
+I det här exemplet används en icke-statisk metod. E-postadressen och födelseåret för alla mottagare vars information lagras i **1234** och vars e-postdomännamn börjar med adobe markeras. Resultaten sorteras efter födelsedatum i fallande ordning. Mottagarens e-postadress skrivs till journalen.
 
 ```javascript
 var query = xtk.queryDef.create(
@@ -555,7 +556,7 @@ Du kan infoga, uppdatera och ta bort poster. Du kan använda `Write` på alla sc
 * The `update` operation
 * The `insertOrUpdate` åtgärd, med `_key` argument för att identifiera den post som ska uppdateras
 
-   Om du inte anger **Mottagare** om det finns en matchning uppdateras posten i en undermapp. Annars skapas posten i roten **Mottagare** mapp.
+  Om du inte anger **Mottagare** om det finns en matchning uppdateras posten i en undermapp. Annars skapas posten i roten **Mottagare** mapp.
 
 * The `delete` operation
 

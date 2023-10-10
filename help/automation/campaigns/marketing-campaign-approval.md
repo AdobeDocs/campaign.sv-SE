@@ -3,8 +3,9 @@ product: campaign
 title: Konfigurera och hantera godkännandeprocessen
 description: Lär dig hantera godkännanden av marknadsföringskampanjer
 feature: Approvals, Campaigns
+role: User
 exl-id: 03be5058-436e-4de9-99a7-91d799aa17f6
-source-git-commit: 382f0b1c4ee014f6ae5d62eaf93f5ae8c72c06b1
+source-git-commit: 567c2e84433caab708ddb9026dda6f9cb717d032
 workflow-type: tm+mt
 source-wordcount: '2280'
 ht-degree: 1%
@@ -13,23 +14,23 @@ ht-degree: 1%
 
 # Konfigurera och hantera godkännandeprocessen {#approval-marketing-campaigns}
 
-Metoder och personer som arbetar med att skapa och godkänna marknadsföringskampanjer är specifika för varje organisation. Processen för kampanjgodkännande innefattar att samordna flera intressenter: digitala marknadsförare, leveransansvariga, innehållschefer och externa ägare som partners och leverantörer.
+Metoder och personer som arbetar med att skapa och godkänna marknadsföringskampanjer är specifika för varje organisation. Processen för kampanjgodkännande innefattar att samordna olika intressenter: digitala marknadsförare, leveransansvariga, innehållschefer och externa ägare som partners och leverantörer.
 
-Med Adobe Campaign kan ni skapa ett godkännandeflöde för era kampanjer och meddela operatörerna när en åtgärd krävs. Du kan definiera godkännanden för varje steg i en leverans: målgruppsanpassning, innehåll, budget, extrahering och korrekturutskick. I takt med att era kampanjleveranser går igenom de olika valideringsstegen sammanställer Adobe Campaigns en historik över ändringar och godkännanden, inklusive feedback, kommentarer, ändringsbegäranden och kommentarer.
+Med Adobe Campaign kan ni skapa ett godkännandeflöde för era kampanjer och meddela operatörerna när en åtgärd krävs. Du kan definiera godkännanden för varje steg i en leverans: målinriktning, innehåll, budget, extrahering och korrekturutskick. I takt med att era kampanjleveranser går igenom de olika valideringsstegen sammanställer Adobe Campaigns en historik över ändringar och godkännanden, inklusive feedback, kommentarer, ändringsbegäranden och kommentarer.
 
 Meddelanden skickas till de Adobe Campaign-operatörer som har utsetts till granskare för att informera dem om en ansökan om godkännande.
 
 
 Operatorer kan godkänna på flera sätt:
 
-* Från meddelandet. Länken i e-postmeddelandet gör att operatören kan Campaign via en webbläsare. Efter anslutningen kan granskaren välja att godkänna innehållet eller inte.
-   ![](assets/approval-content-email.png)
+* Från meddelandemeddelandet. Länken i e-postmeddelandet gör att operatören kan Campaign via en webbläsare. Efter anslutningen kan granskaren välja att godkänna innehållet eller inte.
+  ![](assets/approval-content-email.png)
 
 * Från kampanjkontrollpanelen.
-   ![](assets/approval-from-dashboard.png)
+  ![](assets/approval-from-dashboard.png)
 
 * Från kontrollpanelen för leverans.
-   ![](assets/approval-from-delivery-dashboard.png)
+  ![](assets/approval-from-delivery-dashboard.png)
 
 Operatörerna kan komma åt kampanjen och leveransen från godkännandefönstret. De kan också skriva en kommentar.
 
@@ -52,7 +53,7 @@ De kan aktiveras för kampanjmallen, för varje enskild kampanj eller för en le
 
 Alla jobb som kräver godkännande väljs i kampanjmallen via  **[!UICONTROL Properties]** > **[!UICONTROL Advanced campaign parameters...]** > **[!UICONTROL Approvals]** -fliken. Granskare eller grupper av granskare markeras på den här fliken. De får meddelanden, såvida inte det här alternativet är aktiverat. [Läs mer](#approving-processes).
 
-Inställningarna kan åsidosättas för varje kampanj som skapas med den här mallen och individuellt för varje leverans. Bläddra i **[!UICONTROL Properties]** leveransknappen, sedan **[!UICONTROL Approvals]** -fliken.
+Inställningarna kan åsidosättas för varje kampanj som skapas med den här mallen och individuellt för varje leverans. Sök i **[!UICONTROL Properties]** leveransknappen, sedan **[!UICONTROL Approvals]** -fliken.
 
 I följande exempel kommer leveransinnehållet inte att kräva godkännande:
 
@@ -79,7 +80,7 @@ Alla andra Adobe Campaign-operatorer med **[!UICONTROL Administrator]** rättigh
 
 >[!NOTE]
 >
->Som standard kan kampanjägaren inte genomföra godkännandet eller starta leveranserna om godkännandeoperatorer har definierats. Som Adobe Campaign-administratör kan du ändra det här beteendet och tillåta kampanjägarna att godkänna/starta leveranser genom att skapa **NmsCampaign_Activate_OwnerConfirmation** alternativ, ange till **1**.
+>Som standard kan kampanjägaren inte genomföra godkännandet eller starta leveranserna om godkännandeoperatorer har definierats. Som Adobe Campaign-administratör kan du ändra detta och låta kampanjägarna godkänna/starta leveranser genom att skapa **NmsCampaign_Activate_OwnerConfirmation** alternativ, ange till **1**.
 
 
 Om en lista med granskare definieras, godkänns ett jobb när en granskare har godkänt det. Godkännandelänken är då inte längre tillgänglig i kampanj- och leveransdashboards. Om en annan granskare klickar på länken för godkännande i meddelandet när meddelanden har skickats, får de ett meddelande om att en annan operator redan har godkänt jobbet.
@@ -98,6 +99,7 @@ När dessa valideringsfaser är klara kan leveransen startas. [Läs mer](marketi
 >[!NOTE]
 >
 >Processer som kräver ett godkännande väljs i kampanjmallen. [Läs mer](marketing-campaign-templates.md).
+>
 
 ### Steg för att godkänna en leverans {#approving-processes}
 
@@ -109,33 +111,33 @@ För varje leverans i kampanjen kan du godkänna följande processer:
 
 * **Målgruppsanpassning, innehåll och budget**
 
-   När **[!UICONTROL Enable target approval]**, **[!UICONTROL Enable content approval]** eller **[!UICONTROL Enable budget approval]** alternativ väljs i fönstret för godkännandeinställningar, visas de relaterade länkarna i kampanj- och leveransdashboards.
+  När **[!UICONTROL Enable target approval]**, **[!UICONTROL Enable content approval]** eller **[!UICONTROL Enable budget approval]** alternativ väljs i fönstret för godkännandeinställningar, visas de relaterade länkarna i kampanj- och leveransdashboards.
 
-   ![](assets/template-activate-6.png)
+  ![](assets/template-activate-6.png)
 
-   >[!NOTE]
-   >
-   >Budgetgodkännande är bara tillgängligt om målgodkännande har aktiverats i fönstret för godkännandeinställningar. Länken för budgetgodkännande visas bara när målet har analyserats.
+  >[!NOTE]
+  >
+  >Budgetgodkännande är bara tillgängligt om målgodkännande har aktiverats i fönstret för godkännandeinställningar. Länken för budgetgodkännande visas bara när målet har analyserats.
 
-   Om **[!UICONTROL Assign content editing]** eller **[!UICONTROL External content approval]** om du väljer alternativ i fönstret för godkännandeinställningar visas **[!UICONTROL Available content]** och **[!UICONTROL External content approval]** länkar.
+  Om **[!UICONTROL Assign content editing]** eller **[!UICONTROL External content approval]** om du väljer alternativ i fönstret för godkännandeinställningar visas **[!UICONTROL Available content]** och **[!UICONTROL External content approval]** länkar.
 
-   Med godkännande av innehåll får du åtkomst till de skickade korrekturen.
+  Med godkännande av innehåll får du åtkomst till de skickade korrekturen.
 
 * **Godkännande av utdrag (direktutskick)**
 
-   När **[!UICONTROL Enable extraction approval]** väljs i fönstret för godkännandeinställningar måste den extraherade filen godkännas innan routern kan meddelas.
+  När **[!UICONTROL Enable extraction approval]** väljs i fönstret för godkännandeinställningar måste den extraherade filen godkännas innan routern kan meddelas.
 
-   The **[!UICONTROL Approve file]** finns på kampanj- och leveransdashboards.
+  The **[!UICONTROL Approve file]** finns på kampanj- och leveransdashboards.
 
-   ![](assets/approve-file-preview.png)
+  ![](assets/approve-file-preview.png)
 
-   Du kan förhandsgranska utdatafilen före valideringen. Extraheringsfilens förhandsgranskning visar endast ett dataexempel. Hela filen läses inte in.
+  Du kan förhandsgranska utdatafilen före valideringen. Extraheringsfilens förhandsgranskning visar endast ett dataexempel. Hela filen läses inte in.
 
 * **Godkänner associerade leveranser**
 
-   The **[!UICONTROL Enable individual approval of each associated delivery]** används för en primär leverans som är kopplad till sekundära leveranser. Som standard är det här alternativet inte markerat så att ett övergripande godkännande av huvudleveransen kan utföras. Om du väljer det här alternativet måste varje leverans godkännas individuellt.
+  The **[!UICONTROL Enable individual approval of each associated delivery]** används för en primär leverans som är kopplad till sekundära leveranser. Som standard är det här alternativet inte markerat så att ett övergripande godkännande av huvudleveransen kan utföras. Om du väljer det här alternativet måste varje leverans godkännas individuellt.
 
-   ![](assets/enable-ind-approval.png)
+  ![](assets/enable-ind-approval.png)
 
 
 >[!NOTE]
@@ -171,7 +173,7 @@ Det går att konfigurera en innehållsgodkännandecykel. Om du vill göra det v�
 
 Med det här alternativet kan du definiera någon som ansvarar för redigering av innehåll, till exempel en webbmaster. Om **[!UICONTROL Assign content editing]** alternativ har valts i fönstret för godkännandeinställningar, läggs flera godkännandesteg till mellan det att meddelandet skapas och levereras till den person som ansvarar för innehållet:
 
-1. När en ny leverans har skapats klickar den person som ansvarar för kampanjen på **[!UICONTROL Submit content editing]** på kontrollpanelen för kampanjer för att starta redigeringsprocessen.
+1. När en ny leverans har skapats klickar den person som ansvarar för kampanjen på **[!UICONTROL Submit content editing]** på kontrollpanelen för kampanjer för att starta redigeringscykeln för innehåll.
 
 1. Den person som ansvarar för redigering av innehåll får ett e-postmeddelande om att innehållet är tillgängligt.
 
@@ -192,16 +194,16 @@ I meddelandet kan granskaren godkänna eller avvisa innehållet.
 
 #### Godkännande av externt innehåll {#external-content-approval}
 
-Med det här alternativet kan du definiera en extern operatör som ansvarar för att godkänna leveransåtergivning, som enhetlig varumärkeskommunikation, priser osv. När **[!UICONTROL External content approval]** har valts i fönstret för godkännandeinställningar, läggs flera godkännandesteg till mellan innehållsgodkännande och leverans av meddelandet till den person som ansvarar för kampanjen:
+Med det här alternativet kan du definiera en extern operatör som ansvarar för att godkänna leveransåtergivning, som enhetlig varumärkeskommunikation, priser osv. När **[!UICONTROL External content approval]** alternativ väljs i fönstret för godkännandeinställningar, läggs flera godkännandesteg till mellan innehållsgodkännande och leverans av meddelandet till den person som ansvarar för kampanjen:
 
 1. Den externa innehållshanteraren får ett e-postmeddelande om att innehållet har godkänts och begär externt godkännande.
 1. E-postmeddelandet innehåller länkar till skickade korrektur, som gör att du kan visa leveransåtergivning, och en knapp för att godkänna eller avvisa leveransinnehållet.
 
-Länkarna är bara tillgängliga om ett eller flera korrektur har skickats. I annat fall är leveransåtergivning bara tillgängligt via klientkonsolen eller webbgränssnittet.
+De här länkarna är bara tillgängliga om ett eller flera korrektur har skickats. I annat fall är leveransåtergivning bara tillgängligt via klientkonsolen eller webbgränssnittet.
 
 ### Godkänn en extraheringsfil {#approve-an-extraction-file}
 
-För offlineleveranser genererar Adobe Campaign en extraheringsfil som, beroende på hur den är konfigurerad, skickas till routern. Dess innehåll beror på vilken exportmall som används.
+För offlineleveranser genererar Adobe Campaign en extraheringsfil som skickas till routern beroende på hur den är konfigurerad. Dess innehåll beror på vilken exportmall som används.
 
 När innehåll, mål och budget har godkänts ändras leveransen till **[!UICONTROL Extraction pending]** tills extraheringsarbetsflödet för kampanjerna har startats.
 
@@ -241,7 +243,7 @@ Om en process har avvisats visas informationen på kontrollpanelen:
 
 ### Godkänn från meddelandena {#approval-via-notification-messages}
 
-Godkänna ett jobb från [meddelande](#notifications):
+Godkänna ett jobb från [meddelandemeddelande](#notifications):
 
 1. Klicka på länken i meddelandet.
 1. Logga in på Adobe Campaign.
@@ -259,19 +261,19 @@ Godkännandeloggar finns i användargränssnittet:
 
 * I loggen för kampanjgodkännande **[!UICONTROL Approvals]** underflik i **[!UICONTROL Edit > Audit]** tab:
 
-   ![](assets/approval-tracking-from-campaign.png)
+  ![](assets/approval-tracking-from-campaign.png)
 
 * I kampanjleveransloggen **[!UICONTROL Deliveries]** underflik i **[!UICONTROL Edit > Audit]** tab:
 
-   ![](assets/approval-tracking-from-campaign-deliveries.png)
+  ![](assets/approval-tracking-from-campaign-deliveries.png)
 
 * Godkännandestatusen för varje leverans visas genom att klicka på **[!UICONTROL Hide/display logs]** alternativ för **[!UICONTROL Summary]** -fliken.
 
-   ![](assets/approval-tracking-delivery-dashboard.png)
+  ![](assets/approval-tracking-delivery-dashboard.png)
 
-* Den här informationen kan även nås via **[!UICONTROL Audit > Approvals]** fliken för varje leverans:
+* Den här informationen kan även nås via **[!UICONTROL Audit > Approvals]** varje leverans:
 
-   ![](assets/approval-tracking-delivery-tab.png)
+  ![](assets/approval-tracking-delivery-tab.png)
 
 >[!NOTE]
 >
@@ -281,7 +283,7 @@ Godkännandeloggar finns i användargränssnittet:
 
 När du skapar ett arbetsflöde för målinriktning, om godkännande är automatiskt (standardläge), visar Adobe Campaign godkännandelänken eller skickar ett meddelande så snart ett godkännande krävs.
 
-Klicka på knappen **[!UICONTROL Edit > Properties]** fliken för kampanj- eller kampanjmallen och klicka sedan på **[!UICONTROL Advanced campaign parameters...]** och slutligen **[!UICONTROL Approvals]** -fliken.
+Välj godkännandeläge (manuellt eller automatiskt) genom att klicka på **[!UICONTROL Edit > Properties]** fliken för kampanj- eller kampanjmallen och klicka sedan på **[!UICONTROL Advanced campaign parameters...]** och slutligen **[!UICONTROL Approvals]** -fliken.
 par
 ![](assets/approval-mode.png)
 

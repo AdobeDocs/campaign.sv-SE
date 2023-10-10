@@ -3,8 +3,9 @@ product: campaign
 title: Värmekarta för kampanjarbetsflöde
 description: Övervaka arbetsflödena med Workflow HeatMap
 feature: Workflows, Heatmap
+role: Admin
 exl-id: aeb35076-2f0d-456d-8562-be69e7e902eb
-source-git-commit: 6464e1121b907f44db9c0c3add28b54486ecf834
+source-git-commit: 567c2e84433caab708ddb9026dda6f9cb717d032
 workflow-type: tm+mt
 source-wordcount: '1094'
 ht-degree: 3%
@@ -25,7 +26,7 @@ Mer exakt hjälper det plattformsadministratörerna att:
 * filtrera arbetsflöden per varaktighet för att se vilka arbetsflöden som kan stöta på problem
 * Filtrera aktiviteter efter varaktighet för att se vilka aktiviteter som kan stöta på problem
 * enkelt hitta enskilda arbetsflöden och alla relaterade aktiviteter (med deras varaktighet)
-* Filtrera efter arbetsflödestyp: [tekniska arbetsflöden](technical-workflows.md) eller [kampanjarbetsflöden](campaign-workflows.md)
+* Filter efter arbetsflödestyp: [tekniska arbetsflöden](technical-workflows.md) eller [kampanjarbetsflöden](campaign-workflows.md)
 * leta efter ett specifikt arbetsflöde att analysera
 
 >[!NOTE]
@@ -44,7 +45,7 @@ Om du använder Workflow HeatMap måste du ha god förståelse för följande ko
 
    ![](assets/wkf_monitoring_path.png)
 
-1. Klicka på kalendern för att välja en dag.
+1. Välj en dag i kalendern.
 
    Som standard visas arbetsflödesaktiviteten för den aktuella dagen på sidan. Du kan ändra den och välja vilken dag som helst i det förflutna.
 
@@ -60,18 +61,18 @@ Om du använder Workflow HeatMap måste du ha god förståelse för följande ko
 
    ![](assets/wkf_monitoring_filters_duration.png)
 
-1. Du kan också välja ett specifikt arbetsflöde i **[!UICONTROL Workflows]** nedrullningsbar lista.
+1. Du kan också välja ett specifikt arbetsflöde i **[!UICONTROL Workflows]** listruta.
 
    ![](assets/wkf_monitoring_filters_workflows.png)
 
    >[!NOTE]
    >
-   >The **[!UICONTROL Min duration]** filter används. Om du inte kan hitta ett visst arbetsflöde återställer du den kortaste tiden till 0 så att alla arbetsflöden visas i listan.
+   >The **[!UICONTROL Min duration]** filtret används. Om du inte kan hitta ett visst arbetsflöde återställer du den kortaste tiden till 0 så att alla arbetsflöden visas i listan.
 
 1. Du kan även filtrera på **[!UICONTROL Workflow type]** :
 
    * **[!UICONTROL Technical]** : Endast [inbyggda tekniska arbetsflöden](technical-workflows.md) och [arbetsflöden för datahantering](targeting-workflows.md#data-management) visas.
-   * **[!UICONTROL Marketing]** : Endast arbetsflöden som är kopplade till en marknadsföringskampanj, s.k. [kampanjarbetsflöden](campaign-workflows.md), visas.
+   * **[!UICONTROL Marketing]** : Endast arbetsflöden kopplade till en marknadsföringskampanj, s.k. [kampanjarbetsflöden](campaign-workflows.md), visas.
 
 1. Om du vill söka efter ett specifikt arbetsflöde efter namn kan du även använda **[!UICONTROL Workflow name filter]** fält.
 
@@ -102,10 +103,10 @@ I exemplet nedan körs tre arbetsflöden mellan 08:05 och 8:05 (oavsett hur lån
 
    För varje arbetsflöde visas alla aktiviteter som det innehåller, med deras varaktighet.
 
-1. Klicka på arbetsflödes-ID:t eller namnet för att öppna ett arbetsflöde direkt.
+1. Klicka på arbetsflödes-ID eller namn för att öppna ett arbetsflöde direkt.
 1. Gå tillbaka till **[!UICONTROL Campaign Workflow HeatMap]** visa klickar du på **[!UICONTROL Home]** -knappen.
 
-## Användningsexempel: använda HeatMap för att vidta åtgärder {#use-cases--using-the-heatmap-to-take-actions}
+## Användningsexempel: använd HeatMap för att vidta åtgärder {#use-cases--using-the-heatmap-to-take-actions}
 
 Det finns två huvudfall där HeatMap för kampanjarbetsflödet kan vara användbart.
 

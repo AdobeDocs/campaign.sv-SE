@@ -2,10 +2,10 @@
 title: Skicka ett erbjudande med Campaign Interaction
 description: Lär dig hur du skickar ett erbjudande
 feature: Interaction, Offers
-role: Data Engineer
+role: User, Admin
 level: Beginner
 exl-id: d39b1768-4c39-4d64-b9b6-d9c9424a2b0d
-source-git-commit: 0a55d947a7646aab64ab2f9d0d09a6f930db576e
+source-git-commit: 567c2e84433caab708ddb9026dda6f9cb717d032
 workflow-type: tm+mt
 source-wordcount: '1265'
 ht-degree: 3%
@@ -22,7 +22,7 @@ Erbjudandet presenteras via en utgående kommunikationskanal via direktreklam, e
 
 Följ stegen nedan för att infoga offertförslag i en leverans:
 
-1. I leveransfönstret klickar du på **Erbjudanden** ikon.
+1. Klicka på **Erbjudanden** -ikon.
 
    ![](assets/offer_delivery_001.png)
 
@@ -44,7 +44,7 @@ Följ stegen nedan för att infoga offertförslag i en leverans:
 
    ![](assets/offer_delivery_006.png)
 
-1. Välj **[!UICONTROL Do not display anything if no offers are selected]** alternativ. [Läs mer](#parameters-for-calling-offer-engine)
+1. Om det behövs väljer du **[!UICONTROL Do not display anything if no offers are selected]** alternativ. [Läs mer](#parameters-for-calling-offer-engine)
 
    ![](assets/offer_delivery_007.png)
 
@@ -59,12 +59,12 @@ Följ stegen nedan för att infoga offertförslag i en leverans:
 
 ### Parametrar för erbjudandemotorn {#parameters-for-calling-offer-engine}
 
-* **[!UICONTROL Space]** : utrymme för den erbjudandemiljö som måste väljas för att aktivera erbjudandemotorn.
+* **[!UICONTROL Space]** : utrymme för den erbjudandemiljö som måste väljas för att erbjudandemotorn ska aktiveras.
 * **[!UICONTROL Category]** : den mapp där erbjudandena sorteras. Om ingen kategori anges kommer alla erbjudanden i miljön att beaktas av erbjudandemotorn, såvida inte ett tema väljs.
 * **[!UICONTROL Themes]** : nyckelord som definieras uppströms i kategorierna. Dessa fungerar som ett filter och låter dig förfina antalet erbjudanden som ska presenteras genom att välja dem i en uppsättning kategorier.
-* **[!UICONTROL Number of propositions]** : Antal erbjudanden som returneras av motorn och som kan infogas i leveransenheten. Om de inte infogas i meddelandet kommer erbjudandena fortfarande att genereras, men inte presenteras.
-* **[!UICONTROL Exclude non-eligible recipients]** : Med det här alternativet kan du aktivera eller inaktivera exkluderingen av mottagare för vilka det inte finns tillräckligt med giltiga erbjudanden. Antalet giltiga förslag kan vara lägre än det begärda antalet. Om den här rutan är markerad kommer mottagare som inte har tillräckligt med erbjudanden att uteslutas från leveransen. Om du inte markerar det här alternativet kommer dessa mottagare inte att uteslutas, men de kommer inte att ha det begärda antalet förslag.
-* **[!UICONTROL Do not display anything if no offer is selected]** : Med det här alternativet kan du välja hur meddelandet ska behandlas om något av förslagen inte finns. När den här rutan är markerad visas inte representationen av det saknade förslaget och inget innehåll visas i meddelandet för det här förslaget. Om rutan inte är markerad avbryts själva meddelandet när det skickas och mottagarna får inte längre några meddelanden.
+* **[!UICONTROL Number of propositions]** : antal erbjudanden som returneras av motorn och som kan infogas i leveransenheten. Om de inte infogas i meddelandet kommer erbjudandena fortfarande att genereras, men de visas inte.
+* **[!UICONTROL Exclude non-eligible recipients]** : Med det här alternativet kan du aktivera eller inaktivera exkludering av mottagare för vilka det inte finns tillräckligt med giltiga erbjudanden. Antalet giltiga förslag kan vara lägre än det begärda antalet. Om den här rutan är markerad kommer mottagare som inte har tillräckligt med erbjudanden att uteslutas från leveransen. Om du inte markerar det här alternativet kommer dessa mottagare inte att uteslutas, men de kommer inte att ha det begärda antalet förslag.
+* **[!UICONTROL Do not display anything if no offer is selected]** : det här alternativet låter dig välja hur meddelandet ska behandlas om något av förslagen inte finns. När den här rutan är markerad visas inte representationen av det saknade förslaget och inget innehåll visas i meddelandet för det här förslaget. Om rutan inte är markerad avbryts själva meddelandet när det skickas och mottagarna får inte längre några meddelanden.
 
 ## Skicka erbjudanden i arbetsflöden{#offer-via-wf}
 
@@ -100,13 +100,13 @@ När du har konfigurerat **Fråga** aktivitet:
 1. Ange en identifierare och en etikett för det förslag som ska läggas till.
 1. Ange erbjudandevalet. Det finns två möjliga alternativ:
 
-   * **[!UICONTROL Search for the best offer in a category]** : Markera det här alternativet och ange parametrarna för att ringa upp erbjudandemotorn (erbjudandeutrymme, kategori eller tema, kontaktdatum, antal erbjudanden som ska behållas). Motorn beräknar automatiskt erbjudandena som ska läggas till enligt dessa parametrar. Vi rekommenderar att du fyller i **[!UICONTROL Category]** eller **[!UICONTROL Theme]** i stället för båda samtidigt.
+   * **[!UICONTROL Search for the best offer in a category]** : markera det här alternativet och ange parametrarna för anrop till motorn (erbjudandeutrymme, kategori eller tema, kontaktdatum, antal erbjudanden som ska behållas). Motorn beräknar automatiskt erbjudandena som ska läggas till enligt dessa parametrar. Vi rekommenderar att du fyller i **[!UICONTROL Category]** eller **[!UICONTROL Theme]** i stället för båda samtidigt.
 
-      ![](assets/int_enrichment_offer3.png)
+     ![](assets/int_enrichment_offer3.png)
 
    * **[!UICONTROL A pre-defined offer]** : markera det här alternativet och ange ett erbjudandeutrymme, ett specifikt erbjudande och ett kontaktdatum för att direkt konfigurera det erbjudande du vill lägga till, utan att anropa erbjudandemotorn.
 
-      ![](assets/int_enrichment_offer4.png)
+     ![](assets/int_enrichment_offer4.png)
 
 1. Konfigurera sedan en leveransaktivitet som motsvarar den valda kanalen. [Läs mer](#offer-into-a-delivery)
 
@@ -147,7 +147,7 @@ Som standard när **Berikning** aktiviteten används för att leverera erbjudand
 Du kan dock lagra den här informationen på följande sätt:
 
 1. Skapa ett anrop till erbjudandemotorn i en anrikningsaktivitet som placerats efter en fråga och före en leveransaktivitet. [Läs mer](#specifying-an-offer-or-a-call-to-the-offer-engine)
-1. I aktivitetens huvudfönster väljer du **[!UICONTROL Edit additional data...]**.
+1. Välj i aktivitetens huvudfönster **[!UICONTROL Edit additional data...]**.
 
    ![](assets/ita_enrichment_rankweight_1.png)
 
@@ -165,14 +165,14 @@ The **[!UICONTROL Offer engine]** Med -aktiviteten kan du även ange ett anrop t
 
 Mer information finns på **Erbjudandemotor** aktivitet, se [den här sidan](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/targeting-activities/offer-engine.html)
 
-Denna verksamhet följer samma princip som **Berikning** Aktivitet med ett motoranrop genom att berika de inkommande populationsdata med ett erbjudande som beräknas av motorn före leverans.
+Denna verksamhet följer samma princip som **Berikning** Aktivitet med ett motoranrop genom att berika de inkommande populationsdata med ett erbjudande som beräknas av motorn, före leverans.
 
 ![](assets/int_offerengine_activity2.png)
 
 När du har konfigurerat **Fråga** aktivitet:
 
 1. Lägg till och öppna en **[!UICONTROL Offer engine]** aktivitet.
-1. Fyll i de olika tillgängliga fälten för att ange parametrar för att anropa erbjudandemotorn (erbjudandeutrymme, kategori eller tema, kontaktdatum, antal erbjudanden som ska behållas). Motorn beräknar automatiskt erbjudandena som ska läggas till enligt dessa parametrar.
+1. Fyll i de olika tillgängliga fälten för att ange parametrar för att anropa erbjudandemotorn (erbjudandeutrymme, kategori eller tema, kontaktdatum, antal erbjudanden att behålla). Motorn beräknar automatiskt erbjudandena som ska läggas till enligt dessa parametrar.
 
    >[!CAUTION]
    >
@@ -197,7 +197,7 @@ Gör så här:
    * Ange delmängdsfyllningen med de tillgängliga filtrerings- och begränsningsreglerna.
    * Välj sedan det erbjudande som du vill presentera för undergruppen. De erbjudanden som är tillgängliga är sådana som är berättigade i den erbjudandemiljö som valdes i föregående steg.
 
-      ![](assets/int_offer_per_cell1.png)
+     ![](assets/int_offer_per_cell1.png)
 
 1. Konfigurera sedan en leveransaktivitet som motsvarar den valda kanalen.
 

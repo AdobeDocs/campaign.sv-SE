@@ -3,8 +3,9 @@ product: campaign
 title: Celler
 description: Celler
 feature: Workflows, Targeting Activity
+role: User
 exl-id: d85645a6-fc15-4c3a-9d67-d4230224e1f7
-source-git-commit: 6464e1121b907f44db9c0c3add28b54486ecf834
+source-git-commit: 567c2e84433caab708ddb9026dda6f9cb717d032
 workflow-type: tm+mt
 source-wordcount: '116'
 ht-degree: 2%
@@ -13,7 +14,7 @@ ht-degree: 2%
 
 # Celler{#cells}
 
-The **[!UICONTROL Cells]** -aktiviteten ger en vy över de olika deluppsättningarna som datakolumner. Den underlättar delmängdsmanipulation och är även utformad för att utnyttja personaliseringsmöjligheterna.
+The **[!UICONTROL Cells]** -aktiviteten ger en vy över de olika delmängderna som datakolumner. Den underlättar delmängdsmanipulation och är även utformad för att utnyttja personaliseringsmöjligheterna.
 
 ![](assets/wf_split_cells.png)
 

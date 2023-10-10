@@ -3,8 +3,9 @@ product: campaign
 title: Åtkomst till kampanjer
 description: Åtkomst till kampanjer
 feature: Distributed Marketing
+role: User
 exl-id: 2edbb1d6-122c-418a-8893-4f683f804544
-source-git-commit: 190707b8b1ea5f90dc6385c13832fbb01378ca1d
+source-git-commit: 567c2e84433caab708ddb9026dda6f9cb717d032
 workflow-type: tm+mt
 source-wordcount: '169'
 ht-degree: 3%

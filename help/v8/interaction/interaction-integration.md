@@ -1,9 +1,10 @@
 ---
 product: campaign
 title: Lägg till ett erbjudande på en webbsida
-description: Lär dig hur du lägger till ett erbjudande på en webbsida
+description: Lär dig lägga till ett erbjudande på en webbsida
+role: User, Admin
 exl-id: 1eb0775a-5da9-4a27-aa7b-339372748f9c
-source-git-commit: 6de5c93453ffa7761cf185dcbb9f1210abd26a0c
+source-git-commit: 567c2e84433caab708ddb9026dda6f9cb717d032
 workflow-type: tm+mt
 source-wordcount: '1455'
 ht-degree: 0%
@@ -26,7 +27,7 @@ För att kunna presentera ett erbjudande måste vi skapa en miljö och ett erbju
 
 I följande exempel beskrivs de möjliga alternativen för att integrera erbjudanden via JavaScript.
 
-## Alternativ 1: HTML, läge {#html-mode}
+## Alternativ 1: HTML-läge {#html-mode}
 
 ### Presentera ett anonymt erbjudande {#presenting-an-anonymous-offer}
 
@@ -163,7 +164,7 @@ Den returnerade XML-noden ser ut så här:
 
 Användningsexemplet nedan beskriver de konfigurationer som ska utföras i Adobe Campaign för att aktivera XML-läget och visar sedan resultatet av anropet till motorn på HTML-sidan.
 
-1. **Skapa en miljö och ett utrymme för erbjudanden**
+1. **Skapa en miljö och ett erbjudande**
 
    Mer information om hur du skapar en miljö finns i [den här sidan](interaction-env.md).
 
@@ -171,7 +172,7 @@ Användningsexemplet nedan beskriver de konfigurationer som ska utföras i Adobe
 
 1. **Utöka erbjudandeschemat för att lägga till nya fält**
 
-   Schemat definierar följande fält: Titelnummer 2 och pris.
+   Det här schemat definierar följande fält: Rubrik 2 och pris.
 
    Schemats namn i exemplet är **cus:erbjudande**
 
@@ -208,7 +209,7 @@ Användningsexemplet nedan beskriver de konfigurationer som ska utföras i Adobe
 
 1. **Utöka erbjudandeformeln för att redigera nya fält och ändra ett befintligt fält**
 
-   Redigera **Erbjudande (nsm)** indataformulär.
+   Redigera **Erbjudande (nsm)** inmatningsformulär.
 
    I avsnittet Vyer infogar du de två nya fälten med följande innehåll:
 
@@ -318,14 +319,14 @@ SOAP-webbtjänster för erbjudandehantering skiljer sig från dem som vanligtvis
 
 Lägg till **nms:proposition#Propose** följt av följande parametrar:
 
-* **targetId**: mottagarens primärnyckel (kan vara en sammansatt nyckel).
-* **maxCount**: Anger antalet erbjudandeförslag för kontakten.
-* **kontext**: I kan du lägga till kontextinformation i utrymmesschemat. Om schemat som används är **nms:interaktion**, **`<empty>`** bör läggas till.
-* **kategorier**: anger den eller de kategorier som erbjudandena måste tillhöra.
-* **teman**: anger temat som erbjudandet eller erbjudandena måste tillhöra.
-* **uuid**: värdet på Adobe Campaign permanenta cookie (&quot;uuid230&quot;).
-* **nli**: värdet på Adobe Campaign sessionscookie (&quot;nlid&quot;).
-* **noProp**: Använd värdet &quot;true&quot; för att inaktivera infogning av förslag.
+* **targetId**: primärnyckel för mottagaren (kan vara en sammansatt nyckel).
+* **maxCount**: anger antalet erbjudandeförslag för kontakten.
+* **kontext**: gör att du kan lägga till kontextinformation i utrymmesschemat. Om schemat som används är **nms:interaktion**, **`<empty>`** bör läggas till.
+* **kategorier**: anger vilken kategori/vilka erbjudanden måste tillhöra.
+* **teman**: anger det eller de teman som erbjudandena måste tillhöra.
+* **uuid**: värdet för Adobe Campaign permanenta cookie (&quot;uuid230&quot;).
+* **nli**: värdet för Adobe Campaign sessionscookie (&quot;nlid&quot;).
+* **noProp**: använd värdet &quot;true&quot; för att inaktivera infogning av förslag.
 
 >[!NOTE]
 >
@@ -341,8 +342,8 @@ SOAP-tjänsten returnerar följande parametrar som svar på frågan:
 Lägg till **nms:interaction#UpdateStatus** till URL:en, följt av följande parametrar:
 
 * **offert**: teckensträng, innehåller det förslags-ID som anges som utdata under ett erbjudande. Se [Erbjudandeförslag](#offer-proposition).
-* **status**: strängtyp, anger erbjudandets nya status. Möjliga värden visas i **propositionStatus** uppräkning, i **nms:vanliga** schema. Till exempel motsvarar talet 3 **Accepterad** status.
-* **kontext**: Med XML-element kan du lägga till kontextinformation i utrymmesschemat. Om schemat som används är **nms:interaktion**, **`<empty>`** bör läggas till.
+* **status**: string type, it specifies the new status of the offer. Möjliga värden visas i **propositionStatus** uppräkning, i **nms:vanliga** schema. Till exempel motsvarar talet 3 **Accepterad** status.
+* **kontext**: XML-element, gör att du kan lägga till kontextinformation i utrymmesschemat. Om schemat som används är **nms:interaktion**, **`<empty>`** bör läggas till.
 
 ### Exempel på hur du använder ett SOAP-anrop {#example-using-a-soap-call}
 

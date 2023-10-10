@@ -3,7 +3,8 @@ product: campaign
 title: Leveranser
 description: Läs mer om standardarbetsflöden för leveranser
 feature: Workflows
-source-git-commit: 6464e1121b907f44db9c0c3add28b54486ecf834
+role: User, Admin
+source-git-commit: 567c2e84433caab708ddb9026dda6f9cb717d032
 workflow-type: tm+mt
 source-wordcount: '316'
 ht-degree: 6%
@@ -27,7 +28,7 @@ Arbetsflödena nedan installeras tillsammans med **Leveranser** som standard.
   <tr> 
    <td> <span class="uicontrol">Rapporteringsaggregat</span> <br /> </td> 
    <td> <span class="uicontrol">reportingAggregates</span> <br /> </td> 
-   <td> Det här arbetsflödet uppdaterar aggregat som används i rapporter. Den aktiveras varje dag klockan 2 som standard.<br /> </td> 
+   <td> Det här arbetsflödet uppdaterar aggregat som används i rapporter. Den aktiveras varje dag kl. 2.00 som standard.<br /> </td> 
   </tr> 
   <tr> 
    <td> <span class="uicontrol">Fakturering</span> <br /> </td> 
@@ -47,12 +48,12 @@ Arbetsflödena nedan installeras tillsammans med **Leveranser** som standard.
   <tr> 
    <td> <span class="uicontrol">Databasrensning</span> <br /> </td> 
    <td> <span class="uicontrol">cleanup</span> <br /> </td> 
-   <td> <p>Det här arbetsflödet är arbetsflödet för databasunderhåll: utför olika beräkningar från statistiken och processerna och tar bort föråldrade data från databasen enligt den definierade konfigurationen i distributionsassistenten. Den aktiveras varje dag klockan fyra som standard.</p></td> 
+   <td> <p>Det här arbetsflödet är arbetsflödet för databasunderhåll: det utför andra beräkningar än statistik och processer och tar bort föråldrade data från databasen enligt den definierade konfigurationen i distributionsassistenten. Den aktiveras varje dag klockan fyra som standard.</p></td> 
   </tr> 
   <tr> 
    <td> <span class="uicontrol">Rensa pausade arbetsflöden</span> <br /> </td> 
    <td> <span class="uicontrol">cleanupPausedWorkflows</span> <br /> </td> 
-   <td> <p>Det här arbetsflödet analyserar pausade arbetsflöden som har allvarlighetsgraden inställd på normal och utlöser varningar och meddelanden när de har pausats för länge. Efter en månad stoppas de pausade tekniska arbetsflödena ovillkorligt. Som standard utlöses den varje måndag kl. 5.</p> <p>Mer information finns i Hantera pausade arbetsflöden</a>.</p></td> 
+   <td> <p>Det här arbetsflödet analyserar pausade arbetsflöden som har allvarlighetsgraden inställd på normal och utlöser varningar och meddelanden när de har pausats för länge. Efter en månad stoppas tekniska arbetsflöden ovillkorligt. Som standard utlöses den varje måndag kl. 5.</p> <p>Mer information finns i Hantera pausade arbetsflöden</a>.</p></td> 
   </tr> 
   <tr> 
    <td> <span class="uicontrol">Meddelande om erbjudande</span> <br /> </td> 

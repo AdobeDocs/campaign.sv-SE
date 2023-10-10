@@ -2,8 +2,9 @@
 product: campaign
 title: Hantera marknadsföringsresurser
 description: Lär dig hantera marknadsföringsresurser
+role: User
 exl-id: 4d91fb7d-f846-4644-b83d-5a6a988ae297
-source-git-commit: 290f4e9a0d13ef49caacb7a128ccc266bafd5e69
+source-git-commit: 567c2e84433caab708ddb9026dda6f9cb717d032
 workflow-type: tm+mt
 source-wordcount: '1111'
 ht-degree: 1%
@@ -22,7 +23,7 @@ Som standard lagras marknadsföringsresurser i **[!UICONTROL MRM > Marketing res
 
 Följ stegen nedan för att lägga till en marknadsföringsresurs:
 
-1. Bläddra till **[!UICONTROL Campaigns]** och markera **[!UICONTROL Marketing resouces]**.
+1. Gå till **[!UICONTROL Campaigns]** och markera **[!UICONTROL Marketing resouces]**.
 
 1. Klicka på knappen **[!UICONTROL Create]**.
    ![](assets/add-a-mkt-resource.png)
@@ -41,34 +42,34 @@ Använd **[!UICONTROL Assigned to]** nedrullningsbar lista i **[!UICONTROL Edit]
 
 ![](assets/assign-a-mkt-resource.png)
 
-Du kan också välja de operatorer eller grupper av operatorer som ansvarar för resursvalideringen och resurspublikationen. Klicka på  **[!UICONTROL Advanced parameters]** länk.
+Du kan också välja de operatorer eller grupper av operatorer som ansvarar för resursvalidering och resurspublikation. Klicka på  **[!UICONTROL Advanced parameters]** länk.
 
 Operatorerna meddelas via e-post när resursvalideringsprocessen startas.
 
-Om ingen granskare har valts, resursen **[!UICONTROL cannot be]** efter godkännande.
+Om ingen granskare är markerad **[!UICONTROL cannot be]** med reservation för godkännande.
 
 Använd **[!UICONTROL Audit]** för att lägga till en korrekturläsare och definiera ett tillgänglighetsdatum för resursen. Efter detta datum visas den med **[!UICONTROL Late]** status.
 
 >[!NOTE]
 >
->The **[!UICONTROL History]** -fliken innehåller hämtnings- och uppdateringsloggen för resursen. The **[!UICONTROL Details]** kan du visa den valda versionen.
+>The **[!UICONTROL History]** innehåller hämtnings- och uppdateringsloggen för resursen. The **[!UICONTROL Details]** kan du visa den valda versionen.
 >
->The **[!UICONTROL Audit]** kan du övervaka åtgärder som utförs på resursen: godkännanden, godkännanden, avslag, kommentarer eller publikationer.
+>The **[!UICONTROL Audit]** kan du övervaka åtgärder som utförs på resursen: godkännanden, avslag på ansökningar om godkännande, relaterade kommentarer eller publikationer.
 
 ### Låsa/låsa upp en resurs {#locking-unlocking-a-resource}
 
 När resurserna har skapats är de tillgängliga på kontrollpanelen för marknadsföringsresurser och operatorer kan redigera och ändra dem.
 
-När en operator börjar arbeta med en resurs är det bästa sättet att låsa den, så att andra operatorer inte kan ändra den samtidigt. Resursen är sedan reserverad: den förblir tillgänglig, men kan inte publiceras eller uppdateras på servern av en annan operator.
+När en operator börjar arbeta med en resurs är det bästa sättet att låsa den, så att andra operatorer inte kan ändra den samtidigt. Resursen är sedan reserverad: den är fortfarande tillgänglig, men kan inte publiceras eller uppdateras på servern av en annan operator.
 
 En marknadsföringsresurs kan bara låsas om den inte har godkänts.
 
-Om du vill låsa en resurs måste du klicka på **[!UICONTROL Lock]** på resurspanelen.
+Du måste klicka på **[!UICONTROL Lock]** på resurspanelen.
 
 ![](assets/lock-a-resource.png)
 
 
-När resursen har uppdaterats klickar du på **[!UICONTROL Lock]** på resurspanelen för att göra alla operatorer tillgängliga igen.
+Klicka på knappen **[!UICONTROL Lock]** på resurspanelen för att göra alla operatorer tillgängliga igen.
 
 Ett specialmeddelande meddelar alla operatorer som försöker få åtkomst till det:
 
@@ -93,19 +94,19 @@ Läs mer i [Diskussionsforum](discussion-forums.md) -avsnitt.
 
 ### Godkännandeprocess {#approval-process}
 
-Det förväntade tillgänglighetsdatumet visas i resursinformationen, om det angavs i **[!UICONTROL Tracking]** -fliken. När detta datum har nåtts kan du genomföra godkännandeprocessen med hjälp av **[!UICONTROL Submit for approval]** på resurspanelen. Resursstatusen ändras sedan till **[!UICONTROL Approval in progress]**.
+Det förväntade tillgänglighetsdatumet visas i resursinformationen, om det har angetts i **[!UICONTROL Tracking]** -fliken. När detta datum har nåtts kan du genomföra godkännandeprocessen med hjälp av **[!UICONTROL Submit for approval]** på resurspanelen. Resursstatusen ändras sedan till **[!UICONTROL Approval in progress]**.
 
-Om du vill godkänna en resurs klickar du på **[!UICONTROL Approve the resource]** på kontrollpanelen.
+Klicka på knappen **[!UICONTROL Approve the resource]** på kontrollpanelen.
 
 ![](assets/mkt-resouce-approve.png)
 
-Auktoriserade operatorer kan sedan godkänna eller avvisa godkännande. Den här åtgärden är möjlig: via e-postmeddelandet som skickas (genom att klicka på länken i meddelandet) eller via klientkonsolen (genom att klicka på **[!UICONTROL Approve]** ).
+Auktoriserade operatorer kan sedan godkänna eller avvisa godkännande. Den här åtgärden är möjlig antingen via e-postmeddelandet som skickas (genom att klicka på länken i meddelandet) eller via klientkonsolen (genom att klicka på **[!UICONTROL Approve]** ).
 
 I godkännandefönstret kan du ange en kommentar.
 
 ![](assets/mkt-resource-approval-confirmation.png)
 
-Bläddra till **[!UICONTROL Tracking]** för att kontrollera godkännanden.
+Gå till **[!UICONTROL Tracking]** för att kontrollera godkännanden.
 
 >[!NOTE]
 >
@@ -115,13 +116,13 @@ Bläddra till **[!UICONTROL Tracking]** för att kontrollera godkännanden.
 
 Marknadsföringsresursen måste publiceras när den har godkänts. Publiceringsprocessen måste genomföras i enlighet med företagets krav. Detta innebär att resurser kan publiceras på ett extranät eller på en annan server, specifik information kan skickas till en extern tjänsteleverantör osv.
 
-Om du vill publicera en resurs klickar du på **[!UICONTROL Publish]** i redigeringszonen på kontrollpanelen för marknadsföringsresurser.
+Klicka på **[!UICONTROL Publish]** i redigeringszonen på kontrollpanelen för marknadsföringsresurser.
 
 ![](assets/mkt-resource-publish.png)
 
 Du kan också automatisera publiceringen av en resurs via ett arbetsflöde.
 
-Att publicera en resurs innebär att göra den tillgänglig för användning (till exempel för en annan uppgift). Publikationen varierar beroende på vilken typ av resurs du har: för ett flygblad kan publicering innebära att du skickar filen till ett tryckeri, för en webbbyrå kan det betyda att du publicerar den på en webbplats, osv.
+Att publicera en resurs innebär att göra den tillgänglig för användning (till exempel för en annan uppgift). Publikationen varierar beroende på vilken typ av resurs du har: för ett flygblad kan publicering innebära att du skickar filen till en skrivare, för en webbbyrå kan det betyda att du publicerar den på en webbplats osv.
 
 För att Adobe Campaign ska kunna publicera måste du skapa ett lämpligt arbetsflöde och länka det till resursen. Öppna **[!UICONTROL Advanced settings...]** resursens ruta och välj sedan önskat arbetsflöde i **[!UICONTROL Post-processing]** fält.
 
@@ -140,7 +141,7 @@ Om ett arbetsflöde inte startas omedelbart (om arbetsflödet till exempel stopp
 
 Marknadsföringsresurser kan associeras med kampanjer, förutsatt att den här funktionen har valts i [kampanjmall](../campaigns/marketing-campaign-templates.md).
 
-Bläddra till **[!UICONTROL Edit > Documents > Resources]** i kampanjkontrollpanelen klickar du på **[!UICONTROL Add]** för att välja den berörda resursen.
+Gå till **[!UICONTROL Edit > Documents > Resources]** i kampanjkontrollpanelen klickar du på **[!UICONTROL Add]** för att välja den berörda resursen.
 
 ![](assets/link-a-mkt-resource-to-a-campaign.png)
 
@@ -158,7 +159,7 @@ Om du vill göra det högerklickar du på en disposition och väljer **Nytt > Re
 
 ![](assets/mkt-resource-add-in-del-outline.png)
 
-Ange namnet på resursen och välj den i dialogrutan **Marknadsföringsresurs** nedrullningsbar lista.
+Ange namnet på resursen och välj den i dialogrutan **Marknadsföringsresurs** listruta.
 
 ![](assets/mkt-resource-select-in-del-outline.png)
 

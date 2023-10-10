@@ -3,8 +3,9 @@ product: campaign
 title: Inkommande e-postmeddelanden
 description: Läs mer om arbetsflödesaktiviteten för inkommande e-post
 feature: Workflows, Channels Activity
+role: User
 exl-id: 6cc2c415-1886-4f31-8020-dbaf97a3cc43
-source-git-commit: 77ec01aaba1e50676bed57f503a9e4e8bb1fe54c
+source-git-commit: 567c2e84433caab708ddb9026dda6f9cb717d032
 workflow-type: tm+mt
 source-wordcount: '337'
 ht-degree: 1%
@@ -25,31 +26,31 @@ Den första fliken i **Inkommande e-postmeddelanden** Med -aktivitet kan du ange
 
    * **[!UICONTROL Use an external account]**
 
-      När det här alternativet är aktiverat kan du välja ett externt POP3-konto i stället för att ange anslutningsparametrarna. The **[!UICONTROL External account]** -fältet anger det externa POP3-konto som ska användas för att ansluta till e-posttjänsten. Det här fältet är bara synligt om alternativet Använd ett externt konto är aktiverat.
+     När det här alternativet är aktiverat kan du välja ett externt POP3-konto i stället för att ange anslutningsparametrarna. The **[!UICONTROL External account]** -fältet anger det externa POP3-konto som ska användas för att ansluta till e-posttjänsten. Det här fältet är bara synligt om alternativet Använd ett externt konto är aktiverat.
 
-      Om det här alternativet inte är markerat måste du ange följande parametrar:
+     Om det här alternativet inte är markerat måste du ange följande parametrar:
 
-      ![](assets/email_rec_edit_1b.png)
+     ![](assets/email_rec_edit_1b.png)
 
       * **[!UICONTROL POP3 server]**
 
-         Namn på POP3-servern.
+        Namn på POP3-servern.
 
       * **[!UICONTROL POP3 account]**
 
-         Användarens namn.
+        Användarens namn.
 
       * **[!UICONTROL Password]**
 
-         Lösenord för användarkonto.
+        Lösenord för användarkonto.
 
       * **[!UICONTROL Port]**
 
-         Portnummer för POP3-anslutning. Standardporten är 110.
+        Portnummer för POP3-anslutning. Standardporten är 10.
+
    * **[!UICONTROL Stop as soon as email is processed]**
 
-      Med det här alternativet kan du bearbeta e-postmeddelanden en i taget. Aktiviteten aktiverar endast övergången en gång och slutför sedan bearbetningen, vilket lämnar obearbetade meddelanden på servern.
-
+     Med det här alternativet kan du bearbeta e-postmeddelanden en i taget. Aktiviteten aktiverar endast övergången en gång och slutför sedan bearbetningen, vilket lämnar obearbetade meddelanden på servern.
 
 1. **[!UICONTROL Script]**
 

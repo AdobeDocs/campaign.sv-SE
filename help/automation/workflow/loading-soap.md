@@ -3,8 +3,9 @@ product: campaign
 title: Läsa in (SOAP)
 description: Läsa in (SOAP)
 feature: Workflows
+role: User
 exl-id: 21c42a36-9a50-49b8-8a07-b041ba8b2026
-source-git-commit: 6464e1121b907f44db9c0c3add28b54486ecf834
+source-git-commit: 567c2e84433caab708ddb9026dda6f9cb717d032
 workflow-type: tm+mt
 source-wordcount: '229'
 ht-degree: 4%
@@ -42,11 +43,11 @@ The **Läser in (SOAP)** -aktiviteten används utöver **datainläsning (RDBMS)*
    Om du vill uppdatera exemplet väljer du **[!UICONTROL Re-analyze the example]**.
 
 1. Du kan använda radnumret som en identifierare och/eller ange att SOAP-anropet returnerar flera element.
-1. Ange följande tabbskript efter funktion:
+1. Ange följande tabbskript beroende på deras funktion:
 
-   * **[!UICONTROL Initialization]**: skapar en SOAP-anslutning.
+   * **[!UICONTROL Initialization]**: upprättar en SOAP-anslutning.
    * **[!UICONTROL Iteration]**: utför anropet till SOAP-tjänsten. Returvärdet för den här funktionen måste vara ett XML-objekt som är kompatibelt med beskrivningen av exemplet eller WSDL.
 
-      Koden för den här fliken anropas i en slinga av Adobe Campaign tills ett XML-objekt som är null returneras.
+     Koden för den här fliken anropas i en slinga av Adobe Campaign tills ett XML-objekt som är null returneras.
 
    * **[!UICONTROL Finalization]**: stänger anslutningen och/eller frigör andra resurser som skapas under bearbetningen.

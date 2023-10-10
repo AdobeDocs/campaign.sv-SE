@@ -3,8 +3,9 @@ product: campaign
 title: Dataextrahering (fil)
 description: Läs mer om arbetsflödesaktiviteten för dataextrahering (fil)
 feature: Workflows, Data Management Activity
+role: User
 exl-id: 8510e879-2862-491f-bc52-ca8f56105932
-source-git-commit: 77ec01aaba1e50676bed57f503a9e4e8bb1fe54c
+source-git-commit: 567c2e84433caab708ddb9026dda6f9cb717d032
 workflow-type: tm+mt
 source-wordcount: '324'
 ht-degree: 1%
@@ -23,14 +24,14 @@ Du kan extrahera data från en arbetsflödestabell i en extern fil med **[!UICON
 
 Så här konfigurerar du dataextrahering:
 
-1. Ange namnet på utdatafilen: det här namnet kan innehålla variabler, infogade via personaliseringsknappen till höger om fältet.
+1. Ange namnet på utdatafilen: det här namnet kan innehålla variabler, som infogats via personaliseringsknappen till höger om fältet.
 1. Klicka **[!UICONTROL Edit the file format...]** för att markera de data som ska extraheras.
 
    ![](assets/s_advuser_extract_file_param.png)
 
-   The **[!UICONTROL Handle groupings (GROUP BY + HAVING)]** tillför ett extra steg för att filtrera slutresultatet av sammanställningen, t.ex. för en viss inköpsordertyp, kunder som har beställt mer än 10 gånger osv.
+   The **[!UICONTROL Handle groupings (GROUP BY + HAVING)]** tillför ett extra steg för att filtrera slutresultatet av sammanställningen, till exempel för en viss inköpsordertyp, kunder som har beställt mer än 10 gånger osv.
 
-1. Om det behövs kan du lägga till nya kolumner i utdatafilen, t.ex. genom att beräkna eller bearbeta resultat. Om du vill göra det klickar du på **[!UICONTROL Add]** ikon.
+1. Om det behövs kan du lägga till nya kolumner i utdatafilen, t.ex. genom att beräkna eller bearbeta resultat. Klicka på **[!UICONTROL Add]** -ikon.
 
    ![](assets/s_advuser_extract_file_add_col.png)
 
@@ -58,7 +59,7 @@ Här följer en lista över tillgängliga sammanställningsfunktioner:
 
 * **[!UICONTROL Count]** att räkna alla värden som inte är null i det fält som ska aggregeras, inklusive dubblettvärden (i det aggregerade fältet),
 
-   **[!UICONTROL Distinct]** att räkna det totala antalet olika och icke-null-värden för det fält som ska aggregeras (dubblettvärden exkluderas före beräkningen),
+  **[!UICONTROL Distinct]** att räkna det totala antalet olika och icke-null-värden för det fält som ska aggregeras (dubblettvärden exkluderas före beräkningen),
 
 * **[!UICONTROL Sum]** beräkna summan av värdena för ett numeriskt fält,
 * **[!UICONTROL Minimum value]** beräkna minimivärdena för ett fält (numeriskt eller på annat sätt),

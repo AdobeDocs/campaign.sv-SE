@@ -3,8 +3,9 @@ product: campaign
 title: Övervaka tekniska arbetsflöden
 description: Övervaka tekniska arbetsflöden
 feature: Workflows
+role: Admin
 exl-id: 8524d916-8af7-4641-b047-9c348f1017fd
-source-git-commit: 6464e1121b907f44db9c0c3add28b54486ecf834
+source-git-commit: 567c2e84433caab708ddb9026dda6f9cb717d032
 workflow-type: tm+mt
 source-wordcount: '472'
 ht-degree: 5%
@@ -35,15 +36,15 @@ Beroende på det tekniska arbetsflödet följer du stegen nedan för att kontrol
 
 Mer information om vad varje tekniskt arbetsflöde ska göra finns i [section](technical-workflows.md).
 
-För **[!UICONTROL Database Cleanup workflow (‘cleanup’)]**:
+För **[!UICONTROL Database Cleanup workflow ('cleanup')]**:
 
 Kontrollera journalen för att verifiera att förfluten tid är relativt konstant över tid och inte stör andra arbetsflöden.
 
-För **[!UICONTROL Tracking workflow (‘tracking’)]**:
+För **[!UICONTROL Tracking workflow ('tracking')]**:
 
 Kontrollera att spårningsarbetsflödet körs som schemalagt (varje timme som standard) och att journalen inte visar återkommande fel. Mer information om detta hittar du i det här [avsnittet](delivery.md).
 
-För **[!UICONTROL Deliverability update (‘deliverabilityUpdate’)]**:
+För **[!UICONTROL Deliverability update ('deliverabilityUpdate')]**:
 
 1. Kontrollera att **[!UICONTROL Deliverability update]** arbetsflödet körs och avslutas framgångsrikt varje dag.
 1. Kontrollera i journalen att reglerna uppdateras regelbundet.
@@ -63,7 +64,7 @@ En varning ska genereras och skickas till rätt grupp om ett problem uppstår.
 
 Kontrollera att alla operatorer har en giltig e-postadress.
 
-Alla arbetsflöden som ska köras för att plattformen ska fungera, till exempel daglig dataimport, ska deklareras som &quot;Produktion&quot; (kryssruta) och visas i fet stil.
+Alla arbetsflöden som ska köras för att plattformen ska fungera, t.ex. daglig dataimport, ska deklareras som &quot;Produktion&quot; (kryssruta) och visas i fet stil.
 
 ## Underhållslista för arbetsflöde {#workflow-maintenance-list}
 
@@ -71,7 +72,7 @@ Alla anpassade tekniska arbetsflöden bör dokumenteras i ett kalkylblad som inn
 
 * Arbetsflödets namn och plats.
 * Syfte.
-* Schemaläggning och beroenden.
+* Planering och beroenden.
 * Ansvarig för övervakning.
 * Instruktioner om vad som ska göras om fel uppstår.
 

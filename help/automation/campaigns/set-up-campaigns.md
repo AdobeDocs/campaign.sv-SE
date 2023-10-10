@@ -3,8 +3,9 @@ product: campaign
 title: Kom igång med marknadsföringskampanjer
 description: Lär er hur ni börjar med marknadsföringskampanjer
 feature: Campaigns, Cross Channel Orchestration, Programs
+role: User
 exl-id: eb1a0e52-14d9-4ad2-8bf2-ea955c6fd0f5
-source-git-commit: ac4473625697d0fd545586a01868e3229bccc672
+source-git-commit: 567c2e84433caab708ddb9026dda6f9cb717d032
 workflow-type: tm+mt
 source-wordcount: '444'
 ht-degree: 3%

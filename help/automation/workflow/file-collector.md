@@ -3,8 +3,9 @@ product: campaign
 title: Filhämtare
 description: Läs mer om arbetsflödesaktiviteten för filinsamlaren
 feature: Workflows, Data Management
+role: User
 exl-id: 614becf7-4cbf-40f9-a1b1-06efa054bfd9
-source-git-commit: 77ec01aaba1e50676bed57f503a9e4e8bb1fe54c
+source-git-commit: 567c2e84433caab708ddb9026dda6f9cb717d032
 workflow-type: tm+mt
 source-wordcount: '524'
 ht-degree: 0%
@@ -15,11 +16,11 @@ ht-degree: 0%
 
 
 
-The **Filinsamlare** övervakar hur en eller flera filer kommer in i en katalog och aktiverar övergången för varje mottagen fil. För varje händelse, en **[!UICONTROL filename]** variabeln innehåller det fullständiga namnet på den mottagna filen. De insamlade filerna flyttas till en annan katalog för arkivering och för att säkerställa att de bara räknas en gång.
+The **Filinsamlare** övervakar hur en eller flera filer kommer in i en katalog och aktiverar övergången för varje mottagen fil. För varje händelse, en **[!UICONTROL filename]** variabeln innehåller det fullständiga namnet på den mottagna filen. De insamlade filerna flyttas till en annan katalog för arkiveringsändamål och för att säkerställa att de bara räknas en gång.
 
-Som standard är filinsamlaren en beständig uppgift som testar om det finns filer vid de tidpunkter som anges i schemat.
+Som standard är filinsamlaren en beständig uppgift som testar förekomsten av filer vid de tidpunkter som anges i schemat.
 
-Filerna måste finnas på den server där den servermodul som ansvarar för det här arbetsflödet körs. Om flera wfserver-moduler distribueras på en enda instans måste tillhörigheten för de aktiviteter som använder dessa filer eller arbetsflödets totala tillhörighet anges.
+Filerna måste finnas på den server där den servermodul som ansvarar för det här arbetsflödet körs. Om flera wfserver-moduler distribueras på en enda instans måste antingen tillhörigheten för de aktiviteter som använder dessa filer eller arbetsflödets totala tillhörighet anges.
 
 ## Egenskaper {#properties}
 
@@ -31,21 +32,21 @@ Den första fliken i **[!UICONTROL File collector]** kan du välja källkatalog 
 
    * **[!UICONTROL Directory]**
 
-      Katalog som innehåller de filer som ska hämtas. Den här katalogen måste skapas i förväg på servern: Om den inte finns genereras ett fel.
+     Katalog som innehåller de filer som ska hämtas. Den här katalogen måste skapas i förväg på servern: Om den inte finns genereras ett fel.
 
    * **[!UICONTROL Filter]**
 
-      Endast filer som matchar det här filtret tas med i beräkningen. De andra filerna i katalogen ignoreras. Om filtret är tomt beaktas alla filer i katalogen. Exempel på filter: **&#42;.zip**, **import-&#42;.txt**.
+     Endast filer som matchar det här filtret beaktas. De andra filerna i katalogen ignoreras. Om filtret är tomt beaktas alla filer i katalogen. Exempel på filter: **&#42;.zip**, **import-&#42;.txt**.
 
    * **[!UICONTROL Stop as soon as a file has been processed]**
 
-      Om det här alternativet är aktiverat avslutas aktiviteten när den första filen har tagits emot. Om det finns flera filer som motsvarar filtret i katalogen kommer endast en att tas med i beräkningen. Det här alternativet garanterar att endast en händelse skickas. Den fil som tas med i beräkningen är den första i listan i alfabetisk ordning.
+     Om det här alternativet är aktiverat avslutas aktiviteten när den första filen har tagits emot. Om det finns flera filer som motsvarar filtret i katalogen kommer endast en att tas med i beräkningen. Det här alternativet garanterar att endast en händelse skickas. Den fil som tas med i beräkningen är den första i listan i alfabetisk ordning.
 
-      Om det inte finns någon fil som matchar filtret i den angivna katalogen för en oschemalagd aktivitet, och om **[!UICONTROL Process file nonexistence]** om alternativet inte är aktiverat kommer ett fel att uppstå.
+     Om det inte finns någon fil som matchar filtret i den angivna katalogen för en oschemalagd aktivitet, och om **[!UICONTROL Process file nonexistence]** om alternativet inte är aktiverat kommer ett fel att uppstå.
 
    * **[!UICONTROL Execution schedule]**
 
-      Bestämmer frekvensen för filnärvarokontrollen via parametrarna för **[!UICONTROL Schedule]** -fliken.
+     Bestämmer frekvensen för filnärvarokontrollen via parametrarna för **[!UICONTROL Schedule]** -fliken.
 
 1. **Felhantering**
 
@@ -53,17 +54,17 @@ Den första fliken i **[!UICONTROL File collector]** kan du välja källkatalog 
 
    * **[!UICONTROL Process file nonexistence]**
 
-      Det här alternativet startar en speciell övergång varje gång ingen fil som matchar filtret hittas i den angivna katalogen.
+     Med det här alternativet initieras en speciell övergång varje gång ingen fil som matchar filtret hittas i den angivna katalogen.
 
-      Om aktiviteten inte är schemalagd kommer den här övergången endast att aktiveras en gång.
+     Om aktiviteten inte är schemalagd kommer den här övergången endast att aktiveras en gång.
 
    * **[!UICONTROL Processing errors]**
 
-      Med det här alternativet visas en speciell övergång som aktiveras om ett fel genereras. I det här fallet ändras inte arbetsflödet till felstatus och körningen fortsätter
+     Med det här alternativet visas en speciell övergång som aktiveras om ett fel genereras. I det här fallet ändras inte arbetsflödet till felstatus och körningen fortsätter
 
-      Fel som beaktas är filsystemfel (filen kunde inte flyttas, katalogen kunde inte nås osv.).
+     Fel som beaktas är filsystemfel (filen kunde inte flyttas, katalogen kunde inte nås osv.).
 
-      Det här alternativet bearbetar inte fel relaterade till aktivitetskonfigurationen, dvs. ogiltiga värden.
+     Det här alternativet bearbetar inte fel relaterade till aktivitetskonfigurationen, dvs. ogiltiga värden.
 
 1. **Historik**
 
@@ -75,4 +76,4 @@ Filbearbetningsordningen kan inte bestämmas. Om du vill bearbeta en uppsättnin
 
 ## Utdataparametrar {#output-parameters}
 
-* filnamn: Fullständigt filnamn. Det här är filnamnet när det har flyttats till historikkatalogen. Sökvägen är därför annorlunda, men namnet är också annorlunda om det redan finns en fil med samma namn i katalogen. Utbyggnaden behålls.
+* filnamn: Fullständigt filnamn. Det här är filnamnet när det har flyttats till historikkatalogen. Sökvägen är därför annorlunda, men namnet är också annorlunda om det redan finns en annan fil med samma namn i katalogen. Utbyggnaden behålls.

@@ -3,8 +3,9 @@ product: campaign
 title: Leverans
 description: Läs mer om arbetsflödesaktiviteten av typen Delivery
 feature: Workflows, Channels Activity
+role: User
 exl-id: 58574983-86c7-46f5-b41b-bae90171048d
-source-git-commit: 77ec01aaba1e50676bed57f503a9e4e8bb1fe54c
+source-git-commit: 567c2e84433caab708ddb9026dda6f9cb717d032
 workflow-type: tm+mt
 source-wordcount: '917'
 ht-degree: 1%
@@ -27,33 +28,33 @@ Om du vill konfigurera den redigerar du aktiviteten och anger leveransalternativ
 
    * Agera på leveransen som anges i den inkommande övergången. Om du vill göra det väljer du det första alternativet i **[!UICONTROL Delivery]** i fönstret.
 
-      Det här alternativet kan användas när en tidigare arbetsflödesaktivitet redan har skapats eller specificerat leveransen. Detta kan ha gjorts, som i exemplet nedan, av en aktivitet av samma typ som har genererat en utgående övergång.
+     Det här alternativet kan användas när en tidigare arbetsflödesaktivitet redan har skapats eller specificerat leveransen. Detta kan ha gjorts, som i exemplet nedan, av en aktivitet av samma typ som har genererat en utgående övergång.
 
-      I följande exempel skapas leveransen för första gången. Populationen och innehållet definieras senare. Därefter anges informationen för dessa tre element på nytt i en ny leveransaktivitet med hjälp av övergången för inkommande trafik så att den kan skickas.
+     I följande exempel skapas leveransen för första gången. Populationen och innehållet definieras senare. Därefter anges informationen för dessa tre element på nytt i en ny leveransaktivitet med hjälp av övergången för inkommande trafik så att den kan skickas.
 
-      ![](assets/specified_transition_option_exemple.png)
+     ![](assets/specified_transition_option_exemple.png)
 
    * Välj den aktuella leveransen direkt. Om du vill göra det väljer du **[!UICONTROL Explicit]** och välj leverans i listrutan i dialogrutan **[!UICONTROL Delivery]** fält.
 
-      I listan visas oavslutade leveranser i **Leveranser** som standard. Klicka på **[!UICONTROL Select link]** ikon.
+     I listan visas oavslutade leveranser som finns i **Leveranser** som standard. Klicka på **[!UICONTROL Select link]** -ikon.
 
-      ![](assets/diffusion_edit_1.png)
+     ![](assets/diffusion_edit_1.png)
 
-      Välj kampanjen i listrutan i **[!UICONTROL Folder]** eller klicka **[!UICONTROL Display sub-levels]** för att visa alla leveranser i undermappar:
+     Välj kampanjen i listrutan i **[!UICONTROL Folder]** eller klicka **[!UICONTROL Display sub-levels]** för att visa alla leveranser i undermappar:
 
-      ![](assets/diffusion_edit_2.png)
+     ![](assets/diffusion_edit_2.png)
 
-      När du har valt leveransåtgärden kan du visa innehållet genom att klicka på **[!UICONTROL Edit link]** ikon.
+     När du har valt leveransåtgärden kan du visa innehållet genom att klicka på **[!UICONTROL Edit link]** -ikon.
 
    * Skapa ett skript för att beräkna leveransen. Om du vill göra det väljer du **[!UICONTROL Computed by a script]** och ange skriptet. Du kan öppna ett inmatningsfönster genom att klicka på **[!UICONTROL Edit...]** alternativ. I följande exempel återskapas leveransens identifierare:
 
-      ![](assets/diffusion_edit_3.png)
+     ![](assets/diffusion_edit_3.png)
 
    * Skapa en ny leverans. Om du vill göra det väljer du **[!UICONTROL New, created from a template]** och välj den leveransmall som leveransen ska baseras på.
 
-      ![](assets/diffusion_edit_4.png)
+     ![](assets/diffusion_edit_4.png)
 
-      Klicka på **[!UICONTROL Select link]** om du vill bläddra bland mapparna och klicka på **[!UICONTROL Edit link]** om du vill visa innehållet i den valda mallen.
+     Klicka på **[!UICONTROL Select link]** om du vill bläddra bland mapparna och klicka på **[!UICONTROL Edit link]** om du vill visa innehållet i den valda mallen.
 
 1. **Mottagare**
 
@@ -75,11 +76,11 @@ Om du vill konfigurera den redigerar du aktiviteten och anger leveransalternativ
 
    Välj vilken typ av åtgärd som ska utföras:
 
-   * **[!UICONTROL Save]**: Med det här alternativet kan du skapa leveransen och spara den. Den kommer inte att analysera eller leverera den.
+   * **[!UICONTROL Save]**: med det här alternativet kan du skapa leveransen och spara den. Den kommer inte att analysera eller leverera den.
    * **[!UICONTROL Estimate the target]**: Med det här alternativet kan du beräkna leveransmålet för att bedöma dess potential (första analysfasen). Den här åtgärden motsvarar att välja **[!UICONTROL Estimate the population to be targeted]** och klicka **[!UICONTROL Analyze]** när en leverans skickas till huvudmålet via **Leverans**.
-   * **[!UICONTROL Prepare]**: Med det här alternativet kan du köra hela analysprocessen (målberäkning och innehållsförberedelse). Leveransen har inte skickats. Den här åtgärden motsvarar att välja **[!UICONTROL Deliver as soon as possible]** och klicka **[!UICONTROL Analyze]** när en leverans skickas till huvudmålet med **Leverans**.
-   * **[!UICONTROL Send a proof]**: Med det här alternativet kan du skicka ett bevis på leveransen. Den här åtgärden motsvarar att klicka på **[!UICONTROL Send a proof]** i verktygsfältet för en leverans med **Leverans**
-   * **[!UICONTROL Prepare and start]**: Med det här alternativet startas hela analysprocessen (målberäkning och förberedelse av innehåll) och leveransen skickas. Den här åtgärden motsvarar att klicka **[!UICONTROL Deliver as soon as possible]**, **[!UICONTROL Analyze]** och **[!UICONTROL Confirm delivery]** alternativ när en leverans skickas till huvudmålet med **Leverans**.
+   * **[!UICONTROL Prepare]**: det här alternativet gör att du kan köra hela analysprocessen (målberäkning och förberedelse av innehåll). Leveransen har inte skickats. Den här åtgärden motsvarar att välja **[!UICONTROL Deliver as soon as possible]** och klicka **[!UICONTROL Analyze]** när en leverans skickas till huvudmålet med **Leverans**.
+   * **[!UICONTROL Send a proof]**: med det här alternativet kan du skicka ett leveransbevis. Den här åtgärden motsvarar att klicka på **[!UICONTROL Send a proof]** i verktygsfältet för en leverans med **Leverans**
+   * **[!UICONTROL Prepare and start]**: det här alternativet startar hela analysprocessen (målberäkning och innehållsförberedelse) och skickar leveransen. Den här åtgärden motsvarar att klicka **[!UICONTROL Deliver as soon as possible]**, **[!UICONTROL Analyze]** och **[!UICONTROL Confirm delivery]** alternativ när en leverans skickas till huvudmålet med **Leverans**.
 
    The **[!UICONTROL Act on a delivery]** Med den här aktiviteten kan du starta alla återstående steg som krävs för att starta leveransen (målberäkning, förberedelse av innehåll, leverans). Mer information finns i [Leveranskontroll](delivery-control.md).
 
@@ -87,20 +88,21 @@ Om du vill konfigurera den redigerar du aktiviteten och anger leveransalternativ
 
    * **[!UICONTROL Generate an outbound transition]**
 
-      Skapar en utgående övergång som ska aktiveras i slutet av körningen. Du kan välja om du vill hämta målet för den utgående leveransen eller inte.
+     Skapar en utgående övergång som ska aktiveras i slutet av körningen. Du kan välja om du vill hämta målet för den utgående leveransen eller inte.
 
    * **[!UICONTROL Do not recover target]**
 
-      Återställer inte målet för åtgärden för utgående leverans.
+     Återställer inte målet för åtgärden för utgående leverans.
 
    * **[!UICONTROL Processing errors]**
 
-      Se [Leveranskontroll](delivery-control.md).
+     Se [Leveranskontroll](delivery-control.md).
+
    The **Skript** kan du ändra leveransparametrarna.
 
    ![](assets/edit_diffusion_fil_script.png)
 
-## Exempel: arbetsflöde för leverans {#example--delivery-workflow}
+## Exempel: leveransarbetsflöde {#example--delivery-workflow}
 
 Skapa ett nytt arbetsflöde och lägg till aktiviteter enligt bilden nedan:
 
@@ -147,11 +149,11 @@ Varje inkommande händelse måste ange ett mål som definieras av dessa parametr
 
 * filnamn
 
-   Fullständigt namn på filen som genereras om **[!UICONTROL File(s) specified by inbound event(s)]** alternativet är markerat i **[!UICONTROL Recipients]** -avsnitt.
+  Fullständigt namn på filen som genereras om **[!UICONTROL File(s) specified by inbound event(s)]** alternativet är markerat i **[!UICONTROL Recipients]** -avsnitt.
 
 * contentId
 
-   Innehållsidentifieraren om **[!UICONTROL Specified by inbound events]** alternativet är markerat i **[!UICONTROL Content]** -avsnitt.
+  Innehållsidentifieraren om **[!UICONTROL Specified by inbound events]** alternativet är markerat i **[!UICONTROL Content]** -avsnitt.
 
 ## Utdataparametrar {#output-parameters}
 

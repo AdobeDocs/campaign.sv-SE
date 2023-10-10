@@ -2,8 +2,9 @@
 title: Adobe Campaign globala rapporter
 description: Lär dig hur du får åtkomst till och använder globala rapporter
 feature: Reporting, Monitoring
+role: User, Data Engineer
 exl-id: 6e3409d8-86bd-44ba-a40d-10287f53a960
-source-git-commit: 65f4da979f0c5884797af0c3a835d948672b4a7c
+source-git-commit: 567c2e84433caab708ddb9026dda6f9cb717d032
 workflow-type: tm+mt
 source-wordcount: '1763'
 ht-degree: 3%
@@ -51,6 +52,7 @@ Du kan konfigurera de värden som visas genom att ändra tidsskalan: 1-timmars v
 >Du kan också övervaka antalet leveranser som skickas per timme med [Kontrollpanelen](https://experienceleague.adobe.com/docs/control-panel/using/sftp-management/sftp-storage-management.html).
 >
 >Kontrollpanelen är tillgänglig för alla administratörsanvändare. Stegen för att bevilja administratörsåtkomst till en användare finns på [den här sidan](https://experienceleague.adobe.com/docs/control-panel/using/discover-control-panel/managing-permissions.html?lang=sv#discover-control-panel).
+>
 
 ## Användaraktiviteter {#user-activities}
 
@@ -86,19 +88,19 @@ För varje feltyp har vi:
 
 Följande indikatorer används:
 
-* **[!UICONTROL User unknown]** : Feltypen som genererades under leveransen för att ange att e-postadressen är ogiltig.
-* **[!UICONTROL Invalid domain]** : Feltypen som genererades när en leverans skickades för att ange att domänen för e-postadressen är fel eller inte finns.
+* **[!UICONTROL User unknown]** : Feltyp som genererades under leveransen för att ange att e-postadressen är ogiltig.
+* **[!UICONTROL Invalid domain]** : Feltyp som genereras när en leverans skickas för att ange att domänen för e-postadressen är fel eller inte finns.
 * **[!UICONTROL Inbox full]** : Feltyp som genererats efter fem leveransförsök för att ange att mottagarens inkorg innehåller för många meddelanden.
 * **[!UICONTROL Account disabled]** : Feltyp som genereras när en leverans skickas för att ange att adressen inte längre finns.
 * **[!UICONTROL Rejected]** : Feltyp som genereras när en adress nekas av IAP (Internet Access Provider), till exempel efter att en säkerhetsregel (antispam-program) har tillämpats.
-* **[!UICONTROL Unreachable]** : Feltyp som inträffar i meddelandedistributionssträngen: incident på SMTP-reläet, domän som tillfälligt inte kan nås osv.
-* **[!UICONTROL Not connected]** : Feltyp för att ange att mottagarens mobiltelefon är avstängd eller frånkopplad från nätverket när den skickas.
+* **[!UICONTROL Unreachable]** : Feltyp som inträffar i meddelandedistributionssträngen: incident i SMTP-reläet, domän som inte går att nå temporärt, osv.
+* **[!UICONTROL Not connected]** : Feltyp som anger att mottagarens mobiltelefon är avstängd eller frånkopplad från nätverket vid tidpunkten för sändningen.
 
-   >[!NOTE]
-   >
-   >Denna indikator avser leveranser på [mobilkanaler](../send/send.md) endast.
+  >[!NOTE]
+  >
+  >Denna indikator avser leveranser på [mobilkanaler](../send/send.md) endast.
 
-   Du kan öppna varje rad i värdetabellen genom att klicka på `[+]` symbol. För varje feltyp kan du visa hur felmeddelandena är uppdelade efter domän.
+  Du kan öppna varje rad i värdetabellen genom att klicka på `[+]` symbol. För varje feltyp kan du visa hur felmeddelandena är uppdelade efter domän.
 
 **[!UICONTROL Breakdown of errors per domain]**
 
@@ -116,15 +118,15 @@ Du kan öppna varje rad i värdetabellen genom att klicka på [+] symbol. För v
 
 >[!NOTE]
 >
->Domännamnen som visas i den här rapporten definieras på kubnivå. Om du vill ändra dessa värden redigerar du **[!UICONTROL Delivery logs (broadlogrcp)]** kub. Mer information om detta finns i [det här avsnittet](gs-cubes.md). The **[!UICONTROL Others]** -kategorin innehåller domännamn som inte tillhör en viss klass.
+>Domännamnen som visas i den här rapporten definieras på kubnivå. Om du vill ändra dessa värden redigerar du **[!UICONTROL Delivery logs (broadlogrcp)]** kub. Mer information om detta finns i [det här avsnittet](gs-cubes.md). The **[!UICONTROL Others]** omfattar domännamn som inte tillhör en viss klass.
 
 ## Webbläsare {#browsers}
 
-Denna rapport visar hur de webbläsare som används av de som tar emot leveransen under den aktuella perioden har delats upp.
+Den här rapporten visar hur de webbläsare som används av de som tar emot leveransen under den aktuella perioden har delats upp.
 
 >[!NOTE]
 >
->Värdena i den här rapporten är uppskattningar: endast mottagare som har klickat i en leverans kommer att tas med i beräkningen.
+>Värdena som visas i den här rapporten är uppskattningar: endast mottagare som har klickat i en leverans kommer att beaktas.
 
 **Global statistik**
 
@@ -146,14 +148,14 @@ I tabellen med globala statistikvärden kan du klicka på varje webbläsarnamn f
 
 Statistiken presenteras i form av en kurva, ett diagram och en värdetabell.
 
-The **[!UICONTROL History]** -kurvan visar webbläsarens närvaro per dag. Frekvensen är förhållandet mellan antalet besökare per dag (i den här webbläsaren) och antalet besökare som mäts på dagen med den högsta närvarofrekvensen.
+The **[!UICONTROL History]** -kurvan representerar närvarofrekvensen för den här webbläsaren per dag. Frekvensen är förhållandet mellan antalet besökare per dag (i den här webbläsaren) och antalet besökare som mäts på dagen med den högsta närvarofrekvensen.
 
 The **[!UICONTROL Breakdown per version]** diagram visar uppdelningen av besökare per version jämfört med det totala antalet besökare (i den här webbläsaren).
 
 I värdetabellen används följande indikatorer:
 
-* **[!UICONTROL Global rate]** : Frekvensen representerar fördelningen av besökare per version jämfört med det totala antalet besökare (i alla webbläsare).
-* **[!UICONTROL Relative rate]** : Frekvensen representerar fördelningen av besökare per version jämfört med det totala antalet besökare (i den här webbläsaren).
+* **[!UICONTROL Global rate]** : Den här frekvensen representerar fördelningen av besökare per version jämfört med det totala antalet besökare (i alla webbläsare).
+* **[!UICONTROL Relative rate]** : Den här frekvensen representerar fördelningen av besökare per version jämfört med det totala antalet besökare (i den här webbläsaren).
 
 
 <!--
@@ -214,7 +216,7 @@ I den här rapporten visas uppdelningen av operativsystem som används av levera
 
 >[!NOTE]
 >
->Värdena i den här rapporten är uppskattningar: endast mottagare som har klickat i en leverans kommer att tas med i beräkningen.
+>Värdena som visas i den här rapporten är uppskattningar: endast mottagare som har klickat i en leverans kommer att beaktas.
 
 **Global statistik**
 
@@ -224,9 +226,9 @@ Den globala användningsstatistiken för operativsystem presenteras i form av en
 
 Följande indikatorer används:
 
-* **[!UICONTROL Visitors]** : Dagsgenomsnitt av det totala antalet målmottagare (per operativsystem) som klickade på en leverans minst en gång.
-* **[!UICONTROL Pages viewed]** : Dagsgenomsnitt av det totala antalet klick på leveranslänkar (per operativsystem) för alla leveranser.
-* **[!UICONTROL Rate of use]** : Den här taxan visar fördelningen av besökare (per operativsystem) i förhållande till det totala antalet besökare.
+* **[!UICONTROL Visitors]** : Dagligt genomsnitt av det totala antalet målmottagare (per operativsystem) som klickade på en leverans minst en gång.
+* **[!UICONTROL Pages viewed]** : Dagligt genomsnitt av det totala antalet klick på leveranslänkar (per operativsystem) för alla leveranser.
+* **[!UICONTROL Rate of use]** : Den här frekvensen representerar fördelningen av besökare (per operativsystem) i förhållande till det totala antalet besökare.
 
 **Statistik per operativsystem**
 
@@ -242,7 +244,7 @@ The **[!UICONTROL Breakdown by version]** diagram visar uppdelningen av besökar
 
 I värdetabellen används följande indikatorer:
 
-* **[!UICONTROL Global rate]** : Den här prisnivån visar fördelningen av besökare (per version) i förhållande till det totala antalet besökare i operativsystemen.
+* **[!UICONTROL Global rate]** : Den här frekvensen representerar fördelningen av besökare (per version) i förhållande till det totala antalet besökare i operativsystemen.
 * **[!UICONTROL Relative rate]** : Den här frekvensen representerar fördelningen av besökare (per version) i förhållande till det totala antalet besökare för det här operativsystemet.
 
 ## Prenumerationsspårning {#subscription-tracking}
@@ -262,9 +264,9 @@ The **[!UICONTROL Number subscribed to date]** representerar det totala antalet 
 I värdetabellen används följande indikatorer:
 
 * **[!UICONTROL Subscribers]** : Totalt antal abonnenter under den berörda perioden.
-* **[!UICONTROL Subscriptions]** : Antal prenumerationer för den berörda perioden.
-* **[!UICONTROL Unsubscriptions]** : Antal avbeställningar under den aktuella perioden.
-* **[!UICONTROL Evolution]** : Antal avbeställningar minus antal prenumerationer. Kursen beräknas utifrån det totala antalet prenumeranter.
+* **[!UICONTROL Subscriptions]** : Antal prenumerationer för den aktuella perioden.
+* **[!UICONTROL Unsubscriptions]** : Antal avbrutna prenumerationer under den aktuella perioden.
+* **[!UICONTROL Evolution]** : Antal avbrutna prenumerationer minus antalet prenumerationer. Kursen beräknas utifrån det totala antalet prenumeranter.
 * **[!UICONTROL Loyalty]** : Abonnenternas lojalitetsgrad under den berörda perioden.
 
 **[!UICONTROL Subscription evolution curves]**
@@ -280,16 +282,16 @@ Den här rapporten visar hur alla meddelanden som bearbetas och skickas har dela
 Följande indikatorer används:
 
 * **[!UICONTROL Emails processed]** : Totalt antal meddelanden som har bearbetats av leveransservern.
-* **[!UICONTROL Delivered]** : Andel av antalet meddelanden som har bearbetats jämfört med det totala antalet meddelanden som har bearbetats.
-* **[!UICONTROL Hard bounces]** : procentandelen av antalet&quot;hårda&quot; studsar jämfört med det totala antalet bearbetade meddelanden.
+* **[!UICONTROL Delivered]** : procentandel av antalet meddelanden som har bearbetats jämfört med det totala antalet meddelanden som har bearbetats.
+* **[!UICONTROL Hard bounces]** : procentandel av antalet&quot;hårda&quot; studsar jämfört med det totala antalet bearbetade meddelanden.
 * **[!UICONTROL Soft bounces]** : procentandel av antalet &quot;mjuka&quot; studsar jämfört med det totala antalet bearbetade meddelanden.
 
-   >[!NOTE]
-   >
-   >Mer information om hårda och mjuka studsar finns i [den här sidan](../send/quarantines.md).
+  >[!NOTE]
+  >
+  >Mer information om hårda och mjuka studsar finns i [den här sidan](../send/quarantines.md).
 
 * **[!UICONTROL Opens]** : procentandel av antalet målmottagare som öppnade ett meddelande minst en gång jämfört med antalet meddelanden som bearbetades.
-* **[!UICONTROL Clicks]** : procentandelen personer som klickade på en leverans minst en gång jämfört med antalet meddelanden som bearbetades.
+* **[!UICONTROL Clicks]** : procentandel av antalet personer som klickade i en leverans minst en gång jämfört med antalet meddelanden som bearbetades.
 * **[!UICONTROL Unsubscription]** : procent av antalet klick på en länk för att avbryta prenumerationen jämfört med antalet meddelanden som har bearbetats.
 
 ## Indelning av öppningar {#breakdown-of-opens}

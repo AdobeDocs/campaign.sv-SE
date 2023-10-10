@@ -3,8 +3,9 @@ product: campaign
 title: Godkännande
 description: Godkännande
 feature: Workflows, Approvals
+role: User
 exl-id: 9e57d21c-ce16-448d-97f1-8c6844acb37b
-source-git-commit: 290f4e9a0d13ef49caacb7a128ccc266bafd5e69
+source-git-commit: 567c2e84433caab708ddb9026dda6f9cb717d032
 workflow-type: tm+mt
 source-wordcount: '547'
 ht-degree: 0%
@@ -19,23 +20,23 @@ An **Godkännande** uppgiften kräver att en operatör deltar i den. Operatorn t
 
 ## Uppgiftstilldelning {#task-assignment}
 
-Som standard tilldelas godkännande till en grupp operatorer. Den här gruppen representerar en roll, t.ex. &#39;Innehållsgrupp för nyhetsbrev&#39; eller &#39;Målgrupp för nyhetsbrev&#39;. Varje operator i gruppen kan svara, men endast det första svaret beaktas (utom vid flera godkännanden).
+Som standard tilldelas godkännande till en grupp operatorer. Den här gruppen representerar en roll, t.ex.&quot;Innehållsgrupp för nyhetsbrev&quot; eller&quot;Målgrupp för nyhetsbrev&quot;. Varje operator i gruppen kan svara, men endast det första svaret beaktas (utom vid flera godkännanden).
 
 Om det behövs kan du tilldela godkännandeuppgiften till en enda operator eller en uppsättning operatorer som definieras av ett filter.
 
 * Om du vill välja en enskild operator väljer du **[!UICONTROL Operator]** värdet i **[!UICONTROL Assignment type]** och välj den relevanta operatorn i listrutan i **[!UICONTROL Assignee]** fält.
 
-   ![](assets/s_advuser_validation_box_assign.png)
+  ![](assets/s_advuser_validation_box_assign.png)
 
-   >[!CAUTION]
-   >
-   >Endast den valda operatorn kommer att få behörighet att godkänna uppgiften.
+  >[!CAUTION]
+  >
+  >Endast den valda operatorn kommer att få behörighet att godkänna uppgiften.
 
 * Du kan definiera en fråga för filtrering av godkännandeoperatorer. Om du vill göra det väljer du **[!UICONTROL Filter]** värdet i **[!UICONTROL Assignment type]** och klicka på **[!UICONTROL Advanced parameters...]** länk för att definiera filtreringsvillkor, som i följande exempel:
 
-   ![](assets/s_advuser_validation_box_filter.png)
+  ![](assets/s_advuser_validation_box_filter.png)
 
-Vid ett enda godkännande aktiveras övergången som motsvarar valet av operator och uppgiften är slutförd: övriga operatorer inte kan svara.
+Vid ett enda godkännande aktiveras övergången som motsvarar valet av operator och uppgiften är klar: övriga operatorer kan inte svara.
 
 Vid flera godkännanden aktiveras övergångar som motsvarar valet av operatorer. Uppgiften är slutförd när alla operatorer i gruppen har svarat eller när uppgiften har upphört att gälla.
 
@@ -45,7 +46,7 @@ En operator kan godkänna de uppgifter som tilldelats den operatorn från klient
 
 Om du ändrar aktivitetens titel eller meddelandetext påverkas inte de aktuella uppgifterna, men om du å andra sidan ändrar de möjliga alternativen påverkas de aktuella uppgifterna direkt, vilket automatiskt ärver den nya listan med alternativ.
 
-**Godkännande** textaktiviteter är tillgängliga från **[!UICONTROL Administration > Production > Objects created automatically > Approvals pending]** nod: -operatorer kan komma åt godkännandeformuläret direkt via den här vyn.
+**Godkännande** textaktiviteter är tillgängliga från **[!UICONTROL Administration > Production > Objects created automatically > Approvals pending]** nod: -operatorer har åtkomst till godkännandeformuläret direkt via den här vyn.
 
 ![](assets/s_advuser_validation_from_console.png)
 
@@ -69,8 +70,8 @@ Ett exempel på godkännande visas i [Definiera godkännanden](define-approvals.
 
 * **[!UICONTROL response]**
 
-   Kommentar relaterade till svaret
+  Kommentar relaterade till svaret
 
 * **[!UICONTROL responseOperator]**
 
-   Identifierare för den operator som svarade. Det här fältet är ett numeriskt värde, men ett **[!UICONTROL String]** fält.
+  Identifierare för den operator som svarade. Det här fältet är ett numeriskt värde, men ett **[!UICONTROL String]** fält.

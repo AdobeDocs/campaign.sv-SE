@@ -3,8 +3,9 @@ product: campaign
 title: Kvartalsvis listuppdatering med en inkrementell fråga
 description: I det här fallet används en stegvis fråga för att automatiskt uppdatera en mottagarlista.
 feature: Workflows
+role: User
 exl-id: eedc796a-865f-47a8-8807-5980546b8adf
-source-git-commit: 77ec01aaba1e50676bed57f503a9e4e8bb1fe54c
+source-git-commit: 567c2e84433caab708ddb9026dda6f9cb717d032
 workflow-type: tm+mt
 source-wordcount: '274'
 ht-degree: 5%
@@ -31,6 +32,6 @@ Eftersom dessa kampanjer lanseras i början av varje säsong för att erbjuda re
 1. På nästa skärm väljer du mars, juni, september och december. Välj den 20:e i månaden och välj vilken tid du vill starta arbetsflödet.
 1. Välj sedan giltighetsperioden för frågan. Om du till exempel vill att den här aktiviteten ska vara permanent aktiv väljer du **[!UICONTROL Permanent validity]**.
 
-1. När du har godkänt den inkrementella frågan konfigurerar du listuppdateringsaktiviteten enligt anvisningarna i [Listuppdatering](list-update.md).
+1. När du har godkänt den stegvisa frågan konfigurerar du listuppdateringsaktiviteten enligt anvisningarna i [Listuppdatering](list-update.md).
 
 Arbetsflödet kommer därför att startas automatiskt precis innan säsongen börjar. Listan kommer att uppdateras med nya, berättigade mottagare som kan ta emot erbjudandena.

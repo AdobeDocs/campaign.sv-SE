@@ -1,11 +1,11 @@
 ---
 title: Fördefinierade filter för kampanjinteraktion
-description: Lär dig hur du skapar fördefinierade filter
+description: Lär dig skapa fördefinierade filter
 feature: Interaction, Offers
-role: Data Engineer
+role: User, Admin
 level: Beginner
 exl-id: 092262c7-768c-4e86-9b2b-c52516f6a030
-source-git-commit: 8eb92dd1cacc321fc79ac4480a791690fc18511c
+source-git-commit: 567c2e84433caab708ddb9026dda6f9cb717d032
 workflow-type: tm+mt
 source-wordcount: '102'
 ht-degree: 0%
@@ -16,9 +16,9 @@ ht-degree: 0%
 
 Skapa fördefinierade filter för att definiera berättiganderegler för målpopulationen som enkelt kan återanvändas när erbjudanden skapas. De är specifika för varje miljö och tar hänsyn till erbjudandeparametrarna.
 
-Så här skapar du ett fördefinierat filter:
+Om du vill skapa ett fördefinierat filter använder du följande process:
 
-1. Bläddra till **[!UICONTROL Administration]** mapp och markera **[!UICONTROL Pre-defined offer filters]**.
+1. Gå till **[!UICONTROL Administration]** mapp och markera **[!UICONTROL Pre-defined offer filters]**.
 
    ![](assets/offer_filter_create_005.png)
 

@@ -2,10 +2,10 @@
 title: Arbeta med Campaign Interaction-miljöer
 description: Lär dig hur du skapar miljöer för Campaign Interaction
 feature: Interaction, Offers
-role: Data Engineer
+role: User, Admin
 level: Beginner
 exl-id: 31f38870-1781-4185-9022-d4fd6a31c94a
-source-git-commit: 8eb92dd1cacc321fc79ac4480a791690fc18511c
+source-git-commit: 567c2e84433caab708ddb9026dda6f9cb717d032
 workflow-type: tm+mt
 source-wordcount: '399'
 ht-degree: 2%
@@ -16,7 +16,7 @@ ht-degree: 2%
 
 ## Live- och designmiljöer{#live-design-environments}
 
-Interaktionen fungerar i två typer av miljöer:
+Interaktionen fungerar med två typer av erbjudandemiljöer:
 
 * **[!UICONTROL Design]** erbjuder miljöer som innehåller erbjudanden som redigeras och kan ändras. Dessa erbjudanden har inte gått igenom godkännandecykeln och levereras inte till kontakter.
 * **[!UICONTROL Live]** erbjuder miljöer som innehåller godkända erbjudanden när de presenteras för kontakter. Erbjudandena i den här miljön är skrivskyddade.
@@ -59,7 +59,7 @@ Om du har aktiverat **[!UICONTROL Visitor]** mappning, **[!UICONTROL Environment
 
 Med det här alternativet kan du aktivera anonyma interaktionsspecifika funktioner, särskilt när du konfigurerar miljön, som innehåller blanksteg. Du kan också konfigurera alternativ som gör att du kan växla från en identifierad miljö till en anonym miljö.
 
-Du kan t.ex. länka en mottagarmiljö till ett tillgängligt utrymme (identifierad kontakt) med ett erbjudandeutrymme som matchar en besökarmiljö (oidentifierad kontakt). På så sätt kommer olika erbjudanden att göras tillgängliga för kontakten beroende på om kontakten identifieras eller inte. Mer information finns i [Skapa erbjudandemellanslag](interaction-offer-spaces.md).
+Du kan t.ex. länka en mottagarmiljö till ett tillgängligt utrymme (identifierad kontakt) med ett erbjudande som matchar en besökarmiljö (oidentifierad kontakt). På så sätt kommer olika erbjudanden att göras tillgängliga för kontakten beroende på om kontakten identifieras eller inte. Mer information finns i [Skapa erbjudandemellanslag](interaction-offer-spaces.md).
 
 ![](assets/offer_env_anonymous_003.png)
 

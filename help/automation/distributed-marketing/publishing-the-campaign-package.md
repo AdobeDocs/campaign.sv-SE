@@ -3,8 +3,9 @@ product: campaign
 title: Publicera kampanjpaketet
 description: Publicera kampanjpaketet
 feature: Distributed Marketing
+role: User
 exl-id: 2cd1981d-f192-41dc-b2f2-4fcd60493079
-source-git-commit: 290f4e9a0d13ef49caacb7a128ccc266bafd5e69
+source-git-commit: 567c2e84433caab708ddb9026dda6f9cb717d032
 workflow-type: tm+mt
 source-wordcount: '455'
 ht-degree: 2%
@@ -45,7 +46,7 @@ Du kan lägga till andra granskare från **[!UICONTROL Edit...]** länk, finns i
 
 Som standard får granskarna tre dagar på sig att bearbeta godkännandet.
 
-I fönstret Redigera granskare kan du även ange påminnelser för att skicka ett eller flera meddelanden om ett kampanjpaket inte har godkänts. Om du vill göra det klickar du på **[!UICONTROL Add reminder]** länk, sedan **[!UICONTROL Add]** -knappen.
+I fönstret Redigera granskare kan du även ange påminnelser för att skicka ett eller flera meddelanden om ett kampanjpaket inte har godkänts. Klicka på **[!UICONTROL Add reminder]** länk, sedan **[!UICONTROL Add]** -knappen.
 
 Påminnelser kan skickas ut antingen på ett visst datum och/eller **x** dagar efter inlämningsdatumet. Typen av påminnelse kan konfigureras i den första kolumnen i tabellen med påminnelser. I exemplet nedan får granskarna ett påminnelsemeddelande på den 01/11/2023, dvs. två dagar före det datum som valts i **[!UICONTROL Date]** och en andra påminnelse en dag före godkännandeperiodens slut, dvs. två dagar efter inlämningsdatumet för godkännandet.
 

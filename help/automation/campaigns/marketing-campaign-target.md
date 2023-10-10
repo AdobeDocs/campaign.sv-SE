@@ -3,8 +3,9 @@ product: campaign
 title: Målgrupper för marknadsföringskampanjer
 description: Lär dig definiera målgruppen för era marknadsföringskampanjer
 feature: Campaigns, Audiences
+role: User
 exl-id: 70a63632-f66d-40f2-806d-bde89303936a
-source-git-commit: 19c42bcd2a96173f3d33e3e259192107b5e64c6c
+source-git-commit: 567c2e84433caab708ddb9026dda6f9cb717d032
 workflow-type: tm+mt
 source-wordcount: '1464'
 ht-degree: 0%
@@ -49,7 +50,7 @@ Du kan importera en population till en lista och sedan ange den här listan som 
 
 ## Bygg målgruppen i ett kampanjarbetsflöde {#build-the-main-target-in-a-workflow}
 
-Huvudmålet för en leverans kan också definieras i kampanjarbetsflödet: I den grafiska miljön kan du skapa mål med hjälp av frågor, tester och operatorer: union, borttagning av dubbletter, delning osv.
+Huvudmålet för en leverans kan också definieras i kampanjarbetsflödet: i den grafiska miljön kan du skapa ett mål med hjälp av frågor, tester och operatorer: union, borttagning av dubbletter, delning osv.
 
 >[!IMPORTANT]
 >
@@ -85,7 +86,7 @@ Körnings- och formateringsfunktionerna för målarbetsflödet är tillgängliga
 >
 >De aktiviteter som finns tillgängliga för att skapa diagrammet och alla funktioner för visning och layout finns i [det här avsnittet](../workflow/about-workflows.md).
 
-Ni kan skapa flera arbetsflöden för målinriktning för en enskild kampanj. Så här lägger du till ett arbetsflöde:
+Ni kan skapa flera arbetsflöden för målinriktning för en enskild kampanj. Lägga till ett arbetsflöde:
 
 1. Gå till den övre vänstra delen av arbetsflödeszonen, högerklicka och välj **[!UICONTROL Add]**. Du kan också använda **[!UICONTROL New]** som finns ovanför den här zonen.
 
@@ -98,11 +99,11 @@ Ni kan skapa flera arbetsflöden för målinriktning för en enskild kampanj. S�
 
 Målarbetsflöden kan startas manuellt via **[!UICONTROL Start]** i verktygsfältet, förutsatt att du har rätt behörighet.
 
-Målinriktningen kan programmeras för automatisk körning enligt ett schema (schemaläggare) eller en händelse (extern signal, filimport osv.).
+Målsättningen kan programmeras för automatisk körning enligt ett schema (schemaläggare) eller en händelse (extern signal, filimport osv.).
 
 Åtgärder som rör körning av målarbetsflödet (starta, stoppa, pausa, osv.) är **asynkron** processer: kommandot sparas och börjar gälla så fort servern är tillgänglig för att använda det.
 
-Med verktygsfältsikonerna kan du utföra åtgärder för arbetsflödet.
+Med verktygsfältsikonerna kan du utföra åtgärder för arbetsflödet för målanpassning.
 
 * Starta eller starta om
 
@@ -167,7 +168,7 @@ Med verktygsfältsikonerna kan du utföra åtgärder för arbetsflödet.
 
 ## Lägga till en kontrollgrupp {#add-a-control-group}
 
-En kontrollgrupp är en population som inte kommer att få leveransen. Det används för att spåra beteenden och kampanjeffekter efter leverans genom att göra en jämförelse med beteendet hos målpopulationen, som har fått leveransen.
+En kontrollgrupp är en population som inte kommer att få leveransen. Den används för att spåra beteenden efter leverans och kampanjpåverkan genom att göra en jämförelse med beteendet hos målpopulationen, som har fått leveransen.
 
 Kontrollgruppen kan extraheras från huvudmålet och/eller komma från en viss grupp eller fråga.
 
@@ -185,7 +186,7 @@ Du kan definiera en kontrollgrupp på kampanjnivå, och i så fall tillämpas ko
 
    ![](assets/edit-control-group.png)
 
-Hela proceduren beskrivs i [det här avsnittet](#extract-the-control-group-from-the-main-target). Läs mer om kontrollgrupper i [det här avsnittet](#add-a-population).
+Den fullständiga proceduren beskrivs i [det här avsnittet](#extract-the-control-group-from-the-main-target). Läs mer om kontrollgrupper i [det här avsnittet](#add-a-population).
 
 ### Aktivera kontrollgruppen för en leverans {#activate-the-control-group-for-a-delivery}
 
@@ -197,16 +198,16 @@ Som standard gäller den kontrollgruppskonfiguration som definieras på kampanjn
 >
 >Om du har definierat en kontrollgrupp för en kampanj, och du även konfigurerar den för en leverans som är länkad till den här kampanjen, tillämpas bara den kontrollgrupp som har definierats för leveransen.
 
-1. Redigera den aktuella leveransen och klicka sedan på knappen **[!UICONTROL To]** länk.
+1. Redigera den aktuella leveransen och klicka sedan på **[!UICONTROL To]** länk.
 1. Klicka på **[!UICONTROL Control group]** tabboch sedan markera **[!UICONTROL Enable and edit control group configuration]**.
 
    ![](assets/enable-control-group-for-a-delivery.png)
 
 1. Klicka **[!UICONTROL Edit...]** för att konfigurera kontrollgruppen.
 
-Hela proceduren beskrivs i [det här avsnittet](#extract-the-control-group-from-the-main-target).
+Den fullständiga proceduren beskrivs i [det här avsnittet](#extract-the-control-group-from-the-main-target).
 
-### Använd en ny population som kontrollgrupp {#add-a-population}
+### Använda en ny population som kontrollgrupp {#add-a-population}
 
 Du kan använda en specifik population för kontrollgruppen. I så fall väljer du den lista som ska användas som kontrollgrupp i det relaterade fältet.
 
@@ -236,7 +237,7 @@ Klicka **[!UICONTROL Next]** om du vill definiera sorteringsordningen (om det be
 Den här konfigurationen motsvarar en **[!UICONTROL Split]** i arbetsflödet, vilket gör att du kan dela upp målet i delmängder. Kontrollgruppen är en av dessa deluppsättningar.
 
 
-### Videokurs {#create-email-video}
+### Självstudievideo {#create-email-video}
 
 I den här videon förklaras hur du lägger till en kontrollgrupp i en kampanj.
 

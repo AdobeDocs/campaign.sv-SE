@@ -3,8 +3,9 @@ product: campaign
 title: Leveranser av marknadsföringskampanjer
 description: Läs mer om kampanjleveranser
 feature: Campaigns, Resource Management, Cross Channel Orchestration
+role: User
 exl-id: 1d9638cb-0fc9-4d04-a9c5-bcab8f4ebe95
-source-git-commit: 50688c051b9d8de2b642384963ac1c685c0c33ee
+source-git-commit: 567c2e84433caab708ddb9026dda6f9cb717d032
 workflow-type: tm+mt
 source-wordcount: '706'
 ht-degree: 1%
@@ -29,9 +30,9 @@ När leveransen har sparats läggs den till på kampanjkontrollpanelen.
 
 * Från ett kampanjarbetsflöde, i **[!UICONTROL Targeting and workflows]** genom att lägga till leveransen.
 
-   ![](assets/campaign-wf-delivery.png)
+  ![](assets/campaign-wf-delivery.png)
 
-   När arbetsflödet har startats läggs leveransen till på kontrollpanelen för kampanjer.
+  När arbetsflödet har startats läggs leveransen till på kontrollpanelen för kampanjer.
 
 Lär dig hur du ställer in och kör flödet för leveransgodkännande [på den här sidan](marketing-campaign-approval.md).
 
@@ -62,7 +63,7 @@ Du kan även tillåta kampanjägaren att bekräfta sändningen, även om specifi
 
 ### Starta direktleverans av e-post {#start-an-offline-delivery}
 
-När alla godkännanden har beviljats ändras leveransstatusen till **[!UICONTROL Pending extraction]**. Extraheringsfilerna skapas via en dedikerad [tekniskt arbetsflöde](../workflow/technical-workflows.md) som i en standardkonfiguration startar automatiskt när en direktleverans väntar på extrahering. När en process pågår visas den på kontrollpanelen och kan redigeras via länken.
+När alla godkännanden har beviljats ändras leveransstatusen till **[!UICONTROL Pending extraction]**. Extraheringsfilerna skapas via en dedikerad [tekniskt arbetsflöde](../workflow/technical-workflows.md) som, i en standardkonfiguration, startar automatiskt när en direktleverans väntar på extrahering. När en process pågår visas den på kontrollpanelen och kan redigeras via länken.
 
 När extraheringsarbetsflödet har körts måste extraheringsfilen godkännas (förutsatt att godkännande av extraheringsfilen har valts i leveransinställningarna). [Läs mer](marketing-campaign-approval.md#approving-an-extraction-file).
 
@@ -78,7 +79,7 @@ Följ stegen nedan för att validera innehåll och skicka filen till leverantör
 
    Korrekturmålet måste definieras i förväg.
 
-   Du kan skapa så många korrektur som behövs. Dessa nås via **[!UICONTROL Direct mail...]** leveransinformationens länk.
+   Du kan skapa så många korrektur som behövs. De här är tillgängliga via **[!UICONTROL Direct mail...]** leveransinformationens länk.
 
 1. Leveransstatusen ändras till **[!UICONTROL To submit]**. Klicka på **[!UICONTROL Submit proofs]** för att starta godkännandeprocessen.
 
@@ -94,21 +95,21 @@ Filextraheringen startar två processer: budgetberäkning och lagerberäkning. B
 
 * The **[!UICONTROL Budget]** kan du hantera budgeten för kampanjen. Summan av kostnadsposterna visas i **[!UICONTROL Calculated cost]** fält på kampanjens huvudflik och det program den tillhör. Beloppen återspeglas också i kampanjbudgeten.
 
-   ![](assets/campaign-budget-tab.png)
+  ![](assets/campaign-budget-tab.png)
 
-   Den verkliga kostnaden kommer så småningom att beräknas utifrån information som tillhandahålls av routern. Endast meddelanden som skickas faktureras.
+  Den verkliga kostnaden kommer till slut att beräknas utifrån information som tillhandahålls av routern. Endast meddelanden som skickas faktureras.
 
 * Lager definieras i **[!UICONTROL Administration > Campaign management > Stocks]** trädnod.
 
-   ![](assets/campaign-stocks.png)
+  ![](assets/campaign-stocks.png)
 
-   Kostnadsstrukturer i **[!UICONTROL Administration > Campaign management > Service providers]** nod.
+  Kostnadsstrukturer i **[!UICONTROL Administration > Campaign management > Service providers]** nod.
 
-   ![](assets/campaign-service-providers.png)
+  ![](assets/campaign-service-providers.png)
 
-   Lagerrader visas i lagersektionen. Om du vill definiera det ursprungliga lagret öppnar du en aktielinje. Lagret minskas varje gång en leverans sker. Du kan definiera en varningsnivå och meddelanden.
+  Lagerrader visas i lagersektionen. Om du vill definiera det ursprungliga lagret öppnar du en aktielinje. Lagret minskas varje gång en leverans sker. Du kan definiera en varningsnivå och meddelanden.
 
 
-   >[!NOTE]
-   >
-   >Läs mer om budgetar [i det här avsnittet](providers--stocks-and-budgets.md).
+  >[!NOTE]
+  >
+  >Läs mer om budgetar [i det här avsnittet](providers--stocks-and-budgets.md).

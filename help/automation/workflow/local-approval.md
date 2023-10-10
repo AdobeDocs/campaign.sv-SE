@@ -3,8 +3,9 @@ product: campaign
 title: Lokalt godkännande
 description: Lokalt godkännande
 feature: Workflows
+role: User
 exl-id: 172b6827-ddfc-4c6e-87c9-eb49e73ab3ab
-source-git-commit: 290f4e9a0d13ef49caacb7a128ccc266bafd5e69
+source-git-commit: 567c2e84433caab708ddb9026dda6f9cb717d032
 workflow-type: tm+mt
 source-wordcount: '645'
 ht-degree: 1%
@@ -29,9 +30,9 @@ Börja med att ange en etikett för aktiviteten och **[!UICONTROL Action to exec
 
 * Välj **[!UICONTROL Target approval notification]** möjlighet att skicka ett e-postmeddelande till lokala arbetsledare före leveransen och be dem godkänna mottagarna som tilldelats dem.
 
-* **Inkrementell fråga**: gör att du kan utföra en fråga och planera dess körning. Se [Inkrementell fråga](incremental-query.md) -avsnitt.
+* **Inkrementell fråga**: låter dig utföra en fråga och planera dess körning. Se [Inkrementell fråga](incremental-query.md) -avsnitt.
 
-   ![](assets/local_validation_intro_3.png)
+  ![](assets/local_validation_intro_3.png)
 
 ## Meddelande om målgodkännande {#target-approval-notification}
 
@@ -45,26 +46,26 @@ De fält som ska anges vid ett meddelande om målgodkännande är:
 
 * **[!UICONTROL Distribution context]**: välj **[!UICONTROL Specified in the transition]** om du använder **[!UICONTROL Split]** typaktivitet för att begränsa målpopulationen. I det här fallet anges distributionsmallen i den delade aktiviteten. Om du inte begränsar målpopulationen väljer du **[!UICONTROL Explicit]** här och ange distributionsmallen i **[!UICONTROL Data distribution]** fält.
 
-   Mer information om hur du skapar en mall för datadistribution finns i [Begränsa antalet delmängdsposter per datadistribution](split.md#limiting-the-number-of-subset-records-per-data-distribution).
+  Mer information om hur du skapar en mall för datadistribution finns i [Begränsa antalet delmängdsposter per datadistribution](split.md#limiting-the-number-of-subset-records-per-data-distribution).
 
 * **[!UICONTROL Approval management]**
 
    * Välj leveransmall och ämne som ska användas för e-postmeddelandet. En standardmall är tillgänglig: **[!UICONTROL Local approval notification]**. Du kan också lägga till en beskrivning som visas ovanför mottagarlistorna i godkännanderutorna och feedbackmeddelandena.
    * Ange **[!UICONTROL Approval type]** som motsvarar tidsgränsen för godkännande (datum eller tidsgräns från början av godkännandet). På det här datumet startar arbetsflödet igen och de mottagare som inte har godkänts tas inte med i målsättningen. När meddelandena har skickats står aktiviteten i kö så att de lokala granskarna kan godkänna sina kontakter.
 
-      >[!NOTE]
-      >
-      >Som standard förlängs aktiviteten i tre dagar när godkännandeprocessen startas.
+     >[!NOTE]
+     >
+     >Som standard förlängs aktiviteten i tre dagar när godkännandeprocessen startas.
 
-      Du kan också lägga till en eller flera påminnelser för att informera lokala arbetsledare om att tidsgränsen närmar sig. Om du vill göra det klickar du på **[!UICONTROL Add a reminder]** länk.
+     Du kan också lägga till en eller flera påminnelser för att informera lokala arbetsledare om att tidsgränsen närmar sig. Klicka på **[!UICONTROL Add a reminder]** länk.
 
-* **[!UICONTROL Complementary set]**: den **[!UICONTROL Generate complement]** gör att du kan generera en andra uppsättning som innehåller alla ej godkända mål.
+* **[!UICONTROL Complementary set]**: **[!UICONTROL Generate complement]** gör att du kan generera en andra uppsättning som innehåller alla ej godkända mål.
 
-   >[!NOTE]
-   >
-   >Det här alternativet är inaktiverat som standard.
+  >[!NOTE]
+  >
+  >Det här alternativet är inaktiverat som standard.
 
-## Feedback-rapport {#delivery-feedback-report}
+## Feedback {#delivery-feedback-report}
 
 I det här fallet **[!UICONTROL Local approval]** aktiviteten placeras efter leveransen:
 
@@ -79,31 +80,31 @@ Följande fält måste anges om det finns en leveransfeedback-rapport:
 
 ## Exempel: Godkänna leverans av arbetsflöde {#example--approving-a-workflow-delivery}
 
-I det här exemplet visas hur du ställer in en godkännandeprocess för en arbetsflödesleverans. Mer information om hur du skapar leveransarbetsflöden finns i [Exempel: arbetsflöde för leverans](delivery.md#example--delivery-workflow) -avsnitt.
+I det här exemplet visas hur du ställer in en godkännandeprocess för en arbetsflödesleverans. Mer information om hur du skapar leveransarbetsflöden finns i [Exempel: leveransarbetsflöde](delivery.md#example--delivery-workflow) -avsnitt.
 
-En operator kan godkänna en leverans på ett av två sätt: via webbsidan som är länkad i e-postmeddelandet eller via klientkonsolen.
+En operator kan godkänna en leverans på ett av två sätt: med webbsidan som är länkad i e-postmeddelandet eller via klientkonsolen.
 
 * Webbgodkännande
 
-   Med e-postmeddelandet som skickas till operatorer i gruppen Administratör kan du godkänna leveransmålet. Meddelandet använder den definierade texten och JavaScript-uttrycket ersätts med det beräknade värdet (i det här fallet &quot;574&quot;)
+  Med e-postmeddelandet som skickas till operatorer i gruppen Administratör kan du godkänna leveransmålet. Meddelandet använder den definierade texten och JavaScript-uttrycket ersätts med det beräknade värdet (i det här fallet &quot;574&quot;)
 
-   Klicka på länken och logga in på Adobe Campaign Client Console för att godkänna leveransen.
+  Klicka på länken och logga in på Adobe Campaign Client Console för att godkänna leveransen.
 
-   ![](assets/new-workflow-valid-webaccess.png)
+  ![](assets/new-workflow-valid-webaccess.png)
 
-   Gör ett val och klicka på **[!UICONTROL Submit]** -knappen.
+  Gör ett val och klicka på **[!UICONTROL Submit]** -knappen.
 
-   ![](assets/new-workflow-valid-webaccess-confirm.png)
+  ![](assets/new-workflow-valid-webaccess-confirm.png)
 
 * Godkännande via klientkonsolen
 
-   I trädstrukturen är **[!UICONTROL Administration > Production > Objects created automatically > Approvals pending]** -noden innehåller en lista med uppgifter som ska godkännas av den operatör som är ansluten just nu. Listan ska innehålla en rad. Dubbelklicka på raden för att svara. Följande fönster visas:
+  I trädstrukturen är **[!UICONTROL Administration > Production > Objects created automatically > Approvals pending]** -noden innehåller en lista med uppgifter som ska godkännas av den operatör som är ansluten just nu. Listan ska innehålla en rad. Dubbelklicka på raden för att svara. Följande fönster visas:
 
 ![](assets/new-workflow-7.png)
 
 Välj **Ja** och sedan klicka **[!UICONTROL Approve]**. Du får ett meddelande om att svaret har registrerats.
 
-Gå tillbaka till arbetsflödesfönstret: Efter tio sekunder visas diagrammet enligt följande:
+Gå tillbaka till arbetsflödesfönstret: Efter tio sekunder eller så visas diagrammet enligt följande:
 
 ![](assets/new-workflow-8.png)
 

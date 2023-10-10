@@ -2,8 +2,9 @@
 product: campaign
 title: Adobe Campaign Interaction best practices
 description: Metodtips för att hantera interaktionsmodulen i Adobe Campaign
+role: User, Admin
 exl-id: 28f3a5bc-67f5-413e-b2ba-35c341f9ec5f
-source-git-commit: 6de5c93453ffa7761cf185dcbb9f1210abd26a0c
+source-git-commit: 567c2e84433caab708ddb9026dda6f9cb717d032
 workflow-type: tm+mt
 source-wordcount: '1160'
 ht-degree: 0%
@@ -35,14 +36,14 @@ I det här avsnittet beskrivs de bästa sätten att hantera **Interaktion** i Ad
    * För att spara bearbetningstid kan du beräkna aggregat i stället för att skapa komplexa regler med kopplingar. Det gör du genom att försöka lagra kunddata i en referenstabell som kan slås upp i reglerna för behörighet.
    * Använd ett minsta antal vikter för att begränsa antalet frågor.
    * Vi rekommenderar ett begränsat antal erbjudanden per erbjudandeplats. Detta gör att erbjudandena kan hämtas snabbare på alla typer av platser.
-   * Använd index, särskilt för ofta använda sökkolumner.
+   * Använd index, särskilt för ofta använda uppslagskolumner.
 
 * Nedan visas några metodtips för **förslagstabell**:
 
    * Använd ett minsta antal regler för att göra bearbetningen så snabb som möjligt.
    * Begränsa antalet poster i förslagstabellen: spara bara de poster som behövs för att spåra dess statusuppdatering och vad som behövs för reglerna och arkivera dem sedan i ett annat system.
    * Utför omfattande databasunderhåll i förslagstabellen, till exempel återskapa index eller återskapa tabell.
-   * Begränsa antalet förslag som begärs per mål. Ställ inte in mer än vad du faktiskt kommer att använda.
+   * Begränsa antalet förslag som efterfrågas per mål. Ställ inte in mer än vad du faktiskt kommer att använda.
    * Undvik kopplingar så mycket som möjligt i regelkriterierna.
 
 ## Tips när erbjudanden hanteras {#tips-managing-offers}
@@ -68,7 +69,7 @@ I exemplet nedan är återgivningsfunktionen HTML tillgänglig i listrutan efter
 Den här funktionen infogar kod som: `<%@ include proposition="targetData.proposition" view="rendering/html" %>`.
 
 När du markerar förslaget, är värdet för **[!UICONTROL view]** är följande:
-* &quot;rendering/html&quot;: html-återgivning. Det använder återgivningsfunktionen HTML.
+* &quot;rendering/html&quot;: html-rendering. Det använder återgivningsfunktionen HTML.
 * &quot;offer/view/html&quot;: html-innehåll. Återgivningsfunktionen HTML används inte. Det innehåller bara fältet HTML.
 
 När du inkluderar flera erbjudandeplatser i en och samma e-postleverans och om vissa av dem har återgivningsfunktioner och andra inte har det, måste du komma ihåg vilka erbjudanden som innehåller blanksteg och vilka som erbjuder återgivningsfunktioner.
@@ -87,11 +88,11 @@ Det går också att lagra ytterligare data i förslagstabellen när utgående in
 
 Alla fält i arbetsflödets temporära tabell vars namn matchar ett fältnamn i förslagstabellen kopieras till samma fält i förslagstabellen.
 
-Om du till exempel väljer ett erbjudande manuellt (utan interaktion) i en **Berikning** arbetsflödesaktivitet, standardfälten definieras så här:
+t.ex. när du väljer ett erbjudande manuellt (utan interaktion) i en **Berikning** arbetsflödesaktivitet, standardfälten definieras så här:
 
 ![](assets/Interaction-best-practices-manual-offer-std-fields.png)
 
-Ytterligare fält kan läggas till, t.ex. `@rank` fält:
+Ytterligare fält kan läggas till, till exempel en `@rank` fält:
 
 ![](assets/Interaction-best-practices-manual-offer-add-fields.png)
 
@@ -103,7 +104,7 @@ För utgående erbjudanden med interaktion är detta användbart när flera erbj
 
 Du kan också lagra ytterligare metadata direkt i förslagstabellen, t.ex. aktuell utgiftsnivå, för att hålla historik över utgifter när erbjudandena genereras.
 
-Vid användning av utgående interaktion `@rank` -fältet kan läggas till, som i exemplet ovan, men dess värde ställs in automatiskt baserat på den ordning som returneras av Interaction. Om du till exempel använder Interaction för att välja tre erbjudanden, `@rank` fältet får värdena 1, 2 och 3.
+Vid användning av utgående interaktion `@rank` -fältet kan läggas till, som i exemplet ovan, men dess värde ställs in automatiskt baserat på den ordning som returneras av Interaction. Om du t.ex. använder Interaction för att välja tre erbjudanden `@rank` fältet får värdena 1, 2 och 3.
 
 När du använder Interaction och väljer erbjudanden manuellt kan användaren kombinera båda metoderna. Användaren kan till exempel ställa in `@rank` ska vara 1 för det manuellt valda erbjudandet och använda ett uttryck som `"1 + @rank"` för erbjudanden som returneras av Interaction. Om Interaction väljer tre erbjudanden rangordnas de som returneras av båda metoderna 1-4:
 
@@ -115,9 +116,9 @@ När du utökar schemat nms:offer måste du följa den färdiga strukturen som r
 * Definiera nya fält för innehållslagring under `<element name="view">`.
 * Varje nytt fält måste definieras två gånger. En gång som ett vanligt XML-fält och en gång som ett CDATA XML-fält med &quot;_jst&quot; som tillägg till namnet. Exempel:
 
-   ```
-   <element label="Price" name="price" type="long" xml="true"/>
-   <element advanced="true" label="Script price" name="price_jst" type="CDATA" xml="true"/>
-   ```
+  ```
+  <element label="Price" name="price" type="long" xml="true"/>
+  <element advanced="true" label="Script price" name="price_jst" type="CDATA" xml="true"/>
+  ```
 
 * Alla fält som innehåller URL:er som ska spåras måste placeras under `<element name="trackedUrls">` som finns under `<element name="view" >`.

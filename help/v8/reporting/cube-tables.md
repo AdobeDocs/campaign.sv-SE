@@ -3,8 +3,9 @@ product: campaign
 title: Använd kuber för att skapa rapporter om data
 description: Lär dig hur du använder kuber för att skapa rapporter
 feature: Reporting
+role: User, Data Engineer
 exl-id: 7dbc66ab-a468-40ff-9db2-b33e4fd27754
-source-git-commit: 77ec01aaba1e50676bed57f503a9e4e8bb1fe54c
+source-git-commit: 567c2e84433caab708ddb9026dda6f9cb717d032
 workflow-type: tm+mt
 source-wordcount: '941'
 ht-degree: 1%
@@ -27,11 +28,11 @@ När [kuben är konfigurerad](cube-indicators.md)kan den användas som mall för
 
 Så här skapar du en rapport baserad på en befintlig kub:
 
-1. Klicka på **[!UICONTROL Create]** knappen **[!UICONTROL Reports]** och väljer den kub du just har skapat.
+1. Klicka på **[!UICONTROL Create]** knappen på **[!UICONTROL Reports]** och väljer den kub du just har skapat.
 
    ![](assets/new-report-based-on-cube.png)
 
-1. Klicka på **[!UICONTROL Create]** för att bekräfta: kommer du till sidan för rapportkonfiguration och visning.
+1. Klicka på **[!UICONTROL Create]** för att bekräfta: då kommer du till rapportkonfigurationen och visningssidan.
 
    Som standard visas de två första tillgängliga dimensionerna i rader och kolumner, men inget värde visas i tabellen. Klicka på huvudikonen om du vill generera tabellen:
 
@@ -69,9 +70,9 @@ The **[!UICONTROL Add]** Med knapparna på varje axel kan du lägga till dimensi
 
    Du kan antingen:
 
-   * Expandera data vid inläsning: värdena visas som standard varje gång rapporten uppdateras (standardvärde: nej).
-   * Visa summan i slutet av raden: När data visas i kolumner kan du med ett extra alternativ visa summan i slutet av raden: en kolumn läggs till i tabellen (standardvärde: ja).
-   * Använd en sortering: värdena i kolumnen kan sorteras efter värde, etikett eller baserat på ett mått (standardvärde: efter värde).
+   * Expandera data under inläsning: värdena visas som standard varje gång rapporten uppdateras (standardvärde: nej).
+   * Visa summan i slutet av raden: när data visas i kolumner kan du med ett extra alternativ visa summan i slutet av raden: en kolumn läggs till i tabellen (standardvärde: ja).
+   * Använd en sortering: kolumnvärdena kan sorteras efter värde, etikett eller baserat på ett mått (standardvärde: efter värde).
    * Visa värdena i stigande (a-z, 0-9) eller fallande (z-a, 9-0) ordning.
    * Ändra antalet kolumner som ska visas vid inläsning (som standard: 200).
 
@@ -81,7 +82,7 @@ The **[!UICONTROL Add]** Med knapparna på varje axel kan du lägga till dimensi
 
    ![](assets/cube-in-report.png)
 
-### Steg 3 - Konfigurera de mått som ska visas {#step-3---configure-the-measures-to-display}
+### Steg 3 - Konfigurera mått att visa {#step-3---configure-the-measures-to-display}
 
 När raderna och kolumnerna har definierats väljer du vilka mått du vill visa. Som standard visas bara ett mått.
 
@@ -99,7 +100,7 @@ Följ stegen nedan för att lägga till och konfigurera mått:
 
    ![](assets/cube-measure-options.png)
 
-   Den övergripande mätkonfigurationen är också tillgänglig via **[!UICONTROL Edit the configuration of the pivot table]** -ikonen i sidhuvudet.
+   Den övergripande mätkonfigurationen är också tillgänglig via **[!UICONTROL Edit the configuration of the pivot table]** i sidhuvudet.
 
    ![](assets/cube-pivot-table-config.png)
 
@@ -111,11 +112,11 @@ Följ stegen nedan för att lägga till och konfigurera mått:
 
    Följande typer av åtgärder är tillgängliga:
 
-   * En kombination av åtgärder: den här typen av åtgärd gör det möjligt att bygga den nya åtgärden med hjälp av befintliga åtgärder:
+   * En kombination av åtgärder: den här typen av åtgärd gör att du kan bygga det nya måttet med hjälp av befintliga åtgärder:
 
-      De tillgängliga operatorerna är: summa, differens, multiplikation och ränta.
+     De tillgängliga operatorerna är: summa, differens, multiplikation och rate.
 
-   * Andel: Med den här typen av mått kan du beräkna antalet poster som mäts för en given dimension. Du kan beräkna proportionaliteten baserat på en dimension eller en underdimension.
+   * Andel: den här typen av mått gör att du kan beräkna antalet poster som mäts för en given dimension. Du kan beräkna proportionaliteten baserat på en dimension eller en underdimension.
    * Variation: Med det här måttet kan du beräkna variationen i värden för en nivå.
    * Standardavvikelse: Med den här typen av mått kan du beräkna avvikelser inom varje cellgrupp jämfört med medelvärdet för värdena. Du kan till exempel jämföra inköpsvolymen för alla befintliga segment.
 
@@ -123,7 +124,7 @@ Följ stegen nedan för att lägga till och konfigurera mått:
 
    ![](assets/cube-display-new-measure.png)
 
-   När du har skapat ett mått kan du redigera det och ändra dess konfiguration. Om du vill göra det klickar du på **[!UICONTROL Measures]** och bläddra sedan till fliken för det mått som ska redigeras.
+   När du har skapat ett mått kan du redigera det och ändra dess konfiguration. Klicka på **[!UICONTROL Measures]** och bläddra sedan till fliken för det mått som ska redigeras.
 
    Klicka sedan på **[!UICONTROL Edit the dynamic measure]** för att öppna inställningsmenyn.
 
@@ -133,7 +134,7 @@ Rapporter som byggs med kuber gör att du kan samla in data från tabellen och s
 
 Följ stegen nedan för att gruppera en population i en lista:
 
-1. Markera cellerna som innehåller de ifyllningar som ska samlas och klicka sedan på **[!UICONTROL Add to cart]** ikon.
+1. Markera cellerna som innehåller de ifyllningar som ska samlas och klicka sedan på **[!UICONTROL Add to cart]** -ikon.
 
    ![](assets/cube-add-to-cart.png)
 

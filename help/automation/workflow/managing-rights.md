@@ -3,8 +3,9 @@ product: campaign
 title: Hantera arbetsflödesbehörigheter
 description: Lär dig hur du hanterar arbetsflödesbehörigheter
 feature: Workflows
+role: Admin
 exl-id: 3cb8aeec-e758-4b71-adef-67942cf9ded7
-source-git-commit: bff7d1d51b9847c515670e5594eed513fefbe816
+source-git-commit: 567c2e84433caab708ddb9026dda6f9cb717d032
 workflow-type: tm+mt
 source-wordcount: '321'
 ht-degree: 0%
@@ -27,13 +28,13 @@ Mer information om hur du hanterar operatorer och behörigheter finns i [det hä
 
 Följande operatorgrupper är kopplade till arbetsflödet:
 
-* The **[!UICONTROL Workflow execution]** kan du styra körning och godkännande av målarbetsflöden: det WORKFLOW som namnges till höger mappas till den här gruppens operatorer. Det krävs för alla åtgärder i arbetsflöden, förutom åtkomsträttigheter till datafilerna. Som standard är **[!UICONTROL Workflow execution]** -gruppen har skrivskyddad åtkomst till arbetsflödesfiler och arbetsflödesmallar som är standard för målanpassning. Operatörer i den här gruppen har även läs- och skrivåtkomst till filen för väntande godkännanden.
+* The **[!UICONTROL Workflow execution]** kan du styra körning och godkännande av målarbetsflöden: det namngivna högerarbetsflödet mappas till den här gruppens operatorer. Det krävs för alla åtgärder i arbetsflöden, förutom åtkomsträttigheter till datafilerna. Som standard är **[!UICONTROL Workflow execution]** -gruppen har skrivskyddad åtkomst till arbetsflödesfiler och arbetsflödesmallar som är avsedda för målinriktning. Operatörer i den här gruppen har även läs- och skrivåtkomst till filen för väntande godkännanden.
 * The **[!UICONTROL Workflow supervisors]** grupp låter operatorer hantera arbetsflödesgodkännanden.
 * The **[!UICONTROL Operation Managers]** grupp för att få tillgång till kampanjarbetsflöden.
 
 ## Namngivna rättigheter {#named-rights}
 
-Endast arbetsflödet med namnet right är specifikt för arbetsflöden: Med kan du skapa, starta och stoppa arbetsflöden. Läsbehörighet för arbetsflödesfilen krävs för att den namngivna rättigheten ska kunna användas. För arbetsflöden med målinriktning **[!UICONTROL Profiles and Targets]** filen är nödvändig.
+Endast arbetsflödet med namnet right är specifikt för arbetsflöden: du kan skapa, starta och stoppa arbetsflöden. Läsbehörighet för arbetsflödesfilen krävs för att den namngivna rättigheten ska kunna användas. För arbetsflöden med målinriktning **[!UICONTROL Profiles and Targets]** filen är nödvändig.
 
 ## Konto för arbetsflödeskörning {#workflow-execution-account}
 

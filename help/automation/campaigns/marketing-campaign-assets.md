@@ -3,8 +3,9 @@ product: campaign
 title: Marknadsföringskampanjresurser, dokument och leveransdispositioner
 description: Läs mer om kampanjdokument och leveransdispositioner för marknadsföring
 feature: Campaigns
+role: User
 exl-id: 352f6cd5-777d-413d-af79-6f53444b336f
-source-git-commit: 190707b8b1ea5f90dc6385c13832fbb01378ca1d
+source-git-commit: 567c2e84433caab708ddb9026dda6f9cb717d032
 workflow-type: tm+mt
 source-wordcount: '686'
 ht-degree: 0%
@@ -13,7 +14,7 @@ ht-degree: 0%
 
 # Hantera resurser och dokument {#manage-assets-documents}
 
-Du kan koppla olika dokument till en kampanj: rapporter, foton, webbsidor, diagram osv. Dessa dokument kan ha vilket format som helst.
+Du kan associera olika dokument med en kampanj: rapporter, foton, webbsidor, diagram osv. Dessa dokument kan ha vilket format som helst.
 
 I en kampanj kan du även hänvisa till andra saker, som kampanjkuponger, specialerbjudanden som gäller ett visst varumärke eller en viss butik, osv. När dessa element ingår i en disposition kan de kopplas till en direktutskick. [Läs mer](#associating-and-structuring-resources-linked-via-a-delivery-outline).
 
@@ -32,7 +33,7 @@ I en kampanj kan du även hänvisa till andra saker, som kampanjkuponger, specia
 
 Dokument kan kopplas på kampanjnivå (sammanhangsberoende dokument) eller på programnivå (allmänna dokument).
 
-För en kampanj **[!UICONTROL Documents]** -fliken innehåller:
+För en kampanj **[!UICONTROL Documents]** innehåller:
 
 * Listan över alla dokument som krävs för innehållet (mall, bilder osv.) som kan laddas ned lokalt av Adobe Campaign-operatörer med lämpliga rättigheter,
 * Dokument som innehåller information för routern, om sådan finns.
@@ -49,7 +50,7 @@ Klicka på **[!UICONTROL Detail...]** -ikon för att visa innehållet i en fil o
 
 ![](assets/add_document_details.png)
 
-På kontrollpanelen grupperas dokument som är kopplade till kampanjen i **[!UICONTROL Document(s)]** som i följande exempel:
+På kontrollpanelen grupperas dokument som är kopplade till kampanjen i **[!UICONTROL Document(s)]** -avsnittet, som i följande exempel:
 
 ![](assets/edit_documents.png)
 
@@ -59,9 +60,9 @@ De kan också redigeras och ändras i den här vyn.
 
 En leveransöversikt är en strukturerad uppsättning element (dokument, butiker, kampanjkuponger osv.) som skapats av företaget och för en viss kampanj. Det används i samband med direktreklam.
 
-Dessa element grupperas i leveransdispositioner och varje leveransdisposition kopplas till en leverans. den kommer att refereras i extraheringsfilen som skickas till **tjänstleverantör** för att bifogas leveransen. Du kan till exempel skapa en leveransdisposition som refererar till en enhet och de marknadsföringsbroschyrer som används i den.
+Dessa element grupperas i leveransdispositioner och varje leveransdisposition kopplas till en leverans. Den refereras till i extraheringsfilen som skickas till **tjänstleverantör** för att bifogas leveransen. Du kan till exempel skapa en leveransdisposition som refererar till en enhet och de marknadsföringsbroschyrer som används i den.
 
-För en kampanj kan du strukturera externa element som ska kopplas till leveransen enligt vissa kriterier: relaterad enhet, kampanjerbjudande, inbjudan till ett lokalt evenemang osv.
+För en kampanj kan du strukturera externa element som ska associeras med leveransen enligt vissa kriterier: relaterad enhet, kampanjerbjudande, inbjudan till en lokal händelse osv.
 
 >[!CAUTION]
 >
@@ -78,7 +79,7 @@ Om du vill skapa en disposition klickar du på **[!UICONTROL Delivery outlines]*
 >
 >Om du inte kan se den här fliken är den här funktionen inte tillgänglig för kampanjen, eller så är direktreklam inte aktiverad i din instans. Se [konfiguration av kampanjmall](marketing-campaign-templates.md#campaign-templates) eller licensavtalet.
 
-Klicka på **[!UICONTROL Add a delivery outline]** och skapa en hierarki av konturer för kampanjen:
+Klicka på Nästa **[!UICONTROL Add a delivery outline]** och skapa en hierarki av konturer för kampanjen:
 
 1. Högerklicka på trädets rot och välj **[!UICONTROL New > Delivery outlines]**.
 1. Högerklicka på den kontur du just har skapat och markera **[!UICONTROL New > Item]** eller **[!UICONTROL New > Personalization fields]**.
@@ -90,20 +91,20 @@ En disposition kan innehålla objekt, anpassningsfält och erbjuder:
 * Objekten kan till exempel vara fysiska dokument som refereras och beskrivs här och bifogas till leveransen.
 * Med personaliseringsfält kan du skapa personaliseringselement för leveranser i stället för mottagare. Det är därför möjligt att skapa värden som ska användas i leveranser för ett specifikt mål (välkomsterbjudande, rabatt osv.) De skapas i Adobe Campaign och importeras till dispositionen via **[!UICONTROL Import personalization fields...]** länk.
 
-   ![](assets/del-outline-perso-field.png)
+  ![](assets/del-outline-perso-field.png)
 
-   Du kan också skapa dem direkt i dispositionen genom att klicka på **[!UICONTROL Add]** till höger om listzonen.
+  Du kan också skapa dem direkt i dispositionen genom att klicka på **[!UICONTROL Add]** till höger om listzonen.
 
-   ![](assets/add-del-outline-button.png)
+  ![](assets/add-del-outline-button.png)
 
 
 ### Markera en kontur {#select-an-outline}
 
-För varje leverans kan du välja den disposition som ska kopplas från det avsnitt som är reserverat för dispositionen, som i följande exempel:
+För varje leverans kan du välja den disposition som ska kopplas från det avsnitt som är reserverat för extraheringsdispositionen, som i följande exempel:
 
 ![](assets/select-delivery-outline.png)
 
-Den markerade dispositionen visas sedan i fönstrets nedre del. Den kan redigeras med ikonen till höger om fältet eller ändras med hjälp av listrutan:
+Den markerade dispositionen visas sedan i fönstrets nedre del. Du kan redigera den med ikonen till höger om fältet eller ändra den med hjälp av listrutan:
 
 ![](assets/delivery-outline-selected.png)
 

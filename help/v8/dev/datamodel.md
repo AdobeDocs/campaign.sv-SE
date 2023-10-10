@@ -5,7 +5,7 @@ feature: Data Model
 role: Data Engineer
 level: Beginner
 exl-id: 200b60f1-04ae-4c3e-892f-3dd2bd22b896
-source-git-commit: 87e56e7c296884458a0c8fd704b82611f56e695d
+source-git-commit: 567c2e84433caab708ddb9026dda6f9cb717d032
 workflow-type: tm+mt
 source-wordcount: '713'
 ht-degree: 5%
@@ -34,7 +34,7 @@ Den grundläggande strukturen i Adobe Campaign datamodell beskrivs på följande
 
 >[!NOTE]
 >
->Om du vill komma åt beskrivningen av varje tabell går du till Admin > Konfiguration > Datamodeller, markerar en resurs i listan och klickar på **Dokumentation** -fliken.
+>Om du vill få åtkomst till beskrivningen av varje tabell går du till **Administration > Konfiguration > Datascheman**, välj en resurs i listan och klicka på **Dokumentation** -fliken.
 
 När du börjar med Adobe Campaign måste du utvärdera standarddatamodellen för att kontrollera vilken tabell som är bäst lämpad för att lagra dina marknadsföringsdata.
 

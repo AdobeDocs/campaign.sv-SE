@@ -3,8 +3,9 @@ product: campaign
 title: Koordinera datauppdateringar
 description: Koordinera datauppdateringar
 feature: Workflows, Data Management
+role: User
 exl-id: 9faf7ee7-07c1-415b-b234-a945994792c7
-source-git-commit: 190707b8b1ea5f90dc6385c13832fbb01378ca1d
+source-git-commit: 567c2e84433caab708ddb9026dda6f9cb717d032
 workflow-type: tm+mt
 source-wordcount: '300'
 ht-degree: 3%
@@ -40,7 +41,7 @@ Följ stegen nedan för att skapa arbetsflödet:
    ![](assets/uc_dataupdate_test.png)
 
 1. Lägg till en **End** till **Nej** gaffel. På så sätt kommer inget att köras om arbetsflödet redan körs.
-1. Lägg till önskade aktiviteter i **Ja** gaffel. I vårt fall **Fråga** och **Uppdatera data** verksamhet.
+1. Lägg till önskade aktiviteter i **Ja** gaffel. I vårt fall, **Fråga** och **Uppdatera data** verksamhet.
 1. Öppna den första aktiviteten och lägg sedan till **instance.vars.isRunning = true** i **[!UICONTROL Advanced]** -fliken. På så sätt ställs instansvariabeln in som running.
 
    ![](assets/uc_dataupdate_query.png)

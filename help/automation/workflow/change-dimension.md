@@ -3,8 +3,9 @@ product: campaign
 title: Ändra dimension i ett arbetsflöde
 description: Lär dig hur du använder aktiviteten Ändra dimension
 feature: Workflows, Targeting Activity
+role: User
 exl-id: 71f36413-377a-4be6-921c-9e794fe882fd
-source-git-commit: 77ec01aaba1e50676bed57f503a9e4e8bb1fe54c
+source-git-commit: 567c2e84433caab708ddb9026dda6f9cb717d032
 workflow-type: tm+mt
 source-wordcount: '372'
 ht-degree: 1%
@@ -17,7 +18,7 @@ Använd **[!UICONTROL Change dimension]** för att ändra målinriktningsdimensi
 
 Du kan också använda den här aktiviteten för att definiera ytterligare kolumner för det nya målet och definiera villkor för datadeduplicering.
 
-Så här konfigurerar du **[!UICONTROL Change dimension]** ska du utföra följande steg:
+Konfigurera **[!UICONTROL Change dimension]** ska du utföra följande steg:
 
 1. Välj den nya måldimensionen via **[!UICONTROL Change dimension]** fält.
 
@@ -27,7 +28,7 @@ Så här konfigurerar du **[!UICONTROL Change dimension]** ska du utföra följa
 
    ![](assets/s_user_change_dimension_limit.png)
 
-   När du väljer att bara behålla en post visas en samling i arbetsschemat: Den här samlingen representerar alla poster som inte kommer att användas som mål i det slutliga resultatet (eftersom endast en post behålls). I likhet med alla andra samlingar kan du med den här metoden beräkna aggregeringar eller återställa information i kolumner.
+   När du väljer att bara behålla en post visas en samling i arbetsschemat: Den här samlingen representerar alla poster som inte kommer att ingå i slutresultatet (eftersom endast en post behålls). I likhet med alla andra samlingar kan du med den här metoden beräkna aggregeringar eller återställa information i kolumner.
 
    Om du till exempel ändrar **[!UICONTROL Customers]** dimension till **[!UICONTROL Recipients]** är det möjligt att rikta in sig på kunder i en viss butik samtidigt som man lägger till antalet inköp.
 
@@ -43,29 +44,29 @@ Så här konfigurerar du **[!UICONTROL Change dimension]** ska du utföra följa
 
    Du kan till exempel återställa regionen baserat på postnumret genom att använda en **Delsträng** type-funktion. Så här gör du:
 
-   * Klicka på **[!UICONTROL Add data...]** länk och markera **[!UICONTROL Data linked to the filtering dimension]**.
+   * Klicka på **[!UICONTROL Add data...]** länka och markera **[!UICONTROL Data linked to the filtering dimension]**.
 
-      ![](assets/wf_change-dimension_sample_01.png)
+     ![](assets/wf_change-dimension_sample_01.png)
 
-      >[!NOTE]
-      >
-      >Mer information om hur du skapar och hanterar ytterligare kolumner finns i [Lägg till data](query.md#add-data).
+     >[!NOTE]
+     >
+     >Mer information om hur du skapar och hanterar ytterligare kolumner finns i [Lägg till data](query.md#add-data).
 
    * Markera föregående måldimension (före axelväxling) och välj **[!UICONTROL Zip Code]** i mottagarens **[!UICONTROL Location]** underträd, klicka sedan på **[!UICONTROL Edit expression]**.
 
-      ![](assets/wf_change-dimension_sample_02.png)
+     ![](assets/wf_change-dimension_sample_02.png)
 
    * Klicka **[!UICONTROL Advanced selection]** och välja **[!UICONTROL Edit the formula using an expression]**.
 
-      ![](assets/wf_change-dimension_sample_03.png)
+     ![](assets/wf_change-dimension_sample_03.png)
 
    * Använd funktionerna i listan och ange vilken beräkning som ska utföras.
 
-      ![](assets/wf_change-dimension_sample_04.png)
+     ![](assets/wf_change-dimension_sample_04.png)
 
-   * Ange slutligen etiketten för den kolumn som du nyss skapade.
+   * Ange slutligen etiketten för den kolumn som du just har skapat.
 
-      ![](assets/wf_change-dimension_sample_05.png)
+     ![](assets/wf_change-dimension_sample_05.png)
 
 1. Kör arbetsflödet för att visa resultatet av den här konfigurationen. Jämför data i tabellerna före och efter ändringsdimensionsaktiviteten och jämför arbetsflödestabellernas struktur, vilket visas i följande exempel:
 

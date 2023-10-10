@@ -3,8 +3,9 @@ product: campaign
 title: Inkrementell fråga
 description: Läs mer om arbetsflödesaktiviteten Inkrementell fråga
 feature: Workflows, Targeting Activity
+role: User
 exl-id: 3e9f92c3-080f-441b-a15a-2ec9d056d1f9
-source-git-commit: 77ec01aaba1e50676bed57f503a9e4e8bb1fe54c
+source-git-commit: 567c2e84433caab708ddb9026dda6f9cb717d032
 workflow-type: tm+mt
 source-wordcount: '355'
 ht-degree: 3%
@@ -23,12 +24,12 @@ Frågan definieras på samma sätt som för vanliga frågor, men körningen är 
 
 **Relaterade ämnen:**
 
-* [Användningsfall: Kvartalslistuppdatering med inkrementell fråga](quarterly-list-update.md)
+* [Användningsfall: Kvartalsvis listuppdatering med en inkrementell fråga](quarterly-list-update.md)
 * [Skapa en fråga](query.md#creating-a-query)
 
 >[!CAUTION]
 >
->Om resultatet av en inkrementell fråga är lika med **0** under en av körningarna pausas arbetsflödet tills frågan körs nästa gång. De övergångar och aktiviteter som följer efter den stegvisa frågan bearbetas därför inte före nästa körning.
+>Om resultatet av en stegvis fråga är lika med **0** under en av körningarna pausas arbetsflödet tills frågan körs nästa gång. De övergångar och aktiviteter som följer efter den stegvisa frågan bearbetas därför inte före nästa körning.
 
 Så här gör du:
 
@@ -49,15 +50,15 @@ Så här gör du:
 
    * **[!UICONTROL History in days]**
 
-      Mottagare som redan är målinriktade kan loggas i högst ett antal dagar från den dag då de var målinriktade. Om värdet är noll rensas mottagarna aldrig från loggen.
+     Mottagare som redan är målinriktade kan loggas i högst ett antal dagar från den dag då de var målinriktade. Om värdet är noll rensas mottagarna aldrig från loggen.
 
    * **[!UICONTROL Keep history when starting]**
 
-      Med det här alternativet kan du inte rensa loggen när aktiviteten är aktiverad.
+     Med det här alternativet kan du inte rensa loggen när aktiviteten är aktiverad.
 
    * **[!UICONTROL SQL table name]**
 
-      Med den här parametern kan du överlagra SQL-standardtabellen som innehåller historikdata.
+     Med den här parametern kan du överlagra SQL-standardtabellen som innehåller historikdata.
 
 ## Utdataparametrar {#output-parameters}
 
