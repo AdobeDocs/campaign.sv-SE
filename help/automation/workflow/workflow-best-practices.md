@@ -3,11 +3,12 @@ product: campaign
 title: God praxis för arbetsflöden
 description: Lär dig mer om arbetsflöden för kampanjer
 feature: Workflows
+role: User, Admin
 exl-id: 8bcaf367-5b1f-4d31-80c9-c77df43c6ed1
-source-git-commit: 190707b8b1ea5f90dc6385c13832fbb01378ca1d
+source-git-commit: d4e28ddf6081881f02042416aa8214761ea42be9
 workflow-type: tm+mt
-source-wordcount: '1664'
-ht-degree: 5%
+source-wordcount: '1345'
+ht-degree: 6%
 
 ---
 
@@ -25,7 +26,7 @@ Om arbetsflödet påverkar hela plattformen (till exempel rensningsprocesser) ka
 
 Eftersom det gör det enklare att hitta och felsöka dem om de inte fungerar på rätt sätt rekommenderar Adobe att du ger arbetsflödena egna namn och etiketter: fyll i arbetsflödets beskrivningsfält för att sammanfatta den process som ska utföras så att operatören kan förstå den utan problem.
 
-Om arbetsflödet är en del av en process som innefattar flera arbetsflöden kan du vara tydlig när du anger en etikett; Att använda siffror är ett bra sätt att ordna arbetsflödena (med Label).
+Om arbetsflödet är en del av en process som innefattar flera arbetsflöden kan du vara explicit när du anger en etikett. Att använda siffror är ett bra sätt att ordna arbetsflödena (efter etikett).
 
 Exempel:
 
@@ -53,7 +54,7 @@ Kampanjarbetsflöden (arbetsflöden som skapas som en del av en kampanj/åtgärd
 
 Alla schemalagda arbetsflöden som körs i produktionsmiljöer bör övervakas för att varnas om ett fel uppstår.
 
-I arbetsflödesegenskaperna väljer du en Supervisor-grupp, antingen standardgruppen **[!UICONTROL Workflow supervisors]** eller en anpassad grupp. Se till att minst en operator tillhör den här gruppen, med en e-postkonfiguration.
+I arbetsflödesegenskaperna väljer du en Supervisor-grupp, antingen standardgruppen **[!UICONTROL Workflow supervisors]** eller en anpassad grupp. Se till att minst en operator tillhör den här gruppen, med ett konfigurerat e-postmeddelande.
 
 Innan du börjar skapa ett arbetsflöde måste du definiera arbetsflödesansvariga. De meddelas via e-post om fel uppstår. Mer information finns i [Hantera fel](monitor-workflow-execution.md#managing-errors).
 
@@ -71,14 +72,14 @@ Med Workflow HeatMap kan Adobe Campaign plattformsadministratörer övervaka inl
 
 När du utvecklar ditt arbetsflöde får alla aktiviteter ett namn, liksom alla Adobe Campaign-objekt. När namnet genereras av verktyget rekommenderar vi att du byter namn på det med ett explicit namn när du konfigurerar det. Risken med att göra det senare är att det kan avbryta arbetsflödet med aktiviteter med hjälp av namnet på en annan tidigare aktivitet. Det skulle därför vara svårt att uppdatera namnen efteråt.
 
-Aktivitetsnamnet finns i **[!UICONTROL Advanced]** -fliken. Låt dem inte namnges **[!UICONTROL query]**, **[!UICONTROL query1]**, **[!UICONTROL query11]**, men ge dem explicita namn som **[!UICONTROL querySubscribedRecipients]**. Det här namnet visas i journalen, och om tillämpligt i SQL-loggarna, och det hjälper till att felsöka arbetsflödet när det konfigureras.
+Aktivitetsnamnet finns i **[!UICONTROL Advanced]** -fliken. Ge dem inte namn **[!UICONTROL query]**, **[!UICONTROL query1]**, **[!UICONTROL query11]**, men ge dem explicita namn som **[!UICONTROL querySubscribedRecipients]**. Det här namnet visas i journalen, och om tillämpligt i SQL-loggarna, och det hjälper till att felsöka arbetsflödet när det konfigureras.
 
 ### Första och sista aktiviteten {#first-and-last-activities}
 
 * Starta alltid arbetsflödet med en **[!UICONTROL Start]** aktivitet eller **[!UICONTROL Scheduler]** aktivitet. När det är relevant kan du även använda en **[!UICONTROL External signal]** aktivitet.
 * När du skapar arbetsflödet ska du bara använda ett **[!UICONTROL Scheduler]** aktivitet per gren. Om samma gren i ett arbetsflöde har flera schemaläggare (länkade till varandra) så multipliceras antalet uppgifter som ska utföras exponentiellt vilket skulle innebära att databasen överbelastas avsevärt. Den här regeln gäller även alla aktiviteter med en **[!UICONTROL Scheduling & History]** -fliken. Läs mer på [Schemaläggning](scheduler.md).
 
-   ![](assets/wf-scheduler.png)
+  ![](assets/wf-scheduler.png)
 
 * Använd **[!UICONTROL End]** aktiviteter för varje arbetsflöde. På så sätt kan Adobe Campaign frigöra temporärt utrymme som används för beräkningar i arbetsflöden. Mer information finns i: [Start och slut](start-and-end.md).
 
@@ -86,7 +87,7 @@ Aktivitetsnamnet finns i **[!UICONTROL Advanced]** -fliken. Låt dem inte namnge
 
 Du kanske vill lägga till JavaScript när du initierar en arbetsflödesaktivitet. Detta kan göras i en aktivitets **[!UICONTROL Advanced]** aktivitetens flik.
 
-Om du vill göra det enklare att spåra arbetsflödet rekommenderar vi att du använder dubbla streck i början och slutet av aktivitetsetiketten enligt följande: — Min etikett —.
+För att underlätta spärrning av arbetsflödet rekommenderar vi att du använder dubbla streck i början och slutet av aktivitetsetiketten enligt följande: — Min etikett —.
 
 ### Signal {#signal}
 
@@ -104,11 +105,11 @@ Arkiverade arbetsflöden kan finnas på utvecklings- eller testplattformar i en 
 
 ### Loggar {#logs}
 
-JavaScript-metoden **[!UICONTROL logInfo()]** är en lösning för att felsöka ett arbetsflöde. Den måste dock användas med försiktighet, särskilt för aktiviteter som ofta utförs: loggarna kan överbelastas och storleken på loggtabellen kan öka avsevärt.
+JavaScript-metoden **[!UICONTROL logInfo()]** är en lösning för att felsöka ett arbetsflöde. Den måste dock användas med försiktighet, särskilt för aktiviteter som ofta körs: den kan överlagra loggarna och avsevärt öka storleken på loggtabellen.
 
 ### Behåll tillfälliga populationer
 
-The **Behåll resultatet från mellanliggande populationer mellan två avrättningar** Alternativet håller temporära tabeller mellan två körningar av ett arbetsflöde.
+The **Behåll resultatet från mellanliggande populationer mellan två exekveringar** Alternativet håller temporära tabeller mellan två körningar av ett arbetsflöde.
 
 Den är tillgänglig i arbetsflödesegenskapernas **[!UICONTROL General]** och kan användas för utveckling och testning för att övervaka data och kontrollera resultat. Du kan använda det här alternativet i utvecklingsmiljöer, men aldrig använda det i produktionsmiljöer. Om du behåller tillfälliga tabeller kan databasens storlek öka avsevärt och så småningom kan storleksgränsen nås. Dessutom kommer säkerhetskopieringen att bli långsammare.
 
@@ -116,7 +117,7 @@ Endast arbetsregister för den senaste körningen av arbetsflödet behålls. Arb
 
 >[!CAUTION]
 >
->Det här alternativet måste **aldrig** checkas in i **produktion** arbetsflöde. Det här alternativet används för att analysera resultaten och är utformat endast för teständamål och ska därför endast användas i utvecklings- eller stagingmiljöer.
+>Det här alternativet måste **aldrig** checkas in i **produktion** arbetsflöde. Det här alternativet används för att analysera resultaten och är utformat endast för teständamål och ska därför endast användas i utvecklings- eller staging-miljöer.
 
 
 ### Logga SQL-frågor
@@ -136,25 +137,6 @@ Ytterligare metodtips bör tillämpas på din körningsplanering för arbetsflö
 * Om du vill minska den totala körtiden ersätter du tidskrävande aktiviteter med förenklade och snabbare aktiviteter.
 * Undvik att köra fler än 20 arbetsflöden samtidigt. När alltför många arbetsflöden körs samtidigt kan plattformen överbelastas och bli instabil.
 
-### Arbetsflödeskörning {#workflow-execution}
-
-Förbättra instansstabiliteten genom att implementera följande metodtips:
-
-* **Schemalägg inte ett arbetsflöde så att det körs mer än var 15:e minut** eftersom det kan påverka systemets prestanda negativt och skapa block i databasen.
-
-* **Undvik att lämna arbetsflödena i pausat läge**. Om du skapar ett tillfälligt arbetsflöde måste du se till att det kan slutföras korrekt och inte stanna i en **[!UICONTROL paused]** tillstånd. Om den pausas innebär det att du måste behålla de temporära tabellerna och på så sätt öka storleken på databasen. Tilldela arbetsflödesgranskare under Arbetsflödesegenskaper för att skicka en avisering när ett arbetsflöde misslyckas eller pausas av systemet.
-
-   Så här undviker du att arbetsflöden är i pausat läge:
-
-   * Kontrollera dina arbetsflöden regelbundet för att se om det inte finns några oväntade fel.
-   * Håll arbetsflödena så enkla som möjligt, t.ex. genom att dela upp stora arbetsflöden i flera olika arbetsflöden. Du kan använda **[!UICONTROL External signal]** aktiviteter utlöser sin körning baserat på andra arbetsflödenas körning.
-   * Undvik inaktiverade aktiviteter med arbetsflöden som lämnar trådar öppna och leder till många tillfälliga tabeller som kan ta mycket plats. Behåll inte aktiviteter i **[!UICONTROL Do not enable]** eller **[!UICONTROL Enable but do not execute]** lägen i dina arbetsflöden.
-
-* **Stoppa oanvända arbetsflöden**. Arbetsflöden som fortsätter att köras behåller anslutningar till databasen.
-
-* **Använd endast ovillkorlig stop i de sällsynta fallen**. Använd inte den här åtgärden regelbundet. Utan att utföra en ren stängning av anslutningar som genereras av arbetsflöden till databasen påverkar prestanda.
-
-* **Utför inte flera stoppbegäranden i samma arbetsflöde**. Att stoppa ett arbetsflöde är en asynkron process: Begäran registreras och arbetsflödesservern eller servrarna avbryter pågående åtgärder. Det kan därför ta tid att stoppa en arbetsflödesinstans, särskilt om arbetsflödet körs på flera servrar, där var och en måste ta kontroll för att avbryta de pågående åtgärderna. Om du vill undvika problem väntar du tills stoppåtgärden har slutförts och undviker att stoppa ett arbetsflöde flera gånger.
 
 ### Kör i motoralternativet {#execute-in-the-engine-option}
 
