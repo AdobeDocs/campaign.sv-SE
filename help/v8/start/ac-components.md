@@ -1,11 +1,11 @@
 ---
 title: Förstå Campaign-processer och -komponenter
 description: Förstå Campaign-processer och -komponenter
-feature: Overview
+feature: Overview, Architecture, Configuration
 role: Admin, Developer, User
 level: Beginner, Intermediate, Experienced
 exl-id: 7db32bd8-a088-405f-9633-2968c28b13b0
-source-git-commit: 290f4e9a0d13ef49caacb7a128ccc266bafd5e69
+source-git-commit: e0ec2940db3120dc8fbfd17dd2f5083bbf31232c
 workflow-type: tm+mt
 source-wordcount: '660'
 ht-degree: 0%
@@ -30,19 +30,19 @@ Du kan få åtkomst till Adobe Campaign via en Rich-klient, en Thin-klient eller
 
 * Rich Client
 
-   Campaign Rich Client är ett program som kan kommunicera med Adobe Campaign-programservern via standardprotokoll för Internet, till exempel SOAP och HTTP. [Läs mer om Campaign Client Console](../start/connect.md).
+  Campaign Rich Client är ett program som kan kommunicera med Adobe Campaign-programservern via standardprotokoll för Internet, till exempel SOAP och HTTP. [Läs mer om Campaign Client Console](../start/connect.md).
 
 * Tunn klient
 
-   Med Adobe Campaign webbåtkomstfunktioner får du tillgång till en delmängd av Campaign-funktionerna via en webbläsare och ett HTML-användargränssnitt. Använd det här webbgränssnittet för att få åtkomst till rapporter, kontrollera och validera meddelanden, få åtkomst till kontrollpaneler med mera.  [Läs mer om Campaign Web Access](../start/connect.md).
+  Med Adobe Campaign webbåtkomstfunktioner får du tillgång till en delmängd av Campaign-funktionerna via en webbläsare och ett HTML-användargränssnitt. Använd det här webbgränssnittet för att få åtkomst till rapporter, kontrollera och validera meddelanden, få åtkomst till kontrollpaneler med mera.  [Läs mer om Campaign Web Access](../start/connect.md).
 
 * Externa program med API:er
 
-   I vissa fall kan systemet anropas från externa program med hjälp av webbtjänsternas API:er som exponeras via SOAP-protokollet. [Läs mer om Campaign-API:er](../dev/api.md).
+  I vissa fall kan systemet anropas från externa program med hjälp av webbtjänsternas API:er som exponeras via SOAP-protokollet. [Läs mer om Campaign-API:er](../dev/api.md).
 
 ### Beständigt lager{#persistance-layer}
 
-Kampanjdatabaser används som beständiga lager och innehåller nästan all information och alla data som hanteras av Adobe Campaign. Detta omfattar följande: funktionella data, såsom profiler, prenumerationer, innehåll, tekniska uppgifter, såsom leveransjobb och loggar, spårningsloggar, och arbetsdata (inköp, leads).
+Kampanjdatabaser används som beständiga lager och innehåller nästan all information och alla data som hanteras av Adobe Campaign. Detta inkluderar: funktionell information, som profiler, prenumerationer, innehåll, tekniska data, som leveransjobb och loggar, spårningsloggar samt arbetsdata (inköp, leads).
 
 Databasens tillförlitlighet är av yttersta vikt eftersom de flesta Adobe Campaign-komponenter kräver åtkomst till databasen för att kunna utföra sina uppgifter (med undantag för omdirigeringsmodulen).
 
@@ -50,9 +50,9 @@ Databasens tillförlitlighet är av yttersta vikt eftersom de flesta Adobe Campa
 
 Kampanjens logiska programlager är enkelt att konfigurera för att tillgodose komplexa affärsbehov. Ni kan använda Campaign som en enda plattform med olika program som kombineras för att skapa en öppen och skalbar arkitektur. Varje Campaign-instans är en samling processer i programlagret, varav vissa är delade och vissa är dedikerade.
 
-## Kampanjhanterade Cloud Services{#ac-managed-services}
+## Kampanjhanterade Cloud Service{#ac-managed-services}
 
-Adobe Campaign v8 distribueras as a Managed Service: alla komponenter i Adobe Campaign, inklusive användargränssnittet, körningsmotorn och Campaign-databaserna är fullt värdar för Adobe, inklusive e-postkörning, spegelsidor, spårningsserver och externt riktade webbkomponenter som sidan/inställningscentret för att avbryta prenumerationen och landningssidor.
+Adobe Campaign v8 distribueras as a Managed Service: alla komponenter i Adobe Campaign, inklusive användargränssnittet, körningsmotorn och Campaign-databaserna är fullt värdar för Adobe, inklusive e-postkörning, spegelsidor, spårningsserver och externt riktade webbkomponenter som att avbeställa sidor/inställningscenter och landningssidor.
 
 ## Kampanjprocesser
 
@@ -68,4 +68,4 @@ Den övergripande kommunikationen mellan Campaign-processer beskrivs i följande
 
 Användaren ansluter till Campaign-programservern med HTTP. Alla data och all information hanteras i Campaign-databasen. Om en Campaign-utvecklare utför konfigurationsändringar hämtas den i databasen. Om en marknadsförare skapar en ny kampanj hanteras all information och alla data som hör till den nya kampanjen också i databasen. När en marknadsförare kör en kampanj skickas e-postleveranser till profiler från Campaign-servern via SMTP-servern. När profiler interagerar med e-postleveranser, som att öppna e-postmeddelandet, skickas spårningsdata tillbaka till spårningsservern.
 
-![](../assets/do-not-localize/glass.png) [Läs mer om Campaign-processer](../architecture/general-architecture.md#dev-env).
+![](../assets/do-not-localize/glass.png) [Läs mer om kampanjprocesser](../architecture/general-architecture.md#dev-env).

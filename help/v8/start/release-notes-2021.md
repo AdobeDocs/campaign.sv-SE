@@ -1,20 +1,20 @@
 ---
 title: Versionsinformation om Campaign v8 2021
 description: Lista över funktioner och förbättringar i 2021 års Campaign v8-utgåvor
-feature: Overview
+feature: Release Notes
 role: Admin, Developer, User
 level: Beginner, Intermediate, Experienced
 exl-id: 5ac6bda9-86c8-4200-b285-6fee2a29039d
-source-git-commit: 290f4e9a0d13ef49caacb7a128ccc266bafd5e69
+source-git-commit: e0ec2940db3120dc8fbfd17dd2f5083bbf31232c
 workflow-type: tm+mt
 source-wordcount: '1583'
-ht-degree: 38%
+ht-degree: 37%
 
 ---
 
 # Versionsinformation 2021{#2021-release}
 
-Den här sidan innehåller nya funktioner, förbättringar och korrigeringar som följer med **2021 Campaign v8 Releases**.
+På den här sidan visas nya funktioner, förbättringar och korrigeringar som följer med **2021 Campaign v8 Releases**.
 
 ## Version 8.2.8 {#release-8-2-8}
 
@@ -29,7 +29,7 @@ _28 oktober 2021_
 <tbody>
 <tr>
 <td>
-<p>Interaktionshantering i realtid är nu tillgänglig för inkommande kanaler. Använd modulen för inkommande kampanjinteraktion för att presentera det bästa erbjudandet för era kunder när de besöker er webbplats eller kontaktar ert callcenter. Den här funktionen har Campaign v8 som ett alternativ och kräver specifik konfiguration för din instans. Kontakta Adobe och få tillgång till modulen Inkommande interaktion.</p>
+<p>Interaktionshantering i realtid är nu tillgänglig för inkommande kanaler. Använd modulen Kampanjinkommande interaktion för att presentera det bästa erbjudandet för era kunder när de besöker er webbplats eller kontaktar ert callcenter. Den här funktionen har Campaign v8 som ett alternativ och kräver en specifik konfiguration för din instans. Kontakta Adobe och få tillgång till modulen Inkommande interaktion.</p>
 <p>Mer information finns i den <a href="../interaction/interaction-architecture.md">detaljerade dokumentationen</a>.</p>
 </td>
 </tr>
@@ -61,7 +61,7 @@ _28 oktober 2021_
 <tr> 
 <td> <p>Unicity Service är en ny komponent i Cloud Database Manager. Det hjälper användarna att bevara och övervaka integriteten för unika nyckelbegränsningar i molndatabastabeller. På så sätt kan du minska risken att infoga dubblettnycklar.
 <p>Eftersom molndatabasen inte tillämpar begränsningar för användargrupper, introducerar Unicity Service på programnivå, <b>en uppsättning nya skyddsräcken</b> minska risken att infoga dubbletter när data hanteras med Adobe Campaign.</p> 
-<p>Unicity Service initierar ett nytt inbyggt arbetsflöde som kallas <b>ffdaUnicity</b> för att övervaka begränsningar för unicitet och varningar när dubbletter upptäcks.</p>
+<p>Unicity Service initierar ett nytt inbyggt arbetsflöde som kallas <b>ffdaUnicity</b> för att övervaka begränsningar för användargrupper och varningar när dubbletter upptäcks.</p>
 <p>Mer information finns i den <a href="../architecture/keys.md">detaljerade dokumentationen</a>.</p>
 </td> </tr> 
 </tbody> 
@@ -72,7 +72,7 @@ _28 oktober 2021_
 
 * Snowflake-kontakten har förbättrats i fråga om prestanda.
 * För övervaknings- och testningsändamål ska granskningsloggarna för **[!UICONTROL Replicate Staging data]** arbetsflödet innehåller nu antalet poster som har skickats till FDA-databasen (Full Federated Data Access).
-* Med SQL-kodsaktiviteten kan du nu välja i vilken databas SQL-skriptet ska lagras: standarddatakällan eller ett valt externt FDA-konto.
+* Med SQL-kodaktiviteten kan du nu välja i vilken databas SQL-skriptet ska lagras: standarddatakällan eller ett valt aktivt FDA-externt konto.
 * En uppsättning fördefinierade lagerställen finns nu tillgängliga och kan användas för att köra olika frågor parallellt, som segmentering, ETL eller toppar. [Läs mer](../config/workflows.md)
 
 **Andra ändringar**
@@ -88,7 +88,7 @@ _28 oktober 2021_
 * Korrigerade ett problem som kunde förhindra att erbjudanden infogades i en leverans om de hanterades av en anrikningsaktivitet i ett arbetsflöde.
 * Korrigerade ett problem som kunde göra importen av paket långsammare.
 * Ett problem som kunde förhindra e-postleveranser med dirigerade adresser har korrigerats.
-* Korrigerade ett problem som kunde förhindra att offerter sparades i offerttabellen.
+* Korrigerade ett problem som kunde förhindra att offerter sparades i tabellen för offertförslag.
 * Korrigerade ett problem som orsakade att problem med nätverkstimeout inte loggades korrekt som problem med skriptavbrott i stället för nätverksfel. Detta problem uppstod vid HTTP-begäranden som inkluderades i JavaScript-aktiviteter.
 * Korrigerade ett problem som förhindrade att erbjudanden replikerades till realtidsmiljön på Snowflake.
 * Korrigerade ett problem som ignorerade attributet autoStg för icke-utökade inbyggda scheman.

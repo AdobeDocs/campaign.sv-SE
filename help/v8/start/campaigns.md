@@ -1,11 +1,11 @@
 ---
 title: Kom igång med kampanjer
 description: Kom igång med kampanjer
-feature: Audiences
+feature: Cross Channel Orchestration
 role: User
 level: Beginner
-exl-id: b5a6c845-13a7-4746-b856-a08a3cf80b66,c4798c8f-619e-4a60-80d7-29b9e4c61168
-source-git-commit: 65f4da979f0c5884797af0c3a835d948672b4a7c
+exl-id: b5a6c845-13a7-4746-b856-a08a3cf80b66
+source-git-commit: e0ec2940db3120dc8fbfd17dd2f5083bbf31232c
 workflow-type: tm+mt
 source-wordcount: '833'
 ht-degree: 5%
@@ -14,7 +14,7 @@ ht-degree: 5%
 
 # Kom igång med kampanjer{#gs-ac-campaigns}
 
-Adobe Campaign erbjuder en uppsättning lösningar som hjälper er att personalisera och leverera kampanjer i alla kanaler, både online och offline. Ni kan skapa, konfigurera, köra och analysera marknadsföringskampanjer. Alla marknadsföringskampanjer kan hanteras från ett enhetligt kontrollcenter. Lär dig hur du bläddrar bland och skapar marknadsföringskampanjer i det här avsnittet.
+Adobe Campaign erbjuder en uppsättning lösningar som hjälper er att personalisera och leverera kampanjer i alla kanaler, både online och offline. Ni kan skapa, konfigurera, köra och analysera marknadsföringskampanjer. Alla marknadsföringskampanjer kan hanteras från ett enhetligt kontrollcenter. Lär dig att hitta och skapa marknadsföringskampanjer i det här avsnittet.
 
 Kampanjerna omfattar åtgärder (leveranser) och processer (import eller extrahering av filer) samt resurser (marknadsföringsdokument, leveransdispositioner). De används i marknadsföringskampanjer. Kampanjer ingår i ett program och program ingår i en kampanjplan.
 
@@ -28,9 +28,9 @@ Med Adobe Campaign kan du utforma och orkestrera målinriktade och personalisera
 
 Innan ni börjar implementera marknadsföringskampanjer måste ni känna till följande koncept:
 
-* **Marknadsföringskampanj**: En kampanj centraliserar alla element som hör till en marknadsföringskampanj: leveranser, regler för målinriktning, kostnader, exportfiler, relaterade dokument osv. Varje kampanj är kopplad till ett program.
+* **Marknadsföringskampanj**: en kampanj centraliserar alla element som hör till en marknadsföringskampanj: leveranser, målinriktningsregler, kostnader, exportfiler, relaterade dokument osv. Varje kampanj är kopplad till ett program.
 
-* **Program**: kan du definiera marknadsföringsåtgärder för en kalenderperiod: lansering, kanvantning, lojalitet osv. Varje program innehåller kampanjer som är länkade till en kalender, som ger en övergripande bild.
+* **Program**: ett program gör att du kan definiera marknadsföringsåtgärder för en kalenderperiod: lansering, skanning, lojalitet osv. Varje program innehåller kampanjer som är länkade till en kalender, som ger en övergripande bild.
 
 * **Plan**: marknadsföringsplanen kan innehålla flera program. Den är kopplad till en kalenderperiod, har en tilldelad budget och kan även kopplas ihop med dokument och mål.
 
@@ -38,7 +38,7 @@ Innan ni börjar implementera marknadsföringskampanjer måste ni känna till f�
 
 * **Återkommande kampanjer**: återkommande kampanjer skapas från en specifik mall som definierar den arbetsflödesmall som ska köras och körningsschemat.
 
-* **Periodiska kampanjer**: en periodisk kampanj är en kampanj som skapas automatiskt i enlighet med körningsschemat i sin mall.
+* **Periodiska kampanjer**: en periodisk kampanj är en kampanj som skapas automatiskt i enlighet med körningsschemat i mallen.
 
 ## Arbetsyta för marknadsföringskampanjer{#ac-workspace}
 
@@ -62,7 +62,7 @@ De viktigaste stegen för att skapa en flerkanalskampanj för marknadsföring ä
 
    Lär dig hur du arbetar med kampanjmallar i [den här sidan](https://experienceleague.adobe.com/docs/campaign/automation/campaign-orchestration/marketing-campaign-templates.html).
 
-   Upptäck återkommande kampanjer och hur du konfigurerar dem i [den här sidan](https://experienceleague.adobe.com/docs/campaign/automation/campaign-orchestration/recurring-periodic-campaigns.html).
+   Upptäck återkommande kampanjer och konfigurera dem i [den här sidan](https://experienceleague.adobe.com/docs/campaign/automation/campaign-orchestration/recurring-periodic-campaigns.html).
 
 1. **Definiera målgrupper**
 
@@ -78,9 +78,9 @@ De viktigaste stegen för att skapa en flerkanalskampanj för marknadsföring ä
 
    ![](assets/campaign-dashboard.png)
 
-   ![](../assets/do-not-localize/book.png) Lär dig skapa och starta marknadsföringskampanjer i [den här sidan](https://experienceleague.adobe.com/docs/campaign/automation/campaign-orchestration/marketing-campaign-deliveries.html).
+   ![](../assets/do-not-localize/book.png) Lär dig hur du skapar och startar marknadsföringskampanjer i [den här sidan](https://experienceleague.adobe.com/docs/campaign/automation/campaign-orchestration/marketing-campaign-deliveries.html).
 
-   Du kan koppla olika dokument till en kampanj: rapport, foto, webbsida, diagram osv.
+   Du kan associera olika dokument med en kampanj: rapport, foto, webbsida, diagram osv.
 
    ![](../assets/do-not-localize/book.png) Läs mer om associerade dokument i [den här sidan](https://experienceleague.adobe.com/docs/campaign/automation/campaign-orchestration/marketing-campaign-assets.html).
 
@@ -97,7 +97,7 @@ Adobe Campaign erbjuder **Distribuerad marknadsföring** tillägg för genomför
 
 >[!NOTE]
 >
->Den här funktionen är tillgänglig från och med Campaign v8.3. Om du vill kontrollera din version kan du läsa [det här avsnittet](compatibility-matrix.md#how-to-check-your-campaign-version-and-buildversion)
+>Den här funktionen är tillgänglig från och med Campaign v8.3. Om du vill kontrollera versionen läser du [det här avsnittet](compatibility-matrix.md#how-to-check-your-campaign-version-and-buildversion)
 
 Lär dig hur du konfigurerar och använder Campaign Distributed Marketing-funktioner i [den här sidan](https://experienceleague.adobe.com/docs/campaign/automation/distributed-marketing/about-distributed-marketing.html)
 
@@ -107,7 +107,6 @@ Adobe Campaign erbjuder **Svarshantering** tillägg som gör att ni kan mäta fr
 
 >[!NOTE]
 >
->Den här funktionen är tillgänglig från och med Campaign v8.3. Om du vill kontrollera din version kan du läsa [det här avsnittet](compatibility-matrix.md#how-to-check-your-campaign-version-and-buildversion)
+>Den här funktionen är tillgänglig från och med Campaign v8.3. Om du vill kontrollera versionen läser du [det här avsnittet](compatibility-matrix.md#how-to-check-your-campaign-version-and-buildversion)
 
-[](../assets/do-not-localize/book.png) Lär dig hur du konfigurerar och använder svarshanteraren för Campaign i [Campaign Classic v7-dokumentation](https://experienceleague.adobe.com/docs/campaign-classic/using/response-manager/about-response-manager.html){target="_blank"}
-
+[](../assets/do-not-localize/book.png) Lär dig konfigurera och använda svarshanteraren för Campaign i [Campaign Classic v7 - dokumentation](https://experienceleague.adobe.com/docs/campaign-classic/using/response-manager/about-response-manager.html){target="_blank"}

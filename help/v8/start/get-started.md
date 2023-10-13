@@ -1,11 +1,11 @@
 ---
 title: Kom igång med Campaign v8
 description: Ny på Adobe Campaign? Hitta dokumentation om hur du får igång din programvara och var du ska börja med gränssnittet.
-feature: Overview
+feature: Overview, Cross Channel Orchestration
 role: Admin, Developer, User
 level: Beginner
-exl-id: 04b12907-3cb1-40f1-90b8-1524d84edf2d,e3e9b514-a69d-4650-b1b1-1b76b4f3d63f
-source-git-commit: 34af97ae01f7dba418fd0a8c950fc549dfbbd98b
+exl-id: 04b12907-3cb1-40f1-90b8-1524d84edf2d
+source-git-commit: e0ec2940db3120dc8fbfd17dd2f5083bbf31232c
 workflow-type: tm+mt
 source-wordcount: '866'
 ht-degree: 41%
@@ -16,7 +16,7 @@ ht-degree: 41%
 
 Adobe Campaign är en plattform för att designa flerkanaliga kundupplevelser och en miljö för visuell kampanjsamordning, interaktionshantering i realtid och flerkanalsmarknadsföring.
 
-Använd Campaign för att:
+Använd Campaign för att
 
 * **Drive** personalisering och engagemang genom en enda lättillgänglig bild av kunden
 * **Integrera** e-post, mobilkanaler, online- och offlinekanaler i kundresan
@@ -26,7 +26,7 @@ Använd Campaign för att:
 
 ## Integrated Customer Profile {#integrated-customer-profile}
 
-Profilerna är centraliserade i en kraftfull molndatabas. Det finns många sätt att skaffa profiler och bygga upp databasen: onlinesamling via webbformulär, manuell eller automatisk import av textfiler, replikering med företagsdatabaser eller andra informationssystem. Med Adobe Campaign kan du integrera marknadsföringshistorik, inköpsinformation, preferenser, CRM-data och alla relevanta PII-data i en enda samlad vy för att analysera och vidta åtgärder.
+Profilerna är centraliserade i en kraftfull molndatabas. Det finns många sätt att samla in profiler och bygga upp databasen: onlinesamling via webbformulär, manuell eller automatisk import av textfiler, replikering med företagsdatabaser eller andra informationssystem. Med Adobe Campaign kan du integrera marknadsföringshistorik, inköpsinformation, preferenser, CRM-data och alla relevanta PII-data i en enda samlad vy för att analysera och vidta åtgärder.
 
 I Adobe Campaign är mottagarna de standardprofiler som väljs för att skicka leveranser till (e-post, SMS etc.). Tack vare mottagardata som lagras i databasen kan du filtrera det mål som ska ta emot en viss leverans och lägga till personaliseringsdata i leveransinnehållet. Det finns andra typer av profiler i databasen. De är utformade för olika användningsfall. Exempelvis görs fröprofiler för att testa dina leveranser innan de skickas till det slutliga målet.
 
@@ -84,7 +84,7 @@ Du kan kombinera leveransfunktionerna och de avancerade funktionerna för kampan
 
 Adobe Campaign har en uppsättning funktioner som hjälper er att implementera och optimera marknadsföringsfunktionerna beroende på era behov och er arkitektur. Vissa av dem är kärnfunktioner och andra är beroende av att ett paket installeras på din konfiguration. En detaljerad produktbeskrivning finns här: [Adobe Campaign v8 - produktbeskrivning](https://helpx.adobe.com/legal/product-descriptions/adobe-campaign-managed-cloud-services.html).
 
-![](../assets/do-not-localize/glass.png) Känner du redan till Campaign Classic? Läs om viktiga skillnader mellan Campaign Classic och Campaign v8 i [den här sidan](v7-to-v8.md).
+![](../assets/do-not-localize/glass.png) Känner du redan till Campaign Classicen? Lär dig viktiga skillnader mellan Campaign Classic och Campaign v8 i [den här sidan](v7-to-v8.md).
 
 **Se även**
 
