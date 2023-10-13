@@ -5,14 +5,14 @@ feature: API
 role: Developer
 level: Beginner, Intermediate, Experienced
 exl-id: 50e21acd-d23d-4fdd-a8aa-23c3f209bda3
-source-git-commit: 9c7a4f7d4e84fde4b74bf6f8e0432681aa7e42d3
+source-git-commit: 4c2d3bba282f629a9f5cadcda9ab79a810ac9832
 workflow-type: tm+mt
 source-wordcount: '276'
 ht-degree: 6%
 
 ---
 
-# Kom igång med [!DNL Campaign] API:er{#gs-ac-api}
+# Kom igång med [!DNL Campaign] API:er {#gs-ac-api}
 
 [!DNL Adobe Campaign] innehåller en uppsättning JavaScript-funktioner som du kan använda:
 
@@ -21,8 +21,8 @@ ht-degree: 6%
 
 Du kan använda JavaScript-API:er för att skriva i Campaign-molndatabasen eller läsa från databasen:
 
-* Affärsspecifika API:er som du kan använda för varje objekt: leveranser, arbetsflöden, prenumerationer och så vidare. Läs mer i [Campaign Classic v7-dokumentation](https://experienceleague.adobe.com/docs/campaign-classic/using/configuring-campaign-classic/api/business-oriented-apis.html){target="_blank"}.
-* Generiska API:er för dataåtkomst för att fråga om datamodelldata. Läs mer i [Campaign Classic v7-dokumentation](https://experienceleague.adobe.com/docs/campaign-classic/using/configuring-campaign-classic/api/data-oriented-apis.html){target="_blank"}.
+* Affärsspecifika API:er som du kan använda för varje objekt: leveranser, arbetsflöden, prenumerationer och så vidare. Läs mer i [Campaign Classic v7 - dokumentation](https://experienceleague.adobe.com/docs/campaign-classic/using/configuring-campaign-classic/api/business-oriented-apis.html){target="_blank"}.
+* Generiska API:er för dataåtkomst för att fråga om datamodelldata. Läs mer i [Campaign Classic v7 - dokumentation](https://experienceleague.adobe.com/docs/campaign-classic/using/configuring-campaign-classic/api/data-oriented-apis.html){target="_blank"}.
 
 Observera att i [Företagsdistribution (FFDA)](../architecture/enterprise-deployment.md)fungerar Campaign med två databaser: en lokal databas för meddelanden i realtid i användargränssnittet, enhetliga frågor och skrivningar via API:er samt en molndatabas för kampanjkörning, rapportering, datainhämtning, batchfrågor och arbetsflödeskörning.
 
@@ -30,10 +30,10 @@ Observera att i [Företagsdistribution (FFDA)](../architecture/enterprise-deploy
 >
 >* Från och med Campaign v8.5.1 ändrades autentiseringsprocessen till Campaign v8. Tekniska operatörer måste använda Adobe Identity Management System (IMS) för att ansluta till Campaign. Lär dig hur du migrerar dina befintliga tekniska konton i [den här teknologin](../../technotes/upgrades/ims-migration.md).
 >
->* [!DNL Adobe Campaign] v8 har en begränsning av genomströmningen (TPS) för vårt API-lager. Om gränsen överskrids uppstår ett vanligt HTTP-fel (429). Som användare av hanterade Cloud Services kan du kontakta Adobe för att anpassa begränsningen för varje API.
+>* [!DNL Adobe Campaign] v8 har en begränsning av genomströmningen (TPS) för vårt API-lager. Om gränsen överskrids uppstår ett vanligt HTTP-fel (429). Som användare av hanterade Cloud Service kan du kontakta Adobe för att anpassa begränsningen för varje API.
 > 
 
-## Förhandskrav
+## Förhandskrav {#ac-api-prerequisites}
 
 Innan du använder [!DNL Adobe Campaign] API:er måste du känna till följande:
 
