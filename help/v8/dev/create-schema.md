@@ -1,20 +1,20 @@
 ---
 title: Skapa ett nytt schema i Campaign
-description: Lär dig hur du skapar ett nytt schema i Campaign
-feature: Schema Extension
+description: Lär dig skapa ett nytt schema i Campaign
+feature: Schema Extension, Configuration
 role: Developer
 level: Intermediate, Experienced
 exl-id: 796af848-b537-4b8d-a601-fe0628a1fc83
-source-git-commit: 290f4e9a0d13ef49caacb7a128ccc266bafd5e69
+source-git-commit: 1a0b473b005449be7c846225e75a227f6d877c88
 workflow-type: tm+mt
 source-wordcount: '408'
 ht-degree: 2%
 
 ---
 
-# Skapa ett nytt schema{#create-new-schema}
+# Skapa ett nytt schema {#create-new-schema}
 
-Om du vill redigera, skapa och konfigurera scheman klickar du på knappen **[!UICONTROL Administration > Configuration > Data schemas]** på Adobe Campaign Client Console.
+Om du vill redigera, skapa och konfigurera scheman klickar du på **[!UICONTROL Administration > Configuration > Data schemas]** på Adobe Campaign Client Console.
 
 >[!NOTE]
 >
@@ -38,7 +38,7 @@ The **[!UICONTROL Preview]** genererar automatiskt det utökade schemat:
 >
 >När källschemat sparas startas genereringen av det utökade schemat automatiskt.
 
-Om du behöver kontrollera hela strukturen för ett schema kan du använda **[!UICONTROL Preview]** -fliken. Om schemat har utökats kan du visa alla dess tillägg. Som komplement **[!UICONTROL Documentation]** På -fliken visas alla schemaattribut och -element och deras egenskaper (SQL-fält, typ/längd, etikett, beskrivning). The **[!UICONTROL Documentation]** gäller endast för genererade scheman.
+Om du behöver kontrollera hela strukturen för ett schema kan du använda **[!UICONTROL Preview]** -fliken. Om schemat har utökats kan du visa alla dess tillägg. Som ett komplement **[!UICONTROL Documentation]** På -fliken visas alla schemaattribut och -element och deras egenskaper (SQL-fält, typ/längd, etikett, beskrivning). The **[!UICONTROL Documentation]** gäller endast för genererade scheman.
 
 ## Användningsfall: skapa en kontraktstabell {#example--creating-a-contract-table}
 
@@ -59,11 +59,11 @@ För att göra detta måste du skapa tabellschemat och uppdatera databasstruktur
    >
    >Som standard lagras scheman som skapas av användare i &#39;cus&#39;-namnutrymmet. Mer information finns i [Identifiering av ett schema](extend-schema.md#identification-of-a-schema).
 
-1. Skapa tabellens innehåll. Vi rekommenderar att du använder den dedikerade assistenten för att kontrollera att inga inställningar saknas. Om du vill göra det klickar du på **[!UICONTROL Insert]** och väljer vilken typ av inställning som ska läggas till.
+1. Skapa tabellens innehåll. Vi rekommenderar att du använder den dedikerade assistenten för att kontrollera att inga inställningar saknas. Klicka på **[!UICONTROL Insert]** och väljer vilken typ av inställning som ska läggas till.
 
    ![](assets/create_new_content.png)
 
-1. Definiera inställningarna för kontraktstabellen.
+1. Definiera inställningarna för kontraktregistret.
 
    Ett tips är att skapa tabellen i molndatabasen genom att lägga till `dataSource="nms:extAccount:ffda"` -attribut. Det här attributet läggs till som standard när en ny tabell skapas.
 

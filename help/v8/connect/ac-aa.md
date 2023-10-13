@@ -5,20 +5,20 @@ feature: Analytics Integration, Reporting
 role: Admin, User
 level: Beginner, Intermediate
 exl-id: 11370fb6-e192-4626-944e-b80a7496e50d
-source-git-commit: 65f4da979f0c5884797af0c3a835d948672b4a7c
+source-git-commit: 1a0b473b005449be7c846225e75a227f6d877c88
 workflow-type: tm+mt
 source-wordcount: '1075'
 ht-degree: 73%
 
 ---
 
-# Arbeta med Campaign och Adobe Analytics
+# Arbeta med Campaign och Adobe Analytics {#ac-aa}
 
 Ni kan konfigurera Adobe Analytics för att integrera Campaign och Analytics.
 
-Tack vare integreringen kan Adobe Campaign och Adobe Analytics interagera via **Web Analytics-anslutningar** tillägg. Den här integreringen skickar indikatorer och attribut för e-postkampanjer som levereras av Adobe Campaign till Adobe Analytics.
+Tack vare integreringen kan Adobe Campaign och Adobe Analytics interagera via **Web Analytics-anslutningar** tillägg. Denna integrering skickar indikatorer och attribut för e-postkampanjer som levereras av Adobe Campaign till Adobe Analytics.
 
-![](../assets/do-not-localize/speech.png)  Som användare av hanterade Cloud Services [kontakta Adobe](../start/campaign-faq.md#support) för att koppla Campaign till Adobe Experience Cloud tjänster och lösningar. Tillägget för Web Analytics-anslutningen måste installeras i din miljö via det dedikerade paketet.
+![](../assets/do-not-localize/speech.png)  Som användare av hanterade Cloud Service [kontakta Adobe](../start/campaign-faq.md#support) för att koppla Campaign till Adobe Experience Cloud tjänster och lösningar. Tillägget för Web Analytics-anslutningen måste installeras i din miljö via det dedikerade paketet.
 
 Med Adobe Analytics Connector kan Adobe Campaign mäta internetpublik (Web Analytics). Med webbanalysverktygen kan Adobe Campaign vidarebefordra indikatorer och kampanjattribut till Analytics.
 
@@ -114,7 +114,7 @@ När du har skapat din **[!UICONTROL Report suite]** måste du konfigurera **[!U
 
 När rapportsviten har konfigurerats måste du konfigurera **[!UICONTROL External accounts]** i Adobe Campaign.
 
-## Konfigurera ditt externa Campaign-konto {#external-account-ac}
+## Konfigurera ett externt kampanjkonto {#external-account-ac}
 
 Nu måste du konfigurera ditt externa **[!UICONTROL Web Analytics]**-konto i Adobe Campaign för att aktivera synkroniseringen mellan de två lösningarna.
 

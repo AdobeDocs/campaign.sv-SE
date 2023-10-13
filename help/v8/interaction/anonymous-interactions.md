@@ -2,16 +2,17 @@
 product: campaign
 title: Presentera erbjudanden för anonyma profiler (inkommande interaktion)
 description: Lär dig presentera erbjudanden för anonyma profiler
+feature: Interaction, Offers
 role: User, Admin
 exl-id: b7a04360-f8c6-4c69-9594-2b44d3f819b7
-source-git-commit: 567c2e84433caab708ddb9026dda6f9cb717d032
+source-git-commit: 1a0b473b005449be7c846225e75a227f6d877c88
 workflow-type: tm+mt
 source-wordcount: '397'
 ht-degree: 0%
 
 ---
 
-# Anonyma interaktioner{#anonymous-interactions}
+# Anonyma interaktioner {#anonymous-interactions}
 
 ## Miljö för anonyma interaktioner {#environment-for-anonymous-interactions}
 

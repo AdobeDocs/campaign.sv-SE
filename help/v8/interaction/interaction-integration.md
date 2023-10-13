@@ -2,9 +2,10 @@
 product: campaign
 title: Lägg till ett erbjudande på en webbsida
 description: Lär dig lägga till ett erbjudande på en webbsida
+feature: Interaction, Offers
 role: User, Admin
 exl-id: 1eb0775a-5da9-4a27-aa7b-339372748f9c
-source-git-commit: 567c2e84433caab708ddb9026dda6f9cb717d032
+source-git-commit: 1a0b473b005449be7c846225e75a227f6d877c88
 workflow-type: tm+mt
 source-wordcount: '1455'
 ht-degree: 0%

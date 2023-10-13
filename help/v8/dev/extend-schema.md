@@ -1,11 +1,11 @@
 ---
 title: Utöka kampanjscheman
-description: Lär dig hur du utökar Campaign-scheman
-feature: Schema Extension
+description: Lär dig hur du utökar kampanjscheman
+feature: Schema Extension, Data Model
 role: Developer
 level: Intermediate, Experienced
 exl-id: e4dcb228-0683-437a-88cd-bd7ed33da921
-source-git-commit: 2ce1ef1e935080a66452c31442f745891b9ab9b3
+source-git-commit: 1a0b473b005449be7c846225e75a227f6d877c88
 workflow-type: tm+mt
 source-wordcount: '254'
 ht-degree: 2%
@@ -14,7 +14,7 @@ ht-degree: 2%
 
 # Utöka ett schema{#extend-schemas}
 
-Som teknisk användare kan ni anpassa Campaign-datamodellen efter era implementeringskrav: lägga till element i ett befintligt schema, ändra ett element i ett schema eller ta bort element.
+Som teknisk användare kan ni anpassa Campaign-datamodellen så att den uppfyller kraven för implementeringen: lägga till element i ett befintligt schema, ändra ett element i ett schema eller ta bort element.
 
 De viktigaste stegen för att anpassa Campaign-datamodellen är:
 
@@ -30,7 +30,7 @@ De viktigaste stegen för att anpassa Campaign-datamodellen är:
 Följ stegen nedan för att utöka ett schema:
 
 1. Navigera till **[!UICONTROL Administration > Configuration > Data schemas]** i Utforskaren.
-1. Klicka på **Nytt** och markera **[!UICONTROL Extend the data in a table using an extension schema]**.
+1. Klicka på **Nytt** knapp och markera **[!UICONTROL Extend the data in a table using an extension schema]**.
 
    ![](assets/extend-schema-option.png)
 

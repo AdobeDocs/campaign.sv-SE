@@ -1,11 +1,11 @@
 ---
 title: Förstå arkitekturen för kampanjinteraktion
 description: Grundläggande om arkitektur för kampanjinteraktion
-feature: Interaction
+feature: Interaction, Offers
 role: Data Engineer
 level: Beginner
 exl-id: 7a710960-7e41-4462-bd5e-18e874aa46f8
-source-git-commit: 65f4da979f0c5884797af0c3a835d948672b4a7c
+source-git-commit: 1a0b473b005449be7c846225e75a227f6d877c88
 workflow-type: tm+mt
 source-wordcount: '1310'
 ht-degree: 0%
@@ -18,11 +18,11 @@ ht-degree: 0%
 
 Det finns två miljöer för varje målinriktningsdimension som används vid hantering av erbjudanden:
 
-* A **design** en miljö där den som ansvarar för erbjudandet kan skapa och kategorisera erbjudanden, redigera dem och starta godkännandeprocessen så att de kan användas. Reglerna för varje kategori, erbjudandeutrymmet som erbjudandena kan presenteras på och de fördefinierade filter som används för att definiera ett erbjudandes behörighet definieras också i den här miljön.
+* A **design** i vilken den som ansvarar för erbjudandet tar hand om att skapa och kategorisera erbjudanden, redigera dem och starta godkännandeprocessen så att de kan användas. Reglerna för varje kategori, erbjudandeutrymmet som erbjudandena kan presenteras på och de fördefinierade filter som används för att definiera ett erbjudandes behörighet definieras också i den här miljön.
 
-   Kategorier kan också publiceras manuellt i onlinemiljön.
+  Kategorier kan också publiceras manuellt i onlinemiljön.
 
-   Processen för att godkänna erbjudanden är detaljerad [i det här avsnittet](interaction-offer.md#approve-offers).
+  Processen för att godkänna erbjudanden är detaljerad [i det här avsnittet](interaction-offer.md#approve-offers).
 
 * A **live** miljö där godkända erbjudanden från designmiljön, liksom de olika erbjudanden, filter, kategorier och regler som är konfigurerade i designmiljön, finns. Under ett anrop till erbjudandemotorn kommer motorn alltid att använda erbjudanden från den aktiva miljön.
 
@@ -37,7 +37,7 @@ Adobe Campaign Interaction Module föreslår två typer av interaktioner:
 
 Dessa två typer av interaktioner kan utföras antingen i **enhetsläge** (erbjudandet beräknas för en enda kontakt), eller **gruppläge** (erbjudandet beräknas för en uppsättning kontakter). I allmänhet utförs inkommande interaktioner i enställigt läge och utgående interaktioner utförs i batchläge. Det kan dock finnas vissa undantag, för [transaktionsmeddelanden](../send/transactional.md) till exempel, där den utgående interaktionen utförs i ett enhetligt läge.
 
-Så snart ett erbjudande kan eller måste presenteras (i enlighet med de konfigurationer som gjorts) spelar den förmedlande rollen: beräknas automatiskt bästa möjliga erbjudande för en kontakt bland de tillgängliga genom att man kombinerar mottagna data om kontakten och de olika regler som kan tillämpas enligt applikationen.
+Så snart ett erbjudande kan eller måste presenteras (enligt de konfigurationer som gjorts) spelar erbjudandemotorn rollen som mellanhand: den beräknar automatiskt bästa möjliga erbjudande för en kontakt bland de tillgängliga genom att kombinera de data som tas emot om kontakten och de olika regler som kan tillämpas enligt applikationen.
 
 ![](assets/architecture_interaction2.png)
 
@@ -50,7 +50,7 @@ För att kunna stödja skalbarhet och tillhandahålla service dygnet runt på de
 
 ![](assets/interaction_powerbooster_schema.png)
 
-Kontrollinstanser är dedikerade till den inkommande kanalen och innehåller katalogversionen online. Varje instans för körning är oberoende och dedikerad till ett kontaktsegment (till exempel en exekveringsinstans per land). Anrop till erbjudandemotorn måste utföras direkt på körningen (en specifik URL per körningsinstans). Eftersom synkroniseringen mellan instanser inte är automatisk måste interaktioner från samma kontakt skickas via samma instans.
+Kontrollinstanser är dedikerade till den inkommande kanalen och innehåller katalogversionen online. Alla instanser av exekvering är oberoende och dedikerade till ett kontaktsegment (till exempel en exekveringsinstans per land). Anrop till erbjudandemotorn måste utföras direkt på körningen (en specifik URL per körningsinstans). Eftersom synkroniseringen mellan instanser inte är automatisk måste interaktioner från samma kontakt skickas via samma instans.
 
 ### Synkronisering {#synchronization}
 
@@ -73,18 +73,18 @@ Du måste känna till följande synkroniseringsmekanismer:
 * Om du använder funktionen för säkerhetskopiering från en anonym miljö till en identifierad miljö måste dessa två miljöer finnas i samma körningsinstans.
 * Synkroniseringen mellan flera körningsinstanser utförs inte i realtid. Interaktioner av samma kontakt måste skickas till samma instans. Kontrollinstansen måste dedikeras till den utgående kanalen (ingen realtid).
 * Marknadsföringsdatabasen synkroniseras inte automatiskt. Marknadsföringsdata som används i viktnings- och berättigandereglerna måste dupliceras i körningsinstanser. Den här processen kommer inte som standard, du måste utveckla den under integreringsperioden.
-* Synkronisering av offerter utförs uteslutande av FDA-anslutning.
+* Propositionssynkronisering utförs uteslutande av FDA-anslutning.
 * Om du använder Interaction och Message Center på samma instans, synkroniseras i båda fallen via FDA-protokollet.
 
 ### Paketkonfiguration {#packages-configuration}
 
 Alla schematillägg som är direkt länkade till **Interaktion** (erbjudanden, erbjudanden, mottagare osv.) måste distribueras på körningsinstanserna.
 
-The **Interaktion** paketet installeras på alla instanser (kontroll och körning). Ytterligare två paket finns: ett paket för kontrollinstanserna och det andra för varje körningsinstans.
+The **Interaktion** paketet installeras på alla instanser (kontroll och körning). Det finns ytterligare två paket: ett paket för kontrollinstanserna och ett för varje körningsinstans.
 
 >[!NOTE]
 >
->När du installerar paketet **long** typfält för **nms:förslag** tabell som t.ex. förslags-ID, blir **int64** textfält. Den här typen av data beskrivs i [Campaign Classic v7-dokumentation](https://experienceleague.adobe.com/docs/campaign-classic/using/configuring-campaign-classic/schema-reference/schema-structure.html#mapping-the-types-of-adobe-campaign-dbms-data){target="_blank"}.
+>När du installerar paketet **long** typfält för **nms:förslag** tabell som t.ex. förslags-ID, blir **int64** textfält. Den här typen av data beskrivs i [Campaign Classic v7 - dokumentation](https://experienceleague.adobe.com/docs/campaign-classic/using/configuring-campaign-classic/schema-reference/schema-structure.html#mapping-the-types-of-adobe-campaign-dbms-data){target="_blank"}.
 
 Varaktigheten för datalagring konfigureras för varje instans (via **[!UICONTROL Data purge]** i distributionsguiden). För körningsinstanser måste denna period motsvara det historiska djup som krävs för att typologiregler (glidande period) och regler för stödberättigande ska kunna beräknas.
 
@@ -102,10 +102,11 @@ På kontrollinstanserna:
    * Kontrollera vilken typ av program som används: **[!UICONTROL Message Center]**, **[!UICONTROL Interaction]** eller båda.
    * Ange det FDA-konto som används. En operator måste skapas för körningsinstanserna och måste ha följande läs- och skrivrättigheter i databasen för instansen i fråga:
 
-      ```
-      grant SELECT ON nmspropositionrcp, nmsoffer, nmsofferspace, xtkoption, xtkfolder TO user;
-      grant DELETE, INSERT, UPDATE ON nmspropositionrcp TO user;
-      ```
+     ```
+     grant SELECT ON nmspropositionrcp, nmsoffer, nmsofferspace, xtkoption, xtkfolder TO user;
+     grant DELETE, INSERT, UPDATE ON nmspropositionrcp TO user;
+     ```
+
    >[!NOTE]
    >
    >IP-adressen för kontrollinstansen måste auktoriseras för körningsinstanserna.
@@ -117,9 +118,9 @@ På kontrollinstanserna:
    * Lägg till listan med körningsinstanser.
    * För var och en av dem anger du synkroniseringsperiod och filtervillkor (till exempel per land).
 
-      >[!NOTE]
-      >
-      >Om du råkar ut för ett fel kan du läsa arbetsflödena för synkronisering och visa meddelanden. Dessa finns i programmets tekniska arbetsflöden.
+     >[!NOTE]
+     >
+     >Om du råkar ut för ett fel kan du läsa arbetsflödena för synkronisering och visa meddelanden. Dessa finns i programmets tekniska arbetsflöden.
 
 Om bara en del av marknadsföringsdatabasen dupliceras på körningsinstanserna av optimeringsskäl kan du ange ett begränsat schema som är länkat till miljön, så att användarna bara kan använda data som är tillgängliga på körningsinstanserna. Du kan skapa ett erbjudande med data som inte är tillgängliga för körningsinstanser. Om du vill göra det måste du inaktivera regeln för de andra kanalerna genom att begränsa den här regeln för den utgående kanalen (**[!UICONTROL Taken into account if]** fält).
 
@@ -133,13 +134,13 @@ Här är en lista över underhållsalternativ som är tillgängliga för kontrol
 >
 >Dessa alternativ får endast användas för särskilda underhållsfall.
 
-* **`NmsInteraction_LastOfferEnvSynch_<offerEnvId>_<executionInstanceId>`**: det senaste datumet då en miljö synkroniserades på en viss instans.
-* **`NmsInteraction_LastPropositionSynch_<propositionSchema>_<executionInstanceIdSource>_<executionInstanceIdTarget>`**: det senaste datumet som förslag från ett givet schema synkroniserades från en instans till en annan.
-* **`NmsInteraction_MapWorkflowId`**: ett alternativ med en lista över alla synkroniseringsarbetsflöden som genereras.
+* **`NmsInteraction_LastOfferEnvSynch_<offerEnvId>_<executionInstanceId>`**: det senaste datumet då en miljö synkroniserades på en given instans.
+* **`NmsInteraction_LastPropositionSynch_<propositionSchema>_<executionInstanceIdSource>_<executionInstanceIdTarget>`**: sista datumet som förslag från ett givet schema synkroniserades från en instans till en annan.
+* **`NmsInteraction_MapWorkflowId`**: ett alternativ som innehåller en lista över alla genererade synkroniseringsarbetsflöden.
 
 Följande alternativ är tillgängligt för körningsinstanser:
 
-**NmsExecutionInstanceId**: som innehåller instans-ID:t.
+**NmsExecutionInstanceId**: som innehåller instans-ID.
 
 ### Paketinstallation {#packages-installation}
 

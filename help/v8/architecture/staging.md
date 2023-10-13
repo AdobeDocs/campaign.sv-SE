@@ -1,11 +1,11 @@
 ---
 title: Mellanlagringsmekanism för kampanj-API
 description: Mellanlagringsmekanism för kampanj-API
-feature: API, FFDA
+feature: Configuration, API, FFDA
 role: Developer
 level: Beginner, Intermediate, Experienced
 exl-id: 96693af9-50db-4298-ae02-c238d35e52b4
-source-git-commit: 2ce1ef1e935080a66452c31442f745891b9ab9b3
+source-git-commit: 1a0b473b005449be7c846225e75a227f6d877c88
 workflow-type: tm+mt
 source-wordcount: '315'
 ht-degree: 2%
@@ -14,7 +14,7 @@ ht-degree: 2%
 
 # Mellanlagringsmekanism för kampanj-API
 
-När det gäller [Företagsdistribution (FFDA)](enterprise-deployment.md), rekommenderas inte suddiga enhetsanrop när det gäller prestanda (fördröjning och samtidighet). Grupperingsåtgärd är alltid att föredra. För att förbättra prestandan omdirigeras API:er för inmatning till den lokala databasen.
+När det gäller en [Företagsdistribution (FFDA)](enterprise-deployment.md), rekommenderas inte suddiga enhetsanrop när det gäller prestanda (fördröjning och samtidighet). Grupperingsåtgärd rekommenderas alltid. För att förbättra prestandan omdirigeras API:er för inmatning till den lokala databasen.
 
 Kampanjmellanlagring är aktiverat som standard för vissa inbyggda scheman. Vi kan även aktivera det i alla anpassade scheman. Mellanlagringsmekanism i ett nötskal:
 
@@ -33,8 +33,7 @@ API:er för Campaign Classic v7 är fortfarande tillgängliga men kan inte utnyt
 >* Mellanlagring gäller endast för scheman som lagras i molndatabasen. Aktivera inte mellanlagring för replikerade scheman. Aktivera inte Mellanlagring för lokala scheman. Aktivera inte mellanlagring på ett mellanlagrat schema
 >
 
-
-## Implementeringssteg{#implement-staging}
+## Implementeringssteg {#implement-staging}
 
 Följ stegen nedan för att implementera Campaign-mellanlagringsmekanismen för en specifik tabell:
 

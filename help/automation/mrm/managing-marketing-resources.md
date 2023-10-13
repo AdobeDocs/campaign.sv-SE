@@ -2,9 +2,10 @@
 product: campaign
 title: Hantera marknadsföringsresurser
 description: Lär dig hantera marknadsföringsresurser
+feature: Campaigns, Resource Management
 role: User
 exl-id: 4d91fb7d-f846-4644-b83d-5a6a988ae297
-source-git-commit: 567c2e84433caab708ddb9026dda6f9cb717d032
+source-git-commit: 1a0b473b005449be7c846225e75a227f6d877c88
 workflow-type: tm+mt
 source-wordcount: '1111'
 ht-degree: 1%

@@ -1,11 +1,11 @@
 ---
 title: Nyckelhantering i Campaign
 description: Kom igång med nyckelhantering
-feature: FFDA
+feature: Configuration, FFDA
 role: Developer
 level: Beginner, Intermediate, Experienced
 exl-id: ef06cb6b-1b25-4dbe-8fd0-f880ec9d645b
-source-git-commit: b71197027d9521fd648a0c2657b6b76a1aa7fc9a
+source-git-commit: 1a0b473b005449be7c846225e75a227f6d877c88
 workflow-type: tm+mt
 source-wordcount: '549'
 ht-degree: 0%
@@ -14,9 +14,9 @@ ht-degree: 0%
 
 # Nyckelhantering och unicitet {#key-management}
 
-När det gäller [Företagsdistribution (FFDA)](enterprise-deployment.md)primärnyckeln är en UUID (Universally Unique IDentifier) som är en teckensträng. För att skapa detta UUID måste schemats huvudelement innehålla **autouuid** och **autopk** attribut inställda på **true**.
+När det gäller en [Företagsdistribution (FFDA)](enterprise-deployment.md)primärnyckeln är en UUID (Universally Unique IDentifier) som är en teckensträng. För att skapa detta UUID måste schemats huvudelement innehålla **autouuid** och **autopk** attribut inställda på **true**.
 
-Adobe Campaign v8 använder [!DNL Snowflake] som kärndatabas. Den distribuerade arkitekturen för [!DNL Snowflake] databasen har ingen mekanism som säkerställer att en nyckel i en tabell är unik: slutanvändarna ansvarar för att Adobe Campaign-databasen är konsekvent.
+Adobe Campaign v8 använder [!DNL Snowflake] som kärndatabas. Den distribuerade arkitekturen för [!DNL Snowflake] databasen har ingen mekanism som säkerställer att en nyckel i en tabell är unik: slutanvändarna ansvarar för nyckelkonsekvens i Adobe Campaign-databasen.
 
 För att relationsdatabasens enhetlighet ska bevaras är det obligatoriskt att undvika dubbletter av nycklar, särskilt på primärnycklar. Dubbletter av primärnycklar leder till problem med arbetsflödesaktiviteter för datahantering, som **Fråga**, **Avstämning**, **Uppdatera data**, med mera. Detta är viktigt för att definiera korrekta avstämningskriterier vid uppdatering [!DNL Snowflake] tabeller.
 
@@ -50,7 +50,7 @@ Som databasadministratör kan du använda en SQL-aktivitet för att ta bort dubb
 
 ### Varningar{#unicity-wf-alerting}
 
-Ett specifikt meddelande skickas till **[!UICONTROL Workflow Supervisors]** när dubblettnycklar identifieras. Innehållet och målgruppen för den här aviseringen kan ändras i **Varning** verksamhet **[!UICONTROL Unicity alerting]** arbetsflöde.
+Ett specifikt meddelande skickas till **[!UICONTROL Workflow Supervisors]** när dubblettnycklar identifieras. Innehållet och målgruppen för den här aviseringen kan ändras i **Varning** verksamhet som **[!UICONTROL Unicity alerting]** arbetsflöde.
 
 ![](assets/wf-alert-activity.png)
 
@@ -61,17 +61,17 @@ Campaign innehåller en uppsättning nya skyddsritningar för att förhindra att
 
 >[!NOTE]
 >
->Dessa skyddsförslag är tillgängliga från och med Campaign v8.3. Om du vill kontrollera din version kan du läsa [det här avsnittet](../start/compatibility-matrix.md#how-to-check-your-campaign-version-and-buildversion)
+>Dessa skyddsförslag är tillgängliga från och med Campaign v8.3. Om du vill kontrollera versionen läser du [det här avsnittet](../start/compatibility-matrix.md#how-to-check-your-campaign-version-and-buildversion)
 
 ### Förberedelse av leverans{#remove-duplicates-delivery-preparation}
 
-Adobe Campaign tar automatiskt bort alla dubbletter av UUID från en målgrupp när leveransen förbereds. Den här mekanismen förhindrar att fel inträffar när en leverans förbereds. Som slutanvändare kan du kontrollera den här informationen i leveransloggarna: vissa mottagare kan uteslutas från huvudmålet på grund av en duplicerad nyckel. I så fall visas följande varning: `Exclusion of duplicates (based on the primary key or targeted records)`.
+Adobe Campaign tar automatiskt bort alla dubbletter av UUID från en målgrupp när leveransen förbereds. Den här mekanismen förhindrar att fel inträffar när en leverans förbereds. Som slutanvändare kan du kontrollera den här informationen i leveransloggarna: vissa mottagare kan uteslutas från huvudmålet på grund av dubblettnyckeln. I så fall visas följande varning: `Exclusion of duplicates (based on the primary key or targeted records)`.
 
 ![](assets/exclusion-duplicates-log.png)
 
 ### Uppdatera data i ett arbetsflöde{#duplicates-update-data}
 
-När det gäller [Företagsdistribution (FFDA)](enterprise-deployment.md)kan du inte välja en intern nyckel (UUID) som fält för att uppdatera data i ett arbetsflöde.
+När det gäller en [Företagsdistribution (FFDA)](enterprise-deployment.md)kan du inte välja en intern nyckel (UUID) som fält för att uppdatera data i ett arbetsflöde.
 
 ![](assets/update-data-no-internal-key.png)
 

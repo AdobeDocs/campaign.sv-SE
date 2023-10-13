@@ -1,18 +1,18 @@
 ---
 title: Kontrollpanelen i Campaign
 description: Kom igång med Campaign Control Panel
-feature: Control Panel
+feature: Control Panel, Monitoring
 role: User, Admin
 level: Beginner, Intermediate
 exl-id: b8aa89ac-19f4-4df3-9f36-860aca61bea3
-source-git-commit: 65f4da979f0c5884797af0c3a835d948672b4a7c
+source-git-commit: 1a0b473b005449be7c846225e75a227f6d877c88
 workflow-type: tm+mt
 source-wordcount: '380'
-ht-degree: 62%
+ht-degree: 64%
 
 ---
 
-# Kontrollpanelen i Campaign
+# Kontrollpanelen i Campaign {#ac-control-panel}
 
 Med Campaign Control Panel kan ni effektivisera arbetet som produktadministratör för Adobe Campaign genom att hantera inställningar och spåra användningen för var och en av instanserna. Det intuitiva gränssnittet låter dig enkelt övervaka användningen av nyckelresurser och utföra administrativa uppgifter såsom att lägga till IP-adresser i tillåtelselistan, övervaka SFTP-lagring, hantera nycklar och mycket annat.
 
@@ -26,19 +26,19 @@ Du kan också använda Campaign-kontrollpanelen för att konfigurera instansinst
 
 ![](../assets/do-not-localize/book.png) Läs mer i [Dokumentation för Campaign Control Panel](https://experienceleague.adobe.com/docs/control-panel/using/control-panel-home.html?lang=sv){target="_blank"}.
 
-## Hur kommer jag åt Kontrollpanelen?
+## Hur kommer jag åt Kontrollpanelen? {#ac-control-panel-access}
 
 Kontrollpanelen är tillgänglig direkt från Adobe Experience Cloud. Den är endast tillgänglig för administratörsanvändare. [Klicka här](https://experienceleague.adobe.com/docs/control-panel/using/discover-control-panel/accessing-control-panel.html?lang=sv){target="_blank"} för mer information.
 
-## Vanliga frågor och svar om Kontrollpanelen
+## Vanliga frågor och svar om Kontrollpanelen {#ac-control-faq}
 
 [Klicka här](https://experienceleague.adobe.com/docs/control-panel/using/faq.html#control-panel){target="_blank"} för att läsa vanliga frågor och svar om Kontrollpanelen i Campaign.
 
-## SFTP-hantering
+## SFTP-hantering {#ac-control-sftp}
 
-På Kontrollpanelen kan du interagera med alla SFTP-servrar som är anslutna till Campaign-instanser som du har tillgång till. Du kan övervaka deras lagringskapacitet och hantera IP-adresser på tillåtelselistan och offentliga SSH-nycklar. [Klicka här](https://experienceleague.adobe.com/docs/control-panel/using/sftp-management/about-sftp-management.html#sftp-management){target="_blank"} för mer information.
+På Kontrollpanelen kan du interagera med alla SFTP-servrar som är anslutna till Campaign-instanser som du har tillgång till. Du kan övervaka deras lagringskapacitet och hantera IP-adresser på tillåtelselistan och offentliga SSH-nycklar. [Klicka här](https://experienceleague.adobe.com/docs/control-panel/using/sftp-management/about-sftp-management.html?lang=sv#sftp-management){target="_blank"} för mer information.
 
-## Underdomäner och certifikat
+## Underdomäner och certifikat {#ac-control-subdomain}
 
 Läs om hur man övervakar underdomäner och deras certifikat.
 

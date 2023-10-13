@@ -1,11 +1,11 @@
 ---
-title: Arbeta med Campaign-scheman
+title: Arbeta med kampanjscheman
 description: Kom igång med scheman
-feature: Schema Extension
+feature: Schema Extension, Configuration, Data Model
 role: Developer
 level: Intermediate, Experienced
 exl-id: 87af72fe-6c84-4d9a-afed-015900890cce
-source-git-commit: 65f4da979f0c5884797af0c3a835d948672b4a7c
+source-git-commit: 1a0b473b005449be7c846225e75a227f6d877c88
 workflow-type: tm+mt
 source-wordcount: '1262'
 ht-degree: 4%
@@ -88,13 +88,13 @@ Vissa namnutrymmen är reserverade för beskrivningar av de systemenheter som kr
 
 * **xxl**: reserverat för Cloud-databasscheman
 * **xtk**: reserverad för plattformssystemdata
-* **nl**: reserverad för den övergripande användningen av programmet
+* **nl**: reserverad för programmets övergripande användning
 * **nms**: reserverat för leveranser (mottagare, leverans, spårning osv.)
-* **ncm**: reserverad för innehållshantering
+* **ncm**: reserverat för innehållshantering
 * **temp**: reserverat för temporära scheman
 * **crm**: reserverad för integrering av CRM-anslutningar
 
-Identifieringsnyckeln för ett schema är en sträng som byggts med namnutrymmet och namnet avgränsat med ett kolon. till exempel: **nms:mottagare**.
+Identifieringsnyckeln för ett schema är en sträng som skapats med namnutrymmet och namnet avgränsat med ett kolon, till exempel: **nms:mottagare**.
 
 ## Skapa eller utöka kampanjscheman {#create-or-extend-schemas}
 
@@ -184,7 +184,7 @@ Exempel:
 </key>
 ```
 
-I det här exemplet ska du i stället för att låta **@autopk** eller **@autouuid** för att skapa en standardprimärnyckel med namnet&quot;id&quot; anger vi vår egen primärnyckel för&quot;houseid&quot;.
+I det här exemplet ska du inte låta **@autopk** eller **@autouuid** för att skapa en standardprimärnyckel med namnet&quot;id&quot; anger vi vår egen primärnyckel för&quot;houseid&quot;.
 
 >[!CAUTION]
 >
@@ -198,9 +198,9 @@ Med attribut kan du definiera fälten som utgör dataobjektet. Du kan använda *
 
 ![](assets/schemaextension_2.png)
 
-Den fullständiga listan med attribut finns i `<attribute>` elementavsnitt i [Campaign Classic v7-dokumentation](https://experienceleague.adobe.com/docs/campaign-classic/using/configuring-campaign-classic/schema-reference/elements-attributes/attribute.html#content-model). Här är några av de vanligaste attributen: **@advanced**, **@dataPolicy**, **@default**, **@desc**, **@enum**, **@expr**, **@label**, **@length**, **@name**, **@notNull**, **@required**, **@ref**, **@xml**, **@type**.
+Den fullständiga listan med attribut finns i `<attribute>` elementavsnitt i [Campaign Classic v7 - dokumentation](https://experienceleague.adobe.com/docs/campaign-classic/using/configuring-campaign-classic/schema-reference/elements-attributes/attribute.html#content-model). Här är några av de vanligaste attributen: **@advanced**, **@dataPolicy**, **@default**, **@desc**, **@enum**, **@expr**, **@label**, **@length**, **@name**, **@notNull**, **@required**, **@ref**, **@xml**, **@type**.
 
-![](../assets/do-not-localize/book.png) Mer information om respektive attribut finns i attributbeskrivningen i [Campaign Classic v7-dokumentation](https://experienceleague.adobe.com/docs/campaign-classic/using/configuring-campaign-classic/schema-reference/elements-attributes/schema-introduction.html#configuring-campaign-classic).
+![](../assets/do-not-localize/book.png) Mer information om respektive attribut finns i attributbeskrivningen i [Campaign Classic v7 - dokumentation](https://experienceleague.adobe.com/docs/campaign-classic/using/configuring-campaign-classic/schema-reference/elements-attributes/schema-introduction.html#configuring-campaign-classic).
 
 ### Exempel {#examples}
 

@@ -1,11 +1,11 @@
 ---
-title: Kom igång med Campaign FDA-Snowflake-driftsättning
-description: Kom igång med Campaign FDA-Snowflake-driftsättning
-feature: Overview
+title: Kom igång med Campaign FDA-Snowflake-distribution
+description: Kom igång med Campaign FDA-Snowflake-distribution
+feature: Architecture, Federated Data Access, Deployment
 role: Admin, Developer, User
 level: Beginner
 exl-id: b3df0336-f40e-4ac1-b6a4-068b8827dca2
-source-git-commit: 2ce1ef1e935080a66452c31442f745891b9ab9b3
+source-git-commit: 1a0b473b005449be7c846225e75a227f6d877c88
 workflow-type: tm+mt
 source-wordcount: '297'
 ht-degree: 0%
@@ -14,7 +14,7 @@ ht-degree: 0%
 
 # [!DNL Campaign] FDA [!DNL Snowflake] distribution{#gs-fda-snowflake}
 
-I en [!DNL Snowflake] FDA-distribution (standard), [!DNL Adobe Campaign] v8 är ansluten till [!DNL Snowflake] få tillgång till data via [Åtkomst till federerade data](../connect/fda.md) kapacitet: kan du komma åt och bearbeta externa data och information som lagras i [!DNL Snowflake] utan att ändra strukturen på Adobe Campaign-data.
+I en [!DNL Snowflake] FDA-distribution (standard), [!DNL Adobe Campaign] v8 är ansluten till [!DNL Snowflake] få tillgång till data via [Åtkomst till federerade data](../connect/fda.md) funktion: du kan komma åt och bearbeta externa data och information som lagras i [!DNL Snowflake] utan att ändra strukturen på Adobe Campaign-data.
 
 ## Fördelar{#fda-benefits}
 
@@ -26,7 +26,7 @@ Du kan flytta dina historiska data till [!DNL Snowflake] och sedan minska beroen
 * **Datamodelltillägg och datahantering**
 Du kan skapa tabeller i [!DNL Snowflake] och länka dem till Adobe Campaign, t.ex. för att använda arkiverade data under kvarhållningsperioder, eller för segmenteringsprocesser med enastående prestanda.
 
-   Med den här arkitekturen kan du även använda arbetsflödesfunktioner för datahantering i [!DNL Snowflake]. Endast aggregat och tillfälliga register flyttas till Campaign för personalisering och leverans.
+  Med den här arkitekturen kan du även använda arbetsflödesfunktioner för datahantering i [!DNL Snowflake]. Endast aggregat och tillfälliga register flyttas till Campaign för personalisering och leverans.
 
 
 ## Arkitektur{#fda-archi}

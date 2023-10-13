@@ -1,11 +1,11 @@
 ---
 title: Nya Campaign v8-API:er
 description: Nya Campaign v8-API:er
-feature: API, FFDA
+feature: Architecture, API, FFDA
 role: Developer
 level: Beginner, Intermediate, Experienced
 exl-id: dd822f88-b27d-4944-879c-087f68e79825
-source-git-commit: 2ce1ef1e935080a66452c31442f745891b9ab9b3
+source-git-commit: 1a0b473b005449be7c846225e75a227f6d877c88
 workflow-type: tm+mt
 source-wordcount: '435'
 ht-degree: 2%
@@ -14,15 +14,15 @@ ht-degree: 2%
 
 # Specifika FFDA Campaign-API:er{#gs-new-api}
 
-När det gäller [Företagsdistribution (FFDA)](enterprise-deployment.md), Campaign v8 har två specifika API:er för att hantera data mellan Campaign-databasen och molndatabasen. Förutsättningar för att använda dem är att aktivera mellanlagringsmekanismen i schemat. [Läs mer](staging.md)
+När det gäller en [Företagsdistribution (FFDA)](enterprise-deployment.md), Campaign v8 har två specifika API:er för att hantera data mellan Campaign-databasen och molndatabasen. Förutsättningar för att använda dem är att aktivera mellanlagringsmekanismen i schemat. [Läs mer](staging.md)
 
 * Ing-API: **xtk.session.ingest**
 
-   Detta API är endast avsett för datainmatning. [Läs mer](#data-insert-api)
+  Detta API är endast avsett för datainmatning. [Läs mer](#data-insert-api)
 
 * API för datauppdatering/borttagning: **xtk.session.ingestExt**
 
-   Detta API används för att uppdatera eller ta bort data. [Läs mer](#data-update-api)
+  Detta API används för att uppdatera eller ta bort data. [Läs mer](#data-update-api)
 
 Ett dedikerat inbyggt arbetsflöde synkroniserar data i molndatabasen.
 
@@ -131,7 +131,7 @@ När arbetsflödet har körts matas mellanlagringstabellen som förväntat.
    </soapenv:Envelope>
    ```
 
-1. I det här fallet skickas inte UUID tillbaka till svaret eftersom det har angetts i nyttolasten. Svaret är:
+1. I det här fallet skickas inte UUID tillbaka till svaret eftersom det har angetts i nyttolasten. Svar:
 
    ```
    <SOAP-ENV:Envelope xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ns="urn:wpp:default" xmlns:SOAP-ENV="http://schemas.xmlsoap.org/soap/envelope/">
@@ -207,7 +207,7 @@ Därför uppdateras mellanlagringstabellen som förväntat.
 
 Prenumerationshantering i Campaign beskrivs i [den här sidan](../start/subscriptions.md).
 
-Inläggning av prenumerations- och avprenumerationsdata bygger på [Mellanlagringsmekanism](staging.md) i Campaign-databasen. Prenumerationsinformation lagras tillfälligt i mellanlagringstabeller i den lokala databasen och synkroniseringsarbetsflödet skickar dessa data från den lokala databasen till molndatabasen. Som en följd av detta är prenumerations- och avabonnemangsprocesserna **asynkron**. Begäranden om anmälan och avanmälan behandlas varje timme via ett specifikt tekniskt arbetsflöde. [Läs mer](replication.md#tech-wf)
+Inläggning av prenumerations- och avprenumerationsdata bygger på [Mellanlagringsmekanism](staging.md) i Campaign-databasen. Prenumerationsinformation lagras tillfälligt i mellanlagringstabeller i den lokala databasen och synkroniseringsarbetsflödet skickar dessa data från den lokala databasen till molndatabasen. Som en följd av detta är prenumerations- och avabonnemangsprocesserna **asynkron**. Begäranden om avanmälan och avanmälan behandlas varje timme via ett specifikt tekniskt arbetsflöde. [Läs mer](replication.md#tech-wf)
 
 
 **Relaterade ämnen**

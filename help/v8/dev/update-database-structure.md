@@ -1,17 +1,18 @@
 ---
 title: Uppdatera databasstrukturen
 description: Uppdatera databasstrukturen
+feature: Configuration
 role: Developer
 level: Intermediate, Experienced
 exl-id: fc64f3ca-67f1-47b7-b154-9c9dd044192c
-source-git-commit: 6464e1121b907f44db9c0c3add28b54486ecf834
+source-git-commit: 1a0b473b005449be7c846225e75a227f6d877c88
 workflow-type: tm+mt
 source-wordcount: '92'
 ht-degree: 0%
 
 ---
 
-# Uppdatera databasstrukturen{#updating-the-database-structure}
+# Uppdatera databasstrukturen {#updating-the-database-structure}
 
 Om du vill använda ändringarna i scheman startar du guiden Databasuppdatering. Den här assistenten är tillgänglig via **[!UICONTROL Tools > Advanced > Update database structure]**. Den kontrollerar om databasens fysiska struktur matchar dess logiska beskrivning och kör SQL-uppdateringsskripten.
 

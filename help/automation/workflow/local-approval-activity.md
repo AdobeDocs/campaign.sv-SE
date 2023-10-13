@@ -2,10 +2,10 @@
 product: campaign
 title: Använda den lokala godkännandeaktiviteten
 description: Lär dig hur du använder den lokala godkännandeaktiviteten
-feature: Workflows
+feature: Workflows, Approvals
 role: User
 exl-id: 31089026-3fc0-4491-8b70-0fb7fd1e3ac0
-source-git-commit: 567c2e84433caab708ddb9026dda6f9cb717d032
+source-git-commit: 1a0b473b005449be7c846225e75a227f6d877c88
 workflow-type: tm+mt
 source-wordcount: '1270'
 ht-degree: 2%

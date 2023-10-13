@@ -1,18 +1,18 @@
 ---
 title: Arbeta med Campaign och Adobe Experience Manager
-description: Lär dig hur du arbetar med Campaign och Adobe Experience Manager
+description: Lär dig arbeta med Campaign och Adobe Experience Manager
 feature: Experience Manager Integration
 role: Admin, User
 level: Beginner, Intermediate
 exl-id: e83893f7-a8be-48a3-a7a6-aced7b4d4f69
-source-git-commit: 65f4da979f0c5884797af0c3a835d948672b4a7c
+source-git-commit: 1a0b473b005449be7c846225e75a227f6d877c88
 workflow-type: tm+mt
 source-wordcount: '158'
 ht-degree: 0%
 
 ---
 
-# Arbeta med Campaign och Adobe Experience Manager
+# Arbeta med Campaign och Adobe Experience Manager {#ac-aem}
 
 Tack vare integrationen mellan Adobe Campaign och Adobe Experience Manager kan ni hantera innehållet i era e-postleveranser och era formulär direkt i Adobe Experience Manager.
 
@@ -24,4 +24,4 @@ Det innebär att du får ut det mesta av både Adobe Experience Manager innehål
 
 ![](../assets/do-not-localize/book.png) [Upptäck den här integreringen i det här kompletta exemplet](https://experienceleague.adobe.com/docs/campaign-classic/using/integrating-with-adobe-experience-cloud/adobe-experience-manager/creating-an-experience-manager-newsletter.html#integrating-with-adobe-experience-cloud)
 
-![](../assets/do-not-localize/speech.png)  Som användare av hanterade Cloud Services [kontakta Adobe](../start/campaign-faq.md#support) för att integrera Adobe Experience Manager med Campaign.
+![](../assets/do-not-localize/speech.png)  Som användare av hanterade Cloud Service [kontakta Adobe](../start/campaign-faq.md#support) för att integrera Adobe Experience Manager med Campaign.

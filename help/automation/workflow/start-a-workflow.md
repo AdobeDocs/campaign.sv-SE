@@ -3,9 +3,10 @@ product: campaign
 title: Starta ett arbetsflöde
 description: Lär dig hur du startar ett arbetsflöde och identifierar arbetsflöden, verktygsfältet och högerklicksmenyn
 feature: Workflows
+level: Beginner
 role: User, Admin
 exl-id: 6d9789e3-d721-4ffd-b3fb-a0c522ab1c0a
-source-git-commit: d4e28ddf6081881f02042416aa8214761ea42be9
+source-git-commit: 1a0b473b005449be7c846225e75a227f6d877c88
 workflow-type: tm+mt
 source-wordcount: '1065'
 ht-degree: 0%

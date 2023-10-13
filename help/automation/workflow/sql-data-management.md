@@ -3,8 +3,10 @@ product: campaign
 title: SQL-datahantering
 description: Läs mer om arbetsflödesaktiviteten för SQL Data Management
 feature: Workflows
+Role: User
+Level: Experienced
 exl-id: a1e08d57-0387-4802-b447-f6d9ad87072a
-source-git-commit: 77ec01aaba1e50676bed57f503a9e4e8bb1fe54c
+source-git-commit: 1a0b473b005449be7c846225e75a227f6d877c88
 workflow-type: tm+mt
 source-wordcount: '366'
 ht-degree: 1%
@@ -36,7 +38,7 @@ Innan du konfigurerar aktiviteten bör du kontrollera att följande krav är upp
 
    >[!CAUTION]
    >
-   >Det är SQL-skriptets skrivares ansvar att se till att SQL-skriptet fungerar och att dess referenser (fältnamn, etc.) är i enlighet med det utgående schemat.
+   >Det är SQL-skriptets skrivares ansvar att se till att SQL-skriptet fungerar och att dess referenser (fältnamn, etc.) är i enlighet med utgående schema.
 
    Om du vill läsa in en befintlig SQL-kod väljer du **[!UICONTROL The SQL script is contained in an entity stored in the database]** alternativ. SQL-skript måste skapas och lagras i **[!UICONTROL Administration]** / **[!UICONTROL Configuration]** / **[!UICONTROL SQL scripts]** -menyn.
 
@@ -47,11 +49,11 @@ Innan du konfigurerar aktiviteten bör du kontrollera att följande krav är upp
    Med aktiviteten kan du använda följande variabler i skriptet:
 
    * **activity.tableName**: SQL-namn för utgående arbetstabell.
-   * **task.inkommandeTransitionByName(&quot;name&quot;).tableName**: SQL-namn för arbetsregistret som medföljer den inkommande övergången som ska användas (övergången identifieras med sitt namn).
+   * **task.inkommandeTransitionByName(&#39;name&#39;).tableName**: SQL-namn på arbetsregistret som medföljer den inkommande övergången som ska användas (övergången identifieras med sitt namn).
 
-      >[!NOTE]
-      >
-      >Värdet (&#39;name&#39;) motsvarar värdet **[!UICONTROL Name]** från övergångsegenskaperna.
+     >[!NOTE]
+     >
+     >Värdet (&#39;name&#39;) motsvarar värdet **[!UICONTROL Name]** -fält från övergångsegenskaperna.
 
 1. Om SQL-skriptet redan innehåller kommandon för att skapa en utgående arbetstabell avmarkerar du **[!UICONTROL Automatically create work table]** alternativ. I annat fall skapas en arbetstabell automatiskt när arbetsflödet körs.
 1. Klicka **[!UICONTROL Ok]** för att bekräfta aktivitetskonfigurationen.

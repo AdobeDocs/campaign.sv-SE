@@ -1,17 +1,18 @@
 ---
 title: Anpassa instansen
 description: Lär dig hur du anpassar instansen
+feature: Configuration, Application Settings
 role: Developer
 level: Beginner, Intermediate, Experienced
 exl-id: 18000763-5923-48bd-b62d-cccd3c11016d
-source-git-commit: 65f4da979f0c5884797af0c3a835d948672b4a7c
+source-git-commit: 1a0b473b005449be7c846225e75a227f6d877c88
 workflow-type: tm+mt
 source-wordcount: '483'
 ht-degree: 7%
 
 ---
 
-# Anpassa instansen{#gs-ac-custom}
+# Anpassa instansen {#gs-ac-custom}
 
 Lär dig hur **Anpassa Campaign-instansen**.
 
@@ -19,7 +20,7 @@ Lär dig hur **Anpassa Campaign-instansen**.
 >
 >Adobe Campaign-anpassning är förbehållet expertanvändare.
 
-## Skapa nya datafält och scheman
+## Skapa nya datafält och diagram
 
 Adobe Campaign använder datascheman för att
 
@@ -33,19 +34,19 @@ Två tabelltilläggslägen är tillgängliga:
 
 * Genom gränssnittet med **Nytt fält** assistent
 
-   Lär dig hur du snabbt lägger till ett nytt fält i Campaign i [Campaign Classic v7-dokumentation](https://experienceleague.adobe.com/docs/campaign-classic/using/configuring-campaign-classic/editing-schemas/new-field-wizard.html#configuring-campaign-classic){target="_blank"}
+  Lär dig hur du snabbt lägger till ett nytt fält i Campaign i [Campaign Classic v7 - dokumentation](https://experienceleague.adobe.com/docs/campaign-classic/using/configuring-campaign-classic/editing-schemas/new-field-wizard.html#configuring-campaign-classic){target="_blank"}
 
 * Programmatiskt genom att utöka schemat. Lär dig hur du utökar ett befintligt schema i [det här avsnittet](../dev/extend-schema.md).
 
 Du kan också skapa nya tabeller i Campaign-databasen och utöka den inbyggda datamodellen.
 
-Om du vill lägga till en helt ny typ av data som inte finns i körklart läge i Adobe Campaign (till exempel en kontraktstabell) kan du skapa ett anpassat schema direkt. Mer information finns i [det här exemplet](../dev/create-schema.md#example--creating-a-contract-table).
+Om du vill lägga till en helt ny typ av data som inte finns i körklart läge i Adobe Campaign (till exempel en kontraktstabell) kan du skapa ett anpassat schema direkt. Mer information finns i [detta exempel](../dev/create-schema.md#example--creating-a-contract-table).
 
 **Relaterade ämnen**
 
-![](../assets/do-not-localize/book.png) Exempel på schemautgåva i [Campaign Classic v7-dokumentation](https://experienceleague.adobe.com/docs/campaign-classic/using/configuring-campaign-classic/editing-schemas/examples-of-schemas-edition.html#configuring-campaign-classic){target="_blank"}
+![](../assets/do-not-localize/book.png) Exempel på schemautgåva i [Campaign Classic v7 - dokumentation](https://experienceleague.adobe.com/docs/campaign-classic/using/configuring-campaign-classic/editing-schemas/examples-of-schemas-edition.html#configuring-campaign-classic){target="_blank"}
 
-![](../assets/do-not-localize/book.png) Användningsfall: länka ett fält till en befintlig referenstabell i [Campaign Classic v7-dokumentation](https://experienceleague.adobe.com/docs/campaign-classic/using/configuring-campaign-classic/editing-schemas/examples-of-schemas-edition.html#uc-link){target="_blank"}
+![](../assets/do-not-localize/book.png) Använd skiftläge: länka ett fält till en befintlig referenstabell i [Campaign Classic v7 - dokumentation](https://experienceleague.adobe.com/docs/campaign-classic/using/configuring-campaign-classic/editing-schemas/examples-of-schemas-edition.html#uc-link){target="_blank"}
 
 
 ## Ändra indataformulären
@@ -60,7 +61,7 @@ Adobe Campaign gränssnitt använder många webbprogram för att få åtkomst ti
 
 De inbyggda webbprogrammen lagras i **Administration > Konfiguration > Webbprogram** i Utforskaren.
 
-Lär dig hur du skapar en översiktssida i Campaign i [Campaign Classic v7-dokumentation](https://experienceleague.adobe.com/docs/campaign-classic/using/designing-content/web-applications/use-cases--creating-overviews.html#creating-a-single-page-web-application){target="_blank"}
+Lär dig hur du skapar en översiktssida i Campaign i [Campaign Classic v7 - dokumentation](https://experienceleague.adobe.com/docs/campaign-classic/using/designing-content/web-applications/use-cases--creating-overviews.html#creating-a-single-page-web-application){target="_blank"}
 
 
 ## Anpassa listor och skapa filter {#gs-lists-and-filters}

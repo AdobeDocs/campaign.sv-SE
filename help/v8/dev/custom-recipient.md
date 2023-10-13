@@ -1,11 +1,11 @@
 ---
 title: Ändra standardmottagartabellen
-description: Lär dig hur du använder en anpassad mottagartabell
-feature: Custom Resources, Profiles
+description: Lär dig använda en anpassad mottagartabell
+feature: Custom Resources, Profiles, Configuration
 role: User, Developer
 level: Beginner, Intermediate, Experienced
 exl-id: 0b71c76b-03d9-4023-84fc-3ecc0df9261b
-source-git-commit: 2ce1ef1e935080a66452c31442f745891b9ab9b3
+source-git-commit: 1a0b473b005449be7c846225e75a227f6d877c88
 workflow-type: tm+mt
 source-wordcount: '134'
 ht-degree: 3%
@@ -18,4 +18,4 @@ Adobe Campaign har en inbyggd profiltabell: **nmsRecipient**. Den här tabellen 
 
 Inbyggt tabelltillägg ger flexibilitet, men det går inte att ta bort vissa oanvända fält eller länkar. Därför kan det vara bra att använda en anpassad mottagartabell när datamodellen skiljer sig avsevärt från den inbyggda mottagartabellstrukturen i Campaign eller om du har ett stort antal profiler.  Den här metoden kräver dock vissa försiktighetsåtgärder när den implementeras.
 
-![](../assets/do-not-localize/book.png) Lär dig hur du konfigurerar instansen att använda en anpassad mottagartabell i [Campaign Classic v7-dokumentation](https://experienceleague.adobe.com/docs/campaign-classic/using/configuring-campaign-classic/use-a-custom-recipient-table/about-custom-recipient-table.html){target="_blank"}.
+![](../assets/do-not-localize/book.png) Lär dig hur du konfigurerar instansen att använda en anpassad mottagartabell i [Campaign Classic v7 - dokumentation](https://experienceleague.adobe.com/docs/campaign-classic/using/configuring-campaign-classic/use-a-custom-recipient-table/about-custom-recipient-table.html){target="_blank"}.
