@@ -3,7 +3,7 @@ keywords: Campaign Classic;hem;populära ämnen
 description: Campaign v8 - hjälpcenter
 title: Adobe Campaign v8 - produktdokumentation
 exl-id: 6010b0f7-baf0-43ba-af9a-b8864f3897ea,9ff16fb1-d3d3-44fe-9016-15abffdbc74e
-source-git-commit: c42dfe96f1f18f1d9eab0a8761c1ea65479962b2
+source-git-commit: 8b1f8fe7f78440f1db1b518f1cca24a898dabddb
 workflow-type: tm+mt
 source-wordcount: '153'
 ht-degree: 18%
@@ -12,7 +12,7 @@ ht-degree: 18%
 
 # Adobe Campaign v8-dokumentation {#campaign-documentation}
 
-![](assets/banner-documentationv8.png)
+<!--![](assets/banner-documentationv8.png) -->
 
 ## Nyheter
 
