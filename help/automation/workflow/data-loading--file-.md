@@ -5,9 +5,9 @@ description: Läs mer om arbetsflödesaktiviteten Datainläsning (fil)
 feature: Workflows, Data Management Activity
 role: User
 exl-id: 10351620-115c-4bd8-b216-e5ad6f205ef3
-source-git-commit: 567c2e84433caab708ddb9026dda6f9cb717d032
+source-git-commit: d946d4a50a4fc13e848b22ee87b02a10b7dfd2ad
 workflow-type: tm+mt
-source-wordcount: '1037'
+source-wordcount: '1060'
 ht-degree: 14%
 
 ---
@@ -51,6 +51,10 @@ Du kan sedan ändra den allmänna formateringen för filen samt formateringen f�
 Med den allmänna filformateringen kan du definiera hur kolumnerna ska identifieras (filkodning, avgränsare, osv.).
 
 Med kolumnformateringen kan du definiera värdebearbetningen för varje kolumn:
+
+>[!NOTE]
+>
+>Du kan lägga till så många kolumner du vill. Den maximala värdelängden i varje kolumn bestäms av den valda datatypen.
 
 * **[!UICONTROL Ignore column]**: bearbetar inte den här kolumnen under datainläsning.
 * **[!UICONTROL Data type]**: Anger den typ av data som förväntas för varje kolumn.
