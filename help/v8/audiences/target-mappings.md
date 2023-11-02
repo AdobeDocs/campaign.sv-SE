@@ -1,13 +1,13 @@
 ---
 title: Arbeta med målmappningar
-description: Lär dig hur du använder och skapar målmappningar
+description: Lär dig använda och skapa målmappningar
 feature: Audiences, Profiles
 role: User, Developer
 level: Beginner, Intermediate
 exl-id: 5256fc15-1878-4064-9c75-7876a3826b83
-source-git-commit: db27abf860b0744a4120166c68e2cc2ae8a3d172
+source-git-commit: 4c787abbf9b13c08263e602930bc532d73e08a5a
 workflow-type: tm+mt
-source-wordcount: '366'
+source-wordcount: '379'
 ht-degree: 0%
 
 ---
@@ -24,18 +24,20 @@ Du kan använda andra målmappningar för leveranser eller skapa en ny målmappn
 
 Adobe Campaign innehåller följande inbyggda målmappningar:
 
-| Namn | Använd | Schema |
+| Namn | Använd för | Schema |
 |---|---|---|
 | Mottagare | Leverera till mottagare (inbyggd mottagartabell) | nms:mottagare |
-| Besökare | Ge besökare vars profiler har samlats in via hänskjutning (viral marketing) för ex. | mns:besökare |
+| Besökare | Leverera till besökare vars profiler har samlats in via hänskjutning (viral marketing) för ex. | mns:besökare |
 | Prenumerationer | Leverera till mottagare som prenumererar på en informationstjänst som ett nyhetsbrev | nms:prenumeration |
 | Prenumerationer på besökare | Skicka till besökare som prenumererar på en informationstjänst | nms:visitorSub |
 | Operatorer | Leverera till Adobe Campaign | nms:operator |
 | Extern fil | Leverera via en fil som innehåller all information som behövs för leveransen | Inget länkat schema, inget mål har angetts |
+| Prenumerationsprogram | Leverera till mottagare som prenumererar på ett program | nms:appSubscriptionRcp |
+
 
 ## Skapa en målmappning {#new-mapping}
 
-Du kan också skapa en målmappning. Du kan behöva lägga till en anpassad målmappning, till exempel om:
+Du kan också skapa en målmappning. Du kan behöva lägga till en anpassad målmappning om:
 
 * du använder en anpassad mottagartabell,
 * Du konfigurerar en filtreringsdimension som skiljer sig från den inbyggda måldimensionen på målmappningsskärmen.
@@ -51,7 +53,7 @@ Guiden Skapa målmappning för Adobe Campaign hjälper dig att skapa alla schema
    ![](assets/new-target-mapping.png)
 
 
-1. Ange fälten där profilinformationen lagras: efternamn, förnamn, e-postadress, adress osv.
+1. Ange fälten där profilinformationen lagras: efternamn, förnamn, e-postadress, etc.
 
    ![](assets/wf_new_mapping_define_join.png)
 
@@ -67,4 +69,4 @@ Guiden Skapa målmappning för Adobe Campaign hjälper dig att skapa alla schema
 
    ![](assets/wf_new_mapping_define_extensions.png)
 
-   Klicka på **[!UICONTROL Save]** knapp för att starta framtagning av leveransmappning: alla länkade tabeller skapas automatiskt baserat på de valda parametrarna.
+   Klicka på **[!UICONTROL Save]** för att starta framtagning av leveransmappning: alla länkade tabeller skapas automatiskt baserat på de valda parametrarna.
