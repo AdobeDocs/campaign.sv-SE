@@ -3,9 +3,9 @@ title: Koppla samman Campaign med era lösningar
 description: Lär dig koppla Adobe Campaign-instansen till Experience Cloud-lösningar.
 feature: Overview
 role: Admin, User
-level: Beginner, Intermediate
+level: Beginner
 exl-id: d1d57aa8-b811-470f-a8a6-18da3a700f1a
-source-git-commit: 65f4da979f0c5884797af0c3a835d948672b4a7c
+source-git-commit: f577ee6d303bab9bb07350b60cf0fa6fc9d3a163
 workflow-type: tm+mt
 source-wordcount: '390'
 ht-degree: 11%
@@ -14,7 +14,7 @@ ht-degree: 11%
 
 # Koppla samman Campaign med era lösningar{#gs-ac-connectors}
 
-Du kan koppla din Campaign-instans till Adobe Experience Cloud lösningar för att kombinera funktioner.
+Ni kan koppla samman er Campaign-instans med Adobe Experience Cloud lösningar för att kombinera funktioner.
 
 Adobe Campaign har flera kopplingar som gör att du kan kommunicera med externa program, ansluta till databasmotorer, dela och synkronisera data.
 
@@ -22,7 +22,7 @@ Adobe Campaign har flera kopplingar som gör att du kan kommunicera med externa 
 
 Kombinera Adobe Experience Cloud lösningar för att modernisera implementeringen.
 
-![](../assets/do-not-localize/speech.png)  Som användare av hanterade Cloud Services [kontakta Adobe](../start/campaign-faq.md#support) för att koppla Campaign till Adobe Experience Cloud tjänster och lösningar.
+![](../assets/do-not-localize/speech.png)  Som användare av hanterade Cloud Service [kontakta Adobe](../start/campaign-faq.md#support) för att koppla Campaign till Adobe Experience Cloud tjänster och lösningar.
 
 Campaign v8 kan kommunicera med:
 
@@ -35,15 +35,15 @@ Campaign v8 kan kommunicera med:
 
 Du kan också kombinera **målgrupper** och **resurser** i olika Experience Cloud-lösningar med funktioner för resursdelning och målgruppsdelning.
 
-![](../assets/do-not-localize/book.png) Läs mer om **Målgruppsdelning** mellan Campaign och Experience Cloud i [Campaign Classic v7-dokumentation](https://experienceleague.adobe.com/docs/campaign-classic/using/integrating-with-adobe-experience-cloud/audience-sharing/sharing-audiences-with-adobe-experience-cloud.html#integrating-with-adobe-experience-cloud)
+![](../assets/do-not-localize/book.png) Läs mer om **Målgruppsdelning** mellan Campaign och Experience Cloud i [Campaign Classic v7 - dokumentation](https://experienceleague.adobe.com/docs/campaign-classic/using/integrating-with-adobe-experience-cloud/audience-sharing/sharing-audiences-with-adobe-experience-cloud.html#integrating-with-adobe-experience-cloud)
 
-![](../assets/do-not-localize/book.png) Läs mer om **Resursdelning** mellan Campaign och Experience Cloud i [Campaign Classic v7-dokumentation](https://experienceleague.adobe.com/docs/campaign-classic/using/integrating-with-adobe-experience-cloud/asset-sharing/sharing-assets-with-adobe-experience-cloud.html#integrating-with-adobe-experience-cloud)
+![](../assets/do-not-localize/book.png) Läs mer om **Resursdelning** mellan Campaign och Experience Cloud i [Campaign Classic v7 - dokumentation](https://experienceleague.adobe.com/docs/campaign-classic/using/integrating-with-adobe-experience-cloud/asset-sharing/sharing-assets-with-adobe-experience-cloud.html#integrating-with-adobe-experience-cloud)
 
 ## Integrera med CRM Connector{#gs-crm-connectors}
 
 Du kan ansluta din Adobe Campaign-plattform till **CRM-system från tredje part** och synkronisera data: kontakter, konton, inköp osv.
 
-Aktivera dina CRM-data för kommunikation över flera kanaler: Lär dig hur du skickar kontakter från CRM-systemet till Adobe Campaign och delar kampanjdata från Adobe Campaign till CRM-systemet.
+Aktivera CRM-data för kommunikation över flera kanaler: lär dig hur du skickar kontakter från CRM-systemet till Adobe Campaign och delar kampanjdata från Adobe Campaign till CRM-systemet.
 CRM-anslutningar möjliggör snabb och enkel dataintegrering: Adobe Campaign tillhandahåller en dedikerad assistent för att samla in och välja bland tabellerna i CRM. Detta garanterar dubbelriktad synkronisering för att säkerställa att data alltid är aktuella i alla system.
 
 Lär dig hur du integrerar Campaign med Microsoft Dynamics 365 och Salesforce.com i [den här sidan](crm.md)
@@ -56,14 +56,14 @@ Använd FDA Connector (Federated Data Access) för att ansluta Campaign till en 
 
 ## Arbeta med sociala medier{#gs-social}
 
-Använd Adobe Campaign för att interagera med kunder och potentiella kunder via Twitter.
+Använd Adobe Campaign för att interagera med kunder och presumtiva kunder via Twitter.
 
 Du kan:
 
 * Skicka direktmeddelanden till dina följare
-* Posta tweets på ditt Twitter-konto
+* Bokför tweets på ditt Twitter-konto
 * Samla in nya kontakter
 
-Läs om hur du konfigurerar och använder Twitter-integrering i [den här sidan](../connect/ac-tw.md).
+Lär dig hur du konfigurerar och använder integrering av Twitter i [den här sidan](../connect/ac-tw.md).
 
-Lär dig hur du skapar Twitter-inlägg och skickar direktmeddelanden till dina följare i [den här sidan](../send/twitter.md).
+Lär dig hur du skapar Twitter och skickar direktmeddelanden till dina följare i [den här sidan](../send/twitter.md).

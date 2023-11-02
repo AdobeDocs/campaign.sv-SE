@@ -2,10 +2,10 @@
 title: Kom igång med Campaign FDA-Snowflake-distribution
 description: Kom igång med Campaign FDA-Snowflake-distribution
 feature: Architecture, Federated Data Access, Deployment
-role: Admin, Developer, User
+role: Admin, Developer
 level: Beginner
 exl-id: b3df0336-f40e-4ac1-b6a4-068b8827dca2
-source-git-commit: 1a0b473b005449be7c846225e75a227f6d877c88
+source-git-commit: f577ee6d303bab9bb07350b60cf0fa6fc9d3a163
 workflow-type: tm+mt
 source-wordcount: '297'
 ht-degree: 0%

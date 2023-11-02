@@ -3,9 +3,9 @@ title: Arbeta med Campaign och CRM
 description: Lär dig hur du arbetar med Campaign och CRM
 feature: Salesforce Integration, Microsoft CRM Integration
 role: Admin, User
-level: Beginner, Intermediate, Experienced
+level: Beginner
 exl-id: c2d34ee9-4427-48e7-a8cf-0ae02a801d50
-source-git-commit: 2ce1ef1e935080a66452c31442f745891b9ab9b3
+source-git-commit: f577ee6d303bab9bb07350b60cf0fa6fc9d3a163
 workflow-type: tm+mt
 source-wordcount: '329'
 ht-degree: 17%
@@ -16,15 +16,15 @@ ht-degree: 17%
 
 Adobe Campaign tillhandahåller olika CRM-kopplingar för att länka din plattform i Adobe Campaign till dina tredjepartssystem. Med dessa CRM-kopplingar kan du synkronisera kontakter, konton och inköp osv. De låter dig enkelt integrera din applikation med olika tredjeparts- och företagsapplikationer.
 
-Dessa kopplingar möjliggör snabb och enkel dataintegrering: Adobe Campaign tillhandahåller en dedikerad assistent för att samla in och välja bland tabellerna i CRM. Detta garanterar dubbelriktad synkronisering för att säkerställa att data alltid är aktuella i alla system.
+Dessa kopplingar möjliggör snabb och enkel dataintegrering: Adobe Campaign tillhandahåller en dedikerad assistent för att samla in och välja mellan de tabeller som är tillgängliga i CRM. Detta garanterar dubbelriktad synkronisering för att säkerställa att data alltid är aktuella i alla system.
 
 De viktigaste fördelarna är:
 
-* Enhetliga meddelanden mellan försäljning och marknadsföring: Adobe Campaign integrering med CRM ger både systemåtkomst till kundinsikter och marknadshistorik via e-post så att alla meddelanden till kunden kan dela samma enhetliga budskap.
+* Enhetliga meddelanden mellan försäljning och marknadsföring: Adobe Campaign integrering med CRM ger både systemåtkomst till kundinsikter och e-postmarknadsföringshistorik som gör att alla meddelanden till kunden kan dela samma enhetliga budskap.
 
-* Holistisk bild av alla potentiella kunder och kunddata: genom att integrera Adobe Campaign med CRM-systemen kan ni dela och få tillgång till marknadshistorik via e-post för varje kontakt i CRM-systemet.
+* En helhetsbild av alla potentiella kunder och kunddata: genom att integrera Adobe Campaign med CRM kan du dela och få tillgång till e-postmarknadsföringshistorik för varje kontakt i CRM-systemet.
 
-* Aktivera dina CRM-data i valfri kanal: med kontaktdata synkroniserade med Adobe Campaign kan kommunikationen skickas via valfri online- eller offlinekanal med Campaign, inklusive mobil-push, app-kommunikation, e-post eller direktreklam.
+* Aktivera dina CRM-data i valfri kanal: med kontaktdata synkroniserade med Adobe Campaign kan kommunikationen skickas via alla online- och offlinekanaler med Campaign, inklusive mobilpushning, app, e-post eller direktreklam.
 
 
 >[!NOTE]

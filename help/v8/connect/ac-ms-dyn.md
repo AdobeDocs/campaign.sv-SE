@@ -1,11 +1,11 @@
 ---
 title: Arbeta med Campaign och Microsoft Dynamics
-description: Lär dig hur du arbetar med Campaign och Microsoft Dynamics
+description: Lär dig arbeta med Campaign och Microsoft Dynamics
 feature: Microsoft CRM Integration
 role: Admin, User
-level: Beginner, Intermediate, Experienced
+level: Beginner, Intermediate
 exl-id: 4f9e8f74-27dc-482c-a83c-25623b53560f
-source-git-commit: 290f4e9a0d13ef49caacb7a128ccc266bafd5e69
+source-git-commit: f577ee6d303bab9bb07350b60cf0fa6fc9d3a163
 workflow-type: tm+mt
 source-wordcount: '1365'
 ht-degree: 1%
@@ -14,7 +14,7 @@ ht-degree: 1%
 
 # Arbeta med Campaign och Microsoft Dynamics 365{#crm-ms-dynamics}
 
-Aktivera dina CRM-data för kommunikation över flera kanaler: lära dig hur du överför kontakter från **Microsoft Dynamics 365** till Adobe Campaign och dela kampanjresultatdata (skickar, öppnar, klickar och studsar) tillbaka från Adobe Campaign till Microsoft Dynamics 365.
+Aktivera dina CRM-data för kommunikation över flera kanaler: lär dig hur du överför kontakter från **Microsoft Dynamics 365** till Adobe Campaign och dela kampanjresultatdata (skickar, öppnar, klickar och studsar) tillbaka från Adobe Campaign till Microsoft Dynamics 365.
 
 När konfigurationen är klar utförs datasynkronisering mellan system via en dedikerad arbetsflödesaktivitet. [Läs mer](crm-data-sync.md).
 
@@ -31,7 +31,7 @@ För varje system måste dessa steg utföras av en administratör.
 
 ## Konfigurera Microsoft Dynamics 365 {#config-crm-microsoft}
 
-Koppla Microsoft Dynamics 365 till Adobe Campaign via **Webb-API**, logga in på [Microsoft Azure-katalog](https://portal.azure.com) med **Global administratör** och följ stegen nedan:
+Koppla Microsoft Dynamics 365 till Adobe Campaign via **Webb-API**, logga in på [Microsoft Azure Directory](https://portal.azure.com) med **Global administratör** och följ stegen nedan:
 
 1. Hämta ditt program-ID för Dynamics 365 (klient). [Läs mer](#get-client-id-microsoft)
 1. Generera nyckelidentifierare och nyckel-ID för Microsoft Dynamics-certifikat. [Läs mer](#config-certificate-key-id)
@@ -57,11 +57,11 @@ För att få **Identifierare för certifikatnyckel (customKeyIdentifier)** och *
 
 Följ stegen nedan:
 
-1. Bläddra till **Azure Active Directory > App Registrations** och välj programmet som skapades tidigare.
+1. Bläddra till **Azure Active Directory > App Registrations** och välj det program som skapades tidigare.
 1. Välj på **Certifikat och hemlighet**.
 1. Från **Certifikat** flik, klicka på **Överför certifikat**
 1. Överför ditt offentliga certifikat.
-1. Bläddra till **Manifest** länk för att hämta **Identifierare för certifikatnyckel (customKeyIdentifier)** och **Nyckel-ID (keyId)**.
+1. Gå till **Manifest** länk för att hämta **Identifierare för certifikatnyckel (customKeyIdentifier)** och **Nyckel-ID (keyId)**.
 
 The **Identifierare för certifikatnyckel (customKeyIdentifier)** och **Nyckel-ID (keyId)** behövs i Campaign för att konfigurera ditt externa Microsoft Dynamics 365 CRM-konto med hjälp av certifikatet **[!UICONTROL CRM O-Auth type]**.
 
@@ -79,7 +79,7 @@ Exempel:
 >
 >Du kan ändra antalet dagar här `-days 365`, i kodexemplet för en längre certifikatgiltighetsperiod.
 
-Du måste sedan koda certifikatet i base64. Om du vill göra det kan du använda hjälp av en Base64-kodare eller kommandoraden `base64 -w0 private.key` för Linux.
+Du måste sedan koda certifikatet i base64. Du kan göra det med hjälp av en Base64-kodare eller via kommandoraden `base64 -w0 private.key` för Linux.
 
 +++
 
@@ -87,7 +87,7 @@ Du måste sedan koda certifikatet i base64. Om du vill göra det kan du använda
 
 **Steg 1**: Konfigurera **Nödvändiga behörigheter** för programmet som skapades.
 
-1. Navigera till **Azure Active Directory > App Registrations** och välj programmet som skapades tidigare.
+1. Navigera till **Azure Active Directory > App Registrations** och välj det program som skapades tidigare.
 1. Klicka **Inställningar** överst till vänster.
 1. På **Nödvändiga behörigheter**, klicka **Lägg till** och **Välj ett API > Dynamics CRM Online**.
 1. Klicka **Välj**, aktivera **Använd Dynamics 365 som organisationsanvändare** kryssruta och klicka **Välj**.
@@ -96,7 +96,7 @@ Du måste sedan koda certifikatet i base64. Om du vill göra det kan du använda
 
 **Steg 2**: Medgivande från bidragsadministratör
 
-1. Navigera till **Azure Active Directory > Enterprise Applications**.
+1. Navigera till **Azure Active Directory > Enterprise-program**.
 1. Välj det program som du vill ge innehavaromfattande administratörsgodkännande för.
 1. Välj **Behörigheter** under **Säkerhet**.
 1. Klicka **Medgivande från bidragsadministratör**.
@@ -130,7 +130,7 @@ Appanvändaren är den användare som programmet som registrerats ovan kommer at
 1. Klicka på listrutan och välj **Programanvändare** och klicka **Nytt**.
 1. Använd samma användarnamn som användaren som skapades i den aktiva katalogen ovan.
 1. Tilldela **Program-ID** for [det program du skapade tidigare](#get-client-id-microsoft).
-1. Klicka på **Hantera roller** och väljer **Systemadministratör** till användaren.
+1. Klicka på **Hantera roller** och väljer **Systemadministratör** roll för användaren.
 
 ## Konfigurera Campaign {#configure-acc-for-microsoft}
 
@@ -138,28 +138,28 @@ Appanvändaren är den användare som programmet som registrerats ovan kommer at
 
 Först måste du skapa det externa kontot för Microsoft Dynamics 365.
 
-1. Bläddra i **[!UICONTROL Administration > Platform > External accounts]** noden i Campaign Explorer och skapa ett externt konto.
+1. Sök i **[!UICONTROL Administration > Platform > External accounts]** noden i Campaign Explorer och skapa ett externt konto.
 1. Välj **[!UICONTROL Microsoft Dynamics CRM]** externt konto i **Typ** -avsnitt.
-1. Välj autentiseringsmetod i dialogrutan **[!UICONTROL CRM O-Auth type]** nedrullningsbar lista.
+1. Välj autentiseringsmetod i dialogrutan **[!UICONTROL CRM O-Auth type]** listruta.
 
    ![](assets/ms-dyn-external-account.png)
 
    1. Så här konfigurerar du det externa Microsoft Dynamics CRM-kontot för att ansluta till Adobe Campaign med **Lösenordsreferenser**, lämna följande uppgifter:
 
-      * **Server**: URL till din Microsoft CRM-server. Om du vill hitta URL-adressen till din Microsoft CRM-server öppnar du ditt Microsoft Dynamics CRM-konto och klickar sedan på Dynamics 365 och väljer din app. Du kan sedan hitta din server-URL i webbläsarens adressfält, t.ex. https://myserver.crm.dynamics.com/.
-      * **Konto**: Det konto som används för att logga in på Microsoft CRM.
-      * **Lösenord**: Det konto som används för att logga in på Microsoft CRM.
-      * **Klient-ID**: Program-ID (klient) som finns på Microsoft Azure-hanteringsportalen i fältet Uppdatera din kodkategori, Klient-ID.
+      * **Server**: URL för din Microsoft CRM-server. Om du vill hitta URL-adressen till din Microsoft CRM-server öppnar du ditt Microsoft Dynamics CRM-konto och klickar sedan på Dynamics 365 och väljer din app. Du kan sedan hitta din server-URL i webbläsarens adressfält, t.ex. https://myserver.crm.dynamics.com/.
+      * **Konto**: Konto som används för att logga in på Microsoft CRM.
+      * **Lösenord**: Konto som används för att logga in på Microsoft CRM.
+      * **Klient-ID**: Program-ID (klient) som kan hittas från Microsoft Azure-hanteringsportalen i fältet Uppdatera din kodkategori, Klient-ID.
       * **CRM-version**: Välj Dynamics CRM 365 CRM-version.
-   1. Så här konfigurerar du det externa Microsoft Dynamics CRM-kontot att ansluta till Adobe Campaign med en **Certifikat**, lämna följande uppgifter:
 
-      * **Server**: URL till din Microsoft CRM-server. Om du vill hitta URL-adressen till din Microsoft CRM-server öppnar du ditt Microsoft Dynamics CRM-konto och klickar sedan på Dynamics 365 och väljer din app. Du kan sedan hitta din server-URL i webbläsarens adressfält, t.ex. https://myserver.crm.dynamics.com/.
-      * **Privat nyckel**: Kopiera/klistra in den privata nyckeln, kodad base64 enligt anvisningarna i [det här avsnittet](#config-certificate-key-id).
+   1. Så här konfigurerar du det externa Microsoft Dynamics CRM-kontot för att ansluta till Adobe Campaign med en **Certifikat**, lämna följande uppgifter:
+
+      * **Server**: URL för din Microsoft CRM-server. Om du vill hitta URL-adressen till din Microsoft CRM-server öppnar du ditt Microsoft Dynamics CRM-konto och klickar sedan på Dynamics 365 och väljer din app. Du kan sedan hitta din server-URL i webbläsarens adressfält, t.ex. https://myserver.crm.dynamics.com/.
+      * **Privat nyckel**: Kopiera/klistra in den privata nyckeln, kodad base64 enligt beskrivningen i [det här avsnittet](#config-certificate-key-id).
       * **Nyckel-ID**: Nyckeln finns i **Manifest** -fliken i ditt program, enligt anvisningarna i [det här avsnittet](#config-certificate-key-id).
-      * **Anpassad nyckel-ID**: Identifieraren finns i **Manifest** -fliken i ditt program, enligt anvisningarna i [det här avsnittet](#config-certificate-key-id).
+      * **Anpassad nyckel-ID**: Identifierare finns i **Manifest** -fliken i ditt program, enligt anvisningarna i [det här avsnittet](#config-certificate-key-id).
       * **Klient-ID**: Program-ID (klient) som kan hittas från Microsoft Azure-hanteringsportalen enligt beskrivningen i [det här avsnittet](#get-client-id-microsoft).
       * **CRM-version**: Välj Dynamics CRM 365 CRM-version.
-
 
 1. Välj **Aktivera** möjlighet att aktivera kontot i Campaign.
 
@@ -177,7 +177,7 @@ Nu kan du konfigurera tabeller att synkronisera.
 
 >[!NOTE]
 >
->Lägg till två URL:er i tillåtelselista: server-URL och `login.microsoftonline.com`. Kontakta din Adobe-representant för att göra detta.
+>Lägg till två URL:er i tillåtelselista: serverns URL och `login.microsoftonline.com`. Kontakta din Adobe-representant för att göra detta.
 
 ## Synkronisera uppräkningar{#sfdc-enum-sync}
 
@@ -185,13 +185,13 @@ När schemat har skapats kan du synkronisera uppräkningar automatiskt från Dyn
 
 1. Öppna assistenten från  **[!UICONTROL Synchronizing enumerations...]** länk.
 1. Välj den Adobe Campaign-uppräkning som matchar uppräkningen i Dynamics 365.
-Du kan ersätta alla värden i en Adobe Campaign-uppräkning med dem i CRM: för att göra detta väljer du **[!UICONTROL Yes]** i **[!UICONTROL Replace]** kolumn.
+Du kan ersätta alla värden i en Adobe Campaign-uppräkning med dem i CRM: om du vill göra det väljer du **[!UICONTROL Yes]** i **[!UICONTROL Replace]** kolumn.
 1. Klicka **[!UICONTROL Next]** och sedan **[!UICONTROL Start]** för att börja importera uppräkningarna.
-1. Bläddra i **[!UICONTROL Administration > Platform > Enumerations]** nod för att kontrollera importerade värden.
+1. Sök i **[!UICONTROL Administration > Platform > Enumerations]** nod för att kontrollera importerade värden.
 
 Adobe Campaign och Microsoft Dynamics 365 är nu anslutna. Du kan konfigurera datasynkronisering mellan de två systemen.
 
-Om du vill synkronisera data mellan Adobe Campaign-data och Microsoft CRM skapar du ett arbetsflöde och använder **[!UICONTROL CRM connector]** aktivitet.
+Om du vill synkronisera data mellan Adobe Campaign data och Microsoft CRM skapar du ett arbetsflöde och använder **[!UICONTROL CRM connector]** aktivitet.
 
 Läs mer om datasynkronisering [på den här sidan](crm-data-sync.md).
 
@@ -202,12 +202,12 @@ För Microsoft Dynamics 365 finns följande attributtyper som stöds/inte stöds
 
 | Attributtyp | Stöds |
 | --------------------------------------------------------------------------------- | --------- |
-| Grundläggande typer: boolean, datetime, decimal, float, double, integer, bigint , string | Ja |
+| Grundläggande typer: boolesk, datetime, decimal, float, double, integer, bigint , string | Ja |
 | Pengar (som dubbla) | Ja |
 | memo, entityname , primarykey, uniqueidentifier (som strängar) | Ja |
 | Status, picklist (vi lagrar möjliga värden i uppräkningar), state (sträng) | Ja |
 | ägare (som sträng) | Ja |
-| Uppslag (endast referenssökningar för en enhet) | Ja |
+| Uppslag (endast referenssökningar för en entitet) | Ja |
 | kund | Nej |
 | Angående | Nej |
 | PartyList | Nej |

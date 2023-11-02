@@ -3,9 +3,9 @@ title: Bästa praxis för kampanjsäkerhet
 description: Kom igång med de effektivaste strategierna för kampanjsäkerhet
 feature: Privacy, PI
 role: Developer
-level: Beginner, Intermediate, Experienced
+level: Beginner
 exl-id: 1d593c8e-4b32-4902-93a7-7b18cef27cac
-source-git-commit: 65f4da979f0c5884797af0c3a835d948672b4a7c
+source-git-commit: f577ee6d303bab9bb07350b60cf0fa6fc9d3a163
 workflow-type: tm+mt
 source-wordcount: '599'
 ht-degree: 1%
@@ -22,12 +22,12 @@ Dessutom hjälper vårt samarbete med partners, ledande forskare, säkerhetsfors
 
 Konfiguration och skärpning av sekretess är en viktig del av säkerhetsoptimeringen. Här följer några tips om sekretess:
 
-* Protect dina kunders personuppgifter (PI) genom att använda HTTPS i stället för HTTP
+* Protect din kundinformation med HTTPS istället för HTTP
 * Använd [Begränsning av PI-vy](../dev/restrict-pi-view.md) skydda integriteten och förhindra att data används på fel sätt
 * Kontrollera att krypterade lösenord är begränsade
 * Protect de sidor som kan innehålla personlig information, t.ex. spegelsidor, webbtillämpningar osv.
 
-![](../assets/do-not-localize/speech.png)  Som användare av hanterade Cloud Services arbetar Adobe tillsammans med dig för att implementera dessa konfigurationer i din miljö.
+![](../assets/do-not-localize/speech.png)  Som användare av hanterade Cloud Service arbetar Adobe tillsammans med dig för att implementera dessa konfigurationer i din miljö.
 
 
 ## Åtkomsthantering
@@ -45,9 +45,9 @@ När du utvecklar i Adobe Campaign (arbetsflöden, Javascript, JSSP osv.) ska du
 
 * **Skript**: försök att undvika SQL-satser, använd parametriserade funktioner i stället för strängsammanfogning, undvik SQL-injektion genom att lägga till de SQL-funktioner som ska användas i tillåtelselista.
 
-* **Skydda datamodellen**: använda namngivna rättigheter för att begränsa operatoråtgärder, lägga till systemfilter (sysFilter)
+* **Skydda datamodellen**: använd namngivna rättigheter för att begränsa operatoråtgärder, lägga till systemfilter (sysFilter)
 
-* **Lägga till bildtexter i webbprogram**: lägga till bilder på era offentliga landningssidor och prenumerationssidor.
+* **Lägga till bildtexter i webbprogram**: lägg till bilder på era offentliga landningssidor och prenumerationssidor.
 
 ![](../assets/do-not-localize/book.png) Läs mer i [Adobe Campaign Classic v7-dokumentation](https://experienceleague.adobe.com/docs/campaign-classic/using/installing-campaign-classic/security-privacy/scripting-coding-guidelines.html#installing-campaign-classic){target="_blank"}
 
@@ -64,7 +64,7 @@ När du lägger till anpassade länkar till ditt innehåll bör du alltid undvik
 
 ## Databegränsning
 
-Du måste se till att de krypterade lösenorden inte är tillgängliga för en autentiserad användare med låg behörighet. Det finns två sätt: begränsa åtkomsten till lösenordsfält eller till hela entiteten.
+Du måste se till att de krypterade lösenorden inte är tillgängliga för en autentiserad användare med låg behörighet. Det finns två sätt: begränsa åtkomsten till lösenordsfält enbart eller till hela entiteten.
 
 Med den här begränsningen kan du ta bort lösenordsfält, men låta det externa kontot vara tillgängligt från gränssnittet för alla användare. Läs mer i [den här sidan](../dev/restrict-pi-view.md).
 
@@ -140,8 +140,8 @@ När du utvecklar i Adobe Campaign (arbetsflöden, Javascript, JSSP osv.) ska du
 
 * **Skript**: försök att undvika SQL-satser, använd parametriserade funktioner i stället för strängsammanfogning, undvik SQL-injektion genom att lägga till de SQL-funktioner som ska användas i tillåtelselista.
 
-* **Skydda datamodellen**: använda namngivna rättigheter för att begränsa operatoråtgärder, lägga till systemfilter (sysFilter)
+* **Skydda datamodellen**: använd namngivna rättigheter för att begränsa operatoråtgärder, lägga till systemfilter (sysFilter)
 
-* **Lägga till bildtexter i webbprogram**: lägga till bilder på era offentliga landningssidor och prenumerationssidor.
+* **Lägga till bildtexter i webbprogram**: lägg till bilder på era offentliga landningssidor och prenumerationssidor.
 
 ![](../assets/do-not-localize/book.png) Läs mer i [Adobe Campaign Classic v7-dokumentation](https://experienceleague.adobe.com/docs/campaign-classic/using/installing-campaign-classic/security-privacy/scripting-coding-guidelines.html#installing-campaign-classic){target="_blank"}

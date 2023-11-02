@@ -2,10 +2,10 @@
 title: Kontrollpanelen i Campaign
 description: Kom igång med Campaign Control Panel
 feature: Control Panel, Monitoring
-role: User, Admin
-level: Beginner, Intermediate
+role: Admin
+level: Beginner
 exl-id: b8aa89ac-19f4-4df3-9f36-860aca61bea3
-source-git-commit: 1a0b473b005449be7c846225e75a227f6d877c88
+source-git-commit: f577ee6d303bab9bb07350b60cf0fa6fc9d3a163
 workflow-type: tm+mt
 source-wordcount: '380'
 ht-degree: 64%

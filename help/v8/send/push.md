@@ -2,10 +2,10 @@
 title: Skicka push-meddelanden med Adobe Campaign
 description: Kom igång med push-meddelanden i Campaign
 feature: Push
-role: Data Engineer
+role: User
 level: Beginner
 exl-id: f04c6e0c-f2b9-496a-9697-04ef4c3411ee
-source-git-commit: d941d9a364ffb2df77ba6726e655ca2916448f89
+source-git-commit: f577ee6d303bab9bb07350b60cf0fa6fc9d3a163
 workflow-type: tm+mt
 source-wordcount: '813'
 ht-degree: 3%
@@ -24,9 +24,9 @@ I det här avsnittet beskrivs de element som är specifika för leveransen av iO
 
 >[!CAUTION]
 >
->När det gäller [Företagsdistribution (FFDA)](../architecture/enterprise-deployment.md), mobilregistrering är nu **asynkron**. [Läs mer](../architecture/staging.md)
+>När det gäller en [Företagsdistribution (FFDA)](../architecture/enterprise-deployment.md), mobilregistrering är nu **asynkron**. [Läs mer](../architecture/staging.md)
 
-Bläddra till **[!UICONTROL Campaigns]** flik, klicka **[!UICONTROL Deliveries]** och klicka på **[!UICONTROL Create]** ovanför listan över befintliga leveranser.
+Om du vill skapa en ny leverans går du till **[!UICONTROL Campaigns]** flik, klicka **[!UICONTROL Deliveries]** och klicka på **[!UICONTROL Create]** ovanför listan över befintliga leveranser.
 
 ![](assets/delivery_step_1.png)
 
@@ -58,9 +58,9 @@ Så här skickar du meddelanden till iOS-enheter:
 
 1. I **[!UICONTROL Title]** anger du etiketten för den titel som du vill ska visas i listan med meddelanden som är tillgängliga från meddelandecentret.
 
-   I det här fältet kan du definiera värdet för **title** -parametern för iOS-meddelandenyttolasten.
+   I det här fältet kan du definiera värdet för **title** parameter för iOS-meddelandenyttolast.
 
-1. Du kan lägga till en **[!UICONTROL Subtitle]**, värdet för **underrubrik** -parametern för iOS-meddelandenyttolasten.
+1. Du kan lägga till en **[!UICONTROL Subtitle]**, värdet för **underrubrik** parameter för iOS-meddelandenyttolast.
 
 1. Ange innehållet i meddelandet i **[!UICONTROL Message content]** i guiden.
 
@@ -68,13 +68,13 @@ Så här skickar du meddelanden till iOS-enheter:
 
    * **[!UICONTROL Clean Badge]**: aktivera det här alternativet för att uppdatera badge-värdet.
 
-   * **[!UICONTROL Value]**: Ange ett tal som ska användas för att visa antalet nya olästa uppgifter direkt på programikonen.
+   * **[!UICONTROL Value]**: ange ett tal som ska användas för att visa antalet nya olästa uppgifter direkt på programikonen.
 
-   * **[!UICONTROL Critical alert mode]**: aktivera det här alternativet för att lägga till ljud i meddelandet även om användarens telefon är inställd på fokusläge eller om iPhone är avstängt.
+   * **[!UICONTROL Critical alert mode]**: aktivera det här alternativet om du vill lägga till ljud i meddelandet även om användarens telefon är inställd på fokusläge eller om iPhone är avstängt.
 
-   * **[!UICONTROL Name]**: Välj det ljud som ska spelas upp av mobilterminalen när meddelandet tas emot.
+   * **[!UICONTROL Name]**: välj det ljud som ska spelas upp av mobilterminalen när meddelandet tas emot.
 
-   * **[!UICONTROL Volume]**: ljudvolymen från 0 till 100.
+   * **[!UICONTROL Volume]**: ljudvolym från 0 till 100.
 
      >[!NOTE]
      > 
@@ -87,7 +87,7 @@ Så här skickar du meddelanden till iOS-enheter:
 
 1. Från **[!UICONTROL Advanced]** kan du redigera följande allmänna alternativ:
 
-   * **[!UICONTROL Mutable content]**: aktivera det här alternativet om du vill tillåta att mobilprogrammet hämtar medieinnehåll.
+   * **[!UICONTROL Mutable content]**: aktivera det här alternativet om du vill att mobilprogrammet ska kunna hämta medieinnehåll.
 
    * **[!UICONTROL Thread-id]**: identifierare som används för att gruppera relaterade meddelanden tillsammans.
 
@@ -97,21 +97,21 @@ Så här skickar du meddelanden till iOS-enheter:
 
 1. För tidskänsliga meddelanden kan du ange följande alternativ:
 
-   * **[!UICONTROL Target content ID]**: Identifierare som används för att ange vilket programfönster som ska flyttas fram när meddelandet öppnas.
+   * **[!UICONTROL Target content ID]**: identifierare som används för att ange vilket programfönster som ska flyttas fram när meddelandet öppnas.
 
    * **[!UICONTROL Launch image]**: namnet på startbildfilen som ska visas. Om användaren väljer att starta programmet visas den valda bilden i stället för programmets startskärm.
 
    * **[!UICONTROL Interruption level]**:
 
-      * **[!UICONTROL Active]**: Som standard visas meddelandet omedelbart, skärmen visas och ett ljud kan spelas upp. Meddelanden går inte igenom fokusläget.
+      * **[!UICONTROL Active]**: Anges som standard visas meddelandet omedelbart, skärmen visas och ett ljud kan spelas upp. Meddelanden går inte igenom fokusläget.
 
-      * **[!UICONTROL Passive]**: Systemet lägger till meddelandet i meddelandelistan utan att skärmen eller ljudet ljussätts upp. Meddelanden går inte igenom fokusläget.
+      * **[!UICONTROL Passive]**: Systemet lägger till meddelandet i meddelandelistan utan att skärmen ljusas eller ett ljud spelas upp. Meddelanden går inte igenom fokusläget.
 
       * **[!UICONTROL Time sensitive]** Systemet visar meddelandet omedelbart, lyser upp skärmen, kan spela upp ett ljud och gå igenom fokus-lägen. Den här nivån kräver inget särskilt tillstånd från Apple.
 
       * **[!UICONTROL Critical]** Systemet visar meddelandet omedelbart, lyser upp skärmen och kringgår avstängningsväxeln eller fokusläget. Observera att den här nivån kräver ett särskilt tillstånd från Apple.
 
-   * **[!UICONTROL Relevance score]**: Ange ett relevansvärde mellan 0 och 100. Systemet använder detta för att sortera meddelandena i meddelandesammanfattningen.
+   * **[!UICONTROL Relevance score]**: ange ett relevansvärde mellan 0 och 100. Systemet använder detta för att sortera meddelandena i meddelandesammanfattningen.
 
    ![](assets/push_ios_7.png)
 

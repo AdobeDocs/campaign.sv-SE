@@ -4,9 +4,9 @@ description: Lär dig hur du integrerar Adobe Experience Platform SDK för mobil
 version: v8
 feature: Push
 role: Admin, Developer
-level: Intermediate, Experienced
-exl-id: b5a0fe46-f7b4-4be1-abf0-162fc1412886
-source-git-commit: 441310dc1cdcb96296c0cbe5bf3fb7cd1502709f
+level: Intermediate
+exl-id: 1a75f411-3f71-4114-b738-277820dc6138
+source-git-commit: f577ee6d303bab9bb07350b60cf0fa6fc9d3a163
 workflow-type: tm+mt
 source-wordcount: '1659'
 ht-degree: 3%
@@ -23,7 +23,7 @@ Så här konfigurerar du appen med Adobe Experience Platform Mobile SDK:
 
 1. Kontrollera [krav](#before-starting).
 1. Konfigurera en [mobil tagg, egenskap](#launch-property) i Adobe Experience Platform Data Collection.
-1. Få en mer detaljerad beskrivning av Adobe Experience Platform Mobile SDK [på den här sidan](https://developer.adobe.com/client-sdks/documentation/getting-started/get-the-sdk/){target="_blank"}.
+1. Skaffa Adobe Experience Platform Mobile SDK i detalj [på den här sidan](https://developer.adobe.com/client-sdks/documentation/getting-started/get-the-sdk/){target="_blank"}.
 1. (valfritt) Aktivera loggnings- och livscykelstatistik, som detaljerad [på den här sidan](https://developer.adobe.com/client-sdks/documentation/getting-started/enable-debug-logging/){target="_blank"}.
 1. (valfritt) Lägg till [Adobe Experience Platform Assurance för din app](https://developer.adobe.com/client-sdks/documentation/getting-started/validate/){target="_blank"} to validate your implementation. Learn how to implement Adobe Experience Platform Assurance extension [in this page](https://developer.adobe.com/client-sdks/documentation/platform-assurance-sdk/){target="_blank"}.
 1. Konfigurera dina iOS- och Android-mobiltjänster i Adobe Campaign enligt [på den här sidan](#push-service).
@@ -44,7 +44,7 @@ Tilldela **Egenskap** och **Företag** gör du så här:
 
 1. Öppna **[!DNL Admin Console]**.
 1. Från **[!UICONTROL Products]** väljer du **[!UICONTROL Adobe Experience Platform Data Collection]** kort.
-1. Välj en befintlig **[!UICONTROL Product Profile]** eller skapa en ny med **[!UICONTROL New profile]** -knappen. Lär dig skapa en ny **[!UICONTROL New profile]** i [Dokumentation till Admin Console](https://experienceleague.adobe.com/docs/experience-platform/access-control/ui/create-profile.html#ui){target="_blank"}.
+1. Välj en befintlig **[!UICONTROL Product Profile]** eller skapa en ny med **[!UICONTROL New profile]** -knappen. Lär dig hur du skapar en ny **[!UICONTROL New profile]** i [Dokumentation till Admin Console](https://experienceleague.adobe.com/docs/experience-platform/access-control/ui/create-profile.html#ui){target="_blank"}.
 1. På fliken **[!UICONTROL Permissions]** väljer du **[!UICONTROL Property Rights]**.
 1. Klicka på **[!UICONTROL Add all]**. Detta lägger till följande rättigheter i din produktprofil:
    * **[!UICONTROL Approve]**
@@ -151,7 +151,7 @@ Läs mer om [!DNL Adobe Experience Platform Data Collection] taggar i [Adobe Exp
 
 När mobilappen har konfigurerats i [!DNL Adobe Experience Platform Data Collection]måste du skapa två tjänster (en för iOS-enheter, en för Android-enheter) för att kunna skicka push-meddelanden från **[!DNL Adobe Campaign]**.
 
-Push-meddelanden skickas till appanvändarna via en dedikerad tjänst. När användarna installerar din app prenumererar de på den här tjänsten: Adobe Campaign förlitar sig på den här tjänsten för att endast rikta sig till appens prenumeranter. I den här tjänsten måste du lägga till dina iOS- och Android-appar som ska skickas på iOS- och Android-enheter.
+Push-meddelanden skickas till appanvändarna via en dedikerad tjänst. När användare installerar din app prenumererar de på den här tjänsten: Adobe Campaign förlitar sig på den här tjänsten för att endast rikta sig till prenumeranterna av din app. I den här tjänsten måste du lägga till dina iOS- och Android-appar som ska skickas på iOS- och Android-enheter.
 
 Följ stegen nedan för att skapa en tjänst för att skicka push-meddelanden:
 
@@ -159,7 +159,7 @@ Följ stegen nedan för att skapa en tjänst för att skicka push-meddelanden:
 
    ![](assets/new-service-push.png){width="800" align="left"}
 
-1. Ange **[!UICONTROL Label]** och **[!UICONTROL Internal name]** och väljer **[!UICONTROL Mobile application]** typ.
+1. Ange en **[!UICONTROL Label]** och **[!UICONTROL Internal name]** och väljer en **[!UICONTROL Mobile application]** typ.
 
    >[!NOTE]
    >
@@ -177,22 +177,22 @@ Så här skapar du en app för iOS-enheter:
 
    ![](assets/new-ios-app.png){width="600" align="left"}
 
-1. Ange namnet på din app i **[!UICONTROL Label]** fält.
-1. (valfritt) Du kan förbättra innehållet i ett push-meddelande med **[!UICONTROL Application variables]**. Dessa är helt anpassningsbara och utgör en del av den meddelandenyttolast som skickas till den mobila enheten.
+1. Ange namnet på din app i dialogrutan **[!UICONTROL Label]** fält.
+1. (valfritt) Du kan förbättra innehållet i ett push-meddelande med vissa **[!UICONTROL Application variables]**. Dessa är helt anpassningsbara och utgör en del av den meddelandenyttolast som skickas till den mobila enheten.
 
    I exemplet nedan är **mediaURl** och **mediaExt** -variabler läggs till för att skapa omfattande push-meddelanden och ger sedan programmet den bild som ska visas i meddelandet.
 
    ![](assets/ios-app-parameters.png){width="600" align="left"}
 
-1. Bläddra till **[!UICONTROL Subscription parameters]** för att definiera mappningen med ett tillägg till **[!UICONTROL Subscriber applications (nms:appsubscriptionRcp)]** schema.
+1. Gå till **[!UICONTROL Subscription parameters]** för att definiera mappningen med ett tillägg till **[!UICONTROL Subscriber applications (nms:appsubscriptionRcp)]** schema.
 
-1. Bläddra till **[!UICONTROL Sounds]** för att definiera ett ljud som ska spelas upp. Klicka **[!UICONTROL Add]** och fylla **[!UICONTROL Internal name]** fält som måste innehålla namnet på filen som är inbäddad i programmet eller namnet på systemljudet.
+1. Gå till **[!UICONTROL Sounds]** för att definiera ett ljud som ska spelas upp. Klicka **[!UICONTROL Add]** och fylla **[!UICONTROL Internal name]** fält som måste innehålla namnet på filen som är inbäddad i programmet eller namnet på systemljudet.
 
 1. Klicka **[!UICONTROL Next]** för att börja konfigurera utvecklingsprogrammet.
 
 1. Integreringsnyckeln är specifik för varje program. Det länkar mobilprogrammet till Adobe Campaign.
 
-   Se till att samma **[!UICONTROL Integration key]** definieras i Adobe Campaign och i programkoden via SDK.
+   Se till att det är samma **[!UICONTROL Integration key]** definieras i Adobe Campaign och i programkoden via SDK.
 
    Läs mer i [dokumentation för utvecklare](https://developer.adobe.com/client-sdks/documentation/adobe-campaign-classic/#configuration-keys){target="_blank"}
 
@@ -203,11 +203,11 @@ Så här skapar du en app för iOS-enheter:
    >
    > Du kan inte använda samma certifikat för utvecklingsversionen (sandlådan) och produktionsversionen av programmet.
 
-1. Välj ikonen på menyn **[!UICONTROL Application icon]** fält för att anpassa mobilapplikationer i din tjänst.
+1. Välj ikonen på menyn **[!UICONTROL Application icon]** för att personalisera mobilapplikationer i din tjänst.
 
 1. Markera **[!UICONTROL Authentication mode]**. Det finns två lägen:
 
-   * (Rekommenderas) **[!UICONTROL Token-based authentication]**: Fyll i APN-anslutningsinställningarna **[!UICONTROL Key Id]**, **[!UICONTROL Team Id]** och **[!UICONTROL Bundle Id]** välj sedan ditt p8-certifikat genom att klicka på **[!UICONTROL Enter the private key...]**. Om du vill ha mer information **[!UICONTROL Token-based authentication]**, se [Apple-dokumentation](https://developer.apple.com/documentation/usernotifications/setting_up_a_remote_notification_server/establishing_a_token-based_connection_to_apns){target="_blank"}.
+   * (Rekommenderas) **[!UICONTROL Token-based authentication]**: Fyll i APN-anslutningsinställningarna **[!UICONTROL Key Id]**, **[!UICONTROL Team Id]** och **[!UICONTROL Bundle Id]** välj sedan ditt p8-certifikat genom att klicka på **[!UICONTROL Enter the private key...]**. Om du vill ha mer **[!UICONTROL Token-based authentication]**, se [Apple-dokumentation](https://developer.apple.com/documentation/usernotifications/setting_up_a_remote_notification_server/establishing_a_token-based_connection_to_apns){target="_blank"}.
 
    * **[!UICONTROL Certificate-based authentication]**: Klicka **[!UICONTROL Enter the certificate...]**  välj sedan din p12-nyckel och ange lösenordet som angavs av mobilprogramutvecklaren.
 
@@ -229,10 +229,10 @@ Så här skapar du en app för Android-enheter:
 
    ![](assets/new-android-app.png){width="600" align="left"}
 
-1. Ange namnet på din app i **[!UICONTROL Label]** fält.
+1. Ange namnet på din app i dialogrutan **[!UICONTROL Label]** fält.
 1. Integreringsnyckeln är specifik för varje program. Det länkar mobilprogrammet till Adobe Campaign.
 
-   Se till att samma **[!UICONTROL Integration key]** definieras i Adobe Campaign och i programkoden via SDK.
+   Se till att det är samma **[!UICONTROL Integration key]** definieras i Adobe Campaign och i programkoden via SDK.
 
    Läs mer i [dokumentation för utvecklare](https://developer.adobe.com/client-sdks/documentation/adobe-campaign-classic/#configuration-keys){target="_blank"}
 
@@ -242,8 +242,8 @@ Så här skapar du en app för Android-enheter:
    > The **[!UICONTROL Integration key]** är helt anpassningsbart med strängvärde, men måste vara exakt densamma som den som anges i SDK:n.
    >
 
-1. Välj ikonen på menyn **[!UICONTROL Application icon]** fält för att anpassa mobilapplikationer i din tjänst.
-1. Välj **HTTP v1** in  **[!UICONTROL API version]** nedrullningsbar lista.
+1. Välj ikonen på menyn **[!UICONTROL Application icon]** för att personalisera mobilapplikationer i din tjänst.
+1. Välj **HTTP v1** in  **[!UICONTROL API version]** listruta.
 1. Klicka **[!UICONTROL Load project json file to extract project details...]** -länk för att läsa in JSON-nyckelfilen. Mer information om hur du extraherar JSON-filen finns i [Google Firebase-dokumentation](https://firebase.google.com/docs/admin/setup#initialize-sdk){target="_blank"}.
 
    Du kan även ange följande manuellt:
@@ -257,7 +257,7 @@ Så här skapar du en app för Android-enheter:
    >
    >The **[!UICONTROL Test connection]** kontrollerar inte om MID-servern har åtkomst till FCM-servern.
 
-1. (valfritt) Du kan förbättra innehållet i ett push-meddelande med **[!UICONTROL Application variables]** vid behov. Dessa är helt anpassningsbara och utgör en del av den meddelandenyttolast som skickas till den mobila enheten.
+1. (valfritt) Du kan förbättra innehållet i ett push-meddelande med vissa **[!UICONTROL Application variables]** vid behov. Dessa är helt anpassningsbara och utgör en del av den meddelandenyttolast som skickas till den mobila enheten.
 
 1. Klicka **[!UICONTROL Finish]** och sen **[!UICONTROL Save]**. Ditt Android-program kan nu användas i Campaign.
 
@@ -266,7 +266,7 @@ Nedan visas FCM-nyttolastsnamnen för att ytterligare anpassa ditt push-meddelan
 | Meddelandetyp | Konfigurerbart meddelandeelement (FCM-nyttolastnamn) | Konfigurerbara alternativ (FCM-nyttolastnamn) |
 |:-:|:-:|:-:|
 | datameddelande | N/A | validate_only |
-| meddelande | title, body, android_channel_id, icon, sound, tag, color, click_action, image, ticker, sticky, visibility, notification_priority, notification_count <br> | validate_only |
+| meddelandemeddelande | title, body, android_channel_id, icon, sound, tag, color, click_action, image, ticker, sticky, visibility, notification_priority, notification_count <br> | validate_only |
 
 
 >[!ENDTABS]
@@ -278,8 +278,8 @@ The **Adobe Campaign Classic-tillägg** för Adobe Experience Platform Mobile SD
 Det här tillägget, som gäller både Campaign Classic v7 och Campaign v8, är förinstallerat i din miljö och måste konfigureras. Så här konfigurerar du tillägget för din mobila taggegenskap:
 
 1. Öppna taggegenskapen som du skapade tidigare.
-1. I den vänstra navigeringen bläddrar du till **Tillägg** och öppna **Katalog** -fliken. Använd sökfältet för att hitta **Adobe Campaign Classic** tillägg.
-1. På Campaign Classic-kortet klickar du på **Installera** -knappen.
+1. Bläddra till vänster **Tillägg** och öppna **Katalog** -fliken. Använd sökfältet för att hitta **Adobe Campaign Classic** tillägg.
+1. Klicka på Campaign Classicen **Installera** -knappen.
 1. Ange inställningar enligt beskrivningen i [Dokumentation för Adobe Experience Platform Mobile SDK](https://developer.adobe.com/client-sdks/documentation/adobe-campaign-classic/){target="_blank"}.
 
 Nu kan du lägga till Campaign i din app, vilket beskrivs i  [Dokumentation för Adobe Experience Platform Mobile SDK](https://developer.adobe.com/client-sdks/documentation/adobe-campaign-classic/#add-campaign-classic-to-your-app){target="_blank"}.

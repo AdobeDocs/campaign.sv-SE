@@ -3,9 +3,9 @@ title: Arbeta med Campaign och externa databaser (FDA)
 description: Lär dig hur du arbetar med Campaign och externa databaser
 feature: Federated Data Access
 role: Admin
-level: Beginner, Intermediate
+level: Beginner
 exl-id: 0259b3bd-9dc2-44f9-a426-c4af46b00a4e
-source-git-commit: b71197027d9521fd648a0c2657b6b76a1aa7fc9a
+source-git-commit: f577ee6d303bab9bb07350b60cf0fa6fc9d3a163
 workflow-type: tm+mt
 source-wordcount: '727'
 ht-degree: 1%
@@ -16,14 +16,14 @@ ht-degree: 1%
 
 Använd FDA Connector (Federated Data Access) för att ansluta Campaign till en eller flera **externa databaser** och bearbeta information som lagras i dem utan att påverka data i Campaign Cloud-databasen. Sedan kan du komma åt externa data utan att ändra strukturen på Adobe Campaign-data.
 
-![](../assets/do-not-localize/speech.png) Som användare av hanterade Cloud Services [kontakta Adobe](../start/campaign-faq.md#support) för att ansluta externa databaser till Campaign.
+![](../assets/do-not-localize/speech.png) Som användare av hanterade Cloud Service [kontakta Adobe](../start/campaign-faq.md#support) för att ansluta externa databaser till Campaign.
 
 
 >[!NOTE]
 >
 >* Kompatibla databaser för Federated Data Access listas i [Kompatibilitetsmatris](../start/compatibility-matrix.md).
 >
->* När det gäller [Företagsdistribution (FFDA)](../architecture/enterprise-deployment.md), finns det ett specifikt externt konto för att hantera kommunikationen mellan den lokala databasen i Campaign och molndatabasen i Snowflake. Det här externa kontot har konfigurerats för dig av Adobe och **får inte** ändras.
+>* När det gäller en [Företagsdistribution (FFDA)](../architecture/enterprise-deployment.md), finns det ett specifikt externt konto för att hantera kommunikationen mellan den lokala databasen i Campaign och molndatabasen i Snowflake. Det här externa kontot har konfigurerats för dig av Adobe och **får inte** ändras.
 >
 
 
@@ -33,7 +33,7 @@ FDA-alternativet begränsas av det tredjepartsdatabassystem som du använder.
 
 Tänk dessutom på följande begränsningar och bästa metoder:
 
-* FDA-alternativet används för att ändra data i externa databaser i batchläge i arbetsflöden. För att undvika prestandaproblem rekommenderar vi inte att du använder FDA-modulen i samband med enhetsåtgärder som: personalisering, interaktion, meddelanden i realtid osv.
+* FDA-alternativet används för att ändra data i externa databaser i batchläge i arbetsflöden. För att undvika prestandaproblem bör du inte använda FDA-modulen i samband med enhetsåtgärder som personalisering, interaktion, meddelanden i realtid osv.
 
 * Undvik de åtgärder som behöver använda både Adobe Campaign och den externa databasen så mycket som möjligt. Om du vill göra det kan du:
 
@@ -54,7 +54,7 @@ Campaign innehåller flera arbetsflödesaktiviteter som du kan använda för att
 
 * **Filtrera på externa data** - Använd **[!UICONTROL Query]** -aktivitet för att lägga till externa data och använda dem i definierade filterkonfigurationer.
 
-* **Skapa underuppsättningar** - Använd **[!UICONTROL Split]** för att skapa delmängder. Du kan använda externa data för att definiera de filtervillkor som ska användas.
+* **Skapa underuppsättningar** - Använd **[!UICONTROL Split]** aktivitet för att skapa delmängder. Du kan använda externa data för att definiera de filtervillkor som ska användas.
 
 * **Läs in extern databas** - Använd externa data i **[!UICONTROL Data loading (RDBMS)]** aktivitet.
 

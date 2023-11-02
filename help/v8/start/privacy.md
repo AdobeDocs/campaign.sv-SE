@@ -3,9 +3,9 @@ title: Hantera sekretessförfrågningar i Campaign
 description: Lär dig hantera sekretessförfrågningar i Campaign
 feature: Privacy
 role: Admin
-level: Beginner, Intermediate, Experienced
+level: Beginner
 exl-id: 0f81d318-dbfd-45c8-b391-b1d14d23e9c8
-source-git-commit: e0ec2940db3120dc8fbfd17dd2f5083bbf31232c
+source-git-commit: f577ee6d303bab9bb07350b60cf0fa6fc9d3a163
 workflow-type: tm+mt
 source-wordcount: '1034'
 ht-degree: 38%

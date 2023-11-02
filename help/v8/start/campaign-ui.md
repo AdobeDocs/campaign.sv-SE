@@ -2,13 +2,13 @@
 title: Upptäck arbetsytan Campaign
 description: Lär dig hur du bläddrar och använder arbetsytan i Campaign
 feature: Overview
-role: Admin, Developer, User
+role: User
 level: Beginner
 exl-id: a7846b95-7570-4dce-b3f4-d3cc23eefcac
-source-git-commit: 3c7455f348468a8f00fb853a3269a1d63b81e7b8
+source-git-commit: f577ee6d303bab9bb07350b60cf0fa6fc9d3a163
 workflow-type: tm+mt
 source-wordcount: '524'
-ht-degree: 0%
+ht-degree: 1%
 
 ---
 
@@ -24,7 +24,7 @@ Lär dig hur du installerar och konfigurerar Campaign Client Console i [det här
 
 Du kan också använda en webbläsare för att få tillgång till Campaign. I det här sammanhanget är bara en deluppsättning av Campaign-funktionerna tillgängliga. [Läs mer](#web-browser)
 
-## Bläddra i användargränssnittet{#ui-browse}
+## Bläddra i gränssnittet{#ui-browse}
 
 När du är ansluten till Campaign kommer du åt startsidan. Bläddra bland länkarna för att komma åt funktioner. Vilka funktioner som är tillgängliga i användargränssnittet beror på vilka alternativ och behörigheter du har.
 

@@ -4,9 +4,9 @@ description: Lär dig hur du anpassar inställningarna för gränssnittet i Camp
 version: v8
 feature: Application Settings
 role: Admin, Developer
-level: Beginner, Intermediate, Experienced
-exl-id: fefb6d80-c3d1-448b-82ab-648da58a0ba4
-source-git-commit: 290f4e9a0d13ef49caacb7a128ccc266bafd5e69
+level: Beginner
+exl-id: 9fa6fc42-45be-41db-9b4a-19b3b0c40dcd
+source-git-commit: f577ee6d303bab9bb07350b60cf0fa6fc9d3a163
 workflow-type: tm+mt
 source-wordcount: '1846'
 ht-degree: 1%
@@ -32,7 +32,7 @@ Lär dig hur du hanterar mappar och vyer i [den här sidan](../audiences/folders
 
 ## Hantera och anpassa listor{#customize-lists}
 
-I Campaign Client Console visas data i listor. Du kan anpassa dessa listor efter dina behov. Du kan till exempel lägga till kolumner, filtrera data, räkna poster, spara och dela inställningarna.
+I Campaign Client Console visas data i listor. Du kan anpassa listorna efter dina behov. Du kan till exempel lägga till kolumner, filtrera data, räkna poster, spara och dela inställningarna.
 
 Dessutom kan du skapa och spara filter.  Läs mer om filter i [den här sidan](../audiences/create-filters.md).
 
@@ -46,13 +46,14 @@ I den nedre högra delen av listskärmen visas en **räknare** visar hur många 
 
 Om ett frågetecken visas i stället för numret till höger, till exempel `240/?`klickar du på räknaren för att starta beräkningen.
 
-Om du vill läsa in och visa fler poster klickar du **[!UICONTROL Continue loading]**. Som standard läses 200 poster in. Om du vill ändra standardantalet poster som ska läsas in använder du **[!UICONTROL Configure list]** ikonen längst ned till höger i listan. Klicka på **[!UICONTROL Advanced parameters]** (längst ned till vänster) och ändra antalet rader som ska hämtas.
+Om du vill läsa in och visa fler poster klickar du **[!UICONTROL Continue loading]**. Som standard läses 200 poster in. Använd **[!UICONTROL Configure list]** ikonen längst ned till höger i listan. Klicka på **[!UICONTROL Advanced parameters]** (längst ned till vänster) och ändra antalet rader som ska hämtas.
 
 Om du vill läsa in alla poster högerklickar du på listan och väljer **[!UICONTROL Load all]**.
 
 >[!CAUTION]
 >
 >När en lista innehåller många poster kan det ta en stund att läsa in hela filen.
+>
 
 ### Lägga till och ta bort kolumner {#add-columns}
 
@@ -69,22 +70,23 @@ Kolumnen läggs till till höger om de befintliga kolumnerna.
 Du kan också använda skärmen för listkonfiguration för att lägga till och ta bort kolumner:
 
 1. Klicka på i en lista över poster **[!UICONTROL Configure list]** ikonen längst ned till höger.
-1. Dubbelklicka på de fält som ska läggas till i dialogrutan **[!UICONTROL Available fields]** lista: läggs de till i **[!UICONTROL Output columns]** lista.
+1. Dubbelklicka på de fält som ska läggas till i dialogrutan **[!UICONTROL Available fields]** lista: de läggs till i **[!UICONTROL Output columns]** lista.
 
    ![Skärm för listkonfiguration](assets/list-config-screen.png)
 
 
    >[!NOTE]
    >
-   >Som standard visas inte avancerade fält. Om du vill visa dem klickar du på **Visa avancerade fält** ikonen längst ned till höger i listan med tillgängliga fält.
+   >Som standard visas inte avancerade fält. Klicka på knappen **Visa avancerade fält** ikonen längst ned till höger i listan med tillgängliga fält.
    >
-   >Fält identifieras av specifika ikoner: SQL-fält, länkade tabeller, beräknade fält osv. För varje markerat fält visas beskrivningen under listan med tillgängliga fält.
+   >Fält identifieras av specifika ikoner: SQL-fält, länkade tabeller, beräkningsfält osv. För varje markerat fält visas beskrivningen under listan med tillgängliga fält.
+   >
 
 1. Använd upp-/nedpilarna för att ändra **visningsordning**.
 
 1. Klicka **[!UICONTROL OK]** för att bekräfta konfigurationen och visa resultatet.
 
-Om du behöver ta bort en kolumn markerar du den och klickar på **Papperskorgen** ikon.
+Om du behöver ta bort en kolumn markerar du den och klickar på **Papperskorgen** -ikon.
 
 Du kan använda **[!UICONTROL Distribution of values]** om du vill visa ompartitionen av värden för det valda fältet i den aktuella mappen.
 
@@ -117,7 +119,7 @@ Listkonfigurationerna definieras lokalt för varje användare. När den lokala c
 
 Som standard gäller inställningsparametrar för alla listor med motsvarande mapptyp. När du ändrar hur listan med mottagare visas från en mapp, tillämpas den här konfigurationen på alla andra mottagarmappar.
 
-Du kan spara mer än en konfiguration som ska användas för olika mappar av samma typ. Konfigurationen sparas med egenskaperna för den mapp som innehåller data och kan tillämpas igen.
+Du kan spara mer än en konfiguration som ska användas för olika mappar av samma typ. Konfigurationen sparas med egenskaperna för den mapp som innehåller data och kan tillämpas på nytt.
 
 Så här sparar du en listkonfiguration så att den kan återanvändas:
 
@@ -130,7 +132,7 @@ Du kan sedan använda den här konfigurationen i en annan mapp av samma typ. Lä
 
 ### Exportera en lista {#exporting-a-list}
 
-Om du vill exportera data från en lista måste du använda en exportguide. Du kommer åt den genom att markera elementen som ska exporteras i listan, högerklicka och välja **[!UICONTROL Export...]**.
+Om du vill exportera data från en lista måste du använda en exportguide. Du kommer åt den genom att markera de element som ska exporteras i listan, högerklicka och välja **[!UICONTROL Export...]**.
 
 <!--The use of the import and export functions is explained in [Generic imports and exports](../../platform/using/about-generic-imports-exports.md).-->
 
@@ -147,7 +149,7 @@ Klicka på kolumnrubriken om du vill använda en stigande eller fallande sorteri
 Du kan också konfigurera sortering eller kombinera sorteringsvillkor. Följ stegen nedan för att göra detta:
 
 1. **[!UICONTROL Configure list]** nedan och till höger om listan.
-1. Klicka på knappen **[!UICONTROL Sorting]** -fliken.
+1. I fönstret för listkonfiguration klickar du på **[!UICONTROL Sorting]** -fliken.
 1. Markera de fält som ska sorteras och sorteringsriktningen (stigande eller fallande).
 1. Sorteringsprioriteten definieras av sorteringskolumnernas ordning. Om du vill ändra prioriteten använder du lämpliga ikoner för att ändra ordningen på kolumnerna.
 
@@ -162,7 +164,7 @@ Du kan också konfigurera sortering eller kombinera sorteringsvillkor. Följ ste
 
 En uppräkning (kallas även&quot;lista med specificerade värden&quot;) är en lista med värden som föreslås av systemet för att fylla i fält. Använd uppräkningar för att standardisera värdena för dessa fält, hjälp med inmatning av data eller användning inom frågor.
 
-Värdelistan visas som en nedrullningsbar lista där du kan välja vilket värde som ska anges i fältet. Listrutan möjliggör även prediktiv inmatning: anger de första bokstäverna så fyller programmet i resten.
+Värdelistan visas som en listruta där du kan välja vilket värde som ska anges i fältet. Listrutan möjliggör även prediktiv inmatning: ange de första bokstäverna och programmet fyller i resten.
 
 Värdena för den här typen av fält definieras och den övergripande administrationen av dessa fält (genom att lägga till/ta bort ett värde) utförs via **[!UICONTROL Administration > Platform > Enumerations]** trädnod.
 
@@ -172,7 +174,7 @@ Värdena för den här typen av fält definieras och den övergripande administr
 
 Uppräkningar lagras i **[!UICONTROL Administration > Platform > Enumerations]** Utforskarens mapp.
 
-De kan vara: Öppna, System, Moticon eller Stängd.
+De kan vara: Open, System, Emoticon eller Closed.
 
 * An **Öppna** Med uppräkning kan användare lägga till nya värden direkt i de fält som är baserade på den här uppräkningen.
 * A **Stängd** uppräkningen har en fast lista med värden som bara kan ändras från **[!UICONTROL Administration > Platform > Enumerations]** Utforskarens mapp.
@@ -188,13 +190,13 @@ För **Öppna** och **Stängd** uppräkningar, specifika alternativ är tillgän
 
 ### Rensa alias {#alias-cleansing}
 
-I uppräkningsfälten kan du välja ett värde eller ange ett anpassat värde som inte är tillgängligt i listrutan. Anpassade värden kan läggas till i de befintliga uppräkningsvärdena som ett nytt - i det här fallet **[!UICONTROL Open]** måste vara markerat. Dessa anpassade värden kan rensas med hjälp av aliasrensningsfunktioner. Exempel: en användare anger `Adob` i stället för `Adobe`, kan aliasrensningsprocessen automatiskt ersätta den med rätt term.
+I uppräkningsfälten kan du välja ett värde eller ange ett anpassat värde som inte är tillgängligt i listrutan. Anpassade värden kan läggas till i de befintliga uppräkningsvärdena som ett nytt - i det här fallet **[!UICONTROL Open]** måste vara markerat. Dessa anpassade värden kan rensas med hjälp av funktioner för aliasrensning. Om en användare till exempel anger `Adob` i stället för `Adobe`, kan aliasrensningsprocessen automatiskt ersätta den med rätt term.
 
 >[!CAUTION]
 >
 >Datarensning är en kritisk process som påverkar data i databasen. Adobe Campaign genomför massuppdateringar, vilket kan leda till att vissa värden tas bort. Den här åtgärden är därför reserverad för expertanvändare.
 
-Aktivera **[!UICONTROL Alias cleansing]** om du vill använda datarensningsfunktioner för en uppräkning. När det här alternativet är markerat visas **[!UICONTROL Alias]** -fliken visas längst ned i fönstret.
+Aktivera **[!UICONTROL Alias cleansing]** om du vill använda datarensningsfunktioner för en uppräkning. När det här alternativet är markerat visas **[!UICONTROL Alias]** visas längst ned i fönstret.
 
 När en användare anger ett värde som inte finns i en uppräkning för aliasrensning läggs det till i **Värden** lista. Du kan [skapa alias utifrån dessa värden](#convert-to-alias), eller [skapa nya alias från grunden](#create-alias).
 
@@ -202,7 +204,7 @@ När en användare anger ett värde som inte finns i en uppräkning för aliasre
 
 Så här skapar du ett alias:
 
-1. Klicka **[!UICONTROL Add]** knappen **[!UICONTROL Alias]** -fliken.
+1. Klicka **[!UICONTROL Add]** knappen på **[!UICONTROL Alias]** -fliken.
 1. Ange det alias som du vill konvertera och välj det värde som ska användas i listrutan.
 
    ![Skapa ett nytt alias](assets/new-alias.png)
@@ -243,26 +245,27 @@ Datarensning utförs av **[!UICONTROL Alias cleansing]** tekniskt arbetsflöde. 
 
 Rensning kan också aktiveras via **[!UICONTROL Cleanse values...]** länk.
 
-The **[!UICONTROL Advanced parameters...]** -länken kan du ange det datum från vilket insamlade värden ska tas med i beräkningen.
+The **[!UICONTROL Advanced parameters...]** -länken kan du ange det datum från vilket insamlade värden ska beaktas.
 
 Klicka på **[!UICONTROL Start]** för att köra datarensning.
 
 ##### Övervaka förekomster {#calculate-entry-occurrences}
 
-The **[!UICONTROL Alias]** en uppräknings underflik kan visa antalet förekomster av ett alias bland alla värden som anges. Den här informationen är en uppskattning och kommer att visas i **[!UICONTROL Hits]** kolumn.
+The **[!UICONTROL Alias]** en uppräknings underflik kan visa antalet förekomster av ett alias bland alla värden som anges. Den här informationen är en uppskattning och visas i **[!UICONTROL Hits]** kolumn.
 
 >[!CAUTION]
 >
 >Det kan ta lång tid att beräkna aliaspostförekomster.
+>
 
-Du kan köra träffberäkning manuellt via **[!UICONTROL Cleanse values...]** länk. Om du vill göra det klickar du på **[!UICONTROL Advanced parameters...]** och välj alternativ.
+Du kan köra träffberäkning manuellt via **[!UICONTROL Cleanse values...]** länk. Klicka på **[!UICONTROL Advanced parameters...]** och välj alternativ.
 
-* **[!UICONTROL Update the number of alias hits]**: gör att du kan uppdatera träffar som redan har beräknats, baserat på det angivna datumet.
-* **[!UICONTROL Recalculate the number of alias hits from the start]**: gör att du kan köra beräkningar på hela Adobe Campaign-plattformen.
+* **[!UICONTROL Update the number of alias hits]**: detta gör att du kan uppdatera träffar som redan har beräknats, baserat på det angivna datumet.
+* **[!UICONTROL Recalculate the number of alias hits from the start]**: gör att du kan köra beräkningen på hela Adobe Campaign-plattformen.
 
 Du kan också skapa ett dedikerat arbetsflöde så att beräkningen körs automatiskt för en viss period, till exempel en gång i veckan.
 
-Om du vill göra det skapar du en kopia av **[!UICONTROL Alias cleansing]** arbetsflöde, ändra schemaläggaren och använd följande inställningar i **[!UICONTROL Enumeration value cleansing]** aktivitet:
+Om du vill göra det skapar du en kopia av **[!UICONTROL Alias cleansing]** ändrar du schemaläggaren och använder följande inställningar i **[!UICONTROL Enumeration value cleansing]** aktivitet:
 
 * **-updateHits** för att uppdatera antalet aliasträffar,
 * **-updateHits:full** om du vill beräkna om alla aliasträffar.

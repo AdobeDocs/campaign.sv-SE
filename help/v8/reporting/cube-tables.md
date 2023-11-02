@@ -4,8 +4,9 @@ title: Använd kuber för att skapa rapporter om data
 description: Lär dig hur du använder kuber för att skapa rapporter
 feature: Reporting
 role: User, Data Engineer
+level: Beginner
 exl-id: 7dbc66ab-a468-40ff-9db2-b33e4fd27754
-source-git-commit: 567c2e84433caab708ddb9026dda6f9cb717d032
+source-git-commit: f577ee6d303bab9bb07350b60cf0fa6fc9d3a163
 workflow-type: tm+mt
 source-wordcount: '941'
 ht-degree: 1%

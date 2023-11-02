@@ -2,10 +2,10 @@
 title: Frågor och svar om Campaign v8
 description: Få svar på vanliga frågor om Adobe Campaign.
 feature: Overview
-role: Admin, Developer, User
+role: User
 level: Beginner
 exl-id: 027f5478-d86b-42be-b63d-ec8f5e1dd83d
-source-git-commit: 290f4e9a0d13ef49caacb7a128ccc266bafd5e69
+source-git-commit: f577ee6d303bab9bb07350b60cf0fa6fc9d3a163
 workflow-type: tm+mt
 source-wordcount: '643'
 ht-degree: 39%
@@ -22,7 +22,7 @@ Behöver du hjälp eftersom du arbetar med Campaign? Läs de viktigaste frågorn
 
    Denna regelbundna uppdateringsfrekvens syftar till att ge dig den senaste och bästa produkten, hålla din miljö säker och förbättra din upplevelse med produkten. Därför anser vi att det är viktigt att du kör den senaste versionen av Adobe Campaign.
 
-   ![](../assets/do-not-localize/speech.png)  Som användare av hanterade Cloud Services uppgraderas din instans av Adobe i varje ny version.
+   ![](../assets/do-not-localize/speech.png)  Som användare av hanterade Cloud Service uppgraderas din instans av Adobe i varje ny version.
 
 1. **Hur ansluter jag till Campaign v8?**
 
@@ -46,7 +46,7 @@ Behöver du hjälp eftersom du arbetar med Campaign? Läs de viktigaste frågorn
 
    Adobe Campaign har en uppsättning instrumentpaneler och verktyg för att övervaka e-postleveranser.
 
-   [Läs om Campaign Classic v7 och läs mer](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/monitoring-deliveries/about-delivery-monitoring.html){target="_blank"} hur du ser till att dina meddelanden skickas, övervakar körningen och vidtar åtgärder om ett fel inträffar.
+   [Läs dokumentationen om Campaign Classic v7 och lär dig mer](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/monitoring-deliveries/about-delivery-monitoring.html){target="_blank"} hur du ser till att dina meddelanden skickas, övervakar körningen och vidtar åtgärder om ett fel inträffar.
 
 1. **Kan jag övervaka körningen av arbetsflödet?**
 
@@ -60,7 +60,7 @@ Behöver du hjälp eftersom du arbetar med Campaign? Läs de viktigaste frågorn
 
    En underdomän är en division av domänen som kan användas för att isolera varumärken eller olika typer av trafik (transaktionsmeddelanden, marknadsföringsinformation osv.).
 
-   ![](../assets/do-not-localize/speech.png)  Som användare med hanterade Cloud Services kan du kontakta Adobe för att delegera dina underdomäner till Adobe.
+   ![](../assets/do-not-localize/speech.png)  Som användare av hanterade Cloud Service kan du kontakta Adobe för att delegera dina underdomäner till Adobe.
 
 1. **Kan jag som Campaign Classic v7-användare migrera till Campaign v8?**
 
@@ -76,7 +76,7 @@ Behöver du hjälp eftersom du arbetar med Campaign? Läs de viktigaste frågorn
 
 1. **Kan jag få kontakt med Campaign-experter?**
 
-   Gå med i Campaign Community: söka efter svar i befintliga frågor eller fråga experterna. [Delta i konversationen](https://experienceleaguecommunities.adobe.com/t5/adobe-campaign-classic/ct-p/adobe-campaign-classic-community){target="_blank"}
+   Gå med i Campaign Community: sök efter svar i befintliga frågor eller fråga experterna. [Delta i konversationen](https://experienceleaguecommunities.adobe.com/t5/adobe-campaign-classic/ct-p/adobe-campaign-classic-community){target="_blank"}
 
 
 1. **Hur loggar jag ett problem?**

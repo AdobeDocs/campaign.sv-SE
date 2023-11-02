@@ -3,8 +3,9 @@ title: E-postparametrar i Adobe Campaign
 description: Läs mer om alternativ och inställningar som är specifika för e-postleverans i Adobe Campaign.
 feature: Email
 role: User
-level: Beginner, Intermediate, Experienced
-source-git-commit: 44f30f753e3ed75b7e56caf7bd8cdfa7cbee5c35
+level: Beginner
+exl-id: ad75f01e-2c6c-4607-b15a-8870d399002a
+source-git-commit: f577ee6d303bab9bb07350b60cf0fa6fc9d3a163
 workflow-type: tm+mt
 source-wordcount: '840'
 ht-degree: 8%
@@ -32,7 +33,7 @@ Adobe Campaign hanterar inte själva arkiverade filer. Det gör att du kan skick
 
 Arkiveringsmålet är valfri e-postadress som är osynlig för leveransmottagarna.
 
-![](../assets/do-not-localize/speech.png)  Som användare av hanterade Cloud Services [kontakta Adobe](../start/campaign-faq.md#support){target="_blank"} för att kommunicera e-postadressen för den kontroll av webbläsarkompatibilitet som ska användas för arkivering.
+![](../assets/do-not-localize/speech.png)  Som användare av hanterade Cloud Service [kontakta Adobe](../start/campaign-faq.md#support){target="_blank"} för att kommunicera e-postadressen för den kontroll av webbläsarkompatibilitet som ska användas för arkivering.
 
 När BCC-e-postadressen har definierats måste du aktivera det dedikerade alternativet på leveransnivån.
 
@@ -111,9 +112,9 @@ Om du vill göra det väljer du **[!UICONTROL Force the encoding used for messag
 
 The **[!UICONTROL SMTP]** -fliken i leveransegenskaperna kan du även konfigurera hanteringen av studsmeddelanden.
 
-* **[!UICONTROL Errors-to-address]**: Som standard tas studsade e-postmeddelanden emot i standardfelrutan för plattformen, men du kan definiera en specifik feladress för en leverans.
+* **[!UICONTROL Errors-to-address]**: Som standard tas studsade e-postmeddelanden emot i standardfelfältet på plattformen, men du kan definiera en specifik feladress för en leverans.
 
-* **[!UICONTROL Bounce address]**: Du kan också definiera en annan adress dit obearbetade studsade e-postmeddelanden vidarebefordras. Med den här adressen kan du undersöka orsaken till att studsa när e-postmeddelanden inte automatiskt kunde kvalificeras av programmet.
+* **[!UICONTROL Bounce address]**: Du kan också definiera en annan adress dit obearbetade e-postmeddelanden vidarebefordras. Med den här adressen kan du undersöka orsaken till att studsa när e-postmeddelanden inte automatiskt kunde kvalificeras av programmet.
 
 Vart och ett av dessa fält kan anpassas med den dedikerade ikonen. Läs mer om personaliseringsfält i [det här avsnittet](personalization-fields.md).
 
@@ -123,7 +124,7 @@ Mer information om hantering av studsade e-postmeddelanden finns i [det här avs
 
 ## Lägg till SMTP-rubriker {#adding-smtp-headers}
 
-Det går att lägga till SMTP-huvuden i leveranserna. Använd relevanta avsnitt i **[!UICONTROL SMTP]** -fliken i leveransen.
+Det går att lägga till SMTP-huvuden i leveranserna. Använd relevanta avsnitt i **[!UICONTROL SMTP]** i leveransen.
 
 Skriptet som anges i det här fönstret måste referera till en rubrik per rad i följande formulär: **name:value**.
 

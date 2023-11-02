@@ -3,9 +3,9 @@ title: CRM Connectors-datasynkronisering
 description: Hantera data mellan Campaign och CRM
 feature: Salesforce Integration, Microsoft CRM Integration
 role: Admin
-level: Beginner, Intermediate, Experienced
+level: Beginner
 exl-id: 2a7ae88e-d47f-416b-84cd-986ab9be6aef
-source-git-commit: 2ce1ef1e935080a66452c31442f745891b9ab9b3
+source-git-commit: f577ee6d303bab9bb07350b60cf0fa6fc9d3a163
 workflow-type: tm+mt
 source-wordcount: '1322'
 ht-degree: 0%
@@ -26,7 +26,7 @@ The **[!UICONTROL CRM Connector]** aktiviteten måste konfigureras för att synk
 
 ![](assets/crm-connector-ms-dyn.png)
 
-Med den här aktiviteten kan du:
+Med den här aktiviteten kan du
 
 * Importera från CRM - [Läs mer](#importing-from-the-crm)
 * Exportera till CRM - [Läs mer](#exporting-to-the-crm)
@@ -35,7 +35,7 @@ Med den här aktiviteten kan du:
 
 ![](assets/crm-remote-op.png)
 
-Välj det externa konto som matchar det CRM-konto som du vill konfigurera synkroniseringen med och välj sedan det objekt som ska synkroniseras: konton, möjligheter, leads, kontakter osv.
+Välj det externa konto som matchar det CRM-konto som du vill konfigurera synkronisering med och välj sedan det objekt som ska synkroniseras: konton, affärsmöjligheter, leads, kontakter osv.
 
 ![](assets/crm-remote-obj.png)
 
@@ -51,17 +51,17 @@ Om du vill importera data via CRM i Adobe Campaign måste du skapa följande arb
 1. I **[!UICONTROL Remote object]** väljer du det objekt som ska importeras. Det här objektet matchar en av tabellerna som skapades i Adobe Campaign under anslutningskonfigurationen.
 1. I **[!UICONTROL Remote fields]** anger du fälten som ska importeras.
 
-   Om du vill lägga till ett fält klickar du på **[!UICONTROL Add]** i verktygsfältet och klickar sedan på **[!UICONTROL Edit expression]** ikon.
+   Om du vill lägga till ett fält klickar du på **[!UICONTROL Add]** i verktygsfältet och klickar sedan på **[!UICONTROL Edit expression]** -ikon.
 
    Ändra vid behov dataformatet med hjälp av listrutan i **[!UICONTROL Conversion]** kolumner. Möjliga konverteringstyper beskrivs i [det här avsnittet](#data-format).
 
    >[!CAUTION]
    >
-   >Identifieraren för posten i CRM är obligatorisk för att länka objekt i CRM och Adobe Campaign. Den läggs till automatiskt när förpackningen godkänns.
+   >Identifieraren för posten i CRM är obligatorisk för att länka objekt i CRM och Adobe Campaign. Den läggs till automatiskt när lådan är godkänd.
    >
    >Det sista ändringsdatumet på CRM-sidan är också obligatoriskt för inkrementell dataimport.
 
-1. Du kan filtrera de data som ska importeras efter dina behov. Om du vill göra det klickar du på **[!UICONTROL Edit the filter...]** länk.
+1. Du kan filtrera de data som ska importeras efter dina behov. Klicka på **[!UICONTROL Edit the filter...]** länk.
 
    I följande exempel kommer Adobe Campaign endast att importera kontakter för vilka viss aktivitet har registrerats sedan 1 november 2021.
 
@@ -91,28 +91,28 @@ Datumet för den senaste synkroniseringen lagras som standard i ett alternativ s
 > 
 >Du måste uppdatera det här alternativet manuellt för ytterligare import.
 
-Du kan ange vilket CRM-fjärrfält som ska beaktas för att identifiera de senaste ändringarna.
+Du kan ange vilket fjärr-CRM-fält som ska beaktas för att identifiera de senaste ändringarna.
 
 Som standard används följande fält (i den angivna ordningen):
 
 * För Microsoft Dynamics: **modifiedon**,
 * För Salesforce.com: **SenastÄndradDatum**, **SystemModstamp**.
 
-Aktivera **[!UICONTROL Automatic index]** alternativ genererar tre variabler som kan användas i synkroniseringsarbetsflödet via en **[!UICONTROL JavaScript code]** typaktivitet. Dessa verksamheter är följande:
+Aktiverar **[!UICONTROL Automatic index]** alternativ genererar tre variabler som kan användas i synkroniseringsarbetsflödet via en **[!UICONTROL JavaScript code]** typaktivitet. Dessa verksamheter är följande:
 
 * **vars.crmOptionName**: namnet på det alternativ som innehåller det senaste importdatumet.
 * **vars.crmStartImport**: startdatum (inkluderat) för den senaste dataimporten.
 * **var.crmEndDate**: slutdatum (exkluderat) för den senaste dataimporten.
 
-   >[!NOTE]
-   >
-   >Dessa datum visas i följande format: **yyyy/MM/dd hh:mm:ss**.
+  >[!NOTE]
+  >
+  >Dessa datum visas i följande format: **yyyy/MM/dd hh:mm:ss**.
 
 ### Filtrera data {#filtering-data}
 
 För att de olika CRM-systemen ska fungera effektivt måste du skapa filter enligt följande regler:
 
-* Varje filtreringsnivå får endast använda en typ av operator.
+* För varje filtreringsnivå får endast en typ av operator användas.
 * Operatorn AND NOT stöds inte.
 * Jämförelser kan bara gälla null-värden (&#39;är tom&#39;/&#39;är inte tom&#39;) eller tal. Detta innebär att värdet (högerkolumnen) bedöms och att resultatet av denna bedömning måste vara ett tal. JOBIN-typjämförelser stöds därför inte.
 * Värdet i den högra kolumnen utvärderas i JavaScript.
@@ -123,7 +123,7 @@ För att de olika CRM-systemen ska fungera effektivt måste du skapa filter enli
 
 I Microsoft Dynamics och Salesforce.com kan du sortera de fjärrfält som ska importeras i stigande eller fallande ordning.
 
-Om du vill göra det klickar du på **[!UICONTROL Order by]** länka och lägg till kolumnerna i listan.
+Klicka på **[!UICONTROL Order by]** länka och lägg till kolumnerna i listan.
 
 Sorteringsordningen för kolumnerna i listan är:
 
@@ -143,7 +143,7 @@ Markera sedan fälten för den inkommande ifyllning som du vill importera, så s
 
 Exportera Adobe Campaign-data till CRM för att kopiera hela innehållet till CRM-databasen.
 
-Om du vill exportera data till CRM skapar du följande arbetsflöde:
+Om du vill exportera data till CRM skapar du följande typ av arbetsflöde:
 
 ![](assets/crm-export-diagram.png)
 
@@ -160,7 +160,7 @@ Om du vill exportera data till CRM skapar du följande arbetsflöde:
 
 1. I **[!UICONTROL Mapping]** avsnitt, klicka **[!UICONTROL New]** för att ange de fält som ska exporteras och deras mappning i CRM.
 
-   Om du vill lägga till ett fält klickar du på **[!UICONTROL Add]** i verktygsfältet och klickar sedan på **[!UICONTROL Edit expression]** ikon.
+   Om du vill lägga till ett fält klickar du på **[!UICONTROL Add]** i verktygsfältet och klickar sedan på **[!UICONTROL Edit expression]** -ikon.
 
    >[!NOTE]
    >
@@ -186,7 +186,7 @@ The **[!UICONTROL Default]** Läget tillämpar automatisk datakonvertering, som 
 
 Andra konverteringar är:
 
-* **[!UICONTROL Date only]**: tar bort datum- och tidstypfält.
+* **[!UICONTROL Date only]**: tar bort fält av typen Datum + Tid.
 * **[!UICONTROL Without time offset]**: avbryter hanteringen av tidszoner som används i standardläget.
 * **[!UICONTROL Copy/Paste]**: använder rådata som strängar (ingen konvertering).
 
@@ -202,7 +202,7 @@ Dessa alternativ lägger till relaterade utdataövergångar.
 
 Infoga sedan de relevanta aktiviteterna för att bearbeta data. Lägg till exempel till en **Vänta** aktivitet och schemalägg nya försök för fel.
 
-The **[!UICONTROL Reject]** Med utdataövergång får du tillgång till det utdataschema som innehåller de specifika kolumner som är relevanta för felmeddelanden och koder. För Salesforce.com är den här kolumnen **errorSymbol** (felsymbol, skiljer sig från felkoden), **errorMessage** (beskrivning av felkontexten).
+The **[!UICONTROL Reject]** Med utdataövergång får du tillgång till det utdataschema som innehåller de specifika kolumner som är relevanta för felmeddelanden och koder. För Salesforce.com är kolumnen **errorSymbol** (felsymbol, skiljer sig från felkoden), **errorMessage** (beskrivning av felkontexten).
 
 ## Importera objekt som tagits bort i CRM {#importing-objects-deleted-in-the-crm}
 
@@ -214,7 +214,7 @@ Du kan importera objekt som har tagits bort i CRM till Adobe Campaign.
 
    >[!CAUTION]
    >
-   >Borttagningsperioden måste sammanfalla med dina CRM-specifika begränsningar. För till exempel Salesforce.com går det inte att återställa element som togs bort för över 30 dagar sedan.
+   >Borttagningsperioden måste sammanfalla med dina CRM-specifika begränsningar. För Salesforce.com går det inte att återställa element som tagits bort för över 30 dagar sedan.
 
 ## Ta bort objekt i CRM {#deleting-objects-in-the-crm}
 

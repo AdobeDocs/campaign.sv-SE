@@ -3,9 +3,9 @@ title: Formulär för kampanjindata
 description: Lär dig hur du anpassar indataformulär
 feature: Web Forms, Landing Pages
 role: Developer
-level: Beginner, Intermediate, Experienced
+level: Beginner, Intermediate
 exl-id: 62908bba-9cfa-42b6-b463-b601496d535b
-source-git-commit: 1a0b473b005449be7c846225e75a227f6d877c88
+source-git-commit: f577ee6d303bab9bb07350b60cf0fa6fc9d3a163
 workflow-type: tm+mt
 source-wordcount: '2552'
 ht-degree: 0%

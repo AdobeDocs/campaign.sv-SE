@@ -1,11 +1,11 @@
 ---
-title: Övergång från Campaign Classic v7 till Campaign v8
+title: Övergång från Campaign Classic v7 till kampanj v8
 description: Lär dig om skillnaderna mellan Campaign Classic v7 och Campaign v8.
 feature: Overview
-role: Admin, Developer, User
-level: Beginner, Intermediate, Experienced
+role: User
+level: Beginner
 exl-id: 00ba1c43-9558-4adb-83a1-6597c2bbca62
-source-git-commit: 2d0c82df052c9b8c9f264c2ad15ac6050025f770
+source-git-commit: f577ee6d303bab9bb07350b60cf0fa6fc9d3a163
 workflow-type: tm+mt
 source-wordcount: '682'
 ht-degree: 5%
@@ -23,11 +23,11 @@ Som tidigare [!DNL Campaign Classic] v7-användare, du bör inte förvänta dig 
 >* Automatisk migrering från en befintlig Campaign Classic v7-miljö är inte tillgänglig än.
 
 
-## Hanterade Cloud Services{#cloud-services}
+## Hanterade Cloud Service{#cloud-services}
 
 Adobe Campaign v8 finns som **Hanterad Cloud Service**.
 
-Adobe Campaign Managed Cloud Services har en plattform för hanterade Cloud Services för att utforma kundupplevelser i flera kanaler och erbjuder en miljö för visuell kampanjsamordning, interaktionshantering i realtid och kanalövergripande körning. Läs mer om Campaign Managed-Cloud Services i [produktbeskrivningssida](https://helpx.adobe.com/legal/product-descriptions/adobe-campaign-managed-cloud-services.html){target="_blank"}.
+Adobe Campaign Managed Cloud Services har en plattform för hanterade Cloud Service för att utforma kundupplevelser i flera kanaler och erbjuder en miljö för visuell kampanjsamordning, interaktionshantering i realtid och kanalövergripande körning. Läs mer om Campaign Managed-Cloud Service i [produktbeskrivningssida](https://helpx.adobe.com/legal/product-descriptions/adobe-campaign-managed-cloud-services.html){target="_blank"}.
 
 Det nya erbjudandet kombinerar förstklassiga tjänster med proaktiv tillsyn och snabb varning, med fokus på tre områden:
 
@@ -64,7 +64,7 @@ Kampanjanvändare ansluter bara via sina Adobe ID. Samma Adobe ID används för 
 
 Använd modulen Marketing Analytics för att analysera och mäta data, beräkna statistik, förenkla och optimera framtagning och beräkning av rapporter. Skapa dessutom rapporter och bygg upp målpopulationer: när de har identifierats lagras de i listor som kan användas i Adobe Campaign (målinriktning, segmentering osv.).
 
-Med Adobe Campaign v8 är kubrapporterna optimerade och ger bättre skalbarhet än Campaign Classic v7. I den specifika distributionsmodellen gäller inte tidigare begränsningar för kuber i Campaign v8. Läs mer om kuber i [det här avsnittet](../../v8/reporting/gs-cubes.md).
+Med Adobe Campaign v8 är kubrapporterna optimerade och har bättre skalbarhet än Campaign Classic v7. I den specifika distributionsmodellen gäller inte tidigare begränsningar för kuber i Campaign v8. Läs mer om kuber i [det här avsnittet](../../v8/reporting/gs-cubes.md).
 
 ## Otillgängliga funktioner{#gs-unavailable-features}
 
@@ -77,7 +77,7 @@ Observera att vissa funktioner inte är tillgängliga i samband med en [Företag
 
 ## Funktioner som inte stöds{#gs-removed}
 
-Vissa historiska Campaign Classic v7-funktioner stöds inte längre i Campaign v8, till exempel:
+Vissa historikfunktioner för Campaign Classic v7 stöds inte längre i Campaign v8, till exempel:
 
 * Social marknadsföring med Facebook
 * ACS Connector (Prime offer)

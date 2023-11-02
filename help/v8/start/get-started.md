@@ -2,10 +2,10 @@
 title: Kom igång med Campaign v8
 description: Ny på Adobe Campaign? Hitta dokumentation om hur du får igång din programvara och var du ska börja med gränssnittet.
 feature: Overview, Cross Channel Orchestration
-role: Admin, Developer, User
+role: User
 level: Beginner
 exl-id: 04b12907-3cb1-40f1-90b8-1524d84edf2d
-source-git-commit: e0ec2940db3120dc8fbfd17dd2f5083bbf31232c
+source-git-commit: f577ee6d303bab9bb07350b60cf0fa6fc9d3a163
 workflow-type: tm+mt
 source-wordcount: '866'
 ht-degree: 41%
