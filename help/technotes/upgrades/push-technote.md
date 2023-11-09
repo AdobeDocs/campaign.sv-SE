@@ -4,24 +4,22 @@ title: Kommande ändringar i push-meddelandekanalen
 description: Kommande ändringar i push-meddelandekanalen
 hide: true
 hidefromtoc: true
-source-git-commit: 11330ed8e79ec256b158747914f178b8b6857a33
+source-git-commit: 70d1e7336cce7660890b13def5efcb614c0dc12e
 workflow-type: tm+mt
-source-wordcount: '719'
-ht-degree: 0%
+source-wordcount: '699'
+ht-degree: 1%
 
 ---
 
 # Kommande ändringar i push-meddelandekanalen {#push-upgrade}
 
-Den här sidan beskriver kommande ändringar av Push Notification Channel via Firebase Cloud Messaging i Adobe Campaign Classic.
+Det finns viktiga förändringar i tjänsten Firebase Cloud Messaging (FCM) som kan påverka din Adobe Campaign Classic-implementering.
 
-Var är viktiga ändringar av tjänsten Firebase Cloud Messaging (FCM) som kan påverka er Adobe Campaign Classic-implementering?
-
-Som en del av Google fortsatta insatser för att förbättra sina tjänster kommer de äldre FCM-API:erna att upphöra i juni 2024 (HTTP-protokollet för Firebase Cloud Messaging: https://firebase.google.com/docs/cloud-messaging/http-server-ref)
+Som en del av Google fortsatta insatser för att förbättra sina tjänster kommer de äldre API:erna för FCM att upphöra i juni 2024 ([HTTP-protokoll för Firebase Cloud Messaging](https://firebase.google.com/docs/cloud-messaging/http-server-ref))
 
 Dessa API:er är för närvarande integrerade med Adobe Campaign Classic för att skicka push-meddelanden. Vi förstår att många av våra kunder, precis som du, förlitar sig på dessa tjänster för era marknadsföringskampanjer och kommunikationsbehov, och särskilt för Android-enheter.
 
-## Hur påverkar det dig?
+## Påverkas du?
 
 * **HTTP-API-användare (äldre)**: Om någon av dina aktiva push-meddelandekampanjer använder HTTP-API:t (äldre) påverkas din konfiguration direkt av den här ändringen. Vi rekommenderar att du granskar dina aktuella konfigurationer och förbereder dig för migreringen till de nyare API:erna.
 
@@ -35,7 +33,7 @@ Dessa API:er är för närvarande integrerade med Adobe Campaign Classic för at
 
 * **Support**: Vårt kundsupportteam kommer att finnas tillgängligt för att hjälpa dig under den här övergången. Vi kan också vara värd för webbinarier och hjälpmedelsseminarier som täcker de tekniska aspekterna och bästa metoderna för övergången.
 
-## Hur påverkar det dig?
+## Vad förväntar vi oss av dig?
 
 * **Håll dig informerad**: Håll ett öga på inkorgen för mer information från oss, inklusive den detaljerade övergångsplanen.
 
@@ -53,7 +51,7 @@ Så du kan förutse ändringen här är de allmänna stegen som behövs för att
 
 ### Builduppgradering
 
-* Campaign Classic: Stöd för HTTPv1 har lagts till i AC7 20.3.1-versionen. Om du använder en tidigare version måste du först uppgradera till den senaste Campaign Classicen.
+* Campaign Classic: Stöd för HTTPv1 har lagts till i version 20.3.1. Om du använder en tidigare version måste du först uppgradera till den senaste Campaign Classicen.
 
 * Campaign v8: HTTPv1 stöds av alla Campaign v8-utgåvor. Ingen uppgradering behövs.
 
