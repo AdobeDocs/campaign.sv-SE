@@ -1,13 +1,13 @@
 ---
 title: Uppgradering av infrastruktur för e-postutskick av kampanj
 description: Uppgradering av infrastruktur för e-postutskick av kampanj
-source-git-commit: 4478c4b4b1eb3697ff03acfcd618ebfb1d875df9
+exl-id: f01e38ad-490e-4389-af5e-87beef533eb0
+source-git-commit: 557a74dbfbd0af385cc5104801ce3ab91dd33a95
 workflow-type: tm+mt
 source-wordcount: '366'
 ht-degree: 1%
 
 ---
-
 
 # Uppgradering av infrastruktur för e-postutskick av kampanj {#migrate-infra-to-aws}
 
@@ -64,4 +64,4 @@ Som Campaign-kund får du ytterligare meddelanden om uppgraderingen minst tretti
 
   Nej. Vi kan inte hantera eventuella begärda ändringar av det befintliga schemat eftersom detta troligtvis kommer att störa det tilldelade uppgraderingsevenemanget för en annan kund.
 
-För alla andra frågor kan du kontakta [Adobe kundtjänst](https://experienceleague.adobe.com/?support-solution=Campaign#support){target="_blank"}.
+För alla andra frågor kan du kontakta [Adobe kundtjänst](https://experienceleague.adobe.com/?support-solution=Campaign#support){target="_blank"}..
