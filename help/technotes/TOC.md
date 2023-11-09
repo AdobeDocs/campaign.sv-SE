@@ -5,10 +5,10 @@ type: Event
 title: Adobe Campaign Technotes
 description: Kampanjanteckningar
 breadcrumb-title: Kampanjtekniker
-source-git-commit: 47fc1ee7e0a1cb96d66151cf79137c80ef2d67d5
+source-git-commit: 11330ed8e79ec256b158747914f178b8b6857a33
 workflow-type: tm+mt
-source-wordcount: '56'
-ht-degree: 19%
+source-wordcount: '61'
+ht-degree: 18%
 
 ---
 
@@ -25,4 +25,5 @@ ht-degree: 19%
    + [Webbläsare](upgrades/browsers.md)
    + [2023-systemuppgraderingar](upgrades/tech-stack-upgrade.md)
    + [32-bitars borttagning av klientkonsolen](upgrades/console.md)
+   + [Kommande ändringar i push-meddelandekanalen](upgrades/push-technote.md)
 + [Kontrollpanelen i Campaign](https://experienceleague.adobe.com/docs/control-panel/using/control-panel-home.html?lang=sv)
