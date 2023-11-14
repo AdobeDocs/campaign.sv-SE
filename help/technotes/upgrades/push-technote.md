@@ -4,9 +4,9 @@ title: Kommande ändringar i push-meddelandekanalen
 description: Kommande ändringar i push-meddelandekanalen
 hide: true
 hidefromtoc: true
-source-git-commit: 4072421cd8f0f3ab3b15c4a475428a59503aa955
+source-git-commit: 9ff84e523e7de6f1d6bb4e8cd193d19743fcf90c
 workflow-type: tm+mt
-source-wordcount: '753'
+source-wordcount: '772'
 ht-degree: 1%
 
 ---
@@ -69,7 +69,7 @@ Så här migrerar du miljön till HTTP v1:
 
 1. Klicka **[!UICONTROL Finish]** och sen **[!UICONTROL Save]**.
 
-Nedan visas FCM-nyttolastsnamnen för att ytterligare anpassa ditt push-meddelande:
+Nedan finns FCM-nyttolastsnamnen för att ytterligare anpassa ditt push-meddelande. Dessa alternativ är detaljerade [här](#fcm-apps).
 
 | Meddelandetyp | Konfigurerbart meddelandeelement (FCM-nyttolastnamn) | Konfigurerbara alternativ (FCM-nyttolastnamn) |
 |:-:|:-:|:-:|
@@ -79,7 +79,7 @@ Nedan visas FCM-nyttolastsnamnen för att ytterligare anpassa ditt push-meddelan
 
 >[!NOTE]
 >
->Växlingen till HTTP v1 API används för alla nya leveranser. Leveranser som görs om, pågår och används fortfarande med HTTP-API:t (äldre).
+>När dessa ändringar har tillämpats på alla servrar använder alla nya push-meddelanden som levereras till Android-enheter HTTP v1-API:t. Befintliga push-leveranser som används, pågår och används, använder fortfarande HTTP-API:t (äldre).
 
 ### Vilken effekt har mina Android-appar? {#fcm-apps}
 
@@ -89,6 +89,7 @@ Med HTTP v1 kan du dock anpassa push-meddelandena ytterligare med **[!UICONTROL 
 
 ![](assets/android-push-additional-options.png)
 
+Du kan:
 
 * Använd **[!UICONTROL Ticker]** för att ange tickningstexten för meddelandet.
 * Använd **[!UICONTROL Image]** för att ange bildens URL som ska visas i meddelandet.
