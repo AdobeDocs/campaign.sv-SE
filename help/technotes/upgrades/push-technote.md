@@ -4,7 +4,7 @@ title: Kommande ändringar i push-meddelandekanalen
 description: Kommande ändringar i push-meddelandekanalen
 hide: true
 hidefromtoc: true
-source-git-commit: 9ff84e523e7de6f1d6bb4e8cd193d19743fcf90c
+source-git-commit: fc274e1266d37611c8781a007ccb6a293a683c21
 workflow-type: tm+mt
 source-wordcount: '772'
 ht-degree: 1%
@@ -49,11 +49,8 @@ Om du vill kontrollera om du påverkas kan du filtrera **Tjänster och prenumera
 Så här migrerar du miljön till HTTP v1:
 
 1. Bläddra till din lista över **Tjänster och prenumerationer**.
-
 1. Hitta alla mobilprogram med **HTTP (äldre)** API-version.
-
 1. För vart och ett av dessa mobilprogram anger du **API-version** till **HTTP v1**.
-
 1. Klicka på **[!UICONTROL Load project json file to extract project details...]** för att läsa in JSON-nyckelfilen direkt.
 
    Du kan även ange följande manuellt:
@@ -64,9 +61,7 @@ Så här migrerar du miljön till HTTP v1:
    ![](assets/android-http-v1-config.png)
 
 1. Klicka **[!UICONTROL Test the connection]** för att kontrollera att konfigurationen är korrekt och att marknadsföringsservern har åtkomst till FCM. Observera att när det gäller distributioner via medelkällor **[!UICONTROL Test connection]** kan inte kontrollera om servern har åtkomst till tjänsten Android Firebase Cloud Messaging (FCM).
-
 1. Som ett alternativ kan du utöka ett push-meddelandeinnehåll med **[!UICONTROL Application variables]** vid behov. Dessa är helt anpassningsbara och utgör en del av den meddelandenyttolast som skickas till den mobila enheten.
-
 1. Klicka **[!UICONTROL Finish]** och sen **[!UICONTROL Save]**.
 
 Nedan finns FCM-nyttolastsnamnen för att ytterligare anpassa ditt push-meddelande. Dessa alternativ är detaljerade [här](#fcm-apps).
