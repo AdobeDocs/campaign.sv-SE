@@ -3,7 +3,7 @@ title: Migrering av tekniska användare till Adobe Developer Console
 description: Lär dig hur du migrerar tekniska kampanjoperatörer till ett tekniskt konto på Adobe Developer Console
 hide: true
 hidefromtoc: true
-source-git-commit: 4863679106dec92d6b63f63cec0911738853dc04
+source-git-commit: 6655a62e18ea14e8ae126dfec88a17dd04c7b488
 workflow-type: tm+mt
 source-wordcount: '1599'
 ht-degree: 0%
@@ -66,9 +66,10 @@ Om du vill skapa ett nytt projekt klickar du **Skapa nytt projekt** från huvuds
 
 Du kan använda **Redigera projekt** om du vill byta namn på projektet.
 
-Från den nya projektskärmen lägger du till de API:er som behövs för att kunna använda det här projektet som ett tekniskt konto för dina API-anrop till Adobe Campaign.
 
 ### Steg 2 - Lägg till API:er i projektet{#ims-migration-step-2}
+
+Från den nya projektskärmen lägger du till de API:er som behövs för att kunna använda det här projektet som ett tekniskt konto för dina API-anrop till Adobe Campaign.
 
 Så här lägger du till API:er i projektet:
 
