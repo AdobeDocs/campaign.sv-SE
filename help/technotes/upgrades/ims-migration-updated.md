@@ -3,7 +3,7 @@ title: Migrering av tekniska användare till Adobe Developer Console
 description: Lär dig hur du migrerar tekniska kampanjoperatörer till ett tekniskt konto på Adobe Developer Console
 hide: true
 hidefromtoc: true
-source-git-commit: 87d155cbc2a5c6f4cbeeadb6ae7ae8aa3166a321
+source-git-commit: d52744e1d798447bb6b90909607e42082f7eeaf5
 workflow-type: tm+mt
 source-wordcount: '1580'
 ht-degree: 0%
@@ -118,7 +118,7 @@ Klicka på **[!UICONTROL + Add to Project]** och välja **[!UICONTROL API]** i d
 
 ![](assets/do-not-localize/ims-updates-04.png)
 
-I **Lägg till ett API** skärm, bläddra nedåt för att hitta **API för I/O-hantering** kort. Markera den genom att klicka i kryssrutan som visas när du håller pekaren över kortet. Klicka sedan på **Nästa** längst ned på skärmen.
+I **Lägg till ett API** skärm, bläddra nedåt för att hitta **API för I/O-hantering** kort. Markera den genom att klicka i kryssrutan som visas när du för muspekaren över kortet. Klicka sedan på **Nästa** längst ned på skärmen.
 
 ![](assets/do-not-localize/ims-updates-05.png)
 
