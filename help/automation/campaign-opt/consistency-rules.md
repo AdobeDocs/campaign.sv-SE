@@ -4,9 +4,9 @@ title: Konsekvensregler
 description: Konsekvensregler
 feature: Typology Rules
 exl-id: dcb4ffcf-71e5-48a2-b0f7-42915a599652
-source-git-commit: 50688c051b9d8de2b642384963ac1c685c0c33ee
+source-git-commit: 8247bed87deb3fb19a01447dab180ed9c97ea96c
 workflow-type: tm+mt
-source-wordcount: '734'
+source-wordcount: '736'
 ht-degree: 4%
 
 ---
@@ -15,7 +15,7 @@ ht-degree: 4%
 
 Adobe Campaign garanterar enhetlig kommunikation tack vare en uppsättning regler som finns i kampanjtypologier. Syftet är att kontrollera de leveranser som skickas till mottagarna, t.ex. volym, art, relevans osv.
 
-**Kapacitet** regler, t.ex. kan undvika att överbelasta den plattform som berörs av meddelandeleveransen. Specialerbjudanden som innehåller en nedladdningslänk får inte skickas till för många personer samtidigt för att undvika att servern blir mättad. Telefonkampanjer får inte överskrida uppringningscentralernas bearbetningskapacitet osv.
+**Kapacitet** regler, t.ex. kan undvika att överbelasta den plattform som berörs av meddelandeleveransen. Specialerbjudanden som innehåller en nedladdningslänk får till exempel inte skickas till för många personer samtidigt för att undvika att servern blir mättad. Telefonkampanjer får inte överskrida uppspelningskapaciteten hos callcenter osv.
 
 ## Kontrollkapacitet {#control-capacity}
 
@@ -32,7 +32,7 @@ Så här utformar du en ny kapacitetsregel:
 
    ![](assets/campaign_opt_create_capacity_01.png)
 
-1. I **[!UICONTROL Capacity]** skapar du tillgänglighetsraderna: i vårt exempel är detta tidsperioder under vilka samtal kan göras. Välj en period på 24 timmar och ange 150 i den initiala kvantiteten, vilket innebär att callcentret kan hantera 150 samtal per dag.
+1. I **[!UICONTROL Capacity]** skapar du tillgänglighetsraderna: i vårt exempel är det här tidsperioder under vilka anrop kan göras. Välj en period på 24 timmar och ange 150 i den initiala kvantiteten, vilket innebär att callcentret kan hantera 150 samtal per dag.
 
    ![](assets/campaign_opt_create_capacity_02.png)
 
@@ -51,11 +51,11 @@ Så här utformar du en ny kapacitetsregel:
 
 ## Definiera maximal last {#define-the-maximum-load}
 
-För att definiera den maximala lasten måste du definiera tillgänglighetsrader. Det finns två alternativ: du kan göra manuellt [skapa en eller flera tillgänglighetsrader](#add-availability-lines-one-by-one) eller skapa tillgänglighetsintervall. Frekvensen för dessa tidsperioder kan automatiseras. [Läs mer](#add-a-set-of-availability-lines).
+Om du vill definiera den maximala lasten måste du definiera tillgänglighetsrader. Det finns två alternativ: du kan göra det manuellt [skapa en eller flera tillgänglighetsrader](#add-availability-lines-one-by-one) eller skapa tillgänglighetsintervall. Frekvensen för dessa tidsperioder kan automatiseras. [Läs mer](#add-a-set-of-availability-lines).
 
 ### Lägg till tillgänglighetsrader en efter en {#add-availability-lines-one-by-one}
 
-Om du vill skapa en tillgänglighetsrad klickar du på **[!UICONTROL Add]** och markera **[!UICONTROL Add an availability line]**. Ange tillgänglighetsperioden och tillgänglig last.
+Om du vill skapa en tillgänglighetsrad klickar du på **[!UICONTROL Add]** knapp och markera **[!UICONTROL Add an availability line]**. Ange tillgänglighetsperioden och tillgänglig last.
 
 ![](assets/campaign_opt_create_capacity_02.png)
 
@@ -97,7 +97,7 @@ Tillgänglighetsraderna är endast avsedda som information. Om du vill exkludera
 
 ![](assets/campaign_opt_create_capacity_04.png)
 
-Antalet meddelanden som ska bearbetas är jämnt fördelat över det definierade tillgänglighetsintervallet. Detta är särskilt relevant för callcenters eftersom deras högsta antal samtal per dag är begränsat. När det gäller e-postleveranser **[!UICONTROL Do not limit instantaneous delivery capacity]** kan du ignorera det här tillgänglighetsintervallet och skicka e-postmeddelanden samtidigt.
+Det högsta antalet meddelanden som kan bearbetas är jämnt fördelat över det definierade tillgänglighetsintervallet. Detta är särskilt relevant för callcenters eftersom deras högsta antal samtal per dag är begränsat. När det gäller e-postleveranser **[!UICONTROL Do not limit instantaneous delivery capacity]** kan du ignorera det här tillgänglighetsintervallet och skicka e-postmeddelanden samtidigt.
 
 ![](assets/campaign_opt_create_capacity_05.png)
 
@@ -115,4 +115,4 @@ Om du vill övervaka förbrukning kan du visa värdena som visas i **[!UICONTROL
 
 ![](assets/campaign_opt_create_capacity_04.png)
 
-Om du vill visa förbrukningsrader klickar du på **[!UICONTROL Consumptions]** i regeln.
+Klicka på **[!UICONTROL Consumptions]** i regeln.
