@@ -5,9 +5,9 @@ feature: Overview
 role: User
 level: Beginner
 exl-id: 00ba1c43-9558-4adb-83a1-6597c2bbca62
-source-git-commit: f577ee6d303bab9bb07350b60cf0fa6fc9d3a163
+source-git-commit: 973c799be51226510549290376f129aaeb86f6ab
 workflow-type: tm+mt
-source-wordcount: '682'
+source-wordcount: '694'
 ht-degree: 5%
 
 ---
@@ -37,7 +37,9 @@ Det nya erbjudandet kombinerar förstklassiga tjänster med proaktiv tillsyn och
 
 Som tidigare [!DNL Campaign Classic] användare, observera att de flesta av [!DNL Campaign Classic] v7-funktioner är tillgängliga med [!DNL Campaign] v8, förutom en liten uppsättning, som listas i [det här avsnittet](#gs-removed).
 
-Campaign v8 bygger på en **hybridarkitektur**. Om du går över från Campaign Classic v7 bör du tänka på att alla leveranser går via servern för mellanlagring. Följaktligen är intern routning **inte möjligt** i Campaign v8 och det externa kontot har inaktiverats i enlighet med detta. [Läs mer](../architecture/architecture.md).
+Campaign v8 bygger på en **hybridarkitektur**. Om du går över från Campaign Classic v7 bör du tänka på att alla leveranser går via servern för mellanlagring. Följaktligen är intern routning **inte möjligt** i Campaign v8 och det externa kontot har inaktiverats i enlighet med detta.
+
+![](../assets/do-not-localize/glass.png) Läs mer om hur du skickar korrektur för transaktionsmeddelanden vid övergång från v7 på [den här sidan](../send/transactional-template.md#transition-from-v7).
 
 >[!NOTE]
 >

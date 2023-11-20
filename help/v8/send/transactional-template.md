@@ -5,7 +5,7 @@ feature: Transactional Messaging
 role: User
 level: Beginner, Intermediate
 exl-id: 858c9216-c5a0-4bf9-b4b0-91e403293f73
-source-git-commit: 555e1d64ada12dc145fbba9124611e30d7746ba5
+source-git-commit: 973c799be51226510549290376f129aaeb86f6ab
 workflow-type: tm+mt
 source-wordcount: '1170'
 ht-degree: 1%
@@ -130,7 +130,7 @@ När du har skapat en eller flera dirigerade adresser och meddelandetexten kan d
 
    ![](assets/messagecenter_create_seed_7.png)
 
-### Skicka en korrektur
+### Skicka en korrektur {#send-proof}
 
 Du kan testa meddelandeleveransen genom att skicka ett korrektur till en startadress som skapats tidigare.
 
@@ -159,7 +159,7 @@ Du kan komma åt korrektur i varje mall via **[!UICONTROL Audit]** -fliken.
 
 ![](assets/messagecenter_send_proof_003.png)
 
-#### Övergång från [!DNL Campaign Classic] v7
+#### Övergång från [!DNL Campaign Classic] v7 {#transition-from-v7}
 
 Om du [övergång från Campaign Classic v7](../start/v7-to-v8.md), går alla leveranser via servern för mellanlagring.
 
