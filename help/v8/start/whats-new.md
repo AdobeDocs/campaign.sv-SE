@@ -1,18 +1,18 @@
 ---
 title: Nyheter i Campaign v8
-description: Upptäck nyckelfunktionerna i Adobe Campaign v8, nyheter och vad du kan förvänta dig av den senaste versionen.
-feature: Overview, Release Notes
+description: Upptäck nyckelfunktionerna i Adobe Campaign v8
+feature: Overview
 role: User
 level: Beginner
 exl-id: 7771a02c-ebd4-48b6-b25e-6b6e420ad493
-source-git-commit: f577ee6d303bab9bb07350b60cf0fa6fc9d3a163
+source-git-commit: 5c4bbbd06eb7bf6dc9ada1d08c3fc696e88ee760
 workflow-type: tm+mt
-source-wordcount: '923'
-ht-degree: 5%
+source-wordcount: '911'
+ht-degree: 3%
 
 ---
 
-# Nyheter i Adobe Campaign v8? {#ac-gs-what-is-new}
+# Adobe Campaign v8, nyckelfunktioner {#ac-gs-what-is-new}
 
 Adobe Campaign v8 är utformat för marknadsförare i flera kanaler som behöver den bästa molnlösningen för kanalövergripande kampanjhantering i storföretagsskala. Den erbjuder robusta ETL- och datahanteringsfunktioner för att hjälpa till att utforma och strukturera den perfekta kampanjen. Dess orkestreringsmotor ger möjlighet till multitouch-marknadsföring med fokus på batchbaserade resor. Den levereras också tillsammans med en skalbar meddelandeserver i realtid som gör det möjligt för marknadsföringsteamen att skicka fördefinierade meddelanden baserat på en totalbelastning från alla IT-system för exempelvis lösenordsåterställning, orderbekräftelse, e-kvitto och mycket annat.
 
