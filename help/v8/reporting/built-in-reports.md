@@ -5,9 +5,9 @@ feature: Reporting
 role: User
 level: Beginner
 exl-id: b63e6905-3bd4-4de4-9e7e-7638e5fc1192
-source-git-commit: f577ee6d303bab9bb07350b60cf0fa6fc9d3a163
+source-git-commit: f463c5747b844544ba561a63e4cb0359c0c258c8
 workflow-type: tm+mt
-source-wordcount: '1111'
+source-wordcount: '1115'
 ht-degree: 1%
 
 ---
@@ -381,7 +381,7 @@ Följande rapporter finns också inbyggda. Mer information finns i dokumentet om
   </tr> 
   <tr> 
    <td> Historik över förvärv av sociala potentiella kunder (socialVisitorStatistics)<br /> </td> 
-   <td> Historiken över Twitter och Facebook kundvärvningar beror på tillägget för social marknadsföring.<br /> </td> 
+   <td> Historiken för köp av potentiella kunder i X (tidigare Twitter) och Facebook beror på tillägget för social marknadsföring.<br /> </td> 
    <td> nms:besökare<br /> </td> 
   </tr> 
   <tr> 

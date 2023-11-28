@@ -4,9 +4,9 @@ user-guide-title: Campaign v8
 title: Adobe Campaign v8-dokumentation
 description: Dokumentation om Campaign v8
 breadcrumb-title: Översikt över Campaign
-source-git-commit: b9e4cb3cbbb5a29879146eeecf7261b59f413993
+source-git-commit: f463c5747b844544ba561a63e4cb0359c0c258c8
 workflow-type: tm+mt
-source-wordcount: '577'
+source-wordcount: '579'
 ht-degree: 22%
 
 ---
@@ -49,7 +49,7 @@ ht-degree: 22%
       + [Konfigurera push-meddelanden med datainsamling](send/push-data-collection.md)
    + [LINE-meddelanden](send/line.md)
    + [Direktmeddelande](send/direct-mail.md)
-   + [Twitter](send/twitter.md)
+   + [X (Twitter)](send/twitter.md)
    + Anpassa innehåll {#personalize}
       + [Kom igång med personalisering](send/personalize.md)
       + [Personaliseringsdata](send/personalization-data.md)
@@ -141,7 +141,7 @@ ht-degree: 22%
    + [Campaign + Experience Manager](connect/ac-aem.md)
    + [Campaign + Target](connect/ac-at.md)
    + [Kampanj + utlösare för Experience Cloud](connect/ac-triggers.md)
-   + [Campaign + Twitter](connect/ac-tw.md)
+   + [Campaign + X (Twitter)](connect/ac-tw.md)
    + [Kampanj + extern databas](connect/fda.md)
    + Campaign + din CRM {#ac-crm}
       + [Kom igång med CRM-anslutningar](connect/crm.md)

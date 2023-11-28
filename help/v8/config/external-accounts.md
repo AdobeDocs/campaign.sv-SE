@@ -5,9 +5,9 @@ feature: Application Settings, External Account
 role: Admin
 level: Beginner, Intermediate, Experienced
 exl-id: 9634b576-2854-4ea9-ba0d-8efaab2c4aee
-source-git-commit: 1a0b473b005449be7c846225e75a227f6d877c88
+source-git-commit: f463c5747b844544ba561a63e4cb0359c0c258c8
 workflow-type: tm+mt
-source-wordcount: '1085'
+source-wordcount: '1089'
 ht-degree: 4%
 
 ---
@@ -97,7 +97,7 @@ När det gäller transaktionsmeddelanden är körningsinstanserna länkade till 
 
   Externa databaser som är kompatibla med Adobe Campaign v8 listas i [Kompatibilitetsmatris](../start/compatibility-matrix.md)
 
-* **Twitter** - **Twitter** Skriv ett externt konto som används för att ansluta Campaign till ditt twitter-konto och för att skicka meddelanden åt dig. Läs mer om integrering av Twitter i [det här avsnittet](../connect/ac-tw.md).
+* **X (tidigare Twitter)** - **Twitter** Skriv ett externt konto som används för att ansluta Campaign till ditt X-konto och för att skicka meddelanden åt dig. Läs mer om X-integrering i [det här avsnittet](../connect/ac-tw.md).
 
 ## Externa konton för Adobe Solution Integration {#adobe-integration-external-accounts}
 
