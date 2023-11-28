@@ -4,9 +4,9 @@ user-guide-title: Campaign v8
 title: Adobe Campaign v8-dokumentation
 description: Dokumentation om Campaign v8
 breadcrumb-title: Översikt över Campaign
-source-git-commit: cfc1043e30bdd43e1acaeaf399fde01c6473f1b4
+source-git-commit: b9e4cb3cbbb5a29879146eeecf7261b59f413993
 workflow-type: tm+mt
-source-wordcount: '578'
+source-wordcount: '577'
 ht-degree: 22%
 
 ---
@@ -161,11 +161,10 @@ ht-degree: 22%
       + [Campaign FDA-distribution](architecture/fda-deployment.md)
       + Företagsdistribution (FFDA) {#ffda}
          + [Vad är Campaign FFDA?](architecture/enterprise-deployment.md)
-         + Egenskaper {#ffda-characteristics}
-            + [Nyckelhantering och unicitet](architecture/keys.md)
-            + [Nya API:er](architecture/new-apis.md)
-            + [API-mellanlagringsmekanism](architecture/staging.md)
-            + [Replikeringsmekanism](architecture/replication.md)
+         + [Nyckelhantering och unicitet](architecture/keys.md)
+         + [Nya API:er](architecture/new-apis.md)
+         + [API-mellanlagringsmekanism](architecture/staging.md)
+         + [Replikeringsmekanism](architecture/replication.md)
    + Implementering {#implement}
       + [Implementeringssteg](start/implement.md)
       + [Anpassa instansen](dev/customize.md)
