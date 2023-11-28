@@ -5,10 +5,10 @@ feature: Control Panel, Monitoring
 role: Admin
 level: Beginner
 exl-id: b8aa89ac-19f4-4df3-9f36-860aca61bea3
-source-git-commit: f577ee6d303bab9bb07350b60cf0fa6fc9d3a163
+source-git-commit: 561e4b6d2c99e98e068132c80c2bebb756b60a44
 workflow-type: tm+mt
-source-wordcount: '380'
-ht-degree: 64%
+source-wordcount: '379'
+ht-degree: 61%
 
 ---
 
@@ -18,7 +18,7 @@ Med Campaign Control Panel kan ni effektivisera arbetet som produktadministratö
 
 Viktiga fördelar:
 
-* Utför snabbt ändringar av inställningarna utan att behöva kontakta Kundtjänst.
+* Gör snabbt ändringar i inställningarna utan att behöva kontakta Adobe.
 * Konfigurera inställningar baserat på olika affärsbehov vid olika tidpunkter.
 * kontrollera åtkomstinställningarna efter behov för att förbättra säkerheten.
 

@@ -5,7 +5,7 @@ feature: Architecture, Deployment
 role: Data Engineer
 level: Beginner
 exl-id: 562b24c3-6bea-447f-b74c-187ab77ae78f
-source-git-commit: 16367814b53344e4cd68025dfe925cc17aac6bcf
+source-git-commit: 561e4b6d2c99e98e068132c80c2bebb756b60a44
 workflow-type: tm+mt
 source-wordcount: '1032'
 ht-degree: 2%
@@ -38,7 +38,7 @@ Det finns två distributionsmodeller:
 
   >[!NOTE]
   >
-  >I den här distributionsmodellen [!DNL Snowflake] sekundär databas är endast tillgänglig på begäran. Så här uppdaterar du distributionen med [!DNL Snowflake]kontaktar du den tekniska kontohanteraren för Adobe.
+  >I den här distributionsmodellen [!DNL Snowflake] sekundär databas är endast tillgänglig på begäran. Så här uppdaterar du distributionen med [!DNL Snowflake]kontaktar du Adobe Transition Manager.
   >
 
 * **Driftsättning av Campaign Enterprise (FFDA)**
@@ -70,7 +70,7 @@ Det gör du genom att lägga till ytterligare externa konton med **[!UICONTROL S
 
 >[!IMPORTANT]
 >
->Delat routningsläge är aktiverat som standard för kontot Delad leverans - e-post. För alla andra kanaler, externa konton, kontakta kundtjänst om du vill aktivera alternativet.
+>Delat routningsläge är aktiverat som standard för kontot Delad leverans - e-post. För alla andra kanaler ska du kontakta din Adobe Transition Manager för att aktivera alternativet.
 >
 >Som standard är tröskelvärdet för att dela en leverans mellan flera mellanrum 100 kB. Du kan ändra det här värdet i alternativet &quot;NmsDelivery_MultiMidSplitThreshold&quot; i **[!UICONTROL Administration]** / **[!UICONTROL Platform]** / **[!UICONTROL Options]** -menyn.
 

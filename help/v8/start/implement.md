@@ -5,9 +5,9 @@ feature: Overview
 role: User
 level: Intermediate
 exl-id: 09562b6c-3d3d-4808-a70b-202172867f46
-source-git-commit: f577ee6d303bab9bb07350b60cf0fa6fc9d3a163
+source-git-commit: 561e4b6d2c99e98e068132c80c2bebb756b60a44
 workflow-type: tm+mt
-source-wordcount: '1187'
+source-wordcount: '1188'
 ht-degree: 4%
 
 ---
@@ -26,7 +26,7 @@ I det här avsnittet får du lära dig hur du anpassar Adobe Campaign efter för
 >
 >Med **Kampanjhanterade Cloud Service**, din miljö och den ursprungliga konfigurationen anges av Adobe, enligt villkoren i licensavtalet. Du får inte ändra installerade inbyggda paket, inbyggda scheman eller rapporter.
 >
->Om du behöver använda ett Campaign-tillägg eller en specifik funktion som inte har etablerats för dig måste du kontakta **Adobe kundtjänst**.
+>Om du behöver använda ett Campaign-tillägg eller en specifik funktion som inte har etablerats för dig måste du kontakta din **Adobe Transition Manager**.
 
 ## Före start{#before-starting}
 
