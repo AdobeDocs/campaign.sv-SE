@@ -5,9 +5,9 @@ feature: Architecture, Deployment
 role: Data Engineer
 level: Beginner
 exl-id: 562b24c3-6bea-447f-b74c-187ab77ae78f
-source-git-commit: 1a0b473b005449be7c846225e75a227f6d877c88
+source-git-commit: 16367814b53344e4cd68025dfe925cc17aac6bcf
 workflow-type: tm+mt
-source-wordcount: '1004'
+source-wordcount: '1032'
 ht-degree: 2%
 
 ---
@@ -32,9 +32,14 @@ Du kan exportera och importera paket från en miljö till en annan.
 
 Det finns två distributionsmodeller:
 
-* **Campaign FDA [!DNL Snowflake] distribution**
+* **Campaign FDA-distribution**
 
-  I [[!DNL Snowflake] FDA-distribution](fda-deployment.md), [!DNL Adobe Campaign] v8 är ansluten till [!DNL Snowflake] för att få åtkomst till data via funktionen för federerad dataåtkomst: du kan få åtkomst till och bearbeta externa data och information som lagras i [!DNL Snowflake] utan att ändra strukturen på Adobe Campaign-data. PostgreSQL är den primära databasen och Snowflake är den sekundära databasen. Du kan utöka datamodellen och lagra data på Snowflake. Därefter kan ni köra ETL, segmentering och rapporter på en stor datauppsättning med enastående prestanda.
+  I [FDA-distribution](fda-deployment.md), [!DNL Adobe Campaign] v8 kan anslutas till [!DNL Snowflake] för att få åtkomst till data via funktionen för federerad dataåtkomst: du kan få åtkomst till och bearbeta externa data och information som lagras i [!DNL Snowflake] utan att ändra strukturen på Adobe Campaign-data. PostgreSQL är den primära databasen, och du kan använda Snowflake som den sekundära databasen för att utöka datamodellen och lagra data i Snowflake. Därefter kan ni köra ETL, segmentering och rapporter på en stor datauppsättning med enastående prestanda.
+
+  >[!NOTE]
+  >
+  >I den här distributionsmodellen [!DNL Snowflake] sekundär databas är endast tillgänglig på begäran. Så här uppdaterar du distributionen med [!DNL Snowflake]kontaktar du den tekniska kontohanteraren för Adobe.
+  >
 
 * **Driftsättning av Campaign Enterprise (FFDA)**
 

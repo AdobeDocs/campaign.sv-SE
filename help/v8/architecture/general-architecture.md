@@ -5,9 +5,9 @@ feature: Architecture, Deployment
 role: Admin, Developer
 level: Beginner
 exl-id: 1d9ff6c5-974d-4a8a-a0d7-641685bbe26e
-source-git-commit: f577ee6d303bab9bb07350b60cf0fa6fc9d3a163
+source-git-commit: cfc1043e30bdd43e1acaeaf399fde01c6473f1b4
 workflow-type: tm+mt
-source-wordcount: '1129'
+source-wordcount: '1136'
 ht-degree: 1%
 
 ---
@@ -81,7 +81,7 @@ Det finns även andra tekniska processer:
 
 ## Databasbehållare {#db-containers}
 
-Adobe Campaign Cloud-databasen bygger på [!DNL Snowflake] som innehåller funktionsuppgifter (profiler, prenumerationer, innehåll osv.), tekniska data (leveransjobb och loggar, spårningsloggar osv.) och arbetsdata (inköp, leads) för lösningen och alla Adobe Campaign-komponenter kommunicerar med databasen för att utföra sina specifika uppgifter.
+I [Företagsdistribution (FFDA)](enterprise-deployment.md)använder Adobe Campaign Cloud-databasen [!DNL Snowflake] som innehåller funktionsuppgifter (profiler, prenumerationer, innehåll osv.), tekniska data (leveransjobb och loggar, spårningsloggar osv.) och arbetsdata (inköp, leads) för lösningen och alla Adobe Campaign-komponenter kommunicerar med databasen för att utföra sina specifika uppgifter.
 
 Du kan distribuera Adobe Campaign med hjälp av fördefinierade databaser och scheman, och om det behövs kan den fördefinierade miljön utökas. Alla data i datafilen nås av Adobe Campaign via SQL-anrop. Adobe Campaign har också en komplett uppsättning ETL-verktyg (Extract Transform and Load) för import och export av data till och från systemet.
 
@@ -96,6 +96,6 @@ Du kan distribuera Adobe Campaign med hjälp av fördefinierade databaser och sc
 
 ## Databaslagring {#db-storage}
 
-Totalt lagringsutrymme delas mellan huvuddatabasen och lagerstället i Snowflake. Var data lagras bör fastställas vid implementering eller uppgradering, beroende på kundspecifika användningsfall.
+Totalt lagringsutrymme delas mellan huvuddatabasen och den (valfria) sekundära Snowflake-databasen. Var data lagras bör fastställas vid implementering eller uppgradering, beroende på kundspecifika användningsfall.
 
 Lär dig hur du övervakar databasanvändningen i [Dokumentation för Campaign Control Panel](https://experienceleague.adobe.com/docs/control-panel/using/performance-monitoring/database-monitoring/database-monitoring.html){target="_blank"}.

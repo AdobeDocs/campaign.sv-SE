@@ -1,20 +1,20 @@
 ---
-title: Kom igång med Campaign FDA-Snowflake-distribution
-description: Kom igång med Campaign FDA-Snowflake-distribution
+title: Kom igång med Campaign FDA-distribution
+description: Kom igång med Campaign FDA-distribution
 feature: Architecture, Federated Data Access, Deployment
 role: Admin, Developer
 level: Beginner
 exl-id: b3df0336-f40e-4ac1-b6a4-068b8827dca2
-source-git-commit: f577ee6d303bab9bb07350b60cf0fa6fc9d3a163
+source-git-commit: 16367814b53344e4cd68025dfe925cc17aac6bcf
 workflow-type: tm+mt
-source-wordcount: '297'
+source-wordcount: '303'
 ht-degree: 0%
 
 ---
 
-# [!DNL Campaign] FDA [!DNL Snowflake] distribution{#gs-fda-snowflake}
+# [!DNL Campaign] FDA-distribution{#gs-fda}
 
-I en [!DNL Snowflake] FDA-distribution (standard), [!DNL Adobe Campaign] v8 är ansluten till [!DNL Snowflake] få tillgång till data via [Åtkomst till federerade data](../connect/fda.md) funktion: du kan komma åt och bearbeta externa data och information som lagras i [!DNL Snowflake] utan att ändra strukturen på Adobe Campaign-data.
+I sin Campaign FDA-distribution (standard) [!DNL Adobe Campaign] v8 kan anslutas till [!DNL Snowflake] få tillgång till data via [Åtkomst till federerade data](../connect/fda.md) -funktion: du kan sedan komma åt och bearbeta externa data och information som lagras i [!DNL Snowflake] utan att ändra strukturen på Adobe Campaign-data.
 
 ## Fördelar{#fda-benefits}
 
@@ -37,4 +37,4 @@ Allmän kommunikation mellan servrar och processer sker enligt följande schema:
 
 ![](assets/fda-architecture.png)
 
-PostgreSQL är den primära databasen och Snowflake är den sekundära databasen. Du kan utöka datamodellen och lagra data på Snowflake. Därefter kan ni köra ETL, segmentering och rapporter på en stor datauppsättning med enastående prestanda.
+PostgreSQL är den primära databasen och Snowflake kan användas som den sekundära databasen. Du kan utöka datamodellen och lagra data på Snowflake. Därefter kan ni köra ETL, segmentering och rapporter på en stor datauppsättning med enastående prestanda.

@@ -4,7 +4,7 @@ user-guide-title: Campaign v8
 title: Adobe Campaign v8-dokumentation
 description: Dokumentation om Campaign v8
 breadcrumb-title: Översikt över Campaign
-source-git-commit: cb5bec3107872d4d6da83b4ddbc7cad3e9276b00
+source-git-commit: cfc1043e30bdd43e1acaeaf399fde01c6473f1b4
 workflow-type: tm+mt
 source-wordcount: '578'
 ht-degree: 22%
@@ -155,11 +155,10 @@ ht-degree: 22%
       + [Lägg till behörigheter i mappar](start/folder-permissions.md)
    + [Kontrollpanelen](config/self-service.md)
 + Arkitektur och konfiguration {#config}
-   + Arkitektur {#architecture}
+   + Kampanjarkitektur v8 {#architecture}
       + [Globala principer](architecture/general-architecture.md)
-      + [Arkitektur](architecture/architecture.md)
-      + Driftsättning av FDA Snowflake {#fda}
-         + [Vad är FDA-Snowflake?](architecture/fda-deployment.md)
+      + [Arkitekturmodeller](architecture/architecture.md)
+      + [Campaign FDA-distribution](architecture/fda-deployment.md)
       + Företagsdistribution (FFDA) {#ffda}
          + [Vad är Campaign FFDA?](architecture/enterprise-deployment.md)
          + Egenskaper {#ffda-characteristics}
