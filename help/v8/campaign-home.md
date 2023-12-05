@@ -3,7 +3,7 @@ keywords: Campaign Classic;hem;populära ämnen
 description: Campaign v8 - hjälpcenter
 title: Adobe Campaign v8 - produktdokumentation
 exl-id: 6010b0f7-baf0-43ba-af9a-b8864f3897ea,9ff16fb1-d3d3-44fe-9016-15abffdbc74e
-source-git-commit: 30141c6ac5bafdd0cb46b4725c063aedee2a9386
+source-git-commit: 0f86b6303bd380f5079b38de88ee3d097e415695
 workflow-type: tm+mt
 source-wordcount: '429'
 ht-degree: 0%
@@ -63,7 +63,7 @@ Dessa maximala genomströmningsprestanda har mätts av testgrupper i Adobe under
   <tr style="border: 0;">
     <td align="center"><a href="start/whats-new.md"><img src="assets/do-not-localize/learn-more-button.svg"></a></td>
     <td align="center"><a href="start/connect.md"><img src="assets/do-not-localize/learn-more-button.svg"></a></td>
-    <td align="center"><a href="create-message.md"><img src="assets/do-not-localize/learn-more-button.svg"></a></td>
+    <td align="center"><a href="start/create-message.md"><img src="assets/do-not-localize/learn-more-button.svg"></a></td>
     <td align="center"><a href="audiences/create-profiles.md"><img src="assets/do-not-localize/learn-more-button.svg"></a></td>
     </tr>
 </table>
