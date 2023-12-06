@@ -5,7 +5,7 @@ feature: Overview, Architecture, Configuration
 role: User
 level: Beginner
 exl-id: 7db32bd8-a088-405f-9633-2968c28b13b0
-source-git-commit: 7deb5e8f646b086adec2e0652538a187e68adbee
+source-git-commit: 8f58db2b00f2fc98afd737f20411f829dd24c78a
 workflow-type: tm+mt
 source-wordcount: '660'
 ht-degree: 0%
@@ -22,7 +22,7 @@ Läs mer om Campaign-nyckelfunktioner i [den här sidan](../start/get-started.md
 
 Adobe Campaign komponenter och global arkitektur beskrivs nedan.
 
-![](assets/ac-components.png)
+![](assets/do-not-localize//ac-components.png)
 
 ### Presentationslager{#presentation-layer}
 
@@ -58,13 +58,13 @@ Adobe Campaign v8 distribueras as a Managed Service: alla komponenter i Adobe Ca
 
 Kampanjwebbservern styr åtkomsten till webbprocesser i Campaign. Javascript är serverspråket som används för centrala produktfunktioner och anpassning. Tomcat är back-end-motorn och är inbäddad i Campaign-produkten som en del av webbprocessen. Javascript används till exempel på JSP- eller JSSP-sidor för att återge dynamiskt innehåll.
 
-![](assets/ac-processes.png)
+![](assets/do-not-localize/ac-processes.png)
 
 Campaign Client Console ansluter till webbservern med SOAP XML via HTTP. Webbservern tillhandahåller säkerhetsskiktet, skickar förfrågningarna till programlagret med JavaScript och de interna processerna i Campaign ger åtkomst till databasen med SQL.
 
 Den övergripande kommunikationen mellan Campaign-processer beskrivs i följande fristående distributionsdiagram: alla Campaign-komponenter installeras på samma dator.
 
-![](assets/ac-standalone.png)
+![](assets/do-not-localize//ac-standalone.png)
 
 Användaren ansluter till Campaign-programservern med HTTP. Alla data och all information hanteras i Campaign-databasen. Om en Campaign-utvecklare utför konfigurationsändringar hämtas den i databasen. Om en marknadsförare skapar en ny kampanj hanteras all information och alla data som hör till den nya kampanjen också i databasen. När en marknadsförare kör en kampanj skickas e-postleveranser till profiler från Campaign-servern via SMTP-servern. När profiler interagerar med e-postleveranser, som att öppna e-postmeddelandet, skickas spårningsdata tillbaka till spårningsservern.
 

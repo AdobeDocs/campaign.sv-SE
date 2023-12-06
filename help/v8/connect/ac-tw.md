@@ -5,10 +5,10 @@ role: User, Admin
 feature: Social Marketing
 level: Beginner, Intermediate
 exl-id: 5523217a-b95f-4639-b941-52eb7d5a0203
-source-git-commit: f463c5747b844544ba561a63e4cb0359c0c258c8
+source-git-commit: 8f58db2b00f2fc98afd737f20411f829dd24c78a
 workflow-type: tm+mt
-source-wordcount: '1072'
-ht-degree: 2%
+source-wordcount: '1065'
+ht-degree: 1%
 
 ---
 
@@ -39,7 +39,7 @@ Campaign använder version 1.1 av X API. Om du vill använda den måste du ansö
 
 ## Skapa ett program på X {#create-an-app-on-twitter}
 
-När du har godkänts med utökad åtkomst skapar du ett X-program som gör det möjligt för Adobe Campaign att skapa inlägg på ditt X-konto. Följ stegen nedan för att göra detta:
+När du har godkänts med utökad åtkomst skapar du ett X-program som gör det möjligt för Adobe Campaign att skapa inlägg på ditt X-konto. Gör så här:
 
 1. Logga in på ditt X-konto.
 1. Anslut till [X-utvecklarportal](https://developer.twitter.com/en/apps).
@@ -135,12 +135,12 @@ När konfigurationen är klar kan du skapa inlägg på dina X-konton och skicka 
 
 ## Skapa ett testkonto på X {#tw-test-account}
 
-Utöver X-kontot skapar du ett privat X-konto som kan användas för att skicka [tweet-korrektur](../send/twitter.md#send-tw-proofs). Följ stegen nedan för att göra detta:
+Utöver X-kontot skapar du ett privat X-konto som kan användas för att skicka [tweet-korrektur](../send/twitter.md#send-tw-proofs). Gör så här:
 
 1. Skapa ett nytt X-konto.
 1. Åtkomst till kontot  **Inställningar**.
 1. Bläddra till **Integritet och säkerhet** och **Målgrupp och taggning** och kontrollera **Protect dina inlägg** alternativ. Dina inlägg och annan kontoinformation visas endast för personer som följer efter dig.
 
-![](assets/social_tw_test_page.png)
+![](assets/do-not-localize/social_tw_test_page.png)
 
 Konfigurera X-appen och Campaign-tjänsten så att den fungerar med det här testkontot enligt beskrivningen ovan.

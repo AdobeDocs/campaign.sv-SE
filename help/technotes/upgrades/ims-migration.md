@@ -3,9 +3,10 @@ title: Migrering av tekniska användare till Adobe Developer Console
 description: Lär dig hur du migrerar tekniska kampanjoperatörer till ett tekniskt konto på Adobe Developer Console
 feature: Technote
 role: Admin
-source-git-commit: 9f93057d2d729d4251d914426488f46b6ef24bbb
+exl-id: 775c5dbb-ef73-48dd-b163-23cfadc3dab8
+source-git-commit: 8f58db2b00f2fc98afd737f20411f829dd24c78a
 workflow-type: tm+mt
-source-wordcount: '1586'
+source-wordcount: '1507'
 ht-degree: 0%
 
 ---
@@ -38,7 +39,7 @@ En översikt över stegen är:
 
 ### Krav för migreringen{#ims-migration-prerequisites}
 
-För att kunna skapa tekniska konton som ersätter de tekniska operatorerna måste villkoret att det finns rätt kampanjproduktprofiler i Admin Console för alla Campaign-instanser valideras. Du kan läsa mer om produktprofiler i Adobe-konsolen i [Adobe Developer Console-dokumentation](https://developer.adobe.com/developer-console/docs/guides/projects/){target="_blank"}.
+<!--To be able to create the technical accounts which replace the technical operators, the prerequisite that the proper Campaign Product Profiles exist within the Admin Console for all Campaign instances need to be validated. You can learn more about Product Profiles within the Adobe Console in [Adobe Developer Console documentation](https://developer.adobe.com/developer-console/docs/guides/projects/){target="_blank"}.-->
 
 För API-anrop till Message Center-instansen/instanserna bör en produktprofil ha skapats under uppgraderingen till Campaign v8.5 eller under etableringen av instansen. Den här produktprofilen heter:
 

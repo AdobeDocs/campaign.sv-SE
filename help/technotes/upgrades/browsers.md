@@ -5,9 +5,9 @@ description: Kampanjwebbkomponenter och version 100 i webbläsarna Chrome, Firef
 hide: true
 hidefromtoc: true
 exl-id: 912ad71e-2b23-4b16-b5f9-47d547fc83d5
-source-git-commit: b71197027d9521fd648a0c2657b6b76a1aa7fc9a
+source-git-commit: 8f58db2b00f2fc98afd737f20411f829dd24c78a
 workflow-type: tm+mt
-source-wordcount: '634'
+source-wordcount: '644'
 ht-degree: 0%
 
 ---
@@ -24,7 +24,7 @@ Microsoft släppte Edge v100 tidigare i mars 2022.
 
 Kompatibiliteten för större webbplatser har testats i förväg. Om det uppstår problem med webbplatser som inte kan åtgärdas innan versionerna släpps har företagen planer för säkerhetskopiering som är klara att säkerställa att webbplatserna inte påverkas.
 
-Potentiella problem eller funktionsförlust på webbplatsen kommer från användaragentsträngen som webbläsare skickar till webbplatser du besöker: användaragenten är en sträng som skickas av webbläsaren till webbplatsen för att tala om vilken webbläsare och version du använder samt tillhörande teknik. När webbläsaren skickar en begäran till en webbplats identifieras den med användaragentsträngen innan innehållet som du begärde hämtas. Data i användaragentsträngen hjälper webbplatsen att leverera innehållet i ett format som passar din webbläsare. Versionen av användaragenten ökas så att den matchar webbläsarens versionsnummer. Att gå från 2 till 3 siffror kan orsaka problem.
+Potentiella problem eller funktionsförlust på webbplatsen beror på användaragentsträngen som webbläsare skickar till webbplatser som du besöker: användaragenten är en sträng som webbläsaren skickar till webbplatsen för att tala om vilken webbläsare och version som du använder samt tillhörande teknik. När webbläsaren skickar en begäran till en webbplats identifieras den med användaragentsträngen innan innehållet som du begärde hämtas. Data i användaragentsträngen hjälper webbplatsen att leverera innehållet i ett format som passar din webbläsare. Versionen av användaragenten ökas så att den matchar webbläsarens versionsnummer. Att gå från 2 till 3 siffror kan orsaka problem.
 
 ## Påverkas du?{#version-100-impact}
 
@@ -48,7 +48,7 @@ Om du vill testa dina webbsidor med Mozilla Firefox 100 kan du simulera den komm
 1. Sök efter `general.useragent.override`.
 1. Välj String och klicka sedan på plustecknet (+).
 
-   ![](assets/force-user-agent-firefox.png)
+   ![](assets/do-not-localize/force-user-agent-firefox.png)
 
 1. Ange följande text i fältet:
 
@@ -59,7 +59,7 @@ Om du vill testa dina webbsidor med Mozilla Firefox 100 kan du simulera den komm
 1. Klicka på den blå bockmarkeringsknappen för att spara inställningen.
 1. Stäng och starta om webbläsaren.
 
-Gå tillbaka till `about:config` och söka efter `general.useragent.override` igen.  När den visas klickar du på papperskorgsikonen för att ta bort inställningen och startar om webbläsaren.
+Om du vill ändra användaragenten till standardinställningen går du tillbaka till `about:config` och söka efter `general.useragent.override` igen.  När den visas klickar du på papperskorgsikonen för att ta bort inställningen och startar om webbläsaren.
 
 ### Testa med Chrome 100{#test-chrome-100}
 
@@ -68,7 +68,7 @@ Om du vill testa Google Chrome 100-användaragenten i dina egna webbprogram kan 
 1. Öppna Chrome, ange `chrome://flags` i adressfältet och tryck på Retur.
 1. Sök `Force major version to 100 in User-Agent` i sökfältet och aktivera det så som visas nedan.
 
-   ![](assets/force-user-agent-chrome.png)
+   ![](assets/do-not-localize/force-user-agent-chrome.png)
 
 1. Starta om webbläsaren.
 1. Stäng `chrome://flags` -fliken.
@@ -83,7 +83,7 @@ Från och med v97 kan webbplatsägare emulera den här versionen genom att aktiv
 1. Öppna Microsoft Edge, ange `edge://flags` i adressfältet och tryck på Retur.
 1. Sök efter `force-major-version-to-100` och aktivera enligt nedan.
 
-   ![](assets/force-user-agent-edge.png)
+   ![](assets/do-not-localize/force-user-agent-edge.png)
 
 1. Starta om webbläsaren.
 1. Stäng `edge://flags` -fliken.
