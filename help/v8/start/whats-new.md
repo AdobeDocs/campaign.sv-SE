@@ -1,14 +1,14 @@
 ---
 title: Nyheter i Campaign v8
-description: Upptäck nyckelfunktionerna i Adobe Campaign v8
+description: Upptäck de viktigaste funktionerna i Adobe Campaign v8
 feature: Overview
 role: User
 level: Beginner
 exl-id: 7771a02c-ebd4-48b6-b25e-6b6e420ad493
 source-git-commit: cfc1043e30bdd43e1acaeaf399fde01c6473f1b4
 workflow-type: tm+mt
-source-wordcount: '910'
-ht-degree: 3%
+source-wordcount: '904'
+ht-degree: 2%
 
 ---
 
@@ -20,7 +20,7 @@ Adobe Campaign v8 har avsevärda förbättringar vad gäller infrastruktur, säk
 
 ![](assets/home-page.png)
 
-## Viktiga möjligheter{#key-capabilities}
+## Viktiga funktioner{#key-capabilities}
 
 Viktiga funktioner listas nedan.
 
@@ -100,8 +100,8 @@ Som produktadministratör kan du hantera inställningar och spåra användningen
 Via ett intuitivt användargränssnitt kan administratörer övervaka användningen av nyckelresurser, utföra avancerade uppgifter som IP-adresser som tillåter listning, SFTP-lagringsövervakning, nyckelhantering med mera. Det här självbetjäningsgränssnittet ger dig större flexibilitet och hjälper dig att:
 
 * Gör ändringar av inställningarna själv utan att kontakta Adobe Support
-* Konfigurera inställningar baserat på olika affärsbehov vid olika tidpunkter
-* kontrollera åtkomstinställningarna efter behov för att förbättra säkerheten
+* Konfigurera inställningar baserat på dina olika affärsbehov vid olika tidpunkter
+* Förbättra säkerheten genom att styra åtkomstinställningarna vid behov
 
 ![](assets/subdomain1.png)
 

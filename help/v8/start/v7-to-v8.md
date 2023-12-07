@@ -1,14 +1,14 @@
 ---
 title: Övergång från Campaign Classic v7 till kampanj v8
-description: Lär dig om skillnaderna mellan Campaign Classic v7 och Campaign v8.
+description: Lär mer om skillnaderna mellan Campaign Classic v7 och Campaign v8.
 feature: Overview
 role: User
 level: Beginner
 exl-id: 00ba1c43-9558-4adb-83a1-6597c2bbca62
 source-git-commit: cfc1043e30bdd43e1acaeaf399fde01c6473f1b4
 workflow-type: tm+mt
-source-wordcount: '690'
-ht-degree: 5%
+source-wordcount: '686'
+ht-degree: 4%
 
 ---
 
@@ -70,7 +70,7 @@ Med Adobe Campaign v8 är kubrapporterna optimerade och har bättre skalbarhet �
 
 Observera att vissa funktioner inte är tillgängliga i samband med en [Företagsdistribution (FFDA)](../architecture/enterprise-deployment.md) för Campaign, till exempel:
 
-* Hantera marknadsföringsresurser
+* Hantering av marknadsföringsresurser
 * Kuponger
 * Webbspårning
 * Undersökningar
