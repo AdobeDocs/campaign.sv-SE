@@ -3,10 +3,10 @@ keywords: Campaign Classic;hem;populära ämnen
 description: Campaign v8 - hjälpcenter
 title: Adobe Campaign v8 - produktdokumentation
 exl-id: 6010b0f7-baf0-43ba-af9a-b8864f3897ea,9ff16fb1-d3d3-44fe-9016-15abffdbc74e
-source-git-commit: 0f86b6303bd380f5079b38de88ee3d097e415695
+source-git-commit: 9d0ddad6acf349a9498471af228640444565ed72
 workflow-type: tm+mt
-source-wordcount: '429'
-ht-degree: 0%
+source-wordcount: '348'
+ht-degree: 1%
 
 ---
 
@@ -18,24 +18,17 @@ Få en glimt av de senaste förbättringarna i Adobe Campaign v8-produkten och d
 
 >[!BEGINTABS]
 
+>[!TAB Push channel kommande ändringar]
+
+Vissa viktiga ändringar av tjänsten Android Firebase Cloud Messaging (FCM) kommer att släppas 2024 och kan påverka din Adobe Campaign-implementering. Din prenumerationstjänstkonfiguration för push-meddelanden för Android kan behöva uppdateras för att den här ändringen ska fungera. Du kan redan kontrollera och vidta åtgärder.
+
+[![image](assets/do-not-localize/learn-more-button.svg)](../technotes/upgrades/push-technote.md)
+
 >[!TAB Förbättrad push-meddelandetjänst]
 
 Campaign v8.5.1 introducerar vår senaste tjänst för push-meddelanden, som bygger på ett robust ramverk som bygger på modern spetsteknik. Den här tjänsten är utformad för att låsa upp nya nivåer av skalbarhet, så att dina meddelanden kan nå en större publik med smidig effektivitet. Med vår förbättrade infrastruktur och våra optimerade processer kan ni förvänta er större skalbarhet och tillförlitlighet, så att ni kan engagera och kommunicera med era mobilappsanvändare som aldrig förr. Den här funktionen är bara tillgänglig för en viss kundgrupp (begränsad tillgänglighet).
 
 [![image](assets/do-not-localize/learn-more-button.svg)](send/push-data-collection.md)
-
->[!TAB Förbättrade genomströmningar för mobilkanaler]
-
-Den nyligen introducerade tjänsten Push Notification visar betydande förbättringar av genomströmningen för både Push Android och Push iOS jämfört med vår tidigare version (v8.4). Användarna kommer att uppleva avsevärt bättre prestanda med den uppgraderade tjänsten i den senaste versionen (v8.5).
-
-* Push-meddelanden (Android): upp till **5x** snabbare
-* Push-meddelanden (iOS): upp till **2,2 x** snabbare
-
-SMS-genomströmning har förbättrats avsevärt genom en rad optimeringar, vilket har lett till betydande förbättringar av hastighet och effektivitet för SMS-kommunikation. Dessa uppgraderingar har lett till ökad genomströmning från den tidigare versionen (v8.4) till den senaste versionen (v8.5), som omfattar både sändning och feedback-uppdateringar. Användarna kan nu dra nytta av fördelarna med den här förbättrade SMS-tjänsten.
-
-* SMS-genomströmning: upp till <strong>5x</strong> snabbare</li>
-
-Dessa maximala genomströmningsprestanda har mätts av testgrupper i Adobe under labbförhållanden.
 
 >[!ENDTABS]
 

@@ -7,12 +7,11 @@ role: Admin
 level: Experienced
 badge-v7: label="v7" type="Informative" tooltip="Gäller även Campaign Classic v7"
 badge-v8: label="v8" type="Positive" tooltip="Gäller Campaign v8"
-hide: true
-hidefromtoc: true
-source-git-commit: 65b8d84e600e1814484fa81fb814475c0a8b9296
+exl-id: 45ac6f8f-eb2a-4599-a930-1c1fcaa3095b
+source-git-commit: 9d0ddad6acf349a9498471af228640444565ed72
 workflow-type: tm+mt
-source-wordcount: '831'
-ht-degree: 1%
+source-wordcount: '804'
+ht-degree: 2%
 
 ---
 
@@ -51,7 +50,7 @@ Om du vill kontrollera om du påverkas kan du filtrera **Tjänster och prenumera
 
 * Som Campaign Classic v7-användare på plats måste ni uppgradera både marknadsförings- och Real-Time Execution-servrarna. Servern för MID-Source påverkas inte.
 
-### Migreringsförfarande {#fcm-migration-steps}
+### Migreringsprocedur {#fcm-migration-steps}
 
 Så här migrerar du miljön till HTTP v1:
 
@@ -102,4 +101,3 @@ Du kan:
 * Ange **[!UICONTROL Visibility]** nivån på dina meddelanden till allmänheten, privat eller hemligt.
 
 Mer information finns på **[!UICONTROL HTTP v1 additional options]** och hur du fyller i dessa fält, se [FCM-dokumentation](https://firebase.google.com/docs/reference/fcm/rest/v1/projects.messages#androidnotification){target="_blank"}.
-

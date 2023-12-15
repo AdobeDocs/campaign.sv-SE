@@ -5,9 +5,9 @@ feature: Push
 role: User
 level: Beginner
 exl-id: f04c6e0c-f2b9-496a-9697-04ef4c3411ee
-source-git-commit: f577ee6d303bab9bb07350b60cf0fa6fc9d3a163
+source-git-commit: 9d0ddad6acf349a9498471af228640444565ed72
 workflow-type: tm+mt
-source-wordcount: '813'
+source-wordcount: '866'
 ht-degree: 3%
 
 ---
@@ -17,6 +17,11 @@ ht-degree: 3%
 Med mobilappsleveranser kan du skicka meddelanden till iOS- och Android-enheter.
 
 Innan du börjar skicka push-meddelanden med Adobe Campaign måste du se till att det finns konfigurationer och integreringar på mobilappen och för taggar i Adobe Experience Platform. [Läs mer om push-konfiguration.](push-settings.md)
+
+>[!CAUTION]
+>
+>Vissa viktiga ändringar av tjänsten Android Firebase Cloud Messaging (FCM) kommer att släppas 2024 och kan påverka din Adobe Campaign-implementering. Din prenumerationstjänstkonfiguration för push-meddelanden för Android kan behöva uppdateras för att den här ändringen ska fungera. Du kan redan kontrollera och vidta åtgärder. [Läs mer](../../technotes/upgrades/push-technote.md).
+
 
 ## Skapa ditt första push-meddelande{#push-create}
 
