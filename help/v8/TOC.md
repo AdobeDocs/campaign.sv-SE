@@ -1,12 +1,13 @@
 ---
 audience: end-user
 user-guide-title: Campaign v8
+user-guide-description: Lär dig de senaste förbättringarna i Adobe Campaign v8-produkter och dokumentation.
 title: Adobe Campaign v8-dokumentation
 description: Kampanjdokumentation v8
 breadcrumb-title: Campaign v8-dokumentation
-source-git-commit: 24785675a2138e3ce9c806fb52ac29a6a18c6d31
+source-git-commit: 7ab4fd76abb18a9d3d5acac7f4f0639bc4f1f346
 workflow-type: tm+mt
-source-wordcount: '557'
+source-wordcount: '568'
 ht-degree: 14%
 
 ---
