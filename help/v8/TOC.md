@@ -2,19 +2,19 @@
 audience: end-user
 user-guide-title: Campaign v8
 title: Adobe Campaign v8-dokumentation
-description: Dokumentation om Campaign v8
-breadcrumb-title: Översikt över Campaign
-source-git-commit: f463c5747b844544ba561a63e4cb0359c0c258c8
+description: Kampanjdokumentation v8
+breadcrumb-title: Campaign v8-dokumentation
+source-git-commit: 24785675a2138e3ce9c806fb52ac29a6a18c6d31
 workflow-type: tm+mt
-source-wordcount: '579'
-ht-degree: 22%
+source-wordcount: '557'
+ht-degree: 14%
 
 ---
 
 
 # Adobe Campaign v8-dokumentation {#campaign-v8}
 
-+ [Dokumentation om Campaign v8](campaign-home.md)
++ [Kampanjdokumentation v8](campaign-home.md)
 + Releaser och senaste uppdateringar {#releases}
    + [Tidig versionsinformation](start/e-release-notes.md)
    + [Versionsinformation](start/release-notes.md)
@@ -26,7 +26,7 @@ ht-degree: 22%
    + [Kompatibilitetsmatris](start/compatibility-matrix.md)
 + Kom igång {#new}
    + [Kom igång med Adobe Campaign](start/get-started.md)
-   + [Viktiga möjligheter](start/whats-new.md)
+   + [Viktiga funktioner](start/whats-new.md)
    + [Komponenter och processer](start/ac-components.md)
    + [Anslut till Campaign](start/connect.md)
    + [Kampanjgränssnitt](start/campaign-ui.md)
@@ -34,7 +34,7 @@ ht-degree: 22%
    + [Vanliga frågor och svar ](start/campaign-faq.md)
 + Campaign Management {#campaigns}
    + [Kom igång med kampanjer](start/campaigns.md)
-   + [Kampanjorkestrering >](https://experienceleague.adobe.com/docs/campaign/automation/campaign-orchestration/set-up-campaigns.html)
+   + [Kampanjsamordning >](https://experienceleague.adobe.com/docs/campaign/automation/campaign-orchestration/set-up-campaigns.html)
 + Skicka meddelanden{#send}
    + [Kom igång med meddelanden](start/create-message.md)
    + E-post {#emails}
@@ -186,9 +186,9 @@ ht-degree: 22%
       + [Schemastruktur](dev/schema-structure.md)
       + [Databasmappning](dev/database-mapping.md)
       + [Begränsa PI-vy](dev/restrict-pi-view.md)
-      + [Använd en anpassad mottagartabell](dev/custom-recipient.md)
+      + [Använda en anpassad mottagartabell](dev/custom-recipient.md)
       + [Uppdatera databasen](dev/update-database-structure.md)
       + [Inmatningsformulär](dev/forms.md)
    + [Kampanj-API:er](dev/api.md)
-+ [Kontrollpanelen i Campaign >](https://experienceleague.adobe.com/docs/control-panel/using/control-panel-home.html?lang=sv)
++ [Campaign Control Panel >](https://experienceleague.adobe.com/docs/control-panel/using/control-panel-home.html?lang=sv)
 + [Campaign Automation Guide >](https://experienceleague.adobe.com/docs/campaign/automation/home.html)
