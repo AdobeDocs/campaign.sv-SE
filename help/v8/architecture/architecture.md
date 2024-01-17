@@ -5,10 +5,10 @@ feature: Architecture, Deployment
 role: Data Engineer
 level: Beginner
 exl-id: 562b24c3-6bea-447f-b74c-187ab77ae78f
-source-git-commit: 561e4b6d2c99e98e068132c80c2bebb756b60a44
+source-git-commit: 6d54f072ad0e67b435cd6e03433fa9ddd0794dea
 workflow-type: tm+mt
-source-wordcount: '1032'
-ht-degree: 2%
+source-wordcount: '1035'
+ht-degree: 1%
 
 ---
 
@@ -28,24 +28,30 @@ Du kan exportera och importera paket från en miljö till en annan.
 
 ![](../assets/do-not-localize/book.png) Läs mer om paket i [Campaign Classic v7 - dokumentation](https://experienceleague.adobe.com/docs/campaign-classic/using/getting-started/administration-basics/working-with-data-packages.html){target="_blank"}
 
-## Distributionsmodeller{#ac-deployment}
+## Distributionsmodeller {#ac-deployment}
 
-Det finns två distributionsmodeller:
+Det finns två distributionsmodeller: **Campaign FDA-distribution** (P1-P3) och **Driftsättning av Campaign Enterprise (FFDA)** (P4).
 
-* **Campaign FDA-distribution**
+### Campaign FDA-distribution {#ac-deployment-fda}
 
-  I [FDA-distribution](fda-deployment.md), [!DNL Adobe Campaign] v8 kan anslutas till [!DNL Snowflake] för att få åtkomst till data via funktionen för federerad dataåtkomst: du kan få åtkomst till och bearbeta externa data och information som lagras i [!DNL Snowflake] utan att ändra strukturen på Adobe Campaign-data. PostgreSQL är den primära databasen, och du kan använda Snowflake som den sekundära databasen för att utöka datamodellen och lagra data i Snowflake. Därefter kan ni köra ETL, segmentering och rapporter på en stor datauppsättning med enastående prestanda.
+I [FDA-distribution](fda-deployment.md), [!DNL Adobe Campaign] v8 kan anslutas till [!DNL Snowflake] för att få åtkomst till data via funktionen för federerad dataåtkomst: du kan få åtkomst till och bearbeta externa data och information som lagras i [!DNL Snowflake] utan att ändra strukturen på Adobe Campaign-data. PostgreSQL är den primära databasen, och du kan använda Snowflake som den sekundära databasen för att utöka datamodellen och lagra data i Snowflake. Därefter kan ni köra ETL, segmentering och rapporter på en stor datauppsättning med enastående prestanda.
 
-  >[!NOTE]
-  >
-  >I den här distributionsmodellen [!DNL Snowflake] sekundär databas är endast tillgänglig på begäran. Så här uppdaterar du distributionen med [!DNL Snowflake]kontaktar du Adobe Transition Manager.
-  >
 
-* **Driftsättning av Campaign Enterprise (FFDA)**
+![](assets/P1-P3-architecture)
 
-  När det gäller en [Företagsdistribution (FFDA)](enterprise-deployment.md), [!DNL Adobe Campaign] v8 fungerar med två databaser: en lokal [!DNL Campaign] databas för användargränssnittet för meddelanden i realtid och enhetliga frågor samt skriva via API:er och ett molnbaserat [!DNL Snowflake] databas för kampanjkörning, batchfrågor och arbetsflödeskörning.
+>[!NOTE]
+>
+>I den här distributionsmodellen [!DNL Snowflake] sekundär databas är endast tillgänglig på begäran. Så här uppdaterar du distributionen med [!DNL Snowflake]kontaktar du Adobe Transition Manager.
+>
 
-  Campaign v8 Enterprise innehåller konceptet **Fullständig federerad dataåtkomst** (FFDA): alla data är nu fjärranslutna till molndatabasen. Med den här nya arkitekturen förenklar driftsättningen av Campaign v8 Enterprise (FFDA) datahanteringen: inget index krävs för molndatabasen. Du behöver bara skapa tabellerna, kopiera data så kan du börja. Cloud-databastekniken kräver inget specifikt underhåll för att garantera prestandanivån.
+### Driftsättning av Campaign Enterprise (FFDA) {#ac-deployment-ffda}
+
+När det gäller en [Företagsdistribution (FFDA)](enterprise-deployment.md), [!DNL Adobe Campaign] v8 fungerar med två databaser: en lokal [!DNL Campaign] databas för användargränssnittet för meddelanden i realtid och enhetliga frågor samt skriva via API:er och ett molnbaserat [!DNL Snowflake] databas för kampanjkörning, batchfrågor och arbetsflödeskörning.
+
+Campaign v8 Enterprise innehåller konceptet **Fullständig federerad dataåtkomst** (FFDA): alla data är nu fjärranslutna till molndatabasen. Med den här nya arkitekturen förenklar driftsättningen av Campaign v8 Enterprise (FFDA) datahanteringen: inget index krävs för molndatabasen. Du behöver bara skapa tabellerna, kopiera data så kan du börja. Cloud-databastekniken kräver inget specifikt underhåll för att garantera prestandanivån.
+
+![](assets/P4-architecture.png)
+
 
 ## Split delivery execution {#split}
 

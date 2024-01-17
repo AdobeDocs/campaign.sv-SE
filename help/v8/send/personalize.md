@@ -5,21 +5,21 @@ feature: Personalization
 role: User
 level: Beginner
 exl-id: 1da45746-4d69-415b-a793-9a08ce80091d
-source-git-commit: c248dd899ea704e43873652545c6b945c2915b57
+source-git-commit: 6d54f072ad0e67b435cd6e03433fa9ddd0794dea
 workflow-type: tm+mt
-source-wordcount: '471'
+source-wordcount: '473'
 ht-degree: 5%
 
 ---
 
 # Kom igång med personalisering {#personalize-content}
 
-För att få ut så mycket som möjligt av alla marknadsföringskampanjer ger Adobe Campaign er ett sätt att leverera anpassat innehåll som talar till kunderna på deras nivå. Utifrån profildata kan personalisering skapa en anpassad upplevelse för olika grupper och individer: kan ni anpassa era meddelanden till varje specifik mottagare genom att utnyttja de data och den information ni har om dem. Det kan vara deras förnamn, intressen, var de bor, vad de har köpt och mycket annat.
+För att få ut så mycket som möjligt av alla marknadsföringskampanjer ger Adobe Campaign er ett sätt att leverera anpassat innehåll som talar till kunderna på deras nivå. Utifrån profildata kan personalisering användas för att skapa en anpassad upplevelse för olika grupper och individer: du kan anpassa dina meddelanden till varje specifik mottagare genom att utnyttja de data och den information du har om dem. Det kan vara deras förnamn, intressen, var de bor, vad de har köpt och mycket annat.
 
-Adobe Campaign förenklar personalisering: kan du visa olika typer av innehåll som är anpassat för varje mottagare med en enda [e-postmall](create-templates.md). I transaktionsmeddelandena, t.ex. inköpsbekräftelse eller e-postmeddelanden om att kunden har lämnat en kundvagn, ska du inkludera produktlistningsinformation för varje enskild person i en enda e-postmall.
+Adobe Campaign förenklar personaliseringen: du kan visa olika typer av innehåll som är anpassat för varje mottagare med en enda [meddelandemall](create-templates.md). I transaktionsmeddelandena, t.ex. inköpsbekräftelse eller e-postmeddelanden om att kunden har lämnat en kundvagn, ska du inkludera produktlistningsinformation för varje enskild person i en enda e-postmall.
 
 
-## Strategier för personalisering {#personalization-strategy}
+## Anpassningsstrategier {#personalization-strategy}
 
 Använd Campaign för att skapa dynamiskt innehåll och skicka personaliserade meddelanden. Personaliseringsfunktionerna kan kombineras för att förbättra budskapen och skapa en anpassad användarupplevelse.
 
@@ -27,17 +27,17 @@ Du kan anpassa meddelandeinnehållet genom att:
 
 * Infoga dynamisk **personaliseringsfält**
 
-   Anpassningsfält används för personalisering på första nivån av dina meddelanden. Du kan välja vilket fält som helst tillgängligt i databasen från personaliseringsredigeraren. För en leverans kan du välja vilket fält som helst som är relaterat till mottagaren, meddelandet eller leveransen. Dessa attribut kan infogas på ämnesraden eller i meddelandetexten. [Läs mer](personalization-fields.md).
+  Anpassningsfält används för personalisering på första nivån av dina meddelanden. Du kan välja vilket fält som helst tillgängligt i databasen från personaliseringsredigeraren. För en leverans kan du välja vilket fält som helst som är relaterat till mottagaren, meddelandet eller leveransen. Dessa attribut kan infogas på ämnesraden eller i meddelandetexten. [Läs mer](personalization-fields.md).
 
-   Följande syntax infogar mottagarens ort i ditt innehåll: &lt;%= mottagare.location.city %>.
+  Följande syntax infogar mottagarens ort i ditt innehåll: &lt;%= mottagare.location.city %>.
 
 * Infoga fördefinierad **innehållsblock**
 
-   Campaign innehåller en uppsättning personaliseringsblock som innehåller en specifik återgivning som du kan infoga i dina leveranser. Du kan till exempel lägga till en logotyp, ett hälsningsmeddelande eller en länk till meddelandets spegelsida. Innehållsblock är tillgängliga från ett dedikerat tävlingsbidrag via personaliseringsredigeraren. [Läs mer](personalization-blocks.md).
+  Campaign innehåller en uppsättning personaliseringsblock som innehåller en specifik återgivning som du kan infoga i dina leveranser. Du kan till exempel lägga till en logotyp, ett hälsningsmeddelande eller en länk till meddelandets spegelsida. Innehållsblock är tillgängliga från ett dedikerat tävlingsbidrag via personaliseringsredigeraren. [Läs mer](personalization-blocks.md).
 
 * Skapa **villkorligt innehåll**
 
-   Konfigurera villkorsstyrt innehåll för att lägga till dynamisk personalisering baserat på mottagarens profil till exempel. Textblock och/eller bilder infogas när ett visst villkor är true. [Läs mer](conditions.md).
+  Konfigurera villkorsstyrt innehåll för att lägga till dynamisk personalisering baserat på mottagarens profil till exempel. Textblock och/eller bilder infogas när ett visst villkor är true. [Läs mer](conditions.md).
 
 <!--* Add **personalized offers**
     
@@ -65,7 +65,7 @@ Om du ställer in det här alternativet på 0 kommer det inte att finnas någon 
 Följande variabler är interna variabler som kan användas för personalisering men som inte får ändras: **leverans**, **message**, **dataSource**, **targetData**, **provider**, **kupong**, **couponValue**, **offert**.
 
 
-## Videokurs {#personalization-video}
+## Självstudievideo {#personalization-video}
 
 Förstå de olika typerna av dynamiskt innehåll och lär dig hur du skapar och använder personaliseringsblock och villkorssatser i en leverans.
 
