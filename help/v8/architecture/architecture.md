@@ -5,7 +5,7 @@ feature: Architecture, Deployment
 role: Data Engineer
 level: Beginner
 exl-id: 562b24c3-6bea-447f-b74c-187ab77ae78f
-source-git-commit: 6d54f072ad0e67b435cd6e03433fa9ddd0794dea
+source-git-commit: 06a505988579d38b4425643aaf85f5e4fa4d00b6
 workflow-type: tm+mt
 source-wordcount: '1035'
 ht-degree: 1%
@@ -37,7 +37,7 @@ Det finns två distributionsmodeller: **Campaign FDA-distribution** (P1-P3) och 
 I [FDA-distribution](fda-deployment.md), [!DNL Adobe Campaign] v8 kan anslutas till [!DNL Snowflake] för att få åtkomst till data via funktionen för federerad dataåtkomst: du kan få åtkomst till och bearbeta externa data och information som lagras i [!DNL Snowflake] utan att ändra strukturen på Adobe Campaign-data. PostgreSQL är den primära databasen, och du kan använda Snowflake som den sekundära databasen för att utöka datamodellen och lagra data i Snowflake. Därefter kan ni köra ETL, segmentering och rapporter på en stor datauppsättning med enastående prestanda.
 
 
-![](assets/P1-P3-architecture)
+![](assets/P1-P3-architecture.png)
 
 >[!NOTE]
 >
