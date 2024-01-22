@@ -4,11 +4,11 @@ user-guide-title: Campaign v8
 user-guide-description: Produktdokumentation för Adobe Campaign v8.
 title: Adobe Campaign v8-dokumentation
 description: Kampanjdokumentation v8
-breadcrumb-title: Campaign v8-dokumentation
+breadcrumb-title: Dokumentation om Campaign v8
 source-git-commit: 7151325bfd80e9780a317dcfcde4df549c2a8cb0
 workflow-type: tm+mt
 source-wordcount: '563'
-ht-degree: 14%
+ht-degree: 16%
 
 ---
 
