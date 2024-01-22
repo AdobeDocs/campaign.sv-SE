@@ -3,10 +3,10 @@ keywords: Campaign Classic;hem;populära ämnen
 description: Campaign v8 - hjälpcenter
 title: Adobe Campaign v8 - produktdokumentation
 exl-id: 6010b0f7-baf0-43ba-af9a-b8864f3897ea,9ff16fb1-d3d3-44fe-9016-15abffdbc74e
-source-git-commit: 9d0ddad6acf349a9498471af228640444565ed72
+source-git-commit: f04db53bee75c935bc8737eef93fa05ec6868ebc
 workflow-type: tm+mt
-source-wordcount: '348'
-ht-degree: 1%
+source-wordcount: '363'
+ht-degree: 7%
 
 ---
 
@@ -14,7 +14,7 @@ ht-degree: 1%
 
 ## Nyheter
 
-Få en glimt av de senaste förbättringarna i Adobe Campaign v8-produkten och dokumentationen! En omfattande lista över funktioner, förbättringar och korrigeringar finns i [Versionsinformation](start/release-notes.md).
+Få en glimt av de senaste förbättringarna i Adobe Campaign v8-produkten och dokumentationen! En omfattande lista över funktioner, förbättringar och korrigeringar finns i [versionsinformationen](start/release-notes.md). Håll dig uppdaterad om de senaste ändringarna i vår dokumentation genom att besöka [dokumentuppdateringar](start/documentation-updates.md) sida.
 
 >[!BEGINTABS]
 
@@ -22,13 +22,13 @@ Få en glimt av de senaste förbättringarna i Adobe Campaign v8-produkten och d
 
 Vissa viktiga ändringar av tjänsten Android Firebase Cloud Messaging (FCM) kommer att släppas 2024 och kan påverka din Adobe Campaign-implementering. Din prenumerationstjänstkonfiguration för push-meddelanden för Android kan behöva uppdateras för att den här ändringen ska fungera. Du kan redan kontrollera och vidta åtgärder.
 
-[![image](assets/do-not-localize/learn-more-button.svg)](../technotes/upgrades/push-technote.md)
+[![Bild](assets/do-not-localize/learn-more-button.svg)](../technotes/upgrades/push-technote.md)
 
 >[!TAB Förbättrad push-meddelandetjänst]
 
 Campaign v8.5.1 introducerar vår senaste tjänst för push-meddelanden, som bygger på ett robust ramverk som bygger på modern spetsteknik. Den här tjänsten är utformad för att låsa upp nya nivåer av skalbarhet, så att dina meddelanden kan nå en större publik med smidig effektivitet. Med vår förbättrade infrastruktur och våra optimerade processer kan ni förvänta er större skalbarhet och tillförlitlighet, så att ni kan engagera och kommunicera med era mobilappsanvändare som aldrig förr. Den här funktionen är bara tillgänglig för en viss kundgrupp (begränsad tillgänglighet).
 
-[![image](assets/do-not-localize/learn-more-button.svg)](send/push-data-collection.md)
+[![Bild](assets/do-not-localize/learn-more-button.svg)](send/push-data-collection.md)
 
 >[!ENDTABS]
 

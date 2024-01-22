@@ -5,9 +5,9 @@ feature: Direct Mail
 role: User
 level: Beginner
 exl-id: ff2be012-72f3-428d-a973-196fea7ec4ab
-source-git-commit: 567c2e84433caab708ddb9026dda6f9cb717d032
+source-git-commit: f04db53bee75c935bc8737eef93fa05ec6868ebc
 workflow-type: tm+mt
-source-wordcount: '399'
+source-wordcount: '387'
 ht-degree: 2%
 
 ---
@@ -28,9 +28,9 @@ Steg för att generera filen är:
 
    Mottagarprofilerna måste innehålla minst namn och postadresser.
 
-   Postadresser är beräkningsfält. En adress kan som standard innehålla upp till sex rader: den första innehåller förnamnet och efternamnet, de följande raderna innehåller postadressen (väg osv.) och den sista raden innehåller postnumret och ort eller stad.
+   Postadresser är beräkningsfält. En adress kan som standard innehålla upp till sex rader: den första innehåller förnamnet och efternamnet, de följande raderna innehåller postadressen (väg osv.) och den sista raden innehåller postnumret och ort eller stad. Definitionen av standardfältet för beräknad postadress kan granskas i nms:mottagarschemat.
 
-   En adress anses vara fullständig om fälten för namn, postnummer och ort inte är tomma.
+   En adress anses vara fullständig om fälten för namn, postnummer och ort inte är tomma. Mottagare med ofullständiga adresser utesluts från direktutskick.
 
    ![](../assets/do-not-localize/book.png) Läs mer i [Campaign Classic v7 - dokumentation](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/key-steps-when-creating-a-delivery/steps-defining-the-target-population.html){target="_blank"}
 
