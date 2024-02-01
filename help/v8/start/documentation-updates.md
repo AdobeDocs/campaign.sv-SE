@@ -7,7 +7,7 @@ level: Beginner
 source-git-commit: f04db53bee75c935bc8737eef93fa05ec6868ebc
 workflow-type: tm+mt
 source-wordcount: '48'
-ht-degree: 33%
+ht-degree: 89%
 
 ---
 
@@ -18,4 +18,4 @@ På den här sidan listas alla dokumentationsuppdateringar för [!DNL Campaign v
 
 ## Januari 2024 {#jan-2024}
 
-* Information har lagts till om hur standardfältet för postadress för Direct Mail definieras och varför det är viktigt att se till att adresserna är fullständiga. [Läs mer](../send/direct-mail.md)
+* Information har lagts till om hur standardfältet postalAddress för direktreklam definieras och varför det är viktigt att se till att adresserna är fullständiga. [Läs mer](../send/direct-mail.md)
