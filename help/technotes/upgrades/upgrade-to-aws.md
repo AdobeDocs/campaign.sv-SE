@@ -2,9 +2,9 @@
 title: Uppgradering av infrastruktur för e-postutskick av kampanj
 description: Uppgradering av infrastruktur för e-postutskick av kampanj
 exl-id: f01e38ad-490e-4389-af5e-87beef533eb0
-source-git-commit: 557a74dbfbd0af385cc5104801ce3ab91dd33a95
+source-git-commit: 68252db5ad53e2a37c76765cd35650f824101289
 workflow-type: tm+mt
-source-wordcount: '366'
+source-wordcount: '331'
 ht-degree: 1%
 
 ---
@@ -25,11 +25,9 @@ Som en del av vårt pågående arbete med att tillhandahålla en användarupplev
 
 ## När kommer uppgraderingen att ske?{#aws-timeline}
 
-Uppgraderingar av utvecklings- och stagingmiljöer förväntas äga rum i **Oktober 2023**.
+Uppgraderingar av utvecklings- och mellanlagringsmiljöer började i **Oktober 2023**.
 
-Vi planerar att schemalägga uppgraderingar av produktionsmiljön från **Januari 2024**.
-
-Som Campaign-kund får du ytterligare meddelanden om uppgraderingen minst trettio (30) dagar i förväg.
+Uppgraderingar av produktionsmiljöer började i **Januari 2024**.
 
 ## Vad ska man förvänta sig?{#impact}
 
