@@ -1,10 +1,11 @@
 ---
 title: Migrera kampanjoperatorer till Adobe Identity Management System (IMS)
 description: Lär dig hur du migrerar kampanjoperatorer till Adobe Identity Management System (IMS)
-source-git-commit: a85368a8cd34c9bcdfcea91b71fa4b519b6437a3
+exl-id: 58c130d8-8ba8-42ce-9ab4-a697125d3f85
+source-git-commit: 1cdb21533138623fc603424503063cf3dbc2d94c
 workflow-type: tm+mt
-source-wordcount: '1078'
-ht-degree: 1%
+source-wordcount: '1116'
+ht-degree: 0%
 
 ---
 
@@ -111,6 +112,24 @@ Om alla användare (Campaign-operatorer) använder IMS behöver du inte utföra 
 
 När migreringen är klar måste du kontakta Adobe Transition Manager så att Adobe kan slutföra migreringen.
 
+### Hur visar jag din operatörs autentiseringstyp?
+
+Lär dig hur du visar operatörernas autentiseringstyp i Campaign:
+
+1. Från **Explorer**, åtkomst **Administration** `>` **Åtkomsthantering** `>` **Operatorer**.
+
+1. Högerklicka på rubrikraden och välj alternativet **Konfigurera lista** -menyn.
+
+   ![](assets/ims_2.png)
+
+1. Lägg till **Konto inaktiverat** och **Autentiseringstyp** as **Utdatakolumner**.
+
+   ![](assets/ims_1.png)
+
+Nu kan du se listan med **Operatorer** och **Autentiseringstyp**.
+
+![](assets/ims_3.png)
+
 ## Användbara länkar {#ims-useful-links}
 
 * [Migrering av tekniska användare till Adobe Developer Console](ims-migration.md)
@@ -118,4 +137,3 @@ När migreringen är klar måste du kontakta Adobe Transition Manager så att Ad
 * [Åtkomst och behörigheter i Adobe Campaign v8](../../v8/start/gs-permissions.md)
 * [Versionsinformation för Adobe Campaign v8](../../v8/start/release-notes.md)
 * [Vad är Adobe Identity Management System (IMS)](https://helpx.adobe.com/enterprise/using/identity.html){target="_blank"}
-
