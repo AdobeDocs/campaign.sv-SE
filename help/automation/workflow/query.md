@@ -5,9 +5,9 @@ description: Läs mer om arbetsflödesaktiviteten Fråga
 feature: Workflows, Targeting Activity, Query Editor
 role: User, Data Engineer
 exl-id: 717e4f7c-3a8e-4930-9a06-b7412d6e1675
-source-git-commit: 28742db06b9ca78a4e952fcb0e066aa5ec344416
+source-git-commit: 0191ca8c29813c448040fc887f98550c74197578
 workflow-type: tm+mt
-source-wordcount: '1545'
+source-wordcount: '1553'
 ht-degree: 0%
 
 ---
@@ -21,7 +21,7 @@ ht-degree: 0%
 Med en fråga kan du välja ett mål enligt villkor. Du kan koppla en segmentkod till frågeresultatet och infoga ytterligare data i den.
 Mer information om frågeexempel finns i [det här avsnittet](querying-recipient-table.md).
 
-![](assets/query-activity.png)
+![](assets/query-activity.png){width="70%" align="center" zoomable="yes"}
 
 Mer information om hur du använder och hanterar ytterligare data finns i [Lägg till data](#adding-data).
 
@@ -35,15 +35,15 @@ The **[!UICONTROL Edit query...]** Med -länken kan du definiera måltypen, begr
 
    Mer information finns i [Målinriktning och filtrering](targeting-workflows.md#targeting-and-filtering-dimensions).
 
-   ![](assets/targeting-filtering-dimensions.png)
+   ![](assets/targeting-filtering-dimensions.png){width="70%" align="center" zoomable="yes"}
 
    En fråga kan vid behov baseras på data från den inkommande övergången genom att välja **[!UICONTROL Temporary schema]** när du väljer mål och filtreringsdimensioner.
 
-   ![](assets/query_temporary_table.png)
+   ![](assets/query_temporary_table.png){width="70%" align="center" zoomable="yes"}
 
 1. Definiera populationerna med guiden. De fält som ska anges kan vara olika beroende på måltyp. Du kan förhandsgranska målpopulationen med de aktuella villkoren med hjälp av **[!UICONTROL Preview]** -fliken.
 
-   ![](assets/query-sample.png)
+   ![](assets/query-sample.png){width="70%" align="center" zoomable="yes"}
 
 1. Om du har valt **[!UICONTROL Filtering conditions]** i steg 1 eller med **[!UICONTROL Filters]** > **[!UICONTROL Advanced filter...]** måste du lägga till filtervillkor manuellt senare.
 
@@ -59,11 +59,11 @@ Med de extra kolumnerna kan du samla in ytterligare information om målpopulatio
 
 The **[!UICONTROL Add data...]** kan du välja vilka ytterligare data som ska samlas in.
 
-![](assets/wf_add_data_link.png)
+![](assets/wf_add_data_link.png){width="70%" align="center" zoomable="yes"}
 
 Börja med att välja vilken typ av data som ska läggas till:
 
-![](assets/wf_add_data_1st_option.png)
+![](assets/wf_add_data_1st_option.png){width="70%" align="center" zoomable="yes"}
 
 * Välj **[!UICONTROL Data linked to the filtering dimension]** för att markera data i Adobe Campaign-databasen.
 * Välj **[!UICONTROL External data]** för att lägga till data från en extern databas. Det här alternativet är bara tillgängligt om du har köpt **Åtkomst till federerade data** alternativ. Mer information finns i [Åtkomst till en extern databas (FDA)](accessing-an-external-database--fda-.md).
@@ -75,11 +75,11 @@ Så här lägger du till data från Adobe Campaign-databasen:
 
 1. Välj den typ av data som du vill lägga till. Detta kan vara data som tillhör filterdimensionen eller data som lagras i länkade tabeller.
 
-   ![](assets/query_add_columns.png)
+   ![](assets/query_add_columns.png){width="70%" align="center" zoomable="yes"}
 
 1. Om data tillhör frågefiltret markerar du dem i listan över tillgängliga fält så att de visas i utdatakolumnerna.
 
-   ![](assets/wf_add_data_field_selection.png)
+   ![](assets/wf_add_data_field_selection.png){width="70%" align="center" zoomable="yes"}
 
    Du kan lägga till:
 
@@ -93,7 +93,7 @@ Så här lägger du till en samling information som är länkad till en målpopu
 1. I det första steget i guiden väljer du **[!UICONTROL Data linked to the filtering dimension]** alternativ:
 1. Markera tabellen som innehåller den information som du vill samla in och klicka på **[!UICONTROL Next]**.
 
-   ![](assets/wf_add_data_linked_table.png)
+   ![](assets/wf_add_data_linked_table.png){width="70%" align="center" zoomable="yes"}
 
 1. Ange vid behov antalet element i samlingen som du vill behålla genom att välja ett av värdena i **[!UICONTROL Data collected]** fält. Som standard återskapas alla rader i samlingen och filtreras sedan enligt villkoren som anges i följande steg.
 
@@ -108,11 +108,11 @@ Så här lägger du till en samling information som är länkad till en målpopu
    * Om du väljer att återställa flera rader (**[!UICONTROL Limit the line count]**) kan du ange hur många rader som ska samlas in.
    * Om de insamlade kolumnerna innehåller aggregat, t.ex. antalet fel som deklarerats, genomsnittliga utgifter på en webbplats, osv. du kan använda **[!UICONTROL Aggregates]** värde.
 
-   ![](assets/query_add_collection_param.png)
+   ![](assets/query_add_collection_param.png){width="70%" align="center" zoomable="yes"}
 
 1. Ange delmarkeringen för samlingen.
 
-   ![](assets/query_add_columns_collection_filter.png)
+   ![](assets/query_add_columns_collection_filter.png){width="70%" align="center" zoomable="yes"}
 
 1. Om du har valt **[!UICONTROL Limit the line count]** anger du i vilken ordning de insamlade uppgifterna ska filtreras. När antalet rader som samlas in är fler än antalet rader som du har angett att de ska behållas kan du ange vilka rader som ska behållas i filtreringsordningen.
 
@@ -133,20 +133,20 @@ I följande exempel syftar frågan till att identifiera män mellan 18 och 30 å
    * Mottagare över 18 år.
    * Mottagare som bor i Frankrike.
 
-   ![](assets/query_example.png)
+   ![](assets/query_example.png){width="70%" align="center" zoomable="yes"}
 
    Du kan visa SQL som matchar din villkorskombination:
 
-   ![](assets/query_example_sql.png)
+   ![](assets/query_example_sql.png){width="70%" align="center" zoomable="yes"}
 
 1. Du kan kontrollera att villkoren är korrekta genom att förhandsgranska de mottagare som matchar frågan på fliken:
 
-   ![](assets/query_example_preview.png)
+   ![](assets/query_example_preview.png){width="70%" align="center" zoomable="yes"}
 
 1. Spara dina filter så att du kan använda dem igen vid ett senare tillfälle genom att klicka på **[!UICONTROL Finish]** > **[!UICONTROL OK]**.
 1. Fortsätt redigera arbetsflödet genom att lägga till andra aktiviteter i det. När det har startats och föregående frågesteg är klart visas antalet mottagare. Du kan visa mer information med hjälp av snabbmenyn (högerklicka på övergången > **[!UICONTROL Display the target...]**).
 
-   ![](assets/query_example_result.png)
+   ![](assets/query_example_result.png){width="70%" align="center" zoomable="yes"}
 
 ## Utdataparametrar {#output-parameters}
 
@@ -186,7 +186,7 @@ I avsnittet nedan beskrivs de effektivaste strategierna för att optimera frågo
 
 Använd frågans filtreringsdimension i stället för att använda operatorn &quot;finns som&quot;.
 
-![](assets/optimize-queries-filtering.png)
+![](assets/optimize-queries-filtering.png){width="70%" align="center" zoomable="yes"}
 
 I frågor är villkoret &quot;finns till exempel&quot; i filter inte effektivt. De motsvarar en underfråga i SQL:
 
@@ -194,7 +194,7 @@ I frågor är villkoret &quot;finns till exempel&quot; i filter inte effektivt. 
 
 Det bästa sättet är att använda frågefiltret i stället:
 
-![](assets/optimize-queries-filtering2.png)
+![](assets/optimize-queries-filtering2.png){width="70%" align="center" zoomable="yes"}
 
 Motsvarigheten till filterdimensionen i SQL är den inre kopplingen:
 
