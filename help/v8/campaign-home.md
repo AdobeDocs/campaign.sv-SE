@@ -3,10 +3,10 @@ keywords: Campaign Classic;hem;populära ämnen
 description: Campaign v8 - hjälpcenter
 title: Adobe Campaign v8 - produktdokumentation
 exl-id: 6010b0f7-baf0-43ba-af9a-b8864f3897ea,9ff16fb1-d3d3-44fe-9016-15abffdbc74e
-source-git-commit: f04db53bee75c935bc8737eef93fa05ec6868ebc
+source-git-commit: 08a7a5f51d20068c31980e7b256e80c36ba6ff31
 workflow-type: tm+mt
-source-wordcount: '363'
-ht-degree: 7%
+source-wordcount: '319'
+ht-degree: 9%
 
 ---
 
@@ -14,9 +14,23 @@ ht-degree: 7%
 
 ## Nyheter
 
-Få en glimt av de senaste förbättringarna i Adobe Campaign v8-produkten och dokumentationen! En omfattande lista över funktioner, förbättringar och korrigeringar finns i [versionsinformationen](start/release-notes.md). Håll dig uppdaterad om de senaste ändringarna i vår dokumentation genom att besöka [dokumentuppdateringar](start/documentation-updates.md) sida.
+Få en glimt av de senaste förbättringarna i produkten och dokumentationen för Adobe Campaign v8 (kundkonsol)! En omfattande lista över funktioner, förbättringar och korrigeringar finns i [versionsinformationen](start/release-notes.md). Håll dig uppdaterad om de senaste ändringarna i vår dokumentation genom att besöka [dokumentuppdateringar](start/documentation-updates.md) sida.
 
 >[!BEGINTABS]
+
+>[!TAB Campaign v8.6-utgåvan är live]
+
+Den senaste versionen av Adobe Campaign finns nu att köpa. Läs versionsinformationen för mer information.
+
+[![Bild](assets/do-not-localize/learn-more-button.svg)](start/release-notes.md)
+
+
+>[!TAB Nytt webbanvändargränssnitt för kampanj]
+
+Upplev nya Adobe Campaign användargränssnitt. Modern, intuitiv och dynamisk!
+
+[![Bild](assets/do-not-localize/learn-more-button.svg)](start/campaign-ui.md#ac-web-ui)
+
 
 >[!TAB Push channel kommande ändringar]
 
@@ -24,11 +38,7 @@ Vissa viktiga ändringar av tjänsten Android Firebase Cloud Messaging (FCM) kom
 
 [![Bild](assets/do-not-localize/learn-more-button.svg)](../technotes/upgrades/push-technote.md)
 
->[!TAB Förbättrad push-meddelandetjänst]
 
-Campaign v8.5.1 introducerar vår senaste tjänst för push-meddelanden, som bygger på ett robust ramverk som bygger på modern spetsteknik. Den här tjänsten är utformad för att låsa upp nya nivåer av skalbarhet, så att dina meddelanden kan nå en större publik med smidig effektivitet. Med vår förbättrade infrastruktur och våra optimerade processer kan ni förvänta er större skalbarhet och tillförlitlighet, så att ni kan engagera och kommunicera med era mobilappsanvändare som aldrig förr. Den här funktionen är bara tillgänglig för en viss kundgrupp (begränsad tillgänglighet).
-
-[![Bild](assets/do-not-localize/learn-more-button.svg)](send/push-data-collection.md)
 
 >[!ENDTABS]
 
@@ -102,5 +112,5 @@ Campaign v8.5.1 introducerar vår senaste tjänst för push-meddelanden, som byg
 
 ## Ytterligare resurser
 
-[Adobe Campaign v8 - produktbeskrivning](https://helpx.adobe.com/legal/product-descriptions/adobe-campaign-managed-cloud-services.html){target="_blank"} - [Tutorials](https://experienceleague.adobe.com/docs/campaign-learn/tutorials/overview.html){target="_blank"} - [[!DNL Adobe Campaign] automation guide](https://experienceleague.adobe.com/docs/campaign/automation/home.html){target="_blank"} - [Control Panel for Campaign v8](https://experienceleague.adobe.com/docs/control-panel/using/discover-control-panel/key-features.html){target="_blank"}
+[Adobe Campaign v8 - produktbeskrivning](https://helpx.adobe.com/legal/product-descriptions/adobe-campaign-managed-cloud-services.html){target="_blank"} - [Adobe Campaign Web user interface documentation](https://experienceleague.adobe.com/docs/campaign-web/v8/campaign-web-home.html){target="_blank"} - [Tutorials](https://experienceleague.adobe.com/docs/campaign-learn/tutorials/overview.html){target="_blank"} - [[!DNL Adobe Campaign] automation guide](https://experienceleague.adobe.com/docs/campaign/automation/home.html){target="_blank"} - [Control Panel for Campaign v8](https://experienceleague.adobe.com/docs/control-panel/using/discover-control-panel/key-features.html){target="_blank"}
 
