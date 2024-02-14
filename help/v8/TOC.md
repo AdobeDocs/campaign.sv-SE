@@ -1,14 +1,14 @@
 ---
 audience: end-user
 user-guide-title: Campaign v8
-user-guide-description: Produktdokumentation för Adobe Campaign v8.
+user-guide-description: Produktdokumentation för Adobe Campaign v8 (klientkonsol).
 title: Adobe Campaign v8-dokumentation
 description: Kampanjdokumentation v8
 breadcrumb-title: Dokumentation om Campaign v8
-source-git-commit: f04db53bee75c935bc8737eef93fa05ec6868ebc
+source-git-commit: df0c05495788fc497af51092f482e879fe2dffa7
 workflow-type: tm+mt
-source-wordcount: '565'
-ht-degree: 16%
+source-wordcount: '575'
+ht-degree: 15%
 
 ---
 
@@ -19,8 +19,10 @@ ht-degree: 16%
 + Releaser och senaste uppdateringar {#releases}
    + [Dokumentationsuppdateringar](start/documentation-updates.md)
    + [Tidig versionsinformation](start/e-release-notes.md)
+   + [Version och uppgraderingar](start/upgrades.md)
    + [Versionsinformation](start/release-notes.md)
    + Tidigare versionsinformation {#previous-rn}
+      + [2023](start/release-notes-2023.md)
       + [2022](start/release-notes-2022.md)
       + [2021](start/release-notes-2021.md)
    + [Guardrails](start/ac-guardrails.md)
@@ -29,9 +31,9 @@ ht-degree: 16%
 + Kom igång {#new}
    + [Kom igång med Adobe Campaign](start/get-started.md)
    + [Viktiga funktioner](start/whats-new.md)
-   + [Komponenter och processer](start/ac-components.md)
+   + [Upptäck användargränssnittet](start/campaign-ui.md)
    + [Anslut till Campaign](start/connect.md)
-   + [Kampanjgränssnitt](start/campaign-ui.md)
+   + [Komponenter och processer](start/ac-components.md)
    + [Från Classic v7 till v8](start/v7-to-v8.md)
    + [Vanliga frågor och svar ](start/campaign-faq.md)
 + Campaign Management {#campaigns}
@@ -42,6 +44,7 @@ ht-degree: 16%
    + E-post {#emails}
       + [Designa och validera e-postmeddelanden](send/email.md)
       + [Länka till spegelsidan](send/mirror-page.md)
+      + [Lägg till en hemlig kopia-adress](send/email-bcc.md)
       + [Definiera ytterligare e-postparametrar](send/email-parameters.md)
       + [Skicka och övervaka e-postmeddelanden](send/send.md)
    + [SMS](send/sms.md)
@@ -174,7 +177,6 @@ ht-degree: 16%
    + Inställningar och konfiguration {#configuration}
       + [Användargränssnittsinställningar](config/ui-settings.md)
       + [Hantera mappar och vyer](audiences/folders-and-views.md)
-      + [E-postinställningar](config/email-settings.md)
       + [Inställningar för transaktionsmeddelanden](config/transactional-msg-settings.md)
       + [Integrera kampanjens SDK med appen - DEPRECATED PAGE](config/push-config.md)
       + [Externa konton](config/external-accounts.md)
