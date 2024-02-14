@@ -5,10 +5,10 @@ feature: Overview
 role: User
 level: Intermediate
 exl-id: 09562b6c-3d3d-4808-a70b-202172867f46
-source-git-commit: 561e4b6d2c99e98e068132c80c2bebb756b60a44
+source-git-commit: 09db0cc1a14bffefe8d1b8d0d5a06d5b6517a5bb
 workflow-type: tm+mt
-source-wordcount: '1188'
-ht-degree: 4%
+source-wordcount: '1146'
+ht-degree: 2%
 
 ---
 
@@ -58,11 +58,11 @@ Du kan lägga till användare manuellt i Campaign och associera dem med grupper,
 
 ![](../assets/do-not-localize/glass.png) Lär dig hur du lägger till användare i Adobe Campaign i [det här avsnittet](../start/gs-permissions.md).
 
-### Installera Campaign Client Console{#implementation-install-console}
+### Installera Campaign-klientkonsolen{#implementation-install-console}
 
-Programmets huvudanvändargränssnitt är en avancerad klient, d.v.s. ett inbyggt program (Windows) som kommunicerar med Adobe Campaign programserver enbart med standardInternetprotokoll (SOAP, HTTP osv.). Adobe Campaign Client Console är mycket användarvänligt för ökad produktivitet och använder mycket liten bandbredd (genom att använda ett lokalt cacheminne) och är utformat för enkel driftsättning. Konsolen kan distribueras från en webbläsare, kan uppdateras automatiskt och kräver ingen specifik nätverkskonfiguration eftersom den bara genererar HTTP(S)-trafik.
+Programmets huvudanvändargränssnitt är en avancerad klient, d.v.s. ett inbyggt program (Windows) som kommunicerar med Adobe Campaign programserver enbart med standardInternetprotokoll (SOAP, HTTP osv.). Adobe Campaign klientkonsol är mycket användarvänlig, har mycket liten bandbredd (med hjälp av ett lokalt cacheminne) och är utformad för enkel driftsättning. Konsolen kan distribueras från en webbläsare, kan uppdateras automatiskt och kräver ingen specifik nätverkskonfiguration eftersom den bara genererar HTTP(S)-trafik.
 
-![](../assets/do-not-localize/glass.png) [Läs mer om Campaign Client Console](connect.md).
+![](../assets/do-not-localize/glass.png) [Läs mer om Campaign-klientkonsolen](connect.md).
 
 ## Förbered din miljö{#implementation-prepare-your-env}
 
@@ -122,13 +122,13 @@ Ni kan anpassa många olika Campaign-områden och -funktioner. De flesta av vår
 
    Du kan också skapa nya instrumentpaneler för att visa Campaign-data beroende på dina behov.
 
-   ![](../assets/do-not-localize/glass.png)[ Läs mer på den här sidan](../dev/customize.md#gs-custom-dashboards).
+   ![](../assets/do-not-localize/glass.png) Läs mer i [den här sidan](../dev/customize.md#gs-custom-dashboards).
 
 1. **Rapporter**
 
    Campaign innehåller en uppsättning inbyggda rapporter om leveransövervakning, URL:er och klickströmmar, spårning, leveransindikatorer med mera.
 
-   Förutom inbyggda rapporter kan du med Adobe Campaign generera rapporter i olika sammanhang och för att tillgodose olika behov. Principer för användning och implementeringslägen beskrivs i detta dokument.
+   Förutom inbyggda rapporter kan du i Adobe Campaign generera rapporter i olika sammanhang och för att tillgodose olika behov. Principer för användning och implementeringslägen beskrivs i detta dokument.
 
    ![](../assets/do-not-localize/glass.png) Läs mer om rapportfunktioner i Campaign i [den här sidan](../reporting/gs-reporting.md).
 
@@ -160,7 +160,7 @@ Om ni använder andra Adobe-lösningar kan ni koppla dem till er Campaign-miljö
 * Campaign - Analytics Data Connectors
 
 
-Du kan också använda enkel inloggning (SSO) för att ansluta till Campaign. Läs mer i [den här sidan](connect.md).
+Du kan bara använda enkel inloggning (SSO) för att ansluta till Campaign. Läs mer i [den här sidan](connect.md).
 
 ![](../assets/do-not-localize/glass.png) Upptäck hela listan över Adobe som kan integreras med Adobe Campaign [på den här sidan](../connect/integration.md).
 

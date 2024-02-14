@@ -6,10 +6,10 @@ feature: Application Settings
 role: Admin, Developer
 level: Beginner
 exl-id: 9fa6fc42-45be-41db-9b4a-19b3b0c40dcd
-source-git-commit: f577ee6d303bab9bb07350b60cf0fa6fc9d3a163
+source-git-commit: 09db0cc1a14bffefe8d1b8d0d5a06d5b6517a5bb
 workflow-type: tm+mt
-source-wordcount: '1846'
-ht-degree: 1%
+source-wordcount: '1848'
+ht-degree: 0%
 
 ---
 
@@ -32,7 +32,7 @@ Lär dig hur du hanterar mappar och vyer i [den här sidan](../audiences/folders
 
 ## Hantera och anpassa listor{#customize-lists}
 
-I Campaign Client Console visas data i listor. Du kan anpassa listorna efter dina behov. Du kan till exempel lägga till kolumner, filtrera data, räkna poster, spara och dela inställningarna.
+I Campaign-klientkonsolen visas data i listor. Du kan anpassa listorna efter dina behov. Du kan till exempel lägga till kolumner, filtrera data, räkna poster, spara och dela inställningarna.
 
 Dessutom kan du skapa och spara filter.  Läs mer om filter i [den här sidan](../audiences/create-filters.md).
 
@@ -146,7 +146,7 @@ Listor kan innehålla en stor mängd data. Du kan sortera dessa data eller anvä
 
 Klicka på kolumnrubriken om du vill använda en stigande eller fallande sortering eller om du vill avbryta sorteringen. Aktiv sorteringsstatus och sorteringsordning anges med en blå pil före kolumnetiketten. Ett rött streck före kolumnetiketten betyder att sorteringen tillämpas på data som indexeras från databasen. Den här sorteringsmetoden används för att optimera sorteringsjobb.
 
-Du kan också konfigurera sortering eller kombinera sorteringsvillkor. Följ stegen nedan för att göra detta:
+Du kan också konfigurera sortering eller kombinera sorteringsvillkor. Gör så här:
 
 1. **[!UICONTROL Configure list]** nedan och till höger om listan.
 1. I fönstret för listkonfiguration klickar du på **[!UICONTROL Sorting]** -fliken.
@@ -213,7 +213,7 @@ Så här skapar du ett alias:
 
 1. Spara ändringarna. Ersättningen av värden utförs av **Rensa alias** arbetsflöde som körs varje kväll. Se [Kör datarensning](#running-data-cleansing).
 
-För alla fält som baseras på den här uppräkningen, när en användare anger värdet **Adobe** i ett&quot;företag&quot;-fält (i Adobe Campaign Client Console, i ett webbformulär) ersätts det automatiskt av värdet **Adobe**.
+För alla fält som baseras på den här uppräkningen, när en användare anger värdet **Adobe** i ett företagsfält (i Adobe Campaign klientkonsol, i ett webbformulär) ersätts det automatiskt av värdet **Adobe**.
 
 #### Konvertera fel värde till alias{#convert-to-alias}
 

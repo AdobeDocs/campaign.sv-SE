@@ -5,9 +5,9 @@ description: Övervaka arbetsflödeskörning
 feature: Workflows
 role: Admin
 exl-id: bc13d706-7888-42eb-9116-5538e68cd515
-source-git-commit: 567c2e84433caab708ddb9026dda6f9cb717d032
+source-git-commit: 09db0cc1a14bffefe8d1b8d0d5a06d5b6517a5bb
 workflow-type: tm+mt
-source-wordcount: '1935'
+source-wordcount: '1929'
 ht-degree: 0%
 
 ---
@@ -122,7 +122,7 @@ Exempel på meddelande:
 
 ![](assets/wf-notification_error-msg.png)
 
-Med länken kan du komma åt Adobe Campaign Client Console i webbläge och arbeta med felarbetsflödet när du har loggat in.
+Med länken kan du komma åt Adobe Campaign klientkonsol i webbläge och arbeta med felarbetsflödet när du har loggat in.
 
 ![](assets/wf-notification_error-console.png)
 

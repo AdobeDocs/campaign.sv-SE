@@ -5,10 +5,10 @@ feature: Email
 role: User
 level: Beginner
 exl-id: ad75f01e-2c6c-4607-b15a-8870d399002a
-source-git-commit: f577ee6d303bab9bb07350b60cf0fa6fc9d3a163
+source-git-commit: 87c971ac6cf4abb6b04d52ce60ac2036055e1e02
 workflow-type: tm+mt
-source-wordcount: '840'
-ht-degree: 8%
+source-wordcount: '594'
+ht-degree: 7%
 
 ---
 
@@ -18,54 +18,7 @@ I det här avsnittet visas de alternativ och parametrar som är tillgängliga fr
 
 ## Använd e-postkopia {#email-bcc}
 
-<!--
->[!NOTE]
->
->This capability is available starting Campaign v8.3. To check your version, refer to [this section](../start/compatibility-matrix.md#how-to-check-your-campaign-version-and-buildversion)-->
-
-Du kan konfigurera Adobe Campaign att behålla en kopia av e-postmeddelanden som skickas från din plattform.
-
-Adobe Campaign hanterar inte själva arkiverade filer. Det gör att du kan skicka de meddelanden du vill till en dedikerad e-postadress för hemlig kopia (BCC), varifrån de kan bearbetas och arkiveras i ett externt system. De e-postfiler som motsvarar skickade e-postmeddelanden kan sedan överföras till en fjärrserver, till exempel en SMTP-e-postserver.
-
->[!CAUTION]
->
->Av sekretesskäl måste e-post från innehållsförteckningen behandlas av ett arkiveringssystem som kan lagra säkert personligt identifierbar information (PII).
-
-Arkiveringsmålet är valfri e-postadress som är osynlig för leveransmottagarna.
-
-![](../assets/do-not-localize/speech.png)  Som användare av hanterade Cloud Service [kontakta Adobe](../start/campaign-faq.md#support){target="_blank"} för att kommunicera e-postadressen för den kontroll av webbläsarkompatibilitet som ska användas för arkivering.
-
-När BCC-e-postadressen har definierats måste du aktivera det dedikerade alternativet på leveransnivån.
-
->[!CAUTION]
->
->**[!UICONTROL Email BCC]** är inte aktiverat som standard. Du måste aktivera det manuellt i mallen för e-postleverans eller leverans.
-
-Följ stegen nedan för att göra detta:
-
-1. Gå till **[!UICONTROL Campaign Management]** > **[!UICONTROL Deliveries]**, eller **[!UICONTROL Resources]** > **[!UICONTROL Templates]** > **[!UICONTROL Delivery templates]**.
-1. Välj leverans eller duplicera den färdiga produkten **[!UICONTROL Email delivery]** väljer du sedan den duplicerade mallen.
-1. Klicka på knappen **[!UICONTROL Properties]**.
-1. Klicka på fliken **[!UICONTROL Delivery]**.  
-1. Markera alternativet **[!UICONTROL Email BCC]**.
-
-   ![](assets/email-bcc.png)
-
-1. Välj **[!UICONTROL Ok]**.
-
-En kopia av alla skickade meddelanden för varje leverans som baseras på den här mallen skickas till den konfigurerade e-postadressen för hemlig kopia.
-
-Observera följande särdrag och rekommendationer:
-
-* Du kan bara använda en e-postadress för hemlig kopia.
-
-* Se till att BCC-adressen har tillräcklig mottagningskapacitet för att arkivera alla e-postmeddelanden som skickas.
-
-* BCC för e-post <!--with Enhanced MTA--> skickar till e-postadressen till BCC innan den skickas till mottagarna, vilket kan leda till att BCC-meddelanden skickas trots att de ursprungliga leveranserna kan ha studsat. Mer information om studsar finns i [Förstå leveransfel](delivery-failures.md).
-
-* Om e-postmeddelanden som skickas till BCC-adressen öppnas och klickas igenom, kommer detta att beaktas i **[!UICONTROL Total opens]** och **[!UICONTROL Clicks]** från sändningsanalysen, vilket kan orsaka några felberäkningar.
-
-<!--Only successfully sent emails are taken in account, bounces are not.-->
+Du kan konfigurera Adobe Campaign att behålla en kopia av e-postmeddelanden som skickas från din plattform. Det här alternativet beskrivs i [den här sidan](email-bcc.md).
 
 ## Välj meddelandeformat {#selecting-message-formats}
 
@@ -132,15 +85,15 @@ Värden kodas automatiskt om det behövs.
 
 >[!IMPORTANT]
 >
->Tillägg av ett skript för att infoga ytterligare SMTP-rubriker är reserverat för avancerade användare.
+>Att lägga till ett skript för att infoga ytterligare SMTP-rubriker är reserverat för avancerade användare.
 >
 >Syntaxen för det här skriptet måste uppfylla kraven för den här innehållstypen: Inget oanvänt utrymme, ingen tom rad, o.s.v.
 
 ![](assets/email-smtp-headers.png)
 
-<!--
-## Generate mirror page {#generating-mirror-page}
 
-The mirror page is an HTML page accessible online via a web browser. Its content is identical to the email. It can be useful if your recipients are experiencing rendering issues or broken images when trying to view your email in their inbox.
+## Generera spegelsida {#generating-mirror-page}
 
-Learn how to insert a link to the mirror page in [this section](mirror-page.md).-->
+Spegelsidan är en HTML-sida som är tillgänglig online via en webbläsare. Innehållet är identiskt med e-postmeddelandet. Det kan vara användbart om dina mottagare får problem med återgivningen eller om det uppstår problem med brutna bilder när de försöker visa e-postmeddelandet i sin inkorg.
+
+Lär dig hur du infogar en länk till spegelsidan i [det här avsnittet](mirror-page.md)

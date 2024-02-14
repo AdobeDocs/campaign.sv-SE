@@ -1,13 +1,13 @@
 ---
 title: Skapa filter i Adobe Campaign
-description: Lär dig hur du filtrerar data och sparar filter i Campaign
+description: Lär dig filtrera data och spara filter i Campaign
 feature: Audiences, Profiles
 role: User
 level: Beginner
 exl-id: 873578f6-6af9-4d0c-8df3-cce320fc6a4e
-source-git-commit: 290f4e9a0d13ef49caacb7a128ccc266bafd5e69
+source-git-commit: 09db0cc1a14bffefe8d1b8d0d5a06d5b6517a5bb
 workflow-type: tm+mt
-source-wordcount: '1638'
+source-wordcount: '1607'
 ht-degree: 0%
 
 ---
@@ -16,11 +16,11 @@ ht-degree: 0%
 
 Datafiltrering är processen att välja en mindre del av datauppsättningen, bara de poster som matchar vissa villkor, och att använda den deluppsättningen för specifika åtgärder (uppdateringar, målgruppsgenerering) eller analyser.
 
-När du bläddrar i Campaign från **[!UICONTROL Explorer]** visas data i listor. Du kan använda befintliga inbyggda filter för att komma åt en viss delmängd av dessa data: Adresser i karantän, mottagare utan mål, ett visst åldersintervall eller ett visst datum när de skapades, till exempel.
+När du bläddrar i Campaign från **[!UICONTROL Explorer]** visas data i listor. Du kan använda befintliga inbyggda filter för att få tillgång till en viss delmängd av dessa data: adresser i karantän, mottagare som inte är målinriktade, ett visst åldersintervall eller datum när de skapades, till exempel.
 
 Du kan också skapa egna filter, spara dem för framtida bruk eller dela dem med andra Campaign-användare.
 
-Med filterkonfigurationen kan du välja data från en lista **[!UICONTROL dynamically]**: när data ändras uppdateras de filtrerade data.
+Med filterkonfigurationen kan du välja data från en lista **[!UICONTROL dynamically]**: När data ändras uppdateras de filtrerade data.
 
 >[!NOTE]
 >
@@ -183,7 +183,7 @@ Använd följande steg:
 
 1. Avmarkera samma alternativ för det aktuella fördefinierade standardfiltret.
 1. Klicka **[!UICONTROL Save]** för att använda filtret.
-1. Bläddra till mappen Mottagare och klicka på **[!UICONTROL Remove this filter]** ikonen till höger om det aktuella filtret: det nya standardfiltret är tillgängligt.
+1. Bläddra till mappen Mottagare och klicka på **[!UICONTROL Remove this filter]** till höger om det aktuella filtret: det nya standardfiltret är tillgängligt.
    ![](assets/updated-default-filter.png)
 
 
@@ -193,9 +193,9 @@ Använd och kombinera **Snabbfilter** för att definiera filter för specifika f
 
 När du har lagt till snabbfilterfält visas de ovanför datalistan, den ena efter den andra. De kan tas bort oberoende av varandra.
 
-Snabbfilter är specifika för varje operator och initieras om varje gång som operatorn rensar cachen för sin klientkonsol.
+Snabbfilter är specifika för varje operator och initieras om varje gång operatorn rensar cachen för sin klientkonsol.
 
-Om du behöver återanvända ett filter skapar du en **avancerat filter** och spara. [Läs mer](#advanced-filters).
+Om du behöver återanvända ett filter skapar du en **avancerat filter** och spara det. [Läs mer](#advanced-filters).
 
 Skapa en **snabbfilter** följer du de här stegen:
 
@@ -214,9 +214,9 @@ Skapa en **snabbfilter** följer du de här stegen:
    ![](assets/add-filter-above-the-list.png)
 
 
-Om du behöver filtrera ett fält som inte är tillgängligt i formuläret, visas det i kolumnerna och filtreras efter den kolumnen. Så här gör du,
+Om du behöver filtrera ett fält som inte är tillgängligt i formuläret, visas det i kolumnerna och filtreras efter den kolumnen. För att göra detta
 
-1. Klicka på **[!UICONTROL Configure list]** ikon.
+1. Klicka på **[!UICONTROL Configure list]** -ikon.
 
    ![](assets/configure-list.png)
 
@@ -238,7 +238,7 @@ Kombinera komplexa kriterier i **Avancerade filter**. Använd dessa filter för 
 
 ### Skapa ett avancerat filter{#create-adv-filters}
 
-Skapa en **avancerat filter** klickar du på **[!UICONTROL Filters]** och markera **[!UICONTROL Advanced filter...]**.
+Skapa en **avancerat filter** klickar du på **[!UICONTROL Filters]** knapp och markera **[!UICONTROL Advanced filter...]**.
 
 ![](assets/adv-filter.png)
 
@@ -311,7 +311,7 @@ Det här filtret är också tillgängligt från de fördefinierade filtren i mot
 
 Du kan använda och kombinera filter för att skapa ett målpopulationssegment.
 
-När du har sparat avancerade filter är de tillgängliga när du väljer målgrupp för ett meddelande i **[!UICONTROL User filters]** -avsnitt.
+När du har sparat avancerade filter är de tillgängliga när du väljer målpopulation för ett meddelande i **[!UICONTROL User filters]** -avsnitt.
 
 ![](assets/adv-filter-target-type.png)
 
@@ -339,7 +339,7 @@ Avancerade parametrar är tillgängliga för fördefinierade filter. Bläddra ti
 
 * Om du vill visa filtret som standard för alla listor baserade på den här dokumenttypen väljer du **[!UICONTROL Default filter for the associated document type]** alternativ.
 
-   Till exempel **[!UICONTROL By name or login]** filter används för operatorer Det här alternativet är markerat, så filtret visas alltid i alla operatorlistor.
+  Till exempel **[!UICONTROL By name or login]** filter används för operatorer Det här alternativet är markerat, så filtret visas alltid i alla operatorlistor.
 
 * Om du vill göra ett filter tillgängligt för alla Campaign-operatorer väljer du  **[!UICONTROL Filter shared with other operators]** alternativ.
 

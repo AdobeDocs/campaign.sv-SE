@@ -4,7 +4,7 @@ description: Lär dig hur du migrerar tekniska kampanjoperatörer till ett tekni
 feature: Technote
 role: Admin
 exl-id: 775c5dbb-ef73-48dd-b163-23cfadc3dab8
-source-git-commit: 8f58db2b00f2fc98afd737f20411f829dd24c78a
+source-git-commit: 09db0cc1a14bffefe8d1b8d0d5a06d5b6517a5bb
 workflow-type: tm+mt
 source-wordcount: '1507'
 ht-degree: 0%
@@ -204,13 +204,13 @@ När migreringsprocessen har uppnåtts och validerats uppdateras Soap-anropen en
 
 
 
-### Steg 9 - (valfritt) Uppdatera den tekniska kontooperatören i Campaign Client Console {#ims-migration-step-9}
+### Steg 9 - (valfritt) Uppdatera den tekniska kontooperatören i Campaign-klientkonsolen {#ims-migration-step-9}
 
 Det här steget är valfritt och endast tillgängligt i Marketing Instance(erna), inte i någon Message Center-instans. Om specifika mappbehörigheter eller namngivna rättigheter har definierats för den tekniska operatören, men inte via de tilldelade operatörsgrupperna. Du måste nu uppdatera den nyskapade tekniska kontoanvändaren i Admin Console för att ge mappbehörigheter eller namngivna rättigheter som krävs.
 
 Observera att den tekniska kontoanvändaren INTE finns i Adobe Campaign förrän minst ett API-anrop görs till Campaign-instansen, då IMS skapar användaren i Campaign. Om du inte kan hitta de tekniska användarna i Campaign kontrollerar du att du har lyckats skicka ett API-anrop enligt instruktionerna [i steg 7](#ims-migration-step-7).
 
-1. Om du vill använda ändringarna för den nya tekniska kontoanvändaren letar du reda på dem i Campaign-klientkonsolen via e-postadress. Den här e-postadressen skapades under stegen för att skapa projekt och autentisering ovan.
+1. Om du vill använda ändringarna för den nya tekniska kontoanvändaren letar du reda på dem i klientkonsolen för Campaign via e-postadress. Den här e-postadressen skapades under stegen för att skapa projekt och autentisering ovan.
 
    Du kan hitta den här e-postadressen genom att klicka på **OAuth Server-till-server** rubrik i **Referenser** -delen av projektet.
 
@@ -220,11 +220,11 @@ Observera att den tekniska kontoanvändaren INTE finns i Adobe Campaign förrän
 
    ![](assets/do-not-localize/ims-updates-08.png)
 
-1. Nu måste du uppdatera den nyskapade tekniska operatorn i Adobe Campaign Client Console. Du måste tillämpa den befintliga mappbehörigheten för tekniska operatorer på den nya tekniska operatorn.
+1. Nu måste du uppdatera den nyskapade tekniska operatorn i Adobe Campaign klientkonsol. Du måste tillämpa den befintliga mappbehörigheten för tekniska operatorer på den nya tekniska operatorn.
 
    Så här uppdaterar du operatorn:
 
-   1. Bläddra från Campaign Client Console Explorer till **Administration > Åtkomsthantering > Operatorer**.
+   1. Bläddra från Campaign-klientkonsolens utforskare till **Administration > Åtkomsthantering > Operatorer**.
    1. Få åtkomst till den befintliga tekniska operatorn som används för API:er.
    1. Bläddra till mappbehörigheterna och kontrollera rättigheterna.
    1. Använd samma behörigheter för den nyskapade tekniska operatorn. Operatörens e-postadress är **E-post för tekniskt konto** värdet kopierades tidigare.
@@ -233,11 +233,11 @@ Observera att den tekniska kontoanvändaren INTE finns i Adobe Campaign förrän
 
 >[!CAUTION]
 >
->Den nya tekniska operatorn måste ha gjort minst ett API-anrop som ska läggas till i Campaign Client Console.
+>Den nya tekniska operatorn måste ha gjort minst ett API-anrop som ska läggas till i Campaign-klientkonsolen.
 >
 
 ### Steg 10 - Ta bort den gamla tekniska operatorn från Adobe Campaign {#ims-migration-step-10}
 
-När du har migrerat alla tredjepartssystem för att använda det nya tekniska kontot med IMS-autentisering kan du ta bort den gamla tekniska operatorn från Campaign Client Console.
+När du har migrerat alla tredjepartssystem för att använda det nya tekniska kontot med IMS-autentisering kan du ta bort den gamla tekniska operatorn från Campaign-klientkonsolen.
 
-Du gör detta genom att logga in på Campaign Client Console och navigera till **Administration > Åtkomsthantering > Operatorer** och hitta de gamla tekniska användarna och ta bort dem.
+Du gör detta genom att logga in på Campaign-klientkonsolen och navigera till **Administration > Åtkomsthantering > Operatorer** och hitta de gamla tekniska användarna och ta bort dem.

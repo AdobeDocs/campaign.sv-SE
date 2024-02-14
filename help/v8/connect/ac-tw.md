@@ -5,7 +5,7 @@ role: User, Admin
 feature: Social Marketing
 level: Beginner, Intermediate
 exl-id: 5523217a-b95f-4639-b941-52eb7d5a0203
-source-git-commit: 8f58db2b00f2fc98afd737f20411f829dd24c78a
+source-git-commit: 09db0cc1a14bffefe8d1b8d0d5a06d5b6517a5bb
 workflow-type: tm+mt
 source-wordcount: '1065'
 ht-degree: 1%
@@ -74,7 +74,7 @@ Om du vill länka din Campaign-instans till ditt X-konto skapar du en **Twitter*
 >Varje **Twitter** måste också skapas av Adobe på MID-instansen. Kontakta din Adobe-representant för att konfigurera din miljö.
 >
 
-Om du vill ange inställningar måste du ha tillgång till både din Adobe Campaign Client Console och dina X-appbehörigheter.
+Om du vill ange inställningar måste du ha tillgång till både din Adobe Campaign klientkonsol och dina X-appbehörigheter.
 
 1. I **Adobe Campaign**, bläddra till **[!UICONTROL Profiles and targets]** och väljer **[!UICONTROL Services and Subscriptions]** link
 1. Skapa en ny tjänst.
@@ -98,7 +98,7 @@ Om du vill ange inställningar måste du ha tillgång till både din Adobe Campa
 
 1. Kopiera innehållet i ditt X-program **Åtkomsttoken** och **Åtkomsttokenhemlighet** fält och klistra in dem i **[!UICONTROL Access token]** och **[!UICONTROL Access token secret]** fält i din kampanj **Twitter** service.
 
-1. I Campaign Client Console klickar du på **[!UICONTROL Save]**. Du har nu delegerat skrivbehörighet till Adobe Campaign.
+1. Klicka på i Campaign-klientkonsolen **[!UICONTROL Save]**. Du har nu delegerat skrivbehörighet till Adobe Campaign.
 
 Om du vill kontrollera inställningarna kan du:
 

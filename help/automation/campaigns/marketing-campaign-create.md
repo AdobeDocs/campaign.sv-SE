@@ -5,9 +5,9 @@ description: Lär dig skapa och genomföra marknadsföringskampanjer
 feature: Campaigns, Cross Channel Orchestration, Programs
 role: User
 exl-id: 90dd2dad-1380-490e-b958-4a28a7d930ed
-source-git-commit: 567c2e84433caab708ddb9026dda6f9cb717d032
+source-git-commit: d7750add8d71bb51ea1c099a45a7bce05da3b4d7
 workflow-type: tm+mt
-source-wordcount: '1298'
+source-wordcount: '1327'
 ht-degree: 2%
 
 ---
@@ -158,9 +158,14 @@ När du bläddrar i kalendern kan du även skapa ett program eller en kampanj.
 När du skapar en kampanj via **[!UICONTROL Schedule]** under ett program kopplas kampanjen automatiskt till det berörda programmet. The **[!UICONTROL Program]** fältet är dolt i det här fallet.
 
 
-## Använda webbgränssnittet {#use-the-web-interface-}
+## Öppna Campaign med en webbläsare {#use-the-web-interface}
 
-Du kan öppna Adobe Campaign Client Console-skärmarna via en webbläsare och visa alla kampanjer och leveranser samt rapporter och information om profilerna i din databas. Det går inte att skapa poster med den här åtkomsten. Beroende på användarrättigheterna kan du visa och/eller agera på data i databasen. Du kan till exempel godkänna kampanjinnehåll och målinriktning, starta om eller stoppa en leverans osv.
+
+>[!AVAILABILITY]
+>
+>Från och med Campaign v8.6 är Campaign tillgängligt i ett webbanvändargränssnitt. De flesta marknadsföringsåtgärder kan utföras från det nya gränssnittet. [Läs mer](../../v8/start/campaign-ui.md#discover-the-user-interface).
+
+Du kan komma åt vissa av Adobe Campaign klientkonsolskärmar via en webbläsare för att visa alla kampanjer och leveranser samt rapporter och information om profilerna i din databas. Du kan inte skapa komponenter från den här webbåtkomsten, men beroende på åtkomstbehörighet kan du visa och/eller agera utifrån data i databasen. Normalt kan ni godkänna kampanjinnehåll och målinriktning, starta om eller stoppa en leverans osv.
 
 1. Logga in som vanligt via https://`<your instance>:<port>/view/home`.
 1. Använd menyerna för att komma åt översikterna.
@@ -191,7 +196,7 @@ I tabellen sammanfattas de åtgärder du kan vidta i kampanjer från en webbläs
 | Stock | Ta bort en aktierad |
 | Simulering av erbjudanden | Starta och stoppa en simulering |
 | Målarbetsflöde | Starta, pausa och stoppa ett arbetsflöde |
-| Rapportera | Spara aktuella data i rapporthistoriken |
+| Rapport | Spara aktuella data i rapporthistoriken |
 | Forum | Lägg till en diskussion<br/>Svara på ett meddelande i en diskussion<br/>Följ en diskussion och avsluta prenumerationen på den |
 
 ### Hantera godkännanden

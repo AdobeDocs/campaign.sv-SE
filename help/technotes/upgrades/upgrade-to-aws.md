@@ -2,7 +2,7 @@
 title: Uppgradering av infrastruktur för e-postutskick av kampanj
 description: Uppgradering av infrastruktur för e-postutskick av kampanj
 exl-id: f01e38ad-490e-4389-af5e-87beef533eb0
-source-git-commit: 68252db5ad53e2a37c76765cd35650f824101289
+source-git-commit: 4c41e5d1fef1dcb3279a26f6025338e41525e6b3
 workflow-type: tm+mt
 source-wordcount: '331'
 ht-degree: 1%
@@ -27,7 +27,7 @@ Som en del av vårt pågående arbete med att tillhandahålla en användarupplev
 
 Uppgraderingar av utvecklings- och mellanlagringsmiljöer började i **Oktober 2023**.
 
-Uppgraderingar av produktionsmiljöer började i **Januari 2024**.
+Uppgraderingarna av produktionsmiljöerna började i **Januari 2024**.
 
 ## Vad ska man förvänta sig?{#impact}
 

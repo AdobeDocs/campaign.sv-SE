@@ -5,7 +5,7 @@ description: Godkännande
 feature: Workflows, Approvals
 role: User
 exl-id: 9e57d21c-ce16-448d-97f1-8c6844acb37b
-source-git-commit: 567c2e84433caab708ddb9026dda6f9cb717d032
+source-git-commit: 09db0cc1a14bffefe8d1b8d0d5a06d5b6517a5bb
 workflow-type: tm+mt
 source-wordcount: '547'
 ht-degree: 0%

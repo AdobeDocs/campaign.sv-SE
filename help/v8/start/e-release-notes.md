@@ -7,10 +7,10 @@ level: Beginner
 hide: true
 hidefromtoc: true
 exl-id: a45f7b22-44c7-4dad-af0a-ae8f683ae3d9
-source-git-commit: 9fceeb04344f891fbfd8af1e643b2ad5331db158
+source-git-commit: eae364fb3d082c91022fee6bf29802c9eb6dfcf5
 workflow-type: tm+mt
-source-wordcount: '364'
-ht-degree: 1%
+source-wordcount: '464'
+ht-degree: 3%
 
 ---
 
@@ -27,16 +27,22 @@ _14 feb 2024_
 
 * Från och med den här versionen har du tillgång till den nya **Kampanjwebbgränssnitt** som finns i Adobe Experience Cloud centrala miljö. Experience Cloud är en integrerad familj av program, produkter och tjänster för digital marknadsföring i Adobe. Från det intuitiva gränssnittet får du snabbt tillgång till dina molnprogram, produktfunktioner och tjänster. Lär dig ansluta till Adobe Experience Cloud och få tillgång till Adobe Campaign webbgränssnitt [på den här sidan](campaign-ui.md#ac-web-ui).
 
-
-* Adobe Campaign v8 kan nu integreras med **Adobe Experience Manager as a Cloud Service**, med redigering som endast är tillgängligt via Adobe Campaign webbgränssnitt.
-
-* Nu kan du använda **Adobe Experience Manager Assets-bibliotek** tillsammans med Experience Cloud Assets även om **Integrering med Adobe Experience Cloud** paketet installeras på din Adobe Campaign-instans.
+* 32-bitarsversionen av klientkonsolen är nu inaktuell. Från och med 8.6 är klientkonsolen endast tillgänglig med 64 bitar. Uppgraderingen till 64-bitarsversionen av klientkonsolen är smidig. Mer information om hur du uppgraderar ditt operativsystem finns i [technote](https://experienceleague.adobe.com/docs/campaign/technotes-ac/tn-new/console.html).
 
 
 ### Allmänna förbättringar {#improvements-8-6-1}
 
 * Campaign v8.6 ger bättre genomströmning för **spårningsindikatorer för e-postleveranser**. Tack vare våra optimerade processer minskas tiden för att spåra intag och beräkning, och ni kan kontrollera leveransnyckelindikatorerna mycket snabbare.
 
+* Nu kan du ansluta Campaign v8-instansen till din externa Azure synapse-databas. Den här anslutningen hanteras via ett nytt externt konto.
+
+* Adobe Campaign v8 kan nu integreras med **Adobe Experience Manager as a Cloud Service**, med redigering som endast är tillgängligt via Adobe Campaign webbgränssnitt.
+
+* Nu kan du använda **Adobe Experience Manager Assets-bibliotek** tillsammans med Experience Cloud Assets även om **Integrering med Adobe Experience Cloud** paketet installeras på din Adobe Campaign-instans.
+
+* Du kan inte längre skapa operatorer från klientkonsolen. Nu måste du använda Admin Console. [Läs mer](../start/gs-permissions.md).
+
+* Flera tredjepartsverktyg har uppdaterats för att optimera säkerheten.
 
 ### Leveransuppdateringar {#deliverability-8-6-1}
 

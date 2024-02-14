@@ -4,9 +4,9 @@ description: Lär dig hur du migrerar tekniska kampanjoperatörer till ett tekni
 exl-id: 63008b58-4384-4d2b-864a-57f11d701c01
 hide: true
 hidefromtoc: true
-source-git-commit: 9f93057d2d729d4251d914426488f46b6ef24bbb
+source-git-commit: 09db0cc1a14bffefe8d1b8d0d5a06d5b6517a5bb
 workflow-type: tm+mt
-source-wordcount: '894'
+source-wordcount: '861'
 ht-degree: 0%
 
 ---
@@ -77,10 +77,10 @@ Nu kan du lägga till din Campaign-produktprofil i projektet, enligt beskrivning
 
 Det här steget är bara obligatoriskt om specifika mappbehörigheter eller namngivna rättigheter har definierats för den här operatorn (inte via operatorns grupp).
 
-Nu måste du uppdatera den nyskapade tekniska operatorn i Adobe Campaign Client Console. Du måste tillämpa den befintliga mappbehörigheten för tekniska operatorer på den nya tekniska operatorn.
+Nu måste du uppdatera den nyskapade tekniska operatorn i Adobe Campaign klientkonsol. Du måste tillämpa den befintliga mappbehörigheten för tekniska operatorer på den nya tekniska operatorn.
 Så här uppdaterar du operatorn:
 
-1. Bläddra från Campaign Client Console Explorer till **Administration > Åtkomsthantering > Operatorer**.
+1. Bläddra från Campaign-klientkonsolens utforskare till **Administration > Åtkomsthantering > Operatorer**.
 1. Få åtkomst till den befintliga tekniska operatorn som används för API:er.
 1. Bläddra till mappbehörigheterna och kontrollera rättigheterna.
 1. Använd samma behörigheter för den nyskapade tekniska operatorn. Operatörens e-postadress är **E-post för tekniskt konto** värdet kopierades tidigare.
@@ -89,7 +89,7 @@ Så här uppdaterar du operatorn:
 
 >[!CAUTION]
 >
->Den nya tekniska operatorn måste ha gjort minst ett API-anrop som ska läggas till i Campaign Client Console.
+>Den nya tekniska operatorn måste ha gjort minst ett API-anrop som ska läggas till i Campaign-klientkonsolen.
 >
 
 <!--
@@ -100,7 +100,7 @@ Så här uppdaterar du operatorn:
 
 To update the technical operator authentication mode to IMS, follow these steps:
 
-1. From Campaign Client Console explorer, browse to the **Administration > Access Management > Operators**.
+1. From Campaign client console explorer, browse to the **Administration > Access Management > Operators**.
 1. Edit the existing technical operator used for APIs.
 1. Replace the **Name (login)** of this technical operator by the technical account email retrieved earlier.
 1. Browse to the **Edit** button on the top left beside **File**, and select **Edit the XML source**.

@@ -5,30 +5,30 @@ feature: Overview
 role: User
 level: Beginner
 exl-id: 027f5478-d86b-42be-b63d-ec8f5e1dd83d
-source-git-commit: f577ee6d303bab9bb07350b60cf0fa6fc9d3a163
+source-git-commit: 09db0cc1a14bffefe8d1b8d0d5a06d5b6517a5bb
 workflow-type: tm+mt
-source-wordcount: '643'
-ht-degree: 39%
+source-wordcount: '594'
+ht-degree: 18%
 
 ---
 
 # Vanliga frågor och svar{#faq}
 
-Behöver du hjälp eftersom du arbetar med Campaign? Läs de viktigaste frågorna och svaren nedan.
+Behöver du hjälp medan du arbetar med Campaign? Läs de viktigaste frågorna och svaren nedan.
 
 1. **Hur uppgraderar jag Campaign till den senaste versionen?**
 
    Adobe Campaign uppdateras regelbundet. Mindre versioner släpps varje år med nya funktioner, förbättringar och korrigeringar. Dessutom släpper vi regelbundet mindre builder med kumulativa korrigeringar.
 
-   Denna regelbundna uppdateringsfrekvens syftar till att ge dig den senaste och bästa produkten, hålla din miljö säker och förbättra din upplevelse med produkten. Därför anser vi att det är viktigt att du kör den senaste versionen av Adobe Campaign.
+   Denna regelbundna uppdateringsfrekvens syftar till att få den senaste och bästa informationen i händerna, hålla miljön säker och förbättra din upplevelse av produkten. Därför anser vi att det är viktigt att du kör den senaste versionen av Adobe Campaign.
 
    ![](../assets/do-not-localize/speech.png)  Som användare av hanterade Cloud Service uppgraderas din instans av Adobe i varje ny version.
 
 1. **Hur ansluter jag till Campaign v8?**
 
-   Du måste hämta och installera Campaign Client Console för att kunna ansluta till Adobe Campaign.
+   Du måste hämta och installera Campaign-klientkonsolen för att kunna ansluta till Adobe Campaign.
 
-   ![](../assets/do-not-localize/glass.png) [Klicka här för att läsa mer](connect.md).
+   ![](../assets/do-not-localize/glass.png) [Klicka här om du vill veta mer](connect.md).
 
 1. **Kan Campaign v8 installeras på en lokal eller blandad miljö?**
 
@@ -48,15 +48,15 @@ Behöver du hjälp eftersom du arbetar med Campaign? Läs de viktigaste frågorn
 
    [Läs dokumentationen om Campaign Classic v7 och lär dig mer](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/monitoring-deliveries/about-delivery-monitoring.html){target="_blank"} hur du ser till att dina meddelanden skickas, övervakar körningen och vidtar åtgärder om ett fel inträffar.
 
-1. **Kan jag övervaka körningen av arbetsflödet?**
+1. **Kan jag övervaka arbetsflödeskörningen?**
 
    Lär dig övervaka körningen av Campaign-arbetsflödet [den här sidan](https://experienceleague.adobe.com/docs/campaign/automation/workflows/executing-a-workflow/start-a-workflow.html)
 
 1. **Vilka system och komponenter är Campaign v8 kompatibelt med?**
 
-   Du kan se listan över alla system och komponenter som den senaste versionen av Campaign har stöd för i [kompatibilitetsmatrisen för Adobe Campaign ](compatibility-matrix.md).
+   Du kan få en lista över alla system och komponenter som stöds för den senaste versionen av Campaign i [Adobe Campaign-kompatibilitetsmatris](compatibility-matrix.md).
 
-1. **Vilken är proceduren för domändelegering?**
+1. **Hur gör jag för domändelegering?**
 
    En underdomän är en division av domänen som kan användas för att isolera varumärken eller olika typer av trafik (transaktionsmeddelanden, marknadsföringsinformation osv.).
 

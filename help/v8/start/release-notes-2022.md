@@ -5,10 +5,10 @@ feature: Release Notes
 role: User
 level: Beginner
 exl-id: 76473fa5-48ba-42cf-8664-0dd197833a86
-source-git-commit: f463c5747b844544ba561a63e4cb0359c0c258c8
+source-git-commit: 43994eb29af2b85272de0ce4dc34cc66aba2e04a
 workflow-type: tm+mt
-source-wordcount: '1847'
-ht-degree: 13%
+source-wordcount: '1919'
+ht-degree: 12%
 
 ---
 
@@ -20,9 +20,9 @@ På den här sidan visas nya funktioner, förbättringar och korrigeringar som f
 
 _28 oktober 2022_
 
-**Förbättringar**
+**Korrigeringar**
 
-* Korrigerade ett problem som förhindrade leveransindikatorn Lyckades från att uppdateras korrekt när du använder Adobe Campaign Enhanced MTA. (NEO-50462)
+* Korrigerade ett problem som förhindrade att leveransindikatorn för lyckade åtgärder uppdaterades korrekt när Adobe Campaign Enhanced MTA användes. (NEO-50462)
 
 ## Version 8.4.1 {#release-8-4-1}
 
@@ -84,7 +84,7 @@ För att optimera säkerheten har säkerhetstoken tagits bort från URL:er som g
 
 **Förbättringar**
 
-* Efter Microsoft Internet Explorer 11 är återgivningsmotorn för HTML i konsolen nu igång **Microsoft Edge Chromium**. Dessutom installeras **Microsoft Edge WebView 2** Nu krävs runtime-modulen för alla installationer av klientkonsolen.
+* Efter Microsoft Internet Explorer 11 är återgivningsmotorn för HTML i konsolen nu igång **Microsoft Edge Chromium**. Dessutom installeras **Microsoft Edge WebView 2** Körning krävs nu för alla installationer av klientkonsolen.
 * Förbättrad arbetsflödeskörning med hög tillgänglighet för arbetsflöde, som gör att du kan köra samtidiga arbetsflöden i olika behållare för att förhindra att tjänsten för arbetsflöde går förlorad och undvika relaterade körningsfel. **Anteckning**: Den nya funktionen lanseras endast i begränsad tillgänglighet för en uppsättning kunder.
 * Sekretessförfrågningar utförs nu i batch för ett givet sekretessnamnområde. Den här förbättringen ökar körningstiden för begäranden om GDPR/sekretess-borttagning.
 
@@ -121,11 +121,11 @@ Se [kompatibilitetsmatrisen för Campaign](compatibility-matrix.md).
 
 >[!CAUTION]
 >
-> Uppgradering av klientkonsolen är obligatorisk. Lär dig hur du uppgraderar din klientkonsol på den här [sidan](../start/connect.md#download-ac-console).
+> klientkonsoluppgraderingen är obligatorisk. Lär dig hur du uppgraderar din klientkonsol i den här [page](../start/connect.md#download-ac-console).
 
 _7 oktober 2022_
 
-**Förbättringar**
+**Korrigeringar**
 
 * Ett problem som påverkade statusuppdateringarna för leveransloggen på MID-instansen när alternativet FeatureFlag_GZIP_Compression aktiverades har åtgärdats. (NEO-49183)
 * The **Databasrensning** tekniskt arbetsflöde hanterar nu även anpassade staging-scheman. (NEO-48974)
@@ -186,7 +186,7 @@ _18 maj 2022_
 <table>
 <thead>
 <tr>
-<th><strong>Responshanteraren</strong><br/></th>
+<th><strong>Svarshanteraren</strong><br/></th>
 </tr>
 </thead>
 <tbody>
@@ -224,7 +224,7 @@ Se [kompatibilitetsmatrisen för Campaign](compatibility-matrix.md).
 **Förbättringar**
 
 * Microsoft Exchange Online OAuth 2.0-autentisering för POP3 stöds nu i Campaign. [Läs mer](../config/external-accounts.md#bounce-mails-external-account)
-* Kritiska korrigeringar har tillämpats för webb-API:et Microsoft Dynamics Connector.
+* Kritiska korrigeringar har tillämpats för webb-API:t för Microsoft Dynamics Connector.
 * Den nya rättigheten Operator och group schema write (operatorWrite) har lagts till så att användare kan infoga, uppdatera och ta bort operatorer (xtk:operator) och Operator-grupper (xtk:group).
   <!--* You can now enable the Email BCC (blind carbon copy) capability to store emails sent by Campaign at the delivery level, through the dedicated option in the delivery properties. [Read more](../config/email-settings.md#email-bcc)-->
   <!--* To ensure better performances, a new "Split" option is now activated by default in the Routing external account. This option allows messages to be automatically split across your mid-sourcing instances in order to be delivered faster to the recipients.-->

@@ -5,9 +5,9 @@ feature: Permissions
 role: User, Admin
 level: Beginner
 exl-id: 90154f84-b6a7-407c-93b7-9731dc94d9de
-source-git-commit: 290f4e9a0d13ef49caacb7a128ccc266bafd5e69
+source-git-commit: 09db0cc1a14bffefe8d1b8d0d5a06d5b6517a5bb
 workflow-type: tm+mt
-source-wordcount: '1632'
+source-wordcount: '1618'
 ht-degree: 0%
 
 ---
@@ -61,7 +61,7 @@ Du kan använda standardproduktprofiler eller skapa nya.
 
 ### Skapa en produktprofil{#create-product-profile}
 
-Om du vill lägga till en ny produktprofil i Adobe måste du först skapa den i Campaign Client Console och sedan lägga till den i Admin Console.
+Om du vill lägga till en ny produktprofil i Adobe måste du först skapa den i Campaign-klientkonsolen och sedan lägga till den i Admin Console.
 
 Om du till exempel vill skapa en produktprofil för &#39;granskare&#39; följer du stegen nedan.
 
@@ -94,7 +94,7 @@ Adobe Campaign levereras med inbyggd **produktprofiler** som definieras när Ado
 
 ![](assets/ootb-product-profiles.png)
 
-De här produktprofilerna matchar Campaign **operatorgrupper**. Standardoperatorgrupper och deras [namngiven rättighet](#use-named-rights) visas nedan:
+Dessa produktprofiler matchar Campaign **operatorgrupper**. Standardoperatorgrupper och deras [namngiven rättighet](#use-named-rights) är listade nedan:
 
 1. **[!UICONTROL Administrator]** (admin)
 
@@ -106,7 +106,7 @@ De här produktprofilerna matchar Campaign **operatorgrupper**. Standardoperator
 
 1. **[!UICONTROL Delivery operators]** (leverans)
 
-   Operatörerna i den här gruppen ansvarar för hanteringen av leveranser: de ger tillgång till de viktigaste resurser som krävs för att skapa och förbereda leveranser (kampanjtyper, leveransmappningar, standardmallar, personaliseringsblock osv.).
+   Operatörerna i den här gruppen ansvarar för att hantera leveranser: de ger åtkomst till de viktigaste resurser som krävs för att skapa och förbereda leveranser (kampanjtyper, leveransmappningar, standardmallar, personaliseringsblock osv.).
 
    Den här gruppen innehåller följande namngivna rättigheter:
 
@@ -115,7 +115,7 @@ De här produktprofilerna matchar Campaign **operatorgrupper**. Standardoperator
 
 1. **[!UICONTROL Campaign managers]** (operation)
 
-   Operatörerna i den här gruppen kan hantera marknadsföringskampanjer: gör att du kan komma åt objekt som är kopplade till kampanjer (planer, program, arbetsflöden, budgetar osv.) inom ramen för **[!UICONTROL Campaign]** (Adobe Campaign-modul som tillval).
+   Operatörerna i den här gruppen kan hantera marknadsföringskampanjer: ni får tillgång till objekt som är kopplade till kampanjer (planer, program, arbetsflöden, budgetar osv.) inom ramen för **[!UICONTROL Campaign]** (Adobe Campaign-modul som tillval).
 
    Den här gruppen innehåller följande namngivna rättigheter:
 
@@ -136,7 +136,7 @@ De här produktprofilerna matchar Campaign **operatorgrupper**. Standardoperator
 
 1. **[!UICONTROL Workflow execution]** (arbetsflöde)
 
-   The **[!UICONTROL Workflow execution]** kan du styra körning och godkännande av målarbetsflöden: det WORKFLOW som namnges till höger mappas till den här gruppens operatorer. Det krävs för alla åtgärder i arbetsflöden, förutom åtkomsträttigheter till datafilerna. Som standard är **[!UICONTROL Workflow execution]** -gruppen har skrivskyddad åtkomst till arbetsflödesfiler och arbetsflödesmallar som är standard för målanpassning. Operatörer i den här gruppen har även läs- och skrivåtkomst till filen för väntande godkännanden.
+   The **[!UICONTROL Workflow execution]** kan du styra körning och godkännande av målarbetsflöden: det namngivna högerarbetsflödet mappas till den här gruppens operatorer. Det krävs för alla åtgärder i arbetsflöden, förutom åtkomsträttigheter till datafilerna. Som standard är **[!UICONTROL Workflow execution]** -gruppen har skrivskyddad åtkomst till arbetsflödesfiler och arbetsflödesmallar som är avsedda för målinriktning. Operatörer i den här gruppen har även läs- och skrivåtkomst till filen för väntande godkännanden.
 
 1. **[!UICONTROL Workflow supervisors]** (workflowSupervisor)
 
@@ -167,7 +167,7 @@ De här produktprofilerna matchar Campaign **operatorgrupper**. Standardoperator
 
    >[!NOTE]
    >
-   >**Erbjudandeansvariga** kan bara godkänna ett erbjudande om ingen granskare har angetts, eller om de har angetts som granskare i erbjudandemallen.
+   >**Erbjudandehanterare** kan bara godkänna ett erbjudande om ingen granskare har angetts, eller om de har angetts som granskare i erbjudandemallen.
 
    Behörighetsmatris för erbjudandehanterare per miljö finns i [den här sidan](../interaction/interaction-operators.md#recap-of-rights-according-to-operator).
 
@@ -189,13 +189,13 @@ Namngivna rättigheter ger behörigheter till:
 
 * Åtkomst till mappar Medlemskap i Operator Groups kan ge eller begränsa åtkomsträttigheter till mappar genom att ändra säkerhetsinställningarna för mappar. [Läs mer](folder-permissions.md#restrict-access-to-a-folder).
 
-   Den kan till exempel påverka: **Skrivåtkomst** skapa nya enheter (såsom leveranser, profiler osv.), **Läsbehörighet** att använda enheter, **Ta bort åtkomst** för att ta bort enheter.
+  Den kan till exempel påverka: **Skrivåtkomst** skapa nya enheter (såsom leveranser, profiler osv.), **Läsbehörighet** att använda enheter, **Ta bort åtkomst** för att ta bort enheter.
 
 Namngivna standardrättigheter i Adobe Campaign är:
 
 * **[!UICONTROL ADMINISTRATION]**: Operatorer med **[!UICONTROL ADMINISTRATION]** har fullständig åtkomst till instansen. Administratörsanvändare kan köra/skapa/redigera/ta bort objekt som arbetsflöde, leverans, skript osv.
 
-* **[!UICONTROL APPROVAL ADMINISTRATION]**: Du kan ange flera godkännandesteg i arbetsflöden och leveranser för att säkerställa att det aktuella läget har godkänts av en tilldelad operator eller grupp. Användare med **[!UICONTROL APPROVAL ADMINISTRATION]** kan ange godkännandesteg och även tilldela en operator eller operatörsgrupp som ska godkänna dessa steg.
+* **[!UICONTROL APPROVAL ADMINISTRATION]**: Du kan ange flera godkännandesteg i arbetsflöden och leveranser för att säkerställa att det aktuella tillståndet har godkänts av en tilldelad operator eller grupp. Användare med **[!UICONTROL APPROVAL ADMINISTRATION]** kan ange godkännandesteg och även tilldela en operator eller operatörsgrupp som ska godkänna dessa steg.
 
 * **[!UICONTROL CENTRAL]**: Rätt till central hantering (distribuerad marknadsföring).
 
@@ -213,11 +213,11 @@ Namngivna standardrättigheter i Adobe Campaign är:
 
 * **[!UICONTROL LOCAL]**: Rätt till lokal hantering (distribuerad marknadsföring).
 
-* **[!UICONTROL MERGE]**: Höger om du vill sammanfoga de markerade posterna till en. Om mottagarna finns som dubbletter visas **[!UICONTROL MERGE]** ger användaren möjlighet att välja dubbletter och sammanfoga dem till en primär mottagare.
+* **[!UICONTROL MERGE]**: Höger att sammanfoga de markerade posterna till en. Om mottagarna finns som dubbletter visas **[!UICONTROL MERGE]** ger användaren möjlighet att välja dubbletter och sammanfoga dem till en primär mottagare.
 
 * **[!UICONTROL PREPARE DELIVERIES]**: Rätt att skapa, redigera och spara en leverans. Användare med **[!UICONTROL PREPARE DELIVERIES]** kan också starta leveransanalysprocessen.
 
-* **[!UICONTROL PRIVACY DATA RIGHT]**: Rätt att samla in och ta bort personuppgifter. [Läs mer](privacy.md).
+* **[!UICONTROL PRIVACY DATA RIGHT]**: Rätt att samla in och ta bort sekretessdata. [Läs mer](privacy.md).
 
 * **[!UICONTROL PROGRAM EXECUTION]**: Rätt att köra kommandon på olika programmeringsspråk.
 
@@ -227,9 +227,9 @@ Namngivna standardrättigheter i Adobe Campaign är:
 
 * **[!UICONTROL START DELIVERIES]**: Rätt att godkänna tidigare analyserade leveranser. Efter leveransanalysen pausas leveransen vid olika godkännandesteg och måste godkännas för att kunna återupptas. Användare med **[!UICONTROL START DELIVERIES]** rätt att godkänna leveranser.
 
-* **[!UICONTROL USE SQL DATA MANAGEMENT ACTIVITY]**: Rätt att skriva egna SQL-skript med SQL Data Management-aktiviteten för att skapa och fylla i arbetsregister. [Läs mer](../../automation/workflow/sql-data-management.md).
+* **[!UICONTROL USE SQL DATA MANAGEMENT ACTIVITY]**: Rätt att skriva egna SQL-skript med SQL Data Management-aktiviteten för att skapa och fylla i arbetstabeller. [Läs mer](../../automation/workflow/sql-data-management.md).
 
-* **[!UICONTROL WORKFLOW]**: Den här namngivna rättigheten är specifik för arbetsflöden: Med kan du skapa, starta och stoppa arbetsflöden. Läsbehörighet för arbetsflödesfilen krävs för att den namngivna rättigheten ska kunna användas. För arbetsflöden med målinriktning **[!UICONTROL Profiles and Targets]** -mappen är nödvändig.
+* **[!UICONTROL WORKFLOW]**: Den här namngivna rättigheten är specifik för arbetsflöden: du kan skapa, starta och stoppa arbetsflöden. Läsbehörighet för arbetsflödesfilen krävs för att den namngivna rättigheten ska kunna användas. För arbetsflöden med målinriktning **[!UICONTROL Profiles and Targets]** -mappen är nödvändig.
 
 
 * **[!UICONTROL WEBAPP]**: Rätt att använda webbprogram.

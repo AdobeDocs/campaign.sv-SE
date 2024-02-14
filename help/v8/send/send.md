@@ -5,15 +5,15 @@ feature: Email
 role: Data Engineer
 level: Beginner
 exl-id: f2c26351-8ed7-498a-ac83-d4c583fb98f3
-source-git-commit: 4c79078e32c77499f15906fc81f31ce2b26559d7
+source-git-commit: 84b90cbd150c81edc81f5cc653db6fbe96af80aa
 workflow-type: tm+mt
-source-wordcount: '795'
+source-wordcount: '808'
 ht-degree: 0%
 
 ---
 
 
-# Skicka och övervaka e-postmeddelanden
+# Skicka och övervaka e-postmeddelanden  {#send-and-monitor-emails}
 
 Kontrollera att du har kört leveransanalysen när leveransen är konfigurerad och klar att skickas. [Läs mer](delivery-analysis.md)
 
@@ -21,12 +21,18 @@ Bekräfta leveransen när du är klar för att starta meddelandeleveransen.
 
 Spåra leveransen från **Leverans** -fliken, tillgänglig via detaljer om leveransen eller via listan över leveranser.
 
-## Övervaka dina e-postmeddelanden
+## Övervaka dina e-postmeddelanden {#email-monitoring}
 
-När du har skickat den kontrollerar du leveransstatus på kontrollpanelen och öppnar leveransloggar och rapporter för att bekräfta att meddelandena har skickats korrekt.
+Kontrollera leveransstatus i dialogrutan **Instrumentpanel för leverans** och få åtkomst till leveransloggar och rapporter för att bekräfta att meddelandena skickades korrekt.
 
-![](../assets/do-not-localize/book.png) [Läs mer i dokumentationen för Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/key-steps-when-creating-a-delivery/delivery-bestpractices/track-and-monitor.html){target="_blank"}
+På kontrollpanelen för leverans kan du kontrollera de bearbetade meddelandena och leveransgranskningsloggarna. Du kan också styra status för meddelandena i leveransloggarna.
 
+>[!NOTE]
+>
+>Leveransstatus visas inte i realtid. Läs mer om tjänsten för e-postfeedback [i det här avsnittet](#email-feedback-service).
+
+
+![](../assets/do-not-localize/book.png) [Läs mer om leveransövervakning i dokumentationen för Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/key-steps-when-creating-a-delivery/delivery-bestpractices/track-and-monitor.html){target="_blank"}
 
 ## Kampanj-MTA {#mta}
 
@@ -71,15 +77,13 @@ I Adobe Campaign utförs DKIM-autentisering via e-post av MTA.
 
 Läs mer om DKIM i [Adobe Deliverability Best Practice Guide](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/transition-process/infrastructure.html#authentication){target="_blank"}.
 
-## Tjänsten Email Feedback {#email-feedback-service}
+## Tjänsten för e-postfeedback {#email-feedback-service}
 
-Med funktionen för tjänsten för e-postfeedback (EFS) rapporteras status för varje e-postmeddelande korrekt, eftersom feedback hämtas direkt från MTA.
+Tjänsten för e-postfeedback för Campaign (EFS) rapporterar status för varje e-postleverans som skickas med Adobe Campaign.
 
-När leveransen har startat sker ingen förändring i **[!UICONTROL Success]** procent när meddelandet har skickats från Campaign till MTA.
+När leveransen har startat sker ingen förändring i **[!UICONTROL Success]** procent när meddelandet har skickats från Campaign till MTA. Leveransloggarna visar **[!UICONTROL Taken into account by the service provider]** status för varje måladress.
 
-Leveransloggarna visar **[!UICONTROL Taken into account by the service provider]** status för varje måladress.
-
-När meddelandet faktiskt levereras till målprofilerna och när informationen har rapporterats i realtid från MTA visar leveransloggarna **[!UICONTROL Sent]** status för varje adress som tog emot meddelandet. The **[!UICONTROL Success]** procentandelen ökas i enlighet med varje framgångsrik leverans.
+När meddelandet faktiskt levereras till målprofilerna och när informationen har rapporterats i realtid från MTA visar leveransloggarna **[!UICONTROL Sent]** status för varje adress som har tagit emot meddelandet. The **[!UICONTROL Success]** procentandelen ökas i enlighet med varje lyckad leverans.
 
 När hårda studsmeddelanden rapporteras tillbaka från MTA ändras deras loggstatus från **[!UICONTROL Taken into account by the service provider]** till **[!UICONTROL Failed]**<!-- and the **[!UICONTROL Bounces + errors]** percentage is increased accordingly-->.
 
@@ -95,7 +99,7 @@ När meddelanden med mjuk studsning rapporteras tillbaka från MTA ändras inte 
 >
 >Mer information om återförsök efter ett tillfälligt leveransfel finns i [det här avsnittet](delivery-failures.md#retries).
 
-Tabellen nedan visar hur nyckeltal och sändande loggstatus uppdateras vid varje steg i sändningsprocessen med EFS-funktionen.
+Tabellen nedan visar hur nyckeltal och sändande loggstatus uppdateras vid varje steg i sändningsprocessen.
 
 | Steg i sändningsprocessen | KPI-sammanfattning | Loggstatus skickas |
 |--- |--- |--- |

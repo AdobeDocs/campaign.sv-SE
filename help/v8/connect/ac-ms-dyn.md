@@ -5,9 +5,9 @@ feature: Microsoft CRM Integration
 role: Admin, User
 level: Beginner, Intermediate
 exl-id: 4f9e8f74-27dc-482c-a83c-25623b53560f
-source-git-commit: f577ee6d303bab9bb07350b60cf0fa6fc9d3a163
+source-git-commit: 09db0cc1a14bffefe8d1b8d0d5a06d5b6517a5bb
 workflow-type: tm+mt
-source-wordcount: '1365'
+source-wordcount: '1376'
 ht-degree: 1%
 
 ---
@@ -132,7 +132,7 @@ Appanvändaren är den användare som programmet som registrerats ovan kommer at
 1. Tilldela **Program-ID** for [det program du skapade tidigare](#get-client-id-microsoft).
 1. Klicka på **Hantera roller** och väljer **Systemadministratör** roll för användaren.
 
-## Konfigurera Campaign {#configure-acc-for-microsoft}
+## Konfigurera kampanj {#configure-acc-for-microsoft}
 
 ### Skapa anslutningen{#new-ms-dyn-external-account}
 
@@ -165,7 +165,7 @@ Först måste du skapa det externa kontot för Microsoft Dynamics 365.
 
 >[!NOTE]
 >
->Logga ut och sedan in på Adobe Campaign Client Console igen för att godkänna installationen.
+>Logga ut och in igen på Adobe Campaign klientkonsol för att godkänna konfigurationen.
 
 ### Markera tabeller som ska synkroniseras{#ms-dyn-create-tables}
 

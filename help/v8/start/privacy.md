@@ -5,10 +5,10 @@ feature: Privacy
 role: Admin
 level: Beginner
 exl-id: 0f81d318-dbfd-45c8-b391-b1d14d23e9c8
-source-git-commit: f577ee6d303bab9bb07350b60cf0fa6fc9d3a163
+source-git-commit: 9df599ec0a898a1af16cb92d334d50375fde86ba
 workflow-type: tm+mt
-source-wordcount: '1034'
-ht-degree: 38%
+source-wordcount: '930'
+ht-degree: 36%
 
 ---
 
@@ -23,10 +23,10 @@ Om du vill hantera sekretessbegäran i Campaign måste du först [definiera ett 
 
 ![](../assets/do-not-localize/speech.png) Läs mer om **Rätt till åtkomst** och **Rätt att glömma** (ta bort begäran) i [Adobe Campaign Classic v7-dokumentation](https://experienceleague.adobe.com/docs/campaign-classic/using/getting-started/privacy/privacy-management.html#right-access-forgotten){target="_blank"}.
 
-
+<!--
 >[!NOTE]
 >
->Den här funktionen är tillgänglig från och med Campaign v8.3. Om du vill kontrollera versionen läser du [det här avsnittet](compatibility-matrix.md#how-to-check-your-campaign-version-and-buildversion)
+>This capability is available starting Campaign v8.3. To check your version, refer to [this section](compatibility-matrix.md#how-to-check-your-campaign-version-and-buildversion)-->
 
 ## Definiera ett namnutrymme {#namespaces}
 
@@ -95,7 +95,7 @@ Du kan nu skapa förfrågningar om användarens information baserat på din nya 
 
 The **[!DNL Adobe Experience Platform Privacy Service]** integreringen gör att ni kan automatisera era sekretessförfrågningar i ett flerlösningssammanhang genom ett enda JSON API-anrop. Adobe Campaign hanterar automatiskt begäranden som skickas från Privacy Servicen via ett dedikerat arbetsflöde.
 
-Läs dokumentationen för [Experience Platform Privacy Service](https://experienceleague.adobe.com/docs/experience-platform/privacy/home.html?lang=sv) om hur du skapar förfrågningar om användarens information via Privacy Core Service.{target="_blank"}
+Se [Experience Platform Privacy Service](https://experienceleague.adobe.com/docs/experience-platform/privacy/home.html?lang=sv){target="_blank"} dokumentation som visar hur man skapar sekretessförfrågningar från Privacy Core-tjänsten.
 
 Varje **[!DNL Privacy Service]**  jobbet delas upp i flera sekretessbegäranden i Adobe Campaign baserat på hur många namnutrymmen som används, en begäran som motsvarar ett namnutrymme.
 
@@ -152,7 +152,7 @@ Nedan finns olika statusar för sekretessförfrågningar i Adobe Campaign och hu
 
 **Relaterade ämnen i Campaign Classic v7-dokumentation:**
 
-* [Sekretess och medgivande](https://experienceleague.adobe.com/docs/campaign-classic/using/getting-started/privacy/privacy-and-recommendations.html){target="_blank"}
+* [Sekretess och samtycke](https://experienceleague.adobe.com/docs/campaign-classic/using/getting-started/privacy/privacy-and-recommendations.html){target="_blank"}
 
 * [Komma igång med Integritetshantering](https://experienceleague.adobe.com/docs/campaign-classic/using/getting-started/privacy/privacy-management.html?lang=sv){target="_blank"}
 

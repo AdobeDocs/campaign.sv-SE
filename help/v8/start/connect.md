@@ -1,22 +1,20 @@
 ---
-title: Anslut till Campaign v8
-description: Lär dig hur du ansluter till Adobe Campaign v8 och installerar konsolen på datorn för enklare åtkomst.
+title: Anslut till Campaign med klientkonsolen
+description: Lär dig installera Campaign-klientkonsolen på datorn och ansluta till Adobe Campaign
 feature: Client Console
 role: User
 level: Beginner
 exl-id: 176cc4f0-8827-4127-9f03-7d75ac8cf917
-source-git-commit: b71197027d9521fd648a0c2657b6b76a1aa7fc9a
+source-git-commit: 9df599ec0a898a1af16cb92d334d50375fde86ba
 workflow-type: tm+mt
-source-wordcount: '905'
-ht-degree: 3%
+source-wordcount: '850'
+ht-degree: 1%
 
 ---
 
-# Anslut till Adobe Campaign v8{#gs-ac-connect}
+# Anslut till Campaign med klientkonsolen{#gs-ac-connect}
 
-Om du vill börja arbeta med Campaign måste du installera och konfigurera klientkonsolen.
-
-Klientkonsolen är ett inbyggt program som kommunicerar med Adobe Campaign-programservern via standardInternetprotokoll, till exempel SOAP och HTTP. Campaign Client Console centraliserar alla funktioner och inställningar och kräver minimal bandbredd eftersom den är beroende av ett lokalt cacheminne. Campaign Client Console är utformad för enkel driftsättning och kan distribueras från en webbläsare, uppdateras automatiskt och kräver ingen specifik nätverkskonfiguration eftersom den bara genererar HTTP(S)-trafik.
+Om du vill ansluta till Campaign med klientkonsolen måste du först installera och konfigurera den.
 
 Innan du börjar måste du:
 
@@ -25,13 +23,19 @@ Innan du börjar måste du:
 * Skapa din Adobe ID eller hämta inloggningsuppgifter från ditt företag
 * Installera Microsoft Edge Webview2-miljön på datorn. [Läs mer](#webview)
 
+
+>[!NOTE]
+>
+>Du kan även ansluta till Campaign-webbgränssnittet med en webbläsare. Läs mer om det nya webbgränssnittet för Campaign i [den här dokumentationen](https://experienceleague.adobe.com/docs/campaign-web/v8/campaign-web-home.html){target="_blank"}.
+
+
 ## Installera klientkonsolen{#download-ac-console}
 
 ### Microsoft Edge Webview2, runtime {#webview}
 
-Från version 8.4 av Campaign Classic krävs installation av Microsoft Edge Webview 2 för alla installationer av klientkonsolen.
+Från version 8.4 av Campaign Classic krävs installation av Microsoft Edge Webview 2 för alla installationer av klientkonsoler.
 
-Webbvyn installeras som standard som en del av operativsystemet Windows 11. Om det inte redan finns på datorn uppmanas du att hämta det från installationsprogrammet för Campaign Client Console [Microsoft Developer website](http://www.adobe.com/go/acc-ms-webview2-runtime-download){target="_blank"}. Observera att nedladdningslänken inte fungerar i webbläsaren Internet Explorer 11 eftersom Microsoft inte längre stöder det. Kontrollera att du använder en annan webbläsare för att komma åt länken.
+Webbvyn installeras som standard som en del av Windows 11. Om det inte redan finns på datorn uppmanas du att hämta det från installationsprogrammet för Campaign-klientkonsolen [Microsoft Developer website](http://www.adobe.com/go/acc-ms-webview2-runtime-download){target="_blank"}. Observera att nedladdningslänken inte fungerar i webbläsaren Internet Explorer 11 eftersom Microsoft inte längre stöder det. Kontrollera att du använder en annan webbläsare för att komma åt länken.
 
 ### Ladda ned konsolen{#install-ac-console}
 
@@ -57,7 +61,7 @@ När klientkonsolen har installerats följer du stegen nedan för att skapa ansl
 
 1. Ange en anslutning till Adobe Campaign-programservern via en URL. Använd antingen en DNS eller ett alias för datorn eller din IP-adress.
 
-   Du kan till exempel använda [`https://<machine>.<domain>.com`](https://myserver.adobe.com) skriv URL.
+   Du kan till exempel använda [`https://<machine>.<domain>.com`](https://myserver.adobe.com) skriv-URL.
 
 1. Markera alternativet **[!UICONTROL Connect with an Adobe ID]**.
 
@@ -93,9 +97,9 @@ Sedan kan du logga in på Campaign med din Adobe ID.
 
 ## Uppgradera din klientkonsol{#upgrade-ac-console}
 
-När ditt system uppgraderas till en nyare version måste du uppdatera din klientkonsol till den versionen. Det här är en god praxis och för vissa versioner är den här uppgraderingen obligatorisk. I så fall anges det i [Versionsinformation](release-notes.md).
+När datorn uppgraderas till en nyare version måste du uppdatera klientkonsolen till den versionen. Det här är en god praxis och för vissa versioner är den här uppgraderingen obligatorisk. I så fall anges det i [Versionsinformation](release-notes.md).
 
-Som användare av hanterade Cloud Services distribuerar Adobe klientkonsolen åt dig. När du ansluter till den uppgraderade miljön uppmanas du att hämta den senaste versionen av klientkonsolen i ett popup-fönster. Du måste acceptera den här uppgraderingen och uppdatera klientkonsolen efter begäran.
+Som användare av hanterade Cloud Service distribuerar Adobe klientkonsolen åt dig. När du ansluter till den uppgraderade miljön uppmanas du att hämta den senaste klientkonsolversionen i ett popup-fönster. Du måste acceptera den här uppgraderingen och uppdatera klientkonsolen efter begäran.
 
 >[!CAUTION]
 >
@@ -115,11 +119,11 @@ Läs mer om användare och hur du definierar deras behörigheter i [det här avs
 
 ## Webbåtkomst{#web-access}
 
-Vissa delar av programmet kan nås via en webbläsare via ett HTML-användargränssnitt: rapporter, leveransgodkännande, instansövervakning med mera.
+Vissa delar av programmet kan nås via en webbläsare via ett HTML-användargränssnitt: rapportering, leveransgodkännande, instansövervakning med mera.
 
 Webbåtkomsten har ett gränssnitt som liknar konsolen men med en reducerad uppsättning funktioner.
 
-För en viss operator visas en kampanj med följande alternativ i konsolen:
+För en viss operator visas till exempel en kampanj med följande alternativ i konsolen:
 
 ![](assets/campaign-from-console.png)
 
@@ -127,6 +131,6 @@ Med tillgång till webben kommer man främst att kunna se
 
 ![](assets/campaign-from-web.png)
 
-Webbåtkomst används också i valideringsprocessen: -operatorer kan klicka på e-postmeddelandet med godkännandebegäran och ansluta till Campaign via webbläsaren för att validera eller avvisa ett leveransinnehåll eller en budget.
+Webbåtkomst används också i valideringsprocessen: operatorer kan klicka på e-postmeddelandet med godkännandebegäran och ansluta till Campaign via sin webbläsare för att validera eller avvisa ett leveransinnehåll eller en budget.
 
 Om du vill komma åt Campaign-instansen från webben är URL:en:  `https://<your adobe campaign server>:<port number>/view/home`.

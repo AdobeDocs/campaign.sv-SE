@@ -8,10 +8,10 @@ level: Intermediate
 hide: true
 hidefromtoc: true
 exl-id: 31c13d7e-55d1-4fbb-82e0-5779a17d65ac
-source-git-commit: f577ee6d303bab9bb07350b60cf0fa6fc9d3a163
+source-git-commit: 09db0cc1a14bffefe8d1b8d0d5a06d5b6517a5bb
 workflow-type: tm+mt
-source-wordcount: '1262'
-ht-degree: 3%
+source-wordcount: '1231'
+ht-degree: 0%
 
 ---
 
@@ -26,7 +26,7 @@ Som Campaign-administratör kan du hämta Kampanj-SDK:er från [Experience Cloud
 
 >[!NOTE]
 >
->Du kan också använda den mobila SDK:n i Adobe Experience Platform genom att konfigurera Adobe Campaign-tillägget i användargränssnittet för datainsamling. [Läs mer i dokumentationen för utvecklare](https://developer.adobe.com/client-sdks/documentation/adobe-campaign-classic){target="_blank"}.
+>Du kan också använda Adobe Experience Platform Mobile SDK genom att konfigurera Adobe Campaign-tillägget i användargränssnittet för datainsamling. [Läs mer i dokumentationen för utvecklare](https://developer.adobe.com/client-sdks/documentation/adobe-campaign-classic){target="_blank"}.
 >
 
 ## Deklarera integreringsinställningar {#declaring-integration-settings}
@@ -796,7 +796,7 @@ Lär dig hur du implementerar FCM i ditt program i [Google Documentation](https:
 
 ## Variabel {#variables}
 
-Med variablerna kan du definiera mobilprogrammets beteende efter att ha tagit emot ett meddelande. Dessa variabler måste definieras i mobilprogramkoden och i Adobe Campaign Client Console i **[!UICONTROL Variables]** i den dedikerade mobilprogramtjänsten.
+Med variablerna kan du definiera mobilprogrammets beteende efter att ha tagit emot ett meddelande. Dessa variabler måste definieras i mobilprogramkoden och i Adobe Campaign klientkonsol i **[!UICONTROL Variables]** i den dedikerade mobilprogramtjänsten.
 
 
 Nedan visas ett exempel på en kod som gör att ett mobilprogram kan samla in tillagda variabler i ett meddelande. I vårt exempel använder vi variabeln&quot;VAR&quot;.

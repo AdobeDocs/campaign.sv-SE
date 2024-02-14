@@ -5,9 +5,9 @@ description: Skapa en lokal kampanj
 feature: Distributed Marketing
 role: User
 exl-id: b46530b5-cb81-40d7-b596-c7685359782a
-source-git-commit: 567c2e84433caab708ddb9026dda6f9cb717d032
+source-git-commit: 09db0cc1a14bffefe8d1b8d0d5a06d5b6517a5bb
 workflow-type: tm+mt
-source-wordcount: '1555'
+source-wordcount: '1553'
 ht-degree: 1%
 
 ---
@@ -46,17 +46,17 @@ Klicka på **[!UICONTROL Edit]** klickar du på **[!UICONTROL Advanced campaign 
 
 ![](assets/mkt_distr_4.png)
 
-### Webbgränssnitt {#web-interface}
+### Typ av gränssnitt {#web-interface}
 
-I **Distribuerad marknadsföring** kan du välja typ av webbgränssnitt och ange standardvärden och parametrar som ska anges när en lokal enhet placerar en order.
+I **Distribuerad marknadsföring** kan du välja gränssnittstyp och ange standardvärden och parametrar som ska anges när en lokal enhet placerar en ordning.
 
-Webbgränssnittet motsvarar ett formulär som ska fyllas i av den lokala enheten när kampanjen beställs.
+Gränssnittet motsvarar ett formulär som ska fyllas i av den lokala enheten när kampanjen beställs.
 
-Välj vilken typ av webbgränssnitt som ska användas för kampanjer som skapas från mallen:
+Välj vilken typ av gränssnitt som ska användas för kampanjer som skapas från mallen:
 
 ![](assets/mkt_distr_1.png)
 
-Det finns fyra typer av webbgränssnitt:
+Det finns fyra typer av gränssnitt:
 
 * **[!UICONTROL By brief]** : lokal entitet måste tillhandahålla en beskrivning som beskriver kampanjkonfigurationerna. När ordern har godkänts konfigurerar och kör den centrala enheten kampanjen som helhet.
 
@@ -298,7 +298,7 @@ När en kampanj beställs av en lokal enhet meddelas dess granskare via e-post, 
 
 #### Godkänn via klientkonsolen {#approving-via-the-adobe-campaign-console}
 
-Beställningen kan också godkännas via Client Console i kampanjorderöversikten. Om du vill godkänna en beställning markerar du den och klickar på **[!UICONTROL Approve the order]**.
+Beställningen kan också godkännas via klientkonsolen i kampanjorderöversikten. Om du vill godkänna en beställning markerar du den och klickar på **[!UICONTROL Approve the order]**.
 
 ![](assets/mkg_dist_local_order_valid.png)
 
@@ -322,7 +322,7 @@ Operatören som ansvarar för godkännandet kan avvisa en order eller ett kampan
 
 Om granskaren avvisar en order skickas det relevanta meddelandet automatiskt till de berörda lokala enheterna, där kommentaren från den aktör som avvisade godkännandet visas.
 
-Information visas på sidan med kampanjpaket eller på sidan med kampanjorder. Om de har åtkomst till Adobe Campaign Client Console informeras lokala enheter om detta refusering.
+Information visas på sidan med kampanjpaket eller på sidan med kampanjorder. Om de har åtkomst till Adobe Campaign klientkonsol informeras lokala enheter om detta avvisande.
 
 ![](assets/mkg_dist_do_not_valid_view.png)
 

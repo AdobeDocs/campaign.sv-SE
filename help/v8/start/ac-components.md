@@ -5,9 +5,9 @@ feature: Overview, Architecture, Configuration
 role: User
 level: Beginner
 exl-id: 7db32bd8-a088-405f-9633-2968c28b13b0
-source-git-commit: 8f58db2b00f2fc98afd737f20411f829dd24c78a
+source-git-commit: 79d916c4d65c0c55ec20f2f5850fec40fe4e99a3
 workflow-type: tm+mt
-source-wordcount: '660'
+source-wordcount: '533'
 ht-degree: 0%
 
 ---
@@ -24,21 +24,7 @@ Adobe Campaign komponenter och global arkitektur beskrivs nedan.
 
 ![](assets/do-not-localize//ac-components.png)
 
-### Presentationslager{#presentation-layer}
 
-Du kan få åtkomst till Adobe Campaign via en Rich-klient, en Thin-klient eller en API-integrering.
-
-* Rich Client
-
-  Campaign Rich Client är ett program som kan kommunicera med Adobe Campaign-programservern via standardprotokoll för Internet, till exempel SOAP och HTTP. [Läs mer om Campaign Client Console](../start/connect.md).
-
-* Tunn klient
-
-  Med Adobe Campaign webbåtkomstfunktioner får du tillgång till en delmängd av Campaign-funktionerna via en webbläsare och ett HTML-användargränssnitt. Använd det här webbgränssnittet för att få åtkomst till rapporter, kontrollera och validera meddelanden, få åtkomst till kontrollpaneler med mera.  [Läs mer om Campaign Web Access](../start/connect.md).
-
-* Externa program med API:er
-
-  I vissa fall kan systemet anropas från externa program med hjälp av webbtjänsternas API:er som exponeras via SOAP-protokollet. [Läs mer om Campaign-API:er](../dev/api.md).
 
 ### Beständigt lager{#persistance-layer}
 
@@ -60,7 +46,7 @@ Kampanjwebbservern styr åtkomsten till webbprocesser i Campaign. Javascript är
 
 ![](assets/do-not-localize/ac-processes.png)
 
-Campaign Client Console ansluter till webbservern med SOAP XML via HTTP. Webbservern tillhandahåller säkerhetsskiktet, skickar förfrågningarna till programlagret med JavaScript och de interna processerna i Campaign ger åtkomst till databasen med SQL.
+Kampanjklientkonsolen ansluter till webbservern med SOAP XML via HTTP. Webbservern tillhandahåller säkerhetsskiktet, skickar förfrågningarna till programlagret med JavaScript och de interna processerna i Campaign ger åtkomst till databasen med SQL.
 
 Den övergripande kommunikationen mellan Campaign-processer beskrivs i följande fristående distributionsdiagram: alla Campaign-komponenter installeras på samma dator.
 

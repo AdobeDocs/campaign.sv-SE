@@ -1,20 +1,20 @@
 ---
 product: campaign
-title: 32-bitars borttagning av klientkonsolen
-description: 32-bitars borttagning av klientkonsolen
-exl-id: eaa20b88-4ba2-4146-b6bd-1eada34ecc53
-source-git-commit: b71197027d9521fd648a0c2657b6b76a1aa7fc9a
+title: 32-bitars borttagning av klientkonsol
+description: 32-bitars borttagning av klientkonsol
+exl-id: 9411e38a-5783-439c-ad54-f33bd374f2b8
+source-git-commit: 9df599ec0a898a1af16cb92d334d50375fde86ba
 workflow-type: tm+mt
-source-wordcount: '344'
+source-wordcount: '338'
 ht-degree: 1%
 
 ---
 
 # Stöd för 32-bitars operativsystem upphör {#console-eol}
 
-32-bitarsversionen av klientkonsolen har tagits bort i version 8.5. Det finns en ny 64-bitarsversion av klientkonsolen för en sömlös uppgradering.
+32-bitarsversionen av klientkonsolen är inaktuell i version 8.5. Det finns en ny 64-bitarsversion av klientkonsolen för en sömlös uppgradering.
 
-Från och med version 8.6 upphör Campaign v8 att ha stöd för 32-bitars operativsystem, inklusive produkt- och säkerhetsuppdateringar. Adobe rekommenderar att du håller säkerhetsuppdateringarna aktuella.
+Från och med version 8.6 har Campaign inte längre stöd för 32-bitars operativsystem, inklusive produkt- och säkerhetsuppdateringar. Adobe rekommenderar att du håller säkerhetsuppdateringarna aktuella.
 
 Du påverkas bara av den här ändringen om du har 32-bitarsversionen av Windows 8 eller 10.
 
@@ -34,13 +34,13 @@ Uppgraderingen är smidig. Du behöver bara installera den nya versionen via ins
 
 +++
 
-+++Är 64-bitarsversionen av Campaign v8 Client Console kompatibel med 32-bitarsdatorer?
++++Är 64-bitarsversionen av Campaign v8-klientkonsolen kompatibel med 32-bitarsdatorer?
 
-Nej. 64-bitarsversionen av Campaign v8 Client Console har endast stöd för 64-bitarsdatorer.
+Nej. 64-bitarsversionen av klientkonsolen Campaign v8 stöder endast 64-bitarsdatorer.
 
 +++
 
-+++Finns det någon plan för att stoppa nya installationer av 32-bitars Campaign v8 Client Console?
++++Finns det någon plan för att stoppa nya Campaign v8 32-bitars klientkonsolinstallationer?
 
 Ja. Från och med version 8.6 är Campaign v8-klientkonsolen inte längre tillgänglig på 32 bitar. Endast 64-bitarsversionen är tillgänglig.
 

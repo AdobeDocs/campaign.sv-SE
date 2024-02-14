@@ -5,9 +5,9 @@ feature: Overview
 role: User
 level: Beginner
 exl-id: 00ba1c43-9558-4adb-83a1-6597c2bbca62
-source-git-commit: cfc1043e30bdd43e1acaeaf399fde01c6473f1b4
+source-git-commit: 84b90cbd150c81edc81f5cc653db6fbe96af80aa
 workflow-type: tm+mt
-source-wordcount: '686'
+source-wordcount: '714'
 ht-degree: 4%
 
 ---
@@ -37,13 +37,21 @@ Det nya erbjudandet kombinerar förstklassiga tjänster med proaktiv tillsyn och
 
 Som tidigare [!DNL Campaign Classic] användare, observera att de flesta av [!DNL Campaign Classic] v7-funktioner är tillgängliga med [!DNL Campaign] v8, förutom en liten uppsättning, som listas i [det här avsnittet](#gs-removed).
 
-Campaign v8 bygger på en **hybridarkitektur**. Om du går över från Campaign Classic v7 bör du tänka på att alla leveranser går via servern för mellanlagring. Följaktligen är intern routning **inte möjligt** i Campaign v8 och det externa kontot har inaktiverats i enlighet med detta.
+>Den nya molnarkitekturen gör att Campaign kan effektivisera processer, minska kostnaderna, hantera risker och förbättra datasäkerheten. Din Campaign v8-miljö har ett dedikerat VPC (Virtual Private Cloud) som är förkonfigurerat för dig.
+
+
+## Hybrid-arkitektdäck {#hybrid-archi}
+
+Campaign v8 bygger på en **hybridarkitektur**. Om du går över från Campaign Classic v7 bör du tänka på att alla leveranser går via servern för mellanlagring.
+
+Följden är att
+
+* Intern routning är **inte möjligt** i Campaign v8 och det externa kontot har inaktiverats i enlighet därmed,
+* Status för leveranserna uppdateras inte direkt - en teknisk process körs på Marketing-instansen som uppdaterar leveransstatus i tid.
+
 
 ![](../assets/do-not-localize/glass.png) Läs mer om hur du skickar korrektur för transaktionsmeddelanden vid övergång från v7 på [den här sidan](../send/transactional-template.md#transition-from-v7).
 
->[!NOTE]
->
->Den nya molnarkitekturen gör att Campaign kan effektivisera processer, minska kostnaderna, hantera risker och förbättra datasäkerheten. Din Campaign v8-miljö har ett dedikerat VPC (Virtual Private Cloud) som är förkonfigurerat för dig.
 
 ## [!DNL Campaign] och [!DNL Snowflake] {#ac-gs-snowflake}
 

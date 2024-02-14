@@ -5,26 +5,26 @@ feature: Release Notes
 role: Admin
 level: Beginner
 exl-id: 4be3a6dc-0c61-4534-b9dd-6c99c8a037a9
-source-git-commit: f577ee6d303bab9bb07350b60cf0fa6fc9d3a163
+source-git-commit: 374c0df2cd95e656cfbaa1fb355bf1f48828dfee
 workflow-type: tm+mt
-source-wordcount: '378'
-ht-degree: 32%
+source-wordcount: '360'
+ht-degree: 22%
 
 ---
 
-# Kompatibilitetsmatris för Campaign v8
+# Kompatibilitetsmatris för Campaign v8 {#compat-matrix}
 
-Det här dokumentet listar alla system och komponenter som stöds för den senaste builden av **Adobe Campaign v8**. Om inget annat anges stöds alla mindre versioner. Produkter och versioner som inte ingår i den här listan är inte kompatibla med Adobe Campaign.
+Det här dokumentet innehåller en lista över alla system och komponenter som stöds för den senaste versionen av **Adobe Campaign v8** klientkonsol. Om inget annat anges stöds alla mindre releaser. Produkter och versioner som inte ingår i den här listan är inte kompatibla med Adobe Campaign.
 
 Eftersom vissa versioner av dessa system och verktyg från tredje part når slutet av livscykeln, kommer Adobe Campaign inte längre att vara kompatibelt med dessa versioner och kommer att tas bort från den här kompatibilitetsmatrisen. Se till att du använder versioner av system som stöds i kompatibilitetsmatrisen för att undvika problem.
 
 >[!NOTE]
 >
->Adobe Campaign Server och Client Console måste finnas i samma version. [Lär dig kontrollera din version](#version).
+>Adobe Campaign server och Campaign-klientkonsolen måste vara i samma version. [Lär dig kontrollera din version](upgrades.md#version).
 
-## Klientkonsol{#ClientConsoleoperatingsystems}
+## Klientkonsol {#ClientConsoleoperatingsystems}
 
-Följande operativsystem och webbläsare krävs för att använda klientkonsolen i Campaign. [Läs mer](connect.md).
+Följande operativsystem och webbläsare krävs för att använda Campaign-klientkonsolen. [Läs mer](connect.md).
 
 ### Operativsystem{#op-systems}
 
@@ -33,15 +33,15 @@ Följande operativsystem och webbläsare krävs för att använda klientkonsolen
 
 >[!NOTE]
 >
->Observera att 32-bitarsversionen av klientkonsolen är inaktuell från och med version 8.5. Från och med 8.6 är klientkonsolen endast tillgänglig i 64 bitar. Mer information om hur du uppgraderar ditt operativsystem finns i [technote](../../technotes/upgrades/console.md).
+>Observera att 32-bitarsversionen av klientkonsolen är inaktuell sedan version 8.5. Från och med 8.6 är klientkonsolen endast tillgänglig med 64 bitar. Mer information om hur du uppgraderar systemet finns i [technote](../../technotes/upgrades/console.md).
 
-### Webbläsare{#web-browsers}
+### Webbläsare {#web-browsers}
 
 * **Microsoft Edge**
 
 * **Microsoft Edge WebView2**, senaste versionen. Hämta den från [Microsoft Developer Site](http://www.adobe.com/go/acc-ms-webview2-runtime-download){target="_blank"}.
 
-## CRM-kopplingar{#CRMconnectors}
+## CRM-kopplingar {#CRMconnectors}
 
 CRM (Customer Relationship Management)-system som är kompatibla med Adobe Campaign listas nedan. [Läs mer](../connect/crm.md).
 
@@ -53,31 +53,29 @@ CRM (Customer Relationship Management)-system som är kompatibla med Adobe Campa
 Externa databaser som är kompatibla med Adobe Campaign FDA-modulen (Federated Data Access) listas nedan. [Läs mer](../connect/fda.md).
 
 * **[!DNL Amazon Redshift]**
-* **[!DNL Azure Synapse]**, från och med Campaign v8.5
+* **[!DNL Azure Synapse]**, med start av Campaign v8.5
 * **[!DNL Google Big Query]**
 * **[!DNL Snowflake]**
 * **[!DNL Vertica]**
 
-## Mobil-SDK{#MobileSDK}
+## Mobil-SDK {#MobileSDK}
 
 Skicka [push-meddelanden](../send/push.md) Med Campaign kan du använda Adobe Experience Platform Mobile SDK genom att konfigurera Adobe Campaign Classic-tillägget i användargränssnittet för datainsamling.
 
+Kompatibla versioner för iOS och Android finns i [Adobe Developer-dokumentation](https://developer.adobe.com/client-sdks/home/)
 
-## Webbåtkomst{#web-access}
+## Webbåtkomst {#web-access}
 
 Följande webbläsare är kompatibla med Campaign för [Web Access](connect.md#web-access).
 
 * **Microsoft Edge**, **Mozilla Firefox**, **Google Chrome**, **Safari** (senaste versionerna)
 
-## Så här kontrollerar du Campaign-versionen och bygget{#version}
 
-Öppna **Hjälp > Om...** -menyn för att kontrollera versionen.
+## Ytterligare resurser {#support}
 
-![](assets/ac-version.png)
+* [Uppdateringar om kampanjreleaser](upgrades.md)
+* [Kontrollera kampanjversionen](upgrades.md#version)
+* [Installera Campaign-klientkonsolen](connect.md)
+* [Versioner av Kontrollpanelen](https://experienceleague.adobe.com/docs/control-panel/using/release-notes.html?lang=sv){target="_blank"}.
 
-Du kommer åt följande information:
-
-* The **version** numret på klientkonsolen och programservern. I exemplet ovan är versionen 8.1.5 för både klientkonsolen och programservern.
-* SHA-talet mellan parenteser.
-* Länk till Adobe kundtjänst.
-* Länkar till Adobe sekretesspolicy, användarvillkor och cookies-policy.
+Om du vill få information om nya releaser för Experience Cloud kan du prenumerera på [Produktuppdatering Adobe Priority](https://www.adobe.com/se/subscription/priority-product-update.html){target="_blank"}.

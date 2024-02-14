@@ -1,36 +1,60 @@
 ---
-title: Upptäck arbetsytan Campaign
-description: Lär dig hur du bläddrar och använder arbetsytan i Campaign
+title: Upptäck gränssnittet för Campaign
+description: Lär dig hur du bläddrar i och använder användargränssnittet i Campaign
 feature: Overview
 role: User
 level: Beginner
-exl-id: a7846b95-7570-4dce-b3f4-d3cc23eefcac
-source-git-commit: f577ee6d303bab9bb07350b60cf0fa6fc9d3a163
+source-git-commit: 8666c04f0e98cd6444af831d47056c46019c6088
 workflow-type: tm+mt
-source-wordcount: '524'
+source-wordcount: '997'
 ht-degree: 1%
 
 ---
 
-# Upptäck gränssnittet för Campaign
+# Upptäck användargränssnittet {#ui-client-console}
 
-## Åtkomst till Campaign-gränssnittet{#ui-access}
+Du får åtkomst till Adobe Campaign via klientkonsolen eller webbgränssnittet. Du kan också använda API:er för att hantera data och utföra åtgärder på Campaign-plattformen.
 
-Kampanjarbetsytan är tillgänglig via [Klientkonsol](../architecture/general-architecture.md).
+>[!CAUTION]
+>
+>Den här dokumentationen fokuserar på användning av Campaign Client-konsolen. Om du använder gränssnittet för webben i Campaign finns mer information i [den här dokumentationen](https://experienceleague.adobe.com/docs/campaign-web/v8/campaign-web-home.html){target="_blank"}.
 
-Lär dig hur du installerar och konfigurerar Campaign Client Console i [det här avsnittet](../start/connect.md).
+* **Klientkonsol** - Campaign-klientkonsolen är ett inbyggt program som kommunicerar med Adobe Campaign-programservern via standardInternetprotokoll, som SOAP och HTTP. Campaign-klientkonsolen centraliserar alla funktioner och inställningar och kräver minimal bandbredd eftersom den är beroende av ett lokalt cacheminne. Kampanjklientkonsolen är utformad för enkel driftsättning och kan distribueras från en webbläsare, uppdateras automatiskt och kräver ingen specifik nätverkskonfiguration eftersom den bara genererar HTTP(S)-trafik. [Läs mer](#ui-access)
+
+  Lär dig hur du installerar och konfigurerar Campaign-klientkonsolen i [det här avsnittet](../start/connect.md).
+
+<!--    ![](assets/home-page.png) -->
+
+* **Webbgränssnitt** - Från och med version 8.6.1 av Campaign har du som Campaign v8-användare tillgång till en webbmiljö som är tillgänglig via Adobe Experience Cloud centrala användargränssnitt. Sedan kan du ansluta till Adobe Campaign från en webbläsare. Med det nya gränssnittet kan ni skapa, hantera och utföra viktiga marknadsföringsåtgärder. Alla Campaign-funktioner är dock inte tillgängliga. [Läs mer](#ac-web-ui).
+
+  Webbanvändargränssnittet för Campaign Campaign är tillgängligt via klientkonsolens startsida.
+
+  ![](assets/web-ui.png)
+
+  >[!NOTE]
+  >
+  >Om det nya åtkomstkortet inte visas kontrollerar du att följande fält inte är tomma på ditt externa Adobe Experience Cloud-konto: **Server**, **Klientorganisation**, **Återanropsserver** och **Associationsmärke**.
+
+* **Webbåtkomst** - Med Adobe Campaign webbåtkomstfunktioner får du tillgång till en delmängd av Campaign-funktionerna via en webbläsare och ett HTML-användargränssnitt. Använd det här webbgränssnittet för att få åtkomst till rapporter, kontrollera och validera meddelanden, få åtkomst till kontrollpaneler med mera.  Läs mer om Campaign Web Access [i det här avsnittet](../start/connect.md#web-access).
+
+* **API:er** - För att åtgärda fler användningsfall kan systemet anropas från externa program med hjälp av de webbtjänstAPI:er som exponeras via SOAP-protokollet. Läs mer om Campaign-API:er [på den här sidan](../dev/api.md).
+
+
+## Arbeta med klientkonsolen {#ui-access}
+
+Campaign-klientkonsolen är ett inbyggt program som kommunicerar med Adobe Campaign-programservern via vanliga Internetprotokoll, till exempel SOAP och HTTP. Campaign-klientkonsolen centraliserar alla funktioner och inställningar och kräver minimal bandbredd eftersom den är beroende av ett lokalt cacheminne. Kampanjklientkonsolen är utformad för enkel driftsättning och kan distribueras från en webbläsare, uppdateras automatiskt och kräver ingen specifik nätverkskonfiguration eftersom den bara genererar HTTP(S)-trafik.  [Läs mer om Campaign-klientkonsolen](../start/connect.md).
 
 ![](assets/home-page.png)
 
 Du kan också använda en webbläsare för att få tillgång till Campaign. I det här sammanhanget är bara en deluppsättning av Campaign-funktionerna tillgängliga. [Läs mer](#web-browser)
 
-## Bläddra i gränssnittet{#ui-browse}
+### Bläddra i gränssnittet {#ui-browse}
 
-När du är ansluten till Campaign kommer du åt startsidan. Bläddra bland länkarna för att komma åt funktioner. Vilka funktioner som är tillgängliga i användargränssnittet beror på vilka alternativ och behörigheter du har.
+När du är ansluten till Campaign-klientkonsolen öppnar du hemsidan. Bläddra bland länkarna för att komma åt funktioner. Vilka funktioner som är tillgängliga i gränssnittet beror på vilka alternativ och behörigheter du har.
 
-I den centrala delen av startsidan använder du länkar för att komma åt hjälpmaterial för Campaign, communityn och supportwebbplatsen.
+I den centrala delen av startsidan använder du länkar för att komma åt hjälpmaterial för Campaign, communityn och supportwebbplatsen. Använd de centrala korten för att bläddra i det nya användargränssnittet för Campaign-webben och i Campaign Control-panelen.
 
-Använd flikarna i det övre avsnittet för att bläddra bland funktionerna i Campaign-nyckeln:
+Bläddra bland flikarna i det övre avsnittet för att komma åt funktioner för Campaign-nyckeln:
 
 ![](assets/overview-home.png)
 
@@ -48,7 +72,7 @@ När du markerar ett element på skärmen läses det in på en ny flik så att d
 
 ![](assets/new-tab.png)
 
-## Skapa ett element {#create-an-element}
+### Skapa ett element {#create-an-element}
 
 Använd genvägar i **[!UICONTROL Create]** till vänster på skärmen för att lägga till nya element. Du kan också använda **[!UICONTROL Create]** ovanför listan för att lägga till nya element i den aktuella listan.
 
@@ -56,15 +80,16 @@ På leveranssidan kan du till exempel använda **[!UICONTROL Create]** för att 
 
 ![](assets/new-recipient.png)
 
-## Använda en webbläsare {#web-browser}
+<!--
+## Use a web browser {#web-browser}
 
-Du kan även få tillgång till en delmängd av Campaign-funktionerna via en webbläsare.
+You can also access a subset of Campaign capabilities through the a web browser.
 
-Webbgränssnittet liknar konsolgränssnittet. Från en webbläsare kan du använda samma navigerings- och visningsfunktioner som i konsolen, men du kan bara utföra en reducerad uppsättning åtgärder på kampanjer. Du kan till exempel visa och avbryta kampanjer, men du kan inte ändra dem.
+The web access interface is similar to the console interface. From a browser, you can use the same navigation and display features as in the console, but you can perform only a reduced set of actions on campaigns. For example, you can view and cancel campaigns, but you cannot modify campaigns. 
 
-![](../assets/do-not-localize/glass.png) [Läs mer om Campaign-webbåtkomst](../start/connect.md#web-access).
+![](../assets/do-not-localize/glass.png) [Learn more about Campaign web access](../start/connect.md#web-access).-->
 
-## Access Campaign Explorer {#ac-explorer-ui}
+### Access Campaign Explorer {#ac-explorer-ui}
 
 Bläddra i Campaign Explorer för att få tillgång till alla funktioner och inställningar i Adobe Campaign.
 
@@ -78,21 +103,37 @@ På den här arbetsytan kan du komma åt Utforskarträdet och bläddra bland all
 
 * I det nedre avsnittet visas information om den valda posten.
 
-## Språk{#languages}
 
-Användargränssnittet för Campaign v8 finns på följande språk:
+## Kampanjwebbgränssnitt {#ac-web-ui}
 
-* Engelska (UK)
-* Engelska (USA)
-* Franska
-* Tyska
-* Japanska
+Från och med version 8.6.1 av Campaign v8-klientkonsolanvändare har du nu tillgång till en webbmiljö som är tillgänglig via Adobe Experience Cloud centrala användargränssnitt. Experience Cloud är en integrerad familj av program, produkter och tjänster för digital marknadsföring i Adobe. Från det intuitiva gränssnittet får du snabbt tillgång till dina molnprogram, produktfunktioner och tjänster.
 
-Språket väljs under installationen.
+![Adobe Campaign hemsida för webbanvändargränssnitt](assets/ac-web-home.png)
 
->[!CAUTION]
->
->Språket kan inte ändras efter att instansen har skapats.
+Läs mer om det nya webbgränssnittet för Campaign i [den här dokumentationen](https://experienceleague.adobe.com/docs/campaign-web/v8/campaign-web-home.html){target="_blank"}.
+
+Ytterligare och avancerade funktioner, konfigurationer och inställningar är bara tillgängliga i klientkonsolen. Läs mer om funktioner som är tillgängliga i båda användargränssnitten [i dokumentationen för Campaign-webbgränssnittet](https://experienceleague.adobe.com/docs/campaign-web/v8/start/capability-matrix.html){target="_blank"}.
+
+
+## Språk som stöds {#languages}
+
+Vilka språk som stöds beror på användargränssnittet.
+
+* För klientkonsolgränssnittet i Campaign v8 är följande språk som stöds:
+
+   * Engelska (UK)
+   * Engelska (USA)
+   * Franska
+   * Tyska
+   * Japanska
+
+
+  >[!CAUTION]
+  >
+  >Språket väljs under installationen och kan inte ändras efteråt.
+
+* För språk som stöds i Campaign Web-gränssnittet [hänvisa till denna sida](https://experienceleague.adobe.com/docs/campaign-web/v8/start/connect-to-campaign.html#language-pref){target="_blank"}.
+
 
 Språk påverkar datum- och tidsformat.
 

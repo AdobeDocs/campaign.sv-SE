@@ -5,7 +5,7 @@ feature: Salesforce Integration
 role: Admin, User
 level: Beginner, Intermediate
 exl-id: 1e20f3b9-d1fc-411c-810b-6271360286f9
-source-git-commit: f577ee6d303bab9bb07350b60cf0fa6fc9d3a163
+source-git-commit: 09db0cc1a14bffefe8d1b8d0d5a06d5b6517a5bb
 workflow-type: tm+mt
 source-wordcount: '349'
 ht-degree: 0%
@@ -46,7 +46,7 @@ Först måste du skapa det externa Salesforce-kontot.
 
 >[!NOTE]
 >
->Om du vill godkänna konfigurationen måste du logga ut och sedan logga in på Adobe Campaign Client Console igen.
+>För att godkänna installationen måste du logga ut och sedan logga in på Adobe Campaign klientkonsol igen.
 
 ## Markera tabeller som ska synkroniseras{#sfdc-create-tables}
 

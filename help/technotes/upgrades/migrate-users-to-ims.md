@@ -2,9 +2,9 @@
 title: Migrera kampanjoperatorer till Adobe Identity Management System (IMS)
 description: Lär dig hur du migrerar kampanjoperatorer till Adobe Identity Management System (IMS)
 exl-id: 58c130d8-8ba8-42ce-9ab4-a697125d3f85
-source-git-commit: 1cdb21533138623fc603424503063cf3dbc2d94c
+source-git-commit: b539b84907c7232f236b96ae8dfd11c8998a06b9
 workflow-type: tm+mt
-source-wordcount: '1116'
+source-wordcount: '1345'
 ht-degree: 0%
 
 ---
@@ -76,7 +76,7 @@ När den fullständiga IMS-migreringen är klar tillämpar Adobe de begränsning
 
 För nya kunder är det inte tillåtet att skapa nya inbyggda användare från början.
 
-Som Campaign-administratör kan du bevilja behörigheter till användare i din organisation via Adobe Admin Console och Campaign Client Console. Användare loggar in på Adobe Campaign med sin Adobe ID. Läs mer i [den här dokumentationen](../../v8/start/gs-permissions.md).
+Som kampanjadministratör kan du bevilja behörigheter till användare i organisationen via Adobe Admin Console och Campaign-klientkonsolen. Användare loggar in på Adobe Campaign med sin Adobe ID. Läs mer i [den här dokumentationen](../../v8/start/gs-permissions.md).
 
 ### Hur lägger jag till e-post för befintliga användare? {#ims-migration-id}
 
@@ -87,7 +87,41 @@ Som kampanjadministratör måste du lägga till e-post-ID:n till alla inbyggda a
 1. Ange e-postadressen till operatorn i dialogrutan **Kontaktpunkter** -delen i operatorformuläret.
 1. Spara ändringarna.
 
-<!--You can also import a CSV file to update all your operator profiles with their email.-->
+Som arbetsflödesansvarig eller Campaign-administratör kan du även utföra en satsvis uppdatering av dina operatorer med ett arbetsflöde.
+
++++Nyckelsteg för att uppdatera operatorerna med ett arbetsflöde
+
+Så här gör du en satsvis uppdatering av de inbyggda operatorerna:
+
+1. Skapa ett arbetsflöde för att i en CSV-fil extrahera alla operatorer som ansluter till Campaign med det inbyggda autentiseringsläget. Använd en **Fråga** aktivitet och **Dataextrahering (fil)** -aktivitet för att skapa CSV-filen. För varje operator, baserat på deras profildata, kan du exportera följande kolumner: `Name, Label`.
+
+   Läs mer om **Fråga** aktivitet i [den här sidan](../../automation/workflow/query.md)
+
+   Läs mer om **Dataextrahering (fil)** aktivitet i [den här sidan](../../automation/workflow/extraction--file-.md)
+
+1. Uppdatera CSV-filen med en ny kolumn som innehåller operatörernas e-postmeddelanden.
+
+1. Skapa ett arbetsflöde för import av uppdaterade data med en **Inläsning av data (fil)** aktivitet och **Uppdatera data** i arbetsflödet.
+
+   ![](assets/update-operators-wf.png){width="70%"}
+
+1. Redigera **Inläsning av data (fil)** och definiera inställningarna för att läsa in den uppdaterade CSV-filen enligt exemplet nedan.
+
+   ![](assets/data-loading-activity.png){width="70%"}
+
+   Läs mer om **Inläsning av data (fil)** aktivitet i [den här sidan](../../automation/workflow/data-loading--file-.md)
+
+1. Redigera **Uppdatera data** och ange inställningarna enligt exemplet nedan. Observera att **Uppdaterad dimension** har ändrats till `Operators (xtk)`.
+
+   ![](assets/update-data-activity.png){width="70%"}
+
+   Läs mer om **Uppdatera data** aktivitet i [den här sidan](../../automation/workflow/update-data.md)
+
+1. Kör arbetsflödet och kontrollera resultaten. E-postadressen har lagts till i operatörens profil.
+
+   ![](assets/updated-operator.png){width="70%"}
+
++++
 
 
 ### Hur loggar jag in på Campaign via IMS? {#ims-migration-log}
