@@ -5,7 +5,7 @@ user-guide-description: Produktdokumentation för Adobe Campaign v8 (klientkonso
 title: Adobe Campaign v8-dokumentation
 description: Kampanjdokumentation v8
 breadcrumb-title: Dokumentation om Campaign v8
-source-git-commit: df0c05495788fc497af51092f482e879fe2dffa7
+source-git-commit: 05b911d0675fa69fb8041bbc6d5c465266d9f806
 workflow-type: tm+mt
 source-wordcount: '575'
 ht-degree: 15%
@@ -19,7 +19,7 @@ ht-degree: 15%
 + Releaser och senaste uppdateringar {#releases}
    + [Dokumentationsuppdateringar](start/documentation-updates.md)
    + [Tidig versionsinformation](start/e-release-notes.md)
-   + [Version och uppgraderingar](start/upgrades.md)
+   + [Versioner och uppgraderingar](start/upgrades.md)
    + [Versionsinformation](start/release-notes.md)
    + Tidigare versionsinformation {#previous-rn}
       + [2023](start/release-notes-2023.md)
