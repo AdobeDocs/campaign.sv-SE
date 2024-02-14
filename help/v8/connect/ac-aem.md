@@ -5,9 +5,9 @@ feature: Experience Manager Integration
 role: Admin, User
 level: Beginner
 exl-id: e83893f7-a8be-48a3-a7a6-aced7b4d4f69
-source-git-commit: b267cb37a94bd389232ccfb9b8df69c9c2caa990
+source-git-commit: 92fe7c41047aafd26cca70a547025a3eff73e398
 workflow-type: tm+mt
-source-wordcount: '425'
+source-wordcount: '543'
 ht-degree: 0%
 
 ---
@@ -80,12 +80,30 @@ Nyhetsbrevet är nu klart och synkroniserat i Adobe Campaign.
 
 1. Välj den AEM leveransen som skapades i [!DNL Adobe Experience Manager] och bekräfta genom att klicka **[!UICONTROL Ok]**.
 
-1. Du kan infoga resurser direkt från [!DNL Adobe Experience Manager Assets] eller [!DNL Adobe Experience Manager Assets Library] när du redigerar ett e-postmeddelande i Adobe Campaign. [Läs mer](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/overview.html).
-
-   Använd **Adobe Experience Manager Assets-bibliotek**, få åtkomst till **[!UICONTROL Properties]** AEM och välj **[!UICONTROL Advanced]** -fliken. Aktivera **[!UICONTROL Use above AEM instance as shared asset library]** alternativ.
-
-   ![](assets/aem_authoring_9.png)
-
 1. Klicka på **[!UICONTROL Refresh content]** när AEM ändras.
 
 Din e-post kan nu skickas till din målgrupp.
+
+## Importera resurser från Adobe Experience Manager Assets bibliotek {#assets-library}
+
+Du kan även infoga resurser direkt från [!DNL Adobe Experience Manager Assets Library] när du redigerar ett e-postmeddelande eller en landningssida i Adobe Campaign. Den här funktionen beskrivs i [Adobe Experience Manager Assets-dokumentation](https://experienceleague.adobe.com/docs/experience-manager-65/content/assets/managing/manage-assets.html?lang=en).
+
+1. Överför dina resurser i dina **Adobe Experience Manager Assets Library**. [Mer information](https://experienceleague.adobe.com/docs/experience-manager-65/content/assets/managing/manage-assets.html?lang=en#uploading-assets)
+
+1. Skapa en ny leverans i Adobe Campaign genom att gå till **Kampanjer** flik, klicka **Leveranser** och klicka på **Skapa** ovanför listan över befintliga leveranser.
+
+1. Välj en **Leveransmall** och namnge sedan leveransen.
+
+1. Definiera och anpassa meddelandeinnehållet. [Läs mer](../send/email.md)
+
+1. Använd **Adobe Experience Manager Assets-bibliotek**, få åtkomst till **[!UICONTROL Properties]** AEM och välj **[!UICONTROL Advanced]** -fliken. Aktivera **[!UICONTROL Use above AEM instance as shared asset library]** alternativ.
+
+   ![](assets/aem_authoring_9.png)
+
+1. Från **Bild** -ikonen, visa **[!UICONTROL Select a shared asset]** -menyn.
+
+   ![](assets/aem_authoring_10.png)
+
+1. I urvalsfönstret väljer du en bild från **Adobe Experience Manager Assets-bibliotek**, och bekräfta sedan.
+
+E-postleveransen är klar. Nu kan du ange målgruppen, bekräfta leveransen och fortsätta skicka den.
