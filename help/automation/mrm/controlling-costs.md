@@ -5,9 +5,9 @@ description: Lär dig hur du styr kostnaderna
 feature: Campaigns, Resource Management
 role: User
 exl-id: 51f3add9-a083-4db1-84a6-3aaaeec0465c
-source-git-commit: 1a0b473b005449be7c846225e75a227f6d877c88
+source-git-commit: c3f4ad0b56dd45d19eebaa4d2f06551c8fecac1d
 workflow-type: tm+mt
-source-wordcount: '2409'
+source-wordcount: '2428'
 ht-degree: 1%
 
 ---
@@ -26,7 +26,7 @@ Följande steg måste tillämpas för att implementera budgethantering med MRM:
 
 1. Definiera budgeten. [Läs mer](#creating-a-budget).
 
-1. Definiera metoden för kostnadsberäkning: kostnadsstrukturer definieras för tjänsteleverantörerna. [Läs mer](../campaigns/providers--stocks-and-budgets.md).
+1. Definiera metoden för kostnadsberäkning: kostnadsstrukturer definieras för tjänsteleverantörerna. [Läs mer](../campaigns/providers-stocks-and-budgets.md).
 
 1. Definiera kampanjkostnader (leveranser/aktiviteter): De kostnader som uppstår för leveranser och aktiviteter anges individuellt eller globalt för kampanjmallen. [Läs mer](../campaigns/marketing-campaign-deliveries.md#compute-costs-and-stocks).
 
@@ -144,7 +144,7 @@ Enligt de kostnadskategorier som valts tillämpas motsvarande kostnadsstrukturer
 
 >[!NOTE]
 >
->Kostnadskategorier och -strukturer presenteras i [den här sidan](../campaigns/providers--stocks-and-budgets.md#create-a-service-provider-and-its-cost-categories)
+>Kostnadskategorier och -strukturer presenteras i [den här sidan](../campaigns/providers-stocks-and-budgets.md#create-a-service-provider-and-its-cost-categories)
 
 ## Kostnadsåtagande, beräkning och debitering {#cost-commitment--calculation-and-charging}
 
@@ -207,7 +207,7 @@ Vi ska skapa en kampanj med:
 
 #### Steg 2 - Konfigurera tjänsteleverantören och definiera kostnadsstrukturerna {#step-2---configuring-the-service-provider-and-defining-the-cost-structures}
 
-1. Skapa en tjänsteleverantör och en tjänstmall med en kostnadsstruktur från **[!UICONTROL Administration > Campaigns]** nod. Mer information om detta finns i [det här avsnittet](../campaigns/providers--stocks-and-budgets.md#create-a-service-provider-and-its-cost-categories).
+1. Skapa en tjänsteleverantör och en tjänstmall med en kostnadsstruktur från **[!UICONTROL Administration > Campaigns]** nod. Mer information om detta finns i [det här avsnittet](../campaigns/providers-stocks-and-budgets.md#create-a-service-provider-and-its-cost-categories).
 
    Skapa kostnadskategorier för direktreklam **[!UICONTROL Envelopes]** (typerna 114x229 och 162x229), **[!UICONTROL Postage]** och **[!UICONTROL Print]** (typ A3 och A4). Skapa sedan följande kostnadsstrukturer:
 

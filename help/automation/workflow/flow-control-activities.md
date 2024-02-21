@@ -5,7 +5,7 @@ description: Förteckning över flödeskontrollverksamhet
 feature: Workflows
 role: User
 exl-id: 904f2d94-bd3e-4c46-aeab-2ef77a7bdeee
-source-git-commit: 567c2e84433caab708ddb9026dda6f9cb717d032
+source-git-commit: c3f4ad0b56dd45d19eebaa4d2f06551c8fecac1d
 workflow-type: tm+mt
 source-wordcount: '174'
 ht-degree: 0%
@@ -21,7 +21,7 @@ Följande aktiviteter är databasaktiviteter: de används för att samordna arbe
 * **[Godkännande](approval.md)**: gör att du kan skicka ett e-postmeddelande till en operator eller en grupp med operatorer och vänta på godkännande för att fortsätta med körningen.
 * **[Extern signal](external-signal.md)**: gör att du kan aktivera den utgående övergången när du har tagit emot en extern signal.
 * **[Gaffel](fork.md)**: du kan aktivera alla utgående övergångar.
-* **[Hoppa (startpunkt och slutpunkt)](jump--start-point-and-end-point-.md)**: låter dig implementera övergångar utan länkar.
+* **[Hoppa (startpunkt och slutpunkt)](jump-start-point-and-end-point.md)**: låter dig implementera övergångar utan länkar.
 * **[Start och slut](start-and-end.md)**: gör att du kan visa start- och slutpunkterna för ett arbetsflöde.
 * **[Schemaläggare](scheduler.md)**: låter dig definiera ett arbetsflödeskörningsschema.
 * **[Delarbetsflöde](sub-workflow.md)**: gör att du kan köra ett annat arbetsflöde.

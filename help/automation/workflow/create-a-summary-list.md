@@ -5,10 +5,10 @@ description: Skapa en sammanfattningslista
 feature: Workflows, Data Management
 role: User
 exl-id: 86dee66a-357a-4927-916e-51cde6c006d5
-source-git-commit: 567c2e84433caab708ddb9026dda6f9cb717d032
+source-git-commit: c3f4ad0b56dd45d19eebaa4d2f06551c8fecac1d
 workflow-type: tm+mt
-source-wordcount: '971'
-ht-degree: 2%
+source-wordcount: '975'
+ht-degree: 1%
 
 ---
 
@@ -56,7 +56,7 @@ Dessa data finns i textfilen&quot;Purchases.txt&quot;.
 
    The **Filinsamlare** gör att du kan samla in och skicka filer från och till Adobe Campaign-servern.
 
-   The **Inläsning av data (fil)** kan du förbättra arbetsflödets arbetstabell med insamlade data. Mer information om den här aktiviteten finns i [den här sidan](data-loading--file-.md).
+   The **Inläsning av data (fil)** kan du förbättra arbetsflödets arbetstabell med insamlade data. Mer information om den här aktiviteten finns i [den här sidan](data-loading-file.md).
 
 1. Konfigurera **Filinsamlare** aktivitet för att samla in text (&#42;.txt)-typfiler från den valda katalogen.
 

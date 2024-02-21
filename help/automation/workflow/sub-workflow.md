@@ -4,9 +4,9 @@ title: Delarbetsflöde
 description: Läs mer om aktiviteten Delarbetsflöde
 feature: Workflows
 exl-id: c530fb4e-d21e-4059-88e1-77a8d33a7832
-source-git-commit: 77ec01aaba1e50676bed57f503a9e4e8bb1fe54c
+source-git-commit: c3f4ad0b56dd45d19eebaa4d2f06551c8fecac1d
 workflow-type: tm+mt
-source-wordcount: '417'
+source-wordcount: '419'
 ht-degree: 0%
 
 ---
@@ -19,7 +19,7 @@ The **[!UICONTROL Sub-workflow]** kan du aktivera körningen av ett annat arbets
 
 Du kan anropa flera delarbetsflöden i ett enda arbetsflöde. Delarbetsflöden körs synkront.
 
-I exemplet nedan anropar ett primärt arbetsflöde ett delarbetsflöde med jumps. Mer information om grafiska objekt av typen fortsättningstecken finns i [det här avsnittet](jump--start-point-and-end-point-.md).
+I exemplet nedan anropar ett primärt arbetsflöde ett delarbetsflöde med jumps. Mer information om grafiska objekt av typen fortsättningstecken finns i [det här avsnittet](jump-start-point-and-end-point.md).
 
 1. Skapa ett arbetsflöde som du vill använda som ett underarbetsflöde i ett annat arbetsflöde.
 1. Infoga en **[!UICONTROL Jump (end point)]** aktivitet med prioritet 1 i början av arbetsflödet. Om du har flera&quot;slutpunkttypshopp&quot; använder Adobe Campaign&quot;slutpunktshoppet&quot; med det lägsta talet.
@@ -36,7 +36,7 @@ I exemplet nedan anropar ett primärt arbetsflöde ett delarbetsflöde med jumps
 1. Slutför och spara det här delarbetsflödet.
 1. Skapa ett primärt arbetsflöde.
 1. Infoga en **[!UICONTROL Sub-workflow]** och öppna den.
-1. Välj det arbetsflöde som du vill använda i dialogrutan **[!UICONTROL Workflow template]** nedrullningsbar lista.
+1. Välj det arbetsflöde som du vill använda i dialogrutan **[!UICONTROL Workflow template]** listruta.
 
    ![](assets/subworkflow_selection.png)
 
@@ -53,7 +53,7 @@ När arbetsflödet som anropades som ett underarbetsflöde körs förblir det **
 * Antalet mellanliggande populationer kan inte visas.
 * Delarbetsflödets loggar visas i det primära arbetsflödet.
 
-   ![](assets/subworkflow_logs.png)
+  ![](assets/subworkflow_logs.png)
 
 >[!NOTE]
 >

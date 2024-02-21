@@ -5,7 +5,7 @@ description: Läs mer om kampanjdokument och leveransdispositioner för marknads
 feature: Campaigns
 role: User
 exl-id: 352f6cd5-777d-413d-af79-6f53444b336f
-source-git-commit: 567c2e84433caab708ddb9026dda6f9cb717d032
+source-git-commit: c3f4ad0b56dd45d19eebaa4d2f06551c8fecac1d
 workflow-type: tm+mt
 source-wordcount: '686'
 ht-degree: 0%
@@ -120,4 +120,4 @@ I följande exempel läggs etiketten, den uppskattade kostnaden och beskrivninge
 
 ![](assets/campaign-export-template.png)
 
-Exportmodellen måste vara kopplad till den tjänsteleverantör som valts för den aktuella leveransen. Se [det här avsnittet](providers--stocks-and-budgets.md#creating-service-providers-and-their-cost-structures).
+Exportmodellen måste vara kopplad till den tjänsteleverantör som valts för den aktuella leveransen. Se [det här avsnittet](providers-stocks-and-budgets.md#creating-service-providers-and-their-cost-structures).

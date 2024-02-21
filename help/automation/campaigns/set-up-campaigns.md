@@ -5,7 +5,7 @@ description: Lär er hur ni börjar med marknadsföringskampanjer
 feature: Campaigns, Cross Channel Orchestration, Programs
 role: User
 exl-id: eb1a0e52-14d9-4ad2-8bf2-ea955c6fd0f5
-source-git-commit: 567c2e84433caab708ddb9026dda6f9cb717d032
+source-git-commit: c3f4ad0b56dd45d19eebaa4d2f06551c8fecac1d
 workflow-type: tm+mt
 source-wordcount: '444'
 ht-degree: 3%
@@ -44,11 +44,11 @@ Samordna era flerkanalsleveranser i era kampanjer. Effektivisera kommunikationen
 1. **Ställ in det parallella flödet**
 Definiera granskare och konfigurera godkännandeflödet för att övervaka och styra kampanjens processer: målgruppsanpassning, innehåll, budget, extrahering och korrekturutskick. Lär dig hur du ställer in godkännanden [i det här avsnittet](marketing-campaign-approval.md).
 
-1. **Övervaka leveranser**.
+1. **Bildskärmsleveranser**.
 Spåra era kampanjer från kontrollpanelen, kontrollera leveransstatus och exekvering från Campaign-gränssnittet. [Läs mer](marketing-campaign-monitoring.md).
 
 1. **Spåra budgetar, stockar och tillhörande kostnader**.
-Använd Adobe Campaign för att styra budgetfördelningen, hantera leverantörer, lager och kostnader. [Läs mer](providers--stocks-and-budgets.md#create-service-providers-and-their-cost-structures).
+Använd Adobe Campaign för att styra budgetfördelningen, hantera leverantörer, lager och kostnader. [Läs mer](providers-stocks-and-budgets.md#create-service-providers-and-their-cost-structures).
 
 När de här stegen har slutförts kan du [starta leveranser](marketing-campaign-deliveries.md#start-a-delivery)kontrollera uppgifter, processer och information om leveranserna och, om det är nödvändigt, [hantera tillhörande dokument](marketing-campaign-deliveries.md#manage-associated-documents). Du kan också [spåra och övervaka körningen](marketing-campaign-monitoring.md) av era kampanjer och leveranser.
 

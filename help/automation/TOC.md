@@ -2,10 +2,10 @@
 audience: user
 user-guide-title: Guide för kampanjautomatisering
 user-guide-description: Guide för kampanjautomatisering
-source-git-commit: 75b65efce6b37e3d948f6af4a89ea3b0a5ac1a86
+source-git-commit: c3f4ad0b56dd45d19eebaa4d2f06551c8fecac1d
 workflow-type: tm+mt
-source-wordcount: '447'
-ht-degree: 81%
+source-wordcount: '442'
+ht-degree: 80%
 
 ---
 
@@ -17,7 +17,7 @@ ht-degree: 81%
    + Kom igång med arbetsflöden {#introduction}
       + [Om arbetsflöden](workflow/about-workflows.md)
       + Typer av arbetsflöden {#wf-type}
-         + [Arbetsflöden för målinriktning](workflow/targeting-workflows.md)
+         + [Målarbetsflöden](workflow/targeting-workflows.md)
          + [Kampanjarbetsflöden](workflow/campaign-workflows.md)
          + [Tekniska arbetsflöden](workflow/technical-workflows.md)
       + [Bygg ett arbetsflöde](workflow/build-a-workflow.md)
@@ -62,7 +62,7 @@ ht-degree: 81%
          + [Godkännande](workflow/approval.md)
          + [Extern signal](workflow/external-signal.md)
          + [Förgrening](workflow/fork.md)
-         + [Hoppa (startpunkt och slutpunkt)](workflow/jump--start-point-and-end-point-.md)
+         + [Hoppa (startpunkt och slutpunkt)](workflow/jump-start-point-and-end-point.md)
          + [Start och slut](workflow/start-and-end.md)
          + [Schemaläggare](workflow/scheduler.md)
          + [Delarbetsflöde](workflow/sub-workflow.md)
@@ -74,9 +74,9 @@ ht-degree: 81%
          + [Innehållshantering](workflow/content-management.md)
          + [Kontinuerlig leverans](workflow/continuous-delivery.md)
          + [Leveranser över flera kanaler](workflow/cross-channel-deliveries.md)
-         + [Dataextrahering (fil)](workflow/extraction--file-.md)
-         + [Läsa in data (fil)](workflow/data-loading--file-.md)
-         + [Datainläsning (RDBMS)](workflow/data-loading--rdbms-.md)
+         + [Dataextrahering (fil)](workflow/extraction-file.md)
+         + [Läsa in data (fil)](workflow/data-loading-file.md)
+         + [Datainläsning (RDBMS)](workflow/data-loading-rdbms.md)
          + [Leverans](workflow/delivery.md)
          + [Leveranskontroll](workflow/delivery-control.md)
          + [Lokalt godkännande](workflow/local-approval.md)
@@ -128,7 +128,7 @@ ht-degree: 81%
       + [Avancerade parametrar](workflow/advanced-parameters.md)
       + [JavaScript-skript och mallar](workflow/javascript-scripts-and-templates.md)
       + [Exempel på JavaScript-kod i arbetsflöden](workflow/javascript-in-workflows.md)
-      + [Åtkomst till en extern databas](workflow/accessing-an-external-database--fda-.md)
+      + [Åtkomst till en extern databas](workflow/accessing-an-external-database-fda.md)
       + [Hantera behörigheter](workflow/managing-rights.md)
       + [Ändra aktivitetsbilder](workflow/change-activity-images.md)
       + [Hantera tidszoner](workflow/managing-time-zones.md)
@@ -142,7 +142,7 @@ ht-degree: 81%
    + [Konfigurera och hantera godkännanden](campaigns/marketing-campaign-approval.md)
    + [Återkommande och periodiska kampanjer](campaigns/recurring-periodic-campaigns.md)
    + [Övervaka dina kampanjer](campaigns/marketing-campaign-monitoring.md)
-   + [Leverantörer, lager och budgetar](campaigns/providers--stocks-and-budgets.md)
+   + [Leverantörer, lager och budgetar](campaigns/providers-stocks-and-budgets.md)
 + Kampanjoptimering (tillägg){#campaign-optimization}
    + [Kom igång med olika kampanjtyper](campaign-opt/campaign-typologies.md)
    + [Filtreringsregler](campaign-opt/filtering-rules.md)

@@ -2,7 +2,7 @@
 title: Migrera kampanjoperatorer till Adobe Identity Management System (IMS)
 description: Lär dig hur du migrerar kampanjoperatorer till Adobe Identity Management System (IMS)
 exl-id: 58c130d8-8ba8-42ce-9ab4-a697125d3f85
-source-git-commit: b539b84907c7232f236b96ae8dfd11c8998a06b9
+source-git-commit: c3f4ad0b56dd45d19eebaa4d2f06551c8fecac1d
 workflow-type: tm+mt
 source-wordcount: '1345'
 ht-degree: 0%
@@ -97,7 +97,7 @@ Så här gör du en satsvis uppdatering av de inbyggda operatorerna:
 
    Läs mer om **Fråga** aktivitet i [den här sidan](../../automation/workflow/query.md)
 
-   Läs mer om **Dataextrahering (fil)** aktivitet i [den här sidan](../../automation/workflow/extraction--file-.md)
+   Läs mer om **Dataextrahering (fil)** aktivitet i [den här sidan](../../automation/workflow/extraction-file.md)
 
 1. Uppdatera CSV-filen med en ny kolumn som innehåller operatörernas e-postmeddelanden.
 
@@ -109,7 +109,7 @@ Så här gör du en satsvis uppdatering av de inbyggda operatorerna:
 
    ![](assets/data-loading-activity.png){width="70%"}
 
-   Läs mer om **Inläsning av data (fil)** aktivitet i [den här sidan](../../automation/workflow/data-loading--file-.md)
+   Läs mer om **Inläsning av data (fil)** aktivitet i [den här sidan](../../automation/workflow/data-loading-file.md)
 
 1. Redigera **Uppdatera data** och ange inställningarna enligt exemplet nedan. Observera att **Uppdaterad dimension** har ändrats till `Operators (xtk)`.
 

@@ -5,7 +5,7 @@ description: Lär dig skapa och genomföra marknadsföringskampanjer
 feature: Campaigns, Cross Channel Orchestration, Programs
 role: User
 exl-id: 90dd2dad-1380-490e-b958-4a28a7d930ed
-source-git-commit: d7750add8d71bb51ea1c099a45a7bce05da3b4d7
+source-git-commit: c3f4ad0b56dd45d19eebaa4d2f06551c8fecac1d
 workflow-type: tm+mt
 source-wordcount: '1327'
 ht-degree: 2%
@@ -92,7 +92,7 @@ Gå till följande avsnitt för att lära dig hur du konfigurerar kampanjen:
 * [Hantera resurser och dokument](marketing-campaign-assets.md)
 * [Bygg målgruppen](marketing-campaign-target.md)
 * [Ställ in godkännandeprocessen](marketing-campaign-approval.md)
-* [Hantera lager och budgetar](providers--stocks-and-budgets.md)
+* [Hantera lager och budgetar](providers-stocks-and-budgets.md)
 
 
 ### Redigera kampanjinställningar {#campaign-settings}
@@ -102,7 +102,7 @@ Kampanjer skapas via kampanjmallar. Du kan konfigurera återanvändbara mallar f
 För varje kampanj finns följande funktioner:
 
 * Referensdokument och resurser: du kan associera dokument med kampanjen (i korthet, rapport, bilder osv.). Alla dokumentformat stöds. [Läs mer](marketing-campaign-deliveries.md#manage-associated-documents).
-* Definiera kostnader: För varje kampanj kan Adobe Campaign definiera kostnadsposter och kostnadsberäkningsstrukturer som kan användas när marknadsföringskampanjen skapas. Exempel: tryckkostnader, användning av en extern byrå, rumshyrning osv. [Läs mer](providers--stocks-and-budgets.md#defining-cost-categories).
+* Definiera kostnader: För varje kampanj kan Adobe Campaign definiera kostnadsposter och kostnadsberäkningsstrukturer som kan användas när marknadsföringskampanjen skapas. Exempel: tryckkostnader, användning av en extern byrå, rumshyrning osv. [Läs mer](providers-stocks-and-budgets.md#defining-cost-categories).
 * Definiera mål: du kan definiera kvantifierbara mål för en kampanj, t.ex. antal prenumeranter, affärsvolym osv. Den här informationen används senare i kampanjrapporter.
 * Hantera dirigerade adresser och kontrollgrupper. [Läs mer](marketing-campaign-deliveries.md#defining-a-control-group).
 * Hantera godkännanden: du kan välja de behandlingar som ska godkännas och, om det behövs, välja granskningsoperatorer eller grupper av operatorer. [Läs mer](marketing-campaign-approval.md#checking-and-approving-deliveries).

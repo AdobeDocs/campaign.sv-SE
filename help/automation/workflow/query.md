@@ -5,7 +5,7 @@ description: Läs mer om arbetsflödesaktiviteten Fråga
 feature: Workflows, Targeting Activity, Query Editor
 role: User, Data Engineer
 exl-id: 717e4f7c-3a8e-4930-9a06-b7412d6e1675
-source-git-commit: 0191ca8c29813c448040fc887f98550c74197578
+source-git-commit: c3f4ad0b56dd45d19eebaa4d2f06551c8fecac1d
 workflow-type: tm+mt
 source-wordcount: '1553'
 ht-degree: 0%
@@ -66,7 +66,7 @@ Börja med att välja vilken typ av data som ska läggas till:
 ![](assets/wf_add_data_1st_option.png){width="70%" align="center" zoomable="yes"}
 
 * Välj **[!UICONTROL Data linked to the filtering dimension]** för att markera data i Adobe Campaign-databasen.
-* Välj **[!UICONTROL External data]** för att lägga till data från en extern databas. Det här alternativet är bara tillgängligt om du har köpt **Åtkomst till federerade data** alternativ. Mer information finns i [Åtkomst till en extern databas (FDA)](accessing-an-external-database--fda-.md).
+* Välj **[!UICONTROL External data]** för att lägga till data från en extern databas. Det här alternativet är bara tillgängligt om du har köpt **Åtkomst till federerade data** alternativ. Mer information finns i [Åtkomst till en extern databas (FDA)](accessing-an-external-database-fda.md).
 * Välj **[!UICONTROL An offer proposition]** om du vill lägga till en uppsättning kolumner som gör att du kan lagra det bästa erbjudande som genereras av erbjudandemotorn. Det här alternativet är bara tillgängligt om du har köpt **Interaktion** -modul.
 
 Om ingen valfri modul är installerad på plattformen visas inte det här steget. Du kommer att gå direkt till nästa steg.
