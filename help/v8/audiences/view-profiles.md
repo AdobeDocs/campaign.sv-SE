@@ -5,9 +5,9 @@ feature: Audiences, Profiles
 role: User
 level: Beginner
 exl-id: 03f7a736-e0b9-4216-9550-507f10e6fcf6
-source-git-commit: b5574ba2d9fa520b701f7af4e34862304b825a66
+source-git-commit: 59d33983db930b3a7dc022693d72704bda99e3a1
 workflow-type: tm+mt
-source-wordcount: '552'
+source-wordcount: '452'
 ht-degree: 2%
 
 ---
@@ -80,16 +80,3 @@ För en vanlig inbyggd mottagare kan du använda följande flikar:
 * **Spårning**, för alla spårningsloggar för den valda profilen. Den här informationen används för att spåra profilbeteende efter leveranser. På den här fliken visas den kumulativa summan av alla URL:er som spåras i leveranser. Listan är konfigurerbar och innehåller vanligtvis: klickad URL-adress, datum och tid för klickningen samt dokumentet som innehöll URL-adressen
 
   Läs mer om spårning [i det här avsnittet](../start/tracking.md).
-
-
-## Aktiva profiler {#active-profiles}
-
-En aktiv profil är en profil som kunden har försökt kommunicera med under de senaste tolv månaderna via valfri kanal. Licensvärdena baseras på aktiva profiler. Läs mer i [Adobe Campaign produktbeskrivning](https://helpx.adobe.com/legal/product-descriptions/adobe-campaign-managed-cloud-services.html){target="_blank"}.
-
->[!CAUTION]
->
->* En profil som har valts av flera leveranser räknas bara en gång.
->
->* Profiler som är inriktade på social marknadsföring på X (tidigare Twitter) räknas inte som aktiva profiler.
-
-Du kan övervaka antalet aktiva profiler på instansen direkt från Campaign-kontrollpanelen. Mer information finns i [Dokumentation för kontrollpanelen](https://experienceleague.adobe.com/docs/control-panel/using/performance-monitoring/active-profiles-monitoring.html){target="_blank"}.
