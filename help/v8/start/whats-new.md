@@ -5,9 +5,9 @@ feature: Overview
 role: User
 level: Beginner
 exl-id: 7771a02c-ebd4-48b6-b25e-6b6e420ad493
-source-git-commit: c8eb0972226da40aae5def0518660f9297697eb2
+source-git-commit: 55324243c70f2bbdace4acac233d1dd470562414
 workflow-type: tm+mt
-source-wordcount: '1029'
+source-wordcount: '1028'
 ht-degree: 1%
 
 ---
@@ -72,7 +72,7 @@ Adobe Campaign v8 är tillgänglig som en hanterad Cloud Service som ger proakti
 
 Med hanterade tjänster kan marknadsförarna dra nytta av molninfrastrukturens driftskala och ekonomi utan att behöva omfattande support från interna IT-resurser. Konsult- och implementeringsteamen på Adobe samarbetar med er för att utvärdera era marknadsföringsplaner, befintliga rutiner, datakrav och meddelandevolym, och de rekommenderar sedan de lämpligaste service-, support- och leveranspaketen. Adobe Campaign Managed Cloud Services-teamet kan sedan övervaka och rapportera om kampanjresultat, varumärkesanseende, kundupplevelsestatistik och mycket annat.
 
-[!BADGE PDF]{type=Informative}[Läs rapporten](https://experienceleague.adobe.com/docs/campaign/assets/IDC-Report-BusinessValueOfAdobeCampaign.pdf){target="_blank"} om du vill veta mer om Adobe Campaign Managed Cloud Services affärsvärde.
+[!BADGE PDF]{type=Informative}[Läs rapporten](assets/do-not-localize/IDC-Report-BusinessValueOfAdobeCampaign.pdf){target="_blank"} om du vill veta mer om Adobe Campaign Managed Cloud Services affärsvärde.
 
 Observera att den nya molnarkitekturen gör att Campaign kan effektivisera processer, minska kostnaderna, hantera risker och förbättra datasäkerheten. Din Campaign v8-miljö har ett dedikerat VPC (Virtual Private Cloud) som är förkonfigurerat för dig.
 
