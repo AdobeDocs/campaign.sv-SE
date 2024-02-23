@@ -5,9 +5,9 @@ feature: Release Notes
 role: User
 level: Beginner
 exl-id: 7cf8111d-9f3a-46a4-813a-d4e43a1d1471
-source-git-commit: 2f8cee4522efb59782a568334fc1300fc39d559f
+source-git-commit: 3b790305984436f1168f9c73aa09df509b2217f0
 workflow-type: tm+mt
-source-wordcount: '452'
+source-wordcount: '478'
 ht-degree: 2%
 
 ---
@@ -21,10 +21,19 @@ Som användare av hanterade Cloud Service uppgraderas instansen av Adobe med all
 Som kund bör du dessutom se till att du använder de senaste versionerna av de system som stöds i [Kompatibilitetsmatris](compatibility-matrix.md).
 
 
+## Version 8.6.2 {#release-8-6-2}
+
+_23 feb 2024_
+
+### Korrigeringar {#fixes-8-6-2}
+
+Den här versionen åtgärdar följande problem:
+
+* Korrigerade ett prestandaproblem som kan uppstå på mellankällarinstansen (NEO-72595).
+
 ## Version 8.6.1 {#release-8-6-1}
 
 _14 feb 2024_
-
 
 ### Nya funktioner {#new-8-6-1}
 
