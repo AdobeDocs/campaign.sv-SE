@@ -5,10 +5,10 @@ feature: Overview
 role: User
 level: Beginner
 exl-id: 7771a02c-ebd4-48b6-b25e-6b6e420ad493
-source-git-commit: cfc1043e30bdd43e1acaeaf399fde01c6473f1b4
+source-git-commit: 9ad8158f280acae2c2d10161f8ac6157398b9e3d
 workflow-type: tm+mt
-source-wordcount: '904'
-ht-degree: 2%
+source-wordcount: '1029'
+ht-degree: 1%
 
 ---
 
@@ -16,7 +16,7 @@ ht-degree: 2%
 
 Adobe Campaign v8 är utformat för marknadsförare i flera kanaler som behöver den bästa molnlösningen för kanalövergripande kampanjhantering i storföretagsskala. Den erbjuder robusta ETL- och datahanteringsfunktioner för att hjälpa till att utforma och strukturera den perfekta kampanjen. Dess orkestreringsmotor ger möjlighet till multitouch-marknadsföring med fokus på batchbaserade resor. Den levereras också tillsammans med en skalbar meddelandeserver i realtid som gör det möjligt för marknadsföringsteamen att skicka fördefinierade meddelanden baserat på en totalbelastning från alla IT-system för exempelvis lösenordsåterställning, orderbekräftelse, e-kvitto och mycket annat.
 
-Adobe Campaign v8 har avsevärda förbättringar vad gäller infrastruktur, säkerhet, leveransbarhet och övervakning.
+Adobe Campaign v8 har avsevärda förbättringar vad gäller infrastruktur, säkerhet, leveransbarhet och övervakning. Det finns som **Hanterad Cloud Service** som kombinerar tjänster med proaktiv tillsyn och vältajmade ändringar. Läs mer om Campaign Managed-Cloud Service [i det här avsnittet](#acms-desc).
 
 ![](assets/home-page.png)
 
@@ -70,9 +70,11 @@ Ni kan också konfigurera prediktiv optimering av sändningstiden och prediktiv 
 
 ### Hanterade Cloud Service {#acms-desc}
 
-Adobe Campaign v8 är tillgänglig som en hanterad Cloud Service som ger proaktiv tillsyn, snabb varning och servicestyrning.
+Adobe Campaign v8 är tillgänglig som en hanterad Cloud Service som ger proaktiv tillsyn, snabb varning och servicestyrning. Adobe Managed Cloud Service ger marknadsförarna en smidigare, säkrare och skalbar lösning för kanalövergripande kampanjhantering med en låg total ägandekostnad. Det nya erbjudandet kombinerar tjänster med proaktiv tillsyn och snabb varning.
 
-Adobe Managed Cloud Service ger marknadsförarna en smidigare, säkrare och skalbar lösning för kanalövergripande kampanjhantering med en låg total ägandekostnad. Det nya erbjudandet kombinerar tjänster med proaktiv tillsyn och snabb varning.
+Med hanterade tjänster kan marknadsförarna dra nytta av molninfrastrukturens driftskala och ekonomi utan att behöva omfattande support från interna IT-resurser. Konsult- och implementeringsteamen på Adobe samarbetar med er för att utvärdera era marknadsföringsplaner, befintliga rutiner, datakrav och meddelandevolym, och de rekommenderar sedan de lämpligaste service-, support- och leveranspaketen. Adobe Campaign Managed Cloud Services-teamet kan sedan övervaka och rapportera om kampanjresultat, varumärkesanseende, kundupplevelsestatistik och mycket annat.
+
+[Ladda ned rapporten](assets/do-not-localize/IDC-Report-BusinessValueOfAdobeCampaign.pdf) om du vill veta mer om Adobe Campaign Managed Cloud Services affärsvärde.
 
 >[!NOTE]
 >

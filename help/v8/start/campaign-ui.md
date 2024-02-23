@@ -4,9 +4,9 @@ description: Lär dig hur du bläddrar i och använder användargränssnittet i 
 feature: Overview
 role: User
 level: Beginner
-source-git-commit: 8666c04f0e98cd6444af831d47056c46019c6088
+source-git-commit: 9ad8158f280acae2c2d10161f8ac6157398b9e3d
 workflow-type: tm+mt
-source-wordcount: '997'
+source-wordcount: '1003'
 ht-degree: 1%
 
 ---
@@ -23,17 +23,7 @@ Du får åtkomst till Adobe Campaign via klientkonsolen eller webbgränssnittet.
 
   Lär dig hur du installerar och konfigurerar Campaign-klientkonsolen i [det här avsnittet](../start/connect.md).
 
-<!--    ![](assets/home-page.png) -->
-
 * **Webbgränssnitt** - Från och med version 8.6.1 av Campaign har du som Campaign v8-användare tillgång till en webbmiljö som är tillgänglig via Adobe Experience Cloud centrala användargränssnitt. Sedan kan du ansluta till Adobe Campaign från en webbläsare. Med det nya gränssnittet kan ni skapa, hantera och utföra viktiga marknadsföringsåtgärder. Alla Campaign-funktioner är dock inte tillgängliga. [Läs mer](#ac-web-ui).
-
-  Webbanvändargränssnittet för Campaign Campaign är tillgängligt via klientkonsolens startsida.
-
-  ![](assets/web-ui.png)
-
-  >[!NOTE]
-  >
-  >Om det nya åtkomstkortet inte visas kontrollerar du att följande fält inte är tomma på ditt externa Adobe Experience Cloud-konto: **Server**, **Klientorganisation**, **Återanropsserver** och **Associationsmärke**.
 
 * **Webbåtkomst** - Med Adobe Campaign webbåtkomstfunktioner får du tillgång till en delmängd av Campaign-funktionerna via en webbläsare och ett HTML-användargränssnitt. Använd det här webbgränssnittet för att få åtkomst till rapporter, kontrollera och validera meddelanden, få åtkomst till kontrollpaneler med mera.  Läs mer om Campaign Web Access [i det här avsnittet](../start/connect.md#web-access).
 
@@ -42,9 +32,15 @@ Du får åtkomst till Adobe Campaign via klientkonsolen eller webbgränssnittet.
 
 ## Arbeta med klientkonsolen {#ui-access}
 
-Campaign-klientkonsolen är ett inbyggt program som kommunicerar med Adobe Campaign-programservern via vanliga Internetprotokoll, till exempel SOAP och HTTP. Campaign-klientkonsolen centraliserar alla funktioner och inställningar och kräver minimal bandbredd eftersom den är beroende av ett lokalt cacheminne. Kampanjklientkonsolen är utformad för enkel driftsättning och kan distribueras från en webbläsare, uppdateras automatiskt och kräver ingen specifik nätverkskonfiguration eftersom den bara genererar HTTP(S)-trafik.  [Läs mer om Campaign-klientkonsolen](../start/connect.md).
+Campaign-klientkonsolen är ett inbyggt program som kommunicerar med Adobe Campaign-programservern via vanliga Internetprotokoll, till exempel SOAP och HTTP. Campaign-klientkonsolen centraliserar alla funktioner och inställningar och kräver minimal bandbredd eftersom den är beroende av ett lokalt cacheminne. Kampanjklientkonsolen är utformad för enkel driftsättning och kan distribueras från en webbläsare, uppdateras automatiskt och kräver ingen specifik nätverkskonfiguration eftersom den bara genererar HTTP(S)-trafik.  [Läs mer om Campaign-klientkonsolen](../start/connect.md). Du kan växla till Campaign-webbgränssnittet från det dedikerade kortet på klientkonsolens startsida.
 
-![](assets/home-page.png)
+![](assets/web-ui.png)
+
+
+>[!NOTE]
+>
+>Om det nya åtkomstkortet inte visas kontrollerar du att följande fält inte är tomma på ditt externa Adobe Experience Cloud-konto: **Server**, **Klientorganisation**, **Återanropsserver** och **Associationsmärke**.
+
 
 Du kan också använda en webbläsare för att få tillgång till Campaign. I det här sammanhanget är bara en deluppsättning av Campaign-funktionerna tillgängliga. [Läs mer](#web-browser)
 
