@@ -5,9 +5,9 @@ feature: Overview
 role: User
 level: Beginner
 exl-id: 7771a02c-ebd4-48b6-b25e-6b6e420ad493
-source-git-commit: 9ad8158f280acae2c2d10161f8ac6157398b9e3d
+source-git-commit: 43b6ee223d0d6b6a0e2fd9f067378965274e63a4
 workflow-type: tm+mt
-source-wordcount: '1029'
+source-wordcount: '1028'
 ht-degree: 1%
 
 ---
@@ -21,8 +21,6 @@ Adobe Campaign v8 har avsevärda förbättringar vad gäller infrastruktur, säk
 ![](assets/home-page.png)
 
 ## Viktiga funktioner{#key-capabilities}
-
-Viktiga funktioner listas nedan.
 
 ### Central arbetsflödeshantering{#central-wf-mgt}
 
@@ -74,11 +72,17 @@ Adobe Campaign v8 är tillgänglig som en hanterad Cloud Service som ger proakti
 
 Med hanterade tjänster kan marknadsförarna dra nytta av molninfrastrukturens driftskala och ekonomi utan att behöva omfattande support från interna IT-resurser. Konsult- och implementeringsteamen på Adobe samarbetar med er för att utvärdera era marknadsföringsplaner, befintliga rutiner, datakrav och meddelandevolym, och de rekommenderar sedan de lämpligaste service-, support- och leveranspaketen. Adobe Campaign Managed Cloud Services-teamet kan sedan övervaka och rapportera om kampanjresultat, varumärkesanseende, kundupplevelsestatistik och mycket annat.
 
-[Ladda ned rapporten](assets/do-not-localize/IDC-Report-BusinessValueOfAdobeCampaign.pdf) om du vill veta mer om Adobe Campaign Managed Cloud Services affärsvärde.
+[!BADGE PDF]{type=Informative}[Läs rapporten](assets/do-not-localize/IDC-Report-BusinessValueOfAdobeCampaign.pdf){target="_blank"} om du vill veta mer om Adobe Campaign Managed Cloud Services affärsvärde.
 
->[!NOTE]
+Observera att den nya molnarkitekturen gör att Campaign kan effektivisera processer, minska kostnaderna, hantera risker och förbättra datasäkerheten. Din Campaign v8-miljö har ett dedikerat VPC (Virtual Private Cloud) som är förkonfigurerat för dig.
+
+
+>[!AVAILABILITY]
 >
->Den nya molnarkitekturen gör att Campaign kan effektivisera processer, minska kostnaderna, hantera risker och förbättra datasäkerheten. Din Campaign v8-miljö har ett dedikerat VPC (Virtual Private Cloud) som är förkonfigurerat för dig.
+>* Campaign v8 är **endast** finns som hanterad Cloud Service och kan inte distribueras på plats eller i hybridmiljöer.
+>
+>* Automatisk migrering från en befintlig Campaign Classic v7-miljö är inte tillgänglig än.
+
 
 ### Hastighet och skala {#speed-scale}
 
@@ -87,12 +91,6 @@ Adobe Campaign kan nu utnyttja molnbaserade databastekniker för att dramatiskt 
 [Campaign v8 Enterprise](../architecture/enterprise-deployment.md) ger begreppet **Fullständig federerad dataåtkomst** (FFDA): alla data är nu fjärranslutna till molndatabasen. Med det här nya erbjudandet förenklar Campaign v8 datahanteringen: inget index krävs i molndatabasen. Du behöver bara skapa tabellerna, kopiera data så kan du börja. [!DNL Snowflake] är Campaign Cloud-databasen, vilket ger er snabbhet och uthållighet: ingen överbelastning av systemaktivitetens toppar. Cloud-databastekniken kräver inget specifikt underhåll för att garantera prestandanivån.
 
 ![](../assets/do-not-localize/glass.png) [Läs mer om företagsdistribution (FFDA)](../architecture/enterprise-deployment.md)
-
->[!CAUTION]
->
->* Campaign v8 är **endast** finns som hanterad Cloud Service och kan inte distribueras på plats eller i hybridmiljöer.
->
->* Automatisk migrering från en befintlig Campaign Classic v7-miljö är inte tillgänglig än.
 
 
 ## Självbetjäningsadministratörsgränssnitt{#self-service-admin}
