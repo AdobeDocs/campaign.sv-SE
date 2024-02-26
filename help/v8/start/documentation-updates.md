@@ -5,10 +5,10 @@ feature: Release Notes
 role: User
 level: Beginner
 hidefromtoc: true
-source-git-commit: 6a77b472a09e19d569bb0e9a778a3a7819068033
+source-git-commit: 032c11f794956d5bdd4a6540ee5dd5b2f92c94dc
 workflow-type: tm+mt
-source-wordcount: '101'
-ht-degree: 36%
+source-wordcount: '112'
+ht-degree: 34%
 
 ---
 
@@ -21,6 +21,8 @@ På den här sidan visas alla de senaste uppdateringarna i [!DNL Campaign] v8-do
 
 * Alla nya funktioner, ändringar och förbättringar som följer med [!DNL Campaign] Version v8.6 finns detaljerad i dokumentationen. [Läs mer](release-notes.md)
 * Versionshantering och uppgraderingsfunktion för Campaign v8 finns nu på en dedikerad sida. [Läs mer](upgrades.md)
+* En sida om integrationen mellan Adobe Campaign och Adobe Workfront har lagts till. [Läs mer](../connect/ac-workfront.md)
+
 
 
 ## Januari 2024 {#jan-2024}

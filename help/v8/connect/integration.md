@@ -5,10 +5,10 @@ feature: Overview
 role: Admin, User
 level: Beginner
 exl-id: d1d57aa8-b811-470f-a8a6-18da3a700f1a
-source-git-commit: f463c5747b844544ba561a63e4cb0359c0c258c8
+source-git-commit: 032c11f794956d5bdd4a6540ee5dd5b2f92c94dc
 workflow-type: tm+mt
-source-wordcount: '393'
-ht-degree: 11%
+source-wordcount: '380'
+ht-degree: 7%
 
 ---
 
@@ -26,12 +26,13 @@ Kombinera Adobe Experience Cloud lösningar för att modernisera implementeringe
 
 Campaign v8 kan kommunicera med:
 
+* [Adobe Analytics](../connect/ac-aa.md)
+* [Adobe Experience Cloud-utlösare](../connect/ac-triggers.md)
+* [Adobe Experience Manager](../connect/ac-aem.md)
 * [Adobe Experience Platform](../connect/ac-aep.md)
 * [Adobe Journey Optimizer](../connect/ac-ajo.md)
-* [Adobe Analytics](../connect/ac-aa.md)
-* [Adobe Experience Manager](../connect/ac-aem.md)
-* [Adobe Experience Cloud-utlösare](../connect/ac-triggers.md)
 * [Adobe Target](../connect/ac-at.md)
+* [Adobe Workfront](../connect/ac-workfront.md)
 
 Du kan också kombinera **målgrupper** och **resurser** i olika Experience Cloud-lösningar med funktioner för resursdelning och målgruppsdelning.
 
@@ -52,7 +53,7 @@ Lär dig hur du integrerar Campaign med Microsoft Dynamics 365 och Salesforce.co
 
 Använd FDA Connector (Federated Data Access) för att ansluta Campaign till en eller flera **externa databaser** och bearbeta information som lagras i dem utan att påverka data i Campaign Cloud-databasen.
 
-![](../assets/do-not-localize/glass.png)[ Läs mer på den här sidan](fda.md)
+![](../assets/do-not-localize/glass.png) Läs mer i [den här sidan](fda.md)
 
 ## Arbeta med sociala medier{#gs-social}
 
