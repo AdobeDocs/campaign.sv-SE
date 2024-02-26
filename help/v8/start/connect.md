@@ -1,6 +1,6 @@
 ---
 title: Anslut till Campaign med klientkonsolen
-description: Lär dig installera Campaign-klientkonsolen på datorn och ansluta till Adobe Campaign
+description: Läs om hur du installerar Campaign-klientkonsolen på din dator och ansluter till Adobe Campaign
 feature: Client Console
 role: User
 level: Beginner
@@ -8,7 +8,7 @@ exl-id: 176cc4f0-8827-4127-9f03-7d75ac8cf917
 source-git-commit: 9df599ec0a898a1af16cb92d334d50375fde86ba
 workflow-type: tm+mt
 source-wordcount: '850'
-ht-degree: 1%
+ht-degree: 2%
 
 ---
 

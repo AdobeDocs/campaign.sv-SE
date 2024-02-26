@@ -1,6 +1,6 @@
 ---
 title: Allmän arkitektur
-description: Lär dig mer om arkitekturen och komponenterna i Adobe Campaign. Läs mer om hur du anpassar klientkonsolen och miljön.
+description: Läs mer om Adobe Campaigns arkitektur och komponenter. Läs mer om hur du anpassar din klientkonsol och miljö.
 feature: Architecture, Deployment
 role: Admin, Developer
 level: Beginner
