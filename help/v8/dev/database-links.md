@@ -4,7 +4,7 @@ description: Länkhantering i Adobe Campaign-scheman
 feature: Data Model, Configuration
 role: Developer
 level: Intermediate, Experienced
-source-git-commit: c7171a121f03eff0d945e64758e3ba1842e5436f
+source-git-commit: 6db351c8b5d30f722ddc4b0261af93cd8e3b72cd
 workflow-type: tm+mt
 source-wordcount: '919'
 ht-degree: 0%
@@ -35,7 +35,7 @@ För anslutningsrelationer med FDA (Federated Database Access):
 * ![](assets/do-not-localize/join_fda_11.png) : Kardinalitet 1-1
 * ![](assets/do-not-localize/join_fda_1m.png) : Kardinalitet 1-N
 
-Mer information om FDA-tabeller finns i [Åtkomst till en extern databas](../../installation/using/about-fda.md).
+Mer information om FDA-tabeller finns i [Åtkomst till en extern databas](../connect/fda.md).
 
 En länk måste deklareras i schemat som innehåller sekundärnyckeln för tabellen som är länkad via huvudelementet:
 
