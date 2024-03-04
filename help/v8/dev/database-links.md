@@ -4,7 +4,7 @@ description: Länkhantering i Adobe Campaign-scheman
 feature: Data Model, Configuration
 role: Developer
 level: Intermediate, Experienced
-source-git-commit: 673298a60927902bba71fd9167c5408e538f4929
+source-git-commit: c7171a121f03eff0d945e64758e3ba1842e5436f
 workflow-type: tm+mt
 source-wordcount: '919'
 ht-degree: 0%
@@ -26,14 +26,14 @@ I användargränssnittet representeras kardinalerna med en specifik ikon.
 
 För kopplingsrelationer med en kampanjtabell/databas:
 
-* ![](assets/join_with_campaign11.png) : Kardinalitet 1-1. Till exempel mellan en mottagare och en aktuell order. En mottagare kan bara vara relaterad till en förekomst av den aktuella ordertabellen åt gången.
-* ![](assets/externaljoin11.png) : Kardinalitet 1-1, extern koppling. Till exempel mellan en mottagare och deras land. En mottagare kan bara vara relaterad till en förekomst av registerlandet. Innehållet i landstabellen sparas inte.
-* ![](assets/join_with_campaign1n.png) : Kardinalitet 1-N. Till exempel mellan en mottagare och prenumerationstabellen. En mottagare kan vara relaterad till flera förekomster i prenumerationstabellen.
+* ![](assets/do-not-localize/join_with_campaign11.png) : Kardinalitet 1-1. Till exempel mellan en mottagare och en aktuell order. En mottagare kan bara vara relaterad till en förekomst av den aktuella ordertabellen åt gången.
+* ![](assets/do-not-localize/externaljoin11.png) : Kardinalitet 1-1, extern koppling. Till exempel mellan en mottagare och deras land. En mottagare kan bara vara relaterad till en förekomst av registerlandet. Innehållet i landstabellen sparas inte.
+* ![](assets/do-not-localize/join_with_campaign1n.png) : Kardinalitet 1-N. Till exempel mellan en mottagare och prenumerationstabellen. En mottagare kan vara relaterad till flera förekomster i prenumerationstabellen.
 
 För anslutningsrelationer med FDA (Federated Database Access):
 
-* ![](assets/join_fda_11.png) : Kardinalitet 1-1
-* ![](assets/join_fda_1m.png) : Kardinalitet 1-N
+* ![](assets/do-not-localize/join_fda_11.png) : Kardinalitet 1-1
+* ![](assets/do-not-localize/join_fda_1m.png) : Kardinalitet 1-N
 
 Mer information om FDA-tabeller finns i [Åtkomst till en extern databas](../../installation/using/about-fda.md).
 
