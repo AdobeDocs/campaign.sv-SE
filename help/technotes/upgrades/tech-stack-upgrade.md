@@ -4,11 +4,10 @@ title: Technote - Adobe Campaign systemuppgraderingar
 description: Adobe Campaign systemuppgradering
 hide: true
 hidefromtoc: true
-exl-id: 78949d94-60b3-44f1-8e5a-d61b5b723e87
-source-git-commit: f1e963a880e8499dbbb16c44831a4ce1b537601f
+source-git-commit: c362e6ff932f5017530434c4b458070ec1a97abc
 workflow-type: tm+mt
-source-wordcount: '310'
-ht-degree: 11%
+source-wordcount: '313'
+ht-degree: 9%
 
 ---
 
@@ -16,13 +15,14 @@ ht-degree: 11%
 
 Kampanjinfrastrukturen bygger på tredjepartssystem som regelbundet måste uppdateras med de senaste versionerna och korrigeringarna. Dessa uppdateringar är obligatoriska för att säkerställa kontinuitet i tjänsten och säkra kampanjmiljöer från säkerhetsrisker. Dessutom krävs en Campaign-uppgradering för att säkerställa kompatibilitet med systemändringar från tredje part.
 
-Som **Kund för hanterade Cloud Services** får du information från Adobe om dessa uppgraderingar när de behövs. Miljöerna måste uppgraderas i enlighet med rekommendationerna för att säkerställa regelefterlevnad.
+Som en **Kund för hanterade Cloud Service** får du information från Adobe om dessa uppgraderingar när de behövs. Miljöerna måste uppgraderas i enlighet med rekommendationerna för att säkerställa regelefterlevnad.
 
 Av säkerhetsskäl måste Adobe [installera den senaste Campaign-versionen](#ac-upgrade)och sedan uppgradera [operativsystem](#os-upgrade) och/eller [RDBMS (Relation Database Management System)](#pg-upgrade).
 
 >[!NOTE]
 >
 >Om du har frågor om de här ändringarna kan du kontakta [Adobes kundtjänst](https://helpx.adobe.com/se/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html).
+>
 
 ## Uppgradering av kampanjbygge {#ac-upgrade}
 
@@ -32,7 +32,7 @@ Om du påverkas av [uppgradering av operativsystem](#os-upgrade) och/eller [data
 
 **Hur uppdaterar jag?**
 
-Som kund med hanterade Cloud Services kommer Adobe att kontakta dig och uppgradera din Campaign-version.
+Som kund med hanterade Cloud Service kommer Adobe att kontakta dig och uppgradera din Campaign-version.
 
 ## Uppgradering av operativsystem {#os-upgrade}
 
@@ -48,8 +48,8 @@ Som kund hos Managed Cloud Services kommer Adobe att kontakta dig och uppgradera
 
 **Påverkas du?**
 
-Om ditt databassystem för Campaign är PostgreSQL, och du vill kunna dra nytta av de senaste PostgreSQL-innovationerna och säkerhetsuppdateringarna, måste Adobe uppgradera till **PostgreSQL 14**. Observera att PostgreSQL 11 når slutet av livscykeln den 9 november 2023.
+Om ditt databassystem för Campaign är PostgreSQL och du vill kunna dra nytta av de senaste PostgreSQL-innovationerna och säkerhetsuppdateringarna måste Adobe uppgradera till **PostgreSQL 14**. Observera att PostgreSQL 11 når slutet av livscykeln den 9 november 2023.
 
 **Hur uppdaterar jag?**
 
-Som kund med hanterade Cloud Services kommer Adobe att kontakta dig och uppgradera ditt databassystem från PostgreSQL 11 till PostgreSQL 14.
+Som kund med hanterade Cloud Service kommer Adobe att kontakta dig och uppgradera ditt databassystem från PostgreSQL 11 till PostgreSQL 14.
