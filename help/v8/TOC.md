@@ -5,10 +5,10 @@ user-guide-description: Produktdokumentation för Adobe Campaign v8 (klientkonso
 title: Adobe Campaign v8-dokumentation
 description: Kampanjdokumentation v8
 breadcrumb-title: Dokumentation om Campaign v8
-source-git-commit: a79ae8611f413b910fe31c1e1c5213f40e873879
+source-git-commit: 673298a60927902bba71fd9167c5408e538f4929
 workflow-type: tm+mt
-source-wordcount: '577'
-ht-degree: 15%
+source-wordcount: '581'
+ht-degree: 16%
 
 ---
 
@@ -190,6 +190,8 @@ ht-degree: 15%
       + [Filterscheman](dev/filter-schema.md)
       + [Schemastruktur](dev/schema-structure.md)
       + [Databasmappning](dev/database-mapping.md)
+      + [Nyckelhantering](dev/database-keys.md)
+      + [Länkhantering](dev/database-links.md)
       + [Begränsa PI-vy](dev/restrict-pi-view.md)
       + [Använda en anpassad mottagartabell](dev/custom-recipient.md)
       + [Uppdatera databasen](dev/update-database-structure.md)
