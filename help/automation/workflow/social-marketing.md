@@ -3,10 +3,10 @@ product: campaign
 title: Social marknadsföring
 description: Läs mer om tekniska arbetsflöden för social marknadsföring
 feature: Workflows
-source-git-commit: f463c5747b844544ba561a63e4cb0359c0c258c8
+source-git-commit: e45799f0f3849d53d2c5f593bc02954b3a55fc28
 workflow-type: tm+mt
 source-wordcount: '120'
-ht-degree: 5%
+ht-degree: 1%
 
 ---
 
@@ -17,7 +17,7 @@ ht-degree: 5%
 
 >[!AVAILABILITY]
 >
->:warning: Den här funktionen är bara tillgänglig i Campaign Classic v7.
+>`:warning:` Den här funktionen är bara tillgänglig i Campaign Classic v7.
 
 Arbetsflödena nedan installeras tillsammans med **Social marknadsföring** som standard.
 

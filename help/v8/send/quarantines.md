@@ -5,9 +5,9 @@ feature: Profiles, Monitoring
 role: User, Data Engineer
 level: Beginner
 exl-id: 220b7a88-bd42-494b-b55b-b827b4971c9e
-source-git-commit: f577ee6d303bab9bb07350b60cf0fa6fc9d3a163
+source-git-commit: e45799f0f3849d53d2c5f593bc02954b3a55fc28
 workflow-type: tm+mt
-source-wordcount: '1181'
+source-wordcount: '1167'
 ht-degree: 4%
 
 ---
@@ -73,7 +73,7 @@ Visa listan över adresser i karantän **för hela plattformen** kan kampanjadmi
 >
 >Efter år 1: (1)&#42;0,33)/(1+0.5)=22 %.
 >
->Slutet av år 2: ((1.22)&#42;0,33)+0,33)/(1,5+0,75)=32,5 %.
+Slutet av år 2: ((1.22)&#42;0,33)+0,33)/(1,5+0,75)=32,5 %.
 
 Dessutom är **[!UICONTROL Non-deliverables and bounces]** inbyggd rapport, tillgänglig från **Rapporter** på den här startsidan, visar information om adresserna i karantän, typer av fel som uppstått och felinformation per domän. Du kan filtrera data för en viss leverans eller anpassa rapporten efter behov.
 
@@ -104,7 +104,7 @@ Status ändras sedan till **[!UICONTROL Valid]**.
 
 >[!CAUTION]
 >
->Mottagare med en adress i en **[!UICONTROL Quarantine]** eller **[!UICONTROL Denylisted]** status tas aldrig bort, även om de får ett e-postmeddelande.
+Mottagare med en adress i en **[!UICONTROL Quarantine]** eller **[!UICONTROL Denylisted]** status tas aldrig bort, även om de får ett e-postmeddelande.
 
 Du kan också ta bort en adress manuellt från karantänlistan. Om du vill ta bort en adress från karantänen kan du:
 
@@ -120,8 +120,8 @@ Nedan följer de rekommenderade riktlinjerna för den här frågan:
 
 * **Feltext (karantäntext)** innehåller &quot;Momen_Code10_InvalidRecipient&quot;
 * **E-postdomän (@domän)** lika med domain1.com OR **E-postdomän (@domän)** lika med domain2.com OR **E-postdomän (@domän)** lika med domain3.com
-* **Uppdateringsstatus (@lastModified)** på eller efter MM/DD/ÅÅÅÅ HH:MM:SS AM
-* **Uppdateringsstatus (@lastModified)** på eller före MM/DD/ÅÅÅÅ HH:MM:SS PM
+* **Uppdateringsstatus (@lastModified)** på eller efter `MM/DD/YYYY HH:MM:SS AM`
+* **Uppdateringsstatus (@lastModified)** på eller före `MM/DD/YYYY HH:MM:SS PM`
 
 När du har en lista över mottagare som påverkas lägger du till en **[!UICONTROL Update data]** aktivitet för att ange status till **[!UICONTROL Valid]** så att de tas bort från karantänlistan av **[!UICONTROL Database cleanup]** arbetsflöde, Du kan även ta bort dem från karantäntabellen.
 

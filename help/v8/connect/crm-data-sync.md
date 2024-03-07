@@ -5,9 +5,9 @@ feature: Salesforce Integration, Microsoft CRM Integration
 role: Admin
 level: Beginner
 exl-id: 2a7ae88e-d47f-416b-84cd-986ab9be6aef
-source-git-commit: f577ee6d303bab9bb07350b60cf0fa6fc9d3a163
+source-git-commit: e45799f0f3849d53d2c5f593bc02954b3a55fc28
 workflow-type: tm+mt
-source-wordcount: '1322'
+source-wordcount: '1315'
 ht-degree: 0%
 
 ---
@@ -87,7 +87,7 @@ Datumet för den senaste synkroniseringen lagras som standard i ett alternativ s
 >
 >Den här anmärkningen gäller endast för generiska **[!UICONTROL CRM Connector]** aktivitet. För andra CRM-aktiviteter är processen automatisk.
 >
->Det här alternativet måste skapas manuellt och fyllas i under **[!UICONTROL Administration]** > **[!UICONTROL Platform]** > **[!UICONTROL Options]**. Det måste vara ett textalternativ och dess värde måste matcha följande format: **yyyy/MM/dd hh:mm:ss**.
+>Det här alternativet måste skapas manuellt och fyllas i under **[!UICONTROL Administration]** > **[!UICONTROL Platform]** > **[!UICONTROL Options]**. Det måste vara ett textalternativ och dess värde måste matcha följande format: **`yyyy/MM/dd hh:mm:ss`**.
 > 
 >Du måste uppdatera det här alternativet manuellt för ytterligare import.
 
@@ -106,7 +106,7 @@ Aktiverar **[!UICONTROL Automatic index]** alternativ genererar tre variabler so
 
   >[!NOTE]
   >
-  >Dessa datum visas i följande format: **yyyy/MM/dd hh:mm:ss**.
+  >Dessa datum visas i följande format: **`yyyy/MM/dd hh:mm:ss`**.
 
 ### Filtrera data {#filtering-data}
 
