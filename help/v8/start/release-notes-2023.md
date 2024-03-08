@@ -4,7 +4,8 @@ description: Lista över funktioner och förbättringar i 2023 års Campaign v8-
 feature: Release Notes
 role: User
 level: Beginner
-source-git-commit: 43994eb29af2b85272de0ce4dc34cc66aba2e04a
+exl-id: b860c843-155e-4abb-bdd6-b68dc7eaa0ee
+source-git-commit: 3a63539bc6bb20fa79bdac76dd60efe7b232458b
 workflow-type: tm+mt
 source-wordcount: '1474'
 ht-degree: 21%
@@ -13,7 +14,7 @@ ht-degree: 21%
 
 # Versionsinformation 2023 {#2023-rn}
 
-På den här sidan visas nya funktioner, förbättringar och korrigeringar som följer med **2022 Campaign v8 Releases**.
+På den här sidan visas nya funktioner, förbättringar och korrigeringar som följer med **2023 Campaign v8 Releases**.
 
 ## Version 8.5.2 {#release-8-5-2}
 
@@ -151,5 +152,3 @@ _27 januari 2023_
 * Hanteringen av spårnings-URL:er har förbättrats i arbetsflöden med flera leveranser för att förbättra prestandan. (NEO-50894) <!--OKKKK-->
 * Korrigerade ett problem som kunde göra så att replikering av scheman som använder Xtkfolder misslyckades. (NEO-46787) <!--OKKKK-->
 * Korrigerat en felorsak som kan göra att den anpassade kolumnen&quot;lastModified&quot; tas bort i NmsSubscription-tabellen. (NEO-48402)
-
-
