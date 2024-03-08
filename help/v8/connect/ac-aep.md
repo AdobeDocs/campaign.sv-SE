@@ -1,18 +1,18 @@
 ---
-title: Målgrupper och profilattribut
-description: Lär dig synka Adobe Experience Platform målgrupper och profilattribut med Campaign
+title: Dela och synka målgrupper och profilattribut med Adobe Experience Platform
+description: Lär dig hur du synkroniserar Adobe Experience Platform målgrupper och profilattribut med Campaign
 feature: Experience Platform Integration
 role: Data Engineer
 level: Beginner
 exl-id: 21cf5611-ccaa-4e83-8891-a1a2353515aa
-source-git-commit: 6ebbdf2ab57577594a4f964e2cfcba46fcb7b4ca
+source-git-commit: ea37b72efd03afb212c060f809b6ba077b996701
 workflow-type: tm+mt
 source-wordcount: '541'
 ht-degree: 0%
 
 ---
 
-# Arbeta med Campaign och Adobe Experience Platform
+# Dela och synka målgrupper med Adobe Experience Platform {#gs-ac-aep}
 
 Adobe Campaign Managed Cloud Service Destination och Source-anslutningarna möjliggör smidig integrering mellan Adobe Campaign och Adobe Experience Platform. Med den här integreringen kan du
 

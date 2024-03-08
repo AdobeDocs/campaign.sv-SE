@@ -5,9 +5,9 @@ user-guide-description: Produktdokumentation för Adobe Campaign v8 (klientkonso
 title: Adobe Campaign v8-dokumentation
 description: Kampanjdokumentation v8
 breadcrumb-title: Dokumentation om Campaign v8
-source-git-commit: 673298a60927902bba71fd9167c5408e538f4929
+source-git-commit: ea37b72efd03afb212c060f809b6ba077b996701
 workflow-type: tm+mt
-source-wordcount: '581'
+source-wordcount: '587'
 ht-degree: 16%
 
 ---
@@ -139,8 +139,8 @@ ht-degree: 16%
 + Integreringar {#connect}
    + [Connect Campaign med andra lösningar](connect/integration.md)
    + Campaign + Experience Platform {#ac-aep}
-      + [Målgrupper och profilattribut](connect/ac-aep.md)
-      + [Kampanjlandningssidor och profilattribut](connect/ac-aep-landing-pages.md)
+      + [Dela och synkronisera målgrupper och profilattribut](connect/ac-aep.md)
+      + [Uppdatera AEP-profiler från Campaign-landningssidor](connect/ac-aep-landing-pages.md)
    + [Campaign + Journey Optimizer](connect/ac-ajo.md)
    + [Campaign + Analytics](connect/ac-aa.md)
    + [Campaign + Experience Manager](connect/ac-aem.md)

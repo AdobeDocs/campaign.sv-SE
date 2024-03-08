@@ -1,20 +1,20 @@
 ---
-title: Kampanjlandningssidor och profilattribut
+title: Uppdatera Adobe Experience Platform-profiler från Adobe Campaign landningssidor
 description: Lär dig hur du synkroniserar Adobe Campaign landningssidor och Adobe Experience Platform-profilattribut
 feature: Experience Platform Integration
 role: Data Engineer
 level: Beginner
 exl-id: 565a1c8b-1930-4b43-bc11-ae517df077d6
-source-git-commit: a17c4325917ef1466bbb2c397aea55ebcf7fbcb5
+source-git-commit: ea37b72efd03afb212c060f809b6ba077b996701
 workflow-type: tm+mt
-source-wordcount: '1069'
+source-wordcount: '1031'
 ht-degree: 0%
 
 ---
 
-# Uppdatera Adobe Experience Platform-profiler från Adobe Campaign landningssidor
+# Uppdatera Adobe Experience Platform-profiler från Adobe Campaign landningssidor {#ac-aep-lp}
 
-Tack vare integreringen mellan Adobe Campaign och Adobe Experience Platform kan du synkronisera data sömlöst mellan Adobe Campaign landningssidor och Adobe Experience Platform. Med den här integreringen kan du
+Tack vare integreringen mellan Adobe Campaign och Adobe Experience Platform kan du synkronisera profildata sömlöst mellan Adobe Campaign landningssidor och Adobe Experience Platform. Med den här integreringen kan du
 
 * Hämta Adobe Experience Platform-profilattribut för att visa uppdaterad information på Adobe Campaign landningssidor,
 * Skicka tillbaka uppdaterade profilattribut till Adobe Experience Platform för att uppdatera motsvarande attribut baserat på vad som fyllts i och skickats in på landningssidorna.
@@ -40,9 +40,9 @@ Följ dessa steg för att göra detta:
 1. Skapa en ny API-anslutning med Adobe Experience Platform API-produkten. Detaljerade anvisningar om hur du får en OAuth 2.0-åtkomsttoken finns i [Adobe Developer Console-dokumentation](https://developer.adobe.com/developer-console/docs/guides/authentication/Tools/OAuthPlayground/).
 1. När anslutningen har skapats går du till **[!UICONTROL OAuth Server-to-Server]** meny och kopiera informationen nedan, som krävs i Campaign för autentisering:
 
-   * KLIENT-ID
-   * KLIENTSHEMLIGHET
-   * ORGANISATIONS-ID
+   * `CLIENT ID`
+   * `CLIENT SECRET`
+   * `ORGANISATIONS-ID
 
    ![](assets/ac-lp-oauth.png){width="70%"}
 
@@ -102,7 +102,7 @@ Om du vill konfigurera dessa alternativ automatiskt när du utför arbetsflödet
 
 När arbetsflödet körs skapas alternativen automatiskt i Campaign-konsolen med de angivna värdena.
 
-    &quot;
+    &quot;javascript
     loadLibrary(&quot;xtk:shared/nl.js&quot;);
     loadLibrary(&quot;xtk:shared/xtk.js&quot;);
     loadLibrary(&quot;xtk:shared/json2.js&quot;);
@@ -138,7 +138,7 @@ Om du vill tillåta datasynkronisering mellan landningssidor och Adobe Experienc
 
    Den här koden kontrollerar om profilen finns i Adobe Experience Platform innan landningssidan läses in. Profilattributen hämtas och visas i motsvarande fält på landningssidan.
 
-   ```
+   ```javascript
    // API implementation to read profile from AEP
    function getProfileInfo(email)
    {
@@ -161,7 +161,7 @@ Om du vill tillåta datasynkronisering mellan landningssidor och Adobe Experienc
 
    Den här koden uppdaterar profilattributen i Adobe Experience Platform med värdena som skickas på landningssidan.
 
-   ```
+   ```javascript
    // API implementation to update profile in AEP
    loadLibrary("xtk:shared/nl.js");
    loadLibrary("xtk:shared/xtk.js");
@@ -215,7 +215,7 @@ Med JavaScript-koderna i Adobe Campaign kan du använda dem i arbetsflödet på 
 
 +++ Skript 1 - Läs in profilattribut från Experience Platform
 
-  ```
+  ```javascript
   // Script code to read profile from AEP.
   
   logInfo("Loading profile from AEP");
@@ -255,7 +255,7 @@ Med JavaScript-koderna i Adobe Campaign kan du använda dem i arbetsflödet på 
 
 +++ Skript 2 - Uppdatera profilattribut för Experience Platform
 
-  ```
+  ```javascript
   // Script code to update profile in AEP and ACC.
   
   logInfo("Executing script to update AEP profile.");
