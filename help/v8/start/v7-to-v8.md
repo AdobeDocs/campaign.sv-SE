@@ -5,7 +5,7 @@ feature: Overview
 role: User
 level: Beginner
 exl-id: 00ba1c43-9558-4adb-83a1-6597c2bbca62
-source-git-commit: 84b90cbd150c81edc81f5cc653db6fbe96af80aa
+source-git-commit: 55c177b6931ef2c427c8e9793b463274b8abb015
 workflow-type: tm+mt
 source-wordcount: '714'
 ht-degree: 4%
@@ -40,7 +40,7 @@ Som tidigare [!DNL Campaign Classic] användare, observera att de flesta av [!DN
 >Den nya molnarkitekturen gör att Campaign kan effektivisera processer, minska kostnaderna, hantera risker och förbättra datasäkerheten. Din Campaign v8-miljö har ett dedikerat VPC (Virtual Private Cloud) som är förkonfigurerat för dig.
 
 
-## Hybrid-arkitektdäck {#hybrid-archi}
+## Hybridarkitektur {#hybrid-archi}
 
 Campaign v8 bygger på en **hybridarkitektur**. Om du går över från Campaign Classic v7 bör du tänka på att alla leveranser går via servern för mellanlagring.
 
