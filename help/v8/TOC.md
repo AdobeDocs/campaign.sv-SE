@@ -5,9 +5,9 @@ user-guide-description: Produktdokumentation för Adobe Campaign v8 (klientkonso
 title: Adobe Campaign v8-dokumentation
 description: Kampanjdokumentation v8
 breadcrumb-title: Dokumentation om Campaign v8
-source-git-commit: ea37b72efd03afb212c060f809b6ba077b996701
+source-git-commit: a779f243b0ba13dc3fcb7839377ca8766e5f7841
 workflow-type: tm+mt
-source-wordcount: '587'
+source-wordcount: '588'
 ht-degree: 16%
 
 ---
@@ -16,18 +16,18 @@ ht-degree: 16%
 # Adobe Campaign v8-dokumentation {#campaign-v8}
 
 + [Kampanjdokumentation v8](campaign-home.md)
-+ Releaser och senaste uppdateringar {#releases}
-   + [Dokumentationsuppdateringar](start/documentation-updates.md)
++ Versionsinformation {#releases}
    + [Tidig versionsinformation](start/e-release-notes.md)
    + [Versioner och uppgraderingar](start/upgrades.md)
-   + [Versionsinformation](start/release-notes.md)
+   + [Senaste versionen](start/release-notes.md)
    + Tidigare versionsinformation {#previous-rn}
-      + [2023](start/release-notes-2023.md)
-      + [2022](start/release-notes-2022.md)
-      + [2021](start/release-notes-2021.md)
+      + [2023 års utgåvor](start/release-notes-2023.md)
+      + [2022-versioner](start/release-notes-2022.md)
+      + [2021-versioner](start/release-notes-2021.md)
    + [Guardrails](start/ac-guardrails.md)
    + [Kända fel](start/known-issues.md)
    + [Kompatibilitetsmatris](start/compatibility-matrix.md)
+   + [Dokumentationsuppdateringar](start/documentation-updates.md)
 + Kom igång {#new}
    + [Kom igång med Adobe Campaign](start/get-started.md)
    + [Viktiga funktioner](start/whats-new.md)

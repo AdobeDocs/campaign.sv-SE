@@ -5,10 +5,10 @@ feature: Release Notes
 role: Admin
 level: Beginner
 exl-id: 4be3a6dc-0c61-4534-b9dd-6c99c8a037a9
-source-git-commit: 374c0df2cd95e656cfbaa1fb355bf1f48828dfee
+source-git-commit: a779f243b0ba13dc3fcb7839377ca8766e5f7841
 workflow-type: tm+mt
-source-wordcount: '360'
-ht-degree: 22%
+source-wordcount: '406'
+ht-degree: 16%
 
 ---
 
@@ -26,14 +26,13 @@ Eftersom vissa versioner av dessa system och verktyg från tredje part når slut
 
 Följande operativsystem och webbläsare krävs för att använda Campaign-klientkonsolen. [Läs mer](connect.md).
 
-### Operativsystem{#op-systems}
+### Operativsystem {#op-systems}
 
 * **Microsoft Windows Server** 2019, 2016
 * **Microsoft Windows** 11, 10
 
 >[!NOTE]
->
->Observera att 32-bitarsversionen av klientkonsolen är inaktuell sedan version 8.5. Från och med 8.6 är klientkonsolen endast tillgänglig med 64 bitar. Mer information om hur du uppgraderar systemet finns i [technote](../../technotes/upgrades/console.md).
+>32-bitarsversionen av klientkonsolen har tagits bort sedan version 8.5. Från och med 8.6 är klientkonsolen endast tillgänglig med 64 bitar. Mer information om hur du uppgraderar systemet finns i [technote](../../technotes/upgrades/console.md).
 
 ### Webbläsare {#web-browsers}
 
@@ -43,14 +42,14 @@ Följande operativsystem och webbläsare krävs för att använda Campaign-klien
 
 ## CRM-kopplingar {#CRMconnectors}
 
-CRM (Customer Relationship Management)-system som är kompatibla med Adobe Campaign listas nedan. [Läs mer](../connect/crm.md).
+CRM (Customer Relationship Management)-system som är kompatibla med Adobe Campaign listas nedan. Läs mer om CRM-anslutningar [på den här sidan](../connect/crm.md).
 
 * **Salesforce** API-version 49 för anslutning
 * **Microsoft Dynamics** koppling, webb-API: Dynamics 365 lokalt och online
 
 ## Federerad dataåtkomst (FDA){#FederatedDataAccessFDA}
 
-Externa databaser som är kompatibla med Adobe Campaign FDA-modulen (Federated Data Access) listas nedan. [Läs mer](../connect/fda.md).
+Externa databaser som är kompatibla med Adobe Campaign FDA-modulen (Federated Data Access) listas nedan. Läs mer om FDA [på den här sidan](../connect/fda.md).
 
 * **[!DNL Amazon Redshift]**
 * **[!DNL Azure Synapse]**, med start av Campaign v8.5
@@ -62,14 +61,19 @@ Externa databaser som är kompatibla med Adobe Campaign FDA-modulen (Federated D
 
 Skicka [push-meddelanden](../send/push.md) Med Campaign kan du använda Adobe Experience Platform Mobile SDK genom att konfigurera Adobe Campaign Classic-tillägget i användargränssnittet för datainsamling.
 
-Kompatibla versioner för iOS och Android finns i [Adobe Developer-dokumentation](https://developer.adobe.com/client-sdks/home/)
+Kompatibla versioner för iOS och Android finns i [Adobe Developer-dokumentation](https://developer.adobe.com/client-sdks/home/){target="_blank"}.
+
+## Webbgränssnitt {#web-ui}
+
+Följande webbläsare är kompatibla med Campaign Web User Interface. Läs mer om Campaign Web UI [på den här sidan](campaign-ui.md#ac-web-ui).
+
+* **Microsoft Edge**, **Google Chrome**, **Safari** (senaste versionerna)
 
 ## Webbåtkomst {#web-access}
 
-Följande webbläsare är kompatibla med Campaign för [Web Access](connect.md#web-access).
+Följande webbläsare är kompatibla med Campaign for Web Access. Läs mer om Campaign Web-åtkomst [på den här sidan](connect.md#web-access).
 
 * **Microsoft Edge**, **Mozilla Firefox**, **Google Chrome**, **Safari** (senaste versionerna)
-
 
 ## Ytterligare resurser {#support}
 

@@ -4,7 +4,8 @@ description: Läs mer om Campaign-versioner och uppgraderingar
 feature: Release Notes
 role: User
 level: Beginner
-source-git-commit: 43994eb29af2b85272de0ce4dc34cc66aba2e04a
+exl-id: 04bda36f-051f-41a3-84b3-6af3c5e34ab2
+source-git-commit: a779f243b0ba13dc3fcb7839377ca8766e5f7841
 workflow-type: tm+mt
 source-wordcount: '656'
 ht-degree: 10%
@@ -81,8 +82,3 @@ Normalt innebär en uppgradering till den senaste versionen följande:
 Om ditt konto har identifierats som en v8-kund som behöver uppgradera till en ny version meddelar Adobe dig direkt.
 
 Adobe-teamet är här för att leda och vägleda organisationen genom den här resan. Vi har organiserat ett team med dedikerade kundtjänstrepresentanter, produktchefer, ingenjörer och TechOps-specialister samt produktkonsulter för att hjälpa till och säkerställa att upplevelsen är smidig.
-
-
-
-
-

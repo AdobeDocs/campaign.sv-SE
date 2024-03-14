@@ -5,9 +5,9 @@ feature: Client Console
 role: User
 level: Beginner
 exl-id: 176cc4f0-8827-4127-9f03-7d75ac8cf917
-source-git-commit: 9df599ec0a898a1af16cb92d334d50375fde86ba
+source-git-commit: a779f243b0ba13dc3fcb7839377ca8766e5f7841
 workflow-type: tm+mt
-source-wordcount: '850'
+source-wordcount: '937'
 ht-degree: 2%
 
 ---
@@ -117,7 +117,17 @@ Som kampanjadministratör ansvarar du för att skapa operatorerna och dela deras
 Läs mer om användare och hur du definierar deras behörigheter i [det här avsnittet](gs-permissions.md).
 
 
-## Webbåtkomst{#web-access}
+## Öppna Campaign med en webbläsare {#connect-web-ac}
+
+### Webbgränssnitt {#connect-web-ui}
+
+Från och med Campaign v8.6 har du tillgång till den nya **Kampanjwebbgränssnitt** som finns i Adobe Experience Cloud centrala miljö. Experience Cloud är en integrerad familj av program, produkter och tjänster för digital marknadsföring i Adobe. Från det intuitiva gränssnittet får du snabbt tillgång till dina molnprogram, produktfunktioner och tjänster.
+
+Lär dig ansluta till Adobe Experience Cloud och få tillgång till Adobe Campaign webbgränssnitt [på den här sidan](campaign-ui.md#ac-web-ui).
+
+Läs mer i [Dokumentation för Adobe Campaign webbgränssnitt](https://experienceleague.adobe.com/en/docs/campaign-web/v8/campaign-web-home){target="_blank"}.
+
+### webbåtkomst {#web-access}
 
 Vissa delar av programmet kan nås via en webbläsare via ett HTML-användargränssnitt: rapportering, leveransgodkännande, instansövervakning med mera.
 
