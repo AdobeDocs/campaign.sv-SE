@@ -8,14 +8,14 @@ level: Experienced
 badge-v7: label="v7" type="Informative" tooltip="Gäller även Campaign Classic v7"
 badge-v8: label="v8" type="Positive" tooltip="Gäller Campaign v8"
 exl-id: 45ac6f8f-eb2a-4599-a930-1c1fcaa3095b
-source-git-commit: 550e3cbd064ae7831855377f1d08d6acecd55c9e
+source-git-commit: c81744fdf4a4fc47820c077f69288a0ea66fa5e4
 workflow-type: tm+mt
-source-wordcount: '1353'
+source-wordcount: '1352'
 ht-degree: 1%
 
 ---
 
-# Kommande ändringar i push-meddelandekanalen {#push-upgrade}
+# Push Notification Channel-ändringar {#push-upgrade}
 
 Du kan använda Campaign för att skicka push-meddelanden på iOS- och Android-enheter. För att kunna göra detta förlitar sig Campaign på prenumerationstjänster för mobilappar.
 
