@@ -8,9 +8,9 @@ level: Experienced
 badge-v7: label="v7" type="Informative" tooltip="Gäller även Campaign Classic v7"
 badge-v8: label="v8" type="Positive" tooltip="Gäller Campaign v8"
 exl-id: 45ac6f8f-eb2a-4599-a930-1c1fcaa3095b
-source-git-commit: a494ac834b1febcafe04f4bb05eb74834df7b024
+source-git-commit: a280e560a6e84f5afa214daaded9ac5331018d7c
 workflow-type: tm+mt
-source-wordcount: '1352'
+source-wordcount: '1357'
 ht-degree: 1%
 
 ---
@@ -136,7 +136,7 @@ Om du vill kontrollera om du påverkas kan du filtrera **Tjänster och prenumera
 ![](assets/filter-services-ios.png)
 
 
-* Om någon av dina aktiva push-meddelandetjänster använder **Certifikatbaserad autentisering** läge bör dina nuvarande implementeringar granskas och flyttas till en **Tokenbaserad autentisering** läge enligt beskrivningen nedan.
+* Om någon av dina aktiva push-meddelandetjänster använder **Certifikatbaserad autentisering** (.p12) bör dina nuvarande implementeringar granskas och flyttas till en **Tokenbaserad autentisering** läge (.p8) enligt beskrivningen nedan.
 
 * Om din installation endast använder **Tokenbaserad autentisering** för push-meddelanden från iOS är implementeringen redan uppdaterad och ingen ytterligare åtgärd krävs från din sida.
 
@@ -157,9 +157,9 @@ Om du vill kontrollera om du påverkas kan du filtrera **Tjänster och prenumera
 Så här flyttar du dina iOS-mobilprogram till det tokenbaserade autentiseringsläget:
 
 1. Bläddra till din lista över **Tjänster och prenumerationer**.
-1. Lista alla mobilprogram som använder **Certifikatbaserad autentisering** läge.
+1. Lista alla mobilprogram som använder **Certifikatbaserad autentisering** mode (.p12).
 1. Redigera vart och ett av dessa mobilprogram och gå till **Certifikat/privat nyckel** -fliken.
-1. Från **Autentiseringsläge** nedrullningsbar meny, välja **Tokenbaserad autentisering**.
+1. Från **Autentiseringsläge** nedrullningsbar meny, välja **Tokenbaserad autentisering** mode (.p8).
 1. Fyll i APN-anslutningsinställningarna **[!UICONTROL Key Id]**, **[!UICONTROL Team Id]** och **[!UICONTROL Bundle Id]** välj sedan ditt p8-certifikat genom att klicka på **[!UICONTROL Enter the private key...]**.
 
    ![](assets/token-based-certif.png)
