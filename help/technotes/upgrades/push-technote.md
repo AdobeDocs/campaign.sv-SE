@@ -8,7 +8,7 @@ level: Experienced
 badge-v7: label="v7" type="Informative" tooltip="Gäller även Campaign Classic v7"
 badge-v8: label="v8" type="Positive" tooltip="Gäller Campaign v8"
 exl-id: 45ac6f8f-eb2a-4599-a930-1c1fcaa3095b
-source-git-commit: c81744fdf4a4fc47820c077f69288a0ea66fa5e4
+source-git-commit: a494ac834b1febcafe04f4bb05eb74834df7b024
 workflow-type: tm+mt
 source-wordcount: '1352'
 ht-degree: 1%
@@ -33,32 +33,32 @@ Adobe Campaign Classic v7 och Adobe Campaign v8 har redan stöd för de senaste 
 
 ### Påverkas du? {#fcm-impact}
 
-Om din nuvarande implementering stöder prenumerationstjänster som ansluter till FCM med de äldre API:erna påverkas du. Migrering till de senaste API:erna är obligatoriskt för att undvika eventuella störningar i tjänsten. I så fall kommer Adobe-teamen att kontakta dig.
+Om din nuvarande implementering stöder prenumerationstjänster som ansluter till FCM med de äldre API:erna påverkas du. Övergång till de senaste API:erna är obligatoriskt för att undvika att tjänster störs. I så fall kommer Adobe-teamen att kontakta dig.
 
 Om du vill kontrollera om du påverkas kan du filtrera **Tjänster och prenumerationer** enligt filtret nedan:
 
 ![](assets/filter-services-fcm.png)
 
 
-* Om någon av dina aktiva push-meddelandetjänster använder **HTTP (äldre)** API, din konfiguration påverkas direkt av den här ändringen. Du måste granska dina aktuella konfigurationer och migrera till de nyare API:erna enligt beskrivningen nedan.
+* Om någon av dina aktiva push-meddelandetjänster använder **HTTP (äldre)** API, din konfiguration påverkas direkt av den här ändringen. Du måste granska dina aktuella konfigurationer och gå över till de nyare API:erna som beskrivs nedan.
 
 * Om din installation endast använder **HTTP v1** API för push-meddelanden för Android är du redan kompatibel och ingen ytterligare åtgärd krävs från din sida.
 
-### Hur migrerar jag? {#fcm-migration-procedure}
+### Hur uppdaterar jag? {#fcm-transition-procedure}
 
-#### Förhandskrav {#fcm-migration-prerequisites}
+#### Förhandskrav {#fcm-transition-prerequisites}
 
-* För Campaign Classic v7 har stöd för HTTP v1 lagts till i version 20.3.1. Om miljön körs på en äldre version är en förutsättning för migreringen till HTTP v1 att du uppgraderar miljön till [senaste Campaign Classicen](https://experienceleague.adobe.com/docs/campaign-classic/using/release-notes/latest-release.html){target="_blank"}. För Campaign v8 stöds HTTP v1 av alla versioner och ingen uppgradering behövs.
+* För Campaign Classic v7 har stöd för HTTP v1 lagts till i version 20.3.1. Om miljön körs på en äldre version är en förutsättning för övergången till HTTP v1 att du uppgraderar miljön till [senaste Campaign Classicen](https://experienceleague.adobe.com/docs/campaign-classic/using/release-notes/latest-release.html){target="_blank"}. För Campaign v8 stöds HTTP v1 av alla versioner och ingen uppgradering behövs.
 
 * JSON-filen för kontot för Android-administratören för SDK-tjänsten behövs för att mobilprogrammet ska kunna flyttas till HTTP v1. Lär dig hur du hämtar den här filen i [Google Firebase-dokumentation](https://firebase.google.com/docs/admin/setup#initialize-sdk){target="_blank"}.
 
-* För Hybrid-, Hosted- och Managed Services-distributioner ska du, utöver migreringsproceduren nedan, kontakta Adobe för att uppdatera körningsservern för realtid (RT). Servern för MID-Source påverkas inte.
+* För Hybrid-, Hosted- och Managed Services-distributioner ska du, utöver övergångsproceduren nedan, kontakta Adobe för att uppdatera körningsservern för realtid (RT). Servern för MID-Source påverkas inte.
 
 * Som Campaign Classic v7-användare på plats måste ni uppgradera både marknadsförings- och Real-Time Execution-servrarna. Servern för MID-Source påverkas inte.
 
-#### Migreringsprocedur {#fcm-migration-steps}
+#### Övergångsförfarande {#fcm-transition-steps}
 
-Så här migrerar du miljön till HTTP v1:
+Så här flyttar du miljön till HTTP v1:
 
 1. Bläddra till din lista över **Tjänster och prenumerationer**.
 1. Lista alla mobilprogram som använder **HTTP (äldre)** API-version.
@@ -129,7 +129,7 @@ Adobe Campaign Classic v7 och Adobe Campaign v8 har stöd för både tokenbasera
 
 ### Påverkas du? {#ios-impact}
 
-Om den aktuella implementeringen är beroende av certifikatbaserade begäranden om att ansluta till APN:er, påverkas du. Migrering till en tokenbaserad anslutning rekommenderas.
+Om den aktuella implementeringen är beroende av certifikatbaserade begäranden om att ansluta till APN:er, påverkas du. Övergång till en tokenbaserad anslutning rekommenderas.
 
 Om du vill kontrollera om du påverkas kan du filtrera **Tjänster och prenumerationer** enligt filtret nedan:
 
@@ -140,21 +140,21 @@ Om du vill kontrollera om du påverkas kan du filtrera **Tjänster och prenumera
 
 * Om din installation endast använder **Tokenbaserad autentisering** för push-meddelanden från iOS är implementeringen redan uppdaterad och ingen ytterligare åtgärd krävs från din sida.
 
-### Hur migrerar jag? {#ios-migration-procedure}
+### Hur uppdaterar jag? {#ios-transition-procedure}
 
-#### Förhandskrav {#ios-migration-prerequisites}
+#### Förhandskrav {#ios-transition-prerequisites}
 
 * För Campaign Classic v7 har **Tokenbaserad autentisering** Läget har lagts till i version 20.2. Om miljön körs på en äldre version är en förutsättning för den här ändringen att du uppgraderar miljön till [senaste Campaign Classicen](https://experienceleague.adobe.com/docs/campaign-classic/using/release-notes/latest-release.html){target="_blank"}. För Campaign v8, **Tokenbaserad autentisering** läge stöds av alla versioner och ingen uppgradering behövs.
 
 * Du behöver en signeringsnyckel för APN:s autentiseringstoken för att generera de tokens som servern använder. Du begär den här nyckeln från ditt Apple-utvecklarkonto, vilket förklaras i [Dokumentation för Apple Developer](https://developer.apple.com/documentation/usernotifications/establishing-a-token-based-connection-to-apns){target="_blank"}.
 
-* För Hybrid-, Hosted- och Managed Services-distributioner ska du, utöver migreringsproceduren nedan, kontakta Adobe för att uppdatera körningsservern för realtid (RT). Servern för MID-Source påverkas inte.
+* För Hybrid-, Hosted- och Managed Services-distributioner ska du, utöver övergångsproceduren nedan, kontakta Adobe för att uppdatera körningsservern för realtid (RT). Servern för MID-Source påverkas inte.
 
 * Som Campaign Classic v7-användare på plats måste ni uppgradera både marknadsförings- och Real-Time Execution-servrarna. Servern för MID-Source påverkas inte.
 
-#### Migreringsprocedur {#ios-migration-steps}
+#### Övergångsförfarande {#ios-transition-steps}
 
-Så här migrerar du dina iOS-mobilprogram till det tokenbaserade autentiseringsläget:
+Så här flyttar du dina iOS-mobilprogram till det tokenbaserade autentiseringsläget:
 
 1. Bläddra till din lista över **Tjänster och prenumerationer**.
 1. Lista alla mobilprogram som använder **Certifikatbaserad autentisering** läge.
