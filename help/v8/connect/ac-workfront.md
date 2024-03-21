@@ -3,7 +3,8 @@ title: Arbeta med Adobe Campaign och Adobe Workfront
 description: Lär dig arbeta med Campaign och Adobe Workfront
 role: Admin, User
 level: Beginner
-source-git-commit: 00f720fb4d7a5c4415afbe19b453f463f740c63d
+exl-id: 09a80d45-e600-4ebe-89a0-1ca9f7651ac9
+source-git-commit: 061197048885a30249bd18af7f8b24cb71def742
 workflow-type: tm+mt
 source-wordcount: '102'
 ht-degree: 0%
@@ -18,7 +19,4 @@ Snabba upp kampanjleveransen genom att para ihop Campaign med Adobe Workfront. G
 Hur du konfigurerar den här integreringen beskrivs i Adobe Workfront-dokumentationen.
 
 
-![](../assets/do-not-localize/book.png) [Adobe Campaign-moduler i Adobe Workfront](https://experienceleague.adobe.com/docs/workfront/using/adobe-workfront-fusion/fusion-apps-and-modules/adobe-campaign-classic-connector.html){target="_blank"}.
-
-
-
+[Adobe Campaign-moduler i Adobe Workfront](https://experienceleague.adobe.com/docs/workfront/using/adobe-workfront-fusion/fusion-apps-and-modules/adobe-campaign-classic-connector.html){target="_blank"}.

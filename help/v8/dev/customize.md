@@ -5,10 +5,10 @@ feature: Configuration, Application Settings
 role: Developer
 level: Intermediate, Experienced
 exl-id: 18000763-5923-48bd-b62d-cccd3c11016d
-source-git-commit: f577ee6d303bab9bb07350b60cf0fa6fc9d3a163
+source-git-commit: 061197048885a30249bd18af7f8b24cb71def742
 workflow-type: tm+mt
-source-wordcount: '483'
-ht-degree: 7%
+source-wordcount: '451'
+ht-degree: 0%
 
 ---
 
@@ -24,9 +24,9 @@ Lär dig hur **Anpassa Campaign-instansen**.
 
 Adobe Campaign använder datascheman för att
 
-* Definiera hur dataobjekt i programmet länkas till underliggande databastabeller
-* Definiera länkar mellan olika dataobjekt i programmet Campaign
-* Definiera och beskriva de enskilda fälten som ingår i varje objekt
+* Definiera hur dataobjekt i programmet kopplas till underliggande databastabeller
+* Definiera länkar mellan olika dataobjekt i Campaign-programmet
+* Definiera och beskriv de enskilda fälten som ingår i varje objekt
 
 Om du till exempel vill lägga till ett fält i en befintlig tabell, som mottagartabellen (nms:mottagare), måste du utöka det schemat.
 
@@ -44,9 +44,9 @@ Om du vill lägga till en helt ny typ av data som inte finns i körklart läge i
 
 **Relaterade ämnen**
 
-![](../assets/do-not-localize/book.png) Exempel på schemautgåva i [Campaign Classic v7 - dokumentation](https://experienceleague.adobe.com/docs/campaign-classic/using/configuring-campaign-classic/editing-schemas/examples-of-schemas-edition.html#configuring-campaign-classic){target="_blank"}
+Exempel på schemautgåva i [Campaign Classic v7 - dokumentation](https://experienceleague.adobe.com/docs/campaign-classic/using/configuring-campaign-classic/editing-schemas/examples-of-schemas-edition.html#configuring-campaign-classic){target="_blank"}
 
-![](../assets/do-not-localize/book.png) Använd skiftläge: länka ett fält till en befintlig referenstabell i [Campaign Classic v7 - dokumentation](https://experienceleague.adobe.com/docs/campaign-classic/using/configuring-campaign-classic/editing-schemas/examples-of-schemas-edition.html#uc-link){target="_blank"}
+Använd skiftläge: länka ett fält till en befintlig referenstabell i [Campaign Classic v7 - dokumentation](https://experienceleague.adobe.com/docs/campaign-classic/using/configuring-campaign-classic/editing-schemas/examples-of-schemas-edition.html#uc-link){target="_blank"}
 
 
 ## Ändra indataformulären

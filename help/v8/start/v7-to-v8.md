@@ -5,7 +5,7 @@ feature: Overview
 role: User
 level: Beginner
 exl-id: 00ba1c43-9558-4adb-83a1-6597c2bbca62
-source-git-commit: 55c177b6931ef2c427c8e9793b463274b8abb015
+source-git-commit: 061197048885a30249bd18af7f8b24cb71def742
 workflow-type: tm+mt
 source-wordcount: '714'
 ht-degree: 4%
@@ -27,7 +27,7 @@ Som tidigare [!DNL Campaign Classic] v7-användare, du bör inte förvänta dig 
 
 Adobe Campaign v8 finns som **Hanterad Cloud Service**.
 
-Adobe Campaign Managed Cloud Services har en plattform för hanterade Cloud Service för att utforma kundupplevelser i flera kanaler och erbjuder en miljö för visuell kampanjsamordning, interaktionshantering i realtid och kanalövergripande körning. Läs mer om Campaign Managed-Cloud Service i [produktbeskrivningssida](https://helpx.adobe.com/legal/product-descriptions/adobe-campaign-managed-cloud-services.html){target="_blank"}.
+Adobe Campaign Managed Cloud Services har en plattform för hanterade Cloud Service för att utforma kundupplevelser i flera kanaler och erbjuder en miljö för visuell kampanjsamordning, interaktionshantering i realtid och kanalövergripande körning. Läs mer om Campaign Managed-Cloud Service i [produktbeskrivningssida](https://helpx.adobe.com/se/legal/product-descriptions/adobe-campaign-managed-cloud-services.html){target="_blank"}.
 
 Det nya erbjudandet kombinerar förstklassiga tjänster med proaktiv tillsyn och snabb varning, med fokus på tre områden:
 
@@ -50,7 +50,7 @@ Följden är att
 * Status för leveranserna uppdateras inte direkt - en teknisk process körs på Marketing-instansen som uppdaterar leveransstatus i tid.
 
 
-![](../assets/do-not-localize/glass.png) Läs mer om hur du skickar korrektur för transaktionsmeddelanden vid övergång från v7 på [den här sidan](../send/transactional-template.md#transition-from-v7).
+Läs mer om hur du skickar korrektur för transaktionsmeddelanden vid övergång från v7 på [den här sidan](../send/transactional-template.md#transition-from-v7).
 
 
 ## [!DNL Campaign] och [!DNL Snowflake] {#ac-gs-snowflake}
@@ -59,14 +59,14 @@ I [Företagsdistribution (FFDA)](../architecture/enterprise-deployment.md), [!DN
 
 Campaign v8 Enterprise innehåller konceptet **Fullständig federerad dataåtkomst** (FFDA): alla data är nu fjärranslutna till molndatabasen. Med den här nya arkitekturen förenklar driftsättningen av Campaign v8 Enterprise (FFDA) datahanteringen: inget index krävs för molndatabasen. Du behöver bara skapa tabellerna, kopiera data så kan du börja. Cloud-databastekniken kräver inget specifikt underhåll för att garantera prestandanivån.
 
-![](../assets/do-not-localize/glass.png) Läs mer om [!DNL Campaign] v8-arkitektur i [den här sidan](../architecture/architecture.md).
+Läs mer om [!DNL Campaign] v8-arkitektur i [den här sidan](../architecture/architecture.md).
 
 
 ## Använd din Adobe ID för att ansluta till Campaign{#adobe-id}
 
 Kampanjanvändare ansluter bara via sina Adobe ID. Samma Adobe ID används för att behålla alla dina Adobe-planer och produkter som är kopplade till ett enda konto för alla Adobe Experience Cloud-lösningar.
 
-![](../assets/do-not-localize/glass.png) Lär dig hur du ansluter till [!DNL Campaign] in [den här sidan](connect.md).
+Lär dig hur du ansluter till [!DNL Campaign] in [den här sidan](connect.md).
 
 ## Analysera data med kuber{#adobe-reporting}
 

@@ -5,10 +5,10 @@ feature: Control Panel, Monitoring
 role: Admin
 level: Beginner
 exl-id: b8aa89ac-19f4-4df3-9f36-860aca61bea3
-source-git-commit: 561e4b6d2c99e98e068132c80c2bebb756b60a44
+source-git-commit: 061197048885a30249bd18af7f8b24cb71def742
 workflow-type: tm+mt
-source-wordcount: '379'
-ht-degree: 61%
+source-wordcount: '307'
+ht-degree: 44%
 
 ---
 
@@ -24,7 +24,7 @@ Viktiga fördelar:
 
 Du kan också använda Campaign-kontrollpanelen för att konfigurera instansinställningar som IP-tillåt-listor, URL-behörigheter och hämta information om instansen.
 
-![](../assets/do-not-localize/book.png) Läs mer i [Dokumentation för Campaign Control Panel](https://experienceleague.adobe.com/docs/control-panel/using/control-panel-home.html?lang=sv){target="_blank"}.
+Läs mer i [Dokumentation för Campaign Control Panel](https://experienceleague.adobe.com/docs/control-panel/using/control-panel-home.html?lang=sv){target="_blank"}.
 
 ## Hur kommer jag åt Kontrollpanelen? {#ac-control-panel-access}
 
@@ -32,7 +32,7 @@ Kontrollpanelen är tillgänglig direkt från Adobe Experience Cloud. Den är en
 
 ## Vanliga frågor och svar om Kontrollpanelen {#ac-control-faq}
 
-[Klicka här](https://experienceleague.adobe.com/docs/control-panel/using/faq.html#control-panel){target="_blank"} för att läsa vanliga frågor och svar om Kontrollpanelen i Campaign.
+[Klicka här](https://experienceleague.adobe.com/docs/control-panel/using/faq.html#control-panel){target="_blank"} för att få tillgång till Frågor och svar om Campaign Control Panel.
 
 ## SFTP-hantering {#ac-control-sftp}
 
@@ -40,9 +40,9 @@ På Kontrollpanelen kan du interagera med alla SFTP-servrar som är anslutna til
 
 ## Underdomäner och certifikat {#ac-control-subdomain}
 
-Läs om hur man övervakar underdomäner och deras certifikat.
+Lär dig övervaka dina underdomäner och deras certifikat.
 
-* [Övervaka underdomäner](https://experienceleague.adobe.com/docs/control-panel/using/subdomains-and-certificates/monitoring-subdomains.html){target="_blank"}
+* [Övervaka dina underdomäner](https://experienceleague.adobe.com/docs/control-panel/using/subdomains-and-certificates/monitoring-subdomains.html){target="_blank"}
 * [Konfigurera en ny underdomän](https://experienceleague.adobe.com/docs/control-panel/using/subdomains-and-certificates/setting-up-new-subdomain.html?lang=sv){target="_blank"}
 * [Övervaka dina underdomäners SSL-certifikat](https://experienceleague.adobe.com/docs/control-panel/using/subdomains-and-certificates/monitoring-ssl-certificates.html?lang=sv){target="_blank"}
 
@@ -57,4 +57,4 @@ Lär dig hur du hanterar inställningarna för Campaign-instanser på Kontrollpa
 * [IP på tillåtelselista](https://experienceleague.adobe.com/docs/control-panel/using/instances-settings/ip-allow-listing-instance-access.html){target="_blank"}
 * [URL-behörigheter](https://experienceleague.adobe.com/docs/control-panel/using/instances-settings/url-permissions.html?lang=sv){target="_blank"}
 * [Instansinformation](https://experienceleague.adobe.com/docs/control-panel/using/instances-settings/instance-details.html){target="_blank"}
-* [Hantera GPG-nycklar](https://experienceleague.adobe.com/docs/control-panel/using/instances-settings/gpg-keys-management.html?lang=sv){target="_blank"}
+* [Hantering av GPG-nycklar](https://experienceleague.adobe.com/docs/control-panel/using/instances-settings/gpg-keys-management.html?lang=sv){target="_blank"}

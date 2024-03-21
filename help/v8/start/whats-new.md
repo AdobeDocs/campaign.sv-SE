@@ -5,10 +5,10 @@ feature: Overview
 role: User
 level: Beginner
 exl-id: 7771a02c-ebd4-48b6-b25e-6b6e420ad493
-source-git-commit: 55324243c70f2bbdace4acac233d1dd470562414
+source-git-commit: 061197048885a30249bd18af7f8b24cb71def742
 workflow-type: tm+mt
 source-wordcount: '1028'
-ht-degree: 1%
+ht-degree: 2%
 
 ---
 
@@ -28,7 +28,7 @@ Förbättra hastighet och skala för alla delar av era marknadsföringskampanjer
 
 Adobe Campaign gör det enkelt för er att synkronisera era era kanaler med ett enda lättanvänt gränssnitt för kampanjsamordning. Så era onlinekanaler - som e-post, webben, mobiler och sociala kanaler - matchar era offlinekanaler, inklusive direktreklam, callcenter, butiker och så vidare. Det ger er möjlighet att ge era kunder en enhetlig och sammanhangsberoende upplevelse i både digitala och traditionella kanaler. Adobe Campaign gör det enkelt att leverera innehåll till alla vägar kunderna kan ta - i alla kanaler.
 
-![](../assets/do-not-localize/glass.png) [Läs mer om Campaign-arbetsflöden](../config/workflows.md)
+[Läs mer om Campaign-arbetsflöden](../config/workflows.md)
 
 ### Personlig e-postmarknadsföring {#perso-email-mkt}
 
@@ -36,7 +36,7 @@ Skapa personaliserade och sammanhangsberoende e-postmeddelanden som överensstä
 
 Med Adobe Campaign kan ni göra era e-postmeddelanden bättre, mer personaliserade och mer lönsamma. E-postmeddelanden är enkla att skapa och enkla att leverera. Campaign v8 ger er flexibilitet att utforma, personalisera, testa, förfina och förbättra alla meddelanden ni skickar.
 
-![](../assets/do-not-localize/glass.png) [Läs mer om personaliseringsfunktioner](create-message.md)
+[Läs mer om personaliseringsfunktioner](create-message.md)
 
 ### Kunddatahantering {#customer-data-mgt}
 
@@ -44,7 +44,7 @@ Se hela bilden av era kunder så att ni snabbt kan skapa personaliserade kampanj
 
 Adobe Campaign hjälper er att skapa kundprofiler utifrån data som samlats in i alla era kanaler. Med den här profilen kan ni samordna kampanjer i alla kanaler. Genom att koppla samman alla era marknadsföringskanaler kan ni anpassa den resa varje kund ska ta på det sätt som passar dem bäst.
 
-![](../assets/do-not-localize/glass.png) [Läs mer om hantering av kunddata](audiences.md)
+[Läs mer om hantering av kunddata](audiences.md)
 
 ### Kampanjhantering i toppklass {#best-in-campaign-mgt}
 
@@ -52,7 +52,7 @@ Adobe Campaign v8 ger marknadsförarna förstklassiga funktioner för att planer
 
 Funktionerna inkluderar en integrerad profil som ger en samlad bild av kunden. Datahantering och segmentering för att bygga upp målgrupper i stor skala. Hantering av flerkanaliga arbetsflöden för automatisering av kampanjer i flera kanaler och flervågor. Integrerad e-post som minskar beroendet av kostsamma ESP. Rapportering och analys för att förstå kundbeteende och kampanjresultat.
 
-![](../assets/do-not-localize/glass.png) [Läs mer om kampanjhantering](campaigns.md)
+[Läs mer om kampanjhantering](campaigns.md)
 
 
 ### Anslutningar till Adobe Experience Platform {#connection-to-aep}
@@ -63,7 +63,7 @@ Dessutom är Adobe Campaign v8 integrerat med realtidsfunktionerna för resesamo
 
 Ni kan också konfigurera prediktiv optimering av sändningstiden och prediktiv poängsättning med Journey AI samt öka antalet öppna samtal, antalet klick och intäkterna.
 
-![](../assets/do-not-localize/glass.png) [Läs mer om Campaign-integreringar](../connect/integration.md)
+[Läs mer om Campaign-integreringar](../connect/integration.md)
 
 
 ### Hanterade Cloud Service {#acms-desc}
@@ -90,7 +90,7 @@ Adobe Campaign kan nu utnyttja molnbaserade databastekniker för att dramatiskt 
 
 [Campaign v8 Enterprise](../architecture/enterprise-deployment.md) ger begreppet **Fullständig federerad dataåtkomst** (FFDA): alla data är nu fjärranslutna till molndatabasen. Med det här nya erbjudandet förenklar Campaign v8 datahanteringen: inget index krävs i molndatabasen. Du behöver bara skapa tabellerna, kopiera data så kan du börja. [!DNL Snowflake] är Campaign Cloud-databasen, vilket ger er snabbhet och uthållighet: ingen överbelastning av systemaktivitetens toppar. Cloud-databastekniken kräver inget specifikt underhåll för att garantera prestandanivån.
 
-![](../assets/do-not-localize/glass.png) [Läs mer om företagsdistribution (FFDA)](../architecture/enterprise-deployment.md)
+[Läs mer om företagsdistribution (FFDA)](../architecture/enterprise-deployment.md)
 
 
 ## Självbetjäningsadministratörsgränssnitt{#self-service-admin}
@@ -105,6 +105,6 @@ Via ett intuitivt användargränssnitt kan administratörer övervaka användnin
 
 ![](assets/subdomain1.png)
 
-![](../assets/do-not-localize/glass.png) [Läs mer om Campaign Control Panel](https://experienceleague.adobe.com/docs/control-panel/using/discover-control-panel/key-features.html){target="_blank"}
+[Läs mer om Campaign Control Panel](https://experienceleague.adobe.com/docs/control-panel/using/discover-control-panel/key-features.html?lang=sv){target="_blank"}
 
 

@@ -4,7 +4,8 @@ description: Lär dig hur du bläddrar i och använder användargränssnittet i 
 feature: Overview
 role: User
 level: Beginner
-source-git-commit: 9ad8158f280acae2c2d10161f8ac6157398b9e3d
+exl-id: a7846b95-7570-4dce-b3f4-d3cc23eefcac
+source-git-commit: 061197048885a30249bd18af7f8b24cb71def742
 workflow-type: tm+mt
 source-wordcount: '1003'
 ht-degree: 1%
@@ -83,7 +84,7 @@ You can also access a subset of Campaign capabilities through the a web browser.
 
 The web access interface is similar to the console interface. From a browser, you can use the same navigation and display features as in the console, but you can perform only a reduced set of actions on campaigns. For example, you can view and cancel campaigns, but you cannot modify campaigns. 
 
-![](../assets/do-not-localize/glass.png) [Learn more about Campaign web access](../start/connect.md#web-access).-->
+[Learn more about Campaign web access](../start/connect.md#web-access).-->
 
 ### Access Campaign Explorer {#ac-explorer-ui}
 

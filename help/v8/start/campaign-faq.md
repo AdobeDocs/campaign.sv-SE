@@ -5,10 +5,10 @@ feature: Overview
 role: User
 level: Beginner
 exl-id: 027f5478-d86b-42be-b63d-ec8f5e1dd83d
-source-git-commit: 193d2459d5a4ba55822c20a7e376d18b3c6d8795
+source-git-commit: 061197048885a30249bd18af7f8b24cb71def742
 workflow-type: tm+mt
 source-wordcount: '706'
-ht-degree: 17%
+ht-degree: 18%
 
 ---
 
@@ -28,7 +28,7 @@ Behöver du hjälp medan du arbetar med Campaign? Läs de viktigaste frågorna o
 
    Du måste hämta och installera Campaign-klientkonsolen för att kunna ansluta till Adobe Campaign.
 
-   ![](../assets/do-not-localize/glass.png) [Klicka här om du vill veta mer](connect.md).
+   [Klicka här för att läsa mer](connect.md).
 
    Från och med Campaign v8.6 har du tillgång till den nya **Kampanjwebbgränssnitt** som finns i Adobe Experience Cloud centrala miljö. Experience Cloud är en integrerad familj av program, produkter och tjänster för digital marknadsföring i Adobe. Från det intuitiva gränssnittet får du snabbt tillgång till dina molnprogram, produktfunktioner och tjänster.
 
@@ -43,9 +43,9 @@ Behöver du hjälp medan du arbetar med Campaign? Läs de viktigaste frågorna o
 
    E-postleveransen, som är en viktig del i varje avsändares marknadsföringsprogram, kännetecknas av ständigt föränderliga kriterier och regler. För effektiv navigering i den digitala världen krävs regelbunden anpassning av er e-poststrategi, med hänsyn till viktiga leveranstrender, för att ni ska nå era målgrupper på bästa sätt.
 
-   ![](../assets/do-not-localize/book.png) Läs den här guiden om du vill veta mer [Bästa praxis för leverans](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/introduction.html?lang=sv){target="_blank"}
+   Läs den här guiden om du vill veta mer [Bästa praxis för leverans](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/introduction.html?lang=sv){target="_blank"}
 
-   ![](../assets/do-not-localize/book.png) Lär dig hur ni implementerar leveransbarhet i Campaign [i den här guiden](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/additional-resources/general-resources.html){target="_blank"}
+   Lär dig hur ni implementerar leveransbarhet i Campaign [i den här guiden](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/additional-resources/general-resources.html){target="_blank"}
 
 1. **Hur kan jag vara säker på att min leverans skickas utan fel?**
 

@@ -5,10 +5,10 @@ feature: Interaction, Offers
 role: User, Admin
 level: Beginner
 exl-id: c116d86a-d3e2-47e3-a641-e2d7c8cc575c
-source-git-commit: 567c2e84433caab708ddb9026dda6f9cb717d032
+source-git-commit: 061197048885a30249bd18af7f8b24cb71def742
 workflow-type: tm+mt
-source-wordcount: '838'
-ht-degree: 3%
+source-wordcount: '837'
+ht-degree: 1%
 
 ---
 
@@ -94,7 +94,7 @@ När ett erbjudande är **skapad**, uppdateras dess status.
 
 I **[!UICONTROL Design]** för varje erbjudande konfigurerar du statusen som ska gälla när ett erbjudande skapas, beroende på vilken information du vill visa i erbjudanderapporten.
 
-Följ stegen nedan för att göra detta:
+Gör så här:
 
 1. Gå till **[!UICONTROL Storage]** -fliken för det önskade utrymmet.
 1. Välj den status som ska användas för förslaget när det skapas.
@@ -105,7 +105,7 @@ Följ stegen nedan för att göra detta:
 
 När ett erbjudande har skickats **accepterad** använder du ett av de värden som anges som standard för att konfigurera förslagets nya status. Uppdateringen tillämpas när en mottagare klickar på en länk i erbjudandet.
 
-Följ stegen nedan för att göra detta:
+Gör så här:
 
 1. Gå till **[!UICONTROL Storage]** -fliken för det önskade utrymmet.
 1. Välj den status som du vill tillämpa på förslaget när det godkänns.
@@ -156,4 +156,4 @@ Om en mottagare inte är berättigad till något erbjudande visas detta i förha
 
 Förhandsvisningen kan ignorera kontexter när de är begränsade till ett mellanslag. Detta är fallet när interaktionsschemat har utökats för att lägga till fält som refereras i ett utrymme med en inkommande kanal.
 
-![](../assets/do-not-localize/book.png)  Mer information om detta finns i exemplet i [Campaign Classic v7 - dokumentation](https://experienceleague.adobe.com/docs/campaign-classic/using/managing-offers/advanced-parameters/extension-example.html){target="_blank"}.
+Mer information om detta finns i exemplet i [Campaign Classic v7 - dokumentation](https://experienceleague.adobe.com/docs/campaign-classic/using/managing-offers/advanced-parameters/extension-example.html){target="_blank"}.

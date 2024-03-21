@@ -5,7 +5,7 @@ feature: Architecture, Deployment
 role: Data Engineer
 level: Beginner
 exl-id: 562b24c3-6bea-447f-b74c-187ab77ae78f
-source-git-commit: 86fa52c445b89227cfabb65e74627c5da7d3db1f
+source-git-commit: 061197048885a30249bd18af7f8b24cb71def742
 workflow-type: tm+mt
 source-wordcount: '1039'
 ht-degree: 1%
@@ -26,7 +26,7 @@ Det finns två typer av miljöer:
 
 Du kan exportera och importera paket från en miljö till en annan.
 
-![](../assets/do-not-localize/book.png) Läs mer om paket i [Campaign Classic v7 - dokumentation](https://experienceleague.adobe.com/docs/campaign-classic/using/getting-started/administration-basics/working-with-data-packages.html){target="_blank"}
+Läs mer om paket i [Campaign Classic v7 - dokumentation](https://experienceleague.adobe.com/docs/campaign-classic/using/getting-started/administration-basics/working-with-data-packages.html){target="_blank"}
 
 ## Distributionsmodeller {#ac-deployment}
 
@@ -100,7 +100,7 @@ Om du vill dela upp externa konton som standardkonto för att skicka ut leverans
 
 Transactional messaging (Message Center) är den Campaign-modul som är avsedd för hantering av utlösarmeddelanden.
 
-![](../assets/do-not-localize/glass.png) Lär dig hur du skickar transaktionsmeddelanden i [det här avsnittet](../send/transactional.md).
+Lär dig hur du skickar transaktionsmeddelanden i [det här avsnittet](../send/transactional.md).
 
 Som svar på en åtgärd från en kund på en webbplats skickas en händelse till Campaign via ett REST API, och meddelandemallen fylls i med informationen eller data som tillhandahålls via API-anropet och ett transaktionsmeddelande skickas i realtid till kunden. Dessa meddelanden kan skickas individuellt eller gruppvis via e-post, SMS eller push-meddelanden.
 
@@ -108,7 +108,7 @@ I den här specifika arkitekturen separeras körningscellen från kontrollinstan
 
 * The **Kontrollinstans** (eller Marketing instance) används av marknadsförare och IT-team för att skapa, konfigurera och publicera meddelandemallar. Den här instansen centraliserar också händelseövervakning och historik.
 
-  ![](../assets/do-not-localize/glass.png) Lär dig hur du skapar och publicerar meddelandemallar i [det här avsnittet](../send/transactional.md).
+  Lär dig hur du skapar och publicerar meddelandemallar i [det här avsnittet](../send/transactional.md).
 
 * The **Körningsinstans** återtar inkommande händelser (t.ex. lösenordsåterställning eller beställningar från en webbplats) och skickar personliga meddelanden. Det kan finnas mer än en körningsinstans för att bearbeta meddelanden via belastningsutjämnaren och skala antalet händelser som ska bearbetas för maximal tillgänglighet.
 

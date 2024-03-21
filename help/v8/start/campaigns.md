@@ -5,10 +5,10 @@ feature: Cross Channel Orchestration
 role: User
 level: Beginner
 exl-id: b5a6c845-13a7-4746-b856-a08a3cf80b66
-source-git-commit: e0ec2940db3120dc8fbfd17dd2f5083bbf31232c
+source-git-commit: 061197048885a30249bd18af7f8b24cb71def742
 workflow-type: tm+mt
-source-wordcount: '833'
-ht-degree: 5%
+source-wordcount: '772'
+ht-degree: 2%
 
 ---
 
@@ -18,9 +18,9 @@ Adobe Campaign erbjuder en uppsättning lösningar som hjälper er att personali
 
 Kampanjerna omfattar åtgärder (leveranser) och processer (import eller extrahering av filer) samt resurser (marknadsföringsdokument, leveransdispositioner). De används i marknadsföringskampanjer. Kampanjer ingår i ett program och program ingår i en kampanjplan.
 
-## Orkestrera kampanjer över flera kanaler{#cross-channel-orchestration}
+## Samordna kampanjer i flera kanaler{#cross-channel-orchestration}
 
-Med Adobe Campaign kan du utforma och orkestrera målinriktade och personaliserade kampanjer över flera kanaler: e-post, direktutskick, SMS och push-meddelanden. Ett enda gränssnitt erbjuder alla funktioner du behöver för att schemalägga, orkestrera, konfigurera, personalisera, automatisera, genomföra och mäta alla kampanjer och all kommunikation.
+Med Adobe Campaign kan du utforma och orkestrera målinriktade och personaliserade kampanjer över flera kanaler: e-post, direktutskick, SMS och push-meddelanden. Ett enda gränssnitt ger er alla funktioner ni behöver för att schemalägga, samordna, konfigurera, personalisera, automatisera, genomföra och mäta alla kampanjer och all kommunikation.
 
 ![](assets/campaign-tab.png)
 
@@ -46,7 +46,7 @@ Med Adobe Campaign kan ni skapa, konfigurera, köra och analysera alla marknadsf
 
 ![](assets/calendar.png)
 
-![](../assets/do-not-localize/book.png) Upptäck hur ni får tillgång till och implementerar marknadsföringskampanjer i [det här avsnittet](https://experienceleague.adobe.com/docs/campaign/automation/campaign-orchestration/set-up-campaigns.html).
+Upptäck hur ni får tillgång till och implementerar marknadsföringskampanjer i [det här avsnittet](https://experienceleague.adobe.com/docs/campaign/automation/campaign-orchestration/set-up-campaigns.html).
 
 ## Viktiga steg att starta{#gs-ac-start}
 
@@ -56,7 +56,7 @@ De viktigaste stegen för att skapa en flerkanalskampanj för marknadsföring ä
 
    Definiera hierarki och schema, ange budget, lägga till resurser och välj operatorer.
 
-   ![](../assets/do-not-localize/book.png) Lär dig hur du skapar en marknadsföringsplan och konfigurerar kampanjer i [den här sidan](https://experienceleague.adobe.com/docs/campaign/automation/campaign-orchestration/marketing-campaign-create.html).
+   Lär dig hur du skapar en marknadsföringsplan och konfigurerar kampanjer i [den här sidan](https://experienceleague.adobe.com/docs/campaign/automation/campaign-orchestration/marketing-campaign-create.html).
 
    Alla marknadsföringskampanjer är baserade på en mall som lagrar de viktigaste inställningarna och funktionerna. En inbyggd mall tillhandahålls för att skapa en kampanj för vilken ingen specifik konfiguration har definierats. Du kan skapa och konfigurera kampanjmallar och sedan skapa kampanjer utifrån dessa mallar.
 
@@ -78,11 +78,11 @@ De viktigaste stegen för att skapa en flerkanalskampanj för marknadsföring ä
 
    ![](assets/campaign-dashboard.png)
 
-   ![](../assets/do-not-localize/book.png) Lär dig hur du skapar och startar marknadsföringskampanjer i [den här sidan](https://experienceleague.adobe.com/docs/campaign/automation/campaign-orchestration/marketing-campaign-deliveries.html).
+   Lär dig hur du skapar och startar marknadsföringskampanjer i [den här sidan](https://experienceleague.adobe.com/docs/campaign/automation/campaign-orchestration/marketing-campaign-deliveries.html).
 
    Du kan associera olika dokument med en kampanj: rapport, foto, webbsida, diagram osv.
 
-   ![](../assets/do-not-localize/book.png) Läs mer om associerade dokument i [den här sidan](https://experienceleague.adobe.com/docs/campaign/automation/campaign-orchestration/marketing-campaign-assets.html).
+   Läs mer om associerade dokument i [den här sidan](https://experienceleague.adobe.com/docs/campaign/automation/campaign-orchestration/marketing-campaign-assets.html).
 
 1. **Ställ in godkännandeprocessen**
 

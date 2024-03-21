@@ -5,9 +5,9 @@ feature: Audiences, Profiles, Web Forms
 role: Data Engineer
 level: Beginner
 exl-id: a228c0dc-80f5-4c51-b73b-ced0aa27a65a
-source-git-commit: 2ce1ef1e935080a66452c31442f745891b9ab9b3
+source-git-commit: 061197048885a30249bd18af7f8b24cb71def742
 workflow-type: tm+mt
-source-wordcount: '88'
+source-wordcount: '81'
 ht-degree: 0%
 
 ---
@@ -18,4 +18,4 @@ Använd Campaign för att skapa webbformulär och samla in och hantera profildat
 
 ![](assets/web-form-page.png)
 
-![](../assets/do-not-localize/book.png) Lär dig hur du skapar webbformulär i [Campaign Classic v7-dokumentation](https://experienceleague.adobe.com/docs/campaign-classic/using/designing-content/web-forms/about-web-forms.html){target="_blank"}.
+Lär dig hur du skapar webbformulär i [Campaign Classic v7 - dokumentation](https://experienceleague.adobe.com/docs/campaign-classic/using/designing-content/web-forms/about-web-forms.html){target="_blank"}.

@@ -5,7 +5,7 @@ feature: Overview
 role: Admin, User
 level: Beginner
 exl-id: d1d57aa8-b811-470f-a8a6-18da3a700f1a
-source-git-commit: f6ccec05d63c397d0a286c18f4114eb414156d45
+source-git-commit: 061197048885a30249bd18af7f8b24cb71def742
 workflow-type: tm+mt
 source-wordcount: '410'
 ht-degree: 11%
@@ -36,9 +36,9 @@ Campaign v8 kan ansluta till följande Adobe-lösningar. Bläddra bland länkarn
 
 Du kan också kombinera **målgrupper** och **resurser** i olika Experience Cloud-lösningar med funktioner för resursdelning och målgruppsdelning.
 
-![](../assets/do-not-localize/book.png) Läs mer om **Målgruppsdelning** mellan Campaign och Experience Cloud i [Campaign Classic v7 - dokumentation](https://experienceleague.adobe.com/docs/campaign-classic/using/integrating-with-adobe-experience-cloud/audience-sharing/sharing-audiences-with-adobe-experience-cloud.html#integrating-with-adobe-experience-cloud)
+Läs mer om **Målgruppsdelning** mellan Campaign och Experience Cloud i [Campaign Classic v7 - dokumentation](https://experienceleague.adobe.com/docs/campaign-classic/using/integrating-with-adobe-experience-cloud/audience-sharing/sharing-audiences-with-adobe-experience-cloud.html#integrating-with-adobe-experience-cloud)
 
-![](../assets/do-not-localize/book.png) Läs mer om **Resursdelning** mellan Campaign och Experience Cloud i [Campaign Classic v7 - dokumentation](https://experienceleague.adobe.com/docs/campaign-classic/using/integrating-with-adobe-experience-cloud/asset-sharing/sharing-assets-with-adobe-experience-cloud.html#integrating-with-adobe-experience-cloud)
+Läs mer om **Resursdelning** mellan Campaign och Experience Cloud i [Campaign Classic v7 - dokumentation](https://experienceleague.adobe.com/docs/campaign-classic/using/integrating-with-adobe-experience-cloud/asset-sharing/sharing-assets-with-adobe-experience-cloud.html#integrating-with-adobe-experience-cloud)
 
 ## Integrera med CRM Connector{#gs-crm-connectors}
 
@@ -53,7 +53,7 @@ Lär dig hur du integrerar Campaign med Microsoft Dynamics 365 och Salesforce.co
 
 Använd FDA Connector (Federated Data Access) för att ansluta Campaign till en eller flera **externa databaser** och bearbeta information som lagras i dem utan att påverka data i Campaign Cloud-databasen.
 
-![](../assets/do-not-localize/glass.png) Läs mer i [den här sidan](fda.md)
+Läs mer i [den här sidan](fda.md)
 
 ## Arbeta med sociala medier{#gs-social}
 

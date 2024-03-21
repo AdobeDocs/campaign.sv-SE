@@ -5,10 +5,10 @@ feature: Email, Push, SMS, Direct Mail, Cross Channel Orchestration
 role: User
 level: Beginner
 exl-id: 6cf8a929-637e-4e51-9160-5980ca727efb
-source-git-commit: 3c7455f348468a8f00fb853a3269a1d63b81e7b8
+source-git-commit: 061197048885a30249bd18af7f8b24cb71def742
 workflow-type: tm+mt
-source-wordcount: '429'
-ht-degree: 5%
+source-wordcount: '415'
+ht-degree: 6%
 
 ---
 
@@ -20,13 +20,13 @@ De viktigaste funktionerna är målinriktning, definition och personalisering av
 
 Adobe Campaign v8 har följande leveranskanaler:
 
-* **E-postkanal**: Med e-postleveranser kan du skicka personaliserade e-postmeddelanden till målpopulationen. Läs mer i [den här sidan](../send/email.md).
+* **E-postkanal**: Med e-postleveranser kan du skicka personaliserade e-postmeddelanden till målpopulationen. Läs mer på [den här sidan](../send/email.md).
 
 * **Direktpostkanal**: Med direktutskick kan du generera en extraheringsfil som innehåller data om målpopulationen.  Läs mer i [den här sidan](../send/direct-mail.md)
 
 * **Mobilkanal**: leveranser i mobilkanaler gör att du kan skicka personaliserat SMS till målpopulationen.  Läs mer i [den här sidan](../send/sms.md)
 
-* **Mobil programkanal**: mobilappsleveranser gör att du kan skicka meddelanden till iOS- och Android-system.  Läs mer i [den här sidan](../send/push.md)
+* **Mobil programkanal**: vid leverans av mobilappar kan du skicka meddelanden till iOS och Android-system.  Läs mer i [den här sidan](../send/push.md)
 
 <!--
 * **LINE channel**: LINE deliveries let you send messages on LINE, an instant messaging application available on all smartphones. Learn more in [this page](../send/line.md)
@@ -38,29 +38,29 @@ När meddelandet har skapats och dess innehåll har utformats och testats kan du
 
 * Skicka meddelanden manuellt till huvudmålet
 
-   ![](assets/send-email.png)
+  ![](assets/send-email.png)
 
-   Lär dig hur du skickar meddelanden i [det här avsnittet](../send/send.md)
+  Lär dig hur du skickar meddelanden i [det här avsnittet](../send/send.md)
 
 * Skicka meddelanden som är kopplade till en [marknadsföringskampanj](campaigns.md)
 
-   ![](assets/deliveries-in-a-campaign.png)
+  ![](assets/deliveries-in-a-campaign.png)
 
-   Lär dig hur du skickar meddelanden i samband med en kampanj i [det här avsnittet](https://experienceleague.adobe.com/docs/campaign/automation/campaign-orchestration/marketing-campaign-deliveries.html)
+  Lär dig hur du skickar meddelanden i samband med en kampanj i [det här avsnittet](https://experienceleague.adobe.com/docs/campaign/automation/campaign-orchestration/marketing-campaign-deliveries.html)
 
-* Skicka meddelanden via [arbetsflöde](../config/workflows.md)
+* Skicka meddelanden via en [arbetsflöde](../config/workflows.md)
 
-   ![](assets/send-in-a-wf.png)
+  ![](assets/send-in-a-wf.png)
 
-   Lär dig automatisera e-postleveranser i [den här sidan](../../automation/workflow/delivery.md)
+  Lär dig automatisera e-postleveranser i [den här sidan](../../automation/workflow/delivery.md)
 
 * [Utlösarmeddelanden](../send/transactional.md) från en händelse
 
 * Schemalägg meddelanden
 
-   ![](assets/schedule-send.png)
+  ![](assets/schedule-send.png)
 
-[Användningsfall: läs om schemat och skicka födelsedag via e-post](../../automation/workflow/send-a-birthday-email.md)
+[Använd fall: läs hur schemat och skicka ett födelsedagskalender via e-post](../../automation/workflow/send-a-birthday-email.md)
 
 
 ## Lägg till personalisering{#personalization}
@@ -86,5 +86,5 @@ Steg för att konfigurera och skicka transaktionsmeddelanden beskrivs i [den hä
 
 Att övervaka era leveranser efter att de har skickats är ett viktigt steg för att se till att era marknadsföringskampanjer är effektiva och når ut till era kunder. Du kan övervaka efter att du har skickat en leverans samt förstå hur leveransfel och karantäner hanteras.
 
-![](../assets/do-not-localize/book.png) Lär dig hur du övervakar leveranser i [Campaign Classic v7-dokumentation](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/monitoring-deliveries/about-delivery-monitoring.html#sending-messages){target="_blank"}
+Lär dig hur du övervakar leveranser i [Campaign Classic v7 - dokumentation](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/monitoring-deliveries/about-delivery-monitoring.html#sending-messages){target="_blank"}
 

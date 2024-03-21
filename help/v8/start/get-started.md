@@ -5,7 +5,7 @@ feature: Overview, Cross Channel Orchestration
 role: User
 level: Beginner
 exl-id: 04b12907-3cb1-40f1-90b8-1524d84edf2d
-source-git-commit: 86a6979b8258bbe3136ed9e4de6ce44a8164d5d9
+source-git-commit: 061197048885a30249bd18af7f8b24cb71def742
 workflow-type: tm+mt
 source-wordcount: '994'
 ht-degree: 20%
@@ -34,9 +34,9 @@ Profilerna är centraliserade i en kraftfull molndatabas. Det finns många sätt
 
 I Adobe Campaign är mottagarna de standardprofiler som väljs för att skicka leveranser till (e-post, SMS etc.). Tack vare mottagardata som lagras i databasen kan du filtrera det mål som ska ta emot en viss leverans och lägga till personaliseringsdata i leveransinnehållet. Det finns andra typer av profiler i databasen. De är utformade för olika användningsfall. Exempelvis görs fröprofiler för att testa dina leveranser innan de skickas till det slutliga målet.
 
-![](../assets/do-not-localize/glass.png) Grunderna för profilhantering finns i [det här avsnittet](audiences.md).
+Grunderna för profilhantering finns i [det här avsnittet](audiences.md).
 
-![](../assets/do-not-localize/glass.png) Lär dig hur du lägger till profiler i Campaign i [det här avsnittet](import.md).
+Lär dig hur du lägger till profiler i Campaign i [det här avsnittet](import.md).
 
 ## Målinriktad segmentering {#targeted-segmentation}
 
@@ -44,13 +44,13 @@ Adobe Campaign har kraftfulla och användarvänliga funktioner för segmentering
 
 Funktionen med avancerad datahantering utökar möjligheterna för databearbetning. Det förenklar och optimerar målgruppsprocessen genom att inkludera data som inte är modellerade i datamappningen.
 
-![](../assets/do-not-localize/glass.png) Läs mer om segmentering och målgruppsframtagning i [det här avsnittet](audiences.md).
+Läs mer om segmentering och målgruppsframtagning i [det här avsnittet](audiences.md).
 
 ## Samordna kampanjer i flera kanaler {#cross-channel-campaign-orchestration}
 
 Med Adobe Campaign kan du utforma och orkestrera målinriktade och personaliserade kampanjer över flera kanaler: e-post, direktutskick, SMS och push-meddelanden. Ett enda gränssnitt ger er alla funktioner ni behöver för att schemalägga, samordna, konfigurera, personalisera, automatisera, genomföra och mäta alla kampanjer och all kommunikation.
 
-![](../assets/do-not-localize/glass.png) Lär dig utforma, schemalägga och köra en kampanj i [det här avsnittet](campaigns.md).
+Lär dig utforma, schemalägga och köra en kampanj i [det här avsnittet](campaigns.md).
 
 ## Arbetsflöden {#wf-gsv8}
 
@@ -65,7 +65,7 @@ Arbetsflöden kan användas i olika sammanhang, till exempel:
 * Importera data till Campaign-databasen.
 * Tekniska processer som rensning av databaser, återställning av spårningsinformation osv.
 
-![](../assets/do-not-localize/glass.png) Lär dig utforma och köra arbetsflöden i [det här avsnittet](../config/workflows.md).
+Lär dig utforma och köra arbetsflöden i [det här avsnittet](../config/workflows.md).
 
 ## Rapportering och analys {#analysis-and-reporting}
 
@@ -76,19 +76,19 @@ Förutom kraftfulla och färdiga rapportmallar kan du med Adobe Campaign skapa a
 Kampanjrapporteringsfunktionen gör det lättare att skapa dynamiska rapporter. Ni kan använda dra-och-släpp-variabler för att anpassa era rapporter och för att analysera hur framgångsrika era kampanjer är. Beroende på hur komplexa dina frågor och beräkningar är kan data samlas i en listvy eller nås i ett format som gör det enkelt att generera marknadsanalysrapporter.
 
 
-![](../assets/do-not-localize/glass.png) Läs mer om funktionerna för rapportering och spårning i [det här avsnittet](../reporting/gs-reporting.md).
+Läs mer om funktionerna för rapportering och spårning i [det här avsnittet](../reporting/gs-reporting.md).
 
 ## Adobe Experience Cloud-integreringar {#adobe-experience-cloud-integrations}
 
 Ni kan kombinera leveransfunktionerna och de avancerade kampanjhanteringsfunktionerna i Adobe Campaign med en uppsättning lösningar som hjälper er att personalisera användarupplevelsen: t.ex. Adobe Experience Manager, Adobe Analytics, Adobe Target eller Adobe Experience Cloud.
 
-![](../assets/do-not-localize/glass.png) Läs om hur du kan integrera med Adobes tjänster och lösningar i [det här avsnittet](../connect/integration.md).
+Läs om hur du kan integrera med Adobes tjänster och lösningar i [det här avsnittet](../connect/integration.md).
 
 ## Mer om Campaign-funktioner {#core-capabilities-and-add-ons}
 
-Adobe Campaign har en uppsättning funktioner som hjälper er att implementera och optimera marknadsföringsfunktionerna beroende på era behov och er arkitektur. Vissa av dem är kärnfunktioner och andra är beroende av att ett paket installeras på din konfiguration. En detaljerad produktbeskrivning finns här: [Adobe Campaign v8 - produktbeskrivning](https://helpx.adobe.com/legal/product-descriptions/adobe-campaign-managed-cloud-services.html).
+Adobe Campaign har en uppsättning funktioner som hjälper er att implementera och optimera marknadsföringsfunktionerna beroende på era behov och er arkitektur. Vissa av dem är kärnfunktioner och andra är beroende av att ett paket installeras på din konfiguration. En detaljerad produktbeskrivning finns här: [Adobe Campaign v8 - produktbeskrivning](https://helpx.adobe.com/se/legal/product-descriptions/adobe-campaign-managed-cloud-services.html).
 
-![](../assets/do-not-localize/glass.png) Känner du redan till Campaign Classicen? Lär dig viktiga skillnader mellan Campaign Classic och Campaign v8 i [den här sidan](v7-to-v8.md).
+Känner du redan till Campaign Classicen? Lär dig viktiga skillnader mellan Campaign Classic och Campaign v8 i [den här sidan](v7-to-v8.md).
 
 **Se även**
 

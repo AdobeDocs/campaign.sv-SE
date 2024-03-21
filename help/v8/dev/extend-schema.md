@@ -5,7 +5,7 @@ feature: Schema Extension, Data Model
 role: Developer
 level: Intermediate, Experienced
 exl-id: e4dcb228-0683-437a-88cd-bd7ed33da921
-source-git-commit: 1a0b473b005449be7c846225e75a227f6d877c88
+source-git-commit: 061197048885a30249bd18af7f8b24cb71def742
 workflow-type: tm+mt
 source-wordcount: '254'
 ht-degree: 2%
@@ -25,7 +25,7 @@ De viktigaste stegen för att anpassa Campaign-datamodellen är:
 >[!CAUTION]
 >Inbyggt schema får inte ändras direkt. Om du behöver anpassa ett inbyggt schema måste du utöka det.
 
-![](../assets/do-not-localize/glass.png) Om du vill få en bättre förståelse för de inbyggda tabellerna i Campaign och deras interaktion kan du läsa [den här sidan](datamodel.md). Se även rekommendationer när du skapar ett nytt schema i [den här sidan](create-schema.md).
+Om du vill få en bättre förståelse för de inbyggda tabellerna i Campaign och deras interaktion kan du läsa [den här sidan](datamodel.md). Se även rekommendationer när du skapar ett nytt schema i [den här sidan](create-schema.md).
 
 Följ stegen nedan för att utöka ett schema:
 

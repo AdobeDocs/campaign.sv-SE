@@ -5,10 +5,10 @@ feature: Architecture, FFDA, Deployment
 role: Admin, Developer
 level: Beginner
 exl-id: 0a6f6701-b137-4320-9732-31946509ee03
-source-git-commit: cfc1043e30bdd43e1acaeaf399fde01c6473f1b4
+source-git-commit: 061197048885a30249bd18af7f8b24cb71def742
 workflow-type: tm+mt
 source-wordcount: '1045'
-ht-degree: 2%
+ht-degree: 1%
 
 ---
 
@@ -84,13 +84,13 @@ PostgreSQL-databasen i mellankällinstansen används för att:
 
 Med [!DNL Campaign] Molndatabas rekommenderas inte snabba enhetsanrop på grund av prestanda (fördröjning och samtidighet). Gruppåtgärd rekommenderas alltid. För att garantera optimala prestanda för API:er fortsätter Campaign att hantera API-anrop på lokal databasnivå.
 
-![](../assets/do-not-localize/glass.png) [API-mellanlagringsmekanismen beskrivs på den här sidan](staging.md)
+[API-mellanlagringsmekanismen beskrivs på den här sidan](staging.md)
 
 ### Nya API:er{#new-apis}
 
 Det finns nya API:er för att hantera datasynkronisering mellan [!DNL Campaign] lokal databas och molndatabas. En ny mekanism har också införts för att hantera API-anrop på lokal databasnivå för att undvika fördröjning och öka den övergripande prestandan.
 
-![](../assets/do-not-localize/glass.png) [Nya API:er finns på den här sidan](new-apis.md)
+[Nya API:er finns på den här sidan](new-apis.md)
 
 
 ### Datareplikering{#data-replication}
@@ -119,7 +119,7 @@ Adobe Campaign v8 levereras med Snowflake som kärndatabas. Eftersom sökningen 
 
 Vissa funktioner är inte tillgängliga i samband med en Enterprise-distribution (FFDA) av Campaign, till exempel:
 
-* Hantera marknadsföringsresurser
+* Hantering av marknadsföringsresurser
 * Kuponger
 * Webbspårning
 * Undersökningar

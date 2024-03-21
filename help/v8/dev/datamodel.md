@@ -1,18 +1,18 @@
 ---
-title: Kom igång med datamodellen i Campaign
+title: Kom igång med Campaign-datamodellen
 description: Kom igång med datamodellen i Campaign och utnyttja data från dina källor för att gynna dina kommunikations- och marknadsföringsresultat.
 feature: Data Model
 role: Data Engineer
 level: Beginner
 exl-id: 200b60f1-04ae-4c3e-892f-3dd2bd22b896
-source-git-commit: 1a0b473b005449be7c846225e75a227f6d877c88
+source-git-commit: 061197048885a30249bd18af7f8b24cb71def742
 workflow-type: tm+mt
-source-wordcount: '713'
-ht-degree: 5%
+source-wordcount: '705'
+ht-degree: 4%
 
 ---
 
-# Kom igång med datamodellen i Campaign  {#gs-ac-datamodel}
+# Kom igång med Campaign-datamodellen {#gs-ac-datamodel}
 
 Adobe Campaign innehåller en fördefinierad datamodell. I det här avsnittet finns mer information om de inbyggda tabellerna i Adobe Campaign datamodell och hur de fungerar. Adobe Campaign förlitar sig på en molndatabas som innehåller tabeller som är länkade tillsammans.
 
@@ -43,7 +43,7 @@ Du kan använda den förvalda mottagartabellen med färdiga fält, som beskrivs 
 * [Utöka en befintlig tabell](extend-schema.md) med nya fält. Du kan till exempel lägga till ett nytt&quot;Lojalitet&quot;-fält i mottagartabellen.
 * [Skapa en ny tabell](create-schema.md), t.ex. en&quot;Inköpstabell&quot; som visar alla inköp som gjorts av varje profil i databasen och länkar den till mottagartabellen.
 
-![](../assets/do-not-localize/glass.png) Upptäck bästa praxis när du arbetar med Campaign-datamodellen i [det här avsnittet](datamodel-best-practices.md).
+Upptäck bästa praxis när du arbetar med Campaign-datamodellen i [det här avsnittet](datamodel-best-practices.md).
 
 ## Inbyggd profiltabell {#ootb-profiles}
 
@@ -58,9 +58,9 @@ Fördelarna med att använda standardmottagartabellen är:
 
 Det går att utöka mottagartabellen, men inte att minska antalet fält eller länkar i tabellen.
 
-![](../assets/do-not-localize/glass.png) Lär dig hur du utökar ett befintligt schema i [det här avsnittet](extend-schema.md).
+Lär dig hur du utökar ett befintligt schema i [det här avsnittet](extend-schema.md).
 
-![](../assets/do-not-localize/book.png) Upptäck exempel på inbyggda mottagartabelltillägg i [Campaign Classic v7 - dokumentation](https://experienceleague.adobe.com/docs/campaign-classic/using/configuring-campaign-classic/editing-schemas/examples-of-schemas-edition.html#extending-a-table){target="_blank"}
+Upptäck exempel på inbyggda mottagartabelltillägg i [Campaign Classic v7 - dokumentation](https://experienceleague.adobe.com/docs/campaign-classic/using/configuring-campaign-classic/editing-schemas/examples-of-schemas-edition.html#extending-a-table){target="_blank"}
 
 Du kan också använda en annan mottagartabell för att bättre passa ditt företags eller dina funktionskrav. Den här metoden har begränsningar och beskrivs i [det här avsnittet](custom-recipient.md).
 
@@ -68,9 +68,9 @@ Du kan också använda en annan mottagartabell för att bättre passa ditt före
 
 För att få en bättre förståelse för tabellhantering i Campaign v8 bör du tänka på att i ett sammanhang där [Företagsdistribution (FFDA)](../architecture/enterprise-deployment.md), replikeras tabeller mellan Campaign och dess Snowflake Cloud-databas.
 
-![](../assets/do-not-localize/glass.png) Läs mer om replikeringsstrategi och -mekanismer i [det här avsnittet](../architecture/replication.md).
+Läs mer om replikeringsstrategi och -mekanismer i [det här avsnittet](../architecture/replication.md).
 
 **Relaterade ämnen**
 
-![](../assets/do-not-localize/glass.png) Läs om hur du importerar profiler i [det här avsnittet](../start/import.md)
-![](../assets/do-not-localize/glass.png) Läs mer om Campaign-målgrupper i [det här avsnittet](../start/audiences.md)
+Läs om hur du importerar profiler i [det här avsnittet](../start/import.md)
+Läs mer om Campaign-målgrupper i [det här avsnittet](../start/audiences.md)

@@ -5,10 +5,10 @@ feature: Schema Extension, Configuration, Data Model
 role: Developer
 level: Intermediate, Experienced
 exl-id: 87af72fe-6c84-4d9a-afed-015900890cce
-source-git-commit: 1a0b473b005449be7c846225e75a227f6d877c88
+source-git-commit: 061197048885a30249bd18af7f8b24cb71def742
 workflow-type: tm+mt
-source-wordcount: '1262'
-ht-degree: 4%
+source-wordcount: '1250'
+ht-degree: 5%
 
 ---
 
@@ -100,11 +100,11 @@ Identifieringsnyckeln för ett schema är en sträng som skapats med namnutrymme
 
 Om du vill lägga till ett fält eller något annat element i ett av de centrala dataroderna i Campaign, t.ex. mottagartabellen (nms:mottagare), måste du utöka det schemat.
 
-![](../assets/do-not-localize/glass.png) Mer information finns i [Utöka ett schema](extend-schema.md).
+Mer information finns i [Utöka ett schema](extend-schema.md).
 
 Om du vill lägga till en helt ny typ av data som inte finns i Adobe Campaign (till exempel en kontraktstabell) kan du skapa ett anpassat schema direkt.
 
-![](../assets/do-not-localize/glass.png) Mer information finns i [Skapa ett nytt schema](create-schema.md).
+Mer information finns i [Skapa ett nytt schema](create-schema.md).
 
 ![](assets/schemaextension_1.png)
 
@@ -190,7 +190,7 @@ I det här exemplet ska du inte låta **@autopk** eller **@autouuid** för att s
 >
 >När du skapar ett nytt schema eller under ett schematillägg måste du behålla samma sekvensvärde för primärnyckeln (@pkSequence) för hela schemat.
 
-![](../assets/do-not-localize/glass.png) Läs mer om tangenter i [det här avsnittet](database-mapping.md#management-of-keys).
+Läs mer om tangenter i [det här avsnittet](database-mapping.md#management-of-keys).
 
 ## Attribut (fält) {#attributes--fields-}
 
@@ -200,7 +200,7 @@ Med attribut kan du definiera fälten som utgör dataobjektet. Du kan använda *
 
 Den fullständiga listan med attribut finns i `<attribute>` elementavsnitt i [Campaign Classic v7 - dokumentation](https://experienceleague.adobe.com/docs/campaign-classic/using/configuring-campaign-classic/schema-reference/elements-attributes/attribute.html#content-model). Här är några av de vanligaste attributen: **@advanced**, **@dataPolicy**, **@default**, **@desc**, **@enum**, **@expr**, **@label**, **@length**, **@name**, **@notNull**, **@required**, **@ref**, **@xml**, **@type**.
 
-![](../assets/do-not-localize/book.png) Mer information om respektive attribut finns i attributbeskrivningen i [Campaign Classic v7 - dokumentation](https://experienceleague.adobe.com/docs/campaign-classic/using/configuring-campaign-classic/schema-reference/elements-attributes/schema-introduction.html#configuring-campaign-classic).
+Mer information om respektive attribut finns i attributbeskrivningen i [Campaign Classic v7 - dokumentation](https://experienceleague.adobe.com/docs/campaign-classic/using/configuring-campaign-classic/schema-reference/elements-attributes/schema-introduction.html#configuring-campaign-classic).
 
 ### Exempel {#examples}
 

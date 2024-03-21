@@ -5,10 +5,10 @@ feature: Workflows
 role: User, Admin
 level: Beginner
 exl-id: 0be1c5f5-f07d-46dc-bebc-5eb50f466547
-source-git-commit: cfc1043e30bdd43e1acaeaf399fde01c6473f1b4
+source-git-commit: 061197048885a30249bd18af7f8b24cb71def742
 workflow-type: tm+mt
-source-wordcount: '1570'
-ht-degree: 1%
+source-wordcount: '1307'
+ht-degree: 0%
 
 ---
 
@@ -121,11 +121,11 @@ Lär dig skapa en återkommande kampanj i [den här sidan](https://experiencelea
 
 Använd Campaign Transactional Messaging för att automatisera meddelanden som genereras från händelser som triggas av informationssystem. Dessa transaktionsmeddelanden kan t.ex. vara faktura, orderbekräftelse, leveransbekräftelse, lösenordsändring, meddelande om att produkten inte är tillgänglig, kontoutdrag eller skapande av webbkonto. Dessa meddelanden kan skickas individuellt eller i grupp via e-post, SMS eller push-meddelanden.
 
-![](../assets/do-not-localize/glass.png) Läs mer om funktioner för transaktionsmeddelanden i [det här avsnittet](../send/transactional.md).
+Läs mer om funktioner för transaktionsmeddelanden i [det här avsnittet](../send/transactional.md).
 
 Koppla upp Adobe Campaign och Adobe Analytics för att ta fram användaråtgärder och skicka i stort sett personaliserade meddelanden i realtid.
 
-![](../assets/do-not-localize/glass.png) Lär dig integrera Campaign med andra lösningar i [det här avsnittet](../start/connect.md)
+Lär dig integrera Campaign med andra lösningar i [det här avsnittet](../start/connect.md)
 
 
 ## Användningsexempel för hela arbetsflödet{#end-to-end-uc}

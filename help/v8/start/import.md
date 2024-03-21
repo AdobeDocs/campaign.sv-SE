@@ -5,10 +5,10 @@ feature: Profiles, Data Management
 role: User
 level: Beginner
 exl-id: b0f8c057-dd4e-4284-b5a4-157986a1d95a
-source-git-commit: e0ec2940db3120dc8fbfd17dd2f5083bbf31232c
+source-git-commit: 061197048885a30249bd18af7f8b24cb71def742
 workflow-type: tm+mt
-source-wordcount: '228'
-ht-degree: 0%
+source-wordcount: '213'
+ht-degree: 3%
 
 ---
 
@@ -16,9 +16,9 @@ ht-degree: 0%
 
 Med Campaign kan du lägga till kontakter i molndatabasen. Du kan läsa in en fil, schemalägga och automatisera flera kontaktuppdateringar, samla in data på webben eller ange profilinformation direkt i mottagartabellen.
 
-![](../assets/do-not-localize/glass.png) Kom igång med [målgrupper](audiences.md)
+Kom igång med [målgrupper](audiences.md)
 
-![](../assets/do-not-localize/glass.png) Förstå kampanj [datamodell](../dev/datamodel.md)
+Förstå kampanj [datamodell](../dev/datamodel.md)
 
 ## Importera profiler i ett arbetsflöde
 
@@ -33,7 +33,7 @@ Skapa och kör ett allmänt dataimportjobb för att läsa in kontakter i molndat
 
 ![](assets/new-import.png)
 
-![](../assets/do-not-localize/book.png) Lär dig hur du kör enhetsimportjobb för att mata in databasen i [Campaign Classic v7 - dokumentation](https://experienceleague.adobe.com/docs/campaign-classic/using/getting-started/importing-and-exporting-data/generic-imports-exports/about-generic-imports-exports.html){target="_blank"}.
+Lär dig hur du kör enhetsimportjobb för att mata in databasen i [Campaign Classic v7 - dokumentation](https://experienceleague.adobe.com/docs/campaign-classic/using/getting-started/importing-and-exporting-data/generic-imports-exports/about-generic-imports-exports.html){target="_blank"}.
 
 ## Samla in profiler via webbprogram
 
@@ -41,7 +41,7 @@ Använd Campaign för att skapa webbformulär och samla in och hantera profilinf
 
 ![](assets/web-form-page.png)
 
-![](../assets/do-not-localize/book.png) Lär dig hur du skapar webbformulär i [Campaign Classic v7 - dokumentation](https://experienceleague.adobe.com/docs/campaign-classic/using/designing-content/web-forms/about-web-forms.html){target="_blank"}.
+Lär dig hur du skapar webbformulär i [Campaign Classic v7 - dokumentation](https://experienceleague.adobe.com/docs/campaign-classic/using/designing-content/web-forms/about-web-forms.html){target="_blank"}.
 
 **Relaterade ämnen**
 
