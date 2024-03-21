@@ -5,10 +5,10 @@ feature: Overview
 role: User
 level: Beginner
 exl-id: 027f5478-d86b-42be-b63d-ec8f5e1dd83d
-source-git-commit: 09db0cc1a14bffefe8d1b8d0d5a06d5b6517a5bb
+source-git-commit: 193d2459d5a4ba55822c20a7e376d18b3c6d8795
 workflow-type: tm+mt
-source-wordcount: '594'
-ht-degree: 18%
+source-wordcount: '706'
+ht-degree: 17%
 
 ---
 
@@ -30,9 +30,14 @@ Behöver du hjälp medan du arbetar med Campaign? Läs de viktigaste frågorna o
 
    ![](../assets/do-not-localize/glass.png) [Klicka här om du vill veta mer](connect.md).
 
+   Från och med Campaign v8.6 har du tillgång till den nya **Kampanjwebbgränssnitt** som finns i Adobe Experience Cloud centrala miljö. Experience Cloud är en integrerad familj av program, produkter och tjänster för digital marknadsföring i Adobe. Från det intuitiva gränssnittet får du snabbt tillgång till dina molnprogram, produktfunktioner och tjänster.
+
+   Lär dig ansluta till Adobe Experience Cloud och få tillgång till Adobe Campaign webbgränssnitt [på den här sidan](campaign-ui.md#ac-web-ui).
+
+   Läs mer i [Dokumentation för Adobe Campaign webbgränssnitt](https://experienceleague.adobe.com/en/docs/campaign-web/v8/campaign-web-home){target="_blank"}.
 1. **Kan Campaign v8 installeras på en lokal eller blandad miljö?**
 
-   För närvarande finns Campaign v8 bara i Managed Cloud Services, som är värd för Adobe.
+   Campaign v8 är bara tillgängligt i Managed Cloud Services, som är värd för Adobe.
 
 1. **Hur förbättrar man e-postleveransen?**
 
@@ -60,11 +65,15 @@ Behöver du hjälp medan du arbetar med Campaign? Läs de viktigaste frågorna o
 
    En underdomän är en division av domänen som kan användas för att isolera varumärken eller olika typer av trafik (transaktionsmeddelanden, marknadsföringsinformation osv.).
 
-   ![](../assets/do-not-localize/speech.png)  Som användare av hanterade Cloud Service kan du kontakta Adobe för att delegera dina underdomäner till Adobe.
+   ![](../assets/do-not-localize/speech.png) Som användare av hanterade Cloud Service kan du kontakta Adobe för att delegera dina underdomäner till Adobe.
 
 1. **Kan jag som Campaign Classic v7-användare migrera till Campaign v8?**
 
-   För närvarande är Campaign v8 bara tillgängligt för nya implementeringar.
+   Automatisk migrering från en befintlig Campaign Classic v7-miljö är inte tillgänglig än.
+
+   Campaign v8 är **endast** finns som hanterad Cloud Service och kan inte distribueras på plats eller i hybridmiljöer.
+
+   ![](../assets/do-not-localize/speech.png) Mer information om migreringsprocessen får du av Adobe.
 
 1. **Hur laddar jag ned Campaign?**
 
