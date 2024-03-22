@@ -5,10 +5,10 @@ role: User, Admin
 feature: Social Marketing
 level: Beginner, Intermediate
 exl-id: 5523217a-b95f-4639-b941-52eb7d5a0203
-source-git-commit: 09db0cc1a14bffefe8d1b8d0d5a06d5b6517a5bb
+source-git-commit: 5ab598d904bf900bcb4c01680e1b4730881ff8a5
 workflow-type: tm+mt
 source-wordcount: '1065'
-ht-degree: 1%
+ht-degree: 2%
 
 ---
 
@@ -20,7 +20,10 @@ The **Hantera sociala nätverk (social marknadsföring)** kan ni interagera med 
 
 * Samla in nya kontakter - Adobe Campaign Social Marketing gör det också enkelt att skaffa nya kontakter: kontakta användare och fråga dem om de vill dela sin profilinformation. Om de godkänner det återhämtar Adobe Campaign automatiskt data, vilket gör att ni kan genomföra riktade kampanjer och, när det är möjligt, implementera flerkanalsstrategier.
 
-![](../assets/do-not-localize/speech.png) Som användare av hanterade Cloud Service [kontakta Adobe](../start/campaign-faq.md#support) för att ansluta Campaign till X.  **Hantera sociala nätverk (social marknadsföring)** Tillägget måste installeras i din miljö via det dedikerade paketet och Twitternas externa konto måste konfigureras.
+
+>[!NOTE]
+>
+>Som användare av hanterade Cloud Service [kontakta Adobe](../start/campaign-faq.md#support) för att ansluta Campaign till X.  **Hantera sociala nätverk (social marknadsföring)** Tillägget måste installeras i din miljö via det dedikerade paketet och Twitternas externa konto måste konfigureras.
 
 
 Om du vill konfigurera Adobe Campaign att bokföra tweets på dina X-konton delegerar du skrivåtkomst till Adobe Campaign för dessa konton. För att göra detta måste du:
@@ -42,7 +45,7 @@ Campaign använder version 1.1 av X API. Om du vill använda den måste du ansö
 När du har godkänts med utökad åtkomst skapar du ett X-program som gör det möjligt för Adobe Campaign att skapa inlägg på ditt X-konto. Gör så här:
 
 1. Logga in på ditt X-konto.
-1. Anslut till [X-utvecklarportal](https://developer.twitter.com/en/apps).
+1. Anslut till [X-utvecklarportal](https://developer.twitter.com/en/apps){target="_blank"}.
 1. Välj **Skapa en app**.
 1. Låt X-assistenten vägleda dig genom processen.
 1. Om du vill att Adobe Campaign ska kunna skapa inlägg på ditt konto redigerar du till **Programbehörigheter** i inställningsavsnittet för användarautentisering i din app. Välj **Läsa, skriva och skicka direktmeddelanden**.
@@ -114,7 +117,7 @@ De stoppas som standard: du måste starta dem manuellt när du börjar använda 
 
 The **[!UICONTROL Synchronization of Twitter accounts]** tekniskt arbetsflöde synkroniserar X-konton i Adobe Campaign. Det här arbetsflödet återställer listan med X-följare så att du kan skicka direktmeddelanden till dem. [Läs mer](../send/twitter.md#direct-tw-messages)
 
-Som standard aktiveras arbetsflödet varje torsdag kl. 7.30. Du kan använda **[!UICONTROL Execute pending task(s) now]** möjlighet att starta arbetsflödet när som helst när du implementerar den här integreringen.  Du kan också redigera schemaläggaren för att ändra arbetsflödets utlösande frekvens. Läs mer i [den här sidan](../../automation/workflow/scheduler.md).
+Som standard aktiveras arbetsflödet varje torsdag kl. 7.30. Du kan använda **[!UICONTROL Execute pending task(s) now]** möjlighet att starta arbetsflödet när som helst när du implementerar den här integreringen.  Du kan också redigera schemaläggaren för att ändra arbetsflödets utlösande frekvens. Läs mer på [den här sidan](../../automation/workflow/scheduler.md).
 
 >[!CAUTION]
 >

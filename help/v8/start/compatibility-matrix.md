@@ -5,7 +5,7 @@ feature: Release Notes
 role: Admin
 level: Beginner
 exl-id: 4be3a6dc-0c61-4534-b9dd-6c99c8a037a9
-source-git-commit: a779f243b0ba13dc3fcb7839377ca8766e5f7841
+source-git-commit: 5ab598d904bf900bcb4c01680e1b4730881ff8a5
 workflow-type: tm+mt
 source-wordcount: '406'
 ht-degree: 16%
@@ -80,6 +80,6 @@ Följande webbläsare är kompatibla med Campaign for Web Access. Läs mer om Ca
 * [Uppdateringar om kampanjreleaser](upgrades.md)
 * [Kontrollera kampanjversionen](upgrades.md#version)
 * [Installera Campaign-klientkonsolen](connect.md)
-* [Versioner av Kontrollpanelen](https://experienceleague.adobe.com/docs/control-panel/using/release-notes.html?lang=sv){target="_blank"}.
+* [Versioner av Kontrollpanelen](https://experienceleague.adobe.com/docs/control-panel/using/release-notes.html?lang=sv){target="_blank"}
 
 Om du vill få information om nya releaser för Experience Cloud kan du prenumerera på [Produktuppdatering Adobe Priority](https://www.adobe.com/se/subscription/priority-product-update.html){target="_blank"}.

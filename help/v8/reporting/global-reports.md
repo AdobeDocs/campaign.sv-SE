@@ -4,10 +4,10 @@ description: Lär dig hur du får åtkomst till och använder globala rapporter
 feature: Reporting, Monitoring
 role: User, Data Engineer
 exl-id: 6e3409d8-86bd-44ba-a40d-10287f53a960
-source-git-commit: 567c2e84433caab708ddb9026dda6f9cb717d032
+source-git-commit: 5ab598d904bf900bcb4c01680e1b4730881ff8a5
 workflow-type: tm+mt
-source-wordcount: '1763'
-ht-degree: 3%
+source-wordcount: '1750'
+ht-degree: 1%
 
 ---
 
@@ -45,13 +45,13 @@ Den här rapporten innehåller information om leveransflödet för hela plattfor
 
 ![](assets/report-toolbar.png)
 
-Du kan konfigurera de värden som visas genom att ändra tidsskalan: 1-timmars vy, 3-timmars vy, 24-timmars vy osv. Klicka **[!UICONTROL Refresh]** för att bekräfta valet.  
+Du kan konfigurera de värden som visas genom att ändra tidsskalan: 1-timmars vy, 3-timmars vy, 24-timmars vy osv. Klicka **[!UICONTROL Refresh]** för att bekräfta ditt val.
 
 >[!NOTE]
 >
->Du kan också övervaka antalet leveranser som skickas per timme med [Kontrollpanelen](https://experienceleague.adobe.com/docs/control-panel/using/sftp-management/sftp-storage-management.html).
+>Du kan också övervaka antalet leveranser som skickas per timme med [Kontrollpanelen](https://experienceleague.adobe.com/docs/control-panel/using/sftp-management/sftp-storage-management.html){target="_blank"}.
 >
->Kontrollpanelen är tillgänglig för alla administratörsanvändare. Stegen för att bevilja administratörsåtkomst till en användare finns på [den här sidan](https://experienceleague.adobe.com/docs/control-panel/using/discover-control-panel/managing-permissions.html?lang=sv#discover-control-panel).
+>Kontrollpanelen är tillgänglig för alla administratörsanvändare. Anvisningar om hur du ger administratörsåtkomst till en användare finns i [den här sidan](https://experienceleague.adobe.com/docs/control-panel/using/discover-control-panel/managing-permissions.html?lang=sv#discover-control-panel){target="_blank"}.
 >
 
 ## Användaraktiviteter {#user-activities}
@@ -118,7 +118,7 @@ Du kan öppna varje rad i värdetabellen genom att klicka på [+] symbol. För v
 
 >[!NOTE]
 >
->Domännamnen som visas i den här rapporten definieras på kubnivå. Om du vill ändra dessa värden redigerar du **[!UICONTROL Delivery logs (broadlogrcp)]** kub. Mer information om detta finns i [det här avsnittet](gs-cubes.md). The **[!UICONTROL Others]** omfattar domännamn som inte tillhör en viss klass.
+>Domännamnen som visas i den här rapporten definieras på kubnivå. Om du vill ändra dessa värden redigerar du **[!UICONTROL Delivery logs (broadlogrcp)]** kub. Mer information finns i [det här avsnittet](gs-cubes.md). The **[!UICONTROL Others]** omfattar domännamn som inte tillhör en viss klass.
 
 ## Webbläsare {#browsers}
 

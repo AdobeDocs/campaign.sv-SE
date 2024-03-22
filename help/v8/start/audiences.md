@@ -5,10 +5,10 @@ feature: Audiences
 role: User
 level: Beginner
 exl-id: 07baa759-fb0b-4eba-bf8b-ec6cf21df7f8
-source-git-commit: 061197048885a30249bd18af7f8b24cb71def742
+source-git-commit: 5ab598d904bf900bcb4c01680e1b4730881ff8a5
 workflow-type: tm+mt
 source-wordcount: '453'
-ht-degree: 15%
+ht-degree: 14%
 
 ---
 
@@ -36,7 +36,7 @@ Lär dig hur du skapar och hanterar filter i [den här sidan](../audiences/creat
 
 Målinriktning kan skapas med en kombination av frågor i en grafisk sekvens i ett arbetsflöde. Ni kan skapa målgrupper som anpassas efter era behov. Om du vill visa arbetsflödesredigeraren klickar du på **[!UICONTROL Targeting and workflows]** på kampanjkontrollpanelen.
 
-Lär dig hur du skapar en målgrupp i ett kampanjarbetsflöde i [den här sidan](https://experienceleague.adobe.com/docs/campaign/automation/campaign-orchestration/marketing-campaign-target.html)
+Lär dig hur du skapar en målgrupp i ett kampanjarbetsflöde i [den här sidan](https://experienceleague.adobe.com/docs/campaign/automation/campaign-orchestration/marketing-campaign-target.html){target="_blank"}.
 
 
 ## Aktiva profiler {#active-profiles}
@@ -59,8 +59,8 @@ Lär dig hur du hanterar sekretess och samtycke i [Adobe Campaign Classic v7-dok
 
 **Relaterade ämnen**
 
-* [Utforma och genomför ett kampanjspecifikt arbetsflöde](https://experienceleague.adobe.com/docs/campaign/automation/workflows/introduction/wf-type/campaign-workflows.html)
+* [Utforma och genomför ett kampanjspecifikt arbetsflöde](https://experienceleague.adobe.com/docs/campaign/automation/workflows/introduction/wf-type/campaign-workflows.html){target="_blank"}
 
-* [Lär dig hur du väljer målgrupp för en kampanj](https://experienceleague.adobe.com/docs/campaign/automation/campaign-orchestration/marketing-campaign-target.html)
+* [Lär dig hur du väljer målgrupp för en kampanj](https://experienceleague.adobe.com/docs/campaign/automation/campaign-orchestration/marketing-campaign-target.html){target="_blank"}
 
-* [Kom igång med arbetsflöden](https://experienceleague.adobe.com/docs/campaign/automation/workflows/introduction/about-workflows.html)
+* [Kom igång med arbetsflöden](https://experienceleague.adobe.com/docs/campaign/automation/workflows/introduction/about-workflows.html){target="_blank"}

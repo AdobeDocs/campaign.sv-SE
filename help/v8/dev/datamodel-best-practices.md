@@ -5,7 +5,7 @@ feature: Data Model
 role: User, Developer
 level: Beginner, Intermediate
 exl-id: bdd5e993-0ce9-49a8-a618-ab0ff3796d49
-source-git-commit: 061197048885a30249bd18af7f8b24cb71def742
+source-git-commit: 5ab598d904bf900bcb4c01680e1b4730881ff8a5
 workflow-type: tm+mt
 source-wordcount: '2740'
 ht-degree: 4%
@@ -175,7 +175,7 @@ Det finns några lösningar som minimerar behovet av arkivering i Adobe Campaign
 
 Du kan deklarera attributet &quot;deleteStatus&quot; i ett schema. Det är effektivare att markera posten som borttagen och sedan skjuta upp borttagningen i rensningsaktiviteten.
 
-![](../assets/do-not-localize/speech.png)  Som användare av hanterade Cloud Service kan du kontakta Adobe konsulter eller tekniska administratörer för att få veta mer om bevarande eller om du behöver ange bevarande för anpassade tabeller.
+Som användare av hanterade Cloud Service kan du kontakta Adobe konsulter eller tekniska administratörer för att få veta mer om bevarande eller om du behöver ange bevarande för anpassade tabeller.
 
 ## Prestanda {#performance}
 

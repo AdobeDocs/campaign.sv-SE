@@ -5,7 +5,7 @@ feature: Overview
 role: Admin, User
 level: Beginner
 exl-id: d1d57aa8-b811-470f-a8a6-18da3a700f1a
-source-git-commit: 061197048885a30249bd18af7f8b24cb71def742
+source-git-commit: 5ab598d904bf900bcb4c01680e1b4730881ff8a5
 workflow-type: tm+mt
 source-wordcount: '410'
 ht-degree: 11%
@@ -22,8 +22,6 @@ Adobe Campaign har flera kopplingar som gör att du kan kommunicera med externa 
 
 Kombinera Adobe Experience Cloud lösningar för att modernisera implementeringen.
 
-![](../assets/do-not-localize/speech.png)  Som användare av hanterade Cloud Service [kontakta Adobe](../start/campaign-faq.md#support) för att koppla Campaign till Adobe Experience Cloud tjänster och lösningar.
-
 Campaign v8 kan ansluta till följande Adobe-lösningar. Bläddra bland länkarna för att lära dig mer om användningsfall, konfiguration och riktlinjer:
 
 * Adobe Analytics.[Läs mer](../connect/ac-aa.md)
@@ -36,9 +34,14 @@ Campaign v8 kan ansluta till följande Adobe-lösningar. Bläddra bland länkarn
 
 Du kan också kombinera **målgrupper** och **resurser** i olika Experience Cloud-lösningar med funktioner för resursdelning och målgruppsdelning.
 
-Läs mer om **Målgruppsdelning** mellan Campaign och Experience Cloud i [Campaign Classic v7 - dokumentation](https://experienceleague.adobe.com/docs/campaign-classic/using/integrating-with-adobe-experience-cloud/audience-sharing/sharing-audiences-with-adobe-experience-cloud.html#integrating-with-adobe-experience-cloud)
+Läs mer om **Målgruppsdelning** mellan Campaign och Experience Cloud i [Campaign Classic v7 - dokumentation](https://experienceleague.adobe.com/docs/campaign-classic/using/integrating-with-adobe-experience-cloud/audience-sharing/sharing-audiences-with-adobe-experience-cloud.html#integrating-with-adobe-experience-cloud){target="_blank"}.
 
-Läs mer om **Resursdelning** mellan Campaign och Experience Cloud i [Campaign Classic v7 - dokumentation](https://experienceleague.adobe.com/docs/campaign-classic/using/integrating-with-adobe-experience-cloud/asset-sharing/sharing-assets-with-adobe-experience-cloud.html#integrating-with-adobe-experience-cloud)
+Läs mer om **Resursdelning** mellan Campaign och Experience Cloud i [Campaign Classic v7 - dokumentation](https://experienceleague.adobe.com/docs/campaign-classic/using/integrating-with-adobe-experience-cloud/asset-sharing/sharing-assets-with-adobe-experience-cloud.html#integrating-with-adobe-experience-cloud){target="_blank"}.
+
+>[!NOTE]
+>
+>Som användare av hanterade Cloud Service [kontakta Adobe](../start/campaign-faq.md#support) för att koppla Campaign till Adobe Experience Cloud tjänster och lösningar.
+
 
 ## Integrera med CRM Connector{#gs-crm-connectors}
 

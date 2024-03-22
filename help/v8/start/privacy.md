@@ -5,7 +5,7 @@ feature: Privacy
 role: Admin
 level: Beginner
 exl-id: 0f81d318-dbfd-45c8-b391-b1d14d23e9c8
-source-git-commit: 9df599ec0a898a1af16cb92d334d50375fde86ba
+source-git-commit: 5ab598d904bf900bcb4c01680e1b4730881ff8a5
 workflow-type: tm+mt
 source-wordcount: '930'
 ht-degree: 36%
@@ -21,7 +21,7 @@ Adobe erbjuder datakontrollanter de verktyg som behövs för att skapa och bearb
 
 Om du vill hantera sekretessbegäran i Campaign måste du först [definiera ett namnutrymme](#namespaces). Du kan sedan skapa och hantera förfrågningar om sekretess. Om du vill utföra sekretessförfrågningar använder du **Adobe Privacy Service** integrering. Sekretessförfrågningar som skickas från Privacy Servicen till alla Adobe Experience Cloud-lösningar hanteras automatiskt av Campaign via ett dedikerat arbetsflöde. [Läs mer](#create-privacy-request)
 
-![](../assets/do-not-localize/speech.png) Läs mer om **Rätt till åtkomst** och **Rätt att glömma** (ta bort begäran) i [Adobe Campaign Classic v7-dokumentation](https://experienceleague.adobe.com/docs/campaign-classic/using/getting-started/privacy/privacy-management.html#right-access-forgotten){target="_blank"}.
+Läs mer om **Rätt till åtkomst** och **Rätt att glömma** (ta bort begäran) i [Adobe Campaign Classic v7-dokumentation](https://experienceleague.adobe.com/docs/campaign-classic/using/getting-started/privacy/privacy-management.html#right-access-forgotten){target="_blank"}.
 
 <!--
 >[!NOTE]

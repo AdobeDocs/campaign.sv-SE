@@ -5,7 +5,7 @@ feature: Overview
 role: User
 level: Intermediate
 exl-id: 09562b6c-3d3d-4808-a70b-202172867f46
-source-git-commit: 061197048885a30249bd18af7f8b24cb71def742
+source-git-commit: 5ab598d904bf900bcb4c01680e1b4730881ff8a5
 workflow-type: tm+mt
 source-wordcount: '1146'
 ht-degree: 3%
@@ -83,18 +83,18 @@ Innan du börjar skicka meddelanden och skapa marknadsföringskampanjer måste d
    Kampanjer, leveranser, jobb eller arbetsflöden är alla baserade på en mall som lagrar viktiga inställningar och funktioner. En inbyggd mall tillhandahålls för varje komponent som ingen specifik konfiguration har definierats för. Du måste konfigurera och anpassa mallar efter dina behov och göra dem tillgängliga för slutanvändarna.
 
 
-   Lär dig hur du arbetar med kampanjmallar i [den här sidan](https://experienceleague.adobe.com/docs/campaign/automation/campaign-orchestration/marketing-campaign-templates.html)
+   Lär dig hur du arbetar med kampanjmallar i [den här sidan](https://experienceleague.adobe.com/docs/campaign/automation/campaign-orchestration/marketing-campaign-templates.html){target="_blank"}.
 
-   Lär dig hur du konfigurerar en arbetsflödesmall i [den här sidan](https://experienceleague.adobe.com/docs/campaign/automation/workflows/introduction/build-a-workflow.html)
+   Lär dig hur du konfigurerar en arbetsflödesmall i [den här sidan](https://experienceleague.adobe.com/docs/campaign/automation/workflows/introduction/build-a-workflow.html){target="_blank"}.
 
-   Läs mer om e-postmallar i [Campaign Classic v7 - dokumentation](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/using-delivery-templates/about-templates.html){target="_blank"}
+   Läs mer om e-postmallar i [Campaign Classic v7 - dokumentation](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/using-delivery-templates/about-templates.html){target="_blank"}.
 
 
 1. **Konfigurera typologiregler**
 
    Använd regler för kampanjtypologier för att filtrera, styra och övervaka leveransen. Trötthetsreglerna styr till exempel frekvens och kvantitet för meddelanden för att undvika att mottagarna blir för många. När typologireglerna är implementerade refereras de i leveranser.
 
-   Läs mer om typologier och trötthetshantering i [det här avsnittet](https://experienceleague.adobe.com/docs/campaign/automation/campaign-optimization/campaign-typologies.html).
+   Läs mer om typologier och trötthetshantering i [det här avsnittet](https://experienceleague.adobe.com/docs/campaign/automation/campaign-optimization/campaign-typologies.html){target="_blank"}.
 
 1. **Bekanta dig med Campaigns inbyggda datamodell**
 

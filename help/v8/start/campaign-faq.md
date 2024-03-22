@@ -5,7 +5,7 @@ feature: Overview
 role: User
 level: Beginner
 exl-id: 027f5478-d86b-42be-b63d-ec8f5e1dd83d
-source-git-commit: 061197048885a30249bd18af7f8b24cb71def742
+source-git-commit: 5ab598d904bf900bcb4c01680e1b4730881ff8a5
 workflow-type: tm+mt
 source-wordcount: '706'
 ht-degree: 18%
@@ -22,7 +22,9 @@ Behöver du hjälp medan du arbetar med Campaign? Läs de viktigaste frågorna o
 
    Denna regelbundna uppdateringsfrekvens syftar till att få den senaste och bästa informationen i händerna, hålla miljön säker och förbättra din upplevelse av produkten. Därför anser vi att det är viktigt att du kör den senaste versionen av Adobe Campaign.
 
-   ![](../assets/do-not-localize/speech.png)  Som användare av hanterade Cloud Service uppgraderas din instans av Adobe i varje ny version.
+   >[!NOTE]
+   >
+   >Som användare av hanterade Cloud Service uppgraderas din instans av Adobe i varje ny version.
 
 1. **Hur ansluter jag till Campaign v8?**
 
@@ -65,7 +67,9 @@ Behöver du hjälp medan du arbetar med Campaign? Läs de viktigaste frågorna o
 
    En underdomän är en division av domänen som kan användas för att isolera varumärken eller olika typer av trafik (transaktionsmeddelanden, marknadsföringsinformation osv.).
 
-   ![](../assets/do-not-localize/speech.png) Som användare av hanterade Cloud Service kan du kontakta Adobe för att delegera dina underdomäner till Adobe.
+   >[!NOTE]
+   >
+   >Som användare av hanterade Cloud Service kan du kontakta Adobe för att delegera dina underdomäner till Adobe.
 
 1. **Kan jag som Campaign Classic v7-användare migrera till Campaign v8?**
 
@@ -73,7 +77,7 @@ Behöver du hjälp medan du arbetar med Campaign? Läs de viktigaste frågorna o
 
    Campaign v8 är **endast** finns som hanterad Cloud Service och kan inte distribueras på plats eller i hybridmiljöer.
 
-   ![](../assets/do-not-localize/speech.png) Mer information om migreringsprocessen får du av Adobe.
+   Mer information om migreringsprocessen får du av Adobe.
 
 1. **Hur laddar jag ned Campaign?**
 

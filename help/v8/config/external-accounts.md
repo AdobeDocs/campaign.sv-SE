@@ -5,10 +5,10 @@ feature: Application Settings, External Account
 role: Admin
 level: Beginner, Intermediate, Experienced
 exl-id: 9634b576-2854-4ea9-ba0d-8efaab2c4aee
-source-git-commit: f463c5747b844544ba561a63e4cb0359c0c258c8
+source-git-commit: 5ab598d904bf900bcb4c01680e1b4730881ff8a5
 workflow-type: tm+mt
-source-wordcount: '1089'
-ht-degree: 4%
+source-wordcount: '1037'
+ht-degree: 3%
 
 ---
 
@@ -35,7 +35,7 @@ Du kan få åtkomst till externa konton från Adobe Campaign **[!UICONTROL Explo
 
 Följande tekniska konton används av Adobe Campaign för att aktivera och köra specifika processer.
 
-### Studsmeddelanden {#bounce-mails-external-account}
+### Studsa e-post {#bounce-mails-external-account}
 
 >[!NOTE]
 >
@@ -44,7 +44,7 @@ Följande tekniska konton används av Adobe Campaign för att aktivera och köra
 
 The **Studsa e-post** externt konto anger det externa POP3-konto som ska användas för att ansluta till e-posttjänsten. Alla servrar som konfigurerats för POP3-åtkomst kan användas för att ta emot returmeddelanden.
 
-Läs mer om inkommande e-post i [den här sidan](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/event-activities/inbound-emails.html).
+Läs mer om inkommande e-post i [den här sidan](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/event-activities/inbound-emails.html){target="_blank"}.
 
 ![](assets/bounce_external_1.png)
 
@@ -68,7 +68,7 @@ Konfigurera **[!UICONTROL Bounce mails (defaultPopAccount)]** externt konto:
 
 >[!CAUTION]
 >
->Innan du konfigurerar ditt POP3-externa konto med Microsoft OAuth 2.0 måste du först registrera programmet i Azure-portalen. Mer information om detta hittar du på den här [sidan](https://docs.microsoft.com/en-us/azure/active-directory/develop/quickstart-register-app){target="_blank"}.
+>Innan du konfigurerar ditt POP3-externa konto med Microsoft OAuth 2.0 måste du först registrera programmet i Azure-portalen. Mer information finns i [page](https://docs.microsoft.com/en-us/azure/active-directory/develop/quickstart-register-app){target="_blank"}.
 >
 
 Om du vill konfigurera en POP3-extern med Microsoft OAuth 2.0 ska du kontrollera **[!UICONTROL Microsoft OAuth 2.0]** och fylla i följande fält:
@@ -83,7 +83,7 @@ Om du vill konfigurera en POP3-extern med Microsoft OAuth 2.0 ska du kontrollera
 
   När du har angett de olika inloggningsuppgifterna kan du klicka på **[!UICONTROL Setup the connection]** för att slutföra konfigurationen av ditt externa konto.
 
-### Dirigering {#routing}
+### Routning {#routing}
 
 The **[!UICONTROL Routing]** Med ett externt konto kan du konfigurera varje kanal som är tillgänglig i Adobe Campaign beroende på vilka paket som är installerade.
 
@@ -116,7 +116,7 @@ När det gäller transaktionsmeddelanden är körningsinstanserna länkade till 
 
 ## Externa konton för överföringsdata {#transfer-data-external-accounts}
 
-Dessa externa konton kan användas för att importera eller exportera data till Adobe Campaign med en **[!UICONTROL Transfer file]** arbetsflödesaktivitet. Läs mer om **Filöverföring** i arbetsflöden i [den här sidan](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/event-activities/file-transfer.html).
+Dessa externa konton kan användas för att importera eller exportera data till Adobe Campaign med en **[!UICONTROL Transfer file]** arbetsflödesaktivitet. Läs mer om **Filöverföring** i arbetsflöden i [den här sidan](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/event-activities/file-transfer.html){target="_blank"}.
 
 * **FTP och SFTP** - **FTP** Med ett externt konto kan du konfigurera och testa åtkomst till en server utanför Adobe Campaign. Om du vill konfigurera anslutningar med externa system som SFTP- eller FTP-servrar 898 som används för filöverföringar kan du skapa egna externa konton.
 
@@ -124,7 +124,7 @@ Dessa externa konton kan användas för att importera eller exportera data till 
 
   >[!NOTE]
   >
-  >Från och med version 8.5 kan du nu autentisera säkert med en privat nyckel när du konfigurerar ditt externa SFTP-konto. [Läs mer om nyckelhantering](https://experienceleague.adobe.com/docs/control-panel/using/sftp-management/key-management.html)
+  >Från och med version 8.5 kan du nu autentisera säkert med en privat nyckel när du konfigurerar ditt externa SFTP-konto. [Läs mer om nyckelhantering](https://experienceleague.adobe.com/docs/control-panel/using/sftp-management/key-management.html){target="_blank"}.
 
 * **Amazon Simple Storage Service (S3)** - **AWS S3** kan användas för att importera eller exportera data till Adobe Campaign med en **[!UICONTROL Transfer file]** arbetsflödesaktivitet. När du konfigurerar det nya externa kontot måste du ange följande information:
 

@@ -5,10 +5,10 @@ feature: Interaction, Offers
 role: User, Admin
 level: Beginner
 exl-id: d39b1768-4c39-4d64-b9b6-d9c9424a2b0d
-source-git-commit: 567c2e84433caab708ddb9026dda6f9cb717d032
+source-git-commit: 5ab598d904bf900bcb4c01680e1b4730881ff8a5
 workflow-type: tm+mt
-source-wordcount: '1265'
-ht-degree: 3%
+source-wordcount: '1241'
+ht-degree: 2%
 
 ---
 
@@ -76,7 +76,7 @@ Med flera arbetsflödesaktiviteter kan du definiera hur erbjudanden presenteras:
 
 ### Berikning {#enrichment}
 
-The **Berikning** Med -aktivitet kan du lägga till erbjudanden eller länkar till erbjudanden för mottagare.[Läs mer](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/targeting-activities/enrichment.html)
+The **Berikning** Med -aktivitet kan du lägga till erbjudanden eller länkar till erbjudanden för mottagare.[Läs mer](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/targeting-activities/enrichment.html){target="_blank"}.
 
 Du kan till exempel förbättra data för en mottagarfråga före en leverans.
 
@@ -92,7 +92,7 @@ Det finns två metoder för att ange erbjudandeförslag.
 När du har konfigurerat **Fråga** aktivitet:
 
 1. Lägg till och öppna en **Berikning** aktivitet.
-1. Välj **[!UICONTROL Enrichment]** **[!UICONTROL Add data]** i flik .
+1. I **[!UICONTROL Enrichment]** flik, välja **[!UICONTROL Add data]**.
 1. Välj **[!UICONTROL An offer proposition]** i de typer av data som ska läggas till.
 
    ![](assets/int_enrichment_offer2.png)
@@ -118,7 +118,7 @@ När du har konfigurerat **Fråga** aktivitet:
 
 Du kan även referera till en länk till ett erbjudande i en **Berikning** aktivitet.
 
-Följ stegen nedan för att göra detta:
+Gör så här:
 
 1. Välj **[!UICONTROL Add data]** i aktivitetens **[!UICONTROL Enrichment]** -fliken.
 1. I fönstret där du väljer vilken typ av data som ska läggas till väljer du **[!UICONTROL A link]**.
@@ -163,7 +163,7 @@ Leveransen lagrar automatiskt rangordningen och vikten av erbjudandena. Den här
 
 The **[!UICONTROL Offer engine]** Med -aktiviteten kan du även ange ett anrop till erbjudandemotorn före leveransen.
 
-Mer information finns på **Erbjudandemotor** aktivitet, se [den här sidan](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/targeting-activities/offer-engine.html)
+Mer information finns på **Erbjudandemotor** aktivitet, se [den här sidan](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/targeting-activities/offer-engine.html){target="_blank"}.
 
 Denna verksamhet följer samma princip som **Berikning** Aktivitet med ett motoranrop genom att berika de inkommande populationsdata med ett erbjudande som beräknas av motorn, före leverans.
 
@@ -186,7 +186,7 @@ När du har konfigurerat **Fråga** aktivitet:
 
 The **[!UICONTROL Offers by cell]** Med -aktiviteten kan du distribuera den inkommande populationen (från en fråga till exempel) till flera segment och ange ett erbjudande som ska visas för vart och ett av dessa segment.
 
-Mer information finns på **Erbjudande per cell** aktivitet, se [den här sidan](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/targeting-activities/offers-by-cell.html)
+Mer information finns på **Erbjudande per cell** aktivitet, se [den här sidan](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/targeting-activities/offers-by-cell.html){target="_blank"}.
 
 Gör så här:
 

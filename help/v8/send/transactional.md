@@ -5,7 +5,7 @@ feature: Transactional Messaging
 role: User
 level: Beginner, Intermediate
 exl-id: 06fdb279-3776-433f-8d27-33d016473dee
-source-git-commit: 3c7455f348468a8f00fb853a3269a1d63b81e7b8
+source-git-commit: 5ab598d904bf900bcb4c01680e1b4730881ff8a5
 workflow-type: tm+mt
 source-wordcount: '1491'
 ht-degree: 1%
@@ -14,9 +14,11 @@ ht-degree: 1%
 
 # Kom igång med Transactional Messaging{#send-transactional-messages}
 
-Transactional Messaging (Message Center) är en Campaign-modul som är utformad för att hantera utlösarmeddelanden. Dessa meddelanden genereras från händelser som utlöses från informationssystem och kan vara: faktura, orderbekräftelse, leveransbekräftelse, lösenordsändring, meddelande om produkttillgänglighet, kontoutdrag, skapande av webbkonto osv.
+Transactional Messaging (Message Center) är en Campaign-modul som är utformad för att hantera utlösarmeddelanden. Dessa meddelanden genereras från händelser som utlöses från informationssystem och kan vara: faktura, orderbekräftelse, leveransbekräftelse, lösenordsändring, meddelande om otillgänglighet för produkt, kontobesked, skapande av webbkonto osv.
 
-![](../assets/do-not-localize/speech.png)  Som användare av hanterade Cloud Services [kontakta Adobe](../start/campaign-faq.md#support){target="_blank"} för att konfigurera Campaign Transactional Messaging i er miljö.
+>[!NOTE]
+>
+>Som användare av hanterade Cloud Service [kontakta Adobe](../start/campaign-faq.md#support){target="_blank"} för att konfigurera Campaign Transactional Messaging i er miljö.
 
 Transaktionsmeddelanden används för att skicka:
 
@@ -28,13 +30,13 @@ Inställningar för transaktionsmeddelanden finns i [det här avsnittet](../conf
 
 Förstå transaktionsmeddelandearkitekturen på [den här sidan](../architecture/architecture.md#transac-msg-archi).
 
-## Driftspolicy för transaktionsmeddelanden {#transactional-messaging-operating-principle}
+## Transactional messaging operating policy policy {#transactional-messaging-operating-principle}
 
 Adobe Campaign Transactional Messaging-modulen integreras i ett informationssystem som returnerar händelser som ska ändras till personaliserade transaktionsmeddelanden. Dessa meddelanden kan skickas individuellt eller gruppvis via e-post, SMS eller push-meddelanden.
 
 Tänk dig att du är ett företag med en webbplats där kunderna kan köpa produkter.
 
-Med Adobe Campaign kan du skicka ett e-postmeddelande till kunder som har lagt till produkter i kundvagnen. När någon av dem lämnar er webbplats utan att gå igenom sina inköp (en extern händelse som utlöser en Campaign-händelse) skickas ett e-postmeddelande om att kunden har lämnat en kundvagn (leverans av transaktionsmeddelande).
+Med Adobe Campaign kan du skicka ett e-postmeddelande till kunder som har lagt till produkter i kundvagnen. När någon av dem lämnar er webbplats utan att gå igenom sina inköp (en extern händelse som utlöser en Campaign-händelse) skickas ett e-postmeddelande om att kunden överger en kundvagn automatiskt till dem (leverans av transaktionsmeddelanden).
 
 De viktigaste stegen för att införa detta är följande:
 
@@ -57,7 +59,7 @@ När [skapa en meddelandemall](#create-message-template)väljer du den typ av h�
 
 Följ stegen nedan för att skapa händelsetyper som ska bearbetas av Adobe Campaign:
 
-1. Bläddra till **[!UICONTROL Administration > Platform > Enumerations]** mapp för Campaign Explorer.
+1. Gå till **[!UICONTROL Administration > Platform > Enumerations]** mapp för Campaign Explorer.
 1. Välj **[!UICONTROL Event type]** uppräkning från listan.
 1. Klicka **[!UICONTROL Add]** för att skapa ett uppräkningsvärde. Detta kan vara en orderbekräftelse, lösenordsändring, orderleveransändring osv.
 
@@ -109,9 +111,9 @@ Definitionen av transaktionens meddelandeinnehåll är densamma som för alla le
 >[!CAUTION]
 >
 >Bilderna i meddelandet måste vara tillgängliga för alla. Adobe Campaign har ingen mekanism för överföring av bilder för transaktionsmeddelanden.\
->Till skillnad från i JSSP eller webApp, `<%=` har ingen standardescape-konvertering.
+>Till skillnad från i JSSP eller webApp, `<%=` har ingen standardflytning.
 >
->Du måste undvika alla data som kommer från händelsen på rätt sätt. Detta beror på hur det här fältet används. Använd till exempel encodeURIComponent i en URL. Om du vill visas i HTML kan du använda escapeXMLString.
+>Du måste undvika alla data som kommer från händelsen på rätt sätt. Den här inställningen beror på hur det här fältet används. Använd till exempel encodeURIComponent i en URL. Om du vill visas i HTML kan du använda escapeXMLString.
 
 När du har definierat meddelandeinnehållet kan du integrera händelseinformation i meddelandetexten och anpassa den. Händelseinformation infogas i texten tack vare personaliseringstaggar.
 
@@ -184,7 +186,7 @@ This information enables you to personalize message content using personalizatio
 
 När du har skapat en eller flera dirigerade adresser och meddelandetexten kan du förhandsgranska meddelandet och kontrollera dess personalisering.
 
-1. Klicka på knappen **[!UICONTROL Preview]** tabbtangenten och sedan **[!UICONTROL A seed address]** i listrutan.
+1. Klicka på knappen **[!UICONTROL Preview]** tabbtangenten och sedan välja **[!UICONTROL A seed address]** i listrutan.
 
    ![](assets/messagecenter_preview_1.png)
 
@@ -203,7 +205,7 @@ Om du vill skicka ett bevis på ett transaktionsmeddelande måste du utföra fö
 * Skapa en eller flera [dirigeringsadresser](#add-seeds) med personaliseringstest
 * Skapa meddelandeinnehållet
 
-Så här skickar du korrekturet:
+Skicka korrekturet:
 
 1. Klicka på **[!UICONTROL Send a proof]** i leveransfönstret.
 1. Analysera leveransen.
@@ -215,7 +217,7 @@ Så här skickar du korrekturet:
 
    ![](assets/messagecenter_send_proof_002.png)
 
-Korrektur kan öppnas i varje mall via **[!UICONTROL Audit]** -fliken.
+Du kan komma åt korrektur i varje mall via **[!UICONTROL Audit]** -fliken.
 
 ![](assets/messagecenter_send_proof_003.png)
 
@@ -257,15 +259,15 @@ När en mall har publicerats, om motsvarande händelse aktiveras, Adobe Campaign
 
 När en meddelandemall har publicerats <!--on the execution instances-->kan den avpubliceras.
 
-* En publicerad mall kan fortfarande anropas om motsvarande händelse aktiveras: Om du inte längre använder en meddelandemall bör du avpublicera den. Detta för att undvika att skicka ett oönskat transaktionsmeddelande av misstag.
+* En publicerad mall kan fortfarande anropas om motsvarande händelse aktiveras: om du inte längre använder en meddelandemall bör du avpublicera den. Detta för att undvika att skicka ett oönskat transaktionsmeddelande av misstag.
 
-   Du publicerade till exempel en meddelandemall som du bara använder för julkampanjer. Du kanske vill avpublicera den när julperioden är slut och publicera den igen nästa år.
+  Du publicerade till exempel en meddelandemall som du bara använder för julkampanjer. Du kanske vill avpublicera den när julperioden är slut och publicera den igen nästa år.
 
 * Du kan inte heller ta bort en transaktionsmeddelandemall som har **[!UICONTROL Published]** status. Du måste avpublicera det först.
 
 Följ stegen nedan om du vill avpublicera en transaktionsmeddelandemall.
 
-1. Bläddra till **[!UICONTROL Message Center > Transactional message templates]** mapp.
+1. Gå till **[!UICONTROL Message Center > Transactional message templates]** mapp.
 1. Välj den mall som ska avpubliceras.
 1. Klicka på **[!UICONTROL Unpublish]**.
 1. Klicka på **[!UICONTROL Start]**.
@@ -278,8 +280,8 @@ När borttagningen är klar:
 
 * Båda meddelandemallarna (används för batch- och realtidshändelser) tas bort<!-- from each execution instance-->.
 
-   De visas inte längre i **[!UICONTROL Administration > Production > Message Center Execution > Default > Transactional message templates]** mapp.
+  De visas inte längre i **[!UICONTROL Administration > Production > Message Center Execution > Default > Transactional message templates]** mapp.
 
 * När en mall inte har publicerats kan du ta bort den<!-- from the control instance-->.
 
-   Om du vill göra det markerar du den i listan och klickar på knappen **[!UICONTROL Delete]** överst till höger på skärmen.
+  Om du vill göra det markerar du den i listan och klickar på **[!UICONTROL Delete]** överst till höger på skärmen.

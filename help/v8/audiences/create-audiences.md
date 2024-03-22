@@ -5,9 +5,9 @@ feature: Audiences, Profiles
 role: User
 level: Beginner
 exl-id: 6fbe5616-7b8b-4504-988b-2bbbfd062548
-source-git-commit: 2ce1ef1e935080a66452c31442f745891b9ab9b3
+source-git-commit: 5ab598d904bf900bcb4c01680e1b4730881ff8a5
 workflow-type: tm+mt
-source-wordcount: '785'
+source-wordcount: '773'
 ht-degree: 1%
 
 ---
@@ -33,24 +33,24 @@ I den här videon får du lära dig mer om Lists hantering i Adobe Campaign.
 
 Följ stegen nedan för att skapa en lista över kontakter:
 
-1. Klicka på **[!UICONTROL Create]** och markera **[!UICONTROL New list]**.
+1. Klicka på **[!UICONTROL Create]** knapp och markera **[!UICONTROL New list]**.
 
    ![](assets/new-list.png)
 
-1. Ange informationen i dialogrutan **[!UICONTROL Edit]** i fönstret där listan skapades.
+1. Ange informationen i dialogrutan **[!UICONTROL Edit]** -fliken i fönstret där listan skapades.
 
    ![](assets/list-details.png)
 
    * Ange listnamnet i dialogrutan **[!UICONTROL Label]** och vid behov ändra det interna namnet.
    * Lägg till en beskrivning av den här listan.
-   * Du kan ange ett förfallodatum: när det här datumet har nåtts rensas listan och tas automatiskt bort.
+   * Du kan ange ett förfallodatum: när det här datumet nås rensas listan och tas automatiskt bort.
 
 
 1. I **[!UICONTROL Content]** flik, klicka **[!UICONTROL Add]** för att välja de profiler som tillhör listan.
 
    ![](assets/add-profiles-to-a-list.png)
 
-   Du kan skapa en ny profil och lägga till den i listan direkt från det här fönstret med hjälp av **[!UICONTROL Create]** ikon. Profilen läggs till i databasen.
+   Du kan skapa en ny profil och lägga till den i listan direkt från det här fönstret med **[!UICONTROL Create]** -ikon. Profilen läggs till i databasen.
 
 1. Klicka **[!UICONTROL Save]** för att spara listan. Sedan läggs den till i översikten över listor.
 
@@ -59,7 +59,7 @@ Följ stegen nedan för att skapa en lista över kontakter:
 
 Du kan välja profiler och lägga till dem i en lista. Gör så här:
 
-1. Välj profiler i Campaign Explorer och högerklicka.
+1. I Campaign Explorer väljer du profiler och högerklickar.
 
    Dessa profiler kan filtreras så att de uppfyller vissa villkor.
 
@@ -81,7 +81,7 @@ Om du avmarkerar **[!UICONTROL No trace of this job is saved in the database]** 
 
 I fönstrets övre del kan du övervaka körningen. The **[!UICONTROL Stop]** kan du stoppa processen. Kontakter som redan har bearbetats länkas till listan.
 
-När körningen är klar går du till **[!UICONTROL Profiles and Targets > Lists]** och välj listan: den **[!UICONTROL Content]** visas de profiler som är länkade till den här listan.
+När körningen är klar går du till **[!UICONTROL Profiles and Targets > Lists]** och välj en lista: **[!UICONTROL Content]** visas de profiler som är länkade till den här listan.
 
 
 ## Skapa en lista med ett arbetsflöde  {#create-a-list-wf}
@@ -103,9 +103,9 @@ I exemplet nedan skapar du en lista med alla mottagare mellan 25 och 40.
 
    ![](assets/targeting-wf-age-filter.png)
 
-   Lär dig hur du skapar en fråga i ett arbetsflöde i [det här avsnittet](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/targeting-activities/query.html).
+   Lär dig hur du skapar en fråga i ett arbetsflöde i [det här avsnittet](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/targeting-activities/query.html){target="_blank"}.
 
-1. Lägg till en etikett för frågan och spara ändringarna.
+1. Lägg till en etikett för den här frågan och spara ändringarna.
 1. Lägg till en **[!UICONTROL List update]** och redigera.
 
    ![](assets/list-update-activity.png)
@@ -124,11 +124,11 @@ I exemplet nedan skapar du en lista med alla mottagare mellan 25 och 40.
 
    ![](assets/access-new-list.png)
 
-   Du kan göra det här arbetsflödet återkommande genom att lägga till en schemaläggare i arbetsflödet. [Läs mer](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/flow-control-activities/scheduler.html).
+   Du kan göra det här arbetsflödet återkommande genom att lägga till en schemaläggare i arbetsflödet. [Läs mer](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/flow-control-activities/scheduler.html){target="_blank"}.
 
 ## Ta bort en profil från en lista {#remove-a-profile-from-a-list}
 
-Om du vill ta bort en profil från en lista redigerar du listan och väljer profilen i dialogrutan **[!UICONTROL Content]** klickar du på **[!UICONTROL Delete]** ikon.
+Om du vill ta bort en profil från en lista redigerar du listan och väljer profilen i dialogrutan **[!UICONTROL Content]** klickar du på **[!UICONTROL Delete]** -ikon.
 
 ## Ta bort en lista med profiler {#delete-a-list-of-profiles}
 

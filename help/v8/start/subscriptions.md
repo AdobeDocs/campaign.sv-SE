@@ -5,10 +5,10 @@ feature: Subscriptions
 role: User
 level: Beginner
 exl-id: d5933b12-8664-49b8-953c-ea98eb428cc2
-source-git-commit: 061197048885a30249bd18af7f8b24cb71def742
+source-git-commit: 5ab598d904bf900bcb4c01680e1b4730881ff8a5
 workflow-type: tm+mt
 source-wordcount: '391'
-ht-degree: 4%
+ht-degree: 3%
 
 ---
 
@@ -39,7 +39,7 @@ Så här prenumererar du (anmäler dig) en profil för en tjänst:
 
 * Importera mottagare och prenumerera automatiskt på en informationstjänst. Det gör du genom att välja den berörda tjänsten i det sista steget i importguiden.
 
-  Läs mer i [Campaign Classic v7 - dokumentation](https://experienceleague.adobe.com/docs/campaign-classic/using/getting-started/importing-and-exporting-data/generic-imports-exports/executing-import-jobs.html#step-5---additional-step-when-importing-recipients){target="_blank"}
+  Läs mer i [Campaign Classic v7 - dokumentation](https://experienceleague.adobe.com/docs/campaign-classic/using/getting-started/importing-and-exporting-data/generic-imports-exports/executing-import-jobs.html#step-5---additional-step-when-importing-recipients){target="_blank"}.
 
 * Använd ett webbformulär så att mottagarna kan prenumerera på en tjänst.
 
@@ -49,14 +49,14 @@ Så här prenumererar du (anmäler dig) en profil för en tjänst:
 
   ![](assets/web-app.png)
 
-  Läs mer i [Campaign Classic v7 - dokumentation](https://experienceleague.adobe.com/docs/campaign-classic/using/designing-content/web-forms/use-cases--web-forms.html#create-a-subscription--form-with-double-opt-in){target="_blank"}
+  Läs mer i [Campaign Classic v7 - dokumentation](https://experienceleague.adobe.com/docs/campaign-classic/using/designing-content/web-forms/use-cases--web-forms.html#create-a-subscription--form-with-double-opt-in){target="_blank"}.
 
 
 * Skapa ett målarbetsflöde och använda en **[!UICONTROL Subscription service]** aktivitet.
 
   ![](assets/wf-subscription.png)
 
-  Läs mer på [den här sidan](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/targeting-activities/subscription-services.html).
+  Läs mer i [den här sidan](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/targeting-activities/subscription-services.html){target="_blank"}.
 
 Så här avanmäler du en profil från en tjänst:
 
@@ -71,7 +71,7 @@ Så här avanmäler du en profil från en tjänst:
 * Ange en tidsgräns för informationstjänsten: mottagarna kommer att sluta prenumerera automatiskt när giltighetsperioden har gått ut. Den här perioden anges på fliken Redigera i tjänstens egenskaper. Den uttrycks i dagar.
 * Ställ in ett avabonnemangsarbetsflöde för en population.
 
-Läs mer i [Campaign Classic v7 - dokumentation](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/subscriptions-and-referrals/managing-subscriptions.html#unsubscribing-a-recipient-from-a-service){target="_blank"}
+Läs mer i [Campaign Classic v7 - dokumentation](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/subscriptions-and-referrals/managing-subscriptions.html#unsubscribing-a-recipient-from-a-service){target="_blank"}.
 
 
 >[!CAUTION]

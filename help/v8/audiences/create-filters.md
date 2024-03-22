@@ -5,7 +5,7 @@ feature: Audiences, Profiles
 role: User
 level: Beginner
 exl-id: 873578f6-6af9-4d0c-8df3-cce320fc6a4e
-source-git-commit: 09db0cc1a14bffefe8d1b8d0d5a06d5b6517a5bb
+source-git-commit: 5ab598d904bf900bcb4c01680e1b4730881ff8a5
 workflow-type: tm+mt
 source-wordcount: '1607'
 ht-degree: 0%
@@ -327,10 +327,10 @@ Om du vill utföra avancerade filtreringsfunktioner använder du funktioner för
 
 Lär dig hur du skapar avancerade frågor i dessa kompletta exempel:
 
-* Lär dig hur du använder enkla mottagarattribut i [den här sidan](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/targeting-activities/query.html).
-* Lär dig filtrera efter mottagare som inte kontaktats under de senaste 7 dagarna på [den här sidan](https://experienceleague.adobe.com/docs/campaign/automation/workflows/use-cases/designing-queries/query-many-to-many-relationship.html).
-* Lär dig hur du återställer listan över operatorer som kan filtreras efter aktiva konton i [den här sidan](https://experienceleague.adobe.com/docs/campaign/automation/workflows/use-cases/designing-queries/create-a-filter.html).
-* Lär dig hur du skapar en målgrupp för e-postfödelsedag i  [den här sidan](https://experienceleague.adobe.com/docs/campaign/automation/workflows/use-cases/deliveries/send-a-birthday-email.html).
+* Lär dig hur du använder enkla mottagarattribut i [den här sidan](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/targeting-activities/query.html){target="_blank"}.
+* Lär dig filtrera efter mottagare som inte kontaktats under de senaste 7 dagarna på [den här sidan](https://experienceleague.adobe.com/docs/campaign/automation/workflows/use-cases/designing-queries/query-many-to-many-relationship.html){target="_blank"}.
+* Lär dig hur du återställer listan över operatorer som kan filtreras efter aktiva konton i [den här sidan](https://experienceleague.adobe.com/docs/campaign/automation/workflows/use-cases/designing-queries/create-a-filter.html){target="_blank"}.
+* Lär dig hur du skapar en målgrupp för e-postfödelsedag i  [den här sidan](https://experienceleague.adobe.com/docs/campaign/automation/workflows/use-cases/deliveries/send-a-birthday-email.html){target="_blank"}.
 
 
 ### Avancerade parametrar för fördefinierade filter {#param-for-data-filters}

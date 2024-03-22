@@ -5,9 +5,9 @@ description: Lär dig hur du konfigurerar en arbetsflödesmall för återkommand
 feature: Workflows, Data Management
 role: User, Data Engineer
 exl-id: 13f0091b-b62c-47df-9658-6631ba1cf03a
-source-git-commit: 28742db06b9ca78a4e952fcb0e066aa5ec344416
+source-git-commit: 5ab598d904bf900bcb4c01680e1b4730881ff8a5
 workflow-type: tm+mt
-source-wordcount: '1020'
+source-wordcount: '1017'
 ht-degree: 0%
 
 ---
@@ -42,7 +42,7 @@ I det här exemplet visas hur du anger ett förinställt arbetsflöde som kan å
 
    * I **[!UICONTROL Name of the file to load]** avsnitt, markera **[!UICONTROL Upload a file from the local machine]** och lämna fältet tomt. Varje gång ett nytt arbetsflöde skapas från den här mallen kan du här ange vilken fil du vill ha, så länge den motsvarar den definierade strukturen.
 
-     Du kan använda något av alternativen, men du måste ändra mallen därefter. Om du till exempel väljer **[!UICONTROL Specified in the transition]** kan du lägga till en **[!UICONTROL File Transfer]** aktivitet innan du hämtar filen som ska importeras från en FTP-/SFTP-server. Med S3- eller SFTP-anslutning kan du även importera segmentdata till Adobe Campaign med Adobe kunddataplattform i realtid. Mer information finns i [dokumentation](https://experienceleague.adobe.com/docs/experience-platform/destinations/catalog/email-marketing/adobe-campaign.html).
+     Du kan använda något av alternativen, men du måste ändra mallen därefter. Om du till exempel väljer **[!UICONTROL Specified in the transition]** kan du lägga till en **[!UICONTROL File Transfer]** aktivitet innan du hämtar filen som ska importeras från en FTP-/SFTP-server. Med S3- eller SFTP-anslutning kan du även importera segmentdata till Adobe Campaign med Adobe kunddataplattform i realtid. Mer information finns i [Adobe Experience Platform-dokumentation](https://experienceleague.adobe.com/docs/experience-platform/destinations/catalog/email-marketing/adobe-campaign.html){target="_blank"}.
 
      ![](assets/import_template_example1.png)
 

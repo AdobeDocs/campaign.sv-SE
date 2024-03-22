@@ -5,22 +5,22 @@ feature: Permissions
 role: User, Admin
 level: Beginner
 exl-id: 3d61abac-03df-42d3-a950-37e41a5a7756
-source-git-commit: 1baeb8827a0eab4f9487bb5e5afe4d779e00efe4
+source-git-commit: 5ab598d904bf900bcb4c01680e1b4730881ff8a5
 workflow-type: tm+mt
-source-wordcount: '308'
-ht-degree: 4%
+source-wordcount: '302'
+ht-degree: 2%
 
 ---
 
 # Kom igång med behörigheter
 
-I Adobe Campaign är **operatorer** och **operatorgrupper** representerar användarroller.
+I ADOBE CAMPAIGN **operatorer** och **operatorgrupper** representerar användarroller.
 
 En operator är en Adobe Campaign-användare som har behörighet att logga in och utföra åtgärder. Som standard lagras operatorer i **[!UICONTROL Administration > Access management > Operators]** nod.
 
 Adobe Campaign har inbyggda operatörsgrupper som Campaign Managers och Workflow Supervisors. Läs mer om behörigheter i [det här avsnittet](../start/gs-permissions.md)
 
-Som medlem i en operatorgrupp har en användare behörighet att utföra åtgärder som kallas namngivna rättigheter och har tillgång till data, som finns i mappar i **Utforskaren** vy. En operator kan vara medlem i flera operatorgrupper: behörigheter och åtkomstbehörigheter är additiva.
+Som medlem i en operatorgrupp har en användare behörighet att utföra åtgärder som kallas namngivna rättigheter och har tillgång till data, som finns i mappar i **Explorer** vy. En operator kan vara medlem i flera användargrupper: rättigheter och åtkomstbehörigheter är additiva.
 
 Namngivna rättigheter ger behörigheter till:
 
@@ -34,7 +34,9 @@ Varje operator måste länkas till en zon för att kunna logga in på en instans
 
 Operatorer är länkade till en säkerhetszon från sin profil i konsolen, som är tillgänglig i **[!UICONTROL Administration > Access management > Operators]** nod.
 
-![](../assets/do-not-localize/speech.png)  Som användare med hanterade Cloud Services anger Adobe säkerhetszonerna åt dig. Mer information finns i [kontakta Adobe](https://helpx.adobe.com/se/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html){target="_blank"}.
+>[!NOTE]
+>
+>Som användare med hanterade Cloud Service anger Adobe säkerhetszonerna åt dig. Mer information finns i [kontakta Adobe](https://helpx.adobe.com/se/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html){target="_blank"}.
 
 **Läs mer**
 

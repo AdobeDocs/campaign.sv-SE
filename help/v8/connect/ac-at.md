@@ -1,14 +1,14 @@
 ---
 title: Arbeta med Campaign och Adobe Target
-description: Lär dig hur du arbetar med Campaign och Adobe Target
+description: Lär dig arbeta med Campaign och Adobe Target
 feature: Target Integration
 role: Admin, User
 level: Beginner, Intermediate
 exl-id: 891a9a87-f3a4-405a-87ed-a7703be90a67
-source-git-commit: 65f4da979f0c5884797af0c3a835d948672b4a7c
+source-git-commit: 5ab598d904bf900bcb4c01680e1b4730881ff8a5
 workflow-type: tm+mt
-source-wordcount: '984'
-ht-degree: 1%
+source-wordcount: '970'
+ht-degree: 0%
 
 ---
 
@@ -16,18 +16,18 @@ ht-degree: 1%
 
 Anslut Campaign och Target för att inkludera ett erbjudande från Adobe Target i en e-postleverans från Adobe Campaign.
 
-Den här integreringen hjälper dig att implementera användningsexempel enligt följande: När en mottagare öppnar ett e-postmeddelande som skickas via Adobe Campaign kan du med ett anrop till Adobe Target visa en dynamisk version av innehållet. Den här dynamiska versionen beräknas utifrån de regler som anges i förväg när e-postmeddelandet skapas.
+Den här integreringen hjälper dig att implementera användningsexempel: när en mottagare öppnar ett e-postmeddelande som skickas via Adobe Campaign kan du med ett anrop till Adobe Target visa en dynamisk version av innehållet. Den här dynamiska versionen beräknas utifrån de regler som anges i förväg när e-postmeddelandet skapas.
 
 >[!NOTE]
->Integreringen stöder bara statiska bilder. De andra typerna av innehåll kan inte personaliseras.
-
-![](../assets/do-not-localize/speech.png)  Som användare av hanterade Cloud Services [kontakta Adobe](../start/campaign-faq.md#support) implementera utlösare för Experience Cloud med Campaign.
+>* Integreringen stöder bara statiska bilder. De andra typerna av innehåll kan inte anpassas.
+>
+>* Som användare av hanterade Cloud Service [kontakta Adobe](../start/campaign-faq.md#support) implementera utlösare för Experience Cloud med Campaign.
 
 Adobe Target kan använda följande datatyper:
 
 * Data från Adobe Campaign-databasen
 * Segment som är länkade till besökar-ID i Adobe Target, endast om de data som används inte omfattas av juridiska begränsningar
-* Adobe Target data: användaragent, IP-adress, geolokaliseringsdata
+* Adobe Target data: användaragent, IP-adress, data för geolokalisering
 
 ## Infoga ett dynamiskt innehåll
 
@@ -39,7 +39,7 @@ I det här e-postmeddelandet vill vi att en av bilderna ska variera dynamiskt en
 
 * E-postmeddelandet öppnas i Frankrike.
 * E-postmeddelandet öppnas i USA.
-* Om inget av dessa villkor gäller visas en standardbild.
+* Om inget av dessa villkor är uppfyllda visas en standardbild.
 
 ![](assets/target_4.png)
 
@@ -61,11 +61,11 @@ I Adobe Campaign finns det två sätt att infoga en dynamisk bild från Target i
 
 * Om du använder redigeraren för digitalt innehåll väljer du en befintlig bild och väljer **[!UICONTROL Insert]** > **[!UICONTROL Dynamic image served by Adobe Target]** i verktygsfältet.
 
-   ![](assets/target_5.png)
+  ![](assets/target_5.png)
 
 * Om du använder standardredigeraren placerar du markören där du vill infoga bilden och väljer **[!UICONTROL Include]** > **[!UICONTROL Dynamic image served by Adobe Target...]** från personaliseringsmenyn.
 
-   ![](assets/target_12.png)
+  ![](assets/target_12.png)
 
 Du kan sedan definiera bildparametrarna:
 
@@ -74,7 +74,7 @@ Du kan sedan definiera bildparametrarna:
 * The **[!UICONTROL Landing Page]** gör att du kan dirigera om standardbilden till en standardstartsida. Den här URL:en används bara när standardbilden visas i det slutliga e-postmeddelandet. Det är valfritt.
 * The **[!UICONTROL Additional decision parameters]**  definierar mappningen mellan de fält som definieras i Adobe Target-segmenten och Adobe Campaign-fälten. De Adobe Campaign-fält som används måste ha angetts i rutan. I vårt exempel har vi lagt till fältet Land.
 
-Om du använder Enterprise-behörigheter i inställningarna för Adobe Target lägger du till motsvarande egenskap i det här fältet. Läs mer om behörigheter för Target Enterprise i [den här sidan](https://experienceleague.adobe.com/docs/target/using/administer/manage-users/enterprise/properties-overview.html#administer).
+Om du använder Enterprise-behörigheter i inställningarna för Adobe Target lägger du till motsvarande egenskap i det här fältet. Läs mer om behörigheter för Target Enterprise i [Adobe Target-dokumentation](https://experienceleague.adobe.com/en/docs/target/using/administer/manage-users/enterprise/properties-overview#administer){target="_blank"}.
 
 ![](assets/target_13.png)
 
@@ -94,7 +94,7 @@ I vårt fall behöver vi två omdirigeringserbjudanden, det tredje (standarderbj
 
    ![](assets/target_6.png)
 
-1. Följ samma procedur för det återstående omdirigeringserbjudandet. Se denna [sida](https://experienceleague.adobe.com/docs/target/using/experiences/offers/offer-redirect.html#experiences) för mer information om detta.
+1. Följ samma procedur för det återstående omdirigeringserbjudandet. Mer information finns i [Adobe Target-dokumentation](https://experienceleague.adobe.com/docs/target/using/experiences/offers/offer-redirect.html#experiences){target="_blank"}.
 
 ### Skapa målgrupper {#audiences-target}
 
@@ -154,7 +154,7 @@ The **[!UICONTROL Target]** fönstret sammanfattar din aktivitet. Om det behövs
 
 ![](assets/target_experience.png)
 
-The **[!UICONTROL Goal & Settings]** kan du anpassa din aktivitet genom att ange en prioritet, ett mål eller en varaktighet.
+The **[!UICONTROL Goal & Settings]** kan du anpassa din aktivitet genom att ange prioritet, mål eller varaktighet.
 
 The **[!UICONTROL Reporting Settings]** kan du välja en åtgärd och redigera parametrarna som avgör när ditt mål uppnås.
 

@@ -5,7 +5,7 @@ feature: Privacy, PI
 role: Developer
 level: Beginner
 exl-id: 1d593c8e-4b32-4902-93a7-7b18cef27cac
-source-git-commit: 061197048885a30249bd18af7f8b24cb71def742
+source-git-commit: 5ab598d904bf900bcb4c01680e1b4730881ff8a5
 workflow-type: tm+mt
 source-wordcount: '583'
 ht-degree: 1%
@@ -27,7 +27,10 @@ Konfiguration och skärpning av sekretess är en viktig del av säkerhetsoptimer
 * Kontrollera att krypterade lösenord är begränsade
 * Protect de sidor som kan innehålla personlig information, t.ex. spegelsidor, webbtillämpningar osv.
 
-![](../assets/do-not-localize/speech.png)  Som användare av hanterade Cloud Service arbetar Adobe tillsammans med dig för att implementera dessa konfigurationer i din miljö.
+
+>[!NOTE]
+>
+>Som användare av hanterade Cloud Service arbetar Adobe tillsammans med dig för att implementera dessa konfigurationer i din miljö.
 
 
 ## Åtkomsthantering
@@ -49,7 +52,7 @@ När du utvecklar i Adobe Campaign (arbetsflöden, Javascript, JSSP osv.) ska du
 
 * **Lägga till bildtexter i webbprogram**: lägg till bilder på era offentliga landningssidor och prenumerationssidor.
 
-Läs mer i [Adobe Campaign Classic v7-dokumentation](https://experienceleague.adobe.com/docs/campaign-classic/using/installing-campaign-classic/security-privacy/scripting-coding-guidelines.html#installing-campaign-classic){target="_blank"}
+Läs mer i [Adobe Campaign Classic v7-dokumentation](https://experienceleague.adobe.com/docs/campaign-classic/using/installing-campaign-classic/security-privacy/scripting-coding-guidelines.html#installing-campaign-classic){target="_blank"}.
 
 
 ## Personalisering
@@ -144,4 +147,4 @@ När du utvecklar i Adobe Campaign (arbetsflöden, Javascript, JSSP osv.) ska du
 
 * **Lägga till bildtexter i webbprogram**: lägg till bilder på era offentliga landningssidor och prenumerationssidor.
 
-Läs mer i [Adobe Campaign Classic v7-dokumentation](https://experienceleague.adobe.com/docs/campaign-classic/using/installing-campaign-classic/security-privacy/scripting-coding-guidelines.html#installing-campaign-classic){target="_blank"}
+Läs mer i [Adobe Campaign Classic v7-dokumentation](https://experienceleague.adobe.com/docs/campaign-classic/using/installing-campaign-classic/security-privacy/scripting-coding-guidelines.html#installing-campaign-classic){target="_blank"}.

@@ -4,13 +4,13 @@ description: Lär dig hur du aktiverar e-postkopia i Adobe Campaign
 feature: Email
 role: User
 level: Beginner
-source-git-commit: 87c971ac6cf4abb6b04d52ce60ac2036055e1e02
+exl-id: 35702b81-1984-4a62-8f00-c2bc32ab2b42
+source-git-commit: 5ab598d904bf900bcb4c01680e1b4730881ff8a5
 workflow-type: tm+mt
 source-wordcount: '370'
 ht-degree: 1%
 
 ---
-
 
 # Skicka en kopia av dina meddelanden till en BCC-adress {#bcc}
 
@@ -26,7 +26,9 @@ Adobe Campaign hanterar inte själva arkiverade filer. De e-postfiler som motsva
 
 Arkiveringsmålet är valfri e-postadress som är osynlig för leveransmottagarna. När du har definierat e-postadressen för hemlig kopia måste du aktivera det dedikerade alternativet på [leveransmall](create-templates.md) nivå.
 
-![](../assets/do-not-localize/speech.png)  Som användare av hanterade Cloud Service [kontakta Adobe](../start/campaign-faq.md#support){target="_blank"} för att kommunicera e-postadressen för den kontroll av webbläsarkompatibilitet som ska användas för arkivering.
+>[!NOTE]
+>
+>Som användare av hanterade Cloud Service [kontakta Adobe](../start/campaign-faq.md#support){target="_blank"} för att kommunicera e-postadressen för den kontroll av webbläsarkompatibilitet som ska användas för arkivering.
 
 >[!CAUTION]
 >

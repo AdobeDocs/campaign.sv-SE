@@ -7,10 +7,10 @@ level: Beginner
 hide: true
 hidefromtoc: true
 exl-id: c4d30771-db5e-40be-8af6-50f0fab9f9af
-source-git-commit: e0ec2940db3120dc8fbfd17dd2f5083bbf31232c
+source-git-commit: 5ab598d904bf900bcb4c01680e1b4730881ff8a5
 workflow-type: tm+mt
-source-wordcount: '264'
-ht-degree: 5%
+source-wordcount: '249'
+ht-degree: 0%
 
 ---
 
@@ -34,12 +34,12 @@ Den här integreringen stöder två typer av Adobe Experience Cloud ID:
 
   >[!NOTE]
   >
-  > Deklarerad  ID-datakälla kan nu även användas med integreringen av den grundläggande tjänsten People.
+  > Deklarerad ID-datakälla kan nu även användas med integreringen av huvudtjänsten People.
   >
   >Om du använder integreringen med huvudtjänsten Kontakter och vill lägga till integreringen med Audience Manager måste du få hjälp av en Adobe Audience Manager-konsults för att undvika att förlora alla ID-synkroniseringar som samlas in när du går över till att använda den här deklarerade ID-datakällan i ett Adobe Audience Manager-sammanhang.
 
 Se:
 
-[https://experienceleague.adobe.com/docs/experience-cloud-kcs/kbarticles/KA-16471.html](https://experienceleague.adobe.com/docs/experience-cloud-kcs/kbarticles/KA-16471.html)
+[Adobe Audience Manager-dokumentation](https://experienceleague.adobe.com/docs/experience-cloud-kcs/kbarticles/KA-16471.html){target="_blank"}
 
-[https://experienceleague.adobe.com/docs/core-services/interface/services/audiences/audience-library.html](https://experienceleague.adobe.com/docs/core-services/interface/services/audiences/audience-library.html)
+[Adobe Experience Cloud Central Interface Components Guide](https://experienceleague.adobe.com/docs/core-services/interface/services/audiences/audience-library.html){target="_blank"}

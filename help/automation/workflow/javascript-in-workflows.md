@@ -5,9 +5,9 @@ description: De här exemplen visar hur du kan använda JavaScript-kod i ett arb
 feature: Workflows
 role: Developer
 exl-id: 3412e3de-1c88-496e-8fda-ca9fc9b18e69
-source-git-commit: 567c2e84433caab708ddb9026dda6f9cb717d032
+source-git-commit: 5ab598d904bf900bcb4c01680e1b4730881ff8a5
 workflow-type: tm+mt
-source-wordcount: '1752'
+source-wordcount: '1683'
 ht-degree: 2%
 
 ---
@@ -21,7 +21,7 @@ I följande exempel visas hur du kan använda JavaScript-kod i ett arbetsflöde:
 * [Utlösa ett arbetsflöde med en statisk SOAP-metod](#trigger-example)
 * [Interagera med databasen med en icke-statisk SOAP-metod](#interact-example)
 
-[Läs mer](https://experienceleague.adobe.com/developer/campaign-api/api/p-14.html) om statiska och statiska SOAP-metoder.
+[Läs mer](https://experienceleague.adobe.com/developer/campaign-api/api/p-14.html){target="_blank"} om statiska och statiska SOAP-metoder.
 
 I dessa exempel används tillägget ECMAScript för XML (E4X). Med det här tillägget kan du kombinera JavaScript-anrop och XML-mallar i samma skript.
 
@@ -99,7 +99,7 @@ var myXML = <recipient xtkschema="nms:recipient"
 
 #### Ta bort en post
 
-Använd `DeleteCollection` -metod. [Läs mer](https://experienceleague.adobe.com/developer/campaign-api/api/sm-session-DeleteCollection.html).
+Använd `DeleteCollection` -metod. [Läs mer](https://experienceleague.adobe.com/developer/campaign-api/api/sm-session-DeleteCollection.html){target="_blank"}.
 
 Ange den här informationen:
 
@@ -273,7 +273,7 @@ for each (var rcp in res:recipient)
     logInfo(rcp.@email)
 ```
 
-Slingan innehåller en lokal mottagarvariabel. För varje mottagare som returneras i mottagarsamlingen skrivs mottagarens e-post ut. [Läs mer](https://experienceleague.adobe.com/developer/campaign-api/api/f-logInfo.html) om `logInfo` funktion.
+Slingan innehåller en lokal mottagarvariabel. För varje mottagare som returneras i mottagarsamlingen skrivs mottagarens e-post ut. [Läs mer](https://experienceleague.adobe.com/developer/campaign-api/api/f-logInfo.html){target="_blank"} om `logInfo` funktion.
 
 #### Resultat av en `getIfExists` operation
 
@@ -359,7 +359,7 @@ Du kan starta arbetsflöden programmatiskt, till exempel i tekniska arbetsflöde
 
 Arbetsflöde som utlöser arbete genom användning av händelser. Du kan använda dessa funktioner för händelser:
 
-* Om du vill publicera en händelse kan du använda den statiska `PostEvent` -metod. [Läs mer](https://experienceleague.adobe.com/developer/campaign-api/api/sm-workflow-PostEvent.html).
+* Om du vill publicera en händelse kan du använda den statiska `PostEvent` -metod. [Läs mer](https://experienceleague.adobe.com/developer/campaign-api/api/sm-workflow-PostEvent.html){target="_blank"}.
 * Om du vill ta emot en händelse använder du **[!UICONTROL External signal]** aktivitet. [Läs mer](external-signal.md).
 
 Du kan utlösa arbetsflöden på olika sätt:
@@ -426,10 +426,10 @@ Följ de här stegen:
 
 1. Definiera frågan:
 
-   * Hämta en entitet med `create` -metoden i motsvarande schema, till exempel `xtk:workflow` schema. [Läs mer](https://experienceleague.adobe.com/developer/campaign-api/api/f-create.html).
+   * Hämta en entitet med `create` -metoden i motsvarande schema, till exempel `xtk:workflow` schema. [Läs mer](https://experienceleague.adobe.com/developer/campaign-api/api/f-create.html){target="_blank"}.
    * Använd `queryDef` metod för att skicka en SQL-fråga.
 
-1. Kör frågan med `ExecuteQuery` -metod. [Läs mer](https://experienceleague.adobe.com/developer/campaign-api/api/sm-queryDef-ExecuteQuery.html).
+1. Kör frågan med `ExecuteQuery` -metod. [Läs mer](https://experienceleague.adobe.com/developer/campaign-api/api/sm-queryDef-ExecuteQuery.html){target="_blank"}.
 
    Använd `for each` -slinga för att hämta resultaten.
 
@@ -611,11 +611,11 @@ I den här videon visas ett exempel på hur en icke-statisk API-metod används i
 
 ### API-dokumentation
 
-* [Exempel på SOAP-anrop](https://experienceleague.adobe.com/developer/campaign-api/api/p-14.html)
+* [Exempel på SOAP-anrop](https://experienceleague.adobe.com/developer/campaign-api/api/p-14.html){target="_blank"}
 * Metoder:
-   * [Skapa](https://experienceleague.adobe.com/developer/campaign-api/api/f-create.html)
-   * [DeleteCollection](https://experienceleague.adobe.com/developer/campaign-api/api/sm-session-DeleteCollection.html)
-   * [ExecuteQuery](https://experienceleague.adobe.com/developer/campaign-api/api/sm-queryDef-ExecuteQuery.html)
-   * [PostEvent](https://experienceleague.adobe.com/developer/campaign-api/api/sm-workflow-PostEvent.html)
-   * [Skriv](https://experienceleague.adobe.com/developer/campaign-api/api/sm-session-Write.html)
-* [funktionen logInfo](https://experienceleague.adobe.com/developer/campaign-api/api/f-logInfo.html)
+   * [Skapa](https://experienceleague.adobe.com/developer/campaign-api/api/f-create.html){target="_blank"}
+   * [DeleteCollection](https://experienceleague.adobe.com/developer/campaign-api/api/sm-session-DeleteCollection.html){target="_blank"}
+   * [ExecuteQuery](https://experienceleague.adobe.com/developer/campaign-api/api/sm-queryDef-ExecuteQuery.html){target="_blank"}
+   * [PostEvent](https://experienceleague.adobe.com/developer/campaign-api/api/sm-workflow-PostEvent.html){target="_blank"}
+   * [Skriv](https://experienceleague.adobe.com/developer/campaign-api/api/sm-session-Write.html){target="_blank"}
+* [funktionen logInfo](https://experienceleague.adobe.com/developer/campaign-api/api/f-logInfo.html){target="_blank"}

@@ -5,7 +5,7 @@ feature: Experience Platform Integration
 role: Data Engineer
 level: Beginner
 exl-id: 565a1c8b-1930-4b43-bc11-ae517df077d6
-source-git-commit: bbe3ba03bfecf5b0931795ff827d25560f955702
+source-git-commit: 5ab598d904bf900bcb4c01680e1b4730881ff8a5
 workflow-type: tm+mt
 source-wordcount: '1029'
 ht-degree: 0%
@@ -56,7 +56,7 @@ När OAuth-anslutningen är på plats är nästa steg att skapa en **[!UICONTROL
 
    ![](assets/ac-lp-source.png){width="70%"}
 
-1. Konfigurera anslutningen beroende på dina behov. Detaljerad information om hur du konfigurerar en HTTP API-anslutning finns i [Dokumentation för Adobe Experience Platform-källor](https://experienceleague.adobe.com/docs/experience-platform/sources/ui-tutorials/create/streaming/http.html).
+1. Konfigurera anslutningen beroende på dina behov. Detaljerad information om hur du konfigurerar en HTTP API-anslutning finns i [Dokumentation för Adobe Experience Platform-källor](https://experienceleague.adobe.com/docs/experience-platform/sources/ui-tutorials/create/streaming/http.html){target="_blank"}.
 
    På **[!UICONTROL Authentication]** steg, växla till **[!UICONTROL Enable authentication]** autentiseringsalternativ med åtkomsttoken som genererats tidigare genom OAuth-integreringen.
 
@@ -98,7 +98,7 @@ Bläddra bland flikarna nedan för att hitta de två metoderna:
 
 >[!TAB Lägga till alternativ med en JavaScript-kodsaktivitet]
 
-Om du vill konfigurera dessa alternativ automatiskt när du utför arbetsflödet för landningssidor lägger du till en **[!UICONTROL JavaScript code]** till ditt arbetsflöde med koden nedan. [Lär dig hur du konfigurerar en JavaScript-kodaktivitet](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/action-activities/sql-code-and-JavaScript-code.html#JavaScript-code).
+Om du vill konfigurera dessa alternativ automatiskt när du utför arbetsflödet för landningssidor lägger du till en **[!UICONTROL JavaScript code]** till ditt arbetsflöde med koden nedan. [Lär dig hur du konfigurerar en JavaScript-kodaktivitet](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/action-activities/sql-code-and-JavaScript-code.html#JavaScript-code){target="_blank"}.
 
 När arbetsflödet körs skapas alternativen automatiskt i Campaign-konsolen med de angivna värdena.
 
@@ -344,5 +344,5 @@ Här är ett exempel på en landningssida och en JavaScript-kodaktivitet som kon
 ### Mer information
 
 * [Konfigurera en JavaScript-kodaktivitet](../../automation/workflow/sql-code-and-javascript-code.md#javascript-code)
-* [Skapa en landningssida](https://experienceleague.adobe.com/docs/campaign-classic/using/designing-content/editing-html-content/creating-a-landing-page.html)
+* [Skapa en landningssida](https://experienceleague.adobe.com/docs/campaign-classic/using/designing-content/editing-html-content/creating-a-landing-page.html){target="_blank"}
 * [Hantera prenumerationer och avbeställningar](../start/subscriptions.md)

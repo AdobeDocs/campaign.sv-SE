@@ -5,10 +5,10 @@ feature: Transactional Messaging
 role: Admin, Developer
 level: Experienced
 exl-id: 2899f627-696d-422c-ae49-c1e293b283af
-source-git-commit: 561e4b6d2c99e98e068132c80c2bebb756b60a44
+source-git-commit: 5ab598d904bf900bcb4c01680e1b4730881ff8a5
 workflow-type: tm+mt
-source-wordcount: '598'
-ht-degree: 5%
+source-wordcount: '600'
+ht-degree: 4%
 
 ---
 
@@ -18,7 +18,10 @@ Transactional Messaging (Message Center) är en Campaign-modul som är avsedd f�
 
 Förstå arkitekturen för transaktionsmeddelanden i [den här sidan](../architecture/architecture.md#transac-msg-archi).
 
-![](../assets/do-not-localize/speech.png) Som användare av hanterade Cloud Service [kontakta Adobe](../start/campaign-faq.md#support) för att installera och konfigurera Campaign Transactional Messaging i er miljö.
+
+>[!NOTE]
+>
+>Som användare av hanterade Cloud Service [kontakta Adobe](../start/campaign-faq.md#support) för att installera och konfigurera Campaign Transactional Messaging i er miljö.
 
 ## Definiera behörigheter {#mc-permissions}
 
@@ -51,7 +54,7 @@ Dessutom måste händelsen innehålla följande element:
 
 Nedan visas ett exempel på en händelsekonfiguration som skickar push-meddelanden för transaktioner:
 
-```
+```xml
 <SOAP-ENV:Envelope xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:SOAP-ENV="http://schemas.xmlsoap.org/soap/envelope/">
    <SOAP-ENV:Body>
      <urn:PushEvent>

@@ -4,10 +4,10 @@ title: Test
 description: Läs mer om aktiviteten Testa arbetsflöde
 feature: Workflows
 exl-id: 0d4d13f6-7128-44d3-ad5c-4ed02257ee64
-source-git-commit: 77ec01aaba1e50676bed57f503a9e4e8bb1fe54c
+source-git-commit: 5ab598d904bf900bcb4c01680e1b4730881ff8a5
 workflow-type: tm+mt
-source-wordcount: '192'
-ht-degree: 4%
+source-wordcount: '187'
+ht-degree: 1%
 
 ---
 
@@ -17,11 +17,11 @@ ht-degree: 4%
 
 A **Testa** type-aktivitet aktiverar den första övergång som uppfyller det villkor som är kopplat till den. Om inget villkor är uppfyllt och om **[!UICONTROL Use the default fork]** om du väljer det här alternativet aktiveras standardövergången.
 
-Ett villkor är ett JavaScript-uttryck som måste utvärderas till true eller false. Om du vill ange uttrycket klickar du på ikonen till höger om namnet på villkoret och väljer sedan **[!UICONTROL Edit...]**.
+Ett villkor är ett JavaScript-uttryck som måste utvärderas till &quot;true&quot; eller &quot;false&quot;. Om du vill ange uttrycket klickar du på ikonen till höger om namnet på villkoret och väljer sedan **[!UICONTROL Edit...]**.
 
 ![](assets/edit_test.png)
 
-Mer information om alla ytterligare JavaScript-funktioner och SOAP-metoder för programservern som är tillgängliga via JavaScript i arbetsflödet finns i [JSAPI-dokumentation](https://experienceleague.adobe.com/developer/campaign-api/api/index.html?lang=sv).
+Mer information om alla ytterligare JavaScript-funktioner och SOAP-metoder för programservern som är tillgängliga via JavaScript i arbetsflödet finns i [JSAPI-dokumentation](https://experienceleague.adobe.com/developer/campaign-api/api/index.html?lang=sv){target="_blank"}.
 
 Du kan också infoga variabler direkt från den här redigeraren. Mer information om hur du arbetar med variabler finns i [det här avsnittet](javascript-scripts-and-templates.md#variables).
 

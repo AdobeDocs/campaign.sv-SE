@@ -5,7 +5,7 @@ feature: Cross Channel Orchestration
 role: User
 level: Beginner
 exl-id: b5a6c845-13a7-4746-b856-a08a3cf80b66
-source-git-commit: 061197048885a30249bd18af7f8b24cb71def742
+source-git-commit: 5ab598d904bf900bcb4c01680e1b4730881ff8a5
 workflow-type: tm+mt
 source-wordcount: '772'
 ht-degree: 2%
@@ -46,7 +46,7 @@ Med Adobe Campaign kan ni skapa, konfigurera, köra och analysera alla marknadsf
 
 ![](assets/calendar.png)
 
-Upptäck hur ni får tillgång till och implementerar marknadsföringskampanjer i [det här avsnittet](https://experienceleague.adobe.com/docs/campaign/automation/campaign-orchestration/set-up-campaigns.html).
+Upptäck hur ni får tillgång till och implementerar marknadsföringskampanjer i [det här avsnittet](https://experienceleague.adobe.com/docs/campaign/automation/campaign-orchestration/set-up-campaigns.html){target="_blank"}.
 
 ## Viktiga steg att starta{#gs-ac-start}
 
@@ -56,13 +56,13 @@ De viktigaste stegen för att skapa en flerkanalskampanj för marknadsföring ä
 
    Definiera hierarki och schema, ange budget, lägga till resurser och välj operatorer.
 
-   Lär dig hur du skapar en marknadsföringsplan och konfigurerar kampanjer i [den här sidan](https://experienceleague.adobe.com/docs/campaign/automation/campaign-orchestration/marketing-campaign-create.html).
+   Lär dig hur du skapar en marknadsföringsplan och konfigurerar kampanjer i [den här sidan](https://experienceleague.adobe.com/docs/campaign/automation/campaign-orchestration/marketing-campaign-create.html){target="_blank"}.
 
    Alla marknadsföringskampanjer är baserade på en mall som lagrar de viktigaste inställningarna och funktionerna. En inbyggd mall tillhandahålls för att skapa en kampanj för vilken ingen specifik konfiguration har definierats. Du kan skapa och konfigurera kampanjmallar och sedan skapa kampanjer utifrån dessa mallar.
 
-   Lär dig hur du arbetar med kampanjmallar i [den här sidan](https://experienceleague.adobe.com/docs/campaign/automation/campaign-orchestration/marketing-campaign-templates.html).
+   Lär dig hur du arbetar med kampanjmallar i [den här sidan](https://experienceleague.adobe.com/docs/campaign/automation/campaign-orchestration/marketing-campaign-templates.html){target="_blank"}.
 
-   Upptäck återkommande kampanjer och konfigurera dem i [den här sidan](https://experienceleague.adobe.com/docs/campaign/automation/campaign-orchestration/recurring-periodic-campaigns.html).
+   Upptäck återkommande kampanjer och konfigurera dem i [den här sidan](https://experienceleague.adobe.com/docs/campaign/automation/campaign-orchestration/recurring-periodic-campaigns.html){target="_blank"}.
 
 1. **Definiera målgrupper**
 
@@ -70,7 +70,7 @@ De viktigaste stegen för att skapa en flerkanalskampanj för marknadsföring ä
 
    ![](assets/campaign-wf.png)
 
-   Lär dig hur du definierar målgruppen för dina meddelanden i [den här sidan](https://experienceleague.adobe.com/docs/campaign/automation/campaign-orchestration/marketing-campaign-target.html).
+   Lär dig hur du definierar målgruppen för dina meddelanden i [den här sidan](https://experienceleague.adobe.com/docs/campaign/automation/campaign-orchestration/marketing-campaign-target.html){target="_blank"}.
 
 1. **Skapa leveranser**
 
@@ -78,17 +78,17 @@ De viktigaste stegen för att skapa en flerkanalskampanj för marknadsföring ä
 
    ![](assets/campaign-dashboard.png)
 
-   Lär dig hur du skapar och startar marknadsföringskampanjer i [den här sidan](https://experienceleague.adobe.com/docs/campaign/automation/campaign-orchestration/marketing-campaign-deliveries.html).
+   Lär dig hur du skapar och startar marknadsföringskampanjer i [den här sidan](https://experienceleague.adobe.com/docs/campaign/automation/campaign-orchestration/marketing-campaign-deliveries.html){target="_blank"}.
 
    Du kan associera olika dokument med en kampanj: rapport, foto, webbsida, diagram osv.
 
-   Läs mer om associerade dokument i [den här sidan](https://experienceleague.adobe.com/docs/campaign/automation/campaign-orchestration/marketing-campaign-assets.html).
+   Läs mer om associerade dokument i [den här sidan](https://experienceleague.adobe.com/docs/campaign/automation/campaign-orchestration/marketing-campaign-assets.html){target="_blank"}.
 
 1. **Ställ in godkännandeprocessen**
 
    Med Adobe Campaign kan ni skapa samverkansbaserade godkännandeprocesser för de viktigaste stegen i marknadsföringskampanjen. För varje kampanj kan ni godkänna leveransmålet, innehållet och kostnaderna. Adobe Campaign-operatörer som ansvarar för godkännande kan meddelas via e-post och kan acceptera eller avvisa godkännande från konsolen eller via en webbanslutning.
 
-   Lär dig hur du ställer in och hanterar godkännanden i [den här sidan](https://experienceleague.adobe.com/docs/campaign/automation/campaign-orchestration/marketing-campaign-approval.html#campaign-orchestration).
+   Lär dig hur du ställer in och hanterar godkännanden i [den här sidan](https://experienceleague.adobe.com/docs/campaign/automation/campaign-orchestration/marketing-campaign-approval.html#campaign-orchestration){target="_blank"}.
 
 
 ## Tillägg för distribuerad marknadsföring{#distributed-marketing-add-on}
@@ -99,7 +99,7 @@ Adobe Campaign erbjuder **Distribuerad marknadsföring** tillägg för genomför
 >
 >Den här funktionen är tillgänglig från och med Campaign v8.3. Om du vill kontrollera versionen läser du [det här avsnittet](compatibility-matrix.md#how-to-check-your-campaign-version-and-buildversion)
 
-Lär dig hur du konfigurerar och använder Campaign Distributed Marketing-funktioner i [den här sidan](https://experienceleague.adobe.com/docs/campaign/automation/distributed-marketing/about-distributed-marketing.html)
+Lär dig hur du konfigurerar och använder Campaign Distributed Marketing-funktioner i [den här sidan](https://experienceleague.adobe.com/docs/campaign/automation/distributed-marketing/about-distributed-marketing.html){target="_blank"}.
 
 ## Tillägget Svarshantering{#response-manager-add-on}
 
@@ -109,4 +109,4 @@ Adobe Campaign erbjuder **Svarshantering** tillägg som gör att ni kan mäta fr
 >
 >Den här funktionen är tillgänglig från och med Campaign v8.3. Om du vill kontrollera versionen läser du [det här avsnittet](compatibility-matrix.md#how-to-check-your-campaign-version-and-buildversion)
 
-[](../assets/do-not-localize/book.png) Lär dig konfigurera och använda svarshanteraren för Campaign i [Campaign Classic v7 - dokumentation](https://experienceleague.adobe.com/docs/campaign-classic/using/response-manager/about-response-manager.html){target="_blank"}
+[](../assets/do-not-localize/book.png) Lär dig konfigurera och använda svarshanteraren för Campaign i [Campaign Classic v7 - dokumentation](https://experienceleague.adobe.com/docs/campaign-classic/using/response-manager/about-response-manager.html){target="_blank"}.
