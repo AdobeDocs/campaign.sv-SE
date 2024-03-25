@@ -5,9 +5,9 @@ user-guide-description: Produktdokumentation för Adobe Campaign v8 (klientkonso
 title: Adobe Campaign v8-dokumentation
 description: Kampanjdokumentation v8
 breadcrumb-title: Dokumentation om Campaign v8
-source-git-commit: a779f243b0ba13dc3fcb7839377ca8766e5f7841
+source-git-commit: 782362d6d742a3121d3b87b26c2f1481731ff694
 workflow-type: tm+mt
-source-wordcount: '588'
+source-wordcount: '594'
 ht-degree: 16%
 
 ---
@@ -50,6 +50,7 @@ ht-degree: 16%
    + [SMS](send/sms.md)
    + Push-meddelanden {#push}
       + [Skapa och skicka push-meddelanden](send/push.md)
+      + [Designa en omfattande push-leverans för Android](send/rich-push.md)
       + [Konfigurera kanal för push-meddelanden](send/push-settings.md)
       + [Konfigurera push-meddelanden med datainsamling](send/push-data-collection.md)
    + [LINE-meddelanden](send/line.md)
