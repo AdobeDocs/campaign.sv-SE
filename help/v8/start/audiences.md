@@ -5,10 +5,10 @@ feature: Audiences
 role: User
 level: Beginner
 exl-id: 07baa759-fb0b-4eba-bf8b-ec6cf21df7f8
-source-git-commit: 5ab598d904bf900bcb4c01680e1b4730881ff8a5
+source-git-commit: 99cb937a475997aae714a67b1f9f91c6bae932f4
 workflow-type: tm+mt
-source-wordcount: '453'
-ht-degree: 14%
+source-wordcount: '521'
+ht-degree: 17%
 
 ---
 
@@ -41,15 +41,20 @@ Lär dig hur du skapar en målgrupp i ett kampanjarbetsflöde i [den här sidan]
 
 ## Aktiva profiler {#active-profiles}
 
-En aktiv profil är en profil som kunden har försökt kommunicera med under de senaste tolv månaderna via valfri kanal. Licensvärdena baseras på aktiva profiler. Läs mer i [Adobe Campaign produktbeskrivning](https://helpx.adobe.com/se/legal/product-descriptions/adobe-campaign-managed-cloud-services.html){target="_blank"}.
+
+En aktiv profil är en profil som kunden har försökt kommunicera med under de senaste 12 månaderna via valfri kanal.
+
+Enligt avtalet har var och en av instanserna i Campaign ett visst antal aktiva profiler som räknas för faktureringsändamål. Se ditt senaste kontrakt för referens om antalet köpta aktiva profiler. Läs mer i [Adobe Campaign produktbeskrivning](https://helpx.adobe.com/se/legal/product-descriptions/adobe-campaign-managed-cloud-services.html){target="_blank"}.
 
 Du kan övervaka antalet aktiva profiler på instansen direkt från Campaign-kontrollpanelen. Mer information finns i [Dokumentation för kontrollpanelen](https://experienceleague.adobe.com/docs/control-panel/using/performance-monitoring/active-profiles-monitoring.html){target="_blank"}.
 
->[!CAUTION]
->
->* En profil som har valts av flera leveranser räknas bara en gång.
->
->* Profiler som är inriktade på social marknadsföring på X (Twitter) räknas inte som aktiva profiler.
+
+Följande skyddsräcken och begränsningar gäller:
+
+* En profil som har valts av flera leveranser räknas bara en gång.
+* Profiler som är inriktade på social marknadsföring på X (Twitter) räknas inte som aktiva profiler.
+* Antalet baseras på mottagarens primärnyckel. Om det finns en profil i två olika mottagartabeller kan den därför räknas två gånger som en aktiv profil.
+
 
 ## Sekretess och medgivande{#privacy-and-consent}
 
