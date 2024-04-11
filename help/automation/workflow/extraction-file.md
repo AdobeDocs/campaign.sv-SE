@@ -5,9 +5,9 @@ description: Läs mer om arbetsflödesaktiviteten för dataextrahering (fil)
 feature: Workflows, Data Management Activity
 role: User
 exl-id: 8510e879-2862-491f-bc52-ca8f56105932
-source-git-commit: c3f4ad0b56dd45d19eebaa4d2f06551c8fecac1d
+source-git-commit: 014743172e09d46cb83b2fe2befaa8f3c54669b1
 workflow-type: tm+mt
-source-wordcount: '325'
+source-wordcount: '312'
 ht-degree: 1%
 
 ---
@@ -46,8 +46,6 @@ Så här konfigurerar du dataextrahering:
    ![](assets/s_advuser_extract_file_agregate_values.png)
 
 Du kan definiera en efterprocess som ska köras under dataextraheringen så att du kan komprimera eller kryptera filerna. För att göra detta måste du lägga till det önskade kommandot i **[!UICONTROL Script]** aktivitetens flik.
-
-Mer information finns i följande avsnitt: [Zippa eller kryptera en fil](use-workflow-data.md#zipping-or-encrypting-a-file).
 
 ![](assets/postprocessing_dataextraction.png)
 
