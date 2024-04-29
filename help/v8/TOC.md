@@ -5,9 +5,9 @@ user-guide-description: Produktdokumentation för Adobe Campaign v8 (klientkonso
 title: Adobe Campaign v8-dokumentation
 description: Kampanjdokumentation v8
 breadcrumb-title: Dokumentation om Campaign v8
-source-git-commit: 782362d6d742a3121d3b87b26c2f1481731ff694
+source-git-commit: 19593cd689609515264aa2995e33e53f3bc95c95
 workflow-type: tm+mt
-source-wordcount: '594'
+source-wordcount: '596'
 ht-degree: 16%
 
 ---
@@ -100,6 +100,7 @@ ht-degree: 16%
 + Integritet och säkerhetshantering {#privacy}
    + [Hantera förfrågningar om användarens information](start/privacy.md)
    + [Säkerhetsanvisningar](config/security.md)
+   + [Förbättrad säkerhet](config/enhanced-security.md)
 + Beslutshantering {#offers}
    + [Kom igång med interaktion i realtid](interaction/interaction.md)
    + [Miljö och arkitektur](interaction/interaction-architecture.md)
