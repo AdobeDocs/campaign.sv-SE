@@ -6,55 +6,59 @@ role: Developer
 level: Experienced
 hide: true
 hidefromtoc: true
-source-git-commit: cec935c2c73e3df4d2e03d54305004df9bd2655e
+exl-id: 7c586836-82e1-45fb-9c28-18361572e1fa
+source-git-commit: f9b064dffa0f8792e8653760cb2ac44cfdf43848
 workflow-type: tm+mt
-source-wordcount: '643'
+source-wordcount: '696'
 ht-degree: 1%
 
 ---
-
 
 # Förbättrat säkerhetstillägg {#enhanced-security}
 
 För att göra din nätverksanslutning säkrare och ge bättre säkerhet för dina resurser, [!DNL Adobe Campaign] erbjuder en ny **Förbättrad säkerhet** tillägg.
 
-Det här tillägget innehåller för närvarande två ekosystemfunktioner:
+Det här tillägget innehåller två ekosystemfunktioner:
 
 * [Säker CMK-integrering](#secure-cmk-integration)
 
 * [Säker VPN-tunnling](#secure-vpn-tunneling)
 
+Dessa funktioner beskrivs nedan.
+
 ## Säker CMK-integrering {#secure-cmk-integration}
 
-**Integrering med Secure Customer Managed Key (CMK)** kan du kryptera instansen och dina data med din egen nyckel via ditt AWS-konto<!--instead of Adobe-owned keys-->. Genom att göra dig ansvarig för att generera och hantera krypteringsnycklar kan du med den här kapaciteten få bättre kontroll över dem, inklusive återkallande av en nyckel.
+The **Integrering med Secure Customer Managed Key (CMK)** Med kan du kryptera instansen och dina data med din egen nyckel via ditt Amazon Web Services-konto (AWS).
+
+KMS-nycklar (Key Management Service) i ditt AWS-konto som du skapar, äger och hanterar. Du har fullständig kontroll över dessa KMS-nycklar och använder dem för att kryptera och dekryptera data. Genom att göra dig ansvarig för att generera och hantera krypteringsnycklar kan du med den här kapaciteten få bättre kontroll över dem, inklusive återkallande av en nyckel.
 
 >[!CAUTION]
 >
 >Om du återkallar en nyckel måste du vara medveten om effekterna. [Läs mer](#cmk-callouts)
 
-Om du vill aktivera den här funktionen följer du stegen nedan:
+Följ stegen nedan för att aktivera CMK-integrering med Campaign:
 
-1. Kontrollera att du har en [AWS](https://aws.amazon.com/){target="_blank"} konto.
+1. Anslut till [Amazon Web Services (AWS)](https://aws.amazon.com/){target="_blank"} konto.
 
-1. Generera en nyckel med automatisk rotation när du använder AWS Key Management Service (KMS). [Lär dig mer](https://docs.aws.amazon.com/kms/latest/developerguide/create-keys.html){target="_blank"}
+1. Generera en nyckel med automatisk rotation när du använder AWS Key Management Service (KMS). [Lär dig mer](https://docs.aws.amazon.com/kms/latest/developerguide/create-keys.html){target="_blank"}.
 
-1. Använd den policy du fått från Adobe på ditt AWS-konto för att ge åtkomst till dina resurser. [Läs mer](https://docs.aws.amazon.com/kms/latest/developerguide/key-policy-services.html){target="_blank"} <!--link TBC-->
+1. Använd den policy du fått från Adobe på ditt AWS-konto för att ge åtkomst till dina resurser. [Läs mer](https://docs.aws.amazon.com/kms/latest/developerguide/key-policy-services.html){target="_blank"}. <!--link TBC-->
 
-1. Dela ditt Amazon-resursnamn (nyckel ARN) med [!DNL Adobe Campaign]. Kontakta din Adobe-representant för att göra detta. <!--or Adobe transition manager?-->
+1. Dela [Amazon Resource Name (nyckel ARN)](https://docs.aws.amazon.com/kms/latest/developerguide/find-cmk-id-arn.html){target="_blank"} med [!DNL Adobe Campaign]. Kontakta din Adobe-representant för att göra detta. <!--or Adobe transition manager?-->
 
-1. Skapa och testa Amazon EventBridge-reglerna för att aktivera övervakning av dina tangenter med Adobe. &#x200B; [Läs mer](https://docs.aws.amazon.com/eventbridge/latest/userguide/eb-rules.html){target="_blank"}
+1. Skapa och testa Amazon EventBridge-reglerna för att aktivera övervakning av dina tangenter med Adobe. &#x200B; [Läs mer](https://docs.aws.amazon.com/eventbridge/latest/userguide/eb-rules.html){target="_blank"}.
 
 ## Säker VPN-tunnling {#secure-vpn-tunneling}
 
-**Säker VPN-tunnling (Virtual Private Network)** är ett VPN för plats-till-plats som ger säker åtkomst till dina data som överförs via ett privat nätverk, från dina lokaler till [!DNL Adobe Campaign] -instans.
+The **Säker VPN-tunnling (Virtual Private Network)** är ett VPN för plats-till-plats som ger säker åtkomst till dina data som överförs via ett privat nätverk, från dina lokaler till [!DNL Adobe Campaign] -instans.
 
 <!--As it connects two networks together, it is a site-to-site VPN.-->
 
-För att säkerställa hög tillgänglighet (HA) används två tunnlar för att undvika driftavbrott om ett fel inträffar i en tunnel
+För att säkerställa hög tillgänglighet (HA) används två tunnlar för att undvika avbrott om ett fel inträffar i en tunnel.
 
 Tre användningsområden stöds:
 
-* FDA över VPN<!--to access your on-premise database from the Campaign instance over VPN-->
+* FDA (Federated Data Access) via VPN<!--to access your on-premise database from the Campaign instance over VPN-->
 
 * Instansinloggning via VPN från en tjock klient
 
@@ -68,7 +72,7 @@ Följ riktlinjerna nedan för att säkerställa att funktionen används på rät
 
 * Konfigurera VPN på din sida baserat på VPN-konfigurationen på Adobe.
 
-* Håll båda tunnlarna redo för HA.
+* Håll båda tunnlarna uppe för hög tillgänglighet.
 
 * Övervaka er sidotunnel.
 
