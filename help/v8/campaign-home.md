@@ -3,7 +3,7 @@ keywords: Campaign Classic, starstida, populära ämnen
 description: Campaign v8 - hjälpcenter
 title: Adobe Campaign v8 - produktdokumentation
 exl-id: 6010b0f7-baf0-43ba-af9a-b8864f3897ea,9ff16fb1-d3d3-44fe-9016-15abffdbc74e
-source-git-commit: 520a7798cd1969e7c29519cbc918b66a44ff2a71
+source-git-commit: 43666e72cdbdb1e7305208903dbb82eda73fa46f
 workflow-type: tm+mt
 source-wordcount: '326'
 ht-degree: 29%
@@ -20,7 +20,7 @@ Få en glimt av de senaste förbättringarna i produkten och dokumentationen fö
 
 >[!TAB Campaign v8.7-versionen är live]
 
-Den senaste versionen av Adobe Campaign finns nu att köpa. Den släpps med begränsad tillgänglighet (LA). Läs versionsinformationen för mer information.
+Den senaste versionen av Adobe Campaign finns nu att köpa. Den släpps i **Begränsad tillgänglighet** (LA). Läs versionsinformationen för mer information.
 
 [![Bild](assets/do-not-localize/learn-more-button.svg)](start/release-notes.md)
 
