@@ -5,7 +5,7 @@ feature: Release Notes
 role: User
 level: Beginner
 exl-id: 7cf8111d-9f3a-46a4-813a-d4e43a1d1471
-source-git-commit: 39a3412ab2fae2f45768598feffb7e5078c6acac
+source-git-commit: 520a7798cd1969e7c29519cbc918b66a44ff2a71
 workflow-type: tm+mt
 source-wordcount: '909'
 ht-degree: 5%
@@ -22,7 +22,7 @@ Som kund bör du dessutom se till att du använder de senaste versionerna av de 
 
 ## Version 8.7.1 {#release-8-7-1}
 
-_30 april 2024_
+_2 maj 2024_
 
 >[!AVAILABILITY]
 >
