@@ -5,16 +5,19 @@ description: Lär dig hur du utformar en omfattande push-meddelandeleverans för
 feature: Push
 role: User
 level: Beginner
-hide: true
-hidefromtoc: true
-source-git-commit: 771473620ea9b6d71be72871255d22b816c51b91
+exl-id: 42e3623b-b401-4fcc-80a7-ea38347fddc6
+source-git-commit: 94dba45c59c699680675bdcd2b73da386d727435
 workflow-type: tm+mt
-source-wordcount: '1128'
+source-wordcount: '1135'
 ht-degree: 1%
 
 ---
 
 # Designa en omfattande push-leverans för Android {#rich-push}
+
+>[!AVAILABILITY]
+>
+>Den här funktionen finns i **Begränsad tillgänglighet** (LA).
 
 Med Firebase Cloud Messaging kan du välja mellan två typer av meddelanden:
 

@@ -5,9 +5,9 @@ user-guide-description: Produktdokumentation för Adobe Campaign v8 (klientkonso
 title: Adobe Campaign v8-dokumentation
 description: Kampanjdokumentation v8
 breadcrumb-title: Dokumentation om Campaign v8
-source-git-commit: 19593cd689609515264aa2995e33e53f3bc95c95
+source-git-commit: ca4c808571b66eb26d1dfaf608932128f42ce874
 workflow-type: tm+mt
-source-wordcount: '596'
+source-wordcount: '598'
 ht-degree: 16%
 
 ---
@@ -121,6 +121,7 @@ ht-degree: 16%
    + [Användningsfall](interaction/interaction-use-cases.md)
 + Rapportering och analys {#analytics}
    + [Spåra och övervaka](start/tracking.md)
+   + [Granskningskedja](reporting/audit-trail.md)
    + Arbeta med rapporter{#reports}
       + [Kom igång med rapporter](reporting/gs-reporting.md)
       + Skapa kuber{#cubes}
