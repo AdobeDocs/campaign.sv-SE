@@ -4,7 +4,7 @@ description: Lär dig hur du migrerar tekniska kampanjoperatörer till ett tekni
 feature: Technote
 role: Admin
 exl-id: 775c5dbb-ef73-48dd-b163-23cfadc3dab8
-source-git-commit: 09db0cc1a14bffefe8d1b8d0d5a06d5b6517a5bb
+source-git-commit: 5d3dd679eb7a756200d604601c20c3fed5770fc2
 workflow-type: tm+mt
 source-wordcount: '1507'
 ht-degree: 0%
@@ -145,7 +145,7 @@ Följ de steg som beskrivs i [Autentiseringsguide för Adobe Developer Console
 
 ### Steg 8 - Uppdatera API-integreringar från tredje part {#ims-migration-step-8}
 
-Du måste nu uppdatera av API-integreringarna och ringa in Adobe Campaign för att använda det nya tekniska kontot.
+Du måste nu uppdatera alla API-integreringar som gör anrop till Adobe Campaign för att använda det nya tekniska kontot.
 
 Mer information om API-integreringssteg, inklusive en exempelkod för smidig integrering, finns i [Autentiseringsdokumentation för Adobe Developer Console](https://developer.adobe.com/developer-console/docs/guides/authentication/ServerToServerAuthentication/){target="_blank"}.
 
