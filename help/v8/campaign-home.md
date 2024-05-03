@@ -3,14 +3,14 @@ keywords: Campaign Classic, starstida, populära ämnen
 description: Campaign v8 - hjälpcenter
 title: Adobe Campaign v8 - produktdokumentation
 exl-id: 6010b0f7-baf0-43ba-af9a-b8864f3897ea,9ff16fb1-d3d3-44fe-9016-15abffdbc74e
-source-git-commit: 43666e72cdbdb1e7305208903dbb82eda73fa46f
+source-git-commit: 574206bd243a2492e512ee62f057da940d29da6e
 workflow-type: tm+mt
-source-wordcount: '326'
+source-wordcount: '327'
 ht-degree: 29%
 
 ---
 
-# Adobe Campaign v8-dokumentation {#campaign-documentation}
+# Adobe Campaign v8 (konsol) - dokumentation {#campaign-documentation}
 
 ## Nyheter
 
