@@ -5,10 +5,10 @@ description: Lär dig skapa ett arbetsflöde
 feature: Workflows
 role: User
 exl-id: a6003fdb-1035-4b80-8831-73f30a0b4fb2
-source-git-commit: 567c2e84433caab708ddb9026dda6f9cb717d032
+source-git-commit: b7fa3dfb1e596d2ea41674278cbe315199264611
 workflow-type: tm+mt
-source-wordcount: '969'
-ht-degree: 4%
+source-wordcount: '838'
+ht-degree: 0%
 
 ---
 
@@ -34,7 +34,7 @@ Ange en etikett och klicka på **[!UICONTROL Save]**.
 
 ## Lägg till och länka aktiviteter {#add-and-link-activities}
 
-Du måste nu definiera de olika aktiviteterna och koppla samman dem i diagrammet. I det här skedet av konfigurationen kan vi se diagrametiketten och arbetsflödesstatusen (Redigering pågår). Fönstrets nedre del används endast för att redigera diagrammet. Den innehåller ett verktygsfält, en palett med aktiviteter (till vänster) och själva diagrammet (till höger).
+Du måste nu definiera de olika aktiviteterna och länka samman dem i diagrammet. I det här skedet av konfigurationen kan vi se diagrametiketten och arbetsflödesstatusen (Redigering pågår). Fönstrets nedre del används endast för att redigera diagrammet. Den innehåller ett verktygsfält, en palett med aktiviteter (till vänster) och själva diagrammet (till höger).
 
 ![](assets/new-workflow-2.png)
 
@@ -49,7 +49,7 @@ Aktiviteter grupperas efter kategori på palettens olika flikar. Tillgängliga f
 * Den tredje fliken innehåller verktyg och åtgärder som kan användas i arbetsflödet. Dessa aktiviteter beskrivs närmare i [Verksamheter](action-activities.md).
 * Den fjärde fliken innehåller aktiviteter som är beroende av en viss händelse, till exempel att ett e-postmeddelande tas emot eller att en fil tas emot på en server. Dessa aktiviteter beskrivs närmare i [Evenemangsaktiviteter](event-activities.md).
 
-Så här skapar du diagrammet
+Skapa diagrammet
 
 1. Lägg till en aktivitet genom att markera den på paletten och flytta den till diagrammet med dra-och-släpp-funktionen.
 
@@ -145,31 +145,3 @@ Du kan duplicera olika typer av arbetsflöden. När du har duplicerat arbetsflö
 1. Ändra arbetsflödesetiketten i arbetsflödesfönstret.
 1. Klicka **Spara**.
 
-Dubblettfunktionen är inte direkt tillgänglig i kampanjvyn.
-
-Men du kan skapa en vy som visar alla arbetsflöden i instansen. I den här vyn kan du duplicera arbetsflöden med **Duplicera till**.
-
-**Skapa en vy**
-
-1. I **Explorer** går du till den mapp du behöver för att skapa vyn i.
-1. Högerklicka och gå till **Lägg till en ny mapp** > **Process**, markera **Arbetsflöden**.
-
-   ![](assets/add-new-folder-workflows.png)
-
-Den nya mappen **Arbetsflöden** skapas.
-
-1. Högerklicka och välj **Egenskaper**.
-1. I **Begränsning** -fliken, aktivera **Mappen är en vy** och klicka **Spara**.
-
-   ![](assets/folder-is-a-view.png)
-
-Mappen innehåller nu alla arbetsflöden för din instans.
-
-**Duplicera ett kampanjarbetsflöde**
-
-1. Välj ett kampanjarbetsflöde i arbetsflödesvyn.
-1. Högerklicka **Duplicera till**.
-1. Ändra etiketten.
-1. Klicka **Spara**.
-
-Du kan se det duplicerade arbetsflödet i arbetsflödesvyn.
