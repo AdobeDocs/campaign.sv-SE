@@ -4,10 +4,10 @@ description: Läs mer om Ändra datakällaktivitet
 feature: Workflows, Data Management, Federated Data Access
 role: User
 exl-id: ca7eca9d-9112-4ea1-9a0c-a24cf6a978e6
-source-git-commit: 567c2e84433caab708ddb9026dda6f9cb717d032
+source-git-commit: 5af8753e9412c239ba40997abc5f8e61f405e999
 workflow-type: tm+mt
-source-wordcount: '238'
-ht-degree: 3%
+source-wordcount: '279'
+ht-degree: 2%
 
 ---
 
@@ -23,6 +23,10 @@ När du till exempel frågar **[!UICONTROL Recipients]** tabell, som lagras i mo
 Använd en **[!UICONTROL Change Data Source]** aktivitet som använder en annan datakälla för **[!UICONTROL Working table]**.
 
 Observera att när du använder **[!UICONTROL Change Data Source]** måste du växla tillbaka till Cloud-databasen för att fortsätta med arbetsflödeskörningen.
+
+>[!IMPORTANT]
+>
+>Observera att **[!UICONTROL Change Dimension]** och **[!UICONTROL Change Data source]** aktiviteter ska inte läggas till på en rad. Om du behöver använda båda aktiviteterna i följd måste du inkludera en **[!UICONTROOL Berikning]** mellan dem. Detta garanterar att programmet körs på rätt sätt och förhindrar eventuella konflikter och fel.
 
 Använd **[!UICONTROL Change Data Source]** måste du
 
