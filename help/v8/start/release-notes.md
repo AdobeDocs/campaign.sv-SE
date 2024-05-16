@@ -5,9 +5,9 @@ feature: Release Notes
 role: User
 level: Beginner
 exl-id: 7cf8111d-9f3a-46a4-813a-d4e43a1d1471
-source-git-commit: 166fe487aa169f47f9da86c2990acb1f6dff430e
+source-git-commit: 1f113f63089395269c494a9328d633684977912a
 workflow-type: tm+mt
-source-wordcount: '909'
+source-wordcount: '898'
 ht-degree: 5%
 
 ---
@@ -52,7 +52,7 @@ Databaser stöds nu som en extern databas med Adobe Campaign Federated Data Acce
 
 * Flera scheman har ändrats från 32 till 64 bitar. Detta gäller endast kunder som migrerar från Campaign Standard. [Läs mer](https://experienceleague.adobe.com/docs/experience-cloud/campaign/technotes/64-bit-tables.html).
 
-* I Campaign-tabeller kan du med en ny flagga hantera ändringar av attributen lastModified, created och createdBy-id. När flaggan är aktiverad ignoreras de värden som användarna anger för dessa attribut. Endast servertid och ID från användarkontexten används. När flaggan är inaktiverad används värden som användaren anger för dessa attribut. Flaggan ignoreTimestampID finns i serverConf.xml under noden shared.
+* I Campaign-tabeller fylls nu följande attribut i som standard med serverns datum och tid: lastModified, created, createdBy-id. Värden som tillhandahålls av användare i API-anrop ignoreras. Den här konfigurationen kan ändras i konfigurationsfilen för Campaign-servern. Som kund med hanterade Cloud Service måste du kontakta Adobe för att ändra standardkonfigurationen.
 
 ### Korrigeringar {#fixes-8-7-1}
 
