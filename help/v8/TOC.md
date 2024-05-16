@@ -5,9 +5,9 @@ user-guide-description: Produktdokumentation för Adobe Campaign v8 (klientkonso
 title: Adobe Campaign v8-dokumentation
 description: Kampanjdokumentation v8
 breadcrumb-title: Dokumentation om Campaign v8
-source-git-commit: 7ea0224f3483221596b9277133516e4624afdabf
+source-git-commit: 5ad40a349df472ace07f124776517c41f4bddc5e
 workflow-type: tm+mt
-source-wordcount: '605'
+source-wordcount: '612'
 ht-degree: 16%
 
 ---
@@ -34,7 +34,7 @@ ht-degree: 16%
    + [Upptäck användargränssnittet](start/campaign-ui.md)
    + [Anslut till Campaign](start/connect.md)
    + [Komponenter och processer](start/ac-components.md)
-   + [Från Classic v7 till v8](start/v7-to-v8.md)
+   + [Från Campaign Classic v7 till v8](start/v7-to-v8.md)
    + [Från Campaign Standard till v8](start/acs-to-v8.md)
    + [Vanliga frågor och svar ](start/campaign-faq.md)
 + Campaign Management {#campaigns}
@@ -201,5 +201,7 @@ ht-degree: 16%
       + [Uppdatera databasen](dev/update-database-structure.md)
       + [Inmatningsformulär](dev/forms.md)
    + [Kampanj-API:er](dev/api.md)
-+ [Campaign Control Panel >](https://experienceleague.adobe.com/docs/control-panel/using/control-panel-home.html?lang=sv)
-+ [Campaign Automation Guide >](https://experienceleague.adobe.com/docs/campaign/automation/home.html)
++ [Campaign Control Panel >](https://experienceleague.adobe.com/en/docs/control-panel/using/control-panel-home)
++ [Campaign Automation Guide >](https://experienceleague.adobe.com/en/docs/campaign/automation/home)
++ [Dokumentation för kampanjens webbgränssnitt >](https://experienceleague.adobe.com/en/docs/campaign-web/v8/campaign-web-home)
+
