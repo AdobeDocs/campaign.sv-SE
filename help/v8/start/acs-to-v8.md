@@ -4,9 +4,9 @@ description: Övergång från Campaign Standard till kampanj v8
 feature: Overview
 role: User
 level: Beginner
-source-git-commit: 6301eab406c56c5b8aea6c1717c2ee9a9cabde3f
+source-git-commit: 2f4d422bbf41ad4def5e0cdedac938b208b0873e
 workflow-type: tm+mt
-source-wordcount: '158'
+source-wordcount: '159'
 ht-degree: 1%
 
 ---
