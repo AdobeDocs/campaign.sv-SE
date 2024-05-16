@@ -7,9 +7,9 @@ level: Experienced
 hide: true
 hidefromtoc: true
 exl-id: 7c586836-82e1-45fb-9c28-18361572e1fa
-source-git-commit: 042a1cc96b819a1a77442e274defbadeb393eafc
+source-git-commit: 166fe487aa169f47f9da86c2990acb1f6dff430e
 workflow-type: tm+mt
-source-wordcount: '745'
+source-wordcount: '743'
 ht-degree: 2%
 
 ---
@@ -37,7 +37,7 @@ När dessa funktioner är implementerade kan Adobe övervaka:
 
 ## Säker, kundhanterad nyckelintegrering {#secure-cmk-integration}
 
-The **Integrering med Secure Customer Managed Key (CMK)** Med kan du kryptera instansen och dina data med din egen nyckel via ditt Amazon Web Services-konto (AWS).
+The **Integrering med Secure Customer Managed Key (CMK)** Med kan du kryptera vilande data med din egen nyckel via ditt Amazon Web Services-konto (AWS).
 
 KMS-nycklar (Key Management Service) i ditt AWS-konto som du skapar, äger och hanterar. Du har fullständig kontroll över dessa KMS-nycklar och använder dem för att kryptera och dekryptera data. Genom att göra dig ansvarig för att generera och hantera krypteringsnycklar kan du med den här kapaciteten få bättre kontroll över dem, inklusive återkallande av en nyckel.
 

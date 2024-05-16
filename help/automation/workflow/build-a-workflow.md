@@ -5,7 +5,7 @@ description: Lär dig skapa ett arbetsflöde
 feature: Workflows
 role: User
 exl-id: a6003fdb-1035-4b80-8831-73f30a0b4fb2
-source-git-commit: b7fa3dfb1e596d2ea41674278cbe315199264611
+source-git-commit: 166fe487aa169f47f9da86c2990acb1f6dff430e
 workflow-type: tm+mt
 source-wordcount: '838'
 ht-degree: 0%
@@ -133,9 +133,7 @@ Förutom de vanliga arbetsflödesegenskaperna kan du med mallegenskaperna ange k
 
 Du kan duplicera olika typer av arbetsflöden. När du har duplicerat arbetsflödet överförs inte ändringarna till kopian av arbetsflödet.
 
->[!CAUTION]
->
->Kopiera och klistra in är tillgängligt i arbetsflöden, men vi rekommenderar att du använder **Duplicera**. När en aktivitet har kopierats behålls hela dess konfiguration. För leveransaktiviteter (e-post, SMS, push-meddelanden..) kopieras även det leveransobjekt som är kopplat till aktiviteten, vilket kan orsaka krasch.
+Adobe rekommenderar att du duplicerar ett arbetsflöde i stället för att utföra en kopiera/klistra in av aktiviteter. När en aktivitet kopieras behålls alla dess inställningar. För kanalaktiviteter kopieras även det leveransobjekt som är kopplat till aktiviteten, vilket kan leda till större problem.
 
 1. Högerklicka på ett arbetsflöde.
 1. Klicka **Duplicera**.
