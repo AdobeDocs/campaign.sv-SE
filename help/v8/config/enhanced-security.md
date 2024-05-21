@@ -4,12 +4,10 @@ description: Kom igång med tillägget Campaign Enhanced security
 feature: Configuration
 role: Developer
 level: Experienced
-hide: true
-hidefromtoc: true
 exl-id: 7c586836-82e1-45fb-9c28-18361572e1fa
-source-git-commit: 166fe487aa169f47f9da86c2990acb1f6dff430e
+source-git-commit: 55c16fe19125ea54035a8f97928484c7baea161b
 workflow-type: tm+mt
-source-wordcount: '743'
+source-wordcount: '753'
 ht-degree: 2%
 
 ---
@@ -90,7 +88,7 @@ För att säkerställa hög tillgänglighet (HA) används två tunnlar för att 
 
 Tre användningsområden stöds:
 
-* FDA (Federated Data Access) via VPN<!--to access your on-premise database from the Campaign instance over VPN-->
+* FDA (Federated Data Access) via VPN för att komma åt din lokala databas från Campaign-instansen via VPN
 
 * Instansinloggning via VPN från en tjock klient
 
@@ -117,7 +115,7 @@ Följ riktlinjerna nedan för att säkerställa att funktionen används på rät
 
 Följande skyddsräcken och begränsningar gäller för VPN-tunnlingsintegreringen med Adobe Campaign v8:
 
-* För närvarande stöds endast lokala databaser, som<!--Richa to check the list with PM-->:
+* Endast lokala databaser stöds, till exempel<!--Richa to check the list with PM-->:
 
    * MySQL
    * Netezza

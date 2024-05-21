@@ -5,10 +5,10 @@ feature: Release Notes
 role: Admin
 level: Beginner
 exl-id: 4be3a6dc-0c61-4534-b9dd-6c99c8a037a9
-source-git-commit: 1857f0f40d554abededfaa0c1e3dec4b57ca23b7
+source-git-commit: 55c16fe19125ea54035a8f97928484c7baea161b
 workflow-type: tm+mt
-source-wordcount: '409'
-ht-degree: 16%
+source-wordcount: '429'
+ht-degree: 15%
 
 ---
 
@@ -57,6 +57,10 @@ Externa databaser som är kompatibla med Adobe Campaign FDA-modulen (Federated D
 * **[!DNL Google Big Query]**
 * **[!DNL Snowflake]**
 * **[!DNL Vertica]**
+
+
+>[!AVAILABILITY]
+>Med [Förbättrat säkerhetstillägg](../config/enhanced-security.md)får du tillgång till dina lokala databaser via den säkra VPN-justeringen. [Läs mer](../config/enhanced-security.md#vpn-callouts)
 
 ## Mobil-SDK {#MobileSDK}
 
