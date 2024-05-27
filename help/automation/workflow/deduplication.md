@@ -5,10 +5,10 @@ description: Läs mer om arbetsflödesaktiviteten Deduplicering
 feature: Workflows, Targeting Activity
 role: User
 exl-id: f79a979d-bd1d-4a86-8844-563886692941
-source-git-commit: 567c2e84433caab708ddb9026dda6f9cb717d032
+source-git-commit: 7f6c394f56d517c0a675e0fd2341bb6ef98044f0
 workflow-type: tm+mt
-source-wordcount: '1089'
-ht-degree: 10%
+source-wordcount: '1115'
+ht-degree: 7%
 
 ---
 
@@ -23,8 +23,8 @@ The **[!UICONTROL Deduplication]** används för att ta bort dubblettrader från
 | Senaste ändringsdatum | Förnamn | Efternamn | E-post | Mobiltelefon | Telefon |
 -----|------------|-----------|-------|--------------|------
 | 02/03/2020 | Bob | Tisner | bob@mycompany.com | 444-444-4444 | 888-888-8888 |
-| 05/19/2020 | Robert | Tisner | bob@mycompany.com | 444-444-4444 | 777-777-7777 |
-| 07/22/2020 | Bobby | Tisner | bob@mycompany.com | 444-444-4444 | 777-777-7777 |
+| 05/19/2020 | Robert | Tisner | bob@mycompany.com | 444-444-4444 | 777-777-777 |
+| 07/22/2020 | Bobby | Tisner | bob@mycompany.com | 444-444-4444 | 777-777-777 |
 
 The **[!UICONTROL Deduplication]** -aktiviteten kan behålla en hel rad som den unika posten när dubbletter har identifierats. I ovanstående exempel gäller till exempel om aktiviteten är konfigurerad att bara behålla posten med den äldsta **[!UICONTROL Date]** blir resultatet:
 
@@ -38,8 +38,8 @@ Komplettera:
 
 | Datum | Förnamn | Efternamn | E-post | Mobiltelefon | Telefon |
 -----|------------|-----------|-------|--------------|------
-| 05/19/2020 | Robert | Tisner | bob@mycompany.com | 444-444-4444 | 777-777-7777 |
-| 07/22/2020 | Bobby | Tisner | bob@mycompany.com | 444-444-4444 | 777-777-7777 |
+| 05/19/2020 | Robert | Tisner | bob@mycompany.com | 444-444-4444 | 777-777-777 |
+| 07/22/2020 | Bobby | Tisner | bob@mycompany.com | 444-444-4444 | 777-777-777 |
 
 ## Bästa praxis {#best-practices}
 

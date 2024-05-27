@@ -4,9 +4,10 @@ description: Lär dig hur du konfigurerar e-postmeddelanden i Adobe Campaign.
 feature: Email
 role: User
 level: Beginner
-source-git-commit: 263ec61c3717c054cc135f1c4fb1f7e287e4a154
+exl-id: 36033255-1e75-41c1-9816-126777f7330a
+source-git-commit: 7f6c394f56d517c0a675e0fd2341bb6ef98044f0
 workflow-type: tm+mt
-source-wordcount: '1128'
+source-wordcount: '1160'
 ht-degree: 4%
 
 ---
@@ -19,66 +20,69 @@ Innan du skickar leveransen kan du definiera sändningsparametrarna i leveranseg
 
 ![](assets/delivery-properties-delivery.png)
 
-* **[!UICONTROL Delivery priority]**: Använd det här alternativet om du vill ändra utskicksordningen för dina leveranser genom att ange deras prioritetsnivå, från **[!UICONTROL Very low]** till **[!UICONTROL Very high]** (standardvärdet är **[!UICONTROL Normal]**).
+* **[!UICONTROL Delivery priority]**: använd det här alternativet om du vill ändra avsändarordningen för leveranser genom att ange prioritetsnivå från **[!UICONTROL Very low]** till **[!UICONTROL Very high]** (standardvärdet är **[!UICONTROL Normal]**).
 
-* **[!UICONTROL Message batch quantity]**: Använd det här alternativet för att definiera antalet meddelanden som grupperas i samma XML-leveranspaket. Om parametern är inställd på 0 grupperas meddelandena automatiskt. Paketstorleken definieras av beräkningen `<delivery size>/1024`, med minst 8 och högst 256 meddelanden per paket.
+* **[!UICONTROL Message batch quantity]**: använd det här alternativet för att definiera antalet meddelanden som grupperas i samma XML-leveranspaket. Om parametern är inställd på 0 grupperas meddelandena automatiskt. Paketstorleken definieras av beräkningen `<delivery size>/1024`, med minst 8 och högst 256 meddelanden per paket.
 
   >[!IMPORTANT]
   >
   >När leveransen skapas genom duplicering av en befintlig, återställs den här parametern.
 
-* **[!UICONTROL Send using multiple waves]**: Använd det här alternativet om du vill skicka meddelanden gruppvis i stället för till hela målgruppen samtidigt. [Läs mer](#sending-using-multiple-waves).
+* **[!UICONTROL Send using multiple waves]**: använd det här alternativet om du vill skicka meddelanden gruppvis i stället för till hela målgruppen samtidigt. [Läs mer](#sending-using-multiple-waves).
 
-* **[!UICONTROL Test SMTP delivery]**: Använd det här alternativet om du vill testa att skicka via SMTP. Leveransen behandlas upp till anslutningen till SMTP-servern men skickas inte: för varje mottagare av leveransen ansluter Campaign till SMTP-providerservern, kör SMTP RCPT TO-kommandot och stänger anslutningen före SMTP DATA-kommandot.
+* **[!UICONTROL Test SMTP delivery]**: använd det här alternativet för att testa att skicka via SMTP. Leveransen behandlas upp till anslutning till SMTP-servern men skickas inte: För varje mottagare av leveransen ansluter Campaign till SMTP-providerservern, kör SMTP RCPT TO-kommandot och stänger anslutningen före SMTP DATA-kommandot.
 
   >[!NOTE]
   >
   >* Det här alternativet får inte ställas in i mitten av källkoden.
   >
-  >* Läs mer om SMTP-serverkonfigurationen i [Campaign Classic v7-dokumentation](https://experienceleague.adobe.com/docs/campaign-classic/using/installing-campaign-classic/additional-configurations/configure-delivery-settings.html#smtp-relay){target="_blank"}.
+  >* Läs mer om SMTP-serverkonfigurationen i [Campaign Classic v7 - dokumentation](https://experienceleague.adobe.com/docs/campaign-classic/using/installing-campaign-classic/additional-configurations/configure-delivery-settings.html#smtp-relay){target="_blank"}.
 
-* **[!UICONTROL Email BCC]**: Använd det här alternativet om du vill lagra e-post på ett externt system via BCC genom att lägga till en e-postadress för hemlig kopia till meddelandemålet. [Läs mer](email-parameters.md).
+* **[!UICONTROL Email BCC]**: använd det här alternativet för att lagra e-post på ett externt system via BCC genom att lägga till en e-postadress för hemlig kopia till meddelandemålet. [Läs mer](email-parameters.md).
 
 ## Skicka med flera vågor {#sending-using-multiple-waves}
 
 För att balansera lasten kan du dela upp leveranser i flera satser. Konfigurera antalet batchar och deras proportioner i förhållande till hela leveransen.
 
->[!NOTE]
->
->Du kan bara definiera storleken och fördröjningen mellan två på varandra följande påfyllnader. Det går inte att konfigurera urvalskriterierna för mottagare för varje påfyllnad.
+Så här definierar du vågor:
 
-1. Öppna fönstret för leveransegenskaper och klicka på **[!UICONTROL Delivery]** -fliken.
-1. Välj **[!UICONTROL Send using multiple waves]** och klicka på **[!UICONTROL Define waves...]** länk.
+1. Öppna leveransegenskaperna och bläddra till **[!UICONTROL Delivery]** -fliken.
+1. Aktivera **[!UICONTROL Send using multiple waves]** och klicka på **[!UICONTROL Define waves...]** länk.
 
    ![](assets/delivery-define-waves.png)
 
-1. Om du vill konfigurera påfyllnader kan du antingen:
 
-   * Definiera storleken för varje våg. Om du till exempel skriver **[!UICONTROL 30%]** i motsvarande fält representerar varje våg 30 % av de meddelanden som ingår i leveransen, utom den sista, som representerar 10 % av meddelandena.
+1. Konfigurera vågor enligt nedan.
 
-     I **[!UICONTROL Period]** anger du fördröjningen mellan början av två påfyllnader i följd. Om du till exempel skriver **[!UICONTROL 2d]**, startar den första vågen omedelbart, den andra om två dagar, den tredje vågen om fyra dagar och så vidare.
-
-     ![](assets/delivery-waves-size.png)
-
-   * Definiera en kalender för att skicka varje påfyllnad.
-
-     I **[!UICONTROL Start]** anger du fördröjningen mellan början av två på varandra följande påfyllnader. I **[!UICONTROL Size]** anger du ett fast tal eller ett procenttal.
-
-     I exemplet nedan representerar den första vågen 25 % av det totala antalet meddelanden som ingår i leveransen och börjar omedelbart. Nästa två vågor slutför leveransen och är inställda på att börja med 6 timmars intervall.
-
-     ![](assets/delivery-waves-calendar.png)
-
-   En specifik typologiregel, **[!UICONTROL Wave scheduling check]**, säkerställer att den sista vågen planeras före leveransens giltighetsgräns. Kampanjtypologier och deras regler, konfigurerade i **[!UICONTROL Typology]** -fliken för leveransegenskaperna visas i [det här avsnittet](../../automation/campaign-opt/campaign-typologies.md#typology-rules)<!--ref TBC-->.
-
-   >[!IMPORTANT]
+   >[!NOTE]
    >
-   >Kontrollera att de sista påfyllnaderna inte överskrider leveransdatumet, som definieras i **[!UICONTROL Validity]** -fliken. Annars kanske vissa meddelanden inte skickas.
-   >
-   >Du måste också ge tillräckligt med tid för att försöka igen när du konfigurerar de sista vågorna. <!--See [this section]().-->
+   >Du kan bara definiera storleken och fördröjningen mellan två på varandra följande påfyllnader. Det går inte att konfigurera urvalskriterierna för mottagare för varje påfyllnad.
 
-1. Gå till leveransloggarna för att övervaka dina utskick. Läs [den här sidan](send.md)<!--ref TBC-->.
+Du kan antingen definiera:
 
-   Du kan se leveranser som redan har skickats i de bearbetade påfyllnaderna (**[!UICONTROL Sent]** status) och de leveranser som ska skickas i de återstående påfyllnaderna (**[!UICONTROL Pending]** status).
+    * **Storleken för varje våg**. Om du till exempel anger **[!UICONTROL 30%]** i motsvarande fält representerar varje våg 30 % av de meddelanden som ingår i leveransen, utom den sista, som representerar 10 % av meddelandena.
+    
+    I **[!UICONTROL Period]** anger du fördröjningen mellan början av två påfyllnader i följd. Om du till exempel anger **[!UICONTROL 2d]**, den första vågen startar omedelbart, den andra startar om två dagar, den tredje vågen om fyra dagar och så vidare.
+    
+    ![](assets/delivery-waves-size.png)
+    
+    * **En kalender för att skicka varje påfyllnad**.  Den första vågen representerar till exempel 25 % av det totala antalet meddelanden som ingår i leveransen och börjar omedelbart. Nästa två vågor slutför leveransen och är inställda på att börja med 6 timmars intervall.
+    
+    I **[!UICONTROL Start]** kolumn, anger fördröjningen mellan början av två påfyllnader i följd. I **[!UICONTROL Size]** kolumn, ange ett fast tal eller en procentsats.
+    
+    ![](assets/delivery-waves-calendar.png)
+
+En specifik typologiregel, **[!UICONTROL Wave scheduling check]**, säkerställer att den sista vågen planeras före leveransens giltighetsgräns. Kampanjtypologier och deras regler, konfigurerade i **[!UICONTROL Typology]** -fliken för leveransegenskaperna visas i [det här avsnittet](../../automation/campaign-opt/campaign-typologies.md#typology-rules)<!--ref TBC-->.
+
+>[!IMPORTANT]
+>
+>Kontrollera att de sista påfyllnaderna inte överskrider leveransdatumet, som definieras i **[!UICONTROL Validity]** -fliken. Annars kanske vissa meddelanden inte skickas. Läs mer om giltighetsperioden för en leverans i [det här avsnittet](delivery-failures.md#valid-period).
+>
+>Du måste också ange tillräckligt med tid för att försöka igen när du konfigurerar de sista vågorna. Läs mer om återförsök i [det här avsnittet](delivery-failures.md#retries).
+
+Bläddra till leveransloggarna för att övervaka dina sändningar. Se [den här sidan](send.md)
+
+Du kan se leveranser som redan har skickats i de bearbetade påfyllnaderna (**[!UICONTROL Sent]** status) och de leveranser som ska skickas i de återstående påfyllnaderna (**[!UICONTROL Pending]** status).
 
 De två exemplen nedan är de vanligaste användningsområdena när du använder flera vågor.
 
@@ -88,15 +92,15 @@ De två exemplen nedan är de vanligaste användningsområdena när du använder
 
   För att undvika att markeras som skräppost kan du stegvis öka volymen som skickas med vågor. Detta bör säkerställa en smidig utveckling av startfasen och göra det möjligt att minska den totala frekvensen av ogiltiga adresser.
 
-  Om du vill göra det använder du **[!UICONTROL Schedule waves according to a calendar]** alternativ. Du kan till exempel ställa in den första vågen på 10 %, den andra på 15 % och så vidare.
+  Använd **[!UICONTROL Schedule waves according to a calendar]** alternativ. Du kan till exempel ställa in den första vågen på 10 %, den andra på 15 % och så vidare.
 
   ![](assets/delivery-waves-ex-ramp-up.png)
 
-* **Kampanjer som involverar ett callcenter**
+* **Kampanjer med ett callcenter**
 
-  När ni hanterar en lojalitetskampanj via telefon har er organisation begränsad kapacitet att behandla antalet samtal till kontaktabonnenter.
+  När ni hanterar en lojalitetskampanj per telefon har organisationen begränsad kapacitet att behandla antalet samtal till kontaktprenumeranter.
 
-  Med hjälp av vågor kan du begränsa antalet meddelanden till 20 per dag, vilket är den dagliga bearbetningskapaciteten för ett callcenter.
+  Med hjälp av vågor kan du begränsa antalet meddelanden till 20 per dag, till exempel med tanke på den dagliga bearbetningskapaciteten hos ett callcenter.
 
   Om du vill göra det väljer du **[!UICONTROL Schedule multiple waves of the same size]** alternativ. Retur **[!UICONTROL 20]** som vågens storlek och **[!UICONTROL 1d]** i **[!UICONTROL Period]** fält.
 
@@ -117,7 +121,7 @@ Följ stegen nedan för att göra detta.
 
    ![](assets/delivery-send-analyze.png)
 
-1. När du är klar klickar du på **[!UICONTROL Confirm delivery]** för att starta meddelandeleveransen.
+1. När du är klar klickar du **[!UICONTROL Confirm delivery]** för att starta meddelandeleveransen.
 
    ![](assets/delivery-send-confirm.png)
 
@@ -130,7 +134,7 @@ Följ stegen nedan för att göra detta.
 
 <!--About message tracking-->
 
-## Schemalägg sändning {#schedule-delivery-sending}
+## Schemalägg leverans som skickas {#schedule-delivery-sending}
 
 Du kan skjuta upp leveransen av meddelanden för att schemalägga den eller för att hantera säljtrycket och undvika att överbelasta en grupp.
 

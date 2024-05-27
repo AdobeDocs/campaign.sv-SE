@@ -5,7 +5,7 @@ feature: Profiles, Monitoring
 role: User
 level: Beginner, Intermediate
 exl-id: 9c83ebeb-e923-4d09-9d95-0e86e0b80dcc
-source-git-commit: 5ab598d904bf900bcb4c01680e1b4730881ff8a5
+source-git-commit: 7f6c394f56d517c0a675e0fd2341bb6ef98044f0
 workflow-type: tm+mt
 source-wordcount: '2990'
 ht-degree: 2%
@@ -103,7 +103,7 @@ MTA avgör vilken typ av avhoppssvar som skickas tillbaka från meddelandets e-p
 >
 >Inställningar för nya försök i leveransegenskaperna används inte av Campaign.
 
-## Giltighetsperiod
+## Giltighetsperiod {#valid-period}
 
 Giltighetsperioden i kampanjleveranserna är begränsad till **3,5 dagar eller mindre**. Om du definierar ett värde som är högre än 3,5 dagar för en leverans i Campaign beaktas det inte.
 

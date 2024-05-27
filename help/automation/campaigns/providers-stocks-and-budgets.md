@@ -5,9 +5,9 @@ description: Leverantörer, lager och budgetar
 feature: Budget Management, Campaigns
 role: User
 exl-id: 1d4a98e6-af11-4645-864e-29aa5766d9d8
-source-git-commit: c3f4ad0b56dd45d19eebaa4d2f06551c8fecac1d
+source-git-commit: 7f6c394f56d517c0a675e0fd2341bb6ef98044f0
 workflow-type: tm+mt
-source-wordcount: '1832'
+source-wordcount: '1830'
 ht-degree: 1%
 
 ---
@@ -148,7 +148,7 @@ När en tjänst har valts, de kostnadskategorier som motsvarar leveranstypen (di
 
   ![](assets/supplier-mail-delivery-select.png)
 
-* För leverans i mobilkanaler eller via telefon gäller samma urvalsmodell.
+* Samma markeringsläge gäller för leverans i mobilkanaler.
 * För en e-postleverans väljs tjänsten från **[!UICONTROL Advanced]** -fliken i leveransegenskaperna, som i följande exempel:
 
   ![](assets/supplier-email-delivery-select.png)

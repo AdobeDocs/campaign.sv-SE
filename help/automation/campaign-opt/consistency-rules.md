@@ -4,9 +4,9 @@ title: Konsekvensregler
 description: Konsekvensregler
 feature: Typology Rules
 exl-id: dcb4ffcf-71e5-48a2-b0f7-42915a599652
-source-git-commit: 8247bed87deb3fb19a01447dab180ed9c97ea96c
+source-git-commit: 7f6c394f56d517c0a675e0fd2341bb6ef98044f0
 workflow-type: tm+mt
-source-wordcount: '736'
+source-wordcount: '738'
 ht-degree: 4%
 
 ---
@@ -19,11 +19,11 @@ Adobe Campaign garanterar enhetlig kommunikation tack vare en uppsättning regle
 
 ## Kontrollkapacitet {#control-capacity}
 
-Innan du levererar meddelanden måste du se till att din organisation har kapacitet att bearbeta leveransen (fysisk infrastruktur), de svar som leveransen kan generera (inkommande meddelanden) och antalet samtal som ska göras till kontaktprenumeranter (bearbetningskapacitet för callcenter), till exempel.
+Innan du levererar meddelanden måste du se till att din organisation har kapacitet (fysisk infrastruktur) att bearbeta leveransen, de svar som leveransen kan generera (inkommande meddelanden) och antalet samtal som ska göras till kontaktprenumeranter (bearbetningskapacitet för callcenter), till exempel.
 
-För att göra detta måste du skapa **[!UICONTROL Capacity]** typologiregler.
+Om du vill göra det skapar du **[!UICONTROL Capacity]** typologiregler.
 
-I följande exempel skapar vi en typologiregel för en lojalitetskampanj för en telefon. Vi begränsar antalet meddelanden till 20 per dag, dvs. den dagliga bearbetningskapaciteten för ett callcenter. När regeln tillämpas på två leveranser kan vi övervaka förbrukningen via loggar.
+I följande exempel skapar vi en typologiregel för en lojalitetskampanj per telefon. Vi begränsar antalet meddelanden till 20 per dag, dvs. den dagliga bearbetningskapaciteten för ett callcenter. När regeln tillämpas på två leveranser kan vi övervaka förbrukningen via loggar.
 
 Så här utformar du en ny kapacitetsregel:
 
