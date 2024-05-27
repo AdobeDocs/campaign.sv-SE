@@ -6,9 +6,9 @@ role: User
 level: Beginner
 hidefromtoc: true
 exl-id: 3c1cae6e-0a75-4f18-b1ee-2d5fa23b4251
-source-git-commit: d6160d927601f66f450553a6dd6f91d74b0b1104
+source-git-commit: 5f62addc95197ce5f4f80c026cc51ac14e61ff58
 workflow-type: tm+mt
-source-wordcount: '165'
+source-wordcount: '179'
 ht-degree: 24%
 
 ---
@@ -21,6 +21,7 @@ På den här sidan visas alla de senaste uppdateringarna i [!DNL Campaign] v8-do
 ## Maj 2024 {#may-2024}
 
 * Listan över kanaler och typer av leveranser finns nu i [den här sidan](create-message.md).
+* Leveransinställningarna och våghanteringssektionerna har omstrukturerats och förbättrats. [Läs mer](../send/configure-and-send.md).
 * En anteckning har lagts till för att ange att **[!UICONTROL Change Dimension]** och **[!UICONTROL Change Data source]** aktiviteter ska inte läggas till på en rad och måste ha en **[!UICONTROL Enrichement]** mellan dem. Läs mer i [Ändra dimension](../../automation/workflow/change-dimension.md) och [Ändra datakälla](../../automation/workflow/change-data-source.md) -avsnitt.
 
 ## Febuary 2024 {#feb-2024}
