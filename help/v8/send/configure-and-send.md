@@ -5,9 +5,9 @@ feature: Email
 role: User
 level: Beginner
 exl-id: 36033255-1e75-41c1-9816-126777f7330a
-source-git-commit: 52863e9cb3b9ccf03c8e2b838827af862b30e3b9
+source-git-commit: 070aa96187c5654e40665cb5b23329d3f7d508d6
 workflow-type: tm+mt
-source-wordcount: '1178'
+source-wordcount: '1193'
 ht-degree: 3%
 
 ---
@@ -48,6 +48,8 @@ Använd  **[!UICONTROL Test SMTP delivery]** möjlighet att testa att skicka via
 
 För att balansera lasten kan du dela upp leveranser i flera satser. Konfigurera antalet batchar och deras proportioner i förhållande till hela leveransen.
 
+### Aktivera vågor {#enable-waves}
+
 Så här definierar du vågor:
 
 1. Öppna leveransegenskaperna och bläddra till **[!UICONTROL Delivery]** -fliken.
@@ -55,26 +57,27 @@ Så här definierar du vågor:
 
    ![](assets/delivery-define-waves.png)
 
+### Konfigurera påfyllnader {#config-waves}
 
-1. Konfigurera vågor enligt nedan.
+>[!NOTE]
+>
+>Du kan bara definiera storleken och fördröjningen mellan två på varandra följande påfyllnader. Det går inte att konfigurera urvalskriterierna för mottagare för varje påfyllnad.
 
-   >[!NOTE]
-   >
-   >Du kan bara definiera storleken och fördröjningen mellan två på varandra följande påfyllnader. Det går inte att konfigurera urvalskriterierna för mottagare för varje påfyllnad.
+Du kan antingen definiera storleken på varje våg eller lägga till dem i en kalender.
 
-Du kan antingen definiera:
+* **Definiera storleken för varje våg**. Om du till exempel skriver **[!UICONTROL 30%]** i motsvarande fält representerar varje våg 30 % av de meddelanden som ingår i leveransen, utom den sista, som representerar 10 % av meddelandena.
 
-    * **Storleken för varje våg**. Om du till exempel anger **[!UICONTROL 30%]** i motsvarande fält representerar varje våg 30 % av de meddelanden som ingår i leveransen, utom den sista, som representerar 10 % av meddelandena.
-    
-    I **[!UICONTROL Period]** anger du fördröjningen mellan början av två påfyllnader i följd. Om du till exempel anger **[!UICONTROL 2d]**, den första vågen startar omedelbart, den andra startar om två dagar, den tredje vågen om fyra dagar och så vidare.
-    
-    ![](assets/delivery-waves-size.png)
-    
-    * **En kalender för att skicka varje påfyllnad**.  Den första vågen representerar till exempel 25 % av det totala antalet meddelanden som ingår i leveransen och börjar omedelbart. Nästa två vågor slutför leveransen och är inställda på att börja med 6 timmars intervall.
-    
-    I **[!UICONTROL Start]** kolumn, anger fördröjningen mellan början av två påfyllnader i följd. I **[!UICONTROL Size]** kolumn, ange ett fast tal eller en procentsats.
-    
-    ![](assets/delivery-waves-calendar.png)
+  I **[!UICONTROL Period]** anger du fördröjningen mellan början av två påfyllnader i följd. Om du till exempel skriver **[!UICONTROL 2d]**, startar den första vågen omedelbart, den andra om två dagar, den tredje vågen om fyra dagar och så vidare.
+
+  ![](assets/delivery-waves-size.png)
+
+* **Definiera en kalender för att skicka varje påfyllnad**.  Den första vågen representerar till exempel 25 % av det totala antalet meddelanden som ingår i leveransen och börjar omedelbart. Nästa två vågor slutför leveransen och är inställda på att börja med 6 timmars intervall.
+
+  I **[!UICONTROL Start]** -kolumnen anger du fördröjningen mellan början av två på varandra följande påfyllnader. I **[!UICONTROL Size]** anger du ett fast tal eller ett procenttal.
+
+  ![](assets/delivery-waves-calendar.png)
+
+### Kontroll av vågplanering {#check-waves}
 
 En specifik typologiregel, **[!UICONTROL Wave scheduling check]**, säkerställer att den sista vågen planeras före leveransens giltighetsgräns. Kampanjtypologier och deras regler, konfigurerade i **[!UICONTROL Typology]** -fliken för leveransegenskaperna visas i [det här avsnittet](../../automation/campaign-opt/campaign-typologies.md#typology-rules)<!--ref TBC-->.
 
@@ -84,9 +87,14 @@ En specifik typologiregel, **[!UICONTROL Wave scheduling check]**, säkerställe
 >
 >Du måste också ange tillräckligt med tid för att försöka igen när du konfigurerar de sista vågorna. Läs mer om återförsök i [det här avsnittet](delivery-failures.md#retries).
 
+### Bildskärmsvågor {#monitor-waves}
+
 Bläddra till leveransloggarna för att övervaka dina sändningar. Se [den här sidan](send.md)
 
 Du kan se leveranser som redan har skickats i de bearbetade påfyllnaderna (**[!UICONTROL Sent]** status) och de leveranser som ska skickas i de återstående påfyllnaderna (**[!UICONTROL Pending]** status).
+
+
+### Vågprover {#samples-waves}
 
 De två exemplen nedan är de vanligaste användningsområdena när du använder flera vågor.
 
