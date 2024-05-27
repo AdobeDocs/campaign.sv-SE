@@ -5,14 +5,16 @@ feature: Email
 role: User
 level: Beginner
 exl-id: 36033255-1e75-41c1-9816-126777f7330a
-source-git-commit: 7f6c394f56d517c0a675e0fd2341bb6ef98044f0
+source-git-commit: 52863e9cb3b9ccf03c8e2b838827af862b30e3b9
 workflow-type: tm+mt
-source-wordcount: '1160'
-ht-degree: 4%
+source-wordcount: '1178'
+ht-degree: 3%
 
 ---
 
 # Konfigurera och skicka leveransen {#configure-delivery}
+
+Få åtkomst till leveransparametrarna för att konfigurera fler inställningar och definiera hur meddelanden ska skickas. Du kan definiera leverans [prioritet](#delivery-priority), konfigurera [vågor](#sending-using-multiple-waves)och testa leveransen. När konfigurationen är klar kan du bekräfta sändningen enligt beskrivningen i [det här avsnittet](#confirm-delivery). Meddelanden skickas sedan direkt eller baserat på leveransen [schema](#schedule-delivery-sending).
 
 ## Ange ytterligare parametrar {#delivery-additional-parameters}
 
@@ -20,25 +22,27 @@ Innan du skickar leveransen kan du definiera sändningsparametrarna i leveranseg
 
 ![](assets/delivery-properties-delivery.png)
 
-* **[!UICONTROL Delivery priority]**: använd det här alternativet om du vill ändra avsändarordningen för leveranser genom att ange prioritetsnivå från **[!UICONTROL Very low]** till **[!UICONTROL Very high]** (standardvärdet är **[!UICONTROL Normal]**).
+### Leveransprioritet {#delivery-priority}
 
-* **[!UICONTROL Message batch quantity]**: använd det här alternativet för att definiera antalet meddelanden som grupperas i samma XML-leveranspaket. Om parametern är inställd på 0 grupperas meddelandena automatiskt. Paketstorleken definieras av beräkningen `<delivery size>/1024`, med minst 8 och högst 256 meddelanden per paket.
+Använd **[!UICONTROL Delivery priority]** möjlighet att ändra avsändarordningen för leveranser genom att ange prioritetsnivå, från **[!UICONTROL Very low]** till **[!UICONTROL Very high]** (standardvärdet är **[!UICONTROL Normal]**).
 
-  >[!IMPORTANT]
-  >
-  >När leveransen skapas genom duplicering av en befintlig, återställs den här parametern.
+### Batchkvantitet
 
-* **[!UICONTROL Send using multiple waves]**: använd det här alternativet om du vill skicka meddelanden gruppvis i stället för till hela målgruppen samtidigt. [Läs mer](#sending-using-multiple-waves).
+Använd  **[!UICONTROL Message batch quantity]** för att definiera antalet meddelanden som grupperas i samma XML-leveranspaket. Om parametern är inställd på 0 grupperas meddelandena automatiskt. Paketstorleken definieras av beräkningen `<delivery size>/1024`, med minst 8 och högst 256 meddelanden per paket.
 
-* **[!UICONTROL Test SMTP delivery]**: använd det här alternativet för att testa att skicka via SMTP. Leveransen behandlas upp till anslutning till SMTP-servern men skickas inte: För varje mottagare av leveransen ansluter Campaign till SMTP-providerservern, kör SMTP RCPT TO-kommandot och stänger anslutningen före SMTP DATA-kommandot.
+>[!IMPORTANT]
+>
+>När leveransen skapas genom duplicering av en befintlig, återställs den här parametern.
 
-  >[!NOTE]
-  >
-  >* Det här alternativet får inte ställas in i mitten av källkoden.
-  >
-  >* Läs mer om SMTP-serverkonfigurationen i [Campaign Classic v7 - dokumentation](https://experienceleague.adobe.com/docs/campaign-classic/using/installing-campaign-classic/additional-configurations/configure-delivery-settings.html#smtp-relay){target="_blank"}.
+### Testa leveransen
 
-* **[!UICONTROL Email BCC]**: använd det här alternativet för att lagra e-post på ett externt system via BCC genom att lägga till en e-postadress för hemlig kopia till meddelandemålet. [Läs mer](email-parameters.md).
+Använd  **[!UICONTROL Test SMTP delivery]** möjlighet att testa att skicka via SMTP. Leveransen behandlas upp till anslutning till SMTP-servern men skickas inte: För varje mottagare av leveransen ansluter Campaign till SMTP-providerservern, kör SMTP RCPT TO-kommandot och stänger anslutningen före SMTP DATA-kommandot.
+
+>[!NOTE]
+>
+>* Det här alternativet får inte ställas in i mitten av källkoden.
+>
+>* Läs mer om SMTP-serverkonfigurationen i [Campaign Classic v7 - dokumentation](https://experienceleague.adobe.com/docs/campaign-classic/using/installing-campaign-classic/additional-configurations/configure-delivery-settings.html#smtp-relay){target="_blank"}.
 
 ## Skicka med flera vågor {#sending-using-multiple-waves}
 
