@@ -5,9 +5,9 @@ user-guide-description: Produktdokumentation för Adobe Campaign v8 (klientkonso
 title: Adobe Campaign v8-dokumentation
 description: Kampanjdokumentation v8
 breadcrumb-title: Dokumentation om Campaign v8
-source-git-commit: 338432b41276317f1f07a92f0106e20177b5becd
+source-git-commit: 41ba91fca46747760fc42ea6cd78600abbd74c02
 workflow-type: tm+mt
-source-wordcount: '609'
+source-wordcount: '613'
 ht-degree: 16%
 
 ---
@@ -201,6 +201,7 @@ ht-degree: 16%
       + [Använda en anpassad mottagartabell](dev/custom-recipient.md)
       + [Uppdatera databasen](dev/update-database-structure.md)
       + [Inmatningsformulär](dev/forms.md)
+   + [Arbeta med datapaket](dev/packages.md)
    + [Kampanj-API:er](dev/api.md)
 + [Campaign Control Panel >](https://experienceleague.adobe.com/en/docs/control-panel/using/control-panel-home)
 + [Campaign Automation Guide >](https://experienceleague.adobe.com/en/docs/campaign/automation/home)

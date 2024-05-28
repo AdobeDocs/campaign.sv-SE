@@ -3,9 +3,9 @@ title: Använd arbetsflödesdata
 description: Lär dig hur du använder arbetsflödesdata
 feature: Workflows, Data Management
 exl-id: 5014c2ed-2a74-4122-b7b9-d3703db7ab12
-source-git-commit: 34af97ae01f7dba418fd0a8c950fc549dfbbd98b
+source-git-commit: 41ba91fca46747760fc42ea6cd78600abbd74c02
 workflow-type: tm+mt
-source-wordcount: '707'
+source-wordcount: '705'
 ht-degree: 2%
 
 ---
@@ -30,21 +30,21 @@ Välj den relevanta menyn för att göra detta:
 
 * **[!UICONTROL Display the target...]**
 
-   Den här menyn visar tillgängliga data för målpopulationen.
+  Den här menyn visar tillgängliga data för målpopulationen.
 
-   ![](assets/wf-right-click-display.png)
+  ![](assets/wf-right-click-display.png)
 
-   Du kan komma åt arbetstabellens struktur i **[!UICONTROL Schema]** -fliken.
+  Du kan komma åt arbetstabellens struktur i **[!UICONTROL Schema]** -fliken.
 
-   ![](assets/wf-right-click-schema.png)
+  ![](assets/wf-right-click-schema.png)
 
-   Mer information om detta finns i [det här avsnittet](monitor-workflow-execution.md#worktables-and-workflow-schema).
+  Mer information om detta finns i [det här avsnittet](monitor-workflow-execution.md#worktables-and-workflow-schema).
 
 * **[!UICONTROL Analyze target...]**
 
-   På den här menyn kan du komma åt guiden för beskrivande analys där du kan ta fram statistik och rapporter om övergångsdata.
+  Använd den här menyn för att komma åt den beskrivande analysguiden som gör att du kan generera statistik och rapporter om övergångsdata.
 
-   Mer information finns i [Campaign Classic v7-dokumentation](https://experienceleague.adobe.com/docs/campaign-classic/using/reporting/analyzing-populations/about-descriptive-analysis.html){target="_blank"}.
+  Lär dig hur du använder guiden för beskrivande analys i [Campaign Classic v7 - dokumentation](https://experienceleague.adobe.com/docs/campaign-classic/using/reporting/analyzing-populations/about-descriptive-analysis.html){target="_blank"}.
 
 Måldata rensas när arbetsflödet körs. Endast den sista arbetstabellen är tillgänglig. Du kan konfigurera arbetsflödet så att alla arbetsregister förblir tillgängliga: kontrollera **[!UICONTROL Keep the result of interim populations between two executions]** i arbetsflödesegenskaperna.
 
@@ -52,12 +52,12 @@ Måldata rensas när arbetsflödet körs. Endast den sista arbetstabellen är ti
 
 >[!CAUTION]
 >
->Det här alternativet måste **aldrig** checkas in i **produktion** arbetsflöde. Det här alternativet används för att analysera resultaten och är utformat endast för teständamål och ska därför endast användas i utvecklings- eller stagingmiljöer.
+>Det här alternativet måste **aldrig** checkas in i **produktion** arbetsflöde. Det här alternativet används för att analysera resultaten och är utformat endast för teständamål och ska därför endast användas i utvecklings- eller staging-miljöer.
 
 
 ### Utnyttja måldata {#target-data}
 
-De data som lagras i arbetsflödets temporära arbetsregister är tillgängliga för personaliseringsåtgärder. Data kan användas i [personaliseringsfält](../../v8/send/personalization-fields.md).
+De data som lagras i arbetsflödets temporära arbetstabell är tillgängliga för personaliseringsåtgärder. Data kan användas i [personaliseringsfält](../../v8/send/personalization-fields.md).
 
 Detta gör att du till exempel kan använda data som samlats in via en lista i en leverans. Använd följande syntax:
 
@@ -65,7 +65,7 @@ Detta gör att du till exempel kan använda data som samlats in via en lista i e
 %= targetData.FIELD %
 ```
 
-**[!UICONTROL Target extension]** (targetData)-typografiska element är inte tillgängliga för riktade arbetsflöden. Leveransmålet måste byggas in i arbetsflödet och anges i leveransens ingående övergång.
+**[!UICONTROL Target extension]** (targetData)-typografiska element är inte tillgängliga för riktade arbetsflöden. Leveransmålet måste byggas in i arbetsflödet och anges i den inkommande övergången för leveransen.
 
 I följande exempel samlar du in en lista med information om kunder som ska användas i ett personligt e-postmeddelande. Använd följande steg:
 
@@ -93,7 +93,7 @@ I följande exempel samlar du in en lista med information om kunder som ska anv�
 
    ![](assets/wf-targetdata-sample-3.png)
 
-1. Konfigurera sedan **[!UICONTROL Delivery]**: skapas baserat på en mall och mottagarna anges av den inkommande övergången.
+1. Konfigurera sedan **[!UICONTROL Delivery]**: den skapas baserat på en mall och mottagarna anges av den inkommande övergången.
 
    ![](assets/wf-targetdata-sample-4.png)
 
@@ -126,15 +126,15 @@ Data från Adobe Campaign-databasen och de befintliga listorna kan uppdateras me
 
 * The **[!UICONTROL List update]** kan du lagra arbetsdokument i en datalist.
 
-   Du kan välja en befintlig lista eller skapa den. I det här fallet beräknas namnet och eventuellt postmappen.
+  Du kan välja en befintlig lista eller skapa den. I det här fallet beräknas namnet och eventuellt postmappen.
 
-   ![](assets/s_user_create_list.png)
+  ![](assets/s_user_create_list.png)
 
-   Se [Listuppdatering](list-update.md).
+  Se [Listuppdatering](list-update.md).
 
 * The **[!UICONTROL Update data]** aktiviteten utför en massuppdatering av fälten i databasen.
 
-   Mer information finns i [Uppdatera data](update-data.md).
+  Mer information finns i [Uppdatera data](update-data.md).
 
 ### Hantera prenumerationer {#subscription-management}
 
