@@ -5,9 +5,9 @@ feature: Release Notes
 role: User
 level: Beginner
 exl-id: 7cf8111d-9f3a-46a4-813a-d4e43a1d1471
-source-git-commit: 306d827883a0c3a15fd52b8c9fb566d028f22360
+source-git-commit: 607ef2ab8f1f1c7400451019e188c70f8c7d6091
 workflow-type: tm+mt
-source-wordcount: '1183'
+source-wordcount: '1178'
 ht-degree: 4%
 
 ---
@@ -24,7 +24,7 @@ Som kund bör du dessutom se till att du använder de senaste versionerna av de 
 
 _28 maj 2024_
 
-### Migrerar från JWT-autentiseringsuppgifter (Service Account) till OAuth Server-till-Server-autentiseringsuppgifter  {#change-8-5-3}
+### Migrering till autentiseringsuppgifter för OAuth Server-till-Server {#change-8-5-3}
 
 * Från och med den här versionen, med JWT-autentiseringsuppgifter (Service Account) borttaget av Adobe, är Campaign-integreringar med Adobe-lösningar och appar nu beroende av autentiseringsuppgifter för OAuth Server-till-Server. Adobe kommer att genomföra migreringen från JWT till OAuth för dina utgående integreringar, som integrering med Campaign-Analytics eller integrering med Experience Cloud Triggers.
 
