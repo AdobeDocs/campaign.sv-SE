@@ -5,7 +5,7 @@ feature: Release Notes
 role: User
 level: Beginner
 exl-id: b860c843-155e-4abb-bdd6-b68dc7eaa0ee
-source-git-commit: a779f243b0ba13dc3fcb7839377ca8766e5f7841
+source-git-commit: ad198540dc65152680e1d14c45286b94397948fd
 workflow-type: tm+mt
 source-wordcount: '1474'
 ht-degree: 21%
@@ -15,6 +15,7 @@ ht-degree: 21%
 # Versionsinformation 2023 {#2023-rn}
 
 Den här sidan innehåller nya funktioner, förbättringar och korrigeringar som ingår **2023 Campaign v8 Releases**.
+
 
 ## Version 8.5.2 {#release-8-5-2}
 

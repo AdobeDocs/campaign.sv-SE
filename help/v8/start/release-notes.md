@@ -5,10 +5,10 @@ feature: Release Notes
 role: User
 level: Beginner
 exl-id: 7cf8111d-9f3a-46a4-813a-d4e43a1d1471
-source-git-commit: b280be52621890c9bd840182d3ad0389912568d4
+source-git-commit: 306d827883a0c3a15fd52b8c9fb566d028f22360
 workflow-type: tm+mt
-source-wordcount: '1035'
-ht-degree: 5%
+source-wordcount: '1183'
+ht-degree: 4%
 
 ---
 
@@ -19,6 +19,21 @@ Adobe Campaign uppdateras regelbundet. Denna regelbundna uppdateringsfrekvens sy
 Som användare av hanterade Cloud Service uppgraderas instansen av Adobe med alla nya versioner. Adobe kommer att kontakta dig och uppgradera dina miljöer. Kampanjklientkonsol **måste uppgraderas till samma version** som kampanjservrar. Lär dig hur du uppgraderar din klientkonsol i den här [page](../start/connect.md#upgrade-ac-console).
 
 Som kund bör du dessutom se till att du använder de senaste versionerna av de system som stöds i [Kompatibilitetsmatris](compatibility-matrix.md).
+
+## Version 8.5.3 {#release-8-5-3}
+
+_28 maj 2024_
+
+### Migrerar från JWT-autentiseringsuppgifter (Service Account) till OAuth Server-till-Server-autentiseringsuppgifter  {#change-8-5-3}
+
+* Från och med den här versionen, med JWT-autentiseringsuppgifter (Service Account) borttaget av Adobe, är Campaign-integreringar med Adobe-lösningar och appar nu beroende av autentiseringsuppgifter för OAuth Server-till-Server. Adobe kommer att genomföra migreringen från JWT till OAuth för dina utgående integreringar, som integrering med Campaign-Analytics eller integrering med Experience Cloud Triggers.
+
+  Om du har implementerat inkommande integreringar med Campaign måste du migrera ditt tekniska konto enligt informationen i [den här dokumentationen](https://developer.adobe.com/developer-console/docs/guides/authentication/ServerToServerAuthentication/migration/){target="_blank"}. Befintliga JWT-referenser (Service Account) fortsätter att fungera tills **27 januari 2025**. Dessutom kommer Developer Console att ha fortsatt stöd för att skapa nya JWT-autentiseringsuppgifter (Service Account) tills **3 juni 2024**. Det går inte att skapa eller lägga till en ny JWT-autentiseringsuppgift (Service Account) i ett projekt efter detta datum.
+
+
+### Korrigeringar {#fixes-8-5-3}
+
+NEO-70263, NEO-64984, NEO-63657, NEO-63387, NEO-62964, NEO-62750, NEO-62686, NEO-595 44, NEO-52542
 
 ## Version 8.7.1 {#release-8-7-1}
 
