@@ -4,7 +4,7 @@ description: Arbeta med datapaket
 feature: Data Management, Package Export/Import
 role: Developer
 level: Intermediate, Experienced
-source-git-commit: 933c266febdc293dccdf9b7383d94d7a5dce22bc
+source-git-commit: 202a0553f0c736086eca993b9647737732f57d07
 workflow-type: tm+mt
 source-wordcount: '1941'
 ht-degree: 0%
@@ -93,7 +93,7 @@ Så här exporterar du en uppsättning objekt i ett datapaket:
    >
    >Om du exporterar en **[!UICONTROL Offer category]**, **[!UICONTROL Offer environment]**, **[!UICONTROL Program]** eller **[!UICONTROL Plan]** typmapp, välj aldrig **xtk:mapp** eftersom vissa data kan gå förlorade. Välj den enhet som motsvarar mappen: **nms:offerCategory** för erbjudandekategorier, **nms:offerEnv** för olika erbjudandemiljöer **nms:program** för program, och **nms:plan** för planer.
 
-   Beroendemekanismen styr entitetens exportsekvens. Mer information finns i [Hantera beroenden](#managing-dependencies).
+   Beroendemekanismen styr entitetens exportsekvens. Mer information finns i [Hantera beroenden](#manage-dependencies).
 
 1. Klicka **[!UICONTROL Next]** och definiera filterfrågan för vilken typ av dokument som ska extraheras. Du måste konfigurera filtersatsen för dataextrahering.
 
