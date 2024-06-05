@@ -8,9 +8,9 @@ level: Intermediate
 hide: true
 hidefromtoc: true
 exl-id: 31c13d7e-55d1-4fbb-82e0-5779a17d65ac
-source-git-commit: 09db0cc1a14bffefe8d1b8d0d5a06d5b6517a5bb
+source-git-commit: 99e3643dc8628c5bbf938aac0e32036f4043432b
 workflow-type: tm+mt
-source-wordcount: '1231'
+source-wordcount: '1230'
 ht-degree: 0%
 
 ---
@@ -796,7 +796,7 @@ Lär dig hur du implementerar FCM i ditt program i [Google Documentation](https:
 
 ## Variabel {#variables}
 
-Med variablerna kan du definiera mobilprogrammets beteende efter att ha tagit emot ett meddelande. Dessa variabler måste definieras i mobilprogramkoden och i Adobe Campaign klientkonsol i **[!UICONTROL Variables]** i den dedikerade mobilprogramtjänsten.
+Med variablerna kan du definiera mobilprogrammets beteende efter att ha tagit emot ett meddelande. Dessa variabler måste definieras i mobilprogramkoden och i Adobe Campaign klientkonsol i **[!UICONTROL Variables]** i det dedikerade mobilprogrammet.
 
 
 Nedan visas ett exempel på en kod som gör att ett mobilprogram kan samla in tillagda variabler i ett meddelande. I vårt exempel använder vi variabeln&quot;VAR&quot;.
