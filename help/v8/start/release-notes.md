@@ -3,9 +3,9 @@ title: Versionsinformation om Campaign v8
 description: Senaste Campaign v8-versionen
 feature: Release Notes
 exl-id: 7cf8111d-9f3a-46a4-813a-d4e43a1d1471
-source-git-commit: 338432b41276317f1f07a92f0106e20177b5becd
+source-git-commit: e119c415ce363a635f9f0318e3fd70f90f4bde06
 workflow-type: tm+mt
-source-wordcount: '783'
+source-wordcount: '801'
 ht-degree: 4%
 
 ---
@@ -32,6 +32,14 @@ Följande problem har åtgärdats i den här versionen:
 
 NEO-70263, NEO-64984, NEO-63657, NEO-63387, NEO-62964, NEO-62750, NEO-62686, NEO-595 44, NEO-52542
 
+
+## Maj-uppdateringar {#may-updates}
+
+Följande ändring har släppts i maj och är nu tillgänglig för användare av Campaign v8:
+
+* **Nytt tillägg för Förbättrat skydd**: För att göra nätverksanslutningen säkrare och ge bättre säkerhet för dina resurser erbjuder Adobe Campaign ett nytt tillägg för Förbättrat skydd, som innehåller två funktioner: säker CMK-integrering och säker VPN-tunnel. [Läs mer](../config/enhanced-security.md)
+
+
 ## Version 8.7.1 {#release-8-7-1}
 
 _2 maj 2024_
@@ -52,7 +60,7 @@ _2 maj 2024_
 
 * **Dynamisk rapportering** - Som användare med migrerad Campaign Standard har ni tillgång till Dynamic Reporting, som tillhandahåller fullt anpassningsbara realtidsrapporter för att mäta effekten av era marknadsföringsaktiviteter. Det ger åtkomst till profildata, vilket möjliggör demografiska analyser efter profildimensioner som kön, ort och ålder, utöver funktionella e-postkampanjdata som öppningar och klick. [Läs mer](https://experienceleague.adobe.com/docs/experience-cloud/campaign/reporting/get-started-reporting.html){target="_blank"}
 
-* **Nytt tillägg för Förbättrat skydd**: För att göra nätverksanslutningen säkrare och ge bättre säkerhet för dina resurser erbjuder Adobe Campaign ett nytt tillägg för Förbättrat skydd, som innehåller två funktioner: säker CMK-integrering och säker VPN-tunnel. [Läs mer](../config/enhanced-security.md)
+
 
 
 ### Kompatibilitetsuppdateringar {#comp-8-7-1}
