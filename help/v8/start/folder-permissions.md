@@ -5,7 +5,7 @@ feature: Permissions
 role: User, Admin
 level: Beginner
 exl-id: 5bd8dbba-7a06-4737-bc5a-60354f91c709
-source-git-commit: b96ac3bd2365c548d071e626721d606dd33200b5
+source-git-commit: 0513b9f65e9431f5207b384a0e2d8c5aeb8e209f
 workflow-type: tm+mt
 source-wordcount: '253'
 ht-degree: 0%
@@ -23,7 +23,7 @@ Mapphantering beskrivs i [den här sidan](../audiences/folders-and-views.md).
 Följ stegen nedan om du vill redigera behörigheter i en viss Campaign-mapp:
 
 1. Högerklicka på mappen och välj **[!UICONTROL Properties...]**.
-1. Bläddra till **[!UICONTROL Security]** för att visa behörigheter i den här mappen.
+1. Gå till **[!UICONTROL Security]** för att visa behörigheter i den här mappen.
 
    ![](assets/folder-permissions.png)
 
@@ -39,7 +39,7 @@ Behörigheterna som definieras i det här fönstret kommer sedan att tillämpas 
 
 >[!NOTE]
 >
->Avmarkerar **[!UICONTROL Propagate]** för en mapp inte rensar det för undermapparna: Du måste rensa det explicit för var och en av undermapparna.
+>Avmarkerar **[!UICONTROL Propagate]** för en mapp tar inte bort den för undermapparna: du måste rensa den explicit för var och en av undermapparna.
 
 ## Ge åtkomst till alla operatorer {#grant-access-to-all-operators}
 
