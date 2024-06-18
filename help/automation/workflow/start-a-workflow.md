@@ -6,9 +6,9 @@ feature: Workflows
 level: Beginner
 role: User, Admin
 exl-id: 6d9789e3-d721-4ffd-b3fb-a0c522ab1c0a
-source-git-commit: 1a0b473b005449be7c846225e75a227f6d877c88
+source-git-commit: ab6c16af7652f2e8dbfa5c899c2152cefb7fc7c6
 workflow-type: tm+mt
-source-wordcount: '1065'
+source-wordcount: '0'
 ht-degree: 0%
 
 ---
@@ -62,6 +62,16 @@ The **[!UICONTROL Actions]** i verktygsfältet kan du använda ytterligare körn
 * **[!UICONTROL Restart]**
 
   Den här åtgärden avbryter och startar sedan om arbetsflödet. I de flesta fall går det att starta om snabbare. Det är också användbart att automatisera omstarten när stoppet tar en viss tid: det beror på att kommandot Stoppa inte är tillgängligt när arbetsflödet stoppas.
+
+  Observera att **Starta om** åtgärden tar inte bort arbetsflödesinstansvariablerna jämfört med **Körning**, **Stoppa** och **Starta** åtgärder (instansvariablerna som rensas när Start-åtgärden utförs). När du startar om ett arbetsflöde är förekomstvariablerna fortfarande tillgängliga för användning med bevarade värden. Om du vill rensa dem kan du antingen:
+   * Utför **Stoppa** och **Starta** åtgärder.
+   * Lägg till nedan javascript-kod i slutet av arbetsflödeskörningen:
+
+     ```
+     var wkf = xtk.workflow.load(instance.id)
+     wkf.variables='<variables/>'
+     wkf.save()
+     ```
 
 * **[!UICONTROL Purge history]**
 
