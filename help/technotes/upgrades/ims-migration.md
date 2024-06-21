@@ -4,16 +4,16 @@ description: Lär dig hur du migrerar tekniska kampanjoperatörer till ett tekni
 feature: Technote
 role: Admin
 exl-id: 775c5dbb-ef73-48dd-b163-23cfadc3dab8
-source-git-commit: 5d3dd679eb7a756200d604601c20c3fed5770fc2
+source-git-commit: 07c2a7460c407a0afb536d8b64f4105d8bc547f4
 workflow-type: tm+mt
-source-wordcount: '1507'
+source-wordcount: '1547'
 ht-degree: 0%
 
 ---
 
 # Migrering av tekniska aktörer från Campaign till Adobe Developer Console {#migrate-tech-users-to-ims}
 
-Som en del i arbetet med att stärka säkerhets- och autentiseringsprocessen, från och med Campaign v8.5, förbättras autentiseringsprocessen till Campaign v8. Tekniska operatörer kan nu använda [Adobe Identity Management System (IMS)](https://helpx.adobe.com/enterprise/using/identity.html){target="_blank"} to connect to Campaign. Learn more about the new server to server authentication process in [Adobe Developer Console documentation](https://developer.adobe.com/developer-console/docs/guides/authentication/ServerToServerAuthentication/){target="_blank"}.
+Som en del i arbetet med att stärka säkerhets- och autentiseringsprocessen, från och med Campaign v8.5, förbättras autentiseringsprocessen till Campaign v8. Tekniska operatörer kan nu använda [Adobe Identity Management System (IMS)](https://helpx.adobe.com/enterprise/using/identity.html){target="_blank"} för att ansluta till Campaign. Läs mer om autentiseringsprocessen från den nya servern till servern i [Adobe Developer Console-dokumentation](https://developer.adobe.com/developer-console/docs/guides/authentication/ServerToServerAuthentication/){target="_blank"}.
 
 En teknisk operator är en Campaign-användarprofil som uttryckligen har skapats för API-integrering. I den här artikeln beskrivs stegen som krävs för att migrera en teknisk operatör till ett tekniskt konto via Adobe Developer-konsolen.
 
@@ -149,11 +149,15 @@ Du måste nu uppdatera alla API-integreringar som gör anrop till Adobe Campaign
 
 Mer information om API-integreringssteg, inklusive en exempelkod för smidig integrering, finns i [Autentiseringsdokumentation för Adobe Developer Console](https://developer.adobe.com/developer-console/docs/guides/authentication/ServerToServerAuthentication/){target="_blank"}.
 
-Nedan visas exempel på SOAP-anrop som visar före och efter migreringsanrop för tredjepartssystem.
+Nedan visas exempel på SOAP samtal som visar anrop före och efter migrering för tredjepartssystem.
+
+När du använder IMS-autentisering (Adobe Identity Management System) bör du lägga till `Authorization: Bearer <IMS_Technical_Token_Token>` på postmansamtalet:
+
+```
+curl --location --request POST 'https://<instance_url>/nl/jsp/schemawsdl.jsp?schema=nms:rtEvent' \--header 'Authorization: Bearer <Technical account access token>'
+```
 
 När migreringsprocessen har uppnåtts och validerats uppdateras Soap-anropen enligt nedan:
-
-
 
 * Före migreringen: det fanns inget stöd för token för åtkomst till tekniska konton.
 
@@ -201,8 +205,6 @@ När migreringsprocessen har uppnåtts och validerats uppdateras Soap-anropen en
   </soapenv:Body>
   </soapenv:Envelope>
   ```
-
-
 
 ### Steg 9 - (valfritt) Uppdatera den tekniska kontooperatören i Campaign-klientkonsolen {#ims-migration-step-9}
 
