@@ -8,18 +8,18 @@ level: Experienced
 badge-v7: label="v7" type="Informative" tooltip="Gäller även Campaign Classic v7"
 badge-v8: label="v8" type="Positive" tooltip="Gäller Campaign v8"
 exl-id: 45ac6f8f-eb2a-4599-a930-1c1fcaa3095b
-source-git-commit: a280e560a6e84f5afa214daaded9ac5331018d7c
+source-git-commit: 24d9adddbc983a600f99dab8bab1235585b48ceb
 workflow-type: tm+mt
 source-wordcount: '1357'
 ht-degree: 1%
 
 ---
 
-# Push Notification Channel-ändringar {#push-upgrade}
+# Ändringar i push-meddelandekanalen {#push-upgrade}
 
 Du kan använda Campaign för att skicka push-meddelanden på iOS- och Android-enheter. För att kunna göra detta förlitar sig Campaign på prenumerationstjänster för mobilappar.
 
-Vissa viktiga ändringar av tjänsten Android Firebase Cloud Messaging (FCM) släpps 2024 och kan påverka din Adobe Campaign-implementering. Din prenumerationstjänstkonfiguration för push-meddelanden för Android kan behöva uppdateras för att den här ändringen ska fungera.
+Vissa viktiga ändringar av tjänsten Android Firebase Cloud Messaging (FCM) släpps 2024, vilket kan påverka implementeringen av Adobe Campaign. Din prenumerationstjänstkonfiguration för Android push-meddelanden kan behöva uppdateras för att den här ändringen ska fungera.
 
 Dessutom rekommenderar Adobe att du går över till den tokenbaserade anslutningen till APN:er i stället för en certifikatbaserad anslutning, som är säkrare och mer skalbar.
 
@@ -27,7 +27,7 @@ Dessutom rekommenderar Adobe att du går över till den tokenbaserade anslutning
 
 ### Vad har ändrats? {#fcm-changes}
 
-Som en del av Google kontinuerliga arbete med att förbättra sina tjänster kommer de äldre FCM-API:erna att upphöra på **20 juni 2024**. Läs mer om HTTP-protokollet för Firebase Cloud Messaging i [Google Firebase-dokumentation](https://firebase.google.com/docs/cloud-messaging/http-server-ref){target="_blank"}.
+Som en del av Google kontinuerliga arbete med att förbättra sina tjänster kommer de äldre FCM-API:erna att upphöra på **22 juli 2024**. Läs mer om HTTP-protokollet för Firebase Cloud Messaging i [Google Firebase-dokumentation](https://firebase.google.com/docs/cloud-messaging/migrate-v1){target="_blank"}.
 
 Adobe Campaign Classic v7 och Adobe Campaign v8 har redan stöd för de senaste API:erna för att skicka push-meddelanden. Vissa gamla implementeringar är dock fortfarande beroende av de äldre API:erna. Dessa implementeringar måste uppdateras.
 
@@ -42,7 +42,7 @@ Om du vill kontrollera om du påverkas kan du filtrera **Tjänster och prenumera
 
 * Om någon av dina aktiva push-meddelandetjänster använder **HTTP (äldre)** API, din konfiguration påverkas direkt av den här ändringen. Du måste granska dina aktuella konfigurationer och gå över till de nyare API:erna som beskrivs nedan.
 
-* Om din installation endast använder **HTTP v1** API för push-meddelanden för Android är du redan kompatibel och ingen ytterligare åtgärd krävs från din sida.
+* Om din installation endast använder **HTTP v1** API för push-meddelanden från Android är du redan kompatibel och du behöver inte vidta några ytterligare åtgärder.
 
 ### Hur uppdaterar jag? {#fcm-transition-procedure}
 
@@ -50,7 +50,7 @@ Om du vill kontrollera om du påverkas kan du filtrera **Tjänster och prenumera
 
 * För Campaign Classic v7 har stöd för HTTP v1 lagts till i version 20.3.1. Om miljön körs på en äldre version är en förutsättning för övergången till HTTP v1 att du uppgraderar miljön till [senaste Campaign Classicen](https://experienceleague.adobe.com/docs/campaign-classic/using/release-notes/latest-release.html){target="_blank"}. För Campaign v8 stöds HTTP v1 av alla versioner och ingen uppgradering behövs.
 
-* JSON-filen för kontot för Android-administratören för SDK-tjänsten behövs för att mobilprogrammet ska kunna flyttas till HTTP v1. Lär dig hur du hämtar den här filen i [Google Firebase-dokumentation](https://firebase.google.com/docs/admin/setup#initialize-sdk){target="_blank"}.
+* Android Firebase Admin SDK-tjänstens konto-JSON-fil behövs för att mobilprogrammet ska kunna flyttas till HTTP v1. Lär dig hur du hämtar den här filen i [Google Firebase-dokumentation](https://firebase.google.com/docs/admin/setup#initialize-sdk){target="_blank"}.
 
 * För Hybrid-, Hosted- och Managed Services-distributioner ska du, utöver övergångsproceduren nedan, kontakta Adobe för att uppdatera körningsservern för realtid (RT). Servern för MID-Source påverkas inte.
 
@@ -91,7 +91,7 @@ Nedan finns FCM-nyttolastsnamnen för att ytterligare anpassa ditt push-meddelan
 
 ### Vilken effekt har mina Android-appar? {#fcm-apps}
 
-Det krävs inga specifika ändringar i koden för Android-mobilprogram och meddelandefunktionen bör inte ändras.
+Det krävs inga specifika ändringar i Android Mobile-programkoden och meddelandefunktionen bör inte ändras.
 
 Med HTTP v1 kan du dock anpassa push-meddelandena ytterligare med **[!UICONTROL HTTPV1 additional options]**.
 
