@@ -8,9 +8,9 @@ level: Experienced
 badge-v7: label="v7" type="Informative" tooltip="Gäller även Campaign Classic v7"
 badge-v8: label="v8" type="Positive" tooltip="Gäller Campaign v8"
 exl-id: 45ac6f8f-eb2a-4599-a930-1c1fcaa3095b
-source-git-commit: 2e9c9f8e677233b2906f6ebb8f42dd86afe4e111
+source-git-commit: 4ef40ff971519c064b980df8235188c717855f27
 workflow-type: tm+mt
-source-wordcount: '1422'
+source-wordcount: '1421'
 ht-degree: 1%
 
 ---
@@ -84,7 +84,7 @@ Så här flyttar du miljön till HTTP v1:
    | datameddelande | N/A | validate_only |
    | meddelandemeddelande | title, body, android_channel_id, icon, sound, tag, color, click_action, image, ticker, sticky, visibility, notification_priority, notification_count <br> | validate_only |
 
-1. När övergången till HTTP v1 är klar måste du uppdatera **leveransmallar** för Android push-meddelanden för att öka antalet batchmeddelanden. Det gör du genom att bläddra till egenskaperna för Android-leveransmallen och i **Leverans** -flik, ange [Batchkvantitet för meddelande](../../v8/send/configure-and-send.md#delivery-batch-quantity) till **256**. Ändringen gäller alla Android leveransmallar som används för Android-leveranser och för alla befintliga Android-leveranser.
+1. När övergången till HTTP v1 är klar måste du uppdatera **leveransmallar** för Android push-meddelanden för att öka antalet batchmeddelanden. Det gör du genom att bläddra till egenskaperna för Android-leveransmallen och i **Leverans** -flik, ange [Batchkvantitet för meddelande](../../v8/send/configure-and-send.md#delivery-batch-quantity) till **256**. Använd ändringen på alla leveransmallar som används för dina Android-leveranser och på alla befintliga Android-leveranser.
 
 
 >[!NOTE]
