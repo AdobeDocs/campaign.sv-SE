@@ -8,9 +8,9 @@ level: Experienced
 badge-v7: label="v7" type="Informative" tooltip="Gäller även Campaign Classic v7"
 badge-v8: label="v8" type="Positive" tooltip="Gäller Campaign v8"
 exl-id: 45ac6f8f-eb2a-4599-a930-1c1fcaa3095b
-source-git-commit: 24d9adddbc983a600f99dab8bab1235585b48ceb
+source-git-commit: 9eb8521a1cc264d4d0137c68654ca45ccade81bd
 workflow-type: tm+mt
-source-wordcount: '1357'
+source-wordcount: '1422'
 ht-degree: 1%
 
 ---
@@ -77,12 +77,14 @@ Så här flyttar du miljön till HTTP v1:
 1. Som ett alternativ kan du utöka ett push-meddelandeinnehåll med **[!UICONTROL Application variables]** vid behov. Dessa är helt anpassningsbara och utgör en del av den meddelandenyttolast som skickas till den mobila enheten.
 1. Klicka **[!UICONTROL Finish]** och sen **[!UICONTROL Save]**.
 
-Nedan finns FCM-nyttolastsnamnen för att ytterligare anpassa ditt push-meddelande. Dessa alternativ är detaljerade [här](#fcm-apps).
+   Nedan finns FCM-nyttolastsnamnen för att ytterligare anpassa ditt push-meddelande. Dessa alternativ är detaljerade [här](#fcm-apps).
 
-| Meddelandetyp | Konfigurerbart meddelandeelement (FCM-nyttolastnamn) | Konfigurerbara alternativ (FCM-nyttolastnamn) |
-|:-:|:-:|:-:|
-| datameddelande | N/A | validate_only |
-| meddelandemeddelande | title, body, android_channel_id, icon, sound, tag, color, click_action, image, ticker, sticky, visibility, notification_priority, notification_count <br> | validate_only |
+   | Meddelandetyp | Konfigurerbart meddelandeelement (FCM-nyttolastnamn) | Konfigurerbara alternativ (FCM-nyttolastnamn) |
+   |:-:|:-:|:-:|
+   | datameddelande | N/A | validate_only |
+   | meddelandemeddelande | title, body, android_channel_id, icon, sound, tag, color, click_action, image, ticker, sticky, visibility, notification_priority, notification_count <br> | validate_only |
+
+1. När övergången till HTTP v1 är klar måste du uppdatera **leveransmallar** för Android push-meddelanden för att öka antalet batchmeddelanden. Det gör du genom att bläddra till egenskaperna för Android-leveransmallen och i **Leverans** -flik, ange **Batchkvantitet för meddelande** till **256**. Ändringen gäller alla Android leveransmallar som används för Android-leveranser och för alla befintliga Android-leveranser.
 
 
 >[!NOTE]
@@ -107,7 +109,6 @@ Du kan:
 * Ange **[!UICONTROL Visibility]** nivån på dina meddelanden till allmänheten, privat eller hemligt.
 
 Mer information finns på **[!UICONTROL HTTP v1 additional options]** och hur du fyller i dessa fält, se [FCM-dokumentation](https://firebase.google.com/docs/reference/fcm/rest/v1/projects.messages#androidnotification){target="_blank"}.
-
 
 
 
