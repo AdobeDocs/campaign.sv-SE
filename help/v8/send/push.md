@@ -5,10 +5,10 @@ feature: Push
 role: User
 level: Beginner
 exl-id: f04c6e0c-f2b9-496a-9697-04ef4c3411ee
-source-git-commit: 6d54f072ad0e67b435cd6e03433fa9ddd0794dea
+source-git-commit: 48aba38f3dc8bb322e6d0b38c1b743e980671cd7
 workflow-type: tm+mt
-source-wordcount: '866'
-ht-degree: 3%
+source-wordcount: '968'
+ht-degree: 4%
 
 ---
 
@@ -16,14 +16,14 @@ ht-degree: 3%
 
 Med mobilappsleveranser kan du skicka meddelanden till iOS- och Android-enheter.
 
-Innan du börjar skicka push-meddelanden med Adobe Campaign måste du se till att det finns konfigurationer och integreringar på mobilappen och för taggar i Adobe Experience Platform. [Läs mer om push-konfiguration.](push-settings.md)
+Innan du börjar skicka push-meddelanden med Adobe Campaign måste du se till att det finns konfigurationer och integreringar på mobilappen och för taggar i Adobe Experience Platform. [Läs mer om push-konfiguration.](push-settings.md).
 
 >[!CAUTION]
 >
->Vissa viktiga ändringar av tjänsten Android Firebase Cloud Messaging (FCM) kommer att släppas 2024 och kan påverka din Adobe Campaign-implementering. Din prenumerationstjänstkonfiguration för push-meddelanden för Android kan behöva uppdateras för att den här ändringen ska fungera. Du kan redan kontrollera och vidta åtgärder. [Läs mer](../../technotes/upgrades/push-technote.md).
+>Viktiga ändringar av tjänsten Android Firebase Cloud Messaging (FCM) släpps under 2024, vilket kan påverka implementeringen av Adobe Campaign. Konfigurationen för prenumerationstjänster för push-meddelanden för Android kan behöva uppdateras för att den här ändringen ska fungera. Du kan redan kontrollera och vidta åtgärder. [Läs mer](../../technotes/upgrades/push-technote.md).
 
 
-## Skapa ditt första push-meddelande{#push-create}
+## Skapa ditt första push-meddelande {#push-create}
 
 I det här avsnittet beskrivs de element som är specifika för leveransen av iOS- och Android-meddelanden.
 
@@ -31,9 +31,13 @@ I det här avsnittet beskrivs de element som är specifika för leveransen av iO
 >
 >När det gäller en [Företagsdistribution (FFDA)](../architecture/enterprise-deployment.md), mobilregistrering är nu **asynkron**. [Läs mer](../architecture/staging.md)
 
+
 Om du vill skapa en ny leverans går du till **[!UICONTROL Campaigns]** flik, klicka **[!UICONTROL Deliveries]** och klicka på **[!UICONTROL Create]** ovanför listan över befintliga leveranser.
 
 ![](assets/delivery_step_1.png)
+
+
+Som standard har Adobe Campaign två leveransmallar: en för iOS och en för Android. Du kan duplicera dem för att definiera egna inställningar. Stegen för att konfigurera en push-leverans baserat på dessa mallar beskrivs nedan.
 
 >[!BEGINTABS]
 
@@ -127,11 +131,16 @@ Så här skickar du meddelanden till iOS-enheter:
 
 >[!TAB Android]
 
-Så här skickar du meddelanden på Android-enheter:
+Så här skickar du meddelanden till Android-enheter:
 
 1. Välj **[!UICONTROL Deliver on Android (android)]** leveransmall.
 
    ![](assets/push-template-android.png)
+
+   >[!NOTE]
+   > 
+   >Med de senaste FCM API:erna (HTTP v1) måste du uppdatera **leveransmallar** för Android push-meddelanden för att öka antalet batchmeddelanden. Det gör du genom att bläddra till egenskaperna för Android-leveransmallen och i **Leverans** -flik, ange [Batchkvantitet för meddelande](../../v8/send/configure-and-send.md#delivery-batch-quantity) till **256**. Använd ändringen på alla leveransmallar som används för dina Android-leveranser och på alla befintliga Android-leveranser.
+
 
 1. Om du vill definiera målet för meddelandet klickar du på knappen **[!UICONTROL To]** klicka på **[!UICONTROL Add]**.
 
@@ -155,7 +164,8 @@ Så här skickar du meddelanden på Android-enheter:
 
 >[!ENDTABS]
 
-## Testa, skicka och övervaka dina push-meddelanden
+
+## Testa, skicka och övervaka dina push-meddelanden {#push-test}
 
 Använd samma process som för andra leveranser när du vill skicka ett korrektur och den slutliga leveransen.
 
