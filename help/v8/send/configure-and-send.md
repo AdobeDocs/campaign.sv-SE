@@ -5,7 +5,7 @@ feature: Email
 role: User
 level: Beginner
 exl-id: 36033255-1e75-41c1-9816-126777f7330a
-source-git-commit: 070aa96187c5654e40665cb5b23329d3f7d508d6
+source-git-commit: 2e9c9f8e677233b2906f6ebb8f42dd86afe4e111
 workflow-type: tm+mt
 source-wordcount: '1193'
 ht-degree: 3%
@@ -26,7 +26,7 @@ Innan du skickar leveransen kan du definiera sändningsparametrarna i leveranseg
 
 Använd **[!UICONTROL Delivery priority]** möjlighet att ändra avsändarordningen för leveranser genom att ange prioritetsnivå, från **[!UICONTROL Very low]** till **[!UICONTROL Very high]** (standardvärdet är **[!UICONTROL Normal]**).
 
-### Batchkvantitet
+### Batchkvantitet {#delivery-batch-quantity}
 
 Använd  **[!UICONTROL Message batch quantity]** för att definiera antalet meddelanden som grupperas i samma XML-leveranspaket. Om parametern är inställd på 0 grupperas meddelandena automatiskt. Paketstorleken definieras av beräkningen `<delivery size>/1024`, med minst 8 och högst 256 meddelanden per paket.
 
