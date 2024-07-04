@@ -5,10 +5,10 @@ type: Event
 title: Adobe Campaign Technotes
 description: Kampanjanteckningar
 breadcrumb-title: Kampanjtekniker
-source-git-commit: 50dcdf1f6bcc8c8a195a0bf0a37af254f33b80d5
+source-git-commit: 29665df166a12a4928c6e356e1ff1a3bb47e30e5
 workflow-type: tm+mt
-source-wordcount: '62'
-ht-degree: 27%
+source-wordcount: '64'
+ht-degree: 21%
 
 ---
 
@@ -17,6 +17,7 @@ ht-degree: 27%
 
 + [Kampanjtekniker](technotes-home.md)
 + Uppgraderingar{#tn-new}
+   + [Push Notification Channel-ändringar](upgrades/push-technote.md)
    + [Migrera användare till IMS](upgrades/migrate-users-to-ims.md)
    + [Migrera tekniska operatorer till Developer Console](upgrades/ims-migration.md)
    + [Migrera teknisk operatör till Developer Console](upgrades/ims-migration-old.md)
@@ -26,5 +27,4 @@ ht-degree: 27%
    + [Webbläsare](upgrades/browsers.md)
    + [2023-systemuppgraderingar](upgrades/tech-stack-upgrade.md)
    + [32-bitars borttagning av klientkonsol](upgrades/console.md)
-   + [Push Notification Channel-ändringar](upgrades/push-technote.md)
-+ [Kontrollpanelen i Campaign](https://experienceleague.adobe.com/docs/control-panel/using/control-panel-home.html?lang=sv)
++ [&lt; Tillbaka till Campaign v8-dokumentationen](https://experienceleague.adobe.com/docs/control-panel/using/control-panel-home.html?lang=sv)
