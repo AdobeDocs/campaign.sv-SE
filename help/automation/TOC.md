@@ -2,10 +2,10 @@
 audience: user
 user-guide-title: Guide för kampanjautomatisering
 user-guide-description: Guide för kampanjautomatisering
-source-git-commit: c3f4ad0b56dd45d19eebaa4d2f06551c8fecac1d
+source-git-commit: c5e804db7deaa6b9511858d088eb6da5d16e8abf
 workflow-type: tm+mt
-source-wordcount: '442'
-ht-degree: 80%
+source-wordcount: '444'
+ht-degree: 79%
 
 ---
 
@@ -165,4 +165,4 @@ ht-degree: 80%
    + [Åtkomst till kampanjer](distributed-marketing/accessing-campaigns.md)
    + [Spåra en kampanj](distributed-marketing/tracking-a-campaign.md)
    + [Användningsfall](distributed-marketing/examples.md)
-+ [Campaign v8-dokumentation](https://experienceleague.adobe.com/docs/campaign/campaign-v8/campaign-home.html?lang=sv)
++ [&lt; Tillbaka till Campaign v8-dokumentationen](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/campaign-home)
