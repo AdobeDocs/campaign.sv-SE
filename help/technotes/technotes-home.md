@@ -1,17 +1,79 @@
 ---
-keywords: Campaign Classic;hem;populära ämnen
-description: Kampanjteknologier
+keywords: Campaign Classic, starstida, populära ämnen
+description: Adobe Campaign-teknik
 title: Adobe Campaign tekniska artiklar
+role: Developer
+level: Experienced
 exl-id: ae1ef010-24d5-4be4-a30c-899e2b0040a4
-source-git-commit: 77ec01aaba1e50676bed57f503a9e4e8bb1fe54c
+source-git-commit: 0844a4fcd34220d825ae30368b284cbcaf93d02b
 workflow-type: tm+mt
-source-wordcount: '25'
-ht-degree: 0%
+source-wordcount: '193'
+ht-degree: 7%
 
 ---
 
-# Adobe Campaign v8-dokumentation {#campaign-documentation}
+# Adobe Campaign v8-teknik {#campaign-technotes}
 
-![](assets/banner-documentationv8.png)
+Här hittar du de senaste Campaign-teknologierna. Dessa tekniker gäller Campaign v8.
 
-* [Adobe Campaign v8 - produktbeskrivning](https://helpx.adobe.com/legal/product-descriptions/adobe-campaign-managed-cloud-services.html){target="_blank"}
+>[!BEGINTABS]
+
+>[!TAB Push Notification Channel-ändringar]
+
+Vissa viktiga ändringar av tjänsten Android Firebase Cloud Messaging (FCM) släpps 2024, vilket kan påverka implementeringen av Adobe Campaign. Din prenumerationstjänstkonfiguration för Android push-meddelanden kan behöva uppdateras för att den här ändringen ska fungera.
+
+
+[![Bild](../v8//assets/do-not-localize/learn-more-button.svg)](upgrades/push-technote.md)
+
+
+>[!TAB Identity Management System (IMS)]
+
+Från och med Campaign v8.6 förbättras autentiseringsprocessen till Campaign v8. Alla operatorer använder endast Adobe Identity Management System (IMS) för att ansluta till Campaign
+
+[![Bild](../v8/assets/do-not-localize/learn-more-button.svg)](upgrades/migrate-users-to-ims.md)
+
+>[!ENDTABS]
+
+## Utforska dokumentationen
+
+<table style="table-layout:auto">
+  <tr style="border: 0;">
+    <td>
+      <img src="../v8/assets/do-not-localize/icon-start.svg" width="35px">
+    <br/>
+      <strong>Kom igång</strong><br/><a href="../v8/start/campaign-ui.md">Användargränssnitt</a> - <a href="../v8/start/ac-components.md">Komponenter och processer</a> - <a href="../v8/start/v7-to-v8.md">Från Classic v7 till v8</a> - <a href="../v8/start/campaign-faq.md">Vanliga frågor</a>
+    </td>
+    <td>
+      <img src="../v8/assets/do-not-localize/icon-experience.svg" width="35px">
+    <br/>
+      <strong>Kundens upplevelse</strong><br/><a href="../automation/workflow/about-workflows.md" target="_blank">Automatisera med arbetsflöden</a> - <a href="../automation/campaigns/set-up-campaigns.md" target="_blank">Kampanjsamordning</a> - <a href="../v8/interaction/interaction.md">Beslutsledning</a> - <a href="../v8/send/personalize.md">Personalization</a>
+    </td>
+    <td>
+      <img src="../v8/assets/do-not-localize/icon-send.svg" width="35px">
+    <br/>
+      <strong>Skicka meddelanden</strong><br/><a href="../v8/start/create-message.md">Kom igång</a> - <a href="../v8/send/preview-and-proof.md">Förhandsgranska och korrektur</a> - <a href="../v8/send/predictive.md">Optimering vid sändning</a> - <a href="../v8/reporting/gs-reporting.md">Rapportering och analys</a>
+    </td>
+  </tr>
+  <tr style="border: 0;">
+    <td>
+      <img src="../v8/assets/do-not-localize/icon_profile-audience.svg" width="35px">
+    <br/>
+      <strong>Profiler och målgrupper</strong><br/><a href="../v8/audiences/create-profiles.md">Lägg till profiler</a> - <a href="../v8/audiences/create-audiences.md">Skapa målgrupper</a> - <a href="../v8/start/subscriptions.md">Hantera prenumerationer</a> - <a href="../v8/start/privacy.md">Integritet</a>
+    </td>
+    <td>
+      <img src="../v8/assets/do-not-localize/icon-configure.svg" width="35px">
+    <br/>
+      <strong>Arkitektur och konfiguration</strong><br/><a href="../v8/architecture/architecture.md">Arkitektur</a> - <a href="../v8/start/implement.md">Implementering av Campaign v8</a> - <a href="../v8/connect/integration.md">Kommunicera med andra lösningar</a> - <a href="../v8/start/gs-permissions.md">Användare och behörigheter</a>
+    </td>
+    <td>
+      <img src="../v8/assets/do-not-localize/icon-dev.svg" width="35px">
+    <br/>
+      <strong>Resurser för utvecklare</strong><br/><a href="../v8/dev/datamodel.md">Campaign v8, datamodell</a> - <a href="../v8/dev/schemas.md">Scheman</a> - <a href="../v8/dev/api.md">API:er</a>
+    </td>
+  </tr>
+</table>
+
+## Ytterligare resurser
+
+[Adobe Campaign v8 - produktbeskrivning](https://helpx.adobe.com/se/legal/product-descriptions/adobe-campaign-managed-cloud-services.html){target="_blank"} - [Dokumentation för Adobe Campaign webbgränssnitt](https://experienceleague.adobe.com/docs/campaign-web/v8/campaign-web-home.html){target="_blank"} - [Tutorials](https://experienceleague.adobe.com/docs/campaign-learn/tutorials/overview.html){target="_blank"} - [[!DNL Adobe Campaign] automatiseringsguide](https://experienceleague.adobe.com/docs/campaign/automation/home.html){target="_blank"} - [Kontrollpanelen för Campaign v8](https://experienceleague.adobe.com/docs/control-panel/using/discover-control-panel/key-features.html?lang=sv){target="_blank"}
+
