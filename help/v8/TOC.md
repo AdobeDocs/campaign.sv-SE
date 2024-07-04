@@ -5,9 +5,9 @@ user-guide-description: Produktdokumentation för Adobe Campaign v8 (klientkonso
 title: Adobe Campaign v8-dokumentation
 description: Kampanjdokumentation v8
 breadcrumb-title: Dokumentation om Campaign v8
-source-git-commit: 41ba91fca46747760fc42ea6cd78600abbd74c02
+source-git-commit: 50dcdf1f6bcc8c8a195a0bf0a37af254f33b80d5
 workflow-type: tm+mt
-source-wordcount: '613'
+source-wordcount: '615'
 ht-degree: 16%
 
 ---
@@ -52,7 +52,7 @@ ht-degree: 16%
    + [SMS](send/sms.md)
    + Push-meddelanden {#push}
       + [Skapa och skicka push-meddelanden](send/push.md)
-      + [Designa en omfattande push-leverans för Android](send/rich-push.md)
+      + [Designa en omfattande Android-leverans](send/rich-push.md)
       + [Konfigurera kanal för push-meddelanden](send/push-settings.md)
       + [Konfigurera push-meddelanden med datainsamling](send/push-data-collection.md)
    + [LINE-meddelanden](send/line.md)
@@ -99,6 +99,8 @@ ht-degree: 16%
    + [Hantera prenumerationer](start/subscriptions.md)
 + Innehållshantering {#content}
    + [Designa webbprogram och formulär](dev/webapps.md)
++ Automatisering och arbetsflöden {#automation}
+   + [Campaign Automation Guide >](https://experienceleague.adobe.com/en/docs/campaign/automation/home)
 + Integritet och säkerhetshantering {#privacy}
    + [Hantera förfrågningar om användarens information](start/privacy.md)
    + [Säkerhetsanvisningar](config/security.md)
@@ -203,7 +205,6 @@ ht-degree: 16%
       + [Inmatningsformulär](dev/forms.md)
    + [Arbeta med datapaket](dev/packages.md)
    + [Kampanj-API:er](dev/api.md)
-+ [Campaign Control Panel >](https://experienceleague.adobe.com/en/docs/control-panel/using/control-panel-home)
-+ [Campaign Automation Guide >](https://experienceleague.adobe.com/en/docs/campaign/automation/home)
++ [Kampanjteknologier >](https://experienceleague.adobe.com/en/docs/campaign/technotes-ac/technotes-home)
 + [Dokumentation för kampanjens webbgränssnitt >](https://experienceleague.adobe.com/en/docs/campaign-web/v8/campaign-web-home)
 
