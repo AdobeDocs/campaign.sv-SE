@@ -1,19 +1,19 @@
 ---
 audience: end-user
 title: Designa ett omfattande leveransmeddelande
-description: Lär dig hur du utformar en omfattande push-meddelandeleverans för Android med Adobe Campaign Web
+description: Lär dig hur du utformar en omfattande push-meddelandetjänst från Android med Adobe Campaign Web
 feature: Push
 role: User
 level: Beginner
 exl-id: 42e3623b-b401-4fcc-80a7-ea38347fddc6
-source-git-commit: 94dba45c59c699680675bdcd2b73da386d727435
+source-git-commit: 5236cc94e78db11b8975ad84c49594b282fdecf3
 workflow-type: tm+mt
-source-wordcount: '1135'
+source-wordcount: '1157'
 ht-degree: 1%
 
 ---
 
-# Designa en omfattande push-leverans för Android {#rich-push}
+# Designa en omfattande Android-leverans {#rich-push}
 
 >[!AVAILABILITY]
 >
@@ -21,11 +21,15 @@ ht-degree: 1%
 
 Med Firebase Cloud Messaging kan du välja mellan två typer av meddelanden:
 
-* The **[!UICONTROL Data message]** hanteras av klientprogrammet. Dessa meddelanden skickas direkt till mobilprogrammet, som genererar och visar ett Android-meddelande på enheten. Datameddelanden innehåller bara dina anpassade programvariabler.
+* The **[!UICONTROL Data message]** hanteras av klientprogrammet. Dessa meddelanden skickas direkt till mobilprogrammet som genererar och visar ett Android-meddelande på enheten. Datameddelanden innehåller bara dina anpassade programvariabler.
 
 * The **[!UICONTROL Notification message]**, hanteras automatiskt av FCM SDK. FCM visar automatiskt meddelandet på användarnas enheter för klientprogrammets räkning. Meddelanden innehåller en fördefinierad uppsättning parametrar och alternativ, men de kan fortfarande anpassas ytterligare med anpassade programvariabler.
 
 ## Definiera innehållet i meddelandet {#push-message}
+
+>[!IMPORTANT]
+>
+>Innan du utformar ett push-meddelande måste du först konfigurera din koppling. Se [den här sidan](https://experienceleague.adobe.com/en/docs/campaign-classic/using/sending-messages/sending-push-notifications/configure-the-mobile-app/configuring-the-mobile-application-android#configuring-external-account-android) för det detaljerade förfarandet.
 
 När du har skapat din push-leverans kan du definiera innehållet. Tre mallar är tillgängliga:
 
@@ -92,7 +96,7 @@ När du har definierat meddelandeinnehållet kan du använda testprenumeranter f
 
    * **[!UICONTROL Open App]**: Med öppna app-URL:er kan du ansluta direkt till innehåll i ett program. Det gör att ditt program kan etablera sig som standardhanterare för en viss typ av länk, utan att dialogrutan för olika betydelser visas.
 
-   Mer information om hur du hanterar Android-applänkar finns i [Dokumentation för Android-utvecklare](https://developer.android.com/training/app-links).
+   Mer information om hur du hanterar Android App Links finns i [Dokumentation för Android-utvecklare](https://developer.android.com/training/app-links).
 
    ![](assets/rich_push_basic_3.png)
 
