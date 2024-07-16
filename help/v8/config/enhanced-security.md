@@ -5,9 +5,9 @@ feature: Configuration
 role: Developer
 level: Experienced
 exl-id: 7c586836-82e1-45fb-9c28-18361572e1fa
-source-git-commit: 55c16fe19125ea54035a8f97928484c7baea161b
+source-git-commit: c225b3ee5b356d98d6a5e3bb9bd1cb0feae0300a
 workflow-type: tm+mt
-source-wordcount: '753'
+source-wordcount: '738'
 ht-degree: 2%
 
 ---
@@ -15,7 +15,7 @@ ht-degree: 2%
 
 # Förbättrat säkerhetstillägg för kampanj {#enhanced-security}
 
-För att göra din nätverksanslutning säkrare och ge bättre säkerhet för dina resurser, [!DNL Adobe Campaign] erbjuder en ny **Förbättrad säkerhet** tillägg.
+[!DNL Adobe Campaign] erbjuder ett nytt **Förbättrat skydd**-tillägg för att göra din nätverksanslutning säkrare och ge bättre säkerhet för dina resurser.
 
 Det här tillägget innehåller två ekosystemfunktioner:
 
@@ -35,7 +35,7 @@ När dessa funktioner är implementerade kan Adobe övervaka:
 
 ## Säker, kundhanterad nyckelintegrering {#secure-cmk-integration}
 
-The **Integrering med Secure Customer Managed Key (CMK)** Med kan du kryptera vilande data med din egen nyckel via ditt Amazon Web Services-konto (AWS).
+Med integreringen **Secure Customer-Managed Key (CMK)** kan du kryptera vilande data med din egen nyckel via ditt Amazon Web Services-konto (AWS).
 
 KMS-nycklar (Key Management Service) i ditt AWS-konto som du skapar, äger och hanterar. Du har fullständig kontroll över dessa KMS-nycklar och använder dem för att kryptera och dekryptera data. Genom att göra dig ansvarig för att generera och hantera krypteringsnycklar kan du med den här kapaciteten få bättre kontroll över dem, inklusive återkallande av en nyckel.
 
@@ -45,13 +45,13 @@ KMS-nycklar (Key Management Service) i ditt AWS-konto som du skapar, äger och h
 
 Följ stegen nedan för att aktivera CMK-integrering med Campaign:
 
-1. Anslut till [Amazon Web Services (AWS)](https://aws.amazon.com/){target="_blank"} konto.
+1. Anslut till ditt [Amazon Web Services-konto (AWS)](https://aws.amazon.com/){target="_blank"}.
 
-1. Generera en nyckel med automatisk rotation när du använder AWS Key Management Service (KMS). [Lär dig mer](https://docs.aws.amazon.com/kms/latest/developerguide/create-keys.html){target="_blank"}.
+1. Generera en nyckel med automatisk rotation när du använder AWS Key Management Service (KMS). [Lär dig hur](https://docs.aws.amazon.com/kms/latest/developerguide/create-keys.html){target="_blank"}.
 
 1. Använd den policy du fått från Adobe på ditt AWS-konto för att ge åtkomst till dina resurser. [Läs mer](https://docs.aws.amazon.com/kms/latest/developerguide/key-policy-services.html){target="_blank"}. <!--link TBC-->
 
-1. Dela [Amazon Resource Name (nyckel ARN)](https://docs.aws.amazon.com/kms/latest/developerguide/find-cmk-id-arn.html){target="_blank"} med [!DNL Adobe Campaign]. Kontakta din Adobe-representant för att göra detta. <!--or Adobe transition manager?-->
+1. Dela ditt [Amazon-resursnamn (nyckel ARN)](https://docs.aws.amazon.com/kms/latest/developerguide/find-cmk-id-arn.html){target="_blank"} med [!DNL Adobe Campaign]. Kontakta din Adobe-representant för att göra detta. <!--or Adobe transition manager?-->
 
 1. Skapa och testa Amazon EventBridge-reglerna för att aktivera övervakning av dina tangenter med Adobe. &#x200B; [Läs mer](https://docs.aws.amazon.com/eventbridge/latest/userguide/eb-rules.html){target="_blank"}.
 
@@ -60,15 +60,15 @@ Följ stegen nedan för att aktivera CMK-integrering med Campaign:
 
 Följande skyddsutkast och begränsningar gäller för CMK-integreringen med Adobe Campaign v8:
 
-* Adobe tillhandahåller inte en [Amazon Web Services (AWS)](https://aws.amazon.com/){target="_blank"} konto. Du måste ha ett eget AWS-konto och konfigurera det för att kunna generera och dela nyckeln med Adobe.
+* Adobe tillhandahåller inget [Amazon Web Services (AWS)](https://aws.amazon.com/){target="_blank"}-konto. Du måste ha ett eget AWS-konto och konfigurera det för att kunna generera och dela nyckeln med Adobe.
 
-* Endast [AWS nyckelhanteringstjänst](https://docs.aws.amazon.com/kms/latest/developerguide/overview.html){target="_blank"} (KMS)-nycklar stöds. Inga kundgenererade nycklar utanför KMS kan användas. &#x200B;
+* Endast [KMS-nycklar (AWS Key Management Service) ](https://docs.aws.amazon.com/kms/latest/developerguide/overview.html){target="_blank"} stöds. Inga kundgenererade nycklar utanför KMS kan användas. &#x200B;
 
 * Under den första konfigurationen förväntas driftstopp. &#x200B;Hur länge driftstoppet varar beror på databasens storlek.
 
 * Som kund äger och underhåller ni nyckeln. Du måste kontakta Adobe om din nyckel ändras. &#x200B;
 
-* Du kan granska nyckeln med [AWS CloudTrail](https://docs.aws.amazon.com/awscloudtrail/latest/userguide/cloudtrail-user-guide.html){target="_blank"} och återkalla det om det behövs. &#x200B;
+* Du kan granska nyckeln med [AWS CloudTrail](https://docs.aws.amazon.com/awscloudtrail/latest/userguide/cloudtrail-user-guide.html){target="_blank"} och återkalla den om det behövs. &#x200B;
 
 * Om du återkallar, inaktiverar eller tar bort nyckeln blir dina krypterade resurser och instanser otillgängliga tills du återställer motsvarande åtgärd.
 
@@ -80,7 +80,7 @@ Följande skyddsutkast och begränsningar gäller för CMK-integreringen med Ado
 
 ## Säker tunnling av virtuella privata nätverk {#secure-vpn-tunneling}
 
-The **Säker VPN-tunnling (Virtual Private Network)** är ett VPN för plats-till-plats som ger säker åtkomst till dina data som överförs via ett privat nätverk, från dina lokaler till [!DNL Adobe Campaign] -instans.
+**VPN-tunnling (Secure Virtual Private Network)** är ett VPN för plats-till-plats som ger säker åtkomst till data som överförs via ett privat nätverk, från dina platser till instansen [!DNL Adobe Campaign].
 
 <!--As it connects two networks together, it is a site-to-site VPN.-->
 
@@ -96,7 +96,7 @@ Tre användningsområden stöds:
 
 >[!CAUTION]
 >
->Endast lokala databaser och AWS-kompatibla VPN-enheter stöds. [Läs mer](#vpn-callouts)
+>Endast lokala databaser och AWS-kompatibla VPN-enheter stöds. [Läs mer](#vpn-databases)
 
 Följ riktlinjerna nedan för att säkerställa att funktionen används på rätt sätt:
 
@@ -110,24 +110,23 @@ Följ riktlinjerna nedan för att säkerställa att funktionen används på rät
 
 * Ställ in en mekanism för återförsök när du är klar om det skulle uppstå anslutningsfel.
 
+### Databaser och enheter som stöds {#vpn-databases}
 
-### Skyddsritningar och begränsningar {#vpn-callouts}
+Följande lokala databaser stöds:
 
-Följande skyddsräcken och begränsningar gäller för VPN-tunnlingsintegreringen med Adobe Campaign v8:
+* MySQL
+* Netezza
+* Oracle
+* SAP HANA
+* SQL Server
+* Sybase
+* Teradata
+* Hadoop via HiveSQL
 
-* Endast lokala databaser stöds, till exempel<!--Richa to check the list with PM-->:
+Endast VPN-enheter som följer AWS stöds. En lista över kompatibla enheter finns på [den här sidan](https://docs.aws.amazon.com/vpn/latest/s2svpn/your-cgw.html#example-configuration-files){target="_blank"}.
 
-   * MySQL
-   * Netezza
-   * Oracle
-   * SAP HANA
-   * SQL Server
-   * Sybase
-   * Teradata
-   * Hadoop via HiveSQL
-
-* Endast VPN-enheter som följer AWS stöds. En lista över kompatibla enheter finns på [den här sidan](https://docs.aws.amazon.com/vpn/latest/s2svpn/your-cgw.html#example-configuration-files){target="_blank"}<!--check which list should be communicated-->.
-
-* VPN-anslutning till tredje part eller externa leverantörer stöds inte.
-
-* Ytterligare VPN-nätverk som hanteras av Adobe till privata molndatabaser ingår inte.
+>[!NOTE]
+>
+>* VPN-anslutning till tredje part eller externa leverantörer stöds inte.
+>
+>* Ytterligare VPN-nätverk som hanteras av Adobe till privata molndatabaser ingår inte.
