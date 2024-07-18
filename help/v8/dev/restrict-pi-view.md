@@ -5,9 +5,9 @@ feature: PI, Privacy, Configuration
 role: Developer
 level: Intermediate, Experienced
 exl-id: 1b833745-71d7-430d-ac7d-c830c78ea232
-source-git-commit: 1a0b473b005449be7c846225e75a227f6d877c88
+source-git-commit: b6f7b8a6652034145602d9949fa196eae929fb95
 workflow-type: tm+mt
-source-wordcount: '386'
+source-wordcount: '434'
 ht-degree: 0%
 
 ---
@@ -20,7 +20,7 @@ Om ni vill att marknadsföringsanvändare ska kunna komma åt dataposter men int
 
 ## Implementering {#implementation}
 
-Ett specifikt attribut som kan tillämpas på ett element eller attribut har lagts till i scheman, det kompletterar det befintliga attributet **[!UICONTROL visibleIf]**. Attributet är: **[!UICONTROL accessibleIf]**. När det innehåller ett XTK-uttryck som är relaterat till den aktuella användarkontexten kan det utnyttja **[!UICONTROL HasNamedRight]** eller **[!UICONTROL $(login)]**, till exempel.
+Ett specifikt attribut som kan tillämpas på ett element eller attribut har lagts till i scheman, det kompletterar det befintliga attributet **[!UICONTROL visibleIf]**. Attributet är: **[!UICONTROL accessibleIf]**. När det innehåller ett XTK-uttryck som är relaterat till den aktuella användarkontexten kan det till exempel återge **[!UICONTROL HasNamedRight]** eller **[!UICONTROL $(login)]**.
 
 Du kan hitta ett exempel på ett mottagarschematillägg som visar användningen nedan:
 
@@ -53,9 +53,13 @@ Här följer konsekvenserna av att använda det här attributet i Campaign:
 * När målpopulationen lagras i en grupp (lista) är de lagrade fälten desamma som datakällan.
 * Data är inte tillgängliga för JS-kod som standard.
 
+>[!IMPORTANT]
+>
+>Om attributet **accessibleIf** används på kritiska parametrar (t.ex. de i sammansatta nycklar) kan det leda till fel för användare som inte får läsa data på grund av dolda data. Detta kan leda till frågefel eller oväntade beteenden. Se till att viktiga parametrar är tillgängliga för att förhindra störningar.
+
 ## Rekommendationer {#recommendations}
 
-I varje leverans kopieras e-postadresser till **[!UICONTROL broadLog]** och **[!UICONTROL forecastLog]** tabeller: därför måste även dessa fält skyddas.
+I varje leverans kopieras e-postadresser till tabellerna **[!UICONTROL broadLog]** och **[!UICONTROL forecastLog]**. Därför måste även dessa fält skyddas.
 
 Nedan visas ett exempel på ett loggtabellstillägg som implementerar detta:
 
