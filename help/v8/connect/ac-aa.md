@@ -16,17 +16,17 @@ ht-degree: 67%
 
 Ni kan konfigurera Adobe Analytics för att integrera Campaign och Analytics.
 
-Tack vare integreringen kan Adobe Campaign och Adobe Analytics interagera via **Web Analytics-anslutningar** tillägg. Denna integrering skickar indikatorer och attribut för e-postkampanjer som levereras av Adobe Campaign till Adobe Analytics.
+Tack vare den här integreringen kan Adobe Campaign och Adobe Analytics interagera via tillägget **Web Analytics-anslutningar**. Denna integrering skickar indikatorer och attribut för e-postkampanjer som levereras av Adobe Campaign till Adobe Analytics.
 
 >[!NOTE]
 >
->Som användare av hanterade Cloud Service [kontakta Adobe](../start/campaign-faq.md#support) för att koppla Campaign till Adobe Experience Cloud tjänster och lösningar. Tillägget för Web Analytics-anslutningen måste installeras i din miljö via det dedikerade paketet.
+>Som användare av hanterade Cloud Service [kontaktar du Adobe](../start/campaign-faq.md#support) för att ansluta Campaign med Adobe Experience Cloud tjänster och lösningar. Tillägget för Web Analytics-anslutningen måste installeras i din miljö via det dedikerade paketet.
 
 Med Adobe Analytics Connector kan Adobe Campaign mäta internetpublik (Web Analytics). Med webbanalysverktygen kan Adobe Campaign vidarebefordra indikatorer och kampanjattribut till Analytics.
 
 Åtgärdsgränserna för varje verktyg är följande:
 
-* **Adobe Analytics** markerar de e-postkampanjer som lanserats med Adobe Campaign
+* **Adobe Analytics** markerar de e-postkampanjer som har startats med Adobe Campaign
 
 * **Adobe Campaign** skickar indikatorerna och kampanjattributen till kopplingen, som i sin tur vidarebefordrar dem till webbanalysverktyget
 
@@ -43,7 +43,7 @@ Om du vill konfigurera en anslutning för Campaign-Analytics måste du utföra f
 
 ## Skapa en analysrapportsserie {#report-suite-analytics}
 
-Skapa **[!UICONTROL Report suite]** in [!DNL Adobe Analytics]följer du stegen nedan:
+Följ stegen nedan för att skapa din **[!UICONTROL Report suite]** i [!DNL Adobe Analytics]:
 
 1. I [!DNL Adobe Analytics] väljer du **[!UICONTROL Admin tab]** och klickar sedan på **[!UICONTROL All admin]**.
 
@@ -55,7 +55,7 @@ Skapa **[!UICONTROL Report suite]** in [!DNL Adobe Analytics]följer du stegen n
 
 1. På sidan **[!UICONTROL Report suite manager]** klickar du på **[!UICONTROL Create new]** och sedan på **[!UICONTROL Report suite]**.
 
-   För det detaljerade förfarandet för **[!UICONTROL Report suite]** skapa, se [Adobe Analytics Documentation](https://experienceleague.adobe.com/docs/analytics/admin/manage-report-suites/new-report-suite/t-create-a-report-suite.html#prerequisites){target="_blank"}.
+   Detaljerade anvisningar om hur du skapar **[!UICONTROL Report suite]** finns i [Adobe Analytics-dokumentation](https://experienceleague.adobe.com/docs/analytics/admin/manage-report-suites/new-report-suite/t-create-a-report-suite.html#prerequisites){target="_blank"}.
 
    ![](assets/analytics_connnector_3.png)
 
@@ -85,7 +85,7 @@ När du har skapat din **[!UICONTROL Report suite]** måste du konfigurera **[!U
 
 1. Klicka på **[!UICONTROL Add new]** för att skapa de identifierare som krävs för att mäta effekten av e-postkampanjen, dvs. det interna kampanjnamnet (cid) och ID:t för registret iNmsBroadlog (bid).
 
-   Så här lär du dig redigera **[!UICONTROL Conversion variables]**, se det här [Adobe Analytics Documentation](https://experienceleague.adobe.com/docs/analytics/admin/admin-tools/conversion-variables/t-conversion-variables-admin.html#admin-tools){target="_blank"}.
+   Mer information om hur du redigerar **[!UICONTROL Conversion variables]** finns i den här [Adobe Analytics-dokumentationen](https://experienceleague.adobe.com/docs/analytics/admin/admin-tools/conversion-variables/t-conversion-variables-admin.html#admin-tools){target="_blank"}.
 
    ![](assets/analytics_connnector_6.png)
 
@@ -108,7 +108,7 @@ När du har skapat din **[!UICONTROL Report suite]** måste du konfigurera **[!U
    * **[!UICONTROL Unique Opens]**
    * **[!UICONTROL Unsubscribed]**
 
-   Så här lär du dig konfigurera **[!UICONTROL Success events]**, se det här [Adobe Analytics Documentation](https://experienceleague.adobe.com/docs/analytics/admin/admin-tools/success-events/t-success-events.html#admin-tools)
+   Mer information om hur du konfigurerar **[!UICONTROL Success events]** finns i [Adobe Analytics-dokumentationen](https://experienceleague.adobe.com/docs/analytics/admin/admin-tools/success-events/t-success-events.html#admin-tools)
 
    ![](assets/analytics_connnector_8.png)
 
@@ -122,9 +122,9 @@ Nu måste du konfigurera ditt externa **[!UICONTROL Web Analytics]**-konto i Ado
 
 Observera att om en av dina **[!UICONTROL Report suite]**, **[!UICONTROL Conversion variables]** eller **[!UICONTROL Success events]** inte visas när du konfigurerar ditt externa konto, innebär det att du saknar behörighet för den nya komponenten i **[!UICONTROL Product profile]** som är associerad med användaren.
 
-Mer information finns i [Produktprofiler för Adobe Analytics](https://experienceleague.adobe.com/docs/analytics/admin/admin-console/permissions/product-profile.html#product-profile-admins){target="_blank"} sida.
+Mer information finns på sidan [Produktprofiler för Adobe Analytics](https://experienceleague.adobe.com/docs/analytics/admin/admin-console/permissions/product-profile.html#product-profile-admins){target="_blank"}.
 
-1. Gå till **[!UICONTROL Administration]** > **[!UICONTROL Platform]** > **[!UICONTROL External accounts]** i Adobe Campaign Explorer-trädet och klicka på **[!UICONTROL New]**.
+1. Bläddra till mappen **[!UICONTROL Administration]** > **[!UICONTROL Platform]** > **[!UICONTROL External accounts]** i Adobe Campaign Explorer-trädet och klicka på **[!UICONTROL New]**.
 
    ![](assets/analytics_connnector_9.png)
 
@@ -182,7 +182,7 @@ Mer information finns i [Produktprofiler för Adobe Analytics](https://experienc
 
 1. På fliken **[!UICONTROL Advanced]** kan du konfigurera eller ändra fler tekniska inställningar.
 
-   * **[!UICONTROL Lifespan]**: gör att du kan ange efter vilken fördröjning (i dagar) som webbhändelser återställs i Adobe Campaign via tekniska arbetsflöden. Standard: 180 dagar.
+   * **[!UICONTROL Lifespan]**: gör att du kan ange efter vilken fördröjning (i dagar) som webbhändelser återställs i Adobe Campaign med tekniska arbetsflöden. Standard: 180 dagar.
    * Med **[!UICONTROL Persistence]**: kan du ange den period under vilken alla webbhändelser (till exempel ett köp) kan tillskrivas en återmarknadsföringskampanj, standard: 7 dagar.
 
 >[!NOTE]
@@ -193,11 +193,11 @@ Mer information finns i [Produktprofiler för Adobe Analytics](https://experienc
 
 Datautbyte mellan Adobe Campaign och Adobe Analytics hanteras av ett tekniskt arbetsflöde som körs som en bakgrundsuppgift.
 
-Det här arbetsflödet är tillgängligt från Campaign Explorer-trädet, under **[!UICONTROL Administration]** > **[!UICONTROL Production]** > **[!UICONTROL Technical workflows]** > **[!UICONTROL Web analytics process]** mapp.
+Det här arbetsflödet är tillgängligt från Campaign Explorer-trädet, under mappen **[!UICONTROL Administration]** > **[!UICONTROL Production]** > **[!UICONTROL Technical workflows]** > **[!UICONTROL Web analytics process]**.
 
 ![](assets/webanalytics_workflows.png)
 
-The **[!UICONTROL Sending of indicators and campaign attributes]** arbetsflödet gör att du kan skicka kampanjindikatorer via Adobe Campaign till Adobe Experience Cloud med Adobe Analytics Connector. Arbetsflödet utlöses kl. 4.00 varje dag och det kan ta 24 timmar innan data skickas till Analytics.
+Med arbetsflödet **[!UICONTROL Sending of indicators and campaign attributes]** kan du skicka kampanjindikatorer via Adobe Campaign till Adobe Experience Cloud med Adobe Analytics Connector. Arbetsflödet utlöses kl. 4.00 varje dag och det kan ta 24 timmar innan data skickas till Analytics.
 
 Observera att det här arbetsflödet inte ska startas om, annars skickas alla tidigare data på nytt, vilket kan förvränga analysresultaten.
 
@@ -258,7 +258,7 @@ Adobe Campaign tillhandahåller skräddarsydda leveransmallar som ni kan använd
 1. Anpassa mallen efter dina behov och spara den.
 1. Skapa en ny kampanj och välj mallen **[!UICONTROL Re-marketing campaign]** i listrutan.
 1. Klicka på länken **[!UICONTROL Configure...]** för att ange segmentet och leveransmallen som är länkad till kampanjen.
-1. Välj Analytics e[externt konto](#external-account-ac)och det berörda segmentet.
+1. Välj e[externt konto](#external-account-ac) för Analytics och det berörda segmentet.
 1. Välj leveransmallen som ska användas för den här återmarknadsföringskampanjen och klicka sedan på **[!UICONTROL Finish]** för att stänga fönstret.
 1. Klicka på **[!UICONTROL OK]** för att stänga kampanjfönstret.
 

@@ -1,17 +1,17 @@
 ---
 product: campaign
-title: Användningsfall för arbetsflöde
+title: Användningsexempel för arbetsflöde
 description: Lär dig mer om användningsfall som du kan utföra med Campaign-arbetsflöden
 feature: Workflows, Data Management
 exl-id: 6e899937-5ca0-4ca5-bb14-f914e41559ab
 source-git-commit: 190707b8b1ea5f90dc6385c13832fbb01378ca1d
 workflow-type: tm+mt
 source-wordcount: '172'
-ht-degree: 59%
+ht-degree: 52%
 
 ---
 
-# Användningsfall för arbetsflöde {#about-workflow-use-cases}
+# Användningsexempel för arbetsflöde {#about-workflow-use-cases}
 
 Lär dig olika sammanhang i vilka arbetsflöden kan användas och hur du implementerar dem via kompletta användningsexempel.
 
@@ -40,7 +40,7 @@ Lär dig olika sammanhang i vilka arbetsflöden kan användas och hur du impleme
 
 * [Koordinera datauppdateringar](coordinate-data-updates.md)
 * [Skapa en sammanfattningslista](create-a-summary-list.md)
-* [Berika data](enrich-data.md)
+* [Förbättra data](enrich-data.md)
 * [Använd aggregat](using-aggregates.md)
 * [Kryptera och exportera data med en tangent som är installerad på Kontrollpanelen](use-workflow-data.md#use-case-gpg-encrypt)
 * [Kvartalsvis listuppdatering med en inkrementell fråga](quarterly-list-update.md)

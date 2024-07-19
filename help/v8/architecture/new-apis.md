@@ -7,14 +7,14 @@ level: Intermediate
 exl-id: dd822f88-b27d-4944-879c-087f68e79825
 source-git-commit: f577ee6d303bab9bb07350b60cf0fa6fc9d3a163
 workflow-type: tm+mt
-source-wordcount: '435'
+source-wordcount: '429'
 ht-degree: 2%
 
 ---
 
 # Specifika FFDA Campaign-API:er{#gs-new-api}
 
-När det gäller en [Företagsdistribution (FFDA)](enterprise-deployment.md), Campaign v8 har två specifika API:er för att hantera data mellan Campaign-databasen och molndatabasen. Förutsättningar för att använda dem är att aktivera mellanlagringsmekanismen i schemat. [Läs mer](staging.md)
+I samband med en [Enterprise (FFDA)-distribution](enterprise-deployment.md) har Campaign v8 två specifika API:er för att hantera data mellan den lokala databasen i Campaign och molndatabasen. Förutsättningar för att använda dem är att aktivera mellanlagringsmekanismen i schemat. [Läs mer](staging.md)
 
 * Ing-API: **xtk.session.ingest**
 
@@ -28,13 +28,13 @@ Ett dedikerat inbyggt arbetsflöde synkroniserar data i molndatabasen.
 
 ## Infoga data{#data-insert-api}
 
-The **xtk.session.ingest** API är endast dedikerat till datainmatning. Ingen uppdatering/borttagning.
+API:t **xtk.session.ingest** är endast dedikerad till datainmatning. Ingen uppdatering/borttagning.
 
 ### Infoga utan avstämning{#insert-no-reconciliation}
 
 **I ett arbetsflöde**
 
-Använd följande kod i en **Javascript-kod** aktivitet för att infoga data i molndatabasen utan avstämning:
+Använd följande kod i en **JavaScript-kodsaktivitet** för att infoga data i molndatabasen utan avstämning:
 
 ```
 var xmlStagingSampleTable = <sampleTableStg
@@ -48,7 +48,7 @@ logInfo(strUuid);
 
 När arbetsflödet har körts matas mellanlagringstabellen som förväntat.
 
-**Från ett SOAP-anrop**
+**Från ett SOAP samtal**
 
 1. Hämta autentiseringstoken.
 1. Utlös API:t. Nyttolasten är:
@@ -71,7 +71,7 @@ När arbetsflödet har körts matas mellanlagringstabellen som förväntat.
    </soapenv:Envelope>
    ```
 
-1. UUID skickas tillbaka till SOAP-svaret:
+1. UUID skickas tillbaka till SOAP:
 
    ```
    <SOAP-ENV:Envelope xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ns="urn:wpp:default" xmlns:SOAP-ENV="http://schemas.xmlsoap.org/soap/envelope/">
@@ -91,7 +91,7 @@ Därför matas mellanlagringstabellen som förväntat.
 
 **I ett arbetsflöde**
 
-Använd följande kod i en **Javascript-kod** aktivitet som infogar data i molndatabasen med avstämning:
+Använd följande kod i en **JavaScript-kodsaktivitet** för att infoga data i molndatabasen med avstämning:
 
 ```
 var xmlStagingSampleTable = <sampleTableStg  _key="@id" id="ABC12345"
@@ -108,7 +108,7 @@ När arbetsflödet har körts matas mellanlagringstabellen som förväntat.
 ![](assets/with-reconciliation.png)
 
 
-**Från ett SOAP-anrop**
+**Från ett SOAP samtal**
 
 1. Hämta autentiseringstoken.
 1. Utlös API:t. Nyttolasten är:
@@ -147,13 +147,13 @@ Därför matas mellanlagringstabellen som förväntat.
 
 ## Uppdatera eller ta bort data{#data-update-api}
 
-The **xtk.session.IngestExt** API är optimerat för uppdatering/borttagning av data. Använd endast Infoga **xtk.session.ingest**. Infoga fungerar oavsett om postnyckeln finns i mellanlagringstabellen.
+API:t **xtk.session.IngestExt** är optimerad för datauppdatering/borttagning. Använd **xtk.session.ingest** om du bara vill infoga. Infoga fungerar oavsett om postnyckeln finns i mellanlagringstabellen.
 
 ### Infoga/uppdatera
 
 **I ett arbetsflöde**
 
-Använd följande kod i en **Javascript-kod** aktivitet för att uppdatera data i molndatabasen:
+Använd följande kod i en **JavaScript-kodsaktivitet** för att uppdatera data i molndatabasen:
 
 ```
 var xmlStagingRecipient = <sampleTableStg  _key="@id" id="ABC12345"
@@ -168,7 +168,7 @@ När arbetsflödet har körts uppdateras mellanlagringstabellen som förväntat.
 
 ![](assets/updated-data.png)
 
-**Från ett SOAP-anrop**
+**Från ett SOAP samtal**
 
 1. Hämta autentiseringstoken.
 1. Utlös API:t. Nyttolasten är:
@@ -191,7 +191,7 @@ När arbetsflödet har körts uppdateras mellanlagringstabellen som förväntat.
    </soapenv:Envelope>
    ```
 
-1. SOAP-svaret är:
+1. SOAP:
 
    ```
    <SOAP-ENV:Envelope xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ns="urn:wpp:default" xmlns:SOAP-ENV="http://schemas.xmlsoap.org/soap/envelope/">
@@ -205,11 +205,11 @@ Därför uppdateras mellanlagringstabellen som förväntat.
 
 ## Prenumerationshantering {#sub-apis}
 
-Prenumerationshantering i Campaign beskrivs i [den här sidan](../start/subscriptions.md).
+Prenumerationshantering i Campaign beskrivs på [den här sidan](../start/subscriptions.md).
 
-Inläggning av prenumerations- och avprenumerationsdata bygger på [Mellanlagringsmekanism](staging.md) i Campaign-databasen. Prenumerationsinformation lagras tillfälligt i mellanlagringstabeller i den lokala databasen och synkroniseringsarbetsflödet skickar dessa data från den lokala databasen till molndatabasen. Som en följd av detta är prenumerations- och avabonnemangsprocesserna **asynkron**. Begäranden om avanmälan och avanmälan behandlas varje timme via ett specifikt tekniskt arbetsflöde. [Läs mer](replication.md#tech-wf)
+Inläggning av prenumerations- och prenumerationsdata är beroende av [mellanlagringsmekanismen](staging.md) i den lokala Campaign-databasen. Prenumerationsinformation lagras tillfälligt i mellanlagringstabeller i den lokala databasen och synkroniseringsarbetsflödet skickar dessa data från den lokala databasen till molndatabasen. Detta innebär att prenumerations- och avprenumerationsprocesserna är **asynkrona**. Begäranden om avanmälan och avanmälan behandlas varje timme via ett specifikt tekniskt arbetsflöde. [Läs mer](replication.md#tech-wf)
 
 
 **Relaterade ämnen**
 
-* [JSAPI i Campaign](https://experienceleague.adobe.com/developer/campaign-api/api/p-1.html){target="_blank"}
+* [Kampanj-JSAPI](https://experienceleague.adobe.com/developer/campaign-api/api/p-1.html){target="_blank"}

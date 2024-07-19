@@ -14,21 +14,21 @@ ht-degree: 3%
 
 # Konfigurera och skicka leveransen {#configure-delivery}
 
-Få åtkomst till leveransparametrarna för att konfigurera fler inställningar och definiera hur meddelanden ska skickas. Du kan definiera leverans [prioritet](#delivery-priority), konfigurera [vågor](#sending-using-multiple-waves)och testa leveransen. När konfigurationen är klar kan du bekräfta sändningen enligt beskrivningen i [det här avsnittet](#confirm-delivery). Meddelanden skickas sedan direkt eller baserat på leveransen [schema](#schedule-delivery-sending).
+Få åtkomst till leveransparametrarna för att konfigurera fler inställningar och definiera hur meddelanden ska skickas. Du kan definiera leverans [prioritet](#delivery-priority), konfigurera [påfyllnader](#sending-using-multiple-waves) och testa leveransen. När konfigurationen är klar kan du bekräfta sändningen enligt beskrivningen i [det här avsnittet](#confirm-delivery). Meddelanden skickas sedan omedelbart eller baserat på leveransschema [](#schedule-delivery-sending).
 
 ## Ange ytterligare parametrar {#delivery-additional-parameters}
 
-Innan du skickar leveransen kan du definiera sändningsparametrarna i leveransegenskaperna via **[!UICONTROL Delivery]** -fliken.
+Innan du skickar leveransen kan du definiera sändningsparametrarna i leveransegenskaperna via fliken **[!UICONTROL Delivery]**.
 
 ![](assets/delivery-properties-delivery.png)
 
 ### Leveransprioritet {#delivery-priority}
 
-Använd **[!UICONTROL Delivery priority]** möjlighet att ändra avsändarordningen för leveranser genom att ange prioritetsnivå, från **[!UICONTROL Very low]** till **[!UICONTROL Very high]** (standardvärdet är **[!UICONTROL Normal]**).
+Använd alternativet **[!UICONTROL Delivery priority]** om du vill ändra sändningsordningen för dina leveranser genom att ange deras prioritetsnivå, från **[!UICONTROL Very low]** till **[!UICONTROL Very high]** (standardvärdet är **[!UICONTROL Normal]**).
 
 ### Batchkvantitet {#delivery-batch-quantity}
 
-Använd  **[!UICONTROL Message batch quantity]** för att definiera antalet meddelanden som grupperas i samma XML-leveranspaket. Om parametern är inställd på 0 grupperas meddelandena automatiskt. Paketstorleken definieras av beräkningen `<delivery size>/1024`, med minst 8 och högst 256 meddelanden per paket.
+Använd alternativet **[!UICONTROL Message batch quantity]** för att definiera antalet meddelanden som grupperats i samma XML-leveranspaket. Om parametern är inställd på 0 grupperas meddelandena automatiskt. Paketstorleken definieras av beräkningen `<delivery size>/1024`, med minst 8 och högst 256 meddelanden per paket.
 
 >[!IMPORTANT]
 >
@@ -36,13 +36,13 @@ Använd  **[!UICONTROL Message batch quantity]** för att definiera antalet medd
 
 ### Testa leveransen
 
-Använd  **[!UICONTROL Test SMTP delivery]** möjlighet att testa att skicka via SMTP. Leveransen behandlas upp till anslutning till SMTP-servern men skickas inte: För varje mottagare av leveransen ansluter Campaign till SMTP-providerservern, kör SMTP RCPT TO-kommandot och stänger anslutningen före SMTP DATA-kommandot.
+Använd alternativet **[!UICONTROL Test SMTP delivery]** för att testa att skicka via SMTP. Leveransen behandlas upp till anslutning till SMTP-servern men skickas inte: För varje mottagare av leveransen ansluter Campaign till SMTP-providerservern, kör SMTP RCPT TO-kommandot och stänger anslutningen före SMTP DATA-kommandot.
 
 >[!NOTE]
 >
 >* Det här alternativet får inte ställas in i mitten av källkoden.
 >
->* Läs mer om SMTP-serverkonfigurationen i [Campaign Classic v7 - dokumentation](https://experienceleague.adobe.com/docs/campaign-classic/using/installing-campaign-classic/additional-configurations/configure-delivery-settings.html#smtp-relay){target="_blank"}.
+>* Läs mer om SMTP-serverkonfigurationen i [Campaign Classic v7-dokumentationen](https://experienceleague.adobe.com/docs/campaign-classic/using/installing-campaign-classic/additional-configurations/configure-delivery-settings.html#smtp-relay){target="_blank"}.
 
 ## Skicka med flera vågor {#sending-using-multiple-waves}
 
@@ -52,8 +52,8 @@ För att balansera lasten kan du dela upp leveranser i flera satser. Konfigurera
 
 Så här definierar du vågor:
 
-1. Öppna leveransegenskaperna och bläddra till **[!UICONTROL Delivery]** -fliken.
-1. Aktivera **[!UICONTROL Send using multiple waves]** och klicka på **[!UICONTROL Define waves...]** länk.
+1. Öppna leveransegenskaperna och bläddra till fliken **[!UICONTROL Delivery]**.
+1. Aktivera alternativet **[!UICONTROL Send using multiple waves]** och klicka på länken **[!UICONTROL Define waves...]**.
 
    ![](assets/delivery-define-waves.png)
 
@@ -65,25 +65,25 @@ Så här definierar du vågor:
 
 Du kan antingen definiera storleken på varje våg eller lägga till dem i en kalender.
 
-* **Definiera storleken för varje våg**. Om du till exempel skriver **[!UICONTROL 30%]** i motsvarande fält representerar varje våg 30 % av de meddelanden som ingår i leveransen, utom den sista, som representerar 10 % av meddelandena.
+* **Definiera storleken för varje våg**. Om du till exempel anger **[!UICONTROL 30%]** i motsvarande fält representerar varje påfyllnad 30 % av meddelandena som ingår i leveransen, förutom det sista, som representerar 10 % av meddelandena.
 
-  I **[!UICONTROL Period]** anger du fördröjningen mellan början av två påfyllnader i följd. Om du till exempel skriver **[!UICONTROL 2d]**, startar den första vågen omedelbart, den andra om två dagar, den tredje vågen om fyra dagar och så vidare.
+  I fältet **[!UICONTROL Period]** anger du fördröjningen mellan början av två på varandra följande påfyllnader. Om du till exempel anger **[!UICONTROL 2d]** startar den första vågen omedelbart, den andra om två dagar, den tredje vågen om fyra dagar och så vidare.
 
   ![](assets/delivery-waves-size.png)
 
-* **Definiera en kalender för att skicka varje påfyllnad**.  Den första vågen representerar till exempel 25 % av det totala antalet meddelanden som ingår i leveransen och börjar omedelbart. Nästa två vågor slutför leveransen och är inställda på att börja med 6 timmars intervall.
+* **Definiera en kalender för sändning av varje påfyllnad**.  Den första vågen representerar till exempel 25 % av det totala antalet meddelanden som ingår i leveransen och börjar omedelbart. Nästa två vågor slutför leveransen och är inställda på att börja med 6 timmars intervall.
 
-  I **[!UICONTROL Start]** -kolumnen anger du fördröjningen mellan början av två på varandra följande påfyllnader. I **[!UICONTROL Size]** anger du ett fast tal eller ett procenttal.
+  I kolumnen **[!UICONTROL Start]** anger du fördröjningen mellan början av två på varandra följande påfyllnader. Ange ett fast tal eller en procentsats i kolumnen **[!UICONTROL Size]**.
 
   ![](assets/delivery-waves-calendar.png)
 
 ### Kontroll av vågplanering {#check-waves}
 
-En specifik typologiregel, **[!UICONTROL Wave scheduling check]**, säkerställer att den sista vågen planeras före leveransens giltighetsgräns. Kampanjtypologier och deras regler, konfigurerade i **[!UICONTROL Typology]** -fliken för leveransegenskaperna visas i [det här avsnittet](../../automation/campaign-opt/campaign-typologies.md#typology-rules)<!--ref TBC-->.
+En specifik typologiregel, **[!UICONTROL Wave scheduling check]**, säkerställer att den sista påfyllnaden planeras före leveransens giltighetsgräns. Kampanjtypologier och deras regler, som har konfigurerats på fliken **[!UICONTROL Typology]** i leveransegenskaperna, presenteras i [det här avsnittet](../../automation/campaign-opt/campaign-typologies.md#typology-rules)<!--ref TBC-->.
 
 >[!IMPORTANT]
 >
->Kontrollera att de sista påfyllnaderna inte överskrider leveransdatumet, som definieras i **[!UICONTROL Validity]** -fliken. Annars kanske vissa meddelanden inte skickas. Läs mer om giltighetsperioden för en leverans i [det här avsnittet](delivery-failures.md#valid-period).
+>Kontrollera att de sista påfyllnaderna inte överskrider leveransdeadline, som definieras på fliken **[!UICONTROL Validity]**. Annars kanske vissa meddelanden inte skickas. Läs mer om giltighetsperioden för en leverans i [det här avsnittet](delivery-failures.md#valid-period).
 >
 >Du måste också ange tillräckligt med tid för att försöka igen när du konfigurerar de sista vågorna. Läs mer om återförsök i [det här avsnittet](delivery-failures.md#retries).
 
@@ -91,7 +91,7 @@ En specifik typologiregel, **[!UICONTROL Wave scheduling check]**, säkerställe
 
 Bläddra till leveransloggarna för att övervaka dina sändningar. Se [den här sidan](send.md)
 
-Du kan se leveranser som redan har skickats i de bearbetade påfyllnaderna (**[!UICONTROL Sent]** status) och de leveranser som ska skickas i de återstående påfyllnaderna (**[!UICONTROL Pending]** status).
+Du kan se leveranser som redan har skickats i de bearbetade påfyllnaderna (**[!UICONTROL Sent]** status) och leveranser som ska skickas i återstående påfyllnader (**[!UICONTROL Pending]** status).
 
 
 ### Vågprover {#samples-waves}
@@ -104,7 +104,7 @@ De två exemplen nedan är de vanligaste användningsområdena när du använder
 
   För att undvika att markeras som skräppost kan du stegvis öka volymen som skickas med vågor. Detta bör säkerställa en smidig utveckling av startfasen och göra det möjligt att minska den totala frekvensen av ogiltiga adresser.
 
-  Använd **[!UICONTROL Schedule waves according to a calendar]** alternativ. Du kan till exempel ställa in den första vågen på 10 %, den andra på 15 % och så vidare.
+  Använd alternativet **[!UICONTROL Schedule waves according to a calendar]** om du vill göra det. Du kan till exempel ställa in den första vågen på 10 %, den andra på 15 % och så vidare.
 
   ![](assets/delivery-waves-ex-ramp-up.png)
 
@@ -114,7 +114,7 @@ De två exemplen nedan är de vanligaste användningsområdena när du använder
 
   Med hjälp av vågor kan du begränsa antalet meddelanden till 20 per dag, till exempel med tanke på den dagliga bearbetningskapaciteten hos ett callcenter.
 
-  Om du vill göra det väljer du **[!UICONTROL Schedule multiple waves of the same size]** alternativ. Retur **[!UICONTROL 20]** som vågens storlek och **[!UICONTROL 1d]** i **[!UICONTROL Period]** fält.
+  Välj alternativet **[!UICONTROL Schedule multiple waves of the same size]** om du vill göra det. Ange **[!UICONTROL 20]** som vågstorlek och **[!UICONTROL 1d]** i fältet **[!UICONTROL Period]**.
 
   ![](assets/delivery-waves-ex-call-center.png)
 
@@ -124,20 +124,20 @@ När leveransen är konfigurerad och klar att skickas kontrollerar du att du har
 
 Följ stegen nedan för att göra detta.
 
-1. Klicka **[!UICONTROL Send]** väljer du önskad åtgärd.
+1. Klicka på **[!UICONTROL Send]** och välj önskad åtgärd.
 
-   * Om du vill skicka leveransen direkt väljer du [**Leverera så snart som möjligt**].
-   * Om du vill schemalägga sändningen till ett senare datum väljer du **[!UICONTROL Postpone the delivery]**. [Läs mer](#schedule-delivery-sending)
+   * Om du vill skicka leveransen omedelbart väljer du [**Leverera så snart som möjligt**].
+   * Välj **[!UICONTROL Postpone the delivery]** om du vill schemalägga sändningen till ett senare datum. [Läs mer](#schedule-delivery-sending)
 
 1. Klicka på **[!UICONTROL Analyze]**. Mer information finns i [det här avsnittet](delivery-analysis.md).
 
    ![](assets/delivery-send-analyze.png)
 
-1. När du är klar klickar du **[!UICONTROL Confirm delivery]** för att starta meddelandeleveransen.
+1. När du är klar klickar du på **[!UICONTROL Confirm delivery]** för att starta meddelandeleveransen.
 
    ![](assets/delivery-send-confirm.png)
 
-1. Du kan stänga leveransguiden och spåra leveransen från **[!UICONTROL Delivery]** -fliken, tillgänglig via detaljer om leveransen eller via listan över leveranser.
+1. Du kan stänga leveransguiden och spåra leveransen på fliken **[!UICONTROL Delivery]**, som du kommer åt via leveransinformationen eller genom leveranslistan.
 
    Mer information finns i avsnitten nedan:
 
@@ -150,13 +150,13 @@ Följ stegen nedan för att göra detta.
 
 Du kan skjuta upp leveransen av meddelanden för att schemalägga den eller för att hantera säljtrycket och undvika att överbelasta en grupp.
 
-1. Klicka på **[!UICONTROL Send]** och väljer **[!UICONTROL Postpone delivery]** alternativ.
+1. Klicka på knappen **[!UICONTROL Send]** och välj alternativet **[!UICONTROL Postpone delivery]**.
 
-1. Ange ett startdatum i dialogrutan **[!UICONTROL Contact date]** fält.
+1. Ange ett startdatum i fältet **[!UICONTROL Contact date]**.
 
    ![](assets/delivery-send-postpone.png)
 
-1. Starta leveransanalysen och bekräfta leveransen. Leveransen påbörjas dock inte förrän det datum som anges i **[!UICONTROL Contact date]** fält.
+1. Starta leveransanalysen och bekräfta leveransen. Leveranssändningen kommer dock inte att börja förrän det datum som anges i fältet **[!UICONTROL Contact date]**.
 
    >[!IMPORTANT]
    >
@@ -164,23 +164,23 @@ Du kan skjuta upp leveransen av meddelanden för att schemalägga den eller för
 
    ![](assets/delivery-send-scheduled.png)
 
-Leveransen visas i leveranslistan med **[!UICONTROL Pending]** status.
+I leveranslistan visas leveransen med statusen **[!UICONTROL Pending]**.
 
-Schemaläggning kan även konfigureras direkt via **[!UICONTROL Scheduling]** leveransknapp.
+Schemaläggningen kan också konfigureras uppströms via leveransknappen **[!UICONTROL Scheduling]**.
 
 ![](assets/delivery-scheduling-button.png)
 
 Du kan skjuta upp leveransen till ett senare datum eller spara leveransen i den preliminära kalendern.
 
-* The **[!UICONTROL Schedule delivery (no automatic execution)]** kan du schemalägga en preliminär analys av leveransen.
+* Med alternativet **[!UICONTROL Schedule delivery (no automatic execution)]** kan du schemalägga en preliminär analys av leveransen.
 
-  När konfigurationen sparas ändras leveransen till **[!UICONTROL Targeting pending]** status. Analysen startas på det angivna datumet.
+  När den här konfigurationen sparas ändras leveransstatusen till **[!UICONTROL Targeting pending]**. Analysen startas på det angivna datumet.
 
-* The **[!UICONTROL Schedule delivery (automatic execution on planned date)]** gör att du kan ange leveransdatum.
+* Med alternativet **[!UICONTROL Schedule delivery (automatic execution on planned date)]** kan du ange leveransdatum.
 
-  Klicka **[!UICONTROL Send]** och markera **[!UICONTROL Postpone delivery]** starta analysen och bekräfta leveransen. När analysen är klar är leveransmålet klart och meddelanden skickas automatiskt det angivna datumet.
+  Klicka på **[!UICONTROL Send]** och välj **[!UICONTROL Postpone delivery]**, starta analysen och bekräfta leveransen. När analysen är klar är leveransmålet klart och meddelanden skickas automatiskt det angivna datumet.
 
-Datum och tider anges i tidszonen för den aktuella operatorn. The **[!UICONTROL Time zone]** Med den nedrullningsbara listan under inmatningsfältet för kontaktdatum kan du automatiskt konvertera det angivna datumet och den angivna tiden till den valda tidszonen.
+Datum och tider anges i tidszonen för den aktuella operatorn. Med den nedrullningsbara listan **[!UICONTROL Time zone]** som finns under kontaktdatumsinmatningsfältet kan du automatiskt konvertera det angivna datumet och den angivna tiden till den valda tidszonen.
 
 Om du till exempel schemalägger att en leverans ska köras automatiskt vid klockan 8 London, konverteras tiden automatiskt till den valda tidszonen:
 

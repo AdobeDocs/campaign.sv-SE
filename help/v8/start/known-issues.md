@@ -16,7 +16,7 @@ ht-degree: 0%
 
 # Kända fel{#known-issues}
 
-På den här sidan visas kända fel som identifierats i **senaste Campaign v8-utgåvor**. Dessutom listas begränsningar som följer med Campaign v8 [på den här sidan](ac-guardrails.md).
+På den här sidan visas kända fel som identifierats i **de senaste Campaign v8-versionerna**. Dessutom visas begränsningar som kommer med Campaign v8 [på den här sidan](ac-guardrails.md).
 
 
 >[!NOTE]
@@ -25,21 +25,21 @@ På den här sidan visas kända fel som identifierats i **senaste Campaign v8-ut
 
 ## Campaign v8.3.8{#8.3-issues}
 
-### Ändra aktivitetsproblem för datakälla {#issue-2}
+### Ändra aktivitetsproblem för Source Data {#issue-2}
 
 #### Beskrivning{#issue-2-desc}
 
-När du matar in data i molndatabasen med en Campaign **Fråga** och **Ändra datakälla** -aktiviteten misslyckas processen när det finns ett omvänt snedstreck i data. Källsträngen escape-konverteras inte och data bearbetas inte korrekt på Snowflake.
+När du matar in data i molndatabasen i Snowflake med en Campaign **Query** och en **Change Data Source** -aktivitet misslyckas processen när det finns ett omvänt snedstreck i data. Källsträngen escape-konverteras inte och data bearbetas inte korrekt på Snowflake.
 
-Det här problemet uppstår bara om det omvända snedstrecket finns i slutet av strängen, till exempel: `Barker\`.
+Problemet uppstår bara om det omvända snedstrecket finns i slutet av strängen, till exempel: `Barker\`.
 
 
 #### Återgivningssteg{#issue-2-repro}
 
 1. Anslut till klientkonsolen och skapa ett arbetsflöde.
-1. Lägg till en **Fråga** och konfigurera den.
+1. Lägg till en **Query**-aktivitet och konfigurera den.
 1. Välj data med de egenskaper som beskrivs ovan.
-1. Lägg till en **Ändra datakälla** och konfigurera den för att välja molndatabasen i Snowflake.
+1. Lägg till en **Ändra data för Source**-aktivitet och konfigurera den så att Snowflake molndatabas väljs.
 1. Kör arbetsflödet och kontrollera arbetsflödesloggarna för att se felet.
 
 
@@ -65,15 +65,15 @@ Referens: NEO-45549
 
 #### Beskrivning{#issue-3-desc}
 
-När en fil överförs på Campaign-servern med en **Inläsning av data (fil)** stannar processen vid 100 % men aldrig avslutas.
+När en fil överförs på Campaign-servern med en **datainläsningsaktivitet (fil)** stoppas processen vid 100 % men avslutas aldrig.
 
 #### Återgivningssteg{#issue-3-repro}
 
 1. Anslut till klientkonsolen och skapa ett arbetsflöde.
-1. Lägg till en **Inläsning av data (fil)** och konfigurera den.
-1. Välj **Överför på servern** alternativ.
+1. Lägg till en **datainläsningsaktivitet (fil)** och konfigurera den.
+1. Välj alternativet **Överför på servern**.
 1. Välj filen på den lokala datorn,
-1. Klicka **Överför**
+1. Klicka på **Överför**
 
 
 #### Felmeddelande{#issue-3-error}
@@ -86,9 +86,9 @@ Du kan lösa problemet genom att använda en äldre klientkonsol. Sedan kan du �
 
 Som kampanjadministratör kan du hämta klientkonsolen Campaign v8.3.1 i [Adobe Software Distribution](https://experience.adobe.com/#/downloads/content/software-distribution/en/campaign.html?1_group.propertyvalues.property=.%2Fjcr%3aContent%2Fmetadata%2FDc%3Aversion&amp;1_group.propertyvalues.operation=equals&amp;1_group.propertyvalues.0_values=target-version%3AcCampaign%2F8&amp;orderby=%40jcr%3Acontent%2Fjcr%3AlastModified&amp;order.sort=desc&amp;layout=list&amp;p.offset=0&amp;p.limit=4){target="_blank"}.
 
-Lär dig hur du får åtkomst till Adobe programvarudistribution [på den här sidan](https://experienceleague.adobe.com/docs/experience-cloud/software-distribution/home.html){target="_blank"}.
+Lär dig hur du får åtkomst till Adobe Software Distribution [på den här sidan](https://experienceleague.adobe.com/docs/experience-cloud/software-distribution/home.html){target="_blank"}.
 
-Lär dig hur du uppgraderar din klientkonsol [på den här sidan](connect.md)
+Lär dig hur du uppgraderar klientkonsolen [på den här sidan](connect.md)
 
 #### Intern referens{#issue-3-ref}
 

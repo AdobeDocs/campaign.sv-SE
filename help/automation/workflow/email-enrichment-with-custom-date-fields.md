@@ -18,56 +18,56 @@ ht-degree: 3%
 
 I det här exemplet vill vi skicka ett e-postmeddelande med anpassade datafält till mottagare som kommer att fira sina födelsedagar den här månaden. E-postmeddelandet innehåller en kupong som är giltig en vecka före och efter deras födelsedagar.
 
-Vi måste rikta in oss på mottagare från en lista som kommer att fira sina födelsedagar den här månaden med en **[!UICONTROL Split]** aktivitet. Sedan använder du **[!UICONTROL Enrichment]** är det anpassade datafältet som fungerar som giltighetsdatum i e-postmeddelandet för kundens specialerbjudande.
+Vi måste rikta in oss på mottagare från en lista som ska fira sina födelsedagar den här månaden med en **[!UICONTROL Split]**-aktivitet. När du sedan använder aktiviteten **[!UICONTROL Enrichment]** fungerar det anpassade datafältet som giltighetsdatum i e-postmeddelandet för kundens specialerbjudande.
 
 ![](assets/uc_enrichment.png)
 
 Så här skapar du det här exemplet:
 
-1. I **[!UICONTROL Targeting and workflows]** dra och släpp en **[!UICONTROL Read list]** -aktivitet för att ange mottagarlistan som mål.
+1. Dra och släpp en **[!UICONTROL Read list]**-aktivitet på fliken **[!UICONTROL Targeting and workflows]** i kampanjen för att ange mottagare som mål.
 1. Listan som ska bearbetas kan anges explicit, beräknas av ett skript eller lokaliseras dynamiskt enligt de alternativ som valts och parametrar som definierats här.
 
    ![](assets/uc_enrichment_1.png)
 
-1. Lägg till en **[!UICONTROL Split]** aktiviteter för att skilja mottagare som kommer att fira sina födelsedagar den här månaden från andra mottagare.
-1. Om du vill dela din lista går du till **[!UICONTROL Filtering of selected records]** kategori, välj **[!UICONTROL Add a filtering condition on the inbound population]**. Klicka sedan på **[!UICONTROL Edit]**.
+1. Lägg till en **[!UICONTROL Split]**-aktivitet för att skilja mottagare som ska fira sina födelsedagar den här månaden från andra mottagare.
+1. Om du vill dela listan väljer du **[!UICONTROL Add a filtering condition on the inbound population]** i kategorin **[!UICONTROL Filtering of selected records]**. Klicka sedan på **[!UICONTROL Edit]**.
 
    ![](assets/uc_enrichment_2.png)
 
-1. Välj **[!UICONTROL Filtering conditions]** klickar du på **[!UICONTROL Edit expression]** för att filtrera månaden på mottagarens födelsedag.
+1. Välj **[!UICONTROL Filtering conditions]** och klicka sedan på knappen **[!UICONTROL Edit expression]** för att filtrera månaden för mottagarens födelsedag.
 
    ![](assets/uc_enrichment_3.png)
 
-1. Klicka **[!UICONTROL Advanced Selection]** sedan **[!UICONTROL Edit the formula using an expression]** och lägg till följande uttryck: Month(@bornDate).
-1. I **[!UICONTROL Operator]** kolumn väljer du **[!UICONTROL equal to]**.
-1. Filtrera villkoret ytterligare genom att lägga till **[!UICONTROL Value]** månad för aktuellt datum: Month(GetDate()).
+1. Klicka på **[!UICONTROL Advanced Selection]** och sedan på **[!UICONTROL Edit the formula using an expression]** och lägg till följande uttryck: Month(@bornDate).
+1. Markera **[!UICONTROL equal to]** i kolumnen **[!UICONTROL Operator]**.
+1. Du kan filtrera villkoret ytterligare genom att lägga till månaden **[!UICONTROL Value]** för det aktuella datumet: Month(GetDate()).
 
    Detta skickar en fråga till mottagare vars födelsedag motsvarar den aktuella månaden.
 
    ![](assets/uc_enrichment_4.png)
 
-1. Klicka på **[!UICONTROL Finish]**. Sedan i **[!UICONTROL General]** -fliken i **[!UICONTROL Split]** aktivitet, klicka på **[!UICONTROL Generate complement]** i **[!UICONTROL Results]** kategori.
+1. Klicka på **[!UICONTROL Finish]**. Klicka sedan på **[!UICONTROL Generate complement]** i kategorin **[!UICONTROL Results]** på fliken **[!UICONTROL General]** i din **[!UICONTROL Split]**-aktivitet.
 
-   Med **[!UICONTROL Complement]** kan du lägga till en leveransaktivitet eller uppdatera en lista. Här har vi just lagt till en **[!UICONTROL End]** aktivitet.
+   Med resultatet **[!UICONTROL Complement]** kan du lägga till en leveransaktivitet eller uppdatera en lista. Här har vi just lagt till en **[!UICONTROL End]**-aktivitet.
 
    ![](assets/uc_enrichment_6.png)
 
-Nu måste du konfigurera **[!UICONTROL Enrichment]** aktivitet:
+Du måste nu konfigurera din **[!UICONTROL Enrichment]**-aktivitet:
 
-1. Lägg till en **[!UICONTROL Enrichment]** efter din delmängd för att lägga till dina anpassade datumfält.
+1. Lägg till en **[!UICONTROL Enrichment]**-aktivitet efter din delmängd för att lägga till dina anpassade datumfält.
 
    ![](assets/uc_enrichment_7.png)
 
-1. Öppna **[!UICONTROL Enrichment]** aktivitet. I **[!UICONTROL Complementary information]** kategori, klicka på **[!UICONTROL Add data]**.
+1. Öppna din **[!UICONTROL Enrichment]**-aktivitet. Klicka på **[!UICONTROL Add data]** i kategorin **[!UICONTROL Complementary information]**.
 
    ![](assets/uc_enrichment_8.png)
 
-1. Välj **[!UICONTROL Data linked to the filtering dimension]** sedan **[!UICONTROL Data of the filtering dimension]**.
+1. Välj **[!UICONTROL Data linked to the filtering dimension]** och sedan **[!UICONTROL Data of the filtering dimension]**.
 1. Klicka på knappen **[!UICONTROL Add]**.
 
    ![](assets/uc_enrichment_9.png)
 
-1. Lägg till en **[!UICONTROL Label]**. Sedan i **[!UICONTROL Expression]** kolumn, klicka **[!UICONTROL Edit expression]**.
+1. Lägg till en **[!UICONTROL Label]**. Klicka sedan på **[!UICONTROL Edit expression]** i kolumnen **[!UICONTROL Expression]**.
 
    ![](assets/uc_enrichment_10.png)
 
@@ -75,7 +75,7 @@ Nu måste du konfigurera **[!UICONTROL Enrichment]** aktivitet:
 
    ![](assets/uc_enrichment_11.png)
 
-1. Skapa sedan det anpassade datumfältet **Giltighetens slutdatum** som riktar sig till veckan efter födelsedatumet måste du lägga till **[!UICONTROL Expression]**: `AddDays([target/@birthDate], 7)`.
+1. Om du sedan vill skapa det anpassade datumfältet **Giltighetens slutdatum**, som är målveckan efter födelsedatumet, måste du lägga till **[!UICONTROL Expression]**: `AddDays([target/@birthDate], 7)`.
 
    Du kan lägga till en etikett i uttrycket.
 
@@ -83,24 +83,24 @@ Nu måste du konfigurera **[!UICONTROL Enrichment]** aktivitet:
 
 1. Klicka på **[!UICONTROL Ok]**. Din berikning är nu klar.
 
-Efter **[!UICONTROL Enrichment]** kan du lägga till en leverans. I det här fallet har vi lagt till en e-postleverans för att skicka ett specialerbjudande med giltighetsdatum till kunder som firar sina födelsedagar den här månaden.
+Efter din **[!UICONTROL Enrichment]**-aktivitet kan du lägga till en leverans. I det här fallet har vi lagt till en e-postleverans för att skicka ett specialerbjudande med giltighetsdatum till kunder som firar sina födelsedagar den här månaden.
 
-1. Dra och släpp en **[!UICONTROL Email delivery]** aktivitet efter **[!UICONTROL Enrichment]** aktivitet.
+1. Dra och släpp en **[!UICONTROL Email delivery]**-aktivitet efter din **[!UICONTROL Enrichment]**-aktivitet.
 
    ![](assets/uc_enrichment_15.png)
 
-1. Dubbelklicka på **[!UICONTROL Email delivery]** för att personalisera leveransen.
-1. Lägg till en **[!UICONTROL Label]** till leveransen och klicka **[!UICONTROL Continue]**.
-1. Klicka **[!UICONTROL Save]** för att skapa e-postleverans.
-1. Checka in **[!UICONTROL Approval]** fliken för e-postleveransen **[!UICONTROL Properties]** som **[!UICONTROL Confirm delivery before sending option]** är markerad.
+1. Dubbelklicka på din **[!UICONTROL Email delivery]**-aktivitet för att börja anpassa leveransen.
+1. Lägg till en **[!UICONTROL Label]** i leveransen och klicka på **[!UICONTROL Continue]**.
+1. Klicka på **[!UICONTROL Save]** för att skapa din e-postleverans.
+1. Kontrollera på fliken **[!UICONTROL Approval]** i e-postleveransen **[!UICONTROL Properties]** att **[!UICONTROL Confirm delivery before sending option]** är markerad.
 
    Starta sedan arbetsflödet för att berika den utgående övergången med målinformationen.
 
    ![](assets/uc_enrichment_18.png)
 
-Nu kan du börja designa din e-postleverans med de anpassade datumfälten i **[!UICONTROL Enrichment]** aktivitet.
+Nu kan du börja designa din e-postleverans med de anpassade datumfälten som skapades i aktiviteten **[!UICONTROL Enrichment]**.
 
-1. Dubbelklicka på **[!UICONTROL Email delivery]** aktivitet.
+1. Dubbelklicka på din **[!UICONTROL Email delivery]**-aktivitet.
 1. Lägg till måltilläggen i e-postmeddelandet. Den ska finnas i följande uttryck för att konfigurera formatet för dina giltighetsdatum:
 
    ```
@@ -108,7 +108,7 @@ Nu kan du börja designa din e-postleverans med de anpassade datumfälten i **[!
            formatDate(targetData.alias of your expression,"%2D.%2M")  %>
    ```
 
-1. Klicka på ![](assets/uc_enrichment_16.png). Välj **[!UICONTROL Target extension]** och tidigare skapade anpassade giltighetsdatum med **[!UICONTROL Enrichment]** -aktivitet för att lägga till tillägget i formatetDate-uttrycket.
+1. Klicka på ![](assets/uc_enrichment_16.png). Välj **[!UICONTROL Target extension]** och sedan de tidigare anpassade giltighetsdatumen med aktiviteten **[!UICONTROL Enrichment]** för att lägga till tillägget i formatetDate-uttrycket.
 
    ![](assets/uc_enrichment_19.png)
 

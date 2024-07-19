@@ -1,20 +1,20 @@
 ---
 product: campaign
-title: LINE-kanal
-description: LINE-kanal
+title: LINJEKanal
+description: LINJEKanal
 feature: Workflows, Line App
 role: User
 source-git-commit: 1a0b473b005449be7c846225e75a227f6d877c88
 workflow-type: tm+mt
 source-wordcount: '95'
-ht-degree: 11%
+ht-degree: 2%
 
 ---
 
 
-# LINE-kanal{#line-channel}
+# LINJEKanal{#line-channel}
 
-Arbetsflödena nedan installeras tillsammans med **LINE-kanal** som standard. Mer information om den här modulen finns i [den här sidan](../../v8/send/line.md).
+Arbetsflödena som anges nedan installeras som standard med **LINE-kanalmodulen**. Mer information om den här modulen finns på [den här sidan](../../v8/send/line.md).
 
 <table> 
  <tbody> 
@@ -31,7 +31,7 @@ Arbetsflödena nedan installeras tillsammans med **LINE-kanal** som standard. Me
   <tr> 
    <td> <span class="uicontrol">Ta bort blockerade LINE-användare</span> <br /> </td> 
    <td> <span class="uicontrol">deleteBlockedLineUsersV2</span> <br /> </td> 
-   <td> Det här arbetsflödet säkerställer att LINE V2-användarnas data tas bort efter att de har blockerat LINE-kontot i 180 dagar.<br /> </td> 
+   <td> Det här arbetsflödet säkerställer att LINE V2-användarnas data tas bort efter att de har blockerat LINE-officiella kontot i 180 dagar.<br /> </td> 
   </tr> 
   <tr> 
    <td> <span class="uicontrol">MID till LineUserID-migrering</span> <br /> </td> 

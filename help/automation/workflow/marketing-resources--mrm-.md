@@ -1,21 +1,21 @@
 ---
 product: campaign
-title: Marknadsföringsresurser (MRM)
-description: Marknadsföringsresurser (MRM)
+title: Marknadsföringsresurser
+description: Marknadsföringsresurser
 feature: Workflows, Targeting Activity
 hide: true
 hidefromtoc: true
 source-git-commit: 6464e1121b907f44db9c0c3add28b54486ecf834
 workflow-type: tm+mt
 source-wordcount: '83'
-ht-degree: 13%
+ht-degree: 2%
 
 ---
 
 
-# Marknadsföringsresurser (MRM){#marketing-resources-mrm}
+# Marknadsföringsresurser{#marketing-resources-mrm}
 
-Arbetsflödena nedan installeras tillsammans med **Marknadsföringsresurser** som standard.
+Arbetsflödena som beskrivs nedan installeras som standard med modulen **Marknadsföringsresurser (MRM)**.
 
 <table> 
  <tbody> 
@@ -32,7 +32,7 @@ Arbetsflödena nedan installeras tillsammans med **Marknadsföringsresurser** so
   <tr> 
    <td> <span class="uicontrol">Aktivitetsmeddelande</span> <br /> </td> 
    <td> <span class="uicontrol">taskMgt</span> <br /> </td> 
-   <td> Med det här arbetsflödet kan du skicka meddelanden om aktiviteter i marknadsföringskampanjer.<br /> </td> 
+   <td> Med det här arbetsflödet kan du skicka meddelanden som rör aktiviteter i marknadsföringskampanjer.<br /> </td> 
   </tr> 
   <tr> 
    <td> <span class="uicontrol">Diskussionsforumprocesser</span> <br /> </td> 

@@ -21,7 +21,7 @@ Vilka funktioner som är tillgängliga beror på dina behörigheter, tillägg oc
 
 >[!NOTE]
 >
->Trädet visas när du klickar på **[!UICONTROL Explorer]** på startsidan.
+>Trädet visas när du klickar på ikonen **[!UICONTROL Explorer]** på startsidan.
 
 En inbyggd mall tillhandahålls för att skapa en kampanj för vilken ingen specifik konfiguration har definierats. Du kan skapa och konfigurera kampanjmallar och sedan skapa kampanjer utifrån dessa mallar.
 
@@ -29,37 +29,37 @@ En inbyggd mall tillhandahålls för att skapa en kampanj för vilken ingen spec
 
 Så här skapar du en kampanjmall:
 
-1. Öppna kampanj **Explorer** och bläddra till **Resurser > Mallar > Campaign-mallar**.
-1. Klicka **Nytt** i verktygsfältet ovanför listan med mallar.
+1. Öppna Campaign **Explorer** och bläddra till **Resurser > Mallar > Campaign-mallar**.
+1. Klicka på **Nytt** i verktygsfältet ovanför listan med mallar.
 
 ![](assets/campaign-template-node.png)
 
-Du kan också **duplicera** den inbyggda mallen för återanvändning och anpassning av dess konfiguration. Om du vill göra det högerklickar du på mallen och väljer **Duplicera**.
+Du kan även **duplicera** den inbyggda mallen för att återanvända och anpassa konfigurationen. Om du vill göra det högerklickar du på mallen och väljer **Duplicera**.
 
 1. Ange etiketten för den nya kampanjmallen.
-1. Klicka **Spara** och öppna mallen igen.
-1. I **Redigera** definierar du mallegenskaperna.
-1. Välj **Avancerade kampanjparametrar..** länk för att lägga till ett arbetsflöde i kampanjmallen.
+1. Klicka på **Spara** och öppna mallen igen.
+1. Definiera mallegenskaperna på fliken **Redigera**.
+1. Välj länken **Avancerade kampanjparametrar..** om du vill lägga till ett arbetsflöde i kampanjmallen.
 
    ![](assets/campaign-template-parameters.png)
 
-1. Ändra **Målgruppsanpassning och arbetsflöden** värde till **Ja**., och bekräfta. Lär dig hur du lägger till funktioner i [det här avsnittet](#typology-of-enabled-modules).
-1. The **Målgruppsanpassning och arbetsflöden** -fliken läggs till i mallen. Klicka **Lägg till ett arbetsflöde..**, ange **Etikett** och klicka **OK**.
+1. Ändra värdet **Mål och arbetsflöden** till **Ja** och bekräfta. Lär dig hur du lägger till funktioner i [det här avsnittet](#typology-of-enabled-modules).
+1. Fliken **Mål och arbetsflöden** läggs till i mallen. Klicka på **Lägg till ett arbetsflöde..**, ange en **etikett** och klicka på **OK**.
 1. Skapa arbetsflödet efter behov.
 
    ![](assets/campaign-template-create-wf.png)
 
-1. Klicka **Spara**. Mallen är nu klar att användas för att skapa en ny kampanj.
+1. Klicka på **Spara**. Mallen är nu klar att användas för att skapa en ny kampanj.
 
-På de olika flikarna och underflikarna i kampanjmallen kan du komma åt inställningarna som beskrivs i [Allmän konfiguration](#general-configuration).
+De olika flikarna och underflikarna i kampanjmallen ger dig åtkomst till inställningarna som beskrivs i [Allmän konfiguration](#general-configuration).
 
 ## Välj moduler {#select-modules}
 
-The **[!UICONTROL Advanced campaign parameters...]** kan du aktivera och inaktivera jobb för kampanjer som är baserade på den här mallen. Välj de funktioner som du vill aktivera i kampanjer som skapas baserat på den här mallen.
+Med länken **[!UICONTROL Advanced campaign parameters...]** kan du aktivera och inaktivera jobb för kampanjer som är baserade på den här mallen. Välj de funktioner som du vill aktivera i kampanjer som skapas baserat på den här mallen.
 
 ![](assets/campaign-template-select-modules.png)
 
-Om ingen funktion är markerad, de element som rör processen (menyer, ikoner, alternativ, flikar, underflikar osv.) visas inte i mallens gränssnitt eller i kampanjer som är baserade på den här mallen. Flikarna till vänster om kampanjinformationen och de tillgängliga flikarna sammanfaller med de funktioner som valts i mallen. Till exempel **Utgifter och mål** ingen funktion är aktiverad, **[!UICONTROL Budget]** visas inte i kampanjer som är baserade på den här mallen.
+Om ingen funktion är markerad, de element som rör processen (menyer, ikoner, alternativ, flikar, underflikar osv.) visas inte i mallens gränssnitt eller i kampanjer som är baserade på den här mallen. Flikarna till vänster om kampanjinformationen och de tillgängliga flikarna sammanfaller med de funktioner som valts i mallen. Funktionen **Utgifter och mål** är till exempel inte aktiverad. Motsvarande **[!UICONTROL Budget]**-flik visas inte i kampanjer som baseras på den här mallen.
 
 Dessutom läggs genvägar till konfigurationsfönstren till på kontrollpanelen för kampanjer. När en funktion är aktiverad får en direktlänk åtkomst till den från kontrollpanelen för kampanjer.
 
@@ -73,19 +73,19 @@ Dessutom läggs genvägar till konfigurationsfönstren till på kontrollpanelen 
 
   ![](assets/campaign-template-dashboard-sample-1.png)
 
-  Observera att **[!UICONTROL Targeting and workflows]** -fliken saknas.
+  Observera att fliken **[!UICONTROL Targeting and workflows]** saknas.
 
   Följande funktioner är tillgängliga:
 
   ![](assets/campaign-template-edit-sample-1.png)
 
-  Observera att **[!UICONTROL Budget]** -fliken saknas.
+  Observera att fliken **[!UICONTROL Budget]** saknas.
 
   De avancerade inställningarna för kampanjen återspeglar även den här konfigurationen.
 
   ![](assets/campaign-template-parameters-sample-1.png)
 
-  Observera att **[!UICONTROL Approvals]** är inte tillgänglig.
+  Observera att fliken **[!UICONTROL Approvals]** inte är tillgänglig.
 
 * Med den här konfigurationen:
   ![](assets/campaign-template-dashboard-sample-2.png)
@@ -94,19 +94,19 @@ Dessutom läggs genvägar till konfigurationsfönstren till på kontrollpanelen 
 
   ![](assets/campaign-template-select-functionalities-2.png)
 
-  Observera att **[!UICONTROL Targeting and workflows]** -fliken är tillgänglig men **Lägga till ett dokument** länk saknas.
+  Observera att fliken **[!UICONTROL Targeting and workflows]** är tillgänglig men att länken **Lägg till ett dokument** saknas.
 
   Följande funktioner är tillgängliga:
 
   ![](assets/campaign-template-edit-sample-2.png)
 
-  Observera att **[!UICONTROL Budget]** -fliken är tillgänglig.
+  Observera att fliken **[!UICONTROL Budget]** är tillgänglig.
 
   De avancerade inställningarna för kampanjen återspeglar även den här konfigurationen.
 
   ![](assets/campaign-template-parameters-sample-2.png)
 
-  Observera att **[!UICONTROL Approvals]** -fliken är tillgänglig men **[!UICONTROL Control population]** och **[!UICONTROL Seed addresses]** -flikar är inte aktiverade.
+  Observera att fliken **[!UICONTROL Approvals]** är tillgänglig men att flikarna **[!UICONTROL Control population]** och **[!UICONTROL Seed addresses]** inte är aktiverade.
 
 
 ## Modultyper {#typology-of-enabled-modules}
@@ -126,35 +126,35 @@ Dessutom läggs genvägar till konfigurationsfönstren till på kontrollpanelen 
 
 * **Dokument**
 
-  När den här modulen är markerad läggs en extra flik till i **[!UICONTROL Edit]** -fliken i mallen och de kampanjer som är baserade på den här mallen. Bifogade dokument kan läggas till från mallen eller individuellt för varje kampanj. Läs mer om dokument i [det här avsnittet](marketing-campaign-deliveries.md#manage-associated-documents).
+  När den här modulen är markerad läggs en extra flik till på fliken **[!UICONTROL Edit]** i mallen och de kampanjer som är baserade på den här mallen. Bifogade dokument kan läggas till från mallen eller individuellt för varje kampanj. Läs mer om dokument i [det här avsnittet](marketing-campaign-deliveries.md#manage-associated-documents).
 
   ![](assets/template-activate-3.png)
 
 * **Leveransbeskrivning**
 
-  När den här modulen är markerad **[!UICONTROL Delivery outlines]** underfliken läggs till i **[!UICONTROL Documents]** för att definiera leveransdispositioner för kampanjen. Läs mer om leveransdispositioner i [det här avsnittet](marketing-campaign-assets.md#delivery-outlines).
+  När den här modulen är markerad läggs en **[!UICONTROL Delivery outlines]**-underflik till på fliken **[!UICONTROL Documents]** för att definiera leveransdispositioner för kampanjen. Läs mer om leveransdispositioner i [det här avsnittet](marketing-campaign-assets.md#delivery-outlines).
 
   ![](assets/template-activate-4.png)
 
 * **Målgruppsanpassning och arbetsflöden**
 
-  När du väljer **[!UICONTROL Targeting and workflows]** -modulen läggs en flik till så att du kan skapa ett eller flera arbetsflöden för kampanjer baserat på den här mallen. Arbetsflöden kan också konfigureras individuellt för varje kampanj baserat på den här mallen.Läs mer om kampanjarbetsflöden i [det här avsnittet](marketing-campaign-deliveries.md#build-the-main-target-in-a-workflow).
+  När du väljer modulen **[!UICONTROL Targeting and workflows]** läggs en flik till så att du kan skapa ett eller flera arbetsflöden för kampanjer som är baserade på den här mallen. Arbetsflöden kan också konfigureras individuellt för varje kampanj baserat på den här mallen.Läs mer om kampanjarbetsflöden i [det här avsnittet](marketing-campaign-deliveries.md#build-the-main-target-in-a-workflow).
 
   ![](assets/template-activate-5.png)
 
-  När den här modulen är aktiverad visas **[!UICONTROL Jobs]** -fliken läggs till i de avancerade inställningarna för kampanjen för att definiera processens körningssekvens.
+  När den här modulen är aktiverad läggs en **[!UICONTROL Jobs]**-flik till i de avancerade inställningarna för kampanjen för att definiera processens körningssekvens.
 
 * **Godkännanden**
 
-  Om du aktiverar **[!UICONTROL Approvals]** kan du välja vilka processer som ska godkännas och vilka operatörer som ansvarar för godkännandena. Läs mer om godkännanden i [det här avsnittet](marketing-campaign-approval.md#select-reviewers).
+  Om du aktiverar **[!UICONTROL Approvals]** kan du välja vilka processer som ska godkännas och vilka operatorer som ska ansvara för godkännandena. Läs mer om godkännanden i [det här avsnittet](marketing-campaign-approval.md#select-reviewers).
 
   ![](assets/template-activate-6.png)
 
-  Du kan välja om du vill aktivera processgodkännande via **[!UICONTROL Approvals]** -fliken i avsnittet för mallar med avancerade inställningar.
+  Du kan välja om du vill aktivera processgodkännande eller inte via fliken **[!UICONTROL Approvals]** i avsnittet med avancerade inställningar.
 
 * **Utgifter och mål**
 
-  När den här modulen är markerad **[!UICONTROL Budget]** -fliken läggs till i informationen om mallen och kampanjer som baseras på den här mallen, så att den associerade budgeten kan väljas.
+  När den här modulen har valts läggs en **[!UICONTROL Budget]**-flik till i informationen om mallen och kampanjer som är baserade på den här mallen, så att den associerade budgeten kan väljas.
 
   ![](assets/template-activate-7.png)
 
@@ -165,18 +165,18 @@ Dessutom läggs genvägar till konfigurationsfönstren till på kontrollpanelen 
 
 När du skapar en kampanjmall måste du ange följande information:
 
-* Ange **label** för mallen: etiketten är obligatorisk och är standardetikett för alla kampanjer som baseras på den här mallen.
-* Välj kampanj **natur** i listrutan. De värden som är tillgängliga i den här listan är de som har sparats i **[!UICONTROL natureOp]** uppräkning.
+* Ange mallens **etikett**: etiketten är obligatorisk och är standardetikett för alla kampanjer som baseras på den här mallen.
+* Välj kampanjens **natur** i listrutan. De värden som är tillgängliga i den här listan är de som har sparats i uppräkningen **[!UICONTROL natureOp]**.
 
-Lär dig hur du får åtkomst till och konfigurerar dina uppräkningar i [den här sidan](../../v8/config/ui-settings.md#enumerations).
+Lär dig hur du får åtkomst till och konfigurerar dina uppräkningar på [den här sidan](../../v8/config/ui-settings.md#enumerations).
 
 
-* Välj **kampanjtyp**: unik, återkommande eller periodisk. Som standard används kampanjmallar för unika kampanjer. Återkommande och periodiska kampanjer beskrivs i [det här avsnittet](recurring-periodic-campaigns.md).
+* Välj typen **av kampanj**: unik, återkommande eller periodisk. Som standard används kampanjmallar för unika kampanjer. Återkommande och periodiska kampanjer beskrivs i [det här avsnittet](recurring-periodic-campaigns.md).
 * Ange kampanjens varaktighet, dvs. antalet dagar som kampanjen ska äga rum. När du skapar en kampanj som baseras på den här mallen fylls start- och slutdatumet för kampanjen i automatiskt.
 
   Om kampanjen är återkommande måste du ange kampanjens start- och slutdatum direkt i mallen.
 
-* Ange **relaterat program** av mallen: kampanjer som är baserade på den här mallen är länkade till det valda programmet.
+* Ange det **relaterade programmet** för mallen: kampanjer som är baserade på den här mallen är länkade till det valda programmet.
 
 <!--
 ## Track campaign execution{#campaign-reverse-scheduling}

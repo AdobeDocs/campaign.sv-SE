@@ -6,8 +6,8 @@ feature: Workflows
 role: User, Admin
 source-git-commit: 567c2e84433caab708ddb9026dda6f9cb717d032
 workflow-type: tm+mt
-source-wordcount: '316'
-ht-degree: 6%
+source-wordcount: '317'
+ht-degree: 5%
 
 ---
 
@@ -16,7 +16,7 @@ ht-degree: 6%
 
 
 
-Arbetsflödena nedan installeras tillsammans med **Leveranser** som standard.
+Arbetsflödena som anges nedan installeras som standard med modulen **Leveranser** .
 
 <table> 
  <tbody> 
@@ -36,9 +36,9 @@ Arbetsflödena nedan installeras tillsammans med **Leveranser** som standard.
    <td> Det här arbetsflödet skickar systemaktivitetsrapporten till faktureringsoperatorn via e-post. Den utlöses som standard den 25:e varje månad.<br /> </td> 
   </tr> 
   <tr> 
-   <td> <span class="uicontrol">Rensa alias</span> <br /> </td> 
+   <td> <span class="uicontrol">Aliasrensning</span> <br /> </td> 
    <td> <span class="uicontrol">aliasCleansing</span> <br /> </td> 
-   <td> Det här arbetsflödet standardiserar uppräkningsvärden. Den aktiveras varje dag klockan tre som standard.<br /> </td> 
+   <td> Det här arbetsflödet standardiserar uppräkningsvärden. Den utlöses varje dag klockan tre som standard.<br /> </td> 
   </tr> 
   <tr> 
    <td> <span class="uicontrol">Uppdatering för leverans</span> <br /> </td> 
@@ -51,22 +51,22 @@ Arbetsflödena nedan installeras tillsammans med **Leveranser** som standard.
    <td> <p>Det här arbetsflödet är arbetsflödet för databasunderhåll: det utför andra beräkningar än statistik och processer och tar bort föråldrade data från databasen enligt den definierade konfigurationen i distributionsassistenten. Den aktiveras varje dag klockan fyra som standard.</p></td> 
   </tr> 
   <tr> 
-   <td> <span class="uicontrol">Rensa pausade arbetsflöden</span> <br /> </td> 
+   <td> <span class="uicontrol">Rensning av pausade arbetsflöden</span> <br /> </td> 
    <td> <span class="uicontrol">cleanupPausedWorkflows</span> <br /> </td> 
-   <td> <p>Det här arbetsflödet analyserar pausade arbetsflöden som har allvarlighetsgraden inställd på normal och utlöser varningar och meddelanden när de har pausats för länge. Efter en månad stoppas tekniska arbetsflöden ovillkorligt. Som standard utlöses den varje måndag kl. 5.</p> <p>Mer information finns i Hantera pausade arbetsflöden</a>.</p></td> 
+   <td> <p>Det här arbetsflödet analyserar pausade arbetsflöden som har allvarlighetsgraden inställd på normal och utlöser varningar och meddelanden när de har pausats för länge. Efter en månad stoppas tekniska arbetsflöden ovillkorligt. Som standard utlöses den varje måndag kl. 5.</p> <p>Mer information finns i Hantera pausade arbetsflöden </a>.</p></td> 
   </tr> 
   <tr> 
-   <td> <span class="uicontrol">Meddelande om erbjudande</span> <br /> </td> 
+   <td> <span class="uicontrol">Erbjudandemeddelande</span> <br /> </td> 
    <td> <span class="uicontrol">offerMgt</span> <br /> </td> 
-   <td> Det här arbetsflödet distribuerar godkända erbjudanden i onlinemiljön samt i alla kategorier i erbjudandekatalogen.<br /> </td> 
+   <td> Det här arbetsflödet distribuerar godkända erbjudanden till onlinemiljön samt alla kategorier i erbjudandekatalogen.<br /> </td> 
   </tr> 
   <tr> 
    <td> <span class="uicontrol">Prognos</span> <br /> </td> 
    <td> <span class="uicontrol">forecasting</span><br /> </td> 
-   <td> Det här arbetsflödet analyserar leveranser som sparats i den preliminära kalendern (skapar preliminära loggar). Den utlöses som standard varje dag klockan 1:00.<br /> </td> 
+   <td> Det här arbetsflödet analyserar leveranser som sparats i den preliminära kalendern (skapar preliminära loggar). Den utlöses varje dag klockan 1:00 som standard.<br /> </td> 
   </tr> 
   <tr> 
-   <td> <span class="uicontrol">Spårning</span> <br /> </td> 
+   <td> <span class="uicontrol">Spärra/knip</span> <br /> </td> 
    <td> <span class="uicontrol">spårning</span> <br /> </td> 
    <td> Det här arbetsflödet utför återställning och konsolidering av spårningsinformation. Dessutom säkerställs omberäkningen av spårnings- och leveransstatistik, särskilt sådan som används i arbetsflöden för meddelandecentrets arkivering. Som standard aktiveras den en gång per timme. <br /> </td> 
   </tr> 

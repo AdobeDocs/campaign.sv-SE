@@ -4,13 +4,13 @@ description: Länkhantering i Adobe Campaign-scheman
 feature: Data Model, Configuration
 role: Developer
 level: Intermediate, Experienced
-source-git-commit: 6db351c8b5d30f722ddc4b0261af93cd8e3b72cd
+exl-id: f7047c6e-f045-4534-b117-311dd90dd92b
+source-git-commit: 0f5efba364ef924447324bdd806e15e6db8d799d
 workflow-type: tm+mt
 source-wordcount: '919'
 ht-degree: 0%
 
 ---
-
 
 # Länkhantering {#links--relation-between-tables}
 
@@ -49,19 +49,19 @@ En länk måste deklareras i schemat som innehåller sekundärnyckeln för tabel
 
 Länkarna följer följande regler:
 
-* Definitionen av en länk anges på en **link**-type **`<element>`** med följande attribut:
+* Definitionen av en länk anges på en **länk**-typ **`<element>`** med följande attribut:
 
-   * **name**: namn på länken från källtabellen
-   * **target**: namn på målschema
-   * **label**: länketikett
-   * **revLink** (valfritt): namn på omvänd länk från målschemat (dras automatiskt som standard)
-   * **integritet** (valfritt): referensintegritet för förekomsten av källtabellen till förekomsten av måltabellen.
+   * **namn**: länkens namn från källtabellen
+   * **mål**: målschemats namn
+   * **etikett**: länketikett
+   * **revLink** (valfritt): namnet på den omvända länken från målschemat (dras automatiskt som standard)
+   * **integritet** (valfritt): källtabellens referensintegritet till måltabellens förekomst.
 Möjliga värden är:
 
-      * **define**: det går att ta bort källförekomsten om den inte längre refereras av en målförekomst
-      * **normal**: om du tar bort källförekomsten initieras tangenterna för länken till målförekomsten (standardläge), den här typen av integritet initierar alla sekundärnycklar
-      * **egen**: om du tar bort källförekomsten tas målförekomsten bort
-      * **owncopy**: samma som **egen** (vid borttagning) eller dubblerar förekomsterna (vid duplicering)
+      * **define**: Det går att ta bort källförekomsten om den inte längre refereras av en målförekomst
+      * **normal**: om du tar bort källförekomsten initieras nycklarna för länken till målförekomsten (standardläge), den här typen av integritet initierar alla sekundärnycklar
+      * **egen**: Om du tar bort källförekomsten tas målförekomsten bort
+      * **owncopy**: samma som **own** (vid borttagning) eller dubblerar förekomsterna (vid duplicering)
       * **neutral**: inget specifikt beteende
 
    * **revIntegrity** (valfritt): integritet i målschemat (valfritt, &quot;normal&quot; som standard)
@@ -69,10 +69,10 @@ Möjliga värden är:
    * **externalJoin** (valfritt): tvingar den yttre kopplingen
    * **revExternalJoin** (valfritt): tvingar det yttre hörnet på den omvända länken
 
-* En länk refererar till ett eller flera fält från källtabellen till måltabellen. Fälten som utgör kopplingen ( `<join>`  -element) behöver inte fyllas i eftersom de automatiskt dras av som standard med målschemats interna nyckel.
+* En länk refererar till ett eller flera fält från källtabellen till måltabellen. Fälten som utgör sammanfogningen ( `<join>`-elementet) behöver inte fyllas i eftersom de automatiskt dras av som standard med målschemats interna nyckel.
 * Ett index läggs automatiskt till i länkens sekundärnyckel i det utökade schemat.
 * En länk består av två halvlänkar, där den första deklareras från källschemat och den andra skapas automatiskt i målschemats utökade schema.
-* En join kan vara en yttre join om **externalJoin** -attributet läggs till, med värdet &quot;true&quot; (stöds i PostgreSQL).
+* En join kan vara en yttre join om attributet **externalJoin** läggs till, med värdet &quot;true&quot; (stöds i PostgreSQL).
 
 >[!NOTE]
 >
@@ -137,7 +137,7 @@ En omvänd länk till tabellen&quot;cus:mottagare&quot; lades till med följande
 
 * **name**: dras automatiskt från namnet på källschemat (kan framtvingas med attributet &quot;revLink&quot; i länkdefinitionen i källschemat)
 * **revLink**: namn på omvänd länk
-* **target**: nyckel för länkat schema (&quot;cus:mottagare&quot;-schema)
+* **mål**: nyckel för länkat schema (&quot;cus:mottagare&quot;-schema)
 * **obunden**: länken deklareras som ett samlingselement för en 1-N-kardinalitet (som standard)
 * **integritet**:&quot;define&quot; som standard (kan framtvingas med attributet&quot;revIntegrity&quot; i länkdefinitionen i källschemat).
 
@@ -176,7 +176,7 @@ Standardvärdet returnerar identifieraren för den första giltiga parametertypf
 
 ## Exempel: skapa en nyckel för en länk {#example-5}
 
-I det här exemplet skapar vi en nyckel på en länk (&quot;företag&quot; till&quot;cus:company&quot;-schema) med **xlink** och ett fält i tabellen (&quot;email&quot;):
+I det här exemplet skapar vi en nyckel för en länk (&quot;företag&quot; till&quot;cus:company&quot;-schema) med attributet **xlink** och ett fält i tabellen (&quot;email&quot;):
 
 ```sql
 <srcSchema name="recipient" namespace="cus">

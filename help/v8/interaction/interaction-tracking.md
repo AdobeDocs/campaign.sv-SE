@@ -16,27 +16,27 @@ ht-degree: 4%
 
 >[!NOTE]
 >
->Dessa funktioner är bara synliga online och endast för **Leveransansvariga**.
+>De här funktionerna är bara synliga online och endast för **leveransansvariga**.
 
 ## Historik över erbjudandeförslag{#offer-proposition-history}
 
 När dina offertförslag är klara kan du se presentationshistoriken.
 
-* På erbjudandenivå, på **[!UICONTROL Edit]** flik, klicka **[!UICONTROL Propositions]**.
+* Klicka på **[!UICONTROL Propositions]** på erbjudandenivån på fliken **[!UICONTROL Edit]**.
 
   ![](assets/offer_followup_006.png)
 
-* Klicka på **[!UICONTROL Propositions]** -fliken.
+* Klicka på fliken **[!UICONTROL Propositions]** i en mottagares profil.
 
   ![](assets/offer_followup_002.png)
 
-* Klicka på **[!UICONTROL Propositions]** -fliken.
+* Klicka på fliken **[!UICONTROL Propositions]** på erbjudandeutrymmesnivån.
 
   ![](assets/offer_space_prop_001_b.png)
 
 ## Analysrapport om erbjudande{#offer-analysis-report}
 
-The **[!UICONTROL Offer analysis]** rapporten ger dig en översikt över antalet godkända eller avvisade förslag.
+Rapporten **[!UICONTROL Offer analysis]** ger dig en översikt över antalet godkända eller avvisade förslag.
 
 Statistiken sorteras utifrån tre kriterier:
 
@@ -52,4 +52,4 @@ Statistiken sorteras utifrån tre kriterier:
 
   ![](assets/offer_report_perdeliveries.png)
 
-Data kan filtreras baserat på de olika kriterier som finns i rapportens övre avsnitt. När du har valt önskat villkor klickar du på **[!UICONTROL Refresh]** länk för att tillämpa dem på rapporten.
+Data kan filtreras baserat på de olika kriterier som finns i rapportens övre avsnitt. När du har valt önskat villkor klickar du på länken **[!UICONTROL Refresh]** för att tillämpa dem på rapporten.

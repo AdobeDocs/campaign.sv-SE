@@ -7,8 +7,8 @@ role: User, Data Engineer
 exl-id: 27308b0d-cbfc-4bc6-9061-d771ceac95fd
 source-git-commit: 28742db06b9ca78a4e952fcb0e066aa5ec344416
 workflow-type: tm+mt
-source-wordcount: '263'
-ht-degree: 12%
+source-wordcount: '258'
+ht-degree: 13%
 
 ---
 
@@ -16,11 +16,11 @@ ht-degree: 12%
 
 
 
-A **[!UICONTROL Recurring delivery]** Med -aktivitet kan du konfigurera en förekomst av en leveransmall som är specifik för en kampanj.
+Med en **[!UICONTROL Recurring delivery]**-aktivitet kan du konfigurera en leveransmallförekomst som är specifik för en kampanj.
 
 ![](assets/do-not-localize/how-to-video.png) [Upptäck den här funktionen i en video](#recurring-delivery-video)
 
-Den här aktiviteten är bara tillgänglig från **[!UICONTROL Targeting and workflows]** som finns i en kampanj.
+Den här aktiviteten är bara tillgänglig från fliken **[!UICONTROL Targeting and workflows]** som finns i en kampanj.
 
 Så här gör du:
 
@@ -32,11 +32,11 @@ Så här gör du:
 
 Konfigurationsprocessen för den här aktiviteten liknar den för att skapa en leveransmall utifrån tillgängliga alternativ.
 
-Ett exempel på den här aktiviteten som används finns i [section](send-a-birthday-email.md#creating-a-recurring-delivery-in-a-targeting-workflow).
+Ett exempel på den här aktiviteten som används finns i [avsnittet](send-a-birthday-email.md#creating-a-recurring-delivery-in-a-targeting-workflow).
 
 ## Så här ställer du in återkommande leverans
 
-A **återkommande leverans** skapar en ny leveransinstans varje gång den körs. Om arbetsflödet till exempel är schemalagt att köras en gång i veckan resulterar det i 52 leveranser efter ett år. Det innebär också att de breda loggarna och spårningsloggarna separeras av varje leveransinstans.
+En **återkommande leverans** skapar en ny leveransinstans varje gång den körs. Om arbetsflödet till exempel är schemalagt att köras en gång i veckan resulterar det i 52 leveranser efter ett år. Det innebär också att de breda loggarna och spårningsloggarna separeras av varje leveransinstans.
 
 ![Återkommande leverans](assets/delivery_recurring.jpg)
 
@@ -44,7 +44,7 @@ Om du vill stoppa en återkommande leverans från att köras bör du helt avbryt
 
 >[!NOTE]
 >
->Det går inte att skicka ett bevis från en **[!UICONTROL Recurring delivery]** typaktivitet.
+>Det går inte att skicka ett bevis från en aktivitet av typen **[!UICONTROL Recurring delivery]**.
 > 
 >Om du vill skapa en leverans direkt via ett kampanjarbetsflöde använder du de kanalspecifika aktiviteter som är förkonfigurerade (t.ex. **[!UICONTROL Email delivery]**).
 

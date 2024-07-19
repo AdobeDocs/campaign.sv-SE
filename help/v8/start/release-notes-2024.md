@@ -2,7 +2,8 @@
 title: Versionsinformation för Campaign v8 (konsol) 2023
 description: Lista över funktioner och förbättringar i 2023 års Campaign v8-utgåvor
 feature: Release Notes
-source-git-commit: 4fecae16b2db0f174de6d77acf5b846906073aeb
+exl-id: 6a0a9486-19a9-4ec3-9030-48dbf419f45f
+source-git-commit: 69ef7e81d5fc0f5cf0dc74fa16d970ef89607331
 workflow-type: tm+mt
 source-wordcount: '381'
 ht-degree: 4%
@@ -11,7 +12,7 @@ ht-degree: 4%
 
 # Versionsinformation 2024 {#2024-rn}
 
-Den här sidan innehåller nya funktioner, förbättringar och korrigeringar som ingår **2024 Campaign v8 Releases**.
+På den här sidan visas nya funktioner, förbättringar och korrigeringar som ingår i **2024 Campaign v8-utgåvorna**.
 
 
 ## Version 8.6.2 {#release-8-6-2}
@@ -30,16 +31,16 @@ _14 feb 2024_
 
 ### Nya funktioner {#new-8-6-1}
 
-* Från och med den här versionen har du tillgång till den nya **Kampanjwebbgränssnitt** som finns i Adobe Experience Cloud centrala miljö. Experience Cloud är en integrerad familj av program, produkter och tjänster för digital marknadsföring i Adobe. Från det intuitiva gränssnittet får du snabbt tillgång till dina molnprogram, produktfunktioner och tjänster. Lär dig ansluta till Adobe Experience Cloud och få tillgång till Adobe Campaign webbgränssnitt [på den här sidan](campaign-ui.md#ac-web-ui).
+* Från och med den här versionen har du tillgång till det nya **Campaign-webbgränssnittet** som är tillgängligt via den centrala Adobe Experience Cloud-miljön. Experience Cloud är en integrerad familj av program, produkter och tjänster för digital marknadsföring i Adobe. Från det intuitiva gränssnittet får du snabbt tillgång till dina molnprogram, produktfunktioner och tjänster. Lär dig hur du ansluter till Adobe Experience Cloud och kommer åt Adobe Campaign webbgränssnitt [på den här sidan](campaign-ui.md#ac-web-ui).
 
 
-* Adobe Campaign v8 kan nu integreras med **Adobe Experience Manager as a Cloud Service**, med redigering som endast är tillgängligt via Adobe Campaign webbgränssnitt. [Läs mer](../connect/ac-aem.md)
+* Adobe Campaign v8 kan nu integreras med **Adobe Experience Manager as a Cloud Service** och redigeringen är exklusivt tillgänglig via Adobe Campaign webbanvändargränssnitt. [Läs mer](../connect/ac-aem.md)
 
-* Nu kan du använda **Adobe Experience Manager Assets-bibliotek** tillsammans med dina Experience Cloud Assets, även om integreringen med Adobe Experience Cloud-paketet är installerat på din Adobe Campaign-instans. [Läs mer](../connect/ac-aem.md#assets-library)
+* Du kan nu använda ditt **Adobe Experience Manager Assets-bibliotek** tillsammans med din Experience Cloud Assets även om integreringen med Adobe Experience Cloud-paketet är installerat på din Adobe Campaign-instans. [Läs mer](../connect/ac-aem.md#assets-library)
 
 ### Allmänna förbättringar {#improvements-8-6-1}
 
-* Campaign v8.6 ger bättre genomströmning för **spårningsindikatorer för e-postleveranser**. Tack vare våra optimerade processer minskas tiden för att spåra intag och beräkning, och ni kan kontrollera leveransnyckelindikatorerna mycket snabbare.
+* Campaign v8.6 ger förbättrad genomströmning för **spårningsindikatorer för e-postleveranser**. Tack vare våra optimerade processer minskas tiden för att spåra intag och beräkning, och ni kan kontrollera leveransnyckelindikatorerna mycket snabbare.
 
 
 ### Leveransuppdateringar {#deliverability-8-6-1}

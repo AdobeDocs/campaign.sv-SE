@@ -23,9 +23,9 @@ Interaktionen fungerar med två typer av erbjudandemiljöer:
 
 ![](assets/offer_environments_overview_001.png)
 
-Varje **[!UICONTROL Design]** miljön är länkad till en **[!UICONTROL Live]** miljö. När ett erbjudande är klart blir dess innehåll och behörighetskrav föremål för en godkännandecykel. När den här cykeln är slutförd distribueras det aktuella erbjudandet automatiskt till **[!UICONTROL Live]** miljö. Från och med nu finns den tillgänglig för leverans.
+Varje **[!UICONTROL Design]**-miljö är länkad till en **[!UICONTROL Live]**-miljö. När ett erbjudande är klart blir dess innehåll och behörighetskrav föremål för en godkännandecykel. När den här cykeln är slutförd distribueras det aktuella erbjudandet automatiskt till miljön **[!UICONTROL Live]**. Från och med nu finns den tillgänglig för leverans.
 
-Som standard innehåller Campaign en **[!UICONTROL Design]** miljö och **[!UICONTROL Live]** miljö som är länkad till den. Båda miljöerna är förkonfigurerade för att rikta sig till [inbyggd mottagartabell](../dev/datamodel.md#ootb-profiles).
+Som standard innehåller Campaign en **[!UICONTROL Design]**-miljö och en **[!UICONTROL Live]**-miljö som är länkad till den. Båda miljöerna är förkonfigurerade för den [inbyggda mottagartabellen](../dev/datamodel.md#ootb-profiles).
 
 >[!NOTE]
 >
@@ -33,7 +33,7 @@ Som standard innehåller Campaign en **[!UICONTROL Design]** miljö och **[!UICO
 
 ![](assets/offer_environments_overview_002.png)
 
-Leveransansvariga kan bara visa **[!UICONTROL Live]** miljö och utnyttja erbjudanden för att leverera dem. Erbjudandehanterarna kan visa och använda **[!UICONTROL Design]** -miljö och visa **[!UICONTROL Live]** miljö. [Läs mer](interaction-operators.md)
+Leveransansvariga kan bara visa miljön **[!UICONTROL Live]** och utnyttja erbjudanden för att leverera dem. Erbjudandehanterare kan visa och använda miljön **[!UICONTROL Design]** och visa miljön **[!UICONTROL Live]**. [Läs mer](interaction-operators.md)
 
 ## Skapa en miljö för anonyma interaktioner{#create-an-offer-environment}
 
@@ -45,7 +45,7 @@ Följ stegen nedan:
 
    ![](assets/offer_env_anonymous_001.png)
 
-1. Klicka **[!UICONTROL Next]** väljer du **[!UICONTROL Generate a storage schema for propositions]** och klicka **[!UICONTROL Save]**.
+1. Klicka på **[!UICONTROL Next]**, markera alternativet **[!UICONTROL Generate a storage schema for propositions]** och klicka på **[!UICONTROL Save]**.
 
    ![](assets/offer_env_anonymous_002.png)
 
@@ -55,7 +55,7 @@ Följ stegen nedan:
 
 1. Adobe Campaign skapar två miljöer - **[!UICONTROL Design]** och **[!UICONTROL Live]** - med målinformation från den tidigare aktiverade målmappningen. Miljön är förkonfigurerad med målinformationen.
 
-Om du har aktiverat **[!UICONTROL Visitor]** mappning, **[!UICONTROL Environment dedicated to incoming anonymous interactions]** -rutan markeras automatiskt i miljöns **[!UICONTROL General]** -fliken.
+Om du har aktiverat **[!UICONTROL Visitor]**-mappning kontrolleras rutan **[!UICONTROL Environment dedicated to incoming anonymous interactions]** automatiskt på miljöns **[!UICONTROL General]**-flik.
 
 Med det här alternativet kan du aktivera anonyma interaktionsspecifika funktioner, särskilt när du konfigurerar miljön, som innehåller blanksteg. Du kan också konfigurera alternativ som gör att du kan växla från en identifierad miljö till en anonym miljö.
 

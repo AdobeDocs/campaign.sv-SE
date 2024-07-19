@@ -14,7 +14,7 @@ ht-degree: 0%
 
 # Anpassa instansen {#gs-ac-custom}
 
-Lär dig hur **Anpassa Campaign-instansen**.
+Lär dig hur du **anpassar Campaign-instansen**.
 
 >[!CAUTION]
 >
@@ -32,36 +32,36 @@ Om du till exempel vill lägga till ett fält i en befintlig tabell, som mottaga
 
 Två tabelltilläggslägen är tillgängliga:
 
-* Genom gränssnittet med **Nytt fält** assistent
+* Genom gränssnittet med assistenten **Nytt fält**
 
-  Lär dig hur du snabbt lägger till ett nytt fält i Campaign i [Campaign Classic v7 - dokumentation](https://experienceleague.adobe.com/docs/campaign-classic/using/configuring-campaign-classic/editing-schemas/new-field-wizard.html#configuring-campaign-classic){target="_blank"}
+  Lär dig hur du snabbt lägger till ett nytt fält i Campaign i [Campaign Classic v7-dokumentationen](https://experienceleague.adobe.com/docs/campaign-classic/using/configuring-campaign-classic/editing-schemas/new-field-wizard.html#configuring-campaign-classic){target="_blank"}
 
-* Programmatiskt genom att utöka schemat. Lär dig hur du utökar ett befintligt schema i [det här avsnittet](../dev/extend-schema.md).
+* Programmatiskt genom att utöka schemat. Lär dig att utöka ett befintligt schema i [det här avsnittet](../dev/extend-schema.md).
 
 Du kan också skapa nya tabeller i Campaign-databasen och utöka den inbyggda datamodellen.
 
-Om du vill lägga till en helt ny typ av data som inte finns i körklart läge i Adobe Campaign (till exempel en kontraktstabell) kan du skapa ett anpassat schema direkt. Mer information finns i [detta exempel](../dev/create-schema.md#example--creating-a-contract-table).
+Om du vill lägga till en helt ny typ av data som inte finns i körklart läge i Adobe Campaign (till exempel en kontraktstabell) kan du skapa ett anpassat schema direkt. Mer information finns i [det här exemplet](../dev/create-schema.md#example--creating-a-contract-table).
 
 **Relaterade ämnen**
 
-Exempel på schemautgåva i [Campaign Classic v7 - dokumentation](https://experienceleague.adobe.com/docs/campaign-classic/using/configuring-campaign-classic/editing-schemas/examples-of-schemas-edition.html#configuring-campaign-classic){target="_blank"}
+Exempel på schemautgåva i [Campaign Classic v7-dokumentation](https://experienceleague.adobe.com/docs/campaign-classic/using/configuring-campaign-classic/editing-schemas/examples-of-schemas-edition.html#configuring-campaign-classic){target="_blank"}
 
-Använd skiftläge: länka ett fält till en befintlig referenstabell i [Campaign Classic v7 - dokumentation](https://experienceleague.adobe.com/docs/campaign-classic/using/configuring-campaign-classic/editing-schemas/examples-of-schemas-edition.html#uc-link){target="_blank"}
+Använd skiftläge: länka ett fält till en befintlig referenstabell i [Campaign Classic v7-dokumentationen](https://experienceleague.adobe.com/docs/campaign-classic/using/configuring-campaign-classic/editing-schemas/examples-of-schemas-edition.html#uc-link){target="_blank"}
 
 
 ## Ändra indataformulären
 
 Kampanjens indataformulär kan anpassas efter er implementering. Du kan lägga till eller ta bort formulärfält genom att ändra XML-innehållet.
 
-Lär dig hur du ändrar ett befintligt inmatningsformulär eller skapar ett nytt formulär i [det här avsnittet](../dev/forms.md).
+Lär dig hur du ändrar ett befintligt indataformulär eller skapar ett nytt formulär i [det här avsnittet](../dev/forms.md).
 
 ## Anpassa kontrollpaneler{#gs-custom-dashboards}
 
 Adobe Campaign gränssnitt använder många webbprogram för att få åtkomst till, hantera och interagera med mottagare, leveranser, kampanjer, lager med mera. De visas i gränssnittet i form av kontrollpaneler med bara en sida.
 
-De inbyggda webbprogrammen lagras i **Administration > Konfiguration > Webbprogram** i Utforskaren.
+De inbyggda webbprogrammen lagras i mappen **Administration > Konfiguration > Webbprogram** i Utforskaren.
 
-Lär dig hur du skapar en översiktssida i Campaign i [Campaign Classic v7 - dokumentation](https://experienceleague.adobe.com/docs/campaign-classic/using/designing-content/web-applications/use-cases--creating-overviews.html#creating-a-single-page-web-application){target="_blank"}
+Lär dig hur du skapar en översiktssida i Campaign i [Campaign Classic v7-dokumentation](https://experienceleague.adobe.com/docs/campaign-classic/using/designing-content/web-applications/use-cases--creating-overviews.html#creating-a-single-page-web-application){target="_blank"}
 
 
 ## Anpassa listor och skapa filter {#gs-lists-and-filters}
@@ -70,8 +70,8 @@ Kampanjlistor innehåller fördefinierade filter som underlättar navigering och
 
 När du navigerar i Adobe Campaign Utforskaren-trädet visas data i databasen i listor. Du kan filtrera dessa listor, köra sökningar, lägga till information, filtrera och sortera data.
 
-Lär dig hur du konfigurerar listor och sparar en listkonfiguration i [den här sidan](../start/campaign-ui.md).
+Lär dig konfigurera listor och spara en listkonfiguration på [den här sidan](../start/campaign-ui.md).
 
 Du kan använda filter på de här listorna för att bara visa de data som operatorn behöver. Sedan kan åtgärder utföras på filtrerade data. Med filterkonfigurationen kan du välja data från en lista dynamiskt. Om data ändras uppdateras de filtrerade data.
 
-Läs mer om filtreringsalternativ i [den här sidan](../audiences/create-filters.md).
+Läs mer om filtreringsalternativ på [den här sidan](../audiences/create-filters.md).

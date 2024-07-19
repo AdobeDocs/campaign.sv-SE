@@ -24,7 +24,7 @@ Du kan till exempel använda en AND-join-aktivitet när du skapar innehåll och 
 
 >[!NOTE]
 >
->Observera att inkommande övergångar som har konfigurerats med olika målinriktningsdimensioner inte kan kombineras med en **[!UICONTROL AND-join]** aktivitet.
+>Observera att inkommande övergångar som har konfigurerats med olika målinriktningsdimensioner inte kan kombineras med en **[!UICONTROL AND-join]**-aktivitet.
 
 Den utgående skickade populationen av aktiviteten bestäms genom att en huvuduppsättning väljs bland de inkommande övergångarna i aktiviteten.
 
@@ -32,4 +32,4 @@ Den utgående övergången kan bara innehålla en av de ingående övergångspop
 
 >[!CAUTION]
 >
->Om **AND-join** typaktiviteter sammanfogas händelsevariablerna, men om samma variabel definieras två gånger uppstår en konflikt och värdet är obestämt. Mer information om detta finns i [det här avsnittet](javascript-scripts-and-templates.md#event-variables).
+>När det gäller aktiviteter av typen **AND-join** sammanfogas händelsvariablerna, men om samma variabel har definierats två gånger uppstår en konflikt och värdet är obestämt. Mer information om detta finns i [det här avsnittet](javascript-scripts-and-templates.md#event-variables).

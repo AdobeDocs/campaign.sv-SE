@@ -16,7 +16,7 @@ ht-degree: 15%
 
 
 
-**[!UICONTROL Jump]** grafiska objekt av typen -typ används för att förbättra läsbarheten för komplexa diagram, särskilt sådana med korsningsövergångar.
+Grafiska objekt av typen **[!UICONTROL Jump]** används för att förbättra läsbarheten för komplexa diagram, särskilt sådana med korsningsövergångar.
 
 Hoppar är övergångar utan pilar.
 

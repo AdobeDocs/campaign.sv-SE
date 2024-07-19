@@ -24,11 +24,11 @@ ht-degree: 1%
 Du kan konfigurera Adobe Campaign att behålla en kopia av e-postmeddelanden som skickas från din plattform. Med det här alternativet kan du skicka meddelanden med en dedikerad BCC-e-postadress (Blind Carbon Copy), varifrån de kan bearbetas och arkiveras i ett externt system.
 Adobe Campaign hanterar inte själva arkiverade filer. De e-postfiler som motsvarar skickade e-postmeddelanden kan sedan överföras till en fjärrserver, till exempel en SMTP-e-postserver.
 
-Arkiveringsmålet är valfri e-postadress som är osynlig för leveransmottagarna. När du har definierat e-postadressen för hemlig kopia måste du aktivera det dedikerade alternativet på [leveransmall](create-templates.md) nivå.
+Arkiveringsmålet är valfri e-postadress som är osynlig för leveransmottagarna. När BCC-e-postadressen har definierats måste du aktivera det dedikerade alternativet på [leveransmallsnivå](create-templates.md).
 
 >[!NOTE]
 >
->Som användare av hanterade Cloud Service [kontakta Adobe](../start/campaign-faq.md#support){target="_blank"} för att kommunicera e-postadressen för den kontroll av webbläsarkompatibilitet som ska användas för arkivering.
+>Som användare av hanterade Cloud Service kan [kontakta Adobe](../start/campaign-faq.md#support){target="_blank"} för att kommunicera e-postadressen för den grundläggande kopian som ska användas för arkivering.
 
 >[!CAUTION]
 >
@@ -37,12 +37,12 @@ Arkiveringsmålet är valfri e-postadress som är osynlig för leveransmottagarn
 
 ## Aktivera BCC för e-post {#enable-bcc}
 
-Så här aktiverar du BCC för en specifik [leveransmall](create-templates.md)följer du stegen nedan:
+Om du vill aktivera Kontroll av webbläsarkompatibilitet för en viss [leveransmall](create-templates.md) följer du stegen nedan:
 
-1. Gå till mappen med leveransmallar i Campaign Explorer. Som standard lagras leveransmallar i **[!UICONTROL Resources]** > **[!UICONTROL Templates]** > **[!UICONTROL Delivery templates]** mapp.
+1. Gå till mappen med leveransmallar i Campaign Explorer. Som standard lagras leveransmallar i mappen **[!UICONTROL Resources]** > **[!UICONTROL Templates]** > **[!UICONTROL Delivery templates]**.
 1. Redigera leveransmallen för att uppdatera med BCC.
 1. Klicka på knappen **[!UICONTROL Properties]**.
-1. Från **[!UICONTROL Delivery]** -fliken, kontrollera **[!UICONTROL Email BCC]** alternativ.
+1. Markera alternativet **[!UICONTROL Email BCC]** på fliken **[!UICONTROL Delivery]**.
 
    ![](assets/email-bcc.png)
 
@@ -58,8 +58,8 @@ När du använder BCC för e-post med Adobe Campaign gäller följande skyddsfö
 
 * Se till att BCC-adressen har tillräcklig mottagningskapacitet för att arkivera alla e-postmeddelanden som skickas.
 
-* BCC för e-post <!--with Enhanced MTA--> skickar till e-postadressen till BCC innan den skickas till mottagarna, vilket kan leda till att BCC-meddelanden skickas trots att de ursprungliga leveranserna kan ha studsat. Mer information om studsar finns i [Förstå leveransfel](delivery-failures.md).
+* E-post-BCC <!--with Enhanced MTA--> levererar till e-postadressen för BCC innan den skickas till mottagarna, vilket kan leda till att BCC-meddelanden skickas trots att de ursprungliga leveranserna kan ha studsat. Mer information om studsar finns i [Förstå leveransfel](delivery-failures.md).
 
-* E-postmeddelanden som skickas till BCC-adressen får inte öppnas och klickas igenom, eftersom dessa aktiviteter beaktas i **[!UICONTROL Total opens]** och **[!UICONTROL Clicks]** från sändningsanalysen kan orsaka felberäkningar.
+* E-postmeddelanden som skickas till BCC-adressen får inte öppnas och klickas igenom, eftersom dessa aktiviteter beaktas i **[!UICONTROL Total opens]** och **[!UICONTROL Clicks]** från sändningsanalysen, kan orsaka felberäkningar.
 
 <!--Only successfully sent emails are taken in account, bounces are not.-->

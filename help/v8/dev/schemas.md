@@ -38,17 +38,17 @@ Adobe Campaign använder datascheman för att
 * Definiera länkar mellan olika dataobjekt i programmet Campaign.
 * Definiera och beskriva de enskilda fälten som ingår i varje objekt.
 
-Om du vill få en bättre förståelse för de inbyggda tabellerna i Campaign och deras interaktion kan du läsa [det här avsnittet](datamodel.md).
+Mer information om inbyggda tabeller i Campaign och hur de fungerar finns i [det här avsnittet](datamodel.md).
 
 >[!CAUTION]
 >
->Vissa inbyggda Campaign-scheman har ett associerat schema i molndatabasen. Dessa scheman identifieras av **Xxl** och får inte ändras eller utökas.
+>Vissa inbyggda Campaign-scheman har ett associerat schema i molndatabasen. Dessa scheman identifieras av namnutrymmet **Xxl** och får inte ändras eller utökas.
 
 ## Syntax för scheman {#syntax-of-schemas}
 
-Schemats rotelement är **`<srcschema>`**. Den innehåller **`<element>`** och **`<attribute>`** delelement.
+Schemats rotelement är **`<srcschema>`**. Den innehåller underelementen **`<element>`** och **`<attribute>`**.
 
-Den första **`<element>`** delelement sammanfaller med entitetens rot.
+Det första **`<element>`**-underelementet sammanfaller med entitetens rot.
 
 ```
 <srcSchema name="recipient" namespace="cus">
@@ -68,13 +68,13 @@ Den första **`<element>`** delelement sammanfaller med entitetens rot.
 
 ![](assets/schema_and_entity.png)
 
-The **`<element>`** -taggar definierar namnen på enhetselement. **`<attribute>`** -taggar i schemat definierar namnen på attributen i **`<element>`** -taggar som de har länkats till.
+**`<element>`**-taggarna definierar namnen på entitetselementen. **`<attribute>`** taggar i schemat definierar namnen på attributen i **`<element>`** -taggarna som de har länkats till.
 
 ## Identifiering av ett schema {#identification-of-a-schema}
 
 Ett dataschema identifieras med sitt namn och namnutrymme.
 
-Med ett namnutrymme kan du gruppera en uppsättning scheman efter intresseområde. Till exempel **kus** namnutrymme används för kundspecifik konfiguration (**kunder**).
+Med ett namnutrymme kan du gruppera en uppsättning scheman efter intresseområde. Namnområdet **cus** används till exempel för kundspecifik konfiguration (**kunder**).
 
 >[!CAUTION]
 >
@@ -84,14 +84,14 @@ Med ett namnutrymme kan du gruppera en uppsättning scheman efter intresseområd
 
 ## Reserverade namnutrymmen {#reserved-namespaces}
 
-Vissa namnutrymmen är reserverade för beskrivningar av de systemenheter som krävs för att Adobe Campaign-programmet ska fungera. Följande namnutrymme **får inte användas** för att identifiera ett nytt schema, i valfri kombination av versaler och gemener:
+Vissa namnutrymmen är reserverade för beskrivningar av de systemenheter som krävs för att Adobe Campaign-programmet ska fungera. Följande namnrymd **får inte användas** för att identifiera ett nytt schema, i kombinationer med versaler och gemener:
 
-* **xxl**: reserverat för Cloud-databasscheman
+* **xxl**: reserverad för Cloud-databasscheman
 * **xtk**: reserverad för plattformssystemdata
 * **nl**: reserverad för programmets övergripande användning
-* **nms**: reserverat för leveranser (mottagare, leverans, spårning osv.)
-* **ncm**: reserverat för innehållshantering
-* **temp**: reserverat för temporära scheman
+* **nms**: reserverad för leveranser (mottagare, leverans, spårning osv.)
+* **ncm**: reserverad för innehållshantering
+* **temp**: reserverad för temporära scheman
 * **crm**: reserverad för integrering av CRM-anslutningar
 
 Identifieringsnyckeln för ett schema är en sträng som skapats med namnutrymmet och namnet avgränsat med ett kolon, till exempel: **nms:mottagare**.
@@ -170,11 +170,11 @@ For more on indexes, refer to the [Indexed fields](database-mapping.md#indexed-f
 
 ## Tangenter {#keys}
 
-Alla tabeller måste ha minst en nyckel och ofta etableras de automatiskt i schemats huvudelement med hjälp av **autopk** attribut inställt på **true**.
+Alla tabeller måste ha minst en nyckel och upprättas ofta automatiskt i schemats huvudelement med attributet **autopk** inställt på **true**.
 
-Dessutom, när det gäller [Företagsdistribution (FFDA)](../architecture/enterprise-deployment.md), använder du **@autouuid** och ange **true**.
+I kontexten för en [Enterprise-distribution](../architecture/enterprise-deployment.md) använder du **@autouid** och anger **true**.
 
-Primärnyckeln kan också definieras med **internal** -attribut.
+Primärnyckeln kan också definieras med attributet **internal**.
 
 Exempel:
 
@@ -184,23 +184,23 @@ Exempel:
 </key>
 ```
 
-I det här exemplet ska du inte låta **@autopk** eller **@autouuid** för att skapa en standardprimärnyckel med namnet&quot;id&quot; anger vi vår egen primärnyckel för&quot;houseid&quot;.
+I det här exemplet, i stället för att låta attributet **@autopk** eller **@autouid** skapa en standardprimärnyckel med namnet&quot;id&quot;, anger vi vår egen primärnyckel för&quot;houseId&quot;.
 
 >[!CAUTION]
 >
 >När du skapar ett nytt schema eller under ett schematillägg måste du behålla samma sekvensvärde för primärnyckeln (@pkSequence) för hela schemat.
 
-Läs mer om tangenter i [det här avsnittet](database-mapping.md#management-of-keys).
+Läs mer om nycklar i [det här avsnittet](database-mapping.md#management-of-keys).
 
 ## Attribut (fält) {#attributes--fields-}
 
-Med attribut kan du definiera fälten som utgör dataobjektet. Du kan använda **[!UICONTROL Insert]** i verktygsfältet för schemautgåvor om du vill släppa tomma attributmallar i XML-filen där markören finns. Läs mer i [det här avsnittet](create-schema.md).
+Med attribut kan du definiera fälten som utgör dataobjektet. Du kan använda knappen **[!UICONTROL Insert]** i verktygsfältet för schemaversionen för att släppa tomma attributmallar i XML-filen där markören finns. Läs mer i [det här avsnittet](create-schema.md).
 
 ![](assets/schemaextension_2.png)
 
-Den fullständiga listan med attribut finns i `<attribute>` elementavsnitt i [Campaign Classic v7 - dokumentation](https://experienceleague.adobe.com/docs/campaign-classic/using/configuring-campaign-classic/schema-reference/elements-attributes/attribute.html#content-model){target="_blank"}. Här är några av de vanligaste attributen: **@advanced**, **@dataPolicy**, **@default**, **@desc**, **@enum**, **@expr**, **@label**, **@length**, **@name**, **@notNull**, **@required**, **@ref**, **@xml**, **@type**.
+Den fullständiga listan med attribut finns i elementavsnittet `<attribute>` i [Campaign Classic v7-dokumentationen](https://experienceleague.adobe.com/docs/campaign-classic/using/configuring-campaign-classic/schema-reference/elements-attributes/attribute.html#content-model){target="_blank"}. Här är några av de vanligaste attributen: **@advanced**, **@dataPolicy**, **@default**, **@desc**, **@enum**, **@expr**, **@label**, **@length**, **16}@name**, **@notNull**, **@required**, **@ref**, **@xml**, **@type**.
 
-Mer information om respektive attribut finns i attributbeskrivningen i [Campaign Classic v7 - dokumentation](https://experienceleague.adobe.com/docs/campaign-classic/using/configuring-campaign-classic/schema-reference/elements-attributes/schema-introduction.html#configuring-campaign-classic){target="_blank"}.
+Mer information om de olika attributen finns i attributbeskrivningen i [Campaign Classic v7-dokumentationen](https://experienceleague.adobe.com/docs/campaign-classic/using/configuring-campaign-classic/schema-reference/elements-attributes/schema-introduction.html#configuring-campaign-classic){target="_blank"}.
 
 ### Exempel {#examples}
 
@@ -216,7 +216,7 @@ Exempel på hur du använder ett gemensamt attribut som mall för ett fält som 
 <attribute name="mobile" label="Mobile" template="nms:common:phone" required="true" />
 ```
 
-Exempel på ett beräknat fält som är dolt med **@advanced** attribute:
+Exempel på ett beräknat fält som är dolt med attributet **@advanced**:
 
 ```
 <attribute name="domain" label="Email domain" desc="Domain of recipient email address" expr="GetEmailDomain([@email])" advanced="true" />
@@ -238,7 +238,7 @@ Exempel på ett XML-fält som också lagras i ett SQL-fält och som har ett **@d
 
 Länkar är några av de sista elementen i huvudelementet i schemat. De definierar hur alla olika scheman i din instans relaterar till varandra.
 
-Länkarna deklareras i schemat som innehåller **sekundärnyckel** för den tabell som den är länkad till.
+Länkarna deklareras i schemat som innehåller **sekundärnyckeln** för den tabell som den är länkad till.
 
 Det finns tre typer av kardinalitet: 1-1, 1-N och N-N. Det är typen 1-N som används som standard.
 
@@ -286,4 +286,4 @@ Mer information om detta finns i [det här avsnittet](update-database-structure.
 
 >[!NOTE]
 >
->Om ändringarna inte påverkar databasstrukturen behöver du bara generera om scheman. Det gör du genom att markera de scheman som ska uppdateras, högerklicka och välja **[!UICONTROL Actions > Regenerate selected schemas...]**.
+>Om ändringarna inte påverkar databasstrukturen behöver du bara generera om scheman. Om du vill göra det markerar du schemat som ska uppdateras, högerklickar och väljer **[!UICONTROL Actions > Regenerate selected schemas...]**.

@@ -6,7 +6,7 @@ feature: Workflows
 exl-id: 41a009f6-d1e9-40c9-8494-3bbb4bd3d134
 source-git-commit: 77ec01aaba1e50676bed57f503a9e4e8bb1fe54c
 workflow-type: tm+mt
-source-wordcount: '343'
+source-wordcount: '344'
 ht-degree: 2%
 
 ---
@@ -17,20 +17,20 @@ ht-degree: 2%
 
 I det här exemplet vill vi skicka en varning till en operator som ska innehålla namnet på profiler som öppnade ett nyhetsbrev men som inte klickade på länken som det innehåller.
 
-Profilernas för- och efternamnsfält är länkade till **[!UICONTROL Recipients]** målgruppsdimension, **[!UICONTROL Alert]** aktiviteten är länkad till **[!UICONTROL Operator]** målgruppsdimension. Därför finns det inget tillgängligt fält mellan de två måldimensionerna för att utföra en avstämning och hämta för- och efternamnsfälten, och visa dem i aviseringsaktiviteten.
+Profilernas för- och efternamnsfält är länkade till måldimensionen **[!UICONTROL Recipients]**, medan aktiviteten **[!UICONTROL Alert]** är länkad till måldimensionen **[!UICONTROL Operator]**. Därför finns det inget tillgängligt fält mellan de två måldimensionerna för att utföra en avstämning och hämta för- och efternamnsfälten, och visa dem i aviseringsaktiviteten.
 
 Processen är att skapa ett arbetsflöde enligt nedan:
 
-1. Använd en **[!UICONTROL Query]** till måldata.
-1. Lägg till en **[!UICONTROL JavaScript code]** till arbetsflödet för att spara ifyllningen från frågan till instansvariabeln.
-1. Använd en **[!UICONTROL Test]** aktivitet för att kontrollera antalet populationer.
-1. Använd en **[!UICONTROL Alert]** aktivitet som skickar en varning till en operator, beroende på vilken **[!UICONTROL Test]** aktivitetsresultat.
+1. Använd en **[!UICONTROL Query]**-aktivitet för måldata.
+1. Lägg till en **[!UICONTROL JavaScript code]**-aktivitet i arbetsflödet för att spara ifyllningen från frågan till instansvariabeln.
+1. Använd en **[!UICONTROL Test]**-aktivitet för att kontrollera antalet populationer.
+1. Använd en **[!UICONTROL Alert]**-aktivitet för att skicka en avisering till en operator, beroende på aktivitetsresultatet för **[!UICONTROL Test]**.
 
 ![](assets/uc_operator_1.png)
 
 ## Spara populationen i instansvariabeln {#saving-the-population-to-the-instance-variable}
 
-Lägg till koden nedan i **[!UICONTROL JavaScript code]** aktivitet.
+Lägg till koden nedan i aktiviteten **[!UICONTROL JavaScript code]**.
 
 ```
 var query = xtk.queryDef.create(  
@@ -46,28 +46,28 @@ var query = xtk.queryDef.create(
 
 Kontrollera att JavaScript-koden motsvarar arbetsflödesinformationen:
 
-* The **[!UICONTROL queryDef schema]** -taggen ska motsvara namnet på måldimensionen som används i frågeaktiviteten.
-* The **[!UICONTROL node expr]** -taggen ska motsvara namnet på de fält som du vill hämta.
+* Taggen **[!UICONTROL queryDef schema]** ska motsvara namnet på måldimensionen som används i frågeaktiviteten.
+* Taggen **[!UICONTROL node expr]** ska motsvara namnet på de fält som du vill hämta.
 
 ![](assets/uc_operator_3.png)
 
 Följ stegen nedan för att hämta informationen:
 
-1. Högerklicka på den utgående övergången från **[!UICONTROL Query]** aktivitet, välj **[!UICONTROL Display the target]**.
+1. Högerklicka på den utgående övergången från aktiviteten **[!UICONTROL Query]** och välj sedan **[!UICONTROL Display the target]**.
 
    ![](assets/uc_operator_4.png)
 
-1. Högerklicka på listan och välj **[!UICONTROL Configure list]**.
+1. Högerklicka på listan och välj sedan **[!UICONTROL Configure list]**.
 
    ![](assets/uc_operator_5.png)
 
-1. Frågemålets dimension och fältnamn visas i listan.
+1. Frågemålets dimension- och fältnamn visas i listan.
 
    ![](assets/uc_operator_6.png)
 
 ## Testning av populationsantal {#testing-the-population-count}
 
-Lägg till koden nedan i **[!UICONTROL Test]** aktivitet för att kontrollera om målpopulationen innehåller minst en profil.
+Lägg till koden nedan i aktiviteten **[!UICONTROL Test]** för att kontrollera om målpopulationen innehåller minst en profil.
 
 ```
 var.recCount>0
@@ -75,11 +75,11 @@ var.recCount>0
 
 ![](assets/uc_operator_7.png)
 
-## Konfigurera aviseringen {#setting-up-the-alert}
+## Ställa in aviseringen {#setting-up-the-alert}
 
-Nu när populationen har lagts till i instansvariabeln med de önskade fälten kan du lägga till dessa uppgifter i **[!UICONTROL Alert]** aktivitet.
+Nu när populationen har lagts till i instansvariabeln med de önskade fälten kan du lägga till informationen i aktiviteten **[!UICONTROL Alert]**.
 
-Om du vill göra det lägger du till **[!UICONTROL Source]** tabba koden nedan:
+Om du vill göra det lägger du till koden nedan på fliken **[!UICONTROL Source]**:
 
 ```
 <ul>
@@ -94,7 +94,7 @@ for each (var item in items){
 
 >[!NOTE]
 >
->The **[!UICONTROL <%= item.target.recipient.@fieldName %>]** kan du lägga till ett av fälten som har sparats i instansvariabeln via **[!UICONTROL JavaScript code]** aktivitet.\
->Du kan lägga till så många fält som du vill, så länge de har infogats i JavaScript-koden.
+>Med kommandot **[!UICONTROL <%= item.target.recipient.@fieldName %>]** kan du lägga till ett av fälten som har sparats i instansvariabeln via aktiviteten **[!UICONTROL JavaScript code]**.\
+>Du kan lägga till så många fält som du vill så länge de har infogats i JavaScript-koden.
 
 ![](assets/uc_operator_8.png)

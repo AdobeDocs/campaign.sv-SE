@@ -21,7 +21,7 @@ Arbetsflödescykeln består av tre huvudsteg.
 
   Detta är den inledande designfasen: När ett nytt arbetsflöde skapas är dess status&quot;Redigeras&quot;. Arbetsflödet hanteras ännu inte av servern och kan ändras utan risk.
 
-* **Startat**
+* **Startades**
 
   När den inledande designfasen är klar kan arbetsflödet startas. I den här fasen hanteras instansen av servern och de enskilda åtgärderna körs. Arbetsflödet kan fortfarande ändras med vissa försiktighetsåtgärder.
 
@@ -29,14 +29,14 @@ Arbetsflödescykeln består av tre huvudsteg.
 
   Ett arbetsflöde är&quot;Slutfört&quot; när det inte längre finns några pågående uppgifter eller när en operator uttryckligen har stoppat instansen.
 
-Till exempel **Starta** och **Leverans** aktiviteter anges medan **Godkännande** aktivitetsfel i arbetsflödet nedan.
+Aktiviteterna **Start** och **Delivery** beskrivs exempelvis medan aktiviteten **Approval** blinkar i arbetsflödet nedan.
 
 ![](assets/new-workflow-6.png)
 
 Detta innebär att de två första aktiviteterna har slutförts och att godkännande pågår, dvs. det har skapats men ännu inte slutförts.
 
-Tecknen **574 -OK** visas ovanför övergången efter **Leverans** aktiviteten innebär att leveransförberedelsen har 574 mottagare som mål och att åtgärden har slutförts utan fel. Den här informationen, som läggs till i övergångarna när de körs, beräknas av aktiviteterna som bearbetar data.
+Tecknen **574 -OK** som visas ovanför övergången efter aktiviteten **Leverans** innebär att leveransförberedelsen har 574 mottagare som mål och att åtgärden har slutförts. Den här informationen, som läggs till i övergångarna när de körs, beräknas av aktiviteterna som bearbetar data.
 
-Arbetsflödet startas och väntar på en operator som tillhör gruppen som anges i **Godkännande** att fatta ett beslut. Operatorer som tillhör gruppen och som har en e-postadress eller ett mobilnummer meddelas.
+Arbetsflödet har startats och väntar på att en operator som tillhör gruppen som anges i aktiviteten **Approval** ska fatta ett beslut. Operatorer som tillhör gruppen och som har en e-postadress eller ett mobilnummer meddelas.
 
 Mer information om hur du övervakar arbetsflöden finns i [det här avsnittet](monitor-workflow-execution.md).

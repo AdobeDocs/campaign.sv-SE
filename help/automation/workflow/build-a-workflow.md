@@ -18,15 +18,15 @@ ht-degree: 0%
 
 Arbetsflödets arbetsflöde beror på typen av arbetsflöden. Du kan:
 
-* Skapa [Målarbetsflöden](#targeting-workflows) från **[!UICONTROL Profiles and Targets]** > **[!UICONTROL Jobs]** > **[!UICONTROL Targeting workflows]** Utforskarens nod eller **[!UICONTROL Profiles and Targets]** hemsidans flik via **[!UICONTROL Targeting workflows]** underflik.
+* Skapa [målarbetsflöden](#targeting-workflows) från noden **[!UICONTROL Profiles and Targets]** > **[!UICONTROL Jobs]** > **[!UICONTROL Targeting workflows]** i Utforskaren eller från fliken **[!UICONTROL Profiles and Targets]** på startsidan via underfliken **[!UICONTROL Targeting workflows]**.
 
   ![](assets/create-targeting-wf.png)
 
-* Skapa [Kampanjarbetsflöden](#campaign-workflows) från **[!UICONTROL Targeting and workflows]** flik i en kampanj
+* Skapa [kampanjarbetsflöden](#campaign-workflows) från fliken **[!UICONTROL Targeting and workflows]** i en kampanj
 
-* Skapa [Tekniska arbetsflöden](#technical-workflows) från **[!UICONTROL Administration]** > **[!UICONTROL Production]** > **[!UICONTROL Technical workflows]** Utforskarens nod. Det bästa sättet är att skapa en specifik arbetsflödesmapp för att spara dina tekniska arbetsflöden.
+* Skapa [tekniska arbetsflöden](#technical-workflows) från noden **[!UICONTROL Administration]** > **[!UICONTROL Production]** > **[!UICONTROL Technical workflows]** i Utforskaren. Det bästa sättet är att skapa en specifik arbetsflödesmapp för att spara dina tekniska arbetsflöden.
 
-Klicka på **[!UICONTROL New]** ovanför listan med arbetsflöden.
+Klicka på knappen **[!UICONTROL New]** ovanför listan med arbetsflöden.
 
 ![](assets/create_a_wf_icon.png)
 
@@ -44,20 +44,20 @@ Du måste nu definiera de olika aktiviteterna och länka samman dem i diagrammet
 
 Aktiviteter grupperas efter kategori på palettens olika flikar. Tillgängliga flikar och aktiviteter kan variera beroende på arbetsflödestyp (teknik, målgruppsanpassning eller kampanjarbetsflöde).
 
-* Den första fliken innehåller målgrupps- och datahanteringsaktiviteter. Dessa aktiviteter beskrivs närmare i [Verksamheter som riktar sig till](targeting-activities.md).
-* På den andra fliken finns schemaläggningsaktiviteter, som huvudsakligen används för att samordna andra aktiviteter. Dessa aktiviteter beskrivs närmare i [Flödeskontroll](flow-control-activities.md).
-* Den tredje fliken innehåller verktyg och åtgärder som kan användas i arbetsflödet. Dessa aktiviteter beskrivs närmare i [Verksamheter](action-activities.md).
-* Den fjärde fliken innehåller aktiviteter som är beroende av en viss händelse, till exempel att ett e-postmeddelande tas emot eller att en fil tas emot på en server. Dessa aktiviteter beskrivs närmare i [Evenemangsaktiviteter](event-activities.md).
+* Den första fliken innehåller målgrupps- och datahanteringsaktiviteter. Dessa aktiviteter beskrivs i [Målaktiviteter](targeting-activities.md).
+* På den andra fliken finns schemaläggningsaktiviteter, som huvudsakligen används för att samordna andra aktiviteter. De här aktiviteterna beskrivs i [Flödeskontrollaktiviteter](flow-control-activities.md).
+* Den tredje fliken innehåller verktyg och åtgärder som kan användas i arbetsflödet. De här aktiviteterna beskrivs i [Åtgärdsaktiviteter](action-activities.md).
+* Den fjärde fliken innehåller aktiviteter som är beroende av en viss händelse, till exempel att ett e-postmeddelande tas emot eller att en fil tas emot på en server. De här aktiviteterna beskrivs i [Händelseaktiviteter](event-activities.md).
 
 Skapa diagrammet
 
 1. Lägg till en aktivitet genom att markera den på paletten och flytta den till diagrammet med dra-och-släpp-funktionen.
 
-   Lägg till en **Starta** aktivitet och sedan en **Leverans** aktivitet i diagrammet.
+   Lägg till en **Start**-aktivitet och sedan en **Delivery**-aktivitet i diagrammet.
 
    ![](assets/new-workflow-3.png)
 
-1. Länka samman aktiviteterna genom att dra i **Starta** aktivitetsövergång och släppa den på **Leverans** aktivitet.
+1. Länka samman aktiviteterna genom att dra aktivitetsövergången **Start** och släppa den på aktiviteten **Leverans**.
 
    ![](assets/new-workflow-4.png)
 
@@ -69,11 +69,11 @@ Skapa diagrammet
 
 >[!CAUTION]
 >
->Du kan kopiera och klistra in aktiviteter i samma arbetsflöde. Vi rekommenderar dock inte att du kopierar inklistringsaktiviteter i olika arbetsflöden. Vissa inställningar som är kopplade till aktiviteter som Leveranser och Schemaläggare kan leda till konflikter och fel när målarbetsflödet körs. I stället rekommenderar vi att du  **Duplicera** arbetsflöden. Mer information finns i [Duplicera arbetsflöden](#duplicate-workflows).
+>Du kan kopiera och klistra in aktiviteter i samma arbetsflöde. Vi rekommenderar dock inte att du kopierar inklistringsaktiviteter i olika arbetsflöden. Vissa inställningar som är kopplade till aktiviteter som Leveranser och Schemaläggare kan leda till konflikter och fel när målarbetsflödet körs. Vi rekommenderar i stället att du **duplicerar** arbetsflöden. Mer information finns i [Duplicera arbetsflöden](#duplicate-workflows).
 
 Du kan ändra visning och layout för diagrammet med följande element:
 
-* **Använda verktygsfältet**
+* **Använd verktygsfältet**
 
   Verktygsfältet för diagramredigering ger dig tillgång till arbetsflödets layout- och körningsfunktioner.
 
@@ -90,9 +90,9 @@ Du kan ändra visning och layout för diagrammet med följande element:
 
 * **Objektjustering**
 
-  Om du vill justera ikoner markerar du dem och klickar på **[!UICONTROL Align vertically]** eller **[!UICONTROL Align horizontally]** -ikon.
+  Om du vill justera ikoner markerar du dem och klickar på ikonen **[!UICONTROL Align vertically]** eller **[!UICONTROL Align horizontally]** .
 
-  Använd **CTRL** för att markera flera utspridda aktiviteter eller för att avmarkera en eller flera aktiviteter. Klicka på diagrambakgrunden för att avmarkera allt.
+  Använd nyckeln **CTRL** för att markera flera spridda aktiviteter eller för att avmarkera en eller flera aktiviteter. Klicka på diagrambakgrunden för att avmarkera allt.
 
 * **Bildhantering**
 
@@ -106,7 +106,7 @@ Dubbelklicka på en aktivitet för att konfigurera den eller högerklicka och v�
 >
 >Kampanjarbetsflödesaktiviteter beskrivs i [det här avsnittet](activities.md).
 
-Den första fliken innehåller den grundläggande konfigurationen. The **[!UICONTROL Advanced]** -fliken innehåller ytterligare parametrar, som används särskilt för att definiera beteenden när ett fel påträffas, ange körningstiden för en aktivitet och för att ange ett initieringsskript.
+Den första fliken innehåller den grundläggande konfigurationen. Fliken **[!UICONTROL Advanced]** innehåller ytterligare parametrar, som används särskilt för att definiera beteenden när ett fel påträffas, ange körningstid för en aktivitet och för att ange ett initieringsskript.
 
 Om du vill få en bättre förståelse för aktiviteterna och för att arbetsflödet ska bli mer lättläst kan du skriva kommentarer i aktiviteterna.
 
@@ -123,7 +123,7 @@ Arbetsflödesmallar innehåller den övergripande konfigurationen av egenskaper 
 
 Du kan skapa nya arbetsflödesmallar som baseras på befintliga mallar eller ändra ett arbetsflöde direkt till en mall.
 
-Arbetsflödesmallar lagras i **[!UICONTROL Resources > Templates > Workflow templates]** Utforskarens nod.
+Arbetsflödesmallar lagras i noden **[!UICONTROL Resources > Templates > Workflow templates]** i Utforskaren.
 
 Förutom de vanliga arbetsflödesegenskaperna kan du med mallegenskaperna ange körningsfilen för arbetsflöden som skapas baserat på den här mallen.
 
@@ -136,10 +136,10 @@ Du kan duplicera olika typer av arbetsflöden. När du har duplicerat arbetsflö
 Adobe rekommenderar att du duplicerar ett arbetsflöde i stället för att utföra en kopiera/klistra in av aktiviteter. När en aktivitet kopieras behålls alla dess inställningar. För kanalaktiviteter kopieras även det leveransobjekt som är kopplat till aktiviteten, vilket kan leda till större problem.
 
 1. Högerklicka på ett arbetsflöde.
-1. Klicka **Duplicera**.
+1. Klicka på **Duplicera**.
 
    ![](assets/duplicate-workflows.png)
 
 1. Ändra arbetsflödesetiketten i arbetsflödesfönstret.
-1. Klicka **Spara**.
+1. Klicka på **Spara**.
 

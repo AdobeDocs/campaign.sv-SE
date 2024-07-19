@@ -6,16 +6,16 @@ role: User
 feature: Workflows, Privacy
 source-git-commit: 567c2e84433caab708ddb9026dda6f9cb717d032
 workflow-type: tm+mt
-source-wordcount: '107'
-ht-degree: 10%
+source-wordcount: '104'
+ht-degree: 2%
 
 ---
 
 
-# Sekretessdataskyddsförordningen{#general-data-protection-regulation-gdpr}
+# Skyddsförordningen för personuppgifter{#general-data-protection-regulation-gdpr}
 
 
-Arbetsflödena nedan installeras tillsammans med **Skyddsförordningen för personuppgifter** som standard. Mer information om modulen finns i [artikel](https://helpx.adobe.com/se/campaign/kb/acc-privacy.html).
+Arbetsflödena som beskrivs nedan installeras som standard med modulen **Sekretessdataskydd** . Mer information om den här modulen finns i [artikeln](https://helpx.adobe.com/se/campaign/kb/acc-privacy.html).
 
 <table> 
  <tbody> 
@@ -27,7 +27,7 @@ Arbetsflödena nedan installeras tillsammans med **Skyddsförordningen för pers
   <tr> 
    <td> <span class="uicontrol">Samla in sekretessförfrågningar</span> <br /> </td> 
    <td> <span class="uicontrol">collectPrivacyRequests</span> <br /> </td> 
-   <td> Det här arbetsflödet genererar mottagarens data som lagras i Adobe Campaign och gör dem tillgängliga för hämtning på skärmen för sekretesspolicy.<br /> </td> 
+   <td> Det här arbetsflödet genererar mottagarens data som lagras i Adobe Campaign och gör dem tillgängliga för hämtning på sekretesförfrågningens skärm.<br /> </td> 
   </tr> 
   <tr> 
    <td> <span class="uicontrol">Ta bort data för sekretessförfrågningar</span> <br /> </td> 

@@ -3,7 +3,8 @@ product: campaign
 title: Granskningskedja
 description: Lär dig övervaka instansen med granskningsspår för Campaign
 feature: Audit Trail, Monitoring, Workflows
-source-git-commit: bb74393f0b24fa5b9781eee15c4527daba527192
+exl-id: 6a937575-42d4-4dc5-8168-43c25bb2cde6
+source-git-commit: b4b361a4aabd1b33554166c2638989b99a02baec
 workflow-type: tm+mt
 source-wordcount: '612'
 ht-degree: 2%
@@ -12,7 +13,7 @@ ht-degree: 2%
 
 # Granskningskedja{#audit-trail}
 
-The **[!UICONTROL Audit trail]** i Adobe Campaign finns detaljinformation om alla ändringar som gjorts på viktiga enheter i instansen, vanligtvis sådana som avsevärt påverkar en mjuk funktion i instansen. Den fungerar som en realtidslogg och innehåller en detaljerad lista över åtgärder och händelser allt eftersom de inträffar.
+Funktionen **[!UICONTROL Audit trail]** i Adobe Campaign ger en detaljerad redovisning av alla ändringar som gjorts på viktiga entiteter i instansen, vanligtvis sådana som påverkar en mjuk funktion i instansen avsevärt. Den fungerar som en realtidslogg och innehåller en detaljerad lista över åtgärder och händelser allt eftersom de inträffar.
 
 >[!NOTE]
 >
@@ -21,11 +22,11 @@ The **[!UICONTROL Audit trail]** i Adobe Campaign finns detaljinformation om all
 
 +++ Läs mer om tillgängliga enheter för granskningsspår
 
-* **Schema - granskningsspår**: låter dig utforska de ändringar du gjort i dina scheman samt identifiera vem som gjort ändringarna och när de gjordes.
+* **Schemagranskningsspår**: Du kan utforska de ändringar som gjorts i dina scheman samt identifiera vem som gjort ändringarna och när de gjordes.
 
-  Mer information om scheman finns i [page](../dev/schemas.md).
+  Mer information om scheman finns på [sidan](../dev/schemas.md).
 
-* **Granskningsspår för arbetsflöde** spårar alla åtgärder som rör dina arbetsflöden, inklusive:
+* **Arbetsflödets granskningsspår** spårar alla åtgärder som är relaterade till dina arbetsflöden, inklusive:
 
    * Starta
    * Pausa
@@ -36,37 +37,37 @@ The **[!UICONTROL Audit trail]** i Adobe Campaign finns detaljinformation om all
    * Aktivering som är lika med åtgärden Kör väntande uppgifter nu
    * Ovillkorligt stopp
 
-  Mer information om arbetsflöden finns i [page](../../automation/workflow/about-workflows.md).
+  Mer information om arbetsflöden finns på [sidan](../../automation/workflow/about-workflows.md).
 
-  Mer information om hur du övervakar arbetsflöden finns i [dedikerad sektion](../../automation/workflow/monitor-workflow-execution.md).
+  Mer information om hur du övervakar arbetsflöden finns i det [dedikerade avsnittet](../../automation/workflow/monitor-workflow-execution.md).
 
-* **Alternativ granskningsspår** gör att du kan kontrollera aktiviteter och de senaste ändringarna som du har gjort.
+* Med **Alternativ granskningsspår** kan du kontrollera aktiviteter och senaste ändringar som du har gjort i alternativen.
 
-  Mer information om alternativen finns i [page](https://experienceleague.adobe.com/en/docs/campaign-classic/using/installing-campaign-classic/appendices/configuring-campaign-options).
+  Mer information om alternativ finns på [sidan](https://experienceleague.adobe.com/en/docs/campaign-classic/using/installing-campaign-classic/appendices/configuring-campaign-options).
 
-* **Granskningsspår för leverans** gör att du kan kontrollera aktiviteter och senaste ändringar som gjorts i leveranserna.
+* **Leveransverifieringskedja** gör att du kan kontrollera aktiviteter och senaste ändringar som du har gjort i leveranserna.
 
-  Mer information om leveranser finns i [page](../start/create-message.md).
+  Mer information om leveranser finns på [sidan](../start/create-message.md).
 
-* **Externt konto** gör det möjligt att kontrollera ändringar som gjorts i externa konton, som används av tekniska processer som tekniska arbetsflöden eller kampanjarbetsflöden.
+* Med **externt konto** kan du kontrollera ändringar som gjorts i externa konton, som används av tekniska processer som tekniska arbetsflöden eller kampanjarbetsflöden.
 
-  Mer information om externt konto finns i [page](../config/external-accounts.md).
+  Mer information om externt konto finns på [sidan](../config/external-accounts.md).
 
-* **Leveransmappning** Med kan du övervaka aktiviteter och nyligen gjorda ändringar i leveransmappningar.
+* Med **Leveransmappning** kan du övervaka aktiviteter och nyligen gjorda ändringar i dina leveransmappningar.
 
-  Mer information om leveransmappning finns i [page](../audiences/target-mappings.md).
+  Mer information om leveransmappning finns på [sidan](../audiences/target-mappings.md).
 
-* **Webbprogram** Med kan du kontrollera ändringar som gjorts i webbformulär i Campaign V8 som används för att skapa sidor med indata- och urvalsfält, och som kan innehålla data från databasen.
+* Med **Webbprogram** kan du kontrollera ändringar som gjorts i webbformulär i Campaign V8 som används för att skapa sidor med indata- och urvalsfält, och som kan innehålla data från databasen.
 
-  Mer information om webbprogram finns i [page](../dev/webapps.md).
+  Mer information om webbprogram finns på [sidan](../dev/webapps.md).
 
-* **Erbjudande** gör att du kan kontrollera aktiviteter och senaste ändringar som gjorts i dina erbjudanden.
+* Med **Erbjudandet** kan du kontrollera aktiviteter och senaste ändringar av dina erbjudanden.
 
-  Mer information finns i [page](../interaction/interaction.md).
+  Mer information om erbjudandet finns på [sidan](../interaction/interaction.md).
 
-* **Operator** gör att du kan övervaka aktiviteter och nyligen gjorda ändringar av dina operatorer.
+* Med **Operator** kan du övervaka aktiviteter och nyligen gjorda ändringar i operatorerna.
 
-  Mer information om operatorer finns i [page](../interaction/interaction-operators.md).
+  Mer information om operatorer finns på [sidan](../interaction/interaction-operators.md).
 
 +++
 
@@ -74,29 +75,29 @@ The **[!UICONTROL Audit trail]** i Adobe Campaign finns detaljinformation om all
 
 Så här kommer du åt instansens **[!UICONTROL Audit trail]**:
 
-1. Öppna **[!UICONTROL Explorer]** -menyn för instansen.
+1. Gå till **[!UICONTROL Explorer]**-menyn för din instans.
 
-1. Under **[!UICONTROL Administration]** meny, välja **[!UICONTROL Audit]** sedan **[!UICONTROL Audit Trail]**.
+1. Välj **[!UICONTROL Audit]** och sedan **[!UICONTROL Audit Trail]** på menyn **[!UICONTROL Administration]**.
 
    ![](assets/audit-trail-1.png)
 
-1. The **[!UICONTROL Audit trail]** öppnas med listan över dina enheter. Adobe Campaign granskar åtgärderna för att skapa, redigera och ta bort för olika enheter.
+1. Fönstret **[!UICONTROL Audit trail]** öppnas med listan över dina enheter. Adobe Campaign granskar åtgärderna för att skapa, redigera och ta bort för olika enheter.
 
    Välj en av enheterna om du vill veta mer om de senaste ändringarna.
 
-1. The **[!UICONTROL Audit entity]** I fönstret finns mer detaljerad information om den valda enheten, till exempel:
+1. Fönstret **[!UICONTROL Audit entity]** ger dig mer detaljerad information om den valda entiteten, till exempel:
 
    * **[!UICONTROL Type]**: Arbetsflöde, alternativ, leveranser eller scheman.
-   * **[!UICONTROL Entity]**: Internt namn på dina aktiviteter.
-   * **[!UICONTROL Modified by]**: Användarnamn för den sista personen som senast ändrade den här entiteten.
+   * **[!UICONTROL Entity]**: Inbyggt namn på dina aktiviteter.
+   * **[!UICONTROL Modified by]**: Användarnamn för den senaste personen som ändrade entiteten.
    * **[!UICONTROL Action]**: Senaste åtgärden som utfördes på den här entiteten, antingen Skapad, Ändrad eller Borttagen.
-   * **[!UICONTROL Modification date]**: Datum för den senaste åtgärden som utfördes på den här entiteten.
+   * **[!UICONTROL Modification date]**: Datum för den senaste åtgärden som utfördes på entiteten.
 
    ![](assets/audit-trail-2.png)
 
 >[!NOTE]
 >
->Som standard är kvarhållningsperioden 180 dagar för **[!UICONTROL Audit logs]**. Det här värdet kan ändras i distributionsguiden.
+>Som standard är kvarhållningsperioden inställd på 180 dagar för **[!UICONTROL Audit logs]**. Det här värdet kan ändras i distributionsguiden.
 
 ## Aktivera/inaktivera granskningsspår {#enable-disable-audit-trail}
 
@@ -104,9 +105,9 @@ Granskningsspårning kan enkelt aktiveras eller inaktiveras för en viss aktivit
 
 För att göra detta:
 
-1. Öppna **[!UICONTROL Explorer]** -menyn för instansen.
+1. Gå till **[!UICONTROL Explorer]**-menyn för din instans.
 
-1. Under **[!UICONTROL Administration]** meny, välja **[!UICONTROL Platform]** sedan **[!UICONTROL Options]**.
+1. Välj **[!UICONTROL Platform]** och sedan **[!UICONTROL Options]** på menyn **[!UICONTROL Administration]**.
 
 1. Välj något av följande alternativ beroende på vilken enhet du vill aktivera/inaktivera:
 
@@ -119,11 +120,11 @@ För att göra detta:
    * För webbprogram: **[!UICONTROL XtkAudit_WebApp]**
    * Erbjudande: **[!UICONTROL XtkAudit_Offer]**
    * För operator: **[!UICONTROL XtkAudit_Operator]**
-   * För varje enhet: **[!UICONTROL XtkAudit_Enable_All]**
+   * För varje entitet: **[!UICONTROL XtkAudit_Enable_All]**
 
    ![](assets/audit-trail-3.png)
 
-1. Ändra **[!UICONTROL Value]** till 1 om du vill aktivera enheten eller till 0 om du vill inaktivera den.
+1. Ändra **[!UICONTROL Value]** till 1 om du vill aktivera entiteten eller till 0 om du vill inaktivera den.
 
    ![](assets/audit-trail-4.png)
 

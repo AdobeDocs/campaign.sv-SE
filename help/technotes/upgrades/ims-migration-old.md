@@ -13,15 +13,15 @@ ht-degree: 0%
 
 # Migrering av tekniska aktörer från Campaign till Adobe Developer Console {#migrate-tech-users-to-ims}
 
-Från och med Campaign v8.5 förbättras autentiseringsprocessen till Campaign v8. Tekniska operatörer måste använda [Adobe Identity Management System (IMS)](https://helpx.adobe.com/enterprise/using/identity.html){target="_blank"} för att ansluta till Campaign. En teknisk operator är en Campaign-användarprofil som uttryckligen har skapats för API-integrering. I den här artikeln beskrivs stegen som krävs för att migrera en teknisk operatör till ett tekniskt konto på Adobe Developer-konsolen.
+Från och med Campaign v8.5 förbättras autentiseringsprocessen till Campaign v8. Tekniska operatorer måste använda [Adobe Identity Management System (IMS)](https://helpx.adobe.com/enterprise/using/identity.html){target="_blank"} för att ansluta till Campaign. En teknisk operator är en Campaign-användarprofil som uttryckligen har skapats för API-integrering. I den här artikeln beskrivs stegen som krävs för att migrera en teknisk operatör till ett tekniskt konto på Adobe Developer-konsolen.
 
 ## Vad har ändrats?{#ims-changes}
 
 Kampanjens reguljära användare ansluter redan till Adobe Campaign-konsolen via sin Adobe ID via Adobe Identity Management System (IMS). Som en del av arbetet med att förstärka säkerhets- och autentiseringsprocessen anropar nu Adobe Campaign Client-programmet Campaign-API:er direkt med IMS-kontotoken.
 
-Läs mer om autentiseringsprocessen från den nya servern till servern i [Adobe Developer Console-dokumentation](https://developer.adobe.com/developer-console/docs/guides/authentication/ServerToServerAuthentication/){target="_blank"}.
+Läs mer om autentiseringsprocessen från den nya servern till servern i [Adobe Developer Console-dokumentationen](https://developer.adobe.com/developer-console/docs/guides/authentication/ServerToServerAuthentication/){target="_blank"}.
 
-Den här ändringen gäller från och med Campaign v8.5 och kommer att **obligatoriskt** starta Campaign v8.6.
+Den här ändringen gäller från och med Campaign v8.5 och är **obligatorisk** med början av Campaign v8.6.
 
 
 ## Påverkas du?{#ims-impacts}
@@ -36,7 +36,7 @@ Viktiga steg är:
 
 1. Skapa först det tekniska konto som motsvarar den tekniska operatören. Anta t.ex. den nya tekniska redovisningen (TA1) för den tekniska operatören (TO1).
 1. Utför stegen nedan på den tekniska redovisningen TA1
-   [Steg 4](#ims-migration-step-4) är valfritt och endast obligatoriskt om den tekniska operatorn har särskilda mappbehörigheter.
+   [Steg 4](#ims-migration-step-4) är valfritt och krävs bara om den tekniska operatorn har särskilda mappbehörigheter.
 1. Migrera all implementering av Campaign API-integrering till det nya tekniska kontot TA1.
 1. När alla kundcentrerade API:er/integrationslösningar börjar fungera fullt ut på TA1 ersätter du den tekniska operatören TO1 med det tekniska kontot TA1.
 
@@ -46,18 +46,18 @@ Innan du startar migreringsprocessen måste du kontakta din Adobe Transition Man
 
 ### Steg 1 - Skapa/uppdatera ditt Campaign-projekt i Adobe Developer Console{#ims-migration-step-1}
 
-Integrationer skapas som en del av en **Projekt** i Adobe Developer Console. Läs mer om projekt i [Adobe Developer Console-dokumentation](https://developer.adobe.com/developer-console/docs/guides/projects/){target="_blank"}.
+Integrationer skapas som en del av ett **projekt** i Adobe Developer Console. Läs mer om projekt i [Adobe Developer Console-dokumentation](https://developer.adobe.com/developer-console/docs/guides/projects/){target="_blank"}.
 
-Du kan använda vilket projekt som helst som du har skapat tidigare eller skapa ett nytt projekt. Stegen för att skapa ett projekt beskrivs i [Adobe Developer Console-dokumentation](https://developer.adobe.com/developer-console/docs/guides/getting-started/){target="_blank"}.
+Du kan använda vilket projekt som helst som du har skapat tidigare eller skapa ett nytt projekt. Stegen för att skapa ett projekt beskrivs i [Adobe Developer Console-dokumentationen](https://developer.adobe.com/developer-console/docs/guides/getting-started/){target="_blank"}.
 
-För den här migreringen måste du lägga till API:er nedan i ditt projekt: **API för I/O-hantering** och **Adobe Campaign**.
+För den här migreringen måste du lägga till API:er nedan i ditt projekt: **I/O Management API** och **Adobe Campaign**.
 
 ![](assets/do-not-localize/ims-products-and-services.png)
 
 
 ### Steg 2 - Lägg till ett API i ditt projekt med Server to Server-autentisering{#ims-migration-step-2}
 
-När projektet har skapats i Adobe Developer Console lägger du till ett API som använder autentisering från server till server. Lär dig hur du ställer in autentiseringsuppgifter för OAuth Server-till-Server i [Adobe Developer Console-dokumentation](https://developer.adobe.com/developer-console/docs/guides/authentication/ServerToServerAuthentication/implementation/){target="_blank"}.
+När projektet har skapats i Adobe Developer Console lägger du till ett API som använder autentisering från server till server. Lär dig hur du ställer in autentiseringsuppgifter för OAuth Server-till-server i [Adobe Developer Console-dokumentationen](https://developer.adobe.com/developer-console/docs/guides/authentication/ServerToServerAuthentication/implementation/){target="_blank"}.
 
 När API:t har anslutits kan du komma åt de nyligen genererade autentiseringsuppgifterna, inklusive klient-ID och klienthemlighet, samt generera en åtkomsttoken.
 
@@ -66,12 +66,12 @@ När API:t har anslutits kan du komma åt de nyligen genererade autentiseringsup
 Nu kan du lägga till din Campaign-produktprofil i projektet, enligt beskrivningen nedan:
 
 1. Öppna Adobe Campaign API.
-1. Klicka på **Redigera produktprofiler** knapp
+1. Klicka på knappen **Redigera produktprofiler**
 
    ![](assets/do-not-localize/ims-edit-api.png)
 
 1. Tilldela alla relevanta produktprofiler till API:t, till exempel &#39;messagecenter&#39;, och spara ändringarna.
-1. Gå till **Information om autentiseringsuppgifter** -fliken i projektet och kopiera **E-post för tekniskt konto** värde.
+1. Bläddra till fliken **Information om autentiseringsuppgifter** i ditt projekt och kopiera värdet **E-post för tekniskt konto**.
 
 ### Steg 4 - Uppdatera den tekniska operatorn i klientkonsolen {#ims-migration-step-4}
 
@@ -80,10 +80,10 @@ Det här steget är bara obligatoriskt om specifika mappbehörigheter eller namn
 Nu måste du uppdatera den nyskapade tekniska operatorn i Adobe Campaign klientkonsol. Du måste tillämpa den befintliga mappbehörigheten för tekniska operatorer på den nya tekniska operatorn.
 Så här uppdaterar du operatorn:
 
-1. Bläddra från Campaign-klientkonsolens utforskare till **Administration > Åtkomsthantering > Operatorer**.
+1. Gå till **Administration > Åtkomsthantering > Operatorer** i Campaign-klientkonsolens utforskare.
 1. Få åtkomst till den befintliga tekniska operatorn som används för API:er.
 1. Bläddra till mappbehörigheterna och kontrollera rättigheterna.
-1. Använd samma behörigheter för den nyskapade tekniska operatorn. Operatörens e-postadress är **E-post för tekniskt konto** värdet kopierades tidigare.
+1. Använd samma behörigheter för den nyskapade tekniska operatorn. Operatorns e-postadress är det **e-postvärde för tekniskt konto** som kopierades tidigare.
 1. Spara ändringarna.
 
 
@@ -174,14 +174,14 @@ You can also update the technical operator programmatically, using SQL scripts o
 
 ### Steg 5 - Verifiera konfigurationen {#ims-migration-step-5}
 
-Följ de steg som beskrivs i [Autentiseringsguide för Adobe Developer Console](https://developer.adobe.com/developer-console/docs/guides/authentication/ServerToServerAuthentication/implementation/#generate-access-tokens){target="_blank"} för att generera en åtkomsttoken och kopiera exempelkommandot cURL.
+Om du vill testa anslutningen följer du de steg som beskrivs i [Adobe Developer Console-referenshandboken](https://developer.adobe.com/developer-console/docs/guides/authentication/ServerToServerAuthentication/implementation/#generate-access-tokens){target="_blank"} för att generera en åtkomsttoken och kopierar det exempelkommando för cURL som anges.
 
 
 ### Steg 6 - Uppdatera API-integreringar från tredje part {#ims-migration-step-6}
 
 Du måste uppdatera API-integreringarna med dina tredjepartssystem.
 
-Mer information om API-integreringssteg, inklusive en exempelkod för smidig integrering, finns i [Autentiseringsdokumentation för Adobe Developer Console](https://developer.adobe.com/developer-console/docs/guides/authentication/ServerToServerAuthentication/){target="_blank"}.
+Mer information om API-integreringssteg, inklusive en exempelkod för smidig integrering, finns i [Adobe Developer Console autentiseringsdokumentation](https://developer.adobe.com/developer-console/docs/guides/authentication/ServerToServerAuthentication/){target="_blank"}.
 
 
 ### Steg 7 - Ta bort den gamla tekniska operatorn {#ims-migration-step-7}
@@ -216,7 +216,7 @@ När migreringsprocessen har uppnåtts och validerats uppdateras Soap-anropen en
   </soapenv:Envelope>
   ```
 
-* Efter migreringen: det finns stöd för token för åtkomst till tekniska konton. Åtkomsttoken förväntas anges i `Authorization` sidhuvud som Bearer-token. Användning av sessionstoken bör ignoreras här, vilket visas i exemplet nedan för SOAP-anrop.
+* Efter migreringen: det finns stöd för token för åtkomst till tekniska konton. Åtkomsttoken förväntas anges i `Authorization`-huvudet som Bearer-token. Användning av sessionstoken bör ignoreras här, vilket visas i exemplet nedan för SOAP-anrop.
 
   ```sql
   POST /nl/jsp/soaprouter.jsp HTTP/1.1

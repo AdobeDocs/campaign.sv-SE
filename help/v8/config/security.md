@@ -23,7 +23,7 @@ Dessutom hjälper vårt samarbete med partners, ledande forskare, säkerhetsfors
 Konfiguration och skärpning av sekretess är en viktig del av säkerhetsoptimeringen. Här följer några tips om sekretess:
 
 * Protect din kundinformation med HTTPS istället för HTTP
-* Använd [Begränsning av PI-vy](../dev/restrict-pi-view.md) skydda integriteten och förhindra att data används på fel sätt
+* Använd [PI-visningsbegränsning](../dev/restrict-pi-view.md) för att skydda sekretessen och förhindra att data används på fel sätt
 * Kontrollera att krypterade lösenord är begränsade
 * Protect de sidor som kan innehålla personlig information, t.ex. spegelsidor, webbtillämpningar osv.
 
@@ -46,16 +46,16 @@ Läs mer om behörigheter i [det här avsnittet](../start/gs-permissions.md)
 
 När du utvecklar i Adobe Campaign (arbetsflöden, Javascript, JSSP osv.) ska du alltid följa dessa riktlinjer:
 
-* **Skript**: försök att undvika SQL-satser, använd parametriserade funktioner i stället för strängsammanfogning, undvik SQL-injektion genom att lägga till de SQL-funktioner som ska användas i tillåtelselista.
+* **Skript**: Undvik SQL-satser, använd parametriserade funktioner i stället för strängsammanfogning, undvik SQL-injektion genom att lägga till de SQL-funktioner som ska användas i tillåtelselista.
 
-* **Skydda datamodellen**: använd namngivna rättigheter för att begränsa operatoråtgärder, lägga till systemfilter (sysFilter)
+* **Skydda datamodellen**: använd namngivna rättigheter för att begränsa operatoråtgärder, lägg till systemfilter (sysFilter)
 
-* **Lägga till bildtexter i webbprogram**: lägg till bilder på era offentliga landningssidor och prenumerationssidor.
+* **Lägg till bildtexter i webbprogram**: lägg till bildtexter på dina offentliga landningssidor och prenumerationssidor.
 
-Läs mer i [Adobe Campaign Classic v7-dokumentation](https://experienceleague.adobe.com/docs/campaign-classic/using/installing-campaign-classic/security-privacy/scripting-coding-guidelines.html#installing-campaign-classic){target="_blank"}.
+Läs mer i [Adobe Campaign Classic v7-dokumentationen](https://experienceleague.adobe.com/docs/campaign-classic/using/installing-campaign-classic/security-privacy/scripting-coding-guidelines.html#installing-campaign-classic){target="_blank"}.
 
 
-## Personalisering
+## Personalization
 
 När du lägger till anpassade länkar till ditt innehåll bör du alltid undvika att ha en personalisering i värdnamnsdelen av webbadressen för att undvika eventuella säkerhetsbrister. Följande exempel får aldrig användas i alla URL-attribut &lt;`a href="">` eller `<img src="">`:
 
@@ -73,13 +73,13 @@ Med den här begränsningen kan du ta bort lösenordsfält, men låta det extern
 
 1. Gå in **[!UICONTROL Administration]** > **[!UICONTROL Configuration]** > **[!UICONTROL Data schemas]**.
 
-1. Skapa ett nytt **[!UICONTROL Extension of a schema]**.
+1. Skapa en ny **[!UICONTROL Extension of a schema]**.
 
 1. Välj **[!UICONTROL External Account]** (extAccount).
 
 1. På den sista skärmen kan du redigera ditt nya srcSchema för att begränsa åtkomsten till alla lösenordsfält:
 
-   Du kan ersätta huvudelementet (`<element name="extAccount" ... >`) av:
+   Du kan ersätta huvudelementet (`<element name="extAccount" ... >`) med:
 
    ```
    <element name="extAccount">
@@ -125,7 +125,7 @@ Med den här begränsningen kan du ta bort lösenordsfält, men låta det extern
 
    >[!NOTE]
    >
-   >Du kan ersätta `$(loginId) = 0 or $(login) = 'admin'` av `hasNamedRight('admin')` om du vill att alla användare med administratörsbehörighet ska kunna se dessa lösenord.
+   >Du kan ersätta `$(loginId) = 0 or $(login) = 'admin'` med `hasNamedRight('admin')` om du vill att alla användare med administratörsbehörighet ska kunna se de här lösenorden.
 
 
 ## Åtkomsthantering
@@ -141,10 +141,10 @@ Läs mer om behörigheter i [i det här avsnittet](../start/gs-permissions.md).
 
 När du utvecklar i Adobe Campaign (arbetsflöden, Javascript, JSSP osv.) ska du alltid följa dessa riktlinjer:
 
-* **Skript**: försök att undvika SQL-satser, använd parametriserade funktioner i stället för strängsammanfogning, undvik SQL-injektion genom att lägga till de SQL-funktioner som ska användas i tillåtelselista.
+* **Skript**: Undvik SQL-satser, använd parametriserade funktioner i stället för strängsammanfogning, undvik SQL-injektion genom att lägga till de SQL-funktioner som ska användas i tillåtelselista.
 
-* **Skydda datamodellen**: använd namngivna rättigheter för att begränsa operatoråtgärder, lägga till systemfilter (sysFilter)
+* **Skydda datamodellen**: använd namngivna rättigheter för att begränsa operatoråtgärder, lägg till systemfilter (sysFilter)
 
-* **Lägga till bildtexter i webbprogram**: lägg till bilder på era offentliga landningssidor och prenumerationssidor.
+* **Lägg till bildtexter i webbprogram**: lägg till bildtexter på dina offentliga landningssidor och prenumerationssidor.
 
-Läs mer i [Adobe Campaign Classic v7-dokumentation](https://experienceleague.adobe.com/docs/campaign-classic/using/installing-campaign-classic/security-privacy/scripting-coding-guidelines.html#installing-campaign-classic){target="_blank"}.
+Läs mer i [Adobe Campaign Classic v7-dokumentationen](https://experienceleague.adobe.com/docs/campaign-classic/using/installing-campaign-classic/security-privacy/scripting-coding-guidelines.html#installing-campaign-classic){target="_blank"}.

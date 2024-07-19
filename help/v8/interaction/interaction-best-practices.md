@@ -7,7 +7,7 @@ role: User, Admin
 exl-id: 28f3a5bc-67f5-413e-b2ba-35c341f9ec5f
 source-git-commit: 1a0b473b005449be7c846225e75a227f6d877c88
 workflow-type: tm+mt
-source-wordcount: '1160'
+source-wordcount: '1166'
 ht-degree: 0%
 
 ---
@@ -18,16 +18,16 @@ ht-degree: 0%
 
 Hantering av erbjudanden i Adobe Campaign kräver noggrann hantering för att fungera effektivt. För att undvika problem måste du hitta en balans mellan antalet kontakter och antalet erbjudandekategorier och erbjudanden.
 
-I det här avsnittet beskrivs de bästa sätten att hantera **Interaktion** i Adobe Campaign, inklusive regler för behörighet, fördefinierade filter, arbetsflödesaktiviteter och databasalternativ.
+I det här avsnittet beskrivs de bästa sätten att hantera modulen **Interaktion** i Adobe Campaign, inklusive regler för behörighet, fördefinierade filter, arbetsflödesaktiviteter och databasalternativ.
 
-* När **implementera och konfigurera interaktioner** måste du vara medveten om följande rekommendationer:
+* När **implementerar och konfigurerar interaktioner** måste du vara medveten om följande rekommendationer:
 
    * För batchmotor (som vanligtvis används i utgående kommunikation som e-post) är dataflöde huvudproblemet, eftersom flera kontakter kan hanteras samtidigt. Den typiska flaskhalsen är databasprestanda.
    * Den huvudsakliga begränsningen för en enastående motor (används vanligtvis i inkommande kommunikation som en banderoll på en webbplats) är fördröjning, eftersom någon förväntar sig ett svar. Den typiska flaskhalsen är processorprestanda.
    * Katalogdesignen har stor inverkan på Adobe Campaign prestanda.
    * När du arbetar med många erbjudanden är det bäst att dela upp dem i flera olika erbjudandekataloger.
 
-* Nedan visas några metodtips när du arbetar med **regler för behörighet**:
+* Nedan visas några metodtips när du arbetar med **berättiganderegler**:
 
    * Förenkla reglerna. Reglernas komplexitet påverkar prestanda när det utökar sökningen. En komplex regel är en regel som har fler än fem villkor.
    * För att öka prestandan kan reglerna delas upp i distinkta fördefinierade filter som delas över flera erbjudanden.
@@ -39,7 +39,7 @@ I det här avsnittet beskrivs de bästa sätten att hantera **Interaktion** i Ad
    * Vi rekommenderar ett begränsat antal erbjudanden per erbjudandeplats. Detta gör att erbjudandena kan hämtas snabbare på alla typer av platser.
    * Använd index, särskilt för ofta använda uppslagskolumner.
 
-* Nedan visas några metodtips för **förslagstabell**:
+* Nedan visas några metodtips om **förslagstabellen**:
 
    * Använd ett minsta antal regler för att göra bearbetningen så snabb som möjligt.
    * Begränsa antalet poster i förslagstabellen: spara bara de poster som behövs för att spåra dess statusuppdatering och vad som behövs för reglerna och arkivera dem sedan i ett annat system.
@@ -53,15 +53,15 @@ I det här avsnittet finns mer detaljerad information om hur du hanterar erbjuda
 
 ### Flera erbjudanden i ett e-postmeddelande {#multiple-offer-spaces}
 
-När erbjudanden inkluderas i leveranser väljs de vanligtvis upp i kampanjen via ett **Berikning** arbetsflödesaktivitet (eller annan liknande aktivitet).
+När du inkluderar erbjudanden i leveranser väljs erbjudandena i allmänhet uppströms i Campaign-arbetsflödet via en **Enrichment** -arbetsflödesaktivitet (eller en annan liknande aktivitet).
 
-När du väljer erbjudanden i en **Berikning** väljer du vilket utrymme som ska användas. Oberoende av vilket utrymme som har valts beror menyn för leveransanpassning på hur mycket utrymme som finns i leveransformuläret.
+När du väljer erbjudanden i en **anrikningsaktivitet** kan du välja vilket utrymme som ska användas. Oberoende av vilket utrymme som har valts beror menyn för leveransanpassning på hur mycket utrymme som finns i leveransformuläret.
 
-I exemplet nedan är erbjudandeutrymmet som valts i leveransen **[!UICONTROL Email (Environment - Recipient)]**:
+I exemplet nedan är det erbjudandeutrymme som valts i leveransen **[!UICONTROL Email (Environment - Recipient)]**:
 
 ![](assets/Interaction-best-practices-offer-space-selected.png)
 
-Om det lediga utrymme som du har valt i leveransen inte har någon HTML-återgivningsfunktion kommer du inte att se det på leveransmenyn och det kommer inte att gå att välja det. Detta är oberoende av vilket erbjudandeutrymme som valts i **Berikning** aktivitet.
+Om det lediga utrymme som du har valt i leveransen inte har någon HTML-återgivningsfunktion kommer du inte att se det på leveransmenyn och det kommer inte att gå att välja det. Detta är oberoende av vilket erbjudandeutrymme som valts i aktiviteten **Enrichment** .
 
 I exemplet nedan är återgivningsfunktionen HTML tillgänglig i listrutan eftersom det erbjudandeutrymme som valts i leveransen har en återgivningsfunktion:
 
@@ -69,7 +69,7 @@ I exemplet nedan är återgivningsfunktionen HTML tillgänglig i listrutan efter
 
 Den här funktionen infogar kod som: `<%@ include proposition="targetData.proposition" view="rendering/html" %>`.
 
-När du markerar förslaget, är värdet för **[!UICONTROL view]** är följande:
+När du väljer förslaget blir värdet för attributet **[!UICONTROL view]** följande:
 * &quot;rendering/html&quot;: html-rendering. Det använder återgivningsfunktionen HTML.
 * &quot;offer/view/html&quot;: html-innehåll. Återgivningsfunktionen HTML används inte. Det innehåller bara fältet HTML.
 
@@ -89,15 +89,15 @@ Det går också att lagra ytterligare data i förslagstabellen när utgående in
 
 Alla fält i arbetsflödets temporära tabell vars namn matchar ett fältnamn i förslagstabellen kopieras till samma fält i förslagstabellen.
 
-t.ex. när du väljer ett erbjudande manuellt (utan interaktion) i en **Berikning** arbetsflödesaktivitet, standardfälten definieras så här:
+När du till exempel väljer ett erbjudande manuellt (utan interaktion) i en **anrikningsaktivitet** definieras standardfälten enligt följande:
 
 ![](assets/Interaction-best-practices-manual-offer-std-fields.png)
 
-Ytterligare fält kan läggas till, till exempel en `@rank` fält:
+Ytterligare fält kan läggas till, till exempel ett `@rank`-fält:
 
 ![](assets/Interaction-best-practices-manual-offer-add-fields.png)
 
-Eftersom det finns ett fält i förslagstabellen med namnet `@rank`, kopieras värdet i arbetsflödets temporära tabell.
+Eftersom det finns ett fält i förslagstabellen med namnet `@rank` kopieras värdet i arbetsflödets temporära tabell.
 
 Mer information om hur du lagrar ytterligare fält i förslagstabellen finns i [det här avsnittet](interaction-send-offers.md#storing-offer-rankings-and-weights).
 
@@ -105,9 +105,9 @@ För utgående erbjudanden med interaktion är detta användbart när flera erbj
 
 Du kan också lagra ytterligare metadata direkt i förslagstabellen, t.ex. aktuell utgiftsnivå, för att hålla historik över utgifter när erbjudandena genereras.
 
-Vid användning av utgående interaktion `@rank` -fältet kan läggas till, som i exemplet ovan, men dess värde ställs in automatiskt baserat på den ordning som returneras av Interaction. Om du t.ex. använder Interaction för att välja tre erbjudanden `@rank` fältet får värdena 1, 2 och 3.
+När du använder utgående interaktion kan fältet `@rank` läggas till, som i exemplet ovan, men dess värde ställs in automatiskt baserat på den ordning som returneras av Interaction. Om du till exempel använder Interaction för att välja tre erbjudanden returneras värdena 1, 2 och 3 i fältet `@rank`.
 
-När du använder Interaction och väljer erbjudanden manuellt kan användaren kombinera båda metoderna. Användaren kan till exempel ställa in `@rank` ska vara 1 för det manuellt valda erbjudandet och använda ett uttryck som `"1 + @rank"` för erbjudanden som returneras av Interaction. Om Interaction väljer tre erbjudanden rangordnas de som returneras av båda metoderna 1-4:
+När du använder Interaction och väljer erbjudanden manuellt kan användaren kombinera båda metoderna. Användaren kan till exempel manuellt ange att fältet `@rank` ska vara 1 för det manuellt valda erbjudandet och använda ett uttryck som `"1 + @rank"` för erbjudanden som returneras av Interaction. Om Interaction väljer tre erbjudanden rangordnas de som returneras av båda metoderna 1-4:
 
 ![](assets/Interaction-best-practices-manual-offer-combined.png)
 

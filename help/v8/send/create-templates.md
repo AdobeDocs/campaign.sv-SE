@@ -1,15 +1,15 @@
 ---
 product: campaign
 title: Arbeta med leveransmallar
-description: Lär dig hur du skapar och använder leveransmallar i Campaign
+description: Lär dig skapa och använda leveransmallar i Campaign
 feature: Email, Push, SMS, Direct Mail, Cross Channel Orchestration
 role: User
 level: Beginner
 exl-id: 3a4de36e-ba24-49ec-8113-f32f12c8ecdd
 source-git-commit: 34af97ae01f7dba418fd0a8c950fc549dfbbd98b
 workflow-type: tm+mt
-source-wordcount: '698'
-ht-degree: 5%
+source-wordcount: '692'
+ht-degree: 4%
 
 ---
 
@@ -21,8 +21,8 @@ En mall kan innehålla:
 
 * Typologier
 * Avsändare och svarsadresser
-* Grundläggande [personaliseringsblock](../send/personalization-blocks.md)
-* Länkar till [spegelsidor](../send/mirror-page.md) och prenumerationslänkar
+* Grundläggande [anpassningsblock](../send/personalization-blocks.md)
+* Länkar till [spegelsidor](../send/mirror-page.md) och länkar för att avbryta prenumeration
 * Innehåll, företagslogotyp eller signatur
 * Andra leveransegenskaper, som resursgiltighet, återförsöksparametrar eller karantäninställningar.
 
@@ -61,13 +61,13 @@ En leverans kan konverteras till en mall för nya upprepade leveransåtgärder.
 
 Så här konverterar du en leverans till en mall:
 
-1. Välj leverans från leveranslistan som du kommer åt via **[!UICONTROL Campaign management]** nod i Campaign Explorer.
+1. Välj leveransen från leveranslistan, tillgänglig via noden **[!UICONTROL Campaign management]** i Campaign Explorer.
 
 1. Högerklicka och välj **[!UICONTROL Actions > Save as template...]**.
 
    ![](assets/save-as-template.png)
 
-1. Redigera leveransegenskaperna och välj den mapp där den nya mallen ska sparas (i **[!UICONTROL Folder]** fält) och den mapp där leveranser som skapats baserat på den här mallen måste skapas (i **[!UICONTROL Execution folder]** fält).
+1. Redigera leveransegenskaperna och välj den mapp där den nya mallen måste sparas (i fältet **[!UICONTROL Folder]**) och den mapp där leveranser som skapats baserat på den här mallen måste skapas (i fältet **[!UICONTROL Execution folder]**).
 
    ![](assets/template-select-folders.png)
 
@@ -75,20 +75,20 @@ Så här konverterar du en leverans till en mall:
 
 >[!NOTE]
 >
->För att undvika konfigurationsfel rekommenderar Adobe att du [duplicera en inbyggd mall](#copy-an-existing-template) och anpassa egenskaperna i stället för att skapa en ny mall.
+>För att undvika konfigurationsfel rekommenderar Adobe att du [duplicerar en inbyggd mall](#copy-an-existing-template) och anpassar dess egenskaper i stället för att skapa en ny mall.
 
 Så här konfigurerar du en leveransmall från grunden:
 
-1. Bläddra till **Resurser** i Campaign Explorer och välj **Mallar** sedan **Leveransmallar**.
-1. Klicka **Nytt** i verktygsfältet för att skapa en ny leveransmall.
-1. Ange **Etikett** och **Internt namn** i mappen.
+1. Bläddra till mappen **Resources** i Campaign Explorer och välj **Mallar** och sedan **Leveransmallar**.
+1. Klicka på **Nytt** i verktygsfältet för att skapa en ny leveransmall.
+1. Ange mappens **etikett** och **interna namn**.
 1. Spara mallen och öppna den igen.
-1. Från **Egenskaper** anpassar inställningarna.
-1. I **Allmänt** kan du bekräfta eller ändra de platser som du har valt på fliken **Körningsmapp**, **Mapp** och **Routning** nedrullningsbara menyer.
-1. Slutför **E-postparametrar** -kategori med ditt e-postämne och din målgrupp.
-1. Lägg till **HTML content** om du vill anpassa mallen kan du visa en [länk för spegelsida](../send/mirror-page.md) och en länk för att avsluta prenumerationen.
-1. Välj **Förhandsgranska** -fliken. I **Testa personalisering** nedrullningsbar meny, välja **Mottagare** om du vill förhandsgranska mallen som den valda profilen.
-1. Klicka **Spara**. Mallen kan nu användas i en leverans.
+1. Anpassa inställningarna från knappen **Egenskaper** .
+1. På fliken **Allmänt** bekräftar du eller ändrar de platser som har valts i listrutorna **Körningsmapp**, **Mapp** och **Routning**.
+1. Fyll i kategorin **E-postparametrar** med ditt e-postämne och målpopulationen.
+1. Lägg till ditt **HTML-innehåll** om du vill anpassa mallen kan du visa en [länk för spegelsida](../send/mirror-page.md) och en länk för att avbryta prenumerationen.
+1. Välj fliken **Förhandsgranska**. I listrutan **Testa anpassning** väljer du **Mottagare** om du vill förhandsgranska mallen som den valda profilen.
+1. Klicka på **Spara**. Mallen kan nu användas i en leverans.
 
 
 ## Använd mallar{#use-a-delivery-template}
@@ -99,11 +99,11 @@ Om du vill skapa en leverans baserad på en befintlig mall väljer du mallen i l
 
 ![](assets/select-the-new-template.png)
 
-Om du inte ser mallen klickar du på **[!UICONTROL Select link]** till höger om fältet för att bläddra bland Campaign-mappar.
+Om du inte kan se din mall klickar du på mappen **[!UICONTROL Select link]** till höger om fältet för att bläddra bland Campaign-mappar.
 
 ![](assets/browse-templates.png)
 
-Välj önskad katalog i dialogrutan **[!UICONTROL Folder]** eller klicka på **[!UICONTROL Display sub-levels]** om du vill visa innehållet i katalogerna i underträden till den aktuella katalogen.
+Välj önskad katalog i fältet **[!UICONTROL Folder]** eller klicka på ikonen **[!UICONTROL Display sub-levels]** för att visa innehållet i katalogerna i underträden till den aktuella katalogen.
 
 Välj den leveransmall som ska användas och klicka på **[!UICONTROL Ok]**.
 
@@ -136,7 +136,7 @@ I följande video visas hur du ställer in leveransmallsegenskaperna och förkla
 
 >[!VIDEO](https://video.tv.adobe.com/v/338969?quality=12)
 
-### Distribuera en ad hoc-leveransmall
+### Så här distribuerar du en ad hoc-leveransmall
 
 I den här videon förklaras hur du distribuerar en mall för ad hoc-e-postleverans och den förklarar skillnaden mellan en e-postleverans och ett leveransarbetsflöde.
 

@@ -8,7 +8,7 @@ exl-id: bcbf3101-d43c-4ed3-ab02-a9936ec55b71
 source-git-commit: c248dd899ea704e43873652545c6b945c2915b57
 workflow-type: tm+mt
 source-wordcount: '428'
-ht-degree: 10%
+ht-degree: 9%
 
 ---
 
@@ -33,29 +33,29 @@ Om du vill skapa villkorligt innehåll enligt värdet för ett fält gör du så
 
    Anpassningselementen infogas i meddelandetexten. Du måste konfigurera dem nu.
 
-1. Fyll i parametrarna för **if** -uttryck.
+1. Fyll i parametrarna för uttrycket **if**.
 
-   * Markera det första elementet i uttrycket, **`<FIELD>`** och klicka på personaliseringsikonen för att ersätta den med testfältet.
+   * Markera det första elementet i uttrycket, **`<FIELD>`**, och klicka på personaliseringsikonen för att ersätta det med testfältet.
    * Ersätt **`<VALUE>`** med värdet för det fält som villkoret ska uppfyllas för. Värdet måste vara inom citattecken.
    * Ange det innehåll som ska infogas när villkoret är uppfyllt. Det kan vara en text, en bild, ett formulär, en hypertextlänk osv.
 
    ![Villkor i ett e-postmeddelande](assets/condition-in-email.png)
 
-1. Klicka på **[!UICONTROL Preview]** för att visa innehållet i meddelandet enligt leveransmottagaren. Välj en mottagare som villkoret är true för att kontrollera innehållet. Välj sedan en annan mottagare som det är falskt för och försök igen.
+1. Klicka på fliken **[!UICONTROL Preview]** för att visa innehållet i meddelandet enligt leveransmottagaren. Välj en mottagare som villkoret är true för att kontrollera innehållet. Välj sedan en annan mottagare som det är falskt för och försök igen.
 
-Du kan lägga till andra fall och definiera olika innehåll utifrån värdena i ett eller flera fält. Om du vill göra det använder du **[!UICONTROL Conditional content > Else]** och **[!UICONTROL Conditional content > Else if]**. Uttrycken är konfigurerade på samma sätt som **if** -uttryck.
+Du kan lägga till andra fall och definiera olika innehåll utifrån värdena i ett eller flera fält. Använd **[!UICONTROL Conditional content > Else]** och **[!UICONTROL Conditional content > Else if]** om du vill göra det. Uttrycken konfigureras på samma sätt som uttrycket **if**.
 
 >[!CAUTION]
 >
->The **%> &lt;%** tecken måste tas bort efter att de har lagts till **Annars** och **Annars om** villkor.
+>Tecknen **%> &lt;%** måste tas bort efter att villkoren **Annars** och **Annars om** har lagts till.
 
 
 ## Användningsfall: skapa flerspråkig e-post {#creating-multilingual-email}
 
 Läs om hur du skapar flerspråkiga e-postmeddelanden i exemplet nedan. Innehållet visas på det ena språket eller det andra beroende på vilket språk mottagaren föredrar.
 
-1. Skapa ett e-postmeddelande och välj målpopulation. I det här exemplet baseras villkoret för att visa en version eller den andra på **Språk** värdet för mottagarens profil. Dessa värden är inställda på **EN**, **FR**, **ES**.
-1. I e-postinnehållet i HTML klickar du på **[!UICONTROL Source]** och klistra in följande kod:
+1. Skapa ett e-postmeddelande och välj målpopulation. I det här exemplet baseras villkoret för att visa den ena versionen eller den andra på värdet **Språk** för mottagarens profil. Dessa värden är inställda på **EN**, **FR**, **ES**.
+1. Klicka på fliken **[!UICONTROL Source]** i e-postinnehållet i HTML och klistra in följande kod:
 
    ```
    <% if (language == "EN" ) { %>
@@ -76,13 +76,13 @@ Läs om hur du skapar flerspråkiga e-postmeddelanden i exemplet nedan. Innehål
    <% } %>
    ```
 
-1. Testa e-postinnehåll i **[!UICONTROL Preview]** genom att välja mottagare med olika språk.
+1. Testa e-postinnehåll på fliken **[!UICONTROL Preview]** genom att välja mottagare med olika språk.
 
    >[!NOTE]
    >
    >Eftersom ingen alternativ version har definierats i e-postinnehållet måste du filtrera målpopulationen innan du skickar e-postmeddelandet.
 
-## Videokurs {#conditionnal-content-video}
+## Självstudievideo {#conditionnal-content-video}
 
 Lär dig hur du lägger till villkorsstyrt innehåll i en leverans med ett exempel som visar ett flerspråkigt nyhetsbrev.
 

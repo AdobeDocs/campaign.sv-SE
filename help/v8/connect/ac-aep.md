@@ -23,9 +23,9 @@ Adobe Campaign Managed Cloud Service Destination och Source-anslutningarna möjl
 
 De viktigaste stegen för att skicka Adobe Experience Platform-målgrupper till Adobe Campaign och skicka tillbaka leverans- och spårningsloggar är följande:
 
-* Använda en Adobe Campaign Managed Cloud Services **Målanslutning** för att skicka Experience Platform segment till Adobe Campaign:
+* Använd en Adobe Campaign Managed Cloud Services **målanslutning** för att skicka Experience Platform-segment till Adobe Campaign:
 
-   1. Öppna Adobe Experience Platform Destinations-katalogen och skapa en ny **[!UICONTROL Adobe Campaign Managed Cloud Services]** anslutning.
+   1. Öppna Adobe Experience Platform Destinations-katalogen och skapa en ny **[!UICONTROL Adobe Campaign Managed Cloud Services]**-anslutning.
    1. Ange information om Campaign-instansen som ska användas och välj **[!UICONTROL Audience sync]** som synkroniseringstyp.
 
       ![](assets/aep-audience-sync.png){width="800" align="center"}
@@ -36,11 +36,11 @@ De viktigaste stegen för att skicka Adobe Experience Platform-målgrupper till 
 
       ![](assets/aep-destination.png){width="800" align="center"}
 
-  Detaljerad information om hur du konfigurerar målet finns i [Adobe Campaign Managed Cloud Services anslutningsdokumentation](https://www.adobe.com/go/destinations-adobe-campaign-managed-cloud-services-en){target="_blank"}
+  Detaljerad information om hur du konfigurerar målet finns i [Adobe Campaign Managed Cloud Services-anslutningsdokumentationen](https://www.adobe.com/go/destinations-adobe-campaign-managed-cloud-services-en){target="_blank"}
 
-* Använda en Adobe Campaign Managed Cloud Services **Källanslutning** för att skicka leverans- och spårningsloggar till Adobe Experience Platform:
+* Använd en **Source-anslutning** från Adobe Campaign Managed Cloud Services för att skicka Adobe Campaign leverans- och spårningsloggar till Adobe Experience Platform:
 
-  Konfigurera en ny Adobe Campaign Managed Cloud Services **Källanslutning** att importera Campaign-event till Adobe Experience Platform. Ange information om Campaign-instansen och det schema som ska användas, välj en datauppsättning där data ska hämtas och konfigurera sedan fälten som ska hämtas. [Lär dig hur du skapar en källanslutning till Adobe Campaign Managed Cloud Services](https://www.adobe.com/go/sources-campaign-ui-en)
+  Det gör du genom att konfigurera en ny Adobe Campaign Managed Cloud Services **Source-anslutning** så att Campaign-händelser importeras till Adobe Experience Platform. Ange information om Campaign-instansen och det schema som ska användas, välj en datauppsättning där data ska hämtas och konfigurera sedan fälten som ska hämtas. [Lär dig hur du skapar en Adobe Campaign Managed Cloud Services-källanslutning](https://www.adobe.com/go/sources-campaign-ui-en)
 
   ![](assets/aep-logs.png){width="800" align="center"}
 
@@ -56,7 +56,7 @@ Anta till exempel att du hämtar värden för anmälan och avanmälan i Adobe Ex
 
 De viktigaste stegen för att synkronisera Adobe Experience Platform-profilattribut med Adobe Campaign är följande:
 
-1. Öppna Adobe Experience Platform Destinations-katalogen och skapa en ny **[!UICONTROL Adobe Campaign Managed Cloud Services]** anslutning.
+1. Öppna Adobe Experience Platform Destinations-katalogen och skapa en ny **[!UICONTROL Adobe Campaign Managed Cloud Services]**-anslutning.
 1. Ange information om Campaign-instansen som ska användas och välj **[!UICONTROL Profile sync (Update only)]** som synkroniseringstyp.
 
    ![](assets/aep-profile-sync.png){width="800" align="center"}
@@ -65,4 +65,4 @@ De viktigaste stegen för att synkronisera Adobe Experience Platform-profilattri
 1. Konfigurera de profilattribut som du vill uppdatera till Adobe Campaign.
 1. När flödet har konfigurerats synkroniseras de valda profilattributen med Adobe Campaign och uppdateras för alla profiler som är avsedda för de segment som har konfigurerats i målet.
 
-Detaljerad information om hur du konfigurerar målet finns i [Adobe Campaign Managed Cloud Services anslutningsdokumentation](https://www.adobe.com/go/destinations-adobe-campaign-managed-cloud-services-en){target="_blank"}
+Detaljerad information om hur du konfigurerar målet finns i [Adobe Campaign Managed Cloud Services-anslutningsdokumentationen](https://www.adobe.com/go/destinations-adobe-campaign-managed-cloud-services-en){target="_blank"}

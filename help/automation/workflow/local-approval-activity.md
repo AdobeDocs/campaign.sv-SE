@@ -7,14 +7,14 @@ role: User
 exl-id: 31089026-3fc0-4491-8b70-0fb7fd1e3ac0
 source-git-commit: 1a0b473b005449be7c846225e75a227f6d877c88
 workflow-type: tm+mt
-source-wordcount: '1270'
+source-wordcount: '1281'
 ht-degree: 2%
 
 ---
 
 # Använda den lokala godkännandeaktiviteten{#using-the-local-approval-activity}
 
-The **[!UICONTROL Local approval]** Med en integrerad aktivitet i ett arbetsflöde för målanpassning kan du skapa en process för godkännande av mottagare innan leveransen skickas.
+Med aktiviteten **[!UICONTROL Local approval]** som är integrerad i ett målarbetsflöde kan du konfigurera en process för mottagarnas godkännande innan leveransen skickas.
 
 >[!CAUTION]
 >
@@ -26,13 +26,13 @@ Vi har skapat följande arbetsflöde för målinriktning för att konfigurera de
 
 Huvudstegen i den lokala godkännandeprocessen är:
 
-1. Den befolkning som blir resultatet av målinriktning kan begränsas tack vare **[!UICONTROL Split]** typaktivitet med hjälp av en datadistributionsmodell.
+1. Populationen som är resultatet av målinriktning kan begränsas tack vare en **[!UICONTROL Split]**-typaktivitet som använder en datadistributionsmodell.
 
    ![](assets/local_validation_intro_1.png)
 
-1. The **[!UICONTROL Local approval]** aktiviteten tar sedan över och skickar ett e-postmeddelande till varje lokal ansvarig. Aktiviteten förlängs tills varje lokal ansvarig godkänner mottagarna som tilldelats dem.
+1. Aktiviteten **[!UICONTROL Local approval]** tar sedan över och skickar ett e-postmeddelande till varje lokal ansvarig. Aktiviteten förlängs tills varje lokal ansvarig godkänner mottagarna som tilldelats dem.
 
-1. När tidsgränsen för godkännande har nåtts startar arbetsflödet igen. I det här exemplet **[!UICONTROL Delivery]** aktiviteten startar och leveransen skickas till de godkända målen.
+1. När tidsgränsen för godkännande har nåtts startar arbetsflödet igen. I det här exemplet startar aktiviteten **[!UICONTROL Delivery]** och leveransen skickas till de godkända målen.
 
    >[!NOTE]
    >
@@ -40,15 +40,15 @@ Huvudstegen i den lokala godkännandeprocessen är:
 
    ![](assets/local_validation_intro_6.png)
 
-1. Några dagar senare, den andra **[!UICONTROL Local approval]** typaktivitet skickar ett e-postmeddelande till varje lokal ansvarig med en sammanfattning av de åtgärder som utförs av deras kontakter (klick, öppningar osv.).
+1. Några dagar senare skickar den andra **[!UICONTROL Local approval]**-typaktiviteten ett e-postmeddelande till varje lokal ansvarig med en sammanfattning av de åtgärder som deras kontakter utför (klicka, öppnas osv.).
 
 ## Steg 1: Skapa en mall för datadistribution {#step-1--creating-the-data-distribution-template-}
 
-Med mallen för datadistribution kan du begränsa den population som blir resultatet av målgruppsanpassning baserat på datagruppering samtidigt som du kan tilldela varje värde till en lokal ansvarig. I detta exempel har vi definierat **[!UICONTROL Email address domain]** fält som ett distributionsfält och som tilldelats en domän till varje lokal ansvarig
+Med mallen för datadistribution kan du begränsa den population som blir resultatet av målgruppsanpassning baserat på datagruppering samtidigt som du kan tilldela varje värde till en lokal ansvarig. I det här exemplet har vi definierat fältet **[!UICONTROL Email address domain]** som ett distributionsfält och tilldelat en domän till varje lokal ansvarig
 
 Mer information om hur du skapar en mall för datadistribution finns i [Begränsa antalet delmängdsposter per datadistribution](split.md#limiting-the-number-of-subset-records-per-data-distribution).
 
-1. Om du vill skapa en mall går du till **[!UICONTROL Resources > Campaign management > Data distribution]** och klicka på **[!UICONTROL New]**.
+1. Om du vill skapa en mall för datadistribution går du till noden **[!UICONTROL Resources > Campaign management > Data distribution]** och klickar på **[!UICONTROL New]**.
 
    ![](assets/local_validation_data_distribution_1.png)
 
@@ -56,24 +56,24 @@ Mer information om hur du skapar en mall för datadistribution finns i [Begräns
 
    ![](assets/local_validation_data_distribution_2.png)
 
-1. Ange **[!UICONTROL Label]** och **[!UICONTROL Distribution context]**. I det här exemplet har vi valt **[!UICONTROL Recipient]** målschema och **[!UICONTROL Email domain]** som ett distributionsfält. Listan över mottagare delas upp efter domän.
-1. I **[!UICONTROL Distribution type]** väljer du hur målbegränsningsvärdet ska uttryckas i **[!UICONTROL Distribution]** -fliken. Här har vi valt **[!UICONTROL Percentage]**.
-1. I **[!UICONTROL Approval storage]** anger du lagringsschemat för godkännandena som matchar målschemat som används. Här använder vi standardlagringsschemat: **[!UICONTROL Local approval of recipients]**.
-1. Klicka sedan på **[!UICONTROL Advanced parameters]** länk.
+1. Ange **[!UICONTROL Label]** och **[!UICONTROL Distribution context]**. I det här exemplet har vi valt målschemat **[!UICONTROL Recipient]** och fältet **[!UICONTROL Email domain]** som ett distributionsfält. Listan över mottagare delas upp efter domän.
+1. I fältet **[!UICONTROL Distribution type]** väljer du hur målbegränsningsvärdet ska uttryckas på fliken **[!UICONTROL Distribution]**. Här har vi valt **[!UICONTROL Percentage]**.
+1. I fältet **[!UICONTROL Approval storage]** anger du lagringsschemat för godkännandena som matchar målschemat som används. Här använder vi standardlagringsschemat: **[!UICONTROL Local approval of recipients]**.
+1. Klicka sedan på länken **[!UICONTROL Advanced parameters]**.
 
    ![](assets/local_validation_data_distribution_3.png)
 
-1. Behåll **[!UICONTROL Approve the targeted messages]** markerat så att alla mottagare är förmarkerade i listan över mottagare som ska godkännas.
-1. I **[!UICONTROL Delivery label]** -fältet har vi lämnat standarduttrycket (leveransens beräkningssträng). Standardetiketten för leveransen används i feedbackmeddelandet.
-1. I **[!UICONTROL Grouping field]** -avsnittet har vi valt **[!UICONTROL Gender]** som ett grupperingsfält för att visa mottagare i godkännanderutiner och feedback-meddelanden.
-1. I **[!UICONTROL Edit targeted messages]** har vi valt **[!UICONTROL Edit recipients]** webbprogram och **[!UICONTROL recipientId]** parameter. I meddelanden om godkännande och feedback kan mottagarna klickas och peka mot webbprogrammets URL. Den extra URL-parametern kommer att vara **[!UICONTROL recipientId]**.
-1. Klicka sedan på **[!UICONTROL Distribution]** -fliken. Ange följande fält för varje domän:
+1. Låt alternativet **[!UICONTROL Approve the targeted messages]** vara markerat så att alla mottagare är förmarkerade i listan över mottagare som ska godkännas.
+1. I fältet **[!UICONTROL Delivery label]** har vi lämnat standarduttrycket (leveransens beräkningssträng). Standardetiketten för leveransen används i feedbackmeddelandet.
+1. I avsnittet **[!UICONTROL Grouping field]** har vi valt fältet **[!UICONTROL Gender]** som ett grupperingsfält för att visa mottagare i godkännanderutiner och feedback-meddelanden.
+1. I avsnittet **[!UICONTROL Edit targeted messages]** har vi valt webbprogrammet **[!UICONTROL Edit recipients]** och parametern **[!UICONTROL recipientId]**. I meddelanden om godkännande och feedback kan mottagarna klickas och peka mot webbprogrammets URL. Den extra URL-parametern blir **[!UICONTROL recipientId]**.
+1. Klicka sedan på fliken **[!UICONTROL Distribution]**. Ange följande fält för varje domän:
 
    ![](assets/local_validation_data_distribution_4.png)
 
    * **[!UICONTROL Value]**: Ange värdet för domännamnet.
-   * **[!UICONTROL Percentage / Fixed]**: för varje domän anger du max. antal mottagare som du vill skicka leveransen till. I detta exempel vill vi begränsa leveransen till 10 % per domän.
-   * **[!UICONTROL Label]**: Ange domänens etikett som ska visas i meddelanden om godkännande och feedback.
+   * **[!UICONTROL Percentage / Fixed]**: Ange det högsta värdet för varje domän. antal mottagare som du vill skicka leveransen till. I detta exempel vill vi begränsa leveransen till 10 % per domän.
+   * **[!UICONTROL Label]**: Ange etiketten för domänen som ska visas i godkännanderutiner och feedback-meddelanden.
    * **[!UICONTROL Group or operator]**: välj operatorn eller gruppen med operatorer som tilldelats domänen.
 
      >[!CAUTION]
@@ -88,36 +88,36 @@ Vi har skapat följande arbetsflöde för målinriktning för att konfigurera de
 
 Följande aktiviteter lades till:
 
-* Två **[!UICONTROL Query]** verksamhet,
-* Ett **[!UICONTROL Intersection]** verksamhet,
-* Ett **[!UICONTROL Split]** verksamhet,
-* Ett **[!UICONTROL Local approval]** verksamhet,
-* Ett **[!UICONTROL Delivery]** verksamhet,
-* Ett **[!UICONTROL Wait]** verksamhet,
-* En sekund **[!UICONTROL Local approval]** verksamhet,
-* Ett **[!UICONTROL End]** aktivitet.
+* Två **[!UICONTROL Query]** aktiviteter,
+* En **[!UICONTROL Intersection]**-aktivitet,
+* En **[!UICONTROL Split]**-aktivitet,
+* En **[!UICONTROL Local approval]**-aktivitet,
+* En **[!UICONTROL Delivery]**-aktivitet,
+* En **[!UICONTROL Wait]**-aktivitet,
+* En andra **[!UICONTROL Local approval]**-aktivitet,
+* En **[!UICONTROL End]**-aktivitet.
 
 ### Frågor, skärning och delning {#queries--intersection-and-split}
 
-Uppströms målgruppsanpassning består av två frågor, en skärningspunkt och en delning. Den befolkning som blir resultatet av målinriktningen kan begränsas med hjälp av en **[!UICONTROL Split]** -aktivitet med hjälp av en datadistributionsmall.
+Uppströms målgruppsanpassning består av två frågor, en skärningspunkt och en delning. Populationen som är ett resultat av målinriktning kan begränsas med en **[!UICONTROL Split]**-aktivitet som använder en datamall för distribution.
 
-Mer information om hur du konfigurerar en delad aktivitet finns i [Dela](split.md). Hur man skapar en mall för datadistribution beskrivs i [Begränsa antalet delmängdsposter per datadistribution](split.md#limiting-the-number-of-subset-records-per-data-distribution).
+Mer information om hur du konfigurerar en delad aktivitet finns i [Dela](split.md). Skapandet av en datadistributionsmall beskrivs i [Begränsa antalet delmängdsposter per datadistribution](split.md#limiting-the-number-of-subset-records-per-data-distribution).
 
-Om du inte vill begränsa antalet ifyllningar i frågan behöver du inte använda kommandot **[!UICONTROL Query]**, **[!UICONTROL Intersection]** och **[!UICONTROL Split]** verksamhet. I det här fallet fyller du i datautdelningsmallen i den första **[!UICONTROL Local approval]** aktivitet.
+Om du inte vill begränsa fyllningen från frågan behöver du inte använda aktiviteterna **[!UICONTROL Query]**, **[!UICONTROL Intersection]** och **[!UICONTROL Split]**. I det här fallet slutför du datadistributionsmallen i den första **[!UICONTROL Local approval]**-aktiviteten.
 
-1. I **[!UICONTROL Record count limitation]** väljer du **[!UICONTROL Limit the selected records]** och klicka på **[!UICONTROL Edit]** länk.
+1. I avsnittet **[!UICONTROL Record count limitation]** väljer du alternativet **[!UICONTROL Limit the selected records]** och klickar på länken **[!UICONTROL Edit]**.
 
    ![](assets/local_validation_split_1.png)
 
-1. Välj **[!UICONTROL Keep only the first records after sorting]** och klicka **[!UICONTROL Next]**.
+1. Välj alternativet **[!UICONTROL Keep only the first records after sorting]** och klicka på **[!UICONTROL Next]**.
 
    ![](assets/local_validation_split_1bis.png)
 
-1. I **[!UICONTROL Sort columns]** lägger du till det fält som sorteringen ska användas på. Här har vi valt **[!UICONTROL Email]** fält. Klicka på **[!UICONTROL Next]**.
+1. I avsnittet **[!UICONTROL Sort columns]** lägger du till det fält som sorteringen ska användas på. Här har vi valt fältet **[!UICONTROL Email]**. Klicka på **[!UICONTROL Next]**.
 
    ![](assets/local_validation_split_2.png)
 
-1. Välj **[!UICONTROL By data distribution]** väljer du den distributionsmall som skapades tidigare (se [Steg 1: Skapa en mall för datadistribution](#step-1--creating-the-data-distribution-template-)) och klicka på **[!UICONTROL Finish]**.
+1. Välj alternativet **[!UICONTROL By data distribution]**, markera den distributionsmall som skapats tidigare (se [Steg 1: Skapa datadistributionsmallen](#step-1--creating-the-data-distribution-template-)) och klicka på **[!UICONTROL Finish]**.
 
    ![](assets/local_validation_split_3.png)
 
@@ -127,9 +127,9 @@ I distributionsmallen har vi valt att begränsa populationen till 10 % per grupp
 
 ### Godkännandemeddelande {#approval-notification}
 
-The **[!UICONTROL Local approval]** kan du skicka ett meddelande till varje lokal ansvarig.
+Med aktiviteten **[!UICONTROL Local approval]** kan du skicka ett meddelande till varje lokal ansvarig.
 
-Mer information om konfiguration av **[!UICONTROL Local approval]** aktivitet, se [Lokalt godkännande](local-approval.md).
+Mer information om hur du konfigurerar aktiviteten **[!UICONTROL Local approval]** finns i [Lokalt godkännande](local-approval.md).
 
 ![](assets/local_validation_workflow_2.png)
 
@@ -138,32 +138,32 @@ Följande fält måste anges:
 1. Välj alternativet **[!UICONTROL Target approval notification]** i avsnittet **[!UICONTROL Action to execute]**.
 1. Välj alternativet **[!UICONTROL Specified in the transition]** i avsnittet **[!UICONTROL Distribution context]**.
 
-   Om du inte vill begränsa målpopulationen väljer du **[!UICONTROL Explicit]** här och ange den distributionsmall som skapades tidigare i **[!UICONTROL Data distribution]** fält.
+   Om du inte vill begränsa målpopulationen väljer du alternativet **[!UICONTROL Explicit]** här och anger den distributionsmall som skapades tidigare i fältet **[!UICONTROL Data distribution]**.
 
-1. I **[!UICONTROL Notification]** väljer du leveransmall och ämne som ska användas för e-postmeddelandet. Här har vi valt standardmallen: **[!UICONTROL Local approval notification]**.
-1. I **[!UICONTROL Approval schedule]** -avsnittet har vi behållit standardtiden för godkännande (3 dagar) och lagt till en påminnelse. Leveransen upphör 3 dagar efter det att godkännandet har börjat. När tidsgränsen för godkännande har nåtts beaktas inte mottagare som inte har godkänts av målinriktningen.
+1. I avsnittet **[!UICONTROL Notification]** väljer du leveransmallen och ämnet som ska användas för e-postmeddelandet. Här har vi valt standardmallen: **[!UICONTROL Local approval notification]**.
+1. I avsnittet **[!UICONTROL Approval schedule]** har vi behållit standardtidsgränsen för godkännande (3 dagar) och lagt till en påminnelse. Leveransen upphör 3 dagar efter det att godkännandet har börjat. När tidsgränsen för godkännande har nåtts beaktas inte mottagare som inte har godkänts av målinriktningen.
 
-Ett e-postmeddelande skickas av **[!UICONTROL Local approval]** till lokala tillsynsmyndigheter.
+Ett e-postmeddelande skickas av aktiviteten **[!UICONTROL Local approval]** till lokala arbetsledare.
 
 ### Vänta {#wait}
 
-Med vänteaktiviteten kan du skjuta upp starten av den andra lokala godkännandeaktiviteten som skickar leveransfeedback-meddelandet. I **[!UICONTROL Duration]** fält, vi har angett **[!UICONTROL 5d]** värde (5 dagar). De åtgärder som mottagarna utför i 5 dagar efter att leveransen har skickats kommer att ingå i feedbackmeddelandet.
+Med vänteaktiviteten kan du skjuta upp starten av den andra lokala godkännandeaktiviteten som skickar leveransfeedback-meddelandet. I fältet **[!UICONTROL Duration]** har vi angett värdet **[!UICONTROL 5d]** (5 dagar). De åtgärder som mottagarna utför i 5 dagar efter att leveransen har skickats kommer att ingå i feedbackmeddelandet.
 
 ![](assets/local_validation_workflow_3.png)
 
 ### Feedback-meddelande {#feedback-notification}
 
-Den andra **[!UICONTROL Local approval]** Med den här aktiviteten kan du skicka feedback till varje lokal ansvarig.
+Med den andra **[!UICONTROL Local approval]**-aktiviteten kan du skicka ett leveransfeedback-meddelande till varje lokal ansvarig.
 
 ![](assets/local_validation_workflow_4.png)
 
 Följande fält måste anges.
 
-1. I **[!UICONTROL Action to execute]** avsnitt, välja **[!UICONTROL Delivery feedback report]**.
-1. I **[!UICONTROL Delivery]** avsnitt, välja **[!UICONTROL Specified in the transition]**.
-1. I **[!UICONTROL Notification]** väljer du leveransmall och ämne som ska användas för e-postmeddelandet.
+1. Välj **[!UICONTROL Delivery feedback report]** i avsnittet **[!UICONTROL Action to execute]**.
+1. Välj **[!UICONTROL Specified in the transition]** i avsnittet **[!UICONTROL Delivery]**.
+1. I avsnittet **[!UICONTROL Notification]** väljer du leveransmallen och ämnet som ska användas för e-postmeddelandet.
 
-När tidsgränsen som konfigurerats i vänteaktiviteten har nåtts, den andra **[!UICONTROL Local approval]** typaktivitet skickar följande e-postmeddelande till varje lokal ansvarig:
+När den konfigurerade tidsgränsen i vänteaktiviteten har nåtts skickar den andra **[!UICONTROL Local approval]**-typaktiviteten följande e-postmeddelande till varje lokal ansvarig:
 
 ![](assets/local_validation_intro_3.png)
 
@@ -171,15 +171,15 @@ När tidsgränsen som konfigurerats i vänteaktiviteten har nåtts, den andra **
 
 Varje gång den lokala godkännandeaktiviteten startar skapas en godkännandeuppgift. Administratören kan styra alla dessa godkännandeåtgärder.
 
-Gå till målarbetsflödet för kampanjen och klicka på **[!UICONTROL Local approval tasks]** -fliken.
+Gå till målarbetsflödet för kampanjen och klicka på fliken **[!UICONTROL Local approval tasks]**.
 
 ![](assets/local_validation_admin_1.png)
 
-Listan med lokala godkännandeuppgifter kan också nås via **[!UICONTROL Approval tasks]** -fliken i mallen för datadistribution.
+Listan med lokala godkännandeuppgifter kan också nås via fliken **[!UICONTROL Approval tasks]** i mallen för datadistribution.
 
 ![](assets/local_validation_admin_2.png)
 
-Markera den uppgift som du vill övervaka och klicka på **[!UICONTROL Detail]** -knappen. The **[!UICONTROL General]** -fliken i den lokala godkännandeuppgiften gör att du kan visa information om uppgiften. Om det behövs kan du ändra datumet för godkännande och påminnelsen.
+Markera den uppgift som du vill övervaka och klicka på knappen **[!UICONTROL Detail]**. På fliken **[!UICONTROL General]** i den lokala godkännandeuppgiften kan du visa information om uppgiften. Om det behövs kan du ändra datumet för godkännande och påminnelsen.
 
 ![](assets/local_validation_admin_3.png)
 
@@ -191,11 +191,11 @@ På den här fliken visas följande information:
 * det länkade arbetsflödet och kampanjen
 * aktivitetsschemat
 
-The **[!UICONTROL Distribution]** -fliken för uppgiften gör att du kan visa godkännandeloggarna, deras status, antalet meddelanden som ska skickas, godkännandedatumet samt den operator som godkände leveransen.
+På fliken **[!UICONTROL Distribution]** för aktiviteten kan du visa godkännandeloggarna, deras status, antalet meddelanden som angetts, godkännandedatumet samt den operator som godkänt leveransen.
 
 ![](assets/local_validation_admin_4.png)
 
-Välj en godkännandelogg och klicka på **[!UICONTROL Detail]** om du vill visa mer information. The **[!UICONTROL General]** på den lokala godkännandeloggen kan du visa allmän logginformation. Du kan också ändra godkännandestatusen.
+Välj en godkännandelogg och klicka på knappen **[!UICONTROL Detail]** för att visa mer information. På fliken **[!UICONTROL General]** i den lokala godkännandeloggen kan du visa allmän logginformation. Du kan också ändra godkännandestatusen.
 
 ![](assets/local_validation_admin_5.png)
 
@@ -207,6 +207,6 @@ På den här fliken visas följande information:
 * den lokala ansvarige som godkänt och godkännandedatumet
 * antalet riktade och godkända meddelanden
 
-The **[!UICONTROL Targeted]** -fliken i godkännandeloggen visar en lista över målmottagare och deras godkännandestatus. Du kan ändra den här statusen om det behövs.
+Fliken **[!UICONTROL Targeted]** i godkännandeloggen visar en lista över målmottagare och deras godkännandestatus. Du kan ändra den här statusen om det behövs.
 
 ![](assets/local_validation_admin_6.png)

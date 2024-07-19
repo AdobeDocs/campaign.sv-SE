@@ -18,13 +18,13 @@ Adobe Campaign är en plattform för att designa flerkanaliga kundupplevelser oc
 
 Adobe Campaign v8 är nästa generations kampanjverktyg som har byggts för olika marknadsföringskanaler som e-post, push-meddelanden, SMS och direktreklam. Den erbjuder robusta ETL- och datahanteringsfunktioner för att hjälpa till att utforma och strukturera den perfekta kampanjen. Dess orkestreringsmotor ger möjlighet till multitouch-marknadsföring med fokus på batchbaserade resor. Den levereras också tillsammans med en skalbar meddelandeserver i realtid som gör det möjligt för marknadsföringsteamen att skicka fördefinierade meddelanden baserat på en totalbelastning från alla IT-system för kommunikation som lösenordsåterställning, orderbekräftelse, e-kvitto och mycket annat.
 
-Adobe Campaign v8 har avsevärda förbättringar vad gäller infrastruktur, säkerhet, leveransbarhet och övervakning. Det finns som **Hanterad Cloud Service** som kombinerar tjänster med proaktiv tillsyn och vältajmade ändringar. Läs mer om Campaign Managed-Cloud Service [på den här sidan](whats-new.md#acms-desc).
+Adobe Campaign v8 har avsevärda förbättringar vad gäller infrastruktur, säkerhet, leveransbarhet och övervakning. Det finns som en **hanterad Cloud Service** som kombinerar tjänster med proaktiv tillsyn och tidsbegränsade ändringar. Läs mer om Campaign Managed-Cloud Service [på den här sidan](whats-new.md#acms-desc).
 
 Använd Campaign för att
 
-* **Drive** personalisering och engagemang genom en enda lättillgänglig bild av kunden
-* **Integrera** e-post, mobilkanaler, online- och offlinekanaler i kundresan
-* **Automatisera** leverera meningsfulla och aktuella meddelanden och erbjudanden
+* **Drive**-personalisering och -engagemang via en enda lättillgänglig kundvy
+* **Integrera** e-post-, mobil-, online- och offlinekanaler i kundresan
+* **Automatisera** leveransen av meningsfulla och aktuella meddelanden och erbjudanden
 
 ![](assets/do-not-localize/ac-capabilities.png)
 
@@ -34,7 +34,7 @@ Profilerna är centraliserade i en kraftfull molndatabas. Det finns många sätt
 
 I Adobe Campaign är mottagarna de standardprofiler som väljs för att skicka leveranser till (e-post, SMS etc.). Tack vare mottagardata som lagras i databasen kan du filtrera det mål som ska ta emot en viss leverans och lägga till personaliseringsdata i leveransinnehållet. Det finns andra typer av profiler i databasen. De är utformade för olika användningsfall. Exempelvis görs fröprofiler för att testa dina leveranser innan de skickas till det slutliga målet.
 
-Grunderna för profilhantering finns i [det här avsnittet](audiences.md).
+Grunderna för profilhantering beskrivs i [det här avsnittet](audiences.md).
 
 Lär dig hur du lägger till profiler i Campaign i [det här avsnittet](import.md).
 
@@ -44,13 +44,13 @@ Adobe Campaign har kraftfulla och användarvänliga funktioner för segmentering
 
 Funktionen med avancerad datahantering utökar möjligheterna för databearbetning. Det förenklar och optimerar målgruppsprocessen genom att inkludera data som inte är modellerade i datamappningen.
 
-Läs mer om segmentering och målgruppsframtagning i [det här avsnittet](audiences.md).
+Läs mer om segmentering och målgruppsskapande i [det här avsnittet](audiences.md).
 
 ## Samordna kampanjer i flera kanaler {#cross-channel-campaign-orchestration}
 
 Med Adobe Campaign kan du utforma och orkestrera målinriktade och personaliserade kampanjer över flera kanaler: e-post, direktutskick, SMS och push-meddelanden. Ett enda gränssnitt ger er alla funktioner ni behöver för att schemalägga, samordna, konfigurera, personalisera, automatisera, genomföra och mäta alla kampanjer och all kommunikation.
 
-Lär dig utforma, schemalägga och köra en kampanj i [det här avsnittet](campaigns.md).
+Lär dig hur du utformar, schemalägger och kör en kampanj i [det här avsnittet](campaigns.md).
 
 ## Arbetsflöden {#wf-gsv8}
 
@@ -76,19 +76,19 @@ Förutom kraftfulla och färdiga rapportmallar kan du med Adobe Campaign skapa a
 Kampanjrapporteringsfunktionen gör det lättare att skapa dynamiska rapporter. Ni kan använda dra-och-släpp-variabler för att anpassa era rapporter och för att analysera hur framgångsrika era kampanjer är. Beroende på hur komplexa dina frågor och beräkningar är kan data samlas i en listvy eller nås i ett format som gör det enkelt att generera marknadsanalysrapporter.
 
 
-Läs mer om funktionerna för rapportering och spårning i [det här avsnittet](../reporting/gs-reporting.md).
+Läs mer om rapport- och spårningsfunktioner i [det här avsnittet](../reporting/gs-reporting.md).
 
 ## Adobe Experience Cloud-integreringar {#adobe-experience-cloud-integrations}
 
 Ni kan kombinera leveransfunktionerna och de avancerade kampanjhanteringsfunktionerna i Adobe Campaign med en uppsättning lösningar som hjälper er att personalisera användarupplevelsen: t.ex. Adobe Experience Manager, Adobe Analytics, Adobe Target eller Adobe Experience Cloud.
 
-Läs om hur du kan integrera med Adobes tjänster och lösningar i [det här avsnittet](../connect/integration.md).
+Lär dig hur du integrerar med Adobes tjänster och lösningar i [det här avsnittet](../connect/integration.md).
 
 ## Mer om Campaign-funktioner {#core-capabilities-and-add-ons}
 
-Adobe Campaign har en uppsättning funktioner som hjälper er att implementera och optimera marknadsföringsfunktionerna beroende på era behov och er arkitektur. Vissa av dem är kärnfunktioner och andra är beroende av att ett paket installeras på din konfiguration. En detaljerad produktbeskrivning finns här: [Adobe Campaign v8 - produktbeskrivning](https://helpx.adobe.com/se/legal/product-descriptions/adobe-campaign-managed-cloud-services.html).
+Adobe Campaign har en uppsättning funktioner som hjälper er att implementera och optimera marknadsföringsfunktionerna beroende på era behov och er arkitektur. Vissa av dem är kärnfunktioner och andra är beroende av att ett paket installeras på din konfiguration. En detaljerad produktbeskrivning finns här: [Adobe Campaign v8 Produktbeskrivning](https://helpx.adobe.com/se/legal/product-descriptions/adobe-campaign-managed-cloud-services.html).
 
-Känner du redan till Campaign Classicen? Lär dig viktiga skillnader mellan Campaign Classic och Campaign v8 i [den här sidan](v7-to-v8.md).
+Känner du redan till Campaign Classicen? Lär dig viktiga skillnader mellan Campaign Classic och Campaign v8 på [den här sidan](v7-to-v8.md).
 
 **Se även**
 

@@ -1,13 +1,13 @@
 ---
 title: Mappar och vyer
-description: Lär dig hantera mappar och vyer i Campaign Explorer
+description: Lär dig hur du hanterar mappar och vyer i Campaign Explorer
 feature: Audiences, Profiles, Application Settings
 role: User
 level: Beginner, Intermediate
 exl-id: 762dcacc-4aeb-4990-af01-7f793bd69170
 source-git-commit: 515520bb5b7131fc2ed2d1b2a843373f01af306a
 workflow-type: tm+mt
-source-wordcount: '672'
+source-wordcount: '674'
 ht-degree: 0%
 
 ---
@@ -21,24 +21,26 @@ En vy är en specifik mapp som inte innehåller några data, men som visar data 
 
 >[!NOTE]
 >För att skilja vyer från standardmappar visas deras namn med ljusblått i stället för svart.
+>
 
 Observera att du kan tilldela behörigheter till mappar för att begränsa åtkomsten till vissa data. [Läs mer](#restrict-access-to-a-folder)
 
 ## Bästa tillvägagångssätt vid arbete med mappar{#best-practices-folders}
 
-* **Använd inbyggda mappar** för att göra det enklare för alla som arbetar med projektet att använda, underhålla och felsöka programmet. Undvik att skapa anpassade mappstrukturer för mottagare, listor, leveranser osv., men använd standardmappar som **Administration**, **Profiler och mål**, **Kampanjhantering**.
+* **Använd inbyggda mappar** för att göra det enklare för alla som deltar i projektet att använda, underhålla och felsöka programmet. Undvik att skapa anpassade mappstrukturer för mottagare, listor, leveranser osv., men använd standardmapparna som **Administration**, **Profiler och mål**, **Kampanjhantering**.
 
-* **Skapa undermappar** sparar du t.ex. dina tekniska arbetsflöden i den inbyggda mappen: **[!UICONTROL Administration > Production > Technical Workflows]** och skapa undermappar per arbetsflödestyp.
+* **Skapa undermappar**, till exempel spara dina tekniska arbetsflöden i den inbyggda mappen **[!UICONTROL Administration > Production > Technical Workflows]** och skapa undermappar per arbetsflödestyp.
 
-* **Definiera och tillämpa en namnkonvention** Du kan till exempel namnge arbetsflödena i alfabetisk ordning så att de visas sorterade i körningsordning, till exempel:
+* **Definiera och tillämpa en namnkonvention**, till exempel kan du namnge arbetsflödena i alfabetisk ordning så att de visas sorterade i körningsordningen, till exempel:
 
-   A1 - importmottagare, börjar 10:00; A2 - importbiljetter, börjar klockan 11:00.
+  A1 - importmottagare, börjar 10:00;
+A2 - importbiljetter, börjar klockan 11:00.
 
 ## Skapa en mapp{#create-a-folder}
 
 Om du vill skapa en mapp högerklickar du på en befintlig mapp och använder snabbmenyn.
 
-Om du vill skapa samma typ av mapp som den du valde väljer du det första alternativet på snabbmenyn. I en mottagarmapp väljer du **[!UICONTROL Create a new 'Recipients' folder]**.
+Om du vill skapa samma typ av mapp som den du valde väljer du det första alternativet på snabbmenyn. Välj till exempel **[!UICONTROL Create a new 'Recipients' folder]** från en mottagarmapp.
 
 ![](assets/create-recipient-folder.png)
 
@@ -49,7 +51,8 @@ Om du vill skapa en annan typ av mapp högerklickar du på en befintlig mapp och
 ![](assets/add-new-folder.png)
 
 >[!CAUTION]
->Dessa ändringar gäller alla Campaign-användare.
+>De här ändringarna gäller alla Campaign-användare.
+>
 
 ## Gör en mapp till en vy{#turn-a-folder-to-a-view}
 
@@ -65,32 +68,32 @@ Du kan omvandla en mapp till en vy, men mappen måste vara tom. Alla data som la
 
 I exemplet nedan skapar vi en ny mapp som endast visar leveranser från USA utifrån deras interna namn.
 
-1. Skapa en **[!UICONTROL Deliveries]** mapp och namnge den **Leveranser i USA**.
-1. Högerklicka på den här mappen och välj **[!UICONTROL Properties...]**.
-1. I **[!UICONTROL Restriction]** flik, välja **[!UICONTROL This folder is a view]**. Därefter visas alla leveranser i databasen.
+1. Skapa en **[!UICONTROL Deliveries]**-mapp och ge den namnet **USA-leveranser**.
+1. Högerklicka på mappen och välj **[!UICONTROL Properties...]**.
+1. Välj **[!UICONTROL This folder is a view]** på fliken **[!UICONTROL Restriction]**. Därefter visas alla leveranser i databasen.
 
    ![](assets/this-folder-is-a-view.png)
 
-1. Definiera filtervillkoren från frågeredigeraren i fönstrets centrala del: Endast de leveranser som motsvarar filtret visas i mappen.
+1. Definiera filtervillkoren från frågeredigeraren i fönstrets centrala del: bara de leveranser som motsvarar filtret visas i mappen.
 
    ![](assets/filter-view.png)
 
    >[!NOTE]
    >
-   >Lär dig hur du utformar frågor i [den här sidan](create-filters.md#advanced-filters)
+   >Lär dig utforma frågor på [den här sidan](create-filters.md#advanced-filters)
 
 
 >[!CAUTION]
 >
->Vid hantering [transaktionsmeddelanden](../send/transactional.md) händelser, **[!UICONTROL Real time events]** eller **[!UICONTROL Batch events]** mappar får inte anges som vyer för körningsinstanserna eftersom detta kan leda till behörighetsproblem.
+>När [transaktionsmeddelanden](../send/transactional.md) hanteras får inte mapparna **[!UICONTROL Real time events]** eller **[!UICONTROL Batch events]** anges som vyer för körningsinstanserna, eftersom detta kan leda till behörighetsproblem.
 
 ## Ordna dina mappar{#organize-your-folders}
 
 Som standard läggs en ny mapp till högst upp i hierarkin.
 
-Bläddra i **Undermappar** för en mappegenskap för att ordna dess undermappar.
+Bläddra på fliken **Undermappar** i en mappegenskap för att ordna dess undermappar.
 
-Du kan flytta mapparna med pilarna till höger eller välja **[!UICONTROL Sort the sub-folders in alphabetical order]** för att sortera dem automatiskt.
+Du kan flytta mapparna med pilarna till höger eller välja alternativet **[!UICONTROL Sort the sub-folders in alphabetical order]** om du vill sortera dem automatiskt.
 
 ![](assets/sort-folders.png)
 

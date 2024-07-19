@@ -14,13 +14,13 @@ ht-degree: 4%
 
 # Presentera det bästa erbjudandet{#interaction-present-offers}
 
-Erbjudandena kan presenteras på olika platser med [en inkommande eller utgående kanal](interaction-architecture.md#interaction-types). I det här kapitlet beskrivs några specifika funktioner för inkommande kanaler.
+Erbjudanden kan visas på olika erbjudandeplatser med hjälp av [en ingående eller utgående kanal](interaction-architecture.md#interaction-types). I det här kapitlet beskrivs några specifika funktioner för inkommande kanaler.
 
 ![](assets/inbound-interactions.png)
 
 För att ett erbjudande ska kunna väljas ut av erbjudandemotorn måste det godkännas och vara tillgängligt i en live-miljö.
 
-Mer information finns i [Campaign Classic v7 - dokumentation](https://experienceleague.adobe.com/docs/campaign-classic/using/managing-offers/managing-an-offer-catalog/approving-and-activating-an-offer.html#approving-offer-content){target="_blank"}.
+Mer information finns i [Campaign Classic v7-dokumentationen](https://experienceleague.adobe.com/docs/campaign-classic/using/managing-offers/managing-an-offer-catalog/approving-and-activating-an-offer.html#approving-offer-content){target="_blank"}.
 
 I kontexten för en inkommande kontakt kan användaren som bläddrar på sidan identifieras av webbplatsen eller inte. Erbjudandemotorn erbjuder olika erbjudanden för identifierade profiler och för anonyma profiler.
 

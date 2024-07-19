@@ -7,14 +7,14 @@ role: User
 exl-id: 4fe2ae81-faa6-4777-a332-70c451bca75b
 source-git-commit: 567c2e84433caab708ddb9026dda6f9cb717d032
 workflow-type: tm+mt
-source-wordcount: '412'
+source-wordcount: '437'
 ht-degree: 0%
 
 ---
 
 # Lägg till ett beräkningsfält av uppräkningstyp {#adding-an-enumeration-type-calculated-field}
 
-Här vill vi skapa en fråga med en **[!UICONTROL Enumerations]** skriv beräkningsfält. Det här fältet genererar ytterligare en kolumn i förhandsgranskningsfönstret. Den här kolumnen anger de numeriska värden som returneras som resultat för varje mottagare (0, 1 och 2). Ett kön tilldelas varje värde i den nya kolumnen: &quot;Man&quot; för &quot;1&quot;, &quot;Kvinna&quot; för &quot;2&quot; eller &quot;Inte angivet&quot; om värdet är lika med &quot;0&quot;.
+Här vill vi skapa en fråga av typen **[!UICONTROL Enumerations]**. Det här fältet genererar ytterligare en kolumn i förhandsgranskningsfönstret. Den här kolumnen anger de numeriska värden som returneras som resultat för varje mottagare (0, 1 och 2). Ett kön tilldelas varje värde i den nya kolumnen: &quot;Man&quot; för &quot;1&quot;, &quot;Kvinna&quot; för &quot;2&quot; eller &quot;Inte angivet&quot; om värdet är lika med &quot;0&quot;.
 
 * Vilken tabell måste markeras?
 
@@ -30,42 +30,42 @@ Här vill vi skapa en fråga med en **[!UICONTROL Enumerations]** skriv beräkni
 
 Använd följande steg:
 
-1. Öppna den allmänna frågeredigeraren och välj mottagartabellen (**[!UICONTROL nms:recipient]**).
-1. I **[!UICONTROL Data to extract]** fönster, markera **[!UICONTROL Last name]**, **[!UICONTROL First name]** och **[!UICONTROL Gender]**.
+1. Öppna den allmänna frågeredigeraren och markera mottagartabellen (**[!UICONTROL nms:recipient]**).
+1. I fönstret **[!UICONTROL Data to extract]** väljer du **[!UICONTROL Last name]**, **[!UICONTROL First name]** och **[!UICONTROL Gender]**.
 
    ![](assets/query_editor_nveau_73.png)
 
-1. I **[!UICONTROL Sorting]** fönster, klicka **[!UICONTROL Next]**: ingen sortering krävs för det här exemplet.
+1. Klicka på **[!UICONTROL Next]** i fönstret **[!UICONTROL Sorting]**: ingen sortering behövs för det här exemplet.
 1. I **[!UICONTROL Data filtering]** väljer du **[!UICONTROL Filtering conditions]**.
-1. I **[!UICONTROL Target element]** anger du ett filtervillkor för att samla in mottagare som talar engelska.
+1. I fönstret **[!UICONTROL Target element]** anger du ett filtervillkor för att samla in mottagare som talar engelska.
 
    ![](assets/query_editor_nveau_74.png)
 
-1. I **[!UICONTROL Data formatting]** fönster, klicka **[!UICONTROL Add a calculated field]**.
+1. Klicka på **[!UICONTROL Add a calculated field]** i fönstret **[!UICONTROL Data formatting]**.
 
    ![](assets/query_editor_nveau_75.png)
 
-1. Gå till **[!UICONTROL Type]** fönstret i **[!UICONTROL Export calculated field definition]** fönster och markera **[!UICONTROL Enumerations]**.
+1. Gå till fönstret **[!UICONTROL Type]** i fönstret **[!UICONTROL Export calculated field definition]** och välj **[!UICONTROL Enumerations]**.
 
-   Definiera den kolumn som det nya beräkningsfältet ska referera till. Om du vill göra det väljer du **[!UICONTROL Gender]** i den nedrullningsbara menyn i **[!UICONTROL Source column]** fält: målvärdena sammanfaller med **[!UICONTROL Gender]** kolumn.
+   Definiera den kolumn som det nya beräkningsfältet ska referera till. Det gör du genom att markera kolumnen **[!UICONTROL Gender]** i den nedrullningsbara menyn i fältet **[!UICONTROL Source column]**: målvärdena sammanfaller med kolumnen **[!UICONTROL Gender]**.
 
    ![](assets/query_editor_nveau_76.png)
 
-   Definiera **Källa** och **Mål** värden: målvärdet gör frågeresultatet lättare att läsa. Frågan ska returnera mottagarens kön och resultatet blir antingen 0, 1 eller 2.
+   Definiera värdena för **Source** och **Mål**: Målvärdet gör frågeresultatet lättare att läsa. Frågan ska returnera mottagarens kön och resultatet blir antingen 0, 1 eller 2.
 
-   Klicka på **[!UICONTROL Add]** i **[!UICONTROL List of enumeration values]**:
+   För varje &quot;source-destination&quot;-rad som ska anges klickar du på **[!UICONTROL Add]** i **[!UICONTROL List of enumeration values]**:
 
-   * I **[!UICONTROL Source]** anger du källvärdet för varje kön (0,1,2) på en ny rad.
-   * I **[!UICONTROL Destination]** anger du värdena: &quot;Inte angivet&quot; för rad &quot;0&quot;, &quot;Man&quot; för rad &quot;1&quot; och &quot;Kvinna&quot; för rad &quot;2&quot;.
+   * I kolumnen **[!UICONTROL Source]** anger du källvärdet för varje kön (0,1,2) på en ny rad.
+   * I kolumnen **[!UICONTROL Destination]** anger du värdena: &quot;Inte angivet&quot; för rad &quot;0&quot;, &quot;Man&quot; för rad &quot;1&quot; och &quot;Kvinna&quot; för rad &quot;2&quot;.
 
-   Välj **[!UICONTROL Keep the source value]** funktion.
+   Välj funktionen **[!UICONTROL Keep the source value]**.
 
-   Klicka **[!UICONTROL OK]** för att godkänna beräkningsfältet.
+   Klicka på **[!UICONTROL OK]** för att godkänna det beräknade fältet.
 
    ![](assets/query_editor_nveau_77.png)
 
-1. I **[!UICONTROL Data formatting]** fönster, klicka **[!UICONTROL Next]**.
-1. I förhandsgranskningsfönstret **[!UICONTROL start the preview of the data]**.
+1. Klicka på **[!UICONTROL Next]** i fönstret **[!UICONTROL Data formatting]**.
+1. **[!UICONTROL start the preview of the data]** i förhandsgranskningsfönstret.
 
    Den extra kolumnen definierar kön för 0, 1 och 2:
 
@@ -75,10 +75,10 @@ Använd följande steg:
 
    ![](assets/query_editor_nveau_78.png)
 
-   Om du t.ex. inte anger kön &quot;2&quot; i **[!UICONTROL List of enumeration values]** och **[!UICONTROL Generate a warning and continue]** funktionen i **[!UICONTROL In other cases]** fältet är markerat visas en varningslogg. Den här loggen anger att kön &quot;2&quot; (kvinna) inte har angetts. Den visas i **[!UICONTROL Logs generated during export]** i förhandsgranskningsfönstret.
+   Om du t.ex. inte anger kön &quot;2&quot; i **[!UICONTROL List of enumeration values]** och funktionen **[!UICONTROL Generate a warning and continue]** i fältet **[!UICONTROL In other cases]** är markerad får du en varningslogg. Den här loggen anger att kön &quot;2&quot; (kvinna) inte har angetts. Den visas i fältet **[!UICONTROL Logs generated during export]** i förhandsgranskningsfönstret för data.
 
    ![](assets/query_editor_nveau_79.png)
 
-   Låt oss ta ett exempel till och säga att uppräkningsvärdet &quot;2&quot; inte anges. Välj **[!UICONTROL Generate an error and reject the line]** funktion: alla &quot;2&quot;-mottagare av kön kommer att ge upphov till avvikelser och annan information på raden (för- och efternamn, osv.) exporteras inte. En fellogg visas i **[!UICONTROL Logs generated during export]** i förhandsgranskningsfönstret. Den här loggen anger att uppräkningsvärdet &quot;2&quot; inte har angetts.
+   Låt oss ta ett exempel till och säga att uppräkningsvärdet &quot;2&quot; inte anges. Välj funktionen **[!UICONTROL Generate an error and reject the line]**: alla mottagare av kön (2) genererar avvikelser och annan information på raden (för- och efternamn, osv.) exporteras inte. En fellogg visas i fältet **[!UICONTROL Logs generated during export]** i förhandsgranskningsfönstret för data. Den här loggen anger att uppräkningsvärdet &quot;2&quot; inte har angetts.
 
    ![](assets/query_editor_nveau_80.png)

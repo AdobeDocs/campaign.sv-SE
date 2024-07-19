@@ -6,15 +6,15 @@ level: Beginner, Intermediate
 exl-id: 0783e289-ae8e-4bb7-80f1-f90937a528c1
 source-git-commit: f463c5747b844544ba561a63e4cb0359c0c258c8
 workflow-type: tm+mt
-source-wordcount: '798'
-ht-degree: 1%
+source-wordcount: '785'
+ht-degree: 2%
 
 ---
 
 
 # Posta meddelanden på X (Twitter) med Adobe Campaign {#post-tw-messages}
 
-Adobe Campaign har en **Social marknadsföring** så att ni kan interagera med kunder och prospects via X (tidigare Twitter).
+Adobe Campaign har en modul för **social marknadsföring** som gör att du kan interagera med kunder och potentiella kunder via X (tidigare Twitter).
 
 När integreringen är konfigurerad kan du:
 
@@ -23,7 +23,7 @@ När integreringen är konfigurerad kan du:
 * Samla in nya kontakter genom att återställa profildata, vilket gör att ni kan genomföra riktade kampanjer och, när det är möjligt, implementera flerkanalsstrategier. Den här åtgärden kräver användarens samtycke.
 
 
-Konfigurationssteg för att integrera ditt X-konto med Adobe Campaign beskrivs i [den här sidan](../connect/ac-tw.md).
+Konfigurationssteg för att integrera ditt X-konto med Adobe Campaign beskrivs på [den här sidan](../connect/ac-tw.md).
 
 ## Skapa och publicera ett X-inlägg {#publish-on-tw}
 
@@ -31,7 +31,7 @@ Följ stegen nedan för att publicera ett meddelande på ditt X-konto:
 
 1. Skapa en X-leverans
 
-   Skapa en ny leverans baserad på **[!UICONTROL Tweet (twitter)]** leveransmall.
+   Skapa en ny leverans baserat på leveransmallen **[!UICONTROL Tweet (twitter)]**.
 
    ![](assets/tw-new-delivery.png)
 
@@ -44,21 +44,21 @@ Följ stegen nedan för att publicera ett meddelande på ditt X-konto:
    1. Klicka på länken **[!UICONTROL To]**.
    1. Klicka på knappen **[!UICONTROL Add]**.
    1. Välj **[!UICONTROL A Twitter account]**.
-   1. I **[!UICONTROL Folder]** markerar du den tjänstmapp som innehåller X-kontot. Välj sedan det X-konto som du vill skicka tweeten till.
+   1. I fältet **[!UICONTROL Folder]** väljer du den tjänstmapp som innehåller X-kontot. Välj sedan det X-konto som du vill skicka tweeten till.
 
 1. Välj korrekturmål
 
-   The **[!UICONTROL Target of the proofs]** På -fliken kan du definiera X-kontot som ska användas för testleveranser före den slutliga leveransen.
+   På fliken **[!UICONTROL Target of the proofs]** kan du definiera X-kontot som ska användas för testleveranser före den slutliga leveransen.
 
-   Enligt informationen i [konfigurationssteg](../connect/ac-tw.md#tw-test-account)måste du skapa ett X-konto för privat test som är dedikerat för att skicka korrektur.
+   Så som beskrivs i [konfigurationsstegen](../connect/ac-tw.md#tw-test-account) måste du skapa ett privat test-X-konto som är dedikerat till att skicka korrektur.
 
    >[!NOTE]
    >
-   >Om du använder samma X-testkonto för alla leveranser kan du spara korrekturmålet i **[!UICONTROL Tweet]** leveransmall, via **[!UICONTROL Resources > Templates > Delivery templates]** nod. Korrekturmålet anges sedan som standard för varje ny leverans.
+   >Om du använder samma X-testkonto för alla leveranser kan du spara korrekturmålet i **[!UICONTROL Tweet]**-leveransmallen, som du kommer åt via noden **[!UICONTROL Resources > Templates > Delivery templates]**. Korrekturmålet anges sedan som standard för varje ny leverans.
 
 1. Definiera innehållet i ditt inlägg
 
-   Ange innehållet i ditt inlägg i **[!UICONTROL Content]** -fliken.
+   Ange innehållet i ditt inlägg på fliken **[!UICONTROL Content]**.
 
    ![](assets/tw-delivery-content.png)
 
@@ -72,13 +72,13 @@ Följ stegen nedan för att publicera ett meddelande på ditt X-konto:
 
 1. Förhandsgranska ditt inlägg
 
-   Sök i **[!UICONTROL Preview]** för att kontrollera återgivningen av inlägget.
+   Bläddra på fliken **[!UICONTROL Preview]** för att kontrollera återgivningen av inlägget.
 
    ![](assets/tw-delivery-preview.png)
 
-   1. Klicka på **[!UICONTROL Preview]** -fliken.
-   1. Klicka på **[!UICONTROL Test personalization]** nedrullningsbar meny och välj **[!UICONTROL Service]**.
-   1. I **[!UICONTROL Folder]** markerar du den tjänstmapp som innehåller ditt X-konto.
+   1. Klicka på fliken **[!UICONTROL Preview]**.
+   1. Klicka på listrutan **[!UICONTROL Test personalization]** och välj **[!UICONTROL Service]**.
+   1. I fältet **[!UICONTROL Folder]** väljer du den tjänstmapp som innehåller ditt X-konto.
 
 1. Skicka en korrektur
 
@@ -86,41 +86,41 @@ Följ stegen nedan för att publicera ett meddelande på ditt X-konto:
 
 1. Lägg upp meddelandet
 
-   1. När innehållet är godkänt klickar du på **[!UICONTROL Send]** -knappen.
-   1. Välj **[!UICONTROL Deliver as soon as possible]** och klicka på **[!UICONTROL Analyze]** -knappen.
+   1. När innehållet har godkänts klickar du på knappen **[!UICONTROL Send]**.
+   1. Markera **[!UICONTROL Deliver as soon as possible]** och klicka på knappen **[!UICONTROL Analyze]**.
    1. Kontrollera resultatet när analysen är klar.
-   1. Klicka **[!UICONTROL Confirm delivery]** och sedan klicka **[!UICONTROL Yes]**.
+   1. Klicka på **[!UICONTROL Confirm delivery]** och sedan på **[!UICONTROL Yes]**.
 
 ## Skicka direktmeddelanden till följare {#direct-tw-messages}
 
-The **[!UICONTROL Synchronize Twitter accounts]** tekniskt arbetsflöde återställer listan med X-följare så att du kan skicka direktmeddelanden till dem. [Läs mer](../connect/ac-tw.md#synchro-tw-accounts)
+Det tekniska arbetsflödet för **[!UICONTROL Synchronize Twitter accounts]** återställer listan med X-följare så att du kan skicka direktmeddelanden till dem. [Läs mer](../connect/ac-tw.md#synchro-tw-accounts)
 
 Följ stegen nedan för att skicka direktmeddelanden till dina följare:
 
-1. Skapa en X-leverans baserad på **[!UICONTROL Tweet (Direct Message)]** inbyggd leveransmall.
+1. Skapa en X-leverans baserat på den **[!UICONTROL Tweet (Direct Message)]** inbyggda leveransmallen.
 
 1. Välj huvudmålet
 
    ![](assets/tw-dm-define-target.png)
 
-   1. Välj **[!UICONTROL To]** -länken och **[!UICONTROL Add]** -knappen.
+   1. Markera länken **[!UICONTROL To]** och knappen **[!UICONTROL Add]**.
 
    1. Välj en typ av målinriktning
 
-      * Välj **[!UICONTROL Twitter subscribers]** för att skicka ett direktmeddelande till alla dina följare.
+      * Välj **[!UICONTROL Twitter subscribers]** om du vill skicka ett direktmeddelande till alla dina följare.
 
-      * Välj **[!UICONTROL Filter conditions]** för att definiera en fråga och visa resultatet. Lär dig hur du skapar ett filter i [det här avsnittet](../audiences/create-filters.md#advanced-filters).
+      * Välj **[!UICONTROL Filter conditions]** om du vill definiera en fråga och visa resultatet. Lär dig hur du skapar ett filter i [det här avsnittet](../audiences/create-filters.md#advanced-filters).
 
-1. Välj korrekturmålet på menyn **[!UICONTROL Target of the proofs]** flik: det här kontot kommer att få ett bevis på ditt direktmeddelande.
+1. Välj korrekturmålet på fliken **[!UICONTROL Target of the proofs]**: det här kontot kommer att få ditt direktmeddelande som bevis.
 
-   Enligt informationen i [konfigurationssteg](../connect/ac-tw.md#tw-test-account)måste du skapa ett X-konto för privat test som är dedikerat för att skicka korrektur.
+   Så som beskrivs i [konfigurationsstegen](../connect/ac-tw.md#tw-test-account) måste du skapa ett privat test-X-konto som är dedikerat till att skicka korrektur.
 
 
    >[!NOTE]
    >
-   >Om du vill skicka alla korrektur för direktmeddelanden till samma X-konto kan du spara korrekturmålet i **[!UICONTROL Tweet (Direct Message)]** leveransmall, via **[!UICONTROL Resources > Templates > Delivery templates]** nod.
+   >Om du vill skicka alla dina korrektur för direktmeddelanden till samma X-konto kan du spara korrekturmålet i leveransmallen **[!UICONTROL Tweet (Direct Message)]** som du kommer åt via noden **[!UICONTROL Resources > Templates > Delivery templates]**.
 
-1. Ange innehållet i meddelandet i **[!UICONTROL Content]** -fliken.
+1. Ange innehållet i meddelandet på fliken **[!UICONTROL Content]**.
 
    ![](assets/tw-dm-content.png)
 
@@ -128,35 +128,35 @@ Följ stegen nedan för att skicka direktmeddelanden till dina följare:
 
 1. Förhandsgranska meddelandet
 
-   Sök i **[!UICONTROL Preview]** för att kontrollera återgivningen av inlägget.
+   Bläddra på fliken **[!UICONTROL Preview]** för att kontrollera återgivningen av inlägget.
 
    ![](assets/tw-dm-preview.png)
 
-   1. Klicka på **[!UICONTROL Preview]** -fliken.
-   1. Klicka på **[!UICONTROL Test personalization]** nedrullningsbar meny och välj **[!UICONTROL Visitor Subscription]**.
+   1. Klicka på fliken **[!UICONTROL Preview]**.
+   1. Klicka på listrutan **[!UICONTROL Test personalization]** och välj **[!UICONTROL Visitor Subscription]**.
    1. Välj ett X-konto som du vill testa förhandsvisningen med.
 
 1. Skicka en korrektur
 
-   Innan du skickar meddelandet måste du verifiera det av [skicka ett bevis till ett testkonto](../send/preview-and-proof.md): du kan sedan få en exakt återgivning av meddelandet på ett privat X-konto och kontrollera innehåll och personalisering.
+   Innan du skickar ditt meddelande måste du verifiera det genom att [skicka ett bevis till ett testkonto](../send/preview-and-proof.md): du kan sedan få en exakt återgivning av meddelandet på ett privat X-konto och kontrollera innehåll och personalisering.
 
 1. Skicka direktmeddelandet
 
-   1. När innehållet är godkänt klickar du på **[!UICONTROL Send]** -knappen.
-   1. Välj **[!UICONTROL Deliver as soon as possible]** och klicka på **[!UICONTROL Analyze]** -knappen.
+   1. När innehållet har godkänts klickar du på knappen **[!UICONTROL Send]**.
+   1. Markera **[!UICONTROL Deliver as soon as possible]** och klicka på knappen **[!UICONTROL Analyze]**.
    1. Kontrollera resultatet när analysen är klar.
-   1. Klicka **[!UICONTROL Confirm delivery]** och sedan klicka **[!UICONTROL Yes]**.
+   1. Klicka på **[!UICONTROL Confirm delivery]** och sedan på **[!UICONTROL Yes]**.
 
 >[!CAUTION]
 >
->Du kan inte skicka mer än 250 direktmeddelanden per dag. För att undvika att detta tröskelvärde överskrids kan du leverera i vågor. Mer information finns i [Campaign Classic v7 - dokumentation](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/key-steps-when-creating-a-delivery/steps-sending-the-delivery.html#sending-using-multiple-waves){target="_blank"}.
+>Du kan inte skicka mer än 250 direktmeddelanden per dag. För att undvika att detta tröskelvärde överskrids kan du leverera i vågor. Mer information finns i [Campaign Classic v7-dokumentationen](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/key-steps-when-creating-a-delivery/steps-sending-the-delivery.html#sending-using-multiple-waves){target="_blank"}.
 
 
 ## Åtkomstspårningsdata {#tw-tracking}
 
-I den inbyggda **[!UICONTROL Tweet]** leveransmall, spårning är aktiverat som standard.
+Spårning är aktiverat som standard i den inbyggda leveransmallen **[!UICONTROL Tweet]**.
 
-Spåra data kan visas i leveransrapporterna och i **[!UICONTROL Edit > Tracking]** fliken för leveransen och tjänsten.
+Spårningsdata kan visas i leveransrapporterna och på fliken **[!UICONTROL Edit > Tracking]** för leveransen och tjänsten.
 
-Spårningskonfigurationen är densamma som för en e-postleverans. Läs mer i [Campaign Classic v7 - dokumentation](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/monitoring-deliveries/about-delivery-monitoring.html){target="_blank"}.
+Spårningskonfigurationen är densamma som för en e-postleverans. Läs mer i [Campaign Classic v7-dokumentationen](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/monitoring-deliveries/about-delivery-monitoring.html){target="_blank"}.
 

@@ -56,7 +56,7 @@ Från och med 8.6 stöder inte längre alla Campaign v8-versioner 32-bitars oper
 
 +++Hur uppgraderar jag från Windows (32-bitars) till Windows (64-bitars)?
 
-Kontrollera att datorprocessorn har stöd för installation av ett 64-bitars operativsystem. Om du uppgraderar från 32-bitarsversionen till 64-bitarsversionen av Windows måste du formatera om hårddisken, installera 64-bitarsversionen av Windows och sedan installera om allt annat som finns på enheten. Mer information finns i [32- och 64-bitars Windows: Frågor och svar](https://support.microsoft.com/en-us/windows/32-bit-and-64-bit-windows-frequently-asked-questions-c6ca9541-8dce-4d48-0415-94a3faa2e13d){target="_blank"}.
+Kontrollera att datorprocessorn har stöd för installation av ett 64-bitars operativsystem. Om du uppgraderar från 32-bitarsversionen till 64-bitarsversionen av Windows måste du formatera om hårddisken, installera 64-bitarsversionen av Windows och sedan installera om allt annat som finns på enheten. Mer information finns i [32-bitars och 64-bitars Windows: Vanliga frågor ](https://support.microsoft.com/en-us/windows/32-bit-and-64-bit-windows-frequently-asked-questions-c6ca9541-8dce-4d48-0415-94a3faa2e13d){target="_blank"}.
 
 +++
 

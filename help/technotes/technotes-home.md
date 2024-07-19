@@ -46,34 +46,34 @@ Från och med Campaign v8.6 förbättras autentiseringsprocessen till Campaign v
     <td>
       <img src="../v8/assets/do-not-localize/icon-experience.svg" width="35px">
     <br/>
-      <strong>Kundens upplevelse</strong><br/><a href="../automation/workflow/about-workflows.md" target="_blank">Automatisera med arbetsflöden</a> - <a href="../automation/campaigns/set-up-campaigns.md" target="_blank">Kampanjsamordning</a> - <a href="../v8/interaction/interaction.md">Beslutsledning</a> - <a href="../v8/send/personalize.md">Personalization</a>
+      <strong>Kundens upplevelse</strong><br/><a href="../automation/workflow/about-workflows.md" target="_blank">Automatisera med arbetsflöden</a> - <a href="../automation/campaigns/set-up-campaigns.md" target="_blank">Kampanjsamordning</a> - <a href="../v8/interaction/interaction.md">Beslutshantering</a> - <a href="../v8/send/personalize.md">Personalization</a>
     </td>
     <td>
       <img src="../v8/assets/do-not-localize/icon-send.svg" width="35px">
     <br/>
-      <strong>Skicka meddelanden</strong><br/><a href="../v8/start/create-message.md">Kom igång</a> - <a href="../v8/send/preview-and-proof.md">Förhandsgranska och korrektur</a> - <a href="../v8/send/predictive.md">Optimering vid sändning</a> - <a href="../v8/reporting/gs-reporting.md">Rapportering och analys</a>
+      <strong>Skicka meddelanden</strong><br/><a href="../v8/start/create-message.md">Kom igång</a> - <a href="../v8/send/preview-and-proof.md">Förhandsgranska och korrektur</a> - <a href="../v8/send/predictive.md">Tidsoptimering för sändning</a> - <a href="../v8/reporting/gs-reporting.md">Rapportering och analys</a>
     </td>
   </tr>
   <tr style="border: 0;">
     <td>
       <img src="../v8/assets/do-not-localize/icon_profile-audience.svg" width="35px">
     <br/>
-      <strong>Profiler och målgrupper</strong><br/><a href="../v8/audiences/create-profiles.md">Lägg till profiler</a> - <a href="../v8/audiences/create-audiences.md">Skapa målgrupper</a> - <a href="../v8/start/subscriptions.md">Hantera prenumerationer</a> - <a href="../v8/start/privacy.md">Integritet</a>
+      <strong>Profiler och målgrupper</strong><br/><a href="../v8/audiences/create-profiles.md">Lägg till profiler</a> - <a href="../v8/audiences/create-audiences.md">Skapa målgrupper</a> - <a href="../v8/start/subscriptions.md">Hantera prenumerationer</a> - <a href="../v8/start/privacy.md">Sekretess</a>
     </td>
     <td>
       <img src="../v8/assets/do-not-localize/icon-configure.svg" width="35px">
     <br/>
-      <strong>Arkitektur och konfiguration</strong><br/><a href="../v8/architecture/architecture.md">Arkitektur</a> - <a href="../v8/start/implement.md">Implementering av Campaign v8</a> - <a href="../v8/connect/integration.md">Kommunicera med andra lösningar</a> - <a href="../v8/start/gs-permissions.md">Användare och behörigheter</a>
+      <strong>Arkitektur och konfiguration</strong><br/><a href="../v8/architecture/architecture.md">Arkitektur</a> - <a href="../v8/start/implement.md">Kampanjimplementering v8</a> - <a href="../v8/connect/integration.md">Anslut till andra lösningar</a> - <a href="../v8/start/gs-permissions.md">Användare och behörigheter</a>
     </td>
     <td>
       <img src="../v8/assets/do-not-localize/icon-dev.svg" width="35px">
     <br/>
-      <strong>Resurser för utvecklare</strong><br/><a href="../v8/dev/datamodel.md">Campaign v8, datamodell</a> - <a href="../v8/dev/schemas.md">Scheman</a> - <a href="../v8/dev/api.md">API:er</a>
+      <strong>Utvecklarresurser</strong><br/><a href="../v8/dev/datamodel.md">Datamodellen Campaign v8</a> - <a href="../v8/dev/schemas.md">Scheman</a> - <a href="../v8/dev/api.md">API:er</a>
     </td>
   </tr>
 </table>
 
 ## Ytterligare resurser
 
-[Adobe Campaign v8 - produktbeskrivning](https://helpx.adobe.com/se/legal/product-descriptions/adobe-campaign-managed-cloud-services.html){target="_blank"} - [Dokumentation för Adobe Campaign webbgränssnitt](https://experienceleague.adobe.com/docs/campaign-web/v8/campaign-web-home.html){target="_blank"} - [Tutorials](https://experienceleague.adobe.com/docs/campaign-learn/tutorials/overview.html){target="_blank"} - [[!DNL Adobe Campaign] automatiseringsguide](https://experienceleague.adobe.com/docs/campaign/automation/home.html){target="_blank"} - [Kontrollpanelen för Campaign v8](https://experienceleague.adobe.com/docs/control-panel/using/discover-control-panel/key-features.html?lang=sv){target="_blank"}
+[Produktbeskrivning för Adobe Campaign v8](https://helpx.adobe.com/se/legal/product-descriptions/adobe-campaign-managed-cloud-services.html){target="_blank"} - [Dokumentation för Adobe Campaign webbgränssnitt](https://experienceleague.adobe.com/docs/campaign-web/v8/campaign-web-home.html){target="_blank"} - [Tutorials](https://experienceleague.adobe.com/docs/campaign-learn/tutorials/overview.html){target="_blank"} - [[!DNL Adobe Campaign] automatiseringsguide](https://experienceleague.adobe.com/docs/campaign/automation/home.html){target="_blank"} - [Kontrollpanelen för Campaign v8](https://experienceleague.adobe.com/docs/control-panel/using/discover-control-panel/key-features.html?lang=sv){target="_blank"}
 

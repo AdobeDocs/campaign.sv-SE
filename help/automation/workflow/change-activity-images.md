@@ -7,7 +7,7 @@ role: Admin
 exl-id: f5580401-3305-4915-88a2-3400a32aa7aa
 source-git-commit: 567c2e84433caab708ddb9026dda6f9cb717d032
 workflow-type: tm+mt
-source-wordcount: '156'
+source-wordcount: '158'
 ht-degree: 3%
 
 ---
@@ -18,11 +18,11 @@ ht-degree: 3%
 
 De bilder som används i diagrammen för de olika arbetsflödena kan ändras. De måste dock uppfylla vissa krav. Här är genomförandefaserna:
 
-* Om du vill ändra bakgrundsbilden väljer du önskat målarbetsflöde och klickar sedan på **[!UICONTROL Properties]** -fliken.
+* Om du vill ändra bakgrundsbilden väljer du önskat målarbetsflöde och klickar sedan på fliken **[!UICONTROL Properties]**.
 
   ![](assets/s_user_segmentation_properties_tab.png)
 
-  Om du vill välja vilken bild som ska användas klickar du på **[!UICONTROL Select link]** ikonen till höger om **[!UICONTROL Background image]** fält.
+  Klicka på ikonen **[!UICONTROL Select link]** till höger om fältet **[!UICONTROL Background image]** för att välja bilden som ska användas.
 
   >[!NOTE]
   >
@@ -30,20 +30,20 @@ De bilder som används i diagrammen för de olika arbetsflödena kan ändras. De
 
   ![](assets/s_user_segmentation_background_select.png)
 
-  The **[!UICONTROL Edit link]** kan du visa den markerade bilden.
+  Med ikonen **[!UICONTROL Edit link]** kan du visa den markerade bilden.
 
-* Om du vill ändra bilden som är associerad med en aktivitet dubbelklickar du på objektet och klickar sedan på **[!UICONTROL Advanced]** -fliken.
+* Om du vill ändra bilden som är associerad med en aktivitet dubbelklickar du på objektet och sedan på fliken **[!UICONTROL Advanced]**.
 
-  Om du vill välja vilken bild som ska användas klickar du på **[!UICONTROL Select link]** ikonen till höger om **[!UICONTROL Image]** fält.
+  Klicka på ikonen **[!UICONTROL Select link]** till höger om fältet **[!UICONTROL Image]** för att välja bilden som ska användas.
 
   ![](assets/s_user_segmentation_activity_image.png)
 
-  The **[!UICONTROL Edit link]** kan du visa den markerade bilden.
+  Med ikonen **[!UICONTROL Edit link]** kan du visa den markerade bilden.
 
   ![](assets/s_user_segmentation_activity_image_select.png)
 
 >[!NOTE]
 >
->Bilderna som har sparats i **[!UICONTROL Administration > Configuration > Images]** trädnoden kan väljas.
+>De bilder som sparas i noden **[!UICONTROL Administration > Configuration > Images]** i trädet kan väljas.
 >  
 >Bilderna måste vara i PNG-format med 48 x 48 pixlar, 16 miljoner färger och en genomskinlig bakgrund.

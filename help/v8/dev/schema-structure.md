@@ -14,7 +14,7 @@ ht-degree: 1%
 
 # Schemastruktur{#schema-structure}
 
-Grundstrukturen för en `<srcschema>` är som följer:
+Grundstrukturen för en `<srcschema>` är följande:
 
 ```
 <srcSchema>
@@ -54,7 +54,7 @@ Grundstrukturen för en `<srcschema>` är som följer:
 </srcSchema>
 ```
 
-XML-dokumentet i ett dataschema måste innehålla **`<srcschema>`** rotelementet med **name** och **namespace** attribut för att fylla i schemanamnet och dess namnutrymme.
+XML-dokumentet i ett dataschema måste innehålla rotelementet **`<srcschema>`** med attributen **name** och **namespace** för att schemanamnet och dess namnområde ska kunna fyllas i.
 
 ```
 <srcSchema name="schema_name" namespace="namespace">
@@ -95,7 +95,7 @@ I det här exemplet representeras huvudelementet av följande rad:
 <element name="recipient">
 ```
 
-Elementen **`<attribute>`** och **`<element>`** som följer huvudelementet gör att du kan definiera plats och namn för dataobjekten i XML-strukturen.
+Med elementen **`<attribute>`** och **`<element>`** som följer huvudelementet kan du definiera plats och namn för dataobjekten i XML-strukturen.
 
 I vårt exempelschema är följande:
 
@@ -110,42 +110,42 @@ I vårt exempelschema är följande:
 
 Följande regler måste följas:
 
-* Varje **`<element>`** och **`<attribute>`** måste identifieras med namn via **name** -attribut.
+* Varje **`<element>`** och **`<attribute>`** måste identifieras med namn via attributet **name**.
 
   >[!CAUTION]
   >
   >Elementets namn ska vara kortfattat, helst på engelska, och endast innehålla tillåtna tecken i enlighet med XML-reglerna för namngivning.
 
-* Endast **`<element>`** -element kan innehålla **`<attribute>`** element och **`<element>`** -element i XML-strukturen.
-* An **`<attribute>`** -elementet måste ha ett unikt namn inom ett **`<element>`**.
-* Användning av **`<elements>`** i flerradiga datasträngar rekommenderas.
+* Endast **`<element>`** element kan innehålla **`<attribute>`** element och **`<element>`** element i XML-strukturen.
+* Ett **`<attribute>`**-element måste ha ett unikt namn i en **`<element>`**.
+* Du bör använda **`<elements>`** i flerradiga datasträngar.
 
 ## Datatyper {#data-types}
 
-Datatypen anges via **type** i **`<attribute>`** och **`<element>`** -element.
+Datatypen anges via attributet **type** i elementen **`<attribute>`** och **`<element>`**.
 
-En detaljerad lista finns i [Campaign Classic v7 - dokumentation](https://experienceleague.adobe.com/docs/campaign-classic/using/configuring-campaign-classic/schema-reference/elements-attributes/schema-introduction.html#configuring-campaign-classic){target="_blank"}.
+En detaljerad lista finns i [Campaign Classic v7-dokumentationen](https://experienceleague.adobe.com/docs/campaign-classic/using/configuring-campaign-classic/schema-reference/elements-attributes/schema-introduction.html#configuring-campaign-classic){target="_blank"}.
 
-När attributet inte är ifyllt, **string** är standarddatatypen såvida inte elementet innehåller underordnade element. Om den gör det används den bara för att strukturera elementen hierarkiskt (**`<location>`** -element i vårt exempel).
+När det här attributet inte är ifyllt är **string** standarddatatypen om inte elementet innehåller underordnade element. Om den gör det används den bara för att strukturera elementen hierarkiskt (**`<location>`** element i vårt exempel).
 
 Följande datatyper stöds i scheman:
 
-* **string**: teckensträng. Exempel: förnamn, stad osv.
+* **sträng**: teckensträng. Exempel: förnamn, stad osv.
 
-  Storleken kan anges via **length** attribute (optional, default value &quot;255&quot;).
+  Storleken kan anges via attributet **length** (valfritt, standardvärde 255).
 
 * **boolesk**: Booleskt fält. Exempel på möjliga värden: true/false, 0/1, yes/no, osv.
-* **byte**, **kort**, **long**: heltal (1 byte, 2 byte, 4 byte). Exempel: ålder, kontonummer, antal poäng osv.
+* **byte**, **short**, **long**: heltal (1 byte, 2 byte, 4 byte). Exempel: ålder, kontonummer, antal poäng osv.
 * **double**: flyttal med dubbel precision. Exempel: ett pris, en kurs, osv.
-* **datum**, **datetime**: datum och datum + tider. Exempel: födelsedatum, inköpsdatum osv.
+* **date**, **datetime**: datum och datum + gånger. Exempel: födelsedatum, inköpsdatum osv.
 * **datetimenotz**: datum + tid utan tidszonsdata.
 * **tidsintervall**: varaktighet. Exempel: tjänsteålder.
 * **PM**: långa textfält (flera rader). Exempel: en beskrivning, en kommentar, osv.
-* **uuid**: Unik identifierare
+* **uid**: Uniqueidentifier-fält
 
   >[!NOTE]
   >
-  >Innehåller **uuid** måste funktionen&quot;newuid()&quot; läggas till och slutföras med standardvärdet.
+  >Om du vill innehålla ett **uid**-fält måste funktionen &quot;newuid()&quot; läggas till och slutföras med standardvärdet.
 
 Här är vårt exempelschema med de angivna typerna:
 
@@ -164,11 +164,11 @@ Här är vårt exempelschema med de angivna typerna:
 
 ## Egenskaper {#properties}
 
-The **`<elements>`** och **`<attributes>`** element i dataschemat kan berikas med olika egenskaper. Du kan fylla i en etikett för att beskriva det aktuella elementet.
+Elementen **`<elements>`** och **`<attributes>`** i dataschemat kan berikas med olika egenskaper. Du kan fylla i en etikett för att beskriva det aktuella elementet.
 
 ### Etiketter och beskrivningar {#labels-and-descriptions}
 
-* The **label** kan du ange en kort beskrivning.
+* Med egenskapen **label** kan du ange en kort beskrivning.
 
   >[!NOTE]
   >
@@ -184,7 +184,7 @@ The **`<elements>`** och **`<attributes>`** element i dataschemat kan berikas me
 
   ![](assets/schema_label.png)
 
-* The **desc** kan du ange en lång beskrivning.
+* Med egenskapen **desc** kan du ange en lång beskrivning.
 
   Beskrivningen visas från indataformuläret i statusfältet i huvudfönstret i Adobe Campaign klientkonsol.
 
@@ -200,7 +200,7 @@ The **`<elements>`** och **`<attributes>`** element i dataschemat kan berikas me
 
 ### Standardvärden {#default-values}
 
-The **standard** kan du definiera ett uttryck som returnerar ett standardvärde när innehåll skapas.
+Med egenskapen **default** kan du definiera ett uttryck som returnerar ett standardvärde när innehåll skapas.
 
 Värdet måste vara ett uttryck som är kompatibelt med XPath-språket. Mer information om detta finns i [det här avsnittet](#reference-with-xpath).
 
@@ -209,13 +209,13 @@ Värdet måste vara ett uttryck som är kompatibelt med XPath-språket. Mer info
 * Aktuellt datum: **default=&quot;GetDate()&quot;**
 * Räknare: **default=&quot;&#39;FRM&#39;+CounterValue(&#39;myCounter&#39;)&quot;**
 
-  I det här exemplet konstrueras standardvärdet med sammanfogningen av en sträng och anropet till **CounterValue** med ett kostnadsfritt räknarnamn. Det returnerade talet ökas med ett steg vid varje infogning.
+  I det här exemplet skapas standardvärdet med hjälp av sammanfogningen av en sträng och anropet av funktionen **CounterValue** med ett kostnadsfritt räknarnamn. Det returnerade talet ökas med ett steg vid varje infogning.
 
   >[!NOTE]
   >
-  >I Adobe Campaign klientkonsol **[!UICONTROL Administration>Counters]** noden används för att hantera räknare.
+  >I Adobe Campaign klientkonsol används noden **[!UICONTROL Administration>Counters]** för att hantera räknare.
 
-Om du vill länka ett standardvärde till ett fält använder du `<default>  or  <sqldefault>   field.  </sqldefault> </default>`
+Om du vill länka ett standardvärde till ett fält kan du använda `<default>  or  <sqldefault>   field.  </sqldefault> </default>`
 
 `<default>` : låter dig fylla i fältet i förväg med ett standardvärde när entiteter skapas. Värdet kommer inte att vara ett standard-SQL-värde.
 
@@ -225,7 +225,7 @@ Om du vill länka ett standardvärde till ett fält använder du `<default>  or 
 
 #### Kostnadsfri uppräkning {#free-enumeration}
 
-The **userEnum** kan du definiera en kostnadsfri uppräkning för att memorera och visa de värden som anges i det här fältet. Syntaxen är följande:
+Med egenskapen **userEnum** kan du definiera en kostnadsfri uppräkning för att memorera och visa de värden som anges i det här fältet. Syntaxen är följande:
 
 **userEnum=&quot;uppräkningens namn&quot;**
 
@@ -237,13 +237,13 @@ Dessa värden visas i en nedrullningsbar lista från indataformuläret:
 
 >[!NOTE]
 >
->I Adobe Campaign klientkonsol **[!UICONTROL Administration > Enumerations]** noden används för att hantera uppräkningar.
+>I Adobe Campaign klientkonsol används noden **[!UICONTROL Administration > Enumerations]** för att hantera uppräkningar.
 
 #### Ange uppräkning {#set-enumeration}
 
-The **enum** Med -egenskapen kan du definiera en fast uppräkning som används när listan med möjliga värden är känd i förväg.
+Med egenskapen **enum** kan du definiera en fast uppräkning som används när listan med möjliga värden är känd i förväg.
 
-The **enum** -attribut refererar till definitionen för en uppräkningsklass som är ifylld i schemat utanför huvudelementet.
+Attributet **enum** refererar till definitionen för en uppräkningsklass som är ifylld i schemat utanför huvudelementet.
 
 Uppräkningar gör att användaren kan välja ett värde i en nedrullningsbar lista i stället för att ange värdet i ett vanligt inmatningsfält:
 
@@ -259,27 +259,27 @@ Exempel på en uppräkningsdeklaration i dataschemat:
 </enumeration>
 ```
 
-En uppräkning deklareras utanför huvudelementet via **`<enumeration>`** -element.
+En uppräkning deklareras utanför huvudelementet via elementet **`<enumeration>`**.
 
 Uppräkningsegenskaperna är följande:
 
 * **baseType**: typ av data som är associerade med värdena,
 * **label**: beskrivning av uppräkningen,
-* **name**: uppräkningens namn,
+* **namn**: uppräkningens namn,
 * **standard**: uppräkningens standardvärde.
 
-Uppräkningsvärdena deklareras i **`<value>`** element med följande attribut:
+Uppräkningsvärdena deklareras i elementet **`<value>`** med följande attribut:
 
-* **name**: namn på internt lagrade värden,
+* **name**: namnet på värdet som lagras internt,
 * **label**: etikett som visas via det grafiska gränssnittet.
 
 #### dbenum-uppräkning {#dbenum-enumeration}
 
-* The **dbenum** kan du definiera en uppräkning vars egenskaper liknar de i **enum** -egenskap.
+* Med egenskapen **dbenum** kan du definiera en uppräkning vars egenskaper liknar egenskaperna för egenskapen **enum**.
 
-  Men **name** -attributet lagrar inte värdet internt, utan lagrar en kod som gör att du kan utöka de berörda tabellerna utan att ändra deras schema.
+  Attributet **name** lagrar dock inte värdet internt, utan lagrar en kod som gör att du kan utöka de berörda tabellerna utan att ändra deras schema.
 
-  Värdena definieras via **[!UICONTROL Administration>Enumerations]** nod.
+  Värdena definieras via noden **[!UICONTROL Administration>Enumerations]**.
 
   Den här uppräkningen används till exempel för att ange kampanjens karaktär.
 
@@ -312,9 +312,9 @@ Här är vårt exempelschema med egenskaperna ifyllda:
 
 En samling är en lista med element med samma namn och samma hierarkiska nivå.
 
-The **obunden** -attribut med värdet &quot;true&quot; kan du fylla i ett samlingselement.
+Med attributet **unbound** med värdet &quot;true&quot; kan du fylla i ett samlingselement.
 
-**Exempel**: definition av **`<group>`** samlingselement i schemat.
+**Exempel**: definition av samlingselementet **`<group>`** i schemat.
 
 ```
 <element name="group" unbound="true" label="List of groups">
@@ -340,23 +340,23 @@ Elementen anges med sitt namn och attributen anges med namnet före tecknet&quot
 **Exempel**:
 
 * **@email**: markerar e-postmeddelandet,
-* **location/@city**: väljer attributet&quot;city&quot; under **`<location>`** element
-* **../@email**: markerar e-postadressen från det överordnade elementet i det aktuella elementet
-* **grupp`[1]/@label`**: markerar attributet &quot;label&quot; som är underordnat det första **`<group>`** samlingselement
-* **grupp`[@label='test1']`**: markerar attributet &quot;label&quot; som är underordnat **`<group>`** och innehåller värdet &quot;test1&quot;
+* **location/@city**: väljer attributet &quot;city&quot; under elementet **`<location>`**
+* **../@email**: väljer e-postadressen från det överordnade elementet för det aktuella elementet
+* **group`[1]/@label`**: markerar attributet &quot;label&quot; som är underordnat det första **`<group>`**-samlingselementet
+* **group`[@label='test1']`**: markerar attributet &quot;label&quot; som är underordnat elementet **`<group>`** och innehåller värdet &quot;test1&quot;
 
 >[!NOTE]
 >
 >En ytterligare begränsning läggs till när banan korsar ett underelement. I det här fallet måste följande uttryck placeras inom hakparenteser:
 >
->* **location/@city** är inte giltigt. Använd **`[location/@city]`**
+>* **location/@city** är inte giltig. Använd **`[location/@city]`**
 >* **`[@email]`** och **@email** är likvärdiga
 >
 
 Det går också att definiera komplexa uttryck, till exempel följande aritmetiska operationer:
 
-* **@kön+1**: lägger till 1 i innehållet i **kön** attribut,
-* **@email + &#39;(&#39;+@created+&#39;)&#39;**: skapar en sträng genom att värdet för den e-postadress som lagts till i skapandedatumet mellan parenteser (för strängtypen anges konstanten med citattecken).
+* **@kön+1**: lägger till 1 i innehållet i attributet **kön**,
+* **@email + &#39;(&#39;+@created+&#39;)&#39;**: konstruerar en sträng genom att ta värdet för e-postadressen som lagts till i skapandedatumet mellan parenteser (för strängtypen sätter du konstanten inom citattecken).
 
 Funktioner på hög nivå har lagts till i uttrycken för att berika detta språks potential.
 
@@ -367,14 +367,14 @@ Du kommer åt listan över tillgängliga funktioner via en uttrycksredigerare i 
 **Exempel**:
 
 * **GetDate()**: returnerar aktuellt datum
-* **År(@skapad)**: returnerar året för det datum som finns i attributet &quot;created&quot;.
-* **GetEmailDomain(@email)**: returnerar e-postadressens domän.
+* **Year(@created)**: returnerar året för datumet som finns i attributet&quot;created&quot;.
+* **GetEmailDomain(@email)**: returnerar domänen för e-postadressen.
 
 ## Skapa en sträng via beräkningssträngen {#building-a-string-via-the-compute-string}
 
-A **Beräkningssträng** är ett XPath-uttryck som används för att konstruera en sträng som representerar en post i en tabell som är associerad med schemat. **Beräkningssträng** används främst i det grafiska gränssnittet för att visa etiketten för en markerad post.
+En **beräkningssträng** är ett XPath-uttryck som används för att konstruera en sträng som representerar en post i en tabell som är associerad med schemat. **Beräkningssträngen** används främst i det grafiska gränssnittet för att visa etiketten för en markerad post.
 
-The **Beräkningssträng** definieras via **`<compute-string>`** -elementet under dataschemats huvudelement. An **expr** -attributet innehåller ett XPath-uttryck för att beräkna visningen.
+**Beräkningssträngen** definieras via elementet **`<compute-string>`** under huvudelementet i dataschemat. Ett **expr**-attribut innehåller ett XPath-uttryck för att beräkna visningen.
 
 **Exempel**: beräkningssträng för mottagartabellen.
 

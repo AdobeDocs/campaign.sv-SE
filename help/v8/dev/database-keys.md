@@ -4,13 +4,13 @@ description: Förstå nyckelhantering i Adobe Campaign scheman
 feature: Data Model, Configuration
 role: Developer
 level: Intermediate, Experienced
-source-git-commit: 673298a60927902bba71fd9167c5408e538f4929
+exl-id: cf1f5cfc-172f-44ec-ac97-804d15f9d628
+source-git-commit: 0f5efba364ef924447324bdd806e15e6db8d799d
 workflow-type: tm+mt
 source-wordcount: '268'
 ht-degree: 0%
 
 ---
-
 
 # Nyckelhantering {#management-of-keys}
 
@@ -26,7 +26,7 @@ En nyckel deklareras från huvudelementet i dataschemat.
 </key>
 ```
 
-En nyckel kallas för &#39;primärnyckel&#39; när den är den första i schemat som ska fyllas i, eller om den innehåller `internal` -attributet har värdet &quot;true&quot;.
+En nyckel kallas för primärnyckel när den är den första i schemat som ska fyllas i, eller om den innehåller attributet `internal` inställt på true.
 
 En nyckel kan referera till ett eller flera fält i tabellen.
 
@@ -108,7 +108,7 @@ En nyckel kan referera till ett eller flera fält i tabellen.
 
 ## Primär nyckel - identifierare{#primary-key}
 
-När det gäller en [Företagsdistribution (FFDA)](../architecture/enterprise-deployment.md)är huvudnyckeln i Adobe Campaign tabeller en **Universally Unique ID (UUID)** autogenereras av databasmotorn. Nyckelvärdet är unikt i hela databasen. Innehållet i nyckeln genereras automatiskt när posten infogas.
+I samband med en [Enterprise (FFDA)-distribution](../architecture/enterprise-deployment.md) är primärnyckeln för Adobe Campaign-tabeller ett **UUID** som genereras automatiskt av databasmotorn. Nyckelvärdet är unikt i hela databasen. Innehållet i nyckeln genereras automatiskt när posten infogas.
 
 **Exempel**
 
@@ -142,4 +142,3 @@ Förutom definitionen av nyckeln har ett numeriskt fält med namnet&quot;id&quot
 >[!CAUTION]
 >
 >När tabellen skapas infogas automatiskt en post med primärnyckeln 0. Den här posten används för att undvika yttre kopplingar, som inte gäller för volymtabeller. Som standard initieras alla sekundärnycklar med värdet 0 så att ett resultat alltid kan returneras vid kopplingen när dataobjektet inte fylls i.
-

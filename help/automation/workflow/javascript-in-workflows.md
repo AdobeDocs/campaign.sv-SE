@@ -18,21 +18,21 @@ I följande exempel visas hur du kan använda JavaScript-kod i ett arbetsflöde:
 
 * [Skriv till databasen](#write-example)
 * [Fråga databasen](#read-example)
-* [Utlösa ett arbetsflöde med en statisk SOAP-metod](#trigger-example)
-* [Interagera med databasen med en icke-statisk SOAP-metod](#interact-example)
+* [Utlösa ett arbetsflöde med en statisk SOAP](#trigger-example)
+* [Interagera med databasen med en icke-statisk SOAP](#interact-example)
 
-[Läs mer](https://experienceleague.adobe.com/developer/campaign-api/api/p-14.html){target="_blank"} om statiska och statiska SOAP-metoder.
+[Läs mer](https://experienceleague.adobe.com/developer/campaign-api/api/p-14.html){target="_blank"} om statiska och icke-statiska SOAP.
 
-I dessa exempel används tillägget ECMAScript för XML (E4X). Med det här tillägget kan du kombinera JavaScript-anrop och XML-mallar i samma skript.
+I dessa exempel används tillägget ECMAScript för XML (E4X). Med det här tillägget kan du kombinera JavaScript-samtal och XML-primitiver i samma skript.
 
 Följ de här stegen för att testa de här exemplen:
 
 1. Skapa ett arbetsflöde och lägg till de här aktiviteterna i arbetsflödet:
    1. Starta aktivitet
-   1. JavaScript-kodaktivitet
+   1. JavaScript kodaktivitet
    1. Avsluta aktivitet
 
-   [Läs mer](build-a-workflow.md) om arbetsflöden.
+   [Läs mer](build-a-workflow.md) om hur du skapar arbetsflöden.
 
 1. Lägg till JavaScript-koden i en aktivitet. [Läs mer](advanced-parameters.md).
 1. Spara arbetsflödet.
@@ -42,16 +42,16 @@ Följ de här stegen för att testa de här exemplen:
 
 ## Exempel 1: skriv till databasen{#write-example}
 
-Om du vill skriva till databasen kan du använda den statiska `Write` metoden på `xtk:session` schema:
+Om du vill skriva till databasen kan du använda den statiska metoden `Write` i `xtk:session`-schemat:
 
 1. Skapa en skrivbegäran i XML.
 
 1. Skriv posten:
 
-   1. Ring `Write` metoden på `xtk:session` schema.
+   1. Anropa metoden `Write` i schemat `xtk:session`.
 
       >[!IMPORTANT]
-      > Om du använder Adobe Campaign v8 rekommenderar vi att du använder mellanlagringsmekanismen med **Inmatning** och **Datauppdatering/borttagning** API:er för `Write` i en Snowflake-tabell. [Läs mer](https://experienceleague.adobe.com/docs/campaign/campaign-v8/architecture/api/new-apis.html){target="_blank"}.
+      > Om du använder Adobe Campaign v8 rekommenderar vi att du använder mellanlagringsmekanismen med API:erna **Input** och **Data update/delete** för metoden `Write` i en Snowflake-tabell. [Läs mer](https://experienceleague.adobe.com/docs/campaign/campaign-v8/architecture/api/new-apis.html){target="_blank"}.
 
    1. Skicka XML-koden som ett argument för skrivbegäran.
 
@@ -61,7 +61,7 @@ Du kan lägga till, uppdatera och ta bort poster.
 
 #### Infoga en post
 
-På grund av `insert` är standardåtgärden, du behöver inte ange den.
+Eftersom åtgärden `insert` är standardåtgärden behöver du inte ange den.
 
 Ange den här informationen som XML-attribut:
 
@@ -79,7 +79,7 @@ var myXML = <recipient xtkschema="nms:recipient"
 
 #### Uppdatera en post
 
-Använd `_update` operation.
+Använd åtgärden `_update`.
 
 Ange den här informationen som XML-attribut:
 
@@ -99,12 +99,12 @@ var myXML = <recipient xtkschema="nms:recipient"
 
 #### Ta bort en post
 
-Använd `DeleteCollection` -metod. [Läs mer](https://experienceleague.adobe.com/developer/campaign-api/api/sm-session-DeleteCollection.html){target="_blank"}.
+Använd metoden `DeleteCollection`. [Läs mer](https://experienceleague.adobe.com/developer/campaign-api/api/sm-session-DeleteCollection.html){target="_blank"}.
 
 Ange den här informationen:
 
 * Schemat för tabellen som ska ändras
-* The `where` -sats som krävs för att identifiera den post som ska uppdateras, i form av ett XML-element
+* Satsen `where` som krävs för att identifiera den post som ska uppdateras, i form av ett XML-element
 
 Exempel:
 
@@ -120,7 +120,7 @@ xtk.session.DeleteCollection(
 
 ### Steg 2: skriv posten
 
-Anropa den icke-statiska `Write` metoden på `xtk:session` schema:
+Anropa den icke-statiska `Write`-metoden i `xtk:session`-schemat:
 
 ```javascript
 xtk.session.Write(myXML)
@@ -144,7 +144,7 @@ I den här videon visas hur du skriver till databasen:
 
 ## Exempel 2: fråga databasen{#read-example}
 
-Om du vill fråga databasen kan du använda den icke-statiska `xtk:queryDef` förekomstmetod:
+Om du vill fråga databasen kan du använda den icke-statiska instansmetoden `xtk:queryDef`:
 
 1. Skapa en fråga i XML.
 1. Skapa ett frågeobjekt.
@@ -152,7 +152,7 @@ Om du vill fråga databasen kan du använda den icke-statiska `xtk:queryDef` fö
 
 ### Steg 1: skapa en fråga
 
-Ange XML-koden för en `queryDef` enhet.
+Ange XML-koden för en `queryDef`-entitet.
 
 Syntax:
 
@@ -166,9 +166,9 @@ Ange den här informationen:
 
 * Schemat för tabellen som ska läsas
 * Åtgärden
-* De kolumner som ska returneras, i en `select` sats
-* Villkoren i `where` sats
-* filtreringsvillkoren, i en `orderBy` sats
+* Kolumner som ska returneras, i en `select`-sats
+* Villkoren i en `where`-sats
+* Filtervillkoren i en `orderBy`-sats
 
 Du kan använda följande åtgärder:
 
@@ -177,11 +177,11 @@ Du kan använda följande åtgärder:
 | `select` | Noll eller fler element returneras som en samling. |
 | `getIfExists` | Ett element returneras. Om det inte finns något matchande element returneras ett tomt element. |
 | `get` | Ett element returneras. Om det inte finns något matchande element returneras ett fel. |
-| `count` | Antalet matchande poster returneras i form av ett element med en `count` -attribut. |
+| `count` | Antalet matchande poster returneras i form av ett element med attributet `count`. |
 
-Skriv `select`, `where`och `orderBy` -satser som XML-element:
+Skriv `select`-, `where`- och `orderBy`-satserna som XML-element:
 
-* `select` sats
+* `select`-sats
 
   Ange de kolumner som ska returneras. Om du till exempel vill markera personens förnamn och efternamn skriver du följande kod:
 
@@ -192,15 +192,15 @@ Skriv `select`, `where`och `orderBy` -satser som XML-element:
   </select>
   ```
 
-  Med `nms:recipient` schema, element returneras i det här formuläret:
+  Med schemat `nms:recipient` returneras element i det här formuläret:
 
   ```xml
   <recipient firstName="Bo" lastName="Didley"/>
   ```
 
-* `where` sats
+* `where`-sats
 
-  Om du vill ange villkor använder du `where` -sats. Du kan till exempel välja de poster som finns i **Utbildning** kan du skriva den här koden:
+  Om du vill ange villkor använder du en `where`-sats. Om du till exempel vill välja de poster som finns i mappen **Utbildning** kan du skriva följande kod:
 
   ```xml
   <where>
@@ -215,9 +215,9 @@ Skriv `select`, `where`och `orderBy` -satser som XML-element:
   <condition expr="@lastName='Garcia'"/>
   ```
 
-* `orderBy` sats
+* `orderBy`-sats
 
-  Om du vill sortera resultatmängden anger du `orderBy` -sats som ett XML-element med `sortDesc` -attribut. Om du till exempel vill sortera efternamnen i stigande ordning kan du skriva följande kod:
+  Om du vill sortera resultatmängden anger du `orderBy`-satsen som ett XML-element med attributet `sortDesc`. Om du till exempel vill sortera efternamnen i stigande ordning kan du skriva följande kod:
 
   ```xml
   <orderBy>
@@ -227,7 +227,7 @@ Skriv `select`, `where`och `orderBy` -satser som XML-element:
 
 ### Steg 2: skapa ett frågeobjekt
 
-Om du vill skapa en enhet från XML-koden använder du `create(`*`content`*`)` metod:
+Om du vill skapa en entitet från XML-koden använder du metoden `create(`*`content`*`)`:
 
 ```javascript
 var query = xtk.queryDef.create(
@@ -236,26 +236,26 @@ var query = xtk.queryDef.create(
     </queryDef>)
 ```
 
-Prefix the `create(`*`content`*`)` med schemat för den entitet som ska skapas.
+Prefix the `create(`*`content`*`)` method with the schema of the entity to be created.
 
-The *`content`* argument är ett strängargument och är valfritt. Det här argumentet innehåller XML-koden som beskriver entiteten.
+Argumentet *`content`* är ett strängargument och är valfritt. Det här argumentet innehåller XML-koden som beskriver entiteten.
 
 ### Steg 3: kör frågan
 
 Följ de här stegen:
 
-1. Ring `ExecuteQuery` metoden på `queryDef` enhet:
+1. Anropa metoden `ExecuteQuery` för entiteten `queryDef`:
 
    ```javascript
    var res = query.ExecuteQuery()
    ```
 
 1. Bearbeta resultaten:
-   1. Iterera över resultaten av `select` -åtgärd, med hjälp av en slingkonstruktion.
-   1. Testa resultaten med `getIfExists` operation.
-   1. Räkna resultaten med `count` operation.
+   1. Iterera resultatet av `select`-åtgärden med hjälp av en slingkonstruktion.
+   1. Testa resultaten med åtgärden `getIfExists`.
+   1. Räkna resultaten med åtgärden `count`.
 
-#### Resultat av en `select` operation
+#### Resultat av en `select`-åtgärd
 
 Alla matchningar returneras som en samling:
 
@@ -266,16 +266,16 @@ Alla matchningar returneras som en samling:
 </recipient-collection>
 ```
 
-Om du vill iterera igenom resultaten använder du `for each` slinga:
+Använd `for each`-slingan om du vill iterera igenom resultaten:
 
 ```javascript
 for each (var rcp in res:recipient)
     logInfo(rcp.@email)
 ```
 
-Slingan innehåller en lokal mottagarvariabel. För varje mottagare som returneras i mottagarsamlingen skrivs mottagarens e-post ut. [Läs mer](https://experienceleague.adobe.com/developer/campaign-api/api/f-logInfo.html){target="_blank"} om `logInfo` funktion.
+Slingan innehåller en lokal mottagarvariabel. För varje mottagare som returneras i mottagarsamlingen skrivs mottagarens e-post ut. [Läs mer](https://experienceleague.adobe.com/developer/campaign-api/api/f-logInfo.html){target="_blank"} om funktionen `logInfo`.
 
-#### Resultat av en `getIfExists` operation
+#### Resultat av en `getIfExists`-åtgärd
 
 Varje matchning returneras som ett element:
 
@@ -289,7 +289,7 @@ Om det inte finns någon matchning returneras ett tomt element:
 <recipient/>
 ```
 
-Du kan referera till primärnyckelnoden, till exempel `@id` attribute:
+Du kan referera till den primära nyckelnoden, till exempel attributet `@id`:
 
 ```javascript
 if (res.@id !=undefined)
@@ -298,7 +298,7 @@ if (res.@id !=undefined)
     }
 ```
 
-#### Resultatet av en `get` operation
+#### Resultat av en `get`-åtgärd
 
 En matchning returneras som ett element:
 
@@ -310,17 +310,17 @@ Om det inte finns någon matchning returneras ett fel.
 
 >[!TIP]
 >
->Om du vet att det finns en matchning använder du `get` operation. I annat fall använder du `getIfExists` operation. Om du använder den här bästa metoden visar felen oväntade problem. Om du använder `get` -åtgärd, använd inte `try…catch` -programsats. Problemet hanteras av arbetsflödets felhanteringsprocess.
+>Om du vet att det finns en matchning använder du åtgärden `get`. Annars använder du åtgärden `getIfExists`. Om du använder den här bästa metoden visar felen oväntade problem. Använd inte programsatsen `try…catch` om du använder åtgärden `get`. Problemet hanteras av arbetsflödets felhanteringsprocess.
 
-#### Resultatet av en `count` operation
+#### Resultat av en `count`-åtgärd
 
-An element with the `count` attribut returneras:
+Ett element med attributet `count` returneras:
 
 ```xml
 <recipient count="200">
 ```
 
-Om du vill använda resultatet läser du `@count` attribute:
+Se attributet `@count` om du vill använda resultatet:
 
 ```javascript
 if (res.@count > 0)
@@ -329,7 +329,7 @@ if (res.@count > 0)
     }
 ```
 
-För `select` lägger du till den här koden i en JavaScript-kodsaktivitet i arbetsflödet:
+För åtgärden `select` lägger du till den här koden i en JavaScript-kodsaktivitet i arbetsflödet:
 
 ```javascript
 var myXML =
@@ -348,7 +348,7 @@ for each (var rcp in res.recipient)
     logInfo(rcp.@firstName + " " + rcp.@lastName)
 ```
 
-På grund av `select` är standardåtgärden, du behöver inte ange den.
+Eftersom åtgärden `select` är standardåtgärden behöver du inte ange den.
 
 I den här videon visas hur du läser från databasen:
 >[!VIDEO](https://video.tv.adobe.com/v/18475/?learn=on)
@@ -359,23 +359,23 @@ Du kan starta arbetsflöden programmatiskt, till exempel i tekniska arbetsflöde
 
 Arbetsflöde som utlöser arbete genom användning av händelser. Du kan använda dessa funktioner för händelser:
 
-* Om du vill publicera en händelse kan du använda den statiska `PostEvent` -metod. [Läs mer](https://experienceleague.adobe.com/developer/campaign-api/api/sm-workflow-PostEvent.html){target="_blank"}.
-* Om du vill ta emot en händelse använder du **[!UICONTROL External signal]** aktivitet. [Läs mer](external-signal.md).
+* Om du vill publicera en händelse kan du använda den statiska metoden `PostEvent`. [Läs mer](https://experienceleague.adobe.com/developer/campaign-api/api/sm-workflow-PostEvent.html){target="_blank"}.
+* Om du vill ta emot en händelse kan du använda aktiviteten **[!UICONTROL External signal]**. [Läs mer](external-signal.md).
 
 Du kan utlösa arbetsflöden på olika sätt:
 
-* Du kan aktivera ett arbetsflöde infogat, det vill säga från huvudskriptet för en **[!UICONTROL JavaScript code]** aktivitet.
+* Du kan utlösa ett inline-arbetsflöde, det vill säga från huvudskriptet för en **[!UICONTROL JavaScript code]**-aktivitet.
 * Du kan utlösa ett arbetsflöde när ett annat har slutförts:
-   * Lägg till ett initieringsskript i **[!UICONTROL End]** det inledande arbetsflödets aktivitet.
-   * Lägg till **[!UICONTROL External signal]** aktiviteten i början av målarbetsflödet.
+   * Lägg till ett initieringsskript i **[!UICONTROL End]**-aktiviteten för det inledande arbetsflödet.
+   * Lägg till aktiviteten **[!UICONTROL External signal]** i början av målarbetsflödet.
 
      När det inledande arbetsflödet är klart bokförs en händelse. Den utgående övergången aktiveras och händelsevariablerna fylls i. Händelsen tas sedan emot av målarbetsflödet.
 
      >[!TIP]
      >
-     >Ett tips är att när du lägger till ett skript i en aktivitet måste du omsluta aktivitetsnamnet med exempelvis två bindestreck `-- end --`. [Läs mer](workflow-best-practices.md) om arbetsflöden.
+     >Ett tips är att när du lägger till ett skript i en aktivitet måste du omsluta aktivitetsnamnet med dubbla bindestreck, till exempel `-- end --`. [Läs mer](workflow-best-practices.md) om arbetsflödets bästa metoder.
 
-Syntax för `PostEvent` metod:
+Syntax för metoden `PostEvent`:
 
 ```javascript
 PostEvent(
@@ -387,7 +387,7 @@ PostEvent(
 )
 ```
 
-I det här exemplet skickas en kort text till **signal** verksamhet som **wkfExampleReceiver** arbetsflöde:
+I det här exemplet skickas en kort text till **signal**-aktiviteten för arbetsflödet **wkfExampleReceiver** när arbetsflödet har slutförts:
 
 ```javascript
 var strLabel = "Adobe Campaign, Marketing that delivers"
@@ -399,13 +399,13 @@ xtk.workflow.PostEvent(
     false)
 ```
 
-Eftersom den sista parametern är inställd på `false`, **wkfExampleReceiver** arbetsflödet aktiveras varje gång det inledande arbetsflödet slutförs.
+Eftersom den sista parametern är inställd på `false` aktiveras arbetsflödet **wkfExampleReceiver** varje gång det inledande arbetsflödet slutförs.
 
 Tänk på följande när du utlöser arbetsflöden:
 
-* The `PostEvent` kommandot körs asynkront. Kommandot placeras i serverkön. Metoden returneras efter att händelsen har bokförts.
+* Kommandot `PostEvent` körs asynkront. Kommandot placeras i serverkön. Metoden returneras efter att händelsen har bokförts.
 * Målarbetsflödet måste startas. I annat fall skrivs ett fel till loggfilen.
-* Om målarbetsflödet är pausat visas `PostEvent` kommandot står i kö tills arbetsflödet återupptas.
+* Om målarbetsflödet är inaktiverat ställs kommandot `PostEvent` i kö tills arbetsflödet återupptas.
 * Den utlösta aktiviteten kräver inte att en aktivitet pågår.
 
 I den här videon visas hur du använder statiska API-metoder:
@@ -418,22 +418,22 @@ I den här videon visas hur du utlöser arbetsflöden:
 
 I följande exempel visas hur du utför dessa åtgärder:
 
-* Använd `get` och `create` metoder för scheman att använda icke-statiska SOAP-metoder
+* Använd metoderna `get` och `create` i scheman om du vill använda icke-statiska SOAP
 * Skapa metoder som utför SQL-frågor
-* Använd `write` metod för att infoga, uppdatera och ta bort poster
+* Använd metoden `write` för att infoga, uppdatera och ta bort poster
 
 Följ de här stegen:
 
 1. Definiera frågan:
 
-   * Hämta en entitet med `create` -metoden i motsvarande schema, till exempel `xtk:workflow` schema. [Läs mer](https://experienceleague.adobe.com/developer/campaign-api/api/f-create.html){target="_blank"}.
-   * Använd `queryDef` metod för att skicka en SQL-fråga.
+   * Hämta en entitet genom att använda metoden `create` i motsvarande schema, till exempel schemat `xtk:workflow`. [Läs mer](https://experienceleague.adobe.com/developer/campaign-api/api/f-create.html){target="_blank"}.
+   * Använd metoden `queryDef` för att skicka en SQL-fråga.
 
-1. Kör frågan med `ExecuteQuery` -metod. [Läs mer](https://experienceleague.adobe.com/developer/campaign-api/api/sm-queryDef-ExecuteQuery.html){target="_blank"}.
+1. Kör frågan med metoden `ExecuteQuery`. [Läs mer](https://experienceleague.adobe.com/developer/campaign-api/api/sm-queryDef-ExecuteQuery.html){target="_blank"}.
 
-   Använd `for each` -slinga för att hämta resultaten.
+   Använd `for each`-slingan för att hämta resultaten.
 
-### Syntax för `queryDef` metod med en `select` sats
+### Syntax för metoden `queryDef` med en `select`-sats
 
 ```xml
 <queryDef schema="schema_key" operation="operation_type">
@@ -460,11 +460,11 @@ Följ de här stegen:
 </queryDef>
 ```
 
-### `Create` method
+### `Create`-metod
 
 #### Exempel 1: välj poster och skriv till journalen
 
-De interna namnen på de arbetsflöden som finns i **wfExamples** -mappen är markerad. Resultaten sorteras efter internt namn, i stigande ordning och skrivs till journalen.
+De interna namnen på de arbetsflöden som finns i mappen **wfExamples** markeras. Resultaten sorteras efter internt namn, i stigande ordning och skrivs till journalen.
 
 ```javascript
 var query = xtk.queryDef.create(
@@ -488,7 +488,7 @@ for each (var w in res.workflow)
 
 #### Exempel 2: ta bort poster
 
-Förnamn, efternamn, e-postadress och ID för alla mottagare som heter Chris Smith markeras. Resultaten sorteras efter e-post, i stigande ordning och skrivs till journalen. A `delete` används för att ta bort de markerade posterna.
+Förnamn, efternamn, e-postadress och ID för alla mottagare som heter Chris Smith markeras. Resultaten sorteras efter e-post, i stigande ordning och skrivs till journalen. En `delete`-åtgärd används för att ta bort de markerade posterna.
 
 ```javascript
 // Build the query, create a query object and hold the object in a variable
@@ -524,7 +524,7 @@ for each (var rec in res.recipient)
 
 #### Exempel 3: välj poster och skriv till journalen
 
-I det här exemplet används en icke-statisk metod. E-postadressen och födelseåret för alla mottagare vars information lagras i **1234** och vars e-postdomännamn börjar med adobe markeras. Resultaten sorteras efter födelsedatum i fallande ordning. Mottagarens e-postadress skrivs till journalen.
+I det här exemplet används en icke-statisk metod. E-post- och födelseåret för alla mottagare vars information lagras i mappen **1234** och vars e-postdomännamn börjar med adobe markeras. Resultaten sorteras efter födelsedatum i fallande ordning. Mottagarens e-postadress skrivs till journalen.
 
 ```javascript
 var query = xtk.queryDef.create(
@@ -549,19 +549,19 @@ for each (var w in res.recipient)
     logInfo(w.@email)
 ```
 
-### `Write` method
+### `Write`-metod
 
-Du kan infoga, uppdatera och ta bort poster. Du kan använda `Write` på alla scheman i Adobe Campaign. Eftersom den här metoden är statisk behöver du inte skapa något objekt. Du kan använda följande åtgärder:
+Du kan infoga, uppdatera och ta bort poster. Du kan använda metoden `Write` på vilket schema som helst i Adobe Campaign. Eftersom den här metoden är statisk behöver du inte skapa något objekt. Du kan använda följande åtgärder:
 
-* The `update` operation
-* The `insertOrUpdate` åtgärd, med `_key` argument för att identifiera den post som ska uppdateras
+* Åtgärden `update`
+* Åtgärden `insertOrUpdate` med argumentet `_key` för att identifiera den post som ska uppdateras
 
-  Om du inte anger **Mottagare** om det finns en matchning uppdateras posten i en undermapp. Annars skapas posten i roten **Mottagare** mapp.
+  Om du inte anger mappen **Mottagare** uppdateras posten i en undermapp om det finns en matchning. Annars skapas posten i rotmappen **Mottagare**.
 
-* The `delete` operation
+* Åtgärden `delete`
 
 >[!IMPORTANT]
-> Om du använder Adobe Campaign v8 rekommenderar vi att du använder mellanlagringsmekanismen med **Inmatning** och **Datauppdatering/borttagning** API:er för `Write` i en Snowflake-tabell. [Läs mer](https://experienceleague.adobe.com/docs/campaign/campaign-v8/architecture/api/new-apis.html){target="_blank"}.
+> Om du använder Adobe Campaign v8 rekommenderar vi att du använder mellanlagringsmekanismen med API:erna **Input** och **Data update/delete** för metoden `Write` i en Snowflake-tabell. [Läs mer](https://experienceleague.adobe.com/docs/campaign/campaign-v8/architecture/api/new-apis.html){target="_blank"}.
 
 #### Exempel 1: infoga eller uppdatera en post
 
@@ -611,7 +611,7 @@ I den här videon visas ett exempel på hur en icke-statisk API-metod används i
 
 ### API-dokumentation
 
-* [Exempel på SOAP-anrop](https://experienceleague.adobe.com/developer/campaign-api/api/p-14.html){target="_blank"}
+* [Exempel på SOAP samtal](https://experienceleague.adobe.com/developer/campaign-api/api/p-14.html){target="_blank"}
 * Metoder:
    * [Skapa](https://experienceleague.adobe.com/developer/campaign-api/api/f-create.html){target="_blank"}
    * [DeleteCollection](https://experienceleague.adobe.com/developer/campaign-api/api/sm-session-DeleteCollection.html){target="_blank"}

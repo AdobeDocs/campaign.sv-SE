@@ -18,9 +18,9 @@ ht-degree: 4%
 
 >[!CAUTION]
 >
->The **Läser in (SOAP)** aktiviteten är bara tillgänglig om du har **FDA (Federated Data Access)** modulen är installerad. Kontrollera licensavtalet.
+>Aktiviteten **Inläsning (SOAP)** är bara tillgänglig om du har modulen **FDA (Federated Data Access)** installerad. Kontrollera licensavtalet.
 
-The **Läser in (SOAP)** -aktiviteten används utöver **datainläsning (RDBMS)** verksamhet när det inte är möjligt att samla in data direkt via FDA i en extern databas.
+Aktiviteten **Inläsning (SOAP)** används utöver aktiviteten **datainläsning (RDBMS)** när det inte går att samla in data direkt via FDA i en extern databas.
 
 Åtgärden är följande:
 
@@ -42,12 +42,12 @@ The **Läser in (SOAP)** -aktiviteten används utöver **datainläsning (RDBMS)*
 
    Om du vill uppdatera exemplet väljer du **[!UICONTROL Re-analyze the example]**.
 
-1. Du kan använda radnumret som en identifierare och/eller ange att SOAP-anropet returnerar flera element.
+1. Du kan använda radnumret som en identifierare och/eller ange att SOAP returnerar flera element.
 1. Ange följande tabbskript beroende på deras funktion:
 
-   * **[!UICONTROL Initialization]**: upprättar en SOAP-anslutning.
-   * **[!UICONTROL Iteration]**: utför anropet till SOAP-tjänsten. Returvärdet för den här funktionen måste vara ett XML-objekt som är kompatibelt med beskrivningen av exemplet eller WSDL.
+   * **[!UICONTROL Initialization]**: upprättar en SOAP.
+   * **[!UICONTROL Iteration]**: utför anropet SOAP tjänsten. Returvärdet för den här funktionen måste vara ett XML-objekt som är kompatibelt med beskrivningen av exemplet eller WSDL.
 
      Koden för den här fliken anropas i en slinga av Adobe Campaign tills ett XML-objekt som är null returneras.
 
-   * **[!UICONTROL Finalization]**: stänger anslutningen och/eller frigör andra resurser som skapas under bearbetningen.
+   * **[!UICONTROL Finalization]**: stänger anslutningen och/eller frigör andra resurser som skapats under bearbetningen.

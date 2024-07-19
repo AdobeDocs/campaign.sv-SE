@@ -24,9 +24,9 @@ De viktigaste stegen för att konfigurera integreringen är följande:
 <table>
 <tr>
 <td><img src="../assets/do-not-localize/icon-connection.svg" width="60px"><p><a href="#oauth">Konfigurera en OAuth-anslutning</a></p></td>
-<td><img src="../assets/do-not-localize/icon-source.svg" width="60px"><p><a href="#source">Skapa en HTTP API-källanslutning</a></p></td>
+<td><img src="../assets/do-not-localize/icon-source.svg" width="60px"><p><a href="#source">Skapa en HTTP API Source-anslutning</a></p></td>
 <td><img src="../assets/do-not-localize/icon-options.svg" width="60px"><p><a href="#xtk">Lägg till autentiseringsalternativ i Campaign</a></p></td>
-<td><img src="../assets/do-not-localize/icon-javascript.svg" width="60px"><p><a href="#javascript">Lägga till JavaScript-koder i Campaign</a></p></td>
+<td><img src="../assets/do-not-localize/icon-javascript.svg" width="60px"><p><a href="#javascript">Lägg till JavaScript-koder i Campaign</a></p></td>
 <td><img src="../assets/do-not-localize/icon-workflow.svg" width="60px"><p><a href="#script">Konfigurera arbetsflödet för landningssidan</a></p></td>
 </table>
 
@@ -36,9 +36,9 @@ Adobe Cloud Platform API:er använder OAuth 2.0-protokollet för autentisering o
 
 Följ dessa steg för att göra detta:
 
-1. Gå till Adobe Developer Console.
-1. Skapa en ny API-anslutning med Adobe Experience Platform API-produkten. Detaljerade anvisningar om hur du får en OAuth 2.0-åtkomsttoken finns i [Adobe Developer Console-dokumentation](https://developer.adobe.com/developer-console/docs/guides/authentication/Tools/OAuthPlayground/).
-1. När anslutningen har skapats går du till **[!UICONTROL OAuth Server-to-Server]** meny och kopiera informationen nedan, som krävs i Campaign för autentisering:
+1. Få tillgång till Adobe Developer Console.
+1. Skapa en ny API-anslutning med Adobe Experience Platform API-produkten. Detaljerade steg för hur du får en OAuth 2.0-åtkomsttoken finns i [Adobe Developer Console-dokumentationen](https://developer.adobe.com/developer-console/docs/guides/authentication/Tools/OAuthPlayground/).
+1. När anslutningen har skapats går du till **[!UICONTROL OAuth Server-to-Server]**-menyn och kopierar informationen nedan, som krävs för autentisering i Campaign:
 
    * `CLIENT ID`
    * `CLIENT SECRET`
@@ -46,19 +46,19 @@ Följ dessa steg för att göra detta:
 
    ![](assets/ac-lp-oauth.png){width="70%"}
 
-Nu när din Oauth-anslutning är konfigurerad skapar och konfigurerar du en ny **[!UICONTROL HTTP API]** Källanslutning för att länka Adobe Campaign till Adobe Experience Platform.
+Nu när din Oauth-anslutning är konfigurerad skapar och konfigurerar du en ny **[!UICONTROL HTTP API]** Source-anslutning för att länka Adobe Campaign till Adobe Experience Platform.
 
-## Skapa en HTTP API-källanslutning {#source}
+## Skapa en HTTP API Source-anslutning {#source}
 
-När OAuth-anslutningen är på plats är nästa steg att skapa en **[!UICONTROL HTTP API]** Källanslutning i Adobe Experience Platform. Med den här anslutningen kan du strömma data till Adobe Experience Platform med API:er. Följ de här stegen:
+Med OAuth-anslutningen på plats är nästa steg att skapa en **[!UICONTROL HTTP API]** Source-anslutning i Adobe Experience Platform. Med den här anslutningen kan du strömma data till Adobe Experience Platform med API:er. Följ de här stegen:
 
-1. Navigera till Adobe Experience Platform **[!UICONTROL Sources]**, sök efter **[!UICONTROL HTTP API]** klicka sedan på **[!UICONTROL Add data]**.
+1. Gå till Adobe Experience Platform **[!UICONTROL Sources]**, sök efter källan **[!UICONTROL HTTP API]** och klicka sedan på **[!UICONTROL Add data]**.
 
    ![](assets/ac-lp-source.png){width="70%"}
 
-1. Konfigurera anslutningen beroende på dina behov. Detaljerad information om hur du konfigurerar en HTTP API-anslutning finns i [Dokumentation för Adobe Experience Platform-källor](https://experienceleague.adobe.com/docs/experience-platform/sources/ui-tutorials/create/streaming/http.html){target="_blank"}.
+1. Konfigurera anslutningen beroende på dina behov. Detaljerad information om hur du konfigurerar en HTTP API-anslutning finns i [dokumentationen för Adobe Experience Platform-källor](https://experienceleague.adobe.com/docs/experience-platform/sources/ui-tutorials/create/streaming/http.html){target="_blank"}.
 
-   På **[!UICONTROL Authentication]** steg, växla till **[!UICONTROL Enable authentication]** autentiseringsalternativ med åtkomsttoken som genererats tidigare genom OAuth-integreringen.
+   Aktivera alternativet **[!UICONTROL Enable authentication]** i steget **[!UICONTROL Authentication]** för att autentisera med åtkomsttoken som genererats tidigare genom OAuth-integreringen.
 
    ![](assets/ac-lp-source-authentication.png){width="70%"}
 
@@ -66,23 +66,23 @@ När OAuth-anslutningen är på plats är nästa steg att skapa en **[!UICONTROL
 
    ![](assets/ac-lp-endpoint.png){width="70%"}
 
-   Du kan även få åtkomst till ett exempel på dataformatet som har importerats till Adobe Experience Platform genom att öppna det nya dataflödet från **[!UICONTROL Dataflows]** -fliken.
+   Du kan även få åtkomst till ett exempel på dataformatet som är inkapslat i Adobe Experience Platform genom att öppna det nya dataflödet på fliken **[!UICONTROL Dataflows]**.
 
    ![](assets/ac-lp-schema.png){width="70%"}
 
-Nu när HTTP API Source-anslutningen har konfigurerats måste du lägga till specifika alternativ i Adobe Campaign för att aktivera anslutningen till Adobe Experience Platform.
+Nu när HTTP API Source-anslutningen är konfigurerad måste du lägga till specifika alternativ i Adobe Campaign för att aktivera anslutningen till Adobe Experience Platform.
 
 ## Lägg till autentiseringsalternativ i Adobe Campaign {#xtk}
 
-När HTTP API-källanslutningen har konfigurerats måste du lägga till specifika alternativ i Adobe Campaign för att aktivera anslutningen med Adobe Experience Platform. Detta kan du göra antingen på menyn Kampanjadministration eller när du kör arbetsflödet för landningssidan genom att lägga till en specifik **[!UICONTROL JavaScript code]** aktivitet.
+När HTTP API Source-anslutningen är konfigurerad måste du lägga till specifika alternativ i Adobe Campaign för att aktivera anslutningen med Adobe Experience Platform. Detta kan du göra antingen på menyn Kampanjadministration eller när du kör arbetsflödet för landningssidan genom att lägga till en specifik **[!UICONTROL JavaScript code]**-aktivitet.
 
 Bläddra bland flikarna nedan för att hitta de två metoderna:
 
 >[!BEGINTABS]
 
->[!TAB Lägg till alternativ från menyn Administration]
+>[!TAB Lägg till alternativ på menyn Administration]
 
-1. Navigera till **[!UICONTROL Administration]** > **[!UICONTROL Platform]** > **[!UICONTROL Options]**  -menyn.
+1. Navigera till menyn **[!UICONTROL Administration]** > **[!UICONTROL Platform]** > **[!UICONTROL Options]**.
 1. Lägg till följande alternativ med motsvarande värden från Adobe Developer Console:
 
    * IMS_CLIENT_ID = cryptString(CLIENT ID)
@@ -96,9 +96,9 @@ Bläddra bland flikarna nedan för att hitta de två metoderna:
    >
    >Funktionen cryptString() används för att kryptera dina autentiseringsdata.
 
->[!TAB Lägga till alternativ med en JavaScript-kodsaktivitet]
+>[!TAB Lägg till alternativ med en JavaScript-kodsaktivitet]
 
-Om du vill konfigurera dessa alternativ automatiskt när du utför arbetsflödet för landningssidor lägger du till en **[!UICONTROL JavaScript code]** till ditt arbetsflöde med koden nedan. [Lär dig hur du konfigurerar en JavaScript-kodaktivitet](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/action-activities/sql-code-and-JavaScript-code.html#JavaScript-code){target="_blank"}.
+Om du vill konfigurera de här alternativen automatiskt vid körningen av arbetsflödet för landningssidor lägger du till en **[!UICONTROL JavaScript code]**-aktivitet i arbetsflödet med koden nedan. [Lär dig hur du konfigurerar en JavaScript-kodaktivitet](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/action-activities/sql-code-and-JavaScript-code.html#JavaScript-code){target="_blank"}.
 
 När arbetsflödet körs skapas alternativen automatiskt i Campaign-konsolen med de angivna värdena.
 
@@ -110,7 +110,7 @@ När arbetsflödet körs skapas alternativen automatiskt i Campaign-konsolen med
     
     function setAuthCredentials()
     {
-    setOption(&quot;IMS_CLIENT_ID&quot;, cryptString(&#39;CLIENT ID&#39;));
+    setOption( &quot;IMS_CLIENT_ID&quot;, cryptString(&#39;CLIENT ID&#39;));
     setOption(&quot;IMS_CLIENT_SECRET&quot;, cryptString(&#39;CLIENT SECRET&#39;));
     setOption(&quot;IMS_ORG_ID&quot;, cryptString(&#39;ORGANIZATION ID&#39;));
     setOption(&quot;IMS_CLIENT_API_KEY&quot;, cryptString(&#39;CLIENT ID&#39;));
@@ -119,14 +119,14 @@ När arbetsflödet körs skapas alternativen automatiskt i Campaign-konsolen med
 
 >[!ENDTABS]
 
-Nu när autentiseringsalternativen har konfigurerats i Campaign måste du skapa anpassade JavaScript-koder som tillåter datasynkronisering mellan Campaign och Adobe Experience Platform från landningssidan.
+Nu när autentiseringsalternativen har konfigurerats i Campaign måste ni skapa anpassade JavaScript-koder som tillåter datasynkronisering mellan Campaign och Adobe Experience Platform från er landningssida.
 
 ## Lägg till alternativ vid körning av arbetsflöde {#javacript}
 
-Om du vill tillåta datasynkronisering mellan landningssidor och Adobe Experience Platform måste du lägga till anpassade JavaScript-koder i Adobe Campaign. Följ de här stegen:
+För att tillåta datasynkronisering mellan landningssidor och Adobe Experience Platform måste anpassade JavaScript-koder läggas till i Adobe Campaign. Följ de här stegen:
 
-1. Navigera till **[!UICONTROL Administration]** > **[!UICONTROL Configuration]** > **[!UICONTROL JavaScript codes]** -menyn.
-1. Skapa nya JavaScript-koder och kopiera och klistra in kodavsnitten nedan.
+1. Navigera till menyn **[!UICONTROL Administration]** > **[!UICONTROL Configuration]** > **[!UICONTROL JavaScript codes]**.
+1. Skapa nya JavaScript-koder och kopiera och klistra in nedanstående kodavsnitt.
 
    >[!NOTE]
    >
@@ -205,13 +205,13 @@ Om du vill tillåta datasynkronisering mellan landningssidor och Adobe Experienc
 
 +++
 
-Nu när de anpassade JavaScript-koderna har skapats i Adobe Campaign kan du konfigurera arbetsflödet som innehåller landningssidan så att dessa JavaScript-koder används för datasynkronisering.
+Nu när de anpassade JavaScript-koderna har skapats i Adobe Campaign kan du konfigurera arbetsflödet som innehåller din landningssida så att dessa JavaScript-koder används för datasynkronisering.
 
 ## Konfigurera arbetsflödet för landningssidan {#script}
 
-Med JavaScript-koderna i Adobe Campaign kan du använda dem i arbetsflödet på landningssidan med **[!UICONTROL JavaScript code]** verksamhet:
+När JavaScript-koderna har lagts till i Adobe Campaign kan du använda dem i arbetsflödet för landningssidor med hjälp av **[!UICONTROL JavaScript code]** aktiviteter:
 
-* Om du vill läsa in data från Experience Platform innan du läser in landningssidan lägger du till en **[!UICONTROL JavaScript code]** aktivitet före landningssidans aktivitet och kopiera Klistra in skript 1.
+* Om du vill läsa in data från Experience Platform innan du läser in landningssidan lägger du till en **[!UICONTROL JavaScript code]**-aktivitet före landningssidans aktivitet och kopierar Klistra in skript 1.
 
 +++ Skript 1 - Läs in profilattribut från Experience Platform
 
@@ -251,7 +251,7 @@ Med JavaScript-koderna i Adobe Campaign kan du använda dem i arbetsflödet på 
 
 +++
 
-* Om du vill uppdatera profilattributen för Experience Platform med data som skickats in på landningssidan lägger du till en **[!UICONTROL JavaScript code]** efter landningssidans aktivitet och kopiera Klistra in skript 2.
+* Om du vill uppdatera Experience Platform-profilattribut med data som skickats på landningssidan lägger du till en **[!UICONTROL JavaScript code]**-aktivitet efter landningssidans aktivitet och kopierar Klistra in skript 2.
 
 +++ Skript 2 - Uppdatera profilattribut för Experience Platform
 
@@ -331,7 +331,7 @@ Med JavaScript-koderna i Adobe Campaign kan du använda dem i arbetsflödet på 
 >
 >Om du inte lägger till något skript före landningssidans aktivitet utförs ingen kontroll av förekomsten av profiler i Adobe Experience Platform. När landningssidan skickas och profilen inte finns, skapas den i Adobe Experience Platform med attributen från landningssidan.
 
-Här följer ett exempel på ett arbetsflöde med JavaScript-kodaktiviteter före och efter en landningssida:
+Här följer ett exempel på ett arbetsflöde där JavaScript-kodaktiviteter används före och efter en landningssida:
 
 ![](assets/ac-lp-wkf.png){width="70%"}
 
@@ -343,6 +343,6 @@ Här är ett exempel på en landningssida och en JavaScript-kodaktivitet som kon
 
 ### Mer information
 
-* [Konfigurera en JavaScript-kodaktivitet](../../automation/workflow/sql-code-and-javascript-code.md#javascript-code)
+* [Konfigurera en JavaScript-kodsaktivitet](../../automation/workflow/sql-code-and-javascript-code.md#javascript-code)
 * [Skapa en landningssida](https://experienceleague.adobe.com/docs/campaign-classic/using/designing-content/editing-html-content/creating-a-landing-page.html){target="_blank"}
 * [Hantera prenumerationer och avbeställningar](../start/subscriptions.md)

@@ -24,15 +24,15 @@ Syftet är att kontrollera att uppdateringsprocessen har avslutats innan en anna
 
 Det här arbetsflödet består av:
 
-* a **Schemaläggare** -aktivitet, som kör arbetsflödet med en viss frekvens.
-* a **Testa** aktivitet som kontrollerar om arbetsflödet redan körs.
-* **Fråga** och **Uppdatera data** aktiviteter om arbetsflödet inte redan körs, följt av **End** aktivitet som initierar om arbetsflödesinstansvariabeln till false.
-* An **End** om arbetsflödet redan körs.
+* en **schemaläggaraktivitet** som kör arbetsflödet med en viss frekvens.
+* en **Test**-aktivitet som kontrollerar om arbetsflödet redan körs.
+* **Fråga** och **Uppdatera data** om arbetsflödet inte redan körs, följt av en **End**-aktivitet som initierar om arbetsflödesinstansvariabeln till false.
+* En **End**-aktivitet om arbetsflödet redan körs.
 
 Följ stegen nedan för att skapa arbetsflödet:
 
-1. Lägg till en **Schemaläggare** och sedan konfigurera dess frekvens efter dina behov.
-1. Lägg till en **Testa** aktivitet för att kontrollera om arbetsflödet redan körs och konfigurera det enligt nedan.
+1. Lägg till en **schemaläggaraktivitet** och konfigurera sedan dess frekvens efter dina behov.
+1. Lägg till en **Test**-aktivitet för att kontrollera om arbetsflödet redan körs och konfigurera den enligt nedan.
 
    >[!NOTE]
    >
@@ -40,13 +40,13 @@ Följ stegen nedan för att skapa arbetsflödet:
 
    ![](assets/uc_dataupdate_test.png)
 
-1. Lägg till en **End** till **Nej** gaffel. På så sätt kommer inget att köras om arbetsflödet redan körs.
-1. Lägg till önskade aktiviteter i **Ja** gaffel. I vårt fall, **Fråga** och **Uppdatera data** verksamhet.
-1. Öppna den första aktiviteten och lägg sedan till **instance.vars.isRunning = true** i **[!UICONTROL Advanced]** -fliken. På så sätt ställs instansvariabeln in som running.
+1. Lägg till en **End**-aktivitet i **No**-gaffeln. På så sätt kommer inget att köras om arbetsflödet redan körs.
+1. Lägg till önskade aktiviteter i **Ja**-gaffeln. I det här fallet **Aktiviteter för** och **Uppdatera data**.
+1. Öppna den första aktiviteten och lägg sedan till kommandot **instance.vars.isRunning = true** på fliken **[!UICONTROL Advanced]**. På så sätt ställs instansvariabeln in som running.
 
    ![](assets/uc_dataupdate_query.png)
 
-1. Lägg till en **End** aktivitet i slutet av **[!UICONTROL Yes]** gaffeln, lägg sedan till **instance.vars.isRunning = false** i **[!UICONTROL Advanced]** -fliken.
+1. Lägg till en **End**-aktivitet i slutet av **[!UICONTROL Yes]**-gaffeln och lägg sedan till kommandot **instance.vars.isRunning = false** på fliken **[!UICONTROL Advanced]**.
 
    På så sätt kommer ingen åtgärd att utföras så länge arbetsflödet körs.
 

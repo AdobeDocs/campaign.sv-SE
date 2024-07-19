@@ -1,28 +1,28 @@
 ---
 product: campaign
-title: Berika data
+title: Förbättra data
 description: Läs mer om arbetsflödesaktiviteten för anrikning
 feature: Workflows, Enrichment Activity
 role: User
 exl-id: 3b3fa15f-b16e-42c8-a2e6-03350aee1903
 source-git-commit: 567c2e84433caab708ddb9026dda6f9cb717d032
 workflow-type: tm+mt
-source-wordcount: '744'
-ht-degree: 1%
+source-wordcount: '749'
+ht-degree: 0%
 
 ---
 
-# Berika data{#enriching-data}
+# Förbättra data{#enriching-data}
 
 
 
 ## Om att förbättra data {#about-enriching-data}
 
-Här finns information om möjliga användningsområden för **[!UICONTROL Enrichment]** i ett målarbetsflöde. Mer information om hur du använder **[!UICONTROL Enrichment]** aktivitet, se: [Berikning](enrichment.md).
+Det här användningsfallet innehåller information om möjliga användningar av aktiviteten **[!UICONTROL Enrichment]** i ett målarbetsflöde. Mer information om hur du använder aktiviteten **[!UICONTROL Enrichment]** finns i: [Enrichment](enrichment.md).
 
-Det finns också ett användningsexempel om hur man förbättrar e-postleveransen med anpassade datum i [det här avsnittet](email-enrichment-with-custom-date-fields.md).
+Ett användningsexempel om hur du kan förbättra en e-postleverans med anpassade datum finns också i [det här avsnittet](email-enrichment-with-custom-date-fields.md).
 
-Kontakterna i marknadsföringsdatabasen får en inbjudan att delta i en tävling via ett webbprogram. Konkurrensresultaten återvinnas i **[!UICONTROL Competition results]** tabell. Det här registret är länkat till kontakttabellen (**[!UICONTROL Recipients]**). The **[!UICONTROL Competition results]** tabellen innehåller följande fält:
+Kontakterna i marknadsföringsdatabasen får en inbjudan att delta i en tävling via ett webbprogram. Konkurrensresultaten återfås i tabellen **[!UICONTROL Competition results]**. Den här tabellen är länkad till kontakttabellen (**[!UICONTROL Recipients]**). Tabellen **[!UICONTROL Competition results]** innehåller följande fält:
 
 * Konkurrensnamn (@game)
 * Utvärderingsnummer (@trial)
@@ -30,7 +30,7 @@ Kontakterna i marknadsföringsdatabasen får en inbjudan att delta i en tävling
 
 ![](assets/uc1_enrich_1.png)
 
-En kontakt hittades i **[!UICONTROL Recipients]** tabellen kan länkas till flera rader i **[!UICONTROL Competition results]** tabell. Relationen mellan de här två tabellerna är av typen 1-n. Här är ett exempel på resultatloggarna för en mottagare:
+En kontakt som hittas i tabellen **[!UICONTROL Recipients]** kan länkas till flera rader i tabellen **[!UICONTROL Competition results]**. Relationen mellan de här två tabellerna är av typen 1-n. Här är ett exempel på resultatloggarna för en mottagare:
 
 ![](assets/uc1_enrich_2.png)
 
@@ -42,10 +42,10 @@ Vi har skapat följande arbetsflöde för målinriktning för att konfigurera de
 
 Så här skapar du arbetsflödet:
 
-1. Två **[!UICONTROL Query]** aktiviteter och en **[!UICONTROL Intersection]** Verksamheten läggs till för att inrikta sig på nya prenumeranter som gick in i tävlingen sist.
-1. The **[!UICONTROL Enrichment]** används för att lägga till data som lagras i **[!UICONTROL Competition results]** tabell. The **[!UICONTROL Score]** det fält där vår leveranspersonalisering ska ske läggs till i arbetsflödets arbetsregister.
-1. The **[!UICONTROL Split]** typaktivitet används för att skapa delmängder av mottagare baserat på poängvärden.
-1. För varje delmängd av **[!UICONTROL Delivery]** aktiviteten läggs till.
+1. Två **[!UICONTROL Query]** aktiviteter och en **[!UICONTROL Intersection]**-aktivitet läggs till för nya prenumeranter som gick in sist i tävlingen.
+1. Aktiviteten **[!UICONTROL Enrichment]** används för att lägga till data som lagras i tabellen **[!UICONTROL Competition results]**. Fältet **[!UICONTROL Score]** som vår leveranspersonalisering ska ske i läggs till i arbetsflödets arbetsregister.
+1. Typaktiviteten **[!UICONTROL Split]** används för att skapa mottagardelmängder baserat på poängvärden.
+1. En **[!UICONTROL Delivery]**-aktivitet läggs till för varje delmängd.
 
 ## Steg 1: Riktning {#step-1--targeting}
 
@@ -57,33 +57,33 @@ Den andra frågan används för att rikta sig till de mottagare som deltog i den
 
 ![](assets/uc1_enrich_5.png)
 
-An **[!UICONTROL Intersection]** Typaktivitet läggs sedan till för att rikta sig till de mottagare som lagts till i databasen under de senaste sex månaderna och som gick in i den sista tävlingen.
+En aktivitet av typen **[!UICONTROL Intersection]** läggs sedan till som mål för de mottagare som lagts till i databasen under de senaste sex månaderna och som gick in i den sista tävlingen.
 
 ## Steg 2: Anrikning {#step-2--enrichment}
 
-I det här exemplet får du lära dig hur du anpassar leveranser enligt **[!UICONTROL Score]** fält som lagras i **[!UICONTROL Competition results]** tabell. Den här tabellen har en 1:n-typrelation med mottagartabellen. The **[!UICONTROL Enrichment]** används för att lägga till data från en tabell som är länkad till filtreringsdimensionen i arbetsflödets arbetsregister.
+I det här exemplet får du lära dig hur du anpassar leveranser enligt fältet **[!UICONTROL Score]** som lagras i tabellen **[!UICONTROL Competition results]**. Den här tabellen har en 1:n-typrelation med mottagartabellen. Aktiviteten **[!UICONTROL Enrichment]** används för att lägga till data från en tabell som är länkad till filtreringsdimensionen i arbetsflödets arbetsregister.
 
-1. På redigeringsskärmen för anrikningsaktiviteten väljer du **[!UICONTROL Add data]** sedan **[!UICONTROL Data linked to the filtering dimension]** och klicka **[!UICONTROL Next]**.
+1. Välj **[!UICONTROL Add data]**, **[!UICONTROL Data linked to the filtering dimension]** och klicka sedan på **[!UICONTROL Next]** på redigeringsskärmen för anrikningsaktiviteten.
 
    ![](assets/uc1_enrich_6.png)
 
-1. Välj sedan **[!UICONTROL Data linked to the filtering dimension]** väljer du **[!UICONTROL Competition results]** tabell och klicka **[!UICONTROL Next]**.
+1. Välj sedan alternativet **[!UICONTROL Data linked to the filtering dimension]**, markera tabellen **[!UICONTROL Competition results]** och klicka på **[!UICONTROL Next]**.
 
    ![](assets/uc1_enrich_7.png)
 
-1. Ange ett ID och en etikett och välj **[!UICONTROL Limit the line count]** i **[!UICONTROL Data collected]** fält. I **[!UICONTROL Lines to retrieve]** väljer du 1 som värde. För varje mottagare läggs en rad till i anrikningsaktiviteten **[!UICONTROL Competition results]** till arbetsflödets arbetsregister. Klicka på **[!UICONTROL Next]**.
+1. Ange ett ID och en etikett och välj alternativet **[!UICONTROL Limit the line count]** i fältet **[!UICONTROL Data collected]**. I fältet **[!UICONTROL Lines to retrieve]** väljer du 1 som ett värde. För varje mottagare kommer anrikningsaktiviteten att lägga till en rad från tabellen **[!UICONTROL Competition results]** i arbetsflödets arbetsregister. Klicka på **[!UICONTROL Next]**.
 
    ![](assets/uc1_enrich_8.png)
 
-1. I det här exemplet vill vi återfå mottagarens högsta poäng, men bara för den sista tävlingen. Lägg till ett filter i **[!UICONTROL Competition name]** fält för att exkludera alla rader som hör till tidigare tävlingar. Klicka på **[!UICONTROL Next]**.
+1. I det här exemplet vill vi återfå mottagarens högsta poäng, men bara för den sista tävlingen. Om du vill göra det lägger du till ett filter i fältet **[!UICONTROL Competition name]** för att exkludera alla rader som hör till tidigare tävlingar. Klicka på **[!UICONTROL Next]**.
 
    ![](assets/uc1_enrich_9.png)
 
-1. Gå till **[!UICONTROL Sort]** och klicka på **[!UICONTROL Add]** klickar du på **[!UICONTROL Score]** och markera kryssrutan i **[!UICONTROL descending]** kolumn för att sortera objekt i **[!UICONTROL Score]** fält i fallande ordning. För varje mottagare läggs en rad till i anrikningsaktiviteten som matchar den högsta poängen för det senaste spelet. Klicka på **[!UICONTROL Next]**.
+1. Gå till skärmen **[!UICONTROL Sort]** och klicka på knappen **[!UICONTROL Add]**, markera fältet **[!UICONTROL Score]** och markera kryssrutan i kolumnen **[!UICONTROL descending]** för att sortera objekt i fälten i fallande ordning. **[!UICONTROL Score]** För varje mottagare läggs en rad till i anrikningsaktiviteten som matchar den högsta poängen för det senaste spelet. Klicka på **[!UICONTROL Next]**.
 
    ![](assets/uc1_enrich_10.png)
 
-1. I **[!UICONTROL Data to add]** fönster, dubbelklicka på **[!UICONTROL Score]** fält. För varje mottagare läggs endast **[!UICONTROL Score]** fält. Klicka på **[!UICONTROL Finish]**.
+1. Dubbelklicka på fältet **[!UICONTROL Score]** i fönstret **[!UICONTROL Data to add]**. För varje mottagare läggs bara fältet **[!UICONTROL Score]** till i anrikningsaktiviteten. Klicka på **[!UICONTROL Finish]**.
 
    ![](assets/uc1_enrich_11.png)
 
@@ -105,22 +105,22 @@ Det matchande schemat har också berikats.
 
 ## Steg 3: Dela och leverera {#step-3--split-and-delivery}
 
-Om du vill sortera mottagarna baserat på deras poängvärden, kan du **[!UICONTROL Split]** Aktiviteten läggs till efter anrikningen.
+Om du vill sortera mottagarna baserat på deras poäng läggs en **[!UICONTROL Split]**-aktivitet till efter anrikningen.
 
 ![](assets/uc1_enrich_18.png)
 
-1. A first (**Vinnare**) har definierats så att mottagaren med det högsta poängtalet inkluderas. Det gör du genom att definiera en begränsning av antalet poster, tillämpa en fallande sortering på poängen och begränsa antalet poster till 1.
+1. En första (**vinnare**) delmängd har definierats så att den innehåller mottagaren med det högsta poängtalet. Det gör du genom att definiera en begränsning av antalet poster, tillämpa en fallande sortering på poängen och begränsa antalet poster till 1.
 
    ![](assets/uc1_enrich_16.png)
 
-1. Den andra (**Andra plats**) innehåller den mottagare som har det näst högsta poängtalet. Konfigurationen är densamma som för den första delmängden.
+1. Den andra delmängden (**Andra plats**) innehåller mottagaren med det näst högsta poängtalet. Konfigurationen är densamma som för den första delmängden.
 
    ![](assets/uc1_enrich_17.png)
 
-1. Den tredje (**losers**) innehåller alla andra mottagare. Gå till **[!UICONTROL General]** -fliken och kontrollera **[!UICONTROL Generate complement]** för alla mottagare som inte uppnådde de två högsta poängen.
+1. Den tredje delmängden (**losers**) innehåller alla andra mottagare. Gå till fliken **[!UICONTROL General]** och markera kryssrutan **[!UICONTROL Generate complement]** för att ange alla mottagare som inte uppnådde de två högsta poängen som mål.
 
    ![](assets/uc1_enrich_19.png)
 
-1. Lägg till en **[!UICONTROL Delivery]** typaktivitet för varje delmängd, med olika leveransmallar för varje.
+1. Lägg till en **[!UICONTROL Delivery]**-typaktivitet för varje delmängd, med olika leveransmallar för varje.
 
    ![](assets/uc1_enrich_20.png)

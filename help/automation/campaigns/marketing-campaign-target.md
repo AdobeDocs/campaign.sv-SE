@@ -7,7 +7,7 @@ role: User
 exl-id: 70a63632-f66d-40f2-806d-bde89303936a
 source-git-commit: 567c2e84433caab708ddb9026dda6f9cb717d032
 workflow-type: tm+mt
-source-wordcount: '1464'
+source-wordcount: '1463'
 ht-degree: 0%
 
 ---
@@ -16,11 +16,11 @@ ht-degree: 0%
 
 I en marknadsföringskampanj kan ni för varje leverans definiera:
 
-* Målgruppen. Du kan skicka meddelanden till en [lista över mottagare](#send-to-a-group) eller skapa [målgrupp i ett arbetsflöde](#build-the-main-target-in-a-workflow)
-* En kontrollgrupp. Du kan [lägga till en kontrollgrupp](#add-a-control-group) övervaka mottagarnas beteende efter meddelandeleverans
+* Målgruppen. Du kan skicka meddelanden till en [lista över mottagare](#send-to-a-group) eller skapa en [målgrupp i ett arbetsflöde](#build-the-main-target-in-a-workflow)
+* En kontrollgrupp. Du kan [lägga till en kontrollgrupp](#add-a-control-group) för att övervaka mottagarnas beteende efter meddelandeleveransen
 * dirigerade adresser - Läs mer i [det här avsnittet](../../v8/audiences/test-profiles.md).—>
 
-En del av den här informationen kan ärvas från [kampanjmall](marketing-campaign-templates.md#campaign-templates).
+En del av den här informationen kan ärvas från [kampanjmallen](marketing-campaign-templates.md#campaign-templates).
 
 <!--
 To build the delivery target, you can define filtering criteria for the recipients in the database. This recipient selection mode is presented in [this section](../../delivery/using/steps-defining-the-target-population.md).
@@ -28,10 +28,10 @@ To build the delivery target, you can define filtering criteria for the recipien
 
 ## Skicka till en grupp{#send-to-a-group}
 
-Du kan importera en population till en lista och sedan ange den här listan som mål i leveranser. Följ stegen nedan för att göra detta:
+Du kan importera en population till en lista och sedan ange den här listan som mål i leveranser. Gör så här:
 
-1. Redigera leveransen och klicka på **[!UICONTROL To]** länk för att ändra målpopulationen.
-1. I **[!UICONTROL Main target]** väljer du **[!UICONTROL Defined via the database]** och klicka **[!UICONTROL Add]** för att välja mottagare.
+1. Redigera leveransen och klicka på länken **[!UICONTROL To]** för att ändra målpopulationen.
+1. Välj alternativet **[!UICONTROL Defined via the database]** på fliken **[!UICONTROL Main target]** och klicka på **[!UICONTROL Add]** för att välja mottagare.
 
    ![](assets/select-main-target.png)
 
@@ -40,13 +40,13 @@ Du kan importera en population till en lista och sedan ange den här listan som 
    ![](assets/target-a-list.png)
 
 
-1. Klicka **[!UICONTROL Next]** för att markera listan.
+1. Klicka på **[!UICONTROL Next]** för att markera listan.
 
    ![](assets/select-the-list.png)
 
    Du kan förfina målet genom att lägga till nya filtervillkor.
 
-1. Klicka **[!UICONTROL Finish]** när alla villkor är definierade och spara huvudmålet.
+1. Klicka på **[!UICONTROL Finish]** när alla villkor har definierats och spara huvudmålet.
 
 ## Bygg målgruppen i ett kampanjarbetsflöde {#build-the-main-target-in-a-workflow}
 
@@ -58,7 +58,7 @@ Huvudmålet för en leverans kan också definieras i kampanjarbetsflödet: i den
 
 ### Skapa arbetsflödet {#create-a-targeting-workflow}
 
-Målinriktning kan skapas med en kombination av filtreringsvillkor i en grafisk sekvens i ett arbetsflöde. Ni kan skapa populationer och underpopulationer som ska anpassas efter era behov. Om du vill visa arbetsflödesredigeraren klickar du på **[!UICONTROL Targeting and workflows]** på kampanjkontrollpanelen.
+Målinriktning kan skapas med en kombination av filtreringsvillkor i en grafisk sekvens i ett arbetsflöde. Ni kan skapa populationer och underpopulationer som ska anpassas efter era behov. Om du vill visa arbetsflödesredigeraren klickar du på fliken **[!UICONTROL Targeting and workflows]** på kontrollpanelen för kampanjer.
 
 ![](assets/targeting-and-wf-tab.png)
 
@@ -84,48 +84,48 @@ Körnings- och formateringsfunktionerna för målarbetsflödet är tillgängliga
 
 >[!NOTE]
 >
->De aktiviteter som finns tillgängliga för att skapa diagrammet och alla funktioner för visning och layout finns i [det här avsnittet](../workflow/about-workflows.md).
+>Vilka aktiviteter som är tillgängliga för att skapa diagrammet och alla visnings- och layoutfunktioner finns i [det här avsnittet](../workflow/about-workflows.md).
 
 Ni kan skapa flera arbetsflöden för målinriktning för en enskild kampanj. Lägga till ett arbetsflöde:
 
-1. Gå till den övre vänstra delen av arbetsflödeszonen, högerklicka och välj **[!UICONTROL Add]**. Du kan också använda **[!UICONTROL New]** som finns ovanför den här zonen.
+1. Gå till den övre vänstra delen av arbetsflödets område, högerklicka och välj **[!UICONTROL Add]**. Du kan också använda knappen **[!UICONTROL New]** som finns ovanför den här zonen.
 
    ![](assets/add-a-wf.png)
 
-1. Välj **[!UICONTROL New workflow]** mall och namnge arbetsflödet.
-1. Klicka **[!UICONTROL OK]** för att bekräfta att arbetsflödet har skapats och skapa sedan diagrammet för arbetsflödet.
+1. Välj mallen **[!UICONTROL New workflow]** och ge arbetsflödet ett namn.
+1. Klicka på **[!UICONTROL OK]** för att bekräfta att arbetsflödet har skapats och skapa sedan diagrammet för arbetsflödet.
 
 ### Kör arbetsflödet {#execute-a-workflow}
 
-Målarbetsflöden kan startas manuellt via **[!UICONTROL Start]** i verktygsfältet, förutsatt att du har rätt behörighet.
+Målarbetsflöden kan startas manuellt med knappen **[!UICONTROL Start]** i verktygsfältet, förutsatt att du har rätt behörighet.
 
 Målsättningen kan programmeras för automatisk körning enligt ett schema (schemaläggare) eller en händelse (extern signal, filimport osv.).
 
-Åtgärder som rör körning av målarbetsflödet (starta, stoppa, pausa, osv.) är **asynkron** processer: kommandot sparas och börjar gälla så fort servern är tillgänglig för att använda det.
+Åtgärder som rör körning av målarbetsflödet (starta, stoppa, pausa, osv.) är **asynkrona** processer: kommandot sparas och börjar gälla så fort servern är tillgänglig för att använda det.
 
 Med verktygsfältsikonerna kan du utföra åtgärder för arbetsflödet för målanpassning.
 
 * Starta eller starta om
 
-   * The **[!UICONTROL Start]** Med -ikonen kan du starta målarbetsflödet. När du klickar på den här ikonen aktiveras alla aktiviteter utan en indataövergång (förutom slutpunktshopp).
+   * Med ikonen **[!UICONTROL Start]** kan du starta målarbetsflödet. När du klickar på den här ikonen aktiveras alla aktiviteter utan en indataövergång (förutom slutpunktshopp).
 
      ![](assets/start.png)
 
-     Servern tar hänsyn till begäran, vilket framgår av dess status: **[!UICONTROL Start as soon as possible]**.
+     Servern tar hänsyn till begäran, vilket visas av dess status: **[!UICONTROL Start as soon as possible]**.
 
-   * Du kan starta om arbetsflödet för målanpassning via motsvarande verktygsfältsikon. Det här kommandot kan vara användbart om **[!UICONTROL Start]** -ikonen är inte tillgänglig, till exempel när målarbetsflödet stoppas. I det här fallet klickar du på **[!UICONTROL Restart]** -ikonen för att förutse omstarten. Servern tar hänsyn till begäran, vilket framgår av dess status: **[!UICONTROL Restart requested]**.
+   * Du kan starta om arbetsflödet för målanpassning via motsvarande verktygsfältsikon. Det här kommandot kan vara användbart om ikonen **[!UICONTROL Start]** inte är tillgänglig, till exempel när du har stoppat målarbetsflödet. I det här fallet klickar du på ikonen **[!UICONTROL Restart]** för att förutse omstarten. Servern tar hänsyn till begäran enligt dess status: **[!UICONTROL Restart requested]**.
 
 * Stoppa eller pausa
 
    * Med verktygsfältsikonerna kan du stoppa eller pausa ett pågående målarbetsflöde.
 
-     När du klickar **[!UICONTROL Pause]**, pågående åtgärder **[!UICONTROL are not]** pausad, men ingen annan aktivitet startas förrän nästa omstart.
+     När du klickar på **[!UICONTROL Pause]** pausas åtgärder som pågår **[!UICONTROL are not]**, men ingen annan aktivitet startas förrän nästa omstart.
 
      ![](assets/pause.png)
 
      Servern tar hänsyn till kommandot, vilket visas i dess status: **[!UICONTROL Pause requested]**.
 
-     Du kan också pausa ett arbetsflöde för målinriktning automatiskt när körningen når en viss aktivitet. Om du vill göra det högerklickar du på den aktivitet som målarbetsflödet ska pausas från och väljer **[!UICONTROL Enable but do not execute]**.
+     Du kan också pausa ett arbetsflöde för målinriktning automatiskt när körningen når en viss aktivitet. Om du vill göra det högerklickar du på aktiviteten som målarbetsflödet ska pausas från och väljer **[!UICONTROL Enable but do not execute]**.
 
      ![](assets/donotexecute.png)
 
@@ -137,15 +137,15 @@ Med verktygsfältsikonerna kan du utföra åtgärder för arbetsflödet för må
      >
      >Det här alternativet är användbart under design- och testfaser av avancerade riktade kampanjer.
 
-     Klicka **[!UICONTROL Start]** för att återuppta körningen.
+     Klicka på **[!UICONTROL Start]** om du vill återuppta körningen.
 
-   * Klicka på **[!UICONTROL Stop]** om du vill stoppa körningen.
+   * Klicka på ikonen **[!UICONTROL Stop]** för att stoppa den pågående körningen.
 
      ![](assets/stop.png)
 
      Servern tar hänsyn till kommandot, vilket visas i dess status: **[!UICONTROL Stop requested]**.
 
-  Du kan också stoppa ett målarbetsflöde automatiskt när körningen når en aktivitet. Om du vill göra det högerklickar du på aktiviteten som målarbetsflödet ska stoppas från och väljer **[!UICONTROL Do not activate]**.
+  Du kan också stoppa ett målarbetsflöde automatiskt när körningen når en aktivitet. Det gör du genom att högerklicka på aktiviteten som målarbetsflödet stoppas från och välja **[!UICONTROL Do not activate]**.
 
   ![](assets/donotactivate.png)
 
@@ -160,9 +160,9 @@ Med verktygsfältsikonerna kan du utföra åtgärder för arbetsflödet för må
 
 * Ovillkorligt stopp
 
-  I Utforskaren väljer du **[!UICONTROL Administration > Production > Object created automatically > Campaign workflows]** för att få tillgång till och agera utifrån alla kampanjarbetsflöden.
+  I Utforskaren väljer du **[!UICONTROL Administration > Production > Object created automatically > Campaign workflows]** för att få åtkomst till och agera på alla kampanjarbetsflöden.
 
-  Du kan avbryta ditt arbetsflöde genom att klicka på **[!UICONTROL Actions]** ikon och markera **[!UICONTROL Unconditional]** sluta. Den här åtgärden avbryter kampanjarbetsflödet.
+  Du kan avbryta ditt arbetsflöde genom att klicka på ikonen **[!UICONTROL Actions]** och välja **[!UICONTROL Unconditional]** stop. Den här åtgärden avbryter kampanjarbetsflödet.
 
   ![](assets/stop_unconditional.png)
 
@@ -176,13 +176,13 @@ Kontrollgruppen kan extraheras från huvudmålet och/eller komma från en viss g
 
 Du kan definiera en kontrollgrupp på kampanjnivå, och i så fall tillämpas kontrollgruppen på varje leverans av den aktuella kampanjen.
 
-1. Redigera kampanjen i fråga och klicka på **[!UICONTROL Edit]** -fliken.
+1. Redigera den aktuella kampanjen och klicka på fliken **[!UICONTROL Edit]**.
 1. Klicka på **[!UICONTROL Advanced campaign parameters...]**.
 
    ![](assets/enable-control-group.png)
 
-1. Välj **[!UICONTROL Enable and edit control group configuration]** alternativ.
-1. Klicka **[!UICONTROL Edit...]** för att konfigurera kontrollgruppen.
+1. Välj alternativet **[!UICONTROL Enable and edit control group configuration]**.
+1. Klicka på **[!UICONTROL Edit...]** om du vill konfigurera kontrollgruppen.
 
    ![](assets/edit-control-group.png)
 
@@ -198,12 +198,12 @@ Som standard gäller den kontrollgruppskonfiguration som definieras på kampanjn
 >
 >Om du har definierat en kontrollgrupp för en kampanj, och du även konfigurerar den för en leverans som är länkad till den här kampanjen, tillämpas bara den kontrollgrupp som har definierats för leveransen.
 
-1. Redigera den aktuella leveransen och klicka sedan på **[!UICONTROL To]** länk.
-1. Klicka på **[!UICONTROL Control group]** tabboch sedan markera **[!UICONTROL Enable and edit control group configuration]**.
+1. Redigera den aktuella leveransen och klicka sedan på länken **[!UICONTROL To]**.
+1. Klicka på fliken **[!UICONTROL Control group]** och välj sedan **[!UICONTROL Enable and edit control group configuration]**.
 
    ![](assets/enable-control-group-for-a-delivery.png)
 
-1. Klicka **[!UICONTROL Edit...]** för att konfigurera kontrollgruppen.
+1. Klicka på **[!UICONTROL Edit...]** om du vill konfigurera kontrollgruppen.
 
 Den fullständiga proceduren beskrivs i [det här avsnittet](#extract-the-control-group-from-the-main-target).
 
@@ -217,7 +217,7 @@ Den här populationen kan komma från en lista med mottagare eller så kan du de
 
 >[!NOTE]
 >
->Adobe Campaign Query Editor presenteras i [det här avsnittet](../workflow/query.md).
+>Adobe Campaign frågeredigerare visas i [det här avsnittet](../workflow/query.md).
 
 ### Extrahera kontrollgruppen från huvudmålet {#extract-the-control-group-from-the-main-target}
 
@@ -227,14 +227,14 @@ Du kan även extrahera mottagare från leveransens huvudmål. I det här fallet 
 
 Om du vill extrahera en kontrollgrupp aktiverar du kontrollgruppen för kampanjen eller leveransen och väljer något av följande alternativ: **[!UICONTROL Activate random sampling]** eller **[!UICONTROL Keep only the first records after sorting]**.
 
-* Använd **[!UICONTROL Activate random sampling]** möjlighet att tillämpa slumpmässig provtagning på mottagarna i huvudpopulationen. Om du sedan anger tröskelvärdet till 100 kommer kontrollgruppen att bestå av 100 mottagare som väljs slumpmässigt från målpopulationen. Det slumpmässiga urvalet beror på databasmotorn.
-* Använd **[!UICONTROL Keep only the first records after sorting]** för att definiera en begränsning baserat på en eller flera sorteringsorder. Om du väljer **[!UICONTROL Age]** som sorteringskriterium och sedan definiera 100 som ett tröskelvärde, kommer kontrollgruppen att bestå av de 100 yngsta mottagarna. Det kan till exempel vara intressant att definiera en kontrollgrupp som innehåller mottagare som gör få inköp, eller mottagare som gör vanliga inköp, och att jämföra deras beteende med de kontaktade mottagarna.
+* Använd alternativet **[!UICONTROL Activate random sampling]** för att tillämpa slumpmässig sampling på mottagarna i huvudpopulationen. Om du sedan anger tröskelvärdet till 100 kommer kontrollgruppen att bestå av 100 mottagare som väljs slumpmässigt från målpopulationen. Det slumpmässiga urvalet beror på databasmotorn.
+* Använd alternativet **[!UICONTROL Keep only the first records after sorting]** för att definiera en begränsning baserat på en eller flera sorteringsordningar. Om du väljer fältet **[!UICONTROL Age]** som sorteringsvillkor och sedan definierar 100 som ett tröskelvärde, kommer kontrollgruppen att bestå av de 100 yngsta mottagarna. Det kan till exempel vara intressant att definiera en kontrollgrupp som innehåller mottagare som gör få inköp, eller mottagare som gör vanliga inköp, och att jämföra deras beteende med de kontaktade mottagarna.
 
-Klicka **[!UICONTROL Next]** om du vill definiera sorteringsordningen (om det behövs) och välja mottagarbegränsningsläget.
+Klicka på **[!UICONTROL Next]** för att definiera sorteringsordningen (om det behövs) och välj mottagarbegränsningsläget.
 
 ![](assets/limit-control-group.png)
 
-Den här konfigurationen motsvarar en **[!UICONTROL Split]** i arbetsflödet, vilket gör att du kan dela upp målet i delmängder. Kontrollgruppen är en av dessa deluppsättningar.
+Den här konfigurationen motsvarar en **[!UICONTROL Split]**-aktivitet i arbetsflödet, vilket gör att du kan dela upp målet i delmängder. Kontrollgruppen är en av dessa deluppsättningar.
 
 
 ### Självstudievideo {#create-email-video}

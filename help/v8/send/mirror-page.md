@@ -22,13 +22,13 @@ De flesta e-postklienter återger bilder utan problem, men vissa förinställnin
 
 Spegelsidan som genererats av Adobe Campaign innehåller alla personaliseringsdata.
 
-![exempel på spegellänk](assets/mirror-page-link.png){width="600" align="left"}
+![Spegellänksexempel](assets/mirror-page-link.png){width="600" align="left"}
 
 ## Lägg till en länk till spegelsidan {#link-to-mirror-page}
 
 Det är bra att infoga en länk till spegelsidan. Den här länken kan till exempel vara Visa det här e-postmeddelandet i webbläsaren eller Läs det här online. Den finns ofta i e-postmeddelandets sidhuvud eller sidfot.
 
-I Adobe Campaign kan du infoga en länk till spegelsidan i e-postinnehållet med den dedikerade **personaliseringsblock**. Den inbyggda **Länk till spegelsida** anpassningsblocket infogar följande kod i ditt e-postinnehåll: `<%@ include view='MirrorPage' %>`.
+I Adobe Campaign kan du infoga en länk till spegelsidan i e-postinnehållet med hjälp av det dedikerade **anpassningsblocket**. Det inbyggda anpassningsblocket **Länk för spegling av sida** infogar följande kod i ditt e-postinnehåll: `<%@ include view='MirrorPage' %>`.
 
 ![](assets/mirror-page-insert.png){width="800" align="left"}
 
@@ -41,16 +41,16 @@ Som standard genereras spegelsidan automatiskt av Adobe Campaign om e-postinneh�
 
 Du kan styra genereringsläget för e-postspeglingssidan. Alternativ finns i leveransegenskaperna. Så här öppnar du de här alternativen:
 
-1. Bläddra till **[!UICONTROL Validity]** -fliken i e-postegenskaperna.
-1. I **Hantering av spegelsidor** -avsnittet, kontrollera **[!UICONTROL Mode]** nedrullningsbar lista.
+1. Bläddra till fliken **[!UICONTROL Validity]** i e-postegenskaperna.
+1. I avsnittet **Sidhantering för spegling** markerar du listrutan **[!UICONTROL Mode]**.
 
 ![](assets/mirror-page-generation.png){width="800" align="left"}
 
 Förutom standardläget finns följande alternativ:
 
-* **[!UICONTROL Force the generation of the mirror page]**: Använd det här läget för att generera spegelsidan även om ingen länk till spegelsidan infogas i leveransen.
-* **[!UICONTROL Do not generate the mirror page]**: Använd det här läget för att undvika att en spegelsida genereras, även om länken finns i leveransen.
-* **[!UICONTROL Generates a mirror page accessible using only the message identifier]**: När spegelsidans länk inte finns i e-postinnehållet, använder du det här alternativet för att aktivera åtkomst till spegelsidans innehåll i leveransloggfönstret, enligt beskrivningen nedan.
+* **[!UICONTROL Force the generation of the mirror page]**: använd det här läget för att generera spegelsidan även om ingen länk till spegelsidan infogas i leveransen.
+* **[!UICONTROL Do not generate the mirror page]**: använd det här läget för att undvika att generera en spegelsida, även om länken finns i leveransen.
+* **[!UICONTROL Generates a mirror page accessible using only the message identifier]**: När spegelsidans länk inte finns i e-postinnehållet kan du använda det här alternativet för att aktivera åtkomst till spegelsidans innehåll i leveransloggfönstret enligt beskrivningen nedan.
 
 ## Kontrollera spegelsidan för en mottagare {#mirror-page-access}
 
@@ -58,9 +58,9 @@ Du kan komma åt innehållet på spegelsidan för en viss mottagare av en levera
 
 Så här kommer du åt den här spegelsidan:
 
-1. När leveransen är klar öppnar du den och bläddrar till den **[!UICONTROL Delivery]** -fliken.
+1. När leveransen har skickats öppnar du den och bläddrar till fliken **[!UICONTROL Delivery]**.
 
-1. Välj en mottagare och klicka på **[!UICONTROL Display the mirror page for this message...]** länk.
+1. Markera en mottagare och klicka på länken **[!UICONTROL Display the mirror page for this message...]**.
 
    ![](assets/mirror-page-display.png){width="800" align="left"}
 

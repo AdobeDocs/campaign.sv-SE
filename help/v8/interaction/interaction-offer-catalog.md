@@ -1,6 +1,6 @@
 ---
 title: Katalog för kampanjinteraktionserbjudande
-description: Lär dig hur du skapar en erbjudandekatalog
+description: Lär dig skapa en erbjudandekatalog
 feature: Interaction, Offers
 role: Data Engineer
 level: Beginner
@@ -14,21 +14,21 @@ ht-degree: 1%
 
 # Skapa en erbjudandekatalog
 
-Som en **Erbjudandehanterare**&#x200B;är du ansvarig för att skapa erbjudandekatalogen.
+Som **erbjudandehanterare** ansvarar du för att skapa erbjudandekatalogen.
 
 En erbjudandekatalog är kopplad till en befintlig miljö. Erbjudandena i den här katalogen kan bara associeras med de utrymmen som anges i samma miljö.
 
-Innan du skapar dina erbjudanden måste du ange en [miljö](interaction-env.md) som innehåller alla egenskaper (behörighet, begränsningar av mål, presentationsregler) för en uppsättning erbjudanden, sorterade i kategorier, samt en lista över deras space.
+Innan du skapar dina erbjudanden måste du ange en [miljö](interaction-env.md) som innehåller alla egenskaper (berättigande, begränsningar för målet, presentationsregler) för en uppsättning erbjudanden, sorterade i kategorier, samt en lista över deras space.
 
 ## Skapa erbjudandekategorier{#creating-offer-categories}
 
-Erbjudandet är indelat i kategorier/underkategorier. Kategorier skapas i **[!UICONTROL Design]** och driftsättas automatiskt i **[!UICONTROL Live]** miljö (dvs. görs tillgänglig) när de erbjudanden de innehåller godkänns. The **[!UICONTROL Design]** -miljön innehåller en standardkategori för att ta emot alla erbjudanden. Underkategorier kan skapas för att lägga till hierarki i katalogerbjudandena.
+Erbjudandet är indelat i kategorier/underkategorier. Kategorier skapas i miljön **[!UICONTROL Design]** och distribueras automatiskt i miljön **[!UICONTROL Live]** (d.v.s. görs tillgängliga) när de erbjudanden de innehåller godkänns. Miljön **[!UICONTROL Design]** innehåller en standardkategori för att ta emot alla erbjudanden. Underkategorier kan skapas för att lägga till hierarki i katalogerbjudandena.
 
 För varje kategori kan du definiera **berättigandedatum**, vilket är den period under vilken erbjudandena i kategorin kan presenteras för deras mål. Du kan även justera vikten för en kategori för att prioritera erbjudandepresentationen.
 
 Så här skapar du en ny kategori:
 
-1. Bläddra till **[!UICONTROL Offer catalog]** mapp.
+1. Bläddra till mappen **[!UICONTROL Offer catalog]**.
 
    ![](assets/offer_cat_create_001.png)
 
@@ -36,7 +36,7 @@ Så här skapar du en ny kategori:
 
    ![](assets/offer_cat_create_002.png)
 
-1. Ge kategorin ett nytt namn. Du kan redigera etiketten senare med **[!UICONTROL General]** -fliken.
+1. Ge kategorin ett nytt namn. Du kan redigera etiketten senare på fliken **[!UICONTROL General]**.
 
    ![](assets/offer_cat_create_003.png)
 
@@ -46,13 +46,13 @@ Så här skapar du en ny kategori:
 
    Därefter kan du, efter behov,
 
-   * Tilldela berättigandedatum från **[!UICONTROL Eligibility]** -fliken.
+   * Tilldela berättigandedatum från fliken **[!UICONTROL Eligibility]**.
 
-      ![](assets/offer_cat_create_004.png)
+     ![](assets/offer_cat_create_004.png)
 
    * **[!UICONTROL Edit query]** för att tillämpa filter på erbjudandemålet.
 
-   * En sammanfattning av reglerna för behörighet.Om du vill visa dem klickar du på **[!UICONTROL Schedule and eligibility rules of the offer]** länk.
+   * En sammanfattning av reglerna för behörighet.Klicka på länken **[!UICONTROL Schedule and eligibility rules of the offer]** om du vill visa dem.
 
 ## Lägg till en reservkategori
 
@@ -64,8 +64,8 @@ Dessutom får inga presentationsregler tillämpas på dessa erbjudanden för att
 
 Följ stegen nedan om du vill inkludera en reservkategori i rekommendationerna:
 
-1. Bläddra till din erbjudandekatalog.
-1. Klicka på **[!UICONTROL Eligibility]** och väljer **[!UICONTROL Always include this category in the recommendations]** alternativ.
+1. Bläddra till erbjudandekatalogen.
+1. Klicka på fliken **[!UICONTROL Eligibility]** och välj alternativet **[!UICONTROL Always include this category in the recommendations]**.
 1. Klicka på **[!UICONTROL Save]**.
 
    ![](assets/offer_cat_default_001.png)

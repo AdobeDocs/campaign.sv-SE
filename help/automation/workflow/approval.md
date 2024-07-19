@@ -16,7 +16,7 @@ ht-degree: 0%
 
 
 
-An **Godkännande** uppgiften kräver att en operatör deltar i den. Operatorn tilldelas en uppgift och kan svara via e-post, via den webbsida som är länkad i e-postmeddelandet eller via konsolen.
+En **Approval**-aktivitet kräver att en operator deltar. Operatorn tilldelas en uppgift och kan svara via e-post, via den webbsida som är länkad i e-postmeddelandet eller via konsolen.
 
 ## Uppgiftstilldelning {#task-assignment}
 
@@ -24,7 +24,7 @@ Som standard tilldelas godkännande till en grupp operatorer. Den här gruppen r
 
 Om det behövs kan du tilldela godkännandeuppgiften till en enda operator eller en uppsättning operatorer som definieras av ett filter.
 
-* Om du vill välja en enskild operator väljer du **[!UICONTROL Operator]** värdet i **[!UICONTROL Assignment type]** och välj den relevanta operatorn i listrutan i **[!UICONTROL Assignee]** fält.
+* Om du vill välja en enskild operator markerar du värdet **[!UICONTROL Operator]** i fältet **[!UICONTROL Assignment type]** och väljer den relevanta operatorn i listrutan i fältet **[!UICONTROL Assignee]**.
 
   ![](assets/s_advuser_validation_box_assign.png)
 
@@ -32,7 +32,7 @@ Om det behövs kan du tilldela godkännandeuppgiften till en enda operator eller
   >
   >Endast den valda operatorn kommer att få behörighet att godkänna uppgiften.
 
-* Du kan definiera en fråga för filtrering av godkännandeoperatorer. Om du vill göra det väljer du **[!UICONTROL Filter]** värdet i **[!UICONTROL Assignment type]** och klicka på **[!UICONTROL Advanced parameters...]** länk för att definiera filtreringsvillkor, som i följande exempel:
+* Du kan definiera en fråga för filtrering av godkännandeoperatorer. Det gör du genom att markera värdet **[!UICONTROL Filter]** i fältet **[!UICONTROL Assignment type]** och klicka på länken **[!UICONTROL Advanced parameters...]** för att definiera filtreringsvillkoren, vilket visas i följande exempel:
 
   ![](assets/s_advuser_validation_box_filter.png)
 
@@ -46,7 +46,7 @@ En operator kan godkänna de uppgifter som tilldelats den operatorn från klient
 
 Om du ändrar aktivitetens titel eller meddelandetext påverkas inte de aktuella uppgifterna, men om du å andra sidan ändrar de möjliga alternativen påverkas de aktuella uppgifterna direkt, vilket automatiskt ärver den nya listan med alternativ.
 
-**Godkännande** textaktiviteter är tillgängliga från **[!UICONTROL Administration > Production > Objects created automatically > Approvals pending]** nod: -operatorer har åtkomst till godkännandeformuläret direkt via den här vyn.
+Typåtgärder av typen **Godkännande** är tillgängliga från noden **[!UICONTROL Administration > Production > Objects created automatically > Approvals pending]**: operatorer kan komma åt godkännandeformuläret direkt via den här vyn.
 
 ![](assets/s_advuser_validation_from_console.png)
 
@@ -56,15 +56,15 @@ Anpassningsvariabler kan användas i meddelanden som skickas till granskarna. De
 
 ![](assets/edit_validation.png)
 
-Detta **[!UICONTROL Title]** fältet innehåller meddelandets titel: Det här är ämnet för det skickade e-postmeddelandet. Titeln och meddelandetexten är JavaScript-mallar och kan därför innehålla värden som beräknas utifrån arbetsflödets sammanhang.
+Det här **[!UICONTROL Title]**-fältet innehåller meddelandets titel: Det här är ämnet för det skickade e-postmeddelandet. Titeln och meddelandetexten är JavaScript-mallar och kan därför innehålla värden som beräknas utifrån arbetsflödets sammanhang.
 
 I den nedre delen av redigeraren kan du definiera en lista med möjliga svar. Det finns en övergång som motsvarar varje svar. Namnet är den interna identifieraren och etiketten är den text som visas i listan med alternativ.
 
-Klicka på **[!UICONTROL Advanced parameters...]** länk för att välja den leveransmall som ska användas för att meddela operatorer. Standardmallen (det interna namnet notifyAssigner) tar titeln och meddelandet och lägger till en länk till den webbsida som används för att svara.
+Klicka på länken **[!UICONTROL Advanced parameters...]** för att välja den leveransmall som ska användas för att meddela operatorer. Standardmallen (det interna namnet notifyAssigner) tar titeln och meddelandet och lägger till en länk till den webbsida som används för att svara.
 
 Den här mallen kan ändras för att anpassa meddelandelayouten, men du bör skapa en kopia. Målinriktningsmekanismen (extern fil, målmappning) får inte ändras eftersom den krävs för att meddelanden ska fungera korrekt.
 
-Ett exempel på godkännande visas i [Definiera godkännanden](define-approvals.md).
+Ett godkännandeexempel visas i [Definiera godkännanden](define-approvals.md).
 
 ## Utdataparametrar {#output-parameters}
 
@@ -74,4 +74,4 @@ Ett exempel på godkännande visas i [Definiera godkännanden](define-approvals.
 
 * **[!UICONTROL responseOperator]**
 
-  Identifierare för den operator som svarade. Det här fältet är ett numeriskt värde, men ett **[!UICONTROL String]** fält.
+  Identifierare för den operator som svarade. Det här fältet är ett numeriskt värde, men ett **[!UICONTROL String]**-fält.

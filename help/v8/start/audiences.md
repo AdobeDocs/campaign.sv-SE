@@ -16,27 +16,27 @@ ht-degree: 17%
 
 Profiler är kontakter som lagras i Campaign-databasen.
 
-I ADOBE CAMPAIGN **mottagare** är standardprofiler för att skicka leveranser (e-post, SMS, osv.). Med mottagardata som lagras i databasen kan du filtrera målet som ska ta emot en viss leverans och lägga till personaliseringsdata i leveransinnehållet. Det finns andra typer av profiler i databasen. De är utformade för olika användningsfall. Exempelvis görs fröprofiler för att testa dina leveranser innan de skickas till det slutliga målet.
+I Adobe Campaign är **mottagare** standardprofiler för att skicka leveranser (e-post, SMS osv.). Med mottagardata som lagras i databasen kan du filtrera målet som ska ta emot en viss leverans och lägga till personaliseringsdata i leveransinnehållet. Det finns andra typer av profiler i databasen. De är utformade för olika användningsfall. Exempelvis görs fröprofiler för att testa dina leveranser innan de skickas till det slutliga målet.
 
-Lär dig importera, uppdatera och hantera profiler och målgrupper [i det här avsnittet](../audiences/gs-audiences.md).
+Lär dig hur du importerar, uppdaterar och hanterar profiler och målgrupper [i det här avsnittet](../audiences/gs-audiences.md).
 
 ## Skapa listor{#create-lists}
 
 En lista är en statisk uppsättning kontakter som kan användas för leveransåtgärder eller uppdateras under en import- eller en annan arbetsflödesåtgärd. En population som har extraherats från databasen via en fråga kan till exempel lagras som en lista.
 
-Lär dig hur du skapar och hanterar listor i [den här sidan](../audiences/create-audiences.md).
+Lär dig skapa och hantera listor på [den här sidan](../audiences/create-audiences.md).
 
 ## Filtrera databasen{#filter-the-database}
 
-Med filterkonfigurationen kan du välja data från en lista **[!UICONTROL dynamically]**: När data ändras uppdateras de filtrerade data. Du kan skapa egna filter eller använda de inbyggda filtren för att definiera en målgrupp.
+Med filterkonfigurationen kan du välja data från en lista **[!UICONTROL dynamically]**: när data ändras uppdateras filtrerade data. Du kan skapa egna filter eller använda de inbyggda filtren för att definiera en målgrupp.
 
-Lär dig hur du skapar och hanterar filter i [den här sidan](../audiences/create-filters.md).
+Lär dig hur du skapar och hanterar filter på [den här sidan](../audiences/create-filters.md).
 
 ## Skapa en målgrupp i ett arbetsflöde
 
-Målinriktning kan skapas med en kombination av frågor i en grafisk sekvens i ett arbetsflöde. Ni kan skapa målgrupper som anpassas efter era behov. Om du vill visa arbetsflödesredigeraren klickar du på **[!UICONTROL Targeting and workflows]** på kampanjkontrollpanelen.
+Målinriktning kan skapas med en kombination av frågor i en grafisk sekvens i ett arbetsflöde. Ni kan skapa målgrupper som anpassas efter era behov. Om du vill visa arbetsflödesredigeraren klickar du på fliken **[!UICONTROL Targeting and workflows]** på kontrollpanelen för kampanjer.
 
-Lär dig hur du skapar en målgrupp i ett kampanjarbetsflöde i [den här sidan](https://experienceleague.adobe.com/docs/campaign/automation/campaign-orchestration/marketing-campaign-target.html){target="_blank"}.
+Lär dig hur du skapar en målgrupp i ett kampanjarbetsflöde på [den här sidan](https://experienceleague.adobe.com/docs/campaign/automation/campaign-orchestration/marketing-campaign-target.html){target="_blank"}.
 
 
 ## Aktiva profiler {#active-profiles}
@@ -46,7 +46,7 @@ En aktiv profil är en profil som kunden har försökt kommunicera med under de 
 
 Enligt avtalet har var och en av instanserna i Campaign ett visst antal aktiva profiler som räknas för faktureringsändamål. Se ditt senaste kontrakt för referens om antalet köpta aktiva profiler. Läs mer i [Adobe Campaign produktbeskrivning](https://helpx.adobe.com/se/legal/product-descriptions/adobe-campaign-managed-cloud-services.html){target="_blank"}.
 
-Du kan övervaka antalet aktiva profiler på instansen direkt från Campaign-kontrollpanelen. Mer information finns i [Dokumentation för kontrollpanelen](https://experienceleague.adobe.com/docs/control-panel/using/performance-monitoring/active-profiles-monitoring.html){target="_blank"}.
+Du kan övervaka antalet aktiva profiler på instansen direkt från Campaign-kontrollpanelen. Mer information finns i dokumentationen för [Kontrollpanelen](https://experienceleague.adobe.com/docs/control-panel/using/performance-monitoring/active-profiles-monitoring.html){target="_blank"}.
 
 
 Följande skyddsräcken och begränsningar gäller:
@@ -60,12 +60,12 @@ Följande skyddsräcken och begränsningar gäller:
 
 Adobe Campaign är ett kraftfullt verktyg för att samla in och behandla stora datavolymer, inklusive personuppgifter och känsliga data. Med Adobe Campaign kan ni samla in data, inklusive personuppgifter och känslig information. Det är därför viktigt att du erhåller och övervakar medgivande från dina mottagare.
 
-Lär dig hur du hanterar sekretess och samtycke i [Adobe Campaign Classic v7-dokumentation](https://experienceleague.adobe.com/docs/campaign-classic/using/getting-started/privacy/privacy-and-recommendations.html){target="_blank"}.
+Lär dig hur du hanterar sekretess och samtycke i [Adobe Campaign Classic v7-dokumentationen](https://experienceleague.adobe.com/docs/campaign-classic/using/getting-started/privacy/privacy-and-recommendations.html){target="_blank"}.
 
 **Relaterade ämnen**
 
-* [Utforma och genomför ett kampanjspecifikt arbetsflöde](https://experienceleague.adobe.com/docs/campaign/automation/workflows/introduction/wf-type/campaign-workflows.html){target="_blank"}
+* [Designa och kör ett kampanjspecifikt arbetsflöde](https://experienceleague.adobe.com/docs/campaign/automation/workflows/introduction/wf-type/campaign-workflows.html){target="_blank"}
 
-* [Lär dig hur du väljer målgrupp för en kampanj](https://experienceleague.adobe.com/docs/campaign/automation/campaign-orchestration/marketing-campaign-target.html){target="_blank"}
+* [Lär dig hur du väljer publik för en kampanj](https://experienceleague.adobe.com/docs/campaign/automation/campaign-orchestration/marketing-campaign-target.html){target="_blank"}
 
 * [Kom igång med arbetsflöden](https://experienceleague.adobe.com/docs/campaign/automation/workflows/introduction/about-workflows.html){target="_blank"}

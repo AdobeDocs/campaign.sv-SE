@@ -1,14 +1,14 @@
 ---
 title: Funktioner för förutsägande användarengagemang
-description: Läs om hur du använder förutsägande sändningstider och engagemangsbedömning
+description: Lär dig använda prediktiv sändningstid och engagemangsbedömning
 feature: Send Time Optimization
 role: User
 level: Beginner
 exl-id: 648fefcc-6476-4af8-9f0d-c9a87a7a3019
 source-git-commit: 77ec01aaba1e50676bed57f503a9e4e8bb1fe54c
 workflow-type: tm+mt
-source-wordcount: '759'
-ht-degree: 67%
+source-wordcount: '783'
+ht-degree: 64%
 
 ---
 
@@ -16,13 +16,14 @@ ht-degree: 67%
 
 Med hjälp av AI och maskininlärning kan Adobe Campaign Scoring (Send-Time Optimization) och Predictive Engagement Scoring analysera och förutse öppningsfrekvenser, optimala sändningstider och sannolika bortfall baserat på historiska interaktionsvärden.
 
-Adobe Campaign erbjuder två nya Machine Learning-modeller: [Prediktiv optimering av sändningstid](#predictive-send) och [Poängberäkning för prediktiv engagemang](#predictive-scoring). Dessa två modeller är maskininlärningsmodeller som är specifika för att designa och leverera bättre kundresor.
+Adobe Campaign erbjuder två nya maskininlärningsmodeller: [Predictive Send Time Optimization](#predictive-send) och [Predictive Engagement Scoring](#predictive-scoring). Dessa två modeller är maskininlärningsmodeller som är specifika för att designa och leverera bättre kundresor.
 
 >[!CAUTION]
 >
 >Den här funktionen är inte tillgänglig som en del av produkten. Det är endast tillgängligt för Adobe Campaign Managed Cloud Services-kunder som kör Adobe Campaign Classic v7 eller Adobe Campaign v8.
 >
 >För implementering krävs att Adobe Consulting används. Om du vill veta mer kan du kontakta din Adobe-representant.
+>
 
 
 ## Prediktiv optimering av sändningstid{#predictive-send}
@@ -38,9 +39,9 @@ I modellen Predictive Send-Time Optimization finns det två undermodeller:
 
 **Modellindata**: Leveransloggar, spårningsloggar och profilattribut (ej PII)
 
-**Modellutdata**: Bästa tillfället att skicka ett meddelande (för öppningar och klick)
+**Modellutdata**: Bästa tiden att skicka ett meddelande (för öppningar och klick)
 
-Information om utdata:
+Utdatainformation:
 
 * Beräkna den bästa tidpunkten på dagen för att skicka ett e-postmeddelande. Detta inom 7 dagar i en vecka med 1 timmes intervall (t.ex.: 09:00, 10:00, 11:00)
 * Modellen visar den bästa dagen i veckan och den bästa timmen på den dagen
@@ -64,11 +65,12 @@ Prediktiv optimering av sändningstid lagras på profilnivå:
 >[!NOTE]
 >
 >Modellen behöver minst en månads data för att ge ett bra resultat. Dessa prediktiva funktioner gäller endast e-post- och push-kanaler.
+>
 
 
 ## Prediktiv poängsättning för engagemang {#predictive-scoring}
 
-Predictive Engagement Scoring förutser sannolikheten för att en mottagare engagerar sig i ett meddelande samt sannolikheten för att avanmäla sig inom 7 dagar efter nästa e-postutskick. Sannolikheten för detta delas upp ytterligare i grupper efter den förväntade nivån av engagemang i ert innehåll: high, medium eller low. Dessa modeller ger också en percentil för avbruten risk för kunderna för att förstå var en viss kunds rangordning är i förhållande till andra.
+Predictive Engagement Scoring förutser sannolikheten för att en mottagare engagerar sig i ett meddelande samt sannolikheten för att avanmäla sig inom 7 dagar efter nästa e-postutskick. Sannolikheten för detta delas upp ytterligare i grupper efter den förväntade nivån av engagemang med ert innehåll: högt, medelhögt eller lågt. Dessa modeller ger också en percentil för avbruten risk för kunderna för att förstå var en viss kunds rangordning är i förhållande till andra.
 
 Med förutsägande engagemangsbedömning kan du:
 

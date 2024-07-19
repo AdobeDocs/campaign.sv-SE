@@ -7,14 +7,14 @@ role: Admin
 exl-id: aeb35076-2f0d-456d-8562-be69e7e902eb
 source-git-commit: 567c2e84433caab708ddb9026dda6f9cb717d032
 workflow-type: tm+mt
-source-wordcount: '1094'
+source-wordcount: '1104'
 ht-degree: 3%
 
 ---
 
 # Värmekarta för arbetsflöde {#workflow-heatmap}
 
-Värdkarta för kampanjarbetsflöde består av en färgkodad grafisk representation av alla arbetsflöden som körs för närvarande. Det är bara tillgängligt för **Kampanjadministratörer**.
+Värdkarta för kampanjarbetsflöde består av en färgkodad grafisk representation av alla arbetsflöden som körs för närvarande. Det är bara tillgängligt för **kampanjadministratörer**.
 
 ## Kom igång med Workflow HeatMap {#about-the-workflow-heatmap}
 
@@ -26,22 +26,22 @@ Mer exakt hjälper det plattformsadministratörerna att:
 * filtrera arbetsflöden per varaktighet för att se vilka arbetsflöden som kan stöta på problem
 * Filtrera aktiviteter efter varaktighet för att se vilka aktiviteter som kan stöta på problem
 * enkelt hitta enskilda arbetsflöden och alla relaterade aktiviteter (med deras varaktighet)
-* Filter efter arbetsflödestyp: [tekniska arbetsflöden](technical-workflows.md) eller [kampanjarbetsflöden](campaign-workflows.md)
+* Filtrera efter arbetsflödestyp: [tekniska arbetsflöden](technical-workflows.md) eller [kampanjarbetsflöden](campaign-workflows.md)
 * leta efter ett specifikt arbetsflöde att analysera
 
 >[!NOTE]
 >
->Förutom **Heatmap för arbetsflöde** kan du skapa ett arbetsflöde där du kan övervaka statusen för en uppsättning arbetsflöden och skicka återkommande meddelanden till arbetsledare. Mer information finns i [dedikerad sektion](workflow-supervision.md).
+>Utöver **heatmap för arbetsflöde** kan du skapa ett arbetsflöde där du kan övervaka statusen för en uppsättning arbetsflöden och skicka återkommande meddelanden till ansvariga. Mer information finns i det [dedikerade avsnittet](workflow-supervision.md).
 
-Om du använder Workflow HeatMap måste du ha god förståelse för följande koncept: [Arbetsflöden](about-workflows.md), [Verksamhet](activities.md) och [Bästa praxis för arbetsflöden](workflow-best-practices.md).
+Om du använder HeatMap-arbetsflödet måste du ha god förståelse för följande koncept: [Arbetsflöden](about-workflows.md), [Aktiviteter](activities.md) och [Bästa arbetsflöden](workflow-best-practices.md).
 
 ## Anpassa Workflow HeatMap {#using-the-heatmap}
 
 >[!NOTE]
 >
->Om inga data visas i Workflow HeatMap klickar du på **[!UICONTROL Load data]** -knappen.
+>Om inga data visas i Workflow HeatMap klickar du på knappen **[!UICONTROL Load data]**.
 
-1. Gå till **[!UICONTROL Monitoring]** och klicka på **[!UICONTROL Workflow HeatMap]** länk för att visa **[!UICONTROL Campaign Workflow HeatMap]** sida.
+1. Gå till **[!UICONTROL Monitoring]** och klicka på länken **[!UICONTROL Workflow HeatMap]** för att visa sidan **[!UICONTROL Campaign Workflow HeatMap]**.
 
    ![](assets/wkf_monitoring_path.png)
 
@@ -61,22 +61,22 @@ Om du använder Workflow HeatMap måste du ha god förståelse för följande ko
 
    ![](assets/wkf_monitoring_filters_duration.png)
 
-1. Du kan också välja ett specifikt arbetsflöde i **[!UICONTROL Workflows]** listruta.
+1. Du kan också välja ett specifikt arbetsflöde i listrutan **[!UICONTROL Workflows]**.
 
    ![](assets/wkf_monitoring_filters_workflows.png)
 
    >[!NOTE]
    >
-   >The **[!UICONTROL Min duration]** filtret används. Om du inte kan hitta ett visst arbetsflöde återställer du den kortaste tiden till 0 så att alla arbetsflöden visas i listan.
+   >Filtret **[!UICONTROL Min duration]** används. Om du inte kan hitta ett visst arbetsflöde återställer du den kortaste tiden till 0 så att alla arbetsflöden visas i listan.
 
-1. Du kan även filtrera på **[!UICONTROL Workflow type]** :
+1. Du kan även filtrera på **[!UICONTROL Workflow type]**:
 
-   * **[!UICONTROL Technical]** : Endast [inbyggda tekniska arbetsflöden](technical-workflows.md) och [arbetsflöden för datahantering](targeting-workflows.md#data-management) visas.
-   * **[!UICONTROL Marketing]** : Endast arbetsflöden kopplade till en marknadsföringskampanj, s.k. [kampanjarbetsflöden](campaign-workflows.md), visas.
+   * **[!UICONTROL Technical]** : Endast [inbyggda tekniska arbetsflöden](technical-workflows.md) och [datahanteringsarbetsflöden](targeting-workflows.md#data-management) visas.
+   * **[!UICONTROL Marketing]** : Endast arbetsflöden som är länkade till en marknadsföringskampanj, så kallade [kampanjarbetsflöden](campaign-workflows.md), visas.
 
-1. Om du vill söka efter ett specifikt arbetsflöde efter namn kan du även använda **[!UICONTROL Workflow name filter]** fält.
+1. Om du vill söka efter ett specifikt arbetsflöde efter namn kan du även använda fältet **[!UICONTROL Workflow name filter]**.
 
-1. Om du har redigerat några arbetsflöden däremellan klickar du på **[!UICONTROL Reload data]** om du vill uppdatera de data som visas i rutnätet.
+1. Om du har redigerat några arbetsflöden i tiden mellan, klickar du på knappen **[!UICONTROL Reload data]** för att uppdatera de data som visas i rutnätet.
 
 ## Tolka heatMap för arbetsflöde {#reading-the-heatmap}
 
@@ -85,7 +85,7 @@ The Campaign Workflow HeatMap är ett rutnät som är naturligt läsbart uppifr�
 * De mörkare röda cellerna motsvarar punkter när ett stort antal arbetsflöden körs samtidigt.
 * De grå cellerna motsvarar perioder när inget arbetsflöde körs.
 
-Om du vill veta hur färgkoden används och hur du navigerar i HeatMap klickar du på knappen **[!UICONTROL Help]** -knappen.
+Klicka på knappen **[!UICONTROL Help]** om du vill veta hur färgkoden används och hur du navigerar i HeatMap.
 
 ![](assets/wkf_monitoring_legend.png)
 
@@ -104,7 +104,7 @@ I exemplet nedan körs tre arbetsflöden mellan 08:05 och 8:05 (oavsett hur lån
    För varje arbetsflöde visas alla aktiviteter som det innehåller, med deras varaktighet.
 
 1. Klicka på arbetsflödes-ID eller namn för att öppna ett arbetsflöde direkt.
-1. Gå tillbaka till **[!UICONTROL Campaign Workflow HeatMap]** visa klickar du på **[!UICONTROL Home]** -knappen.
+1. Om du vill gå tillbaka till vyn **[!UICONTROL Campaign Workflow HeatMap]** klickar du på knappen **[!UICONTROL Home]**.
 
 ## Användningsexempel: använd HeatMap för att vidta åtgärder {#use-cases--using-the-heatmap-to-take-actions}
 
@@ -114,7 +114,7 @@ Det finns två huvudfall där HeatMap för kampanjarbetsflödet kan vara använd
 
 Som Campaign-administratör kan Workflow HeatMap hjälpa dig att förstå belastningen på instansen och planera befintliga eller nya arbetsflöden vid lämpliga tidpunkter.
 
-1. Från **[!UICONTROL Campaign Workflow HeatMap]** visa klickar du på **[!UICONTROL Filters]** -knappen.
+1. Klicka på knappen **[!UICONTROL Filters]** i vyn **[!UICONTROL Campaign Workflow HeatMap]**.
 1. Ange en varaktighet på några sekunder eller några minuter.
 1. Undvik de kortaste arbetsflödena som inte är viktiga genom att öka varaktighetsfiltret.
 
@@ -129,17 +129,17 @@ Som Campaign-administratör kan Workflow HeatMap hjälpa dig att förstå belast
 
 Som kampanjadministratör hjälper Workflow HeatMap dig att hitta de längsta arbetsflödena som kan göra aktiviteten långsammare.
 
-1. Från **[!UICONTROL Campaign Workflow HeatMap]** visa klickar du på **[!UICONTROL Filters]** -knappen.
+1. Klicka på knappen **[!UICONTROL Filters]** i vyn **[!UICONTROL Campaign Workflow HeatMap]**.
 1. Ange varaktighet till 1 timme.
 
    ![](assets/wkf_monitoring_long_duration.png)
 
-1. Inkludera fler resultat genom att minska **[!UICONTROL Min duration]** filter.
+1. Inkludera fler resultat genom att minska filtret **[!UICONTROL Min duration]**.
 1. Utforska resultaten för att hitta de längsta arbetsflödena, som kan ha större effekt på server- och databasresurserna (CPU, RAM, nätverk, IOPS och så vidare).
 1. Vidta lämpliga åtgärder:
 
    * Rekommendera marknadsföringsanvändare att dela upp de längsta arbetsflödena för att minska bearbetningstiden.
-   * Starta en djupgående analys av specifika arbetsflöden och specifika aktiviteter (som JavaScript, import, export och så vidare) för att isolera problemen och lättare lösa dem.
+   * Starta en djupgående analys av specifika arbetsflöden och specifika aktiviteter (som JavaScript, import, export och så vidare) för att isolera problemen och enklare lösa dem.
 
 ## Använd HeatMap för att förbättra arbetsflödesplaneringen {#example--using-the-heatmap-to-improve-workflow-planning}
 
@@ -147,9 +147,9 @@ I exemplet nedan visas hur planering kan vara mer effektiv och hur prestanda kan
 
 I det här fallet klagar många användare över arbetsflödets prestanda. Du måste kontrollera vad som saktar ned aktiviteten och hur du löser problemet.
 
-1. Gå till **[!UICONTROL Monitoring]** och klicka på **[!UICONTROL Workflows]** länk för att visa **[!UICONTROL Campaign Workflow HeatMap]** sida.
-1. Ange **[!UICONTROL Min duration]** filtrera till 5 minuter.
-1. Ange **[!UICONTROL Workflow type]** filtrera till **[!UICONTROL Marketing]**.
+1. Gå till **[!UICONTROL Monitoring]** och klicka på länken **[!UICONTROL Workflows]** för att visa sidan **[!UICONTROL Campaign Workflow HeatMap]**.
+1. Ställ in filtret **[!UICONTROL Min duration]** på 5 minuter.
+1. Ställ in filtret **[!UICONTROL Workflow type]** på **[!UICONTROL Marketing]**.
 1. I HeatMap-rutnätet bör du tänka på följande:
 
    ![](assets/wkf_monitoring_without.png)
@@ -160,7 +160,7 @@ I det här fallet klagar många användare över arbetsflödets prestanda. Du m�
    * Prestandan är låg.
 
 1. I stället för att ha femtio arbetsflöden från kl. 10 ska du distribuera arbetsflödenas starttider jämnt under resten av dagen.
-1. Gå tillbaka till **[!UICONTROL Campaign Workflow HeatMap]** och klickar på **[!UICONTROL Reload data]** -knappen.
+1. Gå tillbaka till sidan **[!UICONTROL Campaign Workflow HeatMap]** och klicka på knappen **[!UICONTROL Reload data]**.
 1. Observera följande:
 
    ![](assets/wkf_monitoring_with.png)

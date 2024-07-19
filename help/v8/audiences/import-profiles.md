@@ -34,8 +34,8 @@ När data har samlats in kan du använda dem i dina arbetsflöden, till exempel 
 
 Adobe Campaign har en generisk importfunktion som gör att du till exempel kan extrahera en lista över kunder eller potentiella kunder som sedan blir en del av målpopulationen eller förse din databas med data från externa filer.
 
-Allmän import hanteras från **[!UICONTROL Profiles and Targets > Jobs]** på Adobe Campaign hemsida.
+Generisk import hanteras från menyn **[!UICONTROL Profiles and Targets > Jobs]** på Adobe Campaign hemsida.
 
 ![](assets/new-import-job.png)
 
-Stegen för att utföra en allmän import beskrivs i [Campaign Classic v7 - dokumentation](https://experienceleague.adobe.com/docs/campaign-classic/using/getting-started/importing-and-exporting-data/generic-imports-exports/about-generic-imports-exports.html){target="_blank"}.
+Stegen för att utföra en allmän import beskrivs i [Campaign Classic v7-dokumentationen](https://experienceleague.adobe.com/docs/campaign-classic/using/getting-started/importing-and-exporting-data/generic-imports-exports/about-generic-imports-exports.html){target="_blank"}.

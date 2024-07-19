@@ -16,7 +16,7 @@ ht-degree: 0%
 
 Adobe Campaign är en lösning för flerkanalsmarknadsföring som automatiserar e-post-, mobil-, sociala och offlinekampanjer. Adobe Campaign ger er en central plats för att få tillgång till era kunddata och profiler. Använd Adobe Campaign för att samordna enhetliga upplevelser för era kunder, utforma, verkställa och personalisera er marknadsföring över alla kanaler, samtidigt som ni förbättrar kundupplevelserna på alla enheter och kontaktytor. Med Adobe Campaign kan ni hantera flera datakällor, definiera era målgruppssegment samt planera och genomföra flerstegskampanjer i flera kanaler via ett dra-och-släpp-gränssnitt för visuellt arbetsflöde.
 
-Läs mer om Campaign-nyckelfunktioner i [den här sidan](../start/get-started.md).
+Läs mer om Campaign-nyckelfunktioner på [den här sidan](../start/get-started.md).
 
 ## Kampanjkomponenter {#ac-components}
 
@@ -54,4 +54,4 @@ Den övergripande kommunikationen mellan Campaign-processer beskrivs i följande
 
 Användaren ansluter till Campaign-programservern med HTTP. Alla data och all information hanteras i Campaign-databasen. Om en Campaign-utvecklare utför konfigurationsändringar hämtas den i databasen. Om en marknadsförare skapar en ny kampanj hanteras all information och alla data som hör till den nya kampanjen också i databasen. När en marknadsförare kör en kampanj skickas e-postleveranser till profiler från Campaign-servern via SMTP-servern. När profiler interagerar med e-postleveranser, som att öppna e-postmeddelandet, skickas spårningsdata tillbaka till spårningsservern.
 
-[Läs mer om kampanjprocesser](../architecture/general-architecture.md#dev-env).
+[Läs mer om Campaign-processer](../architecture/general-architecture.md#dev-env).

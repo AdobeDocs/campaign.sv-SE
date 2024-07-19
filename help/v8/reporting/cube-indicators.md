@@ -16,38 +16,39 @@ ht-degree: 2%
 
 ## Arbetsytan Kub {#cube-workspace}
 
-Bläddra till **[!UICONTROL Administration > Configuration > Cubes]** från Campaign Explorer.
+Bläddra till **[!UICONTROL Administration > Configuration > Cubes]** från Campaign Explorer om du vill komma åt kuber.
 
 ![](assets/cube-node.png)
 
 Med kuber kan du
 
-* Exportera data direkt i en rapport som utformats i **[!UICONTROL Reports]** på Adobe Campaign.
+* Exportera data direkt i en rapport som är utformad på fliken **[!UICONTROL Reports]** på Adobe Campaign-plattformen.
 
-   Om du vill göra det skapar du en ny rapport och väljer den kub som du vill använda.
+  Om du vill göra det skapar du en ny rapport och väljer den kub som du vill använda.
 
-   ![](assets/create-new-cube.png)
+  ![](assets/create-new-cube.png)
 
-   Kuber visas som mallar baserade på vilka rapporter skapas. När du har valt en mall klickar du på **[!UICONTROL Create]** för att konfigurera och visa den nya rapporten.
+  Kuber visas som mallar baserade på vilka rapporter skapas. När du har valt en mall klickar du på **[!UICONTROL Create]** för att konfigurera och visa den nya rapporten.
 
-   Du kan anpassa mått, ändra visningsläge eller konfigurera tabellen och sedan visa rapporten med huvudknappen.
+  Du kan anpassa mått, ändra visningsläge eller konfigurera tabellen och sedan visa rapporten med huvudknappen.
 
-   ![](assets/display-cube-table.png)
+  ![](assets/display-cube-table.png)
 
-* Referera till en kub i **[!UICONTROL Query]** rutan för en rapport för att använda sina indikatorer, som visas nedan:
+* Referera en kub i rutan **[!UICONTROL Query]** i en rapport för att använda dess indikatorer, vilket visas nedan:
 
-   ![](assets/cube-report-query.png)
+  ![](assets/cube-report-query.png)
 
-* Infoga en pivottabell baserad på en kub på valfri sida i en rapport. Det gör du genom att referera till kuben som ska användas i **[!UICONTROL Data]** pivottabellens flik på den berörda sidan.
+* Infoga en pivottabell baserad på en kub på en rapportsida. Det gör du genom att referera till den kub som ska användas på fliken **[!UICONTROL Data]** i pivottabellen på den aktuella sidan.
 
-   ![](assets/cube-in-a-report.png)
+  ![](assets/cube-in-a-report.png)
 
-   Mer information finns i [Utforska data i en rapport](cube-tables.md#explore-the-data-in-a-report).
+  Mer information finns i [Utforska data i en rapport](cube-tables.md#explore-the-data-in-a-report).
 
 
 >[!CAUTION]
 >
 >Administratörsbehörigheter krävs för att skapa kuber.
+>
 
 ## Bygg en kub{#cube-create}
 
@@ -66,14 +67,14 @@ I exemplet nedan lär du dig hur du snabbt skapar en enkel kub i en rapport för
 
 Så här skapar du en kub:
 
-1. Klicka på **[!UICONTROL New]** ovanför listan med kuber.
+1. Klicka på knappen **[!UICONTROL New]** ovanför listan med kuber.
 
    ![](assets/create-a-cube.png)
 
-1. Välj det schema som innehåller de element som du vill utforska (kallas även faktchema). I det här exemplet väljer du standardinställningen **Mottagare** tabell.
-1. Klicka **[!UICONTROL Save]** så här skapar du kuben: den läggs till i listan med kuber. Nu kan du använda flikarna för att konfigurera den.
+1. Välj det schema som innehåller de element som du vill utforska (kallas även faktchema). I det här exemplet väljer du standardtabellen **Mottagare**.
+1. Klicka på **[!UICONTROL Save]** för att skapa kuben: den läggs till i listan med kuber. Nu kan du använda flikarna för att konfigurera den.
 
-1. Klicka på **[!UICONTROL Filter the source data...]** om du vill använda den här kubens beräkningar på data i databasen.
+1. Klicka på länken **[!UICONTROL Filter the source data...]** om du vill använda beräkningar för den här kuben på data i databasen.
 
    ![](assets/cube-filter-source.png)
 
@@ -83,31 +84,31 @@ När kuben har skapats definierar du dess mått. Dimensioner är de analysaxlar 
 
 Följ stegen nedan för att skapa dimensioner:
 
-1. Bläddra till **[!UICONTROL Dimension]** -fliken i kuben och klicka på **[!UICONTROL Add]** för att skapa en ny dimension.
-1. I **[!UICONTROL Expression field]** klickar du på **[!UICONTROL Edit expression]** -ikonen för att markera det fält som innehåller aktuella data.
+1. Bläddra till fliken **[!UICONTROL Dimension]** i kuben och klicka på knappen **[!UICONTROL Add]** för att skapa en ny dimension.
+1. Klicka på ikonen **[!UICONTROL Edit expression]** i **[!UICONTROL Expression field]** för att markera fältet som innehåller de berörda data.
 
    ![](assets/cube-add-dimension.png)
 
 1. I det här exemplet väljer vi mottagaren **Ålder**. I det här fältet kan du definiera bindning till gruppsidor och göra det enklare att läsa information. Vi rekommenderar att du använder bindning när det är möjligt att använda flera olika värden.
 
-Om du vill göra det går du till **[!UICONTROL Enable binning]** alternativ. [Läs mer](customize-cubes.md#data-binning).
+Det gör du genom att kontrollera alternativet **[!UICONTROL Enable binning]**. [Läs mer](customize-cubes.md#data-binning).
 
-1. Lägg till en **Datum** typdimension. Här vill vi visa datum då mottagarprofilen skapades. Det gör du genom att klicka **[!UICONTROL Add]** och väljer **[!UICONTROL Creation date]** i mottagartabellen.
-Du kan anpassa datumvisningsläget. Om du vill göra det väljer du den hierarki som ska användas och de nivåer som ska genereras:
+1. Lägg till en dimension av typen **Datum**. Här vill vi visa datum då mottagarprofilen skapades. Det gör du genom att klicka på **[!UICONTROL Add]** och markera fältet **[!UICONTROL Creation date]** i mottagartabellen.
+Du kan anpassa datumvisningsläget. Välj den hierarki som ska användas och de nivåer som ska genereras:
 
 ![](assets/cube-date-dimension.png)
 
 I vårt exempel vill vi bara visa år, månader och dagar. Observera att du inte kan arbeta med veckor och semestrar/månader samtidigt: dessa nivåer är inte kompatibla.
 
-1. Skapa en annan dimension för att analysera data i förhållande till mottagarens ort. Lägg till en ny dimension och välj ort i dialogrutan **[!UICONTROL Location]** noden i mottagarschemat.
+1. Skapa en annan dimension för att analysera data i förhållande till mottagarens ort. Lägg till en ny dimension och markera staden i noden **[!UICONTROL Location]** i mottagarschemat.
 
 Du kan aktivera bindning för att göra det enklare att läsa information och länka värdena till en uppräkning.
 
-Välj uppräkningen i listrutan. Observera att den här uppräkningen måste definieras som **[!UICONTROL Reserved for binning]**.
+Välj uppräkningen i listrutan. Observera att uppräkningen måste definieras som **[!UICONTROL Reserved for binning]**.
 
 ![](assets/cube-dimension-with-enum.png)
 
-Endast värdena i uppräkningen visas. De andra grupperas under den etikett som definieras i **[!UICONTROL Label of the other values]** fält.
+Endast värdena i uppräkningen visas. De andra grupperas under den etikett som definieras i fältet **[!UICONTROL Label of the other values]**.
 
 Mer information om detta finns i [det här avsnittet](customize-cubes.md#dynamically-manage-bins).
 
@@ -115,16 +116,16 @@ Mer information om detta finns i [det här avsnittet](customize-cubes.md#dynamic
 
 När dimensionerna har definierats anger du ett beräkningssätt för de värden som ska visas i cellerna.
 
-För att göra detta skapar du indikatorerna i **[!UICONTROL Measures]** -fliken. Skapa så många mått som det finns kolumner att visa i rapporter baserade på den här kuben.
+Det gör du genom att skapa indikatorerna på fliken **[!UICONTROL Measures]**. Skapa så många mått som det finns kolumner att visa i rapporter baserade på den här kuben.
 
 Följ stegen nedan för att skapa indikatorer:
 
-1. Bläddra till **[!UICONTROL Measures]** och klicka på **[!UICONTROL Add]** -knappen.
-1. Välj typ av mått och formel som ska användas. I det här exemplet räknar vi antalet kvinnor bland mottagarna. Vår åtgärd baseras på faktchemat och använder **[!UICONTROL Count]** -operator.
+1. Bläddra till fliken **[!UICONTROL Measures]** och klicka på knappen **[!UICONTROL Add]**.
+1. Välj typ av mått och formel som ska användas. I det här exemplet räknar vi antalet kvinnor bland mottagarna. Vårt mått baseras på faktchemat och använder operatorn **[!UICONTROL Count]**.
 
    ![](assets/cube-new-measure.png)
 
-   Använd **[!UICONTROL Filter the measure data...]** länk till endast utvalda kvinnor. [Läs mer](customize-cubes.md#define-measures).
+   Använd länken **[!UICONTROL Filter the measure data...]** om du bara vill välja kvinnor. [Läs mer](customize-cubes.md#define-measures).
 
    ![](assets/cube-filter-measure-data.png)
 

@@ -15,13 +15,13 @@ ht-degree: 3%
 
 # Uppdatera aggregat{#update-aggregate}
 
-Aggregat definierade i [kuber](../../v8/reporting/gs-cubes.md) för rapportering kan uppdateras med en viss aktivitet. A **[!UICONTROL Workflow]** -fliken är tillgänglig när du konfigurerar sammanställningen.
+Sammansättningar som definierats i [kuber](../../v8/reporting/gs-cubes.md) för rapportsyften kan uppdateras med en viss aktivitet. En **[!UICONTROL Workflow]**-flik är tillgänglig när aggregeringen konfigureras.
 
 Läs mer om kuber och aggregat i [det här avsnittet](../../v8/reporting/customize-cubes.md#calculate-and-use-aggregates).
 
-Om du vill uppdatera en mängd redigerar du **[!UICONTROL Update aggregate]** och välj den kub och den mängd som ska uppdateras.
+Om du vill uppdatera en sammanställning redigerar du aktiviteten **[!UICONTROL Update aggregate]** och väljer den kub och sammanställning som ska uppdateras.
 
-Du kan konfigurera en **Fullständig uppdatering** eller en **Delvis uppdatering**.
+Du kan konfigurera en **fullständig uppdatering** eller en **partiell uppdatering**.
 
 ![](assets/update-aggregate-details.png)
 
@@ -29,4 +29,4 @@ Som standard utförs en fullständig uppdatering under varje beräkning. Om du v
 
 ![](assets/update-aggregate-partial.png)
 
-Ett bra tillvägagångssätt är att lägga till en **[!UICONTROL Scheduler]** aktivitet för att ange frekvensen för uppdateringar av beräkningar.
+Ett bra tillvägagångssätt är att lägga till en **[!UICONTROL Scheduler]**-aktivitet för att ställa in frekvensen för beräkningsuppdateringar.

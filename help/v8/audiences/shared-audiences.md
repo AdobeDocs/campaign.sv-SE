@@ -19,16 +19,16 @@ Alternativ 1: AEP-källor och -destinationer
 
 Alternativ 2: Adobe People/AAM
 
-Ni kan integrera **Adobe Campaign** med **Bastjänst för människor** eller Adobe Audience Manager. Då kan du:
+Du kan integrera **Adobe Campaign** med **Bastjänsten för människor** eller Adobe Audience Manager. Då kan du:
 
 * Importera delade målgrupper/segment från olika Adobe Experience Cloud-lösningar till Adobe Campaign. Publiker kan importeras via listor i Adobe Campaign.
 
-* Exportera listor i form av delade Adobe Experience Cloud-målgrupper. Dessa målgrupper kan användas i de olika Adobe Experience Cloud-lösningar ni använder. Målgrupper kan exporteras efter målgruppsanpassning i ett arbetsflöde med hjälp av en dedikerad **[!UICONTROL Update shared audience]** aktivitet.
+* Exportera listor i form av delade Adobe Experience Cloud-målgrupper. Dessa målgrupper kan användas i de olika Adobe Experience Cloud-lösningar ni använder. Publiker kan exporteras efter målgruppsanpassning i ett arbetsflöde med en dedikerad **[!UICONTROL Update shared audience]**-aktivitet.
 
 Den här integreringen stöder två typer av Adobe Experience Cloud ID:
 
-* **Besökar-ID**: den här identifieraren förenar Adobe Experience Cloud-besökare med Adobe Campaign-mottagare.
-* **Deklarerat ID**: den här identifieraren förenar alla typer av data med element från Adobe Campaign-databasen. Den fördefinierade avstämningsnyckeln i Adobe Campaign.
+* **Besökar-ID**: Den här identifieraren förenar Adobe Experience Cloud-besökare med Adobe Campaign-mottagare.
+* **Deklarerat ID**: Den här identifieraren förenar alla typer av data med element från Adobe Campaign-databasen. Den fördefinierade avstämningsnyckeln i Adobe Campaign.
 
   >[!NOTE]
   >
@@ -40,4 +40,4 @@ Se:
 
 [Adobe Audience Manager Knowledge Base](https://experienceleague.adobe.com/docs/experience-cloud-kcs/kbarticles/KA-16471.html){target="_blank"}.
 
-[Adobe Experience Cloud Central Interface Components Guide](https://experienceleague.adobe.com/docs/core-services/interface/services/audiences/audience-library.html){target="_blank"}.
+[Handbok för komponenter i Adobe Experience Cloud Central Interface](https://experienceleague.adobe.com/docs/core-services/interface/services/audiences/audience-library.html){target="_blank"}.

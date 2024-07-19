@@ -1,21 +1,21 @@
 ---
 product: campaign
-title: Webbanalys
+title: Web Analytics
 description: Läs mer om Web Analytics-paketet
 feature: Workflows, Analytics Integration
 source-git-commit: 6464e1121b907f44db9c0c3add28b54486ecf834
 workflow-type: tm+mt
 source-wordcount: '172'
-ht-degree: 3%
+ht-degree: 1%
 
 ---
 
 
-# Webbanalys{#web-analytics}
+# Web Analytics{#web-analytics}
 
 
 
-Arbetsflödena nedan installeras tillsammans med **Web Analytics-anslutningar** som standard.
+Arbetsflödena som anges nedan installeras som standard med modulen **Web Analytics-anslutningar**.
 
 <table> 
  <tbody> 
@@ -25,19 +25,19 @@ Arbetsflödena nedan installeras tillsammans med **Web Analytics-anslutningar** 
    <td> <strong>Beskrivning</strong><br /> </td> 
   </tr> 
   <tr> 
-   <td> <span class="uicontrol">Skicka indikatorer och kampanjattribut</span> <br /> </td> 
+   <td> <span class="uicontrol">Skickar indikatorer och kampanjattribut</span> <br /> </td> 
    <td> <span class="uicontrol">webAnalyticsSendMetrics</span> <br /> </td> 
-   <td> Med det här arbetsflödet kan ni skicka kampanjindikatorer från Adobe Campaign till Adobe Experience Cloud Suite via Adobe® Analytics-kontakten. De berörda indikatorerna är följande: <strong>Skickat</strong> (Skickat), <strong>Totalt antal öppningar</strong> (iTotalRecipientOpen), <strong>Totalt antal mottagare som klickat</strong> (iTotalRecipientClick), <strong>Fel</strong> (iError), <strong>Avanmäl dig</strong> (avanmäl dig) (avanmäl dig).<br /> </td> 
+   <td> Med det här arbetsflödet kan ni skicka kampanjindikatorer från Adobe Campaign till Adobe Experience Cloud Suite via Adobe® Analytics-kontakten. Följande indikatorer berörs: <strong>Skickat</strong> (Skickat), <strong>Totalt antal öppningar</strong> (iTotalRecipientOpen), <strong>Totalt antal mottagare som klickade</strong> (iTotalRecipientClick), <strong>Fel</strong> (iError), <strong>Opt-Out</strong> (avanmäl) (Anmäl dig).<br /> </td> 
   </tr> 
   <tr> 
    <td> <span class="uicontrol">Identifiering av konverterade kontakter</span> <br /> </td> 
    <td> <span class="uicontrol">webAnalyticsFindConverted</span> <br /> </td> 
-   <td> Det här arbetsflödet indexerar besökare som har slutfört sitt köp efter en ny marknadsföringskampanj. Data som återställs av det här arbetsflödet kan nås via <span class="uicontrol">Rapport om effektivitet vid återmarknadsföring</span> (Se denna ). <br /> </td> 
+   <td> Det här arbetsflödet indexerar besökare som har slutfört sitt köp efter en ny marknadsföringskampanj. Data som återställs av det här arbetsflödet kan nås i <span class="uicontrol">rapporten om effektivitet för återmarknadsföring</span> (se det här ). <br /> </td> 
   </tr> 
   <tr> 
    <td> <span class="uicontrol">Rensa händelse</span> <br /> </td> 
    <td> <span class="uicontrol">webAnalyticsPurgeWebEvents</span> <br /> </td> 
-   <td> Med det här arbetsflödet kan du ta bort alla händelser från databasfältet enligt den period som har konfigurerats i <span class="uicontrol">Lifespan</span> fält. <br /> </td> 
+   <td> Med det här arbetsflödet kan du ta bort alla händelser från databasfältet enligt den period som har konfigurerats i fältet <span class="uicontrol">Lifespan</span>. <br /> </td> 
   </tr> 
   <tr> 
    <td> <span class="uicontrol">Återställning av webbhändelser</span> <br /> </td> 

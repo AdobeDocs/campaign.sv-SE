@@ -1,14 +1,14 @@
 ---
 product: campaign
 title: Definiera godkännanden
-description: Godkännanden gör det möjligt för operatörer att fatta beslut som styr ett arbetsflöde eller att bekräfta att det fortsätter att köras
+description: Godkännanden gör det möjligt för operatorer att fatta beslut som styr ett arbetsflöde eller att bekräfta att det fortsätter att köras
 feature: Approvals
 role: User
 exl-id: 8ac159c1-fd2e-4fb9-8275-18154f6f210c
 source-git-commit: 567c2e84433caab708ddb9026dda6f9cb717d032
 workflow-type: tm+mt
-source-wordcount: '826'
-ht-degree: 4%
+source-wordcount: '827'
+ht-degree: 2%
 
 ---
 
@@ -38,15 +38,15 @@ En operator kan svara på ett av två sätt: validera med den webbsida som är l
 
 Det går att få ett meddelande om godkännande som innehåller en länk till en webbsida där det går att svara. För att måloperatorn ska få ett e-postmeddelande om godkännande måste operatörens e-postadress vara fullständig. Om så inte är fallet måste operatören använda konsolen för att svara.
 
-E-postmeddelanden om godkännande skickas kontinuerligt. Standardleveransmallen är **[!UICONTROL notifyAssignee]**: Den sparas i **[!UICONTROL Administration > Campaign management > Technical delivery templates]** mapp. Scenariot kan anpassas och vi rekommenderar att du skapar en kopia och ändrar mallar för varje aktivitet.
+E-postmeddelanden om godkännande skickas kontinuerligt. Standardleveransmallen är **[!UICONTROL notifyAssignee]**: Den sparas i mappen **[!UICONTROL Administration > Campaign management > Technical delivery templates]**. Scenariot kan anpassas och vi rekommenderar att du skapar en kopia och ändrar mallar för varje aktivitet.
 
-Leveranser som skapas via den här mallen lagras i **[!UICONTROL Administration > Production > Objects created automatically > Technical deliveries > Workflow notifications]** mapp.
+Leveranser som skapas med den här mallen lagras i mappen **[!UICONTROL Administration > Production > Objects created automatically > Technical deliveries > Workflow notifications]**.
 
 ## Godkännanden via konsolen {#approval-via-the-console}
 
 I åtgärder visas element som ska godkännas på kontrollpanelen för kampanjer.
 
-För tekniska arbetsflöden kan de uppgifter som användaren kan godkänna nås från trädstrukturen i **[!UICONTROL Administration > Production > Objects created automatically > Pending approvals]** mapp.
+För tekniska arbetsflöden kan de uppgifter som användaren kan godkänna nås från trädstrukturen i mappen **[!UICONTROL Administration > Production > Objects created automatically > Pending approvals]**.
 
 ![](assets/validation-node.png)
 
@@ -55,7 +55,7 @@ För tekniska arbetsflöden kan de uppgifter som användaren kan godkänna nås 
 Ett godkännande tilldelas en grupp operatorer, en enstaka operator eller en uppsättning operatorer som väljs via ett filtreringsvillkor.
 
 1. För den enklaste formen av godkännande slutförs uppgiften så snart en operator svarar. Alla andra operatorer som försöker svara får ett meddelande om att någon redan har gjort det.
-1. För flera godkännanden, se [Flera godkännanden](#multiple-approval).
+1. Mer information om flera godkännanden finns i [Flera godkännanden](#multiple-approval).
 
 Operatörsgrupperna för godkännanden bör utses som roller eller funktioner i stället för namngivna personer. En&quot;Kampanjbudgetgrupp&quot; är till exempel att föredra framför&quot;Harry&#39;s Group&quot;. Vi rekommenderar att du har minst två personer i en grupp som kan godkänna en uppgift. På så sätt kan den andre svara om någon inte är närvarande.
 
@@ -67,25 +67,25 @@ På den andra fliken i egenskaperna för aktivitetsgodkännande kan du definiera
 
 ![](assets/expiration.png)
 
-Om du vill lägga till ett nytt förfallodatum klickar du på **[!UICONTROL Add]**. En övergång läggs till för varje förfallodatum som skapas. Du kan:
+Om du vill lägga till en ny förfallotid klickar du på **[!UICONTROL Add]**. En övergång läggs till för varje förfallodatum som skapas. Du kan:
 
 * ändra de typiska parametrarna direkt genom att klicka på en cell i listan (eller genom att trycka på F2),
-* eller redigera uttrycket genom att klicka på **[!UICONTROL Detail...]** -knappen.
+* eller redigera uttrycket genom att klicka på knappen **[!UICONTROL Detail...]**.
 
 >[!NOTE]
 >
 >Det är inte nödvändigt att ange en ordning för förfallodatumen eftersom de bearbetas i kronologisk ordning.
 
-The **[!UICONTROL Do not terminate the task]** låter alternativet godkännandet vara aktivt när fördröjningen överskrids. I det här läget kan du hantera påminnelser medan du låter godkännandet vara aktivt: operatorerna kan fortfarande svara. Det här alternativet är inaktiverat som standard, vilket innebär att uppgiften anses vara slutförd när den upphör att gälla och att operatorerna kanske inte längre svarar.
+Alternativet **[!UICONTROL Do not terminate the task]** lämnar godkännandet aktivt när fördröjningen överskrids. I det här läget kan du hantera påminnelser medan du låter godkännandet vara aktivt: operatorerna kan fortfarande svara. Det här alternativet är inaktiverat som standard, vilket innebär att uppgiften anses vara slutförd när den upphör att gälla och att operatorerna kanske inte längre svarar.
 
 Du kan skapa fyra typer av förfallodatum:
 
 * **Fördröjning efter att aktiviteten har startats**: Förfallotiden beräknas genom att en angiven tidsperiod läggs till det datum då godkännandet aktiveras.
-* **Fördröjning efter ett visst datum**: Förfallotiden beräknas genom att lägga till en tidslängd till ett datum som du anger.
-* **Fördröjning före ett visst datum**: Förfallotiden beräknas genom att subtrahera en tid från ett datum som du anger.
-* **Förfallotid beräknat av skript**: Förfallotiden beräknas med JavaScript.
+* **Fördröjning efter ett givet datum**: Förfallodatumet beräknas genom att en tidslängd läggs till för ett datum som du anger.
+* **Fördröjning före ett givet datum**: Förfallodatumet beräknas genom att subtrahera en tidslängd från ett datum som du anger.
+* **Förfallotid beräknad med skript**: Förfallotiden beräknas med JavaScript.
 
-  I följande exempel beräknas ett utgångsdatum 24 timmar innan ett leveransdatum påbörjas (identifieras av **vars.deliveryId**):
+  I följande exempel beräknas en förfallotid 24 timmar innan det datum då en leverans påbörjas (identifieras av **vars.deliveryId**):
 
   ```
   var delivery = nms.delivery.get(vars.deliveryId)

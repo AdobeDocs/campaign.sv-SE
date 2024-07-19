@@ -16,25 +16,25 @@ ht-degree: 2%
 
 ## Spåra en kampanj {#tracking-a-campaign}
 
-För varje kampanj **[!UICONTROL Tracking]** kan du visa alla jobb och deras status.
+På fliken **[!UICONTROL Tracking]** kan du visa alla jobb och deras status för varje kampanj.
 
 Följande information är tillgänglig via den här underfliken:
 
-* The **[!UICONTROL Audit]** underflik visar aktivitetsjournal. Den innehåller jobben som kördes i kampanjen: skapande eller start av arbetsflöden, godkännande, extrahering, arkivhantering osv.
+* Underfliken **[!UICONTROL Audit]** visar aktivitetsjournal. Den innehåller jobben som kördes i kampanjen: skapande eller start av arbetsflöden, godkännande, extrahering, arkivhantering osv.
 
   ![](assets/campaign-audit-tab.png)
 
-* The **[!UICONTROL Deliveries]** -fliken innehåller alla leveranser av kampanjen. De kan redigeras i den här vyn. Välj leveransen och klicka på **[!UICONTROL Detail]** -ikon.
+* Underfliken **[!UICONTROL Deliveries]** innehåller alla leveranser av kampanjen. De kan redigeras i den här vyn. Om du vill göra det markerar du leveransen och klickar på ikonen **[!UICONTROL Detail]**.
 
   ![](assets/campaign-delivery-tab.png)
 
-* The **[!UICONTROL Approvals]** underfliken innehåller alla godkännandeprocesser för kampanjen. Du kan kontrollera information och kommentarer
+* Underfliken **[!UICONTROL Approvals]** innehåller alla godkännandeprocesser för kampanjen. Du kan kontrollera information och kommentarer
 
-* Arbetsflödena som skapas för att generera meddelanden för tjänsteleverantörer visas i **[!UICONTROL Jobs on service providers]** underflik. Klicka på **[!UICONTROL Detail]** om du vill visa det valda arbetsflödet.
+* Arbetsflödena som skapas för att generera meddelanden för tjänstleverantörer visas på underfliken **[!UICONTROL Jobs on service providers]**. Klicka på ikonen **[!UICONTROL Detail]** för att visa det valda arbetsflödet.
 
 ## Spåra leveranser {#delivery-tracking}
 
-Listan över leveranser är tillgänglig via **[!UICONTROL Deliveries]** -länk för Campaign-noden.
+Listan över leveranser är tillgänglig via länken **[!UICONTROL Deliveries]** i Campaign-noden.
 
 ![](assets/filter-deliveries-from-homepage.png)
 
@@ -50,6 +50,6 @@ Om du vill kontrollera status för en leverans redigerar du den och visar kontro
 
 ## Spåra körningen {#execution-tracking}
 
-Du kan kontrollera leveransstatus genom att klicka på **[!UICONTROL Deliveries]**, som du kommer åt via Adobe Campaign hemsida.
+Du kan kontrollera status för leveranser genom att klicka på **[!UICONTROL Deliveries]**, som du kommer åt via Adobe Campaign hemsida.
 
-Information om processer som körs i en kampanj samlas in i **[!UICONTROL Edit > Audit]** -fliken i kampanjen. Du kan visa listan över leveranser i kampanjen. [Läs mer](#tracking-a-campaign).
+Information om processer som körs i en kampanj samlas in på fliken **[!UICONTROL Edit > Audit]** i kampanjen. Du kan visa listan över leveranser i kampanjen. [Läs mer](#tracking-a-campaign).

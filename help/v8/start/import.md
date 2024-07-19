@@ -22,7 +22,7 @@ Förstå kampanj [datamodell](../dev/datamodel.md)
 
 ## Importera profiler i ett arbetsflöde
 
-Profilimport konfigureras i dedikerade mallar som körs via arbetsflöden via **Importera** aktivitet. De kan upprepas automatiskt enligt ett schema, t.ex. för att automatisera datautbyte mellan olika informationssystem. Läs mer i [det här avsnittet](../../automation/workflow/recurring-import-workflow.md).
+Profilimport konfigureras i dedikerade mallar som körs via arbetsflöden via aktiviteten **Importera**. De kan upprepas automatiskt enligt ett schema, t.ex. för att automatisera datautbyte mellan olika informationssystem. Läs mer i [det här avsnittet](../../automation/workflow/recurring-import-workflow.md).
 
 ![](assets/import-wf.png)
 
@@ -33,7 +33,7 @@ Skapa och kör ett allmänt dataimportjobb för att läsa in kontakter i molndat
 
 ![](assets/new-import.png)
 
-Lär dig hur du kör enhetsimportjobb för att mata in databasen i [Campaign Classic v7 - dokumentation](https://experienceleague.adobe.com/docs/campaign-classic/using/getting-started/importing-and-exporting-data/generic-imports-exports/about-generic-imports-exports.html){target="_blank"}.
+Lär dig hur du kör enhetsimportjobb för att mata in din databas i [Campaign Classic v7-dokumentationen](https://experienceleague.adobe.com/docs/campaign-classic/using/getting-started/importing-and-exporting-data/generic-imports-exports/about-generic-imports-exports.html){target="_blank"}.
 
 ## Samla in profiler via webbprogram
 
@@ -41,7 +41,7 @@ Använd Campaign för att skapa webbformulär och samla in och hantera profilinf
 
 ![](assets/web-form-page.png)
 
-Lär dig hur du skapar webbformulär i [Campaign Classic v7 - dokumentation](https://experienceleague.adobe.com/docs/campaign-classic/using/designing-content/web-forms/about-web-forms.html){target="_blank"}.
+Lär dig hur du skapar webbformulär i [Campaign Classic v7-dokumentationen](https://experienceleague.adobe.com/docs/campaign-classic/using/designing-content/web-forms/about-web-forms.html){target="_blank"}.
 
 **Relaterade ämnen**
 

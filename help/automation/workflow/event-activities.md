@@ -19,8 +19,8 @@ Huvuduppgiften med dessa aktiviteter är att vänta på en händelse. Det kan ti
 Dessa aktiviteter är inte tillgängliga i [kampanjspecifika arbetsflöden](campaign-workflows.md).
 
 
-* **[Filinsamlare](file-collector.md)**: övervakar en eller flera filers ankomst till en katalog och möjliggör övergång för varje mottagen fil.
+* **[Filinsamlaren](file-collector.md)**: övervakar en eller flera filers ankomst till en katalog och aktiverar övergång för varje mottagen fil.
 * **[Filöverföring](file-transfer.md)**: överför en fil till en server.
-* **[Inkommande e-postmeddelanden](inbound-emails.md)**: återställer och bearbetar e-post.
+* **[Inkommande e-postmeddelanden](inbound-emails.md)**: återställer och bearbetar e-postmeddelanden.
 * **[Inkommande SMS](inbound-sms.md)**: återställer och bearbetar SMS.
-* **[Webbnedladdning](web-download.md)**: hämtar en fil från webben.
+* **[Webbhämtning](web-download.md)**: hämtar en fil från webben.

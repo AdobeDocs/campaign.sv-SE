@@ -19,13 +19,13 @@ Följande aktiviteter är databasaktiviteter: de används för att samordna arbe
 * **[Varning](alert.md)**: gör att du kan skicka en varning till en operator eller en grupp med operatorer.
 * **[AND-join](and-join.md)**: gör att du kan vänta på att flera åtgärder som har startats samtidigt ska slutföras innan du fortsätter.
 * **[Godkännande](approval.md)**: gör att du kan skicka ett e-postmeddelande till en operator eller en grupp med operatorer och vänta på godkännande för att fortsätta med körningen.
-* **[Extern signal](external-signal.md)**: gör att du kan aktivera den utgående övergången när du har tagit emot en extern signal.
-* **[Gaffel](fork.md)**: du kan aktivera alla utgående övergångar.
-* **[Hoppa (startpunkt och slutpunkt)](jump-start-point-and-end-point.md)**: låter dig implementera övergångar utan länkar.
+* **[Extern signal](external-signal.md)**: gör att du kan aktivera den utgående övergången efter att du har tagit emot en extern signal.
+* **[Förgrening](fork.md)**: gör att du kan aktivera alla utgående övergångar.
+* **[Hoppa (startpunkt och slutpunkt)](jump-start-point-and-end-point.md)**: gör att du kan implementera övergångar utan länkar.
 * **[Start och slut](start-and-end.md)**: gör att du kan visa start- och slutpunkterna för ett arbetsflöde.
-* **[Schemaläggare](scheduler.md)**: låter dig definiera ett arbetsflödeskörningsschema.
+* **[Schemaläggaren](scheduler.md)**: gör att du kan definiera ett arbetsflödeskörningsschema.
 * **[Delarbetsflöde](sub-workflow.md)**: gör att du kan köra ett annat arbetsflöde.
-* **[Testa](test.md)**: aktiverar en övergång baserat på ett testresultat.
-* **[Tidsbegränsning](time-constraint.md)**: låter dig pausa en uppgift under en angiven period.
-* **[Vänta](wait.md)**: aktiverar den utgående övergången efter en viss tidsgräns.
+* **[Test](test.md)**: aktiverar en övergång baserat på ett testresultat.
+* **[Tidsbegränsning](time-constraint.md)**: gör att du kan pausa en aktivitet under en angiven period.
+* **[Vänta](wait.md)**: aktiverar den utgående övergången efter en given tidsgräns.
   <!--* **Task**: lets you configure task execution. Refer to the [Task](task.md) section.-->

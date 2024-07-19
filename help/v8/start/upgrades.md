@@ -20,41 +20,41 @@ Adobe Campaign släpper regelbundet produktversioner som förbättrar prestanda,
 
 Dessa uppgraderingar kan vara:
 
-* **Viktiga uppgraderingar**, från en större version till en annan, till exempel från v7 till v8. Dessa uppgraderingar innehåller nya funktioner, förbättringar, kompatibilitets- och säkerhetsuppdateringar samt korrigeringar.
+* **Stora uppgraderingar**, från en större version till en annan, till exempel från v7 till v8. Dessa uppgraderingar innehåller nya funktioner, förbättringar, kompatibilitets- och säkerhetsuppdateringar samt korrigeringar.
 * **Mindre uppgraderingar**, från en mindre version till en annan, till exempel från v8.5 till v8.6. Dessa uppgraderingar innehåller förbättringar, kompatibilitets- och säkerhetsuppdateringar samt korrigeringar.
-* **Patch upgrades**, från en patch-version till en annan, till exempel från v8.5.1 till v8.5.2. Dessa uppgraderingar innehåller säkerhetsuppdateringar och korrigeringar.
+* **Patch upgrades**, from a patch version to another, example from v8.5.1 to v8.5.2. Dessa uppgraderingar innehåller säkerhetsuppdateringar och korrigeringar.
 
-Detaljerad information om varje ny version finns i [Versionsinformation](release-notes.md).
+Detaljerad information om varje ny version finns i [Versionsinformationen](release-notes.md).
 
-För att konfigurationen ska bli stabil rekommenderar Adobe att du installerar **exakt samma version** på alla era kampanjservrar. Om inte annat anges i [Versionsinformation](release-notes.md)måste klientkonsolen vara aktiverad **exakt samma version** som serverinstansen. Lär dig hur du uppgraderar din klientkonsol [på den här sidan](../start/connect.md#upgrade-ac-console).
+För att konfigurationen ska bli stabil rekommenderar Adobe att du installerar **exakt samma version** på alla dina Campaign-servrar. Om inget annat anges i [Versionsinformationen](release-notes.md) måste dessutom klientkonsolen finnas på **exakt samma version** som serverinstansen. Lär dig hur du uppgraderar klientkonsolen [på den här sidan](../start/connect.md#upgrade-ac-console).
 
 När en ny Campaign-version är tillgänglig uppgraderas din infrastruktur av Adobe utan någon ytterligare åtgärd som kund hos Campaign Managed Services.
 
-Observera att du som kund måste se till att du använder de senaste versionerna av systemen som stöds i [Kompatibilitetsmatris](compatibility-matrix.md).
+Observera att du som kund måste se till att du använder de senaste versionerna av systemen som stöds i [kompatibilitetsmatrisen](compatibility-matrix.md).
 
 
 ## Vanliga frågor och svar {#upgrades-faq}
 
 ### Hur kontrollerar jag Campaign-versionen? {#version}
 
-Om du vill kontrollera vilken Campaign-version du har går du till **Hjälp > Om...** från klientkonsolen.
+Om du vill kontrollera Campaign-versionen går du till **Hjälp > Om...** från klientkonsolen.
 
 ![](assets/ac-version.png)
 
 Du kommer åt följande information:
 
-* The **version** numret på klientkonsolen och programservern. I exemplet ovan är versionen 8.1.5 för både klientkonsolen och programservern.
+* **version**-numret för klientkonsolen och programservern. I exemplet ovan är versionen 8.1.5 för både klientkonsolen och programservern.
 * SHA-talet mellan parenteser.
 * Länk till Adobe kundtjänst.
 * Länkar till Adobe sekretesspolicy, användarvillkor och cookies-policy.
 
 ### Hur får jag information om releasen av en ny version? {#upgrades-0}
 
-Nya versioner och vilka ändringar de gör visas i [Versionsinformation](release-notes.md). När en ny version är tillgänglig kontaktar Adobe dig och uppgraderar dina miljöer.
+Nya versioner och vilka ändringar de gör listas i [versionsinformationen](release-notes.md). När en ny version är tillgänglig kontaktar Adobe dig och uppgraderar dina miljöer.
 
-Om du vill få information om nya releaser för Experience Cloud kan du prenumerera på [Produktuppdatering Adobe Priority](https://www.adobe.com/se/subscription/priority-product-update.html){target="_blank"}.
+Om du vill få information om nya Experience Cloud-lösningsreleaser prenumererar du på [Adobe Priority-produktuppdateringen](https://www.adobe.com/se/subscription/priority-product-update.html){target="_blank"}.
 
-Du kan också besöka [Campaign Community](https://experienceleaguecommunities.adobe.com/t5/custom/page/page-id/Community-TopicsPage?style=all&amp;sort=date&amp;order=desc&amp;filters=adobe-campaign-classic-community&amp;topic=Campaign+v8){target="_blank"} för att få information om uppdateringar.
+Du kan också besöka [Campaign Community](https://experienceleaguecommunities.adobe.com/t5/custom/page/page-id/Community-TopicsPage?style=all&amp;sort=date&amp;order=desc&amp;filters=adobe-campaign-classic-community&amp;topic=Campaign+v8){target="_blank"} för att få information om uppdateringar av releaser.
 
 
 ### Varför behöver min organisation den här uppgraderingen? {#upgrades-1}

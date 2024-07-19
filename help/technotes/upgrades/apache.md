@@ -21,11 +21,11 @@ Adobe Campaign fungerar med verktyg från tredje part och kompatibiliteten uppda
 
 Adobe Campaign innehåller Apache Tomcat som fungerar som startpunkt i programservern via HTTP och är integrerat med Apache Web Server. Apache Software Foundation har släppt Apache HTTP Server 2.4.53. Denna version åtgärdar sårbarheter som kan utnyttjas av en angripare för att ta kontroll över den drabbade datorn. Läs mer i [Apache 2.4.53-meddelande](https://downloads.apache.org/httpd/Announcement2.4.html){target="_blank"}.
 
-Adobe Campaign-teamet kommer att genomföra säkerhetsuppgraderingen av Apache-versionen av **15 juni 2022** för att minska denna Apache-sårbarhet och göra instansmiljön säkrare. Uppgraderingen gäller alla kunder som har hanterade Cloud Service i Campaign Classic v7, kunder som har Campaign v8 och Campaign Standarder som har en sårbar version av Apache HTTP Server. Om du påverkas kontaktade Adobe dig redan för att informera dig om uppgraderingen.
+Adobe Campaign-teamet kommer att genomföra säkerhetsuppgraderingen av Apache-versionen senast den **15 juni 2022** för att minska denna Apache-säkerhetslucka och göra instansmiljön säkrare. Uppgraderingen gäller alla kunder som har hanterade Cloud Service i Campaign Classic v7, kunder som har Campaign v8 och Campaign Standarder som har en sårbar version av Apache HTTP Server. Om du påverkas kontaktade Adobe dig redan för att informera dig om uppgraderingen.
 
 Uppgraderingen förväntas att köras automatiskt utanför kontorstid så att du kan fortsätta använda Campaign-tjänsten utan avbrott.
 
-Din(a) instans(er) som inte är i produktion kommer att uppgraderas av våra team först innan vi uppgraderar dina produktionsinstanser. Eftersom detta är en automatisk uppgraderingsprocess som ägs av Adobe behöver du inte vidta några åtgärder. Om du får problem kan du kontakta [Adobe kundtjänst](https://experienceleague.adobe.com/?support-solution=Campaign#support){target="_blank"}.
+Din(a) instans(er) som inte är i produktion kommer att uppgraderas av våra team först innan vi uppgraderar dina produktionsinstanser. Eftersom detta är en automatisk uppgraderingsprocess som ägs av Adobe behöver du inte vidta några åtgärder. Om du får problem kontaktar du [Adobe kundtjänst](https://experienceleague.adobe.com/?support-solution=Campaign#support){target="_blank"}.
 
 
 >[!NOTE]
@@ -39,21 +39,21 @@ Din(a) instans(er) som inte är i produktion kommer att uppgraderas av våra tea
   Den aktuella Apache-versionen är sårbar och kan utgöra ett säkerhetshot. Det är viktigt att dina Campaign-instanser uppgraderas till den senaste tillämpliga Apache-versionen för att hantera säkerhetsrisken.
 
 
-* **Vilka kunder vill uppgradera?**
+* **Vilka kunder riktar sig till för säkerhetsuppgraderingar?**
 
   Alla kunder som använder Campaign-miljöer som har implementerats i äldre Apache-versioner uppgraderas till den senaste tillämpliga Apache-versionen.
 
-* **Vilka är de förväntade driftsavbrotten?**
+* **Vad är den förväntade nedtiden?**
 
   Förväntat driftstopp är under 10 minuter.
 
-* **Kräver kunden några åtgärder för denna säkerhetsuppgradering?**
+* **Behöver kunden några åtgärder för säkerhetsuppgraderingen?**
 
   Inga åtgärder krävs eftersom säkerhetsuppgraderingen körs automatiskt.
 
-* **Vilka valideringar behöver kunderna köra?**
+* **Vilka valideringar måste köras av kunderna?**
 
-  Ingen specifik testning krävs för denna säkerhetsuppgradering. Om något problem uppstår, kontakta [Adobe kundtjänst](https://experienceleague.adobe.com/?support-solution=Campaign#support){target="_blank"}.
+  Ingen specifik testning krävs för denna säkerhetsuppgradering. Om något problem uppstår kan du kontakta [Adobe kundtjänst](https://experienceleague.adobe.com/?support-solution=Campaign#support){target="_blank"}.
 
 
 * **Kan jag begära en ändring av datum/tid för den schemalagda säkerhetsuppgraderingsplatsen?**
@@ -61,4 +61,4 @@ Din(a) instans(er) som inte är i produktion kommer att uppgraderas av våra tea
   Eftersom det här är en säkerhetskorrigering rekommenderar vi att du anpassar dig till det befintliga schemat.
 
 
-För alla andra frågor kan du kontakta [Adobe kundtjänst](https://experienceleague.adobe.com/?support-solution=Campaign#support){target="_blank"}.
+Om du har andra frågor kan du kontakta [Adobe kundtjänst](https://experienceleague.adobe.com/?support-solution=Campaign#support){target="_blank"}.

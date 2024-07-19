@@ -14,7 +14,7 @@ ht-degree: 21%
 
 # Versionsinformation 2023 {#2023-rn}
 
-Den här sidan innehåller nya funktioner, förbättringar och korrigeringar som ingår **2023 Campaign v8 Releases**.
+På den här sidan visas nya funktioner, förbättringar och korrigeringar som ingår i **2023 Campaign v8-utgåvorna**.
 
 
 ## Version 8.5.2 {#release-8-5-2}
@@ -43,10 +43,10 @@ Mer information finns i den [detaljerade dokumentationen](../send/push-data-coll
 <td>
 <div>
 <p><strong>Förbättrade genomströmningar för mobilkanaler</strong></p>
-<p>Den nyligen introducerade tjänsten Push Notification visar betydande förbättringar av genomströmningen för både Push Android och Push iOS jämfört med vår tidigare version (v8.4). Användarna kommer att uppleva avsevärt bättre prestanda med den uppgraderade tjänsten i den senaste versionen (v8.5). </p>
+<p>Den nya tjänsten Push Notification visar på betydande förbättringar av genomströmningen för både Push Android och Push iOS jämfört med vår tidigare version (v8.4). Användarna kommer att uppleva avsevärt bättre prestanda med den uppgraderade tjänsten i den senaste versionen (v8.5). </p>
 <ul>
 <li>Push-meddelanden (Android): upp till <strong>5x</strong> snabbare </li>
-<li>Push-meddelanden (iOS): upp till <strong>2,2 x</strong> snabbare</li>
+<li>Push-meddelanden (iOS): upp till <strong>2,2x</strong> snabbare</li>
 </ul>
 <p>SMS-genomströmning har förbättrats avsevärt genom en rad optimeringar, vilket har lett till betydande förbättringar av hastighet och effektivitet för SMS-kommunikation. Dessa uppgraderingar har lett till ökad genomströmning från den tidigare versionen (v8.4) till den senaste versionen (v8.5), som omfattar både sändning och feedback-uppdateringar. Användarna kan nu dra nytta av fördelarna med den här förbättrade SMS-tjänsten.</p>
 <ul>
@@ -73,8 +73,8 @@ Mer information finns i den [detaljerade dokumentationen](../send/push-data-coll
 
 **Kompatibilitetsuppdateringar**
 
-* 32-bitarsversionen av klientkonsolen är nu inaktuell. Från och med 8.6 är klientkonsolen endast tillgänglig med 64 bitar. Uppgraderingen till 64-bitarsversionen av klientkonsolen är smidig. Mer information om hur du uppgraderar ditt operativsystem finns i [technote](../../technotes/upgrades/console.md).
-* Nu kan du ansluta Campaign v8-instansen till din externa Azure synapse-databas. Anslutningen hanteras via ett nytt externt konto. Läs mer i [Kompatibilitetsmatris för kampanj](../start/compatibility-matrix.md#federated-data-access-fdafederateddataaccessfda).
+* 32-bitarsversionen av klientkonsolen är nu inaktuell. Från och med 8.6 är klientkonsolen endast tillgänglig med 64 bitar. Uppgraderingen till 64-bitarsversionen av klientkonsolen är smidig. Mer information om hur du uppgraderar ditt operativsystem finns i denna [technote](../../technotes/upgrades/console.md).
+* Nu kan du ansluta Campaign v8-instansen till din externa Azure synapse-databas. Anslutningen hanteras via ett nytt externt konto. Läs mer i [Kompatibilitetsmatrisen för kampanj](../start/compatibility-matrix.md#federated-data-access-fdafederateddataaccessfda).
 
 
 **Korrigeringar**
@@ -137,16 +137,16 @@ _27 januari 2023_
 * Korrigerade två fel vid leveransförberedelse. Förberedelsen kan misslyckas om antalet potentiella erbjudanden som manipuleras är för högt. Det andra problemet uppstod när bild-URL:erna definierades som URL:er att spåra i en textformatsleverans. (NEO-48807) <!--OKKKK-->
 * Korrigerade ett problem som kunde leda till ett arbetsflödesfel där ett arbetsflöde skulle skriva över det lagerställenamn som definierats i det externa kontot för andra konton än FFDA. (NEO-43209) <!--OKKKK-->
 * Förbättrad säkerhet för webbprogram för att förhindra DDoS-attacker. (NEO-50757) <!--OKKKK-->
-* Hanteringen av konsoliderade spårningsdata har förbättrats i **[!UICONTROL Consolidated tracking]** (nms:trackingStats) FFDA-tabell för att undvika dubbletter. (NEO-46409)
-* Ett problem med en logisk operator i arbetsflödesfrågor när en användare användes har korrigerats `enableIf` i ett logiskt operatorvillkor. Det föregående logiska villkoret skrevs över. (NEO-45815)  <!--OKKKK-->
+* Hanteringen av konsoliderade spårningsdata har förbättrats i FFDA-tabellen **[!UICONTROL Consolidated tracking]** (nms:trackingStats) för att undvika dubbletter. (NEO-46409)
+* Korrigerade ett problem med en logisk operator i arbetsflödesfrågor när en `enableIf` användes i ett logiskt operatorvillkor. Det föregående logiska villkoret skrevs över. (NEO-45815) <!--OKKKK-->
 * Genereringen av aktiva profiler har optimerats i faktureringsarbetsflödet för att förbättra prestandan. (NEO-47658) <!--OKKKK-->
 * Korrigerade ett problem med import av HTML-fil när bildnoder (img) innehöll URL:er med personaliseringsfält. (NEO-48396)
-* Ett problem med Snowflake (alla distributioner) när sorteringsparametern i en **Dela** arbetsflödesaktivitet. (NEO-45899) <!--OKKKK-->
+* Korrigerade ett problem med Snowflake (alla distributioner) när sorteringsparametern användes i en **delad** arbetsflödesaktivitet. (NEO-45899) <!--OKKKK-->
 * Korrigerade ett problem som orsakade ett fel när en användare med läsbehörighet i mappen nmsDeliveryMapping försökte köra en kampanj eller ett arbetsflöde. (NEO-48230)
 * Korrigerade ett prestandaproblem på fliken HTML för en leverans som kan uppstå för stor HTML-kod. (NEO-47440)
 <!-- * Fixed an issue which could lead to a "Character set mismatch" error when using certain functions such as `to_nclob` with an Oracle unicode database where NChar was not enabled. (NEO-49361)
 * Fixed an issue which prevented users from inserting a Time datatype in a **Data Update** workflow activity on MSSQL. (NEO-47763)-->
-* Ett problem som hindrade användare från att använda **Sammanfoga markerade rader** arbetsflödesalternativ. (NEO-48488)
+* Ett problem som gjorde att användare inte kunde använda arbetsflödesalternativet **Sammanfoga markerade rader** har korrigerats. (NEO-48488)
 * Korrigerade ett fel på Snowflake FDA-anslutningen som ledde till att poster utelämnades när alternativet &quot;0 eller 1 enkel kardinalitetsanslutning&quot; användes under anrikningen. (NEO-48737)
 * Återstående referenser till log4j-biblioteket har tagits bort från Campaign-installationen i Windows. (NEO-44851)
 * Korrigerade ett problem som kan leda till ett fel när indikatorn **Mottagare som har öppnat** (estimatedRecipientOpen) lades till i ytterligare data för arbetsflödesaktiviteten **Fråga**. (NEO-46665)

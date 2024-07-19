@@ -7,7 +7,7 @@ role: User, Admin
 source-git-commit: 567c2e84433caab708ddb9026dda6f9cb717d032
 workflow-type: tm+mt
 source-wordcount: '69'
-ht-degree: 8%
+ht-degree: 2%
 
 ---
 
@@ -16,7 +16,7 @@ ht-degree: 8%
 
 
 
-Arbetsflödet som beskrivs nedan installeras med **Distribuerad marknadsföring** som standard. Mer information om den här modulen finns i [det här avsnittet](../distributed-marketing/about-distributed-marketing.md).
+Arbetsflödet som beskrivs nedan installeras som standard med modulen **Distributed Marketing** . Mer information om den här modulen finns i [det här avsnittet](../distributed-marketing/about-distributed-marketing.md).
 
 <table> 
  <tbody> 

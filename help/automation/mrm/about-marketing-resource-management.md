@@ -14,19 +14,19 @@ ht-degree: 1%
 
 # Kom igång med Marketing Resource Management{#gs-mrm}
 
-The **Marknadsföringsresurshantering (MRM)** kan ni styra marknadsföringsåtgärder i ett samverkansbaserat läge genom att tillhandahålla fullständig hantering och realtidsspårning av de uppgifter, budgetar och marknadsföringsresurser som ingår.
+Med modulen **Hantering av marknadsföringsresurser (MRM)** kan du styra marknadsföringsåtgärder i ett samverkansbaserat läge genom att tillhandahålla fullständig hantering och realtidsspårning av de uppgifter, budgetar och marknadsföringsresurser som ingår.
 
 Adobe Campaign-operatorer kan samordna sina åtgärder och godkänna deras framsteg i alla faser via fullständiga valideringsprocesser och lämpliga spårningsverktyg: rapportering, spårning av godkännanden, aviseringar, diskussionsforum osv. De varnas i händelse eller fel eller fördröjning och i varje nytt steg i valideringscykeln.
 
 Inom ramen för programmen och delprogrammen i marknadsföringsplanerna kan uppgifter skapas och tilldelas de berörda aktörerna och sedan hanteras under alla faser i dem.
 
-**MRM** kan ni också hantera marknadsföringsresurser där flera deltagare är inblandade: integriteten och övervakningen av resurser utförs via en dedikerad kontrollpanel.
+Med **MRM** kan du även hantera marknadsföringsresurser där flera deltagare är inblandade: integriteten och övervakningen av resurser utförs via en dedikerad kontrollpanel.
 
 Slutligen utökas budgethanteringsfunktionen till hantering av mål- och utgiftsrader samt utökade inbyggda rapporter. Sedan kan ni övervaka och mäta produktiviteten och resultatet för alla marknadsföringsaktiviteter.
 
 >[!AVAILABILITY]
 >
->Marknadsföringsresurshantering (MRM) är inte tillgänglig i samband med en [Företagsdistribution (FFDA)](../../v8/architecture/enterprise-deployment.md) för Campaign.
+>Marknadsföringsresurshantering (MRM) är inte tillgängligt i kontexten för en [Enterprise (FFDA)-distribution](../../v8/architecture/enterprise-deployment.md) av Campaign.
 
 ## Begrepp och terminologi {#core-concepts}
 
@@ -58,6 +58,6 @@ Med tillägget för Marketing Resource Management (MRM) har planer och program y
 
 * **Budgethantering**. [Läs mer](controlling-costs.md)
 
-* **Uppgiftshantering**. [läs mer](creating-and-managing-tasks.md)
+* **Aktivitetshantering**. [läs mer](creating-and-managing-tasks.md)
 
 * **Resurshantering**. [Läs mer](managing-marketing-resources.md)

@@ -16,10 +16,10 @@ ht-degree: 4%
 
 Utnyttja Campaign Interaction-funktionerna genom de här stegvisa användningsexemplen som finns i Campaign Classic v7-dokumentationen:
 
-[Skapa och använda en presentationsregel](https://experienceleague.adobe.com/docs/campaign-classic/using/managing-offers/case-study/presentation-rules.html){target="_blank"}
+[Skapa och tillämpa en presentationsregel](https://experienceleague.adobe.com/docs/campaign-classic/using/managing-offers/case-study/presentation-rules.html){target="_blank"}
 
-[Skicka e-posterbjudanden](https://experienceleague.adobe.com/docs/campaign-classic/using/managing-offers/case-study/offers-on-an-outbound-channel.html){target="_blank"}
+[Skicka ett e-posterbjudande](https://experienceleague.adobe.com/docs/campaign-classic/using/managing-offers/case-study/offers-on-an-outbound-channel.html){target="_blank"}
 
-[Presentera ett erbjudande för en anonym besökare](https://experienceleague.adobe.com/docs/campaign-classic/using/managing-offers/case-study/offers-on-an-outbound-channel.html){target="_blank"}
+[Presentera ett erbjudande till en anonym besökare](https://experienceleague.adobe.com/docs/campaign-classic/using/managing-offers/case-study/offers-on-an-outbound-channel.html){target="_blank"}
 
-[Simulera erbjudanden](https://experienceleague.adobe.com/docs/campaign-classic/using/managing-offers/case-study/offers-on-an-outbound-channel.html){target="_blank"}
+[Utför en erbjudandesimulering](https://experienceleague.adobe.com/docs/campaign-classic/using/managing-offers/case-study/offers-on-an-outbound-channel.html){target="_blank"}

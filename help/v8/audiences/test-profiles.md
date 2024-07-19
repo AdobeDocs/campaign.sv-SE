@@ -20,9 +20,9 @@ Testprofiler skapas som dirigerade adresser. De används för målmottagare som 
 
 Startadresserna har följande fördelar:
 
-* Slumpmässig ersättning av fält med data från mottagarprofiler: Detta gör att du bara kan ange e-postadressen, till exempel i avsnittet dirigerad adress, och låta Campaign automatiskt fylla i de andra fälten från profilen. Läs mer i [Campaign Classic v7 - dokumentation](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/using-seed-addresses/use-case--selecting-seed-addresses-on-criteria.html){target="_blank"}.
+* Slumpmässig ersättning av fält med data från mottagarprofiler: Detta gör att du bara kan ange e-postadressen, till exempel i avsnittet dirigerad adress, och låta Campaign automatiskt fylla i de andra fälten från profilen. Läs mer i [Campaign Classic v7-dokumentationen](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/using-seed-addresses/use-case--selecting-seed-addresses-on-criteria.html){target="_blank"}.
 * När du använder ett arbetsflöde med datahanteringsfunktioner kan ytterligare data som bearbetas i leveranser anges på dirigeringsadressnivå för att framtvinga värden: detta innebär att slumpmässiga värden ersätts.
-* dirigeringsadresser exkluderas automatiskt från rapporter om följande leveransstatistik: **[!UICONTROL Clicks]**, **[!UICONTROL Opens]**, **[!UICONTROL Unsubscriptions]**.
+* Seed-adresser exkluderas automatiskt från rapporter om följande leveransstatistik: **[!UICONTROL Clicks]**, **[!UICONTROL Opens]**, **[!UICONTROL Unsubscriptions]**.
 
 Seed-adresser läggs till i målet för leveranser genom att importeras eller skapas direkt i leveransen eller kampanjen.
 
@@ -30,22 +30,22 @@ Seed-adresser läggs till i målet för leveranser genom att importeras eller sk
 >
 >Seed-adresser skapas inte i mottagartabellen, utan i en separat tabell. Om du utökar mottagartabellen med nya data måste du utöka både dirigerade adresstabellen och samma data. I annat fall kommer de utökade fälten inte att beaktas för dirigerade adresser.
 >
->Ett exempel på hur du utökar startadresstabellen finns i [Campaign Classic v7 - dokumentation](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/using-seed-addresses/use-case--selecting-seed-addresses-on-criteria.html){target="_blank"}.
+>Ett exempel på hur du utökar startadresstabellen finns i [Campaign Classic v7-dokumentationen](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/using-seed-addresses/use-case--selecting-seed-addresses-on-criteria.html){target="_blank"}.
 
 
 
 ## Skapa dirigerade adresser
 
-Seed-adresser hanteras inte via standardprofiler och -mål, men i en dedikerad nod i Adobe Campaign Explorer: **[!UICONTROL Resources > Campaign management > Seed addresses]**. Du kan skapa undermappar för att ordna startadresserna.
+Seed-adresser hanteras inte via standardprofiler och standardmål, men i en dedikerad nod i Adobe Campaign Explorer: **[!UICONTROL Resources > Campaign management > Seed addresses]**. Du kan skapa undermappar för att ordna startadresserna.
 
-Med Adobe Campaign kan ni också skapa mallar för dirigerade adresser som importeras till leveranser eller kampanjer och som anpassas utifrån de specifika behoven hos de aktuella leveranserna och kampanjerna. Se [Skapa mallar för dirigerade adresser](#creating-seed-address-templates).
+Med Adobe Campaign kan ni också skapa mallar för dirigerade adresser som importeras till leveranser eller kampanjer och som anpassas utifrån de specifika behoven hos de aktuella leveranserna och kampanjerna. Se [Skapa dirigerade adressmallar](#creating-seed-address-templates).
 
 ### Definiera adresser {#defining-addresses}
 
 Så här skapar du dirigerade adresser:
 
-1. Klicka på **[!UICONTROL New]** ovanför listan med dirigerade adresser.
-1. Ange data som är länkade till adressen i matchande fält från **[!UICONTROL Recipient]** -fliken. De tillgängliga fälten motsvarar standardfälten i leveransmottagarnas profiler (nms:mottagartabell): namn, förnamn, e-post osv.
+1. Klicka på knappen **[!UICONTROL New]** ovanför listan med dirigerade adresser.
+1. Ange data som är länkade till adressen i matchande fält på fliken **[!UICONTROL Recipient]**. De tillgängliga fälten motsvarar standardfälten i leveransmottagarnas profiler (nms:mottagartabell): namn, förnamn, e-post osv.
 
    >[!NOTE]
    >
@@ -53,11 +53,11 @@ Så här skapar du dirigerade adresser:
    >
    >Du behöver inte ange alla fält på varje flik när du skapar en startadress. Personaliseringselement som saknas anges slumpmässigt under leveransanalysen.
 
-1. I **[!UICONTROL Address fields]** anger du de värden som ska infogas i leveransloggarna under analysfasen i **[!UICONTROL nms:broadLog]** tabell.
+1. På fliken **[!UICONTROL Address fields]** anger du de värden som ska infogas i leveransloggarna under analysfasen i tabellen **[!UICONTROL nms:broadLog]**.
 
-1. I **[!UICONTROL Additional data]** Ange de personaliseringsdata som används för leveranser som skapas i arbetsflödena för datahantering och som du vill tilldela ett specifikt värde till.
+1. På fliken **[!UICONTROL Additional data]** anger du de personaliseringsdata som används för leveranser som har skapats i arbetsflödena för datahantering och som du vill tilldela ett specifikt värde till.
 
-   Se till att ytterligare måldata har definierats med ett alias som börjar med @ i **[!UICONTROL Enrichment]** arbetsflödesaktivitet. Annars kan du inte använda dem på rätt sätt med dina dirigerade adresser i leveransaktiviteten.
+   Kontrollera att ytterligare måldata har definierats med ett alias som börjar med @ i arbetsflödesaktiviteten **[!UICONTROL Enrichment]**. Annars kan du inte använda dem på rätt sätt med dina dirigerade adresser i leveransaktiviteten.
 
 ### Skapa mallar för dirigerade adresser {#creating-seed-address-templates}
 
@@ -65,41 +65,41 @@ Du kan skapa adressmallar som kan importeras och ändras för varje leverans. Pr
 
 ### Säljadresser för direktreklam {#direct-mail-seed-addresses}
 
-För [direktreklam](../send/direct-mail.md), läggs startadresser till under extraheringen och blandas i utdatadokumentet.
+För [direkta e-postleveranser](../send/direct-mail.md) läggs startadresser till under extraheringen och blandas i utdatadokumentet.
 
 För direktreklam måste extraheringsfilformatet uppfylla följande begränsningar:
 
 * Det får inte använda alternativet **[!UICONTROL Handle groupings (GROUP BY+HAVING)]**.
 
-* Om elementsamlingar extraheras får dessa fält ett tomt värde för startadresserna, såvida inte **[!UICONTROL Single row (expert user)]** är markerat.
+* Om elementsamlingar extraheras kommer dessa fält att ha ett tomt värde för startadresserna, såvida inte alternativet **[!UICONTROL Single row (expert user)]** har valts.
 
 ## Lägga till dirigerade adresser i en leverans{#seed-addresses-in-a-delivery}
 
-Om du vill lägga till specifika dirigerade adresser för en leverans klickar du på **[!UICONTROL To]** klicka på **[!UICONTROL Seed addresses]** -fliken.
+Om du vill lägga till specifika dirigerade adresser för en leverans klickar du på länken **[!UICONTROL To]** och väljer fliken **[!UICONTROL Seed addresses]**.
 
 Det finns tre möjliga insättningslägen:
 
-1. Ange enskilda dirigeringsadresser.  Klicka på **[!UICONTROL Add]** och definiera innehållet i adressfälten. Upprepa för varje adress.
+1. Ange enskilda dirigeringsadresser.  Det gör du genom att klicka på knappen **[!UICONTROL Add]** och definiera innehållet i adressfälten. Upprepa för varje adress.
 
-1. Importera [mallar för dirigeringsadresser](#creating-seed-address-template) och anpassa dem efter era behov. Klicka på **[!UICONTROL Import seed templates...]** och välj den mapp som innehåller adressmallarna.
+1. Importera [startadressmallar](#creating-seed-address-template) och anpassa dem efter dina behov. Om du vill göra det klickar du på länken **[!UICONTROL Import seed templates...]** och väljer den mapp som innehåller adressmallarna.
 
-   Om det behövs kan du dubbelklicka på dem eller klicka på **[!UICONTROL Detail...]** för att anpassa innehållet i varje adress.
+   När de har lagts till kan du dubbelklicka på dem eller klicka på knappen **[!UICONTROL Detail...]** för att anpassa innehållet i varje adress.
 
-1. Skapa ett villkor för att dynamiskt markera de kontrolladresser som ska infogas. Klicka på **[!UICONTROL Edit the dynamic condition...]** och ange parametrar för val av dirigeringsadress. Du kan t.ex. inkludera alla dirigerade adresser i en viss mapp eller dirigerade adresser som tillhör en viss avdelning i organisationen.
+1. Skapa ett villkor för att dynamiskt markera de kontrolladresser som ska infogas. Det gör du genom att klicka på länken **[!UICONTROL Edit the dynamic condition...]** och sedan ange parametrar för val av dirigeringsadress. Du kan t.ex. inkludera alla dirigerade adresser i en viss mapp eller dirigerade adresser som tillhör en viss avdelning i organisationen.
 
-   Ett exempel visas i [Campaign Classic v7 - dokumentation](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/using-seed-addresses/use-case--selecting-seed-addresses-on-criteria.html){target="_blank"}.
+   Ett exempel på detta visas i [Campaign Classic v7-dokumentationen](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/using-seed-addresses/use-case--selecting-seed-addresses-on-criteria.html){target="_blank"}.
 
 För leveranser kan du också anpassa hur adresser infogas i extraheringsfilen. Som standard infogas de i utdatafilens sorteringsordning, men du kan välja att infoga dem i slutet eller början av filen, eller slumpmässigt bland mottagarna av huvudmålet.
 
 ## Lägga till dirigerade adresser i en kampanj {#seed-addresses-in-a-campaign}
 
-Om du vill lägga till dirigerade adresser till ett mål för en kampanj väljer du åtgärden och klickar på knappen **[!UICONTROL Edit]** -fliken.
+Om du vill lägga till dirigerade adresser till ett mål för en kampanj väljer du åtgärden och klickar på fliken **[!UICONTROL Edit]**.
 
-Klicka på **[!UICONTROL Advanced campaign settings...]** och sedan **[!UICONTROL Seed addresses]** -fliken. Startadresserna som infogats från kampanjen läggs till i målet för varje leverans i kampanjen.
+Klicka på länken **[!UICONTROL Advanced campaign settings...]** och sedan på fliken **[!UICONTROL Seed addresses]**. Startadresserna som infogats från kampanjen läggs till i målet för varje leverans i kampanjen.
 
 ## Fröadresser och anpassad tabell {#using-an-external-recipient-table}
 
-Om leveranstabellen är en extern tabell måste du göra ytterligare konfigurationer. The **[!UICONTROL nms:seedmember]** schemat måste utökas. En flik läggs till i startadresserna för att definiera lämpliga fält
+Om leveranstabellen är en extern tabell måste du göra ytterligare konfigurationer. Schemat **[!UICONTROL nms:seedmember]** måste utökas. En flik läggs till i startadresserna för att definiera lämpliga fält
 
 Om du i det här fallet vill lägga till dirigerade adresser till leveransen anger du lämpliga fält direkt på matchande flik eller importerar adressmallarna.
 

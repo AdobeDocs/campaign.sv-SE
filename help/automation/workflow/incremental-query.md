@@ -7,7 +7,7 @@ role: User
 exl-id: 3e9f92c3-080f-441b-a15a-2ec9d056d1f9
 source-git-commit: 567c2e84433caab708ddb9026dda6f9cb717d032
 workflow-type: tm+mt
-source-wordcount: '355'
+source-wordcount: '356'
 ht-degree: 3%
 
 ---
@@ -29,22 +29,22 @@ Frågan definieras på samma sätt som för vanliga frågor, men körningen är 
 
 >[!CAUTION]
 >
->Om resultatet av en stegvis fråga är lika med **0** under en av körningarna pausas arbetsflödet tills frågan körs nästa gång. De övergångar och aktiviteter som följer efter den stegvisa frågan bearbetas därför inte före nästa körning.
+>Om resultatet av en inkrementell fråga är lika med **** under en av dess körningar pausas arbetsflödet tills frågan körs nästa gång. De övergångar och aktiviteter som följer efter den stegvisa frågan bearbetas därför inte före nästa körning.
 
 Så här gör du:
 
-1. I **[!UICONTROL Scheduling & History]** väljer du **[!UICONTROL Schedule execution]** alternativ. Aktiviteten förblir aktiv när den har skapats och aktiveras endast vid de tidpunkter som anges i schemat för körning av frågan. Om alternativet är inaktiverat körs frågan omedelbart **och på en gång**.
+1. Välj alternativet **[!UICONTROL Schedule execution]** på fliken **[!UICONTROL Scheduling & History]**. Aktiviteten förblir aktiv när den har skapats och aktiveras endast vid de tidpunkter som anges i schemat för körning av frågan. Om alternativet är inaktiverat körs frågan omedelbart **och i en gång**.
 1. Klicka på knappen **[!UICONTROL Change]**.
 
-   I **[!UICONTROL Schedule editing wizard]** kan du konfigurera typ av frekvens, återkommande händelser och händelsegiltighetsperiod.
+   I **[!UICONTROL Schedule editing wizard]**-fönstret kan du konfigurera typen av frekvens, händelseupprepning och händelsegiltighetsperiod.
 
    ![](assets/s_user_segmentation_wizard_11.png)
 
-1. Klicka **[!UICONTROL Finish]** för att spara schemat.
+1. Klicka på **[!UICONTROL Finish]** om du vill spara schemat.
 
    ![](assets/s_user_segmentation_wizard_valid.png)
 
-1. Den nedre delen av **[!UICONTROL Scheduling & History]** kan du välja hur många dagar som ska tas med i historiken.
+1. I det nedre avsnittet på fliken **[!UICONTROL Scheduling & History]** kan du välja hur många dagar som ska tas med i historiken.
 
    ![](assets/edit_request_inc.png)
 
@@ -66,4 +66,4 @@ Så här gör du:
 * schema
 * recCount
 
-Den här uppsättningen med tre värden identifierar den population som frågan riktar sig till. **[!UICONTROL tableName]** är namnet på den tabell som registrerar målidentifierarna, **[!UICONTROL schema]** är schemat för populationen (vanligtvis nms:mottagare) och **[!UICONTROL recCount]** är antalet element i tabellen.
+Den här uppsättningen med tre värden identifierar den population som frågan riktar sig till. **[!UICONTROL tableName]** är namnet på tabellen som registrerar målidentifierarna, **[!UICONTROL schema]** är schemat för populationen (vanligtvis nms:mottagare) och **[!UICONTROL recCount]** är antalet element i tabellen.

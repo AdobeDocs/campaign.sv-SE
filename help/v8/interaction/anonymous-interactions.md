@@ -16,19 +16,19 @@ ht-degree: 0%
 
 ## Miljö för anonyma interaktioner {#environment-for-anonymous-interactions}
 
-Som standard, Campaign **Interaktion** -modulen innehåller en förkonfigurerad miljö för den inbyggda mottagartabellen (identifierade erbjudanden). Om du behöver ange en annan tabell som mål, en besökstabell för anonyma erbjudanden eller en anpassad mottagartabell som exempel, måste du använda guiden för målmappning för att skapa miljön. [Läs mer om miljöer](interaction-env.md).
+Som standard levereras modulen Campaign **Interaction** med en förkonfigurerad miljö för den inbyggda mottagartabellen (identifierade erbjudanden). Om du behöver ange en annan tabell som mål, en besökstabell för anonyma erbjudanden eller en anpassad mottagartabell som exempel, måste du använda guiden för målmappning för att skapa miljön. [Läs mer om miljöer](interaction-env.md).
 
-När du skapar en anonym miljö via guiden för att skapa mappningar **[!UICONTROL Environment dedicated to incoming anonymous interactions]** -rutan markeras automatiskt i miljöns **[!UICONTROL General]** -fliken.
+När du skapar en anonym miljö via guiden för att skapa mappningar, checkas rutan **[!UICONTROL Environment dedicated to incoming anonymous interactions]** automatiskt in på miljöns **[!UICONTROL General]**-flik.
 
-The **[!UICONTROL Targeting dimension]** slutförs automatiskt. Som standard länkas den till besökstabellen.
+**[!UICONTROL Targeting dimension]** slutförs automatiskt. Som standard länkas den till besökstabellen.
 
-The **[!UICONTROL Visitor folder]** visas. Det görs automatiskt för att länka till **[!UICONTROL Visitors]** mapp. I det här fältet kan du välja var besökarprofiler ska sparas.
+Fältet **[!UICONTROL Visitor folder]** visas. Det slutförs automatiskt för att länka till mappen **[!UICONTROL Visitors]**. I det här fältet kan du välja var besökarprofiler ska sparas.
 
 ![](assets/anonymous_environment_option.png)
 
 >[!NOTE]
 >
->Om du vill filtrera flera typer av besökare, till exempel om anonyma erbjudanden presenteras för ett eller flera varumärken, måste du skapa en miljö för varje varumärke och en **[!UICONTROL Visitors]** typmapp för varje miljö.
+>Om du vill filtrera flera typer av besökare, till exempel om anonyma erbjudanden presenteras för ett eller flera varumärken, måste du skapa en miljö för varje varumärke och en **[!UICONTROL Visitors]**-typmapp för varje miljö.
 
 ## Erbjud katalog för anonyma interaktioner {#offer-catalog-for-anonymous-interactions}
 
@@ -42,7 +42,7 @@ Anonyma besökare kan bli föremål för en process för identifiering av cookie
 
 Under det här steget görs en jämförelse mellan de data som har återställts av cookies och de i din databas. I vissa fall identifieras besökare (de identifieras sedan implicit), i andra fall identifieras de inte (och förblir därför anonyma).
 
-Om du vill köra den här analysen kan du kontrollera erbjudandeutrymmet i **[!UICONTROL Implicitly identify the individual based on their browser history]** alternativ.
+Om du vill köra den här analysen ska du kontrollera alternativet **[!UICONTROL Implicitly identify the individual based on their browser history]** för erbjudandeutrymme.
 
 ![](assets/identification_anonymous_visitors.png)
 
@@ -52,6 +52,6 @@ Om ingen anonym besökare identifieras efter analysen kan du lagra deras data i 
 
 Om det inte finns något element som gör att du kan identifiera en kontakt, eller om du inte vill föreslå ett identifierat erbjudande till en kontakt som kan identifieras implicit, kan du välja att göra en reservlösning i en anonym miljö.
 
-Om du vill göra det går du till **[!UICONTROL Fall back on an anonymous environment if no individuals were identified]** anger du sedan den miljö som är dedikerad till de oidentifierade besökarna i **[!UICONTROL Linked anonymous space]** när du anger ett erbjudandeutrymme.
+Om du vill göra det kontrollerar du **[!UICONTROL Fall back on an anonymous environment if no individuals were identified]** och anger sedan miljön som är dedikerad till de oidentifierade besökarna i **[!UICONTROL Linked anonymous space]** när du anger ett erbjudandeutrymme.
 
 ![](assets/anonymous_to_anonymous_environment.png)

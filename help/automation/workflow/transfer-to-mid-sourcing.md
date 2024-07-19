@@ -1,19 +1,19 @@
 ---
 product: campaign
-title: Överföring till mid-sourcing
+title: Överföring till Mid-sourcing
 description: Läs mer om Överför till arbetsflöden från olika källor
 feature: Workflows
 source-git-commit: 6464e1121b907f44db9c0c3add28b54486ecf834
 workflow-type: tm+mt
 source-wordcount: '95'
-ht-degree: 8%
+ht-degree: 2%
 
 ---
 
 
-# Överföring till mid-sourcing{#transfer-to-mid-sourcing}
+# Överföring till Mid-sourcing{#transfer-to-mid-sourcing}
 
-Arbetsflödena nedan installeras tillsammans med **Överföring till medelkälla** som standard.
+Arbetsflödena som anges nedan installeras som standard med modulen **Överför till medelkälla**.
 
 <table> 
  <tbody> 

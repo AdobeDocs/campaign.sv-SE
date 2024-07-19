@@ -18,7 +18,7 @@ Skapa fördefinierade filter för att definiera berättiganderegler för målpop
 
 Om du vill skapa ett fördefinierat filter använder du följande process:
 
-1. Gå till **[!UICONTROL Administration]** mapp och markera **[!UICONTROL Pre-defined offer filters]**.
+1. Bläddra till mappen **[!UICONTROL Administration]** och välj **[!UICONTROL Pre-defined offer filters]**.
 
    ![](assets/offer_filter_create_005.png)
 
@@ -38,6 +38,6 @@ Om du vill skapa ett fördefinierat filter använder du följande process:
 
    ![](assets/offer_filter_create_004.png)
 
-1. Klicka **[!UICONTROL Preview]** om du vill visa resultatet av filtret.
+1. Klicka på **[!UICONTROL Preview]** om du vill visa resultatet av filtret.
 
    ![](assets/offer_filter_create_006.png)

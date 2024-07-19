@@ -6,7 +6,7 @@ feature: Workflows, Targeting Activity, Data Management
 exl-id: 63b214c7-bbbf-448b-b3af-b3b7a7a5b65c
 source-git-commit: 6464e1121b907f44db9c0c3add28b54486ecf834
 workflow-type: tm+mt
-source-wordcount: '841'
+source-wordcount: '844'
 ht-degree: 1%
 
 ---
@@ -15,41 +15,41 @@ ht-degree: 1%
 
 
 
-An **Uppdatera data**-type-aktivitet utför en massuppdatering av fälten i databasen.
+En aktivitet av typen **Uppdatera data** utför en massuppdatering av fälten i databasen.
 
 ## Åtgärdstyp {#operation-type}
 
-The **[!UICONTROL Operation type]** kan du välja vilken process som ska utföras på data i databasen:
+I fältet **[!UICONTROL Operation type]** kan du välja vilken process som ska utföras på data i databasen:
 
-* **[!UICONTROL Insert or update]**: lägga till eller uppdatera data om de redan har lagts till.
-* **[!UICONTROL Insert]**: bara lägga till data.
-* **[!UICONTROL Update]**: bara uppdatera data.
-* **[!UICONTROL Update and merge collections]**: uppdaterar data och väljer en primär post och länkar sedan element som är länkade till dubbletterna i den här primära posten. Dubbletter kan sedan tas bort utan att överordnade element skapas.
+* **[!UICONTROL Insert or update]**: lägg till eller uppdatera data om det redan har lagts till.
+* **[!UICONTROL Insert]**: lägg endast till data.
+* **[!UICONTROL Update]**: endast uppdatera data.
+* **[!UICONTROL Update and merge collections]**: Uppdatera data, välj en primär post och länka sedan element som är länkade till dubbletterna i den här primära posten. Dubbletter kan sedan tas bort utan att överordnade element skapas.
 * **[!UICONTROL Delete]**: ta bort data.
 
 ![](assets/s_advuser_update_data_1.png)
 
-The **[!UICONTROL Batch size]** I kan du välja hur många inkommande övergångselement som ska uppdateras. Om du till exempel anger 500 uppdateras de första 500 posterna som behandlas.
+I fältet **[!UICONTROL Batch size]** kan du välja antalet inkommande övergångselement som ska uppdateras. Om du till exempel anger 500 uppdateras de första 500 posterna som behandlas.
 
 ## Registrerings-ID {#record-identification}
 
 Ange hur posterna i databasen ska identifieras:
 
-* Om datainmatningarna relaterar till en befintlig måldimension väljer du **[!UICONTROL By directly using the targeting dimension]** och markera det i dialogrutan **[!UICONTROL Updated dimension]** fält.
+* Om dataposter relaterar till en befintlig måldimension väljer du alternativet **[!UICONTROL By directly using the targeting dimension]** och markerar det i fältet **[!UICONTROL Updated dimension]**.
 
-   Du kan visa fälten för den valda dimensionen med **[!UICONTROL Edit this link]** förstoringsglasknapp.
+  Du kan visa fälten för den valda dimensionen med förstoringsglasknappen **[!UICONTROL Edit this link]**.
 
-* I annat fall anger du en eller flera länkar som gör det möjligt att identifiera data i databasen eller att använda avstämningsnycklar direkt.
+* Annars anger du en eller flera länkar som gör det möjligt att identifiera data i databasen eller att använda avstämningsnycklar direkt.
 
 ![](assets/s_advuser_update_data_2.png)
 
 ## Markera de fält som ska uppdateras {#selecting-the-fields-to-be-updated}
 
-Använd **[!UICONTROL Automatically associate fields with the same name]** för att Adobe Campaign automatiskt ska kunna identifiera de fält som ska uppdateras.
+Använd alternativet **[!UICONTROL Automatically associate fields with the same name]** för att Adobe Campaign automatiskt ska identifiera de fält som ska uppdateras.
 
 ![](assets/s_advuser_update_data_3b.png)
 
-Du kan också använda **[!UICONTROL Insert]** om du vill välja de databasfält som ska uppdateras manuellt.
+Du kan också använda ikonen **[!UICONTROL Insert]** för att manuellt välja de databasfält som ska uppdateras.
 
 ![](assets/s_advuser_update_data_3.png)
 
@@ -57,22 +57,22 @@ Markera alla fält som ska uppdateras och, om det behövs, lägg till villkor be
 
 Du kan använda samma målfält flera gånger.
 
-Inom en **[!UICONTROL Insert or update]** kan du välja vilken kampanj som ska användas, antingen individuellt eller för varje fält. Om du vill göra det väljer du önskat värde i dialogrutan **[!UICONTROL Operation]** kolumn.
+Inom en **[!UICONTROL Insert or update]**-åtgärd kan du välja vilken kampanj som ska användas, antingen individuellt eller för varje fält. Det gör du genom att markera det önskade värdet i kolumnen **[!UICONTROL Operation]**.
 
 ![](assets/s_advuser_update_data_5.png)
 
-The **[!UICONTROL modifiedDate]**, **[!UICONTROL modifiedBy]**, **[!UICONTROL createdDate]** och **[!UICONTROL createdBy]** fält uppdateras automatiskt under datauppdateringar, såvida inte deras hanteringsläge har konfigurerats specifikt i fältuppdateringstabellen.
+Fälten **[!UICONTROL modifiedDate]**, **[!UICONTROL modifiedBy]**, **[!UICONTROL createdDate]** och **[!UICONTROL createdBy]** uppdateras automatiskt under datauppdateringar, såvida inte deras hanteringsläge har konfigurerats specifikt i fältuppdateringstabellen.
 
 Postuppdatering utförs bara för poster som innehåller minst en skillnad. Om värdena är desamma utförs ingen uppdatering.
 
-The **[!UICONTROL Advanced parameters]** Med -länken kan du ange ytterligare alternativ för att hantera både uppdatering och dubbletter. Du kan också:
+Med länken **[!UICONTROL Advanced parameters]** kan du ange ytterligare alternativ för att hantera uppdateringar av data och dubbletter. Du kan också:
 
 * **[!UICONTROL Disable automatic key management]**.
 * **[!UICONTROL Disable audit]**.
 * **[!UICONTROL Empty the destination value if the source value is empty (NULL)]**. Det här alternativet är automatiskt markerat som standard.
 * **[!UICONTROL Update all columns with matching names]**.
-* Ange villkor som beaktar källelement med hjälp av ett uttryck i **[!UICONTROL Enabled if]** fält.
-* Ange villkor som hanterar dubbletter med hjälp av ett uttryck. Om du markerar **[!UICONTROL Ignore records which concern the same target]** -alternativet kommer endast den första i listan med uttryck att beaktas.
+* Ange villkor som beaktar källelement med hjälp av ett uttryck i fältet **[!UICONTROL Enabled if]**.
+* Ange villkor som hanterar dubbletter med hjälp av ett uttryck. Om du markerar alternativet **[!UICONTROL Ignore records which concern the same target]** beaktas bara den första i listan med uttryck.
 
 **[!UICONTROL Generate an outbound transition]**
 
@@ -90,7 +90,7 @@ Genom att uppdatera data och sammanfoga samlingar kan du uppdatera data i en pos
 >
 >Med det här alternativet kan du även bearbeta referenser till sekundära poster från arbetsflödestabeller (targetWorkflow), leveranser (targetDelivery) och listor (targetList). Om det behövs visas länkarna i listan där du väljer fält och samlingar.
 
-1. Välj **[!UICONTROL Update and merge collections]** operation.
+1. Välj åtgärden **[!UICONTROL Update and merge collections]**.
 
    ![](assets/update_and_merge_collections1.png)
 
@@ -108,7 +108,7 @@ Genom att uppdatera data och sammanfoga samlingar kan du uppdatera data i en pos
 
    Du kan till exempel konfigurera sammanslagningen av samlingar som innehåller heterogena data, till exempel en lista över prenumerationer för en mottagare. Med hjälp av regler kan du också skapa nya prenumerationshistorik från prenumerationer på sekundära poster eller till och med flytta listan över prenumerationer från en sekundär post till en primär post.
 
-1. Ange i vilken ordning du vill att de sekundära posterna ska behandlas genom att markera **[!UICONTROL Advanced parameters]** > **[!UICONTROL Duplicates]**.
+1. Ange i vilken ordning du vill att de sekundära posterna ska behandlas genom att välja **[!UICONTROL Advanced parameters]** > **[!UICONTROL Duplicates]**.
 
    ![](assets/update_and_merge_collections3.png)
 
@@ -116,7 +116,7 @@ Data för sekundära poster kopplas till huvudposten om de definierade reglerna 
 
 ## Exempel: Uppdatera data efter en anrikning {#example--update-data-following-an-enrichment}
 
-The [Steg 2: Skriva data i registret &#39;Inköp&#39;](create-a-summary-list.md#step-2--writing-enriched-data-to-the--purchases--table) i användningsexemplet där detaljerad information om att skapa en sammanfattning ger ett exempel på en datauppdatering efter en anrikningsaktivitet.
+[Steg 2: Skriver anrikade data till avsnittet Inköpsregister](create-a-summary-list.md#step-2--writing-enriched-data-to-the--purchases--table) i användningsexemplet där detaljerad information om hur du skapar en sammanfattning ger ett exempel på en datauppdatering efter en anrikningsaktivitet.
 
 ## Indataparametrar {#input-parameters}
 

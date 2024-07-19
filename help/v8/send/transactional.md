@@ -18,7 +18,7 @@ Transactional Messaging (Message Center) är en Campaign-modul som är utformad 
 
 >[!NOTE]
 >
->Som användare av hanterade Cloud Service [kontakta Adobe](../start/campaign-faq.md#support){target="_blank"} för att konfigurera Campaign Transactional Messaging i er miljö.
+>Som användare av hanterade Cloud Service [kontaktar du Adobe](../start/campaign-faq.md#support){target="_blank"} för att konfigurera kampanjtransaktionsmeddelanden i din miljö.
 
 Transaktionsmeddelanden används för att skicka:
 
@@ -26,9 +26,9 @@ Transaktionsmeddelanden används för att skicka:
 * ett individuellt svar i realtid på en kunds handling
 * icke-marknadsföringsmaterial
 
-Inställningar för transaktionsmeddelanden finns i [det här avsnittet](../config/transactional-msg-settings.md).
+Inställningar för transaktionsmeddelanden beskrivs i [det här avsnittet](../config/transactional-msg-settings.md).
 
-Förstå transaktionsmeddelandearkitekturen på [den här sidan](../architecture/architecture.md#transac-msg-archi).
+Förstå arkitekturen för transaktionsmeddelanden på [den här sidan](../architecture/architecture.md#transac-msg-archi).
 
 ## Transactional messaging operating policy policy {#transactional-messaging-operating-principle}
 
@@ -43,15 +43,15 @@ De viktigaste stegen för att införa detta är följande:
 1. [Skapa en händelsetyp](#create-event-types).
 1. [Skapa och utforma meddelandemallen](#create-message-template). Du måste länka en händelse till ditt meddelande under det här steget.
 1. [Testa meddelandet](#test-message-template).
-1. [Publicera meddelandemallen](#publish-message-template).
+1. [Publish meddelandemallen](#publish-message-template).
 
-När du har utformat och publicerat transaktionsmeddelandemallen skickas relevanta data till Campaign via PushEvent och PushEvents, om en motsvarande händelse utlöses. [SOAP-metoder](../send/event-description.md)och leveransen skickas till mottagarna.
+När du har utformat och publicerat transaktionsmeddelandemallen skickas relevanta data till Campaign via metoderna PushEvent och PushEvents [SOAP ](../send/event-description.md) om en motsvarande händelse aktiveras, och leveransen skickas till målmottagarna.
 
 ## Skapa händelsetyper {#create-event-types}
 
-För att vara säker på att varje händelse kan ändras till ett personligt meddelande måste du först skapa **händelsetyper**.
+För att vara säker på att varje händelse kan ändras till ett anpassat meddelande måste du först skapa **händelsetyper**.
 
-När [skapa en meddelandemall](#create-message-template)väljer du den typ av händelse som matchar meddelandet som du vill skicka.
+När [skapar en meddelandemall](#create-message-template) väljer du den typ av händelse som matchar meddelandet som du vill skicka.
 
 >[!CAUTION]
 >
@@ -59,21 +59,21 @@ När [skapa en meddelandemall](#create-message-template)väljer du den typ av h�
 
 Följ stegen nedan för att skapa händelsetyper som ska bearbetas av Adobe Campaign:
 
-1. Gå till **[!UICONTROL Administration > Platform > Enumerations]** mapp för Campaign Explorer.
-1. Välj **[!UICONTROL Event type]** uppräkning från listan.
-1. Klicka **[!UICONTROL Add]** för att skapa ett uppräkningsvärde. Detta kan vara en orderbekräftelse, lösenordsändring, orderleveransändring osv.
+1. Bläddra till mappen **[!UICONTROL Administration > Platform > Enumerations]** i Campaign Explorer.
+1. Välj uppräkningen **[!UICONTROL Event type]** i listan.
+1. Klicka på **[!UICONTROL Add]** om du vill skapa ett uppräkningsvärde. Detta kan vara en orderbekräftelse, lösenordsändring, orderleveransändring osv.
 
    ![](assets/messagecenter_eventtype_enum_001.png)
 
    >[!CAUTION]
    >
-   >Varje händelsetyp måste matcha ett värde i **[!UICONTROL Event type]** uppräkning.
+   >Varje händelsetyp måste matcha ett värde i uppräkningen **[!UICONTROL Event type]**.
 
 1. När de specificerade listvärdena har skapats loggar du ut och tillbaka till instansen för att det ska gå att skapa.
 
 >[!NOTE]
 >
->Läs mer om uppräkningar i [den här sidan](../../v8/config/ui-settings.md#enumerations).
+>Läs mer om uppräkningar på [den här sidan](../../v8/config/ui-settings.md#enumerations).
 
 
 ## Definiera en mall för transaktionsmeddelanden {#create-message-template}
@@ -84,8 +84,8 @@ Varje händelse kan utlösa ett personligt meddelande. För att detta ska ske m�
 
 Följ stegen nedan för att skapa en meddelandemall:
 
-1. Gå till **[!UICONTROL Message Center >Transactional message templates]** i Adobe Campaign-trädet.
-1. Högerklicka och välj i listan över transaktionsmeddelandemallar **[!UICONTROL New]** i listrutan eller klicka på **[!UICONTROL New]** ovanför listan med transaktionsmeddelandemallar.
+1. Gå till mappen **[!UICONTROL Message Center >Transactional message templates]** i Adobe Campaign-trädet.
+1. Högerklicka och välj **[!UICONTROL New]** i listrutan i listan över transaktionsmeddelandemallar eller klicka på knappen **[!UICONTROL New]** ovanför listan med transaktionsmeddelandemallar.
 
    ![](assets/messagecenter_create_model_001.png)
 
@@ -111,7 +111,7 @@ Definitionen av transaktionens meddelandeinnehåll är densamma som för alla le
 >[!CAUTION]
 >
 >Bilderna i meddelandet måste vara tillgängliga för alla. Adobe Campaign har ingen mekanism för överföring av bilder för transaktionsmeddelanden.\
->Till skillnad från i JSSP eller webApp, `<%=` har ingen standardflytning.
+>Till skillnad från i JSSP och webApp har `<%=` ingen standardflytning.
 >
 >Du måste undvika alla data som kommer från händelsen på rätt sätt. Den här inställningen beror på hur det här fältet används. Använd till exempel encodeURIComponent i en URL. Om du vill visas i HTML kan du använda escapeXMLString.
 
@@ -126,7 +126,7 @@ Gör så här om du vill infoga personaliseringstaggar i brödtexten i ett e-pos
 
 1. Klicka på fliken som matchar e-postformatet (HTML eller text) i meddelandemallen.
 1. Ange meddelandets brödtext.
-1. Infoga taggen med hjälp av **[!UICONTROL Real time events>Event XML]** menyer.
+1. Infoga taggen med **[!UICONTROL Real time events>Event XML]**-menyerna i texten.
 
    ![](assets/messagecenter_create_custo_1.png)
 
@@ -140,7 +140,7 @@ Gör så här om du vill infoga personaliseringstaggar i brödtexten i ett e-pos
 
 Med en dirigerad adress kan du visa en förhandsgranskning av meddelandet, skicka ett korrektur och testa meddelandets personalisering innan du skickar meddelandet. Seed-adresserna är kopplade till leveransen och kan inte användas för andra leveranser.
 
-1. Klicka på knappen **[!UICONTROL Seed addresses]** klickar du på **[!UICONTROL Add]** -knappen.
+1. Klicka på fliken **[!UICONTROL Seed addresses]** i mallen för transaktionsmeddelanden och klicka sedan på knappen **[!UICONTROL Add]**.
 
    ![](assets/messagecenter_create_seed_1.png)
 
@@ -154,7 +154,7 @@ Med en dirigerad adress kan du visa en förhandsgranskning av meddelandet, skick
 
    ![](assets/messagecenter_create_custo_3.png)
 
-1. Klicka **[!UICONTROL Ok]** för att bekräfta skapandet av startadressen.
+1. Klicka på **[!UICONTROL Ok]** för att bekräfta att startadressen har skapats.
 
 1. Upprepa processen för att skapa så många adresser du behöver.
 
@@ -186,7 +186,7 @@ This information enables you to personalize message content using personalizatio
 
 När du har skapat en eller flera dirigerade adresser och meddelandetexten kan du förhandsgranska meddelandet och kontrollera dess personalisering.
 
-1. Klicka på knappen **[!UICONTROL Preview]** tabbtangenten och sedan välja **[!UICONTROL A seed address]** i listrutan.
+1. Klicka på fliken **[!UICONTROL Preview]** i meddelandemallen och välj sedan **[!UICONTROL A seed address]** i listrutan.
 
    ![](assets/messagecenter_preview_1.png)
 
@@ -202,12 +202,12 @@ När du skickar ett korrektur utförs samma process som för alla leveranser. L�
 
 Om du vill skicka ett bevis på ett transaktionsmeddelande måste du utföra följande åtgärder:
 
-* Skapa en eller flera [dirigeringsadresser](#add-seeds) med personaliseringstest
+* Skapa en eller flera [dirigerade adresser](#add-seeds) med personaliseringstestdata
 * Skapa meddelandeinnehållet
 
 Skicka korrekturet:
 
-1. Klicka på **[!UICONTROL Send a proof]** i leveransfönstret.
+1. Klicka på knappen **[!UICONTROL Send a proof]** i leveransfönstret.
 1. Analysera leveransen.
 1. Åtgärda eventuella fel och bekräfta leveransen.
 
@@ -217,13 +217,13 @@ Skicka korrekturet:
 
    ![](assets/messagecenter_send_proof_002.png)
 
-Du kan komma åt korrektur i varje mall via **[!UICONTROL Audit]** -fliken.
+Du kan komma åt korrektur i varje mall via fliken **[!UICONTROL Audit]**.
 
 ![](assets/messagecenter_send_proof_003.png)
 
-## Publicera mallen {#publish-message-template}
+## Publish the template {#publish-message-template}
 
-När meddelandemallen skapades<!-- on the control instance--> är klar kan du publicera den så att du kan skicka meddelanden som är länkade till realtids- och grupphändelser.
+När meddelandemallen <!-- on the control instance--> har skapats kan du publicera den, så att du kan skicka meddelanden som är länkade till realtids- och grupphändelser.
 
 <!--This process will also publish it on all execution instances.
 
@@ -235,17 +235,17 @@ Publication lets you automatically create two message templates on the execution
 >
 >När du gör några ändringar i en mall måste du publicera den igen för att ändringarna ska gälla vid leverans av transaktionsmeddelanden.
 
-1. Gå till **[!UICONTROL Message Center > Transactional message templates]** mapp i trädet.
-1. Välj den mall som du vill publicera<!--on your execution instances-->.
+1. Gå till mappen **[!UICONTROL Message Center > Transactional message templates]** i trädet.
+1. Välj den mall som du vill publicera <!--on your execution instances-->.
 1. Klicka på **[!UICONTROL Publish]**.
 
    ![](assets/messagecenter_publish_template.png)
 
-När publiceringen är klar skapas båda meddelandemallarna som ska användas för batch- och realtidshändelser i **[!UICONTROL Administration > Production > Message Center Execution> Default > Transactional message templates]** mapp.
+När publikationen är klar skapas båda meddelandemallarna som ska användas för batch- och realtidshändelser i mappen **[!UICONTROL Administration > Production > Message Center Execution> Default > Transactional message templates]**.
 
 ![](assets/messagecenter_deployed_model.png)
 
-När en mall har publicerats, om motsvarande händelse aktiveras, Adobe Campaign<!--execution instance--> tar emot händelsen, länkar den till transaktionsmallen och skickar motsvarande transaktionsmeddelande till varje mottagare.
+När en mall har publicerats, om motsvarande händelse aktiveras, kommer Adobe Campaign<!--execution instance--> att ta emot händelsen, länka den till transaktionsmallen och skicka motsvarande transaktionsmeddelande till varje mottagare.
 
 <!--
 >[!NOTE]
@@ -257,31 +257,31 @@ När en mall har publicerats, om motsvarande händelse aktiveras, Adobe Campaign
 
 ## Avpublicera en mall
 
-När en meddelandemall har publicerats <!--on the execution instances-->kan den avpubliceras.
+När en meddelandemall har publicerats <!--on the execution instances--> kan den avpubliceras.
 
 * En publicerad mall kan fortfarande anropas om motsvarande händelse aktiveras: om du inte längre använder en meddelandemall bör du avpublicera den. Detta för att undvika att skicka ett oönskat transaktionsmeddelande av misstag.
 
   Du publicerade till exempel en meddelandemall som du bara använder för julkampanjer. Du kanske vill avpublicera den när julperioden är slut och publicera den igen nästa år.
 
-* Du kan inte heller ta bort en transaktionsmeddelandemall som har **[!UICONTROL Published]** status. Du måste avpublicera det först.
+* Du kan inte heller ta bort en transaktionsmeddelandemall som har statusen **[!UICONTROL Published]**. Du måste avpublicera det först.
 
 Följ stegen nedan om du vill avpublicera en transaktionsmeddelandemall.
 
-1. Gå till **[!UICONTROL Message Center > Transactional message templates]** mapp.
+1. Gå till mappen **[!UICONTROL Message Center > Transactional message templates]**.
 1. Välj den mall som ska avpubliceras.
 1. Klicka på **[!UICONTROL Unpublish]**.
 1. Klicka på **[!UICONTROL Start]**.
 
 ![](assets/message-center-unpublish.png)
 
-Mallstatusen för transaktionsmeddelanden ändras tillbaka från **[!UICONTROL Published]** till **[!UICONTROL Being edited]**.
+Mallstatusen för transaktionsmeddelandet ändras tillbaka från **[!UICONTROL Published]** till **[!UICONTROL Being edited]**.
 
 När borttagningen är klar:
 
-* Båda meddelandemallarna (används för batch- och realtidshändelser) tas bort<!-- from each execution instance-->.
+* Båda meddelandemallarna (används för batch- och realtidshändelser) tas bort <!-- from each execution instance-->.
 
-  De visas inte längre i **[!UICONTROL Administration > Production > Message Center Execution > Default > Transactional message templates]** mapp.
+  De visas inte längre i mappen **[!UICONTROL Administration > Production > Message Center Execution > Default > Transactional message templates]**.
 
-* När en mall inte har publicerats kan du ta bort den<!-- from the control instance-->.
+* När en mall har avpublicerats kan du ta bort den <!-- from the control instance-->.
 
-  Om du vill göra det markerar du den i listan och klickar på **[!UICONTROL Delete]** överst till höger på skärmen.
+  Det gör du genom att markera den i listan och klicka på knappen **[!UICONTROL Delete]** överst till höger på skärmen.

@@ -16,15 +16,15 @@ ht-degree: 9%
 
 [!DNL Adobe Campaign] innehåller en uppsättning JavaScript-funktioner som du kan använda:
 
-* i skript - in [!DNL Adobe Campaign] arbetsflöden
+* i skript - i [!DNL Adobe Campaign] arbetsflöden
 * via API:er - från externa system
 
-Du kan använda JavaScript-API:er för att skriva i Campaign-molndatabasen eller läsa från databasen:
+Du kan använda JavaScript API:er för att skriva i Campaign-molndatabasen eller läsa från databasen:
 
-* Affärsspecifika API:er som du kan använda för varje objekt: leveranser, arbetsflöden, prenumerationer och så vidare. Läs mer i [Campaign Classic v7 - dokumentation](https://experienceleague.adobe.com/docs/campaign-classic/using/configuring-campaign-classic/api/business-oriented-apis.html){target="_blank"}.
-* Generiska API:er för dataåtkomst för att fråga om datamodelldata. Läs mer i [Campaign Classic v7 - dokumentation](https://experienceleague.adobe.com/docs/campaign-classic/using/configuring-campaign-classic/api/data-oriented-apis.html){target="_blank"}.
+* Affärsspecifika API:er som du kan använda för varje objekt: leveranser, arbetsflöden, prenumerationer och så vidare. Läs mer i [Campaign Classic v7-dokumentationen](https://experienceleague.adobe.com/docs/campaign-classic/using/configuring-campaign-classic/api/business-oriented-apis.html){target="_blank"}.
+* Generiska API:er för dataåtkomst för att fråga om datamodelldata. Läs mer i [Campaign Classic v7-dokumentationen](https://experienceleague.adobe.com/docs/campaign-classic/using/configuring-campaign-classic/api/data-oriented-apis.html){target="_blank"}.
 
-Observera att i [Företagsdistribution (FFDA)](../architecture/enterprise-deployment.md)fungerar Campaign med två databaser: en lokal databas för meddelanden i realtid i användargränssnittet, enhetliga frågor och skrivningar via API:er samt en molndatabas för kampanjkörning, rapportering, datainhämtning, batchfrågor och arbetsflödeskörning.
+Observera att Campaign fungerar med två databaser i sin [Enterprise-distribution](../architecture/enterprise-deployment.md): en lokal databas för meddelanden i realtid i användargränssnittet och enhetsfrågor och skriva via API:er, samt en molndatabas för kampanjkörning, rapportering, datainhämtning, batchfrågor och arbetsflödeskörning.
 
 >[!CAUTION]
 >
@@ -37,13 +37,13 @@ Observera att i [Företagsdistribution (FFDA)](../architecture/enterprise-deploy
 
 ## Förhandskrav {#ac-api-prerequisites}
 
-Innan du använder [!DNL Adobe Campaign] API:er måste du känna till följande:
+Innan du använder [!DNL Adobe Campaign] API:er måste du känna till följande ämnen:
 
 * JavaScript
-* SOAP-protokoll
-* [!DNL Adobe Campaign] datamodell
+* SOAP
+* [!DNL Adobe Campaign] datamodel
 
-För att kunna använda API:er och interagera med [!DNL Adobe Campaign]måste du också känna till din datamodell.
+Om du vill använda API:er och interagera med [!DNL Adobe Campaign] måste du också känna till din datamodell.
 
 >[!NOTE]
 >Du kan generera en fullständig beskrivning av din datamodell. Läs mer på [den här sidan](datamodel.md).

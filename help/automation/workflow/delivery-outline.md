@@ -14,24 +14,24 @@ ht-degree: 1%
 
 # Leveransbeskrivning{#delivery-outline}
 
-The **leveransdisposition** I kan du använda en disposition i ett kampanjarbetsflöde. Dispositionen måste ha skapats i kampanjen i förväg.
+Med **leveransdispositionen** kan du använda en disposition i ett kampanjarbetsflöde. Dispositionen måste ha skapats i kampanjen i förväg.
 
 Om du vill konfigurera aktiviteten behöver du bara markera den disposition du vill ha samt det planerade kontaktdatumet. Du kan lägga till filtreringsregler genom att lägga till typologier eller typologiregler.
 
 ## Exempel: Infoga ett erbjudande via en leveransdisposition {#example--inserting-an-offer-via-a-delivery-outline}
 
-The **leveransdisposition** -aktivitet, som finns i kampanjarbetsflödena, gör att du kan presentera erbjudanden som refereras i en leveransöversikt från den pågående kampanjen.
+Med aktiviteten **leveransdisposition**, som är tillgänglig i kampanjarbetsflödena, kan du presentera erbjudanden som refereras i en leveransdisposition från den pågående kampanjen.
 
 >[!NOTE]
 >
->The **Interaktion** paketet måste installeras.
+>Paketet **Interaction** måste vara installerat.
 
 1. Lägg till en dispositionsaktivitet för leverans i ett arbetsflöde innan du lägger till en leveransaktivitet.
 1. I dispositionsaktiviteten för leverans anger du den disposition du vill använda.
 1. Fyll i de tillgängliga fälten efter leverans.
 1. Det finns två möjliga fall:
 
-   * Om du vill ringa erbjudandemotorn kan du kontrollera **[!UICONTROL Restrict the number of propositions selected]** box. Ange erbjudandeutrymme och antalet offerter som ska presenteras i leveransen.
+   * Om du vill ringa erbjudandemotorn markerar du kryssrutan **[!UICONTROL Restrict the number of propositions selected]**. Ange erbjudandeutrymme och antalet offerter som ska presenteras i leveransen.
 
      Anbudsvikterna och reglerna för rätt till uppgradering kommer att beaktas av erbjudandemotorn.
 

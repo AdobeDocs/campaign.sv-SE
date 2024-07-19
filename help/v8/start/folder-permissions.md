@@ -18,31 +18,31 @@ ht-degree: 0%
 
 Använd behörigheter i mappar för att ordna och styra åtkomsten till Campaign-data.
 
-Mapphantering beskrivs i [den här sidan](../audiences/folders-and-views.md).
+Mapphantering beskrivs på [den här sidan](../audiences/folders-and-views.md).
 
 Följ stegen nedan om du vill redigera behörigheter i en viss Campaign-mapp:
 
 1. Högerklicka på mappen och välj **[!UICONTROL Properties...]**.
-1. Gå till **[!UICONTROL Security]** för att visa behörigheter i den här mappen.
+1. Bläddra till fliken **[!UICONTROL Security]** om du vill visa behörigheter för den här mappen.
 
    ![](assets/folder-permissions.png)
 
-* Till **auktorisera en grupp eller en operator** klickar du på **[!UICONTROL Add]** och välj den grupp eller operator som ska tilldelas behörigheter för den här mappen.
-* Till **förbjuda en grupp eller en operatör**, klicka **[!UICONTROL Delete]** och välj den grupp eller operator som ska ta bort behörigheten för den här mappen.
-* Till **markera de rättigheter som tilldelats en grupp eller en operator**, markerar gruppen eller operatorn, markerar de åtkomsträttigheter som du vill ge och avmarkerar de andra.
+* Om du vill **auktorisera en grupp eller en operator** klickar du på knappen **[!UICONTROL Add]** och väljer gruppen eller operatorn för att tilldela behörigheter för den här mappen.
+* Om du vill **förbjuda en grupp eller en operator** klickar du på **[!UICONTROL Delete]** och väljer den grupp eller operator som du vill ta bort behörigheten för den här mappen.
+* Om du vill **markera de rättigheter som tilldelats en grupp eller en operator** markerar du gruppen eller operatorn, markerar de rättigheter som du vill ge och avmarkerar de andra.
 
 ## Sprid behörigheter {#propagate-permissions}
 
-Om du vill sprida auktoriseringar och åtkomsträttigheter väljer du **[!UICONTROL Propagate]** i mappegenskaperna.
+Om du vill sprida auktoriseringar och åtkomsträttigheter väljer du alternativet **[!UICONTROL Propagate]** i mappegenskaperna.
 
 Behörigheterna som definieras i det här fönstret kommer sedan att tillämpas på alla undermappar i den aktuella noden. Du kan alltid överlagra dessa behörigheter för var och en av undermapparna.
 
 >[!NOTE]
 >
->Avmarkerar **[!UICONTROL Propagate]** för en mapp tar inte bort den för undermapparna: du måste rensa den explicit för var och en av undermapparna.
+>Om du avmarkerar alternativet **[!UICONTROL Propagate]** för en mapp tas det inte bort för undermapparna: du måste avmarkera det explicit för var och en av undermapparna.
 
 ## Ge åtkomst till alla operatorer {#grant-access-to-all-operators}
 
-I **[!UICONTROL Security]** väljer du **[!UICONTROL System folder]** för att ge åtkomst till alla operatorer, oavsett deras behörigheter.
+På fliken **[!UICONTROL Security]** väljer du **[!UICONTROL System folder]** för att tillåta åtkomst till alla operatorer, oavsett deras behörigheter.
 
 Om det här alternativet är avmarkerat måste du uttryckligen lägga till operatorn (eller deras grupp) i listan över auktoriseringar som de ska ha åtkomst till.

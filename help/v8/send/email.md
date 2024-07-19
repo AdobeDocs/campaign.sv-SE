@@ -27,7 +27,7 @@ I följande exempel får du lära dig hur du utformar en e-postleverans i Adobe 
 
 1. **Skapa leveransen**
 
-   Om du vill skapa en ny leverans går du till **Kampanjer** flik, klicka **Leveranser** och klicka på **Skapa** ovanför listan över befintliga leveranser.
+   Om du vill skapa en ny leverans går du till fliken **Kampanjer**, klickar på **Leveranser** och klickar på knappen **Skapa** ovanför listan över befintliga leveranser.
 
    ![](assets/delivery_step_1.png)
 
@@ -37,9 +37,9 @@ I följande exempel får du lära dig hur du utformar en e-postleverans i Adobe 
 
    ![](assets/dce_delivery_model.png)
 
-1. **Importera innehåll**
+1. **Importera ditt innehåll**
 
-   Klicka på **Källa** för att klistra in HTML-innehåll.
+   Klicka på fliken **Source** om du vill klistra in ditt HTML-innehåll.
 
    ![](assets/paste-content.png)
 
@@ -51,7 +51,7 @@ I följande exempel får du lära dig hur du utformar en e-postleverans i Adobe 
 
    * Lägg till förnamn och efternamn för mottagarna
 
-     Om du vill infoga för- och efternamnen på målprofilerna i innehållet i meddelandet placerar du markören där du vill infoga dem och klickar på den sista ikonen i verktygsfältet. Klicka sedan på **[!UICONTROL Include]** och markera **[!UICONTROL Greetings]**.
+     Om du vill infoga för- och efternamnen på målprofilerna i innehållet i meddelandet placerar du markören där du vill infoga dem och klickar på den sista ikonen i verktygsfältet, klickar på **[!UICONTROL Include]** och väljer **[!UICONTROL Greetings]**.
 
      ![](assets/include-greetings.png)
 
@@ -63,27 +63,27 @@ I följande exempel får du lära dig hur du utformar en e-postleverans i Adobe 
 
    * Infoga en spårad länk
 
-     Om du vill dirigera leveransmottagare till en extern adress via en bild eller text markerar du den och klickar på knappen **[!UICONTROL Add a link]** i verktygsfältet.
+     Om du vill dirigera leveransmottagare till en extern adress via en bild eller text markerar du den och klickar på ikonen **[!UICONTROL Add a link]** i verktygsfältet.
 
-     Ange länkens URL i dialogrutan **URL** fält med följande format **https://www.myURL.com**, och bekräfta sedan.
+     Ange URL-adressen för länken i fältet **URL** med följande format: **https://www.myURL.com** och bekräfta sedan.
 
      ![](assets/add-a-link.png)
 
    * Lägga till en spegelsida
 
-     Om du vill att mottagarna ska kunna se ditt leveransinnehåll i en webbläsare lägger du till en länk i [spegelsida](mirror-page.md) av ditt meddelande.
+     Om du vill att mottagarna ska kunna visa ditt leveransinnehåll i en webbläsare lägger du till en länk på meddelandets [spegelsida](mirror-page.md).
 
-     Placera markören där du vill infoga länken, klicka på den sista ikonen i verktygsfältet och klicka sedan på **[!UICONTROL Include]** och markera **[!UICONTROL link to mirror page]**.
+     Placera markören där du vill infoga länken, klicka på den sista ikonen i verktygsfältet, klicka på **[!UICONTROL Include]** och välj **[!UICONTROL link to mirror page]**.
 
      Läs mer om hur du hanterar spegelsidan i [det här avsnittet](mirror-page.md#link-to-mirror-page).
 
 1. Du kan definiera ytterligare parametrar för e-postmeddelandet, till exempel skicka en kopia av meddelandena till en BBC-adress, ändra meddelandeformatet, ange en viss kodning osv. Läs mer i [det här avsnittet](email-parameters.md).
 
-1. När innehållet är klart klickar du **Spara**: den kommer nu att visas i din lista över leveranser i **[!UICONTROL Campaigns > Deliveries]** -fliken.
+1. När innehållet är klart klickar du på **Spara**: det visas nu i listan över leveranser på fliken **[!UICONTROL Campaigns > Deliveries]** .
 
 Din första e-postleverans är klar. Nu måste ni definiera målgruppen, validera leveransen och skicka den.
 
-Lär dig hur du importerar ett e-postinnehåll i det här [användningsfall](https://experienceleague.adobe.com/docs/campaign/automation/workflows/use-cases/deliveries/load-delivery-content.html){target="_blank"}.
+Lär dig hur du importerar ett e-postinnehåll i det här [användningsfallet](https://experienceleague.adobe.com/docs/campaign/automation/workflows/use-cases/deliveries/load-delivery-content.html){target="_blank"}.
 
 Läs mer i följande avsnitt:
 
@@ -95,7 +95,7 @@ Läs mer i följande avsnitt:
 
 ## Testa och validera dina e-postmeddelanden
 
-Campaign erbjuder flera sätt att testa och validera dina e-postmeddelanden innan de skickas till era målgrupper. Lär dig hur du förhandsgranskar och testar e-postinnehåll i [det här avsnittet](../send/preview-and-proof.md).
+Campaign erbjuder flera sätt att testa och validera dina e-postmeddelanden innan de skickas till era målgrupper. Lär dig hur du förhandsgranskar och testar ditt e-postinnehåll i [det här avsnittet](../send/preview-and-proof.md).
 
 Du kan:
 

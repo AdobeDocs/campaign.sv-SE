@@ -29,7 +29,7 @@ Du kan konfigurera:
 
 Använd Adobe Campaign arbetsflöden för att förbättra hastigheten och skalan på alla delar av era marknadsföringskampanjer, från att skapa segment och förbereda meddelanden till leverans.
 
-Lär dig hur du utformar arbetsflöden i dessa [heltäckande användningsexempel](#end-to-end-uc).
+Lär dig hur du utformar arbetsflöden i dessa [kompletta användningsfall](#end-to-end-uc).
 
 Läs mer om arbetsflöden, användargränssnitt och körning på dessa sidor:
 
@@ -41,7 +41,7 @@ Läs mer om arbetsflöden, användargränssnitt och körning på dessa sidor:
 
 * [Körning av arbetsflöden för övervakning](https://experienceleague.adobe.com/docs/campaign/automation/workflows/monitoring-workflows/monitor-workflow-execution.html){target="_blank"}
 
-* [Bygg en målgrupp i ett arbetsflöde för marknadsföringskampanjer](https://experienceleague.adobe.com/docs/campaign/automation/campaign-orchestration/marketing-campaign-target.html){target="_blank"}
+* [Skapa en målgrupp i ett arbetsflöde för marknadsföringskampanjer](https://experienceleague.adobe.com/docs/campaign/automation/campaign-orchestration/marketing-campaign-target.html){target="_blank"}
 
 ## Arbetsflödesaktiviteter {#wf-activities}
 
@@ -49,72 +49,72 @@ Läs mer om tillgängliga arbetsflödesaktiviteter i [det här avsnittet](https:
 
 Arbetsflödesaktiviteter grupperas efter kategori. De fyra aktivitetskategorierna är tillgängliga:
 
-* [Verksamheter som riktar sig till](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/targeting-activities/targeting-activities.html){target="_blank"}: Fråga, läslista, anrikning, union med mera
-* [Flödeskontroll](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/flow-control-activities/flow-control-activities.html){target="_blank"}: Schemaläggare, gaffel, varning, extern signal med mera
-* [Verksamheter](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/action-activities/action-activities.html){target="_blank"}: Flerkanalsleveranser, JavaScript-kod, CRM-aktiviteter, Uppdatera sammanställning med mera
-* [Evenemangsaktiviteter](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/event-activities/event-activities.html){target="_blank"}: Filöverföring, webbnedladdning med mera
+* [Målaktiviteter](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/targeting-activities/targeting-activities.html){target="_blank"}: Fråga, Läslista, Berikning, Förening med mera
+* [Flödeskontrollaktiviteter](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/flow-control-activities/flow-control-activities.html){target="_blank"}: Schemaläggare, gaffel, varning, extern signal med mera
+* [Åtgärdsaktiviteter](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/action-activities/action-activities.html){target="_blank"}: Flerkanalsleveranser, JavaScript-kod, CRM-aktiviteter, Uppdatera sammanställning med mera
+* [Händelseaktiviteter](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/event-activities/event-activities.html){target="_blank"}: Filöverföring, webbnedladdning med mera
 
 ### Ändra datakällaktivitet {#change-data-source-activity}
 
-The **[!UICONTROL Change data source]** kan du ändra datakällan för ett arbetsflöde **[!UICONTROL Working table]**. Detta ger större flexibilitet att hantera data över olika datakällor, som FDA, FFDA och lokala databaser.
+Med aktiviteten **[!UICONTROL Change data source]** kan du ändra datakällan för arbetsflödet **[!UICONTROL Working table]**. Detta ger större flexibilitet att hantera data över olika datakällor, som FDA, FFDA och lokala databaser.
 
-The **[!UICONTROL Working table]** gör att Adobe Campaign arbetsflöde kan hantera data och dela data med arbetsflödesaktiviteter.
-Som standard är **[!UICONTROL Working table]** skapas i samma databas som källan för de data som vi frågar efter.
+**[!UICONTROL Working table]** tillåter Adobe Campaign-arbetsflöde att hantera data och dela data med arbetsflödesaktiviteter.
+Som standard skapas **[!UICONTROL Working table]** i samma databas som källan för de data vi söker efter.
 
-När du till exempel frågar **[!UICONTROL Profiles]** tabellen, som lagras i molndatabasen, skapar du en **[!UICONTROL Working table]** i samma molndatabas.
-Om du vill ändra detta kan du lägga till **[!UICONTROL Change Data Source]** väljer du en annan datakälla för **[!UICONTROL Working table]**.
+Om du till exempel frågar i tabellen **[!UICONTROL Profiles]**, som lagras i molndatabasen, skapar du en **[!UICONTROL Working table]** i samma molndatabas.
+Om du vill ändra detta kan du lägga till aktiviteten **[!UICONTROL Change Data Source]** och välja en annan datakälla för **[!UICONTROL Working table]**.
 
-Observera att när du använder **[!UICONTROL Change Data Source]** måste du växla tillbaka till molndatabasen för att kunna fortsätta med arbetsflödeskörningen.
+Observera att när du använder aktiviteten **[!UICONTROL Change Data Source]** måste du växla tillbaka till molndatabasen för att kunna fortsätta med arbetsflödeskörningen.
 
-Använd **[!UICONTROL Change Data Source]** aktivitet:
+Så här använder du aktiviteten **[!UICONTROL Change Data Source]**:
 
 1. Skapa ett arbetsflöde.
 
-1. Fråga målmottagarna med en **[!UICONTROL Query]** aktivitet.
+1. Fråga dina målmottagare med en **[!UICONTROL Query]**-aktivitet.
 
-   Mer information om **[!UICONTROL Query]** aktivitet, se [den här sidan](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/targeting-activities/query.html){target="_blank"}.
+   Mer information om aktiviteten **[!UICONTROL Query]** finns på [den här sidan](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/targeting-activities/query.html){target="_blank"}.
 
-1. Från **[!UICONTROL Targeting]** flik, lägga till **[!UICONTROL Change data source]** och dubbelklicka på den för att välja **[!UICONTROL Default data source]**.
+1. Lägg till en **[!UICONTROL Change data source]**-aktivitet på fliken **[!UICONTROL Targeting]** och dubbelklicka på den för att välja **[!UICONTROL Default data source]**.
 
    Arbetstabellen, som innehåller resultatet av frågan, flyttas sedan till PostgreSQL-standarddatabasen.
 
-1. Från **[!UICONTROL Actions]** tabb, dra och släppa **[!UICONTROL JavaScript code]** för att utföra enhetsåtgärder i arbetsregistret.
+1. Dra och släpp en **[!UICONTROL JavaScript code]**-aktivitet från fliken **[!UICONTROL Actions]** för att utföra enhetsåtgärder i arbetstabellen.
 
-   Mer information om **[!UICONTROL JavaScript code]** aktivitet, se [den här sidan](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/action-activities/sql-code-and-javascript-code.html){target="_blank"}.
+   Mer information om aktiviteten **[!UICONTROL JavaScript code]** finns på [den här sidan](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/action-activities/sql-code-and-javascript-code.html){target="_blank"}.
 
-1. Lägg till ytterligare **[!UICONTROL Change data source]** aktivitet för att växla tillbaka till molndatabasen.
+1. Lägg till ytterligare en **[!UICONTROL Change data source]**-aktivitet för att växla tillbaka till molndatabasen.
 
-   Dubbelklicka på aktiviteten och välj **[!UICONTROL Active FDA external account]** därefter motsvarande externt konto.
+   Dubbelklicka på din aktivitet och välj **[!UICONTROL Active FDA external account]** och sedan motsvarande externt konto.
 
 1. Nu kan du starta arbetsflödet.
 
 ## Hantera virtuella lagerställen {#warehouse}
 
-När du har skapat arbetsflödet kan du få tillgång till ytterligare alternativ med **[!UICONTROL Properties]** för ytterligare konfiguration.
+När du har skapat arbetsflödet kan du få tillgång till ytterligare alternativ med knappen **[!UICONTROL Properties]** för ytterligare konfiguration.
 
-Läs mer om **Egenskaper för arbetsflöde** in [den här sidan](https://experienceleague.adobe.com/docs/campaign/automation/workflows/advanced-management/workflow-properties.html){target="_blank"}.
+Läs mer om **Arbetsflödesegenskaper** i [den här sidan](https://experienceleague.adobe.com/docs/campaign/automation/workflows/advanced-management/workflow-properties.html){target="_blank"}.
 
-Från **[!UICONTROL Execution]** -fliken i arbetsflödets **[!UICONTROL Properties]** kan du länka arbetsflödet till olika lagerställen och optimera hanteringen av arbetsbelastningen. Mer information om **Lagerställen**, se [Snowflake dokumentation](https://docs.snowflake.com/en/user-guide/warehouses-overview.html){target="_blank"}.
+På fliken **[!UICONTROL Execution]** i arbetsflödets **[!UICONTROL Properties]** kan du välja att länka arbetsflödet till olika lagerställen och optimera arbetsbelastningshanteringen. Mer information om **lagerställen** finns i [Snowflake-dokumentationen](https://docs.snowflake.com/en/user-guide/warehouses-overview.html){target="_blank"}.
 
 ![](assets/warehouse.png)
 
-Beroende på arbetsflödets syfte kan du välja mellan följande tre lagerställen på menyn **[!UICONTROL Warehouse]** nedrullningsbar lista:
+Beroende på arbetsflödets syfte kan du välja mellan följande tre lagerställen i listrutan **[!UICONTROL Warehouse]**:
 
 * **[!UICONTROL Default]** / **[!UICONTROL Campaign]**: anges som standard när ett nytt arbetsflöde skapas.
 
-* **[!UICONTROL Import / Export]**: bör ställas in med import- eller exportarbetsflöden för att optimera aktiviteternas prestanda.
+* **[!UICONTROL Import / Export]**: bör anges med import- eller exportarbetsflöden för att optimera aktiviteternas prestanda.
 
-* **[!UICONTROL Campaign Burst]**: ska ställas in med kampanj- eller leveransarbetsflöden för att optimera bearbetningstiden för leveranser.
+* **[!UICONTROL Campaign Burst]**: ska anges med kampanj- eller leveransarbetsflöden för att optimera bearbetningstiden för leveranser.
 
 >[!NOTE]
 >
->The **[!UICONTROL System]** dist.lager är bara inställt för inbyggda arbetsflöden.
+>Lagerstället **[!UICONTROL System]** har bara angetts för inbyggda arbetsflöden.
 
 ## Ställ in återkommande kampanjer
 
 Designa återkommande arbetsflöde och skapa en ny leveransinstans varje gång arbetsflödet körs. Om ditt arbetsflöde till exempel är utformat för att köras en gång i veckan resulterar det i 52 leveranser efter ett år. Detta innebär också att loggarna separeras av varje leveransinstans.
 
-Lär dig skapa en återkommande kampanj i [den här sidan](https://experienceleague.adobe.com/docs/campaign/automation/campaign-orchestration/recurring-periodic-campaigns.html){target="_blank"}.
+Lär dig hur du skapar en återkommande kampanj på [den här sidan](https://experienceleague.adobe.com/docs/campaign/automation/campaign-orchestration/recurring-periodic-campaigns.html){target="_blank"}.
 
 
 ## Utnyttja utlösarhändelser
@@ -125,7 +125,7 @@ Läs mer om funktioner för transaktionsmeddelanden i [det här avsnittet](../se
 
 Koppla upp Adobe Campaign och Adobe Analytics för att ta fram användaråtgärder och skicka i stort sett personaliserade meddelanden i realtid.
 
-Lär dig integrera Campaign med andra lösningar i [det här avsnittet](../start/connect.md)
+Lär dig hur du integrerar Campaign med andra lösningar i [det här avsnittet](../start/connect.md)
 
 
 ## Användningsexempel för hela arbetsflödet{#end-to-end-uc}
@@ -147,15 +147,15 @@ När ditt leveransinnehåll är tillgängligt i en HTML-fil på en fjärrserver 
 * [Arbetsflöde för flerkanalsleverans](https://experienceleague.adobe.com/docs/campaign/automation/workflows/use-cases/deliveries/cross-channel-delivery-workflow.html){target="_blank"}
 Lär dig hur du skapar ett arbetsflöde för flerkanalsleverans. Målet är att segmentera en målgrupp från mottagarna av databasen i olika grupper och skicka ett e-postmeddelande till den första gruppen och ett SMS till den andra.
 
-* [E-postberikning med anpassade datumfält](https://experienceleague.adobe.com/docs/campaign/automation/workflows/use-cases/deliveries/email-enrichment-with-custom-date-fields.html){target="_blank"}
+* [E-postanrikning med anpassade datumfält](https://experienceleague.adobe.com/docs/campaign/automation/workflows/use-cases/deliveries/email-enrichment-with-custom-date-fields.html){target="_blank"}
 Lär dig hur du skickar ett e-postmeddelande med anpassade datafält till profiler som firar sina födelsedagar den här månaden. E-postmeddelandet innehåller en kupong som är giltig en vecka före och efter deras födelsedag.
 
 Och dessa sidor finns i dokumentationen för Campaign v7:
 
-* [Automatisera framtagning, utgåva och publicering av innehåll](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/content-management/automating-via-workflows.html){target="_blank"}
+* [Automatisera skapande, utgåva och publicering av innehåll](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/content-management/automating-via-workflows.html){target="_blank"}
 Lär dig hur du automatiserar skapandet och leveransen av ett innehållsblock med tillägget för hantering av kampanjinnehåll.
 
-* [A/B-tester](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/a-b-testing/use-case/a-b-testing-use-case.html){target="_blank"}
+* [A/B-testning](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/a-b-testing/use-case/a-b-testing-use-case.html){target="_blank"}
 Lär dig hur du jämför två e-postleveranser via ett arbetsflöde för målinriktning. Meddelandet och texten är identiska i båda leveranser: endast layouten ändras. Målpopulationen är uppdelad i tre: två testgrupper och den återstående populationen. En annan version av leveransen skickas till varje testgrupp.
 
 ### Övervakning {#monitoring}
@@ -165,7 +165,7 @@ Lär dig hur du jämför två e-postleveranser via ett arbetsflöde för målinr
 * [Skicka en rapport till en lista](https://experienceleague.adobe.com/docs/campaign/automation/workflows/use-cases/monitoring/send-a-report-to-a-list.html){target="_blank"}
 Lär dig hur du skapar en månadsinbyggd rapport för spårningsindikatorer i PDF-format och skickar den till en lista över kampanjoperatorer.
 
-* [Övervaka era arbetsflöden](https://experienceleague.adobe.com/docs/campaign/automation/workflows/use-cases/monitoring/workflow-supervision.html){target="_blank"}
+* [Övervaka dina arbetsflöden](https://experienceleague.adobe.com/docs/campaign/automation/workflows/use-cases/monitoring/workflow-supervision.html){target="_blank"}
 Lär dig hur du skapar ett arbetsflöde där du kan övervaka statusen för en uppsättning arbetsflöden som är&quot;pausade&quot;,&quot;stoppade&quot; eller&quot;med fel&quot;.
 
 * [Skicka personaliserade aviseringar till operatorer](https://experienceleague.adobe.com/docs/campaign/automation/workflows/use-cases/monitoring/send-alerts-to-operators.html){target="_blank"}
@@ -187,7 +187,7 @@ Lär dig hur du skickar personaliserade leveranser till profiler som deltog i de
 * [Använd aggregat](https://experienceleague.adobe.com/docs/campaign/automation/workflows/use-cases/data-management/using-aggregates.html){target="_blank"}
 Lär dig hur du identifierar de sista mottagarna som har lagts till i databasen.
 
-* [Kvartalslistuppdatering med inkrementell fråga](https://experienceleague.adobe.com/docs/campaign/automation/workflows/use-cases/designing-queries/quarterly-list-update.html){target="_blank"}
+* [Kvartalsvis listuppdatering med en inkrementell fråga](https://experienceleague.adobe.com/docs/campaign/automation/workflows/use-cases/designing-queries/quarterly-list-update.html){target="_blank"}
 Lär dig hur du använder en stegvis fråga för att automatiskt uppdatera en mottagarlista.
 
 * [Konfigurera ett återkommande importarbetsflöde](https://experienceleague.adobe.com/docs/campaign/automation/workflows/use-cases/data-management/recurring-import-workflow.html){target="_blank"}
@@ -200,16 +200,16 @@ Lär dig hur du utformar ett arbetsflöde som kan återanvändas vid import av p
 * [Fråga mottagartabellen](https://experienceleague.adobe.com/docs/campaign/automation/workflows/use-cases/designing-queries/querying-recipient-table.html){target="_blank"}
 Lär dig hur du återställer namn och e-post för mottagare vars e-postdomän är orange.co.uk och som inte bor i London.
 
-* [Fråga leveransinformation](https://experienceleague.adobe.com/docs/campaign/automation/workflows/use-cases/designing-queries/query-delivery-info.html){target="_blank"}
+* [Fråga efter leveransinformation](https://experienceleague.adobe.com/docs/campaign/automation/workflows/use-cases/designing-queries/query-delivery-info.html){target="_blank"}
 Lär dig hur du definierar frågor om leveransinformation för att hämta profilens beteende.
 
 * [Beräkna aggregat](https://experienceleague.adobe.com/docs/campaign/automation/workflows/use-cases/designing-queries/compute-aggregates.html){target="_blank"}
 Lär dig räkna antalet profiler som bor i London, baserat på kön.
 
-* [Fråga med en många-till-många-relation](https://experienceleague.adobe.com/docs/campaign/automation/workflows/use-cases/designing-queries/query-many-to-many-relationship.html){target="_blank"}
+* [Fråga med många-till-många-relation](https://experienceleague.adobe.com/docs/campaign/automation/workflows/use-cases/designing-queries/query-many-to-many-relationship.html){target="_blank"}
 Lär dig hur du hittar profiler som inte har kontaktats under de senaste 7 dagarna.
 
-* [Anropa en förekomstvariabel i en fråga](https://experienceleague.adobe.com/docs/campaign/automation/workflows/advanced-management/javascript-scripts-and-templates.html){target="_blank"}
+* [Anropa en instansvariabel i en fråga](https://experienceleague.adobe.com/docs/campaign/automation/workflows/advanced-management/javascript-scripts-and-templates.html){target="_blank"}
 Lär dig hur du använder en instansvariabel för att dynamiskt beräkna den delade procentandelen som ska användas på en population.
 
 <!--

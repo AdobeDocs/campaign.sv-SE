@@ -14,7 +14,7 @@ ht-degree: 2%
 
 # Skapa program och kampanjer{#create-programs-and-campaigns}
 
-Kampanjkoordinatkomponenter finns i **[!UICONTROL Campaigns]** här kan du se en översikt över marknadsföringsprogram och -kampanjer och deras associerade element.
+Komponenter för kampanjsamordning finns på fliken **[!UICONTROL Campaigns]**: här kan du se en översikt över marknadsföringsprogram och kampanjer och deras associerade element.
 
 Ett marknadsföringsprogram består av kampanjer, som består av leveranser, resurser osv. All information om leveranser, budgetar, granskare och länkade dokument grupperas i kampanjen.
 
@@ -26,23 +26,23 @@ Ett marknadsföringsprogram består av kampanjer, som består av leveranser, res
 
 ### Skapa planerings- och programhierarkin {#create-plan-and-program}
 
-Varje kampanj tillhör ett program som tillhör en plan. Alla planer, program och kampanjer är tillgängliga via **[!UICONTROL Campaign calendar]** i **Kampanjer** -fliken.
+Varje kampanj tillhör ett program som tillhör en plan. Alla planer, program och kampanjer är tillgängliga via menyn **[!UICONTROL Campaign calendar]** på fliken **Kampanjer**.
 
 Konfigurera mapphierarkin för marknadsföringsplaner och program innan du börjar bygga kampanjer och leveranser.
 
-1. Klicka på **Explorer** på startsidan.
+1. Klicka på ikonen **Utforskaren** på startsidan.
 1. Högerklicka på den mapp där du vill skapa din plan.
-1. Välj **Lägg till ny mapp > Campaign Management > Plan**.
+1. Välj **Lägg till ny mapp > Campaign Management > Planera**.
 
    ![](assets/create-new-plan-folder.png)
 
 1. Byt namn på planen.
-1. Högerklicka på den nya planen och välj **Egenskaper...**.
-1. I **Allmänt** -fliken, ändra **Internt namn** för att undvika dubbletter vid paketexport.
+1. Högerklicka på den nya planen och välj **Egenskaper..**.
+1. På fliken **Allmänt** ändrar du det **interna namnet** för att undvika dubbletter under paketexporter.
 
    ![](assets/plan-properties.png)
 
-1. Klicka **Spara**.
+1. Klicka på **Spara**.
 1. Högerklicka på den nya planen och välj **Skapa en ny programmapp**.
 
    ![](assets/program-folder.png)
@@ -54,9 +54,9 @@ Konfigurera mapphierarkin för marknadsföringsplaner och program innan du börj
 
 När du redigerar ett program använder du flikarna nedan för att bläddra och konfigurera det.
 
-* The **Schema** -fliken visar kalendern för program för en månad, vecka eller dag beroende på vilken flik du klickar på i kalenderrubriken. Du kan skapa en kampanj, ett program eller en uppgift från den här sidan. [Läs mer](#campaign-calendar)
+* På fliken **Schema** visas kalendern med program för en månad, vecka eller dag beroende på vilken flik du klickar på i kalenderrubriken. Du kan skapa en kampanj, ett program eller en uppgift från den här sidan. [Läs mer](#campaign-calendar)
 
-* The **Redigera** kan du anpassa programmet: namn, start- och slutdatum, budget, länkade dokument osv.
+* På fliken **Redigera** kan du anpassa programmet: namn, start- och slutdatum, budget, länkade dokument osv.
 
   ![](assets/new-program-edit-tab.png)
 
@@ -64,9 +64,9 @@ När du redigerar ett program använder du flikarna nedan för att bläddra och 
 
 ### Skapa en kampanj {#create-a-campaign}
 
-Du kan skapa en kampanj via listan med kampanjer. Om du vill visa den här vyn väljer du **[!UICONTROL Campaigns]** i **[!UICONTROL Campaigns]** kontrollpanelen och klicka på **[!UICONTROL Create]**.
+Du kan skapa en kampanj via listan med kampanjer. Om du vill visa den här vyn väljer du menyn **[!UICONTROL Campaigns]** på kontrollpanelen **[!UICONTROL Campaigns]** och klickar på **[!UICONTROL Create]**.
 
-The **[!UICONTROL Program]** kan du välja det program som kampanjen ska kopplas till. Denna information är obligatorisk.
+I fältet **[!UICONTROL Program]** kan du välja det program som kampanjen ska kopplas till. Denna information är obligatorisk.
 
 ![](assets/new-campaign-settings.png)
 
@@ -74,12 +74,12 @@ Kampanjer kan också skapas via kampanj- eller programkalendern. [Läs mer](#cam
 
 Välj kampanjmallen och lägg till ett namn och en beskrivning av kampanjen i fönstret där kampanjen skapades. Du kan också ange kampanjens start- och slutdatum.
 
-Klicka **[!UICONTROL OK]** för att skapa kampanjen. Det läggs till i programschemat och i listan över kampanjer.
+Klicka på **[!UICONTROL OK]** för att skapa kampanjen. Det läggs till i programschemat och i listan över kampanjer.
 
 Sedan kan du redigera kampanjen som du just har skapat och definiera dess parametrar. Om du vill öppna och konfigurera kampanjen kan du:
 
-1. Bläddra i kampanjkalendern och välj den kampanj som du vill visa. Klicka sedan på **[!UICONTROL Open]** länk.
-1. Sök i **[!UICONTROL Schedule]** väljer du kampanjen och öppnar den.
+1. Bläddra i kampanjkalendern och välj den kampanj som du vill visa. Klicka sedan på länken **[!UICONTROL Open]**.
+1. Bläddra på fliken **[!UICONTROL Schedule]** i programmet, markera kampanjen och öppna den.
 1. Bläddra i listan över kampanjer och klicka på namnet på kampanjen som ska redigeras.
 
 Alla dessa åtgärder tar dig till kontrollpanelen för kampanjer.
@@ -109,13 +109,13 @@ För varje kampanj finns följande funktioner:
 
 >[!NOTE]
 >
->Bläddra till **[!UICONTROL Advanced campaign parameters...]** i **[!UICONTROL Edit]** -fliken.
+>Bläddra till länken **[!UICONTROL Advanced campaign parameters...]** på fliken **[!UICONTROL Edit]** om du vill komma åt och uppdatera kampanjinställningarna.
 
 ### Övervaka en kampanj {#monitor-a-campaign}
 
 För varje kampanj finns jobb, resurser och leveranser centralt på kontrollpanelen. Med det här gränssnittet kan ni hantera och samordna marknadsföringsåtgärder.
 
-Med Adobe Campaign kan ni skapa samarbetsprocesser för att skapa och godkänna de olika stegen i era kampanjer: godkännande av budget, mål, innehåll osv. Den här orkestrationen beskrivs i [det här avsnittet](marketing-campaign-approval.md).
+Med Adobe Campaign kan ni skapa samarbetsprocesser för att skapa och godkänna de olika stegen i era kampanjer: godkännande av budget, mål, innehåll osv. Den här koordinationen beskrivs i [det här avsnittet](marketing-campaign-approval.md).
 
 ![](assets/campaigns-dashboard-approval-tab.png)
 
@@ -123,7 +123,7 @@ Med Adobe Campaign kan ni skapa samarbetsprocesser för att skapa och godkänna 
 >
 >Vilka komponenter som är tillgängliga i en kampanj beror på dess mall. Kampanjmallskonfigurationen presenteras i [det här avsnittet](marketing-campaign-templates.md#campaign-templates).
 
-När kampanjen är klar använder du **[!UICONTROL Reports]** länk för att komma åt kampanjrapporterna.
+När kampanjen är genomförd använder du länken **[!UICONTROL Reports]** för att komma åt kampanjrapporterna.
 
 ![](assets/campaigns-reports-dashboard.png)
 
@@ -131,11 +131,11 @@ När kampanjen är klar använder du **[!UICONTROL Reports]** länk för att kom
 
 Kampanjkalendern innehåller alla program, planer, kampanjer och leveranser.
 
-Om du vill redigera en plan, ett program, en kampanj eller en leverans bläddrar du till namnet i kalendern och använder sedan kommandot **[!UICONTROL Open]** länk. Den visas sedan på en ny flik, enligt nedan:
+Om du vill redigera en plan, ett program, en kampanj eller en leverans bläddrar du till dess namn i kalendern och använder sedan länken **[!UICONTROL Open]**. Den visas sedan på en ny flik, enligt nedan:
 
 ![](assets/campaign-calendar.png)
 
-Du kan filtrera den information som visas i kampanjkalendern. Klicka på **[!UICONTROL Filter]** och välj filtreringsvillkor.
+Du kan filtrera den information som visas i kampanjkalendern. Om du vill göra det klickar du på länken **[!UICONTROL Filter]** och väljer filtervillkoren.
 
 ![](assets/campaign_planning_filter.png)
 
@@ -143,11 +143,11 @@ Du kan filtrera den information som visas i kampanjkalendern. Klicka på **[!UIC
 >
 >När du filtrerar på ett datum visas alla kampanjer med ett startdatum som är senare än det angivna datumet och/eller med ett slutdatum som är tidigare än det angivna datumet. Datum markeras med hjälp av kalendrarna till höger om varje fält.
 
-Du kan också använda **[!UICONTROL Search]** för att filtrera de visade objekten.
+Du kan också använda fältet **[!UICONTROL Search]** för att filtrera de visade objekten.
 
 Med ikonerna som är länkade till varje objekt kan du visa objektets status: färdig, pågående, redigerad osv.
 
-Om du vill filtrera kampanjer som ska visas klickar du på **[!UICONTROL Filter]** och välj status för de kampanjer som ska visas.
+Om du vill filtrera kampanjer som ska visas klickar du på länken **[!UICONTROL Filter]** och väljer status för de kampanjer som ska visas.
 
 ![](assets/calendar-filter-options.png)
 
@@ -155,7 +155,7 @@ När du bläddrar i kalendern kan du även skapa ett program eller en kampanj.
 
 ![](assets/campaign-create-from-calendar.png)
 
-När du skapar en kampanj via **[!UICONTROL Schedule]** under ett program kopplas kampanjen automatiskt till det berörda programmet. The **[!UICONTROL Program]** fältet är dolt i det här fallet.
+När du skapar en kampanj via fliken **[!UICONTROL Schedule]** i ett program länkas kampanjen automatiskt till det aktuella programmet. Fältet **[!UICONTROL Program]** är dolt i det här fallet.
 
 
 ## Öppna Campaign med en webbläsare {#use-the-web-interface}
@@ -186,11 +186,11 @@ I tabellen sammanfattas de åtgärder du kan vidta i kampanjer från en webbläs
 | --- | --- |
 | Lista över kampanjer, leveranser, erbjudanden osv. | Ta bort ett listobjekt |
 | Campaign | Avbryta en kampanj |
-| Leverans | Godkänn leveransinnehållet och målet<br/>Skicka leveransinnehållet<br/>Bekräfta leverans<br/>Pausa och stoppa leverans |
-| Webbprogram | Skapa ett webbprogram<br/>Redigera programinnehåll och -egenskaper<br/>Spara programinnehållet som en mall<br/>Publicera programmet |
+| Leverans | Godkänn leveransinnehållet och målet<br/>Skicka leveransinnehållet<br/>Bekräfta en leverans<br/>Pausa och stoppa en leverans |
+| Webbprogram | Skapa ett webbprogram<br/>Redigera programinnehåll och -egenskaper<br/>Spara programinnehållet som en mall<br/>Publish programmet |
 | Erbjudande | Godkänn erbjudandets innehåll och behörighet<br/>Inaktivera ett onlineerbjudande |
-| Uppgift | Avsluta en uppgift<br/>Avbryt en uppgift |
-| Marknadsföringsresurser | Godkänn en resurs<br/>Låsa och låsa upp en resurs |
+| Uppgift | Avsluta en aktivitet<br/>Avbryt en aktivitet |
+| Marknadsföringsresurser | Godkänn en resurs<br/>Lås och lås upp en resurs |
 | Kampanjpaket | Skicka ett paket för godkännande<br/>Godkänn eller avvisa ett paket<br/>Avbryt ett paket |
 | Kampanjorder | Skapa en order<br/>Acceptera eller avvisa en order |
 | Stock | Ta bort en aktierad |

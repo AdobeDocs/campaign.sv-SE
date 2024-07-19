@@ -15,13 +15,13 @@ ht-degree: 1%
 
 
 
-A **Testa** type-aktivitet aktiverar den första övergång som uppfyller det villkor som är kopplat till den. Om inget villkor är uppfyllt och om **[!UICONTROL Use the default fork]** om du väljer det här alternativet aktiveras standardövergången.
+En aktivitet av typen **Test** aktiverar den första övergången som uppfyller villkoret som är kopplat till den. Om inget villkor uppfylls och om alternativet **[!UICONTROL Use the default fork]** aktiveras aktiveras standardövergången.
 
 Ett villkor är ett JavaScript-uttryck som måste utvärderas till &quot;true&quot; eller &quot;false&quot;. Om du vill ange uttrycket klickar du på ikonen till höger om namnet på villkoret och väljer sedan **[!UICONTROL Edit...]**.
 
 ![](assets/edit_test.png)
 
-Mer information om alla ytterligare JavaScript-funktioner och SOAP-metoder för programservern som är tillgängliga via JavaScript i arbetsflödet finns i [JSAPI-dokumentation](https://experienceleague.adobe.com/developer/campaign-api/api/index.html?lang=sv){target="_blank"}.
+Mer information om alla ytterligare JavaScript-funktioner och -metoder för programservern som är tillgängliga via arbetsflödet i JavaScript finns i [JSAPI-dokumentationen](https://experienceleague.adobe.com/developer/campaign-api/api/index.html?lang=sv){target="_blank"}.
 
 Du kan också infoga variabler direkt från den här redigeraren. Mer information om hur du arbetar med variabler finns i [det här avsnittet](javascript-scripts-and-templates.md#variables).
 

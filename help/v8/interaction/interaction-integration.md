@@ -7,7 +7,7 @@ role: User, Admin
 exl-id: 1eb0775a-5da9-4a27-aa7b-339372748f9c
 source-git-commit: 1a0b473b005449be7c846225e75a227f6d877c88
 workflow-type: tm+mt
-source-wordcount: '1455'
+source-wordcount: '1458'
 ht-degree: 0%
 
 ---
@@ -22,7 +22,7 @@ Skriptet som anropar URL ser ut så här:
 <script id="interactionProposalScript" src="https://<SERVER_URL>/nl/interactionProposal.js?env=" type="text/javascript"></script>
 ```
 
-The &quot;**env**&quot;-parametern får det interna namnet på den livemiljö som är dedikerad till anonyma interaktioner.
+Parametern **env** tar emot det interna namnet på den aktiva miljön som är dedikerad till anonyma interaktioner.
 
 För att kunna presentera ett erbjudande måste vi skapa en miljö och ett erbjudandeutrymme i Adobe Campaign och sedan konfigurera HTML-sidan.
 
@@ -56,7 +56,7 @@ I det här exemplet är URL:en för att anropa skriptet följande (&quot;OE3&quo
 
 >[!CAUTION]
 >
->The `<script>` -taggen får inte vara självavslutande.
+>Taggen `<script>` får inte vara självstängande.
 
 Detta statiska anrop genererar automatiskt ett dynamiskt anrop som innehåller alla parametrar som krävs av erbjudandemotorn.
 
@@ -90,7 +90,7 @@ Innehållet i erbjudanderepresentationen skickas tillbaka till HTML-sidan av erb
 
 ### Presentera ett identifierat erbjudande {#presenting-an-identified-offer}
 
-Processen liknar den som beskrivs nedan när du vill erbjuda en identifierad kontakt [i det här avsnittet](#presenting-an-anonymous-offer).
+Processen liknar den som beskrivs [ i det här avsnittet ](#presenting-an-anonymous-offer) om du vill visa ett erbjudande för en identifierad kontakt.
 
 I innehållet på webbsidan måste du lägga till följande skript som identifierar kontakten under anropet till erbjudandemotorn:
 
@@ -100,7 +100,7 @@ I innehållet på webbsidan måste du lägga till följande skript som identifie
 </script>
 ```
 
-1. Gå till det erbjudandeutrymme som ska anropas av webbsidan och klicka på **[!UICONTROL Advanced parameters]** och lägg till en eller flera identifieringsnycklar.
+1. Gå till det erbjudandeutrymme som ska anropas av webbsidan, klicka på **[!UICONTROL Advanced parameters]** och lägg till en eller flera identifieringsnycklar.
 
    ![](assets/interaction_htmlmode_001.png)
 
@@ -120,9 +120,9 @@ I innehållet på webbsidan måste du lägga till följande skript som identifie
 
 Du kan använda en återgivningsfunktion om du vill generera representationen av HTML automatiskt.
 
-1. Gå till erbjudandesidan och klicka på **[!UICONTROL Edit functions]** länk.
+1. Gå till erbjudandeutrymmet och klicka på länken **[!UICONTROL Edit functions]**.
 1. Välj **[!UICONTROL Overload the HTML rendering function]**.
-1. Gå till **[!UICONTROL HTML rendering]** och infoga de variabler som matchar fälten som definierats för erbjudandeinnehållet i erbjudandeutrymmet.
+1. Gå till fliken **[!UICONTROL HTML rendering]** och infoga de variabler som matchar fälten som definierats för erbjudandeinnehållet i erbjudandeutrymmet.
 
    ![](assets/interaction_htmlmode_002.png)
 
@@ -132,7 +132,7 @@ Du kan använda en återgivningsfunktion om du vill generera representationen av
 
 ### Presentera ett erbjudande {#presenting-an-offer}
 
-Campaign **Interaktion** I -modulen kan du returnera en XML-nod till HTML-sidan som anropar erbjudandemotorn. Denna XML-nod kan bearbetas av funktioner som ska utvecklas på kundsidan.
+Med modulen **Interaktion** i kampanjen kan du returnera en XML-nod till HTML-sidan som anropar erbjudandemotorn. Denna XML-nod kan bearbetas av funktioner som ska utvecklas på kundsidan.
 
 Anropet till erbjudandemotorn ser ut så här:
 
@@ -140,17 +140,17 @@ Anropet till erbjudandemotorn ser ut så här:
 <script type="text/javascript" id="interactionProposalScript" src="https://<SERVER_URL>/nl/interactionProposal.js?env=&cb="></script>
 ```
 
-* The &quot;**env** parametern får det interna namnet på den aktiva miljön.
+* Parametern **env** tar emot det interna namnet för den aktiva miljön.
 
-* The &quot;**cb**&quot; får namnet på funktionen som ska läsa XML-noden som returneras av motorn som innehåller (återanrop). Den här parametern är valfri.
+* Parametern **cb** tar emot namnet på funktionen som läser XML-noden som returneras av motorn som innehåller (återanrop). Den här parametern är valfri.
 
-* The &quot;**t**&quot;-parametern tar emot värdet för målet, endast för en identifierad interaktion. Den här parametern kan också skickas med **interactionTarget** variabel. Den här parametern är valfri.
+* Parametern **t** tar emot värdet för målet, endast för en identifierad interaktion. Den här parametern kan också skickas med variabeln **interactionTarget** . Den här parametern är valfri.
 
-* The &quot;**c** parametern får listan med interna namn för kategorierna. Den här parametern är valfri.
+* Parametern **c** tar emot listan med interna namn för kategorierna. Den här parametern är valfri.
 
-* The &quot;**th**&quot; får parametern listan med teman. Den här parametern är valfri.
+* Parametern **th** tar emot listan med teman. Den här parametern är valfri.
 
-* The &quot;**gctx**&quot;-parametern tar emot anropsdata globalt (kontext) till hela sidan. Den här parametern är valfri.
+* Parametern **gctx** tar emot anropsdata globalt (kontext) till hela sidan. Den här parametern är valfri.
 
 Den returnerade XML-noden ser ut så här:
 
@@ -167,15 +167,15 @@ Användningsexemplet nedan beskriver de konfigurationer som ska utföras i Adobe
 
 1. **Skapa en miljö och ett erbjudande**
 
-   Mer information om hur du skapar en miljö finns i [den här sidan](interaction-env.md).
+   Mer information om hur du skapar en miljö finns på [den här sidan](interaction-env.md).
 
-   Mer information om hur du skapar ett erbjudande finns i [den här sidan](interaction-offer-spaces.md).
+   Mer information om hur du skapar ett erbjudandeutrymme finns på [den här sidan](interaction-offer-spaces.md).
 
 1. **Utöka erbjudandeschemat för att lägga till nya fält**
 
    Det här schemat definierar följande fält: Rubrik 2 och pris.
 
-   Schemats namn i exemplet är **cus:erbjudande**
+   Schemats namn i exemplet är **cus:offer**
 
    ```
    <srcSchema _cs="Marketing offers (cus)" created="2013-01-18 17:14:20.762Z" createdBy-id="0"
@@ -210,7 +210,7 @@ Användningsexemplet nedan beskriver de konfigurationer som ska utföras i Adobe
 
 1. **Utöka erbjudandeformeln för att redigera nya fält och ändra ett befintligt fält**
 
-   Redigera **Erbjudande (nsm)** inmatningsformulär.
+   Redigera indataformuläret **Erbjudande (nsm)**.
 
    I avsnittet Vyer infogar du de två nya fälten med följande innehåll:
 
@@ -243,17 +243,17 @@ Användningsexemplet nedan beskriver de konfigurationer som ska utföras i Adobe
 
    >[!CAUTION]
    >
-   >Fälten i `<input>`) måste peka på CDATA-typelementen som definieras i det skapade schemat.
+   >Fälten i formuläret ( `<input>`) måste peka på elementen av CDATA-typ som definierats i det skapade schemat.
 
    Återgivningen i formuläret för erbjudanderepresentationer ser ut så här:
 
    ![](assets/interaction_xmlmode_form.png)
 
-   The **[!UICONTROL Title 2]** och **[!UICONTROL Price]** fält har lagts till och **[!UICONTROL Destination URL]** fältet visas inte längre.
+   Fälten **[!UICONTROL Title 2]** och **[!UICONTROL Price]** har lagts till och fältet **[!UICONTROL Destination URL]** visas inte längre.
 
 1. **Skapa ett erbjudande**
 
-   Mer information om hur du skapar erbjudanden finns i [den här sidan](interaction-offer.md).
+   Mer information om hur du skapar erbjudanden finns på [den här sidan](interaction-offer.md).
 
    I följande fall anges erbjudandet enligt följande:
 
@@ -271,9 +271,9 @@ Användningsexemplet nedan beskriver de konfigurationer som ska utföras i Adobe
    <script id="interactionProposalScript" src="https://<SERVER_URL>/nl/interactionProposal.js?env=OE7&cb=alert" type="text/javascript">
    ```
 
-   Värdet för **env**&quot; är det interna namnet på den aktiva miljön.
+   Värdet för parametern **env** är det interna namnet på den aktiva miljön.
 
-   Värdet för **cb**&quot; är namnet på funktionen som behöver tolka XML-noden som returneras av motorn. I det här exemplet öppnar den anropade funktionen ett modalt fönster (funktionen alert()).
+   Värdet för parametern **cb** är namnet på funktionen som måste tolka XML-noden som returneras av motorn. I det här exemplet öppnar den anropade funktionen ett modalt fönster (funktionen alert()).
 
    XML-noden som returneras av erbjudandemotorn ser ut så här:
 
@@ -297,9 +297,9 @@ Användningsexemplet nedan beskriver de konfigurationer som ska utföras i Adobe
 
 Det går att använda en XML-återgivningsfunktion för att skapa en erbjudandepresentation. Den här funktionen ändrar XML-noden som returneras till HTML-sidan under anropet till erbjudandemotorn.
 
-1. Gå till erbjudandesidan och klicka på **[!UICONTROL Edit functions]** länk.
+1. Gå till erbjudandeutrymmet och klicka på länken **[!UICONTROL Edit functions]**.
 1. Välj **[!UICONTROL Overload the XML rendering function]**.
-1. Gå till **[!UICONTROL XML rendering]** och infoga den önskade funktionen.
+1. Gå till fliken **[!UICONTROL XML rendering]** och infoga önskad funktion.
 
    Funktionen kan se ut så här:
 
@@ -312,43 +312,43 @@ Det går att använda en XML-återgivningsfunktion för att skapa en erbjudandep
 
 ![](assets/interaction_xmlmode_001.png)
 
-## Konfigurera en SOAP-integrering
+## Konfigurera en SOAP
 
-SOAP-webbtjänster för erbjudandehantering skiljer sig från dem som vanligtvis används i Adobe Campaign. De kan nås via den interaktions-URL som beskrivs i föregående avsnitt och du kan presentera eller uppdatera erbjudanden för en viss kontakt.
+De SOAP webbtjänsterna som tillhandahålls för hantering av erbjudanden skiljer sig från de som vanligtvis används i Adobe Campaign. De kan nås via den interaktions-URL som beskrivs i föregående avsnitt och du kan presentera eller uppdatera erbjudanden för en viss kontakt.
 
 ### Erbjudandeförslag {#offer-proposition}
 
-Lägg till **nms:proposition#Propose** följt av följande parametrar:
+Lägg till kommandot **nms:proposition#Propose** följt av följande parametrar för ett erbjudande via SOAP:
 
 * **targetId**: primärnyckel för mottagaren (kan vara en sammansatt nyckel).
 * **maxCount**: anger antalet erbjudandeförslag för kontakten.
-* **kontext**: gör att du kan lägga till kontextinformation i utrymmesschemat. Om schemat som används är **nms:interaktion**, **`<empty>`** bör läggas till.
-* **kategorier**: anger vilken kategori/vilka erbjudanden måste tillhöra.
-* **teman**: anger det eller de teman som erbjudandena måste tillhöra.
-* **uuid**: värdet för Adobe Campaign permanenta cookie (&quot;uuid230&quot;).
+* **kontext**: gör att du kan lägga till kontextinformation i utrymmesschemat. Om schemat som används är **nms:interaction** bör **`<empty>`** läggas till.
+* **kategorier**: anger den eller de kategorier som erbjudandena måste tillhöra.
+* **teman**: anger teman som erbjudandena måste tillhöra.
+* **uid**: värdet för Adobe Campaign permanenta cookie (&quot;uuid230&quot;).
 * **nli**: värdet för Adobe Campaign sessionscookie (&quot;nlid&quot;).
-* **noProp**: använd värdet &quot;true&quot; för att inaktivera infogning av förslag.
+* **noProp**: använd värdet true om du vill inaktivera infogning av förslag.
 
 >[!NOTE]
 >
->The **targetId** och **maxCount** är obligatoriska. De andra är valfria.
+>Inställningarna **targetId** och **maxCount** är obligatoriska. De andra är valfria.
 
-SOAP-tjänsten returnerar följande parametrar som svar på frågan:
+Som svar på frågan returnerar SOAP följande parametrar:
 
 * **interactionId**: ID för interaktionen.
-* **förslag**: XML-element, innehåller en lista med förslag, där vart och ett har ett eget ID och HTML.
+* **propositioner**: XML-elementet innehåller en lista med förslag, där vart och ett har ett eget ID och HTML.
 
 ### Erbjudandeuppdatering {#offer-update}
 
-Lägg till **nms:interaction#UpdateStatus** till URL:en, följt av följande parametrar:
+Lägg till kommandot **nms:interaction#UpdateStatus** i URL:en, följt av följande parametrar:
 
-* **offert**: teckensträng, innehåller det förslags-ID som anges som utdata under ett erbjudande. Se [Erbjudandeförslag](#offer-proposition).
-* **status**: string type, it specifies the new status of the offer. Möjliga värden visas i **propositionStatus** uppräkning, i **nms:vanliga** schema. Till exempel motsvarar talet 3 **Accepterad** status.
-* **kontext**: XML-element, gör att du kan lägga till kontextinformation i utrymmesschemat. Om schemat som används är **nms:interaktion**, **`<empty>`** bör läggas till.
+* **proposition**: teckensträng, den innehåller det förslag-ID som angetts som utdata under ett erbjudande. Se [Erbjudandeerbjudande](#offer-proposition).
+* **status**: strängtyp, den anger erbjudandets nya status. Möjliga värden visas i uppräkningen **propositionStatus** i schemat **nms:common**. Till exempel motsvarar talet 3 statusen **Accepterad**.
+* **context**: Med XML-element kan du lägga till kontextinformation i utrymmesschemat. Om schemat som används är **nms:interaction** bör **`<empty>`** läggas till.
 
-### Exempel på hur du använder ett SOAP-anrop {#example-using-a-soap-call}
+### Exempel på hur du använder ett SOAP {#example-using-a-soap-call}
 
-Här är ett exempel på kod för ett SOAP-anrop:
+Här är ett exempel på kod för ett SOAP anrop:
 
 ```
 <%

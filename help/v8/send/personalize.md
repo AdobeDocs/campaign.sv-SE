@@ -19,19 +19,19 @@ För att få ut så mycket som möjligt av alla marknadsföringskampanjer ger Ad
 Adobe Campaign förenklar personaliseringen: du kan visa olika typer av innehåll som är anpassat för varje mottagare med en enda [meddelandemall](create-templates.md). I transaktionsmeddelandena, t.ex. inköpsbekräftelse eller e-postmeddelanden om att kunden har lämnat en kundvagn, ska du inkludera produktlistningsinformation för varje enskild person i en enda e-postmall.
 
 
-## Anpassningsstrategier {#personalization-strategy}
+## Personalization strategier {#personalization-strategy}
 
-Använd Campaign för att skapa dynamiskt innehåll och skicka personaliserade meddelanden. Personaliseringsfunktionerna kan kombineras för att förbättra budskapen och skapa en anpassad användarupplevelse.
+Använd Campaign för att skapa dynamiskt innehåll och skicka personaliserade meddelanden. Personalization funktioner kan kombineras för att förbättra era budskap och skapa en anpassad användarupplevelse.
 
 Du kan anpassa meddelandeinnehållet genom att:
 
-* Infoga dynamisk **personaliseringsfält**
+* Infogar dynamiska **anpassningsfält**
 
   Anpassningsfält används för personalisering på första nivån av dina meddelanden. Du kan välja vilket fält som helst tillgängligt i databasen från personaliseringsredigeraren. För en leverans kan du välja vilket fält som helst som är relaterat till mottagaren, meddelandet eller leveransen. Dessa attribut kan infogas på ämnesraden eller i meddelandetexten. [Läs mer](personalization-fields.md).
 
   Följande syntax infogar mottagarens ort i ditt innehåll: &lt;%= mottagare.location.city %>.
 
-* Infoga fördefinierad **innehållsblock**
+* Infoga fördefinierade **innehållsblock**
 
   Campaign innehåller en uppsättning personaliseringsblock som innehåller en specifik återgivning som du kan infoga i dina leveranser. Du kan till exempel lägga till en logotyp, ett hälsningsmeddelande eller en länk till meddelandets spegelsida. Innehållsblock är tillgängliga från ett dedikerat tävlingsbidrag via personaliseringsredigeraren. [Läs mer](personalization-blocks.md).
 
@@ -47,11 +47,11 @@ Du kan anpassa meddelandeinnehållet genom att:
 
 ## Skyddsutkast och rekommendationer{#perso-guardrails}
 
-### Timeout för personalisering{#perso-timeout}
+### Personalization timeout{#perso-timeout}
 
 Om du vill förbättra leveransskyddet kan du ange en tidsgräns för personaliseringsfasen.
 
-I **[!UICONTROL Delivery]** -fliken i **[!UICONTROL Delivery properties]** väljer du ett maxvärde i sekunder för **[!UICONTROL Maximum personalization run time]** alternativ.
+På fliken **[!UICONTROL Delivery]** i **[!UICONTROL Delivery properties]** väljer du ett maxvärde i sekunder för alternativet **[!UICONTROL Maximum personalization run time]**.
 
 Om personaliseringsfasen överskrider den maximala tiden som du anger i det här fältet avbryts processen under förhandsgranskningen eller sändningen och ett felmeddelande visas och leveransen misslyckas.
 
@@ -62,7 +62,7 @@ Om du ställer in det här alternativet på 0 kommer det inte att finnas någon 
 
 ### Interna variabler{#internal-variables}
 
-Följande variabler är interna variabler som kan användas för personalisering men som inte får ändras: **leverans**, **message**, **dataSource**, **targetData**, **provider**, **kupong**, **couponValue**, **offert**.
+Följande variabler är interna variabler som kan användas för personalisering, men som inte får ändras: **delivery**, **message**, **dataSource**, **targetData**, **provider**, **coupon**, **couponValue**, **position**.
 
 
 ## Självstudievideo {#personalization-video}

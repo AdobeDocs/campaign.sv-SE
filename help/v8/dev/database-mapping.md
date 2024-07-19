@@ -37,7 +37,7 @@ SQL-mappningen i vårt exempelschema ger följande XML-dokument:
 
 ## Beskrivning {#description}
 
-Schemats rotelement är inte längre **`<srcschema>`**, men **`<schema>`**.
+Schemats rotelement är inte längre **`<srcschema>`**, utan **`<schema>`**.
 
 Detta tar oss till en annan typ av dokument, som genereras automatiskt från källschemat, som helt enkelt kallas schema. Det här schemat kommer att användas av Adobe Campaign-programmet.
 
@@ -47,7 +47,7 @@ Namnreglerna för SQL är följande:
 
 * tabell: sammanfogning av schemanamnrymden och namnet
 
-  I det här exemplet anges namnet på tabellen via huvudelementet i schemat i **sqltable** attribute:
+  I vårt exempel anges namnet på tabellen via huvudelementet i schemat i attributet **sqltable**:
 
   ```sql
   <element name="recipient" sqltable="CusRecipient">
@@ -55,7 +55,7 @@ Namnreglerna för SQL är följande:
 
 * field: name of the element before by a prefix defined as by type (&#39;i&#39; for integer, &#39;d&#39; for double, &#39;s&#39; for string, &#39;ts&#39; for dates, etc.)
 
-  Fältnamnet anges via **sqlname** attribut för varje typ **`<attribute>`** och **`<element>`**:
+  Fältnamnet anges via attributet **sqlname** för varje typ **`<attribute>`** och **`<element>`**:
 
   ```sql
   <attribute desc="E-mail address of recipient" label="Email" length="80" name="email" sqlname="sEmail" type="string"/> 
@@ -82,9 +82,9 @@ SQL-fältbegränsningarna är följande:
 
 ## XML-fält {#xml-fields}
 
-Som standard används alla typer **`<attribute>`** och **`<element>`** -elementet mappas till ett SQL-fält i databchematabellen. Du kan emellertid referera till det här fältet i XML i stället för SQL, vilket betyder att data lagras i ett PM-fält (&quot;mData&quot;) i tabellen som innehåller värdena för alla XML-fält. Lagringen av dessa data är ett XML-dokument som observerar schemastrukturen.
+Som standard mappas alla typer av **`<attribute>`**- och **`<element>`**-element till ett SQL-fält i datarapporten. Du kan emellertid referera till det här fältet i XML i stället för SQL, vilket betyder att data lagras i ett PM-fält (&quot;mData&quot;) i tabellen som innehåller värdena för alla XML-fält. Lagringen av dessa data är ett XML-dokument som observerar schemastrukturen.
 
-Om du vill fylla i ett fält i XML måste du lägga till **xml** ett attribut med värdet &quot;true&quot; för det berörda elementet.
+Om du vill fylla i ett fält i XML måste du lägga till attributet **xml** med värdet &quot;true&quot; till det aktuella elementet.
 
 **Exempel**
 

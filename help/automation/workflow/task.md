@@ -12,7 +12,7 @@ ht-degree: 2%
 
 # Uppgift{#task}
 
-I ett kampanjarbetsflöde **[!UICONTROL Task]** kan du ange två scenarier: den första om uppgiften är slutförd och den andra om uppgiften inte är slutförd (om den markerats manuellt som ofullständig eller om den förfaller).
+I ett kampanjarbetsflöde låter aktiviteten **[!UICONTROL Task]** dig ange två scenarier: det första om aktiviteten har slutförts och det andra om aktiviteten inte har slutförts (om den har markerats som ofullständig manuellt eller om den upphör att gälla).
 
 ![](assets/mrm_task_in_workflow.png)
 
@@ -20,4 +20,4 @@ I ett kampanjarbetsflöde **[!UICONTROL Task]** kan du ange två scenarier: den 
 
 ![](assets/wkf_task_activity.png)
 
-The **[!UICONTROL Resources]** kan du definiera flera operatorer samt ett godkännandeschema för uppgiften. Om personen som godkänner avvisar, leder detta inte till att själva uppgiften avvisas.
+Med alternativet **[!UICONTROL Resources]** kan du definiera flera operatorer samt ett godkännandeschema för aktiviteten. Om personen som godkänner avvisar, leder detta inte till att själva uppgiften avvisas.

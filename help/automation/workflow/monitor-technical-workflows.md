@@ -18,7 +18,7 @@ Tekniska arbetsflöden måste övervakas, och åtgärder måste vidtas när de m
 
 ## Instansövervakningsinstrumentpanel {#instance-monitoring-dashboard}
 
-Instansövervakningens kontrollpanel är tillgänglig via **[!UICONTROL Monitoring]** -fliken.
+Instansövervakningens kontrollpanel kan nås via fliken **[!UICONTROL Monitoring]**.
 
 ![](assets/monitoring_technical_workflows1.png)
 
@@ -34,7 +34,7 @@ Tekniska arbetsflöden är tillgängliga från **[!UICONTROL Administration]** >
 
 Beroende på det tekniska arbetsflödet följer du stegen nedan för att kontrollera att allt fungerar som det ska.
 
-Mer information om vad varje tekniskt arbetsflöde ska göra finns i [section](technical-workflows.md).
+Mer information om vad varje tekniskt arbetsflöde ska göra finns i det här [avsnittet](technical-workflows.md).
 
 För **[!UICONTROL Database Cleanup workflow ('cleanup')]**:
 
@@ -46,17 +46,17 @@ Kontrollera att spårningsarbetsflödet körs som schemalagt (varje timme som st
 
 För **[!UICONTROL Deliverability update ('deliverabilityUpdate')]**:
 
-1. Kontrollera att **[!UICONTROL Deliverability update]** arbetsflödet körs och avslutas framgångsrikt varje dag.
+1. Kontrollera att arbetsflödet för **[!UICONTROL Deliverability update]** körs och avslutas varje dag.
 1. Kontrollera i journalen att reglerna uppdateras regelbundet.
 
 För **[!UICONTROL Campaign process ('operationMgt', 'deliveryMgt', ...)]**:
 
-1. Titta på alla arbetsflöden som finns under **[!UICONTROL Campaign process]** mapp. Se denna [sida](technical-workflows.md) för mer information om detta.
+1. Titta på alla arbetsflöden som finns i mappen **[!UICONTROL Campaign process]**. Se denna [sida](technical-workflows.md) för mer information om detta.
 1. Kontrollera att arbetsflödena körs som schemalagda och att journalen inte visar återkommande fel.
 
 ## Arbetsflödesövervakning {#workflow-supervision}
 
-The **[!UICONTROL Workflow supervisors]** Gruppen bör innehålla operatorer som måste hållas informerade om misslyckanden och som kan vidta åtgärder i tid.
+Gruppen **[!UICONTROL Workflow supervisors]** ska innehålla operatorer som måste hållas informerade om fel och som kan vidta åtgärder i tid.
 
 ![](assets/monitoring_technical_workflows3.png)
 

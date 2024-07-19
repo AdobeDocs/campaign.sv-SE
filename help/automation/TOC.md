@@ -165,4 +165,4 @@ ht-degree: 79%
    + [Åtkomst till kampanjer](distributed-marketing/accessing-campaigns.md)
    + [Spåra en kampanj](distributed-marketing/tracking-a-campaign.md)
    + [Användningsfall](distributed-marketing/examples.md)
-+ [&lt; Tillbaka till Campaign v8-dokumentationen](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/campaign-home)
++ [&lt; Tillbaka till Campaign v8-dokumentation](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/campaign-home)

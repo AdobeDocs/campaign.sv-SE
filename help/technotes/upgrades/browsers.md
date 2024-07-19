@@ -1,6 +1,6 @@
 ---
 product: campaign
-title: Kampanjwebbkomponenter och version 100 i webbläsarna Chrome Firefox och Edge
+title: Kampanjwebbkomponenter och version 100 i Chrome Firefox och Edge webbläsare
 description: Kampanjwebbkomponenter och version 100 i webbläsarna Chrome, Firefox och Edge
 hide: true
 hidefromtoc: true
@@ -16,7 +16,7 @@ ht-degree: 0%
 
 Google och Mozilla varnar för att Chrome och Firefox kan bryta ned vissa webbplatser på grund av kommande 3-siffriga versioner.
 
-Chrome v100 är inställd för release den **29 mars 2022** och Firefox v100 på **3 maj 2022**.
+Chrome v100 är inställt för lansering den **29 mars 2022** och Firefox v100 den **3 maj 2022**.
 
 Microsoft släppte Edge v100 tidigare i mars 2022.
 
@@ -30,7 +30,7 @@ Potentiella problem eller funktionsförlust på webbplatsen beror på användara
 
 Adobe rekommenderar att du testar dina Campaign-webbprogram, inklusive webbformulär och enkäter, så att de fortfarande fungerar bra med de nya webbläsarversionerna.
 
-Den här rekommendationen gäller alla webbprogram, särskilt om du har inkluderat JavaScript-kod.
+Den här rekommendationen gäller alla webbprogram, särskilt om du har lagt till JavaScript-kod.
 
 Du måste kontrollera med alla webbläsare, mobiler och datorer.
 
@@ -59,33 +59,33 @@ Om du vill testa dina webbsidor med Mozilla Firefox 100 kan du simulera den komm
 1. Klicka på den blå bockmarkeringsknappen för att spara inställningen.
 1. Stäng och starta om webbläsaren.
 
-Om du vill ändra användaragenten till standardinställningen går du tillbaka till `about:config` och söka efter `general.useragent.override` igen.  När den visas klickar du på papperskorgsikonen för att ta bort inställningen och startar om webbläsaren.
+Om du vill ändra din användaragent till standardinställningen igen går du tillbaka till `about:config` och söker efter inställningen för `general.useragent.override` igen.  När den visas klickar du på papperskorgsikonen för att ta bort inställningen och startar om webbläsaren.
 
 ### Testa med Chrome 100{#test-chrome-100}
 
-Om du vill testa Google Chrome 100-användaragenten i dina egna webbprogram kan du aktivera det här testet genom att följa de här stegen:
+Om du vill testa Google Chrome 100-användaragenten i dina egna webbprogram kan du aktivera det här testet genom att följa stegen nedan:
 
 1. Öppna Chrome, ange `chrome://flags` i adressfältet och tryck på Retur.
-1. Sök `Force major version to 100 in User-Agent` i sökfältet och aktivera det så som visas nedan.
+1. Sök efter `Force major version to 100 in User-Agent` i sökfältet och aktivera det så som visas nedan.
 
    ![](assets/do-not-localize/force-user-agent-chrome.png)
 
 1. Starta om webbläsaren.
-1. Stäng `chrome://flags` -fliken.
+1. Stäng fliken `chrome://flags`.
 
-Om du vill ändra användaragenten tillbaka till standardinställningen följer du bara den här processen och ändrar flaggans inställning till `Default` och starta om webbläsaren.
+Om du vill ändra användaragenten tillbaka till standardinställningen följer du bara den här processen och ändrar flaggans inställning till `Default` och startar om webbläsaren.
 
 
 ### Testa med Microsoft Edge 100{#test-ms-edge-100}
 
-Från och med v97 kan webbplatsägare emulera den här versionen genom att aktivera experimentflaggan  `#force-major-version-to-100` in `edge://flags`.
+Från och med v97 kan webbplatsägare emulera den här versionen genom att aktivera experimentflaggan `#force-major-version-to-100` i `edge://flags`.
 
 1. Öppna Microsoft Edge, ange `edge://flags` i adressfältet och tryck på Retur.
-1. Sök efter `force-major-version-to-100` och aktivera enligt nedan.
+1. Sök efter fältet `force-major-version-to-100` och aktivera det så som visas nedan.
 
    ![](assets/do-not-localize/force-user-agent-edge.png)
 
 1. Starta om webbläsaren.
-1. Stäng `edge://flags` -fliken.
+1. Stäng fliken `edge://flags`.
 
-Om du vill ändra användaragenten tillbaka till standardinställningen följer du bara den här processen och ändrar flaggans inställning till `Default` och starta om webbläsaren.
+Om du vill ändra användaragenten tillbaka till standardinställningen följer du bara den här processen och ändrar flaggans inställning till `Default` och startar om webbläsaren.

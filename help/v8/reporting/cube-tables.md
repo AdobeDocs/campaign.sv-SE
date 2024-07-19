@@ -8,7 +8,7 @@ level: Beginner
 exl-id: 7dbc66ab-a468-40ff-9db2-b33e4fd27754
 source-git-commit: f577ee6d303bab9bb07350b60cf0fa6fc9d3a163
 workflow-type: tm+mt
-source-wordcount: '941'
+source-wordcount: '950'
 ht-degree: 1%
 
 ---
@@ -25,15 +25,15 @@ Använd kuber för att skapa rapporter och för att identifiera och välja data 
 
 ### Steg 1 - Skapa en rapport baserad på en kub {#step-1---create-a-report-based-on-a-cube}
 
-När [kuben är konfigurerad](cube-indicators.md)kan den användas som mall för att skapa en ny rapport.
+När [kuben har konfigurerats](cube-indicators.md) kan den användas som mall för att skapa en ny rapport.
 
 Så här skapar du en rapport baserad på en befintlig kub:
 
-1. Klicka på **[!UICONTROL Create]** knappen på **[!UICONTROL Reports]** och väljer den kub du just har skapat.
+1. Klicka på knappen **[!UICONTROL Create]** på fliken **[!UICONTROL Reports]** och markera den kub du just har skapat.
 
    ![](assets/new-report-based-on-cube.png)
 
-1. Klicka på **[!UICONTROL Create]** för att bekräfta: då kommer du till rapportkonfigurationen och visningssidan.
+1. Klicka på knappen **[!UICONTROL Create]** för att bekräfta: du kommer nu till sidan för rapportkonfiguration och visning.
 
    Som standard visas de två första tillgängliga dimensionerna i rader och kolumner, men inget värde visas i tabellen. Klicka på huvudikonen om du vill generera tabellen:
 
@@ -49,7 +49,7 @@ Så här skapar du en rapport baserad på en befintlig kub:
 
 Standardvisningen visar de två första måtten för kuben (ålder och stad, i det här fallet).
 
-The **[!UICONTROL Add]** Med knapparna på varje axel kan du lägga till dimensioner.
+Med knapparna **[!UICONTROL Add]** på varje axel kan du lägga till dimensioner.
 
 ![](assets/cube-switch.png)
 
@@ -77,9 +77,9 @@ The **[!UICONTROL Add]** Med knapparna på varje axel kan du lägga till dimensi
    * Visa värdena i stigande (a-z, 0-9) eller fallande (z-a, 9-0) ordning.
    * Ändra antalet kolumner som ska visas vid inläsning (som standard: 200).
 
-1. Klicka **[!UICONTROL Ok]** för att bekräfta: dimensionen läggs till i de befintliga dimensionerna.
+1. Klicka på **[!UICONTROL Ok]** för att bekräfta: dimensionen läggs till i de befintliga dimensionerna.
 
-   Den gula banderollen ovanför tabellen visar att du har gjort ändringar: klicka på **[!UICONTROL Save]** för att spara dem.
+   Den gula banderollen ovanför tabellen visar att du har gjort ändringar: klicka på knappen **[!UICONTROL Save]** för att spara dem.
 
    ![](assets/cube-in-report.png)
 
@@ -93,7 +93,7 @@ Följ stegen nedan för att lägga till och konfigurera mått:
 
    ![](assets/cube-measure-button.png)
 
-1. Med **[!UICONTROL Use a measure]** väljer du ett av de befintliga måtten.
+1. Välj ett av de befintliga måtten med knappen **[!UICONTROL Use a measure]**.
 
    ![](assets/cube-add-measure.png)
 
@@ -101,13 +101,13 @@ Följ stegen nedan för att lägga till och konfigurera mått:
 
    ![](assets/cube-measure-options.png)
 
-   Den övergripande mätkonfigurationen är också tillgänglig via **[!UICONTROL Edit the configuration of the pivot table]** i sidhuvudet.
+   Den övergripande mätkonfigurationen är också tillgänglig via ikonen **[!UICONTROL Edit the configuration of the pivot table]** i sidhuvudet.
 
    ![](assets/cube-pivot-table-config.png)
 
    Du kan sedan välja om måttetiketter ska visas eller inte. [Läs mer](customize-cubes.md#configure-the-display).
 
-1. Du kan bygga nya mått baserat på befintliga. Det gör du genom att klicka **[!UICONTROL Create a measure]** och konfigurera det.
+1. Du kan bygga nya mått baserat på befintliga. Om du vill göra det klickar du på **[!UICONTROL Create a measure]** och konfigurerar det.
 
    ![](assets/cube-create-new-measure.png)
 
@@ -125,7 +125,7 @@ Följ stegen nedan för att lägga till och konfigurera mått:
 
    ![](assets/cube-display-new-measure.png)
 
-   När du har skapat ett mått kan du redigera det och ändra dess konfiguration. Klicka på **[!UICONTROL Measures]** och bläddra sedan till fliken för det mått som ska redigeras.
+   När du har skapat ett mått kan du redigera det och ändra dess konfiguration. Om du vill göra det klickar du på knappen **[!UICONTROL Measures]** och bläddrar sedan till fliken för måttet som du vill redigera.
 
    Klicka sedan på **[!UICONTROL Edit the dynamic measure]** för att öppna inställningsmenyn.
 
@@ -135,23 +135,23 @@ Rapporter som byggs med kuber gör att du kan samla in data från tabellen och s
 
 Följ stegen nedan för att gruppera en population i en lista:
 
-1. Markera cellerna som innehåller de ifyllningar som ska samlas och klicka sedan på **[!UICONTROL Add to cart]** -ikon.
+1. Klicka på cellerna som innehåller de ifyllningar som ska samlas för att markera dem och klicka sedan på ikonen **[!UICONTROL Add to cart]** .
 
    ![](assets/cube-add-to-cart.png)
 
    Så många gånger som krävs för att samla in olika profiler
 
-1. Klicka på **[!UICONTROL Show cart]** om du vill visa innehållet innan du kör exporten.
+1. Klicka på knappen **[!UICONTROL Show cart]** om du vill visa innehållet innan du kör exporten.
 
    ![](assets/cube-show-cart.png)
 
-1. Använd **[!UICONTROL Export]** om du vill gruppera artiklarna i vagnen i en lista.
+1. Använd knappen **[!UICONTROL Export]** för att gruppera objekten i vagnen i en lista.
 
    Ange namnet på listan och välj vilken typ av export som ska utföras.
 
    ![](assets/cube-export-report.png)
 
-   Klicka **[!UICONTROL Start]** för att köra exporten.
+   Klicka på **[!UICONTROL Start]** för att köra exporten.
 
 1. När exporten är klar bekräftar ett meddelande att den har körts och hur många poster som har bearbetats.
 
@@ -159,7 +159,7 @@ Följ stegen nedan för att gruppera en population i en lista:
 
    Du kan antingen spara innehållet i kundvagnen eller tömma den.
 
-   Den nya listan är tillgänglig via **[!UICONTROL Profiles and targets]** -fliken.
+   Den nya listan är tillgänglig via fliken **[!UICONTROL Profiles and targets]**.
 
    ![](assets/cube-list-available.png)
 
@@ -171,7 +171,7 @@ Följ stegen nedan för att skapa en tabell och utforska data i en kub:
 
    ![](assets/cube-insert-in-report.png)
 
-1. I **[!UICONTROL Data]** på sidan väljer du en kub för att bearbeta dimensionerna som den innehåller och visar beräknade mått.
+1. På fliken **[!UICONTROL Data]** på sidan väljer du en kub för att bearbeta dimensionerna som den innehåller och visa beräknade mått.
 
    ![](assets/cube-selected-in-report.png)
 

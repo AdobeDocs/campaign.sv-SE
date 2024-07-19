@@ -32,20 +32,20 @@ Campaign v8 kan ansluta till följande Adobe-lösningar. Bläddra bland länkarn
 * Adobe Target. [Läs mer](../connect/ac-at.md)
 * Adobe Workfront. [Läs mer](../connect/ac-workfront.md)
 
-Du kan också kombinera **målgrupper** och **resurser** i olika Experience Cloud-lösningar med funktioner för resursdelning och målgruppsdelning.
+Du kan också kombinera dina **målgrupper** och **resurser** mellan olika Experience Cloud-lösningar med funktioner för resursdelning och målgruppsdelning.
 
-Läs mer om **Målgruppsdelning** mellan Campaign och Experience Cloud i [Campaign Classic v7 - dokumentation](https://experienceleague.adobe.com/docs/campaign-classic/using/integrating-with-adobe-experience-cloud/audience-sharing/sharing-audiences-with-adobe-experience-cloud.html#integrating-with-adobe-experience-cloud){target="_blank"}.
+Läs mer om **målgruppsdelning** mellan Campaign-lösningar och Experience Cloud i [dokumentationen för Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/integrating-with-adobe-experience-cloud/audience-sharing/sharing-audiences-with-adobe-experience-cloud.html#integrating-with-adobe-experience-cloud){target="_blank"}.
 
-Läs mer om **Resursdelning** mellan Campaign och Experience Cloud i [Campaign Classic v7 - dokumentation](https://experienceleague.adobe.com/docs/campaign-classic/using/integrating-with-adobe-experience-cloud/asset-sharing/sharing-assets-with-adobe-experience-cloud.html#integrating-with-adobe-experience-cloud){target="_blank"}.
+Läs mer om **Resursdelning** mellan Campaign-lösningar och Experience Cloud i [Campaign Classic v7-dokumentation](https://experienceleague.adobe.com/docs/campaign-classic/using/integrating-with-adobe-experience-cloud/asset-sharing/sharing-assets-with-adobe-experience-cloud.html#integrating-with-adobe-experience-cloud){target="_blank"}.
 
 >[!NOTE]
 >
->Som användare av hanterade Cloud Service [kontakta Adobe](../start/campaign-faq.md#support) för att koppla Campaign till Adobe Experience Cloud tjänster och lösningar.
+>Som användare av hanterade Cloud Service [kontaktar du Adobe](../start/campaign-faq.md#support) för att ansluta Campaign med Adobe Experience Cloud tjänster och lösningar.
 
 
 ## Integrera med CRM Connector{#gs-crm-connectors}
 
-Du kan ansluta din Adobe Campaign-plattform till **CRM-system från tredje part** och synkronisera data: kontakter, konton, inköp osv.
+Du kan ansluta din Adobe Campaign-plattform till dina **CRM-system från tredje part** och synkronisera data: kontakter, konton, inköp osv.
 
 Aktivera CRM-data för kommunikation över flera kanaler: lär dig hur du skickar kontakter från CRM-systemet till Adobe Campaign och delar kampanjdata från Adobe Campaign till CRM-systemet.
 CRM-anslutningar möjliggör snabb och enkel dataintegrering: Adobe Campaign tillhandahåller en dedikerad assistent för att samla in och välja bland tabellerna i CRM. Detta garanterar dubbelriktad synkronisering för att säkerställa att data alltid är aktuella i alla system.
@@ -56,7 +56,7 @@ Lär dig hur du integrerar Campaign med Microsoft Dynamics 365 och Salesforce.co
 
 Använd FDA Connector (Federated Data Access) för att ansluta Campaign till en eller flera **externa databaser** och bearbeta information som lagras i dem utan att påverka data i Campaign Cloud-databasen.
 
-Läs mer i [den här sidan](fda.md)
+Läs mer på [den här sidan](fda.md)
 
 ## Arbeta med sociala medier{#gs-social}
 
@@ -68,6 +68,6 @@ Du kan:
 * Lägg upp på ditt X-konto
 * Samla in nya kontakter
 
-Lär dig hur du konfigurerar och använder X-integrering i [den här sidan](../connect/ac-tw.md).
+Lär dig hur du konfigurerar och använder X-integrering på [den här sidan](../connect/ac-tw.md).
 
-Lär dig hur du skapar X-inlägg och skickar direktmeddelanden till dina följare i [den här sidan](../send/twitter.md).
+Lär dig hur du skapar X-inlägg och skickar direktmeddelanden till dina följare på [den här sidan](../send/twitter.md).

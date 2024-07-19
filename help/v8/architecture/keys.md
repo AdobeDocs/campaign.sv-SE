@@ -14,11 +14,11 @@ ht-degree: 0%
 
 # Nyckelhantering och unicitet {#key-management}
 
-När det gäller en [Företagsdistribution (FFDA)](enterprise-deployment.md)primärnyckeln är en UUID (Universally Unique IDentifier) som är en teckensträng. För att skapa detta UUID måste schemats huvudelement innehålla **autouuid** och **autopk** attribut inställda på **true**.
+I kontexten för en [Enterprise (FFDA)-distribution](enterprise-deployment.md) är primärnyckeln en UUID (Universally Unique IDentifier), som är en teckensträng. Om du vill skapa det här UUID:t måste huvudelementet i schemat innehålla attributen **autouid** och **autopk** inställda på **true**.
 
-Adobe Campaign v8 använder [!DNL Snowflake] som kärndatabas. Den distribuerade arkitekturen för [!DNL Snowflake] databasen har ingen mekanism som säkerställer att en nyckel i en tabell är unik: slutanvändarna ansvarar för nyckelkonsekvens i Adobe Campaign-databasen.
+Adobe Campaign v8 använder [!DNL Snowflake] som kärndatabas. Den distribuerade arkitekturen för databasen [!DNL Snowflake] tillhandahåller ingen mekanism som garanterar att en nyckel i en tabell är unik: slutanvändarna ansvarar för nyckelkonsekvens i Adobe Campaign-databasen.
 
-För att relationsdatabasens enhetlighet ska bevaras är det obligatoriskt att undvika dubbletter av nycklar, särskilt på primärnycklar. Dubbletter av primärnycklar leder till problem med arbetsflödesaktiviteter för datahantering, som **Fråga**, **Avstämning**, **Uppdatera data**, med mera. Detta är viktigt för att definiera korrekta avstämningskriterier vid uppdatering [!DNL Snowflake] tabeller.
+För att relationsdatabasens enhetlighet ska bevaras är det obligatoriskt att undvika dubbletter av nycklar, särskilt på primärnycklar. Dubbletter av primärnycklar leder till problem med datahanteringsarbetsflödesaktiviteter som **Fråga**, **Avstämning**, **Uppdatera data** och mycket annat. Detta är viktigt för att definiera korrekta avstämningsvillkor när [!DNL Snowflake]-tabeller uppdateras.
 
 
 >[!CAUTION]
@@ -34,15 +34,15 @@ Eftersom molndatabasen inte tillämpar begränsningar för användargrupper mins
 
 ### Universitetsarbetsflöde{#unicity-wf}
 
-Universitetstjänsten har en dedikerad **[!UICONTROL Unicity alerting]** inbyggt arbetsflöde för att övervaka begränsningar för användargrupper och varningar när dubbletter upptäcks.
+Unicity Service levereras med ett dedikerat **[!UICONTROL Unicity alerting]** inbyggt arbetsflöde, som övervakar begränsningar för unicitet och varningar när dubbletter identifieras.
 
-Det här tekniska arbetsflödet är tillgängligt från **[!UICONTROL Administration > Production > Technical workflows > Full FFDA Unicity]** nod i Campaign Explorer. **Den får inte ändras**.
+Det här tekniska arbetsflödet är tillgängligt från noden **[!UICONTROL Administration > Production > Technical workflows > Full FFDA Unicity]** i Campaign Explorer. **Den får inte ändras**.
 
 Det här arbetsflödet kontrollerar alla anpassade och inbyggda scheman för att upptäcka dubblerade rader.
 
 ![](assets/unicity-alerting-wf.png)
 
-Om **[!UICONTROL Unicity alerting]** (ffdaUnicity) arbetsflödet identifierar vissa dubblettnycklar, de läggs till i en viss **Granskningsenhet** tabellen, som innehåller schemats namn, typ av nyckel, antalet påverkade rader och datumet. Du kan komma åt duplicerade nycklar från **[!UICONTROL Administration > Audit > Key Unicity]** nod.
+Om arbetsflödet **[!UICONTROL Unicity alerting]** (ffdaUnicity) upptäcker några dubblettnycklar läggs de till i en specifik **Audit Unicity**-tabell, som innehåller schemats namn, typ av nyckel, antalet påverkade rader och datumet. Du kan komma åt duplicerade nycklar från noden **[!UICONTROL Administration > Audit > Key Unicity]**.
 
 ![](assets/unicity-table.png)
 
@@ -50,18 +50,18 @@ Som databasadministratör kan du använda en SQL-aktivitet för att ta bort dubb
 
 ### Varningar{#unicity-wf-alerting}
 
-Ett specifikt meddelande skickas till **[!UICONTROL Workflow Supervisors]** när dubblettnycklar identifieras. Innehållet och målgruppen för den här aviseringen kan ändras i **Varning** verksamhet som **[!UICONTROL Unicity alerting]** arbetsflöde.
+Ett specifikt meddelande skickas till operatörsgruppen **[!UICONTROL Workflow Supervisors]** när dubblettnycklar identifieras. Innehållet och målgruppen för den här aviseringen kan ändras i **aviseringsaktiviteten** i arbetsflödet **[!UICONTROL Unicity alerting]**.
 
 ![](assets/wf-alert-activity.png)
 
 
 ## Ytterligare skyddsräcken{#duplicates-guardrails}
 
-Campaign innehåller en uppsättning nya skyddsritningar för att förhindra att duplicerad nyckel infogas i [!DNL Snowflake] databas.
+Campaign innehåller en uppsättning nya skyddsritningar för att förhindra att dubblettnyckeln infogas i [!DNL Snowflake]-databasen.
 
 >[!NOTE]
 >
->Dessa skyddsförslag är tillgängliga från och med Campaign v8.3. Om du vill kontrollera versionen läser du [det här avsnittet](../start/compatibility-matrix.md#how-to-check-your-campaign-version-and-buildversion)
+>Dessa skyddsförslag är tillgängliga från och med Campaign v8.3. Mer information om hur du kontrollerar versionen finns i [det här avsnittet](../start/compatibility-matrix.md#how-to-check-your-campaign-version-and-buildversion)
 
 ### Förberedelse av leverans{#remove-duplicates-delivery-preparation}
 
@@ -71,13 +71,13 @@ Adobe Campaign tar automatiskt bort alla dubbletter av UUID från en målgrupp n
 
 ### Uppdatera data i ett arbetsflöde{#duplicates-update-data}
 
-När det gäller en [Företagsdistribution (FFDA)](enterprise-deployment.md)kan du inte välja en intern nyckel (UUID) som fält för att uppdatera data i ett arbetsflöde.
+I kontexten för en [Enterprise (FFDA)-distribution](enterprise-deployment.md) kan du inte välja en intern nyckel (UUID) som fält för att uppdatera data i ett arbetsflöde.
 
 ![](assets/update-data-no-internal-key.png)
 
 ### Fråga ett schema med dubbletter{#query-with-duplicates}
 
-När ett arbetsflöde börjar köra en fråga i ett schema, kontrollerar Adobe Campaign om det finns dubblerade poster i [Granska Unicity-register](#unicity-wf). I så fall loggar arbetsflödet en varning eftersom den efterföljande åtgärden på de duplicerade data kan påverka arbetsflödesresultatet.
+När ett arbetsflöde börjar köra en fråga i ett schema, kontrollerar Adobe Campaign om någon dubblerad post har rapporterats i tabellen [Audit Unicity](#unicity-wf). I så fall loggar arbetsflödet en varning eftersom den efterföljande åtgärden på de duplicerade data kan påverka arbetsflödesresultatet.
 
 ![](assets/query-with-duplicates.png)
 

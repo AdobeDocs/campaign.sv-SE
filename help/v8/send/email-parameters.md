@@ -18,11 +18,11 @@ I det här avsnittet visas de alternativ och parametrar som är tillgängliga fr
 
 ## Använd e-postkopia {#email-bcc}
 
-Du kan konfigurera Adobe Campaign att behålla en kopia av e-postmeddelanden som skickas från din plattform. Det här alternativet beskrivs i [den här sidan](email-bcc.md).
+Du kan konfigurera Adobe Campaign att behålla en kopia av e-postmeddelanden som skickas från din plattform. Det här alternativet beskrivs på [den här sidan](email-bcc.md).
 
 ## Välj meddelandeformat {#selecting-message-formats}
 
-Du kan ändra formatet för skickade e-postmeddelanden. Det gör du genom att redigera leveransegenskaperna och klicka på **[!UICONTROL Delivery]** -fliken.
+Du kan ändra formatet för skickade e-postmeddelanden. Om du vill göra det redigerar du leveransegenskaperna och klickar på fliken **[!UICONTROL Delivery]**.
 
 ![](assets/email-message-format.png)
 
@@ -30,7 +30,7 @@ Välj formatet för e-postmeddelandet i fönstrets nedre del:
 
 * **[!UICONTROL Use recipient preferences]** (standardläge)
 
-  Meddelandeformatet definieras enligt de data som lagras i mottagarprofilen och lagras som standard i **[!UICONTROL email format]** fält (@emailFormat). Om en mottagare vill ta emot meddelanden i ett visst format är detta det format som skickas. Om fältet inte är ifyllt skickas ett multipart-alternativt meddelande (se nedan).
+  Meddelandeformatet definieras enligt data som lagras i mottagarprofilen och lagras som standard i fältet **[!UICONTROL email format]** (@emailFormat). Om en mottagare vill ta emot meddelanden i ett visst format är detta det format som skickas. Om fältet inte är ifyllt skickas ett multipart-alternativt meddelande (se nedan).
 
 * **[!UICONTROL Let recipient mail client choose the most appropriate format]**
 
@@ -51,25 +51,25 @@ Välj formatet för e-postmeddelandet i fönstrets nedre del:
 
 ## Ange teckenkodning {#character-encoding}
 
-I **[!UICONTROL SMTP]** -fliken för leveransparametrarna, **[!UICONTROL Character encoding]** kan du ange en viss kodning.
+På fliken **[!UICONTROL SMTP]** i leveransparametrarna kan du ange en specifik kodning i avsnittet **[!UICONTROL Character encoding]**.
 
 Standardkodningen är UTF-8. Om vissa av mottagarnas e-postleverantörer inte har stöd för UTF-8-standardkodning kanske du vill ställa in en specifik kodning så att specialtecknen visas korrekt för mottagarna av e-postmeddelanden.
 
 Du vill till exempel skicka ett e-postmeddelande som innehåller japanska tecken. Om du vill vara säker på att alla tecken visas korrekt för mottagarna i Japan kan du använda en kodning som stöder de japanska tecknen i stället för standard UTF-8.
 
-Om du vill göra det väljer du **[!UICONTROL Force the encoding used for messages]** i **[!UICONTROL Character encoding]** och välj en kodning i listrutan som visas.
+Det gör du genom att välja alternativet **[!UICONTROL Force the encoding used for messages]** i avsnittet **[!UICONTROL Character encoding]** och välja en kodning i listrutan som visas.
 
 ![](assets/email-smtp-encoding.png)
 
 ## Hantera studsmeddelanden {#managing-bounce-emails}
 
-The **[!UICONTROL SMTP]** -fliken i leveransegenskaperna kan du även konfigurera hanteringen av studsmeddelanden.
+På fliken **[!UICONTROL SMTP]** i leveransegenskaperna kan du även konfigurera hanteringen av studsmeddelanden.
 
-* **[!UICONTROL Errors-to-address]**: Som standard tas studsade e-postmeddelanden emot i standardfelfältet på plattformen, men du kan definiera en specifik feladress för en leverans.
+* **[!UICONTROL Errors-to-address]**: Som standard tas studsade e-postmeddelanden emot i standardfelrutan för plattformen, men du kan definiera en specifik feladress för en leverans.
 
-* **[!UICONTROL Bounce address]**: Du kan också definiera en annan adress dit obearbetade e-postmeddelanden vidarebefordras. Med den här adressen kan du undersöka orsaken till att studsa när e-postmeddelanden inte automatiskt kunde kvalificeras av programmet.
+* **[!UICONTROL Bounce address]**: Du kan också definiera en annan adress dit obearbetade studsade e-postmeddelanden vidarebefordras. Med den här adressen kan du undersöka orsaken till att studsa när e-postmeddelanden inte automatiskt kunde kvalificeras av programmet.
 
-Vart och ett av dessa fält kan anpassas med den dedikerade ikonen. Läs mer om personaliseringsfält i [det här avsnittet](personalization-fields.md).
+Vart och ett av dessa fält kan anpassas med den dedikerade ikonen. Läs mer om anpassningsfält i [det här avsnittet](personalization-fields.md).
 
 ![](assets/email-smtp-bounce.png)
 
@@ -77,9 +77,9 @@ Mer information om hantering av studsade e-postmeddelanden finns i [det här avs
 
 ## Lägg till SMTP-rubriker {#adding-smtp-headers}
 
-Det går att lägga till SMTP-huvuden i leveranserna. Använd relevanta avsnitt i **[!UICONTROL SMTP]** i leveransen.
+Det går att lägga till SMTP-huvuden i leveranserna. Det gör du genom att använda relevant avsnitt på fliken **[!UICONTROL SMTP]** i leveransen.
 
-Skriptet som anges i det här fönstret måste referera till en rubrik per rad i följande formulär: **name:value**.
+Skriptet som anges i det här fönstret måste referera till en rubrik per rad i följande format: **name:value**.
 
 Värden kodas automatiskt om det behövs.
 

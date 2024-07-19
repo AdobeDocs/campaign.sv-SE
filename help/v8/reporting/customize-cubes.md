@@ -8,7 +8,7 @@ level: Beginner
 exl-id: 300aedd0-6b5d-4264-bd63-e26a41ab64db
 source-git-commit: 1c879c7803c346d4b602089a22c2639eb83e82be
 workflow-type: tm+mt
-source-wordcount: '1431'
+source-wordcount: '1438'
 ht-degree: 1%
 
 ---
@@ -22,7 +22,7 @@ Använd databindning för att förenkla visningen av data genom att gruppera vä
 Sammantaget finns det tre typer av bindning:
 
 1. Använda manuellt definierade värdeintervall. Exempel: ålder, genomsnittlig kundvagn, antal öppnade leveranser osv.). Mer information finns i [Definiera varje behållare](#defining-each-bin).
-1. Beroende på uppräkningens värden: visar bara värdena i uppräkningen, övriga värden grupperas i &quot;Övrigt&quot;. Mer information finns i [Hantera behållare dynamiskt](#dynamically-managing-bins).
+1. Beroende på värdena för en uppräkning: bara de värden som finns i uppräkningen visas, grupperas alla andra värden i Övrigt. Mer information finns i [Hantera behållare dynamiskt](#dynamically-managing-bins).
 1. Med värdeintervall grupperas alla andra. Exempel: 18 till 25 åringar, 26 till 59 åringar och andra. Mer information finns i [Skapa värdeintervall](#creating-value-ranges).
 
 Om du vill aktivera bindning markerar du lämplig ruta när du skapar dimensionen.
@@ -31,23 +31,23 @@ Om du vill aktivera bindning markerar du lämplig ruta när du skapar dimensione
 
 Du kan antingen skapa bindningar manuellt eller länka dem till en befintlig uppräkning.
 
-Adobe Campaign har även en assistent för automatisk bindning: värden kan delas upp i N-grupper eller grupperas enligt de vanligaste värdena i databasen.
+Adobe Campaign har också en assistent för automatisk bindning: värden kan delas upp i N-grupper eller grupperas enligt de vanligaste värdena i databasen.
 
 ### Definiera varje behållare {#define-each-bin}
 
-Om du vill skapa varje behållare individuellt väljer du **[!UICONTROL Define each bin]** och använd tabellen för att skapa de olika behållarna.
+Om du vill skapa varje behållare individuellt markerar du alternativet **[!UICONTROL Define each bin]** och använder tabellen för att skapa de olika behållarna.
 
 ![](assets/cube-binning.png)
 
-Klicka på **[!UICONTROL Add]** om du vill skapa en ny behållare och lista de värden som ska grupperas i behållaren.
+Klicka på knappen **[!UICONTROL Add]** om du vill skapa en ny behållare och visa de värden som ska grupperas i behållaren.
 
 ![](assets/cube-add-new-bin.png)
 
-I följande exempel grupperas språk i tre kategorier: Engelska/tyska/nederländska, franska/italienska/spanska, med flera.
+I följande exempel grupperas språken i tre kategorier: engelska/tyska/nederländska, franska/italienska/spanska och andra.
 
 ![](assets/cube-add-new-bin-2.png)
 
-Du kan använda en SQL-mask för att kombinera flera värden till ett filter. Om du vill göra det markerar du **[!UICONTROL Yes]** i **[!UICONTROL Use an SQL mask]** och ange det SQL-filter som ska användas i **[!UICONTROL Value or expression]** kolumn.
+Du kan använda en SQL-mask för att kombinera flera värden till ett filter. Det gör du genom att kontrollera **[!UICONTROL Yes]** i kolumnen **[!UICONTROL Use an SQL mask]** och ange det SQL-filter som ska användas i kolumnen **[!UICONTROL Value or expression]**.
 
 <!--In the example below, all email domains that start with **yahoo** (yahoo.fr, yahoo.com, yahoo.be, etc.), or with **ymail** (ymail.com, ymail.eu, etc.) will be grouped under the label **YAHOO!**, as well as addresses with the **rocketmail.com** domain.-->
 
@@ -58,35 +58,35 @@ Värden kan hanteras dynamiskt via uppräkningar. Det innebär att bara värdena
 Så här skapar du den här typen av värdebindning:
 
 1. Skapa en ny dimension och aktivera bindning.
-1. Välj **[!UICONTROL Dynamically link the values to an enumeration]** och välj matchande uppräkning.
+1. Välj alternativet **[!UICONTROL Dynamically link the values to an enumeration]** och välj den matchande uppräkningen.
 
    ![](assets/cube-link-to-enum.png)
 
    När uppräkningsvärdena uppdateras anpassas de matchande binderna automatiskt.
 
-Läs mer om uppräkningar i [den här sidan](../../v8/config/ui-settings.md#enumerations).
+Läs mer om uppräkningar på [den här sidan](../../v8/config/ui-settings.md#enumerations).
 
 ### Skapa värdeintervall {#create-value-ranges}
 
 Du kan gruppera värdena i intervall baserat på önskat intervall.
 
-Om du vill definiera intervall manuellt klickar du på **[!UICONTROL Add]** och markera **[!UICONTROL Define a range]** :
+Om du vill definiera intervall manuellt klickar du på knappen **[!UICONTROL Add]** och väljer **[!UICONTROL Define a range]** :
 
 Ange sedan de nedre och övre gränserna och klicka på **[!UICONTROL Ok]** för att bekräfta.
 
 ### Generera behållare automatiskt {#generate-bins-automatically}
 
-Det går också att generera behållare automatiskt. Om du vill göra det klickar du på **[!UICONTROL Generate bins...]** länk.
+Det går också att generera behållare automatiskt. Klicka på länken **[!UICONTROL Generate bins...]** om du vill göra det.
 
 Du kan antingen:
 
 * **[!UICONTROL Recover the most frequently used values]**
 
-   Om du genererar 4 behållare visas de fyra vanligaste värdena, medan de andra räknas och grupperas i kategorin Övrigt.
+  Om du genererar 4 behållare visas de fyra vanligaste värdena, medan de andra räknas och grupperas i kategorin Övrigt.
 
 * **[!UICONTROL Generate bins in the form of slots]**
 
-   För samma exempel skapar Adobe Campaign automatiskt fyra värdeplatser i samma storlek för att visa värdena i databasen.
+  För samma exempel skapar Adobe Campaign automatiskt fyra värdeplatser i samma storlek för att visa värdena i databasen.
 
 I det här fallet ignoreras filtret som är markerat i faktaschemat.
 
@@ -102,19 +102,19 @@ Den har skapats med följande mall:
 
 ![](assets/nmx_enum_domain.png)
 
-Skapa en kub med **[!UICONTROL Email domain]** dimension. Välj **[!UICONTROL Enable binning]** option then **[!UICONTROL Dynamically link the values to an enumeration]**. Välj sedan **Domäner** uppräkning enligt ovan. Alla värden som saknar angivet alias grupperas om under **Övriga** label.
+Om du vill skapa en rapport med den här uppräkningen skapar du en kub med dimensionen **[!UICONTROL Email domain]**. Välj alternativet **[!UICONTROL Enable binning]** och sedan **[!UICONTROL Dynamically link the values to an enumeration]**. Välj sedan uppräkningen **Domäner** så som visas ovan. Alla värden som saknar angivet alias grupperas om under etiketten **Övriga**.
 
 Skapa sedan en rapport baserad på den här kuben för att visa värdena.
 
-Du behöver bara ändra uppräkningen för att uppdatera den relaterade rapporten. Skapa till exempel **Adobe** och lägg till **adobe.com** och rapporten uppdateras automatiskt med Adobe på uppräkningsnivån.
+Du behöver bara ändra uppräkningen för att uppdatera den relaterade rapporten. Skapa till exempel värdet **Adobe** och lägg till aliaset **adobe.com** så uppdateras rapporten automatiskt med Adobe-värdet på uppräkningsnivån.
 
 ![](assets/nmx_add_alias.png)
 
-The **[!UICONTROL Domains]** uppräkningen används för att generera inbyggda rapporter som visar listan över domäner. Om du vill anpassa innehållet i dessa rapporter kan du redigera den här listan.
+Uppräkningen **[!UICONTROL Domains]** används för att generera inbyggda rapporter som visar listan över domäner. Om du vill anpassa innehållet i dessa rapporter kan du redigera den här listan.
 
 Du kan skapa andra uppräkningar som är reserverade för bindning och använda dem i andra kuber: alla aliasvärden grupperas om i de biner som anges på den första uppräkningsfliken.
 
-Läs mer om uppräkningar i [den här sidan](../../v8/config/ui-settings.md#enumerations).
+Läs mer om uppräkningar på [den här sidan](../../v8/config/ui-settings.md#enumerations).
 
 ## Sammansättningar i kuber {#calculate-and-use-aggregates}
 
@@ -132,37 +132,37 @@ Aggregat definieras på den relevanta fliken för varje kub.
 
 Så här skapar du en ny sammanställning:
 
-1. Klicka på **[!UICONTROL Aggregates]** klickar du på **[!UICONTROL Add]** -knappen.
+1. Klicka på fliken **[!UICONTROL Aggregates]** i kuben och klicka sedan på knappen **[!UICONTROL Add]**.
 1. Ange en etikett för sammanställningen och lägg sedan till de dimensioner som ska beräknas.
 1. Välj en dimension och en nivå. Upprepa den här processen för varje dimension och nivå.
-1. Klicka på **[!UICONTROL Workflow]** för att skapa sammanställningsarbetsflödet.
+1. Klicka på fliken **[!UICONTROL Workflow]** för att skapa aggregeringsarbetsflödet.
 
-   * The **[!UICONTROL Scheduler]** kan du definiera frekvensen för uppdateringar av beräkningar. Schemaläggaren beskrivs i [det här avsnittet](../../automation/workflow/scheduler.md).
-   * The **[!UICONTROL Aggregate update]** kan du välja det uppdateringsläge som du vill använda: helt eller delvis.
+   * Med aktiviteten **[!UICONTROL Scheduler]** kan du definiera frekvensen för beräkningsuppdateringar. Schemaläggaren beskrivs i [det här avsnittet](../../automation/workflow/scheduler.md).
+   * Med aktiviteten **[!UICONTROL Aggregate update]** kan du välja det uppdateringsläge som du vill använda: helt eller delvis.
 
-      Som standard utförs en fullständig uppdatering under varje beräkning. Om du vill aktivera en partiell uppdatering väljer du det relevanta alternativet och definierar uppdateringsvillkoren.
+     Som standard utförs en fullständig uppdatering under varje beräkning. Om du vill aktivera en partiell uppdatering väljer du det relevanta alternativet och definierar uppdateringsvillkoren.
 
 ## Definiera mått {#define-measures}
 
-Typerna av mått definieras i **[!UICONTROL Measures]** -fliken i kuben. Du kan beräkna summor, medelvärden, avvikelser osv.
+Mättyperna definieras på fliken **[!UICONTROL Measures]** i kuben. Du kan beräkna summor, medelvärden, avvikelser osv.
 
-Du kan skapa så många mått som behövs: markerar du det mått som du vill visa eller dölja i tabellen. Mer information om detta finns i [det här avsnittet](#displaying-measures).
+Du kan skapa så många mått som behövs. Välj sedan det mått som du vill visa eller dölja i tabellen. Mer information om detta finns i [det här avsnittet](#displaying-measures).
 
 Så här definierar du ett nytt mått:
 
-1. Klicka på **[!UICONTROL Add]** ovanför listan över mått och välj vilken typ av mått och formel som ska beräknas.
+1. Klicka på knappen **[!UICONTROL Add]** ovanför listan med mått och välj den typ av mått och formel som ska beräknas.
 
    ![](assets/cube-create-a-measure.png)
 
-1. Om det behövs, och beroende på operatorn, väljer du det uttryck som åtgärden gäller.
+1. Om det behövs, och beroende på operatorn, väljer du det uttryck som operationen gäller.
 
-   The **[!UICONTROL Advanced selection]** kan du skapa komplexa beräkningsformler. Mer information om detta finns i [det här avsnittet](../../automation/workflow/query.md).
+   Med knappen **[!UICONTROL Advanced selection]** kan du skapa komplexa beräkningsformler. Mer information om detta finns i [det här avsnittet](../../automation/workflow/query.md).
 
-1. The **[!UICONTROL Filter the measure data...]** kan du begränsa beräkningsfältet och bara använda det på vissa data i databasen.
+1. Med länken **[!UICONTROL Filter the measure data...]** kan du begränsa beräkningsfältet och bara tillämpa det på specifika data i databasen.
 
    ![](assets/cube-create-measure-2.png)
 
-1. Ange måttets etikett och lägg till en beskrivning och klicka sedan på **[!UICONTROL Finish]** för att skapa den.
+1. Ange måttets etikett och lägg till en beskrivning. Klicka sedan på **[!UICONTROL Finish]** för att skapa den.
 
 ## Anpassa mått {#display-measures}
 
@@ -174,9 +174,9 @@ Du kan konfigurera visningen av mått i tabellen beroende på dina behov:
 
 ### Visningssekvens {#display-sequence}
 
-De mått som beräknas i kuben konfigureras via **[!UICONTROL Measures]** -knappen.
+De mått som beräknas i kuben konfigureras via knappen **[!UICONTROL Measures]**.
 
-Flytta runt linjerna för att ändra visningssekvensen. I följande exempel flyttas franska data längst ned i listan: det innebär att den visas i den sista kolumnen.
+Flytta runt linjerna för att ändra visningssekvensen. I följande exempel flyttas franska data längst ned i listan, vilket innebär att de visas i den sista kolumnen.
 
 ![](assets/cube-in-report-settings.png)
 
@@ -184,9 +184,9 @@ Flytta runt linjerna för att ändra visningssekvensen. I följande exempel flyt
 
 Mätningarna, linjerna och kolumnerna kan konfigureras individuellt för varje mått eller totalt. En specifik ikon ger dig åtkomst till markeringsfönstret för visningsläge.
 
-* Klicka på **[!UICONTROL Edit the configuration of the pivot table]** -ikonen för att komma åt konfigurationsfönstret.
+* Klicka på ikonen **[!UICONTROL Edit the configuration of the pivot table]** för att komma åt konfigurationsfönstret.
 
-   Du kan välja om etiketterna för måtten ska visas eller inte och konfigurera deras layout (rader eller kolumner).
+  Du kan välja om etiketterna för måtten ska visas eller inte och konfigurera deras layout (rader eller kolumner).
 
 ![](assets/cube-pivot-table-config-details.png)
 
@@ -204,7 +204,7 @@ I varje mått kan du definiera vilken enhet och formatering som ska användas.
 
 När rapporten har konfigurerats kan du spara den och dela den med andra operatorer.
 
-Om du vill göra det klickar du på **[!UICONTROL Show the report properties]** -ikonen och aktivera **[!UICONTROL Share this report]** alternativ.
+Om du vill göra det klickar du på ikonen **[!UICONTROL Show the report properties]** och aktiverar alternativet **[!UICONTROL Share this report]**.
 
 ![](assets/cube_share_option.png)
 
@@ -218,7 +218,7 @@ Det går att skapa filter för att visa en del av data.
 
 Så här gör du:
 
-1. Klicka på **[!UICONTROL Add a filter]** ikon.
+1. Klicka på ikonen **[!UICONTROL Add a filter]**.
 
    ![](assets/cube_add_filter.png)
 
@@ -232,13 +232,13 @@ Så här gör du:
 
    Klicka på filtret för att redigera det. Klicka på krysset för att ta bort det.
 
-   Du kan kombinera så många filter som behövs: kommer alla att visas här.
+   Du kan kombinera så många filter som behövs: alla visas i det här området.
 
    ![](assets/cube_multiple_filters.png)
 
 Varje gång ett filter ändras (lägg till, ta bort, ändra) måste rapporten beräknas om.
 
-Du kan också skapa filter baserat på en markering. Det gör du genom att markera källceller, rader och kolumner och sedan klicka på **[!UICONTROL Add a filter]** ikon.
+Du kan också skapa filter baserat på en markering. Det gör du genom att markera källceller, rader och kolumner och sedan klicka på ikonen **[!UICONTROL Add a filter]**.
 
 Om du vill markera en rad, kolumn eller cell vänsterklickar du på den. Om du vill avmarkera klickar du igen.
 

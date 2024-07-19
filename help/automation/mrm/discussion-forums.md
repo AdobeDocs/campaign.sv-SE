@@ -20,22 +20,22 @@ Operatörer kan prenumerera på ett forum och få ett e-postmeddelande varje gå
 
 ## Gå till ett forum {#accessing-a-forum}
 
-Om du vill komma åt ett forum går du till en instrumentpanel och klickar på **[!UICONTROL Forum]** i det övre högra hörnet.
+Om du vill komma åt ett forum går du till en instrumentpanel och klickar på länken **[!UICONTROL Forum]** i det övre högra hörnet.
 
 ![](assets/mrm-forum-icon.png)
 
 Meddelanden och deras svar visas från senaste till äldsta.
 
-Om du vill starta en ny tråd klickar du på **[!UICONTROL Add a discussion]** längst upp till höger. The **[!UICONTROL Discussion forum]** öppnas (se nedan).
+Om du vill starta en ny tråd klickar du på knappen **[!UICONTROL Add a discussion]** i det övre högra hörnet. **[!UICONTROL Discussion forum]**-rutan visas (se nedan).
 
 ![](assets/mrm-forum-new-thread.png)
 
 
-Ange texten i dialogrutan **[!UICONTROL Message]** -fält och en diskussionsrubrik i **[!UICONTROL Subject]** fält.
+Ange texten i fältet **[!UICONTROL Message]** och en diskussionsrubrik i fältet **[!UICONTROL Subject]**.
 
 Operatörer som redan har publicerat ett meddelande i det här forumet meddelas som standard. Du kan välja ytterligare en operator att meddela. Om du vill meddela flera operatorer väljer du en grupp med operatorer.
 
-Du kan lägga till en bifogad fil i meddelandet med hjälp av  **[!UICONTROL Browse...]** -knappen. Den bifogade filen kommer också att inkluderas i e-postmeddelandet. Bifogade filer kan bara skickas individuellt: om du vill skicka flera filer måste du komprimera dem i en ZIP-fil.
+Du kan lägga till en bifogad fil i meddelandet med knappen **[!UICONTROL Browse...]**. Den bifogade filen kommer också att inkluderas i e-postmeddelandet. Bifogade filer kan bara skickas individuellt: om du vill skicka flera filer måste du komprimera dem i en ZIP-fil.
 
 >[!CAUTION]
 >
@@ -47,7 +47,7 @@ Du kan skicka ett meddelande till en operatörs forum. Personliga forum är offe
 
 Om du vill komma åt en operatörs forum kan du:
 
-* Gå till **[!UICONTROL Administration > Access management > Operators]** mapp för Campaign Explorer, välj den operator som ska öppna kontrollpanelen och klicka sedan på **[!UICONTROL Forum]** i det övre högra hörnet.
+* Bläddra till mappen **[!UICONTROL Administration > Access management > Operators]** i Campaign Explorer, välj den operator som ska öppna kontrollpanelen och klicka sedan på länken **[!UICONTROL Forum]** i det övre högra hörnet.
 * Leta reda på namnet på operatorn i Adobe Campaign-användargränssnittet (via ett meddelande som skickats till forumet av den här operatorn, en uppgift som tilldelats dem) och klicka på den för att komma åt kontrollpanelen för operatorer.
 
 ## Prenumerera på ett forum {#subscribing-to-a-forum}
@@ -56,13 +56,13 @@ Genom att prenumerera på ett forum kan du följa alla diskussioner. När du pre
 
 Om du vill svara på ett meddelande klickar du i e-postmeddelandet och loggar sedan in på Adobe Campaign webbgränssnitt.
 
-* Klicka på **[!UICONTROL Follow discussions]** i det övre högra avsnittet ovanför listan med meddelanden.
+* Om du vill prenumerera på ett forum klickar du på knappen **[!UICONTROL Follow discussions]** i det övre högra avsnittet ovanför listan med meddelanden.
 
   Avsnittet blir blått och visar att du prenumererar på forumet.
 
-* Om du vill avbryta prenumerationen klickar du på **[!UICONTROL Unsubscribe]** -knappen.
+* Om du vill avbryta prenumerationen på ett forum klickar du på knappen **[!UICONTROL Unsubscribe]**.
 
-* På din personliga instrumentpanel visas de forum som du prenumererar på. Klicka på **[!UICONTROL Subscription to discussion forums]** för att visa listan och sedan klicka på det objekt som intresserar dig för att komma åt dess forum.
+* På din personliga instrumentpanel visas de forum som du prenumererar på. Klicka på länken **[!UICONTROL Subscription to discussion forums]** för att visa listan och klicka sedan på det objekt som är intressant för dig för att komma åt dess forum.
 
   ![](assets/forum-subscribed.png)
 
@@ -72,10 +72,10 @@ Om du vill svara på ett meddelande klickar du i e-postmeddelandet och loggar se
 Om operatorer som prenumererar på ett forum inte får meddelanden som förväntat:
 
 * Kontrollera att e-postadresser anges i operatörens profiler.
-* Gå till **[!UICONTROL Administration > Production > Technical workflows > Campaign processes]** mappen Campaign Explorer och kontrollera **[!UICONTROL Jobs in discussion forums]** arbetsflödet startas utan fel.
+* Bläddra till mappen **[!UICONTROL Administration > Production > Technical workflows > Campaign processes]** i Campaign Explorer och kontrollera att arbetsflödet i **[!UICONTROL Jobs in discussion forums]** har startats utan fel.
 * Kontrollera leveransloggarna:
 
-   * På Adobe Campaign hemsida går du till **[!UICONTROL Campaigns > Navigation > Deliveries]** och sedan öppna **[!UICONTROL Discussion forum notification]** leverans.
-   * I Campaign Explorer går du till **[!UICONTROL Administration > Production > Objects created automatically > Technical deliveries > Workflow notifications]** och sedan klicka **[!UICONTROL Discussion forum notifications]**.
+   * På Adobe Campaign hemsida bläddrar du till **[!UICONTROL Campaigns > Navigation > Deliveries]** och öppnar sedan leveransen av **[!UICONTROL Discussion forum notification]**.
+   * Bläddra till **[!UICONTROL Administration > Production > Objects created automatically > Technical deliveries > Workflow notifications]** i Campaign Explorer och klicka sedan på **[!UICONTROL Discussion forum notifications]**.
 
-  I **[!UICONTROL Discussion forum notifications]** finns leveransloggarna i **[!UICONTROL Edit > Delivery]** -fliken. Du kan även visa **[!UICONTROL Tracking > Log]** och **[!UICONTROL Exclusion causes]** -tabbar.
+  I rutan **[!UICONTROL Discussion forum notifications]** finns leveransloggarna på fliken **[!UICONTROL Edit > Delivery]**. Du kan även visa flikarna **[!UICONTROL Tracking > Log]** och **[!UICONTROL Exclusion causes]**.

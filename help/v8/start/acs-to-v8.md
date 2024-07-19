@@ -4,7 +4,8 @@ description: Övergång från Campaign Standard till kampanj v8
 feature: Overview
 role: User
 level: Beginner
-source-git-commit: 2f4d422bbf41ad4def5e0cdedac938b208b0873e
+exl-id: 98613a0a-7a6d-41a5-9541-e045d4ca318f
+source-git-commit: cb77f17bbc7b3ce09f7f2961d2eae5855ecca6e6
 workflow-type: tm+mt
 source-wordcount: '159'
 ht-degree: 1%
@@ -18,4 +19,3 @@ Som Campaign Standard användare som går över till Campaign v8 kan du nu dra n
 Som Campaign v8-användare har du nu tillgång till både det nya webbgränssnittet för Campaign och v8-klientkonsolen. Data och inställningar synkroniseras från en miljö till en annan. Alla data och inställningar som är tillgängliga i klientkonsolen visas i användargränssnittet för Campaign-webben, från vänster navigering i Utforskaren.
 
 Läs mer om det nya webbgränssnittet för Campaign i [den här dokumentationen](https://experienceleague.adobe.com/docs/campaign-web/v8/campaign-web-home.html){target="_blank"}.
-

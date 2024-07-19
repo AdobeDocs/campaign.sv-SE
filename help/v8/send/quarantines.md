@@ -20,13 +20,13 @@ När deras adress eller telefonnummer sätts i karantän utesluts mottagarna fr�
 
 <!--For more on best practices to secure and optimize your deliveries, refer to [this page](delivery-best-practices.md).-->
 
-**Karantän** gäller endast för **adress**, a **telefonnummer**, eller en **enhetstoken**, men inte själva profilen. En profil vars e-postadress är placerad i karantän kan till exempel uppdatera sin profil och ange en ny adress. Därefter kan den användas av leveransåtgärder igen. Om två profiler råkar ha samma telefonnummer, påverkas båda om numret sätts i karantän. Adresserna eller telefonnumren i karantän visas i [exkluderingsloggar](#delivery-quarantines) (för leverans) eller i [karantänlista](#non-deliverable-bounces) (för hela plattformen).
+**Karantän** gäller bara för en **adress**, ett **telefonnummer** eller en **enhetstoken**, men inte för själva profilen. En profil vars e-postadress är placerad i karantän kan till exempel uppdatera sin profil och ange en ny adress. Därefter kan den användas av leveransåtgärder igen. Om två profiler råkar ha samma telefonnummer, påverkas båda om numret sätts i karantän. Adresserna eller telefonnumren i karantän visas i [exkluderingsloggarna](#delivery-quarantines) (för en leverans) eller i [karantänlistan](#non-deliverable-bounces) (för hela plattformen).
 
-Å andra sidan kan profiler vara **blockeringslista** som efter en avanmälan (avanmälan), för en viss kanal: detta innebär att de inte längre omfattas av något mål. Om en profil på blockeringslista för e-postkanalen har två e-postadresser, kommer därför båda adresserna att exkluderas från leveransen. Du kan kontrollera om det finns en profil på blockeringslista för en eller flera kanaler i dialogrutan **[!UICONTROL No longer contact]** del av profilens **[!UICONTROL General]** -fliken. [Läs mer](../audiences/view-profiles.md)
+Å andra sidan kan profiler finnas på **blockeringslista** som efter en avanmälan (avanmälan) för en viss kanal: detta innebär att de inte längre används av någon. Om en profil på blockeringslista för e-postkanalen har två e-postadresser, kommer därför båda adresserna att exkluderas från leveransen. Du kan kontrollera om det finns en profil på blockeringslista för en eller flera kanaler under **[!UICONTROL No longer contact]** på fliken **[!UICONTROL General]** i profilen. [Läs mer](../audiences/view-profiles.md)
 
 >[!NOTE]
 >
->När mottagarna rapporterar ditt meddelande som skräppost eller svarar på ett SMS-meddelande med ett nyckelord som &quot;STOP&quot;, sätts deras adress eller telefonnummer i karantän som **[!UICONTROL Denylisted]**. Deras profil uppdateras därefter.
+>När mottagare rapporterar ditt meddelande som skräppost eller svarar på ett SMS-meddelande med ett nyckelord som &quot;STOP&quot;, sätts deras adress eller telefonnummer i karantän som **[!UICONTROL Denylisted]**. Deras profil uppdateras därefter.
 
 <!--For the email channel, email addresses are quarantined. For the mobile app channel, device tokens are quarantined. For the SMS channel, phone numbers are quarantined.?-->
 
@@ -36,13 +36,13 @@ Adobe Campaign hanterar karantän beroende på typ av leveransfel och orsaken ti
 
 Två typer eller fel kan fångas:
 
-* **Hårt fel**: e-postadressen, telefonnumret eller enheten skickas omedelbart till karantänen.
-* **Mjukt fel**: mjuka fel ökar en felräknare och kan sätta i karantän för e-post, telefonnummer eller enhetstoken. Kampanjresultat [återförsök](delivery-failures.md#retries): När felräknaren når gränsvärdet sätts adressen, telefonnumret eller enhetstoken i karantän. [Läs mer](delivery-failures.md#retries).
+* **Hårt fel**: E-postadressen, telefonnumret eller enheten skickas omedelbart till karantänen.
+* **Mjukt fel**: mjuka fel ökar en felräknare och kan sätta ett e-postmeddelande, telefonnummer eller enhetstoken i karantän. Kampanjen utför [återförsök](delivery-failures.md#retries): När felräknaren når gränsvärdet sätts adressen, telefonnumret eller enhetstoken i karantän. [Läs mer](delivery-failures.md#retries).
 
-I listan över adresser i karantän visas **[!UICONTROL Error reason]** anger varför den valda adressen placerades i karantän. [Läs mer](#identifying-quarantined-addresses-for-the-entire-platform).
+I listan över adresser i karantän anger fältet **[!UICONTROL Error reason]** varför den valda adressen placerades i karantän. [Läs mer](#identifying-quarantined-addresses-for-the-entire-platform).
 
 
-Om en användare kvalificerar ett e-postmeddelande som skräppost omdirigeras meddelandet automatiskt till en teknisk postlåda som hanteras av Adobe. Användarens e-postadress skickas sedan automatiskt till karantänen med status **[!UICONTROL Denylisted]**.    Den här statusen avser endast adressen, profilen finns inte på blockeringslista, så att användaren fortsätter att ta emot SMS-meddelanden och push-meddelanden. Läs mer om feedbackslingor i [Guide till bästa leveransmetoder](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/transition-process/infrastructure.html#feedback-loops){target="_blank"}.
+Om en användare kvalificerar ett e-postmeddelande som skräppost omdirigeras meddelandet automatiskt till en teknisk postlåda som hanteras av Adobe. Användarens e-postadress skickas sedan automatiskt till karantänen med status **[!UICONTROL Denylisted]**.    Den här statusen avser endast adressen, profilen finns inte på blockeringslista, så att användaren fortsätter att ta emot SMS-meddelanden och push-meddelanden. Läs mer om feedbackslingor i [Handboken ](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/transition-process/infrastructure.html#feedback-loops){target="_blank"} om bästa leveransmetoder.
 
 >[!NOTE]
 >
@@ -56,14 +56,14 @@ Adresser i karantän kan visas för en viss leverans eller för hela plattformen
 
 Karantänadresser listas under leveransförberedelsefasen i leveransloggarna på kontrollpanelen för leverans.
 
-För varje leverans kan du även kontrollera **[!UICONTROL Delivery summary]** rapport: visar antalet adresser i karantän i leveransmålet och visar:
+För varje leverans kan du även kontrollera rapporten **[!UICONTROL Delivery summary]**: den visar antalet adresser i karantän i leveransmålet och visar:
 
 * Antalet adresser som placerats i karantän under leveransanalysen.
 * Antalet adresser som placerats i karantän efter leveransåtgärden.
 
 ### Ej levererbara och studsadresser{#non-deliverable-bounces}
 
-Visa listan över adresser i karantän **för hela plattformen** kan kampanjadministratörer gå till  **[!UICONTROL Administration > Campaign Management > Non deliverables Management > Non deliverables and addresses]**. I det här avsnittet visas element i karantän för **e-post**, **SMS** och **Push-meddelande** kanaler.
+Om du vill visa listan över adresser i karantän **för hela plattformen** kan kampanjadministratörer bläddra till **[!UICONTROL Administration > Campaign Management > Non deliverables Management > Non deliverables and addresses]**. I det här avsnittet visas element i karantän för kanalerna **email**, **SMS** och **Push notification**.
 
 ![](assets/tech-quarantine.png)
 
@@ -71,44 +71,44 @@ Visa listan över adresser i karantän **för hela plattformen** kan kampanjadmi
 >
 >Antalet karantän ökar med tiden. Om en e-postadress till exempel anses ha en livslängd på tre år och mottagartabellen ökar med 50 % varje år, kan ökningen av antalet karantän beräknas enligt följande:
 >
->Efter år 1: (1)&#42;0,33)/(1+0.5)=22 %.
+>Slut på år 1: (1&#42;0.33)/(1+0.5)=22 %.
 >
-Slutet av år 2: ((1.22)&#42;0,33)+0,33)/(1,5+0,75)=32,5 %.
+Slut på år 2: ((1.22&#42;0.33)+0.33)/(1.5+0.75)=32,5 %.
 
-Dessutom är **[!UICONTROL Non-deliverables and bounces]** inbyggd rapport, tillgänglig från **Rapporter** på den här startsidan, visar information om adresserna i karantän, typer av fel som uppstått och felinformation per domän. Du kan filtrera data för en viss leverans eller anpassa rapporten efter behov.
+Dessutom visar den inbyggda rapporten **[!UICONTROL Non-deliverables and bounces]**, som är tillgänglig från avsnittet **Reports** på den här startsidan, information om adresserna i karantän, de typer av fel som påträffats och en felfördelning per domän. Du kan filtrera data för en viss leverans eller anpassa rapporten efter behov.
 
-Läs mer om studsadresser i [Handbok om bästa praxis för leverans](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/metrics-for-deliverability/bounces.html){target="_blank"}.
+Läs mer om studsadresser i [Bästa praxis-handboken för slutprodukter](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/metrics-for-deliverability/bounces.html){target="_blank"}.
 
 ### E-postadress i karantän {#quarantined-recipient}
 
 Du kan slå upp status för e-postadressen för alla mottagare.
 
-Det gör du genom att markera mottagarprofilen och klicka på knappen **[!UICONTROL Deliveries]** -fliken. För alla leveranser till den mottagaren kan du ta reda på om adressen misslyckades, placerades i karantän under analysen osv.
+Det gör du genom att markera mottagarprofilen och klicka på fliken **[!UICONTROL Deliveries]**. För alla leveranser till den mottagaren kan du ta reda på om adressen misslyckades, placerades i karantän under analysen osv.
 
-För varje mapp kan du endast visa mottagare vars e-postadress är i karantän, med **[!UICONTROL Quarantined email address]** inbyggt filter enligt nedan:
+För varje mapp kan du bara visa mottagare vars e-postadress är i karantän, med det inbyggda **[!UICONTROL Quarantined email address]**-filtret, enligt nedan:
 
 ![](assets/quarantine-filter.png)
 
 
 ## Ta bort en adress i karantän {#remove-a-quarantined-address}
 
-Adresser som matchar specifika villkor tas automatiskt bort från karantänlistan av **Databasrensning** inbyggt arbetsflöde.
+Adresser som matchar specifika villkor tas automatiskt bort från karantänlistan av det inbyggda arbetsflödet **Databasrensning**.
 
 Adresserna tas automatiskt bort från karantänlistan i följande fall:
 
-* Adresser i en **[!UICONTROL With errors]** status kommer att tas bort från karantänlistan efter en slutförd leverans.
-* Adresser i en **[!UICONTROL With errors]** status tas bort från karantänlistan om den senaste mjuka studsen inträffade för mer än 10 dagar sedan. Mer information om mjuk felhantering finns i [det här avsnittet](#soft-error-management).
-* Adresser i en **[!UICONTROL With errors]** status som studsade med **[!UICONTROL Mailbox full]** felet tas bort från karantänlistan efter 30 dagar.
+* Adresser med statusen **[!UICONTROL With errors]** tas bort från karantänlistan efter en slutförd leverans.
+* Adresser med statusen **[!UICONTROL With errors]** tas bort från karantänlistan om den senaste mjuka studsen inträffade för mer än 10 dagar sedan. Mer information om mjuk felhantering finns i [det här avsnittet](#soft-error-management).
+* Adresser i en **[!UICONTROL With errors]**-status som studsade med felet **[!UICONTROL Mailbox full]** tas bort från karantänlistan efter 30 dagar.
 
-Status ändras sedan till **[!UICONTROL Valid]**.
+Deras status ändras sedan till **[!UICONTROL Valid]**.
 
 >[!CAUTION]
 >
-Mottagare med en adress i en **[!UICONTROL Quarantine]** eller **[!UICONTROL Denylisted]** status tas aldrig bort, även om de får ett e-postmeddelande.
+Mottagare med en adress i en **[!UICONTROL Quarantine]**- eller **[!UICONTROL Denylisted]**-status tas aldrig bort, även om de får ett e-postmeddelande.
 
 Du kan också ta bort en adress manuellt från karantänlistan. Om du vill ta bort en adress från karantänen kan du:
 
-* Ändra status till **[!UICONTROL Valid]** från **[!UICONTROL Administration > Campaign Management > Non deliverables Management > Non deliverables and addresses]** nod.
+* Ändra dess status till **[!UICONTROL Valid]** från noden **[!UICONTROL Administration > Campaign Management > Non deliverables Management > Non deliverables and addresses]**.
 
   ![](assets/tech-quarantine-status.png)
 
@@ -119,9 +119,9 @@ Om du vill göra det skapar du ett arbetsflöde och lägger till en fråga i kar
 Nedan följer de rekommenderade riktlinjerna för den här frågan:
 
 * **Feltext (karantäntext)** innehåller &quot;Momen_Code10_InvalidRecipient&quot;
-* **E-postdomän (@domän)** lika med domain1.com OR **E-postdomän (@domän)** lika med domain2.com OR **E-postdomän (@domän)** lika med domain3.com
-* **Uppdateringsstatus (@lastModified)** på eller efter `MM/DD/YYYY HH:MM:SS AM`
-* **Uppdateringsstatus (@lastModified)** på eller före `MM/DD/YYYY HH:MM:SS PM`
+* **E-postdomänen (@domain)** är lika med domain1.com ELLER **E-postdomänen (@domain)** är lika med domain2.com ELLER **E-postdomän (@domain)** är lika med domain3.com
+* **Uppdatera status (@lastModified)** på eller efter `MM/DD/YYYY HH:MM:SS AM`
+* **Uppdatera status (@lastModified)** på eller före `MM/DD/YYYY HH:MM:SS PM`
 
-När du har en lista över mottagare som påverkas lägger du till en **[!UICONTROL Update data]** aktivitet för att ange status till **[!UICONTROL Valid]** så att de tas bort från karantänlistan av **[!UICONTROL Database cleanup]** arbetsflöde, Du kan även ta bort dem från karantäntabellen.
+När du har en lista över berörda mottagare lägger du till en **[!UICONTROL Update data]**-aktivitet för att ange deras status till **[!UICONTROL Valid]** så att de tas bort från karantänlistan av arbetsflödet **[!UICONTROL Database cleanup]**. Du kan även ta bort dem från karantäntabellen.
 

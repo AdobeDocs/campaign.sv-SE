@@ -16,9 +16,9 @@ Du kan spåra leveransen via olika rapporter som du når via leveransöversikten
 
 Följ stegen nedan för att få åtkomst till rapporter:
 
-1. Bläddra till **[!UICONTROL Campaigns]** och klicka på **[!UICONTROL Delivery]** för att visa en lista över leveranser.
+1. Bläddra till fliken **[!UICONTROL Campaigns]** och klicka på länken **[!UICONTROL Delivery]** för att visa listan över leveranser.
 1. Klicka på namnet på den leverans som du vill få åtkomst till.
-1. Välj **[!UICONTROL Summary]** och klicka på **[!UICONTROL Reports]** för att få tillgång till rapporter som är specifika för leveransen.
+1. Välj fliken **[!UICONTROL Summary]** och klicka på länken **[!UICONTROL Reports]** för att komma åt rapporter som är specifika för leveransen.
 
    ![](assets/detailed-report-2.png)
 
@@ -44,13 +44,13 @@ I den här rapporten kombineras de viktigaste indikatorerna för att spåra mott
 
 >[!NOTE]
 >
->Värden som beräknas baserat på meddelandeöppning är alltid uppskattningar på grund av den felmarginal som är länkad till e-postmeddelanden i textformat. The **[!UICONTROL Distinct opens/Sum of opens for the population reached]** indikatorer tar hänsyn till denna felmarginal. [Läs mer](metrics-calculation.md#tracking-opens-).
+>Värden som beräknas baserat på meddelandeöppning är alltid uppskattningar på grund av den felmarginal som är länkad till e-postmeddelanden i textformat. Indikatorerna **[!UICONTROL Distinct opens/Sum of opens for the population reached]** tar hänsyn till den här felmarginalen. [Läs mer](metrics-calculation.md#tracking-opens-).
 
 ![](assets/tracking-report-synthesis.png)
 
 **[!UICONTROL 1. Delivery statistics]**
 
-* **[!UICONTROL Messages to deliver]** : Totalt antal meddelanden som ska levereras efter leveransanalys.
+* **[!UICONTROL Messages to deliver]**: Totalt antal meddelanden som ska levereras efter leveransanalys.
 * **[!UICONTROL Success]** : Antal meddelanden som har bearbetats.
 
 **[!UICONTROL 2. Reception statistics]**
@@ -62,12 +62,12 @@ I den här rapporten kombineras de viktigaste indikatorerna för att spåra mott
 * **[!UICONTROL Distinct opens for the population reached]** : Uppskattning av antalet målmottagare som har öppnat ett meddelande minst en gång. Klickningar på spårade URL:er beaktas eftersom e-postmeddelanden måste öppnas för att du ska kunna klicka på en länk.
 * **[!UICONTROL Sum of opens for the population reached]** : Uppskattning av det totala antalet öppningar av målmottagare.
 * **[!UICONTROL Clicks on opt-out link]** : Antal klick på länken för att avbryta prenumerationen.
-* **[!UICONTROL Clicks on the mirror page link]** : Antal klick på länken till [spegelsida](../send/mirror-page.md). För att länken ska kunna beaktas måste den definieras som sådan i leveransguiden (spårade URL:er).
+* **[!UICONTROL Clicks on the mirror page link]** : Antal klick på länken till [spegelsidan](../send/mirror-page.md). För att länken ska kunna beaktas måste den definieras som sådan i leveransguiden (spårade URL:er).
 * **[!UICONTROL Estimation of forwards]** : Uppskattning av antalet e-postmeddelanden som vidarebefordrats av målmottagarna. Det här värdet beräknas genom att subtrahera antalet distinkta personer och antalet distinkta mottagare som klickade i e-postmeddelandet.
 
-   >[!NOTE]
-   >
-   >Mer information om skillnaden mellan distinkta personer och målmottagare finns i [Målgrupper/mottagare](metrics-calculation.md#targeted-persons---recipients).
+  >[!NOTE]
+  >
+  >Mer information om skillnaden mellan distinkta personer och målmottagare finns i [Målpersoner/mottagare](metrics-calculation.md#targeted-persons---recipients).
 
 **[!UICONTROL 3. Open and click-through rate]**
 
@@ -75,15 +75,15 @@ Den här värdetabellen visar hur leveranser, öppningar, klickningar och rårea
 
 * **[!UICONTROL Sent]** : Totalt antal meddelanden som skickats på den här domänen.
 * **[!UICONTROL Complaints]** : Antal meddelanden för den här domänen som har rapporterats som oönskade av mottagaren. Frekvensen beräknas baserat på det totala antalet meddelanden som skickas på den här domänen.
-* **[!UICONTROL Opens]** : Antal distinkta målmottagare för den här domänen som har öppnat ett meddelande minst en gång. Frekvensen beräknas baserat på det totala antalet meddelanden som skickas på den här domänen.
-* **[!UICONTROL Clicks]** : Antal distinkta mottagare som klickat på samma leverans minst en gång. Frekvensen beräknas baserat på det totala antalet meddelanden som skickas på den här domänen
-* **[!UICONTROL Raw reactivity]** : Procentandel av antalet mottagare som klickade på en leverans minst en gång jämfört med antalet mottagare som öppnade en leverans minst en gång.
+* **[!UICONTROL Opens]** : Antal distinkta mottagare för den här domänen som har öppnat ett meddelande minst en gång. Frekvensen beräknas baserat på det totala antalet meddelanden som skickas på den här domänen.
+* **[!UICONTROL Clicks]** : Antal distinkta målmottagare som klickade i samma leverans minst en gång. Frekvensen beräknas baserat på det totala antalet meddelanden som skickas på den här domänen
+* **[!UICONTROL Raw reactivity]** : Procentandel av antalet mottagare som klickade i en leverans minst en gång jämfört med antalet mottagare som öppnade en leverans minst en gång.
 
 >[!NOTE]
 >
->Domännamnen som visas i den här rapporten definieras i den specificerade lista som används på kubnivå. Om du vill ändra, lägga till eller ta bort standarddomäner redigerar du **[!UICONTROL Domains]** specificera lista och ändra värden och alias. The **[!UICONTROL Others]** -kategorin innehåller domännamn som inte tillhör något värde i den specificerade listan.
+>Domännamnen som visas i den här rapporten definieras i den specificerade lista som används på kubnivå. Om du vill ändra, lägga till eller ta bort standarddomäner redigerar du den specificerade listan **[!UICONTROL Domains]** och ändrar värden och alias. Kategorin **[!UICONTROL Others]** innehåller domännamn som inte tillhör något värde i den specificerade listan.
 >
->Lär dig hur du får åtkomst till och konfigurerar dina uppräkningar i [den här sidan](../config/ui-settings.md).
+>Lär dig hur du får åtkomst till och konfigurerar dina uppräkningar på [den här sidan](../config/ui-settings.md).
 
 
 **[!UICONTROL 4. Generated click streams]**
@@ -93,9 +93,9 @@ Den här värdetabellen visar hur leveranser, öppningar, klickningar och rårea
 >De relaterade procentsatserna beräknas baserat på antalet meddelanden som har vidarebefordrats.
 
 * **[!UICONTROL Distinct clicks for the population reached]** : Antal distinkta personer som klickat på en leverans minst en gång.
-* **[!UICONTROL Cumulated clicks]** : Totalt antal klick per målmottagare, exklusive prenumerationslänkar och spegelsidor.
-* **[!UICONTROL Recipient clicks]** : Antal distinkta mottagare som klickat på samma leverans minst en gång.
-* **[!UICONTROL Estimated recipient reactivity]** : Förhållandet mellan antalet mottagare som har klickat minst en gång i en leverans och det uppskattade antalet mottagare som har öppnat en leverans minst en gång. Klickningar på avanmälnings- och spegelsidlänkar beaktas inte.
+* **[!UICONTROL Cumulated clicks]** : Totalt antal klickningar av målmottagare, exklusive prenumerationslänkar och spegelsidor.
+* **[!UICONTROL Recipient clicks]** : Antal distinkta målmottagare som klickade i samma leverans minst en gång.
+* **[!UICONTROL Estimated recipient reactivity]** : Förhållande mellan antalet mottagare som har klickat minst en gång i en leverans och det beräknade antalet mottagare som har öppnat en leverans minst en gång. Klickningar på avanmälnings- och spegelsideslänkarna beaktas inte.
 <!--
 **[!UICONTROL 5. Web tracking]**
 
@@ -156,8 +156,8 @@ Den här rapporten innehåller all huvudinformation om leveransen.
 
 Det här avsnittet har två indikatorer:
 
-* **[!UICONTROL Initial population]** : Totalt antal mottagare som leveransmålet gäller.
-* **[!UICONTROL Messages rejected by the rule]** : Antal adresser som ignoreras under analysen när typologiregler tillämpas: adress saknas, sätts i karantän, på blockeringslista osv. <!--For more information on typology rules, refer to this [page](../../delivery/using/steps-validating-the-delivery.md#validation-process-with-typologies).-->
+* **[!UICONTROL Initial population]** : Totalt antal mottagare som har angetts som mål för leveransen.
+* **[!UICONTROL Messages rejected by the rule]** : Antal adresser som ignoreras under analysen när typologiregler tillämpas: adress som saknas, är i karantän, på blockeringslista osv. <!--For more information on typology rules, refer to this [page](../../delivery/using/steps-validating-the-delivery.md#validation-process-with-typologies).-->
 
 **[!UICONTROL Causes of exclusion]**
 
@@ -167,10 +167,10 @@ I mittdiagrammet visas uppdelningen per regel för meddelanden som avvisats unde
 
 Detta avsnitt innehåller följande indikatorer:
 
-* **[!UICONTROL Messages to be delivered]** : Totalt antal meddelanden som ska levereras efter leveransanalys.
+* **[!UICONTROL Messages to be delivered]**: Totalt antal meddelanden som ska levereras efter leveransanalys.
 * **[!UICONTROL Success]** : Antal meddelanden som har bearbetats. Den associerade frekvensen är förhållandet till antalet meddelanden som ska levereras.
-* **[!UICONTROL Errors]** : Totalt antal fel som ackumulerats under leveranser och automatisk återinläsning. Den associerade frekvensen är förhållandet till antalet meddelanden som ska levereras.
-* **[!UICONTROL New quarantines]** : Antal adresser i karantän efter misslyckad leverans (okänd användare, ogiltig domän). Den associerade frekvensen är förhållandet till antalet meddelanden som ska levereras.
+* **[!UICONTROL Errors]** : Totalt antal fel som har ackumulerats under leveranser och automatisk återinläsning. Den associerade frekvensen är förhållandet till antalet meddelanden som ska levereras.
+* **[!UICONTROL New quarantines]** : Antal adresser i karantän efter en misslyckad leverans (okänd användare, ogiltig domän). Den associerade frekvensen är förhållandet till antalet meddelanden som ska levereras.
 
 ## Snabbklick {#hot-clicks}
 
@@ -183,9 +183,9 @@ Den här rapporten visar meddelandeinnehållet (HTML och/eller text) med procent
 
 ## Spårningsstatistik {#tracking-statistics}
 
-Den här rapporten innehåller statistik om öppningar, klick och transaktioner.
+Rapporten innehåller statistik om öppningar, klick och transaktioner.
 
-Med den kan ni spåra effekten av leveransen på marknaden. Du kan konfigurera hur värden visas genom att ändra tidsskalan (1 timme, 3 timmar eller 24 timmar). Klicka **[!UICONTROL Refresh]** för att bekräfta valet.  
+Med den kan ni spåra effekten av leveransen på marknaden. Du kan konfigurera hur värden visas genom att ändra tidsskalan (1 timme, 3 timmar eller 24 timmar). Klicka på **[!UICONTROL Refresh]** för att bekräfta ditt val.
 
 Den här rapporten innehåller en värdetabell och ett Pareto-diagram som visar hur lång tid det tar att leverera för att uppnå maximal effektivitet. Följande indikatorer används:
 
@@ -198,8 +198,8 @@ Den här rapporten innehåller en värdetabell och ett Pareto-diagram som visar 
 
 ## Kumulativa rapporter {#cumulated-reports}
 
-Du kan visa kumulerade rapporter om leveranser. Välj de leveranser som ska jämföras för att få en lista över rapporter för dessa leveranser.
+Du kan visa kumulerade rapporter om leveranser. För att göra detta väljer du de leveranser som ska jämföras för att få en lista över rapporter för dessa leveranser.
 
 Om du vill välja icke-närliggande leveranser från listan håller du ned CTRL medan du gör ditt val.
 
-Om du vill välja leveranser som har sparats i en annan mapp klickar du på **[!UICONTROL Display sub-levels]** -ikonen i verktygsfältet. De visas sedan i samma lista.
+Om du vill välja leveranser som sparats i en annan mapp klickar du på ikonen **[!UICONTROL Display sub-levels]** som du kommer åt i verktygsfältet. De visas sedan i samma lista.

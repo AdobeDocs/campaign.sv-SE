@@ -14,9 +14,9 @@ ht-degree: 0%
 
 # Arbeta med målmappningar{#gs-target-mappings}
 
-Som standard har mallar för e-post och SMS-leverans som mål **[!UICONTROL Recipients]**. Målmappningen använder därför fälten i **nms:mottagare** tabell.
+Som standard är e-post- och SMS-leveransmallar avsedda för **[!UICONTROL Recipients]**. Målmappningen använder därför fälten i tabellen **nms:receive**.
 
-Standardmålmappningen för push-meddelanden är **Prenumerationsprogram (nms:appSubscriptionRcp)**, som är länkad till mottagartabellen.
+För push-meddelanden är standardmålmappningen **Subscriber applications (nms:appSubscriptionRcp)**, som är länkad till mottagartabellen.
 
 Du kan använda andra målmappningar för leveranser eller skapa en ny målmappning.
 
@@ -42,7 +42,7 @@ Du kan också skapa en målmappning. Du kan behöva lägga till en anpassad mål
 * du använder en anpassad mottagartabell,
 * Du konfigurerar en filtreringsdimension som skiljer sig från den inbyggda måldimensionen på målmappningsskärmen.
 
-Läs mer om anpassade mottagartabeller i [den här sidan](../dev/custom-recipient.md).
+Läs mer om anpassade mottagartabeller på [den här sidan](../dev/custom-recipient.md).
 
 Guiden Skapa målmappning för Adobe Campaign hjälper dig att skapa alla scheman som behövs för att du ska kunna använda din anpassade målmappning.
 
@@ -63,10 +63,10 @@ Guiden Skapa målmappning för Adobe Campaign hjälper dig att skapa alla schema
 
    Du kan välja om du vill lagra undantag (**excludelog**), med meddelanden (**broadlog**) eller i en separat tabell.
 
-   Du kan också välja om du vill hantera spårning för den här leveransmappningen (**trackinglog**).
+   Du kan också välja om du vill hantera spårning för den här leveransmappningen (**spårningslogg**).
 
 1. Välj sedan de tillägg som ska beaktas. Tilläggstypen beror på dina Campaign-inställningar och tillägg.
 
    ![](assets/wf_new_mapping_define_extensions.png)
 
-   Klicka på **[!UICONTROL Save]** för att starta framtagning av leveransmappning: alla länkade tabeller skapas automatiskt baserat på de valda parametrarna.
+   Klicka på knappen **[!UICONTROL Save]** för att starta skapandet av leveransmappningen: alla länkade tabeller skapas automatiskt baserat på de valda parametrarna.

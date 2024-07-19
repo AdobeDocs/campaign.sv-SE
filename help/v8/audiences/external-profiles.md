@@ -14,4 +14,4 @@ ht-degree: 0%
 
 ---
 
-# Använd externa profiler
+# Använda externa profiler

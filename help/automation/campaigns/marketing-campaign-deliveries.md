@@ -22,27 +22,27 @@ Leveranser kan skapas via kampanjkontrollpanelen, ett kampanjarbetsflöde eller 
 
 Det finns två sätt att lägga till leveranser till era marknadsföringskampanjer:
 
-* Från **[!UICONTROL Add a delivery]** -länk på kampanjkontrollpanelen.
+* Från länken **[!UICONTROL Add a delivery]** i kampanjinstrumentpanelen.
 
 ![](assets/campaign_op_add_delivery.png)
 
 När leveransen har sparats läggs den till på kampanjkontrollpanelen.
 
-* Från ett kampanjarbetsflöde, i **[!UICONTROL Targeting and workflows]** genom att lägga till leveransen.
+* Från ett kampanjarbetsflöde på fliken **[!UICONTROL Targeting and workflows]** genom att lägga till leveransen.
 
   ![](assets/campaign-wf-delivery.png)
 
   När arbetsflödet har startats läggs leveransen till på kontrollpanelen för kampanjer.
 
-Lär dig hur du ställer in och kör flödet för leveransgodkännande [på den här sidan](marketing-campaign-approval.md).
+Lär dig hur du konfigurerar och kör leveransgodkännandeflödet [på den här sidan](marketing-campaign-approval.md).
 
 ## Starta en leverans {#start-a-delivery}
 
 En leverans kan skickas när alla godkännanden har beviljats. Körningsprocessen beror på kanalen.
 
-* För e-post- och mobilkanalsleveranser, se [det här avsnittet](#start-an-online-delivery)
+* Information om leveranser via e-post eller mobilkanal finns i [det här avsnittet](#start-an-online-delivery)
 
-* För direktreklam finns [det här avsnittet](#start-an-offline-delivery)
+* För direktreklam, se [det här avsnittet](#start-an-offline-delivery)
 
 ### Påbörja e-post- eller mobilleverans {#start-an-online-delivery}
 
@@ -50,7 +50,7 @@ När alla godkännandebegäranden har beviljats ändras leveransstatusen till **
 
 ![](assets/confirm-delivery.png)
 
-Informationen visas också på kampanjkontrollpanelen. The **[!UICONTROL Confirm delivery]** kan du påbörja leveransen.
+Informationen visas också på kampanjkontrollpanelen. Med länken **[!UICONTROL Confirm delivery]** kan du påbörja leveransen.
 
 ![](assets/confirm-delivery-from-dashboard.png)
 
@@ -58,12 +58,12 @@ Bekräftelsen av leveransen är begränsad till administratörer och till den op
 
 ![](assets/select-delivery-reviewers.png)
 
-Du kan även tillåta kampanjägaren att bekräfta sändningen, även om specifika granskare har definierats i leverans- eller kampanjegenskaperna. Om du vill göra det som administratör skapar du **NmsCampaign_Activate_OwnerConfirmation** och ange **1**. Alternativen hanteras från **[!UICONTROL Administration]** > **[!UICONTROL Platform]** > **[!UICONTROL Options]** mapp för Campaign Explorer.
+Du kan även tillåta kampanjägaren att bekräfta sändningen, även om specifika granskare har definierats i leverans- eller kampanjegenskaperna. Om du vill göra det som administratör skapar du alternativet **NmsCampaign_Activate_OwnerConfirmation** och anger det som **1**. Alternativen hanteras från mappen **[!UICONTROL Administration]** > **[!UICONTROL Platform]** > **[!UICONTROL Options]** i Campaign Explorer.
 
 
 ### Starta direktleverans av e-post {#start-an-offline-delivery}
 
-När alla godkännanden har beviljats ändras leveransstatusen till **[!UICONTROL Pending extraction]**. Extraheringsfilerna skapas via en dedikerad [tekniskt arbetsflöde](../workflow/technical-workflows.md) som, i en standardkonfiguration, startar automatiskt när en direktleverans väntar på extrahering. När en process pågår visas den på kontrollpanelen och kan redigeras via länken.
+När alla godkännanden har beviljats ändras leveransstatusen till **[!UICONTROL Pending extraction]**. Extraheringsfilerna skapas med ett dedikerat [tekniskt arbetsflöde](../workflow/technical-workflows.md) som i en standardkonfiguration startar automatiskt när en direktmeddelandeleverans väntar på extrahering. När en process pågår visas den på kontrollpanelen och kan redigeras via länken.
 
 När extraheringsarbetsflödet har körts måste extraheringsfilen godkännas (förutsatt att godkännande av extraheringsfilen har valts i leveransinställningarna). [Läs mer](marketing-campaign-approval.md#approving-an-extraction-file).
 
@@ -71,19 +71,19 @@ Följ stegen nedan för att validera innehåll och skicka filen till leverantör
 
 1. När extraheringsfilen har godkänts kan du generera ett korrektur av routerns e-postmeddelande. Det här e-postmeddelandet är konstruerat baserat på en leveransmall. Det måste godkännas.
 
-   Det här steget är bara tillgängligt om **[!UICONTROL Enable the sending and validation of proofs (Direct mail)]** option was enabled in **[!UICONTROL Approvals]** -fliken för de avancerade kampanjparametrarna.
+   Det här steget är bara tillgängligt om alternativet **[!UICONTROL Enable the sending and validation of proofs (Direct mail)]** aktiverades på fliken **[!UICONTROL Approvals]** för de avancerade kampanjparametrarna.
 
    ![](assets/enable-proof-validation.png)
 
-1. Klicka på **[!UICONTROL Send a proof]** för att skapa korrektur.
+1. Klicka på knappen **[!UICONTROL Send a proof]** för att skapa korrektur.
 
    Korrekturmålet måste definieras i förväg.
 
-   Du kan skapa så många korrektur som behövs. De här är tillgängliga via **[!UICONTROL Direct mail...]** leveransinformationens länk.
+   Du kan skapa så många korrektur som behövs. Dessa nås via länken **[!UICONTROL Direct mail...]** i leveransinformationen.
 
-1. Leveransstatusen ändras till **[!UICONTROL To submit]**. Klicka på **[!UICONTROL Submit proofs]** för att starta godkännandeprocessen.
+1. Leveransstatusen ändras till **[!UICONTROL To submit]**. Klicka på knappen **[!UICONTROL Submit proofs]** för att starta godkännandeprocessen.
 
-1. Leveransstatusen ändras till **[!UICONTROL Proof to validate]** och en knapp kan du godkänna eller avvisa.
+1. Leveransstatusen ändras till **[!UICONTROL Proof to validate]** och med en knapp kan du acceptera eller avvisa godkännande.
 
    Du kan antingen godkänna eller avvisa det här godkännandet eller återgå till extraheringssteget.
 
@@ -93,17 +93,17 @@ Följ stegen nedan för att validera innehåll och skicka filen till leverantör
 
 Filextraheringen startar två processer: budgetberäkning och lagerberäkning. Budgetposterna uppdateras.
 
-* The **[!UICONTROL Budget]** kan du hantera budgeten för kampanjen. Summan av kostnadsposterna visas i **[!UICONTROL Calculated cost]** fält på kampanjens huvudflik och det program den tillhör. Beloppen återspeglas också i kampanjbudgeten.
+* På fliken **[!UICONTROL Budget]** kan du hantera budgeten för kampanjen. Summan av kostnadsposterna visas i fältet **[!UICONTROL Calculated cost]** på kampanjens huvudflik och det program som den tillhör. Beloppen återspeglas också i kampanjbudgeten.
 
   ![](assets/campaign-budget-tab.png)
 
   Den verkliga kostnaden kommer till slut att beräknas utifrån information som tillhandahålls av routern. Endast meddelanden som skickas faktureras.
 
-* Lager definieras i **[!UICONTROL Administration > Campaign management > Stocks]** trädnod.
+* Stock definieras i noden **[!UICONTROL Administration > Campaign management > Stocks]** i trädet.
 
   ![](assets/campaign-stocks.png)
 
-  Kostnadsstrukturer i **[!UICONTROL Administration > Campaign management > Service providers]** nod.
+  Kostnadsstrukturer i noden **[!UICONTROL Administration > Campaign management > Service providers]**.
 
   ![](assets/campaign-service-providers.png)
 
@@ -112,4 +112,4 @@ Filextraheringen startar två processer: budgetberäkning och lagerberäkning. B
 
   >[!NOTE]
   >
-  >Läs mer om budgetar [i det här avsnittet](providers-stocks-and-budgets.md).
+  >Läs mer om budgeten [i det här avsnittet](providers-stocks-and-budgets.md).

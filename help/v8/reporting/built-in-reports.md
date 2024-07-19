@@ -23,16 +23,16 @@ Följande typer av rapporter är tillgängliga:
 
 Du kommer åt inbyggda rapporter från Campaigns hemsida, den dedikerade rapportkontrollpanelen eller leveranslistan. Hur rapporten visas i användargränssnittet beror på sammanhanget.
 
-En lista med viktiga rapporter finns på startsidan, så att du snabbt kan komma åt leveransdata. Listan kan ändras efter dina behov. Du kan även lära dig hur du lägger till egna rapporter i **[!UICONTROL Reports]** -fliken.
+En lista med viktiga rapporter finns på startsidan, så att du snabbt kan komma åt leveransdata. Listan kan ändras efter dina behov. Du kan även lära dig hur du lägger till egna rapporter på fliken **[!UICONTROL Reports]**.
 
-Mer information om dessa anpassade konfigurationer finns i [Campaign Classic v7 - dokumentation](https://experienceleague.adobe.com/docs/campaign-classic/using/reporting/creating-new-reports/configuring-access-to-the-report.html){target="_blank"}.
+Mer information om dessa anpassade konfigurationer finns i [Campaign Classic v7-dokumentationen](https://experienceleague.adobe.com/docs/campaign-classic/using/reporting/creating-new-reports/configuring-access-to-the-report.html){target="_blank"}.
 
 
 ## Åtkomst till inbyggda rapporter {#access-ootb-reports}
 
 Få tillgång till inbyggda rapporter för Campaign:
 
-1. Välj **[!UICONTROL Reports]** i Adobe Campaign gränssnitt.
+1. Välj fliken **[!UICONTROL Reports]** i Adobe Campaign-gränssnittet.
 
    ![](assets/reporting-access-from-home.png)
 
@@ -42,7 +42,7 @@ Få tillgång till inbyggda rapporter för Campaign:
 
    ![](assets/edit-a-report.png)
 
-1. Klicka på **[!UICONTROL Back]** länken längst upp på skärmen tar dig tillbaka till rapportlistan.
+1. Klicka på länken **[!UICONTROL Back]** högst upp på skärmen så visas rapportlistan igen.
 
    ![](assets/back-button.png)
 
@@ -71,94 +71,94 @@ Mer information om innehållet i dessa rapporter finns i [det här avsnittet](de
   <tr> 
    <td> Användaraktiviteter (receiveActivity)<br /> </td> 
    <td> Uppdelning av öppningar, klick och transaktioner efter tidsperiod.<br /> </td> 
-   <td> nms:leverans<br /> </td> 
+   <td> nms:delivery<br /> </td> 
   </tr> 
   <tr> 
-   <td> Leveransflöde (dataflöde)<br /> </td> 
-   <td> Leverera dataflödesdiagram i meddelanden/timme och Mbit/s.<br /> </td> 
-   <td> nms:leverans<br /> </td> 
+   <td> Leveransdataflöde (dataflöde)<br /> </td> 
+   <td> Leveransdataflödesdiagram, i meddelanden/timme och Mbit/s.<br /> </td> 
+   <td> nms:delivery<br /> </td> 
   </tr> 
   <tr> 
    <td> Fel och studsar (fel)<br /> </td> 
-   <td> studsar och icke-levererbara produkter utifrån orsak och domän.<br /> </td> 
-   <td> nms:leverans<br /> </td> 
+   <td> Begränsningar och icke-levererbara produkter utifrån orsak och domän.<br /> </td> 
+   <td> nms:delivery<br /> </td> 
   </tr> 
   <tr> 
    <td> Spårningsindikatorer (deliveryFeedback)<br /> </td> 
-   <td> Sammanfattning av nyckelindikatorer för att spåra mottagarnas beteende.<br /> </td> 
-   <td> nms:leverans<br /> </td> 
+   <td> Sammanfattning av nyckelindikatorer för spårning av mottagarbeteende.<br /> </td> 
+   <td> nms:delivery<br /> </td> 
   </tr> 
   <tr> 
    <td> Spårningsindikatorer (mobileAppDeliveryFeedback)<br /> </td> 
-   <td> Spåra indikatorer för leverans till en mobilapplikation.<br /> </td> 
-   <td> nms:leverans<br /> </td> 
+   <td> Spåra indikatorer för en leverans till ett mobilprogram.<br /> </td> 
+   <td> nms:delivery<br /> </td> 
   </tr> 
   <tr> 
    <td> Webbläsare (browserStatistics)<br /> </td> 
-   <td> Statistik över webbläsare som används av mottagare som klickat i meddelanden.<br /> </td> 
+   <td> Statistik för webbläsare som används av mottagare som klickat i meddelanden.<br /> </td> 
    <td> xtk:none<br /> </td> 
   </tr> 
   <tr> 
    <td> Delning till sociala nätverk (deliveryForward)<br /> </td> 
-   <td> Delningsaktivitet och statistik för e-postöppning.<br /> </td> 
-   <td> nms:leverans<br /> </td> 
+   <td> Delningsaktivitet och statistik för att öppna e-post.<br /> </td> 
+   <td> nms:delivery<br /> </td> 
   </tr> 
   <tr> 
    <td> Snabbklickningar (hoturls)<br /> </td> 
-   <td> Visar meddelandet och klickfrekvensen som ligger ovanpå.<br /> </td> 
-   <td> nms:leverans<br /> </td> 
+   <td> Visar meddelandet och klickfrekvenserna som ligger ovanpå.<br /> </td> 
+   <td> nms:delivery<br /> </td> 
   </tr> 
   <tr> 
    <td> Hypotesrapport (deliveryHypothesis)<br /> </td> 
-   <td> Visar en sammanfattning av mått för leveranssätt.<br /> </td> 
-   <td> nms:leverans<br /> </td> 
+   <td> Visar en sammanfattning av mått för leveranshypoteser.<br /> </td> 
+   <td> nms:delivery<br /> </td> 
   </tr> 
   <tr> 
-   <td> Leveransstatistik (statistikPerDelivery)<br /> </td> 
+   <td> Leveransstatistik (StatisticsPerDelivery)<br /> </td> 
    <td> Statistik (bearbetade meddelanden, levererade meddelanden, hårda studsar, mjuka studsar, klick, avbeställningar) per e-postdomän.<br /> </td> 
-   <td> nms:leverans<br /> </td> 
+   <td> nms:delivery<br /> </td> 
   </tr> 
   <tr> 
-   <td> Delningsaktivitetsstatistik (forwardActivities)<br /> </td> 
+   <td> Dela aktivitetsstatistik (forwardActivities)<br /> </td> 
    <td> Analys av delningsaktiviteter, öppningar och prenumerationer per tidsperiod.<br /> </td> 
-   <td> nms:leverans<br /> </td> 
+   <td> nms:delivery<br /> </td> 
   </tr> 
   <tr> 
    <td> Spårningsstatistik (trackingStatistics)<br /> </td> 
    <td> Öppna, klicka och rapportera transaktionsräntor.<br /> </td> 
-   <td> nms:leverans<br /> </td> 
+   <td> nms:delivery<br /> </td> 
   </tr> 
   <tr> 
-   <td> Leveranssammanfattning (leveransSending)<br /> </td> 
-   <td> Sammanfattning av leveransindikatorer: mål, uteslutning och skickade meddelanden.<br /> </td> 
-   <td> nms:leverans<br /> </td> 
+   <td> Leveranssammanfattning (deliverySending)<br /> </td> 
+   <td> Sammanfattning av leveransindikatorer: mål, undantag och skickade meddelanden.<br /> </td> 
+   <td> nms:delivery<br /> </td> 
   </tr> 
   <tr> 
    <td> Leveranssammanfattning (deliveryStatistics)<br /> </td> 
    <td> Sammanfattningstabell för valda leveranser: Mål, undantag och skickade meddelanden.<br /> </td> 
-   <td> nms:leverans<br /> </td> 
+   <td> nms:delivery<br /> </td> 
   </tr> 
   <tr> 
    <td> Operativsystem (osStatistics)<br /> </td> 
-   <td> Statistik över operativsystem som används av mottagare som klickat i ett meddelande.<br /> </td> 
+   <td> Statistik för operativsystem som används av mottagare som klickade i ett meddelande.<br /> </td> 
    <td> xtk:none<br /> </td> 
   </tr> 
   <tr> 
    <td> Reaktivitetsfrekvens (deliveryFeedbackSocial)<br /> </td> 
    <td> Leveransreaktivitet och reaktionsnedbrytning.<br /> </td> 
-   <td> nms:leverans<br /> </td> 
+   <td> nms:delivery<br /> </td> 
   </tr> 
   <tr> 
    <td> URL:er och klickdataflöde (topUrlDelivery)<br /> </td> 
-   <td> De flesta reaktiva URL:er och associerade klickströmmar.<br /> </td> 
-   <td> nms:leverans<br /> </td> 
+   <td> De flesta reaktiva URL:erna och associerade klickströmmar.<br /> </td> 
+   <td> nms:delivery<br /> </td> 
   </tr> 
  </tbody> 
 </table>
 
 ## Rapporter om kampanjer {#reports-on-campaigns}
 
-Rapporter om kampanjer rör data i **nms:operation** tabell.
+Rapporter om kampanjer rör data i tabellen **nms:operation**.
 
 <table> 
  <tbody> 
@@ -171,40 +171,40 @@ Rapporter om kampanjer rör data i **nms:operation** tabell.
    <td> Uppdelningen av öppningar, klick och transaktioner efter tidsperiod beror på Campaign.<br /> </td> 
   </tr> 
   <tr> 
-   <td> Leveransdataflöde (operationThrottput)<br /> </td> 
-   <td> Diagram över leveransflöde, i e-post/timme och Mbit/s, beror på Campaign.<br /> </td> 
+   <td> Leveransdataflöde (operationThoutput)<br /> </td> 
+   <td> Leveransdataflödesdiagram, i e-post/timme och Mbit/s, är beroende av Campaign.<br /> </td> 
   </tr> 
   <tr> 
    <td> Kampanjutgifter (budgetOperationExpenses)<br /> </td> 
-   <td> Visar kampanjradsobjekten i detalj, beroende på Campaign.<br /> </td> 
+   <td> Visar kampanjradobjekten i detalj, beroende på kampanj.<br /> </td> 
   </tr> 
   <tr> 
    <td> Fel och studsar (operationErrors)<br /> </td> 
-   <td> Satser och icke-levererbara produkter utifrån orsak och domän är beroende av Campaign.<br /> </td> 
+   <td> Begränsningar och icke-levererbara produkter beroende på orsak och domän, är beroende av Campaign.<br /> </td> 
   </tr> 
   <tr> 
    <td> Utforska kostnadsrader (budgetExplorerOperation)<br /> </td> 
-   <td> Beskrivande analys av kostnadsrader är beroende av MRM.<br /> </td> 
+   <td> Beskrivande analys av kostnadsrader, beror på MRM.<br /> </td> 
   </tr> 
   <tr> 
    <td> Spårningsindikatorer (operationFeedback)<br /> </td> 
-   <td> Översikt över nyckelspårningsindikatorer: Öppningar, klick och transaktioner beror på Campaign.<br /> </td> 
+   <td> Översikt över nyckelspårningsindikatorer: Öppningar, klick och transaktioner, beror på Campaign.<br /> </td> 
   </tr> 
   <tr> 
    <td> Delning till sociala nätverk (operationForward)<br /> </td> 
-   <td> Delningsaktivitet och statistik för e-postöppning beror på Campaign.<br /> </td> 
+   <td> Delningsaktivitet och statistik för att öppna e-post är beroende av Campaign.<br /> </td> 
   </tr> 
   <tr> 
    <td> Hypotesrapport (operationHypothesis)<br /> </td> 
-   <td> Visar sammanfattningen av hypotesmått för kampanjleveranser, beroende på Campaign.<br /> </td> 
+   <td> Visar sammanfattningen av hypotesmått för kampanjleveranser, beroende på kampanj.<br /> </td> 
   </tr> 
   <tr> 
    <td> Delningsaktivitetsstatistik (forwardActivityOpt)<br /> </td> 
-   <td> Analys av delningsaktiviteter, öppningar och prenumerationer per tidsperiod beror på Campaign.<br /> </td> 
+   <td> Analys av delningsaktiviteter, öppningar och prenumerationer per tidsperiod, beror på Campaign.<br /> </td> 
   </tr> 
   <tr> 
    <td> Leveranssammanfattning (operationStatistics)<br /> </td> 
-   <td> Översiktstabell över kampanjleveranser: Mål, undantag och skickade meddelanden.<br /> </td> 
+   <td> Översiktsdiagram över kampanjleveranser: Mål, undantag och skickade meddelanden.<br /> </td> 
   </tr> 
   <tr> 
    <td> URL:er och klickdataflöde (operationTopUrlDelivery)<br /> </td> 
@@ -215,7 +215,7 @@ Rapporter om kampanjer rör data i **nms:operation** tabell.
 
 ## Rapporter om tjänster {#reports-on-services}
 
-Rapporterna om tjänster rör uppgifterna i **nms:service** tabell.
+Rapporter om tjänster rör data i tabellen **nms:service**.
 
 <table> 
  <tbody> 
@@ -225,23 +225,23 @@ Rapporterna om tjänster rör uppgifterna i **nms:service** tabell.
   </tr> 
   <tr> 
    <td> Fläktförvärv (socialAcquisitionsByWebapp)<br /> </td> 
-   <td> Vilka webbprogram aktiverade köp av potentiella kunder? Tillägget för social marknadsföring används.<br /> </td> 
+   <td> Vilka webbprogram aktiverade köp av potentiella kunder? Beroende på tillägg för social marknadsföring.<br /> </td> 
   </tr> 
   <tr> 
    <td> Uppdelning av prenumerationer (mobileAppDistribution)<br /> </td> 
-   <td> Uppdelningen av aktiva prenumerationer per mobilprogram beror på tillägget Mobilappskanal.<br /> </td> 
+   <td> Uppdelning av aktiva prenumerationer per mobilprogram, beroende på kanaltillägg för mobilappen.<br /> </td> 
   </tr> 
   <tr> 
    <td> Prenumerationsspårning (subscriptionsProgress)<br /> </td> 
-   <td> Utveckling av prenumerationer på informationstjänster<br /> </td> 
+   <td> Prenumerationernas utveckling för informationstjänster <br /> </td> 
   </tr> 
   <tr> 
    <td> Reaktivitetsfrekvens (socialReactionRate)<br /> </td> 
-   <td> Vilka är reaktivitetsfrekvenserna för de senaste leveranserna? Tillägget för social marknadsföring används.<br /> </td> 
+   <td> Vilka är reaktivitetsfrekvenserna för de senaste leveranserna? Beroende på tillägg för social marknadsföring.<br /> </td> 
   </tr> 
   <tr> 
    <td> Reaktivitetsfrekvens (mobileAppReactivityRate)<br /> </td> 
-   <td> Reaktivitetsfrekvensen för de senaste leveranserna beror på mobilappens kanaltillägg.<br /> </td> 
+   <td> Reaktivitetsfrekvensen för de senaste leveranserna är beroende av kanaltillägg för mobilappen.<br /> </td> 
   </tr> 
  </tbody> 
 </table>
@@ -269,16 +269,16 @@ De inbyggda rapporterna från Adobe Campaign finns i tabellen nedan.
   </tr> 
   <tr> 
    <td> Kumulativ utveckling av budgeten (budgetCumulativeEvolution)<br /> </td> 
-   <td> Utveckling av de kumulerade budgetkostnaderna uppdelade efter kommatecken<br /> lagnivå. </td> 
+   <td> Utveckling av de kumulerade budgetkostnaderna uppdelat efter implementeringsnivå för <br />. </td> 
    <td> nms:budget<br /> </td> 
   </tr> 
   <tr> 
-   <td> Utforska kostnadsrader (budgetUtforskarenBudget)<br /> </td> 
+   <td> Utforska kostnadsrader (budgetExplorerBudget)<br /> </td> 
    <td> Beskrivande analys av kostnadsrader.<br /> </td> 
    <td> nms:budget<br /> </td> 
   </tr> 
   <tr> 
-   <td> Utforska kostnadsrader (BudgetExplorer)<br /> </td> 
+   <td> Utforska kostnadsrader (budgetExplorer)<br /> </td> 
    <td> Beskrivande analys av kostnadsrader.<br /> </td> 
    <td> nms:costLine<br /> </td> 
   </tr> 
@@ -294,7 +294,7 @@ De inbyggda rapporterna från Adobe Campaign finns i tabellen nedan.
   </tr> 
   <tr> 
    <td> Sammanfattning av budget(er) (budget)<br /> </td> 
-   <td> Översikt över de viktigaste kostnaderna, utgiftskategorierna och budgetarna.<br /> </td> 
+   <td> Ögonblicksbild av huvudkostnader, utgiftskategorier och budgetar.<br /> </td> 
    <td> nms:budget<br /> </td> 
   </tr> 
  </tbody> 
@@ -302,7 +302,7 @@ De inbyggda rapporterna från Adobe Campaign finns i tabellen nedan.
 
 ## Rapporter om simuleringar {#reports-on-simulations}
 
-Rapporter om simuleringar rör uppgifterna i **nms:simulering** tabell.
+Rapporter om simuleringar rör data i tabellen **nms:simulation**.
 
 <table> 
  <tbody> 
@@ -311,7 +311,7 @@ Rapporter om simuleringar rör uppgifterna i **nms:simulering** tabell.
    <td> <strong>Beskrivning</strong><br /> </td> 
   </tr> 
   <tr> 
-   <td> Detalj för simuleringsundantag (dlvSimuLossesDetail)<br /> </td> 
+   <td> Information om simuleringsundantag (dlvSimuLossesDetail)<br /> </td> 
    <td> Detaljerad tabell över alla orsaker till uteslutning.<br /> </td> 
   </tr> 
   <tr> 
@@ -335,7 +335,7 @@ Rapporter om simuleringar rör uppgifterna i **nms:simulering** tabell.
 
 ## Rapporter om webbprogram {#reports-on-web-applications}
 
-Rapporter om webbprogram gäller data i **nms:WebApp** tabell.
+Rapporter om webbprogram rör data i tabellen **nms:WebApp**.
 
 <table> 
  <tbody> 
@@ -345,11 +345,11 @@ Rapporter om webbprogram gäller data i **nms:WebApp** tabell.
   </tr> 
   <tr> 
    <td> Dokumentation (surveyDictionary)<br /> </td> 
-   <td> Beskrivningen av undersökningsstrukturen beror på tillägget Survey Manager.<br /> </td> 
+   <td> Beskrivning av undersökningsstrukturen, beror på tillägget Undersökningshanteraren.<br /> </td> 
   </tr> 
   <tr> 
    <td> Main (surveyProperties)<br /> </td> 
-   <td> Undersökningsegenskaper<br /> </td> 
+   <td> Undersökningsegenskaper <br /> </td> 
   </tr> 
   <tr> 
    <td> Uppdelning av svar (surveyDistribution)<br /> </td> 
@@ -371,22 +371,22 @@ Följande rapporter finns också inbyggda. Mer information finns i dokumentet om
   </tr> 
   <tr> 
    <td> Erbjudandeanalys (offerAnalysis)<br /> </td> 
-   <td> Analys av erbjudandet per datum och kanal beror på interaktionstillägget.<br /> </td> 
+   <td> Erbjudandeanalys per datum och kanal, beroende på interaktionstillägget.<br /> </td> 
    <td> nms:offer<br /> </td> 
   </tr> 
   <tr> 
-   <td> Effektiv återmarknadsföring (remarketingEffect)<br /> </td> 
-   <td> Mätning av återmarknadsföringens effektivitet<br /> </td> 
+   <td> Effektiv ommarknadsföring (remarketingEffect)<br /> </td> 
+   <td> Mätning av återmarknadsföringseffektivitet<br /> </td> 
    <td> nms:webEvent<br /> </td> 
   </tr> 
   <tr> 
    <td> Historik över förvärv av sociala potentiella kunder (socialVisitorStatistics)<br /> </td> 
-   <td> Historiken för köp av potentiella kunder i X (tidigare Twitter) och Facebook beror på tillägget för social marknadsföring.<br /> </td> 
-   <td> nms:besökare<br /> </td> 
+   <td> Historiken för köp av X (tidigare kallat Twitter) och Facebook potentiella kunder beror på tillägget för social marknadsföring.<br /> </td> 
+   <td> nms:visitor<br /> </td> 
   </tr> 
   <tr> 
    <td> Spårning av senaste förslag (recentPropositions)<br /> </td> 
-   <td> Spårning av offerter i realtid<br /> </td> 
+   <td> Spåra offert i realtid <br /> </td> 
    <td> nms:propositionRcp<br /> </td> 
   </tr> 
  </tbody> 

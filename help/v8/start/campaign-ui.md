@@ -18,29 +18,29 @@ Du får åtkomst till Adobe Campaign via klientkonsolen eller webbgränssnittet.
 
 >[!CAUTION]
 >
->Den här dokumentationen fokuserar på användning av Campaign Client-konsolen. Om du använder gränssnittet för webben i Campaign finns mer information i [den här dokumentationen](https://experienceleague.adobe.com/docs/campaign-web/v8/campaign-web-home.html){target="_blank"}.
+>Den här dokumentationen fokuserar på användning av Campaign Client-konsolen. Om du använder användargränssnittet för Campaign-webben kan du läsa [den här dokumentationen](https://experienceleague.adobe.com/docs/campaign-web/v8/campaign-web-home.html){target="_blank"}.
 
-* **Klientkonsol** - Campaign-klientkonsolen är ett inbyggt program som kommunicerar med Adobe Campaign-programservern via standardInternetprotokoll, som SOAP och HTTP. Campaign-klientkonsolen centraliserar alla funktioner och inställningar och kräver minimal bandbredd eftersom den är beroende av ett lokalt cacheminne. Kampanjklientkonsolen är utformad för enkel driftsättning och kan distribueras från en webbläsare, uppdateras automatiskt och kräver ingen specifik nätverkskonfiguration eftersom den bara genererar HTTP(S)-trafik. [Läs mer](#ui-access)
+* **Klientkonsol** - Campaign-klientkonsolen är ett systemspecifikt program som kommunicerar med Adobe Campaign-programservern via standardInternetprotokoll som SOAP och HTTP. Campaign-klientkonsolen centraliserar alla funktioner och inställningar och kräver minimal bandbredd eftersom den är beroende av ett lokalt cacheminne. Kampanjklientkonsolen är utformad för enkel driftsättning och kan distribueras från en webbläsare, uppdateras automatiskt och kräver ingen specifik nätverkskonfiguration eftersom den bara genererar HTTP(S)-trafik. [Läs mer](#ui-access)
 
   Lär dig hur du installerar och konfigurerar Campaign-klientkonsolen i [det här avsnittet](../start/connect.md).
 
-* **Webbgränssnitt** - Från och med version 8.6.1 av Campaign har du som Campaign v8-användare tillgång till en webbmiljö som är tillgänglig via Adobe Experience Cloud centrala användargränssnitt. Sedan kan du ansluta till Adobe Campaign från en webbläsare. Med det nya gränssnittet kan ni skapa, hantera och utföra viktiga marknadsföringsåtgärder. Alla Campaign-funktioner är dock inte tillgängliga. [Läs mer](#ac-web-ui).
+* **Webbanvändargränssnitt** - Från och med version 8.6.1 av Campaign v8 har du nu tillgång till en webbmiljö som är tillgänglig via det centrala Adobe Experience Cloud-användargränssnittet. Sedan kan du ansluta till Adobe Campaign från en webbläsare. Med det nya gränssnittet kan ni skapa, hantera och utföra viktiga marknadsföringsåtgärder. Alla Campaign-funktioner är dock inte tillgängliga. [Läs mer](#ac-web-ui).
 
-* **Webbåtkomst** - Med Adobe Campaign webbåtkomstfunktioner får du tillgång till en delmängd av Campaign-funktionerna via en webbläsare och ett HTML-användargränssnitt. Använd det här webbgränssnittet för att få åtkomst till rapporter, kontrollera och validera meddelanden, få åtkomst till kontrollpaneler med mera.  Läs mer om Campaign Web Access [i det här avsnittet](../start/connect.md#web-access).
+* **Webbåtkomst** - Med Adobe Campaign webbåtkomstfunktioner kan du komma åt en delmängd av Campaign-funktionerna i en webbläsare via ett HTML-användargränssnitt. Använd det här webbgränssnittet för att få åtkomst till rapporter, kontrollera och validera meddelanden, få åtkomst till kontrollpaneler med mera.  Läs mer om Campaign Web Access [i det här avsnittet](../start/connect.md#web-access).
 
-* **API:er** - För att åtgärda fler användningsfall kan systemet anropas från externa program med hjälp av de webbtjänstAPI:er som exponeras via SOAP-protokollet. Läs mer om Campaign-API:er [på den här sidan](../dev/api.md).
+* **API:er** - För att åtgärda fler användningsfall kan systemet anropas från externa program med hjälp av de webbtjänstAPI:er som exponeras via SOAP. Läs mer om Campaign-API:er [på den här sidan](../dev/api.md).
 
 
 ## Arbeta med klientkonsolen {#ui-access}
 
-Campaign-klientkonsolen är ett inbyggt program som kommunicerar med Adobe Campaign-programservern via vanliga Internetprotokoll, till exempel SOAP och HTTP. Campaign-klientkonsolen centraliserar alla funktioner och inställningar och kräver minimal bandbredd eftersom den är beroende av ett lokalt cacheminne. Kampanjklientkonsolen är utformad för enkel driftsättning och kan distribueras från en webbläsare, uppdateras automatiskt och kräver ingen specifik nätverkskonfiguration eftersom den bara genererar HTTP(S)-trafik.  [Läs mer om Campaign-klientkonsolen](../start/connect.md). Du kan växla till Campaign-webbgränssnittet från det dedikerade kortet på klientkonsolens startsida.
+Campaign-klientkonsolen är ett inbyggt program som kommunicerar med Adobe Campaign-programservern via vanliga Internetprotokoll, som SOAP och HTTP. Campaign-klientkonsolen centraliserar alla funktioner och inställningar och kräver minimal bandbredd eftersom den är beroende av ett lokalt cacheminne. Kampanjklientkonsolen är utformad för enkel driftsättning och kan distribueras från en webbläsare, uppdateras automatiskt och kräver ingen specifik nätverkskonfiguration eftersom den bara genererar HTTP(S)-trafik.  [Läs mer om Campaign-klientkonsolen](../start/connect.md). Du kan växla till Campaign-webbgränssnittet från det dedikerade kortet på klientkonsolens startsida.
 
 ![](assets/web-ui.png)
 
 
 >[!NOTE]
 >
->Om det nya åtkomstkortet inte visas kontrollerar du att följande fält inte är tomma på ditt externa Adobe Experience Cloud-konto: **Server**, **Klientorganisation**, **Återanropsserver** och **Associationsmärke**.
+>Om det nya åtkomstkortet inte visas kontrollerar du att följande fält inte är tomma i ditt externa Adobe Experience Cloud-konto: **Server**, **Klient**, **Återanropsserver** och **Associationsmärke**.
 
 
 Du kan också använda en webbläsare för att få tillgång till Campaign. I det här sammanhanget är bara en deluppsättning av Campaign-funktionerna tillgängliga. [Läs mer](#web-browser)
@@ -59,9 +59,9 @@ Bläddra bland flikarna i det övre avsnittet för att komma åt funktioner för
 >
 >Listan över kärnfunktioner som du kan komma åt beror på dina behörigheter och din implementering.
 
-För varje funktion har du tillgång till de viktigaste funktionerna i **[!UICONTROL Browsing]** -avsnitt. The **[!UICONTROL More]** -länken kan du komma åt alla andra komponenter.
+För varje funktion kan du komma åt uppsättningen med nyckelfunktioner i avsnittet **[!UICONTROL Browsing]**. Med länken **[!UICONTROL More]** kan du komma åt alla andra komponenter.
 
-Om du till exempel bläddrar till **[!UICONTROL Profiles and targets]** kan du komma åt mottagarlistor, prenumerationstjänster, befintliga arbetsflöden för målinriktning och genvägar för att skapa alla dessa komponenter.
+Om du till exempel bläddrar till fliken **[!UICONTROL Profiles and targets]** kan du komma åt mottagarlistor, prenumerationstjänster, befintliga arbetsflöden för målinriktning och genvägar för att skapa alla dessa komponenter.
 
 ![](assets/overview-list.png)
 
@@ -71,9 +71,9 @@ När du markerar ett element på skärmen läses det in på en ny flik så att d
 
 ### Skapa ett element {#create-an-element}
 
-Använd genvägar i **[!UICONTROL Create]** till vänster på skärmen för att lägga till nya element. Du kan också använda **[!UICONTROL Create]** ovanför listan för att lägga till nya element i den aktuella listan.
+Använd genvägar i avsnittet **[!UICONTROL Create]** till vänster på skärmen för att lägga till nya element. Du kan också använda knappen **[!UICONTROL Create]** ovanför listan för att lägga till nya element i den aktuella listan.
 
-På leveranssidan kan du till exempel använda **[!UICONTROL Create]** för att skapa en ny leverans.
+Använd till exempel knappen **[!UICONTROL Create]** på leveranssidan för att skapa en ny leverans.
 
 ![](assets/new-recipient.png)
 
@@ -94,7 +94,7 @@ Bläddra i Campaign Explorer för att få tillgång till alla funktioner och ins
 
 På den här arbetsytan kan du komma åt Utforskarträdet och bläddra bland alla funktioner och alternativ.
 
-* I det vänstra avsnittet visas Campaign Explorer-trädet där du kan bläddra bland alla komponenter och inställningar för instansen, baserat på dina behörigheter. Du kan lägga till och anpassa mappar enligt anvisningarna i [den här sidan](../audiences/folders-and-views.md).
+* I det vänstra avsnittet visas Campaign Explorer-trädet där du kan bläddra bland alla komponenter och inställningar för instansen, baserat på dina behörigheter. Du kan lägga till och anpassa mappar enligt beskrivningen på [den här sidan](../audiences/folders-and-views.md).
 
 * I det övre avsnittet visas en lista med poster i den aktuella mappen. Dessa listor är helt anpassningsbara. [Läs mer](../config/ui-settings.md)
 
@@ -107,9 +107,9 @@ Från och med version 8.6.1 av Campaign v8-klientkonsolanvändare har du nu till
 
 ![Adobe Campaign hemsida för webbanvändargränssnitt](assets/ac-web-home.png)
 
-Läs mer om det nya webbgränssnittet för Campaign i [den här dokumentationen](https://experienceleague.adobe.com/docs/campaign-web/v8/campaign-web-home.html){target="_blank"}.
+Läs mer om det nya Campaign-webbanvändargränssnittet i [den här dokumentationen](https://experienceleague.adobe.com/docs/campaign-web/v8/campaign-web-home.html){target="_blank"}.
 
-Ytterligare och avancerade funktioner, konfigurationer och inställningar är bara tillgängliga i klientkonsolen. Läs mer om funktioner som är tillgängliga i båda användargränssnitten [i dokumentationen för Campaign-webbgränssnittet](https://experienceleague.adobe.com/docs/campaign-web/v8/start/capability-matrix.html){target="_blank"}.
+Ytterligare och avancerade funktioner, konfigurationer och inställningar är bara tillgängliga i klientkonsolen. Läs mer om funktioner som är tillgängliga i båda användargränssnitten [i dokumentationen för användargränssnittet för Campaign ](https://experienceleague.adobe.com/docs/campaign-web/v8/start/capability-matrix.html){target="_blank"}.
 
 
 ## Språk som stöds {#languages}
@@ -129,7 +129,7 @@ Vilka språk som stöds beror på användargränssnittet.
   >
   >Språket väljs under installationen och kan inte ändras efteråt.
 
-* För språk som stöds i Campaign Web-gränssnittet [hänvisa till denna sida](https://experienceleague.adobe.com/docs/campaign-web/v8/start/connect-to-campaign.html#language-pref){target="_blank"}.
+* För språk som stöds för Campaign-webbgränssnittet [finns den här sidan](https://experienceleague.adobe.com/docs/campaign-web/v8/start/connect-to-campaign.html#language-pref){target="_blank"}.
 
 
 Språk påverkar datum- och tidsformat.
@@ -151,12 +151,12 @@ De största skillnaderna mellan amerikansk engelska och brittisk engelska är:
    <td> Veckan börjar på måndag<br /> </td> 
   </tr> 
   <tr> 
-   <td> Kort datum<br /> </td> 
+   <td> Kort datum <br /> </td> 
    <td> <p>%2M/%2D/%4Y</p><p><strong>ex: 09/25/2018</strong></p> </td> 
    <td> <p>%2D/%2M/%4Y</p><p><strong>ex: 25/09/2018</strong></p> </td> 
   </tr> 
   <tr> 
-   <td> Kort datum med tid<br /> </td> 
+   <td> Kort datum med tiden <br /> </td> 
    <td> <p>%2M/%2D/%4Y %I:%2N:%2S %P</p><p><strong>ex: 09/25/2018 10:47:25 PM</strong></p> </td> 
    <td> <p>%2D/%2M/%4Y %2H:%2N:%2S</p><p><strong>ex: 25/09/2018 22:47:25</strong></p> </td> 
   </tr> 

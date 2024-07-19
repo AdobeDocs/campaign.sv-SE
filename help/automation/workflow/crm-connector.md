@@ -6,14 +6,14 @@ role: User
 exl-id: 9da636a7-ed57-440f-8166-6982dce0213c
 source-git-commit: 567c2e84433caab708ddb9026dda6f9cb717d032
 workflow-type: tm+mt
-source-wordcount: '102'
-ht-degree: 1%
+source-wordcount: '95'
+ht-degree: 2%
 
 ---
 
 # CRM-koppling{#crm-connector}
 
-The **CRM-koppling** kan du konfigurera datasynkroniseringen mellan Adobe Campaign och ett CRM-system.
+Med aktiviteten **CRM-koppling** kan du konfigurera datasynkroniseringen mellan Adobe Campaign och ett CRM-system.
 
 Med den här aktiviteten kan du:
 

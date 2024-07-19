@@ -14,17 +14,17 @@ ht-degree: 1%
 
 # Ändra dimension{#change-dimension}
 
-Använd **[!UICONTROL Change dimension]** för att ändra målinriktningsdimensionen när ni skapar en målgrupp. Den här aktiviteten flyttar axeln beroende på datamallen och indatatypen. Du kan till exempel växla från dimensionen &quot;kontrakt&quot; till dimensionen &quot;kunder&quot;.
+Använd aktiviteten **[!UICONTROL Change dimension]** om du vill ändra målinriktningsdimensionen när du skapar en målgrupp. Den här aktiviteten flyttar axeln beroende på datamallen och indatatypen. Du kan till exempel växla från dimensionen &quot;kontrakt&quot; till dimensionen &quot;kunder&quot;.
 
 Du kan också använda den här aktiviteten för att definiera ytterligare kolumner för det nya målet och definiera villkor för datadeduplicering.
 
 >[!IMPORTANT]
 >
->Observera att **[!UICONTROL Change Dimension]** och **[!UICONTROL Change Data source]** aktiviteter ska inte läggas till på en rad. Om du behöver använda båda aktiviteterna i följd måste du inkludera en **[!UICONTROL Enrichement]** mellan dem. Detta garanterar att programmet körs på rätt sätt och förhindrar eventuella konflikter och fel.
+>Observera att aktiviteterna **[!UICONTROL Change Dimension]** och **[!UICONTROL Change Data source]** inte ska läggas till på en rad. Om du behöver använda båda aktiviteterna i följd måste du ta med en **[!UICONTROL Enrichement]**-aktivitet mellan dem. Detta garanterar att programmet körs på rätt sätt och förhindrar eventuella konflikter och fel.
 
-Konfigurera **[!UICONTROL Change dimension]** ska du utföra följande steg:
+Så här konfigurerar du aktiviteten **[!UICONTROL Change dimension]**:
 
-1. Välj den nya måldimensionen via **[!UICONTROL Change dimension]** fält.
+1. Välj den nya måldimensionen via fältet **[!UICONTROL Change dimension]**.
 
    ![](assets/s_user_change_dimension_param1.png)
 
@@ -34,7 +34,7 @@ Konfigurera **[!UICONTROL Change dimension]** ska du utföra följande steg:
 
    När du väljer att bara behålla en post visas en samling i arbetsschemat: Den här samlingen representerar alla poster som inte kommer att ingå i slutresultatet (eftersom endast en post behålls). I likhet med alla andra samlingar kan du med den här metoden beräkna aggregeringar eller återställa information i kolumner.
 
-   Om du till exempel ändrar **[!UICONTROL Customers]** dimension till **[!UICONTROL Recipients]** är det möjligt att rikta in sig på kunder i en viss butik samtidigt som man lägger till antalet inköp.
+   Om du till exempel ändrar dimensionen **[!UICONTROL Customers]** till dimensionen **[!UICONTROL Recipients]** kan du rikta in dig på kunder i en viss butik samtidigt som du lägger till antalet köp.
 
 1. Om du väljer att inte behålla all den här informationen kan du konfigurera det duplicerade hanteringsläget.
 
@@ -44,11 +44,11 @@ Konfigurera **[!UICONTROL Change dimension]** ska du utföra följande steg:
 
    I exemplet ovan dedupliceras mottagarna först till sin e-postadress och sedan till sitt kontonummer om det behövs.
 
-1. The **[!UICONTROL Result]** kan du lägga till ytterligare information.
+1. På fliken **[!UICONTROL Result]** kan du lägga till ytterligare information.
 
-   Du kan till exempel återställa regionen baserat på postnumret genom att använda en **Delsträng** type-funktion. Så här gör du:
+   Du kan till exempel återskapa regionen baserat på postnumret med hjälp av en **Substring**-typfunktion. Så här gör du:
 
-   * Klicka på **[!UICONTROL Add data...]** länka och markera **[!UICONTROL Data linked to the filtering dimension]**.
+   * Klicka på länken **[!UICONTROL Add data...]** och välj **[!UICONTROL Data linked to the filtering dimension]**.
 
      ![](assets/wf_change-dimension_sample_01.png)
 
@@ -56,11 +56,11 @@ Konfigurera **[!UICONTROL Change dimension]** ska du utföra följande steg:
      >
      >Mer information om hur du skapar och hanterar ytterligare kolumner finns i [Lägg till data](query.md#add-data).
 
-   * Markera föregående måldimension (före axelväxling) och välj **[!UICONTROL Zip Code]** i mottagarens **[!UICONTROL Location]** underträd, klicka sedan på **[!UICONTROL Edit expression]**.
+   * Markera föregående måldimension (före axelväxling) och markera **[!UICONTROL Zip Code]** i mottagarens **[!UICONTROL Location]**-underträd och klicka sedan på **[!UICONTROL Edit expression]**.
 
      ![](assets/wf_change-dimension_sample_02.png)
 
-   * Klicka **[!UICONTROL Advanced selection]** och välja **[!UICONTROL Edit the formula using an expression]**.
+   * Klicka på **[!UICONTROL Advanced selection]** och välj **[!UICONTROL Edit the formula using an expression]**.
 
      ![](assets/wf_change-dimension_sample_03.png)
 

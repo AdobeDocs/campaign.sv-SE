@@ -16,7 +16,7 @@ ht-degree: 2%
 
 Adobe Campaign v8 är utformat för marknadsförare i flera kanaler som behöver den bästa molnlösningen för kanalövergripande kampanjhantering i storföretagsskala. Den erbjuder robusta ETL- och datahanteringsfunktioner för att hjälpa till att utforma och strukturera den perfekta kampanjen. Dess orkestreringsmotor ger möjlighet till multitouch-marknadsföring med fokus på batchbaserade resor. Den levereras också tillsammans med en skalbar meddelandeserver i realtid som gör det möjligt för marknadsföringsteamen att skicka fördefinierade meddelanden baserat på en totalbelastning från alla IT-system för exempelvis lösenordsåterställning, orderbekräftelse, e-kvitto och mycket annat.
 
-Adobe Campaign v8 har avsevärda förbättringar vad gäller infrastruktur, säkerhet, leveransbarhet och övervakning. Det finns som **Hanterad Cloud Service** som kombinerar tjänster med proaktiv tillsyn och vältajmade ändringar. Läs mer om Campaign Managed-Cloud Service [i det här avsnittet](#acms-desc).
+Adobe Campaign v8 har avsevärda förbättringar vad gäller infrastruktur, säkerhet, leveransbarhet och övervakning. Det finns som en **hanterad Cloud Service** som kombinerar tjänster med proaktiv tillsyn och tidsbegränsade ändringar. Läs mer om Campaign Managed-Cloud Service [i det här avsnittet](#acms-desc).
 
 ![](assets/home-page.png)
 
@@ -79,7 +79,7 @@ Observera att den nya molnarkitekturen gör att Campaign kan effektivisera proce
 
 >[!AVAILABILITY]
 >
->* Campaign v8 är **endast** finns som hanterad Cloud Service och kan inte distribueras på plats eller i hybridmiljöer.
+>* Campaign v8 är **endast** tillgänglig som hanterad Cloud Service och kan inte distribueras på en lokal eller hybridmiljö.
 >
 >* Automatisk migrering från en befintlig Campaign Classic v7-miljö är inte tillgänglig än.
 
@@ -88,14 +88,14 @@ Observera att den nya molnarkitekturen gör att Campaign kan effektivisera proce
 
 Adobe Campaign kan nu utnyttja molnbaserade databastekniker för att dramatiskt förbättra sin skala och hastighet.
 
-[Campaign v8 Enterprise](../architecture/enterprise-deployment.md) ger begreppet **Fullständig federerad dataåtkomst** (FFDA): alla data är nu fjärranslutna till molndatabasen. Med det här nya erbjudandet förenklar Campaign v8 datahanteringen: inget index krävs i molndatabasen. Du behöver bara skapa tabellerna, kopiera data så kan du börja. [!DNL Snowflake] är Campaign Cloud-databasen, vilket ger er snabbhet och uthållighet: ingen överbelastning av systemaktivitetens toppar. Cloud-databastekniken kräver inget specifikt underhåll för att garantera prestandanivån.
+[Campaign v8 Enterprise](../architecture/enterprise-deployment.md) innehåller konceptet **FDA (Full Federated Data Access)**: alla data finns nu på fjärrbasis i molndatabasen. Med det här nya erbjudandet förenklar Campaign v8 datahanteringen: inget index krävs i molndatabasen. Du behöver bara skapa tabellerna, kopiera data så kan du börja. [!DNL Snowflake] är Campaign Cloud-databasen, vilket ger dig snabbhet och uthållighet: ingen överbelastning av topparna i systemaktiviteten. Cloud-databastekniken kräver inget specifikt underhåll för att garantera prestandanivån.
 
 [Läs mer om företagsdistribution (FFDA)](../architecture/enterprise-deployment.md)
 
 
 ## Självbetjäningsadministratörsgränssnitt{#self-service-admin}
 
-Som produktadministratör kan du hantera inställningar och spåra användningen av var och en av era Campaign v8-instanser med **Kampanjkontrollpanelen**.
+Som produktadministratör kan du hantera inställningar och spåra användning av var och en av dina Campaign v8-instanser med **Campaign-kontrollpanelen**.
 
 Via ett intuitivt användargränssnitt kan administratörer övervaka användningen av nyckelresurser, utföra avancerade uppgifter som IP-adresser som tillåter listning, SFTP-lagringsövervakning, nyckelhantering med mera. Det här självbetjäningsgränssnittet ger dig större flexibilitet och hjälper dig att:
 

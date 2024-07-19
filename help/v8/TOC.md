@@ -43,7 +43,7 @@ ht-degree: 16%
    + [Kampanjsamordning >](https://experienceleague.adobe.com/docs/campaign/automation/campaign-orchestration/set-up-campaigns.html)
 + Skicka meddelanden{#send}
    + [Kom igång med meddelanden](start/create-message.md)
-   + E-post {#emails}
+   + E-postmeddelanden {#emails}
       + [Designa och validera e-postmeddelanden](send/email.md)
       + [Länka till spegelsidan](send/mirror-page.md)
       + [Lägg till en hemlig kopia-adress](send/email-bcc.md)
@@ -69,7 +69,7 @@ ht-degree: 16%
    + [Leveransanalys](send/delivery-analysis.md)
    + [Konfigurera och skicka leveransen](send/configure-and-send.md)
    + [Tidsoptimering för sändning](send/predictive.md)
-   + Fel, studsar och karantän{#failures}
+   + Fel, studsar och karantän {#failures}
       + [Karantän](send/quarantines.md)
       + [Leveransfel](send/delivery-failures.md)
    + [Arbeta med leveransmallar](send/create-templates.md)
@@ -100,8 +100,8 @@ ht-degree: 16%
 + Innehållshantering {#content}
    + [Designa webbprogram och formulär](dev/webapps.md)
 + Automatisering och arbetsflöden {#automation}
-   + [Campaign Automation Guide >](https://experienceleague.adobe.com/en/docs/campaign/automation/home)
-+ Integritet och säkerhetshantering {#privacy}
+   + [Kampanjautomatiseringsguide >](https://experienceleague.adobe.com/en/docs/campaign/automation/home)
++ Sekretess- och säkerhetshantering {#privacy}
    + [Hantera förfrågningar om användarens information](start/privacy.md)
    + [Säkerhetsanvisningar](config/security.md)
    + [Förbättrat säkerhetstillägg](config/enhanced-security.md)
@@ -128,12 +128,12 @@ ht-degree: 16%
    + [Granskningskedja](reporting/audit-trail.md)
    + Arbeta med rapporter{#reports}
       + [Kom igång med rapporter](reporting/gs-reporting.md)
-      + Skapa kuber{#cubes}
+      + Skapa kuber {#cubes}
          + [Kom igång med kuber](reporting/gs-cubes.md)
          + [Skapa en kub](reporting/cube-indicators.md)
          + [Skapa rapporter med kuber](reporting/cube-tables.md)
          + [Anpassa kuber](reporting/customize-cubes.md)
-      + Inbyggda rapporter{#ac-reports}
+      + Inbyggda rapporter {#ac-reports}
          + [Lista med inbyggda rapporter](reporting/built-in-reports.md)
          + [Globala rapporter](reporting/global-reports.md)
          + [Leveransrapporter](reporting/delivery-reports.md)
@@ -145,7 +145,7 @@ ht-degree: 16%
    + [Arbetsflödesdokumentation](https://experienceleague.adobe.com/docs/campaign/automation/workflows/introduction/about-workflows.html)
 + Integreringar {#connect}
    + [Connect Campaign med andra lösningar](connect/integration.md)
-   + Campaign + Experience Platform {#ac-aep}
+   + Kampanj + Experience Platform {#ac-aep}
       + [Dela och synkronisera målgrupper och profilattribut](connect/ac-aep.md)
       + [Uppdatera AEP-profiler från Campaign-landningssidor](connect/ac-aep-landing-pages.md)
    + [Campaign + Journey Optimizer](connect/ac-ajo.md)
@@ -156,7 +156,7 @@ ht-degree: 16%
    + [Campaign + Workfront](connect/ac-workfront.md)
    + [Campaign + X (Twitter)](connect/ac-tw.md)
    + [Kampanj + extern databas](connect/fda.md)
-   + Campaign + din CRM {#ac-crm}
+   + Kampanj + din CRM {#ac-crm}
       + [Kom igång med CRM-anslutningar](connect/crm.md)
       + [Arbeta med Campaign och SFDC](connect/ac-sfdc.md)
       + [Arbeta med Campaign och Microsoft Dynamics](connect/ac-ms-dyn.md)
@@ -205,6 +205,6 @@ ht-degree: 16%
       + [Inmatningsformulär](dev/forms.md)
    + [Arbeta med datapaket](dev/packages.md)
    + [Kampanj-API:er](dev/api.md)
-+ [Kampanjteknologier >](https://experienceleague.adobe.com/en/docs/campaign/technotes-ac/technotes-home)
-+ [Dokumentation för kampanjens webbgränssnitt >](https://experienceleague.adobe.com/en/docs/campaign-web/v8/campaign-web-home)
++ [Kampanjtekniker >](https://experienceleague.adobe.com/en/docs/campaign/technotes-ac/technotes-home)
++ [Dokumentation för webbanvändargränssnittet för kampanj >](https://experienceleague.adobe.com/en/docs/campaign-web/v8/campaign-web-home)
 

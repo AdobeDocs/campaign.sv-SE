@@ -1,14 +1,14 @@
 ---
 product: campaign
 title: Läs in leveransinnehåll
-description: Läsa in leveransinnehåll
+description: Läser in leveransinnehåll
 feature: Workflows
 role: User
 exl-id: 08febcbc-1703-4d36-89e1-32c903618084
 source-git-commit: 567c2e84433caab708ddb9026dda6f9cb717d032
 workflow-type: tm+mt
 source-wordcount: '304'
-ht-degree: 3%
+ht-degree: 2%
 
 ---
 
@@ -25,23 +25,23 @@ Så här gör du:
    ![](assets/delivery_loadcontent_filetransfertexamples3.png)
 
 1. Skapa ett nytt arbetsflöde, till exempel från **[!UICONTROL Profiles and Targets]** > **[!UICONTROL Jobs]** > **[!UICONTROL Targeting workflows]**.
-1. Lägg till en **[!UICONTROL File transfer]** -aktivitet i arbetsflödet och konfigurera det genom att ange
+1. Lägg till en **[!UICONTROL File transfer]**-aktivitet i arbetsflödet och konfigurera den genom att ange
 
    * Det externa konto som ska användas för att ansluta till S3- eller (S)FTP-servern.
    * Sökvägen till filen på S3- eller (S)FTP-servern.
 
    ![](assets/delivery_loadcontent_filetransfertexample.png)
 
-1. Lägg till en **[!UICONTROL Delivery]** och koppla den till den utgående övergången för **[!UICONTROL File transfer]** aktivitet. Konfigurera den på följande sätt:
+1. Lägg till en **[!UICONTROL Delivery]**-aktivitet och anslut den till den utgående övergången för aktiviteten **[!UICONTROL File transfer]**. Konfigurera den på följande sätt:
 
    * Leverans: Beroende på dina behov kan det vara en specifik leverans som redan har skapats i systemet eller en ny leverans som baseras på en befintlig mall.
    * Mottagare: I det här exemplet anses målet vara angivet i själva leveransen.
-   * Innehåll: Även om innehållet importeras i den tidigare aktiviteten väljer du **[!UICONTROL Specified in the delivery]**. Eftersom innehållet importeras direkt från en fil som finns på en fjärrserver har det ingen identifierare när det bearbetas av arbetsflödet och kan inte identifieras som om det kommer från den inkommande händelsen.
-   * Åtgärd som ska utföras: Välj **[!UICONTROL Save]** för att spara leveransen och kunna komma åt den från **[!UICONTROL Campaign management]** > **[!UICONTROL Deliveries]** när arbetsflödet är klart.
+   * Innehåll: Välj **[!UICONTROL Specified in the delivery]** även om innehållet importeras i den tidigare aktiviteten. Eftersom innehållet importeras direkt från en fil som finns på en fjärrserver har det ingen identifierare när det bearbetas av arbetsflödet och kan inte identifieras som om det kommer från den inkommande händelsen.
+   * Åtgärd som ska utföras: Välj **[!UICONTROL Save]** om du vill spara leveransen och kunna komma åt den från **[!UICONTROL Campaign management]** > **[!UICONTROL Deliveries]** när arbetsflödet har körts.
 
    ![](assets/delivery_loadcontent_activityexample.png)
 
-1. I **[!UICONTROL Script]** -fliken i **[!UICONTROL Delivery]** lägger du till följande kommando för att läsa in innehållet i den importerade filen i leveransen:
+1. Lägg till följande kommando på fliken **[!UICONTROL Script]** i aktiviteten **[!UICONTROL Delivery]** för att läsa in innehållet i den importerade filen i leveransen:
 
    ```
    delivery.content.html.source=loadFile(vars.filename)

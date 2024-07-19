@@ -18,11 +18,11 @@ ht-degree: 4%
 
 Kampanjspårningsfunktioner spårar skickade meddelanden och hjälper dig att analysera mottagarnas beteende: öppna, klicka på länkar, prenumerationer/avprenumerationer och mycket annat. Ni kan få tillgång till dedikerade loggar, rapporter och mätvärden, fråga databasen för att granska insamlade data och mycket annat.
 
-Mer information finns i [Campaign Classic v7 - dokumentation](https://experienceleague.adobe.com/docs/campaign-classic/using/getting-started/profile-management/editing-a-profile.html#tracking-tab){target="_blank"}.
+Mer information finns i [Campaign Classic v7-dokumentationen](https://experienceleague.adobe.com/docs/campaign-classic/using/getting-started/profile-management/editing-a-profile.html#tracking-tab){target="_blank"}.
 
 Kontrollpanelen för leverans är ett viktigt verktyg för att övervaka leveranser och potentiella problem när meddelanden skickas.
 
-Mer information om detta finns i [Campaign Classic v7 - dokumentation](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/monitoring-deliveries/delivery-dashboard.html#sending-messages){target="_blank"}.
+Mer information finns i [Campaign Classic v7-dokumentationen](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/monitoring-deliveries/delivery-dashboard.html#sending-messages){target="_blank"}.
 
 De nyckelspårningsfunktioner som är tillgängliga i Campaign listas nedan.
 
@@ -36,7 +36,7 @@ Du kan spåra mottagning av meddelanden och aktivering av länkar som infogats i
 
 [Läs mer i dokumentationen för Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/tracking-messages/how-to-configure-tracked-links.html#sending-messages){target="_blank"}
 
-**URL-uppföljning**
+**URL-spårning**
 
 Spårningsalternativen kan konfigureras genom att aktivera eller inaktivera spårade URL:er.
 
@@ -51,7 +51,7 @@ Kampanjspårningsfunktionerna gör att ni kan lägga till länkar i e-postmeddel
 
 **Spårningsloggar**
 
-The **Spårning** tekniskt arbetsflöde hämtar spårningsdata när leveransen har skickats och spårningen har aktiverats. Dessa data finns på fliken Spårning för leveransen.
+Det tekniska arbetsflödet **Spårning** hämtar spårningsdata när leveransen har skickats och spårningen har aktiverats. Dessa data finns på fliken Spårning för leveransen.
 
 [Läs mer i dokumentationen för Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/tracking-messages/accessing-the-tracking-logs.html#sending-messages){target="_blank"}
 
@@ -119,7 +119,7 @@ Adobe Campaign har en uppsättning funktioner för att övervaka processerna och
 
 Att övervaka era leveranser efter att de har skickats är ett viktigt steg för att se till att era marknadsföringskampanjer är effektiva och når ut till era kunder.
 
-Läs mer om den information du kan övervaka när du har skickat en leverans, förstå hur leveransfel och karantäner hanteras i [Campaign Classic v7 - dokumentation](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/monitoring-deliveries/about-delivery-monitoring.html#sending-messages){target="_blank"}
+Läs mer om den information du kan övervaka efter att ha skickat en leverans, förstå hur leveransfel och karantäner hanteras i [Campaign Classic v7-dokumentationen](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/monitoring-deliveries/about-delivery-monitoring.html#sending-messages){target="_blank"}
 
 ### Övervaka dina arbetsflöden
 
@@ -127,8 +127,8 @@ Lär dig övervaka arbetsflödeskörning i [den här sidan](https://experiencele
 
 ### Övervaka instansen
 
-Riktlinjer för instansövervakning finns i [Campaign Classic v7 - dokumentation](https://experienceleague.adobe.com/docs/campaign-classic/using/monitoring-campaign-classic/introduction/monitoring-guidelines.html#monitoring-campaign-classic){target="_blank"}
+Riktlinjer för instansövervakning finns i [Campaign Classic v7-dokumentationen](https://experienceleague.adobe.com/docs/campaign-classic/using/monitoring-campaign-classic/introduction/monitoring-guidelines.html#monitoring-campaign-classic){target="_blank"}
 
 Använd självbetjäningsgränssnittet för granskningsspår för att övervaka ändringar som görs i instansen. Granskningsspår innehåller en omfattande lista i realtid över åtgärder och händelser som inträffar i din Adobe Campaign-instans. Du kan komma åt en datahistorik för att få hjälp med att besvara frågor som t.ex. vad som hände med dina arbetsflöden och vem som senast uppdaterade dem eller vad användarna gjorde i instansen.
 
-Läs mer om granskningsspår i detta [page](../reporting/audit-trail.md){target="_blank"}
+Läs mer om granskningsspår på den här [sidan](../reporting/audit-trail.md){target="_blank"}

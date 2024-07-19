@@ -8,7 +8,7 @@ exl-id: 2edbb1d6-122c-418a-8893-4f683f804544
 source-git-commit: 567c2e84433caab708ddb9026dda6f9cb717d032
 workflow-type: tm+mt
 source-wordcount: '169'
-ht-degree: 3%
+ht-degree: 1%
 
 ---
 
@@ -28,7 +28,7 @@ Den läggs till i detaljerna för matchningsordningen och kan redigeras. Med den
 
 ![](assets/mkg_dist_local_op_edit_new_op1.png)
 
-Kampanjen är fortfarande tillgänglig i Campaign-översikten, som du hittar via **[!UICONTROL Campaigns]** på startsidan.
+Kampanjen är fortfarande tillgänglig i Campaign-översikten, som du hittar via länken **[!UICONTROL Campaigns]** på startsidan.
 
 ## Tillgängliga inställningar {#available-settings}
 

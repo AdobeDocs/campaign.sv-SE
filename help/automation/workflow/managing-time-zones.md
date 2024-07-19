@@ -20,9 +20,9 @@ I ett arbetsflöde kan du anpassa scheman för aktivitetskörning och länka en 
 
 ## Körningsplanering {#execution-scheduling}
 
-Du kan schemalägga körningen av uppgifter med hjälp av schemaläggaren (se [Schemaläggare](scheduler.md)). Du kan också använda de schemaläggningsalternativ som är tillgängliga i aktiviteterna som erbjuder den här funktionen. Dessa aktiviteter erbjuder **[!UICONTROL Schedule]** tab: **[!UICONTROL File collector]**, **[!UICONTROL File transfer]**, **[!UICONTROL Web download]**, **[!UICONTROL Email reception]** &amp; **[!UICONTROL SMS]**, osv.
+Du kan schemalägga körningen av aktiviteter med schemaläggaren (se [Schemaläggaren](scheduler.md)). Du kan också använda de schemaläggningsalternativ som är tillgängliga i aktiviteterna som erbjuder den här funktionen. Dessa aktiviteter erbjuder en **[!UICONTROL Schedule]**-flik: **[!UICONTROL File collector]**, **[!UICONTROL File transfer]**, **[!UICONTROL Web download]**, **[!UICONTROL Email reception]** &amp; **[!UICONTROL SMS]** osv.
 
-För alla schemalagda aktiviteter, dvs. alla aktiviteter med schemaläggningsalternativ, kan du välja vilken tidszon som ska användas. Tidszonen väljs via **[!UICONTROL Advanced]** flik för den berörda aktiviteten:
+För alla schemalagda aktiviteter, dvs. alla aktiviteter med schemaläggningsalternativ, kan du välja vilken tidszon som ska användas. Tidszonen väljs via fliken **[!UICONTROL Advanced]** för den aktuella aktiviteten:
 
 ![](assets/wf-timezone-in-a-box.png)
 
@@ -44,8 +44,8 @@ Möjliga värden är:
 
   Använder den markerade tidszonen.
 
-Om **[!UICONTROL By default]** värdet är markerat används arbetsflödets tidszon eller, i annat fall, programserverns tidszon.
+Om värdet **[!UICONTROL By default]** har valts används arbetsflödets tidszon eller, i annat fall, programserverns tidszon.
 
 ## Länka en tidszon till en aktivitet {#linking-a-time-zone-to-an-activity}
 
-The **[!UICONTROL Advanced]** -fliken i arbetsflödesaktiviteterna där du kan välja dess tidszon. Även om arbetsflödenas tidszon för det mesta räcker, kan det vara nödvändigt att överlagra den om och om igen för en viss aktivitet, till exempel dataimport, för att länka datum till rätt tidszon.
+På fliken **[!UICONTROL Advanced]** i arbetsflödesaktiviteterna kan du välja dess tidszon. Även om arbetsflödenas tidszon för det mesta räcker, kan det vara nödvändigt att överlagra den om och om igen för en viss aktivitet, till exempel dataimport, för att länka datum till rätt tidszon.

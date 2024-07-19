@@ -16,19 +16,19 @@ ht-degree: 2%
 
 
 
-The **Extern signal** Med -aktivitet kan du utlösa körning av en uppsättning uppgifter i ett arbetsflöde enligt ett schema.
+Med aktiviteten **Extern signal** kan du utlösa körning av en uppsättning uppgifter i ett arbetsflöde enligt ett schema.
 
-När en aktivitet av typen &quot;Extern signal&quot; aktiveras pausas den oavbrutet eller tills den angivna tidsperioden är slut. Övergången aktiveras av SOAP-anropet **PostEvent(sessionToken, workflowId, activity, transition, parameters, complete).** The **[!UICONTROL complete]** -parametern gör att aktiviteten kan slutföras så att den inte svarar på efterföljande anrop.
+När en aktivitet av typen &quot;Extern signal&quot; aktiveras pausas den oavbrutet eller tills den angivna tidsperioden är slut. Övergången aktiveras av det SOAP anropet **PostEvent(sessionToken, workflowId, activity, transition, parameters, complete).** Parametern **[!UICONTROL complete]** tillåter att aktiviteten slutförs, så den kommer inte att reagera på efterföljande anrop.
 
-Mer information om funktionen PostEvent finns i onlinedokumentationen för SOAP-anrop.
+Mer information om funktionen PostEvent SOAP finns i onlinedokumentationen som rör.
 
-Du kan konfigurera aktiviteten för att definiera händelser om ingen signal tas emot. Det gör du genom att redigera aktiviteten och klicka på **[!UICONTROL Expiration]** -fliken. Klicka på **[!UICONTROL Insert]** för att skapa och konfigurera en händelse.
+Du kan konfigurera aktiviteten för att definiera händelser om ingen signal tas emot. Om du vill göra det redigerar du aktiviteten och klickar på fliken **[!UICONTROL Expiration]**. Klicka på knappen **[!UICONTROL Insert]** för att skapa och konfigurera en händelse.
 
 ![](assets/edit_signal.png)
 
-Konfigurationen av förfallodatum finns i [Förfallodatum](define-approvals.md).
+Konfigurationen av förfallodatum anges i [Förfallodatum](define-approvals.md).
 
-The **Fördröjning** I kan du ange en förfallotid i valfri enhet. Se [Vänta](wait.md).
+I fältet **Fördröjning** kan du ange en förfallofördröjning i valfria enheter. Se [Vänta](wait.md).
 
 Varje rad motsvarar en typ av förfallodatum och sammanfaller med en övergång.
 

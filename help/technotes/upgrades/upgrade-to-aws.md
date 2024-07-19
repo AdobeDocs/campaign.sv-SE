@@ -25,9 +25,9 @@ Som en del av vårt pågående arbete med att tillhandahålla en användarupplev
 
 ## När kommer uppgraderingen att ske?{#aws-timeline}
 
-Uppgraderingar av utvecklings- och mellanlagringsmiljöer började i **Oktober 2023**.
+Uppgraderingarna av utvecklings- och mellanlagringsmiljöerna påbörjades i **oktober 2023**.
 
-Uppgraderingarna av produktionsmiljöerna började i **Januari 2024**.
+Uppgraderingarna av produktionsmiljöerna började **januari 2024**.
 
 ## Vad ska man förvänta sig?{#impact}
 
@@ -41,25 +41,25 @@ Uppgraderingarna av produktionsmiljöerna började i **Januari 2024**.
 
   Ja. Som Campaign-kund kräver din e-postsändningsfunktion att du använder en e-postsändningsinfrastruktur.
 
-* **Vilka kunder vill uppgradera?**
+* **Vilka kunder riktar sig till den här uppgraderingen?**
 
   Miljöerna kommer att uppgraderas för alla Campaign-kunder som nämns ovan.
 
-* **Vilka är de förväntade driftsavbrotten?**
+* **Vad är den förväntade nedtiden?**
 
   Längden på varje uppgraderingsvåg kan variera beroende på antalet påverkade Campaign-instanser. När en produktionsuppgraderingsvåg är schemalagd kommer meddelandet att innehålla en beräknad varaktighet.
 
-* **Kräver kunden några åtgärder för uppgraderingen?**
+* **Behöver kunden några åtgärder för att uppgradera?**
 
   Ingen åtgärd krävs. Adobe sköter uppgraderingsprocessen som körs automatiskt.
 
-* **Vilka tester krävs av kunderna?**
+* **Vilken testning krävs av kunderna?**
 
-  Vi förväntar oss inte att kunderna ska testa något i samband med uppgraderingsevenemanget. Om något problem uppstår, kontakta [Adobe kundtjänst](https://experienceleague.adobe.com/?support-solution=Campaign#support){target="_blank"}.
+  Vi förväntar oss inte att kunderna ska testa något i samband med uppgraderingsevenemanget. Om något problem uppstår kan du kontakta [Adobe kundtjänst](https://experienceleague.adobe.com/?support-solution=Campaign#support){target="_blank"}.
 
 
 * **Kan jag begära en ändring av datum/tid för den schemalagda säkerhetsuppgraderingsplatsen?**
 
   Nej. Vi kan inte hantera eventuella begärda ändringar av det befintliga schemat eftersom detta troligtvis kommer att störa det tilldelade uppgraderingsevenemanget för en annan kund.
 
-För alla andra frågor kan du kontakta [Adobe kundtjänst](https://experienceleague.adobe.com/?support-solution=Campaign#support){target="_blank"}.
+Om du har andra frågor kan du kontakta [Adobe kundtjänst](https://experienceleague.adobe.com/?support-solution=Campaign#support){target="_blank"}.

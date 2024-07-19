@@ -5,13 +5,13 @@ exl-id: 58c130d8-8ba8-42ce-9ab4-a697125d3f85
 source-git-commit: c3f4ad0b56dd45d19eebaa4d2f06551c8fecac1d
 workflow-type: tm+mt
 source-wordcount: '1345'
-ht-degree: 0%
+ht-degree: 1%
 
 ---
 
 # Migrera kampanjoperatorer till Adobe Identity Management System (IMS) {#migrate-users-to-ims}
 
-Från och med Campaign v8.6 förbättras autentiseringsprocessen till Campaign v8. Alla operatorer använder [Adobe Identity Management System (IMS)](https://helpx.adobe.com/enterprise/using/identity.html){target="_blank"} **endast** för att ansluta till Campaign. Det går inte längre att ansluta till användare/lösenord (dvs. inbyggd autentisering). Adobe rekommenderar att du utför migreringen i Campaign v8.5.2 för att smidigt kunna migrera till Campaign v8.6.
+Från och med Campaign v8.6 förbättras autentiseringsprocessen till Campaign v8. Alla operatorer använder [Adobe Identity Management System (IMS)](https://helpx.adobe.com/enterprise/using/identity.html){target="_blank"} **only** för att ansluta till Campaign. Det går inte längre att ansluta till användare/lösenord (dvs. inbyggd autentisering). Adobe rekommenderar att du utför migreringen i Campaign v8.5.2 för att smidigt kunna migrera till Campaign v8.6.
 
 Om du migrerar till Campaign v8 som kund av hanterade tjänster i Campaign Classic v7 gäller den här proceduren även dig.
 
@@ -21,15 +21,15 @@ I den här artikeln beskrivs stegen som krävs för att migrera en teknisk opera
 
 Med Campaign v8 bör alla vanliga användare redan ansluta till Adobe Campaign klientkonsol via Adobe ID via Adobe Identity Management System (IMS). I vissa äldre konfigurationer var dock användar-/lösenordsanslutningar fortfarande tillgängliga. **Detta är inte längre tillåtet med Campaign v8.6.**
 
-Som en del av arbetet med att förstärka säkerhets- och autentiseringsprocessen anropar nu Adobe Campaign klientprogram Campaign-API:er direkt med IMS-token för tekniskt konto. Migrering för tekniska operatörer beskrivs i en särskild artikel på [den här sidan](ims-migration.md).
+Som en del av arbetet med att förstärka säkerhets- och autentiseringsprocessen anropar nu Adobe Campaign klientprogram Campaign-API:er direkt med IMS-token för tekniskt konto. Migreringen för tekniska operatorer beskrivs i en dedikerad artikel på [den här sidan](ims-migration.md).
 
-Den här ändringen gäller från och med Campaign v8.5.2 och kommer att **obligatoriskt** starta Campaign v8.6.
+Den här ändringen gäller från och med Campaign v8.5.2 och är **obligatorisk** med början av Campaign v8.6.
 
 ## Påverkas du?{#migrate-ims-impacts}
 
 Om operatörer i organisationen ansluter till Campaign-klientkonsolen med hjälp av sina inloggnings-/lösenord (dvs. inbyggd autentisering) påverkas du och måste migrera dessa operatorer till Adobe IMS enligt nedan.
 
-Migrering till [Adobe Identity Management System (IMS)](https://helpx.adobe.com/enterprise/using/identity.html){target="_blank"} är en säkerhetsnödvändighet för att göra dina miljöer säkra och standardiserade, eftersom de flesta andra Adobe Experience Cloud-lösningar och program redan finns på IMS.
+Migrering till [Adobe Identity Management System (IMS)](https://helpx.adobe.com/enterprise/using/identity.html){target="_blank"} är ett säkerhetskrav för att göra dina miljöer säkra och standardiserade, eftersom de flesta andra Adobe Experience Cloud-lösningar och -appar redan finns på IMS.
 
 ## Hur migrerar jag?{#ims-migration-procedure}
 
@@ -43,11 +43,11 @@ Viktiga steg för migreringen visas nedan:
 
 1. Adobe uppgraderar dina miljöer till Campaign v8.5.2.
 1. Efter uppgraderingen kan du fortfarande skapa nya användare med båda metoderna, som systemspecifik användare eller med IMS.
-1. Din interna Campaign-administratör måste lägga till unika e-postmeddelanden till alla inbyggda användare på Campaign-klientkonsolen och bekräfta för din Adobe Transition Manager när detta är klart. Det här steget beskrivs i [det här avsnittet](#ims-migration-id).
+1. Din interna Campaign-administratör måste lägga till unika e-postmeddelanden till alla inbyggda användare på Campaign-klientkonsolen och bekräfta för din Adobe Transition Manager när detta är klart. Det här steget beskrivs närmare i [det här avsnittet](#ims-migration-id).
 1. Arbeta med Adobe för att säkra ett datum för när Adobe ska köra automatiserad migrering för icke-tekniska användare (operatörer) och produktprofiler. Det här steget kräver ett timmars fönster utan driftstopp för någon av dina förekomster.
 1. Din interna Campaign-administratör validerar dessa ändringar och godkänner dem. Efter den här migreringen får du inte längre skapa någon ytterligare operator som autentiseras med användarens inloggning och lösenord.
 
-Nu kan du migrera tekniska operatorer till Adobe Developer Console enligt informationen i [den här teknologin](ims-migration.md). Det här steget är obligatoriskt om du använder Campaign-API:er.
+Nu kan du migrera dina tekniska operatorer till Adobe Developer Console enligt informationen i [den här tekniken](ims-migration.md). Det här steget är obligatoriskt om du använder Campaign-API:er.
 
 När migreringen är klar bekräftar du till din Adobe Transition Manager: Adobe markerar sedan migreringen som slutförd och blockerar skapande av nya inbyggda användare och inloggning. Miljön är sedan säker och standardiserad.
 
@@ -55,13 +55,13 @@ När migreringen är klar bekräftar du till din Adobe Transition Manager: Adobe
 
 ### När kan jag starta migreringen? {#ims-migration-start}
 
-En förutsättning för migrering till [Adobe Identity Management System (IMS)](https://helpx.adobe.com/enterprise/using/identity.html){target="_blank"} är att uppgradera din miljö till Campaign v8.5.2.
+En förutsättning för migrering till [Adobe Identity Management System (IMS)](https://helpx.adobe.com/enterprise/using/identity.html){target="_blank"} är att du uppgraderar din miljö till Campaign v8.5.2.
 
 Du kan starta IMS-migrering på din scenmiljö när den har uppgraderats till Campaign v8.5.2 och därefter planera för produktionsmiljön.
 
 ### Vad händer efter en uppgradering av Campaign v8.5.2? {#ims-migration-after-upgrade}
 
-När ni har uppgraderat era miljöer till Campaign v8.5.2 kan ni påbörja övergången till [Adobe Identity Management System (IMS)](https://helpx.adobe.com/enterprise/using/identity.html){target="_blank"}.
+När dina miljöer har uppgraderats till Campaign v8.5.2 kan du initiera övergången till [Adobe Identity Management System (IMS)](https://helpx.adobe.com/enterprise/using/identity.html){target="_blank"}.
 
 Det går fortfarande att skapa nya inbyggda användare tills IMS-migreringen är klar.
 
@@ -84,7 +84,7 @@ Som kampanjadministratör måste du lägga till e-post-ID:n till alla inbyggda a
 
 1. Anslut till klientkonsolen och bläddra till **Administration > Åtkomsthantering > Operatorer**.
 1. Välj den operator som ska uppdateras i operatorlistan.
-1. Ange e-postadressen till operatorn i dialogrutan **Kontaktpunkter** -delen i operatorformuläret.
+1. Ange operatörens e-postadress i avsnittet **Kontaktpunkter** i operatorformuläret.
 1. Spara ändringarna.
 
 Som arbetsflödesansvarig eller Campaign-administratör kan du även utföra en satsvis uppdatering av dina operatorer med ett arbetsflöde.
@@ -93,29 +93,29 @@ Som arbetsflödesansvarig eller Campaign-administratör kan du även utföra en 
 
 Så här gör du en satsvis uppdatering av de inbyggda operatorerna:
 
-1. Skapa ett arbetsflöde för att i en CSV-fil extrahera alla operatorer som ansluter till Campaign med det inbyggda autentiseringsläget. Använd en **Fråga** aktivitet och **Dataextrahering (fil)** -aktivitet för att skapa CSV-filen. För varje operator, baserat på deras profildata, kan du exportera följande kolumner: `Name, Label`.
+1. Skapa ett arbetsflöde för att i en CSV-fil extrahera alla operatorer som ansluter till Campaign med det inbyggda autentiseringsläget. Använd en **Fråga**-aktivitet och en **dataextraheringsaktivitet (fil)**-aktivitet för att skapa CSV-filen. Du kan exportera följande kolumner för varje operator baserat på deras profildata: `Name, Label`.
 
-   Läs mer om **Fråga** aktivitet i [den här sidan](../../automation/workflow/query.md)
+   Läs mer om aktiviteten **Fråga** i [den här sidan](../../automation/workflow/query.md)
 
-   Läs mer om **Dataextrahering (fil)** aktivitet i [den här sidan](../../automation/workflow/extraction-file.md)
+   Läs mer om aktiviteten **Dataextrahering (fil)** i [den här sidan](../../automation/workflow/extraction-file.md)
 
 1. Uppdatera CSV-filen med en ny kolumn som innehåller operatörernas e-postmeddelanden.
 
-1. Skapa ett arbetsflöde för import av uppdaterade data med en **Inläsning av data (fil)** aktivitet och **Uppdatera data** i arbetsflödet.
+1. Skapa ett arbetsflöde för import av uppdaterade data, med en **datainläsningsaktivitet (fil)** och en **Uppdatera data**-aktivitet i arbetsflödet.
 
    ![](assets/update-operators-wf.png){width="70%"}
 
-1. Redigera **Inläsning av data (fil)** och definiera inställningarna för att läsa in den uppdaterade CSV-filen enligt exemplet nedan.
+1. Redigera aktiviteten **Datainläsning (fil)** och definiera inställningarna för att läsa in den uppdaterade CSV-filen enligt exemplet nedan.
 
    ![](assets/data-loading-activity.png){width="70%"}
 
-   Läs mer om **Inläsning av data (fil)** aktivitet i [den här sidan](../../automation/workflow/data-loading-file.md)
+   Läs mer om aktiviteten **Datainläsning (fil)** i [den här sidan](../../automation/workflow/data-loading-file.md)
 
-1. Redigera **Uppdatera data** och ange inställningarna enligt exemplet nedan. Observera att **Uppdaterad dimension** har ändrats till `Operators (xtk)`.
+1. Redigera aktiviteten **Uppdatera data** och definiera inställningarna enligt exemplet nedan. Observera att den **uppdaterade dimensionen** har ändrats till `Operators (xtk)`.
 
    ![](assets/update-data-activity.png){width="70%"}
 
-   Läs mer om **Uppdatera data** aktivitet i [den här sidan](../../automation/workflow/update-data.md)
+   Läs mer om aktiviteten **Uppdatera data** på [den här sidan](../../automation/workflow/update-data.md)
 
 1. Kör arbetsflödet och kontrollera resultaten. E-postadressen har lagts till i operatörens profil.
 
@@ -142,7 +142,7 @@ Adobe rekommenderar starkt att alla användare loggas ut under migreringsfönstr
 
 Det finns två aspekter av migreringen: migrering av slutanvändare och migrering av tekniska användare (används i API:er i din anpassade kod).
 
-Om alla användare (Campaign-operatorer) använder IMS behöver du inte utföra den här migreringen. Du måste dock fortfarande migrera tekniska användare som du kan ha använt i anpassad kod. Läs mer i [den här sidan](ims-migration.md).
+Om alla användare (Campaign-operatorer) använder IMS behöver du inte utföra den här migreringen. Du måste dock fortfarande migrera tekniska användare som du kan ha använt i anpassad kod. Läs mer på [den här sidan](ims-migration.md).
 
 När migreringen är klar måste du kontakta Adobe Transition Manager så att Adobe kan slutföra migreringen.
 
@@ -150,17 +150,17 @@ När migreringen är klar måste du kontakta Adobe Transition Manager så att Ad
 
 Lär dig hur du visar operatörernas autentiseringstyp i Campaign:
 
-1. Från **Explorer**, åtkomst **Administration** `>` **Åtkomsthantering** `>` **Operatorer**.
+1. I **Utforskaren** öppnar du **Administration** `>` **Åtkomsthantering** `>` **Operatorer**.
 
-1. Högerklicka på rubrikraden och välj alternativet **Konfigurera lista** -menyn.
+1. Högerklicka på rubrikraden och välj menyn **Konfigurera lista** .
 
    ![](assets/ims_2.png)
 
-1. Lägg till **Konto inaktiverat** och **Autentiseringstyp** as **Utdatakolumner**.
+1. Lägg till **Konto inaktiverat** och **autentiseringstyp** som **Utdatakolumner**.
 
    ![](assets/ims_1.png)
 
-Nu kan du se listan med **Operatorer** och **Autentiseringstyp**.
+Du kan nu se listan över dina **operatorer** och deras **autentiseringstyp**.
 
 ![](assets/ims_3.png)
 

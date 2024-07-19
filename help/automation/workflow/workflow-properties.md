@@ -17,7 +17,7 @@ ht-degree: 1%
 
 ## Fliken Körning {#execution-tab}
 
-The **[!UICONTROL Execution]** -fliken i **[!UICONTROL Properties]** fönstret i ett arbetsflöde är uppdelat i tre avsnitt:
+Fliken **[!UICONTROL Execution]** i fönstret **[!UICONTROL Properties]** i ett arbetsflöde är uppdelad i tre avsnitt:
 
 ![](assets/wf_execution_tab.png)
 
@@ -27,11 +27,11 @@ Det här avsnittet visas bara i kampanjarbetsflöden.
 
 * **[!UICONTROL Priority]**
 
-  Arbetsflödesmotorn bearbetar de arbetsflöden som ska köras baserat på det prioritetskriterium som definieras i det här fältet. Alla arbetsflöden med en **[!UICONTROL Average]** prioriteten kommer att utföras före de som har en **[!UICONTROL Low]** prioritet.
+  Arbetsflödesmotorn bearbetar de arbetsflöden som ska köras baserat på det prioritetskriterium som definieras i det här fältet. Alla arbetsflöden med prioriteten **[!UICONTROL Average]** körs till exempel före arbetsflöden med prioriteten **[!UICONTROL Low]**.
 
 * **[!UICONTROL Schedule execution for a time of low activity]**
 
-  Det här alternativet skjuter upp arbetsflödet från början till en period med mindre upptagen. Vissa arbetsflöden kan vara dyra när det gäller resurser för databasmotorn. Vi rekommenderar att du schemalägger körning under en tid med låg aktivitet (exempelvis på natten). Låga aktivitetsperioder definieras i **[!UICONTROL Processes on campaigns]** tekniskt arbetsflöde.
+  Det här alternativet skjuter upp arbetsflödet från början till en period med mindre upptagen. Vissa arbetsflöden kan vara dyra när det gäller resurser för databasmotorn. Vi rekommenderar att du schemalägger körning under en tid med låg aktivitet (exempelvis på natten). Låga aktivitetsperioder definieras i det tekniska arbetsflödet för **[!UICONTROL Processes on campaigns]**.
 
 ### Körning {#execution}
 
@@ -47,7 +47,7 @@ Det här avsnittet visas bara i kampanjarbetsflöden.
 
   Den här funktionen är reserverad för avancerade användare. Det gäller arbetsflöden som innehåller riktade aktiviteter (fråga, union, skärning osv.). När det här alternativet är markerat visas de SQL-frågor som skickas till databasen under arbetsflödeskörningen i Adobe Campaign, vilket innebär att du kan analysera dem för att optimera frågor eller diagnostisera problem.
 
-  Frågor visas i en **[!UICONTROL SQL logs]** som läggs till i arbetsflödet (utom kampanjarbetsflöden) och i **[!UICONTROL Properties]** när alternativet är aktiverat. The **[!UICONTROL Audit]** -fliken innehåller även SQL-frågor.
+  Frågor visas på en **[!UICONTROL SQL logs]**-flik som läggs till i arbetsflödet (förutom kampanjarbetsflöden) och i **[!UICONTROL Properties]**-aktiviteten när alternativet är aktiverat. Fliken **[!UICONTROL Audit]** innehåller även SQL-frågor.
 
   ![](assets/wf_tab_log_sql.png)
 
@@ -61,21 +61,21 @@ Det här avsnittet visas bara i kampanjarbetsflöden.
 
   I det här fältet kan du definiera de åtgärder som ska vidtas om en arbetsflödesuppgift innehåller fel. Det finns två möjliga alternativ:
 
-   * **[!UICONTROL Stop the process]**: arbetsflödet pausas automatiskt. arbetsflödets status ändras till **[!UICONTROL Failed]**. Starta om arbetsflödet med **[!UICONTROL Start]** eller **[!UICONTROL Restart]** knappar.
-   * **[!UICONTROL Ignore]**: statusen för den uppgift som utlöste felet ändras till **[!UICONTROL Failed]** men arbetsflödet behåller **[!UICONTROL Started]** status. Den här konfigurationen är relevant för återkommande aktiviteter: Om grenen innehåller en schemaläggare startas den normalt nästa gång arbetsflödet körs.
+   * **[!UICONTROL Stop the process]**: arbetsflödet pausas automatiskt. arbetsflödets status ändras till **[!UICONTROL Failed]**. När problemet är löst startar du om arbetsflödet med knapparna **[!UICONTROL Start]** eller **[!UICONTROL Restart]**.
+   * **[!UICONTROL Ignore]**: statusen för den uppgift som utlöste felet ändras till **[!UICONTROL Failed]**, men arbetsflödet behåller statusen **[!UICONTROL Started]**. Den här konfigurationen är relevant för återkommande aktiviteter: Om grenen innehåller en schemaläggare startas den normalt nästa gång arbetsflödet körs.
 
 * **[!UICONTROL Consecutive errors]**
 
-  Det här fältet blir tillgängligt när **[!UICONTROL Ignore]** värdet är markerat i **[!UICONTROL In case of errors]** fält. Du kan ange antalet fel som kan ignoreras innan processen stoppas. När det här numret har nåtts ändras arbetsflödets status till **[!UICONTROL Failed]**. Om värdet för det här fältet är 0 stoppas aldrig arbetsflödet oavsett antalet fel.
+  Det här fältet blir tillgängligt när värdet **[!UICONTROL Ignore]** väljs i fältet **[!UICONTROL In case of errors]**. Du kan ange antalet fel som kan ignoreras innan processen stoppas. När det här numret har nåtts ändras arbetsflödets status till **[!UICONTROL Failed]**. Om värdet för det här fältet är 0 stoppas aldrig arbetsflödet oavsett antalet fel.
 
 * **[!UICONTROL Template]**
 
   I det här fältet kan du välja den meddelandemall som ska skickas till arbetsflödets ansvariga när dess status ändras till **[!UICONTROL Failed]**.
 
-  De berörda operatörerna meddelas via e-post, om det finns en e-postadress i deras profil. Om du vill definiera arbetsflödesansvariga går du till **[!UICONTROL Supervisor(s)]** egenskapsfält (**[!UICONTROL General]** -fliken).
+  De berörda operatörerna meddelas via e-post, om det finns en e-postadress i deras profil. Om du vill definiera arbetsflödesansvariga går du till fältet **[!UICONTROL Supervisor(s)]** för egenskaperna (**[!UICONTROL General]**-fliken).
 
   ![](assets/wf-properties_select-supervisors.png)
 
-  The **[!UICONTROL Notification to a workflow supervisor]** Standardmallen innehåller en länk för åtkomst till Adobe Campaign klientkonsol via webben så att mottagaren kan arbeta med problemet när han eller hon är inloggad.
+  Standardmallen **[!UICONTROL Notification to a workflow supervisor]** innehåller en länk för att komma åt Adobe Campaign klientkonsol via webben, så att mottagaren kan arbeta med problemet när han eller hon är inloggad.
 
   Om du vill skapa en personlig mall går du till **[!UICONTROL Administration>Campaign management>Technical deliveries and templates]**.

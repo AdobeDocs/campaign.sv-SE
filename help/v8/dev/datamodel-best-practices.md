@@ -18,11 +18,11 @@ I det här dokumentet beskrivs viktiga rekommendationer när du utformar din Ado
 
 Adobe Campaign-systemet är mycket flexibelt och kan byggas ut utöver den ursprungliga implementeringen. Men även om möjligheterna är oändliga är det viktigt att fatta kloka beslut och bygga starka grunder för att börja utforma din datamodell.
 
-Om du vill få en bättre förståelse för de inbyggda tabellerna i Campaign och hur de hänger ihop kan du läsa [det här avsnittet](datamodel.md).
+Mer information om inbyggda tabeller i Campaign och hur de relaterar till varandra finns i [det här avsnittet](datamodel.md).
 
-Läs [det här avsnittet](schemas.md) för att komma igång med kampanjscheman.
+Läs [det här avsnittet](schemas.md) för att komma igång med Campaign-scheman.
 
-Lär dig hur du konfigurerar tilläggsscheman för att utöka den konceptuella datamodellen för Adobe Campaign-databasen i [den här sidan](extend-schema.md).
+Lär dig hur du konfigurerar tilläggsscheman för att utöka Adobe Campaign-databasens konceptuella datamodell på [den här sidan](extend-schema.md).
 
 ## Datamodellarkitektur {#data-model-architecture}
 
@@ -32,12 +32,12 @@ Adobe Campaign är ett kraftfullt kanalövergripande kampanjhanteringssystem som
 
 De flesta e-postleverantörer kommunicerar med kunderna via en listcentrerad strategi, men Adobe Campaign förlitar sig på en relationsdatabas för att få en bredare bild av kunderna och deras attribut.
 
-Om du vill få åtkomst till beskrivningen av varje tabell går du till **[!UICONTROL Admin > Configuration > Data schemas]**, välj en resurs i listan och klicka på **[!UICONTROL Documentation]** -fliken.
+Gå till **[!UICONTROL Admin > Configuration > Data schemas]**, markera en resurs i listan och klicka på fliken **[!UICONTROL Documentation]** om du vill komma åt beskrivningen av varje tabell.
 
 
 >[!NOTE]
 >
->Med Adobe Campaign kan man skapa [anpassad mottagartabell](custom-recipient.md). I de flesta fall bör du dock använda den inbyggda [Mottagarregister](datamodel.md#ootb-profiles) som redan har färdiga tabeller och funktioner.
+>Adobe Campaign tillåter att en [anpassad mottagartabell](custom-recipient.md) skapas. I de flesta fall bör du emellertid utnyttja den inbyggda [mottagartabellen](datamodel.md#ootb-profiles) som redan har fördefinierade ytterligare tabeller och funktioner.
 
 ### Data för Adobe Campaign {#data-for-campaign}
 
@@ -60,10 +60,10 @@ Om du inte hamnar i något av dessa behöver du troligen inte det här attribute
 Följ de bästa metoderna nedan för att konfigurera data i Adobe Campaign för att säkerställa att din systemarkitektur och prestanda är bra.
 
 * Inom stora tabeller kan du infoga strängar eller numeriska fält och lägga till länkar till referenstabeller (när du arbetar med värdelista).
-* The **expr** Med -attribut kan du definiera ett schemaattribut som ett beräknat fält i stället för ett fysiskt uppsättningsvärde i en tabell. Detta kan ge åtkomst till informationen i ett annat format (t.ex. för ålder och födelsedatum) utan att båda värdena behöver lagras. Detta är ett bra sätt att undvika att duplicera fält. I mottagartabellen används till exempel ett uttryck för domänen, som redan finns i e-postfältet.
-* När uttrycksberäkningen är komplex bör du dock inte använda **expr** attribut som on-the-fly-beräkning kan påverka hur dina frågor fungerar.
-* The **XML** text är ett bra sätt att undvika att skapa för många fält. Men det tar också upp diskutrymme när en CLOB-kolumn används i databasen. Det kan även leda till komplexa SQL-frågor och kan påverka prestanda.
-* Längden på en **string** -fältet ska alltid definieras med kolumnen. Som standard är maxlängden i Adobe Campaign 16 kB, men Adobe rekommenderar att du håller fältet kortare om du redan vet att storleken inte kommer att överskrida en kortare längd.
+* Med attributet **expr** kan du definiera ett schemaattribut som ett beräknat fält i stället för ett fysiskt uppsättningsvärde i en tabell. Detta kan ge åtkomst till informationen i ett annat format (t.ex. för ålder och födelsedatum) utan att båda värdena behöver lagras. Detta är ett bra sätt att undvika att duplicera fält. I mottagartabellen används till exempel ett uttryck för domänen, som redan finns i e-postfältet.
+* Men om uttrycksberäkningen är komplex bör du inte använda attributet **expr** eftersom beräkningen kan påverka frågeprestanda.
+* Typen **XML** är ett bra sätt att undvika att skapa för många fält. Men det tar också upp diskutrymme när en CLOB-kolumn används i databasen. Det kan även leda till komplexa SQL-frågor och kan påverka prestanda.
+* Längden för ett **string**-fält ska alltid definieras med kolumnen. Som standard är maxlängden i Adobe Campaign 16 kB, men Adobe rekommenderar att du håller fältet kortare om du redan vet att storleken inte kommer att överskrida en kortare längd.
 * Det går bra att ha ett fält som är kortare i Adobe Campaign än i källsystemet om du är säker på att storleken i källsystemet var för stor och inte skulle nås. Detta kan betyda en kortare sträng eller ett mindre heltal i Adobe Campaign.
 
 ### Val av fält {#choice-of-fields}
@@ -72,13 +72,13 @@ Ett fält måste lagras i en tabell om det har ett syfte att målinrikta eller p
 
 ### Val av nycklar {#choice-of-keys}
 
-Förutom **autouuid** och **autopk** som definieras som standard i de flesta tabeller bör du överväga att lägga till några logiska nycklar eller affärsnycklar (kontonummer, klientnummer osv.). Den kan användas senare för import/avstämning eller datapaket. Mer information finns i [Identifierare](#identifiers).
+Förutom **autouid** och **autopk** som är definierade som standard i de flesta tabeller bör du överväga att lägga till några logiska nycklar eller affärsnycklar (kontonummer, klientnummer och så vidare). Den kan användas senare för import/avstämning eller datapaket. Mer information finns i [Identifierare](#identifiers).
 
 Effektiva nycklar är viktiga för prestanda. Med Snowflake kan du infoga numeriska eller strängbaserade datatyper som nycklar för tabeller.
 
 >[!NOTE]
 >
->The **autouuid** attributet gäller endast för [Företagsdistributioner (FFDA)](../architecture/enterprise-deployment.md).
+>Attributet **autouid** gäller bara för [Enterprise (FFDA)-distributioner](../architecture/enterprise-deployment.md).
 
 ## Identifierare {#identifiers}
 
@@ -89,10 +89,10 @@ I följande tabell beskrivs dessa identifierare och deras syfte.
 | Identifierare | Beskrivning | Bästa praxis |
 |--- |--- |--- |
 | ID | <ul><li>ID är den fysiska primärnyckeln för en Adobe Campaign-tabell. För inbyggda tabeller är det ett UUID (Universally Unique ID)</li><li>Den här identifieraren måste vara unik. </li><li>Ett UUID kan vara synligt i en schemadefinition.</li></ul> | <ul><li>Automatiskt genererade identifierare bör inte användas som referens i ett arbetsflöde eller i en paketdefinition.</li><li>ID:t i en tabell är ett UUID och den här typen ska inte ändras.</li></ul> |
-| Namn (eller internt namn) | <ul><li>Den här informationen är en unik identifierare för en post i en tabell. Värdet kan uppdateras manuellt, vanligtvis med ett genererat namn.</li><li>Den här identifieraren behåller sitt värde när den distribueras i en annan instans av Adobe Campaign och får inte vara tom.</li></ul> | <ul><li>Byt namn på den post som genererats av Adobe Campaign om objektet ska distribueras från en miljö till en annan.</li><li>När ett objekt har ett namnutrymmesattribut (*schema* till exempel) kommer det här gemensamma namnutrymmet att utnyttjas för alla anpassade objekt som skapas. Vissa reserverade namnutrymmen bör inte användas: *nms*, *xtk*, osv.  Observera att vissa namnutrymmen bara är interna. [Läs mer](schemas.md#reserved-namespaces).</li><li>När ett objekt inte har något namnutrymme (*arbetsflöde* eller *leverans* till exempel) skulle det här namnutrymmesbegreppet läggas till som ett prefix för ett internt namnobjekt: *namespaceMyObjectName*.</li><li>Använd inte specialtecken som blanksteg &quot;&quot;, halvkolumn &quot;:&quot; eller bindestreck &quot;-&quot;. Alla dessa tecken ersätts med understrecket&quot;_&quot; (tillåtet tecken). &quot;abc-def&quot; och &quot;abc:def&quot; skulle till exempel lagras som &quot;abc_def&quot; och skrivas över varandra.</li></ul> |
+| Namn (eller internt namn) | <ul><li>Den här informationen är en unik identifierare för en post i en tabell. Värdet kan uppdateras manuellt, vanligtvis med ett genererat namn.</li><li>Den här identifieraren behåller sitt värde när den distribueras i en annan instans av Adobe Campaign och får inte vara tom.</li></ul> | <ul><li>Byt namn på den post som genererats av Adobe Campaign om objektet ska distribueras från en miljö till en annan.</li><li>När ett objekt har ett namnutrymmesattribut (*schema* till exempel), kommer detta gemensamma namnutrymme att utnyttjas för alla anpassade objekt som skapas. Vissa reserverade namnutrymmen bör inte användas: *nms*, *xtk* osv.  Observera att vissa namnutrymmen bara är interna. [Läs mer](schemas.md#reserved-namespaces).</li><li>När ett objekt inte har något namnutrymme (*workflow* eller *delivery* till exempel) läggs det här namnutrymmesbegreppet till som ett prefix för ett internt namnobjekt: *namespaceMyObjectName*.</li><li>Använd inte specialtecken som blanksteg &quot;&quot;, halvkolumn &quot;:&quot; eller bindestreck &quot;-&quot;. Alla dessa tecken ersätts med understrecket&quot;_&quot; (tillåtet tecken). &quot;abc-def&quot; och &quot;abc:def&quot; skulle till exempel lagras som &quot;abc_def&quot; och skrivas över varandra.</li></ul> |
 | Etikett | <ul><li>Etiketten är ett företags-ID eller en post i Adobe Campaign.</li><li>Det här objektet tillåter mellanslag och specialtecken.</li><li>Det garanterar inte att ett register är unikt.</li></ul> | <ul><li>Du bör bestämma en struktur för objektetiketterna.</li><li>Detta är den mest användarvänliga lösningen för att identifiera en post eller ett objekt för en Adobe Campaign-användare.</li></ul> |
 
-När det gäller en [Företagsdistribution (FFDA)](../architecture/enterprise-deployment.md)är Adobe Campaign primärnyckel ett automatiskt genererat UUID för alla inbyggda tabeller. Ett UUID kan också användas för anpassade tabeller. [Läs mer](../architecture/keys.md)
+I kontexten för en [Enterprise (FFDA)-distribution](../architecture/enterprise-deployment.md) är Adobe Campaign primärnyckel ett autogenererat UUID för alla inbyggda tabeller. Ett UUID kan också användas för anpassade tabeller. [Läs mer](../architecture/keys.md)
 
 Även om antalet ID:n är oändligt bör du ta hand om databasens storlek för att säkerställa optimala prestanda. Om du vill förhindra problem måste du justera inställningarna för instansrensning. Mer information finns i [det här avsnittet](#data-retention).
 
@@ -107,12 +107,12 @@ Denna anpassade nyckel är den faktiska primärnyckeln för posten i det externa
 
 När du skapar en anpassad tabell finns det två alternativ:
 * En kombination av autogenererad nyckel (id) och intern nyckel (anpassad). Det här alternativet är intressant om systemnyckeln är en sammansatt nyckel eller inte ett heltal. Med Snowflake får heltal och strängbaserade nycklar högre prestanda i stora tabeller och med andra tabeller.
-* Använda primärnyckeln som extern systemprimärnyckel. Den här lösningen är vanligtvis att föredra eftersom den förenklar import och export av data, med en konsekvent nyckel mellan olika system. **AutoUid** ska inaktiveras om nyckeln heter&quot;id&quot; och förväntas fyllas med externa värden (inte autogenererade).
+* Använda primärnyckeln som extern systemprimärnyckel. Den här lösningen är vanligtvis att föredra eftersom den förenklar import och export av data, med en konsekvent nyckel mellan olika system. **Autouid** ska inaktiveras om nyckeln heter&quot;id&quot; och förväntas fyllas med externa värden (inte autogenererade).
 
 >[!CAUTION]
 >
 >* Ett autouid ska inte användas som referens i arbetsflöden.
-> * The **autouuid** attributet gäller endast för [Företagsdistributioner (FFDA)](../architecture/enterprise-deployment.md).
+> * Attributet **autouid** gäller bara för [Enterprise (FFDA)-distributioner](../architecture/enterprise-deployment.md).
 >
 
 ## Länkar och kardinalitet {#links-and-cardinality}
@@ -121,7 +121,7 @@ När du skapar en anpassad tabell finns det två alternativ:
 
 Se upp för den&quot;egna&quot; integriteten i stora tabeller. Om du tar bort poster som har stora tabeller med &quot;egen&quot; integritet kan instansen eventuellt stoppas. Tabellen är låst och borttagningarna görs en i taget. Därför är det bäst att använda&quot;neutral&quot; integritet i underordnade tabeller som har stora volymer.
 
-Att deklarera en länk som en extern koppling är inte bra för prestandan. Posten med noll-id emulerar den externa kopplingsfunktionen. När det gäller en [Företagsdistribution (FFDA)](../architecture/enterprise-deployment.md)behöver du inte deklarera externa kopplingar om länken använder **autouuid**.
+Att deklarera en länk som en extern koppling är inte bra för prestandan. Posten med noll-id emulerar den externa kopplingsfunktionen. I kontexten för en [Enterprise (FFDA)-distribution](../architecture/enterprise-deployment.md) är det inte nödvändigt att deklarera externa kopplingar om länken använder **autouid**.
 
 Även om det är möjligt att ansluta en tabell i ett arbetsflöde rekommenderar Adobe att du definierar gemensamma länkar mellan resurser direkt i datastrukturdefinitionen.
 
@@ -141,7 +141,7 @@ Definiera en länk med en kardinalitet (1-N) i schemat på (N) sidan. Relationen
 
 Observera att en länks omvända kardinalitet är (N) som standard. Det går att definiera en länk (1-1) genom att lägga till attributet revCardinality=&#39;single&#39; till länkdefinitionen.
 
-Om den omvända länken inte ska vara synlig för användaren kan du dölja den med länkdefinitionen revLink=&#39;_INGEN_&#39;. Ett bra exempel för detta är att definiera en länk från mottagaren till den senast slutförda transaktionen. Du behöver bara se länken från mottagaren till den sista transaktionen och ingen omvänd länk krävs för att kunna visas från transaktionsregistret.
+Om den omvända länken inte ska vara synlig för användaren kan du dölja den med länkdefinitionen revLink=_NONE_. Ett bra exempel för detta är att definiera en länk från mottagaren till den senast slutförda transaktionen. Du behöver bara se länken från mottagaren till den sista transaktionen och ingen omvänd länk krävs för att kunna visas från transaktionsregistret.
 
 Länkar som utför en extern koppling (1-0..1) bör användas med försiktighet eftersom det påverkar systemets prestanda.
 
@@ -213,9 +213,9 @@ Nedan följer några vanliga metodtips som bör följas när du utformar din dat
 
 Tabellstorleken är en kombination av antalet poster och antalet kolumner per post. Båda kan påverka prestanda för frågor.
 
-* A **liten storlek** tabellen liknar tabellen Delivery.
-* A **medelstor storlek** tabellen är densamma som storleken på mottagartabellen. Det finns en post per kund.
-* A **stor** tabellen påminner om den allmänna loggtabellen. Det finns många poster per kund.
+* En **liten**-tabell liknar leveranstabellen.
+* En tabell med storleken **medel** är samma som storleken på mottagartabellen. Det finns en post per kund.
+* En **stor**-tabell liknar den stora loggtabellen. Det finns många poster per kund.
 Om din databas till exempel innehåller 10 miljoner mottagare innehåller den stora loggtabellen cirka 100 till 200 miljoner meddelanden och leveranstabellen innehåller några tusen poster.
 
 Antalet rader påverkar även prestandan. Adobe Campaign-databasen är inte utformad för att lagra historiska data som inte aktivt används för målinriktning eller personalisering - det här är en operativ databas.

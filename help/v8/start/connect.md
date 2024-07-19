@@ -18,24 +18,24 @@ Om du vill ansluta till Campaign med klientkonsolen måste du först installera 
 
 Innan du börjar måste du:
 
-* Kontrollera system- och verktygskompatibiliteten med Adobe Campaign i [Kompatibilitetsmatris](compatibility-matrix.md)
+* Kontrollera system- och verktygskompatibiliteten med Adobe Campaign i [kompatibilitetsmatrisen](compatibility-matrix.md)
 * Hämta webbadressen till Campaign-servern
 * Skapa din Adobe ID eller hämta inloggningsuppgifter från ditt företag
-* Installera Microsoft Edge Webview2-miljön på datorn. [Läs mer](#webview)
+* Installera Microsoft Edge Webview2 runtime på datorn. [Läs mer](#webview)
 
 
 >[!NOTE]
 >
->Du kan även ansluta till Campaign-webbgränssnittet med en webbläsare. Läs mer om det nya webbgränssnittet för Campaign i [den här dokumentationen](https://experienceleague.adobe.com/docs/campaign-web/v8/campaign-web-home.html){target="_blank"}.
+>Du kan även ansluta till Campaign-webbgränssnittet med en webbläsare. Läs mer om det nya Campaign-webbanvändargränssnittet i [den här dokumentationen](https://experienceleague.adobe.com/docs/campaign-web/v8/campaign-web-home.html){target="_blank"}.
 
 
 ## Installera klientkonsolen{#download-ac-console}
 
 ### Microsoft Edge Webview2, runtime {#webview}
 
-Från version 8.4 av Campaign Classic krävs installation av Microsoft Edge Webview 2 för alla installationer av klientkonsoler.
+Från version 8.4 av Campaign Classic krävs installation av Microsoft Edge Webview 2 för alla installationer av klientkonsolen.
 
-Webbvyn installeras som standard som en del av Windows 11. Om det inte redan finns på datorn uppmanas du att hämta det från installationsprogrammet för Campaign-klientkonsolen [Microsoft Developer website](http://www.adobe.com/go/acc-ms-webview2-runtime-download){target="_blank"}. Observera att nedladdningslänken inte fungerar i webbläsaren Internet Explorer 11 eftersom Microsoft inte längre stöder det. Kontrollera att du använder en annan webbläsare för att komma åt länken.
+Webbvyn installeras som standard som en del av Windows 11. Om det inte redan finns på datorn uppmanas du att hämta det från [Microsoft Developer-webbplatsen](http://www.adobe.com/go/acc-ms-webview2-runtime-download){target="_blank"}. Observera att nedladdningslänken inte fungerar i webbläsaren Internet Explorer 11 eftersom Microsoft inte längre stöder det. Kontrollera att du använder en annan webbläsare för att komma åt länken.
 
 ### Ladda ned konsolen{#install-ac-console}
 
@@ -43,7 +43,7 @@ När du använder Campaign för första gången måste du hämta klientkonsolen 
 
 Det finns två alternativ för att hämta klientkonsolen:
 
-1. Som kampanjadministratör ansluter du till Adobe [Programvarudistribution](https://experience.adobe.com/#/downloads/content/software-distribution/en/campaign.html){target="_blank"}.
+1. Som kampanjadministratör ansluter du till Adobe [Software Distribution](https://experience.adobe.com/#/downloads/content/software-distribution/en/campaign.html){target="_blank"}.
 
 1. Som slutanvändare distribuerar er Campaign-administratör klientkonsolen åt er och gör den tillgänglig via en dedikerad URL.
 
@@ -57,21 +57,21 @@ När klientkonsolen har installerats följer du stegen nedan för att skapa ansl
 
 1. Starta konsolen och bläddra genom länken i det högra hörnet för att komma åt skärmen för anslutningskonfiguration.
 
-1. Klicka **[!UICONTROL Add > Connection]** och ange etiketten och URL:en för Adobe Campaign-programservern.
+1. Klicka på **[!UICONTROL Add > Connection]** och ange etiketten och URL:en för Adobe Campaign-programservern.
 
 1. Ange en anslutning till Adobe Campaign-programservern via en URL. Använd antingen en DNS eller ett alias för datorn eller din IP-adress.
 
-   Du kan till exempel använda [`https://<machine>.<domain>.com`](https://myserver.adobe.com) skriv-URL.
+   Du kan till exempel använda URL-adressen av typen [`https://<machine>.<domain>.com`](https://myserver.adobe.com).
 
 1. Markera alternativet **[!UICONTROL Connect with an Adobe ID]**.
 
-1. Klicka **[!UICONTROL Ok]** för att spara inställningarna.
+1. Klicka på **[!UICONTROL Ok]** om du vill spara inställningarna.
 
 Du kan lägga till så många anslutningar som behövs för att ansluta till test-, scen- och produktionsmiljöer, till exempel.
 
 >[!NOTE]
 >
->The **[!UICONTROL Add]** knappen kan du skapa **[!UICONTROL folders]** för att ordna alla dina kontakter. Bara dra och släpp varje anslutning till en mapp.
+>Med knappen **[!UICONTROL Add]** kan du skapa **[!UICONTROL folders]** för att ordna alla dina anslutningar. Bara dra och släpp varje anslutning till en mapp.
 
 ## Logga in på Adobe Campaign {#logon-to-ac}
 
@@ -97,13 +97,13 @@ Sedan kan du logga in på Campaign med din Adobe ID.
 
 ## Uppgradera din klientkonsol{#upgrade-ac-console}
 
-När datorn uppgraderas till en nyare version måste du uppdatera klientkonsolen till den versionen. Det här är en god praxis och för vissa versioner är den här uppgraderingen obligatorisk. I så fall anges det i [Versionsinformation](release-notes.md).
+När datorn uppgraderas till en nyare version måste du uppdatera klientkonsolen till den versionen. Det här är en god praxis och för vissa versioner är den här uppgraderingen obligatorisk. I så fall nämns det i [versionsinformationen](release-notes.md).
 
 Som användare av hanterade Cloud Service distribuerar Adobe klientkonsolen åt dig. När du ansluter till den uppgraderade miljön uppmanas du att hämta den senaste klientkonsolversionen i ett popup-fönster. Du måste acceptera den här uppgraderingen och uppdatera klientkonsolen efter begäran.
 
 >[!CAUTION]
 >
->Adobe rekommenderar att du låter alternativet vara kvar **[!UICONTROL No longer ask this question]** avmarkerat för att säkerställa att du får en varning när en ny version av konsolen är tillgänglig. Om det här alternativet väljs informeras användaren inte om att en Console-uppgradering krävs.
+>Adobe rekommenderar att du låter alternativet **[!UICONTROL No longer ask this question]** vara avmarkerat för att vara säker på att du får ett meddelande när en ny version av konsolen är tillgänglig. Om det här alternativet väljs informeras användaren inte om att en Console-uppgradering krävs.
 >
 
 
@@ -121,11 +121,11 @@ Läs mer om användare och hur du definierar deras behörigheter i [det här avs
 
 ### Webbgränssnitt {#connect-web-ui}
 
-Från och med Campaign v8.6 har du tillgång till den nya **Kampanjwebbgränssnitt** som finns i Adobe Experience Cloud centrala miljö. Experience Cloud är en integrerad familj av program, produkter och tjänster för digital marknadsföring i Adobe. Från det intuitiva gränssnittet får du snabbt tillgång till dina molnprogram, produktfunktioner och tjänster.
+Från och med Campaign v8.6 har du tillgång till det nya **Campaign-webbgränssnittet** som är tillgängligt via den centrala Adobe Experience Cloud-miljön. Experience Cloud är en integrerad familj av program, produkter och tjänster för digital marknadsföring i Adobe. Från det intuitiva gränssnittet får du snabbt tillgång till dina molnprogram, produktfunktioner och tjänster.
 
-Lär dig ansluta till Adobe Experience Cloud och få tillgång till Adobe Campaign webbgränssnitt [på den här sidan](campaign-ui.md#ac-web-ui).
+Lär dig hur du ansluter till Adobe Experience Cloud och kommer åt Adobe Campaign webbgränssnitt [på den här sidan](campaign-ui.md#ac-web-ui).
 
-Läs mer i [Dokumentation för Adobe Campaign webbgränssnitt](https://experienceleague.adobe.com/en/docs/campaign-web/v8/campaign-web-home){target="_blank"}.
+Läs mer i [Adobe Campaign webbgränssnitt ](https://experienceleague.adobe.com/en/docs/campaign-web/v8/campaign-web-home){target="_blank"}.
 
 ### Webbåtkomst {#web-access}
 
@@ -143,4 +143,4 @@ Med tillgång till webben kommer man främst att kunna se
 
 Webbåtkomst används också i valideringsprocessen: operatorer kan klicka på e-postmeddelandet med godkännandebegäran och ansluta till Campaign via sin webbläsare för att validera eller avvisa ett leveransinnehåll eller en budget.
 
-Om du vill komma åt Campaign-instansen från webben är URL:en:  `https://<your adobe campaign server>:<port number>/view/home`.
+Om du vill komma åt Campaign-instansen från webben är URL:en: `https://<your adobe campaign server>:<port number>/view/home`.

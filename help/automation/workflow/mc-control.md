@@ -1,20 +1,20 @@
 ---
 product: campaign
-title: Meddelandecenter (kontroll)
-description: Meddelandecenter (kontroll)
+title: Message Center (Control)
+description: Message Center (Control)
 feature: Workflows
 role: User
 source-git-commit: 567c2e84433caab708ddb9026dda6f9cb717d032
 workflow-type: tm+mt
-source-wordcount: '129'
-ht-degree: 8%
+source-wordcount: '125'
+ht-degree: 1%
 
 ---
 
 
-# Meddelandecenter (kontroll){#message-center-control}
+# Message Center (Control){#message-center-control}
 
-Arbetsflödet som anges nedan är schemalagt att köras varje timme. Den installeras med **Message Center - Control** som standard.
+Arbetsflödet som anges nedan är schemalagt att köras varje timme. Den installeras med modulen **Message Center - Control** som standard.
 
 
 <table> 

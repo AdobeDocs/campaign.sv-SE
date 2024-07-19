@@ -14,15 +14,15 @@ ht-degree: 4%
 
 # Erbjudandemotor{#offer-engine}
 
-The **[!UICONTROL Offer engine]** kan du definiera ett anrop till erbjudandemotorn före leverans.
+Med aktiviteten **[!UICONTROL Offer engine]** kan du definiera ett anrop till erbjudandemotorn före en leverans.
 
 Denna aktivitet fungerar enligt samma princip som anrikningsaktiviteten med ett motoranrop genom att anrika den inkommande populationsinformationen med ett erbjudande som beräknas av motorn, före leverans.
 
 ![](assets/int_offerengine_activity2.png)
 
-När du har konfigurerat frågan (se [section](query.md)):
+När du har konfigurerat din fråga (se det här [avsnittet](query.md)):
 
-1. Lägg till och öppna en **[!UICONTROL Offer engine]** aktivitet.
+1. Lägg till och öppna en **[!UICONTROL Offer engine]**-aktivitet.
 1. Fyll i de olika tillgängliga fälten för att ange anrop till motoriska parametrar (erbjudandeutrymme, kategori eller tema, kontaktdatum, antal erbjudanden som ska behållas). Motorn beräknar automatiskt erbjudandena som ska läggas till enligt dessa parametrar.
 
    >[!CAUTION]

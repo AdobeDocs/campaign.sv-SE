@@ -14,7 +14,7 @@ ht-degree: 38%
 
 # Versionsinformation 2021{#2021-release}
 
-På den här sidan visas nya funktioner, förbättringar och korrigeringar som följer med **2021 Campaign v8 Releases**.
+På den här sidan visas nya funktioner, förbättringar och korrigeringar som ingår i **2021 Campaign v8-utgåvorna**.
 
 ## Version 8.2.8 {#release-8-2-8}
 
@@ -54,14 +54,14 @@ _28 oktober 2021_
 <table> 
 <thead>
 <tr> 
-<th> <strong>Universitetstjänst</strong><br /> </th> 
+<th> <strong>Unistadstjänst</strong><br /> </th> 
 </tr> 
 </thead> 
 <tbody> 
 <tr> 
 <td> <p>Unicity Service är en ny komponent i Cloud Database Manager. Det hjälper användarna att bevara och övervaka integriteten för unika nyckelbegränsningar i molndatabastabeller. På så sätt kan du minska risken att infoga dubblettnycklar.
-<p>Eftersom molndatabasen inte tillämpar begränsningar för användargrupper, introducerar Unicity Service på programnivå, <b>en uppsättning nya skyddsräcken</b> minska risken att infoga dubbletter när data hanteras med Adobe Campaign.</p> 
-<p>Unicity Service initierar ett nytt inbyggt arbetsflöde som kallas <b>ffdaUnicity</b> för att övervaka begränsningar för användargrupper och varningar när dubbletter upptäcks.</p>
+<p>Eftersom molndatabasen inte tillämpar begränsningar för användargrupper, introduceras i Unicity Service på programnivå, <b>en uppsättning nya skyddsfunktioner</b> minskar risken för att infoga dubbletter när data hanteras med Adobe Campaign.</p> 
+<p>Unicity Service initierar ett nytt inbyggt arbetsflöde med namnet <b>ffdaUnicity</b> som övervakar begränsningar för unicitet och varningar när dubbletter identifieras.</p>
 <p>Mer information finns i den <a href="../architecture/keys.md">detaljerade dokumentationen</a>.</p>
 </td> </tr> 
 </tbody> 
@@ -71,19 +71,19 @@ _28 oktober 2021_
 **Förbättringar**
 
 * Snowflake-kontakten har förbättrats i fråga om prestanda.
-* För övervaknings- och testningsändamål ska granskningsloggarna för **[!UICONTROL Replicate Staging data]** arbetsflödet innehåller nu antalet poster som har skickats till FDA-databasen (Full Federated Data Access).
+* För övervaknings- och testningsändamål innehåller granskningsloggarna för arbetsflödet **[!UICONTROL Replicate Staging data]** nu antalet poster som har skickats till databasen FFDA (Full Federated Data Access).
 * Med SQL-kodaktiviteten kan du nu välja i vilken databas SQL-skriptet ska lagras: standarddatakällan eller ett valt aktivt FDA-externt konto.
 * En uppsättning fördefinierade lagerställen finns nu tillgängliga och kan användas för att köra olika frågor parallellt, som segmentering, ETL eller toppar. [Läs mer](../config/workflows.md)
 
 **Andra ändringar**
 
-* The **[!UICONTROL Encrypted identifier]** fältet har lagts till i besökarschemat (`nms:visitor`). Det här fältet beräknas och ska användas för webbprogram.
+* Fältet **[!UICONTROL Encrypted identifier]** har lagts till i besökarschemat (`nms:visitor`). Det här fältet beräknas och ska användas för webbprogram.
 * Korrigerade ett problem som gjorde att leveransanalysen misslyckades när vissa IP-tillhörigheter fanns i vissa mellanleverantörsbehållare men inte i alla. Nu lagras alla IP-tillhörigheter i databasen så att alla behållare kan komma åt tillhörigheterna som finns i alla andra behållare. (NEO-37564)
 * Nu kan du importera ett paket med flera scheman och navigeringsträdsnoder.
 
 **Korrigeringar**
 
-* När en användare har tagits bort, i ett dataschema, `<autoStg>` attribut från ett tabelldefinitionselement eller ändrat dess värde från `true` till `false`, har den relaterade mellanlagringstabellen inte tagits bort. Problemet har åtgärdats.
+* När en användare har tagit bort attributet `<autoStg>` från ett tabelldefinitionselement eller ändrat dess värde från `true` till `false` i ett datarema, togs den relaterade mellanlagringstabellen inte bort. Problemet har åtgärdats.
 * Korrigerade ett problem som orsakade ett fel när poster med ett dedikerat formulär skapades på grund av Id-hantering med en FFDA-datakälla.
 * Korrigerade ett problem som kunde förhindra att erbjudanden infogades i en leverans om de hanterades av en anrikningsaktivitet i ett arbetsflöde.
 * Korrigerade ett problem som kunde göra importen av paket långsammare.
@@ -92,7 +92,7 @@ _28 oktober 2021_
 * Korrigerade ett problem som orsakade att problem med nätverkstimeout inte loggades korrekt som problem med skriptavbrott i stället för nätverksfel. Detta problem uppstod vid HTTP-begäranden som inkluderades i JavaScript-aktiviteter.
 * Korrigerade ett problem som förhindrade att erbjudanden replikerades till realtidsmiljön på Snowflake.
 * Korrigerade ett problem som ignorerade attributet autoStg för icke-utökade inbyggda scheman.
-* Ett problem som hindrade användare från att välja **[!UICONTROL Country/Region]** när du förhandsgranskar en profil.
+* Ett problem som gjorde att användare inte kunde välja länken **[!UICONTROL Country/Region]** när de förhandsvisade en profil har korrigerats.
 * Korrigerade ett problem som gjorde att datumväljaren i anpassade rapporter resulterade i ett skriptfel. (NEO-36345)
 * Ett problem som gjorde att systemet kraschade när konfigurationen skulle återskapas om konfigurationsfilerna var felaktiga har åtgärdats.
 * Korrigerade ett problem som hindrade marknadsförings- och kontrollinstanserna från att uppgraderas.
@@ -129,7 +129,7 @@ _7 september 2021_
 
 **Felkorrigeringar**
 
-* Ett problem som förhindrade **Snabbklickningar** från att arbeta när erbjudandena var kopplade till leveransen. (NEO-26295)
+* Ett problem som gjorde att rapporten **Hot Click** inte fungerade när erbjudanden länkades till leveransen har åtgärdats. (NEO-26295)
 * Korrigerade ett problem med aktiviteten **Delarbetsflöde** när körningen inte genererade en utdatatabell. (NEO-36242)
 * Korrigerade olika problem vid export av rapporten **Beskrivande analys** som en PDF-fil. (NEO-25847)
 * Korrigerade ett problem som kan leda till att leveranser misslyckas när en extern e-postleverans används. (NEO-37435)
@@ -140,7 +140,7 @@ _7 september 2021_
 * Korrigerade ett problem med FFDA som förhindrar korrekt replikering av operatörsgrupper och behörigheter.
 * Korrigerade ett problem som kunde leda till att en felaktig avprenumerationslänk skickades via leveransen.
 * Ett problem med replikeringshantering som påverkar efteruppgraderingens varaktighet har korrigerats.
-* Ett problem som kunde förhindra **Snabbklickning** från att visas.
+* Ett problem som kunde förhindra att **snabbklickningen** visades har korrigerats.
 * Korrigerade ett problem som kunde leda till brutna URL:er i e-postmeddelanden.
 
 ## Version 8.1.14 {#release-8-1-14}
@@ -175,7 +175,7 @@ _23 juli 2021_
 </thead> 
 <tbody> 
 <tr> 
-<td> <p>The <a href="../send/line.md">LINE-kanal</a> är nu tillgängligt med Campaign v8, inklusive följande förbättringar i kombination med <a href="../send/transactional.md">transaktionsmeddelanden</a> modul:
+<td> <p><a href="../send/line.md">LINE-kanalen</a> är nu tillgänglig med Campaign v8, inklusive följande förbättringar i kombination med modulen <a href="../send/transactional.md">transaktionsmeddelanden</a>:
 <ul> 
 <li><p>Korrigerade ett problem som kunde förhindra besökare från att riktas mot en radleverans. 
 </p></li>
@@ -191,7 +191,7 @@ _23 juli 2021_
 
 **Andra förbättringar**
 
-* Ett problem som kunde förhindra **Snabbklickningar** rapportera från visning för specifika leveranser.
-* Ett problem med **Deduplicering** arbetsflödesaktivitet som kan leda till felaktig dubblettinventering.
+* Korrigerade ett problem som kunde förhindra att rapporten **Hot Click** visas för specifika leveranser.
+* Ett problem med arbetsflödesaktiviteten **Deduplicering** har korrigerats, vilket kan leda till en felaktig dubblettinventering.
 * Ett problem har korrigerats när en arbetsflödesfråga med filtret &quot;ID är inte tomt&quot; användes, vilket kan leda till att ett tomt objekt visas i övergångspopulationen.
 * Korrigerade ett problem som förhindrade att ytterligare fält skapades i en ny målmappning.

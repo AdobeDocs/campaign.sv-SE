@@ -16,16 +16,16 @@ ht-degree: 2%
 
 ## Tekniska arbetsflöden {#tech-wf}
 
-När det gäller en [Företagsdistribution (FFDA)](enterprise-deployment.md)Adobe Campaign innehåller ett antal inbyggda tekniska arbetsflöden. Tekniska arbetsflöden kör processer eller jobb som schemaläggs regelbundet på servern.
+I samband med en [Enterprise-distribution](enterprise-deployment.md) (FFDA) levereras Adobe Campaign med en uppsättning inbyggda tekniska arbetsflöden. Tekniska arbetsflöden kör processer eller jobb som schemaläggs regelbundet på servern.
 
 Dessa arbetsflöden utför underhållsåtgärder på databasen, utnyttjar spårningsinformationen i leveransloggarna, skapar återkommande kampanjer med mera.
 
-En fullständig lista över tekniska arbetsflöden finns i [den här sidan](https://experienceleague.adobe.com/docs/campaign/automation/workflows/introduction/wf-type/technical-workflows.html){target="_blank"}.
+En fullständig lista över tekniska arbetsflöden finns på [den här sidan](https://experienceleague.adobe.com/docs/campaign/automation/workflows/introduction/wf-type/technical-workflows.html){target="_blank"}.
 
 Utöver dessa tekniska arbetsflöden förlitar sig Campaign v8 på specifika tekniska arbetsflöden för att hantera [datareplikering](#data-replication).
 
 * **[!UICONTROL Replicate Reference tables]**
-Det här arbetsflödet utför automatisk replikering av inbyggda tabeller som måste finnas i den lokala kampanjdatabasen (Postgres) och molndatabasen ([!DNL Snowflake]). Det är schemalagt att köras varje timme, varje dag. If **lastModified** finns det ett fält som replikeras stegvis, annars replikeras hela tabellen. Ordningen på tabellerna i arrayen nedan är den ordning som används i replikeringsarbetsflödet.
+Det här arbetsflödet utför automatisk replikering av inbyggda tabeller som måste finnas i den lokala kampanjdatabasen (Postgres) och molndatabasen ([!DNL Snowflake]). Det är schemalagt att köras varje timme, varje dag. Om fältet **lastModified** finns utförs replikeringen stegvis, annars replikeras hela tabellen. Ordningen på tabellerna i arrayen nedan är den ordning som används i replikeringsarbetsflödet.
 * **[!UICONTROL Replicate Staging data]**
 Det här arbetsflödet replikerar mellanlagringsdata för enhetsanrop. Det är schemalagt att köras varje timme, varje dag.
 * **[!UICONTROL Deploy FFDA immediately]**\
@@ -33,13 +33,13 @@ Det här arbetsflödet replikerar mellanlagringsdata för enhetsanrop. Det är s
 * **[!UICONTROL Replicate FFDA data immediately]**
 Det här arbetsflödet replikerar XS-data för ett givet externt konto.
 
-Dessa tekniska arbetsflöden är tillgängliga via **[!UICONTROL Administration > Production > Technical workflows > Full FFDA Replication]** nod i Campaign Explorer. **De får inte ändras.**
+Dessa tekniska arbetsflöden är tillgängliga från noden **[!UICONTROL Administration > Production > Technical workflows > Full FFDA Replication]** i Campaign Explorer. **De får inte ändras.**
 
-Vid behov kan du starta datasynkronisering manuellt. Om du vill göra det högerklickar du på **Schemaläggare** aktivitet och välj **Kör väntande uppgifter nu**.
+Vid behov kan du starta datasynkronisering manuellt. Om du vill utföra detta högerklickar du på aktiviteten **Schemaläggaren** och väljer **Kör väntande aktiviteter nu**.
 
 ## Datareplikering {#data-replication}
 
-Vissa inbyggda tabeller replikeras från Campaign-databasen till [!DNL Snowflake] Molndatabas via dedikerade arbetsflöden som beskrivs ovan.
+Vissa inbyggda tabeller replikeras från den lokala databasen i Campaign till [!DNL Snowflake] Cloud-databasen via dedikerade arbetsflöden som beskrivs ovan.
 
 Förstå vilka databaser Adobe Campaign v8 använder, varför data replikeras, vilka data som replikeras och hur replikeringsprocessen fungerar.
 
@@ -50,11 +50,11 @@ Förstå vilka databaser Adobe Campaign v8 använder, varför data replikeras, v
 
 Replikeringsprinciperna baseras på tabellstorleken. Vissa tabeller replikeras i realtid, andra replikeras i timläge. Vissa tabeller får stegvisa uppdateringar när andra ersätts.
 
-Förutom den inbyggda **Replikera referenstabeller** tekniskt arbetsflöde kan du tvinga fram datareplikering i dina arbetsflöden.
+Förutom det inbyggda tekniska arbetsflödet **Replikera referenstabeller** kan du framtvinga datareplikering i dina arbetsflöden.
 
 Du kan:
 
-* lägga till en specifik **Javascript-kod** aktivitet med följande kod:
+* lägg till en specifik **JavaScript-kodsaktivitet** med följande kod:
 
 ```
 nms.replicationStrategy.StartReplicateStagingData("dem:sampleTable")
@@ -63,7 +63,7 @@ nms.replicationStrategy.StartReplicateStagingData("dem:sampleTable")
 ![](assets/jscode.png)
 
 
-* lägga till en specifik **nlmodule** aktivitet med följande kommando:
+* lägg till en specifik **nlmodule**-aktivitet med följande kommando:
 
 ```
 nlserver ffdaReplicateStaging -stagingSchema -instance:acc1
@@ -74,6 +74,6 @@ nlserver ffdaReplicateStaging -stagingSchema -instance:acc1
 
 **Relaterade ämnen**
 
-* [Kom igång med arbetsflöden](https://experienceleague.adobe.com/docs/campaign/automation/workflows/introduction/about-workflows.html){target="_blank"}
+* [Lär dig komma igång med arbetsflöden](https://experienceleague.adobe.com/docs/campaign/automation/workflows/introduction/about-workflows.html){target="_blank"}
 
 * [Datalagringsperioder](../dev/datamodel-best-practices.md#data-retention)

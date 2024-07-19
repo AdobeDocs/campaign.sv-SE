@@ -9,7 +9,7 @@ exl-id: 0f22b17c-ed01-4add-8300-8689b8a9f963
 source-git-commit: 1fb93efac4fee4965213f8b42f518f2c10638e20
 workflow-type: tm+mt
 source-wordcount: '1349'
-ht-degree: 1%
+ht-degree: 2%
 
 ---
 
@@ -19,7 +19,7 @@ Campaign v8.5 introducerar vår senaste tjänst för push-meddelanden, som bygge
 
 >[!AVAILABILITY]
 >
-> Den här funktionen är exklusivt tillgänglig för nya kunder från och med Campaign v8.5 och progressivt introducerad till en uppsättning utvalda kunder. Om din miljö etablerades före juni 2023 gäller den här sidan inte dig och du måste följa de detaljerade procedurerna [på den här sidan](push-settings.md).
+> Den här funktionen är exklusivt tillgänglig för nya kunder från och med Campaign v8.5 och progressivt introducerad till en uppsättning utvalda kunder. Om miljön etablerades före juni 2023 gäller den här sidan inte dig och du måste följa de procedurer som beskrivs [på den här sidan](push-settings.md).
 
 I samband med den här uppdaterade implementeringen kan du skicka push-meddelanden i Adobe Campaign på följande sätt:
 
@@ -29,11 +29,11 @@ I samband med den här uppdaterade implementeringen kan du skicka push-meddeland
 
 1. [Skapa och konfigurera en mobil egenskap i Adobe Experience Platform Data Collection](#create-mobile-property)
 
-1. [Lägg till Adobe Adobe Experience Platform Assurance-tillägg](https://developer.adobe.com/client-sdks/documentation/platform-assurance-sdk/){target="_blank"}(rekommenderas)
+1. [Lägg till Adobe Adobe Experience Platform Assurance-tillägg](https://developer.adobe.com/client-sdks/documentation/platform-assurance-sdk/){target="_blank"} (rekommenderas)
 
 1. [Lägg till Campaign Classic i mobilapplikationen](#campaign-mobile-ap)
 
-1. [Skapa en leverans för både iOS och Android](##push-create)
+1. [Skapa för både iOS och Android](##push-create)
 
 >[!NOTE]
 >
@@ -41,51 +41,51 @@ I samband med den här uppdaterade implementeringen kan du skicka push-meddeland
 
 ## Skapa en appyta i Adobe Experience Platform Data Collection {#create-app-surface}
 
-Du måste lägga till dina push-inloggningsuppgifter för mobilprogrammet i [!DNL Adobe Experience Platform Data Collection].
+Du måste lägga till push-autentiseringsuppgifter för ditt mobilprogram i [!DNL Adobe Experience Platform Data Collection].
 
 Registrering av push-autentiseringsuppgifter krävs för mobilappen för att godkänna att Adobe skickar push-meddelanden åt dig. Se stegen nedan:
 
-1. Från [!DNL Adobe Experience Platform Data Collection]väljer du **[!UICONTROL App Surfaces]** i den vänstra panelen.
+1. I [!DNL Adobe Experience Platform Data Collection] väljer du fliken **[!UICONTROL App Surfaces]** på den vänstra panelen.
 
-1. Klicka **[!UICONTROL Create App Surface]** för att skapa en ny konfiguration.
+1. Klicka på **[!UICONTROL Create App Surface]** om du vill skapa en ny konfiguration.
 
    ![](assets/push-config-1.png)
 
-1. Ange en **[!UICONTROL Name]** för konfigurationen.
+1. Ange **[!UICONTROL Name]** som konfiguration.
 
-1. Från **[!UICONTROL Mobile Application Configuration]** väljer du operativsystem:
+1. Välj operativsystemet från **[!UICONTROL Mobile Application Configuration]**:
 
    * **För iOS**
 
      ![](assets/push-config-2.png)
 
-      1. Ange mobilappen **Paket-ID** i **[!UICONTROL App ID (iOS Bundle ID)]** fält.
+      1. Ange mobilappens **paket-ID** i fältet **[!UICONTROL App ID (iOS Bundle ID)]**.
 
-         Program-ID:t finns i **Allmänt** fliken för det primära målet i **XCode** av ditt Apple-utvecklarkonto.
+         Program-ID:t finns på fliken **Allmänt** för det primära målet i **XCode** för ditt Apple-utvecklarkonto.
 
-      1. Aktivera **[!UICONTROL Push Credentials]** för att lägga till dina autentiseringsuppgifter.
+      1. Aktivera **[!UICONTROL Push Credentials]** om du vill lägga till dina autentiseringsuppgifter.
 
       1. Dra och släpp .p8-filen Apple Push Notification Authentication Key.
 
-         Den här nyckeln kan hämtas från **Certifikat**, **Identifierare** och **Profiler** sidan för ditt Apple-utvecklarkonto.
+         Den här nyckeln kan hämtas från sidan **Certifikat**, **Identifierare** och **Profiler** på ditt Apple-utvecklarkonto.
 
-      1. Ange **Nyckel-ID**. Detta är en 10-teckensträng som tilldelas när en p8-autentiseringsnyckel skapas.
+      1. Ange **nyckel-ID**. Detta är en 10-teckensträng som tilldelas när en p8-autentiseringsnyckel skapas.
 
-         Den finns under **Tangenter** tabba in **Certifikat**, **Identifierare** och **Profiler** sidan för ditt Apple-utvecklarkonto.
+         Den finns på fliken **Tangenter** på sidan **Certifikat**, **Identifierare** och **Profiler** i ditt Apple-utvecklarkonto.
 
-      1. Ange **Team-ID**. Detta är ett strängvärde som finns under **medlemskap** -fliken.
+      1. Ange **Team-ID**. Detta är ett strängvärde som finns under fliken **Medlemskap**.
 
    * **För Android**
 
      ![](assets/push-config-3.png)
 
-      1. Ange **[!UICONTROL App ID (Android package name)]**. Vanligtvis är paketnamnet program-id:t i din `build.gradle` -fil.
+      1. Ange **[!UICONTROL App ID (Android package name)]**. Paketnamnet är vanligtvis program-ID:t i din `build.gradle`-fil.
 
-      1. Byt **[!UICONTROL Push Credentials]** för att lägga till dina autentiseringsuppgifter.
+      1. Växla **[!UICONTROL Push Credentials]** om du vill lägga till dina autentiseringsuppgifter.
 
-      1. Dra och släpp FCM-push-inloggningsuppgifterna. Mer information om hur du hämtar push-autentiseringsuppgifter finns i [Google Documentation](https://firebase.google.com/docs/admin/setup#initialize-sdk){target="_blank"}.
+      1. Dra och släpp FCM-push-inloggningsuppgifterna. Mer information om hur du hämtar push-autentiseringsuppgifter finns i [Google-dokumentationen](https://firebase.google.com/docs/admin/setup#initialize-sdk){target="_blank"}.
 
-1. Klicka **[!UICONTROL Save]** för att skapa din appkonfiguration.
+1. Klicka på **[!UICONTROL Save]** om du vill skapa appkonfigurationen.
 
 ## Konfigurera programinställningarna i Adobe Campaign{#push-config-campaign}
 
@@ -93,21 +93,21 @@ Registrering av push-autentiseringsuppgifter krävs för mobilappen för att god
 
 Innan du skickar push-meddelanden måste du definiera inställningarna för dina iOS- och Android-appar i Adobe Campaign.
 
-Push-meddelanden skickas till appanvändarna via en dedikerad tjänst. När användare installerar din app prenumererar de på den här tjänsten: Adobe Campaign förlitar sig på den här tjänsten för att endast rikta sig till prenumeranterna av din app. I den här tjänsten måste du lägga till dina iOS- och Android-appar som ska skickas på iOS- och Android-enheter.
+Push-meddelanden skickas till appanvändarna via en dedikerad tjänst. När användare installerar din app prenumererar de på den här tjänsten: Adobe Campaign förlitar sig på den här tjänsten för att endast rikta sig till prenumeranterna av din app. I den här tjänsten måste du lägga till dina iOS- och Android-appar som ska skickas på enheter med iOS och Android.
 
 Följ stegen nedan för att skapa en tjänst för att skicka push-meddelanden:
 
-1. Bläddra till **[!UICONTROL Profiles and Targets > Services and Subscriptions]** och klicka på **[!UICONTROL Create]**.
+1. Bläddra till fliken **[!UICONTROL Profiles and Targets > Services and Subscriptions]** och klicka på **[!UICONTROL Create]**.
 
    ![](assets/push-config-4.png){width="800" align="left"}
 
-1. Ange en **[!UICONTROL Label]** och **[!UICONTROL Internal name]** och väljer en **[!UICONTROL Mobile application]** typ.
+1. Ange en **[!UICONTROL Label]** och en **[!UICONTROL Internal name]** och välj en **[!UICONTROL Mobile application]**-typ.
 
    >[!NOTE]
    >
-   >Standardvärdet **[!UICONTROL Subscriber applications (nms:appSubscriptionRcp)]** målmappningen är länkad till mottagartabellen. Om du vill använda en annan målmappning måste du skapa en ny målmappning och ange den i **[!UICONTROL Target mapping]** tjänstens fält. Läs mer om målmappningar i [den här sidan](../audiences/target-mappings.md).
+   >Standardmålmappningen för **[!UICONTROL Subscriber applications (nms:appSubscriptionRcp)]** är länkad till mottagartabellen. Om du vill använda en annan målmappning måste du skapa en ny målmappning och ange den i fältet **[!UICONTROL Target mapping]** för tjänsten. Läs mer om målmappningar på [den här sidan](../audiences/target-mappings.md).
 
-1. Använd sedan **[!UICONTROL Add]** till höger för att definiera de mobilprogram som använder den här tjänsten.
+1. Använd sedan ikonen **[!UICONTROL Add]** till höger för att definiera de mobilprogram som använder den här tjänsten.
 
    ![](assets/push-config-5.png)
 
@@ -121,44 +121,44 @@ När du har skapat tjänsten måste du nu definiera de mobilprogram som ska anv�
 
 Så här skapar du en app för iOS-enheter:
 
-1. Från din tjänst klickar du på **[!UICONTROL Add]** välj **[!UICONTROL Create an iOS application]**. Klicka på **[!UICONTROL Next]**.
+1. Klicka på **[!UICONTROL Add]** och välj sedan **[!UICONTROL Create an iOS application]** från din tjänst. Klicka på **[!UICONTROL Next]**.
 
    ![](assets/push-config-6.png)
 
-1. Från **[!UICONTROL Launch app configurations list]** markerar du appytan som skapades i det här avsnittet. Klicka på **[!UICONTROL Next]**.
+1. I fönstret **[!UICONTROL Launch app configurations list]** väljer du appytan som tidigare skapats i det här avsnittet. Klicka på **[!UICONTROL Next]**.
 
    ![](assets/push-config-7.png)
 
-1. (valfritt) Du kan förbättra innehållet i ett push-meddelande med vissa **[!UICONTROL Application variables]**. Dessa är helt anpassningsbara och utgör en del av den meddelandenyttolast som skickas till den mobila enheten.
+1. (valfritt) Du kan utöka ett push-meddelandeinnehåll med lite **[!UICONTROL Application variables]**. Dessa är helt anpassningsbara och utgör en del av den meddelandenyttolast som skickas till den mobila enheten.
 
-   I exemplet nedan är **mediaURl** och **mediaExt** -variabler läggs till för att skapa omfattande push-meddelanden och ger sedan programmet den bild som ska visas i meddelandet.
+   I exemplet nedan läggs variablerna **mediaURl** och **mediaExt** till för att skapa omfattande push-meddelanden och ger sedan programmet den bild som ska visas i meddelandet.
 
    ![](assets/push-config-8.png)
 
-1. Gå till **[!UICONTROL Subscription parameters]** för att definiera mappningen med ett tillägg till **[!UICONTROL Subscriber applications (nms:appsubscriptionRcp)]** schema.
+1. Bläddra till fliken **[!UICONTROL Subscription parameters]** för att definiera mappningen med ett tillägg till schemat **[!UICONTROL Subscriber applications (nms:appsubscriptionRcp)]**.
 
-1. Gå till **[!UICONTROL Sounds]** för att definiera ett ljud som ska spelas upp. Klicka **[!UICONTROL Add]** och fylla **[!UICONTROL Internal name]** fält som måste innehålla namnet på filen som är inbäddad i programmet eller namnet på systemljudet.
+1. Bläddra till fliken **[!UICONTROL Sounds]** för att definiera ett ljud som ska spelas upp. Klicka på **[!UICONTROL Add]** och fyll i fältet **[!UICONTROL Internal name]** som måste innehålla namnet på filen som är inbäddad i programmet eller namnet på systemljudet.
 
-1. Klicka **[!UICONTROL Next]** för att börja konfigurera utvecklingsprogrammet.
+1. Klicka på **[!UICONTROL Next]** för att börja konfigurera utvecklingsprogrammet.
 
-1. The **[!UICONTROL Integration key]** är specifikt för varje program. Det länkar mobilprogrammet till Adobe Campaign och kommer att användas när Campaign-tillägget konfigureras.
+1. **[!UICONTROL Integration key]** är specifikt för varje program. Det länkar mobilprogrammet till Adobe Campaign och kommer att användas när Campaign-tillägget konfigureras.
 
-   Se till att det är samma **[!UICONTROL Integration key]** definieras i Adobe Campaign och i programkoden via SDK.
+   Kontrollera att samma **[!UICONTROL Integration key]** har definierats i Adobe Campaign och i programkoden via SDK.
 
-   Läs mer i [dokumentation för utvecklare](https://developer.adobe.com/client-sdks/documentation/adobe-campaign-classic/#configuration-keys){target="_blank"}
+   Läs mer i [utvecklardokumentationen](https://developer.adobe.com/client-sdks/documentation/adobe-campaign-classic/#configuration-keys){target="_blank"}
 
 
    >[!NOTE]
    >
-   > The **[!UICONTROL Integration key]** är helt anpassningsbart med strängvärde, men måste vara exakt densamma som den som anges i SDK:n.
+   > **[!UICONTROL Integration key]** är helt anpassningsbar med strängvärde, men måste vara exakt densamma som den som anges i SDK:n.
    >
    > Du kan inte använda samma certifikat för utvecklingsversionen (sandlådan) och produktionsversionen av programmet.
 
    ![](assets/push-config-9.png)
 
-1. Välj ikonen på menyn **[!UICONTROL Application icon]** för att personalisera mobilapplikationer i din tjänst.
+1. Välj ikonen i fältet **[!UICONTROL Application icon]** om du vill anpassa mobilprogrammet i tjänsten.
 
-1. Klicka **[!UICONTROL Next]** för att börja konfigurera produktionsprogrammet och följa de steg som beskrivs ovan. Observera att du inte kan använda samma **[!UICONTROL Integration key]** för utvecklingsversionen (sandlådan) och produktionsversionen av programmet.
+1. Klicka på **[!UICONTROL Next]** för att börja konfigurera produktionsprogrammet och följ stegen som anges ovan. Observera att du inte kan använda samma **[!UICONTROL Integration key]** för utvecklingsversionen (sandlådan) och produktionsversionen av programmet.
 
 1. Klicka på **[!UICONTROL Finish]**.
 
@@ -168,31 +168,31 @@ Ditt iOS-program kan nu användas i Campaign.
 
 Så här skapar du en app för Android-enheter:
 
-1. Från din tjänst klickar du på **[!UICONTROL Add]** välj **[!UICONTROL Create an Android application]**. Klicka på **[!UICONTROL Next]**.
+1. Klicka på **[!UICONTROL Add]** och välj sedan **[!UICONTROL Create an Android application]** från din tjänst. Klicka på **[!UICONTROL Next]**.
 
    ![](assets/push-config-10.png)
 
-1. Från **[!UICONTROL Launch app configurations list]** markerar du appytan som skapas i det här avsnittet och klickar på **[!UICONTROL Next]**.
+1. I fönstret **[!UICONTROL Launch app configurations list]** väljer du appytan som skapas i det här avsnittet och klickar på **[!UICONTROL Next]**.
 
    ![](assets/push-config-11.png)
 
 1. Integreringsnyckeln är specifik för varje program. Det länkar mobilprogrammet till Adobe Campaign och kommer att användas när Campaign-tillägget konfigureras.
 
-   Se till att det är samma **[!UICONTROL Integration key]** definieras i Adobe Campaign och i programkoden via SDK.
+   Kontrollera att samma **[!UICONTROL Integration key]** har definierats i Adobe Campaign och i programkoden via SDK.
 
-   Läs mer i [dokumentation för utvecklare](https://developer.adobe.com/client-sdks/documentation/adobe-campaign-classic/#configuration-keys){target="_blank"}
+   Läs mer i [utvecklardokumentationen](https://developer.adobe.com/client-sdks/documentation/adobe-campaign-classic/#configuration-keys){target="_blank"}
 
    >[!NOTE]
    >
-   > The **[!UICONTROL Integration key]** är helt anpassningsbart med strängvärde, men måste vara exakt densamma som den som anges i SDK:n.
+   > **[!UICONTROL Integration key]** är helt anpassningsbar med strängvärde, men måste vara exakt densamma som den som anges i SDK:n.
 
    ![](assets/push-config-12.png)
 
-1. Välj ikonen på menyn **[!UICONTROL Application icon]** för att personalisera mobilapplikationer i din tjänst.
+1. Välj ikonen i fältet **[!UICONTROL Application icon]** om du vill anpassa mobilprogrammet i tjänsten.
 
-1. (valfritt) Du kan förbättra innehållet i ett push-meddelande med vissa **[!UICONTROL Application variables]** vid behov. Dessa är helt anpassningsbara och utgör en del av den meddelandenyttolast som skickas till den mobila enheten.
+1. (valfritt) Du kan utöka ett push-meddelandeinnehåll med vissa **[!UICONTROL Application variables]** vid behov. Dessa är helt anpassningsbara och utgör en del av den meddelandenyttolast som skickas till den mobila enheten.
 
-1. Gå till **[!UICONTROL Subscription parameters]** för att definiera mappningen med ett tillägg till **[!UICONTROL Subscriber applications (nms:appsubscriptionRcp)]** schema.
+1. Bläddra till fliken **[!UICONTROL Subscription parameters]** för att definiera mappningen med ett tillägg till schemat **[!UICONTROL Subscriber applications (nms:appsubscriptionRcp)]**.
 
 1. Klicka **[!UICONTROL Finish]** och sen **[!UICONTROL Save]**.
 
@@ -215,38 +215,38 @@ Nedan visas FCM-nyttolastsnamnen för att ytterligare anpassa ditt push-meddelan
 
    ![](assets/push-config-13.png)
 
-1. Ange ett namn för egenskapen och välj **[!UICONTROL Mobile]** som plattformen.
+1. Ange ett namn för egenskapen och välj **[!UICONTROL Mobile]** som plattform.
 
    ![](assets/push-config-14.png)
 
-1. Klicka **[!UICONTROL Save]** för att skapa egenskapen mobile.
+1. Klicka på **[!UICONTROL Save]** för att skapa den mobila egenskapen.
 
 1. Få åtkomst till din nya mobila egenskap.
 
-1. Från kontrollpanelen för mobila egenskaper kan du komma åt **[!UICONTROL Extensions]** väljer du **[!UICONTROL Catalog]** -fliken.
+1. Gå till menyn **[!UICONTROL Extensions]** och sedan till fliken **[!UICONTROL Catalog]** från kontrollpanelen för mobila egenskaper.
 
    ![](assets/push-config-15.png)
 
-1. Installera **[!DNL Adobe Campaign Classic]** tillägg. [Läs mer om Campaign-tillägget](https://developer.adobe.com/client-sdks/documentation/adobe-campaign-classic/#configure-campaign-classic-extension)
+1. Installera tillägget **[!DNL Adobe Campaign Classic]**. [Läs mer om Campaign-tillägget](https://developer.adobe.com/client-sdks/documentation/adobe-campaign-classic/#configure-campaign-classic-extension)
 
    ![](assets/push-config-16.png)
 
 1. Fyll i instansinformationen:
 
-   * **[!UICONTROL Registration endpoint]** eller **[!UICONTROL Tracking endpoint]** URL:er finns i **[!UICONTROL Tools]** > **[!UICONTROL Advanced]** > **[!UICONTROL Deployment wizard]** i Campaign.
-   * **[!UICONTROL Integration keys]** finns i den mobilapp som är konfigurerad i [det här avsnittet](#create-app).
+   * **[!UICONTROL Registration endpoint]** eller **[!UICONTROL Tracking endpoint]** URL:er finns på menyn **[!UICONTROL Tools]** > **[!UICONTROL Advanced]** > **[!UICONTROL Deployment wizard]** i Campaign.
+   * **[!UICONTROL Integration keys]** finns i den mobilapp som konfigurerats i [det här avsnittet](#create-app).
 
    ![](assets/push-config-17.png)
 
 1. Klicka på **[!UICONTROL Save]**.
 
-1. Du måste nu publicera konfigurationen från **[!UICONTROL Publishing flow]** -menyn. [Läs mer](https://developer.adobe.com/client-sdks/documentation/getting-started/create-a-mobile-property/#publish-the-configuration)
+1. Du måste nu publicera konfigurationen från menyn **[!UICONTROL Publishing flow]**. [Läs mer](https://developer.adobe.com/client-sdks/documentation/getting-started/create-a-mobile-property/#publish-the-configuration)
 
-Din mobila egenskap synkroniseras nu automatiskt med **[!UICONTROL Adobe Experience Platform Data Collection]** tekniskt arbetsflöde. [Läs mer](../../automation/workflow/technical-workflows.md#list-technical-workflows)
+Din mobila egenskap synkroniseras nu automatiskt med det tekniska arbetsflödet för **[!UICONTROL Adobe Experience Platform Data Collection]**. [Läs mer](../../automation/workflow/technical-workflows.md#list-technical-workflows)
 
 ## Lägg till Campaign Classic i mobilapplikationen {#campaign-mobile-app}
 
-Adobe Experience Platform Mobile SDK hjälper er att driva lösningar och tjänster från Adobe Experience Cloud i era mobilappar. SDK-konfigurationen hanteras via användargränssnittet för datainsamling för flexibel konfiguration och utbyggbara, regelbaserade integreringar.
+Mobil-SDK:et i Adobe Experience Platform hjälper dig att driva lösningar och tjänster från Adobe Experience Cloud i dina mobilappar. SDK-konfigurationen hanteras via användargränssnittet för datainsamling för flexibel konfiguration och utbyggbara, regelbaserade integreringar.
 
 [Läs mer i Adobe Developer-dokumentationen](https://developer.adobe.com/client-sdks/documentation/adobe-campaign-classic/#add-campaign-classic-to-your-app){target="_blank"}.
 
@@ -254,4 +254,4 @@ Adobe Experience Platform Mobile SDK hjälper er att driva lösningar och tjäns
 
 När du har konfigurerat ditt mobilprogram i datainsamling kan du nu skapa och skicka push-meddelanden i Adobe Campaign.
 
-Se [den här sidan](push.md#push-create) för de detaljerade elementen som är specifika för leveransen av iOS- och Android-meddelanden.
+Se [den här sidan](push.md#push-create) för detaljerade element som är specifika för leveransen av iOS- och Android-meddelanden.

@@ -14,59 +14,59 @@ ht-degree: 4%
 
 # Övergång från [!DNL Campaign Classic] v7 till [!DNL Campaign] v8{#gs-matrix}
 
-Som tidigare [!DNL Campaign Classic] v7-användare, du bör inte förvänta dig några större störningar i ditt sätt att interagera med [!DNL Adobe Campaign]. De flesta ändringar i v8 är inte synliga, med undantag för små ändringar som uppstår i gränssnittet och konfigurationsstegen.
+Som tidigare [!DNL Campaign Classic] v7-användare bör du inte förvänta dig några större störningar i det sätt som du vanligtvis interagerar med [!DNL Adobe Campaign]. De flesta ändringar i v8 är inte synliga, med undantag för små ändringar som uppstår i gränssnittet och konfigurationsstegen.
 
 >[!AVAILABILITY]
 >
->* För tillfället är Campaign v8 **endast** finns som hanterad Cloud Service och kan inte distribueras på plats eller i hybridmiljöer. [Läs mer](#cloud-services)
+>* För närvarande är Campaign v8 **endast** tillgängligt som en hanterad Cloud Service och kan inte distribueras på en lokal eller hybridmiljö. [Läs mer](#cloud-services)
 >
 >* Automatisk migrering från en befintlig Campaign Classic v7-miljö är inte tillgänglig än.
 
 
 ## Hanterade Cloud Service{#cloud-services}
 
-Adobe Campaign v8 finns som **Hanterad Cloud Service**.
+Adobe Campaign v8 är tillgänglig som en **hanterad Cloud Service**.
 
-Adobe Campaign Managed Cloud Services har en plattform för hanterade Cloud Service för att utforma kundupplevelser i flera kanaler och erbjuder en miljö för visuell kampanjsamordning, interaktionshantering i realtid och kanalövergripande körning. Läs mer om Campaign Managed-Cloud Service i [produktbeskrivningssida](https://helpx.adobe.com/se/legal/product-descriptions/adobe-campaign-managed-cloud-services.html){target="_blank"}.
+Adobe Campaign Managed Cloud Services har en plattform för hanterade Cloud Service för att utforma kundupplevelser i flera kanaler och erbjuder en miljö för visuell kampanjsamordning, interaktionshantering i realtid och kanalövergripande körning. Läs mer om Campaign Managed-Cloud Service på [produktbeskrivningssidan](https://helpx.adobe.com/se/legal/product-descriptions/adobe-campaign-managed-cloud-services.html){target="_blank"}.
 
 Det nya erbjudandet kombinerar förstklassiga tjänster med proaktiv tillsyn och snabb varning, med fokus på tre områden:
 
-* **Flexibilitet i molnet** - automatisering av Adobe, med optimerade, standardiserade molndriftsättningar för mer förutsägbara prestanda, större flexibilitet och förbättrad självbetjäning.
-* **Tjänsteupplevelse** — proaktiv tillgänglighet, kapacitet, prestandaövervakning och åtgärder för att förhindra avbrott, åtgärda incidenter snabbare och regelbundet granska tjänsten för kontinuerlig förbättring.
-* **Djupgående kampanjexpertis** — service med hög affinitet från expertgrupper för kundkonstruktion för att tillgodose behov av funktionalitet, teknik eller leveransförmåga, minska driftsättningsriskerna och förbättra ändringshanteringen.
+* **Flexibilitet i molnet** - automatisering av Adobe, med optimerade, standardiserade molndistributioner för mer förutsägbara prestanda, större flexibilitet och förbättrad självbetjäning.
+* **Tjänsteupplevelse** - proaktiv tillgänglighet, kapacitet, prestandaövervakning och åtgärder för att förhindra avbrott, åtgärda incidenter snabbare och granska tjänsten regelbundet för kontinuerlig förbättring.
+* **Djupt kampanjkunnande** - service med hög affinitet från kundingenjörsteamen med experter för att tillgodose funktionalitets-, teknik- eller leveransbehov, minska distributionsriskerna och förbättra ändringshanteringen.
 
-Som tidigare [!DNL Campaign Classic] användare, observera att de flesta av [!DNL Campaign Classic] v7-funktioner är tillgängliga med [!DNL Campaign] v8, förutom en liten uppsättning, som listas i [det här avsnittet](#gs-removed).
+Som tidigare [!DNL Campaign Classic]-användare bör du tänka på att de flesta av funktionerna i [!DNL Campaign Classic] v7 är tillgängliga med [!DNL Campaign] v8, förutom en liten uppsättning, som listas i [det här avsnittet](#gs-removed).
 
 >Den nya molnarkitekturen gör att Campaign kan effektivisera processer, minska kostnaderna, hantera risker och förbättra datasäkerheten. Din Campaign v8-miljö har ett dedikerat VPC (Virtual Private Cloud) som är förkonfigurerat för dig.
 
 
 ## Hybridarkitektur {#hybrid-archi}
 
-Campaign v8 bygger på en **hybridarkitektur**. Om du går över från Campaign Classic v7 bör du tänka på att alla leveranser går via servern för mellanlagring.
+Campaign v8 är beroende av en **hybridarkitektur**. Om du går över från Campaign Classic v7 bör du tänka på att alla leveranser går via servern för mellanlagring.
 
 Följden är att
 
-* Intern routning är **inte möjligt** i Campaign v8 och det externa kontot har inaktiverats i enlighet därmed,
+* Intern routning är **inte möjlig** i Campaign v8 och det externa kontot har inaktiverats i enlighet därmed.
 * Status för leveranserna uppdateras inte direkt - en teknisk process körs på Marketing-instansen som uppdaterar leveransstatus i tid.
 
 
-Läs mer om hur du skickar korrektur för transaktionsmeddelanden vid övergång från v7 på [den här sidan](../send/transactional-template.md#transition-from-v7).
+Läs mer om hur du skickar transaktionsmeddelandekorrektur vid övergång från v7 på [den här sidan](../send/transactional-template.md#transition-from-v7).
 
 
 ## [!DNL Campaign] och [!DNL Snowflake] {#ac-gs-snowflake}
 
-I [Företagsdistribution (FFDA)](../architecture/enterprise-deployment.md), [!DNL Adobe Campaign] v8 fungerar med två databaser: en lokal [!DNL Campaign] databas för användargränssnittet för meddelanden i realtid och enhetliga frågor samt skriva via API:er och ett moln [!DNL Snowflake] databas för kampanjkörning, batchfrågor och arbetsflödeskörning.
+I sin [Enterprise (FFDA)-distribution](../architecture/enterprise-deployment.md) fungerar [!DNL Adobe Campaign] v8 med två databaser: en lokal [!DNL Campaign]-databas för användargränssnittet för meddelanden i realtid och enhetliga frågor och skrivningar via API:er samt en molndatabas [!DNL Snowflake] för kampanjkörning, gruppfrågor och arbetsflödeskörning.
 
-Campaign v8 Enterprise innehåller konceptet **Fullständig federerad dataåtkomst** (FFDA): alla data är nu fjärranslutna till molndatabasen. Med den här nya arkitekturen förenklar driftsättningen av Campaign v8 Enterprise (FFDA) datahanteringen: inget index krävs för molndatabasen. Du behöver bara skapa tabellerna, kopiera data så kan du börja. Cloud-databastekniken kräver inget specifikt underhåll för att garantera prestandanivån.
+Campaign v8 Enterprise innehåller konceptet **FDA (Full Federated Data Access)**: alla data finns nu på fjärrbasis i molndatabasen. Med den här nya arkitekturen förenklar driftsättningen av Campaign v8 Enterprise (FFDA) datahanteringen: inget index krävs för molndatabasen. Du behöver bara skapa tabellerna, kopiera data så kan du börja. Cloud-databastekniken kräver inget specifikt underhåll för att garantera prestandanivån.
 
-Läs mer om [!DNL Campaign] v8-arkitektur i [den här sidan](../architecture/architecture.md).
+Läs mer om arkitekturen [!DNL Campaign] v8 i [den här sidan](../architecture/architecture.md).
 
 
 ## Använd din Adobe ID för att ansluta till Campaign{#adobe-id}
 
 Kampanjanvändare ansluter bara via sina Adobe ID. Samma Adobe ID används för att behålla alla dina Adobe-planer och produkter som är kopplade till ett enda konto för alla Adobe Experience Cloud-lösningar.
 
-Lär dig hur du ansluter till [!DNL Campaign] in [den här sidan](connect.md).
+Lär dig hur du ansluter till [!DNL Campaign] på [den här sidan](connect.md).
 
 ## Analysera data med kuber{#adobe-reporting}
 
@@ -76,7 +76,7 @@ Med Adobe Campaign v8 är kubrapporterna optimerade och har bättre skalbarhet �
 
 ## Otillgängliga funktioner{#gs-unavailable-features}
 
-Observera att vissa funktioner inte är tillgängliga i samband med en [Företagsdistribution (FFDA)](../architecture/enterprise-deployment.md) för Campaign, till exempel:
+Observera att vissa funktioner inte är tillgängliga i samband med en [Enterprise (FFDA)-distribution](../architecture/enterprise-deployment.md) av Campaign, till exempel:
 
 * Hantering av marknadsföringsresurser
 * Kuponger

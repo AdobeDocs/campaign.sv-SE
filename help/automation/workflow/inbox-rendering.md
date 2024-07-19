@@ -16,7 +16,7 @@ ht-degree: 3%
 
 
 
-Arbetsflödet som beskrivs nedan installeras med **Inkorgsåtergivning (IR)** som standard.
+Arbetsflödet som beskrivs nedan installeras som standard med modulen **Inkorgsåtergivning (IR)** .
 
 <table> 
  <tbody> 
@@ -28,7 +28,7 @@ Arbetsflödet som beskrivs nedan installeras med **Inkorgsåtergivning (IR)** so
   <tr> 
    <td> <strong>Uppdatera startnätverk för inkorgsåtergivning</strong><br /> </td> 
    <td> <span class="uicontrol">updateRenderingSeeds</span> <br /> </td> 
-   <td> Det här arbetsflödet uppdaterar e-postadresser som används för inkorgsåtergivning och fungerar bara om HTTPS-porten är öppen för <strong>deliverability.neolane.net</strong>.<br /> </td> 
+   <td> Det här arbetsflödet uppdaterar e-postadresser som används för inkorgsåtergivning och fungerar bara om HTTPS-porten är öppen för <strong>deliverability.neolane.net</strong>.<br />. </td> 
   </tr> 
  </tbody> 
 </table>
