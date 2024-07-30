@@ -3,10 +3,10 @@ title: Versionsinformation om Campaign v8
 description: Senaste Campaign v8-versionen
 feature: Release Notes
 exl-id: 7cf8111d-9f3a-46a4-813a-d4e43a1d1471
-source-git-commit: 65efda7469c5ad35e8d03703951c3d1480b015f4
+source-git-commit: bd53d04791af91afffe683ca92fa78562640170a
 workflow-type: tm+mt
-source-wordcount: '781'
-ht-degree: 14%
+source-wordcount: '931'
+ht-degree: 15%
 
 ---
 
@@ -17,6 +17,33 @@ Adobe Campaign uppdateras regelbundet. Denna regelbundna uppdateringsfrekvens sy
 Som användare av hanterade Cloud Service uppgraderas instansen av Adobe med alla nya versioner. Adobe kommer att kontakta dig och uppgradera dina miljöer. Kampanjklientkonsolen **måste uppgraderas till samma version** som Campaign-servrar. Lär dig hur du uppgraderar din klientkonsol på [den här sidan](../start/connect.md#upgrade-ac-console).
 
 Som kund ska du dessutom kontrollera att du använder de senaste versionerna av systemen som stöds i [kompatibilitetsmatrisen](compatibility-matrix.md).
+
+
+
+## Version 8.6.3 {#release-8-6-3}
+
+_30 juli 2024_
+
+### Nya funktioner {#new-8-6-3}
+
+* **Rich Push Notification** - Du kan nu skicka omfattande push-meddelanden. Rich push notification är en förbättrad form av mobilmeddelanden som går utöver enkla textmeddelanden genom att införliva multimediaelement som bilder, interaktiva knappar eller annat multimediematerial. I den här versionen finns det nu en uppsättning mallar för push-meddelanden för dina iOS- och Android-appar. [Läs mer](../send/rich-push.md).
+
+* Från och med den här versionen, med servicekontot (JWT) som inte längre används av Adobe, förlitar sig Campaign utgående integrationer med Adobes lösningar och appar nu på OAuth Server-to-Server-autentiseringsuppgift. [Läs mer](release-notes.md#change-8-7-1)
+
+### Allmänna förbättringar {#improvements-8-6-3}
+
+* För att öka säkerheten vid all kommunikation mellan program stöds nu mTLS för externa API-anrop.
+
+### Korrigeringar {#fixes-8-6-3}
+
+Följande problem har åtgärdats i den här versionen:
+
+NEO-79328, NEO-78843, NEO-77795, NEO-77014, NEO-76958, NEO-76097, NEO-75898, NEO-725 4, NEO-70263, NEO-67620, NEO-63197, NEO-58596, NEO-56832.
+
+<!--
+https://jira.corp.adobe.com/issues/?filter=585288&jql=fixVersion%20%3D%208.6.3%20AND%20type%20not%20in%20(epic%2C%20test%2C%20sub-task%2C%20Roadmap)%20AND%20resolution%20!%3D%20unresolved%20AND%20%22Fixed%20in%20Build%22%20is%20not%20EMPTY%20and%20type%20in%20(%22customer%20request%22)
+-->
+
 
 ## Version 8.5.3 {#release-8-5-3}
 
