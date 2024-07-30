@@ -6,7 +6,7 @@ feature: Push
 role: User
 level: Beginner
 exl-id: 42e3623b-b401-4fcc-80a7-ea38347fddc6
-source-git-commit: 0c13ee22a7d40aaa9a8c27d3450ec3275a02748f
+source-git-commit: 4e52e596d4eb2a8e1a1799fcd7104dcd894b6c2d
 workflow-type: tm+mt
 source-wordcount: '1989'
 ht-degree: 1%
@@ -358,4 +358,3 @@ När du har definierat meddelandeinnehållet kan du använda testprenumeranter f
 | **[!UICONTROL Notification Count]** | Ange hur många nya olästa uppgifter som ska visas direkt på programikonen. På så sätt kan användaren snabbt se antalet väntande meddelanden. |
 | **[!UICONTROL Visibility]** | Ange synlighetsnivån för ditt meddelande, som kan vara offentlig, privat eller hemlig. Synlighetsnivån avgör hur mycket av meddelandets innehåll som visas på låsskärmen och andra känsliga områden. Mer information finns i [FCM-dokumentationen](https://firebase.google.com/docs/reference/fcm/rest/v1/projects.messages#visibility). |
 | **[!UICONTROL Application variables]** | Gör att du kan definiera meddelandebeteende. Dessa variabler är helt anpassningsbara och ingår som en del av den meddelandenyttolast som skickas till den mobila enheten. |
-
