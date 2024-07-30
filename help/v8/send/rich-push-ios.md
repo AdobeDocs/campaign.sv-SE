@@ -5,7 +5,7 @@ description: Lär dig hur du utformar en omfattande push-meddelandetjänst från
 feature: Push
 role: User
 level: Beginner
-source-git-commit: 0b4fc6da8761d2efe57d8eb0ff87cd11d0e2d250
+source-git-commit: 0c13ee22a7d40aaa9a8c27d3450ec3275a02748f
 workflow-type: tm+mt
 source-wordcount: '1093'
 ht-degree: 3%
@@ -187,4 +187,3 @@ När du har definierat meddelandeinnehållet kan du använda testprenumeranter f
 | **[!UICONTROL Click action]** | Ange åtgärden som är associerad med en användare genom att klicka på meddelandet. |
 | **[!UICONTROL Interruption level]** | <ul><li>Aktiv: Som standard visas meddelandet omedelbart, skärmen visas och ett ljud kan spelas upp. Meddelanden går inte igenom fokusläget.</li><li>Passiv: Systemet lägger till meddelandet i meddelandelistan utan att skärmen eller ljudet ljussätts upp. Meddelanden går inte igenom fokusläget.</li><li> Tidskänslig: Systemet visar meddelandet omedelbart, lyser upp skärmen, kan spela upp ett ljud och gå igenom fokus-lägen. Den här nivån kräver inget särskilt tillstånd från Apple.</li><li>Kritiskt: Systemet visar meddelandet omedelbart, lyser upp skärmen och kringgår avstängningsväxeln eller fokusläget. Observera att den här nivån kräver ett särskilt tillstånd från Apple.</li></ul> |
 | **[!UICONTROL Relevance score]** | Ange ett relevansvärde mellan 0 och 100. Systemet använder detta för att sortera meddelandena i meddelandesammanfattningen. |
-
