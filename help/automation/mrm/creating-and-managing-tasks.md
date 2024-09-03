@@ -5,7 +5,7 @@ description: Skapa och hantera uppgifter
 feature: Campaigns, Resource Management
 role: User
 exl-id: 730d1712-53a6-4bf7-9aac-523b06bd0d0a
-source-git-commit: c3f4ad0b56dd45d19eebaa4d2f06551c8fecac1d
+source-git-commit: 69ff08567f3a0ab827a118a089495fc75bb550c5
 workflow-type: tm+mt
 source-wordcount: '3758'
 ht-degree: 0%
@@ -374,10 +374,10 @@ En meddelandeaktivitet kan ha följande status:
 
 När du skapar en uppgift måste du ange följande element:
 
-* **[!UICONTROL Assigned to]** : operatorn eller gruppen med operatorer som ska ta emot e-postmeddelandet. Om du tilldelar om uppgiften när e-postmeddelandet har skickats, skickas inte e-postmeddelandet till den nya operatorn (för att detta ska ske måste du initiera om uppgiften och ändra startdatumet).
+* **[!UICONTROL Assigned to]**: operatorn eller gruppen med operatorer som ska ta emot e-postmeddelandet. Om du tilldelar om uppgiften när e-postmeddelandet har skickats, skickas inte e-postmeddelandet till den nya operatorn (för att detta ska ske måste du initiera om uppgiften och ändra startdatumet).
 * **Startdatum för aktiviteten**: det datum då e-postmeddelandet skickas. Detta datum måste infalla i framtiden när uppgiften registreras.
 * **Slutdatum för aktivitet**: det datum då aktivitetsstatusen ändras till **[!UICONTROL Finished]**. Som standard är slutdatumet identiskt med startdatumet. Om du tilldelar en varaktighet till aktiviteten kan du däremot symbolisera hur lång tid operatorn måste utföra i schemat, om det behövs.
-* **[!UICONTROL Description]** : texten som anges här visas i meddelandets brödtext.
+* **[!UICONTROL Description]**: texten som anges här visas i meddelandets brödtext.
 
   ![](assets/mrm_task_notif_dashboard_msg.png)
 

@@ -6,7 +6,7 @@ feature: Reporting
 role: Data Engineer
 level: Beginner
 exl-id: 300aedd0-6b5d-4264-bd63-e26a41ab64db
-source-git-commit: 1c879c7803c346d4b602089a22c2639eb83e82be
+source-git-commit: 69ff08567f3a0ab827a118a089495fc75bb550c5
 workflow-type: tm+mt
 source-wordcount: '1438'
 ht-degree: 1%
@@ -70,7 +70,7 @@ Läs mer om uppräkningar på [den här sidan](../../v8/config/ui-settings.md#en
 
 Du kan gruppera värdena i intervall baserat på önskat intervall.
 
-Om du vill definiera intervall manuellt klickar du på knappen **[!UICONTROL Add]** och väljer **[!UICONTROL Define a range]** :
+Om du vill definiera intervall manuellt klickar du på knappen **[!UICONTROL Add]** och väljer **[!UICONTROL Define a range]**:
 
 Ange sedan de nedre och övre gränserna och klicka på **[!UICONTROL Ok]** för att bekräfta.
 

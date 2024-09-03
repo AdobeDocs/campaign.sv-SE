@@ -5,7 +5,7 @@ description: Skapa en lokal kampanj
 feature: Distributed Marketing
 role: User
 exl-id: b46530b5-cb81-40d7-b596-c7685359782a
-source-git-commit: 09db0cc1a14bffefe8d1b8d0d5a06d5b6517a5bb
+source-git-commit: 69ff08567f3a0ab827a118a089495fc75bb550c5
 workflow-type: tm+mt
 source-wordcount: '1553'
 ht-degree: 1%
@@ -62,7 +62,7 @@ Det finns fyra typer av gränssnitt:
 
   ![](assets/mkt_distr_6.png)
 
-* **[!UICONTROL By form]** : den lokala entiteten har åtkomst till ett webbformulär där de, beroende på vilken mall som används, kan redigera innehållet, målet, dess maximala storlek samt datum för skapande och extrahering med hjälp av anpassningsfält. Lokal enhet kan utvärdera mål- och förhandsgranskningsinnehållet från det här webbformuläret.
+* **[!UICONTROL By form]**: Den lokala entiteten har åtkomst till ett webbformulär där de, beroende på vilken mall som används, kan redigera innehållet, målet, dess maximala storlek samt datum för skapande och extrahering med hjälp av anpassningsfält. Lokal enhet kan utvärdera mål- och förhandsgranskningsinnehållet från det här webbformuläret.
 
   ![](assets/mkt_distr_8.png)
 
@@ -74,7 +74,7 @@ Det finns fyra typer av gränssnitt:
 
   ![](assets/mkt_distr_7.png)
 
-* **[!UICONTROL By external form]** : den lokala entiteten har åtkomst till kampanjparametrar i extranätet (inte Adobe Campaign). De här parametrarna är identiska med parametrarna för en **lokal kampanj (efter formulär)**.
+* **[!UICONTROL By external form]**: Den lokala entiteten har åtkomst till kampanjparametrar i extranätet (inte Adobe Campaign). De här parametrarna är identiska med parametrarna för en **lokal kampanj (efter formulär)**.
 * **[!UICONTROL Pre-set]**: Den lokala entiteten beställer kampanjer med standardformuläret, utan att lokalisera det.
 
   ![](assets/mkt_distr_5.png)

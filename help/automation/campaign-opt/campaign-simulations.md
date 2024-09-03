@@ -4,7 +4,7 @@ title: Kom igång med kampanjsimuleringar
 description: Lär dig konfigurera kampanjsimuleringar
 feature: Campaigns
 exl-id: 2b2b668f-87d9-4265-adbc-9098b85c5aab
-source-git-commit: 50688c051b9d8de2b642384963ac1c685c0c33ee
+source-git-commit: 69ff08567f3a0ab827a118a089495fc75bb550c5
 workflow-type: tm+mt
 source-wordcount: '1210'
 ht-degree: 0%
@@ -153,9 +153,9 @@ Om du vill analysera resultatet av en simulering redigerar du dess rapporter: de
 
 Följande rapporter tillhandahålls som standard:
 
-* **[!UICONTROL Detail of simulation exclusions]** : den här rapporten innehåller en detaljerad tabell över uteslutningsorsaker för alla berörda leveranser.
-* **[!UICONTROL Simulation summary]** : den här rapporten visar vilka populationer som har uteslutits från simuleringen under de olika leveranserna.
-* **[!UICONTROL Summary of exclusions linked to the simulation]** : den här rapporten innehåller ett diagram över undantag som orsakas av simuleringen tillsammans med den tillämpade typologiregeln och ett diagram som visar exkluderingsförhållandet per regel.
+* **[!UICONTROL Detail of simulation exclusions]**: Den här rapporten innehåller ett detaljerat diagram över uteslutningsorsaker för alla berörda leveranser.
+* **[!UICONTROL Simulation summary]**: Den här rapporten visar vilka populationer som har uteslutits från simuleringen under de olika leveranserna.
+* **[!UICONTROL Summary of exclusions linked to the simulation]**: Den här rapporten innehåller en tabell över undantag som orsakas av simuleringen tillsammans med den använda typologiregeln och ett diagram som visar exkluderingsförhållandet per regel.
 
 <!--
 >[!NOTE]

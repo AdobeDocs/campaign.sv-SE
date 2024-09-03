@@ -5,9 +5,9 @@ user-guide-description: Produktdokumentation för Adobe Campaign v8 (klientkonso
 title: Adobe Campaign v8-dokumentation
 description: Kampanjdokumentation v8
 breadcrumb-title: Dokumentation om Campaign v8
-source-git-commit: 0b4fc6da8761d2efe57d8eb0ff87cd11d0e2d250
+source-git-commit: 8ff207246bea1f476b37b1d4f2c79498362e7481
 workflow-type: tm+mt
-source-wordcount: '623'
+source-wordcount: '675'
 ht-degree: 16%
 
 ---
@@ -49,7 +49,23 @@ ht-degree: 16%
       + [Lägg till en hemlig kopia-adress](send/email-bcc.md)
       + [Definiera ytterligare e-postparametrar](send/email-parameters.md)
       + [Skicka och övervaka e-postmeddelanden](send/send.md)
-   + [SMS](send/sms.md)
+   + SMS {#sms}
+      + [Kom igång med SMS](send/sms/sms.md)
+      + Konfigurera SMS-kanal {#config-sms}
+         + [Inställningar för externt SMPP-konto](send/sms/smpp-external-account.md)
+         + [SMS-kanalsegenskaper](send/sms/sms-channel.md)
+         + [Verifierar en SMPP-anslutning](send/sms/smpp-connection.md)
+         + [Fristående instans](send/sms/sms-standalone-instance.md)
+         + [Infrastruktur för mellanleverantörer](send/sms/sms-mid-sourcing.md)
+         + [SMPP-anslutningsbeskrivning](send/sms/smpp-connector-delivery.md)
+      + Skapa ett SMS {#create-sms}
+         + [SMS-leveransinställningar](send/sms/sms-delivery-settings.md)
+         + [Definiera innehållet](send/sms/sms-content.md)
+         + [Välj målgruppen](send/sms/sms-audience.md)
+      + Validera och skicka SMS {#validate-sms}
+         + [Skicka SMS-korrektur](send/sms/sms-proofs.md)
+         + [Skicka till målgruppen](send/sms/sms-send.md)
+      + [Övervaka och spåra SMS](send/sms/sms-monitor.md)
    + Push-meddelanden {#push}
       + [Skapa och skicka push-meddelanden](send/push.md)
       + Omfattande push {#rich-push}
@@ -67,10 +83,10 @@ ht-degree: 16%
       + [Använd personaliseringsblock](send/personalization-blocks.md)
       + [Skapa villkor](send/conditions.md)
    + Validera och skicka leveransen {#validate}
-   + [Förhandsgranska och korrektur](send/preview-and-proof.md)
-   + [Leveransanalys](send/delivery-analysis.md)
-   + [Konfigurera och skicka leveransen](send/configure-and-send.md)
-   + [Tidsoptimering för sändning](send/predictive.md)
+      + [Förhandsgranska och korrektur](send/preview-and-proof.md)
+      + [Leveransanalys](send/delivery-analysis.md)
+      + [Konfigurera och skicka leveransen](send/configure-and-send.md)
+      + [Tidsoptimering för sändning](send/predictive.md)
    + Fel, studsar och karantän {#failures}
       + [Karantän](send/quarantines.md)
       + [Leveransfel](send/delivery-failures.md)

@@ -4,7 +4,7 @@ description: Lär dig hur du får åtkomst till och använder globala rapporter
 feature: Reporting, Monitoring
 role: User, Data Engineer
 exl-id: 6e3409d8-86bd-44ba-a40d-10287f53a960
-source-git-commit: 5ab598d904bf900bcb4c01680e1b4730881ff8a5
+source-git-commit: 69ff08567f3a0ab827a118a089495fc75bb550c5
 workflow-type: tm+mt
 source-wordcount: '1750'
 ht-degree: 1%
@@ -25,19 +25,19 @@ Om du vill visa rapporter klickar du på deras namn. Följande rapporter är til
 >
 >I det här avsnittet visas endast rapporter som är länkade till leveranser.
 
-* **[!UICONTROL Delivery throughput]** : referera till [Leveransflöde](#delivery-throughput).
-* **[!UICONTROL Browsers]** : referera till [Webbläsare](#browsers).
-* **[!UICONTROL Sharing to social networks]** : se [Dela till sociala nätverk](#sharing-to-social-networks).
-* **[!UICONTROL Statistics on sharing activities]** : se [Statistik för delning av aktiviteter](#statistics-on-sharing-activities).
-* **[!UICONTROL Operating systems]** : se [Operativsystem](#operating-systems).
-* **[!UICONTROL URLs and click streams]** : referera till [URL:er och klicka på strömmar](delivery-reports.md#urls-and-click-streams).
-* **[!UICONTROL Tracking indicators]** : referera till [Spårningsindikatorer](delivery-reports.md#tracking-indicators).
-* **[!UICONTROL Non-deliverables and bounces]** : referera till [Ej levererbara och studsade](#non-deliverables-and-bounces).
-* **[!UICONTROL User activities]** : se [Användaraktiviteter](#user-activities).
-* **[!UICONTROL Subscription tracking]** : se [Prenumerationsspårning](#subscription-tracking).
-* **[!UICONTROL Delivery summary]** : se [Leveranssammanfattning](delivery-reports.md#delivery-summary).
-* **[!UICONTROL Delivery statistics]** : se [Leveransstatistik](#delivery-statistics).
-* **[!UICONTROL Breakdown of opens]** : se [Indelning av öppningar](#breakdown-of-opens).
+* **[!UICONTROL Delivery throughput]**: se [Leveransflöde](#delivery-throughput).
+* **[!UICONTROL Browsers]**: se [Webbläsare](#browsers).
+* **[!UICONTROL Sharing to social networks]**: se [Dela till sociala nätverk](#sharing-to-social-networks).
+* **[!UICONTROL Statistics on sharing activities]**: läs [Statistik för delning av aktiviteter](#statistics-on-sharing-activities).
+* **[!UICONTROL Operating systems]**: se [Operativsystem](#operating-systems).
+* **[!UICONTROL URLs and click streams]**: se [URL:er och klicka på strömmar](delivery-reports.md#urls-and-click-streams).
+* **[!UICONTROL Tracking indicators]**: se [Spårningsindikatorer](delivery-reports.md#tracking-indicators).
+* **[!UICONTROL Non-deliverables and bounces]**: se [Ej levererbara och studsade](#non-deliverables-and-bounces).
+* **[!UICONTROL User activities]**: se [Användaraktiviteter](#user-activities).
+* **[!UICONTROL Subscription tracking]**: se [Prenumerationsspårning](#subscription-tracking).
+* **[!UICONTROL Delivery summary]**: se [Leveranssammanfattning](delivery-reports.md#delivery-summary).
+* **[!UICONTROL Delivery statistics]**: se [Leveransstatistik](#delivery-statistics).
+* **[!UICONTROL Breakdown of opens]**: se [Indelning av öppningar](#breakdown-of-opens).
 
 ## Leveranskapacitet {#delivery-throughput}
 
@@ -60,10 +60,10 @@ Den här rapporten visar hur öppningar, klick och transaktioner per halvtimme, 
 
 Följande alternativ är tillgängliga:
 
-* **[!UICONTROL Opens]** : Totalt antal meddelanden som öppnats. E-post i textformat tas inte med i beräkningen. [Läs mer](metrics-calculation.md#tracking-opens-).
-* **[!UICONTROL Clicks]** : Totalt antal klick på länkar i leveranser. Klickningar på prenumerationslänkar och spegelsidor beaktas inte.
+* **[!UICONTROL Opens]**: Totalt antal meddelanden som öppnats. E-post i textformat tas inte med i beräkningen. [Läs mer](metrics-calculation.md#tracking-opens-).
+* **[!UICONTROL Clicks]**: Totalt antal klick på länkar i leveranser. Klickningar på prenumerationslänkar och spegelsidor beaktas inte.
 <!--
-* **[!UICONTROL Transactions]** : Total number of transactions after a message is received. In order for a transaction to be taken into account, a transaction type webtracking tag must be inserted into the matching web page. Webtracking configuration is presented in [this section](../../configuration/using/about-web-tracking.md).
+* **[!UICONTROL Transactions]**: Total number of transactions after a message is received. In order for a transaction to be taken into account, a transaction type webtracking tag must be inserted into the matching web page. Webtracking configuration is presented in [this section](../../configuration/using/about-web-tracking.md).
 -->
 
 ## Ej levererbara och studsningar {#non-deliverables-and-bounces}
@@ -88,13 +88,13 @@ För varje feltyp har vi:
 
 Följande indikatorer används:
 
-* **[!UICONTROL User unknown]** : Feltypen som genererades under leveransen indikerar att e-postadressen är ogiltig.
-* **[!UICONTROL Invalid domain]** : Feltypen som genererades när en leverans skickades för att ange att domänen för e-postadressen är fel eller inte finns.
-* **[!UICONTROL Inbox full]** : Feltypen som genererades efter fem leveransförsök för att ange att mottagarens inkorg innehåller för många meddelanden.
-* **[!UICONTROL Account disabled]** : Feltypen som genererades när en leverans skickades för att ange att adressen inte längre finns.
-* **[!UICONTROL Rejected]** : Feltypen som genereras när en adress nekas av IAP (Internet Access Provider), till exempel efter att en säkerhetsregel (antispam-programvara) har använts.
-* **[!UICONTROL Unreachable]** : Feltyp som inträffar i meddelandedistributionssträngen: incident i SMTP-reläet, domän som inte går att nå temporärt, osv.
-* **[!UICONTROL Not connected]** : Feltyp som indikerar att mottagarens mobiltelefon är avstängd eller frånkopplad från nätverket när den skickas.
+* **[!UICONTROL User unknown]**: Feltypen som genererades under leveransen indikerar att e-postadressen är ogiltig.
+* **[!UICONTROL Invalid domain]**: Feltypen som genererades när en leverans skickades för att ange att domänen för e-postadressen är fel eller inte finns.
+* **[!UICONTROL Inbox full]**: Feltypen som genererades efter fem leveransförsök för att ange att mottagarens inkorg innehåller för många meddelanden.
+* **[!UICONTROL Account disabled]**: Feltypen som genererades när en leverans skickades för att ange att adressen inte längre finns.
+* **[!UICONTROL Rejected]**: Feltypen som genereras när en adress nekas av IAP (Internet Access Provider), till exempel efter att en säkerhetsregel (antispam-programvara) har använts.
+* **[!UICONTROL Unreachable]**: Feltyp som inträffar i meddelandedistributionssträngen: incident i SMTP-reläet, domän som inte går att nå temporärt, osv.
+* **[!UICONTROL Not connected]**: Feltyp som indikerar att mottagarens mobiltelefon är avstängd eller frånkopplad från nätverket när den skickas.
 
   >[!NOTE]
   >
@@ -136,9 +136,9 @@ Den globala statistiken om webbläsaranvändning presenteras i form av en värde
 
 Följande indikatorer används:
 
-* **[!UICONTROL Visitors]** : Totalt antal mottagare (per webbläsare) som har klickat på en leverans minst en gång.
-* **[!UICONTROL Pages viewed]** : Totalt antal klick på länkar i en leverans (per webbläsare) för alla leveranser.
-* **[!UICONTROL Usage rate]** : Den här taxan motsvarar fördelningen av besökare (per webbläsare) i förhållande till det totala antalet besökare.
+* **[!UICONTROL Visitors]**: Totalt antal mottagare (per webbläsare) som har klickat på en leverans minst en gång.
+* **[!UICONTROL Pages viewed]**: Totalt antal klick på länkar i en leverans (per webbläsare) för alla leveranser.
+* **[!UICONTROL Usage rate]**: Den här tariffen representerar fördelningen av besökare (per webbläsare) i förhållande till det totala antalet besökare.
 
 **Statistik per webbläsare**
 
@@ -154,8 +154,8 @@ Diagrammet **[!UICONTROL Breakdown per version]** representerar uppdelningen av 
 
 I värdetabellen används följande indikatorer:
 
-* **[!UICONTROL Global rate]** : Den här frekvensen representerar fördelningen av besökare per version jämfört med det totala antalet besökare (i alla webbläsare).
-* **[!UICONTROL Relative rate]** : Den här frekvensen representerar fördelningen av besökare per version jämfört med det totala antalet besökare (i den här webbläsaren).
+* **[!UICONTROL Global rate]**: Den här frekvensen representerar fördelningen av besökare per version jämfört med det totala antalet besökare (i alla webbläsare).
+* **[!UICONTROL Relative rate]**: Den här hastigheten representerar fördelningen av besökare per version jämfört med det totala antalet besökare (i den här webbläsaren).
 
 
 <!--
@@ -171,8 +171,8 @@ This report shows the breakdown of shared and opened messages per social network
 
 In the email delivery statistics, two values are displayed:
 
-* **[!UICONTROL Number of messages to be delivered]** : Total number of messages processed during delivery analysis.
-* **[!UICONTROL Number of successful deliveries]** : Number of messages processed successfully.
+* **[!UICONTROL Number of messages to be delivered]**: Total number of messages processed during delivery analysis.
+* **[!UICONTROL Number of successful deliveries]**: Number of messages processed successfully.
 
 **[!UICONTROL Sharing activities and mail open statistics]**
 
@@ -180,15 +180,15 @@ The central table shows the statistics on email shares and opens.
 
 In the **[!UICONTROL Shares]** column, we have the following indicators:
 
-* **[!UICONTROL No. of sharing activities]** : Total number of messages shared on each social network. This value equals the total number of clicks on the icon of the matching **[!UICONTROL Links for sharing to social networks]** personalization block.
-* **[!UICONTROL Breakdown]** : This rate represents the breakdown of shares per social network, in relation to the total number of shares.
-* **[!UICONTROL Sharing rate]** : This rate represents the breakdown of shares per social network, in relation to the number of messages to be delivered.
+* **[!UICONTROL No. of sharing activities]**: Total number of messages shared on each social network. This value equals the total number of clicks on the icon of the matching **[!UICONTROL Links for sharing to social networks]** personalization block.
+* **[!UICONTROL Breakdown]**: This rate represents the breakdown of shares per social network, in relation to the total number of shares.
+* **[!UICONTROL Sharing rate]**: This rate represents the breakdown of shares per social network, in relation to the number of messages to be delivered.
 
 In the **[!UICONTROL Opens]** column, we have the following indicators:
 
-* **[!UICONTROL No. of opens]** : Total number of messages opened by people whom the message was forwarded to (via the **[!UICONTROL Links for sharing to social networks]** personalization block). This value equals the number of times the mirror page was displayed. Opens by delivery recipients are not taken into account.
-* **[!UICONTROL Breakdown]** : This rate represents the breakdown of opens per social network, in relation to the total number of opens.
-* **[!UICONTROL Rate of opens]** : This rate represents the breakdown of opens per social network, in relation to the total number of shares.
+* **[!UICONTROL No. of opens]**: Total number of messages opened by people whom the message was forwarded to (via the **[!UICONTROL Links for sharing to social networks]** personalization block). This value equals the number of times the mirror page was displayed. Opens by delivery recipients are not taken into account.
+* **[!UICONTROL Breakdown]**: This rate represents the breakdown of opens per social network, in relation to the total number of opens.
+* **[!UICONTROL Rate of opens]**: This rate represents the breakdown of opens per social network, in relation to the total number of shares.
 
 **[!UICONTROL Breakdown of sharing activities and opens]**
 
@@ -205,9 +205,9 @@ Statistics are presented in the form of a table of values and a chart.
 
 The following indicators are used:
 
-* **[!UICONTROL New contacts]** : Number of new subscriptions following the reception of a message shared via email. This value matches the number of people who received a message shared via email, clicked the **[!UICONTROL Subscription link]** and filled in the subscription form. 
-* **[!UICONTROL Opens]** : Total number of messages opened by people whom the message was transferred to (via the **[!UICONTROL Link for sharing to social networks]** personalization block). This value equals the number of times the mirror page was displayed. Opens by delivery recipients are not taken into account.
-* **[!UICONTROL Sharing activities]** : Total number of messages shared via social networks. This value matches the total number of clicks on the icon of the **[!UICONTROL Links for sharing to social networks]** personalization block.
+* **[!UICONTROL New contacts]**: Number of new subscriptions following the reception of a message shared via email. This value matches the number of people who received a message shared via email, clicked the **[!UICONTROL Subscription link]** and filled in the subscription form. 
+* **[!UICONTROL Opens]**: Total number of messages opened by people whom the message was transferred to (via the **[!UICONTROL Link for sharing to social networks]** personalization block). This value equals the number of times the mirror page was displayed. Opens by delivery recipients are not taken into account.
+* **[!UICONTROL Sharing activities]**: Total number of messages shared via social networks. This value matches the total number of clicks on the icon of the **[!UICONTROL Links for sharing to social networks]** personalization block.
 -->
 
 ## Operativsystem {#operating-systems}
@@ -226,9 +226,9 @@ Den globala användningsstatistiken för operativsystem presenteras i form av en
 
 Följande indikatorer används:
 
-* **[!UICONTROL Visitors]** : Dagsgenomsnitt av det totala antalet målmottagare (per operativsystem) som klickade i en leverans minst en gång.
-* **[!UICONTROL Pages viewed]** : Dagsgenomsnitt av totalt antal klick på leveranslänkar (per operativsystem) för alla leveranser.
-* **[!UICONTROL Rate of use]** : Den här frekvensen representerar fördelningen av besökare (per operativsystem) i förhållande till det totala antalet besökare.
+* **[!UICONTROL Visitors]**: Det dagliga genomsnittet av det totala antalet målmottagare (per operativsystem) som klickade i en leverans minst en gång.
+* **[!UICONTROL Pages viewed]**: Dagsgenomsnitt av totalt antal klick på leveranslänkar (per operativsystem) för alla leveranser.
+* **[!UICONTROL Rate of use]**: Den här frekvensen representerar fördelningen av besökare (per operativsystem) i förhållande till det totala antalet besökare.
 
 **Statistik per operativsystem**
 
@@ -244,8 +244,8 @@ Diagrammet **[!UICONTROL Breakdown by version]** representerar uppdelningen av b
 
 I värdetabellen används följande indikatorer:
 
-* **[!UICONTROL Global rate]** : Den här frekvensen representerar fördelningen av besökare (per version) i förhållande till det totala antalet besökare i operativsystemen.
-* **[!UICONTROL Relative rate]** : Den här frekvensen representerar fördelningen av besökare (per version) i förhållande till det totala antalet besökare för det här operativsystemet.
+* **[!UICONTROL Global rate]**: Den här frekvensen representerar fördelningen av besökare (per version) i förhållande till det totala antalet besökare i operativsystemen.
+* **[!UICONTROL Relative rate]**: Den här frekvensen representerar fördelningen av besökare (per version) i förhållande till det totala antalet besökare för det här operativsystemet.
 
 ## Prenumerationsspårning {#subscription-tracking}
 
@@ -263,11 +263,11 @@ Mer information finns på [den här sidan](../start/subscriptions.md).
 
 I värdetabellen används följande indikatorer:
 
-* **[!UICONTROL Subscribers]** : Totalt antal prenumeranter för den berörda perioden.
-* **[!UICONTROL Subscriptions]** : Antal prenumerationer för den aktuella perioden.
-* **[!UICONTROL Unsubscriptions]** : Antal prenumerationer för den aktuella perioden.
-* **[!UICONTROL Evolution]** : Antal avbrutna prenumerationer minus antalet prenumerationer. Kursen beräknas utifrån det totala antalet prenumeranter.
-* **[!UICONTROL Loyalty]** : Abonnenternas lojalitetsgrad för den berörda perioden.
+* **[!UICONTROL Subscribers]**: Totalt antal prenumeranter för den berörda perioden.
+* **[!UICONTROL Subscriptions]**: Antal prenumerationer för den aktuella perioden.
+* **[!UICONTROL Unsubscriptions]**: Antal prenumerationer för den aktuella perioden.
+* **[!UICONTROL Evolution]**: Antal avbrutna prenumerationer minus antalet prenumerationer. Kursen beräknas utifrån det totala antalet prenumeranter.
+* **[!UICONTROL Loyalty]**: Abonnenternas lojalitetsgrad för den berörda perioden.
 
 **[!UICONTROL Subscription evolution curves]**
 
@@ -281,18 +281,18 @@ Den här rapporten visar hur alla meddelanden som bearbetas och skickas har dela
 
 Följande indikatorer används:
 
-* **[!UICONTROL Emails processed]** : Totalt antal meddelanden som har bearbetats av leveransservern.
-* **[!UICONTROL Delivered]** : procentandel av antalet meddelanden som har bearbetats jämfört med det totala antalet bearbetade meddelanden.
-* **[!UICONTROL Hard bounces]** : procent av antalet &quot;hårda&quot; studsar jämfört med det totala antalet bearbetade meddelanden.
-* **[!UICONTROL Soft bounces]** : procent av antalet &quot;mjuka&quot; studsar jämfört med det totala antalet bearbetade meddelanden.
+* **[!UICONTROL Emails processed]**: Totalt antal meddelanden som har bearbetats av leveransservern.
+* **[!UICONTROL Delivered]**: procentandel av antalet meddelanden som har bearbetats jämfört med det totala antalet bearbetade meddelanden.
+* **[!UICONTROL Hard bounces]**: procentandel av antalet &quot;hårda&quot; studsar jämfört med det totala antalet bearbetade meddelanden.
+* **[!UICONTROL Soft bounces]**: procentandel av antalet &quot;mjuka&quot; studsar jämfört med det totala antalet bearbetade meddelanden.
 
   >[!NOTE]
   >
   >Mer information om hårda och mjuka studsar finns på [den här sidan](../send/quarantines.md).
 
-* **[!UICONTROL Opens]** : procentandel av antalet målmottagare som öppnade ett meddelande minst en gång jämfört med antalet meddelanden som bearbetades.
-* **[!UICONTROL Clicks]** : procentandel av antalet personer som klickade i en leverans minst en gång jämfört med antalet meddelanden som bearbetades.
-* **[!UICONTROL Unsubscription]** : procentandel av antalet klick på en länk för att avbryta prenumerationen jämfört med antalet meddelanden som har bearbetats.
+* **[!UICONTROL Opens]**: procentandel av antalet målmottagare som öppnade ett meddelande minst en gång jämfört med antalet meddelanden som bearbetades.
+* **[!UICONTROL Clicks]**: procentandel av antalet personer som klickade i en leverans minst en gång jämfört med antalet meddelanden som bearbetades.
+* **[!UICONTROL Unsubscription]**: procentandel av antalet klick på en länk för att avbryta prenumerationen jämfört med antalet meddelanden som har bearbetats.
 
 ## Indelning av öppningar {#breakdown-of-opens}
 

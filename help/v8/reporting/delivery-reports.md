@@ -3,7 +3,7 @@ title: Inbyggda leveransrapporter från Adobe Campaign
 description: Inbyggda leveransrapporter från Adobe Campaign
 feature: Reporting
 exl-id: e9031d65-6e0e-49da-9990-7687d2a77591
-source-git-commit: 1c879c7803c346d4b602089a22c2639eb83e82be
+source-git-commit: 69ff08567f3a0ab827a118a089495fc75bb550c5
 workflow-type: tm+mt
 source-wordcount: '1021'
 ht-degree: 1%
@@ -51,7 +51,7 @@ I den här rapporten kombineras de viktigaste indikatorerna för att spåra mott
 **[!UICONTROL 1. Delivery statistics]**
 
 * **[!UICONTROL Messages to deliver]**: Totalt antal meddelanden som ska levereras efter leveransanalys.
-* **[!UICONTROL Success]** : Antal meddelanden som har bearbetats.
+* **[!UICONTROL Success]**: Antal meddelanden som har bearbetats.
 
 **[!UICONTROL 2. Reception statistics]**
 
@@ -59,11 +59,11 @@ I den här rapporten kombineras de viktigaste indikatorerna för att spåra mott
 >
 >De relaterade procentsatserna beräknas baserat på antalet meddelanden som har vidarebefordrats.
 
-* **[!UICONTROL Distinct opens for the population reached]** : Uppskattning av antalet målmottagare som har öppnat ett meddelande minst en gång. Klickningar på spårade URL:er beaktas eftersom e-postmeddelanden måste öppnas för att du ska kunna klicka på en länk.
-* **[!UICONTROL Sum of opens for the population reached]** : Uppskattning av det totala antalet öppningar av målmottagare.
-* **[!UICONTROL Clicks on opt-out link]** : Antal klick på länken för att avbryta prenumerationen.
-* **[!UICONTROL Clicks on the mirror page link]** : Antal klick på länken till [spegelsidan](../send/mirror-page.md). För att länken ska kunna beaktas måste den definieras som sådan i leveransguiden (spårade URL:er).
-* **[!UICONTROL Estimation of forwards]** : Uppskattning av antalet e-postmeddelanden som vidarebefordrats av målmottagarna. Det här värdet beräknas genom att subtrahera antalet distinkta personer och antalet distinkta mottagare som klickade i e-postmeddelandet.
+* **[!UICONTROL Distinct opens for the population reached]**: Uppskattning av antalet målmottagare som har öppnat ett meddelande minst en gång. Klickningar på spårade URL:er beaktas eftersom e-postmeddelanden måste öppnas för att du ska kunna klicka på en länk.
+* **[!UICONTROL Sum of opens for the population reached]**: Uppskattning av det totala antalet öppningar av målmottagare.
+* **[!UICONTROL Clicks on opt-out link]**: Antal klick på länken för att avbryta prenumerationen.
+* **[!UICONTROL Clicks on the mirror page link]**: Antal klick på länken till [spegelsidan](../send/mirror-page.md). För att länken ska kunna beaktas måste den definieras som sådan i leveransguiden (spårade URL:er).
+* **[!UICONTROL Estimation of forwards]**: Uppskattning av antalet e-postmeddelanden som vidarebefordrats av målmottagarna. Det här värdet beräknas genom att subtrahera antalet distinkta personer och antalet distinkta mottagare som klickade i e-postmeddelandet.
 
   >[!NOTE]
   >
@@ -73,11 +73,11 @@ I den här rapporten kombineras de viktigaste indikatorerna för att spåra mott
 
 Den här värdetabellen visar hur leveranser, öppningar, klickningar och råreaktivitet per Internetdomän är fördelade. Följande indikatorer används:
 
-* **[!UICONTROL Sent]** : Totalt antal meddelanden som skickats på den här domänen.
-* **[!UICONTROL Complaints]** : Antal meddelanden för den här domänen som har rapporterats som oönskade av mottagaren. Frekvensen beräknas baserat på det totala antalet meddelanden som skickas på den här domänen.
-* **[!UICONTROL Opens]** : Antal distinkta mottagare för den här domänen som har öppnat ett meddelande minst en gång. Frekvensen beräknas baserat på det totala antalet meddelanden som skickas på den här domänen.
-* **[!UICONTROL Clicks]** : Antal distinkta målmottagare som klickade i samma leverans minst en gång. Frekvensen beräknas baserat på det totala antalet meddelanden som skickas på den här domänen
-* **[!UICONTROL Raw reactivity]** : Procentandel av antalet mottagare som klickade i en leverans minst en gång jämfört med antalet mottagare som öppnade en leverans minst en gång.
+* **[!UICONTROL Sent]**: Totalt antal meddelanden som skickats på den här domänen.
+* **[!UICONTROL Complaints]**: Antal meddelanden för den här domänen som har rapporterats som oönskade av mottagaren. Frekvensen beräknas baserat på det totala antalet meddelanden som skickas på den här domänen.
+* **[!UICONTROL Opens]**: Antal distinkta målmottagare för den här domänen som har öppnat ett meddelande minst en gång. Frekvensen beräknas baserat på det totala antalet meddelanden som skickas på den här domänen.
+* **[!UICONTROL Clicks]**: Antal distinkta målmottagare som klickade i samma leverans minst en gång. Frekvensen beräknas baserat på det totala antalet meddelanden som skickas på den här domänen
+* **[!UICONTROL Raw reactivity]**: Procentandel av antalet mottagare som klickade i en leverans minst en gång jämfört med antalet mottagare som öppnade en leverans minst en gång.
 
 >[!NOTE]
 >
@@ -92,20 +92,20 @@ Den här värdetabellen visar hur leveranser, öppningar, klickningar och rårea
 >
 >De relaterade procentsatserna beräknas baserat på antalet meddelanden som har vidarebefordrats.
 
-* **[!UICONTROL Distinct clicks for the population reached]** : Antal distinkta personer som klickat på en leverans minst en gång.
-* **[!UICONTROL Cumulated clicks]** : Totalt antal klickningar av målmottagare, exklusive prenumerationslänkar och spegelsidor.
-* **[!UICONTROL Recipient clicks]** : Antal distinkta målmottagare som klickade i samma leverans minst en gång.
-* **[!UICONTROL Estimated recipient reactivity]** : Förhållande mellan antalet mottagare som har klickat minst en gång i en leverans och det beräknade antalet mottagare som har öppnat en leverans minst en gång. Klickningar på avanmälnings- och spegelsideslänkarna beaktas inte.
+* **[!UICONTROL Distinct clicks for the population reached]**: Antal distinkta personer som klickat på en leverans minst en gång.
+* **[!UICONTROL Cumulated clicks]**: Totalt antal klickningar av målmottagare, exklusive prenumerationslänkar och spegelsidor.
+* **[!UICONTROL Recipient clicks]**: Antal distinkta målmottagare som klickade i samma leverans minst en gång.
+* **[!UICONTROL Estimated recipient reactivity]**: Förhållande mellan antalet mottagare som har klickat minst en gång i en leverans och det uppskattade antalet mottagare som har öppnat en leverans minst en gång. Klickningar på avanmälnings- och spegelsideslänkarna beaktas inte.
 <!--
 **[!UICONTROL 5. Web tracking]**
 
-* **[!UICONTROL Visited pages]** : Number of web pages visited following message reception.
-* **[!UICONTROL Transactions]** : Number of purchases following message reception.
-* **[!UICONTROL Total amount]** : Total amount of purchases following message reception. 
-* **[!UICONTROL Average transaction amount]** : Average purchase made by distinct delivery recipients. 
-* **[!UICONTROL Articles]** : Number of articles purchased by the delivery recipients. 
-* **[!UICONTROL Average count of articles per transaction]** : Average number of items per purchase made by distinct recipients.
-* **[!UICONTROL Average amount per message]** : Average amount of purchases generated per message.
+* **[!UICONTROL Visited pages]**: Number of web pages visited following message reception.
+* **[!UICONTROL Transactions]**: Number of purchases following message reception.
+* **[!UICONTROL Total amount]**: Total amount of purchases following message reception. 
+* **[!UICONTROL Average transaction amount]**: Average purchase made by distinct delivery recipients. 
+* **[!UICONTROL Articles]**: Number of articles purchased by the delivery recipients. 
+* **[!UICONTROL Average count of articles per transaction]**: Average number of items per purchase made by distinct recipients.
+* **[!UICONTROL Average amount per message]**: Average amount of purchases generated per message.
 
   >[!NOTE]
   >
@@ -125,21 +125,21 @@ You can configure the contents of this report by selecting: the score chart to b
 
 The following rates are displayed in the upper section of the report:
 
-* **[!UICONTROL Reactivity]** : Ratio of the number of targeted recipients having clicked in a delivery, in relation to the estimated number of targeted recipients having opened a delivery. Clicks on the opt-out link and on the mirror page are not taken into account.
+* **[!UICONTROL Reactivity]**: Ratio of the number of targeted recipients having clicked in a delivery, in relation to the estimated number of targeted recipients having opened a delivery. Clicks on the opt-out link and on the mirror page are not taken into account.
 
   >[!NOTE]
   >
   >For more information on tracking opens, refer to [this section](metrics-calculation.md#tracking-opens-).
 
-* **[!UICONTROL Distinct clicks]** : Number of distinct people having clicked at least once (excluding unsubscription link and mirror page) in a delivery. The rate displayed is calculated based on the number of messages delivered successfully. 
-* **[!UICONTROL Cumulated clicks]** : Total number of clicks by targeted recipients (excluding unsubscription link and mirror page). The rate displayed is calculated based on the number of messages forwarded successfully.
+* **[!UICONTROL Distinct clicks]**: Number of distinct people having clicked at least once (excluding unsubscription link and mirror page) in a delivery. The rate displayed is calculated based on the number of messages delivered successfully. 
+* **[!UICONTROL Cumulated clicks]**: Total number of clicks by targeted recipients (excluding unsubscription link and mirror page). The rate displayed is calculated based on the number of messages forwarded successfully.
 
-**[!UICONTROL Platform average]** : This average rate, displayed under each rate (reactivity, distinct clicks, and cumulated clicks), is calculated for deliveries sent over the previous six months. Only deliveries with the same typology and on the same channel are taken into account. Proofs are excluded.
+**[!UICONTROL Platform average]**: This average rate, displayed under each rate (reactivity, distinct clicks, and cumulated clicks), is calculated for deliveries sent over the previous six months. Only deliveries with the same typology and on the same channel are taken into account. Proofs are excluded.
 
 The central table provides the following information:
 
-* **[!UICONTROL Clicks]** : Number of cumulated clicks, per link. 
-* **[!UICONTROL Clicks (in %)]** : Breakdown of the number of clicks per link, in relation to the total number of cumulated clicks.
+* **[!UICONTROL Clicks]**: Number of cumulated clicks, per link. 
+* **[!UICONTROL Clicks (in %)]**: Breakdown of the number of clicks per link, in relation to the total number of cumulated clicks.
 
 **[!UICONTROL Breakdown of clicks in time]**
 
@@ -156,8 +156,8 @@ Den här rapporten innehåller all huvudinformation om leveransen.
 
 Det här avsnittet har två indikatorer:
 
-* **[!UICONTROL Initial population]** : Totalt antal mottagare som har angetts som mål för leveransen.
-* **[!UICONTROL Messages rejected by the rule]** : Antal adresser som ignoreras under analysen när typologiregler tillämpas: adress som saknas, är i karantän, på blockeringslista osv. <!--For more information on typology rules, refer to this [page](../../delivery/using/steps-validating-the-delivery.md#validation-process-with-typologies).-->
+* **[!UICONTROL Initial population]**: Totalt antal mottagare som har angetts som mål för leveransen.
+* **[!UICONTROL Messages rejected by the rule]**: Antal adresser som ignoreras under analysen när typologiregler tillämpas: adress som saknas, är i karantän, på blockeringslista osv. <!--For more information on typology rules, refer to this [page](../../delivery/using/steps-validating-the-delivery.md#validation-process-with-typologies).-->
 
 **[!UICONTROL Causes of exclusion]**
 
@@ -168,9 +168,9 @@ I mittdiagrammet visas uppdelningen per regel för meddelanden som avvisats unde
 Detta avsnitt innehåller följande indikatorer:
 
 * **[!UICONTROL Messages to be delivered]**: Totalt antal meddelanden som ska levereras efter leveransanalys.
-* **[!UICONTROL Success]** : Antal meddelanden som har bearbetats. Den associerade frekvensen är förhållandet till antalet meddelanden som ska levereras.
-* **[!UICONTROL Errors]** : Totalt antal fel som har ackumulerats under leveranser och automatisk återinläsning. Den associerade frekvensen är förhållandet till antalet meddelanden som ska levereras.
-* **[!UICONTROL New quarantines]** : Antal adresser i karantän efter en misslyckad leverans (okänd användare, ogiltig domän). Den associerade frekvensen är förhållandet till antalet meddelanden som ska levereras.
+* **[!UICONTROL Success]**: Antal meddelanden som har bearbetats. Den associerade frekvensen är förhållandet till antalet meddelanden som ska levereras.
+* **[!UICONTROL Errors]**: Totalt antal fel som ackumulerats under leveranser och automatisk återinläsning. Den associerade frekvensen är förhållandet till antalet meddelanden som ska levereras.
+* **[!UICONTROL New quarantines]**: Antal adresser i karantän efter en misslyckad leverans (okänd användare, ogiltig domän). Den associerade frekvensen är förhållandet till antalet meddelanden som ska levereras.
 
 ## Snabbklick {#hot-clicks}
 
@@ -189,10 +189,10 @@ Med den kan ni spåra effekten av leveransen på marknaden. Du kan konfigurera h
 
 Den här rapporten innehåller en värdetabell och ett Pareto-diagram som visar hur lång tid det tar att leverera för att uppnå maximal effektivitet. Följande indikatorer används:
 
-* **[!UICONTROL Opens]** : Uppskattning av den tid som krävs för att nå en procentandel av det totala antalet meddelanden som öppnas. E-post i textformat tas inte med i beräkningen. [Läs mer](metrics-calculation.md#tracking-opens-).
-* **[!UICONTROL Clicks]** : Uppskattning av den tid som krävs för att nå en procentandel av det totala antalet inspelade klick. Klicka på länken för avanmälan och spegelsidan beaktas inte.
+* **[!UICONTROL Opens]**: Uppskattning av den tid som krävs för att nå en procentandel av det totala antalet meddelanden som öppnas. E-post i textformat tas inte med i beräkningen. [Läs mer](metrics-calculation.md#tracking-opens-).
+* **[!UICONTROL Clicks]**: Uppskattning av den tid som krävs för att nå en procentandel av det totala antalet inspelade klick. Klicka på länken för avanmälan och spegelsidan beaktas inte.
 <!--
-* **[!UICONTROL Transactions]** : Time required to achieve a percentage of the total number of transactions following message reception. In order for a transaction to be taken into account, a transaction type webtracking tag must be inserted into the matching web page. Webtracking configuration is presented in [this section](../../configuration/using/about-web-tracking.md).
+* **[!UICONTROL Transactions]**: Time required to achieve a percentage of the total number of transactions following message reception. In order for a transaction to be taken into account, a transaction type webtracking tag must be inserted into the matching web page. Webtracking configuration is presented in [this section](../../configuration/using/about-web-tracking.md).
 -->
 
 

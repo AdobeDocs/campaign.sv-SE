@@ -5,7 +5,7 @@ feature: PI, Privacy, Configuration
 role: Developer
 level: Intermediate, Experienced
 exl-id: 1b833745-71d7-430d-ac7d-c830c78ea232
-source-git-commit: b6f7b8a6652034145602d9949fa196eae929fb95
+source-git-commit: 8ff207246bea1f476b37b1d4f2c79498362e7481
 workflow-type: tm+mt
 source-wordcount: '434'
 ht-degree: 0%
@@ -39,8 +39,8 @@ Du kan hitta ett exempel på ett mottagarschematillägg som visar användningen 
 
 Huvudegenskaperna är:
 
-* **[!UICONTROL visibleIf]** : döljer fälten från metadata, vilket innebär att de inte kan nås i en schemavy, kolumnmarkering eller ett uttrycksbyggare. Men detta döljer inga data. Om fältnamnet anges manuellt i ett uttryck visas värdet.
-* **[!UICONTROL accessibleIf]** : döljer data (ersätter dem med tomma värden) från den resulterande frågan. Om visibleIf är tomt får det samma uttryck som **[!UICONTROL accessibleIf]**.
+* **[!UICONTROL visibleIf]**: döljer fälten från metadata och kan därför inte nås i en schemavy, kolumnmarkering eller ett uttrycksbyggare. Men detta döljer inga data. Om fältnamnet anges manuellt i ett uttryck visas värdet.
+* **[!UICONTROL accessibleIf]**: döljer data (ersätter dem med tomma värden) från den resulterande frågan. Om visibleIf är tomt får det samma uttryck som **[!UICONTROL accessibleIf]**.
 
 Här följer konsekvenserna av att använda det här attributet i Campaign:
 

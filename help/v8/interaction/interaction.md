@@ -5,7 +5,7 @@ feature: Interaction, Offers
 role: User, Admin
 level: Beginner
 exl-id: 4da3e69a-6230-4c94-a6f1-4e8c01e854ba
-source-git-commit: 567c2e84433caab708ddb9026dda6f9cb717d032
+source-git-commit: 69ff08567f3a0ab827a118a089495fc75bb550c5
 workflow-type: tm+mt
 source-wordcount: '1608'
 ht-degree: 1%
@@ -118,8 +118,8 @@ Upptäck erbjudandespecifika villkor och tillhörande vägledning innan du börj
 * **Medling**: välja erbjudanden som ska visas i en miljö (berättigade erbjudanden). Principen om arbitrage rangordnar erbjudanden efter prioritet enligt de kriterier som definieras i kategorierna, erbjudandena och sammanhangserbjudandena.
 * **Kontakt**: en kontakt från en inkommande interaktion. Under motorsamtalsbearbetningen är kontakten kopplad till en måldimension. Det finns två typer av kontakter:
 
-   * **[!UICONTROL Identified contact]** : en kontakt som frivilligt har identifierats i kanalen. Vid utgående interaktioner identifieras kontakten automatiskt.
-   * **[!UICONTROL Anonymous contact]** : en kontakt som inte frivilligt har prenumererat via kanalen men som kan identifieras implicit via en cookie. Den här terminologin används bara för inkommande interaktioner.
+   * **[!UICONTROL Identified contact]**: en kontakt som frivilligt har identifierats i kanalen. Vid utgående interaktioner identifieras kontakten automatiskt.
+   * **[!UICONTROL Anonymous contact]**: en kontakt som inte frivilligt har prenumererat via kanalen men som kan identifieras implicit via en cookie. Den här terminologin används bara för inkommande interaktioner.
 
      >[!NOTE]
      >
@@ -131,9 +131,9 @@ Upptäck erbjudandespecifika villkor och tillhörande vägledning innan du börj
 * **Enhetsläge**: en enskild kontakt bearbetas åt gången. Det här läget används vanligtvis för inkommande interaktioner och transaktionsmeddelanden.
 * **Identifieringsläge**: refererar till status för en kontakt:
 
-   * **[!UICONTROL explicit]** : Kontakter identifieras av deras inloggning i kanalgränssnittet.
-   * **[!UICONTROL implicit]** : kontakten identifieras av en cookie (permanent eller session). Den kan behandlas som en anonym eller identifierad kontakt.
-   * **[!UICONTROL anonymous]** : det går inte att identifiera kontakter.
+   * **[!UICONTROL explicit]**: Kontakter identifieras av deras inloggning i kanalgränssnittet.
+   * **[!UICONTROL implicit]**: kontakten identifieras av en cookie (permanent eller session). Den kan behandlas som en anonym eller identifierad kontakt.
+   * **[!UICONTROL anonymous]**: Det går inte att identifiera kontakter.
 
 * **Berättigat erbjudande**: Erbjudandet uppfyller de begränsningar som definierats uppströms och som konsekvent kan erbjudas ett mål.
 * **Presentationsregler**: typologiregler som refereras i erbjudandemiljön, som gör att du kan exkludera vissa erbjudanden genom att ta hänsyn till förslagshistoriken.

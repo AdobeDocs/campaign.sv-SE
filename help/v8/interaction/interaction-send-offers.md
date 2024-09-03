@@ -5,7 +5,7 @@ feature: Interaction, Offers
 role: User, Admin
 level: Beginner
 exl-id: d39b1768-4c39-4d64-b9b6-d9c9424a2b0d
-source-git-commit: 5ab598d904bf900bcb4c01680e1b4730881ff8a5
+source-git-commit: 69ff08567f3a0ab827a118a089495fc75bb550c5
 workflow-type: tm+mt
 source-wordcount: '1241'
 ht-degree: 2%
@@ -59,12 +59,12 @@ Följ stegen nedan för att infoga offertförslag i en leverans:
 
 ### Parametrar för erbjudandemotorn {#parameters-for-calling-offer-engine}
 
-* **[!UICONTROL Space]** : utrymme i erbjudandemiljön som måste väljas för att erbjudandemotorn ska aktiveras.
-* **[!UICONTROL Category]** : den mapp där erbjudandena sorteras. Om ingen kategori anges kommer alla erbjudanden i miljön att beaktas av erbjudandemotorn, såvida inte ett tema väljs.
-* **[!UICONTROL Themes]** : nyckelord har definierats uppströms i kategorierna. Dessa fungerar som ett filter och låter dig förfina antalet erbjudanden som ska presenteras genom att välja dem i en uppsättning kategorier.
-* **[!UICONTROL Number of propositions]** : antal erbjudanden som returneras av motorn och som kan infogas i leveransenheten. Om de inte infogas i meddelandet kommer erbjudandena fortfarande att genereras, men de visas inte.
-* **[!UICONTROL Exclude non-eligible recipients]** : Med det här alternativet kan du aktivera eller inaktivera undantaget för mottagare som det inte finns tillräckligt med giltiga erbjudanden för. Antalet giltiga förslag kan vara lägre än det begärda antalet. Om den här rutan är markerad kommer mottagare som inte har tillräckligt med erbjudanden att uteslutas från leveransen. Om du inte markerar det här alternativet kommer dessa mottagare inte att uteslutas, men de kommer inte att ha det begärda antalet förslag.
-* **[!UICONTROL Do not display anything if no offer is selected]** : Med det här alternativet kan du välja hur meddelandet ska behandlas om något av förslagen inte finns. När den här rutan är markerad visas inte representationen av det saknade förslaget och inget innehåll visas i meddelandet för det här förslaget. Om rutan inte är markerad avbryts själva meddelandet när det skickas och mottagarna får inte längre några meddelanden.
+* **[!UICONTROL Space]**: utrymme i erbjudandemiljön som måste väljas för att erbjudandemotorn ska aktiveras.
+* **[!UICONTROL Category]**: den mapp där erbjudandena sorteras. Om ingen kategori anges kommer alla erbjudanden i miljön att beaktas av erbjudandemotorn, såvida inte ett tema väljs.
+* **[!UICONTROL Themes]**: nyckelord har definierats uppströms i kategorierna. Dessa fungerar som ett filter och låter dig förfina antalet erbjudanden som ska presenteras genom att välja dem i en uppsättning kategorier.
+* **[!UICONTROL Number of propositions]**: antal erbjudanden som returneras av motorn och som kan infogas i leveransenheten. Om de inte infogas i meddelandet kommer erbjudandena fortfarande att genereras, men de visas inte.
+* **[!UICONTROL Exclude non-eligible recipients]**: Med det här alternativet kan du aktivera eller inaktivera undantaget för mottagare som det inte finns tillräckligt med giltiga erbjudanden för. Antalet giltiga förslag kan vara lägre än det begärda antalet. Om den här rutan är markerad kommer mottagare som inte har tillräckligt med erbjudanden att uteslutas från leveransen. Om du inte markerar det här alternativet kommer dessa mottagare inte att uteslutas, men de kommer inte att ha det begärda antalet förslag.
+* **[!UICONTROL Do not display anything if no offer is selected]**: Med det här alternativet kan du välja hur meddelandet ska behandlas om något av förslagen inte finns. När den här rutan är markerad visas inte representationen av det saknade förslaget och inget innehåll visas i meddelandet för det här förslaget. Om rutan inte är markerad avbryts själva meddelandet när det skickas och mottagarna får inte längre några meddelanden.
 
 ## Skicka erbjudanden i arbetsflöden{#offer-via-wf}
 
@@ -100,11 +100,11 @@ När du har konfigurerat din **Query**-aktivitet:
 1. Ange en identifierare och en etikett för det förslag som ska läggas till.
 1. Ange erbjudandevalet. Det finns två möjliga alternativ:
 
-   * **[!UICONTROL Search for the best offer in a category]** : Markera det här alternativet och ange parametrar för offertmotoranrop (erbjudandeutrymme, kategori eller tema, kontaktdatum, antal erbjudanden som ska behållas). Motorn beräknar automatiskt erbjudandena som ska läggas till enligt dessa parametrar. Vi rekommenderar att du fyller i antingen **[!UICONTROL Category]** eller **[!UICONTROL Theme]**-fältet i stället för båda samtidigt.
+   * **[!UICONTROL Search for the best offer in a category]**: Markera det här alternativet och ange parametrar för offertmotoranrop (erbjudandeutrymme, kategori eller tema, kontaktdatum, antal erbjudanden som ska behållas). Motorn beräknar automatiskt erbjudandena som ska läggas till enligt dessa parametrar. Vi rekommenderar att du fyller i antingen **[!UICONTROL Category]** eller **[!UICONTROL Theme]**-fältet i stället för båda samtidigt.
 
      ![](assets/int_enrichment_offer3.png)
 
-   * **[!UICONTROL A pre-defined offer]** : Markera det här alternativet och ange ett erbjudandeutrymme, ett specifikt erbjudande och ett kontaktdatum för att direkt konfigurera det erbjudande du vill lägga till, utan att anropa erbjudandemotorn.
+   * **[!UICONTROL A pre-defined offer]**: markera det här alternativet och ange ett erbjudandeutrymme, ett specifikt erbjudande och ett kontaktdatum för att direkt konfigurera det erbjudande du vill lägga till, utan att anropa erbjudandemotorn.
 
      ![](assets/int_enrichment_offer4.png)
 

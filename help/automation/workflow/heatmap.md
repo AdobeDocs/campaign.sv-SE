@@ -5,7 +5,7 @@ description: Övervaka arbetsflödena med Workflow HeatMap
 feature: Workflows, Heatmap
 role: Admin
 exl-id: aeb35076-2f0d-456d-8562-be69e7e902eb
-source-git-commit: 567c2e84433caab708ddb9026dda6f9cb717d032
+source-git-commit: 69ff08567f3a0ab827a118a089495fc75bb550c5
 workflow-type: tm+mt
 source-wordcount: '1104'
 ht-degree: 3%
@@ -71,8 +71,8 @@ Om du använder HeatMap-arbetsflödet måste du ha god förståelse för följan
 
 1. Du kan även filtrera på **[!UICONTROL Workflow type]**:
 
-   * **[!UICONTROL Technical]** : Endast [inbyggda tekniska arbetsflöden](technical-workflows.md) och [datahanteringsarbetsflöden](targeting-workflows.md#data-management) visas.
-   * **[!UICONTROL Marketing]** : Endast arbetsflöden som är länkade till en marknadsföringskampanj, så kallade [kampanjarbetsflöden](campaign-workflows.md), visas.
+   * **[!UICONTROL Technical]**: Endast [inbyggda tekniska arbetsflöden](technical-workflows.md) och [datahanteringsarbetsflöden](targeting-workflows.md#data-management) visas.
+   * **[!UICONTROL Marketing]**: Endast arbetsflöden som är länkade till en marknadsföringskampanj, som kallas [kampanjarbetsflöden](campaign-workflows.md), visas.
 
 1. Om du vill söka efter ett specifikt arbetsflöde efter namn kan du även använda fältet **[!UICONTROL Workflow name filter]**.
 

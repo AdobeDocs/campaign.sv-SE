@@ -5,7 +5,7 @@ feature: Microsoft CRM Integration
 role: Admin, User
 level: Beginner, Intermediate
 exl-id: 4f9e8f74-27dc-482c-a83c-25623b53560f
-source-git-commit: 09db0cc1a14bffefe8d1b8d0d5a06d5b6517a5bb
+source-git-commit: 69ff08567f3a0ab827a118a089495fc75bb550c5
 workflow-type: tm+mt
 source-wordcount: '1376'
 ht-degree: 1%
@@ -63,7 +63,7 @@ Följ stegen nedan:
 1. Överför ditt offentliga certifikat.
 1. Bläddra till länken **Manifest** för att hämta **identifieraren för certifikatnyckeln (customKeyIdentifier)** och **nyckel-ID:t (keyId)**.
 
-**Certifikatnyckelidentifieraren (customKeyIdentifier)** och **Key-ID (keyId)** behövs i Campaign för att konfigurera ditt externa Microsoft Dynamics 365 CRM-konto med certifikatet **[!UICONTROL CRM O-Auth type]**.
+Identifieraren **för certifikatnyckeln (customKeyIdentifier)** och **nyckel-ID (keyId)** behövs i Campaign för att konfigurera det externa Microsoft Dynamics 365 CRM-kontot med certifikatet **[!UICONTROL CRM O-Auth type]**.
 
 +++ Så här skapar du det offentliga certifikatet
 
@@ -136,7 +136,7 @@ Appanvändaren är den användare som programmet som registrerats ovan kommer at
 
 ### Skapa anslutningen{#new-ms-dyn-external-account}
 
-Först måste du skapa det externa kontot för Microsoft Dynamics 365.
+Först måste du skapa det externa Microsoft Dynamics 365-kontot.
 
 1. Bläddra i noden **[!UICONTROL Administration > Platform > External accounts]** i Campaign Explorer och skapa ett externt konto.
 1. Välj **[!UICONTROL Microsoft Dynamics CRM]** externt konto i avsnittet **Typ**.
@@ -197,12 +197,12 @@ Läs mer om datasynkronisering [på den här sidan](crm-data-sync.md).
 
 ### Datatyper för fält som stöds {#ms-dyn-supported-types}
 
-För Microsoft Dynamics 365 finns följande attributtyper som stöds/inte stöds:
+För attributtyper som stöds/inte stöds i Microsoft Dynamics 365 anges nedan:
 
 
 | Attributtyp | Stöds |
 | --------------------------------------------------------------------------------- | --------- |
-| Grundläggande typer: boolesk, datetime, decimal, float, double, integer, bigint , string | Ja |
+| Grundläggande typer: boolesk, datetime, decimal, float, double, integer, bigint, string | Ja |
 | Pengar (som dubbla) | Ja |
 | memo, entityname , primarykey, uniqueidentifier (som strängar) | Ja |
 | Status, picklist (vi lagrar möjliga värden i uppräkningar), state (sträng) | Ja |

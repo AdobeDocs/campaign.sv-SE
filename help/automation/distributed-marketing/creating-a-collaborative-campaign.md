@@ -5,7 +5,7 @@ description: Lär dig hur du skapar en samverkanskampanj
 feature: Distributed Marketing
 role: User
 exl-id: edf887fb-c391-405c-b3cf-dc34aed69c53
-source-git-commit: 567c2e84433caab708ddb9026dda6f9cb717d032
+source-git-commit: 69ff08567f3a0ab827a118a089495fc75bb550c5
 workflow-type: tm+mt
 source-wordcount: '910'
 ht-degree: 3%
@@ -77,7 +77,7 @@ Om du vill skapa en samarbetskampanj (med målgodkännande) måste du välja mal
 Kampanjarbetsflödet måste integrera aktiviteten av typen **Lokalt godkännande**. Aktivitetsparametrarna är följande:
 
 * **[!UICONTROL Action to perform]**: Meddelande om målgodkännande.
-* **[!UICONTROL Distribution context]** : Explicit.
+* **[!UICONTROL Distribution context]**: explicit.
 * **[!UICONTROL Data distribution]**: Lokal entitetsdistribution.
 
 **Distributionen av datatypen Local Entity Distribution** måste skapas. Med mallen för datadistribution kan du begränsa antalet poster från en lista med grupperingsvärden. Klicka på ikonen **[!UICONTROL New]** i **[!UICONTROL Resources > Campaign management > Data distribution]** för att skapa en ny **[!UICONTROL Data distribution]**. Mer information om datadistribution finns i

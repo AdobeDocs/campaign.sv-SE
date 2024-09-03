@@ -5,7 +5,7 @@ feature: Schema Extension, Configuration, Data Model
 role: Developer
 level: Intermediate, Experienced
 exl-id: 9c4a9e71-3fc8-4b4e-8782-0742bbeaf426
-source-git-commit: 5ab598d904bf900bcb4c01680e1b4730881ff8a5
+source-git-commit: 69ff08567f3a0ab827a118a089495fc75bb550c5
 workflow-type: tm+mt
 source-wordcount: '1394'
 ht-degree: 1%
@@ -217,9 +217,9 @@ Värdet måste vara ett uttryck som är kompatibelt med XPath-språket. Mer info
 
 Om du vill länka ett standardvärde till ett fält kan du använda `<default>  or  <sqldefault>   field.  </sqldefault> </default>`
 
-`<default>` : låter dig fylla i fältet i förväg med ett standardvärde när entiteter skapas. Värdet kommer inte att vara ett standard-SQL-värde.
+`<default>`: gör att du kan förifylla fältet med ett standardvärde när du skapar entiteter. Värdet kommer inte att vara ett standard-SQL-värde.
 
-`<sqldefault>` : ger dig ett mervärde när du skapar ett fält. Värdet visas som ett SQL-resultat. Under en schemauppdatering påverkas bara de nya posterna av det här värdet.
+`<sqldefault>`: ger dig ett mervärde när du skapar ett fält. Värdet visas som ett SQL-resultat. Under en schemauppdatering påverkas bara de nya posterna av det här värdet.
 
 ### Uppräkningar {#enumerations}
 

@@ -5,7 +5,7 @@ feature: Interaction, Offers
 role: User, Admin
 level: Beginner
 exl-id: 4dc2008d-681c-4a79-8fc8-c270c9224ab9
-source-git-commit: 5ab598d904bf900bcb4c01680e1b4730881ff8a5
+source-git-commit: 69ff08567f3a0ab827a118a089495fc75bb550c5
 workflow-type: tm+mt
 source-wordcount: '895'
 ht-degree: 3%
@@ -116,10 +116,10 @@ Använd fliken **[!UICONTROL Content]** för att definiera erbjudandeinnehållet
 
 1. Definiera de olika parametrarna för erbjudandeinnehållet.
 
-   * **[!UICONTROL Title]** : Ange den titel som du vill ska visas i erbjudandet. Varning! Det här refererar inte till erbjudandets etikett, som definieras på fliken **[!UICONTROL General]**.
-   * **[!UICONTROL Destination URL]** : ange erbjudandets URL. Det måste börja med&quot;http://&quot; eller&quot;https://&quot;.
-   * **[!UICONTROL Image URL]** : Ange en URL eller en åtkomstsökväg till bilden av ditt erbjudande.
-   * **[!UICONTROL HTML content]** / **[!UICONTROL Text content]** : ange erbjudandets innehåll på den flik du vill använda. Om du vill generera spårning måste **[!UICONTROL HTML content]** bestå av HTML-element som kan omslutas av ett `<div>`-tytelement. Resultatet av ett `<table>`-element på HTML-sidan blir följande:
+   * **[!UICONTROL Title]**: Ange den titel som du vill ska visas i ditt erbjudande. Varning! Det här refererar inte till erbjudandets etikett, som definieras på fliken **[!UICONTROL General]**.
+   * **[!UICONTROL Destination URL]**: ange erbjudandets URL. Det måste börja med&quot;http://&quot; eller&quot;https://&quot;.
+   * **[!UICONTROL Image URL]**: Ange en URL eller en åtkomstsökväg till bilden av ditt erbjudande.
+   * **[!UICONTROL HTML content]** / **[!UICONTROL Text content]**: Ange innehållet i erbjudandet på den flik du vill använda. Om du vill generera spårning måste **[!UICONTROL HTML content]** bestå av HTML-element som kan omslutas av ett `<div>`-tytelement. Resultatet av ett `<table>`-element på HTML-sidan blir följande:
 
    ```
       <div> 

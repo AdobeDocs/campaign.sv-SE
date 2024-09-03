@@ -5,7 +5,7 @@ feature: Personalization
 role: User
 level: Beginner
 exl-id: 1526048d-9f02-4853-948f-8fb618670dbd
-source-git-commit: c248dd899ea704e43873652545c6b945c2915b57
+source-git-commit: 69ff08567f3a0ab827a118a089495fc75bb550c5
 workflow-type: tm+mt
 source-wordcount: '690'
 ht-degree: 0%
@@ -74,9 +74,9 @@ Bläddra till fliken **[!UICONTROL Analysis]** i leveransegenskaperna för att d
 
 På den här fliken finns följande alternativ:
 
-* **[!UICONTROL Label and code of the delivery]** : alternativen i det här avsnittet används för att beräkna värdena för dessa fält under leveransanalysfasen. Fältet **[!UICONTROL Compute the execution folder during the delivery analysis]** beräknar namnet på mappen som kommer att innehålla den här leveransåtgärden under analysfasen.
+* **[!UICONTROL Label and code of the delivery]**: Alternativen i det här avsnittet används för att beräkna värdena för dessa fält under leveransanalysfasen. Fältet **[!UICONTROL Compute the execution folder during the delivery analysis]** beräknar namnet på mappen som kommer att innehålla den här leveransåtgärden under analysfasen.
 
-* **[!UICONTROL Approval mode]** : I det här fältet kan du definiera manuell eller automatisk leverans när analysen är klar.
+* **[!UICONTROL Approval mode]**: I det här fältet kan du definiera manuell eller automatisk leverans när analysen är klar.
 
   Om varningar genereras under analysen (t.ex. om vissa tecken framhävs i leveransämnet osv.) kan du konfigurera leveransen för att definiera om den fortfarande ska köras eller inte. Som standard måste användaren bekräfta att meddelanden skickas i slutet av analysfasen: det här är **manuell**-validering.
 
@@ -88,6 +88,6 @@ På den här fliken finns följande alternativ:
    * **[!UICONTROL Semi-automatic]**: Skickandet börjar automatiskt om analysfasen inte genererar några varningsmeddelanden.
    * **[!UICONTROL Automatic]**: Sändningen börjar automatiskt i slutet av analysfasen, oavsett resultatet.
 
-* **[!UICONTROL Start job in a detached process]** : Med det här alternativet kan du starta leveransanalysen i en separat process. Analysfunktionen använder som standard Adobe Campaign programserverprocess (webbserver). Om du väljer det här alternativet ser du till att analysen slutförs även om ett programserverfel inträffar.
-* **[!UICONTROL Log SQL queries generated during the analysis in the journal]** : Det här alternativet lägger till SQL-frågeloggarna i leveransjournalen under analysfasen.
-* **[!UICONTROL Ignore personalization scripts during sending]** : Med det här alternativet kan du kringgå tolkningen av JavaScript-direktiv som finns i HTML-innehåll. De visas som i det levererade innehållet. Dessa direktiv har introducerats med taggen `<%=`.
+* **[!UICONTROL Start job in a detached process]**: Med det här alternativet kan du starta leveransanalysen i en separat process. Analysfunktionen använder som standard Adobe Campaign programserverprocess (webbserver). Om du väljer det här alternativet ser du till att analysen slutförs även om ett programserverfel inträffar.
+* **[!UICONTROL Log SQL queries generated during the analysis in the journal]**: Det här alternativet lägger till SQL-frågeloggarna i leveransjournalen under analysfasen.
+* **[!UICONTROL Ignore personalization scripts during sending]**: Med det här alternativet kan du kringgå tolkningen av JavaScript-direktiv som finns i HTML-innehåll. De visas som i det levererade innehållet. Dessa direktiv har introducerats med taggen `<%=`.

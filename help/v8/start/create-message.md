@@ -5,7 +5,7 @@ feature: Email, Push, SMS, Direct Mail, Cross Channel Orchestration
 role: User
 level: Beginner
 exl-id: 6cf8a929-637e-4e51-9160-5980ca727efb
-source-git-commit: 7f6c394f56d517c0a675e0fd2341bb6ef98044f0
+source-git-commit: c508c80bea39e4fc32786d92d06651a1f91ca697
 workflow-type: tm+mt
 source-wordcount: '1319'
 ht-degree: 5%
@@ -55,7 +55,7 @@ Mer information om olika typer av leveranser finns i [det här avsnittet](#types
 
 ### Mobilkanal {#gs-channel-sms}
 
-Med Adobe Campaign kan du leverera [SMS](../send/sms.md)- och [LINE](../send/line.md)-meddelanden på mobiler.
+Med Adobe Campaign kan du leverera [SMS](../send/sms/sms.md)- och [LINE](../send/line.md)-meddelanden på mobiler.
 
 För SMS-meddelanden kan du skapa, ändra och anpassa meddelanden endast i textformat. Du kan även förhandsgranska dina SMS-meddelanden innan de skickas.
 
