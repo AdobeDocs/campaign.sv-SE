@@ -4,9 +4,10 @@ description: Lär dig hur du skickar korrektur för en SMS-leverans
 feature: SMS
 role: User
 level: Beginner, Intermediate
-source-git-commit: 24a6d56a79995cd0113d8438d1bd3314a3872e35
+badge: label="Begränsad tillgänglighet" type="Informative"
+source-git-commit: a184a29301f2bd739bc3fd1373fc8cfad58f0393
 workflow-type: tm+mt
-source-wordcount: '243'
+source-wordcount: '245'
 ht-degree: 0%
 
 ---
