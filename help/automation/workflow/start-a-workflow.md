@@ -6,9 +6,9 @@ feature: Workflows
 level: Beginner
 role: User, Admin
 exl-id: 6d9789e3-d721-4ffd-b3fb-a0c522ab1c0a
-source-git-commit: ab6c16af7652f2e8dbfa5c899c2152cefb7fc7c6
+source-git-commit: d292c20e520b2466f782ccf86eb9d61e01915563
 workflow-type: tm+mt
-source-wordcount: '1129'
+source-wordcount: '1136'
 ht-degree: 0%
 
 ---
@@ -57,7 +57,7 @@ Knappen **[!UICONTROL Actions]** i verktygsfältet ger dig tillgång till ytterl
 
   >[!CAUTION]
   >
-  >Det här alternativet är reserverat för expertanvändare.
+  >Ovillkorligt stopp är begränsat till Admin-användare.
 
 * **[!UICONTROL Restart]**
 
@@ -107,7 +107,7 @@ Förbättra instansstabiliteten genom att implementera följande metodtips:
 
 * **Stoppa oanvända arbetsflöden**. Arbetsflöden som fortsätter att köras behåller anslutningar till databasen.
 
-* **Använd endast ovillkorlig stopp i de sällsynta fallen**. Använd inte den här åtgärden regelbundet. Utan att utföra en ren stängning av anslutningar som genereras av arbetsflöden till databasen påverkar prestanda.
+* **Använd endast ovillkorlig stopp i de sällsynta fallen**. Det här alternativet är begränsat till admin-användare. Använd inte den här åtgärden regelbundet. Utan att utföra en ren stängning av anslutningar som genereras av arbetsflöden till databasen påverkar prestanda.
 
 * **Utför inte flera stoppbegäranden i samma arbetsflöde**. Att stoppa ett arbetsflöde är en asynkron process: Begäran registreras och arbetsflödesservern eller servrarna avbryter pågående åtgärder. Det kan därför ta tid att stoppa en arbetsflödesinstans, särskilt om arbetsflödet körs på flera servrar, där var och en måste ta kontroll för att avbryta de pågående åtgärderna. Om du vill undvika problem väntar du tills stoppåtgärden har slutförts och undviker att stoppa ett arbetsflöde flera gånger.
 
