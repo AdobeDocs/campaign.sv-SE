@@ -8,9 +8,9 @@ level: Experienced
 badge-v7: label="v7" type="Informative" tooltip="Gäller även Campaign Classic v7"
 badge-v8: label="v8" type="Positive" tooltip="Gäller Campaign v8"
 exl-id: 45ac6f8f-eb2a-4599-a930-1c1fcaa3095b
-source-git-commit: 4ef40ff971519c064b980df8235188c717855f27
+source-git-commit: dffe082d5e31eda4ecfba369b92d8a2d441fca04
 workflow-type: tm+mt
-source-wordcount: '1421'
+source-wordcount: '1630'
 ht-degree: 1%
 
 ---
@@ -56,6 +56,8 @@ Om du vill kontrollera om du påverkas kan du filtrera dina **tjänster och pren
 
 * Som Campaign Classic v7-användare på plats måste ni uppgradera både marknadsförings- och Real-Time Execution-servrarna. Servern för MID-Source påverkas inte.
 
+* Som en Campaign Classic v7-användare på plats eller hybridanvändare kontrollerar du att ditt externa Android-routningskonto är konfigurerat med `androidPushConnectorV2.js`. [Läs mer](https://experienceleague.adobe.com/en/docs/campaign-classic/using/sending-messages/sending-push-notifications/configure-the-mobile-app/configuring-the-mobile-application-android#configuring-external-account-android)
+
 #### Övergångsförfarande {#fcm-transition-steps}
 
 Så här flyttar du miljön till HTTP v1:
@@ -84,12 +86,73 @@ Så här flyttar du miljön till HTTP v1:
    | datameddelande | N/A | validate_only |
    | meddelandemeddelande | title, body, android_channel_id, icon, sound, tag, color, click_action, image, ticker, sticky, visibility, notification_priority, notification_count <br> | validate_only |
 
-1. När övergången till HTTP v1 är klar måste du uppdatera dina **leveransmallar** för Android push-meddelanden för att öka antalet batchmeddelanden. Det gör du genom att bläddra till egenskaperna för din Android-leveransmall och ange [Antal meddelandebatchar](../../v8/send/configure-and-send.md#delivery-batch-quantity) till **256** på fliken **Leverans**. Använd ändringen på alla leveransmallar som används för dina Android-leveranser och på alla befintliga Android-leveranser.
-
 
 >[!NOTE]
 >
->När dessa ändringar har tillämpats på alla servrar använder alla nya push-meddelanden som levereras till Android-enheter HTTP v1-API:t. Befintliga push-leveranser som används, pågår och används, använder fortfarande HTTP-API:t (äldre).
+>När dessa ändringar har tillämpats på alla servrar använder alla **nya** push-meddelanden som levereras till Android-enheter HTTP v1-API:t. Befintliga push-leveranser som används, pågår och används, använder fortfarande HTTP-API:t (äldre). Lär dig hur du uppdaterar dem i avsnittet nedan.
+
+### Uppdatera befintliga mallar {#fcm-transition-update}
+
+När övergången till HTTP v1 är klar måste du uppdatera dina **leveransmallar** för Android push-meddelanden för att öka antalet batchmeddelanden. Det gör du genom att bläddra till egenskaperna för din Android-leveransmall och ange [Antal meddelandebatchar](../../v8/send/configure-and-send.md#delivery-batch-quantity) till **256** på fliken **Leverans**. Använd ändringen på alla leveransmallar som används för dina Android-leveranser och på alla befintliga Android-leveranser.
+
+Du kan även uppdatera befintliga mallar för leveranser och leveranser som skapats före uppgraderingen till en version som stöder HTTP v1. Så här gör du:
+
+* Som Managed Cloud Services eller Hosted customer kontaktar du Adobe för att uppdatera Android leveransmallar.
+
+* Hämta och kör skriptet `fcm-httpv1-migration.js` så som beskrivs nedan för lokala miljöer.
+
+  Hämta [fcm-httpv1-migration.js](assets/do-not-localize/fcm-httpv1-migration.js)
+
+  >[!CAUTION]
+  >
+  >Skriptet måste köras i marknadsförings-, Mid-Source- och Real-Time-miljöer.
+
+
+  +++Steg för att uppdatera befintliga leveranser och mallar
+
+  Så här korrigerar du alla mallar för leveranser och leveranser som skapats före uppgraderingen till en version som stöder HTTP v1:
+
+   1. Exportera dina befintliga leveranser och leveransmallar i ett paket för att kunna återställa dem om ett oväntat problem skulle uppstå under patchningen.
+   1. Kör följande kommando i Posgresql:
+
+      ```sql
+      pg_dump -Fp -f /sftp/<db_name>-nmsdelivery-before_rd_script.sql -t nmsdelivery -d <db_name>
+      ```
+
+   1. Som standard är skriptet i `dryrun`-läge, kan du starta det i det läget för att kontrollera om någon leverans behöver korrigeras.
+
+      Kommando
+
+      ```sql
+      nlserver javascript -instance:<instance_name> -file fcm-httpv1-migration.js 
+      ```
+
+      Utdata
+
+      ```sql
+      ...
+      HH:MM:SS >   Processing delivery (id:123456,  label:'Deliver on Android - New', name:'DM1234')
+      HH:MM:SS >   Dry run: Would update androidCheckParams for delivery (id:123456,  label:'Deliver on Android - New', name:'DM1234')
+      HH:MM:SS >   Processing delivery (id:567890,  label:'Deliver on Android - New', name:'DM5678')
+      HH:MM:SS >   Dry run: Would update androidCheckParams for delivery (id:567890,  label:'Deliver on Android - New', name:'DM5678')
+      ...
+      HH:MM:SS >   Summary (XYZ processed deliverie(s) or delivery template(s)):
+      HH:MM:SS >>  - X had not patchable androidCheckParams formula!
+      HH:MM:SS >   - Y had androidCheckParams formula patched.
+      HH:MM:SS >   - Z ignored as alreading having androidCheckParams formula patched.
+      ```
+
+      >[!NOTE]
+      >
+      >Leveranserna `not patchable` måste uppdateras manuellt. Deras ID finns i loggen.
+
+   1. Kör skriptet i körningsläge på följande sätt för att uppdatera leveranser:
+
+      ```sql
+      nlserver javascript -instance:<instance_name> -file fcm-httpv1-migration.js -arg:run
+      ```
+
++++
 
 ### Vilken effekt har mina Android-appar? {#fcm-apps}
 
