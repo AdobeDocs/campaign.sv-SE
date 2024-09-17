@@ -8,9 +8,9 @@ level: Experienced
 badge-v7: label="v7" type="Informative" tooltip="Gäller även Campaign Classic v7"
 badge-v8: label="v8" type="Positive" tooltip="Gäller Campaign v8"
 exl-id: 45ac6f8f-eb2a-4599-a930-1c1fcaa3095b
-source-git-commit: dffe082d5e31eda4ecfba369b92d8a2d441fca04
+source-git-commit: e7f0f20deb930be2a3b2f798f70d17644c646fb6
 workflow-type: tm+mt
-source-wordcount: '1630'
+source-wordcount: '1633'
 ht-degree: 1%
 
 ---
@@ -91,7 +91,7 @@ Så här flyttar du miljön till HTTP v1:
 >
 >När dessa ändringar har tillämpats på alla servrar använder alla **nya** push-meddelanden som levereras till Android-enheter HTTP v1-API:t. Befintliga push-leveranser som används, pågår och används, använder fortfarande HTTP-API:t (äldre). Lär dig hur du uppdaterar dem i avsnittet nedan.
 
-### Uppdatera befintliga mallar {#fcm-transition-update}
+#### Uppdatera befintliga mallar {#fcm-transition-update}
 
 När övergången till HTTP v1 är klar måste du uppdatera dina **leveransmallar** för Android push-meddelanden för att öka antalet batchmeddelanden. Det gör du genom att bläddra till egenskaperna för din Android-leveransmall och ange [Antal meddelandebatchar](../../v8/send/configure-and-send.md#delivery-batch-quantity) till **256** på fliken **Leverans**. Använd ändringen på alla leveransmallar som används för dina Android-leveranser och på alla befintliga Android-leveranser.
 
@@ -99,16 +99,16 @@ Du kan även uppdatera befintliga mallar för leveranser och leveranser som skap
 
 * Som Managed Cloud Services eller Hosted customer kontaktar du Adobe för att uppdatera Android leveransmallar.
 
-* Hämta och kör skriptet `fcm-httpv1-migration.js` så som beskrivs nedan för lokala miljöer.
+* För lokala miljöer hämtar du skriptet `fcm-httpv1-migration.js` och kör det enligt instruktionerna nedan.
 
-  Hämta [fcm-httpv1-migration.js](assets/do-not-localize/fcm-httpv1-migration.js)
+  Hämta [fcm-httpv1-migration.zip](assets/do-not-localize/fcm-httpv1-migration.zip)
 
   >[!CAUTION]
   >
   >Skriptet måste köras i marknadsförings-, Mid-Source- och Real-Time-miljöer.
 
 
-  +++Steg för att uppdatera befintliga leveranser och mallar
+  +++Steg för att uppdatera befintliga leveranser och mallar (endast lokalt)
 
   Så här korrigerar du alla mallar för leveranser och leveranser som skapats före uppgraderingen till en version som stöder HTTP v1:
 
