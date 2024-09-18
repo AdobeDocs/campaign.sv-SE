@@ -8,9 +8,9 @@ level: Experienced
 badge-v7: label="v7" type="Informative" tooltip="Gäller även Campaign Classic v7"
 badge-v8: label="v8" type="Positive" tooltip="Gäller Campaign v8"
 exl-id: 45ac6f8f-eb2a-4599-a930-1c1fcaa3095b
-source-git-commit: a6a1af4e0255a2fec359c415cbbf45da2e4baf67
+source-git-commit: aba0048e5aff1caa2067eb61d26548b08a3deb36
 workflow-type: tm+mt
-source-wordcount: '1633'
+source-wordcount: '1664'
 ht-degree: 1%
 
 ---
@@ -48,15 +48,19 @@ Om du vill kontrollera om du påverkas kan du filtrera dina **tjänster och pren
 
 #### Förhandskrav {#fcm-transition-prerequisites}
 
-* För Campaign Classic v7 har stöd för HTTP v1 lagts till i version 20.3.1. Om miljön körs på en äldre version är en förutsättning för övergången till HTTP v1 att du uppgraderar miljön till den [senaste Campaign Classicen](https://experienceleague.adobe.com/docs/campaign-classic/using/release-notes/latest-release.html){target="_blank"}. För Campaign v8 stöds HTTP v1 av alla versioner och ingen uppgradering behövs.
-
 * Android Firebase Admin SDK-tjänstens konto-JSON-fil behövs för att mobilprogrammet ska kunna flyttas till HTTP v1. Lär dig hur du hämtar den här filen i [Google Firebase-dokumentationen](https://firebase.google.com/docs/admin/setup#initialize-sdk){target="_blank"}.
 
-* För Hybrid-, Hosted- och Managed Services-distributioner ska du, utöver övergångsproceduren nedan, kontakta Adobe för att uppdatera körningsservern för realtid (RT). Servern för MID-Source påverkas inte.
+* För Campaign Classic v7 har stöd för HTTP v1 lagts till i version 20.3.1. Om miljön körs på en äldre version är en förutsättning för övergången till HTTP v1 att du uppgraderar miljön till den [senaste Campaign Classicen](https://experienceleague.adobe.com/docs/campaign-classic/using/release-notes/latest-release.html){target="_blank"}. För Campaign v8 stöds HTTP v1 av alla versioner och ingen uppgradering behövs.
 
-* Som Campaign Classic v7-användare på plats måste ni uppgradera både marknadsförings- och Real-Time Execution-servrarna. Servern för MID-Source påverkas inte.
+* Som Campaign Classic v7-användare på plats måste ni uppgradera både marknadsförings- och Real-Time Execution-servrarna.
 
-* Som en Campaign Classic v7-användare på plats eller hybridanvändare kontrollerar du att ditt externa Android-routningskonto är konfigurerat med `androidPushConnectorV2.js`. [Läs mer](https://experienceleague.adobe.com/en/docs/campaign-classic/using/sending-messages/sending-push-notifications/configure-the-mobile-app/configuring-the-mobile-application-android#configuring-external-account-android)
+* För Hybrid-, Hosted- och Managed-Cloud Service ska du, utöver övergångsproceduren nedan, kontakta Adobe för att uppdatera Real-Time-körningsservern (RT).
+
+* Om det externa Android-kontot för routning:
+
+   * Som en Campaign Classic v7-användare på plats eller hybridanvändare kontrollerar du att ditt externa Android-routningskonto är konfigurerat med `androidPushConnectorV2.js`. Läs mer i [Campaign Classic v7-dokumentationen](https://experienceleague.adobe.com/en/docs/campaign-classic/using/sending-messages/sending-push-notifications/configure-the-mobile-app/configuring-the-mobile-application-android#configuring-external-account-android){target="_blank"}.
+
+   * För Hybrid-, Hosted- och Managed-Cloud Service-distributioner måste du även ansluta till kundtjänstteamet på Adobe för att verifiera att `androidPushConnectorV2.js (nms)`-anslutningen har valts i Android routningsexterna konto för MID-källservern.
 
 #### Övergångsförfarande {#fcm-transition-steps}
 
@@ -105,7 +109,7 @@ Du kan även uppdatera befintliga mallar för leveranser och leveranser som skap
 
   >[!CAUTION]
   >
-  >Skriptet måste köras i marknadsförings-, Mid-Source- och Real-Time-miljöer.
+  >Skriptet måste köras på din Marketing-instans.
 
 
   +++Steg för att uppdatera befintliga leveranser och mallar (endast lokalt)
