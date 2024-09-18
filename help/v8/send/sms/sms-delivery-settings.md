@@ -5,13 +5,13 @@ feature: SMS
 role: User
 level: Beginner, Intermediate
 badge: label="Begränsad tillgänglighet" type="Informative"
-source-git-commit: a184a29301f2bd739bc3fd1373fc8cfad58f0393
+exl-id: c4d500ef-2339-491f-9ae2-9bfaf72088a9
+source-git-commit: 8dffc24ff859ded70ea9c5b9ede39512c1543e74
 workflow-type: tm+mt
 source-wordcount: '893'
 ht-degree: 0%
 
 ---
-
 
 # SMS-leveransinställningar {#sms-settings}
 
@@ -55,12 +55,12 @@ Här är den information du behöver för att fylla i formuläret. Varje fält f
 
 * **[!UICONTROL Transmission mode]**
 
-Det här fältet anger vilken typ av SMS du vill överföra: normala meddelanden eller flash-meddelanden som lagras på mobilen eller SIM-kortet. Den här inställningen överförs i det valfria fältet dest_addr_subunit i PDU:n SUBMIT_SM.
+  Det här fältet anger vilken typ av SMS du vill överföra: normala meddelanden eller flash-meddelanden som lagras på mobilen eller SIM-kortet. Den här inställningen överförs i det valfria fältet dest_addr_subunit i PDU:n SUBMIT_SM.
 
-* **Flash** anger värdet till 1. Det skickar ett flash-meddelande som visas på mobilen och inte lagras i minnet.
-* **Normal** anger värdet till 0. Det skickar ett normalt meddelande.
-* **Spara på mobilen** anger värdet till 2. Den instruerar telefonen att lagra SMS:et i det interna minnet.
-* **Spara vid terminal** anger värdet till 3. Telefonen uppmanas att lagra SMS:et på SIM-kortet.
+   * **Flash** anger värdet till 1. Det skickar ett flash-meddelande som visas på mobilen och inte lagras i minnet.
+   * **Normal** anger värdet till 0. Det skickar ett normalt meddelande.
+   * **Spara på mobilen** anger värdet till 2. Den instruerar telefonen att lagra SMS:et i det interna minnet.
+   * **Spara vid terminal** anger värdet till 3. Telefonen uppmanas att lagra SMS:et på SIM-kortet.
 
 * **[!UICONTROL Priority, Communication type]**
 
