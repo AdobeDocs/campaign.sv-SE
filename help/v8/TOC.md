@@ -5,9 +5,9 @@ user-guide-description: Produktdokumentation för Adobe Campaign v8 (klientkonso
 title: Adobe Campaign v8-dokumentation
 description: Kampanjdokumentation v8
 breadcrumb-title: Dokumentation om Campaign v8
-source-git-commit: 8ff207246bea1f476b37b1d4f2c79498362e7481
+source-git-commit: be085eaf7e1e7ded5986fdb6100045daba4d88fe
 workflow-type: tm+mt
-source-wordcount: '675'
+source-wordcount: '677'
 ht-degree: 16%
 
 ---
@@ -199,7 +199,7 @@ ht-degree: 16%
    + Implementering {#implement}
       + [Implementeringssteg](start/implement.md)
       + [Anpassa instansen](dev/customize.md)
-      + [Bästa praxis för datamodell](dev/datamodel-best-practices.md)
+      + [God praxis för datamodell](dev/datamodel-best-practices.md)
    + Inställningar och konfiguration {#configuration}
       + [Användargränssnittsinställningar](config/ui-settings.md)
       + [Hantera mappar och vyer](audiences/folders-and-views.md)

@@ -3,9 +3,9 @@ keywords: Campaign Classic, starstida, populära ämnen
 description: Campaign v8 - hjälpcenter
 title: Adobe Campaign v8 - produktdokumentation
 exl-id: 6010b0f7-baf0-43ba-af9a-b8864f3897ea,9ff16fb1-d3d3-44fe-9016-15abffdbc74e
-source-git-commit: f25f793c85d1af26f2e36e28830c6192bfbe4ca3
+source-git-commit: be085eaf7e1e7ded5986fdb6100045daba4d88fe
 workflow-type: tm+mt
-source-wordcount: '341'
+source-wordcount: '342'
 ht-degree: 28%
 
 ---
@@ -105,7 +105,7 @@ Vissa viktiga ändringar av tjänsten Android Firebase Cloud Messaging (FCM) kom
     <td>
       <img src="assets/do-not-localize/icon-dev.svg" width="35px">
     <br/>
-      <strong>Utvecklarresurser</strong><br/><a href="dev/datamodel.md">Datamodellen Campaign v8</a> - <a href="dev/schemas.md">Scheman</a> - <a href="dev/api.md">API:er</a>
+      <strong>Utvecklarresurser</strong><br/><a href="dev/datamodel.md">Datamodell för kampanj v8</a> - <a href="dev/schemas.md">Scheman</a> - <a href="dev/api.md">API:er</a>
     </td>
   </tr>
 </table>

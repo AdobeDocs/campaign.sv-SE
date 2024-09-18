@@ -5,9 +5,9 @@ feature: Profiles, Data Management
 role: User
 level: Beginner
 exl-id: b0f8c057-dd4e-4284-b5a4-157986a1d95a
-source-git-commit: 061197048885a30249bd18af7f8b24cb71def742
+source-git-commit: be085eaf7e1e7ded5986fdb6100045daba4d88fe
 workflow-type: tm+mt
-source-wordcount: '213'
+source-wordcount: '214'
 ht-degree: 3%
 
 ---
@@ -18,7 +18,7 @@ Med Campaign kan du lägga till kontakter i molndatabasen. Du kan läsa in en fi
 
 Kom igång med [målgrupper](audiences.md)
 
-Förstå kampanj [datamodell](../dev/datamodel.md)
+Förstå kampanjens [datamodell](../dev/datamodel.md)
 
 ## Importera profiler i ett arbetsflöde
 

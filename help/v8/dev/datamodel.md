@@ -5,9 +5,9 @@ feature: Data Model
 role: Data Engineer
 level: Beginner
 exl-id: 200b60f1-04ae-4c3e-892f-3dd2bd22b896
-source-git-commit: 061197048885a30249bd18af7f8b24cb71def742
+source-git-commit: be085eaf7e1e7ded5986fdb6100045daba4d88fe
 workflow-type: tm+mt
-source-wordcount: '705'
+source-wordcount: '706'
 ht-degree: 4%
 
 ---

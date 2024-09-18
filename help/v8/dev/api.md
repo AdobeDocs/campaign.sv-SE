@@ -5,9 +5,9 @@ feature: API
 role: Developer
 level: Intermediate, Experienced
 exl-id: 50e21acd-d23d-4fdd-a8aa-23c3f209bda3
-source-git-commit: 07e85c2933194a24b4275519dd7da9c3226f6a3c
+source-git-commit: be085eaf7e1e7ded5986fdb6100045daba4d88fe
 workflow-type: tm+mt
-source-wordcount: '282'
+source-wordcount: '283'
 ht-degree: 9%
 
 ---
@@ -41,7 +41,7 @@ Innan du använder [!DNL Adobe Campaign] API:er måste du känna till följande 
 
 * JavaScript
 * SOAP
-* [!DNL Adobe Campaign] datamodel
+* Datamodell [!DNL Adobe Campaign]
 
 Om du vill använda API:er och interagera med [!DNL Adobe Campaign] måste du också känna till din datamodell.
 
