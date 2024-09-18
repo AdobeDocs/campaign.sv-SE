@@ -8,9 +8,9 @@ level: Experienced
 badge-v7: label="v7" type="Informative" tooltip="Gäller även Campaign Classic v7"
 badge-v8: label="v8" type="Positive" tooltip="Gäller Campaign v8"
 exl-id: 45ac6f8f-eb2a-4599-a930-1c1fcaa3095b
-source-git-commit: aba0048e5aff1caa2067eb61d26548b08a3deb36
+source-git-commit: a9aa9cb508ca1f5cdcd59e61b5be029e3de1a82f
 workflow-type: tm+mt
-source-wordcount: '1664'
+source-wordcount: '1665'
 ht-degree: 1%
 
 ---
@@ -105,11 +105,11 @@ Du kan även uppdatera befintliga mallar för leveranser och leveranser som skap
 
 * För lokala miljöer hämtar du skriptet `fcm-httpv1-migration.js` och kör det enligt instruktionerna nedan.
 
-  Hämta [fcm-httpv1-migration.zip](assets/do-not-localize/fcm-httpv1-migration-js.zip)
+  Hämta [fcm-httpv1-migration.zip](assets/do-not-localize/fcm-httpv1-migration-js.zip).
 
   >[!CAUTION]
   >
-  >Skriptet måste köras på din Marketing-instans.
+  >Skriptet måste köras på din lokala Marketing-instans.
 
 
   +++Steg för att uppdatera befintliga leveranser och mallar (endast lokalt)
