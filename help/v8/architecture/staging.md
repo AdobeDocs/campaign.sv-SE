@@ -5,16 +5,16 @@ feature: Configuration, API, FFDA
 role: Developer
 level: Intermediate
 exl-id: 96693af9-50db-4298-ae02-c238d35e52b4
-source-git-commit: 061197048885a30249bd18af7f8b24cb71def742
+source-git-commit: 9d500f185a9e706b6558135978c4f8c79d92d0d4
 workflow-type: tm+mt
-source-wordcount: '315'
+source-wordcount: '322'
 ht-degree: 2%
 
 ---
 
 # Mellanlagringsmekanism för kampanj-API
 
-I samband med en [Enterprise (FFDA)-distribution](enterprise-deployment.md) rekommenderas inte att enhetsanrop rensas när det gäller prestanda (latens och samtidighet). Grupperingsåtgärd rekommenderas alltid. För att förbättra prestandan omdirigeras API:er för inmatning till den lokala databasen.
+I samband med en [Enterprise (FFDA)-distribution](enterprise-deployment.md) rekommenderas inte att enhetsanrop rensas när det gäller prestanda (latens och samtidighet). Om du inte skickar extremt låg volym måste gruppåtgärden **** användas. För att förbättra prestandan omdirigeras API:er för inmatning till den lokala databasen.
 
 Kampanjmellanlagring är aktiverat som standard för vissa inbyggda scheman. Vi kan även aktivera det i alla anpassade scheman. Mellanlagringsmekanism i ett nötskal:
 

@@ -5,9 +5,9 @@ feature: Configuration, FFDA
 role: Developer
 level: Intermediate
 exl-id: ef06cb6b-1b25-4dbe-8fd0-f880ec9d645b
-source-git-commit: 202a0553f0c736086eca993b9647737732f57d07
+source-git-commit: 9d500f185a9e706b6558135978c4f8c79d92d0d4
 workflow-type: tm+mt
-source-wordcount: '549'
+source-wordcount: '572'
 ht-degree: 0%
 
 ---
@@ -55,7 +55,7 @@ Ett specifikt meddelande skickas till operatörsgruppen **[!UICONTROL Workflow S
 ![](assets/wf-alert-activity.png)
 
 
-## Ytterligare skyddsräcken{#duplicates-guardrails}
+## Ytterligare skyddsräcken {#duplicates-guardrails}
 
 Campaign innehåller en uppsättning nya skyddsritningar för att förhindra att dubblettnyckeln infogas i [!DNL Snowflake]-databasen.
 
@@ -63,19 +63,19 @@ Campaign innehåller en uppsättning nya skyddsritningar för att förhindra att
 >
 >Dessa skyddsförslag är tillgängliga från och med Campaign v8.3. Mer information om hur du kontrollerar versionen finns i [det här avsnittet](../start/compatibility-matrix.md#how-to-check-your-campaign-version-and-buildversion)
 
-### Förberedelse av leverans{#remove-duplicates-delivery-preparation}
+### Förberedelse av leverans {#remove-duplicates-delivery-preparation}
 
 Adobe Campaign tar automatiskt bort alla dubbletter av UUID från en målgrupp när leveransen förbereds. Den här mekanismen förhindrar att fel inträffar när en leverans förbereds. Som slutanvändare kan du kontrollera den här informationen i leveransloggarna: vissa mottagare kan uteslutas från huvudmålet på grund av dubblettnyckeln. I så fall visas följande varning: `Exclusion of duplicates (based on the primary key or targeted records)`.
 
 ![](assets/exclusion-duplicates-log.png)
 
-### Uppdatera data i ett arbetsflöde{#duplicates-update-data}
+### Uppdatera data i ett arbetsflöde {#duplicates-update-data}
 
 I kontexten för en [Enterprise (FFDA)-distribution](enterprise-deployment.md) kan du inte välja en intern nyckel (UUID) som fält för att uppdatera data i ett arbetsflöde.
 
 ![](assets/update-data-no-internal-key.png)
 
-### Fråga ett schema med dubbletter{#query-with-duplicates}
+### Fråga ett schema med dubbletter {#query-with-duplicates}
 
 När ett arbetsflöde börjar köra en fråga i ett schema, kontrollerar Adobe Campaign om någon dubblerad post har rapporterats i tabellen [Audit Unicity](#unicity-wf). I så fall loggar arbetsflödet en varning eftersom den efterföljande åtgärden på de duplicerade data kan påverka arbetsflödesresultatet.
 
@@ -86,3 +86,8 @@ Den här kontrollen utförs i följande arbetsflödesaktiviteter:
 * Fråga
 * Inkrementell fråga
 * Läslista
+
+
+>[!NOTE]
+>
+>Om ni övergår från en annan Campaign-version är det av största vikt att ni tar bort dubbletter, felsöker och sanerar data så att övergången inte påverkas.

@@ -5,9 +5,9 @@ feature: Architecture, FFDA, Deployment
 role: Admin, Developer
 level: Beginner
 exl-id: 0a6f6701-b137-4320-9732-31946509ee03
-source-git-commit: 061197048885a30249bd18af7f8b24cb71def742
+source-git-commit: 9d500f185a9e706b6558135978c4f8c79d92d0d4
 workflow-type: tm+mt
-source-wordcount: '1045'
+source-wordcount: '1050'
 ht-degree: 1%
 
 ---
@@ -82,7 +82,7 @@ PostgreSQL-databasen i mellankällinstansen används för att:
 
 ### [!DNL Campaign] API-mellanlagringsmekanism{#staging-api}
 
-Med [!DNL Campaign]-molndatabasen rekommenderas inte snabba enhetsanrop på grund av prestanda (fördröjning och samtidighet). Gruppåtgärd rekommenderas alltid. För att garantera optimala prestanda för API:er fortsätter Campaign att hantera API-anrop på lokal databasnivå.
+Med [!DNL Campaign]-molndatabasen rekommenderas inte snabba enhetsanrop på grund av prestanda (fördröjning och samtidighet). Oavsett om du skickar extremt stora volymer måste gruppåtgärden användas för att garantera optimala prestanda för API:er. Campaign hanterar API-anrop på lokal databasnivå.
 
 [API-mellanlagringsmekanismen beskrivs på den här sidan](staging.md)
 
