@@ -3,7 +3,7 @@ title: Skapa arbetsflöden för målinriktning
 description: Lär dig skapa målgrupper i ett arbetsflöde
 feature: Query Editor, Data Management
 exl-id: 27be9d5a-168c-470e-a480-f3c71858fc75
-source-git-commit: c3f4ad0b56dd45d19eebaa4d2f06551c8fecac1d
+source-git-commit: 122d78e310e66d5f354ffbc86c27a2fbff007447
 workflow-type: tm+mt
 source-wordcount: '2252'
 ht-degree: 4%
@@ -106,7 +106,7 @@ I aktiviteter av typen **[!UICONTROL Union]** eller **[!UICONTROL Intersection]*
 
 ![](assets/use-common-add-data-only.png)
 
-### Avstämning med ytterligare data {#reconciliation-with-additional-data}
+### Stäm av med ytterligare data {#reconciliation-with-additional-data}
 
 Under datavstämningsfaserna (**[!UICONTROL Union]**, **[!UICONTROL Intersection]** osv.) -aktiviteter) kan du välja vilka kolumner som ska användas för datavstämning från de andra kolumnerna. Det gör du genom att konfigurera en avstämning för ett urval kolumner och ange huvuduppsättningen. Markera sedan kolumnerna i fönstrets nedre kolumn, så som visas i följande exempel:
 
