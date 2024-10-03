@@ -1,6 +1,6 @@
 ---
 title: Övergång från Campaign Classic v7 till kampanj v8
-description: Lär mer om skillnaderna mellan Campaign Classic v7 och Campaign v8.
+description: Lär dig om skillnaderna mellan Campaign Classic v7 och Campaign v8.
 feature: Overview
 role: User
 level: Beginner
@@ -37,7 +37,7 @@ Det nya erbjudandet kombinerar förstklassiga tjänster med proaktiv tillsyn och
 
 Som tidigare [!DNL Campaign Classic]-användare bör du tänka på att de flesta av funktionerna i [!DNL Campaign Classic] v7 är tillgängliga med [!DNL Campaign] v8, förutom en liten uppsättning, som listas i [det här avsnittet](#gs-removed).
 
->Den nya molnarkitekturen gör att Campaign kan effektivisera processer, minska kostnaderna, hantera risker och förbättra datasäkerheten. Din Campaign v8-miljö har ett dedikerat VPC (Virtual Private Cloud) som är förkonfigurerat för dig.
+>Den nya molnarkitekturen gör att Campaign kan effektivisera processer, minska kostnaderna, hantera risker och förbättra datasäkerheten. Din Campaign v8-miljö har ett dedikerat virtuellt privat moln (VPC) som är förkonfigurerat för dig.
 
 
 ## Hybridarkitektur {#hybrid-archi}
