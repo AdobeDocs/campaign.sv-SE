@@ -5,9 +5,9 @@ feature: Client Console
 role: User
 level: Beginner
 exl-id: 176cc4f0-8827-4127-9f03-7d75ac8cf917
-source-git-commit: 10b1113a20c11e0b97804f597cb0a48568fcae3d
+source-git-commit: 9ce5acd97e077105316c81029e3ccbc6fa4389dc
 workflow-type: tm+mt
-source-wordcount: '937'
+source-wordcount: '936'
 ht-degree: 2%
 
 ---
@@ -61,7 +61,7 @@ När klientkonsolen har installerats följer du stegen nedan för att skapa ansl
 
 1. Ange en anslutning till Adobe Campaign-programservern via en URL. Använd antingen en DNS eller ett alias för datorn eller din IP-adress.
 
-   Du kan till exempel använda URL-adressen av typen [`https://<machine>.<domain>.com`](https://myserver.adobe.com).
+   Du kan till exempel använda URL-typen `https://<machine>.<domain>.com`.
 
 1. Markera alternativet **[!UICONTROL Connect with an Adobe ID]**.
 

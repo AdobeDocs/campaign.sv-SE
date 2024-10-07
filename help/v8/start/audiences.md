@@ -5,9 +5,9 @@ feature: Audiences
 role: User
 level: Beginner
 exl-id: 07baa759-fb0b-4eba-bf8b-ec6cf21df7f8
-source-git-commit: 99cb937a475997aae714a67b1f9f91c6bae932f4
+source-git-commit: 9ce5acd97e077105316c81029e3ccbc6fa4389dc
 workflow-type: tm+mt
-source-wordcount: '521'
+source-wordcount: '520'
 ht-degree: 17%
 
 ---
@@ -64,7 +64,7 @@ Lär dig hur du hanterar sekretess och samtycke i [Adobe Campaign Classic v7-dok
 
 **Relaterade ämnen**
 
-* [Designa och kör ett kampanjspecifikt arbetsflöde](https://experienceleague.adobe.com/docs/campaign/automation/workflows/introduction/wf-type/campaign-workflows.html){target="_blank"}
+* [Designa och kör ett kampanjspecifikt arbetsflöde](../../automation/workflow/campaign-workflows.md){target="_blank"}
 
 * [Lär dig hur du väljer publik för en kampanj](https://experienceleague.adobe.com/docs/campaign/automation/campaign-orchestration/marketing-campaign-target.html){target="_blank"}
 
