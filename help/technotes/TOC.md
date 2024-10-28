@@ -5,10 +5,10 @@ type: Event
 title: Adobe Campaign Technotes
 description: Kampanjanteckningar
 breadcrumb-title: Kampanjtekniker
-source-git-commit: ccd60b7ff54bb538ae21693eff41a3943f1c6c88
+source-git-commit: 0fa6767f042eb595b1697d086e5c5cd5fc42625e
 workflow-type: tm+mt
-source-wordcount: '77'
-ht-degree: 16%
+source-wordcount: '68'
+ht-degree: 19%
 
 ---
 
@@ -27,7 +27,6 @@ ht-degree: 16%
    + [Webbläsare](upgrades/browsers.md)
    + [2023-systemuppgraderingar](upgrades/tech-stack-upgrade.md)
    + [32-bitars borttagning av klientkonsol](upgrades/console.md)
-   + [Hantering av användaråtkomst från Campaign Standard till kampanj V8](upgrades/user-management-acs.md)
    + Säkerhet {#security}
       + [Rotation av kundens autentiseringsuppgifter](security/credential-rotation-guide.md)
 + [&lt; Tillbaka till Campaign v8-dokumentation](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/campaign-home)
