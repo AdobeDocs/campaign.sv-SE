@@ -1,177 +1,203 @@
 ---
-title: Kom igång med meddelanden
-description: Kom igång med meddelanden
+title: Skapa din första leverans
+description: Skapa din första leverans
 feature: Email, Push, SMS, Direct Mail, Cross Channel Orchestration
 role: User
 level: Beginner
 exl-id: 6cf8a929-637e-4e51-9160-5980ca727efb
-source-git-commit: c508c80bea39e4fc32786d92d06651a1f91ca697
+source-git-commit: cf292ecd7d30862d7d195536ecc5be709fe037b3
 workflow-type: tm+mt
-source-wordcount: '1319'
-ht-degree: 5%
+source-wordcount: '1525'
+ht-degree: 3%
 
 ---
 
-# Kom igång med meddelanden {#gs-ac-audiences}
+# Skapa din första leverans {#create-a-msg}
 
-## Leveranskanaler {#gs-ac-channels}
+På den här sidan får du lära dig hur du skapar en enstaka leverans med ett enda foto. Du kan skapa andra typer av leveranser för att hantera dina användningsfall. Läs mer om de olika typerna av leveranser och hur du skapar dem på [den här sidan](gs-message.md).
 
-Med Adobe Campaign kan ni skicka flerkanalskampanjer, inklusive e-post, SMS, push-meddelanden och direktreklam, och mäta hur effektiva de är med hjälp av olika dedikerade rapporter. Dessa meddelanden är utformade och skickas genom leveranser och kan anpassas för varje mottagare.
+De viktigaste stegen när du ska skapa en engångsleverans är:
 
-De viktigaste funktionerna är målinriktning, definition och personalisering av meddelanden, genomförande av kommunikation och tillhörande verksamhetsrapporter. Den huvudsakliga funktionella åtkomstpunkten är leveransassistenten. Den här åtkomstpunkten leder till flera funktioner som täcks av Adobe Campaign.
+1. **Skapa en ny leverans**. [Läs mer](#create-the-delivery)
 
-Adobe Campaign v8 har följande leveranskanaler:
+1. **Definiera leveransinnehållet**. [Läs mer](#content-of-the-delivery)
 
-* **E-postkanal**: Med e-postleveranser kan du skicka personaliserade e-postmeddelanden till målpopulationen. [Läs mer](#gs-channel-email)
+1. **Välj målpopulationen**. [Läs mer](#target-population)
 
-* **Mobila kanaler**: Med leveranser i mobila kanaler kan du skicka personaliserade meddelanden på mobila enheter till målpopulationen. [Läs mer](#gs-channel-sms)
-
-* **Mobilappskanal**: Med mobilappsleveranser kan du skicka meddelanden till iOS- och Android-enheter. [Läs mer](#gs-channel-push)
-
-* **Direktutskick**: Med direktutskick kan du generera en extraheringsfil som innehåller data om målpopulationen. [Läs mer](#gs-channel-direct)
-
-
-  Andra kanaler beskrivs i [det här avsnittet](#other-channels).
-
-  >[!NOTE]
-  >
-  >Antalet tillgängliga kanaler beror på ditt kontrakt. Kontrollera licensavtalet.
-
-## Välj kanal {#gs-channel}
-
-### E-postkanal {#gs-channel-email}
-
-[E-postkanalen](../send/direct-mail.md) är en av huvudkanalerna i Adobe Campaign, vilket gör att du kan schemalägga och skicka personaliserade e-postmeddelanden till specifika mål.
-
-Du kan skicka olika typer av e-postmeddelanden:
-
-* Skicka e-post en gång: e-postmeddelanden som du kan skicka en gång till ett definierat mål. De används vanligtvis för att marknadsföra ett visst innehåll som bara ska förberedas och skickas en gång (nyhetsbrev, e-postreklam osv.).
-* Återkommande e-postmeddelanden: skicka samma e-postmeddelande regelbundet i en kampanj och samla varje sändning och dess rapporter regelbundet. Samma e-post skickas, men vanligtvis till ett annat mål, baserat på det giltiga målet för den dag då meddelandet skickas. Ett vanligt exempel är ett födelsedagsmeddelande. Mer information finns i [Återkommande leveranser](../../automation/workflow/recurring-delivery.md).
-* Transaktionsbaserade e-postmeddelanden: enhetliga e-postmeddelanden som utlöses utifrån kundernas beteende. Se [Transactional messaging](../send/transactional.md).
-
-Mer information om leveransanvändning och rekommendationer finns i Adobe Campaign Classic [Bästa praxis för leverans](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/key-steps-when-creating-a-delivery/delivery-bestpractices/delivery-best-practices.html#sending-messages){target="_blank"}
-
-Mer information om olika typer av leveranser finns i [det här avsnittet](#types-of-deliveries).
-
-### Mobilkanal {#gs-channel-sms}
-
-Med Adobe Campaign kan du leverera [SMS](../send/sms/sms.md)- och [LINE](../send/line.md)-meddelanden på mobiler.
-
-För SMS-meddelanden kan du skapa, ändra och anpassa meddelanden endast i textformat. Du kan även förhandsgranska dina SMS-meddelanden innan de skickas.
-
-För LINE-meddelanden kan du skicka text, bilder och länkar.
-
-För att kunna leverera SMS- eller LINE-meddelanden till en mobiltelefon behöver du:
-
-* Ett externt konto har konfigurerats på **[!UICONTROL Mobile (SMS)]**-kanalen eller på **[!UICONTROL LINE]**-kanalen.
-* En SMS- eller LINE-leveransmall som är korrekt länkad till det här externa kontot.
-
-
-### Push-meddelandekanal {#gs-channel-push}
-
-Du kan använda Adobe Campaign för att skicka personliga och segmenterade [push-meddelanden](../send/push.md) på iOS- och Android-mobilenheter via dedikerade appar. När konfigurations- och integrationsstegen är klara kan iOS och Android levereras med Adobe Campaign. Du kan också utforma och skicka avancerade meddelanden med bilder eller videoklipp till Android-enheter.
-
-### Direktpostkanal {#gs-channel-direct}
-
-[Direktutskick](../send/direct-mail.md) är en offlinekanal som gör att du kan skapa, anpassa och generera en extern fil som du kan dela med direktutskick. Använd den här kanalen för att samordna online- och offlinekanaler i era kundresor.
-
-När du förbereder ett direktutskick genererar Adobe Campaign en fil som innehåller samtliga målprofiler och den valda kontaktinformationen (exempelvis postadress).  Du kan sedan skicka den här filen till din e-postleverantör som tar hand om själva sändningen.
-
-
-### Andra kanaler {#other-channels}
-
-Adobe Campaign har också en mall för telefonöverföring som används för att skapa externa leveranser. Om du använder den här kanalen måste du implementera dedikerade metoder för att bearbeta utdatafiler. Konfigurationsstegen är desamma som för [Direct-postkanalen](../send/direct-mail.md).
+Du kan sedan förbereda, testa, skicka och övervaka dina meddelanden.
 
 >[!NOTE]
 >
->Telefonkanalen är inte en inbyggd kanal. För att implementeringen ska fungera måste Adobe Consulting eller en Adobe-partner vara engagerade. Kontakta din Adobe-representant om du vill ha mer information.
+>Stegen som beskrivs i det här avsnittet förutsätter att alla målmottagare och deras profiler lagras i databasen, utom vid extern leverans (se [Välja externa mottagare](steps-defining-the-target-population.md#selecting-external-recipients)).
 
-Leveranser av typen Annan använder en specifik teknisk mall som inte utför någon process: På så sätt kan de hantera marknadsföringsåtgärder som utförs utanför Adobe Campaign-plattformen.
+## Skapa leveransen {#create-the-delivery}
 
-Den här kanalen har ingen specifik mekanism. Det är en allmän kanal som har ett eget alternativ för extern kontodirigering, leveransmalltyp och kampanjarbetsflödesaktivitet, precis som alla andra kommunikationskanaler som finns i Adobe Campaign. Den här kanalen är avsedd endast för beskrivande syften, till exempel för att definiera leveranser för vilka du vill hålla reda på målet för en kampanj som har utförts i ett annat verktyg än Adobe Campaign.
+Så här skapar du en leverans:
 
-## Välj typ av leverans {#types-of-deliveries}
+1. Klicka på **[!UICONTROL Create]** ovanför listan över leveranser. När du skapar en ny leverans måste du välja leveranskanalen. Det gör du genom att välja lämplig leveransmall i listrutan i fältet **[!UICONTROL Delivery template]**.
 
-Det finns tre typer av leveransobjekt i Campaign:
+   ![](../send/assets/select-the-new-template.png)
 
-### Enskild leverans {#single-delivery}
+   En inbyggd mall tillhandahålls för varje kanal som du har installerat: direktreklam, e-post, telefon, mobilkanal (SMS), X (Twitter) osv. Vilka kanaler som är tillgängliga i listan beror på ditt licensavtal.
 
-En **leverans** är ett fristående leveransobjekt som körs en gång. Den kan dupliceras, förberedas på nytt, men så länge den är i det slutliga tillståndet (avbryts, stoppas, slutförd) kan den inte återanvändas.
+   Du kan skapa nya leveransmallar för att förkonfigurera specifika parametrar så att de passar dina behov. Mer information om mallar finns i [det här avsnittet](about-templates.md).
 
-Leveranser kan skapas antingen från listan över leveranser eller i ett arbetsflöde via en [Leverans](../../automation/workflow/delivery.md) -aktivitet.
+1. Ange ett namn för leveransen i fältet **[!UICONTROL Label]**.
 
-Arbetsflödena innehåller också specifika leveransaktiviteter beroende på vilken typ av kanal du vill använda. Mer information om de här aktiviteterna finns i [det här avsnittet](../../automation/workflow/cross-channel-deliveries.md).
+   (valfritt) Leveranskoden kan även tilldelas till leveransen. Namnet på leveransen och dess kod visas i listan över leveranser men visas inte för mottagarna.
 
-### Återkommande leverans {#recurring-delivery}
+1. (valfritt) Lägg till en beskrivning i fältet **[!UICONTROL Description]**.
+1. (valfritt) Välj leveranstyp i det relevanta fältet. Den här informationen är användbar för leveransspårning: du kan filtrera baserat på det här villkoret i leveranslistan eller skapa frågor med det här urvalskriteriet.
+1. Klicka på **[!UICONTROL Continue]** för att bekräfta den här informationen och visa meddelandekonfigurationsfönstret.
 
-En **återkommande leverans** är tillgänglig för ett arbetsflöde. Du kan skapa en ny leverans varje gång aktiviteten körs. På så sätt slipper du skapa en ny leverans för återkommande uppgifter. Om du till exempel kör den här typen av aktivitet en gång i månaden får du 12 leveranser efter ett år.
+## Definiera leveransinnehållet {#content-of-the-delivery}
 
-Återkommande leveranser skapas i arbetsflöden via aktiviteten [Återkommande leverans](../../automation/workflow/recurring-delivery.md). Ett exempel på den här aktiviteten visas i det här avsnittet: [Skapa en återkommande leverans i ett målarbetsflöde](../../automation/workflow/send-a-birthday-email.md).
+Leveransinnehållet kan konfigureras. Definitionen av leveransinnehåll är specifik för varje kanal. Mer information finns i det dedikerade avsnittet:
 
-### Kontinuerlig leverans {#continuous-delivery}
-
-En **kontinuerlig leverans** är tillgänglig i ett arbetsflödes kontext. Det gör att du kan lägga till nya mottagare i en befintlig leverans, vilket innebär att du slipper skapa en ny leverans varje gång den körs.
-
-Om en information i leveransen ändras (innehåll, namn osv.) skapas ett nytt leveransobjekt vid leveranskörningen. Om ingen information har ändrats återanvänds samma leveransobjekt och leverans- och spårningsloggarna läggs till i samma objekt.
-
-Om du till exempel kör den här typen av aktivitet en gång i månaden får du en leverans efter ett år (förutsatt att du inte har ändrat leveransen).
-
-Kontinuerliga leveranser skapas i arbetsflöden via [Kontinuerlig leveransaktivitet](../../automation/workflow/continuous-delivery.md).
+* [Definiera e-postinnehållet](../send/email.md)
+* [Definiera SMS-innehållet](../send/sms/sms-content.md)
+* [Definiera innehållet i direktmeddelanden](../send/direct-mail.md)
+* [Minska innehållet i push-meddelanden](../send/push.md)
 
 
-## Välj hur du vill skicka meddelanden{#gs-send-msg}
+## Definiera målgruppen {#target-population}
 
-När meddelandet har skapats och dess innehåll har utformats och testats kan du välja hur du vill skicka det. Campaign erbjuder en uppsättning funktioner för att:
+För varje leverans kan du definiera flera typer av målgrupper:
 
-* Skicka meddelanden manuellt till huvudmålet
+* **Huvudmålgrupp**: profiler som tar emot meddelanden. [Läs mer](#select-the-main-target)
+* **Korrekturmål**: profiler som tar emot korrekturmeddelanden. Ett korrektur är ett specifikt meddelande som gör att du kan testa ett meddelande innan det skickas iväg till huvudmålet. [Läs mer](#select-the-proof-target)
 
-  ![](assets/send-email.png)
+Dessutom kan ni lägga till följande inom ramen för en marknadsföringskampanj:
 
-  Lär dig hur du skickar meddelanden i [det här avsnittet](../send/send.md)
+* **Avsändningsadresser**: mottagare som inte är med i leveransmålet men som tar emot leveransen. [Läs mer](../audiences/test-profiles.md)
+* **Kontrollgrupper**: fyllning som inte tar emot leveransen, används för att spåra beteende och kampanjpåverkan. [Läs mer](../../automation/campaigns/marketing-campaign-target.md#add-a-control-group).
 
-* Skicka meddelanden som är kopplade till en [marknadsföringskampanj](campaigns.md)
+### Välj de huvudsakliga mottagarna av leveransen {#select-the-main-target}
 
-  ![](assets/deliveries-in-a-campaign.png)
+I de flesta fall hämtas huvudmålet från Adobe Campaign-databasen (standardläge). Mottagarna kan dock också lagras i en [extern fil](steps-defining-the-target-population.md#selecting-external-recipients).
 
-  Lär dig hur du skickar meddelanden i samband med en kampanj i [det här avsnittet](https://experienceleague.adobe.com/docs/campaign/automation/campaign-orchestration/marketing-campaign-deliveries.html){target="_blank"}
+Följ stegen nedan för att välja mottagare av en leverans:
 
-* Skicka meddelanden via ett [arbetsflöde](../config/workflows.md)
+1. Välj **[!UICONTROL To]** i leveransredigeraren.
+1. Om mottagarna lagras i databasen väljer du det första alternativet.
 
-  ![](assets/send-in-a-wf.png)
+   ![](../send/sms/assets/audience_to.png){zoomable="yes"}
 
-  Lär dig automatisera e-postleveranser på [den här sidan](../../automation/workflow/delivery.md)
+1. Välj [målmappningen](../audiences/target-mappings.md) i listrutan **[!UICONTROL Target mapping]**.
+1. Klicka på knappen **[!UICONTROL Add]** för att definiera begränsningsfilter.
 
-* [Utlös meddelanden](../send/transactional.md) från en händelse
+   ![](assets/target-type.png){width="60%" align="left" zoomable="yes"}
 
-  Transactional messaging (Message Center) är den Campaign-modul som är avsedd för hantering av utlösarmeddelanden.
+   Välj en typ av filter och klicka på **[!UICONTROL Next]** för att definiera villkoren. Du kan visa de filtrerade mottagarna på fliken **[!UICONTROL Preview]**. Beroende på måltypen kan du med knappen **[!UICONTROL Refine target]** kombinera flera målinriktningskriterier.
 
-  Läs mer om funktionen för transaktionsmeddelanden i [det här avsnittet](../architecture/architecture.md#transac-msg-archi)
+   Följande måltyper är tillgängliga:
 
-  Steg för att konfigurera och skicka transaktionsmeddelanden beskrivs på [den här sidan](../send/transactional.md)
+   * **[!UICONTROL Filtering conditions]**: använd det här alternativet om du vill definiera en fråga och visa resultatet. Lär dig utforma en fråga i [det här avsnittet](../../automation/workflow/query.md).
+   * **[!UICONTROL A list of recipients]**: använd det här alternativet för att ange en lista över profiler som mål. Läs mer om listor i [det här avsnittet](../audiences/create-audiences.md).
+   * **[!UICONTROL A recipient]**: använd det här alternativet om du vill välja en viss profil i databasen.
+   * **[!UICONTROL Recipients included in a folder]**: använd det här alternativet om du vill ange alla profiler i en viss mapp som mål.
+   * **[!UICONTROL Recipients of a delivery]**: Använd det här alternativet om du vill skapa målet från mottagarna av en leverans. Du måste sedan välja leveransen i listan:
 
-* Schemalägg meddelanden
+     ![](assets/target-recipient-delivery.png)
 
-  ![](assets/schedule-send.png)
+   * **[!UICONTROL Delivery recipients belonging to a folder]**: Använd det här alternativet om du vill skapa målet från de mottagarleveranser som ingår i en viss mapp.
 
-  Lär dig hur du schemalägger sändning av dina leveranser på [den här sidan](../send/configure-and-send.md)
+     ![](assets/target-delivery-folder.png)
 
-  Se även det här [Use Case: läs om schemat och skicka ett födelsedagsmeddelande](../../automation/workflow/send-a-birthday-email.md)
+     Du kan filtrera mottagarnas beteende genom att välja i listrutan:
+
+     ![](assets/target-filter-behavior.png)
+
+     >[!NOTE]
+     >
+     >Med alternativet **[!UICONTROL Include sub-folders]** kan du även ange leveranser i mappar i trädstrukturen nedanför den valda noden som mål.
+
+   * **[!UICONTROL Subscribers of an information service]** : Med det här alternativet kan du välja ett nyhetsbrev som mottagarna måste prenumerera på för att få det mål som den leverans som skapas har.
+
+     ![](assets/target-service.png)
+
+   * **[!UICONTROL User filters]**: Med det här alternativet kan du komma åt de förkonfigurerade filtren och använda dem som filtreringsvillkor för profiler i databasen. Förkonfigurerade filter visas i [det här avsnittet](../audiences/create-filters.md#default-filters).
+   * Med alternativet **[!UICONTROL Exclude recipients from this segment]** kan du rikta in dig på mottagare som inte uppfyller de definierade målvillkoren. Om du vill använda det här alternativet markerar du lämplig ruta och tillämpar sedan målinriktning, enligt definitionen ovan, för att utesluta de resulterande profilerna.
+
+1. Ange ett namn för den här målsättningen i fältet **[!UICONTROL Label]**. Som standard är etiketten etiketten för det första målinriktningskriteriet. När du kombinerar filtervillkor bör du använda ett explicit namn.
+1. Klicka på **[!UICONTROL Finish]** för att validera målinriktningsalternativen.
+
+   De definierade målinriktningskriterierna sammanfattas i det centrala avsnittet på fliken för huvudmålkonfiguration. Klicka på ett villkor för att visa dess innehåll (konfiguration och förhandsgranskning). Om du vill ta bort ett villkor klickar du på krysset efter etiketten.
+
+   ![](assets/target-remove-criterion.png)
+
+#### Välj externa mottagare {#selecting-external-recipients}
+
+Du kan skicka meddelanden till profiler som inte lagras i databasen, utan i en extern fil. Om du till exempel vill skicka en leverans till mottagare som har importerats från en textfil gör du så här:
+
+1. Klicka på länken **[!UICONTROL To]** för att välja mottagare av leveransen.
+1. Välj alternativet **[!UICONTROL Defined in an external file]**.
+1. Markera filen som innehåller mottagarna.
+1. När du importerar mottagarna klickar du på länken **[!UICONTROL File format definition...]** för att markera och konfigurera den externa filen.
+
+   Mer information om dataimport finns i [Campaign Classic v7-dokumentationen](https://experienceleague.adobe.com/en/docs/campaign-classic/using/getting-started/importing-and-exporting-data/generic-imports-exports/executing-import-jobs#step-2---source-file-selection){target="_blank"}.
+
+1. Klicka på **[!UICONTROL Finish]** och konfigurera leveransen som en standardleverans.
+
+>[!CAUTION]
+>
+>När du definierar innehållet i meddelandet för e-postleverans ska du inte inkludera länken till spegelsidan: det kan inte genereras i det här leveransläget.
+
+#### Definiera exkluderingsinställningar {#define-exclusion-settings}
+
+När du definierar målet för en leverans används fliken **[!UICONTROL Exclusions]** för att begränsa antalet meddelanden. Standardparametrar rekommenderas, men du kan anpassa inställningarna efter dina behov. Dessa alternativ bör dock endast ändras av en expertanvändare för att undvika felanvändning och fel.
+
+Du kan välja att exkludera adresser som har nått ett visst antal efterföljande fel, eller vars kvalitetsklassificering är under ett tröskelvärde som anges i det här fönstret. Du kan också välja om du vill auktorisera icke-kvalificerade adresser som inga data har returnerats för.
+
+Klicka på länken **[!UICONTROL Edit...]** om du vill ändra standardkonfigurationen.
+
+![](assets/target-exclusion-settings.png)
+
+Följande alternativ är tillgängliga:
+
+* **[!UICONTROL Exclude duplicate addresses during delivery]**: Det här alternativet är aktivt som standard och tar bort dubblettadresser under leveransen. Den strategi som tillämpas kan variera beroende på hur Adobe Campaign används och vilken typ av data som finns i databasen. Värdet för alternativet kan konfigureras för varje leveransmall.
+* **[!UICONTROL Exclude recipients who no longer want to be contacted]**, d.v.s. mottagare vars e-postadresser är på blockeringslista (avanmäl dig). Detta alternativ måste förbli valt för att man ska kunna följa de professionella etiska reglerna för e-marknadsföring.
+* **[!UICONTROL Exclude quarantined recipients]**: Med det här alternativet kan du utesluta profiler med en adress som är i karantän från målet. Vi rekommenderar starkt att du behåller det här alternativet markerat. Läs mer om karantänhantering i [det här avsnittet](understanding-quarantine-management.md).
+* **[!UICONTROL Limit delivery]** till ett visst antal meddelanden. Med det här alternativet kan du ange maximalt antal meddelanden som ska skickas. Om målgruppen överskrider antalet angivna meddelanden, tillämpas ett slumpmässigt urval på målet. Om du vill skicka alla meddelanden ska du behålla värdet &#39;0&#39;.
+* **[!UICONTROL Keep duplicate records (same identifier)]**: Det här alternativet tillåter att flera leveranser skickas till mottagare som uppfyller flera målinriktningskriterier.
+
+### Välj mottagare av korrekturmeddelanden {#select-the-proof-target}
+
+För e-postleveranser kan du skicka korrektur för att validera meddelandeinnehållet. Genom att skicka korrektur kan du kontrollera länken för avanmälan, spegelsidan och alla andra länkar, validera meddelandet, verifiera att bilder visas, upptäcka eventuella fel osv. Du kanske också vill kontrollera din design och återgivning på olika enheter.
+
+Ett korrektur är ett specifikt meddelande som gör att du kan testa ett meddelande innan det skickas till huvudmålgruppen. Mottagarna av beviset ansvarar för att godkänna meddelandet: rendering, innehåll, personaliseringsinställningar, konfiguration.
+
+Mer information om korrekturmottagare och sändning finns i [det här avsnittet](../send/preview-and-proof.md#send-proofs).
+
+![](../send/assets/do-not-localize/how-to-video.png) [Upptäck den här funktionen i en video](#seeds-and-proofs-video)
 
 
-## Lägg till personalisering{#personalization}
+#### Självstudievideo {#seeds-and-proofs-video}
 
-Meddelanden från Adobe Campaign kan personaliseras på olika sätt. [Läs mer om personaliseringsfunktioner](../send/personalize.md)
+I den här videon får du lära dig hur du lägger till frön och korrektur i ett befintligt e-postmeddelande och hur du skickar det.
 
-Du kan:
-
-* Infoga dynamiska personaliseringsfält. [Läs mer](../send/personalization-fields.md)
-* Infoga fördefinierade personaliseringsblock. [Läs mer](../send/personalization-blocks.md)
-* Skapa villkorsstyrt innehåll. [Läs mer](../send/conditions.md)
+>[!VIDEO](https://video.tv.adobe.com/v/333404?quality=12)
 
 
-## Loggar för leverans och spårning{#gs-tracking-logs}
+Ytterligare Campaign Classic om instruktionsvideor finns [här](https://experienceleague.adobe.com/docs/campaign-classic-learn/tutorials/overview.html?lang=sv).
 
-Att övervaka era leveranser efter att de har skickats är ett viktigt steg för att se till att era marknadsföringskampanjer är effektiva och når ut till era kunder. Du kan övervaka efter att du har skickat en leverans samt förstå hur leveransfel och karantäner hanteras.
+## Förbered och validera leveransen {#validate-the-delivery}
 
-Lär dig hur du övervakar leveranser i [Campaign Classic v7-dokumentationen](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/monitoring-deliveries/about-delivery-monitoring.html#sending-messages){target="_blank"}
+När en leverans har skapats och konfigurerats måste du validera den innan du skickar den till huvudmålet.
 
+Så här gör du:
+
+1. **Analysera leveransen**: Med det här steget kan du förbereda meddelanden som ska levereras. [Läs mer](../send/delivery-analysis.md).
+
+1. **Skicka korrektur**: I det här steget kan du styra innehåll, URL-adresser, personalisering osv. [Läs mer](../send/preview-and-proof.md).
+
+>[!IMPORTANT]
+>
+>De två stegen ovan MÅSTE utföras efter varje ändring av meddelandeinnehållet.
+
+
+## Konfigurera och skicka leveransen {#configuring-and-sending-the-delivery}
+
+Få åtkomst till leveransparametrarna för att konfigurera fler inställningar och definiera hur meddelanden ska skickas. Du kan definiera leveransprioritet, konfigurera sändande vågor, konfigurera inställningarna för nya försök och testa leveransen. När konfigurationen är klar kan du bekräfta sändningen. Meddelanden skickas sedan direkt eller baserat på leveransschema.
+
+Lär dig hur du konfigurerar leveransinställningarna på [den här sidan](../send/configure-and-send.md).
