@@ -4,9 +4,9 @@ description: Kom igång med meddelanden
 feature: Email, Push, SMS, Direct Mail, Cross Channel Orchestration
 role: User
 level: Beginner
-source-git-commit: 70af3bceee67082d6a1bb098e60fd2899dc74600
+source-git-commit: 0ff645a87700c038b78fb4cc45062822d6d97148
 workflow-type: tm+mt
-source-wordcount: '1307'
+source-wordcount: '1305'
 ht-degree: 5%
 
 ---
@@ -17,7 +17,7 @@ Med Adobe Campaign kan ni skicka flerkanalskampanjer, inklusive e-post, SMS, pus
 
 De viktigaste funktionerna är målinriktning, definition och personalisering av meddelanden, genomförande av kommunikation och tillhörande verksamhetsrapporter.
 
-## Skapa en leverans {#gs-ac-delivery}
+## Användningsfall {#gs-ac-delivery}
 
 Om du vill skicka meddelanden måste du skapa en leverans. Leveransläget beror på hur du använder det.
 
@@ -147,7 +147,7 @@ Om du till exempel kör den här typen av aktivitet en gång i månaden får du 
 
 Kontinuerliga leveranser skapas i arbetsflöden via [Kontinuerlig leveransaktivitet](../../automation/workflow/continuous-delivery.md).
 
-## Lägg till personalisering{#personalization}
+## Lägg till personalisering {#personalization}
 
 Meddelanden från Adobe Campaign kan personaliseras på olika sätt. [Läs mer om personaliseringsfunktioner](../send/personalize.md)
 
@@ -158,7 +158,7 @@ Du kan:
 * Skapa villkorsstyrt innehåll. [Läs mer](../send/conditions.md)
 
 
-## Loggar för leverans och spårning{#gs-tracking-logs}
+## Skicka och spåra {#gs-tracking-logs}
 
 Att övervaka era leveranser efter att de har skickats är ett viktigt steg för att se till att era marknadsföringskampanjer är effektiva och når ut till era kunder. Du kan övervaka efter att du har skickat en leverans samt förstå hur leveransfel och karantäner hanteras.
 
