@@ -5,7 +5,7 @@ feature: Email, Push, SMS, Direct Mail, Cross Channel Orchestration
 role: User
 level: Beginner
 exl-id: 6cf8a929-637e-4e51-9160-5980ca727efb
-source-git-commit: cf292ecd7d30862d7d195536ecc5be709fe037b3
+source-git-commit: 1bf3c4b2d0c8d9b1bdbc82a9047c52c0d80cd997
 workflow-type: tm+mt
 source-wordcount: '1525'
 ht-degree: 3%
@@ -28,7 +28,7 @@ Du kan sedan förbereda, testa, skicka och övervaka dina meddelanden.
 
 >[!NOTE]
 >
->Stegen som beskrivs i det här avsnittet förutsätter att alla målmottagare och deras profiler lagras i databasen, utom vid extern leverans (se [Välja externa mottagare](steps-defining-the-target-population.md#selecting-external-recipients)).
+>Stegen som beskrivs i det här avsnittet förutsätter att alla målmottagare och deras profiler lagras i databasen, utom vid extern leverans. Se [Välja externa mottagare](#selecting-external-recipients).
 
 ## Skapa leveransen {#create-the-delivery}
 
@@ -40,7 +40,7 @@ Så här skapar du en leverans:
 
    En inbyggd mall tillhandahålls för varje kanal som du har installerat: direktreklam, e-post, telefon, mobilkanal (SMS), X (Twitter) osv. Vilka kanaler som är tillgängliga i listan beror på ditt licensavtal.
 
-   Du kan skapa nya leveransmallar för att förkonfigurera specifika parametrar så att de passar dina behov. Mer information om mallar finns i [det här avsnittet](about-templates.md).
+   Du kan skapa nya leveransmallar för att förkonfigurera specifika parametrar så att de passar dina behov. Mer information om mallar finns i [det här avsnittet](../send/create-templates.md).
 
 1. Ange ett namn för leveransen i fältet **[!UICONTROL Label]**.
 
@@ -74,7 +74,7 @@ Dessutom kan ni lägga till följande inom ramen för en marknadsföringskampanj
 
 ### Välj de huvudsakliga mottagarna av leveransen {#select-the-main-target}
 
-I de flesta fall hämtas huvudmålet från Adobe Campaign-databasen (standardläge). Mottagarna kan dock också lagras i en [extern fil](steps-defining-the-target-population.md#selecting-external-recipients).
+I de flesta fall hämtas huvudmålet från Adobe Campaign-databasen (standardläge). Mottagarna kan dock också lagras i en [extern fil](#selecting-external-recipients).
 
 Följ stegen nedan för att välja mottagare av en leverans:
 
@@ -157,7 +157,7 @@ Följande alternativ är tillgängliga:
 
 * **[!UICONTROL Exclude duplicate addresses during delivery]**: Det här alternativet är aktivt som standard och tar bort dubblettadresser under leveransen. Den strategi som tillämpas kan variera beroende på hur Adobe Campaign används och vilken typ av data som finns i databasen. Värdet för alternativet kan konfigureras för varje leveransmall.
 * **[!UICONTROL Exclude recipients who no longer want to be contacted]**, d.v.s. mottagare vars e-postadresser är på blockeringslista (avanmäl dig). Detta alternativ måste förbli valt för att man ska kunna följa de professionella etiska reglerna för e-marknadsföring.
-* **[!UICONTROL Exclude quarantined recipients]**: Med det här alternativet kan du utesluta profiler med en adress som är i karantän från målet. Vi rekommenderar starkt att du behåller det här alternativet markerat. Läs mer om karantänhantering i [det här avsnittet](understanding-quarantine-management.md).
+* **[!UICONTROL Exclude quarantined recipients]**: Med det här alternativet kan du utesluta profiler med en adress som är i karantän från målet. Vi rekommenderar starkt att du behåller det här alternativet markerat. Läs mer om karantänhantering i [det här avsnittet](../send/quarantines.md).
 * **[!UICONTROL Limit delivery]** till ett visst antal meddelanden. Med det här alternativet kan du ange maximalt antal meddelanden som ska skickas. Om målgruppen överskrider antalet angivna meddelanden, tillämpas ett slumpmässigt urval på målet. Om du vill skicka alla meddelanden ska du behålla värdet &#39;0&#39;.
 * **[!UICONTROL Keep duplicate records (same identifier)]**: Det här alternativet tillåter att flera leveranser skickas till mottagare som uppfyller flera målinriktningskriterier.
 
