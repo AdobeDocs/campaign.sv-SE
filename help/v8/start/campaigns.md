@@ -5,14 +5,14 @@ feature: Cross Channel Orchestration
 role: User
 level: Beginner
 exl-id: b5a6c845-13a7-4746-b856-a08a3cf80b66
-source-git-commit: 5ab598d904bf900bcb4c01680e1b4730881ff8a5
+source-git-commit: 70af3bceee67082d6a1bb098e60fd2899dc74600
 workflow-type: tm+mt
-source-wordcount: '772'
+source-wordcount: '770'
 ht-degree: 2%
 
 ---
 
-# Kom igång med kampanjer{#gs-ac-campaigns}
+# Kom igång med kampanjer {#gs-ac-campaigns}
 
 Adobe Campaign erbjuder en uppsättning lösningar som hjälper er att personalisera och leverera kampanjer i alla kanaler, både online och offline. Ni kan skapa, konfigurera, köra och analysera marknadsföringskampanjer. Alla marknadsföringskampanjer kan hanteras från ett enhetligt kontrollcenter. Lär dig att hitta och skapa marknadsföringskampanjer i det här avsnittet.
 
@@ -78,11 +78,9 @@ De viktigaste stegen för att skapa en flerkanalskampanj för marknadsföring ä
 
    ![](assets/campaign-dashboard.png)
 
-   Lär dig hur du skapar och startar leveranser av marknadsföringskampanjer på [den här sidan](https://experienceleague.adobe.com/docs/campaign/automation/campaign-orchestration/marketing-campaign-deliveries.html){target="_blank"}.
+   Lär dig hur du skapar och startar leveranser av marknadsföringskampanjer på [den här sidan](../../automation/campaigns/marketing-campaign-deliveries.md).
 
-   Du kan associera olika dokument med en kampanj: rapport, foto, webbsida, diagram osv.
-
-   Läs mer om associerade dokument på [den här sidan](https://experienceleague.adobe.com/docs/campaign/automation/campaign-orchestration/marketing-campaign-assets.html){target="_blank"}.
+   Du kan associera olika dokument med en kampanj: rapport, foto, webbsida, diagram osv. Läs mer om associerade dokument på [den här sidan](../../automation/campaigns/marketing-campaign-assets.md).
 
 1. **Konfigurera godkännandeprocessen**
 
@@ -93,7 +91,7 @@ De viktigaste stegen för att skapa en flerkanalskampanj för marknadsföring ä
 
 ## Tillägg för distribuerad marknadsföring{#distributed-marketing-add-on}
 
-Adobe Campaign erbjuder ett **Distributed Marketing**-tillägg för att implementera samarbetskampanjer mellan centrala enheter (huvudkontor, marknadsföringsavdelningar osv.) och lokala enheter (butiker, regionala organ osv.). Samarbetet baseras på en delad arbetsyta som kallas **[!UICONTROL List of campaign packages]**, där kampanjmallar som utformats av centrala entiteter erbjuds lokala entiteter.
+Adobe Campaign erbjuder ett **Distributed Marketing**-tillägg för att implementera samarbetskampanjer mellan centrala enheter (huvudkontor, marknadsföringsavdelningar osv.) och lokala enheter (butiker, regionala byråer osv.). Samarbetet baseras på en delad arbetsyta som kallas **[!UICONTROL List of campaign packages]**, där kampanjmallar som utformats av centrala entiteter erbjuds lokala entiteter.
 
 >[!NOTE]
 >

@@ -5,7 +5,7 @@ feature: Audiences, Profiles, Seed Address, Proofs
 role: User
 level: Beginner
 exl-id: 878b5963-100c-4dd7-97a0-c59a62c493b1
-source-git-commit: 79d916c4d65c0c55ec20f2f5850fec40fe4e99a3
+source-git-commit: 70af3bceee67082d6a1bb098e60fd2899dc74600
 workflow-type: tm+mt
 source-wordcount: '928'
 ht-degree: 0%
@@ -31,8 +31,6 @@ Seed-adresser läggs till i målet för leveranser genom att importeras eller sk
 >Seed-adresser skapas inte i mottagartabellen, utan i en separat tabell. Om du utökar mottagartabellen med nya data måste du utöka både dirigerade adresstabellen och samma data. I annat fall kommer de utökade fälten inte att beaktas för dirigerade adresser.
 >
 >Ett exempel på hur du utökar startadresstabellen finns i [Campaign Classic v7-dokumentationen](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/using-seed-addresses/use-case--selecting-seed-addresses-on-criteria.html){target="_blank"}.
-
-
 
 ## Skapa dirigerade adresser
 

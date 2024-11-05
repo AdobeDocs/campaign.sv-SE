@@ -4,14 +4,13 @@ description: Lär dig hur du skickar ett SMS-meddelande till en målgrupp
 feature: SMS
 role: User
 level: Beginner, Intermediate
-badge: label="Begränsad tillgänglighet" type="Informative"
-source-git-commit: a184a29301f2bd739bc3fd1373fc8cfad58f0393
+exl-id: 9469aeb6-831f-4c8f-8c25-b335dc47c764
+source-git-commit: 70af3bceee67082d6a1bb098e60fd2899dc74600
 workflow-type: tm+mt
-source-wordcount: '113'
-ht-degree: 1%
+source-wordcount: '111'
+ht-degree: 0%
 
 ---
-
 
 # Skicka SMS-leverans till mottagarna {#sms-send-audience}
 

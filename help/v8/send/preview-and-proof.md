@@ -5,7 +5,7 @@ feature: Personalization
 role: User
 level: Beginner
 exl-id: 5b9fa90c-c23e-47a7-b2ca-de75da4da2ab
-source-git-commit: 19c42bcd2a96173f3d33e3e259192107b5e64c6c
+source-git-commit: 70af3bceee67082d6a1bb098e60fd2899dc74600
 workflow-type: tm+mt
 source-wordcount: '703'
 ht-degree: 2%
@@ -16,7 +16,7 @@ ht-degree: 2%
 
 När meddelandeinnehållet har definierats kan du använda testprofiler för att förhandsgranska och testa det. Om du infogade [anpassat innehåll](personalize.md) kan du kontrollera hur det här innehållet visas i meddelandet med hjälp av testprofildata. Om du vill identifiera eventuella fel i meddelandeinnehållet eller personaliseringsinställningarna skickar du korrektur för att testa profiler. Ett korrektur ska skickas varje gång en ändring görs för att validera det senaste innehållet.
 
-## Förhandsgranska innehåll{#preview-content}
+## Förhandsgranska innehåll {#preview-content}
 
 Innan du skickar korrektur bör du kontrollera meddelandeinnehållet i förhandsgranskningsavsnittet i leveransfönstret.
 
@@ -68,7 +68,7 @@ Som standard utförs ersättningen slumpmässigt, men du kan välja en specifik 
 
 * Använd alternativet **[!UICONTROL Specific target and Seed addresses]** för att kombinera startadresser och specifika e-postadresser. De relaterade konfigurationerna definieras sedan i två separata underflikar.
 
-### Skicka en korrektur{#proofs-send}
+### Skicka en korrektur {#proofs-send}
 
 Följ stegen nedan för att skicka korrektur av meddelanden:
 
@@ -88,7 +88,7 @@ Vi rekommenderar att du skickar korrektur efter varje ändring av meddelandeinne
 >
 >I det skickade korrekturet är länken till spegelsidan inte aktiv. Den aktiveras endast i de slutliga meddelandena.
 
-### Korregenskaper{#proofs-properties}
+### Korregenskaper {#proofs-properties}
 
 Korregenskaper anges på fliken **[!UICONTROL Advanced]** i fönstret för leveransegenskaper. Bläddra till länken **[!UICONTROL Proof properties...]** för att definiera parametrar och etiketter för korrektur. Du kan välja att behålla:
 

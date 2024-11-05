@@ -5,9 +5,9 @@ user-guide-description: Produktdokumentation för Adobe Campaign v8 (klientkonso
 title: Adobe Campaign v8-dokumentation
 description: Kampanjdokumentation v8
 breadcrumb-title: Dokumentation om Campaign v8
-source-git-commit: be085eaf7e1e7ded5986fdb6100045daba4d88fe
+source-git-commit: 70af3bceee67082d6a1bb098e60fd2899dc74600
 workflow-type: tm+mt
-source-wordcount: '677'
+source-wordcount: '681'
 ht-degree: 16%
 
 ---
@@ -42,7 +42,8 @@ ht-degree: 16%
    + [Kom igång med kampanjer](start/campaigns.md)
    + [Kampanjsamordning >](https://experienceleague.adobe.com/docs/campaign/automation/campaign-orchestration/set-up-campaigns.html)
 + Skicka meddelanden{#send}
-   + [Kom igång med meddelanden](start/create-message.md)
+   + [Kom igång med meddelanden](start/gs-message.md)
+   + [Skapa din första leverans](start/create-message.md)
    + E-postmeddelanden {#emails}
       + [Designa och validera e-postmeddelanden](send/email.md)
       + [Länka till spegelsidan](send/mirror-page.md)
