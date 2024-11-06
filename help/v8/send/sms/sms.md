@@ -5,10 +5,10 @@ feature: SMS
 role: User, Data Engineer
 level: Beginner
 exl-id: e2e2922a-2058-4588-b1b5-6997f29ee663
-source-git-commit: 0ef082b49261d0d2de5a6891a4a7f0cf5aafa221
+source-git-commit: c95bdc13237e67b885b6f9aa495a4753ca72a90e
 workflow-type: tm+mt
-source-wordcount: '156'
-ht-degree: 11%
+source-wordcount: '158'
+ht-degree: 10%
 
 ---
 
@@ -40,7 +40,7 @@ Kontrollera SMPP-anslutningen efter konfigurationen och se hur du felsöker den 
 </td>
 <td>
 <a href="sms-content.md">
-<img alt="SMS-innehåll" src="../../assets/do-not-localize/sms.jpg">
+<img alt="SMS-innehåll" src="../../assets/do-not-localize/sms-create.jpeg">
 </a>
 <div>
 <a href="sms-content.md"><strong>Definiera ditt SMS-innehåll</strong></a>
@@ -48,7 +48,7 @@ Kontrollera SMPP-anslutningen efter konfigurationen och se hur du felsöker den 
 <p></td>
 <td>
 <a href="sms-audience.md">
-<img alt="Målgrupp" src="../../assets/do-not-localize/sms-opt-out.jpg">
+<img alt="SMS-målgrupp" src="../../assets/do-not-localize/sms-opt-out.jpg">
 </a>
 <div>
 <a href="sms-audience.md"><strong>Välj målgruppen</strong></a>
@@ -57,7 +57,7 @@ Kontrollera SMPP-anslutningen efter konfigurationen och se hur du felsöker den 
 </td>
 <td>
 <a href="smpp-external-account.md">
-<img alt="Konfiguration" src="../../assets/do-not-localize/sms-config.jpg">
+<img alt="SMS-konfiguration" src="../../assets/do-not-localize/sms-config.jpg">
 </a>
 <div>
 <a href="smpp-external-account.md"><strong>Konfigurera SMS-kanal</strong></a>
