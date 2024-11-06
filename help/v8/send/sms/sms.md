@@ -5,7 +5,7 @@ feature: SMS
 role: User, Data Engineer
 level: Beginner
 exl-id: e2e2922a-2058-4588-b1b5-6997f29ee663
-source-git-commit: 5b2638927e39b6f839fb3a8639fe106d2c519fbf
+source-git-commit: bb77b915f50b31d8d91e25da6fa86aa15b03bba4
 workflow-type: tm+mt
 source-wordcount: '248'
 ht-degree: 2%
@@ -14,13 +14,13 @@ ht-degree: 2%
 
 # Kom igång med SMS {#gs-sms-channel}
 
-Med Adobe Campaign kan du leverera anpassat [SMS](../send/sms/sms.md) på mobiler.
+Med Adobe Campaign kan ni leverera personaliserad SMS på mobiler.
 
 För SMS-meddelanden kan du skapa, ändra och anpassa meddelanden endast i textformat. Du kan även förhandsgranska dina SMS-meddelanden innan de skickas.
 
 >[!NOTE]
 >
->Du kan också använda Adobe Campaign för att skicka [LINE](../send/line.md)-meddelanden med text, bilder och länkar.
+>Du kan också använda Adobe Campaign för att skicka [LINE](../../send/line.md)-meddelanden med text, bilder och länkar.
 
 För att kunna leverera SMS till en mobiltelefon med Adobe Campaign behöver du:
 
