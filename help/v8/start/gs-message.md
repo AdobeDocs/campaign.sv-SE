@@ -4,9 +4,9 @@ description: Kom igång med meddelanden
 feature: Email, Push, SMS, Direct Mail, Cross Channel Orchestration
 role: User
 level: Beginner
-source-git-commit: 0ff645a87700c038b78fb4cc45062822d6d97148
+source-git-commit: a7225fb958ad168d89e09445f4fad27e7b6817aa
 workflow-type: tm+mt
-source-wordcount: '1305'
+source-wordcount: '1291'
 ht-degree: 5%
 
 ---
@@ -25,31 +25,21 @@ Om du vill skicka meddelanden måste du skapa en leverans. Leveransläget beror 
 >
 >När du skapar en leverans måste du välja en mall. Standardmallar är tillgängliga för varje kanal. Läs mer om leveransmallar på [den här sidan](../send/create-templates.md).
 
-### Enbildsmeddelanden {#msg-single}
+1. Enbildsmeddelanden - Du kan skicka enbildsmeddelanden till en viss målgrupp. Lär dig hur du skickar ditt första meddelande i [det här avsnittet](create-message.md).
 
-Du kan skicka enbildsmeddelanden manuellt till huvudmålet. Lär dig hur du skickar ditt första meddelande i [det här avsnittet](create-message.md)
+   ![](assets/send-email.png)
 
-![](assets/send-email.png)
+1. Meddelanden i en marknadsföringskampanj - Du kan skicka meddelanden i samband med en [marknadsföringskampanj](campaigns.md), definiera en godkännandeprocess, skicka och spåra dem i en konsoliderad kontrollpanel. Lär dig hur i [det här avsnittet](../../automation/campaigns/marketing-campaign-deliveries.md).
 
-### Meddelanden i en marknadsföringskampanj {#msg-campaign}
+   ![](assets/deliveries-in-a-campaign.png)
 
-Du kan skicka meddelanden i samband med en [marknadsföringskampanj](campaigns.md), definiera en godkännandeprocess, skicka och spåra dem i en konsoliderad kontrollpanel. Läs mer i [det här avsnittet](../../automation/campaigns/marketing-campaign-deliveries.md)
+1. Meddelanden i ett arbetsflöde - Du kan skicka meddelanden via ett [arbetsflöde](../config/workflows.md) och automatisera leveranserna. Lär dig hur i [den här sidan](../../automation/workflow/delivery.md).
 
-![](assets/deliveries-in-a-campaign.png)
+   ![](assets/send-in-a-wf.png)
 
-### Meddelanden i ett arbetsflöde {#msg-wf}
+1. Utlösta meddelanden - Du kan [utlösa meddelanden](../send/transactional.md) från en händelse. Transactional messaging (Message Center) är den Campaign-modul som är avsedd för hantering av utlösarmeddelanden. Steg för att konfigurera och skicka transaktionsmeddelanden beskrivs på [den här sidan](../send/transactional.md)
 
-Du kan skicka meddelanden via ett [arbetsflöde](../config/workflows.md) och automatisera leveranserna. Lär dig hur i [den här sidan](../../automation/workflow/delivery.md)
-
-![](assets/send-in-a-wf.png)
-
-### Utlösta meddelanden {#msg-trigger}
-
-Du kan [utlösa meddelanden](../send/transactional.md) från en händelse. Transactional messaging (Message Center) är den Campaign-modul som är avsedd för hantering av utlösarmeddelanden.  Läs mer om funktionen för transaktionsmeddelanden i [det här avsnittet](../architecture/architecture.md#transac-msg-archi)
-
-Steg för att konfigurera och skicka transaktionsmeddelanden beskrivs på [den här sidan](../send/transactional.md)
-
-## Välj kanal {#gs-channel}
+## Kommunikationskanal {#gs-channel}
 
 Adobe Campaign v8 har följande leveranskanaler:
 
@@ -60,7 +50,6 @@ Adobe Campaign v8 har följande leveranskanaler:
 * **Mobilappskanal**: Med mobilappsleveranser kan du skicka meddelanden till iOS- och Android-enheter. [Läs mer](#gs-channel-push)
 
 * **Direktutskick**: Med direktutskick kan du generera en extraheringsfil som innehåller data om målpopulationen. [Läs mer](#gs-channel-direct)
-
 
   Andra kanaler beskrivs i [det här avsnittet](#other-channels).
 
@@ -119,7 +108,7 @@ Leveranser av typen Annan använder en specifik teknisk mall som inte utför nå
 
 Den här kanalen har ingen specifik mekanism. Det är en allmän kanal som har ett eget alternativ för extern kontodirigering, leveransmalltyp och kampanjarbetsflödesaktivitet, precis som alla andra kommunikationskanaler som finns i Adobe Campaign. Den här kanalen är avsedd endast för beskrivande syften, till exempel för att definiera leveranser för vilka du vill hålla reda på målet för en kampanj som har utförts i ett annat verktyg än Adobe Campaign.
 
-## Välj typ av leverans {#types-of-deliveries}
+## Leveranssätt {#types-of-deliveries}
 
 Det finns tre typer av leveransobjekt i Campaign:
 
@@ -147,7 +136,7 @@ Om du till exempel kör den här typen av aktivitet en gång i månaden får du 
 
 Kontinuerliga leveranser skapas i arbetsflöden via [Kontinuerlig leveransaktivitet](../../automation/workflow/continuous-delivery.md).
 
-## Lägg till personalisering {#personalization}
+## Personalization {#personalization}
 
 Meddelanden från Adobe Campaign kan personaliseras på olika sätt. [Läs mer om personaliseringsfunktioner](../send/personalize.md)
 
@@ -158,7 +147,7 @@ Du kan:
 * Skapa villkorsstyrt innehåll. [Läs mer](../send/conditions.md)
 
 
-## Skicka och spåra {#gs-tracking-logs}
+## Spårning och övervakning {#gs-tracking-logs}
 
 Att övervaka era leveranser efter att de har skickats är ett viktigt steg för att se till att era marknadsföringskampanjer är effektiva och når ut till era kunder. Du kan övervaka efter att du har skickat en leverans samt förstå hur leveransfel och karantäner hanteras.
 
