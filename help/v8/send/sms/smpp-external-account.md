@@ -5,7 +5,7 @@ feature: SMS
 role: User
 level: Intermediate
 exl-id: 1f941b35-c7e0-4e8c-b6e5-a1a3e5354483
-source-git-commit: 70af3bceee67082d6a1bb098e60fd2899dc74600
+source-git-commit: 826abd5c5f8b191d34abf724b91c5a82665d00a2
 workflow-type: tm+mt
 source-wordcount: '3650'
 ht-degree: 0%
@@ -16,16 +16,13 @@ ht-degree: 0%
 
 Adobe Campaign använder SMPP-protokollet för att skicka SMS till en tjänsteleverantör.
 
->[!IMPORTANT]
->
->Adobe Campaign stöder SMPP-protokollversion 3.4.
-
-
 SMS-kopplingen i Adobe Campaign erbjuder många alternativ för att anpassa sitt beteende så att det är kompatibelt med de flesta SMPP-leverantörer, som tenderar att avvika lite från den officiella specifikationen.
 
 >[!IMPORTANT]
 >
->Att konfigurera en anslutning till en ny provider kan kräva viss teknisk kompetens, kunskap om TCP, binär, hexadecimal representation och textkodning. Det kommer också att kräva ett aktivt samarbete med leverantören.
+>* Adobe Campaign stöder SMPP-protokollversion 3.4.
+>
+>* Att konfigurera en anslutning till en ny provider kan kräva viss teknisk kompetens, kunskap om TCP, binär, hexadecimal representation och textkodning. Det kommer också att kräva ett aktivt samarbete med leverantören.
 
 Nätverksutrustningen på SMS-tjänstleverantörens sida kallas ofta SMSC.
 

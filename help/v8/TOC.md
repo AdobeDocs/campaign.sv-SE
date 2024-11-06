@@ -5,10 +5,10 @@ user-guide-description: Produktdokumentation för Adobe Campaign v8 (klientkonso
 title: Adobe Campaign v8-dokumentation
 description: Kampanjdokumentation v8
 breadcrumb-title: Dokumentation om Campaign v8
-source-git-commit: 70af3bceee67082d6a1bb098e60fd2899dc74600
+source-git-commit: 826abd5c5f8b191d34abf724b91c5a82665d00a2
 workflow-type: tm+mt
-source-wordcount: '681'
-ht-degree: 16%
+source-wordcount: '685'
+ht-degree: 17%
 
 ---
 
@@ -53,6 +53,7 @@ ht-degree: 16%
    + SMS {#sms}
       + [Kom igång med SMS](send/sms/sms.md)
       + Konfigurera SMS-kanal {#config-sms}
+         + [SMS-leveransinställningar](send/sms/sms-delivery-settings.md)
          + [Inställningar för externt SMPP-konto](send/sms/smpp-external-account.md)
          + [SMS-kanalsegenskaper](send/sms/sms-channel.md)
          + [Verifierar en SMPP-anslutning](send/sms/smpp-connection.md)
@@ -60,7 +61,7 @@ ht-degree: 16%
          + [Infrastruktur för mellanleverantörer](send/sms/sms-mid-sourcing.md)
          + [SMPP-anslutningsbeskrivning](send/sms/smpp-connector-delivery.md)
       + Skapa ett SMS {#create-sms}
-         + [SMS-leveransinställningar](send/sms/sms-delivery-settings.md)
+         + [Skapa en SMS-leverans](send/sms/create-sms.md)
          + [Definiera innehållet](send/sms/sms-content.md)
          + [Välj målgruppen](send/sms/sms-audience.md)
       + Validera och skicka SMS {#validate-sms}

@@ -6,9 +6,9 @@ role: User
 level: Beginner, Intermediate
 badge: label="Begränsad tillgänglighet" type="Informative"
 exl-id: c4d500ef-2339-491f-9ae2-9bfaf72088a9
-source-git-commit: 8dffc24ff859ded70ea9c5b9ede39512c1543e74
+source-git-commit: 826abd5c5f8b191d34abf724b91c5a82665d00a2
 workflow-type: tm+mt
-source-wordcount: '893'
+source-wordcount: '787'
 ht-degree: 0%
 
 ---
@@ -23,13 +23,12 @@ ht-degree: 0%
 
 De tekniska inställningar som krävs för en SMS-leverans är:
 
-* routning: [det externa SMPP-kontot](smpp-external-account.md#smpp-connection-settings)
-
-* [The ](#sms-tab)
+* Det SMPP-externa kontot för meddelanderoutning. [Läs mer](smpp-external-account.md#smpp-connection-settings)
+* Konfigurera fliken SMS. [Lär dig hur](#sms-tab)
 
 Du kan konfigurera alla dessa i en leveransmall för att undvika att göra inställningarna för varje SMS-leveransskapande.
 
-## Konfigurera fliken **[!UICONTROL SMS]** {#sms-tab}
+## Konfigurera fliken SMS {#sms-tab}
 
 ![](assets/send_settings.png){zoomable="yes"}
 
@@ -97,25 +96,3 @@ I tabellen visas valfria parametrar som kan skickas med varje meddelande. Kolumn
   >
   >Binära format kodas alltid till bigendian-format.
 
-## Skapa en SMS-leverans {#sms-delivery}
-
-Följ stegen nedan för att skapa en ny SMS-leverans:
-
-1. Skapa en ny leverans, till exempel från leveransinstrumentpanelen eller i leveransmappen i **[!UICONTROL Explorer]**.  Som standard får den namnet&quot;E-postleverans&quot;.
-
-1. Välj den leveransmall som du skapade för SMS-utskick. [Läs mer här](sms-mid-sourcing.md#sms-delivery-template).
-
-   ![](assets/sms_create.png){zoomable="yes"}
-
-<!-- * For standalone instance,  [learn more here](sms-standalone-instance.md#sms-delivery-template).
-* For mid-sourcing infrastructure, -->
-
-1. Byt namn på leveransen i fältet **[!UICONTROL Label]** och lägg till information i fältet **[!UICONTROL Delivery code]** och listan **[!UICONTROL Nature]** om det behövs för spårningen. Du kan också lägga till en **[!UICONTROL Description]** i leveransen.
-
-1. Klicka på knappen **[!UICONTROL Continue]**. Nu har du alla inställningar för mallen i leveransen.
-
-1. Du kan kontrollera i knappen **[!UICONTROL Properties]** att alla har konfigurerats efter behov. [Läs mer om fliken SMS](#sms-tab)
-
-![](assets/sms_settings.png){zoomable="yes"}
-
-Du kan nu konfigurera ditt [SMS-innehåll](sms-content.md).
