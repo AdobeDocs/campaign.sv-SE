@@ -5,60 +5,63 @@ feature: SMS
 role: User, Data Engineer
 level: Beginner
 exl-id: e2e2922a-2058-4588-b1b5-6997f29ee663
-source-git-commit: bb77b915f50b31d8d91e25da6fa86aa15b03bba4
+source-git-commit: 19c5a15a0f42285fc3b1a448f3cbf474d741e6e2
 workflow-type: tm+mt
-source-wordcount: '248'
-ht-degree: 2%
+source-wordcount: '155'
+ht-degree: 9%
 
 ---
 
 # Kom igång med SMS {#gs-sms-channel}
 
-Med Adobe Campaign kan ni leverera personaliserad SMS på mobiler.
+Använd Adobe Campaign för att skicka textmeddelanden till kunderna på deras mobila enheter. Du kan skapa, anpassa och förhandsgranska meddelanden i textformat från SMS-redigeraren.
 
-För SMS-meddelanden kan du skapa, ändra och anpassa meddelanden endast i textformat. Du kan även förhandsgranska dina SMS-meddelanden innan de skickas.
+För att kunna leverera SMS till mobila enheter med Adobe Campaign behöver du:
+
+* Ett externt konto har konfigurerats på **[!UICONTROL Mobile (SMS)]**-kanalen. Lär dig hur du konfigurerar SMS-kanalen på din [infrastruktur för mellanleverantörer](sms-mid-sourcing.md). För den här konfigurationen måste du förstå de [SMPP-externa kontoparametrarna](smpp-external-account.md) och [SMS-kanalsegenskaperna](sms-channel.md).
+Kontrollera SMPP-anslutningen efter konfigurationen och se hur du felsöker den om det behövs. [Läs mer](smpp-connection.md).
+
+* En SMS-leveransmall som är korrekt länkad till det här externa kontot.
+
 
 >[!NOTE]
 >
 >Du kan också använda Adobe Campaign för att skicka [LINE](../../send/line.md)-meddelanden med text, bilder och länkar.
 
-För att kunna leverera SMS till en mobiltelefon med Adobe Campaign behöver du:
 
-* Ett externt konto har konfigurerats på **[!UICONTROL Mobile (SMS)]**-kanalen eller på **[!UICONTROL LINE]**-kanalen.
-* En SMS-leveransmall som är korrekt länkad till det här externa kontot.
-
-I den här dokumentationen kan du se hur du konfigurerar, skickar och övervakar en SMS-leverans:
-
-* **Konfigurera SMS-kanal**
-
-Först måste du konfigurera SMS-kanalen på din [infrastruktur för mellanleverantörer](sms-mid-sourcing.md).
-
-<!--The steps depend on the platform: either you have [a standalone instance](sms-standalone-instance.md) or you are in [a mid-sourcing infrastructure](sms-mid-sourcing.md).-->
-
-För den här konfigurationen måste du förstå de [SMPP-externa kontoparametrarna](smpp-external-account.md) och [SMS-kanalsegenskaperna](sms-channel.md).
-
-Kontrollera din [SMPP-anslutning efter den här konfigurationen och se hur du felsöker den om det behövs](smpp-connection.md).
-
-* **Skapa din första SMS-leverans**
-
-Så här startar du konfigurationen av SMS-leveransen:
-
-1. Skapa leveransen och fyll i [SMS-leveransinställningarna](sms-delivery-settings.md),
-
-1. [Definiera innehållet](sms-content.md) i leveransen,
-
-1. [Välj målgrupp](sms-audience.md).
-
-Steg för att definiera en målgrupp finns på [den här sidan](../../audiences/create-audiences.md).
-
-* **Validera och skicka SMS**
-
-När leveransen är klar:
-
-1. [Skicka korrektur](sms-proofs.md) för att validera återgivningen och innehållet,
-
-1. [skicka sedan till den slutliga målgruppen](sms-send.md).
-
-* **Övervaka och spåra SMS**
-
-[Lär dig övervaka och spåra ditt SMS](sms-monitor.md) när du har skickat meddelandet.
+<table style="table-layout:fixed"><tr style="border: 0;">
+<td>
+<a href="create-sms.md">
+<img alt="Skapa SMS" src="../../assets/do-not-localize/sms-sending.jpg">
+</a>
+<div><a href="create-sms.md"><strong>Skapa en SMS-leverans</strong>
+</div>
+<p>
+</td>
+<td>
+<a href="sms-content.md">
+<img alt="SMS-innehåll" src="../../assets/do-not-localize/sms.jpg">
+</a>
+<div>
+<a href="sms-content.md"><strong>Definiera och anpassa innehåll</strong></a>
+</div>
+<p></td>
+<td>
+<a href="sms-audience.md">
+<img alt="Målgrupp" src="../../assets/do-not-localize/sms-opt-out.jpg">
+</a>
+<div>
+<a href="sms-audience.md"><strong>Hantering av avanmälan</strong></a>
+</div>
+<p>
+</td>
+<td>
+<a href="smpp-external-account.md">
+<img alt="Konfiguration" src="../../assets/do-not-localize/sms-config.jpg">
+</a>
+<div>
+<a href="smpp-external-account.md"><strong>Konfigurera SMS-kanal</strong></a>
+</div>
+<p>
+</td>
+</tr></table>
