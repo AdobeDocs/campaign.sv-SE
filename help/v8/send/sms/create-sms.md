@@ -4,9 +4,9 @@ description: Lär dig hur du skapar en SMS-leverans
 feature: SMS
 role: User
 level: Beginner, Intermediate
-source-git-commit: 826abd5c5f8b191d34abf724b91c5a82665d00a2
+source-git-commit: 0ef082b49261d0d2de5a6891a4a7f0cf5aafa221
 workflow-type: tm+mt
-source-wordcount: '174'
+source-wordcount: '170'
 ht-degree: 2%
 
 ---
@@ -16,11 +16,11 @@ ht-degree: 2%
 
 Följ stegen nedan för att skapa en ny SMS-leverans:
 
-1. Skapa en ny leverans och välj den SMS-leveransmall som du skapade för SMS-utskick. [Läs mer här](sms-mid-sourcing.md#sms-delivery-template).
+1. Skapa en ny leverans och välj den [SMS-leveransmall](sms-mid-sourcing.md#sms-delivery-template) som du skapade för SMS-utskick.
 
    ![](assets/sms_create.png){zoomable="yes"}
 
-   Läs mer om stegen för leveransskapande i [den här sidan](../../start/create-message.md).
+   Stegen för att skapa leveranser beskrivs på [den här sidan](../../start/create-message.md).
 
 <!-- * For standalone instance,  [learn more here](sms-standalone-instance.md#sms-delivery-template).
 * For mid-sourcing infrastructure, -->
@@ -31,7 +31,7 @@ Följ stegen nedan för att skapa en ny SMS-leverans:
 
 1. Du kan kontrollera i knappen **[!UICONTROL Properties]** att alla har konfigurerats efter behov. [Läs mer om fliken SMS](sms-delivery-settings.md#sms-tab)
 
-![](assets/sms_settings.png){zoomable="yes"}
+   ![](assets/sms_settings.png){zoomable="yes"}
 
 1. [Definiera innehållet](sms-content.md) i leveransen.
 

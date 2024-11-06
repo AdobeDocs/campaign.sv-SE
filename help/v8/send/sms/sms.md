@@ -5,10 +5,10 @@ feature: SMS
 role: User, Data Engineer
 level: Beginner
 exl-id: e2e2922a-2058-4588-b1b5-6997f29ee663
-source-git-commit: 19c5a15a0f42285fc3b1a448f3cbf474d741e6e2
+source-git-commit: 0ef082b49261d0d2de5a6891a4a7f0cf5aafa221
 workflow-type: tm+mt
-source-wordcount: '155'
-ht-degree: 9%
+source-wordcount: '156'
+ht-degree: 11%
 
 ---
 
@@ -43,7 +43,7 @@ Kontrollera SMPP-anslutningen efter konfigurationen och se hur du felsöker den 
 <img alt="SMS-innehåll" src="../../assets/do-not-localize/sms.jpg">
 </a>
 <div>
-<a href="sms-content.md"><strong>Definiera och anpassa innehåll</strong></a>
+<a href="sms-content.md"><strong>Definiera ditt SMS-innehåll</strong></a>
 </div>
 <p></td>
 <td>
@@ -51,7 +51,7 @@ Kontrollera SMPP-anslutningen efter konfigurationen och se hur du felsöker den 
 <img alt="Målgrupp" src="../../assets/do-not-localize/sms-opt-out.jpg">
 </a>
 <div>
-<a href="sms-audience.md"><strong>Hantering av avanmälan</strong></a>
+<a href="sms-audience.md"><strong>Välj målgruppen</strong></a>
 </div>
 <p>
 </td>

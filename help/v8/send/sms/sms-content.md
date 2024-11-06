@@ -1,38 +1,40 @@
 ---
-title: SMS definierar innehållet
-description: Lär dig hur du konfigurerar innehållet i en SMS-leverans
+title: Definiera och anpassa SMS-innehållet
+description: Lär dig definiera och personalisera innehållet i en SMS-leverans
 feature: SMS
 role: User
 level: Beginner, Intermediate
 exl-id: 71d9376c-86e8-41ec-92dc-863455d40c7a
-source-git-commit: 70af3bceee67082d6a1bb098e60fd2899dc74600
+source-git-commit: 0ef082b49261d0d2de5a6891a4a7f0cf5aafa221
 workflow-type: tm+mt
-source-wordcount: '234'
+source-wordcount: '253'
 ht-degree: 0%
 
 ---
 
-# SMS-innehåll {#sms-content}
+# Definiera SMS-innehållet {#sms-content}
 
 Så här konfigurerar du innehållet i SMS-leveransen:
 
-1. Ange innehållet i meddelandet i guiden **[!UICONTROL Text content]**
+1. Ange innehållet i meddelandet på fliken **[!UICONTROL Text content]**.
 
    ![](assets/sms_content.png){zoomable="yes"}
 
-1. Du kan anpassa ditt meddelande genom att infoga anpassningsfält (t.ex. lägga till förnamnet) eller infoga fördefinierade anpassningsblock (t.ex. lägga till hälsningar). Du kan lägga till följande genom att klicka på personaliseringsknappen:
+1. Du kan anpassa ditt meddelande genom att infoga anpassningsfält (t.ex. lägga till förnamnet) eller infoga fördefinierade anpassningsblock (t.ex. lägga till hälsningar). Klicka på personaliseringsknappen för att lägga till följande:
 
    ![](assets/sms_perso.png){zoomable="yes"}
 
-   När du har klickat på **[!UICONTROL Recipient]** > **[!UICONTROL First name]** får du den här personaliseringen:
+   När du till exempel har klickat på **[!UICONTROL Recipient]** > **[!UICONTROL First name]** uppdateras SMS-innehållet med anpassningsfältet enligt nedan:
 
    ![](assets/sms_perso_recipient.png){zoomable="yes"}
 
-1. Du kan förhandsgranska leveransen genom att gå till fliken **[!UICONTROL Preview]** och klicka på listrutan **[!UICONTROL Test personalization]** och genom att välja en mottagare i tabellen **[!UICONTROL Recipient]**.
+   Läs mer om personalisering i Adobe Campaign i [det här avsnittet](../personalize.md).
+
+1. Du kan förhandsgranska leveransinnehåll på fliken **[!UICONTROL Preview]**. Om du vill kontrollera dina personaliseringsinställningar klickar du på listrutan **[!UICONTROL Test personalization]** och väljer en mottagare.
 
    ![](assets/sms_preview.png){zoomable="yes"}
 
-   Du får en förhandsgranskning av ditt SMS med personaliseringen:
+   Du kan kontrollera förhandsgranskningen av ditt SMS med personaliseringen:
 
    ![](assets/sms_preview_phone.png){zoomable="yes"}
 
