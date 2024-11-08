@@ -5,9 +5,9 @@ user-guide-description: Produktdokumentation för Adobe Campaign v8 (klientkonso
 title: Adobe Campaign v8-dokumentation
 description: Kampanjdokumentation v8
 breadcrumb-title: Dokumentation om Campaign v8
-source-git-commit: 826abd5c5f8b191d34abf724b91c5a82665d00a2
+source-git-commit: 3ac2976839f084761ba56647b282062d8d457ff2
 workflow-type: tm+mt
-source-wordcount: '685'
+source-wordcount: '688'
 ht-degree: 17%
 
 ---
@@ -44,6 +44,7 @@ ht-degree: 17%
 + Skicka meddelanden{#send}
    + [Kom igång med meddelanden](start/gs-message.md)
    + [Skapa din första leverans](start/create-message.md)
+   + [God praxis för leverans](start/delivery-best-practices.md)
    + E-postmeddelanden {#emails}
       + [Designa och validera e-postmeddelanden](send/email.md)
       + [Länka till spegelsidan](send/mirror-page.md)

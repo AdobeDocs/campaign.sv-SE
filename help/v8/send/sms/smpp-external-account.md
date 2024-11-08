@@ -5,7 +5,7 @@ feature: SMS
 role: User
 level: Intermediate
 exl-id: 1f941b35-c7e0-4e8c-b6e5-a1a3e5354483
-source-git-commit: 826abd5c5f8b191d34abf724b91c5a82665d00a2
+source-git-commit: 3ac2976839f084761ba56647b282062d8d457ff2
 workflow-type: tm+mt
 source-wordcount: '3650'
 ht-degree: 0%
@@ -71,7 +71,7 @@ När det här alternativet är aktiverat skickas extra loggar till loggfilen. De
 
 ![](assets/smpp_channel_settings.png){zoomable="yes"}
 
-### Godkänn teckentransformering
+### Godkänn teckentransformering {#smpp-transliteration}
 
 Translitterering är processen att hitta tecken som är likvärdiga med dem som saknas. Det franska specialtecknet&quot;ê&quot; (e med cirkumflex) saknas till exempel i GSM-kodningen, men kan ersättas med&quot;e&quot; utan att försämra läsbarheten för mycket.
 

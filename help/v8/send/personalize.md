@@ -5,9 +5,9 @@ feature: Personalization
 role: User
 level: Beginner
 exl-id: 1da45746-4d69-415b-a793-9a08ce80091d
-source-git-commit: 6d54f072ad0e67b435cd6e03433fa9ddd0794dea
+source-git-commit: 3ac2976839f084761ba56647b282062d8d457ff2
 workflow-type: tm+mt
-source-wordcount: '473'
+source-wordcount: '471'
 ht-degree: 5%
 
 ---
@@ -47,13 +47,13 @@ Du kan anpassa meddelandeinnehållet genom att:
 
 ## Skyddsutkast och rekommendationer{#perso-guardrails}
 
-### Personalization timeout{#perso-timeout}
+### Personalization timeout {#perso-timeout}
 
 Om du vill förbättra leveransskyddet kan du ange en tidsgräns för personaliseringsfasen.
 
 På fliken **[!UICONTROL Delivery]** i **[!UICONTROL Delivery properties]** väljer du ett maxvärde i sekunder för alternativet **[!UICONTROL Maximum personalization run time]**.
 
-Om personaliseringsfasen överskrider den maximala tiden som du anger i det här fältet avbryts processen under förhandsgranskningen eller sändningen och ett felmeddelande visas och leveransen misslyckas.
+Om personaliseringsfasen överskrider den maximala tid som du anger i det här fältet avbryts processen under förhandsgranskningen eller sändningen och leveransen misslyckas.
 
 Standardvärdet är 5 sekunder.
 
