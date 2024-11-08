@@ -4,7 +4,7 @@ description: Lär dig de bästa sätten att designa och skicka leveranser med Ad
 feature: Email, Push, SMS, Direct Mail, Cross Channel Orchestration
 role: User
 level: Beginner
-source-git-commit: 3ac2976839f084761ba56647b282062d8d457ff2
+source-git-commit: b4fad76b43a77909a4ea2c0877527af80027681a
 workflow-type: tm+mt
 source-wordcount: '2869'
 ht-degree: 1%
@@ -117,7 +117,7 @@ Mer information om anpassningsblock finns i [det här avsnittet](../send/persona
 
 Ni kan förbereda personaliseringsdata i ett arbetsflöde för att förbättra analysen av leveransförberedelser. Detta bör användas särskilt om personaliseringsdata kommer från en extern tabell via FDA (Federated Data Access). Det här alternativet beskrivs i det här [här avsnittet](../send/personalization-data.md#optimize-personalization)
 
-### Bygg optimerat innehåll {#optimize-content}
+### Bygg optimerat innehåll {#build-optimized-content}
 
 När du skapar e-postmeddelanden bör du tänka på de allmänna bästa metoderna nedan:
 
