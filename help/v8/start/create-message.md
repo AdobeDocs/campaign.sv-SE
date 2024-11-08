@@ -5,9 +5,9 @@ feature: Email, Push, SMS, Direct Mail, Cross Channel Orchestration
 role: User
 level: Beginner
 exl-id: 6cf8a929-637e-4e51-9160-5980ca727efb
-source-git-commit: ad96c126836981f861c246eafa2ec7d2c0e179dc
+source-git-commit: 55b752713a29c035680dd39e42422b1743e15269
 workflow-type: tm+mt
-source-wordcount: '1530'
+source-wordcount: '1525'
 ht-degree: 3%
 
 ---
@@ -176,15 +176,12 @@ Ett korrektur är ett specifikt meddelande som gör att du kan testa ett meddela
 
 Mer information om korrekturmottagare och sändning finns i [det här avsnittet](../send/preview-and-proof.md#send-proofs).
 
-![](../send/assets/do-not-localize/how-to-video.png) [Upptäck den här funktionen i en video](#seeds-and-proofs-video)
-
 
 #### Självstudievideo {#seeds-and-proofs-video}
 
 I den här videon får du lära dig hur du lägger till frön och korrektur i ett befintligt e-postmeddelande och hur du skickar det.
 
 >[!VIDEO](https://video.tv.adobe.com/v/333404?quality=12)
-
 
 Ytterligare Campaign Classic om instruktionsvideor finns [här](https://experienceleague.adobe.com/docs/campaign-classic-learn/tutorials/overview.html?lang=sv).
 
@@ -200,7 +197,7 @@ Så här gör du:
 
 >[!IMPORTANT]
 >
->De två stegen ovan MÅSTE utföras efter varje ändring av meddelandeinnehållet.
+>De två stegen ovanför **måste utföras** efter varje ändring av meddelandeinnehållet.
 
 
 ## Konfigurera och skicka leveransen {#configuring-and-sending-the-delivery}
