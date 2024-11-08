@@ -4,7 +4,7 @@ description: Lär dig de bästa sätten att designa och skicka leveranser med Ad
 feature: Email, Push, SMS, Direct Mail, Cross Channel Orchestration
 role: User
 level: Beginner
-source-git-commit: b4fad76b43a77909a4ea2c0877527af80027681a
+source-git-commit: 10af828319569ad9aeeecc809bc213f9608791ac
 workflow-type: tm+mt
 source-wordcount: '2869'
 ht-degree: 1%
@@ -151,7 +151,7 @@ Länken för att avbeställa prenumerationer är viktig. Den måste vara synlig 
 
 **Tips**: Eftersom ett mänskligt fel alltid är möjligt bör du kontrollera att avanmälningslänken fungerar korrekt innan du skickar iväg den. När du t.ex. skickar korrekturet kontrollerar du att länken är giltig, att formuläret är online och att fältet `No longer contact this recipient ` har ändrats till `Yes`.
 
-Lär dig hur du infogar en länk [för avanmälan i det här avsnittet](personalization-blocks.md#personalization-blocks-example).
+Lär dig hur du infogar en länk [för avanmälan i det här avsnittet](../send/personalization-blocks.md).
 
 ### E-poststorlek
 
@@ -328,7 +328,7 @@ Du kan definiera en fullständig valideringsprocess där Adobe Campaign-operator
 
 #### Använd vågor
 
-Du kan stegvis öka volymen som skickas med vågor. På så sätt undviker du att meddelanden markeras som skräppost eller när du vill begränsa antalet meddelanden per dag. Med vågor kan du dela upp leveranser i flera grupper i stället för att skicka stora mängder meddelanden samtidigt. Läs mer [i det här avsnittet](../send/configure-and-send.mdsending-using-multiple-waves).
+Du kan stegvis öka volymen som skickas med vågor. På så sätt undviker du att meddelanden markeras som skräppost eller när du vill begränsa antalet meddelanden per dag. Med vågor kan du dela upp leveranser i flera grupper i stället för att skicka stora mängder meddelanden samtidigt. Läs mer [i det här avsnittet](../send/configure-and-send.md#sending-using-multiple-waves).
 
 #### Prioritera meddelanden
 
