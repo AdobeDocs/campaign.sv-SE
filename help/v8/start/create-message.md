@@ -5,9 +5,9 @@ feature: Email, Push, SMS, Direct Mail, Cross Channel Orchestration
 role: User
 level: Beginner
 exl-id: 6cf8a929-637e-4e51-9160-5980ca727efb
-source-git-commit: 1bf3c4b2d0c8d9b1bdbc82a9047c52c0d80cd997
+source-git-commit: ad96c126836981f861c246eafa2ec7d2c0e179dc
 workflow-type: tm+mt
-source-wordcount: '1525'
+source-wordcount: '1530'
 ht-degree: 3%
 
 ---
@@ -24,7 +24,7 @@ De viktigaste stegen när du ska skapa en engångsleverans är:
 
 1. **Välj målpopulationen**. [Läs mer](#target-population)
 
-Du kan sedan förbereda, testa, skicka och övervaka dina meddelanden.
+Du kan sedan förbereda, testa, skicka och övervaka dina meddelanden med Adobe Campaign.
 
 >[!NOTE]
 >
@@ -34,13 +34,14 @@ Du kan sedan förbereda, testa, skicka och övervaka dina meddelanden.
 
 Så här skapar du en leverans:
 
-1. Klicka på **[!UICONTROL Create]** ovanför listan över leveranser. När du skapar en ny leverans måste du välja leveranskanalen. Det gör du genom att välja lämplig leveransmall i listrutan i fältet **[!UICONTROL Delivery template]**.
+1. Bläddra till listan över leveranser och klicka på **[!UICONTROL Create]**.
+1. Välj leveranskanal. Det gör du genom att välja rätt leveransmall i listrutan.
 
    ![](../send/assets/select-the-new-template.png)
 
-   En inbyggd mall tillhandahålls för varje kanal som du har installerat: direktreklam, e-post, telefon, mobilkanal (SMS), X (Twitter) osv. Vilka kanaler som är tillgängliga i listan beror på ditt licensavtal.
+   En inbyggd mall tillhandahålls för varje kanal som du har installerat: e-post, telefon, mobilkanaler (push/SMS), direktreklam, X (Twitter) osv. Vilka kanaler som är tillgängliga i listan beror på ditt licensavtal.
 
-   Du kan skapa nya leveransmallar för att förkonfigurera specifika parametrar så att de passar dina behov. Mer information om mallar finns i [det här avsnittet](../send/create-templates.md).
+   Du kan skapa nya leveransmallar för att förkonfigurera specifika parametrar så att de passar dina behov.  [Läs mer](../send/create-templates.md).
 
 1. Ange ett namn för leveransen i fältet **[!UICONTROL Label]**.
 
@@ -48,7 +49,7 @@ Så här skapar du en leverans:
 
 1. (valfritt) Lägg till en beskrivning i fältet **[!UICONTROL Description]**.
 1. (valfritt) Välj leveranstyp i det relevanta fältet. Den här informationen är användbar för leveransspårning: du kan filtrera baserat på det här villkoret i leveranslistan eller skapa frågor med det här urvalskriteriet.
-1. Klicka på **[!UICONTROL Continue]** för att bekräfta den här informationen och visa meddelandekonfigurationsfönstret.
+1. Klicka på **[!UICONTROL Continue]** för att visa meddelandets innehållsfönster.
 
 ## Definiera leveransinnehållet {#content-of-the-delivery}
 
@@ -126,7 +127,7 @@ Följ stegen nedan för att välja mottagare av en leverans:
 
    ![](assets/target-remove-criterion.png)
 
-#### Välj externa mottagare {#selecting-external-recipients}
+### Välj externa mottagare {#selecting-external-recipients}
 
 Du kan skicka meddelanden till profiler som inte lagras i databasen, utan i en extern fil. Om du till exempel vill skicka en leverans till mottagare som har importerats från en textfil gör du så här:
 
@@ -141,25 +142,31 @@ Du kan skicka meddelanden till profiler som inte lagras i databasen, utan i en e
 
 >[!CAUTION]
 >
->När du definierar innehållet i meddelandet för e-postleverans ska du inte inkludera länken till spegelsidan: det kan inte genereras i det här leveransläget.
+>När du definierar innehållet i meddelandet för e-postleverans till externa mottagare ska du inte inkludera länken till spegelsidan: det kan inte genereras i det här leveransläget.
 
-#### Definiera exkluderingsinställningar {#define-exclusion-settings}
+### Uteslutningsinställningar {#define-exclusion-settings}
 
-När du definierar målet för en leverans används fliken **[!UICONTROL Exclusions]** för att begränsa antalet meddelanden. Standardparametrar rekommenderas, men du kan anpassa inställningarna efter dina behov. Dessa alternativ bör dock endast ändras av en expertanvändare för att undvika felanvändning och fel.
+När du definierar [målgruppen för en leverans](#target-population) används fliken **[!UICONTROL Exclusions]** för att begränsa antalet meddelanden. Standardparametrar rekommenderas, men du kan anpassa inställningarna efter dina behov. Dessa alternativ bör dock endast ändras av en expertanvändare för att undvika felanvändning och fel.
 
-Du kan välja att exkludera adresser som har nått ett visst antal efterföljande fel, eller vars kvalitetsklassificering är under ett tröskelvärde som anges i det här fönstret. Du kan också välja om du vill auktorisera icke-kvalificerade adresser som inga data har returnerats för.
+>[!CAUTION]
+>
+>Som expertanvändare kan du ändra de här inställningarna, men Adobe rekommenderar att du behåller standardkonfigurationen.
+
+Du kan utesluta adresser som har nått ett visst antal efterföljande fel, eller vars kvalitetsklassificering är under ett tröskelvärde som anges i det här fönstret. Du kan också välja om du vill auktorisera icke-kvalificerade adresser som inga data har returnerats för.
 
 Klicka på länken **[!UICONTROL Edit...]** om du vill ändra standardkonfigurationen.
 
 ![](assets/target-exclusion-settings.png)
 
-Följande alternativ är tillgängliga:
++++ Se tillgängliga alternativ
 
 * **[!UICONTROL Exclude duplicate addresses during delivery]**: Det här alternativet är aktivt som standard och tar bort dubblettadresser under leveransen. Den strategi som tillämpas kan variera beroende på hur Adobe Campaign används och vilken typ av data som finns i databasen. Värdet för alternativet kan konfigureras för varje leveransmall.
 * **[!UICONTROL Exclude recipients who no longer want to be contacted]**, d.v.s. mottagare vars e-postadresser är på blockeringslista (avanmäl dig). Detta alternativ måste förbli valt för att man ska kunna följa de professionella etiska reglerna för e-marknadsföring.
 * **[!UICONTROL Exclude quarantined recipients]**: Med det här alternativet kan du utesluta profiler med en adress som är i karantän från målet. Vi rekommenderar starkt att du behåller det här alternativet markerat. Läs mer om karantänhantering i [det här avsnittet](../send/quarantines.md).
 * **[!UICONTROL Limit delivery]** till ett visst antal meddelanden. Med det här alternativet kan du ange maximalt antal meddelanden som ska skickas. Om målgruppen överskrider antalet angivna meddelanden, tillämpas ett slumpmässigt urval på målet. Om du vill skicka alla meddelanden ska du behålla värdet &#39;0&#39;.
 * **[!UICONTROL Keep duplicate records (same identifier)]**: Det här alternativet tillåter att flera leveranser skickas till mottagare som uppfyller flera målinriktningskriterier.
++++
+
 
 ### Välj mottagare av korrekturmeddelanden {#select-the-proof-target}
 
