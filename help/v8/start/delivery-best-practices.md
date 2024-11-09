@@ -5,9 +5,9 @@ feature: Email, Push, SMS, Direct Mail, Cross Channel Orchestration
 role: User
 level: Beginner
 exl-id: cb6094eb-0010-4c62-9589-3b52fd60c2c2
-source-git-commit: 61c86c3c9d6dbbabf2d5174b8b7b1721b38280cb
+source-git-commit: 58d88498c8472381a43d735b4dfb2a802a293952
 workflow-type: tm+mt
-source-wordcount: '2890'
+source-wordcount: '2934'
 ht-degree: 1%
 
 ---
@@ -66,11 +66,11 @@ För att undvika att skicka meddelanden till ogiltiga adresser, begränsa felakt
 
 Leveransmallar ger ökad effektivitet genom färdiga scenarier för de flesta vanliga typer av aktiviteter. Med mallar kan marknadsförarna driftsätta nya kampanjer med minimal anpassning på kortare tid. [Läs mer om leveransmallar](../send/create-templates.md).
 
-### Varumärke
+### Underdomäner och varumärken {#subdomains-and-branding}
 
 När du hanterar flera varumärken i Adobe Campaign rekommenderar Adobe att du har en underdomän per varumärke. En bank kan till exempel ha flera underdomäner som motsvarar var och en av dess regionala myndigheter. Om en bank äger bluebank.com kan dess underdomäner vara @ny.bluebank.com, @ma.bluebank.com, @ca.bluebank.com osv. Med en leveransmall per underdomän kan ni alltid använda rätt förkonfigurerade parametrar för varje varumärke, vilket undviker fel och sparar tid. Läs mer om anpassning av underdomäner i dokumentationen från [Kontrollpanelen för kampanj](https://experienceleague.adobe.com/en/docs/control-panel/using/subdomains-and-certificates/subdomains-branding){target="_blank"}.
 
-### Konfigurera adresser
+### Konfigurera adresser {#configure-addresses}
 
 Var noga med att följa följande riktlinjer:
 
@@ -79,7 +79,7 @@ Var noga med att följa följande riktlinjer:
 * Adressen måste uttryckligen identifiera avsändaren. Domänen måste ägas av och registreras hos avsändaren.
 * Adobe rekommenderar att du skapar e-postkonton som motsvarar adresserna som angetts för leveranser och svar. Kontakta systemadministratören för meddelanden.
 
-+++ **Konfigurera adresser i Campaign-gränssnittet**
++++ **Steg för att konfigurera adresser i Campaign-gränssnittet**
 
 Följ stegen nedan för att konfigurera adresser i Campaign-gränssnittet:
 
@@ -91,15 +91,15 @@ Följ stegen nedan för att konfigurera adresser i Campaign-gränssnittet:
 
 1. I fälten **[!UICONTROL Reply address text]** används avsändarens adress som standard för svar. Adobe rekommenderar dock att man använder en befintlig riktig adress som till exempel kundtjänst för ert varumärke. Om en mottagare skickar ett svar kan kundtjänst hantera det.
 
-### Konfigurera en kontrollgrupp
+### Konfigurera en kontrollgrupp {#set-up-control-group}
 
 När leveransen har skickats kan du jämföra beteendet hos de uteslutna mottagarna med mottagarna som tog emot leveransen. Sedan kan ni mäta effektiviteten i era kampanjer. Läs mer om kontrollgrupper [det här avsnittet](../../automation/campaigns/marketing-campaign-target.md#add-a-control-group).
 
-### Använd typografi för att tillämpa filter eller kontrollregler
+### Använd typografi för att tillämpa filter eller kontrollregler {#create-typologies}
 
 En typologi innehåller kontrollregler som tillämpas under analysfasen innan ett meddelande skickas.
 
-Ändra standardtypologin efter behov på fliken **[!UICONTROL Typology]** i mallens egenskaper.
+På fliken **[!UICONTROL Typology]** i mallens egenskaper kan du vid behov välja en anpassad typologi.
 
 Om du till exempel vill ha bättre kontroll över utgående trafik kan du definiera vilka IP-adresser som kan användas genom att definiera en tillhörighet per underdomän och skapa en typologi per tillhörighet. Tillhörigheterna definieras i instansens konfigurationsfil. Kontakta Adobe Campaign-administratören.
 
@@ -111,17 +111,20 @@ Mer information om typologier finns i [det här avsnittet](../../automation/camp
 
 Om du vill anpassa dina meddelanden kan du använda mottagarnas data som lagras i databasen, eller som samlats in via spårning, landningssidor, prenumerationer osv. Grundläggande om Personalization presenteras i [det här avsnittet](../send/personalize.md).
 
-Se till att meddelandeinnehållet är rätt utformat för att undvika fel som kan bero på personalisering. En Adobe Campaign-personaliseringstagg har alltid följande format: `<%=table.field%>`. Felaktig användning av parametrar i personaliseringsblock kan vara ett problem. Variabler i JavaScript bör till exempel användas på följande sätt:
++++ **Läs om några metodtips**
 
-``
-<%
-var brand = "xxx"
-%>
-``
+* Kontrollera dina personaliseringsinställningar - Kontrollera att meddelandeinnehållet är korrekt utformat för att undvika fel som kan relateras till personalisering. En Adobe Campaign-personaliseringstagg har alltid följande format: `<%=table.field%>`. Felaktig användning av parametrar i personaliseringsblock kan vara ett problem. Variabler i JavaScript bör till exempel användas på följande sätt:
 
-Mer information om anpassningsblock finns i [det här avsnittet](../send/personalization-blocks.md).
+  ``
+  <%
+  var brand = "xxx"
+  %>
+  ``
 
-Ni kan förbereda personaliseringsdata i ett arbetsflöde för att förbättra analysen av leveransförberedelser. Detta bör användas särskilt om personaliseringsdata kommer från en extern tabell via FDA (Federated Data Access). Det här alternativet beskrivs i det här [här avsnittet](../send/personalization-data.md#optimize-personalization)
+  Mer information om anpassningsblock finns i [det här avsnittet](../send/personalization-blocks.md).
+
+* Förbered personaliseringsdata - Du kan förbereda personaliseringsdata i ett arbetsflöde för att förbättra analysen av leveransförberedelser. Detta bör användas särskilt om personaliseringsdata kommer från en extern tabell via FDA (Federated Data Access). Det här alternativet beskrivs i det här [här avsnittet](../send/personalization-data.md#optimize-personalization)
++++
 
 ### Bygg optimerat innehåll {#build-optimized-content}
 
@@ -142,7 +145,7 @@ När du skapar e-postmeddelanden bör du använda de allmänna bästa metoderna 
 +++
 
 
-### Subject line
+### Subject line  {#subject-line-check}
 
 Arbeta med e-postmeddelandets [ämnesrad](../send/personalization-fields.md#personalization-fields-uc) för att förbättra öppningsfrekvensen.
 
@@ -154,15 +157,17 @@ Arbeta med e-postmeddelandets [ämnesrad](../send/personalization-fields.md#pers
 
 * Undvik att använda upprepade ord som &quot;free&quot; eller &quot;offer&quot; som kan betraktas som spam
 
-* Undvik versaler och specialtecken som &quot;!&quot;, &quot;£&quot;, &quot;€&quot;, &quot;$&quot;
+* Undvik versaler
+
+* Använd inte specialtecken som &quot;!&quot;, &quot;£&quot;, &quot;€&quot;, &quot;$&quot;
 
 +++
 
-### Spegelsida
+### Spegelsida {#mirror-page-check}
 
 Inkludera alltid en länk för spegelsida. Önskad position är högst upp i e-postmeddelandet. Läs mer om speglingssidan i [den här sidan](../send/mirror-page.md)
 
-### Länk för att avbryta prenumeration
+### Länk för att avbryta prenumeration {#unsub-link-check}
 
 Länken för att avbeställa prenumerationer är viktig. Den måste vara synlig och giltig och formuläret måste vara funktionellt. Som standard kontrolleras om en avanmälningslänk har inkluderats när meddelandet analyseras av en inbyggd **[!UICONTROL Unsubscription link approval]** [typologiregel](../../automation/campaign-opt/control-rules.md) och en varning genereras om den saknas.
 
@@ -174,7 +179,7 @@ Eftersom mänskliga fel alltid är möjliga bör du kontrollera att länken för
 
 +++
 
-### E-poststorlek
+### E-poststorlek {#email-size-check}
 
 För att undvika problem med prestanda och leverans är den rekommenderade maximala storleken på ett e-postmeddelande cirka **35 kB**. Om du vill kontrollera meddelandestorleken går du till fliken **[!UICONTROL Preview]** och väljer en testprofil. När meddelandet har genererats visas meddelandestorleken i det övre högra hörnet.
 
@@ -192,17 +197,18 @@ Kontrollera att du har testat ändringarna innan du skickar det.
 +++
 
 
-### SMS-längd
+### SMS-längd {#sms-length-check}
 
 Som standard uppfyller antalet tecken i ett SMS GSM-system (Global System for Mobile Communications). SMS-meddelanden som använder GSM-kodning kan innehålla högst 160 tecken eller 153 tecken per SMS för meddelanden som skickas i flera delar.
 
-Translitterering består i att ersätta ett tecken i ett SMS med ett annat om det tecknet inte beaktas av GSM-standarden. Observera att om du infogar anpassningsfält i innehållet i SMS-meddelandet kan det medföra tecken som GSM-kodningen inte tar hänsyn till. Du kan godkänna teckentranskribering genom att markera motsvarande ruta på fliken SMPP-kanalinställningar i motsvarande **[!UICONTROL External account]**.
 
 +++ **Läs om några metodtips**
 
 * Om du vill behålla alla tecken i SMS-meddelanden som de är, ska du inte aktivera transkribering för att t.ex. inte ändra egennamn.
 
 * Om dina SMS-meddelanden innehåller många tecken som inte beaktas av GSM-standarden kan du aktivera transkribering för att begränsa kostnaderna för att skicka meddelanden. Läs mer [i det här avsnittet](../send/sms/smpp-external-account.md#smpp-transliteration).
+
+* Du kan använda SMS-transkribering, som består i att ersätta ett tecken i ett SMS med ett annat när det tecknet inte beaktas av GSM-standarden. Observera att om du infogar anpassningsfält i innehållet i SMS-meddelandet kan det medföra tecken som GSM-kodningen inte tar hänsyn till. Som Campaign-administratör kan du aktivera teckentranskribering genom att markera motsvarande ruta på fliken SMPP-kanalinställningar i motsvarande **[!UICONTROL External account]**. [Läs mer](../send/sms/smpp-external-account.md#smpp-transliteration)
 
 +++
 
@@ -221,26 +227,28 @@ To avoid common formatting errors, check the following elements:
 
 * Configuration of **Email Authentication**: make sure that the email headers contain the DKIM signature. DKIM (Domain Keys Identified Mail) authentication allows the receiving email server to verify that a message was indeed sent by the person or entity it claims it was sent by, and whether the message content was altered in between the time it was originally sent (and DKIM "signed") and the time it was received. This standard typically uses the domain in the From or Sender header. For more on this, refer to the [Adobe Deliverability Best Practice Guide](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/transition-process/infrastructure.html#authentication).-->
 
-
 ## Hantera bilder {#manage-images}
 
 Här följer några specifika riktlinjer för hur du optimerar bilder för din e-postmarknadsföringskampanj.
 
-### Förhindra blockering av bilder
+### Förhindra blockering av bilder {#image-blocking}
 
-Vissa e-postklienter blockerar bilder som standard, och vissa användare ändrar sina inställningar till blockbilder för att spara på dataanvändningen. Om bilderna inte hämtas kan därför hela meddelandet gå förlorat. Så här undviker du:
+Vissa e-postklienter blockerar bilder som standard, och användare kan ändra sina inställningar till att blockera bilder för att spara på dataanvändningen.  Om bilderna inte laddas ned kan hela meddelandet därför gå förlorat.
 
-* Balansera innehållet med bild och text. Undvik helt bildbaserade e-postmeddelanden.
++++ För att undvika detta kan du använda dessa bästa metoder
+
+* Undvik helt bildbaserade e-postmeddelanden. Balansera innehållet med bild och text.
 
 * Om texten måste finnas i en bild använder du alt- och titeltext för att vara säker på att meddelandet når fram. Formatera din alt-/titeltext för att förbättra utseendet.
 
 * Undvik att använda bakgrundsbilder eftersom de inte stöds av vissa e-postklienter.
++++
 
-### Gör bilderna responsiva
+### Gör bilderna responsiva {#responsive-images}
 
-Försök att göra bilderna responsiva och ändra storlek. Observera att detta kan ha en kostnadseffekt eftersom det tar längre tid att bygga.
+Försök att göra bilderna responsiva och ändra storlek så att de blir synliga i alla sammanhang och på alla enheter. Observera att detta kan ha en kostnadseffekt eftersom det tar längre tid att bygga.
 
-### Använd absoluta bildreferenser
+### Använd absoluta bildreferenser {#absolute-images}
 
 För att vara tillgängliga utifrån måste de bilder som används i e-postmeddelanden och offentliga resurser som är kopplade till kampanjer finnas på en externt tillgänglig server.
 
