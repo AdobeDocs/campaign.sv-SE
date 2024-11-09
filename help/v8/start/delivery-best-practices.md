@@ -4,9 +4,10 @@ description: Lär dig de bästa sätten att designa och skicka leveranser med Ad
 feature: Email, Push, SMS, Direct Mail, Cross Channel Orchestration
 role: User
 level: Beginner
-source-git-commit: 10af828319569ad9aeeecc809bc213f9608791ac
+exl-id: cb6094eb-0010-4c62-9589-3b52fd60c2c2
+source-git-commit: 61c86c3c9d6dbbabf2d5174b8b7b1721b38280cb
 workflow-type: tm+mt
-source-wordcount: '2869'
+source-wordcount: '2890'
 ht-degree: 1%
 
 ---
@@ -44,7 +45,7 @@ Läs mer om hur du startar en ny plattform i [Adobe Deliverability Best Practice
 Tekniska rekommendationer visas i [det här avsnittet](https://experienceleague.adobe.com/en/docs/deliverability-learn/deliverability-best-practice-guide/additional-resources/campaign/acc-technical-recommendations){target="_blank"}.
 
 
-**Tips**
++++ **Läs om några metodtips**
 
 * Om du har en lista med ogiltiga adresser rekommenderar Adobe att du importerar den till karantäntabellen via **[!UICONTROL Administration]** > **[!UICONTROL Campaign Management]** > **[!UICONTROL Non deliverables Management]** > **[!UICONTROL Non deliverables and addresses]**.
 
@@ -52,6 +53,9 @@ Tekniska rekommendationer visas i [det här avsnittet](https://experienceleague.
 Adobe Campaign hanterar felaktiga adresser beroende på vilken typ av fel som returneras. [Läs mer om karantäner](../send/quarantines.md)
 
 * Vissa leverantörer av internetåtkomst betraktar automatiskt e-post som skräppost om frekvensen av ogiltiga adresser är för hög. Med karantän kan du därför undvika att läggas till i blockeringslista av dessa leverantörer.
+
++++
+
 
 
 ### Mekanisk för dubbel anmälan {#double-opt-in}
@@ -74,6 +78,8 @@ Var noga med att följa följande riktlinjer:
 * En felformaterad adress kan leda till att den nekas av den mottagande servern. Du måste se till att rätt adress anges.
 * Adressen måste uttryckligen identifiera avsändaren. Domänen måste ägas av och registreras hos avsändaren.
 * Adobe rekommenderar att du skapar e-postkonton som motsvarar adresserna som angetts för leveranser och svar. Kontakta systemadministratören för meddelanden.
+
++++ **Konfigurera adresser i Campaign-gränssnittet**
 
 Följ stegen nedan för att konfigurera adresser i Campaign-gränssnittet:
 
@@ -119,7 +125,9 @@ Ni kan förbereda personaliseringsdata i ett arbetsflöde för att förbättra a
 
 ### Bygg optimerat innehåll {#build-optimized-content}
 
-När du skapar e-postmeddelanden bör du tänka på de allmänna bästa metoderna nedan:
+När du skapar e-postmeddelanden bör du använda de allmänna bästa metoderna för e-postinnehåll.
+
++++ **Läs om några metodtips**
 
 * Behåll designen enkel
 
@@ -131,15 +139,24 @@ När du skapar e-postmeddelanden bör du tänka på de allmänna bästa metodern
 
 * Koda specialtecken
 
++++
+
+
 ### Subject line
 
-Arbeta på [ärenderaden](../send/personalization-fields.md#personalization-fields-uc) för att förbättra öppna frekvenser:
+Arbeta med e-postmeddelandets [ämnesrad](../send/personalization-fields.md#personalization-fields-uc) för att förbättra öppningsfrekvensen.
+
+
++++ **Läs om några metodtips**
+
 
 * Undvik för långa motiv. Använd högst 50 tecken
 
 * Undvik att använda upprepade ord som &quot;free&quot; eller &quot;offer&quot; som kan betraktas som spam
 
 * Undvik versaler och specialtecken som &quot;!&quot;, &quot;£&quot;, &quot;€&quot;, &quot;$&quot;
+
++++
 
 ### Spegelsida
 
@@ -149,15 +166,20 @@ Inkludera alltid en länk för spegelsida. Önskad position är högst upp i e-p
 
 Länken för att avbeställa prenumerationer är viktig. Den måste vara synlig och giltig och formuläret måste vara funktionellt. Som standard kontrolleras om en avanmälningslänk har inkluderats när meddelandet analyseras av en inbyggd **[!UICONTROL Unsubscription link approval]** [typologiregel](../../automation/campaign-opt/control-rules.md) och en varning genereras om den saknas.
 
-**Tips**: Eftersom ett mänskligt fel alltid är möjligt bör du kontrollera att avanmälningslänken fungerar korrekt innan du skickar iväg den. När du t.ex. skickar korrekturet kontrollerar du att länken är giltig, att formuläret är online och att fältet `No longer contact this recipient ` har ändrats till `Yes`.
-
 Lär dig hur du infogar en länk [för avanmälan i det här avsnittet](../send/personalization-blocks.md).
+
++++ **Använd den här bästa metoden**
+
+Eftersom mänskliga fel alltid är möjliga bör du kontrollera att länken för avanmälan fungerar korrekt före varje gång du skickar. När du t.ex. skickar korrekturet kontrollerar du att länken är giltig, att formuläret är online och att fältet `No longer contact this recipient ` har ändrats till `Yes`.
+
++++
 
 ### E-poststorlek
 
 För att undvika problem med prestanda och leverans är den rekommenderade maximala storleken på ett e-postmeddelande cirka **35 kB**. Om du vill kontrollera meddelandestorleken går du till fliken **[!UICONTROL Preview]** och väljer en testprofil. När meddelandet har genererats visas meddelandestorleken i det övre högra hörnet.
 
-Tänk på följande om du vill hålla din e-post under gränsen:
+
++++ **Läs om några metodtips**
 
 * Ta bort överflödiga eller oanvända format
 
@@ -167,19 +189,22 @@ Tänk på följande om du vill hålla din e-post under gränsen:
 
 Kontrollera att du har testat ändringarna innan du skickar det.
 
++++
+
+
 ### SMS-längd
 
 Som standard uppfyller antalet tecken i ett SMS GSM-system (Global System for Mobile Communications). SMS-meddelanden som använder GSM-kodning kan innehålla högst 160 tecken eller 153 tecken per SMS för meddelanden som skickas i flera delar.
 
 Translitterering består i att ersätta ett tecken i ett SMS med ett annat om det tecknet inte beaktas av GSM-standarden. Observera att om du infogar anpassningsfält i innehållet i SMS-meddelandet kan det medföra tecken som GSM-kodningen inte tar hänsyn till. Du kan godkänna teckentranskribering genom att markera motsvarande ruta på fliken SMPP-kanalinställningar i motsvarande **[!UICONTROL External account]**.
 
-**Tips**
++++ **Läs om några metodtips**
 
 * Om du vill behålla alla tecken i SMS-meddelanden som de är, ska du inte aktivera transkribering för att t.ex. inte ändra egennamn.
 
-* Om dina SMS-meddelanden innehåller många tecken som inte beaktas av GSM-standarden kan du aktivera transkribering för att begränsa kostnaderna för att skicka meddelanden.
+* Om dina SMS-meddelanden innehåller många tecken som inte beaktas av GSM-standarden kan du aktivera transkribering för att begränsa kostnaderna för att skicka meddelanden. Läs mer [i det här avsnittet](../send/sms/smpp-external-account.md#smpp-transliteration).
 
-Läs mer [i det här avsnittet](../send/sms/smpp-external-account.md#smpp-transliteration).
++++
 
 ### Undvik bifogade filer
 
@@ -385,8 +410,7 @@ På kontrollpanelen för kampanjleverans kan du kontrollera bearbetade meddeland
 
 Om du vill veta mer om mottagarnas beteende kan du spåra hur de reagerar på en leverans: mottagning, öppning, klickningar på länkar, avbeställningar osv. I Campaign visas den här informationen på fliken **Spärra/knip** för mottagarna som leveransmålet gäller och på fliken Spårning för leveransen.
 
-**Tips**: Meddelandespårning är aktiverat som standard. Om du vill konfigurera URL-adresser väljer du alternativet Visa URL-adresser i det nedre avsnittet av leveransassistenten. För varje URL för meddelandet kan du välja om spårning ska aktiveras.
+Spårning av meddelanden är aktiverat som standard. Om du vill konfigurera URL-adresser väljer du alternativet Visa URL-adresser i det nedre avsnittet av leveransassistenten. För varje URL för meddelandet kan du välja om spårning ska aktiveras.
 
 
 [Läs mer om spårningsfunktioner i Campaign Classic v7-dokumentationen](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/tracking-messages/how-to-configure-tracked-links.html#sending-messages){target="_blank"}
-
