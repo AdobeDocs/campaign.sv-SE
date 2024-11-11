@@ -1,20 +1,20 @@
 ---
 title: God praxis för leverans
 description: Lär dig de bästa sätten att designa och skicka leveranser med Adobe Campaign
-feature: Email, Push, SMS, Direct Mail, Cross Channel Orchestration
+feature: Email, Push, SMS, Direct Mail
 role: User
 level: Beginner
 exl-id: cb6094eb-0010-4c62-9589-3b52fd60c2c2
-source-git-commit: 58d88498c8472381a43d735b4dfb2a802a293952
+source-git-commit: 768ebf4b350da61f0076eb9e43a16246be3b2628
 workflow-type: tm+mt
-source-wordcount: '2934'
+source-wordcount: '2936'
 ht-degree: 1%
 
 ---
 
 # God praxis för leverans {#delivery-best-practices}
 
-Läs om de effektivaste strategierna med leveransfunktioner för Campaign.
+Läs om följande metodtips med leveransfunktionerna i Campaign.
 
 ## Optimera leverans {#optimize-delivery}
 

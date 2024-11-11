@@ -5,7 +5,7 @@ feature: Email
 role: User
 level: Beginner
 exl-id: 36033255-1e75-41c1-9816-126777f7330a
-source-git-commit: 2e9c9f8e677233b2906f6ebb8f42dd86afe4e111
+source-git-commit: 768ebf4b350da61f0076eb9e43a16246be3b2628
 workflow-type: tm+mt
 source-wordcount: '1193'
 ht-degree: 3%
@@ -83,9 +83,9 @@ En specifik typologiregel, **[!UICONTROL Wave scheduling check]**, säkerställe
 
 >[!IMPORTANT]
 >
->Kontrollera att de sista påfyllnaderna inte överskrider leveransdeadline, som definieras på fliken **[!UICONTROL Validity]**. Annars kanske vissa meddelanden inte skickas. Läs mer om giltighetsperioden för en leverans i [det här avsnittet](delivery-failures.md#valid-period).
+>* Kontrollera att de sista påfyllnaderna inte överskrider leveransdeadline, som definieras på fliken **[!UICONTROL Validity]**. Annars kanske vissa meddelanden inte skickas. Läs mer om giltighetsperioden för en leverans i [det här avsnittet](delivery-failures.md#valid-period).
 >
->Du måste också ange tillräckligt med tid för att försöka igen när du konfigurerar de sista vågorna. Läs mer om återförsök i [det här avsnittet](delivery-failures.md#retries).
+>* Du måste också ange tillräckligt med tid för att försöka igen när du konfigurerar de sista vågorna. Läs mer om återförsök i [det här avsnittet](delivery-failures.md#retries).
 
 ### Bildskärmsvågor {#monitor-waves}
 
