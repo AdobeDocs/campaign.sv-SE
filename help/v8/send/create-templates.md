@@ -6,9 +6,9 @@ feature: Email, Push, SMS, Direct Mail, Cross Channel Orchestration
 role: User
 level: Beginner
 exl-id: 3a4de36e-ba24-49ec-8113-f32f12c8ecdd
-source-git-commit: 5054dd1352972b402d54c1b51cfee1fb41ff4d1c
+source-git-commit: 9f19d5c9836c21cea7b4b55241f828e295831339
 workflow-type: tm+mt
-source-wordcount: '988'
+source-wordcount: '989'
 ht-degree: 3%
 
 ---
@@ -121,7 +121,7 @@ Välj den leveransmall som ska användas och klicka på **[!UICONTROL Ok]**.
 
 ### Kör en mall {#execute-a-template}
 
-Du kan starta körningen av en mall direkt från malllistan utan att först skapa en leverans. Leveransmallen kan köras manuellt, enligt beskrivningen nedan, eller aktiveras av en händelse (som körs vid en viss tidpunkt, när en fil är tillgänglig på servern, osv.), vilket förklaras i [det här avsnittet](../../automation/workflow/deliveries.md).
+Du kan starta körningen av en mall direkt från malllistan utan att först skapa en leverans. Leveransmallen kan köras manuellt, enligt beskrivningen nedan, eller aktiveras av en händelse (som körs vid en viss tidpunkt, när en fil är tillgänglig på servern, osv.), vilket förklaras i [det här avsnittet](https://experienceleague.adobe.com/en/docs/campaign/automation/workflows/wf-activities/action-activities/delivery).
 
 Så här kör du en mall manuellt:
 
