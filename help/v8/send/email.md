@@ -5,16 +5,16 @@ feature: Email
 role: User
 level: Beginner
 exl-id: 97dcd0e0-db5b-45a4-96af-817e49f6cb64
-source-git-commit: 5b2638927e39b6f839fb3a8639fe106d2c519fbf
+source-git-commit: 578f774152afbd42342da0f161b679ba9dd10c78
 workflow-type: tm+mt
-source-wordcount: '521'
-ht-degree: 5%
+source-wordcount: '528'
+ht-degree: 6%
 
 ---
 
 # Designa och skicka e-post
 
-Med e-postleveranser kan du skicka personaliserade e-postmeddelanden till målpopulationen. [Läs mer](../send/send.md)
+Med Adobe Campaign kan du skapa e-postleveranser för att skicka personaliserade e-postmeddelanden till målgruppen. [Läs mer](../send/send.md)
 
 Lär dig hur du skapar och konfigurerar en leverans på [den här sidan](../start/create-message.md).
 
@@ -85,15 +85,16 @@ I följande exempel får du lära dig hur du utformar en e-postleverans i Adobe 
 
 Din första e-postleverans är klar. Nu måste ni definiera målgruppen, validera leveransen och skicka den.
 
-Lär dig hur du importerar ett e-postinnehåll i det här [användningsfallet](https://experienceleague.adobe.com/docs/campaign/automation/workflows/use-cases/deliveries/load-delivery-content.html){target="_blank"}.
+Lär dig hur du skapar ett arbetsflöde för att importera ett e-postinnehåll i det här [användningsfallet](https://experienceleague.adobe.com/docs/campaign/automation/workflows/use-cases/deliveries/load-delivery-content.html){target="_blank"}.
 
-Läs mer i följande avsnitt:
-
-<!--[Design an email in Campaign]-->
-* [Skapa och använda en e-postmall](../send/create-templates.md)
-* [Välj publik för ditt e-postmeddelande](../audiences/gs-audiences.md)
-* [Validera en leverans och skicka korrektur](preview-and-proof.md)
-* [Konfigurera och skicka leveransen](configure-and-send.md)
+>[!MORELIKETHIS]
+>
+>* [Skapa en leverans](../start/create-message.md)
+>* [Skapa och använda en e-postmall](create-templates.md)
+>* [Välj publik för ditt e-postmeddelande](../audiences/gs-audiences.md)
+>* [Validera en leverans och skicka korrektur](preview-and-proof.md)
+>* [Konfigurera och skicka leveransen](configure-and-send.md)
+>* [God praxis för leverans](../start/delivery-best-practices.md)
 
 ## Testa och validera dina e-postmeddelanden
 
