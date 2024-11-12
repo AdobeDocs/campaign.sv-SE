@@ -6,9 +6,9 @@ feature: Email, Push, SMS, Direct Mail, Cross Channel Orchestration
 role: User
 level: Beginner
 exl-id: 3a4de36e-ba24-49ec-8113-f32f12c8ecdd
-source-git-commit: acb559c74aea3f59c05792b7596d0f85ff05047c
+source-git-commit: 5054dd1352972b402d54c1b51cfee1fb41ff4d1c
 workflow-type: tm+mt
-source-wordcount: '939'
+source-wordcount: '988'
 ht-degree: 3%
 
 ---
@@ -30,7 +30,7 @@ En mall kan innehålla delar av eller fullständiga konfigurationsinställningar
 
 ![](assets/do-not-localize/how-to-video.png) [Upptäck den här funktionen i en video](#delivery-template-video)
 
-I Adobe Campaign kan du arbeta med två typer av mallar:
+Leveransmallar lagras i mappen **[!UICONTROL Resources > Templates > Delivery templates]** i Utforskaren. I Adobe Campaign kan du arbeta med två typer av mallar:
 
 1. Adobe Campaign **inbyggda** leveransmallar - Inbyggda mallar finns tillgängliga för varje kanal. De får inte ändras eller tas bort. De innehåller en grundläggande konfiguration för varje leveranskanal. Som administratör kan du ange standardvärden eller begränsa vissa funktioner till slutanvändare, som att ändra spårningsparametrar, avsändarens e-postadresser med mera. Inbyggda mallar visas med fet stil i listan med mallar.
 
@@ -121,18 +121,19 @@ Välj den leveransmall som ska användas och klicka på **[!UICONTROL Ok]**.
 
 ### Kör en mall {#execute-a-template}
 
-Du kan starta körningen av en mall direkt från malllistan utan att först skapa en leverans.
+Du kan starta körningen av en mall direkt från malllistan utan att först skapa en leverans. Leveransmallen kan köras manuellt, enligt beskrivningen nedan, eller aktiveras av en händelse (som körs vid en viss tidpunkt, när en fil är tillgänglig på servern, osv.), vilket förklaras i [det här avsnittet](../../automation/workflow/deliveries.md).
 
-Om du vill göra det väljer du den mall som ska köras och högerklickar. Välj **[!UICONTROL Actions>Execute the delivery template...]**.
+Så här kör du en mall manuellt:
 
-Du kan också använda **[!UICONTROL File>Actions>Execute the delivery template...]**.
+1. Välj den mall som ska köras och högerklicka. Välj **[!UICONTROL Actions>Execute the delivery template...]**.
 
-![](assets/execute-delivery-template.png)
+   Du kan också använda **[!UICONTROL File>Actions>Execute the delivery template...]**.
 
-Ange leveransparametrarna och klicka på **[!UICONTROL Send]**.
+   ![](assets/execute-delivery-template.png)
+
+1. Ange leveransparametrarna och klicka på **[!UICONTROL Send]**.
 
 Den här åtgärden genererar en leverans i den mapp som är associerad med mallen. Namnet på den här leveransen är namnet på leveransmallen som den skapades från.
-
 
 ## Självstudievideor {#delivery-template-video}
 
