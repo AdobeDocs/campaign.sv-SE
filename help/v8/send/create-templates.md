@@ -6,20 +6,22 @@ feature: Email, Push, SMS, Direct Mail, Cross Channel Orchestration
 role: User
 level: Beginner
 exl-id: 3a4de36e-ba24-49ec-8113-f32f12c8ecdd
-source-git-commit: 70af3bceee67082d6a1bb098e60fd2899dc74600
+source-git-commit: acb559c74aea3f59c05792b7596d0f85ff05047c
 workflow-type: tm+mt
-source-wordcount: '714'
-ht-degree: 4%
+source-wordcount: '939'
+ht-degree: 3%
 
 ---
 
 # Arbeta med leveransmall {#work-with-delivery-template}
 
-Varje leverans skapas baserat på en mall. Inbyggda mallar är tillgängliga för varje kanal. Du kan anpassa dem för att tillämpa samma inställningar på en uppsättning leveranser.
+## Kom igång med leveransmallar
 
-En mall innehåller:
+Varje leverans skapas baserat på en mall. En mall är en konfiguration som kan återanvändas för att underlätta och standardisera implementeringen. Du kan använda en inbyggd eller anpassad mall.
 
-* Typologiregler
+En mall kan innehålla delar av eller fullständiga konfigurationsinställningar, till exempel:
+
+* [Typologiregler](../../automation/campaign-opt/campaign-typologies.md)
 * Avsändare och svarsadresser
 * Grundläggande [anpassningsblock](../send/personalization-blocks.md)
 * Länkar till [spegelsidor](../send/mirror-page.md) och länkar för att avbryta prenumeration
@@ -27,6 +29,17 @@ En mall innehåller:
 * Andra leveransegenskaper, som resursgiltighet, återförsöksparametrar eller karantäninställningar.
 
 ![](assets/do-not-localize/how-to-video.png) [Upptäck den här funktionen i en video](#delivery-template-video)
+
+I Adobe Campaign kan du arbeta med två typer av mallar:
+
+1. Adobe Campaign **inbyggda** leveransmallar - Inbyggda mallar finns tillgängliga för varje kanal. De får inte ändras eller tas bort. De innehåller en grundläggande konfiguration för varje leveranskanal. Som administratör kan du ange standardvärden eller begränsa vissa funktioner till slutanvändare, som att ändra spårningsparametrar, avsändarens e-postadresser med mera. Inbyggda mallar visas med fet stil i listan med mallar.
+
+1. **Anpassade** leveransmallar - Som Adobe Campaign-administratör kan du skapa nya leveransmallar. Det bästa sättet är att duplicera och uppdatera en inbyggd mall i stället för att skapa en mall från grunden. Du kan till exempel konfigurera en mall för e-postleverans, och när användare skapar en leverans från den här mallen behöver de bara ange texten eller HTML-innehållet. Alla andra inställningar har redan definierats.
+
+>[!NOTE]
+>
+>Vilka mallar som är tillgängliga beror på din åtkomstbehörighet, instanskonfigurationen och kontexten. När du t.ex. skapar en informationstjänst kan du länka en leveransmall för bekräftelsemeddelanden: du kan då bara komma åt mallar vars målmappning är prenumerationsmappningen. Andra mallar visas inte i det här sammanhanget. Mer information finns i [Välja målmappning](../audiences/target-mappings.md) och [Tjänster och prenumerationer](../start/subscriptions.md).
+
 
 ## Skapa en mall {#create-a-delivery-template}
 
