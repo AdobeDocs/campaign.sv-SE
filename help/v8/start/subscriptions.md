@@ -5,14 +5,14 @@ feature: Subscriptions
 role: User
 level: Beginner
 exl-id: d5933b12-8664-49b8-953c-ea98eb428cc2
-source-git-commit: 5ab598d904bf900bcb4c01680e1b4730881ff8a5
+source-git-commit: 08e04f3642320df94d719a415e878e3a26d2e00f
 workflow-type: tm+mt
 source-wordcount: '391'
 ht-degree: 3%
 
 ---
 
-# Hantera prenumerationer och avbeställningar{#optin-optout}
+# Hantera prenumerationer och avbeställningar {#optin-optout}
 
 Använd Adobe Campaign för att skapa och övervaka informationstjänster som nyhetsbrev och för att hantera prenumerationer/avbeställningar av dessa tjänster. Flera tjänster kan definieras parallellt, till exempel: nyhetsbrev till specialister för vissa produktkategorier, teman eller områden på en webbplats, prenumerationer på olika typer av varningsmeddelanden och meddelanden i realtid.
 

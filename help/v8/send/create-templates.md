@@ -6,9 +6,9 @@ feature: Email, Push, SMS, Direct Mail, Cross Channel Orchestration
 role: User
 level: Beginner
 exl-id: 3a4de36e-ba24-49ec-8113-f32f12c8ecdd
-source-git-commit: 12de29e15d660cd5a40cda059fc19e45311fe312
+source-git-commit: 08e04f3642320df94d719a415e878e3a26d2e00f
 workflow-type: tm+mt
-source-wordcount: '989'
+source-wordcount: '990'
 ht-degree: 3%
 
 ---
@@ -38,7 +38,7 @@ Leveransmallar lagras i mappen **[!UICONTROL Resources > Templates > Delivery te
 
 >[!NOTE]
 >
->Vilka mallar som är tillgängliga beror på din åtkomstbehörighet, instanskonfigurationen och kontexten. När du t.ex. skapar en informationstjänst kan du länka en leveransmall för bekräftelsemeddelanden: du kan då bara komma åt mallar vars målmappning är prenumerationsmappningen. Andra mallar visas inte i det här sammanhanget. Mer information finns i [Välja målmappning](../audiences/target-mappings.md) och [Tjänster och prenumerationer](../start/subscriptions.md).
+>Vilka mallar som är tillgängliga beror på din åtkomstbehörighet, instanskonfigurationen och kontexten. När du t.ex. skapar en informationstjänst kan du länka en leveransmall för bekräftelsemeddelanden: du kan då bara komma åt mallar vars målmappning är prenumerationsmappningen. Andra mallar visas inte i det här sammanhanget. Mer information finns i [Arbeta med målmappningar](../audiences/target-mappings.md) och [Hantera prenumerationer och avbeställningar](../start/subscriptions.md).
 
 
 ## Skapa en mall {#create-a-delivery-template}
