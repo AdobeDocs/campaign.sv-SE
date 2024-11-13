@@ -5,16 +5,16 @@ feature: Email, Push, SMS, Direct Mail, Cross Channel Orchestration
 role: User
 level: Beginner
 exl-id: 6cf8a929-637e-4e51-9160-5980ca727efb
-source-git-commit: 55b752713a29c035680dd39e42422b1743e15269
+source-git-commit: 53fab31c21fdfe2f90c4793ccd025af1d5c0e061
 workflow-type: tm+mt
-source-wordcount: '1525'
+source-wordcount: '1523'
 ht-degree: 3%
 
 ---
 
 # Skapa din första leverans {#create-a-msg}
 
-På den här sidan får du lära dig hur du skapar en enstaka leverans med ett enda foto. Du kan skapa andra typer av leveranser för att hantera dina användningsfall. Läs mer om de olika typerna av leveranser och hur du skapar dem på [den här sidan](gs-message.md).
+På den här sidan får du lära dig hur du skapar en enstaka leverans med ett enda foto. Du kan skapa andra typer av leveranser för att bygga upp dina användningsfall. Läs mer om de olika typerna av leveranser och hur du skapar dem på [den här sidan](gs-message.md).
 
 De viktigaste stegen när du ska skapa en engångsleverans är:
 
