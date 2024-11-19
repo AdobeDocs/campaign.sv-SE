@@ -5,9 +5,9 @@ description: Läs mer om de tekniska arbetsflödena i Campaign
 feature: Workflows
 role: User, Admin
 exl-id: 2693856c-80b2-4e35-be8e-2a9760f8311f
-source-git-commit: d4e28ddf6081881f02042416aa8214761ea42be9
+source-git-commit: 4cb825c1899243e72a66b9dea2e56c45dc466fde
 workflow-type: tm+mt
-source-wordcount: '1663'
+source-wordcount: '1799'
 ht-degree: 0%
 
 ---
@@ -63,6 +63,7 @@ Lär dig hur du övervakar tekniska arbetsflöden i det här [dedikerade avsnitt
 | **Distribuerade marknadsföringsprocesser** (centralLocalMgt) | Central/lokal marknadsföring (distribuerad marknadsföring) | Det här arbetsflödet påbörjar bearbetning som är relaterad till användning av den distribuerade marknadsföringsmodulen. Det startar skapandet av lokala kampanjer och hanterar meddelanden relaterade till order och tillgänglighet för kampanjpaket. |
 | **Rensa händelser** (webAnalyticsPurgeWebEvents) | Web Analytics-anslutningar | Med det här arbetsflödet kan du ta bort alla händelser från databasfältet enligt den period som har konfigurerats i fältet Livslängd. |
 | **Exportera målgrupper till Adobe Experience Cloud** (exportSharedAudience) | Integrering med Adobe Experience Cloud | Det här arbetsflödet exporterar målgrupper som delade målgrupper/segment. Dessa målgrupper kan användas i de olika Adobe Experience Cloud-lösningar ni använder. |
+| **ffdaUnsubscribe** | Installerad som standard | Det här arbetsflödet hanterar avbeställningar som tagits emot som studsade e-postmeddelanden (genom att använda metoden `<mailto>` List-Unsubscribe). Den körs varje dag, var 1:e timme, endast på marknadsföringsinstanser med en Enterprise-distribution (FFDA).<br/><br/>Arbetsflödet kontrollerar utsändningar från ett visst tidsintervall (den senaste bearbetningstiden och den aktuella tiden) som markeras som obundet prenumerationsläge av modulen inMail (markeringen anges i kolumnen iFlags i tabellen NmsBroadLog) och bearbetar en avprenumeration beroende på om tjänsten i utsändaren är inställd eller inte:<ul><li>Om serviceId är 0 (inte definierad) blocklist mottagaren.</li><li>Om serviceId inte är 0 (länkat till en befintlig tjänst) kommer mottagaren att avbryta prenumerationen på tjänsten.</li></ul><br/>Obs! Det här arbetsflödet hanterar endast avbrutna prenumerationer. Avanmälan via avanmälningslänk och Avanmälan med ett klick (URL-metod) hanteras separat utanför det här arbetsflödet. |
 | **Prognos** (prognos) | Leverans | Det här arbetsflödet analyserar leveranser som sparats i den preliminära kalendern (skapar preliminära loggar). Den utlöses som standard varje dag klockan 1:00. |
 | **Fullständig aggregeringsberäkning (propositionCp-kub)** (agg_nmspropositionCp_full) | Erbjudandemotor (interaktion) | Det här arbetsflödet uppdaterar den fullständiga sammanställningen för erbjudandekuben. Den aktiveras varje dag kl. 6.00 som standard. Sammanställningen innehåller följande dimensioner: kanal, leverans, marknadsföringserbjudande och datum. Bufferterbjudandekuben används sedan för att generera rapporter baserat på erbjudanden. Läs mer om kuber i [det här avsnittet](../../v8/reporting/gs-cubes.md). |
 | **Identifiering av konverterade kontakter** (webAnalyticsFindConverted) | Web Analytics-anslutningar | Det här arbetsflödet indexerar besökare som har slutfört sitt köp efter en ny marknadsföringskampanj. De data som återställs av det här arbetsflödet finns i rapporten Effektivare återmarknadsföring (se den här sidan). |
