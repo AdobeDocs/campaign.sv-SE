@@ -2,9 +2,9 @@
 title: Migrera kampanjoperatorer till Adobe Identity Management System (IMS)
 description: Lär dig hur du migrerar kampanjoperatorer till Adobe Identity Management System (IMS)
 exl-id: 58c130d8-8ba8-42ce-9ab4-a697125d3f85
-source-git-commit: c3f4ad0b56dd45d19eebaa4d2f06551c8fecac1d
+source-git-commit: e0dbeb7402a46f76a26c28dd226bc069d52f2609
 workflow-type: tm+mt
-source-wordcount: '1345'
+source-wordcount: '1343'
 ht-degree: 1%
 
 ---
@@ -19,7 +19,7 @@ I den här artikeln beskrivs stegen som krävs för att migrera en teknisk opera
 
 ## Vad har ändrats?{#move-to-ims-changes}
 
-Med Campaign v8 bör alla vanliga användare redan ansluta till Adobe Campaign klientkonsol via Adobe ID via Adobe Identity Management System (IMS). I vissa äldre konfigurationer var dock användar-/lösenordsanslutningar fortfarande tillgängliga. **Detta är inte längre tillåtet med Campaign v8.6.**
+Med Campaign v8 bör alla vanliga användare redan ansluta till Adobe Campaign klientkonsol via Adobe ID via Adobe Identity Management System (IMS). I vissa äldre konfigurationer var dock användar-/lösenordsanslutningar fortfarande tillgängliga. **Det här är inte längre tillåtet att starta Campaign v8.6.**
 
 Som en del av arbetet med att förstärka säkerhets- och autentiseringsprocessen anropar nu Adobe Campaign klientprogram Campaign-API:er direkt med IMS-token för tekniskt konto. Migreringen för tekniska operatorer beskrivs i en dedikerad artikel på [den här sidan](ims-migration.md).
 

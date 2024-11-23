@@ -5,14 +5,20 @@ feature: Release Notes
 role: User
 level: Beginner
 exl-id: 04bda36f-051f-41a3-84b3-6af3c5e34ab2
-source-git-commit: a779f243b0ba13dc3fcb7839377ca8766e5f7841
+source-git-commit: e0dbeb7402a46f76a26c28dd226bc069d52f2609
 workflow-type: tm+mt
-source-wordcount: '656'
-ht-degree: 10%
+source-wordcount: '775'
+ht-degree: 3%
 
 ---
 
 # Versioner och uppgraderingar {#upgrades}
+
+Adobe Campaign uppdateras regelbundet. Denna regelbundna uppdateringsfrekvens syftar till att få den senaste och bästa informationen i händerna, hålla miljön säker och förbättra din upplevelse av produkten. Adobe rekommenderar varmt alla kunder att uppgradera till den senaste versionen.
+
+Som användare av hanterade Cloud Service uppgraderas instansen av Adobe med alla nya versioner. Din Adobe-representant kontaktar dig för att uppgradera dina miljöer. Kampanjklientkonsolen **måste uppgraderas till samma version** som Campaign-servrar. Lär dig hur du uppgraderar din klientkonsol på [den här sidan](../start/connect.md#upgrade-ac-console).
+
+Som kund ska du dessutom kontrollera att du använder de senaste versionerna av systemen som stöds i [kompatibilitetsmatrisen](compatibility-matrix.md).
 
 ## Kampanjversioner {#versions}
 
@@ -28,10 +34,12 @@ Detaljerad information om varje ny version finns i [Versionsinformationen](relea
 
 För att konfigurationen ska bli stabil rekommenderar Adobe att du installerar **exakt samma version** på alla dina Campaign-servrar. Om inget annat anges i [Versionsinformationen](release-notes.md) måste dessutom klientkonsolen finnas på **exakt samma version** som serverinstansen. Lär dig hur du uppgraderar klientkonsolen [på den här sidan](../start/connect.md#upgrade-ac-console).
 
+
+## Kampanjuppgraderingar {#ac-upgrades}
+
 När en ny Campaign-version är tillgänglig uppgraderas din infrastruktur av Adobe utan någon ytterligare åtgärd som kund hos Campaign Managed Services.
 
 Observera att du som kund måste se till att du använder de senaste versionerna av systemen som stöds i [kompatibilitetsmatrisen](compatibility-matrix.md).
-
 
 ## Vanliga frågor och svar {#upgrades-faq}
 
@@ -50,14 +58,14 @@ Du kommer åt följande information:
 
 ### Hur får jag information om releasen av en ny version? {#upgrades-0}
 
-Nya versioner och vilka ändringar de gör listas i [versionsinformationen](release-notes.md). När en ny version är tillgänglig kontaktar Adobe dig och uppgraderar dina miljöer.
+Nya versioner och vilka ändringar de gör listas i [versionsinformationen](release-notes.md). När en ny version finns tillgänglig kontaktar din Adobe-representant dig och uppgraderar dina miljöer.
 
-Om du vill få information om nya Experience Cloud-lösningsreleaser prenumererar du på [Adobe Priority-produktuppdateringen](https://www.adobe.com/se/subscription/priority-product-update.html){target="_blank"}.
+Om du vill få information om nya releaser för Experience Cloud och deras innehåll prenumererar du på meddelandet [Adobe Priority Product Updates](https://www.adobe.com/se/subscription/priority-product-update.html){target="_blank"}.
 
 Du kan också besöka [Campaign Community](https://experienceleaguecommunities.adobe.com/t5/custom/page/page-id/Community-TopicsPage?style=all&amp;sort=date&amp;order=desc&amp;filters=adobe-campaign-classic-community&amp;topic=Campaign+v8){target="_blank"} för att få information om uppdateringar av releaser.
 
 
-### Varför behöver min organisation den här uppgraderingen? {#upgrades-1}
+### Varför behöver min organisation en uppgradering? {#upgrades-1}
 
 Genom att uppgradera din infrastruktur till den senaste versionen kan du säkerställa att ditt konto är skyddat mot sårbarheter och att du använder den uppdaterade prestandatekniken.
 
@@ -77,8 +85,8 @@ Normalt innebär en uppgradering till den senaste versionen följande:
   Med tiden kan Adobe Campaign-teamet hitta sätt att förbättra produktens stabilitet och prestanda samt åtgärda kända fel. Uppgraderingen håller instansen uppdaterad med dessa förbättringar och eliminerar vanliga utmaningar som organisationer som upplever snabb tillväxt och/eller komplexitet i sina Campaign-instanser ställs inför. Förbättringar i teknikstacken Campaign känns både i marknadsförings- och IT-team i organisationen.
 
 
-### Hur ser uppgraderingen ut och när släpps den? {#upgrades-2}
+### Hur ser uppgraderingen ut och när ligger den? {#upgrades-2}
 
 Om ditt konto har identifierats som en v8-kund som behöver uppgradera till en ny version meddelar Adobe dig direkt.
 
-Adobe-teamet är här för att leda och vägleda organisationen genom den här resan. Vi har organiserat ett team med dedikerade kundtjänstrepresentanter, produktchefer, ingenjörer och TechOps-specialister samt produktkonsulter för att hjälpa till och säkerställa att upplevelsen är smidig.
+Adobe-teamet är här för att leda och vägleda organisationen genom den här resan. Ett team med särskilda kundtjänstrepresentanter, produktchefer, ingenjörer och TechOps-specialister och produktkonsulter är här för att hjälpa till och säkerställa att upplevelsen blir smidig.

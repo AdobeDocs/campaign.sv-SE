@@ -3,21 +3,16 @@ title: Versionsinformation om Campaign v8
 description: Senaste Campaign v8-versionen
 feature: Release Notes
 exl-id: 7cf8111d-9f3a-46a4-813a-d4e43a1d1471
-source-git-commit: fb7abba9009591a2757c07f584c0a7c59c6eb01a
+source-git-commit: e0dbeb7402a46f76a26c28dd226bc069d52f2609
 workflow-type: tm+mt
-source-wordcount: '532'
-ht-degree: 7%
+source-wordcount: '422'
+ht-degree: 8%
 
 ---
 
 # Senaste releaser {#latest-release}
 
-Adobe Campaign uppdateras regelbundet. Denna regelbundna uppdateringsfrekvens syftar till att få den senaste och bästa informationen i händerna, hålla miljön säker och förbättra din upplevelse av produkten. Adobe rekommenderar varmt alla kunder att uppgradera till den senaste versionen. Den här sidan innehåller nya funktioner, förbättringar och korrigeringar som ingår i de senaste versionerna av Campaign v8 (konsol). Läs mer om Campaign-versioner och -uppdateringar på [den här sidan](upgrades.md).
-
-Som användare av hanterade Cloud Service uppgraderas instansen av Adobe med alla nya versioner. Adobe kommer att kontakta dig och uppgradera dina miljöer. Kampanjklientkonsolen **måste uppgraderas till samma version** som Campaign-servrar. Lär dig hur du uppgraderar din klientkonsol på [den här sidan](../start/connect.md#upgrade-ac-console).
-
-Som kund ska du dessutom kontrollera att du använder de senaste versionerna av systemen som stöds i [kompatibilitetsmatrisen](compatibility-matrix.md).
-
+Den här sidan innehåller nya funktioner, förbättringar och korrigeringar som ingår i de senaste versionerna av Campaign v8 (konsol). Läs mer om Campaign-versioner, -versioner och -uppgraderingar på [den här sidan](upgrades.md).
 
 ## Version 8.7.2 {#release-8-7-2}
 

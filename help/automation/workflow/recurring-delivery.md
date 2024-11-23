@@ -5,9 +5,9 @@ description: Läs mer om arbetsflödesaktiviteten Återkommande leverans
 feature: Workflows
 role: User, Data Engineer
 exl-id: 27308b0d-cbfc-4bc6-9061-d771ceac95fd
-source-git-commit: 28742db06b9ca78a4e952fcb0e066aa5ec344416
+source-git-commit: e0dbeb7402a46f76a26c28dd226bc069d52f2609
 workflow-type: tm+mt
-source-wordcount: '258'
+source-wordcount: '257'
 ht-degree: 13%
 
 ---
@@ -40,7 +40,7 @@ En **återkommande leverans** skapar en ny leveransinstans varje gång den körs
 
 ![Återkommande leverans](assets/delivery_recurring.jpg)
 
-Om du vill stoppa en återkommande leverans från att köras bör du helt avbryta kampanjen eller stoppa arbetsflödet som körs. Om du stoppar leveransen från kontrollpanelen för Campaign kommer leveransförekomsten endast att stoppas: nästa instans av den återkommande leveransen kommer att fortsätta skapas vid varje arbetsflödeskörning.
+Om du vill stoppa en återkommande leverans från att köras bör du helt avbryta kampanjen eller stoppa arbetsflödet som körs. Om du stoppar leveransen från kontrollpanelen för Campaign stoppas endast leveransförekomsten: nästa instans av den återkommande leveransen kommer att fortsätta skapas vid varje arbetsflödeskörning.
 
 >[!NOTE]
 >

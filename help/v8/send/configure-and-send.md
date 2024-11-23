@@ -5,9 +5,9 @@ feature: Email
 role: User
 level: Beginner
 exl-id: 36033255-1e75-41c1-9816-126777f7330a
-source-git-commit: 768ebf4b350da61f0076eb9e43a16246be3b2628
+source-git-commit: e0dbeb7402a46f76a26c28dd226bc069d52f2609
 workflow-type: tm+mt
-source-wordcount: '1193'
+source-wordcount: '1188'
 ht-degree: 3%
 
 ---
@@ -126,7 +126,7 @@ Följ stegen nedan för att göra detta.
 
 1. Klicka på **[!UICONTROL Send]** och välj önskad åtgärd.
 
-   * Om du vill skicka leveransen omedelbart väljer du [**Leverera så snart som möjligt**].
+   * Om du vill skicka leveransen omedelbart väljer du **[!UICONTROL Deliver as soon as possible]**.
    * Välj **[!UICONTROL Postpone the delivery]** om du vill schemalägga sändningen till ett senare datum. [Läs mer](#schedule-delivery-sending)
 
 1. Klicka på **[!UICONTROL Analyze]**. Mer information finns i [det här avsnittet](delivery-analysis.md).

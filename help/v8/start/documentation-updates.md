@@ -6,10 +6,10 @@ role: User
 level: Beginner
 hidefromtoc: true
 exl-id: 3c1cae6e-0a75-4f18-b1ee-2d5fa23b4251
-source-git-commit: 4cb825c1899243e72a66b9dea2e56c45dc466fde
+source-git-commit: e0dbeb7402a46f76a26c28dd226bc069d52f2609
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '226'
+ht-degree: 30%
 
 ---
 
@@ -19,7 +19,8 @@ På den här sidan visas alla de senaste uppdateringarna i [!DNL Campaign] v8-do
 
 ## November 2024 {#october-2024}
 
-Arbetsflödet **ffdaUnsubscribe** har lagts till i listan över tekniska arbetsflöden.[Läs mer](../../automation/workflow/technical-workflows.md)
+* Arbetsflödet **ffdaUnsubscribe** har lagts till i listan över tekniska arbetsflöden. [Läs mer](../../automation/workflow/technical-workflows.md)
+* Sidan om Campaign-versioner och uppgraderingar har förbättrats. [Läs mer](upgrades.md)
 
 ## Juni 2024 {#june-2024}
 
