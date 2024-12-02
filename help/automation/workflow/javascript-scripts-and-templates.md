@@ -5,7 +5,7 @@ description: JavaScript-skript och mallar
 feature: Workflows
 role: Developer
 exl-id: 14160de5-23d2-4f53-84c6-0f9e3b1dcf21
-source-git-commit: 567c2e84433caab708ddb9026dda6f9cb717d032
+source-git-commit: 25663b475514736f64e7216c798536d8c23e0983
 workflow-type: tm+mt
 source-wordcount: '1247'
 ht-degree: 1%
@@ -160,7 +160,7 @@ I det här exemplet visas att aktiviteten efter **JavaScript Code** kommer åt i
 
 När du har angett en instansvariabel i en aktivitet kan du återanvända den i en arbetsflödesfråga.
 
-Om du vill anropa variabeln **instance.vars.xxx = &quot;yyy&quot;** i ett filter anger du **$(instance/vars/xxx)**.
+Om du vill anropa variabeln **instance.vars.xxx = &quot;yyy&quot;** i ett filter anger du **$(instance/vars/@xxx)**.
 
 Exempel:
 
