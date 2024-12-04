@@ -5,9 +5,9 @@ description: Läs mer om de tekniska arbetsflödena i Campaign
 feature: Workflows
 role: User, Admin
 exl-id: 2693856c-80b2-4e35-be8e-2a9760f8311f
-source-git-commit: 97ab8259c0044b65fec2ad5ddc44d28f0cbf65e5
+source-git-commit: e8546d56232c50dbf4aedf054a7d63838e3fd957
 workflow-type: tm+mt
-source-wordcount: '1804'
+source-wordcount: '1803'
 ht-degree: 0%
 
 ---
@@ -18,7 +18,7 @@ Adobe Campaign innehåller en uppsättning inbyggda tekniska arbetsflöden. De s
 
 Som standard är tekniska arbetsflöden tillgängliga i en undermapp till följande nod: **[!UICONTROL Administration]** > **[!UICONTROL Production]** > **[!UICONTROL Technical workflows]**.
 
-![](assets/navtree.png){width="50%" align="center" zoomable="yes"}
+![](assets/navtree.png){width="50%" align="left" zoomable="yes"}
 
 >[!NOTE]
 >
@@ -28,8 +28,7 @@ Som standard är tekniska arbetsflöden tillgängliga i en undermapp till följa
 
 Undermappen **[!UICONTROL Campaign process]** centraliserar de arbetsflöden som krävs för att köra processer inom kampanjer: aktivitetsmeddelande, lagerhantering, kostnadsberäkning osv.
 
-![](assets/campaign-processes-wf.png){width="70%" align="center" zoomable="yes"}
-
+![](assets/campaign-processes-wf.png)
 
 ## Hantera och skapa tekniska arbetsflöden {#manage-tech-workflows}
 
@@ -37,7 +36,7 @@ Kampanjtekniska arbetsflöden kan bara startas och ändras av operatorer med **a
 
 Du kan skapa anpassade tekniska arbetsflöden i noden **[!UICONTROL Administration > Production > Technical workflows]** i trädstrukturen. Inbyggda mallar finns för att skapa tekniska arbetsflöden. De kan konfigureras så att de passar dina behov. Den här processen är dock reserverad för expertanvändare. De aktiviteter som är tillgängliga i tekniska arbetsflöden är desamma som för riktade arbetsflöden. [Läs mer](targeting-workflows.md).
 
-## Förteckning över tekniska arbetsflöden {#list-technical-workflows}
+## Inbyggda tekniska arbetsflöden {#list-technical-workflows}
 
 De arbetsflöden som beskrivs på den här sidan installeras med Adobe Campaign inbyggda paket. Dessa paket och tillhörande tekniska arbetsflöden är beroende av ditt licensavtal och tillägg.
 
