@@ -5,48 +5,41 @@ description: Läs mer om de tekniska arbetsflödena i Campaign
 feature: Workflows
 role: User, Admin
 exl-id: 2693856c-80b2-4e35-be8e-2a9760f8311f
-source-git-commit: 4cb825c1899243e72a66b9dea2e56c45dc466fde
+source-git-commit: 97ab8259c0044b65fec2ad5ddc44d28f0cbf65e5
 workflow-type: tm+mt
-source-wordcount: '1799'
+source-wordcount: '1804'
 ht-degree: 0%
 
 ---
 
 # Tekniska arbetsflöden{#about-technical-workflows}
 
-Adobe Campaign innehåller en uppsättning inbyggda tekniska arbetsflöden. De hanterar åtgärder och jobb som schemalagts för periodisk körning på servern. De gör att du kan utföra underhåll i databasen, vidarebefordra spårningsinformation om leveranser eller konfigurera provisoriska processer för leveranser. Tekniska arbetsflöden konfigureras via noden **[!UICONTROL Administration > Production > Technical workflows]**.
-
-![](assets/navtree.png)
-
-Inbyggda mallar finns för att skapa tekniska arbetsflöden. De kan konfigureras så att de passar dina behov.
-
-Undermappen **[!UICONTROL Campaign process]** centraliserar de arbetsflöden som krävs för att köra processer inom kampanjer: aktivitetsmeddelande, lagerhantering, kostnadsberäkning osv.
-
-![](assets/campaign-processes-wf.png)
-
-
->[!NOTE]
->
->En lista över tekniska arbetsflöden som installeras med varje modul finns i ett [dedikerat avsnitt](technical-workflows.md).
-
-Du kan skapa andra tekniska arbetsflöden i noden **[!UICONTROL Administration > Production > Technical workflows]** i trädstrukturen. Den här processen är dock reserverad för expertanvändare.
-
-De aktiviteter som erbjuds är desamma som för arbetsflöden med målinriktning. [Läs mer](targeting-workflows.md)
-
-De arbetsflöden som beskrivs i det här avsnittet installeras med de olika inbyggda Adobe Campaign-paketen. Dessa paket och tillhörande tekniska arbetsflöden beror på licensavtalet.
+Adobe Campaign innehåller en uppsättning inbyggda tekniska arbetsflöden. De styr åtgärder och jobb som schemalagts för periodisk körning på servern. Tekniska arbetsflöden utför underhållsåtgärder på er Campaign-databas, hanterar spårningsdata för leveranser och konfigurerar även provisoriska processer för leveranser.
 
 Som standard är tekniska arbetsflöden tillgängliga i en undermapp till följande nod: **[!UICONTROL Administration]** > **[!UICONTROL Production]** > **[!UICONTROL Technical workflows]**.
 
-Observera att tekniska arbetsflöden bara kan startas och ändras av operatorer med administrationsbehörighet.
+![](assets/navtree.png){width="50%" align="center" zoomable="yes"}
 
 >[!NOTE]
 >
->Tekniska arbetsflöden som är relaterade till tillägget Message Center är tillgängliga som standard i noden **[!UICONTROL Administration]** > **[!UICONTROL Production]** > **[!UICONTROL Message Center]** > **[!UICONTROL Technical workflows]** .
+>* En lista över tekniska arbetsflöden som installeras med varje modul finns i [det här avsnittet](#list-technical-workflows).
+>
+>* Tekniska arbetsflöden som är relaterade till tillägget Message Center lagras som standard i noden **[!UICONTROL Administration]** > **[!UICONTROL Production]** > **[!UICONTROL Message Center]** > **[!UICONTROL Technical workflows]** .
 
-Lär dig hur du övervakar tekniska arbetsflöden i det här [dedikerade avsnittet](monitor-technical-workflows.md).
+Undermappen **[!UICONTROL Campaign process]** centraliserar de arbetsflöden som krävs för att köra processer inom kampanjer: aktivitetsmeddelande, lagerhantering, kostnadsberäkning osv.
 
+![](assets/campaign-processes-wf.png){width="70%" align="center" zoomable="yes"}
+
+
+## Hantera och skapa tekniska arbetsflöden {#manage-tech-workflows}
+
+Kampanjtekniska arbetsflöden kan bara startas och ändras av operatorer med **administratörsbehörighet**. Lär dig hur du övervakar tekniska arbetsflöden i det här [dedikerade avsnittet](monitor-technical-workflows.md).
+
+Du kan skapa anpassade tekniska arbetsflöden i noden **[!UICONTROL Administration > Production > Technical workflows]** i trädstrukturen. Inbyggda mallar finns för att skapa tekniska arbetsflöden. De kan konfigureras så att de passar dina behov. Den här processen är dock reserverad för expertanvändare. De aktiviteter som är tillgängliga i tekniska arbetsflöden är desamma som för riktade arbetsflöden. [Läs mer](targeting-workflows.md).
 
 ## Förteckning över tekniska arbetsflöden {#list-technical-workflows}
+
+De arbetsflöden som beskrivs på den här sidan installeras med Adobe Campaign inbyggda paket. Dessa paket och tillhörande tekniska arbetsflöden är beroende av ditt licensavtal och tillägg.
 
 | Tekniskt arbetsflöde | Paket | Beskrivning |
 |------|--------|-----------|
@@ -59,12 +52,12 @@ Lär dig hur du övervakar tekniska arbetsflöden i det här [dedikerade avsnitt
 | **Databasrensning** (rensning) | Installerad som standard | Det här arbetsflödet är arbetsflödet för databasunderhåll: det utför andra beräkningar än statistik och processer och tar bort föråldrade data från databasen enligt den definierade konfigurationen i distributionsassistenten. Den aktiveras varje dag klockan fyra som standard. |
 | **Ta bort blockerade LINE-användare** (deleteBlockedLineUsersV2) | LINE-kanal | Det här arbetsflödet säkerställer att LINE V2-användarnas data tas bort efter att de har blockerat LINE-kontot i 180 dagar. |
 | **Ta bort data för sekretessförfrågningar** (deletePrivacyRequestsData) | Skyddsförordningen för personuppgifter | Det här arbetsflödet tar bort mottagarens data som lagras i Adobe Campaign. |
-| **Leveransindikatorer** (deliveryIndicators) | Plattform för mellanleverantörer | Det här arbetsflödet uppdaterar leveransspårningsindikatorer för en leverans. Det här arbetsflödet aktiveras som standard varje timme. |
+| **Leveransindikatorer** (deliveryIndicators) | Installerad som standard | Det här arbetsflödet uppdaterar leveransspårningsindikatorer för en leverans. Det här arbetsflödet aktiveras som standard varje timme. |
 | **Distribuerade marknadsföringsprocesser** (centralLocalMgt) | Central/lokal marknadsföring (distribuerad marknadsföring) | Det här arbetsflödet påbörjar bearbetning som är relaterad till användning av den distribuerade marknadsföringsmodulen. Det startar skapandet av lokala kampanjer och hanterar meddelanden relaterade till order och tillgänglighet för kampanjpaket. |
 | **Rensa händelser** (webAnalyticsPurgeWebEvents) | Web Analytics-anslutningar | Med det här arbetsflödet kan du ta bort alla händelser från databasfältet enligt den period som har konfigurerats i fältet Livslängd. |
 | **Exportera målgrupper till Adobe Experience Cloud** (exportSharedAudience) | Integrering med Adobe Experience Cloud | Det här arbetsflödet exporterar målgrupper som delade målgrupper/segment. Dessa målgrupper kan användas i de olika Adobe Experience Cloud-lösningar ni använder. |
 | **ffdaUnsubscribe** | Installerad som standard | Det här arbetsflödet hanterar avbeställningar som tagits emot som studsade e-postmeddelanden (genom att använda metoden `<mailto>` List-Unsubscribe). Den körs varje dag, var 1:e timme, endast på marknadsföringsinstanser med en Enterprise-distribution (FFDA).<br/><br/>Arbetsflödet kontrollerar utsändningar från ett visst tidsintervall (den senaste bearbetningstiden och den aktuella tiden) som markeras som obundet prenumerationsläge av modulen inMail (markeringen anges i kolumnen iFlags i tabellen NmsBroadLog) och bearbetar en avprenumeration beroende på om tjänsten i utsändaren är inställd eller inte:<ul><li>Om serviceId är 0 (inte definierad) blocklist mottagaren.</li><li>Om serviceId inte är 0 (länkat till en befintlig tjänst) kommer mottagaren att avbryta prenumerationen på tjänsten.</li></ul><br/>Obs! Det här arbetsflödet hanterar endast avbrutna prenumerationer. Avanmälan via avanmälningslänk och Avanmälan med ett klick (URL-metod) hanteras separat utanför det här arbetsflödet. |
-| **Prognos** (prognos) | Leverans | Det här arbetsflödet analyserar leveranser som sparats i den preliminära kalendern (skapar preliminära loggar). Den utlöses som standard varje dag klockan 1:00. |
+| **Prognos** (prognos) | Installerad som standard | Det här arbetsflödet analyserar leveranser som sparats i den preliminära kalendern (skapar preliminära loggar). Den utlöses som standard varje dag klockan 1:00. |
 | **Fullständig aggregeringsberäkning (propositionCp-kub)** (agg_nmspropositionCp_full) | Erbjudandemotor (interaktion) | Det här arbetsflödet uppdaterar den fullständiga sammanställningen för erbjudandekuben. Den aktiveras varje dag kl. 6.00 som standard. Sammanställningen innehåller följande dimensioner: kanal, leverans, marknadsföringserbjudande och datum. Bufferterbjudandekuben används sedan för att generera rapporter baserat på erbjudanden. Läs mer om kuber i [det här avsnittet](../../v8/reporting/gs-cubes.md). |
 | **Identifiering av konverterade kontakter** (webAnalyticsFindConverted) | Web Analytics-anslutningar | Det här arbetsflödet indexerar besökare som har slutfört sitt köp efter en ny marknadsföringskampanj. De data som återställs av det här arbetsflödet finns i rapporten Effektivare återmarknadsföring (se den här sidan). |
 | **Importera målgrupper från Adobe Experience Cloud** (importSharedAudience) | Integrering med Adobe Experience Cloud | Med det här arbetsflödet kan du importera målgrupper/segment från olika Adobe Experience Cloud-lösningar till Adobe Campaign. |
