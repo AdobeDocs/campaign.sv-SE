@@ -5,9 +5,9 @@ feature: Overview
 role: User
 level: Beginner
 exl-id: a7846b95-7570-4dce-b3f4-d3cc23eefcac
-source-git-commit: 87426a5924e1044faf212631ba868753ae43fad6
+source-git-commit: a9f26a033d63ab1dece9ef9780392823ee130047
 workflow-type: tm+mt
-source-wordcount: '1029'
+source-wordcount: '1055'
 ht-degree: 1%
 
 ---
@@ -25,6 +25,11 @@ Du får åtkomst till Adobe Campaign via klientkonsolen eller webbgränssnittet.
   Lär dig hur du installerar och konfigurerar Campaign-klientkonsolen i [det här avsnittet](../start/connect.md).
 
 * **Webbanvändargränssnitt** - Från och med version 8.6.1 av Campaign v8 har du nu tillgång till en webbmiljö som är tillgänglig via det centrala Adobe Experience Cloud-användargränssnittet. Sedan kan du ansluta till Adobe Campaign från en webbläsare. Med det nya gränssnittet kan ni skapa, hantera och utföra viktiga marknadsföringsåtgärder. Alla Campaign-funktioner är dock inte tillgängliga. [Läs mer](#ac-web-ui).
+
+  >[!AVAILABILITY]
+  >
+  >Användargränssnittet för Campaign-webben är bara tillgängligt för användare som ansluter till Adobe Campaign med sin Adobe ID. Läs mer om [Adobe Identity Management System (IMS)](https://helpx.adobe.com/enterprise/using/identity.html){target="_blank"}.
+  >
 
 * **Webbåtkomst** - Med Adobe Campaign webbåtkomstfunktioner kan du komma åt en delmängd av Campaign-funktionerna i en webbläsare via ett HTML-användargränssnitt. Använd det här webbgränssnittet för att få åtkomst till rapporter, kontrollera och validera meddelanden, få åtkomst till kontrollpaneler med mera.  Läs mer om Campaign Web Access [i det här avsnittet](../start/connect.md#web-access).
 
@@ -108,6 +113,7 @@ Från och med version 8.6.1 av Campaign v8-klientkonsolanvändare har du nu till
 ![Adobe Campaign hemsida för webbanvändargränssnitt](assets/ac-web-home.png)
 
 >[!AVAILABILITY]
+>
 >Användargränssnittet för Campaign-webben är bara tillgängligt för användare som ansluter till Adobe Campaign med sin Adobe ID. Läs mer om [Adobe Identity Management System (IMS)](https://helpx.adobe.com/enterprise/using/identity.html){target="_blank"}.
 >
 

@@ -5,7 +5,7 @@ feature: Overview
 role: User
 level: Beginner
 exl-id: 027f5478-d86b-42be-b63d-ec8f5e1dd83d
-source-git-commit: 5ab598d904bf900bcb4c01680e1b4730881ff8a5
+source-git-commit: a9f26a033d63ab1dece9ef9780392823ee130047
 workflow-type: tm+mt
 source-wordcount: '706'
 ht-degree: 22%
@@ -37,6 +37,7 @@ Behöver du hjälp medan du arbetar med Campaign? Läs de viktigaste frågorna o
    Lär dig hur du ansluter till Adobe Experience Cloud och kommer åt Adobe Campaign webbgränssnitt [på den här sidan](campaign-ui.md#ac-web-ui).
 
    Läs mer i [Adobe Campaign webbgränssnitt ](https://experienceleague.adobe.com/en/docs/campaign-web/v8/campaign-web-home){target="_blank"}.
+
 1. **Kan Campaign v8 installeras på en lokal eller hybridmiljö?**
 
    Campaign v8 är bara tillgängligt i Managed Cloud Services, som är värd för Adobe.

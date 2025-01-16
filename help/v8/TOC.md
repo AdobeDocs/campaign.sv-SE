@@ -5,10 +5,10 @@ user-guide-description: Produktdokumentation för Adobe Campaign v8 (klientkonso
 title: Adobe Campaign v8-dokumentation
 description: Kampanjdokumentation v8
 breadcrumb-title: Dokumentation om Campaign v8
-source-git-commit: 3ac2976839f084761ba56647b282062d8d457ff2
+source-git-commit: a9f26a033d63ab1dece9ef9780392823ee130047
 workflow-type: tm+mt
-source-wordcount: '688'
-ht-degree: 17%
+source-wordcount: '691'
+ht-degree: 18%
 
 ---
 
@@ -119,6 +119,7 @@ ht-degree: 17%
    + [Bästa praxis](audiences/audiences-best-practices.md)
    + [Hantera prenumerationer](start/subscriptions.md)
 + Innehållshantering {#content}
+   + [Skapa landningssidor](dev/landing-pages.md)
    + [Designa webbprogram och formulär](dev/webapps.md)
 + Automatisering och arbetsflöden {#automation}
    + [Kampanjautomatiseringsguide >](https://experienceleague.adobe.com/en/docs/campaign/automation/home)
