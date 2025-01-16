@@ -5,7 +5,7 @@ feature: Experience Platform Integration
 role: Data Engineer
 level: Beginner
 exl-id: 565a1c8b-1930-4b43-bc11-ae517df077d6
-source-git-commit: 8ff207246bea1f476b37b1d4f2c79498362e7481
+source-git-commit: 02d7909c409bd25cfa3cc7aad189247ce7b5176e
 workflow-type: tm+mt
 source-wordcount: '990'
 ht-degree: 0%
@@ -121,7 +121,7 @@ setOption("IMS_CLIENT_API_KEY", cryptString('CLIENT ID'));
 
 Nu när autentiseringsalternativen har konfigurerats i Campaign måste ni skapa anpassade JavaScript-koder som tillåter datasynkronisering mellan Campaign och Adobe Experience Platform från er landningssida.
 
-## Lägg till alternativ vid körning av arbetsflöde {#javacript}
+## Lägg till alternativ vid körning av arbetsflöde {#javascript}
 
 För att tillåta datasynkronisering mellan landningssidor och Adobe Experience Platform måste anpassade JavaScript-koder läggas till i Adobe Campaign. Följ de här stegen:
 

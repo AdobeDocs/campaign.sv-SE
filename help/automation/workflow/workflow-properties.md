@@ -4,16 +4,14 @@ title: Egenskaper för arbetsflöde
 description: Läs mer om egenskaper för kampanjarbetsflöde
 feature: Workflows
 exl-id: 7fef434e-f6bd-46a4-9ec2-0182f081c928
-source-git-commit: 09db0cc1a14bffefe8d1b8d0d5a06d5b6517a5bb
+source-git-commit: 63b7eaba3ea7b580d9b6c3c0e0c015c057539aa8
 workflow-type: tm+mt
-source-wordcount: '546'
-ht-degree: 1%
+source-wordcount: '628'
+ht-degree: 0%
 
 ---
 
 # Egenskaper för arbetsflöde{#workflow-properties}
-
-
 
 ## Fliken Körning {#execution-tab}
 
@@ -54,6 +52,16 @@ Det här avsnittet visas bara i kampanjarbetsflöden.
 * **[!UICONTROL Execute in the engine]**
 
   Det här alternativet får endast användas för felsökning och aldrig i produktion. När det är aktiverat prioriteras arbetsflödet och alla andra arbetsflöden stoppas tills det är klart.
+
+* **[!UICONTROL Enable watchdog supervisor to keep workflow running permanently]**
+
+  Det här alternativet tvingar arbetsflöden att starta om automatiskt när ett fel inträffar. När det här alternativet är aktiverat kontrolleras arbetsflödets status var 30:e sekund av omstarten och den startas om vid behov. Om du vill justera 30-sekundersintervallet kan du skapa det tekniska alternativet `XtkWorkflow_WatchdogTimerTimeout` och använda en heltalsdatatyp för att ange önskad fördröjning.
+
+  >[!NOTE]
+  >
+  >Det här alternativet är avsett för avancerade användare och bör endast aktiveras för **tekniska arbetsflöden**.
+  >
+  >Den är aktiverad som standard för centraliserade replikeringsarbetsflöden som är tillgängliga med paketet `fullFdaMkt`.
 
 ### Felhantering {#error-management}
 
