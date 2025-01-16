@@ -3,9 +3,9 @@ title: Versionsinformation om Campaign v8 2022
 description: Lista över funktioner och förbättringar i 2022 års Campaign v8-utgåvor
 feature: Release Notes
 exl-id: 76473fa5-48ba-42cf-8664-0dd197833a86
-source-git-commit: 4fecae16b2db0f174de6d77acf5b846906073aeb
+source-git-commit: fe96eb65ac04fc2b89f0dfe1e8ed4286223c3f85
 workflow-type: tm+mt
-source-wordcount: '1919'
+source-wordcount: '1943'
 ht-degree: 12%
 
 ---
@@ -13,6 +13,18 @@ ht-degree: 12%
 # Versionsinformation 2022{#2022-rn}
 
 På den här sidan visas nya funktioner, förbättringar och korrigeringar som ingår i **2022 Campaign v8-utgåvorna**.
+
+>[!BEGINSHADEBOX]
+
+**På den här sidan**
+
+* Campaign v8.4 - [Version 8.4.1](#release-8-4-1) | [Version 8.4.2](#release-8-4-2)
+* Campaign v8.3 - [Version 8.3.8](#release-8-3-8) | [Version 8.3.9 ](#release-8-3-9)
+* Campaign v8.2 - [Version 8.2.10](#release-8-2-10)
+
+>[!ENDSHADEBOX]
+
+
 
 ## Version 8.4.2 {#release-8-4-2}
 
@@ -205,7 +217,7 @@ _18 maj 2022_
 </thead> 
 <tbody> 
 <tr> 
-<td> <p>Med Campaign Distributed Marketing kan ni implementera samarbetskampanjer mellan centrala enheter (huvudkontor, marknadsföringsavdelningar osv.) och lokala enheter (säljställen, regionala organ osv.). Genom en delad arbetsyta (kampanjpaket) kan du skapa kampanjmallar och föreslå dem för lokala enheter.</p>
+<td> <p>Med Campaign Distributed Marketing kan ni genomföra samarbetskampanjer mellan centrala enheter (huvudkontor, marknadsföringsavdelningar osv.) och lokala enheter (säljställen, regionala myndigheter osv.). Genom en delad arbetsyta (kampanjpaket) kan du skapa kampanjmallar och föreslå dem för lokala enheter.</p>
 <p>Mer information finns i den <a href="../start/campaigns.md#distributed-marketing-add-on">detaljerade dokumentationen</a>.</p>
 </td> 
 </tr> 

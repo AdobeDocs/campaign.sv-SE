@@ -5,9 +5,9 @@ feature: Release Notes
 role: Admin
 level: Beginner
 exl-id: 4be3a6dc-0c61-4534-b9dd-6c99c8a037a9
-source-git-commit: c225b3ee5b356d98d6a5e3bb9bd1cb0feae0300a
+source-git-commit: 5b649e17f464d09124064f61712856d9301fc6d6
 workflow-type: tm+mt
-source-wordcount: '429'
+source-wordcount: '430'
 ht-degree: 15%
 
 ---
@@ -44,7 +44,7 @@ Följande operativsystem och webbläsare krävs för att använda Campaign-klien
 
 CRM (Customer Relationship Management)-system som är kompatibla med Adobe Campaign listas nedan. Läs mer om CRM-anslutningar [på den här sidan](../connect/crm.md).
 
-* **Salesforce**, anslutnings-API version 49
+* **Salesforce** API-version 49 för anslutning
 * **Microsoft Dynamics**-anslutning, webb-API: Dynamics 365 lokalt och online
 
 ## Federerad dataåtkomst (FDA){#FederatedDataAccessFDA}
@@ -53,7 +53,7 @@ Externa databaser som är kompatibla med Adobe Campaign FDA-modulen (Federated D
 
 * **[!DNL Amazon Redshift]**
 * **[!DNL Azure Synapse]**, startar Campaign v8.5
-* **[!DNL Databricks]**, startar Campaign v8.7
+* **[!DNL Databricks]**, starta Campaign v8.6.4 / v8.7
 * **[!DNL Google Big Query]**
 * **[!DNL Snowflake]**
 * **[!DNL Vertica]**

@@ -5,9 +5,9 @@ feature: Release Notes
 role: User
 level: Beginner
 exl-id: b860c843-155e-4abb-bdd6-b68dc7eaa0ee
-source-git-commit: ad198540dc65152680e1d14c45286b94397948fd
+source-git-commit: fe96eb65ac04fc2b89f0dfe1e8ed4286223c3f85
 workflow-type: tm+mt
-source-wordcount: '1474'
+source-wordcount: '1496'
 ht-degree: 21%
 
 ---
@@ -16,6 +16,14 @@ ht-degree: 21%
 
 På den här sidan visas nya funktioner, förbättringar och korrigeringar som ingår i **2023 Campaign v8-utgåvorna**.
 
+>[!BEGINSHADEBOX]
+
+**På den här sidan**
+
+* Campaign v8.5 - [Version 8.5.1](#release-8-5-1) | [Version 8.5.2](#release-8-5-2)
+* Campaign v8.4 - [Version 8.4.3](#release-8-4-3) | [Version 8.4.4 ](#release-8-4-4) | [Version 8.4.5](#release-8-4-5)
+
+>[!ENDSHADEBOX]
 
 ## Version 8.5.2 {#release-8-5-2}
 

@@ -3,10 +3,10 @@ title: Versionsinformation för Campaign v8 (konsol) 2023
 description: Lista över funktioner och förbättringar i 2023 års Campaign v8-utgåvor
 feature: Release Notes
 exl-id: 6a0a9486-19a9-4ec3-9030-48dbf419f45f
-source-git-commit: fb7abba9009591a2757c07f584c0a7c59c6eb01a
+source-git-commit: fe96eb65ac04fc2b89f0dfe1e8ed4286223c3f85
 workflow-type: tm+mt
-source-wordcount: '1016'
-ht-degree: 12%
+source-wordcount: '1430'
+ht-degree: 11%
 
 ---
 
@@ -14,28 +14,41 @@ ht-degree: 12%
 
 På den här sidan visas nya funktioner, förbättringar och korrigeringar som ingår i **2024 Campaign v8-utgåvorna**.
 
+>[!BEGINSHADEBOX]
+
+**På den här sidan**
+
+* Campaign v8.7 - [Version 8.7.1](#release-8-7-1) | [Version 8.7.2](#release-8-7-2)
+* Campaign v8.6 - [Version 8.6.1](#release-8-6-1) | [Version 8.6.2](#release-8-6-2) | [Version 8.6.3](#release-8-6-3)
+* Campaign v8.5 - [Version 8.5.3](#release-8-5-3)
+
+>[!ENDSHADEBOX]
 
 
-## Version 8.5.3 {#release-8-5-3}
+## Version 8.7.2 {#release-8-7-2}
 
-_28 maj 2024_
+_3 sept 2024_
 
-### Migrering till autentiseringsuppgifter för OAuth Server-till-Server {#change-8-5-3}
+>[!AVAILABILITY]
+>
+>Den här versionen är i **begränsad tillgänglighet** (LA). Den är begränsad till kunder som migrerar **från Adobe Campaign Standard till Adobe Campaign v8** och kan inte distribueras i någon annan miljö.
+>
+>Som användare av Campaign Standarden som går över till Campaign v8 kan du läsa mer om den här övergången i [dokumentationen för webbanvändargränssnittet för Campaign v8](https://experienceleague.adobe.com/en/docs/campaign-web/v8/start/acs-migration){target="_blank"}.
 
-Från och med den här versionen, med servicekontot (JWT) som inte längre används av Adobe, förlitar sig Campaign utgående integrationer med Adobes lösningar och appar nu på OAuth Server-to-Server-autentiseringsuppgift. [Läs mer](#change-8-7-1)
+### Nya funktioner {#new-8-7-2}
 
-### Korrigeringar {#fixes-8-5-3}
+* **Ny SMS-sändningsanslutare** - SMS-sändningsanslutaren har moderniserats och förbättrats för att aktivera SMPP-anslutningar i sändningsläge, aktivera beständiga SMPP-anslutningar och säkerställa bättre kompatibilitet för miljöer som övergår från Adobe Campaign Standard. Det finns nu ett nytt externt SMS-konto för alla nya SMS-implementeringar. Befintlig implementering stöds fortfarande, men vi rekommenderar att du går över till den nya moderna och utökade anslutningen. [Läs mer](../send/sms/sms.md).
+
+* **Rich Push Notification (GA)** - Du kan nu skicka omfattande push-meddelanden. Rich push notification är en förbättrad form av mobilmeddelanden som går utöver enkla textmeddelanden genom att införliva multimediaelement som bilder, interaktiva knappar eller annat multimediematerial. I den här versionen finns det nu en uppsättning mallar för push-meddelanden för dina iOS- och Android-appar. [Läs mer](../send/rich-push-android.md).
+
+* **Varumärkning** - Det finns nu märkningsalternativ för alla kanaler, inklusive SMS och direktreklam. [Läs mer](https://experienceleague.adobe.com/docs/experience-cloud/campaign/branding/branding-gs.html){target="_blank"}
+
+### Korrigeringar {#fixes-8-7-2}
 
 Följande problem har åtgärdats i den här versionen:
 
-NEO-70263, NEO-64984, NEO-63657, NEO-63387, NEO-62964, NEO-62750, NEO-62686, NEO-595 44, NEO-52542
+NEO-48232, NEO-56832, NEO-72504, NEO-74855, NEO-75898, NEO-76097, NEO-76958, NEO-770 14, NEO-77795, NEO-78843, NEO-79328
 
-
-## Maj-uppdateringar {#may-updates}
-
-Följande ändring har släppts i maj och är nu tillgänglig för användare av Campaign v8:
-
-* **Nytt tillägg för Förbättrat skydd**: För att göra nätverksanslutningen säkrare och ge bättre säkerhet för dina resurser erbjuder Adobe Campaign ett nytt tillägg för Förbättrat skydd, som innehåller två funktioner: Skyddad CMK-integrering och Säker VPN-tunnel. [Läs mer](../config/enhanced-security.md)
 
 
 ## Version 8.7.1 {#release-8-7-1}
@@ -83,6 +96,38 @@ Följande problem har åtgärdats i den här versionen:
 NEO-72648, NEO-71534, NEO-71473, NEO-70263, NEO-70195, NEO-69651, NEO-68704, NEO-681 92, NEO-67814, NEO-67702, NEO-67620, NEO-66022, NEO-65774, NEO-65633, NEO-64199, NEO-6 3706, NEO-63705, NEO-63287, NEO-63197, NEO-62575, NEO-60250, NEO-60192, NEO-58596, NEO O-58314, NEO-58004, NEO-40054
 
 
+
+## Version 8.6.3 {#release-8-6-3}
+
+_30 juli 2024_
+
+### Nya funktioner {#new-8-6-3}
+
+* **Rich Push Notification** - Du kan nu skicka omfattande push-meddelanden. Rich push notification är en förbättrad form av mobilmeddelanden som går utöver enkla textmeddelanden genom att införliva multimediaelement som bilder, interaktiva knappar eller annat multimediematerial. I den här versionen finns det nu en uppsättning mallar för push-meddelanden för dina iOS- och Android-appar. [Läs mer](../send/rich-push-android.md).
+
+* Från och med den här versionen, med servicekontot (JWT) som inte längre används av Adobe, förlitar sig Campaign utgående integrationer med Adobes lösningar och appar nu på OAuth Server-to-Server-autentiseringsuppgift. [Läs mer](release-notes-2024.md#change-8-7-1)
+
+### Allmänna förbättringar {#improvements-8-6-3}
+
+* För att öka säkerheten vid all kommunikation mellan program stöds nu mTLS för externa API-anrop.
+
+### Korrigeringar {#fixes-8-6-3}
+
+Följande problem har åtgärdats i den här versionen:
+
+NEO-79328, NEO-78843, NEO-77795, NEO-77014, NEO-76958, NEO-76097, NEO-75898, NEO-725 4, NEO-70263, NEO-67620, NEO-63197, NEO-58596, NEO-56832.
+
+<!--
+https://jira.corp.adobe.com/issues/?filter=585288&jql=fixVersion%20%3D%208.6.3%20AND%20type%20not%20in%20(epic%2C%20test%2C%20sub-task%2C%20Roadmap)%20AND%20resolution%20!%3D%20unresolved%20AND%20%22Fixed%20in%20Build%22%20is%20not%20EMPTY%20and%20type%20in%20(%22customer%20request%22)
+-->
+
+
+## Uppdateringar 24 maj {#may-updates}
+
+Följande ändring har släppts i maj och är nu tillgänglig för användare av Campaign v8:
+
+* **Nytt tillägg för Förbättrat skydd**: För att göra nätverksanslutningen säkrare och ge bättre säkerhet för dina resurser erbjuder Adobe Campaign ett nytt tillägg för Förbättrat skydd, som innehåller två funktioner: Skyddad CMK-integrering och Säker VPN-tunnel. [Läs mer](../config/enhanced-security.md)
+
 ## Version 8.6.2 {#release-8-6-2}
 
 _23 feb 2024_
@@ -123,3 +168,19 @@ _14 feb 2024_
 Följande problem har åtgärdats i den här versionen:
 
 NEO-67892, NEO-67235, NEO-66797, NEO-66462, NEO-65091, NEO-65036, NEO-64984, NEO-646 80, NEO-63973, NEO-63879, NEO-63815, NEO-63657, NEO-63539, NEO-63387, NEO-63294, NEO-6 3174, NEO-62964, NEO-62750, NEO-62686, NEO-62455, NEO-62406, NEO-61580, NEO-61199, NEO O-60786, NEO-59544, NEO-59198, NEO-59059, NEO-58637, NEO-55197, NEO-52542, NEO-5048 8, NEO-47789
+
+
+
+## Version 8.5.3 {#release-8-5-3}
+
+_28 maj 2024_
+
+### Migrering till autentiseringsuppgifter för OAuth Server-till-Server {#change-8-5-3}
+
+Från och med den här versionen, med servicekontot (JWT) som inte längre används av Adobe, förlitar sig Campaign utgående integrationer med Adobes lösningar och appar nu på OAuth Server-to-Server-autentiseringsuppgift. [Läs mer](#change-8-7-1)
+
+### Korrigeringar {#fixes-8-5-3}
+
+Följande problem har åtgärdats i den här versionen:
+
+NEO-70263, NEO-64984, NEO-63657, NEO-63387, NEO-62964, NEO-62750, NEO-62686, NEO-595 44, NEO-52542

@@ -5,9 +5,9 @@ feature: Overview
 role: User
 level: Beginner
 exl-id: a7846b95-7570-4dce-b3f4-d3cc23eefcac
-source-git-commit: 061197048885a30249bd18af7f8b24cb71def742
+source-git-commit: 87426a5924e1044faf212631ba868753ae43fad6
 workflow-type: tm+mt
-source-wordcount: '1003'
+source-wordcount: '1029'
 ht-degree: 1%
 
 ---
@@ -106,6 +106,10 @@ På den här arbetsytan kan du komma åt Utforskarträdet och bläddra bland all
 Från och med version 8.6.1 av Campaign v8-klientkonsolanvändare har du nu tillgång till en webbmiljö som är tillgänglig via Adobe Experience Cloud centrala användargränssnitt. Experience Cloud är en integrerad familj av program, produkter och tjänster för digital marknadsföring i Adobe. Från det intuitiva gränssnittet får du snabbt tillgång till dina molnprogram, produktfunktioner och tjänster.
 
 ![Adobe Campaign hemsida för webbanvändargränssnitt](assets/ac-web-home.png)
+
+>[!AVAILABILITY]
+>Användargränssnittet för Campaign-webben är bara tillgängligt för användare som ansluter till Adobe Campaign med sin Adobe ID. Läs mer om [Adobe Identity Management System (IMS)](https://helpx.adobe.com/enterprise/using/identity.html){target="_blank"}.
+>
 
 Läs mer om det nya Campaign-webbanvändargränssnittet i [den här dokumentationen](https://experienceleague.adobe.com/docs/campaign-web/v8/campaign-web-home.html){target="_blank"}.
 
