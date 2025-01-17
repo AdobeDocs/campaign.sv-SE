@@ -5,7 +5,7 @@ feature: Email
 role: User
 level: Beginner
 exl-id: 35702b81-1984-4a62-8f00-c2bc32ab2b42
-source-git-commit: 5ab598d904bf900bcb4c01680e1b4730881ff8a5
+source-git-commit: 1cb92c6075e9478b641b11eae52372a909258cd3
 workflow-type: tm+mt
 source-wordcount: '370'
 ht-degree: 1%
@@ -22,6 +22,11 @@ ht-degree: 1%
 ## Om BCC för e-post {#gs-bcc}
 
 Du kan konfigurera Adobe Campaign att behålla en kopia av e-postmeddelanden som skickas från din plattform. Med det här alternativet kan du skicka meddelanden med en dedikerad BCC-e-postadress (Blind Carbon Copy), varifrån de kan bearbetas och arkiveras i ett externt system.
+
+>[!CAUTION]
+>
+>Av sekretesskäl måste e-post från innehållsförteckningen behandlas av ett arkiveringssystem som kan lagra säkert personligt identifierbar information (PII).
+
 Adobe Campaign hanterar inte själva arkiverade filer. De e-postfiler som motsvarar skickade e-postmeddelanden kan sedan överföras till en fjärrserver, till exempel en SMTP-e-postserver.
 
 Arkiveringsmålet är valfri e-postadress som är osynlig för leveransmottagarna. När BCC-e-postadressen har definierats måste du aktivera det dedikerade alternativet på [leveransmallsnivå](create-templates.md).
@@ -29,11 +34,6 @@ Arkiveringsmålet är valfri e-postadress som är osynlig för leveransmottagarn
 >[!NOTE]
 >
 >Som användare av hanterade Cloud Service kan [kontakta Adobe](../start/campaign-faq.md#support){target="_blank"} för att kommunicera e-postadressen för den grundläggande kopian som ska användas för arkivering.
-
->[!CAUTION]
->
->Av sekretesskäl måste e-post från innehållsförteckningen behandlas av ett arkiveringssystem som kan lagra säkert personligt identifierbar information (PII).
-
 
 ## Aktivera BCC för e-post {#enable-bcc}
 
