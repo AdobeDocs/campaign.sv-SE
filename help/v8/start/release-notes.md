@@ -3,9 +3,9 @@ title: Versionsinformation om Campaign v8
 description: Senaste Campaign v8-versionen
 feature: Release Notes
 exl-id: 7cf8111d-9f3a-46a4-813a-d4e43a1d1471
-source-git-commit: b83222774b026348ae70f41a8193f88856af99a9
+source-git-commit: 0c11cdd3c0b623333e6a7cff66c734f18e3d3985
 workflow-type: tm+mt
-source-wordcount: '512'
+source-wordcount: '556'
 ht-degree: 2%
 
 ---
@@ -42,7 +42,7 @@ Databaser stöds nu som en extern databas med Adobe Campaign Federated Data Acce
 
 Följande problem har åtgärdats i den här versionen:
 
-NEO-77452, NEO-81127, NEO-81209, NEO-80243, NEO-80314, NEO-81223, NEO-81287, NEO-812 90, NEO-81312, NEO-81512, NEO-81520, NEO-81566, NEO-81704, NEO-83096, NEO-83081
+NEO-48232, NEO-67814, NEO-71388, NEO-74855, NEO-75643, NEO-75962, NEO-76132, NEO-769 58, NEO-76986, NEO-77162, NEO-77452, NEO-78946, NEO-79373, NEO-80243, NEO-80314, NEO-8 1127, NEO-81209, NEO-81223, NEO-81287, NEO-81290, NEO-81312, NEO-81512, NEO-81520 O-81566, NEO-81704, NEO-81908, NEO-82195, NEO-82591, NEO-82592, NEO-82640, NEO-8266 5, NEO-82781, NEO-82920, NEO-83081, NEO-83096, NEO-83137, NEO-83143.
 
 ## Version 8.7.2 {#release-8-7-2}
 
