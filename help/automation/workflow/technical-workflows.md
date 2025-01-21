@@ -5,9 +5,9 @@ description: Läs mer om de tekniska arbetsflödena i Campaign
 feature: Workflows
 role: User, Admin
 exl-id: 2693856c-80b2-4e35-be8e-2a9760f8311f
-source-git-commit: 0a074b2ef84e89e67363b722372718e4c46d65e5
+source-git-commit: b8f774ce507cff67163064b6bd1341b31512c08f
 workflow-type: tm+mt
-source-wordcount: '1811'
+source-wordcount: '2064'
 ht-degree: 0%
 
 ---
@@ -52,6 +52,7 @@ De arbetsflöden som beskrivs på den här sidan installeras med Adobe Campaign 
 | **Ta bort blockerade LINE-användare** (deleteBlockedLineUsersV2) | LINE-kanal | Det här arbetsflödet säkerställer att LINE V2-användarnas data tas bort efter att de har blockerat LINE-kontot i 180 dagar. |
 | **Ta bort data för sekretessförfrågningar** (deletePrivacyRequestsData) | Skyddsförordningen för personuppgifter | Det här arbetsflödet tar bort mottagarens data som lagras i Adobe Campaign. |
 | **Leveransindikatorer** (deliveryIndicators) | Installerad som standard | Det här arbetsflödet uppdaterar leveransspårningsindikatorer för en leverans. Det här arbetsflödet aktiveras som standard varje timme. |
+| **Distribuera FFDA omedelbart** (ffdaDeploy) | Installerat som standard endast på [Campaign Enterprise (FFDA)-distributioner](../../v8/architecture/enterprise-deployment.md) | Utför en omedelbar distribution till molndatabasen. [Läs mer om datareplikering](../../v8/architecture/replication.md) |
 | **Distribuerade marknadsföringsprocesser** (centralLocalMgt) | Central/lokal marknadsföring (distribuerad marknadsföring) | Det här arbetsflödet påbörjar bearbetning som är relaterad till användning av den distribuerade marknadsföringsmodulen. Det startar skapandet av lokala kampanjer och hanterar meddelanden relaterade till order och tillgänglighet för kampanjpaket. |
 | **Rensa händelser** (webAnalyticsPurgeWebEvents) | Web Analytics-anslutningar | Med det här arbetsflödet kan du ta bort alla händelser från databasfältet enligt den period som har konfigurerats i fältet Livslängd. |
 | **Exportera målgrupper till Adobe Experience Cloud** (exportSharedAudience) | Integrering med Adobe Experience Cloud | Det här arbetsflödet exporterar målgrupper som delade målgrupper/segment. Dessa målgrupper kan användas i de olika Adobe Experience Cloud-lösningar ni använder. |
@@ -74,6 +75,13 @@ De arbetsflöden som beskrivs på den här sidan installeras med Adobe Campaign 
 | **Bearbetar realtidshändelser** (rtEventsProcessing) | Körning av transaktionsmeddelande (Message Center - Execution) | Med det här arbetsflödet kan du placera realtidshändelser i en kö innan du associerar dem med en meddelandemall. |
 | **Propositionssynkronisering** (propositionSynch) | Kontroll över erbjudandemotorn med körningsinstans | Det här arbetsflödet synkroniserar förslag mellan marknadsinstansen och körningsinstansen som används för interaktioner. |
 | **Återställning av webbhändelser** (webAnalyticsGetWebEvents) | Web Analytics-anslutningar | Varje timme laddar det här arbetsflödet ned segment för internetanvändare på en viss webbplats, placerar dem i Adobe Campaign-databasen och startar arbetsflödet för ommarknadsföring. |
+| **Replikera FFDA-data omedelbart** (ffdaReplicate) | Installerat som standard endast på [Campaign Enterprise (FFDA)-distributioner](../../v8/architecture/enterprise-deployment.md) | Replikerar XS-data för ett givet externt konto. [Läs mer om datareplikering](../../v8/architecture/replication.md) |
+| **Replikera nmsDelivery-kö** (ffdaReplicateQueueDelivery) | Installerat som standard endast på [Campaign Enterprise (FFDA)-distributioner](../../v8/architecture/enterprise-deployment.md) | Kö för tabellen `nms:delivery`. [Läs mer om datareplikering](../../v8/architecture/replication.md) |
+| **Replikeringskön nmsDlvExclusion** (ffdaReplicateQueueDlvExclusion) | Installerat som standard endast på [Campaign Enterprise (FFDA)-distributioner](../../v8/architecture/enterprise-deployment.md) | Kö för tabellen `nms:dlvExclusion`. [Läs mer om datareplikering](../../v8/architecture/replication.md) |
+| **Replikera kön nmsDlvMidRemoteIdRel** (fdaReplicateQueueDlvMidRemoteIdRel) | Installerat som standard endast på [Campaign Enterprise (FFDA)-distributioner](../../v8/architecture/enterprise-deployment.md) | Kö för tabellen `nms:dlvRemoteIdRel`. [Läs mer om datareplikering](../../v8/architecture/replication.md) |
+| **Replikera kön nmsTrackingUrl** (ffdaReplicateQueueTrackingUrl)<br/>**Replikera kön nmsTrackingUrl i samtidighet** (ffdaReplicateQueueTrackingUrl_2) | Installerat som standard endast på [Campaign Enterprise (FFDA)-distributioner](../../v8/architecture/enterprise-deployment.md) | Köer i samtidighet för tabellen `nms:trackingUrl`, använder två arbetsflöden för att förbättra effektiviteten genom att behandla begäranden baserat på olika prioriteringar. [Läs mer om datareplikering](../../v8/architecture/replication.md) |
+| **Replikera referenstabeller** (ffdaReplicateReferenceTables) | Installerat som standard endast på [Campaign Enterprise (FFDA)-distributioner](../../v8/architecture/enterprise-deployment.md) | Utför automatisk replikering av inbyggda tabeller som måste finnas i Campaign-databasen (PostgreSQL) och molndatabasen ([!DNL Snowflake]). Det är schemalagt att köras varje timme, varje dag. Om fältet **lastModified** finns utförs replikeringen stegvis, annars replikeras hela tabellen. [Läs mer om datareplikering](../../v8/architecture/replication.md) |
+| **Replikera mellanlagringsdata** (ffdaReplicateStagingData) | Installerat som standard endast på [Campaign Enterprise (FFDA)-distributioner](../../v8/architecture/enterprise-deployment.md) | Replikerar mellanlagringsdata för enhetsanrop. Det är schemalagt att köras varje timme, varje dag. [Läs mer om datareplikering](../../v8/architecture/replication.md) |
 | **Rapportera aggregat** (reportingAggregates) | Leverans | Det här arbetsflödet uppdaterar aggregat som används i rapporter. Den aktiveras varje dag kl. 2.00 som standard. |
 | **Skickar indikatorer och kampanjattribut** (webAnalyticsSendMetrics) | Web Analytics-anslutningar | Med det här arbetsflödet kan ni skicka kampanjindikatorer från Adobe Campaign till Adobe Experience Cloud Suite via Adobe® Analytics-kontakten. De berörda indikatorerna är följande: Skickat (Skickat), Totalt antal öppningar (iTotalRecipientOpen), Totalt antal mottagare som klickat (iTotalRecipientClick), Fel (iError), Avanmäl (avanmäl dig) (iOptOut). |
 | **Stock: Beställningar och aviseringar** (stockMgt) | Installerad som standard | Det här arbetsflödet startar lagerberäkning på orderraderna och hanterar varningsaviseringströsklar. |
