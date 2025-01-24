@@ -4,16 +4,19 @@ description: Kom igång med landningssidor
 feature: Landing Pages
 role: User, Developer
 level: Beginner
-source-git-commit: 45999f56c2d9e4417c6a54987d8395b69cdd2b2f
+exl-id: ad639a39-f011-4f0f-9db6-d06078f2e7a2
+source-git-commit: 2f7496a0376776d35cf88b0e81365f6e414655fd
 workflow-type: tm+mt
-source-wordcount: '254'
+source-wordcount: '228'
 ht-degree: 0%
 
 ---
 
 # Skapa och hantera landningssidor {#ac-gs-lp}
 
-[Adobe Campaign v8-webbgränssnittet](../start/campaign-ui.md#campaign-web-user-interface-ac-web-ui) har en förbättrad användarupplevelse för landningssidor. Med Campaign kan ni skapa, designa och dela landningssidor. Med landningssidor kan du dirigera dina användare till onlineformulär där de kan uppdatera sina data, välja att inte ta emot meddelanden eller prenumerera på en viss tjänst, till exempel ett nyhetsbrev. Som Campaign v8-användare har du tillgång till det nya användargränssnittet för att utföra uppgifter och förenkla din upplevelse när du använder Adobe Campaign. Läs mer om
+Med landningssidor kan du dirigera dina användare till onlineformulär där de kan uppdatera sina data, välja att inte ta emot meddelanden eller prenumerera på en viss tjänst, till exempel ett nyhetsbrev.
+
+Bläddra till [webbanvändargränssnittet](../start/campaign-ui.md#campaign-web-user-interface-ac-web-ui) om du vill skapa landningssidor. Adobe Campaign har en omdesignad användarupplevelse för landningssidor, som endast finns i webbgränssnittet.
 
 
 >[!AVAILABILITY]

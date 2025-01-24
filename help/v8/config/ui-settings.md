@@ -6,7 +6,7 @@ feature: Application Settings
 role: Admin, Developer
 level: Beginner
 exl-id: 9fa6fc42-45be-41db-9b4a-19b3b0c40dcd
-source-git-commit: 09db0cc1a14bffefe8d1b8d0d5a06d5b6517a5bb
+source-git-commit: 2f7496a0376776d35cf88b0e81365f6e414655fd
 workflow-type: tm+mt
 source-wordcount: '1848'
 ht-degree: 0%
@@ -30,7 +30,7 @@ Du kan lägga till mappar i Campaign Explorer, skapa vyer och tilldela behörigh
 
 Lär dig hantera mappar och vyer på [den här sidan](../audiences/folders-and-views.md)
 
-## Hantera och anpassa listor{#customize-lists}
+## Hantera och anpassa listor {#customize-lists}
 
 I Campaign-klientkonsolen visas data i listor. Du kan anpassa listorna efter dina behov. Du kan till exempel lägga till kolumner, filtrera data, räkna poster, spara och dela inställningarna.
 
