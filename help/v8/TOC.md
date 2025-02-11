@@ -5,9 +5,9 @@ user-guide-description: Produktdokumentation för Adobe Campaign v8 (klientkonso
 title: Adobe Campaign v8-dokumentation
 description: Kampanjdokumentation v8
 breadcrumb-title: Dokumentation om Campaign v8
-source-git-commit: a9f26a033d63ab1dece9ef9780392823ee130047
+source-git-commit: d50c746d11b6f1bb0b5af0d5ddab5660b99dc359
 workflow-type: tm+mt
-source-wordcount: '691'
+source-wordcount: '692'
 ht-degree: 18%
 
 ---
@@ -21,6 +21,7 @@ ht-degree: 18%
    + [Versioner och uppgraderingar](start/upgrades.md)
    + [Senaste releaser](start/release-notes.md)
    + Tidigare versioner {#previous-rn}
+      + [2025](start/release-notes-2025.md)
       + [2024](start/release-notes-2024.md)
       + [2023](start/release-notes-2023.md)
       + [2022](start/release-notes-2022.md)
@@ -38,7 +39,7 @@ ht-degree: 18%
    + [Från Campaign Classic v7 till v8](start/v7-to-v8.md)
    + [Från Campaign Standard till v8](start/acs-to-v8.md)
    + [Vanliga frågor och svar ](start/campaign-faq.md)
-+ Campaign Management {#campaigns}
++ Kampanjhantering {#campaigns}
    + [Kom igång med kampanjer](start/campaigns.md)
    + [Kampanjsamordning >](https://experienceleague.adobe.com/docs/campaign/automation/campaign-orchestration/set-up-campaigns.html)
 + Skicka meddelanden{#send}
@@ -115,7 +116,7 @@ ht-degree: 18%
    + Skapa målgrupper {#create-audiences}
       + [Skapa en lista med kontakter](audiences/create-audiences.md)
       + [Skapa och hantera filter](audiences/create-filters.md)
-      + [Dela målgrupper med Adobe-lösningar](start/shared-audiences.md)
+      + [Dela målgrupper med Adobe lösningar](start/shared-audiences.md)
    + [Bästa praxis](audiences/audiences-best-practices.md)
    + [Hantera prenumerationer](start/subscriptions.md)
 + Innehållshantering {#content}
@@ -167,14 +168,14 @@ ht-degree: 18%
    + [Arbetsflödesdokumentation](https://experienceleague.adobe.com/docs/campaign/automation/workflows/introduction/about-workflows.html)
 + Integreringar {#connect}
    + [Connect Campaign med andra lösningar](connect/integration.md)
-   + Kampanj + Experience Platform {#ac-aep}
+   + Campaign + Experience Platform {#ac-aep}
       + [Dela och synkronisera målgrupper och profilattribut](connect/ac-aep.md)
       + [Uppdatera AEP-profiler från Campaign-landningssidor](connect/ac-aep-landing-pages.md)
    + [Campaign + Journey Optimizer](connect/ac-ajo.md)
    + [Campaign + Analytics](connect/ac-aa.md)
    + [Campaign + Experience Manager](connect/ac-aem.md)
    + [Campaign + Target](connect/ac-at.md)
-   + [Kampanj + utlösare för Experience Cloud](connect/ac-triggers.md)
+   + [Kampanj + Experience Cloud-utlösare](connect/ac-triggers.md)
    + [Campaign + Workfront](connect/ac-workfront.md)
    + [Campaign + X (Twitter)](connect/ac-tw.md)
    + [Kampanj + extern databas](connect/fda.md)
