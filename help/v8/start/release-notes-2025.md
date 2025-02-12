@@ -2,55 +2,17 @@
 title: Versionsinformation för Campaign v8 (konsol) 2025
 description: Lista över funktioner och förbättringar i 2025 års Campaign v8-utgåvor
 feature: Release Notes
-source-git-commit: c5452082104432af49a93ecaa96865f19ee89ec2
+exl-id: 3f91d83e-594e-49ee-a898-606e3de00bf3
+source-git-commit: 82622a4517356eaba1f7eba23d4b3050d8ca37c9
 workflow-type: tm+mt
-source-wordcount: '557'
-ht-degree: 3%
+source-wordcount: '277'
+ht-degree: 1%
 
 ---
 
 # Versionsinformation 2025 {#2025-rn}
 
-På den här sidan visas nya funktioner, förbättringar och korrigeringar som ingår i **2025 Campaign v8-utgåvorna**.
-
->[!BEGINSHADEBOX]
-
-**På den här sidan**
-
-* Campaign v8.6 - [Version 8.6.4](#release-8-6-4)
-* Campaign v8.7 - [Version 8.7.2](#release-8-7-2)
-
->[!ENDSHADEBOX]
-
-## Version 8.6.4 {#release-8-6-4}
-
-_15 januari 2025_
-
-### Allmänna förbättringar {#improvements-8-6-4}
-
-* Stabiliteten för kampanjprogram har förbättrats under leveransanalysen i samband med en [företagsdistribution (FFDA)](../../v8/architecture/enterprise-deployment.md).
-* Den här versionen innehåller förbättrade och förbättrade FDA-arkitekturmekanismer, inklusive nyckelhantering, mellanlagring och datareplikering.
-* Nya tekniska arbetsflöden har introducerats för [Enterprise (FFDA)-distributionen](../../v8/architecture/enterprise-deployment.md). Dessa arbetsflöden replikerar leverans och relaterade data genom att centralisera förfrågningar om parallell replikering i motsvarande tabeller. Arbetsflödet börjar med `Replicate nms`. [Läs mer](../architecture/replication.md)
-* Ett nytt **Aktivera övervakningsansvarig för att hålla arbetsflödet igång permanent** är nu tillgängligt i arbetsflödesegenskaperna. När det här alternativet är aktiverat startar arbetsflödena automatiskt om efter att ett fel har inträffat. Omstarten sker var 30:e sekund som standard om arbetsflödet fortfarande är felfritt. Om du vill justera det här intervallet kan du skapa ett nytt `XtkWorkflow_WatchdogTimerTimeout`-alternativ och ange datatypen Integer för att ange den nya fördröjningen. Det här alternativet bör endast aktiveras i tekniska arbetsflöden. [Läs mer](../../automation/workflow/workflow-properties.md#execution)
-
-### Säkerhetsförbättringar {#security-8-6-4}
-
-Anslutningen till Adobe lösningar och appar via det externa **[!UICONTROL Adobe Experience Cloud]**-kontot har uppdaterats för att stärka säkerheten.
-
-<!--
-### Connection to Campaign {#ims-8-6-4}
-
-**(Limited availability)** For a restricted list of customers, Campaign v8.6.4 can allow native authentication mode instead of Adobe Identity Management System (IMS). Note that if you are using Campaign native authentication, you cannot access to [Campaign Web User Interface](../start/campaign-ui.md#campaign-web-user-interface).-->
-
-### Kompatibilitetsuppdateringar {#comp-8-6-4}
-
-Databaser stöds nu som en extern databas med Adobe Campaign Federated Data Access (FDA). Läs mer [på den här sidan](compatibility-matrix.md#FederatedDataAccessFDA).
-
-### Korrigeringar {#fixes-8-6-4}
-
-Följande problem har åtgärdats i den här versionen:
-
-NEO-48232, NEO-67814, NEO-71388, NEO-74855, NEO-75643, NEO-75962, NEO-76132, NEO-769 58, NEO-76986, NEO-77162, NEO-77452, NEO-78946, NEO-79373, NEO-80243, NEO-80314, NEO-8 1127, NEO-81209, NEO-81223, NEO-81287, NEO-81290, NEO-81312, NEO-81512, NEO-81520 O-81566, NEO-81704, NEO-81908, NEO-82195, NEO-82591, NEO-82592, NEO-82640, NEO-8266 5, NEO-82781, NEO-82920, NEO-83081, NEO-83096, NEO-83137, NEO-83143.
+På den här sidan visas nya funktioner, förbättringar och korrigeringar som ingår i **2025 Campaign v8-utgåvorna**. De senaste versionerna visas på [den här sidan](release-notes.md).
 
 ## Version 8.7.2 {#release-8-7-2}
 

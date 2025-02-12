@@ -3,7 +3,7 @@ keywords: Campaign Classic, starstida, populära ämnen
 description: Campaign v8 - hjälpcenter
 title: Adobe Campaign v8 - produktdokumentation
 exl-id: 6010b0f7-baf0-43ba-af9a-b8864f3897ea,9ff16fb1-d3d3-44fe-9016-15abffdbc74e
-source-git-commit: 11614d555aa250adfcabce40dedb455328845eaa
+source-git-commit: 82622a4517356eaba1f7eba23d4b3050d8ca37c9
 workflow-type: tm+mt
 source-wordcount: '335'
 ht-degree: 28%
@@ -22,7 +22,7 @@ Få en glimt av de senaste förbättringarna i produkten och dokumentationen fö
 
 Den senaste versionen av Adobe Campaign finns nu att köpa. Läs versionsinformationen för mer information.
 
-[![Bild](assets/do-not-localize/learn-more-button.svg)](start/release-notes.md)
+[![Bild](assets/do-not-localize/learn-more-button.svg)](start/release-notes.md#release-8-6-4)
 
 
 >[!TAB Nytt webbanvändargränssnitt för kampanj]
@@ -112,5 +112,5 @@ Vissa viktiga ändringar av tjänsten Android Firebase Cloud Messaging (FCM) kom
 
 ## Ytterligare resurser
 
-[Produktbeskrivning för Adobe Campaign v8](https://helpx.adobe.com/se/legal/product-descriptions/adobe-campaign-managed-cloud-services.html){target="_blank"} - [Dokumentation för Adobe Campaign webbgränssnitt](https://experienceleague.adobe.com/docs/campaign-web/v8/campaign-web-home.html){target="_blank"} - [Tutorials](https://experienceleague.adobe.com/docs/campaign-learn/tutorials/overview.html){target="_blank"} - [[!DNL Adobe Campaign] automatiseringsguide](https://experienceleague.adobe.com/docs/campaign/automation/home.html){target="_blank"} - [Kontrollpanelen för Campaign v8](https://experienceleague.adobe.com/docs/control-panel/using/discover-control-panel/key-features.html?lang=sv){target="_blank"}
+[Produktbeskrivning för Adobe Campaign v8](https://helpx.adobe.com/se/legal/product-descriptions/adobe-campaign-managed-cloud-services.html){target="_blank"} - [Dokumentation för Adobe Campaign webbgränssnitt](https://experienceleague.adobe.com/docs/campaign-web/v8/campaign-web-home.html){target="_blank"} - [Självstudiekurser](https://experienceleague.adobe.com/docs/campaign-learn/tutorials/overview.html){target="_blank"} - [[!DNL Adobe Campaign] automatiseringsguide](https://experienceleague.adobe.com/docs/campaign/automation/home.html){target="_blank"} - [Kontrollpanelen för Campaign v8](https://experienceleague.adobe.com/docs/control-panel/using/discover-control-panel/key-features.html?lang=sv){target="_blank"}
 
