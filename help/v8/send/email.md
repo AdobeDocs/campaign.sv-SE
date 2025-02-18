@@ -5,7 +5,7 @@ feature: Email
 role: User
 level: Beginner
 exl-id: 97dcd0e0-db5b-45a4-96af-817e49f6cb64
-source-git-commit: a76d2c30d3e1c723bcd4881f28980d346aade3dc
+source-git-commit: 693b9d9d50d5e60061bd952090380382ebaf8df8
 workflow-type: tm+mt
 source-wordcount: '565'
 ht-degree: 6%
