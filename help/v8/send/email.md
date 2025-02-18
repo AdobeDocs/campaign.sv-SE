@@ -5,9 +5,9 @@ feature: Email
 role: User
 level: Beginner
 exl-id: 97dcd0e0-db5b-45a4-96af-817e49f6cb64
-source-git-commit: 578f774152afbd42342da0f161b679ba9dd10c78
+source-git-commit: a76d2c30d3e1c723bcd4881f28980d346aade3dc
 workflow-type: tm+mt
-source-wordcount: '528'
+source-wordcount: '565'
 ht-degree: 6%
 
 ---
@@ -15,6 +15,11 @@ ht-degree: 6%
 # Designa och skicka e-post
 
 Med Adobe Campaign kan du skapa e-postleveranser för att skicka personaliserade e-postmeddelanden till målgruppen. [Läs mer](../send/send.md)
+
+>[!NOTE]
+>
+>Bläddra till [webbanvändargränssnittet](../start/campaign-ui.md#campaign-web-user-interface-ac-web-ui) om du vill skapa engagerande och individuellt anpassade e-postmeddelanden. Adobe Campaign har e-postprogrammet Designer, ett intuitivt dra och släpp-gränssnitt som gör att du kan utforma och förfina allt innehåll för alla e-postmeddelanden.
+
 
 Lär dig hur du skapar och konfigurerar en leverans på [den här sidan](../start/create-message.md).
 
@@ -41,7 +46,7 @@ I följande exempel får du lära dig hur du utformar en e-postleverans i Adobe 
 
 1. **Importera ditt innehåll**
 
-   Klicka på fliken **Source** om du vill klistra in ditt HTML-innehåll.
+   Klicka på fliken **Source** för att klistra in ditt HTML-innehåll.
 
    ![](assets/paste-content.png)
 
