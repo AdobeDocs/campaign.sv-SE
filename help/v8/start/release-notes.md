@@ -3,9 +3,9 @@ title: Versionsinformation om Campaign v8
 description: Senaste Campaign v8-versionen
 feature: Release Notes
 exl-id: 7cf8111d-9f3a-46a4-813a-d4e43a1d1471
-source-git-commit: dcc3802a165091597505c4556dd7626d6810266f
+source-git-commit: 15faa6850c035d2d26dd43dc221e0128c33999c2
 workflow-type: tm+mt
-source-wordcount: '475'
+source-wordcount: '566'
 ht-degree: 2%
 
 ---
@@ -69,7 +69,15 @@ Anslutningen till Adobe lösningar och appar via det externa **[!UICONTROL Adobe
 
 ### Kompatibilitetsuppdateringar {#comp-8-6-4}
 
-Databaser stöds nu som en extern databas med Adobe Campaign Federated Data Access (FDA). Läs mer [på den här sidan](compatibility-matrix.md#FederatedDataAccessFDA).
+* Databaser stöds nu som en extern databas med Adobe Campaign Federated Data Access (FDA). Läs mer [på den här sidan](compatibility-matrix.md#FederatedDataAccessFDA).
+
+* Nu finns en ny Amazon Redshift FDA ODBC-anslutning. Det ger bättre anslutningsmöjligheter, enklare underhåll och förbättrad kompatibilitet. Den nya versionen innehåller följande förbättringar:
+
+   * Den nya anslutningen baseras på ODBC-gränssnittet som är anpassat till våra senaste FDA-anslutningar. Detta garanterar långsiktig support.
+   * Dessutom introduceras en ny datainläsningsmekanism som använder s3-bucket, vilket avsevärt förbättrar prestandan.
+   * Stöd för Spectrum för växling av skift har lagts till.
+
+  Den gamla kopplingen kan fortfarande användas. Om du vill prova den nya bör du kontakta Adobe.
 
 ### Korrigeringar {#fixes-8-6-4}
 
