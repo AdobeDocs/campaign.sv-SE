@@ -3,9 +3,9 @@ title: Versionsinformation om Campaign v8
 description: Senaste Campaign v8-versionen
 feature: Release Notes
 exl-id: 7cf8111d-9f3a-46a4-813a-d4e43a1d1471
-source-git-commit: 15faa6850c035d2d26dd43dc221e0128c33999c2
+source-git-commit: ba27d1e56f7354e500e747f01a27412f8d553e2b
 workflow-type: tm+mt
-source-wordcount: '566'
+source-wordcount: '560'
 ht-degree: 2%
 
 ---
@@ -75,7 +75,6 @@ Anslutningen till Adobe lösningar och appar via det externa **[!UICONTROL Adobe
 
    * Den nya anslutningen baseras på ODBC-gränssnittet som är anpassat till våra senaste FDA-anslutningar. Detta garanterar långsiktig support.
    * Dessutom introduceras en ny datainläsningsmekanism som använder s3-bucket, vilket avsevärt förbättrar prestandan.
-   * Stöd för Spectrum för växling av skift har lagts till.
 
   Den gamla kopplingen kan fortfarande användas. Om du vill prova den nya bör du kontakta Adobe.
 

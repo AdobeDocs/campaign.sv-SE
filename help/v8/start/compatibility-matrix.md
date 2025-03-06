@@ -5,9 +5,9 @@ feature: Release Notes
 role: Admin
 level: Beginner
 exl-id: 4be3a6dc-0c61-4534-b9dd-6c99c8a037a9
-source-git-commit: 5b649e17f464d09124064f61712856d9301fc6d6
+source-git-commit: ba27d1e56f7354e500e747f01a27412f8d553e2b
 workflow-type: tm+mt
-source-wordcount: '430'
+source-wordcount: '437'
 ht-degree: 15%
 
 ---
@@ -51,7 +51,8 @@ CRM (Customer Relationship Management)-system som är kompatibla med Adobe Campa
 
 Externa databaser som är kompatibla med Adobe Campaign FDA-modulen (Federated Data Access) listas nedan. Läs mer om FDA [på den här sidan](../connect/fda.md).
 
-* **[!DNL Amazon Redshift]**
+* **[!DNL Amazon Redshift]** ODBC-anslutning, startar Campaign v8.6.4
+* **[!DNL Amazon Redshift]** äldre koppling
 * **[!DNL Azure Synapse]**, startar Campaign v8.5
 * **[!DNL Databricks]**, starta Campaign v8.6.4 / v8.7
 * **[!DNL Google Big Query]**
@@ -87,4 +88,4 @@ Följande webbläsare är kompatibla med Campaign for Web Access. Läs mer om Ca
 * [Installera Campaign-klientkonsolen](connect.md)
 * [Kontrollpanelsversioner](https://experienceleague.adobe.com/docs/control-panel/using/release-notes.html?lang=sv){target="_blank"}
 
-Om du vill få information om nya Experience Cloud-lösningsreleaser prenumererar du på [Adobe Priority-produktuppdateringen](https://www.adobe.com/se/subscription/priority-product-update.html){target="_blank"}.
+Prenumerera på [Adobe Priority Product Update](https://www.adobe.com/se/subscription/priority-product-update.html){target="_blank"} om du vill få information om nya releaser för Experience Cloud-lösningar.
