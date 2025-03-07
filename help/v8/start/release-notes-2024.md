@@ -3,10 +3,10 @@ title: Versionsinformation för Campaign v8 (konsol) 2024
 description: Lista över funktioner och förbättringar i 2024 års Campaign v8-utgåvor
 feature: Release Notes
 exl-id: 6a0a9486-19a9-4ec3-9030-48dbf419f45f
-source-git-commit: 54cc5686cc5187a1ab0514abcaf9fcd69e7a1ede
+source-git-commit: 041df8d2d6128d72a04008affbc9680ba5b640a1
 workflow-type: tm+mt
-source-wordcount: '1217'
-ht-degree: 12%
+source-wordcount: '1308'
+ht-degree: 11%
 
 ---
 
@@ -48,7 +48,16 @@ _2 maj 2024_
 
 ### Kompatibilitetsuppdateringar {#comp-8-7-1}
 
-* Databaser stöds nu som en extern databas med Adobe Campaign Federated Data Access (FDA). Läs mer [på den här sidan](compatibility-matrix.md#FederatedDataAccessFDA).
+Följande FDA-anslutningar har lagts till. Se den här [sidan](compatibility-matrix.md#FederatedDataAccessFDA).
+
+* Databaser stöds nu som en extern databas med Adobe Campaign Federated Data Access (FDA).
+
+* Nu finns en ny Amazon Redshift FDA ODBC-anslutning. Det ger bättre anslutningsmöjligheter, enklare underhåll och förbättrad kompatibilitet. Den nya versionen innehåller följande förbättringar:
+
+   * Den nya anslutningen baseras på ODBC-gränssnittet som är anpassat till våra senaste FDA-anslutningar. Detta garanterar långsiktig support.
+   * Dessutom introduceras en ny datainläsningsmekanism som använder s3-bucket, vilket avsevärt förbättrar prestandan.
+
+  Den gamla kopplingen kan fortfarande användas. Om du vill prova den nya bör du kontakta Adobe.
 
 ### Migrering till autentiseringsuppgifter för OAuth Server-till-Server {#change-8-7-1}
 
