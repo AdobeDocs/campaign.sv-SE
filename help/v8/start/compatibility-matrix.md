@@ -5,9 +5,9 @@ feature: Release Notes
 role: Admin
 level: Beginner
 exl-id: 4be3a6dc-0c61-4534-b9dd-6c99c8a037a9
-source-git-commit: ba27d1e56f7354e500e747f01a27412f8d553e2b
+source-git-commit: fb2cf4407750f8cff65ca53f0e87c32e9702de92
 workflow-type: tm+mt
-source-wordcount: '437'
+source-wordcount: '438'
 ht-degree: 15%
 
 ---
@@ -51,7 +51,7 @@ CRM (Customer Relationship Management)-system som är kompatibla med Adobe Campa
 
 Externa databaser som är kompatibla med Adobe Campaign FDA-modulen (Federated Data Access) listas nedan. Läs mer om FDA [på den här sidan](../connect/fda.md).
 
-* **[!DNL Amazon Redshift]** ODBC-anslutning, startar Campaign v8.6.4
+* **[!DNL Amazon Redshift]** ODBC-anslutning, startar Campaign v8.6.4 / v8.7.1
 * **[!DNL Amazon Redshift]** äldre koppling
 * **[!DNL Azure Synapse]**, startar Campaign v8.5
 * **[!DNL Databricks]**, starta Campaign v8.6.4 / v8.7
