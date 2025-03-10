@@ -5,9 +5,9 @@ role: User, Admin
 feature: Social Marketing
 level: Beginner, Intermediate
 exl-id: 5523217a-b95f-4639-b941-52eb7d5a0203
-source-git-commit: 5ab598d904bf900bcb4c01680e1b4730881ff8a5
+source-git-commit: 42241364c1a23ae75d8f0aaf18a2cb1c04ce5b0c
 workflow-type: tm+mt
-source-wordcount: '1065'
+source-wordcount: '1066'
 ht-degree: 2%
 
 ---
@@ -23,7 +23,7 @@ Med modulen **Hantera sociala nätverk (social marknadsföring)** kan du interag
 
 >[!NOTE]
 >
->Som användare av hanterade Cloud Service [kontaktar du Adobe](../start/campaign-faq.md#support) för att ansluta Campaign med X. Tillägget **Hantera sociala nätverk (social marknadsföring)** måste vara installerat i din miljö, via det dedikerade paketet, och Twitternas externa konto måste konfigureras.
+>Som hanterad molntjänstanvändare [kontaktar du Adobe](../start/campaign-faq.md#support) för att ansluta Campaign med X. Tillägget **Hantera sociala nätverk (social marknadsföring)** måste vara installerat i din miljö, via det dedikerade paketet, och det externa Twitter-kontot måste konfigureras.
 
 
 Om du vill konfigurera Adobe Campaign att bokföra tweets på dina X-konton delegerar du skrivåtkomst till Adobe Campaign för dessa konton. För att göra detta måste du:
@@ -56,7 +56,7 @@ När du har godkänts med utökad åtkomst skapar du ett X-program som gör det 
 
    ![](assets/tw-app-type.png)
 
-1. Gå tillbaka till appkontrollpanelen, markera din app och bläddra till fliken **Tangenter och tokens**. Under **Åtkomsttoken och hemlighet** måste du återskapa din apps token och hemlighet om behörigheten **Läs, Skriv och Direktmeddelanden** inte anges. Observera att alla nycklar och token måste sparas när de skapas. Du behöver dem för att konfigurera din Campaign Twitter-tjänst.
+1. Gå tillbaka till appkontrollpanelen, markera din app och bläddra till fliken **Tangenter och tokens**. Under **Åtkomsttoken och hemlighet** måste du återskapa din apps token och hemlighet om behörigheten **Läs, Skriv och Direktmeddelanden** inte anges. Observera att alla nycklar och token måste sparas när de skapas. Du behöver dem för att konfigurera Twitter-tjänsten i Campaign.
 
    ![](assets/tw-permissions-check.png)
 
@@ -66,7 +66,7 @@ När du har godkänts med utökad åtkomst skapar du ett X-program som gör det 
 >Du behöver ett program per X-konto. Därför måste du skapa ett annat testprogram för att skicka korrektur till testkontot.
 >
 
-## Skapa en Twitter i Campaign {#create-tw-service}
+## Skapa en Twitter-tjänst i Campaign {#create-tw-service}
 
 Om du vill länka din Campaign-instans till ditt X-konto skapar du en **Twitter**-tjänst och delegerar skrivåtkomst till Campaign.
 
@@ -74,7 +74,7 @@ Om du vill länka din Campaign-instans till ditt X-konto skapar du en **Twitter*
 >
 >Skapa en **Twitter**-tjänst per X-konto. Därför måste du skapa en annan testtjänst för att skicka korrektur till ditt [testkonto](#tw-test-account).
 >
->Varje **Twitter**-tjänst måste också skapas av Adobe i MID-instansen. Kontakta din Adobe-representant för att konfigurera din miljö.
+>Varje **Twitter**-tjänst måste också skapas av Adobe på MID-instansen (Middle-sourcing). Kontakta din Adobe-representant för att få din miljö konfigurerad.
 >
 
 Om du vill ange inställningar måste du ha tillgång till både din Adobe Campaign klientkonsol och dina X-appbehörigheter.
@@ -99,14 +99,14 @@ Om du vill ange inställningar måste du ha tillgång till både din Adobe Campa
 
 1. Kopiera innehållet i fälten **API Key** och **[API Key Secret]** från din X-app och klistra in dem i fälten **[!UICONTROL Consumer key]** och **[!UICONTROL Consumer secret]** i Campaign **Twitter** .
 
-1. Kopiera innehållet i fälten **Åtkomsttoken** och **Åtkomsttokenhemlighet** från din X-app och klistra in dem i fälten **[!UICONTROL Access token]** och **[!UICONTROL Access token secret]** i Campaign **Twitter** -tjänsten.
+1. Kopiera innehållet i fälten **Åtkomsttoken** och **Åtkomsttokenhemlighet** från din X-app och klistra in dem i fälten **[!UICONTROL Access token]** och **[!UICONTROL Access token secret]** i Campaign **Twitter** .
 
 1. Klicka på **[!UICONTROL Save]** i Campaign-klientkonsolen. Du har nu delegerat skrivbehörighet till Adobe Campaign.
 
 Om du vill kontrollera inställningarna kan du:
 
-* Redigera tjänsten **Twitter** som du just har skapat.
-* Bläddra på fliken **[!UICONTROL Twitter page]**: ditt Twitter-konto ska visas.
+* Redigera den **Twitter**-tjänst som du just har skapat.
+* Bläddra på fliken **[!UICONTROL Twitter page]**: ditt Twitter-konto bör visas.
   ![](assets/tw-page.png)
 
 ## Synkronisera ditt X-konto {#synchro-tw-accounts}
@@ -132,7 +132,7 @@ För varje följare lagrar Adobe Campaign följande information:
 * **[!UICONTROL Username]**: användarens kontonamn
 * **[!UICONTROL Full name]**: användarens namn
 * **[!UICONTROL Number of friends]**: antal följare
-* **[!UICONTROL Checked]**: Det här fältet anger om användaren har ett konto för verifierad Twitter
+* **[!UICONTROL Checked]**: Det här fältet anger om användaren har ett verifierat Twitter-konto
 
 När konfigurationen är klar kan du skapa inlägg på dina X-konton och skicka direktmeddelanden till dina följare. [Läs mer](../send/twitter.md)
 
@@ -142,7 +142,7 @@ Utöver X-kontot skapar du ett privat X-konto som kan användas för att skicka 
 
 1. Skapa ett nytt X-konto.
 1. Öppna kontot **Inställningar**.
-1. Bläddra till **Sekretess och säkerhet** och **Målgrupp och taggning** och kontrollera alternativet **Protect dina inlägg**. Dina inlägg och annan kontoinformation visas endast för personer som följer efter dig.
+1. Bläddra till **Integritet och säkerhet** och **Målgrupp och taggning** och markera alternativet **Skydda dina inlägg**. Dina inlägg och annan kontoinformation visas endast för personer som följer efter dig.
 
 ![](assets/do-not-localize/social_tw_test_page.png)
 

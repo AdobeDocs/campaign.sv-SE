@@ -5,9 +5,9 @@ feature: Application Settings, External Account
 role: Admin
 level: Beginner, Intermediate, Experienced
 exl-id: 9634b576-2854-4ea9-ba0d-8efaab2c4aee
-source-git-commit: 5ab598d904bf900bcb4c01680e1b4730881ff8a5
+source-git-commit: 42241364c1a23ae75d8f0aaf18a2cb1c04ce5b0c
 workflow-type: tm+mt
-source-wordcount: '1037'
+source-wordcount: '1049'
 ht-degree: 3%
 
 ---
@@ -26,7 +26,7 @@ Du kan komma åt externa konton från Adobe Campaign **[!UICONTROL Explorer]**: 
 
 >[!CAUTION]
 >
->* Som användare av hanterade Cloud Service konfigureras externa konton för din instans av Adobe och får inte ändras.
+>* Som användare av hanterade molntjänster konfigureras externa konton för din instans av Adobe och får inte ändras.
 >
 >* I kontexten för en [Enterprise (FFDA)-distribution](../architecture/enterprise-deployment.md) hanterar ett specifikt **[!UICONTROL Full FDA]** (FFDA) externt konto anslutningen mellan den lokala databasen i Campaign och molndatabasen ([!DNL Snowflake]).
 >
@@ -62,7 +62,7 @@ Så här konfigurerar du det externa kontot **[!UICONTROL Bounce mails (defaultP
 
   Det externa **studs-e-postkontot** anger det externa POP3-kontot som ska användas för att ansluta till e-posttjänsten. Alla servrar som konfigurerats för POP3-åtkomst kan användas för att ta emot returmeddelanden.
 
-* **[!UICONTROL Function]** - inkommande e-post eller SOAP router
+* **[!UICONTROL Function]** - inkommande e-post eller SOAP-router
 
 ![](assets/bounce_external_2.png)
 
@@ -86,6 +86,8 @@ Om du vill konfigurera en POP3-extern med Microsoft OAuth 2.0 markerar du altern
 ### Routning {#routing}
 
 Med det externa kontot **[!UICONTROL Routing]** kan du konfigurera varje kanal som är tillgänglig i Adobe Campaign beroende på vilka paket som är installerade.
+
+Läs mer om extern kontohantering och leveranskörning i [det här avsnittet](../architecture/architecture.md#split).
 
 ### Körningsinstans {#execution-instance}
 

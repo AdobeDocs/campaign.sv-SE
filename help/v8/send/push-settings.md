@@ -1,14 +1,14 @@
 ---
 title: Integrera AEP SDK och Campaign
-description: Lär dig hur du integrerar Adobe Experience Platform SDK för mobiler med din app
+description: Lär dig hur du integrerar Adobe Experience Platform Mobile SDK med din app
 version: v8
 feature: Push
 role: Admin, Developer
 level: Intermediate
 exl-id: 1a75f411-3f71-4114-b738-277820dc6138
-source-git-commit: 550e3cbd064ae7831855377f1d08d6acecd55c9e
+source-git-commit: 42241364c1a23ae75d8f0aaf18a2cb1c04ce5b0c
 workflow-type: tm+mt
-source-wordcount: '1680'
+source-wordcount: '1681'
 ht-degree: 4%
 
 ---
@@ -21,7 +21,7 @@ Om du vill skicka push-meddelanden med Adobe Campaign måste du först konfigure
 >
 >Vissa viktiga ändringar av tjänsten Android Firebase Cloud Messaging (FCM) kommer att släppas 2024 och kan komma att påverka din Adobe Campaign-implementering. Konfigurationen för prenumerationstjänster för push-meddelanden för Android kan behöva uppdateras för att den här ändringen ska fungera. Du kan redan kontrollera och vidta åtgärder. [Läs mer](../../technotes/upgrades/push-technote.md).
 
-Innan du börjar skicka push-meddelanden med Adobe Campaign måste du se till att det finns konfigurationer och integreringar på mobilappen och för taggar i Adobe Experience Platform. Adobe Experience Platform Mobile SDK innehåller API:er för integrering på klientsidan för mobiler via Android och iOS-kompatibla SDK:er.
+Innan du börjar skicka push-meddelanden med Adobe Campaign måste du se till att det finns konfigurationer och integreringar på mobilappen och för taggar i Adobe Experience Platform. Adobe Experience Platform Mobile SDK erbjuder API:er för integrering på klientsidan för mobiler via Android och iOS-kompatibla SDK:er.
 
 Så här konfigurerar du appen med Adobe Experience Platform Mobile SDK:
 
@@ -32,7 +32,7 @@ Så här konfigurerar du appen med Adobe Experience Platform Mobile SDK:
 1. (valfritt) Lägg till [Adobe Experience Platform Assurance i din app](https://developer.adobe.com/client-sdks/documentation/getting-started/validate/){target="_blank"} för att validera implementeringen. Lär dig hur du implementerar Adobe Experience Platform Assurance-tillägget [på den här sidan](https://developer.adobe.com/client-sdks/documentation/platform-assurance-sdk/){target="_blank"}.
 1. Konfigurera dina iOS- och Android-mobiltjänster i Adobe Campaign enligt informationen [på den här sidan](#push-service).
 1. Installera och konfigurera [Adobe Campaign Extension](#configure-extension) i din mobila egenskap.
-1. Följ [dokumentationen för Adobe Experience Platform Mobile SDK](https://developer.adobe.com/client-sdks/documentation/getting-started/){target="_blank"} om du vill konfigurera med Adobe Experience Platform Mobile SDK i din app.
+1. Följ [dokumentationen för Adobe Experience Platform Mobile SDK](https://developer.adobe.com/client-sdks/documentation/getting-started/){target="_blank"} om du vill konfigurera Adobe Experience Platform Mobile SDK:er i din app.
 
 ## Förhandskrav {#before-starting}
 
@@ -132,7 +132,7 @@ The mobile app push credential registration is required to authorize Adobe to se
 
 ## Konfigurera en mobil taggegenskap i Adobe Experience Platform Data Collection {#launch-property}
 
-Genom att konfigurera en mobil egenskap kan utvecklaren eller marknadsföraren av mobilappen konfigurera SDK:n för mobilappen. Du skapar vanligtvis en mobil egenskap för varje mobilprogram som du vill hantera. Lär dig hur du skapar och konfigurerar en mobil egenskap i [Adobe Experience Platform Mobile SDK-dokumentationen](https://developer.adobe.com/client-sdks/documentation/getting-started/create-a-mobile-property/){target="_blank"}.
+Genom att konfigurera en mobil egenskap kan utvecklaren eller marknadsföraren av mobilappen konfigurera SDK:n för mobilappen. Du skapar vanligtvis en mobil egenskap för varje mobilprogram som du vill hantera. Lär dig hur du skapar och konfigurerar en mobil egenskap i [dokumentationen för Adobe Experience Platform Mobile SDK](https://developer.adobe.com/client-sdks/documentation/getting-started/create-a-mobile-property/){target="_blank"}.
 <!--
 To get the SDKs needed for push notification to work you will need the following SDK extensions, for both Android and iOS:
 
@@ -203,7 +203,7 @@ Så här skapar du en app för iOS-enheter:
 
    >[!NOTE]
    >
-   > **[!UICONTROL Integration key]** är helt anpassningsbar med strängvärde, men måste vara exakt densamma som den som anges i SDK:n.
+   > **[!UICONTROL Integration key]** är helt anpassningsbar med strängvärde, men måste vara exakt densamma som den som anges i SDK.
    >
    > Du kan inte använda samma certifikat för utvecklingsversionen (sandlådan) och produktionsversionen av programmet.
 
@@ -241,7 +241,7 @@ Så här skapar du en app för Android-enheter:
 
    >[!NOTE]
    >
-   > **[!UICONTROL Integration key]** är helt anpassningsbar med strängvärde, men måste vara exakt densamma som den som anges i SDK:n.
+   > **[!UICONTROL Integration key]** är helt anpassningsbar med strängvärde, men måste vara exakt densamma som den som anges i SDK.
    >
 
 1. Välj ikonen i fältet **[!UICONTROL Application icon]** om du vill anpassa mobilprogrammet i tjänsten.
@@ -257,7 +257,7 @@ Så här skapar du en app för Android-enheter:
 
    >[!CAUTION]
    >
-   >Knappen **[!UICONTROL Test connection]** kontrollerar inte om MID-servern har åtkomst till FCM-servern.
+   >Knappen **[!UICONTROL Test connection]** kontrollerar inte om MID-servern (Middle-sourcing) har åtkomst till FCM-servern.
 
 1. (valfritt) Du kan utöka ett push-meddelandeinnehåll med vissa **[!UICONTROL Application variables]** vid behov. Dessa är helt anpassningsbara och utgör en del av den meddelandenyttolast som skickas till den mobila enheten.
 
@@ -281,7 +281,7 @@ Det här tillägget, som gäller både Campaign Classic v7 och Campaign v8, är 
 
 1. Öppna taggegenskapen som du skapade tidigare.
 1. Bläddra till **Tillägg** från den vänstra navigeringen och öppna fliken **Katalog**. Använd sökfältet för att hitta tillägget **Adobe Campaign Classic**.
-1. Klicka på knappen **Installera** på Campaign Classicen.
+1. Klicka på knappen **Installera** på Campaign Classic-kortet.
 1. Ange inställningar enligt beskrivningen i [dokumentationen för Adobe Experience Platform Mobile SDK](https://developer.adobe.com/client-sdks/documentation/adobe-campaign-classic/){target="_blank"}.
 
-Nu kan du lägga till Campaign i din app, vilket beskrivs i [Adobe Experience Platform Mobile SDK-dokumentationen](https://developer.adobe.com/client-sdks/documentation/adobe-campaign-classic/#add-campaign-classic-to-your-app){target="_blank"}.
+Nu kan du lägga till Campaign i din app, vilket beskrivs i [dokumentationen för Adobe Experience Platform Mobile SDK](https://developer.adobe.com/client-sdks/documentation/adobe-campaign-classic/#add-campaign-classic-to-your-app){target="_blank"}.

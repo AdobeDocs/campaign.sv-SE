@@ -5,10 +5,10 @@ description: Läs mer om arbetsflödesaktiviteten för inkommande SMS
 feature: Workflows, Channels Activity
 role: User
 exl-id: 2c12c45b-4429-4e60-bc96-ff70a95d4c9e
-source-git-commit: 567c2e84433caab708ddb9026dda6f9cb717d032
+source-git-commit: 42241364c1a23ae75d8f0aaf18a2cb1c04ce5b0c
 workflow-type: tm+mt
-source-wordcount: '106'
-ht-degree: 4%
+source-wordcount: '108'
+ht-degree: 6%
 
 ---
 
@@ -24,7 +24,7 @@ Med aktiviteten **Inkommande SMS** kan du hämta och bearbeta textmeddelanden fr
 
 På den första fliken i aktiviteten **Inkommande SMS** kan du ange routningsparametrar för SMS-meddelanden och ange det skript som ska köras när du tar emot varje meddelande. På den andra fliken kan du tilldela aktiviteten ett schema och på den tredje fliken definieras aktivitetens förfallovillkor.
 
-1. **[!UICONTROL SMS routing]**: Välj det externa konto som ska användas för SMS-återställning. Externa konton konfigureras via noden **[!UICONTROL Administration > Platform > External accounts]** i trädet.
+1. **[!UICONTROL SMS routing]**: Välj det externa konto som ska användas för SMS-återställning. Externa konton konfigureras via noden **[!UICONTROL Administration > Platform > External accounts]** i trädet. [Läs mer](../../v8/config/external-accounts.md)
 1. **[!UICONTROL Script]**
 1. **[!UICONTROL Schedule]**
 

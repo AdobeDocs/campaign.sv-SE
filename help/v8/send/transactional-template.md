@@ -5,9 +5,9 @@ feature: Transactional Messaging
 role: User
 level: Beginner, Intermediate
 exl-id: 858c9216-c5a0-4bf9-b4b0-91e403293f73
-source-git-commit: 253f3be945cbfa304fa7342c68f0c73b079e2870
+source-git-commit: 42241364c1a23ae75d8f0aaf18a2cb1c04ce5b0c
 workflow-type: tm+mt
-source-wordcount: '1169'
+source-wordcount: '1170'
 ht-degree: 1%
 
 ---
@@ -82,7 +82,7 @@ Med en dirigerad adress kan du visa en förhandsgranskning av meddelandet, skick
 
 1. Tilldela den en etikett som du enkelt kan välja senare och ange startadressen (e-post eller mobiltelefon beroende på kommunikationskanalen).
 
-1. Ange den externa identifieraren: I det här valfria fältet kan du ange en affärsnyckel (unikt ID, namn + e-post osv.) som är gemensamma för alla program på webbplatsen och som används för att identifiera dina profiler. Om det här fältet också finns i Adobe Campaign marknadsföringsdatabas kan du sedan koppla en händelse till en profil i databasen.
+1. Ange den externa identifieraren: I det här valfria fältet kan du ange en affärsnyckel (unikt ID, namn + e-post osv.) som är gemensam för alla program på webbplatsen och som används för att identifiera dina profiler. Om det här fältet också finns i Adobe Campaign marknadsföringsdatabas kan du sedan koppla en händelse till en profil i databasen.
 
    ![](assets/messagecenter_create_seed_2.png)
 
@@ -161,7 +161,7 @@ Du kan komma åt korrektur i varje mall via fliken **[!UICONTROL Audit]**.
 
 #### Övergång från [!DNL Campaign Classic] v7 {#transition-from-v7}
 
-Om du [övergår från Campaign Classic v7](../start/v7-to-v8.md) går alla leveranser via servern för mellanlagring.
+Om du [går över från Campaign Classic v7](../start/v7-to-v8.md) går alla leveranser via MID-servern (Middle-sourcing).
 
 När du skapar en transaktionsmall för e-postmeddelanden behöver du dock **intern e-postleverans** för att mallen ska kunna användas. Denna routning förhindrar att du skickar korrektur.
 
@@ -171,7 +171,7 @@ Om du vill skicka ett korrektur för din transaktionsmeddelandemall måste du d�
 
 När korrekturen har skickats måste du ändra routningen tillbaka till intern e-postleverans innan du publicerar transaktionsmeddelandemallen.
 
-## Publish the template {#publish-message-template}
+## Publicera mallen {#publish-message-template}
 
 När meddelandemallen <!-- on the control instance--> har skapats kan du publicera den, så att du kan skicka meddelanden som är länkade till realtids- och grupphändelser.
 

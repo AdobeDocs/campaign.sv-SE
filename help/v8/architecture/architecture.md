@@ -5,9 +5,9 @@ feature: Architecture, Deployment
 role: Data Engineer
 level: Beginner
 exl-id: 562b24c3-6bea-447f-b74c-187ab77ae78f
-source-git-commit: 061197048885a30249bd18af7f8b24cb71def742
+source-git-commit: 42241364c1a23ae75d8f0aaf18a2cb1c04ce5b0c
 workflow-type: tm+mt
-source-wordcount: '1035'
+source-wordcount: '1039'
 ht-degree: 1%
 
 ---
@@ -26,7 +26,7 @@ Det finns två typer av miljöer:
 
 Du kan exportera och importera paket från en miljö till en annan.
 
-Läs mer om paket i [Campaign Classic v7-dokumentation](https://experienceleague.adobe.com/docs/campaign-classic/using/getting-started/administration-basics/working-with-data-packages.html){target="_blank"}
+Läs mer om paket i [Campaign Classic v7-dokumentationen](https://experienceleague.adobe.com/docs/campaign-classic/using/getting-started/administration-basics/working-with-data-packages.html){target="_blank"}
 
 ## Distributionsmodeller {#ac-deployment}
 
@@ -34,14 +34,14 @@ Det finns två distributionsmodeller tillgängliga: **Campaign FDA-distribution*
 
 ### Campaign FDA-distribution {#ac-deployment-fda}
 
-I [FDA-distributionen](fda-deployment.md) kan [!DNL Adobe Campaign] v8 anslutas till [!DNL Snowflake] för att komma åt data via funktionen för federerad dataåtkomst: du kan komma åt och bearbeta externa data och information som lagras i din [!DNL Snowflake]-databas utan att ändra strukturen för Adobe Campaign-data. PostgreSQL är den primära databasen, och du kan använda Snowflake som den sekundära databasen för att utöka datamodellen och lagra data i Snowflake. Därefter kan ni köra ETL, segmentering och rapporter på en stor datauppsättning med enastående prestanda.
+I [FDA-distributionen](fda-deployment.md) kan [!DNL Adobe Campaign] v8 anslutas till [!DNL Snowflake] för att komma åt data via funktionen för federerad dataåtkomst: du kan komma åt och bearbeta externa data och information som lagras i din [!DNL Snowflake]-databas utan att ändra strukturen för Adobe Campaign-data. PostgreSQL är den primära databasen, och du kan använda Snowflake som den sekundära databasen för att utöka din datamodell och lagra dina data i Snowflake. Därefter kan ni köra ETL, segmentering och rapporter på en stor datauppsättning med enastående prestanda.
 
 
 ![](assets/P1-P3-architecture.png){zoomable="yes"}
 
 >[!NOTE]
 >
->I den här distributionsmodellen är den sekundära databasen [!DNL Snowflake] endast tillgänglig på begäran. Om du vill att din distribution ska uppdateras med [!DNL Snowflake] kontaktar du Adobe Transition Manager.
+>I den här distributionsmodellen är den sekundära databasen [!DNL Snowflake] endast tillgänglig på begäran. Kontakta din Adobe Transition Manager om du vill uppdatera din distribution med [!DNL Snowflake].
 >
 
 ### Driftsättning av Campaign Enterprise (FFDA) {#ac-deployment-ffda}
@@ -57,11 +57,11 @@ Campaign v8 Enterprise innehåller konceptet **FDA (Full Federated Data Access)*
 
 >[!AVAILABILITY]
 >
->Den här funktionen är endast tillgänglig för kunder med flera MID-instanskonfigurationer.
+>Den här funktionen är endast tillgänglig för kunder med flera MID-instanser (Middle-sourcing).
 
 Beroende på vilket Campaign v8-paket ni har etablerats med ett visst antal mellanleverantörer som ansvarar för att utföra leveranser.
 
-Som standard använder de externa kontona för alla kanaler ett **[!UICONTROL Alternate]**-routningsläge, vilket innebär att en leverans skickas från varje mellaninstans i taget på ett alternerande sätt.
+Som standard använder de externa kontona för alla kanaler ett **[!UICONTROL Alternate]**-routningsläge, vilket innebär att en leverans skickas från varje MID-instans i taget på ett alternerande sätt.
 
 För att få bättre prestanda både i fråga om hastighet och skala kan ni låta leveranser delas upp automatiskt mellan era instanser av mellanprodukter för att kunna levereras snabbare till mottagarna. Den här åtgärden är transparent när leveransen från marknadsinstansen körs: när leveransen har skickats konsolideras alla loggar, innan de skickas tillbaka till marknadsinstansen till ett enda leveransobjekt.
 
@@ -78,7 +78,7 @@ För att göra detta skapas ytterligare externa konton med routningsläget **[!U
 >
 >Delat routningsläge är aktiverat som standard för kontot Delad leverans - e-post. För alla andra kanaler ska du kontakta din Adobe Transition Manager för att aktivera alternativet.
 >
->Som standard är tröskelvärdet för att dela en leverans mellan flera mellanrum 100 kB. Du kan ändra det här värdet i alternativet &quot;NmsDelivery_MultiMidSplitThreshold&quot; på menyn **[!UICONTROL Administration]** / **[!UICONTROL Platform]** / **[!UICONTROL Options]** .
+>Som standard är tröskelvärdet för att dela upp en leverans mellan flera MID-instanser 100 kB. Du kan ändra det här värdet i alternativet &quot;NmsDelivery_MultiMidSplitThreshold&quot; på menyn **[!UICONTROL Administration]** / **[!UICONTROL Platform]** / **[!UICONTROL Options]** .
 
 Om du vill dela upp externa konton som standardkonto för att skicka ut leveranser måste du ändra routningsprovidern i leveransmallarna. Följ dessa steg för att göra detta:
 
@@ -123,8 +123,8 @@ I den här specifika arkitekturen separeras körningscellen från kontrollinstan
 Om du vill använda dessa funktioner loggar Adobe Campaign-användare in på kontrollinstansen för att skapa transaktionsmeddelandemallar, generera meddelandeförhandsvisningen med hjälp av en startlista, visa rapporter och övervaka körningsinstansen/instanserna.
 
 * Enkel körningsinstans
-När du interagerar med en körningsinstans i ett meddelandecenter på Adobe kan ett externt system först hämta en sessionstoken (som förfaller om 24 timmar) genom att anropa sessionsinloggningsmetoden med en tillhandahållen kontoinloggning och ett lösenord.
-Med den sessionToken som tillhandahålls av körningsinstansen som svar på ovanstående anrop kan det externa programmet göra SOAP API-anrop (rtEvents eller batchEvents) för att skicka kommunikation, utan att behöva inkludera inloggning och lösenord för varje SOAP.
+När du interagerar med en körningsinstans i Adobe Message Center kan ett externt system först hämta en sessionstoken (som förfaller om 24 timmar) genom att anropa sessionsinloggningsmetoden med hjälp av en tillhandahållen kontoinloggning och ett lösenord.
+Med den sessionToken som tillhandahålls av körningsinstansen som svar på ovanstående anrop kan det externa programmet göra SOAP API-anrop (rtEvents eller batchEvents) för att skicka kommunikation, utan att behöva ta med kontouppgifterna för inloggning och lösenord i varje SOAP-anrop.
 
 * Flera körningsinstanser
 I en arkitektur för körning av flera celler med flera körningsinstanser bakom en belastningsutjämnare, går den inloggningsmetod som anropas av det externa programmet igenom belastningsutjämnaren: av den anledningen går det inte att använda en tokenbaserad autentisering. En användar-/lösenordsbaserad autentisering krävs.
