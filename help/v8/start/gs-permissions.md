@@ -5,7 +5,7 @@ feature: Permissions
 role: User, Admin
 level: Beginner
 exl-id: 3d61abac-03df-42d3-a950-37e41a5a7756
-source-git-commit: 09db0cc1a14bffefe8d1b8d0d5a06d5b6517a5bb
+source-git-commit: 19f85d4e19f756d8a45ce5364dd0601373128f50
 workflow-type: tm+mt
 source-wordcount: '515'
 ht-degree: 1%
@@ -42,7 +42,7 @@ Du kan börja med de inbyggda produktprofilerna. [Läs mer](manage-permissions.m
 
 ## Om Admin Console{#gs-admin-console}
 
-Adobe Admin Console är en central plats för att hantera berättiganden för Adobe i hela organisationen. Det är endast tillgängligt för produktadministratörer.
+Adobe Admin Console är en central plats för hantering av Adobe-berättiganden i hela organisationen. Det är endast tillgängligt för produktadministratörer.
 
 Använd Admin Console för att lägga till användare, skapa och tilldela produktprofiler (som är grupper med användarroller).
 
@@ -52,7 +52,7 @@ Lär dig hur du lägger till användare på [den här sidan](manage-permissions.
 
 Produktprofiler är grupper av produkter och tjänster som du kan tilldela användare. I Adobe Experience Cloud baseras behörigheter på en produkts profil, inte på användaren. Du kan dock delegera administrativa behörigheter till specifika användare.
 
-I Admin Console är varje Adobe Experience Cloud **produktprofil** för Campaign kopplad till en **operatorgrupp** i Campaign-klientkonsolen.
+I Admin Console kopplas varje **produktprofil** från Adobe Experience Cloud för Campaign till en **operatorgrupp** i Campaign-klientkonsolen.
 
 Lär dig hur du skapar och tilldelar produktprofiler på [den här sidan](manage-permissions.md#create-a-product-profile).
 
