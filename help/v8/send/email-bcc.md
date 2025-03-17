@@ -5,7 +5,7 @@ feature: Email
 role: User
 level: Beginner
 exl-id: 35702b81-1984-4a62-8f00-c2bc32ab2b42
-source-git-commit: 1cb92c6075e9478b641b11eae52372a909258cd3
+source-git-commit: 286af4739c33b79c74b3cb7fa90ad167670a4b4c
 workflow-type: tm+mt
 source-wordcount: '370'
 ht-degree: 1%
@@ -33,7 +33,7 @@ Arkiveringsmålet är valfri e-postadress som är osynlig för leveransmottagarn
 
 >[!NOTE]
 >
->Som användare av hanterade Cloud Service kan [kontakta Adobe](../start/campaign-faq.md#support){target="_blank"} för att kommunicera e-postadressen för den grundläggande kopian som ska användas för arkivering.
+>Som användare av hanterade molntjänster [kontaktar du Adobe](../start/campaign-faq.md#support){target="_blank"} för att kommunicera e-postadressen för den grundläggande kopian som ska användas för arkivering.
 
 ## Aktivera BCC för e-post {#enable-bcc}
 
@@ -42,7 +42,7 @@ Om du vill aktivera Kontroll av webbläsarkompatibilitet för en viss [leveransm
 1. Gå till mappen med leveransmallar i Campaign Explorer. Som standard lagras leveransmallar i mappen **[!UICONTROL Resources]** > **[!UICONTROL Templates]** > **[!UICONTROL Delivery templates]**.
 1. Redigera leveransmallen för att uppdatera med BCC.
 1. Klicka på knappen **[!UICONTROL Properties]**.
-1. Markera alternativet **[!UICONTROL Email BCC]** på fliken **[!UICONTROL Delivery]**.
+1. Markera alternativet **[!UICONTROL Email BCC with enhanced Momentum]** på fliken **[!UICONTROL Delivery]**.
 
    ![](assets/email-bcc.png)
 
