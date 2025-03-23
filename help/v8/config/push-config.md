@@ -1,14 +1,13 @@
 ---
 title: Integrera Campaign SDK:er med er app
 description: Lär dig hur du integrerar Campaign Android och iOS SDK med din app
-version: v8
 feature: Push
 role: Admin, Developer
 level: Intermediate
 hide: true
 hidefromtoc: true
 exl-id: 31c13d7e-55d1-4fbb-82e0-5779a17d65ac
-source-git-commit: 69ff08567f3a0ab827a118a089495fc75bb550c5
+source-git-commit: a288845e1f092d293d679fa9aaaf6d609de85230
 workflow-type: tm+mt
 source-wordcount: '1230'
 ht-degree: 0%
@@ -31,7 +30,7 @@ Som kampanjadministratör kan du hämta SDK:er för kampanjer från [Experience 
 
 ## Deklarera integreringsinställningar {#declaring-integration-settings}
 
-För att integrera Campaign SDK i mobilappen måste den funktionella administratören lämna följande information till utvecklaren:
+För att integrera Campaign SDK i mobilappen måste den funktionella administratören ge utvecklaren följande information:
 
 * **En integreringsnyckel**: som gör att Adobe Campaign-plattformen kan identifiera mobilprogrammet.
 
@@ -87,7 +86,7 @@ Lär dig hur du implementerar FCM i ditt program i [Google Documentation](https:
 
 1. **Initiera SDK**
 
-   Innan du använder Android SDK måste du initiera det. SDK-initieringen kan göras i funktionen `onCreate` för en aktivitet.
+   Innan du använder Android SDK måste du initiera den. SDK-initieringen kan göras i funktionen `onCreate` för en aktivitet.
 
    ```sql
    /** Called when the activity is first created. */
@@ -499,7 +498,7 @@ Lär dig hur du implementerar FCM i ditt program i [Google Documentation](https:
    För meddelanden måste spårningsmottagningen konfigureras på två nivåer:
 
    * `onMessageReceived` (programmet finns inte i bakgrunden): implementeringen har gjorts i föregående avsnitt
-   * `onCreate` av startaktiviteten (eller målaktiviteten om `click_action`funktionen används). (Programmet är inte i bakgrunden).
+   * `onCreate` av startaktiviteten (eller målaktiviteten om `click_action`function används) (programmet är inte i bakgrunden).
 
    Det måste göras samtidigt som du spårar genom att öppna/klicka.
 
