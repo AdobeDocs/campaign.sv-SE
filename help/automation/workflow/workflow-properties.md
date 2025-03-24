@@ -4,10 +4,10 @@ title: Egenskaper för arbetsflöde
 description: Läs mer om egenskaper för kampanjarbetsflöde
 feature: Workflows
 exl-id: 7fef434e-f6bd-46a4-9ec2-0182f081c928
-source-git-commit: c6b4f4cee6f033218c77a495c39885e231c06126
+source-git-commit: 13723ebda8daf57c6885a05a2d583c0c38c86441
 workflow-type: tm+mt
-source-wordcount: '628'
-ht-degree: 0%
+source-wordcount: '640'
+ht-degree: 1%
 
 ---
 
@@ -59,9 +59,11 @@ Det här avsnittet visas bara i kampanjarbetsflöden.
 
   >[!NOTE]
   >
-  >Det här alternativet är avsett för avancerade användare och bör endast aktiveras för **tekniska arbetsflöden**.
+  >* Det här alternativet är tillgängligt från och med v8.6.4.
   >
-  >Den är aktiverad som standard för centraliserade replikeringsarbetsflöden som är tillgängliga med paketet `fullFdaMkt`.
+  >* Det här alternativet är avsett för avancerade användare och bör endast aktiveras för **tekniska arbetsflöden**.
+  >
+  >* Det här alternativet är aktiverat som standard för centraliserade replikeringsarbetsflöden som är tillgängliga i en [Enterprise (FFDA)-distribution](enterprise-deployment.md). [Läs mer](../../v8/architecture/replication.md)
 
 ### Felhantering {#error-management}
 
