@@ -1,6 +1,6 @@
 ---
-title: Övergång från Campaign Classic v7 till kampanj v8
-description: Lär dig om skillnaderna mellan Campaign Classic v7 och Campaign v8.
+title: Övergång från Campaign Classic v7 till Campaign v8
+description: Lär mer om skillnaderna mellan Campaign Classic v7 och Campaign v8.
 feature: Overview
 role: User
 level: Beginner
@@ -18,16 +18,16 @@ Som tidigare [!DNL Campaign Classic] v7-användare bör du inte förvänta dig n
 
 >[!AVAILABILITY]
 >
->* För närvarande är Campaign v8 **endast** tillgängligt som en hanterad Cloud Service och kan inte distribueras på en lokal eller hybridmiljö. [Läs mer](#cloud-services)
+>* För närvarande är Campaign v8 **endast** tillgängligt som hanterad Cloud Service och kan inte distribueras på en lokal eller hybridmiljö. [Läs mer](#cloud-services)
 >
 >* Automatisk migrering från en befintlig Campaign Classic v7-miljö är inte tillgänglig än.
 
 
-## Hanterade Cloud Service{#cloud-services}
+## Hanterade molntjänster{#cloud-services}
 
-Adobe Campaign v8 är tillgänglig som en **hanterad Cloud Service**.
+Adobe Campaign v8 finns som **hanterad Cloud Service**.
 
-Adobe Campaign Managed Cloud Services har en plattform för hanterade Cloud Service för att utforma kundupplevelser i flera kanaler och erbjuder en miljö för visuell kampanjsamordning, interaktionshantering i realtid och kanalövergripande körning. Läs mer om Campaign Managed-Cloud Service på [produktbeskrivningssidan](https://helpx.adobe.com/se/legal/product-descriptions/adobe-campaign-managed-cloud-services.html){target="_blank"}.
+Adobe Campaign Managed Cloud Services tillhandahåller en plattform för hanterade molntjänster för att utforma kundupplevelser över flera kanaler och erbjuder en miljö för visuell kampanjsamordning, interaktionshantering i realtid och kanalövergripande körning. Läs mer om Campaign Managed Cloud Services på [produktbeskrivningssidan](https://helpx.adobe.com/se/legal/product-descriptions/adobe-campaign-managed-cloud-services.html){target="_blank"}.
 
 Det nya erbjudandet kombinerar förstklassiga tjänster med proaktiv tillsyn och snabb varning, med fokus på tre områden:
 
@@ -64,7 +64,7 @@ Läs mer om arkitekturen [!DNL Campaign] v8 i [den här sidan](../architecture/a
 
 ## Använd din Adobe ID för att ansluta till Campaign{#adobe-id}
 
-Kampanjanvändare ansluter bara via sina Adobe ID. Samma Adobe ID används för att behålla alla dina Adobe-planer och produkter som är kopplade till ett enda konto för alla Adobe Experience Cloud-lösningar.
+Kampanjanvändare ansluter bara via sina Adobe ID. Samma Adobe ID används för att behålla alla Adobe-planer och -produkter som är kopplade till ett enda konto för alla Adobe Experience Cloud-lösningar.
 
 Lär dig hur du ansluter till [!DNL Campaign] på [den här sidan](connect.md).
 
@@ -85,10 +85,10 @@ Observera att vissa funktioner inte är tillgängliga i samband med en [Enterpri
 
 ## Funktioner som inte stöds{#gs-removed}
 
-Vissa historikfunktioner för Campaign Classic v7 stöds inte längre i Campaign v8, till exempel:
+Vissa tidigare Campaign Classic v7-funktioner stöds inte längre i Campaign v8, till exempel:
 
 * Social marknadsföring med Facebook
-* ACS Connector (Prime offer)
+* ACS Connector (Prime-erbjudande)
 * Integrering med LDAP
 * Logga in med användare/lösenord
 * Hybrid/lokala distributionsmodeller
