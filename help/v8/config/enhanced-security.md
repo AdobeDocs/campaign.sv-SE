@@ -5,9 +5,9 @@ feature: Configuration
 role: Developer
 level: Experienced
 exl-id: 7c586836-82e1-45fb-9c28-18361572e1fa
-source-git-commit: c225b3ee5b356d98d6a5e3bb9bd1cb0feae0300a
+source-git-commit: 24b252373923a9724743650b13a69d4f2c8dcd24
 workflow-type: tm+mt
-source-wordcount: '738'
+source-wordcount: '737'
 ht-degree: 2%
 
 ---
@@ -27,13 +27,13 @@ Dessa funktioner beskrivs nedan.
 
 Vissa skyddsförslag och begränsningar som rör Förbättrade säkerhetsfunktioner listas på den här sidan. Dessutom måste du se till att alla dina fall av säker CMK-integrering/säker VPN-tunneltrafik fungerar.
 
-När dessa funktioner är implementerade kan Adobe övervaka:
+När dessa funktioner är implementerade övervakar Adobe:
 
 * Din instanstillgänglighet och fortsätt med varningar om nyckeln inte är tillgänglig.
 
 * VPN-tunnlarna och fortsätt med varningar om något problem uppstår.
 
-## Säker, kundhanterad nyckelintegrering {#secure-cmk-integration}
+## Säker integrering av kundhanterad nyckel {#secure-cmk-integration}
 
 Med integreringen **Secure Customer-Managed Key (CMK)** kan du kryptera vilande data med din egen nyckel via ditt Amazon Web Services-konto (AWS).
 
@@ -49,11 +49,11 @@ Följ stegen nedan för att aktivera CMK-integrering med Campaign:
 
 1. Generera en nyckel med automatisk rotation när du använder AWS Key Management Service (KMS). [Lär dig hur](https://docs.aws.amazon.com/kms/latest/developerguide/create-keys.html){target="_blank"}.
 
-1. Använd den policy du fått från Adobe på ditt AWS-konto för att ge åtkomst till dina resurser. [Läs mer](https://docs.aws.amazon.com/kms/latest/developerguide/key-policy-services.html){target="_blank"}. <!--link TBC-->
+1. Använd den policy du fått av Adobe på ditt AWS-konto för att ge åtkomst till dina resurser. [Läs mer](https://docs.aws.amazon.com/kms/latest/developerguide/key-policy-services.html){target="_blank"}. <!--link TBC-->
 
-1. Dela ditt [Amazon-resursnamn (nyckel ARN)](https://docs.aws.amazon.com/kms/latest/developerguide/find-cmk-id-arn.html){target="_blank"} med [!DNL Adobe Campaign]. Kontakta din Adobe-representant för att göra detta. <!--or Adobe transition manager?-->
+1. Dela ditt [Amazon-resursnamn (nyckel ARN)](https://docs.aws.amazon.com/kms/latest/developerguide/find-cmk-id-arn.html){target="_blank"} med [!DNL Adobe Campaign]. Kontakta Adobe om du vill göra det. <!--or Adobe transition manager?-->
 
-1. Skapa och testa Amazon EventBridge-reglerna för att aktivera övervakning av dina tangenter med Adobe. &#x200B; [Läs mer](https://docs.aws.amazon.com/eventbridge/latest/userguide/eb-rules.html){target="_blank"}.
+1. Skapa och testa Amazon EventBridge-reglerna för att aktivera övervakning av dina nycklar i Adobe. &#x200B; [Läs mer](https://docs.aws.amazon.com/eventbridge/latest/userguide/eb-rules.html){target="_blank"}.
 
 
 ### Skyddsritningar och begränsningar {#cmk-callouts}
@@ -100,7 +100,7 @@ Tre användningsområden stöds:
 
 Följ riktlinjerna nedan för att säkerställa att funktionen används på rätt sätt:
 
-* Konfigurera VPN på din sida baserat på VPN-konfigurationen på Adobe.
+* Konfigurera VPN på din sida baserat på VPN-konfigurationen på Adobe-sidan.
 
 * Håll båda tunnlarna uppe för hög tillgänglighet.
 
