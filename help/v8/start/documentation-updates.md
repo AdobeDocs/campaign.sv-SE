@@ -6,16 +6,20 @@ role: User
 level: Beginner
 hidefromtoc: true
 exl-id: 3c1cae6e-0a75-4f18-b1ee-2d5fa23b4251
-source-git-commit: fdd0e534feb80e3acaec0a68238ac4ac596980e2
+source-git-commit: ba8cf031db178f6575104858340e16d4e7bd6a31
 workflow-type: tm+mt
-source-wordcount: '246'
-ht-degree: 29%
+source-wordcount: '275'
+ht-degree: 27%
 
 ---
 
 # Dokumentationsuppdateringar {#latest-updates}
 
 På den här sidan visas alla de senaste uppdateringarna i [!DNL Campaign] v8-dokumentationen (konsolen).
+
+## April 2025 {#april-2025}
+
+En god rutin för att starta om arbetsflödet har lagts till efter ändring av den schemalagda tiden för aktiviteten **[!UICONTROL Scheduler]** för att säkerställa att den körs enligt det uppdaterade schemat. [Läs mer](../../automation/workflow/scheduler.md)
 
 ## Januari 2025 {#january-2025}
 

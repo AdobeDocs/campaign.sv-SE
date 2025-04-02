@@ -5,10 +5,10 @@ description: Läs mer om arbetsflödesaktiviteten i schemaläggaren
 feature: Workflows
 role: User
 exl-id: ed70d2d3-251e-4ee8-84d4-73ad03e8dd35
-source-git-commit: 567c2e84433caab708ddb9026dda6f9cb717d032
+source-git-commit: ba8cf031db178f6575104858340e16d4e7bd6a31
 workflow-type: tm+mt
-source-wordcount: '333'
-ht-degree: 10%
+source-wordcount: '393'
+ht-degree: 8%
 
 ---
 
@@ -22,15 +22,15 @@ ht-degree: 10%
 
 ## Bästa praxis {#best-practices}
 
-* Schemalägg inte ett arbetsflöde så att det körs mer än var 15:e minut eftersom det kan påverka den totala systemprestandan negativt och skapa block i databasen.
+**Starta om arbetsflödet efter ändring av tidsplanering** - När du ändrar den schemalagda tiden för aktiviteten **[!UICONTROL Scheduler]** är det viktigt att starta om arbetsflödet. Detta garanterar att arbetsflödet körs vid de uppdaterade tidpunkterna. Utan att starta om fortsätter arbetsflödet att köras enligt det gamla schemat.
 
-* Använd aldrig mer än en **[!UICONTROL Scheduler]**-aktivitet per gren i ett arbetsflöde. Se [Använda aktiviteter](workflow-best-practices.md#using-activities).
+**Begränsa schemaläggarfrekvens** - Undvik schemaläggning av arbetsflöden så att de körs oftare än var femtonde minut. Om du kör dem oftare kan systemprestanda försämras och databasbelastningen ökar.
 
-* Användning av en schemaläggaraktivitet kan leda till att ett arbetsflöde körs flera gånger samtidigt. Du kan till exempel ha en schemaläggare som utlöser arbetsflödeskörningen varje timme, men ibland tar körningen av hela arbetsflödet mer än en timme.
+**Använd en schemaläggare per gren** - Varje gren i ditt arbetsflöde ska bara ha en **[!UICONTROL Scheduler]**-aktivitet. Mer information om de effektivaste strategierna för att använda aktiviteter i arbetsflöden finns på [sidan ](workflow-best-practices.md#using-activities) Arbetsflöden för bästa praxis.
 
-  Du kanske vill hoppa över körningen om arbetsflödet redan körs. Mer information om hur du förhindrar samtidig körning av ett arbetsflöde finns på [den här sidan](monitor-workflow-execution.md#preventing-simultaneous-multiple-executions).
+**Förhindra samtidig körning av arbetsflöden** - Om ett arbetsflöde aktiveras av en schemaläggare bör du tänka på att flera instanser av arbetsflödet kan köras samtidigt. Om en schemaläggare till exempel utlöser arbetsflödet varje timme, men arbetsflödeskörningen tar mer än en timme, kan det resultera i överlappande körningar. Undvik detta genom att konfigurera kontroller för att förhindra flera samtidiga körningar. [Lär dig hur du förhindrar samtidig körning av flera arbetsflöden](monitor-workflow-execution.md#preventing-simultaneous-multiple-executions).
 
-* Observera att övergången kan aktiveras flera timmar senare om arbetsflödet utförde en långvarig uppgift, till exempel en import, eller om wfserver-modulen stoppades en tid. I det här fallet kan det vara nödvändigt att begränsa körningen av den uppgift som har aktiverats av schemaläggaren till ett visst tidsintervall.
+**Konto för fördröjda övergångar** - Övergångar som utlöses av schemaläggaren kan fördröjas om arbetsflödet kör långvariga aktiviteter (som importer) eller om wfserver-modulen har stoppats tillfälligt. Begränsa aktiveringstiderna för schemaläggaren för att se till att aktiviteterna körs inom ett angivet tidsfönster.
 
 ## Konfigurera aktiviteten Schemaläggaren {#configuring-scheduler-activity}
 
