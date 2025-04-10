@@ -3,10 +3,10 @@ title: Versionsinformation om Campaign v8
 description: Senaste Campaign v8-versionen
 feature: Release Notes
 exl-id: 7cf8111d-9f3a-46a4-813a-d4e43a1d1471
-source-git-commit: c6b4f4cee6f033218c77a495c39885e231c06126
+source-git-commit: ff874a8e06303625b4c96f49fdf4f303b50fb908
 workflow-type: tm+mt
-source-wordcount: '566'
-ht-degree: 1%
+source-wordcount: '597'
+ht-degree: 5%
 
 ---
 
@@ -18,34 +18,33 @@ På den här sidan visas nya funktioner, förbättringar och korrigeringar som i
 
 **På den här sidan**
 
-* Campaign v8.6 - [Version 8.6.4](#release-8-6-4)
-* Campaign v8.7 - [Version 8.7.3](#release-8-7-3)
+* [Version 8.7.4](#release-8-7-4)
+* [Version 8.7.3](#release-8-7-3)
+* [Version 8.6.4](#release-8-6-4)
 
 >[!ENDSHADEBOX]
 
+## Version 8.7.4 {#release-8-7-4}
 
-## Version 8.7.3 {#release-8-7-3}
-
-_14 feb 2025_
+_10 april 2025_
 
 >[!AVAILABILITY]
 >
 >Den här versionen är i **begränsad tillgänglighet** (LA). Den är begränsad till kunder som migrerar **från Adobe Campaign Standard till Adobe Campaign v8** och kan inte distribueras i någon annan miljö.
 >
->Som en Campaign Standard-användare som går över till Campaign v8 kan du läsa mer om den här övergången i [dokumentationen för webbanvändargränssnittet för Campaign v8](https://experienceleague.adobe.com/en/docs/campaign-web/v8/start/acs-migration){target="_blank"}.
+>Som Campaign Standard-användare som övergår till Campaign v8 kan du läsa mer om den här övergången i [dokumentationen för webbanvändargränssnittet för Campaign v8](https://experienceleague.adobe.com/en/docs/campaign-web/v8/start/acs-migration).
 
-### Nya funktioner {#features-8-7-3}
+### Nya funktioner {#features-8-7-4}
 
-* **Dynamisk rapportering för transaktionsmeddelanden** - Nu kan du övervaka dina transaktionsmeddelanden i gränssnittet för dynamisk rapportering. Dessa rapporter gör det möjligt för marknadsföraren att visa alla rapporteringsmått och dimensioner för transaktionsmeddelanden, uppdelning av leveranser som skickas via en mall i realtid. [Läs mer](https://experienceleague.adobe.com/en/docs/experience-cloud/campaign/reporting/get-started-reporting){target="_blank"}
+* **Stöd för SMS REST API** - Transactional Messaging REST API är nu tillgängligt för SMS-kanalen. När både e-post och mobilePhone finns i nyttolasten kan du använda fältet&quot;önskekanal&quot; för att ange kanalen. Om det inte anges används e-post som standard, såvida inte önskadChannel uttryckligen begär SMS.
 
-* **REST API:er för transaktionsmeddelanden** - händelsebaserade transaktions-API:er är nu tillgängliga för e-postmeddelanden. [Läs mer](https://experienceleague.adobe.com/en/docs/experience-cloud/campaign/apis/managing-transactional-messages){target="_blank"}
+* **Flerspråkiga leveranser** - Från och med Campaign-webbanvändargränssnittet i april kan du skicka flera e-postleveranser på olika språk och få tillgång till relaterade dynamiska rapporter. Den här funktionen är bara tillgänglig i Adobe Campaign webbanvändargränssnitt i slutet av april och kräver en serveruppdatering till Campaign v8.7.4.
 
-### Korrigeringar {#fixes-8-7-3}
+### Korrigeringar {#fixes-8-7-4}
 
 Följande problem har åtgärdats i den här versionen:
 
-NEO-79373, NEO-81908, NEO-83081.
-
+NEO-80245, NEO-83559
 
 ## Version 8.6.4 {#release-8-6-4}
 
@@ -60,7 +59,7 @@ _15 januari 2025_
 
 ### Säkerhetsförbättringar {#security-8-6-4}
 
-Anslutningen till Adobe lösningar och appar via det externa **[!UICONTROL Adobe Experience Cloud]**-kontot har uppdaterats för att stärka säkerheten.
+Anslutningen till lösningar och appar från Adobe via det externa **[!UICONTROL Adobe Experience Cloud]**-kontot har uppdaterats för att stärka säkerheten.
 
 <!--
 ### Connection to Campaign {#ims-8-6-4}
