@@ -5,9 +5,9 @@ description: Läs mer om arbetsflödesaktiviteten Fråga
 feature: Workflows, Targeting Activity, Query Editor
 role: User, Data Engineer
 exl-id: 717e4f7c-3a8e-4930-9a06-b7412d6e1675
-source-git-commit: c3f4ad0b56dd45d19eebaa4d2f06551c8fecac1d
+source-git-commit: cc0d1b7f662d39443ef82412d6df671af4ac8d97
 workflow-type: tm+mt
-source-wordcount: '1553'
+source-wordcount: '1606'
 ht-degree: 0%
 
 ---
@@ -20,6 +20,11 @@ ht-degree: 0%
 
 Med en fråga kan du välja ett mål enligt villkor. Du kan koppla en segmentkod till frågeresultatet och infoga ytterligare data i den.
 Mer information om frågeexempel finns i [det här avsnittet](querying-recipient-table.md).
+
+>[!NOTE]
+>
+>Adobe Campaign Web UI har en kraftfull frågemodellerare som förenklar filtreringen av databaser för att välja specifika mål baserat på olika kriterier, vilket gör att du enklare kan skapa och hantera frågor. Mer information om frågemodelleraren för webbgränssnitt finns i [Adobe Campaign Web UI-dokumentationen](https://experienceleague.adobe.com/en/docs/campaign-web/v8/query-database/query-modeler-overview){target=_blank}.
+
 
 ![](assets/query-activity.png){width="70%" align="center" zoomable="yes"}
 
@@ -69,11 +74,11 @@ Börja med att välja vilken typ av data som ska läggas till:
 * Välj **[!UICONTROL External data]** om du vill lägga till data från en extern databas. Det här alternativet är bara tillgängligt om du har köpt alternativet **Federated Data Access**. Mer information finns i [Åtkomst till en extern databas (FDA)](accessing-an-external-database-fda.md).
 * Välj alternativet **[!UICONTROL An offer proposition]** om du vill lägga till en uppsättning kolumner så att du kan lagra det bästa erbjudande som genereras av erbjudandemotorn. Det här alternativet är bara tillgängligt om du har köpt modulen **Interaktion**.
 
-Om ingen valfri modul är installerad på plattformen visas inte det här steget. Du kommer att gå direkt till nästa steg.
+Om ingen valfri modul är installerad på plattformen visas inte detta steg. Du kommer att tas direkt till nästa steg.
 
 Så här lägger du till data från Adobe Campaign-databasen:
 
-1. Välj den typ av data som du vill lägga till. Detta kan vara data som tillhör filterdimensionen eller data som lagras i länkade tabeller.
+1. Välj vilken typ av data du vill lägga till. Detta kan vara data som tillhör filterdimensionen eller data som lagras i länkade tabeller.
 
    ![](assets/query_add_columns.png){width="70%" align="center" zoomable="yes"}
 
@@ -86,7 +91,7 @@ Så här lägger du till data från Adobe Campaign-databasen:
    * Ett fält som beräknas baserat på data från målpopulationen eller ett aggregat (antal väntande inköp under den senaste månaden, genomsnittligt belopp för ett kvitto osv.). Gå till exempel till [Välj data](targeting-workflows.md#selecting-data).
    * Ett nytt fält som skapats med knappen **[!UICONTROL Add]** till höger om listan med utdatakolumner.
 
-     Du kan också lägga till en samling information, till exempel en lista över kontrakt, de fem senaste leveranserna osv. Samlingar sammanfaller med fält som kan ha flera värden för samma profil (1-N-relation). Mer information finns i [Redigera ytterligare data](targeting-workflows.md#editing-additional-data).
+     Du kan också lägga till en samling information, till exempel en lista över kontrakt, de senaste 5 leveranserna etc. Samlingar sammanfaller med fält som kan ha flera värden för samma profil (1-N-relation). Mer information finns i [Redigera ytterligare data](targeting-workflows.md#editing-additional-data).
 
 Så här lägger du till en samling information som är länkad till en målpopulation:
 
@@ -103,10 +108,10 @@ Så här lägger du till en samling information som är länkad till en målpopu
      >
      >I det här läget optimeras den SQL-fråga som genereras tack vare en direkt överlappning av samlingselementen.
      >
-     >Om det ursprungliga villkoret inte uppfylls kan resultatet bli bristfälligt (saknade eller överlappande linjer).
+     >Om det ursprungliga villkoret inte uppfylls kan resultatet bli felaktigt (saknade eller överlappande linjer).
 
    * Om du väljer att återställa flera rader (**[!UICONTROL Limit the line count]**) kan du ange hur många rader som ska samlas in.
-   * Om de insamlade kolumnerna innehåller aggregat, t.ex. antalet fel som deklarerats, genomsnittliga utgifter på en webbplats, osv. du kan använda värdet **[!UICONTROL Aggregates]**.
+   * Om de insamlade kolumnerna innehåller aggregeringar, till exempel antalet deklarerade fel, genomsnittliga utgifter för en webbplats osv. Du kan använda **[!UICONTROL Aggregates]** värdet.
 
    ![](assets/query_add_collection_param.png){width="70%" align="center" zoomable="yes"}
 
@@ -124,7 +129,7 @@ I följande exempel syftar frågan till att identifiera män mellan 18 och 30 å
 >
 >Ytterligare frågeexempel presenteras i [det här avsnittet](querying-recipient-table.md).
 
-1. Ge frågan ett namn och välj sedan länken **[!UICONTROL Edit query...]**.
+1. Namnge frågan och välj sedan länken **[!UICONTROL Edit query...]** .
 1. Välj **[!UICONTROL Filtering conditions]** i listan över tillgängliga filtertyper.
 1. Ange olika villkor för det föreslagna målet. Här kombineras villkor med alternativet AND. För att kunna inkluderas i urvalet måste mottagarna uppfylla följande fyra villkor:
 
@@ -179,8 +184,8 @@ I avsnittet nedan beskrivs de effektivaste strategierna för att optimera frågo
 
 ### Funktioner {#functions}
 
-* Var uppmärksam på funktioner som `Lower(...)`. När funktionen Nedre används används inte indexvärdet.
-* Kontrollera frågor med &quot;gilla&quot;-instruktionen eller &quot;övre&quot; eller &quot;nedre&quot; instruktionerna noggrant. Använd &quot;Upper&quot; på användarindata, inte i databasfältet.
+* Akta dig för funktioner som `Lower(...)`. När funktionen Lower används används inte Index.
+* Kontrollera frågor med hjälp av &quot;gilla&quot;-instruktionen eller de &quot;övre&quot; eller &quot;nedre&quot; instruktionerna noggrant. Använd &quot;Övre&quot; på användarindata, inte på databasfältet.
 
 ### Filtrera dimensioner {#filtering-dimensions}
 
@@ -210,13 +215,13 @@ Mer information om filtreringsdimensioner finns i [det här avsnittet](build-a-w
    * Operativsystem,
    * Version,
    * Data,
-   * Program,
+   * Tillämpning
    * Volymer.
 
   >[!NOTE]
   >
   >En funktion som fungerar i en utvecklingsmiljö kanske inte fungerar i en produktionsmiljö där data kan vara annorlunda. Försök att identifiera de viktigaste skillnaderna för att förutse risker och förbereda lösningar.
 
-* Gör konfigurationer som matchar målvolymerna. Stora volymer kräver särskilda konfigurationer. En konfiguration som fungerade för 100 000 mottagare kanske inte fungerar för 10 000 000 mottagare.
+* Gör konfigurationer som matchar målvolymerna. Stora volymer kräver specifika konfigurationer. En konfiguration som fungerade för 100 000 mottagare kanske inte fungerar för 10 000 000 mottagare.
 
   Tänk på hur systemet skalförändras när det publiceras. Bara för att något fungerar i liten skala innebär det inte att det är lämpligt med större volymer. Testerna bör utföras med liknande volymer som produktionsvolymen. Du bör också utvärdera effekten av volymförändringar (antal anrop, databasens storlek) vid högsta antal timmar, högsta antal dagar och under projektets hela livstid.
