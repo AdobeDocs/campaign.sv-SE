@@ -4,9 +4,9 @@ title: SQL-kod och JavaScript-kod
 description: Läs mer om arbetsflödesaktiviteter för SQL- och JavaScript-koder
 feature: Workflows
 Role: User
-Level: Experienced
+level: Experienced
 exl-id: 8c385847-a320-4cd9-9048-2bf9daf2ee07
-source-git-commit: 1a0b473b005449be7c846225e75a227f6d877c88
+source-git-commit: 64b24d7a72c2cdee841ea301ca46b0204f1fccaa
 workflow-type: tm+mt
 source-wordcount: '270'
 ht-degree: 7%

@@ -4,9 +4,9 @@ title: SQL-datahantering
 description: Läs mer om arbetsflödesaktiviteten för SQL Data Management
 feature: Workflows
 Role: User
-Level: Experienced
+level: Experienced
 exl-id: a1e08d57-0387-4802-b447-f6d9ad87072a
-source-git-commit: 1a0b473b005449be7c846225e75a227f6d877c88
+source-git-commit: 64b24d7a72c2cdee841ea301ca46b0204f1fccaa
 workflow-type: tm+mt
 source-wordcount: '366'
 ht-degree: 1%
@@ -38,7 +38,7 @@ Innan du konfigurerar aktiviteten bör du kontrollera att följande krav är upp
 
    >[!CAUTION]
    >
-   >Det är SQL-skriptets skrivares ansvar att se till att SQL-skriptet fungerar och att dess referenser (fältnamn, etc.) är i enlighet med utgående schema.
+   >Det är SQL-skriptskrivarens ansvar att se till att SQL-skriptet fungerar och att dess referenser (fältnamn, osv.) följer det utgående schemat.
 
    Om du vill läsa in en befintlig SQL-kod väljer du alternativet **[!UICONTROL The SQL script is contained in an entity stored in the database]**. SQL-skript måste skapas och lagras på menyn **[!UICONTROL Administration]** / **[!UICONTROL Configuration]** / **[!UICONTROL SQL scripts]** .
 
