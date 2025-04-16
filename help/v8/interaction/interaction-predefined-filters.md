@@ -5,9 +5,9 @@ feature: Interaction, Offers
 role: User, Admin
 level: Beginner
 exl-id: 092262c7-768c-4e86-9b2b-c52516f6a030
-source-git-commit: 567c2e84433caab708ddb9026dda6f9cb717d032
+source-git-commit: c748654c76c6b6ce8ad4d4886a1f73004a41e7ac
 workflow-type: tm+mt
-source-wordcount: '102'
+source-wordcount: '149'
 ht-degree: 0%
 
 ---
@@ -15,6 +15,11 @@ ht-degree: 0%
 # Skapa fördefinierade filter{#creating-pre-defined-filters}
 
 Skapa fördefinierade filter för att definiera berättiganderegler för målpopulationen som enkelt kan återanvändas när erbjudanden skapas. De är specifika för varje miljö och tar hänsyn till erbjudandeparametrarna.
+
+>[!NOTE]
+>
+>Adobe Campaign webbgränssnitt är ett användarvänligt gränssnitt där du enkelt kan hantera och anpassa fördefinierade filter efter just dina behov. Skapa en gång och spara för framtida bruk. Mer information om fördefinierade filter för webbgränssnitt finns i [Adobe Campaign Web UI-dokumentationen](https://experienceleague.adobe.com/en/docs/campaign-web/v8/start/predefined-filters){target=_blank}.
+
 
 Om du vill skapa ett fördefinierat filter använder du följande process:
 
