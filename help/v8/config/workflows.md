@@ -5,9 +5,9 @@ feature: Workflows
 role: User, Admin
 level: Beginner
 exl-id: 0be1c5f5-f07d-46dc-bebc-5eb50f466547
-source-git-commit: 5ab598d904bf900bcb4c01680e1b4730881ff8a5
+source-git-commit: 8e1401ef0aada30d941905936b45c6c1819c83a7
 workflow-type: tm+mt
-source-wordcount: '1307'
+source-wordcount: '1344'
 ht-degree: 0%
 
 ---
@@ -25,6 +25,11 @@ Du kan konfigurera:
 * Automatisk rapportsändning
 * Utlösta händelser
 
+>[!NOTE]
+>
+>Adobe Campaign Web UI har en omdesignad arbetsyta för arbetsflöden som gör det möjligt att skapa mer dynamiska och personaliserade kundresor. Mer information om arbetsflöden för webbgränssnitt finns i [Adobe Campaign webbgränssnittsdokumentation](https://experienceleague.adobe.com/en/docs/campaign-web/v8/wf/gs-workflows){target=_blank}.
+
+
 ## Arbetsflöden för design och användning {#gs-ac-wf}
 
 Använd Adobe Campaign arbetsflöden för att förbättra hastigheten och skalan på alla delar av era marknadsföringskampanjer, från att skapa segment och förbereda meddelanden till leverans.
@@ -35,11 +40,11 @@ Läs mer om arbetsflöden, användargränssnitt och körning på dessa sidor:
 
 * [Kom igång med arbetsflöden](https://experienceleague.adobe.com/docs/campaign/automation/workflows/introduction/about-workflows.html){target="_blank"}
 
-* [Bästa praxis för arbetsflöden](https://experienceleague.adobe.com/docs/campaign/automation/workflows/introduction/workflow-best-practices.html){target="_blank"}
+* [God praxis för arbetsflöden](https://experienceleague.adobe.com/docs/campaign/automation/workflows/introduction/workflow-best-practices.html){target="_blank"}
 
 * [Inbyggda tekniska arbetsflöden](https://experienceleague.adobe.com/docs/campaign/automation/workflows/introduction/wf-type/technical-workflows.html){target="_blank"}
 
-* [Körning av arbetsflöden för övervakning](https://experienceleague.adobe.com/docs/campaign/automation/workflows/monitoring-workflows/monitor-workflow-execution.html){target="_blank"}
+* [Kör arbetsflöden för övervakning](https://experienceleague.adobe.com/docs/campaign/automation/workflows/monitoring-workflows/monitor-workflow-execution.html){target="_blank"}
 
 * [Skapa en målgrupp i ett arbetsflöde för marknadsföringskampanjer](https://experienceleague.adobe.com/docs/campaign/automation/campaign-orchestration/marketing-campaign-target.html){target="_blank"}
 
@@ -92,7 +97,7 @@ Så här använder du aktiviteten **[!UICONTROL Change Data Source]**:
 
 När du har skapat arbetsflödet kan du få tillgång till ytterligare alternativ med knappen **[!UICONTROL Properties]** för ytterligare konfiguration.
 
-Läs mer om **Arbetsflödesegenskaper** i [den här sidan](https://experienceleague.adobe.com/docs/campaign/automation/workflows/advanced-management/workflow-properties.html){target="_blank"}.
+Läs mer om **Arbetsflödesegenskaper** på [den här sidan](https://experienceleague.adobe.com/docs/campaign/automation/workflows/advanced-management/workflow-properties.html){target="_blank"}.
 
 På fliken **[!UICONTROL Execution]** i arbetsflödets **[!UICONTROL Properties]** kan du välja att länka arbetsflödet till olika lagerställen och optimera arbetsbelastningshanteringen. Mer information om **lagerställen** finns i [Snowflake-dokumentationen](https://docs.snowflake.com/en/user-guide/warehouses-overview.html){target="_blank"}.
 
@@ -137,7 +142,7 @@ I det här avsnittet hittar du olika användningsexempel som utnyttjar funktione
 <img src="assets/do-not-localize/icon_send.svg" width="60px">
 
 
-* [Skicka ett födelsedagsmeddelande](https://experienceleague.adobe.com/docs/campaign/automation/workflows/use-cases/deliveries/send-a-birthday-email.html){target="_blank"}
+* [Skicka ett födelsedagsmeddelande via e-post](https://experienceleague.adobe.com/docs/campaign/automation/workflows/use-cases/deliveries/send-a-birthday-email.html){target="_blank"}
 
   I det här användningsexemplet visas hur du planerar att skicka ett återkommande e-postmeddelande till en lista över mottagare på deras födelsedag.
 
@@ -187,7 +192,7 @@ Lär dig hur du skickar personaliserade leveranser till profiler som deltog i de
 * [Använd aggregat](https://experienceleague.adobe.com/docs/campaign/automation/workflows/use-cases/data-management/using-aggregates.html){target="_blank"}
 Lär dig hur du identifierar de sista mottagarna som har lagts till i databasen.
 
-* [Kvartalsvis listuppdatering med en inkrementell fråga](https://experienceleague.adobe.com/docs/campaign/automation/workflows/use-cases/designing-queries/quarterly-list-update.html){target="_blank"}
+* [Kvartalslistuppdatering med en inkrementell fråga](https://experienceleague.adobe.com/docs/campaign/automation/workflows/use-cases/designing-queries/quarterly-list-update.html){target="_blank"}
 Lär dig hur du använder en stegvis fråga för att automatiskt uppdatera en mottagarlista.
 
 * [Konfigurera ett återkommande importarbetsflöde](https://experienceleague.adobe.com/docs/campaign/automation/workflows/use-cases/data-management/recurring-import-workflow.html){target="_blank"}
