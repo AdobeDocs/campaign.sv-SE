@@ -5,9 +5,9 @@ description: Innehållshantering
 feature: Workflows, Data Management
 role: User
 exl-id: 9b225f78-1959-4e4f-aa4e-ff8a63051154
-source-git-commit: 567c2e84433caab708ddb9026dda6f9cb717d032
+source-git-commit: 9014c2d235fd3dde4afb961ef970334e4e909778
 workflow-type: tm+mt
-source-wordcount: '395'
+source-wordcount: '460'
 ht-degree: 2%
 
 ---
@@ -19,6 +19,10 @@ Med en **innehållshantering** -aktivitet kan du skapa och ändra ett innehåll 
 >[!CAUTION]
 >
 >Innehållshantering är en valfri Adobe Campaign-modul. Kontrollera licensavtalet.
+
+>[!NOTE]
+>
+>Med Adobe Campaign webbanvändargränssnitt kan du använda innehållsfragment för ditt innehåll. Marknadsförare kan skapa flera anpassade innehållsblock i förväg tack vare återanvändbar komponent som kan refereras i ett eller flera meddelanden och som gör att ni snabbt kan sammanställa meddelandeinnehåll i en förbättrad designprocess. Mer information om innehållsfragment finns i [Adobe Campaign Web UI-dokumentationen.](https://experienceleague.adobe.com/en/docs/campaign-web/v8/content/manage-reusable-content/fragments/fragments){target=_blank}
 
 Aktivitetens egenskaper är uppdelade i tre steg:
 
