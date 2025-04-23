@@ -4,8 +4,9 @@ title: Marknadsföringskampanjresurser, dokument och leveransdispositioner
 description: Läs mer om kampanjdokument och leveransdispositioner för marknadsföring
 feature: Campaigns
 role: User
+version: Campaign v8, Campaign Classic v7
 exl-id: 352f6cd5-777d-413d-af79-6f53444b336f
-source-git-commit: c3f4ad0b56dd45d19eebaa4d2f06551c8fecac1d
+source-git-commit: a5f7cf6e21b263f8a7fb4fa19a88bebb78390c3d
 workflow-type: tm+mt
 source-wordcount: '686'
 ht-degree: 0%
@@ -35,7 +36,7 @@ Dokument kan kopplas på kampanjnivå (sammanhangsberoende dokument) eller på p
 
 Fliken **[!UICONTROL Documents]** innehåller:
 
-* Listan över alla dokument som krävs för innehållet (mall, bilder osv.) som kan laddas ned lokalt av Adobe Campaign-operatörer med lämpliga rättigheter,
+* En förteckning över alla dokument som krävs för innehållet (mall, bilder osv.) och som kan laddas ned lokalt av Adobe Campaign-operatörer med lämpliga rättigheter.
 * Dokument som innehåller information för routern, om sådan finns.
 
 Dokumenten är länkade till programmet eller kampanjen via fliken **[!UICONTROL Edit > Documents]**.
@@ -58,7 +59,7 @@ De kan också redigeras och ändras i den här vyn.
 
 ## Använd leveransdispositioner {#delivery-outlines}
 
-En leveransöversikt är en strukturerad uppsättning element (dokument, butiker, kampanjkuponger osv.) som skapats av företaget och för en viss kampanj. Det används i samband med direktreklam.
+En leveransöversikt är en strukturerad uppsättning element (dokument, butiker, kampanjkuponger osv.) som företaget har skapat och för en viss kampanj. Det används i samband med direktreklam.
 
 Dessa element grupperas i leveranskonturer och varje leveransdisposition kopplas till en leverans. Den refereras i extraheringsfilen som skickas till **tjänstleverantören** för att kunna kopplas till leveransen. Du kan till exempel skapa en leveransdisposition som refererar till en enhet och de marknadsföringsbroschyrer som används i den.
 
@@ -114,7 +115,7 @@ På fliken **[!UICONTROL Summary]** i leveransen visas även den här informatio
 
 ### Extraheringsresultat {#extraction-result}
 
-I den fil som extraheras och skickas till tjänsteleverantören, namnet på konturen och, i förekommande fall, dess egenskaper (kostnad, beskrivning osv.) läggs till i innehållet enligt informationen i exportmallen som är kopplad till tjänsteleverantören.
+I den fil som extraheras och skickas till tjänsteleverantören läggs namnet på dispositionen och, i tillämpliga fall, dess egenskaper (kostnad, beskrivning osv.) till i innehållet enligt informationen i den exportmall som är associerad med tjänsteleverantören.
 
 I följande exempel läggs etiketten, den uppskattade kostnaden och beskrivningen av dispositionen som är kopplad till leveransen till i extraheringsfilen.
 

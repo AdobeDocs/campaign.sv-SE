@@ -4,8 +4,9 @@ title: Målgrupper för marknadsföringskampanjer
 description: Lär dig definiera målgruppen för era marknadsföringskampanjer
 feature: Campaigns, Audiences
 role: User
+version: Campaign v8, Campaign Classic v7
 exl-id: 70a63632-f66d-40f2-806d-bde89303936a
-source-git-commit: d292c20e520b2466f782ccf86eb9d61e01915563
+source-git-commit: a5f7cf6e21b263f8a7fb4fa19a88bebb78390c3d
 workflow-type: tm+mt
 source-wordcount: '1470'
 ht-degree: 0%
@@ -101,7 +102,7 @@ Målarbetsflöden kan startas manuellt med knappen **[!UICONTROL Start]** i verk
 
 Målsättningen kan programmeras för automatisk körning enligt ett schema (schemaläggare) eller en händelse (extern signal, filimport osv.).
 
-Åtgärder som rör körning av målarbetsflödet (starta, stoppa, pausa, osv.) är **asynkrona** processer: kommandot sparas och börjar gälla så fort servern är tillgänglig för att använda det.
+De åtgärder som är relaterade till körning av målarbetsflödet (starta, stoppa, pausa osv.) är **asynkrona** processer: kommandot sparas och börjar gälla så fort servern är tillgänglig för att använda det.
 
 Med verktygsfältsikonerna kan du utföra åtgärder för arbetsflödet för målanpassning.
 
@@ -247,4 +248,4 @@ I den här videon förklaras hur du lägger till en kontrollgrupp i en kampanj.
 
 >[!VIDEO](https://video.tv.adobe.com/v/335606?quality=12)
 
-Det finns ytterligare utbildningsvideor för Campaign [här](https://experienceleague.adobe.com/docs/campaign-learn/tutorials/getting-started/introduction-to-adobe-campaign.html){target="_blank"}.
+Ytterligare utbildningsvideor för Campaign är tillgängliga [här](https://experienceleague.adobe.com/docs/campaign-learn/tutorials/getting-started/introduction-to-adobe-campaign.html){target="_blank"}.

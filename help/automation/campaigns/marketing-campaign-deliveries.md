@@ -4,8 +4,9 @@ title: Leveranser av marknadsföringskampanjer
 description: Läs mer om kampanjleveranser
 feature: Campaigns, Resource Management, Cross Channel Orchestration
 role: User
+version: Campaign v8, Campaign Classic v7
 exl-id: 1d9638cb-0fc9-4d04-a9c5-bcab8f4ebe95
-source-git-commit: 70af3bceee67082d6a1bb098e60fd2899dc74600
+source-git-commit: a5f7cf6e21b263f8a7fb4fa19a88bebb78390c3d
 workflow-type: tm+mt
 source-wordcount: '705'
 ht-degree: 1%
@@ -14,7 +15,7 @@ ht-degree: 1%
 
 # Leveranser av marknadsföringskampanjer {#marketing-campaign-deliveries}
 
-Samordna era flerkanalsleveranser i era kampanjer: effektivisera kommunikationen med Adobe Campaign via personaliserade e-postmeddelanden, SMS, push-meddelanden och meddelanden i appen. Du kan använda multimedia som videor, känslolägesikoner eller GIF och integrera dem direkt.
+Samordna era flerkanalsleveranser i era kampanjer: effektivisera kommunikationen med Adobe Campaign via personaliserade e-postmeddelanden, SMS, push-meddelanden och meddelanden i appen. Du kan använda multimedia som videor, känslolägesikoner eller GIF-filer och integrera dem direkt.
 
 Leveranser kan skapas via kampanjkontrollpanelen, ett kampanjarbetsflöde eller direkt via leveransöversikten. När leveranser skapas från en kampanj länkas de till den här kampanjen och konsolideras på kampanjnivå.
 

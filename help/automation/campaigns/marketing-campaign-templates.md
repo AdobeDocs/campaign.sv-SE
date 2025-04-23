@@ -4,8 +4,9 @@ title: Mallar för marknadsföringskampanjer
 description: Mallar för marknadsföringskampanjer
 feature: Campaigns, Templates
 role: User
+version: Campaign v8, Campaign Classic v7
 exl-id: 1bd8d3e7-aaa9-4e00-96bb-0d30614ab380
-source-git-commit: 567c2e84433caab708ddb9026dda6f9cb717d032
+source-git-commit: a5f7cf6e21b263f8a7fb4fa19a88bebb78390c3d
 workflow-type: tm+mt
 source-wordcount: '987'
 ht-degree: 0%
@@ -59,7 +60,7 @@ Med länken **[!UICONTROL Advanced campaign parameters...]** kan du aktivera och
 
 ![](assets/campaign-template-select-modules.png)
 
-Om ingen funktion är markerad, de element som rör processen (menyer, ikoner, alternativ, flikar, underflikar osv.) visas inte i mallens gränssnitt eller i kampanjer som är baserade på den här mallen. Flikarna till vänster om kampanjinformationen och de tillgängliga flikarna sammanfaller med de funktioner som valts i mallen. Funktionen **Utgifter och mål** är till exempel inte aktiverad. Motsvarande **[!UICONTROL Budget]**-flik visas inte i kampanjer som baseras på den här mallen.
+Om ingen funktion väljs visas inte elementen som rör processen (menyer, ikoner, alternativ, flikar, underflikar osv.) i mallens gränssnitt eller i kampanjer som är baserade på den här mallen. Flikarna till vänster om kampanjinformationen och de tillgängliga flikarna sammanfaller med de funktioner som valts i mallen. Funktionen **Utgifter och mål** är till exempel inte aktiverad. Motsvarande **[!UICONTROL Budget]**-flik visas inte i kampanjer som baseras på den här mallen.
 
 Dessutom läggs genvägar till konfigurationsfönstren till på kontrollpanelen för kampanjer. När en funktion är aktiverad får en direktlänk åtkomst till den från kontrollpanelen för kampanjer.
 

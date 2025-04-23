@@ -4,8 +4,9 @@ title: Skapa marknadsföringskampanjer
 description: Lär dig skapa och genomföra marknadsföringskampanjer
 feature: Campaigns, Cross Channel Orchestration, Programs
 role: User
+version: Campaign v8, Campaign Classic v7
 exl-id: 90dd2dad-1380-490e-b958-4a28a7d930ed
-source-git-commit: c3f4ad0b56dd45d19eebaa4d2f06551c8fecac1d
+source-git-commit: a5f7cf6e21b263f8a7fb4fa19a88bebb78390c3d
 workflow-type: tm+mt
 source-wordcount: '1327'
 ht-degree: 2%
@@ -32,7 +33,7 @@ Konfigurera mapphierarkin för marknadsföringsplaner och program innan du börj
 
 1. Klicka på ikonen **Utforskaren** på startsidan.
 1. Högerklicka på den mapp där du vill skapa din plan.
-1. Välj **Lägg till ny mapp > Campaign Management > Planera**.
+1. Välj **Lägg till ny mapp > Kampanjhantering > Planera**.
 
    ![](assets/create-new-plan-folder.png)
 
@@ -187,7 +188,7 @@ I tabellen sammanfattas de åtgärder du kan vidta i kampanjer från en webbläs
 | Lista över kampanjer, leveranser, erbjudanden osv. | Ta bort ett listobjekt |
 | Campaign | Avbryta en kampanj |
 | Leverans | Godkänn leveransinnehållet och målet<br/>Skicka leveransinnehållet<br/>Bekräfta en leverans<br/>Pausa och stoppa en leverans |
-| Webbprogram | Skapa ett webbprogram<br/>Redigera programinnehåll och -egenskaper<br/>Spara programinnehållet som en mall<br/>Publish programmet |
+| Webbprogram | Skapa ett webbprogram<br/>Redigera programinnehåll och -egenskaper<br/>Spara programinnehållet som en mall<br/>Publicera programmet |
 | Erbjudande | Godkänn erbjudandets innehåll och behörighet<br/>Inaktivera ett onlineerbjudande |
 | Uppgift | Avsluta en aktivitet<br/>Avbryt en aktivitet |
 | Marknadsföringsresurser | Godkänn en resurs<br/>Lås och lås upp en resurs |

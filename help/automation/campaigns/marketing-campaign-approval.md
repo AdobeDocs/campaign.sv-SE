@@ -4,8 +4,9 @@ title: Konfigurera och hantera godkännandeprocessen
 description: Lär dig hantera godkännanden av marknadsföringskampanjer
 feature: Approvals, Campaigns
 role: User
+version: Campaign v8, Campaign Classic v7
 exl-id: 03be5058-436e-4de9-99a7-91d799aa17f6
-source-git-commit: 09db0cc1a14bffefe8d1b8d0d5a06d5b6517a5bb
+source-git-commit: a5f7cf6e21b263f8a7fb4fa19a88bebb78390c3d
 workflow-type: tm+mt
 source-wordcount: '2281'
 ht-degree: 1%
@@ -177,7 +178,7 @@ Med det här alternativet kan du definiera någon som ansvarar för redigering a
 
 1. Den person som ansvarar för redigering av innehåll får ett e-postmeddelande om att innehållet är tillgängligt.
 
-1. De kan sedan logga in på klientkonsolen, öppna leveransen och redigera den med en förenklad guide för att ändra ämne, HTML och textinnehåll samt skicka korrektur.
+1. De kan sedan logga in på klientkonsolen, öppna leveransen och redigera den med en förenklad guide för att ändra ämnet, HTML och textinnehållet samt skicka korrektur.
 
    >[!NOTE]
    >
