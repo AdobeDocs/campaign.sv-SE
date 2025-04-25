@@ -3,10 +3,10 @@ title: Versionsinformation om Campaign v8
 description: Senaste Campaign v8-versionen
 feature: Release Notes
 exl-id: 7cf8111d-9f3a-46a4-813a-d4e43a1d1471
-source-git-commit: 66e4b59915eae595b28076622f7bcfb5b5a0ffa4
+source-git-commit: 5ece3ca4ebf9f3973d9cbd1a00ea57b29c1f2e93
 workflow-type: tm+mt
-source-wordcount: '594'
-ht-degree: 5%
+source-wordcount: '781'
+ht-degree: 12%
 
 ---
 
@@ -18,10 +18,37 @@ På den här sidan visas nya funktioner, förbättringar och korrigeringar som i
 
 **På den här sidan**
 
+* [Version 8.6.5](#release-8-6-4)
 * [Version 8.7.4](#release-8-7-4)
 * [Version 8.6.4](#release-8-6-4)
 
 >[!ENDSHADEBOX]
+
+## Version 8.6.5 {#release-8-6-5}
+
+_25 april 2025_
+
+>[!AVAILABILITY]
+>
+>Den här versionen är i **begränsad tillgänglighet** (LA).
+
+### Nya funktioner {#features-8-6-5}
+
+**Ny SMS-sändningsanslutare** - SMS-sändningsanslutaren har moderniserats och förbättrats för att aktivera SMPP-anslutningar i sändningsläge, aktivera beständiga SMPP-anslutningar och säkerställa bättre kompatibilitet för miljöer som övergår från Adobe Campaign Standard. Det finns nu ett nytt externt SMS-konto för alla nya SMS-implementeringar. Befintlig implementering stöds fortfarande, men vi rekommenderar att du går över till den nya moderna och utökade anslutningen. [Läs mer](../send/sms/sms.md).
+
+### Allmänna förbättringar {#improvements-8-6-5}
+
+* Programmets globala prestanda har förbättrats i samband med en Enterprise-distribution (FFDA), inklusive leverans- och databasrensning.
+
+* För att öka säkerheten vid all kommunikation mellan program stöds nu mTLS för externa API-anrop.
+
+* MTA (Mail Transfer Agent) – korrigerade ett överblivet MTA-underordnat element som ska ha statusen **[!UICONTROL Start pending]**.
+
+### Korrigeringar {#fixes-8-6-5}
+
+Följande problem har också korrigerats i den här versionen:
+
+NEO-67620, NEO-71534, NEO-80245, NEO-81105, NEO-81758, NEO-81908, NEO-82351, NEO-82742, NEO-83044, NEO-83138, NEO-83350, NEO-83729, NEO-83793, NEO-83809, NEO-84038, NEO-84108, NEO-85269, NEO-86121, NEO-86556, NEO-86739
 
 ## Version 8.7.4 {#release-8-7-4}
 
