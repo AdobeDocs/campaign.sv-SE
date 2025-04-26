@@ -4,9 +4,9 @@ title: Konfigurera tryckregler
 description: Lär dig hur du konfigurerar tryckregler
 feature: Fatigue Management, Typology Rules
 exl-id: d234db0e-936a-48db-b697-11c6b40bc3ab
-source-git-commit: 5810f9b53bd3ad5383d4b9767bc65a3d595862c7
+source-git-commit: 8272550faefece753636418bcb748b36f989fcb5
 workflow-type: tm+mt
-source-wordcount: '3102'
+source-wordcount: '3126'
 ht-degree: 5%
 
 ---
@@ -36,6 +36,10 @@ Annars blir mottagaren **[!UICONTROL Excluded by arbitration]**. [Läs mer](#exc
 ## Skapa en tryckregel {#create-a-pressure-rule}
 
 Om du vill skapa medling mellan kampanjer med Adobe Campaign börjar du med att skapa kampanjtypologier och definiera länkade typologiregler (**Tryck**-regler).
+
+>[!NOTE]
+>
+>För att en tryckregel ska kunna tillämpas korrekt måste regelns måldimension matcha måldimensionen för leveransmappningen.
 
 Så här skapar och konfigurerar du en **[!UICONTROL Pressure]**-typologiregel:
 

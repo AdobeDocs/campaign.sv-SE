@@ -5,9 +5,9 @@ description: Läs mer om arbetsflödesaktiviteten Datainläsning (fil)
 feature: Workflows, Data Management Activity
 role: User
 exl-id: 10351620-115c-4bd8-b216-e5ad6f205ef3
-source-git-commit: c3f4ad0b56dd45d19eebaa4d2f06551c8fecac1d
+source-git-commit: 8272550faefece753636418bcb748b36f989fcb5
 workflow-type: tm+mt
-source-wordcount: '1065'
+source-wordcount: '1097'
 ht-degree: 14%
 
 ---
@@ -26,7 +26,7 @@ I det övre avsnittet av konfigurationsfönstret för den här aktiviteten kan d
 
 >[!CAUTION]
 >
->Endast &quot;platta&quot; strukturfiler stöds (t.ex. CSV, TXT). Du bör inte använda XML-formatet.
+>Endast &quot;platta&quot; strukturfiler stöds (t.ex. CSV, TXT). Du bör inte använda XML-formatet. Med klientkonsolen kan du läsa in filer som är högst 150 MB stora. I webbanvändargränssnittet har aktiviteten Läs in fil en gräns på 50 MB. [Läs mer](https://experienceleague.adobe.com/docs/campaign-web/v8/wf/design-workflows/load-file.html){target="_blank"}
 
 ![](assets/s_advuser_wf_etl_file.png)
 

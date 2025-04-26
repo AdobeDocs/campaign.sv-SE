@@ -5,9 +5,9 @@ feature: Transactional Messaging
 role: User
 level: Beginner, Intermediate
 exl-id: 858c9216-c5a0-4bf9-b4b0-91e403293f73
-source-git-commit: 42241364c1a23ae75d8f0aaf18a2cb1c04ce5b0c
+source-git-commit: 8272550faefece753636418bcb748b36f989fcb5
 workflow-type: tm+mt
-source-wordcount: '1170'
+source-wordcount: '1177'
 ht-degree: 1%
 
 ---
@@ -30,7 +30,7 @@ Följ stegen nedan för att skapa en meddelandemall:
    ![](assets/messagecenter_create_model_002.png)
 
 1. Ändra vid behov etiketten.
-1. Välj den typ av händelse som matchar meddelandet som du vill skicka. Händelsetyper som ska bearbetas av Adobe Campaign måste skapas i förväg. [Läs mer](#create-event-types)
+1. Välj den typ av händelse som matchar meddelandet som du vill skicka. Händelsetyper som ska bearbetas av Adobe Campaign måste skapas i förväg. [Läs mer](../send/transactional.md#create-event-types)
 
    ![](assets/messagecenter_create_model_003.png)
 
@@ -86,7 +86,7 @@ Med en dirigerad adress kan du visa en förhandsgranskning av meddelandet, skick
 
    ![](assets/messagecenter_create_seed_2.png)
 
-1. Infoga testdata. Se [det här avsnittet](#personalization-data).
+1. Infoga testdata. [Läs mer om personaliseringsdata i Campaign Classic v7-dokumentationen](https://experienceleague.adobe.com/docs/campaign-classic/using/transactional-messaging/message-templates/testing-message-templates#personalization-data.html){target="_blank"}
 
    ![](assets/messagecenter_create_custo_3.png)
 
