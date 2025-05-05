@@ -105,4 +105,4 @@ Som standard identifieras korrekturmeddelanden av `Proof #N` som omnämns i ämn
 
 Lär dig hur du skickar och validerar ett bevis på en e-postleverans.
 
->[!VIDEO](https://video.tv.adobe.com/v/333404)
+>[!VIDEO](https://video.tv.adobe.com/v/3447003?captions=swe)

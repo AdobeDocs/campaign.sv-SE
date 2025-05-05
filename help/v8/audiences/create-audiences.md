@@ -26,7 +26,7 @@ Du kan skapa en lista med aktiviteten **Uppdatera lista** i ett arbetsflöde. De
 
 I den här videon får du lära dig mer om Lists hantering i Adobe Campaign.
 
->[!VIDEO](https://video.tv.adobe.com/v/334909?quality=12)
+>[!VIDEO](https://video.tv.adobe.com/v/3426465?quality=12&captions=swe)
 
 
 ## Skapa en lista med kontakter {#create-a-list-of-contacts}

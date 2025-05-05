@@ -181,7 +181,7 @@ Mer information om korrekturmottagare och sändning finns i [det här avsnittet]
 
 I den här videon får du lära dig hur du lägger till frön och korrektur i ett befintligt e-postmeddelande och hur du skickar det.
 
->[!VIDEO](https://video.tv.adobe.com/v/333404?quality=12)
+>[!VIDEO](https://video.tv.adobe.com/v/3447003?quality=12&captions=swe)
 
 Ytterligare Campaign Classic om instruktionsvideor finns [här](https://experienceleague.adobe.com/docs/campaign-classic-learn/tutorials/overview.html?lang=sv).
 

@@ -147,12 +147,12 @@ I följande video visas hur du konfigurerar en mall för en ad hoc-leverans.
 
 I följande video visas hur du ställer in leveransmallsegenskaperna och förklarar varje egenskap i detalj.
 
->[!VIDEO](https://video.tv.adobe.com/v/338969?quality=12)
+>[!VIDEO](https://video.tv.adobe.com/v/3443405?quality=12&captions=swe)
 
 ### Så här distribuerar du en ad hoc-leveransmall
 
 I den här videon förklaras hur du distribuerar en mall för ad hoc-e-postleverans och den förklarar skillnaden mellan en e-postleverans och ett leveransarbetsflöde.
 
->[!VIDEO](https://video.tv.adobe.com/v/338965?quality=12)
+>[!VIDEO](https://video.tv.adobe.com/v/3444961?quality=12&captions=swe)
 
 Det finns ytterligare utbildningsvideor för Campaign [här](https://experienceleague.adobe.com/docs/campaign-learn/tutorials/getting-started/introduction-to-adobe-campaign.html?lang=sv-SE){target="_blank"}.

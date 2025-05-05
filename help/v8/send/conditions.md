@@ -86,4 +86,4 @@ Läs om hur du skapar flerspråkiga e-postmeddelanden i exemplet nedan. Innehål
 
 Lär dig hur du lägger till villkorsstyrt innehåll i en leverans med ett exempel som visar ett flerspråkigt nyhetsbrev.
 
->[!VIDEO](https://video.tv.adobe.com/v/335682?quality=12)
+>[!VIDEO](https://video.tv.adobe.com/v/3446715?quality=12&captions=swe)
