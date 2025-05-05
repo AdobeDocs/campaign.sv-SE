@@ -84,7 +84,7 @@ Behöver du hjälp medan du arbetar med Campaign? Läs de viktigaste frågorna o
 
    Du kan hämta installationsprogrammet och klientkonsolen från Adobe Download Center.
 
-   Som administratörsanvändare kan du hämta Adobe Campaign via Adobe [Software Distribution](https://experience.adobe.com/#/downloads/content/software-distribution/en/campaign.html) {target="_blank"} .
+   Som administratörsanvändare kan du hämta Adobe Campaign via Adobe [Software Distribution](https://experience.adobe.com/#/downloads/content/software-distribution/en/campaign.html){target="_blank"}  .
 
    Läs mer om Distribution Center [på den här sidan](https://experienceleague.adobe.com/docs/experience-cloud/software-distribution/home.html){target="_blank"}.
 

@@ -14,7 +14,7 @@ ht-degree: 3%
 
 # Konfigurera och skicka leveransen {#configure-delivery}
 
-Få åtkomst till leveransparametrarna för att konfigurera fler inställningar och definiera hur meddelanden ska skickas. Du kan definiera leverans [prioritet](#delivery-priority), konfigurera [påfyllnader](#sending-using-multiple-waves) och testa leveransen. När konfigurationen är klar kan du bekräfta sändningen enligt beskrivningen i [det här avsnittet](#confirm-delivery). Meddelanden skickas sedan omedelbart eller baserat på leveransschema [](#schedule-delivery-sending).
+Få åtkomst till leveransparametrarna för att konfigurera fler inställningar och definiera hur meddelanden ska skickas. Du kan definiera leverans [prioritet](#delivery-priority), konfigurera [påfyllnader](#sending-using-multiple-waves) och testa leveransen. När konfigurationen är klar kan du bekräfta sändningen enligt beskrivningen i [det här avsnittet](#confirm-delivery). Meddelanden skickas sedan omedelbart eller baserat på leveransschema [&#128279;](#schedule-delivery-sending).
 
 ## Ange ytterligare parametrar {#delivery-additional-parameters}
 

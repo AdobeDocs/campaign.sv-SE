@@ -115,11 +115,11 @@ Om du vill anpassa dina meddelanden kan du använda mottagarnas data som lagras 
 
 * Kontrollera dina personaliseringsinställningar - Kontrollera att meddelandeinnehållet är korrekt utformat för att undvika fel som kan relateras till personalisering. En Adobe Campaign-personaliseringstagg har alltid följande format: `<%=table.field%>`. Felaktig användning av parametrar i personaliseringsblock kan vara ett problem. Variabler i JavaScript bör till exempel användas på följande sätt:
 
-  ``
+  &grave;&grave;
   <%
   var brand = "xxx"
   %>
-  ``
+  &grave;&grave;
 
   Mer information om anpassningsblock finns i [det här avsnittet](../send/personalization-blocks.md).
 

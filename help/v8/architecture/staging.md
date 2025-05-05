@@ -14,7 +14,7 @@ ht-degree: 2%
 
 # Mellanlagringsmekanism för kampanj-API
 
-I samband med en [Enterprise (FFDA)-distribution](enterprise-deployment.md) rekommenderas inte att enhetsanrop rensas när det gäller prestanda (latens och samtidighet). Om du inte skickar extremt låg volym måste gruppåtgärden **** användas. För att förbättra prestandan omdirigeras API:er för inmatning till den lokala databasen.
+I samband med en [Enterprise (FFDA)-distribution](enterprise-deployment.md) rekommenderas inte att enhetsanrop rensas när det gäller prestanda (latens och samtidighet). Om du inte skickar extremt låg volym måste gruppåtgärden **&#x200B;**&#x200B;användas. För att förbättra prestandan omdirigeras API:er för inmatning till den lokala databasen.
 
 Kampanjmellanlagring är aktiverat som standard för vissa inbyggda scheman. Vi kan även aktivera det i alla anpassade scheman. Mellanlagringsmekanism i ett nötskal:
 

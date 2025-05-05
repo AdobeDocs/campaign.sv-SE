@@ -32,7 +32,7 @@ _14 feb 2025_
 >
 >Den här versionen är i **begränsad tillgänglighet** (LA). Det är begränsat till kunder som migrerar **från Adobe Campaign Standard till Adobe Campaign v8** och kan inte distribueras i någon annan miljö.
 >
->Som Campaign Standard-användare som övergår till Campaign v8 kan du läsa mer om den här övergången i dokumentationen](https://experienceleague.adobe.com/en/docs/campaign-web/v8/start/acs-migration){target="_blank"} för webbanvändargränssnittet i [Campaign v8.
+>Som Campaign Standard-användare som övergår till Campaign v8 kan du läsa mer om den här övergången i dokumentationen[&#128279;](https://experienceleague.adobe.com/en/docs/campaign-web/v8/start/acs-migration){target="_blank"} för webbanvändargränssnittet i Campaign v8.
 
 ### Nya funktioner {#features-8-7-3}
 

@@ -198,7 +198,7 @@ Med attribut kan du definiera fälten som utgör dataobjektet. Du kan använda k
 
 ![](assets/schemaextension_2.png)
 
-Den fullständiga listan med attribut finns i elementavsnittet `<attribute>` i [Campaign Classic v7-dokumentationen](https://experienceleague.adobe.com/docs/campaign-classic/using/configuring-campaign-classic/schema-reference/elements-attributes/attribute.html#content-model){target="_blank"}. Här är några av de vanligaste attributen: **@advanced**, **@dataPolicy**, **@default**, **@desc**, **@enum**, **@expr**, **@label**, **@length**, **16}@name**, **@notNull**, **@required**, **@ref**, **@xml**, **@type**.
+Den fullständiga listan med attribut finns i elementavsnittet `<attribute>` i [Campaign Classic v7-dokumentationen](https://experienceleague.adobe.com/docs/campaign-classic/using/configuring-campaign-classic/schema-reference/elements-attributes/attribute.html#content-model){target="_blank"}. Här är några av de vanligaste attributen: **@advanced**, **@dataPolicy**, **@default**, **@desc**, **@enum**, **@expr**, **@label**, **@length**, **16&rbrace;@name**, **@notNull**, **@required**, **@ref**, **@xml**, **@type**.
 
 Mer information om de olika attributen finns i attributbeskrivningen i [Campaign Classic v7-dokumentationen](https://experienceleague.adobe.com/docs/campaign-classic/using/configuring-campaign-classic/schema-reference/elements-attributes/schema-introduction.html#configuring-campaign-classic){target="_blank"}.
 
