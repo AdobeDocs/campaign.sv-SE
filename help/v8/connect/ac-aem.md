@@ -16,9 +16,9 @@ ht-degree: 0%
 
 Tack vare integrationen mellan Adobe Campaign och Adobe Experience Manager kan ni hantera innehållet i era e-postleveranser och era formulär direkt i Adobe Experience Manager. Du kan antingen importera ditt **Adobe Experience Manager**-innehåll till Campaign eller ansluta din **Adobe Experience Manager som ett molntjänstkonto** så att du kan redigera innehållet direkt i webbgränssnittet.
 
-[Upptäck hur du redigerar din Adobe Experience Manager som Cloud Service i webbgränssnittet för Campaign](https://experienceleague.adobe.com/docs/campaign-web/v8/integrations/aem-content.html){target="_blank"}.
+[Upptäck hur du redigerar din Adobe Experience Manager som Cloud Service i webbgränssnittet för Campaign](https://experienceleague.adobe.com/docs/campaign-web/v8/integrations/aem-content.html?lang=sv-SE){target="_blank"}.
 
-[Läs mer om Adobe Experience Manager i det här dokumentet](https://experienceleague.adobe.com/docs/experience-manager-65/administering/integration/campaignonpremise.html#aem-and-adobe-campaign-integration-workflow){target="_blank"}.
+[Läs mer om Adobe Experience Manager i det här dokumentet](https://experienceleague.adobe.com/docs/experience-manager-65/administering/integration/campaignonpremise.html?lang=sv-SE#aem-and-adobe-campaign-integration-workflow){target="_blank"}.
 
 
 >[!NOTE]
@@ -47,7 +47,7 @@ Den här integreringen kan till exempel användas för att skapa ett nyhetsbrev 
 
    ![](assets/aem_authoring_3.png)
 
-1. Anpassa e-postinnehållet genom att lägga till komponenter, till exempel anpassningsfält från Adobe Campaign. Läs mer i [Adobe Experience Manager-dokumentation](https://experienceleague.adobe.com/docs/experience-manager-65/content/sites/authoring/aem-adobe-campaign/campaign.html#editing-email-content){target="_blank"}.
+1. Anpassa e-postinnehållet genom att lägga till komponenter, till exempel anpassningsfält från Adobe Campaign. Läs mer i [Adobe Experience Manager-dokumentation](https://experienceleague.adobe.com/docs/experience-manager-65/content/sites/authoring/aem-adobe-campaign/campaign.html?lang=sv-SE#editing-email-content){target="_blank"}.
 
 1. När e-postmeddelandet är klart går du till menyn **[!UICONTROL Page information]** och klickar på **[!UICONTROL Start workflow]**.
 
@@ -95,7 +95,7 @@ Din e-post kan nu skickas till din målgrupp.
 
 ## Importera resurser från Adobe Experience Manager Assets bibliotek {#assets-library}
 
-Du kan också infoga resurser direkt från [!DNL Adobe Experience Manager Assets Library] när du redigerar ett e-postmeddelande eller en landningssida i Adobe Campaign. Den här funktionen beskrivs i [Adobe Experience Manager Assets-dokumentationen](https://experienceleague.adobe.com/docs/experience-manager-65/content/assets/managing/manage-assets.html){target="_blank"}.
+Du kan också infoga resurser direkt från [!DNL Adobe Experience Manager Assets Library] när du redigerar ett e-postmeddelande eller en landningssida i Adobe Campaign. Den här funktionen beskrivs i [Adobe Experience Manager Assets-dokumentationen](https://experienceleague.adobe.com/docs/experience-manager-65/content/assets/managing/manage-assets.html?lang=sv-SE){target="_blank"}.
 
 **Från Adobe Experience Manager:**
 
@@ -103,7 +103,7 @@ Du kan också infoga resurser direkt från [!DNL Adobe Experience Manager Assets
 
    ![](assets/aem_assets_1.png)
 
-1. Klicka på **Skapa** och sedan på **Filer** för att importera resursen till ditt **Adobe Experience Manager Assets-bibliotek**. Läs mer i [Adobe Experience Manager-dokumentationen](https://experienceleague.adobe.com/docs/experience-manager-65/content/assets/managing/manage-assets.html#uploading-assets){target="_blank"}.
+1. Klicka på **Skapa** och sedan på **Filer** för att importera resursen till ditt **Adobe Experience Manager Assets-bibliotek**. Läs mer i [Adobe Experience Manager-dokumentationen](https://experienceleague.adobe.com/docs/experience-manager-65/content/assets/managing/manage-assets.html?lang=sv-SE#uploading-assets){target="_blank"}.
 
    ![](assets/aem_assets_2.png)
 

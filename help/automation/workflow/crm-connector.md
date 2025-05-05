@@ -28,4 +28,4 @@ Välj det externa konto som matchar det CRM-konto som du vill konfigurera synkro
 
 ![](assets/crm_task_select_obj.png)
 
-Mer information om CRM-anslutningar i Adobe Campaign finns i [det här avsnittet](https://experienceleague.adobe.com/docs/campaign/campaign-v8/connect/ac-crm/crm.html){target="_blank"}.
+Mer information om CRM-anslutningar i Adobe Campaign finns i [det här avsnittet](https://experienceleague.adobe.com/docs/campaign/campaign-v8/connect/ac-crm/crm.html?lang=sv-SE){target="_blank"}.

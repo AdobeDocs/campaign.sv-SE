@@ -32,7 +32,7 @@ På kontrollpanelen för leverans kan du kontrollera de bearbetade meddelandena 
 >Leveransstatus visas inte i realtid. Läs mer om tjänsten för e-postfeedback [i det här avsnittet](#email-feedback-service).
 
 
-[Läs mer om leveransövervakning i Campaign Classic v7-dokumentation](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/key-steps-when-creating-a-delivery/delivery-bestpractices/track-and-monitor.html){target="_blank"}
+[Läs mer om leveransövervakning i Campaign Classic v7-dokumentation](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/key-steps-when-creating-a-delivery/delivery-bestpractices/track-and-monitor.html?lang=sv-SE){target="_blank"}
 
 ## Kampanj-MTA {#mta}
 
@@ -75,7 +75,7 @@ DKIM (Domain Keys Identified Mail) är en autentiseringsmetod som används för 
 
 I Adobe Campaign utförs DKIM-autentisering via e-post av MTA.
 
-Läs mer om DKIM i [Adobe Deliverability Best Practice Guide](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/transition-process/infrastructure.html#authentication){target="_blank"}.
+Läs mer om DKIM i [Adobe Deliverability Best Practice Guide](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/transition-process/infrastructure.html?lang=sv-SE#authentication){target="_blank"}.
 
 ## Tjänsten för e-postfeedback {#email-feedback-service}
 
@@ -87,7 +87,7 @@ När meddelandet levereras till målprofilerna och när den här informationen h
 
 När hårda studsmeddelanden rapporteras från MTA ändras deras loggstatus från **[!UICONTROL Taken into account by the service provider]** till **[!UICONTROL Failed]**<!-- and the **[!UICONTROL Bounces + errors]** percentage is increased accordingly-->.
 
-När meddelanden med mjuk studsning rapporteras tillbaka från MTA ändras inte deras loggstatus (**[!UICONTROL Taken into account by the service provider]**): endast [felorsak](delivery-failures.md#delivery-failure-reasons) uppdateras<!-- and the **[!UICONTROL Bounces + errors]** percentage is increased accordingly-->. Procentandelen **[!UICONTROL Success]** ändras inte. Ett nytt försök att studsa meddelanden görs sedan under leveransens [giltighetsperiod](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/key-steps-when-creating-a-delivery/steps-sending-the-delivery.html#defining-validity-period){target="_blank"}:
+När meddelanden med mjuk studsning rapporteras tillbaka från MTA ändras inte deras loggstatus (**[!UICONTROL Taken into account by the service provider]**): endast [felorsak](delivery-failures.md#delivery-failure-reasons) uppdateras<!-- and the **[!UICONTROL Bounces + errors]** percentage is increased accordingly-->. Procentandelen **[!UICONTROL Success]** ändras inte. Ett nytt försök att studsa meddelanden görs sedan under leveransens [giltighetsperiod](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/key-steps-when-creating-a-delivery/steps-sending-the-delivery.html?lang=sv-SE#defining-validity-period){target="_blank"}:
 
 * Om ett nytt försök lyckas före giltighetsperiodens slut ändras meddelandets status till **[!UICONTROL Sent]** och procentandelen **[!UICONTROL Success]** ökas i enlighet med detta.
 

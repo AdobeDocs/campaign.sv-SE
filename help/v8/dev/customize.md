@@ -34,7 +34,7 @@ Två tabelltilläggslägen är tillgängliga:
 
 * Genom gränssnittet med assistenten **Nytt fält**
 
-  Lär dig hur du snabbt lägger till ett nytt fält i Campaign i [Campaign Classic v7-dokumentationen](https://experienceleague.adobe.com/docs/campaign-classic/using/configuring-campaign-classic/editing-schemas/new-field-wizard.html#configuring-campaign-classic){target="_blank"}
+  Lär dig hur du snabbt lägger till ett nytt fält i Campaign i [Campaign Classic v7-dokumentationen](https://experienceleague.adobe.com/docs/campaign-classic/using/configuring-campaign-classic/editing-schemas/new-field-wizard.html?lang=sv-SE#configuring-campaign-classic){target="_blank"}
 
 * Programmatiskt genom att utöka schemat. Lär dig att utöka ett befintligt schema i [det här avsnittet](../dev/extend-schema.md).
 
@@ -44,9 +44,9 @@ Om du vill lägga till en helt ny typ av data som inte finns i körklart läge i
 
 **Relaterade ämnen**
 
-Exempel på schemautgåva i [Campaign Classic v7-dokumentation](https://experienceleague.adobe.com/docs/campaign-classic/using/configuring-campaign-classic/editing-schemas/examples-of-schemas-edition.html#configuring-campaign-classic){target="_blank"}
+Exempel på schemautgåva i [Campaign Classic v7-dokumentation](https://experienceleague.adobe.com/docs/campaign-classic/using/configuring-campaign-classic/editing-schemas/examples-of-schemas-edition.html?lang=sv-SE#configuring-campaign-classic){target="_blank"}
 
-Använd skiftläge: länka ett fält till en befintlig referenstabell i [Campaign Classic v7-dokumentationen](https://experienceleague.adobe.com/docs/campaign-classic/using/configuring-campaign-classic/editing-schemas/examples-of-schemas-edition.html#uc-link){target="_blank"}
+Använd skiftläge: länka ett fält till en befintlig referenstabell i [Campaign Classic v7-dokumentationen](https://experienceleague.adobe.com/docs/campaign-classic/using/configuring-campaign-classic/editing-schemas/examples-of-schemas-edition.html?lang=sv-SE#uc-link){target="_blank"}
 
 
 ## Ändra indataformulären
@@ -61,7 +61,7 @@ Adobe Campaign gränssnitt använder många webbprogram för att få åtkomst ti
 
 De inbyggda webbprogrammen lagras i mappen **Administration > Konfiguration > Webbprogram** i Utforskaren.
 
-Lär dig hur du skapar en översiktssida i Campaign i [Campaign Classic v7-dokumentation](https://experienceleague.adobe.com/docs/campaign-classic/using/designing-content/web-applications/use-cases--creating-overviews.html#creating-a-single-page-web-application){target="_blank"}
+Lär dig hur du skapar en översiktssida i Campaign i [Campaign Classic v7-dokumentation](https://experienceleague.adobe.com/docs/campaign-classic/using/designing-content/web-applications/use-cases--creating-overviews.html?lang=sv-SE#creating-a-single-page-web-application){target="_blank"}
 
 
 ## Anpassa listor och skapa filter {#gs-lists-and-filters}

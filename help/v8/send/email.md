@@ -90,7 +90,7 @@ I följande exempel får du lära dig hur du utformar en e-postleverans i Adobe 
 
 Din första e-postleverans är klar. Nu måste ni definiera målgruppen, validera leveransen och skicka den.
 
-Lär dig hur du skapar ett arbetsflöde för att importera ett e-postinnehåll i det här [användningsfallet](https://experienceleague.adobe.com/docs/campaign/automation/workflows/use-cases/deliveries/load-delivery-content.html){target="_blank"}.
+Lär dig hur du skapar ett arbetsflöde för att importera ett e-postinnehåll i det här [användningsfallet](https://experienceleague.adobe.com/docs/campaign/automation/workflows/use-cases/deliveries/load-delivery-content.html?lang=sv-SE){target="_blank"}.
 
 >[!MORELIKETHIS]
 >

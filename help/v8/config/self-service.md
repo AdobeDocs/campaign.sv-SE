@@ -32,7 +32,7 @@ Kontrollpanelen är tillgänglig direkt från Adobe Experience Cloud. Den är en
 
 ## Vanliga frågor och svar om Kontrollpanelen {#ac-control-faq}
 
-[Klicka här](https://experienceleague.adobe.com/docs/control-panel/using/faq.html#control-panel){target="_blank"} för att få tillgång till Vanliga frågor och svar om Campaign Control Panel.
+[Klicka här](https://experienceleague.adobe.com/docs/control-panel/using/faq.html?lang=sv-SE#control-panel){target="_blank"} för att få tillgång till Vanliga frågor och svar om Campaign Control Panel.
 
 ## SFTP-hantering {#ac-control-sftp}
 
@@ -42,7 +42,7 @@ På Kontrollpanelen kan du interagera med alla SFTP-servrar som är anslutna til
 
 Lär dig övervaka dina underdomäner och deras certifikat.
 
-* [Övervaka dina underdomäner](https://experienceleague.adobe.com/docs/control-panel/using/subdomains-and-certificates/monitoring-subdomains.html){target="_blank"}
+* [Övervaka dina underdomäner](https://experienceleague.adobe.com/docs/control-panel/using/subdomains-and-certificates/monitoring-subdomains.html?lang=sv-SE){target="_blank"}
 * [Konfigurera en ny underdomän](https://experienceleague.adobe.com/docs/control-panel/using/subdomains-and-certificates/setting-up-new-subdomain.html?lang=sv){target="_blank"}
 * [Övervaka dina underdomäners SSL-certifikat](https://experienceleague.adobe.com/docs/control-panel/using/subdomains-and-certificates/monitoring-ssl-certificates.html?lang=sv){target="_blank"}
 
@@ -54,7 +54,7 @@ Kontrollpanelen har flera funktioner som hjälper dig att övervaka dina instans
 ## Instansinställningar
 
 Lär dig hur du hanterar inställningarna för Campaign-instanser på Kontrollpanelen.
-* [IP på tillåtelselista](https://experienceleague.adobe.com/docs/control-panel/using/instances-settings/ip-allow-listing-instance-access.html){target="_blank"}
+* [IP på tillåtelselista](https://experienceleague.adobe.com/docs/control-panel/using/instances-settings/ip-allow-listing-instance-access.html?lang=sv-SE){target="_blank"}
 * [URL-behörigheter](https://experienceleague.adobe.com/docs/control-panel/using/instances-settings/url-permissions.html?lang=sv){target="_blank"}
-* [Instansinformation](https://experienceleague.adobe.com/docs/control-panel/using/instances-settings/instance-details.html){target="_blank"}
+* [Instansinformation](https://experienceleague.adobe.com/docs/control-panel/using/instances-settings/instance-details.html?lang=sv-SE){target="_blank"}
 * [Hantering av GPG-nycklar](https://experienceleague.adobe.com/docs/control-panel/using/instances-settings/gpg-keys-management.html?lang=sv){target="_blank"}

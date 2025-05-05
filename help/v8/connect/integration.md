@@ -34,9 +34,9 @@ Campaign v8 kan ansluta till följande Adobe-lösningar. Bläddra bland länkarn
 
 Du kan också kombinera dina **målgrupper** och **resurser** mellan olika Experience Cloud-lösningar med funktioner för resursdelning och målgruppsdelning.
 
-Läs mer om **målgruppsdelning** mellan Campaign-lösningar och Experience Cloud i [dokumentationen för Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/integrating-with-adobe-experience-cloud/audience-sharing/sharing-audiences-with-adobe-experience-cloud.html#integrating-with-adobe-experience-cloud){target="_blank"}.
+Läs mer om **målgruppsdelning** mellan Campaign-lösningar och Experience Cloud i [dokumentationen för Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/integrating-with-adobe-experience-cloud/audience-sharing/sharing-audiences-with-adobe-experience-cloud.html?lang=sv-SE#integrating-with-adobe-experience-cloud){target="_blank"}.
 
-Läs mer om **Resursdelning** mellan Campaign-lösningar och Experience Cloud i [Campaign Classic v7-dokumentation](https://experienceleague.adobe.com/docs/campaign-classic/using/integrating-with-adobe-experience-cloud/asset-sharing/sharing-assets-with-adobe-experience-cloud.html#integrating-with-adobe-experience-cloud){target="_blank"}.
+Läs mer om **Resursdelning** mellan Campaign-lösningar och Experience Cloud i [Campaign Classic v7-dokumentation](https://experienceleague.adobe.com/docs/campaign-classic/using/integrating-with-adobe-experience-cloud/asset-sharing/sharing-assets-with-adobe-experience-cloud.html?lang=sv-SE#integrating-with-adobe-experience-cloud){target="_blank"}.
 
 >[!NOTE]
 >

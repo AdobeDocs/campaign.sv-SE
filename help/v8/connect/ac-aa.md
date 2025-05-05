@@ -55,7 +55,7 @@ Följ stegen nedan för att skapa din **[!UICONTROL Report suite]** i [!DNL Adob
 
 1. På sidan **[!UICONTROL Report suite manager]** klickar du på **[!UICONTROL Create new]** och sedan på **[!UICONTROL Report suite]**.
 
-   Detaljerade anvisningar om hur du skapar **[!UICONTROL Report suite]** finns i [Adobe Analytics-dokumentation](https://experienceleague.adobe.com/docs/analytics/admin/manage-report-suites/new-report-suite/t-create-a-report-suite.html#prerequisites){target="_blank"}.
+   Detaljerade anvisningar om hur du skapar **[!UICONTROL Report suite]** finns i [Adobe Analytics-dokumentation](https://experienceleague.adobe.com/docs/analytics/admin/manage-report-suites/new-report-suite/t-create-a-report-suite.html?lang=sv-SE#prerequisites){target="_blank"}.
 
    ![](assets/analytics_connnector_3.png)
 
@@ -85,7 +85,7 @@ När du har skapat din **[!UICONTROL Report suite]** måste du konfigurera **[!U
 
 1. Klicka på **[!UICONTROL Add new]** för att skapa de identifierare som krävs för att mäta effekten av e-postkampanjen, dvs. det interna kampanjnamnet (cid) och ID:t för registret iNmsBroadlog (bid).
 
-   Mer information om hur du redigerar **[!UICONTROL Conversion variables]** finns i den här [Adobe Analytics-dokumentationen](https://experienceleague.adobe.com/docs/analytics/admin/admin-tools/conversion-variables/t-conversion-variables-admin.html#admin-tools){target="_blank"}.
+   Mer information om hur du redigerar **[!UICONTROL Conversion variables]** finns i den här [Adobe Analytics-dokumentationen](https://experienceleague.adobe.com/docs/analytics/admin/admin-tools/conversion-variables/t-conversion-variables-admin.html?lang=sv-SE#admin-tools){target="_blank"}.
 
    ![](assets/analytics_connnector_6.png)
 
@@ -108,7 +108,7 @@ När du har skapat din **[!UICONTROL Report suite]** måste du konfigurera **[!U
    * **[!UICONTROL Unique Opens]**
    * **[!UICONTROL Unsubscribed]**
 
-   Mer information om hur du konfigurerar **[!UICONTROL Success events]** finns i [Adobe Analytics-dokumentationen](https://experienceleague.adobe.com/docs/analytics/admin/admin-tools/manage-report-suites/edit-report-suite/conversion-variables/success-event.html)
+   Mer information om hur du konfigurerar **[!UICONTROL Success events]** finns i [Adobe Analytics-dokumentationen](https://experienceleague.adobe.com/docs/analytics/admin/admin-tools/manage-report-suites/edit-report-suite/conversion-variables/success-event.html?lang=sv-SE)
 
    ![](assets/analytics_connnector_8.png)
 
@@ -122,7 +122,7 @@ Nu måste du konfigurera ditt externa **[!UICONTROL Web Analytics]**-konto i Ado
 
 Observera att om en av dina **[!UICONTROL Report suite]**, **[!UICONTROL Conversion variables]** eller **[!UICONTROL Success events]** inte visas när du konfigurerar ditt externa konto, innebär det att du saknar behörighet för den nya komponenten i **[!UICONTROL Product profile]** som är associerad med användaren.
 
-Mer information finns på sidan [Produktprofiler för Adobe Analytics](https://experienceleague.adobe.com/docs/analytics/admin/admin-console/permissions/product-profile.html#product-profile-admins){target="_blank"}.
+Mer information finns på sidan [Produktprofiler för Adobe Analytics](https://experienceleague.adobe.com/docs/analytics/admin/admin-console/permissions/product-profile.html?lang=sv-SE#product-profile-admins){target="_blank"}.
 
 1. Bläddra till mappen **[!UICONTROL Administration]** > **[!UICONTROL Platform]** > **[!UICONTROL External accounts]** i Adobe Campaign Explorer-trädet och klicka på **[!UICONTROL New]**.
 
@@ -146,7 +146,7 @@ Mer information finns på sidan [Produktprofiler för Adobe Analytics](https://e
 
    >[!NOTE]
    >
-   >Fälten för kampanj-ID och Broadload ID samlas in via JavaScript på landningssidan eller via bearbetningsregler. [Läs mer om hur du bearbetar regler](https://experienceleague.adobe.com/en/docs/analytics/admin/admin-tools/manage-report-suites/edit-report-suite/report-suite-general/c-processing-rules/processing-rules)
+   >Fälten för kampanj-ID och Broadload ID samlas in via JavaScript på landningssidan eller via bearbetningsregler. [Läs mer om hur du bearbetar regler](https://experienceleague.adobe.com/sv/docs/analytics/admin/admin-tools/manage-report-suites/edit-report-suite/report-suite-general/c-processing-rules/processing-rules)
 
    ![](assets/analytics_connnector_11.png)
 

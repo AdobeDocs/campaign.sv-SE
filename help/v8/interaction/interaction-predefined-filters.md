@@ -18,7 +18,7 @@ Skapa fördefinierade filter för att definiera berättiganderegler för målpop
 
 >[!NOTE]
 >
->Adobe Campaign webbgränssnitt är ett användarvänligt gränssnitt där du enkelt kan hantera och anpassa fördefinierade filter efter just dina behov. Skapa en gång och spara för framtida bruk. Mer information om fördefinierade filter för webbgränssnitt finns i [Adobe Campaign Web UI-dokumentationen](https://experienceleague.adobe.com/en/docs/campaign-web/v8/start/predefined-filters){target=_blank}.
+>Adobe Campaign webbgränssnitt är ett användarvänligt gränssnitt där du enkelt kan hantera och anpassa fördefinierade filter efter just dina behov. Skapa en gång och spara för framtida bruk. Mer information om fördefinierade filter för webbgränssnitt finns i [Adobe Campaign Web UI-dokumentationen](https://experienceleague.adobe.com/sv/docs/campaign-web/v8/start/predefined-filters){target=_blank}.
 
 
 Om du vill skapa ett fördefinierat filter använder du följande process:

@@ -22,7 +22,7 @@ Med en **innehållshantering** -aktivitet kan du skapa och ändra ett innehåll 
 
 >[!NOTE]
 >
->Med Adobe Campaign webbanvändargränssnitt kan du använda innehållsfragment för ditt innehåll. Marknadsförare kan skapa flera anpassade innehållsblock i förväg tack vare återanvändbara komponenter som kan refereras i ett eller flera meddelanden, vilket gör att ni snabbt kan sammanställa meddelandeinnehållet i en förbättrad designprocess. Mer information om innehållsfragment finns i [Adobe Campaign Web UI-dokumentationen.](https://experienceleague.adobe.com/en/docs/campaign-web/v8/content/manage-reusable-content/fragments/fragments){target=_blank}
+>Med Adobe Campaign webbanvändargränssnitt kan du använda innehållsfragment för ditt innehåll. Marknadsförare kan skapa flera anpassade innehållsblock i förväg tack vare återanvändbara komponenter som kan refereras i ett eller flera meddelanden, vilket gör att ni snabbt kan sammanställa meddelandeinnehållet i en förbättrad designprocess. Mer information om innehållsfragment finns i [Adobe Campaign Web UI-dokumentationen.](https://experienceleague.adobe.com/sv/docs/campaign-web/v8/content/manage-reusable-content/fragments/fragments){target=_blank}
 
 Aktivitetens egenskaper är uppdelade i tre steg:
 

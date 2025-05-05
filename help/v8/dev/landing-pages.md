@@ -20,7 +20,7 @@ Bläddra till [webbanvändargränssnittet](../start/campaign-ui.md#campaign-web-
 
 >[!AVAILABILITY]
 >
->* Användargränssnittet för Campaign-webben är bara tillgängligt för användare som ansluter till Adobe Campaign med sin Adobe ID. Läs mer om [Adobe Identity Management System (IMS)](https://helpx.adobe.com/enterprise/using/identity.html){target="_blank"}.
+>* Användargränssnittet för Campaign-webben är bara tillgängligt för användare som ansluter till Adobe Campaign med sin Adobe ID. Läs mer om [Adobe Identity Management System (IMS)](https://helpx.adobe.com/se/enterprise/using/identity.html){target="_blank"}.
 >
 >* Det går inte att visa eller redigera landningssidor som du skapar i användargränssnittet för Campaign-webben i klientkonsolen för Campaign.
 >
@@ -34,34 +34,34 @@ Med landningssidor kan man
 * Förse mottagarna med möjligheten att avbryta prenumerationen på era meddelanden.
 
 
-Läs mer om landningssidor i [dokumentationen för gränssnittet för Campaign på webben](https://experienceleague.adobe.com/en/docs/campaign-web/v8/landing-pages/get-started-lp){target="_blank"}.
+Läs mer om landningssidor i [dokumentationen för gränssnittet för Campaign på webben](https://experienceleague.adobe.com/sv/docs/campaign-web/v8/landing-pages/get-started-lp){target="_blank"}.
 
 Du kan även bläddra i följande avsnitt:
 
 <table style="table-layout:fixed"><tr style="border: 0;">
 <td>
-<a href="https://experienceleague.adobe.com/en/docs/campaign-web/v8/landing-pages/create-lp">
+<a href="https://experienceleague.adobe.com/sv/docs/campaign-web/v8/landing-pages/create-lp">
 <img alt="Lead" src="assets/do-not-localize/lp-subscription.jpeg">
 </a>
-<div><a href="https://experienceleague.adobe.com/en/docs/campaign-web/v8/landing-pages/create-lp"><strong>Skapa landningssidor</strong>
+<div><a href="https://experienceleague.adobe.com/sv/docs/campaign-web/v8/landing-pages/create-lp"><strong>Skapa landningssidor</strong>
 </div>
 <p>
 </td>
 <td>
-<a href="https://experienceleague.adobe.com/en/docs/campaign-web/v8/landing-pages/lp-content">
+<a href="https://experienceleague.adobe.com/sv/docs/campaign-web/v8/landing-pages/lp-content">
 <img alt="Validering" src="assets/do-not-localize//lp-design.jpg">
 </a>
 <div>
-<a href="https://experienceleague.adobe.com/en/docs/campaign-web/v8/landing-pages/lp-content"><strong>Utforma landningssidor</strong></a>
+<a href="https://experienceleague.adobe.com/sv/docs/campaign-web/v8/landing-pages/lp-content"><strong>Utforma landningssidor</strong></a>
 </div>
 <p>
 </td>
 <td>
-<a href="https://experienceleague.adobe.com/en/docs/campaign-web/v8/landing-pages/lp-templates">
+<a href="https://experienceleague.adobe.com/sv/docs/campaign-web/v8/landing-pages/lp-templates">
 <img alt="Validering" src="assets/do-not-localize/lp-reporting.jpg">
 </a>
 <div>
-<a href="https://experienceleague.adobe.com/en/docs/campaign-web/v8/landing-pages/lp-templates"><strong>Arbeta med mallar för landningssidor</strong></a>
+<a href="https://experienceleague.adobe.com/sv/docs/campaign-web/v8/landing-pages/lp-templates"><strong>Arbeta med mallar för landningssidor</strong></a>
 </div>
 <p>
 </td>

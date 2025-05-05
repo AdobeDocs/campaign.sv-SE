@@ -43,7 +43,7 @@ Funktionen **[!UICONTROL Audit trail]** i Adobe Campaign ger en detaljerad redov
 
 * Med **Alternativ granskningsspår** kan du kontrollera aktiviteter och senaste ändringar som du har gjort i alternativen.
 
-  Mer information om alternativ finns på [sidan](https://experienceleague.adobe.com/en/docs/campaign-classic/using/installing-campaign-classic/appendices/configuring-campaign-options).
+  Mer information om alternativ finns på [sidan](https://experienceleague.adobe.com/sv/docs/campaign-classic/using/installing-campaign-classic/appendices/configuring-campaign-options).
 
 * **Leveransverifieringskedja** gör att du kan kontrollera aktiviteter och senaste ändringar som du har gjort i leveranserna.
 

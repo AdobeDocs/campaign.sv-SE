@@ -121,7 +121,7 @@ Välj den leveransmall som ska användas och klicka på **[!UICONTROL Ok]**.
 
 ### Kör en mall {#execute-a-template}
 
-Du kan starta körningen av en mall direkt från malllistan utan att först skapa en leverans. Leveransmallen kan köras manuellt, enligt beskrivningen nedan, eller aktiveras av en händelse (som körs vid en viss tidpunkt, när en fil är tillgänglig på servern, osv.), vilket förklaras i [det här avsnittet](https://experienceleague.adobe.com/en/docs/campaign/automation/workflows/wf-activities/action-activities/delivery).
+Du kan starta körningen av en mall direkt från malllistan utan att först skapa en leverans. Leveransmallen kan köras manuellt, enligt beskrivningen nedan, eller aktiveras av en händelse (som körs vid en viss tidpunkt, när en fil är tillgänglig på servern, osv.), vilket förklaras i [det här avsnittet](https://experienceleague.adobe.com/sv/docs/campaign/automation/workflows/wf-activities/action-activities/delivery).
 
 Så här kör du en mall manuellt:
 
@@ -155,4 +155,4 @@ I den här videon förklaras hur du distribuerar en mall för ad hoc-e-postlever
 
 >[!VIDEO](https://video.tv.adobe.com/v/338965?quality=12)
 
-Det finns ytterligare utbildningsvideor för Campaign [här](https://experienceleague.adobe.com/docs/campaign-learn/tutorials/getting-started/introduction-to-adobe-campaign.html){target="_blank"}.
+Det finns ytterligare utbildningsvideor för Campaign [här](https://experienceleague.adobe.com/docs/campaign-learn/tutorials/getting-started/introduction-to-adobe-campaign.html?lang=sv-SE){target="_blank"}.

@@ -38,11 +38,11 @@ Adobe Campaign innehåller processer och inställningar som gör att ni kan anv�
 
 * **Datainsamling**: Med Adobe Campaign kan du samla in data, inklusive personlig och känslig information. Det är därför viktigt att du får och hanterar samtycke från dina mottagare.
 
-  Läs mer i [Campaign Classic v7-dokumentationen](https://experienceleague.adobe.com/docs/campaign-classic/using/getting-started/privacy/privacy-and-recommendations.html#data-acquisition){target="_blank"}
+  Läs mer i [Campaign Classic v7-dokumentationen](https://experienceleague.adobe.com/docs/campaign-classic/using/getting-started/privacy/privacy-and-recommendations.html?lang=sv-SE#data-acquisition){target="_blank"}
 
 * **Användarens samtycke och datalagring**: du måste få användarens samtycke, konfigurera prenumerationsmekanismer för dubbel anmälan, underlätta avanmälan och konfigurera datalagring.
 
-  Läs mer i [Sekretessdokumentationen för Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/getting-started/privacy/privacy-and-recommendations.html#consent){target="_blank"}
+  Läs mer i [Sekretessdokumentationen för Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/getting-started/privacy/privacy-and-recommendations.html?lang=sv-SE#consent){target="_blank"}
 
 * **Sekretess- och dataskyddsbestämmelser**: se [det här avsnittet](privacy.md) för information om sekretesskrav och hur dessa bestämmelser påverkar din organisation och Adobe Campaign.
 
@@ -83,18 +83,18 @@ Innan du börjar skicka meddelanden och skapa marknadsföringskampanjer måste d
    Kampanjer, leveranser, jobb eller arbetsflöden är alla baserade på en mall som lagrar viktiga inställningar och funktioner. En inbyggd mall tillhandahålls för varje komponent som ingen specifik konfiguration har definierats för. Du måste konfigurera och anpassa mallar efter dina behov och göra dem tillgängliga för slutanvändarna.
 
 
-   Lär dig hur du arbetar med kampanjmallar på [den här sidan](https://experienceleague.adobe.com/docs/campaign/automation/campaign-orchestration/marketing-campaign-templates.html){target="_blank"}.
+   Lär dig hur du arbetar med kampanjmallar på [den här sidan](https://experienceleague.adobe.com/docs/campaign/automation/campaign-orchestration/marketing-campaign-templates.html?lang=sv-SE){target="_blank"}.
 
-   Lär dig hur du konfigurerar en arbetsflödesmall på [den här sidan](https://experienceleague.adobe.com/docs/campaign/automation/workflows/introduction/build-a-workflow.html){target="_blank"}.
+   Lär dig hur du konfigurerar en arbetsflödesmall på [den här sidan](https://experienceleague.adobe.com/docs/campaign/automation/workflows/introduction/build-a-workflow.html?lang=sv-SE){target="_blank"}.
 
-   Läs mer om e-postmallar i [Campaign Classic v7-dokumentationen](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/using-delivery-templates/about-templates.html){target="_blank"}.
+   Läs mer om e-postmallar i [Campaign Classic v7-dokumentationen](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/using-delivery-templates/about-templates.html?lang=sv-SE){target="_blank"}.
 
 
 1. **Konfigurera typologiregler**
 
    Använd regler för kampanjtypologier för att filtrera, styra och övervaka leveransen. Trötthetsreglerna styr till exempel frekvens och kvantitet för meddelanden för att undvika att mottagarna blir för många. När typologireglerna är implementerade refereras de i leveranser.
 
-   Läs mer om typologier och trötthetshantering i [det här avsnittet](https://experienceleague.adobe.com/docs/campaign/automation/campaign-optimization/campaign-typologies.html){target="_blank"}.
+   Läs mer om typologier och trötthetshantering i [det här avsnittet](https://experienceleague.adobe.com/docs/campaign/automation/campaign-optimization/campaign-typologies.html?lang=sv-SE){target="_blank"}.
 
 1. **Bekanta dig med Campaigns inbyggda datamodell**
 

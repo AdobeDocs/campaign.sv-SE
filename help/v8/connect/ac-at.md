@@ -74,7 +74,7 @@ Du kan sedan definiera bildparametrarna:
 * Med **[!UICONTROL Landing Page]** kan du dirigera om standardbilden till en standardstartsida. Den här URL:en används bara när standardbilden visas i det slutliga e-postmeddelandet. Det är valfritt.
 * **[!UICONTROL Additional decision parameters]** definierar mappningen mellan fälten som definieras i Adobe Target-segmenten och Adobe Campaign-fälten. De Adobe Campaign-fält som används måste ha angetts i rutan. I vårt exempel har vi lagt till fältet Land.
 
-Om du använder Enterprise-behörigheter i inställningarna för Adobe Target lägger du till motsvarande egenskap i det här fältet. Läs mer om behörigheter för målföretag i [Adobe Target-dokumentationen](https://experienceleague.adobe.com/en/docs/target/using/administer/manage-users/enterprise/properties-overview#administer){target="_blank"}.
+Om du använder Enterprise-behörigheter i inställningarna för Adobe Target lägger du till motsvarande egenskap i det här fältet. Läs mer om behörigheter för målföretag i [Adobe Target-dokumentationen](https://experienceleague.adobe.com/sv/docs/target/using/administer/manage-users/enterprise/properties-overview#administer){target="_blank"}.
 
 ![](assets/target_13.png)
 
@@ -94,7 +94,7 @@ I vårt fall behöver vi två omdirigeringserbjudanden, det tredje (standarderbj
 
    ![](assets/target_6.png)
 
-1. Följ samma procedur för det återstående omdirigeringserbjudandet. Mer information finns i [Adobe Target-dokumentationen](https://experienceleague.adobe.com/docs/target/using/experiences/offers/offer-redirect.html#experiences){target="_blank"}.
+1. Följ samma procedur för det återstående omdirigeringserbjudandet. Mer information finns i [Adobe Target-dokumentationen](https://experienceleague.adobe.com/docs/target/using/experiences/offers/offer-redirect.html?lang=sv-SE#experiences){target="_blank"}.
 
 ### Skapa målgrupper {#audiences-target}
 

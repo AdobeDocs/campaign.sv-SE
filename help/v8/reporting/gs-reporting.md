@@ -46,10 +46,10 @@ Adobe Campaign tillhandahåller en uppsättning rapporteringsverktyg som listas 
 
   ![](assets/desc-analysis-report.png)
 
-  Rapporter om kampanjbeskrivande analyser presenteras i [Campaign Classic v7-dokumentation](https://experienceleague.adobe.com/docs/campaign-classic/using/reporting/analyzing-populations/about-descriptive-analysis.html){target="_blank"}.
+  Rapporter om kampanjbeskrivande analyser presenteras i [Campaign Classic v7-dokumentation](https://experienceleague.adobe.com/docs/campaign-classic/using/reporting/analyzing-populations/about-descriptive-analysis.html?lang=sv-SE){target="_blank"}.
 
 * **Anpassade rapporter**
 
   Använd Adobe Campaign för att skapa rapporter om data i databasen. När du har skapat dem kan du göra dem tillgängliga i rätt sammanhang.
 
-  Steg för att skapa en rapport beskrivs i [Campaign Classic v7-dokumentationen](https://experienceleague.adobe.com/docs/campaign-classic/using/reporting/creating-new-reports/about-reports-creation-in-campaign.html){target="_blank"}. Framtagning av anpassade rapporter är reserverat för avancerade användare.
+  Steg för att skapa en rapport beskrivs i [Campaign Classic v7-dokumentationen](https://experienceleague.adobe.com/docs/campaign-classic/using/reporting/creating-new-reports/about-reports-creation-in-campaign.html?lang=sv-SE){target="_blank"}. Framtagning av anpassade rapporter är reserverat för avancerade användare.

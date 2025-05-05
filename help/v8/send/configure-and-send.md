@@ -42,7 +42,7 @@ Använd alternativet **[!UICONTROL Test SMTP delivery]** för att testa att skic
 >
 >* Det här alternativet får inte ställas in i mitten av källkoden.
 >
->* Läs mer om SMTP-serverkonfigurationen i [Campaign Classic v7-dokumentationen](https://experienceleague.adobe.com/docs/campaign-classic/using/installing-campaign-classic/additional-configurations/configure-delivery-settings.html#smtp-relay){target="_blank"}.
+>* Läs mer om SMTP-serverkonfigurationen i [Campaign Classic v7-dokumentationen](https://experienceleague.adobe.com/docs/campaign-classic/using/installing-campaign-classic/additional-configurations/configure-delivery-settings.html?lang=sv-SE#smtp-relay){target="_blank"}.
 
 ## Skicka med flera vågor {#sending-using-multiple-waves}
 

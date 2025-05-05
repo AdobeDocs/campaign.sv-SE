@@ -33,7 +33,7 @@ Skapa och kör ett allmänt dataimportjobb för att läsa in kontakter i molndat
 
 ![](assets/new-import.png)
 
-Lär dig hur du kör enhetsimportjobb för att mata in din databas i [Campaign Classic v7-dokumentationen](https://experienceleague.adobe.com/docs/campaign-classic/using/getting-started/importing-and-exporting-data/generic-imports-exports/about-generic-imports-exports.html){target="_blank"}.
+Lär dig hur du kör enhetsimportjobb för att mata in din databas i [Campaign Classic v7-dokumentationen](https://experienceleague.adobe.com/docs/campaign-classic/using/getting-started/importing-and-exporting-data/generic-imports-exports/about-generic-imports-exports.html?lang=sv-SE){target="_blank"}.
 
 ## Samla in profiler via webbprogram
 
@@ -41,7 +41,7 @@ Använd Campaign för att skapa webbformulär och samla in och hantera profilinf
 
 ![](assets/web-form-page.png)
 
-Lär dig hur du skapar webbformulär i [Campaign Classic v7-dokumentationen](https://experienceleague.adobe.com/docs/campaign-classic/using/designing-content/web-forms/about-web-forms.html){target="_blank"}.
+Lär dig hur du skapar webbformulär i [Campaign Classic v7-dokumentationen](https://experienceleague.adobe.com/docs/campaign-classic/using/designing-content/web-forms/about-web-forms.html?lang=sv-SE){target="_blank"}.
 
 **Relaterade ämnen**
 

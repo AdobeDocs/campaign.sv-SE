@@ -36,7 +36,7 @@ Behöver du hjälp medan du arbetar med Campaign? Läs de viktigaste frågorna o
 
    Lär dig hur du ansluter till Adobe Experience Cloud och kommer åt Adobe Campaign webbgränssnitt [på den här sidan](campaign-ui.md#ac-web-ui).
 
-   Läs mer i [Adobe Campaign webbgränssnitt ](https://experienceleague.adobe.com/en/docs/campaign-web/v8/campaign-web-home){target="_blank"}.
+   Läs mer i [Adobe Campaign webbgränssnitt ](https://experienceleague.adobe.com/sv/docs/campaign-web/v8/campaign-web-home){target="_blank"}.
 
 1. **Kan Campaign v8 installeras på en lokal eller hybridmiljö?**
 
@@ -48,17 +48,17 @@ Behöver du hjälp medan du arbetar med Campaign? Läs de viktigaste frågorna o
 
    Läs den här guiden om du vill veta mer om [Bästa praxis för leverans](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/introduction.html?lang=sv){target="_blank"}
 
-   Lär dig hur du implementerar levererbarhet i Campaign [i den här guiden](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/additional-resources/general-resources.html){target="_blank"}
+   Lär dig hur du implementerar levererbarhet i Campaign [i den här guiden](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/additional-resources/general-resources.html?lang=sv-SE){target="_blank"}
 
 1. **Hur kan jag se till att min leverans skickas utan fel?**
 
    Adobe Campaign har en uppsättning instrumentpaneler och verktyg för att övervaka e-postleveranser.
 
-   [Läs igenom Campaign Classic v7-dokumentationen och lär dig](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/monitoring-deliveries/about-delivery-monitoring.html){target="_blank"} hur du ser till att dina meddelanden skickas, övervakar körningen och utför en åtgärd om ett fel inträffar.
+   [Läs igenom Campaign Classic v7-dokumentationen och lär dig](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/monitoring-deliveries/about-delivery-monitoring.html?lang=sv-SE){target="_blank"} hur du ser till att dina meddelanden skickas, övervakar körningen och utför en åtgärd om ett fel inträffar.
 
 1. **Kan jag övervaka arbetsflödeskörningen?**
 
-   Förstå hur du övervakar körningen av Campaign-arbetsflödet [på den här sidan](https://experienceleague.adobe.com/docs/campaign/automation/workflows/executing-a-workflow/start-a-workflow.html)
+   Förstå hur du övervakar körningen av Campaign-arbetsflödet [på den här sidan](https://experienceleague.adobe.com/docs/campaign/automation/workflows/executing-a-workflow/start-a-workflow.html?lang=sv-SE)
 
 1. **Vilka system och komponenter är Campaign v8 kompatibelt med?**
 
@@ -86,7 +86,7 @@ Behöver du hjälp medan du arbetar med Campaign? Läs de viktigaste frågorna o
 
    Som administratörsanvändare kan du hämta Adobe Campaign via Adobe [Software Distribution](https://experience.adobe.com/#/downloads/content/software-distribution/en/campaign.html){target="_blank"}  .
 
-   Läs mer om Distribution Center [på den här sidan](https://experienceleague.adobe.com/docs/experience-cloud/software-distribution/home.html){target="_blank"}.
+   Läs mer om Distribution Center [på den här sidan](https://experienceleague.adobe.com/docs/experience-cloud/software-distribution/home.html?lang=sv-SE){target="_blank"}.
 
 1. **Kan jag få kontakt med Campaign-experter?**
 
