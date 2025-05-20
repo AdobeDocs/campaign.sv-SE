@@ -5,9 +5,9 @@ feature: Permissions
 role: User, Admin
 level: Beginner
 exl-id: 5bd8dbba-7a06-4737-bc5a-60354f91c709
-source-git-commit: 0513b9f65e9431f5207b384a0e2d8c5aeb8e209f
+source-git-commit: 4a62c551c43cd5a4866df36cce10e294f35db363
 workflow-type: tm+mt
-source-wordcount: '253'
+source-wordcount: '310'
 ht-degree: 0%
 
 ---
@@ -30,6 +30,12 @@ Följ stegen nedan om du vill redigera behörigheter i en viss Campaign-mapp:
 * Om du vill **auktorisera en grupp eller en operator** klickar du på knappen **[!UICONTROL Add]** och väljer gruppen eller operatorn för att tilldela behörigheter för den här mappen.
 * Om du vill **förbjuda en grupp eller en operator** klickar du på **[!UICONTROL Delete]** och väljer den grupp eller operator som du vill ta bort behörigheten för den här mappen.
 * Om du vill **markera de rättigheter som tilldelats en grupp eller en operator** markerar du gruppen eller operatorn, markerar de rättigheter som du vill ge och avmarkerar de andra.
+
+>[!NOTE]
+>
+>Du bör inte kunna skapa ett objekt som du inte har minst en mapp med skrivbehörighet för.
+>
+>Du behöver inte vara administratör för att skapa fragment, men du måste ha skrivbehörighet för minst en innehållets visuella fragmentmapp. Annars kan du inte skapa ett visuellt fragment.
 
 ## Sprid behörigheter {#propagate-permissions}
 

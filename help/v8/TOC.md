@@ -5,9 +5,9 @@ user-guide-description: Produktdokumentation för Adobe Campaign v8 (klientkonso
 title: Adobe Campaign v8-dokumentation
 description: Kampanjdokumentation v8
 breadcrumb-title: Dokumentation om Campaign v8
-source-git-commit: d50c746d11b6f1bb0b5af0d5ddab5660b99dc359
+source-git-commit: 4a62c551c43cd5a4866df36cce10e294f35db363
 workflow-type: tm+mt
-source-wordcount: '692'
+source-wordcount: '695'
 ht-degree: 18%
 
 ---
@@ -41,12 +41,12 @@ ht-degree: 18%
    + [Vanliga frågor och svar ](start/campaign-faq.md)
 + Kampanjhantering {#campaigns}
    + [Kom igång med kampanjer](start/campaigns.md)
-   + [Kampanjsamordning >](https://experienceleague.adobe.com/docs/campaign/automation/campaign-orchestration/set-up-campaigns.html?lang=sv-SE)
+   + [Kampanjsamordning >](https://experienceleague.adobe.com/docs/campaign/automation/campaign-orchestration/set-up-campaigns.html)
 + Skicka meddelanden{#send}
    + [Kom igång med meddelanden](start/gs-message.md)
    + [Skapa din första leverans](start/create-message.md)
    + [God praxis för leverans](start/delivery-best-practices.md)
-   + E-postmeddelanden {#emails}
+   + E-post {#emails}
       + [Designa och validera e-postmeddelanden](send/email.md)
       + [Länka till spegelsidan](send/mirror-page.md)
       + [Lägg till en hemlig kopia-adress](send/email-bcc.md)
@@ -62,7 +62,7 @@ ht-degree: 18%
          + [Fristående instans](send/sms/sms-standalone-instance.md)
          + [Infrastruktur för mellanleverantörer](send/sms/sms-mid-sourcing.md)
          + [SMPP-anslutningsbeskrivning](send/sms/smpp-connector-delivery.md)
-      + Skapa ett SMS {#create-sms}
+      + Skapa ett SMS  {#create-sms}
          + [Skapa en SMS-leverans](send/sms/create-sms.md)
          + [Definiera innehållet](send/sms/sms-content.md)
          + [Välj målgruppen](send/sms/sms-audience.md)
@@ -72,7 +72,7 @@ ht-degree: 18%
       + [Övervaka och spåra SMS](send/sms/sms-monitor.md)
    + Push-meddelanden {#push}
       + [Skapa och skicka push-meddelanden](send/push.md)
-      + Omfattande push {#rich-push}
+      + Rich push {#rich-push}
          + [Designa en omfattande Android-leverans](send/rich-push-android.md)
          + [Designa en omfattande iOS-leverans](send/rich-push-ios.md)
       + [Konfigurera kanal för push-meddelanden](send/push-settings.md)
@@ -80,6 +80,7 @@ ht-degree: 18%
    + [LINE-meddelanden](send/line.md)
    + [Direktmeddelande](send/direct-mail.md)
    + [X (Twitter)](send/twitter.md)
+   + [Anpassad extern kanal](send/custom-channel.md)
    + Anpassa innehåll {#personalize}
       + [Kom igång med personalisering](send/personalize.md)
       + [Personaliseringsdata](send/personalization-data.md)
@@ -91,7 +92,7 @@ ht-degree: 18%
       + [Leveransanalys](send/delivery-analysis.md)
       + [Konfigurera och skicka leveransen](send/configure-and-send.md)
       + [Tidsoptimering för sändning](send/predictive.md)
-   + Fel, studsar och karantän {#failures}
+   + Fel, studsar och karantän{#failures}
       + [Karantän](send/quarantines.md)
       + [Leveransfel](send/delivery-failures.md)
    + [Arbeta med leveransmallar](send/create-templates.md)
@@ -123,8 +124,8 @@ ht-degree: 18%
    + [Skapa landningssidor](dev/landing-pages.md)
    + [Designa webbprogram och formulär](dev/webapps.md)
 + Automatisering och arbetsflöden {#automation}
-   + [Kampanjautomatiseringsguide >](https://experienceleague.adobe.com/sv/docs/campaign/automation/home)
-+ Sekretess- och säkerhetshantering {#privacy}
+   + [Kampanjautomatiseringsguide >](https://experienceleague.adobe.com/en/docs/campaign/automation/home)
++ Integritet och säkerhetshantering {#privacy}
    + [Hantera förfrågningar om användarens information](start/privacy.md)
    + [Säkerhetsanvisningar](config/security.md)
    + [Förbättrat säkerhetstillägg](config/enhanced-security.md)
@@ -151,12 +152,12 @@ ht-degree: 18%
    + [Granskningskedja](reporting/audit-trail.md)
    + Arbeta med rapporter{#reports}
       + [Kom igång med rapporter](reporting/gs-reporting.md)
-      + Skapa kuber {#cubes}
+      + Skapa kuber{#cubes}
          + [Kom igång med kuber](reporting/gs-cubes.md)
          + [Skapa en kub](reporting/cube-indicators.md)
          + [Skapa rapporter med kuber](reporting/cube-tables.md)
          + [Anpassa kuber](reporting/customize-cubes.md)
-      + Inbyggda rapporter {#ac-reports}
+      + Inbyggda rapporter{#ac-reports}
          + [Lista med inbyggda rapporter](reporting/built-in-reports.md)
          + [Globala rapporter](reporting/global-reports.md)
          + [Leveransrapporter](reporting/delivery-reports.md)
@@ -165,7 +166,7 @@ ht-degree: 18%
 + Datahantering {#data}
    + [Kom igång med arbetsflöden](config/workflows.md)
    + [Importera data](start/import.md)
-   + [Arbetsflödesdokumentation](https://experienceleague.adobe.com/docs/campaign/automation/workflows/introduction/about-workflows.html?lang=sv-SE)
+   + [Arbetsflödesdokumentation](https://experienceleague.adobe.com/docs/campaign/automation/workflows/introduction/about-workflows.html)
 + Integreringar {#connect}
    + [Connect Campaign med andra lösningar](connect/integration.md)
    + Campaign + Experience Platform {#ac-aep}
@@ -179,7 +180,7 @@ ht-degree: 18%
    + [Campaign + Workfront](connect/ac-workfront.md)
    + [Campaign + X (Twitter)](connect/ac-tw.md)
    + [Kampanj + extern databas](connect/fda.md)
-   + Kampanj + din CRM {#ac-crm}
+   + Campaign + din CRM {#ac-crm}
       + [Kom igång med CRM-anslutningar](connect/crm.md)
       + [Arbeta med Campaign och SFDC](connect/ac-sfdc.md)
       + [Arbeta med Campaign och Microsoft Dynamics](connect/ac-ms-dyn.md)
@@ -228,6 +229,6 @@ ht-degree: 18%
       + [Inmatningsformulär](dev/forms.md)
    + [Arbeta med datapaket](dev/packages.md)
    + [Kampanj-API:er](dev/api.md)
-+ [Kampanjtekniker >](https://experienceleague.adobe.com/sv/docs/campaign/technotes-ac/technotes-home)
-+ [Dokumentation för webbanvändargränssnittet för kampanj >](https://experienceleague.adobe.com/sv/docs/campaign-web/v8/campaign-web-home)
++ [Kampanjtekniker >](https://experienceleague.adobe.com/en/docs/campaign/technotes-ac/technotes-home)
++ [Dokumentation för webbanvändargränssnittet för kampanj >](https://experienceleague.adobe.com/en/docs/campaign-web/v8/campaign-web-home)
 
