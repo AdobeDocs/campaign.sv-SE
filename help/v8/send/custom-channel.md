@@ -17,7 +17,7 @@ Med Adobe Campaign kan ni skapa anpassade externa kanaler som är integrerade me
 
 Leveransskapande och -sändning kan utföras både i klientkonsolen och i webbgränssnittet. Den anpassade externa kanalen utförs dock bara i klientkonsolen.
 
-Mer information om hur du skapar och skickar en leverans baserad på en anpassad extern kanal finns på [sidan](https://experienceleague.adobe.com/docs/campaign-web/v8/msg/gs-custom-channel.html).
+Mer information om hur du skapar och skickar en leverans baserad på en anpassad extern kanal finns på [sidan](https://experienceleague.adobe.com/docs/campaign-web/v8/msg/gs-custom-channel.html?lang=sv-SE).
 
 Så här skapar du en ny extern anpassad kanal i klientkonsolen:
 
