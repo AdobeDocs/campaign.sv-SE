@@ -6,9 +6,9 @@ feature: Approvals, Campaigns
 role: User
 version: Campaign v8, Campaign Classic v7
 exl-id: 03be5058-436e-4de9-99a7-91d799aa17f6
-source-git-commit: a5f7cf6e21b263f8a7fb4fa19a88bebb78390c3d
+source-git-commit: 24ecf598d3d01f7fb59c70e1c8c81e9c086e653e
 workflow-type: tm+mt
-source-wordcount: '2281'
+source-wordcount: '2279'
 ht-degree: 1%
 
 ---
@@ -91,7 +91,7 @@ Om en lista med granskare definieras, godkänns ett jobb när en granskare har g
 
 ## Granska och godkänn leveranser {#review-and-approve-deliveries}
 
-För varje kampanj kan du godkänna leveransmålet, [leveransinnehållet](#approving-content) och kostnaderna. Adobe Campaign-operatörer som ansvarar för godkännande kan meddelas via e-post och kan acceptera eller avvisa godkännande från klientkonsolen eller via en webbläsare. [Läs mer](#approving-processes).
+För varje kampanj kan du godkänna leveransmålet, [leveransinnehållet](#approving-content) och kostnaderna. Adobe Campaign-operatörer som ansvarar för godkännande kan meddelas via e-post och kan acceptera eller avvisa godkännande från klientkonsolen eller via en webbanslutning. [Läs mer](#approving-processes).
 
 För direktutskick kan Adobe Campaign-operatörer visa extraheringsfilen innan den skickas till routern, och om det behövs kan de ändra formatet och starta extraheringen igen. [Läs mer](#approve-an-extraction-file).
 
@@ -104,7 +104,7 @@ När dessa valideringsfaser är klara kan leveransen startas. [Läs mer](marketi
 
 ### Steg för att godkänna en leverans {#approving-processes}
 
-Stegen som kräver godkännande visas på kampanjkontrollpanelen (via klientkonsolen eller en webbläsare). De visas också i leveransspårningstabellen och på leveransinstrumentpanelen.
+De faser som kräver godkännande visas på kampanjkontrollpanelen (via klientkonsolen eller webbgränssnittet). De visas också i leveransspårningstabellen och på leveransinstrumentpanelen.
 
 ![](assets/delivery-approval-actions.png)
 
@@ -166,7 +166,7 @@ Det går att konfigurera en innehållsgodkännandecykel. Det gör du genom att v
 
    * via e-postmeddelandet med meddelandet: e-postmeddelandet innehåller en länk till de korrektur som redan har skickats, och eventuellt till en återgivning av meddelandet för de olika webbreklementen om tillägget **Slutprodukt** är aktiverat för den här instansen.
 
-   * via klientkonsolen eller en webbläsare, leveransspårning, kontrollpanelen för leverans eller kontrollpanelen för kampanjer. På den här kampanjinstrumentpanelen kan du visa en lista med korrektur som har skickats genom att klicka på länken **[!UICONTROL Inbox rendering...]**. Klicka på ikonen **[!UICONTROL Detail]** till höger om listan för att visa innehållet.
+   * via klientkonsolen eller webbgränssnittet, leveransspårning, kontrollpanelen för leverans eller kontrollpanelen för kampanjer. På den här kampanjinstrumentpanelen kan du visa en lista med korrektur som har skickats genom att klicka på länken **[!UICONTROL Inbox rendering...]**. Klicka på ikonen **[!UICONTROL Detail]** till höger om listan för att visa innehållet.
 
 1. Ett e-postmeddelande skickas till den person som är ansvarig för kampanjen som informerar dem om huruvida innehållet har godkänts eller inte. Den person som ansvarar för kampanjen kan när som helst starta om innehållsgodkännandecykeln. Det gör du genom att klicka på länken på raden **[!UICONTROL Content status]** på kontrollpanelen för kampanjer (på leveransnivå) och sedan klicka på **[!UICONTROL Reset content approval to submit it again]**.
 
@@ -188,7 +188,7 @@ Med det här alternativet kan du definiera någon som ansvarar för redigering a
 
    För att göra detta kan de använda:
 
-   * länken **[!UICONTROL Available content]** i Adobe Campaign klientkonsol.
+   * länken **[!UICONTROL Available content]** i Adobe Campaign Client Console.
    * länken i meddelandet.
 Operatören kan lägga till en kommentar innan innehållet skickas till den person som ansvarar för kampanjen.
 I meddelandet kan granskaren godkänna eller avvisa innehållet.
@@ -200,7 +200,7 @@ Med det här alternativet kan du definiera en extern operatör som ansvarar för
 1. Den externa innehållshanteraren får ett e-postmeddelande om att innehållet har godkänts och begär externt godkännande.
 1. E-postmeddelandet innehåller länkar till skickade korrektur, som gör att du kan visa leveransåtergivning, och en knapp för att godkänna eller avvisa leveransinnehållet.
 
-De här länkarna är bara tillgängliga om ett eller flera korrektur har skickats. I annat fall är leveransåtergivning bara tillgängligt via klientkonsolen eller en webbläsare.
+De här länkarna är bara tillgängliga om ett eller flera korrektur har skickats. I annat fall är leveransåtergivning bara tillgängligt via klientkonsolen eller webbgränssnittet.
 
 ### Godkänn en extraheringsfil {#approve-an-extraction-file}
 
@@ -220,7 +220,7 @@ Jobb kan godkännas på kontrollpanelen för kampanjer, på fliken för leverans
 
 ### Godkänn på kontrollpanelen {#approval-via-the-dashboard}
 
-Om du vill godkänna ett jobb via klientkonsolen eller via en webbläsare klickar du på lämplig länk på kontrollpanelen för kampanjer.
+Om du vill godkänna ett jobb via klientkonsolen eller webbgränssnittet klickar du på lämplig länk på kontrollpanelen för kampanjer.
 
 När leveransanalysen har utförts, till exempel:
 

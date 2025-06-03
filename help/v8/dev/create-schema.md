@@ -5,7 +5,7 @@ feature: Schema Extension, Configuration
 role: Developer
 level: Intermediate, Experienced
 exl-id: 796af848-b537-4b8d-a601-fe0628a1fc83
-source-git-commit: 09db0cc1a14bffefe8d1b8d0d5a06d5b6517a5bb
+source-git-commit: 41e39e046ec77de8b5e657ba76645898ff1cd2d7
 workflow-type: tm+mt
 source-wordcount: '408'
 ht-degree: 2%
@@ -14,7 +14,7 @@ ht-degree: 2%
 
 # Skapa ett nytt schema {#create-new-schema}
 
-Om du vill redigera, skapa och konfigurera scheman klickar du på noden **[!UICONTROL Administration > Configuration > Data schemas]** i Adobe Campaign klientkonsol.
+Om du vill redigera, skapa och konfigurera scheman klickar du på noden **[!UICONTROL Administration > Configuration > Data schemas]** i Adobe Campaign Client Console.
 
 >[!NOTE]
 >

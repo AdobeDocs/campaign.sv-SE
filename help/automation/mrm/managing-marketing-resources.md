@@ -5,7 +5,7 @@ description: Lär dig hantera marknadsföringsresurser
 feature: Campaigns, Resource Management
 role: User
 exl-id: 4d91fb7d-f846-4644-b83d-5a6a988ae297
-source-git-commit: c3f4ad0b56dd45d19eebaa4d2f06551c8fecac1d
+source-git-commit: 4f9183c7f1d12feb255a0050da423647f0fce85e
 workflow-type: tm+mt
 source-wordcount: '1111'
 ht-degree: 1%
@@ -113,7 +113,7 @@ Bläddra till fliken **[!UICONTROL Tracking]** för att kontrollera godkännande
 >
 >Förutom den granskare som har angetts för varje marknadsföringsresurs har operatorer med administratörsrättigheter och resurshanteraren behörighet att godkänna en marknadsföringsresurs.
 
-### Publish en resurs {#publishing-a-resource}
+### Publicera en resurs {#publishing-a-resource}
 
 Marknadsföringsresursen måste publiceras när den har godkänts. Publiceringsprocessen måste genomföras i enlighet med företagets krav. Detta innebär att resurser kan publiceras på ett extranät eller på en annan server, specifik information kan skickas till en extern tjänsteleverantör osv.
 

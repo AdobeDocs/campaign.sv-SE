@@ -5,7 +5,7 @@ feature: Permissions
 role: User, Admin
 level: Beginner
 exl-id: 3d61abac-03df-42d3-a950-37e41a5a7756
-source-git-commit: 19f85d4e19f756d8a45ce5364dd0601373128f50
+source-git-commit: 24ecf598d3d01f7fb59c70e1c8c81e9c086e653e
 workflow-type: tm+mt
 source-wordcount: '515'
 ht-degree: 1%
@@ -29,11 +29,11 @@ I Adobe Campaign är användarna **operatorer** och **operatorgrupper** använda
 
 ## Viktiga steg för att bevilja behörigheter{#key-steps-permissions}
 
-Som produktadministratör kan du bevilja behörigheter till användarna i din organisation. Behörigheter ges via Adobe Admin Console och Campaign-klientkonsolen. Användare loggar in på Adobe Campaign med sin Adobe ID. Lär dig hur du ansluter till Adobe Campaign på [den här sidan](connect.md).
+Som produktadministratör kan du bevilja behörigheter till användarna i din organisation. Behörigheter ges via Adobe Admin Console och Campaign Client Console. Användare loggar in på Adobe Campaign med sin Adobe ID. Lär dig hur du ansluter till Adobe Campaign på [den här sidan](connect.md).
 
 Viktiga steg är:
 
-* **Steg 1**: Definiera operatörsgrupper och tilldela behörigheter i Campaign-klientkonsolen. [Läs mer](manage-permissions.md#create-product-profile).
+* **Steg 1**: Definiera dina operatörsgrupper och tilldela dem behörigheter i Campaign Client Console. [Läs mer](manage-permissions.md#create-product-profile).
 Observera att du även kan använda inbyggda operatorgrupper som utgångspunkt. Dessa standardgrupper, och deras behörigheter, listas i [det här avsnittet](manage-permissions.md#ootb-productprofiles).
 * **Steg 2**: Skapa produktprofiler i Adobe Admin Console som matchar de grupperna. [Läs mer](manage-permissions.md#create-product-profile).
 Du kan börja med de inbyggda produktprofilerna. [Läs mer](manage-permissions.md#ootb-productprofiles).
@@ -52,7 +52,7 @@ Lär dig hur du lägger till användare på [den här sidan](manage-permissions.
 
 Produktprofiler är grupper av produkter och tjänster som du kan tilldela användare. I Adobe Experience Cloud baseras behörigheter på en produkts profil, inte på användaren. Du kan dock delegera administrativa behörigheter till specifika användare.
 
-I Admin Console kopplas varje **produktprofil** från Adobe Experience Cloud för Campaign till en **operatorgrupp** i Campaign-klientkonsolen.
+I Admin Console kopplas varje **produktprofil** från Adobe Experience Cloud för Campaign till en **operatorgrupp** i Campaign Client Console.
 
 Lär dig hur du skapar och tilldelar produktprofiler på [den här sidan](manage-permissions.md#create-a-product-profile).
 

@@ -7,7 +7,7 @@ level: Beginner
 hide: true
 hidefromtoc: true
 exl-id: 89a4ab6c-de8e-4408-97d2-8b8e574227f9
-source-git-commit: 09db0cc1a14bffefe8d1b8d0d5a06d5b6517a5bb
+source-git-commit: 41e39e046ec77de8b5e657ba76645898ff1cd2d7
 workflow-type: tm+mt
 source-wordcount: '375'
 ht-degree: 0%
@@ -21,7 +21,7 @@ På den här sidan visas kända fel som identifierats i **de senaste Campaign v8
 
 >[!NOTE]
 >
->Adobe publicerar den här listan över kända problem efter eget gottfinnande. Det baseras på antalet kundrapporter, allvarlighetsgraden och möjligheten att komma runt problemet. Om ett problem som du stöter på inte visas kanske det inte uppfyller villkoren för publicering på den här sidan.
+>Adobe publicerar den här listan över kända fel efter eget gottfinnande. Det baseras på antalet kundrapporter, allvarlighetsgraden och möjligheten att komma runt problemet. Om ett problem som du stöter på inte visas kanske det inte uppfyller villkoren för publicering på den här sidan.
 
 ## Campaign v8.3.8{#8.3-issues}
 
@@ -29,7 +29,7 @@ På den här sidan visas kända fel som identifierats i **de senaste Campaign v8
 
 #### Beskrivning{#issue-2-desc}
 
-När du matar in data i molndatabasen i Snowflake med en Campaign **Query** och en **Change Data Source** -aktivitet misslyckas processen när det finns ett omvänt snedstreck i data. Källsträngen escape-konverteras inte och data bearbetas inte korrekt på Snowflake.
+När du matar in data i Snowflake molndatabas med Campaign **Query** och en **Change Data Source** -aktivitet misslyckas processen när det finns ett omvänt snedstreck i data. Källsträngen escape-konverteras inte och data bearbetas inte korrekt i Snowflake.
 
 Problemet uppstår bara om det omvända snedstrecket finns i slutet av strängen, till exempel: `Barker\`.
 
@@ -39,7 +39,7 @@ Problemet uppstår bara om det omvända snedstrecket finns i slutet av strängen
 1. Anslut till klientkonsolen och skapa ett arbetsflöde.
 1. Lägg till en **Query**-aktivitet och konfigurera den.
 1. Välj data med de egenskaper som beskrivs ovan.
-1. Lägg till en **Ändra data för Source**-aktivitet och konfigurera den så att Snowflake molndatabas väljs.
+1. Lägg till en **Ändra data för Source**-aktivitet och konfigurera den så att den väljer Snowflake molndatabas.
 1. Kör arbetsflödet och kontrollera arbetsflödesloggarna för att se felet.
 
 
@@ -84,11 +84,11 @@ Processen tar aldrig slut.
 
 Du kan lösa problemet genom att använda en äldre klientkonsol. Sedan kan du överföra filen till servern.
 
-Som kampanjadministratör kan du hämta klientkonsolen Campaign v8.3.1 i [Adobe Software Distribution](https://experience.adobe.com/#/downloads/content/software-distribution/en/campaign.html?1_group.propertyvalues.property=.%2Fjcr%3aContent%2Fmetadata%2FDc%3Aversion&amp;1_group.propertyvalues.operation=equals&amp;1_group.propertyvalues.0_values=target-version%3AcCampaign%2F8&amp;orderby=%40jcr%3Acontent%2Fjcr%3AlastModified&amp;order.sort=desc&amp;layout=list&amp;p.offset=0&amp;p.limit=4){target="_blank"}.
+Som kampanjadministratör kan du hämta Campaign v8.3.1-klientkonsolen i [Adobe Software Distribution](https://experience.adobe.com/#/downloads/content/software-distribution/en/campaign.html?1_group.propertyvalues.property=.%2Fjcr%3aContent%2Fmetadata%2FDc%3Aversion&amp;1_group.propertyvalues.operation=equals&amp;1_group.propertyvalues.0_values=target-version%3AcCampaign%2F8&amp;orderby=%40jcr%3Acontent%2Fjcr%3AlastModified&amp;order.sort=desc&amp;layout=list&amp;p.offset=0&amp;p.limit=4){target="_blank"}.
 
-Lär dig hur du får åtkomst till Adobe Software Distribution [på den här sidan](https://experienceleague.adobe.com/docs/experience-cloud/software-distribution/home.html?lang=sv-SE){target="_blank"}.
+Lär dig hur du får åtkomst till Adobe programdistribution [på den här sidan](https://experienceleague.adobe.com/docs/experience-cloud/software-distribution/home.html){target="_blank"}.
 
-Lär dig hur du uppgraderar klientkonsolen [på den här sidan](connect.md)
+Lär dig hur du uppgraderar din klientkonsol [på den här sidan](connect.md)
 
 #### Intern referens{#issue-3-ref}
 

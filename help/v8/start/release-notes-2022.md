@@ -3,10 +3,10 @@ title: Versionsinformation om Campaign v8 2022
 description: Lista över funktioner och förbättringar i 2022 års Campaign v8-utgåvor
 feature: Release Notes
 exl-id: 76473fa5-48ba-42cf-8664-0dd197833a86
-source-git-commit: fe96eb65ac04fc2b89f0dfe1e8ed4286223c3f85
+source-git-commit: b3ca222fb28c1a5d35190e41cfbbe463c5d1bcad
 workflow-type: tm+mt
 source-wordcount: '1943'
-ht-degree: 12%
+ht-degree: 13%
 
 ---
 
@@ -49,8 +49,8 @@ _30 september 2022_
 <tbody> 
 <tr> 
 <td><p>Nu finns nya mål- och källanslutningar som möjliggör smidig integrering mellan Adobe Campaign och Adobe Experience Platform:</p>
-<ul><li>Använd Adobe Campaign Managed Cloud Services målanslutning för att skicka Experience Platform segment till Adobe Campaign för aktivering,</li>
-<li>Använd Adobe Campaign Managed Cloud Service Source Connector för att skicka Adobe Campaign leverans- och spårningsloggar till Adobe Experience Platform.</li>
+<ul><li>Använd Adobe Campaign Managed Cloud Services målanslutning för att skicka Experience Platform-segment till Adobe Campaign för aktivering,</li>
+<li>Använd Adobe Campaign Managed Cloud Service källanslutning för att skicka Adobe Campaign leverans- och spårningsloggar till Adobe Experience Platform.</li>
 </ul>
 <p>Mer information finns i den <a href="../connect/ac-aep.md">detaljerade dokumentationen</a>.</p>
 </td> 
@@ -84,8 +84,8 @@ _30 september 2022_
 
 För att optimera säkerheten har säkerhetstoken tagits bort från URL:er som genererats av Campaign:
 
-* Den här ändringen gäller endast GET-URL:er. Andra typer, inklusive POSTS-URL:er, påverkas inte.
-* Om du använder anpassad kod hämtas inte säkerhetstoken längre från GET URL-säkerhetstokenparametern. Du måste generera en ny säkerhetstoken med följande JSSP-kod:
+* Den här ändringen gäller endast GET URL:er. Andra typer, inklusive POST-URL:er, påverkas inte.
+* Om du använder anpassad kod hämtas inte säkerhetstoken längre från GET URL-säkerhetstokenparameter. Du måste generera en ny säkerhetstoken med följande JSSP-kod:
 
   ```getNewSecurityToken(jsspContext.getSessionToken(), jsspContext.getSecurityToken(), true);```
 
@@ -94,7 +94,7 @@ För att optimera säkerheten har säkerhetstoken tagits bort från URL:er som g
 
 **Förbättringar**
 
-* Efter livscykelns slut för Microsoft Internet Explorer 11 använder nu renderingsmotorn HTML i konsolen **Microsoft Edge Chromium**. Dessutom krävs nu installation av **Microsoft Edge WebView 2** för alla installationer av klientkonsolen.
+* Efter att livscykeln för Microsoft Internet Explorer 11 har upphört används **Microsoft Edge Chromium** nu i HTML-återgivningsmotorn i konsolen. Dessutom krävs nu installation av **Microsoft Edge WebView 2** för alla installationer av klientkonsolen.
 * Förbättrad arbetsflödeskörning med hög tillgänglighet för arbetsflöde, som gör att du kan köra samtidiga arbetsflöden i olika behållare för att förhindra att tjänsten för arbetsflöde går förlorad och undvika relaterade körningsfel. **Obs!** Den här nya funktionen är endast tillgänglig för en uppsättning kunder.
 * Sekretessförfrågningar utförs nu i batch för ett givet sekretessnamnområde. Den här förbättringen ökar körningstiden för begäranden om GDPR/sekretess-borttagning.
 
@@ -117,11 +117,11 @@ Se [kompatibilitetsmatrisen för Campaign](compatibility-matrix.md).
 * Korrigerade ett problem som förhindrade det tekniska arbetsflödet **[!UICONTROL Replicate Staging data]** (ffdaReplicateStagingData) från att stoppas även om ett fel uppstod under körningen. (NEO-46280)
 * För att undvika långsamhet när du skickar korrektur till dirigerade adresser grupperas nu alla efterföljande replikeringar av dirigerade medlemmar i en replikeringsbegäran. (NEO-44844)
 * Korrigerade ett problem som visade ett fel när en leverans skulle förhandsgranskas i en arkiverad händelse i Message Center. (NEO-43620)
-* Ett problem har korrigerats vid inmatning av data i molndatabasen i Snowflake med en Campaign **Query**-aktivitet och en **Change Data Source**-aktivitet: processen misslyckades när det finns ett omvänt snedstreck i data. Källsträngen kunde inte escape-konverteras och data bearbetades inte korrekt på Snowflake. (NEO-45549)
+* Ett problem har korrigerats vid inmatning av data i Snowflake molndatabas med en Campaign **Query**-aktivitet och en **Change Data Source**-aktivitet: processen misslyckades när det finns ett omvänt snedstreck i data. Källsträngen kunde inte escape-konverteras och data bearbetades inte korrekt i Snowflake. (NEO-45549)
 * Ett problem har korrigerats när aktiviteten **Fråga** användes och en tabell filtrerades. När ett kolumnnamn innehöll ordet &quot;Uppdatera&quot; uppstod ett kompileringsfel med en ogiltig identifierare och följande meddelande: &quot;number of rows updated&quot;. (NEO-46485)
 * Det tekniska arbetsflödet för **databasrensning** hanterar nu även anpassade mellanlagringsscheman. (NEO-48974)
 * Korrigerade ett problem som kunde göra leveransanalysen långsammare, med undantag för steget med blocklist mottagare, när stora volymer mottagare användes. (NEO-48019)
-* Förbättrad stabilitet vid hantering av ogiltiga XML-strängar under SOAP. (NEO-48027)
+* Förbättrad stabilitet vid hantering av ogiltiga XML-strängar under SOAP-anrop. (NEO-48027)
 * Korrigerade ett problem som ledde till att onödiga DeliveryParts skapades när leveransen använde kalender- och delningslägen. (NEO-48634)
 * Ett prestandaproblem har korrigerats vid användning av kalenderbaserade påfyllnader. (NEO-48451)
 * Korrigerade ett problem som kunde leda till ett felmeddelande på skärmen för leveranslistan efter att en ny målmappning skapades för ett anpassat schema. (NEO-49237)
@@ -131,7 +131,7 @@ Se [kompatibilitetsmatrisen för Campaign](compatibility-matrix.md).
 
 >[!CAUTION]
 >
-> klientkonsoluppgraderingen är obligatorisk. Lär dig hur du uppgraderar din klientkonsol på den här [sidan](../start/connect.md#download-ac-console).
+> Uppgradering av klientkonsolen är obligatorisk. Lär dig hur du uppgraderar din klientkonsol på den här [sidan](../start/connect.md#download-ac-console).
 
 _7 oktober 2022_
 
@@ -140,7 +140,7 @@ _7 oktober 2022_
 * Ett problem som påverkade statusuppdateringarna för leveransloggen på MID-instansen när alternativet FeatureFlag_GZIP_Compression aktiverades har åtgärdats. (NEO-49183)
 * Det tekniska arbetsflödet för **databasrensning** hanterar nu även anpassade mellanlagringsscheman. (NEO-48974)
 * Korrigerade ett problem som kunde leda till att leveranserna stannar i statusen **Väntande** även om kontaktdatumet nåddes. (NEO-48079, NEO-48251)
-* Förbättrad stabilitet vid hantering av ogiltiga XML-strängar under SOAP. (NEO-48027)
+* Förbättrad stabilitet vid hantering av ogiltiga XML-strängar under SOAP-anrop. (NEO-48027)
 * Korrigerade ett problem som kunde göra leveransanalysen långsammare, med undantag för steget med blocklist mottagare, när stora volymer mottagare användes. (NEO-48019)
 * För att undvika långsamhet när du skickar ett korrektur till dirigerade adresser grupperas nu alla efterföljande replikeringar av dirigerade medlemmar i en replikeringsbegäran. (NEO-44844)
 * Korrigerade ett problem som ledde till personaliseringsproblem när SMS-meddelanden skickades med ett externt leveransläge. (NEO-46415)
@@ -155,7 +155,7 @@ _7 oktober 2022_
 * Ett problem har korrigerats när aktiviteten **Fråga** användes och en tabell filtrerades. När ett kolumnnamn innehöll ordet &quot;Uppdatera&quot; uppstod ett kompileringsfel med en ogiltig identifierare och följande meddelande: &quot;number of rows updated&quot;. (NEO-46485)
 * Korrigerade ett problem som förhindrade det tekniska arbetsflödet **[!UICONTROL Replicate Staging data]** (ffdaReplicateStagingData) från att stoppas även om ett fel uppstod under körningen. (NEO-46280)
 * Korrigerade ett problem som kunde orsaka dataförlust om mellanlagringsarbetsflödet var felaktigt och kvarhållningsperioden gick ut. (NEO-48975)
-* Ett problem har korrigerats vid inmatning av data i molndatabasen i Snowflake med en Campaign **Query**-aktivitet och en **Change Data Source**-aktivitet: processen misslyckades när det finns ett omvänt snedstreck i data. Källsträngen kunde inte escape-konverteras och data bearbetades inte korrekt på Snowflake. (NEO-45549)
+* Ett problem har korrigerats vid inmatning av data i Snowflake molndatabas med en Campaign **Query**-aktivitet och en **Change Data Source**-aktivitet: processen misslyckades när det finns ett omvänt snedstreck i data. Källsträngen kunde inte escape-konverteras och data bearbetades inte korrekt i Snowflake. (NEO-45549)
 
 ## Version 8.3.8 {#release-8-3-8}
 
@@ -181,12 +181,12 @@ _18 maj 2022_
 <table> 
 <thead>
 <tr> 
-<th> <strong>Integrering av kärnPrivacy Service</strong><br /> </th> 
+<th> <strong>Privacy Service Core-integrering</strong><br /> </th> 
 </tr> 
 </thead> 
 <tbody> 
 <tr> 
-<td> <p>Campaign v8 kan nu integreras med Adobe Privacy Core-tjänst. Förfrågningar om användarens information som skickas från Privacy Core Service till alla lösningar i Experience Cloud hanteras automatiskt av Campaign via ett dedikerat arbetsflöde.</p>
+<td> <p>Campaign v8 är nu integrerat med Adobe Privacy Core Service. Förfrågningar om användarens information som skickas från Privacy Core Service till alla lösningar i Experience Cloud hanteras automatiskt av Campaign via ett dedikerat arbetsflöde.</p>
 <p>Mer information finns i den <a href="privacy.md">detaljerade dokumentationen</a>.</p>
 </td> 
 </tr> 

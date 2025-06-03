@@ -5,9 +5,9 @@ description: Skapa och hantera uppgifter
 feature: Campaigns, Resource Management
 role: User
 exl-id: 730d1712-53a6-4bf7-9aac-523b06bd0d0a
-source-git-commit: 69ff08567f3a0ab827a118a089495fc75bb550c5
+source-git-commit: d80a39d7f0df939d0e9e3f782d5d9aef3d459a32
 workflow-type: tm+mt
-source-wordcount: '3758'
+source-wordcount: '3757'
 ht-degree: 0%
 
 ---
@@ -467,7 +467,7 @@ Nedan visas de steg i en komplett uppgiftslivscykel för vilka den ansvariga per
 1. När du är klar med avsnittet som tilldelats dem kan deltagarna godkänna uppgiften, antingen:
 
    * via e-postmeddelandet.
-   * via klientkonsolen eller webbåtkomsten i kontrollpanelen för uppgifter.
+   * via klientkonsolen eller webbgränssnittet i kontrollpanelen för uppgifter.
 
      ![](assets/s_ncs_user_task_start_rea.png)
 
@@ -481,7 +481,7 @@ Nedan visas de steg i en komplett uppgiftslivscykel för vilka den ansvariga per
 
    ![](assets/s_ncs_user_task_follow_from_dashboard.png)
 
-1. När den person som ansvarar för uppgiften har fastställt att den är slutförd kan han eller hon stänga den med hjälp av länken i e-postmeddelandet som skickades när aktiviteten startades, klientkonsolen eller gränssnittet.
+1. När den person som ansvarar för uppgiften har fastställt att den är slutförd kan han eller hon stänga den med hjälp av länken i e-postmeddelandet som skickades när aktiviteten startades, via klientkonsolen eller gränssnittet.
 
    ![](assets/s_ncs_user_task_console_ressource_validation.png)
 
@@ -491,7 +491,7 @@ Nedan visas de steg i en komplett uppgiftslivscykel för vilka den ansvariga per
 
 1. Aktivitetsstatusen ändras till **[!UICONTROL To approve]** och ett meddelande skickas till granskaren.
 
-   De godkänner uppgiften via e-postmeddelandet, klientkonsolen eller via en webbläsare.
+   De godkänner uppgiften via e-postmeddelandet, klientkonsolen eller webbgränssnittet.
 
    De kan agera via kampanjkontrollpanelen:
 

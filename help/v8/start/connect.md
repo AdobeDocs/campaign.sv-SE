@@ -1,20 +1,22 @@
 ---
-title: Anslut till Campaign med klientkonsolen
-description: Läs om hur du installerar Campaign-klientkonsolen på din dator och ansluter till Adobe Campaign
+title: Anslut till Campaign v8
+description: Lär dig hur du ansluter till Adobe Campaign v8 och installerar konsolen på datorn för enklare åtkomst.
 feature: Client Console
 role: User
 level: Beginner
 exl-id: 176cc4f0-8827-4127-9f03-7d75ac8cf917
-source-git-commit: a9f26a033d63ab1dece9ef9780392823ee130047
+source-git-commit: 24ecf598d3d01f7fb59c70e1c8c81e9c086e653e
 workflow-type: tm+mt
-source-wordcount: '962'
+source-wordcount: '1006'
 ht-degree: 2%
 
 ---
 
-# Anslut till Campaign med klientkonsolen{#gs-ac-connect}
+# Anslut till Adobe Campaign v8{#gs-ac-connect}
 
-Om du vill ansluta till Campaign med klientkonsolen måste du först installera och konfigurera den.
+Om du vill börja arbeta med Campaign måste du installera och konfigurera klientkonsolen.
+
+Klientkonsolen är ett inbyggt program som kommunicerar med Adobe Campaign-programservern via vanliga Internetprotokoll, till exempel SOAP och HTTP. Campaign Client Console centraliserar alla funktioner och inställningar och kräver minimal bandbredd eftersom den är beroende av ett lokalt cacheminne. Campaign Client Console är utformad för enkel driftsättning och kan distribueras från en webbläsare, uppdateras automatiskt och kräver ingen specifik nätverkskonfiguration eftersom den bara genererar HTTP(S)-trafik.
 
 Innan du börjar måste du:
 
@@ -23,17 +25,11 @@ Innan du börjar måste du:
 * Skapa din Adobe ID eller hämta inloggningsuppgifter från ditt företag
 * Installera Microsoft Edge Webview2 runtime på datorn. [Läs mer](#webview)
 
-
->[!NOTE]
->
->Du kan även ansluta till Campaign-webbgränssnittet med en webbläsare. Läs mer om det nya Campaign-webbanvändargränssnittet i [den här dokumentationen](https://experienceleague.adobe.com/docs/campaign-web/v8/campaign-web-home.html?lang=sv-SE){target="_blank"}.
-
-
 ## Installera klientkonsolen{#download-ac-console}
 
 ### Microsoft Edge Webview2, runtime {#webview}
 
-Från version 8.4 av Campaign Classic krävs installation av Microsoft Edge Webview 2 för alla installationer av klientkonsolen.
+Från Campaign Classic 8.4-versionen krävs installation av Microsoft Edge Webview 2 för alla installationer av klientkonsolen.
 
 Webbvyn installeras som standard som en del av Windows 11. Om det inte redan finns på datorn uppmanas du att hämta det från [Microsoft Developer-webbplatsen](http://www.adobe.com/go/acc-ms-webview2-runtime-download){target="_blank"}. Observera att nedladdningslänken inte fungerar i webbläsaren Internet Explorer 11 eftersom Microsoft inte längre stöder det. Kontrollera att du använder en annan webbläsare för att komma åt länken.
 
@@ -75,7 +71,7 @@ Du kan lägga till så många anslutningar som behövs för att ansluta till tes
 
 ## Logga in på Adobe Campaign {#logon-to-ac}
 
-Kampanjanvändare ansluter till Adobe Campaign-konsolen via sina Adobe ID via Adobe Identity Management System (IMS). De kan använda samma ID för alla Adobe-lösningar. Anslutningen sparas när du använder Adobe Campaign med andra lösningar. Läs mer om Adobe IMS i [den här sidan](https://helpx.adobe.com/se/enterprise/using/identity.html){target="_blank"}.
+Kampanjanvändare ansluter till Adobe Campaign-konsolen med sin Adobe ID via Adobe Identity Management System (IMS). De kan använda samma ID för alla Adobe-lösningar. Anslutningen sparas när du använder Adobe Campaign med andra lösningar. Läs mer om Adobe IMS på [den här sidan](https://helpx.adobe.com/enterprise/using/identity.html){target="_blank"}.
 
 Så här loggar du in på en instans:
 
@@ -97,9 +93,9 @@ Sedan kan du logga in på Campaign med din Adobe ID.
 
 ## Uppgradera din klientkonsol{#upgrade-ac-console}
 
-När datorn uppgraderas till en nyare version måste du uppdatera klientkonsolen till den versionen. Det här är en god praxis och för vissa versioner är den här uppgraderingen obligatorisk. I så fall nämns det i [versionsinformationen](release-notes.md).
+När ditt system uppgraderas till en nyare version måste du uppdatera din klientkonsol till den versionen. Det här är en god praxis och för vissa versioner är den här uppgraderingen obligatorisk. I så fall nämns det i [versionsinformationen](release-notes.md).
 
-Som användare av hanterade Cloud Service distribuerar Adobe klientkonsolen åt dig. När du ansluter till den uppgraderade miljön uppmanas du att hämta den senaste klientkonsolversionen i ett popup-fönster. Du måste acceptera den här uppgraderingen och uppdatera klientkonsolen efter begäran.
+Som användare av hanterade molntjänster distribuerar Adobe klientkonsolen åt dig. När du ansluter till den uppgraderade miljön uppmanas du att hämta den senaste versionen av klientkonsolen i ett popup-fönster. Du måste acceptera den här uppgraderingen och uppdatera klientkonsolen efter begäran.
 
 >[!CAUTION]
 >
@@ -121,20 +117,20 @@ Läs mer om användare och hur du definierar deras behörigheter i [det här avs
 
 ### Webbgränssnitt {#connect-web-ui}
 
-Från och med Campaign v8.6 har du tillgång till det nya **Campaign-webbgränssnittet** som är tillgängligt via den centrala Adobe Experience Cloud-miljön. Experience Cloud är en integrerad familj av program, produkter och tjänster för digital marknadsföring i Adobe. Från det intuitiva gränssnittet får du snabbt tillgång till dina molnprogram, produktfunktioner och tjänster.
+Från och med Campaign v8.6 har du tillgång till det nya **Campaign-webbgränssnittet** som är tillgängligt via den centrala Adobe Experience Cloud-miljön. Experience Cloud är Adobe integrerade program, produkter och tjänster för digital marknadsföring. Från det intuitiva gränssnittet får du snabbt tillgång till dina molnprogram, produktfunktioner och tjänster.
 
 >[!AVAILABILITY]
 >
->Användargränssnittet för Campaign-webben är bara tillgängligt för användare som ansluter till Adobe Campaign med sin Adobe ID. Läs mer om [Adobe Identity Management System (IMS)](https://helpx.adobe.com/se/enterprise/using/identity.html){target="_blank"}.
+>Användargränssnittet för Campaign-webben är bara tillgängligt för användare som ansluter till Adobe Campaign med sin Adobe ID. Läs mer om [Adobe Identity Management System (IMS)](https://helpx.adobe.com/enterprise/using/identity.html){target="_blank"}.
 >
 
 Lär dig hur du ansluter till Adobe Experience Cloud och kommer åt Adobe Campaign webbgränssnitt [på den här sidan](campaign-ui.md#ac-web-ui).
 
-Läs mer i [Adobe Campaign webbgränssnitt ](https://experienceleague.adobe.com/sv/docs/campaign-web/v8/campaign-web-home){target="_blank"}.
+Läs mer i [Adobe Campaign webbgränssnittsdokumentation](https://experienceleague.adobe.com/en/docs/campaign-web/v8/campaign-web-home){target="_blank"}.
 
 ### Webbåtkomst {#web-access}
 
-Vissa delar av programmet kan nås via en webbläsare via ett HTML-användargränssnitt: rapportering, leveransgodkännande, instansövervakning med mera.
+Vissa delar av programmet kan nås via en webbläsare via ett HTML-gränssnitt: rapportering, leveransgodkännande, instansövervakning med mera.
 
 Webbåtkomsten har ett gränssnitt som liknar konsolen men med en reducerad uppsättning funktioner.
 

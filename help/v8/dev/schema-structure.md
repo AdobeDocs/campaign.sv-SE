@@ -5,7 +5,7 @@ feature: Schema Extension, Configuration, Data Model
 role: Developer
 level: Intermediate, Experienced
 exl-id: 9c4a9e71-3fc8-4b4e-8782-0742bbeaf426
-source-git-commit: 69ff08567f3a0ab827a118a089495fc75bb550c5
+source-git-commit: d80a39d7f0df939d0e9e3f782d5d9aef3d459a32
 workflow-type: tm+mt
 source-wordcount: '1394'
 ht-degree: 1%
@@ -124,7 +124,7 @@ Följande regler måste följas:
 
 Datatypen anges via attributet **type** i elementen **`<attribute>`** och **`<element>`**.
 
-En detaljerad lista finns i [Campaign Classic v7-dokumentationen](https://experienceleague.adobe.com/docs/campaign-classic/using/configuring-campaign-classic/schema-reference/elements-attributes/schema-introduction.html?lang=sv-SE#configuring-campaign-classic){target="_blank"}.
+En detaljerad lista finns i [Campaign Classic v7-dokumentationen](https://experienceleague.adobe.com/docs/campaign-classic/using/configuring-campaign-classic/schema-reference/elements-attributes/schema-introduction.html#configuring-campaign-classic){target="_blank"}.
 
 När det här attributet inte är ifyllt är **string** standarddatatypen om inte elementet innehåller underordnade element. Om den gör det används den bara för att strukturera elementen hierarkiskt (**`<location>`** element i vårt exempel).
 
@@ -180,13 +180,13 @@ Elementen **`<elements>`** och **`<attributes>`** i dataschemat kan berikas med 
   <attribute name="email" type="string" length="80" label="Email"/>
   ```
 
-  Etiketten visas i indataformuläret för Adobe Campaign klientkonsol:
+  Etiketten visas i indataformuläret för Adobe Campaign Client Console:
 
   ![](assets/schema_label.png)
 
 * Med egenskapen **desc** kan du ange en lång beskrivning.
 
-  Beskrivningen visas från indataformuläret i statusfältet i huvudfönstret i Adobe Campaign klientkonsol.
+  Beskrivningen visas från indataformuläret i statusfältet i huvudfönstret i Adobe Campaign Client Console.
 
   >[!NOTE]
   >
@@ -213,7 +213,7 @@ Värdet måste vara ett uttryck som är kompatibelt med XPath-språket. Mer info
 
   >[!NOTE]
   >
-  >I Adobe Campaign klientkonsol används noden **[!UICONTROL Administration>Counters]** för att hantera räknare.
+  >I Adobe Campaign Client Console används noden **[!UICONTROL Administration>Counters]** för att hantera räknare.
 
 Om du vill länka ett standardvärde till ett fält kan du använda `<default>  or  <sqldefault>   field.  </sqldefault> </default>`
 
@@ -237,7 +237,7 @@ Dessa värden visas i en nedrullningsbar lista från indataformuläret:
 
 >[!NOTE]
 >
->I Adobe Campaign klientkonsol används noden **[!UICONTROL Administration > Enumerations]** för att hantera uppräkningar.
+>I Adobe Campaign Client Console används noden **[!UICONTROL Administration > Enumerations]** för att hantera uppräkningar.
 
 #### Ange uppräkning {#set-enumeration}
 
@@ -360,7 +360,7 @@ Det går också att definiera komplexa uttryck, till exempel följande aritmetis
 
 Funktioner på hög nivå har lagts till i uttrycken för att berika detta språks potential.
 
-Du kommer åt listan över tillgängliga funktioner via en uttrycksredigerare i Adobe Campaign klientkonsol:
+Du kommer åt listan över tillgängliga funktioner via en uttrycksredigerare i Adobe Campaign Client Console:
 
 ![](assets/schema_function.png)
 

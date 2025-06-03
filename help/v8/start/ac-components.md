@@ -5,9 +5,9 @@ feature: Overview, Architecture, Configuration
 role: User
 level: Beginner
 exl-id: 7db32bd8-a088-405f-9633-2968c28b13b0
-source-git-commit: 6926d84576df1810b511ef1a9976593cb99585bb
+source-git-commit: e4f6c70ecdcf7414b5f49a43933cfd1c967a0905
 workflow-type: tm+mt
-source-wordcount: '510'
+source-wordcount: '637'
 ht-degree: 0%
 
 ---
@@ -24,7 +24,21 @@ Adobe Campaign komponenter och global arkitektur beskrivs nedan.
 
 ![](assets/do-not-localize//ac-components.png)
 
+### Presentationslager{#presentation-layer}
 
+Du kan få åtkomst till Adobe Campaign via en Rich-klient, en Thin-klient eller en API-integrering.
+
+* Rich Client
+
+  Campaign Rich Client är ett program som kan kommunicera med Adobe Campaign programserver via standardprotokoll för Internet, som SOAP och HTTP. [Läs mer om Campaign Client Console](../start/connect.md).
+
+* Tunn klient
+
+  Med Adobe Campaign webbåtkomstfunktioner får du tillgång till en delmängd av Campaign-funktionerna via en webbläsare, med hjälp av ett HTML-användargränssnitt. Använd det här webbgränssnittet för att få åtkomst till rapporter, kontrollera och validera meddelanden, få åtkomst till kontrollpaneler med mera.  [Läs mer om Campaign Web Access](../start/connect.md).
+
+* Externa program med API:er
+
+  I vissa fall kan systemet anropas från externa program med hjälp av API:erna för webbtjänster som exponeras via SOAP-protokollet. [Läs mer om Campaign-API:er](../dev/api.md).
 
 ### Beständigt lager{#persistance-layer}
 
@@ -36,9 +50,9 @@ Databasens tillförlitlighet är av yttersta vikt eftersom de flesta Adobe Campa
 
 Kampanjens logiska programlager är enkelt att konfigurera för att tillgodose komplexa affärsbehov. Ni kan använda Campaign som en enda plattform med olika program som kombineras för att skapa en öppen och skalbar arkitektur. Varje Campaign-instans är en samling processer i programlagret, varav vissa är delade och vissa är dedikerade.
 
-## Kampanjhanterade Cloud Service{#ac-managed-services}
+## Kampanjhanterade molntjänster{#ac-managed-services}
 
-Adobe Campaign v8 distribueras as a Managed Service: alla komponenter i Adobe Campaign, inklusive användargränssnittet, körningsmotorn och Campaign-databaserna är fullt värdar för Adobe, inklusive e-postkörning, spegelsidor, spårningsserver och externt riktade webbkomponenter som att avbeställa sidor/inställningscenter och landningssidor.
+Adobe Campaign v8 är driftsatt i as a Managed Service: alla komponenter i Adobe Campaign, inklusive användargränssnittet, körningsmotorn och Campaign-databaserna är fullt värdar för Adobe, inklusive e-postkörning, spegelsidor, spårningsserver och externt riktade webbkomponenter som sidan/inställningscentret och landningssidorna.
 
 ## Kampanjprocesser
 
@@ -46,7 +60,7 @@ Kampanjwebbservern styr åtkomsten till webbprocesser i Campaign. Javascript är
 
 ![](assets/do-not-localize/ac-processes.png)
 
-Kampanjklientkonsolen ansluter till webbservern med SOAP XML via HTTP. Webbservern tillhandahåller säkerhetsskiktet, skickar förfrågningarna till programlagret med JavaScript och de interna processerna i Campaign ger åtkomst till databasen med SQL.
+Campaign Client Console ansluter till webbservern med hjälp av SOAP XML via HTTP. Webbservern tillhandahåller säkerhetsskiktet, skickar förfrågningarna till programlagret med JavaScript och de interna processerna i Campaign ger åtkomst till databasen med SQL.
 
 <!--The overall communication between Campaign processes are described in the following standalone deployment diagram: all Campaign components are installed in the same machine.
 

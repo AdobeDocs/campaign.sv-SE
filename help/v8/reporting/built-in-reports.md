@@ -5,7 +5,7 @@ feature: Reporting
 role: User
 level: Beginner
 exl-id: b63e6905-3bd4-4de4-9e7e-7638e5fc1192
-source-git-commit: 5ab598d904bf900bcb4c01680e1b4730881ff8a5
+source-git-commit: 4f9183c7f1d12feb255a0050da423647f0fce85e
 workflow-type: tm+mt
 source-wordcount: '1108'
 ht-degree: 1%
@@ -25,7 +25,7 @@ Du kommer åt inbyggda rapporter från Campaigns hemsida, den dedikerade rapport
 
 En lista med viktiga rapporter finns på startsidan, så att du snabbt kan komma åt leveransdata. Listan kan ändras efter dina behov. Du kan även lära dig hur du lägger till egna rapporter på fliken **[!UICONTROL Reports]**.
 
-Mer information om dessa anpassade konfigurationer finns i [Campaign Classic v7-dokumentationen](https://experienceleague.adobe.com/docs/campaign-classic/using/reporting/creating-new-reports/configuring-access-to-the-report.html?lang=sv-SE){target="_blank"}.
+Mer information om dessa anpassade konfigurationer finns i [Campaign Classic v7-dokumentationen](https://experienceleague.adobe.com/docs/campaign-classic/using/reporting/creating-new-reports/configuring-access-to-the-report.html){target="_blank"}.
 
 
 ## Åtkomst till inbyggda rapporter {#access-ootb-reports}
@@ -381,7 +381,7 @@ Följande rapporter finns också inbyggda. Mer information finns i dokumentet om
   </tr> 
   <tr> 
    <td> Historik över förvärv av sociala potentiella kunder (socialVisitorStatistics)<br /> </td> 
-   <td> Historiken för köp av X (tidigare kallat Twitter) och Facebook potentiella kunder beror på tillägget för social marknadsföring.<br /> </td> 
+   <td> Historiken för köp av potentiella kunder i X (tidigare Twitter) och Facebook beror på tillägget för social marknadsföring.<br /> </td> 
    <td> nms:visitor<br /> </td> 
   </tr> 
   <tr> 

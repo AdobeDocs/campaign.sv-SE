@@ -5,7 +5,7 @@ feature: Permissions
 role: User, Admin
 level: Beginner
 exl-id: 90154f84-b6a7-407c-93b7-9731dc94d9de
-source-git-commit: 09db0cc1a14bffefe8d1b8d0d5a06d5b6517a5bb
+source-git-commit: 41e39e046ec77de8b5e657ba76645898ff1cd2d7
 workflow-type: tm+mt
 source-wordcount: '1618'
 ht-degree: 0%
@@ -37,13 +37,13 @@ Följ stegen nedan för att lägga till en användare:
 
 Läs mer om hur du skapar användare i Admin Console på [den här sidan](https://helpx.adobe.com/ie/enterprise/using/manage-users-individually.html){target="_blank"}.
 
-När nya användare [loggar in på Campaign](connect.md) med sina Adobe ID läggs de till i listan över kampanjoperatorer i klientkonsolen. Kampanjoperatorer lagras i mappen **[!UICONTROL Administration > Access management > Operators]** i Campaign Explorer.
+När nya användare [loggar in på Campaign](connect.md) med sin Adobe ID läggs de till i listan över kampanjoperatorer i klientkonsolen. Kampanjoperatorer lagras i mappen **[!UICONTROL Administration > Access management > Operators]** i Campaign Explorer.
 
 ## Arbeta med produktprofiler{#product-profiles}
 
 Använd produktprofiler för att ge användarna rätt till de funktioner som ingår i produkten.
 
-* För varje produkt på Admin Console kan du skapa en eller flera produktprofiler.
+* För varje produkt i Admin Console kan du skapa en eller flera produktprofiler.
 * I varje produktprofil tilldelar du användare och användargrupper (i din organisation).
 * När en användare loggar in med sina inloggningsuppgifter enligt specifikationen i produktprofilen, får de tillgång till programmen och tjänsterna i den produkt som produktprofilen baseras på.
 
@@ -61,7 +61,7 @@ Du kan använda standardproduktprofiler eller skapa nya.
 
 ### Skapa en produktprofil{#create-product-profile}
 
-Om du vill lägga till en ny produktprofil i Adobe måste du först skapa den i Campaign-klientkonsolen och sedan lägga till den i Admin Console.
+Om du vill lägga till en ny produktprofil i Adobe måste du först skapa den i Campaign Client Console och sedan lägga till den i Admin Console.
 
 Om du till exempel vill skapa en produktprofil för &#39;granskare&#39; följer du stegen nedan.
 
@@ -115,7 +115,7 @@ De här produktprofilerna överensstämmer med Campaign **operatorgrupper**. Sta
 
 1. **[!UICONTROL Campaign managers]** (åtgärd)
 
-   Operatörerna i den här gruppen kan hantera marknadsföringskampanjer: ni får tillgång till objekt som är kopplade till kampanjer (planer, program, arbetsflöden, budgetar osv.) inom ramverket för **[!UICONTROL Campaign]** (valfri Adobe Campaign-modul).
+   Operatörerna i den här gruppen kan hantera marknadsföringskampanjer: du får tillgång till objekt som är kopplade till kampanjer (planer, program, arbetsflöden, budgetar osv.) inom ramen för **[!UICONTROL Campaign]** (valfri Adobe Campaign-modul).
 
    Den här gruppen innehåller följande namngivna rättigheter:
 

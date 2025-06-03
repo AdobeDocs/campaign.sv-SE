@@ -5,9 +5,9 @@ feature: Privacy
 role: Admin
 level: Beginner
 exl-id: 0f81d318-dbfd-45c8-b391-b1d14d23e9c8
-source-git-commit: 69ff08567f3a0ab827a118a089495fc75bb550c5
+source-git-commit: d80a39d7f0df939d0e9e3f782d5d9aef3d459a32
 workflow-type: tm+mt
-source-wordcount: '942'
+source-wordcount: '957'
 ht-degree: 33%
 
 ---
@@ -16,17 +16,17 @@ ht-degree: 33%
 
 Beroende på vilken typ av verksamhet ni bedriver och vilka jurisdiktioner ni bedriver under, kan det bero på att era uppgifter omfattas av lagenliga sekretessbestämmelser. Dessa bestämmelser ger ofta kunderna rätt att begära åtkomst till de uppgifter ni samlar in från dem och rätt att begära att lagrade uppgifter tas bort. Dessa kundförfrågningar om deras personuppgifter kallas i hela dokumentationen för&quot;sekretessförfrågningar&quot;.
 
-Adobe erbjuder datakontrollanter de verktyg som behövs för att skapa och bearbeta sekretessförfrågningar för data som lagras i Campaign. Det är emellertid ditt ansvar som personuppgiftsansvariga att verifiera identiteten på den registrerade som gör begäran och att bekräfta att de uppgifter som skickas tillbaka till den som gjorde begäran handlar om den registrerade. Läs mer om personuppgifter och de olika entiteter som hanterar data i [Adobe Campaign Classic v7-dokumentationen](https://experienceleague.adobe.com/docs/campaign-classic/using/getting-started/privacy/privacy-and-recommendations.html?lang=sv-SE#personal-data){target="_blank"}.
+Adobe erbjuder Data Controllers de verktyg de behöver för att skapa och bearbeta sekretessförfrågningar för data som lagras i Campaign. Det är emellertid ditt ansvar som personuppgiftsansvariga att verifiera identiteten på den registrerade som gör begäran och att bekräfta att de uppgifter som skickas tillbaka till den som gjorde begäran handlar om den registrerade. Läs mer om personuppgifter och de olika entiteter som hanterar data i [Adobe Campaign Classic v7-dokumentationen](https://experienceleague.adobe.com/docs/campaign-classic/using/getting-started/privacy/privacy-and-recommendations.html#personal-data){target="_blank"}.
 
 
-Om du vill hantera sekretessbegäran i Campaign måste du först [definiera ett namnområde](#namespaces). Du kan sedan skapa och hantera förfrågningar om sekretess. Använd integreringen **Adobe Privacy Service** för att utföra sekretessbegäranden. Sekretessförfrågningar som skickas från Privacy Servicen till alla Adobe Experience Cloud-lösningar hanteras automatiskt av Campaign via ett dedikerat arbetsflöde. [Läs mer](#create-privacy-request)
+Om du vill hantera sekretessbegäran i Campaign måste du först [definiera ett namnområde](#namespaces). Du kan sedan skapa och hantera förfrågningar om sekretess. Använd integreringen **Adobe Privacy Service** för att utföra sekretessförfrågningar. Sekretessförfrågningar som skickas från Privacy Service till alla Adobe Experience Cloud-lösningar hanteras automatiskt av Campaign via ett dedikerat arbetsflöde. [Läs mer](#create-privacy-request)
 
-Lär dig mer om **rätten till åtkomst** och **rättigheten att bli glömd** (borttagningsbegäran) i [Adobe Campaign Classic v7-dokumentationen](https://experienceleague.adobe.com/docs/campaign-classic/using/getting-started/privacy/privacy-management.html?lang=sv-SE#right-access-forgotten){target="_blank"}.
+Lär dig mer om **rätten till åtkomst** och **rättigheten att bli glömd** (borttagningsbegäran) i [Adobe Campaign Classic v7-dokumentationen](https://experienceleague.adobe.com/docs/campaign-classic/using/getting-started/privacy/privacy-management.html#right-access-forgotten){target="_blank"}.
 
-<!--
+
 >[!NOTE]
 >
->This capability is available starting Campaign v8.3. To check your version, refer to [this section](compatibility-matrix.md#how-to-check-your-campaign-version-and-buildversion)-->
+>Den här funktionen är tillgänglig från och med Campaign v8.3. Mer information om hur du kontrollerar versionen finns i [det här avsnittet](compatibility-matrix.md#how-to-check-your-campaign-version-and-buildversion)
 
 ## Definiera ett namnutrymme {#namespaces}
 
@@ -36,7 +36,7 @@ Innan du skapar en sekretessförfrågan måste du **definiera namnutrymmet** fö
 >
 >Läs mer om identitetsnamnutrymmen i [Adobe Experience Platform-dokumentation](https://experienceleague.adobe.com/docs/experience-platform/identity/namespaces.html?lang=sv){target="_blank"}.
 
-För närvarande stöder inte Adobe Campaign import av namnutrymmen från Experience Platform Identity Namespace. När du har skapat ett namnutrymme i tjänsten Identity Namespace måste du därför skapa motsvarande namnutrymme manuellt i Adobe Campaign-gränssnittet. Följ stegen nedan för att göra detta.
+Adobe Campaign stöder för närvarande inte import av namnutrymmen från tjänsten Experience Platform Identity Namespace. När du har skapat ett namnutrymme i tjänsten Identity Namespace måste du därför skapa motsvarande namnutrymme manuellt i Adobe Campaign-gränssnittet. Följ stegen nedan för att göra detta.
 
 <!--v7?
 Three namespaces are available out-of-the-box: email, phone and mobile phone. If you need a different namespace (a recipient custom field, for example), you can create a new one from **[!UICONTROL Administration]** > **[!UICONTROL Platform]** > **[!UICONTROL Namespaces]**.
@@ -46,9 +46,9 @@ Three namespaces are available out-of-the-box: email, phone and mobile phone. If
 >For optimal performance, it is recommended to use out-of-the-box namespaces.
 -->
 
-1. Skapa ett namnutrymme i [tjänsten Identity Namespace](https://developer.adobe.com/experience-platform-apis/references/identity-service/#tag/Identity-Namespace){target="_blank"}.
+1. Skapa ett namnområde i [tjänsten Identity Namespace](https://developer.adobe.com/experience-platform-apis/references/identity-service/#tag/Identity-Namespace){target="_blank"}.
 
-1. När [visar en lista över de identitetsnamnutrymmen](https://developer.adobe.com/experience-platform-apis/references/identity-service/#operation/getIdNamespaces){target="_blank"} som är tillgängliga för din organisation får du följande information om namnutrymmet:
+1. När [visar en lista över de identitetsnamnutrymmen](https://developer.adobe.com/experience-platform-apis/references/identity-service/#operation/getIdNamespaces){target="_blank"} som är tillgängliga för din organisation, får du till exempel följande information om namnutrymmet:
 
    ```
    {
@@ -93,9 +93,9 @@ Du kan nu skapa förfrågningar om användarens information baserat på din nya 
 
 ## Skapa en förfrågan om användarens information {#create-privacy-request}
 
-Integreringen av **[!DNL Adobe Experience Platform Privacy Service]** gör att du kan automatisera dina sekretessförfrågningar i ett flerlösningssammanhang via ett enda JSON API-anrop. Adobe Campaign hanterar automatiskt begäranden som skickas från Privacy Servicen via ett dedikerat arbetsflöde.
+Integreringen av **[!DNL Adobe Experience Platform Privacy Service]** gör att du kan automatisera dina sekretessförfrågningar i ett flerlösningssammanhang via ett enda JSON API-anrop. Adobe Campaign hanterar automatiskt förfrågningar som skickas från Privacy Service via ett dedikerat arbetsflöde.
 
-Läs dokumentationen för [Experience Platform Privacy Service](https://experienceleague.adobe.com/docs/experience-platform/privacy/home.html?lang=sv){target="_blank"} om du vill veta mer om hur du skapar sekretessförfrågningar från sekretesskärntjänsten.
+Läs dokumentationen för [Experience Platform Privacy Service](https://experienceleague.adobe.com/docs/experience-platform/privacy/home.html?lang=sv){target="_blank"} om hur du skapar förfrågningar om användarens information via Privacy Core Service.
 
 Varje **[!DNL Privacy Service]**-jobb delas upp i flera sekretessbegäranden i Adobe Campaign baserat på hur många namnutrymmen som används, en begäran som motsvarar ett namnutrymme.
 
@@ -111,7 +111,7 @@ Mönstret för ett filnamn är: `<InstanceName>-<NamespaceId>-<ReconciliationKey
 >
 >Om du vill skicka en begäran med den anpassade namnområdestypen använder du [JSON-metoden](https://experienceleague.adobe.com/docs/experience-platform/privacy/ui/user-guide.html?lang=sv#json){target="_blank"} och lägger till namespaceId i begäran, eller använder [API-anropet](https://experienceleague.adobe.com/docs/experience-platform/privacy/api/privacy-jobs.html?lang=sv#access-delete){target="_blank"} för att göra begäran.
 >
->Använd bara [Användargränssnittet för sekretess](https://experienceleague.adobe.com/docs/experience-platform/privacy/ui/user-guide.html?lang=sv#request-builder){target="_blank"} om du vill skicka begäranden med standardnamnrymdstypen.
+>Använd bara användargränssnittet [Sekretess](https://experienceleague.adobe.com/docs/experience-platform/privacy/ui/user-guide.html?lang=sv#request-builder){target="_blank"} för att skicka begäranden med standardnamnområdestypen.
 
 ### Tabeller som genomsökts vid bearbetning av begäranden {#list-of-tables}
 
@@ -152,10 +152,10 @@ Nedan finns olika statusar för sekretessförfrågningar i Adobe Campaign och hu
 
 **Relaterade ämnen i Campaign Classic v7-dokumentation:**
 
-* [Sekretess och samtycke](https://experienceleague.adobe.com/docs/campaign-classic/using/getting-started/privacy/privacy-and-recommendations.html?lang=sv-SE){target="_blank"}
+* [Integritet och medgivande](https://experienceleague.adobe.com/docs/campaign-classic/using/getting-started/privacy/privacy-and-recommendations.html){target="_blank"}
 
 * [Komma igång med sekretesshantering](https://experienceleague.adobe.com/docs/campaign-classic/using/getting-started/privacy/privacy-management.html?lang=sv){target="_blank"}
 
-* [Regler för sekretesshantering](https://experienceleague.adobe.com/docs/campaign-classic/using/getting-started/privacy/privacy-management.html?lang=sv-SE#privacy-management-regulations){target="_blank"} (GDPR, CCPA, PDPA och LGPD)
+* [Regler för sekretesshantering](https://experienceleague.adobe.com/docs/campaign-classic/using/getting-started/privacy/privacy-management.html#privacy-management-regulations){target="_blank"} (GDPR, CCPA, PDPA och LGPD)
 
-* [Avanmäl dig till försäljning av personlig information](https://experienceleague.adobe.com/docs/campaign-classic/using/getting-started/privacy/privacy-requests/privacy-requests-ccpa.html?lang=sv-SE){target="_blank"} (gäller endast CCPA)
+* [Avanmäl dig till försäljning av personuppgifter](https://experienceleague.adobe.com/docs/campaign-classic/using/getting-started/privacy/privacy-requests/privacy-requests-ccpa.html){target="_blank"} (gäller endast CCPA)

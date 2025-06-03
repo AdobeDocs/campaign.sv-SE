@@ -5,7 +5,7 @@ description: Lokalt godkännande
 feature: Workflows, Approvals
 role: User
 exl-id: 172b6827-ddfc-4c6e-87c9-eb49e73ab3ab
-source-git-commit: 09db0cc1a14bffefe8d1b8d0d5a06d5b6517a5bb
+source-git-commit: 41e39e046ec77de8b5e657ba76645898ff1cd2d7
 workflow-type: tm+mt
 source-wordcount: '646'
 ht-degree: 1%
@@ -88,7 +88,7 @@ En operator kan godkänna en leverans på ett av två sätt: med webbsidan som �
 
   Med e-postmeddelandet som skickas till operatorer i gruppen Administratör kan du godkänna leveransmålet. Meddelandet använder den definierade texten och JavaScript-uttrycket ersätts av det beräknade värdet (i det här fallet &quot;574&quot;)
 
-  Klicka på länken och logga in på Adobe Campaign klientkonsol för att godkänna leveransen.
+  Klicka på länken och logga in på Adobe Campaign Client Console för att godkänna leveransen.
 
   ![](assets/new-workflow-valid-webaccess.png)
 

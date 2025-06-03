@@ -5,7 +5,7 @@ description: Övervaka arbetsflödeskörning
 feature: Workflows
 role: Admin
 exl-id: bc13d706-7888-42eb-9116-5538e68cd515
-source-git-commit: a78019d11a0a2acbd8c0d9ba7c2082c09f90356c
+source-git-commit: 3ce23cadf94eb561fb406fff739edd3eddf83b58
 workflow-type: tm+mt
 source-wordcount: '1926'
 ht-degree: 0%
@@ -122,7 +122,7 @@ Exempel på meddelande:
 
 ![](assets/wf-notification_error-msg.png)
 
-Med länken kan du komma åt Adobe Campaign klientkonsol i webbläge och arbeta med felarbetsflödet när du har loggat in.
+Med länken kan du komma åt Adobe Campaign Client Console i webbläge och arbeta med felarbetsflödet när du har loggat in.
 
 ![](assets/wf-notification_error-console.png)
 
@@ -245,7 +245,7 @@ Arbetsflödesansvariga meddelas. Den som skapade arbetsflödet och den sista anv
 
 ## Filtrera arbetsflöden utifrån deras status {#filtering-workflows-status}
 
-Med Campaign Classicens gränssnitt kan du övervaka körningsstatusen för alla arbetsflöden på din instans med fördefinierade **vyer**. Öppna noden **[!UICONTROL Administration]** / **[!UICONTROL Audit]** / **[!UICONTROL Workflows Status]** för att få åtkomst till dessa vyer.
+Med Campaign Classic-gränssnittet kan du övervaka körningsstatusen för alla arbetsflöden på din instans med fördefinierade **vyer**. Öppna noden **[!UICONTROL Administration]** / **[!UICONTROL Audit]** / **[!UICONTROL Workflows Status]** för att få åtkomst till dessa vyer.
 
 Följande vyer är tillgängliga:
 

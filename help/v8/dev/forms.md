@@ -5,7 +5,7 @@ feature: Web Forms, Landing Pages
 role: Developer
 level: Beginner, Intermediate
 exl-id: 62908bba-9cfa-42b6-b463-b601496d535b
-source-git-commit: 061197048885a30249bd18af7f8b24cb71def742
+source-git-commit: 4f9183c7f1d12feb255a0050da423647f0fce85e
 workflow-type: tm+mt
 source-wordcount: '2551'
 ht-degree: 0%
@@ -16,7 +16,7 @@ ht-degree: 0%
 
 När du skapar eller utökar ett schema måste du skapa eller ändra de associerade indataformulären för att göra ändringarna synliga för slutanvändarna.
 
-Med ett inmatningsformulär kan du redigera en instans som är associerad med ett dataschema från Adobe Campaign klientkonsol. Formuläret identifieras av dess namn och namnutrymme.
+Med ett inmatningsformulär kan du redigera en instans som är associerad med ett dataschema från Adobe Campaign Client Console. Formuläret identifieras av dess namn och namnutrymme.
 
 Identifieringsnyckeln för ett formulär är en sträng som består av namnutrymmet och namnet avgränsat med ett kolon, till exempel: &quot;cus:contact&quot;.
 
@@ -87,11 +87,11 @@ Redigeringskontrollen anpassas automatiskt till motsvarande datatyp och använde
 
 Som standard visas varje fält på en rad och tar upp allt tillgängligt utrymme beroende på datatypen.
 
-Alla formulärattribut visas i [Campaign Classic v7-dokumentationen](https://experienceleague.adobe.com/developer/campaign-api/api/control-Button.html?lang=sv-SE){target="_blank"}.
+Alla formulärattribut visas i [Campaign Classic v7-dokumentationen](https://experienceleague.adobe.com/developer/campaign-api/api/control-Button.html){target="_blank"}.
 
 ## Formatering {#formatting}
 
-Layouten på kontrollerna ser ut som den layout som används i tabeller i HTML, med möjlighet att dela upp en kontroll i flera kolumner, sammanflätade element eller ange hur mycket utrymme som finns tillgängligt. Tänk på att du bara kan dela upp området efter proportioner med formatering. Du kan inte ange fasta dimensioner för ett objekt.
+Layouten för kontrollerna ser ut som den layout som används i HTML-tabeller, där det är möjligt att dela upp en kontroll i flera kolumner, sammanflätade element eller ange hur mycket utrymme som finns tillgängligt. Tänk på att du bara kan dela upp området efter proportioner med formatering. Du kan inte ange fasta dimensioner för ett objekt.
 
 Så här visar du kontrollerna i exemplet ovan i två kolumner:
 
@@ -636,9 +636,9 @@ Om attributet **type=&quot;wizard&quot;** finns i elementet `<form>` kan du defi
 
 Knappen **[!UICONTROL Finish]** sparar angivna data och stänger formuläret.
 
-### SOAP {#soap-methods}
+### SOAP-metoder {#soap-methods}
 
-SOAP kan startas från en ifylld **`<leave>`**-tagg i slutet av en sida.
+Körning av SOAP-metoder kan startas från en ifylld **`<leave>`**-tagg i slutet av en sida.
 
 Taggen **`<soapcall>`** innehåller anropet till metoden med följande indataparametrar:
 

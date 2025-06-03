@@ -6,9 +6,9 @@ feature: Campaigns, Cross Channel Orchestration, Programs
 role: User
 version: Campaign v8, Campaign Classic v7
 exl-id: 90dd2dad-1380-490e-b958-4a28a7d930ed
-source-git-commit: a5f7cf6e21b263f8a7fb4fa19a88bebb78390c3d
+source-git-commit: 24ecf598d3d01f7fb59c70e1c8c81e9c086e653e
 workflow-type: tm+mt
-source-wordcount: '1327'
+source-wordcount: '1298'
 ht-degree: 2%
 
 ---
@@ -159,14 +159,9 @@ När du bläddrar i kalendern kan du även skapa ett program eller en kampanj.
 När du skapar en kampanj via fliken **[!UICONTROL Schedule]** i ett program länkas kampanjen automatiskt till det aktuella programmet. Fältet **[!UICONTROL Program]** är dolt i det här fallet.
 
 
-## Öppna Campaign med en webbläsare {#use-the-web-interface}
+## Använda webbgränssnittet {#use-the-web-interface-}
 
-
->[!AVAILABILITY]
->
->Från och med Campaign v8.6 är Campaign tillgängligt i ett webbanvändargränssnitt. De flesta marknadsföringsåtgärder kan utföras från det nya gränssnittet. [Läs mer](../../v8/start/campaign-ui.md#discover-the-user-interface).
-
-Du kan komma åt vissa av Adobe Campaign klientkonsolskärmar via en webbläsare för att visa alla kampanjer och leveranser samt rapporter och information om profilerna i din databas. Du kan inte skapa komponenter från den här webbåtkomsten, men beroende på åtkomstbehörighet kan du visa och/eller agera utifrån data i databasen. Normalt kan ni godkänna kampanjinnehåll och målinriktning, starta om eller stoppa en leverans osv.
+Du kan öppna Adobe Campaign Client Console-skärmarna via en webbläsare och visa alla kampanjer och leveranser samt rapporter och information om profilerna i din databas. Det går inte att skapa poster med den här åtkomsten. Beroende på användarrättigheterna kan du visa och/eller agera på data i databasen. Du kan till exempel godkänna kampanjinnehåll och målinriktning, starta om eller stoppa en leverans osv.
 
 1. Logga in som vanligt via https://`<your instance>:<port>/view/home`.
 1. Använd menyerna för att komma åt översikterna.
@@ -213,4 +208,4 @@ Du kan också använda länken i meddelandena. Mer information om detta finns i 
 
 Den här videon visar hur du skapar en marknadsföringsplan, ett program och en kampanj.
 
->[!VIDEO](https://video.tv.adobe.com/v/3449902?quality=12&captions=swe)
+>[!VIDEO](https://video.tv.adobe.com/v/333810?quality=12)

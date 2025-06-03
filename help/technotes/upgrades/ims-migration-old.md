@@ -4,7 +4,7 @@ description: Lär dig hur du migrerar tekniska kampanjoperatörer till ett tekni
 exl-id: 63008b58-4384-4d2b-864a-57f11d701c01
 hide: true
 hidefromtoc: true
-source-git-commit: 09db0cc1a14bffefe8d1b8d0d5a06d5b6517a5bb
+source-git-commit: 41e39e046ec77de8b5e657ba76645898ff1cd2d7
 workflow-type: tm+mt
 source-wordcount: '861'
 ht-degree: 0%
@@ -13,7 +13,7 @@ ht-degree: 0%
 
 # Migrering av tekniska aktörer från Campaign till Adobe Developer Console {#migrate-tech-users-to-ims}
 
-Från och med Campaign v8.5 förbättras autentiseringsprocessen till Campaign v8. Tekniska operatorer måste använda [Adobe Identity Management System (IMS)](https://helpx.adobe.com/se/enterprise/using/identity.html){target="_blank"} för att ansluta till Campaign. En teknisk operator är en Campaign-användarprofil som uttryckligen har skapats för API-integrering. I den här artikeln beskrivs stegen som krävs för att migrera en teknisk operatör till ett tekniskt konto på Adobe Developer-konsolen.
+Från och med Campaign v8.5 förbättras autentiseringsprocessen till Campaign v8. Tekniska operatörer måste använda [Adobe Identity Management System (IMS)](https://helpx.adobe.com/enterprise/using/identity.html){target="_blank"} för att ansluta till Campaign. En teknisk operator är en Campaign-användarprofil som uttryckligen har skapats för API-integrering. I den här artikeln beskrivs stegen som krävs för att migrera en teknisk operatör till ett tekniskt konto på Adobe Developer-konsolen.
 
 ## Vad har ändrats?{#ims-changes}
 
@@ -42,7 +42,7 @@ Viktiga steg är:
 
 ### Förhandskrav{#ims-migration-prerequisites}
 
-Innan du startar migreringsprocessen måste du kontakta din Adobe Transition Manager så att Adobe tekniska team kan migrera dina befintliga Operator-grupper och namngivna rättigheter till Adobe Identity Management System (IMS).
+Innan du startar migreringsprocessen måste du kontakta din Adobe Transition Manager så att Adobe tekniska team kan migrera dina befintliga Operator-grupper och namngivna behörigheter till Adobe Identity Management System (IMS).
 
 ### Steg 1 - Skapa/uppdatera ditt Campaign-projekt i Adobe Developer Console{#ims-migration-step-1}
 
@@ -77,10 +77,10 @@ Nu kan du lägga till din Campaign-produktprofil i projektet, enligt beskrivning
 
 Det här steget är bara obligatoriskt om specifika mappbehörigheter eller namngivna rättigheter har definierats för den här operatorn (inte via operatorns grupp).
 
-Nu måste du uppdatera den nyskapade tekniska operatorn i Adobe Campaign klientkonsol. Du måste tillämpa den befintliga mappbehörigheten för tekniska operatorer på den nya tekniska operatorn.
+Nu måste du uppdatera den nyskapade tekniska operatorn i Adobe Campaign Client Console. Du måste tillämpa den befintliga mappbehörigheten för tekniska operatorer på den nya tekniska operatorn.
 Så här uppdaterar du operatorn:
 
-1. Gå till **Administration > Åtkomsthantering > Operatorer** i Campaign-klientkonsolens utforskare.
+1. Gå till **Administration > Åtkomsthantering > Operatorer** i Campaign Client Console Explorer.
 1. Få åtkomst till den befintliga tekniska operatorn som används för API:er.
 1. Bläddra till mappbehörigheterna och kontrollera rättigheterna.
 1. Använd samma behörigheter för den nyskapade tekniska operatorn. Operatorns e-postadress är det **e-postvärde för tekniskt konto** som kopierades tidigare.
@@ -89,7 +89,7 @@ Så här uppdaterar du operatorn:
 
 >[!CAUTION]
 >
->Den nya tekniska operatorn måste ha gjort minst ett API-anrop som ska läggas till i Campaign-klientkonsolen.
+>Den nya tekniska operatorn måste ha gjort minst ett API-anrop som ska läggas till i Campaign Client Console.
 >
 
 <!--
@@ -100,7 +100,7 @@ Så här uppdaterar du operatorn:
 
 To update the technical operator authentication mode to IMS, follow these steps:
 
-1. From Campaign client console explorer, browse to the **Administration > Access Management > Operators**.
+1. From Campaign Client Console explorer, browse to the **Administration > Access Management > Operators**.
 1. Edit the existing technical operator used for APIs.
 1. Replace the **Name (login)** of this technical operator by the technical account email retrieved earlier.
 1. Browse to the **Edit** button on the top left beside **File**, and select **Edit the XML source**.

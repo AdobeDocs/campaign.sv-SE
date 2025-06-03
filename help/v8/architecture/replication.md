@@ -7,7 +7,7 @@ level: Intermediate
 exl-id: 7b145193-d4ae-47d0-b694-398c1e35eee4
 source-git-commit: b8f774ce507cff67163064b6bd1341b31512c08f
 workflow-type: tm+mt
-source-wordcount: '798'
+source-wordcount: '797'
 ht-degree: 2%
 
 ---
@@ -42,7 +42,7 @@ Replikeringsprinciper definierar hur mycket data som replikeras från en Campaig
 
 Campaign v8 förlitar sig på specifika tekniska arbetsflöden för att hantera schemalagd datareplikering. Dessa tekniska arbetsflöden är tillgängliga från noden **[!UICONTROL Administration > Production > Technical workflows > Full FFDA Replication]** i Campaign Explorer. **De får inte ändras.**
 
-Tekniska arbetsflöden kör processer eller jobb som schemaläggs regelbundet på servern. En fullständig lista över tekniska arbetsflöden finns på [den här sidan](https://experienceleague.adobe.com/docs/campaign/automation/workflows/introduction/wf-type/technical-workflows.html?lang=sv-SE){target="_blank"}.
+Tekniska arbetsflöden kör processer eller jobb som schemaläggs regelbundet på servern. En fullständig lista över tekniska arbetsflöden finns på [den här sidan](https://experienceleague.adobe.com/docs/campaign/automation/workflows/introduction/wf-type/technical-workflows.html){target="_blank"}.
 
 Tekniska arbetsflöden som säkerställer datareplikering är följande:
 
@@ -117,4 +117,4 @@ I den här videon visas de viktigaste begreppen för databaser som används i Ad
 
 >[!VIDEO](https://video.tv.adobe.com/v/334460?quality=12)
 
-Ytterligare självstudiekurser för Campaign v8-klientkonsolen finns [här](https://experienceleague.adobe.com/sv/docs/campaign-learn/tutorials/overview).
+Ytterligare självstudiekurser för Campaign v8-klientkonsolen finns [här](https://experienceleague.adobe.com/en/docs/campaign-learn/tutorials/overview).

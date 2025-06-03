@@ -5,7 +5,7 @@ feature: Microsoft CRM Integration
 role: Admin, User
 level: Beginner, Intermediate
 exl-id: 4f9e8f74-27dc-482c-a83c-25623b53560f
-source-git-commit: 69ff08567f3a0ab827a118a089495fc75bb550c5
+source-git-commit: d80a39d7f0df939d0e9e3f782d5d9aef3d459a32
 workflow-type: tm+mt
 source-wordcount: '1376'
 ht-degree: 1%
@@ -20,7 +20,7 @@ När konfigurationen är klar utförs datasynkronisering mellan system via en de
 
 >[!NOTE]
 >
->Microsoft Dynamics-versioner som stöds finns detaljerade i Campaign [Kompatibilitetsmatrisen](../start/compatibility-matrix.md).
+>De Microsoft Dynamics-versioner som stöds beskrivs i Campaign [Kompatibilitetsmatrisen](../start/compatibility-matrix.md).
 
 Följ stegen nedan för att konfigurera ett dedikerat externt konto för att importera och exportera Microsoft Dynamics 365-data till Adobe Campaign.
 
@@ -63,7 +63,7 @@ Följ stegen nedan:
 1. Överför ditt offentliga certifikat.
 1. Bläddra till länken **Manifest** för att hämta **identifieraren för certifikatnyckeln (customKeyIdentifier)** och **nyckel-ID:t (keyId)**.
 
-Identifieraren **för certifikatnyckeln (customKeyIdentifier)** och **nyckel-ID (keyId)** behövs i Campaign för att konfigurera det externa Microsoft Dynamics 365 CRM-kontot med certifikatet **[!UICONTROL CRM O-Auth type]**.
+**Certifikatnyckelidentifieraren (customKeyIdentifier)** och **Key-ID (keyId)** behövs i Campaign för att konfigurera ditt externa Microsoft Dynamics 365 CRM-konto med hjälp av certifikatet **[!UICONTROL CRM O-Auth type]**.
 
 +++ Så här skapar du det offentliga certifikatet
 
@@ -109,7 +109,7 @@ Mer information finns i [Azure-dokumentationen](https://docs.microsoft.com/azure
 >
 > Det här steget är valfritt med **[!UICONTROL Password credentials]**-autentisering.
 
-Appanvändaren är den användare som programmet som registrerats ovan kommer att använda. Alla ändringar som görs i Microsoft Dynamics med den app som registrerats ovan görs via den här användaren.
+Appanvändaren är den användare som programmet som registrerats ovan kommer att använda. Alla ändringar som görs i Microsoft Dynamics med appen som registrerats ovan görs via den här användaren.
 
 **Steg 1**: Skapa en icke-interaktiv användare i Azure Active Directory
 
@@ -136,7 +136,7 @@ Appanvändaren är den användare som programmet som registrerats ovan kommer at
 
 ### Skapa anslutningen{#new-ms-dyn-external-account}
 
-Först måste du skapa det externa Microsoft Dynamics 365-kontot.
+Först måste du skapa ett externt Microsoft Dynamics 365-konto.
 
 1. Bläddra i noden **[!UICONTROL Administration > Platform > External accounts]** i Campaign Explorer och skapa ett externt konto.
 1. Välj **[!UICONTROL Microsoft Dynamics CRM]** externt konto i avsnittet **Typ**.
@@ -146,7 +146,7 @@ Först måste du skapa det externa Microsoft Dynamics 365-kontot.
 
    1. Om du vill konfigurera det externa Microsoft Dynamics CRM-kontot så att det ansluter till Adobe Campaign med **lösenordsreferenser** anger du följande information:
 
-      * **Server**: URL-adressen till din Microsoft CRM-server. Om du vill hitta URL-adressen till din Microsoft CRM-server öppnar du ditt Microsoft Dynamics CRM-konto och klickar sedan på Dynamics 365 och väljer din app. Du kan sedan hitta din server-URL i webbläsarens adressfält, t.ex. https://myserver.crm.dynamics.com/.
+      * **Server**: URL-adressen till din Microsoft CRM-server. Om du vill hitta URL-adressen till din Microsoft CRM-server öppnar du ditt Microsoft Dynamics CRM-konto, klickar på Dynamics 365 och väljer din app. Du kan sedan hitta din server-URL i webbläsarens adressfält, t.ex. https://myserver.crm.dynamics.com/.
       * **Konto**: Det konto som används för att logga in på Microsoft CRM.
       * **Lösenord**: Det konto som används för att logga in på Microsoft CRM.
       * **Klient-ID**: Program-ID (klient) som kan hittas från Microsoft Azure-hanteringsportalen i fältet Uppdatera din kodkategori, Klient-ID.
@@ -154,7 +154,7 @@ Först måste du skapa det externa Microsoft Dynamics 365-kontot.
 
    1. Om du vill konfigurera det externa Microsoft Dynamics CRM-kontot så att det ansluter till Adobe Campaign med ett **certifikat** anger du följande information:
 
-      * **Server**: URL-adressen till din Microsoft CRM-server. Om du vill hitta URL-adressen till din Microsoft CRM-server öppnar du ditt Microsoft Dynamics CRM-konto och klickar sedan på Dynamics 365 och väljer din app. Du kan sedan hitta din server-URL i webbläsarens adressfält, t.ex. https://myserver.crm.dynamics.com/.
+      * **Server**: URL-adressen till din Microsoft CRM-server. Om du vill hitta URL-adressen till din Microsoft CRM-server öppnar du ditt Microsoft Dynamics CRM-konto, klickar på Dynamics 365 och väljer din app. Du kan sedan hitta din server-URL i webbläsarens adressfält, t.ex. https://myserver.crm.dynamics.com/.
       * **Privat nyckel**: Kopiera/klistra in den privata nyckeln, kodad base64 enligt beskrivningen i [det här avsnittet](#config-certificate-key-id).
       * **Nyckel-ID**: Nyckeln finns på fliken **Manifest** i ditt program, vilket förklaras i [det här avsnittet](#config-certificate-key-id).
       * **Anpassad nyckelidentifierare**: Identifieraren är tillgänglig på fliken **Manifest** i ditt program, vilket förklaras i [det här avsnittet](#config-certificate-key-id).
@@ -165,7 +165,7 @@ Först måste du skapa det externa Microsoft Dynamics 365-kontot.
 
 >[!NOTE]
 >
->Logga ut och in igen på Adobe Campaign klientkonsol för att godkänna konfigurationen.
+>Logga ut och sedan in på Adobe Campaign Client Console igen för att godkänna installationen.
 
 ### Markera tabeller som ska synkroniseras{#ms-dyn-create-tables}
 
@@ -197,7 +197,7 @@ Läs mer om datasynkronisering [på den här sidan](crm-data-sync.md).
 
 ### Datatyper för fält som stöds {#ms-dyn-supported-types}
 
-För attributtyper som stöds/inte stöds i Microsoft Dynamics 365 anges nedan:
+För Microsoft Dynamics 365-attributtyper som stöds/inte stöds finns följande:
 
 
 | Attributtyp | Stöds |
