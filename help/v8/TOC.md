@@ -5,10 +5,10 @@ user-guide-description: Produktdokumentation för Adobe Campaign v8 (klientkonso
 title: Adobe Campaign v8-dokumentation
 description: Kampanjdokumentation v8
 breadcrumb-title: Dokumentation om Campaign v8
-source-git-commit: 4a62c551c43cd5a4866df36cce10e294f35db363
+source-git-commit: a2efad26232cd380eea850a589b22b23928253e8
 workflow-type: tm+mt
-source-wordcount: '695'
-ht-degree: 18%
+source-wordcount: '712'
+ht-degree: 19%
 
 ---
 
@@ -41,17 +41,21 @@ ht-degree: 18%
    + [Vanliga frågor och svar ](start/campaign-faq.md)
 + Kampanjhantering {#campaigns}
    + [Kom igång med kampanjer](start/campaigns.md)
-   + [Kampanjsamordning >](https://experienceleague.adobe.com/docs/campaign/automation/campaign-orchestration/set-up-campaigns.html?lang=sv-SE)
+   + [Kampanjsamordning >](https://experienceleague.adobe.com/docs/campaign/automation/campaign-orchestration/set-up-campaigns.html)
 + Skicka meddelanden{#send}
    + [Kom igång med meddelanden](start/gs-message.md)
    + [Skapa din första leverans](start/create-message.md)
    + [God praxis för leverans](start/delivery-best-practices.md)
    + E-post {#emails}
       + [Designa och validera e-postmeddelanden](send/email.md)
+      + [Definiera e-postinnehållet](send/defining-the-email-content.md)
+      + [Definiera interaktivt innehåll](send/defining-interactive-content.md)
       + [Länka till spegelsidan](send/mirror-page.md)
       + [Lägg till en hemlig kopia-adress](send/email-bcc.md)
       + [Definiera ytterligare e-postparametrar](send/email-parameters.md)
       + [Skicka och övervaka e-postmeddelanden](send/send.md)
+      + [Skicka e-post till japanska mobiler](send/sending-emails-on-japanese-mobiles.md)
+      + [Bifoga filer i ett e-postmeddelande](send/attaching-files.md)
    + SMS {#sms}
       + [Kom igång med SMS](send/sms/sms.md)
       + Konfigurera SMS-kanal {#config-sms}
@@ -124,7 +128,7 @@ ht-degree: 18%
    + [Skapa landningssidor](dev/landing-pages.md)
    + [Designa webbprogram och formulär](dev/webapps.md)
 + Automatisering och arbetsflöden {#automation}
-   + [Kampanjautomatiseringsguide >](https://experienceleague.adobe.com/sv/docs/campaign/automation/home)
+   + [Kampanjautomatiseringsguide >](https://experienceleague.adobe.com/en/docs/campaign/automation/home)
 + Integritet och säkerhetshantering {#privacy}
    + [Hantera förfrågningar om användarens information](start/privacy.md)
    + [Säkerhetsanvisningar](config/security.md)
@@ -166,7 +170,7 @@ ht-degree: 18%
 + Datahantering {#data}
    + [Kom igång med arbetsflöden](config/workflows.md)
    + [Importera data](start/import.md)
-   + [Arbetsflödesdokumentation](https://experienceleague.adobe.com/docs/campaign/automation/workflows/introduction/about-workflows.html?lang=sv-SE)
+   + [Arbetsflödesdokumentation](https://experienceleague.adobe.com/docs/campaign/automation/workflows/introduction/about-workflows.html)
 + Integreringar {#connect}
    + [Connect Campaign med andra lösningar](connect/integration.md)
    + Campaign + Experience Platform {#ac-aep}
@@ -229,6 +233,6 @@ ht-degree: 18%
       + [Inmatningsformulär](dev/forms.md)
    + [Arbeta med datapaket](dev/packages.md)
    + [Kampanj-API:er](dev/api.md)
-+ [Kampanjtekniker >](https://experienceleague.adobe.com/sv/docs/campaign/technotes-ac/technotes-home)
-+ [Dokumentation för webbanvändargränssnittet för kampanj >](https://experienceleague.adobe.com/sv/docs/campaign-web/v8/campaign-web-home)
++ [Kampanjtekniker >](https://experienceleague.adobe.com/en/docs/campaign/technotes-ac/technotes-home)
++ [Dokumentation för webbanvändargränssnittet för kampanj >](https://experienceleague.adobe.com/en/docs/campaign-web/v8/campaign-web-home)
 

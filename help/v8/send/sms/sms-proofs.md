@@ -4,8 +4,9 @@ description: Lär dig hur du skickar korrektur för en SMS-leverans
 feature: SMS
 role: User
 level: Beginner, Intermediate
+version: Campaign v8, Campaign Classic v7
 exl-id: d2ec4d92-7f00-47c8-98e6-0613d6387de0
-source-git-commit: 70af3bceee67082d6a1bb098e60fd2899dc74600
+source-git-commit: a2efad26232cd380eea850a589b22b23928253e8
 workflow-type: tm+mt
 source-wordcount: '243'
 ht-degree: 0%
@@ -14,7 +15,7 @@ ht-degree: 0%
 
 # Skicka ett bevis på SMS-leverans {#sms-proof}
 
-Adobe rekommenderar starkt att du konfigurerar en leveransvalideringscykel. Se till att innehållet godkänns innan du skickar det till mottagarna.
+Adobe rekommenderar starkt att du skapar en leveransvalideringscykel. Se till att innehållet godkänns innan du skickar det till mottagarna.
 
 Du kan skicka ett bevis för SMS-leveransen för att validera den:
 

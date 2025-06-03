@@ -5,7 +5,8 @@ description: Läs mer om arbetsflödesaktiviteten Fråga
 feature: Workflows, Targeting Activity, Query Editor
 role: User, Data Engineer
 exl-id: 717e4f7c-3a8e-4930-9a06-b7412d6e1675
-source-git-commit: 71bad190894243f8c4dd82792dcc379faa947e04
+version: Campaign v8, Campaign Classic v7
+source-git-commit: a2efad26232cd380eea850a589b22b23928253e8
 workflow-type: tm+mt
 source-wordcount: '1607'
 ht-degree: 0%
@@ -23,7 +24,7 @@ Mer information om frågeexempel finns i [det här avsnittet](querying-recipient
 
 >[!NOTE]
 >
->Adobe Campaign Web UI har en kraftfull frågemodellerare som förenklar filtreringen av databaser för att välja specifika mål baserat på olika kriterier, vilket gör att du enklare kan skapa och hantera frågor. Mer information om frågemodelleraren för webbgränssnitt finns i [Adobe Campaign Web UI-dokumentationen](https://experienceleague.adobe.com/sv/docs/campaign-web/v8/query-database/query-modeler-overview){target=_blank}.
+>Adobe Campaign Web UI har en kraftfull frågemodellerare som förenklar filtreringen av databaser för att välja specifika mål baserat på olika kriterier, vilket gör att du enklare kan skapa och hantera frågor. Mer information om frågemodelleraren för webbgränssnitt finns i [Adobe Campaign Web UI-dokumentationen](https://experienceleague.adobe.com/en/docs/campaign-web/v8/query-database/query-modeler-overview){target=_blank}.
 
 
 ![](assets/query-activity.png){width="70%" align="center" zoomable="yes"}

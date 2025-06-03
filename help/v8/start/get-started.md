@@ -5,7 +5,8 @@ feature: Overview, Cross Channel Orchestration
 role: User
 level: Beginner
 exl-id: 04b12907-3cb1-40f1-90b8-1524d84edf2d
-source-git-commit: 061197048885a30249bd18af7f8b24cb71def742
+version: Campaign v8, Campaign Classic v7
+source-git-commit: a2efad26232cd380eea850a589b22b23928253e8
 workflow-type: tm+mt
 source-wordcount: '994'
 ht-degree: 20%
@@ -18,7 +19,7 @@ Adobe Campaign är en plattform för att designa flerkanaliga kundupplevelser oc
 
 Adobe Campaign v8 är nästa generations kampanjverktyg som har byggts för olika marknadsföringskanaler som e-post, push-meddelanden, SMS och direktreklam. Den erbjuder robusta ETL- och datahanteringsfunktioner för att hjälpa till att utforma och strukturera den perfekta kampanjen. Dess orkestreringsmotor ger möjlighet till multitouch-marknadsföring med fokus på batchbaserade resor. Den levereras också tillsammans med en skalbar meddelandeserver i realtid som gör det möjligt för marknadsföringsteamen att skicka fördefinierade meddelanden baserat på en totalbelastning från alla IT-system för kommunikation som lösenordsåterställning, orderbekräftelse, e-kvitto och mycket annat.
 
-Adobe Campaign v8 har avsevärda förbättringar vad gäller infrastruktur, säkerhet, leveransbarhet och övervakning. Det finns som en **hanterad Cloud Service** som kombinerar tjänster med proaktiv tillsyn och tidsbegränsade ändringar. Läs mer om Campaign Managed-Cloud Service [på den här sidan](whats-new.md#acms-desc).
+Adobe Campaign v8 har avsevärda förbättringar vad gäller infrastruktur, säkerhet, leveransbarhet och övervakning. Det finns som en **hanterad Cloud Service** som kombinerar tjänster med proaktiv tillsyn och aktuella ändringar. Läs mer om Campaign Managed Cloud Services [på den här sidan](whats-new.md#acms-desc).
 
 Använd Campaign för att
 
@@ -88,7 +89,7 @@ Lär dig hur du integrerar med Adobes tjänster och lösningar i [det här avsni
 
 Adobe Campaign har en uppsättning funktioner som hjälper er att implementera och optimera marknadsföringsfunktionerna beroende på era behov och er arkitektur. Vissa av dem är kärnfunktioner och andra är beroende av att ett paket installeras på din konfiguration. En detaljerad produktbeskrivning finns här: [Adobe Campaign v8 Produktbeskrivning](https://helpx.adobe.com/se/legal/product-descriptions/adobe-campaign-managed-cloud-services.html).
 
-Känner du redan till Campaign Classicen? Lär dig viktiga skillnader mellan Campaign Classic och Campaign v8 på [den här sidan](v7-to-v8.md).
+Känner du redan till Campaign Classic? Lär dig viktiga skillnader mellan Campaign Classic och Campaign v8 på [den här sidan](v7-to-v8.md).
 
 **Se även**
 

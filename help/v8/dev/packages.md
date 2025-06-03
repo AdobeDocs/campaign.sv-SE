@@ -5,7 +5,8 @@ feature: Data Management, Package Export/Import
 role: Developer
 level: Intermediate, Experienced
 exl-id: bf1ae889-9c07-4acf-8fd0-55b57151bc47
-source-git-commit: 69ef7e81d5fc0f5cf0dc74fa16d970ef89607331
+version: Campaign v8, Campaign Classic v7
+source-git-commit: a2efad26232cd380eea850a589b22b23928253e8
 workflow-type: tm+mt
 source-wordcount: '1941'
 ht-degree: 0%

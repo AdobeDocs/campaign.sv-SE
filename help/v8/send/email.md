@@ -4,8 +4,9 @@ description: Kom igång med e-post i Adobe Campaign. Skicka personanpassade e-po
 feature: Email
 role: User
 level: Beginner
+version: Campaign v8, Campaign Classic v7
 exl-id: 97dcd0e0-db5b-45a4-96af-817e49f6cb64
-source-git-commit: 693b9d9d50d5e60061bd952090380382ebaf8df8
+source-git-commit: a2efad26232cd380eea850a589b22b23928253e8
 workflow-type: tm+mt
 source-wordcount: '565'
 ht-degree: 6%
@@ -90,7 +91,7 @@ I följande exempel får du lära dig hur du utformar en e-postleverans i Adobe 
 
 Din första e-postleverans är klar. Nu måste ni definiera målgruppen, validera leveransen och skicka den.
 
-Lär dig hur du skapar ett arbetsflöde för att importera ett e-postinnehåll i det här [användningsfallet](https://experienceleague.adobe.com/docs/campaign/automation/workflows/use-cases/deliveries/load-delivery-content.html?lang=sv-SE){target="_blank"}.
+Lär dig hur du skapar ett arbetsflöde för att importera ett e-postinnehåll i det här [användningsfallet](https://experienceleague.adobe.com/docs/campaign/automation/workflows/use-cases/deliveries/load-delivery-content.html){target="_blank"}.
 
 >[!MORELIKETHIS]
 >

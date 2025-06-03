@@ -4,8 +4,9 @@ description: Läs mer om alternativ och inställningar som är specifika för e-
 feature: Email
 role: User
 level: Beginner
+version: Campaign v8, Campaign Classic v7
 exl-id: ad75f01e-2c6c-4607-b15a-8870d399002a
-source-git-commit: 87c971ac6cf4abb6b04d52ce60ac2036055e1e02
+source-git-commit: a2efad26232cd380eea850a589b22b23928253e8
 workflow-type: tm+mt
 source-wordcount: '594'
 ht-degree: 7%
@@ -42,7 +43,7 @@ Välj formatet för e-postmeddelandet i fönstrets nedre del:
 
 * **[!UICONTROL Send all messages in text format]**
 
-  Meddelandet skickas i textformat. Formatet HTML skickas inte, utan används endast för spegelsidan när mottagaren klickar på meddelandet.
+  Meddelandet skickas i textformat. HTML-formatet skickas inte, utan används endast för spegelsidan när mottagaren klickar på meddelandet.
 
 <!--
 >[!NOTE]

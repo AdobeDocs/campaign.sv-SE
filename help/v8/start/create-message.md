@@ -4,8 +4,9 @@ description: Skapa din första leverans
 feature: Email, Push, SMS, Direct Mail, Cross Channel Orchestration
 role: User
 level: Beginner
+version: Campaign v8, Campaign Classic v7
 exl-id: 6cf8a929-637e-4e51-9160-5980ca727efb
-source-git-commit: 53fab31c21fdfe2f90c4793ccd025af1d5c0e061
+source-git-commit: a2efad26232cd380eea850a589b22b23928253e8
 workflow-type: tm+mt
 source-wordcount: '1523'
 ht-degree: 3%
@@ -58,7 +59,7 @@ Leveransinnehållet kan konfigureras. Definitionen av leveransinnehåll är spec
 * [Definiera e-postinnehållet](../send/email.md)
 * [Definiera SMS-innehållet](../send/sms/sms-content.md)
 * [Definiera innehållet i direktmeddelanden](../send/direct-mail.md)
-* [Minska innehållet i push-meddelanden](../send/push.md)
+* [Definiera innehållet i push-meddelanden](../send/push.md)
 
 
 ## Definiera målgruppen {#target-population}
@@ -136,7 +137,7 @@ Du kan skicka meddelanden till profiler som inte lagras i databasen, utan i en e
 1. Markera filen som innehåller mottagarna.
 1. När du importerar mottagarna klickar du på länken **[!UICONTROL File format definition...]** för att markera och konfigurera den externa filen.
 
-   Mer information om dataimport finns i [Campaign Classic v7-dokumentationen](https://experienceleague.adobe.com/sv/docs/campaign-classic/using/getting-started/importing-and-exporting-data/generic-imports-exports/executing-import-jobs#step-2---source-file-selection){target="_blank"}.
+   Mer information om dataimport finns i [Campaign Classic v7-dokumentationen](https://experienceleague.adobe.com/en/docs/campaign-classic/using/getting-started/importing-and-exporting-data/generic-imports-exports/executing-import-jobs#step-2---source-file-selection){target="_blank"}.
 
 1. Klicka på **[!UICONTROL Finish]** och konfigurera leveransen som en standardleverans.
 
@@ -181,9 +182,9 @@ Mer information om korrekturmottagare och sändning finns i [det här avsnittet]
 
 I den här videon får du lära dig hur du lägger till frön och korrektur i ett befintligt e-postmeddelande och hur du skickar det.
 
->[!VIDEO](https://video.tv.adobe.com/v/3447003?quality=12&captions=swe)
+>[!VIDEO](https://video.tv.adobe.com/v/333404?quality=12)
 
-Ytterligare Campaign Classic om instruktionsvideor finns [här](https://experienceleague.adobe.com/docs/campaign-classic-learn/tutorials/overview.html?lang=sv).
+Ytterligare Campaign Classic instruktionsvideor finns [här](https://experienceleague.adobe.com/docs/campaign-classic-learn/tutorials/overview.html?lang=sv).
 
 ## Förbered och validera leveransen {#validate-the-delivery}
 

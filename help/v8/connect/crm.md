@@ -5,7 +5,8 @@ feature: Salesforce Integration, Microsoft CRM Integration
 role: Admin, User
 level: Beginner
 exl-id: c2d34ee9-4427-48e7-a8cf-0ae02a801d50
-source-git-commit: f577ee6d303bab9bb07350b60cf0fa6fc9d3a163
+version: Campaign v8, Campaign Classic v7
+source-git-commit: a2efad26232cd380eea850a589b22b23928253e8
 workflow-type: tm+mt
 source-wordcount: '329'
 ht-degree: 19%
@@ -41,7 +42,7 @@ CRM och versioner som stöds finns detaljerade i Campaign [Kompatibilitetsmatris
 
 ## Implementeringssteg {#crm-implementation-steps}
 
-Lär dig steg för steg hur du ansluter Campaign och Microsoft Dynamics i [den här sidan](ac-ms-dyn.md).
+Lär dig steg för steg hur du ansluter Campaign och Microsoft Dynamics på [den här sidan](ac-ms-dyn.md).
 
 Lär dig steg för steg hur du ansluter Campaign och Salesforce.com i [den här sidan](ac-sfdc.md).
 

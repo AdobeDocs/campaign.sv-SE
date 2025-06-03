@@ -4,7 +4,9 @@ description: Kom igång med meddelanden
 feature: Email, Push, SMS, Direct Mail, Cross Channel Orchestration
 role: User
 level: Beginner
-source-git-commit: 5b2638927e39b6f839fb3a8639fe106d2c519fbf
+version: Campaign v8, Campaign Classic v7
+exl-id: a523e76d-776c-47d3-9c15-34241cee1092
+source-git-commit: a2efad26232cd380eea850a589b22b23928253e8
 workflow-type: tm+mt
 source-wordcount: '1002'
 ht-degree: 6%
@@ -58,7 +60,7 @@ Adobe Campaign v8 levereras med de leveranskanaler som listas nedan. Vilka kanal
 
   >[!NOTE]
   >
-  >Telefonkanalen är inte en inbyggd kanal. För att implementeringen ska fungera måste Adobe Consulting eller en Adobe-partner vara engagerade. Kontakta din Adobe-representant om du vill ha mer information.
+  >Telefonkanalen är inte en inbyggd kanal. Implementeringen kräver att Adobe Consulting eller en Adobe-partner är engagerade. Kontakta Adobe för mer information.
 
   Leveranser av typen Annan använder en specifik teknisk mall som inte utför någon process: På så sätt kan de hantera marknadsföringsåtgärder som utförs utanför Adobe Campaign-plattformen.
 
@@ -107,5 +109,4 @@ Du kan:
 
 Att övervaka era leveranser efter att de har skickats är ett viktigt steg för att se till att era marknadsföringskampanjer är effektiva och når ut till era kunder. Du kan övervaka efter att du har skickat en leverans samt förstå hur leveransfel och karantäner hanteras.
 
-Lär dig hur du övervakar leveranser i [Campaign Classic v7-dokumentationen](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/monitoring-deliveries/about-delivery-monitoring.html?lang=sv-SE#sending-messages){target="_blank"}
-
+Lär dig hur du övervakar leveranser i [Campaign Classic v7-dokumentationen](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/monitoring-deliveries/about-delivery-monitoring.html#sending-messages){target="_blank"}
