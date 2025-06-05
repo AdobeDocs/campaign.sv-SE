@@ -4,8 +4,9 @@ title: Innehållshantering
 description: Innehållshantering
 feature: Workflows, Data Management
 role: User
+version: Campaign v8, Campaign Classic v7
 exl-id: 9b225f78-1959-4e4f-aa4e-ff8a63051154
-source-git-commit: c73f9f3dc7958152c284dbaf06210d09115e5df8
+source-git-commit: 4cbccf1ad02af9133d51933e3e0d010b5c8c43bd
 workflow-type: tm+mt
 source-wordcount: '460'
 ht-degree: 2%
@@ -22,7 +23,7 @@ Med en **innehållshantering** -aktivitet kan du skapa och ändra ett innehåll 
 
 >[!NOTE]
 >
->Med Adobe Campaign webbanvändargränssnitt kan du använda innehållsfragment för ditt innehåll. Marknadsförare kan skapa flera anpassade innehållsblock i förväg tack vare återanvändbara komponenter som kan refereras i ett eller flera meddelanden, vilket gör att ni snabbt kan sammanställa meddelandeinnehållet i en förbättrad designprocess. Mer information om innehållsfragment finns i [Adobe Campaign Web UI-dokumentationen.](https://experienceleague.adobe.com/sv/docs/campaign-web/v8/content/manage-reusable-content/fragments/fragments){target=_blank}
+>Med Adobe Campaign webbanvändargränssnitt kan du använda innehållsfragment för ditt innehåll. Marknadsförare kan skapa flera anpassade innehållsblock i förväg tack vare återanvändbara komponenter som kan refereras i ett eller flera meddelanden, vilket gör att ni snabbt kan sammanställa meddelandeinnehållet i en förbättrad designprocess. Mer information om innehållsfragment finns i [Adobe Campaign Web UI-dokumentationen.](https://experienceleague.adobe.com/en/docs/campaign-web/v8/content/manage-reusable-content/fragments/fragments){target=_blank}
 
 Aktivitetens egenskaper är uppdelade i tre steg:
 

@@ -4,8 +4,9 @@ title: Tekniska arbetsflöden
 description: Läs mer om de tekniska arbetsflödena i Campaign
 feature: Workflows
 role: User, Admin
+version: Campaign v8, Campaign Classic v7
 exl-id: 2693856c-80b2-4e35-be8e-2a9760f8311f
-source-git-commit: b8f774ce507cff67163064b6bd1341b31512c08f
+source-git-commit: 4cbccf1ad02af9133d51933e3e0d010b5c8c43bd
 workflow-type: tm+mt
 source-wordcount: '2064'
 ht-degree: 0%
@@ -83,7 +84,7 @@ De arbetsflöden som beskrivs på den här sidan installeras med Adobe Campaign 
 | **Replikera referenstabeller** (ffdaReplicateReferenceTables) | Installerat som standard endast på [Campaign Enterprise (FFDA)-distributioner](../../v8/architecture/enterprise-deployment.md) | Utför automatisk replikering av inbyggda tabeller som måste finnas i Campaign-databasen (PostgreSQL) och molndatabasen ([!DNL Snowflake]). Det är schemalagt att köras varje timme, varje dag. Om fältet **lastModified** finns utförs replikeringen stegvis, annars replikeras hela tabellen. [Läs mer om datareplikering](../../v8/architecture/replication.md) |
 | **Replikera mellanlagringsdata** (ffdaReplicateStagingData) | Installerat som standard endast på [Campaign Enterprise (FFDA)-distributioner](../../v8/architecture/enterprise-deployment.md) | Replikerar mellanlagringsdata för enhetsanrop. Det är schemalagt att köras varje timme, varje dag. [Läs mer om datareplikering](../../v8/architecture/replication.md) |
 | **Rapportera aggregat** (reportingAggregates) | Leverans | Det här arbetsflödet uppdaterar aggregat som används i rapporter. Den aktiveras varje dag kl. 2.00 som standard. |
-| **Skickar indikatorer och kampanjattribut** (webAnalyticsSendMetrics) | Web Analytics-anslutningar | Med det här arbetsflödet kan ni skicka kampanjindikatorer från Adobe Campaign till Adobe Experience Cloud Suite via Adobe® Analytics-kontakten. De berörda indikatorerna är följande: Skickat (Skickat), Totalt antal öppningar (iTotalRecipientOpen), Totalt antal mottagare som klickat (iTotalRecipientClick), Fel (iError), Avanmäl (avanmäl dig) (iOptOut). |
+| **Skickar indikatorer och kampanjattribut** (webAnalyticsSendMetrics) | Web Analytics-anslutningar | Med det här arbetsflödet kan du skicka indikatorer för e-postkampanjer från Adobe Campaign till Adobe Experience Cloud Suite via Adobe® Analytics Connector. De berörda indikatorerna är följande: Skickat (Skickat), Totalt antal öppningar (iTotalRecipientOpen), Totalt antal mottagare som klickat (iTotalRecipientClick), Fel (iError), Avanmäl (avanmäl dig) (iOptOut). |
 | **Stock: Beställningar och aviseringar** (stockMgt) | Installerad som standard | Det här arbetsflödet startar lagerberäkning på orderraderna och hanterar varningsaviseringströsklar. |
 | **Synkronisera mobilappar från Adobe Experience Platform Data Collection** (syncWithLaunch) | Installerat som standard från v8.5 | Det här arbetsflödet synkroniserar automatiskt mobila egenskaper till Adobe Campaign från datainsamling. |
 | **Spårning** (spårning) | Installerad som standard | Det här arbetsflödet utför återställning och konsolidering av spårningsinformation. Dessutom säkerställs omberäkningen av spårnings- och leveransstatistik, särskilt sådan som används i arbetsflöden för meddelandecentrets arkivering. Som standard aktiveras den en gång per timme. |

@@ -4,8 +4,9 @@ title: Inkrementell fråga
 description: Läs mer om arbetsflödesaktiviteten Inkrementell fråga
 feature: Workflows, Targeting Activity
 role: User
+version: Campaign v8, Campaign Classic v7
 exl-id: 3e9f92c3-080f-441b-a15a-2ec9d056d1f9
-source-git-commit: 567c2e84433caab708ddb9026dda6f9cb717d032
+source-git-commit: 4cbccf1ad02af9133d51933e3e0d010b5c8c43bd
 workflow-type: tm+mt
 source-wordcount: '356'
 ht-degree: 3%
@@ -29,7 +30,7 @@ Frågan definieras på samma sätt som för vanliga frågor, men körningen är 
 
 >[!CAUTION]
 >
->Om resultatet av en inkrementell fråga är lika med **&#x200B;**&#x200B;under en av dess körningar pausas arbetsflödet tills frågan körs nästa gång. De övergångar och aktiviteter som följer efter den stegvisa frågan bearbetas därför inte före nästa körning.
+>Om resultatet av en inkrementell fråga är lika med **** under en av dess körningar pausas arbetsflödet tills frågan körs nästa gång. De övergångar och aktiviteter som följer efter den stegvisa frågan bearbetas därför inte före nästa körning.
 
 Så här gör du:
 

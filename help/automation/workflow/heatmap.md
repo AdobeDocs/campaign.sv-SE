@@ -4,8 +4,9 @@ title: Värmekarta för kampanjarbetsflöde
 description: Övervaka arbetsflödena med Workflow HeatMap
 feature: Workflows, Heatmap
 role: Admin
+version: Campaign v8, Campaign Classic v7
 exl-id: aeb35076-2f0d-456d-8562-be69e7e902eb
-source-git-commit: 69ff08567f3a0ab827a118a089495fc75bb550c5
+source-git-commit: 4cbccf1ad02af9133d51933e3e0d010b5c8c43bd
 workflow-type: tm+mt
 source-wordcount: '1104'
 ht-degree: 3%
@@ -135,7 +136,7 @@ Som kampanjadministratör hjälper Workflow HeatMap dig att hitta de längsta ar
    ![](assets/wkf_monitoring_long_duration.png)
 
 1. Inkludera fler resultat genom att minska filtret **[!UICONTROL Min duration]**.
-1. Utforska resultaten för att hitta de längsta arbetsflödena, som kan ha större effekt på server- och databasresurserna (CPU, RAM, nätverk, IOPS och så vidare).
+1. Utforska resultaten för att hitta de längsta arbetsflödena som kan ha större effekt på server- och databasresurserna (CPU, RAM, nätverk, IOPS och så vidare).
 1. Vidta lämpliga åtgärder:
 
    * Rekommendera marknadsföringsanvändare att dela upp de längsta arbetsflödena för att minska bearbetningstiden.

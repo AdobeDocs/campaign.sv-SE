@@ -4,8 +4,9 @@ title: Åtgärdsaktiviteter i arbetsflöden
 description: Om åtgärdsaktiviteter
 feature: Workflows, Data Management
 role: User
+version: Campaign v8, Campaign Classic v7
 exl-id: feed4cc1-d654-45e7-a3b2-2bc46418a90b
-source-git-commit: c3f4ad0b56dd45d19eebaa4d2f06551c8fecac1d
+source-git-commit: 4cbccf1ad02af9133d51933e3e0d010b5c8c43bd
 workflow-type: tm+mt
 source-wordcount: '198'
 ht-degree: 1%
@@ -22,7 +23,7 @@ ht-degree: 1%
 * **[Leverans](delivery.md)**: gör att du kan konfigurera en leveransåtgärd.
 * **[Leveranskontroll](delivery-control.md)**: du kan starta, pausa eller stoppa en leverans.
 * **[Extrahering (fil)](extraction-file.md)**: gör att du kan extrahera data från en tabell i en fil.
-* **[Läser in (SOAP)](loading-soap.md)**: gör att du kan samla in data via ett SOAP.
+* **[Inläsning (SOAP)](loading-soap.md)**: gör att du kan samla in data via ett SOAP-samtal.
 * **[Lokalt godkännande](local-approval.md)**: gör att du kan utföra godkännanden och målinriktningsmeddelanden i ett distribuerat marknadsföringssammanhang (valfri modul).
 * **[Nlserver-modulen](nlserver-module.md)**: startar en lserver-modul med dess argument.
 * **[Återkommande leverans](recurring-delivery.md)**: gör att du kan konfigurera en förekomst av en leveransmall i en kampanj.

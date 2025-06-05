@@ -4,8 +4,9 @@ title: Bygg ett arbetsflöde
 description: Lär dig skapa ett arbetsflöde
 feature: Workflows
 role: User
+version: Campaign v8, Campaign Classic v7
 exl-id: a6003fdb-1035-4b80-8831-73f30a0b4fb2
-source-git-commit: 166fe487aa169f47f9da86c2990acb1f6dff430e
+source-git-commit: 4cbccf1ad02af9133d51933e3e0d010b5c8c43bd
 workflow-type: tm+mt
 source-wordcount: '838'
 ht-degree: 0%
@@ -133,7 +134,7 @@ Förutom de vanliga arbetsflödesegenskaperna kan du med mallegenskaperna ange k
 
 Du kan duplicera olika typer av arbetsflöden. När du har duplicerat arbetsflödet överförs inte ändringarna till kopian av arbetsflödet.
 
-Adobe rekommenderar att du duplicerar ett arbetsflöde i stället för att utföra en kopiera/klistra in av aktiviteter. När en aktivitet kopieras behålls alla dess inställningar. För kanalaktiviteter kopieras även det leveransobjekt som är kopplat till aktiviteten, vilket kan leda till större problem.
+Adobe rekommenderar att du duplicerar ett arbetsflöde i stället för att kopiera/klistra in aktiviteter. När en aktivitet kopieras behålls alla dess inställningar. För kanalaktiviteter kopieras även det leveransobjekt som är kopplat till aktiviteten, vilket kan leda till större problem.
 
 1. Högerklicka på ett arbetsflöde.
 1. Klicka på **Duplicera**.

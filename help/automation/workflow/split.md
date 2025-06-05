@@ -3,8 +3,9 @@ product: campaign
 title: Dela
 description: Läs mer om aktiviteten Dela arbetsflöde
 feature: Workflows, Targeting Activity
+version: Campaign v8, Campaign Classic v7
 exl-id: bf4935dd-87dc-4c5c-becf-8c4df61805fd
-source-git-commit: a5d44321c3d68b9370cfb6e9b1df62435de0dbda
+source-git-commit: 4cbccf1ad02af9133d51933e3e0d010b5c8c43bd
 workflow-type: tm+mt
 source-wordcount: '1832'
 ht-degree: 0%
@@ -187,7 +188,7 @@ Med mallen för datadistribution kan du begränsa antalet poster med hjälp av e
      Den här kolumnen definieras av fältet **[!UICONTROL Distribution type]** på fliken **[!UICONTROL General]**.
 
    * **[!UICONTROL Label]**: Ange den etikett som är länkad till varje värde.
-   * **[!UICONTROL Group or operator]**: Om du använder en [&rbrace;lokal godkännanderutaktivitet](local-approval.md) väljer du den operator eller grupp av operatorer som tilldelats varje distributionsvärde.
+   * **[!UICONTROL Group or operator]**: Om du använder en [}lokal godkännanderutaktivitet](local-approval.md) väljer du den operator eller grupp av operatorer som tilldelats varje distributionsvärde.
 
      Om det finns en enkel begränsning per datagrupp utan lokalt godkännande behöver du inte ange fältet **[!UICONTROL Group or operator]**.
 
@@ -207,7 +208,7 @@ Markera alternativet **[!UICONTROL Generate complement]** om du vill utnyttja de
 
 För att det här alternativet ska fungera på rätt sätt måste inkommande data ha en primärnyckel.
 
-Om data till exempel läses direkt från en extern databas som Netezza (som inte stöder begreppet index) via en **[!UICONTROL Data loading (RDBMS)]**-aktivitet, blir komplementet som skapas av **[!UICONTROL Split]**-aktiviteten felaktigt.
+Om data till exempel läses direkt från en extern databas som Netezza (som inte stöder begreppet index) via en **[!UICONTROL Data loading (RDBMS)]**-aktivitet, blir komplementet som genereras av **[!UICONTROL Split]**-aktiviteten felaktigt.
 
 Du kan undvika detta genom att dra och släppa en **[!UICONTROL Enrichment]**-aktivitet precis före **[!UICONTROL Split]**-aktiviteten. I aktiviteten **[!UICONTROL Enrichment]** kontrollerar du **[!UICONTROL Keep all additional data from the main set]** och anger de kolumner som du vill använda för att konfigurera filtren för aktiviteten **[!UICONTROL Split]** i de extra data. Data från den inkommande övergången för aktiviteten **[!UICONTROL Split]** lagras sedan lokalt i en temporär tabell på Adobe Campaign-servern och komplementet kan genereras korrekt.
 

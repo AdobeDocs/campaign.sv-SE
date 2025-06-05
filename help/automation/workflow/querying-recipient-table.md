@@ -4,8 +4,9 @@ title: Fråga mottagartabellen
 description: Lär dig ställa frågor i mottagartabellen
 feature: Query Editor
 role: User, Data Engineer
+version: Campaign v8, Campaign Classic v7
 exl-id: 7f859ce9-7ab8-46e1-8bd6-43aaffe30da2
-source-git-commit: 122d78e310e66d5f354ffbc86c27a2fbff007447
+source-git-commit: 4cbccf1ad02af9133d51933e3e0d010b5c8c43bd
 workflow-type: tm+mt
 source-wordcount: '392'
 ht-degree: 3%

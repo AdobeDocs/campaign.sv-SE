@@ -4,8 +4,9 @@ title: Berikning
 description: Läs mer om arbetsflödesaktiviteten för anrikning
 feature: Workflows, Enrichment Activity, Targeting Activity
 role: User
+version: Campaign v8, Campaign Classic v7
 exl-id: 23bfabac-62cc-4f86-a739-a34a0e183c31
-source-git-commit: 567c2e84433caab708ddb9026dda6f9cb717d032
+source-git-commit: 4cbccf1ad02af9133d51933e3e0d010b5c8c43bd
 workflow-type: tm+mt
 source-wordcount: '1297'
 ht-degree: 0%
@@ -41,7 +42,7 @@ Det finns fyra typer av länkar:
 
 * **[!UICONTROL Define a collection]**: gör att du kan definiera en länk med en 1-N-kardinalitet mellan tabellerna.
 * **[!UICONTROL Define a link whose target is still available]**: gör att du kan definiera en länk med en 1-1-kardinalitet mellan tabeller. Kopplingsvillkoren måste definieras av en enda post i måltabellen.
-* **[!UICONTROL Define a link whose target does not necessarily exist in the base]**: gör att du kan definiera en länk med 0-1-kardinalitet mellan tabeller. Kopplingsvillkoret måste definieras med 0 eller 1 (max) i måltabellen.
+* **[!UICONTROL Define a link whose target does not necessarily exist in the base]**: gör att du kan definiera en länk med 0-1-kardinalitet mellan tabeller. Kopplingsvillkoret måste definieras med 0- eller 1-post (max.) i måltabellen.
 
   Det här alternativet är konfigurerat på fliken **[!UICONTROL Simple Join]** som du kommer åt via länken **[!UICONTROL Edit additional data]** för aktiviteten **[!UICONTROL Enrichment]**.
 
