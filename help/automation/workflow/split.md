@@ -188,7 +188,7 @@ Med mallen för datadistribution kan du begränsa antalet poster med hjälp av e
      Den här kolumnen definieras av fältet **[!UICONTROL Distribution type]** på fliken **[!UICONTROL General]**.
 
    * **[!UICONTROL Label]**: Ange den etikett som är länkad till varje värde.
-   * **[!UICONTROL Group or operator]**: Om du använder en [}lokal godkännanderutaktivitet](local-approval.md) väljer du den operator eller grupp av operatorer som tilldelats varje distributionsvärde.
+   * **[!UICONTROL Group or operator]**: Om du använder en [&rbrace;lokal godkännanderutaktivitet](local-approval.md) väljer du den operator eller grupp av operatorer som tilldelats varje distributionsvärde.
 
      Om det finns en enkel begränsning per datagrupp utan lokalt godkännande behöver du inte ange fältet **[!UICONTROL Group or operator]**.
 

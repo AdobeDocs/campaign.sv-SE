@@ -107,4 +107,4 @@ Adobe Campaign erbjuder ett **Response Management**-tillägg som gör att du kan
 >
 >Den här funktionen är tillgänglig från och med Campaign v8.3. Mer information om hur du kontrollerar versionen finns i [det här avsnittet](compatibility-matrix.md#how-to-check-your-campaign-version-and-buildversion)
 
-[](../assets/do-not-localize/book.png) Lär dig hur du konfigurerar och använder Campaign Response Manager i [Campaign Classic v7-dokumentationen](https://experienceleague.adobe.com/docs/campaign-classic/using/response-manager/about-response-manager.html){target="_blank"}.
+[&#128279;](../assets/do-not-localize/book.png) Lär dig hur du konfigurerar och använder Campaign Response Manager i [Campaign Classic v7-dokumentationen](https://experienceleague.adobe.com/docs/campaign-classic/using/response-manager/about-response-manager.html){target="_blank"}.

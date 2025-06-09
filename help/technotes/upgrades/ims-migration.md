@@ -218,7 +218,7 @@ Observera att den tekniska kontoanvändaren INTE finns i Adobe Campaign förrän
 
    ![](assets/do-not-localize/ims-updates-07.png)
 
-   Bläddra nedåt på skärmen Autentiseringsuppgifter för att hitta e-postadressen för det tekniska kontot **och klicka på knappen **Kopiera**.
+   Bläddra nedåt på skärmen Autentiseringsuppgifter för att hitta e-postadressen för det tekniska kontot **och klicka på knappen &#x200B;** Kopiera**.
 
    ![](assets/do-not-localize/ims-updates-08.png)
 

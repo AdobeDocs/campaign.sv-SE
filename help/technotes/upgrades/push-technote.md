@@ -156,7 +156,7 @@ Du kan även uppdatera befintliga mallar för leveranser och leveranser som skap
       nlserver javascript -instance:<instance_name> -file fcm-httpv1-migration.js -arg:run
       ```
 
-+++
+  +++
 
 ### Vilken effekt har mina Android-appar? {#fcm-apps}
 

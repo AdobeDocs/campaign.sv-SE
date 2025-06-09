@@ -98,7 +98,7 @@ Ett specifikt tekniskt arbetsflöde hanterar replikering av tabeller som måste 
 >[!NOTE]
 >
 > Flera replikeringsprinciper har skapats, baserat på tabellens storlek (XS, XL osv.).
-> > Vissa tabeller replikeras i realtid, andra replikeras per timme. Vissa tabeller kommer att innehålla stegvisa uppdateringar, andra kommer att genomgå en fullständig uppdatering.
+> &#x200B;> Vissa tabeller replikeras i realtid, andra replikeras per timme. Vissa tabeller kommer att innehålla stegvisa uppdateringar, andra kommer att genomgå en fullständig uppdatering.
 >
 
 [Läs mer om datareplikering](replication.md)
