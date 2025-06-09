@@ -208,4 +208,4 @@ Du kan också använda länken i meddelandena. Mer information om detta finns i 
 
 Den här videon visar hur du skapar en marknadsföringsplan, ett program och en kampanj.
 
->[!VIDEO](https://video.tv.adobe.com/v/333810?quality=12)
+>[!VIDEO](https://video.tv.adobe.com/v/3449902?quality=12&captions=swe)

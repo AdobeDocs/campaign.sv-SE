@@ -79,4 +79,4 @@ När du har sparat det nya personaliseringsblocket är det tillgängligt i lever
 
 Lär dig hur du skapar dynamiska innehållsblock och hur du använder dem för att anpassa innehållet i din e-postleverans i följande video.
 
->[!VIDEO](https://video.tv.adobe.com/v/342088?quality=12)
+>[!VIDEO](https://video.tv.adobe.com/v/3449010?quality=12&captions=swe)
