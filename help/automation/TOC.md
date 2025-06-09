@@ -6,7 +6,7 @@ feature: Overview
 source-git-commit: 8ff207246bea1f476b37b1d4f2c79498362e7481
 workflow-type: tm+mt
 source-wordcount: '444'
-ht-degree: 79%
+ht-degree: 73%
 
 ---
 
@@ -34,7 +34,7 @@ ht-degree: 79%
       + [Värmekarta för arbetsflöde](workflow/heatmap.md)
    + Arbetsflödesaktiviteter {#wf-activities}
       + [Kom igång med aktiviteter](workflow/activities.md)
-      + Målinriktade aktiviteter {#targeting-activities}
+      + Verksamheter som riktar sig till {#targeting-activities}
          + [Förteckning över målinriktningsaktiviteter](workflow/targeting-activities.md)
          + [Celler](workflow/cells.md)
          + [Ändra datakälla](workflow/change-data-source.md)
@@ -56,7 +56,7 @@ ht-degree: 79%
          + [Prenumerationstjänster](workflow/subscription-services.md)
          + [Sammanslutning](workflow/union.md)
          + [Uppdatera data](workflow/update-data.md)
-      + Flödeskontrollaktiviteter {#flow-control-activities}
+      + Flödeskontroll {#flow-control-activities}
          + [Förteckning över flödeskontrollverksamhet](workflow/flow-control-activities.md)
          + [Varning](workflow/alert.md)
          + [AND-join](workflow/and-join.md)
@@ -70,7 +70,7 @@ ht-degree: 79%
          + [Test](workflow/test.md)
          + [Tidsbegränsning](workflow/time-constraint.md)
          + [Vänta](workflow/wait.md)
-      + Åtgärdsaktiviteter {#action-activities}
+      + Verksamheter {#action-activities}
          + [Förteckning över åtgärdsaktiviteter](workflow/action-activities.md)
          + [Innehållshantering](workflow/content-management.md)
          + [Kontinuerlig leverans](workflow/continuous-delivery.md)
@@ -87,7 +87,7 @@ ht-degree: 79%
          + [SQL-kod och JavaScript-kod](workflow/sql-code-and-javascript-code.md)
          + [SQL-datahantering](workflow/sql-data-management.md)
          + [Uppdatera aggregat](workflow/update-aggregate.md)
-      + Händelseaktiviteter {#event-activities}
+      + Evenemangsaktiviteter {#event-activities}
          + [Lista över händelseaktiviteter](workflow/event-activities.md)
          + [Filhämtare](workflow/file-collector.md)
          + [Filöverföring](workflow/file-transfer.md)
@@ -133,7 +133,7 @@ ht-degree: 79%
       + [Hantera behörigheter](workflow/managing-rights.md)
       + [Ändra aktivitetsbilder](workflow/change-activity-images.md)
       + [Hantera tidszoner](workflow/managing-time-zones.md)
-+ Kampanjorkestrering {#campaign-orchestration}
++ Kampanjsamordning {#campaign-orchestration}
    + [Kom igång med marknadsföringskampanjer](campaigns/set-up-campaigns.md)
    + [Skapa program och kampanjer](campaigns/marketing-campaign-create.md)
    + [Skapa och konfigurera mallar](campaigns/marketing-campaign-templates.md)
@@ -166,4 +166,4 @@ ht-degree: 79%
    + [Åtkomst till kampanjer](distributed-marketing/accessing-campaigns.md)
    + [Spåra en kampanj](distributed-marketing/tracking-a-campaign.md)
    + [Användningsfall](distributed-marketing/examples.md)
-+ [&lt; Tillbaka till Campaign v8-dokumentation](https://experienceleague.adobe.com/sv/docs/campaign/campaign-v8/campaign-home)
++ [&lt; Tillbaka till Campaign v8-dokumentation](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/campaign-home)

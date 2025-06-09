@@ -48,7 +48,7 @@ logInfo(strUuid);
 
 När arbetsflödet har körts matas mellanlagringstabellen som förväntat.
 
-**Från ett SOAP samtal**
+**Från ett SOAP-samtal**
 
 1. Hämta autentiseringstoken.
 1. Utlös API:t. Nyttolasten är:
@@ -71,7 +71,7 @@ När arbetsflödet har körts matas mellanlagringstabellen som förväntat.
    </soapenv:Envelope>
    ```
 
-1. UUID skickas tillbaka till SOAP:
+1. UUID skickas tillbaka till SOAP svar:
 
    ```
    <SOAP-ENV:Envelope xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ns="urn:wpp:default" xmlns:SOAP-ENV="http://schemas.xmlsoap.org/soap/envelope/">
@@ -108,7 +108,7 @@ När arbetsflödet har körts matas mellanlagringstabellen som förväntat.
 ![](assets/with-reconciliation.png)
 
 
-**Från ett SOAP samtal**
+**Från ett SOAP-samtal**
 
 1. Hämta autentiseringstoken.
 1. Utlös API:t. Nyttolasten är:
@@ -168,7 +168,7 @@ När arbetsflödet har körts uppdateras mellanlagringstabellen som förväntat.
 
 ![](assets/updated-data.png)
 
-**Från ett SOAP samtal**
+**Från ett SOAP-samtal**
 
 1. Hämta autentiseringstoken.
 1. Utlös API:t. Nyttolasten är:
@@ -191,7 +191,7 @@ När arbetsflödet har körts uppdateras mellanlagringstabellen som förväntat.
    </soapenv:Envelope>
    ```
 
-1. SOAP:
+1. SOAP svar är:
 
    ```
    <SOAP-ENV:Envelope xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ns="urn:wpp:default" xmlns:SOAP-ENV="http://schemas.xmlsoap.org/soap/envelope/">
@@ -212,4 +212,4 @@ Inläggning av prenumerations- och prenumerationsdata är beroende av [mellanlag
 
 **Relaterade ämnen**
 
-* [Kampanj-JSAPI](https://experienceleague.adobe.com/developer/campaign-api/api/p-1.html?lang=sv-SE){target="_blank"}
+* [JSAPI i Campaign](https://experienceleague.adobe.com/developer/campaign-api/api/p-1.html){target="_blank"}

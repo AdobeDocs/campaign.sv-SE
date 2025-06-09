@@ -8,7 +8,7 @@ exl-id: 4be3a6dc-0c61-4534-b9dd-6c99c8a037a9
 source-git-commit: fb2cf4407750f8cff65ca53f0e87c32e9702de92
 workflow-type: tm+mt
 source-wordcount: '438'
-ht-degree: 15%
+ht-degree: 19%
 
 ---
 
@@ -38,7 +38,7 @@ Följande operativsystem och webbläsare krävs för att använda Campaign-klien
 
 * **Microsoft Edge**
 
-* **Microsoft Edge WebView2**, senaste versionen. Hämta den från [Microsoft Developer-webbplatsen](http://www.adobe.com/go/acc-ms-webview2-runtime-download){target="_blank"}.
+* **Microsoft Edge WebView2**, senaste versionen. Hämta den från [Microsoft Developer site](http://www.adobe.com/go/acc-ms-webview2-runtime-download){target="_blank"}.
 
 ## CRM-kopplingar {#CRMconnectors}
 
@@ -86,6 +86,6 @@ Följande webbläsare är kompatibla med Campaign for Web Access. Läs mer om Ca
 * [Uppdateringar om kampanjreleaser](upgrades.md)
 * [Kontrollera kampanjversionen](upgrades.md#version)
 * [Installera Campaign-klientkonsolen](connect.md)
-* [Kontrollpanelsversioner](https://experienceleague.adobe.com/docs/control-panel/using/release-notes.html?lang=sv){target="_blank"}
+* [Versioner av Kontrollpanelen](https://experienceleague.adobe.com/docs/control-panel/using/release-notes.html?lang=sv){target="_blank"}
 
-Prenumerera på [Adobe Priority Product Update](https://www.adobe.com/se/subscription/priority-product-update.html){target="_blank"} om du vill få information om nya releaser för Experience Cloud-lösningar.
+Prenumerera på [Adobes prioriterade produktuppdatering](https://www.adobe.com/se/subscription/priority-product-update.html){target="_blank"} för att få information om nya versioner av lösningen Experience Cloud.

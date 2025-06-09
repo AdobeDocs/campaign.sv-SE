@@ -236,7 +236,7 @@ Den här rapporten baseras på tabellerna **[!UICONTROL Delivery]** (nms:deliver
   <tr> 
    <td> Facebook<br /> </td> 
    <td> @facebook<br /> </td> 
-   <td> Summan av alla @totalClicks som URL-kategorin är lika med "facebook".<br /> </td> 
+   <td> Summan av alla @totalClicks för vilka URL-kategorin är lika med "facebook".<br /> </td> 
    <td> Sum(iIf([url/@category]='facebook',@totalClicks,0))<br /> </td> 
   </tr> 
   <tr> 
@@ -367,8 +367,8 @@ Den här rapporten baseras på tabellerna **[!UICONTROL Delivery]** (nms:deliver
   <tr> 
    <td> Resurser<br /> </td> 
    <td> @shared<br /> </td> 
-   <td> URL-kategorin ingår i email, facebook, twitter, delicious, digg, google, linkedin <br /> Antal alla @totalClicks med en URL-kategori som är lika med e-post, facebook, twitter, delicious, digg, google eller linkedin.<br /> </td> 
-   <td> count (Iif([url/@category] IN (email', 'facebook', 'twitter', 'delicious', 'digg', 'google', 'linkedin'), @totalClicks, 0))<br /> </td> 
+   <td> URL-kategorin ingår i "email", "facebook", "twitter", "delicious", "digg", "google", "linkedin" <br /> Antal alla @totalClicks med en URL-kategori som är lika med "email", "facebook", "twitter", "delicious", "digg", "google" eller "linkedin".<br /> </td> 
+   <td> count (Iif([url/@category] IN (email', facebook', twitter', delicious, digg, google, linkedin), @totalClicks, 0))<br /> </td> 
   </tr> 
  </tbody> 
 </table>
@@ -651,7 +651,7 @@ Den här rapporten baseras på tabellerna **[!UICONTROL Delivery and tracking st
   <tr> 
    <td> Facebook<br /> </td> 
    <td> @facebook<br /> </td> 
-   <td> Summan av alla @totalClicks med en URL-kategori som är lika med"facebook".<br /> </td> 
+   <td> Summan av alla @totalClicks med en URL-kategori som är lika med "facebook".<br /> </td> 
    <td> Sum(iIf([url/@category]='facebook',@totalClicks,0))<br /> </td> 
   </tr> 
   <tr> 

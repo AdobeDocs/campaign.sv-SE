@@ -100,4 +100,4 @@ För att göra detta måste du konfigurera ett arbetsflöde som återskapar alla
 
 >[!CAUTION]
 >
->Det här steget kan bara utföras med ett arbetsflöde och är därför reserverat för expertanvändare. Kontakta er kontoansvarige på Adobe för mer information.
+>Det här steget kan bara utföras med ett arbetsflöde och är därför reserverat för expertanvändare. Kontakta er kontoansvarige på Adobe om du vill ha mer information.

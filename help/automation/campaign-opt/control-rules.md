@@ -24,7 +24,7 @@ Med en uppsättning färdiga regler kan du utföra vanliga kontroller. Dessa kon
 * **[!UICONTROL Validity period check]** (e-post): kontrollerar att giltighetsperioden för leveransen är tillräckligt lång för att skicka alla meddelanden.
 * **[!UICONTROL Proof size check]** (alla kanaler): genererar ett felmeddelande om målpopulationen för korrektur överstiger 100 mottagare.
 * **[!UICONTROL Wave scheduling check]** (e-post): Kontrollerar att den senaste leveransvågen är schemalagd att påbörjas före giltighetsperiodens slut, om leveransen bryts ned i flera påfyllnader.
-* **[!UICONTROL Unsubscription link approval]** (e-post): kontrollerar om det finns minst en avanmälan (avanmälan)-URL i varje innehåll (HTML och Text).
+* **[!UICONTROL Unsubscription link approval]** (e-post): kontrollerar om det finns minst en avanmälnings-URL i varje innehåll (HTML och Text).
 
 ## Skapa en kontrollregel {#create-a-control-rule}
 

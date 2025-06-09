@@ -87,7 +87,7 @@ Redigeringskontrollen anpassas automatiskt till motsvarande datatyp och använde
 
 Som standard visas varje fält på en rad och tar upp allt tillgängligt utrymme beroende på datatypen.
 
-Alla formulärattribut visas i [Campaign Classic v7-dokumentationen](https://experienceleague.adobe.com/developer/campaign-api/api/control-Button.html?lang=sv-SE){target="_blank"}.
+Alla formulärattribut visas i [Campaign Classic v7-dokumentationen](https://experienceleague.adobe.com/developer/campaign-api/api/control-Button.html){target="_blank"}.
 
 ## Formatering {#formatting}
 

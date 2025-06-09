@@ -1,6 +1,6 @@
 ---
 title: Förstå händelsebeskrivning
-description: Läs om hur transaktionsmeddelandehändelser hanteras i Adobe Campaign Classic med SOAP metoder
+description: Läs om hur transaktionshändelser hanteras i Adobe Campaign Classic med SOAP metoder
 feature: Transactional Messaging
 role: User
 level: Intermediate
@@ -18,11 +18,11 @@ ht-degree: 0%
 
 Transactional messaging förlitar sig på Adobe Campaign datamodell och använder ytterligare två separata tabeller. Dessa tabeller, **NmsRtEvent** och **NmsBatchEvent**, innehåller samma fält och gör att du kan hantera realtidshändelser å ena sidan och batchhändelser å andra sidan.
 
-## SOAP {#soap-methods}
+## SOAP-metoder {#soap-methods}
 
-I det här avsnittet beskrivs de SOAP metoderna som är associerade med scheman för modulen för transaktionsmeddelanden.
+I det här avsnittet beskrivs de SOAP-metoder som är associerade med scheman för modulen för transaktionsmeddelanden.
 
-Två **PushEvent** - eller **PushEvents** -SOAP är länkade till de två **nms:rtEvent** - och **nms:BatchEvent** -datascheman. Det är informationssystemet som avgör om en händelse är av typen&quot;batch&quot; eller&quot;realtid&quot;.
+Två **PushEvent** - eller **PushEvents** SOAP-metoder är länkade till de två **nms:rtEvent** - och **nms:BatchEvent** -datascheman. Det är informationssystemet som avgör om en händelse är av typen&quot;batch&quot; eller&quot;realtid&quot;.
 
 * Med **PushEvent** kan du infoga en händelse i meddelandet,
 * Med **PushEvents** kan du infoga en serie händelser i meddelandet.
@@ -32,7 +32,7 @@ WSDL-sökvägen för åtkomst till båda metoderna är:
 * **http://hostname/nl/jsp/schemawsdl.jsp?schema=nms:rtEvent** för att komma åt typschemat i realtid.
 * **http://hostname/nl/jsp/schemawsdl.jsp?schema=nms:batchEvent** för att komma åt batchtypsschemat.
 
-Båda metoderna innehåller ett **`<urn:sessiontoken>`**-element för inloggning i transaktionsmeddelandemodulen. Vi rekommenderar att du använder en identifieringsmetod via betrodda IP-adresser. Om du vill hämta sessionstoken måste du utföra ett inloggningsanrop SOAP en get-token följt av en utloggning. Använd samma token för flera RT-anrop. Exemplen i det här avsnittet använder sessionstokenmetoden som rekommenderas.
+Båda metoderna innehåller ett **`<urn:sessiontoken>`**-element för inloggning i transaktionsmeddelandemodulen. Vi rekommenderar att du använder en identifieringsmetod via betrodda IP-adresser. Om du vill hämta sessionstoken gör du ett SOAP-inloggningsanrop och sedan en get-token följt av en utloggning. Använd samma token för flera RT-anrop. Exemplen i det här avsnittet använder sessionstokenmetoden som rekommenderas.
 
 Om du använder en server för belastningsutjämning kan du använda autentisering av användare/lösenord (på nivån för RT-meddelandet). Exempel:
 
@@ -157,7 +157,7 @@ När Adobe Campaign tar emot en händelse genereras ett unikt retur-ID. Detta ä
 
 >[!IMPORTANT]
 >
->När Adobe Campaign tar emot SOAP verifierar e-postadressformatet. Om en e-postadress är felaktigt formaterad returneras ett fel.
+>När Adobe Campaign tar emot SOAP-samtal verifieras e-postadressformatet. Om en e-postadress är felaktigt formaterad returneras ett fel.
 
 * Exempel på en identifierare som returneras av metoden när händelsebearbetningen lyckas:
 

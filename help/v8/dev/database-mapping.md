@@ -94,12 +94,12 @@ Om du vill fylla i ett fält i XML måste du lägga till attributet **xml** med 
   <element name="comment" xml="true" type="memo" label="Comment"/>
   ```
 
-* Databeskrivning i HTML-format:
+* Beskrivning av data i HTML-format:
 
   ```sql
   <element name="description" xml="true" type="html" label="Description"/>
   ```
 
-  Med typen html kan du lagra HTML-innehåll i en CDATA-tagg och visa en speciell HTML edit check i Adobe Campaign klientgränssnitt.
+  Med typen html kan du lagra HTML-innehåll i en CDATA-tagg och visa en speciell HTML-redigeringskontroll i Adobe Campaign klientgränssnitt.
 
 Med hjälp av XML-fält kan du lägga till fält utan att behöva ändra databasens fysiska struktur. En annan fördel är att du använder mindre resurser (storlek som tilldelas SQL-fält, gräns för antalet fält per tabell osv.).

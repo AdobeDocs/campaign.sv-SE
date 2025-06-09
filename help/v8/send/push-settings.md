@@ -28,7 +28,7 @@ Så här konfigurerar du appen med Adobe Experience Platform Mobile SDK:
 1. Ställ in en [mobil taggegenskap](#launch-property) i Adobe Experience Platform Data Collection.
 1. Hämta Adobe Experience Platform Mobile SDK enligt informationen [på den här sidan](https://developer.adobe.com/client-sdks/documentation/getting-started/get-the-sdk/){target="_blank"}.
 1. (valfritt) Aktivera loggnings- och livscykelstatistik, enligt informationen [på den här sidan](https://developer.adobe.com/client-sdks/documentation/getting-started/enable-debug-logging/){target="_blank"}.
-1. (valfritt) Lägg till [Adobe Experience Platform Assurance i din app](https://developer.adobe.com/client-sdks/documentation/getting-started/validate/){target="_blank"} för att validera implementeringen. Lär dig hur du implementerar Adobe Experience Platform Assurance-tillägget [på den här sidan](https://developer.adobe.com/client-sdks/documentation/platform-assurance-sdk/){target="_blank"}.
+1. (valfritt) Lägg till [Adobe Experience Platform Assurance i din app](https://developer.adobe.com/client-sdks/documentation/getting-started/validate/){target="_blank"} för att validera implementeringen. Lär dig hur du implementerar Adobe Experience Platform Assurance-tillägget [ på den här sidan](https://developer.adobe.com/client-sdks/documentation/platform-assurance-sdk/){target="_blank"}.
 1. Konfigurera dina iOS- och Android-mobiltjänster i Adobe Campaign enligt informationen [på den här sidan](#push-service).
 1. Installera och konfigurera [Adobe Campaign Extension](#configure-extension) i din mobila egenskap.
 1. Följ [dokumentationen för Adobe Experience Platform Mobile SDK](https://developer.adobe.com/client-sdks/documentation/getting-started/){target="_blank"} om du vill konfigurera Adobe Experience Platform Mobile SDK:er i din app.
@@ -37,7 +37,7 @@ Så här konfigurerar du appen med Adobe Experience Platform Mobile SDK:
 
 ### Konfigurera behörigheter {#setup-permissions}
 
-Innan du skapar ett mobilprogram måste du kontrollera att du har eller tilldelar rätt användarbehörigheter för taggar i Adobe Experience Platform. Användarbehörigheter för taggar i Adobe Experience Platform tilldelas användare via Adobe Admin Console. Läs mer i [Tagg-dokumentationen](https://experienceleague.adobe.com/docs/experience-platform/tags/admin/user-permissions.html?lang=sv-SE){target="_blank"}.
+Innan du skapar ett mobilprogram måste du kontrollera att du har eller tilldelar rätt användarbehörigheter för taggar i Adobe Experience Platform. Användarbehörigheter för taggar i Adobe Experience Platform tilldelas användare via Adobe Admin Console. Läs mer i [Tagg-dokumentationen](https://experienceleague.adobe.com/docs/experience-platform/tags/admin/user-permissions.html){target="_blank"}.
 
 >[!CAUTION]
 >
@@ -47,7 +47,7 @@ Följ stegen nedan för att tilldela **Egenskap** och **Företag** behörigheter
 
 1. Åtkomst till **[!DNL Admin Console]**.
 1. Välj **[!UICONTROL Adobe Experience Platform Data Collection]**-kortet på fliken **[!UICONTROL Products]**.
-1. Välj en befintlig **[!UICONTROL Product Profile]** eller skapa en ny med knappen **[!UICONTROL New profile]**. Lär dig hur du skapar en ny **[!UICONTROL New profile]** i [Admin Console-dokumentationen](https://experienceleague.adobe.com/docs/experience-platform/access-control/ui/create-profile.html?lang=sv-SE#ui){target="_blank"}.
+1. Välj en befintlig **[!UICONTROL Product Profile]** eller skapa en ny med knappen **[!UICONTROL New profile]**. Lär dig hur du skapar en ny **[!UICONTROL New profile]** i [Admin Console-dokumentationen](https://experienceleague.adobe.com/docs/experience-platform/access-control/ui/create-profile.html#ui){target="_blank"}.
 1. På fliken **[!UICONTROL Permissions]** väljer du **[!UICONTROL Property Rights]**.
 1. Klicka på **[!UICONTROL Add all]**. Detta lägger till följande rättigheter i din produktprofil:
    * **[!UICONTROL Approve]**
@@ -79,7 +79,7 @@ Följ stegen nedan för att tilldela **[!UICONTROL Product profile]** till anvä
 
    >[!NOTE]
    >
-   >Om användaren inte redan har skapats i Admin Console läser du [dokumentationen till Lägg till användare](https://helpx.adobe.com/se/enterprise/using/manage-users-individually.html#add-users){target="_blank"}.
+   >Om användaren inte redan har skapats i Admin Console läser du [dokumentationen till Lägg till användare](https://helpx.adobe.com/enterprise/using/manage-users-individually.html#add-users){target="_blank"}.
 
 ### Konfigurera din app {#configure-app}
 
@@ -141,7 +141,7 @@ To get the SDKs needed for push notification to work you will need the following
 * **[!UICONTROL Adobe Experience Platform Assurance]**, optional but recommended to debug the mobile implementation.
 -->
 
-Läs mer om [!DNL Adobe Experience Platform Data Collection]-taggar i [Adobe Experience Platform-dokumentation](https://experienceleague.adobe.com/docs/platform-learn/implement-mobile-sdk/initial-configuration/configure-tags.html?lang=sv-SE){target="_blank"}.
+Läs mer om [!DNL Adobe Experience Platform Data Collection]-taggar i [Adobe Experience Platform-dokumentation](https://experienceleague.adobe.com/docs/platform-learn/implement-mobile-sdk/initial-configuration/configure-tags.html){target="_blank"}.
 
 Öppna den nya taggegenskapen och skapa ett bibliotek när du har skapat den. Så här gör du:
 

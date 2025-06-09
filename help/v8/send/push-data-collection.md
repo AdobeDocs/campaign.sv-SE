@@ -31,7 +31,7 @@ I samband med den här uppdaterade implementeringen kan du skicka push-meddeland
 
 1. [Lägg till Adobe Adobe Experience Platform Assurance-tillägg](https://developer.adobe.com/client-sdks/documentation/platform-assurance-sdk/){target="_blank"} (rekommenderas)
 
-1. [Lägg till Campaign Classic i mobilapplikationen](#campaign-mobile-ap)
+1. [Lägg till Campaign Classic i ditt mobilprogram](#campaign-mobile-ap)
 
 1. [Skapa för både iOS och Android](##push-create)
 
@@ -150,7 +150,7 @@ Så här skapar du en app för iOS-enheter:
 
    >[!NOTE]
    >
-   > **[!UICONTROL Integration key]** är helt anpassningsbar med strängvärde, men måste vara exakt densamma som den som anges i SDK:n.
+   > **[!UICONTROL Integration key]** är helt anpassningsbar med strängvärde, men måste vara exakt densamma som den som anges i SDK.
    >
    > Du kan inte använda samma certifikat för utvecklingsversionen (sandlådan) och produktionsversionen av programmet.
 
@@ -184,7 +184,7 @@ Så här skapar du en app för Android-enheter:
 
    >[!NOTE]
    >
-   > **[!UICONTROL Integration key]** är helt anpassningsbar med strängvärde, men måste vara exakt densamma som den som anges i SDK:n.
+   > **[!UICONTROL Integration key]** är helt anpassningsbar med strängvärde, men måste vara exakt densamma som den som anges i SDK.
 
    ![](assets/push-config-12.png)
 
@@ -244,7 +244,7 @@ Nedan visas FCM-nyttolastsnamnen för att ytterligare anpassa ditt push-meddelan
 
 Din mobila egenskap synkroniseras nu automatiskt med det tekniska arbetsflödet för **[!UICONTROL Adobe Experience Platform Data Collection]**. [Läs mer](../../automation/workflow/technical-workflows.md#list-technical-workflows)
 
-## Lägg till Campaign Classic i mobilapplikationen {#campaign-mobile-app}
+## Lägg till Campaign Classic i ditt mobilprogram {#campaign-mobile-app}
 
 Mobil-SDK:et i Adobe Experience Platform hjälper dig att driva lösningar och tjänster från Adobe Experience Cloud i dina mobilappar. SDK-konfigurationen hanteras via användargränssnittet för datainsamling för flexibel konfiguration och utbyggbara, regelbaserade integreringar.
 

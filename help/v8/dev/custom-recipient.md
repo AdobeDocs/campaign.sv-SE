@@ -18,4 +18,4 @@ Adobe Campaign levereras med en inbyggd profiltabell: **nmsRecipient**. Den här
 
 Inbyggt tabelltillägg ger flexibilitet, men det går inte att ta bort vissa oanvända fält eller länkar. Därför kan det vara bra att använda en anpassad mottagartabell när din datamodell skiljer sig avsevärt från den inbyggda mottagartabellstrukturen i Campaign, eller om du har ett stort antal profiler.  Den här metoden kräver dock vissa försiktighetsåtgärder när den implementeras.
 
-Lär dig hur du konfigurerar din instans så att den använder en anpassad mottagartabell i [Campaign Classic v7-dokumentationen](https://experienceleague.adobe.com/docs/campaign-classic/using/configuring-campaign-classic/use-a-custom-recipient-table/about-custom-recipient-table.html?lang=sv-SE){target="_blank"}.
+Lär dig hur du konfigurerar din instans så att den använder en anpassad mottagartabell i [Campaign Classic v7-dokumentationen](https://experienceleague.adobe.com/docs/campaign-classic/using/configuring-campaign-classic/use-a-custom-recipient-table/about-custom-recipient-table.html){target="_blank"}.

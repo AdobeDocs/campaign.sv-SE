@@ -54,7 +54,7 @@ Specifika termer när du arbetar med kuber visas nedan.
 
 * **Fakta register/schema** - Faktatabellen (eller faktchemat) innehåller rådata eller elementära data som analyserna baseras på. Dessa är huvudsakligen stora volymtabeller (möjligen med länkade tabeller) med potentiellt långa beräkningar. En faktatabell kan t.ex. vara utsändningstabellen, inköpstabellen osv.
 
-* **Dimension** - Med Dimensioner kan du segmentera data i grupper: när de har skapats fungerar dimensionerna som analysaxlar. I de flesta fall definieras flera nivåer för en viss dimension. För en tidsdimension är nivåerna till exempel månader, dagar, timmar, minuter och så vidare. Den här nivåuppsättningen representerar dimensionshierarkin och möjliggör olika nivåer av dataanalys.
+* **Dimension** - Med dimensioner kan du segmentera data i grupper: när de har skapats fungerar dimensionerna som analysaxlar. I de flesta fall definieras flera nivåer för en viss dimension. För en tidsdimension är nivåerna till exempel månader, dagar, timmar, minuter och så vidare. Den här nivåuppsättningen representerar dimensionshierarkin och möjliggör olika nivåer av dataanalys.
 
 * **Bindning** - För vissa fält kan du definiera bindning till gruppvärden och göra det enklare att läsa information. Bindning används på nivåer. Vi rekommenderar att du definierar bindning när det kan finnas många olika värden.
 

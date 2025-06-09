@@ -45,7 +45,7 @@ KMS-nycklar (Key Management Service) i ditt AWS-konto som du skapar, äger och h
 
 Följ stegen nedan för att aktivera CMK-integrering med Campaign:
 
-1. Anslut till ditt [Amazon Web Services-konto (AWS)](https://aws.amazon.com/){target="_blank"}.
+1. Anslut till ditt [Amazon Web Services (AWS)](https://aws.amazon.com/){target="_blank"}-konto.
 
 1. Generera en nyckel med automatisk rotation när du använder AWS Key Management Service (KMS). [Lär dig hur](https://docs.aws.amazon.com/kms/latest/developerguide/create-keys.html){target="_blank"}.
 
@@ -62,7 +62,7 @@ Följande skyddsutkast och begränsningar gäller för CMK-integreringen med Ado
 
 * Adobe tillhandahåller inget [Amazon Web Services (AWS)](https://aws.amazon.com/){target="_blank"}-konto. Du måste ha ett eget AWS-konto och konfigurera det för att kunna generera och dela nyckeln med Adobe.
 
-* Endast [KMS-nycklar (AWS Key Management Service) ](https://docs.aws.amazon.com/kms/latest/developerguide/overview.html){target="_blank"} stöds. Inga kundgenererade nycklar utanför KMS kan användas. &#x200B;
+* Endast [KMS-nycklar (AWS Key Management Service](https://docs.aws.amazon.com/kms/latest/developerguide/overview.html){target="_blank"}) stöds. Inga kundgenererade nycklar utanför KMS kan användas. &#x200B;
 
 * Under den första konfigurationen förväntas driftstopp. &#x200B;Hur länge driftstoppet varar beror på databasens storlek.
 

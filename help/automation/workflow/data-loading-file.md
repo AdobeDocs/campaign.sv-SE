@@ -27,7 +27,7 @@ I det övre avsnittet av konfigurationsfönstret för den här aktiviteten kan d
 
 >[!CAUTION]
 >
->Endast &quot;platta&quot; strukturfiler stöds (t.ex. CSV, TXT). Du bör inte använda XML-formatet. Med klientkonsolen kan du läsa in filer som är högst 150 MB stora. I webbanvändargränssnittet har aktiviteten Läs in fil en gräns på 50 MB. [Läs mer](https://experienceleague.adobe.com/docs/campaign-web/v8/wf/design-workflows/load-file.html?lang=sv-SE){target="_blank"}
+>Endast &quot;platta&quot; strukturfiler stöds (t.ex. CSV, TXT). Du bör inte använda XML-formatet. Med klientkonsolen kan du läsa in filer som är högst 150 MB stora. I webbanvändargränssnittet har aktiviteten Läs in fil en gräns på 50 MB. [Läs mer](https://experienceleague.adobe.com/docs/campaign-web/v8/wf/design-workflows/load-file.html){target="_blank"}
 
 ![](assets/s_advuser_wf_etl_file.png)
 

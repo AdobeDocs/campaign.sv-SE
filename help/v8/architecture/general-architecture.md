@@ -48,7 +48,7 @@ Det finns tre typer av Adobe Campaign-moduler:
 
 De viktigaste processerna är:
 
-* **Programserver** (webbserver) - Den här processen visar alla Adobe Campaign-funktioner via webbtjänstens API:er (SOAP / HTTP + XML). Dessutom kan man dynamiskt generera webbsidor för åtkomst via HTML (rapporter, webbformulär etc.). För att uppnå detta innehåller den här processen en Apache Tomcat JSP-server. Detta är den process som konsolen ansluter till.
+* **Programserver** (webbserver) - Den här processen visar alla Adobe Campaign-funktioner via webbtjänstens API:er (SOAP/HTTP + XML). Dessutom kan man dynamiskt generera de webbsidor som används för HTML-baserad åtkomst (rapporter, webbformulär etc.). För att uppnå detta innehåller den här processen en Apache Tomcat JSP-server. Detta är den process som konsolen ansluter till.
 
 * **Arbetsflödesmotor** (nlserver wfserver) - Den här processen kör de arbetsflödesprocesser som definierats i programmet. Den hanterar också regelbundet genomförda tekniska arbetsflöden, inklusive:
 
@@ -60,11 +60,11 @@ De viktigaste processerna är:
 
 * **Omdirigeringsserver** (nlserver webmdl) - För e-post hanterar Adobe Campaign automatiskt öppnings- och klickspårning (transaktionsspårning på webbplatsnivå är en ytterligare möjlighet). För att uppnå detta skrivs de URL:er som ingår i e-postmeddelandena om så att de pekar på den här modulen, som registrerar den överförda Internet-användaren innan de dirigeras om till den önskade URL:en.
 
-  För att garantera högsta tillgänglighet är den här processen helt oberoende av databasen: de andra serverprocesserna kommunicerar med den endast med SOAP (HTTP, HTTP(S) och XML). Tekniskt sett implementeras den här funktionen i en tilläggsmodul för en HTTP-server (ISAPI-tillägg i IIS eller en DSO Apache-modul osv.) och finns endast i Windows.
+  För att garantera högsta tillgänglighet är den här processen helt oberoende av databasen: de andra serverprocesserna kommunicerar med den endast med SOAP-anrop (HTTP, HTTP(S) och XML). Tekniskt sett implementeras den här funktionen i en tilläggsmodul för en HTTP-server (ISAPI-tillägg i IIS eller en DSO Apache-modul osv.) och är endast tillgänglig i Windows.
 
 Det finns även andra tekniska processer:
 
-* **Hantera studsmeddelanden** (nlserver inMail) - Med den här processen kan du automatiskt hämta e-post från postlådor som konfigurerats för att ta emot studsmeddelanden som returneras om leveransen misslyckas. Dessa meddelanden genomgår sedan regelbaserad bearbetning för att fastställa orsaken till utebliven leverans (okänd mottagare, kvoten har överskridits osv.) och för att uppdatera leveransstatus i databasen. Alla dessa åtgärder är helt automatiska och förkonfigurerade.
+* **Hantera studsmeddelanden** (nlserver inMail) - Med den här processen kan du automatiskt hämta e-post från postlådor som konfigurerats för att ta emot studsmeddelanden som returneras om leveransen misslyckas. Dessa meddelanden genomgår sedan regelbaserad bearbetning för att fastställa orsaken till utebliven leverans (okänd mottagare, kvoten har överskridits osv.) och för att uppdatera leveransstatusen i databasen. Alla dessa åtgärder är helt automatiska och förkonfigurerade.
 
 * **SMS-leveransstatus** (nlserver sms) - Den här processen avsöker SMS-routern för att samla in förloppsstatus och uppdatera databasen.
 
@@ -81,7 +81,7 @@ Det finns även andra tekniska processer:
 
 ## Databasbehållare {#db-containers}
 
-I sin [Enterprise (FFDA)-distribution](enterprise-deployment.md) förlitar sig Adobe Campaign Cloud-databasen på [!DNL Snowflake] som innehåller funktionell information (profiler, prenumerationer, innehåll osv.), tekniska data (leveransjobb och loggar, spårningsloggar osv.) och arbetsdata (inköp, leads) för lösningen och alla Adobe Campaign-komponenter kommunicerar med databasen för att utföra sina specifika uppgifter.
+I sin [Enterprise (FFDA)-distribution](enterprise-deployment.md) är Adobe Campaign Cloud-databasen beroende av [!DNL Snowflake] som innehåller funktionell information (profiler, prenumerationer, innehåll osv.), tekniska data (leveransjobb och loggar, spårningsloggar osv.) och arbetsdata (inköp, leads) för lösningen, och alla Adobe Campaign-komponenter kommunicerar med databasen för att utföra sina specifika uppgifter.
 
 Du kan distribuera Adobe Campaign med hjälp av fördefinierade databaser och scheman, och om det behövs kan den fördefinierade miljön utökas. Alla data i datafilen nås av Adobe Campaign via SQL-anrop. Adobe Campaign har också en komplett uppsättning ETL-verktyg (Extract Transform and Load) för import och export av data till och från systemet.
 
@@ -90,12 +90,12 @@ Du kan distribuera Adobe Campaign med hjälp av fördefinierade databaser och sc
 
 >[!CAUTION]
 >
->Med **Campaign Managed-Cloud Service** har din miljö och den ursprungliga konfigurationen angetts av Adobe enligt villkoren i licensavtalet. Du får inte ändra installerade inbyggda paket, inbyggda scheman eller rapporter.
+>Med **Kampanjhanterade molntjänster** har din miljö och den inledande konfigurationen angetts av Adobe, i enlighet med villkoren i licensavtalet. Du får inte ändra installerade inbyggda paket, inbyggda scheman eller rapporter.
 >
 >Om du behöver använda ett Campaign-tillägg eller en viss funktion som inte har etablerats för dig måste du kontakta **Adobe kundtjänst**.
 
 ## Databaslagring {#db-storage}
 
-Totalt lagringsutrymme delas mellan huvuddatabasen och den (valfria) sekundära Snowflake-databasen. Var data lagras bör fastställas vid implementering eller uppgradering, beroende på kundspecifika användningsfall.
+Total lagringskvot delas mellan huvuddatabasen och den (valfria) sekundära Snowflake-databasen. Var data lagras bör fastställas vid implementering eller uppgradering, beroende på kundspecifika användningsfall.
 
-Lär dig hur du övervakar databasanvändningen i [dokumentationen på Kontrollpanelen för kampanj](https://experienceleague.adobe.com/docs/control-panel/using/performance-monitoring/database-monitoring/database-monitoring.html?lang=sv-SE){target="_blank"}.
+Lär dig hur du övervakar databasanvändningen i [dokumentationen på Kontrollpanelen för kampanj](https://experienceleague.adobe.com/docs/control-panel/using/performance-monitoring/database-monitoring/database-monitoring.html){target="_blank"}.

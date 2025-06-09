@@ -70,8 +70,8 @@ Följ stegen nedan för att skapa ett personaliseringsblock:
    * Ange blockets etikett. Den här etiketten visas i fönstret för infogning av anpassningsfält.
    * Välj innehållstypen **Leverans**.
    * Aktivera alternativet **[!UICONTROL Visible in the customization menus]** för att göra det här blocket tillgängligt från ikonen för infogning av anpassningsfält.
-   * Om det behövs kan du aktivera alternativet **[!UICONTROL The content of the personalization block depends upon the format]** för att definiera två olika block för e-post med HTML och text.
-   * Ange innehåll (i HTML, text, JavaScript osv.) av personaliseringsblocket och klicka på **[!UICONTROL Save]**.
+   * Om det behövs kan du aktivera alternativet **[!UICONTROL The content of the personalization block depends upon the format]** för att definiera två olika block för HTML- och textmeddelanden.
+   * Ange innehållet (i HTML, text, JavaScript osv.) i personaliseringsblocket och klicka på **[!UICONTROL Save]**.
 
 När du har sparat det nya personaliseringsblocket är det tillgängligt i leveransredigeraren.
 
@@ -79,4 +79,4 @@ När du har sparat det nya personaliseringsblocket är det tillgängligt i lever
 
 Lär dig hur du skapar dynamiska innehållsblock och hur du använder dem för att anpassa innehållet i din e-postleverans i följande video.
 
->[!VIDEO](https://video.tv.adobe.com/v/3449010?quality=12&captions=swe)
+>[!VIDEO](https://video.tv.adobe.com/v/342088?quality=12)

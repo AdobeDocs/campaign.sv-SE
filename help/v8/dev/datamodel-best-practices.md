@@ -106,7 +106,7 @@ De flesta organisationer importerar poster från externa system. Även om den fy
 Denna anpassade nyckel är den faktiska primärnyckeln för posten i det externa system som matar Adobe Campaign.
 
 När du skapar en anpassad tabell finns det två alternativ:
-* En kombination av autogenererad nyckel (id) och intern nyckel (anpassad). Det här alternativet är intressant om systemnyckeln är en sammansatt nyckel eller inte ett heltal. Med Snowflake får heltal och strängbaserade nycklar högre prestanda i stora tabeller och med andra tabeller.
+* En kombination av autogenererad nyckel (id) och intern nyckel (anpassad). Det här alternativet är intressant om systemnyckeln är en sammansatt nyckel eller inte ett heltal. Med Snowflake ger heltal och strängbaserade nycklar bättre prestanda i stora tabeller och att de kopplas till andra tabeller.
 * Använda primärnyckeln som extern systemprimärnyckel. Den här lösningen är vanligtvis att föredra eftersom den förenklar import och export av data, med en konsekvent nyckel mellan olika system. **Autouid** ska inaktiveras om nyckeln heter&quot;id&quot; och förväntas fyllas med externa värden (inte autogenererade).
 
 >[!CAUTION]
@@ -123,7 +123,7 @@ Se upp för den&quot;egna&quot; integriteten i stora tabeller. Om du tar bort po
 
 Att deklarera en länk som en extern koppling är inte bra för prestandan. Posten med noll-id emulerar den externa kopplingsfunktionen. I kontexten för en [Enterprise (FFDA)-distribution](../architecture/enterprise-deployment.md) är det inte nödvändigt att deklarera externa kopplingar om länken använder **autouid**.
 
-Även om det är möjligt att ansluta en tabell i ett arbetsflöde rekommenderar Adobe att du definierar gemensamma länkar mellan resurser direkt i datastrukturdefinitionen.
+Även om det går att ansluta en tabell i ett arbetsflöde rekommenderar Adobe att du definierar gemensamma länkar mellan resurser direkt i datastrukturdefinitionen.
 
 Länken ska definieras i enlighet med de data som finns i tabellerna. En felaktig definition kan påverka data som hämtas via länkar, t.ex. oväntat duplicering av poster.
 
@@ -175,7 +175,7 @@ Det finns några lösningar som minimerar behovet av arkivering i Adobe Campaign
 
 Du kan deklarera attributet &quot;deleteStatus&quot; i ett schema. Det är effektivare att markera posten som borttagen och sedan skjuta upp borttagningen i rensningsaktiviteten.
 
-Som användare av hanterade Cloud Service kan du kontakta Adobe konsulter eller tekniska administratörer för att få veta mer om bevarande eller om du behöver ange bevarande för anpassade tabeller.
+Som användare av hanterade molntjänster kan du kontakta Adobe konsulter eller tekniska administratörer för att få veta mer om lojalitet eller om du behöver ange bevarande för anpassade tabeller.
 
 ## Prestanda {#performance}
 

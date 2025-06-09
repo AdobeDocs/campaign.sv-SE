@@ -22,7 +22,7 @@ Adobe Campaign erbjuder två nya maskininlärningsmodeller: [Predictive Send Tim
 >
 >Den här funktionen är inte tillgänglig som en del av produkten. Det är endast tillgängligt för Adobe Campaign Managed Cloud Services-kunder som kör Adobe Campaign Classic v7 eller Adobe Campaign v8.
 >
->För implementering krävs att Adobe Consulting används. Om du vill veta mer kan du kontakta din Adobe-representant.
+>För implementering krävs att Adobe Consulting används. Kontakta Adobe om du vill veta mer.
 >
 
 

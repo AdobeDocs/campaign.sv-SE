@@ -79,11 +79,11 @@ Exempel på användningsområden för typologiregler för tryck finns på [den h
 
 I den här videon förklaras hur du implementerar trötthetshantering i Adobe Campaign genom att utnyttja typologiregler.
 
->[!VIDEO](https://video.tv.adobe.com/v/3448335?quality=12&captions=swe)
+>[!VIDEO](https://video.tv.adobe.com/v/333787?quality=12)
 
 ### Ställa in trötthetshantering med fördefinierade filter
 
 Trötthetshanteringen styr frekvens och antal meddelanden för att undvika överbelastning av mottagaren. Om du inte har kampanjoptimeringsmodulen i din kampanjinstans kan du konfigurera ett fördefinierat filter som filtrerar målpopulationen efter antalet mottagna meddelanden
 I den här videon förklaras hur du implementerar trötthetshantering i Adobe Campaign med hjälp av filter.
 
->[!VIDEO](https://video.tv.adobe.com/v/3444604?quality=12&captions=swe)
+>[!VIDEO](https://video.tv.adobe.com/v/333778?quality=12)

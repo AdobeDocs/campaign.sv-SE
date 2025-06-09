@@ -55,7 +55,7 @@ Du kan lägga till andra fall och definiera olika innehåll utifrån värdena i 
 Läs om hur du skapar flerspråkiga e-postmeddelanden i exemplet nedan. Innehållet visas på det ena språket eller det andra beroende på vilket språk mottagaren föredrar.
 
 1. Skapa ett e-postmeddelande och välj målpopulation. I det här exemplet baseras villkoret för att visa den ena versionen eller den andra på värdet **Språk** för mottagarens profil. Dessa värden är inställda på **EN**, **FR**, **ES**.
-1. Klicka på fliken **[!UICONTROL Source]** i e-postinnehållet i HTML och klistra in följande kod:
+1. Klicka på fliken **[!UICONTROL Source]** i e-postinnehållet för HTML och klistra in följande kod:
 
    ```
    <% if (language == "EN" ) { %>
@@ -86,4 +86,4 @@ Läs om hur du skapar flerspråkiga e-postmeddelanden i exemplet nedan. Innehål
 
 Lär dig hur du lägger till villkorsstyrt innehåll i en leverans med ett exempel som visar ett flerspråkigt nyhetsbrev.
 
->[!VIDEO](https://video.tv.adobe.com/v/3446715?quality=12&captions=swe)
+>[!VIDEO](https://video.tv.adobe.com/v/335682?quality=12)

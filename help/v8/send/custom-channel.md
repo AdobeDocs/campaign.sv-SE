@@ -3,13 +3,13 @@ title: Kom igång med anpassade externa kanaler
 description: Lär dig skapa och skicka anpassade externa kanaler med Adobe Campaign Web
 role: User
 level: Beginner, Intermediate
-source-git-commit: 4ba419c52d6804e4f25f88990c226081ef0a06e6
+exl-id: d2d92de6-3974-41c5-a0fd-09bbf6cf0020
+source-git-commit: f94074d954137c4db39b2ef9f85141b79fe3356b
 workflow-type: tm+mt
 source-wordcount: '268'
 ht-degree: 0%
 
 ---
-
 
 # Kom igång med anpassade externa kanaler {#gs-custom-channel}
 
@@ -17,7 +17,7 @@ Med Adobe Campaign kan ni skapa anpassade externa kanaler som är integrerade me
 
 Leveransskapande och -sändning kan utföras både i klientkonsolen och i webbgränssnittet. Den anpassade externa kanalen utförs dock bara i klientkonsolen.
 
-Mer information om hur du skapar och skickar en leverans baserad på en anpassad extern kanal finns på [sidan](https://experienceleague.adobe.com/docs/campaign-web/v8/msg/gs-custom-channel.html?lang=sv-SE).
+Mer information om hur du skapar och skickar en leverans baserad på en anpassad extern kanal finns på [sidan](https://experienceleague.adobe.com/docs/campaign-web/v8/msg/gs-custom-channel.html).
 
 Så här skapar du en ny extern anpassad kanal i klientkonsolen:
 
@@ -69,5 +69,3 @@ Nu skapar vi den nya mallen som är kopplad till den nya kanalen.
    ![](assets/cus-template.png){zoomable="yes"}
 
 Den nya kanalen är nu tillgänglig. Du kan skapa och köra leveranser baserat på den här kanalen.
-
-

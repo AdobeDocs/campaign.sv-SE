@@ -8,7 +8,7 @@ exl-id: 9634b576-2854-4ea9-ba0d-8efaab2c4aee
 source-git-commit: 42241364c1a23ae75d8f0aaf18a2cb1c04ce5b0c
 workflow-type: tm+mt
 source-wordcount: '1049'
-ht-degree: 3%
+ht-degree: 4%
 
 ---
 
@@ -44,7 +44,7 @@ Följande tekniska konton används av Adobe Campaign för att aktivera och köra
 
 Det externa **studs-e-postkontot** anger det externa POP3-kontot som ska användas för att ansluta till e-posttjänsten. Alla servrar som konfigurerats för POP3-åtkomst kan användas för att ta emot returmeddelanden.
 
-Läs mer om inkommande e-post på [den här sidan](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/event-activities/inbound-emails.html?lang=sv-SE){target="_blank"}.
+Läs mer om inkommande e-post på [den här sidan](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/event-activities/inbound-emails.html){target="_blank"}.
 
 ![](assets/bounce_external_1.png)
 
@@ -68,7 +68,7 @@ Så här konfigurerar du det externa kontot **[!UICONTROL Bounce mails (defaultP
 
 >[!CAUTION]
 >
->Innan du konfigurerar ditt POP3-externa konto med Microsoft OAuth 2.0 måste du först registrera programmet i Azure-portalen. Mer information finns på [sidan](https://docs.microsoft.com/en-us/azure/active-directory/develop/quickstart-register-app){target="_blank"}.
+>Innan du konfigurerar ditt POP3-externa konto med Microsoft OAuth 2.0 måste du först registrera programmet i Azure-portalen. Se denna [sida](https://docs.microsoft.com/en-us/azure/active-directory/develop/quickstart-register-app){target="_blank"} för mer information om detta.
 >
 
 Om du vill konfigurera en POP3-extern med Microsoft OAuth 2.0 markerar du alternativet **[!UICONTROL Microsoft OAuth 2.0]** och fyller i följande fält:
@@ -118,7 +118,7 @@ När det gäller transaktionsmeddelanden är körningsinstanserna länkade till 
 
 ## Externa konton för överföringsdata {#transfer-data-external-accounts}
 
-Dessa externa konton kan användas för att importera eller exportera data till Adobe Campaign med hjälp av en **[!UICONTROL Transfer file]**-arbetsflödesaktivitet. Läs mer om **Filöverföring** i arbetsflöden på [den här sidan](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/event-activities/file-transfer.html?lang=sv-SE){target="_blank"}.
+Dessa externa konton kan användas för att importera eller exportera data till Adobe Campaign med hjälp av en **[!UICONTROL Transfer file]**-arbetsflödesaktivitet. Läs mer om **Filöverföring** i arbetsflöden på [den här sidan](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/event-activities/file-transfer.html){target="_blank"}.
 
 * **FTP och SFTP** - Med det externa **FTP**-kontot kan du konfigurera och testa åtkomst till en server utanför Adobe Campaign. Om du vill konfigurera anslutningar med externa system som SFTP- eller FTP-servrar 898 som används för filöverföringar kan du skapa egna externa konton.
 
@@ -126,17 +126,17 @@ Dessa externa konton kan användas för att importera eller exportera data till 
 
   >[!NOTE]
   >
-  >Från och med version 8.5 kan du nu autentisera säkert med en privat nyckel när du konfigurerar ditt externa SFTP-konto. [Läs mer om nyckelhantering](https://experienceleague.adobe.com/docs/control-panel/using/sftp-management/key-management.html?lang=sv-SE){target="_blank"}.
+  >Från och med version 8.5 kan du nu autentisera säkert med en privat nyckel när du konfigurerar ditt externa SFTP-konto. [Läs mer om nyckelhantering](https://experienceleague.adobe.com/docs/control-panel/using/sftp-management/key-management.html){target="_blank"}.
 
 * **Amazon Simple Storage Service (S3)** - **AWS S3**-anslutningen kan användas för att importera eller exportera data till Adobe Campaign med hjälp av en **[!UICONTROL Transfer file]** arbetsflödesaktivitet. När du konfigurerar det nya externa kontot måste du ange följande information:
 
    * **[!UICONTROL AWS S3 Account Server]**: URL-adressen till servern, fylls i enligt följande:   `<S3bucket name>.s3.amazonaws.com/<s3object path>`
 
-   * **[!UICONTROL AWS access key ID]**: Lär dig hur du hittar ditt ID för AWS-åtkomstnyckel i [Amazon-dokumentation](https://docs.aws.amazon.com/general/latest/gr/aws-sec-cred-types.html#access-keys-and-secret-access-keys){target="_blank"}.
+   * **[!UICONTROL AWS access key ID]**: Lär dig hur du hittar ditt ID för AWS-åtkomstnyckel i [Amazon-dokumentationen](https://docs.aws.amazon.com/general/latest/gr/aws-sec-cred-types.html#access-keys-and-secret-access-keys){target="_blank"}.
 
    * **[!UICONTROL Secret access key to AWS]**: Lär dig hur du hittar din hemliga åtkomstnyckel till AWS i [Amazon-dokumentationen](https://aws.amazon.com/fr/blogs/security/wheres-my-secret-access-key/){target="_blank"}.
 
-   * **[!UICONTROL AWS Region]**: Läs mer om AWS-regioner i [Amazon-dokumentation](https://aws.amazon.com/about-aws/global-infrastructure/regions_az/){target="_blank"}.
+   * **[!UICONTROL AWS Region]**: Läs mer om AWS-regioner i [Amazon-dokumentationen](https://aws.amazon.com/about-aws/global-infrastructure/regions_az/){target="_blank"}.
 
    * Med kryssrutan **[!UICONTROL Use server side encryption]** kan du lagra filen i S3-krypterat läge. Lär dig hur du hittar åtkomstnyckel-ID och hemlig åtkomstnyckel i [Amazon-dokumentationen](https://docs.aws.amazon.com/general/latest/gr/aws-sec-cred-types.html#access-keys-and-secret-access-keys){target="_blank"}.
 

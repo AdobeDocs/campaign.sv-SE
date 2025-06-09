@@ -137,7 +137,7 @@ Du kan skicka meddelanden till profiler som inte lagras i databasen, utan i en e
 1. Markera filen som innehåller mottagarna.
 1. När du importerar mottagarna klickar du på länken **[!UICONTROL File format definition...]** för att markera och konfigurera den externa filen.
 
-   Mer information om dataimport finns i [Campaign Classic v7-dokumentationen](https://experienceleague.adobe.com/sv/docs/campaign-classic/using/getting-started/importing-and-exporting-data/generic-imports-exports/executing-import-jobs#step-2---source-file-selection){target="_blank"}.
+   Mer information om dataimport finns i [Campaign Classic v7-dokumentationen](https://experienceleague.adobe.com/en/docs/campaign-classic/using/getting-started/importing-and-exporting-data/generic-imports-exports/executing-import-jobs#step-2---source-file-selection){target="_blank"}.
 
 1. Klicka på **[!UICONTROL Finish]** och konfigurera leveransen som en standardleverans.
 
@@ -182,7 +182,7 @@ Mer information om korrekturmottagare och sändning finns i [det här avsnittet]
 
 I den här videon får du lära dig hur du lägger till frön och korrektur i ett befintligt e-postmeddelande och hur du skickar det.
 
->[!VIDEO](https://video.tv.adobe.com/v/3447003?quality=12&captions=swe)
+>[!VIDEO](https://video.tv.adobe.com/v/333404?quality=12)
 
 Ytterligare Campaign Classic instruktionsvideor finns [här](https://experienceleague.adobe.com/docs/campaign-classic-learn/tutorials/overview.html?lang=sv).
 

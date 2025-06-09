@@ -14,9 +14,9 @@ ht-degree: 3%
 
 # Versioner och uppgraderingar {#upgrades}
 
-Adobe Campaign uppdateras regelbundet. Denna regelbundna uppdateringsfrekvens syftar till att få den senaste och bästa informationen i händerna, hålla miljön säker och förbättra din upplevelse av produkten. Adobe rekommenderar varmt alla kunder att uppgradera till den senaste versionen.
+Adobe Campaign uppdateras regelbundet. Denna regelbundna uppdateringsfrekvens syftar till att få den senaste och bästa informationen i händerna, hålla miljön säker och förbättra din upplevelse av produkten. Adobe rekommenderar starkt alla kunder att uppgradera till den senaste versionen.
 
-Som användare av hanterade Cloud Service uppgraderas instansen av Adobe med alla nya versioner. Din Adobe-representant kontaktar dig för att uppgradera dina miljöer. Kampanjklientkonsolen **måste uppgraderas till samma version** som Campaign-servrar. Lär dig hur du uppgraderar din klientkonsol på [den här sidan](../start/connect.md#upgrade-ac-console).
+Som användare av hanterade molntjänster uppgraderas din instans av Adobe med varje ny version. Din Adobe-representant kontaktar dig för att uppgradera dina miljöer. Kampanjklientkonsolen **måste uppgraderas till samma version** som Campaign-servrar. Lär dig hur du uppgraderar din klientkonsol på [den här sidan](../start/connect.md#upgrade-ac-console).
 
 Som kund ska du dessutom kontrollera att du använder de senaste versionerna av systemen som stöds i [kompatibilitetsmatrisen](compatibility-matrix.md).
 
@@ -37,7 +37,7 @@ För att konfigurationen ska bli stabil rekommenderar Adobe att du installerar *
 
 ## Kampanjuppgraderingar {#ac-upgrades}
 
-När en ny Campaign-version är tillgänglig uppgraderas din infrastruktur av Adobe utan någon ytterligare åtgärd som kund hos Campaign Managed Services.
+När en ny Campaign-version är tillgänglig uppgraderas din infrastruktur av Adobe utan ytterligare åtgärder.
 
 Observera att du som kund måste se till att du använder de senaste versionerna av systemen som stöds i [kompatibilitetsmatrisen](compatibility-matrix.md).
 
@@ -53,14 +53,14 @@ Du kommer åt följande information:
 
 * **version**-numret för klientkonsolen och programservern. I exemplet ovan är versionen 8.1.5 för både klientkonsolen och programservern.
 * SHA-talet mellan parenteser.
-* Länk till Adobe kundtjänst.
-* Länkar till Adobe sekretesspolicy, användarvillkor och cookies-policy.
+* En länk till Adobe kundtjänst.
+* Länkar till Adobe integritetspolicy, användarvillkor och cookies-policy.
 
 ### Hur får jag information om releasen av en ny version? {#upgrades-0}
 
 Nya versioner och vilka ändringar de gör listas i [versionsinformationen](release-notes.md). När en ny version finns tillgänglig kontaktar din Adobe-representant dig och uppgraderar dina miljöer.
 
-Om du vill få information om nya releaser för Experience Cloud och deras innehåll prenumererar du på meddelandet [Adobe Priority Product Updates](https://www.adobe.com/se/subscription/priority-product-update.html){target="_blank"}.
+Om du vill få information om nya versioner av Experience Cloud-lösningar och deras innehåll prenumererar du på meddelandet [Adobe Priority Product Updates](https://www.adobe.com/se/subscription/priority-product-update.html){target="_blank"}.
 
 Du kan också besöka [Campaign Community](https://experienceleaguecommunities.adobe.com/t5/custom/page/page-id/Community-TopicsPage?style=all&amp;sort=date&amp;order=desc&amp;filters=adobe-campaign-classic-community&amp;topic=Campaign+v8){target="_blank"} för att få information om uppdateringar av releaser.
 
@@ -89,4 +89,4 @@ Normalt innebär en uppgradering till den senaste versionen följande:
 
 Om ditt konto har identifierats som en v8-kund som behöver uppgradera till en ny version meddelar Adobe dig direkt.
 
-Adobe-teamet är här för att leda och vägleda organisationen genom den här resan. Ett team med särskilda kundtjänstrepresentanter, produktchefer, ingenjörer och TechOps-specialister och produktkonsulter är här för att hjälpa till och säkerställa att upplevelsen blir smidig.
+Adobe team är här för att leda och vägleda organisationen genom den här resan. Ett team med särskilda kundtjänstrepresentanter, produktchefer, ingenjörer och TechOps-specialister och produktkonsulter är här för att hjälpa till och säkerställa att upplevelsen blir smidig.

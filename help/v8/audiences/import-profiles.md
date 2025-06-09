@@ -8,7 +8,7 @@ exl-id: b6a5083f-2b5a-4f5b-ad30-d91363752896
 source-git-commit: 5ab598d904bf900bcb4c01680e1b4730881ff8a5
 workflow-type: tm+mt
 source-wordcount: '235'
-ht-degree: 3%
+ht-degree: 7%
 
 ---
 
@@ -22,13 +22,13 @@ Arbetsflöden kan vara ett användbart sätt att automatisera vissa importproces
 
 ### Använd data från en lista: Läslista {#data-from-read-list}
 
-Förbered och strukturera data i en fil för att importera dem med ett arbetsflöde. [Läs mer](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/targeting-activities/read-list.html?lang=sv-SE){target="_blank"}.
+Förbered och strukturera data i en fil för att importera dem med ett arbetsflöde. [Läs mer](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/targeting-activities/read-list.html){target="_blank"}.
 
 ### Läsa in data från en fil {#data-from-a-file}
 
-De data som bearbetas i ett arbetsflöde kan extraheras från en strukturerad fil så att de kan importeras till Adobe Campaign. [Läs mer](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/action-activities/data-loading--file-.html?lang=sv-SE){target="_blank"}.
+De data som bearbetas i ett arbetsflöde kan extraheras från en strukturerad fil så att de kan importeras till Adobe Campaign. [Läs mer](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/action-activities/data-loading--file-.html){target="_blank"}.
 
-När data har samlats in kan du använda dem i dina arbetsflöden, till exempel för att förbättra en leverans eller uppdatera databasen. Mer information finns i [det här avsnittet](https://experienceleague.adobe.com/docs/campaign/automation/workflows/introduction/use-workflow-data.html?lang=sv-SE){target="_blank"}.
+När data har samlats in kan du använda dem i dina arbetsflöden, till exempel för att förbättra en leverans eller uppdatera databasen. Mer information om detta finns i [det här avsnittet](https://experienceleague.adobe.com/docs/campaign/automation/workflows/introduction/use-workflow-data.html){target="_blank"}.
 
 ## Import av enstaka bilder{#import-jobs}
 
@@ -38,4 +38,4 @@ Generisk import hanteras från menyn **[!UICONTROL Profiles and Targets > Jobs]*
 
 ![](assets/new-import-job.png)
 
-Stegen för att utföra en allmän import beskrivs i [Campaign Classic v7-dokumentationen](https://experienceleague.adobe.com/docs/campaign-classic/using/getting-started/importing-and-exporting-data/generic-imports-exports/about-generic-imports-exports.html?lang=sv-SE){target="_blank"}.
+Stegen för att utföra en allmän import beskrivs i [Campaign Classic v7-dokumentationen](https://experienceleague.adobe.com/docs/campaign-classic/using/getting-started/importing-and-exporting-data/generic-imports-exports/about-generic-imports-exports.html){target="_blank"}.

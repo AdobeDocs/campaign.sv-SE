@@ -78,13 +78,13 @@ Du måste känna till följande synkroniseringsmekanismer:
 
 ### Paketkonfiguration {#packages-configuration}
 
-Schematillägg som är direkt länkade till **Interaktion** (erbjudanden, erbjudanden, mottagare osv.) måste distribueras på körningsinstanserna.
+Alla schematillägg som är direkt länkade till **Interaktion** (erbjudanden, erbjudanden, mottagare osv.) måste distribueras på körningsinstanserna.
 
 Paketet **Interaction** är installerat på alla instanser (kontroll och körning). Det finns ytterligare två paket: ett paket för kontrollinstanserna och ett för varje körningsinstans.
 
 >[!NOTE]
 >
->När paketet installeras blir **long**-typfälten i tabellen **nms:proposition**, till exempel förslags-ID, **int64**-typfält. Den här datatypen beskrivs i [Campaign Classic v7-dokumentationen](https://experienceleague.adobe.com/docs/campaign-classic/using/configuring-campaign-classic/schema-reference/schema-structure.html?lang=sv-SE#mapping-the-types-of-adobe-campaign-dbms-data){target="_blank"}.
+>När paketet installeras blir **long**-typfälten i tabellen **nms:proposition**, till exempel förslags-ID, **int64**-typfält. Den här typen av data beskrivs i [Campaign Classic v7-dokumentationen](https://experienceleague.adobe.com/docs/campaign-classic/using/configuring-campaign-classic/schema-reference/schema-structure.html#mapping-the-types-of-adobe-campaign-dbms-data){target="_blank"}.
 
 Varaktigheten för datalagring konfigureras för varje instans (via fönstret **[!UICONTROL Data purge]** i distributionsguiden). För körningsinstanser måste denna period motsvara det historiska djup som krävs för att typologiregler (glidande period) och regler för stödberättigande ska kunna beräknas.
 

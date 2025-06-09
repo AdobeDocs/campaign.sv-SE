@@ -5,7 +5,8 @@ description: Lär dig hur du utformar en omfattande push-meddelandetjänst från
 feature: Push
 role: User
 level: Beginner
-source-git-commit: 4e52e596d4eb2a8e1a1799fcd7104dcd894b6c2d
+exl-id: 75a57ddb-558e-4dd2-a684-e63e51545554
+source-git-commit: fef2c829da637b43067147b51aff7030d25c9744
 workflow-type: tm+mt
 source-wordcount: '1093'
 ht-degree: 3%
@@ -16,7 +17,7 @@ ht-degree: 3%
 
 >[!IMPORTANT]
 >
->Innan du utformar ett push-meddelande måste du först konfigurera V2-anslutningen. Mer information finns på [den här sidan](https://experienceleague.adobe.com/sv/docs/campaign-classic/using/sending-messages/sending-push-notifications/configure-the-mobile-app/configuring-the-mobile-application).
+>Innan du utformar ett push-meddelande måste du först konfigurera V2-anslutningen. Mer information finns på [den här sidan](https://experienceleague.adobe.com/en/docs/campaign-classic/using/sending-messages/sending-push-notifications/configure-the-mobile-app/configuring-the-mobile-application).
 
 ## Definiera innehållet i ett iOS-meddelande {#push-message}
 
@@ -187,4 +188,3 @@ När du har definierat meddelandeinnehållet kan du använda testprenumeranter f
 | **[!UICONTROL Click action]** | Ange åtgärden som är associerad med en användare genom att klicka på meddelandet. |
 | **[!UICONTROL Interruption level]** | <ul><li>Aktiv: Som standard visas meddelandet omedelbart, skärmen visas och ett ljud kan spelas upp. Meddelanden går inte igenom fokusläget.</li><li>Passiv: Systemet lägger till meddelandet i meddelandelistan utan att skärmen eller ljudet ljussätts upp. Meddelanden går inte igenom fokusläget.</li><li> Tidskänslig: Systemet visar meddelandet omedelbart, lyser upp skärmen, kan spela upp ett ljud och gå igenom fokus-lägen. Den här nivån kräver inget särskilt tillstånd från Apple.</li><li>Kritiskt: Systemet visar meddelandet omedelbart, lyser upp skärmen och kringgår avstängningsväxeln eller fokusläget. Observera att den här nivån kräver ett särskilt tillstånd från Apple.</li></ul> |
 | **[!UICONTROL Relevance score]** | Ange ett relevansvärde mellan 0 och 100. Systemet använder detta för att sortera meddelandena i meddelandesammanfattningen. |
-

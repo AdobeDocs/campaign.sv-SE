@@ -5,13 +5,13 @@ feature: SMS
 role: User
 level: Intermediate
 badge: label="Begränsad tillgänglighet" type="Informative"
-source-git-commit: 36bb1e2c9e2391065360c3cd2ad97612373ec0c2
+exl-id: abab6f15-43ea-42fc-817b-8dbd88df82f7
+source-git-commit: 30babc4bec802f61d3bd28a7ebcf0c15e22b2284
 workflow-type: tm+mt
 source-wordcount: '1365'
 ht-degree: 0%
 
 ---
-
 
 # SMS-kanalsegenskaper {#sms-channel}
 
@@ -19,7 +19,7 @@ ht-degree: 0%
 >
 >Den här dokumentationen gäller Adobe Campaign v8.7.2 och senare.
 >
->Om du har äldre versioner kan du läsa [Campaign Classic v7-dokumentationen](https://experienceleague.adobe.com/sv/docs/campaign-classic/using/sending-messages/sending-messages-on-mobiles/sms-protocol).
+>Om du har äldre versioner kan du läsa [Campaign Classic v7-dokumentationen](https://experienceleague.adobe.com/en/docs/campaign-classic/using/sending-messages/sending-messages-on-mobiles/sms-protocol).
 
 
 ## SMS-typer {#sms-types}

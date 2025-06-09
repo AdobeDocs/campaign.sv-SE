@@ -15,7 +15,7 @@ ht-degree: 0%
 
 # Dela målgrupper med Adobe Experience Cloud lösningar{#shared-audiences}
 
-Alternativ 1: AEP-källor och -destinationer
+Alternativ 1: AEP Sources and Destinations
 
 Alternativ 2: Adobe People/AAM
 
@@ -34,10 +34,10 @@ Den här integreringen stöder två typer av Adobe Experience Cloud ID:
   >
   > Deklarerad ID-datakälla kan också användas med integreringen av People core service.
   >
-  >Om du använder integreringen med huvudtjänsten Kontakter och vill lägga till integreringen med Audience Manager måste du få hjälp av en Adobe Audience Manager-konsults för att undvika att förlora alla ID-synkroniseringar som samlas in när du går över till att använda den här deklarerade ID-datakällan i ett Adobe Audience Manager-sammanhang.
+  >Om du använder integreringen med huvudtjänsten Kontakter och vill lägga till integreringen med Audience Manager behöver du hjälp av en Adobe Audience Manager-konsults för att undvika att förlora alla ID-synkroniseringar som samlas in när du går över till att använda den här deklarerade ID-datakällan i ett Adobe Audience Manager-sammanhang.
 
 Se:
 
-[Adobe Audience Manager Knowledge Base](https://experienceleague.adobe.com/docs/experience-cloud-kcs/kbarticles/KA-16471.html?lang=sv-SE){target="_blank"}.
+[Adobe Audience Manager Knowledge Base](https://experienceleague.adobe.com/docs/experience-cloud-kcs/kbarticles/KA-16471.html){target="_blank"}.
 
-[Handbok för komponenter i Adobe Experience Cloud Central Interface](https://experienceleague.adobe.com/docs/core-services/interface/services/audiences/audience-library.html?lang=sv-SE){target="_blank"}.
+[Handbok för komponenter i Adobe Experience Cloud Central Interface](https://experienceleague.adobe.com/docs/core-services/interface/services/audiences/audience-library.html){target="_blank"}.

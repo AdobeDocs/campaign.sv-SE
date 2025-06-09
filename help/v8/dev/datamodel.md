@@ -60,7 +60,7 @@ Det går att utöka mottagartabellen, men inte att minska antalet fält eller l�
 
 Lär dig att utöka ett befintligt schema i [det här avsnittet](extend-schema.md).
 
-Upptäck exempel på inbyggda mottagartabelltillägg i [Campaign Classic v7-dokumentationen](https://experienceleague.adobe.com/docs/campaign-classic/using/configuring-campaign-classic/editing-schemas/examples-of-schemas-edition.html?lang=sv-SE#extending-a-table){target="_blank"}
+Upptäck exempel på inbyggda mottagartabelltillägg i [Campaign Classic v7-dokumentationen](https://experienceleague.adobe.com/docs/campaign-classic/using/configuring-campaign-classic/editing-schemas/examples-of-schemas-edition.html#extending-a-table){target="_blank"}
 
 Du kan också använda en annan mottagartabell för att bättre passa ditt företags eller dina funktionskrav. Den här metoden har begränsningar och beskrivs i [det här avsnittet](custom-recipient.md).
 

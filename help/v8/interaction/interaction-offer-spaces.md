@@ -18,7 +18,7 @@ Innehållet i erbjudandekatalogen är konfigurerat i erbjudandemellanslag. Som s
 
 Som **teknisk administratör** kan du skapa erbjudanden i designmiljön. Du måste ha tillgång till undermappen för erbjudandeutrymmet. När erbjudandet har skapats dupliceras dessa erbjudanden automatiskt till Live-miljön när erbjudandet godkänns.
 
-Återgivningen i HTML skapas via en återgivningsfunktion. Sekvensen för fälten som definieras i återgivningsfunktionen måste vara identisk med sekvensen som konfigurerats i innehållet.
+HTML-återgivningen skapas via en återgivningsfunktion. Sekvensen för fälten som definieras i återgivningsfunktionen måste vara identisk med sekvensen som konfigurerats i innehållet.
 
 ![](assets/offer_space_create_009.png)
 
@@ -156,4 +156,4 @@ Om en mottagare inte är berättigad till något erbjudande visas detta i förha
 
 Förhandsvisningen kan ignorera kontexter när de är begränsade till ett mellanslag. Detta är fallet när interaktionsschemat har utökats för att lägga till fält som refereras i ett utrymme med en inkommande kanal.
 
-Mer information finns i det här exemplet i [Campaign Classic v7-dokumentationen](https://experienceleague.adobe.com/docs/campaign-classic/using/managing-offers/advanced-parameters/extension-example.html?lang=sv-SE){target="_blank"}.
+Mer information finns i det här exemplet i [Campaign Classic v7-dokumentationen](https://experienceleague.adobe.com/docs/campaign-classic/using/managing-offers/advanced-parameters/extension-example.html){target="_blank"}.

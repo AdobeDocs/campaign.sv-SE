@@ -21,11 +21,11 @@ Förstå arkitekturen för transaktionsmeddelanden på [den här sidan](../archi
 
 >[!NOTE]
 >
->Som användare av hanterade Cloud Service [kontaktar du Adobe](../start/campaign-faq.md#support) för att installera och konfigurera Campaign Transactional Messaging i din miljö.
+>Som hanterad molntjänstanvändare [kontaktar du Adobe](../start/campaign-faq.md#support) för att installera och konfigurera Campaign Transactional Messaging i din miljö.
 
 ## Definiera behörigheter {#mc-permissions}
 
-Kontakta din Adobe Transition Manager om du vill skapa nya användare för instanser av körning i Message Center som finns i Adobe Cloud. Message Center-användare är specifika operatorer som kräver dedikerad behörighet för att få åtkomst till mappar för &#39;Real time events&#39; (nmsRtEvent).
+Kontakta din Adobe Transition Manager om du vill skapa nya användare för instanser av körning i Message Center på Adobe Cloud. Message Center-användare är specifika operatorer som kräver dedikerad behörighet för att få åtkomst till mappar för &#39;Real time events&#39; (nmsRtEvent).
 
 ## Schematillägg  {#mc-schema-ext}
 

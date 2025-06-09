@@ -15,7 +15,7 @@ ht-degree: 1%
 
 Använd filtreringsregler för att välja meddelanden som ska exkluderas baserat på kriterier som definierats i en fråga. Dessa regler är kopplade till en målinriktningsdimension.
 
-Filtreringsregler kan länkas till andra typer av regler (kontroll, tryck osv.) i typologier, eller grupperas i en dedikerad **filtrering**-typologi. [Läs mer](#create-and-use-a-filtering-typology).
+Filtreringsregler kan länkas till andra typer av regler (kontroll, tryck osv.) i typologier, eller grupperas i en dedikerad **filtreringstypologi**. [Läs mer](#create-and-use-a-filtering-typology).
 
 ## Skapa en filtreringsregel {#create-a-filtering-rule}
 

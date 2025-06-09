@@ -45,7 +45,7 @@ Välj den relevanta menyn för att göra detta:
 
   Använd den här menyn för att komma åt den beskrivande analysguiden som gör att du kan generera statistik och rapporter om övergångsdata.
 
-  Lär dig hur du använder den beskrivande analysguiden i [Campaign Classic v7-dokumentationen](https://experienceleague.adobe.com/docs/campaign-classic/using/reporting/analyzing-populations/about-descriptive-analysis.html?lang=sv-SE){target="_blank"}.
+  Lär dig hur du använder den beskrivande analysguiden i [Campaign Classic v7-dokumentationen](https://experienceleague.adobe.com/docs/campaign-classic/using/reporting/analyzing-populations/about-descriptive-analysis.html){target="_blank"}.
 
 Måldata rensas när arbetsflödet körs. Endast den sista arbetstabellen är tillgänglig. Du kan konfigurera arbetsflödet så att alla arbetsregister förblir tillgängliga: markera alternativet **[!UICONTROL Keep the result of interim populations between two executions]** i arbetsflödesegenskaperna.
 

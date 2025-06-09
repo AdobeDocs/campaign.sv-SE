@@ -14,7 +14,7 @@ ht-degree: 0%
 
 # Kom igång med distribuerad marknadsföring{#about-distributed-marketing}
 
-Adobe Campaign erbjuder en **Distribuerad marknadsföring**-applikation för att implementera samarbetskampanjer mellan centrala enheter (huvudkontor, marknadsföringsavdelningar osv.) och lokala enheter (säljställen, regionala organ osv.). Samarbetet baseras på en delad arbetsyta som kallas **[!UICONTROL list of campaign packages]**, där centralt skapade kampanjmallar och instanser erbjuds lokala entiteter.
+Adobe Campaign erbjuder en **Distribuerad marknadsföring**-applikation för att implementera samarbetskampanjer mellan centrala enheter (huvudkontor, marknadsföringsavdelningar osv.) och lokala enheter (säljställen, regionala byråer osv.). Samarbetet baseras på en delad arbetsyta som kallas **[!UICONTROL list of campaign packages]**, där centralt skapade kampanjmallar och instanser erbjuds lokala entiteter.
 
 Den centrala enheten tillhandahåller kampanjer som lokala enheter kan använda. Kampanjer materialiseras av paket som representerar antingen lokala kampanjer eller samarbetskampanjer. För att kunna använda en kampanj måste den lokala enheten beställa den och ordern måste godkännas.
 
@@ -150,7 +150,7 @@ Dessa steg måste utföras när varje kampanj skapas.
 1. Uppdatera formuläret med fälten som används för kampanjlokalisering.
 1. Skapa en instans från en lämplig kampanjmall (samarbetskampanj) eller duplicera kampanjmallen (lokal kampanj).
 1. Konfigurera kampanjen med lokaliseringsfälten och formulärreferensen.
-1. Publish kampanjen.
+1. Publicera kampanjen.
 
 ### Lokala operatoruppgifter {#local-operator-side}
 

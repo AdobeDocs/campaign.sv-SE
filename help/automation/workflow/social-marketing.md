@@ -13,12 +13,12 @@ ht-degree: 1%
 
 # Social marknadsföring {#social-marketing}
 
-Arbetsflödena som anges nedan installeras som standard med modulen **Social marknadsföring** . Modulen möjliggör integrering med X (tidigare Twitter).
+Arbetsflödena som anges nedan installeras som standard med modulen **Social marknadsföring** . Den här modulen möjliggör integrering med X (tidigare Twitter).
 
 
 >[!AVAILABILITY]
 >
->`:warning:` Social marknadsföring med Facebook är endast tillgänglig i Campaign Classic v7.
+>`:warning:` Social marknadsföring med Facebook är bara tillgängligt i Campaign Classic v7.
 
 <table> 
  <tbody> 
@@ -28,12 +28,12 @@ Arbetsflödena som anges nedan installeras som standard med modulen **Social mar
    <td> <strong>Beskrivning</strong><br /> </td> 
   </tr> 
   <tr> 
-   <td> <span class="uicontrol">Beräkning av statistik för Twitter</span> <br /> </td> 
+   <td> <span class="uicontrol">Beräkning av Twitter-statistik</span> <br /> </td> 
    <td> <span class="uicontrol">statsTwitter</span> <br /> </td> 
    <td> Det här arbetsflödet beräknar statistik som är länkad till retweets och besök på X (tidigare Twitter).<br /> </td> 
   </tr> 
   <tr> 
-   <td> <span class="uicontrol">Synkroniserar Twitter</span> <br /> </td> 
+   <td> <span class="uicontrol">Synkroniserar Twitter-sidor</span> <br /> </td> 
    <td> <span class="uicontrol">syncTwitter</span> <br /> </td> 
    <td> Det här arbetsflödet importerar X-följare till Adobe Campaign varje dag kl. 7.00.<br /> </td> 
   </tr> 
@@ -45,7 +45,7 @@ Arbetsflödena som anges nedan installeras som standard med modulen **Social mar
   <tr> 
    <td> <span class="uicontrol">Synkroniserar Facebook-fans (endast v7)</span> <br /> </td> 
    <td> <span class="uicontrol">syncFacebookFans</span> <br /> </td> 
-   <td> Det här arbetsflödet importerar Facebook fans till Adobe Campaign varje dag kl. 7.00.<br /> </td> 
+   <td> Det här arbetsflödet importerar Facebook-fans till Adobe Campaign varje dag kl. 7.00.<br /> </td> 
   </tr> 
   <tr> 
    <td> <span class="uicontrol">Synkroniserar Facebook-sidor (endast v7)</span> <br /> </td> 

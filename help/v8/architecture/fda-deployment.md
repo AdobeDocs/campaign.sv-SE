@@ -18,7 +18,7 @@ I sin Campaign FDA-distribution (standard) kan [!DNL Adobe Campaign] v8 anslutas
 
 >[!NOTE]
 >
->I den här distributionsmodellen är den sekundära databasen [!DNL Snowflake] endast tillgänglig på begäran. Om du vill att din distribution ska uppdateras med [!DNL Snowflake] kontaktar du Adobe Transition Manager.
+>I den här distributionsmodellen är den sekundära databasen [!DNL Snowflake] endast tillgänglig på begäran. Kontakta din Adobe Transition Manager om du vill uppdatera din distribution med [!DNL Snowflake].
 >
 
 ## Fördelar{#fda-benefits}
@@ -42,4 +42,4 @@ Allmän kommunikation mellan servrar och processer sker enligt följande schema:
 
 ![](assets/fda-architecture.png)
 
-PostgreSQL är den primära databasen och Snowflake kan användas som den sekundära databasen. Du kan utöka datamodellen och lagra data på Snowflake. Därefter kan ni köra ETL, segmentering och rapporter på en stor datauppsättning med enastående prestanda.
+PostgreSQL är den primära databasen och Snowflake kan användas som den sekundära databasen. Du kan utöka din datamodell och lagra dina data på Snowflake. Därefter kan ni köra ETL, segmentering och rapporter på en stor datauppsättning med enastående prestanda.

@@ -9,7 +9,7 @@ exl-id: 3a4de36e-ba24-49ec-8113-f32f12c8ecdd
 source-git-commit: 08e04f3642320df94d719a415e878e3a26d2e00f
 workflow-type: tm+mt
 source-wordcount: '990'
-ht-degree: 3%
+ht-degree: 4%
 
 ---
 
@@ -34,7 +34,7 @@ Leveransmallar lagras i mappen **[!UICONTROL Resources > Templates > Delivery te
 
 1. Adobe Campaign **inbyggda** leveransmallar - Inbyggda mallar finns tillgängliga för varje kanal. De får inte ändras eller tas bort. De innehåller en grundläggande konfiguration för varje leveranskanal. Som administratör kan du ange standardvärden eller begränsa vissa funktioner till slutanvändare, som att ändra spårningsparametrar, avsändarens e-postadresser med mera. Inbyggda mallar visas med fet stil i listan med mallar.
 
-1. **Anpassade** leveransmallar - Som Adobe Campaign-administratör kan du skapa nya leveransmallar. Det bästa sättet är att duplicera och uppdatera en inbyggd mall i stället för att skapa en mall från grunden. Du kan till exempel konfigurera en mall för e-postleverans, och när användare skapar en leverans från den här mallen behöver de bara ange texten eller HTML-innehållet. Alla andra inställningar har redan definierats.
+1. **Anpassade** leveransmallar - Som Adobe Campaign-administratör kan du skapa nya leveransmallar. Det bästa sättet är att duplicera och uppdatera en inbyggd mall i stället för att skapa en mall från grunden. Du kan till exempel konfigurera en e-postleveransmall, och när användare skapar en leverans från den här mallen behöver de bara ange texten eller HTML-innehållet. Alla andra inställningar har redan definierats.
 
 >[!NOTE]
 >
@@ -121,7 +121,7 @@ Välj den leveransmall som ska användas och klicka på **[!UICONTROL Ok]**.
 
 ### Kör en mall {#execute-a-template}
 
-Du kan starta körningen av en mall direkt från malllistan utan att först skapa en leverans. Leveransmallen kan köras manuellt, enligt beskrivningen nedan, eller aktiveras av en händelse (som körs vid en viss tidpunkt, när en fil är tillgänglig på servern, osv.), vilket förklaras i [det här avsnittet](https://experienceleague.adobe.com/sv/docs/campaign/automation/workflows/wf-activities/action-activities/delivery).
+Du kan starta körningen av en mall direkt från malllistan utan att först skapa en leverans. Leveransmallen kan köras manuellt, enligt beskrivningen nedan, eller aktiveras av en händelse (som körs vid en viss tidpunkt, när en fil är tillgänglig på servern, osv.), vilket förklaras i [det här avsnittet](https://experienceleague.adobe.com/en/docs/campaign/automation/workflows/wf-activities/action-activities/delivery).
 
 Så här kör du en mall manuellt:
 
@@ -147,12 +147,12 @@ I följande video visas hur du konfigurerar en mall för en ad hoc-leverans.
 
 I följande video visas hur du ställer in leveransmallsegenskaperna och förklarar varje egenskap i detalj.
 
->[!VIDEO](https://video.tv.adobe.com/v/3443405?quality=12&captions=swe)
+>[!VIDEO](https://video.tv.adobe.com/v/338969?quality=12)
 
 ### Så här distribuerar du en ad hoc-leveransmall
 
 I den här videon förklaras hur du distribuerar en mall för ad hoc-e-postleverans och den förklarar skillnaden mellan en e-postleverans och ett leveransarbetsflöde.
 
->[!VIDEO](https://video.tv.adobe.com/v/3444961?quality=12&captions=swe)
+>[!VIDEO](https://video.tv.adobe.com/v/338965?quality=12)
 
-Det finns ytterligare utbildningsvideor för Campaign [här](https://experienceleague.adobe.com/docs/campaign-learn/tutorials/getting-started/introduction-to-adobe-campaign.html?lang=sv-SE){target="_blank"}.
+Ytterligare utbildningsvideor för Campaign är tillgängliga [här](https://experienceleague.adobe.com/docs/campaign-learn/tutorials/getting-started/introduction-to-adobe-campaign.html){target="_blank"}.

@@ -71,7 +71,7 @@ Du kan lägga till så många anslutningar som behövs för att ansluta till tes
 
 ## Logga in på Adobe Campaign {#logon-to-ac}
 
-Kampanjanvändare ansluter till Adobe Campaign-konsolen med sin Adobe ID via Adobe Identity Management System (IMS). De kan använda samma ID för alla Adobe-lösningar. Anslutningen sparas när du använder Adobe Campaign med andra lösningar. Läs mer om Adobe IMS på [den här sidan](https://helpx.adobe.com/se/enterprise/using/identity.html){target="_blank"}.
+Kampanjanvändare ansluter till Adobe Campaign-konsolen med sin Adobe ID via Adobe Identity Management System (IMS). De kan använda samma ID för alla Adobe-lösningar. Anslutningen sparas när du använder Adobe Campaign med andra lösningar. Läs mer om Adobe IMS på [den här sidan](https://helpx.adobe.com/enterprise/using/identity.html){target="_blank"}.
 
 Så här loggar du in på en instans:
 
@@ -121,12 +121,12 @@ Från och med Campaign v8.6 har du tillgång till det nya **Campaign-webbgränss
 
 >[!AVAILABILITY]
 >
->Användargränssnittet för Campaign-webben är bara tillgängligt för användare som ansluter till Adobe Campaign med sin Adobe ID. Läs mer om [Adobe Identity Management System (IMS)](https://helpx.adobe.com/se/enterprise/using/identity.html){target="_blank"}.
+>Användargränssnittet för Campaign-webben är bara tillgängligt för användare som ansluter till Adobe Campaign med sin Adobe ID. Läs mer om [Adobe Identity Management System (IMS)](https://helpx.adobe.com/enterprise/using/identity.html){target="_blank"}.
 >
 
 Lär dig hur du ansluter till Adobe Experience Cloud och kommer åt Adobe Campaign webbgränssnitt [på den här sidan](campaign-ui.md#ac-web-ui).
 
-Läs mer i [Adobe Campaign webbgränssnittsdokumentation](https://experienceleague.adobe.com/sv/docs/campaign-web/v8/campaign-web-home){target="_blank"}.
+Läs mer i [Adobe Campaign webbgränssnittsdokumentation](https://experienceleague.adobe.com/en/docs/campaign-web/v8/campaign-web-home){target="_blank"}.
 
 ### Webbåtkomst {#web-access}
 

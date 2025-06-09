@@ -13,7 +13,7 @@ ht-degree: 0%
 
 # Migrering av tekniska aktörer från Campaign till Adobe Developer Console {#migrate-tech-users-to-ims}
 
-Som en del i arbetet med att stärka säkerhets- och autentiseringsprocessen, från och med Campaign v8.5, förbättras autentiseringsprocessen till Campaign v8. Tekniska operatörer kan nu använda [Adobe Identity Management System (IMS)](https://helpx.adobe.com/se/enterprise/using/identity.html){target="_blank"} för att ansluta till Campaign. Läs mer om autentiseringsprocessen från den nya servern till servern i [Adobe Developer Console-dokumentationen](https://developer.adobe.com/developer-console/docs/guides/authentication/ServerToServerAuthentication/){target="_blank"}.
+Som en del i arbetet med att stärka säkerhets- och autentiseringsprocessen, från och med Campaign v8.5, förbättras autentiseringsprocessen till Campaign v8. Tekniska operatörer kan nu använda [Adobe Identity Management System (IMS)](https://helpx.adobe.com/enterprise/using/identity.html){target="_blank"} för att ansluta till Campaign. Läs mer om autentiseringsprocessen från den nya servern till servern i [Adobe Developer Console-dokumentationen](https://developer.adobe.com/developer-console/docs/guides/authentication/ServerToServerAuthentication/){target="_blank"}.
 
 En teknisk operator är en Campaign-användarprofil som uttryckligen har skapats för API-integrering. I den här artikeln beskrivs stegen som krävs för att migrera en teknisk operatör till ett tekniskt konto via Adobe Developer-konsolen.
 
@@ -47,7 +47,7 @@ För API-anrop till Message Center-instansen/instanserna bör en produktprofil h
 
 Om du redan har använt IMS-baserad autentisering för användaråtkomst till Campaign bör de produktprofiler som behövs för API-anropen redan finnas i Admin Console. Om du använder en anpassad operatörsgrupp i Campaign för API-anrop till Marketing-instansen måste du skapa produktprofilen i Admin Console.
 
-I andra fall måste du kontakta din Adobe Transition Manager så att Adobe tekniska team kan migrera dina befintliga Operator-grupper och namngivna behörigheter till produktprofilerna i Admin Console.
+I andra fall måste du kontakta din Adobe Transition Manager så att Adobe tekniska team kan migrera dina befintliga Operator-grupper och namngivna behörigheter till produktprofilerna inom Admin Console.
 
 
 ### Steg 1 - Skapa ett kampanjprojekt i Adobe Developer Console {#ims-migration-step-1}
@@ -95,7 +95,7 @@ When the API has been successfully connected, you can access the newly generated
 
 Så som beskrivs i avsnittet Krav måste du tilldela rätt produktprofiler som ska användas i projektet. I det här steget måste du välja den eller de produktprofiler som ska användas av det tekniska konto som skapas.
 
-Om det här tekniska kontot används för att göra API-anrop till Message Center-instansen måste du välja produktprofilen Adobe create som slutar med `messagecenter`.
+Om det här tekniska kontot används för att göra API-anrop till Message Center-instansen måste du välja den Adobe-produktprofil som slutar med `messagecenter`.
 
 För API-anrop till Marketing-instansen/-instanserna väljer du den produktprofil som motsvarar instansen och operatörsgruppen.
 
@@ -149,9 +149,9 @@ Du måste nu uppdatera alla API-integreringar som gör anrop till Adobe Campaign
 
 Mer information om API-integreringssteg, inklusive en exempelkod för smidig integrering, finns i [Adobe Developer Console autentiseringsdokumentation](https://developer.adobe.com/developer-console/docs/guides/authentication/ServerToServerAuthentication/){target="_blank"}.
 
-Nedan visas exempel på SOAP samtal som visar anrop före och efter migrering för tredjepartssystem.
+Nedan visas exempel på SOAP-anrop som visar anrop före och efter migrering för tredjepartssystem.
 
-När du använder IMS-autentisering (Adobe Identity Management System) bör du lägga till `Authorization: Bearer <IMS_Technical_Token_Token>` i postmansanropet för att skapa en WSDL-fil:
+När du använder Adobe Identity Management System-autentisering (IMS) bör du lägga till `Authorization: Bearer <IMS_Technical_Token_Token>` i efterhandsanropet för att skapa en WSDL-fil:
 
 ```
 curl --location --request POST 'https://<instance_url>/nl/jsp/schemawsdl.jsp?schema=nms:rtEvent' \--header 'Authorization: Bearer <Technical account access token>'
@@ -208,7 +208,7 @@ När migreringsprocessen har uppnåtts och validerats uppdateras Soap-anropen en
 
 ### Steg 9 - (valfritt) Uppdatera den tekniska kontooperatören i Campaign-klientkonsolen {#ims-migration-step-9}
 
-Det här steget är valfritt och endast tillgängligt i Marketing Instance(erna), inte i någon Message Center-instans. Om specifika mappbehörigheter eller namngivna rättigheter har definierats för den tekniska operatören, men inte via de tilldelade operatörsgrupperna. Du måste nu uppdatera den nyskapade tekniska kontoanvändaren i Admin Console för att ge mappbehörigheter eller namngivna rättigheter som krävs.
+Det här steget är valfritt och endast tillgängligt i Marketing Instance(erna), inte i någon Message Center-instans. Om specifika mappbehörigheter eller namngivna rättigheter har definierats för den tekniska operatören, men inte via de tilldelade operatörsgrupperna. Du måste nu uppdatera den nyskapade tekniska kontoanvändaren i Admin Console för att ge mappbehörigheter eller namngivna behörigheter.
 
 Observera att den tekniska kontoanvändaren INTE finns i Adobe Campaign förrän minst ett API-anrop görs till Campaign-instansen, då IMS skapar användaren i Campaign. Om du inte kan hitta de tekniska användarna i Campaign kontrollerar du att du har lyckats skicka ett API-anrop enligt beskrivningen [i steg 7](#ims-migration-step-7).
 
@@ -218,7 +218,7 @@ Observera att den tekniska kontoanvändaren INTE finns i Adobe Campaign förrän
 
    ![](assets/do-not-localize/ims-updates-07.png)
 
-   Bläddra nedåt på skärmen Autentiseringsuppgifter för att hitta e-postadressen för det tekniska kontot **och klicka på knappen &#x200B;** Kopiera**.
+   Bläddra nedåt på skärmen Autentiseringsuppgifter för att hitta e-postadressen för det tekniska kontot **och klicka på knappen **Kopiera**.
 
    ![](assets/do-not-localize/ims-updates-08.png)
 

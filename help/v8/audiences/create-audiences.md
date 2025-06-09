@@ -26,7 +26,7 @@ Du kan skapa en lista med aktiviteten **Uppdatera lista** i ett arbetsflöde. De
 
 I den här videon får du lära dig mer om Lists hantering i Adobe Campaign.
 
->[!VIDEO](https://video.tv.adobe.com/v/3426465?quality=12&captions=swe)
+>[!VIDEO](https://video.tv.adobe.com/v/334909?quality=12)
 
 
 ## Skapa en lista med kontakter {#create-a-list-of-contacts}
@@ -103,7 +103,7 @@ I exemplet nedan skapar du en lista med alla mottagare mellan 25 och 40.
 
    ![](assets/targeting-wf-age-filter.png)
 
-   Lär dig hur du skapar en fråga i ett arbetsflöde i [det här avsnittet](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/targeting-activities/query.html?lang=sv-SE){target="_blank"}.
+   Lär dig hur du skapar en fråga i ett arbetsflöde i [det här avsnittet](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/targeting-activities/query.html){target="_blank"}.
 
 1. Lägg till en etikett för den här frågan och spara ändringarna.
 1. Lägg till en **[!UICONTROL List update]**-aktivitet och redigera den.
@@ -124,7 +124,7 @@ I exemplet nedan skapar du en lista med alla mottagare mellan 25 och 40.
 
    ![](assets/access-new-list.png)
 
-   Du kan göra det här arbetsflödet återkommande genom att lägga till en schemaläggare i arbetsflödet. [Läs mer](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/flow-control-activities/scheduler.html?lang=sv-SE){target="_blank"}.
+   Du kan göra det här arbetsflödet återkommande genom att lägga till en schemaläggare i arbetsflödet. [Läs mer](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/flow-control-activities/scheduler.html){target="_blank"}.
 
 ## Ta bort en profil från en lista {#remove-a-profile-from-a-list}
 

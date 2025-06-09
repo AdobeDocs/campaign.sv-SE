@@ -46,7 +46,7 @@ Om arbetsflödet **[!UICONTROL Unicity alerting]** (ffdaUnicity) upptäcker någ
 
 ![](assets/unicity-table.png)
 
-Som databasadministratör kan du använda en SQL-aktivitet för att ta bort dubbletter eller kontakta Adobe kundtjänst för mer vägledning.
+Som databasadministratör kan du använda en SQL-aktivitet för att ta bort dubbletter eller kontakta Adobe kundtjänst om du vill ha mer hjälp.
 
 ### Varningar{#unicity-wf-alerting}
 

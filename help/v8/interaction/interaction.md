@@ -143,5 +143,5 @@ Upptäck erbjudandespecifika villkor och tillhörande vägledning innan du börj
 * **Simulering**: Med modulen kan du testa erbjudandepresentationen för målmottagarna innan du skickar erbjudandena.
 * **Förhandsgranska**: förhandsgranskning av erbjudandet så som det visas i dess mapp. Den är tillgänglig från inställningsfönstret för erbjudandet eller kontaktprofilen.
 * **fördefinierade filter**: fördefinierade filtreringsregler kan ta hänsyn till erbjudandeparametrar (till exempel en erbjudandekod). De kan återanvändas efter att erbjudandena har skapats.
-* **Erbjudanderepresentation**: information som används av kanalen för att visa erbjudandet. Erbjudanderepresentationen kan utformas med hjälp av återgivningsfunktionen i det utrymme som erbjudandet avser eller anges direkt i gränssnittet (t.ex. i blocket HTML). Ett erbjudande kan representeras av space.
+* **Erbjudanderepresentation**: information som används av kanalen för att visa erbjudandet. Erbjudanderepresentationen kan skapas med hjälp av återgivningsfunktionen i det utrymme som erbjudandet avser eller anges direkt i gränssnittet (t.ex. i HTML-blocket). Ett erbjudande kan representeras av space.
 * **Övergångsprocess**: En aktiverad process i en identifierad miljö, som ansvarar för att dirigera anropet till en anonym miljö om kontakten inte har identifierats explicit och/eller implicit.

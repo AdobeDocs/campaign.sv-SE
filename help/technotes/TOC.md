@@ -8,7 +8,7 @@ breadcrumb-title: Kampanjtekniker
 source-git-commit: 0fa6767f042eb595b1697d086e5c5cd5fc42625e
 workflow-type: tm+mt
 source-wordcount: '68'
-ht-degree: 19%
+ht-degree: 20%
 
 ---
 
@@ -29,4 +29,4 @@ ht-degree: 19%
    + [32-bitars borttagning av klientkonsol](upgrades/console.md)
    + Säkerhet {#security}
       + [Rotation av kundens autentiseringsuppgifter](security/credential-rotation-guide.md)
-+ [&lt; Tillbaka till Campaign v8-dokumentation](https://experienceleague.adobe.com/sv/docs/campaign/campaign-v8/campaign-home)
++ [&lt; Tillbaka till Campaign v8-dokumentation](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/campaign-home)

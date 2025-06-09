@@ -20,7 +20,7 @@ Nedan finns ytterligare skyddsutkast och begränsningar när du använder [!DNL 
 
 Garantier och begränsningar identifierar funktioner, arkitektur eller processer som inte stöds i den här versionen av produkten, eller som inte fungerar som de ska. Granska dessa begränsningar noggrant.
 
-* Adobe Campaign v8 är inte tillgängligt för anläggningsdistributioner/hybriddistributioner - endast som en Adobe-hanterad Cloud Service
+* Adobe Campaign v8 är inte tillgängligt för anläggningsdistributioner/hybriddistributioner - endast lanserat som en Adobe Managed Cloud Service
 * Ingen automatisk migrering till Adobe Campaign v8 är tillgänglig för befintliga kunder
 * Ingen dubbelriktad datareplikering tillhandahålls i samband med en [Enterprise-distribution (FFDA)](../architecture/enterprise-deployment.md): replikering sker endast från den lokala Campaign-databasen till molndatabasen
 * Funktioner som anges [ i det här avsnittet](v7-to-v8.md#gs-unavailable-features) är inte tillgängliga i den aktuella Campaign v8-versionen

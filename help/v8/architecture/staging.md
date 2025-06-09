@@ -14,7 +14,7 @@ ht-degree: 2%
 
 # Mellanlagringsmekanism för kampanj-API
 
-I samband med en [Enterprise (FFDA)-distribution](enterprise-deployment.md) rekommenderas inte att enhetsanrop rensas när det gäller prestanda (latens och samtidighet). Om du inte skickar extremt låg volym måste gruppåtgärden **&#x200B;**&#x200B;användas. För att förbättra prestandan omdirigeras API:er för inmatning till den lokala databasen.
+I samband med en [Enterprise (FFDA)-distribution](enterprise-deployment.md) rekommenderas inte att enhetsanrop rensas när det gäller prestanda (latens och samtidighet). Om du inte skickar extremt låg volym måste gruppåtgärden **** användas. För att förbättra prestandan omdirigeras API:er för inmatning till den lokala databasen.
 
 Kampanjmellanlagring är aktiverat som standard för vissa inbyggda scheman. Vi kan även aktivera det i alla anpassade scheman. Mellanlagringsmekanism i ett nötskal:
 
@@ -24,7 +24,7 @@ Kampanjmellanlagring är aktiverat som standard för vissa inbyggda scheman. Vi 
 
 Vissa inbyggda scheman är som standard mellanlagrade, till exempel nmsSubscriptionRcp, nmsAppSubscriptionRcp och nmsRecipient.
 
-API:er för Campaign Classic v7 är fortfarande tillgängliga men kan inte utnyttja den här nya mellanlagringsmekanismen: API-anrop flödar direkt till molndatabasen. Adobe rekommenderar att du använder den nya mellanlagringsmekanismen så mycket som möjligt för att minska det övergripande trycket och latensen i Campaign Cloud-databasen.
+Campaign Classic v7 API:er är fortfarande tillgängliga men kan inte utnyttja den här nya mellanlagringsmekanismen: API-anrop flödar direkt till molndatabasen. Adobe rekommenderar att du använder den nya mellanlagringsmekanismen så mycket som möjligt för att minska det övergripande trycket och latensen i Campaign Cloud-databasen.
 
 >[!CAUTION]
 >

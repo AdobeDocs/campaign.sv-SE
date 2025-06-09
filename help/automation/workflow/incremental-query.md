@@ -30,7 +30,7 @@ Frågan definieras på samma sätt som för vanliga frågor, men körningen är 
 
 >[!CAUTION]
 >
->Om resultatet av en inkrementell fråga är lika med **&#x200B;**&#x200B;under en av dess körningar pausas arbetsflödet tills frågan körs nästa gång. De övergångar och aktiviteter som följer efter den stegvisa frågan bearbetas därför inte före nästa körning.
+>Om resultatet av en inkrementell fråga är lika med **** under en av dess körningar pausas arbetsflödet tills frågan körs nästa gång. De övergångar och aktiviteter som följer efter den stegvisa frågan bearbetas därför inte före nästa körning.
 
 Så här gör du:
 

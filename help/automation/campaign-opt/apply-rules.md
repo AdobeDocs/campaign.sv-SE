@@ -60,7 +60,7 @@ Godkännanden verkställs automatiskt varje kväll via databasrensningsarbetsfl�
 
 I vissa beräkningar används värden som inte ändras dagligen. Det skulle därför vara irrelevant att omberäkna data varje dag och överlagra databasen helt utan någonting. Om en process till exempel förbättrar marknadsföringsdatabasen med kundbenägenhetspoäng och inköpsinformation varje vecka, behöver data som baseras på dessa värden inte beräknas om varje dag.
 
-För att göra detta kan du i fältet **[!UICONTROL Frequency]** på fliken **[!UICONTROL General]** definiera en maximal period under vilken mål sparas. Som standard anger värdet **&#x200B;**&#x200B;att beräkningen är giltig tills nästa gång den dagliga omskiljningen utförs.
+För att göra detta kan du i fältet **[!UICONTROL Frequency]** på fliken **[!UICONTROL General]** definiera en maximal period under vilken mål sparas. Som standard anger värdet **** att beräkningen är giltig tills nästa gång den dagliga omskiljningen utförs.
 
 Om du vill spara resultaten efter den här perioden anger du ett värde som är större än 12 i fältet **[!UICONTROL Frequency]**: när den här perioden har gått ut tillämpas alla regler igen.
 

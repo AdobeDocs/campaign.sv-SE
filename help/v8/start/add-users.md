@@ -38,7 +38,7 @@ Operatorer är länkade till en säkerhetszon från sin profil i konsolen, som �
 
 >[!NOTE]
 >
->Som användare med hanterade Cloud Service anger Adobe säkerhetszonerna åt dig. [Kontakta Adobe](https://helpx.adobe.com/se/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html){target="_blank"} om du vill ha mer information.
+>Som användare av hanterade molntjänster anger Adobe säkerhetszonerna åt dig. [Kontakta Adobe](https://helpx.adobe.com/se/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html){target="_blank"} om du vill ha mer information.
 
 **Läs mer**
 

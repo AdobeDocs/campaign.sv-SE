@@ -18,7 +18,7 @@ Du får åtkomst till Adobe Campaign via klientkonsolen eller webbgränssnittet.
 
 >[!CAUTION]
 >
->Den här dokumentationen fokuserar på användning av Campaign Client-konsolen. Om du använder användargränssnittet för Campaign-webben kan du läsa [den här dokumentationen](https://experienceleague.adobe.com/docs/campaign-web/v8/campaign-web-home.html?lang=sv-SE){target="_blank"}.
+>Den här dokumentationen fokuserar på användning av Campaign Client-konsolen. Om du använder användargränssnittet för Campaign-webben kan du läsa [den här dokumentationen](https://experienceleague.adobe.com/docs/campaign-web/v8/campaign-web-home.html){target="_blank"}.
 
 * **Klientkonsol** - Campaign-klientkonsolen är ett systemspecifikt program som kommunicerar med Adobe Campaign-programservern via standardInternetprotokoll som SOAP och HTTP. Campaign-klientkonsolen centraliserar alla funktioner och inställningar och kräver minimal bandbredd eftersom den är beroende av ett lokalt cacheminne. Kampanjklientkonsolen är utformad för enkel driftsättning och kan distribueras från en webbläsare, uppdateras automatiskt och kräver ingen specifik nätverkskonfiguration eftersom den bara genererar HTTP(S)-trafik. [Läs mer](#ui-access)
 
@@ -28,17 +28,17 @@ Du får åtkomst till Adobe Campaign via klientkonsolen eller webbgränssnittet.
 
   >[!AVAILABILITY]
   >
-  >Användargränssnittet för Campaign-webben är bara tillgängligt för användare som ansluter till Adobe Campaign med sin Adobe ID. Läs mer om [Adobe Identity Management System (IMS)](https://helpx.adobe.com/se/enterprise/using/identity.html){target="_blank"}.
+  >Användargränssnittet för Campaign-webben är bara tillgängligt för användare som ansluter till Adobe Campaign med sin Adobe ID. Läs mer om [Adobe Identity Management System (IMS)](https://helpx.adobe.com/enterprise/using/identity.html){target="_blank"}.
   >
 
-* **Webbåtkomst** - Med Adobe Campaign webbåtkomstfunktioner kan du komma åt en delmängd av Campaign-funktionerna i en webbläsare via ett HTML-användargränssnitt. Använd det här webbgränssnittet för att få åtkomst till rapporter, kontrollera och validera meddelanden, få åtkomst till kontrollpaneler med mera.  Läs mer om Campaign Web Access [i det här avsnittet](../start/connect.md#web-access).
+* **Webbåtkomst** - Med Adobe Campaign webbåtkomstfunktioner kan du komma åt en delmängd av Campaign-funktionerna i en webbläsare med hjälp av ett HTML-användargränssnitt. Använd det här webbgränssnittet för att få åtkomst till rapporter, kontrollera och validera meddelanden, få åtkomst till kontrollpaneler med mera.  Läs mer om Campaign Web Access [i det här avsnittet](../start/connect.md#web-access).
 
-* **API:er** - För att åtgärda fler användningsfall kan systemet anropas från externa program med hjälp av de webbtjänstAPI:er som exponeras via SOAP. Läs mer om Campaign-API:er [på den här sidan](../dev/api.md).
+* **API:er** - För att åtgärda fler användningsfall kan systemet anropas från externa program med hjälp av de webbtjänstAPI:er som exponeras via SOAP-protokollet. Läs mer om Campaign-API:er [på den här sidan](../dev/api.md).
 
 
 ## Arbeta med klientkonsolen {#ui-access}
 
-Campaign-klientkonsolen är ett inbyggt program som kommunicerar med Adobe Campaign-programservern via vanliga Internetprotokoll, som SOAP och HTTP. Campaign-klientkonsolen centraliserar alla funktioner och inställningar och kräver minimal bandbredd eftersom den är beroende av ett lokalt cacheminne. Kampanjklientkonsolen är utformad för enkel driftsättning och kan distribueras från en webbläsare, uppdateras automatiskt och kräver ingen specifik nätverkskonfiguration eftersom den bara genererar HTTP(S)-trafik.  [Läs mer om Campaign-klientkonsolen](../start/connect.md). Du kan växla till Campaign-webbgränssnittet från det dedikerade kortet på klientkonsolens startsida.
+Campaign-klientkonsolen är ett inbyggt program som kommunicerar med Adobe Campaign-programservern via standardprotokoll för Internet, som SOAP och HTTP. Campaign-klientkonsolen centraliserar alla funktioner och inställningar och kräver minimal bandbredd eftersom den är beroende av ett lokalt cacheminne. Kampanjklientkonsolen är utformad för enkel driftsättning och kan distribueras från en webbläsare, uppdateras automatiskt och kräver ingen specifik nätverkskonfiguration eftersom den bara genererar HTTP(S)-trafik.  [Läs mer om Campaign-klientkonsolen](../start/connect.md). Du kan växla till Campaign-webbgränssnittet från det dedikerade kortet på klientkonsolens startsida.
 
 ![](assets/web-ui.png)
 
@@ -108,18 +108,18 @@ På den här arbetsytan kan du komma åt Utforskarträdet och bläddra bland all
 
 ## Kampanjwebbgränssnitt {#ac-web-ui}
 
-Från och med version 8.6.1 av Campaign v8-klientkonsolanvändare har du nu tillgång till en webbmiljö som är tillgänglig via Adobe Experience Cloud centrala användargränssnitt. Experience Cloud är en integrerad familj av program, produkter och tjänster för digital marknadsföring i Adobe. Från det intuitiva gränssnittet får du snabbt tillgång till dina molnprogram, produktfunktioner och tjänster.
+Från och med version 8.6.1 av Campaign v8-klientkonsolanvändare har du nu tillgång till en webbmiljö som är tillgänglig via Adobe Experience Cloud centrala användargränssnitt. Experience Cloud är Adobe integrerade program, produkter och tjänster för digital marknadsföring. Från det intuitiva gränssnittet får du snabbt tillgång till dina molnprogram, produktfunktioner och tjänster.
 
 ![Adobe Campaign hemsida för webbanvändargränssnitt](assets/ac-web-home.png)
 
 >[!AVAILABILITY]
 >
->Användargränssnittet för Campaign-webben är bara tillgängligt för användare som ansluter till Adobe Campaign med sin Adobe ID. Läs mer om [Adobe Identity Management System (IMS)](https://helpx.adobe.com/se/enterprise/using/identity.html){target="_blank"}.
+>Användargränssnittet för Campaign-webben är bara tillgängligt för användare som ansluter till Adobe Campaign med sin Adobe ID. Läs mer om [Adobe Identity Management System (IMS)](https://helpx.adobe.com/enterprise/using/identity.html){target="_blank"}.
 >
 
-Läs mer om det nya Campaign-webbanvändargränssnittet i [den här dokumentationen](https://experienceleague.adobe.com/docs/campaign-web/v8/campaign-web-home.html?lang=sv-SE){target="_blank"}. Du kan även gå till sidan [Vanliga frågor och svar](https://experienceleague.adobe.com/sv/docs/campaign-web/v8/start/faq){target="_blank"} i dokumentationen för webbanvändargränssnittet för Campaign.
+Läs mer om det nya webbanvändargränssnittet för Campaign i [den här dokumentationen](https://experienceleague.adobe.com/docs/campaign-web/v8/campaign-web-home.html){target="_blank"}. Du kan även gå till sidan [Vanliga frågor och svar](https://experienceleague.adobe.com/en/docs/campaign-web/v8/start/faq){target="_blank"} i dokumentationen för Campaign-webbanvändargränssnittet.
 
-Ytterligare och avancerade funktioner, konfigurationer och inställningar är bara tillgängliga i klientkonsolen. Läs mer om funktioner som är tillgängliga i båda användargränssnitten [i dokumentationen för användargränssnittet för Campaign ](https://experienceleague.adobe.com/docs/campaign-web/v8/start/capability-matrix.html?lang=sv-SE){target="_blank"}.
+Ytterligare och avancerade funktioner, konfigurationer och inställningar är bara tillgängliga i klientkonsolen. Läs mer om funktioner som är tillgängliga i båda användargränssnitten [ i dokumentationen för användargränssnittet för Campaign ](https://experienceleague.adobe.com/docs/campaign-web/v8/start/capability-matrix.html){target="_blank"}.
 
 
 ## Språk som stöds {#languages}
@@ -139,7 +139,7 @@ Vilka språk som stöds beror på användargränssnittet.
   >
   >Språket väljs under installationen och kan inte ändras efteråt.
 
-* För språk som stöds för Campaign-webbgränssnittet [finns den här sidan](https://experienceleague.adobe.com/docs/campaign-web/v8/start/connect-to-campaign.html?lang=sv-SE#language-pref){target="_blank"}.
+* För språk som stöds för Campaign-webbgränssnittet [finns den här sidan](https://experienceleague.adobe.com/docs/campaign-web/v8/start/connect-to-campaign.html#language-pref){target="_blank"}.
 
 
 Språk påverkar datum- och tidsformat.

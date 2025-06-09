@@ -80,7 +80,7 @@ Så här skapar du en kub:
 
 ### Definiera dimensioner {#define-dimensions}
 
-När kuben har skapats definierar du dess mått. Dimensioner är de analysaxlar som definieras för varje kub baserat på deras relaterade faktaschema. Detta är de dimensioner som undersöks i analysen, t.ex. tid (år, månad, datum), en produktklassificering (familj, referens osv.), ett populationssegment (per ort, åldersgrupp, status osv.).
+När kuben har skapats definierar du dess mått. Dimensioner är analysaxlarna som definieras för varje kub baserat på deras relaterade faktaschema. Detta är de dimensioner som undersöks i analysen, t.ex. tid (år, månad, datum), en produktklassificering (familj, referens osv.), ett populationssegment (per ort, åldersgrupp, status osv.).
 
 Följ stegen nedan för att skapa dimensioner:
 

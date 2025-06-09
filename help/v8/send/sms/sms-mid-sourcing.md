@@ -5,13 +5,13 @@ feature: SMS
 role: User
 level: Beginner, Intermediate
 badge: label="Begränsad tillgänglighet" type="Informative"
-source-git-commit: 36bb1e2c9e2391065360c3cd2ad97612373ec0c2
+exl-id: b5eb9eaa-0ca8-478c-9ed5-e5006e9b5609
+source-git-commit: 30babc4bec802f61d3bd28a7ebcf0c15e22b2284
 workflow-type: tm+mt
 source-wordcount: '582'
 ht-degree: 0%
 
 ---
-
 
 # SMS i en infrastruktur med flera leverantörer {#sms-mid}
 
@@ -19,7 +19,7 @@ ht-degree: 0%
 >
 >Den här dokumentationen gäller Adobe Campaign v8.7.2 och senare.
 >
->Om du har äldre versioner kan du läsa [Campaign Classic v7-dokumentationen](https://experienceleague.adobe.com/sv/docs/campaign-classic/using/sending-messages/sending-messages-on-mobiles/sms-set-up/sms-set-up).
+>Om du har äldre versioner kan du läsa [Campaign Classic v7-dokumentationen](https://experienceleague.adobe.com/en/docs/campaign-classic/using/sending-messages/sending-messages-on-mobiles/sms-set-up/sms-set-up).
 
 För att skicka SMS-leveranser med en infrastruktur för medelhög källkod krävs:
 

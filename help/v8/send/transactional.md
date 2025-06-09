@@ -18,7 +18,7 @@ Transactional Messaging (Message Center) är en Campaign-modul som är utformad 
 
 >[!NOTE]
 >
->Som användare av hanterade Cloud Service [kontaktar du Adobe](../start/campaign-faq.md#support){target="_blank"} för att konfigurera kampanjtransaktionsmeddelanden i din miljö.
+>Som hanterad molntjänstanvändare [kontaktar du Adobe](../start/campaign-faq.md#support){target="_blank"} för att konfigurera Campaign Transactional Messaging i din miljö.
 
 Transaktionsmeddelanden används för att skicka:
 
@@ -43,9 +43,9 @@ De viktigaste stegen för att införa detta är följande:
 1. [Skapa en händelsetyp](#create-event-types).
 1. [Skapa och utforma meddelandemallen](transactional-template.md#create-message-template). Du måste länka en händelse till ditt meddelande under det här steget.
 1. [Testa meddelandet](transactional-template.md#test-message-template).
-1. [Publish meddelandemallen](transactional-template.md#publish-message-template).
+1. [Publicera meddelandemallen](transactional-template.md#publish-message-template).
 
-När du har utformat och publicerat transaktionsmeddelandemallen skickas relevanta data till Campaign via metoderna PushEvent och PushEvents [SOAP ](../send/event-description.md) om en motsvarande händelse aktiveras, och leveransen skickas till målmottagarna.
+När du utformat och publicerat transaktionsmeddelandemallen skickas relevanta data till Campaign via metoderna [SOAP ](../send/event-description.md) för PushEvent och PushEvents  om en motsvarande händelse aktiveras. Leveransen skickas sedan till målmottagarna.
 
 ## Skapa händelsetyper {#create-event-types}
 

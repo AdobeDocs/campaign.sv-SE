@@ -23,7 +23,7 @@ I det här avsnittet beskrivs de bästa sätten att hantera modulen **Interaktio
 * När **implementerar och konfigurerar interaktioner** måste du vara medveten om följande rekommendationer:
 
    * För batchmotor (som vanligtvis används i utgående kommunikation som e-post) är dataflöde huvudproblemet, eftersom flera kontakter kan hanteras samtidigt. Den typiska flaskhalsen är databasprestanda.
-   * Den huvudsakliga begränsningen för en enastående motor (används vanligtvis i inkommande kommunikation som en banderoll på en webbplats) är fördröjning, eftersom någon förväntar sig ett svar. Den typiska flaskhalsen är processorprestanda.
+   * Den huvudsakliga begränsningen för en enastående motor (används vanligtvis i inkommande kommunikation som en banderoll på en webbplats) är fördröjning, eftersom någon förväntar sig ett svar. Den typiska flaskhalsen är CPU prestanda.
    * Katalogdesignen har stor inverkan på Adobe Campaign prestanda.
    * När du arbetar med många erbjudanden är det bäst att dela upp dem i flera olika erbjudandekataloger.
 
@@ -61,21 +61,21 @@ I exemplet nedan är det erbjudandeutrymme som valts i leveransen **[!UICONTROL 
 
 ![](assets/Interaction-best-practices-offer-space-selected.png)
 
-Om det lediga utrymme som du har valt i leveransen inte har någon HTML-återgivningsfunktion kommer du inte att se det på leveransmenyn och det kommer inte att gå att välja det. Detta är oberoende av vilket erbjudandeutrymme som valts i aktiviteten **Enrichment** .
+Om det lediga utrymme du väljer i leveransen inte har någon HTML-återgivningsfunktion inställd visas det inte på leveransmenyn och kan inte väljas. Detta är oberoende av vilket erbjudandeutrymme som valts i aktiviteten **Enrichment** .
 
-I exemplet nedan är återgivningsfunktionen HTML tillgänglig i listrutan eftersom det erbjudandeutrymme som valts i leveransen har en återgivningsfunktion:
+I exemplet nedan är HTML-återgivningsfunktionen tillgänglig i listrutan eftersom det erbjudandeutrymme som valts i leveransen har en återgivningsfunktion:
 
 ![](assets/Interaction-best-practices-HTML-rendering.png)
 
 Den här funktionen infogar kod som: `<%@ include proposition="targetData.proposition" view="rendering/html" %>`.
 
 När du väljer förslaget blir värdet för attributet **[!UICONTROL view]** följande:
-* &quot;rendering/html&quot;: html-rendering. Det använder återgivningsfunktionen HTML.
-* &quot;offer/view/html&quot;: html-innehåll. Återgivningsfunktionen HTML används inte. Det innehåller bara fältet HTML.
+* &quot;rendering/html&quot;: html-rendering. Den använder HTML-återgivningsfunktionen.
+* &quot;offer/view/html&quot;: html-innehåll. Den använder inte HTML-återgivningsfunktionen. Det innehåller bara fältet HTML.
 
 När du inkluderar flera erbjudandeplatser i en och samma e-postleverans och om vissa av dem har återgivningsfunktioner och andra inte har det, måste du komma ihåg vilka erbjudanden som innehåller blanksteg och vilka som erbjuder återgivningsfunktioner.
 
-För att undvika eventuella problem rekommenderar vi att alla erbjudandeutrymmen har en HTML-återgivningsfunktion definierad, även om ditt erbjudandeutrymme endast kräver HTML.
+För att undvika eventuella problem rekommenderar vi att alla erbjudandeutrymmen har en HTML-återgivningsfunktion definierad, även om ditt erbjudandeutrymme endast kräver HTML-innehåll.
 
 ### Ange rangordningen i förslagsloggtabellen {#rank-proposition-log-table}
 

@@ -28,7 +28,7 @@ För att kunna presentera ett erbjudande måste vi skapa en miljö och ett erbju
 
 I följande exempel beskrivs de möjliga alternativen för att integrera erbjudanden via JavaScript.
 
-## Alternativ 1: HTML-läge {#html-mode}
+## Alternativ 1: HTML {#html-mode}
 
 ### Presentera ett anonymt erbjudande {#presenting-an-anonymous-offer}
 
@@ -40,7 +40,7 @@ I följande exempel beskrivs de möjliga alternativen för att integrera erbjuda
 
 **Steg 2: Uppdatera HTML-sidans innehåll**
 
-Sidan HTML måste innehålla ett element med ett @id-attribut med värdet för det interna namnet på erbjudandeutrymmet (&quot;i_internal name space&quot;). Erbjudandet kommer att infogas i detta element av Interaction.
+HTML-sidan måste innehålla ett element med ett @id-attribut med värdet för det interna namnet på erbjudandeutrymmet (&quot;i_internal name space&quot;). Erbjudandet kommer att infogas i detta element av Interaction.
 
 I vårt exempel får attributet @id värdet &quot;i_SPC12&quot;, där &quot;SPC12&quot; är det interna namnet på det erbjudandeutrymme som skapats tidigare:
 
@@ -118,7 +118,7 @@ I innehållet på webbsidan måste du lägga till följande skript som identifie
 
 ### Använda en HTML-återgivningsfunktion {#using-an-html-rendering-function}
 
-Du kan använda en återgivningsfunktion om du vill generera representationen av HTML automatiskt.
+Du kan använda en återgivningsfunktion om du vill generera HTML-erbjudanderepresentationen automatiskt.
 
 1. Gå till erbjudandeutrymmet och klicka på länken **[!UICONTROL Edit functions]**.
 1. Välj **[!UICONTROL Overload the HTML rendering function]**.
@@ -312,9 +312,9 @@ Det går att använda en XML-återgivningsfunktion för att skapa en erbjudandep
 
 ![](assets/interaction_xmlmode_001.png)
 
-## Konfigurera en SOAP
+## Konfigurera en SOAP-integrering
 
-De SOAP webbtjänsterna som tillhandahålls för hantering av erbjudanden skiljer sig från de som vanligtvis används i Adobe Campaign. De kan nås via den interaktions-URL som beskrivs i föregående avsnitt och du kan presentera eller uppdatera erbjudanden för en viss kontakt.
+SOAP webbtjänster för hantering av erbjudanden skiljer sig från dem som vanligtvis används i Adobe Campaign. De kan nås via den interaktions-URL som beskrivs i föregående avsnitt och du kan presentera eller uppdatera erbjudanden för en viss kontakt.
 
 ### Erbjudandeförslag {#offer-proposition}
 
@@ -333,10 +333,10 @@ Lägg till kommandot **nms:proposition#Propose** följt av följande parametrar 
 >
 >Inställningarna **targetId** och **maxCount** är obligatoriska. De andra är valfria.
 
-Som svar på frågan returnerar SOAP följande parametrar:
+Som svar på frågan returnerar SOAP-tjänsten följande parametrar:
 
 * **interactionId**: ID för interaktionen.
-* **propositioner**: XML-elementet innehåller en lista med förslag, där vart och ett har ett eget ID och HTML.
+* **propositioner**: XML-elementet innehåller en lista med förslag, där vart och ett har ett eget ID och en HTML-representation.
 
 ### Erbjudandeuppdatering {#offer-update}
 
@@ -346,9 +346,9 @@ Lägg till kommandot **nms:interaction#UpdateStatus** i URL:en, följt av följa
 * **status**: strängtyp, den anger erbjudandets nya status. Möjliga värden visas i uppräkningen **propositionStatus** i schemat **nms:common**. Till exempel motsvarar talet 3 statusen **Accepterad**.
 * **context**: Med XML-element kan du lägga till kontextinformation i utrymmesschemat. Om schemat som används är **nms:interaction** bör **`<empty>`** läggas till.
 
-### Exempel på hur du använder ett SOAP {#example-using-a-soap-call}
+### Exempel på hur du använder ett SOAP-samtal {#example-using-a-soap-call}
 
-Här är ett exempel på kod för ett SOAP anrop:
+Här är ett exempel på kod för ett SOAP-samtal:
 
 ```
 <%

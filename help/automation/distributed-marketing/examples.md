@@ -94,7 +94,7 @@ Stegen är följande:
 
 1. Skapa en **[!UICONTROL Data distribution]**-aktivitet.
 1. Skapa en samarbetskampanj.
-1. Publish kampanjen.
+1. Publicera kampanjen.
 
 ### Lokal entitetssida {#local-entity-side}
 
@@ -155,7 +155,7 @@ När kontrollerna har godkänts kan kampanjen starta automatiskt.
 
 1. Spara ditt material.
 
-#### Publish kampanjen {#publishing-the-campaign}
+#### Publicera kampanjen {#publishing-the-campaign}
 
 Du kan nu lägga till ett **kampanjpaket** från fliken **[!UICONTROL Campaigns]**.
 

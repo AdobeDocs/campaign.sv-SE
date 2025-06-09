@@ -16,7 +16,7 @@ ht-degree: 9%
 
 Kampanjinfrastrukturen bygger på tredjepartssystem som regelbundet måste uppdateras med de senaste versionerna och korrigeringarna. Dessa uppdateringar är obligatoriska för att säkerställa kontinuitet i tjänsten och säkra kampanjmiljöer från säkerhetsrisker. Dessutom krävs en Campaign-uppgradering för att säkerställa kompatibilitet med systemändringar från tredje part.
 
-Som **kund hos hanterade Cloud Service** informerar Adobe dig om dessa uppgraderingar när de behövs. Miljöerna måste uppgraderas i enlighet med rekommendationerna för att säkerställa regelefterlevnad.
+Som **kund inom hanterade molntjänster** informerar Adobe dig om dessa uppgraderingar när de behövs. Miljöerna måste uppgraderas i enlighet med rekommendationerna för att säkerställa regelefterlevnad.
 
 Av säkerhetsskäl måste Adobe [installera den senaste Campaign-versionen](#ac-upgrade) och sedan uppgradera ditt [operativsystem](#os-upgrade) och/eller ditt [Relation Database Management System (RDBMS)](#pg-upgrade).
 
@@ -29,11 +29,11 @@ Av säkerhetsskäl måste Adobe [installera den senaste Campaign-versionen](#ac-
 
 **Påverkas du?**
 
-Om du påverkas av [operativsystemsuppgraderingen](#os-upgrade) och/eller [databassystemsuppgraderingen](#pg-upgrade) som anges nedan måste Adobe uppgradera dina Campaign-miljöer till [den senaste 8.4.3-versionen](../../v8/start/release-notes.md), som är kompatibel med dessa system.
+Om du påverkas av [operativsystemsuppgraderingen](#os-upgrade) och/eller [databassystemuppgraderingen](#pg-upgrade) som anges nedan, måste Adobe uppgradera dina Campaign-miljöer till [den senaste 8.4.3-versionen](../../v8/start/release-notes.md), som är kompatibel med dessa system.
 
 **Hur uppdaterar jag?**
 
-Som kund med hanterade Cloud Service kommer Adobe att kontakta dig och uppgradera din Campaign-version.
+Som Managed Cloud Services-kund kontaktar Adobe dig och uppgraderar din Campaign-version.
 
 ## Uppgradering av operativsystem {#os-upgrade}
 
@@ -43,14 +43,14 @@ Om du kör Campaign på ett Debian-operativsystem måste Adobe flytta din Campai
 
 **Hur uppdaterar jag?**
 
-Som kund hos Managed Cloud Services kommer Adobe att kontakta dig och uppgradera din miljö.
+Som Managed Cloud Services-kund kontaktar Adobe dig och uppgraderar din miljö.
 
 ## Uppgradering av databassystem {#pg-upgrade}
 
 **Påverkas du?**
 
-Om ditt databassystem för Campaign är PostgreSQL, och du vill använda de senaste PostgreSQL-innovationerna och säkerhetsuppdateringarna, måste Adobe uppgradera till **PostgreSQL 14**. Observera att PostgreSQL 11 når slutet av livscykeln den 9 november 2023.
+Om ditt databassystem för Campaign är PostgreSQL, och du vill kunna dra nytta av de senaste PostgreSQL-innovationerna och säkerhetsuppdateringarna, måste Adobe uppgradera till **PostgreSQL 14**. Observera att PostgreSQL 11 når slutet av livscykeln den 9 november 2023.
 
 **Hur uppdaterar jag?**
 
-Som kund med hanterade Cloud Service kommer Adobe att kontakta dig och uppgradera ditt databassystem från PostgreSQL 11 till PostgreSQL 14.
+Som kund av Managed Cloud Services kommer Adobe att kontakta dig och uppgradera ditt databassystem från PostgreSQL 11 till PostgreSQL 14.

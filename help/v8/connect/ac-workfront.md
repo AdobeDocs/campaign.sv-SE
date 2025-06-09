@@ -19,4 +19,4 @@ Snabba upp kampanjleveransen genom att para ihop Campaign med Adobe Workfront. G
 Hur du konfigurerar den här integreringen beskrivs i Adobe Workfront-dokumentationen.
 
 
-[Adobe Campaign-moduler i Adobe Workfront](https://experienceleague.adobe.com/docs/workfront/using/adobe-workfront-fusion/fusion-apps-and-modules/adobe-campaign-classic-connector.html?lang=sv-SE){target="_blank"}.
+[Adobe Campaign-moduler i Adobe Workfront](https://experienceleague.adobe.com/docs/workfront/using/adobe-workfront-fusion/fusion-apps-and-modules/adobe-campaign-classic-connector.html){target="_blank"}.

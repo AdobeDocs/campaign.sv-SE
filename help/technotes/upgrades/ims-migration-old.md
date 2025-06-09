@@ -13,7 +13,7 @@ ht-degree: 0%
 
 # Migrering av tekniska aktörer från Campaign till Adobe Developer Console {#migrate-tech-users-to-ims}
 
-Från och med Campaign v8.5 förbättras autentiseringsprocessen till Campaign v8. Tekniska operatörer måste använda [Adobe Identity Management System (IMS)](https://helpx.adobe.com/se/enterprise/using/identity.html){target="_blank"} för att ansluta till Campaign. En teknisk operator är en Campaign-användarprofil som uttryckligen har skapats för API-integrering. I den här artikeln beskrivs stegen som krävs för att migrera en teknisk operatör till ett tekniskt konto på Adobe Developer-konsolen.
+Från och med Campaign v8.5 förbättras autentiseringsprocessen till Campaign v8. Tekniska operatörer måste använda [Adobe Identity Management System (IMS)](https://helpx.adobe.com/enterprise/using/identity.html){target="_blank"} för att ansluta till Campaign. En teknisk operator är en Campaign-användarprofil som uttryckligen har skapats för API-integrering. I den här artikeln beskrivs stegen som krävs för att migrera en teknisk operatör till ett tekniskt konto på Adobe Developer-konsolen.
 
 ## Vad har ändrats?{#ims-changes}
 

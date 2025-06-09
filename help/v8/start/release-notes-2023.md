@@ -60,7 +60,7 @@ Mer information finns i den [detaljerade dokumentationen](../send/push-data-coll
 <ul>
 <li>SMS-genomströmning: upp till <strong>5x</strong> snabbare</li>
 </ul>
-<p><em>Dessa maximala genomströmningsprestanda har mätts av testgrupper i Adobe under labbförhållanden.</em></p>
+<p><em>Detta maximala dataflöde har mätts av Adobe testteam under labbförhållanden.</em></p>
 </div>
 <p></p>
 </td>
@@ -82,7 +82,7 @@ Mer information finns i den [detaljerade dokumentationen](../send/push-data-coll
 **Kompatibilitetsuppdateringar**
 
 * 32-bitarsversionen av klientkonsolen är nu inaktuell. Från och med 8.6 är klientkonsolen endast tillgänglig med 64 bitar. Uppgraderingen till 64-bitarsversionen av klientkonsolen är smidig. Mer information om hur du uppgraderar ditt operativsystem finns i denna [technote](../../technotes/upgrades/console.md).
-* Nu kan du ansluta Campaign v8-instansen till din externa Azure synapse-databas. Anslutningen hanteras via ett nytt externt konto. Läs mer i [Kompatibilitetsmatrisen för kampanj](../start/compatibility-matrix.md#federated-data-access-fdafederateddataaccessfda).
+* Nu kan du ansluta Campaign v8-instansen till din externa Azure Synapse-databas. Anslutningen hanteras via ett nytt externt konto. Läs mer i [Kompatibilitetsmatrisen för kampanj](../start/compatibility-matrix.md#federated-data-access-fdafederateddataaccessfda).
 
 
 **Korrigeringar**
@@ -110,7 +110,7 @@ _3 april 2023_
 **Korrigeringar**
 
 * Korrigerade ett problem som kunde leda till ett duplicerat nyckelbegränsningsfel om flera godkännandearbetsflöden hade angetts till samma schema. (NEO-48968)
-* Korrigerade ett regressionsfel som introducerades av NEO-54474 (8.4.4) som ledde till att formategenskapen för body-taggen ändrades när en bild överfördes till Digital Content Editor (DCE). (NEO-57697)
+* Ett regressionsproblem som introducerades av NEO-54474 (8.4.4) som ledde till att formategenskapen för body-taggen ändrades när en bild överfördes till Digital Content Editor (DCE) har åtgärdats. (NEO-57697)
 * Korrigerade ett problem som kunde leda till ett fel när data exporterades med en CRM-koppling om den temporära tabellen hade en primärnyckel definierad som lång i stället för uuid. (NEO-54153)
 * Korrigerade ett regressionsproblem som introducerades i 8.4.1 som kunde leda till fel vid paketexport, FDA över HTTP och rapportering. (NEO-57731)
 * Ett regressionsproblem som introducerades i 8.3.8 som kunde förhindra att leveransstatusen uppdateras korrekt för leveranser med negativa ID:n har åtgärdats. (NEO-54675)
@@ -155,7 +155,7 @@ _27 januari 2023_
 <!-- * Fixed an issue which could lead to a "Character set mismatch" error when using certain functions such as `to_nclob` with an Oracle unicode database where NChar was not enabled. (NEO-49361)
 * Fixed an issue which prevented users from inserting a Time datatype in a **Data Update** workflow activity on MSSQL. (NEO-47763)-->
 * Ett problem som gjorde att användare inte kunde använda arbetsflödesalternativet **Sammanfoga markerade rader** har korrigerats. (NEO-48488)
-* Korrigerade ett fel på Snowflake FDA-anslutningen som ledde till att poster utelämnades när alternativet &quot;0 eller 1 enkel kardinalitetsanslutning&quot; användes under anrikningen. (NEO-48737)
+* Korrigerade ett problem med Snowflake FDA-anslutningen som ledde till att poster utelämnades när alternativet &quot;0 eller 1 enkel kardinalitetsanslutning&quot; användes under anrikningen. (NEO-48737)
 * Återstående referenser till log4j-biblioteket har tagits bort från Campaign-installationen i Windows. (NEO-44851)
 * Korrigerade ett problem som kan leda till ett fel när indikatorn **Mottagare som har öppnat** (estimatedRecipientOpen) lades till i ytterligare data för arbetsflödesaktiviteten **Fråga**. (NEO-46665)
 * Hanteringen av spårnings-URL:er har förbättrats i arbetsflöden med flera leveranser för att förbättra prestandan. (NEO-50894) <!--OKKKK-->

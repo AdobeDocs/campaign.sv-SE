@@ -5,13 +5,13 @@ feature: SMS
 role: User
 level: Beginner, Intermediate
 badge: label="Begränsad tillgänglighet" type="Informative"
-source-git-commit: 36bb1e2c9e2391065360c3cd2ad97612373ec0c2
+exl-id: 704e151a-b863-46d0-b8a1-fca86abd88b9
+source-git-commit: 30babc4bec802f61d3bd28a7ebcf0c15e22b2284
 workflow-type: tm+mt
 source-wordcount: '1326'
 ht-degree: 1%
 
 ---
-
 
 # SMPP-anslutningsbeskrivning {#smpp-connector-desc}
 
@@ -19,7 +19,7 @@ ht-degree: 1%
 >
 >Detta gäller Adobe Campaign v8.7.2 och senare.
 >
->För äldre versioner, se [Campaign Classic v7-dokumentationen](https://experienceleague.adobe.com/sv/docs/campaign-classic/using/sending-messages/sending-messages-on-mobiles/sms-set-up/sms-set-up){target="_blank"}.
+>För äldre versioner, se [Campaign Classic v7-dokumentationen](https://experienceleague.adobe.com/en/docs/campaign-classic/using/sending-messages/sending-messages-on-mobiles/sms-set-up/sms-set-up){target="_blank"}.
 
 ## SMS-anslutningsdataflöde {#sms-data-flow}
 

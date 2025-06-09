@@ -1,6 +1,6 @@
 ---
-title: Posta meddelanden på X (Twitter) med Adobe Campaign
-description: Lär dig hur du använder Adobe Campaign Social Marketing Module för att skicka meddelanden på X (tidigare Twitter) och skicka direktmeddelanden till dina följare
+title: Skicka meddelanden på X (Twitter) med Adobe Campaign
+description: Lär dig hur du använder Adobe Campaign Social Marketing-modulen för att publicera meddelanden på X (tidigare Twitter) och skicka direktmeddelanden till dina följare
 role: User
 level: Beginner, Intermediate
 exl-id: 0783e289-ae8e-4bb7-80f1-f90937a528c1
@@ -12,7 +12,7 @@ ht-degree: 2%
 ---
 
 
-# Posta meddelanden på X (Twitter) med Adobe Campaign {#post-tw-messages}
+# Skicka meddelanden på X (Twitter) med Adobe Campaign {#post-tw-messages}
 
 Adobe Campaign har en modul för **social marknadsföring** som gör att du kan interagera med kunder och potentiella kunder via X (tidigare Twitter).
 
@@ -67,7 +67,7 @@ Följ stegen nedan för att publicera ett meddelande på ditt X-konto:
    >Vid bokföring på X gäller begränsningarna:
    >
    >* Meddelandet får inte innehålla fler än 140 tecken.
-   >* Formatet HTML stöds inte.
+   >* HTML-format stöds inte.
    >
 
 1. Förhandsgranska ditt inlägg
@@ -149,7 +149,7 @@ Följ stegen nedan för att skicka direktmeddelanden till dina följare:
 
 >[!CAUTION]
 >
->Du kan inte skicka mer än 250 direktmeddelanden per dag. För att undvika att detta tröskelvärde överskrids kan du leverera i vågor. Mer information finns i [Campaign Classic v7-dokumentationen](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/key-steps-when-creating-a-delivery/steps-sending-the-delivery.html?lang=sv-SE#sending-using-multiple-waves){target="_blank"}.
+>Du kan inte skicka mer än 250 direktmeddelanden per dag. För att undvika att detta tröskelvärde överskrids kan du leverera i vågor. Mer information finns i [Campaign Classic v7-dokumentationen](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/key-steps-when-creating-a-delivery/steps-sending-the-delivery.html#sending-using-multiple-waves){target="_blank"}.
 
 
 ## Åtkomstspårningsdata {#tw-tracking}
@@ -158,5 +158,5 @@ Spårning är aktiverat som standard i den inbyggda leveransmallen **[!UICONTROL
 
 Spårningsdata kan visas i leveransrapporterna och på fliken **[!UICONTROL Edit > Tracking]** för leveransen och tjänsten.
 
-Spårningskonfigurationen är densamma som för en e-postleverans. Läs mer i [Campaign Classic v7-dokumentationen](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/monitoring-deliveries/about-delivery-monitoring.html?lang=sv-SE){target="_blank"}.
+Spårningskonfigurationen är densamma som för en e-postleverans. Läs mer i [Campaign Classic v7-dokumentationen](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/monitoring-deliveries/about-delivery-monitoring.html){target="_blank"}.
 

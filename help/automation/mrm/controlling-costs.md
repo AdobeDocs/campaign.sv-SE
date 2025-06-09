@@ -166,7 +166,7 @@ Kostnaderna delas in i tre kategorier:
 
 1. Beräknad kostnad
 
-   Den beräknade kostnaden beror på det berörda elementet (kampanj, leverans, uppgift osv.) och dess status (redigeras, pågår, är klar). Om den faktiska kostnaden anges kommer den beräknade kostnaden att använda detta belopp.
+   Den beräknade kostnaden beror på det aktuella elementet (kampanj, leverans, uppgift osv.) och dess status (redigeras, pågår, är färdig). Om den faktiska kostnaden anges kommer den beräknade kostnaden att använda detta belopp.
 
    Om den faktiska kostnaden inte anges gäller följande regler:
 

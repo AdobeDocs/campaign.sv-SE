@@ -26,7 +26,7 @@ Campaign v8 Enterprise (FFDA) ger en heltäckande skala i alla steg av processen
 
 Detta är en grundläggande förändring i programvaruarkitekturen. Data är nu fjärrdata och Campaign federerar hela data, inklusive profiler. [!DNL Campaign] processer skalas nu från mål till mål till meddelandekörning: datainhämtning, segmentering, målinriktning, frågor, leveranser kommer nu att köras på några minuter. Den nya versionen löser hela skalförändringsproblemet samtidigt som den behåller samma nivå av flexibilitet och utbyggbarhet. Antalet profiler är nästan obegränsat och datalagringen kan utökas.
 
-Molnlagring utförs i **[!DNL Snowflake]**: ett nytt inbyggt **externt konto** säkerställer anslutningen till molndatabasen. Den är konfigurerad av Adobe och får inte ändras. [Läs mer](../config/external-accounts.md)
+Molnlagring utförs i **[!DNL Snowflake]**: ett nytt inbyggt **externt konto** säkerställer anslutningen till molndatabasen. Den har konfigurerats av Adobe och får inte ändras. [Läs mer](../config/external-accounts.md)
 
 Alla inbyggda scheman/tabeller som behöver flyttas eller replikeras i Cloud Database levereras med ett inbyggt schematillägg under namnområdet **xxl**. Dessa tillägg innehåller eventuella ändringar som krävs för att flytta inbyggda scheman från den lokala databasen [!DNL Campaign] till molndatabasen [!DNL Snowflake] och för att anpassa deras struktur efter detta: nytt UUID, uppdaterade länkar osv.
 
@@ -48,7 +48,7 @@ Allmän kommunikation mellan servrar och processer sker enligt följande schema:
 ![](assets/architecture.png)
 
 * Modulerna för exekvering och studshantering är inaktiverade på instansen.
-* Programmet är konfigurerat för att utföra meddelandekörning på en fjärrserver med &quot;mellanlagring&quot; som körs med SOAP (via HTTP eller HTTPS).
+* Programmet är konfigurerat för att utföra meddelandekörning på en fjärrserver med &quot;mellanlagring&quot; som drivs med SOAP-anrop (via HTTP eller HTTPS).
 
 Databasen [!DNL Snowflake] på marknadsföringssidan används för att:
 
@@ -66,7 +66,7 @@ PostgreSQL-databasen på marknadsinstansen används för att:
 * Lagra alla inbyggda referenstabeller (uppräkningar, länder osv.) som replikeras till [!DNL Snowflake].
 
   Du kan dock inte:
-   * skapa anpassningar för kunddata, t.ex. inte skapa någon hushållstabell i PostgreSQL, utan bara i Snowflake
+   * skapa anpassningar för kunddata, t.ex. inte skapa någon hushållstabell i PostgreSQL, utan endast i Snowflake
    * lagra leveransloggar, spårningsloggar osv. på FFDA:s målinriktningsdimension.
    * lagra stora datavolymer.
 
@@ -98,7 +98,7 @@ Ett specifikt tekniskt arbetsflöde hanterar replikering av tabeller som måste 
 >[!NOTE]
 >
 > Flera replikeringsprinciper har skapats, baserat på tabellens storlek (XS, XL osv.).
-> Vissa tabeller replikeras i realtid, andra replikeras per timme. Vissa tabeller kommer att innehålla stegvisa uppdateringar, andra kommer att genomgå en fullständig uppdatering.
+> > Vissa tabeller replikeras i realtid, andra replikeras per timme. Vissa tabeller kommer att innehålla stegvisa uppdateringar, andra kommer att genomgå en fullständig uppdatering.
 >
 
 [Läs mer om datareplikering](replication.md)
@@ -111,7 +111,7 @@ Observera att detta ID är strängbaserat och inte sekventiellt. Primärnyckeln 
 
 I Campaign Classic v7 och tidigare versioner hanteras uniciteten för en nyckel i ett schema (dvs. tabell) på databasmotornivå. Vanligtvis innehåller klassiska databasmotorer som PostgreSQL, Oracle eller SQL Server en inbyggd mekanism som förhindrar att duplicerade rader infogas baserat på en kolumn eller en uppsättning kolumner via primärnycklar och/eller unika index. Det finns inget duplicerat ID i dessa versioner när korrekt index och primärnycklar har angetts på databasnivå.
 
-Adobe Campaign v8 levereras med Snowflake som kärndatabas. Eftersom sökningen dramatiskt ökar antalet frågor, har den distribuerade arkitekturen i Snowflake-databasen inte sådana mekanismer för att hantera och sedan genomdriva enkelheten hos en nyckel i en tabell. I Adobe Campaign v8 förhindrar därför ingenting att duplicerade nycklar används i en tabell. Slutanvändare ansvarar nu för att säkerställa att nyckelord är konsekventa i Adobe Campaign-databasen. [Läs mer](keys.md)
+Adobe Campaign v8 levereras med Snowflake som kärndatabas. Eftersom Snowflake-databasens distribuerade arkitektur dramatiskt ökar antalet frågor, finns det inga sådana mekanismer för att hantera och sedan genomdriva enkelheten hos en nyckel i en tabell. I Adobe Campaign v8 förhindrar därför ingenting att duplicerade nycklar används i en tabell. Slutanvändare ansvarar nu för att säkerställa att nyckelord är konsekventa i Adobe Campaign-databasen. [Läs mer](keys.md)
 
 ### Tillgänglighet {#feature-availability}
 

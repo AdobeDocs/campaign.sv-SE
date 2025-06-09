@@ -42,7 +42,7 @@ Två typer eller fel kan fångas:
 I listan över adresser i karantän anger fältet **[!UICONTROL Error reason]** varför den valda adressen placerades i karantän. [Läs mer](#identifying-quarantined-addresses-for-the-entire-platform).
 
 
-Om en användare kvalificerar ett e-postmeddelande som skräppost omdirigeras meddelandet automatiskt till en teknisk postlåda som hanteras av Adobe. Användarens e-postadress skickas sedan automatiskt till karantänen med status **[!UICONTROL Denylisted]**.    Den här statusen avser endast adressen, profilen finns inte på blockeringslista, så att användaren fortsätter att ta emot SMS-meddelanden och push-meddelanden. Läs mer om feedbackslingor i [Handboken ](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/transition-process/infrastructure.html?lang=sv-SE#feedback-loops){target="_blank"} om bästa leveransmetoder.
+Om en användare kvalificerar ett e-postmeddelande som skräppost omdirigeras meddelandet automatiskt till en teknisk postlåda som hanteras av Adobe. Användarens e-postadress skickas sedan automatiskt till karantänen med status **[!UICONTROL Denylisted]**.    Den här statusen avser endast adressen, profilen finns inte på blockeringslista, så att användaren fortsätter att ta emot SMS-meddelanden och push-meddelanden. Läs mer om feedbackslingor i [Handboken ](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/transition-process/infrastructure.html#feedback-loops){target="_blank"} om bästa leveransmetoder.
 
 >[!NOTE]
 >
@@ -73,11 +73,11 @@ Om du vill visa listan över adresser i karantän **för hela plattformen** kan 
 >
 >Slut på år 1: (1&#42;0.33)/(1+0.5)=22 %.
 >
->Slut på år 2: ((1.22&#42;0.33)+0.33)/(1.5+0.75)=32,5 %.
+Slut på år 2: ((1.22&#42;0.33)+0.33)/(1.5+0.75)=32,5 %.
 
 Dessutom visar den inbyggda rapporten **[!UICONTROL Non-deliverables and bounces]**, som är tillgänglig från avsnittet **Reports** på den här startsidan, information om adresserna i karantän, de typer av fel som påträffats och en felfördelning per domän. Du kan filtrera data för en viss leverans eller anpassa rapporten efter behov.
 
-Läs mer om studsadresser i [Bästa praxis-handboken för slutprodukter](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/metrics-for-deliverability/bounces.html?lang=sv-SE){target="_blank"}.
+Läs mer om studsadresser i [Bästa praxis-handboken för slutprodukter](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/metrics-for-deliverability/bounces.html){target="_blank"}.
 
 ### E-postadress i karantän {#quarantined-recipient}
 
@@ -104,7 +104,7 @@ Deras status ändras sedan till **[!UICONTROL Valid]**.
 
 >[!CAUTION]
 >
->Mottagare med en adress i en **[!UICONTROL Quarantine]**- eller **[!UICONTROL Denylisted]**-status tas aldrig bort, även om de får ett e-postmeddelande.
+Mottagare med en adress i en **[!UICONTROL Quarantine]**- eller **[!UICONTROL Denylisted]**-status tas aldrig bort, även om de får ett e-postmeddelande.
 
 Du kan också ta bort en adress manuellt från karantänlistan. Om du vill ta bort en adress från karantänen kan du:
 

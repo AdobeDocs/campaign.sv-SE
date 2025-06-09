@@ -5,7 +5,8 @@ description: Lär dig hur du konfigurerar, utformar och skickar e-postmeddelande
 feature: Email, Email Design
 role: User
 version: Campaign v8, Campaign Classic v7
-source-git-commit: a2efad26232cd380eea850a589b22b23928253e8
+exl-id: 02cca21f-b1ac-4ac2-9761-015f6c7f5567
+source-git-commit: 3d562aab2f19b84aad8b484768bf19648145feb3
 workflow-type: tm+mt
 source-wordcount: '726'
 ht-degree: 0%
@@ -24,7 +25,7 @@ För att mottagaren ska kunna ta emot meddelanden i något av dessa format rekom
 
 Om du låter alternativet **[!UICONTROL Email format]** vara **[!UICONTROL Unknown]**, **[!UICONTROL HTML]** eller **[!UICONTROL Text]** identifierar Adobe Campaign automatiskt (när du skickar e-postmeddelandet) vilket japanskt format som ska användas så att meddelandet visas korrekt.
 
-Det här automatiska identifieringssystemet baseras på listan med fördefinierade domäner som definierats i postregeluppsättningen **[!UICONTROL Management of Email Formats]**. Mer information om hur du hanterar e-postformat finns i [Campaign Classic-dokumentationen](https://experienceleague.adobe.com/docs/campaign-classic/using/installing-campaign-classic/additional-configurations/email-deliverability.html?lang=sv-SE#managing-email-formats).
+Det här automatiska identifieringssystemet baseras på listan med fördefinierade domäner som definierats i postregeluppsättningen **[!UICONTROL Management of Email Formats]**. Mer information om hur du hanterar e-postformat finns i [Campaign Classic-dokumentationen](https://experienceleague.adobe.com/docs/campaign-classic/using/installing-campaign-classic/additional-configurations/email-deliverability.html#managing-email-formats).
 
 ## Begränsningar och rekommendationer {#limitations-and-recommendations}
 

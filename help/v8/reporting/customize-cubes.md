@@ -106,7 +106,7 @@ Om du vill skapa en rapport med den här uppräkningen skapar du en kub med dime
 
 Skapa sedan en rapport baserad på den här kuben för att visa värdena.
 
-Du behöver bara ändra uppräkningen för att uppdatera den relaterade rapporten. Skapa till exempel värdet **Adobe** och lägg till aliaset **adobe.com** så uppdateras rapporten automatiskt med Adobe-värdet på uppräkningsnivån.
+Du behöver bara ändra uppräkningen för att uppdatera den relaterade rapporten. Skapa till exempel värdet **Adobe** och lägg till aliaset **adobe.com** så uppdateras rapporten automatiskt med Adobe-värdet på uppräkningsnivå.
 
 ![](assets/nmx_add_alias.png)
 

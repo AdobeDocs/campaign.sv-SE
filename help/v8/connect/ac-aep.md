@@ -14,7 +14,7 @@ ht-degree: 0%
 
 # Dela och synka målgrupper med Adobe Experience Platform {#gs-ac-aep}
 
-Adobe Campaign Managed Cloud Service Destination och Source-anslutningarna möjliggör smidig integrering mellan Adobe Campaign och Adobe Experience Platform. Med den här integreringen kan du
+Adobe Campaign hanterade Cloud Service Destination- och Source-anslutningar möjliggör smidig integrering mellan Adobe Campaign och Adobe Experience Platform. Med den här integreringen kan du
 
 * Skicka Adobe Experience Platform-målgrupper till Adobe Campaign och skicka tillbaka leverans- och spårningsloggar till Adobe Experience Platform för analysändamål,
 * Lägg in Adobe Experience Platform-profilattribut i Adobe Campaign och ha en synkroniseringsprocess så att de kan uppdateras regelbundet.
@@ -23,7 +23,7 @@ Adobe Campaign Managed Cloud Service Destination och Source-anslutningarna möjl
 
 De viktigaste stegen för att skicka Adobe Experience Platform-målgrupper till Adobe Campaign och skicka tillbaka leverans- och spårningsloggar är följande:
 
-* Använd en Adobe Campaign Managed Cloud Services **målanslutning** för att skicka Experience Platform-segment till Adobe Campaign:
+* Använd en **målanslutning** från Adobe Campaign Managed Cloud Services för att skicka Experience Platform-segment till Adobe Campaign:
 
    1. Öppna Adobe Experience Platform Destinations-katalogen och skapa en ny **[!UICONTROL Adobe Campaign Managed Cloud Services]**-anslutning.
    1. Ange information om Campaign-instansen som ska användas och välj **[!UICONTROL Audience sync]** som synkroniseringstyp.

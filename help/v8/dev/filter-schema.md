@@ -60,7 +60,7 @@ Dessa filter anges på huvudnivån **element** för scheman och kan, som visas i
 >
 >Om inget filter anges har alla operatorer läs- och skrivbehörighet till schemat.
 
-## Protect inbyggda scheman
+## Skydda inbyggda scheman
 
 Inbyggda scheman är som standard bara tillgängliga med SKRIV-behörighet för operatorer med ADMINISTRATIONbehörighet:
 
