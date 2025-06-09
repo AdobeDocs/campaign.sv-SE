@@ -22,7 +22,7 @@ Grundläggande steg är att skapa en transaktionsmeddelandemall i Campaign och s
 ![](assets/ajo-integration.png)
 
 
-[Upptäck den här integreringen i det här exempelmaterialet](https://experienceleague.adobe.com/en/docs/journey-optimizer/using/orchestrate-journeys/journey-use-cases/business-use-cases/ajo-ac){target="_blank"}.
+[Upptäck den här integreringen i det här exempelmaterialet](https://experienceleague.adobe.com/sv/docs/journey-optimizer/using/orchestrate-journeys/journey-use-cases/business-use-cases/ajo-ac){target="_blank"}.
 
 
-[Läs mer i Journey Optimizer-dokumentationen](https://experienceleague.adobe.com/en/docs/journey-optimizer/using/orchestrate-journeys/about-journey-building/using-adobe-campaign-v7-v8){target="_blank"}.
+[Läs mer i Journey Optimizer-dokumentationen](https://experienceleague.adobe.com/sv/docs/journey-optimizer/using/orchestrate-journeys/about-journey-building/using-adobe-campaign-v7-v8){target="_blank"}.

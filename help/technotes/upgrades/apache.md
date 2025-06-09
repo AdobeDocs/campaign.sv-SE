@@ -25,7 +25,7 @@ Adobe Campaign-teamet kommer att genomföra säkerhetsuppgraderingen av Apache-v
 
 Uppgraderingen förväntas att köras automatiskt utanför kontorstid så att du kan fortsätta använda Campaign-tjänsten utan avbrott.
 
-Din(a) instans(er) som inte är i produktion kommer att uppgraderas av våra team först innan vi uppgraderar dina produktionsinstanser. Eftersom detta är en automatisk uppgraderingsprocess som ägs av Adobe behöver du inte vidta några åtgärder. Om du får problem kontaktar du [Adobe kundtjänst](https://experienceleague.adobe.com/?support-solution=Campaign#support){target="_blank"}.
+Din(a) instans(er) som inte är i produktion kommer att uppgraderas av våra team först innan vi uppgraderar dina produktionsinstanser. Eftersom detta är en automatisk uppgraderingsprocess som ägs av Adobe behöver du inte vidta några åtgärder. Om du får problem kontaktar du [Adobe kundtjänst](https://experienceleague.adobe.com/sv?support-solution=Campaign#support){target="_blank"}.
 
 
 >[!NOTE]
@@ -53,7 +53,7 @@ Din(a) instans(er) som inte är i produktion kommer att uppgraderas av våra tea
 
 * **Vilka valideringar måste köras av kunderna?**
 
-  Ingen specifik testning krävs för denna säkerhetsuppgradering. Om något problem uppstår kan du kontakta [Adobe kundtjänst](https://experienceleague.adobe.com/?support-solution=Campaign#support){target="_blank"}.
+  Ingen specifik testning krävs för denna säkerhetsuppgradering. Om något problem uppstår kan du kontakta [Adobe kundtjänst](https://experienceleague.adobe.com/sv?support-solution=Campaign#support){target="_blank"}.
 
 
 * **Kan jag begära en ändring av datum/tid för den schemalagda säkerhetsuppgraderingsplatsen?**
@@ -61,4 +61,4 @@ Din(a) instans(er) som inte är i produktion kommer att uppgraderas av våra tea
   Eftersom det här är en säkerhetskorrigering rekommenderar vi att du anpassar dig till det befintliga schemat.
 
 
-Om du har andra frågor kan du kontakta [Adobe kundtjänst](https://experienceleague.adobe.com/?support-solution=Campaign#support){target="_blank"}.
+Om du har andra frågor kan du kontakta [Adobe kundtjänst](https://experienceleague.adobe.com/sv?support-solution=Campaign#support){target="_blank"}.

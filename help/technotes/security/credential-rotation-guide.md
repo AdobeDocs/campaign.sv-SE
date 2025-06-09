@@ -45,19 +45,19 @@ För de specifika tekniska operatorerna `mc*` (t.ex. mc1, mc2 osv.) och `Interac
 
 Om du vill rotera de mobila tjänsterna relaterade till privata nycklar och certifikat ska du läsa länkarna nedan.
 
-* Information om Android finns i [den här dokumentationen](https://experienceleague.adobe.com/en/docs/campaign-classic/using/sending-messages/sending-push-notifications/configure-the-mobile-app/configuring-the-mobile-application-android){target="_blank"}.
+* Information om Android finns i [den här dokumentationen](https://experienceleague.adobe.com/sv/docs/campaign-classic/using/sending-messages/sending-push-notifications/configure-the-mobile-app/configuring-the-mobile-application-android){target="_blank"}.
 Bläddra till avsnittet **Skapa Android mobilprogram > Konfigurera API-version**.
 
-* Information om iOS finns i [den här dokumentationen](https://experienceleague.adobe.com/en/docs/campaign-classic/using/sending-messages/sending-push-notifications/configure-the-mobile-app/configuring-the-mobile-application){target="_blank"}.
+* Information om iOS finns i [den här dokumentationen](https://experienceleague.adobe.com/sv/docs/campaign-classic/using/sending-messages/sending-push-notifications/configure-the-mobile-app/configuring-the-mobile-application){target="_blank"}.
 Bläddra till avsnittet **Skapa iOS-mobilapp->Autentiseringsläge**.
 
 ## GPG-nycklar {#ac-gpg-credentials}
 
 Följande steg måste följas för att GPG-tangenterna ska kunna roteras:
 
-1. Dekryptera befintliga data med den befintliga nyckeln. [Läs mer](https://experienceleague.adobe.com/en/docs/control-panel/using/instances-settings/gpg-keys-management#decrypting-data){target="_blank"}.
+1. Dekryptera befintliga data med den befintliga nyckeln. [Läs mer](https://experienceleague.adobe.com/sv/docs/control-panel/using/instances-settings/gpg-keys-management#decrypting-data){target="_blank"}.
 
-1. Skapa ett nytt GPG-nyckelpar. Läs mer om GPG-nyckelhantering i [den här dokumentationen](https://experienceleague.adobe.com/en/docs/control-panel/using/instances-settings/gpg-keys-management#decrypting-data){target="_blank"}.
+1. Skapa ett nytt GPG-nyckelpar. Läs mer om GPG-nyckelhantering i [den här dokumentationen](https://experienceleague.adobe.com/sv/docs/control-panel/using/instances-settings/gpg-keys-management#decrypting-data){target="_blank"}.
 
 1. Ersätt befintlig GPG-nyckelanvändning i alla arbetsflöden med den nya nyckeln.
 

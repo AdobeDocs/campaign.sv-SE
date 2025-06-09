@@ -25,7 +25,7 @@ Du kommer åt inbyggda rapporter från Campaigns hemsida, den dedikerade rapport
 
 En lista med viktiga rapporter finns på startsidan, så att du snabbt kan komma åt leveransdata. Listan kan ändras efter dina behov. Du kan även lära dig hur du lägger till egna rapporter på fliken **[!UICONTROL Reports]**.
 
-Mer information om dessa anpassade konfigurationer finns i [Campaign Classic v7-dokumentationen](https://experienceleague.adobe.com/docs/campaign-classic/using/reporting/creating-new-reports/configuring-access-to-the-report.html){target="_blank"}.
+Mer information om dessa anpassade konfigurationer finns i [Campaign Classic v7-dokumentationen](https://experienceleague.adobe.com/docs/campaign-classic/using/reporting/creating-new-reports/configuring-access-to-the-report.html?lang=sv-SE){target="_blank"}.
 
 
 ## Åtkomst till inbyggda rapporter {#access-ootb-reports}

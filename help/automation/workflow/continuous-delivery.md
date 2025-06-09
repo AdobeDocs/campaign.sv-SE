@@ -66,4 +66,4 @@ Den här videon visar hur du konfigurerar en kontinuerlig leverans med en stegvi
 
 >[!VIDEO](https://video.tv.adobe.com/v/25039?quality=12)
 
-Ytterligare utbildningsvideor för Campaign är tillgängliga [här](https://experienceleague.adobe.com/docs/campaign-learn/tutorials/getting-started/introduction-to-adobe-campaign.html){target="_blank"}.
+Ytterligare utbildningsvideor för Campaign är tillgängliga [här](https://experienceleague.adobe.com/docs/campaign-learn/tutorials/getting-started/introduction-to-adobe-campaign.html?lang=sv-SE){target="_blank"}.

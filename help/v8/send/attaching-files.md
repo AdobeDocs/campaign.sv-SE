@@ -21,7 +21,7 @@ Du kan bifoga en eller flera filer till en e-postleverans.
 
 >[!NOTE]
 >
->För att undvika prestandaproblem rekommenderar vi att du inte inkluderar mer än en bifogad fil per e-post. Det rekommenderade tröskelvärdet kan konfigureras från listan med kampanjalternativ. Mer information finns i [Campaign Classic-dokumentationen](https://experienceleague.adobe.com/docs/campaign-classic/using/installing-campaign-classic/appendices/configuring-campaign-options.html#delivery).
+>För att undvika prestandaproblem rekommenderar vi att du inte inkluderar mer än en bifogad fil per e-post. Det rekommenderade tröskelvärdet kan konfigureras från listan med kampanjalternativ. Mer information finns i [Campaign Classic-dokumentationen](https://experienceleague.adobe.com/docs/campaign-classic/using/installing-campaign-classic/appendices/configuring-campaign-options.html?lang=sv-SE#delivery).
 
 Det finns två möjliga fall:
 
@@ -30,7 +30,7 @@ Det finns två möjliga fall:
 
 >[!NOTE]
 >
->Den här typen av konfiguration utförs vanligtvis i leveransmallarna. Mer information finns i [Campaign Classic-dokumentationen](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/using-delivery-templates/about-templates.html).
+>Den här typen av konfiguration utförs vanligtvis i leveransmallarna. Mer information finns i [Campaign Classic-dokumentationen](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/using-delivery-templates/about-templates.html?lang=sv-SE).
 
 ## Guardrails {#attachments-guardrails}
 
@@ -38,7 +38,7 @@ För att undvika prestandaproblem får bilderna i e-postmeddelanden inte överst
 
 Adobe rekommenderar också att du begränsar storleken och antalet bifogade filer. Som standard kan du bara lägga till en fil som en bifogad fil i ett e-postmeddelande. Det här tröskelvärdet kan konfigureras från alternativet `NmsDelivery_MaxRecommendedAttachments`.
 
-Läs mer i listan över Campaign-alternativ i [Campaign Classic-dokumentationen](https://experienceleague.adobe.com/docs/campaign-classic/using/installing-campaign-classic/appendices/configuring-campaign-options.html#delivery).
+Läs mer i listan över Campaign-alternativ i [Campaign Classic-dokumentationen](https://experienceleague.adobe.com/docs/campaign-classic/using/installing-campaign-classic/appendices/configuring-campaign-options.html?lang=sv-SE#delivery).
 
 ## Bifoga en lokal fil {#attaching-a-local-file}
 

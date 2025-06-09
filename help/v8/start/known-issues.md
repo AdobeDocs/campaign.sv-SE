@@ -86,7 +86,7 @@ Du kan lösa problemet genom att använda en äldre klientkonsol. Sedan kan du �
 
 Som kampanjadministratör kan du hämta Campaign v8.3.1-klientkonsolen i [Adobe Software Distribution](https://experience.adobe.com/#/downloads/content/software-distribution/en/campaign.html?1_group.propertyvalues.property=.%2Fjcr%3aContent%2Fmetadata%2FDc%3Aversion&amp;1_group.propertyvalues.operation=equals&amp;1_group.propertyvalues.0_values=target-version%3AcCampaign%2F8&amp;orderby=%40jcr%3Acontent%2Fjcr%3AlastModified&amp;order.sort=desc&amp;layout=list&amp;p.offset=0&amp;p.limit=4){target="_blank"}.
 
-Lär dig hur du får åtkomst till Adobe programdistribution [på den här sidan](https://experienceleague.adobe.com/docs/experience-cloud/software-distribution/home.html){target="_blank"}.
+Lär dig hur du får åtkomst till Adobe programdistribution [på den här sidan](https://experienceleague.adobe.com/docs/experience-cloud/software-distribution/home.html?lang=sv-SE){target="_blank"}.
 
 Lär dig hur du uppgraderar din klientkonsol [på den här sidan](connect.md)
 

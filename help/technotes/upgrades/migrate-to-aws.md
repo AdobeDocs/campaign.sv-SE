@@ -67,11 +67,11 @@ Detta kommer att vara transparent för kunderna:
 
 * **Vilka valideringar måste köras av kunderna?**
 
-  Det behövs ingen specifik testning för den här migreringen. Om något problem uppstår kan du kontakta [Adobe kundtjänst](https://experienceleague.adobe.com/?support-solution=Campaign#support){target="_blank"}.
+  Det behövs ingen specifik testning för den här migreringen. Om något problem uppstår kan du kontakta [Adobe kundtjänst](https://experienceleague.adobe.com/sv?support-solution=Campaign#support){target="_blank"}.
 
 
 * **Kan jag begära en ändring av datum/tid för den schemalagda säkerhetsuppgraderingsplatsen?**
 
   Eftersom detta är en obligatorisk migrering kan vi inte hantera ändringar av det befintliga schemat.
 
-Om du har andra frågor kan du kontakta [Adobe kundtjänst](https://experienceleague.adobe.com/?support-solution=Campaign#support){target="_blank"}.
+Om du har andra frågor kan du kontakta [Adobe kundtjänst](https://experienceleague.adobe.com/sv?support-solution=Campaign#support){target="_blank"}.

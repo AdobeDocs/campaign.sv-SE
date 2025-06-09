@@ -212,4 +212,4 @@ Inläggning av prenumerations- och prenumerationsdata är beroende av [mellanlag
 
 **Relaterade ämnen**
 
-* [JSAPI i Campaign](https://experienceleague.adobe.com/developer/campaign-api/api/p-1.html){target="_blank"}
+* [JSAPI i Campaign](https://experienceleague.adobe.com/developer/campaign-api/api/p-1.html?lang=sv-SE){target="_blank"}

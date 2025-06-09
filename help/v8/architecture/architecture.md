@@ -26,7 +26,7 @@ Det finns två typer av miljöer:
 
 Du kan exportera och importera paket från en miljö till en annan.
 
-Läs mer om paket i [Campaign Classic v7-dokumentationen](https://experienceleague.adobe.com/docs/campaign-classic/using/getting-started/administration-basics/working-with-data-packages.html){target="_blank"}
+Läs mer om paket i [Campaign Classic v7-dokumentationen](https://experienceleague.adobe.com/docs/campaign-classic/using/getting-started/administration-basics/working-with-data-packages.html?lang=sv-SE){target="_blank"}
 
 ## Distributionsmodeller {#ac-deployment}
 

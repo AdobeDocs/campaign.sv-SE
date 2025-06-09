@@ -38,6 +38,6 @@ Den här integreringen stöder två typer av Adobe Experience Cloud ID:
 
 Se:
 
-[Adobe Audience Manager Knowledge Base](https://experienceleague.adobe.com/docs/experience-cloud-kcs/kbarticles/KA-16471.html){target="_blank"}.
+[Adobe Audience Manager Knowledge Base](https://experienceleague.adobe.com/docs/experience-cloud-kcs/kbarticles/KA-16471.html?lang=sv-SE){target="_blank"}.
 
-[Handbok för komponenter i Adobe Experience Cloud Central Interface](https://experienceleague.adobe.com/docs/core-services/interface/services/audiences/audience-library.html){target="_blank"}.
+[Handbok för komponenter i Adobe Experience Cloud Central Interface](https://experienceleague.adobe.com/docs/core-services/interface/services/audiences/audience-library.html?lang=sv-SE){target="_blank"}.

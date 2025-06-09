@@ -98,4 +98,4 @@ Du kan distribuera Adobe Campaign med hjälp av fördefinierade databaser och sc
 
 Total lagringskvot delas mellan huvuddatabasen och den (valfria) sekundära Snowflake-databasen. Var data lagras bör fastställas vid implementering eller uppgradering, beroende på kundspecifika användningsfall.
 
-Lär dig hur du övervakar databasanvändningen i [dokumentationen på Kontrollpanelen för kampanj](https://experienceleague.adobe.com/docs/control-panel/using/performance-monitoring/database-monitoring/database-monitoring.html){target="_blank"}.
+Lär dig hur du övervakar databasanvändningen i [dokumentationen på Kontrollpanelen för kampanj](https://experienceleague.adobe.com/docs/control-panel/using/performance-monitoring/database-monitoring/database-monitoring.html?lang=sv-SE){target="_blank"}.

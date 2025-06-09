@@ -76,7 +76,7 @@ Med flera arbetsflödesaktiviteter kan du definiera hur erbjudanden presenteras:
 
 ### Berikning {#enrichment}
 
-Med aktiviteten **Enrichment** kan du lägga till erbjudanden eller länkar till erbjudanden för mottagare.[Läs mer](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/targeting-activities/enrichment.html){target="_blank"}.
+Med aktiviteten **Enrichment** kan du lägga till erbjudanden eller länkar till erbjudanden för mottagare.[Läs mer](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/targeting-activities/enrichment.html?lang=sv-SE){target="_blank"}.
 
 Du kan till exempel förbättra data för en mottagarfråga före en leverans.
 
@@ -163,7 +163,7 @@ Leveransen lagrar automatiskt rangordningen och vikten av erbjudandena. Den här
 
 Med aktiviteten **[!UICONTROL Offer engine]** kan du även ange ett anrop till erbjudandemotorn före leveransen.
 
-Mer information om aktiviteten **Erbjudandemotor** finns på [den här sidan](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/targeting-activities/offer-engine.html){target="_blank"}.
+Mer information om aktiviteten **Erbjudandemotor** finns på [den här sidan](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/targeting-activities/offer-engine.html?lang=sv-SE){target="_blank"}.
 
 Den här aktiviteten fungerar enligt samma princip som aktiviteten **Enrichment** med ett motoranrop genom att berika inkommande populationsdata med ett erbjudande som beräknas av motorn, före en leverans.
 
@@ -186,7 +186,7 @@ När du har konfigurerat din **Query**-aktivitet:
 
 Med aktiviteten **[!UICONTROL Offers by cell]** kan du distribuera den inkommande populationen (från en fråga till exempel) till flera segment och ange ett erbjudande som ska visas för vart och ett av dessa segment.
 
-Mer information om aktiviteten **Erbjudande per cell** finns på [den här sidan](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/targeting-activities/offers-by-cell.html){target="_blank"}.
+Mer information om aktiviteten **Erbjudande per cell** finns på [den här sidan](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/targeting-activities/offers-by-cell.html?lang=sv-SE){target="_blank"}.
 
 Gör så här:
 

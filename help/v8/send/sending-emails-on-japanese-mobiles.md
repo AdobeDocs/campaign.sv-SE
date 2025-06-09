@@ -25,7 +25,7 @@ För att mottagaren ska kunna ta emot meddelanden i något av dessa format rekom
 
 Om du låter alternativet **[!UICONTROL Email format]** vara **[!UICONTROL Unknown]**, **[!UICONTROL HTML]** eller **[!UICONTROL Text]** identifierar Adobe Campaign automatiskt (när du skickar e-postmeddelandet) vilket japanskt format som ska användas så att meddelandet visas korrekt.
 
-Det här automatiska identifieringssystemet baseras på listan med fördefinierade domäner som definierats i postregeluppsättningen **[!UICONTROL Management of Email Formats]**. Mer information om hur du hanterar e-postformat finns i [Campaign Classic-dokumentationen](https://experienceleague.adobe.com/docs/campaign-classic/using/installing-campaign-classic/additional-configurations/email-deliverability.html#managing-email-formats).
+Det här automatiska identifieringssystemet baseras på listan med fördefinierade domäner som definierats i postregeluppsättningen **[!UICONTROL Management of Email Formats]**. Mer information om hur du hanterar e-postformat finns i [Campaign Classic-dokumentationen](https://experienceleague.adobe.com/docs/campaign-classic/using/installing-campaign-classic/additional-configurations/email-deliverability.html?lang=sv-SE#managing-email-formats).
 
 ## Begränsningar och rekommendationer {#limitations-and-recommendations}
 

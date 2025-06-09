@@ -68,7 +68,7 @@ Meddelanden skickas som standard i HTML- eller textformat enligt mottagarens ön
 
 * Om du vill importera ett HTML-innehåll använder du knappen **[!UICONTROL Open]**. Du kan också klistra in källkoden direkt på underfliken **[!UICONTROL Source]**.
 
-  Om du använder Digital Content Editor (DCE) läser du [Campaign Classic-dokumentationen](https://experienceleague.adobe.com/docs/campaign-classic/using/designing-content/editing-html-content/use-case-creating-an-email-delivery.html#step-3---selecting-a-content).
+  Om du använder Digital Content Editor (DCE) läser du [Campaign Classic-dokumentationen](https://experienceleague.adobe.com/docs/campaign-classic/using/designing-content/editing-html-content/use-case-creating-an-email-delivery.html?lang=sv-SE#step-3---selecting-a-content).
 
   >[!IMPORTANT]
   >
@@ -127,7 +127,7 @@ Med en extra flik kan du ange innehåll som automatiskt ska integreras och forma
 
 >[!NOTE]
 >
->Mer information om innehållshantering i Adobe Campaign finns i [Campaign Classic-dokumentationen](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/content-management/about-content-management.html).
+>Mer information om innehållshantering i Adobe Campaign finns i [Campaign Classic-dokumentationen](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/content-management/about-content-management.html?lang=sv-SE).
 
 ## Infoga uttryckssymboler {#inserting-emoticons}
 
@@ -140,7 +140,7 @@ Du kan infoga uttryckssymboler i ditt e-postinnehåll.
 
 1. Klicka på knappen **[!UICONTROL Close]** när du är klar.
 
-Mer information om hur du anpassar uttryckslistan finns i [Campaign Classic-dokumentationen](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/personalizing-deliveries/customizing-emoticon-list.html).
+Mer information om hur du anpassar uttryckslistan finns i [Campaign Classic-dokumentationen](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/personalizing-deliveries/customizing-emoticon-list.html?lang=sv-SE).
 
 ## Lägg till bilder {#adding-images}
 
@@ -151,7 +151,7 @@ E-postleveranser i HTML-format kan innehålla bilder. Från leveransassistenten 
 
 För att undvika prestandaproblem får bilderna i e-postmeddelanden inte överstiga 100 kB. Den här gränsen, som är inställd som standard, kan ändras från alternativet `NmsDelivery_MaxDownloadedImageSize`. Adobe rekommenderar dock att du undviker stora bilder i e-postutskick.
 
-Läs mer i listan över Campaign-alternativ i [Campaign Classic-dokumentationen](https://experienceleague.adobe.com/docs/campaign-classic/using/installing-campaign-classic/appendices/configuring-campaign-options.html#delivery).
+Läs mer i listan över Campaign-alternativ i [Campaign Classic-dokumentationen](https://experienceleague.adobe.com/docs/campaign-classic/using/installing-campaign-classic/appendices/configuring-campaign-options.html?lang=sv-SE#delivery).
 
 ### Typer av bilder {#img-types}
 
@@ -162,7 +162,7 @@ Bilderna kan vara:
 
   Offentliga resurser är tillgängliga via noden **[!UICONTROL Resources > Online]** i Adobe Campaign-hierarkin. De grupperas i ett bibliotek och kan inkluderas i e-postmeddelanden, men kan också användas för kampanjer eller uppgifter, eller för innehållshantering.
 
-* En resurs som delas med Adobe Experience Cloud. Mer information finns i [Campaign Classic-dokumentationen](https://experienceleague.adobe.com/docs/campaign-classic/using/integrating-with-adobe-experience-cloud/asset-sharing/sharing-assets-with-adobe-experience-cloud.html).
+* En resurs som delas med Adobe Experience Cloud. Mer information finns i [Campaign Classic-dokumentationen](https://experienceleague.adobe.com/docs/campaign-classic/using/integrating-with-adobe-experience-cloud/asset-sharing/sharing-assets-with-adobe-experience-cloud.html?lang=sv-SE).
 
 ### Infoga och hantera bilder {#manage-images}
 
