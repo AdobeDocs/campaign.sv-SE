@@ -6,9 +6,9 @@ role: User
 level: Beginner, Intermediate
 exl-id: 762dcacc-4aeb-4990-af01-7f793bd69170
 version: Campaign v8, Campaign Classic v7
-source-git-commit: a2efad26232cd380eea850a589b22b23928253e8
+source-git-commit: 567ca1cd8fa6e4f03c8871488152710753ea02f1
 workflow-type: tm+mt
-source-wordcount: '674'
+source-wordcount: '686'
 ht-degree: 0%
 
 ---
@@ -21,8 +21,8 @@ En vy är en specifik mapp som inte innehåller några data, men som visar data 
 
 
 >[!NOTE]
->För att skilja vyer från standardmappar visas deras namn med ljusblått i stället för svart.
 >
+>För att skilja vyer från standardmappar visas deras namn med ljusblått i stället för svart.
 
 Observera att du kan tilldela behörigheter till mappar för att begränsa åtkomsten till vissa data. [Läs mer](#restrict-access-to-a-folder)
 
@@ -52,14 +52,19 @@ Om du vill skapa en annan typ av mapp högerklickar du på en befintlig mapp och
 ![](assets/add-new-folder.png)
 
 >[!CAUTION]
->De här ändringarna gäller alla Campaign-användare.
 >
+>De här ändringarna gäller alla Campaign-användare.
 
 ## Gör en mapp till en vy{#turn-a-folder-to-a-view}
 
 En vy är en specifik mapp som inte innehåller några data, men som visar data som lagras fysiskt i andra mappar av samma typ.
 
 Du kan omvandla en mapp till en vy, men mappen måste vara tom. Alla data som lagras i mappen tas bort när du förvandlar mappen till en vy.
+
+>[!IMPORTANT]
+>
+>Mappar som ligger utanför rutan får inte omvandlas till en vy.
+
 
 >[!CAUTION]
 >
