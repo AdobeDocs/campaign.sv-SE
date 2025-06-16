@@ -3,10 +3,10 @@ title: Versionsinformation om Campaign v8
 description: Senaste Campaign v8-versionen
 feature: Release Notes
 exl-id: 7cf8111d-9f3a-46a4-813a-d4e43a1d1471
-source-git-commit: 6d2425f7e7f35f5461151790fbda2bef2959bff4
+source-git-commit: 9187ac7fd0d17a6dc28c3b6564913bcd93e45943
 workflow-type: tm+mt
 source-wordcount: '781'
-ht-degree: 12%
+ht-degree: 14%
 
 ---
 
@@ -18,7 +18,7 @@ På den här sidan visas nya funktioner, förbättringar och korrigeringar som i
 
 **På den här sidan**
 
-* [Version 8.6.5](#release-8-6-4)
+* [Version 8.6.5](#release-8-6-5)
 * [Version 8.7.4](#release-8-7-4)
 * [Version 8.6.4](#release-8-6-4)
 
@@ -58,7 +58,7 @@ _10 april 2025_
 >
 >Den här versionen är i **begränsad tillgänglighet** (LA). Den är begränsad till kunder som migrerar **från Adobe Campaign Standard till Adobe Campaign v8** och kan inte distribueras i någon annan miljö.
 >
->Som Campaign Standard-användare som övergår till Campaign v8 kan du läsa mer om den här övergången i [dokumentationen för webbanvändargränssnittet för Campaign v8](https://experienceleague.adobe.com/sv/docs/campaign-web/v8/start/acs-migration){target="_blank"}.
+>Som Campaign Standard-användare som övergår till Campaign v8 kan du läsa mer om den här övergången i [dokumentationen för webbanvändargränssnittet för Campaign v8](https://experienceleague.adobe.com/en/docs/campaign-web/v8/start/acs-migration){target="_blank"}.
 
 ### Nya funktioner {#features-8-7-4}
 
