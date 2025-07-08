@@ -5,10 +5,10 @@ user-guide-description: Produktdokumentation för Adobe Campaign v8 (klientkonso
 title: Adobe Campaign v8-dokumentation
 description: Kampanjdokumentation v8
 breadcrumb-title: Dokumentation om Campaign v8
-source-git-commit: a2efad26232cd380eea850a589b22b23928253e8
+source-git-commit: b4947c8c20e123877e24f57d5ad7a15aa3f304a2
 workflow-type: tm+mt
-source-wordcount: '712'
-ht-degree: 19%
+source-wordcount: '725'
+ht-degree: 23%
 
 ---
 
@@ -41,11 +41,12 @@ ht-degree: 19%
    + [Vanliga frågor och svar ](start/campaign-faq.md)
 + Kampanjhantering {#campaigns}
    + [Kom igång med kampanjer](start/campaigns.md)
-   + [Kampanjsamordning >](https://experienceleague.adobe.com/docs/campaign/automation/campaign-orchestration/set-up-campaigns.html?lang=sv-SE)
+   + [Kampanjsamordning >](https://experienceleague.adobe.com/docs/campaign/automation/campaign-orchestration/set-up-campaigns.html)
 + Skicka meddelanden{#send}
    + [Kom igång med meddelanden](start/gs-message.md)
    + [Skapa din första leverans](start/create-message.md)
-   + [God praxis för leverans](start/delivery-best-practices.md)
+   + [Arbeta med leveransmallar](send/create-templates.md)
+   + [Bästa praxis för leverans](start/delivery-best-practices.md)
    + E-post {#emails}
       + [Designa och validera e-postmeddelanden](send/email.md)
       + [Definiera e-postinnehållet](send/defining-the-email-content.md)
@@ -99,7 +100,12 @@ ht-degree: 19%
    + Fel, studsar och karantän{#failures}
       + [Karantän](send/quarantines.md)
       + [Leveransfel](send/delivery-failures.md)
-   + [Arbeta med leveransmallar](send/create-templates.md)
+   + Leveranshantering {#deliverability-management}
+      + [Vad är levererbarhet?](send/about-deliverability.md)
+      + [Kontrollera meddelandeinnehåll](send/control-message-content.md)
+      + [Övervaka levererbarhet](send/monitoring-deliverability.md)
+      + [Inkorgsåtergivning](send/inbox-rendering.md)
+      + [SpamAssassin](send/spamassassin.md)
    + Transaktionsmeddelanden {#real-time}
       + [Kom igång med transaktionsmeddelanden](send/transactional.md)
       + [Skapa och publicera en mall](send/transactional-template.md)
@@ -128,7 +134,7 @@ ht-degree: 19%
    + [Skapa landningssidor](dev/landing-pages.md)
    + [Designa webbprogram och formulär](dev/webapps.md)
 + Automatisering och arbetsflöden {#automation}
-   + [Kampanjautomatiseringsguide >](https://experienceleague.adobe.com/sv/docs/campaign/automation/home)
+   + [Kampanjautomatiseringsguide >](https://experienceleague.adobe.com/en/docs/campaign/automation/home)
 + Integritet och säkerhetshantering {#privacy}
    + [Hantera förfrågningar om användarens information](start/privacy.md)
    + [Säkerhetsanvisningar](config/security.md)
@@ -170,7 +176,7 @@ ht-degree: 19%
 + Datahantering {#data}
    + [Kom igång med arbetsflöden](config/workflows.md)
    + [Importera data](start/import.md)
-   + [Arbetsflödesdokumentation](https://experienceleague.adobe.com/docs/campaign/automation/workflows/introduction/about-workflows.html?lang=sv-SE)
+   + [Arbetsflödesdokumentation](https://experienceleague.adobe.com/docs/campaign/automation/workflows/introduction/about-workflows.html)
 + Integreringar {#connect}
    + [Connect Campaign med andra lösningar](connect/integration.md)
    + Campaign + Experience Platform {#ac-aep}
@@ -228,11 +234,11 @@ ht-degree: 19%
       + [Nyckelhantering](dev/database-keys.md)
       + [Länkhantering](dev/database-links.md)
       + [Begränsa PI-vy](dev/restrict-pi-view.md)
-      + [Använda en anpassad mottagartabell](dev/custom-recipient.md)
+      + [Använd en anpassad mottagartabell](dev/custom-recipient.md)
       + [Uppdatera databasen](dev/update-database-structure.md)
       + [Inmatningsformulär](dev/forms.md)
    + [Arbeta med datapaket](dev/packages.md)
    + [Kampanj-API:er](dev/api.md)
-+ [Kampanjtekniker >](https://experienceleague.adobe.com/sv/docs/campaign/technotes-ac/technotes-home)
-+ [Dokumentation för webbanvändargränssnittet för kampanj >](https://experienceleague.adobe.com/sv/docs/campaign-web/v8/campaign-web-home)
++ [Kampanjtekniker >](https://experienceleague.adobe.com/en/docs/campaign/technotes-ac/technotes-home)
++ [Dokumentation för webbanvändargränssnittet för kampanj >](https://experienceleague.adobe.com/en/docs/campaign-web/v8/campaign-web-home)
 
