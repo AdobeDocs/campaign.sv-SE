@@ -30,7 +30,7 @@ Adobe Campaign ger tillgång till alla verktyg som listas nedan.
 
   <!--For more on this, see the [Delivery statistics](../reporting/global-reports.md#delivery-statistics) section.-->
 
-* Mer generellt ger [kontrollpanelen för leverans](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/monitoring-deliveries/delivery-dashboard.html#sending-messages){target="_blank"} dig tillgång till:
+* Mer generellt ger [kontrollpanelen för leverans](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/monitoring-deliveries/delivery-dashboard.html?lang=sv-SE#sending-messages){target="_blank"} dig tillgång till:
    * Leveranssammanfattning, som visar detaljerna i sändningen och antalet meddelanden som ska skickas, bearbetas och skickas utan fel.
    * Leveransloggar och leveranshistorik som visar vilket mål som har uteslutits och varför.
    * spårningsloggarna, som visar spårningsinformation som öppningar och klickningar.
@@ -42,7 +42,7 @@ Här följer ytterligare riktlinjer för leveransövervakning:
 * Kontrollera regelbundet [leveransdataflödet](../reporting/global-reports.md#delivery-throughput) för hela plattformen för att kontrollera om den stämmer överens med den ursprungliga konfigurationen.
 * Kontrollera att [återförsök](delivery-failures.md#retries) har konfigurerats korrekt (30 minuter för återförsöksperiod och mer än 20 återförsök) i leveransmallar.
 * Kontrollera regelbundet att postlådan [bounce](delivery-failures.md#bounce-mail-qualification) är tillgänglig och att kontot inte håller på att förfalla.
-* Kontrollera varje leveransflöde, som du kommer åt från [leveransinstrumentpanelen](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/monitoring-deliveries/delivery-dashboard.html#sending-messages){target="_blank"}, för att se till att det stämmer överens med leveransinnehållets giltighet (t.ex. ska &#39;flash sales&#39; levereras på några minuter, inte dagar). är ett viktigt verktyg för att övervaka leveranser och potentiella problem när meddelanden skickas.
+* Kontrollera varje leveransflöde, som du kommer åt från [leveransinstrumentpanelen](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/monitoring-deliveries/delivery-dashboard.html?lang=sv-SE#sending-messages){target="_blank"}, för att se till att det stämmer överens med leveransinnehållets giltighet (t.ex. ska &#39;flash sales&#39; levereras på några minuter, inte dagar). är ett viktigt verktyg för att övervaka leveranser och potentiella problem när meddelanden skickas.
 * När du använder [vågor](configure-and-send.md#sending-using-multiple-waves) bör du kontrollera att varje våg har tillräckligt med tid för att slutföra innan nästa utlöses.
 * Kontrollera att antalet fel och nya [karantäner](quarantines.md) stämmer överens med andra leveranser.
-* Läs noggrant igenom [leveransloggarna](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/monitoring-deliveries/delivery-dashboard.html#delivery-logs-and-history){target="_blank"} för att kontrollera vilken typ av fel som markeras (blockeringslista, DNS-problem, skräppostregler osv.).
+* Läs noggrant igenom [leveransloggarna](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/monitoring-deliveries/delivery-dashboard.html?lang=sv-SE#delivery-logs-and-history){target="_blank"} för att kontrollera vilken typ av fel som markeras (blockeringslista, DNS-problem, skräppostregler osv.).

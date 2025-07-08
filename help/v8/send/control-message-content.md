@@ -25,7 +25,7 @@ Följ nedanstående principer när du utformar ditt meddelandeinnehåll:
 * [Bryt prenumerationslänk](#opt-out) och landningssida: länken för att avsluta prenumerationen är nödvändig. Den måste vara synlig och giltig och formuläret måste vara funktionellt.
 * Förhandsgranska: använd verktygen i Adobe Campaign för att kontrollera och optimera innehållet i e-postmeddelandet ([Inkorgsåtergivning](#message-responsiveness), [SpamAssets](#spamassassin)).
 
-Fler tips om hur du kan optimera leveransen när du utformar innehåll finns i [Adobe Deliverability Best Practice Guide](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/content-best-practices-for-optimal-delivery.html){target="_blank"}.
+Fler tips om hur du kan optimera leveransen när du utformar innehåll finns i [Adobe Deliverability Best Practice Guide](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/content-best-practices-for-optimal-delivery.html?lang=sv-SE){target="_blank"}.
 
 >[!NOTE]
 >
