@@ -22,7 +22,7 @@ Profiler skapas med en **POST**-begäran på profilresursen.
 >
 >Om du vill associera en <b>orgUnit</b> med den skapade profilen måste du utöka profilresursen med det här fältet och, efter att tillägget har publicerats, utföra en POST-begäran på slutpunkten <b>ProfileAndServicesExt</b> .
 >
->Mer information om profilens resurstillägg finns i <a href="https://helpx.adobe.com/campaign/standard/administration/using/organizational-units.html#partitioning-profiles">Kampanjdokumentationen</a>.
+>Mer information om profilens resurstillägg finns i <a href="https://helpx.adobe.com/se/campaign/standard/administration/using/organizational-units.html#partitioning-profiles">Kampanjdokumentationen</a>.
 
 <br/>
 

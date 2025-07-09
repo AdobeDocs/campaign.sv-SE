@@ -32,7 +32,7 @@ När deras adress eller telefonnummer sätts i karantän utesluts mottagarna fr�
 
 >[!NOTE]
 >
->Mottagare som avbeställt prenumerationen via metoden [&quot;mailto&quot; List-Unsubscribe ](https://experienceleague.adobe.com/en/docs/deliverability-learn/deliverability-best-practice-guide/additional-resources/campaign/acc-technical-recommendations#mailto-list-unsubscribe){target="_blank"} skickas inte till karantän. De har antingen avbeställt den [tjänst](../start/subscriptions.md) som är kopplad till leveransen eller skickats till blockeringslista (visas i profilens **[!UICONTROL No longer contact]** -avsnitt) om ingen tjänst har definierats för leveransen.
+>Mottagare som avbeställt prenumerationen via metoden [&quot;mailto&quot; List-Unsubscribe ](https://experienceleague.adobe.com/sv/docs/deliverability-learn/deliverability-best-practice-guide/additional-resources/campaign/acc-technical-recommendations#mailto-list-unsubscribe){target="_blank"} skickas inte till karantän. De har antingen avbeställt den [tjänst](../start/subscriptions.md) som är kopplad till leveransen eller skickats till blockeringslista (visas i profilens **[!UICONTROL No longer contact]** -avsnitt) om ingen tjänst har definierats för leveransen.
 
 <!--For the mobile app channel, device tokens are quarantined.-->
 
@@ -48,7 +48,7 @@ Två typer eller fel kan fångas:
 I listan över adresser i karantän anger fältet **[!UICONTROL Error reason]** varför den valda adressen placerades i karantän. [Läs mer](#identifying-quarantined-addresses-for-the-entire-platform).
 
 
-Om en användare kvalificerar ett e-postmeddelande som skräppost omdirigeras meddelandet automatiskt till en teknisk postlåda som hanteras av Adobe. Användarens e-postadress skickas sedan automatiskt till karantänen med status **[!UICONTROL Denylisted]**.    Den här statusen avser endast adressen, profilen finns inte på blockeringslista, så att användaren fortsätter att ta emot SMS-meddelanden och push-meddelanden. Läs mer om feedbackslingor i [Handboken ](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/transition-process/infrastructure.html#feedback-loops){target="_blank"} om bästa leveransmetoder.
+Om en användare kvalificerar ett e-postmeddelande som skräppost omdirigeras meddelandet automatiskt till en teknisk postlåda som hanteras av Adobe. Användarens e-postadress skickas sedan automatiskt till karantänen med status **[!UICONTROL Denylisted]**.    Den här statusen avser endast adressen, profilen finns inte på blockeringslista, så att användaren fortsätter att ta emot SMS-meddelanden och push-meddelanden. Läs mer om feedbackslingor i [Handboken ](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/transition-process/infrastructure.html?lang=sv-SE#feedback-loops){target="_blank"} om bästa leveransmetoder.
 
 >[!NOTE]
 >
@@ -83,7 +83,7 @@ Om du vill visa listan över adresser i karantän **för hela plattformen** kan 
 
 Dessutom visar den inbyggda rapporten **[!UICONTROL Non-deliverables and bounces]**, som är tillgänglig från avsnittet **Reports** på den här startsidan, information om adresserna i karantän, de typer av fel som påträffats och en felfördelning per domän. Du kan filtrera data för en viss leverans eller anpassa rapporten efter behov.
 
-Läs mer om studsadresser i [Bästa praxis-handboken för slutprodukter](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/metrics-for-deliverability/bounces.html){target="_blank"}.
+Läs mer om studsadresser i [Bästa praxis-handboken för slutprodukter](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/metrics-for-deliverability/bounces.html?lang=sv-SE){target="_blank"}.
 
 ### E-postadress i karantän {#quarantined-recipient}
 
