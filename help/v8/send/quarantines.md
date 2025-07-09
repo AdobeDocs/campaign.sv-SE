@@ -5,9 +5,9 @@ feature: Profiles, Monitoring
 role: User, Data Engineer
 level: Beginner
 exl-id: 220b7a88-bd42-494b-b55b-b827b4971c9e
-source-git-commit: e45799f0f3849d53d2c5f593bc02954b3a55fc28
+source-git-commit: cb4cbc9ba14e953d2b3109e87eece4f310bfe838
 workflow-type: tm+mt
-source-wordcount: '1167'
+source-wordcount: '1213'
 ht-degree: 4%
 
 ---
@@ -20,15 +20,21 @@ När deras adress eller telefonnummer sätts i karantän utesluts mottagarna fr�
 
 <!--For more on best practices to secure and optimize your deliveries, refer to [this page](delivery-best-practices.md).-->
 
-**Karantän** gäller bara för en **adress**, ett **telefonnummer** eller en **enhetstoken**, men inte för själva profilen. En profil vars e-postadress är placerad i karantän kan till exempel uppdatera sin profil och ange en ny adress. Därefter kan den användas av leveransåtgärder igen. Om två profiler råkar ha samma telefonnummer, påverkas båda om numret sätts i karantän. Adresserna eller telefonnumren i karantän visas i [exkluderingsloggarna](#delivery-quarantines) (för en leverans) eller i [karantänlistan](#non-deliverable-bounces) (för hela plattformen).
+## Karantän mot blockeringslista
 
-Å andra sidan kan profiler finnas på **blockeringslista** som efter en avanmälan (avanmälan) för en viss kanal: detta innebär att de inte längre används av någon. Om en profil på blockeringslista för e-postkanalen har två e-postadresser, kommer därför båda adresserna att exkluderas från leveransen. Du kan kontrollera om det finns en profil på blockeringslista för en eller flera kanaler under **[!UICONTROL No longer contact]** på fliken **[!UICONTROL General]** i profilen. [Läs mer](../audiences/view-profiles.md)
+**Karantän** gäller bara för en **adress**, ett **telefonnummer** eller en **enhetstoken**, men inte för själva profilen. En profil vars e-postadress är placerad i karantän kan till exempel uppdatera sin profil och ange en ny adress. Därefter kan den användas av leveransåtgärder igen. Om två profiler råkar ha samma telefonnummer, påverkas båda om numret sätts i karantän. Adresserna eller telefonnumren i karantän visas i [exkluderingsloggarna](#delivery-quarantines) (för en leverans) eller i [karantänlistan](#non-deliverable-bounces) (för hela plattformen).
 
 >[!NOTE]
 >
 >När mottagare rapporterar ditt meddelande som skräppost eller svarar på ett SMS-meddelande med ett nyckelord som &quot;STOP&quot;, sätts deras adress eller telefonnummer i karantän som **[!UICONTROL Denylisted]**. Deras profil uppdateras därefter.
 
-<!--For the email channel, email addresses are quarantined. For the mobile app channel, device tokens are quarantined. For the SMS channel, phone numbers are quarantined.?-->
+Å andra sidan kan **profiler** finnas på **blockeringslista** som efter en avanmälan (avanmälan) för en viss kanal: det innebär att de inte längre används som mål för någon leverans. Om en profil på blockeringslista för e-postkanalen har två e-postadresser, kommer därför båda adresserna att exkluderas från leveransen. Du kan kontrollera om det finns en profil på blockeringslista för en eller flera kanaler under **[!UICONTROL No longer contact]** på fliken **[!UICONTROL General]** i profilen. [Läs mer](../audiences/view-profiles.md)
+
+>[!NOTE]
+>
+>Mottagare som avbeställt prenumerationen via metoden [&quot;mailto&quot; List-Unsubscribe ](https://experienceleague.adobe.com/en/docs/deliverability-learn/deliverability-best-practice-guide/additional-resources/campaign/acc-technical-recommendations#mailto-list-unsubscribe){target="_blank"} skickas inte till karantän. De har antingen avbeställt den [tjänst](../start/subscriptions.md) som är kopplad till leveransen eller skickats till blockeringslista (visas i profilens **[!UICONTROL No longer contact]** -avsnitt) om ingen tjänst har definierats för leveransen.
+
+<!--For the mobile app channel, device tokens are quarantined.-->
 
 ## Varför skickas ett e-postmeddelande, en telefon eller en enhet till karantän {#quarantine-reason}
 
@@ -42,7 +48,7 @@ Två typer eller fel kan fångas:
 I listan över adresser i karantän anger fältet **[!UICONTROL Error reason]** varför den valda adressen placerades i karantän. [Läs mer](#identifying-quarantined-addresses-for-the-entire-platform).
 
 
-Om en användare kvalificerar ett e-postmeddelande som skräppost omdirigeras meddelandet automatiskt till en teknisk postlåda som hanteras av Adobe. Användarens e-postadress skickas sedan automatiskt till karantänen med status **[!UICONTROL Denylisted]**.    Den här statusen avser endast adressen, profilen finns inte på blockeringslista, så att användaren fortsätter att ta emot SMS-meddelanden och push-meddelanden. Läs mer om feedbackslingor i [Handboken ](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/transition-process/infrastructure.html?lang=sv-SE#feedback-loops){target="_blank"} om bästa leveransmetoder.
+Om en användare kvalificerar ett e-postmeddelande som skräppost omdirigeras meddelandet automatiskt till en teknisk postlåda som hanteras av Adobe. Användarens e-postadress skickas sedan automatiskt till karantänen med status **[!UICONTROL Denylisted]**.    Den här statusen avser endast adressen, profilen finns inte på blockeringslista, så att användaren fortsätter att ta emot SMS-meddelanden och push-meddelanden. Läs mer om feedbackslingor i [Handboken ](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/transition-process/infrastructure.html#feedback-loops){target="_blank"} om bästa leveransmetoder.
 
 >[!NOTE]
 >
@@ -77,7 +83,7 @@ Om du vill visa listan över adresser i karantän **för hela plattformen** kan 
 
 Dessutom visar den inbyggda rapporten **[!UICONTROL Non-deliverables and bounces]**, som är tillgänglig från avsnittet **Reports** på den här startsidan, information om adresserna i karantän, de typer av fel som påträffats och en felfördelning per domän. Du kan filtrera data för en viss leverans eller anpassa rapporten efter behov.
 
-Läs mer om studsadresser i [Bästa praxis-handboken för slutprodukter](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/metrics-for-deliverability/bounces.html?lang=sv-SE){target="_blank"}.
+Läs mer om studsadresser i [Bästa praxis-handboken för slutprodukter](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/metrics-for-deliverability/bounces.html){target="_blank"}.
 
 ### E-postadress i karantän {#quarantined-recipient}
 

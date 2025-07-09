@@ -3,28 +3,53 @@ title: Versionsinformation för Campaign v8 (konsol) 2024
 description: Lista över funktioner och förbättringar i 2024 års Campaign v8-utgåvor
 feature: Release Notes
 exl-id: 6a0a9486-19a9-4ec3-9030-48dbf419f45f
-source-git-commit: 57b18835b87be2a201ce23f5b6053266d13b9cb8
+source-git-commit: b52308bcbe68a7c382918fe28f8166e3bfcb6cde
 workflow-type: tm+mt
-source-wordcount: '1308'
+source-wordcount: '1568'
 ht-degree: 12%
 
 ---
 
 # Versionsinformation 2024 {#2024-rn}
 
-På den här sidan visas nya funktioner, förbättringar och korrigeringar som ingår i **2024 Campaign v8-utgåvorna**.
+På den här sidan visas nya funktioner, förbättringar och korrigeringar som ingår i **2024 Campaign v8-utgåvorna**. Den senaste versionen finns på [den här sidan](release-notes.md).
+
+Installera [den senaste utgåvan](release-notes.md) för alla nya implementeringar eller uppgraderingar till en befintlig miljö.
+
 
 >[!BEGINSHADEBOX]
 
 **På den här sidan**
 
-* Campaign v8.7 - [Version 8.7.1](#release-8-7-1)
+* Campaign v8.7 - [Version 8.7.1](#release-8-7-1) | [Version 8.7.2](#release-8-7-2)
 * Campaign v8.6 - [Version 8.6.1](#release-8-6-1) | [Version 8.6.2](#release-8-6-2) | [Version 8.6.3](#release-8-6-3)
 * Campaign v8.5 - [Version 8.5.3](#release-8-5-3)
 
 >[!ENDSHADEBOX]
 
+## Version 8.7.2 {#release-8-7-2}
 
+_3 sept 2024_
+
+>[!AVAILABILITY]
+>
+>Den här versionen är i **begränsad tillgänglighet** (LA). Den är begränsad till kunder som migrerar **från Adobe Campaign Standard till Adobe Campaign v8** och kan inte distribueras i någon annan miljö.
+>
+>Som Campaign Standard-användare som övergår till Campaign v8 kan du läsa mer om den här övergången i [dokumentationen för webbanvändargränssnittet för Campaign v8](https://experienceleague.adobe.com/en/docs/campaign-web/v8/start/acs-migration){target="_blank"}.
+
+### Nya funktioner {#new-8-7-2}
+
+* **Ny SMS-sändningsanslutare** - SMS-sändningsanslutaren har moderniserats och förbättrats för att aktivera SMPP-anslutningar i sändningsläge, aktivera beständiga SMPP-anslutningar och säkerställa bättre kompatibilitet för miljöer som övergår från Adobe Campaign Standard. Det finns nu ett nytt externt SMS-konto för alla nya SMS-implementeringar. Befintlig implementering stöds fortfarande, men vi rekommenderar att du går över till den nya moderna och utökade anslutningen. [Läs mer](../send/sms/sms.md).
+
+* **Rich Push Notification (GA)** - Du kan nu skicka omfattande push-meddelanden. Rich push notification är en förbättrad form av mobilmeddelanden som går utöver enkla textmeddelanden genom att införliva multimediaelement som bilder, interaktiva knappar eller annat multimediematerial. I den här versionen finns det nu en uppsättning mallar för push-meddelanden för dina iOS- och Android-appar. [Läs mer](../send/rich-push-android.md).
+
+* **Varumärkning** - Det finns nu märkningsalternativ för alla kanaler, inklusive SMS och direktreklam. [Läs mer](https://experienceleague.adobe.com/docs/campaign-web/v8/conf/branding/branding-gs.html){target="_blank"}
+
+### Korrigeringar {#fixes-8-7-2}
+
+Följande problem har åtgärdats i den här versionen:
+
+NEO-48232, NEO-56832, NEO-72504, NEO-74855, NEO-75898, NEO-76097, NEO-76958, NEO-77014, NEO-7 7795, NEO-78843, NEO-79328.
 
 ## Version 8.7.1 {#release-8-7-1}
 
@@ -34,17 +59,17 @@ _2 maj 2024_
 >
 >Den här versionen är i **begränsad tillgänglighet** (LA). Den är begränsad till kunder som migrerar **från Adobe Campaign Standard till Adobe Campaign v8** och kan inte distribueras i någon annan miljö.
 >
->Som Campaign Standard-användare som övergår till Campaign v8 kan du läsa mer om den här övergången i [dokumentationen för webbanvändargränssnittet för Campaign v8](https://experienceleague.adobe.com/sv/docs/campaign-web/v8/start/acs-migration){target="_blank"}.
+>Som Campaign Standard-användare som övergår till Campaign v8 kan du läsa mer om den här övergången i [dokumentationen för webbanvändargränssnittet för Campaign v8](https://experienceleague.adobe.com/en/docs/campaign-web/v8/start/acs-migration){target="_blank"}.
 
 ### Nya funktioner {#new-8-7-1}
 
 * **Mallar för push-meddelanden** - Du kan nu skicka omfattande push-meddelanden via Android. Rich push notification är en förbättrad form av mobilmeddelanden som går utöver enkla textmeddelanden genom att införliva multimediaelement som bilder, interaktiva knappar eller annat multimediematerial. [Läs mer](../send/rich-push-ios.md).
 
-* **Varumärke** - Som en migrerad Campaign Standard-användare kan teknikadministratörer nu definiera ett eller flera varumärken för att centralisera parametrarna som påverkar ett varumärkes identitet. Detta inkluderar logotypen, domänen för landningssidans åtkomst-URL eller inställningar för meddelandespårning. Du kan skapa dessa varumärken och länka dem till meddelanden eller landningssidor. Den här konfigurationen hanteras i mallar. [Läs mer](https://experienceleague.adobe.com/docs/experience-cloud/campaign/branding/branding-gs.html?lang=sv-SE){target="_blank"}
+* **Varumärke** - Som en migrerad Campaign Standard-användare kan teknikadministratörer nu definiera ett eller flera varumärken för att centralisera parametrarna som påverkar ett varumärkes identitet. Detta inkluderar logotypen, domänen för landningssidans åtkomst-URL eller inställningar för meddelandespårning. Du kan skapa dessa varumärken och länka dem till meddelanden eller landningssidor. Den här konfigurationen hanteras i mallar. [Läs mer](https://experienceleague.adobe.com/docs/campaign-web/v8/conf/branding/branding-gs.html){target="_blank"}
 
-* **Övriga API:er** - Som en Campaign Standard-migrerad användare kan du använda Rest API:er för att skapa integreringar för Adobe Campaign och skapa ett eget ekosystem genom att interagera med Adobe Campaign med den panel med tekniker som du använder. [Läs mer](https://experienceleague.adobe.com/docs/experience-cloud/campaign/apis/get-started-apis.html?lang=sv-SE){target="_blank"}
+* **Övriga API:er** - Som en Campaign Standard-migrerad användare kan du använda Rest API:er för att skapa integreringar för Adobe Campaign och skapa ett eget ekosystem genom att interagera med Adobe Campaign med den panel med tekniker som du använder. [Läs mer](../dev/api/get-started-apis.md)
 
-* **Dynamisk rapportering** - Som migrerad Campaign Standard-användare har du tillgång till Dynamic Reporting som tillhandahåller fullt anpassningsbara realtidsrapporter för att mäta effekten av dina marknadsföringsaktiviteter. Det ger åtkomst till profildata, vilket möjliggör demografiska analyser efter profildimensioner som kön, ort och ålder, utöver funktionella e-postkampanjdata som öppningar och klick. [Läs mer](https://experienceleague.adobe.com/docs/experience-cloud/campaign/reporting/get-started-reporting.html?lang=sv-SE){target="_blank"}
+* **Dynamisk rapportering** - Som migrerad Campaign Standard-användare har du tillgång till Dynamic Reporting som tillhandahåller fullt anpassningsbara realtidsrapporter för att mäta effekten av dina marknadsföringsaktiviteter. Det ger åtkomst till profildata, vilket möjliggör demografiska analyser efter profildimensioner som kön, ort och ålder, utöver funktionella e-postkampanjdata som öppningar och klick. [Läs mer](https://experienceleague.adobe.com/docs/campaign-web/v8/reports/dynamic-reporting/get-started-reporting.html){target="_blank"}
 
 ### Kompatibilitetsuppdateringar {#comp-8-7-1}
 
@@ -67,7 +92,7 @@ Om du har implementerat inkommande integreringar med Campaign måste du migrera 
 
 ### Allmänna förbättringar {#improvements-8-7-1}
 
-* Flera scheman har ändrats från 32 till 64 bitar. Detta gäller endast kunder som migrerar från Campaign Standard. [Läs mer](https://experienceleague.adobe.com/docs/experience-cloud/campaign/technotes/64-bit-tables.html?lang=sv-SE){target="_blank"}
+* Flera scheman har ändrats från 32 till 64 bitar. Detta gäller endast kunder som migrerar från Campaign Standard. [Läs mer](https://experienceleague.adobe.com/docs/experience-cloud/campaign/technotes/64-bit-tables.html){target="_blank"}
 
 * I Campaign-tabeller fylls nu följande attribut i som standard med serverdatum och -tid: `lastModified` och `created`. Attributvärdet `createdBy-id` fylls nu i med det aktuella inloggnings-ID:t som standard. Värden som tillhandahålls av användare i API-anrop ignoreras. <!--This configuration can be changed in the Campaign server configuration file. As a Managed Cloud Services customer, you must reach out to Adobe to change this default configuration.-->
 
@@ -132,7 +157,7 @@ _14 feb 2024_
 
   >[!AVAILABILITY]
   >
-  >Användargränssnittet för Campaign-webben är bara tillgängligt för användare som ansluter till Adobe Campaign med sin Adobe ID. Läs mer om [Adobe Identity Management System (IMS)](https://helpx.adobe.com/se/enterprise/using/identity.html){target="_blank"}.
+  >Användargränssnittet för Campaign-webben är bara tillgängligt för användare som ansluter till Adobe Campaign med sin Adobe ID. Läs mer om [Adobe Identity Management System (IMS)](https://helpx.adobe.com/enterprise/using/identity.html){target="_blank"}.
   >
 
 * Adobe Campaign v8 kan nu integreras med **Adobe Experience Manager as a Cloud Service** och redigeringen är exklusivt tillgänglig via Adobe Campaign webbanvändargränssnitt. [Läs mer](../connect/ac-aem.md)
@@ -148,7 +173,7 @@ _14 feb 2024_
 
 * Senast i februari 2024 skickar alla företag över 5 000 e-postmeddelanden via Google eller Yahoo! måste börja använda en autentiseringsteknik som kallas domänbaserad Message Authentication Reporting och Conformance (DMARC). Se till att du har ställt in DMARC-posten för alla underdomäner som du använder med Adobe Campaign. [Läs mer](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/additional-resources/technotes/implement-dmarc.html?lang=sv){target="_blank"}
 
-* Från 1 juni 2024, Google och Yahoo! att kräva att avsändarna följer One-Click List-Unsubscribe. Adobe Campaign har nu stöd för det här alternativet. [Läs mer](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/additional-resources/campaign/acc-technical-recommendations.html?lang=sv-SE#list-unsubscribe){target="_blank"}
+* Från 1 juni 2024, Google och Yahoo! att kräva att avsändarna följer One-Click List-Unsubscribe. Adobe Campaign har nu stöd för det här alternativet. [Läs mer](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/additional-resources/campaign/acc-technical-recommendations.html#list-unsubscribe){target="_blank"}
 
 
 ### Korrigeringar {#fixes-8-6-1}

@@ -4,11 +4,10 @@ description: Om inställningarna för SMPP-anslutningen i leveranser
 feature: SMS
 role: User
 level: Beginner, Intermediate
-badge: label="Begränsad tillgänglighet" type="Informative"
 exl-id: 704e151a-b863-46d0-b8a1-fca86abd88b9
-source-git-commit: 30babc4bec802f61d3bd28a7ebcf0c15e22b2284
+source-git-commit: 6f29a7f157c167cae6d304f5d972e2e958a56ec8
 workflow-type: tm+mt
-source-wordcount: '1326'
+source-wordcount: '1340'
 ht-degree: 1%
 
 ---
@@ -17,9 +16,9 @@ ht-degree: 1%
 
 >[!IMPORTANT]
 >
->Detta gäller Adobe Campaign v8.7.2 och senare.
+>Denna dokumentation gäller Adobe Campaign v8.7.2 och senare. Om du vill växla från den gamla till den nya SMS-anslutningen läser du i den här [technote](https://experienceleague.adobe.com/docs/campaign/technotes-ac/tn-new/sms-migration){target="_blank"}.
 >
->För äldre versioner, se [Campaign Classic v7-dokumentationen](https://experienceleague.adobe.com/sv/docs/campaign-classic/using/sending-messages/sending-messages-on-mobiles/sms-set-up/sms-set-up){target="_blank"}.
+>Om du har äldre versioner kan du läsa [Campaign Classic v7-dokumentationen](https://experienceleague.adobe.com/en/docs/campaign-classic/using/sending-messages/sending-messages-on-mobiles/sms-set-up/sms-set-up){target="_blank"}.
 
 ## SMS-anslutningsdataflöde {#sms-data-flow}
 

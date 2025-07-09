@@ -4,11 +4,10 @@ description: Lär dig hur du konfigurerar en SMS-leverans i en infrastruktur med
 feature: SMS
 role: User
 level: Beginner, Intermediate
-badge: label="Begränsad tillgänglighet" type="Informative"
 exl-id: b5eb9eaa-0ca8-478c-9ed5-e5006e9b5609
-source-git-commit: 30babc4bec802f61d3bd28a7ebcf0c15e22b2284
+source-git-commit: 6f29a7f157c167cae6d304f5d972e2e958a56ec8
 workflow-type: tm+mt
-source-wordcount: '582'
+source-wordcount: '595'
 ht-degree: 0%
 
 ---
@@ -17,9 +16,9 @@ ht-degree: 0%
 
 >[!IMPORTANT]
 >
->Den här dokumentationen gäller Adobe Campaign v8.7.2 och senare.
+>Denna dokumentation gäller Adobe Campaign v8.7.2 och senare. Om du vill växla från den gamla till den nya SMS-anslutningen läser du i den här [technote](https://experienceleague.adobe.com/docs/campaign/technotes-ac/tn-new/sms-migration){target="_blank"}
 >
->Om du har äldre versioner kan du läsa [Campaign Classic v7-dokumentationen](https://experienceleague.adobe.com/sv/docs/campaign-classic/using/sending-messages/sending-messages-on-mobiles/sms-set-up/sms-set-up).
+>Om du har äldre versioner kan du läsa [Campaign Classic v7-dokumentationen](https://experienceleague.adobe.com/en/docs/campaign-classic/using/sending-messages/sending-messages-on-mobiles/sms-set-up/sms-set-up){target="_blank"}.
 
 För att skicka SMS-leveranser med en infrastruktur för medelhög källkod krävs:
 
@@ -43,7 +42,7 @@ Följ stegen nedan för att skapa en SMS-operator:
 
    ![](assets/smsoperator_mid.png){zoomable="yes"}
 
-1. Klicka på knappen **[!UICONTROL Add]** i delen **[!UICONTROL Groups and named rights]**.
+1. Klicka på knappen **[!UICONTROL Groups and named rights]** i delen **[!UICONTROL Add]**.
 I det nya fönstret som öppnas väljer du **[!UICONTROL Named rights]** i listan **[!UICONTROL Folder]** och väljer **[!UICONTROL ADMINISTRATION]** i den högra listan.
 
 1. Klicka på knappen **[!UICONTROL Ok]**.
@@ -66,7 +65,7 @@ I en medelhög infrastruktur måste du skapa ett externt SMS-konto på marknadsf
 >
 >Om du använder samma konto och lösenord för flera externa SMS-konton kan det leda till konflikter och överlappning mellan kontona. Läs mer på [SMS-felsökningssidan](smpp-connection.md#sms-troubleshooting).
 
-1. Klicka på ikonen **[!UICONTROL New]** i **[!UICONTROL Administration]** > **[!UICONTROL Platform]** > **[!UICONTROL External Accounts]**
+1. Klicka på ikonen **[!UICONTROL Administration]** i **[!UICONTROL Platform]** > **[!UICONTROL External Accounts]** > **[!UICONTROL New]**
 
    ![](assets/sms_extaccount.png){zoomable="yes"}
 
@@ -92,7 +91,7 @@ Målet är nu att skapa ett externt SMPP-konto på Mid-servern.
 
 Gör så här:
 
-1. Klicka på ikonen **[!UICONTROL New]** i **[!UICONTROL Administration]** > **[!UICONTROL Platform]** > **[!UICONTROL External Accounts]** på mittservern
+1. Klicka på ikonen **[!UICONTROL Administration]** i **[!UICONTROL Platform]** > **[!UICONTROL External Accounts]** > **[!UICONTROL New]** på mittservern
 
 1. Konfigurera **[!UICONTROL Label]** och **[!UICONTROL Internal name]** för ditt externa konto.
 

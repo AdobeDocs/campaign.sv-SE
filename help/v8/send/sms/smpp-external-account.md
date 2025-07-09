@@ -5,9 +5,9 @@ feature: SMS
 role: User
 level: Intermediate
 exl-id: 1f941b35-c7e0-4e8c-b6e5-a1a3e5354483
-source-git-commit: 3ac2976839f084761ba56647b282062d8d457ff2
+source-git-commit: 6f29a7f157c167cae6d304f5d972e2e958a56ec8
 workflow-type: tm+mt
-source-wordcount: '3650'
+source-wordcount: '3666'
 ht-degree: 0%
 
 ---
@@ -332,6 +332,10 @@ För varje fält kan du ange den associerade taggen samt dess format. Be SMPP-tj
 
 * Tagg: taggvärdet, antingen i decimalformat (t.ex. 12345) eller hexadecimalt med 0x-prefix (t.ex. 0x12ab). Taggar kan ligga mellan 0 och 65535.
 * Format: format som används för värde. Binära värden är alla bigendian-signerade binära värden. För textfält väljer du den kodning som används av SMPP-providern.
+
+>[!NOTE]
+>
+>Om fältet **Kundkonto** lämnas tomt ersätts det med den korta koden.
 
 ### Automatiskt svar skickat till flerlägesobjektet
 

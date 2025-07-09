@@ -4,11 +4,10 @@ description: Lär dig hur du konfigurerar en SMS-leverans
 feature: SMS
 role: User
 level: Beginner, Intermediate
-badge: label="Begränsad tillgänglighet" type="Informative"
 exl-id: c4d500ef-2339-491f-9ae2-9bfaf72088a9
-source-git-commit: 826abd5c5f8b191d34abf724b91c5a82665d00a2
+source-git-commit: 6f29a7f157c167cae6d304f5d972e2e958a56ec8
 workflow-type: tm+mt
-source-wordcount: '787'
+source-wordcount: '800'
 ht-degree: 0%
 
 ---
@@ -17,9 +16,9 @@ ht-degree: 0%
 
 >[!IMPORTANT]
 >
->Den här dokumentationen gäller Adobe Campaign v8.7.2 och senare.
+>Denna dokumentation gäller Adobe Campaign v8.7.2 och senare. Om du vill växla från den gamla till den nya SMS-anslutningen läser du i den här [technote](https://experienceleague.adobe.com/docs/campaign/technotes-ac/tn-new/sms-migration){target="_blank"}
 >
->Om du har äldre versioner kan du läsa [Campaign Classic v7-dokumentationen](https://experienceleague.adobe.com/sv/docs/campaign-classic/using/sending-messages/sending-messages-on-mobiles/sms-set-up/sms-set-up).
+>Om du har äldre versioner kan du läsa [Campaign Classic v7-dokumentationen](https://experienceleague.adobe.com/en/docs/campaign-classic/using/sending-messages/sending-messages-on-mobiles/sms-set-up/sms-set-up){target="_blank"}.
 
 De tekniska inställningar som krävs för en SMS-leverans är:
 

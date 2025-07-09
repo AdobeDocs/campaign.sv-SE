@@ -5,10 +5,10 @@ user-guide-description: Produktdokumentation för Adobe Campaign v8 (klientkonso
 title: Adobe Campaign v8-dokumentation
 description: Kampanjdokumentation v8
 breadcrumb-title: Dokumentation om Campaign v8
-source-git-commit: b4947c8c20e123877e24f57d5ad7a15aa3f304a2
+source-git-commit: 338013ac999ae0fedac132adf730c6f9477d73ca
 workflow-type: tm+mt
-source-wordcount: '725'
-ht-degree: 23%
+source-wordcount: '790'
+ht-degree: 26%
 
 ---
 
@@ -41,7 +41,7 @@ ht-degree: 23%
    + [Vanliga frågor och svar ](start/campaign-faq.md)
 + Kampanjhantering {#campaigns}
    + [Kom igång med kampanjer](start/campaigns.md)
-   + [Kampanjsamordning >](https://experienceleague.adobe.com/docs/campaign/automation/campaign-orchestration/set-up-campaigns.html?lang=sv-SE)
+   + [Kampanjsamordning >](https://experienceleague.adobe.com/docs/campaign/automation/campaign-orchestration/set-up-campaigns.html)
 + Skicka meddelanden{#send}
    + [Kom igång med meddelanden](start/gs-message.md)
    + [Skapa din första leverans](start/create-message.md)
@@ -97,7 +97,7 @@ ht-degree: 23%
       + [Leveransanalys](send/delivery-analysis.md)
       + [Konfigurera och skicka leveransen](send/configure-and-send.md)
       + [Tidsoptimering för sändning](send/predictive.md)
-   + Fel, studsar och karantän{#failures}
+   + Fel, studsar och karantän {#failures}
       + [Karantän](send/quarantines.md)
       + [Leveransfel](send/delivery-failures.md)
    + Leveranshantering {#deliverability-management}
@@ -134,7 +134,7 @@ ht-degree: 23%
    + [Skapa landningssidor](dev/landing-pages.md)
    + [Designa webbprogram och formulär](dev/webapps.md)
 + Automatisering och arbetsflöden {#automation}
-   + [Kampanjautomatiseringsguide >](https://experienceleague.adobe.com/sv/docs/campaign/automation/home)
+   + [Kampanjautomatiseringsguide >](https://experienceleague.adobe.com/en/docs/campaign/automation/home)
 + Integritet och säkerhetshantering {#privacy}
    + [Hantera förfrågningar om användarens information](start/privacy.md)
    + [Säkerhetsanvisningar](config/security.md)
@@ -176,7 +176,7 @@ ht-degree: 23%
 + Datahantering {#data}
    + [Kom igång med arbetsflöden](config/workflows.md)
    + [Importera data](start/import.md)
-   + [Arbetsflödesdokumentation](https://experienceleague.adobe.com/docs/campaign/automation/workflows/introduction/about-workflows.html?lang=sv-SE)
+   + [Arbetsflödesdokumentation](https://experienceleague.adobe.com/docs/campaign/automation/workflows/introduction/about-workflows.html)
 + Integreringar {#connect}
    + [Connect Campaign med andra lösningar](connect/integration.md)
    + Campaign + Experience Platform {#ac-aep}
@@ -239,6 +239,32 @@ ht-degree: 23%
       + [Inmatningsformulär](dev/forms.md)
    + [Arbeta med datapaket](dev/packages.md)
    + [Kampanj-API:er](dev/api.md)
-+ [Kampanjtekniker >](https://experienceleague.adobe.com/sv/docs/campaign/technotes-ac/technotes-home)
-+ [Dokumentation för webbanvändargränssnittet för kampanj >](https://experienceleague.adobe.com/sv/docs/campaign-web/v8/campaign-web-home)
+   + REST API:er {#apis}
+      + [Kom igång med REST API:er](dev/api/get-started-apis.md)
+      + [Rekommendationer och begränsningar](dev/api/limitations.md)
+      + [Varför använda REST API:er](dev/api/why-using-campaign-standard-apis.md)
+      + [Konfigurera API-åtkomst](dev/api/setting-up-api-access.md)
+      + Globala begrepp {#global-concepts}
+         + [Måste läsas](dev/api/must-read.md)
+         + [Slutpunkter](dev/api/endpoints.md)
+         + [Metadatamekanism](dev/api/metadata-mechanism.md)
+         + [Verb](dev/api/verbs.md)
+         + [Ytterligare åtgärder](dev/api/sorting.md)
+         + [Anpassade resurser](dev/api/custom-resources.md)
+      + [Interagera med anpassade resurser](dev/api/interacting-with-custom-resources.md)
+      + Hantera profiler {#managing-profiles}
+         + [Hämta profiler](dev/api/retrieving-profiles.md)
+         + [Uppdatera profiler](dev/api/updating-profiles.md)
+         + [Skapa profiler](dev/api/creating-profiles-api.md)
+      + Hantera tjänster och prenumeration {#managing-services-and-subscriptiopns}
+         + [Skapa en tjänst](dev/api/creating-a-service.md)
+         + [Hämta prenumerationer](dev/api/retrieving-subscriptions.md)
+         + [Utföra prenumerationer](dev/api/perform-subscriptions.md)
+         + [Ta bort prenumerationer](dev/api/deleting-subscriptions.md)
+      + [Hantera transaktionsmeddelanden](dev/api/managing-transactional-messages.md)
+      + Hantera arbetsflöden {#managing-workflows}
+         + [Kontrollera ett arbetsflöde](dev/api/controlling-a-workflow.md)
+         + [Utlösa en signalaktivitet](dev/api/triggering-a-signal-activity.md)
++ [Kampanjtekniker >](https://experienceleague.adobe.com/en/docs/campaign/technotes-ac/technotes-home)
++ [Dokumentation för webbanvändargränssnittet för kampanj >](https://experienceleague.adobe.com/en/docs/campaign-web/v8/campaign-web-home)
 

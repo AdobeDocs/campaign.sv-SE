@@ -4,11 +4,10 @@ description: Lär dig hur du validerar en SMPP-anslutning
 feature: SMS
 role: User
 level: Intermediate
-badge: label="Begränsad tillgänglighet" type="Informative"
 exl-id: eda6934a-e48a-4932-8c88-588f661005d6
-source-git-commit: 30babc4bec802f61d3bd28a7ebcf0c15e22b2284
+source-git-commit: 6f29a7f157c167cae6d304f5d972e2e958a56ec8
 workflow-type: tm+mt
-source-wordcount: '4439'
+source-wordcount: '4437'
 ht-degree: 0%
 
 ---

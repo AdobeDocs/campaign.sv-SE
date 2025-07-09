@@ -5,16 +5,19 @@ feature: Release Notes
 role: User
 level: Beginner
 exl-id: b860c843-155e-4abb-bdd6-b68dc7eaa0ee
-source-git-commit: fe96eb65ac04fc2b89f0dfe1e8ed4286223c3f85
+source-git-commit: b52308bcbe68a7c382918fe28f8166e3bfcb6cde
 workflow-type: tm+mt
-source-wordcount: '1496'
+source-wordcount: '1518'
 ht-degree: 21%
 
 ---
 
 # Versionsinformation 2023 {#2023-rn}
 
-På den här sidan visas nya funktioner, förbättringar och korrigeringar som ingår i **2023 Campaign v8-utgåvorna**.
+På den här sidan visas nya funktioner, förbättringar och korrigeringar som ingår i **2023 Campaign v8-utgåvorna**. Den senaste versionen finns på [den här sidan](release-notes.md).
+
+Installera [den senaste utgåvan](release-notes.md) för alla nya implementeringar eller uppgraderingar till en befintlig miljö.
+
 
 >[!BEGINSHADEBOX]
 

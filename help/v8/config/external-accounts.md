@@ -5,9 +5,9 @@ feature: Application Settings, External Account
 role: Admin
 level: Beginner, Intermediate, Experienced
 exl-id: 9634b576-2854-4ea9-ba0d-8efaab2c4aee
-source-git-commit: 42241364c1a23ae75d8f0aaf18a2cb1c04ce5b0c
+source-git-commit: d43fb6dc75113e7e89315b731ed8b4a77951125c
 workflow-type: tm+mt
-source-wordcount: '1049'
+source-wordcount: '1118'
 ht-degree: 4%
 
 ---
@@ -44,7 +44,7 @@ Följande tekniska konton används av Adobe Campaign för att aktivera och köra
 
 Det externa **studs-e-postkontot** anger det externa POP3-kontot som ska användas för att ansluta till e-posttjänsten. Alla servrar som konfigurerats för POP3-åtkomst kan användas för att ta emot returmeddelanden.
 
-Läs mer om inkommande e-post på [den här sidan](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/event-activities/inbound-emails.html?lang=sv-SE){target="_blank"}.
+Läs mer om inkommande e-post på [den här sidan](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/event-activities/inbound-emails.html){target="_blank"}.
 
 ![](assets/bounce_external_1.png)
 
@@ -118,7 +118,7 @@ När det gäller transaktionsmeddelanden är körningsinstanserna länkade till 
 
 ## Externa konton för överföringsdata {#transfer-data-external-accounts}
 
-Dessa externa konton kan användas för att importera eller exportera data till Adobe Campaign med hjälp av en **[!UICONTROL Transfer file]**-arbetsflödesaktivitet. Läs mer om **Filöverföring** i arbetsflöden på [den här sidan](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/event-activities/file-transfer.html?lang=sv-SE){target="_blank"}.
+Dessa externa konton kan användas för att importera eller exportera data till Adobe Campaign med hjälp av en **[!UICONTROL Transfer file]**-arbetsflödesaktivitet. Läs mer om **Filöverföring** i arbetsflöden på [den här sidan](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/event-activities/file-transfer.html){target="_blank"}.
 
 * **FTP och SFTP** - Med det externa **FTP**-kontot kan du konfigurera och testa åtkomst till en server utanför Adobe Campaign. Om du vill konfigurera anslutningar med externa system som SFTP- eller FTP-servrar 898 som används för filöverföringar kan du skapa egna externa konton.
 
@@ -126,7 +126,7 @@ Dessa externa konton kan användas för att importera eller exportera data till 
 
   >[!NOTE]
   >
-  >Från och med version 8.5 kan du nu autentisera säkert med en privat nyckel när du konfigurerar ditt externa SFTP-konto. [Läs mer om nyckelhantering](https://experienceleague.adobe.com/docs/control-panel/using/sftp-management/key-management.html?lang=sv-SE){target="_blank"}.
+  >Från och med version 8.5 kan du nu autentisera säkert med en privat nyckel när du konfigurerar ditt externa SFTP-konto. [Läs mer om nyckelhantering](https://experienceleague.adobe.com/docs/control-panel/using/sftp-management/key-management.html){target="_blank"}.
 
 * **Amazon Simple Storage Service (S3)** - **AWS S3**-anslutningen kan användas för att importera eller exportera data till Adobe Campaign med hjälp av en **[!UICONTROL Transfer file]** arbetsflödesaktivitet. När du konfigurerar det nya externa kontot måste du ange följande information:
 
@@ -147,3 +147,11 @@ Dessa externa konton kan användas för att importera eller exportera data till 
    * **[!UICONTROL Encryption]**: Typ av kryptering mellan **[!UICONTROL None]** eller **[!UICONTROL SSL]**.
 
    * **[!UICONTROL Access key]**: Lär dig hur du hittar **[!UICONTROL Access key]** i [Microsoft-dokumentationen](https://docs.microsoft.com/en-us/azure/storage/common/storage-account-keys-manage?tabs=azure-portal){target="_blank"}.
+
+* **Microsoft Fabric** - Med det externa kontot **Microsoft Fabric** kan du importera och exportera data mellan Microsoft Fabric och Adobe Campaign med hjälp av arbetsflödesaktiviteten **[!UICONTROL Transfer file]**. Om du vill konfigurera den här integreringen anger du följande information:
+
+   * **[!UICONTROL Server]**: URL:en till din Microsoft Fabric-lagringsserver.
+
+   * **[!UICONTROL Application ID]**: Den unika identifieraren för programmet som används för att autentisera och få åtkomst till Microsoft Fabric-resurser.
+
+   * **[!UICONTROL Client secret]**: Den autentiseringsnyckel eller det lösenord som är associerat med programmet, som krävs för att ansluta till Microsoft Fabric på ett säkert sätt.

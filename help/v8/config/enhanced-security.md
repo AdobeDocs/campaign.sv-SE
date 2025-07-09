@@ -5,9 +5,9 @@ feature: Configuration
 role: Developer
 level: Experienced
 exl-id: 7c586836-82e1-45fb-9c28-18361572e1fa
-source-git-commit: 24b252373923a9724743650b13a69d4f2c8dcd24
+source-git-commit: 3f36d7c425dd5a9a13e1de7a77371b29a462dbea
 workflow-type: tm+mt
-source-wordcount: '737'
+source-wordcount: '727'
 ht-degree: 2%
 
 ---
@@ -96,7 +96,7 @@ Tre användningsområden stöds:
 
 >[!CAUTION]
 >
->Endast lokala databaser och AWS-kompatibla VPN-enheter stöds. [Läs mer](#vpn-databases)
+>Lokala databaser och molndatabaser stöds. [Läs mer](#vpn-databases)
 
 Följ riktlinjerna nedan för att säkerställa att funktionen används på rätt sätt:
 
@@ -122,8 +122,9 @@ Följande lokala databaser stöds:
 * Sybase
 * Teradata
 * Hadoop via HiveSQL
+* PostgreSQL
 
-Endast VPN-enheter som följer AWS stöds. En lista över kompatibla enheter finns på [den här sidan](https://docs.aws.amazon.com/vpn/latest/s2svpn/your-cgw.html#example-configuration-files){target="_blank"}.
+Molndatabaser stöds. Se [kompatibilitetsmatrisen](../start/compatibility-matrix.md#FederatedDataAccessFDA).
 
 >[!NOTE]
 >

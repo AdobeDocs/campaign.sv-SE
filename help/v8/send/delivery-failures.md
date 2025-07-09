@@ -5,7 +5,7 @@ feature: Profiles, Monitoring
 role: User
 level: Beginner, Intermediate
 exl-id: 9c83ebeb-e923-4d09-9d95-0e86e0b80dcc
-source-git-commit: a2efad26232cd380eea850a589b22b23928253e8
+source-git-commit: 338013ac999ae0fedac132adf730c6f9477d73ca
 workflow-type: tm+mt
 source-wordcount: '2976'
 ht-degree: 2%
@@ -40,7 +40,7 @@ Mjuka studsar är tillfälliga fel som internetleverantörer genererar när de h
 
 Feltypen **Ignorerad** är känd som tillfällig, till exempel &quot;Frånvarande&quot;, eller ett tekniskt fel, till exempel om avsändartypen är &quot;postmaster&quot;.
 
-Feedback-slingan fungerar som studsmeddelanden: när en användare kvalificerar ett e-postmeddelande som skräppost kan du konfigurera e-postregler i Adobe Campaign så att alla leveranser till den här användaren blockeras. Adresserna till dessa användare är blocklist trots att de inte klickade på länken för att ta bort prenumerationen. Adresser läggs till i karantäntabellen (**NmsAddress**) och inte i mottagartabellen (**NmsRecipient**) med statusen **[!UICONTROL Denylisted]**. Läs mer om feedbackloopmekanismen i [Adobe Deliverability Best Practices Guide](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/transition-process/infrastructure.html?lang=sv-SE#feedback-loops){target="_blank"}.
+Feedback-slingan fungerar som studsmeddelanden: när en användare kvalificerar ett e-postmeddelande som skräppost kan du konfigurera e-postregler i Adobe Campaign så att alla leveranser till den här användaren blockeras. Adresserna till dessa användare är blocklist trots att de inte klickade på länken för att ta bort prenumerationen. Adresser läggs till i karantäntabellen (**NmsAddress**) och inte i mottagartabellen (**NmsRecipient**) med statusen **[!UICONTROL Denylisted]**. Läs mer om feedbackloopmekanismen i [Adobe Deliverability Best Practices Guide](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/transition-process/infrastructure.html#feedback-loops){target="_blank"}.
 
 ## Synkrona och asynkrona fel {#synchronous-and-asynchronous-errors}
 
@@ -66,7 +66,7 @@ Hur studseffekter hanteras i Adobe Campaign beror på feltypen:
 
 * **Synkrona fel**: MTA fastställer studstyp och kvalificering och skickar tillbaka informationen till Campaign. Studskompetensen i tabellen **[!UICONTROL Delivery log qualification]** används inte för **synkrona** leveransfelmeddelanden.
 
-* **Asynkrona fel**: Regler som används av Campaign för att kvalificera asynkrona leveransfel visas i noden **[!UICONTROL Administration > Campaign Management > Non deliverables Management > Delivery log qualification]**. Asynkrona studsar kvalificeras av inMail-processen via reglerna **[!UICONTROL Inbound email]**. Mer information finns i [Adobe Campaign Classic v7-dokumentationen](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/monitoring-deliveries/understanding-delivery-failures.html?lang=sv-SE#bounce-mail-qualification){target="_blank"}.
+* **Asynkrona fel**: Regler som används av Campaign för att kvalificera asynkrona leveransfel visas i noden **[!UICONTROL Administration > Campaign Management > Non deliverables Management > Delivery log qualification]**. Asynkrona studsar kvalificeras av inMail-processen via reglerna **[!UICONTROL Inbound email]**. Mer information finns i [Adobe Campaign Classic v7-dokumentationen](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/monitoring-deliveries/understanding-delivery-failures.html#bounce-mail-qualification){target="_blank"}.
 
 <!--NO LONGER WITH MOMENTUM - The message returned by the remote server on the first occurrence of this error type is displayed in the **[!UICONTROL First text]** column of the **[!UICONTROL Audit]** tab.
 
@@ -111,7 +111,7 @@ Om giltighetsperioden till exempel är inställd på standardvärdet 5 dagar i C
 
 När ett meddelande har funnits i MTA-kön i 3,5 dagar och inte kunnat levereras, kommer det att gå ut och dess status kommer att uppdateras från **[!UICONTROL Sent]** till **[!UICONTROL Failed]** i leveransloggarna.
 
-<!--For more on the validity period, see the [Adobe Campaign Classic v7 documentation](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/key-steps-when-creating-a-delivery/steps-sending-the-delivery.html?lang=sv-SE#defining-validity-period){target="_blank"}.-->
+<!--For more on the validity period, see the [Adobe Campaign Classic v7 documentation](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/key-steps-when-creating-a-delivery/steps-sending-the-delivery.html#defining-validity-period){target="_blank"}.-->
 
 
 ## E-postfeltyper {#email-error-types}

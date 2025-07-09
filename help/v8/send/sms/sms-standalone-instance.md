@@ -6,11 +6,10 @@ role: User
 hide: true
 hidefromtoc: true
 level: Beginner, Intermediate
-badge: label="Begränsad tillgänglighet" type="Informative"
 exl-id: 7cebcde0-c5a8-4b9b-baba-27a62bebde91
-source-git-commit: 30babc4bec802f61d3bd28a7ebcf0c15e22b2284
+source-git-commit: 6f29a7f157c167cae6d304f5d972e2e958a56ec8
 workflow-type: tm+mt
-source-wordcount: '262'
+source-wordcount: '260'
 ht-degree: 0%
 
 ---
@@ -21,7 +20,7 @@ ht-degree: 0%
 >
 >Den här dokumentationen gäller Adobe Campaign v8.7.2 och senare.
 >
->Om du har äldre versioner kan du läsa [Campaign Classic v7-dokumentationen](https://experienceleague.adobe.com/sv/docs/campaign-classic/using/sending-messages/sending-messages-on-mobiles/sms-set-up/sms-set-up).
+>Om du har äldre versioner kan du läsa [Campaign Classic v7-dokumentationen](https://experienceleague.adobe.com/en/docs/campaign-classic/using/sending-messages/sending-messages-on-mobiles/sms-set-up/sms-set-up).
 
 I en fristående instans kräver SMS-leverans:
 
@@ -37,7 +36,7 @@ I en fristående instans kräver SMS-leverans:
 
 Så här skapar du ett externt SMPP-konto:
 
-1. Klicka på ikonen **[!UICONTROL New]** i **[!UICONTROL Administration]** > **[!UICONTROL Platform]** > **[!UICONTROL External Accounts]**
+1. Klicka på ikonen **[!UICONTROL Administration]** i **[!UICONTROL Platform]** > **[!UICONTROL External Accounts]** > **[!UICONTROL New]**
 
    ![](assets/sms_extaccount.png){zoomable="yes"}
 
