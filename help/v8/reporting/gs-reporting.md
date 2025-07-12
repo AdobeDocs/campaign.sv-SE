@@ -18,7 +18,7 @@ Adobe Campaign tillhandahåller en uppsättning rapporteringsverktyg som listas 
 
 * **Dynamisk rapportering**
 
-  Dynamic Reporting är tillgängligt med Campaign Web UI och ger helt anpassningsbara realtidsrapporter för att mäta effekten av era marknadsföringsaktiviteter. Det ger åtkomst till profildata, vilket möjliggör demografiska analyser efter profildimensioner som kön, ort och ålder, utöver funktionella e-postkampanjdata som öppningar och klick. Mer information finns i [dokumentationen för webbgränssnittet v7](https://experienceleague.adobe.com/docs/campaign-web/v8/reports/dynamic-reporting/get-started-reporting.html){target="_blank"}.
+  Dynamic Reporting är tillgängligt med Campaign Web UI och ger helt anpassningsbara realtidsrapporter för att mäta effekten av era marknadsföringsaktiviteter. Det ger åtkomst till profildata, vilket möjliggör demografiska analyser efter profildimensioner som kön, ort och ålder, utöver funktionella e-postkampanjdata som öppningar och klick. Mer information finns i [dokumentationen för webbgränssnittet v7](https://experienceleague.adobe.com/docs/campaign-web/v8/reports/dynamic-reporting/get-started-reporting.html?lang=sv-SE){target="_blank"}.
 
 * **Kuber**
 
