@@ -7,18 +7,16 @@ topic-tags: campaign-standard-apis
 role: Data Engineer
 level: Experienced
 exl-id: c6968252-a012-4029-bbb8-66f4f693e99b
-source-git-commit: 4ed5799c77c647c9f1aeabba7645fbb475d03c09
+source-git-commit: 83524feeb6a5de32a1b32c8d66f97a32d270f62d
 workflow-type: tm+mt
-source-wordcount: '225'
-ht-degree: 50%
+source-wordcount: '212'
+ht-degree: 53%
 
 ---
 
 # Kom igång med Campaign REST API:er {#get-started-apis}
 
 >[!CAUTION]
->
->Den här dokumentationen är avsedd för Adobe Campaign Standard-kunder som migrerar till Campaign v8.
 >
 >Innan du genomför API-anrop bör du kontrollera de begränsningar för skalor som motsvaras i licensavtalet. Se denna [sida](https://helpx.adobe.com/se/legal/product-descriptions/campaign-standard.html#ITInfrastructureResourcesbyActiveProfilesTiers) för mer information om detta.
 
