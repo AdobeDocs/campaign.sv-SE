@@ -100,7 +100,7 @@ Utöver funktionerna som listas ovan innehåller den här versionen även en upp
 * [Dynamisk rapportering](https://experienceleague.adobe.com/docs/campaign-web/v8/reports/dynamic-reporting/get-started-reporting.html){target="_blank"} (på begäran)
 * [Centraliserad profilering](https://experienceleague.adobe.com/docs/campaign-web/v8/conf/branding/branding-gs.html){target="_blank"} (on demand, nya implementeringar)
 
-Se versionsinformationen för Campaign Web UI [](https://experienceleague.adobe.com/docs/campaign-web/v8/release-notes/release-notes.html){target="_blank"}
+Se versionsinformationen för Campaign Web UI [&#128279;](https://experienceleague.adobe.com/docs/campaign-web/v8/release-notes/release-notes.html){target="_blank"}
 
 ### Allmänna förbättringar {#improvements-8-8-1}
 
