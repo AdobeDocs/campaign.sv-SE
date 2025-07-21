@@ -5,20 +5,20 @@ feature: SMS
 role: User
 level: Beginner, Intermediate
 exl-id: 704e151a-b863-46d0-b8a1-fca86abd88b9
-source-git-commit: 6f29a7f157c167cae6d304f5d972e2e958a56ec8
+source-git-commit: ea51863bdbc22489af35b2b3c81259b327380be4
 workflow-type: tm+mt
-source-wordcount: '1340'
+source-wordcount: '1342'
 ht-degree: 1%
 
 ---
 
 # SMPP-anslutningsbeskrivning {#smpp-connector-desc}
 
->[!IMPORTANT]
+>[!AVAILABILITY]
 >
->Denna dokumentation gäller Adobe Campaign v8.7.2 och senare. Om du vill växla från den gamla till den nya SMS-anslutningen läser du i den här [technote](https://experienceleague.adobe.com/docs/campaign/technotes-ac/tn-new/sms-migration){target="_blank"}.
+>Den här funktionen är tillgänglig för alla Campaign FDA-miljöer. Det är **inte** tillgängligt för Campaign FFDA-distributioner. Denna dokumentation gäller Adobe Campaign v8.7.2 och senare. Om du vill växla från den gamla till den nya SMS-anslutningen läser du i den här [technote](https://experienceleague.adobe.com/docs/campaign/technotes-ac/tn-new/sms-migration){target="_blank"}
 >
->Om du har äldre versioner kan du läsa [Campaign Classic v7-dokumentationen](https://experienceleague.adobe.com/sv/docs/campaign-classic/using/sending-messages/sending-messages-on-mobiles/sms-set-up/sms-set-up){target="_blank"}.
+>Om du har äldre versioner kan du läsa [Campaign Classic v7-dokumentationen](https://experienceleague.adobe.com/en/docs/campaign-classic/using/sending-messages/sending-messages-on-mobiles/sms-set-up/sms-set-up){target="_blank"}.
 
 ## SMS-anslutningsdataflöde {#sms-data-flow}
 
@@ -38,7 +38,7 @@ För varje aktivt SMPP-konto försöker SMPP-anslutningen att hålla anslutninga
 
 ### Dataflöde när meddelanden skickas {#sms-data-flow-sending-msg}
 
-* SMS-processen väljer aktiva leveranser genom att skanna nms:delivery. En leverans är aktiv när:
+* SMS-processen väljer aktiva leveranser genom att skanna nms :delivery. En leverans är aktiv när:
    * Dess tillstånd innebär att meddelanden kan skickas
    * Giltighetsperioden har inte gått ut
    * Det är i själva verket en leverans (t.ex. inte en mall, det tas inte bort)
@@ -47,7 +47,7 @@ För varje aktivt SMPP-konto försöker SMPP-anslutningen att hålla anslutninga
 * SMS-processen utökar mallen med personaliseringsdata från leveransdelen.
 * SMPP-anslutningen genererar en MT (SUBMIT_SM PDU) som matchar innehållet och andra inställningar.
 * SMPP-anslutningen skickar MT via en sändar- (eller sändtagaranslutning).
-* Providern returnerar ett ID för denna MT. Det infogas i nms:providerMsgId.
+* Providern returnerar ett ID för denna MT. Den infogas i nms:providerMsgId.
 * SMS-processen uppdaterar den breda loggen till skickad status.
 * Om ett slutligt fel inträffar, uppdateras den breda loggen i enlighet med detta och en ny typ av fel kan uppstå i nms:broadLogMsg.
 
@@ -70,7 +70,7 @@ För varje aktivt SMPP-konto försöker SMPP-anslutningen att hålla anslutninga
 
 * SR-avstämningskomponenten läser regelbundet nms:providerMsgId och nms:providerMsgStatus. Data från båda tabellerna sammanfogas.
 * För alla meddelanden som har en post i båda tabellerna uppdateras den matchande nms:broadLog-posten.
-* Registret nms:broadLogMsg kan uppdateras under processen om en ny typ av fel upptäcks, eller för att uppdatera räknare för fel som inte kvalificerats manuellt.
+* Registret nms:broadLogMsg kan uppdateras under processen om ett nytt slags fel upptäcks, eller för att uppdatera räknare för fel som inte har kvalificerats manuellt.
 
 ## Matchande MT-, SR- och broadcast-poster {#sms-matching-entries}
 
@@ -84,18 +84,18 @@ Här följer ett diagram som beskriver hela processen:
 * SMPP-anslutningen formaterar den som en PDU av typen SUBMIT_SM MT.
 * MT skickas till SMPP-leverantören.
 * Providern svarar med SUBMIT_SM_RESP. SUBMIT_SM och SUBMIT_SM_RESP matchas av sekvensnumret.
-* SUBMIT_SM_RESP ger ett ID som kommer från providern. Detta id infogas tillsammans med det breda logg-id:t i tabellen nms:providerMsgId.
+* SUBMIT_SM_RESP ger ett ID som kommer från providern. Detta ID infogas tillsammans med det breda logg-ID:t i tabellen nms:providerMsgId.
 
 **Fas 2**
 
 * Providern skickar en DELIVER_SM SR PDU.
 * SR tolkas för att extrahera provider-ID, status och felkod. I det här steget används extraheringsregex.
-* Leverantörs-ID och dess motsvarande status infogas i nms:providerMsgStatus.
+* Leverantörs-ID och dess motsvarande status infogas i nms :providerMsgStatus.
 * När alla data infogas i databasen på ett säkert sätt svarar SMPP-kopplingen med DELIVER_SM_RESP. DELIVER_SM och DELIVER_SM_RESP matchas av sekvensnumret.
 
 **Fas 3**
 
-* SR-avstämningskomponenten i SMS-processen söker regelbundet igenom tabellerna nms:providerMsgId och nms:providerMsgStatus.
+* SR-avstämningskomponenten i SMS-processen söker igenom både nms:providerMsgId- och nms:providerMsgStatus-tabeller med jämna mellanrum.
 * Om en rad har matchande provider-ID i båda tabellerna sammanfogas de två posterna. Detta gör att det breda logg-ID:t (som lagras i providerMsgId) kan matchas med statusen (lagras i providerMsgStatus)
 * Den breda loggen uppdateras med motsvarande status.
 

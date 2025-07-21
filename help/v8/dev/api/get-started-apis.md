@@ -7,14 +7,18 @@ topic-tags: campaign-standard-apis
 role: Data Engineer
 level: Experienced
 exl-id: c6968252-a012-4029-bbb8-66f4f693e99b
-source-git-commit: 83524feeb6a5de32a1b32c8d66f97a32d270f62d
+source-git-commit: ea51863bdbc22489af35b2b3c81259b327380be4
 workflow-type: tm+mt
-source-wordcount: '212'
-ht-degree: 53%
+source-wordcount: '238'
+ht-degree: 47%
 
 ---
 
 # Kom igång med Campaign REST API:er {#get-started-apis}
+
+>[!AVAILABILITY]
+>
+>Den här funktionen är bara tillgänglig on-demand för alla Campaign FDA-miljöer. Det är **inte** tillgängligt för Campaign FFDA-distributioner. Kontakta din Adobe-representant för att få åtkomst.
 
 >[!CAUTION]
 >
