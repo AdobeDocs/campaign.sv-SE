@@ -7,9 +7,9 @@ topic-tags: campaign-standard-apis
 role: Data Engineer
 level: Experienced
 exl-id: c6968252-a012-4029-bbb8-66f4f693e99b
-source-git-commit: ea51863bdbc22489af35b2b3c81259b327380be4
+source-git-commit: c74669a0ccdabe735eb905b7e8c1634140a7ea0b
 workflow-type: tm+mt
-source-wordcount: '238'
+source-wordcount: '239'
 ht-degree: 47%
 
 ---
@@ -18,7 +18,7 @@ ht-degree: 47%
 
 >[!AVAILABILITY]
 >
->Den här funktionen är bara tillgänglig on-demand för alla Campaign FDA-miljöer. Det är **inte** tillgängligt för Campaign FFDA-distributioner. Kontakta din Adobe-representant för att få åtkomst.
+>Den här funktionen är bara tillgänglig på begäran för alla Campaign FDA-miljöer. Det är **inte** tillgängligt för Campaign FFDA-distributioner. Kontakta din Adobe-representant för att få åtkomst.
 
 >[!CAUTION]
 >
