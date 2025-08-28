@@ -6,7 +6,7 @@ role: User
 level: Beginner
 exl-id: 43483085-8aa6-47e6-89e7-9211e37beaa4
 version: Campaign v8, Campaign Classic v7
-source-git-commit: a2efad26232cd380eea850a589b22b23928253e8
+source-git-commit: b24e05f152bc299ea7953856bfa71950b5cc9837
 workflow-type: tm+mt
 source-wordcount: '343'
 ht-degree: 11%
@@ -16,8 +16,6 @@ ht-degree: 11%
 # Kom igång med profiler och målgrupper{#gs-profiles-and-audiences}
 
 Profiler är kontakter som lagras i Campaign-databasen, till exempel kunder, prenumeranter på en tjänst eller potentiella kunder. Det finns många sätt att samla in profiler och bygga upp databasen: onlinesamling via webbformulär, manuell eller automatisk import av textfiler, replikering med företagsdatabaser eller andra informationssystem. Med Adobe Campaign kan ni införliva marknadsföringshistorik, inköpsinformation, preferenser, CRM-data och alla relevanta PI-data i en samlad vy för att analysera och vidta åtgärder. Profilerna innehåller all information som krävs för att målinrikta, kvalificera och spåra individer.
-
-
 
 En profil är en post i tabellen **nmsRecipient** eller en extern tabell som lagrar alla profilattribut, t.ex. förnamn, efternamn, e-postadress, cookie-ID, kund-ID, mobilidentifierare eller annan information som är relevant för en viss kanal. Andra tabeller som är länkade till mottagartabellen innehåller profilrelaterade data, till exempel leveransloggtabellen som innehåller poster för alla leveranser som skickas till mottagare. Läs mer om inbyggda profiler och mottagartabeller i [det här avsnittet](../dev/datamodel.md#ootb-profiles).
 

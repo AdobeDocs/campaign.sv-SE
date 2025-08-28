@@ -5,18 +5,18 @@ feature: Audiences
 role: User
 level: Beginner
 exl-id: 07baa759-fb0b-4eba-bf8b-ec6cf21df7f8
-source-git-commit: ad96c126836981f861c246eafa2ec7d2c0e179dc
+version: Campaign v8, Campaign Classic v7
+source-git-commit: b24e05f152bc299ea7953856bfa71950b5cc9837
 workflow-type: tm+mt
-source-wordcount: '497'
-ht-degree: 17%
+source-wordcount: '493'
+ht-degree: 11%
 
 ---
 
+
 # Arbeta med målgrupper i Campaign{#gs-ac-audiences}
 
-Profiler är kontakter som lagras i Campaign-databasen.
-
-I Adobe Campaign är **mottagare** standardprofiler för att skicka leveranser (e-post, SMS osv.). Med mottagardata som lagras i databasen kan du filtrera målet som ska ta emot en viss leverans och lägga till personaliseringsdata i leveransinnehållet. Det finns andra typer av profiler i databasen. De är utformade för olika användningsfall. Exempelvis görs fröprofiler för att testa dina leveranser innan de skickas till det slutliga målet.
+Profiler representerar de kontakter som lagras i din Adobe Campaign-databas. Som standard är **mottagare** de primära profiler som används för att skicka leveranser som e-post, SMS eller direktreklam. Med mottagardata som lagras i databasen kan ni definiera och filtrera målgrupperna samt personalisera leveransinnehållet. Förutom mottagare finns det andra profiltyper för specifika ändamål. Med dirigerade profiler kan du till exempel testa leveranser innan de skickas till den verkliga målgruppen.
 
 Lär dig hur du importerar, uppdaterar och hanterar profiler och målgrupper [i det här avsnittet](../audiences/gs-audiences.md).
 
@@ -36,7 +36,7 @@ Lär dig hur du skapar och hanterar filter på [den här sidan](../audiences/cre
 
 Målinriktning kan skapas med en kombination av frågor i en grafisk sekvens i ett arbetsflöde. Ni kan skapa målgrupper som anpassas efter era behov. Om du vill visa arbetsflödesredigeraren klickar du på fliken **[!UICONTROL Targeting and workflows]** på kontrollpanelen för kampanjer.
 
-Lär dig hur du skapar en målgrupp i ett kampanjarbetsflöde på [den här sidan](https://experienceleague.adobe.com/docs/campaign/automation/campaign-orchestration/marketing-campaign-target.html?lang=sv-SE){target="_blank"}.
+Lär dig hur du skapar en målgrupp i ett kampanjarbetsflöde på [den här sidan](https://experienceleague.adobe.com/docs/campaign/automation/campaign-orchestration/marketing-campaign-target.html){target="_blank"}.
 
 
 ## Aktiva profiler {#active-profiles}
@@ -45,7 +45,7 @@ En aktiv profil är en profil som kunden har försökt kommunicera med under de 
 
 Enligt avtalet har var och en av instanserna i Campaign ett visst antal aktiva profiler som räknas för faktureringsändamål. Se ditt senaste kontrakt för referens om antalet köpta aktiva profiler. Läs mer i [Adobe Campaign produktbeskrivning](https://helpx.adobe.com/se/legal/product-descriptions/adobe-campaign-managed-cloud-services.html){target="_blank"}.
 
-Du kan övervaka antalet aktiva profiler på instansen direkt från Campaign-kontrollpanelen. Mer information finns i dokumentationen för [Kontrollpanelen](https://experienceleague.adobe.com/docs/control-panel/using/performance-monitoring/active-profiles-monitoring.html?lang=sv-SE){target="_blank"}.
+Du kan övervaka antalet aktiva profiler på instansen direkt från Campaign-kontrollpanelen. Mer information finns i dokumentationen för [Kontrollpanelen](https://experienceleague.adobe.com/docs/control-panel/using/performance-monitoring/active-profiles-monitoring.html){target="_blank"}.
 
 
 Följande skyddsräcken och begränsningar gäller:
