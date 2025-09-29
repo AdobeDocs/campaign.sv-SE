@@ -5,9 +5,9 @@ type: Event
 title: Adobe Campaign Technotes
 description: Kampanjanteckningar
 breadcrumb-title: Kampanjtekniker
-source-git-commit: 6f29a7f157c167cae6d304f5d972e2e958a56ec8
+source-git-commit: d80d81bf8c25c467c909c9ccac7c31e6963409f0
 workflow-type: tm+mt
-source-wordcount: '71'
+source-wordcount: '73'
 ht-degree: 19%
 
 ---
@@ -30,4 +30,5 @@ ht-degree: 19%
    + [32-bitars borttagning av klientkonsol](upgrades/console.md)
    + Säkerhet {#security}
       + [Rotation av kundens autentiseringsuppgifter](security/credential-rotation-guide.md)
-+ [&lt; Tillbaka till Campaign v8-dokumentation](https://experienceleague.adobe.com/sv/docs/campaign/campaign-v8/campaign-home)
+      + [Asymetrisk kryptering](security/asymetric-encryption.md)
++ [&lt; Tillbaka till Campaign v8-dokumentation](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/campaign-home)
