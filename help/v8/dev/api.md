@@ -5,9 +5,9 @@ feature: API
 role: Developer
 level: Intermediate, Experienced
 exl-id: 50e21acd-d23d-4fdd-a8aa-23c3f209bda3
-source-git-commit: 1d9d4111cde1e230220a04c8fd10a126116339ad
+source-git-commit: 115b7b6824f3736e03f9fb87898f1264f9bab636
 workflow-type: tm+mt
-source-wordcount: '280'
+source-wordcount: '286'
 ht-degree: 9%
 
 ---
@@ -21,13 +21,12 @@ ht-degree: 9%
 
 >[!NOTE]
 >
->* Beroende på din distributionsmodell kan du även använda REST API:er med Campaign v8. [Läs mer](../dev/api/get-started-apis.md).
+>Beroende på din distributionsmodell kan du även använda REST API:er med Campaign v8. [Läs mer](../dev/api/get-started-apis.md).
 
+Du kan använda [Campaign JavaScript API:er](https://experienceleague.adobe.com/developer/campaign-api/api/p-1.html){target="_blank"} för att skriva i Campaign-molndatabasen eller läsa från databasen:
 
-Du kan använda JavaScript API:er för att skriva i Campaign-molndatabasen eller läsa från databasen:
-
-* Affärsspecifika API:er som du kan använda för varje objekt: leveranser, arbetsflöden, prenumerationer och så vidare. Läs mer i [Campaign Classic v7-dokumentationen](https://experienceleague.adobe.com/docs/campaign-classic/using/configuring-campaign-classic/api/business-oriented-apis.html?lang=sv-SE){target="_blank"}.
-* Generiska API:er för dataåtkomst för att fråga om datamodelldata. Läs mer i [Campaign Classic v7-dokumentationen](https://experienceleague.adobe.com/docs/campaign-classic/using/configuring-campaign-classic/api/data-oriented-apis.html?lang=sv-SE){target="_blank"}.
+* Affärsspecifika API:er som du kan använda för varje objekt: leveranser, arbetsflöden, prenumerationer och så vidare. Läs mer i [Campaign Classic v7-dokumentationen](https://experienceleague.adobe.com/docs/campaign-classic/using/configuring-campaign-classic/api/business-oriented-apis.html){target="_blank"}.
+* Generiska API:er för dataåtkomst för att fråga om datamodelldata. Läs mer i [Campaign Classic v7-dokumentationen](https://experienceleague.adobe.com/docs/campaign-classic/using/configuring-campaign-classic/api/data-oriented-apis.html){target="_blank"}.
 
 Observera att Campaign fungerar med två databaser i sin [Enterprise-distribution](../architecture/enterprise-deployment.md): en lokal databas för meddelanden i realtid i användargränssnittet och enhetsfrågor och skriva via API:er, samt en molndatabas för kampanjkörning, rapportering, datainhämtning, batchfrågor och arbetsflödeskörning.
 
@@ -55,3 +54,4 @@ Om du vill använda API:er och interagera med [!DNL Adobe Campaign] måste du oc
 **Relaterade ämnen**
 
 * [God praxis för datamodell](datamodel-best-practices.md)
+* [Kampanj-JSAPI-dokumentation](https://experienceleague.adobe.com/developer/campaign-api/api/p-1.html){target="_blank"}
