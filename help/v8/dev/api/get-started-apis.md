@@ -7,24 +7,25 @@ topic-tags: campaign-standard-apis
 role: Data Engineer
 level: Experienced
 exl-id: c6968252-a012-4029-bbb8-66f4f693e99b
-source-git-commit: c74669a0ccdabe735eb905b7e8c1634140a7ea0b
+source-git-commit: 1d9d4111cde1e230220a04c8fd10a126116339ad
 workflow-type: tm+mt
-source-wordcount: '239'
-ht-degree: 47%
+source-wordcount: '242'
+ht-degree: 43%
 
 ---
 
 # Kom igång med Campaign REST API:er {#get-started-apis}
 
->[!AVAILABILITY]
->
->Den här funktionen är bara tillgänglig på begäran för alla Campaign FDA-miljöer. Det är **inte** tillgängligt för Campaign FFDA-distributioner. Kontakta din Adobe-representant för att få åtkomst.
 
->[!CAUTION]
->
->Innan du genomför API-anrop bör du kontrollera de begränsningar för skalor som motsvaras i licensavtalet. Se denna [sida](https://helpx.adobe.com/se/legal/product-descriptions/campaign-standard.html#ITInfrastructureResourcesbyActiveProfilesTiers) för mer information om detta.
 
 Kampanj-REST-API:er är avsedda för att du ska kunna **skapa integreringar** för Adobe Campaign och **skapa ett eget ekosystem** genom att interagera med Adobe Campaign med den panel med tekniker som du använder.
+
+>[!AVAILABILITY]
+>
+>* Den här funktionen är bara tillgänglig på begäran för alla [Campaign FDA-miljöer](../../architecture/fda-deployment.md). Det är **inte** tillgängligt för [Enterprise-distributioner (FFDA)](../../architecture/enterprise-deployment.md). Kontakta din Adobe-representant för att få åtkomst.
+>
+>* Innan du genomför API-anrop bör du kontrollera de begränsningar för skalor som motsvaras i licensavtalet. Mer information finns på sidan [Kampanjproduktbeskrivning](https://helpx.adobe.com/se/legal/product-descriptions/campaign-standard.html#ITInfrastructureResourcesbyActiveProfilesTiers){target="_blank"}.
+
 
 Med Adobe Campaign REST API:er får du tillgång till följande funktioner:
 
@@ -43,4 +44,4 @@ De API:er vi tillhandahåller använder **standardkoncept** med ett REST-gränss
 
 Alla slutpunkter beskrivs ingående i den här dokumentationen med de allmänna synpunkterna som du bör känna till när du hanterar API:t, den fullständiga API-referensen, kodexempel och snabbstartguider. Alla exempel fungerar med Postman men du kan använda valfri REST-klient.
 
-Om något saknas eller verkar vara felaktigt kan du fråga vår [community](https://experienceleaguecommunities.adobe.com/t5/adobe-campaign-standard/ct-p/adobe-campaign-standard-community).
+Om något saknas eller verkar vara felaktigt kan du fråga vår [community](https://experienceleaguecommunities.adobe.com/t5/adobe-campaign-standard/ct-p/adobe-campaign-standard-community){target="_blank"}.
