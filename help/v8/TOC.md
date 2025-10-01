@@ -38,7 +38,7 @@ ht-degree: 26%
    + [Komponenter och processer](start/ac-components.md)
    + [Från Campaign Classic v7 till v8](start/v7-to-v8.md)
    + [Från Campaign Standard till v8](start/acs-to-v8.md)
-   + [Vanliga frågor och svar ](start/campaign-faq.md)
+   + [Vanliga frågor och svar &#x200B;](start/campaign-faq.md)
 + Kampanjhantering {#campaigns}
    + [Kom igång med kampanjer](start/campaigns.md)
    + [Kampanjsamordning >](https://experienceleague.adobe.com/docs/campaign/automation/campaign-orchestration/set-up-campaigns.html)
