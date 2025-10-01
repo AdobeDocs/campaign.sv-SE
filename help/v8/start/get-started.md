@@ -6,9 +6,9 @@ role: User
 level: Beginner
 exl-id: 04b12907-3cb1-40f1-90b8-1524d84edf2d
 version: Campaign v8, Campaign Classic v7
-source-git-commit: a2efad26232cd380eea850a589b22b23928253e8
+source-git-commit: 428de72e0459b95a6db0b06ec8541d0475b72fdd
 workflow-type: tm+mt
-source-wordcount: '994'
+source-wordcount: '1033'
 ht-degree: 20%
 
 ---
@@ -28,6 +28,13 @@ Använd Campaign för att
 * **Automatisera** leveransen av meningsfulla och aktuella meddelanden och erbjudanden
 
 ![](assets/do-not-localize/ac-capabilities.png)
+
+
+>[!AVAILABILITY]
+>
+>Förutom när det anges på sidorna gäller Adobe Campaign (konsol) dokumentation Campaign Classic v7 och Campaign v8.
+>
+>Observera att vissa referenser i dokumentationen fortfarande kan avse tidigare branding men fortfarande gäller för det aktuella erbjudandet.
 
 ## Integrated Customer Profile {#integrated-customer-profile}
 
