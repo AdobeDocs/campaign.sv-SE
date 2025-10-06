@@ -90,7 +90,7 @@ Innehållet i erbjudanderepresentationen skickas tillbaka till HTML-sidan av erb
 
 ### Presentera ett identifierat erbjudande {#presenting-an-identified-offer}
 
-Processen liknar den som beskrivs [ i det här avsnittet ](#presenting-an-anonymous-offer) om du vill visa ett erbjudande för en identifierad kontakt.
+Processen liknar den som beskrivs [&#x200B; i det här avsnittet &#x200B;](#presenting-an-anonymous-offer) om du vill visa ett erbjudande för en identifierad kontakt.
 
 I innehållet på webbsidan måste du lägga till följande skript som identifierar kontakten under anropet till erbjudandemotorn:
 

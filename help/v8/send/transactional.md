@@ -45,7 +45,7 @@ De viktigaste stegen för att införa detta är följande:
 1. [Testa meddelandet](transactional-template.md#test-message-template).
 1. [Publicera meddelandemallen](transactional-template.md#publish-message-template).
 
-När du utformat och publicerat transaktionsmeddelandemallen skickas relevanta data till Campaign via metoderna [SOAP ](../send/event-description.md) för PushEvent och PushEvents  om en motsvarande händelse aktiveras. Leveransen skickas sedan till målmottagarna.
+När du utformat och publicerat transaktionsmeddelandemallen skickas relevanta data till Campaign via metoderna [SOAP &#x200B;](../send/event-description.md) för PushEvent och PushEvents  om en motsvarande händelse aktiveras. Leveransen skickas sedan till målmottagarna.
 
 ## Skapa händelsetyper {#create-event-types}
 
