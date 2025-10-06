@@ -5,7 +5,7 @@ feature: Reporting
 role: Data Engineer
 level: Beginner
 exl-id: 03a6816b-e51a-4eaf-ab76-02d24f97ba46
-source-git-commit: 77ec01aaba1e50676bed57f503a9e4e8bb1fe54c
+source-git-commit: f75b95faa570d7c3f59fd8fb15692d3c3cbe0d36
 workflow-type: tm+mt
 source-wordcount: '755'
 ht-degree: 2%
@@ -85,7 +85,7 @@ När kuben har skapats definierar du dess mått. Dimensioner är analysaxlarna s
 Följ stegen nedan för att skapa dimensioner:
 
 1. Bläddra till fliken **[!UICONTROL Dimension]** i kuben och klicka på knappen **[!UICONTROL Add]** för att skapa en ny dimension.
-1. Klicka på ikonen **[!UICONTROL Edit expression]** i **[!UICONTROL Expression field]** för att markera fältet som innehåller de berörda data.
+1. Klicka på ikonen **[!UICONTROL Expression field]** i **[!UICONTROL Edit expression]** för att markera fältet som innehåller de berörda data.
 
    ![](assets/cube-add-dimension.png)
 
@@ -102,7 +102,7 @@ I vårt exempel vill vi bara visa år, månader och dagar. Observera att du inte
 
 1. Skapa en annan dimension för att analysera data i förhållande till mottagarens ort. Lägg till en ny dimension och markera staden i noden **[!UICONTROL Location]** i mottagarschemat.
 
-Du kan aktivera bindning för att göra det enklare att läsa information och länka värdena till en uppräkning.
+Du kan aktivera bindning för att göra det enklare att läsa information och länka värdena till en [uppräkning](../config/enumerations.md).
 
 Välj uppräkningen i listrutan. Observera att uppräkningen måste definieras som **[!UICONTROL Reserved for binning]**.
 

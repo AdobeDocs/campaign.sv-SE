@@ -6,7 +6,7 @@ feature: Workflows
 role: User, Admin
 version: Campaign v8, Campaign Classic v7
 exl-id: 2693856c-80b2-4e35-be8e-2a9760f8311f
-source-git-commit: 4cbccf1ad02af9133d51933e3e0d010b5c8c43bd
+source-git-commit: f75b95faa570d7c3f59fd8fb15692d3c3cbe0d36
 workflow-type: tm+mt
 source-wordcount: '2064'
 ht-degree: 0%
@@ -43,7 +43,7 @@ De arbetsflöden som beskrivs på den här sidan installeras med Adobe Campaign 
 
 | Tekniskt arbetsflöde | Paket | Beskrivning |
 |------|--------|-----------|
-| **Aliasrensning** (aliasCleansing) | Installerad som standard | Det här arbetsflödet standardiserar uppräkningsvärden. Den aktiveras varje dag klockan tre som standard. |
+| **Aliasrensning** (aliasCleansing) | Installerad som standard | Det här arbetsflödet standardiserar [uppräkning](../../v8/config/enumerations.md#alias-cleansing)-värden. Den aktiveras varje dag klockan tre som standard. |
 | **Fakturering** (fakturering) | Installerad som standard | Det här arbetsflödet skickar systemaktivitetsrapporten till faktureringsoperatorn via e-post. Den utlöses den 25:e varje månad på marknadsinstansen. |
 | **Kampanjjobb** (operationMgt) | Installerad som standard | Det här arbetsflödet hanterar jobben för marknadsföringskampanjer (lanserar målinriktning, filextrahering osv.). Det skapar också arbetsflöden för återkommande och periodiska kampanjer. |
 | **Samla in data för HeatMap-tjänsten** (collectDataHeatMapService) | Installerad som standard | Det här arbetsflödet hämtar data som krävs av HeatMap-tjänsten. |

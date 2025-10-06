@@ -5,9 +5,9 @@ feature: Personalization
 role: User
 level: Beginner
 exl-id: 5b9fa90c-c23e-47a7-b2ca-de75da4da2ab
-source-git-commit: 70af3bceee67082d6a1bb098e60fd2899dc74600
+source-git-commit: f75b95faa570d7c3f59fd8fb15692d3c3cbe0d36
 workflow-type: tm+mt
-source-wordcount: '703'
+source-wordcount: '702'
 ht-degree: 2%
 
 ---
@@ -48,8 +48,9 @@ Korrekturmålet kan definieras i leveransmallen eller vara specifikt för en lev
 Typen av korrekturmål har valts i listrutan **[!UICONTROL Targeting mode]**.
 
 * Använd alternativet **[!UICONTROL Definition of a specific proof target]** för att välja mottagare i databasen som korrekturmål.
-* Använd alternativet **[!UICONTROL Substitution of the address]** för att ange e-postadresser och använd målmottagardata för att validera innehållet. Ersättningsadresserna kan anges manuellt eller väljas i listrutan. Den associerade uppräkningen är Ersättningsadress (rcpAddress).
-Som standard utförs ersättningen slumpmässigt, men du kan välja en specifik mottagare från huvudmålet via ikonen **[!UICONTROL Detail]**.
+* Använd alternativet **[!UICONTROL Substitution of the address]** för att ange e-postadresser och använd målmottagardata för att validera innehållet. Ersättningsadresserna kan anges manuellt eller väljas i listrutan. Den associerade [uppräkningen](../config/enumerations.md) är **Ersättningsadressen (rcpAddress)**.
+
+  Som standard utförs ersättningen slumpmässigt, men du kan välja en specifik mottagare från huvudmålet via ikonen **[!UICONTROL Detail]**.
 
   ![](assets/target-of-proofs-substitution-details.png){width="800" align="left"}
 
@@ -62,7 +63,7 @@ Som standard utförs ersättningen slumpmässigt, men du kan välja en specifik 
 
   >[!NOTE]
   >
-  >Seed-adresser tillhör inte standardmottagartabellen (nms:mottagare), de skapas i en separat tabell. Om du utökar mottagartabellen med nya data måste du utöka både dirigerade adresstabellen och samma data.
+  >Seed-adresserna tillhör inte standardmottagartabellen (nms:recipient), de skapas i en separat tabell. Om du utökar mottagartabellen med nya data måste du utöka både dirigerade adresstabellen och samma data.
 
   Läs mer om dirigeringsadresser i [det här avsnittet](../audiences/test-profiles.md).
 
@@ -105,4 +106,4 @@ Som standard identifieras korrekturmeddelanden av `Proof #N` som omnämns i ämn
 
 Lär dig hur du skickar och validerar ett bevis på en e-postleverans.
 
->[!VIDEO](https://video.tv.adobe.com/v/3447003?captions=swe)
+>[!VIDEO](https://video.tv.adobe.com/v/333404)

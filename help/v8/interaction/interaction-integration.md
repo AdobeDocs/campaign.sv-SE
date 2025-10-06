@@ -5,9 +5,9 @@ description: Lär dig lägga till ett erbjudande på en webbsida
 feature: Interaction, Offers
 role: User, Admin
 exl-id: 1eb0775a-5da9-4a27-aa7b-339372748f9c
-source-git-commit: 1a0b473b005449be7c846225e75a227f6d877c88
+source-git-commit: f75b95faa570d7c3f59fd8fb15692d3c3cbe0d36
 workflow-type: tm+mt
-source-wordcount: '1458'
+source-wordcount: '1454'
 ht-degree: 0%
 
 ---
@@ -343,7 +343,7 @@ Som svar på frågan returnerar SOAP-tjänsten följande parametrar:
 Lägg till kommandot **nms:interaction#UpdateStatus** i URL:en, följt av följande parametrar:
 
 * **proposition**: teckensträng, den innehåller det förslag-ID som angetts som utdata under ett erbjudande. Se [Erbjudandeerbjudande](#offer-proposition).
-* **status**: strängtyp, den anger erbjudandets nya status. Möjliga värden visas i uppräkningen **propositionStatus** i schemat **nms:common**. Till exempel motsvarar talet 3 statusen **Accepterad**.
+* **status**: strängtyp, den anger erbjudandets nya status. Möjliga värden visas i **propositionStatus** [enumeration](../config/enumerations.md) i **nms:common** -schemat. Till exempel motsvarar talet 3 statusen **Accepterad**.
 * **context**: Med XML-element kan du lägga till kontextinformation i utrymmesschemat. Om schemat som används är **nms:interaction** bör **`<empty>`** läggas till.
 
 ### Exempel på hur du använder ett SOAP-samtal {#example-using-a-soap-call}

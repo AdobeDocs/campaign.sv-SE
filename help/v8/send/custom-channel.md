@@ -4,7 +4,7 @@ description: Lär dig skapa och skicka anpassade kanalleveranser med Adobe Campa
 role: User
 level: Beginner, Intermediate
 exl-id: d2d92de6-3974-41c5-a0fd-09bbf6cf0020
-source-git-commit: e2c7529fb7dc033f35f9c0d2e73273d7f20bac64
+source-git-commit: f75b95faa570d7c3f59fd8fb15692d3c3cbe0d36
 workflow-type: tm+mt
 source-wordcount: '542'
 ht-degree: 1%
@@ -17,7 +17,7 @@ Med Adobe Campaign kan du skapa anpassade externa eller API-kanaler som är inte
 
 Leveransskapande och -sändning kan utföras både i klientkonsolen och i webbgränssnittet. Men den anpassade kanalkonfigurationen utförs bara i klientkonsolen.
 
-Mer information om hur du skapar och skickar en leverans baserad på en anpassad kanal finns på [sidan](https://experienceleague.adobe.com/docs/campaign-web/v8/msg/gs-custom-channel.html?lang=sv-SE){target="_blank"}.
+Mer information om hur du skapar och skickar en leverans baserad på en anpassad kanal finns på [sidan](https://experienceleague.adobe.com/docs/campaign-web/v8/msg/gs-custom-channel.html){target="_blank"}.
 
 Här är stegen för att konfigurera en ny anpassad kanal i klientkonsolen. De här stegen är gemensamma för anpassade externa kanaler och API-kanaler:
 
@@ -33,7 +33,7 @@ Först måste du konfigurera schemat för att lägga till den nya kanalen i list
 
 1. I Campaign Explorer väljer du **Administration** > **Konfiguration** > **Datascheman**.
 
-1. Skapa ett schematillägg för att utöka uppräkningen messageType med den nya kanalen.
+1. Skapa ett schematillägg som utökar **messageType** [enumeration](../config/enumerations.md) med den nya kanalen.
 
    Exempel:
 
@@ -90,7 +90,7 @@ Ställ in den anpassade skärmdefinitionen från webbgränssnittet för Campaign
 
    ![](assets/cus-schema2.png){zoomable="yes"}
 
-1. Välj den flik som motsvarar kanalen och definiera hur fälten ska visas på leveransens innehållsskärm. Mer information om skärmversionen finns på [sidan](https://experienceleague.adobe.com/docs/campaign-web/v8/conf/schemas.html?lang=sv-SE#fields){target="_blank"}.
+1. Välj den flik som motsvarar kanalen och definiera hur fälten ska visas på leveransens innehållsskärm. Mer information om skärmversionen finns på [sidan](https://experienceleague.adobe.com/docs/campaign-web/v8/conf/schemas.html#fields){target="_blank"}.
 
    ![](assets/cus-schema3.png){zoomable="yes"}
 

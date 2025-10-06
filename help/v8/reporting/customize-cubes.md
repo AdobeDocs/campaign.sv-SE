@@ -6,7 +6,7 @@ feature: Reporting
 role: Data Engineer
 level: Beginner
 exl-id: 300aedd0-6b5d-4264-bd63-e26a41ab64db
-source-git-commit: 69ff08567f3a0ab827a118a089495fc75bb550c5
+source-git-commit: f75b95faa570d7c3f59fd8fb15692d3c3cbe0d36
 workflow-type: tm+mt
 source-wordcount: '1438'
 ht-degree: 1%
@@ -22,14 +22,14 @@ Använd databindning för att förenkla visningen av data genom att gruppera vä
 Sammantaget finns det tre typer av bindning:
 
 1. Använda manuellt definierade värdeintervall. Exempel: ålder, genomsnittlig kundvagn, antal öppnade leveranser osv.). Mer information finns i [Definiera varje behållare](#defining-each-bin).
-1. Beroende på värdena för en uppräkning: bara de värden som finns i uppräkningen visas, grupperas alla andra värden i Övrigt. Mer information finns i [Hantera behållare dynamiskt](#dynamically-managing-bins).
+1. Beroende på värdena för en [uppräkning](../config/enumerations.md): endast de värden som finns i uppräkningen visas, grupperas alla andra värden i Övrigt. Mer information finns i [Hantera behållare dynamiskt](#dynamically-managing-bins).
 1. Med värdeintervall grupperas alla andra. Exempel: 18 till 25 åringar, 26 till 59 åringar och andra. Mer information finns i [Skapa värdeintervall](#creating-value-ranges).
 
 Om du vill aktivera bindning markerar du lämplig ruta när du skapar dimensionen.
 
 ![](assets/cube-class.png)
 
-Du kan antingen skapa bindningar manuellt eller länka dem till en befintlig uppräkning.
+Du kan antingen skapa bindningar manuellt eller länka dem till en befintlig [uppräkning](../config/enumerations.md).
 
 Adobe Campaign har också en assistent för automatisk bindning: värden kan delas upp i N-grupper eller grupperas enligt de vanligaste värdena i databasen.
 
@@ -64,7 +64,7 @@ Så här skapar du den här typen av värdebindning:
 
    När uppräkningsvärdena uppdateras anpassas de matchande binderna automatiskt.
 
-Läs mer om uppräkningar på [den här sidan](../../v8/config/ui-settings.md#enumerations).
+   Läs mer om uppräkningar på [den här sidan](../config/enumerations.md).
 
 ### Skapa värdeintervall {#create-value-ranges}
 

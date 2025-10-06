@@ -6,9 +6,9 @@ role: User
 level: Beginner
 exl-id: b0f8c057-dd4e-4284-b5a4-157986a1d95a
 version: Campaign v8, Campaign Classic v7
-source-git-commit: a2efad26232cd380eea850a589b22b23928253e8
+source-git-commit: f75b95faa570d7c3f59fd8fb15692d3c3cbe0d36
 workflow-type: tm+mt
-source-wordcount: '4024'
+source-wordcount: '4027'
 ht-degree: 0%
 
 ---
@@ -104,7 +104,7 @@ Med länken **[!UICONTROL Advanced parameters]** kan du komma åt följande alte
 
    * **[!UICONTROL Do not update enumerations]**
 
-     Välj det här alternativet om du inte vill att listan med uppräknade värden i databasen ska vara upphöjd.
+     Välj det här alternativet om du inte vill att listan med uppräknade värden i databasen ska vara upphöjd. Läs mer om [uppräkningar](../config/enumerations.md).
 
 * Fliken **[!UICONTROL Variables]**
 
@@ -300,7 +300,7 @@ I nästa steg i importassistenten kan du markera eller skapa den mapp i vilken d
 
 >[!NOTE]
 >
->Det här steget visas endast när du importerar mottagare och när du använder Adobe Campaign standardmottagartabell (**nms:mottagare**).
+>Det här steget visas endast när du importerar mottagare och när du använder Adobe Campaign standardmottagartabell (**nms:recipient**).
 
 * Klicka på **[!UICONTROL Edit]**-länkarna för att markera mappen, listan eller tjänsten som du vill associera eller prenumerera på mottagarna.
 
@@ -481,7 +481,7 @@ Använd Campaign för att skapa webbformulär och samla in och hantera profilinf
 
 ![](assets/web-form-page.png)
 
-Lär dig hur du skapar webbformulär i [Campaign Classic v7-dokumentationen](https://experienceleague.adobe.com/docs/campaign-classic/using/designing-content/web-forms/about-web-forms.html?lang=sv-SE){target="_blank"}.
+Lär dig hur du skapar webbformulär i [Campaign Classic v7-dokumentationen](https://experienceleague.adobe.com/docs/campaign-classic/using/designing-content/web-forms/about-web-forms.html){target="_blank"}.
 
 **Relaterade ämnen**
 

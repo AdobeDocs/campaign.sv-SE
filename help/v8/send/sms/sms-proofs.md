@@ -6,7 +6,7 @@ role: User
 level: Beginner, Intermediate
 version: Campaign v8, Campaign Classic v7
 exl-id: d2ec4d92-7f00-47c8-98e6-0613d6387de0
-source-git-commit: a2efad26232cd380eea850a589b22b23928253e8
+source-git-commit: f75b95faa570d7c3f59fd8fb15692d3c3cbe0d36
 workflow-type: tm+mt
 source-wordcount: '243'
 ht-degree: 0%
@@ -26,7 +26,7 @@ Du kan skicka ett bevis för SMS-leveransen för att validera den:
    Det finns flera lägen för att skicka ett korrektur:
 
    * **[!UICONTROL Definition of a specific proof target]**: låter dig fråga med filter om adresserna i databasen är korrekturmål
-   * **[!UICONTROL Substitution of the address]**: gör att du kan ange dina testadresser och använda målmottagardata för att validera innehållet. Ersättningsadresserna kan anges manuellt eller väljas i listrutan. Den associerade uppräkningen är **[!UICONTROL Substitution address (rcpAddress)]**.
+   * **[!UICONTROL Substitution of the address]**: gör att du kan ange dina testadresser och använda målmottagardata för att validera innehållet. Ersättningsadresserna kan anges manuellt eller väljas i listrutan. Den associerade [uppräkningen](../../config/enumerations.md) är **[!UICONTROL Substitution address (rcpAddress)]**.
 Som standard utförs ersättningen slumpmässigt, men du kan välja en specifik mottagare från huvudmålet via ikonen **[!UICONTROL Detail]**.
    * **[!UICONTROL Seed addresses]**: gör att du kan komma åt dirigerade adresser som korrekturmål. Dessa adresser kan importeras från en fil eller anges manuellt.
    * **[!UICONTROL Specific target and Seed addresses]**: gör att du kan kombinera startadresser och adresser från mottagaren.

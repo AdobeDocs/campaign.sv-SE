@@ -6,7 +6,7 @@ feature: Campaigns, Templates
 role: User
 version: Campaign v8, Campaign Classic v7
 exl-id: 1bd8d3e7-aaa9-4e00-96bb-0d30614ab380
-source-git-commit: a5f7cf6e21b263f8a7fb4fa19a88bebb78390c3d
+source-git-commit: f75b95faa570d7c3f59fd8fb15692d3c3cbe0d36
 workflow-type: tm+mt
 source-wordcount: '987'
 ht-degree: 0%
@@ -169,8 +169,7 @@ När du skapar en kampanjmall måste du ange följande information:
 * Ange mallens **etikett**: etiketten är obligatorisk och är standardetikett för alla kampanjer som baseras på den här mallen.
 * Välj kampanjens **natur** i listrutan. De värden som är tillgängliga i den här listan är de som har sparats i uppräkningen **[!UICONTROL natureOp]**.
 
-Lär dig hur du får åtkomst till och konfigurerar dina uppräkningar på [den här sidan](../../v8/config/ui-settings.md#enumerations).
-
+  Lär dig hur du får åtkomst till och konfigurerar dina uppräkningar på [den här sidan](../../v8/config/enumerations.md).
 
 * Välj typen **av kampanj**: unik, återkommande eller periodisk. Som standard används kampanjmallar för unika kampanjer. Återkommande och periodiska kampanjer beskrivs i [det här avsnittet](recurring-periodic-campaigns.md).
 * Ange kampanjens varaktighet, dvs. antalet dagar som kampanjen ska äga rum. När du skapar en kampanj som baseras på den här mallen fylls start- och slutdatumet för kampanjen i automatiskt.
