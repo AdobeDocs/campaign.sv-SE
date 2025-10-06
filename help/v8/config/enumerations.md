@@ -5,10 +5,10 @@ feature: Configuration, Application Settings
 role: Developer
 version: Campaign v8, Campaign Classic v7
 level: Intermediate, Experienced
-source-git-commit: 2898fe400e9bf53fc2fe8fde26ccc61ec43bc69e
+source-git-commit: a1f479538a2d93a2ec13e35cb6813e09c8c4a5f8
 workflow-type: tm+mt
-source-wordcount: '827'
-ht-degree: 0%
+source-wordcount: '797'
+ht-degree: 1%
 
 ---
 
@@ -16,19 +16,19 @@ ht-degree: 0%
 
 En uppräkning (kallas även för en specificerad lista) är en fördefinierad lista med värden som du kan använda för att fylla i vissa fält. Uppräkningar hjälper till att standardisera fältvärden, vilket gör datainmatningen mer konsekvent och förenklar frågor.
 
-Värdena visas i en nedrullningsbar lista när de är tillgängliga. Du kan antingen välja ett värde direkt eller börja skriva - prediktiv inmatning föreslår matchning av värden och slutför dem automatiskt.
+När du har definierat värden visas de i en nedrullningsbar lista. Ett värde kan väljas direkt eller anges med prediktiv inmatning, vilket föreslår och slutför matchande poster. Vissa fält innehåller fördefinierade uppräkningar och ytterligare uppräkningar kan skapas om det behövs.
 
 ![](assets/enum_values.png)
 
-Vissa konsolfält har konfigurerats med uppräkningar. Om en uppräkning är **öppen** kan du även lägga till nya värden direkt i fältet.
-
-![Åtkomstuppräkningar](../config/assets/enumerations-menu.png)
 
 ## Uppräkningstyper {#types-of-enum}
 
 Uppräkningar lagras i mappen **[!UICONTROL Administration > Platform > Enumerations]** i Utforskaren.
 
-De kan vara: Open, System, Emoticon eller Closed.
+![Åtkomstuppräkningar](../config/assets/enumerations-menu.png)
+
+
+En uppräkning kan vara: **Open**, **System**, **Emoticon** eller **Closed**.
 
 * Med en **Open**-uppräkning kan användare lägga till nya värden direkt i fälten baserat på den här uppräkningen.
 * En **stängd**-uppräkning har en fast lista med värden som bara kan ändras från mappen **[!UICONTROL Administration > Platform > Enumerations]** i Utforskaren.
@@ -44,11 +44,12 @@ Det finns specifika alternativ för uppräkningarna **Öppna** och **Stängda**:
 
 ## Rensa alias {#alias-cleansing}
 
-I uppräkningsfälten kan du välja ett värde eller ange ett anpassat värde som inte är tillgängligt i listrutan. Anpassade värden kan läggas till i de befintliga uppräkningsvärdena, som ett nytt - i det här fallet måste alternativet **[!UICONTROL Open]** väljas. Dessa anpassade värden kan rensas med hjälp av funktioner för aliasrensning. Om en användare till exempel anger `Adob` i stället för `Adobe` kan aliasrensningsprocessen automatiskt ersätta den med rätt term.
+I uppräkningsfält kan du välja ett värde i listrutan eller ange det manuellt om det inte finns i listan. Anpassade värden kan läggas till i uppräkningen när alternativet **[!UICONTROL Open]** är aktiverat. Dessa värden kan sedan standardiseras genom aliasrensning, som automatiskt ersätter variationer med rätt term (t.ex. konverterar `Adob` till `Adobe`).
+
 
 >[!CAUTION]
 >
->Datarensning är en kritisk process som påverkar data i databasen. Adobe Campaign genomför massuppdateringar, vilket kan leda till att vissa värden tas bort. Den här åtgärden är därför reserverad för expertanvändare.
+>Datarensning är en kritisk åtgärd som påverkar databasvärden. Adobe Campaign utför massuppdateringar, vilket kan leda till att vissa värden tas bort. Den här åtgärden är endast avsedd för expertanvändare.
 
 Aktivera alternativet **[!UICONTROL Alias cleansing]** om du vill använda datarensningsfunktioner för en uppräkning. När det här alternativet är markerat visas fliken **[!UICONTROL Alias]** längst ned i fönstret.
 
