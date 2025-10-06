@@ -5,7 +5,7 @@ feature: Application Settings
 role: Admin, Developer
 level: Beginner
 exl-id: 9fa6fc42-45be-41db-9b4a-19b3b0c40dcd
-source-git-commit: fbde111671fb972f6c96ba45eba4c8a88dbcac64
+source-git-commit: 2898fe400e9bf53fc2fe8fde26ccc61ec43bc69e
 workflow-type: tm+mt
 source-wordcount: '1041'
 ht-degree: 0%
@@ -160,4 +160,4 @@ Du kan också konfigurera sortering eller kombinera sorteringsvillkor. Gör så 
 ## Ytterligare resurser
 
 * **[Börja med användargränssnittet för Campaign](../start/campaign-ui.md)** - Upptäck hur du kommer åt och bläddrar i Adobe Campaign-gränssnittet.
-* **[Arbeta med uppräkningar](../dev/enumerations.md)** - Standardisera fältvärden med fördefinierade listrutor för snabbare och enhetligare datainmatning.
+* **[Arbeta med uppräkningar](../config/enumerations.md)** - Standardisera fältvärden med fördefinierade listrutor för snabbare och enhetligare datainmatning.

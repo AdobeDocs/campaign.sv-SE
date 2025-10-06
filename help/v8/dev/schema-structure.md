@@ -5,7 +5,7 @@ feature: Schema Extension, Configuration, Data Model
 role: Developer
 level: Intermediate, Experienced
 exl-id: 9c4a9e71-3fc8-4b4e-8782-0742bbeaf426
-source-git-commit: fbde111671fb972f6c96ba45eba4c8a88dbcac64
+source-git-commit: 2898fe400e9bf53fc2fe8fde26ccc61ec43bc69e
 workflow-type: tm+mt
 source-wordcount: '1417'
 ht-degree: 1%
@@ -124,7 +124,7 @@ Följande regler måste följas:
 
 Datatypen anges via attributet **type** i elementen **`<attribute>`** och **`<element>`**.
 
-En detaljerad lista finns i [Campaign Classic v7-dokumentationen](https://experienceleague.adobe.com/docs/campaign-classic/using/configuring-campaign-classic/schema-reference/elements-attributes/schema-introduction.html?lang=sv-SE#configuring-campaign-classic){target="_blank"}.
+En detaljerad lista finns i [Campaign Classic v7-dokumentationen](https://experienceleague.adobe.com/docs/campaign-classic/using/configuring-campaign-classic/schema-reference/elements-attributes/schema-introduction.html#configuring-campaign-classic){target="_blank"}.
 
 När det här attributet inte är ifyllt är **string** standarddatatypen om inte elementet innehåller underordnade element. Om den gör det används den bara för att strukturera elementen hierarkiskt (**`<location>`** element i vårt exempel).
 
@@ -223,7 +223,7 @@ Om du vill länka ett standardvärde till ett fält kan du använda `<default>  
 
 ### Uppräkningar {#enumerations}
 
-Använd kostnadsfria, fasta eller databasbaserade [uppräkningar](../dev/enumerations.md) för att kontrollera fältvärden. De tillhandahåller nedrullningsbara listor för enklare inmatning, enhetliga data och flexibel schemadesign.
+Använd kostnadsfria, fasta eller databasbaserade [uppräkningar](../config/enumerations.md) för att kontrollera fältvärden. De tillhandahåller nedrullningsbara listor för enklare inmatning, enhetliga data och flexibel schemadesign.
 
 #### Kostnadsfri uppräkning {#free-enumeration}
 
