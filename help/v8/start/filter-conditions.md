@@ -5,7 +5,7 @@ feature: Query Editor
 role: User
 level: Beginner
 version: Campaign v8, Campaign Classic v7
-source-git-commit: 95c944963feee746a2bb83a85f075134c91059d1
+source-git-commit: 79cfde18cce2f9f48cbd6d77026350dec1a71536
 workflow-type: tm+mt
 source-wordcount: '3323'
 ht-degree: 33%
@@ -352,7 +352,7 @@ Om du väljer en **[!UICONTROL Expression]**-typformel kommer du till fönstret&
 
 Uttrycksredigeraren ser ut så här:
 
-![](assets/s_ncs_user_filter_define_expression.png)
+![](assets/filter-define-expression.png)
 
 Här kan du markera fält i databastabellerna och lägga till avancerade funktioner. Följande funktioner är tillgängliga:
 
