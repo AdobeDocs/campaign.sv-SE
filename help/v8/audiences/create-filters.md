@@ -6,7 +6,7 @@ role: User
 level: Beginner
 exl-id: 873578f6-6af9-4d0c-8df3-cce320fc6a4e
 version: Campaign v8, Campaign Classic v7
-source-git-commit: a2efad26232cd380eea850a589b22b23928253e8
+source-git-commit: 95c944963feee746a2bb83a85f075134c91059d1
 workflow-type: tm+mt
 source-wordcount: '1607'
 ht-degree: 0%
@@ -52,7 +52,7 @@ Använd den sista fliken för att förhandsgranska filtrerade data.
 ![](assets/built-in-filter-preview.png)
 
 
-Inbyggda fördefinierade filter är:
++++  Inbyggda fördefinierade filter
 
 <table> 
  <tbody> 
@@ -159,6 +159,7 @@ Inbyggda fördefinierade filter är:
  </tbody> 
 </table>
 
++++
 
 ### Standardfilter{#default-filters}
 
@@ -328,10 +329,10 @@ Om du vill utföra avancerade filtreringsfunktioner använder du funktioner för
 
 Lär dig hur du skapar avancerade frågor i dessa kompletta exempel:
 
-* Lär dig hur du aktiverar enkla mottagarattribut på [den här sidan](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/targeting-activities/query.html?lang=sv-SE){target="_blank"}.
-* Lär dig filtrera efter mottagare som inte har kontaktats under de senaste 7 dagarna på [den här sidan](https://experienceleague.adobe.com/docs/campaign/automation/workflows/use-cases/designing-queries/query-many-to-many-relationship.html?lang=sv-SE){target="_blank"}.
-* Lär dig hur du återställer listan över operatorer som kan filtreras efter aktiva konton på [den här sidan](https://experienceleague.adobe.com/docs/campaign/automation/workflows/use-cases/designing-queries/create-a-filter.html?lang=sv-SE){target="_blank"}.
-* Lär dig hur du skapar en målgrupp för e-postfödelsedag på [den här sidan](https://experienceleague.adobe.com/docs/campaign/automation/workflows/use-cases/deliveries/send-a-birthday-email.html?lang=sv-SE){target="_blank"}.
+* Lär dig hur du aktiverar enkla mottagarattribut på [den här sidan](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/targeting-activities/query.html){target="_blank"}.
+* Lär dig filtrera efter mottagare som inte har kontaktats under de senaste 7 dagarna på [den här sidan](https://experienceleague.adobe.com/docs/campaign/automation/workflows/use-cases/designing-queries/query-many-to-many-relationship.html){target="_blank"}.
+* Lär dig hur du återställer listan över operatorer som kan filtreras efter aktiva konton på [den här sidan](https://experienceleague.adobe.com/docs/campaign/automation/workflows/use-cases/designing-queries/create-a-filter.html){target="_blank"}.
+* Lär dig hur du skapar en målgrupp för e-postfödelsedag på [den här sidan](https://experienceleague.adobe.com/docs/campaign/automation/workflows/use-cases/deliveries/send-a-birthday-email.html){target="_blank"}.
 
 
 ### Avancerade parametrar för fördefinierade filter {#param-for-data-filters}
@@ -353,3 +354,6 @@ Avancerade parametrar är tillgängliga för fördefinierade filter. Bläddra ti
 
    * Du kan koppla en SQL-tabell till filtret så att den blir gemensam för alla redigerare som delar tabellen.
    * Om du inte vill att någon användare ska kunna åsidosätta filtret markerar du alternativet **[!UICONTROL Do not restrict the filter]**. Det här alternativet är t.ex. aktivt för filter av typen &quot;Mottagare av en leverans&quot; och &quot;Mottagare av leveranser som tillhör en mapp&quot; som finns i leveransguiden. Dessa filter kan inte överladdas.
+
+
+### Operatorer

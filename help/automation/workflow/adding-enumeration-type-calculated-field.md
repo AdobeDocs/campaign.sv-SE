@@ -6,9 +6,9 @@ feature: Workflows, Data Management
 role: User
 version: Campaign v8, Campaign Classic v7
 exl-id: 4fe2ae81-faa6-4777-a332-70c451bca75b
-source-git-commit: 4cbccf1ad02af9133d51933e3e0d010b5c8c43bd
+source-git-commit: 95c944963feee746a2bb83a85f075134c91059d1
 workflow-type: tm+mt
-source-wordcount: '437'
+source-wordcount: '436'
 ht-degree: 0%
 
 ---
@@ -19,7 +19,7 @@ Här vill vi skapa en fråga av typen **[!UICONTROL Enumerations]**. Det här f�
 
 * Vilken tabell måste markeras?
 
-  mottagartabellen (nms:mottagare)
+  Mottagartabellen (nms:recipient)
 
 * Fält som ska markeras i utdatakolumnen?
 
@@ -31,18 +31,18 @@ Här vill vi skapa en fråga av typen **[!UICONTROL Enumerations]**. Det här f�
 
 Använd följande steg:
 
-1. Öppna den allmänna frågeredigeraren och markera mottagartabellen (**[!UICONTROL nms:recipient]**).
+1. Öppna den [allmänna frågeredigeraren](../../v8/start/query-editor.md) och markera mottagartabellen (**[!UICONTROL nms:recipient]**).
 1. I fönstret **[!UICONTROL Data to extract]** väljer du **[!UICONTROL Last name]**, **[!UICONTROL First name]** och **[!UICONTROL Gender]**.
 
    ![](assets/query_editor_nveau_73.png)
 
-1. Klicka på **[!UICONTROL Next]** i fönstret **[!UICONTROL Sorting]**: ingen sortering behövs för det här exemplet.
+1. Klicka på **[!UICONTROL Sorting]** i fönstret **[!UICONTROL Next]**: ingen sortering behövs för det här exemplet.
 1. I **[!UICONTROL Data filtering]** väljer du **[!UICONTROL Filtering conditions]**.
 1. I fönstret **[!UICONTROL Target element]** anger du ett filtervillkor för att samla in mottagare som talar engelska.
 
    ![](assets/query_editor_nveau_74.png)
 
-1. Klicka på **[!UICONTROL Add a calculated field]** i fönstret **[!UICONTROL Data formatting]**.
+1. Klicka på **[!UICONTROL Data formatting]** i fönstret **[!UICONTROL Add a calculated field]**.
 
    ![](assets/query_editor_nveau_75.png)
 
@@ -65,7 +65,7 @@ Använd följande steg:
 
    ![](assets/query_editor_nveau_77.png)
 
-1. Klicka på **[!UICONTROL Next]** i fönstret **[!UICONTROL Data formatting]**.
+1. Klicka på **[!UICONTROL Data formatting]** i fönstret **[!UICONTROL Next]**.
 1. **[!UICONTROL start the preview of the data]** i förhandsgranskningsfönstret.
 
    Den extra kolumnen definierar kön för 0, 1 och 2:

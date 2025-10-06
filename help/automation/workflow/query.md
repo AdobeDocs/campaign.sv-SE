@@ -6,9 +6,9 @@ feature: Workflows, Targeting Activity, Query Editor
 role: User, Data Engineer
 exl-id: 717e4f7c-3a8e-4930-9a06-b7412d6e1675
 version: Campaign v8, Campaign Classic v7
-source-git-commit: a2efad26232cd380eea850a589b22b23928253e8
+source-git-commit: 95c944963feee746a2bb83a85f075134c91059d1
 workflow-type: tm+mt
-source-wordcount: '1607'
+source-wordcount: '1603'
 ht-degree: 0%
 
 ---
@@ -20,16 +20,13 @@ ht-degree: 0%
 ## Skapa en fråga {#creating-a-query}
 
 Med en fråga kan du välja ett mål enligt villkor. Du kan koppla en segmentkod till frågeresultatet och infoga ytterligare data i den.
-Mer information om frågeexempel finns i [det här avsnittet](querying-recipient-table.md).
-
->[!NOTE]
->
->Adobe Campaign Web UI har en kraftfull frågemodellerare som förenklar filtreringen av databaser för att välja specifika mål baserat på olika kriterier, vilket gör att du enklare kan skapa och hantera frågor. Mer information om frågemodelleraren för webbgränssnitt finns i [Adobe Campaign Web UI-dokumentationen](https://experienceleague.adobe.com/sv/docs/campaign-web/v8/query-database/query-modeler-overview){target=_blank}.
-
+Lär dig hur du skapar frågor via användningsfall i [det här avsnittet](querying-recipient-table.md). Se även avsnittet om [Frågeredigeraren](../../v8/start/query-editor.md).
 
 ![](assets/query-activity.png){width="70%" align="center" zoomable="yes"}
 
-Mer information om hur du använder och hanterar ytterligare data finns i [Lägg till data](#adding-data).
+>[!NOTE]
+>
+>Adobe Campaign webbgränssnitt har en kraftfull frågemodellerare som förenklar filtreringen av databaser och väljer specifika mål baserat på olika kriterier, vilket gör att du enklare kan skapa och hantera frågor. Mer information om frågemodelleraren för webbgränssnitt finns i [Adobe Campaign Web UI-dokumentationen](https://experienceleague.adobe.com/en/docs/campaign-web/v8/query-database/query-modeler-overview){target=_blank}.
 
 Med länken **[!UICONTROL Edit query...]** kan du definiera måltyp, begränsningar och urvalskriterier för populationen på följande sätt:
 
@@ -160,7 +157,7 @@ I följande exempel syftar frågan till att identifiera män mellan 18 och 30 å
 * schema
 * recCount
 
-Den här uppsättningen med tre värden identifierar den population som frågan riktar sig till. **[!UICONTROL tableName]** är namnet på tabellen som registrerar målidentifierarna, **[!UICONTROL schema]** är schemat för populationen (vanligtvis nms:mottagare) och **[!UICONTROL recCount]** är antalet element i tabellen.
+Den här uppsättningen med tre värden identifierar den population som frågan riktar sig till. **[!UICONTROL tableName]** är namnet på tabellen som registrerar målidentifierarna, **[!UICONTROL schema]** är schemat för populationen (vanligtvis nms :recipient) och **[!UICONTROL recCount]** är antalet element i tabellen.
 
 Det här värdet är arbetstabellens schema. Den här parametern är giltig för alla övergångar med **[!UICONTROL tableName]** och **[!UICONTROL schema]**.
 

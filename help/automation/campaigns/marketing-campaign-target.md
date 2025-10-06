@@ -6,7 +6,7 @@ feature: Campaigns, Audiences
 role: User
 version: Campaign v8, Campaign Classic v7
 exl-id: 70a63632-f66d-40f2-806d-bde89303936a
-source-git-commit: a5f7cf6e21b263f8a7fb4fa19a88bebb78390c3d
+source-git-commit: 95c944963feee746a2bb83a85f075134c91059d1
 workflow-type: tm+mt
 source-wordcount: '1470'
 ht-degree: 0%
@@ -32,7 +32,7 @@ To build the delivery target, you can define filtering criteria for the recipien
 Du kan importera en population till en lista och sedan ange den här listan som mål i leveranser. Gör så här:
 
 1. Redigera leveransen och klicka på länken **[!UICONTROL To]** för att ändra målpopulationen.
-1. Välj alternativet **[!UICONTROL Defined via the database]** på fliken **[!UICONTROL Main target]** och klicka på **[!UICONTROL Add]** för att välja mottagare.
+1. Välj alternativet **[!UICONTROL Main target]** på fliken **[!UICONTROL Defined via the database]** och klicka på **[!UICONTROL Add]** för att välja mottagare.
 
    ![](assets/select-main-target.png)
 
@@ -222,7 +222,7 @@ Den här populationen kan komma från en lista med mottagare eller så kan du de
 
 >[!NOTE]
 >
->Adobe Campaign frågeredigerare visas i [det här avsnittet](../workflow/query.md).
+>Adobe Campaign frågeredigerare visas i [det här avsnittet](../../v8/start/query-editor.md).
 
 ### Extrahera kontrollgruppen från huvudmålet {#extract-the-control-group-from-the-main-target}
 
@@ -248,4 +248,4 @@ I den här videon förklaras hur du lägger till en kontrollgrupp i en kampanj.
 
 >[!VIDEO](https://video.tv.adobe.com/v/335606?quality=12)
 
-Ytterligare utbildningsvideor för Campaign är tillgängliga [här](https://experienceleague.adobe.com/docs/campaign-learn/tutorials/getting-started/introduction-to-adobe-campaign.html?lang=sv-SE){target="_blank"}.
+Ytterligare utbildningsvideor för Campaign är tillgängliga [här](https://experienceleague.adobe.com/docs/campaign-learn/tutorials/getting-started/introduction-to-adobe-campaign.html){target="_blank"}.

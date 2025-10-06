@@ -6,18 +6,18 @@ feature: Query Editor, Workflows
 role: User
 version: Campaign v8, Campaign Classic v7
 exl-id: 8e6fd9b4-77c4-4af8-921b-c3fe104fa5bc
-source-git-commit: 4cbccf1ad02af9133d51933e3e0d010b5c8c43bd
+source-git-commit: 95c944963feee746a2bb83a85f075134c91059d1
 workflow-type: tm+mt
-source-wordcount: '204'
+source-wordcount: '220'
 ht-degree: 2%
 
 ---
 
 # Skapa ett filter {#creating-a-filter}
 
-De filter som är tillgängliga i Adobe Campaign definieras via filtervillkor som skapas i samma operativsystem som frågor.
+De filter som är tillgängliga i Adobe Campaign definieras via filtervillkor som skapas i samma operativsystem som när frågor skapas i [frågeredigeraren](../../v8/start/query-editor.md).
 
-Noden **[!UICONTROL Administration > Configuration > Predefined filters]** innehåller alla filter som används i listorna och översikterna.
+Noden **[!UICONTROL Administration > Configuration > Predefined filters]** innehåller alla standardfilter. Vissa av dem används i listor och översikter. Läs mer om [inbyggda fördefinierade filter](../../v8/audiences/create-filters.md).
 
 Operatorlistan kan till exempel filtreras av **[!UICONTROL Active accounts]**:
 

@@ -6,35 +6,22 @@ role: User
 level: Beginner
 exl-id: b0f8c057-dd4e-4284-b5a4-157986a1d95a
 version: Campaign v8, Campaign Classic v7
-source-git-commit: f75b95faa570d7c3f59fd8fb15692d3c3cbe0d36
+source-git-commit: 95c944963feee746a2bb83a85f075134c91059d1
 workflow-type: tm+mt
-source-wordcount: '4027'
+source-wordcount: '3832'
 ht-degree: 0%
 
 ---
 
 # Importera data till Campaign {#ootb-profiles}
 
-Med Campaign kan du lägga till kontakter i molndatabasen. Du kan läsa in en fil, schemalägga och automatisera flera kontaktuppdateringar, samla in data på webben eller ange profilinformation direkt i mottagartabellen.
-
-Kom igång med [målgrupper](audiences.md)
-
-Förstå kampanjens [datamodell](../dev/datamodel.md)
-
-## Importera profiler i ett arbetsflöde
+Med Campaign kan du lägga till kontakter i databasen. Du kan läsa in en fil, schemalägga och automatisera flera kontaktuppdateringar, samla in data på webben eller ange profilinformation direkt i mottagartabellen.
 
 Profilimport konfigureras i dedikerade mallar som körs via arbetsflöden via aktiviteten **Importera**. De kan upprepas automatiskt enligt ett schema, t.ex. för att automatisera datautbyte mellan olika informationssystem. Läs mer i [det här avsnittet](../../automation/workflow/recurring-import-workflow.md).
 
 ![](assets/import-wf.png)
 
-
-## Kör enhetsimporter
-
-Skapa och kör ett allmänt dataimportjobb för att läsa in kontakter i molndatabasen.
-
-![](assets/new-import.png)
-
-### Importera data
+## Köra en import
 
 Med Adobe Campaign kan du importera data till databasen från en eller flera filer i text-, CSV-, TAB- eller XML-format. De här filerna är kopplade till en tabell (huvud eller länkad) och varje fält i källfilen/källfilerna är kopplat till ett fält i databasen.
 
@@ -42,19 +29,18 @@ Med Adobe Campaign kan du importera data till databasen från en eller flera fil
 >
 >Du kan importera data utan att mappa dem till databasdata med funktionen **[!UICONTROL Import a list]**. Data kan sedan användas enbart i arbetsflöden via objektet **[!UICONTROL Read list]**. Mer information finns på [den här sidan](../../automation/workflow/read-list.md).
 
+
+## Använda importassistenten
+
 Med importassistenten kan du konfigurera en import, definiera dess alternativ (till exempel dataomvandling) och starta körningen. Det är en serie skärmar vars innehåll beror på typen av import (enkel eller flera) och operatörens rättigheter.
 
 Importassistenten visas när ett nytt importjobb har skapats.
 
->[!NOTE]
->
->Om du använder en IIS-webbserver kan en konfiguration behövas för att tillåta överföring av stora filer (>28 MB).
-
-#### Source {#source-file}
+![](assets/new-import.png)
 
 I källfilen sammanfaller varje rad med en post. Data i poster avgränsas med avgränsare (blanksteg, tabb, tecken osv.). Det innebär att data hämtas i form av kolumner, och varje kolumn är kopplad till ett fält i databasen.
 
-## Steg 1 - Välj importmall {#step-1---choosing-the-import-template}
+### Steg 1 - Välj importmall {#step-1---choosing-the-import-template}
 
 När du startar importassistenten måste du först välja en mall. Om du till exempel vill konfigurera import av mottagare som har fått ett nyhetsbrev följer du stegen nedan:
 
@@ -84,37 +70,7 @@ När du startar importassistenten måste du först välja en mall. Om du till ex
    >
    >Multipla importer bör endast tillgodose specifika behov och rekommenderas inte.
 
-### Avancerade parametrar {#advanced-parameters}
-
-Med länken **[!UICONTROL Advanced parameters]** kan du komma åt följande alternativ:
-
-* Fliken **[!UICONTROL General]**
-
-   * **[!UICONTROL Stop execution if there are too many rejects]**
-
-     Det här alternativet är markerat som standard. Du kan avmarkera den om du vill fortsätta att köra importen oavsett antalet avvisade. Körningen stoppas som standard om de första 100 raderna avvisas.
-
-   * **[!UICONTROL Trace mode]**
-
-     Välj det här alternativet om du vill spåra importkörningen för varje rad.
-
-   * **[!UICONTROL Start the job in a detached process]**
-
-     Det här alternativet är markerat som standard. Du kan koppla loss körningen av importen så att den inte påverkar andra pågående jobb i databasen.
-
-   * **[!UICONTROL Do not update enumerations]**
-
-     Välj det här alternativet om du inte vill att listan med uppräknade värden i databasen ska vara upphöjd. Läs mer om [uppräkningar](../config/enumerations.md).
-
-* Fliken **[!UICONTROL Variables]**
-
-  Du kan definiera variabler som är associerade med jobbet och som ska vara tillgängliga i frågeredigerarna och beräkningsfälten. Om du vill skapa en variabel klickar du på **[!UICONTROL Add]** och använder variabelredigeraren.
-
-  >[!IMPORTANT]
-  >
-  >Fliken **[!UICONTROL Variables]** är endast avsedd för programmering av arbetsflödestyp och bör endast konfigureras av expertanvändare.
-
-## Steg 2 - Source filval {#step-2---source-file-selection}
+#### Steg 2 - Source filval {#step-2---source-file-selection}
 
 Källfilen kan vara i textformat (txt, csv, tab, fixed columns) eller xml.
 
@@ -146,7 +102,7 @@ Du kan visa resultatet av konfigurationen i förhandsvisningszonen i fönstrets 
 
 Klicka på **[!UICONTROL OK]** för att spara formateringen och klicka sedan på **[!UICONTROL Next]** för att visa nästa steg.
 
-## Steg 3 - Fältmappning {#step-3---field-mapping}
+### Steg 3 - Fältmappning {#step-3---field-mapping}
 
 Du måste sedan välja målschemat och mappa data för varje kolumn till fält i databasen.
 
@@ -173,7 +129,7 @@ Du måste sedan välja målschemat och mappa data för varje kolumn till fält i
 
 * Du kan lägga till beräkningsfält med lämplig ikon till höger om den centrala tabellen. Med beräkningsfält kan du utföra komplexa omformningar, lägga till virtuella kolumner eller sammanfoga data från flera kolumner. I följande avsnitt finns mer information om de olika möjligheterna.
 
-### Beräknade fält {#calculated-fields}
+#### Beräknade fält {#calculated-fields}
 
 Beräknade fält är nya kolumner som läggs till i källfilen och beräknas från andra kolumner. Beräkningsfält kan sedan kopplas till fält i Adobe Campaign-databasen. Avstämningsåtgärder är dock inte möjliga för beräknade fält.
 
@@ -190,7 +146,7 @@ Det finns fyra typer av beräknade fält:
 
   ![](assets/s_ncs_user_import_wizard03_4.png)
 
-#### Steg 4 - Avstämning {#step-4---reconciliation}
+### Steg 4 - Avstämning {#step-4---reconciliation}
 
 I importassistentens avstämningssteg kan du definiera läget för att stämma av data från filen med befintliga data i databasen och ange prioritetsregler mellan fildata och databasdata. Konfigurationsfönstret ser ut så här:
 
@@ -292,7 +248,7 @@ Du kan generera en fil som innehåller dessa poster via ikonen **[!UICONTROL Exp
 
 ![](assets/s_ncs_user_import_errors_export.png)
 
-#### Steg 5 - ytterligare steg vid import av mottagare {#step-5---additional-step-when-importing-recipients}
+### Steg 5 - ytterligare steg vid import av mottagare {#step-5---additional-step-when-importing-recipients}
 
 I nästa steg i importassistenten kan du markera eller skapa den mapp i vilken data ska importeras, automatiskt mappa importerade mottagare med en (ny eller befintlig) lista och prenumerera på mottagare för en tjänst.
 
@@ -348,7 +304,7 @@ I nästa steg i importassistenten kan du markera eller skapa den mapp i vilken d
 
 Klicka på **[!UICONTROL Next]** för att validera det här steget och visa följande steg.
 
-## Steg 6 - Starta importen {#step-6---launching-the-import}
+### Steg 6 - Starta importen {#step-6---launching-the-import}
 
 I det sista steget i assistenten kan du starta dataimporten. Klicka på knappen **[!UICONTROL Start]** om du vill göra det.
 
@@ -356,7 +312,7 @@ I det sista steget i assistenten kan du starta dataimporten. Klicka på knappen 
 
 Du kan sedan övervaka importjobbets körning (se [Övervaka arbetsflödeskörning](../../automation/workflow/monitor-workflow-execution.md)).
 
-### Exportera data
+## Exportera data
 
 Med exportjobben kan du komma åt och extrahera data från databasen: kontakter, klienter, listor, segment osv.
 
@@ -366,7 +322,7 @@ Med exportassistenten kan du konfigurera och exportera, definiera alternativ och
 
 Exportassistenten visas när du har skapat ett nytt exportjobb.
 
-#### Steg 1 - Välj exportmall {#step-1---choosing-the-export-template}
+### Steg 1 - Välj exportmall {#step-1---choosing-the-export-template}
 
 När du startar exportassistenten måste du först välja en mall. Om du till exempel vill konfigurera exporten av mottagare som nyligen har registrerat sig följer du stegen nedan:
 
@@ -382,7 +338,7 @@ När du startar exportassistenten måste du först välja en mall. Om du till ex
 1. Ange ett namn för export i fältet **[!UICONTROL Label]**. Du kan lägga till en beskrivning.
 1. Välj exporttyp. Det finns två typer av export: **[!UICONTROL Simple export]** om du bara vill exportera en fil och **[!UICONTROL Multiple export]** om du vill exportera flera filer i en enda körning från en eller flera typer av källdokument.
 
-## Steg 2 - Filtyp att exportera {#step-2---type-of-file-to-export}
+### Steg 2 - Filtyp att exportera {#step-2---type-of-file-to-export}
 
 Välj den typ av dokument som ska exporteras, dvs. schemat för de data som ska exporteras.
 
@@ -415,7 +371,7 @@ Välj ett utdataformat för exportfilen. Följande format kan användas: text, t
 * Ange datumformat och talformat. Det gör du genom att klicka på knappen **[!UICONTROL Edit]** för fältet i fråga och använda redigeraren.
 * För fält som innehåller uppräknade värden kan du välja **[!UICONTROL Export labels instead of internal values of enumerations]**. Titeln kan till exempel sparas i formatet **1=Mr.**, **2=Miss**, **3=Mrs.**. Om det här alternativet väljs exporteras **Mr.**, **miss** och **Mrs.**.
 
-#### Steg 4 - Val av data {#step-4---data-selection}
+### Steg 4 - Val av data {#step-4---data-selection}
 
 Markera de fält som ska exporteras. Så här gör du:
 
@@ -426,19 +382,19 @@ Markera de fält som ska exporteras. Så här gör du:
 
 1. Klicka på knappen **[!UICONTROL Add]** för att anropa funktioner.
 
-#### Steg 5 - Sortera kolumner {#step-5---sorting-columns}
+### Steg 5 - Sortera kolumner {#step-5---sorting-columns}
 
 Välj sorteringsordning för kolumnerna.
 
 ![](assets/s_ncs_user_export_wizard05.png)
 
-#### Steg 6 - Filtervillkor {#step-6---filter-conditions-}
+### Steg 6 - Filtervillkor {#step-6---filter-conditions-}
 
 Du kan lägga till filtervillkor för att undvika att exportera alla data. Konfigurationen för den här filtreringen är densamma som målinriktningen för mottagare i leveransassistenten.
 
 ![](assets/s_ncs_user_export_wizard05_b.png)
 
-#### Steg 7 - Dataformatering {#step-7---data-formatting}
+### Steg 7 - Dataformatering {#step-7---data-formatting}
 
 Du kan ändra ordningen och etiketten på fälten för utdatafilen och använda omformningar på källdata.
 
@@ -458,7 +414,7 @@ Om du exporterar en samling element (t.ex. mottagarnas prenumerationer, de listo
 
 ![](assets/s_ncs_user_export_wizard06_c.png)
 
-#### Steg 8 - Förhandsgranska data {#step-8---data-preview}
+### Steg 8 - Förhandsgranska data {#step-8---data-preview}
 
 Klicka på **[!UICONTROL Start the preview of the data]** om du vill se en förhandsgranskning av exportresultatet. Som standard visas de första 200 raderna. Om du vill ändra det här värdet klickar du på pilarna till höger om fältet **[!UICONTROL Lines to display]**.
 
@@ -466,7 +422,7 @@ Klicka på **[!UICONTROL Start the preview of the data]** om du vill se en förh
 
 Klicka på flikarna längst ned i assistenten för att växla från förhandsgranskning av resultat i kolumner till resultat i XML-format. Du kan även visa de genererade SQL-frågorna.
 
-#### Steg 9 - Starta exporten {#step-9---launching-the-export}
+### Steg 9 - Starta exporten {#step-9---launching-the-export}
 
 Klicka på **[!UICONTROL Start]** om du vill starta dataexporten.
 
@@ -481,10 +437,11 @@ Använd Campaign för att skapa webbformulär och samla in och hantera profilinf
 
 ![](assets/web-form-page.png)
 
-Lär dig hur du skapar webbformulär i [Campaign Classic v7-dokumentationen](https://experienceleague.adobe.com/docs/campaign-classic/using/designing-content/web-forms/about-web-forms.html?lang=sv-SE){target="_blank"}.
+Lär dig hur du skapar webbformulär i [Campaign Classic v7-dokumentationen](https://experienceleague.adobe.com/docs/campaign-classic/using/designing-content/web-forms/about-web-forms.html){target="_blank"}.
 
 **Relaterade ämnen**
 
 * [Skapa målgrupper](audiences.md)
 * [Deduplicera profiler](../../automation/workflow/deduplication-merge.md)
 * [Förbättra profildata](../../automation/workflow/enrich-data.md)
+* Förstå kampanjens [datamodell](../dev/datamodel.md)

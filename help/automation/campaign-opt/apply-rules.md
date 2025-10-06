@@ -4,7 +4,7 @@ title: Använd typologiregler
 description: Lär dig hur du använder typologiregler
 feature: Typology Rules
 exl-id: 4ec3bbe1-fc4c-4b1e-989c-f4dcf8ee8d5e
-source-git-commit: a8568e0c1e9af11b533b7d435691dc12cc0a2485
+source-git-commit: 95c944963feee746a2bb83a85f075134c91059d1
 workflow-type: tm+mt
 source-wordcount: '955'
 ht-degree: 7%
@@ -46,7 +46,7 @@ Det är möjligt att konfigurera typologiregler så att de endast gäller vissa 
 
 Om du vill definiera programvillkoren för en regel klickar du på länken **[!UICONTROL Edit the rule application conditions...]** på fliken **[!UICONTROL General]**.
 
-Använd sedan frågeredigeraren för att definiera filtreringsvillkor. I följande exempel gäller kapacitetsregeln endast leveranser med ordet&quot;offer&quot; på etiketten eller leveranser som skapats före 1 april 2013.
+Använd sedan [frågeredigeraren](../../v8/start/query-editor.md) för att definiera filtreringsvillkor. I följande exempel gäller kapacitetsregeln endast leveranser med ordet&quot;offer&quot; på etiketten eller leveranser som skapats före 1 april 2013.
 
 ![](assets/campaign_opt_create_capacity_criterion.png)
 
@@ -60,7 +60,7 @@ Godkännanden verkställs automatiskt varje kväll via databasrensningsarbetsfl�
 
 I vissa beräkningar används värden som inte ändras dagligen. Det skulle därför vara irrelevant att omberäkna data varje dag och överlagra databasen helt utan någonting. Om en process till exempel förbättrar marknadsföringsdatabasen med kundbenägenhetspoäng och inköpsinformation varje vecka, behöver data som baseras på dessa värden inte beräknas om varje dag.
 
-För att göra detta kan du i fältet **[!UICONTROL Frequency]** på fliken **[!UICONTROL General]** definiera en maximal period under vilken mål sparas. Som standard anger värdet **&#x200B;**&#x200B;att beräkningen är giltig tills nästa gång den dagliga omskiljningen utförs.
+För att göra detta kan du i fältet **[!UICONTROL Frequency]** på fliken **[!UICONTROL General]** definiera en maximal period under vilken mål sparas. Som standard anger värdet **** att beräkningen är giltig tills nästa gång den dagliga omskiljningen utförs.
 
 Om du vill spara resultaten efter den här perioden anger du ett värde som är större än 12 i fältet **[!UICONTROL Frequency]**: när den här perioden har gått ut tillämpas alla regler igen.
 

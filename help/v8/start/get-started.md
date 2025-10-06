@@ -6,7 +6,7 @@ role: User
 level: Beginner
 exl-id: 04b12907-3cb1-40f1-90b8-1524d84edf2d
 version: Campaign v8, Campaign Classic v7
-source-git-commit: 428de72e0459b95a6db0b06ec8541d0475b72fdd
+source-git-commit: 95c944963feee746a2bb83a85f075134c91059d1
 workflow-type: tm+mt
 source-wordcount: '1033'
 ht-degree: 20%
@@ -48,7 +48,7 @@ Lär dig hur du lägger till profiler i Campaign i [det här avsnittet](import.m
 
 ## Målinriktad segmentering {#targeted-segmentation}
 
-Adobe Campaign har kraftfulla och användarvänliga funktioner för segmentering och målinriktning som gör att du kan skapa mycket välriktade och differentierade erbjudanden. Med den beskrivande analysfunktionen kan ni analysera information både i det övre och det nedre loppet av era marknadsföringskampanjer, och med filterhanterings- och den grafiska frågeredigeringsfunktionen kan ni filtrera era era mottagarpopulationer och sampla eller skapa målgrupper baserat på ett obegränsat antal kriterier.
+Adobe Campaign har kraftfulla och användarvänliga funktioner för segmentering och målinriktning som gör att du kan skapa mycket välriktade och differentierade erbjudanden. Med den beskrivande analysfunktionen kan du analysera information uppströms och nedströms från marknadsföringskampanjer, och med funktionerna för [filterhantering](../audiences/create-filters.md) och grafisk [frågeredigerare](query-editor.md) kan du filtrera din mottagarpopulation och sampla eller skapa målgrupper baserat på ett obegränsat antal villkor.
 
 Funktionen med avancerad datahantering utökar möjligheterna för databearbetning. Det förenklar och optimerar målgruppsprocessen genom att inkludera data som inte är modellerade i datamappningen.
 
