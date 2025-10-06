@@ -27,7 +27,7 @@ Du kan konfigurera:
 
 >[!NOTE]
 >
->Adobe Campaign webbgränssnitt har en omdesignad arbetsyta för arbetsflöden som gör att man kan skapa mer dynamiska och personaliserade kundresor. Mer information om arbetsflöden för webbgränssnitt finns i [Adobe Campaign webbgränssnittsdokumentation](https://experienceleague.adobe.com/en/docs/campaign-web/v8/wf/gs-workflows){target=_blank}.
+>Adobe Campaign webbgränssnitt har en omdesignad arbetsyta för arbetsflöden som gör att man kan skapa mer dynamiska och personaliserade kundresor. Mer information om arbetsflöden för webbgränssnitt finns i [Adobe Campaign webbgränssnittsdokumentation](https://experienceleague.adobe.com/sv/docs/campaign-web/v8/wf/gs-workflows){target=_blank}.
 
 
 ## Arbetsflöden för design och användning {#gs-ac-wf}
@@ -36,26 +36,26 @@ Använd Adobe Campaign arbetsflöden för att förbättra hastigheten och skalan
 
 Läs mer om arbetsflöden, användargränssnitt och körning på dessa sidor:
 
-* [Kom igång med arbetsflöden](https://experienceleague.adobe.com/docs/campaign/automation/workflows/introduction/about-workflows.html){target="_blank"}
+* [Kom igång med arbetsflöden](https://experienceleague.adobe.com/docs/campaign/automation/workflows/introduction/about-workflows.html?lang=sv-SE){target="_blank"}
 
-* [God praxis för arbetsflöden](https://experienceleague.adobe.com/docs/campaign/automation/workflows/introduction/workflow-best-practices.html){target="_blank"}
+* [God praxis för arbetsflöden](https://experienceleague.adobe.com/docs/campaign/automation/workflows/introduction/workflow-best-practices.html?lang=sv-SE){target="_blank"}
 
-* [Inbyggda tekniska arbetsflöden](https://experienceleague.adobe.com/docs/campaign/automation/workflows/introduction/wf-type/technical-workflows.html){target="_blank"}
+* [Inbyggda tekniska arbetsflöden](https://experienceleague.adobe.com/docs/campaign/automation/workflows/introduction/wf-type/technical-workflows.html?lang=sv-SE){target="_blank"}
 
-* [Kör arbetsflöden för övervakning](https://experienceleague.adobe.com/docs/campaign/automation/workflows/monitoring-workflows/monitor-workflow-execution.html){target="_blank"}
+* [Kör arbetsflöden för övervakning](https://experienceleague.adobe.com/docs/campaign/automation/workflows/monitoring-workflows/monitor-workflow-execution.html?lang=sv-SE){target="_blank"}
 
-* [Skapa en målgrupp i ett arbetsflöde för marknadsföringskampanjer](https://experienceleague.adobe.com/docs/campaign/automation/campaign-orchestration/marketing-campaign-target.html){target="_blank"}
+* [Skapa en målgrupp i ett arbetsflöde för marknadsföringskampanjer](https://experienceleague.adobe.com/docs/campaign/automation/campaign-orchestration/marketing-campaign-target.html?lang=sv-SE){target="_blank"}
 
 ## Arbetsflödesaktiviteter {#wf-activities}
 
-Läs mer om tillgängliga arbetsflödesaktiviteter i [det här avsnittet](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/activities.html){target="_blank"}
+Läs mer om tillgängliga arbetsflödesaktiviteter i [det här avsnittet](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/activities.html?lang=sv-SE){target="_blank"}
 
 Arbetsflödesaktiviteter grupperas efter kategori. De fyra aktivitetskategorierna är tillgängliga:
 
-* [Målaktiviteter](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/targeting-activities/targeting-activities.html){target="_blank"}: Fråga, Läslista, Berikning, Förening med mera
-* [Flödeskontrollaktiviteter](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/flow-control-activities/flow-control-activities.html){target="_blank"}: Schemaläggare, gaffel, varning, extern signal med mera
-* [Åtgärdsaktiviteter](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/action-activities/action-activities.html){target="_blank"}: Flerkanalsleveranser, JavaScript-kod, CRM-aktiviteter, Uppdatera sammanställning med mera
-* [Händelseaktiviteter](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/event-activities/event-activities.html){target="_blank"}: Filöverföring, webbnedladdning med mera
+* [Målaktiviteter](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/targeting-activities/targeting-activities.html?lang=sv-SE){target="_blank"}: Fråga, Läslista, Berikning, Förening med mera
+* [Flödeskontrollaktiviteter](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/flow-control-activities/flow-control-activities.html?lang=sv-SE){target="_blank"}: Schemaläggare, gaffel, varning, extern signal med mera
+* [Åtgärdsaktiviteter](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/action-activities/action-activities.html?lang=sv-SE){target="_blank"}: Flerkanalsleveranser, JavaScript-kod, CRM-aktiviteter, Uppdatera sammanställning med mera
+* [Händelseaktiviteter](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/event-activities/event-activities.html?lang=sv-SE){target="_blank"}: Filöverföring, webbnedladdning med mera
 
 <!--
 ### Change data source activity {#change-data-source-activity}
@@ -76,7 +76,7 @@ To use the **[!UICONTROL Change Data Source]** activity:
 
 1. Query your targeted recipients with a **[!UICONTROL Query]** activity. 
 
-    For more information on the **[!UICONTROL Query]** activity, refer to [this page](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/targeting-activities/query.html){target="_blank"}.
+    For more information on the **[!UICONTROL Query]** activity, refer to [this page](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/targeting-activities/query.html?lang=sv-SE){target="_blank"}.
 
 1. From the **[!UICONTROL Targeting]** tab, add a **[!UICONTROL Change data source]** activity and double-click it to select **[!UICONTROL Default data source]**.
     
@@ -84,7 +84,7 @@ To use the **[!UICONTROL Change Data Source]** activity:
 
 1. From the **[!UICONTROL Actions]** tab, drag and drop a **[!UICONTROL JavaScript code]** activity to perform unitary operations on the working table.
 
-    For more information on the **[!UICONTROL JavaScript code]** activity, refer to [this page](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/action-activities/sql-code-and-javascript-code.html){target="_blank"}.
+    For more information on the **[!UICONTROL JavaScript code]** activity, refer to [this page](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/action-activities/sql-code-and-javascript-code.html?lang=sv-SE){target="_blank"}.
 
 1. Add another **[!UICONTROL Change data source]** activity to switch back to the Cloud database. 
     
@@ -97,7 +97,7 @@ To use the **[!UICONTROL Change Data Source]** activity:
 
 När du har skapat arbetsflödet kan du få tillgång till ytterligare alternativ med knappen **[!UICONTROL Properties]** för ytterligare konfiguration.
 
-Läs mer om **Arbetsflödesegenskaper** på [den här sidan](https://experienceleague.adobe.com/docs/campaign/automation/workflows/advanced-management/workflow-properties.html){target="_blank"}.
+Läs mer om **Arbetsflödesegenskaper** på [den här sidan](https://experienceleague.adobe.com/docs/campaign/automation/workflows/advanced-management/workflow-properties.html?lang=sv-SE){target="_blank"}.
 
 På fliken **[!UICONTROL Execution]** i arbetsflödets **[!UICONTROL Properties]** kan du välja att länka arbetsflödet till olika lagerställen och optimera arbetsbelastningshanteringen. Mer information om **lagerställen** finns i [Snowflake-dokumentationen](https://docs.snowflake.com/en/user-guide/warehouses-overview.html){target="_blank"}.
 
@@ -119,7 +119,7 @@ Beroende på arbetsflödets syfte kan du välja mellan följande tre lagerställ
 
 Designa återkommande arbetsflöde och skapa en ny leveransinstans varje gång arbetsflödet körs. Om ditt arbetsflöde till exempel är utformat för att köras en gång i veckan resulterar det i 52 leveranser efter ett år. Detta innebär också att loggarna separeras av varje leveransinstans.
 
-Lär dig hur du skapar en återkommande kampanj på [den här sidan](https://experienceleague.adobe.com/docs/campaign/automation/campaign-orchestration/recurring-periodic-campaigns.html){target="_blank"}.
+Lär dig hur du skapar en återkommande kampanj på [den här sidan](https://experienceleague.adobe.com/docs/campaign/automation/campaign-orchestration/recurring-periodic-campaigns.html?lang=sv-SE){target="_blank"}.
 
 
 ## Utnyttja utlösarhändelser

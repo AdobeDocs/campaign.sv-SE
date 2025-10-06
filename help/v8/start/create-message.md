@@ -137,7 +137,7 @@ Du kan skicka meddelanden till profiler som inte lagras i databasen, utan i en e
 1. Markera filen som innehåller mottagarna.
 1. När du importerar mottagarna klickar du på länken **[!UICONTROL File format definition...]** för att markera och konfigurera den externa filen.
 
-   Mer information om dataimport finns i [Campaign Classic v7-dokumentationen](https://experienceleague.adobe.com/en/docs/campaign-classic/using/getting-started/importing-and-exporting-data/generic-imports-exports/executing-import-jobs#step-2---source-file-selection){target="_blank"}.
+   Mer information om dataimport finns i [Campaign Classic v7-dokumentationen](https://experienceleague.adobe.com/sv/docs/campaign-classic/using/getting-started/importing-and-exporting-data/generic-imports-exports/executing-import-jobs#step-2---source-file-selection){target="_blank"}.
 
 1. Klicka på **[!UICONTROL Finish]** och konfigurera leveransen som en standardleverans.
 
