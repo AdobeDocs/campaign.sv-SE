@@ -5,9 +5,9 @@ feature: Microsoft CRM Integration
 role: Admin, User
 level: Beginner, Intermediate
 exl-id: 4f9e8f74-27dc-482c-a83c-25623b53560f
-source-git-commit: d80a39d7f0df939d0e9e3f782d5d9aef3d459a32
+source-git-commit: fbde111671fb972f6c96ba45eba4c8a88dbcac64
 workflow-type: tm+mt
-source-wordcount: '1376'
+source-wordcount: '1386'
 ht-degree: 1%
 
 ---
@@ -92,7 +92,7 @@ Du måste sedan koda certifikatet i base64. Det gör du genom att använda en Ba
 1. På **Nödvändiga behörigheter** klickar du på **Lägg till** och **Välj ett API > Dynamics CRM Online**.
 1. Klicka på kryssrutan **Välj**, aktivera kryssrutan **Använd Dynamics 365 som organisationsanvändare** och klicka på **Välj**.
 1. Välj sedan **Manifest** på menyn **Hantera** i din app.
-1. Ange egenskapen `allowPublicClient` från `null` till `true` i redigeraren **Manifest** och klicka på **Spara**.
+1. Ange egenskapen **från** till `allowPublicClient` i redigeraren `null`Manifest`true` och klicka på **Spara**.
 
 **Steg 2**: Medgivande från bidragsadministratör
 
@@ -119,7 +119,7 @@ Appanvändaren är den användare som programmet som registrerats ovan kommer at
 
 **Steg 2**: Tilldela rätt licens till den skapade användaren
 
-1. Klicka på **Admin-appen** från [Microsoft Azure](https://portal.azure.com).
+1. Klicka på [Admin-appen](https://portal.azure.com) från **Microsoft Azure**.
 1. Gå till **Användare > Aktiva användare** och klicka på den nyskapade användaren.
 1. Klicka på **Redigera produktlicenser** och välj **Dynamics 365 Customer Engagement Plan**.
 1. Klicka på **Stäng**.
@@ -132,7 +132,7 @@ Appanvändaren är den användare som programmet som registrerats ovan kommer at
 1. Tilldela **program-ID** för [det program du skapade tidigare](#get-client-id-microsoft).
 1. Klicka på **Hantera roller** och välj rollen **Systemadministratör** för användaren.
 
-## Konfigurera kampanj {#configure-acc-for-microsoft}
+## Konfigurera Campaign {#configure-acc-for-microsoft}
 
 ### Skapa anslutningen{#new-ms-dyn-external-account}
 
@@ -194,6 +194,8 @@ Adobe Campaign och Microsoft Dynamics 365 är nu anslutna. Du kan konfigurera da
 Om du vill synkronisera data mellan Adobe Campaign-data och Microsoft CRM skapar du ett arbetsflöde och använder aktiviteten **[!UICONTROL CRM connector]**.
 
 Läs mer om datasynkronisering [på den här sidan](crm-data-sync.md).
+
+Läs mer om uppräkningshantering i Campaign [på den här sidan](../dev/enumerations.md).
 
 ### Datatyper för fält som stöds {#ms-dyn-supported-types}
 

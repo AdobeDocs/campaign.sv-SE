@@ -5,9 +5,9 @@ feature: Salesforce Integration
 role: Admin, User
 level: Beginner, Intermediate
 exl-id: 1e20f3b9-d1fc-411c-810b-6271360286f9
-source-git-commit: 41e39e046ec77de8b5e657ba76645898ff1cd2d7
+source-git-commit: fbde111671fb972f6c96ba45eba4c8a88dbcac64
 workflow-type: tm+mt
-source-wordcount: '349'
+source-wordcount: '359'
 ht-degree: 0%
 
 ---
@@ -79,3 +79,5 @@ Adobe Campaign och Salesforce.com är nu anslutna. Du kan konfigurera datasynkro
 Om du vill synkronisera data mellan Adobe Campaign-data och SFDC skapar du ett arbetsflöde och använder aktiviteten **[!UICONTROL CRM connector]**.
 
 Läs mer om datasynkronisering [på den här sidan](crm-data-sync.md).
+
+Läs mer om uppräkningshantering i Campaign [på den här sidan](../dev/enumerations.md).

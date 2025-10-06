@@ -6,9 +6,9 @@ role: User
 level: Beginner
 version: Campaign v8, Campaign Classic v7
 exl-id: a7846b95-7570-4dce-b3f4-d3cc23eefcac
-source-git-commit: 428de72e0459b95a6db0b06ec8541d0475b72fdd
+source-git-commit: fbde111671fb972f6c96ba45eba4c8a88dbcac64
 workflow-type: tm+mt
-source-wordcount: '1235'
+source-wordcount: '1121'
 ht-degree: 1%
 
 ---
@@ -29,12 +29,12 @@ Du får åtkomst till Adobe Campaign via klientkonsolen eller webbgränssnittet.
 
   >[!AVAILABILITY]
   >
-  >Användargränssnittet för Campaign-webben är bara tillgängligt för Campaign v8-användare som ansluter till Campaign med sin Adobe ID. Läs mer om [Adobe Identity Management System (IMS)](https://helpx.adobe.com/se/enterprise/using/identity.html){target="_blank"}.
+  >Användargränssnittet för Campaign-webben är bara tillgängligt för Campaign v8-användare som ansluter till Campaign med sin Adobe ID. Läs mer om [Adobe Identity Management System (IMS)](https://helpx.adobe.com/enterprise/using/identity.html){target="_blank"}.
   >
 
 >[!CAUTION]
 >
->Den här dokumentationen fokuserar på användning av Campaign Client-konsolen. Om du använder användargränssnittet för Campaign v8 läser du [den här dokumentationen](https://experienceleague.adobe.com/docs/campaign-web/v8/campaign-web-home.html?lang=sv-SE){target="_blank"} om du är Campaign-användare.
+>Den här dokumentationen fokuserar på användning av Campaign Client-konsolen. Om du använder användargränssnittet för Campaign v8 läser du [den här dokumentationen](https://experienceleague.adobe.com/docs/campaign-web/v8/campaign-web-home.html){target="_blank"} om du är Campaign-användare.
 
 ## Arbeta med klientkonsolen {#ui-access}
 
@@ -128,12 +128,12 @@ Som Campaign v8-användare, från och med version 8.6.1, har du tillgång till e
 
 >[!AVAILABILITY]
 >
->Användargränssnittet för Campaign-webben är bara tillgängligt för Campaign v8-användare som ansluter till Campaign med sin Adobe ID. Läs mer om [Adobe Identity Management System (IMS)](https://helpx.adobe.com/se/enterprise/using/identity.html){target="_blank"}.
+>Användargränssnittet för Campaign-webben är bara tillgängligt för Campaign v8-användare som ansluter till Campaign med sin Adobe ID. Läs mer om [Adobe Identity Management System (IMS)](https://helpx.adobe.com/enterprise/using/identity.html){target="_blank"}.
 >
 
-Läs mer om det nya webbanvändargränssnittet för Campaign i [den här dokumentationen](https://experienceleague.adobe.com/docs/campaign-web/v8/campaign-web-home.html?lang=sv-SE){target="_blank"}. Du kan även gå till sidan [Vanliga frågor och svar](https://experienceleague.adobe.com/sv/docs/campaign-web/v8/start/faq){target="_blank"} i dokumentationen för Campaign-webbanvändargränssnittet.
+Läs mer om det nya webbanvändargränssnittet för Campaign i [den här dokumentationen](https://experienceleague.adobe.com/docs/campaign-web/v8/campaign-web-home.html){target="_blank"}. Du kan även gå till sidan [Vanliga frågor och svar](https://experienceleague.adobe.com/en/docs/campaign-web/v8/start/faq){target="_blank"} i dokumentationen för Campaign-webbanvändargränssnittet.
 
-Ytterligare och avancerade funktioner, konfigurationer och inställningar är bara tillgängliga i klientkonsolen. Läs mer om funktioner som är tillgängliga i båda användargränssnitten [&#x200B; i dokumentationen för användargränssnittet för Campaign &#x200B;](https://experienceleague.adobe.com/docs/campaign-web/v8/start/capability-matrix.html?lang=sv-SE){target="_blank"}.
+Ytterligare och avancerade funktioner, konfigurationer och inställningar är bara tillgängliga i klientkonsolen. Läs mer om funktioner som är tillgängliga i båda användargränssnitten [ i dokumentationen för användargränssnittet för Campaign ](https://experienceleague.adobe.com/docs/campaign-web/v8/start/capability-matrix.html){target="_blank"}.
 
 
 ## Språk som stöds {#languages}
@@ -153,7 +153,7 @@ Vilka språk som stöds beror på användargränssnittet.
   >
   >Språket väljs under installationen och **kan inte ändras** därefter.
 
-* För språk som stöds för Campaign-webbgränssnittet [finns den här sidan](https://experienceleague.adobe.com/docs/campaign-web/v8/start/connect-to-campaign.html?lang=sv-SE#language-pref){target="_blank"}.
+* För språk som stöds för Campaign-webbgränssnittet [finns den här sidan](https://experienceleague.adobe.com/docs/campaign-web/v8/start/connect-to-campaign.html#language-pref){target="_blank"}.
 
 ## Format
 
@@ -189,25 +189,7 @@ De största skillnaderna mellan amerikansk engelska och brittisk engelska är:
 </table>
 
 
+## Ytterligare resurser
 
-## Standardenheter {#default-units}
-
-I fälten som uttrycker en varaktighet (t.ex. giltighetsperiod för resurserna för en leverans, sista datum för godkännande av en aktivitet, osv.) kan värdet uttryckas i följande **enheter**:
-
-* **[!UICONTROL s]** i sekunder,
-* **[!UICONTROL mn]** i minuter,
-* **[!UICONTROL h]** i timmar,
-* **[!UICONTROL d]** i dagar.
-
-
-## Uppräkning {#enumeration}
-
-Med hjälp av inmatningsfälten i en nedrullningsbar lista kan du ange ett uppräkningsvärde som kan lagras och sedan föreslås som ett alternativ i listrutan.
-
-I fältet **[!UICONTROL City]** på fliken **[!UICONTROL General]** i en mottagarprofil kan du till exempel ange London. När du trycker på Retur för att bekräfta det här värdet tillfrågas du om du vill spara det här värdet för uppräkningen som är associerad med fältet.  Om du klickar på **[!UICONTROL Yes]** är det här värdet tillgängligt i listrutan för det relevanta fältet.
-
-Uppräkningar (kallas även&quot;specificerade listor&quot;) hanteras av administratören via avsnittet **[!UICONTROL Administration > Platform > Enumerations]**.
-
-[Arbeta med uppräkningar](../dev/enumerations.md)
-
-Läs mer om [Uppräkningar i scheman](../dev/schema-structure.md#enumerations)
+* **[Arbeta med uppräkningar](../dev/enumerations.md)** - Standardisera fältvärden med fördefinierade listrutor för snabbare och enhetligare datainmatning.
+* **[Uppräkningar i scheman](../dev/schema-structure.md#enumerations)** - Använd kostnadsfria, fasta eller databasbaserade uppräkningar i dina scheman som kampanjutvecklare för att kontrollera fältvärden.
