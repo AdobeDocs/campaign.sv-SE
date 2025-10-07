@@ -71,17 +71,17 @@ Med den här länken kan du komma åt extraheringsassistenten och definiera den 
 
 ![](assets/s_ncs_user_mail_delivery_format_wz.png)
 
-Du kan infoga en anpassad URL i extraheringsfilen. Mer information finns i Adobe Campaign Classic [dokumentation](https://experienceleague.adobe.com/docs/campaign-classic/using/designing-content/web-forms/publishing-a-web-form.html){target="_blank"}.
+Du kan infoga en anpassad URL i extraheringsfilen. Mer information finns i Adobe Campaign Classic [dokumentation](https://experienceleague.adobe.com/docs/campaign-classic/using/designing-content/web-forms/publishing-a-web-form.html?lang=sv-SE){target="_blank"}.
 
 >[!NOTE]
 >
->Den här assistenten innehåller de steg i exportassistenten som beskrivs i Adobe Campaign Classic [dokumentation](https://experienceleague.adobe.com/docs/campaign-classic/using/getting-started/importing-and-exporting-data/generic-imports-exports/executing-export-jobs.html){target="_blank"}.
+>Den här assistenten innehåller de steg i exportassistenten som beskrivs i Adobe Campaign Classic [dokumentation](https://experienceleague.adobe.com/docs/campaign-classic/using/getting-started/importing-and-exporting-data/generic-imports-exports/executing-export-jobs.html?lang=sv-SE){target="_blank"}.
 
 ## Validera leveransen{#validating}
 
 Kontrollera resultatet av analysen och innehållet i utdatafilen.
 
-Extraheringsfilen skapas i samband med en marknadsföringskampanj på extraheringsdatumet. Du kan visa innehållet i den extraherade filen, godkänna den eller ändra formatet och starta extraheringen igen om det behövs. När filen har godkänts kan du skicka e-postmeddelandet till routern. Läs mer på [den här sidan](https://experienceleague.adobe.com/docs/campaign/automation/campaign-orchestration/marketing-campaign-approval.html){target="_blank"}.
+Extraheringsfilen skapas i samband med en marknadsföringskampanj på extraheringsdatumet. Du kan visa innehållet i den extraherade filen, godkänna den eller ändra formatet och starta extraheringen igen om det behövs. När filen har godkänts kan du skicka e-postmeddelandet till routern. Läs mer på [den här sidan](https://experienceleague.adobe.com/docs/campaign/automation/campaign-orchestration/marketing-campaign-approval.html?lang=sv-SE){target="_blank"}.
 
 Globala koncept vid validering av en leverans visas i [det här avsnittet](../start/create-message.md#validate-the-delivery).
 
@@ -118,4 +118,4 @@ När du har validerat extraheringsfilen klickar du på **Bekräfta leverans** s�
 
 Bekräftelsen startar dataextraheringen i den angivna filen.
 
-När alla godkännanden har beviljats inom ramen för en marknadsföringskampanj skapas extraheringsfilerna via ett särskilt arbetsflöde som, i en standardkonfiguration, startar automatiskt när en direktleverans väntar på extrahering. Läs mer i [det här avsnittet](https://experienceleague.adobe.com/docs/campaign/automation/campaign-orchestration/marketing-campaign-deliveries.html){target="_blank"}.
+När alla godkännanden har beviljats inom ramen för en marknadsföringskampanj skapas extraheringsfilerna via ett särskilt arbetsflöde som, i en standardkonfiguration, startar automatiskt när en direktleverans väntar på extrahering. Läs mer i [det här avsnittet](https://experienceleague.adobe.com/docs/campaign/automation/campaign-orchestration/marketing-campaign-deliveries.html?lang=sv-SE){target="_blank"}.
