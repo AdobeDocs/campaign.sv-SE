@@ -5,10 +5,10 @@ feature: Release Notes
 hide: true
 hidefromtoc: true
 exl-id: 5ac6bda9-86c8-4200-b285-6fee2a29039d
-source-git-commit: e4f6c70ecdcf7414b5f49a43933cfd1c967a0905
+source-git-commit: 110a2cac920ca3087f6fcb3cab8474729f6075be
 workflow-type: tm+mt
-source-wordcount: '1581'
-ht-degree: 37%
+source-wordcount: '1577'
+ht-degree: 36%
 
 ---
 
@@ -45,7 +45,7 @@ _28 oktober 2021_
 <tbody> 
 <tr> 
 <td> <p>Modulen Kampanjoptimering är nu tillgänglig. Med den här modulen kan du styra, filtrera och övervaka leveransen. För att undvika konflikter mellan kampanjer kan Adobe Campaign testa olika kombinationer genom att tillämpa särskilda begränsningsregler. Detta garanterar att de skickade meddelandena uppfyller kundernas behov och förväntningar och företagets kommunikationspolicy.</p>
-<p>Mer information finns i den <a href="https://experienceleague.adobe.com/docs/campaign/automation/campaign-optimization/campaign-typologies.html?lang=sv-SE#campaign-optimization">detaljerade dokumentationen</a>.</p>
+<p>Mer information finns i den <a href="https://experienceleague.adobe.com/docs/campaign/automation/campaign-optimization/campaign-typologies.html#campaign-optimization">detaljerade dokumentationen</a>.</p>
 </td> 
 </tr> 
 </tbody> 
@@ -115,20 +115,20 @@ _7 september 2021_
 
 **Förbättringar**
 
-* Efter att livscykeln har upphört har Flash tagits bort från alla relaterade Campaign-funktioner och -komponenter och ersatts med HTML5. Diagramtypen **Mätare** har tagits bort. (NEO-30330) [Läs mer](https://experienceleague.adobe.com/docs/campaign-classic/using/reporting/creating-new-reports/creating-a-chart.html?lang=sv-SE)
+* Efter att livscykeln har upphört har Flash tagits bort från alla relaterade Campaign-funktioner och -komponenter och ersatts med HTML5. Diagramtypen **Mätare** har tagits bort. (NEO-30330) [Läs mer](https://experienceleague.adobe.com/docs/campaign-classic/using/reporting/creating-new-reports/creating-a-chart.html)
 * När du installerar klientkonsolen i Windows kontrollerar installationsprogrammet nu om det finns en överordnad registernod och skapar en om den saknas. Detta förhindrar potentiella problem när konsolen startas. (NEO-34854)
 * Funktionen för att spåra signaturer har förbättrats för att förhindra fel som har att göra med hur tredje parts verktyg (e-postklienter, webbläsare osv.) hanterar specialtecken. URL-parametrar är nu kodade.
 
 **Andra ändringar**
 
-* Tidigare borttagna Microsoft CRM-anslutningar (Office 365 och lokala distributioner) har tagits bort från gränssnittet. [Läs mer](https://experienceleague.adobe.com/docs/campaign-classic/using/getting-started/connectors/crm-ms-dynamics.html?lang=sv-SE#configure-acc-for-microsoft)
+* Tidigare borttagna Microsoft CRM-anslutningar (Office 365 och lokala distributioner) har tagits bort från gränssnittet. [Läs mer](https://experienceleague.adobe.com/docs/campaign-classic/using/getting-started/connectors/crm-ms-dynamics.html#configure-acc-for-microsoft)
 
 * Efter migreringen till Tomcat 8 har IIS-installationsskriptet uppdaterats för att åtgärda IIS-integreringsproblem. (NEO-31019)
-* Ett riktlinje har lagts till för att endast tillåta att det [tekniska arbetsflödet för fakturering](https://experienceleague.adobe.com/docs/campaign-classic/using/monitoring-campaign-classic/production-procedures/monitoring-processes.html?lang=sv-SE#billing-report) körs på marknadsföringsinstansen.
+* Ett riktlinje har lagts till för att endast tillåta att det [tekniska arbetsflödet för fakturering](https://experienceleague.adobe.com/docs/campaign-classic/using/monitoring-campaign-classic/production-procedures/monitoring-processes.html#billing-report) körs på marknadsföringsinstansen.
 * Identifieringen av datakällan har förbättrats på flikarna data och schema i fönstret för arbetsflödesövergångarna **Visa population**.
-* Databasindex som saknas har lagts till i följande scheman för att förhindra problem med databasuppdatering: xtk:rights, nms:dlvExclusion, nms:seedMember och nms:trackingUrl
+* Saknade databasindex lades till i följande scheman för att förhindra problem med databasuppdatering: xtk:rights, nms:dlvExclusion, nms:seedMember, nms:trackingUrl
 
-**Felkorrigeringar**
+**Korrigeringar**
 
 * Ett problem som gjorde att rapporten **Hot Click** inte fungerade när erbjudanden länkades till leveransen har åtgärdats. (NEO-26295)
 * Korrigerade ett problem med aktiviteten **Delarbetsflöde** när körningen inte genererade en utdatatabell. (NEO-36242)
@@ -176,7 +176,7 @@ _23 juli 2021_
 </thead> 
 <tbody> 
 <tr> 
-<td> <p><a href="../send/line.md">LINE-kanalen</a> är nu tillgänglig med Campaign v8, inklusive följande förbättringar i kombination med modulen <a href="../send/transactional.md">transaktionsmeddelanden</a>:
+<td> <p><a href="../send/line/line.md">LINE-kanalen</a> är nu tillgänglig med Campaign v8, inklusive följande förbättringar i kombination med modulen <a href="../send/transactional.md">transaktionsmeddelanden</a>:
 <ul> 
 <li><p>Korrigerade ett problem som kunde förhindra besökare från att riktas mot en radleverans. 
 </p></li>

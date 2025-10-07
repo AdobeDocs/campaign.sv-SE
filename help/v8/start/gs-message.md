@@ -6,7 +6,7 @@ role: User
 level: Beginner
 version: Campaign v8, Campaign Classic v7
 exl-id: a523e76d-776c-47d3-9c15-34241cee1092
-source-git-commit: a2efad26232cd380eea850a589b22b23928253e8
+source-git-commit: 110a2cac920ca3087f6fcb3cab8474729f6075be
 workflow-type: tm+mt
 source-wordcount: '1002'
 ht-degree: 6%
@@ -47,7 +47,7 @@ Adobe Campaign v8 levereras med de leveranskanaler som listas nedan. Vilka kanal
 
 * **E-postkanal**: Med e-postleveranser kan du skicka personaliserade e-postmeddelanden till målpopulationen. [Läs mer](../send/email.md)
 
-* **Mobila kanaler**: Med leveranser i mobila kanaler kan du skicka personaliserade meddelanden på mobila enheter till målpopulationen. Du kan skicka [SMS](../send/sms/sms.md)- och [LINE](../send/line.md)-meddelanden till mobiler.
+* **Mobila kanaler**: Med leveranser i mobila kanaler kan du skicka personaliserade meddelanden på mobila enheter till målpopulationen. Du kan skicka [SMS](../send/sms/sms.md)- och [LINE](../send/line/line.md)-meddelanden till mobiler.
 
 * **Mobilappskanal**: Du kan använda Adobe Campaign för att skicka anpassade och segmenterade [push-meddelanden](../send/push.md) på iOS- och Android-mobilenheter via dedikerade appar. När konfigurations- och integrationsstegen är klara kan iOS och Android levereras med Adobe Campaign. Du kan också utforma och skicka avancerade meddelanden med bilder eller videoklipp till Android-enheter.
 
@@ -109,4 +109,4 @@ Du kan:
 
 Att övervaka era leveranser efter att de har skickats är ett viktigt steg för att se till att era marknadsföringskampanjer är effektiva och når ut till era kunder. Du kan övervaka efter att du har skickat en leverans samt förstå hur leveransfel och karantäner hanteras.
 
-Lär dig hur du övervakar leveranser i [Campaign Classic v7-dokumentationen](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/monitoring-deliveries/about-delivery-monitoring.html?lang=sv-SE#sending-messages){target="_blank"}
+Lär dig hur du övervakar leveranser i [Campaign Classic v7-dokumentationen](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/monitoring-deliveries/about-delivery-monitoring.html#sending-messages){target="_blank"}

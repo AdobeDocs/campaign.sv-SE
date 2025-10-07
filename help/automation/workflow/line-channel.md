@@ -5,7 +5,7 @@ description: LINJEKanal
 feature: Workflows, Line App
 role: User
 version: Campaign v8, Campaign Classic v7
-source-git-commit: 4cbccf1ad02af9133d51933e3e0d010b5c8c43bd
+source-git-commit: 110a2cac920ca3087f6fcb3cab8474729f6075be
 workflow-type: tm+mt
 source-wordcount: '95'
 ht-degree: 2%
@@ -15,7 +15,7 @@ ht-degree: 2%
 
 # LINJEKanal{#line-channel}
 
-Arbetsflödena som anges nedan installeras som standard med **LINE-kanalmodulen**. Mer information om den här modulen finns på [den här sidan](../../v8/send/line.md).
+Arbetsflödena som anges nedan installeras som standard med **LINE-kanalmodulen**. Mer information om den här modulen finns på [den här sidan](../../v8/send/line/line.md).
 
 <table> 
  <tbody> 

@@ -4,8 +4,9 @@ description: Lär dig hur du integrerar Adobe Experience Platform Mobile SDK med
 feature: Push
 role: Admin, Developer
 level: Intermediate
+version: Campaign v8, Campaign Classic v7
 exl-id: 1a75f411-3f71-4114-b738-277820dc6138
-source-git-commit: a288845e1f092d293d679fa9aaaf6d609de85230
+source-git-commit: 110a2cac920ca3087f6fcb3cab8474729f6075be
 workflow-type: tm+mt
 source-wordcount: '1681'
 ht-degree: 4%
@@ -37,7 +38,7 @@ Så här konfigurerar du appen med Adobe Experience Platform Mobile SDK:
 
 ### Konfigurera behörigheter {#setup-permissions}
 
-Innan du skapar ett mobilprogram måste du kontrollera att du har eller tilldelar rätt användarbehörigheter för taggar i Adobe Experience Platform. Användarbehörigheter för taggar i Adobe Experience Platform tilldelas användare via Adobe Admin Console. Läs mer i [Tagg-dokumentationen](https://experienceleague.adobe.com/docs/experience-platform/tags/admin/user-permissions.html?lang=sv-SE){target="_blank"}.
+Innan du skapar ett mobilprogram måste du kontrollera att du har eller tilldelar rätt användarbehörigheter för taggar i Adobe Experience Platform. Användarbehörigheter för taggar i Adobe Experience Platform tilldelas användare via Adobe Admin Console. Läs mer i [Tagg-dokumentationen](https://experienceleague.adobe.com/docs/experience-platform/tags/admin/user-permissions.html){target="_blank"}.
 
 >[!CAUTION]
 >
@@ -46,8 +47,8 @@ Innan du skapar ett mobilprogram måste du kontrollera att du har eller tilldela
 Följ stegen nedan för att tilldela **Egenskap** och **Företag** behörigheter:
 
 1. Åtkomst till **[!DNL Admin Console]**.
-1. Välj **[!UICONTROL Adobe Experience Platform Data Collection]**-kortet på fliken **[!UICONTROL Products]**.
-1. Välj en befintlig **[!UICONTROL Product Profile]** eller skapa en ny med knappen **[!UICONTROL New profile]**. Lär dig hur du skapar en ny **[!UICONTROL New profile]** i [Admin Console-dokumentationen](https://experienceleague.adobe.com/docs/experience-platform/access-control/ui/create-profile.html?lang=sv-SE#ui){target="_blank"}.
+1. Välj **[!UICONTROL Products]**-kortet på fliken **[!UICONTROL Adobe Experience Platform Data Collection]**.
+1. Välj en befintlig **[!UICONTROL Product Profile]** eller skapa en ny med knappen **[!UICONTROL New profile]**. Lär dig hur du skapar en ny **[!UICONTROL New profile]** i [Admin Console-dokumentationen](https://experienceleague.adobe.com/docs/experience-platform/access-control/ui/create-profile.html#ui){target="_blank"}.
 1. På fliken **[!UICONTROL Permissions]** väljer du **[!UICONTROL Property Rights]**.
 1. Klicka på **[!UICONTROL Add all]**. Detta lägger till följande rättigheter i din produktprofil:
    * **[!UICONTROL Approve]**
@@ -72,14 +73,14 @@ Följ stegen nedan för att tilldela **Egenskap** och **Företag** behörigheter
 Följ stegen nedan för att tilldela **[!UICONTROL Product profile]** till användare:
 
 1. Åtkomst till **[!DNL Admin Console]**.
-1. Välj **[!UICONTROL Adobe Experience Platform Data Collection]**-kortet på fliken **[!UICONTROL Products]**.
+1. Välj **[!UICONTROL Products]**-kortet på fliken **[!UICONTROL Adobe Experience Platform Data Collection]**.
 1. Välj din tidigare konfigurerade **[!UICONTROL Product profile]**.
 1. Klicka på **[!UICONTROL Add user]** på fliken **[!UICONTROL Users]**.
 1. Skriv in användarens namn eller e-postadress och markera användaren. Klicka sedan på **[!UICONTROL Save]**.
 
    >[!NOTE]
    >
-   >Om användaren inte redan har skapats i Admin Console läser du [dokumentationen till Lägg till användare](https://helpx.adobe.com/se/enterprise/using/manage-users-individually.html#add-users){target="_blank"}.
+   >Om användaren inte redan har skapats i Admin Console läser du [dokumentationen till Lägg till användare](https://helpx.adobe.com/enterprise/using/manage-users-individually.html#add-users){target="_blank"}.
 
 ### Konfigurera din app {#configure-app}
 
@@ -141,7 +142,7 @@ To get the SDKs needed for push notification to work you will need the following
 * **[!UICONTROL Adobe Experience Platform Assurance]**, optional but recommended to debug the mobile implementation.
 -->
 
-Läs mer om [!DNL Adobe Experience Platform Data Collection]-taggar i [Adobe Experience Platform-dokumentation](https://experienceleague.adobe.com/docs/platform-learn/implement-mobile-sdk/initial-configuration/configure-tags.html?lang=sv-SE){target="_blank"}.
+Läs mer om [!DNL Adobe Experience Platform Data Collection]-taggar i [Adobe Experience Platform-dokumentation](https://experienceleague.adobe.com/docs/platform-learn/implement-mobile-sdk/initial-configuration/configure-tags.html){target="_blank"}.
 
 Öppna den nya taggegenskapen och skapa ett bibliotek när du har skapat den. Så här gör du:
 
@@ -166,7 +167,7 @@ Följ stegen nedan för att skapa en tjänst för att skicka push-meddelanden:
 
    >[!NOTE]
    >
-   >Standardmålmappningen för **[!UICONTROL Subscriber applications (nms:appSubscriptionRcp)]** är länkad till mottagartabellen. Om du vill använda en annan målmappning måste du skapa en ny målmappning och ange den i fältet **[!UICONTROL Target mapping]** för tjänsten. Läs mer om målmappningar på [den här sidan](../audiences/target-mappings.md).
+   >Standardmålmappningen **[!UICONTROL Subscriber applications (nms:appSubscriptionRcp)]** är länkad till mottagartabellen. Om du vill använda en annan målmappning måste du skapa en ny målmappning och ange den i fältet **[!UICONTROL Target mapping]** för tjänsten. Läs mer om målmappningar på [den här sidan](../audiences/target-mappings.md).
 
 1. Använd sedan ikonen **[!UICONTROL Add]** till höger för att definiera de mobilprogram som använder den här tjänsten.
 

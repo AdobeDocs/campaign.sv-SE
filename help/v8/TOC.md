@@ -5,7 +5,7 @@ user-guide-description: Produktdokumentation för Adobe Campaign v8 (klientkonso
 title: Adobe Campaign v8-dokumentation
 description: Kampanjdokumentation v8
 breadcrumb-title: Dokumentation om Campaign v8
-source-git-commit: 95c944963feee746a2bb83a85f075134c91059d1
+source-git-commit: 110a2cac920ca3087f6fcb3cab8474729f6075be
 workflow-type: tm+mt
 source-wordcount: '791'
 ht-degree: 28%
@@ -38,10 +38,10 @@ ht-degree: 28%
    + [Komponenter och processer](start/ac-components.md)
    + [Från Campaign Classic v7 till v8](start/v7-to-v8.md)
    + [Från Campaign Standard till v8](start/acs-to-v8.md)
-   + [Vanliga frågor och svar &#x200B;](start/campaign-faq.md)
+   + [Vanliga frågor och svar ](start/campaign-faq.md)
 + Kampanjhantering {#campaigns}
    + [Kom igång med kampanjer](start/campaigns.md)
-   + [Kampanjsamordning >](https://experienceleague.adobe.com/docs/campaign/automation/campaign-orchestration/set-up-campaigns.html?lang=sv-SE)
+   + [Kampanjsamordning >](https://experienceleague.adobe.com/docs/campaign/automation/campaign-orchestration/set-up-campaigns.html)
 + Skicka meddelanden{#send}
    + [Kom igång med meddelanden](start/gs-message.md)
    + [Skapa din första leverans](start/create-message.md)
@@ -82,7 +82,7 @@ ht-degree: 28%
          + [Designa en omfattande iOS-leverans](send/rich-push-ios.md)
       + [Konfigurera kanal för push-meddelanden](send/push-settings.md)
       + [Konfigurera push-meddelanden med datainsamling](send/push-data-collection.md)
-   + [LINE-meddelanden](send/line.md)
+   + [LINE-meddelanden](send/line/line.md)
    + [Direktmeddelande](send/direct-mail.md)
    + [X (Twitter)](send/twitter.md)
    + [Anpassad extern kanal](send/custom-channel.md)
@@ -135,7 +135,7 @@ ht-degree: 28%
    + [Designa webbprogram och formulär](dev/webapps.md)
 + Arbetsflöden {#workflows}
    + [Kom igång med arbetsflöden](config/workflows.md)
-   + [Arbetsflödesdokumentation >](https://experienceleague.adobe.com/docs/campaign/automation/workflows/introduction/about-workflows.html?lang=sv-SE)
+   + [Arbetsflödesdokumentation >](https://experienceleague.adobe.com/docs/campaign/automation/workflows/introduction/about-workflows.html)
 + Integritet och säkerhetshantering {#privacy}
    + [Hantera förfrågningar om användarens information](start/privacy.md)
    + [Säkerhetsanvisningar](config/security.md)
@@ -175,7 +175,7 @@ ht-degree: 28%
          + [Inbyggd måttberäkning](reporting/metrics-calculation.md)
       + [Anpassade rapporter](reporting/custom-reports.md)
 + Datahantering {#data}
-   + [Arbetsflödesdokumentation >](https://experienceleague.adobe.com/docs/campaign/automation/workflows/introduction/about-workflows.html?lang=sv-SE)
+   + [Arbetsflödesdokumentation >](https://experienceleague.adobe.com/docs/campaign/automation/workflows/introduction/about-workflows.html)
    + [Importera data](start/import.md)
    + Skapa frågor {#query}
       + [Designfrågor](start/query-editor.md)
@@ -269,6 +269,6 @@ ht-degree: 28%
       + Hantera arbetsflöden {#managing-workflows}
          + [Kontrollera ett arbetsflöde](dev/api/controlling-a-workflow.md)
          + [Utlösa en signalaktivitet](dev/api/triggering-a-signal-activity.md)
-+ [Kampanjtekniker >](https://experienceleague.adobe.com/sv/docs/campaign/technotes-ac/technotes-home)
-+ [Dokumentation för webbanvändargränssnittet för kampanj >](https://experienceleague.adobe.com/sv/docs/campaign-web/v8/campaign-web-home)
++ [Kampanjtekniker >](https://experienceleague.adobe.com/en/docs/campaign/technotes-ac/technotes-home)
++ [Dokumentation för webbanvändargränssnittet för kampanj >](https://experienceleague.adobe.com/en/docs/campaign-web/v8/campaign-web-home)
 

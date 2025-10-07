@@ -5,8 +5,9 @@ description: Lär dig hur du utformar en omfattande push-meddelandetjänst från
 feature: Push
 role: User
 level: Beginner
+version: Campaign v8, Campaign Classic v7
 exl-id: 75a57ddb-558e-4dd2-a684-e63e51545554
-source-git-commit: fef2c829da637b43067147b51aff7030d25c9744
+source-git-commit: 110a2cac920ca3087f6fcb3cab8474729f6075be
 workflow-type: tm+mt
 source-wordcount: '1093'
 ht-degree: 3%
@@ -17,7 +18,7 @@ ht-degree: 3%
 
 >[!IMPORTANT]
 >
->Innan du utformar ett push-meddelande måste du först konfigurera V2-anslutningen. Mer information finns på [den här sidan](https://experienceleague.adobe.com/sv/docs/campaign-classic/using/sending-messages/sending-push-notifications/configure-the-mobile-app/configuring-the-mobile-application).
+>Innan du utformar ett push-meddelande måste du först konfigurera V2-anslutningen. Mer information finns på [den här sidan](https://experienceleague.adobe.com/en/docs/campaign-classic/using/sending-messages/sending-push-notifications/configure-the-mobile-app/configuring-the-mobile-application).
 
 ## Definiera innehållet i ett iOS-meddelande {#push-message}
 
@@ -37,7 +38,7 @@ Gå igenom flikarna nedan för att lära dig mer om hur du anpassar mallarna.
 
 1. Välj **[!UICONTROL General notification (Alert, Sound, Badge)]** som **[!UICONTROL Notification type]**.
 
-1. Välj **[!UICONTROL Default]** i listrutan **[!UICONTROL Notification Type]**.
+1. Välj **[!UICONTROL Notification Type]** i listrutan **[!UICONTROL Default]**.
 
    ![](assets/rich_push_ios_default_1.png)
 
@@ -67,7 +68,7 @@ Gå igenom flikarna nedan för att lära dig mer om hur du anpassar mallarna.
 
 1. Välj **[!UICONTROL General notification (Alert, Sound, Badge)]** som **[!UICONTROL Notification type]**.
 
-1. Välj **[!UICONTROL Basic]** i listrutan **[!UICONTROL Notification Type]**.
+1. Välj **[!UICONTROL Notification Type]** i listrutan **[!UICONTROL Basic]**.
 
    ![](assets/rich_push_ios_basic_1.png)
 
@@ -87,7 +88,7 @@ Gå igenom flikarna nedan för att lära dig mer om hur du anpassar mallarna.
 
    ![](assets/rich_push_ios_default_4.png)
 
-1. Ange hexadecimala färgkoder för **[!UICONTROL Title]**, **[!UICONTROL Message]** och **[!UICONTROL Background]** på menyn **[!UICONTROL Color options]**.
+1. Ange hexadecimala färgkoder för **[!UICONTROL Color options]**, **[!UICONTROL Title]** och **[!UICONTROL Message]** på menyn **[!UICONTROL Background]**.
 
    ![](assets/rich_push_ios_basic_3.png)
 
@@ -97,7 +98,7 @@ När du har definierat meddelandeinnehållet kan du använda testprenumeranter f
 
 1. Välj **[!UICONTROL General notification (Alert, Sound, Badge)]** som **[!UICONTROL Notification type]**.
 
-1. Välj **[!UICONTROL Carousel]** i listrutan **[!UICONTROL Notification Type]**.
+1. Välj **[!UICONTROL Notification Type]** i listrutan **[!UICONTROL Carousel]**.
 
    ![](assets/rich_push_ios_carousel_1.png)
 
@@ -113,7 +114,7 @@ När du har definierat meddelandeinnehållet kan du använda testprenumeranter f
 
 1. Utforska de **[!UICONTROL Advanced options]** som är tillgängliga för dina push-meddelanden om du vill göra ytterligare anpassningar. [Läs mer](#push-advanced)
 
-1. Ange hexadecimala färgkoder för **[!UICONTROL Title]**, **[!UICONTROL Message]** och **[!UICONTROL Background]** på menyn **[!UICONTROL Color options]**.
+1. Ange hexadecimala färgkoder för **[!UICONTROL Color options]**, **[!UICONTROL Title]** och **[!UICONTROL Message]** på menyn **[!UICONTROL Background]**.
 
 1. Välj hur **[!UICONTROL Carousel]** ska fungera på fliken **[!UICONTROL Carousel options]**:
 
@@ -132,7 +133,7 @@ När du har definierat meddelandeinnehållet kan du använda testprenumeranter f
 
 1. Välj **[!UICONTROL General notification (Alert, Sound, Badge)]** som **[!UICONTROL Notification type]**.
 
-1. Välj **[!UICONTROL Timer]** i listrutan **[!UICONTROL Notification Type]**.
+1. Välj **[!UICONTROL Notification Type]** i listrutan **[!UICONTROL Timer]**.
 
    ![](assets/rich_push_ios_timer_1.png)
 
@@ -150,7 +151,7 @@ När du har definierat meddelandeinnehållet kan du använda testprenumeranter f
 
 1. Utforska de **[!UICONTROL Advanced options]** som är tillgängliga för dina push-meddelanden om du vill göra ytterligare anpassningar. [Läs mer](#push-advanced)
 
-1. Ange hexadecimala färgkoder för **[!UICONTROL Title]**, **[!UICONTROL Message]** och **[!UICONTROL Background]** på menyn **[!UICONTROL Color options]**.
+1. Ange hexadecimala färgkoder för **[!UICONTROL Color options]**, **[!UICONTROL Title]** och **[!UICONTROL Message]** på menyn **[!UICONTROL Background]**.
 
    ![](assets/rich_push_ios_timer_4.png)
 

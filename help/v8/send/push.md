@@ -4,8 +4,9 @@ description: Kom igång med push-meddelanden i Campaign
 feature: Push
 role: User
 level: Beginner
+version: Campaign v8, Campaign Classic v7
 exl-id: f04c6e0c-f2b9-496a-9697-04ef4c3411ee
-source-git-commit: 0b4fc6da8761d2efe57d8eb0ff87cd11d0e2d250
+source-git-commit: 110a2cac920ca3087f6fcb3cab8474729f6075be
 workflow-type: tm+mt
 source-wordcount: '968'
 ht-degree: 4%
@@ -138,7 +139,7 @@ Så här skickar du meddelanden till Android-enheter:
 
    >[!NOTE]
    > 
-   >Med de senaste FCM API:erna (HTTP v1) måste du uppdatera dina **leveransmallar** för Android push-meddelanden för att öka antalet batchmeddelanden. Det gör du genom att bläddra till egenskaperna för din Android-leveransmall och ange [Antal meddelandebatchar](../../v8/send/configure-and-send.md#delivery-batch-quantity) till **256** på fliken **Leverans**. Använd ändringen på alla leveransmallar som används för dina Android-leveranser och på alla befintliga Android-leveranser.
+   >Med de senaste FCM API:erna (HTTP v1) måste du uppdatera dina **leveransmallar** för Android push-meddelanden för att öka antalet batchmeddelanden. Det gör du genom att bläddra till egenskaperna för din Android-leveransmall och ange **Antal meddelandebatchar** till [256](../../v8/send/configure-and-send.md#delivery-batch-quantity) på fliken **Leverans**. Använd ändringen på alla leveransmallar som används för dina Android-leveranser och på alla befintliga Android-leveranser.
 
 
 1. Om du vill definiera målet för meddelandet klickar du på länken **[!UICONTROL To]** och sedan på **[!UICONTROL Add]**.

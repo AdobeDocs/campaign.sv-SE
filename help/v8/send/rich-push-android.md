@@ -5,8 +5,9 @@ description: Lär dig hur du utformar ett omfattande push-meddelande med Adobe C
 feature: Push
 role: User
 level: Beginner
+version: Campaign v8, Campaign Classic v7
 exl-id: 42e3623b-b401-4fcc-80a7-ea38347fddc6
-source-git-commit: 4e52e596d4eb2a8e1a1799fcd7104dcd894b6c2d
+source-git-commit: 110a2cac920ca3087f6fcb3cab8474729f6075be
 workflow-type: tm+mt
 source-wordcount: '1989'
 ht-degree: 1%
@@ -17,7 +18,7 @@ ht-degree: 1%
 
 >[!IMPORTANT]
 >
->Innan du utformar ett push-meddelande måste du först konfigurera V2-anslutningen. Mer information finns på [den här sidan](https://experienceleague.adobe.com/sv/docs/campaign-classic/using/sending-messages/sending-push-notifications/configure-the-mobile-app/configuring-the-mobile-application-android#configuring-external-account-android).
+>Innan du utformar ett push-meddelande måste du först konfigurera V2-anslutningen. Mer information finns på [den här sidan](https://experienceleague.adobe.com/en/docs/campaign-classic/using/sending-messages/sending-push-notifications/configure-the-mobile-app/configuring-the-mobile-application-android#configuring-external-account-android).
 
 Med Firebase Cloud Messaging kan du välja mellan två typer av meddelanden:
 
@@ -55,7 +56,7 @@ Gå igenom flikarna nedan för att lära dig mer om hur du anpassar mallarna.
 
 >[!TAB Standard]
 
-1. Välj **[!UICONTROL Default]** i listrutan **[!UICONTROL Notification type]**.
+1. Välj **[!UICONTROL Notification type]** i listrutan **[!UICONTROL Default]**.
 
    ![](assets/rich_push_default.png)
 
@@ -73,7 +74,7 @@ När du har definierat meddelandeinnehållet kan du använda testprenumeranter f
 
 >[!TAB Grundläggande]
 
-1. Välj **[!UICONTROL Basic]** i listrutan **[!UICONTROL Notification Type]**.
+1. Välj **[!UICONTROL Notification Type]** i listrutan **[!UICONTROL Basic]**.
 
    ![](assets/rich_push_basic.png)
 
@@ -85,7 +86,7 @@ När du har definierat meddelandeinnehållet kan du använda testprenumeranter f
 
 1. Använd dynamiska personaliseringsfält för att definiera innehåll, personalisera data och lägga till dynamiskt innehåll. [Läs mer](../send/personalize.md)
 
-1. Ange de hexadecimala färgkoderna för **[!UICONTROL Title]**, **[!UICONTROL Message]** och **[!UICONTROL Background]** på menyn **[!UICONTROL Color options]**.
+1. Ange de hexadecimala färgkoderna för **[!UICONTROL Color options]**, **[!UICONTROL Title]** och **[!UICONTROL Message]** på menyn **[!UICONTROL Background]**.
 
 1. Lägg till **[!UICONTROL Remind later button]** vid behov. Ange **[!UICONTROL Reminder Text]** och **Datum** i motsvarande fält.
 
@@ -118,7 +119,7 @@ När du har definierat meddelandeinnehållet kan du använda testprenumeranter f
 
 >[!TAB Carousel]
 
-1. Välj **[!UICONTROL Carousel]** i listrutan **[!UICONTROL Notification Type]**.
+1. Välj **[!UICONTROL Notification Type]** i listrutan **[!UICONTROL Carousel]**.
 
    ![](assets/rich_push_carousel.png)
 
@@ -130,7 +131,7 @@ När du har definierat meddelandeinnehållet kan du använda testprenumeranter f
 
 1. Använd uttrycksredigeraren för att definiera innehåll, anpassa data och lägga till dynamiskt innehåll. [Läs mer](../send/personalize.md)
 
-1. Ange de hexadecimala färgkoderna för **[!UICONTROL Title]**, **[!UICONTROL Message]** och **[!UICONTROL Background]** på menyn **[!UICONTROL Color options]**.
+1. Ange de hexadecimala färgkoderna för **[!UICONTROL Color options]**, **[!UICONTROL Title]** och **[!UICONTROL Message]** på menyn **[!UICONTROL Background]**.
 
 1. Välj hur **[!UICONTROL Carousel]** ska användas:
 
@@ -153,17 +154,17 @@ När du har definierat meddelandeinnehållet kan du använda testprenumeranter f
 
 >[!TAB Ikonknappar]
 
-1. Välj **[!UICONTROL Icon buttons]** i listrutan **[!UICONTROL Notification Type]**.
+1. Välj **[!UICONTROL Notification Type]** i listrutan **[!UICONTROL Icon buttons]**.
 
    ![](assets/rich_push_icon.png)
 
-1. Ange de hexadecimala färgkoderna för **[!UICONTROL Background]** på menyn **[!UICONTROL Color options]**.
+1. Ange de hexadecimala färgkoderna för **[!UICONTROL Color options]** på menyn **[!UICONTROL Background]**.
 
    ![](assets/rich_push_icon_2.png)
 
 1. Ange URL:en för **[!UICONTROL Cancel button image]**.
 
-1. Klicka på **[!UICONTROL Add image]** under **[!UICONTROL Icon image buttons]**. Ange sedan **bild-URL**, **Länktyp** och **länk-URI**.
+1. Klicka på **[!UICONTROL Icon image buttons]** under **[!UICONTROL Add image]**. Ange sedan **bild-URL**, **Länktyp** och **länk-URI**.
 
    Du måste ha minst tre bilder och högst fem knappar.
 
@@ -177,7 +178,7 @@ När du har definierat meddelandeinnehållet kan du använda testprenumeranter f
 
 >[!TAB Inmatningsruta]
 
-1. Välj **[!UICONTROL Input box]** i listrutan **[!UICONTROL Notification Type]**.
+1. Välj **[!UICONTROL Notification Type]** i listrutan **[!UICONTROL Input box]**.
 
    ![](assets/rich_push_input.png)
 
@@ -187,7 +188,7 @@ När du har definierat meddelandeinnehållet kan du använda testprenumeranter f
 
    ![](assets/rich_push_input_2.png)
 
-1. Ange de hexadecimala färgkoderna för **[!UICONTROL Title]**, **[!UICONTROL Message]** och **[!UICONTROL Background]** på menyn **[!UICONTROL Color options]**.
+1. Ange de hexadecimala färgkoderna för **[!UICONTROL Color options]**, **[!UICONTROL Title]** och **[!UICONTROL Message]** på menyn **[!UICONTROL Background]**.
 
 1. Fyll i följande alternativ på menyn **[!UICONTROL Input box options]**:
 
@@ -206,7 +207,7 @@ När du har definierat meddelandeinnehållet kan du använda testprenumeranter f
 
 >[!TAB Produktkatalog]
 
-1. Välj **[!UICONTROL Product catalog]** i listrutan **[!UICONTROL Notification Type]**.
+1. Välj **[!UICONTROL Notification Type]** i listrutan **[!UICONTROL Product catalog]**.
 
    ![](assets/rich_push_catalog.png)
 
@@ -216,7 +217,7 @@ När du har definierat meddelandeinnehållet kan du använda testprenumeranter f
 
    ![](assets/rich_push_catalog_2.png)
 
-1. Ange de hexadecimala färgkoderna för **[!UICONTROL Title]**, **[!UICONTROL Message]** och **[!UICONTROL Background]** på menyn **[!UICONTROL Color options]**.
+1. Ange de hexadecimala färgkoderna för **[!UICONTROL Color options]**, **[!UICONTROL Title]** och **[!UICONTROL Message]** på menyn **[!UICONTROL Background]**.
 
 1. Fyll i följande alternativ på menyn **[!UICONTROL Product catalog options]**:
 
@@ -228,7 +229,7 @@ När du har definierat meddelandeinnehållet kan du använda testprenumeranter f
 
    ![](assets/rich_push_catalog_3.png)
 
-1. Klicka på **[!UICONTROL Add]** på menyn **[!UICONTROL Product catalog items]** och ange följande information för varje objekt:
+1. Klicka på **[!UICONTROL Product catalog items]** på menyn **[!UICONTROL Add]** och ange följande information för varje objekt:
 
    * **[!UICONTROL Title]**
    * **[!UICONTROL Description]**
@@ -246,7 +247,7 @@ När du har definierat meddelandeinnehållet kan du använda testprenumeranter f
 
 >[!TAB Produktklassificering]
 
-1. Välj **[!UICONTROL Product rating]** i listrutan **[!UICONTROL Notification Type]**.
+1. Välj **[!UICONTROL Notification Type]** i listrutan **[!UICONTROL Product rating]**.
 
    ![](assets/rich_push_rating.png)
 
@@ -256,13 +257,13 @@ När du har definierat meddelandeinnehållet kan du använda testprenumeranter f
 
    ![](assets/rich_push_rating_2.png)
 
-1. Ange de hexadecimala färgkoderna för **[!UICONTROL Title]**, **[!UICONTROL Message]** och **[!UICONTROL Background]** på menyn **[!UICONTROL Color options]**.
+1. Ange de hexadecimala färgkoderna för **[!UICONTROL Color options]**, **[!UICONTROL Title]** och **[!UICONTROL Message]** på menyn **[!UICONTROL Background]**.
 
-1. Ange URL:erna för **[!UICONTROL Rating icon in unselected state]** och **[!UICONTROL Rating icon in selected state]** på menyn **[!UICONTROL Product rating options]**.
+1. Ange URL:erna för **[!UICONTROL Product rating options]** och **[!UICONTROL Rating icon in unselected state]** på menyn **[!UICONTROL Rating icon in selected state]**.
 
    ![](assets/rich_push_rating_3.png)
 
-1. Klicka på **[!UICONTROL Add]** på menyn **[!UICONTROL Product rating items]** och ange **[!UICONTROL Link URI]** och välj **[!UICONTROL Link type]**.
+1. Klicka på **[!UICONTROL Product rating items]** på menyn **[!UICONTROL Add]** och ange **[!UICONTROL Link URI]** och välj **[!UICONTROL Link type]**.
 
    * **[!UICONTROL Web URL]**: Webb-URL:er dirigerar användare till onlineinnehåll. När de klickar uppmanas de enhetens standardwebbläsare att öppna och navigera till den angivna URL:en.
 
@@ -284,7 +285,7 @@ När du har definierat meddelandeinnehållet kan du använda testprenumeranter f
 
 >[!TAB Timer]
 
-1. Välj **[!UICONTROL Timer]** i listrutan **[!UICONTROL Notification Type]**.
+1. Välj **[!UICONTROL Notification Type]** i listrutan **[!UICONTROL Timer]**.
 
    ![](assets/rich_push_timer.png)
 
@@ -296,7 +297,7 @@ När du har definierat meddelandeinnehållet kan du använda testprenumeranter f
 
 1. Ange den text som ska visas när timern har gått ut i fälten **[!UICONTROL Alternate title]**, **[!UICONTROL Alternate message]** och **[!UICONTROL Alternate expanded message]**.
 
-1. Ange de hexadecimala färgkoderna för **[!UICONTROL Title]**, **[!UICONTROL Message]**, **[!UICONTROL Background]** och **[!UICONTROL Timer]** på menyn **[!UICONTROL Color options]**.
+1. Ange de hexadecimala färgkoderna för **[!UICONTROL Color options]**, **[!UICONTROL Title]**, **[!UICONTROL Message]** och **[!UICONTROL Background]** på menyn **[!UICONTROL Timer]**.
 
    ![](assets/rich_push_timer_3.png)
 
@@ -310,7 +311,7 @@ När du har definierat meddelandeinnehållet kan du använda testprenumeranter f
 
 >[!TAB Nollkantsram]
 
-1. Välj **[!UICONTROL Zero bezel]** i listrutan **[!UICONTROL Notification Type]**.
+1. Välj **[!UICONTROL Notification Type]** i listrutan **[!UICONTROL Zero bezel]**.
 
    ![](assets/rich_push_bezel.png)
 
@@ -320,9 +321,9 @@ När du har definierat meddelandeinnehållet kan du använda testprenumeranter f
 
    ![](assets/rich_push_zero_2.png)
 
-1. Ange de hexadecimala färgkoderna för **[!UICONTROL Title]**, **[!UICONTROL Message]** och **[!UICONTROL Background]** på menyn **[!UICONTROL Color options]**.
+1. Ange de hexadecimala färgkoderna för **[!UICONTROL Color options]**, **[!UICONTROL Title]** och **[!UICONTROL Message]** på menyn **[!UICONTROL Background]**.
 
-1. Lägg till din bild-URL i fältet **[!UICONTROL Collapsed notification style]** på menyn **[!UICONTROL Zero bezel options]**.
+1. Lägg till din bild-URL i fältet **[!UICONTROL Zero bezel options]** på menyn **[!UICONTROL Collapsed notification style]**.
 
    ![](assets/rich_push_zero_3.png)
 
