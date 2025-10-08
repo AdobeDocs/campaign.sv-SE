@@ -5,7 +5,7 @@ description: Läs mer om arbetsflödesaktiviteten Uppdatera data
 feature: Workflows, Targeting Activity, Data Management
 version: Campaign v8, Campaign Classic v7
 exl-id: 63b214c7-bbbf-448b-b3af-b3b7a7a5b65c
-source-git-commit: 4cbccf1ad02af9133d51933e3e0d010b5c8c43bd
+source-git-commit: 2d13ba585b55f0e149d1bca53240b05fe5a8a9eb
 workflow-type: tm+mt
 source-wordcount: '844'
 ht-degree: 1%
@@ -101,7 +101,7 @@ Genom att uppdatera data och sammanfoga samlingar kan du uppdatera data i en pos
 
 1. Markera de samlingar som ska flyttas till den primära posten och de fält som ska uppdateras.
 
-   Ange de regler som gäller för dessa när en eller flera sekundära poster identifieras. Du kan använda uttrycksverktyget för att göra detta. Genom att till exempel ange att det är det senast uppdaterade värdet av alla olika poster som måste behållas.
+   Ange de regler som gäller för dessa när en eller flera sekundära poster identifieras. Du kan göra detta med [Expression Builder](../../v8/start/filter-conditions.md#list-of-functions). Genom att till exempel ange att det är det senast uppdaterade värdet av alla olika poster som måste behållas.
 
    Ange sedan de villkor som ska beaktas för regeln.
 
