@@ -6,14 +6,14 @@ role: User
 level: Beginner
 exl-id: 03f7a736-e0b9-4216-9550-507f10e6fcf6
 version: Campaign v8, Campaign Classic v7
-source-git-commit: a2efad26232cd380eea850a589b22b23928253e8
+source-git-commit: ec1b41ccf532b044e75c69e795eabfb19a523ec2
 workflow-type: tm+mt
 source-wordcount: '452'
 ht-degree: 2%
 
 ---
 
-# Visa befintliga profiler{#view-profiles}
+# Visa befintliga profiler {#view-profiles}
 
 Bläddra till **[!UICONTROL Profiles and targets]** för att få åtkomst till mottagare som lagras i Adobe Campaign-databasen.
 
@@ -31,7 +31,7 @@ Om du vill ha mer avancerade profiländringar öppnar du Campaign-trädet från 
 >Den inbyggda mottagarskärmen definieras via ett XML-schema och dess tillhörande form. XML-schemat lagras i noden **[!UICONTROL Administration > Configuration > Data schemas]** i Adobe Campaign Explorer-trädet. Endast expertanvändare får göra ändringar i dessa scheman.
 >
 
-## Redigera en profil{#edit-a-profiles}
+## Redigera en profil {#edit-a-profiles}
 
 Välj en profil om du vill visa information på en ny flik.
 
