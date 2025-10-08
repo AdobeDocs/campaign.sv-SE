@@ -5,9 +5,9 @@ feature: Query Editor, Data Management
 role: User
 level: Beginner
 version: Campaign v8, Campaign Classic v7
-source-git-commit: 56d5628312ea3dedf9335dd0933811e4bf66eb97
+source-git-commit: adea4eb54f3d519802119646bc501aae2ef5f831
 workflow-type: tm+mt
-source-wordcount: '893'
+source-wordcount: '867'
 ht-degree: 1%
 
 ---
@@ -18,48 +18,45 @@ Frågor skapas med hjälp av fält i den valda tabellen eller med hjälp av en f
 
 Så här skapar du en fråga i Adobe Campaign:
 
-1. Markera arbetsregistret. Se [Steg 1 - Välj en tabell](#step-1---choose-a-table).
-1. Markera de data som ska extraheras. Se [Steg 2 - Välj data som ska extraheras](#step-2---choose-data-to-extract).
-1. Definiera datasorteringssekvensen. Se [Steg 3 - Sortera data](#step-3---sort-data).
-1. Filtrera data. Se [Steg 4 - Filtrera data](#step-4---filter-data).
-1. Formatera data. Se [Steg 5 - Formatera data](#step-5---format-data).
-1. Visa resultatet. Se [Steg 6 - Förhandsgranska data](#step-6---preview-data).
+1. [Markera arbetstabellen](#step-1---choose-a-table).
+1. [Markera de data som ska extraheras](#step-2---choose-data-to-extract).
+1. [Definiera datarorteringsläget](#step-3---sort-data).
+1. [Definiera datafiltreringsalternativ](#step-4---filter-data).
+1. [Konfigurera dataformatering](#step-5---format-data).
+1. [Förhandsgranska resultatet av frågan](#step-6---preview-data).
 
->[!NOTE]
->
->* Alla dessa steg är tillgängliga i [den generiska frågeredigeraren](query-editor.md). När en fråga skapas i en annan kontext kan vissa steg utelämnas.
->
->* Mer information om frågor och hur du skapar dem finns i [dokumentationen för kampanjarbetsflödet](../../automation/workflow/query.md).
+Alla dessa steg är tillgängliga i [den generiska frågeredigeraren](query-editor.md). När en fråga skapas i en annan kontext kan vissa steg saknas. Mer information om frågor finns i [dokumentationen för aktiviteten i arbetsflödet](../../automation/workflow/query.md).
 
-Om du vill fråga Campaign-databasen öppnar du den **[allmänna frågeredigeraren](query-editor.md)** och följer dessa steg:
 
 ## Steg 1 - Välj en tabell {#step-1---choose-a-table}
 
-Markera tabellen som innehåller de data som du vill fråga i fönstret **[!UICONTROL Document type]**. Om det behövs kan du filtrera data med filterfältet eller knappen **[!UICONTROL Filters]**.
+Om du vill fråga Campaign-databasen öppnar du den **[allmänna frågeredigeraren](query-editor.md)** och markerar tabellen som innehåller de data du vill fråga i fönstret **[!UICONTROL Document type]**.
 
 ![](assets/query_editor_nveau_21.png)
 
+Om det behövs kan du filtrera data med filterfältet eller knappen **[!UICONTROL Filters]**.
+
 ## Steg 2 - Välj data att extrahera {#step-2---choose-data-to-extract}
 
-I fönstret **[!UICONTROL Data to extract]** väljer du de data som ska visas: dessa fält utgör utdatakolumnerna.
+På skärmen **[!UICONTROL Data to extract]** väljer du de fält som du vill inkludera i utdata. Dessa fält definierar de kolumner som visas i resultaten.
 
-Välj till exempel **[!UICONTROL Age]**, **[!UICONTROL Primary key]**, **[!UICONTROL Email domain]** och **[!UICONTROL City]**. Resultatet ordnas utifrån det här valet. Använd de blå pilarna till höger om fönstret för att ändra kolumnordningen.
+Du kan till exempel välja **[!UICONTROL Age]**, **[!UICONTROL Primary key]**, **[!UICONTROL Email domain]** och **[!UICONTROL City]**. Utdata kommer att struktureras enligt detta val. Om du vill justera kolumnernas inbördes ordning använder du de blå pilarna till höger i fönstret.
 
 ![](assets/query_editor_nveau_01.png)
 
-Du kan redigera ett uttryck genom att infoga en formel i det eller köra en process på en sammanställningsfunktion. Det gör du genom att klicka på kolumnfältet **[!UICONTROL Expression]** och sedan välja **[!UICONTROL Edit expression]**.
+Du kan ändra ett uttryck antingen genom att lägga till en formel eller genom att tillämpa en process på en mängdfunktion. Om du vill redigera ett uttryck klickar du på kolumnfältet **[!UICONTROL Expression]** och väljer sedan **[!UICONTROL Edit expression]**.
 
 ![](assets/query_editor_nveau_97.png)
 
-Du kan gruppera utdatakolumndata: om du vill göra det kontrollerar du **[!UICONTROL Yes]** i kolumnen **[!UICONTROL Group]** i fönstret **[!UICONTROL Data to extract]**. Den här funktionen genererar ett resultat runt den markerade grupperingsaxeln. Ett exempel på en fråga med gruppering finns i [det här avsnittet](../../automation/workflow/query-delivery-info.md).
+Du kan gruppera de data som visas i utdatakolumnerna. Om du vill göra det väljer du **[!UICONTROL Yes]** i kolumnen **[!UICONTROL Group]** i fönstret **[!UICONTROL Data to extract]**. Resultatet sammanställs sedan baserat på den valda grupperingsaxeln. Ett exempel på en fråga som använder gruppering finns i [det här avsnittet](../../automation/workflow/query-delivery-info.md).
 
 ![](assets/query_editor_nveau_56.png)
 
-* Med funktionen **[!UICONTROL Handle groupings (GROUP BY + HAVING)]** kan du gruppera efter och välja vad som har grupperats (&quot;HAVING&quot;). Den här funktionen gäller för alla fält i utdatakolumnen. Med det här alternativet kan du till exempel gruppera alla val för en utdatakolumn och återställa en viss typ av information, till exempel mottagare mellan 35 och 50.
+* Med alternativet **[!UICONTROL Handle groupings (GROUP BY + HAVING)]** kan du gruppera resultat och använda villkor för dessa grupper. Den gäller för alla fält i utdatakolumnerna. Du kan till exempel använda den för att gruppera värden från en utdatakolumn och sedan filtrera resultaten så att endast specifik information hämtas, till exempel mottagare mellan 35 och 50 år.
 
   Mer information om detta finns i [det här avsnittet](../../automation/workflow/query-grouping-management.md).
 
-* Med funktionen **[!UICONTROL Remove duplicate rows (DISTINCT)]** kan du duplicera identiska resultat som hämtats i utdatakolumnen. Om du till exempel gör en inventering genom att markera fälten Efternamn, Förnamn och E-post i utdatakolumnen, kommer de som har identiska data att tas bort, eftersom det innebär att samma kontakt har angetts flera gånger i databasen: endast ett resultat kommer att tas med i beräkningen.
+Alternativet **[!UICONTROL Remove duplicate rows (DISTINCT)]** tar bort identiska rader från utdata (deduplicera). Om du till exempel väljer **Efternamn**, **Förnamn** och **E-post** som utdatakolumner betraktas alla poster med samma värden i alla tre fälten som dubbletter. Endast en instans behålls i resultaten och varje kontakt visas bara en gång.
 
 ## Steg 3 - Sortera data {#step-3---sort-data}
 
@@ -74,24 +71,23 @@ I det här exemplet sorteras data i stigande ordning baserat på mottagarens ål
 
 ## Steg 4 - Filtrera data {#step-4---filter-data}
 
-Med frågeredigeraren kan du filtrera data för att förfina sökningen.
-
-Vilka filter som visas beror på vilken tabell frågan gäller.
+Med frågeredigeraren kan du filtrera data för att begränsa resultaten. Vilka filter som är tillgängliga beror på tabellen du frågar.
 
 ![](assets/query_editor_nveau_09.png)
 
-När du har valt **[!UICONTROL Filtering conditions]** får du tillgång till avsnittet **[!UICONTROL Target elements]**. På så sätt kan du definiera hur data som ska samlas in ska filtreras.
+När du har valt **[!UICONTROL Filtering conditions]** öppnas avsnittet **[!UICONTROL Target elements]**. Här kan du definiera regler för filtrering av data som ska samlas in.
 
-* Om du vill skapa ett nytt filter markerar du de fält, operatorer och värden som krävs för att skapa formeln som ska verifieras för att data ska kunna väljas. Du kan också kombinera flera villkor som [på den här sidan](filter-conditions.md).
-* Om du vill använda tidigare sparade filter öppnar du listrutan genom att klicka på knappen **[!UICONTROL Add]**, klickar på **[!UICONTROL Predefined filter]** och väljer det du vill använda.
+* Om du vill skapa ett nytt filter väljer du de fält, operatorer och värden som behövs för att skapa villkoret. Du kan också kombinera flera villkor, vilket förklaras [på den här sidan](filter-conditions.md).
+
+* Om du vill återanvända ett befintligt filter klickar du på knappen **[!UICONTROL Add]**, markerar **[!UICONTROL Predefined filter]** och väljer det filter du vill använda.
 
   ![](assets/query_editor_15.png)
 
-* De filter som skapas i **[!UICONTROL Generic query editor]** är tillgängliga i andra frågeprogram och vice versa. Klicka på ikonen **[!UICONTROL Save]** om du vill spara ett filter.
+Filter som skapats i **[!UICONTROL Generic query editor]** kan återanvändas i andra frågeprogram, och det motsatta värdet är också sant. Om du vill spara ett filter för senare bruk klickar du på ikonen **[!UICONTROL Save]**.
 
-  >[!NOTE]
-  >
-  >Mer information om hur du skapar och använder filter finns i [Filtreringsalternativ](filter-conditions.md).
+>[!NOTE]
+>
+>Mer information om hur du skapar och använder filter finns i [Filtreringsalternativ](filter-conditions.md).
 
 Om du vill återställa alla mottagare med engelskspråkighet, som visas i följande exempel, väljer du: &quot;mottagarspråk **lika med** EN&quot;.
 
@@ -111,13 +107,13 @@ Användare som är bekanta med SQL-språk kan klicka på **[!UICONTROL Generate 
 
 ## Steg 5 - Formatera data {#step-5---format-data}
 
-När du har konfigurerat begränsningsfiltren kommer du åt fönstret **[!UICONTROL Data formatting]**. I det här fönstret kan du ordna om utdatakolumner, omforma data och ändra kolumnrubrikernas övre/nedre gemener. Du kan också använda en formel för slutresultatet med hjälp av ett beräkningsfält.
+När begränsningsfiltren har konfigurerats öppnas fönstret **[!UICONTROL Data formatting]**. I det här fönstret kan du ändra ordning på utdatakolumner, omforma data och justera kolumnetikettens skiftläge. Du kan också tillämpa formler på det slutliga resultatet genom att skapa ett beräkningsfält.
 
 >[!NOTE]
 >
 >Mer information om typerna av beräkningsfält finns i [Skapa beräknade fält](filter-conditions.md#creating-calculated-fields).
 
-Omarkerade kolumner visas inte i dataförhandsgranskningsfönstret.
+Omarkerade kolumner är dolda i förhandsgranskningsfönstret för data.
 
 ![](assets/query_editor_nveau_10.png)
 
@@ -131,7 +127,7 @@ I kolumnen **[!UICONTROL Transformation]** kan du ändra en kolumnetikett till v
 
 ## Steg 6 - Förhandsgranska data {#step-6---preview-data}
 
-Fönstret **[!UICONTROL Data preview]** är det sista steget. Klicka på **[!UICONTROL Start the preview of the data]** för att hämta frågeresultatet. Den är tillgänglig i kolumner eller i XML-format. Klicka på fliken **[!UICONTROL Generated SQL queries]** för att visa frågan i SQL-format.
+Fönstret **[!UICONTROL Data preview]** anger det sista steget i frågeprocessen. Klicka på **[!UICONTROL Start the preview of the data]** om du vill granska resultatet, som kan visas i kolumner eller XML-format. Öppna fliken **[!UICONTROL Generated SQL queries]** om du vill undersöka den underliggande SQL-frågan. I det här steget kan du verifiera att frågan beter sig som förväntat innan du använder den vidare.
 
 I det här exemplet sorteras data i stigande ordning baserat på mottagarens ålder.
 
@@ -139,7 +135,7 @@ I det här exemplet sorteras data i stigande ordning baserat på mottagarens ål
 
 >[!NOTE]
 >
->Som standard visas endast de första 200 raderna i fönstret **[!UICONTROL Data preview]**. Om du vill ändra det här anger du ett nummer i rutan **[!UICONTROL Lines to display]** och klickar på **[!UICONTROL Start the preview of the data]**.
+>Som för alla listor som är tillgängliga i konsolen visas som standard endast de första 200 raderna i fönstret **[!UICONTROL Data preview]**. Om du vill ändra det här anger du ett nummer i rutan **[!UICONTROL Lines to display]** och klickar på **[!UICONTROL Start the preview of the data]**. [Läs mer](../config/ui-settings.md#manage-and-customize-lists)
 
 
 

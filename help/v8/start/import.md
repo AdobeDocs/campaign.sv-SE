@@ -6,9 +6,9 @@ role: User
 level: Beginner
 exl-id: b0f8c057-dd4e-4284-b5a4-157986a1d95a
 version: Campaign v8, Campaign Classic v7
-source-git-commit: 95c944963feee746a2bb83a85f075134c91059d1
+source-git-commit: adea4eb54f3d519802119646bc501aae2ef5f831
 workflow-type: tm+mt
-source-wordcount: '3832'
+source-wordcount: '3845'
 ht-degree: 0%
 
 ---
@@ -416,9 +416,13 @@ Om du exporterar en samling element (t.ex. mottagarnas prenumerationer, de listo
 
 ### Steg 8 - Förhandsgranska data {#step-8---data-preview}
 
-Klicka på **[!UICONTROL Start the preview of the data]** om du vill se en förhandsgranskning av exportresultatet. Som standard visas de första 200 raderna. Om du vill ändra det här värdet klickar du på pilarna till höger om fältet **[!UICONTROL Lines to display]**.
+Klicka på **[!UICONTROL Start the preview of the data]** om du vill se en förhandsgranskning av exportresultatet.
 
 ![](assets/s_ncs_user_export_wizard07.png)
+
+>[!NOTE]
+>
+>Som för alla listor som är tillgängliga i konsolen visas som standard endast de första 200 raderna i fönstret **[!UICONTROL Data preview]**. Om du vill ändra det här anger du ett nummer i rutan **[!UICONTROL Lines to display]** och klickar på **[!UICONTROL Start the preview of the data]**. [Läs mer](../config/ui-settings.md#manage-and-customize-lists)
 
 Klicka på flikarna längst ned i assistenten för att växla från förhandsgranskning av resultat i kolumner till resultat i XML-format. Du kan även visa de genererade SQL-frågorna.
 
@@ -437,7 +441,7 @@ Använd Campaign för att skapa webbformulär och samla in och hantera profilinf
 
 ![](assets/web-form-page.png)
 
-Lär dig hur du skapar webbformulär i [Campaign Classic v7-dokumentationen](https://experienceleague.adobe.com/docs/campaign-classic/using/designing-content/web-forms/about-web-forms.html?lang=sv-SE){target="_blank"}.
+Lär dig hur du skapar webbformulär i [Campaign Classic v7-dokumentationen](https://experienceleague.adobe.com/docs/campaign-classic/using/designing-content/web-forms/about-web-forms.html){target="_blank"}.
 
 **Relaterade ämnen**
 
