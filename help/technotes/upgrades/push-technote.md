@@ -5,12 +5,10 @@ description: Kommande ändringar i push-meddelandekanalen
 feature: Push
 role: Admin
 level: Experienced
-badge-v7: label="v7" type="Informative" tooltip="Gäller även Campaign Classic v7"
-badge-v8: label="v8" type="Positive" tooltip="Gäller Campaign v8"
 exl-id: 45ac6f8f-eb2a-4599-a930-1c1fcaa3095b
-source-git-commit: a9aa9cb508ca1f5cdcd59e61b5be029e3de1a82f
+source-git-commit: f308f34afc16426d81d31eeaca5f14b10ac49c32
 workflow-type: tm+mt
-source-wordcount: '1665'
+source-wordcount: '1653'
 ht-degree: 1%
 
 ---
@@ -50,7 +48,7 @@ Om du vill kontrollera om du påverkas kan du filtrera dina **tjänster och pren
 
 * Android Firebase Admin SDK-tjänstens konto-JSON-fil behövs för att mobilprogrammet ska kunna flyttas till HTTP v1. Lär dig hur du hämtar den här filen i [Google Firebase-dokumentationen](https://firebase.google.com/docs/admin/setup#initialize-sdk){target="_blank"}.
 
-* För Campaign Classic v7 har stöd för HTTP v1 lagts till i version 20.3.1. Om din miljö körs på en äldre version är en förutsättning för övergången till HTTP v1 att du uppgraderar din miljö till den [senaste Campaign Classic-versionen](https://experienceleague.adobe.com/docs/campaign-classic/using/release-notes/latest-release.html?lang=sv-SE){target="_blank"}. För Campaign v8 stöds HTTP v1 av alla versioner och ingen uppgradering behövs.
+* För Campaign Classic v7 har stöd för HTTP v1 lagts till i version 20.3.1. Om din miljö körs på en äldre version är en förutsättning för övergången till HTTP v1 att du uppgraderar din miljö till den [senaste Campaign Classic-versionen](https://experienceleague.adobe.com/docs/campaign-classic/using/release-notes/latest-release.html){target="_blank"}. För Campaign v8 stöds HTTP v1 av alla versioner och ingen uppgradering behövs.
 
 * Som lokal användare av Campaign Classic v7 måste ni uppgradera både marknadsförings- och Real-Time Execution-servrarna.
 
@@ -58,7 +56,7 @@ Om du vill kontrollera om du påverkas kan du filtrera dina **tjänster och pren
 
 * Om det externa Android-kontot för routning:
 
-   * Som en lokal eller hybridanvändare i Campaign Classic v7 kontrollerar du att ditt externa Android-routningskonto är konfigurerat med `androidPushConnectorV2.js`. Läs mer i [Campaign Classic v7-dokumentationen](https://experienceleague.adobe.com/sv/docs/campaign-classic/using/sending-messages/sending-push-notifications/configure-the-mobile-app/configuring-the-mobile-application-android#configuring-external-account-android){target="_blank"}.
+   * Som en lokal eller hybridanvändare i Campaign Classic v7 kontrollerar du att ditt externa Android-routningskonto är konfigurerat med `androidPushConnectorV2.js`. Läs mer i [Campaign Classic v7-dokumentationen](https://experienceleague.adobe.com/en/docs/campaign-classic/using/sending-messages/sending-push-notifications/configure-the-mobile-app/configuring-the-mobile-application-android#configuring-external-account-android){target="_blank"}.
 
    * För Hybrid-, Hosted- och Managed Cloud Services-distributioner måste du även ansluta till Adobe kundtjänstteam för att validera att `androidPushConnectorV2.js (nms)`-anslutningen har valts i Android routningsexterna konto för MID-källservern.
 
@@ -97,7 +95,7 @@ Så här flyttar du miljön till HTTP v1:
 
 #### Uppdatera befintliga mallar {#fcm-transition-update}
 
-När övergången till HTTP v1 är klar måste du uppdatera dina **leveransmallar** för Android push-meddelanden för att öka antalet batchmeddelanden. Det gör du genom att bläddra till egenskaperna för din Android-leveransmall och ange [Antal meddelandebatchar](../../v8/send/configure-and-send.md#delivery-batch-quantity) till **256** på fliken **Leverans**. Använd ändringen på alla leveransmallar som används för dina Android-leveranser och på alla befintliga Android-leveranser.
+När övergången till HTTP v1 är klar måste du uppdatera dina **leveransmallar** för Android push-meddelanden för att öka antalet batchmeddelanden. Det gör du genom att bläddra till egenskaperna för din Android-leveransmall och ange **Antal meddelandebatchar** till [256](../../v8/send/configure-and-send.md#delivery-batch-quantity) på fliken **Leverans**. Använd ändringen på alla leveransmallar som används för dina Android-leveranser och på alla befintliga Android-leveranser.
 
 Du kan även uppdatera befintliga mallar för leveranser och leveranser som skapats före uppgraderingen till en version som stöder HTTP v1. Så här gör du:
 
@@ -212,7 +210,7 @@ Om du vill kontrollera om du påverkas kan du filtrera dina **tjänster och pren
 
 #### Förhandskrav {#ios-transition-prerequisites}
 
-* För Campaign Classic v7 har stödet för **tokenbaserad autentisering** lagts till i version 20.2. Om din miljö körs på en äldre version är en förutsättning för den här ändringen att du uppgraderar din miljö till den [senaste Campaign Classic-versionen](https://experienceleague.adobe.com/docs/campaign-classic/using/release-notes/latest-release.html?lang=sv-SE){target="_blank"}. För Campaign v8 stöds **tokenbaserat autentiseringsläge** av alla versioner och ingen uppgradering behövs.
+* För Campaign Classic v7 har stödet för **tokenbaserad autentisering** lagts till i version 20.2. Om din miljö körs på en äldre version är en förutsättning för den här ändringen att du uppgraderar din miljö till den [senaste Campaign Classic-versionen](https://experienceleague.adobe.com/docs/campaign-classic/using/release-notes/latest-release.html){target="_blank"}. För Campaign v8 stöds **tokenbaserat autentiseringsläge** av alla versioner och ingen uppgradering behövs.
 
 * Du behöver en signeringsnyckel för APN:s autentiseringstoken för att generera de tokens som servern använder. Du begär den här nyckeln från ditt Apple-utvecklarkonto, vilket förklaras i [Apple Developer-dokumentationen](https://developer.apple.com/documentation/usernotifications/establishing-a-token-based-connection-to-apns){target="_blank"}.
 

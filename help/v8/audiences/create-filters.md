@@ -6,22 +6,22 @@ role: User
 level: Beginner
 exl-id: 873578f6-6af9-4d0c-8df3-cce320fc6a4e
 version: Campaign v8, Campaign Classic v7
-source-git-commit: 95c944963feee746a2bb83a85f075134c91059d1
+source-git-commit: f308f34afc16426d81d31eeaca5f14b10ac49c32
 workflow-type: tm+mt
-source-wordcount: '1607'
+source-wordcount: '1899'
 ht-degree: 0%
 
 ---
 
-# Skapa och hantera filter{#create-filters}
+# Arbeta med filter{#create-filters}
 
-Datafiltrering är processen att välja en mindre del av datauppsättningen, bara de poster som matchar vissa villkor, och att använda den deluppsättningen för specifika åtgärder (uppdateringar, målgruppsgenerering) eller analyser.
+Datafiltrering innebär att en datauppsättning begränsas till endast de poster som matchar specifika villkor. Den här delmängden kan sedan användas för målinriktade åtgärder (till exempel uppdateringar eller målgruppsskapande) eller för analys.
 
-När du bläddrar i Campaign från **[!UICONTROL Explorer]** visas data i listor. Du kan använda befintliga inbyggda filter för att få tillgång till en viss delmängd av dessa data: adresser i karantän, mottagare som inte är målinriktade, ett visst åldersintervall eller datum när de skapades, till exempel.
+När du bläddrar i Campaign visas data i listor. Du kan använda inbyggda filter för att snabbt komma åt en definierad delmängd, till exempel adresser i karantän, mottagare utan mål eller poster inom ett visst åldersintervall eller ett visst datum när de skapades.
 
-Du kan också skapa egna filter, spara dem för framtida bruk eller dela dem med andra Campaign-användare.
+Dessutom kan du skapa anpassade filter, spara dem för framtida bruk och dela dem med andra Campaign-användare.
 
-Med filterkonfigurationen kan du välja data från en lista **[!UICONTROL dynamically]**: när data ändras uppdateras filtrerade data.
+Filter tillämpas **dynamiskt**: när data ändras uppdateras de filtrerade resultaten automatiskt.
 
 >[!NOTE]
 >
@@ -29,7 +29,67 @@ Med filterkonfigurationen kan du välja data från en lista **[!UICONTROL dynami
 
 Följande typer av filter finns i Adobe Campaign:
 
+* [Fördefinierade filter](#predefined-filters)
+* [Snabbfilter](#quick-filters)
+* [Avancerade anpassade filter](#advanced-filters)
+
 ## Fördefinierade filter{#predefined-filters}
+
+### Fördefinierade filter på kontrollpanelerna
+
+Som standard visar Adobe Campaign alla databasposter som operatorn har behörighet att läsa. Du kan filtrera dessa data med hjälp av alternativen i det övre avsnittet i webbläsarfönstret.
+
+![](assets/filter_web_zone.png)
+
+Det finns flera sätt att filtrera de data som ska visas. Vid behov kan dessa användas tillsammans.
+
+* Filtrera på mappar, se [Filtrera efter mapp](#filter-by-folder),
+* Filtrera efter status, se [Filter efter status](#filter-by-status),
+* Datasortering, se [Ordna efter](#order-by),
+* Sök, se [Snabbsökning](#quick-search).
+
+
+>[!BEGINTABS]
+
+>[!TAB Filtrera efter mapp]
+
+Om du vill filtrera data baserat på deras mapp klickar du på ikonen **[!UICONTROL Folder]** och väljer den mapp som innehåller de data som ska visas.
+
+![](assets/filter_web_select_folder.png)
+
+Endast profilerna i mappen visas:
+
+![](assets/filter_web_folder_display.png)
+
+Använd krysset till höger om mappmarkeringsfältet för att återgå till standardvisningsläget.
+
+>[!TAB Filtrera efter status]
+
+Beroende på vilken typ av information som visas kan du använda ett filter efter status eller efter läge.
+
+För leveranser kan du t.ex. välja att bara visa de färdiga leveranserna enligt nedan:
+
+![](assets/d_ncs_user_interface_filter_delivery.png)
+
+>[!TAB Beställ av]
+
+Du kan välja sorteringsordning för de data som finns på sidorna via den nedrullningsbara listan till höger om filtreringsfältet per mapp. Innehållet i det här fältet beror på vilken typ av data som finns på sidan.
+
+Du kan till exempel sortera uppgifter efter prioritet, skapandedatum eller i alfabetisk ordning.
+
+![](assets/order_data_sample.png)
+
+>[!TAB Snabbsökning]
+
+Använd sökfältet för att snabbt komma åt objektet du söker efter: ange tecknen som finns i etiketten eller det interna namnet på objektet som du vill visa och bekräfta sedan att du vill använda ett automatiskt filter på data på sidan.
+
+![](assets/d_ncs_user_interface_filter_search.png)
+
+Om du vill visa alla objekt igen klickar du på krysset för att ta bort innehållet i sökfältet.
+
+>[!ENDTABS]
+
+### Fördefinierade filter i Utforskaren
 
 Fördefinierade filter är tillgängliga från knappen **Filter** ovanför varje lista.
 
@@ -52,7 +112,7 @@ Använd den sista fliken för att förhandsgranska filtrerade data.
 ![](assets/built-in-filter-preview.png)
 
 
-+++  Inbyggda fördefinierade filter
++++  Inbyggda fördefinierade filter för profiler
 
 <table> 
  <tbody> 
@@ -161,7 +221,7 @@ Använd den sista fliken för att förhandsgranska filtrerade data.
 
 +++
 
-### Standardfilter{#default-filters}
+#### Standardfilter{#default-filters}
 
 I fälten ovanför varje lista kan du använda det **fördefinierade standardfiltret** för den här listan. För mottagarlistan kan du som standard filtrera på namn och e-postadress.
 
@@ -191,7 +251,7 @@ Använd följande steg:
 
 ## Snabbfilter{#quick-filters}
 
-Använd och kombinera **snabbfilter** för att definiera filter för specifika fält.
+Du kan ställa in och kombinera **snabbfilter** för att skapa anpassade filter för specifika fält.
 
 När du har lagt till snabbfilterfält visas de ovanför datalistan, den ena efter den andra. De kan tas bort oberoende av varandra.
 
@@ -216,7 +276,7 @@ Så här skapar du ett **snabbfilter**:
    ![](assets/add-filter-above-the-list.png)
 
 
-Om du behöver filtrera ett fält som inte är tillgängligt i formuläret, visas det i kolumnerna och filtreras efter den kolumnen. För att göra detta
+Om du behöver filtrera ett fält som inte är tillgängligt i formuläret, utan i kolumnerna, och filtrera på den kolumnen. För att göra detta
 
 1. Klicka på ikonen **[!UICONTROL Configure list]**.
 
@@ -236,7 +296,7 @@ Om du behöver filtrera ett fält som inte är tillgängligt i formuläret, visa
 
 ## Avancerade filter{#advanced-filters}
 
-Kombinera komplexa villkor i **Avancerade filter**. Använd dessa filter för att skapa en komplex fråga eller en kombination av frågor på dina data. Dessa filter kan sparas och delas med andra Campaign-användare.
+Kombinera komplexa villkor i anpassade **avancerade filter**. Använd dessa filter för att skapa en komplex fråga eller en kombination av frågor på dina data. Dessa filter kan sparas och delas med andra Campaign-användare.
 
 ### Skapa ett avancerat filter{#create-adv-filters}
 
@@ -329,10 +389,10 @@ Om du vill utföra avancerade filtreringsfunktioner använder du funktioner för
 
 Lär dig hur du skapar avancerade frågor i dessa kompletta exempel:
 
-* Lär dig hur du aktiverar enkla mottagarattribut på [den här sidan](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/targeting-activities/query.html?lang=sv-SE){target="_blank"}.
-* Lär dig filtrera efter mottagare som inte har kontaktats under de senaste 7 dagarna på [den här sidan](https://experienceleague.adobe.com/docs/campaign/automation/workflows/use-cases/designing-queries/query-many-to-many-relationship.html?lang=sv-SE){target="_blank"}.
-* Lär dig hur du återställer listan över operatorer som kan filtreras efter aktiva konton på [den här sidan](https://experienceleague.adobe.com/docs/campaign/automation/workflows/use-cases/designing-queries/create-a-filter.html?lang=sv-SE){target="_blank"}.
-* Lär dig hur du skapar en målgrupp för e-postfödelsedag på [den här sidan](https://experienceleague.adobe.com/docs/campaign/automation/workflows/use-cases/deliveries/send-a-birthday-email.html?lang=sv-SE){target="_blank"}.
+* Lär dig hur du aktiverar enkla mottagarattribut på [den här sidan](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/targeting-activities/query.html){target="_blank"}.
+* Lär dig filtrera efter mottagare som inte har kontaktats under de senaste 7 dagarna på [den här sidan](https://experienceleague.adobe.com/docs/campaign/automation/workflows/use-cases/designing-queries/query-many-to-many-relationship.html){target="_blank"}.
+* Lär dig hur du återställer listan över operatorer som kan filtreras efter aktiva konton på [den här sidan](https://experienceleague.adobe.com/docs/campaign/automation/workflows/use-cases/designing-queries/create-a-filter.html){target="_blank"}.
+* Lär dig hur du skapar en målgrupp för e-postfödelsedag på [den här sidan](https://experienceleague.adobe.com/docs/campaign/automation/workflows/use-cases/deliveries/send-a-birthday-email.html){target="_blank"}.
 
 
 ### Avancerade parametrar för fördefinierade filter {#param-for-data-filters}
@@ -355,5 +415,3 @@ Avancerade parametrar är tillgängliga för fördefinierade filter. Bläddra ti
    * Du kan koppla en SQL-tabell till filtret så att den blir gemensam för alla redigerare som delar tabellen.
    * Om du inte vill att någon användare ska kunna åsidosätta filtret markerar du alternativet **[!UICONTROL Do not restrict the filter]**. Det här alternativet är t.ex. aktivt för filter av typen &quot;Mottagare av en leverans&quot; och &quot;Mottagare av leveranser som tillhör en mapp&quot; som finns i leveransguiden. Dessa filter kan inte överladdas.
 
-
-### Operatorer
