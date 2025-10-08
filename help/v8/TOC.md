@@ -41,7 +41,7 @@ ht-degree: 27%
    + [Vanliga frågor och svar &#x200B;](start/campaign-faq.md)
 + Kampanjhantering {#campaigns}
    + [Kom igång med kampanjer](start/campaigns.md)
-   + [Kampanjsamordning >](https://experienceleague.adobe.com/docs/campaign/automation/campaign-orchestration/set-up-campaigns.html)
+   + [Kampanjsamordning >](https://experienceleague.adobe.com/docs/campaign/automation/campaign-orchestration/set-up-campaigns.html?lang=sv-SE)
 + Skicka meddelanden{#send}
    + [Kom igång med meddelanden](start/gs-message.md)
    + [Skapa din första leverans](start/create-message.md)
@@ -135,7 +135,7 @@ ht-degree: 27%
    + [Designa webbprogram och formulär](dev/webapps.md)
 + Arbetsflöden {#workflows}
    + [Kom igång med arbetsflöden](config/workflows.md)
-   + [Arbetsflödesdokumentation >](https://experienceleague.adobe.com/docs/campaign/automation/workflows/introduction/about-workflows.html)
+   + [Arbetsflödesdokumentation >](https://experienceleague.adobe.com/docs/campaign/automation/workflows/introduction/about-workflows.html?lang=sv-SE)
 + Integritet och säkerhetshantering {#privacy}
    + [Hantera förfrågningar om användarens information](start/privacy.md)
    + [Säkerhetsanvisningar](config/security.md)
@@ -180,7 +180,7 @@ ht-degree: 27%
       + [Designfrågor](start/design-queries.md)
       + [Definiera filtervillkor](start/filter-conditions.md)
    + [Importera data](start/import.md)
-   + [Arbetsflödesdokumentation >](https://experienceleague.adobe.com/docs/campaign/automation/workflows/introduction/about-workflows.html)
+   + [Arbetsflödesdokumentation >](https://experienceleague.adobe.com/docs/campaign/automation/workflows/introduction/about-workflows.html?lang=sv-SE)
 + Integreringar {#connect}
    + [Connect Campaign med andra lösningar](connect/integration.md)
    + Campaign + Experience Platform {#ac-aep}
@@ -270,6 +270,6 @@ ht-degree: 27%
       + Hantera arbetsflöden {#managing-workflows}
          + [Kontrollera ett arbetsflöde](dev/api/controlling-a-workflow.md)
          + [Utlösa en signalaktivitet](dev/api/triggering-a-signal-activity.md)
-+ [Kampanjtekniker >](https://experienceleague.adobe.com/en/docs/campaign/technotes-ac/technotes-home)
-+ [Dokumentation för webbanvändargränssnittet för kampanj >](https://experienceleague.adobe.com/en/docs/campaign-web/v8/campaign-web-home)
++ [Kampanjtekniker >](https://experienceleague.adobe.com/sv/docs/campaign/technotes-ac/technotes-home)
++ [Dokumentation för webbanvändargränssnittet för kampanj >](https://experienceleague.adobe.com/sv/docs/campaign-web/v8/campaign-web-home)
 
