@@ -6,9 +6,9 @@ role: User
 level: Beginner
 exl-id: 873578f6-6af9-4d0c-8df3-cce320fc6a4e
 version: Campaign v8, Campaign Classic v7
-source-git-commit: 72e3f643d0e53c22c5007aab431689ebeca7403c
+source-git-commit: 24a5c4f1d73ea08e40d271db483da33bf5615fb2
 workflow-type: tm+mt
-source-wordcount: '1899'
+source-wordcount: '1882'
 ht-degree: 0%
 
 ---
@@ -41,12 +41,7 @@ Som standard visar Adobe Campaign alla databasposter som operatorn har behörigh
 
 ![](assets/filter_web_zone.png)
 
-Det finns flera sätt att filtrera de data som ska visas. Vid behov kan dessa användas tillsammans.
-
-* Filtrera på mappar, se [Filtrera efter mapp](#filter-by-folder),
-* Filtrera efter status, se [Filter efter status](#filter-by-status),
-* Datasortering, se [Ordna efter](#order-by),
-* Sök, se [Snabbsökning](#quick-search).
+Det finns flera sätt att filtrera de data som ska visas. Vid behov kan dessa användas tillsammans. Bläddra bland flikarna nedan om du vill veta mer om filtreringsalternativen.
 
 
 >[!BEGINTABS]
@@ -389,10 +384,10 @@ Om du vill utföra avancerade filtreringsfunktioner använder du funktioner för
 
 Lär dig hur du skapar avancerade frågor i dessa kompletta exempel:
 
-* Lär dig hur du aktiverar enkla mottagarattribut på [den här sidan](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/targeting-activities/query.html?lang=sv-SE){target="_blank"}.
-* Lär dig filtrera efter mottagare som inte har kontaktats under de senaste 7 dagarna på [den här sidan](https://experienceleague.adobe.com/docs/campaign/automation/workflows/use-cases/designing-queries/query-many-to-many-relationship.html?lang=sv-SE){target="_blank"}.
-* Lär dig hur du återställer listan över operatorer som kan filtreras efter aktiva konton på [den här sidan](https://experienceleague.adobe.com/docs/campaign/automation/workflows/use-cases/designing-queries/create-a-filter.html?lang=sv-SE){target="_blank"}.
-* Lär dig hur du skapar en målgrupp för e-postfödelsedag på [den här sidan](https://experienceleague.adobe.com/docs/campaign/automation/workflows/use-cases/deliveries/send-a-birthday-email.html?lang=sv-SE){target="_blank"}.
+* Lär dig hur du aktiverar enkla mottagarattribut på [den här sidan](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/targeting-activities/query.html){target="_blank"}.
+* Lär dig filtrera efter mottagare som inte har kontaktats under de senaste 7 dagarna på [den här sidan](https://experienceleague.adobe.com/docs/campaign/automation/workflows/use-cases/designing-queries/query-many-to-many-relationship.html){target="_blank"}.
+* Lär dig hur du återställer listan över operatorer som kan filtreras efter aktiva konton på [den här sidan](https://experienceleague.adobe.com/docs/campaign/automation/workflows/use-cases/designing-queries/create-a-filter.html){target="_blank"}.
+* Lär dig hur du skapar en målgrupp för e-postfödelsedag på [den här sidan](https://experienceleague.adobe.com/docs/campaign/automation/workflows/use-cases/deliveries/send-a-birthday-email.html){target="_blank"}.
 
 
 ### Avancerade parametrar för fördefinierade filter {#param-for-data-filters}
