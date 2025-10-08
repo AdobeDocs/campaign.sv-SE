@@ -86,7 +86,7 @@ Med en dirigerad adress kan du visa en förhandsgranskning av meddelandet, skick
 
    ![](assets/messagecenter_create_seed_2.png)
 
-1. Infoga testdata. [Läs mer om personaliseringsdata i Campaign Classic v7-dokumentationen](https://experienceleague.adobe.com/en/docs/campaign-classic/using/transactional-messaging/message-templates/testing-message-templates#personalization-datal){target="_blank"}
+1. Infoga testdata. [Läs mer om personaliseringsdata i Campaign Classic v7-dokumentationen](https://experienceleague.adobe.com/sv/docs/campaign-classic/using/transactional-messaging/message-templates/testing-message-templates#personalization-datal){target="_blank"}
 
    ![](assets/messagecenter_create_custo_3.png)
 
