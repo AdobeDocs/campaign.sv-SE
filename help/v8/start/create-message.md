@@ -6,9 +6,9 @@ role: User
 level: Beginner
 version: Campaign v8, Campaign Classic v7
 exl-id: 6cf8a929-637e-4e51-9160-5980ca727efb
-source-git-commit: 95c944963feee746a2bb83a85f075134c91059d1
+source-git-commit: 56d5628312ea3dedf9335dd0933811e4bf66eb97
 workflow-type: tm+mt
-source-wordcount: '1523'
+source-wordcount: '1524'
 ht-degree: 3%
 
 ---
@@ -94,7 +94,7 @@ Följ stegen nedan för att välja mottagare av en leverans:
 
    Följande måltyper är tillgängliga:
 
-   * **[!UICONTROL Filtering conditions]**: använd det här alternativet om du vill definiera en fråga och visa resultatet. Lär dig utforma en fråga i [det här avsnittet](../start/query-editor.md).
+   * **[!UICONTROL Filtering conditions]**: använd det här alternativet för att definiera en anpassad fråga för att hämta mottagarna. Lär dig utforma en fråga i [det här avsnittet](../start/query-editor.md).
    * **[!UICONTROL A list of recipients]**: använd det här alternativet för att ange en lista över profiler som mål. Läs mer om listor i [det här avsnittet](../audiences/create-audiences.md).
    * **[!UICONTROL A recipient]**: använd det här alternativet om du vill välja en viss profil i databasen.
    * **[!UICONTROL Recipients included in a folder]**: använd det här alternativet om du vill ange alla profiler i en viss mapp som mål.
@@ -137,7 +137,7 @@ Du kan skicka meddelanden till profiler som inte lagras i databasen, utan i en e
 1. Markera filen som innehåller mottagarna.
 1. När du importerar mottagarna klickar du på länken **[!UICONTROL File format definition...]** för att markera och konfigurera den externa filen.
 
-   Mer information om dataimport finns i [Campaign Classic v7-dokumentationen](https://experienceleague.adobe.com/sv/docs/campaign-classic/using/getting-started/importing-and-exporting-data/generic-imports-exports/executing-import-jobs#step-2---source-file-selection){target="_blank"}.
+   Mer information om dataimport finns i [Campaign Classic v7-dokumentationen](https://experienceleague.adobe.com/en/docs/campaign-classic/using/getting-started/importing-and-exporting-data/generic-imports-exports/executing-import-jobs#step-2---source-file-selection){target="_blank"}.
 
 1. Klicka på **[!UICONTROL Finish]** och konfigurera leveransen som en standardleverans.
 
@@ -182,7 +182,7 @@ Mer information om korrekturmottagare och sändning finns i [det här avsnittet]
 
 I den här videon får du lära dig hur du lägger till frön och korrektur i ett befintligt e-postmeddelande och hur du skickar det.
 
->[!VIDEO](https://video.tv.adobe.com/v/3447003?quality=12&captions=swe)
+>[!VIDEO](https://video.tv.adobe.com/v/333404?quality=12)
 
 Ytterligare Campaign Classic instruktionsvideor finns [här](https://experienceleague.adobe.com/docs/campaign-classic-learn/tutorials/overview.html?lang=sv).
 
