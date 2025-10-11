@@ -17,12 +17,12 @@ ht-degree: 33%
 
 Beroende på vilken typ av verksamhet ni bedriver och vilka jurisdiktioner ni bedriver under, kan det bero på att era uppgifter omfattas av lagenliga sekretessbestämmelser. Dessa bestämmelser ger ofta kunderna rätt att begära åtkomst till de uppgifter ni samlar in från dem och rätt att begära att lagrade uppgifter tas bort. Dessa kundförfrågningar om deras personuppgifter kallas i hela dokumentationen för&quot;sekretessförfrågningar&quot;.
 
-Adobe erbjuder Data Controllers de verktyg de behöver för att skapa och bearbeta sekretessförfrågningar för data som lagras i Campaign. Det är emellertid ditt ansvar som personuppgiftsansvariga att verifiera identiteten på den registrerade som gör begäran och att bekräfta att de uppgifter som skickas tillbaka till den som gjorde begäran handlar om den registrerade. Läs mer om personuppgifter och de olika entiteter som hanterar data i [Adobe Campaign Classic v7-dokumentationen](https://experienceleague.adobe.com/docs/campaign-classic/using/getting-started/privacy/privacy-and-recommendations.html#personal-data){target="_blank"}.
+Adobe erbjuder Data Controllers de verktyg de behöver för att skapa och bearbeta sekretessförfrågningar för data som lagras i Campaign. Det är emellertid ditt ansvar som personuppgiftsansvariga att verifiera identiteten på den registrerade som gör begäran och att bekräfta att de uppgifter som skickas tillbaka till den som gjorde begäran handlar om den registrerade. Läs mer om personuppgifter och de olika entiteter som hanterar data i [Adobe Campaign Classic v7-dokumentationen](https://experienceleague.adobe.com/docs/campaign-classic/using/getting-started/privacy/privacy-and-recommendations.html?lang=sv-SE#personal-data){target="_blank"}.
 
 
 Om du vill hantera sekretessbegäran i Campaign måste du först [definiera ett namnområde](#namespaces). Du kan sedan skapa och hantera förfrågningar om sekretess. Använd integreringen **Adobe Privacy Service** för att utföra sekretessförfrågningar. Sekretessförfrågningar som skickas från Privacy Service till alla Adobe Experience Cloud-lösningar hanteras automatiskt av Campaign via ett dedikerat arbetsflöde. [Läs mer](#create-privacy-request)
 
-Lär dig mer om **rätten till åtkomst** och **rättigheten att bli glömd** (borttagningsbegäran) i [Adobe Campaign Classic v7-dokumentationen](https://experienceleague.adobe.com/docs/campaign-classic/using/getting-started/privacy/privacy-management.html#right-access-forgotten){target="_blank"}.
+Lär dig mer om **rätten till åtkomst** och **rättigheten att bli glömd** (borttagningsbegäran) i [Adobe Campaign Classic v7-dokumentationen](https://experienceleague.adobe.com/docs/campaign-classic/using/getting-started/privacy/privacy-management.html?lang=sv-SE#right-access-forgotten){target="_blank"}.
 
 
 >[!NOTE]
@@ -153,10 +153,10 @@ Nedan finns olika statusar för sekretessförfrågningar i Adobe Campaign och hu
 
 **Relaterade ämnen i Campaign Classic v7-dokumentation:**
 
-* [Integritet och medgivande](https://experienceleague.adobe.com/docs/campaign-classic/using/getting-started/privacy/privacy-and-recommendations.html){target="_blank"}
+* [Integritet och medgivande](https://experienceleague.adobe.com/docs/campaign-classic/using/getting-started/privacy/privacy-and-recommendations.html?lang=sv-SE){target="_blank"}
 
 * [Komma igång med sekretesshantering](https://experienceleague.adobe.com/docs/campaign-classic/using/getting-started/privacy/privacy-management.html?lang=sv){target="_blank"}
 
-* [Regler för sekretesshantering](https://experienceleague.adobe.com/docs/campaign-classic/using/getting-started/privacy/privacy-management.html#privacy-management-regulations){target="_blank"} (GDPR, CCPA, PDPA och LGPD)
+* [Regler för sekretesshantering](https://experienceleague.adobe.com/docs/campaign-classic/using/getting-started/privacy/privacy-management.html?lang=sv-SE#privacy-management-regulations){target="_blank"} (GDPR, CCPA, PDPA och LGPD)
 
 * [Avanmäl dig till försäljning av personuppgifter](https://experienceleague.adobe.com/docs/campaign-classic/using/getting-started/privacy/privacy-requests/privacy-requests-ccpa.html){target="_blank"} (gäller endast CCPA)

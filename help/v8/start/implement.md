@@ -38,11 +38,11 @@ Adobe Campaign innehåller processer och inställningar som gör att ni kan anv�
 
 * **Datainsamling**: Med Adobe Campaign kan du samla in data, inklusive personlig och känslig information. Det är därför viktigt att du får och hanterar samtycke från dina mottagare.
 
-  Läs mer i [Campaign Classic v7-dokumentationen](https://experienceleague.adobe.com/docs/campaign-classic/using/getting-started/privacy/privacy-and-recommendations.html#data-acquisition){target="_blank"}
+  Läs mer i [Campaign Classic v7-dokumentationen](https://experienceleague.adobe.com/docs/campaign-classic/using/getting-started/privacy/privacy-and-recommendations.html?lang=sv-SE#data-acquisition){target="_blank"}
 
 * **Användarens samtycke och datalagring**: du måste få användarens samtycke, konfigurera prenumerationsmekanismer för dubbel anmälan, underlätta avanmälan och konfigurera datalagring.
 
-  Läs mer i [Sekretessdokumentationen för Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/getting-started/privacy/privacy-and-recommendations.html#consent){target="_blank"}
+  Läs mer i [Sekretessdokumentationen för Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/getting-started/privacy/privacy-and-recommendations.html?lang=sv-SE#consent){target="_blank"}
 
 * **Sekretess- och dataskyddsbestämmelser**: se [det här avsnittet](privacy.md) för information om sekretesskrav och hur dessa bestämmelser påverkar din organisation och Adobe Campaign.
 
