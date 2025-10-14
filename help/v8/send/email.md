@@ -91,7 +91,7 @@ I följande exempel får du lära dig hur du utformar en e-postleverans i Adobe 
 
 Din första e-postleverans är klar. Nu måste ni definiera målgruppen, validera leveransen och skicka den.
 
-Lär dig hur du skapar ett arbetsflöde för att importera ett e-postinnehåll i det här [användningsfallet](https://experienceleague.adobe.com/docs/campaign/automation/workflows/use-cases/deliveries/load-delivery-content.html){target="_blank"}.
+Lär dig hur du skapar ett arbetsflöde för att importera ett e-postinnehåll i det här [användningsfallet](https://experienceleague.adobe.com/docs/campaign/automation/workflows/use-cases/deliveries/load-delivery-content.html?lang=sv-SE){target="_blank"}.
 
 >[!MORELIKETHIS]
 >
@@ -100,7 +100,7 @@ Lär dig hur du skapar ett arbetsflöde för att importera ett e-postinnehåll i
 >* [Välj publik för ditt e-postmeddelande](../audiences/gs-audiences.md)
 >* [Validera en leverans och skicka korrektur](preview-and-proof.md)
 >* [Konfigurera och skicka leveransen](configure-and-send.md)
->* [God praxis för leverans](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/delivery-best-practices.html){target="_blank"}
+>* [God praxis för leverans](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/delivery-best-practices.html?lang=sv-SE){target="_blank"}
 
 ## Testa och validera dina e-postmeddelanden
 
