@@ -3,9 +3,9 @@ title: Versionsinformation om Campaign v8
 description: Senaste Campaign v8-versionen
 feature: Release Notes
 exl-id: 7cf8111d-9f3a-46a4-813a-d4e43a1d1471
-source-git-commit: 3bc247ba81de3de56c26bdf8fa9b8aa5ea91fb2a
+source-git-commit: d31368428fc7d5b982bb5fc67d0369bb17ea0b2c
 workflow-type: tm+mt
-source-wordcount: '390'
+source-wordcount: '388'
 ht-degree: 8%
 
 ---
@@ -28,10 +28,10 @@ Den **nya SMS-sändningskonnektorn** är nu tillgänglig för [Campaign FFDA-dis
 
 Den här versionen innehåller även en uppsättning funktioner som är tillgängliga med användargränssnittet för Campaign-webben:
 
-* [Profilberikning i transaktionsmeddelanden](https://experienceleague.adobe.com/docs/campaign-web/v8/msg/transactional-messages/profile-enrichment.html?lang=sv-SE){target="_blank"}
-* [Flerspråkiga funktioner för transaktionsmeddelanden, push-meddelanden och SMS](https://experienceleague.adobe.com/docs/campaign-web/v8/msg/multilingual.html?lang=sv-SE){target="_blank"}
+* [Profilberikning i transaktionsmeddelanden](https://experienceleague.adobe.com/docs/campaign-web/v8/msg/transactional-messages/profile-enrichment.html){target="_blank"}
+* [Flerspråkiga funktioner för transaktionsmeddelanden, push-meddelanden och SMS](https://experienceleague.adobe.com/docs/campaign-web/v8/msg/multilingual.html){target="_blank"}
 
-Se versionsinformationen för Campaign Web UI [&#128279;](https://experienceleague.adobe.com/docs/campaign-web/v8/release-notes/release-notes.html?lang=sv-SE){target="_blank"}
+Se versionsinformationen för Campaign Web UI [](https://experienceleague.adobe.com/docs/campaign-web/v8/release-notes/release-notes.html){target="_blank"}
 
 ### Korrigeringar {#fixes-8-8-2}
 
@@ -52,7 +52,7 @@ Se versionsinformationen för Campaign Web UI [&#128279;](https://experienceleag
 * Korrigerade ett problem där Real-Time Server returnerade en felaktig svarskod för ogiltiga IMS-tokens i stället. (NEO-87428)
 * Ett problem har korrigerats där leveransstatistik för e-post och SMS inte räknades om fullständigt, vilket gav felaktiga resultatindikatorer. (NEO-88106)
 * Ett problem med den nya SMS-sändningsanslutaren där leveransloggar felaktigt tilldelade leveransstatus för en liten delmängd av meddelanden har åtgärdats. (NEO-89581)
-* Korrigerade ett problem med den nya SMS-sändningsanslutaren där framgångsmått för T-Mobile-leveranser inte uppdaterades korrekt på både marknadsförings- och mellanservrar. (NEO-89850)
+* Korrigerade ett problem med den nya SMS-sändningskonnektorn där leveransvärdena inte uppdaterades korrekt på både marknadsförings- och mellanservrar. (NEO-89850)
 * Korrigerade ett synkroniseringsproblem mellan Real-Time- och Marketing-instanserna som orsakade saknade spårningsloggar och felaktig rapportering. (NEO-90247)
 * Ett problem med arbetsflödesberikning som kan orsaka fel när fält markeras över två på varandra följande 1-N-länkar i anpassade scheman har åtgärdats. (NEO-87682)
 
