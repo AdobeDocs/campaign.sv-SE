@@ -6,9 +6,9 @@ feature: Deliverability
 role: User
 version: Campaign v8, Campaign Classic v7
 exl-id: dcd3a9f9-5fe9-4c28-a4a5-5aed67b036ab
-source-git-commit: 11c8c4c51c7901ba0d119323c564a64b940428b7
+source-git-commit: 96f1518f252be7ffa27ba8157b8a090bf4d4510d
 workflow-type: tm+mt
-source-wordcount: '744'
+source-wordcount: '742'
 ht-degree: 4%
 
 ---
@@ -25,11 +25,11 @@ Följ nedanstående principer när du utformar ditt meddelandeinnehåll:
 * [Bryt prenumerationslänk](#opt-out) och landningssida: länken för att avsluta prenumerationen är nödvändig. Den måste vara synlig och giltig och formuläret måste vara funktionellt.
 * Förhandsgranska: använd verktygen i Adobe Campaign för att kontrollera och optimera innehållet i e-postmeddelandet ([Inkorgsåtergivning](#message-responsiveness), [SpamAssets](#spamassassin)).
 
-Fler tips om hur du kan optimera leveransen när du utformar innehåll finns i [Adobe Deliverability Best Practice Guide](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/content-best-practices-for-optimal-delivery.html?lang=sv-SE){target="_blank"}.
+Fler tips om hur du kan optimera leveransen när du utformar innehåll finns i [Adobe Deliverability Best Practice Guide](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/content-best-practices-for-optimal-delivery.html){target="_blank"}.
 
 >[!NOTE]
 >
->Mer information om hur du redigerar e-postinnehåll finns i [Definiera e-postinnehåll](defining-the-email-content.md).
+>Mer information om hur du redigerar e-postinnehåll finns på [sidan](defining-the-email-content.md).
 
 ## Avsändarens adress {#sender-address}
 
@@ -37,7 +37,7 @@ Vissa Internetleverantörer kontrollerar giltigheten för avsändaradressen (**[
 
 Du måste se till att rätt adress anges på instansnivå (meny **[!UICONTROL Tools > Advanced > deployment wizard...]**) eller i de vanligaste scenarierna.
 
-Mer information om hur du definierar avsändarens adress finns på [den här sidan](defining-the-email-content.md#sender).
+Mer information om hur du definierar avsändarens adress finns på [sidan](defining-the-email-content.md#sender).
 
 ## Personalization {#personalization}
 

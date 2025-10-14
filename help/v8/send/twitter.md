@@ -4,10 +4,10 @@ description: Lär dig hur du använder Adobe Campaign Social Marketing-modulen f
 role: User
 level: Beginner, Intermediate
 exl-id: 0783e289-ae8e-4bb7-80f1-f90937a528c1
-source-git-commit: f463c5747b844544ba561a63e4cb0359c0c258c8
+source-git-commit: 96f1518f252be7ffa27ba8157b8a090bf4d4510d
 workflow-type: tm+mt
-source-wordcount: '785'
-ht-degree: 2%
+source-wordcount: '782'
+ht-degree: 3%
 
 ---
 
@@ -149,7 +149,7 @@ Följ stegen nedan för att skicka direktmeddelanden till dina följare:
 
 >[!CAUTION]
 >
->Du kan inte skicka mer än 250 direktmeddelanden per dag. För att undvika att detta tröskelvärde överskrids kan du leverera i vågor. Mer information finns i [Campaign Classic v7-dokumentationen](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/key-steps-when-creating-a-delivery/steps-sending-the-delivery.html?lang=sv-SE#sending-using-multiple-waves){target="_blank"}.
+>Du kan inte skicka mer än 250 direktmeddelanden per dag. För att undvika att detta tröskelvärde överskrids kan du leverera i vågor. Mer information om detta hittar du i det här [avsnittet](configure-and-send.md#sending-using-multiple-waves).
 
 
 ## Åtkomstspårningsdata {#tw-tracking}
@@ -158,5 +158,5 @@ Spårning är aktiverat som standard i den inbyggda leveransmallen **[!UICONTROL
 
 Spårningsdata kan visas i leveransrapporterna och på fliken **[!UICONTROL Edit > Tracking]** för leveransen och tjänsten.
 
-Spårningskonfigurationen är densamma som för en e-postleverans. Läs mer i [Campaign Classic v7-dokumentationen](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/monitoring-deliveries/about-delivery-monitoring.html?lang=sv-SE){target="_blank"}.
+Spårningskonfigurationen är densamma som för en e-postleverans. Läs mer i [Campaign Classic v7-dokumentationen](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/monitoring-deliveries/about-delivery-monitoring.html){target="_blank"}.
 

@@ -6,7 +6,7 @@ feature: Inbox Rendering, Monitoring, Email Rendering
 role: User
 version: Campaign v8, Campaign Classic v7
 exl-id: a3294e70-ac96-4e51-865f-b969624528ce
-source-git-commit: 11c8c4c51c7901ba0d119323c564a64b940428b7
+source-git-commit: 96f1518f252be7ffa27ba8157b8a090bf4d4510d
 workflow-type: tm+mt
 source-wordcount: '671'
 ht-degree: 8%
@@ -62,7 +62,8 @@ Antalet återstående tillgängliga token visas i [Återgivningsrapporten för i
 
 När du har skapat e-postleveransen och definierat innehållet samt målpopulationen följer du stegen nedan.
 
-Mer information om hur du skapar, utformar och anger mål för en leverans finns i [det här avsnittet](defining-the-email-content.md).
+Mer information om hur du skapar, utformar och anger mål för en leverans finns på [sidan](defining-the-email-content.md).
+
 
 1. Klicka på knappen **[!UICONTROL Inbox rendering]** överst i leveransfältet.
 

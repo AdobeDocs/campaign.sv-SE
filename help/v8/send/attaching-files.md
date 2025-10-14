@@ -6,10 +6,10 @@ feature: Email
 role: User
 version: Campaign v8, Campaign Classic v7
 exl-id: 27d13642-2971-466b-818d-39328c198b14
-source-git-commit: 3d562aab2f19b84aad8b484768bf19648145feb3
+source-git-commit: 96f1518f252be7ffa27ba8157b8a090bf4d4510d
 workflow-type: tm+mt
-source-wordcount: '980'
-ht-degree: 1%
+source-wordcount: '977'
+ht-degree: 2%
 
 ---
 
@@ -21,7 +21,7 @@ Du kan bifoga en eller flera filer till en e-postleverans.
 
 >[!NOTE]
 >
->För att undvika prestandaproblem rekommenderar vi att du inte inkluderar mer än en bifogad fil per e-post. Det rekommenderade tröskelvärdet kan konfigureras från listan med kampanjalternativ. Mer information finns i [Campaign Classic-dokumentationen](https://experienceleague.adobe.com/docs/campaign-classic/using/installing-campaign-classic/appendices/configuring-campaign-options.html?lang=sv-SE#delivery).
+>För att undvika prestandaproblem rekommenderar vi att du inte inkluderar mer än en bifogad fil per e-post. Det rekommenderade tröskelvärdet kan konfigureras från listan med kampanjalternativ. Mer information finns i [Campaign Classic-dokumentationen](https://experienceleague.adobe.com/docs/campaign-classic/using/installing-campaign-classic/appendices/configuring-campaign-options.html#delivery).
 
 Det finns två möjliga fall:
 
@@ -30,7 +30,7 @@ Det finns två möjliga fall:
 
 >[!NOTE]
 >
->Den här typen av konfiguration utförs vanligtvis i leveransmallarna. Mer information finns i [Campaign Classic-dokumentationen](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/using-delivery-templates/about-templates.html?lang=sv-SE).
+>Den här typen av konfiguration utförs vanligtvis i leveransmallarna. Se denna [sida](../send/create-templates.md) för mer information om detta.
 
 ## Guardrails {#attachments-guardrails}
 
@@ -38,7 +38,7 @@ För att undvika prestandaproblem får bilderna i e-postmeddelanden inte överst
 
 Adobe rekommenderar också att du begränsar storleken och antalet bifogade filer. Som standard kan du bara lägga till en fil som en bifogad fil i ett e-postmeddelande. Det här tröskelvärdet kan konfigureras från alternativet `NmsDelivery_MaxRecommendedAttachments`.
 
-Läs mer i listan över Campaign-alternativ i [Campaign Classic-dokumentationen](https://experienceleague.adobe.com/docs/campaign-classic/using/installing-campaign-classic/appendices/configuring-campaign-options.html?lang=sv-SE#delivery).
+Läs mer i listan över Campaign-alternativ i [Campaign Classic-dokumentationen](https://experienceleague.adobe.com/docs/campaign-classic/using/installing-campaign-classic/appendices/configuring-campaign-options.html#delivery).
 
 ## Bifoga en lokal fil {#attaching-a-local-file}
 
