@@ -28,10 +28,10 @@ Den **nya SMS-sändningskonnektorn** är nu tillgänglig för [Campaign FFDA-dis
 
 Den här versionen innehåller även en uppsättning funktioner som är tillgängliga med användargränssnittet för Campaign-webben:
 
-* [Profilberikning i transaktionsmeddelanden](https://experienceleague.adobe.com/docs/campaign-web/v8/msg/transactional-messages/profile-enrichment.html){target="_blank"}
-* [Flerspråkiga funktioner för transaktionsmeddelanden, push-meddelanden och SMS](https://experienceleague.adobe.com/docs/campaign-web/v8/msg/multilingual.html){target="_blank"}
+* [Profilberikning i transaktionsmeddelanden](https://experienceleague.adobe.com/docs/campaign-web/v8/msg/transactional-messages/profile-enrichment.html?lang=sv-SE){target="_blank"}
+* [Flerspråkiga funktioner för transaktionsmeddelanden, push-meddelanden och SMS](https://experienceleague.adobe.com/docs/campaign-web/v8/msg/multilingual.html?lang=sv-SE){target="_blank"}
 
-Se versionsinformationen för Campaign Web UI [&#128279;](https://experienceleague.adobe.com/docs/campaign-web/v8/release-notes/release-notes.html){target="_blank"}
+Se versionsinformationen för Campaign Web UI [&#128279;](https://experienceleague.adobe.com/docs/campaign-web/v8/release-notes/release-notes.html?lang=sv-SE){target="_blank"}
 
 ### Korrigeringar {#fixes-8-8-2}
 
