@@ -24,7 +24,7 @@ Installera [den senaste utgåvan](release-notes.md) för alla nya implementering
 **På den här sidan**
 
 * Campaign v8.5 - [Version 8.5.1](#release-8-5-1) | [Version 8.5.2](#release-8-5-2)
-* Campaign v8.4 - [Version 8.4.3](#release-8-4-3) | [Version 8.4.4 ](#release-8-4-4) | [Version 8.4.5](#release-8-4-5)
+* Campaign v8.4 - [Version 8.4.3](#release-8-4-3) | [Version 8.4.4 &#x200B;](#release-8-4-4) | [Version 8.4.5](#release-8-4-5)
 
 >[!ENDSHADEBOX]
 

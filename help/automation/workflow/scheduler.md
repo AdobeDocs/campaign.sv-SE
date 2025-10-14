@@ -27,7 +27,7 @@ ht-degree: 8%
 
 **Begränsa schemaläggarfrekvens** - Undvik schemaläggning av arbetsflöden så att de körs oftare än var femtonde minut. Om du kör dem oftare kan systemprestanda försämras och databasbelastningen ökar.
 
-**Använd en schemaläggare per gren** - Varje gren i ditt arbetsflöde ska bara ha en **[!UICONTROL Scheduler]**-aktivitet. Mer information om de effektivaste strategierna för att använda aktiviteter i arbetsflöden finns på [sidan ](workflow-best-practices.md#using-activities) Arbetsflöden för bästa praxis.
+**Använd en schemaläggare per gren** - Varje gren i ditt arbetsflöde ska bara ha en **[!UICONTROL Scheduler]**-aktivitet. Mer information om de effektivaste strategierna för att använda aktiviteter i arbetsflöden finns på [sidan &#x200B;](workflow-best-practices.md#using-activities) Arbetsflöden för bästa praxis.
 
 **Förhindra samtidig körning av arbetsflöden** - Om ett arbetsflöde aktiveras av en schemaläggare bör du tänka på att flera instanser av arbetsflödet kan köras samtidigt. Om en schemaläggare till exempel utlöser arbetsflödet varje timme, men arbetsflödeskörningen tar mer än en timme, kan det resultera i överlappande körningar. Undvik detta genom att konfigurera kontroller för att förhindra flera samtidiga körningar. [Lär dig hur du förhindrar samtidig körning av flera arbetsflöden](monitor-workflow-execution.md#preventing-simultaneous-multiple-executions).
 

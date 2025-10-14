@@ -110,7 +110,7 @@ När du har konfigurerat aktiviteten **[!UICONTROL Scheduler]** så att arbetsfl
 
 ![](assets/birthday-workflow_usecase_2.png)
 
-Väljer mottagare vars födelsedag motsvarar det aktuella datumet visas i avsnittet [Identifierar mottagare vars födelsedag är ](#identifying-recipients-whose-birthday-it-is).
+Väljer mottagare vars födelsedag motsvarar det aktuella datumet visas i avsnittet [Identifierar mottagare vars födelsedag är &#x200B;](#identifying-recipients-whose-birthday-it-is).
 
 ### Steg 2: Välj om det är ett skottår eller inte {#step-2--select-whether-or-not-it-is-a-leap-year}
 

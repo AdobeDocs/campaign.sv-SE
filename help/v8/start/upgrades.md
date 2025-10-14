@@ -62,7 +62,7 @@ Nya versioner och vilka ändringar de gör listas i [versionsinformationen](rele
 
 Om du vill få information om nya versioner av Experience Cloud-lösningar och deras innehåll prenumererar du på meddelandet [Adobe Priority Product Updates](https://www.adobe.com/se/subscription/priority-product-update.html){target="_blank"}.
 
-Du kan också besöka [Campaign Community](https://experienceleaguecommunities.adobe.com/t5/custom/page/page-id/Community-TopicsPage?style=all&amp;sort=date&amp;order=desc&amp;filters=adobe-campaign-classic-community&amp;topic=Campaign+v8){target="_blank"} för att få information om uppdateringar av releaser.
+Du kan också besöka [Campaign Community](https://experienceleaguecommunities.adobe.com/t5/custom/page/page-id/Community-TopicsPage?style=all&sort=date&order=desc&filters=adobe-campaign-classic-community&topic=Campaign+v8){target="_blank"} för att få information om uppdateringar av releaser.
 
 
 ### Varför behöver min organisation en uppgradering? {#upgrades-1}

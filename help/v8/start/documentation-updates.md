@@ -49,4 +49,4 @@ En anteckning har lagts till för att ange hur instansvariabler ska rensas när 
 ## Januari 2024 {#jan-2024}
 
 * Information har lagts till om hur standardfältet postalAddress för direktreklam definieras och varför det är viktigt att se till att adresserna är fullständiga. [Läs mer](../send/direct-mail.md)
-* Adobe Campaign [hemsida för ](../campaign-home.md)-dokumentation v8 har fått en ny utformning.
+* Adobe Campaign [hemsida för &#x200B;](../campaign-home.md)-dokumentation v8 har fått en ny utformning.

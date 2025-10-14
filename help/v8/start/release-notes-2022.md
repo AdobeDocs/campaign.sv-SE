@@ -19,7 +19,7 @@ På den här sidan visas nya funktioner, förbättringar och korrigeringar som i
 **På den här sidan**
 
 * Campaign v8.4 - [Version 8.4.1](#release-8-4-1) | [Version 8.4.2](#release-8-4-2)
-* Campaign v8.3 - [Version 8.3.8](#release-8-3-8) | [Version 8.3.9 ](#release-8-3-9)
+* Campaign v8.3 - [Version 8.3.8](#release-8-3-8) | [Version 8.3.9 &#x200B;](#release-8-3-9)
 * Campaign v8.2 - [Version 8.2.10](#release-8-2-10)
 
 >[!ENDSHADEBOX]
