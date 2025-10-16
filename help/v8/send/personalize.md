@@ -4,8 +4,9 @@ description: Lär dig anpassa meddelandeinnehåll
 feature: Personalization
 role: User
 level: Beginner
+version: Campaign v8, Campaign Classic v7
 exl-id: 1da45746-4d69-415b-a793-9a08ce80091d
-source-git-commit: 3ac2976839f084761ba56647b282062d8d457ff2
+source-git-commit: 25ee55d5327e0ba7f2192f7b462853269c8cbf46
 workflow-type: tm+mt
 source-wordcount: '471'
 ht-degree: 5%
@@ -70,4 +71,4 @@ Följande variabler är interna variabler som kan användas för personalisering
 Förstå de olika typerna av dynamiskt innehåll och lär dig hur du skapar och använder personaliseringsblock och villkorssatser i en leverans.
 
 
->[!VIDEO](https://video.tv.adobe.com/v/3452872?quality=12&captions=swe)
+>[!VIDEO](https://video.tv.adobe.com/v/335734?quality=12)

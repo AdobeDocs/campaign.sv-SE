@@ -4,8 +4,9 @@ description: Lär dig vilka källor som kan användas för personalisering
 feature: Personalization
 role: User
 level: Beginner
+version: Campaign v8, Campaign Classic v7
 exl-id: 711256e2-ab77-404a-b052-6793a85da193
-source-git-commit: c248dd899ea704e43873652545c6b945c2915b57
+source-git-commit: 25ee55d5327e0ba7f2192f7b462853269c8cbf46
 workflow-type: tm+mt
 source-wordcount: '625'
 ht-degree: 0%
@@ -55,7 +56,7 @@ Om du markerar det här alternativet kan leveransanalysens prestanda förbättra
 Följ stegen nedan om du vill använda det här alternativet:
 
 1. Skapa en kampanj.
-1. Lägg till en **Query**-aktivitet i arbetsflödet på fliken **[!UICONTROL Targeting and workflows]** i kampanjen.
+1. Lägg till en **[!UICONTROL Targeting and workflows]** Query **-aktivitet i arbetsflödet på fliken** i kampanjen.
 1. Lägg till en **[!UICONTROL Email delivery]**-aktivitet i arbetsflödet och öppna den.
 1. Gå till fliken **[!UICONTROL Analysis]** i **[!UICONTROL Delivery properties]** och välj alternativet **[!UICONTROL Prepare the personalization data with a workflow]**.
 1. Konfigurera leveransen och starta arbetsflödet för att starta analysen.

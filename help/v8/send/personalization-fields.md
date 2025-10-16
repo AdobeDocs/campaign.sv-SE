@@ -4,8 +4,9 @@ description: Lär dig hur du infogar personaliseringsdata i ditt meddelandeinneh
 feature: Personalization
 role: User
 level: Beginner
+version: Campaign v8, Campaign Classic v7
 exl-id: 14a741dd-794e-4760-bfa3-bafbe993a3f7
-source-git-commit: c248dd899ea704e43873652545c6b945c2915b57
+source-git-commit: 25ee55d5327e0ba7f2192f7b462853269c8cbf46
 workflow-type: tm+mt
 source-wordcount: '326'
 ht-degree: 0%
