@@ -5,10 +5,9 @@ description: Lär dig skapa och infoga skräddarsydda kuponger
 feature: Personalization
 role: User
 version: Campaign v8, Campaign Classic v7
-exl-id: 182939bb-7aff-4667-bda9-c5d48be3b946
-source-git-commit: 96f1518f252be7ffa27ba8157b8a090bf4d4510d
+source-git-commit: 33462c1e2af34000131ce81e23ac2360c2cc5a3a
 workflow-type: tm+mt
-source-wordcount: '900'
+source-wordcount: '888'
 ht-degree: 1%
 
 ---
@@ -23,7 +22,7 @@ Genom att lägga till kuponger i leveranserna kan mottagarna få bättre värde 
 
 Kuponghantering bygger på ett paket som måste installeras. Kontrollera **[!UICONTROL Administration > Configuration > Package management > Installed packages.]** för att bekräfta att du har kuponghantering
 
-Kupongdata kan importeras och exporteras med CSV- och XML-format. [Läs mer](../../platform/using/get-started-data-import-export.md).
+Kupongdata kan importeras och exporteras med CSV- och XML-format. [Läs mer](../start/import.md).
 
 ## Skapa en kupong {#creating-a-coupon}
 
@@ -58,7 +57,7 @@ Innan du följer stegen nedan bör du kontrollera vilken typ av kupong du vill s
 
    >[!NOTE]
    >
-   >Enskilda kuponger kan importeras i grupp. Mer information om import och export finns i [det här avsnittet](../../platform/using/get-started-data-import-export.md).
+   >Enskilda kuponger kan importeras i grupp. Mer information om import och export finns i [det här avsnittet](../start/import.md).
 
 ### Konfigurera enskilda kuponger {#configuring-individual-coupons}
 
@@ -75,8 +74,7 @@ Värden för **[!UICONTROL status]**, **[!UICONTROL channel]** och **[!UICONTROL
 
 ## Infoga en kupong i en e-postleverans {#inserting-a-coupon-into-an-email-delivery}
 
-I exemplet nedan skapas leveransen från hemsidan. Detaljerade instruktioner om hur du skapar en leverans finns i [det här avsnittet](about-email-channel.md). Du kan också lägga till en kupong i en leverans i ett arbetsflöde.
-
+I exemplet nedan skapas leveransen från hemsidan. Detaljerade instruktioner om hur du skapar en leverans finns i [det här avsnittet](email.md)
 1. Gå till **[!UICONTROL Campaigns]** och välj **[!UICONTROL Deliveries]**.
 1. Klicka på **[!UICONTROL Create]**.
 
@@ -150,9 +148,9 @@ Så här bekräftar du att leveransen lyckades:
 
 >[!NOTE]
 >
->Som standard använder kuponghanteringsmodulen en **nms:recipient**-tabell. [Läs mer](../../configuration/using/about-data-model.md#default-recipient-table).
+>Som standard använder kuponghanteringsmodulen en **nms:recipient**-tabell. [Läs mer](../dev/datamodel.md#ootb-profiles).
 >
->Lär dig hur du använder en anpassad mottagartabell [på den här sidan](../../configuration/using/about-custom-recipient-table.md).
+>Lär dig hur du använder en anpassad mottagartabell [på den här sidan](../dev/custom-recipient.md).
 
 ## Hantera otillräckliga kuponger {#managing-insufficient-coupons}
 
