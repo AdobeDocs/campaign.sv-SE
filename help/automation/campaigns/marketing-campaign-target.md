@@ -6,9 +6,9 @@ feature: Campaigns, Audiences
 role: User
 version: Campaign v8, Campaign Classic v7
 exl-id: 70a63632-f66d-40f2-806d-bde89303936a
-source-git-commit: 95c944963feee746a2bb83a85f075134c91059d1
+source-git-commit: 26829656f8e06434ca3207c0c7b62ba907765972
 workflow-type: tm+mt
-source-wordcount: '1470'
+source-wordcount: '1484'
 ht-degree: 0%
 
 ---
@@ -19,7 +19,7 @@ I en marknadsföringskampanj kan ni för varje leverans definiera:
 
 * Målgruppen. Du kan skicka meddelanden till en [lista över mottagare](#send-to-a-group) eller skapa en [målgrupp i ett arbetsflöde](#build-the-main-target-in-a-workflow)
 * En kontrollgrupp. Du kan [lägga till en kontrollgrupp](#add-a-control-group) för att övervaka mottagarnas beteende efter meddelandeleveransen
-* dirigerade adresser - Läs mer i [det här avsnittet](../../v8/audiences/test-profiles.md).—>
+* dirigerade adresser - Läs mer i [det här avsnittet](../../v8/audiences/test-profiles.md).
 
 En del av den här informationen kan ärvas från [kampanjmallen](marketing-campaign-templates.md#campaign-templates).
 
@@ -177,6 +177,10 @@ En kontrollgrupp är en population som inte kommer att få leveransen. Den anvä
 
 Kontrollgruppen kan extraheras från huvudmålet och/eller komma från en viss grupp eller fråga.
 
+>[!CAUTION]
+>
+>Du kan inte använda kontrollgrupper när målpopulationen läses in från en extern fil.
+
 ### Aktivera kontrollgruppen för en kampanj {#activate-the-control-group-for-a-campaign}
 
 Du kan definiera en kontrollgrupp på kampanjnivå, och i så fall tillämpas kontrollgruppen på varje leverans av den aktuella kampanjen.
@@ -248,4 +252,4 @@ I den här videon förklaras hur du lägger till en kontrollgrupp i en kampanj.
 
 >[!VIDEO](https://video.tv.adobe.com/v/335606?quality=12)
 
-Ytterligare utbildningsvideor för Campaign är tillgängliga [här](https://experienceleague.adobe.com/docs/campaign-learn/tutorials/getting-started/introduction-to-adobe-campaign.html?lang=sv-SE){target="_blank"}.
+Ytterligare utbildningsvideor för Campaign är tillgängliga [här](https://experienceleague.adobe.com/docs/campaign-learn/tutorials/getting-started/introduction-to-adobe-campaign.html){target="_blank"}.

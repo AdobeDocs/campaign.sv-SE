@@ -5,10 +5,10 @@ feature: Workflows, Data Management, Federated Data Access
 role: User
 version: Campaign v8, Campaign Classic v7
 exl-id: ca7eca9d-9112-4ea1-9a0c-a24cf6a978e6
-source-git-commit: 4cbccf1ad02af9133d51933e3e0d010b5c8c43bd
+source-git-commit: 26829656f8e06434ca3207c0c7b62ba907765972
 workflow-type: tm+mt
-source-wordcount: '278'
-ht-degree: 2%
+source-wordcount: '304'
+ht-degree: 1%
 
 ---
 
@@ -28,6 +28,10 @@ Observera, att när du använder aktiviteten **[!UICONTROL Change Data Source]**
 >[!IMPORTANT]
 >
 >Observera att aktiviteterna **[!UICONTROL Change Dimension]** och **[!UICONTROL Change Data source]** inte ska läggas till på en rad. Om du behöver använda båda aktiviteterna i följd måste du ta med en **[!UICONTROL Enrichement]**-aktivitet mellan dem. Detta garanterar att programmet körs på rätt sätt och förhindrar eventuella konflikter och fel.
+
+>[!NOTE]
+>
+>**Source**-aktiviteten Ändra data kan bearbeta högst en miljon poster per körning. Kontakta Adobe om du behöver höja denna gräns.
 
 Om du vill använda aktiviteten **[!UICONTROL Change Data Source]** måste du:
 
