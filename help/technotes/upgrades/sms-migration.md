@@ -3,7 +3,10 @@ title: Gå till den nya SMS-kopplingen v2
 description: Lär dig hur du går över till den nya SMS-kopplingen v2
 feature: Technote
 role: Admin
-source-git-commit: 6f29a7f157c167cae6d304f5d972e2e958a56ec8
+hide: true
+hidefromtoc: true
+exl-id: 61a5a3e8-59f8-47ea-afc9-66ec243b8265
+source-git-commit: 784c74aaff23dbf1f35c6e8153f90610048e1c07
 workflow-type: tm+mt
 source-wordcount: '796'
 ht-degree: 0%

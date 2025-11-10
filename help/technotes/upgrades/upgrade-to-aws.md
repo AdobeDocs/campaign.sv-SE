@@ -1,8 +1,10 @@
 ---
 title: Uppgradering av infrastruktur för e-postutskick av kampanj
 description: Uppgradering av infrastruktur för e-postutskick av kampanj
+hide: true
+hidefromtoc: true
 exl-id: f01e38ad-490e-4389-af5e-87beef533eb0
-source-git-commit: 4f9183c7f1d12feb255a0050da423647f0fce85e
+source-git-commit: 784c74aaff23dbf1f35c6e8153f90610048e1c07
 workflow-type: tm+mt
 source-wordcount: '331'
 ht-degree: 1%
@@ -55,11 +57,11 @@ Uppgraderingarna av produktionsmiljöerna började **januari 2024**.
 
 * **Vilken testning krävs av kunderna?**
 
-  Vi förväntar oss inte att kunderna ska testa något i samband med uppgraderingsevenemanget. Om något problem uppstår kan du kontakta [Adobe kundtjänst](https://experienceleague.adobe.com/sv?support-solution=Campaign#support){target="_blank"}.
+  Vi förväntar oss inte att kunderna ska testa något i samband med uppgraderingsevenemanget. Om något problem uppstår kan du kontakta [Adobe kundtjänst](https://experienceleague.adobe.com/?support-solution=Campaign#support){target="_blank"}.
 
 
 * **Kan jag begära en ändring av datum/tid för den schemalagda säkerhetsuppgraderingsplatsen?**
 
   Nej. Vi kan inte hantera eventuella begärda ändringar av det befintliga schemat eftersom detta troligtvis kommer att störa det tilldelade uppgraderingsevenemanget för en annan kund.
 
-Om du har andra frågor kan du kontakta [Adobe kundtjänst](https://experienceleague.adobe.com/sv?support-solution=Campaign#support){target="_blank"}.
+Om du har andra frågor kan du kontakta [Adobe kundtjänst](https://experienceleague.adobe.com/?support-solution=Campaign#support){target="_blank"}.

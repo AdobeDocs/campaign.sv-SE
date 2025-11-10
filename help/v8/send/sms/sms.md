@@ -5,10 +5,10 @@ feature: SMS
 role: User, Data Engineer
 level: Beginner
 exl-id: e2e2922a-2058-4588-b1b5-6997f29ee663
-source-git-commit: 110a2cac920ca3087f6fcb3cab8474729f6075be
+source-git-commit: 784c74aaff23dbf1f35c6e8153f90610048e1c07
 workflow-type: tm+mt
-source-wordcount: '157'
-ht-degree: 10%
+source-wordcount: '185'
+ht-degree: 8%
 
 ---
 
@@ -27,7 +27,8 @@ Kontrollera SMPP-anslutningen efter konfigurationen och se hur du felsöker den 
 >[!NOTE]
 >
 >Du kan också använda Adobe Campaign för att skicka [push-meddelanden](../push.md) och [LINE](../line/line.md) till mobila enheter.
-
+>
+> För kunder som använder den äldre SMS-kopplingen stöds den befintliga implementeringen fortfarande. Vi rekommenderar dock att du flyttar till den nya anslutningen. Kontakta Adobe om du vill gå över.
 
 <table style="table-layout:fixed"><tr style="border: 0;">
 <td>
