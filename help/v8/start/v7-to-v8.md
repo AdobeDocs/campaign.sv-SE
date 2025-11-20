@@ -8,7 +8,7 @@ exl-id: 00ba1c43-9558-4adb-83a1-6597c2bbca62
 source-git-commit: 061197048885a30249bd18af7f8b24cb71def742
 workflow-type: tm+mt
 source-wordcount: '714'
-ht-degree: 4%
+ht-degree: 5%
 
 ---
 
@@ -78,7 +78,7 @@ Med Adobe Campaign v8 är kubrapporterna optimerade och har bättre skalbarhet �
 
 Observera att vissa funktioner inte är tillgängliga i samband med en [Enterprise (FFDA)-distribution](../architecture/enterprise-deployment.md) av Campaign, till exempel:
 
-* Hantering av marknadsföringsresurser
+* Hantera marknadsföringsresurser
 * Kuponger
 * Webbspårning
 * Undersökningar
