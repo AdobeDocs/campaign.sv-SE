@@ -78,7 +78,7 @@ Mer information om hantering av studsade e-postmeddelanden finns i [det här avs
 
 ## Aktivera en klickning för att avbryta prenumeration {#one-click-list-unsubscribe}
 
-URL:en för att avbryta en prenumeration med ett klick är en länk eller knapp som visas bredvid e-postavsändarinformationen, vilket gör att mottagarna kan avanmäla sig från e-postlistorna med ett enda klick. <!--[Learn more](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/additional-resources/campaign/acc-technical-recommendations.html#list-unsubscribe){target="_blank"}-->
+URL:en för att avbryta en prenumeration med ett klick är en länk eller knapp som visas bredvid e-postavsändarinformationen, vilket gör att mottagarna kan avanmäla sig från e-postlistorna med ett enda klick. <!--[Learn more](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/additional-resources/campaign/acc-technical-recommendations.html?lang=sv-SE#list-unsubscribe){target="_blank"}-->
 
 Den visas som en **Unsubscribe** -länk i Internet-leverantörernas e-postgränssnitt. Exempel:
 
@@ -117,7 +117,7 @@ Beroende på e-postklienten och vilken metod de använder för att göra en avan
 
 >[!NOTE]
 >
->Du kan också ange metoderna [One-Click List-Unsubscribe](https://experienceleague.adobe.com/en/docs/deliverability-learn/deliverability-best-practice-guide/additional-resources/campaign/acc-technical-recommendations?lang=en#one-click-list-unsubscribe){target="_blank"} och [&quot;mailto&quot; List-Unsubscribe](https://experienceleague.adobe.com/en/docs/deliverability-learn/deliverability-best-practice-guide/additional-resources/campaign/acc-technical-recommendations?lang=en#mailto-list-unsubscribe){target="_blank"} manuellt. De detaljerade stegen beskrivs i Experience Cloud [Bästa praxis för slutprodukt](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/additional-resources/campaign/acc-technical-recommendations.html#list-unsubscribe){target="_blank"}.
+>Du kan också ange metoderna [One-Click List-Unsubscribe](https://experienceleague.adobe.com/sv/docs/deliverability-learn/deliverability-best-practice-guide/additional-resources/campaign/acc-technical-recommendations?lang=en#one-click-list-unsubscribe){target="_blank"} och [&quot;mailto&quot; List-Unsubscribe](https://experienceleague.adobe.com/sv/docs/deliverability-learn/deliverability-best-practice-guide/additional-resources/campaign/acc-technical-recommendations?lang=en#mailto-list-unsubscribe){target="_blank"} manuellt. De detaljerade stegen beskrivs i Experience Cloud [Bästa praxis för slutprodukt](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/additional-resources/campaign/acc-technical-recommendations.html?lang=sv-SE#list-unsubscribe){target="_blank"}.
 
 
 ## Lägg till SMTP-rubriker {#adding-smtp-headers}
