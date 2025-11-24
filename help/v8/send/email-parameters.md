@@ -6,10 +6,10 @@ role: User
 level: Beginner
 version: Campaign v8, Campaign Classic v7
 exl-id: ad75f01e-2c6c-4607-b15a-8870d399002a
-source-git-commit: a2efad26232cd380eea850a589b22b23928253e8
+source-git-commit: 6b70ad987b828dc1c17bc4f0683046be4eff0408
 workflow-type: tm+mt
-source-wordcount: '594'
-ht-degree: 7%
+source-wordcount: '862'
+ht-degree: 6%
 
 ---
 
@@ -75,6 +75,50 @@ Vart och ett av dessa fält kan anpassas med den dedikerade ikonen. Läs mer om 
 ![](assets/email-smtp-bounce.png)
 
 Mer information om hantering av studsade e-postmeddelanden finns i [det här avsnittet](delivery-failures.md#bounce-mail-management).
+
+## Aktivera en klickning för att avbryta prenumeration {#one-click-list-unsubscribe}
+
+URL:en för att avbryta en prenumeration med ett klick är en länk eller knapp som visas bredvid e-postavsändarinformationen, vilket gör att mottagarna kan avanmäla sig från e-postlistorna med ett enda klick. <!--[Learn more](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/additional-resources/campaign/acc-technical-recommendations.html#list-unsubscribe){target="_blank"}-->
+
+Den visas som en **Unsubscribe** -länk i Internet-leverantörernas e-postgränssnitt. Exempel:
+
+![](assets/email-list-unsubscribe-example.png)
+
+Det är obligatoriskt att lägga till ett SMTP-huvud med namnet List-Unsubscribe för att säkerställa optimal leveranshantering, och det kan användas som ett alternativ till ikonen Report as SPAM. Om du använder den här funktionen blir antalet klagomål färre och ditt rykte kan skyddas.
+
+>[!IMPORTANT]
+>
+>Om du vill visa URL:en för att avsluta prenumerationen med ett klick i e-posthuvudet måste mottagarens e-postklient ha stöd för den här funktionen.
+
+Om du vill aktivera den här funktionen väljer du alternativet **[!UICONTROL Addition of One-click List-Unsubscription Header]** på fliken **[!UICONTROL SMTP]** i leveransegenskaperna.
+
+>[!NOTE]
+>
+>Det här alternativet är aktiverat som standard.
+
+![](assets/email-smtp-list-unsubscribe.png)
+
+<!--
+>[!WARNING]
+>
+>If you uncheck this option in the delivery template, it will still be enabled by default in the deliveries created from this template. You need to enable the option again at the delivery level.-->
+
+Beroende på e-postklienten och vilken metod de använder för att göra en avanmälan kan du få följande effekter om du klickar på länken **Avbeställ** i e-posthuvudet:
+
+* Om e-postklienten använder metoden **Ett-klick** för att avbryta prenumerationen, avanmäts mottagaren direkt.
+
+  >[!NOTE]
+  >
+  >Större Internet-leverantörer som Google och Yahoo! kräver att avsändare följer **One-Click List-Unsubscribe**.
+
+* Om e-postklienten inte har stöd för One-Click List-Unsubscribe kan de fortfarande använda metoden **&quot;mailto&quot;** List-Unsubscribe, som skickar ett förifyllt e-postmeddelande till den adress för att avbryta prenumerationen som anges i e-posthuvudet.
+
+  Du kan ange adressen explicit i huvudet eller använda en dynamisk adress (t.ex. med &lt;%=errorAddress%> eller alternativet NmsEmail_DefaultErrorAddr) som kan anges via distributionsguiden.
+
+>[!NOTE]
+>
+>Du kan också ange metoderna [One-Click List-Unsubscribe](https://experienceleague.adobe.com/en/docs/deliverability-learn/deliverability-best-practice-guide/additional-resources/campaign/acc-technical-recommendations?lang=en#one-click-list-unsubscribe){target="_blank"} och [&quot;mailto&quot; List-Unsubscribe](https://experienceleague.adobe.com/en/docs/deliverability-learn/deliverability-best-practice-guide/additional-resources/campaign/acc-technical-recommendations?lang=en#mailto-list-unsubscribe){target="_blank"} manuellt. De detaljerade stegen beskrivs i Experience Cloud [Bästa praxis för slutprodukt](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/additional-resources/campaign/acc-technical-recommendations.html#list-unsubscribe){target="_blank"}.
+
 
 ## Lägg till SMTP-rubriker {#adding-smtp-headers}
 
