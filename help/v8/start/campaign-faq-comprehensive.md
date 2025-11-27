@@ -7,10 +7,10 @@ level: Beginner
 keywords: Vanliga frågor, Campaign v8, frågor, svar, hjälp, support, felsökning
 hide: true
 hidefromtoc: true
-source-git-commit: 15e52d3c7d990bd1a1a5c9d1a2d83d8fee9aaaed
+source-git-commit: 299228306a9aee85249db78cf658ab61005d1cf5
 workflow-type: tm+mt
-source-wordcount: '10786'
-ht-degree: 15%
+source-wordcount: '12269'
+ht-degree: 4%
 
 ---
 
@@ -41,7 +41,7 @@ Från och med Campaign v8.6 har du tillgång till användargränssnittet **Campa
 
 Lär dig hur du ansluter till Adobe Experience Cloud och kommer åt Adobe Campaign webbgränssnitt [på den här sidan](campaign-ui.md#ac-web-ui).
 
-Läs mer i [Adobe Campaign webbgränssnittsdokumentation](https://experienceleague.adobe.com/sv/docs/campaign-web/v8/campaign-web-home){target="_blank"}.
+Läs mer i [Adobe Campaign webbgränssnittsdokumentation](https://experienceleague.adobe.com/en/docs/campaign-web/v8/campaign-web-home){target="_blank"}.
 
 >[!TIP]
 >
@@ -85,7 +85,7 @@ E-postleveransen, som är en viktig del i varje avsändares marknadsföringsprog
 
 Läs den här guiden om du vill veta mer om [Bästa metoder för slutprodukter](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/introduction.html?lang=sv){target="_blank"}
 
-Lär dig hur du implementerar levererbarhet i Campaign [i den här guiden](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/additional-resources/general-resources.html?lang=sv-SE){target="_blank"}
+Lär dig hur du implementerar levererbarhet i Campaign [i den här guiden](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/additional-resources/general-resources.html){target="_blank"}
 
 >[!TIP]
 >
@@ -111,13 +111,13 @@ Lär dig hur du implementerar levererbarhet i Campaign [i den här guiden](https
 
 Adobe Campaign har en uppsättning instrumentpaneler och verktyg för att övervaka e-postleveranser.
 
-[Läs igenom dokumentationen för Campaign Classic v7 och lär dig](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/monitoring-deliveries/about-delivery-monitoring.html?lang=sv-SE){target="_blank"} hur du ser till att dina meddelanden skickas, övervakar körningen och utför en åtgärd om ett fel inträffar.
+[Läs igenom dokumentationen för Campaign Classic v7 och lär dig](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/monitoring-deliveries/about-delivery-monitoring.html){target="_blank"} hur du ser till att dina meddelanden skickas, övervakar körningen och utför en åtgärd om ett fel inträffar.
 
 +++
 
 +++ Kan jag övervaka arbetsflödeskörningen?
 
-Förstå hur du övervakar körningen av Campaign-arbetsflödet [på den här sidan](https://experienceleague.adobe.com/sv/docs/campaign/automation/workflows/monitoring-workflows/monitor-workflow-execution){target="_blank"}
+Förstå hur du övervakar körningen av Campaign-arbetsflödet [på den här sidan](https://experienceleague.adobe.com/en/docs/campaign/automation/workflows/monitoring-workflows/monitor-workflow-execution){target="_blank"}
 
 +++
 
@@ -133,7 +133,7 @@ Du kan hämta installationsprogrammet och klientkonsolen från Adobe Download Ce
 
 Som administratör kan du ladda ned Adobe Campaign via Adobe [Software Distribution](https://experience.adobe.com/#/downloads/content/software-distribution/en/campaign.html){target="_blank"}.
 
-Läs mer om Distribution Center [på den här sidan](https://experienceleague.adobe.com/docs/experience-cloud/software-distribution/home.html?lang=sv-SE){target="_blank"}.
+Läs mer om Distribution Center [på den här sidan](https://experienceleague.adobe.com/docs/experience-cloud/software-distribution/home.html){target="_blank"}.
 
 +++
 
@@ -217,7 +217,7 @@ Mer information om grunderna i användargränssnittet i Adobe Campaign finns i [
 
 Från och med Campaign v8.6 har du även tillgång till det nya **Campaign-webbgränssnittet** som är tillgängligt via den centrala Adobe Experience Cloud-miljön.
 
-[Läs mer i dokumentationen för Adobe Campaign webbgränssnitt](https://experienceleague.adobe.com/sv/docs/campaign-web/v8/campaign-web-home){target="_blank"}.
+[Läs mer i dokumentationen för Adobe Campaign webbgränssnitt](https://experienceleague.adobe.com/en/docs/campaign-web/v8/campaign-web-home){target="_blank"}.
 
 +++
 
@@ -237,14 +237,14 @@ Du kan till exempel använda ett arbetsflöde för att ladda ned en fil från en
 
 Ett arbetsflöde kan även innefatta en eller flera operatörer som ska meddelas eller som kan göra val och godkänna processer. På så sätt kan du skapa en leveransinstruktion, tilldela en eller flera operatörer uppgiften att arbeta med innehåll, ange mål och godkänna korrekturer innan leveransen påbörjas.
 
-[Läs mer](https://experienceleague.adobe.com/docs/campaign/automation/workflows/introduction/about-workflows.html?lang=sv-SE){target="_blank"} om arbetsflöden. Du kan även läsa om [bästa praxis för arbetsflödet](https://experienceleague.adobe.com/docs/campaign/automation/workflows/introduction/build-a-workflow.html?lang=sv-SE){target="_blank"}.
+[Läs mer](https://experienceleague.adobe.com/docs/campaign/automation/workflows/introduction/about-workflows.html){target="_blank"} om arbetsflöden. Du kan även läsa om [bästa praxis för arbetsflödet](https://experienceleague.adobe.com/docs/campaign/automation/workflows/introduction/build-a-workflow.html){target="_blank"}.
 
 **Relaterade ämnen:**
 
 * [Kom igång med arbetsflöden](../config/workflows.md)
-* [Skapa ditt första arbetsflöde](https://experienceleague.adobe.com/docs/campaign/automation/workflows/introduction/build-a-workflow.html?lang=sv-SE){target="_blank"}
+* [Skapa ditt första arbetsflöde](https://experienceleague.adobe.com/docs/campaign/automation/workflows/introduction/build-a-workflow.html){target="_blank"}
 * [Användningsexempel för arbetsflöde](https://experienceleague.adobe.com/docs/campaign/automation/workflows/use-cases/about-workflow-use-cases.html){target="_blank"}
-* [Övervaka arbetsflödeskörning](https://experienceleague.adobe.com/docs/campaign/automation/workflows/monitoring-workflows/monitor-workflow-execution.html?lang=sv-SE){target="_blank"}
+* [Övervaka arbetsflödeskörning](https://experienceleague.adobe.com/docs/campaign/automation/workflows/monitoring-workflows/monitor-workflow-execution.html){target="_blank"}
 
 +++
 
@@ -374,7 +374,7 @@ Du kan använda Adobe Campaign Digital Content Editor för att utforma landnings
 
 [Läs mer](../dev/landing-pages.md) i dokumentationen för Campaign v8.
 
-Du kan också använda gränssnittet för Campaign-webben för att skapa och publicera landningssidor - [Läs mer](https://experienceleague.adobe.com/sv/docs/campaign-web/v8/landing-pages/get-started-lp){target="_blank"}.
+Du kan också använda gränssnittet för Campaign-webben för att skapa och publicera landningssidor - [Läs mer](https://experienceleague.adobe.com/en/docs/campaign-web/v8/landing-pages/get-started-lp){target="_blank"}.
 
 +++
 
@@ -403,7 +403,7 @@ Visas ett felmeddelande på ett främmande språk? Alla felmeddelanden och deras
 
 Ja. Skapa webbformulär med **Campaign Web Applications &amp; Forms** (klientkonsol) för fullständig kontroll över formulärlogik och validering, eller använd **Campaign Landing Pages** (webbgränssnitt) med ett modernt dra och släpp-gränssnitt för prenumerationer och leadgenerering. Båda samlar in data direkt i Campaign och integreras med arbetsflöden för automatiserade åtgärder.
 
-[Läs mer om webbprogram och formulär](../dev/webapps.md) | [Startsidor för Campaign Web UI &#x200B;](https://experienceleague.adobe.com/sv/docs/campaign-web/v8/landing-pages/get-started-lp){target="_blank"}
+[Läs mer om webbprogram och formulär](../dev/webapps.md) | [Startsidor för Campaign Web UI ](https://experienceleague.adobe.com/en/docs/campaign-web/v8/landing-pages/get-started-lp){target="_blank"}
 
 +++
 
@@ -463,10 +463,10 @@ Campaign v8 är en helt omdesignad version av Adobe Campaign som tagits fram fö
 
 **Relaterade ämnen:**
 
-* [Från Campaign Classic v7 till v8](v7-to-v8.md) | [&#x200B; Övergångshandbok för v7 till v8 &#x200B;](https://experienceleague.adobe.com/sv/docs/campaign/campaign-v8/new/v7-to-v8){target="_blank"}
-* [Från Campaign Standard till v8](acs-to-v8.md) | [Campaign Standard-övergång](https://experienceleague.adobe.com/sv/docs/campaign-web/v8/start/acs-migration){target="_blank"}
+* [Från Campaign Classic v7 till v8](v7-to-v8.md) | [ Övergångshandbok för v7 till v8 ](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/new/v7-to-v8){target="_blank"}
+* [Från Campaign Standard till v8](acs-to-v8.md) | [Campaign Standard-övergång](https://experienceleague.adobe.com/en/docs/campaign-web/v8/start/acs-migration){target="_blank"}
 * [Campaign v8 - Adoptionshandbok](https://experienceleague.adobe.com/sv/docs/campaign-web/acs-to-ac/home){target="_blank"}
-* [Funktionsmatris för kampanj v8](https://experienceleague.adobe.com/sv/docs/campaign-web/v8/start/capability-matrix){target="_blank"}
+* [Funktionsmatris för kampanj v8](https://experienceleague.adobe.com/en/docs/campaign-web/v8/start/capability-matrix){target="_blank"}
 * [Kampanjarkitektur v8](../architecture/architecture.md)
 * [Skyddsritningar och begränsningar](ac-guardrails.md)
 
@@ -517,7 +517,7 @@ Campaign v8 ger avsevärda förbättringar samtidigt som de centrala Campaign-fu
 
 * Adobe tillhandahåller migreringsstöd, vägledning och verktyg
 * v8 hanteras endast av Cloud Service (ingen lokal eller blandad driftsättning)
-* Vissa tekniska implementeringar kan skilja sig åt - se [funktionsmatrisen](https://experienceleague.adobe.com/sv/docs/campaign-web/v8/start/capability-matrix){target="_blank"}
+* Vissa tekniska implementeringar kan skilja sig åt - se [funktionsmatrisen](https://experienceleague.adobe.com/en/docs/campaign-web/v8/start/capability-matrix){target="_blank"}
 * Datamigrering och testning kräver planering och resurser
 * **För Campaign Standard-användare** - Övergången är utformad för att vara smidig med minimala arbetsflödesavbrott
 
@@ -535,19 +535,19 @@ Kontakta Adobe för att
 **För Campaign Classic v7-användare:**
 
 * [Från Campaign Classic v7 till v8](v7-to-v8.md)
-* [v7 till v8, detaljerad guide](https://experienceleague.adobe.com/sv/docs/campaign/campaign-v8/new/v7-to-v8){target="_blank"}
+* [v7 till v8, detaljerad guide](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/new/v7-to-v8){target="_blank"}
 
 **För Campaign Standard-användare:**
 
-* [Campaign Standard övergång till v8](https://experienceleague.adobe.com/sv/docs/campaign-web/v8/start/acs-migration){target="_blank"}
+* [Campaign Standard övergång till v8](https://experienceleague.adobe.com/en/docs/campaign-web/v8/start/acs-migration){target="_blank"}
 * [Campaign v8 - Adoptionshandbok](https://experienceleague.adobe.com/sv/docs/campaign-web/acs-to-ac/home){target="_blank"}
-* [Från Campaign Standard till v8 - översikt](https://experienceleague.adobe.com/sv/docs/campaign-web/acs-to-ac/overview){target="_blank"}
-* [Kom igång för marknadsförare](https://experienceleague.adobe.com/sv/docs/campaign-web/acs-to-ac/marketers){target="_blank"}
-* [Kom igång för administratör/utvecklare](https://experienceleague.adobe.com/sv/docs/campaign-web/acs-to-ac/admin-developers){target="_blank"}
+* [Från Campaign Standard till v8 - översikt](https://experienceleague.adobe.com/en/docs/campaign-web/acs-to-ac/overview){target="_blank"}
+* [Kom igång för marknadsförare](https://experienceleague.adobe.com/en/docs/campaign-web/acs-to-ac/marketers){target="_blank"}
+* [Kom igång för administratör/utvecklare](https://experienceleague.adobe.com/en/docs/campaign-web/acs-to-ac/admin-developers){target="_blank"}
 
 **Allmänna resurser:**
 
-* [Funktionsmatris för kampanj v8](https://experienceleague.adobe.com/sv/docs/campaign-web/v8/start/capability-matrix){target="_blank"}
+* [Funktionsmatris för kampanj v8](https://experienceleague.adobe.com/en/docs/campaign-web/v8/start/capability-matrix){target="_blank"}
 * [Kompatibilitetsmatris](compatibility-matrix.md)
 
 +++
@@ -609,11 +609,11 @@ Följande termer har uppdaterats i gränssnittet för Campaign-webben (klientkon
 
 **Relaterade ämnen:**
 
-* [Funktionsmatris](https://experienceleague.adobe.com/sv/docs/campaign-web/v8/start/capability-matrix){target="_blank"} - Jämför funktioner mellan gränssnitt
+* [Funktionsmatris](https://experienceleague.adobe.com/en/docs/campaign-web/v8/start/capability-matrix){target="_blank"} - Jämför funktioner mellan gränssnitt
 * [Kompatibilitetsmatris](compatibility-matrix.md) - System och komponenter som stöds
 * [Skyddsritningar och begränsningar](ac-guardrails.md)
 * [Övergångshandbok för v7 till v8](v7-to-v8.md)
-* [Campaign Standard till v8-övergång](https://experienceleague.adobe.com/sv/docs/campaign-web/v8/start/acs-migration){target="_blank"}
+* [Campaign Standard till v8-övergång](https://experienceleague.adobe.com/en/docs/campaign-web/v8/start/acs-migration){target="_blank"}
 
 +++
 
@@ -625,7 +625,7 @@ Hitta svar på frågor om att hantera profiler, skapa målgrupper, importera dat
 
 Skapa mottagare manuellt i klientkonsolen för enskilda profiler, importera från filer (CSV/TXT) för att lägga till stora mängder, använda webbformulär för självregistrering eller integrera via API:er från externa system. Använd importarbetsflöden för återkommande datainläsningar.
 
-[Skapa profiler manuellt](../audiences/create-profiles.md) | [Importera profiler från en fil &#x200B;](../audiences/import-profiles.md) | [Samla in profiler med webbformulär](../audiences/collect-profiles.md)
+[Skapa profiler manuellt](../audiences/create-profiles.md) | [Importera profiler från en fil ](../audiences/import-profiles.md) | [Samla in profiler med webbformulär](../audiences/collect-profiles.md)
 
 +++
 
@@ -635,7 +635,7 @@ Campaign innehåller flera importmetoder: enkel filimport med importguiden, arbe
 
 För filimport förbereder du datafilen (CSV/TXT, UTF-8-kodning), använder importguiden eller arbetsflödet, mappar kolumner till Campaign-fält, definierar uppdaterings-/infogningsregler och testar med ett litet exempel först. Använd arbetsflöden för återkommande importer och tillämpa regler för borttagning av dubbletter.
 
-[Guiden Importera data](../start/import.md) | [Återkommande importarbetsflöde](https://experienceleague.adobe.com/docs/campaign/automation/workflows/use-cases/data-management/recurring-import-workflow.html?lang=sv-SE){target="_blank"} | [Datainläsningsaktivitet](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/action-activities/data-loading-file.html?lang=sv-SE){target="_blank"}
+[Guiden Importera data](../start/import.md) | [Återkommande importarbetsflöde](https://experienceleague.adobe.com/docs/campaign/automation/workflows/use-cases/data-management/recurring-import-workflow.html){target="_blank"} | [Datainläsningsaktivitet](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/action-activities/data-loading-file.html){target="_blank"}
 
 +++
 
@@ -643,7 +643,7 @@ För filimport förbereder du datafilen (CSV/TXT, UTF-8-kodning), använder impo
 
 I Campaign finns flera metoder för målinriktning: skapa frågor med visuella kriterier, rikta befintliga listor eller segment, importera mottagare från externa filer (CSV, TXT) eller tillämpa fördefinierade filter. Du kan kombinera villkor med AND/OR-logik, exkludera specifika populationer, använda kontrollgrupper och dela upp för A/B-testning. Förhandsvisa alltid målpopulationsstorleken innan du skickar.
 
-[Definiera kampanjmål](https://experienceleague.adobe.com/docs/campaign/automation/campaign-orchestration/marketing-campaign-target.html?lang=sv-SE){target="_blank"} | [Frågeaktivitet](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/targeting-activities/query.html?lang=sv-SE){target="_blank"} | [Skapa målgrupper](../audiences/create-audiences.md)
+[Definiera kampanjmål](https://experienceleague.adobe.com/docs/campaign/automation/campaign-orchestration/marketing-campaign-target.html){target="_blank"} | [Frågeaktivitet](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/targeting-activities/query.html){target="_blank"} | [Skapa målgrupper](../audiences/create-audiences.md)
 
 +++
 
@@ -663,7 +663,7 @@ En lista är en statisk uppsättning mottagare som ni kan rikta in er på levera
 >
 >Använd arbetsflöden för listor som kräver regelbundna uppdateringar och manuell framtagning för engångssegmentering.
 
-[Skapa målgrupper](../audiences/create-audiences.md) | [Listuppdateringsaktivitet](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/targeting-activities/list-update.html?lang=sv-SE){target="_blank"}
+[Skapa målgrupper](../audiences/create-audiences.md) | [Listuppdateringsaktivitet](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/targeting-activities/list-update.html){target="_blank"}
 
 +++
 
@@ -675,7 +675,7 @@ Använd aktiviteten **[!UICONTROL Deduplication]** i ett arbetsflöde för att t
 >
 >Ta alltid bort dubbletter innan du skickar iväg för att försäkra dig om att varje person bara får ditt meddelande en gång.
 
-[Dedupliceringsaktivitet](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/targeting-activities/deduplication.html?lang=sv-SE){target="_blank"}
+[Dedupliceringsaktivitet](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/targeting-activities/deduplication.html){target="_blank"}
 
 +++
 
@@ -689,7 +689,7 @@ Campaign spårar automatiskt nyhetsbrevprenumerationer via informationstjänster
 
 Campaign spårar prenumerations-/prenumerationshistorik och hanterar automatiskt anmälan/avanmälan.
 
-[Hantera prenumerationer](../start/subscriptions.md) | [Frågeaktivitet](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/targeting-activities/query.html?lang=sv-SE){target="_blank"}
+[Hantera prenumerationer](../start/subscriptions.md) | [Frågeaktivitet](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/targeting-activities/query.html){target="_blank"}
 
 +++
 
@@ -697,7 +697,7 @@ Campaign spårar prenumerations-/prenumerationshistorik och hanterar automatiskt
 
 Använd aktiviteten **[!UICONTROL Exclusion]** i ett arbetsflöde för att ta bort oönskade profiler från målet. Placera den efter era målgruppsaktiviteter och definiera vilken population som ska uteslutas.
 
-[Uteslutningsaktivitet](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/targeting-activities/exclusion.html?lang=sv-SE){target="_blank"}
+[Uteslutningsaktivitet](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/targeting-activities/exclusion.html){target="_blank"}
 
 +++
 
@@ -780,7 +780,7 @@ Viktiga funktioner: automatisk kopiering av innehåll, automatisk språkbaserad 
 
 Klientkonsolen stöder även flerspråkigt innehåll med villkorsstyrt innehåll och arbetsflöden, men kräver mer manuell konfiguration.
 
-[Flerspråkiga leveranser (webbgränssnitt)](https://experienceleague.adobe.com/sv/docs/campaign-web/v8/msg/multilingual){target="_blank"} | [Villkorligt innehåll (klientkonsol) &#x200B;](../send/conditions.md)
+[Flerspråkiga leveranser (webbgränssnitt)](https://experienceleague.adobe.com/en/docs/campaign-web/v8/msg/multilingual){target="_blank"} | [Villkorligt innehåll (klientkonsol) ](../send/conditions.md)
 
 +++
 
@@ -808,7 +808,7 @@ Ja, men **endast via Campaign Web-gränssnittet**. AI Assistant, som bygger på 
 >
 >AI Assistant finns endast i gränssnittet för Campaign Web och har för närvarande endast stöd för engelska. Användarna behöver rätt behörigheter och måste godkänna ett användaravtal.
 
-[Översikt över AI Assistant](https://experienceleague.adobe.com/sv/docs/campaign-web/v8/content/ai-assistant/generative-gs){target="_blank"} | [&#x200B; Användningsexempel för AI-assistenten &#x200B;](https://experienceleague.adobe.com/sv/docs/campaign-web/v8/content/ai-assistant/generative-uc){target="_blank"} | [Märkesjustering](https://experienceleague.adobe.com/sv/docs/campaign-web/v8/content/ai-assistant/ai-assistant/brands-score){target="_blank"}
+[Översikt över AI Assistant](https://experienceleague.adobe.com/en/docs/campaign-web/v8/content/ai-assistant/generative-gs){target="_blank"} | [ Användningsexempel för AI-assistenten ](https://experienceleague.adobe.com/en/docs/campaign-web/v8/content/ai-assistant/generative-uc){target="_blank"} | [Märkesjustering](https://experienceleague.adobe.com/en/docs/campaign-web/v8/content/ai-assistant/ai-assistant/brands-score){target="_blank"}
 
 +++
 
@@ -847,7 +847,7 @@ Seed-adresserna läggs automatiskt till i varje leverans för testning, kvalitet
 
 Hantera dirigerade adresser i **[!UICONTROL Resources > Campaign management > Seed addresses]**. Håll listorna små så att leveransstatistik inte påverkas.
 
-[Guiden för dirigerade adresser](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/action-activities/delivery-control.html?lang=sv-SE){target="_blank"}
+[Guiden för dirigerade adresser](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/action-activities/delivery-control.html){target="_blank"}
 
 +++
 
@@ -863,7 +863,7 @@ Skapa operatorgrupper i **[!UICONTROL Administration > Access management > Opera
 
 Använd **korrektur som godkännandeprocess**. Skicka korrektur till godkännandegruppen för validering och skicka alltid ett nytt bevis efter att ha gjort ändringar för att säkerställa att alla intressenter granskar den senaste versionen.
 
-[Leveransvalidering](../send/preview-and-proof.md) | [Kampanjgodkännanden](https://experienceleague.adobe.com/docs/campaign/automation/campaign-orchestration/marketing-campaign-approval.html?lang=sv-SE){target="_blank"}
+[Leveransvalidering](../send/preview-and-proof.md) | [Kampanjgodkännanden](https://experienceleague.adobe.com/docs/campaign/automation/campaign-orchestration/marketing-campaign-approval.html){target="_blank"}
 
 +++
 
@@ -880,7 +880,7 @@ Typologiregler är automatiserade affärslogik som tillämpas under leveransanal
 
 Reglerna grupperas i typologier och tillämpas under leveransanalysen. Kampanjen kan utesluta mottagare, blockera leveransen eller generera varningar baserat på reglerna.
 
-[Guiden för typologiregler](https://experienceleague.adobe.com/docs/campaign/automation/campaign-optimization/campaign-typologies.html?lang=sv-SE){target="_blank"}
+[Guiden för typologiregler](https://experienceleague.adobe.com/docs/campaign/automation/campaign-optimization/campaign-typologies.html){target="_blank"}
 
 +++
 
@@ -1058,9 +1058,9 @@ Vanliga arbetsflödesmönster: dataimport, målgruppssegmentering, leverans, dat
 
 **Relaterade ämnen:**
 
-* [Bygga ett arbetsflöde](https://experienceleague.adobe.com/docs/campaign/automation/workflows/introduction/build-a-workflow.html?lang=sv-SE){target="_blank"}
+* [Bygga ett arbetsflöde](https://experienceleague.adobe.com/docs/campaign/automation/workflows/introduction/build-a-workflow.html){target="_blank"}
 * [Arbetsflödesaktiviteter](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/about-activities.html){target="_blank"}
-* [God praxis för arbetsflöden](https://experienceleague.adobe.com/docs/campaign/automation/workflows/introduction/workflow-best-practices.html?lang=sv-SE){target="_blank"}
+* [God praxis för arbetsflöden](https://experienceleague.adobe.com/docs/campaign/automation/workflows/introduction/workflow-best-practices.html){target="_blank"}
 * [Användningsexempel för arbetsflöde](https://experienceleague.adobe.com/docs/campaign/automation/workflows/use-cases/about-workflow-use-cases.html){target="_blank"}
 
 +++
@@ -1090,8 +1090,8 @@ Importera data till Campaign på flera olika sätt beroende på era behov:
 **Relaterade ämnen:**
 
 * [God praxis för import](../start/import.md)
-* [Datainläsningsaktivitet](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/action-activities/data-loading-file.html?lang=sv-SE){target="_blank"}
-* [Återkommande importarbetsflöde](https://experienceleague.adobe.com/docs/campaign/automation/workflows/use-cases/data-management/recurring-import-workflow.html?lang=sv-SE){target="_blank"}
+* [Datainläsningsaktivitet](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/action-activities/data-loading-file.html){target="_blank"}
+* [Återkommande importarbetsflöde](https://experienceleague.adobe.com/docs/campaign/automation/workflows/use-cases/data-management/recurring-import-workflow.html){target="_blank"}
 
 +++
 
@@ -1117,9 +1117,9 @@ Ja. Campaign innehåller omfattande funktioner för arbetsflödesövervakning f�
 
 **Relaterade ämnen:**
 
-* [Övervaka arbetsflödeskörning](https://experienceleague.adobe.com/docs/campaign/automation/workflows/monitoring-workflows/monitor-workflow-execution.html?lang=sv-SE){target="_blank"}
-* [God praxis för arbetsflöden](https://experienceleague.adobe.com/docs/campaign/automation/workflows/introduction/workflow-best-practices.html?lang=sv-SE){target="_blank"}
-* [Starta ett arbetsflöde](https://experienceleague.adobe.com/docs/campaign/automation/workflows/executing-a-workflow/start-a-workflow.html?lang=sv-SE){target="_blank"}
+* [Övervaka arbetsflödeskörning](https://experienceleague.adobe.com/docs/campaign/automation/workflows/monitoring-workflows/monitor-workflow-execution.html){target="_blank"}
+* [God praxis för arbetsflöden](https://experienceleague.adobe.com/docs/campaign/automation/workflows/introduction/workflow-best-practices.html){target="_blank"}
+* [Starta ett arbetsflöde](https://experienceleague.adobe.com/docs/campaign/automation/workflows/executing-a-workflow/start-a-workflow.html){target="_blank"}
 
 +++
 
@@ -1146,7 +1146,7 @@ Konfigurera avstämningsnycklar så att de matchar poster korrekt och välj uppd
 
 **Relaterade ämnen:**
 
-* [Uppdatera dataaktivitet](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/targeting-activities/update-data.html?lang=sv-SE){target="_blank"}
+* [Uppdatera dataaktivitet](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/targeting-activities/update-data.html){target="_blank"}
 * [Datahanteringsaktiviteter](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/action-activities/about-action-activities.html){target="_blank"}
 
 +++
@@ -1177,8 +1177,8 @@ Med de här aktiviteterna kan du arbeta med data som inte finns direkt i huvudmo
 **Relaterade ämnen:**
 
 * [Datahanteringsaktiviteter](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/targeting-activities/about-targeting-activities.html){target="_blank"}
-* [Målarbetsflöden](https://experienceleague.adobe.com/docs/campaign/automation/workflows/introduction/wf-type/targeting-workflows.html?lang=sv-SE){target="_blank"}
-* [Anrikningsaktivitet](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/targeting-activities/enrichment.html?lang=sv-SE){target="_blank"}
+* [Målarbetsflöden](https://experienceleague.adobe.com/docs/campaign/automation/workflows/introduction/wf-type/targeting-workflows.html){target="_blank"}
+* [Anrikningsaktivitet](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/targeting-activities/enrichment.html){target="_blank"}
 
 +++
 
@@ -1206,8 +1206,8 @@ Vanliga scenarier: födelsedagskampanjer, övergivna varukorgar, lojalitetsprogr
 **Relaterade ämnen:**
 
 * [Personalization Guide](../send/personalize.md)
-* [Användningsexempel för arbetsflöde](https://experienceleague.adobe.com/docs/campaign/automation/workflows/use-cases/deliveries/send-a-birthday-email.html?lang=sv-SE){target="_blank"}
-* [Anrikningsaktivitet](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/targeting-activities/enrichment.html?lang=sv-SE){target="_blank"}
+* [Användningsexempel för arbetsflöde](https://experienceleague.adobe.com/docs/campaign/automation/workflows/use-cases/deliveries/send-a-birthday-email.html){target="_blank"}
+* [Anrikningsaktivitet](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/targeting-activities/enrichment.html){target="_blank"}
 
 +++
 
@@ -1234,7 +1234,7 @@ Varje delmängd flödar till en separat övergång, vilket ger olika bearbetning
 
 **Relaterade ämnen:**
 
-* [Delad aktivitet](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/targeting-activities/split.html?lang=sv-SE){target="_blank"}
+* [Delad aktivitet](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/targeting-activities/split.html){target="_blank"}
 * [A/B-testguide](https://experienceleague.adobe.com/docs/campaign/automation/workflows/use-cases/deliveries/a-b-testing.html){target="_blank"}
 
 +++
@@ -1266,8 +1266,8 @@ Ja. Använd arbetsflöden för att uppdatera kampanjdata med värden från exter
 **Relaterade ämnen:**
 
 * [Importera dataguide](../start/import.md)
-* [Datainläsningsaktivitet](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/action-activities/data-loading-file.html?lang=sv-SE){target="_blank"}
-* [Uppdatera dataaktivitet](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/targeting-activities/update-data.html?lang=sv-SE){target="_blank"}
+* [Datainläsningsaktivitet](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/action-activities/data-loading-file.html){target="_blank"}
+* [Uppdatera dataaktivitet](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/targeting-activities/update-data.html){target="_blank"}
 
 +++
 
@@ -1293,9 +1293,9 @@ Använd sammanställningsfunktioner för att dynamiskt identifiera de senaste ti
 
 **Relaterade ämnen:**
 
-* [Frågeaktivitet](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/targeting-activities/query.html?lang=sv-SE){target="_blank"}
-* [Använda aggregat](https://experienceleague.adobe.com/docs/campaign/automation/workflows/use-cases/data-management/using-aggregates.html?lang=sv-SE){target="_blank"}
-* [Välkomstprogram](https://experienceleague.adobe.com/docs/campaign/automation/workflows/use-cases/deliveries/send-a-birthday-email.html?lang=sv-SE){target="_blank"}
+* [Frågeaktivitet](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/targeting-activities/query.html){target="_blank"}
+* [Använda aggregat](https://experienceleague.adobe.com/docs/campaign/automation/workflows/use-cases/data-management/using-aggregates.html){target="_blank"}
+* [Välkomstprogram](https://experienceleague.adobe.com/docs/campaign/automation/workflows/use-cases/deliveries/send-a-birthday-email.html){target="_blank"}
 
 +++
 
@@ -1327,10 +1327,10 @@ Om du vill använda aktiviteter drar du dem från paletten till arbetsytan, dubb
 
 **Relaterade ämnen:**
 
-* [Referens för målaktiviteter](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/targeting-activities/targeting-activities.html?lang=sv-SE){target="_blank"}
-* [Referens för flödeskontrollaktiviteter](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/flow-control-activities/flow-control-activities.html?lang=sv-SE){target="_blank"}
-* [Åtgärdsaktivitetsreferens](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/action-activities/action-activities.html?lang=sv-SE){target="_blank"}
-* [Händelseaktiviteter - referens](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/event-activities/event-activities.html?lang=sv-SE){target="_blank"}
+* [Referens för målaktiviteter](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/targeting-activities/targeting-activities.html){target="_blank"}
+* [Referens för flödeskontrollaktiviteter](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/flow-control-activities/flow-control-activities.html){target="_blank"}
+* [Åtgärdsaktivitetsreferens](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/action-activities/action-activities.html){target="_blank"}
+* [Händelseaktiviteter - referens](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/event-activities/event-activities.html){target="_blank"}
 
 +++
 
@@ -1375,9 +1375,9 @@ Följ dessa standarder för att skapa effektiva, underhållbara och tillförlitl
 
 **Relaterade ämnen:**
 
-* [Handbok om arbetsflöden för bästa praxis](https://experienceleague.adobe.com/docs/campaign/automation/workflows/introduction/workflow-best-practices.html?lang=sv-SE){target="_blank"}
-* [Bygga ett arbetsflöde](https://experienceleague.adobe.com/docs/campaign/automation/workflows/introduction/build-a-workflow.html?lang=sv-SE){target="_blank"}
-* [Övervaka arbetsflöden](https://experienceleague.adobe.com/docs/campaign/automation/workflows/monitoring-workflows/monitor-workflow-execution.html?lang=sv-SE){target="_blank"}
+* [Handbok om arbetsflöden för bästa praxis](https://experienceleague.adobe.com/docs/campaign/automation/workflows/introduction/workflow-best-practices.html){target="_blank"}
+* [Bygga ett arbetsflöde](https://experienceleague.adobe.com/docs/campaign/automation/workflows/introduction/build-a-workflow.html){target="_blank"}
+* [Övervaka arbetsflöden](https://experienceleague.adobe.com/docs/campaign/automation/workflows/monitoring-workflows/monitor-workflow-execution.html){target="_blank"}
 
 +++
 
@@ -1403,7 +1403,7 @@ Det beror på vilket gränssnitt du använder. **klientkonsolens** språk är fa
 * Webbgränssnittets språkinställning är oberoende av Campaign-servern och klientkonsolens språk
 
 
-[Ändra språk i webbgränssnittet för kampanj](https://experienceleague.adobe.com/sv/docs/campaign-web/v8/start/connect-to-campaign#language-pref){target="_blank"} | [Kom igång med Campaign-klientkonsolen](connect.md)
+[Ändra språk i webbgränssnittet för kampanj](https://experienceleague.adobe.com/en/docs/campaign-web/v8/start/connect-to-campaign#language-pref){target="_blank"} | [Kom igång med Campaign-klientkonsolen](connect.md)
 
 +++
 
@@ -1522,7 +1522,7 @@ Ja. Campaign tillhandahåller inbyggda CRM-anslutningar för smidig dubbelriktad
 
 **Bästa praxis:** Börja med skrivskyddad synkronisering för att testa mappningen och aktivera sedan dubbelriktad synkronisering. Övervaka synkroniseringsloggar för fel och underhåll rena data i båda systemen.
 
-[CRM-anslutningskonfiguration](../connect/crm.md) | [CRM-arbetsflödesaktiviteter](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/targeting-activities/crm-connector.html?lang=sv-SE){target="_blank"}
+[CRM-anslutningskonfiguration](../connect/crm.md) | [CRM-arbetsflödesaktiviteter](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/targeting-activities/crm-connector.html){target="_blank"}
 
 +++
 
@@ -1596,7 +1596,7 @@ Ja. Med Campaigns flexibla datamodell kan ni utöka inbyggda scheman med anpassa
 * Skapa branschspecifika datamodeller (detaljhandel, ekonomi, resor)
 
 
-[Utöka datamodell](../dev/extend-schema.md) | [&#x200B; Schemastruktur &#x200B;](../dev/schemas.md) | [Bästa praxis för datamodell](../dev/datamodel-best-practices.md)
+[Utöka datamodell](../dev/extend-schema.md) | [ Schemastruktur ](../dev/schemas.md) | [Bästa praxis för datamodell](../dev/datamodel-best-practices.md)
 
 +++
 
@@ -1606,57 +1606,158 @@ Få insikter om Campaigns rapporteringsfunktioner, inklusive inbyggda rapporter,
 
 +++ Hur skapar jag nya rapporter?
 
-Förutom inbyggda rapporter kan du med Adobe Campaign generera rapporter i olika sammanhang och för att tillgodose olika behov.
+Campaign erbjuder flera rapportalternativ beroende på era behov och er tekniska expertis. Du kan använda inbyggda rapporter, skapa anpassade rapporter i klientkonsolen eller utforma visuella instrumentpaneler i gränssnittet för Campaign Web.
 
-Adobe Campaign är inte ett specialiserat rapporteringsverktyg. Rapporter som skapas i Adobe Campaign låter dig i huvudsak se aggregerade data.
+**Rapporteringsalternativ:**
 
-[Läs mer](../reporting/gs-reporting.md) om rapportfunktioner för Campaign.
+* **Inbyggda rapporter** - Klar att använda leverans-, kampanj- och spårningsrapporter som är tillgängliga på fliken **[!UICONTROL Reports]**
+* **Beskrivande analys** - Snabba statistiska rapporter för alla data med ett guidestyrt gränssnitt
+* **Anpassade rapporter** - Avancerade rapporter skapade av tekniska användare med rapportredigeraren
+* **Kontrollpaneler för webbgränssnitt** - Moderna visuella rapporter och instrumentpaneler med dra-och-släpp-gränssnitt
+* **Kuber** - Multidimensionell datautforskning och pivottabellanalys
+
+**Viktigt!** Kampanjen är utformad för marknadsföringsaktivitetsrapportering, inte som ett specialiserat affärsintelligensverktyg. För komplexa analysbehov kan du överväga att integrera med Adobe Analytics eller särskilda BI-plattformar.
+
+[Kom igång med rapportering](../reporting/gs-reporting.md) | [Webbgränssnittsrapporter för kampanj ](https://experienceleague.adobe.com/en/docs/campaign-web/v8/reports/gs-reports){target="_blank"}
 
 +++
 
 +++ Hur kan jag utforma och dela statistiska rapporter om populationer?
 
-Med Adobe Campaign [beskrivande analysrapporter](../reporting/built-in-reports.md) kan du utforma och dela statistiska rapporter om dina populationer.
+Använd Campaigns beskrivande analysverktyg för att snabbt generera statistiska rapporter om alla populationsdata. Den här guidedrivna funktionen hjälper dig att analysera distributioner, trender och mönster utan tekniska kunskaper.
 
-[Läs mer](../reporting/built-in-reports.md).
+**Vad du kan analysera:**
+
+* Demografi och segmentering av mottagare
+* Mätvärden för kampanjresultat och svarsfrekvens
+* Distribution av profilattribut (ålder, plats, inställningar)
+* Leveransstatistik och engagemangsmönster
+* Anpassade fältvärden och mätvärden för datakvalitet
+
+**Så här skapar du:** Välj en lista eller ett frågeresultat → Högerklicka → **[!UICONTROL Actions > Analyze]** → Välj analystyp (kvalitativ eller kvantitativ) → Konfigurera visningsalternativ → Generera rapport.
+
+**Dela:** Exportera rapporter till Excel/PDF eller spara dem i mappen **[!UICONTROL Reports]** för att ge teamet rätt behörighet.
+
+[Beskrivning av analys](../reporting/built-in-reports.md)
 
 +++
 
 +++ Hur kan jag utforma avancerade rapporter på mina data?
 
-Med Campaign v8 kan du [skapa avancerade rapporter](../reporting/custom-reports.md). Som expertanvändare kan du skapa, uppdatera och distribuera anpassade rapporter utifrån dina data.
+Campaign erbjuder två metoder för att skapa avancerade anpassade rapporter: tekniska rapporter i klientkonsolen för komplex analys och visuella instrumentpaneler för enklare rapportskapande.
 
-Du kan också använda gränssnittet för webben i Campaign för att skapa rapporter och instrumentpaneler. [Läs mer](https://experienceleague.adobe.com/en/docs/campaign-web/v8/reports/gs-reports){target="_blank"}.
+På klientkonsolen kan du:
+
+* Bygg komplexa rapporter med SQL-frågor och anpassade beräkningar
+* Skapa flersidiga rapporter med diagram, tabeller och pivottabeller
+* Designa villkorsstyrd formatering och dynamiskt innehåll
+* Få tillgång till den fullständiga Campaign-datamodellen och externa databaser (FDA)
+
+
+[Skapa anpassade rapporter (klientkonsol)](../reporting/custom-reports.md)
 
 +++
 
-+++ Vad är en kub och hur skapar man en sådan rapport?
++++ Vad är en kub och hur kan jag använda den för rapportering?
 
-Du kan utöka databasens undersöknings- och analyskapacitet samtidigt som det blir enklare för slutanvändarna att konfigurera rapporter och tabeller. Allt de behöver göra är att välja en befintlig (helt konfigurerad) kub när de skapar sin rapport eller tabell för att bearbeta beräkningar, mått och statistik.
+Kuber är flerdimensionella datastrukturer som gör det möjligt för företagsanvändare att utforska och analysera Campaign-data via pivottabeller utan tekniska kunskaper. Tänk på dem som förkonfigurerade datamodeller som förenklar komplex rapportering.
 
-När de har skapats och konfigurerats används kuber i frågeformulär för rapportering och webbapplikationer. De kan användas och ändras i pivottabeller.
 
-Läs mer om hur du kan [utforskar data](../reporting/gs-cubes.md) med kuber.
+* Tekniska användare skapar och konfigurerar kuber som definierar dimensioner (tid, geografi, kanaler) och mått (öppningar, klick, intäkter)
+* Affärsanvändare väljer en kub när de skapar rapporter och drar och släpper dimensioner för att utforska data
+* Data sammanställs automatiskt och beräknas baserat på kubkonfigurationen
+* Resultaten kan visas som pivottabeller, diagram eller exporteras till Excel
+
+
+[Utforska data med kuber](../reporting/gs-cubes.md)
 
 +++
 
 +++ Kan jag skapa en rapport från svaren till en nätundersökning?
 
-Campaign v8 har ingen inbyggd undersökningsfunktion. Du kan använda Adobe Experience Manager eller andra webblösningar för att skapa enkäter.
+Ja! Campaign innehåller en undersökningsmodul där du kan skapa onlineenkäter och generera inbyggda rapporter om enkätsvar.
 
-Du kan dock använda rapportfunktioner för att analysera insamlade data och skapa anpassade rapporter.
+>[!AVAILABILITY]
+>
+>Undersökningshantering är inte tillgängligt i distributioner av Campaign v8 Enterprise (FFDA). [Läs mer](../architecture/enterprise-deployment.md).
+
+**Undersökningsfunktioner:**
+
+* Skapa onlineenkäter med flera sidor och frågetyper
+* Samla in svar i databasen eller lokala variabler
+* Visa spårning av undersökningssvar i realtid
+* Generera dedikerade rapporter om enkätsvar (uppdelning på fråga, allmän statistik)
+* Exportera enkätsvar till Excel, PDF eller CSV för vidare analys
+* Använd enkätdata i målgruppsarbetsflöden för att personalisera kampanjer
+
+**Inbyggda undersökningsrapporter:**
+
+* **Allmän rapport** - Svarstrender över tid, fördelning efter ursprung och språk
+* **Uppdelning av svar** - Detaljerad uppdelning av svar för varje fråga
+* **Dokumentationsrapport** - Visuell representation av undersökningsstrukturen
+
+**Avancerad analys:**
+
+* Få åtkomst till enkätsvar från fliken **[!UICONTROL Responses]** och exportera data
+* Använd aktiviteten **[!UICONTROL Survey responses]** i arbetsflöden för att rikta mottagare baserat på deras svar
+* Kombinera enkätdata med andra kampanjdata för segmentering och personalisering
+* Skapa anpassade rapporter och kuber för flerdimensionell undersökningsanalys
+
+
+[Kom igång med enkäter](https://experienceleague.adobe.com/en/docs/campaign-classic/using/online-surveys/about-surveys){target="_blank"} | [Undersökningsrapporter](https://experienceleague.adobe.com/en/docs/campaign-classic/using/online-surveys/publish-track-and-use-collected-data#reports-on-surveys){target="_blank"}
 
 +++
 
-+++ Hur kan jag dela åtkomst till min rapport i Campaign-gränssnittet?
++++ Hur kan jag dela åtkomst till mina rapporter?
 
-Du kan definiera i vilket sammanhang rapporten ska visas i användargränssnittet i Adobe Campaign. Mer information om åtkomst till rapporter finns i [det här avsnittet](../reporting/custom-reports.md).
+Campaign erbjuder flexibla alternativ för att dela rapporter med olika användargrupper och styr synlighet och åtkomstbehörigheter baserat på roller och ansvarsområden.
+
+**Rapportåtkomstkontroll:**
+
+* **Mappbehörigheter** - Placera rapporter i mappar med lämplig läs- och skrivbehörighet för användargrupper
+* **Namngivna rättigheter** - Tilldela specifika rättigheter för att visa, skapa eller ändra rapporter
+* **Visningssammanhang** - Definiera var rapporter visas: i mappen **[!UICONTROL Reports]**, på kampanjflikar eller på leveransskärmar
+* **Delning av webbgränssnitt** - Dela instrumentpanelslänkar med gruppmedlemmar via gränssnittet för Campaign Web
+
+**Konfigurera åtkomst:**
+
+1. Spara rapporten till en viss mapp i klientkonsolen
+2. Konfigurera mappåtkomstbehörigheter för relevanta operatorgrupper
+3. Definiera rapportegenskaper: rapporttyp, visningssammanhang och tillgänglighet
+4. Testa åtkomsten med en användare från målgruppen före en bredare utrullning
+
+**Bästa praxis:** Skapa dedikerade rapportmappar för olika team (marknadsföring, åtgärder, hantering) med anpassade åtkomstbehörigheter. Dokumentrapportens syfte och uppdateringsscheman.
+
+[Anpassade rapporter](../reporting/custom-reports.md) | [Användarbehörigheter](gs-permissions.md)
 
 +++
 
 +++ Kan jag exportera rapporter i olika format?
 
-Ja, du kan exportera Campaign-rapporter i olika format som Excel, PDF eller CSV. [Läs mer](../reporting/custom-reports.md).
+Ja, Campaign har stöd för flera exportformat för både klientkonsolen och Web UI-rapporter, vilket gör det enkelt att dela med intressenter och integrera med andra verktyg.
+
+**Tillgängliga exportformat:**
+
+* **Excel (.xlsx)** - bäst för datahantering, ytterligare analys och pivottabeller
+* **PDF** - Perfekt för presentationer, sammanfattningar och tryckta rapporter
+* **CSV** - Perfekt för dataimport till andra system och BI-verktyg
+* **OpenDocument (.ods)** - kalkylbladsformat med öppen källkod
+* **XML** - För systemintegreringar och automatiserad bearbetning
+
+**Så här exporterar du:**
+
+* **Klientkonsol:** Öppna rapport → Klicka på knappen **[!UICONTROL Export]** → Välj format → Spara fil
+* **Webbgränssnitt:** Öppna instrumentpanel → Klicka på exportikonen → Välj format → Hämta
+* **Automatisk export:** Schemalägg regelbunden export med arbetsflöden med exportaktiviteter
+
+**God praxis:**
+
+* Använd Excel för rapporter som kräver analyser och kommentarer från intressenter
+* Använd PDF för statiska rapporter som skickas till chefer eller arkiveras för regelefterlevnad
+* Använd CSV för integrering med datalager eller externa analysverktyg
+* Testa exporterade rapporter för att säkerställa formatering och datakvalitet
+
+[Anpassade rapporter](../reporting/custom-reports.md) | [Webbgränssnittsrapporter för kampanj ](https://experienceleague.adobe.com/en/docs/campaign-web/v8/reports/gs-reports){target="_blank"}
 
 +++
 
@@ -1666,85 +1767,279 @@ Få tillgång till teknisk information för utvecklare, inklusive information om
 
 +++ Vad är Campaign-datamodellen?
 
-Den konceptuella datamodellen av databasen i Adobe Campaign består av en uppsättning inbyggda tabeller och deras interaktion. Den fysiska och logiska strukturen hos de data som medföljer programmet beskrivs i XML. Den lyder under en grammatik som är specifik för Adobe Campaign och som kallas schema.
+Campaigns datamodell är en schemadriven relationsdatabasstruktur som definierar hur marknadsföringsdata är organiserade och relaterade. Det består av inbyggda tabeller för viktiga marknadsföringsobjekt (mottagare, leveranser, kampanjer) och kan utökas för att uppfylla just era affärsbehov.
 
-[Läs mer om Campaign-datamodellen](../dev/datamodel.md).
+**Viktiga begrepp i datamodellen:**
 
-[Den här sidan innehåller bästa praxis](../dev/datamodel-best-practices.md).
+* **Scheman** - XML-definitioner som beskriver tabellstruktur, fält och relationer
+* **Inbyggda tabeller** - Viktiga marknadsföringsenheter (mottagare, leveranser, arbetsflöden, kampanjer)
+* **Länkar** - Relationer mellan tabeller (1-1, 1-N, N-N)
+* **Uppräkningar** - fördefinierade värdelistor för listrutor
+* **Tillägg** - Anpassade fält och tabeller har lagts till i standardmodellen
+
+**Huvudinbyggda scheman:**
+
+* **Mottagare (nms:recipient)** - Kundprofiler och kontaktinformation
+* **Leverans (nms:delivery)** - e-post, SMS och push-kampanjer
+* **Arbetsflöde (xtk:workflow)** - Automatiseringsprocesser
+* **Kampanj (nms:operation)** - Marknadsföringskampanjsamordning
+* **Spårningsloggar** - Öppnar, klickar och engagemangsdata
+
+**Därför är det viktigt:** Att förstå datamodellen är nödvändigt för att skapa arbetsflöden, bygga frågor, utöka scheman och utveckla anpassade integreringar. Den schemabaserade metoden säkerställer att data är konsekventa och möjliggör kraftfulla frågefunktioner.
+
+[Kampanjdatamodell](../dev/datamodel.md) | [Bästa praxis för datamodell](../dev/datamodel-best-practices.md)
 
 +++
 
 +++ Hur arbetar man med Campaign-scheman?
 
-I Adobe Campaign används datascheman för att:
+Scheman är grunden till Campaigns datastruktur, som definierar tabeller, fält och relationer i XML-format. Att förstå scheman är avgörande för anpassning, integrering och avancerad arbetsflödesutveckling.
 
-* Definiera hur dataobjekt i programmet länkas till underliggande databastabeller.
-* Definiera länkar mellan olika dataobjekt i programmet Campaign.
-* Definiera och beskriva de enskilda fälten som ingår i varje objekt.
+**Vilka scheman definierar:**
 
-[Kom igång med tabeller och scheman](../dev/schemas.md) för att förstå hur du kan arbeta med dataram, utöka och anpassa Campaign efter dina behov.
+* **Tabellstruktur** - Databastabeller och deras motsvarande programobjekt
+* **Fältegenskaper** - Datatyper, etiketter, verifieringsregler och standardvärden
+* **Relationer** - Länkar mellan tabeller (kopplingar) och kardinalitet
+* **Index** - Databasoptimering för frågeprestanda
+* **Åtkomstkontroll** - Vilka fält som användare kan visa och ändra
+
+**Arbeta med scheman:**
+
+* **Visa scheman:** Åtkomst via **[!UICONTROL Administration > Configuration > Data schemas]** i klientkonsolen
+* **Utöka scheman:** Skapa tilläggsscheman (t.ex. `cus:recipient` extends `nms:recipient`) för att lägga till anpassade fält utan att ändra huvudscheman
+* **Skapa anpassade scheman:** Skapa helt nya tabeller för företagsspecifika data
+* **Uppdatera databas:** Tillämpa schemaändringar med **[!UICONTROL Tools > Advanced > Update database structure]**
+
+**Vanliga användningsområden:**
+
+* Lägga till anpassade fält i mottagarregister (företag-ID, lojalitetsnivå, inställningar)
+* Skapa anpassade tabeller för produkter, butiker eller transaktioner
+* Definiera relationer mellan anpassade och inbyggda tabeller
+* Implementera affärsspecifika datamodeller
+
+**Viktigt!** Ändra aldrig inbyggda scheman direkt. Använd alltid tilläggsscheman för att bevara uppgraderingskompatibiliteten och Adobe-stödet.
+
+[Kom igång med scheman](../dev/schemas.md) | [Utöka ett schema](../dev/extend-schema.md)
 
 +++
 
 +++ Hur använder man en anpassad mottagartabell?
 
-Du kan skapa och implementera en icke-inbyggd mottagartabell i Campaign för att skicka meddelanden.
+Med Campaign kan ni använda en anpassad tabell i stället för den inbyggda mottagartabellen när ert företag behöver en annan datastruktur för målinriktning (t.ex. B2B-konton, prenumeranter, leads eller externa kontakter).
 
-[Läs mer](../dev/custom-recipient.md)
+**Varför använda en anpassad mottagartabell:**
+
+* Rikta B2B-företag eller organisationsenheter istället för enskilda kontakter
+* Avgränsa prenumerationsdata från huvudkunddatabasen
+* Använd en befintlig kundtabell från ett annat system
+* Implementera arkitekturer för flera varumärken med separata kontakttabeller
+* Följ specifika datastyrningskrav
+
+**Implementeringssteg:**
+
+1. Skapa ett anpassat schema som definierar mottagartabellens struktur
+2. Inkludera obligatoriska fält (e-post, primärnyckel, exkluderingsflaggor)
+3. Konfigurera målmappningar för att länka registret med leveranser
+4. Uppdatera leveransmallar för att använda den nya målmappningen
+5. Anpassa arbetsflöden och frågor så att de refererar till den anpassade tabellen
+
+**Viktiga överväganden:**
+
+* Anpassade mottagartabeller måste innehålla obligatoriska fält för leveranser (e-post, undantag, spårning)
+* Arbetsflöden och formulär behöver anpassas för att fungera med den anpassade strukturen
+* Vissa inbyggda funktioner kan behöva anpassas
+* Testning är viktigt innan produktionskampanjer migreras
+
+**Bästa praxis:** Börja med att utöka den vanliga mottagartabellen innan du överväger en anpassad tabell. Anpassade mottagartabeller ger ökad komplexitet och bör bara användas när det är absolut nödvändigt.
+
+[Anpassad mottagartabell](../dev/custom-recipient.md) | [Målmappningar](../audiences/target-mappings.md)
 
 +++
 
 +++ Vilka är de bästa sätten att definiera frågor i Campaign?
 
-Frågeredigeraren i Adobe Campaign är ett kraftfullt verktyg som låter dig utforska data och bygga segment.
+Kampanjens frågeredigerare är ett kraftfullt visuellt verktyg för att skapa databasfrågor utan SQL-kunskap. Effektiv målinriktning, segmentering och dataanalys är avgörande om det ska gå att effektivisera målgruppsanpassningen.
 
-Du kan hitta frågeverktyget i Adobe Campaign på flera nivåer i programmet. Du kan skapa en målgrupp, segmentera kunder, extrahera och filtrera spårningsloggar och bygga filter osv.
+**Var frågor används:**
 
-Du kan fråga databasen i Campaign med den generiska frågeredigeraren. Den öppnas via menyn **Verktyg > Allmän frågeredigerare ...**. Den låter dig extrahera information som finns lagrad i en databas och ordna, gruppera och sortera osv. Användaren kan till exempel hämta mottagare som har klickat mer än &quot;n&quot; gånger på länken i ett nyhetsbrev under en viss period. Med det här verktyget kan du samla in, sortera och visa resultat utifrån dina behov.
+* **Arbetsflödesaktiviteter** - Fråga, Dela, Uppdatera data, Berika aktiviteter
+* **Leveransmål** - Definiera mottagarpopulationer för kampanjer
+* **Listor** - Skapa dynamiska eller statiska mottagarlistor
+* **Rapporter** - Bygg anpassade dataextraheringar och analyser
+* **Filter** - Skapa återanvändbara riktningsvillkor
 
-[Läs mer](../start/query-editor.md). Du kan även läsa [guiden för kampanjautomatisering](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/targeting-activities/query.html?lang=sv-SE){target="_blank"}.
+**Fråga efter bästa praxis:**
+
+* **Starta enkelt** - Skapa frågor stegvis, testa i varje steg
+* **Använd filtreringsdimensioner** - Utnyttja relationer mellan tabeller (mottagare → leveranser → spårningsloggar)
+* **Optimera prestanda** - Indexera fält med ofta frågor, undvik komplexa beräkningsfält
+* **Utnyttja fördefinierade filter** - Återanvänd och kombinera befintliga filter för konsekvens
+* **Testa med små samplingar** - Verifiera frågelogiken innan den körs i den fullständiga databasen
+* **Dokumentkomplexa frågor** - Lägg till beskrivningar för underhåll och kunskapsöverföring
+
+**Vanliga frågemönster:**
+
+* Målmottagare som öppnade en viss leverans: Filtrera efter loggar som är länkade till mottagare
+* Sök efter inaktiva kontakter: Fråga på senaste leveransdatum eller spårningsaktivitet
+* Segmentera efter beteende: Kombinera leverans-, spårnings- och profilkriterier
+* Exkludera tidigare mottagare: Använd uppsättningsåtgärder (union, skärning, exkludering)
+
+**Använd allmän frågeredigerare:** **[!UICONTROL Tools > Generic query editor]** för ad hoc-databasutforskning och dataextrahering utanför arbetsflöden.
+
+[Frågeredigeraren](../start/query-editor.md) | [Frågeaktivitet i arbetsflöden](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/targeting-activities/query.html){target="_blank"}
 
 +++
 
 +++ Hur importerar jag ett datapaket?
 
-Med Adobe Campaign kan du exportera eller importera plattformskonfigurationen och data via ett paketsystem. Med datapaket kan enheter i databasen i Adobe Campaign visas via filer i XML-format. Varje entitet i ett paket representeras med alla dess data.
+Med datapaket kan du exportera och importera Campaign-konfigurationer (scheman, arbetsflöden, typologier, filter) och data mellan instanser. Detta är nödvändigt för att driftsätta konfigurationer från utveckling till produktion eller för att dela komponenter mellan olika organisationer.
 
-Principen med datapaket är att exportera en datakonfiguration och integrera den i ett annat system i Adobe Campaign.
+**Vad kan paketeras:**
 
-[Läs mer](../dev/packages.md) om hur du arbetar med datapaket för att importera och exportera kampanjkonfigurationer.
+* **Konfigurationsobjekt** - scheman, arbetsflöden, typologiregler, formulär, filter
+* **Kampanjkomponenter** - Leveransmallar, kampanjmallar, innehållsblock
+* **Programinställningar** - Operatorer, operatorgrupper, mappstrukturer
+* **Data** - mottagarlistor, dirigerade adresser, innehållsfragment
+* **Anpassad utveckling** - JavaScript-kod, SQL-skript, webbprogram
+
+
+**Pakettyper:**
+
+* **Användarpaket** - Anpassade konfigurationer som du skapar och exporterar
+* **Plattformspaket** - funktioner och uppdateringar som tillhandahålls av Adobe
+* **Datapaket** - Innehåller faktiska dataposter, inte bara struktur
+
+**God praxis:**
+
+* Exportera alltid paket från samma eller äldre Campaign-version
+* Testa paketimport i utvecklingsmiljö före produktion
+* Innehåll och beroenden för dokumentpaket
+* Använda versionskontroll för paket-XML-filer
+* Säkerhetskopiera instans före större paketimporter
+
+[Arbeta med datapaket](../dev/packages.md)
 
 +++
 
 +++ Var hittar jag listan över API:er för Campaign v8?
 
-Alla API:er i Campaign inklusive deras fullständiga beskrivning finns i den här [dedikerade dokumentationen](https://experienceleague.adobe.com/developer/campaign-api/api/index.html?lang=sv){target="_blank"}.
+Campaign v8 innehåller omfattande API-dokumentation som omfattar både SOAP API:er (för klientkonsolinteraktioner) och REST API:er (för moderna integreringar). API-referensen innehåller alla tillgängliga metoder, parametrar och svarsformat.
+
+**Kampanj-API-typer:**
+
+* **SOAP API:er** - Traditionella API:er för Campaign-klientkonsolåtgärder, schemaändring och arbetsflödeskontroll
+* **REST API:er** - Moderna HTTP API:er för externa systemintegreringar, profilhantering och händelseutlösande
+* **JavaScript API:er** - Skript-API:er på serversidan för arbetsflödesaktiviteter och anpassad affärslogik
+
+**API-dokumentationsresurser:**
+
+* **Fullständig API-referens:** Omfattande SOAP API-dokumentation med metodsignaturer, parametrar och exempel
+* **REST API-guide:** Modern REST-slutpunkt för profiler, händelser och organisationsenheter
+* **JavaScript API:** Serverfunktioner som är tillgängliga i arbetsflödesskript och webbprogram
+
+**Vanliga API-användningsfall:**
+
+* Integrera Campaign med CRM-, ERP- eller anpassade applikationer
+* Automatisera kampanjåtgärder och arbetsflödeskörning
+* Synkronisera data mellan system i realtid
+* Skapa anpassade övervaknings- och varningslösningar
+* Skapa externa gränssnitt för Campaign-data och -åtgärder
+
+**Åtkomst:** [API-dokumentation för Campaign v8](https://experienceleague.adobe.com/developer/campaign-api/api/index.html?lang=sv){target="_blank"}
 
 +++
 
-+++ Vad är Campaign REST API?
-
-Campaign v8 innehåller en uppsättning REST-API:er som gör att ni kan skapa integreringar för Adobe Campaign och bygga ett eget ekosystem genom att interagera med Adobe Campaign med den panel med tekniker som ni använder.
-
-[Läs mer](../dev/api/get-started-apis.md).
-
-+++
 
 +++ Hur övervakar jag arbetsflöden från API?
 
-Lär dig hur du övervakar arbetsflöden med Campaign API:er i [den här dedikerade sidan](../dev/api/controlling-a-workflow.md).
+Med kampanj-API:er kan ni programmässigt styra och övervaka arbetsflödeskörningen, vilket möjliggör externa övervakningssystem, automatiska varningar och anpassade orkestreringslösningar.
+
+**Vad du kan göra via API:**
+
+* **Starta arbetsflöden** - Utlös arbetsflödeskörning programmatiskt
+* **Pausa/återuppta arbetsflöden** - Kontrollera arbetsflödets körningsflöde
+* **Stoppa arbetsflöden** - Avsluta pågående arbetsflöden
+* **Fråga efter arbetsflödesstatus** - Kontrollera om arbetsflöden körs, pausas eller slutförs
+* **Hämta loggar** - Få åtkomst till körningsloggar för arbetsflöden och felmeddelanden
+* **Övervaka aktivitetsförlopp** - Spåra enskilda arbetsflödesaktivitetsslutföranden
+
+**API-metoder:**
+
+* `xtk:workflow#Start` - Starta en arbetsflödesinstans
+* `xtk:workflow#Pause` - Pausa pågående arbetsflöde
+* `xtk:workflow#Stop` - Stoppa arbetsflödeskörning
+* `xtk:workflow#GetState` - Hämta aktuellt arbetsflödestillstånd
+* `xtk:workflow#GetLogs` - Hämta körningsloggar
+
+**Vanliga användningsområden:**
+
+* Skapa anpassade kontrollpaneler för övervakning som visar arbetsflödets hälsa
+* Implementera automatiska varningar när arbetsflöden misslyckas eller körs för länge
+* Samordna arbetsflöden från externa schemaläggare eller händelsesystem
+* Skapa arbetsflödesberoenden för flera Campaign-instanser
+* Generera rapporter över anpassade arbetsflödeskörningar
+
+**Bästa praxis:** Kombinera API-övervakning med arbetsflödets granskningsspår för omfattande arbetsflödesstyrning. Använd externa övervakningsverktyg för att spåra arbetsflödes-SLA och prestandamått.
+
+[Styra arbetsflöden via API](../dev/api/controlling-a-workflow.md)
 
 +++
 
 +++ Hur uppdaterar jag databasstrukturen?
 
-Om du ändrar Campaign-datascheman måste du uppdatera databasstrukturen. Lär dig hur i [det här avsnittet](../dev/update-database-structure.md).
+När du har ändrat Campaign-scheman (lagt till fält, skapat tabeller, ändrat datatyper) måste du uppdatera den fysiska databasstrukturen för att tillämpa ändringarna. Synkroniseringen säkerställer att databasen matchar dina schemadefinitioner.
+
+**När databasuppdateringar krävs:**
+
+* Lägga till nya fält i befintliga scheman
+* Skapa anpassade tabeller eller utöka inbyggda tabeller
+* Ändra fältegenskaper (datatyp, längd, obligatorisk status)
+* Lägga till eller ta bort länkar mellan tabeller
+* Skapa nya index för frågeoptimering
+
+
+**Viktiga överväganden:**
+
+* **Säkerhetskopiera först** - Säkerhetskopiera alltid databasen före strukturella ändringar
+* **Testa i utveckling** - Verifiera schemaändringar i dev-miljön före produktion
+* **Planering av driftstopp** - Stora strukturella ändringar kan kräva korta underhållsperioder
+* **För hanterade molntjänster** - Koordinera större ändringar med Adobe support
+* **Återsynlighet** - Vissa ändringar (som att ta bort fält) kan orsaka dataförlust
+
+**Bästa praxis:** Använd schemaversion och ändringsspårning. Dokumentera alla anpassade schemaändringar för underhåll och felsökning.
+
+[Uppdatera databasstrukturen](../dev/update-database-structure.md) | [Utöka schema](../dev/extend-schema.md)
 
 +++
 
 +++ Vilka är begränsningarna med Campaign v8?
 
-Campaign v8 har vissa begränsningar jämfört med Campaign Classic v7, som beskrivs i [den här sidan](../start/v7-to-v8.md#limitations).
+I Campaign v8 introduceras arkitektoniska förändringar (särskilt i FFDA-distributioner) som ger betydande prestandaförbättringar men också vissa skillnader jämfört med Campaign Classic v7. Genom att förstå dessa kan du planera migreringar och ställa upp lämpliga förväntningar.
+
+**Viktiga v8-överväganden:**
+
+* **FFDA-arkitektur** - Företagsdistributioner använder molndatabas (Snowflake) med olika dataåtkomstmönster
+* **Enhetsuppdateringar** - Datauppdateringar ska göras i arbetsflöden, inte via API:er eller direkt databasåtkomst
+* **Realtidsskrivningar** - Optimerad för gruppåtgärder i stället för högfrekventa individuella uppdateringar
+* **Datamodell** - Vissa schemaanpassningar kräver olika metoder
+* **Extern databasåtkomst** - FDA-konfigurationen (Federated Data Access) skiljer sig från v7
+
+**Funktioner som inte är tillgängliga i FFDA-distributioner:**
+
+* Undersökningar (finns i v8-standarddriftsättningar)
+* Marknadsföringsresurshantering (MRM)
+* Vissa specifika kopplingskonfigurationer
+
+**Migreringsöverväganden:**
+
+* Anpassad kod som använder direkt databasskrivning måste omfaktoriseras
+* API-integreringar kan kräva anpassning för gruppbearbetning
+* Arbetsflödena ska följa bästa praxis för dataåtgärder från FFDA
+* Testning är nödvändigt för att validera anpassad utveckling
+
+**Viktigt!** Dessa begränsningar utvecklas allt eftersom Adobe fortsätter att förbättra v8. Läs den senaste dokumentationen om aktuell status och färdplan.
+
+[Campaign v7 till v8-migrering](../start/v7-to-v8.md#limitations) | [FFDA-arkitektur](../architecture/enterprise-deployment.md)
 
 +++
 
@@ -1752,102 +2047,99 @@ Campaign v8 har vissa begränsningar jämfört med Campaign Classic v7, som besk
 
 Förstå hur Adobe Campaign hjälper er att följa sekretessregler som GDPR och CCPA samt hantera förfrågningar från registrerade personer.
 
-+++ Vilka är de huvudsakliga villkoren gällande sekretess?
++++ Vilka är de viktigaste sekretessbegreppen i Campaign?
 
-Punkterna nedan är länkade till de viktigaste villkoren och begreppen relaterade till integritet och medgivande i Adobe Campaign:
+Campaign hjälper er att följa sekretesslagstiftningen (GDPR, CCPA, PDPA, LGPD) genom verktyg för att hantera den registrerades rättigheter, samtycke och datalagring. Viktiga begrepp är sekretessbestämmelser, identifiering av personuppgifter, registrerade rättigheter (åtkomst, radering, mobilitet), samtyckeshantering och regler för datalagring.
 
-* [Reglering gällande integritetshantering](../start/privacy.md#privacy-regulations)
-* [Personuppgifter och personer](../start/privacy.md#personal-data)
-* [Åtkomsträttigheter och rätt att glömmas](../start/privacy.md#right-access-forgotten)
-* [Medgivande, lagring och roller](../start/privacy.md#consent-retention-roles)
+Som Data Controller är du ansvarig för att hantera förfrågningar från registrerade, upprätthålla godkännandeposter och säkerställa transparent dataanvändning.
 
-+++
-
-+++ Vad föreslår Adobe Campaign för att följa de senaste regelverken gällande sekretess?
-
-Adobe lämnar ingen juridisk rådgivning. Du bör samarbeta med eget juridiskt ombud för att säkerställa att de vidtar alla nödvändiga åtgärder gällande GDPR, CCPA, PDPA, LGPD eller någon annan tillämplig beredskap för reglering.
-
-**Förbered för dataåtkomst och -radering**
-
-* Identifiera en process för att ta emot/besvara förfrågningar från registrerade, inklusive att utse en kontaktperson för integritet.
-
-* Granska de olika kunddata som finns lagrade i Adobe Campaign och identifiera unika identifierare (det finns troligen fler än en).
-
-* Bestäm en policy och process med validering/autentisering för att bekräfta identiteten på registrerade.
-
-* Se till att svar till den registrerade är lätta att förstå.
-
-**Överväg medgivande**
-
-* Ange och uppdatera vid behov alla kontaktpunkter gällande datainsamling för GDPR (dvs. överväg språk, mekanismer för medgivande och medgivandeloggar).
-
-* Se till att alla e-postmeddelanden med marknadsföring innehåller länkarna för att avbryta prenumerationen.
-
-* Utvärdera den globala strategin för marknadsföring via e-post för att fastställa geografiskt specifika implementeringar.
-
-**Förstå dina data**
-
-* Granska alla import- och insamlingskällor där data flödar in i Adobe Campaign och dokumentera vilka fält som används i marknadsföringssyfte.
-
-* Ta bort oanvända dataattribut från databasen i Adobe Campaign.
-
-* Använd data som finns i Adobe Campaign i det syfte de har samlats in och ge dina mottagare bättre personaliserade upplevelser.
-
-* Granska och uppdatera behörigheter gällande dataåtkomst för att säkerställa att användare av Adobe Campaign kan dra nytta av endast de data som behövs för att köra sina kampanjer och inte komma åt data utöver det.
-
-* Se till att alla användare av Adobe Campaign har rätt åtkomstbehörighet för att utföra de uppgifter de behöver men inte några andra rättigheter att utföra ytterligare uppgifter.
+[Integritetshantering](../start/privacy.md)
 
 +++
 
-+++ Hur kan personuppgiftsansvariga erhålla medgivande med minimal inverkan på användarengagemang?
++++ Hur säkerställer jag integritetsefterlevnad i Campaign?
 
-I de fall där medgivande behövs för vissa marknadsföringsaktiviteter måste konsumentens samtycke vara aktivt (dvs. tystnad får inte räknas som medgivande eller förkryssade kryssrutor), fristående och det får inte vara ett villkor för att tjänsterna ska erbjudas.
+Campaign innehåller verktyg för sekretessefterlevnad, men det juridiska ansvaret ligger hos er. Samarbeta med jurister för ert sekretessprogram.
 
-Det kan till och med finnas tillfällen då vissa medgivanden behöver uppdateras för att kunna fortsätta använda data i framtiden.
+**Grundläggande åtgärder:**
 
-Marknadsförarna bör ta hänsyn till de här kraven på ökat medgivande som en sann indikator på varumärkesengagemang och varumärkeslojalitet, samt på kundnöjdhet och förtroende.
+* Upprätta processer för att hantera förfrågningar från registrerade (åtkomst, radering)
+* Implementera samtyckeshantering med tidsstämplar och spårning av omfattning
+* Inkludera länkar för att avbryta prenumerationen i alla marknadsföringsmeddelanden
+* Granska datakällor och ta bort oanvända data
+* Använd åtkomstkontroller med låg behörighet
 
-+++
+Campaign erbjuder integrering av bastjänsten för integritetsskydd, spårning av samtycke, automatiserade arbetsflöden för borttagning och verifieringskedjor för regelefterlevnad.
 
-+++ Hur kan personuppgiftsansvariga hantera medgivande i Adobe Campaign?
-
-Adobe Campaign erbjuder redan funktioner för att hantera medgivande på fler nivåer än de flesta marknadsförare använder via anpassade datafält eller via en eller flera tjänster.
-
-Marknadsförare bör kontakta sina juridiska ombud om hur de ska gå vidare och sedan dra nytta av de funktioner som redan finns i Adobe Campaign.
-
-Du kan t.ex. utöka datamodellen i Adobe Campaign så att den inte bara spårar om någon har anmält sig utan även tidsstämpeln för anmälan och en typ av indikator som anger det exakta tillämpningsområdet för medgivandet.
+[Integritetshantering](../start/privacy.md)
 
 +++
 
-+++ Vilka data kan personuppgiftsansvariga radera i Adobe Campaign som svar på en kundförfrågan från en registrerad?
++++ Hur ska jag samla in och hantera användarens samtycke?
 
-Alla data som är kopplade till den registrerade tas bort inklusive färdiga och anpassade tabeller.
+Giltigt samtycke kräver ett aktivt, specifikt, informerat och återkallbart avtal. Användarna måste vidta explicita åtgärder - inga förkryssade rutor eller tystnad som samtycke. Separata samtycke för olika syften (separat), ge tydliga förklaringar och underhåll poster med tidsstämplar.
 
-Tekniskt sett tas alla data bort som är länkade till den registrerade med `integrity="own"`.
+**God praxis:** Ange detaljerade alternativ för deltagande, uppdatera regelbundet samtycke, gör det enkelt för dig att komma åt inställningscentren och ramsamtycke som att bygga förtroende.
 
-Som personuppgiftsansvarig har du möjligheten att anpassa detta genom att ändra integriteten hos länkar som definieras i dataschemat (t.ex. om du har en affärsmässig motivering för att inte ta bort vissa data).
+Campaign erbjuder prenumerationstjänster, inställningscenter, anpassade medgivandefält med tidsstämpelspårning och arbetsflödesbaserad uppdatering av samtycke.
 
-+++
-
-+++ Hur påverkas rapporter när leverans- och spårningsloggar raderas?
-
-Rapporter i Adobe Campaign baseras på indikatorer som beräknas med aggregerade data från leverans- och spårningsloggar. Om du tar bort de enskilda loggarna påverkas därför inte de mätvärden som visas i rapporterna.
+[Prenumerationer](../start/subscriptions.md) | [Sekretess och samtycke](../start/privacy.md#consent-retention-roles)
 
 +++
 
-+++ Måste jag tänka på att importera data igen vid ett senare datum?
++++ Hur implementerar jag samtyckeshantering i Campaign?
 
-I Adobe Campaign överförs ofta poster från en extern datakälla.
+Campaign innehåller prenumerationstjänster, inställningscenter, avanmälningsflaggor och anpassade medgivandefält för spårning av samtycke.
 
-Som personuppgiftsansvarig måste du se till att radera alla nödvändiga data om den registrerade från alla dina system när du tar emot en begäran om radering.
+**Implementeringsmetod:** Utöka mottagarschema för medgivandefält (datum, typ, källa), skapa prenumerationstjänster för varje medgivandetyp, skapa inställningscenters webbformulär, använd arbetsflöden för att framtvinga samtycke i målinriktning och upprätthålla granskningsspår.
+
+Kontakta jurister för att kontrollera att implementeringen uppfyller gällande krav.
+
+[Prenumerationstjänster](../start/subscriptions.md) | [Sekretesshantering](../start/privacy.md)
 
 +++
 
-+++ Kan en registrerad person, vars data har raderats från Adobe Campaign, anmäla sig igen senare?
++++ Vilka data tas bort när jag bearbetar en borttagningsbegäran?
 
-En registrerad person kan ansluta sig igen eller läggas till som ny mottagare efter att dennes data har raderats från Adobe Campaign.
+Campaign tar automatiskt bort alla data som är länkade till ett ämne: mottagarprofil, leverans- och spårningsloggar, anpassade data med ägarskapsrelationer, prenumerationshistorik och webbspårningsdata.
 
-Du kan använda granskningsspåret som anger när den föregående borttagningen utfördes och när den nya mottagaren har skapats.
+**Så här fungerar det:** Campaign tar bort alla data där länken till mottagaren har `integrity="own"` i schemadefinitionen, vilket garanterar att alla relaterade tabeller tas bort.
+
+Du kan anpassa borttagningsomfånget genom att ändra länkintegriteten i scheman, men rådfråga jurister först. Borttagningen är permanent och kan inte ångras.
+
+[Sekretesshantering](../start/privacy.md) | [Schemalänkar ](../dev/schemas.md)
+
++++
+
++++ Påverkar sekretessborttagningar mina leveransrapporter?
+
+Nej. Kampanjrapporter baseras på förberäknade aggregerade mätvärden (totalt antal skickade, öppnade, klickade), inte på direktfrågor i enskilda loggar. När du tar bort enskilda mottagardata ändras inte den historiska aggregeringsstatistiken.
+
+Övergripande leveransstatistik och prestandamått förblir intakta, medan enskilda spårningsloggar och personlig information tas bort. På så sätt kan ni upprätthålla marknadsanalyser samtidigt som ni respekterar de registrerade personernas rättigheter.
+
+[Sekretesshantering](../start/privacy.md) | [Rapporter](../reporting/gs-reporting.md)
+
++++
+
++++ Hur förhindrar jag återimport av borttagna data?
+
+Ni måste ta bort data från alla källsystem, inte bara Campaign. Data kommer ofta från externa system (CRM, e-handel, datalager).
+
+**Obligatoriska åtgärder:** Identifiera alla datakällor, ta bort från källsystem, lägg till i uteslutnings-/undertryckslistor, uppdatera importarbetsflöden för att ta hänsyn till borttagningsflaggor och dokumentera processen.
+
+Som Data Controller är du ansvarig för fullständig borttagning av data i hela teknikens ekosystem.
+
+[Sekretesshantering](../start/privacy.md) | [Importera arbetsflöden ](../config/workflows.md)
+
++++
+
++++ Kan borttagna användare avanmäla sig igen?
+
+Ja. De registrerade kan anmäla sig igen efter att de har raderats. I Campaign skapas en helt ny mottagarpost utan någon länk till tidigare borttagna data. Profilen börjar med en ren platta.
+
+Kampanjens verifieringskedja registrerar både borttagningshändelsen och skapandet av nya profiler, vilket visar att den nya anmälningen är förenlig och att den nya anmälningen har lämnats fritt efter borttagningen.
+
+[Sekretesshantering](../start/privacy.md) | [Prenumerationer](../start/subscriptions.md)
 
 +++
 
@@ -1861,14 +2153,14 @@ Kommunicera med andra Campaign-användare och Adobe-experter för att dela kunsk
 
 * **[Adobe Campaign Community](https://experienceleaguecommunities.adobe.com/t5/adobe-campaign-classic/ct-p/adobe-campaign-classic-community){target="_blank"}** - Ställ frågor, dela lösningar och få kontakt med Campaign-communityn
 * **[Experience League-forum](https://experienceleaguecommunities.adobe.com/){target="_blank"}** - Sök i diskussioner i alla Adobe-produkter
-* **[Kampanjens kontorstider](https://experienceleague.adobe.com/sv){target="_blank"}** - Delta i live-sessioner med Adobe experter
+* **[Kampanjens kontorstider](https://experienceleague.adobe.com/){target="_blank"}** - Delta i live-sessioner med Adobe experter
 
 ### Dokumentation och utbildning
 
 Få tillgång till omfattande guider, självstudiekurser och utbildningsmaterial.
 
 * **[Kampanjdokumentation v8 - startsida](../campaign-home.md)** - fullständig produktdokumentation
-* **[Kampanjsjälvstudiekurser](https://experienceleague.adobe.com/docs/campaign-learn/tutorials/overview.html?lang=sv-SE){target="_blank"}** - Stegvisa videoguider och praktiska självstudiekurser
+* **[Kampanjsjälvstudiekurser](https://experienceleague.adobe.com/docs/campaign-learn/tutorials/overview.html){target="_blank"}** - Stegvisa videoguider och praktiska självstudiekurser
 * **[Nyheter](whats-new.md)** - de senaste funktionerna
 * **[Versionsinformation](release-notes.md)** - Aktuell och föregående versionsinformation
 * **[Bästa praxis](delivery-best-practices.md)** - Rekommenderade strategier för vanliga uppgifter
@@ -1878,8 +2170,8 @@ Få tillgång till omfattande guider, självstudiekurser och utbildningsmaterial
 Detaljerad teknisk dokumentation och resurser för utvecklare.
 
 * **[Kampanj-API:er](https://experienceleague.adobe.com/developer/campaign-api/api/index.html?lang=sv){target="_blank"}** - fullständig API-referensdokumentation
-* **[Campaign GitHub](https://github.com/AdobeDocs/campaign.sv-SE)** - Bidra till dokumentation
-* **[Teknisk information](https://experienceleague.adobe.com/sv/docs/campaign/technotes-ac/technotes-home){target="_blank"}** - Detaljerade tekniska artiklar
+* **[Campaign GitHub](https://github.com/AdobeDocs/campaign.en)** - Bidra till dokumentation
+* **[Teknisk information](https://experienceleague.adobe.com/en/docs/campaign/technotes-ac/technotes-home){target="_blank"}** - Detaljerade tekniska artiklar
 * **[Kompatibilitetsmatris](compatibility-matrix.md)** - system och versioner som stöds
 
 ### Support och tjänster
@@ -1896,17 +2188,17 @@ Få hjälp av Adobe supportteam och hantera instansen.
 Utveckla dina färdigheter med Adobe officiella utbildnings- och certifieringsprogram.
 
 * **[Adobe Digital Learning Services](https://learning.adobe.com/){target="_blank"}** - instruktörsledda och självstudiekurser
-* **[Adobe Campaign-certifiering](https://experienceleague.adobe.com/docs/certification/program/overview.html?lang=sv-SE){target="_blank"}** - Verifiera dina kunskaper med professionell certifiering
-* **[Experience League utbildningsvägar](https://experienceleague.adobe.com/sv?lang=en#dashboard/learning){target="_blank"}** - guidade utbildningsresor
+* **[Adobe Campaign-certifiering](https://experienceleague.adobe.com/docs/certification/program/overview.html){target="_blank"}** - Verifiera dina kunskaper med professionell certifiering
+* **[Experience League utbildningsvägar](https://experienceleague.adobe.com/?lang=en#dashboard/learning){target="_blank"}** - guidade utbildningsresor
 
 ### Andra användbara resurser
 
 * **[Campaign Classic v7-dokumentation](https://experienceleague.adobe.com/docs/campaign-classic/using/campaign-classic-home.html?lang=sv){target="_blank"}** - referens för användare av Classic v7
-* **[Webbgränssnittsdokumentation för kampanj](https://experienceleague.adobe.com/sv/docs/campaign-web/v8/campaign-web-home){target="_blank"}** - guide för nytt webbgränssnitt
+* **[Webbgränssnittsdokumentation för kampanj](https://experienceleague.adobe.com/en/docs/campaign-web/v8/campaign-web-home){target="_blank"}** - guide för nytt webbgränssnitt
 * **[Bästa praxis för slutleverans](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/introduction.html?lang=sv){target="_blank"}** - Optimera e-postleveransen
-* **[Produktuppdateringar](https://experienceleague.adobe.com/sv/docs/release-notes/experience-cloud/current){target="_blank"}** - senaste Adobe Experience Cloud-uppdateringar
+* **[Produktuppdateringar](https://experienceleague.adobe.com/en/docs/release-notes/experience-cloud/current){target="_blank"}** - senaste Adobe Experience Cloud-uppdateringar
 
 **Senast uppdaterad:** november 2025 | **Gäller för:** Campaign v8.6 och senare
 
-*Hittade ett fel eller vill du föreslå en förbättring? [Redigera den här sidan på GitHub](https://github.com/AdobeDocs/campaign.sv-SE/edit/main/help/v8/start/campaign-faq-comprehensive.md)*
+*Hittade ett fel eller vill du föreslå en förbättring? [Redigera den här sidan på GitHub](https://github.com/AdobeDocs/campaign.en/edit/main/help/v8/start/campaign-faq-comprehensive.md)*
 
