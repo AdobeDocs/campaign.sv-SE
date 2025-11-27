@@ -29,12 +29,12 @@ Du får åtkomst till Adobe Campaign via klientkonsolen eller webbgränssnittet.
 
   >[!AVAILABILITY]
   >
-  >Användargränssnittet för Campaign-webben är bara tillgängligt för Campaign v8-användare som ansluter till Campaign med sin Adobe ID. Läs mer om [Adobe Identity Management System (IMS)](https://helpx.adobe.com/enterprise/using/identity.html){target="_blank"}.
+  >Användargränssnittet för Campaign-webben är bara tillgängligt för Campaign v8-användare som ansluter till Campaign med sin Adobe ID. Läs mer om [Adobe Identity Management System (IMS)](https://helpx.adobe.com/se/enterprise/using/identity.html){target="_blank"}.
   >
 
 >[!CAUTION]
 >
->Den här dokumentationen fokuserar på användning av Campaign Client-konsolen. Om du använder användargränssnittet för Campaign v8 läser du [den här dokumentationen](https://experienceleague.adobe.com/docs/campaign-web/v8/campaign-web-home.html){target="_blank"} om du är Campaign-användare.
+>Den här dokumentationen fokuserar på användning av Campaign Client-konsolen. Om du använder användargränssnittet för Campaign v8 läser du [den här dokumentationen](https://experienceleague.adobe.com/docs/campaign-web/v8/campaign-web-home.html?lang=sv-SE){target="_blank"} om du är Campaign-användare.
 
 ## Arbeta med klientkonsolen {#ui-access}
 
@@ -126,12 +126,12 @@ Som Campaign v8-användare, från och med version 8.6.1, har du tillgång till e
 
 >[!AVAILABILITY]
 >
->Användargränssnittet för Campaign-webben är bara tillgängligt för Campaign v8-användare som ansluter till Campaign med sin Adobe ID. Läs mer om [Adobe Identity Management System (IMS)](https://helpx.adobe.com/enterprise/using/identity.html){target="_blank"}.
+>Användargränssnittet för Campaign-webben är bara tillgängligt för Campaign v8-användare som ansluter till Campaign med sin Adobe ID. Läs mer om [Adobe Identity Management System (IMS)](https://helpx.adobe.com/se/enterprise/using/identity.html){target="_blank"}.
 >
 
-Läs mer om det nya webbanvändargränssnittet för Campaign i [den här dokumentationen](https://experienceleague.adobe.com/docs/campaign-web/v8/campaign-web-home.html){target="_blank"}. Du kan även gå till sidan [Vanliga frågor och svar](https://experienceleague.adobe.com/en/docs/campaign-web/v8/start/faq){target="_blank"} i dokumentationen för Campaign-webbanvändargränssnittet.
+Läs mer om det nya webbanvändargränssnittet för Campaign i [den här dokumentationen](https://experienceleague.adobe.com/docs/campaign-web/v8/campaign-web-home.html?lang=sv-SE){target="_blank"}. Du kan även gå till sidan [Vanliga frågor och svar](https://experienceleague.adobe.com/sv/docs/campaign-web/v8/start/faq){target="_blank"} i dokumentationen för Campaign-webbanvändargränssnittet.
 
-Ytterligare och avancerade funktioner, konfigurationer och inställningar är bara tillgängliga i klientkonsolen. Läs mer om funktioner som är tillgängliga i båda användargränssnitten [&#x200B; i dokumentationen för användargränssnittet för Campaign &#x200B;](https://experienceleague.adobe.com/docs/campaign-web/v8/start/capability-matrix.html){target="_blank"}.
+Ytterligare och avancerade funktioner, konfigurationer och inställningar är bara tillgängliga i klientkonsolen. Läs mer om funktioner som är tillgängliga i båda användargränssnitten [&#x200B; i dokumentationen för användargränssnittet för Campaign &#x200B;](https://experienceleague.adobe.com/docs/campaign-web/v8/start/capability-matrix.html?lang=sv-SE){target="_blank"}.
 
 
 ## Språk som stöds {#languages}
@@ -151,7 +151,7 @@ Vilka språk som stöds beror på användargränssnittet.
   >
   >Språket väljs under installationen och **kan inte ändras** därefter.
 
-* För språk som stöds av Campaign-webbgränssnittet [finns mer information i dokumentationen för Campaign-webbgränssnittet](https://experienceleague.adobe.com/docs/campaign-web/v8/start/connect-to-campaign.html#language-pref){target="_blank"}.
+* För språk som stöds av Campaign-webbgränssnittet [finns mer information i dokumentationen för Campaign-webbgränssnittet](https://experienceleague.adobe.com/docs/campaign-web/v8/start/connect-to-campaign.html?lang=sv-SE#language-pref){target="_blank"}.
 
 ## Format
 
