@@ -84,7 +84,7 @@ Lär dig hur du implementerar levererbarhet i Campaign [i den här guiden](https
 
 **Relaterade ämnen:**
 
-[Om levererbarhet](../send/about-deliverability.md) | [ Kontrollera meddelandeinnehåll ](../send/control-message-content.md) | [Skärmleverans](../send/monitoring-deliverability.md) | [SpamAssassin](../send/spamassassin.md)
+[Om levererbarhet](../send/about-deliverability.md) | [&#x200B; Kontrollera meddelandeinnehåll &#x200B;](../send/control-message-content.md) | [Skärmleverans](../send/monitoring-deliverability.md) | [SpamAssassin](../send/spamassassin.md)
 
 +++
 
@@ -275,7 +275,7 @@ Campaign v8 erbjuder två gränssnitt för att skapa e-post:
 
 **Relaterade ämnen:**
 
-[Skapa din första leverans](create-message.md) | [Arbeta med leveransmallar](../send/create-templates.md) | [Bästa praxis för leverans](delivery-best-practices.md) | [Definiera e-postinnehållet](../send/defining-the-email-content.md) | [Förhandsgranska och korrektur](../send/preview-and-proof.md) | [Konfigurera och skicka](../send/configure-and-send.md) | [Anpassa innehåll ](../send/personalize.md)
+[Skapa din första leverans](create-message.md) | [Arbeta med leveransmallar](../send/create-templates.md) | [Bästa praxis för leverans](delivery-best-practices.md) | [Definiera e-postinnehållet](../send/defining-the-email-content.md) | [Förhandsgranska och korrektur](../send/preview-and-proof.md) | [Konfigurera och skicka](../send/configure-and-send.md) | [Anpassa innehåll &#x200B;](../send/personalize.md)
 
 +++
 
@@ -355,7 +355,7 @@ Om du skickar push-meddelanden med Campaign v8 måste du konfigurera mobilappsin
 
 **Relaterade ämnen:**
 
-[Skapa och skicka push-meddelanden](../send/push.md) | [Konfigurera kanal för push-meddelanden ](../send/push-settings.md) | [Designa en omfattande Android-push](../send/rich-push-android.md) | [Designa en omfattande iOS-överföring](../send/rich-push-ios.md) | [Konfigurera med datainsamling](../send/push-data-collection.md) | [Spåra och övervaka](tracking.md)
+[Skapa och skicka push-meddelanden](../send/push.md) | [Konfigurera kanal för push-meddelanden &#x200B;](../send/push-settings.md) | [Designa en omfattande Android-push](../send/rich-push-android.md) | [Designa en omfattande iOS-överföring](../send/rich-push-ios.md) | [Konfigurera med datainsamling](../send/push-data-collection.md) | [Spåra och övervaka](tracking.md)
 
 +++
 
@@ -391,7 +391,7 @@ Visas ett felmeddelande på ett främmande språk? Alla felmeddelanden och deras
 
 Ja. Skapa webbformulär med **Campaign Web Applications &amp; Forms** (klientkonsol) för fullständig kontroll över formulärlogik och validering, eller använd **Campaign Landing Pages** (webbgränssnitt) med ett modernt dra och släpp-gränssnitt för prenumerationer och leadgenerering. Båda samlar in data direkt i Campaign och integreras med arbetsflöden för automatiserade åtgärder.
 
-[Läs mer om webbprogram och formulär](../dev/webapps.md) | [Startsidor för Campaign Web UI ](https://experienceleague.adobe.com/en/docs/campaign-web/v8/landing-pages/get-started-lp){target="_blank"}
+[Läs mer om webbprogram och formulär](../dev/webapps.md) | [Startsidor för Campaign Web UI &#x200B;](https://experienceleague.adobe.com/en/docs/campaign-web/v8/landing-pages/get-started-lp){target="_blank"}
 
 +++
 
@@ -451,7 +451,7 @@ Campaign v8 är en helt omdesignad version av Adobe Campaign som tagits fram fö
 
 **Relaterade ämnen:**
 
-[Från Campaign Classic v7 till v8](v7-to-v8.md) | [ Övergångshandbok för v7 till v8 ](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/new/v7-to-v8){target="_blank"} | [Från Campaign Standard till v8](acs-to-v8.md) | [Campaign Standard-övergång](https://experienceleague.adobe.com/en/docs/campaign-web/v8/start/acs-migration){target="_blank"} | [Campaign v8 - Adoptionshandbok](https://experienceleague.adobe.com/sv/docs/campaign-web/acs-to-ac/home){target="_blank"} | [Funktionsmatris för kampanj v8](https://experienceleague.adobe.com/en/docs/campaign-web/v8/start/capability-matrix){target="_blank"}
+[Från Campaign Classic v7 till v8](v7-to-v8.md) | [&#x200B; Övergångshandbok för v7 till v8 &#x200B;](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/new/v7-to-v8){target="_blank"} | [Från Campaign Standard till v8](acs-to-v8.md) | [Campaign Standard-övergång](https://experienceleague.adobe.com/en/docs/campaign-web/v8/start/acs-migration){target="_blank"} | [Campaign v8 - Adoptionshandbok](https://experienceleague.adobe.com/sv/docs/campaign-web/acs-to-ac/home){target="_blank"} | [Funktionsmatris för kampanj v8](https://experienceleague.adobe.com/en/docs/campaign-web/v8/start/capability-matrix){target="_blank"}
 * [Kampanjarkitektur v8](../architecture/architecture.md)
 * [Skyddsritningar och begränsningar](ac-guardrails.md)
 
@@ -519,7 +519,7 @@ Kontakta Adobe för att
 
 **För Campaign Classic v7-användare:** [Från Campaign Classic v7 till v8](v7-to-v8.md) | [Detaljerad guide från v7 till v8](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/new/v7-to-v8){target="_blank"}
 
-**För Campaign Standard-användare:** [Campaign Standard övergång till v8](https://experienceleague.adobe.com/en/docs/campaign-web/v8/start/acs-migration){target="_blank"} | [Campaign v8 - Adoptionshandbok ](https://experienceleague.adobe.com/sv/docs/campaign-web/acs-to-ac/home){target="_blank"} | [Från Campaign Standard till v8 - översikt](https://experienceleague.adobe.com/en/docs/campaign-web/acs-to-ac/overview){target="_blank"} | [Kom igång för marknadsförare](https://experienceleague.adobe.com/en/docs/campaign-web/acs-to-ac/marketers){target="_blank"} | [Kom igång för administratör/utvecklare](https://experienceleague.adobe.com/en/docs/campaign-web/acs-to-ac/admin-developers){target="_blank"}
+**För Campaign Standard-användare:** [Campaign Standard övergång till v8](https://experienceleague.adobe.com/en/docs/campaign-web/v8/start/acs-migration){target="_blank"} | [Campaign v8 - Adoptionshandbok &#x200B;](https://experienceleague.adobe.com/sv/docs/campaign-web/acs-to-ac/home){target="_blank"} | [Från Campaign Standard till v8 - översikt](https://experienceleague.adobe.com/en/docs/campaign-web/acs-to-ac/overview){target="_blank"} | [Kom igång för marknadsförare](https://experienceleague.adobe.com/en/docs/campaign-web/acs-to-ac/marketers){target="_blank"} | [Kom igång för administratör/utvecklare](https://experienceleague.adobe.com/en/docs/campaign-web/acs-to-ac/admin-developers){target="_blank"}
 
 **Allmänna resurser:** [Funktionsmatris för kampanj v8](https://experienceleague.adobe.com/en/docs/campaign-web/v8/start/capability-matrix){target="_blank"}
 * [Kompatibilitetsmatris](compatibility-matrix.md)
@@ -583,7 +583,7 @@ Följande termer har uppdaterats i gränssnittet för Campaign-webben (klientkon
 
 **Relaterade ämnen:**
 
-[Funktionsmatris](https://experienceleague.adobe.com/en/docs/campaign-web/v8/start/capability-matrix){target="_blank"} | [ Kompatibilitetsmatris ](compatibility-matrix.md) | [Skyddsritningar och begränsningar](ac-guardrails.md) | [Övergångshandbok för v7 till v8](v7-to-v8.md)
+[Funktionsmatris](https://experienceleague.adobe.com/en/docs/campaign-web/v8/start/capability-matrix){target="_blank"} | [&#x200B; Kompatibilitetsmatris &#x200B;](compatibility-matrix.md) | [Skyddsritningar och begränsningar](ac-guardrails.md) | [Övergångshandbok för v7 till v8](v7-to-v8.md)
 * [Campaign Standard till v8-övergång](https://experienceleague.adobe.com/en/docs/campaign-web/v8/start/acs-migration){target="_blank"}
 
 +++
@@ -596,7 +596,7 @@ Hitta svar på frågor om att hantera profiler, skapa målgrupper, importera dat
 
 Skapa mottagare manuellt i klientkonsolen för enskilda profiler, importera från filer (CSV/TXT) för att lägga till stora mängder, använda webbformulär för självregistrering eller integrera via API:er från externa system. Använd importarbetsflöden för återkommande datainläsningar.
 
-[Skapa profiler manuellt](../audiences/create-profiles.md) | [Importera profiler från en fil ](../audiences/import-profiles.md) | [Samla in profiler med webbformulär](../audiences/collect-profiles.md)
+[Skapa profiler manuellt](../audiences/create-profiles.md) | [Importera profiler från en fil &#x200B;](../audiences/import-profiles.md) | [Samla in profiler med webbformulär](../audiences/collect-profiles.md)
 
 +++
 
@@ -745,7 +745,7 @@ Viktiga funktioner: automatisk kopiering av innehåll, automatisk språkbaserad 
 
 Klientkonsolen stöder även flerspråkigt innehåll med villkorsstyrt innehåll och arbetsflöden, men kräver mer manuell konfiguration.
 
-[Flerspråkiga leveranser (webbgränssnitt)](https://experienceleague.adobe.com/en/docs/campaign-web/v8/msg/multilingual){target="_blank"} | [Villkorligt innehåll (klientkonsol) ](../send/conditions.md)
+[Flerspråkiga leveranser (webbgränssnitt)](https://experienceleague.adobe.com/en/docs/campaign-web/v8/msg/multilingual){target="_blank"} | [Villkorligt innehåll (klientkonsol) &#x200B;](../send/conditions.md)
 
 +++
 
@@ -771,7 +771,7 @@ Ja, men **endast via Campaign Web-gränssnittet**. AI Assistant, som bygger på 
 
 **Obs!** AI-assistenten är endast tillgänglig i gränssnittet för Campaign-webben och har för närvarande endast stöd för engelska. Användarna behöver rätt behörigheter och måste godkänna ett användaravtal.
 
-[Översikt över AI Assistant](https://experienceleague.adobe.com/en/docs/campaign-web/v8/content/ai-assistant/generative-gs){target="_blank"} | [ Användningsexempel för AI-assistenten ](https://experienceleague.adobe.com/en/docs/campaign-web/v8/content/ai-assistant/generative-uc){target="_blank"} | [Märkesjustering](https://experienceleague.adobe.com/en/docs/campaign-web/v8/content/ai-assistant/ai-assistant/brands-score){target="_blank"}
+[Översikt över AI Assistant](https://experienceleague.adobe.com/en/docs/campaign-web/v8/content/ai-assistant/generative-gs){target="_blank"} | [&#x200B; Användningsexempel för AI-assistenten &#x200B;](https://experienceleague.adobe.com/en/docs/campaign-web/v8/content/ai-assistant/generative-uc){target="_blank"} | [Märkesjustering](https://experienceleague.adobe.com/en/docs/campaign-web/v8/content/ai-assistant/ai-assistant/brands-score){target="_blank"}
 
 +++
 
@@ -1197,7 +1197,7 @@ Varje delmängd flödar till en separat övergång, vilket ger olika bearbetning
 
 **Relaterade ämnen:**
 
-[Delad aktivitet](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/targeting-activities/split.html){target="_blank"} | [Testguide för A/B ](https://experienceleague.adobe.com/docs/campaign/automation/workflows/use-cases/deliveries/a-b-testing.html){target="_blank"}
+[Delad aktivitet](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/targeting-activities/split.html){target="_blank"} | [Testguide för A/B &#x200B;](https://experienceleague.adobe.com/docs/campaign/automation/workflows/use-cases/deliveries/a-b-testing.html){target="_blank"}
 
 +++
 
@@ -1253,7 +1253,7 @@ Använd sammanställningsfunktioner för att dynamiskt identifiera de senaste ti
 
 **Relaterade ämnen:**
 
-[Frågeaktivitet](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/targeting-activities/query.html){target="_blank"} | [ Använda aggregat ](https://experienceleague.adobe.com/docs/campaign/automation/workflows/use-cases/data-management/using-aggregates.html){target="_blank"} | [Välkomstprogram](https://experienceleague.adobe.com/docs/campaign/automation/workflows/use-cases/deliveries/send-a-birthday-email.html){target="_blank"}
+[Frågeaktivitet](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/targeting-activities/query.html){target="_blank"} | [&#x200B; Använda aggregat &#x200B;](https://experienceleague.adobe.com/docs/campaign/automation/workflows/use-cases/data-management/using-aggregates.html){target="_blank"} | [Välkomstprogram](https://experienceleague.adobe.com/docs/campaign/automation/workflows/use-cases/deliveries/send-a-birthday-email.html){target="_blank"}
 
 +++
 
@@ -1549,7 +1549,7 @@ Ja. Med Campaigns flexibla datamodell kan ni utöka inbyggda scheman med anpassa
 * Skapa branschspecifika datamodeller (detaljhandel, ekonomi, resor)
 
 
-[Utöka datamodell](../dev/extend-schema.md) | [ Schemastruktur ](../dev/schemas.md) | [Bästa praxis för datamodell](../dev/datamodel-best-practices.md)
+[Utöka datamodell](../dev/extend-schema.md) | [&#x200B; Schemastruktur &#x200B;](../dev/schemas.md) | [Bästa praxis för datamodell](../dev/datamodel-best-practices.md)
 
 +++
 
@@ -1571,7 +1571,7 @@ Campaign erbjuder flera rapportalternativ beroende på era behov och er tekniska
 
 **Viktigt!** Kampanjen är utformad för marknadsföringsaktivitetsrapportering, inte som ett specialiserat affärsintelligensverktyg. För komplexa analysbehov kan du överväga att integrera med Adobe Analytics eller särskilda BI-plattformar.
 
-[Kom igång med rapportering](../reporting/gs-reporting.md) | [Webbgränssnittsrapporter för kampanj ](https://experienceleague.adobe.com/en/docs/campaign-web/v8/reports/gs-reports){target="_blank"}
+[Kom igång med rapportering](../reporting/gs-reporting.md) | [Webbgränssnittsrapporter för kampanj &#x200B;](https://experienceleague.adobe.com/en/docs/campaign-web/v8/reports/gs-reports){target="_blank"}
 
 +++
 
@@ -1708,7 +1708,7 @@ Ja, Campaign har stöd för flera exportformat för både klientkonsolen och Web
 * Använd CSV för integrering med datalager eller externa analysverktyg
 * Testa exporterade rapporter för att säkerställa formatering och datakvalitet
 
-[Anpassade rapporter](../reporting/custom-reports.md) | [Webbgränssnittsrapporter för kampanj ](https://experienceleague.adobe.com/en/docs/campaign-web/v8/reports/gs-reports){target="_blank"}
+[Anpassade rapporter](../reporting/custom-reports.md) | [Webbgränssnittsrapporter för kampanj &#x200B;](https://experienceleague.adobe.com/en/docs/campaign-web/v8/reports/gs-reports){target="_blank"}
 
 +++
 
@@ -2058,7 +2058,7 @@ Campaign tar automatiskt bort alla data som är länkade till ett ämne: mottaga
 
 Du kan anpassa borttagningsomfånget genom att ändra länkintegriteten i scheman, men rådfråga jurister först. Borttagningen är permanent och kan inte ångras.
 
-[Sekretesshantering](../start/privacy.md) | [Schemalänkar ](../dev/schemas.md)
+[Sekretesshantering](../start/privacy.md) | [Schemalänkar &#x200B;](../dev/schemas.md)
 
 +++
 
@@ -2080,7 +2080,7 @@ Ni måste ta bort data från alla källsystem, inte bara Campaign. Data kommer o
 
 Som Data Controller är du ansvarig för fullständig borttagning av data i hela teknikens ekosystem.
 
-[Sekretesshantering](../start/privacy.md) | [Importera arbetsflöden ](../config/workflows.md)
+[Sekretesshantering](../start/privacy.md) | [Importera arbetsflöden &#x200B;](../config/workflows.md)
 
 +++
 
