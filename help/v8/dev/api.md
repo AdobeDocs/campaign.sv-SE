@@ -23,9 +23,9 @@ ht-degree: 8%
 >
 >Beroende på din distributionsmodell kan du även använda REST API:er med Campaign v8. [Läs mer](../dev/api/get-started-apis.md).
 
-Du kan använda [Campaign JavaScript API:er](https://experienceleague.adobe.com/developer/campaign-api/api/p-1.html){target="_blank"} för att skriva i Campaign-molndatabasen eller läsa från databasen:
+Du kan använda [Campaign JavaScript API:er](https://experienceleague.adobe.com/developer/campaign-api/api/p-1.html?lang=sv-SE){target="_blank"} för att skriva i Campaign-molndatabasen eller läsa från databasen:
 
-* Affärsspecifika API:er som du kan använda för varje objekt: leveranser, arbetsflöden, prenumerationer och så vidare. Läs mer i [Campaign Classic v7-dokumentationen](https://experienceleague.adobe.com/docs/campaign-classic/using/configuring-campaign-classic/api/business-oriented-apis.html){target="_blank"}.
+* Affärsspecifika API:er som du kan använda för varje objekt: leveranser, arbetsflöden, prenumerationer och så vidare. Läs mer i [Campaign Classic v7-dokumentationen](https://experienceleague.adobe.com/docs/campaign-classic/using/configuring-campaign-classic/api/business-oriented-apis.html?lang=sv-SE){target="_blank"}.
 * Generiska API:er för dataåtkomst för att fråga datamodelldata med hjälp av `queryDef` och objektet `NLWS`. Läs mer i [Fråga databasen med queryDef](query-api.md).
 
 Observera att Campaign fungerar med två databaser i sin [Enterprise-distribution](../architecture/enterprise-deployment.md): en lokal databas för meddelanden i realtid i användargränssnittet och enhetsfrågor och skriva via API:er, samt en molndatabas för kampanjkörning, rapportering, datainhämtning, batchfrågor och arbetsflödeskörning.
@@ -55,4 +55,4 @@ Om du vill använda API:er och interagera med [!DNL Adobe Campaign] måste du oc
 
 <!-- * [Query the database with queryDef](query-api.md)-->
 * [God praxis för datamodell](datamodel-best-practices.md)
-* [Kampanj-JSAPI-dokumentation](https://experienceleague.adobe.com/developer/campaign-api/api/p-1.html){target="_blank"}
+* [Kampanj-JSAPI-dokumentation](https://experienceleague.adobe.com/developer/campaign-api/api/p-1.html?lang=sv-SE){target="_blank"}
