@@ -7,20 +7,52 @@ level: Intermediate, Experienced
 hide: true
 hidefromtoc: true
 exl-id: 0fd39d6c-9e87-4b0f-a960-2aef76c9c8eb
-source-git-commit: 26fededf0ee83299477e45e891df30a46c6d40fe
+source-git-commit: ceab90331fab0725962a2a98f338ac3dc31a2588
 workflow-type: tm+mt
-source-wordcount: '810'
+source-wordcount: '1281'
 ht-degree: 0%
 
 ---
 
 # Fråga databasen med queryDef {#query-database-api}
 
-[!DNL Adobe Campaign] innehåller kraftfulla JavaScript-metoder för interaktion med databasen med `queryDef` och `NLWS`. Med dessa metoder kan du läsa in, skapa, uppdatera och fråga data med JSON, XML eller SQL.
+[!DNL Adobe Campaign] innehåller kraftfulla JavaScript-metoder för interaktion med databasen med `queryDef` och objektet `NLWS`. Med dessa SOAP-baserade metoder kan du läsa in, skapa, uppdatera och fråga data med JSON, XML eller SQL.
 
 >[!NOTE]
 >
 >Den här dokumentationen innehåller dataorienterade API:er för programmässig sökning i databasen. Information om REST API:er finns i [Kom igång med REST API:er](api/get-started-apis.md). Om du vill skapa visuella frågor läser du [Arbeta med frågeredigeraren](../start/query-editor.md).
+
+## Vad är NLWS? {#what-is-nlws}
+
+`NLWS` (Neolane Web Services) är det globala JavaScript-objekt som används för att komma åt [!DNL Adobe Campaign]s SOAP-baserade API-metoder. Scheman är egenskaper för objektet `NLWS`, vilket gör att du kan interagera med Campaign-entiteter programmatiskt.
+
+Enligt [Campaign-JSAPI-dokumentationen](https://experienceleague.adobe.com/developer/campaign-api/api/p-14.html){target="_blank"} är &quot;scheman&quot; globala objekt av typen &quot;NLWS&quot;.&quot; Syntaxen för att komma åt schemametoder följer det här mönstret:
+
+```javascript
+NLWS.<namespace><SchemaName>.<method>()
+```
+
+**Exempel:**
+
+* `NLWS.nmsRecipient` - Åtkomstmetoder för mottagarschemat (`nms:recipient`)
+* `NLWS.nmsDelivery` - Åtkomstmetoder för leveransschemat (`nms:delivery`)
+* `NLWS.xtkQueryDef` - Använd queryDef-metoder för att fråga databasen
+
+Vanliga API-metoder är:
+
+* `load(id)` - Läs in en entitet med dess ID. [Läs mer](https://experienceleague.adobe.com/developer/campaign-api/api/f-load.html){target="_blank"}
+* `create(data)` - Skapa en ny entitet
+* `save()` - Spara ändringar i en entitet
+
+**Exempel från officiell dokumentation:**
+
+```javascript
+var delivery = NLWS.nmsDelivery.load("12435")
+```
+
+>[!NOTE]
+>
+>**Alternativ syntax:** För bakåtkompatibilitet kan du även se syntaxen med gemener i vissa dokument (t.ex. `nms.recipient.create()`, `xtk.queryDef.create()`). Båda syntaxerna fungerar, men `NLWS` är den standard som beskrivs i den officiella Campaign-JSAPI-referensen.
 
 ## Förhandskrav {#prerequisites}
 
@@ -30,11 +62,30 @@ Innan du använder metoderna queryDef och NLWS bör du känna till följande:
 * [!DNL Adobe Campaign] datamodell och scheman
 * XPath-uttryck för navigering i schemaelement
 
-Läs mer om Campaign-datamodellen i [den här sidan](datamodel.md).
+**Om Campaign-datamodellen:**
 
-## Statiska metoder för entitetsschema {#entity-schema-methods}
+Adobe Campaign levereras med en fördefinierad datamodell som består av tabeller som är sammanlänkade i en molndatabas. Den grundläggande strukturen omfattar följande:
 
-Varje schema i [!DNL Adobe Campaign] (t.ex. `nms:recipient`, `nms:delivery`) levereras med statiska metoder som är tillgängliga via objektet `NLWS`. Dessa metoder är ett praktiskt sätt att interagera med databasenheter.
+* **Mottagartabell** (`nmsRecipient`) - Huvudregister som lagrar marknadsföringsprofiler
+* **Leveranstabell** (`nmsDelivery`) - lagrar leveransåtgärder och mallar med parametrar för att utföra leveranser
+* **Loggar tabeller** - Lagra körningsloggar:
+   * `nmsBroadLogRcp` - Leveransloggar för alla meddelanden som skickas till mottagare
+   * `nmsTrackingLogRcp` - Spårningsloggar för mottagarnas reaktioner (öppningar, klickningar)
+* **Tekniska tabeller** - Lagra systemdata som operatorer (`xtkGroup`), sessioner (`xtkSessionInfo`), arbetsflöden (`xtkWorkflow`)
+
+Om du vill komma åt schemabeskrivningar i Campaign-gränssnittet går du till **Administration > Konfiguration > Datamodeller**, markerar en resurs och klickar på fliken **Dokumentation** .
+
+## Metoder för entitetsschema {#entity-schema-methods}
+
+Varje schema i [!DNL Adobe Campaign] (t.ex. `nms:recipient`, `nms:delivery`) levereras med metoder som är tillgängliga via objektet `NLWS`. Dessa metoder är ett praktiskt sätt att interagera med databasenheter.
+
+### Statiska metoder {#static-methods}
+
+Statiska SOAP-metoder nås genom att en metod anropas i det objekt som representerar schemat. `NLWS.xtkWorkflow.PostEvent()` anropar till exempel en statisk metod.
+
+### Icke-statiska metoder {#non-static-methods}
+
+Om du vill använda icke-statiska SOAP-metoder måste du först hämta en entitet med metoderna `load` eller `create` i motsvarande scheman. Läs mer i [Kampanjens JSAPI-dokumentation](https://experienceleague.adobe.com/developer/campaign-api/api/p-14.html){target="_blank"}.
 
 ### Läsa in, spara och skapa enheter {#load-save-create}
 
@@ -87,7 +138,7 @@ Schemat `xtk:queryDef` innehåller metoder för att skapa och köra databasfråg
 * `getIfExists` - Hämta en enskild post, returnera null om den inte hittas
 * `count` - Antal poster som matchar villkor
 
-Läs mer om queryDef-metoder i [Kampanjens JSAPI-dokumentation](https://experienceleague.adobe.com/developer/campaign-api/api/s-xtk-queryDef.html?lang=sv-SE){target="_blank"}.
+Läs mer om queryDef-metoder i [Kampanjens JSAPI-dokumentation](https://experienceleague.adobe.com/developer/campaign-api/api/s-xtk-queryDef.html){target="_blank"}.
 
 ## Fråga med JSON {#query-json}
 
@@ -209,9 +260,12 @@ for each(var delivery in deliveries.delivery) {
 
 >[!NOTE]
 >
->Parametern `lineCount` begränsar antalet resultat. Utan den är standardgränsen 10 000 poster.
+>**Resultatgränser:** Kampanjen begränsar automatiskt frågeresultaten för att förhindra minnesproblem:
+>* Standardgränsen varierar beroende på sammanhang (vanligen 200-10 000 poster)
+>* Använd `lineCount` för att explicit ange maximalt antal resultat
+>* För stora datauppsättningar (>1 000 poster) använder du arbetsflöden i stället för queryDef. Arbetsflödena är utformade för att bearbeta miljontals rader effektivt.
 
-Läs mer om [ExecuteQuery](https://experienceleague.adobe.com/developer/campaign-api/api/sm-queryDef-ExecuteQuery.html?lang=sv-SE){target="_blank"}.
+Läs mer om [ExecuteQuery](https://experienceleague.adobe.com/developer/campaign-api/api/sm-queryDef-ExecuteQuery.html){target="_blank"} och [fråga om bästa praxis](https://opensource.adobe.com/acc-js-sdk/xtkQueryDef.html){target="_blank"}.
 
 ## Fråga om övergångsdata för arbetsflöde {#workflow-transition-data}
 
@@ -256,7 +310,7 @@ for each(var record in records.getElements()) {
 
 >[!CAUTION]
 >
->Använd alltid parametriserade frågor med `$(sz)` för strängar och `$(l)` för heltal för att förhindra SQL-injektionsproblem. Läs mer i [Kampanjens JSAPI-dokumentation](https://experienceleague.adobe.com/developer/campaign-api/api/f-sqlExec.html?lang=sv-SE){target="_blank"}.
+>Använd alltid parametriserade frågor med `$(sz)` för strängar och `$(l)` för heltal för att förhindra SQL-injektionsproblem. Läs mer i [Kampanjens JSAPI-dokumentation](https://experienceleague.adobe.com/developer/campaign-api/api/f-sqlExec.html){target="_blank"}.
 
 ## Räkna poster {#count-records}
 
@@ -349,6 +403,78 @@ for each(var result in d.get()) {
 }
 ```
 
+## Frågeuppräkningar med analys {#analyze-enumerations}
+
+Alternativet `analyze` returnerar användarvänliga namn för uppräkningsvärden. I stället för bara numeriska värden returnerar Campaign också strängvärdet och etiketten med suffixen&quot;Namn&quot; och&quot;Etikett&quot;.
+
+**Frågeleveransmappning med uppräkningsanalys:**
+
+```javascript
+var query = NLWS.xtkQueryDef.create({
+  queryDef: {
+    schema: "nms:deliveryMapping",
+    operation: "get",
+    select: {
+      node: [
+        {expr: "@id"},
+        {expr: "@name"},
+        {expr: "[storage/@exclusionType]", analyze: true}  // Analyze enumeration
+      ]
+    },
+    where: {
+      condition: [{expr: "@name='mapRecipient'"}]
+    }
+  }
+});
+
+var mapping = query.ExecuteQuery();
+
+// Result includes:
+// - exclusionType: 2 (numeric value)
+// - exclusionTypeName: "excludeRecipient" (string value)
+// - exclusionTypeLabel: "Exclude recipient" (display label)
+logInfo("Type: " + mapping.$exclusionType);
+logInfo("Name: " + mapping.$exclusionTypeName);
+logInfo("Label: " + mapping.$exclusionTypeLabel);
+```
+
+Läs mer om alternativet [Analysera](https://opensource.adobe.com/acc-js-sdk/xtkQueryDef.html#the-analyze-option){target="_blank"}.
+
+## Sidnumrering {#pagination}
+
+Använd `lineCount` och `startLine` för att paginera genom stora resultatuppsättningar.
+
+**Hämta poster på sidor:**
+
+```javascript
+// Get records 3 and 4 (skip first 2)
+var query = NLWS.xtkQueryDef.create({
+  queryDef: {
+    schema: "nms:recipient",
+    operation: "select",
+    lineCount: 2,     // Number of records per page
+    startLine: 2,     // Starting position (0-indexed)
+    select: {
+      node: [
+        {expr: "@id"},
+        {expr: "@email"}
+      ]
+    },
+    orderBy: {
+      node: [{expr: "@id"}]  // Critical: Always use orderBy for pagination
+    }
+  }
+});
+
+var recipients = query.ExecuteQuery();
+```
+
+>[!CAUTION]
+>
+>**Pagination kräver orderBy:** Utan en `orderBy` -sats är det inte säkert att frågeresultaten är i konsekvent ordning. Efterföljande anrop kan returnera olika sidor eller dubblettposter. Inkludera alltid `orderBy` när sidnumrering används.
+
+Läs mer om [sidnumrering](https://opensource.adobe.com/acc-js-sdk/xtkQueryDef.html#pagination){target="_blank"}.
+
 ## Dynamisk frågekonstruktion {#dynamic-queries}
 
 Bygg frågor dynamiskt genom att lägga till villkor programmatiskt.
@@ -435,7 +561,7 @@ logInfo("Generated SQL: " + sql);
 // Output: "SELECT iRecipientId, sEmail FROM NmsRecipient WHERE sEmail IS NOT NULL"
 ```
 
-Läs mer om [BuildQuery](https://experienceleague.adobe.com/developer/campaign-api/api/sm-queryDef-BuildQuery.html?lang=sv-SE){target="_blank"}.
+Läs mer om [BuildQuery](https://experienceleague.adobe.com/developer/campaign-api/api/sm-queryDef-BuildQuery.html){target="_blank"}.
 
 ### BuildQueryEx - Hämta SQL med formatsträng {#build-query-ex}
 
@@ -460,7 +586,7 @@ logInfo("Format: " + format);
 var results = sqlSelect(format, sql);
 ```
 
-Läs mer om [BuildQueryEx](https://experienceleague.adobe.com/developer/campaign-api/api/sm-queryDef-BuildQueryEx.html?lang=sv-SE){target="_blank"}.
+Läs mer om [BuildQueryEx](https://experienceleague.adobe.com/developer/campaign-api/api/sm-queryDef-BuildQueryEx.html){target="_blank"}.
 
 ### Markera alla - Lägg till alla fält som ska markeras {#select-all}
 
@@ -483,7 +609,7 @@ var result = query.ExecuteQuery();
 // Result contains all recipient fields
 ```
 
-Läs mer om [SelectAll](https://experienceleague.adobe.com/developer/campaign-api/api/sm-queryDef-SelectAll.html?lang=sv-SE){target="_blank"}.
+Läs mer om [SelectAll](https://experienceleague.adobe.com/developer/campaign-api/api/sm-queryDef-SelectAll.html){target="_blank"}.
 
 ### Uppdatera - massuppdateringsposter {#mass-update}
 
@@ -513,7 +639,7 @@ logInfo("Mass update completed");
 >
 >Massuppdateringar påverkar alla poster som matchar where-satsen. Testa alltid var du befinner dig med en urvalsfråga först för att kontrollera vilka poster som påverkas.
 
-Läs mer om [Uppdatering](https://experienceleague.adobe.com/developer/campaign-api/api/sm-queryDef-Update.html?lang=sv-SE){target="_blank"}.
+Läs mer om [Uppdatering](https://experienceleague.adobe.com/developer/campaign-api/api/sm-queryDef-Update.html){target="_blank"}.
 
 ### GetInstanceFromModel - frågemallsinstanser {#get-instance-from-model}
 
@@ -536,7 +662,7 @@ var query = NLWS.xtkQueryDef.create(
 var instance = query.GetInstanceFromModel("nms:delivery");
 ```
 
-Läs mer om [GetInstanceFromModel](https://experienceleague.adobe.com/developer/campaign-api/api/sm-queryDef-GetInstanceFromModel.html?lang=sv-SE){target="_blank"}.
+Läs mer om [GetInstanceFromModel](https://experienceleague.adobe.com/developer/campaign-api/api/sm-queryDef-GetInstanceFromModel.html){target="_blank"}.
 
 ## Gruppåtgärder {#batch-operations}
 
@@ -629,12 +755,14 @@ for each(var record in xml.collection) {
 
 När du arbetar med queryDef- och NLWS-metoder:
 
+* **Använd arbetsflöden för stora datamängder** - QueryDef är inte utformad för databearbetning i stora volymer. För datauppsättningar med fler än 1 000 poster använder du arbetsflöden som kan hantera miljontals rader effektivt. Läs mer i [dokumentationen för Campaign SDK](https://opensource.adobe.com/acc-js-sdk/xtkQueryDef.html){target="_blank"}
 * **Använd parametriserade frågor** - Använd alltid bundna parametrar (`$(sz)`, `$(l)`) med `sqlExec` för att förhindra SQL-injektion
-* **Set lineCount** - Åsidosätt standardpostgränsen på 10 000 vid behov med `lineCount: 999999999`
+* **Ange explicita gränser** - Använd `lineCount` för att kontrollera resultatstorleken. Standardgränserna för kampanjen varierar beroende på sammanhang (200-10 000 poster)
+* **Använd orderBy med pagination** - Inkludera alltid en `orderBy` -sats när du använder `startLine` och `lineCount` för att säkerställa konsekvent sidnumrering
 * **Använd getIfExists** - Använd `operation: "getIfExists"` när det inte finns några poster för att undvika undantag
+* **Använd Analysera för uppräkningar** - Lägg till `analyze: true` för att välja noder för att få användarvänliga uppräkningsnamn och etiketter
 * **Optimera frågor** - Lägg till lämpliga `where` villkor för att begränsa resultatuppsättningar
-* **Gruppbearbetning** - Bearbeta stora datamängder i grupper för att undvika timeout
-* **Transaktionssäkerhet** - Överväg att använda transaktioner för flera relaterade uppdateringar
+* **Gruppbearbetning** - Bearbeta flera poster i grupper för att undvika minnesproblem och timeout
 * **FFDA-medvetenhet** - I [Enterprise-distributioner (FFDA)](../architecture/enterprise-deployment.md) ska du vara medveten om att [!DNL Campaign] fungerar med två databaser
 
 
@@ -772,9 +900,9 @@ Fullständig struktur för objektet `queryDef`:
 ## Relaterade ämnen {#related-topics}
 
 * [Kom igång med Campaign-API:er](api.md)
-* [queryDef API Reference](https://experienceleague.adobe.com/developer/campaign-api/api/s-xtk-queryDef.html?lang=sv-SE){target="_blank"}
-* [Kampanj-JSAPI-dokumentation](https://experienceleague.adobe.com/developer/campaign-api/api/p-1.html?lang=sv-SE){target="_blank"}
-* [Datamodell](datamodel.md)
+* [Campaign JavaScript SDK - Query API](https://opensource.adobe.com/acc-js-sdk/xtkQueryDef.html){target="_blank"}
+* [queryDef API Reference](https://experienceleague.adobe.com/developer/campaign-api/api/s-xtk-queryDef.html){target="_blank"}
+* [Kampanj-JSAPI-dokumentation](https://experienceleague.adobe.com/developer/campaign-api/api/p-1.html){target="_blank"}
 * [Arbeta med scheman](schemas.md)
 * [Arbeta med frågeredigeraren](../start/query-editor.md)
 

@@ -8,7 +8,7 @@ keywords: Vanliga frågor, Campaign v8, frågor, svar, hjälp, support, felsökn
 version: Campaign v8
 hide: true
 hidefromtoc: true
-source-git-commit: 26fededf0ee83299477e45e891df30a46c6d40fe
+source-git-commit: ceab90331fab0725962a2a98f338ac3dc31a2588
 workflow-type: tm+mt
 source-wordcount: '13482'
 ht-degree: 4%
@@ -36,7 +36,7 @@ Du måste hämta och installera Campaign-klientkonsolen för att kunna ansluta t
 
 Från och med Campaign v8.6 har du tillgång till användargränssnittet **Campaign-webben** som är tillgängligt via den centrala Adobe Experience Cloud-miljön. Experience Cloud är Adobe integrerade program, produkter och tjänster för digital marknadsföring.
 
-Lär dig hur du ansluter till Adobe Experience Cloud och kommer åt Adobe Campaign webbgränssnitt [på den här sidan](campaign-ui.md#ac-web-ui). Läs mer i [Adobe Campaign webbgränssnittsdokumentation](https://experienceleague.adobe.com/sv/docs/campaign-web/v8/campaign-web-home){target="_blank"}.
+Lär dig hur du ansluter till Adobe Experience Cloud och kommer åt Adobe Campaign webbgränssnitt [på den här sidan](campaign-ui.md#ac-web-ui). Läs mer i [Adobe Campaign webbgränssnittsdokumentation](https://experienceleague.adobe.com/en/docs/campaign-web/v8/campaign-web-home){target="_blank"}.
 
 
 **Relaterade ämnen:**
@@ -51,11 +51,11 @@ E-postleveransen, som är en viktig del i varje avsändares marknadsföringsprog
 
 Läs den här guiden om du vill veta mer om [Bästa metoder för slutprodukter](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/introduction.html?lang=sv){target="_blank"}
 
-Lär dig hur du implementerar levererbarhet i Campaign [i den här guiden](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/additional-resources/general-resources.html?lang=sv-SE){target="_blank"}
+Lär dig hur du implementerar levererbarhet i Campaign [i den här guiden](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/additional-resources/general-resources.html){target="_blank"}
 
 **Relaterade ämnen:**
 
-[Kom igång med leverans](../send/about-deliverability.md) | [&#x200B; Kontrollera meddelandeinnehåll &#x200B;](../send/control-message-content.md) | [Skärmleverans](../send/monitoring-deliverability.md) | [SpamAssassin](../send/spamassassin.md)
+[Kom igång med leverans](../send/about-deliverability.md) | [ Kontrollera meddelandeinnehåll ](../send/control-message-content.md) | [Skärmleverans](../send/monitoring-deliverability.md) | [SpamAssassin](../send/spamassassin.md)
 
 +++
 
@@ -85,7 +85,7 @@ Följ de här stegen för att säkerställa att leveransen lyckas:
 * Rensa mottagardatabasen regelbundet
 * Övervaka avsändarens rykte
 
-Läs mer om [övervakning av leveranser](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/monitoring-deliveries/about-delivery-monitoring.html?lang=sv-SE){target="_blank"} och [bästa sättet att leverera](delivery-best-practices.md).
+Läs mer om [övervakning av leveranser](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/monitoring-deliveries/about-delivery-monitoring.html){target="_blank"} och [bästa sättet att leverera](delivery-best-practices.md).
 
 +++
 
@@ -93,15 +93,15 @@ Läs mer om [övervakning av leveranser](https://experienceleague.adobe.com/docs
 
 Ja. Campaign innehåller flera verktyg för att övervaka arbetsflödeskörningen:
 
-* **[Kontrollpanel för arbetsflöde](https://experienceleague.adobe.com/sv/docs/campaign/automation/workflows/monitoring-workflows/monitor-workflow-execution){target="_blank"}** - Visa status, förlopp och fel i realtid för varje arbetsflödesaktivitet
-* **[Arbetsflödesloggar](https://experienceleague.adobe.com/sv/docs/campaign/automation/workflows/monitoring-workflows/monitor-workflow-execution#displaying-logs){target="_blank"}** - Använd detaljerade körningsloggar för att felsöka problem
-* **[Heatmap](https://experienceleague.adobe.com/sv/docs/campaign/automation/workflows/monitoring-workflows/heatmap){target="_blank"}** - Visualisera arbetsflödesaktivitet och identifiera flaskhalsar för prestanda
+* **[Kontrollpanel för arbetsflöde](https://experienceleague.adobe.com/en/docs/campaign/automation/workflows/monitoring-workflows/monitor-workflow-execution){target="_blank"}** - Visa status, förlopp och fel i realtid för varje arbetsflödesaktivitet
+* **[Arbetsflödesloggar](https://experienceleague.adobe.com/en/docs/campaign/automation/workflows/monitoring-workflows/monitor-workflow-execution#displaying-logs){target="_blank"}** - Använd detaljerade körningsloggar för att felsöka problem
+* **[Heatmap](https://experienceleague.adobe.com/en/docs/campaign/automation/workflows/monitoring-workflows/heatmap){target="_blank"}** - Visualisera arbetsflödesaktivitet och identifiera flaskhalsar för prestanda
 * **[Granskningsspår](../reporting/audit-trail.md)** - Spåra alla ändringar som gjorts i arbetsflöden
-* **[Varningar](https://experienceleague.adobe.com/sv/docs/campaign/automation/workflows/use-cases/monitoring/send-alerts-to-operators){target="_blank"}** - Konfigurera meddelanden om arbetsflödesfel eller fördröjningar
+* **[Varningar](https://experienceleague.adobe.com/en/docs/campaign/automation/workflows/use-cases/monitoring/send-alerts-to-operators){target="_blank"}** - Konfigurera meddelanden om arbetsflödesfel eller fördröjningar
 
 Om du vill övervaka ett arbetsflöde öppnar du det och klickar på fliken **Loggar**. Misslyckade aktiviteter markeras med rött och du kan visa felinformation genom att klicka på dem.
 
-Läs mer om [övervakning av arbetsflödeskörning](https://experienceleague.adobe.com/sv/docs/campaign/automation/workflows/monitoring-workflows/monitor-workflow-execution){target="_blank"} och [arbetsflödets bästa praxis](https://experienceleague.adobe.com/docs/campaign/automation/workflows/introduction/workflow-best-practices.html?lang=sv-SE){target="_blank"}.
+Läs mer om [övervakning av arbetsflödeskörning](https://experienceleague.adobe.com/en/docs/campaign/automation/workflows/monitoring-workflows/monitor-workflow-execution){target="_blank"} och [arbetsflödets bästa praxis](https://experienceleague.adobe.com/docs/campaign/automation/workflows/introduction/workflow-best-practices.html){target="_blank"}.
 
 +++
 
@@ -111,7 +111,7 @@ Du kan hämta installationsprogrammet och klientkonsolen från Adobe Download Ce
 
 Som administratör kan du ladda ned Adobe Campaign via Adobe [Software Distribution](https://experience.adobe.com/#/downloads/content/software-distribution/en/campaign.html){target="_blank"}.
 
-Läs mer om Distribution Center [på den här sidan](https://experienceleague.adobe.com/docs/experience-cloud/software-distribution/home.html?lang=sv-SE){target="_blank"}.
+Läs mer om Distribution Center [på den här sidan](https://experienceleague.adobe.com/docs/experience-cloud/software-distribution/home.html){target="_blank"}.
 
 +++
 
@@ -137,484 +137,78 @@ Gå med i Campaign Community: sök efter svar i befintliga frågor eller fråga 
 
 +++
 
++++ Vilka system och komponenter är Campaign v8 kompatibelt med?
 
-## Viktiga begrepp {#key-concepts}
-
-Lär dig mer om grundläggande Campaign-koncept som autentisering, användargränssnitt, arbetsflöden och grundläggande funktioner för att komma igång effektivt.
-
-+++ Kan jag ansluta till Campaign v8 med en Adobe ID?
-
-Ja! Tack vare integreringen med IMS (Adobe Identity Management System) ansluter användarna till Adobe Campaign-konsolen med sin Adobe ID. Integreringen ger följande fördelar:
-
-* Samma ID kan användas för alla Experience Cloud-lösningar.
-* Anslutningen sparas när Adobe Campaign används med olika integreringar.
-* Säkrare policy för lösenordshantering.
-* Använda Federated ID-konton (extern ID-leverantör).
-
-[Läs mer](connect.md) om hur du får tillgång till Campaign v8 med en Adobe ID.
+Du kan hämta en lista över alla system och komponenter som stöds för den senaste versionen av Campaign i [kompatibilitetsmatrisen för Adobe Campaign](compatibility-matrix.md).
 
 +++
 
-+++ Hur ställer jag in användarbehörigheter?
++++ Kan jag använda Campaign v8 med andra Adobe-lösningar?
 
-Som administratör för Campaign kan du konfigurera behörigheter för användare i organisationen.
+Ja. Campaign v8 kan integreras smidigt med Adobe Experience Cloud lösningar för att skapa ett kraftfullt, enhetligt ekosystem för marknadsföring. Som hanterad Cloud Service är v8 utformat för inbyggd integrering med Adobe företagsapplikationer.
 
-Detta är en uppsättning rättigheter och begränsningar som tillåter eller nekar:
+**Tillgängliga nyckelintegreringar:**
 
-* Tillgång till vissa funktioner
-* Åtkomst till vissa data
-* Skapa, ändra och/eller ta bort data
+* **Adobe Experience Platform** - Utnyttja enhetliga kundprofiler och realtidsdata
+* **Adobe Analytics** - Mät kampanjresultat och kundbeteende i alla kanaler
+* **Adobe Target** - Anpassa innehåll baserat på kundsegment och beteende
+* **Adobe Experience Manager** - Centralisera skapandet av innehåll och resurshantering
+* **Adobe Audience Manager** - Skapa och aktivera målgruppssegment för olika plattformar
 
-[Läs mer](../start/gs-permissions.md) om användarbehörigheter i Campaign v8.
+**Fördelar:** Enhetliga kunddata, enhetliga användarupplevelser, smidiga arbetsflöden och förbättrade personaliseringsfunktioner.
+
+**Installationsprogram:** Integrering med Adobe-lösningar kräver Adobe Identity Management System-autentisering (IMS), automatiskt konfigurerad för Campaign v8 Managed Cloud Services.
 
 **Relaterade ämnen:**
 
-[Kom igång med behörigheter](gs-permissions.md) | [Hantera användarbehörigheter](manage-permissions.md) | [Lägg till behörigheter i mappar](folder-permissions.md)
+[Adobe Campaign-integreringar](../connect/integration.md) | [Anslut med Adobe ID](connect.md)
 
 +++
 
-+++ Vad är Campaign-användargränssnittskoncept jag bör känna till?
++++ Vilka är begränsningarna med Campaign v8?
 
-Mer information om grunderna i användargränssnittet i Adobe Campaign finns i [det här avsnittet](campaign-ui.md).
+I Campaign v8 introduceras arkitektoniska förändringar (särskilt i FFDA-distributioner) som ger betydande prestandaförbättringar men också vissa skillnader jämfört med Campaign Classic v7. Genom att förstå dessa kan du planera migreringar och ställa upp lämpliga förväntningar.
 
-Från och med Campaign v8.6 har du även tillgång till det nya **Campaign-webbgränssnittet** som är tillgängligt via den centrala Adobe Experience Cloud-miljön.
+**Viktiga v8-överväganden:**
 
-[Läs mer i dokumentationen för Adobe Campaign webbgränssnitt](https://experienceleague.adobe.com/sv/docs/campaign-web/v8/campaign-web-home){target="_blank"}.
+* **FFDA-arkitektur** - Företagsdistributioner använder molndatabas (Snowflake) med olika dataåtkomstmönster
+* **Enhetsuppdateringar** - Datauppdateringar ska göras i arbetsflöden, inte via API:er eller direkt databasåtkomst
+* **Realtidsskrivningar** - Optimerad för gruppåtgärder i stället för högfrekventa individuella uppdateringar
+* **Datamodell** - Vissa schemaanpassningar kräver olika metoder
+* **Extern databasåtkomst** - FDA-konfigurationen (Federated Data Access) skiljer sig från v7
 
-+++
+**Funktioner som inte är tillgängliga i FFDA-distributioner:**
 
-+++ Hur väljer jag målgrupp för mina meddelanden?
-
-Med Adobe Campaign kan du använda olika strategier för att skapa publiker och välja målmottagare.
-
-[Läs mer](../audiences/gs-audiences.md) om hur du definierar målgrupper i Campaign v8.
-
-+++
-
-+++ Vad är ett arbetsflöde?
-
-Med Adobe Campaign följer arbetsflöden för att orkestrera alla processer och uppgifter i olika moduler på programservern. I den omfattande grafiska miljön kan du utforma processer såsom segmentering, kampanjkörning, filhantering och mänskligt deltagande osv. Arbetsflödesmotorn kör och spårar dessa processer.
-
-Du kan till exempel använda ett arbetsflöde för att ladda ned en fil från en server, expandera den och sedan importera poster som finns i databasen i Adobe Campaign.
-
-Ett arbetsflöde kan även innefatta en eller flera operatörer som ska meddelas eller som kan göra val och godkänna processer. På så sätt kan du skapa en leveransinstruktion, tilldela en eller flera operatörer uppgiften att arbeta med innehåll, ange mål och godkänna korrekturer innan leveransen påbörjas.
-
-[Läs mer](https://experienceleague.adobe.com/docs/campaign/automation/workflows/introduction/about-workflows.html?lang=sv-SE){target="_blank"} om arbetsflöden. Du kan även läsa om [bästa praxis för arbetsflödet](https://experienceleague.adobe.com/docs/campaign/automation/workflows/introduction/build-a-workflow.html?lang=sv-SE){target="_blank"}.
-
-**Relaterade ämnen:**
-
-[Kom igång med arbetsflöden](../config/workflows.md) | [Skapa ditt första arbetsflöde](https://experienceleague.adobe.com/docs/campaign/automation/workflows/introduction/build-a-workflow.html?lang=sv-SE){target="_blank"} | [Användningsexempel för arbetsflöden](https://experienceleague.adobe.com/docs/campaign/automation/workflows/use-cases/about-workflow-use-cases.html){target="_blank"} | [Övervaka arbetsflödeskörning](https://experienceleague.adobe.com/docs/campaign/automation/workflows/monitoring-workflows/monitor-workflow-execution.html?lang=sv-SE){target="_blank"}
-
-+++
-
-+++ Hur skapar och skickar jag ett första e-postmeddelande?
-
-När du skapar ditt första e-postmeddelande i Campaign v8 måste du utföra flera viktiga steg:
-
-1. **Skapa leveransen** - Börja med att skapa en ny e-postleverans från en mall eller från början
-1. **Definiera målgruppen** - Välj målmottagare med frågor, listor eller arbetsflöden
-1. **Designa innehållet** - Använd e-postdesignern för att skapa ditt meddelande med personalisering
-1. **Testa med korrektur** - Skicka testmeddelanden via e-post för att validera innehåll och personalisering
-1. **Analysera och skicka** - Kör leveransanalys för att kontrollera om det finns fel och skicka sedan din e-post
-
-Campaign v8 erbjuder två gränssnitt för att skapa e-post:
-
-* **Klientkonsol** - Skrivbordsprogram med alla funktioner och avancerade funktioner
-* **Webbgränssnitt för kampanj** - Modernt, intuitivt webbgränssnitt för snabbare e-postgenerering
-
-[Läs mer om e-postdesign och validering](../send/email.md) i Campaign v8.
-
-**Relaterade ämnen:**
-
-[Skapa din första leverans](create-message.md) | [Arbeta med leveransmallar](../send/create-templates.md) | [Bästa praxis för leverans](delivery-best-practices.md) | [Definiera e-postinnehållet](../send/defining-the-email-content.md) | [Förhandsgranska och korrektur](../send/preview-and-proof.md) | [Konfigurera och skicka](../send/configure-and-send.md) | [Anpassa innehåll &#x200B;](../send/personalize.md)
-
-+++
-
-+++ Hur skickar jag SMS-meddelanden?
-
-För att skicka SMS-meddelanden med Campaign v8 krävs en inledande konfiguration och sedan följer en enkel leveransprocess:
-
-**Inledande konfiguration (engångskonfiguration):**
-
-1. **Konfigurera SMS-kanal** - Konfigurera SMS-leveransinställningar och externt konto
-1. **Konfigurera SMPP-anslutning** - Anslut till SMS-tjänstleverantören via SMPP-protokollet
-1. **Testa anslutningen** - Verifiera anslutningen med SMS-providern
-1. **Konfigurera routning** - Definiera hur SMS-meddelanden dirigeras via din leverantör
-
-**Skapar och skickar SMS:**
-
-1. **Skapa SMS-leverans** - Starta en ny SMS-leverans från en mall
-1. **Definiera mottagare** - Välj din mobila målgrupp med telefonnummerfält
-1. **Skriv SMS-innehåll** - Skapa ditt meddelande (160 tecken standard eller längre med sammanfogning)
-1. **Lägg till personalisering** - Inkludera dynamiska fält som är specifika för varje mottagare
-1. **Skicka korrektur** - Testa SMS-leveransen för att validera innehåll och leverans
-1. **Analysera och skicka** - Kör analyser och skicka till din publik
-
-**Viktiga SMS-funktioner:**
-
-* **Flera SMPP-anslutningar** - Stöd för olika SMS-providers och protokoll
-* **Leveransrapporter** - spåra skickade, levererade och misslyckade meddelanden
-* **Teckenkodning** - Stöd för GSM7, Unicode och specialtecken
-* **Långt SMS-stöd** - Automatisk meddelandesammanfogning för längre texter
-* **Tvåvägs-SMS** - Hantera inkommande SMS-svar med arbetsflöden
-
-[Läs mer om SMS-konfiguration och skicka](../send/sms/sms.md) i Campaign v8.
-
-**Relaterade ämnen:**
-
-[Kom igång med SMS](../send/sms/sms.md) | [SMS-leveransinställningar](../send/sms/sms-delivery-settings.md) | [Inställningar för SMPP-externt konto](../send/sms/smpp-external-account.md) | [Skapa en SMS-leverans](../send/sms/create-sms.md) | [SMS-innehåll](../send/sms/sms-content.md) | [Skicka SMS-korrektur](../send/sms/sms-proofs.md) | [Bildskärms-SMS](../send/sms/sms-monitor.md)
-
-+++
-
-+++ Hur skickar jag push-meddelanden?
-
-Om du skickar push-meddelanden med Campaign v8 måste du konfigurera mobilappsintegreringen och skapa engagerande meddelanden:
-
-**Inledande konfiguration (engångskonfiguration):**
-
-1. **Konfigurera push-kanal** - Ange inställningar för push-meddelandekanal i Campaign
-1. **Integrera Campaign SDK** - Lägg till Adobe Campaign SDK i din mobilapp (eller använd Datainsamling)
-1. **Konfigurera mobilapp** - Registrera dina iOS- och Android-appar i Campaign
-1. **Konfigurera certifikat** - Konfigurera APN-certifikat (iOS) och FCM-nyckel (Android)
-1. **Testa registrering** - Verifiera att enheter kan registrera och ta emot tokens
-
-**Skapar och skickar push-meddelanden:**
-
-1. **Skapa push-leverans** - Starta ett nytt push-meddelande från en mall
-1. **Välj plattform** - Välj iOS, Android eller båda plattformarna
-1. **Definiera målgrupp** - Målappsprenumeranter med mobilappsprenumerationer
-1. **Designmeddelande** - Skapa rubrik, meddelande och multimediematerial
-1. **Konfigurera beteende** - Ange klickningsåtgärder, djuplänkar och anpassade data
-1. **Skicka testmeddelanden** - Validera på riktiga enheter innan du skickar
-1. **Analysera och skicka** - Granska målinriktning och skicka till din mobila målgrupp
-
-**Funktioner för push-meddelanden:**
-
-* **Omfattande push-meddelanden** - inkludera bilder, videoklipp och interaktiva knappar (iOS och Android)
-* **Personalization** - dynamiskt innehåll baserat på användarprofil och beteende
-* **Djuplänkning** - Direktanvändare till specifika appskärmar eller -innehåll
-* **Schemaläggning** - Skicka vid optimala tidpunkter baserat på användarens tidszon
-* **A/B-testning** - Testa olika meddelanden och optimera engagemanget
-* **Spärra/knip** - Övervakaren öppnar, klickar och konverterar
-
-**Plattformsspecifika funktioner:**
-
-* **iOS** - Tysta meddelanden, meddelandekategorier, ljudanpassning
-* **Android** - Omfattande push-mallar, meddelandekanaler, anpassade layouter
-
-[Läs mer om konfigurationen för push-meddelanden](../send/push-settings.md) i Campaign v8.
-
-**Relaterade ämnen:**
-
-[Skapa och skicka push-meddelanden](../send/push.md) | [Konfigurera kanal för push-meddelanden &#x200B;](../send/push-settings.md) | [Designa en omfattande Android-push](../send/rich-push-android.md) | [Designa en omfattande iOS-överföring](../send/rich-push-ios.md) | [Konfigurera med datainsamling](../send/push-data-collection.md) | [Spåra och övervaka](tracking.md)
-
-+++
-
-+++ Hur skapar man landningssidor?
-
-Du kan använda Adobe Campaign Digital Content Editor för att utforma landningssidor och definiera mappning med databasfält.
-
-[Läs mer](../dev/landing-pages.md) i dokumentationen för Campaign v8.
-
-Du kan också använda gränssnittet för Campaign-webben för att skapa och publicera landningssidor - [Läs mer](https://experienceleague.adobe.com/sv/docs/campaign-web/v8/landing-pages/get-started-lp){target="_blank"}.
-
-+++
-
-+++ Hur kan jag spåra leveranser?
-
-Du kan spåra leveranser som skickats med Campaign v8 via dedikerade [leveransrapporter](../reporting/delivery-reports.md) och sedan övervaka leveranserna.
-
-Läs mer om spårningshantering i Campaign [på den här sidan](../start/tracking.md).
-
-**Relaterade ämnen:**
-
-[Spåra och övervaka meddelanden](tracking.md) | [Leveransrapporter](../reporting/delivery-reports.md) | [Förstå leveransfel](../send/delivery-failures.md) | [Konfigurera spårade länkar](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/tracking-messages/how-to-configure-tracked-links.html){target="_blank"}
-
-+++
-
-+++ Hur översätter jag ett felmeddelande?
-
-Visas ett felmeddelande på ett främmande språk? Alla felmeddelanden och deras översättning listas på [den här sidan](https://experienceleague.adobe.com/developer/campaign-errors/error_codes.html?lang=sv){target="_blank"}.
-
-+++
-
-+++ Kan jag skapa ett webbformulär och samla in svar i Campaign?
-
-Ja. Skapa webbformulär med **Campaign Web Applications &amp; Forms** (klientkonsol) för fullständig kontroll över formulärlogik och validering, eller använd **Campaign Landing Pages** (webbgränssnitt) med ett modernt dra och släpp-gränssnitt för prenumerationer och leadgenerering. Båda samlar in data direkt i Campaign och integreras med arbetsflöden för automatiserade åtgärder.
-
-**Relaterade ämnen:**
-
-[Läs mer om webbprogram och formulär](../dev/webapps.md) | [Startsidor för Campaign Web UI &#x200B;](https://experienceleague.adobe.com/sv/docs/campaign-web/v8/landing-pages/get-started-lp){target="_blank"}
-
-+++
-
-
-
-## Kampanj v8 jämfört med tidigare versioner {#v7-differences}
-
-Förstå de viktigaste skillnaderna mellan Campaign v8 och tidigare versioner (Classic v7 och Standard), inklusive arkitektur, driftsättning, migreringsvägar och funktionsändringar. Oavsett om du kommer från Campaign Classic v7 eller Campaign Standard kan du ta reda på vad som är nytt och hur du smidigt kan gå över.
-
-### Driftsättning och arkitektur
-
-+++ Kan Campaign v8 installeras på en lokal eller blandad miljö?
-
-Nej. Campaign v8 är exklusivt tillgänglig som en **hanterad Cloud Service**, som Adobe är värd för.
-
-**Viktiga fördelar med hanterade molntjänster:**
-
-* Överlägsna prestanda och skalbarhet
-* Automatiska uppgraderingar - alltid med den senaste versionen
-* Förbättrat skydd med kontinuerlig övervakning
-* Ingen infrastrukturhantering eller IT-personal
-* Inbyggd hög tillgänglighet och katastrofåterställning
-
-Läs mer om [Campaign v8-arkitekturen](../architecture/architecture.md) och [skillnaderna mellan Campaign v8 och Classic v7](../start/v7-to-v8.md).
-
-+++
-
-+++ Vilka är de viktigaste skillnaderna mellan Campaign v8 och tidigare versioner?
-
-Campaign v8 är en helt omdesignad version av Adobe Campaign som tagits fram för modern molnbaserad arkitektur och som ger avsevärda förbättringar jämfört med Campaign Classic v7 och Campaign Standard:
-
-**Distributionsmodell:**
-
-* **v8:** Endast hanterade molntjänster - fullständigt värdhanterade och hanterade av Adobe
-* **v7/Standard:** Tillgängliga alternativ för lokal installation, hybridinstallation eller värdtjänster
-* **Fördelar:** Ingen infrastrukturhantering, automatisk skalning, säkerhet på enterprise-nivå, proaktiv övervakning
-
-**Arkitektur och prestanda:**
-
-* **v8:** Förbättrad FDA-arkitektur (Fullständig FDA) med PostgreSQL-databas
-* **v8:** Batchbearbetning med upp till **20 miljoner åtgärder per timme**
-* **v8:** Genomströmning av transaktionsmeddelanden på **1 miljoner per timme**
-* **v8:** Utforska data i realtid och skapa snabbt målgrupper (minuter kontra timmar)
-* **Fördelar:** Bättre prestanda för storskaliga och komplexa kampanjer
-
-**Användargränssnitt:**
-
-* **v8:** Nytt **Kampanjwebbgränssnitt** tillsammans med klientkonsolen - intuitivt, tillgängligt, idealiskt för marknadsförare
-* **v8:** Modern, responsiv design med dra och släpp-funktioner
-* **v8:** Förenklade arbetsflöden för att skapa och hantera kampanjer
-* **v8:** Delar många likheter med Campaign Standard-gränssnittet
-* **Fördelar:** Snabbare introduktion, enklare kampanjkörning, bättre tillgänglighet, minimal inlärningskurva
-
-**Nya nyckelfunktioner:**
-
-* **Omfattande push-meddelanden** med bilder, videoklipp, interaktiva knappar, karuseller och timers
-* **AI-assistenten** för innehållsgenerering (e-post, SMS, push) med poängsättning för varumärkesjustering
-* **Uppgraderad SMS-infrastruktur (SMS v2.0)** med förbättrad tillförlitlighet och kompatibilitet
-* **Adobe Experience Manager as a Cloud Service-integrering** för smidig innehållshantering
-* **Förbättrad rapportering** inklusive dynamisk rapportering för Campaign Standard-användare
-
-**Uppgraderingar och underhåll:**
-
-* **v8:** Automatiska uppgraderingar hanteras av Adobe - alltid i den senaste stabila versionen med kontinuerlig leveransmodell
-* **v7/Standard:** Manuell planering och exekvering av uppgradering krävs
-* **Fördel:** Minskad underhållsbörda, omedelbar tillgång till nya funktioner, inga driftavbrott
-
-**API:er och integrering:**
-
-* **v8:** Modern REST API:er med förbättrad prestanda och tillförlitlighet
-* **v8:** Smidig integrering med Adobe Experience Cloud och Adobe Experience Platform
-* **Fördelar:** Enklare integreringar, bättre interoperabilitet och modern utvecklingspraxis
-
-[Läs mer om nyckelfunktionerna i Campaign v8](whats-new.md)
-
-**Relaterade ämnen:**
-
-[Från Campaign Classic v7 till v8](v7-to-v8.md) | [&#x200B; Övergångshandbok för v7 till v8 &#x200B;](https://experienceleague.adobe.com/sv/docs/campaign/campaign-v8/new/v7-to-v8){target="_blank"} | [Från Campaign Standard till v8](acs-to-v8.md) | [Campaign Standard-övergång](https://experienceleague.adobe.com/sv/docs/campaign-web/v8/start/acs-migration){target="_blank"} | [Campaign v8 - Adoptionshandbok](https://experienceleague.adobe.com/sv/docs/campaign-web/acs-to-ac/home){target="_blank"} | [Funktionsmatris för kampanj v8](https://experienceleague.adobe.com/sv/docs/campaign-web/v8/start/capability-matrix){target="_blank"}
-* [Kampanjarkitektur v8](../architecture/architecture.md)
-* [Skyddsritningar och begränsningar](ac-guardrails.md)
-
-+++
-
-+++ Ska jag migrera från Campaign Classic v7 eller Campaign Standard till v8?
-
-**Campaign v8 är idealiskt för organisationer som behöver:**
-
-* **Kampanjer med stora volymer** - Skicka miljontals meddelanden med bättre prestanda och tillförlitlighet (20 miljoner åtgärder/timme)
-* **Företagsskalbarhet** - Utöka databasen och era kampanjer utan prestandaproblem
-* **Modernt webbgränssnitt** - Intuitivt, responsivt webbgränssnitt för Campaign för snabbare kampanjskapande och förbättrad användarupplevelse
-* **Molnbaserade fördelar** - Utnyttja automatiska uppdateringar, hanterad infrastruktur, elastisk skalning och proaktiv övervakning
-* **Långsiktig support** - Campaign v8 är Adobe strategiska plattform med utökad support, medan tidigare versioner kommer att få support till slutet av de närmaste åren
-* **Minskade IT-kostnader** - eliminera infrastrukturhantering och uppgraderingsplanering
-* **Avancerade funktioner** - AI Assistant, avancerad push, förbättrad SMS, integrering med Adobe Experience Platform
-
-**För Campaign Standard-användare:**
-
-Campaign Standard-användare har nu rätt att gå över till Campaign v8 Managed Cloud Services. Några viktiga fördelar:
-
-* **Välbekant gränssnitt** - Webbgränssnittet för Campaign delar många likheter med Campaign Standard, vilket minimerar inlärningskurvan
-* **Funktionsparitet** - Campaign Standard viktigaste funktioner har lagts till i v8 (Dynamic Reporting, Centralized Branding, REST API:er, Landing Pages, Visual Fragments)
-* **Utökat stöd** - Inledande hjälp med smidig övergång och kontinuerlig plattformsövervakning
-* **Datamigrering** - Alla data från Campaign Standard importeras med minimal störning
-* **Enhetlig användarupplevelse** - Fortsätt arbeta med välbekanta arbetsflöden och gränssnitt
-
-**För Campaign Classic v7-användare:**
-
-Campaign v8 ger avsevärda förbättringar samtidigt som de centrala Campaign-funktionerna bibehålls:
-
-* **Dubbelt gränssnitt** - få tillgång till både den kraftfulla klientkonsolen och det moderna webbgränssnittet i Campaign
-* **Bättre prestanda** - avsevärt förbättrade frågeprestanda och databearbetning
-* **Cloud-förmåner** - Automatiska uppgraderingar, säkerhetsuppdateringar, säkerhetskopiering/återställning hanteras av Adobe
-* **Modern arkitektur** - Förbättrad FFDA-arkitektur med PostgreSQL för bättre skalbarhet
-
-**Överväg migrering:**
-
-* Din aktuella Campaign-instans hanterar stora datavolymer (miljoner profiler)
-* Du har prestandaproblem med komplexa arbetsflöden eller målinriktning
-* Du vill minska kostnaderna för hantering och underhåll av infrastruktur
-* Du behöver smidig integrering med Adobe Experience Cloud eller Adobe Experience Platform
-* Du planerar en större uppgradering eller infrastrukturuppdatering ändå
-* **Du vill ha framtidssäkrad teknik** - Tidigare versioner når slutet av supporten
-* **Teamet behöver ett modernt gränssnitt** - Webbgränssnittet för Campaign ger bättre tillgänglighet för marknadsförare
+* Undersökningar (finns i v8-standarddriftsättningar)
+* Marknadsföringsresurshantering (MRM)
+* Vissa specifika kopplingskonfigurationer
 
 **Migreringsöverväganden:**
 
-* Adobe tillhandahåller migreringsstöd, vägledning och verktyg
-* v8 hanteras endast av Cloud Service (ingen lokal eller blandad driftsättning)
-* Vissa tekniska implementeringar kan skilja sig åt - se [funktionsmatrisen](https://experienceleague.adobe.com/sv/docs/campaign-web/v8/start/capability-matrix){target="_blank"}
-* Datamigrering och testning kräver planering och resurser
-* **För Campaign Standard-användare** - Övergången är utformad för att vara smidig med minimala arbetsflödesavbrott
+* Anpassad kod som använder direkt databasskrivning måste omfaktoriseras
+* API-integreringar kan kräva anpassning för gruppbearbetning
+* Arbetsflödena ska följa bästa praxis för dataåtgärder från FFDA
+* Testning är nödvändigt för att validera anpassad utveckling
 
-**Nästa steg:**
-
-Kontakta Adobe för att
-
-* Utvärdera din migreringsberedskap och tidslinje
-* Förstå de specifika fördelarna för ditt användningssätt
-* Planera migreringsstrategin och resursallokeringen
-* Migreringsverktyg för åtkomst och support
+**Viktigt!** Dessa begränsningar utvecklas allt eftersom Adobe fortsätter att förbättra v8. Läs den senaste dokumentationen om aktuell status och färdplan.
 
 **Relaterade ämnen:**
 
-**För Campaign Classic v7-användare:** [Från Campaign Classic v7 till v8](v7-to-v8.md) | [Detaljerad guide från v7 till v8](https://experienceleague.adobe.com/sv/docs/campaign/campaign-v8/new/v7-to-v8){target="_blank"}
-
-**För Campaign Standard-användare:** [Campaign Standard övergång till v8](https://experienceleague.adobe.com/sv/docs/campaign-web/v8/start/acs-migration){target="_blank"} | [Campaign v8 - Adoptionshandbok &#x200B;](https://experienceleague.adobe.com/sv/docs/campaign-web/acs-to-ac/home){target="_blank"} | [Från Campaign Standard till v8 - översikt](https://experienceleague.adobe.com/sv/docs/campaign-web/acs-to-ac/overview){target="_blank"} | [Kom igång för marknadsförare](https://experienceleague.adobe.com/sv/docs/campaign-web/acs-to-ac/marketers){target="_blank"} | [Kom igång för administratör/utvecklare](https://experienceleague.adobe.com/sv/docs/campaign-web/acs-to-ac/admin-developers){target="_blank"}
-
-**Allmänna resurser:** [Funktionsmatris för kampanj v8](https://experienceleague.adobe.com/sv/docs/campaign-web/v8/start/capability-matrix){target="_blank"}
-* [Kompatibilitetsmatris](compatibility-matrix.md)
+[Campaign v7 till v8-migrering](../start/v7-to-v8.md#limitations) | [FFDA-arkitektur](../architecture/enterprise-deployment.md)
 
 +++
 
-+++ Hur migrerar jag min Campaign Classic v7 On-Premise- eller Hybrid-miljö till Adobe Managed Services?
++++ Kan jag som Campaign Classic v7-användare migrera till Campaign v8?
 
-Att migrera din Campaign Classic v7 On-Premise- eller Hybrid-miljö till Adobe Managed Services är ofta en strategisk steg innan ni går över till Campaign v8. Den här migreringen ger omedelbara fördelar samtidigt som den utgör grunden för framtida v8-implementering.
+Automatisk migrering från en befintlig Campaign Classic v7-miljö är inte tillgänglig än.
 
-**Varför migrera till Managed Services?**
+Campaign v8 är **endast** tillgänglig som hanterad Cloud Service och kan inte distribueras på en lokal eller hybridmiljö.
 
-* **Sökväg till Campaign v8** - Managed Services erbjuder en mjukare uppgraderingsväg till v8 med webbgränssnittet och GenAI-funktionerna
-* **Skalbarhet och tillförlitlighet** - Utnyttja Adobe molninfrastruktur för bättre prestanda och automatisk skalning
-* **Förbättrat skydd** - Dra nytta av kontinuerlig övervakning, automatiska säkerhetskorrigeringar och skydd i företagsklass
-* **Expertsupport** - Få tillgång till Adobe supportteam och infrastrukturresurser
-* **Minskade IT-kostnader** - Ingen infrastrukturhantering, automatisk säkerhetskopiering och katastrofåterställning ingår
-* **Adobe Experience Platform-integrering** - Integrera sömlöst med Adobe Experience Platform för omfattande marknadsföringslösningar
+Mer information om migreringsprocessen får du av Adobe.
 
-**Viktiga överväganden:**
-
-* **Ingen automatiserad migrering** - Det finns för närvarande inget automatiskt migreringsverktyg tillgängligt. Manuell planering och utförande krävs
-* **Adobe Professional Services support** - Vi rekommenderar att du engagerar Adobe Professional Services för vägledning och expertis
-* **Förberedelser krävs** - Ordna dina data, utvärdera krav, granska aktuella rutiner och kontrollera kompatibilitet
-* **Migreringskomplexitet** - Fundera på faktorer som miljökomplexitet, datavolym, anpassningar och objektberoenden
-
-**Viktiga utmaningar att planera för:**
-
-1. **Begränsningar för import av XML-/blobdata** - Kan endast importeras med paket eller dumpnings- och återställningsmetoder
-2. **Stora datatabeller** - mottagartabeller och leverans-/spårningsloggar kräver speciella optimeringsstrategier
-3. **Objekt-ID:n** - Varje importerat objekt får ett nytt ID som kräver omjustering av ID för kontinuitet
-4. **Bygg uppgraderingar** - Planera att uppgradera till den senaste tillgängliga versionen, v7, före migrering
-
-**Högnivåmigreringsfärdplan:**
-
-1. **Svår aktsamhet och definiering av omfattning** - Utför grundlig analys, definiera omfång och utvärdera provisioneringsbehov med Adobe Managed Services team
-2. **Granska och förfina scope** - Granska aktuella rutiner, utvärdera datamodell och dataflöden, identifiera felaktiga rutiner och minska onödiga migreringselement
-3. **Rensa och förbereda** - Åtgärda identifierade problem, ta bort oanvända data och utför bygguppgraderingar till den senaste versionen
-4. **Inledande migrering (scen)** - Tillhandahåll ny molninstans, säkerhetskopieringsstruktur, importpaket, konfigurera sekvenser/räknare, importera objekt, justera om ID:n, importera icke-XML-data och validera
-5. **Slutlig migrering (produktion)** - Uppdatera produktionen med en verifierad sceninstans, utför prestandatestning, direkt migrera till produktion och aktivera spårnings-/realtidsfunktioner
-
-**Bästa praxis:** Utför alltid inledande migrering på en sceninstans innan du fortsätter till produktion för att minimera riskerna och verifiera processen.
-
-**Komma igång:**
-
-Kontakta Adobe och kontakta Adobe Professional Services för att
-
-* Utvärdera er aktuella miljö och migreringsberedskap
-* Utveckla en detaljerad migreringsplan med tidslinjer och beroenden
-* få expertråd under hela migreringsprocessen
-* Utnyttja beprövade metoder och undvik vanliga fallgropar
-
-Läs mer om [migrering till Managed Services](https://experienceleaguecommunities.adobe.com/t5/adobe-campaign-classic-blogs/migrate-your-adobe-campaign-v7-onprem-hybrid-environment-to/ba-p/681605){target="_blank"} på Adobe Campaign Community.
-
-**Relaterade ämnen:**
-
-[Från Campaign Classic v7 till v8](v7-to-v8.md) | [&#x200B; Övergångshandbok för v7 till v8 &#x200B;](https://experienceleague.adobe.com/sv/docs/campaign/campaign-v8/new/v7-to-v8){target="_blank"} | [Kampanjarkitektur v8](../architecture/architecture.md) | [Adobe Professional Services](https://business.adobe.com/se/customers/consulting-services/main.html){target="_blank"}
+Läs mer i avsnittet [Kampanj v8 jämfört med tidigare versioner](#v7-differences).
 
 +++
-
-+++ Vilka är de viktigaste terminologi- och funktionsskillnaderna i Campaign v8?
-
-Campaign v8 har de flesta Campaign Classic v7- och Campaign Standard-funktioner med förbättringar, men vissa funktioner har förändrats på grund av den molnbaserade arkitekturen och vissa terminologer skiljer sig åt mellan versionerna.
-
-**Skillnader i terminologi (Campaign Standard till v8):**
-
-* **Anpassade resurser** är nu **Scheman**
-* **Meddelanden** kallas **Leveranser**
-* **Produktanvändare** är nu **Operatorer**
-* **Roller** har konfigurerats med **Namngivna rättigheter**
-* **Säkerhetsgrupper** är nu **Operatorgrupper**
-* **Organisationsenheter** hanteras via **Mappbehörigheter**
-
-**Uppdateringar av terminologi i webbgränssnittet för kampanj:**
-
-Följande termer har uppdaterats i gränssnittet för Campaign-webben (klientkonsolen använder traditionella termer):
-
-* **Mottagarna** är nu **Profiler**
-* **Utdirigeringsadresser** är nu **Testprofiler**
-* **Leveransanalys** är nu **Leveransförberedelse** (klicka på knappen **Förbered**)
-* **Förhandsgranska e-post** är tillgängligt via knappen **Simulera innehåll**
-* **Listor** är nu **Publiker**
-
-**Inte tillgängligt i v8:**
-
-* **Lokala och hybrida distributioner** - v8 är endast hanterade molntjänster
-* **Direkt databasåtkomst** - Använd tillhandahållna API:er och verktyg i stället
-* **Kundhanterad infrastruktur** - Adobe hanterar all infrastruktur
-* **Manuella bygguppgraderingar** - nu automatiskt (hanterad av Adobe)
-
-**Olika implementeringar i v8:**
-
-* **Tekniska arbetsflöden** - Vissa optimerade för molnarkitektur kan fungera annorlunda
-* **Databasstruktur** - Förbättrad FFDA-arkitektur kan kräva schemaanpassningar
-* **Anpassade integreringar** - kan behöva uppdateras för molnbaserad arkitektur
-* **Lågnivåanpassningar** - Vissa kräver olika metoder i hanterad miljö
-
-**Förbättrat eller ersatt i v8:**
-
-* **Bygg uppgraderingar** - Automatisk med kontinuerlig leveransmodell i stället för manuell
-* **Prestandajustering** - hanteras av Adobe infrastrukturoptimering
-* **Säkerhetsuppdateringar** - Används automatiskt av Adobe
-* **Säkerhetskopiering och återställning** - hanteras av Adobe som en del av tjänsten
-* **Användargränssnitt** - Nytt webbgränssnitt för Campaign tillsammans med klientkonsolen
-
-**Funktioner som lagts till för Campaign Standard-användare som övergår till v8:**
-
-* **Dynamisk rapportering** - Anpassningsbara realtidsrapporter med demografiska analyser
-* **Centraliserad profilering** - Definiera riktlinjer för varumärkets visuella och tekniska egenskaper
-* **REST API:er** - Skapa integreringar och bygg ditt ekosystem
-* **Förbättringar av landningssidor** - Förbättrad funktionsparitet med Campaign Standard
-* **Visuella fragment** - återanvändbara visuella komponenter för e-post och innehållsmallar
-
-**Viktigt!** De flesta marknadsförings- och funktionsfunktioner är tillgängliga och har förbättrats i v8. Funktioner på teknik- och infrastrukturnivå hanteras av Adobe i molnmiljön.
-
-**Relaterade ämnen:**
-
-[Funktionsmatris](https://experienceleague.adobe.com/sv/docs/campaign-web/v8/start/capability-matrix){target="_blank"} | [&#x200B; Kompatibilitetsmatris &#x200B;](compatibility-matrix.md) | [Skyddsritningar och begränsningar](ac-guardrails.md) | [Övergångshandbok för v7 till v8](v7-to-v8.md)
-
-[Campaign Standard till v8-övergång](https://experienceleague.adobe.com/sv/docs/campaign-web/v8/start/acs-migration){target="_blank"}
-
-+++
-
-### Versioner och uppgraderingar
 
 +++ Vad är min version av Campaign?
 
@@ -698,82 +292,481 @@ Adobe utför uppgraderingen av infrastrukturen. Du behöver inte utföra några 
 
 +++
 
-### Migreringsfrågor
 
-+++ Kan jag som Campaign Classic v7-användare migrera till Campaign v8?
+## Viktiga begrepp {#key-concepts}
 
-Automatisk migrering från en befintlig Campaign Classic v7-miljö är inte tillgänglig än.
+Lär dig mer om grundläggande Campaign-koncept som autentisering, användargränssnitt, arbetsflöden och grundläggande funktioner för att komma igång effektivt.
 
-Campaign v8 är **endast** tillgänglig som hanterad Cloud Service och kan inte distribueras på en lokal eller hybridmiljö.
++++ Kan jag ansluta till Campaign v8 med en Adobe ID?
 
-Mer information om migreringsprocessen får du av Adobe.
+Ja! Tack vare integreringen med IMS (Adobe Identity Management System) ansluter användarna till Adobe Campaign-konsolen med sin Adobe ID. Integreringen ger följande fördelar:
 
-+++
+* Samma ID kan användas för alla Experience Cloud-lösningar.
+* Anslutningen sparas när Adobe Campaign används med olika integreringar.
+* Säkrare policy för lösenordshantering.
+* Använda Federated ID-konton (extern ID-leverantör).
 
-### Kompatibilitet och integrering
-
-+++ Vilka system och komponenter är Campaign v8 kompatibelt med?
-
-Du kan hämta en lista över alla system och komponenter som stöds för den senaste versionen av Campaign i [kompatibilitetsmatrisen för Adobe Campaign](compatibility-matrix.md).
+[Läs mer](connect.md) om hur du får tillgång till Campaign v8 med en Adobe ID.
 
 +++
 
-+++ Kan jag använda Campaign v8 med andra Adobe-lösningar?
++++ Hur ställer jag in användarbehörigheter?
 
-Ja. Campaign v8 kan integreras smidigt med Adobe Experience Cloud lösningar för att skapa ett kraftfullt, enhetligt ekosystem för marknadsföring. Som hanterad Cloud Service är v8 utformat för inbyggd integrering med Adobe företagsapplikationer.
+Som administratör för Campaign kan du konfigurera behörigheter för användare i organisationen.
 
-**Tillgängliga nyckelintegreringar:**
+Detta är en uppsättning rättigheter och begränsningar som tillåter eller nekar:
 
-* **Adobe Experience Platform** - Utnyttja enhetliga kundprofiler och realtidsdata
-* **Adobe Analytics** - Mät kampanjresultat och kundbeteende i alla kanaler
-* **Adobe Target** - Anpassa innehåll baserat på kundsegment och beteende
-* **Adobe Experience Manager** - Centralisera skapandet av innehåll och resurshantering
-* **Adobe Audience Manager** - Skapa och aktivera målgruppssegment för olika plattformar
+* Tillgång till vissa funktioner
+* Åtkomst till vissa data
+* Skapa, ändra och/eller ta bort data
 
-**Fördelar:** Enhetliga kunddata, enhetliga användarupplevelser, smidiga arbetsflöden och förbättrade personaliseringsfunktioner.
-
-**Installationsprogram:** Integrering med Adobe-lösningar kräver Adobe Identity Management System-autentisering (IMS), automatiskt konfigurerad för Campaign v8 Managed Cloud Services.
+[Läs mer](../start/gs-permissions.md) om användarbehörigheter i Campaign v8.
 
 **Relaterade ämnen:**
 
-[Adobe Campaign-integreringar](../connect/integration.md) | [Anslut med Adobe ID](connect.md)
+[Kom igång med behörigheter](gs-permissions.md) | [Hantera användarbehörigheter](manage-permissions.md) | [Lägg till behörigheter i mappar](folder-permissions.md)
 
 +++
 
-### Begränsningar och överväganden
++++ Vad är Campaign-användargränssnittskoncept jag bör känna till?
 
-+++ Vilka är begränsningarna med Campaign v8?
+Mer information om grunderna i användargränssnittet i Adobe Campaign finns i [det här avsnittet](campaign-ui.md).
 
-I Campaign v8 introduceras arkitektoniska förändringar (särskilt i FFDA-distributioner) som ger betydande prestandaförbättringar men också vissa skillnader jämfört med Campaign Classic v7. Genom att förstå dessa kan du planera migreringar och ställa upp lämpliga förväntningar.
+Från och med Campaign v8.6 har du även tillgång till det nya **Campaign-webbgränssnittet** som är tillgängligt via den centrala Adobe Experience Cloud-miljön.
 
-**Viktiga v8-överväganden:**
+[Läs mer i dokumentationen för Adobe Campaign webbgränssnitt](https://experienceleague.adobe.com/en/docs/campaign-web/v8/campaign-web-home){target="_blank"}.
 
-* **FFDA-arkitektur** - Företagsdistributioner använder molndatabas (Snowflake) med olika dataåtkomstmönster
-* **Enhetsuppdateringar** - Datauppdateringar ska göras i arbetsflöden, inte via API:er eller direkt databasåtkomst
-* **Realtidsskrivningar** - Optimerad för gruppåtgärder i stället för högfrekventa individuella uppdateringar
-* **Datamodell** - Vissa schemaanpassningar kräver olika metoder
-* **Extern databasåtkomst** - FDA-konfigurationen (Federated Data Access) skiljer sig från v7
++++
 
-**Funktioner som inte är tillgängliga i FFDA-distributioner:**
++++ Hur väljer jag målgrupp för mina meddelanden?
 
-* Undersökningar (finns i v8-standarddriftsättningar)
-* Marknadsföringsresurshantering (MRM)
-* Vissa specifika kopplingskonfigurationer
+Med Adobe Campaign kan du använda olika strategier för att skapa publiker och välja målmottagare.
+
+[Läs mer](../audiences/gs-audiences.md) om hur du definierar målgrupper i Campaign v8.
+
++++
+
++++ Vad är ett arbetsflöde?
+
+Med Adobe Campaign följer arbetsflöden för att orkestrera alla processer och uppgifter i olika moduler på programservern. I den omfattande grafiska miljön kan du utforma processer såsom segmentering, kampanjkörning, filhantering och mänskligt deltagande osv. Arbetsflödesmotorn kör och spårar dessa processer.
+
+Du kan till exempel använda ett arbetsflöde för att ladda ned en fil från en server, expandera den och sedan importera poster som finns i databasen i Adobe Campaign.
+
+Ett arbetsflöde kan även innefatta en eller flera operatörer som ska meddelas eller som kan göra val och godkänna processer. På så sätt kan du skapa en leveransinstruktion, tilldela en eller flera operatörer uppgiften att arbeta med innehåll, ange mål och godkänna korrekturer innan leveransen påbörjas.
+
+[Läs mer](https://experienceleague.adobe.com/docs/campaign/automation/workflows/introduction/about-workflows.html){target="_blank"} om arbetsflöden. Du kan även läsa om [bästa praxis för arbetsflödet](https://experienceleague.adobe.com/docs/campaign/automation/workflows/introduction/build-a-workflow.html){target="_blank"}.
+
+**Relaterade ämnen:**
+
+[Kom igång med arbetsflöden](../config/workflows.md) | [Skapa ditt första arbetsflöde](https://experienceleague.adobe.com/docs/campaign/automation/workflows/introduction/build-a-workflow.html){target="_blank"} | [Användningsexempel för arbetsflöden](https://experienceleague.adobe.com/docs/campaign/automation/workflows/use-cases/about-workflow-use-cases.html){target="_blank"} | [Övervaka arbetsflödeskörning](https://experienceleague.adobe.com/docs/campaign/automation/workflows/monitoring-workflows/monitor-workflow-execution.html){target="_blank"}
+
++++
+
++++ Hur skapar och skickar jag ett första e-postmeddelande?
+
+När du skapar ditt första e-postmeddelande i Campaign v8 måste du utföra flera viktiga steg:
+
+1. **Skapa leveransen** - Börja med att skapa en ny e-postleverans från en mall eller från början
+1. **Definiera målgruppen** - Välj målmottagare med frågor, listor eller arbetsflöden
+1. **Designa innehållet** - Använd e-postdesignern för att skapa ditt meddelande med personalisering
+1. **Testa med korrektur** - Skicka testmeddelanden via e-post för att validera innehåll och personalisering
+1. **Analysera och skicka** - Kör leveransanalys för att kontrollera om det finns fel och skicka sedan din e-post
+
+Campaign v8 erbjuder två gränssnitt för att skapa e-post:
+
+* **Klientkonsol** - Skrivbordsprogram med alla funktioner och avancerade funktioner
+* **Webbgränssnitt för kampanj** - Modernt, intuitivt webbgränssnitt för snabbare e-postgenerering
+
+[Läs mer om e-postdesign och validering](../send/email.md) i Campaign v8.
+
+**Relaterade ämnen:**
+
+[Skapa din första leverans](create-message.md) | [Arbeta med leveransmallar](../send/create-templates.md) | [Bästa praxis för leverans](delivery-best-practices.md) | [Definiera e-postinnehållet](../send/defining-the-email-content.md) | [Förhandsgranska och korrektur](../send/preview-and-proof.md) | [Konfigurera och skicka](../send/configure-and-send.md) | [Anpassa innehåll ](../send/personalize.md)
+
++++
+
++++ Hur skickar jag SMS-meddelanden?
+
+För att skicka SMS-meddelanden med Campaign v8 krävs en inledande konfiguration och sedan följer en enkel leveransprocess:
+
+**Inledande konfiguration (engångskonfiguration):**
+
+1. **Konfigurera SMS-kanal** - Konfigurera SMS-leveransinställningar och externt konto
+1. **Konfigurera SMPP-anslutning** - Anslut till SMS-tjänstleverantören via SMPP-protokollet
+1. **Testa anslutningen** - Verifiera anslutningen med SMS-providern
+1. **Konfigurera routning** - Definiera hur SMS-meddelanden dirigeras via din leverantör
+
+**Skapar och skickar SMS:**
+
+1. **Skapa SMS-leverans** - Starta en ny SMS-leverans från en mall
+1. **Definiera mottagare** - Välj din mobila målgrupp med telefonnummerfält
+1. **Skriv SMS-innehåll** - Skapa ditt meddelande (160 tecken standard eller längre med sammanfogning)
+1. **Lägg till personalisering** - Inkludera dynamiska fält som är specifika för varje mottagare
+1. **Skicka korrektur** - Testa SMS-leveransen för att validera innehåll och leverans
+1. **Analysera och skicka** - Kör analyser och skicka till din publik
+
+**Viktiga SMS-funktioner:**
+
+* **Flera SMPP-anslutningar** - Stöd för olika SMS-providers och protokoll
+* **Leveransrapporter** - spåra skickade, levererade och misslyckade meddelanden
+* **Teckenkodning** - Stöd för GSM7, Unicode och specialtecken
+* **Långt SMS-stöd** - Automatisk meddelandesammanfogning för längre texter
+* **Tvåvägs-SMS** - Hantera inkommande SMS-svar med arbetsflöden
+
+[Läs mer om SMS-konfiguration och skicka](../send/sms/sms.md) i Campaign v8.
+
+**Relaterade ämnen:**
+
+[Kom igång med SMS](../send/sms/sms.md) | [SMS-leveransinställningar](../send/sms/sms-delivery-settings.md) | [Inställningar för SMPP-externt konto](../send/sms/smpp-external-account.md) | [Skapa en SMS-leverans](../send/sms/create-sms.md) | [SMS-innehåll](../send/sms/sms-content.md) | [Skicka SMS-korrektur](../send/sms/sms-proofs.md) | [Bildskärms-SMS](../send/sms/sms-monitor.md)
+
++++
+
++++ Hur skickar jag push-meddelanden?
+
+Om du skickar push-meddelanden med Campaign v8 måste du konfigurera mobilappsintegreringen och skapa engagerande meddelanden:
+
+**Inledande konfiguration (engångskonfiguration):**
+
+1. **Konfigurera push-kanal** - Ange inställningar för push-meddelandekanal i Campaign
+1. **Integrera Campaign SDK** - Lägg till Adobe Campaign SDK i din mobilapp (eller använd Datainsamling)
+1. **Konfigurera mobilapp** - Registrera dina iOS- och Android-appar i Campaign
+1. **Konfigurera certifikat** - Konfigurera APN-certifikat (iOS) och FCM-nyckel (Android)
+1. **Testa registrering** - Verifiera att enheter kan registrera och ta emot tokens
+
+**Skapar och skickar push-meddelanden:**
+
+1. **Skapa push-leverans** - Starta ett nytt push-meddelande från en mall
+1. **Välj plattform** - Välj iOS, Android eller båda plattformarna
+1. **Definiera målgrupp** - Målappsprenumeranter med mobilappsprenumerationer
+1. **Designmeddelande** - Skapa rubrik, meddelande och multimediematerial
+1. **Konfigurera beteende** - Ange klickningsåtgärder, djuplänkar och anpassade data
+1. **Skicka testmeddelanden** - Validera på riktiga enheter innan du skickar
+1. **Analysera och skicka** - Granska målinriktning och skicka till din mobila målgrupp
+
+**Funktioner för push-meddelanden:**
+
+* **Omfattande push-meddelanden** - inkludera bilder, videoklipp och interaktiva knappar (iOS och Android)
+* **Personalization** - dynamiskt innehåll baserat på användarprofil och beteende
+* **Djuplänkning** - Direktanvändare till specifika appskärmar eller -innehåll
+* **Schemaläggning** - Skicka vid optimala tidpunkter baserat på användarens tidszon
+* **A/B-testning** - Testa olika meddelanden och optimera engagemanget
+* **Spärra/knip** - Övervakaren öppnar, klickar och konverterar
+
+**Plattformsspecifika funktioner:**
+
+* **iOS** - Tysta meddelanden, meddelandekategorier, ljudanpassning
+* **Android** - Omfattande push-mallar, meddelandekanaler, anpassade layouter
+
+[Läs mer om konfigurationen för push-meddelanden](../send/push-settings.md) i Campaign v8.
+
+**Relaterade ämnen:**
+
+[Skapa och skicka push-meddelanden](../send/push.md) | [Konfigurera kanal för push-meddelanden ](../send/push-settings.md) | [Designa en omfattande Android-push](../send/rich-push-android.md) | [Designa en omfattande iOS-överföring](../send/rich-push-ios.md) | [Konfigurera med datainsamling](../send/push-data-collection.md) | [Spåra och övervaka](tracking.md)
+
++++
+
++++ Hur skapar man landningssidor?
+
+Du kan använda Adobe Campaign Digital Content Editor för att utforma landningssidor och definiera mappning med databasfält.
+
+[Läs mer](../dev/landing-pages.md) i dokumentationen för Campaign v8.
+
+Du kan också använda gränssnittet för Campaign-webben för att skapa och publicera landningssidor - [Läs mer](https://experienceleague.adobe.com/en/docs/campaign-web/v8/landing-pages/get-started-lp){target="_blank"}.
+
++++
+
++++ Hur kan jag spåra leveranser?
+
+Du kan spåra leveranser som skickats med Campaign v8 via dedikerade [leveransrapporter](../reporting/delivery-reports.md) och sedan övervaka leveranserna.
+
+Läs mer om spårningshantering i Campaign [på den här sidan](../start/tracking.md).
+
+**Relaterade ämnen:**
+
+[Spåra och övervaka meddelanden](tracking.md) | [Leveransrapporter](../reporting/delivery-reports.md) | [Förstå leveransfel](../send/delivery-failures.md) | [Konfigurera spårade länkar](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/tracking-messages/how-to-configure-tracked-links.html){target="_blank"}
+
++++
+
++++ Hur översätter jag ett felmeddelande?
+
+Visas ett felmeddelande på ett främmande språk? Alla felmeddelanden och deras översättning listas på [den här sidan](https://experienceleague.adobe.com/developer/campaign-errors/error_codes.html?lang=sv){target="_blank"}.
+
++++
+
++++ Kan jag skapa ett webbformulär och samla in svar i Campaign?
+
+Ja. Skapa webbformulär med **Campaign Web Applications &amp; Forms** (klientkonsol) för fullständig kontroll över formulärlogik och validering, eller använd **Campaign Landing Pages** (webbgränssnitt) med ett modernt dra och släpp-gränssnitt för prenumerationer och leadgenerering. Båda samlar in data direkt i Campaign och integreras med arbetsflöden för automatiserade åtgärder.
+
+**Relaterade ämnen:**
+
+[Läs mer om webbprogram och formulär](../dev/webapps.md) | [Startsidor för Campaign Web UI ](https://experienceleague.adobe.com/en/docs/campaign-web/v8/landing-pages/get-started-lp){target="_blank"}
+
++++
+
+
+
+## Kampanj v8 jämfört med tidigare versioner {#v7-differences}
+
+Förstå de viktigaste skillnaderna mellan Campaign v8 och tidigare versioner (Classic v7 och Standard), inklusive arkitektur, driftsättning, migreringsvägar och funktionsändringar. Oavsett om du kommer från Campaign Classic v7 eller Campaign Standard kan du ta reda på vad som är nytt och hur du smidigt kan gå över.
+
++++ Kan Campaign v8 installeras på en lokal eller blandad miljö?
+
+Nej. Campaign v8 är exklusivt tillgänglig som en **hanterad Cloud Service**, som Adobe är värd för.
+
+**Viktiga fördelar med hanterade molntjänster:**
+
+* Överlägsna prestanda och skalbarhet
+* Automatiska uppgraderingar - alltid med den senaste versionen
+* Förbättrat skydd med kontinuerlig övervakning
+* Ingen infrastrukturhantering eller IT-personal
+* Inbyggd hög tillgänglighet och katastrofåterställning
+
+Läs mer om [Campaign v8-arkitekturen](../architecture/architecture.md) och [skillnaderna mellan Campaign v8 och Classic v7](../start/v7-to-v8.md).
+
++++
+
++++ Vilka är de viktigaste skillnaderna mellan Campaign v8 och tidigare versioner?
+
+Campaign v8 är en helt omdesignad version av Adobe Campaign som tagits fram för modern molnbaserad arkitektur och som ger avsevärda förbättringar jämfört med Campaign Classic v7 och Campaign Standard:
+
+**Distributionsmodell:**
+
+* **v8:** Endast hanterade molntjänster - fullständigt värdhanterade och hanterade av Adobe
+* **v7/Standard:** Tillgängliga alternativ för lokal installation, hybridinstallation eller värdtjänster
+* **Fördelar:** Ingen infrastrukturhantering, automatisk skalning, säkerhet på enterprise-nivå, proaktiv övervakning
+
+**Arkitektur och prestanda:**
+
+* **v8:** Förbättrad FDA-arkitektur (Fullständig FDA) med PostgreSQL-databas
+* **v8:** Batchbearbetning med upp till **20 miljoner åtgärder per timme**
+* **v8:** Genomströmning av transaktionsmeddelanden på **1 miljoner per timme**
+* **v8:** Utforska data i realtid och skapa snabbt målgrupper (minuter kontra timmar)
+* **Fördelar:** Bättre prestanda för storskaliga och komplexa kampanjer
+
+**Användargränssnitt:**
+
+* **v8:** Nytt **Kampanjwebbgränssnitt** tillsammans med klientkonsolen - intuitivt, tillgängligt, idealiskt för marknadsförare
+* **v8:** Modern, responsiv design med dra och släpp-funktioner
+* **v8:** Förenklade arbetsflöden för att skapa och hantera kampanjer
+* **v8:** Delar många likheter med Campaign Standard-gränssnittet
+* **Fördelar:** Snabbare introduktion, enklare kampanjkörning, bättre tillgänglighet, minimal inlärningskurva
+
+**Nya nyckelfunktioner:**
+
+* **Omfattande push-meddelanden** med bilder, videoklipp, interaktiva knappar, karuseller och timers
+* **AI-assistenten** för innehållsgenerering (e-post, SMS, push) med poängsättning för varumärkesjustering
+* **Uppgraderad SMS-infrastruktur (SMS v2.0)** med förbättrad tillförlitlighet och kompatibilitet
+* **Adobe Experience Manager as a Cloud Service-integrering** för smidig innehållshantering
+* **Förbättrad rapportering** inklusive dynamisk rapportering för Campaign Standard-användare
+
+**Uppgraderingar och underhåll:**
+
+* **v8:** Automatiska uppgraderingar hanteras av Adobe - alltid i den senaste stabila versionen med kontinuerlig leveransmodell
+* **v7/Standard:** Manuell planering och exekvering av uppgradering krävs
+* **Fördel:** Minskad underhållsbörda, omedelbar tillgång till nya funktioner, inga driftavbrott
+
+**API:er och integrering:**
+
+* **v8:** Modern REST API:er med förbättrad prestanda och tillförlitlighet
+* **v8:** Smidig integrering med Adobe Experience Cloud och Adobe Experience Platform
+* **Fördelar:** Enklare integreringar, bättre interoperabilitet och modern utvecklingspraxis
+
+[Läs mer om nyckelfunktionerna i Campaign v8](whats-new.md)
+
+**Relaterade ämnen:**
+
+[Från Campaign Classic v7 till v8](v7-to-v8.md) | [ Övergångshandbok för v7 till v8 ](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/new/v7-to-v8){target="_blank"} | [Från Campaign Standard till v8](acs-to-v8.md) | [Campaign Standard-övergång](https://experienceleague.adobe.com/en/docs/campaign-web/v8/start/acs-migration){target="_blank"} | [Campaign v8 - Adoptionshandbok](https://experienceleague.adobe.com/sv/docs/campaign-web/acs-to-ac/home){target="_blank"} | [Funktionsmatris för kampanj v8](https://experienceleague.adobe.com/en/docs/campaign-web/v8/start/capability-matrix){target="_blank"}
+* [Kampanjarkitektur v8](../architecture/architecture.md)
+* [Skyddsritningar och begränsningar](ac-guardrails.md)
+
++++
+
++++ Ska jag migrera från Campaign Classic v7 eller Campaign Standard till v8?
+
+**Campaign v8 är idealiskt för organisationer som behöver:**
+
+* **Kampanjer med stora volymer** - Skicka miljontals meddelanden med bättre prestanda och tillförlitlighet (20 miljoner åtgärder/timme)
+* **Företagsskalbarhet** - Utöka databasen och era kampanjer utan prestandaproblem
+* **Modernt webbgränssnitt** - Intuitivt, responsivt webbgränssnitt för Campaign för snabbare kampanjskapande och förbättrad användarupplevelse
+* **Molnbaserade fördelar** - Utnyttja automatiska uppdateringar, hanterad infrastruktur, elastisk skalning och proaktiv övervakning
+* **Långsiktig support** - Campaign v8 är Adobe strategiska plattform med utökad support, medan tidigare versioner kommer att få support till slutet av de närmaste åren
+* **Minskade IT-kostnader** - eliminera infrastrukturhantering och uppgraderingsplanering
+* **Avancerade funktioner** - AI Assistant, avancerad push, förbättrad SMS, integrering med Adobe Experience Platform
+
+**För Campaign Standard-användare:**
+
+Campaign Standard-användare har nu rätt att gå över till Campaign v8 Managed Cloud Services. Några viktiga fördelar:
+
+* **Välbekant gränssnitt** - Webbgränssnittet för Campaign delar många likheter med Campaign Standard, vilket minimerar inlärningskurvan
+* **Funktionsparitet** - Campaign Standard viktigaste funktioner har lagts till i v8 (Dynamic Reporting, Centralized Branding, REST API:er, Landing Pages, Visual Fragments)
+* **Utökat stöd** - Inledande hjälp med smidig övergång och kontinuerlig plattformsövervakning
+* **Datamigrering** - Alla data från Campaign Standard importeras med minimal störning
+* **Enhetlig användarupplevelse** - Fortsätt arbeta med välbekanta arbetsflöden och gränssnitt
+
+**För Campaign Classic v7-användare:**
+
+Campaign v8 ger avsevärda förbättringar samtidigt som de centrala Campaign-funktionerna bibehålls:
+
+* **Dubbelt gränssnitt** - få tillgång till både den kraftfulla klientkonsolen och det moderna webbgränssnittet i Campaign
+* **Bättre prestanda** - avsevärt förbättrade frågeprestanda och databearbetning
+* **Cloud-förmåner** - Automatiska uppgraderingar, säkerhetsuppdateringar, säkerhetskopiering/återställning hanteras av Adobe
+* **Modern arkitektur** - Förbättrad FFDA-arkitektur med PostgreSQL för bättre skalbarhet
+
+**Överväg migrering:**
+
+* Din aktuella Campaign-instans hanterar stora datavolymer (miljoner profiler)
+* Du har prestandaproblem med komplexa arbetsflöden eller målinriktning
+* Du vill minska kostnaderna för hantering och underhåll av infrastruktur
+* Du behöver smidig integrering med Adobe Experience Cloud eller Adobe Experience Platform
+* Du planerar en större uppgradering eller infrastrukturuppdatering ändå
+* **Du vill ha framtidssäkrad teknik** - Tidigare versioner når slutet av supporten
+* **Teamet behöver ett modernt gränssnitt** - Webbgränssnittet för Campaign ger bättre tillgänglighet för marknadsförare
 
 **Migreringsöverväganden:**
 
-* Anpassad kod som använder direkt databasskrivning måste omfaktoriseras
-* API-integreringar kan kräva anpassning för gruppbearbetning
-* Arbetsflödena ska följa bästa praxis för dataåtgärder från FFDA
-* Testning är nödvändigt för att validera anpassad utveckling
+* Adobe tillhandahåller migreringsstöd, vägledning och verktyg
+* v8 hanteras endast av Cloud Service (ingen lokal eller blandad driftsättning)
+* Vissa tekniska implementeringar kan skilja sig åt - se [funktionsmatrisen](https://experienceleague.adobe.com/en/docs/campaign-web/v8/start/capability-matrix){target="_blank"}
+* Datamigrering och testning kräver planering och resurser
+* **För Campaign Standard-användare** - Övergången är utformad för att vara smidig med minimala arbetsflödesavbrott
 
-**Viktigt!** Dessa begränsningar utvecklas allt eftersom Adobe fortsätter att förbättra v8. Läs den senaste dokumentationen om aktuell status och färdplan.
+**Nästa steg:**
+
+Kontakta Adobe för att
+
+* Utvärdera din migreringsberedskap och tidslinje
+* Förstå de specifika fördelarna för ditt användningssätt
+* Planera migreringsstrategin och resursallokeringen
+* Migreringsverktyg för åtkomst och support
 
 **Relaterade ämnen:**
 
-[Campaign v7 till v8-migrering](../start/v7-to-v8.md#limitations) | [FFDA-arkitektur](../architecture/enterprise-deployment.md)
+**För Campaign Classic v7-användare:** [Från Campaign Classic v7 till v8](v7-to-v8.md) | [Detaljerad guide från v7 till v8](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/new/v7-to-v8){target="_blank"}
+
+**För Campaign Standard-användare:** [Campaign Standard övergång till v8](https://experienceleague.adobe.com/en/docs/campaign-web/v8/start/acs-migration){target="_blank"} | [Campaign v8 - Adoptionshandbok ](https://experienceleague.adobe.com/sv/docs/campaign-web/acs-to-ac/home){target="_blank"} | [Från Campaign Standard till v8 - översikt](https://experienceleague.adobe.com/en/docs/campaign-web/acs-to-ac/overview){target="_blank"} | [Kom igång för marknadsförare](https://experienceleague.adobe.com/en/docs/campaign-web/acs-to-ac/marketers){target="_blank"} | [Kom igång för administratör/utvecklare](https://experienceleague.adobe.com/en/docs/campaign-web/acs-to-ac/admin-developers){target="_blank"}
+
+**Allmänna resurser:** [Funktionsmatris för kampanj v8](https://experienceleague.adobe.com/en/docs/campaign-web/v8/start/capability-matrix){target="_blank"}
+* [Kompatibilitetsmatris](compatibility-matrix.md)
 
 +++
+
++++ Hur migrerar jag min Campaign Classic v7 On-Premise- eller Hybrid-miljö till Adobe Managed Services?
+
+Att migrera din Campaign Classic v7 On-Premise- eller Hybrid-miljö till Adobe Managed Services är ofta en strategisk steg innan ni går över till Campaign v8. Den här migreringen ger omedelbara fördelar samtidigt som den utgör grunden för framtida v8-implementering.
+
+**Varför migrera till Managed Services?**
+
+* **Sökväg till Campaign v8** - Managed Services erbjuder en mjukare uppgraderingsväg till v8 med webbgränssnittet och GenAI-funktionerna
+* **Skalbarhet och tillförlitlighet** - Utnyttja Adobe molninfrastruktur för bättre prestanda och automatisk skalning
+* **Förbättrat skydd** - Dra nytta av kontinuerlig övervakning, automatiska säkerhetskorrigeringar och skydd i företagsklass
+* **Expertsupport** - Få tillgång till Adobe supportteam och infrastrukturresurser
+* **Minskade IT-kostnader** - Ingen infrastrukturhantering, automatisk säkerhetskopiering och katastrofåterställning ingår
+* **Adobe Experience Platform-integrering** - Integrera sömlöst med Adobe Experience Platform för omfattande marknadsföringslösningar
+
+**Viktiga överväganden:**
+
+* **Ingen automatiserad migrering** - Det finns för närvarande inget automatiskt migreringsverktyg tillgängligt. Manuell planering och utförande krävs
+* **Adobe Professional Services support** - Vi rekommenderar att du engagerar Adobe Professional Services för vägledning och expertis
+* **Förberedelser krävs** - Ordna dina data, utvärdera krav, granska aktuella rutiner och kontrollera kompatibilitet
+* **Migreringskomplexitet** - Fundera på faktorer som miljökomplexitet, datavolym, anpassningar och objektberoenden
+
+**Viktiga utmaningar att planera för:**
+
+1. **Begränsningar för import av XML-/blobdata** - Kan endast importeras med paket eller dumpnings- och återställningsmetoder
+2. **Stora datatabeller** - mottagartabeller och leverans-/spårningsloggar kräver speciella optimeringsstrategier
+3. **Objekt-ID:n** - Varje importerat objekt får ett nytt ID som kräver omjustering av ID för kontinuitet
+4. **Bygg uppgraderingar** - Planera att uppgradera till den senaste tillgängliga versionen, v7, före migrering
+
+**Högnivåmigreringsfärdplan:**
+
+1. **Svår aktsamhet och definiering av omfattning** - Utför grundlig analys, definiera omfång och utvärdera provisioneringsbehov med Adobe Managed Services team
+2. **Granska och förfina scope** - Granska aktuella rutiner, utvärdera datamodell och dataflöden, identifiera felaktiga rutiner och minska onödiga migreringselement
+3. **Rensa och förbereda** - Åtgärda identifierade problem, ta bort oanvända data och utför bygguppgraderingar till den senaste versionen
+4. **Inledande migrering (scen)** - Tillhandahåll ny molninstans, säkerhetskopieringsstruktur, importpaket, konfigurera sekvenser/räknare, importera objekt, justera om ID:n, importera icke-XML-data och validera
+5. **Slutlig migrering (produktion)** - Uppdatera produktionen med en verifierad sceninstans, utför prestandatestning, direkt migrera till produktion och aktivera spårnings-/realtidsfunktioner
+
+**Bästa praxis:** Utför alltid inledande migrering på en sceninstans innan du fortsätter till produktion för att minimera riskerna och verifiera processen.
+
+**Komma igång:**
+
+Kontakta Adobe och kontakta Adobe Professional Services för att
+
+* Utvärdera er aktuella miljö och migreringsberedskap
+* Utveckla en detaljerad migreringsplan med tidslinjer och beroenden
+* få expertråd under hela migreringsprocessen
+* Utnyttja beprövade metoder och undvik vanliga fallgropar
+
+Läs mer om [migrering till Managed Services](https://experienceleaguecommunities.adobe.com/t5/adobe-campaign-classic-blogs/migrate-your-adobe-campaign-v7-onprem-hybrid-environment-to/ba-p/681605){target="_blank"} på Adobe Campaign Community.
+
+**Relaterade ämnen:**
+
+[Från Campaign Classic v7 till v8](v7-to-v8.md) | [ Övergångshandbok för v7 till v8 ](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/new/v7-to-v8){target="_blank"} | [Kampanjarkitektur v8](../architecture/architecture.md) | [Adobe Professional Services](https://business.adobe.com/customers/consulting-services/main.html){target="_blank"}
+
++++
+
++++ Vilka är de viktigaste terminologi- och funktionsskillnaderna i Campaign v8?
+
+Campaign v8 har de flesta Campaign Classic v7- och Campaign Standard-funktioner med förbättringar, men vissa funktioner har förändrats på grund av den molnbaserade arkitekturen och vissa terminologer skiljer sig åt mellan versionerna.
+
+**Skillnader i terminologi (Campaign Standard till v8):**
+
+* **Anpassade resurser** är nu **Scheman**
+* **Meddelanden** kallas **Leveranser**
+* **Produktanvändare** är nu **Operatorer**
+* **Roller** har konfigurerats med **Namngivna rättigheter**
+* **Säkerhetsgrupper** är nu **Operatorgrupper**
+* **Organisationsenheter** hanteras via **Mappbehörigheter**
+
+**Uppdateringar av terminologi i webbgränssnittet för kampanj:**
+
+Följande termer har uppdaterats i gränssnittet för Campaign-webben (klientkonsolen använder traditionella termer):
+
+* **Mottagarna** är nu **Profiler**
+* **Utdirigeringsadresser** är nu **Testprofiler**
+* **Leveransanalys** är nu **Leveransförberedelse** (klicka på knappen **Förbered**)
+* **Förhandsgranska e-post** är tillgängligt via knappen **Simulera innehåll**
+* **Listor** är nu **Publiker**
+
+**Inte tillgängligt i v8:**
+
+* **Lokala och hybrida distributioner** - v8 är endast hanterade molntjänster
+* **Direkt databasåtkomst** - Använd tillhandahållna API:er och verktyg i stället
+* **Kundhanterad infrastruktur** - Adobe hanterar all infrastruktur
+* **Manuella bygguppgraderingar** - nu automatiskt (hanterad av Adobe)
+
+**Olika implementeringar i v8:**
+
+* **Tekniska arbetsflöden** - Vissa optimerade för molnarkitektur kan fungera annorlunda
+* **Databasstruktur** - Förbättrad FFDA-arkitektur kan kräva schemaanpassningar
+* **Anpassade integreringar** - kan behöva uppdateras för molnbaserad arkitektur
+* **Lågnivåanpassningar** - Vissa kräver olika metoder i hanterad miljö
+
+**Förbättrat eller ersatt i v8:**
+
+* **Bygg uppgraderingar** - Automatisk med kontinuerlig leveransmodell i stället för manuell
+* **Prestandajustering** - hanteras av Adobe infrastrukturoptimering
+* **Säkerhetsuppdateringar** - Används automatiskt av Adobe
+* **Säkerhetskopiering och återställning** - hanteras av Adobe som en del av tjänsten
+* **Användargränssnitt** - Nytt webbgränssnitt för Campaign tillsammans med klientkonsolen
+
+**Funktioner som lagts till för Campaign Standard-användare som övergår till v8:**
+
+* **Dynamisk rapportering** - Anpassningsbara realtidsrapporter med demografiska analyser
+* **Centraliserad profilering** - Definiera riktlinjer för varumärkets visuella och tekniska egenskaper
+* **REST API:er** - Skapa integreringar och bygg ditt ekosystem
+* **Förbättringar av landningssidor** - Förbättrad funktionsparitet med Campaign Standard
+* **Visuella fragment** - återanvändbara visuella komponenter för e-post och innehållsmallar
+
+**Viktigt!** De flesta marknadsförings- och funktionsfunktioner är tillgängliga och har förbättrats i v8. Funktioner på teknik- och infrastrukturnivå hanteras av Adobe i molnmiljön.
+
+**Relaterade ämnen:**
+
+[Funktionsmatris](https://experienceleague.adobe.com/en/docs/campaign-web/v8/start/capability-matrix){target="_blank"} | [ Kompatibilitetsmatris ](compatibility-matrix.md) | [Skyddsritningar och begränsningar](ac-guardrails.md) | [Övergångshandbok för v7 till v8](v7-to-v8.md)
+
+[Campaign Standard till v8-övergång](https://experienceleague.adobe.com/en/docs/campaign-web/v8/start/acs-migration){target="_blank"}
+
++++
+
 
 ## Profiler och målgrupper {#audiences}
 
@@ -785,7 +778,7 @@ Skapa mottagare manuellt i klientkonsolen för enskilda profiler, importera frå
 
 **Relaterade ämnen:**
 
-[Skapa profiler manuellt](../audiences/create-profiles.md) | [Importera profiler från en fil &#x200B;](../audiences/import-profiles.md) | [Samla in profiler med webbformulär](../audiences/collect-profiles.md)
+[Skapa profiler manuellt](../audiences/create-profiles.md) | [Importera profiler från en fil ](../audiences/import-profiles.md) | [Samla in profiler med webbformulär](../audiences/collect-profiles.md)
 
 +++
 
@@ -797,7 +790,7 @@ För filimport förbereder du datafilen (CSV/TXT, UTF-8-kodning), använder impo
 
 **Relaterade ämnen:**
 
-[Guiden Importera data](../start/import.md) | [Återkommande importarbetsflöde](https://experienceleague.adobe.com/docs/campaign/automation/workflows/use-cases/data-management/recurring-import-workflow.html?lang=sv-SE){target="_blank"} | [Datainläsningsaktivitet](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/action-activities/data-loading-file.html?lang=sv-SE){target="_blank"}
+[Guiden Importera data](../start/import.md) | [Återkommande importarbetsflöde](https://experienceleague.adobe.com/docs/campaign/automation/workflows/use-cases/data-management/recurring-import-workflow.html){target="_blank"} | [Datainläsningsaktivitet](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/action-activities/data-loading-file.html){target="_blank"}
 
 +++
 
@@ -805,7 +798,7 @@ För filimport förbereder du datafilen (CSV/TXT, UTF-8-kodning), använder impo
 
 I Campaign finns flera metoder för målinriktning: skapa frågor med visuella kriterier, rikta befintliga listor eller segment, importera mottagare från externa filer (CSV, TXT) eller tillämpa fördefinierade filter. Du kan kombinera villkor med AND/OR-logik, exkludera specifika populationer, använda kontrollgrupper och dela upp för A/B-testning. Förhandsvisa alltid målpopulationsstorleken innan du skickar.
 
-[Definiera kampanjmål](https://experienceleague.adobe.com/docs/campaign/automation/campaign-orchestration/marketing-campaign-target.html?lang=sv-SE){target="_blank"} | [Frågeaktivitet](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/targeting-activities/query.html?lang=sv-SE){target="_blank"} | [Skapa målgrupper](../audiences/create-audiences.md)
+[Definiera kampanjmål](https://experienceleague.adobe.com/docs/campaign/automation/campaign-orchestration/marketing-campaign-target.html){target="_blank"} | [Frågeaktivitet](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/targeting-activities/query.html){target="_blank"} | [Skapa målgrupper](../audiences/create-audiences.md)
 
 +++
 
@@ -825,7 +818,7 @@ En lista är en statisk uppsättning mottagare som ni kan rikta in er på levera
 
 **Relaterade ämnen:**
 
-[Skapa målgrupper](../audiences/create-audiences.md) | [Listuppdateringsaktivitet](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/targeting-activities/list-update.html?lang=sv-SE){target="_blank"}
+[Skapa målgrupper](../audiences/create-audiences.md) | [Listuppdateringsaktivitet](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/targeting-activities/list-update.html){target="_blank"}
 
 +++
 
@@ -835,7 +828,7 @@ Använd aktiviteten **[!UICONTROL Deduplication]** i ett arbetsflöde för att t
 
 **Tips!** Ta alltid bort dubbletter innan du skickar för att försäkra dig om att alla får ditt meddelande endast en gång.
 
-Läs mer om aktiviteten [Deduplicering](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/targeting-activities/deduplication.html?lang=sv-SE){target="_blank"}
+Läs mer om aktiviteten [Deduplicering](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/targeting-activities/deduplication.html){target="_blank"}
 
 +++
 
@@ -851,7 +844,7 @@ Campaign spårar prenumerations-/prenumerationshistorik och hanterar automatiskt
 
 **Relaterade ämnen:**
 
-[Hantera prenumerationer](../start/subscriptions.md) | [Frågeaktivitet](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/targeting-activities/query.html?lang=sv-SE){target="_blank"}
+[Hantera prenumerationer](../start/subscriptions.md) | [Frågeaktivitet](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/targeting-activities/query.html){target="_blank"}
 
 +++
 
@@ -859,7 +852,7 @@ Campaign spårar prenumerations-/prenumerationshistorik och hanterar automatiskt
 
 Använd aktiviteten **[!UICONTROL Exclusion]** i ett arbetsflöde för att ta bort oönskade profiler från målet. Placera den efter era målgruppsaktiviteter och definiera vilken population som ska uteslutas.
 
-Läs mer om [Uteslutningsaktiviteten](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/targeting-activities/exclusion.html?lang=sv-SE){target="_blank"}
+Läs mer om [Uteslutningsaktiviteten](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/targeting-activities/exclusion.html){target="_blank"}
 
 +++
 
@@ -942,7 +935,7 @@ Viktiga funktioner: automatisk kopiering av innehåll, automatisk språkbaserad 
 
 Klientkonsolen stöder även flerspråkigt innehåll med villkorsstyrt innehåll och arbetsflöden, men kräver mer manuell konfiguration.
 
-[Flerspråkiga leveranser (webbgränssnitt)](https://experienceleague.adobe.com/sv/docs/campaign-web/v8/msg/multilingual){target="_blank"} | [Villkorligt innehåll (klientkonsol) &#x200B;](../send/conditions.md)
+[Flerspråkiga leveranser (webbgränssnitt)](https://experienceleague.adobe.com/en/docs/campaign-web/v8/msg/multilingual){target="_blank"} | [Villkorligt innehåll (klientkonsol) ](../send/conditions.md)
 
 +++
 
@@ -968,7 +961,7 @@ Ja, men **endast via Campaign Web-gränssnittet**. AI Assistant, som bygger på 
 
 **Obs!** AI-assistenten är endast tillgänglig i gränssnittet för Campaign-webben och har för närvarande endast stöd för engelska. Användarna behöver rätt behörigheter och måste godkänna ett användaravtal.
 
-[Översikt över AI Assistant](https://experienceleague.adobe.com/sv/docs/campaign-web/v8/content/ai-assistant/generative-gs){target="_blank"} | [&#x200B; Användningsexempel för AI-assistenten &#x200B;](https://experienceleague.adobe.com/sv/docs/campaign-web/v8/content/ai-assistant/generative-uc){target="_blank"} | [Märkesjustering](https://experienceleague.adobe.com/sv/docs/campaign-web/v8/content/ai-assistant/ai-assistant/brands-score){target="_blank"}
+[Översikt över AI Assistant](https://experienceleague.adobe.com/en/docs/campaign-web/v8/content/ai-assistant/generative-gs){target="_blank"} | [ Användningsexempel för AI-assistenten ](https://experienceleague.adobe.com/en/docs/campaign-web/v8/content/ai-assistant/generative-uc){target="_blank"} | [Märkesjustering](https://experienceleague.adobe.com/en/docs/campaign-web/v8/content/ai-assistant/ai-assistant/brands-score){target="_blank"}
 
 +++
 
@@ -1007,7 +1000,7 @@ Seed-adresserna läggs automatiskt till i varje leverans för testning, kvalitet
 
 Hantera dirigerade adresser i **[!UICONTROL Resources > Campaign management > Seed addresses]**. Håll listorna små så att leveransstatistik inte påverkas.
 
-[Guiden för dirigerade adresser](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/action-activities/delivery-control.html?lang=sv-SE){target="_blank"}
+[Guiden för dirigerade adresser](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/action-activities/delivery-control.html){target="_blank"}
 
 +++
 
@@ -1025,7 +1018,7 @@ Använd **korrektur som godkännandeprocess**. Skicka korrektur till godkännand
 
 **Relaterade ämnen:**
 
-[Leveransvalidering](../send/preview-and-proof.md) | [Kampanjgodkännanden](https://experienceleague.adobe.com/docs/campaign/automation/campaign-orchestration/marketing-campaign-approval.html?lang=sv-SE){target="_blank"}
+[Leveransvalidering](../send/preview-and-proof.md) | [Kampanjgodkännanden](https://experienceleague.adobe.com/docs/campaign/automation/campaign-orchestration/marketing-campaign-approval.html){target="_blank"}
 
 +++
 
@@ -1042,7 +1035,7 @@ Typologiregler är automatiserade affärslogik som tillämpas under leveransanal
 
 Reglerna grupperas i typologier och tillämpas under leveransanalysen. Kampanjen kan utesluta mottagare, blockera leveransen eller generera varningar baserat på reglerna.
 
-[Guiden för typologiregler](https://experienceleague.adobe.com/docs/campaign/automation/campaign-optimization/campaign-typologies.html?lang=sv-SE){target="_blank"}
+[Guiden för typologiregler](https://experienceleague.adobe.com/docs/campaign/automation/campaign-optimization/campaign-typologies.html){target="_blank"}
 
 +++
 
@@ -1225,7 +1218,7 @@ Vanliga arbetsflödesmönster: dataimport, målgruppssegmentering, leverans, dat
 
 **Relaterade ämnen:**
 
-[Skapa ett arbetsflöde](https://experienceleague.adobe.com/docs/campaign/automation/workflows/introduction/build-a-workflow.html?lang=sv-SE){target="_blank"} | [Arbetsflödesaktiviteter](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/about-activities.html){target="_blank"} | [Bästa praxis för arbetsflöden](https://experienceleague.adobe.com/docs/campaign/automation/workflows/introduction/workflow-best-practices.html?lang=sv-SE){target="_blank"} | [Användningsexempel för arbetsflöden](https://experienceleague.adobe.com/docs/campaign/automation/workflows/use-cases/about-workflow-use-cases.html){target="_blank"}
+[Skapa ett arbetsflöde](https://experienceleague.adobe.com/docs/campaign/automation/workflows/introduction/build-a-workflow.html){target="_blank"} | [Arbetsflödesaktiviteter](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/about-activities.html){target="_blank"} | [Bästa praxis för arbetsflöden](https://experienceleague.adobe.com/docs/campaign/automation/workflows/introduction/workflow-best-practices.html){target="_blank"} | [Användningsexempel för arbetsflöden](https://experienceleague.adobe.com/docs/campaign/automation/workflows/use-cases/about-workflow-use-cases.html){target="_blank"}
 
 +++
 
@@ -1253,7 +1246,7 @@ Importera data till Campaign på flera olika sätt beroende på era behov:
 
 **Relaterade ämnen:**
 
-[Importera metodtips](../start/import.md) | [Datainläsningsaktivitet](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/action-activities/data-loading-file.html?lang=sv-SE){target="_blank"} | [Återkommande importarbetsflöde](https://experienceleague.adobe.com/docs/campaign/automation/workflows/use-cases/data-management/recurring-import-workflow.html?lang=sv-SE){target="_blank"}
+[Importera metodtips](../start/import.md) | [Datainläsningsaktivitet](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/action-activities/data-loading-file.html){target="_blank"} | [Återkommande importarbetsflöde](https://experienceleague.adobe.com/docs/campaign/automation/workflows/use-cases/data-management/recurring-import-workflow.html){target="_blank"}
 
 +++
 
@@ -1296,7 +1289,7 @@ Kampanjarbetsflöden kan automatisera praktiskt taget alla marknadsföringsproce
 
 **Relaterade ämnen:**
 
-[Bibliotek för arbetsflödesanvändning](https://experienceleague.adobe.com/docs/campaign/automation/workflows/use-cases/about-workflow-use-cases.html){target="_blank"} | [Skapa ett arbetsflöde](https://experienceleague.adobe.com/docs/campaign/automation/workflows/introduction/build-a-workflow.html?lang=sv-SE){target="_blank"} | [Bästa praxis för arbetsflöden](https://experienceleague.adobe.com/docs/campaign/automation/workflows/introduction/workflow-best-practices.html?lang=sv-SE){target="_blank"} | [Målarbetsflöden](https://experienceleague.adobe.com/docs/campaign/automation/workflows/introduction/wf-type/targeting-workflows.html?lang=sv-SE){target="_blank"} | [Arbetsflöden för datahantering](https://experienceleague.adobe.com/docs/campaign/automation/workflows/use-cases/data-management/about-data-management.html){target="_blank"}
+[Bibliotek för arbetsflödesanvändning](https://experienceleague.adobe.com/docs/campaign/automation/workflows/use-cases/about-workflow-use-cases.html){target="_blank"} | [Skapa ett arbetsflöde](https://experienceleague.adobe.com/docs/campaign/automation/workflows/introduction/build-a-workflow.html){target="_blank"} | [Bästa praxis för arbetsflöden](https://experienceleague.adobe.com/docs/campaign/automation/workflows/introduction/workflow-best-practices.html){target="_blank"} | [Målarbetsflöden](https://experienceleague.adobe.com/docs/campaign/automation/workflows/introduction/wf-type/targeting-workflows.html){target="_blank"} | [Arbetsflöden för datahantering](https://experienceleague.adobe.com/docs/campaign/automation/workflows/use-cases/data-management/about-data-management.html){target="_blank"}
 
 +++
 
@@ -1323,7 +1316,7 @@ Konfigurera avstämningsnycklar så att de matchar poster korrekt och välj uppd
 
 **Relaterade ämnen:**
 
-[Uppdatera dataaktivitet](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/targeting-activities/update-data.html?lang=sv-SE){target="_blank"} | [Datahanteringsaktiviteter](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/action-activities/about-action-activities.html){target="_blank"}
+[Uppdatera dataaktivitet](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/targeting-activities/update-data.html){target="_blank"} | [Datahanteringsaktiviteter](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/action-activities/about-action-activities.html){target="_blank"}
 
 +++
 
@@ -1352,7 +1345,7 @@ Med de här aktiviteterna kan du arbeta med data som inte finns direkt i huvudmo
 
 **Relaterade ämnen:**
 
-[Datahanteringsaktiviteter](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/targeting-activities/about-targeting-activities.html){target="_blank"} | [Målarbetsflöden](https://experienceleague.adobe.com/docs/campaign/automation/workflows/introduction/wf-type/targeting-workflows.html?lang=sv-SE){target="_blank"} | [Anrikningsaktivitet](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/targeting-activities/enrichment.html?lang=sv-SE){target="_blank"}
+[Datahanteringsaktiviteter](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/targeting-activities/about-targeting-activities.html){target="_blank"} | [Målarbetsflöden](https://experienceleague.adobe.com/docs/campaign/automation/workflows/introduction/wf-type/targeting-workflows.html){target="_blank"} | [Anrikningsaktivitet](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/targeting-activities/enrichment.html){target="_blank"}
 
 +++
 
@@ -1379,7 +1372,7 @@ Vanliga scenarier: födelsedagskampanjer, övergivna varukorgar, lojalitetsprogr
 
 **Relaterade ämnen:**
 
-[Personalization-guide](../send/personalize.md) | [Användningsexempel för arbetsflöden](https://experienceleague.adobe.com/docs/campaign/automation/workflows/use-cases/deliveries/send-a-birthday-email.html?lang=sv-SE){target="_blank"} | [Anrikningsaktivitet](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/targeting-activities/enrichment.html?lang=sv-SE){target="_blank"}
+[Personalization-guide](../send/personalize.md) | [Användningsexempel för arbetsflöden](https://experienceleague.adobe.com/docs/campaign/automation/workflows/use-cases/deliveries/send-a-birthday-email.html){target="_blank"} | [Anrikningsaktivitet](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/targeting-activities/enrichment.html){target="_blank"}
 
 +++
 
@@ -1406,7 +1399,7 @@ Varje delmängd flödar till en separat övergång, vilket ger olika bearbetning
 
 **Relaterade ämnen:**
 
-[Delad aktivitet](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/targeting-activities/split.html?lang=sv-SE){target="_blank"} | [Testguide för A/B &#x200B;](https://experienceleague.adobe.com/docs/campaign/automation/workflows/use-cases/deliveries/a-b-testing.html){target="_blank"}
+[Delad aktivitet](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/targeting-activities/split.html){target="_blank"} | [Testguide för A/B ](https://experienceleague.adobe.com/docs/campaign/automation/workflows/use-cases/deliveries/a-b-testing.html){target="_blank"}
 
 +++
 
@@ -1436,7 +1429,7 @@ Ja. Använd arbetsflöden för att uppdatera kampanjdata med värden från exter
 
 **Relaterade ämnen:**
 
-[Guiden Importera data](../start/import.md) | [Datainläsningsaktivitet](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/action-activities/data-loading-file.html?lang=sv-SE){target="_blank"} | [Uppdatera dataaktivitet](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/targeting-activities/update-data.html?lang=sv-SE){target="_blank"}
+[Guiden Importera data](../start/import.md) | [Datainläsningsaktivitet](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/action-activities/data-loading-file.html){target="_blank"} | [Uppdatera dataaktivitet](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/targeting-activities/update-data.html){target="_blank"}
 
 +++
 
@@ -1462,7 +1455,7 @@ Använd sammanställningsfunktioner för att dynamiskt identifiera de senaste ti
 
 **Relaterade ämnen:**
 
-[Frågeaktivitet](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/targeting-activities/query.html?lang=sv-SE){target="_blank"} | [&#x200B; Använda aggregat &#x200B;](https://experienceleague.adobe.com/docs/campaign/automation/workflows/use-cases/data-management/using-aggregates.html?lang=sv-SE){target="_blank"} | [Välkomstprogram](https://experienceleague.adobe.com/docs/campaign/automation/workflows/use-cases/deliveries/send-a-birthday-email.html?lang=sv-SE){target="_blank"}
+[Frågeaktivitet](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/targeting-activities/query.html){target="_blank"} | [ Använda aggregat ](https://experienceleague.adobe.com/docs/campaign/automation/workflows/use-cases/data-management/using-aggregates.html){target="_blank"} | [Välkomstprogram](https://experienceleague.adobe.com/docs/campaign/automation/workflows/use-cases/deliveries/send-a-birthday-email.html){target="_blank"}
 
 +++
 
@@ -1494,7 +1487,7 @@ Om du vill använda aktiviteter drar du dem från paletten till arbetsytan, dubb
 
 **Relaterade ämnen:**
 
-[Referens för målaktiviteter](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/targeting-activities/targeting-activities.html?lang=sv-SE){target="_blank"} | [Referens för flödeskontrollaktiviteter](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/flow-control-activities/flow-control-activities.html?lang=sv-SE){target="_blank"} | [Åtgärdsaktivitetsreferens](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/action-activities/action-activities.html?lang=sv-SE){target="_blank"} | [Händelseaktiviteter - referens](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/event-activities/event-activities.html?lang=sv-SE){target="_blank"}
+[Referens för målaktiviteter](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/targeting-activities/targeting-activities.html){target="_blank"} | [Referens för flödeskontrollaktiviteter](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/flow-control-activities/flow-control-activities.html){target="_blank"} | [Åtgärdsaktivitetsreferens](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/action-activities/action-activities.html){target="_blank"} | [Händelseaktiviteter - referens](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/event-activities/event-activities.html){target="_blank"}
 
 +++
 
@@ -1539,7 +1532,7 @@ Följ dessa standarder för att skapa effektiva, underhållbara och tillförlitl
 
 **Relaterade ämnen:**
 
-[Handbok om arbetsflöden för bästa praxis](https://experienceleague.adobe.com/docs/campaign/automation/workflows/introduction/workflow-best-practices.html?lang=sv-SE){target="_blank"} | [Skapa ett arbetsflöde](https://experienceleague.adobe.com/docs/campaign/automation/workflows/introduction/build-a-workflow.html?lang=sv-SE){target="_blank"} | [Övervaka arbetsflöden](https://experienceleague.adobe.com/docs/campaign/automation/workflows/monitoring-workflows/monitor-workflow-execution.html?lang=sv-SE){target="_blank"}
+[Handbok om arbetsflöden för bästa praxis](https://experienceleague.adobe.com/docs/campaign/automation/workflows/introduction/workflow-best-practices.html){target="_blank"} | [Skapa ett arbetsflöde](https://experienceleague.adobe.com/docs/campaign/automation/workflows/introduction/build-a-workflow.html){target="_blank"} | [Övervaka arbetsflöden](https://experienceleague.adobe.com/docs/campaign/automation/workflows/monitoring-workflows/monitor-workflow-execution.html){target="_blank"}
 
 +++
 
@@ -1567,7 +1560,7 @@ Det beror på vilket gränssnitt du använder. **klientkonsolens** språk är fa
 
 **Relaterade ämnen:**
 
-[Ändra språk i webbgränssnittet för kampanj](https://experienceleague.adobe.com/sv/docs/campaign-web/v8/start/connect-to-campaign#language-pref){target="_blank"} | [Kom igång med Campaign-klientkonsolen](connect.md)
+[Ändra språk i webbgränssnittet för kampanj](https://experienceleague.adobe.com/en/docs/campaign-web/v8/start/connect-to-campaign#language-pref){target="_blank"} | [Kom igång med Campaign-klientkonsolen](connect.md)
 
 +++
 
@@ -1593,7 +1586,7 @@ Campaign Control Panel är ett webbaserat administrativt gränssnitt som hjälpe
 
 **Ytterligare resurser:**
 
-[Kontrollpanelens dokumentation](https://experienceleague.adobe.com/sv/docs/control-panel/using/control-panel-home){target="_blank"} | [Självstudievideor på Kontrollpanelen](https://experienceleague.adobe.com/sv/docs/control-panel-learn/tutorials/control-panel-overview){target="_blank"}
+[Kontrollpanelens dokumentation](https://experienceleague.adobe.com/en/docs/control-panel/using/control-panel-home){target="_blank"} | [Självstudievideor på Kontrollpanelen](https://experienceleague.adobe.com/en/docs/control-panel-learn/tutorials/control-panel-overview){target="_blank"}
 
 +++
 
@@ -1700,7 +1693,7 @@ Ja. Campaign tillhandahåller inbyggda CRM-anslutningar för smidig dubbelriktad
 
 **Relaterade ämnen:**
 
-[CRM-anslutningskonfiguration](../connect/crm.md) | [CRM-arbetsflödesaktiviteter](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/targeting-activities/crm-connector.html?lang=sv-SE){target="_blank"}
+[CRM-anslutningskonfiguration](../connect/crm.md) | [CRM-arbetsflödesaktiviteter](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/targeting-activities/crm-connector.html){target="_blank"}
 
 +++
 
@@ -1776,7 +1769,7 @@ Ja. Med Campaigns flexibla datamodell kan ni utöka inbyggda scheman med anpassa
 
 **Relaterade ämnen:**
 
-[Utöka datamodell](../dev/extend-schema.md) | [&#x200B; Schemastruktur &#x200B;](../dev/schemas.md) | [Bästa praxis för datamodell](../dev/datamodel-best-practices.md)
+[Utöka datamodell](../dev/extend-schema.md) | [ Schemastruktur ](../dev/schemas.md) | [Bästa praxis för datamodell](../dev/datamodel-best-practices.md)
 
 +++
 
@@ -1800,7 +1793,7 @@ Campaign erbjuder flera rapportalternativ beroende på era behov och er tekniska
 
 **Relaterade ämnen:**
 
-[Kom igång med rapportering](../reporting/gs-reporting.md) | [Webbgränssnittsrapporter för kampanj &#x200B;](https://experienceleague.adobe.com/en/docs/campaign-web/v8/reports/gs-reports){target="_blank"}
+[Kom igång med rapportering](../reporting/gs-reporting.md) | [Webbgränssnittsrapporter för kampanj ](https://experienceleague.adobe.com/en/docs/campaign-web/v8/reports/gs-reports){target="_blank"}
 
 +++
 
@@ -1883,7 +1876,7 @@ Ja! Campaign innehåller en undersökningsmodul där du kan skapa onlineenkäter
 
 **Relaterade ämnen:**
 
-[Kom igång med enkäter](https://experienceleague.adobe.com/sv/docs/campaign-classic/using/online-surveys/about-surveys){target="_blank"} | [Undersökningsrapporter](https://experienceleague.adobe.com/sv/docs/campaign-classic/using/online-surveys/publish-track-and-use-collected-data#reports-on-surveys){target="_blank"}
+[Kom igång med enkäter](https://experienceleague.adobe.com/en/docs/campaign-classic/using/online-surveys/about-surveys){target="_blank"} | [Undersökningsrapporter](https://experienceleague.adobe.com/en/docs/campaign-classic/using/online-surveys/publish-track-and-use-collected-data#reports-on-surveys){target="_blank"}
 
 +++
 
@@ -1940,7 +1933,7 @@ Ja, Campaign har stöd för flera exportformat för både klientkonsolen och Web
 
 **Relaterade ämnen:**
 
-[Anpassade rapporter](../reporting/custom-reports.md) | [Webbgränssnittsrapporter för kampanj &#x200B;](https://experienceleague.adobe.com/en/docs/campaign-web/v8/reports/gs-reports){target="_blank"}
+[Anpassade rapporter](../reporting/custom-reports.md) | [Webbgränssnittsrapporter för kampanj ](https://experienceleague.adobe.com/en/docs/campaign-web/v8/reports/gs-reports){target="_blank"}
 
 +++
 
@@ -2077,7 +2070,7 @@ Kampanjens frågeredigerare är ett kraftfullt visuellt verktyg för att skapa d
 
 **Relaterade ämnen:**
 
-[Frågeredigeraren](../start/query-editor.md) | [Frågeaktivitet i arbetsflöden](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/targeting-activities/query.html?lang=sv-SE){target="_blank"}
+[Frågeredigeraren](../start/query-editor.md) | [Frågeaktivitet i arbetsflöden](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/targeting-activities/query.html){target="_blank"}
 
 +++
 
@@ -2276,7 +2269,7 @@ Du kan anpassa borttagningsomfånget genom att ändra länkintegriteten i schema
 
 **Relaterade ämnen:**
 
-[Sekretesshantering](../start/privacy.md) | [Schemalänkar &#x200B;](../dev/schemas.md)
+[Sekretesshantering](../start/privacy.md) | [Schemalänkar ](../dev/schemas.md)
 
 +++
 
@@ -2302,7 +2295,7 @@ Som Data Controller är du ansvarig för fullständig borttagning av data i hela
 
 **Relaterade ämnen:**
 
-[Sekretesshantering](../start/privacy.md) | [Importera arbetsflöden &#x200B;](../config/workflows.md)
+[Sekretesshantering](../start/privacy.md) | [Importera arbetsflöden ](../config/workflows.md)
 
 +++
 
@@ -2328,13 +2321,13 @@ Kommunicera med andra Campaign-användare och Adobe-experter för att dela kunsk
 
 * **[Adobe Campaign Community](https://experienceleaguecommunities.adobe.com/t5/adobe-campaign-classic/ct-p/adobe-campaign-classic-community){target="_blank"}** - Ställ frågor, dela lösningar och få kontakt med Campaign-communityn
 * **[Experience League-forum](https://experienceleaguecommunities.adobe.com/){target="_blank"}** - Sök i diskussioner i alla Adobe-produkter
-* **[Kampanjens kontorstider](https://experienceleague.adobe.com/sv){target="_blank"}** - Delta i live-sessioner med Adobe experter
+* **[Kampanjens kontorstider](https://experienceleague.adobe.com/){target="_blank"}** - Delta i live-sessioner med Adobe experter
 
 ### Dokumentation och utbildning
 
 Få tillgång till omfattande guider, självstudiekurser och utbildningsmaterial.
 
-* **[Kampanjsjälvstudiekurser](https://experienceleague.adobe.com/docs/campaign-learn/tutorials/overview.html?lang=sv-SE){target="_blank"}** - Stegvisa videoguider och praktiska självstudiekurser
+* **[Kampanjsjälvstudiekurser](https://experienceleague.adobe.com/docs/campaign-learn/tutorials/overview.html){target="_blank"}** - Stegvisa videoguider och praktiska självstudiekurser
 * **[Nyheter](whats-new.md)** - de senaste funktionerna
 * **[Versionsinformation](release-notes.md)** - Aktuell och föregående versionsinformation
 * **[Versioner och uppgraderingar](upgrades.md)** - Läs mer om Campaign-versioner, uppgraderingar och hur du kontrollerar din version
@@ -2360,14 +2353,14 @@ Få hjälp av Adobe supportteam och hantera instansen.
 
 Utveckla dina färdigheter med Adobe officiella utbildnings- och certifieringsprogram.
 
-* **[Experience League Hjälp](https://experienceleague.adobe.com/sv/browse/campaign/campaign-v8){target="_blank"}** - Hjälpresurser för Campaign v8 (webbgränssnitt och CLient-konsol)
+* **[Experience League Hjälp](https://experienceleague.adobe.com/en/browse/campaign/campaign-v8){target="_blank"}** - Hjälpresurser för Campaign v8 (webbgränssnitt och CLient-konsol)
 * **[Adobe Digital Learning Services](https://learning.adobe.com/){target="_blank"}** - instruktörsledda och självstudiekurser
-* **[Adobe Campaign-certifiering](https://experienceleague.adobe.com/docs/certification/program/overview.html?lang=sv-SE){target="_blank"}** - Verifiera dina kunskaper med professionell certifiering
-* **[Experience League utbildningsvägar](https://experienceleague.adobe.com/sv?lang=en#dashboard/learning){target="_blank"}** - guidade utbildningsresor
+* **[Adobe Campaign-certifiering](https://experienceleague.adobe.com/docs/certification/program/overview.html){target="_blank"}** - Verifiera dina kunskaper med professionell certifiering
+* **[Experience League utbildningsvägar](https://experienceleague.adobe.com/?lang=en#dashboard/learning){target="_blank"}** - guidade utbildningsresor
 
 ### Andra användbara resurser
 
 * **[Campaign Classic v7-dokumentation](https://experienceleague.adobe.com/docs/campaign-classic/using/campaign-classic-home.html?lang=sv){target="_blank"}** - referens för användare av Classic v7
-* **[Webbgränssnittsdokumentation för kampanj](https://experienceleague.adobe.com/sv/docs/campaign-web/v8/campaign-web-home){target="_blank"}** - guide för nytt webbgränssnitt
+* **[Webbgränssnittsdokumentation för kampanj](https://experienceleague.adobe.com/en/docs/campaign-web/v8/campaign-web-home){target="_blank"}** - guide för nytt webbgränssnitt
 * **[Bästa praxis för slutleverans](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/introduction.html?lang=sv){target="_blank"}** - Optimera e-postleveransen
 
