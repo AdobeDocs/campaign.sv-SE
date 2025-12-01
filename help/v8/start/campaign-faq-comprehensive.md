@@ -21,7 +21,7 @@ Få snabba svar på de vanligaste frågorna om Adobe Campaign v8. Oavsett om du 
 
 **Ny i Campaign?** Börja med [Allmänna frågor](#general) och [Nyckelbegrepp](#key-concepts).\
 **Behöver du hjälp med versionerna?** Kontrollera [Uppgraderingar](#upgrades) för versionsinformation och uppgraderingsprocesser.\
-**Migrerar från v7 eller Standard?** Se [Campaign v8 vs. tidigare versioner ](#v7-differences) för skillnader och vägledning om övergångar.\
+**Migrerar från v7 eller Standard?** Se [Campaign v8 vs. tidigare versioner &#x200B;](#v7-differences) för skillnader och vägledning om övergångar.\
 **Behöver du teknisk hjälp?** Kontrollera [Utvecklare](#developers) och [kampanjinställningar](#settings).\
 **Hittar du inte ditt svar?** Besök våra [användarforum](https://experienceleaguecommunities.adobe.com/t5/adobe-campaign-classic/ct-p/adobe-campaign-classic-community){target="_blank"} eller [kontakta support](#get-help).
 
@@ -57,7 +57,7 @@ Lär dig hur du implementerar levererbarhet i Campaign [i den här guiden](https
 
 **Relaterade ämnen:**
 
-[Kom igång med leverans](../send/about-deliverability.md) | [ Kontrollera meddelandeinnehåll ](../send/control-message-content.md) | [Skärmleverans](../send/monitoring-deliverability.md) | [SpamAssassin](../send/spamassassin.md)
+[Kom igång med leverans](../send/about-deliverability.md) | [&#x200B; Kontrollera meddelandeinnehåll &#x200B;](../send/control-message-content.md) | [Skärmleverans](../send/monitoring-deliverability.md) | [SpamAssassin](../send/spamassassin.md)
 
 +++
 
@@ -278,7 +278,7 @@ För att skicka push-meddelanden måste du först konfigurera mobilappsintegreri
 
 **Funktioner:** Avancerad push (bilder, videoklipp, knappar), personalisering, djuplänkning, schemaläggning, A/B-testning, spårning. plattformsspecifika funktioner för iOS och Android.
 
-[Läs mer om push-meddelanden](../send/push.md) | [Konfigurera push-kanal ](../send/push-settings.md) | [Android rich push](../send/rich-push-android.md) | [iOS rich push](../send/rich-push-ios.md)
+[Läs mer om push-meddelanden](../send/push.md) | [Konfigurera push-kanal &#x200B;](../send/push-settings.md) | [Android rich push](../send/rich-push-android.md) | [iOS rich push](../send/rich-push-ios.md)
 
 +++
 
@@ -316,7 +316,7 @@ Ja. Skapa webbformulär med **Campaign Web Applications &amp; Forms** (klientkon
 
 **Relaterade ämnen:**
 
-[Läs mer om webbprogram och formulär](../dev/webapps.md) | [Startsidor för Campaign Web UI ](https://experienceleague.adobe.com/en/docs/campaign-web/v8/landing-pages/get-started-lp){target="_blank"}
+[Läs mer om webbprogram och formulär](../dev/webapps.md) | [Startsidor för Campaign Web UI &#x200B;](https://experienceleague.adobe.com/en/docs/campaign-web/v8/landing-pages/get-started-lp){target="_blank"}
 
 +++
 
@@ -444,7 +444,7 @@ Campaign v8 bygger på en modern molnbaserad arkitektur med betydande förbättr
 
 **Relaterade ämnen:**
 
-[Nyckelfunktioner för Campaign v8](whats-new.md) | [ Campaign v8-arkitektur ](../architecture/architecture.md) | [Funktionsmatris](https://experienceleague.adobe.com/en/docs/campaign-web/v8/start/capability-matrix){target="_blank"} | [Skyddsritningar och begränsningar](ac-guardrails.md)
+[Nyckelfunktioner för Campaign v8](whats-new.md) | [&#x200B; Campaign v8-arkitektur &#x200B;](../architecture/architecture.md) | [Funktionsmatris](https://experienceleague.adobe.com/en/docs/campaign-web/v8/start/capability-matrix){target="_blank"} | [Skyddsritningar och begränsningar](ac-guardrails.md)
 
 +++
 
@@ -526,7 +526,7 @@ Skapa mottagare manuellt i klientkonsolen för enskilda profiler, importera frå
 
 **Relaterade ämnen:**
 
-[Skapa profiler manuellt](../audiences/create-profiles.md) | [Importera profiler från en fil ](../audiences/import-profiles.md) | [Samla in profiler med webbformulär](../audiences/collect-profiles.md)
+[Skapa profiler manuellt](../audiences/create-profiles.md) | [Importera profiler från en fil &#x200B;](../audiences/import-profiles.md) | [Samla in profiler med webbformulär](../audiences/collect-profiles.md)
 
 +++
 
@@ -683,7 +683,7 @@ Viktiga funktioner: automatisk kopiering av innehåll, automatisk språkbaserad 
 
 Klientkonsolen stöder även flerspråkigt innehåll med villkorsstyrt innehåll och arbetsflöden, men kräver mer manuell konfiguration.
 
-[Flerspråkiga leveranser (webbgränssnitt)](https://experienceleague.adobe.com/en/docs/campaign-web/v8/msg/multilingual){target="_blank"} | [Villkorligt innehåll (klientkonsol) ](../send/conditions.md)
+[Flerspråkiga leveranser (webbgränssnitt)](https://experienceleague.adobe.com/en/docs/campaign-web/v8/msg/multilingual){target="_blank"} | [Villkorligt innehåll (klientkonsol) &#x200B;](../send/conditions.md)
 
 +++
 
@@ -709,7 +709,7 @@ Ja, men **endast via Campaign Web-gränssnittet**. AI Assistant, som bygger på 
 
 **Obs!** AI-assistenten är endast tillgänglig i gränssnittet för Campaign-webben och har för närvarande endast stöd för engelska. Användarna behöver rätt behörigheter och måste godkänna ett användaravtal.
 
-[Översikt över AI Assistant](https://experienceleague.adobe.com/en/docs/campaign-web/v8/content/ai-assistant/generative-gs){target="_blank"} | [ Användningsexempel för AI-assistenten ](https://experienceleague.adobe.com/en/docs/campaign-web/v8/content/ai-assistant/generative-uc){target="_blank"} | [Märkesjustering](https://experienceleague.adobe.com/en/docs/campaign-web/v8/content/ai-assistant/ai-assistant/brands-score){target="_blank"}
+[Översikt över AI Assistant](https://experienceleague.adobe.com/en/docs/campaign-web/v8/content/ai-assistant/generative-gs){target="_blank"} | [&#x200B; Användningsexempel för AI-assistenten &#x200B;](https://experienceleague.adobe.com/en/docs/campaign-web/v8/content/ai-assistant/generative-uc){target="_blank"} | [Märkesjustering](https://experienceleague.adobe.com/en/docs/campaign-web/v8/content/ai-assistant/ai-assistant/brands-score){target="_blank"}
 
 +++
 
@@ -1032,7 +1032,7 @@ Använd aktiviteten **[!UICONTROL Split]** för att dela upp populationer: Filtr
 
 **Vanliga användningsområden:** A/B-testning, kanalpreferens, progressiv utrullning, segmentspecifika meddelanden, lastbalansering. Varje delmängd flödar för en separat övergång för olika bearbetning.
 
-[Delad aktivitet](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/targeting-activities/split.html){target="_blank"} | [Testguide för A/B ](https://experienceleague.adobe.com/docs/campaign/automation/workflows/use-cases/deliveries/a-b-testing.html){target="_blank"}
+[Delad aktivitet](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/targeting-activities/split.html){target="_blank"} | [Testguide för A/B &#x200B;](https://experienceleague.adobe.com/docs/campaign/automation/workflows/use-cases/deliveries/a-b-testing.html){target="_blank"}
 
 +++
 
@@ -1056,7 +1056,7 @@ Fråga fältet **[!UICONTROL Created date]** om du vill välja mottagare som lag
 
 **Avancerat:** Använd sammanställningsfunktioner för att dynamiskt identifiera senaste tillägg.
 
-[Frågeaktivitet](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/targeting-activities/query.html){target="_blank"} | [ Använda aggregat ](https://experienceleague.adobe.com/docs/campaign/automation/workflows/use-cases/data-management/using-aggregates.html){target="_blank"}
+[Frågeaktivitet](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/targeting-activities/query.html){target="_blank"} | [&#x200B; Använda aggregat &#x200B;](https://experienceleague.adobe.com/docs/campaign/automation/workflows/use-cases/data-management/using-aggregates.html){target="_blank"}
 
 +++
 
@@ -1071,7 +1071,7 @@ Fyra aktivitetskategorier:
 
 Dra från paletten, dubbelklicka för att konfigurera, ansluta till övergångar.
 
-[Målaktiviteter](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/targeting-activities/targeting-activities.html){target="_blank"} | [ Flödeskontroll ](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/flow-control-activities/flow-control-activities.html){target="_blank"} | [Åtgärdsaktiviteter](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/action-activities/action-activities.html){target="_blank"}
+[Målaktiviteter](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/targeting-activities/targeting-activities.html){target="_blank"} | [&#x200B; Flödeskontroll &#x200B;](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/flow-control-activities/flow-control-activities.html){target="_blank"} | [Åtgärdsaktiviteter](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/action-activities/action-activities.html){target="_blank"}
 
 +++
 
@@ -1200,7 +1200,7 @@ E-postleverans beror på teknisk konfiguration, innehållskvalitet och avsändar
 
 Campaign v8 stöder FDA-anslutningar (Federated Data Access) till större företagsdatabassystem (molndatabaser, företagsdatabaser, datalager, big data platforms).
 
-Vilka databasversioner och anslutningskrav som stöds varierar. Kontrollera [kompatibilitetsmatrisen ](compatibility-matrix.md) för Campaign v8-versionen för att bekräfta stöd för specifika databaser och se till att FDA-anslutningar licensieras korrekt.
+Vilka databasversioner och anslutningskrav som stöds varierar. Kontrollera [kompatibilitetsmatrisen &#x200B;](compatibility-matrix.md) för Campaign v8-versionen för att bekräfta stöd för specifika databaser och se till att FDA-anslutningar licensieras korrekt.
 
 [Konfigurera FDA-anslutningar](../connect/fda.md)
 
@@ -1210,7 +1210,7 @@ Vilka databasversioner och anslutningskrav som stöds varierar. Kontrollera [kom
 
 Ja. Campaign tillhandahåller interna CRM-anslutningar för dubbelriktad synkronisering med större CRM-system. Synkroniserar kontaktdata, leads, konton, leveransloggar, spårningsdata och interaktionsstatistik. Stöder schemalagda, manuella och realtidssynkroniseringslägen (via API).
 
-Använd Campaigns CRM-anslutningsassistent för att mappa fält, välja tabeller och schemalägga synkronisering. Kontrollera [kompatibilitetsmatrisen ](compatibility-matrix.md) för CRM-versioner som stöds.
+Använd Campaigns CRM-anslutningsassistent för att mappa fält, välja tabeller och schemalägga synkronisering. Kontrollera [kompatibilitetsmatrisen &#x200B;](compatibility-matrix.md) för CRM-versioner som stöds.
 
 [CRM-anslutningskonfiguration](../connect/crm.md) | [CRM-arbetsflödesaktiviteter](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/targeting-activities/crm-connector.html){target="_blank"}
 
@@ -1287,7 +1287,7 @@ Ja. Med Campaigns flexibla datamodell kan ni utöka inbyggda scheman med anpassa
 
 **Relaterade ämnen:**
 
-[Utöka datamodell](../dev/extend-schema.md) | [ Schemastruktur ](../dev/schemas.md) | [Bästa praxis för datamodell](../dev/datamodel-best-practices.md)
+[Utöka datamodell](../dev/extend-schema.md) | [&#x200B; Schemastruktur &#x200B;](../dev/schemas.md) | [Bästa praxis för datamodell](../dev/datamodel-best-practices.md)
 
 +++
 
@@ -1310,7 +1310,7 @@ Campaign erbjuder flera rapporteringsalternativ beroende på dina behov och din 
 
 **Relaterade ämnen:**
 
-[Kom igång med rapportering](../reporting/gs-reporting.md) | [Webbgränssnittsrapporter för kampanj ](https://experienceleague.adobe.com/en/docs/campaign-web/v8/reports/gs-reports){target="_blank"}
+[Kom igång med rapportering](../reporting/gs-reporting.md) | [Webbgränssnittsrapporter för kampanj &#x200B;](https://experienceleague.adobe.com/en/docs/campaign-web/v8/reports/gs-reports){target="_blank"}
 
 +++
 
@@ -1433,7 +1433,7 @@ Ja, Campaign har stöd för flera exportformat för både klientkonsolen och Web
 
 **Relaterade ämnen:**
 
-[Anpassade rapporter](../reporting/custom-reports.md) | [Webbgränssnittsrapporter för kampanj ](https://experienceleague.adobe.com/en/docs/campaign-web/v8/reports/gs-reports){target="_blank"}
+[Anpassade rapporter](../reporting/custom-reports.md) | [Webbgränssnittsrapporter för kampanj &#x200B;](https://experienceleague.adobe.com/en/docs/campaign-web/v8/reports/gs-reports){target="_blank"}
 
 +++
 
@@ -1628,7 +1628,7 @@ Du kan anpassa borttagningsomfånget genom att ändra länkintegriteten i schema
 
 **Relaterade ämnen:**
 
-[Sekretesshantering](../start/privacy.md) | [Schemalänkar ](../dev/schemas.md)
+[Sekretesshantering](../start/privacy.md) | [Schemalänkar &#x200B;](../dev/schemas.md)
 
 +++
 
@@ -1654,7 +1654,7 @@ Som Data Controller är du ansvarig för fullständig borttagning av data i hela
 
 **Relaterade ämnen:**
 
-[Sekretesshantering](../start/privacy.md) | [Importera arbetsflöden ](../config/workflows.md)
+[Sekretesshantering](../start/privacy.md) | [Importera arbetsflöden &#x200B;](../config/workflows.md)
 
 +++
 
