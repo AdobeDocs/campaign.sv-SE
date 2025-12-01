@@ -87,7 +87,7 @@ Schemat `xtk:queryDef` innehåller metoder för att skapa och köra databasfråg
 * `getIfExists` - Hämta en enskild post, returnera null om den inte hittas
 * `count` - Antal poster som matchar villkor
 
-Läs mer om queryDef-metoder i [Kampanjens JSAPI-dokumentation](https://experienceleague.adobe.com/developer/campaign-api/api/s-xtk-queryDef.html){target="_blank"}.
+Läs mer om queryDef-metoder i [Kampanjens JSAPI-dokumentation](https://experienceleague.adobe.com/developer/campaign-api/api/s-xtk-queryDef.html?lang=sv-SE){target="_blank"}.
 
 ## Fråga med JSON {#query-json}
 
@@ -211,7 +211,7 @@ for each(var delivery in deliveries.delivery) {
 >
 >Parametern `lineCount` begränsar antalet resultat. Utan den är standardgränsen 10 000 poster.
 
-Läs mer om [ExecuteQuery](https://experienceleague.adobe.com/developer/campaign-api/api/sm-queryDef-ExecuteQuery.html){target="_blank"}.
+Läs mer om [ExecuteQuery](https://experienceleague.adobe.com/developer/campaign-api/api/sm-queryDef-ExecuteQuery.html?lang=sv-SE){target="_blank"}.
 
 ## Fråga om övergångsdata för arbetsflöde {#workflow-transition-data}
 
@@ -256,7 +256,7 @@ for each(var record in records.getElements()) {
 
 >[!CAUTION]
 >
->Använd alltid parametriserade frågor med `$(sz)` för strängar och `$(l)` för heltal för att förhindra SQL-injektionsproblem. Läs mer i [Kampanjens JSAPI-dokumentation](https://experienceleague.adobe.com/developer/campaign-api/api/f-sqlExec.html){target="_blank"}.
+>Använd alltid parametriserade frågor med `$(sz)` för strängar och `$(l)` för heltal för att förhindra SQL-injektionsproblem. Läs mer i [Kampanjens JSAPI-dokumentation](https://experienceleague.adobe.com/developer/campaign-api/api/f-sqlExec.html?lang=sv-SE){target="_blank"}.
 
 ## Räkna poster {#count-records}
 
@@ -435,7 +435,7 @@ logInfo("Generated SQL: " + sql);
 // Output: "SELECT iRecipientId, sEmail FROM NmsRecipient WHERE sEmail IS NOT NULL"
 ```
 
-Läs mer om [BuildQuery](https://experienceleague.adobe.com/developer/campaign-api/api/sm-queryDef-BuildQuery.html){target="_blank"}.
+Läs mer om [BuildQuery](https://experienceleague.adobe.com/developer/campaign-api/api/sm-queryDef-BuildQuery.html?lang=sv-SE){target="_blank"}.
 
 ### BuildQueryEx - Hämta SQL med formatsträng {#build-query-ex}
 
@@ -460,7 +460,7 @@ logInfo("Format: " + format);
 var results = sqlSelect(format, sql);
 ```
 
-Läs mer om [BuildQueryEx](https://experienceleague.adobe.com/developer/campaign-api/api/sm-queryDef-BuildQueryEx.html){target="_blank"}.
+Läs mer om [BuildQueryEx](https://experienceleague.adobe.com/developer/campaign-api/api/sm-queryDef-BuildQueryEx.html?lang=sv-SE){target="_blank"}.
 
 ### Markera alla - Lägg till alla fält som ska markeras {#select-all}
 
@@ -483,7 +483,7 @@ var result = query.ExecuteQuery();
 // Result contains all recipient fields
 ```
 
-Läs mer om [SelectAll](https://experienceleague.adobe.com/developer/campaign-api/api/sm-queryDef-SelectAll.html){target="_blank"}.
+Läs mer om [SelectAll](https://experienceleague.adobe.com/developer/campaign-api/api/sm-queryDef-SelectAll.html?lang=sv-SE){target="_blank"}.
 
 ### Uppdatera - massuppdateringsposter {#mass-update}
 
@@ -513,7 +513,7 @@ logInfo("Mass update completed");
 >
 >Massuppdateringar påverkar alla poster som matchar where-satsen. Testa alltid var du befinner dig med en urvalsfråga först för att kontrollera vilka poster som påverkas.
 
-Läs mer om [Uppdatering](https://experienceleague.adobe.com/developer/campaign-api/api/sm-queryDef-Update.html){target="_blank"}.
+Läs mer om [Uppdatering](https://experienceleague.adobe.com/developer/campaign-api/api/sm-queryDef-Update.html?lang=sv-SE){target="_blank"}.
 
 ### GetInstanceFromModel - frågemallsinstanser {#get-instance-from-model}
 
@@ -536,7 +536,7 @@ var query = NLWS.xtkQueryDef.create(
 var instance = query.GetInstanceFromModel("nms:delivery");
 ```
 
-Läs mer om [GetInstanceFromModel](https://experienceleague.adobe.com/developer/campaign-api/api/sm-queryDef-GetInstanceFromModel.html){target="_blank"}.
+Läs mer om [GetInstanceFromModel](https://experienceleague.adobe.com/developer/campaign-api/api/sm-queryDef-GetInstanceFromModel.html?lang=sv-SE){target="_blank"}.
 
 ## Gruppåtgärder {#batch-operations}
 
@@ -772,8 +772,8 @@ Fullständig struktur för objektet `queryDef`:
 ## Relaterade ämnen {#related-topics}
 
 * [Kom igång med Campaign-API:er](api.md)
-* [queryDef API Reference](https://experienceleague.adobe.com/developer/campaign-api/api/s-xtk-queryDef.html){target="_blank"}
-* [Kampanj-JSAPI-dokumentation](https://experienceleague.adobe.com/developer/campaign-api/api/p-1.html){target="_blank"}
+* [queryDef API Reference](https://experienceleague.adobe.com/developer/campaign-api/api/s-xtk-queryDef.html?lang=sv-SE){target="_blank"}
+* [Kampanj-JSAPI-dokumentation](https://experienceleague.adobe.com/developer/campaign-api/api/p-1.html?lang=sv-SE){target="_blank"}
 * [Datamodell](datamodel.md)
 * [Arbeta med scheman](schemas.md)
 * [Arbeta med frågeredigeraren](../start/query-editor.md)
