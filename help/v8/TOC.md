@@ -5,10 +5,10 @@ user-guide-description: Produktdokumentation för Adobe Campaign v8 (klientkonso
 title: Adobe Campaign v8-dokumentation
 description: Kampanjdokumentation v8
 breadcrumb-title: Dokumentation om Campaign v8
-source-git-commit: 0830dea0e04a67c2d0b4102e41c0e57d8c98302a
+source-git-commit: 26fededf0ee83299477e45e891df30a46c6d40fe
 workflow-type: tm+mt
-source-wordcount: '811'
-ht-degree: 29%
+source-wordcount: '816'
+ht-degree: 28%
 
 ---
 
@@ -139,7 +139,7 @@ ht-degree: 29%
    + [Designa webbprogram och formulär](dev/webapps.md)
 + Arbetsflöden {#workflows}
    + [Kom igång med arbetsflöden](config/workflows.md)
-   + [Arbetsflödesdokumentation >](https://experienceleague.adobe.com/docs/campaign/automation/workflows/introduction/about-workflows.html?lang=sv-SE)
+   + [Arbetsflödesdokumentation >](https://experienceleague.adobe.com/docs/campaign/automation/workflows/introduction/about-workflows.html)
 + Integritet och säkerhetshantering {#privacy}
    + [Hantera förfrågningar om användarens information](start/privacy.md)
    + [Säkerhetsanvisningar](config/security.md)
@@ -184,7 +184,7 @@ ht-degree: 29%
       + [Designfrågor](start/design-queries.md)
       + [Definiera filtervillkor](start/filter-conditions.md)
    + [Importera data](start/import.md)
-   + [Arbetsflödesdokumentation >](https://experienceleague.adobe.com/docs/campaign/automation/workflows/introduction/about-workflows.html?lang=sv-SE)
+   + [Arbetsflödesdokumentation >](https://experienceleague.adobe.com/docs/campaign/automation/workflows/introduction/about-workflows.html)
 + Integreringar {#connect}
    + [Connect Campaign med andra lösningar](connect/integration.md)
    + Campaign + Experience Platform {#ac-aep}
@@ -248,6 +248,7 @@ ht-degree: 29%
       + [Inmatningsformulär](dev/forms.md)
    + [Arbeta med datapaket](dev/packages.md)
    + [Kampanj-API:er](dev/api.md)
+   + [Fråga databasen med queryDef](dev/query-api.md)
    + REST API:er {#apis}
       + [Kom igång med REST API:er](dev/api/get-started-apis.md)
       + [Rekommendationer och begränsningar](dev/api/limitations.md)
@@ -274,6 +275,6 @@ ht-degree: 29%
       + Hantera arbetsflöden {#managing-workflows}
          + [Kontrollera ett arbetsflöde](dev/api/controlling-a-workflow.md)
          + [Utlösa en signalaktivitet](dev/api/triggering-a-signal-activity.md)
-+ [Kampanjtekniker >](https://experienceleague.adobe.com/sv/docs/campaign/technotes-ac/technotes-home)
-+ [Dokumentation för webbanvändargränssnittet för kampanj >](https://experienceleague.adobe.com/sv/docs/campaign-web/v8/campaign-web-home)
++ [Kampanjtekniker >](https://experienceleague.adobe.com/en/docs/campaign/technotes-ac/technotes-home)
++ [Dokumentation för webbanvändargränssnittet för kampanj >](https://experienceleague.adobe.com/en/docs/campaign-web/v8/campaign-web-home)
 
