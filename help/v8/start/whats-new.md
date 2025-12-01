@@ -36,7 +36,7 @@ Adobe Campaign v8 har ett **nytt webbanvändargränssnitt** tillsammans med den 
 
 Från och med Campaign v8.6 är webbgränssnittet för Campaign tillgängligt via Adobe Experience Cloud, vilket ger smidig tillgång till alla Adobe-lösningar.
 
-[Läs mer om användargränssnittet för Campaign-webben](https://experienceleague.adobe.com/en/docs/campaign-web/v8/campaign-web-home){target="_blank"}
+[Läs mer om användargränssnittet för Campaign-webben](https://experienceleague.adobe.com/sv/docs/campaign-web/v8/campaign-web-home){target="_blank"}
 
 ### Central arbetsflödeshantering{#central-wf-mgt}
 
