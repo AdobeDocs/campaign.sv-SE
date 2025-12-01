@@ -26,7 +26,7 @@ ht-degree: 0%
 
 `NLWS` (Neolane Web Services) är det globala JavaScript-objekt som används för att komma åt [!DNL Adobe Campaign]s SOAP-baserade API-metoder. Scheman är egenskaper för objektet `NLWS`, vilket gör att du kan interagera med Campaign-entiteter programmatiskt.
 
-Enligt [Campaign-JSAPI-dokumentationen](https://experienceleague.adobe.com/developer/campaign-api/api/p-14.html){target="_blank"} är &quot;scheman&quot; globala objekt av typen &quot;NLWS&quot;.&quot; Syntaxen för att komma åt schemametoder följer det här mönstret:
+Enligt [Campaign-JSAPI-dokumentationen](https://experienceleague.adobe.com/developer/campaign-api/api/p-14.html?lang=sv-SE){target="_blank"} är &quot;scheman&quot; globala objekt av typen &quot;NLWS&quot;.&quot; Syntaxen för att komma åt schemametoder följer det här mönstret:
 
 ```javascript
 NLWS.<namespace><SchemaName>.<method>()
@@ -40,7 +40,7 @@ NLWS.<namespace><SchemaName>.<method>()
 
 Vanliga API-metoder är:
 
-* `load(id)` - Läs in en entitet med dess ID. [Läs mer](https://experienceleague.adobe.com/developer/campaign-api/api/f-load.html){target="_blank"}
+* `load(id)` - Läs in en entitet med dess ID. [Läs mer](https://experienceleague.adobe.com/developer/campaign-api/api/f-load.html?lang=sv-SE){target="_blank"}
 * `create(data)` - Skapa en ny entitet
 * `save()` - Spara ändringar i en entitet
 
@@ -85,7 +85,7 @@ Statiska SOAP-metoder nås genom att en metod anropas i det objekt som represent
 
 ### Icke-statiska metoder {#non-static-methods}
 
-Om du vill använda icke-statiska SOAP-metoder måste du först hämta en entitet med metoderna `load` eller `create` i motsvarande scheman. Läs mer i [Kampanjens JSAPI-dokumentation](https://experienceleague.adobe.com/developer/campaign-api/api/p-14.html){target="_blank"}.
+Om du vill använda icke-statiska SOAP-metoder måste du först hämta en entitet med metoderna `load` eller `create` i motsvarande scheman. Läs mer i [Kampanjens JSAPI-dokumentation](https://experienceleague.adobe.com/developer/campaign-api/api/p-14.html?lang=sv-SE){target="_blank"}.
 
 ### Läsa in, spara och skapa enheter {#load-save-create}
 
@@ -138,7 +138,7 @@ Schemat `xtk:queryDef` innehåller metoder för att skapa och köra databasfråg
 * `getIfExists` - Hämta en enskild post, returnera null om den inte hittas
 * `count` - Antal poster som matchar villkor
 
-Läs mer om queryDef-metoder i [Kampanjens JSAPI-dokumentation](https://experienceleague.adobe.com/developer/campaign-api/api/s-xtk-queryDef.html){target="_blank"}.
+Läs mer om queryDef-metoder i [Kampanjens JSAPI-dokumentation](https://experienceleague.adobe.com/developer/campaign-api/api/s-xtk-queryDef.html?lang=sv-SE){target="_blank"}.
 
 ## Fråga med JSON {#query-json}
 
@@ -265,7 +265,7 @@ for each(var delivery in deliveries.delivery) {
 >* Använd `lineCount` för att explicit ange maximalt antal resultat
 >* För stora datauppsättningar (>1 000 poster) använder du arbetsflöden i stället för queryDef. Arbetsflödena är utformade för att bearbeta miljontals rader effektivt.
 
-Läs mer om [ExecuteQuery](https://experienceleague.adobe.com/developer/campaign-api/api/sm-queryDef-ExecuteQuery.html){target="_blank"} och [fråga om bästa praxis](https://opensource.adobe.com/acc-js-sdk/xtkQueryDef.html){target="_blank"}.
+Läs mer om [ExecuteQuery](https://experienceleague.adobe.com/developer/campaign-api/api/sm-queryDef-ExecuteQuery.html?lang=sv-SE){target="_blank"} och [fråga om bästa praxis](https://opensource.adobe.com/acc-js-sdk/xtkQueryDef.html){target="_blank"}.
 
 ## Fråga om övergångsdata för arbetsflöde {#workflow-transition-data}
 
@@ -310,7 +310,7 @@ for each(var record in records.getElements()) {
 
 >[!CAUTION]
 >
->Använd alltid parametriserade frågor med `$(sz)` för strängar och `$(l)` för heltal för att förhindra SQL-injektionsproblem. Läs mer i [Kampanjens JSAPI-dokumentation](https://experienceleague.adobe.com/developer/campaign-api/api/f-sqlExec.html){target="_blank"}.
+>Använd alltid parametriserade frågor med `$(sz)` för strängar och `$(l)` för heltal för att förhindra SQL-injektionsproblem. Läs mer i [Kampanjens JSAPI-dokumentation](https://experienceleague.adobe.com/developer/campaign-api/api/f-sqlExec.html?lang=sv-SE){target="_blank"}.
 
 ## Räkna poster {#count-records}
 
@@ -561,7 +561,7 @@ logInfo("Generated SQL: " + sql);
 // Output: "SELECT iRecipientId, sEmail FROM NmsRecipient WHERE sEmail IS NOT NULL"
 ```
 
-Läs mer om [BuildQuery](https://experienceleague.adobe.com/developer/campaign-api/api/sm-queryDef-BuildQuery.html){target="_blank"}.
+Läs mer om [BuildQuery](https://experienceleague.adobe.com/developer/campaign-api/api/sm-queryDef-BuildQuery.html?lang=sv-SE){target="_blank"}.
 
 ### BuildQueryEx - Hämta SQL med formatsträng {#build-query-ex}
 
@@ -586,7 +586,7 @@ logInfo("Format: " + format);
 var results = sqlSelect(format, sql);
 ```
 
-Läs mer om [BuildQueryEx](https://experienceleague.adobe.com/developer/campaign-api/api/sm-queryDef-BuildQueryEx.html){target="_blank"}.
+Läs mer om [BuildQueryEx](https://experienceleague.adobe.com/developer/campaign-api/api/sm-queryDef-BuildQueryEx.html?lang=sv-SE){target="_blank"}.
 
 ### Markera alla - Lägg till alla fält som ska markeras {#select-all}
 
@@ -609,7 +609,7 @@ var result = query.ExecuteQuery();
 // Result contains all recipient fields
 ```
 
-Läs mer om [SelectAll](https://experienceleague.adobe.com/developer/campaign-api/api/sm-queryDef-SelectAll.html){target="_blank"}.
+Läs mer om [SelectAll](https://experienceleague.adobe.com/developer/campaign-api/api/sm-queryDef-SelectAll.html?lang=sv-SE){target="_blank"}.
 
 ### Uppdatera - massuppdateringsposter {#mass-update}
 
@@ -639,7 +639,7 @@ logInfo("Mass update completed");
 >
 >Massuppdateringar påverkar alla poster som matchar where-satsen. Testa alltid var du befinner dig med en urvalsfråga först för att kontrollera vilka poster som påverkas.
 
-Läs mer om [Uppdatering](https://experienceleague.adobe.com/developer/campaign-api/api/sm-queryDef-Update.html){target="_blank"}.
+Läs mer om [Uppdatering](https://experienceleague.adobe.com/developer/campaign-api/api/sm-queryDef-Update.html?lang=sv-SE){target="_blank"}.
 
 ### GetInstanceFromModel - frågemallsinstanser {#get-instance-from-model}
 
@@ -662,7 +662,7 @@ var query = NLWS.xtkQueryDef.create(
 var instance = query.GetInstanceFromModel("nms:delivery");
 ```
 
-Läs mer om [GetInstanceFromModel](https://experienceleague.adobe.com/developer/campaign-api/api/sm-queryDef-GetInstanceFromModel.html){target="_blank"}.
+Läs mer om [GetInstanceFromModel](https://experienceleague.adobe.com/developer/campaign-api/api/sm-queryDef-GetInstanceFromModel.html?lang=sv-SE){target="_blank"}.
 
 ## Gruppåtgärder {#batch-operations}
 
@@ -901,8 +901,8 @@ Fullständig struktur för objektet `queryDef`:
 
 * [Kom igång med Campaign-API:er](api.md)
 * [Campaign JavaScript SDK - Query API](https://opensource.adobe.com/acc-js-sdk/xtkQueryDef.html){target="_blank"}
-* [queryDef API Reference](https://experienceleague.adobe.com/developer/campaign-api/api/s-xtk-queryDef.html){target="_blank"}
-* [Kampanj-JSAPI-dokumentation](https://experienceleague.adobe.com/developer/campaign-api/api/p-1.html){target="_blank"}
+* [queryDef API Reference](https://experienceleague.adobe.com/developer/campaign-api/api/s-xtk-queryDef.html?lang=sv-SE){target="_blank"}
+* [Kampanj-JSAPI-dokumentation](https://experienceleague.adobe.com/developer/campaign-api/api/p-1.html?lang=sv-SE){target="_blank"}
 * [Arbeta med scheman](schemas.md)
 * [Arbeta med frågeredigeraren](../start/query-editor.md)
 
