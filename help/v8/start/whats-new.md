@@ -5,10 +5,10 @@ feature: Overview
 role: User
 level: Beginner
 exl-id: 7771a02c-ebd4-48b6-b25e-6b6e420ad493
-source-git-commit: 061197048885a30249bd18af7f8b24cb71def742
+source-git-commit: 4b67d5f5427b1be8217f141a97c4de413f5e1f2e
 workflow-type: tm+mt
-source-wordcount: '1028'
-ht-degree: 2%
+source-wordcount: '1447'
+ht-degree: 1%
 
 ---
 
@@ -21,6 +21,22 @@ Adobe Campaign v8 har avsevärda förbättringar vad gäller infrastruktur, säk
 ![](assets/home-page.png)
 
 ## Viktiga funktioner{#key-capabilities}
+
+### Kampanjwebbgränssnitt{#new-web-ui}
+
+Adobe Campaign v8 har ett **nytt webbanvändargränssnitt** tillsammans med den traditionella klientkonsolen. Det här moderna, intuitiva gränssnittet är utformat för marknadsförare som behöver snabbare kampanjskapande och förbättrad tillgänglighet.
+
+**Viktiga fördelar:**
+
+* **Modern design** - rent, responsivt gränssnitt som är tillgängligt från alla webbläsare
+* **Förenklade arbetsflöden** - Effektivare kampanjskapande och kampanjhantering
+* **Dra-och-släpp-funktioner** - Visuell innehållsdesign utan tekniska kunskaper
+* **Snabbare introduktion** - minimal inlärningskurva för nya användare
+* **Enhetlig upplevelse** - Delar likheter med Campaign Standard för enkel övergång
+
+Från och med Campaign v8.6 är webbgränssnittet för Campaign tillgängligt via Adobe Experience Cloud, vilket ger smidig tillgång till alla Adobe-lösningar.
+
+[Läs mer om användargränssnittet för Campaign-webben](https://experienceleague.adobe.com/en/docs/campaign-web/v8/campaign-web-home){target="_blank"}
 
 ### Central arbetsflödeshantering{#central-wf-mgt}
 
@@ -92,6 +108,63 @@ Adobe Campaign kan nu utnyttja molnbaserade databastekniker för att dramatiskt 
 
 [Läs mer om företagsdistribution (FFDA)](../architecture/enterprise-deployment.md)
 
+### Prestanda i stor skala {#performance-metrics}
+
+Campaign v8 Enterprise levererar enastående prestanda för stora mängder marknadsföringsåtgärder:
+
+* **Gruppbearbetning** - Upp till **20 miljoner åtgärder per timme** för storskalig kampanjkörning
+* **Transaktionsmeddelanden** - **1 miljoner meddelanden per timme** för realtidskommunikation
+* **Skapa snabbt målgrupper** - Fråga och segmentera miljontals profiler på några minuter istället för timmar
+* **Molndatabas** - Snowflake-teknik eliminerar överbelastning av systemet under högbelastade aktiviteter
+
+Tack vare den här prestandan kan organisationer genomföra komplexa flerberöringskampanjer i företagsskala utan att kompromissa med hastighet eller tillförlitlighet.
+
+### Nya och förbättrade funktioner {#new-features}
+
+Campaign v8 innehåller kraftfulla nya funktioner och förbättringar:
+
+**AI-assistenten**
+
+Använd generativ AI för att snabba upp framtagningen av innehåll:
+
+* Generera e-post, SMS och push-meddelanden automatiskt
+* Anpassa budskapen efter varumärkesets röst och riktlinjer
+* Poängjustering för att säkerställa konsekvens
+* Minska tiden för framtagning av innehåll samtidigt som kvaliteten bibehålls
+
+**Omfattande push-meddelanden**
+
+Skapa engagerande mobilupplevelser med:
+
+* Bilder, videor och carousel i push-meddelanden
+* Interaktiva knappar och timers
+* Förbättrad anpassning för iOS och Android
+* Förbättrat engagemang genom visuell berättelse
+
+**Uppgraderad SMS-infrastruktur (v2.0)**
+
+* Förbättrad tillförlitlighet och leveransgrad
+* Bättre kompatibilitet med SMPP-anslutningar
+* Förbättrad genomströmning för SMS-kampanjer i stora volymer
+* Avancerad leveransövervakning och rapportering
+
+**Förbättrade integreringar**
+
+* **Adobe Experience Manager as a Cloud Service** - Smidig innehållshantering och resursintegrering
+* **REST API:er** - Modern API-arkitektur för enklare integrering och utveckling
+* **Dynamisk rapportering** - Avancerade analysfunktioner för Campaign Standard-användare som övergår till v8
+
+### Automatiska uppgraderingar och underhåll {#automatic-upgrades}
+
+Hanterade molntjänster för Campaign v8 eliminerar bördan av manuella uppgraderingar:
+
+* **Kontinuerlig leveransmodell** - Automatiska uppgraderingar till den senaste stabila versionen
+* **Noll driftstopp** - Uppgraderingar som utförts med minimal påverkan på åtgärder
+* **Omedelbar åtkomst** - Få nya funktioner och säkerhetsuppdateringar så snart de släppts
+* **Minskad IT-börda** - Adobe hanterar allt infrastrukturunderhåll och alla uppdateringar
+* **Koordinerad schemaläggning** - Adobe arbetar med dig för att planera timingen för uppgradering
+
+Detta tillvägagångssätt garanterar att Campaign-instansen alltid är säker, optimerad och utrustad med de senaste funktionerna utan att ni behöver interna IT-resurser för planering och genomförande av uppgraderingar.
 
 ## Självbetjäningsadministratörsgränssnitt{#self-service-admin}
 
