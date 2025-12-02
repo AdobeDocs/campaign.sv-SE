@@ -5,9 +5,9 @@ user-guide-description: Produktdokumentation för Adobe Campaign v8 (klientkonso
 title: Adobe Campaign v8-dokumentation
 description: Kampanjdokumentation v8
 breadcrumb-title: Dokumentation om Campaign v8
-source-git-commit: 16c9cc60041f41702b4983383954033b06ba1d99
+source-git-commit: d886072b3a21d5e5b70662c67919223cf9a1b68e
 workflow-type: tm+mt
-source-wordcount: '816'
+source-wordcount: '815'
 ht-degree: 28%
 
 ---
@@ -121,7 +121,7 @@ ht-degree: 28%
          + [Samla in och bearbeta händelser](send/event-processing.md)
          + [Förstå händelsebeskrivning](send/event-description.md)
          + [Skicka och övervaka meddelanden](send/delivery-execution.md)
-+ Profil och målgrupper {#audience}
++ Profiler och målgrupper {#audience}
    + [Kom igång med profiler och målgrupper](audiences/gs-audiences.md)
    + [Arbeta med målgrupper](start/audiences.md)
    + [Åtkomstprofiler](audiences/view-profiles.md)
@@ -138,12 +138,12 @@ ht-degree: 28%
       + [Dela målgrupper med Adobe lösningar](start/shared-audiences.md)
    + [Bästa praxis](audiences/audiences-best-practices.md)
    + [Hantera prenumerationer](start/subscriptions.md)
-+ Landningssidor och webbinnehåll {#content}
++ Landningssidor och Forms {#content}
    + [Skapa landningssidor](dev/landing-pages.md)
    + [Designa webbprogram och formulär](dev/webapps.md)
 + Arbetsflöden {#workflows}
    + [Kom igång med arbetsflöden](config/workflows.md)
-   + [Arbetsflödesdokumentation >](https://experienceleague.adobe.com/docs/campaign/automation/workflows/introduction/about-workflows.html?lang=sv-SE)
+   + [Arbetsflödesdokumentation >](https://experienceleague.adobe.com/docs/campaign/automation/workflows/introduction/about-workflows.html)
 + Integritet och säkerhet {#privacy}
    + [Hantera förfrågningar om användarens information](start/privacy.md)
    + [Säkerhetsanvisningar](config/security.md)
@@ -188,7 +188,7 @@ ht-degree: 28%
       + [Designfrågor](start/design-queries.md)
       + [Definiera filtervillkor](start/filter-conditions.md)
    + [Importera data](start/import.md)
-   + [Arbetsflödesdokumentation >](https://experienceleague.adobe.com/docs/campaign/automation/workflows/introduction/about-workflows.html?lang=sv-SE)
+   + [Arbetsflödesdokumentation >](https://experienceleague.adobe.com/docs/campaign/automation/workflows/introduction/about-workflows.html)
 + Integreringar {#connect}
    + [Connect Campaign med andra lösningar](connect/integration.md)
    + Campaign + Experience Platform {#ac-aep}
@@ -274,6 +274,6 @@ ht-degree: 28%
          + [Kontrollera ett arbetsflöde](dev/api/controlling-a-workflow.md)
          + [Utlösa en signalaktivitet](dev/api/triggering-a-signal-activity.md)
 + Ytterligare resurser {#resources}
-   + [Tekniska kommentarer för kampanj >](https://experienceleague.adobe.com/sv/docs/campaign/technotes-ac/technotes-home)
-   + [Dokumentation för kampanjwebbanvändargränssnitt >](https://experienceleague.adobe.com/sv/docs/campaign-web/v8/campaign-web-home)
+   + [Tekniska kommentarer för kampanj >](https://experienceleague.adobe.com/en/docs/campaign/technotes-ac/technotes-home)
+   + [Dokumentation för kampanjwebbanvändargränssnitt >](https://experienceleague.adobe.com/en/docs/campaign-web/v8/campaign-web-home)
 
