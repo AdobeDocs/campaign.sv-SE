@@ -6,9 +6,9 @@ role: Data Engineer
 level: Intermediate
 badge: label="Begränsad tillgänglighet" type="Informative"
 exl-id: 0f22b17c-ed01-4add-8300-8689b8a9f963
-source-git-commit: 1fb93efac4fee4965213f8b42f518f2c10638e20
+source-git-commit: 11a9f17bc5c1ec8388de294395a6d7b7a5e8a7e6
 workflow-type: tm+mt
-source-wordcount: '1349'
+source-wordcount: '1353'
 ht-degree: 2%
 
 ---
@@ -55,37 +55,43 @@ Registrering av push-autentiseringsuppgifter krävs för mobilappen för att god
 
 1. Välj operativsystemet från **[!UICONTROL Mobile Application Configuration]**:
 
-   * **För iOS**
+>[!BEGINTABS]
 
-     ![](assets/push-config-2.png)
+>[!TAB iOS]
 
-      1. Ange mobilappens **paket-ID** i fältet **[!UICONTROL App ID (iOS Bundle ID)]**.
+![](assets/push-config-2.png)
 
-         Program-ID:t finns på fliken **Allmänt** för det primära målet i **XCode** för ditt Apple-utvecklarkonto.
+1. Ange mobilappens **paket-ID** i fältet **[!UICONTROL App ID (iOS Bundle ID)]**.
 
-      1. Aktivera **[!UICONTROL Push Credentials]** om du vill lägga till dina autentiseringsuppgifter.
+   Program-ID:t finns på fliken **Allmänt** för det primära målet i **XCode** för ditt Apple-utvecklarkonto.
 
-      1. Dra och släpp .p8-filen Apple Push Notification Authentication Key.
+1. Aktivera **[!UICONTROL Push Credentials]** om du vill lägga till dina autentiseringsuppgifter.
 
-         Den här nyckeln kan hämtas från sidan **Certifikat**, **Identifierare** och **Profiler** på ditt Apple-utvecklarkonto.
+1. Dra och släpp .p8-filen Apple Push Notification Authentication Key.
 
-      1. Ange **nyckel-ID**. Detta är en 10-teckensträng som tilldelas när en p8-autentiseringsnyckel skapas.
+   Den här nyckeln kan hämtas från sidan **Certifikat**, **Identifierare** och **Profiler** på ditt Apple-utvecklarkonto.
 
-         Den finns på fliken **Tangenter** på sidan **Certifikat**, **Identifierare** och **Profiler** i ditt Apple-utvecklarkonto.
+1. Ange **nyckel-ID**. Detta är en 10-teckensträng som tilldelas när en p8-autentiseringsnyckel skapas.
 
-      1. Ange **Team-ID**. Detta är ett strängvärde som finns under fliken **Medlemskap**.
-
-   * **För Android**
-
-     ![](assets/push-config-3.png)
-
-      1. Ange **[!UICONTROL App ID (Android package name)]**. Paketnamnet är vanligtvis program-ID:t i din `build.gradle`-fil.
-
-      1. Växla **[!UICONTROL Push Credentials]** om du vill lägga till dina autentiseringsuppgifter.
-
-      1. Dra och släpp FCM-push-inloggningsuppgifterna. Mer information om hur du hämtar push-autentiseringsuppgifter finns i [Google-dokumentationen](https://firebase.google.com/docs/admin/setup#initialize-sdk){target="_blank"}.
+       Den finns på fliken **Keys** i sidan **Certificates**, **Identifiers** och **Profiles** på ditt Apple-utvecklarkonto.
+   
+1. Ange **Team-ID**. Detta är ett strängvärde som finns under fliken **Medlemskap**.
 
 1. Klicka på **[!UICONTROL Save]** om du vill skapa appkonfigurationen.
+
+>[!TAB Android]
+
+![](assets/push-config-3.png)
+
+1. Ange **[!UICONTROL App ID (Android package name)]**. Paketnamnet är vanligtvis program-ID:t i din `build.gradle`-fil.
+
+1. Växla **[!UICONTROL Push Credentials]** om du vill lägga till dina autentiseringsuppgifter.
+
+1. Dra och släpp FCM-push-inloggningsuppgifterna. Mer information om hur du hämtar push-autentiseringsuppgifter finns i [Google-dokumentationen](https://firebase.google.com/docs/admin/setup#initialize-sdk){target="_blank"}.
+
+1. Klicka på **[!UICONTROL Save]** om du vill skapa appkonfigurationen.
+
+>[!ENDTABS]
 
 ## Konfigurera programinställningarna i Adobe Campaign{#push-config-campaign}
 
@@ -105,7 +111,7 @@ Följ stegen nedan för att skapa en tjänst för att skicka push-meddelanden:
 
    >[!NOTE]
    >
-   >Standardmålmappningen för **[!UICONTROL Subscriber applications (nms:appSubscriptionRcp)]** är länkad till mottagartabellen. Om du vill använda en annan målmappning måste du skapa en ny målmappning och ange den i fältet **[!UICONTROL Target mapping]** för tjänsten. Läs mer om målmappningar på [den här sidan](../audiences/target-mappings.md).
+   >Standardmålmappningen **[!UICONTROL Subscriber applications (nms:appSubscriptionRcp)]** är länkad till mottagartabellen. Om du vill använda en annan målmappning måste du skapa en ny målmappning och ange den i fältet **[!UICONTROL Target mapping]** för tjänsten. Läs mer om målmappningar på [den här sidan](../audiences/target-mappings.md).
 
 1. Använd sedan ikonen **[!UICONTROL Add]** till höger för att definiera de mobilprogram som använder den här tjänsten.
 

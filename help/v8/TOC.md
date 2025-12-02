@@ -5,9 +5,9 @@ user-guide-description: Produktdokumentation för Adobe Campaign v8 (klientkonso
 title: Adobe Campaign v8-dokumentation
 description: Kampanjdokumentation v8
 breadcrumb-title: Dokumentation om Campaign v8
-source-git-commit: 26fededf0ee83299477e45e891df30a46c6d40fe
+source-git-commit: 48c6dfc89fec6ad8cff7d17c1892f7c15b497f99
 workflow-type: tm+mt
-source-wordcount: '816'
+source-wordcount: '823'
 ht-degree: 28%
 
 ---
@@ -40,10 +40,15 @@ ht-degree: 28%
    + [Från Campaign Standard till v8](start/acs-to-v8.md)
    + [Vanliga frågor och svar](start/campaign-faq-comprehensive.md)
    + [Vanliga frågor och svar](start/campaign-faq.md)
++ Administration och behörigheter {#permissions}
+   + [Kom igång med behörigheter](start/gs-permissions.md)
+   + [Hantera användarbehörigheter](start/manage-permissions.md)
+   + [Lägg till behörigheter i mappar](start/folder-permissions.md)
+   + [Kontrollpanelen](config/self-service.md)
 + Kampanjhantering {#campaigns}
    + [Kom igång med kampanjer](start/campaigns.md)
-   + [Kampanjsamordning >](https://experienceleague.adobe.com/docs/campaign/automation/campaign-orchestration/set-up-campaigns.html?lang=sv)
-+ Skicka meddelanden{#send}
+   + [Dokumentation för kampanjsamordning >](https://experienceleague.adobe.com/docs/campaign/automation/campaign-orchestration/set-up-campaigns.html?lang=sv)
++ Skicka meddelanden {#send}
    + [Kom igång med meddelanden](start/gs-message.md)
    + [Skapa din första leverans](start/create-message.md)
    + [Arbeta med leveransmallar](send/create-templates.md)
@@ -60,22 +65,20 @@ ht-degree: 28%
       + [Bifoga filer i ett e-postmeddelande](send/attaching-files.md)
    + SMS {#sms}
       + [Kom igång med SMS](send/sms/sms.md)
+      + [SMS-kanalsegenskaper](send/sms/sms-channel.md)
+      + [Skapa en SMS-leverans](send/sms/create-sms.md)
+      + [Definiera innehållet](send/sms/sms-content.md)
+      + [Välj målgruppen](send/sms/sms-audience.md)
+      + [Skicka SMS-korrektur](send/sms/sms-proofs.md)
+      + [Skicka till målgruppen](send/sms/sms-send.md)
+      + [Övervaka och spåra SMS](send/sms/sms-monitor.md)
       + Konfigurera SMS-kanal {#config-sms}
          + [SMS-leveransinställningar](send/sms/sms-delivery-settings.md)
          + [Inställningar för externt SMPP-konto](send/sms/smpp-external-account.md)
-         + [SMS-kanalsegenskaper](send/sms/sms-channel.md)
          + [Verifierar en SMPP-anslutning](send/sms/smpp-connection.md)
          + [Fristående instans](send/sms/sms-standalone-instance.md)
          + [Infrastruktur för mellanleverantörer](send/sms/sms-mid-sourcing.md)
          + [SMPP-anslutningsbeskrivning](send/sms/smpp-connector-delivery.md)
-      + Skapa ett SMS  {#create-sms}
-         + [Skapa en SMS-leverans](send/sms/create-sms.md)
-         + [Definiera innehållet](send/sms/sms-content.md)
-         + [Välj målgruppen](send/sms/sms-audience.md)
-      + Validera och skicka SMS {#validate-sms}
-         + [Skicka SMS-korrektur](send/sms/sms-proofs.md)
-         + [Skicka till målgruppen](send/sms/sms-send.md)
-      + [Övervaka och spåra SMS](send/sms/sms-monitor.md)
    + Push-meddelanden {#push}
       + [Skapa och skicka push-meddelanden](send/push.md)
       + Rich push {#rich-push}
@@ -83,10 +86,11 @@ ht-degree: 28%
          + [Designa en omfattande iOS-leverans](send/rich-push-ios.md)
       + [Konfigurera kanal för push-meddelanden](send/push-settings.md)
       + [Konfigurera push-meddelanden med datainsamling](send/push-data-collection.md)
-   + [LINE-meddelanden](send/line/line.md)
-   + [Direktmeddelande](send/direct-mail.md)
-   + [X (Twitter)](send/twitter.md)
-   + [Anpassad extern kanal](send/custom-channel.md)
+   + Andra kanaler {#other-channels}
+      + [LINE-meddelanden](send/line/line.md)
+      + [Direktmeddelande](send/direct-mail.md)
+      + [X (Twitter)](send/twitter.md)
+      + [Anpassad extern kanal](send/custom-channel.md)
    + Anpassa innehåll {#personalize}
       + [Kom igång med personalisering](send/personalize.md)
       + [Personaliseringsdata](send/personalization-data.md)
@@ -134,21 +138,21 @@ ht-degree: 28%
       + [Dela målgrupper med Adobe lösningar](start/shared-audiences.md)
    + [Bästa praxis](audiences/audiences-best-practices.md)
    + [Hantera prenumerationer](start/subscriptions.md)
-+ Innehållshantering {#content}
++ Landningssidor och webbinnehåll {#content}
    + [Skapa landningssidor](dev/landing-pages.md)
    + [Designa webbprogram och formulär](dev/webapps.md)
 + Arbetsflöden {#workflows}
    + [Kom igång med arbetsflöden](config/workflows.md)
-   + [Arbetsflödesdokumentation >](https://experienceleague.adobe.com/docs/campaign/automation/workflows/introduction/about-workflows.html?lang=sv-SE)
+   + [Fullständig arbetsflödesdokumentation >](https://experienceleague.adobe.com/docs/campaign/automation/workflows/introduction/about-workflows.html)
 + Integritet och säkerhetshantering {#privacy}
    + [Hantera förfrågningar om användarens information](start/privacy.md)
    + [Säkerhetsanvisningar](config/security.md)
    + [Förbättrat säkerhetstillägg](config/enhanced-security.md)
-+ Beslutshantering {#offers}
++ Erbjudandehantering och interaktioner {#offers}
    + [Kom igång med interaktion i realtid](interaction/interaction.md)
    + [Miljö och arkitektur](interaction/interaction-architecture.md)
    + [Bästa praxis](interaction/interaction-best-practices.md)
-   + Definiera inställningar{#interaction-settings}
+   + Konfigurationsinställningar {#interaction-settings}
       + [Skapa operatorer](interaction/interaction-operators.md)
       + [Skapa miljöer](interaction/interaction-env.md)
       + [Skapa fördefinierade filter](interaction/interaction-predefined-filters.md)
@@ -183,8 +187,9 @@ ht-degree: 28%
       + [Arbeta med frågeredigeraren](start/query-editor.md)
       + [Designfrågor](start/design-queries.md)
       + [Definiera filtervillkor](start/filter-conditions.md)
+      + [Arbeta med målgruppsfilter](audiences/create-filters.md)
    + [Importera data](start/import.md)
-   + [Arbetsflödesdokumentation >](https://experienceleague.adobe.com/docs/campaign/automation/workflows/introduction/about-workflows.html?lang=sv-SE)
+   + [Arbetsflödesdokumentation >](https://experienceleague.adobe.com/docs/campaign/automation/workflows/introduction/about-workflows.html)
 + Integreringar {#connect}
    + [Connect Campaign med andra lösningar](connect/integration.md)
    + Campaign + Experience Platform {#ac-aep}
@@ -203,12 +208,6 @@ ht-degree: 28%
       + [Arbeta med Campaign och SFDC](connect/ac-sfdc.md)
       + [Arbeta med Campaign och Microsoft Dynamics](connect/ac-ms-dyn.md)
       + [Synkronisera data](connect/crm-data-sync.md)
-+ Administration {#admin}
-   + Användare och behörigheter {#permissions}
-      + [Kom igång med behörigheter](start/gs-permissions.md)
-      + [Hantera användarbehörigheter](start/manage-permissions.md)
-      + [Lägg till behörigheter i mappar](start/folder-permissions.md)
-   + [Kontrollpanelen](config/self-service.md)
 + Arkitektur {#architecture}
    + [Globala principer](architecture/general-architecture.md)
    + [Arkitekturmodeller](architecture/architecture.md)
@@ -252,10 +251,10 @@ ht-degree: 28%
    + REST API:er {#apis}
       + [Kom igång med REST API:er](dev/api/get-started-apis.md)
       + [Rekommendationer och begränsningar](dev/api/limitations.md)
-      + [Varför använda REST API:er](dev/api/why-using-campaign-standard-apis.md)
+      + [När REST API:er ska användas](dev/api/why-using-campaign-standard-apis.md)
       + [Konfigurera API-åtkomst](dev/api/setting-up-api-access.md)
       + Globala begrepp {#global-concepts}
-         + [Måste läsas](dev/api/must-read.md)
+         + [Grundläggande begrepp](dev/api/must-read.md)
          + [Slutpunkter](dev/api/endpoints.md)
          + [Metadatamekanism](dev/api/metadata-mechanism.md)
          + [Verb](dev/api/verbs.md)
@@ -275,6 +274,7 @@ ht-degree: 28%
       + Hantera arbetsflöden {#managing-workflows}
          + [Kontrollera ett arbetsflöde](dev/api/controlling-a-workflow.md)
          + [Utlösa en signalaktivitet](dev/api/triggering-a-signal-activity.md)
-+ [Kampanjtekniker >](https://experienceleague.adobe.com/sv/docs/campaign/technotes-ac/technotes-home)
-+ [Dokumentation för webbanvändargränssnittet för kampanj >](https://experienceleague.adobe.com/sv/docs/campaign-web/v8/campaign-web-home)
++ Ytterligare resurser {#resources}
+   + [Tekniska kommentarer för kampanj >](https://experienceleague.adobe.com/en/docs/campaign/technotes-ac/technotes-home)
+   + [Dokumentation för kampanjwebbanvändargränssnitt >](https://experienceleague.adobe.com/en/docs/campaign-web/v8/campaign-web-home)
 
