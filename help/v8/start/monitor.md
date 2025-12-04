@@ -51,11 +51,11 @@ Arbetsflöden är nödvändiga för att automatisera era marknadsföringskampanj
 
 **Övervaka följande arbetsflödeselement:**
 
-**Körningsstatus för arbetsflöde** - Spåra om arbetsflöden körs, pausas, misslyckas eller slutförs. [Läs mer om arbetsflödeskörning](https://experienceleague.adobe.com/docs/campaign/automation/workflows/monitoring-workflows/monitor-workflow-execution.html){target="_blank"}
+**Körningsstatus för arbetsflöde** - Spåra om arbetsflöden körs, pausas, misslyckas eller slutförs. [Läs mer om arbetsflödeskörning](https://experienceleague.adobe.com/docs/campaign/automation/workflows/monitoring-workflows/monitor-workflow-execution.html?lang=sv-SE){target="_blank"}
 
 **Loggar för aktivitetskörning** - Få tillgång till detaljerade loggar för varje arbetsflödesaktivitet för att felsöka problem och optimera prestanda.
 
-**heatmap för arbetsflöde** - Visa mönster för arbetsflödeskörning, identifiera flaskhalsar och övervaka samtidiga arbetsflöden. Workflow HeatMap är tillgängligt för Campaign-administratörer. [Läs mer om heatmap för arbetsflöde](https://experienceleague.adobe.com/docs/campaign/automation/workflows/monitoring-workflows/heatmap.html){target="_blank"}
+**heatmap för arbetsflöde** - Visa mönster för arbetsflödeskörning, identifiera flaskhalsar och övervaka samtidiga arbetsflöden. Workflow HeatMap är tillgängligt för Campaign-administratörer. [Läs mer om heatmap för arbetsflöde](https://experienceleague.adobe.com/docs/campaign/automation/workflows/monitoring-workflows/heatmap.html?lang=sv-SE){target="_blank"}
 
 **Arbetsflödeshistorik** - Spåra alla arbetsflödeskörningar och ändringar över tid för att förstå arbetsflödets beteende och prestanda.
 
@@ -82,13 +82,13 @@ Läs mer om [Granskningsspår](../reporting/audit-trail.md)
 
 Campaign v8 har flera övervakningsfunktioner för att spåra instansens prestanda och säkerställa optimal funktion:
 
-**Databasövervakning** - Övervaka databasanvändning och -kapacitet via Kontrollpanelen för att säkerställa optimala prestanda och lagringshantering. [Läs mer om databasövervakning](https://experienceleague.adobe.com/docs/control-panel/using/performance-monitoring/database-monitoring.html){target="_blank"}
+**Databasövervakning** - Övervaka databasanvändning och -kapacitet via Kontrollpanelen för att säkerställa optimala prestanda och lagringshantering. [Läs mer om databasövervakning](https://experienceleague.adobe.com/docs/control-panel/using/performance-monitoring/database-monitoring.html?lang=sv-SE){target="_blank"}
 
-**Övervakning av aktiva profiler** - Spåra aktiv profilanvändning mot avtalsgränserna för att upprätthålla regelefterlevnad och optimera resursallokering. [Läs mer om aktiva profiler](https://experienceleague.adobe.com/docs/control-panel/using/performance-monitoring/active-profiles-monitoring.html){target="_blank"}
+**Övervakning av aktiva profiler** - Spåra aktiv profilanvändning mot avtalsgränserna för att upprätthålla regelefterlevnad och optimera resursallokering. [Läs mer om aktiva profiler](https://experienceleague.adobe.com/docs/control-panel/using/performance-monitoring/active-profiles-monitoring.html?lang=sv-SE){target="_blank"}
 
 **Arbetsflödesövervakning** - Övervaka arbetsflödets körningsstatus för att identifiera tidskrävande arbetsflöden och se till att alla tekniska arbetsflöden körs korrekt. [Läs mer om tekniska arbetsflöden](#technical-workflows)
 
-**Leveransdataflöde och fördröjning** - Spåra leveransdataflöde (meddelanden som skickas per timme) och fördröjning för transaktionskommunikation via Kontrollpanelen. [Läs mer om genomströmningsövervakning](https://experienceleague.adobe.com/docs/control-panel/using/performance-monitoring/throughputs-latencies.html){target="_blank"}
+**Leveransdataflöde och fördröjning** - Spåra leveransdataflöde (meddelanden som skickas per timme) och fördröjning för transaktionskommunikation via Kontrollpanelen. [Läs mer om genomströmningsövervakning](https://experienceleague.adobe.com/docs/control-panel/using/performance-monitoring/throughputs-latencies.html?lang=sv-SE){target="_blank"}
 
 >[!NOTE]
 >
@@ -113,7 +113,7 @@ Tekniska arbetsflöden är viktiga processer som körs i bakgrunden för att beh
 | **Leveransuppdatering** | Uppdaterar leveransregler och mönster för skräppostfilter |
 | **Databasrensning** | Tar bort gamla loggar för leverans och spårning |
 
-Läs mer om [tekniska arbetsflöden](https://experienceleague.adobe.com/docs/campaign/automation/workflows/introduction/wf-type/technical-workflows.html){target="_blank"}
+Läs mer om [tekniska arbetsflöden](https://experienceleague.adobe.com/docs/campaign/automation/workflows/introduction/wf-type/technical-workflows.html?lang=sv-SE){target="_blank"}
 
 ### Kontrollpanelen i Campaign {#control-panel}
 

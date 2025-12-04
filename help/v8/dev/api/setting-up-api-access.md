@@ -20,7 +20,7 @@ Adobe Campaign Standard API-åtkomst konfigureras enligt stegen nedan. Var och e
 
 >[!IMPORTANT]
 >
->Om du vill hantera certifikat i [Adobe Developer](https://developer.adobe.com/) måste du ha **systemadministratörsbehörighet** för organisationen eller ett [utvecklarkonto](https://helpx.adobe.com/enterprise/using/manage-developers.html) i Admin Console.
+>Om du vill hantera certifikat i [Adobe Developer](https://developer.adobe.com/) måste du ha **systemadministratörsbehörighet** för organisationen eller ett [utvecklarkonto](https://helpx.adobe.com/se/enterprise/using/manage-developers.html) i Admin Console.
 
 1. **Kontrollera att du har ett digitalt certifikat** eller skapa ett om det behövs. De offentliga och privata nycklarna som tillhandahålls med certifikatet behövs i följande steg.
 1. **Skapa en ny integrering av Adobe Campaign-tjänsten** i [Adobe Developer](https://developer.adobe.com/) och konfigurera den. Dina autentiseringsuppgifter genereras sedan (API-nyckel, klienthemlighet...).

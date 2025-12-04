@@ -78,7 +78,7 @@ Den här rapporten innehåller en lista över besökta sidor efter en leverans.
 
 I det här exemplet är det lättare att förstå skillnaden mellan en person/en person och en mottagare i Adobe Campaign.
 
-Läs mer om personer/personer och mottagare i [Campaign Classic v7-dokumentationen](https://experienceleague.adobe.com/docs/campaign-classic/using/reporting/reports-on-deliveries/person-people-recipients.html#reporting){target="_blank"}
+Läs mer om personer/personer och mottagare i [Campaign Classic v7-dokumentationen](https://experienceleague.adobe.com/docs/campaign-classic/using/reporting/reports-on-deliveries/person-people-recipients.html?lang=sv-SE#reporting){target="_blank"}
 
 **Spårningsindikatorer**
 
