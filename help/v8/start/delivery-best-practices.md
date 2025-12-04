@@ -96,7 +96,7 @@ Var noga med att följa följande riktlinjer:
 
 Följ stegen nedan för att konfigurera adresser i Campaign-gränssnittet:
 
-1. Klicka på länken [ i ](../send/create-templates.md)leveransmallen **[!UICONTROL From]**. Ange inställningarna i fönstret **[!UICONTROL Email header parameters]**.
+1. Klicka på länken [&#x200B; i &#x200B;](../send/create-templates.md)leveransmallen **[!UICONTROL From]**. Ange inställningarna i fönstret **[!UICONTROL Email header parameters]**.
 
 1. I fältet **[!UICONTROL Sender address]** kontrollerar du att adressdomänen är densamma som den underdomän som du har delegerat till Adobe. Du kan ändra den del som föregår @ men inte domänadressen.
 
@@ -128,11 +128,11 @@ Om du vill anpassa dina meddelanden kan du använda mottagarnas data som lagras 
 
 * Kontrollera dina personaliseringsinställningar - Kontrollera att meddelandeinnehållet är korrekt utformat för att undvika fel som kan relateras till personalisering. En Adobe Campaign-personaliseringstagg har alltid följande format: `<%=table.field%>`. Felaktig användning av parametrar i personaliseringsblock kan vara ett problem. Variabler i JavaScript bör till exempel användas på följande sätt:
 
-  ``
+  &grave;&grave;
   <%
   var brand = "xxx"
   %>
-  ``
+  &grave;&grave;
 
   Mer information om anpassningsblock finns i [det här avsnittet](../send/personalization-blocks.md).
 
@@ -294,7 +294,7 @@ För att leveransen ska bli framgångsrik vill ni skicka det mest relevanta pers
 
 I Campaign är leveransmallarna som standard avsedda för **mottagare**. Adobe Campaign erbjuder andra målmappningar för leveranser som du kan ändra efter behov. Du kan till exempel leverera till besökare vars profiler har samlats in via sociala nätverk eller till besökare som prenumererar på en informationstjänst.
 
-Dessa mappningar presenteras [ i det här avsnittet](../audiences/target-mappings.md).
+Dessa mappningar presenteras [&#x200B; i det här avsnittet](../audiences/target-mappings.md).
 
 ### Externa mottagare {#external-recipients}
 
