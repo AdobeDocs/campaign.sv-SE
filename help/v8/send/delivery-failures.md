@@ -41,7 +41,7 @@ Mjuka studsar är tillfälliga fel som internetleverantörer genererar när de h
 
 Feltypen **Ignorerad** är känd som tillfällig, till exempel &quot;Frånvarande&quot;, eller ett tekniskt fel, till exempel om avsändartypen är &quot;postmaster&quot;.
 
-Feedback-slingan fungerar som studsmeddelanden: när en användare kvalificerar ett e-postmeddelande som skräppost kan du konfigurera e-postregler i Adobe Campaign så att alla leveranser till den här användaren blockeras. Adresserna till dessa användare är blocklist trots att de inte klickade på länken för att ta bort prenumerationen. Adresser läggs till i karantäntabellen (**NmsAddress**) och inte i mottagartabellen (**NmsRecipient**) med statusen **[!UICONTROL Denylisted]**. Läs mer om feedbackloopmekanismen i [Adobe Deliverability Best Practices Guide](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/transition-process/infrastructure.html#feedback-loops){target="_blank"}.
+Feedback-slingan fungerar som studsmeddelanden: när en användare kvalificerar ett e-postmeddelande som skräppost kan du konfigurera e-postregler i Adobe Campaign så att alla leveranser till den här användaren blockeras. Adresserna till dessa användare är blocklist trots att de inte klickade på länken för att ta bort prenumerationen. Adresser läggs till i karantäntabellen (**NmsAddress**) och inte i mottagartabellen (**NmsRecipient**) med statusen **[!UICONTROL Denylisted]**. Läs mer om feedbackloopmekanismen i [Adobe Deliverability Best Practices Guide](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/transition-process/infrastructure.html?lang=sv-SE#feedback-loops){target="_blank"}.
 
 ## Synkrona och asynkrona fel {#synchronous-and-asynchronous-errors}
 
@@ -112,7 +112,7 @@ Om giltighetsperioden till exempel är inställd på standardvärdet 5 dagar i C
 
 När ett meddelande har funnits i MTA-kön i 3,5 dagar och inte kunnat levereras, kommer det att gå ut och dess status kommer att uppdateras från **[!UICONTROL Sent]** till **[!UICONTROL Failed]** i leveransloggarna.
 
-<!--For more on the validity period, see the [Adobe Campaign Classic v7 documentation](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/key-steps-when-creating-a-delivery/steps-sending-the-delivery.html#defining-validity-period){target="_blank"}.-->
+<!--For more on the validity period, see the [Adobe Campaign Classic v7 documentation](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/key-steps-when-creating-a-delivery/steps-sending-the-delivery.html?lang=sv-SE#defining-validity-period){target="_blank"}.-->
 
 
 ## E-postfeltyper {#email-error-types}
@@ -723,7 +723,7 @@ DLV-XXXX The count of message prepared (123) is greater than the number of messa
 
 **Orsak**: Det finns ett anpassningsfält eller -block i e-postmeddelandet som har mer än ett värde för mottagaren. Ett personaliseringsblock används och hämtar mer än en post för en viss mottagare.
 
-**Upplösning**: Kontrollera de personaliseringsdata som används och kontrollera sedan målet för mottagare som har mer än en post för något av dessa fält. Du kan också använda en **[!UICONTROL Deduplication]**-aktivitet i målarbetsflödet före leveransaktiviteten för att se till att det bara finns ett personaliseringsfält åt gången. Mer information om borttagning av dubbletter finns i [arbetsflödesdokumentationen](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/targeting-activities/deduplication.html){target="_blank"}.
+**Upplösning**: Kontrollera de personaliseringsdata som används och kontrollera sedan målet för mottagare som har mer än en post för något av dessa fält. Du kan också använda en **[!UICONTROL Deduplication]**-aktivitet i målarbetsflödet före leveransaktiviteten för att se till att det bara finns ett personaliseringsfält åt gången. Mer information om borttagning av dubbletter finns i [arbetsflödesdokumentationen](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/targeting-activities/deduplication.html?lang=sv-SE){target="_blank"}.
 
 ### Automatisk svarshantering {#auto-reply-handling}
 
