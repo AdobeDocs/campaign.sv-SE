@@ -3,9 +3,9 @@ title: Inbyggda leveransrapporter från Adobe Campaign
 description: Inbyggda leveransrapporter från Adobe Campaign
 feature: Reporting
 exl-id: e9031d65-6e0e-49da-9990-7687d2a77591
-source-git-commit: f75b95faa570d7c3f59fd8fb15692d3c3cbe0d36
+source-git-commit: 3453820bb0eca7847ec55d7e6ea15766a57ab94e
 workflow-type: tm+mt
-source-wordcount: '1021'
+source-wordcount: '1019'
 ht-degree: 1%
 
 ---
@@ -40,7 +40,7 @@ Följ stegen nedan för att få åtkomst till rapporter:
 
 ## Spårningsindikatorer {#tracking-indicators}
 
-I den här rapporten kombineras de viktigaste indikatorerna för att spåra mottagarnas beteende när de tar emot leveransen. Den ger tillgång till leverans- och mottagningsstatistik, öppnings- och klickfrekvens, genererade klickströmmar, webbspårning samt delar aktiviteter till sociala nätverk.
+I den här rapporten kombineras de viktigaste indikatorerna för att spåra mottagarnas beteende när de tar emot leveransen. Den ger tillgång till leverans- och mottagningsstatistik, öppnings- och klickfrekvens, genererade klickströmmar samt delar aktiviteter till sociala nätverk.
 
 >[!NOTE]
 >

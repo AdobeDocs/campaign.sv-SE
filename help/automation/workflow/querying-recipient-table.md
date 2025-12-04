@@ -3,12 +3,12 @@ product: campaign
 title: Fråga mottagartabellen
 description: Lär dig ställa frågor i mottagartabellen
 feature: Query Editor
-role: User, Data Engineer
+role: User, Developer
 version: Campaign v8, Campaign Classic v7
 exl-id: 7f859ce9-7ab8-46e1-8bd6-43aaffe30da2
-source-git-commit: 4cbccf1ad02af9133d51933e3e0d010b5c8c43bd
+source-git-commit: 00d9c3229b7bbabfec3b1750ae84978545fdc218
 workflow-type: tm+mt
-source-wordcount: '392'
+source-wordcount: '390'
 ht-degree: 3%
 
 ---
@@ -21,7 +21,7 @@ I det här exemplet vill vi återskapa namn och e-post för mottagare vars e-pos
 
 * Vilken tabell ska vi välja?
 
-  mottagartabellen (nms:mottagare)
+  Mottagartabellen (nms:recipient)
 
 * Fält som ska markeras som utdatakolumner
 
@@ -37,7 +37,7 @@ I det här exemplet vill vi återskapa namn och e-post för mottagare vars e-pos
 
 Så här skapar du det här exemplet:
 
-1. Klicka på **[!UICONTROL Tools > Generic query editor...]** och välj tabellen **Mottagare** (**nms:mottagare**). Klicka sedan på **[!UICONTROL Next]**.
+1. Klicka på **[!UICONTROL Tools > Generic query editor...]** och välj tabellen **Mottagare** (**nms:recipient**). Klicka sedan på **[!UICONTROL Next]**.
 1. Välj: **[!UICONTROL Last name]**, **[!UICONTROL First name]**, **[!UICONTROL Email]**, **[!UICONTROL City]** och **[!UICONTROL Account number]**. Dessa fält läggs till i **[!UICONTROL Output columns]**. Klicka sedan på **[!UICONTROL Next]**.
 
    ![](assets/query_editor_03.png)
@@ -73,7 +73,7 @@ Så här skapar du det här exemplet:
 
    ![](assets/query_editor_nveau_15.png)
 
-1. Klicka på **[!UICONTROL Start the preview of the data]** i fönstret **[!UICONTROL Data preview]**. Den här funktionen beräknar resultatet av frågan.
+1. Klicka på **[!UICONTROL Data preview]** i fönstret **[!UICONTROL Start the preview of the data]**. Den här funktionen beräknar resultatet av frågan.
 
    Fliken **[!UICONTROL Column results]** visar frågeresultatet i kolumner.
 

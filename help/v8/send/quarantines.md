@@ -2,12 +2,13 @@
 title: Karantänhantering i Campaign
 description: Förstå karantänhantering i Adobe Campaign
 feature: Profiles, Monitoring
-role: User, Data Engineer
+role: User, Developer
 level: Beginner
+version: Campaign v8, Campaign Classic v7
 exl-id: 220b7a88-bd42-494b-b55b-b827b4971c9e
-source-git-commit: cb4cbc9ba14e953d2b3109e87eece4f310bfe838
+source-git-commit: c4d3a5d3cf89f2d342c661e54b5192d84ceb3a75
 workflow-type: tm+mt
-source-wordcount: '1213'
+source-wordcount: '1317'
 ht-degree: 4%
 
 ---
@@ -32,7 +33,7 @@ När deras adress eller telefonnummer sätts i karantän utesluts mottagarna fr�
 
 >[!NOTE]
 >
->Mottagare som avbeställt prenumerationen via metoden [&quot;mailto&quot; List-Unsubscribe &#x200B;](https://experienceleague.adobe.com/sv/docs/deliverability-learn/deliverability-best-practice-guide/additional-resources/campaign/acc-technical-recommendations#mailto-list-unsubscribe){target="_blank"} skickas inte till karantän. De har antingen avbeställt den [tjänst](../start/subscriptions.md) som är kopplad till leveransen eller skickats till blockeringslista (visas i profilens **[!UICONTROL No longer contact]** -avsnitt) om ingen tjänst har definierats för leveransen.
+>Mottagare som avbeställt prenumerationen via metoden [&quot;mailto&quot; List-Unsubscribe ](https://experienceleague.adobe.com/en/docs/deliverability-learn/deliverability-best-practice-guide/additional-resources/campaign/acc-technical-recommendations#mailto-list-unsubscribe){target="_blank"} skickas inte till karantän. De har antingen avbeställt den [tjänst](../start/subscriptions.md) som är kopplad till leveransen eller skickats till blockeringslista (visas i profilens **[!UICONTROL No longer contact]** -avsnitt) om ingen tjänst har definierats för leveransen.
 
 <!--For the mobile app channel, device tokens are quarantined.-->
 
@@ -45,14 +46,20 @@ Två typer eller fel kan fångas:
 * **Hårt fel**: E-postadressen, telefonnumret eller enheten skickas omedelbart till karantänen.
 * **Mjukt fel**: mjuka fel ökar en felräknare och kan sätta ett e-postmeddelande, telefonnummer eller enhetstoken i karantän. Kampanjen utför [återförsök](delivery-failures.md#retries): När felräknaren når gränsvärdet sätts adressen, telefonnumret eller enhetstoken i karantän. [Läs mer](delivery-failures.md#retries).
 
-I listan över adresser i karantän anger fältet **[!UICONTROL Error reason]** varför den valda adressen placerades i karantän. [Läs mer](#identifying-quarantined-addresses-for-the-entire-platform).
+I listan över adresser i karantän anger fältet **[!UICONTROL Error reason]** varför den valda adressen placerades i karantän. [Läs mer](#non-deliverable-bounces).
 
 
-Om en användare kvalificerar ett e-postmeddelande som skräppost omdirigeras meddelandet automatiskt till en teknisk postlåda som hanteras av Adobe. Användarens e-postadress skickas sedan automatiskt till karantänen med status **[!UICONTROL Denylisted]**.    Den här statusen avser endast adressen, profilen finns inte på blockeringslista, så att användaren fortsätter att ta emot SMS-meddelanden och push-meddelanden. Läs mer om feedbackslingor i [Handboken &#x200B;](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/transition-process/infrastructure.html?lang=sv-SE#feedback-loops){target="_blank"} om bästa leveransmetoder.
+Om en användare kvalificerar ett e-postmeddelande som skräppost omdirigeras meddelandet automatiskt till en teknisk postlåda som hanteras av Adobe. Användarens e-postadress skickas sedan automatiskt till karantänen med status **[!UICONTROL Denylisted]**.    Den här statusen avser endast adressen, profilen finns inte på blockeringslista, så att användaren fortsätter att ta emot SMS-meddelanden och push-meddelanden. Läs mer om feedbackslingor i [Handboken ](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/transition-process/infrastructure.html#feedback-loops){target="_blank"} om bästa leveransmetoder.
 
 >[!NOTE]
 >
 >Karantänen i Adobe Campaign är skiftlägeskänslig.    Se till att importera e-postadresser med små bokstäver så att inte e-postadresserna fortsätter att ta emot meddelanden.
+
+## Mjuk felhantering {#soft-error-management}
+
+I motsats till hårda fel skickar inte mjuka fel en adress till karantän omedelbart, utan i stället ökar de en felräknare. När felräknaren når gränsvärdet sätts adressen i karantän. Läs mer om återförsök och feltyper i [Om leveransfel](delivery-failures.md).
+
+Felräknaren initieras om om det senaste allvarliga felet inträffade för mer än 10 dagar sedan. Adressstatusen ändras sedan till **[!UICONTROL Valid]** och tas bort från listan över karantän i arbetsflödet **[!UICONTROL Database cleanup]**. [Läs mer om tekniska arbetsflöden](../config/workflows.md#technical-workflows).
 
 ## Åtkomst till adresser i karantän {#access-quarantined-addresses}
 
@@ -66,6 +73,8 @@ För varje leverans kan du även kontrollera rapporten **[!UICONTROL Delivery su
 
 * Antalet adresser som placerats i karantän under leveransanalysen.
 * Antalet adresser som placerats i karantän efter leveransåtgärden.
+
+Läs mer om leveransrapporter i [det här avsnittet](../reporting/gs-reporting.md).
 
 ### Ej levererbara och studsadresser{#non-deliverable-bounces}
 
@@ -83,7 +92,7 @@ Om du vill visa listan över adresser i karantän **för hela plattformen** kan 
 
 Dessutom visar den inbyggda rapporten **[!UICONTROL Non-deliverables and bounces]**, som är tillgänglig från avsnittet **Reports** på den här startsidan, information om adresserna i karantän, de typer av fel som påträffats och en felfördelning per domän. Du kan filtrera data för en viss leverans eller anpassa rapporten efter behov.
 
-Läs mer om studsadresser i [Bästa praxis-handboken för slutprodukter](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/metrics-for-deliverability/bounces.html?lang=sv-SE){target="_blank"}.
+Läs mer om studsadresser i [Bästa praxis-handboken för slutprodukter](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/metrics-for-deliverability/bounces.html){target="_blank"}.
 
 ### E-postadress i karantän {#quarantined-recipient}
 
@@ -98,7 +107,9 @@ För varje mapp kan du bara visa mottagare vars e-postadress är i karantän, me
 
 ## Ta bort en adress i karantän {#remove-a-quarantined-address}
 
-Adresser som matchar specifika villkor tas automatiskt bort från karantänlistan av det inbyggda arbetsflödet **Databasrensning**.
+### Automatiska uppdateringar {#unquarantine-auto}
+
+Adresser som matchar specifika villkor tas automatiskt bort från karantänlistan av det inbyggda arbetsflödet **[!UICONTROL Database cleanup]**.
 
 Adresserna tas automatiskt bort från karantänlistan i följande fall:
 
@@ -112,22 +123,30 @@ Deras status ändras sedan till **[!UICONTROL Valid]**.
 >
 >Mottagare med en adress i en **[!UICONTROL Quarantine]**- eller **[!UICONTROL Denylisted]**-status tas aldrig bort, även om de får ett e-postmeddelande.
 
-Du kan också ta bort en adress manuellt från karantänlistan. Om du vill ta bort en adress från karantänen kan du:
+### Manuella uppdateringar {#unquarantine-manual}
 
-* Ändra dess status till **[!UICONTROL Valid]** från noden **[!UICONTROL Administration > Campaign Management > Non deliverables Management > Non deliverables and addresses]**.
+Du kan också ta bort en adress manuellt från karantänlistan. Om du vill ta bort en adress från karantänen manuellt kan du ändra dess status till **[!UICONTROL Valid]** från noden **[!UICONTROL Administration > Campaign Management > Non deliverables Management > Non deliverables and addresses]**.
 
-  ![](assets/tech-quarantine-status.png)
+![](assets/tech-quarantine-status.png)
 
-Du kan behöva göra satsvisa uppdateringar i karantänlistan, t.ex. vid ett avbrott i en Internet-leverantör där e-postmeddelanden felaktigt markeras som studsar eftersom de inte kan levereras till mottagaren.
+### Massuppdateringar {#unquarantine-bulk}
 
-Om du vill göra det skapar du ett arbetsflöde och lägger till en fråga i karantäntabellen för att filtrera bort alla berörda mottagare så att de kan tas bort från karantänlistan och inkluderas i framtida e-postleveranser för Campaign.
+Du kan behöva göra satsvisa uppdateringar i karantänlistan i särskilda situationer, t.ex. vid ett avbrott i en Internet-leverantör där e-postmeddelanden felaktigt markeras som studsar eftersom de inte kan levereras till mottagaren.
 
-Nedan följer de rekommenderade riktlinjerna för den här frågan:
+Så här utför du en gruppuppdatering:
 
-* **Feltext (karantäntext)** innehåller &quot;Momen_Code10_InvalidRecipient&quot;
-* **E-postdomänen (@domain)** är lika med domain1.com ELLER **E-postdomänen (@domain)** är lika med domain2.com ELLER **E-postdomän (@domain)** är lika med domain3.com
-* **Uppdatera status (@lastModified)** på eller efter `MM/DD/YYYY HH:MM:SS AM`
-* **Uppdatera status (@lastModified)** på eller före `MM/DD/YYYY HH:MM:SS PM`
+1. Skapa ett arbetsflöde och lägg till en fråga i karantäntabellen (**[!UICONTROL nms:address]**) för att filtrera påverkade mottagare
+2. Använd frågevillkor för att identifiera adresser som inte ska sättas i karantän, till exempel:
+   * **E-postdomänen (@domain)** är lika med den eller de berörda ISP-domänerna
+   * **Uppdatera status (@lastModified)** inom tidsramen för ett avbrott
+   * **Status (@status)** är lika med karantänstatus
+3. Lägg till en **[!UICONTROL Update data]**-aktivitet för att ange adressstatusen till **[!UICONTROL Valid]**
 
-När du har en lista över berörda mottagare lägger du till en **[!UICONTROL Update data]**-aktivitet för att ange deras status till **[!UICONTROL Valid]** så att de tas bort från karantänlistan av arbetsflödet **[!UICONTROL Database cleanup]**. Du kan även ta bort dem från karantäntabellen.
+Adresserna tas sedan automatiskt bort från karantänlistan av arbetsflödet **[!UICONTROL Database cleanup]** och kan inkluderas i framtida leveranser.
+
+## Relaterade ämnen
+
+* [Förstå leveransfel](delivery-failures.md) - Lär dig mer om olika typer av leveransfel och hur Campaign hanterar studsar
+* [Övervaka leveranser](delivery-dashboard.md) - Få åtkomst till leveransloggar och övervaka leveransresultat
+* [Bästa praxis för leverans](../start/delivery-best-practices.md) - Bästa metoder för att behålla god levererbarhet och undvika karantän
 

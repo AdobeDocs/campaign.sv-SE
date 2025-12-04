@@ -2,11 +2,11 @@
 title: Skicka direktsända LINE-meddelanden med Adobe Campaign
 description: Kom igång med LINE-meddelanden
 feature: Line App
-role: Data Engineer
+role: Developer
 level: Beginner
 version: Campaign v8, Campaign Classic v7
 exl-id: 4de3b2c2-7eb7-4fd9-9350-64a6e9e2b7f8
-source-git-commit: 110a2cac920ca3087f6fcb3cab8474729f6075be
+source-git-commit: 00d9c3229b7bbabfec3b1750ae84978545fdc218
 workflow-type: tm+mt
 source-wordcount: '1166'
 ht-degree: 1%
@@ -17,7 +17,7 @@ ht-degree: 1%
 
 LINE är ett program för kostnadsfria snabbmeddelanden, röst- och videosamtal som finns på alla mobila enheter och på datorn. Du kan använda Adobe Campaign för att skicka LINE-meddelanden.
 
-[!DNL LINE] kan också kombineras med transaktionsmeddelandemodulen för att skicka realtidsmeddelanden till appen [!DNL LINE] som är installerad på konsumentmobilenheter. Mer information finns på [sidan](https://experienceleague.adobe.com/sv/docs/campaign-classic/using/transactional-messaging/configure-transactional-messaging/transactional-messaging-architecture#transactional-messaging-and-line) i Campaign Classic v7-dokumentationen.
+[!DNL LINE] kan också kombineras med transaktionsmeddelandemodulen för att skicka realtidsmeddelanden till appen [!DNL LINE] som är installerad på konsumentmobilenheter. Mer information finns på [sidan](https://experienceleague.adobe.com/en/docs/campaign-classic/using/transactional-messaging/configure-transactional-messaging/transactional-messaging-architecture#transactional-messaging-and-line) i Campaign Classic v7-dokumentationen.
 
 ![](assets/line_message.png)
 

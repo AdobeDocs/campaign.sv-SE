@@ -3,12 +3,12 @@ product: campaign
 title: Fråga med många-till-många-relation
 description: Lär dig hur du utför frågor med hjälp av en många-till-många-relation
 feature: Query Editor
-role: User, Data Engineer
+role: User, Developer
 version: Campaign v8, Campaign Classic v7
 exl-id: c320054d-7f67-4b12-aaa7-785945bf0c18
-source-git-commit: 4cbccf1ad02af9133d51933e3e0d010b5c8c43bd
+source-git-commit: 00d9c3229b7bbabfec3b1750ae84978545fdc218
 workflow-type: tm+mt
-source-wordcount: '390'
+source-wordcount: '389'
 ht-degree: 0%
 
 ---
@@ -23,7 +23,7 @@ I det här exemplet visas även hur du konfigurerar ett filter som är relaterat
 
 * Vilken tabell måste markeras?
 
-  Mottagartabellen (**nms:mottagare**)
+  Mottagartabellen (**nms:recipient**)
 
 * Fält som ska markeras för utdatakolumnen
 
@@ -44,7 +44,7 @@ Använd följande steg:
 
    ![](assets/query_editor_nveau_34.png)
 
-1. Välj **[!UICONTROL Filtering conditions]** i fönstret **[!UICONTROL Data filtering]**.
+1. Välj **[!UICONTROL Data filtering]** i fönstret **[!UICONTROL Filtering conditions]**.
 1. I fönstret **[!UICONTROL Target element]** innebär filtreringsvillkoret för att extrahera profiler utan spårningslogg de senaste 7 dagarna två steg. Elementet som du måste markera är en många-till-många-länk.
 
    * Börja med att markera samlingselementet **[!UICONTROL Recipient delivery logs (broadlog)]** (orange nod) för den första **[!UICONTROL Value]**-kolumnen.

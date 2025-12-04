@@ -3,10 +3,10 @@ audience: user
 user-guide-title: Guide för kampanjautomatisering
 user-guide-description: Guide för kampanjautomatisering
 feature: Overview
-source-git-commit: 8ff207246bea1f476b37b1d4f2c79498362e7481
+source-git-commit: 00d9c3229b7bbabfec3b1750ae84978545fdc218
 workflow-type: tm+mt
 source-wordcount: '444'
-ht-degree: 73%
+ht-degree: 79%
 
 ---
 
@@ -34,7 +34,7 @@ ht-degree: 73%
       + [Värmekarta för arbetsflöde](workflow/heatmap.md)
    + Arbetsflödesaktiviteter {#wf-activities}
       + [Kom igång med aktiviteter](workflow/activities.md)
-      + Verksamheter som riktar sig till {#targeting-activities}
+      + Aktiviteter för målgruppsanpassning {#targeting-activities}
          + [Förteckning över målinriktningsaktiviteter](workflow/targeting-activities.md)
          + [Celler](workflow/cells.md)
          + [Ändra datakälla](workflow/change-data-source.md)
@@ -56,7 +56,7 @@ ht-degree: 73%
          + [Prenumerationstjänster](workflow/subscription-services.md)
          + [Sammanslutning](workflow/union.md)
          + [Uppdatera data](workflow/update-data.md)
-      + Flödeskontroll {#flow-control-activities}
+      + Flödeskontrollaktiviteter {#flow-control-activities}
          + [Förteckning över flödeskontrollverksamhet](workflow/flow-control-activities.md)
          + [Varning](workflow/alert.md)
          + [AND-join](workflow/and-join.md)
@@ -70,7 +70,7 @@ ht-degree: 73%
          + [Test](workflow/test.md)
          + [Tidsbegränsning](workflow/time-constraint.md)
          + [Vänta](workflow/wait.md)
-      + Verksamheter {#action-activities}
+      + Åtgärdsaktiviteter {#action-activities}
          + [Förteckning över åtgärdsaktiviteter](workflow/action-activities.md)
          + [Innehållshantering](workflow/content-management.md)
          + [Kontinuerlig leverans](workflow/continuous-delivery.md)
@@ -87,7 +87,7 @@ ht-degree: 73%
          + [SQL-kod och JavaScript-kod](workflow/sql-code-and-javascript-code.md)
          + [SQL-datahantering](workflow/sql-data-management.md)
          + [Uppdatera aggregat](workflow/update-aggregate.md)
-      + Evenemangsaktiviteter {#event-activities}
+      + Händelseaktiviteter {#event-activities}
          + [Lista över händelseaktiviteter](workflow/event-activities.md)
          + [Filhämtare](workflow/file-collector.md)
          + [Filöverföring](workflow/file-transfer.md)
@@ -166,4 +166,4 @@ ht-degree: 73%
    + [Åtkomst till kampanjer](distributed-marketing/accessing-campaigns.md)
    + [Spåra en kampanj](distributed-marketing/tracking-a-campaign.md)
    + [Användningsfall](distributed-marketing/examples.md)
-+ [&lt; Tillbaka till Campaign v8-dokumentation](https://experienceleague.adobe.com/sv/docs/campaign/campaign-v8/campaign-home)
++ [&lt; Tillbaka till Campaign v8-dokumentation](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/campaign-home)

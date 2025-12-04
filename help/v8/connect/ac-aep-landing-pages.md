@@ -2,10 +2,10 @@
 title: Uppdatera Adobe Experience Platform-profiler från Adobe Campaign landningssidor
 description: Lär dig hur du synkroniserar Adobe Campaign landningssidor och Adobe Experience Platform-profilattribut
 feature: Experience Platform Integration
-role: Data Engineer
+role: Developer
 level: Beginner
 exl-id: 565a1c8b-1930-4b43-bc11-ae517df077d6
-source-git-commit: 02d7909c409bd25cfa3cc7aad189247ce7b5176e
+source-git-commit: 00d9c3229b7bbabfec3b1750ae84978545fdc218
 workflow-type: tm+mt
 source-wordcount: '990'
 ht-degree: 1%
@@ -56,9 +56,9 @@ Med OAuth-anslutningen på plats är nästa steg att skapa en **[!UICONTROL HTTP
 
    ![](assets/ac-lp-source.png){width="70%"}
 
-1. Konfigurera anslutningen beroende på dina behov. Detaljerad information om hur du konfigurerar en HTTP API-anslutning finns i [dokumentationen för Adobe Experience Platform-källor](https://experienceleague.adobe.com/docs/experience-platform/sources/ui-tutorials/create/streaming/http.html?lang=sv-SE){target="_blank"}.
+1. Konfigurera anslutningen beroende på dina behov. Detaljerad information om hur du konfigurerar en HTTP API-anslutning finns i [dokumentationen för Adobe Experience Platform-källor](https://experienceleague.adobe.com/docs/experience-platform/sources/ui-tutorials/create/streaming/http.html){target="_blank"}.
 
-   Aktivera alternativet **[!UICONTROL Enable authentication]** i steget **[!UICONTROL Authentication]** för att autentisera med åtkomsttoken som genererats tidigare genom OAuth-integreringen.
+   Aktivera alternativet **[!UICONTROL Authentication]** i steget **[!UICONTROL Enable authentication]** för att autentisera med åtkomsttoken som genererats tidigare genom OAuth-integreringen.
 
    ![](assets/ac-lp-source-authentication.png){width="70%"}
 
@@ -98,7 +98,7 @@ Bläddra bland flikarna nedan för att hitta de två metoderna:
 
 >[!TAB Lägg till alternativ med en JavaScript-kodsaktivitet]
 
-Om du vill konfigurera de här alternativen automatiskt vid körningen av arbetsflödet för landningssidor lägger du till en **[!UICONTROL JavaScript code]**-aktivitet i arbetsflödet med koden nedan. [Lär dig hur du konfigurerar en JavaScript-kodaktivitet](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/action-activities/sql-code-and-JavaScript-code.html?lang=sv-SE#JavaScript-code){target="_blank"}.
+Om du vill konfigurera de här alternativen automatiskt vid körningen av arbetsflödet för landningssidor lägger du till en **[!UICONTROL JavaScript code]**-aktivitet i arbetsflödet med koden nedan. [Lär dig hur du konfigurerar en JavaScript-kodaktivitet](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/action-activities/sql-code-and-JavaScript-code.html#JavaScript-code){target="_blank"}.
 
 När arbetsflödet körs skapas alternativen automatiskt i Campaign-konsolen med de angivna värdena.
 
@@ -134,7 +134,7 @@ För att tillåta datasynkronisering mellan landningssidor och Adobe Experience 
 
    ![](assets/ac-lp-script.png){width="70%"}
 
-+++  Skript 1 - Läs in profilattribut från Experience Platform
+   +++  Skript 1 - Läs in profilattribut från Experience Platform
 
    Den här koden kontrollerar om profilen finns i Adobe Experience Platform innan landningssidan läses in. Profilattributen hämtas och visas i motsvarande fält på landningssidan.
 
@@ -155,9 +155,9 @@ För att tillåta datasynkronisering mellan landningssidor och Adobe Experience 
    }
    ```
 
-+++
+   +++
 
-+++ Skript 2 - Uppdatera Experience Platform-profilattribut
+   +++ Skript 2 - Uppdatera Experience Platform-profilattribut
 
    Den här koden uppdaterar profilattributen i Adobe Experience Platform med värdena som skickas på landningssidan.
 
@@ -203,7 +203,7 @@ För att tillåta datasynkronisering mellan landningssidor och Adobe Experience 
    }
    ```
 
-+++
+   +++
 
 Nu när de anpassade JavaScript-koderna har skapats i Adobe Campaign kan du konfigurera arbetsflödet som innehåller din landningssida så att dessa JavaScript-koder används för datasynkronisering.
 
@@ -213,7 +213,7 @@ När JavaScript-koderna har lagts till i Adobe Campaign kan du använda dem i ar
 
 * Om du vill läsa in data från Experience Platform innan du läser in landningssidan lägger du till en **[!UICONTROL JavaScript code]**-aktivitet före landningssidans aktivitet och kopierar Klistra in skript 1.
 
-+++ Skript 1 - Läs in profilattribut från Experience Platform
+  +++ Skript 1 - Läs in profilattribut från Experience Platform
 
   ```javascript
   // Script code to read profile from AEP.
@@ -249,11 +249,11 @@ När JavaScript-koderna har lagts till i Adobe Campaign kan du använda dem i ar
   }
   ```
 
-+++
+  +++
 
 * Om du vill uppdatera Experience Platform-profilattribut med data som skickats på landningssidan lägger du till en **[!UICONTROL JavaScript code]**-aktivitet efter landningssidans aktivitet och kopierar Klistra in skript 2.
 
-+++ Skript 2 - Uppdatera Experience Platform-profilattribut
+  +++ Skript 2 - Uppdatera Experience Platform-profilattribut
 
   ```javascript
   // Script code to update profile in AEP and ACC.
@@ -323,7 +323,7 @@ När JavaScript-koderna har lagts till i Adobe Campaign kan du använda dem i ar
   }
   ```
 
-+++
+  +++
 
 >[!CAUTION]
 >
@@ -344,5 +344,5 @@ Här är ett exempel på en landningssida och en JavaScript-kodaktivitet som kon
 ### Mer information
 
 * [Konfigurera en JavaScript-kodsaktivitet](../../automation/workflow/sql-code-and-javascript-code.md#javascript-code)
-* [Skapa en landningssida](https://experienceleague.adobe.com/docs/campaign-classic/using/designing-content/editing-html-content/creating-a-landing-page.html?lang=sv-SE){target="_blank"}
+* [Skapa en landningssida](https://experienceleague.adobe.com/docs/campaign-classic/using/designing-content/editing-html-content/creating-a-landing-page.html){target="_blank"}
 * [Hantera prenumerationer och avbeställningar](../start/subscriptions.md)

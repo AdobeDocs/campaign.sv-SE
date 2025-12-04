@@ -2,11 +2,11 @@
 title: Skicka push-meddelanden med Adobe Campaign
 description: Kom igång med push-meddelanden i Campaign
 feature: Push
-role: Data Engineer
+role: Developer
 level: Intermediate
 badge: label="Begränsad tillgänglighet" type="Informative"
 exl-id: 0f22b17c-ed01-4add-8300-8689b8a9f963
-source-git-commit: 11a9f17bc5c1ec8388de294395a6d7b7a5e8a7e6
+source-git-commit: 00d9c3229b7bbabfec3b1750ae84978545fdc218
 workflow-type: tm+mt
 source-wordcount: '1353'
 ht-degree: 2%

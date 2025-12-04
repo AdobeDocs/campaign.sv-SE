@@ -2,12 +2,12 @@
 title: Förstå arkitekturen för kampanjinteraktion
 description: Grundläggande om arkitektur för kampanjinteraktion
 feature: Interaction, Offers
-role: Data Engineer
+role: Developer
 level: Beginner
 exl-id: 7a710960-7e41-4462-bd5e-18e874aa46f8
-source-git-commit: 1a0b473b005449be7c846225e75a227f6d877c88
+source-git-commit: 00d9c3229b7bbabfec3b1750ae84978545fdc218
 workflow-type: tm+mt
-source-wordcount: '1305'
+source-wordcount: '1304'
 ht-degree: 0%
 
 ---
@@ -84,7 +84,7 @@ Paketet **Interaction** är installerat på alla instanser (kontroll och körnin
 
 >[!NOTE]
 >
->När paketet installeras blir **long**-typfälten i tabellen **nms:proposition**, till exempel förslags-ID, **int64**-typfält. Den här typen av data beskrivs i [Campaign Classic v7-dokumentationen](https://experienceleague.adobe.com/docs/campaign-classic/using/configuring-campaign-classic/schema-reference/schema-structure.html?lang=sv-SE#mapping-the-types-of-adobe-campaign-dbms-data){target="_blank"}.
+>När paketet installeras blir **long**-typfälten i tabellen **nms:proposition**, till exempel förslags-ID, **int64**-typfält. Den här typen av data beskrivs i [Campaign Classic v7-dokumentationen](https://experienceleague.adobe.com/docs/campaign-classic/using/configuring-campaign-classic/schema-reference/schema-structure.html#mapping-the-types-of-adobe-campaign-dbms-data){target="_blank"}.
 
 Varaktigheten för datalagring konfigureras för varje instans (via fönstret **[!UICONTROL Data purge]** i distributionsguiden). För körningsinstanser måste denna period motsvara det historiska djup som krävs för att typologiregler (glidande period) och regler för stödberättigande ska kunna beräknas.
 

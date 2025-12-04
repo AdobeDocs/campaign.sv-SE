@@ -2,10 +2,10 @@
 title: Kom igång med Campaign-arkitekturen
 description: Identifiera miljöer och grundläggande distributionsmöjligheter, inklusive hur du rapporterar om en kampanjmiljö.
 feature: Architecture, Deployment
-role: Data Engineer
+role: Developer
 level: Beginner
 exl-id: 562b24c3-6bea-447f-b74c-187ab77ae78f
-source-git-commit: 42241364c1a23ae75d8f0aaf18a2cb1c04ce5b0c
+source-git-commit: 00d9c3229b7bbabfec3b1750ae84978545fdc218
 workflow-type: tm+mt
 source-wordcount: '1039'
 ht-degree: 1%
@@ -26,7 +26,7 @@ Det finns två typer av miljöer:
 
 Du kan exportera och importera paket från en miljö till en annan.
 
-Läs mer om paket i [Campaign Classic v7-dokumentationen](https://experienceleague.adobe.com/docs/campaign-classic/using/getting-started/administration-basics/working-with-data-packages.html?lang=sv-SE){target="_blank"}
+Läs mer om paket i [Campaign Classic v7-dokumentationen](https://experienceleague.adobe.com/docs/campaign-classic/using/getting-started/administration-basics/working-with-data-packages.html){target="_blank"}
 
 ## Distributionsmodeller {#ac-deployment}
 

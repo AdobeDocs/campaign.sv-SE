@@ -4,10 +4,10 @@ description: Lär dig hur du utför filtreringsåtgärder.
 audience: developing
 content-type: reference
 topic-tags: campaign-standard-apis
-role: Data Engineer
+role: Developer
 level: Experienced
 exl-id: cdb050b7-d327-42f7-b534-d32d988c8ffb
-source-git-commit: 4ed5799c77c647c9f1aeabba7645fbb475d03c09
+source-git-commit: 00d9c3229b7bbabfec3b1750ae84978545fdc218
 workflow-type: tm+mt
 source-wordcount: '421'
 ht-degree: 0%
@@ -201,8 +201,8 @@ Om du vill använda ett eget filter måste du skapa och anpassa det i Adobe Camp
 
 Mer information finns i Campaign Standard-dokumentationen:
 
-* [Konfigurerar filterdefinitionen](https://helpx.adobe.com/se/campaign/standard/developing/using/configuring-filter-definition.html).
-* [Använd skiftläge: Anropar en resurs med en sammansatt identifieringsnyckel](https://experienceleague.adobe.com/docs/campaign-standard/using/developing/adding-or-extending-a-resource/uc-calling-resource-id-key.html?lang=sv-SE).
+* [Konfigurerar filterdefinitionen](https://helpx.adobe.com/campaign/standard/developing/using/configuring-filter-definition.html).
+* [Använd skiftläge: Anropar en resurs med en sammansatt identifieringsnyckel](https://experienceleague.adobe.com/docs/campaign-standard/using/developing/adding-or-extending-a-resource/uc-calling-resource-id-key.html).
 
 <br/>
 

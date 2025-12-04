@@ -2,12 +2,12 @@
 title: Kända fel i Campaign v8
 description: Kända fel i den senaste Campaign-versionen
 feature: Overview
-role: Data Engineer
+role: Developer
 level: Beginner
 hide: true
 hidefromtoc: true
 exl-id: 89a4ab6c-de8e-4408-97d2-8b8e574227f9
-source-git-commit: 41e39e046ec77de8b5e657ba76645898ff1cd2d7
+source-git-commit: 00d9c3229b7bbabfec3b1750ae84978545fdc218
 workflow-type: tm+mt
 source-wordcount: '375'
 ht-degree: 0%
@@ -86,7 +86,7 @@ Du kan lösa problemet genom att använda en äldre klientkonsol. Sedan kan du �
 
 Som kampanjadministratör kan du hämta Campaign v8.3.1-klientkonsolen i [Adobe Software Distribution](https://experience.adobe.com/#/downloads/content/software-distribution/en/campaign.html?1_group.propertyvalues.property=.%2Fjcr%3aContent%2Fmetadata%2FDc%3Aversion&1_group.propertyvalues.operation=equals&1_group.propertyvalues.0_values=target-version%3AcCampaign%2F8&orderby=%40jcr%3Acontent%2Fjcr%3AlastModified&order.sort=desc&layout=list&p.offset=0&p.limit=4){target="_blank"}.
 
-Lär dig hur du får åtkomst till Adobe programdistribution [på den här sidan](https://experienceleague.adobe.com/docs/experience-cloud/software-distribution/home.html?lang=sv-SE){target="_blank"}.
+Lär dig hur du får åtkomst till Adobe programdistribution [på den här sidan](https://experienceleague.adobe.com/docs/experience-cloud/software-distribution/home.html){target="_blank"}.
 
 Lär dig hur du uppgraderar din klientkonsol [på den här sidan](connect.md)
 

@@ -6,7 +6,7 @@ role: User
 level: Beginner
 exl-id: 03f7a736-e0b9-4216-9550-507f10e6fcf6
 version: Campaign v8, Campaign Classic v7
-source-git-commit: ec1b41ccf532b044e75c69e795eabfb19a523ec2
+source-git-commit: 3453820bb0eca7847ec55d7e6ea15766a57ab94e
 workflow-type: tm+mt
 source-wordcount: '452'
 ht-degree: 2%
@@ -80,4 +80,4 @@ För en vanlig inbyggd mottagare kan du använda följande flikar:
 
 * **Spårning**, för alla spårningsloggar för den valda profilen. Den här informationen används för att spåra profilbeteende efter leveranser. På den här fliken visas den kumulativa summan av alla URL:er som spåras i leveranser. Listan är konfigurerbar och innehåller vanligtvis: klickad URL-adress, datum och tid för klickningen samt dokumentet som innehöll URL-adressen
 
-  Läs mer om spårning av [i det här avsnittet](../start/tracking.md).
+  Läs mer om spårning av [i det här avsnittet](../send/tracking.md).

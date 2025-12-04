@@ -6,9 +6,9 @@ feature: Workflows, Targeting Activity
 role: User
 version: Campaign v8, Campaign Classic v7
 exl-id: f79a979d-bd1d-4a86-8844-563886692941
-source-git-commit: 4cbccf1ad02af9133d51933e3e0d010b5c8c43bd
+source-git-commit: f616f92e31abd51e3544f848ce272e80389aef73
 workflow-type: tm+mt
-source-wordcount: '1115'
+source-wordcount: '1114'
 ht-degree: 7%
 
 ---
@@ -22,7 +22,7 @@ Borttagning av dubbletter tar bort dubbletter från resultatet av inkommande akt
 Aktiviteten **[!UICONTROL Deduplication]** används för att ta bort dubblettrader från en datauppsättning. Posterna nedan kan till exempel betraktas som dubbletter eftersom de har samma e-postadress och samma mobil- och/eller hemtelefon.
 
 | Senaste ändringsdatum | Förnamn | Efternamn | E-post | Mobiltelefon | Telefon |
------|------------|-----------|-------|--------------|------
+|-----|------------|-----------|-------|--------------|------|
 | 02/03/2020 | Bob | Tisner | bob@mycompany.com | 444-444-4444 | 888-888-8888 |
 | 05/19/2020 | Robert | Tisner | bob@mycompany.com | 444-444-4444 | 777-777-777 |
 | 07/22/2020 | Bobby | Tisner | bob@mycompany.com | 444-444-4444 | 777-777-777 |
@@ -30,7 +30,7 @@ Aktiviteten **[!UICONTROL Deduplication]** används för att ta bort dubblettrad
 Aktiviteten **[!UICONTROL Deduplication]** kan behålla en hel rad som den unika posten när dubbletter har identifierats. I ovanstående exempel skulle resultatet bli:**[!UICONTROL Date]**
 
 | Datum | Förnamn | Efternamn | E-post | Mobiltelefon | Telefon |
------|----------|------------|-------|--------------|------
+|-----|----------|------------|-------|--------------|------|
 | 02/03/2020 | Bob | Tisner | bob@mycompany.com | 444-444-4444 | 888-888-8888 |
 
 Den markerade huvudposten överför data utan att fältdata sammanfogas med andra relevanta data i de duplicerade raderna.
@@ -38,7 +38,7 @@ Den markerade huvudposten överför data utan att fältdata sammanfogas med andr
 Komplettera:
 
 | Datum | Förnamn | Efternamn | E-post | Mobiltelefon | Telefon |
------|------------|-----------|-------|--------------|------
+|-----|------------|-----------|-------|--------------|------|
 | 05/19/2020 | Robert | Tisner | bob@mycompany.com | 444-444-4444 | 777-777-777 |
 | 07/22/2020 | Bobby | Tisner | bob@mycompany.com | 444-444-4444 | 777-777-777 |
 
@@ -146,7 +146,7 @@ Ett användningsexempel som utnyttjar den här funktionen finns i [det här avsn
 
 Följ dessa steg för att göra detta:
 
-1. Klicka på länken **[!UICONTROL Advanced Parameters]** i urvalssteget **[!UICONTROL Deduplication method]**.
+1. Klicka på länken **[!UICONTROL Deduplication method]** i urvalssteget **[!UICONTROL Advanced Parameters]**.
 
    ![](assets/dedup1.png)
 
@@ -173,6 +173,6 @@ Varje inkommande händelse måste ange ett mål som definieras av dessa parametr
 * schema
 * recCount
 
-Den här uppsättningen med tre värden identifierar det mål som skapas av borttagningen av dubbletter. **[!UICONTROL tableName]** är namnet på tabellen som sparar målidentifierare, **[!UICONTROL schema]** är populationens schema (vanligtvis nms:mottagare) och **[!UICONTROL recCount]** är antalet element i tabellen.
+Den här uppsättningen med tre värden identifierar det mål som skapas av borttagningen av dubbletter. **[!UICONTROL tableName]** är namnet på tabellen som sparar målidentifierare, **[!UICONTROL schema]** är schemat för populationen (vanligtvis nms :recipient) och **[!UICONTROL recCount]** är antalet element i tabellen.
 
 Övergången som är associerad med komplementet har samma parametrar.

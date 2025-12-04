@@ -3,9 +3,9 @@ product: campaign
 title: Anpassa listan över uttryckssymboler
 description: Lär dig hur du anpassar uttryckslistan när du använder Adobe Campaign
 feature: Email, Push
-role: User, Data Engineer
+role: User, Developer
 version: Campaign v8, Campaign Classic v7
-source-git-commit: 25ee55d5327e0ba7f2192f7b462853269c8cbf46
+source-git-commit: 00d9c3229b7bbabfec3b1750ae84978545fdc218
 workflow-type: tm+mt
 source-wordcount: '436'
 ht-degree: 2%

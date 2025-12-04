@@ -3,12 +3,12 @@ product: campaign
 title: Fråga med grupperingshantering
 description: Lär dig hur du utför frågor med grupperingshantering
 feature: Query Editor
-role: User, Data Engineer
+role: User, Developer
 version: Campaign v8, Campaign Classic v7
 exl-id: 6fc4ef67-5d75-4c8c-8bcc-41e3ed155ca2
-source-git-commit: 4cbccf1ad02af9133d51933e3e0d010b5c8c43bd
+source-git-commit: 00d9c3229b7bbabfec3b1750ae84978545fdc218
 workflow-type: tm+mt
-source-wordcount: '246'
+source-wordcount: '244'
 ht-degree: 3%
 
 ---
@@ -21,7 +21,7 @@ I det här exemplet vill vi köra en fråga för att hitta alla e-postdomäner s
 
 * Vilken tabell måste markeras?
 
-  mottagartabellen (nms:mottagare)
+  Mottagartabellen (nms:recipient)
 
 * Fält som ska markeras i utdatakolumner?
 
@@ -33,11 +33,11 @@ I det här exemplet vill vi köra en fråga för att hitta alla e-postdomäner s
 
 Så här skapar du det här exemplet:
 
-1. Öppna **[!UICONTROL Generic query editor]** och välj mottagartabellen (**nms:mottagare**).
+1. Öppna **[!UICONTROL Generic query editor]** och välj mottagartabellen (**nms:recipient**).
 
    ![](assets/query_editor_02.png)
 
-1. Markera fälten **[!UICONTROL Email domain]** och **[!UICONTROL Primary key]** i fönstret **[!UICONTROL Data to extract]**. Kör ett antal i fältet **[!UICONTROL Primary key]**.
+1. Markera fälten **[!UICONTROL Data to extract]** och **[!UICONTROL Email domain]** i fönstret **[!UICONTROL Primary key]**. Kör ett antal i fältet **[!UICONTROL Primary key]**.
 
 1. Markera rutan **[!UICONTROL Handle groupings (GROUP BY + HAVING)]**.
 
@@ -60,7 +60,7 @@ Så här skapar du det här exemplet:
 
    ![](assets/query_editor_blocklist_05.png)
 
-1. Klicka på **[!UICONTROL Next]** i fönstret **[!UICONTROL Data formatting]**: ingen formatering behövs här.
+1. Klicka på **[!UICONTROL Data formatting]** i fönstret **[!UICONTROL Next]**: ingen formatering behövs här.
 1. Klicka på **[!UICONTROL Launch data preview]** i förhandsgranskningsfönstret för data: här returneras tre olika e-postdomäner som är riktade över 30 gånger.
 
    ![](assets/query_editor_blocklist_06.png)

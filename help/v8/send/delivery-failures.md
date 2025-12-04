@@ -4,10 +4,11 @@ description: Förstå möjliga fel när du skickar meddelanden med Adobe Campaig
 feature: Profiles, Monitoring
 role: User
 level: Beginner, Intermediate
+version: Campaign v8, Campaign Classic v7
 exl-id: 9c83ebeb-e923-4d09-9d95-0e86e0b80dcc
-source-git-commit: 338013ac999ae0fedac132adf730c6f9477d73ca
+source-git-commit: c4d3a5d3cf89f2d342c661e54b5192d84ceb3a75
 workflow-type: tm+mt
-source-wordcount: '2976'
+source-wordcount: '3422'
 ht-degree: 2%
 
 ---
@@ -34,13 +35,13 @@ Hårda studsar är permanenta fel som genereras efter att en Internet-leverantö
   Här är några vanliga exempel på hårda domäner: Adressen finns inte, Konto inaktiverat, Felaktig syntax, Dålig domän
 
 * **Mjuka studsar**
-Mjuka studsar är tillfälliga fel som internetleverantörer genererar när de har svårt att leverera e-post. Mjuka fel [försöker &#x200B;](#retries) igen flera gånger (med varians beroende på om anpassade leveransinställningar eller leveransinställningar som är klara används) för att försöka leverera korrekt. Adresser som kontinuerligt mjuka studsar kommer inte att läggas till i karantän förrän det maximala antalet försök har gjorts (som återigen varierar beroende på inställningarna).
+Mjuka studsar är tillfälliga fel som internetleverantörer genererar när de har svårt att leverera e-post. Mjuka fel [försöker ](#retries) igen flera gånger (med varians beroende på om anpassade leveransinställningar eller leveransinställningar som är klara används) för att försöka leverera korrekt. Adresser som kontinuerligt mjuka studsar kommer inte att läggas till i karantän förrän det maximala antalet försök har gjorts (som återigen varierar beroende på inställningarna).
 
   Några vanliga orsaker till mjuka studsar är: Postlådan är full, Tar emot e-postserver, Senderns anseendeproblem
 
 Feltypen **Ignorerad** är känd som tillfällig, till exempel &quot;Frånvarande&quot;, eller ett tekniskt fel, till exempel om avsändartypen är &quot;postmaster&quot;.
 
-Feedback-slingan fungerar som studsmeddelanden: när en användare kvalificerar ett e-postmeddelande som skräppost kan du konfigurera e-postregler i Adobe Campaign så att alla leveranser till den här användaren blockeras. Adresserna till dessa användare är blocklist trots att de inte klickade på länken för att ta bort prenumerationen. Adresser läggs till i karantäntabellen (**NmsAddress**) och inte i mottagartabellen (**NmsRecipient**) med statusen **[!UICONTROL Denylisted]**. Läs mer om feedbackloopmekanismen i [Adobe Deliverability Best Practices Guide](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/transition-process/infrastructure.html?lang=sv-SE#feedback-loops){target="_blank"}.
+Feedback-slingan fungerar som studsmeddelanden: när en användare kvalificerar ett e-postmeddelande som skräppost kan du konfigurera e-postregler i Adobe Campaign så att alla leveranser till den här användaren blockeras. Adresserna till dessa användare är blocklist trots att de inte klickade på länken för att ta bort prenumerationen. Adresser läggs till i karantäntabellen (**NmsAddress**) och inte i mottagartabellen (**NmsRecipient**) med statusen **[!UICONTROL Denylisted]**. Läs mer om feedbackloopmekanismen i [Adobe Deliverability Best Practices Guide](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/transition-process/infrastructure.html#feedback-loops){target="_blank"}.
 
 ## Synkrona och asynkrona fel {#synchronous-and-asynchronous-errors}
 
@@ -66,7 +67,7 @@ Hur studseffekter hanteras i Adobe Campaign beror på feltypen:
 
 * **Synkrona fel**: MTA fastställer studstyp och kvalificering och skickar tillbaka informationen till Campaign. Studskompetensen i tabellen **[!UICONTROL Delivery log qualification]** används inte för **synkrona** leveransfelmeddelanden.
 
-* **Asynkrona fel**: Regler som används av Campaign för att kvalificera asynkrona leveransfel visas i noden **[!UICONTROL Administration > Campaign Management > Non deliverables Management > Delivery log qualification]**. Asynkrona studsar kvalificeras av inMail-processen via reglerna **[!UICONTROL Inbound email]**. Mer information finns i [Adobe Campaign Classic v7-dokumentationen](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/monitoring-deliveries/understanding-delivery-failures.html?lang=sv-SE#bounce-mail-qualification){target="_blank"}.
+* **Asynkrona fel**: Regler som används av Campaign för att kvalificera asynkrona leveransfel visas i noden **[!UICONTROL Administration > Campaign Management > Non deliverables Management > Delivery log qualification]**. Asynkrona studsar kvalificeras av inMail-processen via reglerna **[!UICONTROL Inbound email]**. Mer information finns i [Adobe Campaign Classic v7-dokumentationen](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/monitoring-deliveries/understanding-delivery-failures.html#bounce-mail-qualification){target="_blank"}.
 
 <!--NO LONGER WITH MOMENTUM - The message returned by the remote server on the first occurrence of this error type is displayed in the **[!UICONTROL First text]** column of the **[!UICONTROL Audit]** tab.
 
@@ -111,12 +112,14 @@ Om giltighetsperioden till exempel är inställd på standardvärdet 5 dagar i C
 
 När ett meddelande har funnits i MTA-kön i 3,5 dagar och inte kunnat levereras, kommer det att gå ut och dess status kommer att uppdateras från **[!UICONTROL Sent]** till **[!UICONTROL Failed]** i leveransloggarna.
 
-<!--For more on the validity period, see the [Adobe Campaign Classic v7 documentation](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/key-steps-when-creating-a-delivery/steps-sending-the-delivery.html?lang=sv-SE#defining-validity-period){target="_blank"}.-->
+<!--For more on the validity period, see the [Adobe Campaign Classic v7 documentation](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/key-steps-when-creating-a-delivery/steps-sending-the-delivery.html#defining-validity-period){target="_blank"}.-->
 
 
 ## E-postfeltyper {#email-error-types}
 
 För e-postkanalen anges möjliga orsaker till leveransfel nedan.
+
++++ Klicka för att visa den fullständiga listan över e-postfeltyper
 
 <table> 
  <tbody> 
@@ -249,7 +252,7 @@ För e-postkanalen anges möjliga orsaker till leveransfel nedan.
  </tbody> 
 </table>
 
-
++++
 
 ## Feltyper för push-meddelanden {#push-error-types}
 
@@ -260,6 +263,8 @@ För mobilappskanalen anges möjliga orsaker till leveransfel nedan.
 HTTP/V2-protokollet tillåter direkt feedback och status för varje push-leverans. Om HTTP/V2-protokollkopplingen används anropas inte längre feedbacktjänsten av arbetsflödet **[!UICONTROL mobileAppOptOutMgt]**. En token betraktas som oregistrerad när ett mobilprogram avinstalleras eller installeras om.
 
 Synkront, om APN:er returnerar status &quot;unregistered&quot; för ett meddelande, sätts måltoken omedelbart i karantän.
+
++++ Klicka för att visa iOS karantänscenarier
 
 <table> 
  <tbody> 
@@ -346,6 +351,8 @@ Synkront, om APN:er returnerar status &quot;unregistered&quot; för ett meddelan
  </tbody> 
 </table>
 
++++
+
 ### Android karantän {#android-quarantine}
 
 **För Android v1**
@@ -373,6 +380,8 @@ Under leveransanalysen läggs alla enheter som är undantagna från målet autom
 **För Android V2**
 
 Android V2-karantänmekanismen använder samma process som Android V1, samma sak gäller för prenumerations- och exkluderingsuppdateringen. Mer information finns i avsnittet [Android V1](#android-quarantine).
+
++++ Klicka för att visa Android V2-karantänscenarier
 
 <table> 
  <tbody> 
@@ -579,6 +588,8 @@ Android V2-karantänmekanismen använder samma process som Android V1, samma sak
  </tbody> 
 </table>
 
++++
+
 ## SMS-karantän {#sms-quarantines}
 
 **För standardanslutningar**
@@ -588,6 +599,8 @@ Specifikationerna för SMS-kanalen anges nedan.
 >[!NOTE]
 >
 >Tabellen **[!UICONTROL Delivery log qualification]** gäller inte för den allmänna SMPP **-anslutningen** Extended.
+
++++ Klicka för att visa SMS-feltyper för standardanslutningar
 
 <table> 
  <tbody> 
@@ -636,6 +649,8 @@ Specifikationerna för SMS-kanalen anges nedan.
  </tbody> 
 </table>
 
++++
+
 **För den utökade allmänna SMPP-anslutningen**
 
 När SMPP-protokollet används för att skicka SMS-meddelanden hanteras felhanteringen på ett annat sätt.
@@ -675,3 +690,61 @@ Regex extraherar som standard fältet **stat:** enligt definitionen i avsnittet 
 * Allt som kommer efter lodstreck (|) visas bara i kolumnen **[!UICONTROL First text]** i tabellen **[!UICONTROL Delivery log qualification]**. Det här innehållet ersätts alltid av **#MESSAGE#** efter att meddelandet har normaliserats. Med den här processen undviker du att ha flera poster för liknande fel och den är samma som för e-postmeddelanden.
 
 Den utökade generiska SMPP-anslutningen använder en heuristisk metod för att hitta rimliga standardvärden: om statusen börjar med **DELIV** betraktas den som lyckad eftersom den matchar de vanliga statusvärdena **DELIVRD** eller **DELIVERED** som används av de flesta leverantörer. All annan status leder till ett allvarligt fel.
+
+## Felsökning av leveransfel {#troubleshooting}
+
+I det här avsnittet finns vägledning om diagnostisering och lösning av vanliga leveransproblem.
+
+### Status misslyckades med personaliseringsfel {#personalization-errors}
+
+Om statusen för en e-postleverans är **[!UICONTROL Failed]** kan den länkas till ett problem med personaliseringsblock. Personaliseringsblock i en leverans kan generera fel när scheman inte matchar leveransmappningen.
+
+Leveransloggar är viktiga för att lära sig varför en leverans misslyckades. Här är ett vanligt fel som du kan råka ut för:
+
+Mottagarmeddelanden misslyckas med felet &quot;Onåbar&quot; som anger:
+
+```
+Error while compiling script 'content htmlContent' line X: `[table]` is not defined. JavaScript: error while evaluating script 'content htmlContent
+```
+
+**Orsak**: Personaliseringen inom HTML försöker anropa en tabell eller ett fält som inte har definierats eller mappats i den överordnade målsättningen eller i leveransens målmappning.
+
+**Upplösning**: Granska arbetsflödes- och leveransinnehållet för att specifikt avgöra vilken personalisering som försöker anropa tabellen i fråga. Ta sedan bort anropet till den här tabellen i HTML eller åtgärda mappningen till leveransen.
+
+Läs mer om personalisering i [det här avsnittet](personalize.md).
+
+### Fel med flera personaliseringsvärden {#multiple-values-error}
+
+När en leverans misslyckas kan följande fel visas i leveransloggarna:
+
+```
+DLV-XXXX The count of message prepared (123) is greater than the number of messages to send (111). Please contact support.
+```
+
+**Orsak**: Det finns ett anpassningsfält eller -block i e-postmeddelandet som har mer än ett värde för mottagaren. Ett personaliseringsblock används och hämtar mer än en post för en viss mottagare.
+
+**Upplösning**: Kontrollera de personaliseringsdata som används och kontrollera sedan målet för mottagare som har mer än en post för något av dessa fält. Du kan också använda en **[!UICONTROL Deduplication]**-aktivitet i målarbetsflödet före leveransaktiviteten för att se till att det bara finns ett personaliseringsfält åt gången. Mer information om borttagning av dubbletter finns i [arbetsflödesdokumentationen](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/targeting-activities/deduplication.html){target="_blank"}.
+
+### Automatisk svarshantering {#auto-reply-handling}
+
+Vissa leveranser kan misslyckas med felet &quot;Onåbar&quot; som anger:
+
+```
+Inbound email bounce (rule 'Auto_replies' has matched this bounce).
+```
+
+**Förklaring**: Det innebär att leveransen lyckades, men Adobe Campaign fick ett automatiskt svar från mottagaren (t.ex. ett frånvaromeddelande) som matchade e-postreglerna för inkommande e-post för Auto_responses).
+
+E-postadressen för automatiskt svar ignoreras av Adobe Campaign och mottagarens adress skickas inte till karantän. Detta är ett förväntat beteende som inte tyder på ett leveransfel.
+
+## Relaterade ämnen
+
+[Leveransstatus](delivery-statuses.md) förklarar de olika statusvärden en leverans kan ha under sin livscykel.
+
+[Övervaka leveranser i Campaign-gränssnittet](delivery-dashboard.md) ger vägledning om hur du använder kontrollpanelen för leverans för att spåra leveransresultat och diagnostisera problem.
+
+[Karantänhantering](quarantines.md) förklarar hur Campaign hanterar adresser i karantän för att skydda ditt sändningsrykte.
+
+[Övervaka din leveransförmåga](monitoring-deliverability.md) ger vägledning om hur du kan upprätthålla bra leveransförmåga och avsändarens anseende.
+
+[Bästa tillvägagångssätt vid leverans](../start/delivery-best-practices.md) omfattar bästa praxis för att skapa och skicka leveranser i Campaign.

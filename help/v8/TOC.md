@@ -5,10 +5,10 @@ user-guide-description: Produktdokumentation för Adobe Campaign v8 (klientkonso
 title: Adobe Campaign v8-dokumentation
 description: Kampanjdokumentation v8
 breadcrumb-title: Dokumentation om Campaign v8
-source-git-commit: d886072b3a21d5e5b70662c67919223cf9a1b68e
+source-git-commit: c4d3a5d3cf89f2d342c661e54b5192d84ceb3a75
 workflow-type: tm+mt
-source-wordcount: '815'
-ht-degree: 28%
+source-wordcount: '841'
+ht-degree: 29%
 
 ---
 
@@ -105,9 +105,11 @@ ht-degree: 28%
       + [Leveransanalys](send/delivery-analysis.md)
       + [Konfigurera och skicka leveransen](send/configure-and-send.md)
       + [Tidsoptimering för sändning](send/predictive.md)
-   + Fel, studsar och karantän {#failures}
-      + [Karantän](send/quarantines.md)
+   + Övervaka leveranser {#monitor}
+      + [Övervaka leveranser i Campaign-gränssnittet](send/delivery-dashboard.md)
+      + [Leveransstatus](send/delivery-statuses.md)
       + [Leveransfel](send/delivery-failures.md)
+      + [Karantän](send/quarantines.md)
    + Leveranshantering {#deliverability-management}
       + [Vad är levererbarhet?](send/about-deliverability.md)
       + [Kontrollera meddelandeinnehåll](send/control-message-content.md)
@@ -143,7 +145,7 @@ ht-degree: 28%
    + [Designa webbprogram och formulär](dev/webapps.md)
 + Arbetsflöden {#workflows}
    + [Kom igång med arbetsflöden](config/workflows.md)
-   + [Arbetsflödesdokumentation >](https://experienceleague.adobe.com/docs/campaign/automation/workflows/introduction/about-workflows.html?lang=sv-SE)
+   + [Arbetsflödesdokumentation >](https://experienceleague.adobe.com/docs/campaign/automation/workflows/introduction/about-workflows.html)
 + Integritet och säkerhet {#privacy}
    + [Hantera förfrågningar om användarens information](start/privacy.md)
    + [Säkerhetsanvisningar](config/security.md)
@@ -166,8 +168,15 @@ ht-degree: 28%
       + [Hantera anonyma interaktioner](interaction/anonymous-interactions.md)
    + [Rapporter och historik](interaction/interaction-tracking.md)
    + [Användningsfall](interaction/interaction-use-cases.md)
-+ Rapportering och analys {#analytics}
-   + [Spåra och övervaka](start/tracking.md)
++ Spårning och analys {#analytics}
+   + Meddelandespårning {#tracking}
+      + [Kom igång med spårning](send/tracking.md)
+      + [Konfigurera spårade länkar](send/tracked-links.md)
+      + [Konfigurera alternativ för URL-spårning](send/url-tracking.md)
+      + [Spåra personanpassade länkar](send/personalized-links.md)
+      + [Testspårning](send/testing-tracking.md)
+      + [Åtkomstspårningsloggar](send/tracking-logs.md)
+   + [Översikt över kampanjövervakning](start/monitor.md)
    + [Granskningskedja](reporting/audit-trail.md)
    + Arbeta med rapporter{#reports}
       + [Kom igång med rapporter](reporting/gs-reporting.md)
@@ -188,7 +197,7 @@ ht-degree: 28%
       + [Designfrågor](start/design-queries.md)
       + [Definiera filtervillkor](start/filter-conditions.md)
    + [Importera data](start/import.md)
-   + [Arbetsflödesdokumentation >](https://experienceleague.adobe.com/docs/campaign/automation/workflows/introduction/about-workflows.html?lang=sv-SE)
+   + [Arbetsflödesdokumentation >](https://experienceleague.adobe.com/docs/campaign/automation/workflows/introduction/about-workflows.html)
 + Integreringar {#connect}
    + [Connect Campaign med andra lösningar](connect/integration.md)
    + Campaign + Experience Platform {#ac-aep}
@@ -274,6 +283,6 @@ ht-degree: 28%
          + [Kontrollera ett arbetsflöde](dev/api/controlling-a-workflow.md)
          + [Utlösa en signalaktivitet](dev/api/triggering-a-signal-activity.md)
 + Ytterligare resurser {#resources}
-   + [Tekniska kommentarer för kampanj >](https://experienceleague.adobe.com/sv/docs/campaign/technotes-ac/technotes-home)
-   + [Dokumentation för kampanjwebbanvändargränssnitt >](https://experienceleague.adobe.com/sv/docs/campaign-web/v8/campaign-web-home)
+   + [Tekniska kommentarer för kampanj >](https://experienceleague.adobe.com/en/docs/campaign/technotes-ac/technotes-home)
+   + [Dokumentation för kampanjwebbanvändargränssnitt >](https://experienceleague.adobe.com/en/docs/campaign-web/v8/campaign-web-home)
 

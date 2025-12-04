@@ -4,13 +4,13 @@ description: Rekommendationer och begränsningar vid migrering till Campaign v8 
 audience: developing
 content-type: reference
 topic-tags: campaign-standard-apis
-role: Data Engineer
+role: Developer
 level: Experienced
 mini-toc-levels: 1
 exl-id: 45acebb1-9325-4e26-8fe9-cc73f745d801
-source-git-commit: 4ed5799c77c647c9f1aeabba7645fbb475d03c09
+source-git-commit: 00d9c3229b7bbabfec3b1750ae84978545fdc218
 workflow-type: tm+mt
-source-wordcount: '1050'
+source-wordcount: '1046'
 ht-degree: 1%
 
 ---
@@ -71,7 +71,7 @@ Vissa fält från databasen tas bort under migreringen. När du använder ett sl
 
 ## POST med länkade resurser
 
-När du använder följande body-format för begäran, där &quot;vehikelägare&quot; representerar länken till &quot;nms:mottagare&quot;:
+När du använder följande body-format för begäran, där &quot;vehikelägare&quot; representerar länken till &quot;nms:recipient&quot;:
 
 ```
 {
@@ -107,8 +107,8 @@ I avsnittet nedan listas skillnaderna mellan felkoder och meddelanden för Campa
 
 | Scenario | Campaign Standard | Campaign v8 |
 |  ---  |  ---  |  ---  |
-| Använd en ogiltig PKey i begärandetexten | 500 - Attributet O5iRp40EGA är okänt (se definitionen av schemat Profiler (nms:receive). XTK-170036 Det gick inte att parsa uttrycket &#39;@id = @O5iRp40EGA&#39;. | 404 - Det gick inte att dekryptera PKey. (PKey=@jkledsen) |
-| Använd en ogiltig PKey i URI | 500 - Attributet O5iRp40EGA är okänt (se definitionen av schemat Profiler (nms:receive). XTK-170036 Det gick inte att parsa uttrycket &#39;@id = @O5iRp40EGA&#39;. | 404 - Det gick inte att dekryptera PKey. (PKey=@jkledsen) Slutpunkten stöds inte. (endpoint=rest/profileAndServices/profile/@jkledsen) |
+| Använd en ogiltig PKey i begärandetexten | 500 - Attributet O5iRp40EGA är okänt (se definitionen av schemat Profiler (nms:recipient)). XTK-170036 Det gick inte att parsa uttrycket &#39;@id = @O5iRp40EGA&#39;. | 404 - Det gick inte att dekryptera PKey. (PKey=@jkledsen) |
+| Använd en ogiltig PKey i URI | 500 - Attributet O5iRp40EGA är okänt (se definitionen av schemat Profiler (nms:recipient)). XTK-170036 Det gick inte att parsa uttrycket &#39;@id = @O5iRp40EGA&#39;. | 404 - Det gick inte att dekryptera PKey. (PKey=@jkledsen) Slutpunkten stöds inte. (endpoint=rest/profileAndServices/profile/@jkledsen) |
 | Använda två olika raw-nycklar i URI:n och begärandetexten | 500 - RST-360011 Ett fel har inträffat - kontakta administratören. RST-360012 Inkonsekvent åtgärd för resursen service - Det går inte att uppdatera nyckeln SVC3 till SVC4. | 500 - Ett fel har inträffat. Kontakta administratören. |
 | Använda PKey i URI:n och en annan PKey i begärandetexten | 500 - Det finns redan en tjänst med samma nyckel, SVC4. PGS-220000 PostgreSQL-fel: FEL: Dubblettnyckelvärdet bryter mot den unika begränsningen &quot;nmsservice_name&quot; DETAIL: Key (sname)=(SVC4) finns redan. | 500 - Ett fel har inträffat. Kontakta administratören. |
 | Använda ett icke-befintligt raw-id i URI | 404 - RST-360011 Ett fel har inträffat. Kontakta administratören. Det gick inte att hitta dokumentet med sökvägen Service från nyckeln adobe_nl:0 (dokument med schemat service och namnet adobe_nl) | 404 - Det går inte att hitta dokumentet med sökvägen Service från nyckeln adobe_nl (dokument med schemat service och namnet adobe_nl) |

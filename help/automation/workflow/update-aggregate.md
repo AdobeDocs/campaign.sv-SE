@@ -3,11 +3,11 @@ product: campaign
 title: Uppdatera aggregat
 description: Läs mer om aktiviteten Uppdatera aggregerat arbetsflöde
 feature: Workflows
-role: Data Engineer
+role: Developer
 level: Beginner
 version: Campaign v8, Campaign Classic v7
 exl-id: 9a213522-bacf-44f9-98a6-caaaf037a0f9
-source-git-commit: 4cbccf1ad02af9133d51933e3e0d010b5c8c43bd
+source-git-commit: 00d9c3229b7bbabfec3b1750ae84978545fdc218
 workflow-type: tm+mt
 source-wordcount: '108'
 ht-degree: 3%

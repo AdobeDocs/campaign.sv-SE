@@ -3,10 +3,10 @@ product: campaign
 title: Fråga
 description: Läs mer om arbetsflödesaktiviteten Fråga
 feature: Workflows, Targeting Activity, Query Editor
-role: User, Data Engineer
+role: User, Developer
 exl-id: 717e4f7c-3a8e-4930-9a06-b7412d6e1675
 version: Campaign v8, Campaign Classic v7
-source-git-commit: 2d13ba585b55f0e149d1bca53240b05fe5a8a9eb
+source-git-commit: 00d9c3229b7bbabfec3b1750ae84978545fdc218
 workflow-type: tm+mt
 source-wordcount: '1603'
 ht-degree: 0%
@@ -26,7 +26,7 @@ Lär dig hur du skapar frågor via användningsfall i [det här avsnittet](query
 
 >[!NOTE]
 >
->Adobe Campaign webbgränssnitt har en kraftfull frågemodellerare som förenklar filtreringen av databaser och väljer specifika mål baserat på olika kriterier, vilket gör att du enklare kan skapa och hantera frågor. Mer information om frågemodelleraren för webbgränssnitt finns i [Adobe Campaign Web UI-dokumentationen](https://experienceleague.adobe.com/sv/docs/campaign-web/v8/query-database/query-modeler-overview){target=_blank}.
+>Adobe Campaign webbgränssnitt har en kraftfull frågemodellerare som förenklar filtreringen av databaser och väljer specifika mål baserat på olika kriterier, vilket gör att du enklare kan skapa och hantera frågor. Mer information om frågemodelleraren för webbgränssnitt finns i [Adobe Campaign Web UI-dokumentationen](https://experienceleague.adobe.com/en/docs/campaign-web/v8/query-database/query-modeler-overview){target=_blank}.
 
 Med länken **[!UICONTROL Edit query...]** kan du definiera måltyp, begränsningar och urvalskriterier för populationen på följande sätt:
 

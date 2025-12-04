@@ -3,10 +3,10 @@ product: campaign
 title: Konfigurera en återkommande import
 description: Lär dig hur du konfigurerar en arbetsflödesmall för återkommande importer.
 feature: Workflows, Data Management
-role: User, Data Engineer
+role: User, Developer
 version: Campaign v8, Campaign Classic v7
 exl-id: 13f0091b-b62c-47df-9658-6631ba1cf03a
-source-git-commit: 4cbccf1ad02af9133d51933e3e0d010b5c8c43bd
+source-git-commit: 00d9c3229b7bbabfec3b1750ae84978545fdc218
 workflow-type: tm+mt
 source-wordcount: '1017'
 ht-degree: 0%
@@ -41,16 +41,16 @@ I det här exemplet visas hur du anger ett förinställt arbetsflöde som kan å
      Smith;Hayden;23/05/1989;hayden.smith@mailtest.com;123456
      ```
 
-   * Välj **[!UICONTROL Upload a file from the local machine]** i avsnittet **[!UICONTROL Name of the file to load]** och lämna fältet tomt. Varje gång ett nytt arbetsflöde skapas från den här mallen kan du här ange vilken fil du vill ha, så länge den motsvarar den definierade strukturen.
+   * Välj **[!UICONTROL Name of the file to load]** i avsnittet **[!UICONTROL Upload a file from the local machine]** och lämna fältet tomt. Varje gång ett nytt arbetsflöde skapas från den här mallen kan du här ange vilken fil du vill ha, så länge den motsvarar den definierade strukturen.
 
-     Du kan använda något av alternativen, men du måste ändra mallen därefter. Om du till exempel väljer **[!UICONTROL Specified in the transition]** kan du lägga till en **[!UICONTROL File Transfer]**-aktivitet innan för att hämta filen som ska importeras från en FTP-/SFTP-server. Med S3- eller SFTP-anslutning kan du även importera segmentdata till Adobe Campaign med Adobe kunddataplattform i realtid. Mer information finns i [Adobe Experience Platform-dokumentationen](https://experienceleague.adobe.com/docs/experience-platform/destinations/catalog/email-marketing/adobe-campaign.html?lang=sv-SE){target="_blank"}.
+     Du kan använda något av alternativen, men du måste ändra mallen därefter. Om du till exempel väljer **[!UICONTROL Specified in the transition]** kan du lägga till en **[!UICONTROL File Transfer]**-aktivitet innan för att hämta filen som ska importeras från en FTP-/SFTP-server. Med S3- eller SFTP-anslutning kan du även importera segmentdata till Adobe Campaign med Adobe kunddataplattform i realtid. Mer information finns i [Adobe Experience Platform-dokumentationen](https://experienceleague.adobe.com/docs/experience-platform/destinations/catalog/email-marketing/adobe-campaign.html){target="_blank"}.
 
      ![](assets/import_template_example1.png)
 
 1. Konfigurera aktiviteten **[!UICONTROL Enrichment]**. Syftet med den här aktiviteten i det här sammanhanget är att identifiera inkommande data.
 
    * På fliken **[!UICONTROL Enrichment]** väljer du **[!UICONTROL Add data]** och definierar en länk mellan importerade data och måldimensionen för mottagarna. I det här exemplet används det anpassade fältet **CRM ID** för att skapa kopplingsvillkoret. Använd fältet eller kombinationen av fält som du behöver så länge det går att identifiera unika poster.
-   * Lämna alternativet **[!UICONTROL Identify the document from the working data]** omarkerat på fliken **[!UICONTROL Reconciliation]**.
+   * Lämna alternativet **[!UICONTROL Reconciliation]** omarkerat på fliken **[!UICONTROL Identify the document from the working data]**.
 
    ![](assets/import_template_example2.png)
 
@@ -60,7 +60,7 @@ I det här exemplet visas hur du anger ett förinställt arbetsflöde som kan å
 
    Mottagare som inte kan förenas och som inte har tillräckligt med data markeras i en komplementövergång och kan exporteras i en separat fil eller helt enkelt ignoreras.
 
-   * Välj **[!UICONTROL Use the additional data only]** som filterinställning på fliken **[!UICONTROL General]** i aktiviteten och kontrollera att **[!UICONTROL Targeting dimension]** automatiskt är inställd på **[!UICONTROL Enrichment]**.
+   * Välj **[!UICONTROL General]** som filterinställning på fliken **[!UICONTROL Use the additional data only]** i aktiviteten och kontrollera att **[!UICONTROL Targeting dimension]** automatiskt är inställd på **[!UICONTROL Enrichment]**.
 
      Markera alternativet **[!UICONTROL Generate complement]** för att se om det inte går att infoga någon post i databasen. Om du behöver kan du använda ytterligare bearbetning för komplementdata: filexport, listuppdatering osv.
 
@@ -91,7 +91,7 @@ I det här exemplet visas hur du anger ett förinställt arbetsflöde som kan å
      ![](assets/import_template_example4.png)
 
    * I det här exemplet används e-postfältet för att hitta unika profiler. Du kan använda vilket fält som helst som du är säker på är ifyllt och ingår i en unik kombination.
-   * Markera **[!UICONTROL Advanced parameters]** på skärmen **[!UICONTROL Deduplication method]** och markera alternativet **[!UICONTROL Disable automatic filtering of 0 ID records]** för att se till att poster som har en primärnyckel som är lika med 0 (som ska vara alla poster i övergången) inte utesluts.
+   * Markera **[!UICONTROL Deduplication method]** på skärmen **[!UICONTROL Advanced parameters]** och markera alternativet **[!UICONTROL Disable automatic filtering of 0 ID records]** för att se till att poster som har en primärnyckel som är lika med 0 (som ska vara alla poster i övergången) inte utesluts.
 
    ![](assets/import_template_example7.png)
 

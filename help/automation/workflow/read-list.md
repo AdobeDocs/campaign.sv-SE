@@ -3,10 +3,10 @@ product: campaign
 title: Läslista
 description: Läs mer om arbetsflödesaktiviteten Läs lista
 feature: Workflows, Targeting Activity
-role: User, Data Engineer
+role: User, Developer
 version: Campaign v8, Campaign Classic v7
 exl-id: 91c87f8f-bdd2-4ca1-94c2-ec9e7affc1a0
-source-git-commit: 4cbccf1ad02af9133d51933e3e0d010b5c8c43bd
+source-git-commit: 00d9c3229b7bbabfec3b1750ae84978545fdc218
 workflow-type: tm+mt
 source-wordcount: '488'
 ht-degree: 0%

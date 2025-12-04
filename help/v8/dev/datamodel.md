@@ -2,10 +2,10 @@
 title: Kom igång med Campaign-datamodellen
 description: Kom igång med datamodellen i Campaign och utnyttja data från dina källor för att gynna dina kommunikations- och marknadsföringsresultat.
 feature: Data Model
-role: Data Engineer
+role: Developer
 level: Beginner
 exl-id: 200b60f1-04ae-4c3e-892f-3dd2bd22b896
-source-git-commit: be085eaf7e1e7ded5986fdb6100045daba4d88fe
+source-git-commit: 00d9c3229b7bbabfec3b1750ae84978545fdc218
 workflow-type: tm+mt
 source-wordcount: '706'
 ht-degree: 4%
@@ -60,7 +60,7 @@ Det går att utöka mottagartabellen, men inte att minska antalet fält eller l�
 
 Lär dig att utöka ett befintligt schema i [det här avsnittet](extend-schema.md).
 
-Upptäck exempel på inbyggda mottagartabelltillägg i [Campaign Classic v7-dokumentationen](https://experienceleague.adobe.com/docs/campaign-classic/using/configuring-campaign-classic/editing-schemas/examples-of-schemas-edition.html?lang=sv-SE#extending-a-table){target="_blank"}
+Upptäck exempel på inbyggda mottagartabelltillägg i [Campaign Classic v7-dokumentationen](https://experienceleague.adobe.com/docs/campaign-classic/using/configuring-campaign-classic/editing-schemas/examples-of-schemas-edition.html#extending-a-table){target="_blank"}
 
 Du kan också använda en annan mottagartabell för att bättre passa ditt företags eller dina funktionskrav. Den här metoden har begränsningar och beskrivs i [det här avsnittet](custom-recipient.md).
 

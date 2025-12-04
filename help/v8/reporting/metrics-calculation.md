@@ -2,11 +2,11 @@
 title: Inbyggd beräkning av rapportvärden
 description: Inbyggd beräkning av rapportvärden
 feature: Reporting
-role: Data Engineer
+role: Developer
 exl-id: ad8e9f9c-df24-4a11-b8df-4b31dd54911f
-source-git-commit: 567c2e84433caab708ddb9026dda6f9cb717d032
+source-git-commit: 00d9c3229b7bbabfec3b1750ae84978545fdc218
 workflow-type: tm+mt
-source-wordcount: '3048'
+source-wordcount: '3025'
 ht-degree: 0%
 
 ---
@@ -46,7 +46,7 @@ ht-degree: 0%
  </tbody> 
 </table>
 
-Den här rapporten baseras på tabellen **[!UICONTROL Consolidated tracking]** (nms:trackingStats). Den här sammanställda tabellen används av prestandaskäl när rapporter visas i stället för tabellen **[!UICONTROL Recipient tracking logs]** (nms:trackingLogRcp) och den beräknas inte i realtid. Tabellen genereras några minuter efter att spårningsloggarna har hämtats. Om indikatorerna är aktuella blir resultatet samma som för indikatorerna i rapporten **Spårningsindikatorer**. Indikatorn @totalclicks uttrycker det totala antalet klick under en femminutersperiod.
+Den här rapporten baseras på tabellen **[!UICONTROL Consolidated tracking]** (nms:trackingStats). Den här sammanställda tabellen används av prestandaskäl när rapporter visas, i stället för tabellen **[!UICONTROL Recipient tracking logs]** (nms:trackingLogRcp), och den beräknas inte i realtid. Tabellen genereras några minuter efter att spårningsloggarna har hämtats. Om indikatorerna är aktuella blir resultatet samma som för indikatorerna i rapporten **Spårningsindikatorer**. Indikatorn @totalclicks uttrycker det totala antalet klick under en femminutersperiod.
 
 ## Ej levererbara och studsningar {#non-deliverables-and-bounces-1}
 
@@ -492,7 +492,7 @@ Den här rapporten baseras på tabellen **[!UICONTROL Services]** (nms:service).
 
 ## Spårningsindikatorer {#tracking-indicators-1}
 
-Den här rapporten baseras på tabellerna **[!UICONTROL Delivery and tracking statistics]** (nms:deliveryLogStats) och **[!UICONTROL Consolidated tracking]** (nms:trackingStats).
+Den här rapporten baseras på tabellerna **[!UICONTROL Delivery and tracking statistics]** (nms:deliveryLogStats) och **[!UICONTROL Consolidated tracking]** (nms :trackingStats).
 
 <table> 
  <thead> 
@@ -912,7 +912,7 @@ Den här rapporten baseras på tabellerna **Leveranser** (nms:delivery) och **sp
 
 ## Andra indikatorer {#other-indicators}
 
-Indikatorn **Skickat** (@skickat), som nås via noden **Leveranser (nms:delivery) > Indicators**, motsvarar det totala antalet SMS som skickas till tjänstprovidern. Den här indikatorn används bara för SMS-leveranser och får inte användas för andra typer av leveranser (ska inte blandas ihop med indikatorerna **@success** och **@processed**).
+Indikatorn **Skickat** (@skickat), som nås via noden **Leveranser (nms:delivery) > Indikatorer**, motsvarar det totala antalet SMS som skickas till tjänstprovidern. Den här indikatorn används bara för SMS-leveranser och får inte användas för andra typer av leveranser (ska inte blandas ihop med indikatorerna **@success** och **@processed**).
 
 ## Synkronisering av indikator {#indicator-synchronization}
 

@@ -3,10 +3,10 @@ product: campaign
 title: Anpassa kuber
 description: Lär dig de bästa sätten att implementera kuber i Adobe Campaign
 feature: Reporting
-role: Data Engineer
+role: Developer
 level: Beginner
 exl-id: 300aedd0-6b5d-4264-bd63-e26a41ab64db
-source-git-commit: f75b95faa570d7c3f59fd8fb15692d3c3cbe0d36
+source-git-commit: 00d9c3229b7bbabfec3b1750ae84978545fdc218
 workflow-type: tm+mt
 source-wordcount: '1438'
 ht-degree: 1%
