@@ -5,10 +5,10 @@ type: Event
 title: Adobe Campaign Technotes
 description: Kampanjanteckningar
 breadcrumb-title: Kampanjtekniker
-source-git-commit: 784c74aaff23dbf1f35c6e8153f90610048e1c07
+source-git-commit: ed9e784c1610a6f042b99223ac0d4cc0cf312b09
 workflow-type: tm+mt
-source-wordcount: '70'
-ht-degree: 20%
+source-wordcount: '76'
+ht-degree: 18%
 
 ---
 
@@ -21,6 +21,7 @@ ht-degree: 20%
    + [Migrera användare till IMS](upgrades/migrate-users-to-ims.md)
    + [Migrera tekniska operatorer till Developer Console](upgrades/ims-migration.md)
    + [Migrera teknisk operatör till Developer Console](upgrades/ims-migration-old.md)
+   + [Flytta till den nya SMS-kopplingen](upgrades/sms-migration.md)
    + [Campaign som skickar infrastrukturmigrering till AWS](upgrades/migrate-to-aws.md)
    + [Uppgradering av infrastruktur för e-postutskick av kampanj](upgrades/upgrade-to-aws.md)
    + [Uppgradera Apache-version](upgrades/apache.md)
@@ -30,4 +31,4 @@ ht-degree: 20%
    + Säkerhet {#security}
       + [Rotation av kundens autentiseringsuppgifter](security/credential-rotation-guide.md)
       + [Asymetrisk kryptering](security/asymetric-encryption.md)
-+ [&lt; Tillbaka till Campaign v8-dokumentation](https://experienceleague.adobe.com/sv/docs/campaign/campaign-v8/campaign-home)
++ [&lt; Tillbaka till Campaign v8-dokumentation](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/campaign-home)
