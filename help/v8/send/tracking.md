@@ -5,9 +5,9 @@ feature: Monitoring, Email
 role: User
 level: Beginner
 exl-id: f3de901f-519f-42ae-846c-f20c7cb560df
-source-git-commit: 90ed82673b893b62a185227dd8cdfe80cc8f1455
+source-git-commit: 57e177dc6c30502f2ed3bb08b18586fa5399e89c
 workflow-type: tm+mt
-source-wordcount: '461'
+source-wordcount: '455'
 ht-degree: 3%
 
 ---
@@ -78,7 +78,7 @@ Den här rapporten innehåller en lista över besökta sidor efter en leverans.
 
 I det här exemplet är det lättare att förstå skillnaden mellan en person/en person och en mottagare i Adobe Campaign.
 
-Läs mer om personer/personer och mottagare i [Campaign Classic v7-dokumentationen](https://experienceleague.adobe.com/docs/campaign-classic/using/reporting/reports-on-deliveries/person-people-recipients.html?lang=sv-SE#reporting){target="_blank"}
+[Läs mer om målgrupper och mottagare](../reporting/metrics-calculation.md#targeted-persons---recipients)
 
 **Spårningsindikatorer**
 
