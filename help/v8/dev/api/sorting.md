@@ -262,8 +262,8 @@ Om du vill använda ett eget filter måste du skapa och anpassa det i Adobe Camp
 
 Mer information finns i Campaign Standard-dokumentationen:
 
-* [Konfigurerar filterdefinitionen](https://helpx.adobe.com/se/campaign/standard/developing/using/configuring-filter-definition.html).
-* [Använd skiftläge: Anropar en resurs med en sammansatt identifieringsnyckel](https://experienceleague.adobe.com/docs/campaign-standard/using/developing/adding-or-extending-a-resource/uc-calling-resource-id-key.html?lang=sv-SE).
+* [Konfigurerar filterdefinitionen](https://helpx.adobe.com/campaign/standard/developing/using/configuring-filter-definition.html).
+* [Använd skiftläge: Anropar en resurs med en sammansatt identifieringsnyckel](https://experienceleague.adobe.com/docs/campaign-standard/using/developing/adding-or-extending-a-resource/uc-calling-resource-id-key.html).
 
 <br/>
 

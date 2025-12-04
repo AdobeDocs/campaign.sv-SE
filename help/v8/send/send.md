@@ -75,7 +75,7 @@ Domain Keys Identified Mail (DKIM) är en autentiseringsmetod som används för 
 
 I Adobe Campaign utförs signeringen av DKIM e-postautentisering av MTA.
 
-Läs mer om DKIM i [Adobe Deliverability Best Practice Guide](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/transition-process/infrastructure.html?lang=sv-SE#authentication){target="_blank"}.
+Läs mer om DKIM i [Adobe Deliverability Best Practice Guide](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/transition-process/infrastructure.html#authentication){target="_blank"}.
 
 ## Tjänsten för e-postfeedback {#email-feedback-service}
 

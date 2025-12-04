@@ -94,7 +94,7 @@ Om leveransen inte skickas och dess status är **[!UICONTROL Pending]** kan det 
 
   Gränsen för samtidiga kampanjer har definierats i alternativet **[!UICONTROL NmsOperation_LimitConcurrency]**. Standardvärdet är 10.
 
-  Som användare av hanterade molntjänster kan du arbeta med Adobe för att justera den här gränsen vid behov. Läs mer om alternativen i [Campaign Classic v7-dokumentationen](https://experienceleague.adobe.com/docs/campaign-classic/using/installing-campaign-classic/appendices/configuring-campaign-options.html?lang=sv-SE){target="_blank"}.
+  Som användare av hanterade molntjänster kan du arbeta med Adobe för att justera den här gränsen vid behov. Läs mer om alternativen i [Campaign Classic v7-dokumentationen](https://experienceleague.adobe.com/docs/campaign-classic/using/installing-campaign-classic/appendices/configuring-campaign-options.html){target="_blank"}.
 
 * **Problem med resurstillgänglighet**
 

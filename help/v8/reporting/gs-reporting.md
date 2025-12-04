@@ -18,7 +18,7 @@ Adobe Campaign tillhandahåller en uppsättning rapporteringsverktyg som listas 
 
 * **Dynamisk rapportering**
 
-  Dynamic Reporting är tillgängligt med Campaign Web UI och ger helt anpassningsbara realtidsrapporter för att mäta effekten av era marknadsföringsaktiviteter. Det ger åtkomst till profildata, vilket möjliggör demografiska analyser efter profildimensioner som kön, ort och ålder, utöver funktionella e-postkampanjdata som öppningar och klick. Mer information finns i [dokumentationen för webbgränssnittet v7](https://experienceleague.adobe.com/docs/campaign-web/v8/reports/dynamic-reporting/get-started-reporting.html?lang=sv-SE){target="_blank"}.
+  Dynamic Reporting är tillgängligt med Campaign Web UI och ger helt anpassningsbara realtidsrapporter för att mäta effekten av era marknadsföringsaktiviteter. Det ger åtkomst till profildata, vilket möjliggör demografiska analyser efter profildimensioner som kön, ort och ålder, utöver funktionella e-postkampanjdata som öppningar och klick. Mer information finns i [dokumentationen för webbgränssnittet v7](https://experienceleague.adobe.com/docs/campaign-web/v8/reports/dynamic-reporting/get-started-reporting.html){target="_blank"}.
 
 * **Kuber**
 
@@ -50,10 +50,10 @@ Adobe Campaign tillhandahåller en uppsättning rapporteringsverktyg som listas 
 
   ![](assets/desc-analysis-report.png)
 
-  Rapporter om beskrivande kampanjanalyser presenteras i [Campaign Classic v7-dokumentationen](https://experienceleague.adobe.com/docs/campaign-classic/using/reporting/analyzing-populations/about-descriptive-analysis.html?lang=sv-SE){target="_blank"}.
+  Rapporter om beskrivande kampanjanalyser presenteras i [Campaign Classic v7-dokumentationen](https://experienceleague.adobe.com/docs/campaign-classic/using/reporting/analyzing-populations/about-descriptive-analysis.html){target="_blank"}.
 
 * **Anpassade rapporter**
 
   Använd Adobe Campaign för att skapa rapporter om data i databasen. När du har skapat dem kan du göra dem tillgängliga i rätt sammanhang.
 
-  Steg för att skapa en rapport beskrivs i [Campaign Classic v7-dokumentationen](https://experienceleague.adobe.com/docs/campaign-classic/using/reporting/creating-new-reports/about-reports-creation-in-campaign.html?lang=sv-SE){target="_blank"}. Framtagning av anpassade rapporter är reserverat för avancerade användare.
+  Steg för att skapa en rapport beskrivs i [Campaign Classic v7-dokumentationen](https://experienceleague.adobe.com/docs/campaign-classic/using/reporting/creating-new-reports/about-reports-creation-in-campaign.html){target="_blank"}. Framtagning av anpassade rapporter är reserverat för avancerade användare.

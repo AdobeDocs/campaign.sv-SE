@@ -26,7 +26,7 @@ Lär dig hur du skapar frågor via användningsfall i [det här avsnittet](query
 
 >[!NOTE]
 >
->Adobe Campaign webbgränssnitt har en kraftfull frågemodellerare som förenklar filtreringen av databaser och väljer specifika mål baserat på olika kriterier, vilket gör att du enklare kan skapa och hantera frågor. Mer information om frågemodelleraren för webbgränssnitt finns i [Adobe Campaign Web UI-dokumentationen](https://experienceleague.adobe.com/sv/docs/campaign-web/v8/query-database/query-modeler-overview){target=_blank}.
+>Adobe Campaign webbgränssnitt har en kraftfull frågemodellerare som förenklar filtreringen av databaser och väljer specifika mål baserat på olika kriterier, vilket gör att du enklare kan skapa och hantera frågor. Mer information om frågemodelleraren för webbgränssnitt finns i [Adobe Campaign Web UI-dokumentationen](https://experienceleague.adobe.com/en/docs/campaign-web/v8/query-database/query-modeler-overview){target=_blank}.
 
 Med länken **[!UICONTROL Edit query...]** kan du definiera måltyp, begränsningar och urvalskriterier för populationen på följande sätt:
 

@@ -17,7 +17,7 @@ ht-degree: 1%
 
 LINE är ett program för kostnadsfria snabbmeddelanden, röst- och videosamtal som finns på alla mobila enheter och på datorn. Du kan använda Adobe Campaign för att skicka LINE-meddelanden.
 
-[!DNL LINE] kan också kombineras med transaktionsmeddelandemodulen för att skicka realtidsmeddelanden till appen [!DNL LINE] som är installerad på konsumentmobilenheter. Mer information finns på [sidan](https://experienceleague.adobe.com/sv/docs/campaign-classic/using/transactional-messaging/configure-transactional-messaging/transactional-messaging-architecture#transactional-messaging-and-line) i Campaign Classic v7-dokumentationen.
+[!DNL LINE] kan också kombineras med transaktionsmeddelandemodulen för att skicka realtidsmeddelanden till appen [!DNL LINE] som är installerad på konsumentmobilenheter. Mer information finns på [sidan](https://experienceleague.adobe.com/en/docs/campaign-classic/using/transactional-messaging/configure-transactional-messaging/transactional-messaging-architecture#transactional-messaging-and-line) i Campaign Classic v7-dokumentationen.
 
 ![](assets/line_message.png)
 
