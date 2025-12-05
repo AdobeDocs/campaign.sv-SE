@@ -5,7 +5,7 @@ feature: Architecture, Deployment
 role: Developer
 level: Beginner
 exl-id: 562b24c3-6bea-447f-b74c-187ab77ae78f
-source-git-commit: 00d9c3229b7bbabfec3b1750ae84978545fdc218
+source-git-commit: 7465cacc74b8b7df38c5eb10d2928749c70a87ea
 workflow-type: tm+mt
 source-wordcount: '1039'
 ht-degree: 1%
