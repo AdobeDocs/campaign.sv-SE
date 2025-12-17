@@ -144,7 +144,7 @@ ht-degree: 29%
    + [Designa webbprogram och formulär](dev/webapps.md)
 + Arbetsflöden {#workflows}
    + [Kom igång med arbetsflöden](config/workflows.md)
-   + [Arbetsflödesdokumentation >](https://experienceleague.adobe.com/docs/campaign/automation/workflows/introduction/about-workflows.html)
+   + [Arbetsflödesdokumentation >](https://experienceleague.adobe.com/docs/campaign/automation/workflows/introduction/about-workflows.html?lang=sv-SE)
 + Integritet och säkerhet {#privacy}
    + [Hantera förfrågningar om användarens information](start/privacy.md)
    + [Säkerhetsanvisningar](config/security.md)
@@ -196,7 +196,7 @@ ht-degree: 29%
       + [Designfrågor](start/design-queries.md)
       + [Definiera filtervillkor](start/filter-conditions.md)
    + [Importera data](start/import.md)
-   + [Arbetsflödesdokumentation >](https://experienceleague.adobe.com/docs/campaign/automation/workflows/introduction/about-workflows.html)
+   + [Arbetsflödesdokumentation >](https://experienceleague.adobe.com/docs/campaign/automation/workflows/introduction/about-workflows.html?lang=sv-SE)
 + Integreringar {#connect}
    + [Connect Campaign med andra lösningar](connect/integration.md)
    + Campaign + Experience Platform {#ac-aep}
@@ -282,6 +282,6 @@ ht-degree: 29%
          + [Kontrollera ett arbetsflöde](dev/api/controlling-a-workflow.md)
          + [Utlösa en signalaktivitet](dev/api/triggering-a-signal-activity.md)
 + Ytterligare resurser {#resources}
-   + [Tekniska kommentarer för kampanj >](https://experienceleague.adobe.com/en/docs/campaign/technotes-ac/technotes-home)
-   + [Dokumentation för kampanjwebbanvändargränssnitt >](https://experienceleague.adobe.com/en/docs/campaign-web/v8/campaign-web-home)
+   + [Tekniska kommentarer för kampanj >](https://experienceleague.adobe.com/sv/docs/campaign/technotes-ac/technotes-home)
+   + [Dokumentation för kampanjwebbanvändargränssnitt >](https://experienceleague.adobe.com/sv/docs/campaign-web/v8/campaign-web-home)
 
