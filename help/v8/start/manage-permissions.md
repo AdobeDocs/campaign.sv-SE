@@ -6,9 +6,9 @@ role: User, Admin
 level: Beginner
 version: Campaign v8, Campaign Classic v7
 exl-id: 90154f84-b6a7-407c-93b7-9731dc94d9de
-source-git-commit: df8ab43d9c7aee96c23240cd6c2775311da1abf2
+source-git-commit: ec506653830f4d02d0875a4f26ff4ee76f880272
 workflow-type: tm+mt
-source-wordcount: '1618'
+source-wordcount: '1699'
 ht-degree: 0%
 
 ---
@@ -105,6 +105,10 @@ De här produktprofilerna överensstämmer med Campaign **operatorgrupper**. Sta
 
    * **[!UICONTROL ADMINISTRATION]**: behörighet att köra/skapa/redigera/ta bort objekt som arbetsflöde, leverans, skript osv.
 
+   >[!IMPORTANT]
+   >
+   >Rollen **[!UICONTROL Administrator]** ger åtkomst till Campaign-kontrollpanelen. Alla produktprofiler i Adobe Admin Console som innehåller ordet&quot;admin&quot; i namnet (t.ex.&quot;Administratörer&quot;,&quot;admin&quot;,&quot;Administratörer&quot;,&quot;Administratör för godkännande&quot;, osv.) ger åtkomst till Kontrollpanelen. Läs mer om hur du [hanterar åtkomst till Kontrollpanelen](https://experienceleague.adobe.com/docs/control-panel/using/discover-control-panel/managing-permissions.html){target="_blank"}.
+
 1. **[!UICONTROL Delivery operators]** (leverans)
 
    Operatörerna i den här gruppen ansvarar för att hantera leveranser: de ger åtkomst till de viktigaste resurser som krävs för att skapa och förbereda leveranser (kampanjtyper, leveransmappningar, standardmallar, personaliseringsblock osv.).
@@ -196,9 +200,9 @@ Medlemskap i operatörsgrupper kan ge eller begränsa åtkomsträttigheter till 
 
 Namngivna standardrättigheter i Adobe Campaign är:
 
-* **[!UICONTROL ADMINISTRATION]**: Operatorer med rättigheten **[!UICONTROL ADMINISTRATION]** har fullständig åtkomst till instansen. Administratörsanvändare kan köra/skapa/redigera/ta bort objekt som arbetsflöde, leverans, skript osv.
+* **[!UICONTROL ADMINISTRATION]**: Operatorer med rättigheten **[!UICONTROL ADMINISTRATION]** har fullständig åtkomst till instansen. Administratörsanvändare kan köra/skapa/redigera/ta bort objekt som arbetsflöde, leverans, skript osv. **Obs!** Produktprofiler i Adobe Admin Console som innehåller ordet &quot;admin&quot; ger åtkomst till Campaign-kontrollpanelen.
 
-* **[!UICONTROL APPROVAL ADMINISTRATION]**: Du kan ange flera godkännandesteg i arbetsflöden och leveranser för att säkerställa att det aktuella tillståndet har godkänts av en tilldelad operator eller grupp. Användare med rättigheten **[!UICONTROL APPROVAL ADMINISTRATION]** kan ange godkännandesteg och även tilldela en operator eller operatorgrupp som ska godkänna dessa steg.
+* **[!UICONTROL APPROVAL ADMINISTRATION]**: Du kan ange flera godkännandesteg i arbetsflöden och leveranser för att säkerställa att det aktuella tillståndet har godkänts av en tilldelad operator eller grupp. Användare med rättigheten **[!UICONTROL APPROVAL ADMINISTRATION]** kan ange godkännandesteg och även tilldela en operator eller operatorgrupp som ska godkänna dessa steg. **Obs!** Produktprofiler som innehåller ordet &quot;admin&quot; (till exempel &quot;godkännandeadministratör&quot;) ger åtkomst till Campaign-kontrollpanelen.
 
 * **[!UICONTROL CENTRAL]**: Rätt till central hantering (distribuerad marknadsföring).
 

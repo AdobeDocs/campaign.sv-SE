@@ -5,10 +5,10 @@ feature: Control Panel, Monitoring
 role: Admin
 level: Beginner
 exl-id: b8aa89ac-19f4-4df3-9f36-860aca61bea3
-source-git-commit: 061197048885a30249bd18af7f8b24cb71def742
+source-git-commit: ec506653830f4d02d0875a4f26ff4ee76f880272
 workflow-type: tm+mt
-source-wordcount: '307'
-ht-degree: 55%
+source-wordcount: '372'
+ht-degree: 43%
 
 ---
 
@@ -28,11 +28,19 @@ Läs mer i [dokumentationen från Kontrollpanelen för kampanj](https://experien
 
 ## Hur kommer jag åt Kontrollpanelen? {#ac-control-panel-access}
 
-Kontrollpanelen är tillgänglig direkt från Adobe Experience Cloud. Den är endast tillgänglig för administratörsanvändare. [Klicka här](https://experienceleague.adobe.com/docs/control-panel/using/discover-control-panel/accessing-control-panel.html?lang=sv){target="_blank"} för mer information.
+Kontrollpanelen är tillgänglig direkt från Adobe Experience Cloud. Det är bara tillgängligt för administratörsanvändare.
+
+>[!IMPORTANT]
+>
+>Kontrollpanelen är som standard tillgänglig för administratörsanvändare som tillhör produktprofilen &quot;Administratörer&quot;. Enligt din organisations konfiguration kan produktprofilen namnges på ett annat sätt (&quot;admin&quot;,&quot;admins&quot;,&quot;approval admin&quot; osv.). **Alla produktprofiler som innehåller ordet &quot;admin&quot; i namnet ger automatiskt åtkomst till Kontrollpanelen.**
+>
+>Granska noga namngivningen av produktprofiler så att endast behöriga användare har tillgång till Kontrollpanelen.
+
+[Klicka här](https://experienceleague.adobe.com/docs/control-panel/using/discover-control-panel/accessing-control-panel.html?lang=sv){target="_blank"} för mer information.
 
 ## Vanliga frågor och svar om Kontrollpanelen {#ac-control-faq}
 
-[Klicka här](https://experienceleague.adobe.com/docs/control-panel/using/faq.html?lang=sv-SE#control-panel){target="_blank"} för att läsa vanliga frågor och svar om Kontrollpanelen i Campaign.
+[Klicka här](https://experienceleague.adobe.com/docs/control-panel/using/faq.html#control-panel){target="_blank"} för att läsa vanliga frågor och svar om Kontrollpanelen i Campaign.
 
 ## SFTP-hantering {#ac-control-sftp}
 
@@ -42,7 +50,7 @@ På Kontrollpanelen kan du interagera med alla SFTP-servrar som är anslutna til
 
 Lär dig övervaka dina underdomäner och deras certifikat.
 
-* [Övervaka underdomänerna](https://experienceleague.adobe.com/docs/control-panel/using/subdomains-and-certificates/monitoring-subdomains.html?lang=sv-SE){target="_blank"}
+* [Övervaka underdomänerna](https://experienceleague.adobe.com/docs/control-panel/using/subdomains-and-certificates/monitoring-subdomains.html){target="_blank"}
 * [Konfigurera en ny underdomän](https://experienceleague.adobe.com/docs/control-panel/using/subdomains-and-certificates/setting-up-new-subdomain.html?lang=sv){target="_blank"}
 * [Övervaka dina underdomäners SSL-certifikat](https://experienceleague.adobe.com/docs/control-panel/using/subdomains-and-certificates/monitoring-ssl-certificates.html?lang=sv){target="_blank"}
 
@@ -54,7 +62,7 @@ Kontrollpanelen har flera funktioner som hjälper dig att övervaka dina instans
 ## Instansinställningar
 
 Lär dig hur du hanterar inställningarna för Campaign-instanser på Kontrollpanelen.
-* [IP på tillåtelselista](https://experienceleague.adobe.com/docs/control-panel/using/instances-settings/ip-allow-listing-instance-access.html?lang=sv-SE){target="_blank"}
+* [IP på tillåtelselista](https://experienceleague.adobe.com/docs/control-panel/using/instances-settings/ip-allow-listing-instance-access.html){target="_blank"}
 * [URL-behörigheter](https://experienceleague.adobe.com/docs/control-panel/using/instances-settings/url-permissions.html?lang=sv){target="_blank"}
-* [Instansinformation](https://experienceleague.adobe.com/docs/control-panel/using/instances-settings/instance-details.html?lang=sv-SE){target="_blank"}
+* [Instansinformation](https://experienceleague.adobe.com/docs/control-panel/using/instances-settings/instance-details.html){target="_blank"}
 * [Hantera GPG-nycklar](https://experienceleague.adobe.com/docs/control-panel/using/instances-settings/gpg-keys-management.html?lang=sv){target="_blank"}
