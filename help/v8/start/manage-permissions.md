@@ -107,7 +107,7 @@ De här produktprofilerna överensstämmer med Campaign **operatorgrupper**. Sta
 
    >[!IMPORTANT]
    >
-   >Rollen **[!UICONTROL Administrator]** ger åtkomst till Campaign-kontrollpanelen. Alla produktprofiler i Adobe Admin Console som innehåller ordet&quot;admin&quot; i namnet (t.ex.&quot;Administratörer&quot;,&quot;admin&quot;,&quot;Administratörer&quot;,&quot;Administratör för godkännande&quot;, osv.) ger åtkomst till Kontrollpanelen. Läs mer om hur du [hanterar åtkomst till Kontrollpanelen](https://experienceleague.adobe.com/docs/control-panel/using/discover-control-panel/managing-permissions.html){target="_blank"}.
+   >Rollen **[!UICONTROL Administrator]** ger åtkomst till Campaign-kontrollpanelen. Alla produktprofiler i Adobe Admin Console som innehåller ordet&quot;admin&quot; i namnet (t.ex.&quot;Administratörer&quot;,&quot;admin&quot;,&quot;Administratörer&quot;,&quot;Administratör för godkännande&quot;, osv.) ger åtkomst till Kontrollpanelen. Läs mer om hur du [hanterar åtkomst till Kontrollpanelen](https://experienceleague.adobe.com/docs/control-panel/using/discover-control-panel/managing-permissions.html?lang=sv-SE){target="_blank"}.
 
 1. **[!UICONTROL Delivery operators]** (leverans)
 
