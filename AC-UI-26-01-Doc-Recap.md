@@ -18,7 +18,7 @@ ht-degree: 3%
 | Granska DOCAC | 3 |
 | Stäng DOCAC | 5 |
 
----
+&#x200B;---
 
 ## Åtgärdsplan för dokumentation för 📋
 
@@ -43,7 +43,7 @@ ht-degree: 3%
 | [NEO-91563](https://jira.corp.adobe.com/browse/NEO-91563) | 🔴 Nej | [DOCAC-13825](https://jira.corp.adobe.com/browse/DOCAC-13825) | ❌ Stäng |
 | [NEO-92151](https://jira.corp.adobe.com/browse/NEO-92151) | 🔴 Nej | [DOCAC-13823](https://jira.corp.adobe.com/browse/DOCAC-13823) | ❌ Stäng |
 
----
+&#x200B;---
 
 ## ⚠️ Åtgärd krävs
 

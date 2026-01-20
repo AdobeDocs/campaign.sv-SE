@@ -13,20 +13,16 @@ I det här dokumentet analyseras JIRA-produkter för månadsutgåvorna AC-UI-26-
 
 ### JIRA-filter
 
-1. **[Artiklar om AC-UI-26-01-Monthly ](https://jira.corp.adobe.com/issues/?jql=project%20%3D%20NEO%20AND%20fixVersion%20%3D%20AC-UI-26-01-Monthly%20and%20type%20%3D%20story%20order%20by%20status)** - huvudversioner
+1. **[Artiklar om AC-UI-26-01-Monthly &#x200B;](https://jira.corp.adobe.com/issues/?jql=project%20%3D%20NEO%20AND%20fixVersion%20%3D%20AC-UI-26-01-Monthly%20and%20type%20%3D%20story%20order%20by%20status)** - huvudversioner
 2. **[NEO-92400-förbättringar](https://jira.corp.adobe.com/issues/?jql=issueFunction%20in%20linkedIssuesOf(%27key%3DNEO-92400%27%2C%20%27is%20implemented%20by%27))** - Versionsförbättringar länkade problem
 3. **[AC-UI-25-11-Monthly Stories](https://jira.corp.adobe.com/issues/?jql=project%20%3D%20NEO%20AND%20fixVersion%20%3D%20AC-UI-25-11-Monthly%20and%20type%20%3D%20story%20order%20by%20status)** - föregående release Carryover
 4. **[AC-UI-25-11 Exklusive 8.8.2](https://jira.corp.adobe.com/issues/?jql=project%20%3D%20NEO%20AND%20fixVersion%20%3D%20AC-UI-25-11-Monthly%20and%20fixVersion%20!%3D%208.8.2%20and%20type%20%3D%20story%20order%20by%20status)** - filtrerad föregående version
 
----
+&#x200B;---
 
 ## 🟢 Skapa DOCAC
 
-### [NEO-91565](https://jira.corp.adobe.com/browse/NEO-91565) - Lägg till stöd för anpassningsfält (avancerad AEM-integrering)
-**Status:** Löst\
-**Dokument krävs:** Ja\
-**Befintlig DOCAC:** Ingen\
-**Åtgärd:** Skapa DOCAC
+### [NEO-91565](https://jira.corp.adobe.com/browse/NEO-91565) - Lägg till stöd för anpassningsfält (avancerad AEM-integrering)**Status:** Löst\**Dokument krävs:** Ja\**Befintlig DOCAC:** Ingen\**Åtgärd:** Skapa DOCAC
 
 **Omfång:**
 - Dokumentstöd för personaliseringsfält i avancerad AEM-integrering
@@ -40,13 +36,9 @@ Stöd för att lägga till personaliseringsfält i leveranser med avancerad AEM-
 
 **Referenser:** [AEM flerspråkig wiki](https://wiki.corp.adobe.com/pages/viewpage.action?pageId=2988189953)
 
----
+&#x200B;---
 
-### [NEO-93487](https://jira.corp.adobe.com/browse/NEO-93487) - Beräkningsprocess för leveransplanering (ACS-paritet)
-**Status:** Nytt\
-**Dokument krävs:** Ja\
-**Befintlig DOCAC:** Ingen\
-**Åtgärd:** Skapa DOCAC
+### [NEO-93487](https://jira.corp.adobe.com/browse/NEO-93487) - Beräkningsprocess för leveransplanering (ACS-paritet)**Status:** Nytt\**Dokument krävs:** Ja\**Befintlig DOCAC:** Ingen\**Åtgärd:** Skapa DOCAC
 
 **Omfång:**
 - Beräkningsprocess för dokumentleveransplanering för push-meddelanden
@@ -60,15 +52,11 @@ Möjliggör OOTB-filbaserad leveransplanering med beräknade sändningstider bas
 
 **Referenser:** [ACS-dokumentation](https://experienceleague.adobe.com/en/docs/campaign-standard/using/testing-and-sending/scheduling-messages/computing-the-sending-date)
 
----
+&#x200B;---
 
 ## 🔄 Uppdatera DOCAC
 
-### [NEO-80973](https://jira.corp.adobe.com/browse/NEO-80973) - Tillgänglighet för dynamisk rapportering för alla användare i webbgränssnittet
-**Status:** Pågår\
-**Dokument krävs:** Ja\
-**Befintlig DOCAC:** [DOCAC-11070](https://jira.corp.adobe.com/browse/DOCAC-11070) (stängd), [DOCAC-13432](https://jira.corp.adobe.com/browse/DOCAC-13432) (löst)\
-**Åtgärd:** Granska DOCAC
+### [NEO-80973](https://jira.corp.adobe.com/browse/NEO-80973) - Tillgänglighet för dynamisk rapportering för alla användare i webbgränssnittet&#x200B;**Status:** Pågår\**Dokument krävs:** Ja\**Befintlig DOCAC:** [DOCAC-11070](https://jira.corp.adobe.com/browse/DOCAC-11070) (stängd), [DOCAC-13432](https://jira.corp.adobe.com/browse/DOCAC-13432) (löst)\**Åtgärd:** Granska DOCAC
 
 **Omfång:**
 - Uppdatera tillgänglighetsinformation (nu för alla användare av webbgränssnittet, inte bara 8.7)
@@ -82,13 +70,9 @@ Dynamisk rapportering är nu tillgängligt för alla som använder Campaign Web 
 
 **Referenser:** [Wiki - rapportjämförelse](https://wiki.corp.adobe.com/display/~kumarvishal/Reports+-+Client+console+vs+WebUI)
 
----
+&#x200B;---
 
-### [NEO-86754](https://jira.corp.adobe.com/browse/NEO-86754) - A/B-testning
-**Status:** Pågår\
-**Dokument krävs:** Ja\
-**Befintlig DOCAC:** [DOCAC-13104](https://jira.corp.adobe.com/browse/DOCAC-13104) (ny)\
-**Åtgärd:** Uppdatera DOCAC
+### [NEO-86754](https://jira.corp.adobe.com/browse/NEO-86754) - A/B-testning&#x200B;**Status:** Pågår\**Dokument krävs:** Ja\**Befintlig DOCAC:** [DOCAC-13104](https://jira.corp.adobe.com/browse/DOCAC-13104) (ny)\**Åtgärd:** Uppdatera DOCAC
 
 **Omfång:**
 - Komplett dokumentation för arbetsflöde för A/B-testning
@@ -103,13 +87,9 @@ Innehållsexperiment och A/B-tester för e-postleveranser, vilket gör det möjl
 
 **Referenser:** [Wiki](https://wiki.corp.adobe.com/pages/viewpage.action?pageId=3017705719), [Figma mocks](https://www.figma.com/design/4EfXEaA6OIV0D8rauuXSWX/A-B-Testing)
 
----
+&#x200B;---
 
-### [NEO-76126](https://jira.corp.adobe.com/browse/NEO-76126) - Skapa scheman (skapa ny tabell, utöka scheman, få åtkomst till extern DB)
-**Status:** Pågår\
-**Dokument krävs:** Ja\
-**Befintlig DOCAC:** [DOCAC-13826](https://jira.corp.adobe.com/browse/DOCAC-13826) (ny)\
-**Åtgärd:** Uppdatera DOCAC
+### [NEO-76126](https://jira.corp.adobe.com/browse/NEO-76126) - Skapa scheman (skapa ny tabell, utöka scheman, få åtkomst till extern DB)**Status:** Pågår\**Dokument krävs:** Ja\**Befintlig DOCAC:** [DOCAC-13826](https://jira.corp.adobe.com/browse/DOCAC-13826) (ny)\**Åtgärd:** Uppdatera DOCAC
 
 **Omfång:**
 - Arbetsflöde för redigering av dokumentschema (endast 3 alternativ: skapa tabell, utöka schema, få åtkomst till extern DB)
@@ -124,13 +104,9 @@ Schemaredigeringsfunktioner i webbgränssnittet gör att administratörer kan sk
 
 **Referenser:** [PRD](https://wiki.corp.adobe.com/pages/viewpage.action?spaceKey=neolane&title=AC+Web+UI+-+Schemas+PRD), [Figma](https://www.figma.com/design/lZkJso2HvXPbNjG0TmQTrC/Schemas)
 
----
+&#x200B;---
 
-### [NEO-92668](https://jira.corp.adobe.com/browse/NEO-92668) - Webbanalys
-**Status:** Nytt\
-**Dokument krävs:** Ja\
-**Befintlig DOCAC:** Ingen\
-**Åtgärd:** Skapa DOCAC
+### [NEO-92668](https://jira.corp.adobe.com/browse/NEO-92668) - Webbanalys&#x200B;**Status:** Nytt\**Dokument krävs:** Ja\**Befintlig DOCAC:** Ingen\**Åtgärd:** Skapa DOCAC
 
 **Omfång:**
 - Konfiguration av externt webbanalyskonto
@@ -144,13 +120,9 @@ Integrering med Web Analytics möjliggör anslutning till webbanalysplattformar 
 
 **Referenser:** Inga angivna
 
----
+&#x200B;---
 
-### [NEO-86753](https://jira.corp.adobe.com/browse/NEO-86753) - AEM-integration för Live-kopior/språkkopior
-**Status:** Nytt\
-**Dokument krävs:** Ja\
-**Befintlig DOCAC:** [DOCAC-13829](https://jira.corp.adobe.com/browse/DOCAC-13829) (löst)\
-**Åtgärd:** Granska DOCAC
+### [NEO-86753](https://jira.corp.adobe.com/browse/NEO-86753) - AEM-integration för Live-kopior/språkkopior&#x200B;**Status:** Nytt\**Dokument krävs:** Ja\**Befintlig DOCAC:** [DOCAC-13829](https://jira.corp.adobe.com/browse/DOCAC-13829) (löst)\**Åtgärd:** Granska DOCAC
 
 **Omfång:**
 - Bläddra bland leveransmallar för AEM
@@ -164,13 +136,9 @@ Smidig integrering med AEM som gör det möjligt att skapa kopior på Live och s
 
 **Referenser:** [ACS-dokumentation](https://experienceleague.adobe.com/docs/campaign-standard/using/integrating-with-adobe-cloud/working-with-campaign-and-experience-manager/creating-multilingual-email-aem.html)
 
----
+&#x200B;---
 
-### [NEO-88838](https://jira.corp.adobe.com/browse/NEO-88838) - Innehållsredigeraren: Använd temavariabler i fragment
-**Status:** Nytt\
-**Dokument krävs:** Ja\
-**Befintlig DOCAC:** [DOCAC-12941](https://jira.corp.adobe.com/browse/DOCAC-12941) (ny)\
-**Åtgärd:** Uppdatera DOCAC
+### [NEO-88838](https://jira.corp.adobe.com/browse/NEO-88838) - Innehållsredigeraren: Använd temavariabler i fragment&#x200B;**Status:** Nytt\**Dokument krävs:** Ja\**Befintlig DOCAC:** [DOCAC-12941](https://jira.corp.adobe.com/browse/DOCAC-12941) (ny)\**Åtgärd:** Uppdatera DOCAC
 
 **Omfång:**
 - Temavariabler i e-postdesigner (Beta)
@@ -184,15 +152,11 @@ Stöd för användning av temavariabler i innehållsfragment, vilket möjliggör
 
 **Referenser:** [ATU-5460](https://jira.corp.adobe.com/browse/ATU-5460)
 
----
+&#x200B;---
 
 ## ➕ Skapa DOCAC (förbättringar)
 
-### [NEO-92942](https://jira.corp.adobe.com/browse/NEO-92942) - Fördefinierade filter - Delat alternativ
-**Status:** Löst\
-**Dokument krävs:** Ja\
-**Befintlig DOCAC:** [DOCAC-13697](https://jira.corp.adobe.com/browse/DOCAC-13697) (kodgranskning), [DOCAC-13522](https://jira.corp.adobe.com/browse/DOCAC-13522) (stängd - hjälp)\
-**Åtgärd:** Granska DOCAC
+### [NEO-92942](https://jira.corp.adobe.com/browse/NEO-92942) - Fördefinierade filter - Delat alternativ&#x200B;**Status:** Löst\**Dokument krävs:** Ja\**Befintlig DOCAC:** [DOCAC-13697](https://jira.corp.adobe.com/browse/DOCAC-13697) (kodgranskning), [DOCAC-13522](https://jira.corp.adobe.com/browse/DOCAC-13522) (stängd - hjälp)\**Åtgärd:** Granska DOCAC
 
 **Omfång:**
 - Delat alternativ för fördefinierade filter
@@ -206,13 +170,9 @@ Fördefinierade filter kan nu markeras som&quot;delade&quot; för att göra dem 
 
 **Referenser:** Relaterat till [NEO-88441](https://jira.corp.adobe.com/browse/NEO-88441)
 
----
+&#x200B;---
 
-### [NEO-91299](https://jira.corp.adobe.com/browse/NEO-91299) - Kontinuerlig leveransaktivitet
-**Status:** Stängt\
-**Dokument krävs:** Ja\
-**Befintlig DOCAC:** [DOCAC-13586](https://jira.corp.adobe.com/browse/DOCAC-13586) (ny), [DOCAC-13808](https://jira.corp.adobe.com/browse/DOCAC-13808) (stängd - sammanhangsberoende hjälp)\
-**Åtgärd:** Uppdatera DOCAC
+### [NEO-91299](https://jira.corp.adobe.com/browse/NEO-91299) - Kontinuerlig leveransaktivitet&#x200B;**Status:** Stängt\**Dokument krävs:** Ja\**Befintlig DOCAC:** [DOCAC-13586](https://jira.corp.adobe.com/browse/DOCAC-13586) (ny), [DOCAC-13808](https://jira.corp.adobe.com/browse/DOCAC-13808) (stängd - sammanhangsberoende hjälp)\**Åtgärd:** Uppdatera DOCAC
 
 **Omfång:**
 - Arbetsflödesaktivitet för kontinuerlig leverans
@@ -227,13 +187,9 @@ Kontinuerlig leveransaktivitet för arbetsflöden möjliggör återkommande leve
 
 **Referenser:** Relaterad episk [NEO-67972](https://jira.corp.adobe.com/browse/NEO-67972)
 
----
+&#x200B;---
 
-### [NEO-90130](https://jira.corp.adobe.com/browse/NEO-90130) - Aktivera OTB-filöverföring för flerspråkiga push-meddelanden
-**Status:** Stängt\
-**Dokument krävs:** Ja\
-**Befintlig DOCAC:** [DOCAC-13606](https://jira.corp.adobe.com/browse/DOCAC-13606) (ny)\
-**Åtgärd:** Uppdatera DOCAC
+### [NEO-90130](https://jira.corp.adobe.com/browse/NEO-90130) - Aktivera OTB-filöverföring för flerspråkiga push-meddelanden&#x200B;**Status:** Stängt\**Dokument krävs:** Ja\**Befintlig DOCAC:** [DOCAC-13606](https://jira.corp.adobe.com/browse/DOCAC-13606) (ny)\**Åtgärd:** Uppdatera DOCAC
 
 **Omfång:**
 - Filöverföring för flerspråkiga push-meddelanden (iOS och Android)
@@ -247,77 +203,53 @@ OOTB-filöverföring för att skapa flerspråkiga push-meddelandeleveranser via 
 
 **Referenser:** [ACS-dokumentation](https://experienceleague.adobe.com/en/docs/campaign-standard/using/communication-channels/push-notifications/generating-csv-multilingual-push)
 
----
+&#x200B;---
 
 ## ❌ har avbrutits/gäller inte längre
 
-### [NEO-91566](https://jira.corp.adobe.com/browse/NEO-91566) - Stöd för CTA-spårning i webbui
-**Status:** Stängd (gäller inte längre)\
-**Dokument krävs:** Nej\
-**Befintlig DOCAC:** [DOCAC-13821](https://jira.corp.adobe.com/browse/DOCAC-13821) (ny)\
-**Åtgärd:** Stäng DOCAC
+### [NEO-91566](https://jira.corp.adobe.com/browse/NEO-91566) - Stöd för CTA-spårning i webbui&#x200B;**Status:** Stängd (gäller inte längre)\**Dokument krävs:** Nej\**Befintlig DOCAC:** [DOCAC-13821](https://jira.corp.adobe.com/browse/DOCAC-13821) (ny)\**Åtgärd:** Stäng DOCAC
 
 **Orsak:** Ny ACS-funktion som stöder MSFT - inte startad, väntande information från MSFT, inget användargränssnitt förväntades
 
 **Kontext:** Microsoft-specifikt, CTA-spårningskrav
 
----
+&#x200B;---
 
-### [NEO-91564](https://jira.corp.adobe.com/browse/NEO-91564) - Stöd för flerspråkigt gränssnitt för AEM
-**Status:** Stängd (gäller inte längre)\
-**Dokument krävs:** Nej\
-**Befintlig DOCAC:** [DOCAC-13822](https://jira.corp.adobe.com/browse/DOCAC-13822) (ny)\
-**Åtgärd:** Stäng DOCAC
+### [NEO-91564](https://jira.corp.adobe.com/browse/NEO-91564) - Stöd för flerspråkigt gränssnitt för AEM&#x200B;**Status:** Stängd (gäller inte längre)\**Dokument krävs:** Nej\**Befintlig DOCAC:** [DOCAC-13822](https://jira.corp.adobe.com/browse/DOCAC-13822) (ny)\**Åtgärd:** Stäng DOCAC
 
 **Orsak:** Gränssnittet hanteras av Himanshus team (en annan artikel)
 
 **Kontext:** Microsoft-krav, arbete har överförts
 
----
+&#x200B;---
 
-### [NEO-91567](https://jira.corp.adobe.com/browse/NEO-91567) - Lägg till stöd för NRT-funktionen
-**Status:** Löst (gäller inte längre)\
-**Dokument krävs:** Nej\
-**Befintlig DOCAC:** [DOCAC-13824](https://jira.corp.adobe.com/browse/DOCAC-13824) (ny)\
-**Åtgärd:** Stäng DOCAC
+### [NEO-91567](https://jira.corp.adobe.com/browse/NEO-91567) - Lägg till stöd för NRT-funktionen&#x200B;**Status:** Löst (gäller inte längre)\**Dokument krävs:** Nej\**Befintlig DOCAC:** [DOCAC-13824](https://jira.corp.adobe.com/browse/DOCAC-13824) (ny)\**Åtgärd:** Stäng DOCAC
 
 **Orsak:** Ny ACS-specifik funktion för MSFT - specifikation tillgänglig men ingen påverkan på webbgränssnittet
 
 **Kontext:** Microsoft-krav, transaktionsmeddelanden
 
----
+&#x200B;---
 
-### [NEO-91563](https://jira.corp.adobe.com/browse/NEO-91563) - Transactional Rest API for Profile Based Enrichment
-**Status:** Löst (gäller inte längre)\
-**Dokument krävs:** Nej\
-**Befintlig DOCAC:** [DOCAC-13825](https://jira.corp.adobe.com/browse/DOCAC-13825) (ny)\
-**Åtgärd:** Stäng DOCAC
+### [NEO-91563](https://jira.corp.adobe.com/browse/NEO-91563) - Transactional Rest API for Profile Based Enrichment&#x200B;**Status:** Löst (gäller inte längre)\**Dokument krävs:** Nej\**Befintlig DOCAC:** [DOCAC-13825](https://jira.corp.adobe.com/browse/DOCAC-13825) (ny)\**Åtgärd:** Stäng DOCAC
 
 **Orsak:** Inget webbgränssnitt fungerar, väntande uppgraderad instans, build upgrade mandatory for release
 
 **Kontext:** REST API-slutpunktsfunktion
 
----
+&#x200B;---
 
-### [NEO-92151](https://jira.corp.adobe.com/browse/NEO-92151) - Profilbaserad Enrichment Transactional Messaging Phase 2
-**Status:** Löst (gäller inte längre)\
-**Dokument krävs:** Nej\
-**Befintlig DOCAC:** [DOCAC-13823](https://jira.corp.adobe.com/browse/DOCAC-13823) (ny)\
-**Åtgärd:** Stäng DOCAC
+### [NEO-92151](https://jira.corp.adobe.com/browse/NEO-92151) - Profilbaserad Enrichment Transactional Messaging Phase 2&#x200B;**Status:** Löst (gäller inte längre)\**Dokument krävs:** Nej\**Befintlig DOCAC:** [DOCAC-13823](https://jira.corp.adobe.com/browse/DOCAC-13823) (ny)\**Åtgärd:** Stäng DOCAC
 
 **Orsak:** Artikeln har inga aktiviteter, markerad som &quot;gäller inte längre&quot;
 
 **Kontext:** Microsoft-krav, Europa-projekt
 
----
+&#x200B;---
 
 ## 🟢 Documentation Ready (from AC-UI-25-11)
 
-### [NEO-90183](https://jira.corp.adobe.com/browse/NEO-90183) - Multilingual Rich Push - UI
-**Status:** Stängt\
-**Dokument krävs:** Ja\
-**Befintlig DOCAC:** [DOCAC-13565](https://jira.corp.adobe.com/browse/DOCAC-13565) (ny)\
-**Åtgärd:** Granska DOCAC
+### [NEO-90183](https://jira.corp.adobe.com/browse/NEO-90183) - Multilingual Rich Push - UI&#x200B;**Status:** Stängt\**Dokument krävs:** Ja\**Befintlig DOCAC:** [DOCAC-13565](https://jira.corp.adobe.com/browse/DOCAC-13565) (ny)\**Åtgärd:** Granska DOCAC
 
 **Omfång:**
 - Omfattande push-fält för flerspråkiga leveranser
@@ -331,13 +263,9 @@ Stöd för push-meddelanden med flerspråkiga funktioner som gör att marknadsf�
 
 **Referenser:** [Wiki](https://wiki.corp.adobe.com/pages/viewpage.action?spaceKey=neolane&title=Rich+push+fields+in+multilingual)
 
----
+&#x200B;---
 
-### [NEO-84916](https://jira.corp.adobe.com/browse/NEO-84916) - Konfigurera och hantera godkännandeprocessen
-**Status:** Löst\
-**Dokument krävs:** Ja\
-**Befintlig DOCAC:** [DOCAC-13827](https://jira.corp.adobe.com/browse/DOCAC-13827) (ny)\
-**Åtgärd:** Uppdatera DOCAC
+### [NEO-84916](https://jira.corp.adobe.com/browse/NEO-84916) - Konfigurera och hantera godkännandeprocessen&#x200B;**Status:** Löst\**Dokument krävs:** Ja\**Befintlig DOCAC:** [DOCAC-13827](https://jira.corp.adobe.com/browse/DOCAC-13827) (ny)\**Åtgärd:** Uppdatera DOCAC
 
 **Omfång:**
 - Konfigurera valideringsoperatorer i leverans/kampanj
@@ -352,7 +280,7 @@ Hantering av godkännandeprocesser möjliggör valideringsarbetsflöden för lev
 
 **Referenser:** [Klassisk dokumentation](https://experienceleague.adobe.com/en/docs/campaign-classic/using/orchestrating-campaigns/orchestrate-campaigns/marketing-campaign-approval), [Figma mocks](https://www.figma.com/design/r2vpqXoVyI3aucKgkt8TLN/Approvals)
 
----
+&#x200B;---
 
 ## 📊 Sammanfattning efter åtgärd
 
@@ -364,7 +292,7 @@ Hantering av godkännandeprocesser möjliggör valideringsarbetsflöden för lev
 | ❌ Stäng DOCAC | 5 |
 | **Totalt** | **17** |
 
----
+&#x200B;---
 
 ## ⚠️ Öppna frågor
 
@@ -374,7 +302,7 @@ Hantering av godkännandeprocesser möjliggör valideringsarbetsflöden för lev
 4. NEO-88838 - Temavariabler - är spärrade i väntan på funktionsrevision i Acrite
 5. Dynamisk rapportering - förtydliga motstridiga mätvärden med hjälp av äldre rapporter
 
----
+&#x200B;---
 
 ## 🔗 relaterade e-postmeddelanden
 
