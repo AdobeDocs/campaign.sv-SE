@@ -50,7 +50,7 @@ Möjliggör OOTB-filbaserad leveransplanering med beräknade sändningstider bas
 
 **Kontext:** Kunddriven (H&amp;M), ACS till ACC-paritetskrav
 
-**Referenser:** [ACS-dokumentation](https://experienceleague.adobe.com/en/docs/campaign-standard/using/testing-and-sending/scheduling-messages/computing-the-sending-date)
+**Referenser:** [ACS-dokumentation](https://experienceleague.adobe.com/sv/docs/campaign-standard/using/testing-and-sending/scheduling-messages/computing-the-sending-date)
 
 &#x200B;---
 
@@ -134,7 +134,7 @@ Smidig integrering med AEM som gör det möjligt att skapa kopior på Live och s
 
 **Kontext:** Microsoft-krav, arbete överfört till Himanshus team
 
-**Referenser:** [ACS-dokumentation](https://experienceleague.adobe.com/docs/campaign-standard/using/integrating-with-adobe-cloud/working-with-campaign-and-experience-manager/creating-multilingual-email-aem.html)
+**Referenser:** [ACS-dokumentation](https://experienceleague.adobe.com/docs/campaign-standard/using/integrating-with-adobe-cloud/working-with-campaign-and-experience-manager/creating-multilingual-email-aem.html?lang=sv-SE)
 
 &#x200B;---
 
@@ -201,7 +201,7 @@ OOTB-filöverföring för att skapa flerspråkiga push-meddelandeleveranser via 
 
 **Kontext:** Kunddriven (H&amp;M), ACS till ACC-paritet, kritisk för migrering
 
-**Referenser:** [ACS-dokumentation](https://experienceleague.adobe.com/en/docs/campaign-standard/using/communication-channels/push-notifications/generating-csv-multilingual-push)
+**Referenser:** [ACS-dokumentation](https://experienceleague.adobe.com/sv/docs/campaign-standard/using/communication-channels/push-notifications/generating-csv-multilingual-push)
 
 &#x200B;---
 
@@ -278,7 +278,7 @@ Hantering av godkännandeprocesser möjliggör valideringsarbetsflöden för lev
 
 **Kontext:** Kunddriven (Pierre Fabre), Microsoft-krav, fullständig och testad dev
 
-**Referenser:** [Klassisk dokumentation](https://experienceleague.adobe.com/en/docs/campaign-classic/using/orchestrating-campaigns/orchestrate-campaigns/marketing-campaign-approval), [Figma mocks](https://www.figma.com/design/r2vpqXoVyI3aucKgkt8TLN/Approvals)
+**Referenser:** [Klassisk dokumentation](https://experienceleague.adobe.com/sv/docs/campaign-classic/using/orchestrating-campaigns/orchestrate-campaigns/marketing-campaign-approval), [Figma mocks](https://www.figma.com/design/r2vpqXoVyI3aucKgkt8TLN/Approvals)
 
 &#x200B;---
 
