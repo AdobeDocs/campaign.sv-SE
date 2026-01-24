@@ -92,7 +92,7 @@ Behöver du hjälp medan du arbetar med Campaign? Läs de viktigaste frågorna o
 
 1. **Kan jag få kontakt med Campaign-experter?**
 
-   Gå med i Campaign Community: sök efter svar i befintliga frågor eller fråga experterna. [Delta i konversationen](https://experienceleaguecommunities.adobe.com/t5/adobe-campaign-classic/ct-p/adobe-campaign-classic-community){target="_blank"}
+   Gå med i Campaign Community: sök efter svar i befintliga frågor eller fråga experterna. [Delta i konversationen](https://experienceleaguecommunities.adobe.com/t5/adobe-campaign-classic/ct-p/adobe-campaign-classic-community?profile.language=sv){target="_blank"}
 
 
 1. **Hur loggar jag ett problem?**

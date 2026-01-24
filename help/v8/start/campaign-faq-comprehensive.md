@@ -21,7 +21,7 @@ Få snabba svar på de vanligaste frågorna om Adobe Campaign v8. Oavsett om du 
 **Behöver du hjälp med versionerna?** Kontrollera [Uppgraderingar](#upgrades) för versionsinformation och uppgraderingsprocesser.\
 **Migrerar från v7 eller Standard?** Se [Campaign v8 vs. tidigare versioner &#x200B;](#v7-differences) för skillnader och vägledning om övergångar.\
 **Behöver du teknisk hjälp?** Kontrollera [Utvecklare](#developers) och [kampanjinställningar](#settings).\
-**Hittar du inte ditt svar?** Besök våra [användarforum](https://experienceleaguecommunities.adobe.com/t5/adobe-campaign-classic/ct-p/adobe-campaign-classic-community){target="_blank"} eller [kontakta support](#get-help).
+**Hittar du inte ditt svar?** Besök våra [användarforum](https://experienceleaguecommunities.adobe.com/t5/adobe-campaign-classic/ct-p/adobe-campaign-classic-community?profile.language=sv){target="_blank"} eller [kontakta support](#get-help).
 
 **Tips!** Använd Ctrl+F (Cmd+F i Mac) om du vill söka efter specifika nyckelord på den här sidan. Klicka på en fråga för att utöka svaret.
 
@@ -161,7 +161,7 @@ Om du vill kontakta Adobe kundsupport ansluter du till [Adobe Admin Console](htt
 
 Kräver enskilda konton med rätt behörigheter. Om du inte kan logga in begär du åtkomst via Experience League. [Läs mer](https://helpx.adobe.com/sv/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html){target="_blank"}
 
-Du kan även gå med i [Campaign Community](https://experienceleaguecommunities.adobe.com/t5/adobe-campaign-classic/ct-p/adobe-campaign-classic-community){target="_blank"} och söka efter svar eller fråga experter.
+Du kan även gå med i [Campaign Community](https://experienceleaguecommunities.adobe.com/t5/adobe-campaign-classic/ct-p/adobe-campaign-classic-community?profile.language=sv){target="_blank"} och söka efter svar eller fråga experter.
 
 +++
 
@@ -248,7 +248,7 @@ Håll dig informerad om nya Campaign-versioner via dessa kanaler:
 * **Adobe-representant** - Kontakta dig direkt när en ny version är tillgänglig
 * **Versionsinformation** - Alla versioner och ändringar dokumenteras i [Versionsinformation för kampanj](release-notes.md)
 * **Adobe Priority-produktuppdateringar** - [Prenumerera](https://www.adobe.com/se/subscription/priority-product-update.html){target="_blank"} för e-postmeddelanden
-* **Campaign Community** - gå med i [diskussioner](https://experienceleaguecommunities.adobe.com/t5/adobe-campaign-classic/ct-p/adobe-campaign-classic-community){target="_blank"} för att få tidig uppdatering
+* **Campaign Community** - gå med i [diskussioner](https://experienceleaguecommunities.adobe.com/t5/adobe-campaign-classic/ct-p/adobe-campaign-classic-community?profile.language=sv){target="_blank"} för att få tidig uppdatering
 
 Som Managed Cloud Services-användare hanterar Adobe uppgraderingar och koordinerar timing med dig.
 
@@ -384,7 +384,7 @@ Att migrera till Adobe Managed Services är en strategisk väg från lokalt/hybr
 
 **Komma igång:** Kontakta din Adobe-representant för att utvärdera din miljö och utveckla en detaljerad migreringsplan med Adobe Professional Services.
 
-Läs mer om [migrering till Managed Services](https://experienceleaguecommunities.adobe.com/t5/adobe-campaign-classic-blogs/migrate-your-adobe-campaign-v7-onprem-hybrid-environment-to/ba-p/681605){target="_blank"}, inklusive utmaningar, bästa praxis och detaljerad migreringsstrategi.
+Läs mer om [migrering till Managed Services](https://experienceleaguecommunities.adobe.com/t5/adobe-campaign-classic-blogs/migrate-your-adobe-campaign-v7-onprem-hybrid-environment-to/ba-p/681605?profile.language=sv){target="_blank"}, inklusive utmaningar, bästa praxis och detaljerad migreringsstrategi.
 
 +++
 
@@ -1755,8 +1755,8 @@ Hittar du inte det du letar efter? Här finns ytterligare resurser som hjälper 
 
 Kommunicera med andra Campaign-användare och Adobe-experter för att dela kunskap och få svar.
 
-* **[Adobe Campaign Community](https://experienceleaguecommunities.adobe.com/t5/adobe-campaign-classic/ct-p/adobe-campaign-classic-community){target="_blank"}** - Ställ frågor, dela lösningar och få kontakt med Campaign-communityn
-* **[Experience League-forum](https://experienceleaguecommunities.adobe.com/){target="_blank"}** - Sök i diskussioner i alla Adobe-produkter
+* **[Adobe Campaign Community](https://experienceleaguecommunities.adobe.com/t5/adobe-campaign-classic/ct-p/adobe-campaign-classic-community?profile.language=sv){target="_blank"}** - Ställ frågor, dela lösningar och få kontakt med Campaign-communityn
+* **[Experience League-forum](https://experienceleaguecommunities.adobe.com/?profile.language=sv){target="_blank"}** - Sök i diskussioner i alla Adobe-produkter
 * **[Kampanjens kontorstider](https://experienceleague.adobe.com/sv){target="_blank"}** - Delta i live-sessioner med Adobe experter
 
 ### Dokumentation och utbildning
