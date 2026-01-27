@@ -3,10 +3,10 @@ title: Versionsinformation om Campaign v8
 description: Senaste Campaign v8-versionen
 feature: Release Notes
 exl-id: 7cf8111d-9f3a-46a4-813a-d4e43a1d1471
-source-git-commit: d31368428fc7d5b982bb5fc67d0369bb17ea0b2c
+source-git-commit: e5e08dcd1813c8eba608ba3a7b659dcd6d98d985
 workflow-type: tm+mt
-source-wordcount: '388'
-ht-degree: 8%
+source-wordcount: '688'
+ht-degree: 14%
 
 ---
 
@@ -14,45 +14,72 @@ ht-degree: 8%
 
 På den här sidan visas nya funktioner, förbättringar och korrigeringar som ingår i Campaign v8 (konsol) **de senaste versionerna**. Läs mer om Campaign-versioner, -versioner och -uppgraderingar på [den här sidan](upgrades.md). Andra versioner listas i avsnittet Tidigare versioner i den här dokumentationen.
 
-## Version 8.8.2 {#release-8-8-2}
+## Version 8.9.1 {#release-8-9-1}
 
-_9 okt 2025_
+_27 januari 2026_
 
->[!AVAILABILITY]
+>[!CAUTION]
 >
->Den här versionen är i **begränsad tillgänglighet** (LA).
+> Uppgradering av klientkonsolen är obligatorisk. Lär dig hur du uppgraderar din klientkonsol på den här [sidan](../start/connect.md#upgrade-ac-console).
 
-### Nya funktioner {#features-8-8-2}
+### Nya funktioner {#new-8-9-1}
 
-Den **nya SMS-sändningskonnektorn** är nu tillgänglig för [Campaign FFDA-distributioner](../architecture/enterprise-deployment.md). Mer information finns i [detaljerad dokumentation](../send/sms/sms.md).
+Den **nya SMS-sändningsanslutningen** är nu tillgänglig för alla kunder (GA). Mer information finns i [detaljerad dokumentation](../send/sms/sms.md).
 
-Den här versionen innehåller även en uppsättning funktioner som är tillgängliga med användargränssnittet för Campaign-webben:
+Den här versionen innehåller en uppsättning funktioner som är tillgängliga med användargränssnittet för Campaign-webben:
 
-* [Profilberikning i transaktionsmeddelanden](https://experienceleague.adobe.com/docs/campaign-web/v8/msg/transactional-messages/profile-enrichment.html?lang=sv-SE){target="_blank"}
-* [Flerspråkiga funktioner för transaktionsmeddelanden, push-meddelanden och SMS](https://experienceleague.adobe.com/docs/campaign-web/v8/msg/multilingual.html?lang=sv-SE){target="_blank"}
+* Flerspråkiga leveransfunktioner (GA)
+* Profilberikning i transaktionsmeddelanden (GA)
+* Adobe Experience Manager live- och språkversioner
+* Innehållsexperiment - A/B-tester
+* Kontinuerlig leveransaktivitet
 
-Se versionsinformationen för Campaign Web UI [&#128279;](https://experienceleague.adobe.com/docs/campaign-web/v8/release-notes/release-notes.html?lang=sv-SE){target="_blank"}
+Se versionsinformationen för Campaign Web UI [](https://experienceleague.adobe.com/docs/campaign-web/v8/release-notes/release-notes.html){target="_blank"}
 
-### Korrigeringar {#fixes-8-8-2}
+### Säkerhetsförbättringar {#security-8-9-1}
 
-<!--
-* Fixed an issue which prevented dynamic reporting from being available for transactional messages.
--->
-* Korrigerade ett problem som kunde leda till att arbetsflödet för databasrensning misslyckades. (NEO-87949)
-* Korrigerade ett fel i distribuerad marknadsföring där spårningsdata inte registrerades för samverkanskampanjleveranser. (NEO-86836)
-<!--
-* Issue SMS2.0 with FFDA Continuous Deliveries (NEO-88785)
--->
-* Ett problem som kunde förhindra personalisering i fragment från att fungera korrekt har korrigerats. (NEO-88161)
-* Ett problem har korrigerats efter migrering till den nya ODBC-kopplingen för Redshift, vilket kan leda till att den delade arbetsflödesaktiviteten misslyckas med SQL-fel. (NEO-87466)
-* Korrigerade ett problem som kunde orsaka felaktiga undantagsfel i arbetsflöden. (NEO-89207)
-* Korrigerade ett problem som kunde orsaka felaktiga klickindikeringar för push-meddelanden. (NEO-89503)
-* Ett problem där SMS-leveransloggar inte uppdaterades korrekt har korrigerats, vilket förhindrar korrekt statusrapportering i Adobe Campaign. (NEO-88479)
-* Ett problem har korrigerats där franska citattecken felaktigt konverterades till engelska citattecken i leveransinnehåll. (NEO-89631)
-* Korrigerade ett problem där Real-Time Server returnerade en felaktig svarskod för ogiltiga IMS-tokens i stället. (NEO-87428)
-* Ett problem har korrigerats där leveransstatistik för e-post och SMS inte räknades om fullständigt, vilket gav felaktiga resultatindikatorer. (NEO-88106)
-* Ett problem med den nya SMS-sändningsanslutaren där leveransloggar felaktigt tilldelade leveransstatus för en liten delmängd av meddelanden har åtgärdats. (NEO-89581)
-* Korrigerade ett problem med den nya SMS-sändningskonnektorn där leveransvärdena inte uppdaterades korrekt på både marknadsförings- och mellanservrar. (NEO-89850)
-* Korrigerade ett synkroniseringsproblem mellan Real-Time- och Marketing-instanserna som orsakade saknade spårningsloggar och felaktig rapportering. (NEO-90247)
-* Ett problem med arbetsflödesberikning som kan orsaka fel när fält markeras över två på varandra följande 1-N-länkar i anpassade scheman har åtgärdats. (NEO-87682)
+* Snowflake externa konton har nu stöd för OAuth2-autentisering, vilket ger moderna och säkra autentiseringsmetoder för federerade dataåtkomstanslutningar. (NEO-87013)
+* Ett problem med filåtkomst i arbetsflödet har åtgärdats genom att åtgärderna begränsas till auktoriserade kataloger, vilket förhindrar obehörig åtkomst och eventuell fjärrexekvering av kod. (NEO-88460)
+* FTP URL-tillåtslista kontroller har lagts till i arbetsflödet för JavaScript-kodaktiviteter, vilket begränsar utgående FTP-anslutningar till endast auktoriserade adresser. (NEO-89083)
 
+### Andra ändringar {#changes-8-9-1}
+
+* Förbättrad hantering av behållarminne genom automatisk arbetsflödesbegränsning under höga minnesförhållanden, med smarta funktioner för omstart av arbetsflödet och minnesskydd för icke-kritiska processer. (NEO-89041)
+* Stöd för asymmetrisk kryptering och dekrypteringsfunktioner i Campaign-arbetsflöden har lagts till. (NEO-80257)
+* Förbättrade replikeringsagentprestanda och minnesflexibilitet för stora dataöverföringar i FFDA-distributioner. (NEO-88430)
+
+
+### Korrigeringar {#fixes-8-9-1}
+
+* Ett problem har korrigerats där dynamiska rapporter visade felaktiga antal vid gruppering efter vissa kolumner. (NEO-86898)
+* Löste diskrepanser mellan dynamiska rapporter och faktiska kampanjdata. (NEO-88068)
+* Åtgärdade sammanfogningsproblem med PostgreSQL &quot;char&quot;-fälttyper som orsakade oväntade resultat i frågor. (NEO-87769)
+* Ett problem har korrigerats där JavaScript logInfo-kommando inte kunde hantera vissa parametrar korrekt. (NEO-88263)
+* Löste problem med låsning av synkronisering vid händelsebearbetning i realtid i Message Center. (NEO-88330)
+* Ett problem har korrigerats där HTML-innehåll formaterades om automatiskt i Visual Editor, vilket ledde till layoutändringar. (NEO-88409)
+* Ett problem har korrigerats där dedupliceringsaktiviteten inte fungerade korrekt med temporära scheman. (NEO-88577)
+* Ett problem som förhindrade att dirigerade adresser genereras när korrektur skickas har åtgärdats. (NEO-88720)
+* Förbättrade PostSQL-frågeprestanda genom att optimera hantering av partitionskolumner. (NEO-88771)
+* Ett problem har korrigerats där filöverföringsaktiviteter inte hanterar radfortsättningstecken korrekt. (NEO-88812)
+* Förbättrad PostSQL-frågeoptimering för bättre prestanda i stora datamängder. (NEO-88885)
+* Korrigerade ett fel om nekad behörighet som förhindrade att hybridkampanjer öppnades. (NEO-88955)
+* Utökat stöd för streckkodsfunktioner som hanterar längre textsträngar. (NEO-88958)
+* Ett fel i kampanjloggar som inträffade när korrektur med återkommande leveranser användes har korrigerats. (NEO-88976)
+* Korrigerade ett problem som påverkade e-postsändningsåtgärder i vissa scenarier. (NEO-89019)
+* Ett problem där arbetsflödets startläge oväntat ändrades från Omedelbart till Normal har åtgärdats. (NEO-89025)
+* Korrigerade fel som uppstod när aktiviteten Uppdatera data kördes under specifika förhållanden. (NEO-89031)
+* Ett problem där aktiviteten Uppdatera data förlorade anpassade schemadata har korrigerats. (NEO-89056)
+* Ett valideringsfel som uppstod under leveransförberedelsen har korrigerats. (NEO-89063)
+* Löste ogiltig SQL-generering när frågor innehöll filter för 1-1-länkrelationer. (NEO-89065)
+* Ett problem har korrigerats där aktiviteten Inkrementell fråga inte uppfyllde den konfigurerade storleksgränsen. (NEO-89066)
+* Förbättrade arbetsflödesprestanda i FFDA-distributioner för storskaliga åtgärder. (NEO-89098)
+* Förbättrad minneshantering och stabilitet för arbetsflödesprocesser. (NEO-89105)
+* Aktiverade strikt kolumnvalidering för webbformulär för att förhindra inkonsekvenser i data. (NEO-89111)
+* Löste problem med synkronisering av meddelandecenter som orsakade bearbetningsförseningar. (NEO-89138)
+* Korrigerade fel i arbetsflödet Uppdatera för slutbarhet som förhindrade att programmet kördes korrekt. (NEO-89160)
+* Fel som uppstod när JavaScript-kodaktiviteter kördes i arbetsflöden har korrigerats. (NEO-89169)
+* Tog bort hårdkodade Snowflake-lagerställekonfigurationer för att tillåta lämpliga externa kontoinställningar. (NEO-89201)
+* Korrigerade 403 Otillåtna fel som uppstod under filöverföringsåtgärder i arbetsflödet. (NEO-89226)
+* Optimerade långsamma frågor i mottagartabellen i FFDA-distributioner. (NEO-89268)
+* Ett problem har korrigerats där inkrementella frågeaktiviteter ignorerade konfigurerade scheman. (NEO-89317)
+* Åtgärdade åtkomstfel när kampanjer öppnades i hybridmiljöer. (NEO-89320)
