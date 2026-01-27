@@ -34,7 +34,7 @@ Den här versionen innehåller en uppsättning funktioner som är tillgängliga 
 * Innehållsexperiment - A/B-tester
 * Kontinuerlig leveransaktivitet
 
-Se versionsinformationen för Campaign Web UI [&#128279;](https://experienceleague.adobe.com/docs/campaign-web/v8/release-notes/release-notes.html){target="_blank"}
+Se versionsinformationen för Campaign Web UI [&#128279;](https://experienceleague.adobe.com/docs/campaign-web/v8/release-notes/release-notes.html?lang=sv-SE){target="_blank"}
 
 ### Säkerhetsförbättringar {#security-8-9-1}
 
