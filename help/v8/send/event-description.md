@@ -5,9 +5,9 @@ feature: Transactional Messaging
 role: User
 level: Intermediate
 exl-id: 2f679d1c-4eb6-4b3c-bdc5-02d3dea6b7d3
-source-git-commit: 69ff08567f3a0ab827a118a089495fc75bb550c5
+source-git-commit: 6693bb8a62c0d126b871dc24a75b76de71b86f8d
 workflow-type: tm+mt
-source-wordcount: '741'
+source-wordcount: '737'
 ht-degree: 0%
 
 ---
@@ -100,13 +100,13 @@ Exempel med PushEvents:
 </urn:PushEvents>
 ```
 
-Elementen **`<rtevent>`** och **`<batchevent>`** har en uppsättning attribut samt ett obligatoriskt underordnat element: **`<ctx>`** för att integrera meddelandedata.
+Elementen **`<rtevent>`** och **`<batchEvent>`** har en uppsättning attribut samt ett obligatoriskt underordnat element: **`<ctx>`** för att integrera meddelandedata.
 
 >[!NOTE]
 >
->Med elementet **`<batchevent>`** kan du lägga till händelsen i batchkön. **`<rtevent>`** lägger till händelsen i realtidskön.
+>Med elementet **`<batchEvent>`** kan du lägga till händelsen i batchkön. **`<rtevent>`** lägger till händelsen i realtidskön.
 
-De obligatoriska attributen för elementen **`<rtevent>`** och **`<batchevent>`** är @type och @email. Värdet för @type måste vara samma som det specificerade listvärdet som definieras när körningsinstansen konfigureras. Med det här värdet kan du definiera mallen som ska länkas till innehållet i händelsen under leveransen.
+De obligatoriska attributen för elementen **`<rtevent>`** och **`<batchEvent>`** är @type och @email. Värdet för @type måste vara samma som det specificerade listvärdet som definieras när körningsinstansen konfigureras. Med det här värdet kan du definiera mallen som ska länkas till innehållet i händelsen under leveransen.
 
 `<rtevent> configuration example:`
 

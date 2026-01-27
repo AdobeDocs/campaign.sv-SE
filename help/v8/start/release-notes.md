@@ -3,9 +3,9 @@ title: Versionsinformation om Campaign v8
 description: Senaste Campaign v8-versionen
 feature: Release Notes
 exl-id: 7cf8111d-9f3a-46a4-813a-d4e43a1d1471
-source-git-commit: e5e08dcd1813c8eba608ba3a7b659dcd6d98d985
+source-git-commit: 6693bb8a62c0d126b871dc24a75b76de71b86f8d
 workflow-type: tm+mt
-source-wordcount: '688'
+source-wordcount: '697'
 ht-degree: 14%
 
 ---
@@ -28,13 +28,14 @@ Den **nya SMS-sändningsanslutningen** är nu tillgänglig för alla kunder (GA)
 
 Den här versionen innehåller en uppsättning funktioner som är tillgängliga med användargränssnittet för Campaign-webben:
 
-* Flerspråkiga leveransfunktioner (GA)
-* Profilberikning i transaktionsmeddelanden (GA)
-* Adobe Experience Manager live- och språkversioner
-* Innehållsexperiment - A/B-tester
-* Kontinuerlig leveransaktivitet
+* [Funktioner för flerspråkig leverans (GA)](https://experienceleague.adobe.com/docs/campaign-web/v8/msg/multilingual.html){target="_blank"}
+* [Profilberikning i transaktionsmeddelanden (GA)](https://experienceleague.adobe.com/docs/campaign-web/v8/msg/transactional-messages/profile-enrichment.html){target="_blank"}
+* [Adobe Experience Manager live- och språkversioner](https://experienceleague.adobe.com/docs/campaign-web/v8/integrations/aem-multilingual.html){target="_blank"}
+* [Innehållsexperiment - A/B-testning](https://experienceleague.adobe.com/docs/campaign-web/v8/msg/email/ab-testing.html)
+* [Kontinuerlig leveransaktivitet](https://experienceleague.adobe.com/docs/campaign-web/v8/wf/design-workflows/continuous-delivery.html)
+* [Hantering av kampanjgodkännande](https://experienceleague.adobe.com/docs/campaign-web/v8/campaigns/campaign-approvals.html)
 
-Se versionsinformationen för Campaign Web UI [&#128279;](https://experienceleague.adobe.com/docs/campaign-web/v8/release-notes/release-notes.html?lang=sv-SE){target="_blank"}
+Se versionsinformationen för Campaign Web UI [](https://experienceleague.adobe.com/docs/campaign-web/v8/release-notes/release-notes.html){target="_blank"}
 
 ### Säkerhetsförbättringar {#security-8-9-1}
 
