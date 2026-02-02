@@ -21,7 +21,7 @@ Få snabba svar på de vanligaste frågorna om Adobe Campaign v8. Oavsett om du 
 **Behöver du hjälp med versionerna?** Kontrollera [Uppgraderingar](#upgrades) för versionsinformation och uppgraderingsprocesser.\
 **Migrerar från v7 eller Standard?** Se [Campaign v8 vs. tidigare versioner &#x200B;](#v7-differences) för skillnader och vägledning om övergångar.\
 **Behöver du teknisk hjälp?** Kontrollera [Utvecklare](#developers) och [kampanjinställningar](#settings).\
-**Hittar du inte ditt svar?** Besök våra [användarforum](https://experienceleaguecommunities.adobe.com/t5/adobe-campaign-classic/ct-p/adobe-campaign-classic-community){target="_blank"} eller [kontakta support](#get-help).
+**Hittar du inte ditt svar?** Besök våra [användarforum](https://experienceleaguecommunities.adobe.com/t5/adobe-campaign-classic/ct-p/adobe-campaign-classic-community?profile.language=sv){target="_blank"} eller [kontakta support](#get-help).
 
 **Tips!** Använd Ctrl+F (Cmd+F i Mac) om du vill söka efter specifika nyckelord på den här sidan. Klicka på en fråga för att utöka svaret.
 
@@ -52,7 +52,7 @@ Du kan hämta installationsprogrammet och klientkonsolen från Adobe Download Ce
 
 Som administratör kan du ladda ned Adobe Campaign via Adobe [Software Distribution](https://experience.adobe.com/#/downloads/content/software-distribution/en/campaign.html){target="_blank"}.
 
-Läs mer om Distribution Center [på den här sidan](https://experienceleague.adobe.com/docs/experience-cloud/software-distribution/home.html){target="_blank"}.
+Läs mer om Distribution Center [på den här sidan](https://experienceleague.adobe.com/docs/experience-cloud/software-distribution/home.html?lang=sv-SE){target="_blank"}.
 
 +++
 
@@ -62,7 +62,7 @@ Du måste hämta och installera Campaign-klientkonsolen för att kunna ansluta t
 
 Från och med Campaign v8.6 har du tillgång till användargränssnittet **Campaign-webben** som är tillgängligt via den centrala Adobe Experience Cloud-miljön. Experience Cloud är Adobe integrerade program, produkter och tjänster för digital marknadsföring.
 
-Lär dig hur du ansluter till Adobe Experience Cloud och kommer åt Adobe Campaign webbgränssnitt [på den här sidan](campaign-ui.md#ac-web-ui). Läs mer i [Adobe Campaign webbgränssnittsdokumentation](https://experienceleague.adobe.com/en/docs/campaign-web/v8/campaign-web-home){target="_blank"}.
+Lär dig hur du ansluter till Adobe Experience Cloud och kommer åt Adobe Campaign webbgränssnitt [på den här sidan](campaign-ui.md#ac-web-ui). Läs mer i [Adobe Campaign webbgränssnittsdokumentation](https://experienceleague.adobe.com/sv/docs/campaign-web/v8/campaign-web-home){target="_blank"}.
 
 
 **Relaterade ämnen:**
@@ -90,7 +90,7 @@ Mer information om grunderna i användargränssnittet i Adobe Campaign finns i [
 
 Från och med Campaign v8.6 har du även tillgång till det nya **Campaign-webbgränssnittet** som är tillgängligt via den centrala Adobe Experience Cloud-miljön.
 
-[Läs mer i dokumentationen för Adobe Campaign webbgränssnitt](https://experienceleague.adobe.com/en/docs/campaign-web/v8/campaign-web-home){target="_blank"}.
+[Läs mer i dokumentationen för Adobe Campaign webbgränssnitt](https://experienceleague.adobe.com/sv/docs/campaign-web/v8/campaign-web-home){target="_blank"}.
 
 +++
 
@@ -161,7 +161,7 @@ Om du vill kontakta Adobe kundsupport ansluter du till [Adobe Admin Console](htt
 
 Kräver enskilda konton med rätt behörigheter. Om du inte kan logga in begär du åtkomst via Experience League. [Läs mer](https://helpx.adobe.com/sv/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html){target="_blank"}
 
-Du kan även gå med i [Campaign Community](https://experienceleaguecommunities.adobe.com/t5/adobe-campaign-classic/ct-p/adobe-campaign-classic-community){target="_blank"} och söka efter svar eller fråga experter.
+Du kan även gå med i [Campaign Community](https://experienceleaguecommunities.adobe.com/t5/adobe-campaign-classic/ct-p/adobe-campaign-classic-community?profile.language=sv){target="_blank"} och söka efter svar eller fråga experter.
 
 +++
 
@@ -248,7 +248,7 @@ Håll dig informerad om nya Campaign-versioner via dessa kanaler:
 * **Adobe-representant** - Kontakta dig direkt när en ny version är tillgänglig
 * **Versionsinformation** - Alla versioner och ändringar dokumenteras i [Versionsinformation för kampanj](release-notes.md)
 * **Adobe Priority-produktuppdateringar** - [Prenumerera](https://www.adobe.com/se/subscription/priority-product-update.html){target="_blank"} för e-postmeddelanden
-* **Campaign Community** - gå med i [diskussioner](https://experienceleaguecommunities.adobe.com/t5/adobe-campaign-classic/ct-p/adobe-campaign-classic-community){target="_blank"} för att få tidig uppdatering
+* **Campaign Community** - gå med i [diskussioner](https://experienceleaguecommunities.adobe.com/t5/adobe-campaign-classic/ct-p/adobe-campaign-classic-community?profile.language=sv){target="_blank"} för att få tidig uppdatering
 
 Som Managed Cloud Services-användare hanterar Adobe uppgraderingar och koordinerar timing med dig.
 
@@ -323,11 +323,11 @@ Campaign v8 bygger på en modern molnbaserad arkitektur med betydande förbättr
 
 **För användare av Campaign Classic v7:** Lär dig mer om [övergångar från v7 till v8](v7-to-v8.md), inklusive arkitekturändringar, otillgängliga funktioner och migreringsfrågor.
 
-**För Campaign Standard-användare:** Upptäck [övergångsvägen till v8](acs-to-v8.md) och [Campaign Standard migreringsguide](https://experienceleague.adobe.com/en/docs/campaign-web/v8/start/acs-migration){target="_blank"}.
+**För Campaign Standard-användare:** Upptäck [övergångsvägen till v8](acs-to-v8.md) och [Campaign Standard migreringsguide](https://experienceleague.adobe.com/sv/docs/campaign-web/v8/start/acs-migration){target="_blank"}.
 
 **Relaterade ämnen:**
 
-[Nyckelfunktioner för Campaign v8](whats-new.md) | [&#x200B; Campaign v8-arkitektur &#x200B;](../architecture/architecture.md) | [Funktionsmatris](https://experienceleague.adobe.com/en/docs/campaign-web/v8/start/capability-matrix){target="_blank"} | [Skyddsritningar och begränsningar](ac-guardrails.md)
+[Nyckelfunktioner för Campaign v8](whats-new.md) | [&#x200B; Campaign v8-arkitektur &#x200B;](../architecture/architecture.md) | [Funktionsmatris](https://experienceleague.adobe.com/sv/docs/campaign-web/v8/start/capability-matrix){target="_blank"} | [Skyddsritningar och begränsningar](ac-guardrails.md)
 
 +++
 
@@ -351,7 +351,7 @@ Campaign v8 är en Adobe-plattform, idealisk för organisationer som behöver ka
 
 **Relaterade ämnen:**
 
-[Från Campaign Classic v7 till v8](v7-to-v8.md) | [Campaign Standard övergångsguide](https://experienceleague.adobe.com/en/docs/campaign-web/v8/start/acs-migration){target="_blank"} | [Funktionsmatris](https://experienceleague.adobe.com/en/docs/campaign-web/v8/start/capability-matrix){target="_blank"}
+[Från Campaign Classic v7 till v8](v7-to-v8.md) | [Campaign Standard övergångsguide](https://experienceleague.adobe.com/sv/docs/campaign-web/v8/start/acs-migration){target="_blank"} | [Funktionsmatris](https://experienceleague.adobe.com/sv/docs/campaign-web/v8/start/capability-matrix){target="_blank"}
 
 +++
 
@@ -384,7 +384,7 @@ Att migrera till Adobe Managed Services är en strategisk väg från lokalt/hybr
 
 **Komma igång:** Kontakta din Adobe-representant för att utvärdera din miljö och utveckla en detaljerad migreringsplan med Adobe Professional Services.
 
-Läs mer om [migrering till Managed Services](https://experienceleaguecommunities.adobe.com/t5/adobe-campaign-classic-blogs/migrate-your-adobe-campaign-v7-onprem-hybrid-environment-to/ba-p/681605){target="_blank"}, inklusive utmaningar, bästa praxis och detaljerad migreringsstrategi.
+Läs mer om [migrering till Managed Services](https://experienceleaguecommunities.adobe.com/t5/adobe-campaign-classic-blogs/migrate-your-adobe-campaign-v7-onprem-hybrid-environment-to/ba-p/681605?profile.language=sv){target="_blank"}, inklusive utmaningar, bästa praxis och detaljerad migreringsstrategi.
 
 +++
 
@@ -414,7 +414,7 @@ Campaign v8 har de flesta v7/Standard-funktioner med förbättringar, men vissa 
 
 **Relaterade ämnen:**
 
-[Funktionsmatris](https://experienceleague.adobe.com/en/docs/campaign-web/v8/start/capability-matrix){target="_blank"} | [&#x200B; Övergångshandbok för v7 till v8 &#x200B;](v7-to-v8.md) | [Övergång mellan Campaign Standard och v8](https://experienceleague.adobe.com/en/docs/campaign-web/v8/start/acs-migration){target="_blank"}
+[Funktionsmatris](https://experienceleague.adobe.com/sv/docs/campaign-web/v8/start/capability-matrix){target="_blank"} | [&#x200B; Övergångshandbok för v7 till v8 &#x200B;](v7-to-v8.md) | [Övergång mellan Campaign Standard och v8](https://experienceleague.adobe.com/sv/docs/campaign-web/v8/start/acs-migration){target="_blank"}
 
 +++
 
@@ -441,7 +441,7 @@ För filimport förbereder du datafilen (CSV/TXT, UTF-8-kodning), använder impo
 
 **Relaterade ämnen:**
 
-[Guiden Importera data](../start/import.md) | [Återkommande importarbetsflöde](https://experienceleague.adobe.com/docs/campaign/automation/workflows/use-cases/data-management/recurring-import-workflow.html){target="_blank"} | [Datainläsningsaktivitet](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/action-activities/data-loading-file.html){target="_blank"}
+[Guiden Importera data](../start/import.md) | [Återkommande importarbetsflöde](https://experienceleague.adobe.com/docs/campaign/automation/workflows/use-cases/data-management/recurring-import-workflow.html?lang=sv-SE){target="_blank"} | [Datainläsningsaktivitet](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/action-activities/data-loading-file.html?lang=sv-SE){target="_blank"}
 
 +++
 
@@ -459,7 +459,7 @@ I Campaign finns flera metoder för målinriktning: skapa frågor med visuella k
 
 **Relaterade ämnen:**
 
-[Definiera kampanjmål](https://experienceleague.adobe.com/docs/campaign/automation/campaign-orchestration/marketing-campaign-target.html){target="_blank"} | [Frågeaktivitet](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/targeting-activities/query.html){target="_blank"} | [Skapa målgrupper](../audiences/create-audiences.md)
+[Definiera kampanjmål](https://experienceleague.adobe.com/docs/campaign/automation/campaign-orchestration/marketing-campaign-target.html?lang=sv-SE){target="_blank"} | [Frågeaktivitet](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/targeting-activities/query.html?lang=sv-SE){target="_blank"} | [Skapa målgrupper](../audiences/create-audiences.md)
 
 +++
 
@@ -479,7 +479,7 @@ En lista är en statisk uppsättning mottagare som ni kan rikta in er på levera
 
 **Relaterade ämnen:**
 
-[Skapa målgrupper](../audiences/create-audiences.md) | [Listuppdateringsaktivitet](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/targeting-activities/list-update.html){target="_blank"}
+[Skapa målgrupper](../audiences/create-audiences.md) | [Listuppdateringsaktivitet](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/targeting-activities/list-update.html?lang=sv-SE){target="_blank"}
 
 +++
 
@@ -489,7 +489,7 @@ Använd aktiviteten **[!UICONTROL Deduplication]** i ett arbetsflöde för att t
 
 **Tips!** Ta alltid bort dubbletter innan du skickar för att försäkra dig om att alla får ditt meddelande endast en gång.
 
-Läs mer om aktiviteten [Deduplicering](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/targeting-activities/deduplication.html){target="_blank"}
+Läs mer om aktiviteten [Deduplicering](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/targeting-activities/deduplication.html?lang=sv-SE){target="_blank"}
 
 +++
 
@@ -505,7 +505,7 @@ Campaign spårar prenumerations-/prenumerationshistorik och hanterar automatiskt
 
 **Relaterade ämnen:**
 
-[Hantera prenumerationer](../start/subscriptions.md) | [Frågeaktivitet](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/targeting-activities/query.html){target="_blank"}
+[Hantera prenumerationer](../start/subscriptions.md) | [Frågeaktivitet](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/targeting-activities/query.html?lang=sv-SE){target="_blank"}
 
 +++
 
@@ -513,7 +513,7 @@ Campaign spårar prenumerations-/prenumerationshistorik och hanterar automatiskt
 
 Använd aktiviteten **[!UICONTROL Exclusion]** i ett arbetsflöde för att ta bort oönskade profiler från målet. Placera den efter era målgruppsaktiviteter och definiera vilken population som ska uteslutas.
 
-Läs mer om [Uteslutningsaktiviteten](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/targeting-activities/exclusion.html){target="_blank"}
+Läs mer om [Uteslutningsaktiviteten](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/targeting-activities/exclusion.html?lang=sv-SE){target="_blank"}
 
 +++
 
@@ -606,7 +606,7 @@ Klientkonsolen stöder även flerspråkigt innehåll med villkorsstyrt innehåll
 
 **Relaterade ämnen:**
 
-[Flerspråkiga leveranser (webbgränssnitt)](https://experienceleague.adobe.com/en/docs/campaign-web/v8/msg/multilingual){target="_blank"} | [Villkorligt innehåll (klientkonsol) &#x200B;](../send/conditions.md)
+[Flerspråkiga leveranser (webbgränssnitt)](https://experienceleague.adobe.com/sv/docs/campaign-web/v8/msg/multilingual){target="_blank"} | [Villkorligt innehåll (klientkonsol) &#x200B;](../send/conditions.md)
 
 +++
 
@@ -634,7 +634,7 @@ Ja, men **endast via Campaign Web-gränssnittet**. AI Assistant, som bygger på 
 
 **Relaterade ämnen:**
 
-[Översikt över AI Assistant](https://experienceleague.adobe.com/en/docs/campaign-web/v8/content/ai-assistant/generative-gs){target="_blank"} | [&#x200B; Användningsexempel för AI-assistenten &#x200B;](https://experienceleague.adobe.com/en/docs/campaign-web/v8/content/ai-assistant/generative-uc){target="_blank"} | [Märkesjustering](https://experienceleague.adobe.com/en/docs/campaign-web/v8/content/ai-assistant/ai-assistant/brands-score){target="_blank"}
+[Översikt över AI Assistant](https://experienceleague.adobe.com/sv/docs/campaign-web/v8/content/ai-assistant/generative-gs){target="_blank"} | [&#x200B; Användningsexempel för AI-assistenten &#x200B;](https://experienceleague.adobe.com/sv/docs/campaign-web/v8/content/ai-assistant/generative-uc){target="_blank"} | [Märkesjustering](https://experienceleague.adobe.com/sv/docs/campaign-web/v8/content/ai-assistant/ai-assistant/brands-score){target="_blank"}
 
 +++
 
@@ -648,7 +648,7 @@ E-postleveransen, som är en viktig del i varje avsändares marknadsföringsprog
 
 Läs den här guiden om du vill veta mer om [Bästa metoder för slutprodukter](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/introduction.html?lang=sv){target="_blank"}
 
-Lär dig hur du implementerar levererbarhet i Campaign [i den här guiden](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/additional-resources/general-resources.html){target="_blank"}
+Lär dig hur du implementerar levererbarhet i Campaign [i den här guiden](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/additional-resources/general-resources.html?lang=sv-SE){target="_blank"}
 
 **Relaterade ämnen:**
 
@@ -701,7 +701,7 @@ Seed-adresserna läggs automatiskt till i varje leverans för testning, kvalitet
 
 Hantera dirigerade adresser i **[!UICONTROL Resources > Campaign management > Seed addresses]**. Håll listorna små så att leveransstatistik inte påverkas.
 
-Läs mer i guiden [Avsändningsadresser](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/action-activities/delivery-control.html){target="_blank"}
+Läs mer i guiden [Avsändningsadresser](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/action-activities/delivery-control.html?lang=sv-SE){target="_blank"}
 
 +++
 
@@ -719,7 +719,7 @@ Använd **korrektur som godkännandeprocess**. Skicka korrektur till godkännand
 
 **Relaterade ämnen:**
 
-[Leveransvalidering](../send/preview-and-proof.md) | [Kampanjgodkännanden](https://experienceleague.adobe.com/docs/campaign/automation/campaign-orchestration/marketing-campaign-approval.html){target="_blank"}
+[Leveransvalidering](../send/preview-and-proof.md) | [Kampanjgodkännanden](https://experienceleague.adobe.com/docs/campaign/automation/campaign-orchestration/marketing-campaign-approval.html?lang=sv-SE){target="_blank"}
 
 +++
 
@@ -763,7 +763,7 @@ Typologiregler är automatiserade affärslogik som tillämpas under leveransanal
 
 Reglerna grupperas i typologier och tillämpas under leveransanalysen. Kampanjen kan utesluta mottagare, blockera leveransen eller generera varningar baserat på reglerna.
 
-Läs mer i [Typologiregelguiden](https://experienceleague.adobe.com/docs/campaign/automation/campaign-optimization/campaign-typologies.html){target="_blank"}
+Läs mer i [Typologiregelguiden](https://experienceleague.adobe.com/docs/campaign/automation/campaign-optimization/campaign-typologies.html?lang=sv-SE){target="_blank"}
 
 +++
 
@@ -911,11 +911,11 @@ Du kan till exempel använda ett arbetsflöde för att ladda ned en fil från en
 
 Ett arbetsflöde kan även innefatta en eller flera operatörer som ska meddelas eller som kan göra val och godkänna processer. På så sätt kan du skapa en leveransinstruktion, tilldela en eller flera operatörer uppgiften att arbeta med innehåll, ange mål och godkänna korrekturer innan leveransen påbörjas.
 
-[Läs mer](https://experienceleague.adobe.com/docs/campaign/automation/workflows/introduction/about-workflows.html){target="_blank"} om arbetsflöden. Du kan även läsa om [bästa praxis för arbetsflödet](https://experienceleague.adobe.com/docs/campaign/automation/workflows/introduction/build-a-workflow.html){target="_blank"}.
+[Läs mer](https://experienceleague.adobe.com/docs/campaign/automation/workflows/introduction/about-workflows.html?lang=sv-SE){target="_blank"} om arbetsflöden. Du kan även läsa om [bästa praxis för arbetsflödet](https://experienceleague.adobe.com/docs/campaign/automation/workflows/introduction/build-a-workflow.html?lang=sv-SE){target="_blank"}.
 
 **Relaterade ämnen:**
 
-[Kom igång med arbetsflöden](../config/workflows.md) | [Skapa ditt första arbetsflöde](https://experienceleague.adobe.com/docs/campaign/automation/workflows/introduction/build-a-workflow.html){target="_blank"} | [Användningsexempel för arbetsflöden](https://experienceleague.adobe.com/docs/campaign/automation/workflows/use-cases/about-workflow-use-cases.html){target="_blank"} | [Övervaka arbetsflödeskörning](https://experienceleague.adobe.com/docs/campaign/automation/workflows/monitoring-workflows/monitor-workflow-execution.html){target="_blank"}
+[Kom igång med arbetsflöden](../config/workflows.md) | [Skapa ditt första arbetsflöde](https://experienceleague.adobe.com/docs/campaign/automation/workflows/introduction/build-a-workflow.html?lang=sv-SE){target="_blank"} | [Användningsexempel för arbetsflöden](https://experienceleague.adobe.com/docs/campaign/automation/workflows/use-cases/about-workflow-use-cases.html){target="_blank"} | [Övervaka arbetsflödeskörning](https://experienceleague.adobe.com/docs/campaign/automation/workflows/monitoring-workflows/monitor-workflow-execution.html?lang=sv-SE){target="_blank"}
 
 +++
 
@@ -927,7 +927,7 @@ Om du vill övervaka arbetsflödet öppnar du det och klickar på fliken **Logga
 
 **Relaterade ämnen:**
 
-[Övervaka arbetsflödeskörning](https://experienceleague.adobe.com/en/docs/campaign/automation/workflows/monitoring-workflows/monitor-workflow-execution){target="_blank"} | [Bästa praxis för arbetsflöden](https://experienceleague.adobe.com/docs/campaign/automation/workflows/introduction/workflow-best-practices.html){target="_blank"}
+[Övervaka arbetsflödeskörning](https://experienceleague.adobe.com/sv/docs/campaign/automation/workflows/monitoring-workflows/monitor-workflow-execution){target="_blank"} | [Bästa praxis för arbetsflöden](https://experienceleague.adobe.com/docs/campaign/automation/workflows/introduction/workflow-best-practices.html?lang=sv-SE){target="_blank"}
 
 +++
 
@@ -946,7 +946,7 @@ Vanliga arbetsflödesmönster: dataimport, målgruppssegmentering, leverans, dat
 
 **Relaterade ämnen:**
 
-[Skapa ett arbetsflöde](https://experienceleague.adobe.com/docs/campaign/automation/workflows/introduction/build-a-workflow.html){target="_blank"} | [Arbetsflödesaktiviteter](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/about-activities.html){target="_blank"} | [Bästa praxis för arbetsflöden](https://experienceleague.adobe.com/docs/campaign/automation/workflows/introduction/workflow-best-practices.html){target="_blank"} | [Användningsexempel för arbetsflöden](https://experienceleague.adobe.com/docs/campaign/automation/workflows/use-cases/about-workflow-use-cases.html){target="_blank"}
+[Skapa ett arbetsflöde](https://experienceleague.adobe.com/docs/campaign/automation/workflows/introduction/build-a-workflow.html?lang=sv-SE){target="_blank"} | [Arbetsflödesaktiviteter](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/about-activities.html){target="_blank"} | [Bästa praxis för arbetsflöden](https://experienceleague.adobe.com/docs/campaign/automation/workflows/introduction/workflow-best-practices.html?lang=sv-SE){target="_blank"} | [Användningsexempel för arbetsflöden](https://experienceleague.adobe.com/docs/campaign/automation/workflows/use-cases/about-workflow-use-cases.html){target="_blank"}
 
 +++
 
@@ -974,7 +974,7 @@ Använd arbetsflöden med aktiviteten **Schemaläggaren** för att automatisera 
 
 **Relaterade ämnen:**
 
-[Schemaläggaraktivitet](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/flow-control-activities/scheduler.html){target="_blank"} | [Återkommande leveranser](https://experienceleague.adobe.com/docs/campaign/automation/workflows/use-cases/deliveries/sending-a-birthday-email.html){target="_blank"} | [Kampanjautomatisering](https://experienceleague.adobe.com/docs/campaign/automation/home.html){target="_blank"}
+[Schemaläggaraktivitet](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/flow-control-activities/scheduler.html?lang=sv-SE){target="_blank"} | [Återkommande leveranser](https://experienceleague.adobe.com/docs/campaign/automation/workflows/use-cases/deliveries/sending-a-birthday-email.html){target="_blank"} | [Kampanjautomatisering](https://experienceleague.adobe.com/docs/campaign/automation/home.html?lang=sv-SE){target="_blank"}
 
 +++
 
@@ -986,7 +986,7 @@ Använd arbetsflöden med aktiviteten **Schemaläggaren** för att automatisera 
 
 **Relaterade ämnen:**
 
-[Importera metodtips](../start/import.md) | [Datainläsningsaktivitet](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/action-activities/data-loading-file.html){target="_blank"} | [Återkommande importarbetsflöde](https://experienceleague.adobe.com/docs/campaign/automation/workflows/use-cases/data-management/recurring-import-workflow.html){target="_blank"}
+[Importera metodtips](../start/import.md) | [Datainläsningsaktivitet](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/action-activities/data-loading-file.html?lang=sv-SE){target="_blank"} | [Återkommande importarbetsflöde](https://experienceleague.adobe.com/docs/campaign/automation/workflows/use-cases/data-management/recurring-import-workflow.html?lang=sv-SE){target="_blank"}
 
 +++
 
@@ -1014,7 +1014,7 @@ Datakvalitet är avgörande för att kampanjen ska kunna köras. Dåliga data le
 
 **Relaterade ämnen:**
 
-[Guide för datakvalitet](../start/import.md) | [Dedupliceringsaktivitet](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/targeting-activities/deduplication.html){target="_blank"} | [Anrikningsaktivitet](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/targeting-activities/enrichment.html){target="_blank"}
+[Guide för datakvalitet](../start/import.md) | [Dedupliceringsaktivitet](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/targeting-activities/deduplication.html?lang=sv-SE){target="_blank"} | [Anrikningsaktivitet](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/targeting-activities/enrichment.html?lang=sv-SE){target="_blank"}
 
 +++
 
@@ -1030,7 +1030,7 @@ Arbetsflödena automatiserar marknadsföringsprocesserna, bland annat:
 
 **Relaterade ämnen:**
 
-[Bibliotek för arbetsflödesanvändning](https://experienceleague.adobe.com/docs/campaign/automation/workflows/use-cases/about-workflow-use-cases.html){target="_blank"} | [Skapa ett arbetsflöde](https://experienceleague.adobe.com/docs/campaign/automation/workflows/introduction/build-a-workflow.html){target="_blank"} | [Bästa praxis för arbetsflöden](https://experienceleague.adobe.com/docs/campaign/automation/workflows/introduction/workflow-best-practices.html){target="_blank"}
+[Bibliotek för arbetsflödesanvändning](https://experienceleague.adobe.com/docs/campaign/automation/workflows/use-cases/about-workflow-use-cases.html){target="_blank"} | [Skapa ett arbetsflöde](https://experienceleague.adobe.com/docs/campaign/automation/workflows/introduction/build-a-workflow.html?lang=sv-SE){target="_blank"} | [Bästa praxis för arbetsflöden](https://experienceleague.adobe.com/docs/campaign/automation/workflows/introduction/workflow-best-practices.html?lang=sv-SE){target="_blank"}
 
 +++
 
@@ -1044,7 +1044,7 @@ Konfigurera avstämningsnycklar för korrekt matchning och välj uppdateringsalt
 
 **Relaterade ämnen:**
 
-[Uppdatera dataaktivitet](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/targeting-activities/update-data.html){target="_blank"} | [Datahanteringsaktiviteter](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/action-activities/about-action-activities.html){target="_blank"}
+[Uppdatera dataaktivitet](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/targeting-activities/update-data.html?lang=sv-SE){target="_blank"} | [Datahanteringsaktiviteter](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/action-activities/about-action-activities.html){target="_blank"}
 
 +++
 
@@ -1056,7 +1056,7 @@ Datahanteringsaktiviteter möjliggör sofistikerade operationer: anrikning (läg
 
 **Relaterade ämnen:**
 
-[Datahanteringsaktiviteter](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/targeting-activities/about-targeting-activities.html){target="_blank"} | [Anrikningsaktivitet](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/targeting-activities/enrichment.html){target="_blank"}
+[Datahanteringsaktiviteter](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/targeting-activities/about-targeting-activities.html){target="_blank"} | [Anrikningsaktivitet](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/targeting-activities/enrichment.html?lang=sv-SE){target="_blank"}
 
 +++
 
@@ -1068,7 +1068,7 @@ Ja. Skapa automatiserade arbetsflöden: Fråga (målgrupp) → Anrikare (lägg t
 
 **Relaterade ämnen:**
 
-[Personalization-guide](../send/personalize.md) | [Användningsexempel för arbetsflöden](https://experienceleague.adobe.com/docs/campaign/automation/workflows/use-cases/deliveries/send-a-birthday-email.html){target="_blank"}
+[Personalization-guide](../send/personalize.md) | [Användningsexempel för arbetsflöden](https://experienceleague.adobe.com/docs/campaign/automation/workflows/use-cases/deliveries/send-a-birthday-email.html?lang=sv-SE){target="_blank"}
 
 +++
 
@@ -1080,7 +1080,7 @@ Använd aktiviteten **[!UICONTROL Split]** för att dela upp populationer: Filtr
 
 **Relaterade ämnen:**
 
-[Delad aktivitet](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/targeting-activities/split.html){target="_blank"} | [Testguide för A/B &#x200B;](https://experienceleague.adobe.com/docs/campaign/automation/workflows/use-cases/deliveries/a-b-testing.html){target="_blank"}
+[Delad aktivitet](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/targeting-activities/split.html?lang=sv-SE){target="_blank"} | [Testguide för A/B &#x200B;](https://experienceleague.adobe.com/docs/campaign/automation/workflows/use-cases/deliveries/a-b-testing.html){target="_blank"}
 
 +++
 
@@ -1094,7 +1094,7 @@ Ja. Arbetsflöde: Datainläsning (fil) → Uppgradering (valfritt) → Avstämni
 
 **Relaterade ämnen:**
 
-[Guiden Importera data](../start/import.md) | [Datainläsningsaktivitet](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/action-activities/data-loading-file.html){target="_blank"} | [Uppdatera dataaktivitet](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/targeting-activities/update-data.html){target="_blank"}
+[Guiden Importera data](../start/import.md) | [Datainläsningsaktivitet](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/action-activities/data-loading-file.html?lang=sv-SE){target="_blank"} | [Uppdatera dataaktivitet](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/targeting-activities/update-data.html?lang=sv-SE){target="_blank"}
 
 +++
 
@@ -1108,7 +1108,7 @@ Fråga fältet **[!UICONTROL Created date]** om du vill välja mottagare som lag
 
 **Relaterade ämnen:**
 
-[Frågeaktivitet](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/targeting-activities/query.html){target="_blank"} | [&#x200B; Använda aggregat &#x200B;](https://experienceleague.adobe.com/docs/campaign/automation/workflows/use-cases/data-management/using-aggregates.html){target="_blank"}
+[Frågeaktivitet](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/targeting-activities/query.html?lang=sv-SE){target="_blank"} | [&#x200B; Använda aggregat &#x200B;](https://experienceleague.adobe.com/docs/campaign/automation/workflows/use-cases/data-management/using-aggregates.html?lang=sv-SE){target="_blank"}
 
 +++
 
@@ -1125,7 +1125,7 @@ Dra från paletten, dubbelklicka för att konfigurera, ansluta till övergångar
 
 **Relaterade ämnen:**
 
-[Målaktiviteter](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/targeting-activities/targeting-activities.html){target="_blank"} | [&#x200B; Flödeskontroll &#x200B;](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/flow-control-activities/flow-control-activities.html){target="_blank"} | [Åtgärdsaktiviteter](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/action-activities/action-activities.html){target="_blank"}
+[Målaktiviteter](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/targeting-activities/targeting-activities.html?lang=sv-SE){target="_blank"} | [&#x200B; Flödeskontroll &#x200B;](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/flow-control-activities/flow-control-activities.html?lang=sv-SE){target="_blank"} | [Åtgärdsaktiviteter](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/action-activities/action-activities.html?lang=sv-SE){target="_blank"}
 
 +++
 
@@ -1139,7 +1139,7 @@ Dra från paletten, dubbelklicka för att konfigurera, ansluta till övergångar
 
 **Relaterade ämnen:**
 
-[Handbok om arbetsflöden för bästa praxis](https://experienceleague.adobe.com/docs/campaign/automation/workflows/introduction/workflow-best-practices.html){target="_blank"} | [Övervaka arbetsflöden](https://experienceleague.adobe.com/docs/campaign/automation/workflows/monitoring-workflows/monitor-workflow-execution.html){target="_blank"}
+[Handbok om arbetsflöden för bästa praxis](https://experienceleague.adobe.com/docs/campaign/automation/workflows/introduction/workflow-best-practices.html?lang=sv-SE){target="_blank"} | [Övervaka arbetsflöden](https://experienceleague.adobe.com/docs/campaign/automation/workflows/monitoring-workflows/monitor-workflow-execution.html?lang=sv-SE){target="_blank"}
 
 +++
 
@@ -1167,7 +1167,7 @@ Det beror på vilket gränssnitt du använder. **klientkonsolens** språk är fa
 
 **Relaterade ämnen:**
 
-[Ändra språk i webbgränssnittet för kampanj](https://experienceleague.adobe.com/en/docs/campaign-web/v8/start/connect-to-campaign#language-pref){target="_blank"} | [Kom igång med Campaign-klientkonsolen](connect.md)
+[Ändra språk i webbgränssnittet för kampanj](https://experienceleague.adobe.com/sv/docs/campaign-web/v8/start/connect-to-campaign#language-pref){target="_blank"} | [Kom igång med Campaign-klientkonsolen](connect.md)
 
 +++
 
@@ -1193,7 +1193,7 @@ Campaign Control Panel är ett webbaserat administrativt gränssnitt som hjälpe
 
 **Ytterligare resurser:**
 
-[Kontrollpanelens dokumentation](https://experienceleague.adobe.com/en/docs/control-panel/using/control-panel-home){target="_blank"} | [Självstudievideor på Kontrollpanelen](https://experienceleague.adobe.com/en/docs/control-panel-learn/tutorials/control-panel-overview){target="_blank"}
+[Kontrollpanelens dokumentation](https://experienceleague.adobe.com/sv/docs/control-panel/using/control-panel-home){target="_blank"} | [Självstudievideor på Kontrollpanelen](https://experienceleague.adobe.com/sv/docs/control-panel-learn/tutorials/control-panel-overview){target="_blank"}
 
 +++
 
@@ -1292,7 +1292,7 @@ Använd Campaigns CRM-anslutningsassistent för att mappa fält, välja tabeller
 
 **Relaterade ämnen:**
 
-[CRM-anslutningskonfiguration](../connect/crm.md) | [CRM-arbetsflödesaktiviteter](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/targeting-activities/crm-connector.html){target="_blank"}
+[CRM-anslutningskonfiguration](../connect/crm.md) | [CRM-arbetsflödesaktiviteter](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/targeting-activities/crm-connector.html?lang=sv-SE){target="_blank"}
 
 +++
 
@@ -1491,7 +1491,7 @@ Ja! Campaign innehåller en undersökningsmodul där du kan skapa onlineenkäter
 
 **Relaterade ämnen:**
 
-[Kom igång med enkäter](https://experienceleague.adobe.com/en/docs/campaign-classic/using/online-surveys/about-surveys){target="_blank"} | [Undersökningsrapporter](https://experienceleague.adobe.com/en/docs/campaign-classic/using/online-surveys/publish-track-and-use-collected-data#reports-on-surveys){target="_blank"}
+[Kom igång med enkäter](https://experienceleague.adobe.com/sv/docs/campaign-classic/using/online-surveys/about-surveys){target="_blank"} | [Undersökningsrapporter](https://experienceleague.adobe.com/sv/docs/campaign-classic/using/online-surveys/publish-track-and-use-collected-data#reports-on-surveys){target="_blank"}
 
 +++
 
@@ -1620,7 +1620,7 @@ Kampanjens frågeredigerare skapar databasfrågor visuellt utan SQL, som använd
 
 **Relaterade ämnen:**
 
-[Frågeredigeraren](../start/query-editor.md) | [Frågeaktivitet](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/targeting-activities/query.html){target="_blank"}
+[Frågeredigeraren](../start/query-editor.md) | [Frågeaktivitet](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/targeting-activities/query.html?lang=sv-SE){target="_blank"}
 
 +++
 
@@ -1794,15 +1794,15 @@ Hittar du inte det du letar efter? Här finns ytterligare resurser som hjälper 
 
 Kommunicera med andra Campaign-användare och Adobe-experter för att dela kunskap och få svar.
 
-* **[Adobe Campaign Community](https://experienceleaguecommunities.adobe.com/t5/adobe-campaign-classic/ct-p/adobe-campaign-classic-community){target="_blank"}** - Ställ frågor, dela lösningar och få kontakt med Campaign-communityn
-* **[Experience League-forum](https://experienceleaguecommunities.adobe.com/){target="_blank"}** - Sök i diskussioner i alla Adobe-produkter
-* **[Kampanjens kontorstider](https://experienceleague.adobe.com/){target="_blank"}** - Delta i live-sessioner med Adobe experter
+* **[Adobe Campaign Community](https://experienceleaguecommunities.adobe.com/t5/adobe-campaign-classic/ct-p/adobe-campaign-classic-community?profile.language=sv){target="_blank"}** - Ställ frågor, dela lösningar och få kontakt med Campaign-communityn
+* **[Experience League-forum](https://experienceleaguecommunities.adobe.com/?profile.language=sv){target="_blank"}** - Sök i diskussioner i alla Adobe-produkter
+* **[Kampanjens kontorstider](https://experienceleague.adobe.com/sv){target="_blank"}** - Delta i live-sessioner med Adobe experter
 
 ### Dokumentation och utbildning
 
 Få tillgång till omfattande guider, självstudiekurser och utbildningsmaterial.
 
-* **[Kampanjsjälvstudiekurser](https://experienceleague.adobe.com/docs/campaign-learn/tutorials/overview.html){target="_blank"}** - Stegvisa videoguider och praktiska självstudiekurser
+* **[Kampanjsjälvstudiekurser](https://experienceleague.adobe.com/docs/campaign-learn/tutorials/overview.html?lang=sv-SE){target="_blank"}** - Stegvisa videoguider och praktiska självstudiekurser
 * **[Nyheter](whats-new.md)** - de senaste funktionerna
 * **[Versionsinformation](release-notes.md)** - Aktuell och föregående versionsinformation
 * **[Versioner och uppgraderingar](upgrades.md)** - Läs mer om Campaign-versioner, uppgraderingar och hur du kontrollerar din version
@@ -1828,14 +1828,14 @@ Få hjälp av Adobe supportteam och hantera instansen.
 
 Utveckla dina färdigheter med Adobe officiella utbildnings- och certifieringsprogram.
 
-* **[Experience League Hjälp](https://experienceleague.adobe.com/en/browse/campaign/campaign-v8){target="_blank"}** - Hjälpresurser för Campaign v8 (webbgränssnitt och CLient-konsol)
+* **[Experience League Hjälp](https://experienceleague.adobe.com/sv/browse/campaign/campaign-v8){target="_blank"}** - Hjälpresurser för Campaign v8 (webbgränssnitt och CLient-konsol)
 * **[Adobe Digital Learning Services](https://learning.adobe.com/){target="_blank"}** - instruktörsledda och självstudiekurser
-* **[Adobe Campaign-certifiering](https://experienceleague.adobe.com/docs/certification/program/overview.html){target="_blank"}** - Verifiera dina kunskaper med professionell certifiering
-* **[Experience League utbildningsvägar](https://experienceleague.adobe.com/?lang=en#dashboard/learning){target="_blank"}** - guidade utbildningsresor
+* **[Adobe Campaign-certifiering](https://experienceleague.adobe.com/docs/certification/program/overview.html?lang=sv-SE){target="_blank"}** - Verifiera dina kunskaper med professionell certifiering
+* **[Experience League utbildningsvägar](https://experienceleague.adobe.com/sv?lang=en#dashboard/learning){target="_blank"}** - guidade utbildningsresor
 
 ### Andra användbara resurser
 
 * **[Campaign Classic v7-dokumentation](https://experienceleague.adobe.com/docs/campaign-classic/using/campaign-classic-home.html?lang=sv){target="_blank"}** - referens för användare av Classic v7
-* **[Webbgränssnittsdokumentation för kampanj](https://experienceleague.adobe.com/en/docs/campaign-web/v8/campaign-web-home){target="_blank"}** - guide för nytt webbgränssnitt
+* **[Webbgränssnittsdokumentation för kampanj](https://experienceleague.adobe.com/sv/docs/campaign-web/v8/campaign-web-home){target="_blank"}** - guide för nytt webbgränssnitt
 * **[Bästa praxis för slutleverans](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/introduction.html?lang=sv){target="_blank"}** - Optimera e-postleveransen
 
