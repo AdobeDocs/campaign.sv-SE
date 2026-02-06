@@ -5,7 +5,7 @@ feature: Overview
 role: User
 level: Beginner
 exl-id: 00ba1c43-9558-4adb-83a1-6597c2bbca62
-source-git-commit: 061197048885a30249bd18af7f8b24cb71def742
+source-git-commit: 334b327c7798c78fcfa90e90afe04896959037eb
 workflow-type: tm+mt
 source-wordcount: '714'
 ht-degree: 5%
@@ -55,11 +55,11 @@ Läs mer om hur du skickar transaktionsmeddelandekorrektur vid övergång från 
 
 ## [!DNL Campaign] och [!DNL Snowflake] {#ac-gs-snowflake}
 
-I sin [Enterprise (FFDA)-distribution](../architecture/enterprise-deployment.md) fungerar [!DNL Adobe Campaign] v8 med två databaser: en lokal [!DNL Campaign]-databas för användargränssnittet för meddelanden i realtid och enhetliga frågor och skrivningar via API:er samt en molndatabas [!DNL Snowflake] för kampanjkörning, gruppfrågor och arbetsflödeskörning.
+I sin [Enterprise (FFDA)-distribution](../../v8/architecture/enterprise-deployment.md) fungerar [!DNL Adobe Campaign] v8 med två databaser: en lokal [!DNL Campaign]-databas för användargränssnittet för meddelanden i realtid och enhetliga frågor och skrivningar via API:er samt en molndatabas [!DNL Snowflake] för kampanjkörning, gruppfrågor och arbetsflödeskörning.
 
 Campaign v8 Enterprise innehåller konceptet **FDA (Full Federated Data Access)**: alla data finns nu på fjärrbasis i molndatabasen. Med den här nya arkitekturen förenklar driftsättningen av Campaign v8 Enterprise (FFDA) datahanteringen: inget index krävs för molndatabasen. Du behöver bara skapa tabellerna, kopiera data så kan du börja. Cloud-databastekniken kräver inget specifikt underhåll för att garantera prestandanivån.
 
-Läs mer om arkitekturen [!DNL Campaign] v8 i [den här sidan](../architecture/architecture.md).
+Läs mer om arkitekturen [!DNL Campaign] v8 i [den här sidan](../../v8/architecture/architecture.md).
 
 
 ## Använd din Adobe ID för att ansluta till Campaign{#adobe-id}
@@ -76,7 +76,7 @@ Med Adobe Campaign v8 är kubrapporterna optimerade och har bättre skalbarhet �
 
 ## Otillgängliga funktioner{#gs-unavailable-features}
 
-Observera att vissa funktioner inte är tillgängliga i samband med en [Enterprise (FFDA)-distribution](../architecture/enterprise-deployment.md) av Campaign, till exempel:
+Observera att vissa funktioner inte är tillgängliga i samband med en [Enterprise (FFDA)-distribution](../../v8/architecture/enterprise-deployment.md) av Campaign, till exempel:
 
 * Hantera marknadsföringsresurser
 * Kuponger
