@@ -5,9 +5,9 @@ feature: Overview
 role: User
 level: Beginner
 exl-id: 00ba1c43-9558-4adb-83a1-6597c2bbca62
-source-git-commit: 334b327c7798c78fcfa90e90afe04896959037eb
+source-git-commit: bc787f35c27fbf29740eb39b0d41eee61cc2e754
 workflow-type: tm+mt
-source-wordcount: '714'
+source-wordcount: '715'
 ht-degree: 5%
 
 ---
@@ -59,7 +59,7 @@ I sin [Enterprise (FFDA)-distribution](../../v8/architecture/enterprise-deployme
 
 Campaign v8 Enterprise innehåller konceptet **FDA (Full Federated Data Access)**: alla data finns nu på fjärrbasis i molndatabasen. Med den här nya arkitekturen förenklar driftsättningen av Campaign v8 Enterprise (FFDA) datahanteringen: inget index krävs för molndatabasen. Du behöver bara skapa tabellerna, kopiera data så kan du börja. Cloud-databastekniken kräver inget specifikt underhåll för att garantera prestandanivån.
 
-Läs mer om arkitekturen [!DNL Campaign] v8 i [den här sidan](../../v8/architecture/architecture.md).
+Läs mer om arkitekturen [!DNL Campaign] v8 i [den här sidan](../../v8/architecture/architecture.md). Test
 
 
 ## Använd din Adobe ID för att ansluta till Campaign{#adobe-id}
