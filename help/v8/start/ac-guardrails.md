@@ -23,7 +23,7 @@ Garantier och begränsningar identifierar funktioner, arkitektur eller processer
 * Adobe Campaign v8 är inte tillgängligt för anläggningsdistributioner/hybriddistributioner - endast lanserat som en Adobe Managed Cloud Service
 * Ingen automatisk migrering till Adobe Campaign v8 är tillgänglig för befintliga kunder
 * Ingen dubbelriktad datareplikering tillhandahålls i samband med en [Enterprise-distribution (FFDA)](../../v8/architecture/enterprise-deployment.md): replikering sker endast från den lokala Campaign-databasen till molndatabasen
-* Funktioner som anges [ i det här avsnittet](v7-to-v8.md#gs-unavailable-features) är inte tillgängliga i den aktuella Campaign v8-versionen
+* Funktioner som anges [&#x200B; i det här avsnittet](v7-to-v8.md#gs-unavailable-features) är inte tillgängliga i den aktuella Campaign v8-versionen
 * Vissa funktioner som inte är tillgängliga eller har tagits bort visas fortfarande i användargränssnittet
 * I samband med en [Enterprise-distribution](../architecture/enterprise-deployment.md) (FFDA) är funktionerna för prenumeration (opt-in) och avanmälan (opt-out) samt Mobile-registrering asynkrona processer. Begäranden behandlas varje timme i ett specifikt tekniskt arbetsflöde. [Läs mer](../architecture/replication.md#tech-wf)
 * I kontexten för en [Enterprise (FFDA)-distribution](../architecture/enterprise-deployment.md) måste dubbletter hanteras manuellt av slutanvändare. [Läs mer](../architecture/keys.md)
