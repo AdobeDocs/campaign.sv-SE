@@ -46,7 +46,7 @@ Den här versionen innehåller även en uppsättning funktioner som är tillgän
 * [Profilberikning i transaktionsmeddelanden](https://experienceleague.adobe.com/docs/campaign-web/v8/msg/transactional-messages/profile-enrichment.html){target="_blank"}
 * [Flerspråkiga funktioner för transaktionsmeddelanden, push-meddelanden och SMS](https://experienceleague.adobe.com/docs/campaign-web/v8/msg/multilingual.html){target="_blank"}
 
-Se versionsinformationen för Campaign Web UI [](https://experienceleague.adobe.com/docs/campaign-web/v8/release-notes/release-notes.html){target="_blank"}
+Se versionsinformationen för Campaign Web UI [&#128279;](https://experienceleague.adobe.com/docs/campaign-web/v8/release-notes/release-notes.html){target="_blank"}
 
 ### Korrigeringar {#fixes-8-8-2}
 
@@ -159,7 +159,7 @@ Utöver funktionerna som listas ovan innehåller den här versionen även en upp
 * [Dynamisk rapportering](https://experienceleague.adobe.com/docs/campaign-web/v8/reports/dynamic-reporting/get-started-reporting.html){target="_blank"} (på begäran)
 * [Centraliserad profilering](https://experienceleague.adobe.com/docs/campaign-web/v8/conf/branding/branding-gs.html){target="_blank"} (on demand, nya implementeringar)
 
-Se versionsinformationen för Campaign Web UI [](https://experienceleague.adobe.com/docs/campaign-web/v8/release-notes/release-notes.html){target="_blank"}
+Se versionsinformationen för Campaign Web UI [&#128279;](https://experienceleague.adobe.com/docs/campaign-web/v8/release-notes/release-notes.html){target="_blank"}
 
 ### Allmänna förbättringar {#improvements-8-8-1}
 
