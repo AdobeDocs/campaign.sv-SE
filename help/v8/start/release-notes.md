@@ -3,9 +3,9 @@ title: Versionsinformation om Campaign v8
 description: Senaste Campaign v8-versionen
 feature: Release Notes
 exl-id: 7cf8111d-9f3a-46a4-813a-d4e43a1d1471
-source-git-commit: 4fe8b8eaf88f763e796dbe06ef3c1477de12bad6
+source-git-commit: f25b0a0fea5f32dd509d8b78e6f6a010d9598a9f
 workflow-type: tm+mt
-source-wordcount: '921'
+source-wordcount: '923'
 ht-degree: 12%
 
 ---
@@ -28,14 +28,14 @@ Den **nya SMS-sändningsanslutningen** är nu tillgänglig för alla kunder (GA)
 
 Den här versionen innehåller en uppsättning funktioner som är tillgängliga med användargränssnittet för Campaign-webben:
 
-* [Funktioner för flerspråkig leverans (GA)](https://experienceleague.adobe.com/docs/campaign-web/v8/msg/multilingual.html?lang=sv-SE){target="_blank"}
-* [Profilberikning i transaktionsmeddelanden (GA)](https://experienceleague.adobe.com/docs/campaign-web/v8/msg/transactional-messages/profile-enrichment.html?lang=sv-SE){target="_blank"}
-* [Adobe Experience Manager live- och språkversioner](https://experienceleague.adobe.com/docs/campaign-web/v8/integrations/aem-multilingual.html?lang=sv-SE){target="_blank"}
-* [Innehållsexperiment - A/B-testning](https://experienceleague.adobe.com/docs/campaign-web/v8/msg/email/ab-testing.html?lang=sv-SE){target="_blank"}
-* [Kontinuerlig leveransaktivitet](https://experienceleague.adobe.com/docs/campaign-web/v8/wf/design-workflows/continuous-delivery.html?lang=sv-SE){target="_blank"}
-* [Hantering av kampanjgodkännande](https://experienceleague.adobe.com/docs/campaign-web/v8/campaigns/campaign-approvals.html?lang=sv-SE){target="_blank"}
+* [Funktioner för flerspråkig leverans (GA)](https://experienceleague.adobe.com/docs/campaign-web/v8/msg/multilingual.html){target="_blank"}
+* [Profilberikning i transaktionsmeddelanden (GA)](https://experienceleague.adobe.com/docs/campaign-web/v8/msg/transactional-messages/profile-enrichment.html){target="_blank"}
+* [Adobe Experience Manager live- och språkversioner](https://experienceleague.adobe.com/docs/campaign-web/v8/integrations/aem-multilingual.html){target="_blank"}
+* [Innehållsexperiment - A/B-testning](https://experienceleague.adobe.com/docs/campaign-web/v8/msg/email/ab-testing.html){target="_blank"}
+* [Kontinuerlig leveransaktivitet](https://experienceleague.adobe.com/docs/campaign-web/v8/wf/design-workflows/continuous-delivery.html){target="_blank"}
+* [Hantering av kampanjgodkännande](https://experienceleague.adobe.com/docs/campaign-web/v8/campaigns/campaign-approvals.html){target="_blank"}
 
-Se versionsinformationen för Campaign Web UI [&#128279;](https://experienceleague.adobe.com/docs/campaign-web/v8/release-notes/release-notes.html?lang=sv-SE){target="_blank"}
+Se versionsinformationen för Campaign Web UI [](https://experienceleague.adobe.com/docs/campaign-web/v8/release-notes/release-notes.html){target="_blank"}
 
 ### Säkerhetsförbättringar {#security-8-9-1}
 
@@ -53,42 +53,42 @@ Se versionsinformationen för Campaign Web UI [&#128279;](https://experienceleag
 ### Korrigeringar {#fixes-8-9-1}
 
 * Ett problem har korrigerats där databasstrukturen inte kunde uppdateras efter sysFilter-ändringar. (NEO-93306)
-* Ett problem där dynamiska rapportdata saknades efter migreringen har åtgärdats. (NEO-92962)
+* Korrigerade ett problem där dynamiska rapportdata saknades efter migreringen. (NEO-92962)
 * Ett problem har korrigerats där leveransstatusen inte uppdaterades korrekt. (NEO-92908)
-* En tillfällig lösning har lagts till för Databricks FDA USE CATALOG-begränsning. (NEO-92900)
-* Korrigerade ett problem där Visual Editor bröt HTML-layouten i Outlook Windows på skrivbordet. (NEO-92611)
-* Löste ett kritiskt dataintegritetsproblem där primära nycklar för leverans duplicerades på mittinstansen efter uppgraderingen. (NEO-92424)
+* Korrigerade ett problem relaterat till begränsningen Databriker för FDA-användning av katalog. (NEO-92900)
+* Ett problem som kan orsaka layoutfel i HTML i Outlook på skrivbordet har korrigerats. (NEO-92611)
+* Ett dataintegritetsproblem har korrigerats där primära nycklar för leverans duplicerades på mittinstansen efter en uppgradering. (NEO-92424)
 * Ett problem där länkar inte kunde inaktiveras i dialogrutan Spåra och bilder i en leverans har korrigerats. (NEO-92381)
 * Ett problem har korrigerats där funktionen nms.subscribtion.RecipientSubscribe() inte fungerade för massprenumeration. (NEO-92308)
-* Ett problem där leveransfel uppstod på grund av saknade leveransdelar efter uppgraderingen har åtgärdats. (NEO-92278)
-* Ett problem i spårningsarbetsflödet har korrigerats. (NEO-92239)
-* Ett problem där temporära uppräkningsreferenser saknades i List XML efter att en lista skapats med ett arbetsflöde har åtgärdats. (NEO-91158)
-* Ett problem har korrigerats där dialogrutan Publicera/avpublicera inte stängdes och frystes. (NEO-91038)
-* Ett problem där mottagare som fastnade med statusen&quot;som tagits i beaktande av tjänsteleverantören&quot; har åtgärdats har inte nått Momentum. (NEO-90927)
-* Ett problem har korrigerats där (Un)prenumerationskällan saknades i v8 för avanmälningslänkar. (NEO-90714)
+* Korrigerade ett problem där leveransfel uppstod på grund av saknade leveransdelar efter en uppgradering. (NEO-92278)
+* Ett problem i spårningsarbetsflödet där dubblettstatusfel och SQL-syntaxfel förhindrade att spårningsindikatorer uppdaterades har åtgärdats. (NEO-92239)
+* Ett problem har korrigerats där uppräkningsfältetiketter saknades eller visades felaktigt i listor som skapades via arbetsflödet när dbEnum-fält användes. (NEO-91158)
+* Ett problem har korrigerats där dialogrutan för publicering/avpublicering inte stängdes och låstes. (NEO-91038)
+* Korrigerade ett problem som uppstod för mottagare med statusen &quot;som tagits med i beräkningen av tjänsteleverantören&quot;. (NEO-90927)
+* Ett problem har korrigerats där (un)prenumerationens ursprung saknades för avanmälningslänkar. (NEO-90714)
 * Ett problem har korrigerats där leveransförberedelsen för att lägga till kuponger misslyckades. (NEO-90547)
 * Ett problem har korrigerats där antalet ignorerade infogningar inte återspeglades korrekt på fliken Granskning. (NEO-90318)
-* Ett säkerhetsproblem som kan orsaka denial of service-fel i programmet har åtgärdats. (NEO-89984)
+* Korrigerade ett säkerhetsproblem som kunde orsaka denial of service-fel i programmet. (NEO-89984)
 * Korrigerade ett problem där den hämtade PDF-versionen av Hotclick-rapporten bröts. (NEO-89954)
-* Löste ett SSL-fel som inträffade efter uppgraderingen, vilket orsakade ett oväntat EOF-fel vid läsning. (NEO-89108)
-* Korrigerade ett problem där data inte kunde läsas i dataschemat efter uppgraderingen. (NEO-88663)
-* Ett fel som uppstod när ett teckenfält i PostgreSQL 15 skulle sammanfogas har korrigerats. (NEO-88028)
+* Löste ett SSL-fel som inträffade efter en uppgradering, vilket orsakade ett oväntat EOF-fel vid läsning. (NEO-89108)
+* Korrigerade ett problem där data inte kunde läsas i ett dataschema efter en uppgradering. (NEO-88663)
+* Ett fel som uppstod när ett teckenfält i PostgreSQL 15 skulle sammanfogas har åtgärdats. (NEO-88028)
 * Ett problem har korrigerats där leveransmallvariablerna ändrades när mallen sparades eller duplicerades. (NEO-87845)
-* Ett problem har åtgärdats där webbgränssnittet kraschade när ett nytt databiblioteksschema skapades. (NEO-87816)
-* Ett problem har korrigerats där segmentkoden för dedupliceringsaktivitetens komplementuppsättning inte fungerade. (NEO-87711)
-* Löste en begäran om installationspaket utan X11-beroende. (NEO-87471)
+* Ett problem har korrigerats där webbgränssnittet kraschade när ett nytt databiblioteksschema skapades. (NEO-87816)
+* Korrigerade ett problem där komplementuppsättningar i aktiviteten Deduplicering fanns med. (NEO-87711)
+* Korrigerade en begäran om installationspaket utan X11-beroende. (NEO-87471)
 * Ett problem där segmentkoder inte kunde användas i dynamiska rapporter har korrigerats. (NEO-87276)
-* Ett problem där arbetsflöden fastnade i aktiviteten Uppdatera data har åtgärdats. (NEO-87252)
+* Ett problem där arbetsflöden fastnade i aktiviteten Uppdatera data har korrigerats. (NEO-87252)
 * Ett problem där BigQuery använde en felaktig tidszon har korrigerats. (NEO-86622)
-* Ett JavaScript-fel som uppstod när skriptet mcSynch_mcExec1/jsReplicateUrl utvärderades har korrigerats. (NEO-86553)
-* Ett problem där dubbletthändelser visades i tabellen eventHistory har åtgärdats på grund av identifierarberäkningsmetoden. (NEO-86544)
+* Korrigerade ett JavaScript-fel som uppstod när skriptet mcSynch_mcExec1/jsReplicateUrl utvärderades. (NEO-86553)
+* Korrigerade ett problem där dubbletthändelser påträffades i tabellen eventHistory på grund av en felaktig identifierarberäkningsmetod. (NEO-86544)
 * Ett problem har korrigerats där fliken Avancerat inte visades för iOS Push vid kopiering. (NEO-86231)
-* Ett problem där arbetsflödet för replikreferenstabeller misslyckades med att replikera nms:delivery-schemat har åtgärdats. (NEO-85884)
+* Ett problem har korrigerats där arbetsflödet för replikerade referenstabeller misslyckades med att replikera nms:delivery-schemat. (NEO-85884)
 * Ett problem har korrigerats där null-domänfel som motsvarar MXIP-adresser påträffades i felloggarna när leveranser skickades. (NEO-85238)
-* Lagt till ett sätt att uppdatera mallar för teknisk leverans efter eventuella ändringar av alternativen. (NEO-84149)
+* Ett problem har korrigerats där mallar för teknisk leverans inte uppdaterades efter ändringar av alternativen. (NEO-84149)
 * Korrigerade ett fel i det färdiga arbetsflödet för fakturering. (NEO-83624)
-* Ett problem har åtgärdats med undantag för dubbletter som bara baseras på den primära nyckeln för målposter. (NEO-82910)
-* Korrigerade avvikelser i webbgränssnittsrapporter för Campaign där spårningsstatistik visade olika värden jämfört med konsolen. Rapporterna om spårningsindikatorer, sändning av sammanfattning och URL-klickning visar nu konsekventa mätvärden över båda gränssnitten. (NEO-82339)
+* Korrigerade ett problem med undantag av dubbletter som bara baseras på primärnyckeln för målposter. (NEO-82910)
+* Korrigerade avvikelser i webbgränssnittsrapporter för Campaign där spårningsstatistik visade olika värden jämfört med konsolen. (NEO-82339)
 * Ett problem har korrigerats där det senaste ändringsdatumet ändrades även om posten inte skulle uppdateras i aktiviteten Uppdatera data. (NEO-82002)
-* Ett problem har korrigerats där tillägg av nya attribut i en List gjorde att arbetsflöden inte kunde läsas i listan. (NEO-80258)
-* Korrigerade en avvikelse i spårningsindikatorrapporten. (NEO-79466)
+* Ett problem har korrigerats där tillägg av nya attribut i en lista gjorde att arbetsflöden inte kunde läsa listan. (NEO-80258)
+* Ett problem har korrigerats där spårningsindikatorn visade felaktiga värden för distinkta öppningar. (NEO-79466)
