@@ -44,7 +44,7 @@ Följande tekniska konton används av Adobe Campaign för att aktivera och köra
 
 Det externa **studs-e-postkontot** anger det externa POP3-kontot som ska användas för att ansluta till e-posttjänsten. Alla servrar som konfigurerats för POP3-åtkomst kan användas för att ta emot returmeddelanden.
 
-Läs mer om inkommande e-post på [den här sidan](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/event-activities/inbound-emails.html){target="_blank"}.
+Läs mer om inkommande e-post på [den här sidan](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/event-activities/inbound-emails.html?lang=sv-SE){target="_blank"}.
 
 ![](assets/bounce_external_1.png)
 
@@ -101,7 +101,7 @@ Det externa kontot av typen **Extern databas** används för att ansluta till en
 >
 >Externa databaser som är kompatibla med Adobe Campaign v8 visas i [kompatibilitetsmatrisen](../start/compatibility-matrix.md). FDA-anslutningar använder ODBC-drivrutiner; med Adobe Campaign Managed Cloud Services konfigureras ODBC-drivrutinen och det externa kontot av Adobe.
 
-Konfigurationsinställningarna för det externa kontot beror på databasmotorn. Med Adobe Campaign Managed Cloud Services utförs konfigurationen av externa konton av Adobe. Läs mer om den här konfigurationen i [Adobe Campaign Classic v7-dokumentationen](https://experienceleague.adobe.com/en/docs/campaign-classic/using/installing-campaign-classic/accessing-external-database/external-accounts){target="_blank"}.
+Konfigurationsinställningarna för det externa kontot beror på databasmotorn. Med Adobe Campaign Managed Cloud Services utförs konfigurationen av externa konton av Adobe. Läs mer om den här konfigurationen i [Adobe Campaign Classic v7-dokumentationen](https://experienceleague.adobe.com/sv/docs/campaign-classic/using/installing-campaign-classic/accessing-external-database/external-accounts){target="_blank"}.
 
 #### Externt konto för databaser {#databricks-external-accounts}
 
@@ -137,7 +137,7 @@ Det externa kontot av typen **Twitter** används för att ansluta Campaign till 
 
 ## Externa konton för överföringsdata {#transfer-data-external-accounts}
 
-Dessa externa konton kan användas för att importera eller exportera data till Adobe Campaign med hjälp av en **[!UICONTROL Transfer file]**-arbetsflödesaktivitet. Läs mer om **Filöverföring** i arbetsflöden på [den här sidan](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/event-activities/file-transfer.html){target="_blank"}.
+Dessa externa konton kan användas för att importera eller exportera data till Adobe Campaign med hjälp av en **[!UICONTROL Transfer file]**-arbetsflödesaktivitet. Läs mer om **Filöverföring** i arbetsflöden på [den här sidan](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/event-activities/file-transfer.html?lang=sv-SE){target="_blank"}.
 
 * **FTP och SFTP** - Med det externa **FTP**-kontot kan du konfigurera och testa åtkomst till en server utanför Adobe Campaign. Om du vill konfigurera anslutningar till externa system som SFTP- eller FTP-servrar som används för filöverföringar kan du skapa egna externa konton.
 
@@ -145,7 +145,7 @@ Dessa externa konton kan användas för att importera eller exportera data till 
 
   >[!NOTE]
   >
-  >Från och med version 8.5 kan du nu autentisera säkert med en privat nyckel när du konfigurerar ditt externa SFTP-konto. [Läs mer om nyckelhantering](https://experienceleague.adobe.com/docs/control-panel/using/sftp-management/key-management.html){target="_blank"}.
+  >Från och med version 8.5 kan du nu autentisera säkert med en privat nyckel när du konfigurerar ditt externa SFTP-konto. [Läs mer om nyckelhantering](https://experienceleague.adobe.com/docs/control-panel/using/sftp-management/key-management.html?lang=sv-SE){target="_blank"}.
 
 * **Amazon Simple Storage Service (S3)** - **AWS S3**-anslutningen kan användas för att importera eller exportera data till Adobe Campaign med hjälp av en **[!UICONTROL Transfer file]** arbetsflödesaktivitet. När du konfigurerar det nya externa kontot måste du ange följande information:
 
