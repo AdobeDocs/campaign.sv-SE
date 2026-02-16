@@ -3,9 +3,9 @@ title: Versionsinformation om Campaign v8
 description: Senaste Campaign v8-versionen
 feature: Release Notes
 exl-id: 7cf8111d-9f3a-46a4-813a-d4e43a1d1471
-source-git-commit: c7f1edc27a7e09a3a7da172af1df7de01118c516
+source-git-commit: 91796cd0d107b65377e8d724a81d1de4f907f7e5
 workflow-type: tm+mt
-source-wordcount: '958'
+source-wordcount: '960'
 ht-degree: 12%
 
 ---
@@ -28,19 +28,19 @@ Den **nya SMS-sändningsanslutningen** är nu tillgänglig för alla kunder (GA)
 
 Den här versionen innehåller en uppsättning funktioner som är tillgängliga med användargränssnittet för Campaign-webben:
 
-* [Funktioner för flerspråkig leverans (GA)](https://experienceleague.adobe.com/docs/campaign-web/v8/msg/multilingual.html?lang=sv-SE){target="_blank"}
-* [Profilberikning i transaktionsmeddelanden (GA)](https://experienceleague.adobe.com/docs/campaign-web/v8/msg/transactional-messages/profile-enrichment.html?lang=sv-SE){target="_blank"}
-* [Adobe Experience Manager live- och språkversioner](https://experienceleague.adobe.com/docs/campaign-web/v8/integrations/aem-multilingual.html?lang=sv-SE){target="_blank"}
-* [Innehållsexperiment - A/B-testning](https://experienceleague.adobe.com/docs/campaign-web/v8/msg/email/ab-testing.html?lang=sv-SE){target="_blank"}
-* [Kontinuerlig leveransaktivitet](https://experienceleague.adobe.com/docs/campaign-web/v8/wf/design-workflows/continuous-delivery.html?lang=sv-SE){target="_blank"}
-* [Hantering av kampanjgodkännande](https://experienceleague.adobe.com/docs/campaign-web/v8/campaigns/campaign-approvals.html?lang=sv-SE){target="_blank"}
+* [Funktioner för flerspråkig leverans (GA)](https://experienceleague.adobe.com/docs/campaign-web/v8/msg/multilingual.html){target="_blank"}
+* [Profilberikning i transaktionsmeddelanden (GA)](https://experienceleague.adobe.com/docs/campaign-web/v8/msg/transactional-messages/profile-enrichment.html){target="_blank"}
+* [Adobe Experience Manager live- och språkversioner](https://experienceleague.adobe.com/docs/campaign-web/v8/integrations/aem-multilingual.html){target="_blank"}
+* [Innehållsexperiment - A/B-testning](https://experienceleague.adobe.com/docs/campaign-web/v8/msg/email/ab-testing.html){target="_blank"}
+* [Kontinuerlig leveransaktivitet](https://experienceleague.adobe.com/docs/campaign-web/v8/wf/design-workflows/continuous-delivery.html){target="_blank"}
+* [Hantering av kampanjgodkännande](https://experienceleague.adobe.com/docs/campaign-web/v8/campaigns/campaign-approvals.html){target="_blank"}
 
-Se versionsinformationen för Campaign Web UI [&#128279;](https://experienceleague.adobe.com/docs/campaign-web/v8/release-notes/release-notes.html?lang=sv-SE){target="_blank"}
+Se versionsinformationen för Campaign Web UI [](https://experienceleague.adobe.com/docs/campaign-web/v8/release-notes/release-notes.html){target="_blank"}
 
 ### Säkerhetsförbättringar {#security-8-9-1}
 
 * Snowflake externa konton har nu stöd för OAuth2-autentisering, vilket ger moderna och säkra autentiseringsmetoder för federerade dataåtkomstanslutningar. (NEO-87013)
-* Externa databankskonton har nu stöd för OAuth2-autentisering via tjänstens huvudnamn (icke-interaktivt klientautentiseringsflöde), vilket ger säkra autentiseringsmetoder för federerade dataåtkomstanslutningar. Interaktiv OAuth2-autentisering är tillgänglig i en framtida version. (NEO-87422)
+* Externa databankskonton har nu stöd för OAuth2-autentisering via tjänstens huvudnamn (icke-interaktivt klientautentiseringsflöde), vilket ger säkra autentiseringsmetoder för federerade dataåtkomstanslutningar. Interaktiv OAuth2-autentisering är tillgänglig i en framtida version. (NEO-87422) [Läs mer](../config/external-accounts.md#databricks-external-accounts)
 * Ett problem med filåtkomst i arbetsflödet har åtgärdats genom att åtgärderna begränsas till auktoriserade kataloger, vilket förhindrar obehörig åtkomst och eventuell fjärrexekvering av kod. (NEO-88460)
 * FTP URL-tillåtslista kontroller har lagts till i arbetsflödet för JavaScript-kodaktiviteter, vilket begränsar utgående FTP-anslutningar till endast auktoriserade adresser. (NEO-89083)
 
