@@ -6,10 +6,10 @@ role: Developer
 level: Beginner
 exl-id: 1d593c8e-4b32-4902-93a7-7b18cef27cac
 version: Campaign v8, Campaign Classic v7
-source-git-commit: 3453820bb0eca7847ec55d7e6ea15766a57ab94e
+source-git-commit: da2274cfd19bb067fcc1e990360093f161d5638a
 workflow-type: tm+mt
-source-wordcount: '2167'
-ht-degree: 67%
+source-wordcount: '2810'
+ht-degree: 52%
 
 ---
 
@@ -18,6 +18,22 @@ ht-degree: 67%
 På Adobe tar vi er digitala säkerhet på stort allvar. Säkerhetsrutinerna är djupt integrerade i vår interna programutveckling och våra processer och verktyg för drift och följs noggrant av våra funktionsövergripande team för att förebygga, upptäcka och hantera incidenter på ett snabbt sätt.
 
 Dessutom hjälper vårt samarbete med partners, ledande forskare, säkerhetsforskningsinstitutioner och andra branschorganisationer oss att hålla oss uppdaterade med de senaste hoten och säkerhetsluckorna och vi införlivar regelbundet avancerad säkerhetsteknik i de produkter och tjänster vi erbjuder.
+
+>[!NOTE]
+>
+>**Hanterade molntjänster i Campaign v8:** Infrastruktur (nätverk, server, TLS, patchning) hanteras av Adobe. Den här sidan fokuserar på konfiguration på klient- och programnivå som du kontrollerar: åtkomsthantering, autentisering, instansinställningar, dataskydd, kodning och driftspraxis.
+
+## Checklista för säkerhet {#security-checklist}
+
+Använd den här checklistan för att anpassa konfigurationen efter rekommenderade säkra standardinställningar:
+
+* [Åtkomsthantering](#access-management): Skapa säkerhetsgrupper, tilldela lämpliga behörigheter, begränsa administratörsanvändning, en operator per användare, granska regelbundet
+* [Autentisering och session](#authentication-and-session): Använd Adobe IMS, stark identitetsprincip, timeout för session
+* [Instans- och nätverkssäkerhet](#instance-and-network-security): IP-tillåtelselista, URL-behörigheter, GPG-nycklar via Kontrollpanelen
+* [Data- och PII-skydd](#data-and-pii-protection): HTTPS, PII-vybegränsning, begränsa lösenord, skydda känsliga sidor
+* [Riktlinjer för kodning](#coding-guidelines): Inga hårdkodade hemligheter, validera indata, parametriserad SQL, captchas
+* [Databegränsning](#data-restriction): Begränsa åtkomst till lösenordsfält och hemliga fält i externa konton
+* [Drift och efterlevnad](#operational-and-compliance): Jämför med den här baslinjen regelbundet, använd granskningsspår
 
 ## Sekretess
 
@@ -101,8 +117,8 @@ Här följer det allmänna flödet för det här användningsfallet:
 
 Med Adobe Campaign kan ni samla in data, inklusive personuppgifter och känslig information. Det är därför viktigt att du erhåller och övervakar medgivande från dina mottagare.
 
-* Låt alltid mottagarna godkänna att ta emot meddelanden. För att göra detta ska du fortsätt respektera förfrågningar om borttagning så snabbt som möjligt och verifiera medgivande genom en dubbel anmälningsprocess. Mer information om det här finns i [Skapa ett prenumerationsformulär med dubbel anmälan](https://experienceleague.adobe.com/sv/docs/campaign-classic/using/designing-content/web-forms/use-cases-web-forms){target=_blank}.
-* Importera inte bedrägliga listor och använd dirigerade adresser för att kontrollera att din klientfil inte används bedrägligt. Mer information om det här finns i [Om dirigerade adresser](https://experienceleague.adobe.com/sv/docs/campaign-classic/using/sending-messages/using-seed-addresses/about-seed-addresses){target=_blank}.
+* Låt alltid mottagarna godkänna att ta emot meddelanden. För att göra detta ska du fortsätt respektera förfrågningar om borttagning så snabbt som möjligt och verifiera medgivande genom en dubbel anmälningsprocess. Mer information om det här finns i [Skapa ett prenumerationsformulär med dubbel anmälan](https://experienceleague.adobe.com/en/docs/campaign-classic/using/designing-content/web-forms/use-cases-web-forms){target=_blank}.
+* Importera inte bedrägliga listor och använd dirigerade adresser för att kontrollera att din klientfil inte används bedrägligt. Mer information om det här finns i [Om dirigerade adresser](https://experienceleague.adobe.com/en/docs/campaign-classic/using/sending-messages/using-seed-addresses/about-seed-addresses){target=_blank}.
 * Genom medgivande och behörighetshantering kan du spåra mottagarnas preferenser och hantera vem inom organisationen som har tillgång till vilka data. Mer information finns i [det här avsnittet](#consent).
 * Underlätta och hantera förfrågningar om användarens information från era mottagare. Mer information finns i [det här avsnittet](#privacy-requests).
 
@@ -123,7 +139,7 @@ Adobe Campaign erbjuder viktiga funktioner som är grundläggande för integrite
 
 * **Medgivandehantering**: genom prenumerationshantering kan du hantera mottagarnas preferenser och spåra vilka mottagare som har valt att anmäla sig till vilka typer av prenumerationer. Mer information om det här finns i [Om prenumerationer](../../automation/workflow/subscription-services.md).
 * **Datalagring**: alla inbyggda standardiserade loggtabeller har förinställda lagringsperioder vilket i allmänhet begränsar datalagringen till 6 månader eller mindre. Ytterligare lagringsperioder kan ställas in med arbetsflöden. Kontakta Adobes konsulter eller teknikadministratörer för mer information om detta.
-* **Hantering av rättigheter**: Adobe Campaign ger dig möjligheten att hantera de rättigheter som tilldelats olika operatörer i Campaign via olika färdiga eller anpassade roller. Det här låter dig hantera vilka inom företaget som kan få åtkomst till, ändra eller exportera olika typer av data. Se [Om åtkomsthantering](https://experienceleague.adobe.com/sv/docs/campaign-classic/using/installing-campaign-classic/security-privacy/access-management){target=_blank} för mer information.
+* **Hantering av rättigheter**: Adobe Campaign ger dig möjligheten att hantera de rättigheter som tilldelats olika operatörer i Campaign via olika färdiga eller anpassade roller. Det här låter dig hantera vilka inom företaget som kan få åtkomst till, ändra eller exportera olika typer av data. Se [Om åtkomsthantering](https://experienceleague.adobe.com/en/docs/campaign-classic/using/installing-campaign-classic/security-privacy/access-management){target=_blank} för mer information.
 
 ### Förfrågningar om användarens information {#privacy-requests}
 
@@ -146,7 +162,7 @@ Tack vare spårningsfunktionerna i Adobe Campaign kan du spåra vad leveransmott
 * En **sessionscookie**: Cookien **nlid** innehåller identifieraren för e-postmeddelandet som skickas till kontakten (**broadlogId**) och identifieraren för meddelandemallen (**deliveryId**). Den läggs till när kontakten klickar på en URL som ingår i ett e-postmeddelande som skickas av Adobe Campaign och låter dig spåra deras beteende på webben. Denna sessionscookie raderas automatiskt när webbläsaren stängs. Kontakten kan konfigurera sin webbläsare så att den inte tillåter cookies.
 
 * Två **permanenta** cookies:
-   * Cookien **UUID** (Universal Unique IDentifier) delas mellan Adobe Experience Cloud-lösningar. Den ställs in en gång tills den försvinner från klientwebbläsaren när ett nytt värde skapas. Med den här cookien kan du identifiera de användare som interagerar med Experience Cloud-lösningarna när de besöker en webbplats. Den kan ställas in av en landningssida (för att koppla okända kundaktiviteter till en mottagare) eller av en leverans. Beskrivningen av den här cookien finns på [den här sidan](https://experienceleague.adobe.com/docs/core-services/interface/ec-cookies/cookies-mc.html?lang=sv-SE#ec-cookies).
+   * Cookien **UUID** (Universal Unique IDentifier) delas mellan Adobe Experience Cloud-lösningar. Den ställs in en gång tills den försvinner från klientwebbläsaren när ett nytt värde skapas. Med den här cookien kan du identifiera de användare som interagerar med Experience Cloud-lösningarna när de besöker en webbplats. Den kan ställas in av en landningssida (för att koppla okända kundaktiviteter till en mottagare) eller av en leverans. Beskrivningen av den här cookien finns på [den här sidan](https://experienceleague.adobe.com/docs/core-services/interface/ec-cookies/cookies-mc.html#ec-cookies).
    * Cookien **nllastdelid** (som introducerades i Campaign Classic 20.3) är en permanent cookie som innehåller **deliveryId** för den senaste leveransen där användaren klickade på länken. Den här cookien används för att identifiera spårningstabellen som ska användas när sessionscookien saknas.
 
 Föreskrifter som den allmänna dataskyddsförordningen (GDPR) kräver att företag erhåller medgivande från webbplatsanvändare innan de installerar några cookies.
@@ -165,43 +181,63 @@ Det gör du genom att lägga till spårade länkar i meddelandena för att mäta
 >
 >Webbspårning är inte tillgängligt i Campaign v8. Läs mer om otillgängliga funktioner på [den här sidan](../start/v7-to-v8.md#gs-unavailable-features).
 
-<!--
-Privacy configuration and hardening is a key element of security optimization. Here are some best practices to follow regarding privacy:
+## Skydd av data och PII {#data-and-pii-protection}
 
-* Protect your customer Personal Information (PI) by using HTTPS instead of HTTP
-* Use [PI view restriction](../dev/restrict-pi-view.md) to protect privacy and prevent data from being misused
-* Make sure that encrypted passwords are restricted
-* Protect the pages that might contain personal information such as mirror pages, web applications, etc.
--->
+Konfiguration och skärpning av sekretess är en viktig del av säkerhetsoptimeringen. Följ dessa standarder:
+
+* **Använd HTTPS för alla slutpunkter** - Kontrollera att alla slutpunkter som används av Campaign (spårning, spegelsida, webbprogram, API:er) hanteras via HTTPS.
+* **Begränsa PII-vyn** - Använd [PII-vybegränsning](../dev/restrict-pi-view.md) så att endast behöriga operatorer kan se känsliga fält (t.ex. e-post, telefon) i scheman och på skärmar.
+* **Begränsa åtkomsten till krypterade lösenord** - Begränsa åtkomsten till lösenord och hemliga fält i externa konton och andra scheman så att bara administratörer eller en minimal uppsättning operatorer kan visa dem. Se [Databegränsning](#data-restriction) nedan.
+* **Skydda känsliga sidor** - Begränsa åtkomsten till spegelsidor, webbprogram och landningssidor som visar eller samlar in PII. Använd operatörs- och mappbehörigheter och, i tillämpliga fall, hämtningar och samtycke.
 
 >[!NOTE]
 >
 >Som användare av hanterade molntjänster arbetar Adobe med dig för att implementera dessa konfigurationer i din miljö.
 
+## Åtkomsthantering {#access-management}
 
-## Åtkomsthantering
+Åtkomshantering är en viktig del av säkerhetsbehärskningen. Här är de bästa sätten:
 
-Åtkomshantering är en viktig del av säkerhetsbehärskningen. Här är några av de bästa sätten:
+* **Skapa tillräckligt många säkerhetsgrupper** - Definiera operatörsgrupper som matchar roller och bara tilldelar de rättigheter som varje roll behöver.
+* **Kontrollera att alla operatorer har rätt åtkomsträttigheter** - Använd principen om minst privilegium. Undvik som standard administration eller andra breda rättigheter.
+* **Undvik att använda admin-operatorn och undvik att ha för många operatorer i admin-gruppen** - Dela inte det inbyggda administratörskontot. Skapa en operator per fysisk användare för ansvar och revision.
+* **En operator per fysisk användare** - Dela inte konton. Skapa en Campaign-operator (Adobe ID) per person så att åtkomsthistorik och loggar kan användas.
+* **Begränsa namngivna rättigheter med hög behörighet** - Bevilja **ADMINISTRATION**, **PROGRAM EXECUTION** (createProcess) och **SQL** endast till ett fåtal tillförlitliga operatorer. Dokumentera vem som har dem och varför.
+* **Granska åtkomsten regelbundet** - Granska regelbundet Operatorer, Operator-grupper och mappbehörigheter; ta bort eller minska åtkomsten när roller ändras eller personer lämnar.
+* **Använd produktprofiler på ett konsekvent sätt** - Föredra att tilldela användare till produktprofiler (operatorgrupper) i Admin Console, håll namnen konsekventa (t.ex. `campaign - <instance> - <group>`). Se [Kom igång med behörigheter](../start/gs-permissions.md).
+* **Åtkomst till Kontrollpanelen** - I Campaign v8 kan produktprofiler eller namngivna rättigheter vars namn innehåller admin ge åtkomst till Campaign-kontrollpanelen. Undvik att använda admin i profil- eller gruppnamn om inte dessa användare ska ha åtkomst till Kontrollpanelen.
 
-* Skapa tillräckligt många säkerhetsgrupper
-* Kontrollera att alla operatorer har rätt åtkomsträttigheter
+Läs mer om behörigheter i [det här avsnittet](../start/gs-permissions.md).
 
-Läs mer om behörigheter i [det här avsnittet](../start/gs-permissions.md)
+## Autentisering och session {#authentication-and-session}
 
-## Riktlinjer för kodning
+* **Använd Adobe IMS** - Alla användare bör logga in med sin Adobe ID (IMS); förlita sig inte på äldre inloggnings-/lösenord för dagliga operatorer.
+* **Förlita dig på en stark identitet- och lösenordspolicy** - Använd Admin Console eller din identitetsleverantör för MFA och lösenordspolicy. Se till att endast behöriga användare tilldelas till produktprofiler för Campaign.
+* **Konfigurera sessionstimeout** - Ange en rimlig sessionstimeout och lås skärmen när du lämnar arbetsstationen, om det går att konfigurera (t.ex. klientkonsolen).
+
+## Instans- och nätverkssäkerhet {#instance-and-network-security}
+
+Som produktadministratör för Campaign v8 använder du [Campaign Control Panel](https://experienceleague.adobe.com/docs/control-panel/using/control-panel-home.html?lang=sv){target="_blank"} för att hantera säkerhet på instansnivå:
+
+* **IP-tillåtelselista** - Hantera IP-tillåtelselista för instansåtkomst, begränsa till kända nätverk (t.ex. kontor, VPN) och undvik överdrivet breda intervall där det är möjligt.
+* **URL-behörigheter** - Begränsa URL-behörigheter till de domäner som instansen behöver anropa (API:er, spårning, externa tjänster) för att minska risken för missbruk av begäran på serversidan.
+* **GPG-nycklar** - Om du använder kryptering för filöverföringar eller andra användningsfall hanterar du GPG-nycklar via Kontrollpanelen och roterar dem i enlighet med din säkerhetspolicy.
+
+## Riktlinjer för kodning {#coding-guidelines}
 
 När du utvecklar i Adobe Campaign (arbetsflöden, Javascript, JSSP osv.) ska du alltid följa dessa riktlinjer:
 
-* **Skript**: Undvik SQL-satser, använd parametriserade funktioner i stället för strängsammanfogning, undvik SQL-injektion genom att lägga till de SQL-funktioner som ska användas i tillåtelselista.
+* **Skript** - Försök att undvika rå SQL. Använd parametriserade funktioner i stället för strängsammanfogning. Undvik SQL-injektion genom att bara lägga till de SQL-funktioner du behöver i tillåtelselista.
+* **Skydda datamodellen** - Använd namngivna rättigheter för att begränsa operatoråtgärder och lägga till systemfilter (sysFilter).
+* **Lägg till hämtningar i webbprogram** - Lägg till hämtningar på offentliga landningssidor och prenumerationssidor.
+* **Hårdkoda inte hemligheter** - Hårdkoda inte lösenord, API-nycklar eller token i arbetsflöden, JavaScript eller JSSP; använd externa konton eller säkra konfigurationer.
+* **Validera och sanera indata** - Validera och sanera användarindata i webbprogram och arbetsflödesparametrar för att minska riskerna med inmatning och XSS.
+* **Använd tillåtelselista för SQL** - När SQL- eller skriptkörning krävs använder du tillåtelselista för tillåtna SQL-funktioner och undviker att skapa frågor från användarindata via strängsammanfogning.
 
-* **Skydda datamodellen**: använd namngivna rättigheter för att begränsa operatoråtgärder, lägg till systemfilter (sysFilter)
-
-* **Lägg till bildtexter i webbprogram**: lägg till bildtexter på dina offentliga landningssidor och prenumerationssidor.
-
-Läs mer i [Adobe Campaign Classic v7-dokumentationen](https://experienceleague.adobe.com/docs/campaign-classic/using/installing-campaign-classic/security-privacy/scripting-coding-guidelines.html?lang=sv-SE#installing-campaign-classic){target="_blank"}.
+Läs mer i [Adobe Campaign Classic v7-dokumentationen](https://experienceleague.adobe.com/docs/campaign-classic/using/installing-campaign-classic/security-privacy/scripting-coding-guidelines.html#installing-campaign-classic){target="_blank"}.
 
 
-## Personalization
+## Personalisering
 
 När du lägger till anpassade länkar till ditt innehåll bör du alltid undvika att ha en personalisering i värdnamnsdelen av webbadressen för att undvika eventuella säkerhetsbrister. Följande exempel får aldrig användas i alla URL-attribut &lt;`a href="">` eller `<img src="">`:
 
@@ -211,7 +247,7 @@ När du lägger till anpassade länkar till ditt innehåll bör du alltid undvik
 * `https://<%= sub-domain >.domain.tld/path`
 * `https://sub.domain<%= main domain %>/path`
 
-## Databegränsning
+## Databegränsning {#data-restriction}
 
 Du måste se till att de krypterade lösenorden inte är tillgängliga för en autentiserad användare med låg behörighet. Det finns två sätt: begränsa åtkomsten till lösenordsfält enbart eller till hela entiteten.
 
@@ -273,24 +309,7 @@ Med den här begränsningen kan du ta bort lösenordsfält, men låta det extern
    >
    >Du kan ersätta `$(loginId) = 0 or $(login) = 'admin'` med `hasNamedRight('admin')` om du vill att alla användare med administratörsbehörighet ska kunna se de här lösenorden.
 
+## Operativ verksamhet och efterlevnad {#operational-and-compliance}
 
-## Åtkomsthantering
-
-Åtkomshantering är en viktig del av säkerhetsbehärskningen. Här är några av de bästa sätten:
-
-* Skapa tillräckligt många säkerhetsgrupper
-* Kontrollera att alla operatorer har rätt åtkomsträttigheter
-
-Läs mer om behörigheter i [i det här avsnittet](../start/gs-permissions.md).
-
-## Riktlinjer för kodning
-
-När du utvecklar i Adobe Campaign (arbetsflöden, Javascript, JSSP osv.) ska du alltid följa dessa riktlinjer:
-
-* **Skript**: Undvik SQL-satser, använd parametriserade funktioner i stället för strängsammanfogning, undvik SQL-injektion genom att lägga till de SQL-funktioner som ska användas i tillåtelselista.
-
-* **Skydda datamodellen**: använd namngivna rättigheter för att begränsa operatoråtgärder, lägg till systemfilter (sysFilter)
-
-* **Lägg till bildtexter i webbprogram**: lägg till bildtexter på dina offentliga landningssidor och prenumerationssidor.
-
-Läs mer i [Adobe Campaign Classic v7-dokumentationen](https://experienceleague.adobe.com/docs/campaign-classic/using/installing-campaign-classic/security-privacy/scripting-coding-guidelines.html?lang=sv-SE#installing-campaign-classic){target="_blank"}.
+* **Jämför med säker baslinje** - Jämför regelbundet operatörsgrupperna, namngivna rättigheter och mappbehörigheter med rekommendationerna på den här sidan (och, i tillämpliga fall, [Förbättrat säkerhetstillägg](enhanced-security.md)) för att anpassa dem till rekommenderade säkra standardvärden.
+* **Använd granskningsspåret** - Använd granskningsspåret för Campaign för att se viktiga ändringar (t.ex. arbetsflöden, leveranser, nyckelkonfiguration). Behåll och granska loggar enligt din efterlevnads- och lagringspolicy.
