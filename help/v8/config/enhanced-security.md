@@ -1,19 +1,21 @@
 ---
 title: Förbättrat säkerhetstillägg för kampanj
-description: Kom igång med tillägget Campaign Enhanced security
+description: Riktlinjer för säker konfiguration för Campaign-tillägget Förbättrat skydd
 feature: Configuration
 role: Developer
 level: Experienced
 exl-id: 7c586836-82e1-45fb-9c28-18361572e1fa
-source-git-commit: 3f36d7c425dd5a9a13e1de7a77371b29a462dbea
+source-git-commit: 925f8152d28f60f876c5ef4420064fa0d71cdb9d
 workflow-type: tm+mt
-source-wordcount: '727'
+source-wordcount: '743'
 ht-degree: 2%
 
 ---
 
 
 # Förbättrat säkerhetstillägg för kampanj {#enhanced-security}
+
+Den här sidan är en del av Adobe [offentligt tillgängliga rekommenderade riktlinjer för säker konfiguration](security.md#public-guidance) för Campaign v8.
 
 [!DNL Adobe Campaign] erbjuder ett nytt **Förbättrat skydd**-tillägg för att göra din nätverksanslutning säkrare och ge bättre säkerhet för dina resurser.
 
