@@ -5,9 +5,9 @@ user-guide-description: Produktdokumentation för Adobe Campaign v8 (klientkonso
 title: Adobe Campaign v8-dokumentation
 description: Kampanjdokumentation v8
 breadcrumb-title: Dokumentation om Campaign v8
-source-git-commit: 050612f6d7ab20aed5880454eec9cfc6e5fc18c2
+source-git-commit: 4626d93dea22e0ee458babfd53758c8c63a98ad4
 workflow-type: tm+mt
-source-wordcount: '837'
+source-wordcount: '840'
 ht-degree: 29%
 
 ---
@@ -30,6 +30,7 @@ ht-degree: 29%
    + [Kända fel](start/known-issues.md)
    + [Kompatibilitetsmatris](start/compatibility-matrix.md)
    + [Dokumentationsuppdateringar](start/documentation-updates.md)
+   + [Rapport över månatliga uppdateringar](../../monthly-updates-report.md)
 + Kom igång {#new}
    + [Kom igång med Adobe Campaign](start/get-started.md)
    + [Viktiga funktioner](start/whats-new.md)
@@ -144,7 +145,7 @@ ht-degree: 29%
    + [Designa webbprogram och formulär](dev/webapps.md)
 + Arbetsflöden {#workflows}
    + [Kom igång med arbetsflöden](config/workflows.md)
-   + [Arbetsflödesdokumentation >](https://experienceleague.adobe.com/docs/campaign/automation/workflows/introduction/about-workflows.html?lang=sv-SE)
+   + [Arbetsflödesdokumentation >](https://experienceleague.adobe.com/docs/campaign/automation/workflows/introduction/about-workflows.html)
 + Integritet och säkerhet {#privacy}
    + [Hantera förfrågningar om användarens information](start/privacy.md)
    + [Säkerhetsanvisningar](config/security.md)
@@ -196,7 +197,7 @@ ht-degree: 29%
       + [Designfrågor](start/design-queries.md)
       + [Definiera filtervillkor](start/filter-conditions.md)
    + [Importera data](start/import.md)
-   + [Arbetsflödesdokumentation >](https://experienceleague.adobe.com/docs/campaign/automation/workflows/introduction/about-workflows.html?lang=sv-SE)
+   + [Arbetsflödesdokumentation >](https://experienceleague.adobe.com/docs/campaign/automation/workflows/introduction/about-workflows.html)
 + Integreringar {#connect}
    + [Connect Campaign med andra lösningar](connect/integration.md)
    + Campaign + Experience Platform {#ac-aep}
@@ -282,6 +283,6 @@ ht-degree: 29%
          + [Kontrollera ett arbetsflöde](dev/api/controlling-a-workflow.md)
          + [Utlösa en signalaktivitet](dev/api/triggering-a-signal-activity.md)
 + Ytterligare resurser {#resources}
-   + [Tekniska kommentarer för kampanj >](https://experienceleague.adobe.com/sv/docs/campaign/technotes-ac/technotes-home)
-   + [Dokumentation för kampanjwebbanvändargränssnitt >](https://experienceleague.adobe.com/sv/docs/campaign-web/v8/campaign-web-home)
+   + [Tekniska kommentarer för kampanj >](https://experienceleague.adobe.com/en/docs/campaign/technotes-ac/technotes-home)
+   + [Dokumentation för kampanjwebbanvändargränssnitt >](https://experienceleague.adobe.com/en/docs/campaign-web/v8/campaign-web-home)
 
