@@ -6,9 +6,9 @@ role: Developer
 level: Beginner
 exl-id: 1d593c8e-4b32-4902-93a7-7b18cef27cac
 version: Campaign v8, Campaign Classic v7
-source-git-commit: 956b2bf5bb8b08654c039b190c020d80ebea223d
+source-git-commit: 04dff810f5a838b2468280519948c88e29acf221
 workflow-type: tm+mt
-source-wordcount: '2896'
+source-wordcount: '2865'
 ht-degree: 50%
 
 ---
@@ -75,10 +75,6 @@ Adobe Campaign ingår som en del av Adobe Experience Cloud-lösningarna. Sättet
    * Din bästa praxis gällande integritet i samband med Adobe Experience Cloud
    * Hur användare kan ställa in sina preferenser gällande insamling eller användning av sin information i samband med Adobe Experience Cloud
 
-  >[!NOTE]
-  >
-  >Liksom för alla Adobe-produkter kan användare i Campaign avanmäla sig från att dela information som samlas in om dem via appar och webbplatser. Mer information finns i [Vanliga frågor och svar om att använda Adobe Experience Cloud](https://www.adobe.com/se/privacy/experience-cloud-usage-info-faq.html).
-
 Se [den här sidan](https://www.adobe.com/se/privacy/marketing-cloud.html) för mer information om integriteten i Adobe Experience Cloud.
 
 ## Personuppgifter och personer {#personal-data}
@@ -129,8 +125,8 @@ Här följer det allmänna flödet för det här användningsfallet:
 
 Med Adobe Campaign kan ni samla in data, inklusive personuppgifter och känslig information. Det är därför viktigt att du erhåller och övervakar medgivande från dina mottagare.
 
-* Låt alltid mottagarna godkänna att ta emot meddelanden. För att göra detta ska du fortsätt respektera förfrågningar om borttagning så snabbt som möjligt och verifiera medgivande genom en dubbel anmälningsprocess. Mer information om det här finns i [Skapa ett prenumerationsformulär med dubbel anmälan](https://experienceleague.adobe.com/sv/docs/campaign-classic/using/designing-content/web-forms/use-cases-web-forms){target=_blank}.
-* Importera inte bedrägliga listor och använd dirigerade adresser för att kontrollera att din klientfil inte används bedrägligt. Mer information om det här finns i [Om dirigerade adresser](https://experienceleague.adobe.com/sv/docs/campaign-classic/using/sending-messages/using-seed-addresses/about-seed-addresses){target=_blank}.
+* Låt alltid mottagarna godkänna att ta emot meddelanden. För att göra detta ska du fortsätt respektera förfrågningar om borttagning så snabbt som möjligt och verifiera medgivande genom en dubbel anmälningsprocess. Mer information om det här finns i [Skapa ett prenumerationsformulär med dubbel anmälan](https://experienceleague.adobe.com/en/docs/campaign-classic/using/designing-content/web-forms/use-cases-web-forms){target=_blank}.
+* Importera inte bedrägliga listor och använd dirigerade adresser för att kontrollera att din klientfil inte används bedrägligt. Mer information om det här finns i [Om dirigerade adresser](https://experienceleague.adobe.com/en/docs/campaign-classic/using/sending-messages/using-seed-addresses/about-seed-addresses){target=_blank}.
 * Genom medgivande och behörighetshantering kan du spåra mottagarnas preferenser och hantera vem inom organisationen som har tillgång till vilka data. Mer information finns i [det här avsnittet](#consent).
 * Underlätta och hantera förfrågningar om användarens information från era mottagare. Mer information finns i [det här avsnittet](#privacy-requests).
 
@@ -151,7 +147,7 @@ Adobe Campaign erbjuder viktiga funktioner som är grundläggande för integrite
 
 * **Medgivandehantering**: genom prenumerationshantering kan du hantera mottagarnas preferenser och spåra vilka mottagare som har valt att anmäla sig till vilka typer av prenumerationer. Mer information om det här finns i [Om prenumerationer](../../automation/workflow/subscription-services.md).
 * **Datalagring**: alla inbyggda standardiserade loggtabeller har förinställda lagringsperioder vilket i allmänhet begränsar datalagringen till 6 månader eller mindre. Ytterligare lagringsperioder kan ställas in med arbetsflöden. Kontakta Adobes konsulter eller teknikadministratörer för mer information om detta.
-* **Hantering av rättigheter**: Adobe Campaign ger dig möjligheten att hantera de rättigheter som tilldelats olika operatörer i Campaign via olika färdiga eller anpassade roller. Det här låter dig hantera vilka inom företaget som kan få åtkomst till, ändra eller exportera olika typer av data. Se [Om åtkomsthantering](https://experienceleague.adobe.com/sv/docs/campaign-classic/using/installing-campaign-classic/security-privacy/access-management){target=_blank} för mer information.
+* **Hantering av rättigheter**: Adobe Campaign ger dig möjligheten att hantera de rättigheter som tilldelats olika operatörer i Campaign via olika färdiga eller anpassade roller. Det här låter dig hantera vilka inom företaget som kan få åtkomst till, ändra eller exportera olika typer av data. Se [Om åtkomsthantering](https://experienceleague.adobe.com/en/docs/campaign-classic/using/installing-campaign-classic/security-privacy/access-management){target=_blank} för mer information.
 
 ### Förfrågningar om användarens information {#privacy-requests}
 
@@ -174,7 +170,7 @@ Tack vare spårningsfunktionerna i Adobe Campaign kan du spåra vad leveransmott
 * En **sessionscookie**: Cookien **nlid** innehåller identifieraren för e-postmeddelandet som skickas till kontakten (**broadlogId**) och identifieraren för meddelandemallen (**deliveryId**). Den läggs till när kontakten klickar på en URL som ingår i ett e-postmeddelande som skickas av Adobe Campaign och låter dig spåra deras beteende på webben. Denna sessionscookie raderas automatiskt när webbläsaren stängs. Kontakten kan konfigurera sin webbläsare så att den inte tillåter cookies.
 
 * Två **permanenta** cookies:
-   * Cookien **UUID** (Universal Unique IDentifier) delas mellan Adobe Experience Cloud-lösningar. Den ställs in en gång tills den försvinner från klientwebbläsaren när ett nytt värde skapas. Med den här cookien kan du identifiera de användare som interagerar med Experience Cloud-lösningarna när de besöker en webbplats. Den kan ställas in av en landningssida (för att koppla okända kundaktiviteter till en mottagare) eller av en leverans. Beskrivningen av den här cookien finns på [den här sidan](https://experienceleague.adobe.com/docs/core-services/interface/ec-cookies/cookies-mc.html?lang=sv-SE#ec-cookies).
+   * Cookien **UUID** (Universal Unique IDentifier) delas mellan Adobe Experience Cloud-lösningar. Den ställs in en gång tills den försvinner från klientwebbläsaren när ett nytt värde skapas. Med den här cookien kan du identifiera de användare som interagerar med Experience Cloud-lösningarna när de besöker en webbplats. Den kan ställas in av en landningssida (för att koppla okända kundaktiviteter till en mottagare) eller av en leverans. Beskrivningen av den här cookien finns på [den här sidan](https://experienceleague.adobe.com/docs/core-services/interface/ec-cookies/cookies-mc.html#ec-cookies).
    * Cookien **nllastdelid** (som introducerades i Campaign Classic 20.3) är en permanent cookie som innehåller **deliveryId** för den senaste leveransen där användaren klickade på länken. Den här cookien används för att identifiera spårningstabellen som ska användas när sessionscookien saknas.
 
 Föreskrifter som den allmänna dataskyddsförordningen (GDPR) kräver att företag erhåller medgivande från webbplatsanvändare innan de installerar några cookies.
@@ -246,7 +242,7 @@ När du utvecklar i Adobe Campaign (arbetsflöden, Javascript, JSSP osv.) ska du
 * **Validera och sanera indata** - Validera och sanera användarindata i webbprogram och arbetsflödesparametrar för att minska riskerna med inmatning och XSS.
 * **Använd tillåtelselista för SQL** - När SQL- eller skriptkörning krävs använder du tillåtelselista för tillåtna SQL-funktioner och undviker att skapa frågor från användarindata via strängsammanfogning.
 
-Läs mer i [Adobe Campaign Classic v7-dokumentationen](https://experienceleague.adobe.com/docs/campaign-classic/using/installing-campaign-classic/security-privacy/scripting-coding-guidelines.html?lang=sv-SE#installing-campaign-classic){target="_blank"}.
+Läs mer i [Adobe Campaign Classic v7-dokumentationen](https://experienceleague.adobe.com/docs/campaign-classic/using/installing-campaign-classic/security-privacy/scripting-coding-guidelines.html#installing-campaign-classic){target="_blank"}.
 
 
 ## Personalisering
