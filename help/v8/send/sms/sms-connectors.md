@@ -24,7 +24,7 @@ Den äldre SMS-kopplingen är den MTA-baserade SMS-koppling som används i tidig
 
 Mer information om hur du kan dra nytta av v2-anslutningen finns i avsnittet [Aktivering](#activation).
 
-Mer information om den gamla SMS-kopplingskonfigurationen och användningen finns i [Campaign Classic-dokumentationen](https://experienceleague.adobe.com/en/docs/campaign-classic/using/sending-messages/sending-messages-on-mobiles/sms-set-up/sms-set-up){target="_blank"}.
+Mer information om den gamla SMS-kopplingskonfigurationen och användningen finns i [Campaign Classic-dokumentationen](https://experienceleague.adobe.com/sv/docs/campaign-classic/using/sending-messages/sending-messages-on-mobiles/sms-set-up/sms-set-up){target="_blank"}.
 
 ## SMS-anslutning v2 {#sms-connector-v2}
 
