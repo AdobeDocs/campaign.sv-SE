@@ -5,10 +5,10 @@ feature: SMS
 role: User, Developer
 level: Beginner
 exl-id: e2e2922a-2058-4588-b1b5-6997f29ee663
-source-git-commit: 00d9c3229b7bbabfec3b1750ae84978545fdc218
+source-git-commit: e349e9f236c3eeb28ffe96bcc5ec72ab64c4c127
 workflow-type: tm+mt
-source-wordcount: '185'
-ht-degree: 8%
+source-wordcount: '173'
+ht-degree: 10%
 
 ---
 
@@ -23,12 +23,11 @@ Kontrollera SMPP-anslutningen efter konfigurationen och se hur du felsöker den 
 
 * En SMS-leveransmall som är korrekt länkad till det här externa kontot.
 
+Adobe Campaign har stöd för två SMS-anslutningar som används för att skicka SMS-meddelanden till dina kunder. [Läs mer](sms-connectors.md).
 
 >[!NOTE]
 >
 >Du kan också använda Adobe Campaign för att skicka [push-meddelanden](../push.md) och [LINE](../line/line.md) till mobila enheter.
->
-> För kunder som använder den äldre SMS-kopplingen stöds den befintliga implementeringen fortfarande. Vi rekommenderar dock att du flyttar till den nya anslutningen. Kontakta Adobe om du vill gå över.
 
 <table style="table-layout:fixed"><tr style="border: 0;">
 <td>
