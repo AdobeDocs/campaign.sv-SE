@@ -3,9 +3,9 @@ title: Versionsinformation om Campaign v8
 description: Senaste Campaign v8-versionen
 feature: Release Notes
 exl-id: 7cf8111d-9f3a-46a4-813a-d4e43a1d1471
-source-git-commit: 3ce922319646fae03ad7f6757ffdd94804120144
+source-git-commit: 3256a2c57e3ccfec40dde33a2daaccbc3ff57b9b
 workflow-type: tm+mt
-source-wordcount: '1076'
+source-wordcount: '1108'
 ht-degree: 13%
 
 ---
@@ -16,7 +16,7 @@ På den här sidan visas nya funktioner, förbättringar och korrigeringar som i
 
 ## Version 8.9.2 {#release-8-9-2}
 
-_9 mars 2026_
+_11 mars 2026_
 
 >[!CAUTION]
 >
@@ -31,6 +31,8 @@ _9 mars 2026_
 * Ett problem har korrigerats där händelsedatum i transaktionshändelser felaktigt angavs på grund av ett datatypskonverteringsproblem, vilket orsakade felaktiga datum i dynamisk rapportering. (NEO-93923)
 * Ett problem har korrigerats där Android och iOS tyst push-meddelanden misslyckades under leveransförberedelsen när titel- och brödfälten var tomma. (NEO-93739)
 * Ett problem som gjorde att språkfältet inte kunde hämtas för Android-programregistreringstoken har åtgärdats på grund av felaktiga avstämningsnycklar. (NEO-93100)
+* Ett problem där leveransförberedelsen misslyckades vid tillämpning av anpassade typologiregler med tryckregler har korrigerats. (NEO-94457)
+* Korrigerade ett problem där klientkonsolen kunde råka ut för HTTP-begärandebearbetningsfel. (NEO-94071)
 
 ## Version 8.9.1 {#release-8-9-1}
 
@@ -46,14 +48,14 @@ Den **nya SMS-sändningsanslutningen** är nu tillgänglig för alla kunder (GA)
 
 Den här versionen innehåller en uppsättning funktioner som är tillgängliga med användargränssnittet för Campaign-webben:
 
-* [Funktioner för flerspråkig leverans (GA)](https://experienceleague.adobe.com/docs/campaign-web/v8/msg/multilingual.html?lang=sv-SE){target="_blank"}
-* [Profilberikning i transaktionsmeddelanden (GA)](https://experienceleague.adobe.com/docs/campaign-web/v8/msg/transactional-messages/profile-enrichment.html?lang=sv-SE){target="_blank"}
-* [Adobe Experience Manager live- och språkversioner](https://experienceleague.adobe.com/docs/campaign-web/v8/integrations/aem-multilingual.html?lang=sv-SE){target="_blank"}
-* [Innehållsexperiment - A/B-testning](https://experienceleague.adobe.com/docs/campaign-web/v8/msg/email/ab-testing.html?lang=sv-SE){target="_blank"}
-* [Kontinuerlig leveransaktivitet](https://experienceleague.adobe.com/docs/campaign-web/v8/wf/design-workflows/continuous-delivery.html?lang=sv-SE){target="_blank"}
-* [Hantering av kampanjgodkännande](https://experienceleague.adobe.com/docs/campaign-web/v8/campaigns/campaign-approvals.html?lang=sv-SE){target="_blank"}
+* [Funktioner för flerspråkig leverans (GA)](https://experienceleague.adobe.com/docs/campaign-web/v8/msg/multilingual.html){target="_blank"}
+* [Profilberikning i transaktionsmeddelanden (GA)](https://experienceleague.adobe.com/docs/campaign-web/v8/msg/transactional-messages/profile-enrichment.html){target="_blank"}
+* [Adobe Experience Manager live- och språkversioner](https://experienceleague.adobe.com/docs/campaign-web/v8/integrations/aem-multilingual.html){target="_blank"}
+* [Innehållsexperiment - A/B-testning](https://experienceleague.adobe.com/docs/campaign-web/v8/msg/email/ab-testing.html){target="_blank"}
+* [Kontinuerlig leveransaktivitet](https://experienceleague.adobe.com/docs/campaign-web/v8/wf/design-workflows/continuous-delivery.html){target="_blank"}
+* [Hantering av kampanjgodkännande](https://experienceleague.adobe.com/docs/campaign-web/v8/campaigns/campaign-approvals.html){target="_blank"}
 
-Se versionsinformationen för Campaign Web UI [&#128279;](https://experienceleague.adobe.com/docs/campaign-web/v8/release-notes/release-notes.html?lang=sv-SE){target="_blank"}
+Se versionsinformationen för Campaign Web UI [](https://experienceleague.adobe.com/docs/campaign-web/v8/release-notes/release-notes.html){target="_blank"}
 
 ### Säkerhetsförbättringar {#security-8-9-1}
 
