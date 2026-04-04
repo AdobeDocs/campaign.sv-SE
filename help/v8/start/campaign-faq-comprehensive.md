@@ -1837,7 +1837,7 @@ Få hjälp av Adobe supportteam och hantera instansen.
 * **[Adobe Admin Console](https://adminconsole.adobe.com/){target="_blank"}** - Logga supportärenden och hantera användare
 * **[Adobe kundtjänst](https://helpx.adobe.com/se/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html){target="_blank"}** - Kontakta supportteamet
 * **[Kontrollpanelen](https://experienceleague.adobe.com/docs/control-panel/using/control-panel-home.html?lang=sv){target="_blank"}** - Hantera inställningarna för Campaign-instansen
-* **[Systemstatus](https://status.adobe.com/){target="_blank"}** - Kontrollera status för Adobe-tjänster
+* **[Systemstatus](https://status.adobe.com/sv-se/){target="_blank"}** - Kontrollera status för Adobe-tjänster
 
 ### Utbildning och certifiering
 
