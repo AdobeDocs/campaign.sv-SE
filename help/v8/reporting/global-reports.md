@@ -49,9 +49,9 @@ Du kan konfigurera de värden som visas genom att ändra tidsskalan: 1-timmars v
 
 >[!NOTE]
 >
->Du kan också övervaka antalet leveranser som skickas per timme med [Kontrollpanelen](https://experienceleague.adobe.com/docs/control-panel/using/sftp-management/sftp-storage-management.html){target="_blank"}.
+>Du kan också övervaka antalet leveranser som skickas per timme med [Kontrollpanelen](https://experienceleague.adobe.com/docs/control-panel/using/sftp-management/sftp-storage-management.html?lang=sv-SE){target="_blank"}.
 >
->Kontrollpanelen är tillgänglig för alla administratörsanvändare. Anvisningar om hur du beviljar administratörsåtkomst till en användare finns på [den här sidan](https://experienceleague.adobe.com/docs/control-panel/using/discover-control-panel/managing-permissions.html#discover-control-panel){target="_blank"}.
+>Kontrollpanelen är tillgänglig för alla administratörsanvändare. Anvisningar om hur du beviljar administratörsåtkomst till en användare finns på [den här sidan](https://experienceleague.adobe.com/docs/control-panel/using/discover-control-panel/managing-permissions.html?lang=sv-SE#discover-control-panel){target="_blank"}.
 >
 
 ## Användaraktiviteter {#user-activities}

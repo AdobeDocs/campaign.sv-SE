@@ -180,13 +180,13 @@ Creating hypotheses is detailed in [this page](../../campaign/using/about-respon
 
 Du kan nu godkänna och aktivera erbjudandet så att det blir tillgängligt i **Live** -miljön.
 
-Mer information finns i [Campaign Classic v7-dokumentationen](https://experienceleague.adobe.com/docs/campaign-classic/using/managing-offers/managing-an-offer-catalog/approving-and-activating-an-offer.html#approving-offer-content){target="_blank"}.
+Mer information finns i [Campaign Classic v7-dokumentationen](https://experienceleague.adobe.com/docs/campaign-classic/using/managing-offers/managing-an-offer-catalog/approving-and-activating-an-offer.html?lang=sv-SE#approving-offer-content){target="_blank"}.
 
 ## Hantera presentation av erbjudanden{#offer-presentation}
 
 Med Campaign kan ni styra flödet av erbjudandeförslag med hjälp av presentationsregler. Dessa regler, som är specifika för Campaign Interaction, är **typologiregler**. Med dem kan du utesluta erbjudanden baserat på historiken för de förslag som redan har lämnats till en mottagare. De refereras i miljön.
 
-Mer information finns i [Campaign Classic v7-dokumentationen](https://experienceleague.adobe.com/docs/campaign-classic/using/managing-offers/managing-an-offer-catalog/managing-offer-presentation.html#managing-offers){target="_blank"}.
+Mer information finns i [Campaign Classic v7-dokumentationen](https://experienceleague.adobe.com/docs/campaign-classic/using/managing-offers/managing-an-offer-catalog/managing-offer-presentation.html?lang=sv-SE#managing-offers){target="_blank"}.
 
 ## Simulering av erbjudanden
 
@@ -194,4 +194,4 @@ Med modulen **Simulering** kan du testa distributionen av erbjudanden som tillh�
 
 Simuleringen tar hänsyn till de kontexter och regler för behörighet som tidigare tillämpats på erbjudanden och deras presentationsregler. Detta gör att ni kan testa och förfina olika versioner av ert erbjudande utan att faktiskt använda ett erbjudande eller över/under beställning av ett mål, eftersom simuleringen inte har någon effekt på de avsedda mottagarna.
 
-Mer information om erbjudandesimulering finns i [Campaign Classic v7-dokumentationen](https://experienceleague.adobe.com/docs/campaign-classic/using/managing-offers/simulating-offers/about-offers-simulation.html){target="_blank"}.
+Mer information om erbjudandesimulering finns i [Campaign Classic v7-dokumentationen](https://experienceleague.adobe.com/docs/campaign-classic/using/managing-offers/simulating-offers/about-offers-simulation.html?lang=sv-SE){target="_blank"}.

@@ -16,7 +16,7 @@ ht-degree: 0%
 # Skyddsförordningen för personuppgifter{#general-data-protection-regulation-gdpr}
 
 
-Arbetsflödena som beskrivs nedan installeras som standard med modulen **Sekretessdataskydd** . Mer information om den här modulen finns i [artikeln](https://helpx.adobe.com/campaign/kb/acc-privacy.html).
+Arbetsflödena som beskrivs nedan installeras som standard med modulen **Sekretessdataskydd** . Mer information om den här modulen finns i [artikeln](https://helpx.adobe.com/se/campaign/kb/acc-privacy.html).
 
 <table> 
  <tbody> 
