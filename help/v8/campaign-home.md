@@ -1,12 +1,12 @@
 ---
-keywords: Campaign Classic, starstida, populära ämnen
+keywords: Campaign Classic;home;populära topics
 description: Hitta hjälp i hjälpcentret för Adobe Campaign v8. Läs mer om nyheter, förbättringar och korrigeringar i Campaign v8.
 title: Adobe Campaign v8 - produktdokumentation
 exl-id: 6010b0f7-baf0-43ba-af9a-b8864f3897ea,9ff16fb1-d3d3-44fe-9016-15abffdbc74e
-source-git-commit: e349e9f236c3eeb28ffe96bcc5ec72ab64c4c127
+source-git-commit: a5436f7e1f1e4ad86157dfd8943d51bf852b747c
 workflow-type: tm+mt
 source-wordcount: '298'
-ht-degree: 16%
+ht-degree: 0%
 
 ---
 
@@ -14,7 +14,7 @@ ht-degree: 16%
 
 ## Nyheter
 
-Få en glimt av de senaste förbättringarna i produkten och dokumentationen för Adobe Campaign v8 (kundkonsol)! En omfattande lista över funktioner, förbättringar och korrigeringar finns i [versionsinformationen](start/release-notes.md). Håll dig uppdaterad om de senaste ändringarna i vår dokumentation genom att gå till sidan [dokumentationsuppdateringar](start/documentation-updates.md).
+Få en glimt av de senaste förbättringarna i produkten och dokumentationen för Adobe Campaign v8 (kundkonsol)! En omfattande lista med funktioner, förbättringar och korrigeringar finns i den detaljerade [versionsinformationen](start/release-notes.md). Håll dig uppdaterad om de senaste ändringarna i vår dokumentation genom att gå till sidan [dokumentationsuppdateringar](start/documentation-updates.md).
 
 >[!BEGINTABS]
 
@@ -22,17 +22,17 @@ Få en glimt av de senaste förbättringarna i produkten och dokumentationen fö
 
 Den senaste versionen av Adobe Campaign finns nu att köpa. Läs versionsinformationen för mer information.
 
-[![Bild](assets/do-not-localize/learn-more-button.svg)](start/release-notes.md)
+[![bild](assets/do-not-localize/learn-more-button.svg)](start/release-notes.md)
 
 
 >[!TAB Nytt webbanvändargränssnitt för kampanj]
 
 Upplev nya Adobe Campaign användargränssnitt. Modern, intuitiv och dynamisk!
 
-[![Bild](assets/do-not-localize/learn-more-button.svg)](start/campaign-ui.md#ac-web-ui)
+[![bild](assets/do-not-localize/learn-more-button.svg)](start/campaign-ui.md#ac-web-ui)
 
 <!--
->[!TAB Push channel upcoming changes] 
+>[!TAB Push channel upcoming changes]
 
 Some important changes to the Android Firebase Cloud Messaging (FCM) service will be released in 2024, and may impact your Adobe Campaign implementation. Your subscription services configuration for Android push messages may need to be updated to support this change. You can already check and take action.
 
@@ -112,5 +112,5 @@ Some important changes to the Android Firebase Cloud Messaging (FCM) service wil
 
 ## Ytterligare resurser
 
-[Produktbeskrivning för Adobe Campaign v8](https://helpx.adobe.com/se/legal/product-descriptions/adobe-campaign-managed-cloud-services.html){target="_blank"} - [Dokumentation för Adobe Campaign webbgränssnitt](https://experienceleague.adobe.com/docs/campaign-web/v8/campaign-web-home.html?lang=sv-SE){target="_blank"} - [Självstudiekurser](https://experienceleague.adobe.com/docs/campaign-learn/tutorials/overview.html?lang=sv-SE){target="_blank"} - [[!DNL Adobe Campaign] automatiseringsguide](https://experienceleague.adobe.com/docs/campaign/automation/home.html?lang=sv-SE){target="_blank"} - [Kontrollpanelen för Campaign v8](https://experienceleague.adobe.com/docs/control-panel/using/discover-control-panel/key-features.html?lang=sv){target="_blank"}
+[Produktbeskrivning för Adobe Campaign v8](https://helpx.adobe.com/legal/product-descriptions/adobe-campaign-managed-cloud-services.html){target="_blank"} - [Dokumentation för Adobe Campaign webbgränssnitt](https://experienceleague.adobe.com/docs/campaign-web/v8/campaign-web-home.html){target="_blank"} - [Självstudiekurser](https://experienceleague.adobe.com/docs/campaign-learn/tutorials/overview.html){target="_blank"} - [[!DNL Adobe Campaign] automatiseringsguide](https://experienceleague.adobe.com/docs/campaign/automation/home.html){target="_blank"} - [Kontrollpanelen för Campaign v8](https://experienceleague.adobe.com/docs/control-panel/using/discover-control-panel/key-features.html){target="_blank"}
 

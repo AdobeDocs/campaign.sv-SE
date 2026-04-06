@@ -7,10 +7,10 @@ topic-tags: campaign-standard-apis
 role: Developer
 level: Experienced
 exl-id: 58ec0999-b28a-4198-8d57-729b074c6a6d
-source-git-commit: 00d9c3229b7bbabfec3b1750ae84978545fdc218
+source-git-commit: a5436f7e1f1e4ad86157dfd8943d51bf852b747c
 workflow-type: tm+mt
 source-wordcount: '227'
-ht-degree: 1%
+ht-degree: 0%
 
 ---
 
@@ -36,8 +36,10 @@ Om &quot;type&quot; har slutförts med värdet &quot;enumeration&quot; läggs et
 * Noden **Filter** returnerar URL:en för att hämta associerade filter. Mer information om filter finns i [det här avsnittet](sorting.md#filtering).
 
 <!-- créer une section au même niveau sur les liens -->
-<!-- dans l'exemple: birthdate, email +  mettre 2 liens : un de type 1-1 , 1-N
-si on prend l'exemple de l'org unit, on aura un bon exemple lien -->
+<!--
+dans l'exemple: birthdate, email +  mettre 2 liens : un de type 1-1 , 1-N
+si on prend l'exemple de l'org unit, on aura un bon exemple lien
+-->
 <!-- plus reparler du node Data -->
 
 <br/>

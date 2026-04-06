@@ -4,10 +4,10 @@ title: Använd typologiregler
 description: Lär dig hur du använder typologiregler
 feature: Typology Rules
 exl-id: 4ec3bbe1-fc4c-4b1e-989c-f4dcf8ee8d5e
-source-git-commit: 95c944963feee746a2bb83a85f075134c91059d1
+source-git-commit: a5436f7e1f1e4ad86157dfd8943d51bf852b747c
 workflow-type: tm+mt
 source-wordcount: '955'
-ht-degree: 7%
+ht-degree: 0%
 
 ---
 
@@ -60,7 +60,7 @@ Godkännanden verkställs automatiskt varje kväll via databasrensningsarbetsfl�
 
 I vissa beräkningar används värden som inte ändras dagligen. Det skulle därför vara irrelevant att omberäkna data varje dag och överlagra databasen helt utan någonting. Om en process till exempel förbättrar marknadsföringsdatabasen med kundbenägenhetspoäng och inköpsinformation varje vecka, behöver data som baseras på dessa värden inte beräknas om varje dag.
 
-För att göra detta kan du i fältet **[!UICONTROL Frequency]** på fliken **[!UICONTROL General]** definiera en maximal period under vilken mål sparas. Som standard anger värdet **&#x200B;**&#x200B;att beräkningen är giltig tills nästa gång den dagliga omskiljningen utförs.
+För att göra detta kan du i fältet **[!UICONTROL Frequency]** på fliken **[!UICONTROL General]** definiera en maximal period under vilken mål sparas. Som standard anger värdet **** att beräkningen är giltig tills nästa gång den dagliga omskiljningen utförs.
 
 Om du vill spara resultaten efter den här perioden anger du ett värde som är större än 12 i fältet **[!UICONTROL Frequency]**: när den här perioden har gått ut tillämpas alla regler igen.
 
@@ -74,7 +74,7 @@ Typologiregler tillämpas i en viss sekvens under målgrupps-, analys- och perso
 
 I standarddriftsläget används reglerna i följande sekvens:
 
-1. Kontrollregler, om de tillämpas i början av målinriktningen.
+1. Kontrollregler, om de tillämpas i början av målanpassningen.
 1. Filtreringsregler:
 
    * Interna ansökningsregler för adresskvalifikation: definierad adress/ej verifierad adress/adress på blockeringslista/i karantän adress/adresskvalitet.
@@ -134,7 +134,8 @@ Du kan använda fältet **[!UICONTROL Managing affinities with IP addresses]** f
 >Tillhörighetshantering gäller inte för **[!UICONTROL Filtering]**-typologier.
 
 <!--
->Affinities are defined in the instance configuration file, on the Adobe Campaign server. For more on this, refer to [this section](../../installation/using/about-initial-configuration.md).-->
+>Affinities are defined in the instance configuration file, on the Adobe Campaign server. For more on this, refer to [this section](../../installation/using/about-initial-configuration.md).
+-->
 
 ### Kampanjoptimering och distribuerad marknadsföring {#campaign-optimization-and-distributed-marketing}
 

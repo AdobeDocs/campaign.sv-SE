@@ -5,10 +5,10 @@ feature: Transactional Messaging
 role: User
 level: Beginner, Intermediate
 exl-id: 084607f6-47d8-40c0-89ba-bfbb88fc2e53
-source-git-commit: c044b391c900e8ff82147f2682e2e4f91845780c
+source-git-commit: a5436f7e1f1e4ad86157dfd8943d51bf852b747c
 workflow-type: tm+mt
 source-wordcount: '778'
-ht-degree: 1%
+ht-degree: 0%
 
 ---
 
@@ -37,7 +37,8 @@ Transaktionsleveranser som skickas från körningsinstansen synkroniseras tillba
 >Leveranserna varje vecka samlar ihop händelserna baserat på den senaste händelseuppdateringen, och inte på datumet då händelsen skapades. När du extraherar leveransloggar för transaktionsmeddelanden från kontrollinstansen kan det leverans-ID som är kopplat till varje leveranslogg-ID därför ändras över tiden när loggen uppdateras (till exempel när en inkommande avhoppning tas emot för händelsen).
 
 <!--
-To monitor the activity and running of the execution instance(s), see [Transactional messaging reports](transactional-messaging-reports.md).-->
+To monitor the activity and running of the execution instance(s), see [Transactional messaging reports](transactional-messaging-reports.md).
+-->
 
 ## Rapportering{#reporting-transactional-msg}
 
@@ -56,7 +57,7 @@ När rapporten öppnas sammanfaller den information som visas som standard med h
 Du kan visa data som är specifika för varje händelsetyp, per tidsperiod. Kolumnen **[!UICONTROL Events]** motsvarar antalet händelser som tas emot per kontrollinstans. Antalet händelser som omvandlats till personaliserade transaktionsmeddelanden beskrivs i kolumnen **[!UICONTROL Sent]**.
 
 
-### Bearbetningstid för meddelandecentret {#processing-time}
+### Bearbetningstid för meddelandecenter {#processing-time}
 
 Rapporten **[!UICONTROL Message Center processing time]** visar de viktigaste indikatorerna för realtidskön. Den här rapporten kan också nås via fliken **[!UICONTROL Monitoring]** i kontrollinstansen.
 
@@ -79,7 +80,7 @@ Indikatorerna som visas i avsnittet **[!UICONTROL Indicators over the period]** 
 
 
 
-### Tjänstenivå för meddelandecentret {#service-level}
+### Tjänstnivå för meddelandecenter {#service-level}
 
 Rapporten **[!UICONTROL Message Center service level]** visar leveransstatistik för transaktionsmeddelanden samt felen. Du kan klicka på en feltyp för att visa information om den.
 
@@ -100,7 +101,7 @@ Indikatorerna som visas i avsnittet **[!UICONTROL Indicators over the period]** 
 >
 >Tröskelvärdena för varningsmeddelanden (orange) och varningsmeddelanden (röda) kan konfigureras i Adobe Campaign distributionsguide. Se [Skärmtröskelvärden](#thresholds).
 
-### Övervaka gränsvärden {#thresholds}
+### Skärmtrösklar {#thresholds}
 
 Du kan konfigurera varningströskeln (orange) och aviseringströskeln (rött) för indikatorerna som visas i **meddelandecentrets servicenivå** och **meddelandecentrets behandlingstid** rapporter.
 

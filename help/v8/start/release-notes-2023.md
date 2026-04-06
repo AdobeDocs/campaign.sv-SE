@@ -5,10 +5,10 @@ feature: Release Notes
 role: User
 level: Beginner
 exl-id: b860c843-155e-4abb-bdd6-b68dc7eaa0ee
-source-git-commit: b52308bcbe68a7c382918fe28f8166e3bfcb6cde
+source-git-commit: a5436f7e1f1e4ad86157dfd8943d51bf852b747c
 workflow-type: tm+mt
-source-wordcount: '1518'
-ht-degree: 21%
+source-wordcount: '1516'
+ht-degree: 0%
 
 ---
 
@@ -24,7 +24,7 @@ Installera [den senaste utgåvan](release-notes.md) för alla nya implementering
 **På den här sidan**
 
 * Campaign v8.5 - [Version 8.5.1](#release-8-5-1) | [Version 8.5.2](#release-8-5-2)
-* Campaign v8.4 - [Version 8.4.3](#release-8-4-3) | [Version 8.4.4 &#x200B;](#release-8-4-4) | [Version 8.4.5](#release-8-4-5)
+* Campaign v8.4 - [Version 8.4.3](#release-8-4-3) | [Version 8.4.4](#release-8-4-4) | [Version 8.4.5](#release-8-4-5)
 
 >[!ENDSHADEBOX]
 
@@ -78,8 +78,8 @@ Mer information finns i den [detaljerade dokumentationen](../send/push-data-coll
 
 **Säkerhetsförbättringar**
 
-* Med Campaign v8.5.1 har autentiseringsprocessen till Campaign v8 förbättrats och säkrats. Tekniska operatörer måste nu använda Adobe Identity Management System (IMS) för att ansluta till Campaign. Lär dig hur du migrerar dina befintliga tekniska konton i [det här tekniska dokumentet](../../technotes/upgrades/ims-migration.md).
-* Med början från kommande v8.6 får du inte längre skapa operatorer från Campaign-klientkonsolen. Om du använder inbyggd autentisering för inloggning/lösenord måste du migrera dina operatorer till Adobe Identity Management System (IMS). Läs om hur du migrerar dina operatörer i [det här tekniska dokumentet](../../technotes/upgrades/migrate-users-to-ims.md).
+* Med Campaign v8.5.1 har autentiseringsprocessen till Campaign v8 förbättrats och säkrats. Tekniska operatörer måste nu använda Adobe Identity Management System (IMS) för att ansluta till Campaign. Lär dig hur du migrerar dina befintliga tekniska konton i [den här tekniken](../../technotes/upgrades/ims-migration.md).
+* Med början från kommande v8.6 får du inte längre skapa operatorer från Campaign-klientkonsolen. Om du använder inbyggd autentisering för inloggning/lösenord måste du migrera dina operatorer till Adobe Identity Management System (IMS). Lär dig hur du migrerar dina operatorer i [den här tekniken](../../technotes/upgrades/migrate-users-to-ims.md).
 * Flera tredjepartsverktyg har uppdaterats för att optimera säkerheten.
 
 **Kompatibilitetsuppdateringar**
@@ -93,15 +93,15 @@ Mer information finns i den [detaljerade dokumentationen](../send/push-data-coll
 * Korrigerade ett problem som kunde leda till att specialtecken i HTML-innehållet i en leverans kodades felaktigt i flera webbläsare. (NEO-60081)
 * Ett problem som kunde förhindra dig från att spara en rapport för en Campaign v8 Enterprise-distribution (FFDA) har åtgärdats. (NEO-56836)
 * Ett problem har korrigerats när data infogades eller uppdaterades i ett anpassat FFDA-schema via en aktivitet i arbetsflödet Uppdatera data. (NEO-54708)
-* Ett problem som gjorde att det inte gick att ta bort adresser i tabellen nms:address i FFDA i databasrensningsarbetsflödet har åtgärdats. (NEO-54460)
+* Ett problem som gjorde att det inte gick att ta bort adresser i tabellen nms:address i FFDA i databasrensningsarbetsflödet har åtgärdats. (NEO-5460)
 * Ett problem med faktureringsarbetsflödet som kunde misslyckas med felet &quot;Kompileringsminnet är slut&quot; har åtgärdats. (NEO-51137)
 * Ett problem som kunde förhindra GPG-dekrypteringen från att fungera korrekt i arbetsflödesaktiviteten för datainläsning (fil) har åtgärdats. (NEO-50257)
-* Korrigerade ett problem som förhindrade funktionen `JSPContext.sqlExecWithOneParam` från att arbeta. (NEO-50066)
-* Korrigerade ett problem som ledde till leveransfel när icke-utskrivbara tecken användes i anpassningsfält. (NEO-48588)
+* Ett problem som gjorde att funktionen `JSPContext.sqlExecWithOneParam` inte fungerade har korrigerats. (NEO-50066)
+* Korrigerade ett problem som ledde till leveransfel när icke-utskrivbara tecken användes i anpassningsfält. (NEO-4858)
 * Ett problem som kunde orsaka leveransfel vid infogning av dynamiska Adobe Target-bilder har åtgärdats. (NEO-62689)
-* Korrigerade ett problem som förhindrar att webbläsare lägger till extra mellanslag när villkorsstyrt innehåll används i en leverans. (NEO-62132)
-* Korrigerade ett problem som gjorde att ett popup-fönster öppnades när du klickade på en bild i e-postredigeraren. (NEO-60752)
-* Korrigerade ett problem som kan leda till ett fel och förhindra att du skrollar när du redigerar innehållet i en leverans. (NEO-61364)
+* Ett problem har korrigerats som förhindrar att webbläsare lägger till extra mellanslag när villkorsstyrt innehåll används i en leverans. (NEO-62132)
+* Ett problem som gjorde att ett popup-fönster öppnades när du klickade på en bild i e-postredigeraren har åtgärdats. (NEO-60752)
+* Korrigerade ett problem som kan leda till ett fel och förhindra att du rullar när du redigerar innehållet i en leverans. (NEO-61364)
 * Adobe Analytics Connector exporterar nu mätvärden med rätt kanaltyp. Den har tidigare alltid angetts som en e-postkanal. (NEO-26340)
 * Korrigerade ett problem som kunde leda till fel när Big Query-kopplingen användes med datetime-fält. (NEO-49768)
 
@@ -130,7 +130,7 @@ _8 mars 2023_
 
 **Korrigeringar**
 
-* Korrigerade ett problem som kunde förhindra dig från att skrolla i fliken **Redigera** i Redigeraren för digitalt innehåll (DCE). (NEO-54474)
+* Ett problem som kunde förhindra dig från att rulla på fliken **Redigera** i DCE (Digital Content Editor) har åtgärdats. (NEO-5474)
 * Ett fel som kan leda till att webbservern kraschar har åtgärdats under replikeringen. (NEO-53670)
 
 
@@ -151,16 +151,18 @@ _27 januari 2023_
 * Hanteringen av konsoliderade spårningsdata har förbättrats i FFDA-tabellen **[!UICONTROL Consolidated tracking]** (nms:trackingStats) för att undvika dubbletter. (NEO-46409)
 * Korrigerade ett problem med en logisk operator i arbetsflödesfrågor när en `enableIf` användes i ett logiskt operatorvillkor. Det föregående logiska villkoret skrevs över. (NEO-45815) <!--OKKKK-->
 * Genereringen av aktiva profiler har optimerats i faktureringsarbetsflödet för att förbättra prestandan. (NEO-47658) <!--OKKKK-->
-* Korrigerade ett problem med import av HTML-fil när bildnoder (img) innehöll URL:er med personaliseringsfält. (NEO-48396)
+* Korrigerade ett problem med HTML-filimport när bildnoder (img) innehöll URL:er med anpassningsfält. (NEO-48396)
 * Korrigerade ett problem med Snowflake (alla distributioner) när sorteringsparametern användes i en **delad** arbetsflödesaktivitet. (NEO-45899) <!--OKKKK-->
-* Korrigerade ett problem som orsakade ett fel när en användare med läsbehörighet i mappen nmsDeliveryMapping försökte köra en kampanj eller ett arbetsflöde. (NEO-48230)
-* Korrigerade ett prestandaproblem på fliken HTML för en leverans som kan uppstå för stor HTML-kod. (NEO-47440)
-<!-- * Fixed an issue which could lead to a "Character set mismatch" error when using certain functions such as `to_nclob` with an Oracle unicode database where NChar was not enabled. (NEO-49361)
-* Fixed an issue which prevented users from inserting a Time datatype in a **Data Update** workflow activity on MSSQL. (NEO-47763)-->
-* Ett problem som gjorde att användare inte kunde använda arbetsflödesalternativet **Sammanfoga markerade rader** har korrigerats. (NEO-48488)
+* Ett problem som orsakade ett fel när en användare med läsbehörighet i mappen nmsDeliveryMapping försökte köra en kampanj eller ett arbetsflöde har åtgärdats. (NEO-48 230)
+* Korrigerade ett prestandaproblem på fliken HTML för en leverans som kan inträffa för stor HTML-kod. (NEO-4740)
+<!--
+ * Fixed an issue which could lead to a "Character set mismatch" error when using certain functions such as `to_nclob` with an Oracle unicode database where NChar was not enabled. (NEO-49361)
+* Fixed an issue which prevented users from inserting a Time datatype in a **Data Update** workflow activity on MSSQL. (NEO-47763)
+-->
+* Ett problem som gjorde att användare inte kunde använda arbetsflödesalternativet **Sammanfoga markerade rader** har korrigerats. (NEO-4848)
 * Korrigerade ett problem med Snowflake FDA-anslutningen som ledde till att poster utelämnades när alternativet &quot;0 eller 1 enkel kardinalitetsanslutning&quot; användes under anrikningen. (NEO-48737)
 * Återstående referenser till log4j-biblioteket har tagits bort från Campaign-installationen i Windows. (NEO-44851)
-* Korrigerade ett problem som kan leda till ett fel när indikatorn **Mottagare som har öppnat** (estimatedRecipientOpen) lades till i ytterligare data för arbetsflödesaktiviteten **Fråga**. (NEO-46665)
+* Korrigerade ett problem som kunde leda till ett fel när **Mottagare som har öppnat**-indikatorn (stimedRecipientOpen) lades till i ytterligare data för en **Query** -arbetsflödesaktivitet. (NEO-4665)
 * Hanteringen av spårnings-URL:er har förbättrats i arbetsflöden med flera leveranser för att förbättra prestandan. (NEO-50894) <!--OKKKK-->
 * Korrigerade ett problem som kunde göra så att replikering av scheman som använder Xtkfolder misslyckades. (NEO-46787) <!--OKKKK-->
-* Korrigerat en felorsak som kan göra att den anpassade kolumnen&quot;lastModified&quot; tas bort i NmsSubscription-tabellen. (NEO-48402)
+* Korrigerat en felorsak som kan göra att den anpassade kolumnen&quot;lastModified&quot; tas bort i NmsSubscription-tabellen. (NEO-4840)

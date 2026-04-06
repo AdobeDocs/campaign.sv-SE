@@ -6,10 +6,10 @@ role: User
 level: Beginner, Intermediate
 version: Campaign v8, Campaign Classic v7
 exl-id: 3b15eb3e-8625-4049-bf0d-327407ae5ea6
-source-git-commit: a2efad26232cd380eea850a589b22b23928253e8
+source-git-commit: a5436f7e1f1e4ad86157dfd8943d51bf852b747c
 workflow-type: tm+mt
 source-wordcount: '170'
-ht-degree: 2%
+ht-degree: 0%
 
 ---
 
@@ -23,8 +23,10 @@ Följ stegen nedan för att skapa en ny SMS-leverans:
 
    Stegen för att skapa leveranser beskrivs på [den här sidan](../../start/create-message.md).
 
-<!-- * For standalone instance,  [learn more here](sms-standalone-instance.md#sms-delivery-template).
-* For mid-sourcing infrastructure, -->
+<!--
+ * For standalone instance,  [learn more here](sms-standalone-instance.md#sms-delivery-template).
+* For mid-sourcing infrastructure,
+-->
 
 1. Byt namn på leveransen i fältet **[!UICONTROL Label]** och lägg till information i fältet **[!UICONTROL Delivery code]** och listan **[!UICONTROL Nature]** om det behövs för spårningen. Du kan också lägga till en **[!UICONTROL Description]** i leveransen.
 

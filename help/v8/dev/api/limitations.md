@@ -8,10 +8,10 @@ role: Developer
 level: Experienced
 mini-toc-levels: 1
 exl-id: 45acebb1-9325-4e26-8fe9-cc73f745d801
-source-git-commit: 00d9c3229b7bbabfec3b1750ae84978545fdc218
+source-git-commit: a5436f7e1f1e4ad86157dfd8943d51bf852b747c
 workflow-type: tm+mt
 source-wordcount: '1046'
-ht-degree: 1%
+ht-degree: 0%
 
 ---
 
@@ -48,9 +48,9 @@ För närvarande är REST API:erna som listas nedan tillgängliga:
 >För närvarande är REST API:t för **transaktionsmeddelanden** inte tillgängligt.
 >
 >REST-API:erna som anges nedan är inaktuella och kan inte användas:
->* Marknadsföringshistorik
+>* Marknadshistorik
 >* Organisationsenheter
->* Integritetshantering
+>* Sekretesshantering
 
 ## Filtrering
 
@@ -128,10 +128,12 @@ Campaign Standard Workflow GET API returnerar parameternamn som arbetsflödesins
 
 Campaign v8 stöder inte variabler för annonsarbetsflödesinstanser, men förväntar sig att utvecklare ska veta vad de är. Efter migreringen måste parameterinformationen i POST-begärandetexten konstrueras utan att parameterinformationen i GET API-svaret är tillgänglig.
 
-<!--## Transactional messages
+<!--
+## Transactional messages
 
 * With Campaign Standard, a POST request returns empty fields for elements and attributes in the request body. With Campaign v8, the response returns values that match the ones in the request body instead.
 
 * When publishing an event configuration, the API preview panel displays the REST URL alongside the request body syntax.
 
-    Since Campaign v8 does not support event configuration fields definition (event creation is just adding a value to eventType enumeration), there is no API preview panel when adding an event type. The REST URL is displayed  in the transactional message user interface once an event transactional message is published.-->
+    Since Campaign v8 does not support event configuration fields definition (event creation is just adding a value to eventType enumeration), there is no API preview panel when adding an event type. The REST URL is displayed  in the transactional message user interface once an event transactional message is published.
+-->

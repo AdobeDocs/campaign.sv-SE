@@ -6,10 +6,10 @@ role: Admin, Developer
 level: Intermediate
 version: Campaign v8, Campaign Classic v7
 exl-id: 1a75f411-3f71-4114-b738-277820dc6138
-source-git-commit: 784c74aaff23dbf1f35c6e8153f90610048e1c07
+source-git-commit: a5436f7e1f1e4ad86157dfd8943d51bf852b747c
 workflow-type: tm+mt
 source-wordcount: '1679'
-ht-degree: 4%
+ht-degree: 0%
 
 ---
 
@@ -19,7 +19,7 @@ Om du vill skicka push-meddelanden med Adobe Campaign måste du först konfigure
 
 >[!CAUTION]
 >
->Vissa viktiga ändringar av tjänsten Android Firebase Cloud Messaging (FCM) kommer att släppas 2024 och kan komma att påverka din Adobe Campaign-implementering. Konfigurationen för prenumerationstjänster för push-meddelanden för Android kan behöva uppdateras för att den här ändringen ska fungera. Du kan redan kontrollera och vidta åtgärder.
+>Vissa viktiga ändringar av tjänsten Android Firebase Cloud Messaging (FCM) kommer att släppas 2024 och kan påverka Adobe Campaign implementering. Din prenumerationstjänstkonfiguration för Android push-meddelanden kan behöva uppdateras för att den här ändringen ska fungera. Du kan redan kontrollera och vidta åtgärder.
 
 Innan du börjar skicka push-meddelanden med Adobe Campaign måste du se till att det finns konfigurationer och integreringar på mobilappen och för taggar i Adobe Experience Platform. Adobe Experience Platform Mobile SDK erbjuder API:er för integrering på klientsidan för mobiler via Android och iOS-kompatibla SDK:er.
 
@@ -29,16 +29,16 @@ Så här konfigurerar du appen med Adobe Experience Platform Mobile SDK:
 1. Ställ in en [mobil taggegenskap](#launch-property) i Adobe Experience Platform Data Collection.
 1. Hämta Adobe Experience Platform Mobile SDK enligt informationen [på den här sidan](https://developer.adobe.com/client-sdks/documentation/getting-started/get-the-sdk/){target="_blank"}.
 1. (valfritt) Aktivera loggnings- och livscykelstatistik, enligt informationen [på den här sidan](https://developer.adobe.com/client-sdks/documentation/getting-started/enable-debug-logging/){target="_blank"}.
-1. (valfritt) Lägg till [Adobe Experience Platform Assurance i din app](https://developer.adobe.com/client-sdks/documentation/getting-started/validate/){target="_blank"} för att validera implementeringen. Lär dig hur du implementerar Adobe Experience Platform Assurance-tillägget [&#x200B; på den här sidan](https://developer.adobe.com/client-sdks/documentation/platform-assurance-sdk/){target="_blank"}.
+1. (valfritt) Lägg till [Adobe Experience Platform Assurance i din app](https://developer.adobe.com/client-sdks/documentation/getting-started/validate/){target="_blank"} för att validera implementeringen. Lär dig hur du implementerar Adobe Experience Platform Assurance-tillägget [ på den här sidan](https://developer.adobe.com/client-sdks/documentation/platform-assurance-sdk/){target="_blank"}.
 1. Konfigurera dina iOS- och Android-mobiltjänster i Adobe Campaign enligt informationen [på den här sidan](#push-service).
 1. Installera och konfigurera [Adobe Campaign Extension](#configure-extension) i din mobila egenskap.
 1. Följ [dokumentationen för Adobe Experience Platform Mobile SDK](https://developer.adobe.com/client-sdks/documentation/getting-started/){target="_blank"} om du vill konfigurera Adobe Experience Platform Mobile SDK:er i din app.
 
-## Förhandskrav {#before-starting}
+## Förutsättningar {#before-starting}
 
 ### Konfigurera behörigheter {#setup-permissions}
 
-Innan du skapar ett mobilprogram måste du kontrollera att du har eller tilldelar rätt användarbehörigheter för taggar i Adobe Experience Platform. Användarbehörigheter för taggar i Adobe Experience Platform tilldelas användare via Adobe Admin Console. Läs mer i [Tagg-dokumentationen](https://experienceleague.adobe.com/docs/experience-platform/tags/admin/user-permissions.html?lang=sv-SE){target="_blank"}.
+Innan du skapar ett mobilprogram måste du kontrollera att du har eller tilldelar rätt användarbehörigheter för taggar i Adobe Experience Platform. Användarbehörigheter för taggar i Adobe Experience Platform tilldelas användare via Adobe Admin Console. Läs mer i [Tagg-dokumentationen](https://experienceleague.adobe.com/docs/experience-platform/tags/admin/user-permissions.html){target="_blank"}.
 
 >[!CAUTION]
 >
@@ -48,8 +48,8 @@ Följ stegen nedan för att tilldela **Egenskap** och **Företag** behörigheter
 
 1. Åtkomst till **[!DNL Admin Console]**.
 1. Välj **[!UICONTROL Products]**-kortet på fliken **[!UICONTROL Adobe Experience Platform Data Collection]**.
-1. Välj en befintlig **[!UICONTROL Product Profile]** eller skapa en ny med knappen **[!UICONTROL New profile]**. Lär dig hur du skapar en ny **[!UICONTROL New profile]** i [Admin Console-dokumentationen](https://experienceleague.adobe.com/docs/experience-platform/access-control/ui/create-profile.html?lang=sv-SE#ui){target="_blank"}.
-1. På fliken **[!UICONTROL Permissions]** väljer du **[!UICONTROL Property Rights]**.
+1. Välj en befintlig **[!UICONTROL Product Profile]** eller skapa en ny med knappen **[!UICONTROL New profile]**. Lär dig hur du skapar en ny **[!UICONTROL New profile]** i [Admin Console-dokumentationen](https://experienceleague.adobe.com/docs/experience-platform/access-control/ui/create-profile.html#ui){target="_blank"}.
+1. Välj **[!UICONTROL Permissions]** på fliken **[!UICONTROL Property Rights]**.
 1. Klicka på **[!UICONTROL Add all]**. Detta lägger till följande rättigheter i din produktprofil:
    * **[!UICONTROL Approve]**
    * **[!UICONTROL Develop]**
@@ -75,12 +75,12 @@ Följ stegen nedan för att tilldela **[!UICONTROL Product profile]** till anvä
 1. Åtkomst till **[!DNL Admin Console]**.
 1. Välj **[!UICONTROL Products]**-kortet på fliken **[!UICONTROL Adobe Experience Platform Data Collection]**.
 1. Välj din tidigare konfigurerade **[!UICONTROL Product profile]**.
-1. Klicka på **[!UICONTROL Add user]** på fliken **[!UICONTROL Users]**.
+1. Klicka på **[!UICONTROL Users]** på fliken **[!UICONTROL Add user]**.
 1. Skriv in användarens namn eller e-postadress och markera användaren. Klicka sedan på **[!UICONTROL Save]**.
 
    >[!NOTE]
    >
-   >Om användaren inte redan har skapats i Admin Console läser du [dokumentationen till Lägg till användare](https://helpx.adobe.com/se/enterprise/using/manage-users-individually.html#add-users){target="_blank"}.
+   >Om användaren inte redan har skapats i Admin Console läser du [dokumentationen till Lägg till användare](https://helpx.adobe.com/enterprise/using/manage-users-individually.html#add-users){target="_blank"}.
 
 ### Konfigurera din app {#configure-app}
 
@@ -94,7 +94,7 @@ Följ implementeringsstegen som beskrivs i länkarna nedan:
 <!--
 ## Add your app push credentials in Adobe Experience Platform Data Collection {#push-credentials}
 
-After granting the correct user permissions, you now need to add your mobile application push credentials in Adobe Experience Platform Data Collection. 
+After granting the correct user permissions, you now need to add your mobile application push credentials in Adobe Experience Platform Data Collection.
 
 The mobile app push credential registration is required to authorize Adobe to send push notifications on your behalf. Refer to the steps detailed below:
 
@@ -109,13 +109,13 @@ The mobile app push credential registration is required to authorize Adobe to se
     * **For iOS**
 
         1. Enter the mobile app **Bundle Id** in the **[!UICONTROL App ID (iOS Bundle ID)]** field. The app Bundle ID can be found in the **General** tab of the primary target in **XCode**.
-        
+
         1. Switched on the **[!UICONTROL Push Credentials]** button to add your credentials.
-        
+
         1. Drag and drop your .p8 Apple Push Notification Authentication Key file. This key can be acquired from the **Certificates**, **Identifiers** and **Profiles** page.
 
         1. Provide the **Key ID**. This is a 10 character string assigned during the creation of p8 auth key. It can be found under **Keys** tab in **Certificates**, **Identifiers** and **Profiles** page.
-        
+
         1. Provide the **Team ID**. This is a string value which can be found under the Membership tab.
 
     * **For Android**
@@ -125,7 +125,7 @@ The mobile app push credential registration is required to authorize Adobe to se
         1. Switched on the **[!UICONTROL Push Credentials]** button to add your credentials.
 
         1. Drag and drop the FCM push credentials. For more details on how to get the push credentials refer to [Google Documentation](https://firebase.google.com/docs/admin/setup#initialize-sdk){target="_blank"}.
-    
+
 
 1. Click **[!UICONTROL Save]** to create your app configuration.
 -->
@@ -142,7 +142,7 @@ To get the SDKs needed for push notification to work you will need the following
 * **[!UICONTROL Adobe Experience Platform Assurance]**, optional but recommended to debug the mobile implementation.
 -->
 
-Läs mer om [!DNL Adobe Experience Platform Data Collection]-taggar i [Adobe Experience Platform-dokumentation](https://experienceleague.adobe.com/docs/platform-learn/implement-mobile-sdk/initial-configuration/configure-tags.html?lang=sv-SE){target="_blank"}.
+Läs mer om [!DNL Adobe Experience Platform Data Collection]-taggar i [Adobe Experience Platform-dokumentation](https://experienceleague.adobe.com/docs/platform-learn/implement-mobile-sdk/initial-configuration/configure-tags.html){target="_blank"}.
 
 Öppna den nya taggegenskapen och skapa ett bibliotek när du har skapat den. Så här gör du:
 
@@ -209,7 +209,7 @@ Så här skapar du en app för iOS-enheter:
 
 1. Välj ikonen i fältet **[!UICONTROL Application icon]** om du vill anpassa mobilprogrammet i tjänsten.
 
-1. Markera **[!UICONTROL Authentication mode]**. Det finns två lägen:
+1. Välj **[!UICONTROL Authentication mode]**. Det finns två lägen:
 
    * (Rekommenderas) **[!UICONTROL Token-based authentication]**: Fyll i APN-anslutningsinställningarna **[!UICONTROL Key Id]**, **[!UICONTROL Team Id]** och **[!UICONTROL Bundle Id]** och välj sedan ditt p8-certifikat genom att klicka på **[!UICONTROL Enter the private key...]**. Mer information om **[!UICONTROL Token-based authentication]** finns i [Apple-dokumentationen](https://developer.apple.com/documentation/usernotifications/setting_up_a_remote_notification_server/establishing_a_token-based_connection_to_apns){target="_blank"}.
 
@@ -267,7 +267,7 @@ Nedan visas FCM-nyttolastsnamnen för att ytterligare anpassa ditt push-meddelan
 
 | Meddelandetyp | Konfigurerbart meddelandeelement (FCM-nyttolastnamn) | Konfigurerbara alternativ (FCM-nyttolastnamn) |
 |:-:|:-:|:-:|
-| datameddelande | N/A | validate_only |
+| datameddelande | Ej tillämpligt | validate_only |
 | meddelandemeddelande | title, body, android_channel_id, icon, sound, tag, color, click_action, image, ticker, sticky, visibility, notification_priority, notification_count <br> | validate_only |
 
 

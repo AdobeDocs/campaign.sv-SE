@@ -4,10 +4,10 @@ description: Lär dig hur du får åtkomst till och använder globala rapporter
 feature: Reporting, Monitoring
 role: User, Developer
 exl-id: 6e3409d8-86bd-44ba-a40d-10287f53a960
-source-git-commit: 00d9c3229b7bbabfec3b1750ae84978545fdc218
+source-git-commit: a5436f7e1f1e4ad86157dfd8943d51bf852b747c
 workflow-type: tm+mt
 source-wordcount: '1750'
-ht-degree: 2%
+ht-degree: 0%
 
 ---
 
@@ -49,9 +49,9 @@ Du kan konfigurera de värden som visas genom att ändra tidsskalan: 1-timmars v
 
 >[!NOTE]
 >
->Du kan också övervaka antalet leveranser som skickas per timme med [Kontrollpanelen](https://experienceleague.adobe.com/docs/control-panel/using/sftp-management/sftp-storage-management.html?lang=sv-SE){target="_blank"}.
+>Du kan också övervaka antalet leveranser som skickas per timme med [Kontrollpanelen](https://experienceleague.adobe.com/docs/control-panel/using/sftp-management/sftp-storage-management.html){target="_blank"}.
 >
->Kontrollpanelen är tillgänglig för alla administratörsanvändare. Stegen för att bevilja administratörsåtkomst till en användare finns på [den här sidan](https://experienceleague.adobe.com/docs/control-panel/using/discover-control-panel/managing-permissions.html?lang=sv#discover-control-panel){target="_blank"}.
+>Kontrollpanelen är tillgänglig för alla administratörsanvändare. Anvisningar om hur du beviljar administratörsåtkomst till en användare finns på [den här sidan](https://experienceleague.adobe.com/docs/control-panel/using/discover-control-panel/managing-permissions.html#discover-control-panel){target="_blank"}.
 >
 
 ## Användaraktiviteter {#user-activities}
@@ -66,7 +66,7 @@ Följande alternativ är tillgängliga:
 * **[!UICONTROL Transactions]**: Total number of transactions after a message is received. In order for a transaction to be taken into account, a transaction type webtracking tag must be inserted into the matching web page. Webtracking configuration is presented in [this section](../../configuration/using/about-web-tracking.md).
 -->
 
-## Ej levererbara och studsningar {#non-deliverables-and-bounces}
+## Ej levererbara produkter och studsar {#non-deliverables-and-bounces}
 
 I den här rapporten visas uppdelningen av icke-levererbara produkter samt en uppdelning av studenterna per Internetdomän.
 
@@ -205,7 +205,7 @@ Statistics are presented in the form of a table of values and a chart.
 
 The following indicators are used:
 
-* **[!UICONTROL New contacts]**: Number of new subscriptions following the reception of a message shared via email. This value matches the number of people who received a message shared via email, clicked the **[!UICONTROL Subscription link]** and filled in the subscription form. 
+* **[!UICONTROL New contacts]**: Number of new subscriptions following the reception of a message shared via email. This value matches the number of people who received a message shared via email, clicked the **[!UICONTROL Subscription link]** and filled in the subscription form.
 * **[!UICONTROL Opens]**: Total number of messages opened by people whom the message was transferred to (via the **[!UICONTROL Link for sharing to social networks]** personalization block). This value equals the number of times the mirror page was displayed. Opens by delivery recipients are not taken into account.
 * **[!UICONTROL Sharing activities]**: Total number of messages shared via social networks. This value matches the total number of clicks on the icon of the **[!UICONTROL Links for sharing to social networks]** personalization block.
 -->

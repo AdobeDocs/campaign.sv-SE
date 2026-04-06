@@ -1,20 +1,20 @@
 ---
 title: Kom igång med Campaign-arkitekturen
-description: Identifiera miljöer och grundläggande distributionsmöjligheter, inklusive hur du rapporterar om en kampanjmiljö.
+description: Identifiera miljöer och grundläggande driftsättningsmöjligheter, inklusive hur man rapporterar om en kampanjmiljö.
 feature: Architecture, Deployment
 role: Developer
 level: Beginner
 exl-id: 562b24c3-6bea-447f-b74c-187ab77ae78f
-source-git-commit: 7465cacc74b8b7df38c5eb10d2928749c70a87ea
+source-git-commit: a5436f7e1f1e4ad86157dfd8943d51bf852b747c
 workflow-type: tm+mt
 source-wordcount: '1039'
-ht-degree: 1%
+ht-degree: 0%
 
 ---
 
 # Kom igång med Campaign-arkitekturen{#gs-ac-archi}
 
-## Miljöer {#environments}
+## Miljö {#environments}
 
 Campaign blir tillgängligt som enskilda instanser där varje instans representerar en komplett Campaign-miljö.
 
@@ -80,7 +80,7 @@ För att göra detta skapas ytterligare externa konton med routningsläget **[!U
 >
 >Som standard är tröskelvärdet för att dela upp en leverans mellan flera MID-instanser 100 kB. Du kan ändra det här värdet i alternativet &quot;NmsDelivery_MultiMidSplitThreshold&quot; på menyn **[!UICONTROL Administration]** / **[!UICONTROL Platform]** / **[!UICONTROL Options]** .
 
-Om du vill dela upp externa konton som standardkonto för att skicka ut leveranser måste du ändra routningsprovidern i leveransmallarna. Följ dessa steg för att göra detta:
+Om du vill dela upp externa konton som standardkonto för att skicka ut leveranser måste du ändra routningsprovidern i leveransmallarna. Gör så här:
 
 1. Navigera till mappen **[!UICONTROL Resources]** / **[!UICONTROL Templates]** / **[!UICONTROL Delivery templates]** och öppna önskad leveransmall. I det här exemplet vill vi redigera e-postleveransmallen.
 
@@ -92,9 +92,11 @@ Om du vill dela upp externa konton som standardkonto för att skicka ut leverans
 
 1. Spara ändringarna. Alla leveranser som skickas med mallen använder nu det delade routningsläget som standard.
 
-<!--In addition, you can select split external accounts as the default routing provider for all future delivery templates. To do this, change the value of the **[!UICONTROL xtkoption NmsBroadcast_DefaultProvider]** option to the name of the split account.
+<!--
+In addition, you can select split external accounts as the default routing provider for all future delivery templates. To do this, change the value of the **[!UICONTROL xtkoption NmsBroadcast_DefaultProvider]** option to the name of the split account.
 
-![](assets/split-default-options.png) -->
+![](assets/split-default-options.png)
+-->
 
 ## Meddelandecenterarkitektur{#transac-msg-archi}
 

@@ -6,10 +6,10 @@ role: User
 level: Beginner
 version: Campaign v8, Campaign Classic v7
 exl-id: 35702b81-1984-4a62-8f00-c2bc32ab2b42
-source-git-commit: a2efad26232cd380eea850a589b22b23928253e8
+source-git-commit: a5436f7e1f1e4ad86157dfd8943d51bf852b747c
 workflow-type: tm+mt
 source-wordcount: '370'
-ht-degree: 1%
+ht-degree: 0%
 
 ---
 
@@ -18,7 +18,8 @@ ht-degree: 1%
 <!--
 >[!NOTE]
 >
->This capability is available starting Campaign v8.3. To check your version, refer to [this section](../start/compatibility-matrix.md#how-to-check-your-campaign-version-and-buildversion)-->
+>This capability is available starting Campaign v8.3. To check your version, refer to [this section](../start/compatibility-matrix.md#how-to-check-your-campaign-version-and-buildversion)
+-->
 
 ## Om BCC för e-post {#gs-bcc}
 
@@ -43,11 +44,11 @@ Om du vill aktivera Kontroll av webbläsarkompatibilitet för en viss [leveransm
 1. Gå till mappen med leveransmallar i Campaign Explorer. Som standard lagras leveransmallar i mappen **[!UICONTROL Resources]** > **[!UICONTROL Templates]** > **[!UICONTROL Delivery templates]**.
 1. Redigera leveransmallen för att uppdatera med BCC.
 1. Klicka på knappen **[!UICONTROL Properties]**.
-1. Markera alternativet **[!UICONTROL Email BCC with enhanced Momentum]** på fliken **[!UICONTROL Delivery]**.
+1. Markera alternativet **[!UICONTROL Delivery]** på fliken **[!UICONTROL Email BCC with enhanced Momentum]**.
 
    ![](assets/email-bcc.png)
 
-1. Klicka på **[!UICONTROL Ok]** för att bekräfta.
+1. Bekräfta genom att klicka på **[!UICONTROL Ok]**.
 
 En kopia av alla skickade meddelanden för varje leverans som baseras på den här mallen skickas till e-postadressen som har konfigurerats för din plattform.
 

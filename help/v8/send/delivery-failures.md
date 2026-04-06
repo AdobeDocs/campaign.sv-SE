@@ -6,10 +6,10 @@ role: User
 level: Beginner, Intermediate
 version: Campaign v8, Campaign Classic v7
 exl-id: 9c83ebeb-e923-4d09-9d95-0e86e0b80dcc
-source-git-commit: 57e177dc6c30502f2ed3bb08b18586fa5399e89c
+source-git-commit: a5436f7e1f1e4ad86157dfd8943d51bf852b747c
 workflow-type: tm+mt
 source-wordcount: '3410'
-ht-degree: 2%
+ht-degree: 0%
 
 ---
 
@@ -35,13 +35,13 @@ Hårda studsar är permanenta fel som genereras efter att en Internet-leverantö
   Här är några vanliga exempel på hårda domäner: Adressen finns inte, Konto inaktiverat, Felaktig syntax, Dålig domän
 
 * **Mjuka studsar**
-Mjuka studsar är tillfälliga fel som internetleverantörer genererar när de har svårt att leverera e-post. Mjuka fel [försöker &#x200B;](#retries) igen flera gånger (med varians beroende på om anpassade leveransinställningar eller leveransinställningar som är klara används) för att försöka leverera korrekt. Adresser som kontinuerligt mjuka studsar kommer inte att läggas till i karantän förrän det maximala antalet försök har gjorts (som återigen varierar beroende på inställningarna).
+Mjuka studsar är tillfälliga fel som internetleverantörer genererar när de har svårt att leverera e-post. Mjuka fel [försöker ](#retries) igen flera gånger (med varians beroende på om anpassade leveransinställningar eller leveransinställningar som är klara används) för att försöka leverera korrekt. Adresser som kontinuerligt mjuka studsar kommer inte att läggas till i karantän förrän det maximala antalet försök har gjorts (som återigen varierar beroende på inställningarna).
 
   Några vanliga orsaker till mjuka studsar är: Postlådan är full, Tar emot e-postserver, Senderns anseendeproblem
 
 Feltypen **Ignorerad** är känd som tillfällig, till exempel &quot;Frånvarande&quot;, eller ett tekniskt fel, till exempel om avsändartypen är &quot;postmaster&quot;.
 
-Feedback-slingan fungerar som studsmeddelanden: när en användare kvalificerar ett e-postmeddelande som skräppost kan du konfigurera e-postregler i Adobe Campaign så att alla leveranser till den här användaren blockeras. Adresserna till dessa användare är blocklist trots att de inte klickade på länken för att ta bort prenumerationen. Adresser läggs till i karantäntabellen (**NmsAddress**) och inte i mottagartabellen (**NmsRecipient**) med statusen **[!UICONTROL Denylisted]**. Läs mer om feedbackloopmekanismen i [Adobe Deliverability Best Practices Guide](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/transition-process/infrastructure.html?lang=sv-SE#feedback-loops){target="_blank"}.
+Feedback-slingan fungerar som studsmeddelanden: när en användare kvalificerar ett e-postmeddelande som skräppost kan du konfigurera e-postregler i Adobe Campaign så att alla leveranser till den här användaren blockeras. Adresserna till dessa användare är blocklist trots att de inte klickade på länken för att ta bort prenumerationen. Adresser läggs till i karantäntabellen (**NmsAddress**) och inte i mottagartabellen (**NmsRecipient**) med statusen **[!UICONTROL Denylisted]**. Läs mer om feedbackloopmekanismen i [Adobe Deliverability Best Practices Guide](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/transition-process/infrastructure.html#feedback-loops){target="_blank"}.
 
 ## Synkrona och asynkrona fel {#synchronous-and-asynchronous-errors}
 
@@ -49,7 +49,7 @@ En meddelandeleverans kan misslyckas omedelbart, i så fall kvalificerar vi det 
 
 Följande typer av fel hanteras:
 
-* **Synkront fel**: Fjärrservern som kontaktas av Adobe Campaign leveransserver returnerar omedelbart ett felmeddelande. Leveransen får inte skickas till profilens server. MTA (Mail Transfer Agent) bestämmer studstypen och kvalificerar felet och skickar tillbaka informationen till Campaign för att avgöra om e-postadresserna ska placeras i karantän. Se [Kvalifikation av studsmeddelanden](#bounce-mail-qualification).
+* **Synkront fel**: Fjärrservern som kontaktas av Adobe Campaign leveransserver returnerar omedelbart ett felmeddelande. Leveransen får inte skickas till profilens server. MTA (Mail Transfer Agent) bestämmer studstypen och kvalificerar felet och skickar tillbaka informationen till Campaign för att avgöra om e-postadresserna ska placeras i karantän. Se [studsa e-postkvalificering](#bounce-mail-qualification).
 
 * **Asynkront fel**: ett studsmeddelande eller en SR skickas senare av den mottagande servern. Det här felet är kvalificerat med en etikett som är relaterad till felet. Asynkrona fel kan uppstå upp till en vecka efter att en leverans har skickats.
 
@@ -59,9 +59,11 @@ Följande typer av fel hanteras:
 
 ## E-poststudsar {#bounce-mail-qualification}
 
-<!--NO LONGER WITH MOMENTUM - Rules used by Campaign to qualify delivery failures are listed in the **[!UICONTROL Administration > Campaign Management > Non deliverables Management > Delivery log qualification]** node. It is non-exhaustive, and is regularly updated by Adobe Campaign and can also be managed by the user.
+<!--
+NO LONGER WITH MOMENTUM - Rules used by Campaign to qualify delivery failures are listed in the **[!UICONTROL Administration > Campaign Management > Non deliverables Management > Delivery log qualification]** node. It is non-exhaustive, and is regularly updated by Adobe Campaign and can also be managed by the user.
 
-![](assets/delivery-log-qualification.png)-->
+![](assets/delivery-log-qualification.png)
+-->
 
 Hur studseffekter hanteras i Adobe Campaign beror på feltypen:
 
@@ -69,14 +71,15 @@ Hur studseffekter hanteras i Adobe Campaign beror på feltypen:
 
 * **Asynkrona fel**: Regler som används av Campaign för att kvalificera asynkrona leveransfel visas i noden **[!UICONTROL Administration > Campaign Management > Non deliverables Management > Delivery log qualification]**. Asynkrona studsar kvalificeras av inMail-processen via reglerna **[!UICONTROL Inbound email]**.
 
-<!--NO LONGER WITH MOMENTUM - The message returned by the remote server on the first occurrence of this error type is displayed in the **[!UICONTROL First text]** column of the **[!UICONTROL Audit]** tab.
+<!--
+NO LONGER WITH MOMENTUM - The message returned by the remote server on the first occurrence of this error type is displayed in the **[!UICONTROL First text]** column of the **[!UICONTROL Audit]** tab.
 
 ![](assets/delivery-log-first-txt.png)
 
 Adobe Campaign filters this message to delete the variable content (such as IDs, dates, email addresses, phone numbers, etc.) and displays the filtered result in the **[!UICONTROL Text]** column. The variables are replaced with **`#xxx#`**, except addresses that are replaced with **`*`**.
 
 This process allows to bring together all failures of the same type and avoid multiple entries for similar errors in the Delivery log qualification table.
-  
+
 >[!NOTE]
 >
 >The **[!UICONTROL Number of occurrences]** field displays the number of occurrences of the message in the list. It is limited to 100 000 occurrences. You can edit the field, if you want, for example, to reset it.
@@ -91,7 +94,8 @@ Bounce mails can have the following qualification status:
 
 >[!NOTE]
 >
->In case of an outage of an ISP, emails sent through Campaign will be wrongly marked as bounces. To correct this, you need to update bounce qualification.-->
+>In case of an outage of an ISP, emails sent through Campaign will be wrongly marked as bounces. To correct this, you need to update bounce qualification.
+-->
 
 
 ## Återförsökshantering {#retries}
@@ -112,7 +116,7 @@ Om giltighetsperioden till exempel är inställd på standardvärdet 5 dagar i C
 
 När ett meddelande har funnits i MTA-kön i 3,5 dagar och inte kunnat levereras, kommer det att gå ut och dess status kommer att uppdateras från **[!UICONTROL Sent]** till **[!UICONTROL Failed]** i leveransloggarna.
 
-<!--For more on the validity period, see the [Adobe Campaign Classic v7 documentation](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/key-steps-when-creating-a-delivery/steps-sending-the-delivery.html?lang=sv-SE#defining-validity-period){target="_blank"}.-->
+<!--For more on the validity period, see the [Adobe Campaign Classic v7 documentation](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/key-steps-when-creating-a-delivery/steps-sending-the-delivery.html#defining-validity-period){target="_blank"}.-->
 
 
 ## E-postfeltyper {#email-error-types}
@@ -199,7 +203,7 @@ För e-postkanalen anges möjliga orsaker till leveransfel nedan.
    <td> Postlådan är full </td> 
    <td> Mjuk </td> 
    <td> 5 </td> 
-   <td> Den här användarens postlåda är full och kan inte ta emot fler meddelanden. Den här profilen används igen tills felantalet är 5. Därefter sätts postens status till Karantän och inga nya försök görs.<br /> Den här typen av fel hanteras av en rensningsprocess. Adressen har en giltig status efter 30 dagar.<br /> Varning! Det tekniska arbetsflödet för databasrensning måste startas för att adressen automatiskt ska tas bort från listan över adresser i karantän.<br /> </td> 
+   <td> Den här användarens postlåda är full och kan inte ta emot fler meddelanden. Den här profilen används igen tills felantalet är 5. Därefter anges posten till Karantänstatus och inga nya försök följer.<br /> Den här typen av fel hanteras av en rensningsprocess. Adressen har en giltig status efter 30 dagar.<br /> Varning! Det tekniska arbetsflödet för databasrensning måste startas för att adressen automatiskt ska tas bort från listan över adresser i karantän.<br /> </td> 
   </tr> 
   <tr> 
    <td> Inte ansluten </td> 
@@ -723,7 +727,7 @@ DLV-XXXX The count of message prepared (123) is greater than the number of messa
 
 **Orsak**: Det finns ett anpassningsfält eller -block i e-postmeddelandet som har mer än ett värde för mottagaren. Ett personaliseringsblock används och hämtar mer än en post för en viss mottagare.
 
-**Upplösning**: Kontrollera de personaliseringsdata som används och kontrollera sedan målet för mottagare som har mer än en post för något av dessa fält. Du kan också använda en **[!UICONTROL Deduplication]**-aktivitet i målarbetsflödet före leveransaktiviteten för att se till att det bara finns ett personaliseringsfält åt gången. Mer information om borttagning av dubbletter finns i [arbetsflödesdokumentationen](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/targeting-activities/deduplication.html?lang=sv-SE){target="_blank"}.
+**Upplösning**: Kontrollera de personaliseringsdata som används och kontrollera sedan målet för mottagare som har mer än en post för något av dessa fält. Du kan också använda en **[!UICONTROL Deduplication]**-aktivitet i målarbetsflödet före leveransaktiviteten för att se till att det bara finns ett personaliseringsfält åt gången. Mer information om borttagning av dubbletter finns i [arbetsflödesdokumentationen](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/targeting-activities/deduplication.html){target="_blank"}.
 
 ### Automatisk svarshantering {#auto-reply-handling}
 

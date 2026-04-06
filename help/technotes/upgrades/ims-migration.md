@@ -4,7 +4,7 @@ description: Lär dig hur du migrerar tekniska kampanjoperatörer till ett tekni
 feature: Technote
 role: Admin
 exl-id: 775c5dbb-ef73-48dd-b163-23cfadc3dab8
-source-git-commit: 07c2a7460c407a0afb536d8b64f4105d8bc547f4
+source-git-commit: a5436f7e1f1e4ad86157dfd8943d51bf852b747c
 workflow-type: tm+mt
 source-wordcount: '1547'
 ht-degree: 0%
@@ -13,7 +13,7 @@ ht-degree: 0%
 
 # Migrering av tekniska aktörer från Campaign till Adobe Developer Console {#migrate-tech-users-to-ims}
 
-Som en del i arbetet med att stärka säkerhets- och autentiseringsprocessen, från och med Campaign v8.5, förbättras autentiseringsprocessen till Campaign v8. Tekniska operatörer kan nu använda [Adobe Identity Management System (IMS)](https://helpx.adobe.com/se/enterprise/using/identity.html){target="_blank"} för att ansluta till Campaign. Läs mer om autentiseringsprocessen från den nya servern till servern i [Adobe Developer Console-dokumentationen](https://developer.adobe.com/developer-console/docs/guides/authentication/ServerToServerAuthentication/){target="_blank"}.
+Som en del i arbetet med att stärka säkerhets- och autentiseringsprocessen, från och med Campaign v8.5, förbättras autentiseringsprocessen till Campaign v8. Tekniska operatörer kan nu använda [Adobe Identity Management System (IMS)](https://helpx.adobe.com/enterprise/using/identity.html){target="_blank"} för att ansluta till Campaign. Läs mer om autentiseringsprocessen från den nya servern till servern i [Adobe Developer Console-dokumentationen](https://developer.adobe.com/developer-console/docs/guides/authentication/ServerToServerAuthentication/){target="_blank"}.
 
 En teknisk operator är en Campaign-användarprofil som uttryckligen har skapats för API-integrering. I den här artikeln beskrivs stegen som krävs för att migrera en teknisk operatör till ett tekniskt konto via Adobe Developer-konsolen.
 
@@ -59,7 +59,8 @@ Du kan använda vilket projekt som helst som du har skapat tidigare eller skapa 
 <!--
 For this migration, you must add below APIs in your project: **I/O Management API** and **Adobe Campaign**.
 
-![](assets/do-not-localize/ims-products-and-services.png)-->
+![](assets/do-not-localize/ims-products-and-services.png)
+-->
 
 Om du vill skapa ett nytt projekt klickar du på **Skapa nytt projekt** på huvudskärmen i Adobe Developer Console.
 
@@ -89,7 +90,8 @@ På skärmen **Konfigurera API** väljer du den autentiseringstyp som behövs. *
 <!--
 Once your project is created in the Adobe Developer Console, add an API that uses Server-to-Server authentication. Learn how to set up the OAuth Server-to-Server credential in [Adobe Developer Console documentation](https://developer.adobe.com/developer-console/docs/guides/authentication/ServerToServerAuthentication/implementation/){target="_blank"}.
 
-When the API has been successfully connected, you can access the newly generated credentials including Client ID and Client Secret, as well as generate an access token.-->
+When the API has been successfully connected, you can access the newly generated credentials including Client ID and Client Secret, as well as generate an access token.
+-->
 
 ### Steg 4 - Välj produktprofiler {#ims-migration-step-4}
 
@@ -110,7 +112,8 @@ You can now add your Campaign product profile to the project, as detailed below:
     ![](assets/do-not-localize/ims-edit-api.png)
 
 1. Assign all the relevant Product Profiles to the API, for example 'messagecenter', and save your changes.
-1. Browse to the **Credential details** tab of your project, and copy the **Technical Account Email** value.-->
+1. Browse to the **Credential details** tab of your project, and copy the **Technical Account Email** value.
+-->
 
 ### Steg 5 - Lägg till API:t för I/O-hantering i ditt projekt {#ims-migration-step-5}
 
@@ -218,7 +221,7 @@ Observera att den tekniska kontoanvändaren INTE finns i Adobe Campaign förrän
 
    ![](assets/do-not-localize/ims-updates-07.png)
 
-   Bläddra nedåt på skärmen Autentiseringsuppgifter för att hitta e-postadressen för det tekniska kontot **och klicka på knappen &#x200B;** Kopiera**.
+   Bläddra nedåt på skärmen Autentiseringsuppgifter för att hitta e-postadressen för det tekniska kontot **och klicka på knappen **Kopiera**.
 
    ![](assets/do-not-localize/ims-updates-08.png)
 

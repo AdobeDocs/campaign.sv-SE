@@ -6,10 +6,10 @@ role: User
 level: Beginner
 version: Campaign v8, Campaign Classic v7
 exl-id: a7846b95-7570-4dce-b3f4-d3cc23eefcac
-source-git-commit: df8ab43d9c7aee96c23240cd6c2775311da1abf2
+source-git-commit: a5436f7e1f1e4ad86157dfd8943d51bf852b747c
 workflow-type: tm+mt
 source-wordcount: '1178'
-ht-degree: 1%
+ht-degree: 0%
 
 ---
 
@@ -29,12 +29,12 @@ Du får åtkomst till Adobe Campaign via klientkonsolen eller webbgränssnittet.
 
   >[!AVAILABILITY]
   >
-  >Användargränssnittet för Campaign-webben är bara tillgängligt för Campaign v8-användare som ansluter till Campaign med sin Adobe ID. Läs mer om [Adobe Identity Management System (IMS)](https://helpx.adobe.com/se/enterprise/using/identity.html){target="_blank"}.
+  >Användargränssnittet för Campaign-webben är bara tillgängligt för Campaign v8-användare som ansluter till Campaign med sin Adobe ID. Läs mer om [Adobe Identity Management System (IMS)](https://helpx.adobe.com/enterprise/using/identity.html){target="_blank"}.
   >
 
 >[!CAUTION]
 >
->Den här dokumentationen fokuserar på användning av Campaign Client-konsolen. Om du använder användargränssnittet för Campaign v8 läser du [den här dokumentationen](https://experienceleague.adobe.com/docs/campaign-web/v8/campaign-web-home.html?lang=sv-SE){target="_blank"} om du är Campaign-användare.
+>Den här dokumentationen fokuserar på användning av Campaign Client-konsolen. Om du använder användargränssnittet för Campaign v8 läser du [den här dokumentationen](https://experienceleague.adobe.com/docs/campaign-web/v8/campaign-web-home.html){target="_blank"} om du är Campaign-användare.
 
 ## Arbeta med klientkonsolen {#ui-access}
 
@@ -44,7 +44,7 @@ Campaign-klientkonsolen är ett inbyggt program som kommunicerar med Adobe Campa
 
 >[!BEGINTABS]
 
->[!TAB Campaign v8]
+>[!TAB Kampanj v8]
 
 När du är ansluten till Campaign kommer du åt Adobe Campaign hemsida. I Campaign v8 använder du de centrala korten för att bläddra i det nya webbgränssnittet för Campaign och i Campaign Control-panelen.
 
@@ -99,9 +99,10 @@ Använd genvägar i avsnittet **[!UICONTROL Create]** till vänster på skärmen
 
 You can also access a subset of Campaign capabilities through the a web browser.
 
-The web access interface is similar to the console interface. From a browser, you can use the same navigation and display features as in the console, but you can perform only a reduced set of actions on campaigns. For example, you can view and cancel campaigns, but you cannot modify campaigns. 
+The web access interface is similar to the console interface. From a browser, you can use the same navigation and display features as in the console, but you can perform only a reduced set of actions on campaigns. For example, you can view and cancel campaigns, but you cannot modify campaigns.
 
-[Learn more about Campaign web access](../start/connect.md#web-access).-->
+[Learn more about Campaign web access](../start/connect.md#web-access).
+-->
 
 ### Access Campaign Explorer {#ac-explorer-ui}
 
@@ -126,12 +127,12 @@ Som Campaign v8-användare, från och med version 8.6.1, har du tillgång till e
 
 >[!AVAILABILITY]
 >
->Användargränssnittet för Campaign-webben är bara tillgängligt för Campaign v8-användare som ansluter till Campaign med sin Adobe ID. Läs mer om [Adobe Identity Management System (IMS)](https://helpx.adobe.com/se/enterprise/using/identity.html){target="_blank"}.
+>Användargränssnittet för Campaign-webben är bara tillgängligt för Campaign v8-användare som ansluter till Campaign med sin Adobe ID. Läs mer om [Adobe Identity Management System (IMS)](https://helpx.adobe.com/enterprise/using/identity.html){target="_blank"}.
 >
 
-Läs mer om det nya webbanvändargränssnittet för Campaign i [den här dokumentationen](https://experienceleague.adobe.com/docs/campaign-web/v8/campaign-web-home.html?lang=sv-SE){target="_blank"}. Du kan även gå till sidan [Vanliga frågor och svar](https://experienceleague.adobe.com/sv/docs/campaign-web/v8/start/faq){target="_blank"} i dokumentationen för Campaign-webbanvändargränssnittet.
+Läs mer om det nya webbanvändargränssnittet för Campaign i [den här dokumentationen](https://experienceleague.adobe.com/docs/campaign-web/v8/campaign-web-home.html){target="_blank"}. Du kan även gå till sidan [Vanliga frågor och svar](https://experienceleague.adobe.com/en/docs/campaign-web/v8/start/faq){target="_blank"} i dokumentationen för Campaign-webbanvändargränssnittet.
 
-Ytterligare och avancerade funktioner, konfigurationer och inställningar är bara tillgängliga i klientkonsolen. Läs mer om funktioner som är tillgängliga i båda användargränssnitten [&#x200B; i dokumentationen för användargränssnittet för Campaign &#x200B;](https://experienceleague.adobe.com/docs/campaign-web/v8/start/capability-matrix.html?lang=sv-SE){target="_blank"}.
+Ytterligare och avancerade funktioner, konfigurationer och inställningar är bara tillgängliga i klientkonsolen. Läs mer om funktioner som är tillgängliga i båda användargränssnitten [ i dokumentationen för användargränssnittet för Campaign ](https://experienceleague.adobe.com/docs/campaign-web/v8/start/capability-matrix.html){target="_blank"}.
 
 
 ## Språk som stöds {#languages}
@@ -151,7 +152,7 @@ Vilka språk som stöds beror på användargränssnittet.
   >
   >Språket väljs under installationen och **kan inte ändras** därefter.
 
-* För språk som stöds av Campaign-webbgränssnittet [finns mer information i dokumentationen för Campaign-webbgränssnittet](https://experienceleague.adobe.com/docs/campaign-web/v8/start/connect-to-campaign.html?lang=sv-SE#language-pref){target="_blank"}.
+* För språk som stöds av Campaign-webbgränssnittet [finns mer information i dokumentationen för Campaign-webbgränssnittet](https://experienceleague.adobe.com/docs/campaign-web/v8/start/connect-to-campaign.html#language-pref){target="_blank"}.
 
 ## Format
 

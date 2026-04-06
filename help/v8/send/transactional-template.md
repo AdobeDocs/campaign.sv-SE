@@ -5,10 +5,10 @@ feature: Transactional Messaging
 role: User
 level: Beginner, Intermediate
 exl-id: 858c9216-c5a0-4bf9-b4b0-91e403293f73
-source-git-commit: a05b1d7d9b35f8d9189046fd4288d0b80f30967a
+source-git-commit: a5436f7e1f1e4ad86157dfd8943d51bf852b747c
 workflow-type: tm+mt
 source-wordcount: '1177'
-ht-degree: 1%
+ht-degree: 0%
 
 ---
 
@@ -86,7 +86,7 @@ Med en dirigerad adress kan du visa en förhandsgranskning av meddelandet, skick
 
    ![](assets/messagecenter_create_seed_2.png)
 
-1. Infoga testdata. [Läs mer om personaliseringsdata i Campaign Classic v7-dokumentationen](https://experienceleague.adobe.com/sv/docs/campaign-classic/using/transactional-messaging/message-templates/testing-message-templates#personalization-datal){target="_blank"}
+1. Infoga testdata. [Läs mer om personaliseringsdata i Campaign Classic v7-dokumentationen](https://experienceleague.adobe.com/en/docs/campaign-classic/using/transactional-messaging/message-templates/testing-message-templates#personalization-datal){target="_blank"}
 
    ![](assets/messagecenter_create_custo_3.png)
 
@@ -99,14 +99,13 @@ Med en dirigerad adress kan du visa en förhandsgranskning av meddelandet, skick
 När adresserna har skapats har du tillgång till deras förhandsgranskning och personalisering.
 
 <!--
-
 ### Add personalization data{#personalization-data}
 
 You can add data in the message template to test transactional message personalization. This will allow you to generate a preview or send a proof. If you install the **Deliverability** module, this data allows you to display a rendering of the messages for various desktop, web or mobile clients.
 
 The purpose of this data is to test your messages before their final delivery. These messages do not coincide with actual data to be processed by Message Center.
 
-However, the XML structure must be identical to that of the event stored in the execution instance, as shown below. 
+However, the XML structure must be identical to that of the event stored in the execution instance, as shown below.
 
 ![](assets/messagecenter_create_custo_4.png)
 
@@ -130,7 +129,7 @@ När du har skapat en eller flera dirigerade adresser och meddelandetexten kan d
 
    ![](assets/messagecenter_create_seed_7.png)
 
-### Skicka en korrektur {#send-proof}
+### Skicka ett bevis {#send-proof}
 
 Du kan testa meddelandeleveransen genom att skicka ett korrektur till en startadress som skapats tidigare.
 
@@ -175,11 +174,13 @@ När korrekturen har skickats måste du ändra routningen tillbaka till intern e
 
 När meddelandemallen <!-- on the control instance--> har skapats kan du publicera den, så att du kan skicka meddelanden som är länkade till realtids- och grupphändelser.
 
-<!--This process will also publish it on all execution instances.
+<!--
+This process will also publish it on all execution instances.
 
 NOTE: When publishing transactional message templates, typology rules are also automatically published on the execution instances.
 
-Publication lets you automatically create two message templates on the execution instances, which will allow you to send messages linked to real-time and batch events.-->
+Publication lets you automatically create two message templates on the execution instances, which will allow you to send messages linked to real-time and batch events.
+-->
 
 >[!CAUTION]
 >

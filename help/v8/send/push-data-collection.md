@@ -6,10 +6,10 @@ role: Developer
 level: Intermediate
 badge: label="Begränsad tillgänglighet" type="Informative"
 exl-id: 0f22b17c-ed01-4add-8300-8689b8a9f963
-source-git-commit: 00d9c3229b7bbabfec3b1750ae84978545fdc218
+source-git-commit: 52ea7f0a7690ef656568cc75925b9982e1f475e9
 workflow-type: tm+mt
 source-wordcount: '1353'
-ht-degree: 2%
+ht-degree: 0%
 
 ---
 
@@ -73,8 +73,8 @@ Registrering av push-autentiseringsuppgifter krävs för mobilappen för att god
 
 1. Ange **nyckel-ID**. Detta är en 10-teckensträng som tilldelas när en p8-autentiseringsnyckel skapas.
 
-       Den finns på fliken **Keys** i sidan **Certificates**, **Identifiers** och **Profiles** på ditt Apple-utvecklarkonto.
-   
+   Den finns på fliken **Tangenter** på sidan **Certifikat**, **Identifierare** och **Profiler** i ditt Apple-utvecklarkonto.
+
 1. Ange **Team-ID**. Detta är ett strängvärde som finns under fliken **Medlemskap**.
 
 1. Klicka på **[!UICONTROL Save]** om du vill skapa appkonfigurationen.
@@ -200,7 +200,7 @@ Så här skapar du en app för Android-enheter:
 
 1. Bläddra till fliken **[!UICONTROL Subscription parameters]** för att definiera mappningen med ett tillägg till schemat **[!UICONTROL Subscriber applications (nms:appsubscriptionRcp)]**.
 
-1. Klicka **[!UICONTROL Finish]** och sen **[!UICONTROL Save]**.
+1. Klicka på **[!UICONTROL Finish]** och sedan på **[!UICONTROL Save]**.
 
 Ditt Android-program kan nu användas i Campaign.
 
@@ -210,7 +210,7 @@ Nedan visas FCM-nyttolastsnamnen för att ytterligare anpassa ditt push-meddelan
 
 | Meddelandetyp | Konfigurerbart meddelandeelement (FCM-nyttolastnamn) | Konfigurerbara alternativ (FCM-nyttolastnamn) |
 |:-:|:-:|:-:|
-| datameddelande | N/A | validate_only |
+| datameddelande | Ej tillämpligt | validate_only |
 | meddelandemeddelande | title, body, android_channel_id, icon, sound, tag, color, click_action, image, ticker, sticky, visibility, notification_priority, notification_count <br> | validate_only |
 
 ## Konfigurera en mobil egenskap i Adobe Experience Platform Data Collection {#create-mobile-property}
@@ -252,7 +252,7 @@ Din mobila egenskap synkroniseras nu automatiskt med det tekniska arbetsflödet 
 
 ## Lägg till Campaign Classic i ditt mobilprogram {#campaign-mobile-app}
 
-Mobil-SDK:et i Adobe Experience Platform hjälper dig att driva lösningar och tjänster från Adobe Experience Cloud i dina mobilappar. SDK-konfigurationen hanteras via användargränssnittet för datainsamling för flexibel konfiguration och utbyggbara, regelbaserade integreringar.
+Adobe Experience Platform Mobile SDK hjälper er att driva Adobe Experience Cloud lösningar och tjänster i era mobilappar. SDK-konfigurationen hanteras via användargränssnittet för datainsamling för flexibel konfiguration och utbyggbara, regelbaserade integreringar.
 
 [Läs mer i Adobe Developer-dokumentationen](https://developer.adobe.com/client-sdks/documentation/adobe-campaign-classic/#add-campaign-classic-to-your-app){target="_blank"}.
 

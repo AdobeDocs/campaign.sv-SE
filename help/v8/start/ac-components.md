@@ -5,7 +5,7 @@ feature: Overview, Architecture, Configuration
 role: User
 level: Beginner
 exl-id: 7db32bd8-a088-405f-9633-2968c28b13b0
-source-git-commit: e4f6c70ecdcf7414b5f49a43933cfd1c967a0905
+source-git-commit: a5436f7e1f1e4ad86157dfd8943d51bf852b747c
 workflow-type: tm+mt
 source-wordcount: '637'
 ht-degree: 0%
@@ -62,9 +62,11 @@ Kampanjwebbservern styr åtkomsten till webbprocesser i Campaign. Javascript är
 
 Campaign Client Console ansluter till webbservern med hjälp av SOAP XML via HTTP. Webbservern tillhandahåller säkerhetsskiktet, skickar förfrågningarna till programlagret med JavaScript och de interna processerna i Campaign ger åtkomst till databasen med SQL.
 
-<!--The overall communication between Campaign processes are described in the following standalone deployment diagram: all Campaign components are installed in the same machine.
+<!--
+The overall communication between Campaign processes are described in the following standalone deployment diagram: all Campaign components are installed in the same machine.
 
-![](assets/do-not-localize//ac-standalone.png) -->
+![](assets/do-not-localize//ac-standalone.png)
+-->
 
 Användaren ansluter till Campaign-programservern med HTTP. Alla data och all information hanteras i Campaign-databasen. Om en Campaign-utvecklare utför konfigurationsändringar hämtas den i databasen. Om en marknadsförare skapar en ny kampanj hanteras all information och alla data som hör till den nya kampanjen också i databasen. När en marknadsförare kör en kampanj skickas e-postleveranser till profiler från Campaign-servern via SMTP-servern. När profiler interagerar med e-postleveranser, som att öppna e-postmeddelandet, skickas spårningsdata tillbaka till spårningsservern.
 

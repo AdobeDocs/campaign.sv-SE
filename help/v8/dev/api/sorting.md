@@ -7,10 +7,10 @@ topic-tags: campaign-standard-apis
 role: Developer
 level: Experienced
 exl-id: 7db25b8d-a6f1-4151-bf37-c47e9991ae48
-source-git-commit: 00d9c3229b7bbabfec3b1750ae84978545fdc218
+source-git-commit: a5436f7e1f1e4ad86157dfd8943d51bf852b747c
 workflow-type: tm+mt
 source-wordcount: '739'
-ht-degree: 1%
+ht-degree: 0%
 
 ---
 
@@ -20,7 +20,7 @@ ht-degree: 1%
 
 Sortering är tillgängligt som standard i stigande ordning. Om du vill sortera i fallande ordning lägger du till **%20desc** i värdet för parametern **_order**.
 
-Om du vill veta om ett fält kan sorteras kontrollerar du parametern &quot;sorterable&quot; i metadata för resursen. Mer information om detta finns i [det här avsnittet](metadata-mechanism.md).
+Om du vill veta om ett fält kan sorteras kontrollerar du parametern &quot;sorterable&quot; i metadata för resursen. Mer information finns i [det här avsnittet](metadata-mechanism.md).
 
 <br/>
 
@@ -262,8 +262,8 @@ Om du vill använda ett eget filter måste du skapa och anpassa det i Adobe Camp
 
 Mer information finns i Campaign Standard-dokumentationen:
 
-* [Konfigurerar filterdefinitionen](https://helpx.adobe.com/se/campaign/standard/developing/using/configuring-filter-definition.html).
-* [Använd skiftläge: Anropar en resurs med en sammansatt identifieringsnyckel](https://experienceleague.adobe.com/docs/campaign-standard/using/developing/adding-or-extending-a-resource/uc-calling-resource-id-key.html?lang=sv-SE).
+* [Konfigurerar filterdefinitionen](https://helpx.adobe.com/campaign/standard/developing/using/configuring-filter-definition.html).
+* [Använd skiftläge: Anropar en resurs med en sammansatt identifieringsnyckel](https://experienceleague.adobe.com/docs/campaign-standard/using/developing/adding-or-extending-a-resource/uc-calling-resource-id-key.html).
 
 <br/>
 
@@ -304,7 +304,8 @@ Response to the request.
 
 <!-- exemple à vérifier de bout en bout-->
 
-<!--+category = query editor
+<!--
++category = query editor
 privacy ?
 displayFOrmat ?
 pour faire un POST sur une enum, il faut lui passer le @name décrit dans le noeud values, chaque @name a une correspondance en format = au format définit par le resType
@@ -324,7 +325,7 @@ ail faut que la valeur poster soit conforme ,elle doit valider la dataPolicy . L
 type dans les metadata = type de haut-niveau (nombre, text)
 -->
 
-## Räkning {#counting}
+## Inventering {#counting}
 
 Adobe Campaign REST API kan räkna antalet poster i en begäran. Om du vill göra det använder du den URL som returneras i noden **count**.
 

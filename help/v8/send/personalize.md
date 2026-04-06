@@ -6,10 +6,10 @@ role: User
 level: Beginner
 version: Campaign v8, Campaign Classic v7
 exl-id: 1da45746-4d69-415b-a793-9a08ce80091d
-source-git-commit: 25ee55d5327e0ba7f2192f7b462853269c8cbf46
+source-git-commit: a5436f7e1f1e4ad86157dfd8943d51bf852b747c
 workflow-type: tm+mt
 source-wordcount: '471'
-ht-degree: 5%
+ht-degree: 2%
 
 ---
 
@@ -40,8 +40,9 @@ Du kan anpassa meddelandeinnehållet genom att:
 
   Konfigurera villkorsstyrt innehåll för att lägga till dynamisk personalisering baserat på mottagarens profil till exempel. Textblock och/eller bilder infogas när ett visst villkor är true. [Läs mer](conditions.md).
 
-<!--* Add **personalized offers**
-    
+<!--
+* Add **personalized offers**
+
     Insert personalized offers in your message content, depending on the recipient location, the current weather, or the last purchase order.
 -->
 
@@ -71,4 +72,4 @@ Följande variabler är interna variabler som kan användas för personalisering
 Förstå de olika typerna av dynamiskt innehåll och lär dig hur du skapar och använder personaliseringsblock och villkorssatser i en leverans.
 
 
->[!VIDEO](https://video.tv.adobe.com/v/3452872?captions=swe&quality=12)
+>[!VIDEO](https://video.tv.adobe.com/v/335734?quality=12)

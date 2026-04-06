@@ -3,7 +3,7 @@ title: API-felsökning
 description: Läs mer om vanliga problem med Campaign Standard API:er
 role: Developer
 level: Experienced
-source-git-commit: 00d9c3229b7bbabfec3b1750ae84978545fdc218
+source-git-commit: a5436f7e1f1e4ad86157dfd8943d51bf852b747c
 workflow-type: tm+mt
 source-wordcount: '350'
 ht-degree: 0%
@@ -84,7 +84,8 @@ Antingen är din token ogiltig (felaktigt IMS-anrop som används för att genere
 
 Beroende på instanskonfigurationen måste den skapade profilen kopplas till en **orgUnit**. Mer information om hur du lägger till det här fältet när du skapar finns i [det här avsnittet](creating-profiles-api.md).
 
-<!-- * (error duplicate key : quand tu crées un profile qui existe déjà , il faut faire un patch pour updater le profile plutôt qu'un POST)
+<!--
+ * (error duplicate key : quand tu crées un profile qui existe déjà , il faut faire un patch pour updater le profile plutôt qu'un POST)
 
 With Curl
 List all profiles
@@ -96,11 +97,9 @@ Update the mobilePhone attribute of a profile
 API Calls on Service
 
 GET the list of services
-
 -->
 
 <!--
-
 How to find and use a filter?
 Error codes:
 
@@ -128,5 +127,4 @@ Comment savoir quel filtre appliquer ?
 3) get sur la valeur du champ resTarget
 4) get sur le href dans filters
 5) retourne les filtres applicables sur l'url des data.
-
 -->

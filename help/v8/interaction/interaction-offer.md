@@ -5,10 +5,10 @@ feature: Interaction, Offers
 role: User, Admin
 level: Beginner
 exl-id: 4dc2008d-681c-4a79-8fc8-c270c9224ab9
-source-git-commit: 69ff08567f3a0ab827a118a089495fc75bb550c5
+source-git-commit: a5436f7e1f1e4ad86157dfd8943d51bf852b747c
 workflow-type: tm+mt
 source-wordcount: '895'
-ht-degree: 3%
+ht-degree: 0%
 
 ---
 
@@ -68,7 +68,7 @@ Ett erbjudande kan till exempel ha vikten A för kontakter mellan 18 och 25 år 
 
 Gör så här för att skapa en vikt i ett erbjudande:
 
-1. Klicka på **[!UICONTROL Add]** på fliken **[!UICONTROL Eligibility]** i erbjudandet.
+1. Klicka på **[!UICONTROL Eligibility]** på fliken **[!UICONTROL Add]** i erbjudandet.
 
    ![](assets/offer_weight_create_001.png)
 
@@ -163,7 +163,6 @@ Så här gör du:
 1. Om du har personaliserat erbjudandeinnehållet väljer du erbjudandemålet för att visa personalisering.
 
 <!--
-
 ## Create a hypothesis on an offer {#creating-a-hypothesis-on-an-offer}
 
 You can create hypotheses on your offer propositions. This lets you determine the impact of your offers on purchases carried out for the product concerned.
@@ -175,20 +174,19 @@ You can create hypotheses on your offer propositions. This lets you determine th
 Hypotheses carried out on an offer proposition are referenced in their **[!UICONTROL Measure]** tab.
 
 Creating hypotheses is detailed in [this page](../../campaign/using/about-response-manager.md).
-
 -->
 
 ## Godkänn och aktivera ett erbjudande{#approve-offers}
 
 Du kan nu godkänna och aktivera erbjudandet så att det blir tillgängligt i **Live** -miljön.
 
-Mer information finns i [Campaign Classic v7-dokumentationen](https://experienceleague.adobe.com/docs/campaign-classic/using/managing-offers/managing-an-offer-catalog/approving-and-activating-an-offer.html?lang=sv-SE#approving-offer-content){target="_blank"}.
+Mer information finns i [Campaign Classic v7-dokumentationen](https://experienceleague.adobe.com/docs/campaign-classic/using/managing-offers/managing-an-offer-catalog/approving-and-activating-an-offer.html#approving-offer-content){target="_blank"}.
 
 ## Hantera presentation av erbjudanden{#offer-presentation}
 
 Med Campaign kan ni styra flödet av erbjudandeförslag med hjälp av presentationsregler. Dessa regler, som är specifika för Campaign Interaction, är **typologiregler**. Med dem kan du utesluta erbjudanden baserat på historiken för de förslag som redan har lämnats till en mottagare. De refereras i miljön.
 
-Mer information finns i [Campaign Classic v7-dokumentationen](https://experienceleague.adobe.com/docs/campaign-classic/using/managing-offers/managing-an-offer-catalog/managing-offer-presentation.html?lang=sv-SE#managing-offers){target="_blank"}.
+Mer information finns i [Campaign Classic v7-dokumentationen](https://experienceleague.adobe.com/docs/campaign-classic/using/managing-offers/managing-an-offer-catalog/managing-offer-presentation.html#managing-offers){target="_blank"}.
 
 ## Simulering av erbjudanden
 
@@ -196,4 +194,4 @@ Med modulen **Simulering** kan du testa distributionen av erbjudanden som tillh�
 
 Simuleringen tar hänsyn till de kontexter och regler för behörighet som tidigare tillämpats på erbjudanden och deras presentationsregler. Detta gör att ni kan testa och förfina olika versioner av ert erbjudande utan att faktiskt använda ett erbjudande eller över/under beställning av ett mål, eftersom simuleringen inte har någon effekt på de avsedda mottagarna.
 
-Mer information om erbjudandesimulering finns i [Campaign Classic v7-dokumentationen](https://experienceleague.adobe.com/docs/campaign-classic/using/managing-offers/simulating-offers/about-offers-simulation.html?lang=sv-SE){target="_blank"}.
+Mer information om erbjudandesimulering finns i [Campaign Classic v7-dokumentationen](https://experienceleague.adobe.com/docs/campaign-classic/using/managing-offers/simulating-offers/about-offers-simulation.html){target="_blank"}.

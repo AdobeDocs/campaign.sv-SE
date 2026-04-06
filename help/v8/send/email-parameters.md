@@ -6,10 +6,10 @@ role: User
 level: Beginner
 version: Campaign v8, Campaign Classic v7
 exl-id: ad75f01e-2c6c-4607-b15a-8870d399002a
-source-git-commit: 6b70ad987b828dc1c17bc4f0683046be4eff0408
+source-git-commit: a5436f7e1f1e4ad86157dfd8943d51bf852b747c
 workflow-type: tm+mt
 source-wordcount: '862'
-ht-degree: 6%
+ht-degree: 0%
 
 ---
 
@@ -48,7 +48,8 @@ Välj formatet för e-postmeddelandet i fönstrets nedre del:
 <!--
 >[!NOTE]
 >
->For more on defining the email content, see [this section]().-->
+>For more on defining the email content, see [this section]().
+-->
 
 ## Ange teckenkodning {#character-encoding}
 
@@ -78,9 +79,9 @@ Mer information om hantering av studsade e-postmeddelanden finns i [det här avs
 
 ## Aktivera en klickning för att avbryta prenumeration {#one-click-list-unsubscribe}
 
-URL:en för att avbryta en prenumeration med ett klick är en länk eller knapp som visas bredvid e-postavsändarinformationen, vilket gör att mottagarna kan avanmäla sig från e-postlistorna med ett enda klick. <!--[Learn more](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/additional-resources/campaign/acc-technical-recommendations.html?lang=sv-SE#list-unsubscribe){target="_blank"}-->
+URL:en för att avbryta en prenumeration med ett klick är en länk eller knapp som visas bredvid e-postavsändarinformationen, vilket gör att mottagarna kan avanmäla sig från e-postlistorna med ett enda klick. <!--[Learn more](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/additional-resources/campaign/acc-technical-recommendations.html#list-unsubscribe){target="_blank"}-->
 
-Den visas som en **Unsubscribe** -länk i Internet-leverantörernas e-postgränssnitt. Exempel:
+Den visas som en **Unsubscribe** -länk i Internet-leverantörernas e-postgränssnitt. Till exempel:
 
 ![](assets/email-list-unsubscribe-example.png)
 
@@ -101,7 +102,8 @@ Om du vill aktivera den här funktionen väljer du alternativet **[!UICONTROL Ad
 <!--
 >[!WARNING]
 >
->If you uncheck this option in the delivery template, it will still be enabled by default in the deliveries created from this template. You need to enable the option again at the delivery level.-->
+>If you uncheck this option in the delivery template, it will still be enabled by default in the deliveries created from this template. You need to enable the option again at the delivery level.
+-->
 
 Beroende på e-postklienten och vilken metod de använder för att göra en avanmälan kan du få följande effekter om du klickar på länken **Avbeställ** i e-posthuvudet:
 
@@ -117,7 +119,7 @@ Beroende på e-postklienten och vilken metod de använder för att göra en avan
 
 >[!NOTE]
 >
->Du kan också ange metoderna [One-Click List-Unsubscribe](https://experienceleague.adobe.com/sv/docs/deliverability-learn/deliverability-best-practice-guide/additional-resources/campaign/acc-technical-recommendations?lang=en#one-click-list-unsubscribe){target="_blank"} och [&quot;mailto&quot; List-Unsubscribe](https://experienceleague.adobe.com/sv/docs/deliverability-learn/deliverability-best-practice-guide/additional-resources/campaign/acc-technical-recommendations?lang=en#mailto-list-unsubscribe){target="_blank"} manuellt. De detaljerade stegen beskrivs i Experience Cloud [Bästa praxis för slutprodukt](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/additional-resources/campaign/acc-technical-recommendations.html?lang=sv-SE#list-unsubscribe){target="_blank"}.
+>Du kan också ange metoderna [One-Click List-Unsubscribe](https://experienceleague.adobe.com/en/docs/deliverability-learn/deliverability-best-practice-guide/additional-resources/campaign/acc-technical-recommendations?lang=en#one-click-list-unsubscribe){target="_blank"} och [&quot;mailto&quot; List-Unsubscribe](https://experienceleague.adobe.com/en/docs/deliverability-learn/deliverability-best-practice-guide/additional-resources/campaign/acc-technical-recommendations?lang=en#mailto-list-unsubscribe){target="_blank"} manuellt. De detaljerade stegen beskrivs i Experience Cloud [Bästa praxis för slutprodukt](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/additional-resources/campaign/acc-technical-recommendations.html#list-unsubscribe){target="_blank"}.
 
 
 ## Lägg till SMTP-rubriker {#adding-smtp-headers}
@@ -132,7 +134,7 @@ Värden kodas automatiskt om det behövs.
 >
 >Att lägga till ett skript för att infoga ytterligare SMTP-rubriker är reserverat för avancerade användare.
 >
->Syntaxen för det här skriptet måste uppfylla kraven för den här innehållstypen: Inget oanvänt utrymme, ingen tom rad, o.s.v.
+>Syntaxen för det här skriptet måste uppfylla kraven för den här innehållstypen: inget oanvänt utrymme, ingen tom rad osv.
 
 ![](assets/email-smtp-headers.png)
 

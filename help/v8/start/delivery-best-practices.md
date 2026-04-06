@@ -6,10 +6,10 @@ role: User
 level: Beginner
 version: Campaign v8, Campaign Classic v7
 exl-id: cb6094eb-0010-4c62-9589-3b52fd60c2c2
-source-git-commit: 7bfe0ac7ba99ebf26844d2cea14a75f32ecb8b74
+source-git-commit: a5436f7e1f1e4ad86157dfd8943d51bf852b747c
 workflow-type: tm+mt
 source-wordcount: '3068'
-ht-degree: 1%
+ht-degree: 0%
 
 ---
 
@@ -17,7 +17,7 @@ ht-degree: 1%
 
 Läs om följande metodtips med leveransfunktionerna i Campaign.
 
-## Optimera leverans {#optimize-delivery}
+## Optimera leveransen {#optimize-delivery}
 
 Innan du ens börjar skapa leveranser kan du vidta flera åtgärder för att skydda och optimera sändningsprocessen uppströms. I följande avsnitt beskrivs god praxis och rekommenderade procedurer för optimal konfiguration av Adobe Campaign.
 
@@ -32,7 +32,7 @@ För att undvika detta bör du samordna schemaläggningen av leveranser med övr
 
 * Arbetsflödeskörning: det är viktigt att du övervakar arbetsflödena för att undvika problem med plattformsprestanda. Följ riktlinjerna som visas [i det här dokumentet](../../automation/workflow/workflow-best-practices.md#execution-and-performance).
 
-* Anslut till [funktionerna på Kontrollpanelen för kampanj](https://experienceleague.adobe.com/sv/docs/control-panel/using/discover-control-panel/key-features){target="_blank"} för att övervaka plattformen med [funktionerna för prestandaövervakning](https://experienceleague.adobe.com/sv/docs/control-panel/using/performance-monitoring/about-performance-monitoring){target="_blank"}.
+* Anslut till [funktionerna på Kontrollpanelen för kampanj](https://experienceleague.adobe.com/en/docs/control-panel/using/discover-control-panel/key-features){target="_blank"} för att övervaka plattformen med [funktionerna för prestandaövervakning](https://experienceleague.adobe.com/en/docs/control-panel/using/performance-monitoring/about-performance-monitoring){target="_blank"}.
 
 #### Karantänhantering {#quarantine-management}
 
@@ -41,9 +41,9 @@ Det ligger i ditt bästa intresse att upprätthålla goda karantänhanteringspro
 När du börjar skicka e-post på en ny plattform kan du använda en lista med adresser som inte är fullständigt kvalificerade. Om du skickar till ogiltiga adresser eller till honeypoadresser (postlådor som bara skapats för att lura skräppost) börjar detta minska din plattforms anseende. Bra processer för hantering av karantän hjälper till att: upprätthålla adresskvaliteten, undvika blockeringslista från internetleverantörer och minska felfrekvensen, påskynda leveranser och dataflöde.
 
 
-Läs mer om hur du startar en ny plattform i [Adobe Deliverability Best Practices Guide](https://experienceleague.adobe.com/sv/docs/deliverability-learn/deliverability-best-practice-guide/additional-resources/campaign/ac-starting-new-platform){target="_blank"}.
+Läs mer om hur du startar en ny plattform i [Adobe Deliverability Best Practices Guide](https://experienceleague.adobe.com/en/docs/deliverability-learn/deliverability-best-practice-guide/additional-resources/campaign/ac-starting-new-platform){target="_blank"}.
 
-Tekniska rekommendationer visas i [det här avsnittet](https://experienceleague.adobe.com/sv/docs/deliverability-learn/deliverability-best-practice-guide/additional-resources/campaign/acc-technical-recommendations){target="_blank"}.
+Tekniska rekommendationer visas i [det här avsnittet](https://experienceleague.adobe.com/en/docs/deliverability-learn/deliverability-best-practice-guide/additional-resources/campaign/acc-technical-recommendations){target="_blank"}.
 
 
 +++ **Läs om några metodtips**
@@ -81,7 +81,7 @@ Leveransmallar ger ökad effektivitet genom färdiga scenarier för de flesta va
 
 ### Underdomäner och varumärken {#subdomains-and-branding}
 
-När du hanterar flera varumärken i Adobe Campaign rekommenderar Adobe en underdomän per varumärke. En bank kan till exempel ha flera underdomäner som motsvarar var och en av dess regionala myndigheter. Om en bank äger bluebank.com kan dess underdomäner vara @ny.bluebank.com, @ma.bluebank.com, @ca.bluebank.com osv. Med en leveransmall per underdomän kan ni alltid använda rätt förkonfigurerade parametrar för varje varumärke, vilket undviker fel och sparar tid. Läs mer om anpassning av underdomäner i dokumentationen från [Kontrollpanelen för kampanj](https://experienceleague.adobe.com/sv/docs/control-panel/using/subdomains-and-certificates/subdomains-branding){target="_blank"}.
+När du hanterar flera varumärken i Adobe Campaign rekommenderar Adobe en underdomän per varumärke. En bank kan till exempel ha flera underdomäner som motsvarar var och en av dess regionala myndigheter. Om en bank äger bluebank.com kan dess underdomäner vara @ny.bluebank.com, @ma.bluebank.com, @ca.bluebank.com osv. Med en leveransmall per underdomän kan ni alltid använda rätt förkonfigurerade parametrar för varje varumärke, vilket undviker fel och sparar tid. Läs mer om anpassning av underdomäner i dokumentationen från [Kontrollpanelen för kampanj](https://experienceleague.adobe.com/en/docs/control-panel/using/subdomains-and-certificates/subdomains-branding){target="_blank"}.
 
 ### Konfigurera adresser {#configure-addresses}
 
@@ -96,7 +96,7 @@ Var noga med att följa följande riktlinjer:
 
 Följ stegen nedan för att konfigurera adresser i Campaign-gränssnittet:
 
-1. Klicka på länken [&#x200B; i &#x200B;](../send/create-templates.md)leveransmallen **[!UICONTROL From]**. Ange inställningarna i fönstret **[!UICONTROL Email header parameters]**.
+1. Klicka på länken [ i ](../send/create-templates.md)leveransmallen **[!UICONTROL From]**. Ange inställningarna i fönstret **[!UICONTROL Email header parameters]**.
 
 1. I fältet **[!UICONTROL Sender address]** kontrollerar du att adressdomänen är densamma som den underdomän som du har delegerat till Adobe. Du kan ändra den del som föregår @ men inte domänadressen.
 
@@ -130,11 +130,11 @@ Om du vill anpassa dina meddelanden kan du använda mottagarnas data som lagras 
 
 * Kontrollera dina personaliseringsinställningar - Kontrollera att meddelandeinnehållet är korrekt utformat för att undvika fel som kan relateras till personalisering. En Adobe Campaign-personaliseringstagg har alltid följande format: `<%=table.field%>`. Felaktig användning av parametrar i personaliseringsblock kan vara ett problem. Variabler i JavaScript bör till exempel användas på följande sätt:
 
-  &grave;&grave;
+  ``
   <%
   var brand = "xxx"
   %>
-  &grave;&grave;
+  ``
 
   Mer information om anpassningsblock finns i [det här avsnittet](../send/personalization-blocks.md).
 
@@ -214,7 +214,7 @@ Kontrollera att du har testat ändringarna innan du skickar det.
 
 ### SMS-längd {#sms-length-check}
 
-Som standard uppfyller antalet tecken i ett SMS GSM-system (Global System for Mobile Communications). SMS-meddelanden som använder GSM-kodning kan innehålla högst 160 tecken eller 153 tecken per SMS för meddelanden som skickas i flera delar.
+Som standard uppfyller antalet tecken i ett SMS GSM-system (Global System for Mobile Communications). SMS-meddelanden som använder GSM-kodning får innehålla högst 160 tecken eller 153 tecken per SMS för meddelanden som skickas i flera delar.
 
 
 +++ **Läs om några metodtips**
@@ -238,9 +238,10 @@ To avoid common formatting errors, check the following elements:
 
 * Correct **date formatting**: Adobe Campaign provides date formatting functions for the JavaScript templates and XSL stylesheets. [Learn more](formatting.md#date-display)
 
-* Usage of **authorized characters** in emails: the list of valid characters for email addresses is defined in the "XtkEmail_Characters" option. Learn how to access Campaign options [in this section](../../installation/using/configuring-campaign-options.md). To correctly handle special characters, Adobe Campaign needs to be installed in Unicode. 
+* Usage of **authorized characters** in emails: the list of valid characters for email addresses is defined in the "XtkEmail_Characters" option. Learn how to access Campaign options [in this section](../../installation/using/configuring-campaign-options.md). To correctly handle special characters, Adobe Campaign needs to be installed in Unicode.
 
-* Configuration of **Email Authentication**: make sure that the email headers contain the DKIM signature. DKIM (Domain Keys Identified Mail) authentication allows the receiving email server to verify that a message was indeed sent by the person or entity it claims it was sent by, and whether the message content was altered in between the time it was originally sent (and DKIM "signed") and the time it was received. This standard typically uses the domain in the From or Sender header. For more on this, refer to the [Adobe Deliverability Best Practice Guide](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/transition-process/infrastructure.html?lang=sv-SE#authentication).-->
+* Configuration of **Email Authentication**: make sure that the email headers contain the DKIM signature. DKIM (Domain Keys Identified Mail) authentication allows the receiving email server to verify that a message was indeed sent by the person or entity it claims it was sent by, and whether the message content was altered in between the time it was originally sent (and DKIM "signed") and the time it was received. This standard typically uses the domain in the From or Sender header. For more on this, refer to the [Adobe Deliverability Best Practice Guide](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/transition-process/infrastructure.html#authentication).
+-->
 
 ## Hantera bilder {#manage-images}
 
@@ -296,7 +297,7 @@ För att leveransen ska bli framgångsrik vill ni skicka det mest relevanta pers
 
 I Campaign är leveransmallarna som standard avsedda för **mottagare**. Adobe Campaign erbjuder andra målmappningar för leveranser som du kan ändra efter behov. Du kan till exempel leverera till besökare vars profiler har samlats in via sociala nätverk eller till besökare som prenumererar på en informationstjänst.
 
-Dessa mappningar presenteras [&#x200B; i det här avsnittet](../audiences/target-mappings.md).
+Dessa mappningar presenteras [ i det här avsnittet](../audiences/target-mappings.md).
 
 ### Externa mottagare {#external-recipients}
 
@@ -305,7 +306,8 @@ Du kan leverera till mottagare som lagras i en extern fil i stället för att sp
 <!--
 ### Send to your subscribers {#send-to-subscribers}
 
-To send messages to the subscribers of a newsletter, you can directly target the subscribers to the corresponding information service. Learn more [in this section](../audiences/).-->
+To send messages to the subscribers of a newsletter, you can directly target the subscribers to the corresponding information service. Learn more [in this section](../audiences/).
+-->
 
 ### Testa mottagare {#test-recipients-seed-addresses}
 
@@ -347,7 +349,8 @@ Inbox rendering enables you to preview your messages on major email clients, sca
 
 * Inbox rendering capabilities are crucial to identifying whether your email campaigns successfully make it past the filters of major ISPs (Internet Service Providers) and webmail services. Such tools send a pre-flight copy of an email to a network of test inboxes, so you can see how the message will display, or render, across these services. They may also include reports and code correction options that help you quickly identify and make fixes that improve deliverability.
 
-Learn more [in this section](inbox-rendering.md).-->
+Learn more [in this section](inbox-rendering.md).
+-->
 
 ### Korrekturmeddelanden {#proof-messages}
 
@@ -364,7 +367,8 @@ If you have several contents for an email delivery, you can use A/B testing to f
 
 * Select the one with the highest success rate and send it to the rest of your target
 
-Learn more [in this section](get-started-a-b-testing.md).-->
+Learn more [in this section](get-started-a-b-testing.md).
+-->
 
 ### Se till att ditt meddelande levereras {#make-sure-your-message-is-delivered}
 
@@ -380,7 +384,7 @@ Du kan stegvis öka volymen som skickas med vågor. På så sätt undviker du at
 
 #### Prioritera meddelanden
 
-Du kan ange avsändarordning för leveranser genom att ange prioritetsnivå. För att göra detta:
+Du kan ange avsändarordning för leveranser genom att ange prioritetsnivå. Så här gör du:
 
 1. Redigera leveransegenskaperna och välj fliken **[!UICONTROL Delivery]**.
 
@@ -409,7 +413,8 @@ You can:
 
 >[!NOTE]
 >
->Most of these steps can only be performed by an expert user.-->
+>Most of these steps can only be performed by an expert user.
+-->
 
 #### Använd typologier
 
@@ -420,7 +425,7 @@ Du kan använda typologiregler för att exkludera delar av målet baserat på sp
 
 Klickade du på knappen **Skicka**? Låt oss se vad som händer. När leveransen har skickats kan du med Adobe Campaign hålla reda på skickade meddelanden och se hur mottagarna svarar på leveransen. Detta hjälper er att förbättra era framtida utskick och optimera era nästa kampanjer.
 
-## Övervaka leveranser {#monitoring-deliveries}
+## Bildskärmsleveranser {#monitoring-deliveries}
 
 För att kunna styra era kampanjer måste ni se till att meddelandet verkligen har levererats till mottagarna.
 
