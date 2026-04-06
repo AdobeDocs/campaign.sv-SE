@@ -35,7 +35,7 @@ Hårda studsar är permanenta fel som genereras efter att en Internet-leverantö
   Här är några vanliga exempel på hårda domäner: Adressen finns inte, Konto inaktiverat, Felaktig syntax, Dålig domän
 
 * **Mjuka studsar**
-Mjuka studsar är tillfälliga fel som internetleverantörer genererar när de har svårt att leverera e-post. Mjuka fel [försöker ](#retries) igen flera gånger (med varians beroende på om anpassade leveransinställningar eller leveransinställningar som är klara används) för att försöka leverera korrekt. Adresser som kontinuerligt mjuka studsar kommer inte att läggas till i karantän förrän det maximala antalet försök har gjorts (som återigen varierar beroende på inställningarna).
+Mjuka studsar är tillfälliga fel som internetleverantörer genererar när de har svårt att leverera e-post. Mjuka fel [försöker &#x200B;](#retries) igen flera gånger (med varians beroende på om anpassade leveransinställningar eller leveransinställningar som är klara används) för att försöka leverera korrekt. Adresser som kontinuerligt mjuka studsar kommer inte att läggas till i karantän förrän det maximala antalet försök har gjorts (som återigen varierar beroende på inställningarna).
 
   Några vanliga orsaker till mjuka studsar är: Postlådan är full, Tar emot e-postserver, Senderns anseendeproblem
 
